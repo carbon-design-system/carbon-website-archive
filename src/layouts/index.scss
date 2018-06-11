@@ -1,0 +1,16 @@
+//---------------------------------------
+// Carbon Components
+//---------------------------------------
+@import 'node_modules/carbon-components/scss/globals/scss/styles.scss';
+
+//---------------------------------------
+// Components
+//---------------------------------------
+@import '../components/Header/header.scss';
+
+//---------------------------------------
+// Global styles
+//---------------------------------------
+body {
+  background: $ui-01;
+}
