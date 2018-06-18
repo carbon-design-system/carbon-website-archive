@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "carbon-website-gatsby",
+  "description": "Carbon Design System website",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Mari Johannessen <mari.l.johannessen@gmail.com>",
   "dependencies": {
+    "@storybook/addon-info": "^3.4.7",
     "carbon-components": "^9.0.2",
     "carbon-components-react": "^6.4.2",
     "carbon-icons": "^7.0.6",
@@ -11,20 +12,37 @@
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-sass": "^1.0.26",
-    "react-helmet": "^5.2.0"
+    "gatsby-plugin-sharp": "^1.6.47",
+    "gatsby-remark-images": "^1.5.66",
+    "gatsby-source-filesystem": "^1.5.38",
+    "gatsby-transformer-remark": "^1.7.42",
+    "prop-types": "^15.6.1",
+    "react-helmet": "^5.2.0",
+    "rehype-react": "^3.0.2"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybook:build": "build-storybook -c .storybook -o public/docs"
   },
   "devDependencies": {
-    "prettier": "^1.12.0"
+    "@storybook/addon-actions": "^3.4.7",
+    "@storybook/addon-knobs": "^3.4.7",
+    "@storybook/addon-options": "^3.4.7",
+    "@storybook/react": "^3.4.7",
+    "babel-core": "^6.26.3",
+    "babel-loader": "7.1.1",
+    "node-sass": "^4.9.0",
+    "prettier": "^1.12.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "sass-loader": "^7.0.3",
+    "storybook-readme": "^3.3.0"
   },
   "repository": {
     "type": "git",

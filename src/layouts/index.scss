@@ -1,3 +1,7 @@
+$bright-blue: #3c6df0;
+$dark-blue: #3057d5;
+$brand-01: $dark-blue;
+
 //---------------------------------------
 // Carbon Components
 //---------------------------------------
@@ -6,11 +10,13 @@
 //---------------------------------------
 // Components
 //---------------------------------------
-@import '../components/Header/header.scss';
+@import '../components/markdown/markdown.scss';
+@import '../components/global/PageHeader/page-header.scss';
 
 //---------------------------------------
 // Global styles
 //---------------------------------------
+
 body {
   background: $ui-01;
 }

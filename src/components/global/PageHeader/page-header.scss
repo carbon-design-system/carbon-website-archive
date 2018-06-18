@@ -1,0 +1,33 @@
+.page-header {
+  padding-left: 3%;
+  padding-right: 3%;
+  height: rem(200px);
+  background-color: $ui-02;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-bottom: 1px solid $brand-01;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.page-header__label {
+  @include typescale('zeta');
+  color: $text-02;
+  font-weight: 400;
+  margin: 4rem 0 1rem;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.page-header__title {
+  @include typescale('mega');
+  color: $text-01;
+  font-weight: 300;
+  margin: -1.15rem 0 0 -3px;
+  line-height: 1.25;
+  letter-spacing: 0;
+  padding: 0;
+  transition: $transition--base $bx--standard-easing;
+}

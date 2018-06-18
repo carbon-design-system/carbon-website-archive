@@ -1,0 +1,54 @@
+//----------------------------
+// PageIntro
+//----------------------------
+
+.page-intro {
+  max-width: 38rem;
+  color: $text-01;
+  word-wrap: break-word;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  letter-spacing: 0;
+}
+
+.page-intro highlight {
+  color: $brand-01;
+}
+
+//----------------------------
+// h2
+//----------------------------
+
+.page-h2 {
+  @include typescale('beta');
+  position: relative;
+  color: $text-01;
+  margin-top: 6rem;
+  font-weight: 300;
+  padding: 1rem 0 3rem;
+
+  &:before {
+    content: '';
+    width: 5rem;
+    height: 0.3rem;
+    display: block;
+    background-color: $brand-01;
+    position: absolute;
+    top: -0.5rem;
+    left: 0;
+  }
+}
+
+//----------------------------
+// h3
+//----------------------------
+
+.page-h3 {
+  @include typescale('delta');
+  color: $brand-01;
+  padding: 4rem 0 1rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
