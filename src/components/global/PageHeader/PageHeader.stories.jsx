@@ -10,5 +10,7 @@ const stories = storiesOf('PageHeader', module);
 stories.addDecorator(withKnobs);
 
 stories.add('default', () => {
-  return <PageHeader label="Label" title="Component" />;
+  const label = text('label', 'Label');
+  const title = text('title', 'Component');
+  return <PageHeader label={`${label}`} title={`${title}`} />;
 });

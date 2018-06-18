@@ -15,12 +15,14 @@
     "gatsby-plugin-sharp": "^1.6.47",
     "gatsby-remark-images": "^1.5.66",
     "gatsby-source-filesystem": "^1.5.38",
-    "gatsby-transformer-remark": "^1.7.42",
+    "gatsby-transformer-remark": "^1.7.44",
     "prop-types": "^15.6.1",
     "react-helmet": "^5.2.0",
     "rehype-react": "^3.0.2"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",

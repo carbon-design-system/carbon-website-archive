@@ -3,18 +3,27 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators;
-  if (node.internal.type === "MarkdownRemark") {
-    const slug = createFilePath({ node, getNode, basePath: `content` });
+  if (node.internal.type === 'MarkdownRemark') {
+    const fileNode = getNode(node.parent);
+    const tab = createFilePath({ node, getNode, basePath: `content`, trailingSlash: false });
+    const currentDirArr = fileNode.relativeDirectory.split('/');
+    const currentDir = currentDirArr[currentDirArr.length - 1];
+    createNodeField({
+      node,
+      name: `tab`,
+      value: currentDir,
+    });
     createNodeField({
       node,
       name: `slug`,
-      value: slug
+      value: tab,
     });
   }
 };
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators;
+exports.createPages = ({ boundActionCreators, graphql }) => {
+  const { createRedirect, createPage } = boundActionCreators;
+
   return new Promise((resolve, reject) => {
     graphql(`
       {
@@ -23,6 +32,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             node {
               fields {
                 slug
+                tab
+              }
+              frontmatter {
+                mainTab
               }
             }
           }
@@ -30,13 +43,30 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       }
     `).then(result => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+        const slug = node.fields.slug;
+        const tab = node.fields.tab;
+        const currentTab = slug.split('/').pop();
+        let currentPath = currentTab === tab ? slug.slice(0, slug.lastIndexOf(tab)) : slug;
         createPage({
-          path: node.fields.slug,
+          path: currentPath,
           component: path.resolve(`./src/templates/page.js`),
           context: {
-            slug: node.fields.slug
-          }
+            slug,
+          },
         });
+        if (!(currentTab === tab) && node.frontmatter.mainTab === true) {
+          const originalPath = slug.slice(0, slug.indexOf(currentTab));
+          createRedirect({
+            fromPath: `${originalPath}`,
+            redirectInBrowser: true,
+            toPath: `${originalPath}${currentTab}`,
+          });
+          createRedirect({
+            fromPath: `${slug.slice(0, slug.indexOf(currentTab) - 1)}`,
+            redirectInBrowser: true,
+            toPath: `${originalPath}${currentTab}`,
+          });
+        }
       });
       resolve();
     });

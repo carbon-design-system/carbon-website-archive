@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 import PropTypes from 'prop-types';
 
 export class PageIntro extends React.Component {
   render() {
-    return <p className="page-intro">{this.props.children}</p>;
+    return <span className="page-intro">{this.props.children}</span>;
   }
 }
 

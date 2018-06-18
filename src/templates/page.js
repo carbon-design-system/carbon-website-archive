@@ -1,5 +1,5 @@
-import React from "react";
-import rehypeReact from "rehype-react";
+import React from 'react';
+import rehypeReact from 'rehype-react';
 
 // Components
 import PageHeader from '../components/global/PageHeader';
@@ -12,11 +12,12 @@ const renderAst = new rehypeReact({
   components: {
     h2: h2,
     h3: h3,
-    'page-intro': PageIntro
-  }
+    'page-intro': PageIntro,
+  },
 }).Compiler;
 
 export default ({ data }) => {
+  console.log(data);
   const post = data.markdownRemark;
   return (
     <div>
@@ -31,8 +32,9 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       htmlAst
       frontmatter {
-        title,
-        label,
+        title
+        label
+        mainTab
       }
     }
   }

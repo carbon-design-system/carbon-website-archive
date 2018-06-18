@@ -3,7 +3,7 @@ label: Getting Started
 title: Designers
 ---
 
-<page-intro>The <highlight>Carbon Design Kit</highlight> is a living, breathing document that contains all of our visual assets (components, iconography, color palettes, grids, etc).</page-intro>
+<page-intro>The **Carbon Design Kit** is a living, breathing document that contains all of our visual assets (components, iconography, color palettes, grids, etc).</page-intro>
 
 ## Setup
 
