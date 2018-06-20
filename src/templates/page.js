@@ -17,8 +17,10 @@ const renderAst = new rehypeReact({
 }).Compiler;
 
 export default ({ data }) => {
-  console.log(data);
   const post = data.markdownRemark;
+  const hasTabs = post.fields.tabs.length > 0;
+  console.log(post.fields);
+  console.log(hasTabs);
   return (
     <div>
       <PageHeader title={post.frontmatter.title} label={post.frontmatter.label} />
@@ -31,6 +33,11 @@ export const query = graphql`
   query BlogPostQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       htmlAst
+      fields {
+        slug
+        tab
+        tabs
+      }
       frontmatter {
         title
         label
