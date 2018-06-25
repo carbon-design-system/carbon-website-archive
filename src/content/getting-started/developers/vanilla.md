@@ -1,6 +1,7 @@
 ---
 label: Getting Started
 title: Developers
+mainTab: true
 ---
 
 <page-intro>The **Carbon Components Vanilla Library** provides front-end developers & engineers a collection of reusable HTML and SCSS partials to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.</page-intro>
@@ -9,13 +10,13 @@ title: Developers
 
 Using npm:
 
-```sh
+```bash
 $ npm install --save carbon-components
 ```
 
 If you prefer [Yarn](https://yarnpkg.com/en/), use the following command instead:
 
-```sh
+```bash
 $ yarn add carbon-components
 ```
 
@@ -23,7 +24,7 @@ $ yarn add carbon-components
 
 ### What's included
 
-```js
+```bash
 carbon-components/
 ├── html
 ├── css
@@ -75,7 +76,7 @@ Make sure your build process uses [autoprefixer](https://github.com/postcss/auto
 
 CSS is automatically applied to `<body>` element, which comes from [\_css--body.scss](https://github.com/carbon-design-system/carbon-components/blob/master/src/globals/scss/_css--body.scss). These styles are meant to cascade down to everything in `<body>` to set common styles shared across all components.
 
-```css
+```scss
 body {
   @include reset;
   font-family: 'ibm-plex-sans';

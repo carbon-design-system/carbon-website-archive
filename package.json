@@ -6,8 +6,10 @@
   "dependencies": {
     "@storybook/addon-info": "^3.4.7",
     "carbon-components": "^9.0.2",
-    "carbon-components-react": "^6.4.2",
+    "carbon-components-react": "6.5.3",
     "carbon-icons": "^7.0.7",
+    "classnames": "^2.2.6",
+    "fs": "^0.0.1-security",
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
@@ -16,6 +18,7 @@
     "gatsby-remark-images": "^1.5.66",
     "gatsby-source-filesystem": "^1.5.38",
     "gatsby-transformer-remark": "^1.7.44",
+    "prismjs": "^1.15.0",
     "prop-types": "^15.6.1",
     "react-helmet": "^5.2.0",
     "rehype-react": "^3.0.2"

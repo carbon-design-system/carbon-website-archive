@@ -8,8 +8,13 @@
   align-items: flex-start;
   justify-content: flex-start;
   border-bottom: 1px solid $brand-01;
-  padding-bottom: 1rem;
+  padding-bottom: 0;
   width: 100%;
+
+  @media all and (min-width: 840px) {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+  }
 }
 
 .page-header__label {

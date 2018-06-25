@@ -2318,11 +2318,11 @@ capture-stack-trace@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.0.tgz#4a6fa07399c26bba47f0b2496b4d0fb408c5550d"
 
-carbon-components-react@^6.4.2:
-  version "6.4.2"
-  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.4.2.tgz#c0508f5a8305ff03785bae7caadcdb2288006f38"
+carbon-components-react@6.5.3:
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.5.3.tgz#2073b5e5162baf73e7255dd0a2ef1f76ae48f00a"
   dependencies:
-    classnames "2.2.5"
+    classnames "2.2.6"
     downshift "^1.31.14"
     flatpickr "4.5.0"
     invariant "^2.2.3"
@@ -2345,9 +2345,9 @@ carbon-icons@^6.0.4:
   version "6.3.2"
   resolved "https://registry.yarnpkg.com/carbon-icons/-/carbon-icons-6.3.2.tgz#2cc942225442b0d5c02593e344b50c7ec22edf28"
 
-carbon-icons@^7.0.6:
-  version "7.0.6"
-  resolved "https://registry.yarnpkg.com/carbon-icons/-/carbon-icons-7.0.6.tgz#5ce22cfc3e1c36180f209fd1f253680dd347b257"
+carbon-icons@^7.0.7:
+  version "7.0.7"
+  resolved "https://registry.yarnpkg.com/carbon-icons/-/carbon-icons-7.0.7.tgz#ebafe3e9fa25df973796a8eca06d8a7c501cc610"
 
 case-sensitive-paths-webpack-plugin@^2.1.2:
   version "2.1.2"
@@ -2540,11 +2540,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@2.2.5:
-  version "2.2.5"
-  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
-
-classnames@^2.2.5:
+classnames@2.2.6, classnames@^2.2.5, classnames@^2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
 
@@ -4608,6 +4604,10 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
 
+fs@^0.0.1-security:
+  version "0.0.1-security"
+  resolved "https://registry.yarnpkg.com/fs/-/fs-0.0.1-security.tgz#8a7bd37186b6dddf3813f23858b57ecaaf5e41d4"
+
 fsevents@^1.0.0, fsevents@^1.1.2:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-1.2.4.tgz#f41dcb1af2582af3692da36fc55cbd8e1041c426"
@@ -4765,9 +4765,9 @@ gatsby-source-filesystem@^1.5.38:
     slash "^1.0.0"
     valid-url "^1.0.9"
 
-gatsby-transformer-remark@^1.7.42:
-  version "1.7.42"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-1.7.42.tgz#c7446dd1d1d98a799e1019476ea05fa170c6afe7"
+gatsby-transformer-remark@^1.7.44:
+  version "1.7.44"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-1.7.44.tgz#69b45f377a68484d1eab13f1feb7924428378ce1"
   dependencies:
     babel-runtime "^6.26.0"
     bluebird "^3.5.0"
@@ -9022,6 +9022,12 @@ pretty-error@^2.0.2, pretty-error@^2.1.1:
   dependencies:
     renderkid "^2.0.1"
     utila "~0.4"
+
+prismjs@^1.15.0:
+  version "1.15.0"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.15.0.tgz#8801d332e472091ba8def94976c8877ad60398d9"
+  optionalDependencies:
+    clipboard "^2.0.0"
 
 prismjs@^1.9.0:
   version "1.14.0"

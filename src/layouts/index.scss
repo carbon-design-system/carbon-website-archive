@@ -8,10 +8,18 @@ $brand-01: $dark-blue;
 @import 'node_modules/carbon-components/scss/globals/scss/styles.scss';
 
 //---------------------------------------
+// Syntax
+//---------------------------------------
+// @import 'node_modules/prismjs/themes/prism.css';
+
+//---------------------------------------
 // Components
 //---------------------------------------
 @import '../components/markdown/markdown.scss';
 @import '../components/global/PageHeader/page-header.scss';
+@import '../components/global/PageTabs/page-tabs.scss';
+@import '../components/global/PageContent/page-content.scss';
+@import '../components/global/CodeSnippet/code-snippet.scss';
 
 //---------------------------------------
 // Global styles

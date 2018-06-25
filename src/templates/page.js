@@ -3,6 +3,9 @@ import rehypeReact from 'rehype-react';
 
 // Components
 import PageHeader from '../components/global/PageHeader';
+import PageTabs from '../components/global/PageTabs';
+import PageContent from '../components/global/PageContent';
+import Snippet from '../components/global/CodeSnippet';
 
 // Custom Markdown
 import { h2, h3, PageIntro } from '../components/markdown/Markdown';
@@ -12,19 +15,28 @@ const renderAst = new rehypeReact({
   components: {
     h2: h2,
     h3: h3,
+    pre: Snippet,
     'page-intro': PageIntro,
   },
 }).Compiler;
 
 export default ({ data }) => {
   const post = data.markdownRemark;
-  const hasTabs = post.fields.tabs.length > 0;
-  console.log(post.fields);
-  console.log(hasTabs);
+  let tabs = post.fields.tabs;
+  let currentTab = post.fields.currentTab;
+  let slug = post.fields.slug;
+  let newTabs = [];
+  if (tabs.length > 1) {
+    tabs = tabs.split(',');
+    tabs.forEach(tab => {
+      newTabs.push(tab.slice(0, -3));
+    });
+  }
   return (
     <div>
       <PageHeader title={post.frontmatter.title} label={post.frontmatter.label} />
-      {renderAst(post.htmlAst)}
+      {newTabs.length > 1 && <PageTabs slug={slug} currentTab={currentTab} tabs={newTabs} />}
+      <PageContent>{renderAst(post.htmlAst)}</PageContent>
     </div>
   );
 };
@@ -37,6 +49,7 @@ export const query = graphql`
         slug
         tab
         tabs
+        currentTab
       }
       frontmatter {
         title

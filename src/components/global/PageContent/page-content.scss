@@ -1,0 +1,17 @@
+.page-content {
+  padding: 4rem 12.5%;
+  width: 100%;
+
+  & > div {
+    max-width: 45rem;
+  }
+
+  a {
+    color: $brand-01;
+    font-weight: 600;
+  }
+
+  .page-h2 + .page-h3 {
+    padding-top: 0;
+  }
+}
