@@ -14,7 +14,6 @@ export default class Snippet extends React.Component {
   };
 
   componentDidMount() {
-    console.log(Prism);
     Prism.highlightAll();
   }
 

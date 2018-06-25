@@ -1,6 +1,8 @@
 ---
 label: Getting Started
 title: Developers
+tabs: Vanilla, React, Other Stuff
+taborder: 2
 ---
 
 <page-intro>The **Carbon Components React Library** provides front-end developers & engineers a collection of reusable React components to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.</page-intro>
@@ -9,13 +11,13 @@ title: Developers
 
 Using npm:
 
-```sh
+```bash
 $ npm install --save carbon-components-react carbon-components carbon-icons
 ```
 
 If you prefer [Yarn](https://yarnpkg.com/en/), use the following command instead:
 
-```sh
+```bash
 $ yarn add carbon-components-react carbon-components carbon-icons
 ```
 
@@ -43,7 +45,7 @@ We recommend the use of [React Storybook](https://github.com/storybooks/react-st
 
 1.  Start the server:
 
-```sh
+```bash
 $ yarn storybook
 ```
 

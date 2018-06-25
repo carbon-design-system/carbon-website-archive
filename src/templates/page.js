@@ -22,14 +22,15 @@ const renderAst = new rehypeReact({
 
 export default ({ data }) => {
   const post = data.markdownRemark;
-  let tabs = post.fields.tabs;
-  let currentTab = post.fields.currentTab;
+  let currentTab = post.fields.current;
   let slug = post.fields.slug;
+  let tabs = post.frontmatter.tabs;
+  console.log(slug);
   let newTabs = [];
-  if (tabs.length > 1) {
+  if (!(tabs === null)) {
     tabs = tabs.split(',');
     tabs.forEach(tab => {
-      newTabs.push(tab.slice(0, -3));
+      newTabs.push(tab.toLowerCase().trim());
     });
   }
   return (
@@ -48,13 +49,13 @@ export const query = graphql`
       fields {
         slug
         tab
-        tabs
-        currentTab
+        current
       }
       frontmatter {
         title
         label
-        mainTab
+        tabs
+        taborder
       }
     }
   }
