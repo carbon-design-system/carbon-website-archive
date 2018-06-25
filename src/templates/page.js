@@ -15,28 +15,29 @@ const renderAst = new rehypeReact({
   components: {
     h2: h2,
     h3: h3,
-    pre: Snippet,
+    // pre: Snippet,
     'page-intro': PageIntro,
   },
 }).Compiler;
 
 export default ({ data }) => {
   const post = data.markdownRemark;
-  let currentTab = post.fields.current;
-  let slug = post.fields.slug;
-  let tabs = post.frontmatter.tabs;
-  console.log(slug);
-  let newTabs = [];
-  if (!(tabs === null)) {
-    tabs = tabs.split(',');
-    tabs.forEach(tab => {
-      newTabs.push(tab.toLowerCase().trim());
-    });
-  }
+  console.log(post);
+
+  // const post = data.markdownRemark;
+  // let currentPage = post.fields.currentPage;
+  // let slug = post.fields.slug;
+  // let newTabs = [];
+  // if (!(tabs === null)) {
+  //   tabs = tabs.split(',');
+  //   tabs.forEach(tab => {
+  //     newTabs.push(tab.toLowerCase().trim());
+  //   });
+  // }
   return (
     <div>
       <PageHeader title={post.frontmatter.title} label={post.frontmatter.label} />
-      {newTabs.length > 1 && <PageTabs slug={slug} currentTab={currentTab} tabs={newTabs} />}
+      {/* {newTabs.length > 1 && <PageTabs slug={slug} currentTab={currentPage} tabs={newTabs} />} */}
       <PageContent>{renderAst(post.htmlAst)}</PageContent>
     </div>
   );
@@ -48,14 +49,12 @@ export const query = graphql`
       htmlAst
       fields {
         slug
-        tab
-        current
+        currentPage
       }
       frontmatter {
         title
         label
         tabs
-        taborder
       }
     }
   }

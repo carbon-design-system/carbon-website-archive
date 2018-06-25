@@ -13,12 +13,9 @@ export default class PageTabs extends React.Component {
     const { tabs, slug, currentTab } = this.props;
     let linkSlug = slug.substring(0, slug.indexOf(currentTab));
     let pageTabs = [];
-    console.log(slug);
-    console.log(currentTab);
-    console.log(linkSlug);
     tabs.forEach(tab => {
       pageTabs.push(
-        <li className={tab === currentTab ? 'selected' : ''} key={tab}>
+        <li className={tab.replace(' ', '-') === currentTab ? 'selected' : ''} key={tab}>
           <Link to={`${linkSlug}${tab.replace(' ', '-')}`}>{tab}</Link>
         </li>
       );
