@@ -1,38 +1,17 @@
 const path = require('path');
 const { createFilePath } = require(`gatsby-source-filesystem`);
-const fs = require('fs');
 
 // Method that creates nodes based on the file system that we can use in our templates
 exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators;
-  let tabs = [];
-  if (node.internal.type === 'Directory' && node.base === 'content') {
-    const dir = path.resolve(__dirname, '');
-    const mainCategories = fs.readdirSync(node.absolutePath);
-    let mdFiles;
-    mainCategories.forEach(folder => {
-      const subCategories = fs.readdirSync(`${dir}/src/content/${folder}`);
-      subCategories.forEach(subFolder => {
-        mdFiles = fs.readdirSync(`${dir}/src/content/${folder}/${subFolder}`).filter(file => file.indexOf('md') >= 0);
-        if (mdFiles.length > 1) {
-          mdFiles.forEach(file => {
-            tabs.push(file.slice(0, -3));
-          });
-        }
-      });
-    });
-  }
-
   // If the node type (file) is a markdown file
   if (node.internal.type === 'MarkdownRemark') {
+    const dir = path.resolve(__dirname, '');
     const fileNode = getNode(node.parent);
     const slug = createFilePath({ node, getNode, basePath: `content`, trailingSlash: false });
     const currentPage = slug.split('/').pop();
 
-    const parentFolder = fileNode.relativeDirectory;
-    console.log(parentFolder);
-
-    // example: /getting-started/developers/react
+    // example
     createNodeField({
       node,
       name: `slug`,
@@ -63,7 +42,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
                 currentPage
               }
               frontmatter {
-                title
                 tabs
               }
             }
@@ -74,21 +52,21 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         const slug = node.fields.slug;
         const currentPage = node.fields.currentPage;
-        const currentPath = slug.slice(0, slug.lastIndexOf(currentPage));
-        if (node.frontmatter.tabs === null) {
-          createPage({
-            path: currentPath,
-            component: path.resolve(`./src/templates/page.js`),
-            context: {
-              slug,
-              currentPage,
-            },
-          });
-        } else {
-          const current = node.frontmatter.tabs
-            .split(',')[0]
-            .toLowerCase()
-            .trim();
+        const tabs = node.frontmatter.tabs === null ? [] : node.frontmatter.tabs;
+        let currentPath = node.frontmatter.tabs === null ? slug.slice(0, slug.lastIndexOf(currentPage)) : slug;
+        console.log(node.frontmatter.tabs);
+        console.log(currentPath);
+        createPage({
+          path: currentPath,
+          component: path.resolve(`./src/templates/page.js`),
+          context: {
+            slug,
+            currentPage,
+          },
+        });
+        if (tabs.length > 1) {
+          const current = tabs[0].toLowerCase().replace(' ', '-');
+          currentPath = currentPath.slice(0, currentPath.lastIndexOf(current));
           createRedirect({
             fromPath: `${currentPath}`,
             redirectInBrowser: true,
@@ -100,8 +78,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             toPath: `${currentPath}${current}`,
           });
         }
+        resolve();
       });
-      resolve();
     });
   });
 };

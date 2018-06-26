@@ -15,29 +15,20 @@ const renderAst = new rehypeReact({
   components: {
     h2: h2,
     h3: h3,
-    // pre: Snippet,
+    pre: Snippet,
     'page-intro': PageIntro,
   },
 }).Compiler;
 
 export default ({ data }) => {
   const post = data.markdownRemark;
-  console.log(post);
-
-  // const post = data.markdownRemark;
-  // let currentPage = post.fields.currentPage;
-  // let slug = post.fields.slug;
-  // let newTabs = [];
-  // if (!(tabs === null)) {
-  //   tabs = tabs.split(',');
-  //   tabs.forEach(tab => {
-  //     newTabs.push(tab.toLowerCase().trim());
-  //   });
-  // }
+  let currentPage = post.fields.currentPage;
+  let slug = post.fields.slug;
+  let tabs = post.frontmatter.tabs;
   return (
     <div>
       <PageHeader title={post.frontmatter.title} label={post.frontmatter.label} />
-      {/* {newTabs.length > 1 && <PageTabs slug={slug} currentTab={currentPage} tabs={newTabs} />} */}
+      {!(tabs === null) && <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />}
       <PageContent>{renderAst(post.htmlAst)}</PageContent>
     </div>
   );
