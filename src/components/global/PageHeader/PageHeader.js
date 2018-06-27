@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Tabs, Tab } from 'carbon-components-react';
 
 export default class PageHeader extends React.Component {
   static propTypes = {
@@ -9,9 +10,7 @@ export default class PageHeader extends React.Component {
 
   render() {
     const { label, title } = this.props;
-
     let labelContent = label ? <h4 className="page-header__label">{label}</h4> : <div className="page-header__label" />;
-
     return (
       <div className="page-header">
         {labelContent}
