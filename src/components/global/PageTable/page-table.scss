@@ -1,0 +1,50 @@
+.page-table {
+  width: 100%;
+  max-width: 38rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.25;
+
+  thead {
+    th {
+      @include typescale('zeta');
+      font-weight: 600;
+      text-align: left;
+      line-height: 1.25;
+      padding: 1rem 3rem 1rem 0;
+      border-bottom: 2px solid $brand-01;
+      white-space: nowrap;
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid $ui-04;
+
+      td {
+        @include typescale('zeta');
+        padding: 1rem 3rem 1rem 0;
+        line-height: 1.25;
+
+        img[src$='checkmark--glyph.svg'] {
+          width: 16px;
+          height: 16px;
+          margin: 0;
+        }
+
+        strong {
+          letter-spacing: 0;
+        }
+
+        &:first-child {
+          font-weight: 600;
+          white-space: nowrap;
+
+          @media all and (max-width: 550px) {
+            white-space: normal;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.side-nav {
+  @include typescale('zeta');
+  @include layer('temporary-nav');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $ui-01;
+  border-right: 2px solid $ui-02;
+  width: 12.5rem;
+  height: 100%;
+  padding: 0 0 1rem;
+  position: fixed;
+  overflow-y: auto;
+  z-index: 7000;
+  transition: $transition--base $bx--standard-easing;
+
+  @media screen and (min-width: 840px) {
+    box-shadow: none;
+  }
+}
+
+.side-nav__closed {
+  transform: translateX(-100%);
+  overflow: inherit;
+}
+
+.side-nav__closed--final {
+  display: none;
+}

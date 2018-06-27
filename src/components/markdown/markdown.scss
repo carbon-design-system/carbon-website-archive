@@ -52,3 +52,39 @@
   font-weight: 600;
   letter-spacing: 0;
 }
+
+//----------------------------
+// h4
+//----------------------------
+
+.page-h4 {
+  color: $text-01;
+  padding: 2rem 0 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+//----------------------------
+// ul
+//----------------------------
+
+.page-ul,
+.page-ol {
+  @include typescale('epsilon');
+  margin: 1rem 0 1rem 1.5rem;
+  line-height: 1.75;
+  max-width: 38rem;
+}
+
+.page-ul li {
+  font-weight: 400;
+  padding-left: 0.25rem;
+  list-style-type: disc;
+}
+
+.page-ol li {
+  font-weight: 400;
+  padding-left: 0.25rem;
+  list-style-type: decimal;
+}

@@ -20,6 +20,9 @@ $brand-01: $dark-blue;
 @import '../components/global/PageTabs/page-tabs.scss';
 @import '../components/global/PageContent/page-content.scss';
 @import '../components/global/CodeSnippet/code-snippet.scss';
+@import '../components/global/PageTable/page-table.scss';
+@import '../components/global/SideNav/side-nav.scss';
+@import '../components/global/SideNavToggleBtn/side-nav-toggle-btn.scss';
 
 //---------------------------------------
 // Global styles
@@ -27,4 +30,21 @@ $brand-01: $dark-blue;
 
 body {
   background: $ui-01;
+}
+
+.container {
+  width: 100%;
+  margin-left: 0;
+  transition: $transition--base ease;
+  overflow-x: hidden;
+
+  @include breakpoint('840px') {
+    margin-left: 12.5rem;
+    width: calc(100% - 12.5rem);
+  }
+}
+
+.container--expanded {
+  width: 100%;
+  margin-left: 0;
 }

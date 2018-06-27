@@ -27,17 +27,11 @@ export default class Snippet extends React.Component {
     Prism.highlightAll();
   }
 
-  onClick = () => {
-    console.log('clicked!');
-  };
-
   render() {
     const { children } = this.props;
     return (
       <CopyToClipboard text={children[0].props.children[0]} onCopy={() => this.setState({ copied: true })}>
-        <CodeSnippet onClick={this.onClick} type="multi">
-          {children}
-        </CodeSnippet>
+        <CodeSnippet type="multi">{children}</CodeSnippet>
       </CopyToClipboard>
     );
   }

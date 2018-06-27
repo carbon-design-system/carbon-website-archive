@@ -2,16 +2,49 @@
   padding: 4rem 12.5%;
   width: 100%;
 
+  // The max width of the actual content
   & > div {
     max-width: 45rem;
   }
 
+  // All paragraphs on Markdown pages
+  p {
+    max-width: 38rem;
+    line-height: 1.5;
+    padding: 0 0 1rem;
+  }
+
+  // No padding when a paragraph is followed by certain elements
+  p + .bx--snippet,
+  p + ul {
+    margin-top: 0;
+  }
+
+  // All links on Markdown pages
   a {
     color: $brand-01;
     font-weight: 600;
   }
 
+  // No padding between h2 and h3
   .page-h2 + .page-h3 {
     padding-top: 0;
+  }
+
+  // Inline code
+  p code,
+  li code,
+  td code {
+    @include reset;
+    font-family: $font-family-mono;
+    position: relative;
+    display: inline;
+    padding: rem(1px) $spacing-xs;
+    background: transparent;
+    font-size: inherit;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: $field-01;
+    font-size: 85%;
   }
 }
