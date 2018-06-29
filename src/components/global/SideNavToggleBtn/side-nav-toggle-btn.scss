@@ -28,12 +28,6 @@
     }
   }
 
-  // @include breakpoint('620px') {
-  //   left: calc(200px - 2rem);
-  //   width: 2rem;
-  //   height: 2rem;
-  // }
-
   & > div {
     @include reset;
     display: flex;
