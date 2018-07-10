@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import classnames from 'classnames';
+
 import SideNav from '../components/global/SideNav';
 import SideNavToggleBtn from '../components/global/SideNavToggleBtn';
-import classnames from 'classnames';
 
 import './index.scss';
 
@@ -52,9 +53,7 @@ export default class Layout extends React.Component {
           meta={[{ name: 'description', content: 'Sample' }, { name: 'keywords', content: 'sample, something' }]}
         />
         <SideNavToggleBtn onToggleBtnClick={this.onToggleBtnClick} isOpen={this.state.isOpen} />
-        <SideNav isFinal={this.state.isFinal} isOpen={this.state.isOpen}>
-          test
-        </SideNav>
+        <SideNav isFinal={this.state.isFinal} isOpen={this.state.isOpen} />
         <div className={classNames}>{children()}</div>
       </div>
     );

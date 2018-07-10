@@ -54,8 +54,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         const currentPage = node.fields.currentPage;
         const tabs = node.frontmatter.tabs === null ? [] : node.frontmatter.tabs;
         let currentPath = node.frontmatter.tabs === null ? slug.slice(0, slug.lastIndexOf(currentPage)) : slug;
-        console.log(node.frontmatter.tabs);
-        console.log(currentPath);
         createPage({
           path: currentPath,
           component: path.resolve(`./src/templates/page.js`),
