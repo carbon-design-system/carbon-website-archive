@@ -41,14 +41,10 @@
   margin-bottom: $spacing-3xl;
 }
 
-.side-nav__nav-item {
-  padding: 0 $spacing-md;
-}
-
 .side-nav__nav-item a {
   @include typescale('zeta');
   cursor: pointer;
-  padding: $spacing-xs 0 $spacing-xs 0;
+  padding: $spacing-xs 1rem $spacing-xs 1rem;
   color: $text-01;
   border: none;
   font-weight: 600;
@@ -59,6 +55,8 @@
   align-items: center;
   justify-content: space-between;
   text-align: left;
+  text-decoration: none;
+  border-left: 4px solid transparent;
 
   &:hover,
   &:focus {
@@ -70,6 +68,12 @@
   height: rem(8px);
   width: rem(8px);
   fill: $ui-04;
+  transition: 0.3s;
+}
+
+.side-nav__nav-item--active a {
+  color: $brand-01;
+  border-left: 4px solid $brand-01;
 }
 
 .side-nav__nav-item--open .side-nav__nav-item--arrow {
@@ -77,7 +81,7 @@
 }
 
 .side-nav__nav-item--open .side-nav__sub-nav {
-  margin-top: $spacing-2xs;
+  margin-top: 0;
   max-height: 80rem;
 }
 
@@ -87,18 +91,25 @@
 .side-nav__sub-nav {
   overflow: hidden;
   max-height: 0;
+  transition: 0.3s;
 }
 
 .side-nav__sub-nav-item {
   border-left: 4px solid transparent;
+  padding: 0 $spacing-lg;
 }
 
 .side-nav__sub-nav-item a {
   font-weight: 400;
   padding: $spacing-2xs $spacing-2xs $spacing-2xs $spacing-xs;
+  text-decoration: none;
 }
 
-.side-nav__sub-nav-item--selected {
+.side-nav__sub-nav-item--active {
   border-left: 4px solid $brand-01;
+}
+
+.side-nav__sub-nav-item--active a {
+  font-weight: 600;
   color: $brand-01;
 }

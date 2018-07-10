@@ -81,7 +81,7 @@
     }
   },
   "components": {
-    "title": "Title",
+    "title": "Components",
     "sub-nav": {
       "overview": {
         "title": "Overview"

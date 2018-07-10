@@ -15,7 +15,7 @@ export default class SideNav extends React.Component {
 
   renderNavItems = nav =>
     Object.keys(nav).map(item => {
-      return <SideNavItem item={nav[item]} />;
+      return <SideNavItem itemSlug={item} item={nav[item]} />;
     });
 
   render() {
