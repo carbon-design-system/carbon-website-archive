@@ -1,3 +1,6 @@
+//===================
+// SIDE NAV
+//===================
 .side-nav {
   @include typescale('zeta');
   @include layer('temporary-nav');
@@ -8,7 +11,7 @@
   border-right: 2px solid $ui-02;
   width: 12.5rem;
   height: 100%;
-  padding: 0 0 1rem;
+  padding: 0 0 $spacing-md;
   position: fixed;
   overflow-y: auto;
   z-index: 7000;
@@ -26,4 +29,76 @@
 
 .side-nav__closed--final {
   display: none;
+}
+
+//===================
+// NAV ITEMS
+//===================
+.side-nav__nav-items {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  margin-bottom: $spacing-3xl;
+}
+
+.side-nav__nav-item {
+  padding: 0 $spacing-md;
+}
+
+.side-nav__nav-item a {
+  @include typescale('zeta');
+  cursor: pointer;
+  padding: $spacing-xs 0 $spacing-xs 0;
+  color: $text-01;
+  border: none;
+  font-weight: 600;
+  background: transparent;
+  line-height: 1.5;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+
+  &:hover,
+  &:focus {
+    color: $brand-01;
+  }
+}
+
+.side-nav__nav-item--arrow {
+  height: rem(8px);
+  width: rem(8px);
+  fill: $ui-04;
+}
+
+.side-nav__nav-item--open .side-nav__nav-item--arrow {
+  transform: rotate(-180deg);
+}
+
+.side-nav__nav-item--open .side-nav__sub-nav {
+  margin-top: $spacing-2xs;
+  max-height: 80rem;
+}
+
+//===================
+// SUB NAV ITEMS
+//===================
+.side-nav__sub-nav {
+  overflow: hidden;
+  max-height: 0;
+}
+
+.side-nav__sub-nav-item {
+  border-left: 4px solid transparent;
+}
+
+.side-nav__sub-nav-item a {
+  font-weight: 400;
+  padding: $spacing-2xs $spacing-2xs $spacing-2xs $spacing-xs;
+}
+
+.side-nav__sub-nav-item--selected {
+  border-left: 4px solid $brand-01;
+  color: $brand-01;
 }
