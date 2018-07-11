@@ -37,8 +37,8 @@ export default class SideNavItem extends React.Component {
     const { children, item, itemSlug } = this.props;
     const hasSubNav = !(item['sub-nav'] === undefined);
     const navItemClasses = classnames('side-nav__nav-item', {
-      'side-nav__nav-item--open': this.state.open,
-      'side-nav__nav-item--active': window.location.pathname.split('/')[1] === itemSlug,
+      'side-nav__nav-item--open': this.state.open || window.location.pathname.split('/')[1] === itemSlug,
+      'side-nav__nav-item--active': window.location.pathname.split('/')[1] === itemSlug && !hasSubNav,
     });
     return (
       <li className={navItemClasses}>

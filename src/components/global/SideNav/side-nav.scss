@@ -11,7 +11,7 @@
   border-right: 2px solid $ui-02;
   width: 12.5rem;
   height: 100%;
-  padding: 0 0 $spacing-md;
+  padding: $spacing-md 0;
   position: fixed;
   overflow-y: auto;
   z-index: 7000;
@@ -32,19 +32,46 @@
 }
 
 //===================
+// SIDE NAV LOGO
+//===================
+.side-nav__logo {
+  @include typescale('epsilon');
+  width: 100%;
+  display: inline-block;
+  color: $text-01;
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: $spacing-xl 0 $spacing-md;
+  white-space: nowrap;
+  padding: 0 $spacing-md;
+}
+
+.side-nav__logo span {
+  font-weight: 600;
+}
+
+//===================
+// SIDE NAV SEARCH
+//===================
+.side-nav__search {
+  margin: 0 $spacing-md $spacing-xl;
+}
+
+//===================
 // NAV ITEMS
 //===================
 .side-nav__nav-items {
   width: 100%;
   padding: 0;
   list-style: none;
-  margin-bottom: $spacing-3xl;
+  margin-bottom: $spacing-2xl;
 }
 
 .side-nav__nav-item a {
   @include typescale('zeta');
   cursor: pointer;
-  padding: $spacing-xs 1rem $spacing-xs 1rem;
+  padding: $spacing-xs $spacing-md $spacing-xs $spacing-md;
   color: $text-01;
   border: none;
   font-weight: 600;
@@ -62,6 +89,11 @@
   &:focus {
     color: $brand-01;
   }
+
+  @media all and (max-width: 620px) {
+    @include typescale('epsilon');
+    padding-bottom: $spacing-md;
+  }
 }
 
 .side-nav__nav-item--arrow {
@@ -71,7 +103,7 @@
   transition: 0.3s;
 }
 
-.side-nav__nav-item--active a {
+.side-nav__nav-item--active > a {
   color: $brand-01;
   border-left: 4px solid $brand-01;
 }
@@ -82,7 +114,7 @@
 
 .side-nav__nav-item--open .side-nav__sub-nav {
   margin-top: 0;
-  max-height: 80rem;
+  max-height: 100rem;
 }
 
 //===================
@@ -103,6 +135,11 @@
   font-weight: 400;
   padding: $spacing-2xs $spacing-2xs $spacing-2xs $spacing-xs;
   text-decoration: none;
+
+  @media all and (max-width: 620px) {
+    @include typescale('epsilon');
+    padding-bottom: $spacing-sm;
+  }
 }
 
 .side-nav__sub-nav-item--active {
@@ -112,4 +149,19 @@
 .side-nav__sub-nav-item--active a {
   font-weight: 600;
   color: $brand-01;
+}
+
+//===================
+// SIDE NAV LINKS
+//===================
+.side-nav__links {
+  width: 100%;
+  padding: 0 $spacing-md;
+}
+
+.side-nav__link {
+  width: 100%;
+  margin-bottom: $spacing-md;
+  display: flex;
+  justify-content: space-between;
 }
