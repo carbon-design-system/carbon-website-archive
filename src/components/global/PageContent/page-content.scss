@@ -2,6 +2,10 @@
   padding: 4rem 12.5%;
   width: 100%;
 
+  @media all and (max-width: 620px) {
+    padding: $spacing-3xl 3%;
+  }
+
   // The max width of the actual content
   & > div {
     max-width: 45rem;
@@ -11,7 +15,7 @@
   p {
     max-width: 38rem;
     line-height: 1.5;
-    padding: 0 0 1rem;
+    padding: 0 0 $spacing-md;
   }
 
   // No padding when a paragraph is followed by certain elements

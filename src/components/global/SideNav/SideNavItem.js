@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import Link from 'gatsby-link';
 
 import { Icon } from 'carbon-components-react';
 
@@ -11,6 +12,7 @@ export default class SideNavItem extends React.Component {
 
   state = {
     open: false,
+    active: false,
   };
 
   toggleSubNav = () => {
@@ -21,20 +23,23 @@ export default class SideNavItem extends React.Component {
 
   renderSubNavItems = subItems =>
     Object.keys(subItems).map(item => {
+      const subNavClasses = classnames('side-nav__sub-nav-item', {
+        'side-nav__sub-nav-item--active': window.location.pathname.split('/')[2] === item,
+      });
       return (
-        <li className="side-nav__sub-nav-item" key={item}>
-          <a>{subItems[item].title}</a>
+        <li className={subNavClasses} key={item}>
+          <Link to={`/${this.props.itemSlug}/${item}`}>{subItems[item].title}</Link>
         </li>
       );
     });
 
   render() {
-    const { children, item } = this.props;
+    const { children, item, itemSlug } = this.props;
     const hasSubNav = !(item['sub-nav'] === undefined);
     const navItemClasses = classnames('side-nav__nav-item', {
-      'side-nav__nav-item--open': this.state.open,
+      'side-nav__nav-item--open': this.state.open || window.location.pathname.split('/')[1] === itemSlug,
+      'side-nav__nav-item--active': window.location.pathname.split('/')[1] === itemSlug && !hasSubNav,
     });
-
     return (
       <li className={navItemClasses}>
         {hasSubNav ? (
@@ -49,7 +54,7 @@ export default class SideNavItem extends React.Component {
             />
           </a>
         ) : (
-          <a>{item.title}</a>
+          <Link to={`/${itemSlug}`}>{item.title}</Link>
         )}
         {hasSubNav && <ul className="side-nav__sub-nav">{this.renderSubNavItems(item['sub-nav'])}</ul>}
       </li>
