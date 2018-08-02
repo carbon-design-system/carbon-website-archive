@@ -6,6 +6,8 @@ import classnames from 'classnames';
 import SideNav from '../components/global/SideNav';
 import SideNavToggleBtn from '../components/global/SideNavToggleBtn';
 
+import Footer from '../components/global/Footer';
+
 import './index.scss';
 
 export default class Layout extends React.Component {
@@ -54,7 +56,11 @@ export default class Layout extends React.Component {
         />
         <SideNavToggleBtn onToggleBtnClick={this.onToggleBtnClick} isOpen={this.state.isOpen} />
         <SideNav isFinal={this.state.isFinal} isOpen={this.state.isOpen} />
-        <div className={classNames}>{children()}</div>
+        <div className={classNames}>
+          {children()}
+          <Footer isExpanded={this.state.isOpen} />
+        </div>
+        
       </div>
     );
   }
