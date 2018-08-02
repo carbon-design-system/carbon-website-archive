@@ -1,9 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Icon } from 'carbon-components-react';
 
 export class PageIntro extends React.Component {
   render() {
     return <span className="page-intro">{this.props.children}</span>;
+  }
+}
+
+export class PageIcon extends React.Component {
+  render() {
+    return <Icon name={this.props.name} className={ `page-icon page-icon-${this.props.color}` } />;
   }
 }
 

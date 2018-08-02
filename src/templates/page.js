@@ -9,7 +9,7 @@ import Snippet from '../components/global/CodeSnippet';
 import PageTable from '../components/global/PageTable';
 
 // Custom Markdown
-import { h2, h3, h4, ul, ol, PageIntro } from '../components/markdown/Markdown';
+import { h2, h3, h4, ul, ol, PageIntro, PageIcon } from '../components/markdown/Markdown';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -22,6 +22,7 @@ const renderAst = new rehypeReact({
     pre: Snippet,
     table: PageTable,
     'page-intro': PageIntro,
+    'icon': PageIcon,
   },
 }).Compiler;
 
