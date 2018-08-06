@@ -38,6 +38,7 @@ body {
   margin-left: 0;
   transition: $transition--base ease;
   overflow-x: hidden;
+  position: relative;
 
   @include breakpoint('840px') {
     margin-left: 12.5rem;

@@ -13,11 +13,6 @@
     align-items: flex-start;
     overflow: hidden;
   
-    @include breakpoint('bp--md--major') {
-      margin-left: 12.5rem;
-      width: calc(100% - 200px);
-    }
-  
     @include breakpoint('680px') {
       padding: 1.5rem 5%;
       flex-direction: row;
