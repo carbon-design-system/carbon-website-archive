@@ -46,7 +46,12 @@
     top: -0.5rem;
     left: 0;
   }
+
+  div &:first-child {
+    margin-top: 0;
+  }
 }
+
 
 //----------------------------
 // h3
