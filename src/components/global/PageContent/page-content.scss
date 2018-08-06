@@ -53,4 +53,14 @@
     background-color: $field-01;
     font-size: 85%;
   }
+
+  // HR dividers
+  hr.divider {
+    display: block;
+    margin: 3rem 0;
+    max-width: 38rem;
+    height: 1px;
+    background: $ui-03;
+    border: 0px transparent;
+  }
 }
