@@ -5,8 +5,8 @@ import classnames from 'classnames';
 
 import SideNav from '../components/global/SideNav';
 import SideNavToggleBtn from '../components/global/SideNavToggleBtn';
-
 import Footer from '../components/global/Footer';
+import favicon32 from '../content/global/images/favicon-32.png';
 
 import './index.scss';
 
@@ -52,7 +52,8 @@ export default class Layout extends React.Component {
       <div>
         <Helmet
           title={data.site.siteMetadata.title}
-          meta={[{ name: 'description', content: 'Sample' }, { name: 'keywords', content: 'sample, something' }]}
+          meta={[{ name: 'description', content: 'Carbon is the design system for IBM web and product. It is a series of individual styles, components, and guidelines used for creating unified UI.' }, { name: 'keywords', content: 'IBM, design, system, Carbon, design system, Bluemix, styleguide, style, guide, components, library, pattern, kit, component, cloud' }]}
+          link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon32}` }]}
         />
         <SideNavToggleBtn onToggleBtnClick={this.onToggleBtnClick} isOpen={this.state.isOpen} />
         <SideNav isFinal={this.state.isFinal} isOpen={this.state.isOpen} />

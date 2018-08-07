@@ -6,6 +6,10 @@
   margin: $spacing-md 0 $spacing-lg;
 }
 
+.page-content pre div code[class*="language-"] {
+  white-space: pre;
+}
+
 code[class*='language-'],
 pre[class*='language-'] {
   font-family: 'ibm-plex-mono' !important;

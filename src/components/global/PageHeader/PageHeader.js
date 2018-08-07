@@ -10,7 +10,8 @@ export default class PageHeader extends React.Component {
 
   render() {
     const { label, title } = this.props;
-    let labelContent = label ? <h4 className="page-header__label">{label}</h4> : <div className="page-header__label" />;
+    let labelContent = label != title ? <h4 className="page-header__label">{label}</h4> : <div className="page-header__label" />;
+    
     return (
       <div className="page-header">
         {labelContent}
