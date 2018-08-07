@@ -29,3 +29,29 @@ Components:
 - `<icon name="icon--checkmark--solid" color="green" />`
 - `<tile-group>`
 - `<clickable-tile title="Title" author="John Smith" date="Janury 1, 2018"  href="#"><img src="image.png" alt="Alt Text" /></clickable-tile>`
+
+###Example Tile Group
+```
+<tile-group>
+<clickable-tile 
+    title="Data Table updates in Carbon React v5.22.0"
+    author="Josh Black" 
+    date="February 20, 2018"
+    href="https://medium.com/carbondesign/data-table-updates-in-carbon-react-v5-22-0-6da0c24a96d6" 
+    >
+    <img src="images/article-5.png" alt="Data Table updates in Carbon React v5.22.0" />
+</clickable-tile>
+<clickable-tile 
+    title="Data Table updates in Carbon React v5.22.0"
+    author="Josh Black" 
+    date="February 20, 2018"
+    href="https://medium.com/carbondesign/data-table-updates-in-carbon-react-v5-22-0-6da0c24a96d6" 
+    >
+    <img src="images/article-5.png" alt="Data Table updates in Carbon React v5.22.0" />
+</clickable-tile>
+</tile-group>
+```
+
+This will render the following group of tiles
+
+![Tile Group]()
