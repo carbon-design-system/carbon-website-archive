@@ -27,3 +27,5 @@ Components:
 - `<page-intro>`
 - `<page-intro> **Bold and blue text** </page-intro>`
 - `<icon name="icon--checkmark--solid" color="green" />`
+- `<tile-group>`
+- `<clickable-tile title="Title" author="John Smith" date="Janury 1, 2018"  href="#"><img src="image.png" alt="Alt Text" /></clickable-tile>`

@@ -1,0 +1,61 @@
+.page-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.page__tile {
+  flex-basis: calc(50% - 1rem);
+  max-width: rem(300px);
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem 2rem 0;
+  padding: 0;
+
+  @media all and (max-width: 600px) {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+
+.page__tile img {
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid $ui-04;
+}
+
+.page__tile-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+
+  h5 {
+    font-weight: 300;
+    font-size: rem(20px);
+  }
+}
+
+.page__tile-caption {
+  p {
+    font-weight: 300;
+    color: $text-02;
+  }
+
+  p:nth-of-type(1) {
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: rem(14px);
+  }
+
+  p:nth-of-type(2) {
+    font-size: rem(12px);
+  }
+}

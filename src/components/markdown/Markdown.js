@@ -14,6 +14,12 @@ export class PageIcon extends React.Component {
   }
 }
 
+export class TileGroup extends React.Component {
+  render() {
+    return <div className="page-tiles">{this.props.children}</div>;
+  }
+}
+
 export class h2 extends React.Component {
   render() {
     return <h2 className="page-h2">{this.props.children}</h2>;

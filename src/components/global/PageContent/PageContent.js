@@ -12,3 +12,4 @@ export default class PageContent extends React.Component {
     return <div className="page-content">{children}</div>;
   }
 }
+ 
