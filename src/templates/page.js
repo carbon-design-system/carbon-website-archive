@@ -11,7 +11,7 @@ import ClickTile from '../components/global/ClickableTile';
 import Example from '../components/global/Example';
 
 // Custom Markdown
-import { h2, h3, h4, ul, ol, PageIntro, PageIcon, FlexGroup } from '../components/markdown/Markdown';
+import { h2, h3, h4, ul, ol, PageIntro, PageIcon, FlexGroup, ColorBlock } from '../components/markdown/Markdown';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -28,6 +28,7 @@ const renderAst = new rehypeReact({
     'flex-group': FlexGroup,
     'clickable-tile': ClickTile,
     'example': Example,
+    'color-block': ColorBlock,
   },
 }).Compiler;
 

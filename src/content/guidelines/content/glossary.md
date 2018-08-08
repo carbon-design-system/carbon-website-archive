@@ -1,7 +1,7 @@
 ---
 label: Guidelines
 title: Content
-tabs: ['General', 'Guidelines', 'Glossary']
+tabs: ['General', 'Guidance', 'Glossary']
 ---
 
 <page-intro>This section covers the approved _action labels_ and _idioms_ for use in the Bluemix UI and documentation. Users rely on consistent labels for common actions to predict how to interact with an interface. Idioms are expressions that have a meaning different from the meaning of each word in the expression.</page-intro>

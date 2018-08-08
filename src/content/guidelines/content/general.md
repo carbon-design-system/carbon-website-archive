@@ -1,7 +1,7 @@
 ---
 label: Guidelines
 title: Content
-tabs: ['General', 'Guidelines', 'Glossary']
+tabs: ['General', 'Guidance', 'Glossary']
 ---
 
 ## Voice & Tone

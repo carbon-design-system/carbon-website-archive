@@ -20,6 +20,7 @@
 //----------------------------
 // PageIcon
 //----------------------------
+
 .page-icon-green {
   fill: $support-02;
 }
@@ -38,6 +39,24 @@
 }
 
 //----------------------------
+// Colorblock
+//----------------------------
+
+.color-block {
+  position: relative;
+}
+
+.color-block__color {
+  position: absolute;
+  top: $spacing-3xs;
+  left: 5rem;
+  display: block;
+  height: 12px;
+  width: 12px;
+  border: 1px solid $ui-03;
+}
+
+//----------------------------
 // h2
 //----------------------------
 
@@ -47,7 +66,7 @@
   color: $text-01;
   margin-top: 6rem;
   font-weight: 300;
-  padding: 1rem 0 3rem;
+  padding: $spacing-md 0 3rem;
 
   &:before {
     content: '';
