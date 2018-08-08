@@ -23,22 +23,22 @@ export default class ClickTile extends React.Component {
     return (    
       <ClickableTile
         target="_blank"
-        className="page__tile"
+        className="tile"
         href={href}
       >
-        <div className="page__tile-icon">
+        <div className="tile__img">
           {children}
         </div>
-        <div className="page__tile-info">
+        <div className="tile__info">
           <h5>{title}</h5>
 
-          <div className="page__tile-caption">
+          <div className="tile__caption">
             { author
-              ? <p>{author}</p>
+              ? <p class="tile__author">{author}</p>
               : null
             }
             { date
-              ? <p>{date}</p>
+              ? <p class="tile__date">{date}</p>
               : null
             }
           </div>

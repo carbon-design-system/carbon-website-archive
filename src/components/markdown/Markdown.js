@@ -14,9 +14,9 @@ export class PageIcon extends React.Component {
   }
 }
 
-export class TileGroup extends React.Component {
+export class FlexGroup extends React.Component {
   render() {
-    return <div className="page-tiles">{this.props.children}</div>;
+    return <div className="page-flex-group">{this.props.children}</div>;
   }
 }
 

@@ -57,34 +57,36 @@ Use headline-style capitalization for table/grid column headers and product name
 
 These guidelines apply for developers and writers working with IBM Cloud UI and documentation.
 
----
-***
 ### Do use simple tense
 
 Use simple verbs and tenses, and keep sentences concise, simple, friendly, and punchy. Focus on the user's context and make content relevant. The more familiar you are with their context, the better you can communicate without using a lot of words.
 
 If you need to use past or future tense, avoid verb tenses with the words have, has, had, been, should, would, and will.
 
+<flex-group>
+    <example correct=true title="Future Tense" text='"The API returns a promise."'></example>
+    <example title='Future Tense' text='"The API will return a promise."'></example>
+</flex-group>
+<flex-group>
+    <example correct=true title="Past Tense" text='"The limit was exceeded."'></example>
+    <example title='Past Tense' text='"The limit has been exceeded."'></example>
+</flex-group>
 
-<div data-insert-component="DosAndDonts1"></div>
-
----
-***
 ### Do use active voice
 
 To convey a more natural tone, use active voice. People tend to speak in active voice unless they have a reason not to. For example, a good reason to use passive voice is to avoid sounding judgmental or blaming the user. Consider how a statement like, “You entered the wrong value,” which is active voice, might not be a well received error message.
 
-<div data-insert-component="DosAndDonts2"></div>
+<flex-group>
+    <example correct=true title="Active Voice" text='"In the Limits window, specify the minimum and maximum values."'></example>
+    <example title='Passive Voice' text='"The Limits window is used to specify the minimum and maximum values."'></example>
+</flex-group>
 
----
-***
+
 ### Do use second person
 
 Engage your readers by using second person **(you, your)**. First person **(I, we, our)** focuses on the writer rather than the audience. People are interested in what they can do and how your story applies to their lives.
 One exception to this is in the case of possessive adjectives in the UI. You can use first person in headings or labels that are very specific to the user or customer data, for example “My Account” or “My Usage.” In explanatory text for the heading or label, switch to second person, for example _“Your usage is calculated from the 1st day of the month.”_
 
----
-***
 ### Don't be too formal or stuffy
 
 * Do not be afraid to use contractions once in a while. Decide whether they fit the context.
@@ -93,14 +95,24 @@ One exception to this is in the case of possessive adjectives in the UI. You can
 * Occasionally use questions in headings. In both UIs and documentation, questions can be used to further conversational style, but don't overuse them, as they can add to noise and hinder retrievability. Make sure headings that use questions are meaningful. In a UI, questions can be used in a confirmation prompt in a dialog box. For example: _“Do you want to close without saving?”_
 * Use exclamation marks only positively, not negatively. Make sure you use no more than one exclamation mark in a context, such as a single window or a single Docs topic.
 
-<div data-insert-component="DosAndDonts3"></div>
+<flex-group>
+    <example correct=true title="Exclamation Points" text='"Your IBM Bluemix account is ready!"'></example>
+    <example title='Exclamation Points' text='"You have reached your usage limit!"'></example>
+</flex-group>
 
----
-***
 ### Don't be overly mannerly
 
 Terms of politeness are superfluous, convey the wrong tone for technical material, and are not regarded the same way in all cultures.
 
+<example correct=true title="Using Please" text='"Indexing might take a few minutes. Please wait."'></example>
+
 Use **please** in a UI only when the user is being inconvenienced.
 
-<div data-insert-component="DosAndDonts4"></div>
+<flex-group>
+    <example correct=true title="Ability" text='"You can use the command line interface to update your app."'></example>
+    <example title='Ability' text='"You may use the command line interface to update your app."'></example>
+</flex-group>
+<flex-group>
+    <example correct=true title="Possibility" text='"You might need more advanced features when you are integrating with another app."'></example>
+    <example title='Possibility' text='"You may need more advanced features when you are integrating with another app."'></example>
+</flex-group>

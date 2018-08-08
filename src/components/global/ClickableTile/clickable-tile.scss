@@ -1,21 +1,12 @@
-.page-tiles {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1 0 auto;
-
-  a {
-    text-decoration: none;
-    color: black;
-  }
-}
-
-.page__tile {
+a.tile {
   flex-basis: calc(50% - 1rem);
   max-width: rem(300px);
   display: flex;
   flex-direction: column;
   margin: 0 1rem 2rem 0;
   padding: 0;
+  text-decoration: none;
+  color: $text-01;
 
   @media all and (max-width: 600px) {
     flex-basis: 100%;
@@ -24,13 +15,13 @@
   }
 }
 
-.page__tile img {
+.tile__img {
   width: 100%;
   margin: 0;
   border-bottom: 1px solid $ui-04;
 }
 
-.page__tile-info {
+.tile__info {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -40,22 +31,24 @@
   h5 {
     font-weight: 300;
     font-size: rem(20px);
+    text-decoration: none;
+    color: $text-01;
   }
 }
 
-.page__tile-caption {
-  p {
-    font-weight: 300;
-    color: $text-02;
-  }
+.tile__caption p {
+  padding: 0;
+}
 
-  p:nth-of-type(1) {
-    margin-top: 1rem;
-    font-weight: 600;
-    font-size: rem(14px);
-  }
+.tile__author {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: rem(14px);
+  color: $text-02;
+}
 
-  p:nth-of-type(2) {
-    font-size: rem(12px);
-  }
+.tile__date {
+  font-size: rem(12px);
+  color: $text-02;
+  font-weight: 300;
 }

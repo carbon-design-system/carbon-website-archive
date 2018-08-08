@@ -27,12 +27,13 @@ Components:
 - `<page-intro>`
 - `<page-intro> **Bold and blue text** </page-intro>`
 - `<icon name="icon--checkmark--solid" color="green" />`
-- `<tile-group>`
+- `<flex-group>`
 - `<clickable-tile title="Title" author="John Smith" date="Janury 1, 2018"  href="#"><img src="image.png" alt="Alt Text" /></clickable-tile>`
+- `<example correct=true title="Ability" text='Example text or quote'></example>`
 
-###Example Tile Group
+###Example Clickable Tile inside FlexGroup
 ```
-<tile-group>
+<flex-group>
 <clickable-tile 
     title="Data Table updates in Carbon React v5.22.0"
     author="Josh Black" 
@@ -49,9 +50,40 @@ Components:
     >
     <img src="images/article-5.png" alt="Data Table updates in Carbon React v5.22.0" />
 </clickable-tile>
-</tile-group>
+</flex-group>
 ```
 
-This will render the following group of tiles
+This will render the following group of clickable tiles
 
-![Tile Group]()
+![Tile Group](https://user-images.githubusercontent.com/2753488/43804229-e8d26a22-9a60-11e8-9aa9-e4f9b9759757.png)
+
+###Example inside FlexGroup (with and without images)
+```
+<flex-group>
+    <example correct=true title="Ability" text='"You can use the command line interface to update your app."'></example>
+    <example title='Ability' text='"You may use the command line interface to update your app."'></example>
+</flex-group>
+<flex-group>
+    <example correct=true title="Possibility" text='"You might need more advanced features when you are integrating with another app."'></example>
+    <example title='Possibility' text='"You may need more advanced features when you are integrating with another app."'></example>
+</flex-group>
+```
+
+This will render the following set of examples
+![Examples](https://user-images.githubusercontent.com/2753488/43850488-aba55aea-9afd-11e8-921d-418f65cf2460.png)
+
+```
+<flex-group>
+    <example correct="true" title="Test One">
+        <img src="images/content-general-1.png" alt="test2"/>
+    </example>
+    <example title="Test Two">
+        <img src="images/content-general-2.png" alt="test2"/>
+    </example>
+</flex-group>
+```
+
+### Images
+Images will render as full width responsive images by default. Use blockquote in front of an image to render a smaller image for text to wrap around.
+
+`> ![tone](images/content-general-2.png)`

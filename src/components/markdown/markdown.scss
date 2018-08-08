@@ -25,6 +25,19 @@
 }
 
 //----------------------------
+// Flex Group
+//----------------------------
+
+.page-flex-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-flex-group + .page-flex-group {
+  border-top: 2px solid $ui-04;
+}
+
+//----------------------------
 // h2
 //----------------------------
 
@@ -99,4 +112,25 @@
   font-weight: 400;
   padding-left: 0.25rem;
   list-style-type: decimal;
+}
+
+//----------------------------
+// Inline image
+//----------------------------
+
+blockquote p .gatsby-resp-image-link {
+  width: 4rem;
+  margin: 1.2rem 1.2rem 0.75rem 0;
+  float: left;
+}
+
+//----------------------------
+// Blockquote
+//----------------------------
+
+.page-content blockquote {
+  margin: 1.75rem 0 0;
+  line-height: 1.75;
+  width: 100%;
+  max-width: 38rem;
 }
