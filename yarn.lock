@@ -2318,13 +2318,13 @@ capture-stack-trace@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.0.tgz#4a6fa07399c26bba47f0b2496b4d0fb408c5550d"
 
-carbon-components-react@6.5.3:
-  version "6.5.3"
-  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.5.3.tgz#2073b5e5162baf73e7255dd0a2ef1f76ae48f00a"
+carbon-components-react@6.18.3:
+  version "6.18.3"
+  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.18.3.tgz#b130a78a488323f66e71718aac51a63bee15bc82"
   dependencies:
     classnames "2.2.6"
     downshift "^1.31.14"
-    flatpickr "4.5.0"
+    flatpickr "4.5.1"
     invariant "^2.2.3"
     lodash.debounce "^4.0.8"
     lodash.isequal "^4.5.0"
@@ -2332,18 +2332,14 @@ carbon-components-react@6.5.3:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@^9.0.2:
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.0.2.tgz#7e959808974cc464fad6098e791230e1972162d8"
+carbon-components@^9.6.1:
+  version "9.7.0"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.7.0.tgz#f42a447004b3ababd256fdab2a00e7eba8e51420"
   dependencies:
-    carbon-icons "^6.0.4"
+    carbon-icons "^7.0.7"
     flatpickr "2.6.3"
     lodash.debounce "^4.0.8"
     warning "^3.0.0"
-
-carbon-icons@^6.0.4:
-  version "6.3.2"
-  resolved "https://registry.yarnpkg.com/carbon-icons/-/carbon-icons-6.3.2.tgz#2cc942225442b0d5c02593e344b50c7ec22edf28"
 
 carbon-icons@^7.0.7:
   version "7.0.7"
@@ -4453,9 +4449,9 @@ flatpickr@2.6.3:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-2.6.3.tgz#457357532deb135f3da64b425bf4435737961564"
 
-flatpickr@4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.5.0.tgz#f72c7164a1c24e3ad419e3b2209d1a2d3604724a"
+flatpickr@4.5.1:
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.5.1.tgz#f65eaf54c07538f87d6f68a67b03cf816d7fb82f"
 
 flatten@^1.0.2:
   version "1.0.2"
@@ -4579,7 +4575,7 @@ fs-extra@6.0.1:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
-fs-extra@^4.0.1:
+fs-extra@^4.0.1, fs-extra@^4.0.2:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-4.0.3.tgz#0d852122e5bc5beb453fb028e9c0c9bf36340c94"
   dependencies:
@@ -4734,6 +4730,24 @@ gatsby-plugin-sharp@^1.6.47:
     sharp "^0.20.0"
     svgo "^0.7.2"
 
+gatsby-plugin-sharp@^1.6.48:
+  version "1.6.48"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-1.6.48.tgz#9bb7515da9c7753b3065c51b2d35a0de5b9aa1f5"
+  dependencies:
+    async "^2.1.2"
+    babel-runtime "^6.26.0"
+    bluebird "^3.5.0"
+    imagemin "^5.2.2"
+    imagemin-pngquant "5.0.1"
+    imagemin-webp "^4.0.0"
+    lodash "^4.17.4"
+    mini-svg-data-uri "^1.0.0"
+    potrace "^2.1.1"
+    probe-image-size "^4.0.0"
+    progress "^1.1.8"
+    sharp "^0.20.0"
+    svgo "^0.7.2"
+
 gatsby-react-router-scroll@^1.0.17:
   version "1.0.17"
   resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-1.0.17.tgz#16b9c67da7f4a997ebb8c784f4feba2b23af4f98"
@@ -4795,6 +4809,15 @@ gatsby-transformer-remark@^1.7.44:
     unist-util-remove-position "^1.1.1"
     unist-util-select "^1.5.0"
     unist-util-visit "^1.1.1"
+
+gatsby-transformer-sharp@^1.6.27:
+  version "1.6.27"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-1.6.27.tgz#89167e4d9fcd3cf772bc029380af9cdcd88e23a1"
+  dependencies:
+    babel-runtime "^6.26.0"
+    bluebird "^3.5.0"
+    fs-extra "^4.0.2"
+    probe-image-size "^4.0.0"
 
 gatsby@^1.9.247:
   version "1.9.270"
@@ -9411,6 +9434,13 @@ react-fuzzy@^0.5.2:
     fuse.js "^3.0.1"
     prop-types "^15.5.9"
 
+react-ga@^2.5.3:
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/react-ga/-/react-ga-2.5.3.tgz#0f447c73664c069a5fc341f6f431262e3d4c23c4"
+  optionalDependencies:
+    prop-types "^15.6.0"
+    react "^15.6.2 || ^16.0"
+
 react-helmet@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/react-helmet/-/react-helmet-5.2.0.tgz#a81811df21313a6d55c5f058c4aeba5d6f3d97a7"
@@ -9554,6 +9584,15 @@ react@^15.6.0:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
     prop-types "^15.5.10"
+
+"react@^15.6.2 || ^16.0":
+  version "16.4.2"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.4.2.tgz#2cd90154e3a9d9dd8da2991149fdca3c260e129f"
+  dependencies:
+    fbjs "^0.8.16"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
 
 react@^16.4.0:
   version "16.4.1"

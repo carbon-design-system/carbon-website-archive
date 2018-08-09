@@ -10,6 +10,7 @@ import PageTable from '../components/global/PageTable';
 import ClickTile from '../components/global/ClickableTile';
 import Example from '../components/global/Example';
 import ColorCard from '../components/global/ColorCard';
+import IconLibrary from '../components/iconography/IconLibrary';
 
 // Custom Markdown
 import { h2, h3, h4, ul, ol, PageIntro, PageIcon, FlexGroup, ColorBlock } from '../components/markdown/Markdown';
@@ -31,6 +32,7 @@ const renderAst = new rehypeReact({
     'example': Example,
     'color-block': ColorBlock,
     'color-card': ColorCard,
+    'icon-library': IconLibrary,
   },
 }).Compiler;
 

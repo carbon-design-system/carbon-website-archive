@@ -28,7 +28,7 @@ Components:
 - `<page-intro> **Bold and blue text** </page-intro>`
 - `<icon name="icon--checkmark--solid" color="green" />`
 - `<flex-group>`
-- `<clickable-tile title="Title" author="John Smith" date="Janury 1, 2018"  href="#"><img src="image.png" alt="Alt Text" /></clickable-tile>`
+- `<clickable-tile title="Title" author="John Smith" date="Janury 1, 2018"  href="#"><img src="image.png" alt="Alt Text" type="article|resource" /></clickable-tile>`
 - `<example correct=true title="Ability" text='Example text or quote'></example>`
 - `<color-block>#ff0000</color-block>`
 - `<color-card name="$ui-01" hex="#ffffff" border="true" small="true"></color-card>`
@@ -40,6 +40,7 @@ Components:
     title="Data Table updates in Carbon React v5.22.0"
     author="Josh Black" 
     date="February 20, 2018"
+    type="article"
     href="https://medium.com/carbondesign/data-table-updates-in-carbon-react-v5-22-0-6da0c24a96d6" 
     >
     <img src="images/article-5.png" alt="Data Table updates in Carbon React v5.22.0" />
@@ -48,6 +49,7 @@ Components:
     title="Data Table updates in Carbon React v5.22.0"
     author="Josh Black" 
     date="February 20, 2018"
+    type="article"
     href="https://medium.com/carbondesign/data-table-updates-in-carbon-react-v5-22-0-6da0c24a96d6" 
     >
     <img src="images/article-5.png" alt="Data Table updates in Carbon React v5.22.0" />

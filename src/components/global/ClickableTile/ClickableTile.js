@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 import { ClickableTile } from 'carbon-components-react';
 
 export default class ClickTile extends React.Component {
@@ -9,6 +10,8 @@ export default class ClickTile extends React.Component {
     date: PropTypes.string,
     author: PropTypes.string,
     title: PropTypes.string,
+    type: PropTypes.string,
+    description: PropTypes.string,
   };
 
   render() {
@@ -18,12 +21,53 @@ export default class ClickTile extends React.Component {
       date,
       author,
       title,
+      type,
+      description,
     } = this.props;
    
-    return (    
-      <ClickableTile
+    const classNames = classnames({
+      'tile': true,
+      'tile--resource': type === 'resource',
+      'tile-article': type === 'article',
+    });
+
+    if (type === 'resource') {
+      return (
+        <ClickableTile
         target="_blank"
-        className="tile"
+        className={classNames}
+        href={href}
+      >
+        <div className="tile__img">
+          {children}
+        </div>
+        <div className="tile__info">
+          <h5>{title}</h5>
+
+          <div className="tile__caption">
+            { description
+              ? <p class="tile__description">{description}</p>
+              : null
+            }
+            { author
+              ? <p class="tile__author">{author}</p>
+              : null
+            }
+            { date
+              ? <p class="tile__date">{date}</p>
+              : null
+            }
+          </div>
+        </div>
+      </ClickableTile>
+      );
+    }
+
+    if (type != 'resource') {
+      return (
+        <ClickableTile
+        target="_blank"
+        className={classNames}
         href={href}
       >
         <div className="tile__img">
@@ -44,6 +88,7 @@ export default class ClickTile extends React.Component {
           </div>
         </div>
       </ClickableTile>
-    );
+      );
+    }
   }
 }

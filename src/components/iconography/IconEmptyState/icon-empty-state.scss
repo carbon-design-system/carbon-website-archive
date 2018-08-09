@@ -1,0 +1,87 @@
+.icon-empty-state {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-empty-state__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 550px;
+  margin-top: 2rem;
+
+  @include breakpoint('453px') {
+    margin-top: 4rem;
+  }
+
+  h4 {
+    @include font-smoothing;
+    font-size: rem(23px);
+    font-weight: 600;
+    color: $ui-05;
+    margin: 2rem 0 1.75rem 0;
+  }
+
+  p {
+    // @include font-smoothing;
+    color: $ui-05;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .icon-empty-state__btn {
+    margin-top: 2rem;
+    border-color: $brand-01;
+
+    &:hover {
+      background: $brand-01;
+    }
+
+    &:hover svg,
+    &:focus svg {
+      fill: $color__white;
+    }
+
+    svg {
+      fill: $brand-01;
+    }
+  }
+}
+
+.icon-empty-state__shapes {
+  svg {
+    margin: 0 1rem;
+    animation: dancing 2000ms infinite forwards linear 250ms;
+
+    &:nth-child(2),
+    &:nth-child(4) {
+      animation-direction: reverse;
+    }
+
+    @include breakpoint('453px') {
+      margin: 0 1.5rem 0 1rem;
+
+      &:first-child,
+      &:last-child {
+        position: relative;
+        top: 3.5rem;
+      }
+    }
+  }
+}
+
+@keyframes dancing {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: rotate(-3deg) translateY(-5px);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+}

@@ -1,0 +1,161 @@
+.version {
+  display: inline-block;
+  margin-bottom: rem(16px);
+  color: $text-03;
+}
+
+.icon-container-wrapper {
+  margin-top: rem(70px);
+}
+
+.icon-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+
+  @media (min-width: 1600px) {
+    width: 80%;
+  }
+}
+
+.container:not(.container--expanded) .iconography .bx--search {
+  @media (min-width: 1024px) {
+    width: 32rem;
+  }
+
+  @media (min-width: 1139px) {
+    width: 43rem;
+  }
+
+  @media (min-width: 1374px) {
+    width: 54rem;
+  }
+
+  @media (min-width: 1600px) {
+    width: 43rem;
+  }
+
+  @media (min-width: 1667px) {
+    width: 54rem;
+  }
+}
+
+.iconography .bx--search {
+  width: 100%;
+
+  @media (min-width: 562px) {
+    width: 32rem;
+  }
+
+  @media (min-width: 783px) {
+    width: 43rem;
+  }
+
+  @media (min-width: 840px) {
+    width: 32rem;
+  }
+
+  @media (min-width: 939px) {
+    width: 43rem;
+  }
+
+  @media (min-width: 1174px) {
+    width: 54rem;
+  }
+
+  @media (min-width: 1408px) {
+    width: 65rem;
+  }
+
+  @media (min-width: 1600px) {
+    width: 54rem;
+  }
+
+  @media (min-width: 1760px) {
+    width: 65rem;
+  }
+}
+
+.icon {
+  flex: 1 1 10rem;
+  max-width: 10rem;
+  height: 250px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+
+  h5 {
+    @include typescale('epsilon');
+    letter-spacing: 0.5px;
+    line-height: 1.25;
+    color: $text-01;
+    font-weight: 600;
+    margin-top: rem(16px);
+    margin-bottom: rem(5px);
+  }
+
+  span {
+    @include typescale('omega');
+    color: $text-03;
+  }
+}
+
+.icon__actions {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $brand-01;
+  transition: $transition--base;
+  opacity: 0;
+
+  &.displayed {
+    opacity: 1;
+  }
+}
+
+.icon__card {
+  background: $ui-02;
+  height: 10rem;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus,
+  .icon__actions:focus,
+  button:focus,
+  a:focus {
+    .icon__actions {
+      opacity: 1;
+    }
+  }
+}
+
+.icon-button,
+a.icon-button {
+  border: 2px solid $inverse-01;
+  background-color: $brand-01;
+  min-width: rem(112px);
+  margin: 0.2rem 0;
+  color: $inverse-01 !important;
+  height: 2.5rem;
+  padding: 0 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $inverse-01;
+    color: $brand-01 !important;
+  }
+}

@@ -5,6 +5,18 @@ title: Resources
 
 ## Carbon Design Kit
 
+<flex-group>
+<clickable-tile 
+    title="Carbon Design Kit"
+    description="The Design Kit consists of core visual styles and patterns. It has everything a designer needs to start building experiences."
+    href="https://github.com/ibm/carbon-design-kit" 
+    type="resource"
+    >
+    <img src="images/article-5.png" alt="Data Table updates in Carbon React v5.22.0" />
+</clickable-tile>
+
+</flex-group>
+
 The Design Kit consists of core visual styles and patterns. It has everything a designer needs to start building experiences.
 ![https://github.com/ibm/carbon-design-kit](Carbon Design Kit)
 
