@@ -1,0 +1,75 @@
+.color-block {
+  margin-bottom: 3rem;
+
+  &--small {
+    outline: 1px solid red;
+  }
+
+  p {
+    padding: 0;
+  }
+}
+
+.color-block__example {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: em(165px);
+  height: em(120px);
+  transition: transform $transition--base;
+  margin-bottom: 1rem;
+
+  &--border {
+    border: 1px solid $ui-03;
+  }
+
+  &--small {
+    width: 8.25rem;
+    height: 5rem;
+  }
+
+  &:hover,
+  &:focus,
+  button:focus {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 1;
+
+    button {
+      opacity: 1;
+    }
+  }
+}
+
+.color-block__button--dark,
+.color-block__button--light {
+  background: transparent;
+  border: 2px solid currentColor;
+  padding: 0.5em 0.75em;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity $transition--base;
+  opacity: 0;
+}
+
+.color-block__button--dark {
+  color: $text-01;
+}
+
+.color-block__button--light {
+  color: $inverse-01;
+}
+
+.color-block__name {
+  font-weight: 600;
+}
+
+.color-block__hex {
+  padding: 0;
+  font-size: 14px;
+}
+
+.hover-row {
+  background: rgba(#5596e6, 0.1);
+}

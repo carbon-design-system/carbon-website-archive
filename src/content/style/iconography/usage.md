@@ -25,9 +25,6 @@ While most icons occupy a square artboard, some icons may occupy a rectangular a
 
 All icons should be on a transparent background and with the artboard boundaries at the edges of the icon. At least one of the edges should be at the standard measurement of 24px or 16px.
 
----
-***
-> 
 ![icon usage](images/icon-usage-1.png)
 
 ### Padding
@@ -36,21 +33,18 @@ When **creating icons,** do not add internal padding with Sketch or Illustrator.
 
 When **using icons,** all touch targets need to be 44px or higher. With that said, a developer can add padding to a touch target with CSS to meet the 44px requirement.
 
----
-***
-> 
 ![icon padding](images/icon-usage-2.png)
 
 ### Color
 
 Interactive UI icons need to pass the same color contrast ratio as typography at a 4.5:1 ratio. UI icons are always a solid color. The color of the icon should depend on the importance of the icon's action.
 
-|                        | SCSS             | HEX     |
-| ---------------------- | ---------------- | ------- |
-| Primary action         | $brand-01        | #3d70b2 |
-| Primary action:hover   | $hover-primary   | #30588C |
-| Secondary action       | $ui-05           | #5a6872 |
-| Secondary action:hover | $hover-secondary | #3d70b2 |
+|                        | SCSS             | HEX                             y   |
+| ---------------------- | ---------------- | ---------------------------------- |
+| Primary action         | $brand-01        | <color-block>#3d70b2</color-block> |
+| Primary action:hover   | $hover-primary   | <color-block>#30588C</color-block> |
+| Secondary action       | $ui-05           | <color-block>#5a6872</color-block> |
+| Secondary action:hover | $hover-secondary | <color-block>#3d70b2</color-block> |
 
 **Exception:** There is an exception to both the `brand-01` and UI color rules. Certain icons, such as status or notification icons, can inherit their parent color. For example, a warning icon is yellow because warning notifications are yellow.
 
@@ -124,7 +118,6 @@ Visit carbon-icons and browse the svg folder for any icons you want to use. (Rem
 
 Carbon icons ship with two main SVG files that contain different sets of external SVG sprite files:
 
----
 
 | Filename          | Description                                                                                                        | Supported versions     |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------ | ---------------------- |

@@ -31,6 +31,7 @@ Components:
 - `<clickable-tile title="Title" author="John Smith" date="Janury 1, 2018"  href="#"><img src="image.png" alt="Alt Text" /></clickable-tile>`
 - `<example correct=true title="Ability" text='Example text or quote'></example>`
 - `<color-block>#ff0000</color-block>`
+- `<color-card name="$ui-01" hex="#ffffff" border="true" small="true"></color-card>`
 
 ###Example Clickable Tile inside FlexGroup
 ```

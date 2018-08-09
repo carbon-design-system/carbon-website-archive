@@ -28,10 +28,10 @@ To use in code, just include the layer mixin like so with the appropriate layer 
 
 Layer | Mixin value
 ------|-----------
-**Base** | @include layer('raised')
-**Flat** | @include layer('flat')
-**Raised** | @include layer('raised')
-**Overlay** |@include layer('overlay')
-**Sticky Nav** | @include layer('global-header')
-**Temporary Nav** | @include layer('left-nav')
-**Pop-out** | @include layer('pop-out')
+**Base** | `@include layer('raised')`
+**Flat** | `@include layer('flat')`
+**Raised** | `@include layer('raised')`
+**Overlay** | `@include layer('overlay')`
+**Sticky Nav** | `@include layer('global-header')`
+**Temporary Nav** | `@include layer('left-nav')`
+**Pop-out** | `@include layer('pop-out')`
