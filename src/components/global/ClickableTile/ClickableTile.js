@@ -28,7 +28,7 @@ export default class ClickTile extends React.Component {
     const classNames = classnames({
       'tile': true,
       'tile--resource': type === 'resource',
-      'tile-article': type === 'article',
+      'tile--article': type === 'article',
     });
 
     if (type === 'resource') {

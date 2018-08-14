@@ -33,7 +33,7 @@ Components:
 - `<color-block>#ff0000</color-block>`
 - `<color-card name="$ui-01" hex="#ffffff" border="true" small="true"></color-card>`
 
-###Example Clickable Tile inside FlexGroup
+### Example Clickable Tile inside FlexGroup
 ```
 <flex-group>
 <clickable-tile 
@@ -61,7 +61,7 @@ This will render the following group of clickable tiles
 
 ![Tile Group](https://user-images.githubusercontent.com/2753488/43804229-e8d26a22-9a60-11e8-9aa9-e4f9b9759757.png)
 
-###Example inside FlexGroup (with and without images)
+### Example inside FlexGroup (with and without images)
 ```
 <flex-group>
     <example correct=true title="Ability" text='"You can use the command line interface to update your app."'></example>

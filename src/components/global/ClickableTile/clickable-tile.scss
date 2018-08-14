@@ -1,12 +1,14 @@
-a.tile {
-  flex-basis: calc(50% - 1rem);
-  max-width: rem(300px);
-  display: flex;
-  flex-direction: column;
-  margin: 0 1rem 2rem 0;
-  padding: 0;
+// Tile Article
+
+a.tile--article {
+  display: flex; 
   text-decoration: none;
   color: $text-01;
+  flex-basis: calc(50% - 1rem);
+  max-width: rem(300px);
+  flex-direction: column;
+  margin: 0 $spacing-md $spacing-xl 0;
+  padding: 0;
 
   @media all and (max-width: 600px) {
     flex-basis: 100%;
@@ -15,18 +17,18 @@ a.tile {
   }
 }
 
-.tile__img {
+.tile--article .tile__img {
   width: 100%;
   margin: 0;
   border-bottom: 1px solid $ui-04;
 }
 
-.tile__info {
+.tile--article .tile__info {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2rem 1rem;
+  padding: $spacing-xl $spacing-md;
 
   h5 {
     font-weight: 300;
@@ -36,12 +38,12 @@ a.tile {
   }
 }
 
-.tile__caption p {
+.tile--article .tile__caption p {
   padding: 0;
 }
 
 .tile__author {
-  margin-top: 1rem;
+  margin-top: $spacing-md;
   font-weight: 600;
   font-size: rem(14px);
   color: $text-02;
@@ -51,4 +53,58 @@ a.tile {
   font-size: rem(12px);
   color: $text-02;
   font-weight: 300;
+}
+
+// Tile Resource
+
+a.tile--resource {
+  width: calc(50% - 1rem);
+  align-items: flex-start;
+  min-height: 190px;
+  padding: $spacing-xl $spacing-md;
+  margin: 0 $spacing-md $spacing-md 0;
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+  color: $text-01;
+  min-width: rem(190px);
+  max-width: rem(630px);
+
+  @media all and (max-width: 1283px) {
+    width: 100%;
+  }
+
+  @media all and (max-width: 600px) {
+    min-width: 100%;
+    min-height: 220px;
+  }
+}
+
+.tile--resource .tile__info {
+  h5 {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: $text-01;
+    margin: 0 0 $spacing-xs 0;
+    padding: 0;
+  }
+}
+
+.tile--resource .tile__description {
+  padding-bottom: 0;
+}
+
+.tile--resource .tile__img {
+  width: 32px;
+  height: 32px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin: 0 1.25rem 0 .25rem;
+  background: black; //remove this!!!!
+
+  img {
+    width: 100%;
+    margin: 0;
+  }
 }
