@@ -63,6 +63,7 @@ For developer questions: #carbon-components, #carbon-react
 Open an issue in one of our <a href="https://github.com/carbon-design-system">GitHub repos</a>. Please choose the appropriate repo for your request.
 
 ## Featured
+
 <flex-group>
 <clickable-tile 
     type="article"

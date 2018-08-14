@@ -22,7 +22,7 @@ tabs: ['Vanilla', 'React']
 This will render the following header:
 ![Header](https://user-images.githubusercontent.com/5447411/41934216-bc9c080e-794b-11e8-9d7f-1f9d89d44dd9.png)
 
-Components:
+Global Components:
  
 - `<page-intro>`
 - `<page-intro> **Bold and blue text** </page-intro>`
@@ -32,6 +32,10 @@ Components:
 - `<example correct=true title="Ability" text='Example text or quote'></example>`
 - `<color-block>#ff0000</color-block>`
 - `<color-card name="$ui-01" hex="#ffffff" border="true" small="true"></color-card>`
+
+Page Specific Components: 
+- `<type-scale-table />`
+- `<type-styles-table />`
 
 ### Example Clickable Tile inside FlexGroup
 ```

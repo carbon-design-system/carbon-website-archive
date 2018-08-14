@@ -12,7 +12,7 @@ title: Resources
     href="https://github.com/ibm/carbon-design-kit" 
     type="resource"
     >
-    <img src="images/resources-1.svg" alt="Carbon Design Kit" />
+    <img src="images/sketch-icon.png" alt="Carbon Design Kit" />
 </clickable-tile>
 <clickable-tile 
     title="Carbon CodePen"
@@ -20,7 +20,7 @@ title: Resources
     href="http://www.codepen.io/team/carbon" 
     type="resource"
     >
-    <img src="images/codepen-icon.svg" alt="Carbon CodePen" />
+    <img src="images/codepen-icon.png" alt="Carbon CodePen" />
 </clickable-tile>
 <clickable-tile 
     title="Themeing Sandbox"
@@ -28,7 +28,7 @@ title: Resources
     href="http://themes.carbondesignsystem.com/" 
     type="resource"
     >
-    <img src="images/sandbox-icon.svg" alt="Themeing Sandbox" />
+    <img src="images/sandbox-icon.png" alt="Themeing Sandbox" />
 </clickable-tile>
 <clickable-tile 
     title="Color Contrast Checker"
@@ -36,7 +36,7 @@ title: Resources
     href="https://marijohannessen.github.io/color-contrast-checker/" 
     type="resource"
     >
-    <img src="images/color-contrast-icon.svg" alt="Color Contrast Checker" />
+    <img src="images/color-contrast-icon.png" alt="Color Contrast Checker" />
 </clickable-tile>
 <clickable-tile 
     title="Carbon Boilerplate"
@@ -44,7 +44,7 @@ title: Resources
     href="A simple boilerplate for rapid UI prototyping with Carbon components."
     type="resource"
     >
-    <img src="images/resources-2.svg" alt="Carbon Boilerplate" />
+    <img src="images/github-icon.png" alt="Carbon Boilerplate" />
 </clickable-tile>
 <clickable-tile 
     title="Carbon React Storybook"
@@ -52,7 +52,7 @@ title: Resources
     href="http://react.carbondesignsystem.com/"
     type="resource"
     >
-    <img src="images/react-icon.svg" alt="Carbon React Storybook" />
+    <img src="images/react-icon.png" alt="Carbon React Storybook" />
 </clickable-tile>
 <clickable-tile 
     title="IBM Plex"
@@ -60,7 +60,7 @@ title: Resources
     href="https://github.com/IBM/plex"
     type="resource"
     >
-    <img src="images/github-icon.svg" alt="IBM Plex" />
+    <img src="images/github-icon.png" alt="IBM Plex" />
 </clickable-tile>
 </flex-group>
 
@@ -73,7 +73,7 @@ title: Resources
     href="https://github.com/ibm/carbon-design-kit" 
     type="resource"
     >
-    <img src="images/resources-1.svg" alt="Carbon Design Kit" />
+    <img src="images/sketch-icon.png" alt="Carbon Design Kit" />
 </clickable-tile>
 <clickable-tile 
     title="Carbon Components"
@@ -81,7 +81,7 @@ title: Resources
     href="https://github.com/ibm/carbon-components" 
     type="resource"
     >
-    <img src="images/github-icon.svg" alt="Carbon Component Library" />
+    <img src="images/github-icon.png" alt="Carbon Component Library" />
 </clickable-tile>
 <clickable-tile 
     title="Carbon Components React"
@@ -89,7 +89,7 @@ title: Resources
     href="https://github.com/ibm/carbon-components-react" 
     type="resource"
     >
-    <img src="images/github-icon.svg" alt="Carbon Components React" />
+    <img src="images/github-icon.png" alt="Carbon Components React" />
 </clickable-tile>
 <clickable-tile 
     title="Carbon Components Anuglar"
@@ -97,7 +97,7 @@ title: Resources
     href="https://github.com/ibm/carbon-components-angular" 
     type="resource"
     >
-    <img src="images/github-icon.svg" alt="Carbon Components Angular" />
+    <img src="images/github-icon.png" alt="Carbon Components Angular" />
 </clickable-tile>
 </flex-group>
 

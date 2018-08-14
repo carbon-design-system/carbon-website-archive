@@ -4,6 +4,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -15,6 +16,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -22,8 +24,11 @@ module.exports = {
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
               maxWidth: 590,
+              linkImagesToOriginal: false,
             },
           },
+          
+          `gatsby-remark-copy-images`,
         ],
       },
     },

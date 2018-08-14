@@ -134,10 +134,19 @@
 }
 
 //----------------------------
+// Image
+//----------------------------
+
+.page-content img {
+  max-width: 100%;
+}
+
+//----------------------------
 // Inline image
 //----------------------------
 
-blockquote p .gatsby-resp-image-link {
+blockquote p .gatsby-resp-image-link,
+blockquote p img {
   width: 4rem;
   margin: 1.2rem 1.2rem 0.75rem 0;
   float: left;
