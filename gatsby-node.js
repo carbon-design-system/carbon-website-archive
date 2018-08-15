@@ -82,7 +82,28 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   });
 };
 
+// need to add custom markdown-loader and html-loader here... somehow :D 
 
-exports.modifyWebpackConfig = ({ config, stage }) => {
-
-};
+/*
+exports.onCreateWebpackConfig = ({
+  actions,
+}) => {
+  actions.setWebpackConfig({
+    module: {
+      rules: [
+        {
+          test: /\.md$/,
+          loaders: ['html-loader', 'markdown-loader'],
+        },
+        {
+          test: /\.html$/,
+          loader: 'html-loader',
+          options: {
+            minimize: false,
+          },
+        },
+      ],
+    },
+  })
+}
+*/

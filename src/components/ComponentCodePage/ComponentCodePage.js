@@ -15,7 +15,7 @@ export default class ComponentCodePage extends React.Component {
     const reactLink =`http://react.carbondesignsystem.com/?selectedKind=${name}`;
 
     //let htmlFile;
-    //const htmlFile = require(`carbon-components/html/accordion/accordion.html`);
+    const htmlFile = require(`carbon-components/html/accordion/accordion.html`);
     //htmlFile = require(`carbon-components/html/${name}/${name}.html`);
    
     return (    
