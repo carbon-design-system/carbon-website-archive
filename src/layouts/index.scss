@@ -15,23 +15,23 @@ $brand-01: $dark-blue;
 //---------------------------------------
 // Components
 //---------------------------------------
-@import '../components/markdown/markdown.scss';
-@import '../components/global/PageHeader/page-header.scss';
-@import '../components/global/PageTabs/page-tabs.scss';
-@import '../components/global/PageContent/page-content.scss';
-@import '../components/global/CodeSnippet/code-snippet.scss';
-@import '../components/global/ClickableTile/clickable-tile.scss';
-@import '../components/global/PageTable/page-table.scss';
-@import '../components/global/SideNav/side-nav.scss';
-@import '../components/global/SideNavToggleBtn/side-nav-toggle-btn.scss';
-@import '../components/global/Footer/footer.scss';
-@import '../components/global/Example/example.scss';
-@import '../components/global/ColorCard/color-card.scss';
-@import '../components/iconography/IconCard/icon-card.scss';
-@import '../components/iconography/IconEmptyState/icon-empty-state.scss';
-@import '../components/content/Glossary/glossary.scss';
-@import '../components/typography/TypeScaleTable/type-scale-table.scss';
-@import '../components/typography/TypeStylesTable/type-styles-table.scss';
+@import '../components/Markdown/markdown.scss';
+@import '../components/PageHeader/page-header.scss';
+@import '../components/PageTabs/page-tabs.scss';
+@import '../components/PageContent/page-content.scss';
+@import '../components/CodeSnippet/code-snippet.scss';
+@import '../components/ClickableTile/clickable-tile.scss';
+@import '../components/PageTable/page-table.scss';
+@import '../components/SideNav/side-nav.scss';
+@import '../components/SideNavToggleBtn/side-nav-toggle-btn.scss';
+@import '../components/Footer/footer.scss';
+@import '../components/Example/example.scss';
+@import '../components/ColorCard/color-card.scss';
+@import '../components/IconCard/icon-card.scss';
+@import '../components/IconEmptyState/icon-empty-state.scss';
+@import '../components/Glossary/glossary.scss';
+@import '../components/TypeScaleTable/type-scale-table.scss';
+@import '../components/TypeStylesTable/type-styles-table.scss';
 
 //---------------------------------------
 // Global styles
