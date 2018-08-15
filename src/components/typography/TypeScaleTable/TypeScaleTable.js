@@ -3,9 +3,10 @@ import React, { Component } from 'react';
 class TypeScaleTable extends Component {
 
   render() {
-    const typographyTable = 'typography table';//require('../../../content/style/typography/type-scale-table.md');
+    //const typographyTable = require('../../../content/style/typography/_type-scale-table.md');
     return (
-     <div className="typography-table" dangerouslySetInnerHTML={{ __html: typographyTable }} />
+      //<div class="type-scale-table" dangerouslySetInnerHTML={{ __html: typographyTable }} />
+      <div />
     );
   }
 }

@@ -16,7 +16,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          
+         `gatsby-remark-component`,
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -27,8 +27,7 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
-          
-          `gatsby-remark-copy-images`,
+          "gatsby-remark-copy-linked-files",
         ],
       },
     },
