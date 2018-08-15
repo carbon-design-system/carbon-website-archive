@@ -21,6 +21,7 @@
     "gatsby-source-filesystem": "^1.5.38",
     "gatsby-transformer-remark": "^1.7.44",
     "gatsby-transformer-sharp": "^1.6.27",
+    "markdown-loader": "^3.0.0",
     "prismjs": "^1.15.0",
     "prop-types": "^15.6.1",
     "react-copy-to-clipboard": "^5.0.1",

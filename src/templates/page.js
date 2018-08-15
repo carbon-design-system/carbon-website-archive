@@ -2,17 +2,18 @@ import React from 'react';
 import rehypeReact from 'rehype-react';
 
 // Components
-import PageHeader from '../components/global/PageHeader';
-import PageTabs from '../components/global/PageTabs';
-import PageContent from '../components/global/PageContent';
-import Snippet from '../components/global/CodeSnippet';
-import PageTable from '../components/global/PageTable';
-import ClickTile from '../components/global/ClickableTile';
-import Example from '../components/global/Example';
-import ColorCard from '../components/global/ColorCard';
-import IconLibrary from '../components/iconography/IconLibrary';
-import TypeScaleTable from '../components/typography/TypeScaleTable';
-import TypeStylesTable from '../components/typography/TypeStylesTable';
+import PageHeader from '../components/PageHeader';
+import PageTabs from '../components/PageTabs';
+import PageContent from '../components/PageContent';
+import Snippet from '../components/CodeSnippet';
+import PageTable from '../components/PageTable';
+import ClickTile from '../components/ClickableTile';
+import Example from '../components/Example';
+import ColorCard from '../components/ColorCard';
+import IconLibrary from '../components/IconLibrary';
+import TypeScaleTable from '../components/TypeScaleTable';
+import TypeStylesTable from '../components/TypeStylesTable';
+import ComponentCodePage from '../components/ComponentCodePage';
 
 // Custom Markdown
 import { h2, h3, h4, ul, ol, PageIntro, PageIcon, FlexGroup, ColorBlock } from '../components/markdown/Markdown';
@@ -37,6 +38,7 @@ const renderAst = new rehypeReact({
     'icon-library': IconLibrary,
     'type-scale-table': TypeScaleTable,
     'type-styles-table': TypeStylesTable,
+    'component': ComponentCodePage,
   },
 }).Compiler;
 

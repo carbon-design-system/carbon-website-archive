@@ -81,3 +81,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     });
   });
 };
+
+
+exports.modifyWebpackConfig = ({ config, stage }) => {
+
+};

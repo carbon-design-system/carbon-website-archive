@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import classnames from 'classnames';
 
-import SideNav from '../components/global/SideNav';
-import SideNavToggleBtn from '../components/global/SideNavToggleBtn';
-import Footer from '../components/global/Footer';
+import SideNav from '../components/SideNav';
+import SideNavToggleBtn from '../components/SideNavToggleBtn';
+import Footer from '../components/Footer';
 import favicon32 from '../content/global/images/favicon-32.png';
 
 import './index.scss';
