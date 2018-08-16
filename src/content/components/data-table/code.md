@@ -1,5 +1,11 @@
 ---
-desc: <span>Data Tables</span> present raw data sets and lend meaning to the data, while maintaining that the data is readable, scannable, and easily comparable.
+label: Component
+title: Data Table
+tabs: ['Code', 'Usage', 'Style']
+---
+
+
+<page-intro>**Data Tables** present raw data sets and lend meaning to the data, while maintaining that the data is readable, scannable, and easily comparable.</page-intro>
 
 variations:
   data-table-v2:

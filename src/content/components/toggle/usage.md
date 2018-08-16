@@ -1,3 +1,9 @@
+---
+label: Component
+title: Toggle
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## General guidelines
 
 Toggles are used for binary actions that occur immediately after the user “flips” the Toggle switch. They are commonly used for “On/Off” situations.

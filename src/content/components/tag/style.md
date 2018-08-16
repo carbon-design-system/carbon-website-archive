@@ -1,3 +1,9 @@
+---
+label: Component
+title: Tag
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Typography
 
 Tag text should be set in sentence case, and should only have one word. However, if more than one is necessary, then connect the words using a hyphen with no spaces.

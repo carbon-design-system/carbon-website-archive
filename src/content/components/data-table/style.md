@@ -1,3 +1,9 @@
+---
+label: Component
+title: Data Table
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Color
 
 | Class                                                                                         | Property         | SCSS       | HEX       |

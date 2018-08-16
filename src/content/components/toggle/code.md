@@ -1,5 +1,10 @@
 ---
-desc: <span>Toggle</span> is a control that is used to quickly switch between two possible states.
+label: Component
+title: Toggle
+tabs: ['Code', 'Usage', 'Style']
+---
+
+<page-intro>**Toggle** is a control that is used to quickly switch between two possible states.</page-intro>
 variations:
   toggle:
     - Toggle

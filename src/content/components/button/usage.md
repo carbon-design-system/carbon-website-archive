@@ -1,3 +1,9 @@
+---
+label: Component
+title: Button
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## General guidelines
 
 Buttons are used primarily on action items. Some examples include **Add**, **Save**, **Delete**, **Sign up**. Do not use Buttons as navigational elements. Instead, use [Links](/components/link) because it takes the user to a new page and is not associated with an action. Each page may have one to two primary buttons. Any remaining calls-to-action are represented as secondary buttons.

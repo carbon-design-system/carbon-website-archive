@@ -1,3 +1,9 @@
+---
+label: Component
+title: Inline Loading
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Color
 
 | Class                           | Property   |SCSS        | HEX     |

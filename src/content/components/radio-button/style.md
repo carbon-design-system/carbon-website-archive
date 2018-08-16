@@ -1,3 +1,9 @@
+---
+label: Component
+title: Radio Button
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Color
 
 | Class                                                                               | Property         | SCSS       | HEX       |

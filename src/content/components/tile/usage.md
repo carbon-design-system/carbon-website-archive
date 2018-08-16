@@ -1,3 +1,9 @@
+---
+label: Component
+title: Tile
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Usage
 
 Tiles provide a diverse method for displaying information. The type of content within a Tile can range from informational, to getting started, how-to, and next steps.

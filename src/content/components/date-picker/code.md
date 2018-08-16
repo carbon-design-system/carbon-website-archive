@@ -1,5 +1,10 @@
 ---
-desc: <span>Date and time pickers</span> allow users to select a single or a range of dates and times.
+label: Component
+title: Date Picker
+tabs: ['Code', 'Usage', 'Style']
+---
+
+<page-intro>**Date and time pickers** allow users to select a single or a range of dates and times.</page-intro>
 variations:
   date-picker:
   - Simple date picker

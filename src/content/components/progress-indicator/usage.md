@@ -1,3 +1,9 @@
+---
+label: Component
+title: Progress Indicator
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## General guidelines
 
 Use Progress Indicators to keep the user on track when completing a specific task. By dividing the end goal into smaller, sub-tasks, it increases the percentage of completeness as each task is completed.

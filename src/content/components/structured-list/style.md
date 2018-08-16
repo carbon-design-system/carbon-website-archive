@@ -1,3 +1,9 @@
+---
+label: Component
+title: Structured List
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Color
 
 | Class                                                                                            | Property         | SCSS      | HEX      |

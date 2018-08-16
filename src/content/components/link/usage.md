@@ -1,3 +1,9 @@
+---
+label: Component
+title: Link
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Link text
 
 * Use text for links rather than graphics or icons.

@@ -1,3 +1,9 @@
+---
+label: Component
+title: Number Input
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## General guidelines
 
 * Do not use Number Inputs when large value changes are expected. They work best for making small, incremental changes that only require a few clicks.

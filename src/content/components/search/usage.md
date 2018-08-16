@@ -1,3 +1,9 @@
+---
+label: Component
+title: Search
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## General guidelines
 
 ### Search variations

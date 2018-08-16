@@ -1,3 +1,9 @@
+---
+label: Component
+title: Form
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Effective form design
 
 All forms are comprised of 6 elements:

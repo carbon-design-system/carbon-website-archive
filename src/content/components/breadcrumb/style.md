@@ -1,3 +1,9 @@
+---
+label: Component
+title: Breadcrumb
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Color
 
 | Class                         | Property         | SCSS                | HEX       |

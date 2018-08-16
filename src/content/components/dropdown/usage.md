@@ -1,3 +1,9 @@
+---
+label: Component
+title: Dropdown
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Usage
 | Type        | Purpose                                        |
 |-------------|------------------------------------------------|

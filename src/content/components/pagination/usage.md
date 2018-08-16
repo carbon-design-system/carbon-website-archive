@@ -1,3 +1,9 @@
+---
+label: Component
+title: Pagination
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Usage
 
 Generally, Pagination is used if there are more than 25 items displayed in one view. The default number displayed will vary depending on the context.

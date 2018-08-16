@@ -1,3 +1,9 @@
+---
+label: Component
+title: Slider
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Color
 
 | Class                      |   Attribute       | SCSS     | HEX      |

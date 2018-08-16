@@ -1,3 +1,9 @@
+---
+label: Component
+title: Modal
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Dismissal
 
 Modals may be dismissed in 3 ways:

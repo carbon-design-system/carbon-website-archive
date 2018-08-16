@@ -1,5 +1,10 @@
 ---
-desc: <span>Loading</span> spinners are used when retrieving data or performing slow computations, and help to notify users that loading is underway.
+label: Component
+title: Loading
+tabs: ['Code', 'Usage', 'Style']
+---
+
+<page-intro>**Loading** spinners are used when retrieving data or performing slow computations, and help to notify users that loading is underway.</page-intro>
 variations:
   loading:
   - Loading

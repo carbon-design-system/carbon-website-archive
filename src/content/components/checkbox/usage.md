@@ -1,3 +1,9 @@
+---
+label: Component
+title: Checkbox
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## General guidelines
 
 ### Headings

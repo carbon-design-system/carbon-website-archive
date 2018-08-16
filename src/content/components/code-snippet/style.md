@@ -1,3 +1,9 @@
+---
+label: Component
+title: Code Snippet
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Color
 
 | Class                                               | Property        |SCSS       | HEX     |

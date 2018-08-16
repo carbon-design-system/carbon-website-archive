@@ -1,5 +1,10 @@
 ---
-desc: <span>Dropdowns</span> present a list of options that can be used to filter existing content. 
+label: Component
+title: Dropdown
+tabs: ['Code', 'Usage', 'Style']
+---
+
+<page-intro>**Dropdowns** present a list of options that can be used to filter existing content. </page-intro>
 variations:
  dropdown:
  - Dropdown

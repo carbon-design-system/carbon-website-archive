@@ -1,5 +1,11 @@
 ---
-desc: <span>Tiles</span> are flexible containers that house a variety of content.
+label: Component
+title: Tile
+tabs: ['Code', 'Usage', 'Style']
+---
+
+
+<page-intro>**Tiles** are flexible containers that house a variety of content.</page-intro>
 variations:
   tile:
     - Tile

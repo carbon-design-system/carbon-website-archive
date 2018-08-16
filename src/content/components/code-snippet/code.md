@@ -1,6 +1,13 @@
 ---
-desc: <span>Code snippets</span> are small blocks of reusable code that can be inserted in a code file.
-variations:
+label: Component
+title: Code Snippet
+tabs: ['Code', 'Usage', 'Style']
+---
+
+---
+<page-intro>**Code snippets** are small blocks of reusable code that can be inserted in a code file.
+variations:</page-intro>
+
   code-snippet:
   - Code Snippet
   code-snippet--inline:

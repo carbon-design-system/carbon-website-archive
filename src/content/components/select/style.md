@@ -1,3 +1,9 @@
+---
+label: Component
+title: Select
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Color
 
 Inputs come in two different colors. The default input color is `$field-01` and is used on `$ui-01` page backgrounds. The light version input color is `$field-02` and is used on `$ui-02` page backgrounds.

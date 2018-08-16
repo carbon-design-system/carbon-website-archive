@@ -1,3 +1,9 @@
+---
+label: Component
+title: Tabs
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## General guidelines
 
 ### Text

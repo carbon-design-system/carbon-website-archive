@@ -1,3 +1,9 @@
+---
+label: Component
+title: Slider
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Types of Sliders
 The Slider in its basic form should be accompanied by a label and a number input that can demonstrate the slider input's increase or decrease. The basic slider does **not** include values as the slider represents a percentage of 0-100. In this case it is not necessary for a user to choose a specific value, but instead generally increase or decrease an input. For example, the user increases the Slider amount and the volume of the music gets louder. The more complex versions should be used for selecting a specific value within a value range.
 

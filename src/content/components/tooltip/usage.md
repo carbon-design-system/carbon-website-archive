@@ -1,3 +1,9 @@
+---
+label: Component
+title: Tooltip
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Usage
 
 ### Icon Tooltip

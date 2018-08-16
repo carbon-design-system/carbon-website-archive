@@ -1,3 +1,9 @@
+---
+label: Component
+title: Code Snippet
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## General
 
 Our Code Snippets are built with basic styling. We recommend using <a href="https://github.com/chriskempson/base16" target=blank>Base16</a> for more complex syntax highlighting. Base16 provides carefully chosen syntax highlighting and a default set of sixteen colors suitable for a wide range of applications. The theme we recommend using is **Solarflare**.

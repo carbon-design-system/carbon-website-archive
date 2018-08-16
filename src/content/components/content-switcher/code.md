@@ -1,5 +1,10 @@
 ---
-desc: <span>Content switcher</span> manipulates the content shown following an exclusive or “either/or” pattern.
+label: Component
+title: Content Switcher
+tabs: ['Code', 'Usage', 'Style']
+---
+
+<page-intro>**Content switcher** manipulates the content shown following an exclusive or “either/or” pattern.</page-intro>
 variations:
   content-switcher:
   - Content Switcher

@@ -1,3 +1,9 @@
+---
+label: Component
+title: File Uploader
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## General
 
 * A File Uploader is commonly found in forms, but they can also live as stand alone elements.

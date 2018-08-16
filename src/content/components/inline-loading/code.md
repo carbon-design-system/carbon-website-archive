@@ -1,5 +1,11 @@
 ---
-desc: <span>Inline Loading</span> spinners are used when performing actions. They help notify user's that their action is being processed.
+label: Component
+title: Inline Loading
+tabs: ['Code', 'Usage', 'Style']
+---
+
+---
+<page-intro>**Inline Loading** spinners are used when performing actions. They help notify user's that their action is being processed.</page-intro>
 codepen:
   inline-loading:
   - oMpMYK

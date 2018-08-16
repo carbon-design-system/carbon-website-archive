@@ -1,3 +1,9 @@
+---
+label: Component
+title: List
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Color
 
 | Attribute         | Property  | SCSS     | HEX      |

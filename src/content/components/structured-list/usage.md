@@ -1,3 +1,9 @@
+---
+label: Component
+title: Structured List
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Content
 * Row height varies based on content, and can expand to fit multiple lines.
 * Column widths can either be equally proportional or proportioned based on content.

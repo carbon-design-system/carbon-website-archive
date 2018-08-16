@@ -1,3 +1,9 @@
+---
+label: Component
+title: Tag
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## General guidelines
 
 Multiple or single tags can be used to categorize items.

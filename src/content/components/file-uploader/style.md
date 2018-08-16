@@ -1,3 +1,9 @@
+---
+label: Component
+title: File Uploader
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Color
 
 | Class                        | Property   |SCSS        | HEX     |

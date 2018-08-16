@@ -1,3 +1,9 @@
+---
+label: Component
+title: Data Table
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Basic Data Table
 The Data Table component is designed in a way for additional functionality to be added on to fit your team's needs.
 

@@ -1,3 +1,9 @@
+---
+label: Component
+title: Inline Loading
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## General
 
 The waiting experience is a crucial design opportunity. Although it may not be obvious what is occurring on the back-end, we can communicate clearly to reassure the user that progress is happening.

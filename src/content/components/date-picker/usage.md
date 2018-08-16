@@ -1,3 +1,9 @@
+---
+label: Component
+title: Date Picker
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Usage
 
 | Type      | Purpose                                                                                                                                                                                                                                                          |
