@@ -1,3 +1,9 @@
+---
+label: Component
+title: Overflow Menu
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## General guidelines
 
 ### Text

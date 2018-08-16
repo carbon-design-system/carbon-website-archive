@@ -15,4 +15,3 @@ codepen:
   - ooZqxw
   toggle--small:
   - pagwYV
----

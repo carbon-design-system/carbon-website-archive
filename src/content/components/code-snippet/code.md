@@ -4,7 +4,6 @@ title: Code Snippet
 tabs: ['Code', 'Usage', 'Style']
 ---
 
----
 <page-intro>**Code snippets** are small blocks of reusable code that can be inserted in a code file.
 variations:</page-intro>
 
@@ -21,4 +20,4 @@ codepen:
   - pKJWMK
   code-snippet--multi:
   - ZRGXdq
----
+

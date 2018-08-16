@@ -15,4 +15,3 @@ codepen:
   - rYGVmG
   search--large:
   - ooGXVR
----

@@ -15,4 +15,3 @@ codepen:
   - XzebrR
   loading--small:
   - Xzebbg
----

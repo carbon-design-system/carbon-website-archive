@@ -19,4 +19,3 @@ codepen:
   - dZVoPj
   modal--danger:
   - erwbeb
----

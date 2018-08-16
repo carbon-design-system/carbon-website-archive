@@ -11,4 +11,3 @@ variations:
 codepen:
   pagination--v2:
   - MOEwbp
----

@@ -15,4 +15,3 @@ codepen:
   - qVPBdz
   content-switcher--with-icon:
   - qVPBdz
----
