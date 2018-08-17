@@ -34,7 +34,13 @@ $brand-01: $dark-blue;
 @import '../components/Glossary/glossary.scss';
 @import '../components/TypeScaleTable/type-scale-table.scss';
 @import '../components/TypeStylesTable/type-styles-table.scss';
-@import '../components/ComponentCodePage/component-code-page.scss';
+@import '../components/ComponentCode/component-code.scss';
+@import '../components/ComponentExample/component-example.scss';
+@import '../components/CodeExample/code-example.scss';
+@import '../components/CodePage/code-page.scss';
 
-
-
+//---------------------------------------
+// Syntax
+//---------------------------------------
+@import 'prism.css';
+@import 'syntax.css';

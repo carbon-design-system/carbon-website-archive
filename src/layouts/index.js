@@ -8,7 +8,7 @@ import SideNavToggleBtn from '../components/SideNavToggleBtn';
 import Footer from '../components/Footer';
 import favicon32 from '../content/global/images/favicon-32.png';
 
-import './index.scss';
+import '../styles/index.scss';
 
 
 class Layout extends React.Component {

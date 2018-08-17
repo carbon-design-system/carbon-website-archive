@@ -13,7 +13,7 @@ import ColorCard from '../components/ColorCard';
 import IconLibrary from '../components/IconLibrary';
 import TypeScaleTable from '../components/TypeScaleTable';
 import TypeStylesTable from '../components/TypeStylesTable';
-import ComponentCodePage from '../components/ComponentCodePage';
+import ComponentCode from '../components/ComponentCode';
 
 // Custom Markdown
 import { h2, h3, h4, ul, ol, PageIntro, PageIcon, FlexGroup, ColorBlock } from '../components/markdown/Markdown';
@@ -38,7 +38,7 @@ const renderAst = new rehypeReact({
     'icon-library': IconLibrary,
     'type-scale-table': TypeScaleTable,
     'type-styles-table': TypeStylesTable,
-    'component': ComponentCodePage,
+    'component': ComponentCode,
   },
 }).Compiler;
 

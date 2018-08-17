@@ -1,5 +1,7 @@
 const path = require('path');
+const paths = require('./paths');
 const { createFilePath } = require(`gatsby-source-filesystem`);
+const publicPath = '/';
 
 // Method that creates nodes based on the file system that we can use in our templates
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -81,3 +83,37 @@ exports.createPages = ({ actions, graphql }) => {
     });
   });
 };
+
+exports.onCreateWebpackConfig = ({
+  actions,
+}) => {
+  actions.setWebpackConfig({
+    entry: {
+      main: [require.resolve('react-dev-utils/webpackHotDevClient'), paths.appIndexJs],
+      'carbon-components': paths.carbonComponentsIndexJs,
+    },
+    output: {
+      path: paths.appBuild,
+      pathinfo: true,
+      filename: 'static/js/[name].js',
+      publicPath: publicPath,
+      library: ['CDS', '[name]'],
+      libraryTarget: 'var',
+    },
+    module: {
+      rules: [
+        {
+          test: /\.md$/,
+          loaders: ['html-loader', 'markdown-loader'],
+        },
+        {
+          test: /\.html$/,
+          loader: 'html-loader',
+          options: {
+            minimize: false,
+          },
+        },
+      ],
+    },
+  })
+}
