@@ -112,7 +112,7 @@ class Footer extends Component {
             <a
               className="page-footer__link"
               href="https://github.com/ibm/carbon-components/releases"
-              rel="noopener"
+              rel="noopener noreferrer"
               target="_blank"
               aria-labelledby="page-footer__version-label page-footer__version-number"
               id="page-footer__version-number"
@@ -125,7 +125,7 @@ class Footer extends Component {
             <a
               className="page-footer__link"
               href="https://github.com/ibm/carbon-components-react/releases"
-              rel="noopener"
+              rel="noopener noreferrer"
               target="_blank"
               aria-labelledby="page-footer__react-version-label page-footer__react-version-number"
               id="page-footer__react-version-number"
@@ -144,7 +144,7 @@ class Footer extends Component {
               <a
                 href="https://dribbble.com/_carbondesign"
                 className="social-media__link"
-                rel="noopener"
+                rel="noopener noreferrer"
                 target="_blank"
                 aria-label="Dribble account for Carbon"
               >
@@ -155,7 +155,7 @@ class Footer extends Component {
               <a
                 href="https://medium.com/@_carbondesign"
                 className="social-media__link"
-                rel="noopener"
+                rel="noopener noreferrer"
                 target="_blank"
                 aria-label="Medium account for Carbon"
               >
@@ -166,7 +166,7 @@ class Footer extends Component {
               <a
                 href="https://twitter.com/_carbondesign"
                 className="social-media__link"
-                rel="noopener"
+                rel="noopener noreferrer"
                 target="_blank"
                 aria-label="Twitter account for Carbon"
               >
@@ -177,7 +177,7 @@ class Footer extends Component {
               <a
                 href="https://github.com/carbon-design-system"
                 className="social-media__link"
-                rel="noopener"
+                rel="noopener noreferrer"
                 target="_blank"
                 aria-label="GitHub account for Carbon"
               >
@@ -196,7 +196,7 @@ class Footer extends Component {
             <a
               href="https://github.com/ibm/carbon-components/issues/new"
               className="page-footer__link"
-              rel="noopener"
+              rel="noopener noreferrer"
               target="_blank"
               aria-label="Open a GitHub issue"
             >

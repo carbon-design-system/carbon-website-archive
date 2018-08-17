@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 
@@ -15,7 +15,7 @@ export default class ComponentCodePage extends React.Component {
     const reactLink =`http://react.carbondesignsystem.com/?selectedKind=${name}`;
 
     //let htmlFile;
-    const htmlFile = require(`carbon-components/html/accordion/accordion.html`);
+    //const htmlFile = require(`carbon-components/html/accordion/accordion.html`);
     //htmlFile = require(`carbon-components/html/${name}/${name}.html`);
    
     return (    
@@ -26,8 +26,8 @@ export default class ComponentCodePage extends React.Component {
         
         <div className="component-toolbar__links">
             
-            <a href={reactLink} target="_blank">React</a>
-            <a href={codepenLink} target="_blank">CodePen</a>
+            <a href={reactLink} target="_blank" rel="noopener noreferrer">React</a>
+            <a href={codepenLink} target="_blank" rel="noopener noreferrer">CodePen</a>
           </div>
         </div>
 

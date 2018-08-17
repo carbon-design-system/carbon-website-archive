@@ -1,13 +1,13 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import Layout from "../layouts";
 
 const IndexPage = () => (
-  <div>
+  <Layout>
     <p>
       Carbon is the design system for IBM Cloud products. It is a series of individual styles, components, and guidelines used for
       creating unified UI.
     </p>
-  </div>
+  </Layout>
 );
 
 export default IndexPage;

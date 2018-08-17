@@ -1,10 +1,10 @@
 import React from 'react';
 import rehypeReact from 'rehype-react';
+import Layout from "../layouts";
 
 // Components
 import PageHeader from '../components/PageHeader';
 import PageTabs from '../components/PageTabs';
-import PageContent from '../components/PageContent';
 import Snippet from '../components/CodeSnippet';
 import PageTable from '../components/PageTable';
 import ClickTile from '../components/ClickableTile';
@@ -48,11 +48,11 @@ export default ({ data }) => {
   let slug = post.fields.slug;
   let tabs = post.frontmatter.tabs;
   return (
-    <div>
+    <Layout>
       <PageHeader title={post.frontmatter.title} label={post.frontmatter.label} />
       {!(tabs === null) && <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />}
-      <PageContent>{renderAst(post.htmlAst)}</PageContent>
-    </div>
+      <div className="page-content">{renderAst(post.htmlAst)}</div>
+    </Layout>
   );
 };
 

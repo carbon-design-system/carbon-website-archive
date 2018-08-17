@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import Link from 'gatsby-link';
+import { Link } from "gatsby";
 
 import { Icon } from 'carbon-components-react';
 

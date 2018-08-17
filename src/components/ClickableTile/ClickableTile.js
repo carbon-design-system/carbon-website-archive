@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { ClickableTile } from 'carbon-components-react';
@@ -63,7 +63,7 @@ export default class ClickTile extends React.Component {
       );
     }
 
-    if (type != 'resource') {
+    if (type !== 'resource') {
       return (
         <ClickableTile
         target="_blank"
@@ -78,11 +78,11 @@ export default class ClickTile extends React.Component {
 
           <div className="tile__caption">
             { author
-              ? <p class="tile__author">{author}</p>
+              ? <p className="tile__author">{author}</p>
               : null
             }
             { date
-              ? <p class="tile__date">{date}</p>
+              ? <p className="tile__date">{date}</p>
               : null
             }
           </div>

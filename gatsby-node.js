@@ -2,8 +2,8 @@ const path = require('path');
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 // Method that creates nodes based on the file system that we can use in our templates
-exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
-  const { createNodeField } = boundActionCreators;
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions;
   // If the node type (file) is a markdown file
   if (node.internal.type === 'MarkdownRemark') {
     const dir = path.resolve(__dirname, '');
@@ -28,8 +28,8 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
 };
 
 // Method that creates the pages for our website
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createRedirect, createPage } = boundActionCreators;
+exports.createPages = ({ actions, graphql }) => {
+  const { createRedirect, createPage } = actions;
 
   return new Promise((resolve, reject) => {
     graphql(`
@@ -81,29 +81,3 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     });
   });
 };
-
-// need to add custom markdown-loader and html-loader here... somehow :D 
-
-/*
-exports.onCreateWebpackConfig = ({
-  actions,
-}) => {
-  actions.setWebpackConfig({
-    module: {
-      rules: [
-        {
-          test: /\.md$/,
-          loaders: ['html-loader', 'markdown-loader'],
-        },
-        {
-          test: /\.html$/,
-          loader: 'html-loader',
-          options: {
-            minimize: false,
-          },
-        },
-      ],
-    },
-  })
-}
-*/

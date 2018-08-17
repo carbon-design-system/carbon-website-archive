@@ -8,6 +8,11 @@ $brand-01: $dark-blue;
 @import 'node_modules/carbon-components/scss/globals/scss/styles.scss';
 
 //---------------------------------------
+// Global styles
+//---------------------------------------
+@import 'page.scss';
+
+//---------------------------------------
 // Syntax
 //---------------------------------------
 // @import 'node_modules/prismjs/themes/prism.css';
@@ -18,7 +23,6 @@ $brand-01: $dark-blue;
 @import '../components/markdown/markdown.scss';
 @import '../components/PageHeader/page-header.scss';
 @import '../components/PageTabs/page-tabs.scss';
-@import '../components/PageContent/page-content.scss';
 @import '../components/CodeSnippet/code-snippet.scss';
 @import '../components/ClickableTile/clickable-tile.scss';
 @import '../components/PageTable/page-table.scss';
@@ -34,29 +38,5 @@ $brand-01: $dark-blue;
 @import '../components/TypeStylesTable/type-styles-table.scss';
 @import '../components/ComponentCodePage/component-code-page.scss';
 
-//---------------------------------------
-// Global styles
-//---------------------------------------
 
-body {
-  background: $ui-01;
-}
 
-.container {
-  width: 100%;
-  margin-left: 0;
-  transition: $transition--base ease;
-  overflow-x: hidden;
-  position: relative;
-  min-height: 100vh;
-
-  @include breakpoint('840px') {
-    margin-left: 12.5rem;
-    width: calc(100% - 12.5rem);
-  }
-}
-
-.container--expanded {
-  width: 100%;
-  margin-left: 0;
-}

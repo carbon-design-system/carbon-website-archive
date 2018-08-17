@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-import Link from 'gatsby-link';
-import { Button, Search, Icon } from 'carbon-components-react';
+import { Link } from "gatsby";
+import { Button, Search } from 'carbon-components-react';
 
 import SideNavItem from './SideNavItem';
 

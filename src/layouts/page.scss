@@ -1,3 +1,34 @@
+//---------------------------------------
+// Global styles
+//---------------------------------------
+
+body {
+    background: $ui-01;
+  }
+  
+  .container {
+    width: 100%;
+    margin-left: 0;
+    transition: $transition--base ease;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+  
+    @include breakpoint('840px') {
+      margin-left: 12.5rem;
+      width: calc(100% - 12.5rem);
+    }
+  }
+  
+  .container--expanded {
+    width: 100%;
+    margin-left: 0;
+  }
+ 
+//---------------------------------------
+// Page styles
+//---------------------------------------
+
 .page-content {
   padding: 4rem 12.5%;
   width: 100%;

@@ -1,7 +1,6 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { CodeSnippet } from 'carbon-components-react';
-import { CopToClipboard } from 'react-copy-to-clipboard';
 
 import Prism from 'prismjs';
 import 'prismjs/components/prism-bash';
