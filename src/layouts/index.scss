@@ -1,6 +1,4 @@
-$bright-blue: #3c6df0;
-$dark-blue: #3057d5;
-$brand-01: $dark-blue;
+
 
 //---------------------------------------
 // Carbon Components
@@ -12,10 +10,10 @@ $brand-01: $dark-blue;
 //---------------------------------------
 @import 'page.scss';
 
-//---------------------------------------
-// Syntax
-//---------------------------------------
-// @import 'node_modules/prismjs/themes/prism.css';
+$bright-blue: #3c6df0;
+$dark-blue: #3057d5;
+$brand-01: $dark-blue;
+
 
 //---------------------------------------
 // Components
