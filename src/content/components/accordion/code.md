@@ -11,9 +11,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="accordion" 
     variation="accordion"
     codepen="dZvdaN"
-    haslightversion="false"
     hasReactVersion="true"
-    hasLightBackground="false"
     >
 </component>
 

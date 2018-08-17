@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import ComponentExample from '../ComponentExample/ComponentExample';
-
+ 
 export default class ComponentCode extends React.Component {
   static propTypes = {
     name: PropTypes.string,
@@ -14,6 +14,8 @@ export default class ComponentCode extends React.Component {
     hasreactversion: PropTypes.string,
     haslightbackground: PropTypes.string,
   };
+
+
 
   render() {
     const { 

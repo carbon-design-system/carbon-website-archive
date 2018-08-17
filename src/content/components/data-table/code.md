@@ -29,3 +29,15 @@ codepen:
   - aVLvzX
   toolbar:
   - yPzYNK
+
+
+<component 
+    name="Breadcrumb"
+    component="breadcrumb" 
+    variation="breadcrumb"
+    codepen="eevVxq"
+    haslightversion="false"
+    hasReactVersion="true"
+    hasLightBackground="false"
+    >
+</component>

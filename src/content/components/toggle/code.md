@@ -5,13 +5,20 @@ tabs: ['Code', 'Usage', 'Style']
 ---
 
 <page-intro>**Toggle** is a control that is used to quickly switch between two possible states.</page-intro>
-variations:
-  toggle:
-    - Toggle
-  toggle--small:
-    - Small toggle
-codepen:
-  toggle:
-  - ooZqxw
-  toggle--small:
-  - pagwYV
+
+<component 
+    name="Toggle"
+    component="toggle" 
+    variation="toggle"
+    codepen="ooZqxw"
+    hasReactVersion="true"
+    >
+</component>
+<component 
+    name="Small Toggle"
+    component="toggle" 
+    variation="toggle--small"
+    codepen="pagwYV"
+    hasReactVersion="true"
+    >
+</component>
