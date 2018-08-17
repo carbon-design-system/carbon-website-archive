@@ -6,6 +6,8 @@ import ComponentExample from '../ComponentExample/ComponentExample';
 export default class ComponentCode extends React.Component {
   static propTypes = {
     name: PropTypes.string,
+    component: PropTypes.string,
+    variation: PropTypes.string,
     codepen: PropTypes.string,
     background: PropTypes.string,
     haslightversion: PropTypes.string,
@@ -15,18 +17,17 @@ export default class ComponentCode extends React.Component {
 
   render() {
     const { 
-      name, 
+      component, 
+      name,
       codepen, 
       haslightbackground,
       haslightversion,
       hasreactversion,
-      
+      variation,
     } = this.props;
 
-    const component = name.toLowerCase()
-
     let htmlFile;
-    htmlFile = require(`carbon-components/html/${component}/${component}.html`);
+    htmlFile = require(`carbon-components/html/${component}/${variation}.html`);
 
     return (    
       <div className="component-variation">

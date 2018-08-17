@@ -6,6 +6,23 @@ tabs: ['Code', 'Usage', 'Style']
 
 <page-intro>**Buttons** express what action will occur when the user clicks or touches it. Buttons are used to initialize an action, either in the background or foreground of an experience.</page-intro>
 
+<component 
+    name="Primary Button"
+    component="button"
+    variation="button--primary" 
+    codepen="QMaZmK"
+    hasReactVersion="true"
+    >
+</component>
+
+<component 
+    name="Secondary Button"
+    component="button"
+    variation="button--secondary" 
+    codepen="QMaZmK"
+    hasReactVersion="true"
+    >
+</component>
 
 variations:
   button--primary:
