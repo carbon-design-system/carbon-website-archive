@@ -102,7 +102,9 @@ class ComponentExample extends Component {
     return (
       <div className={lightUIclassnames}>
         <div className={liveBackgroundClasses}>
-          <div className={classNames} dangerouslySetInnerHTML={{ __html: this.state.currentHTMLfile }} />
+          <div className={classNames}>
+            <div dangerouslySetInnerHTML={{ __html: this.state.currentHTMLfile }} />
+          </div>
         </div>
         <div className="component-toolbar">
           <div className="component-toolbar__current">

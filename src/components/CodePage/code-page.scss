@@ -106,8 +106,8 @@ main[data-page='add-ons-code-cloud-header'] .cloud-header > div {
   }
 }
 
-.component-example .bx--form-item {
-  margin-bottom: 1.5rem;
+.component-example__live .bx--form-item {
+  margin-bottom: $spacing-xl;
 }
 
 .number-input div .bx--form-item:last-child .bx--number {
