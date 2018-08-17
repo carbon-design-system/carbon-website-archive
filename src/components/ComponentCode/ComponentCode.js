@@ -35,6 +35,7 @@ export default class ComponentCode extends React.Component {
         <ComponentExample
           codepenSlug={codepen}
           component={component}
+          variation={variation}
           htmlFile={htmlFile}
           hideViewFullRender={this.props.hideViewFullRender}
           hasLightVersion={haslightversion}

@@ -34,8 +34,23 @@ Global Components:
 - `<color-card name="$ui-01" hex="#ffffff" border="true" small="true"></color-card>`
 
 Page Specific Components: 
+
 - `<type-scale-table />`
 - `<type-styles-table />`
+
+Component Page Components: 
+```
+<component 
+    name="Text Input"
+    component="text-input" 
+    variation="text-input"
+    codepen="YEZLyd"
+    haslightversion="true"
+    hasReactVersion="true"
+    hasLightBackground="true"
+    >
+</component>
+```
 
 ### Example Clickable Tile inside FlexGroup
 ```

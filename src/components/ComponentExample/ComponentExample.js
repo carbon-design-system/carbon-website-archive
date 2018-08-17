@@ -10,6 +10,7 @@ class ComponentExample extends Component {
   static propTypes = {
     htmlFile: PropTypes.string,
     component: PropTypes.string,
+    variation: PropTypes.string,
     hideViewFullRender: PropTypes.bool,
     codepenSlug: PropTypes.string,
     hasLightVersion: PropTypes.string,
@@ -24,20 +25,30 @@ class ComponentExample extends Component {
     currentHTMLfile: this.props.htmlFile,
   };
 
-  componentDidUpdate = () => {
-    this._releaseAndInstantiateComponents();
-  };
-
   onSwitchFieldColors = value => {
     this.setState({
       currentFieldColor: value,
     });
+    
     let newHTML;
     let currentComponent = this.props.component;
-    newHTML = require(`carbon-components/html/${currentComponent}/${currentComponent}.html`);
+    const currentVariation = this.props.variation;
+    if (currentComponent !== currentVariation && !currentVariation.includes(currentComponent)) {
+      currentComponent = currentVariation;
+    }
+    if (value === 'field-02') {
+      if (currentVariation.includes('--') || currentVariation === 'code-snippet--inline') {
+        newHTML = require(`carbon-components/html/${currentComponent}/${currentVariation}-light.html`);
+      } else {
+        newHTML = require(`carbon-components/html/${currentComponent}/${currentVariation}--light.html`);
+      }
+    } else {
+      newHTML = require(`carbon-components/html/${currentComponent}/${currentVariation}.html`);
+    }
     this.setState({
       currentHTMLfile: newHTML,
     });
+    
   };
 
   render() {
@@ -58,6 +69,7 @@ class ComponentExample extends Component {
       'component-example': true,
       'bx--global-light-ui': component === 'tabs',
     });
+
     let componentName =
       component
         .replace(/-/g, ' ')
@@ -70,6 +82,7 @@ class ComponentExample extends Component {
         .charAt(0)
         .toUpperCase() + componentName.split(' ')[1].substring(1)}`;
     }
+
     let componentNameLink = componentName;
     if (componentName.split(' ').length > 1) {
       componentNameLink = `${componentName.split(' ')[0]}${componentName
@@ -79,8 +92,7 @@ class ComponentExample extends Component {
     }
  
     const liveBackgroundClasses = classnames('component-example__live', {
-      'component-example__live--light': this.state.currentFieldColor === 'field-01' && hasLightVersion === 'true',
-      'component-example__live--light': hasLightBackground === "true",
+      'component-example__live--light': (this.state.currentFieldColor === 'field-01') || (hasLightBackground === 'true'),
     });
 
     const componentLink = `https://codepen.io/team/carbon/full/${codepenSlug}/`;
