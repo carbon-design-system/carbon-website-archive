@@ -1,14 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { Link } from "gatsby";
-
 import { Icon } from 'carbon-components-react';
 
 export default class SideNavItem extends React.Component {
-  static propTypes = {
-    children: PropTypes.node,
-  };
 
   state = {
     open: false,
@@ -34,7 +29,8 @@ export default class SideNavItem extends React.Component {
     });
 
   render() {
-    const { children, item, itemSlug } = this.props;
+   
+    const {item, itemSlug } = this.props;
     const hasSubNav = !(item['sub-nav'] === undefined);
     const navItemClasses = classnames('side-nav__nav-item', {
       'side-nav__nav-item--open': this.state.open || window.location.pathname.split('/')[1] === itemSlug,
@@ -43,6 +39,7 @@ export default class SideNavItem extends React.Component {
     return (
       <li className={navItemClasses}>
         {hasSubNav ? (
+          // eslint-disable-next-line
           <a onClick={this.toggleSubNav}>
             {item.title}{' '}
             <Icon

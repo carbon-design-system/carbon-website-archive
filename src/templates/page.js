@@ -16,6 +16,7 @@ import TypeStylesTable from '../components/TypeStylesTable';
 import ComponentCode from '../components/ComponentCode';
 import ComponentDocs from '../components/ComponentDocs';
 import ComponentStatus from '../components/ComponentStatus';
+import ComponentReact from '../components/ComponentReact';
 
 // Custom Markdown
 import { h2, h3, h4, ul, ol, PageIntro, PageIcon, FlexGroup, ColorBlock } from '../components/markdown/Markdown';
@@ -41,6 +42,7 @@ const renderAst = new rehypeReact({
     'type-scale-table': TypeScaleTable,
     'type-styles-table': TypeStylesTable,
     'component': ComponentCode,
+    'component-react': ComponentReact,
     'component-docs': ComponentDocs,
     'component-status': ComponentStatus,
   },

@@ -7,7 +7,6 @@ tabs: ['Code', 'Usage', 'Style']
 <page-intro>**Dropdowns** present a list of options that can be used to filter existing content. </page-intro>
 variations:
 
-
  <component 
     name="Dropdown"
     component="dropdown" 
@@ -15,10 +14,8 @@ variations:
     codepen="eeGYvQ"
     haslightversion="true"
     hasReactVersion="true"
-    
     >
 </component>
-
  <component 
     name="Dropdown (Up)"
     component="dropdown" 
@@ -26,9 +23,14 @@ variations:
     codepen="eeGYvQ"
     haslightversion="true"
     hasReactVersion="true"
-    
     >
 </component>
+<component-react
+    name="Multi-select Dropdown"
+    component="MultiSelect"
+    variation="MultiSelect"
+    >
+</component-react>
 
 Add react
  MultiSelect:

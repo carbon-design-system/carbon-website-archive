@@ -9,8 +9,8 @@ export default class ColorCard extends React.Component {
   static propTypes = {
     hex: PropTypes.string,
     name: PropTypes.string,
-    border: PropTypes.bool,
-    small: PropTypes.bool,
+    border: PropTypes.string,
+    small: PropTypes.string,
   };
 
   state = {
@@ -73,8 +73,8 @@ export default class ColorCard extends React.Component {
             </button>
           </CopyToClipboard>
         </div>
-        <p class="color-block__name">{name}</p>
-        <p class="color-block__hex">{hex}</p>
+        <p className="color-block__name">{name}</p>
+        <p className="color-block__hex">{hex}</p>
       </div>
     );
   }

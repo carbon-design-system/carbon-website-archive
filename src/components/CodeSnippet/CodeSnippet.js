@@ -11,7 +11,7 @@ require('prismjs/themes/prism.css');
 
 export default class Snippet extends React.Component {
   static propTypes = {
-    children: PropTypes.node,
+    children: PropTypes.array,
   };
 
   state = {

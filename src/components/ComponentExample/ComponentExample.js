@@ -4,15 +4,6 @@ import classnames from 'classnames';
 import CodeExample from '../CodeExample/CodeExample';
 import { RadioButtonGroup, RadioButton } from 'carbon-components-react';
 
-const componentNamesMap = {
-  Card: ['OverflowMenu'],
-  CodeSnippet: ['CodeSnippet', 'CopyButton'],
-  DataTable: ['DataTable', 'DataTableV2', 'OverflowMenu', 'Toolbar'],
-  DetailPageHeader: ['OverflowMenu', 'Tab'],
-  OrderSummary: ['Dropdown'],
-  Tabs: ['Tab', 'ContentSwitcher'],
-};
-
 class ComponentExample extends Component {
   static propTypes = {
     htmlFile: PropTypes.string,
@@ -60,42 +51,6 @@ class ComponentExample extends Component {
   componentWillReceiveProps(props) {
     if (this.state.currentHTMLfile !== props.htmlFile) {
       this.setState({ currentHTMLfile: props.htmlFile })
-    }
-  }
-
-  _ref = null;
-  _instances = [];
-
-  _liveDemoRef = ref => {
-    this._ref = ref;
-    this._releaseAndInstantiateComponents();
-  };
-
-  _releaseAndInstantiateComponents() {
-    const instances = this._instances;
-    for (let instance = instances.pop(); instance; instance = instances.pop()) {
-      instance.release();
-    }
-    const ref = this._ref;
-    if (ref) {
-      const componentsList = window.CDS['carbon-components'];
-      const currentComponent = this.props.component
-        .replace(/-([a-z])/g, (match, token) => token.toUpperCase())
-        .replace(/^([a-z])/, (match, token) => token.toUpperCase());
-      (componentNamesMap[currentComponent] || [currentComponent]).forEach((name) => {
-        const TheComponent = componentsList[name];
-        if (TheComponent) {
-          if (TheComponent.prototype.createdByLauncher) {
-            const initHandles = this.constructor._initHandles;
-            if (!initHandles.has(TheComponent)) {
-              initHandles.set(TheComponent, TheComponent.init());
-            }
-          } else {
-            const selectorInit = TheComponent.options.selectorInit;
-            instances.push(...[...ref.querySelectorAll(selectorInit)].map(elem => TheComponent.create(elem)));
-          }
-        }
-      });
     }
   }
 
@@ -150,7 +105,7 @@ class ComponentExample extends Component {
       <div className={lightUIclassnames}>
         <div className={liveBackgroundClasses}>
           <div className={classNames}>
-            <div ref={this._liveDemoRef} dangerouslySetInnerHTML={{ __html: this.state.currentHTMLfile }} />
+            <div dangerouslySetInnerHTML={{ __html: this.state.currentHTMLfile }} />
           </div>
         </div>
         <div className="component-toolbar">

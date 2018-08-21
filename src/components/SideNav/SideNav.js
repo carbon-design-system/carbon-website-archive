@@ -1,26 +1,20 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 import { Link } from "gatsby";
 import { Button, Search } from 'carbon-components-react';
 
 import SideNavItem from './SideNavItem';
-
 import navigation from '../../data/navigation/navigation.json';
 
 export default class SideNav extends React.Component {
-  static propTypes = {
-    children: PropTypes.node,
-  };
-
   renderNavItems = nav =>
     Object.keys(nav).map(item => {
       return <SideNavItem itemSlug={item} item={nav[item]} key={item} />;
     });
 
   render() {
-    const { children, isOpen, isFinal } = this.props;
+    const { isOpen, isFinal } = this.props;
     const navItems = this.renderNavItems(navigation);
 
     const classNames = classnames({

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Search } from 'carbon-components-react';
 import icons from 'carbon-icons';
 import IconCard from '../IconCard';
@@ -7,9 +6,6 @@ import IconEmptyState from '../IconEmptyState';
 
 
 export default class IconLibrary extends React.Component {
-  static propTypes = {
-    currentPage: PropTypes.string,
-  };
 
   static defaultProps = {
     currentPage: 'library',
@@ -44,8 +40,6 @@ export default class IconLibrary extends React.Component {
   };
 
   render() {
-    const { currentPage } = this.props;
-
     const initialIcons = (
       <div style={{ marginTop: '70px' }}>
         <h2>UI icons</h2>

@@ -6711,7 +6711,7 @@ hex-color-regex@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
 
-history@^4.6.2:
+history@^4.6.2, history@^4.7.2:
   version "4.7.2"
   resolved "https://registry.yarnpkg.com/history/-/history-4.7.2.tgz#22b5c7f31633c5b8021c7f4a8a954ac139ee8d5b"
   dependencies:
@@ -9383,6 +9383,12 @@ path-to-regexp@0.1.7:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
 
+path-to-regexp@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-1.7.0.tgz#59fde0f435badacba103a84e9d3bc64e96b9937d"
+  dependencies:
+    isarray "0.0.1"
+
 path-type@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-1.1.0.tgz#59c44f7ee491da704da415da5a4070ba4f8fe441"
@@ -10461,6 +10467,18 @@ react-modal@^3.3.2:
 react-onclickoutside@^6.5.0:
   version "6.7.1"
   resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-6.7.1.tgz#6a5b5b8b4eae6b776259712c89c8a2b36b17be93"
+
+react-router@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-4.3.1.tgz#aada4aef14c809cb2e686b05cee4742234506c4e"
+  dependencies:
+    history "^4.7.2"
+    hoist-non-react-statics "^2.5.0"
+    invariant "^2.2.4"
+    loose-envify "^1.3.1"
+    path-to-regexp "^1.7.0"
+    prop-types "^15.6.1"
+    warning "^4.0.1"
 
 react-side-effect@^1.1.0:
   version "1.1.5"
@@ -12918,6 +12936,12 @@ ware@^1.2.0:
 warning@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/warning/-/warning-3.0.0.tgz#32e5377cb572de4ab04753bdf8821c01ed605b7c"
+  dependencies:
+    loose-envify "^1.0.0"
+
+warning@^4.0.1:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/warning/-/warning-4.0.2.tgz#aa6876480872116fa3e11d434b0d0d8d91e44607"
   dependencies:
     loose-envify "^1.0.0"
 
