@@ -64,24 +64,6 @@ main[data-page='components-code-button'] {
   }
 }
 
-main[data-page='add-ons-code-cloud-header'] .cloud-header > div {
-  width: 100%;
-}
-
-.code-page__docs {
-  padding-top: 4rem;
-  max-width: 45rem;
-}
-
-.code-page__docs pre {
-  margin-top: 1rem;
-}
-
-.code-page__docs > h2 + div > h3:first-child,
-.code-page__docs > h2 + div > h4:first-child {
-  padding-top: 0 !important;
-}
-
 .code-page__react-version {
   display: flex;
   align-items: center;

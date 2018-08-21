@@ -15,8 +15,6 @@ export default class ComponentCode extends React.Component {
     haslightbackground: PropTypes.string,
   };
 
-
-
   render() {
     const { 
       component, 

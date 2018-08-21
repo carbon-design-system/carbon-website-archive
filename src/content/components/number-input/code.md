@@ -5,14 +5,14 @@ tabs: ['Code', 'Usage', 'Style']
 ---
 
 <page-intro>**Number inputs** are similar to text inputs, but contain controls used to increase or decrease an incremental value.</page-intro>
-codepen: Xzebda
+
 <component 
-    name="Breadcrumb"
-    component="breadcrumb" 
-    variation="breadcrumb"
-    codepen="eevVxq"
-    haslightversion="false"
+    name="Number Input"
+    component="number-input" 
+    variation="number-input"
+    codepen="Xzebda"
+    
     hasReactVersion="true"
-    hasLightBackground="false"
+    
     >
 </component>

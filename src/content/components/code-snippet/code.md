@@ -7,28 +7,28 @@ tabs: ['Code', 'Usage', 'Style']
 <page-intro>**Code snippets** are small blocks of reusable code that can be inserted in a code file.
 variations:</page-intro>
 
-  code-snippet:
-  - Code Snippet
-  code-snippet--inline:
-  - Inline Code Snippet
-  code-snippet--multi:
-  - Multi Code Snippet
-codepen:
-  code-snippet:
-  - mKJBoE
-  code-snippet--inline:
-  - pKJWMK
-  code-snippet--multi:
-  - ZRGXdq
-
-
 <component 
-    name="Breadcrumb"
-    component="breadcrumb" 
-    variation="breadcrumb"
-    codepen="eevVxq"
-    haslightversion="false"
+    name="Code Snippet"
+    component="code-snippet" 
+    variation="code-snippet"
+    codepen="mKJBoE"
     hasReactVersion="true"
-    hasLightBackground="false"
+    >
+</component>
+<component 
+    name="Inline Code Snippet"
+    component="code-snippet" 
+    variation="code-snippet--inline"
+    codepen="pKJWMK"
+    haslightversion="true"
+    hasReactVersion="true"
+    >
+</component>
+<component 
+    name="Multi Line Code Snippet"
+    component="code-snippet" 
+    variation="code-snippet--multi"
+    codepen="ZRGXdq"
+    hasReactVersion="true"
     >
 </component>

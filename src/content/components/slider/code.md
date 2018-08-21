@@ -13,6 +13,6 @@ tabs: ['Code', 'Usage', 'Style']
     codepen="dZVoBx"
     haslightversion="true"
     hasReactVersion="true"
-    hasLightBackground="false"
+    
     >
 </component>

@@ -11,9 +11,9 @@ tabs: ['Code', 'Usage', 'Style']
     component="structured-list" 
     variation="structured-list"
     codepen="BJKxZa"
-    haslightversion="false"
+    
     hasReactVersion="true"
-    hasLightBackground="false"
+    
     >
 </component>
 <component 
@@ -21,8 +21,8 @@ tabs: ['Code', 'Usage', 'Style']
     component="structured-list" 
     variation="structured-list--selection"
     codepen="qpZYmK"
-    haslightversion="false"
+    
     hasReactVersion="true"
-    hasLightBackground="false"
+    
     >
 </component>

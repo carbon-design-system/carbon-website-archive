@@ -5,17 +5,14 @@ tabs: ['Code', 'Usage', 'Style']
 ---
 
 <page-intro>**Inline Loading** spinners are used when performing actions. They help notify user's that their action is being processed.</page-intro>
-codepen:
-  inline-loading:
-  - oMpMYK
 
 <component 
-    name="Breadcrumb"
-    component="breadcrumb" 
-    variation="breadcrumb"
-    codepen="eevVxq"
-    haslightversion="false"
+    name="Inline Loading"
+    component="inline-loading" 
+    variation="inline-loading"
+    codepen="oMpMYK"
+    
     hasReactVersion="true"
-    hasLightBackground="false"
+    
     >
 </component>

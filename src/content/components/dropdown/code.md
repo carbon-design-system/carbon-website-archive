@@ -6,29 +6,34 @@ tabs: ['Code', 'Usage', 'Style']
 
 <page-intro>**Dropdowns** present a list of options that can be used to filter existing content. </page-intro>
 variations:
- dropdown:
- - Dropdown
- dropdown--light:
- - Dropdown (Light)
- dropdown--up:
- - Dropdown (Up)
- dropdown--up-light:
- - Dropdown (Up & Light)
+
+
+ <component 
+    name="Dropdown"
+    component="dropdown" 
+    variation="dropdown"
+    codepen="eeGYvQ"
+    haslightversion="true"
+    hasReactVersion="true"
+    
+    >
+</component>
+
+ <component 
+    name="Dropdown (Up)"
+    component="dropdown" 
+    variation="dropdown--up"
+    codepen="eeGYvQ"
+    haslightversion="true"
+    hasReactVersion="true"
+    
+    >
+</component>
+
+Add react
  MultiSelect:
  - Multi-select Dropdown
  MultiSelect.Inline:
  - Inline Multi-select Dropdown
  MultiSelect.Filterable:
  - Filter Dropdown
-codepen: eeGYvQ
-
- <component 
-    name="Breadcrumb"
-    component="breadcrumb" 
-    variation="breadcrumb"
-    codepen="eevVxq"
-    haslightversion="false"
-    hasReactVersion="true"
-    hasLightBackground="false"
-    >
-</component>

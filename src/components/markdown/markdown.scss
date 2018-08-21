@@ -89,7 +89,8 @@
 // h3
 //----------------------------
 
-.page-h3 {
+.page-h3,
+.component-docs h3 {
   @include typescale('delta');
   color: $brand-01;
   padding: 4rem 0 1rem;
@@ -101,7 +102,8 @@
 // h4
 //----------------------------
 
-.page-h4 {
+.page-h4,
+.component-docs h4 {
   color: $text-01;
   padding: 2rem 0 1rem;
   font-weight: 600;

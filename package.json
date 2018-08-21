@@ -21,6 +21,7 @@
     "gatsby-source-filesystem": "next",
     "gatsby-transformer-remark": "next",
     "gatsby-transformer-sharp": "next",
+    "markdown-it": "^8.4.2",
     "markdown-loader": "^3.0.0",
     "prismjs": "^1.15.0",
     "prop-types": "^15.6.1",

@@ -127,7 +127,7 @@ class CodePage extends Component {
     let javascriptContent;
     if (!(this.renderJavascriptContent(component) === '')) {
       javascriptContent = (
-        <div className="page_md code-page__docs">
+        <div className="page_md component-docs">
           <h2>Documentation</h2>
           <div
             dangerouslySetInnerHTML={{

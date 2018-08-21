@@ -11,8 +11,8 @@ tabs: ['Code', 'Usage', 'Style']
     component="tabs" 
     variation="tabs"
     codepen="QOprdK"
-    haslightversion="false"
+    
     hasReactVersion="true"
-    hasLightBackground="false"
+    
     >
 </component>

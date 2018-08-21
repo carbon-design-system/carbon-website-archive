@@ -5,25 +5,20 @@ tabs: ['Code', 'Usage', 'Style']
 ---
 
 <page-intro>**Content switcher** manipulates the content shown following an exclusive or “either/or” pattern.</page-intro>
-variations:
-  content-switcher:
-  - Content Switcher
-  content-switcher--with-icon:
-  - Content Switcher with icon
-codepen:
-  content-switcher:
-  - qVPBdz
-  content-switcher--with-icon:
-  - qVPBdz
-
 
 <component 
-    name="Breadcrumb"
-    component="breadcrumb" 
-    variation="breadcrumb"
-    codepen="eevVxq"
-    haslightversion="false"
+    name="Content Switcher"
+    component="content-switcher" 
+    variation="content-switcher"
+    codepen="qVPBdz"
     hasReactVersion="true"
-    hasLightBackground="false"
+    >
+</component>
+<component 
+    name="Content Switcher with Icon" 
+    component="content-switcher" 
+    variation="content-switcher--with-icon"
+    codepen="qVPBdz"
+    hasReactVersion="true"
     >
 </component>

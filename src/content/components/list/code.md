@@ -5,24 +5,25 @@ tabs: ['Code', 'Usage', 'Style']
 ---
 
 <page-intro>**Lists** consist of related content grouped together and organized vertically.</page-intro>
-variations:
-  list--ordered:
-  - Ordered list
-  list:
-  - Unordered list
-codepen:
-  list--ordered:
-  - MOEWEP
-  list:
-  - JOrjOj
 
 <component 
-    name="Breadcrumb"
-    component="breadcrumb" 
-    variation="breadcrumb"
-    codepen="eevVxq"
-    haslightversion="false"
+    name="Ordered List"
+    component="list" 
+    variation="list--ordered"
+    codepen="MOEWEP"
+    
     hasReactVersion="true"
-    hasLightBackground="false"
+    
+    >
+</component>
+
+<component 
+    name="Unordered List"
+    component="list" 
+    variation="list"
+    codepen="JOrjOj"
+    
+    hasReactVersion="true"
+    
     >
 </component>

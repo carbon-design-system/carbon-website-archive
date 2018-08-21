@@ -11,11 +11,8 @@ tabs: ['Code', 'Usage', 'Style']
     component="breadcrumb" 
     variation="breadcrumb"
     codepen="eevVxq"
-    haslightversion="false"
-    hasReactVersion="true"
-    hasLightBackground="false"
+    hasReactVersion="true" 
     >
 </component>
 
-codepen: 
-
+<component-docs component="breadcrumb"></component-docs>

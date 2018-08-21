@@ -5,23 +5,24 @@ tabs: ['Code', 'Usage', 'Style']
 ---
 
 <page-intro>**Loading** spinners are used when retrieving data or performing slow computations, and help to notify users that loading is underway.</page-intro>
-variations:
-  loading:
-  - Loading
-  loading--small:
-  - Small Loading
-codepen:
-  loading:
-  - XzebrR
-  loading--small:
-  - Xzebbg
+
 <component 
-    name="Breadcrumb"
-    component="breadcrumb" 
-    variation="breadcrumb"
-    codepen="eevVxq"
-    haslightversion="false"
+    name="Loading"
+    component="loading" 
+    variation="loading"
+    codepen="XzebrR"
+    
     hasReactVersion="true"
-    hasLightBackground="false"
+    
+    >
+</component>
+<component 
+    name="Loading"
+    component="loading" 
+    variation="loading--small"
+    codepen="Xzebbg"
+    
+    hasReactVersion="true"
+    
     >
 </component>

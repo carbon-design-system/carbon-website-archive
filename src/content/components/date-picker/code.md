@@ -5,38 +5,44 @@ tabs: ['Code', 'Usage', 'Style']
 ---
 
 <page-intro>**Date and time pickers** allow users to select a single or a range of dates and times.</page-intro>
-variations:
-  date-picker:
-  - Simple date picker
-  date-picker--light:
-  - Simple date picker (Light)
-  date-picker--single:
-  - Single date picker
-  date-picker--single-light:
-  - Single date picker (Light)
-  date-picker--range:
-  - Range date picker
-  date-picker--range-light:
-  - Range date picker (Light)
-  time-picker:
-  - Time picker
-codepen:
-  date-picker:
-  - POJoNb
-  date-picker--single:
-  - VrMweY
-  date-picker--range:
-  - aVLbNx
-  time-picker:
-  - GOMKap
 
 <component 
-    name="Breadcrumb"
-    component="breadcrumb" 
-    variation="breadcrumb"
-    codepen="eevVxq"
-    haslightversion="false"
+    name="Simple Date Picker"
+    component="date-picker" 
+    variation="date-picker"
+    codepen="POJoNb"
+    haslightversion="true"
     hasReactVersion="true"
-    hasLightBackground="false"
+    
+    >
+</component>
+<component 
+    name="Single Date Picker"
+    component="date-picker" 
+    variation="date-picker--single"
+    codepen="VrMweY"
+    haslightversion="true"
+    hasReactVersion="true"
+    
+    >
+</component>
+<component 
+    name="Range Date Picker"
+    component="date-picker" 
+    variation="date-picker--range"
+    codepen="aVLbNx"
+    haslightversion="true"
+    hasReactVersion="true"
+    
+    >
+</component>
+<component 
+    name="Time Picker"
+    component="time-picker" 
+    variation="time-picker"
+    codepen="GOMKap"
+    haslightversion="true"
+    hasReactVersion="true"
+    
     >
 </component>

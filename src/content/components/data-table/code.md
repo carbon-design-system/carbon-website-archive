@@ -4,40 +4,45 @@ title: Data Table
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-
 <page-intro>**Data Tables** present raw data sets and lend meaning to the data, while maintaining that the data is readable, scannable, and easily comparable.</page-intro>
 
-variations:
-  data-table-v2:
-  - Data Table
-  data-table-v2--expandable:
-  - Expandable Data Table
-  data-table-v2--pagination:
-  - Data Table with Pagination
-  data-table-v2--small:
-  - Small Data Table
-  toolbar:  
-  - Toolbar
-codepen:
-  data-table-v2:
-  - MOEagV
-  data-table-v2--expandable:
-  - gXGabM
-  data-table-v2--pagination:
-  - pdWjva
-  data-table-v2--small:
-  - aVLvzX
-  toolbar:
-  - yPzYNK
-
-
 <component 
-    name="Breadcrumb"
-    component="breadcrumb" 
-    variation="breadcrumb"
-    codepen="eevVxq"
-    haslightversion="false"
+    name="Data Table"
+    component="data-table-v2" 
+    variation="data-table-v2"
+    codepen="MOEagV"
     hasReactVersion="true"
-    hasLightBackground="false"
+    >
+</component>
+<component 
+    name="Expandable Data Table"
+    component="data-table-v2" 
+    variation="data-table-v2--expandable"
+    codepen="gXGabM"
+    hasReactVersion="true"
+    >
+</component>
+<component 
+    name="Data Table with Pagination"
+    component="data-table-v2" 
+    variation="data-table-v2--with-pager"
+    codepen="pdWjva"
+    hasReactVersion="true"
+    >
+</component>
+<component 
+    name="Small Data Table"
+    component="data-table-v2" 
+    variation="data-table-v2--small"
+    codepen="aVLvzX"
+    hasReactVersion="true"
+    >
+</component>
+<component 
+    name="Toolbar"
+    component="toolbar" 
+    variation="toolbar"
+    codepen="yPzYNK"
+    hasReactVersion="true"
     >
 </component>
