@@ -1,0 +1,10 @@
+{
+  "name": "react-code-example",
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "carbon-components": "^9.6.1",
+    "carbon-components-react": "6.18.3",
+    "carbon-icons": "^7.0.7"
+  }
+}

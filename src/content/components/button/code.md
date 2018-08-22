@@ -6,6 +6,16 @@ tabs: ['Code', 'Usage', 'Style']
 
 <page-intro>**Buttons** express what action will occur when the user clicks or touches it. Buttons are used to initialize an action, either in the background or foreground of an experience.</page-intro>
 
+## Button
+
+### React
+
+[React](embedded-codesandbox://components/button/_examples/react)
+
+### Vanilla
+
+[Vanilla](embedded-codesandbox://components/button/_examples/vanilla)
+
 <component 
     name="Primary Button"
     component="button"

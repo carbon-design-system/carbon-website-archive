@@ -19,10 +19,10 @@ class ComponentReact extends Component {
     return (
       <div className="component-variation">
         <h2 className="page-h2">{name}</h2>
-        <p>This component is currently only available in <a href="https://github.com/ibm/carbon-components-react" target="_blank">our React library</a>.</p>
+        <p>This component is currently only available in <a href="https://github.com/ibm/carbon-components-react" target="_blank" without rel="noopener noreferrer">our React library</a>.</p>
         <div className="component-example__live component-example__live--light">
          
-          <a className="component-example__view-full-render" target="_blank" href={componentLink}>
+          <a className="component-example__view-full-render" target="_blank" href={componentLink} without rel="noopener noreferrer">
             View on React Storybook
           </a>
         </div>
