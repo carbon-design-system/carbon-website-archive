@@ -16,7 +16,7 @@ Layer | Components
 **Temporary Nav** | Global left nav
 **Pop-out** | Modals
 
-<div data-insert-component="LayerUsage"></div>
+![Layer usage](images/layer-usage-604.png)
 
 ## Code usage
 

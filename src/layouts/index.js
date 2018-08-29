@@ -48,9 +48,6 @@ class Layout extends React.Component {
       'container--expanded': !this.state.isOpen,
     });
 
-    console.log('test');
-    console.log(this.props.location);
-
     return (
       <StaticQuery
         query={graphql`

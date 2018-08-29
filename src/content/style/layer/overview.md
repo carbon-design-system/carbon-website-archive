@@ -45,6 +45,8 @@ Each type of layer lives on a different imagined plane of the UI giving each its
 
 The range of imagined planes in the UI are on a scale from 0 to 24, with zero being the base and 24 the highest point. The higher the elevation is the larger the shadow each layer will cast. Each unit on the elevation scale is equal to the pixel value of the coded blur applied to shadow.
 
+![Layer elevation](images/layer-elevation-604.png)
+
 Each layer is a defined marker along the elevation scale. There is not a layer for each level of the scale.
 
-![Layer elevation](images/layer-elevation-604.png)
+
