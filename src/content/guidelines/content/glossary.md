@@ -8,3 +8,7 @@ tabs: ['General', 'Guidance', 'Glossary']
 
 This section is a living document. When new terms are introduced, they will be added here. If you're looking for the product glossary, go to <a href="https://new-console.ng.bluemix.net/docs/overview/glossary/index.html" target=blank>Glossary terms for Bluemix.</a>
 
+<glossary></glossary>
+
+test.
+

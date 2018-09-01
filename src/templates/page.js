@@ -17,6 +17,7 @@ import ComponentCode from '../components/ComponentCode';
 import ComponentDocs from '../components/ComponentDocs';
 import ComponentStatus from '../components/ComponentStatus';
 import ComponentReact from '../components/ComponentReact';
+import Glossary from '../components/Glossary';
 
 // Custom Markdown
 import { h2, h3, h4, ul, ol, PageIntro, PageIcon, FlexGroup, ColorBlock } from '../components/markdown/Markdown';
@@ -45,6 +46,7 @@ const renderAst = new rehypeReact({
     'component-react': ComponentReact,
     'component-docs': ComponentDocs,
     'component-status': ComponentStatus,
+    'glossary': Glossary,
   },
 }).Compiler;
 

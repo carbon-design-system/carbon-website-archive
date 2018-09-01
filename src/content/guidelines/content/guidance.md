@@ -6,7 +6,7 @@ tabs: ['General', 'Guidance', 'Glossary']
 
 ## Capitalization
 
-<img alt="capitalization" src="images/Aa.svg" class="content-page__cap-letter" />
+> ![capitalization](images/Aa.svg)
 Good content design is consistent and coherent so that users can trust and predict how to interact with it. Details matter.
 
 Always capitalize proper names, such as United States. Use ALL CAPS for abbreviations, acronyms, and initials (for example, IBM and ASCII) and two-letter abbreviations (for example, AL, AK, and AZ), and for OK.
