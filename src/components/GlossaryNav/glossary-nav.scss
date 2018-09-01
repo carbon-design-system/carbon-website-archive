@@ -1,0 +1,50 @@
+.glossary-nav {
+  position: absolute;
+  right: 1rem;
+  padding: 1rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  line-height: 1.5;
+  margin-top: 2rem;
+
+  @include breakpoint('bp--sm--major') {
+    display: flex;
+  }
+
+  &--fixed {
+    position: fixed;
+    top: 0;
+  }
+
+  li {
+    list-style-type: none !important;
+    margin: .125rem 0;
+    padding: 0;
+    width: 100%;
+    transition: all $transition--base;
+
+    a {
+      @include font-smoothing;
+      width: 100%;
+      padding: 0 .25rem;
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      color: $color__navy-gray-7;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    &.glossary-nav__item--active,
+    &:hover {
+      transform: scale3d(1.5, 1.5, 1.5);
+
+      a {
+        color: $brand-01;
+        font-weight: 600;
+      }
+    }
+  }
+}
