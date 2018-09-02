@@ -35,10 +35,11 @@ Global Components:
 
 Page Specific Components: 
 
-- `<type-scale-table />`
-- `<type-styles-table />`
-- `<type-weight-table />`
-- `<glossary />` 
+- `<type-scale-table>`
+- `<type-styles-table>`
+- `<type-weight-table>`
+- `<glossary>` 
+- `<motion-example>`
 
 Component Page Components: 
 ```
