@@ -1,7 +1,7 @@
 ---
 label: Component
 title: Loading
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code','Usage', 'Style']
 ---
 
 ## General guidelines

@@ -1,7 +1,7 @@
 ---
 label: Component
 title: Date Picker
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code','Usage', 'Style']
 ---
 
 <page-intro>**Date and time pickers** allow users to select a single or a range of dates and times.</page-intro>

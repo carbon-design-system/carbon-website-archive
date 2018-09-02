@@ -1,7 +1,7 @@
 ---
 label: Component
 title: Select
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code','Usage', 'Style']
 ---
 
 ## Color

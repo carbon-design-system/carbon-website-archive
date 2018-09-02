@@ -1,7 +1,7 @@
 ---
 label: Component
 title: Link
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code','Usage', 'Style']
 ---
 
 ## Link text

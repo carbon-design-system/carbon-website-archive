@@ -1,7 +1,7 @@
 ---
 label: Component
 title: Checkbox
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code','Usage', 'Style']
 ---
 
 ## Color
