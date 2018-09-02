@@ -3,166 +3,267 @@
     {
       "item": "Accordion",
       "added": "6.10.0",
+      "vanilla": 0,
+      "react": 0,
+      "angular": 0,
       "status": 0
     },
     {
       "item": "Breadcrumb",
       "added": "7.0.0",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 3
     },
     {
       "item": "Button",
       "added": "2.0.0",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 0
     },
     {
       "item": "Checkbox",
       "added": "2.0.0",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 0
     },
     {
       "item": "Code Snippet",
       "added": "7.0.0",
       "tag": "updated",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 3
     },
     {
       "item": "Content Switcher",
       "added": "4.0.0",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 0
     },
     {
       "item": "Data Table",
       "added": "7.26.0",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 3
     },
     {
       "item": "Date Picker",
       "added": "7.10.1",
       "tag": "updated",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 3
     },
     {
       "item": "Dropdown",
       "added": "2.0.0",
       "tag": "updated",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 0
     },
     {
       "item": "File Uploader",
       "added": "7.0.0",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 3
     },
     {
       "item": "Form",
       "added": "2.0.0",
       "tag": "updated",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 0
     },
     {
       "item": "Link",
       "added": "2.0.0",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 3
     },
     {
       "item": "List",
       "added": "2.0.0",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 3
     },
     {
       "item": "Loading",
       "added": "5.0.0",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 3
     },
     {
       "item": "Modal",
       "added": "4.3.0",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 0
+    },
+    {
+      "item": "Multiselect",
+      "added": "8.0.0",
+      "status": 0,
+      "vanilla": 3,
+      "react": 0,
+      "angular": 0
     },
     {
       "item": "Notification",
       "added": "6.0.0",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 0
     },
     {
       "item": "Number Input",
       "added": "6.0.0",
       "tag": "updated",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 3
     },
     {
       "item": "Pagination",
       "added": "7.0.0",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 3
     },
     {
       "item": "Progress Indicator",
       "added": "6.11.0",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 3
     },
     {
       "item": "Overflow Menu",
       "added": "5.0.0",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 3
     },
     {
       "item": "Radio Button",
       "added": "2.0.0",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 0
     },
     {
       "item": "Search",
       "added": "2.0.0",
       "tag": "updated",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 3
     },
     {
       "item": "Select",
       "added": "4.0.0",
       "tag": "updated",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 3
     },
     {
       "item": "Slider",
       "added": "7.10.0",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 3
     },
     {
       "item": "Structured List",
       "added": "7.7.0",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 3
     },
     {
       "item": "Tabs",
       "added": "2.13.0",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 0
     },
     {
       "item": "Tags",
       "added": "6.0.0",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 3
     },
     {
       "item": "Text Input",
       "added": "2.0.0",
       "tag": "updated",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 3
     },
     {
       "item": "Tile",
       "added": "7.22.0",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 3
     },
     {
       "item": "Toggle",
       "added": "4.0.0",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 3
     },
     {
-      "item": "Tooltip", 
+      "item": "Tooltip",
       "added": "2.0.0",
       "tag": "updated",
-      "status": 0
+      "status": 0,
+      "vanilla": 0,
+      "react": 0,
+      "angular": 0
     }
   ]
 }

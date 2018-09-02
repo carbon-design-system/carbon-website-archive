@@ -39,7 +39,13 @@ Page Specific Components:
 - `<type-styles-table>`
 - `<type-weight-table>`
 - `<glossary>` 
-- `<motion-example>`
+- `<motion-example type="standard"></motion-example>`
+- `<motion-example type="ease-out"></motion-example>`
+- `<motion-example type="ease-in"></motion-example>`
+- `<motion-example type="standard"></motion-example>`
+- `<motion-example type="easing" correcttext="Easing" incorrecttext="No-Easing"></motion-example></motion-example>`
+- `<motion-example type="duration" correcttext="300ms" incorrecttext="600ms"></motion-example>`     
+- `<component-status></component-staus>`
 
 Component Page Components: 
 ```
