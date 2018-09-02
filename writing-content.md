@@ -37,7 +37,8 @@ Page Specific Components:
 
 - `<type-scale-table />`
 - `<type-styles-table />`
-- `<glossary />` (need to build)
+- `<type-weight-table />`
+- `<glossary />` 
 
 Component Page Components: 
 ```

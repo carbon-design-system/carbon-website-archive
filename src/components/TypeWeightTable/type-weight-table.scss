@@ -1,0 +1,52 @@
+.typography-weight-table {
+  max-width: 45rem;
+
+  em {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  thead {
+    display: none;
+  }
+
+  table tbody tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  table tbody tr td {
+    line-height: 1.5rem;
+    padding: 1rem 3rem 1rem 0;
+  }
+
+  table tbody tr td:first-child {
+    font-weight: 600;
+    float: left;
+    white-space: initial;
+  }
+
+  table tbody tr td:nth-child(2) {
+    white-space: nowrap;
+    font-size: 4rem;
+    text-align: right;
+    line-height: 1;
+  }
+
+  table tbody tr:nth-child(1) td:nth-child(2) {
+    font-weight: 300;
+    line-height: 1;
+  }
+
+  table tbody tr:nth-child(2) td:nth-child(2) {
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  table tbody tr:nth-child(3) td:nth-child(2) { 
+   font-weight: 600;
+   line-height: 1;
+  }
+}
