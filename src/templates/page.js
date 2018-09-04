@@ -63,6 +63,7 @@ export default ({ data }) => {
   let currentPage = post.fields.currentPage;
   let slug = post.fields.slug;
   let tabs = post.frontmatter.tabs;
+
   return (
     <Layout>
       <PageHeader title={post.frontmatter.title} label={post.frontmatter.label} />

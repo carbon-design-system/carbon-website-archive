@@ -17,7 +17,7 @@ class IndexPage extends React.Component {
           this.setState({
             windowWidth: window.innerWidth,
           });
-        }
+        } 
       });
     }
   }
@@ -53,7 +53,7 @@ class IndexPage extends React.Component {
     const svgViewBox = this.state.windowWidth < 903 ? '0 0 4000 823' : '0 0 2500 823';
     
     return (
-      <Layout>
+      <Layout location={this.props.location}>
         <main id="maincontent" role="main" className="overview-page" tabIndex="-1">
           <section className="overview-page__banner" aria-label="overview page banner">
             <img className="banner__shapes" src={shapes} alt="" />

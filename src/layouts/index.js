@@ -43,7 +43,7 @@ class Layout extends React.Component {
   };
   
   render() {
-    const { children, location } = this.props;
+    const { location, children } = this.props;
     const classNames = classnames('container', {
       'container--expanded': !this.state.isOpen,
     });
@@ -67,7 +67,7 @@ class Layout extends React.Component {
               link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon32}` }]}
             />
             <SideNavToggleBtn onToggleBtnClick={this.onToggleBtnClick} isOpen={this.state.isOpen} />
-            <SideNav isFinal={this.state.isFinal} isOpen={this.state.isOpen} location={location} />
+            <SideNav isFinal={this.state.isFinal} isOpen={this.state.isOpen} location={this.props.location} />
             <div className={classNames}>
               {children}
               <Footer isExpanded={this.state.isOpen} />
