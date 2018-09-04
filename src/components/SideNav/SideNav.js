@@ -2,7 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 
 import { Link } from "gatsby";
-import { Button, Search } from 'carbon-components-react';
+import { Button, Search, Icon } from 'carbon-components-react';
 
 import SideNavItem from './SideNavItem';
 import navigation from '../../data/navigation/navigation.json';
@@ -42,24 +42,14 @@ export default class SideNav extends React.Component {
           >
             Design Kit
           </Button>
-          <Button
-            className="side-nav__link"
-            kind="secondary"
-            icon="icon--arrow--right"
-            iconDescription="Arrow right"
-            href="https://github.com/ibm/carbon-components"
-          >
-            Vanilla Repo
-          </Button>
-          <Button
-            className="side-nav__link"
-            kind="secondary"
-            icon="icon--arrow--right"
-            iconDescription="Arrow right"
-            href="https://github.com/ibm/carbon-components-react"
-          >
-            React Repo
-          </Button>
+          <Link to="/resources#github" className="side-nav__link bx--btn bx--btn bx--btn--secondary">
+            GitHub Repos
+            <Icon
+              className="bx--btn__icon"
+              name="icon--arrow--right"
+              description="Arrow right"
+            />
+          </Link>
         </div>
       </nav>
     );

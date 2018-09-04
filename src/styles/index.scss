@@ -6,13 +6,16 @@
 @import 'node_modules/carbon-components/scss/globals/scss/styles.scss';
 
 //---------------------------------------
-// Global styles
+// Page styles
 //---------------------------------------
-@import 'page.scss';
-
 $bright-blue: #3c6df0;
 $dark-blue: #3057d5;
 $brand-01: $dark-blue;
+
+@import 'mixins.scss';
+
+@import 'page.scss';
+@import 'home.scss';
 
 
 //---------------------------------------
