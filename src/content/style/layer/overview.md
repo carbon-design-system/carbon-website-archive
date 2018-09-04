@@ -8,7 +8,7 @@ tabs: ['Overview', 'Usage']
 
 ## Layer types
 
-<div data-insert-component="LayerTypes"></div>
+<layer-types></layer-types>
 
 Layer name | Elevation | Box-shadow
 -------------------|--------------|-----------------

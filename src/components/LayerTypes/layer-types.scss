@@ -1,0 +1,64 @@
+.layer-types {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: $color__gray-3;
+  max-width: rem(608px);
+  padding: 1rem;
+  margin-bottom: 4rem;
+
+  div {
+    width: rem(120px);
+    height: rem(120px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color__white;
+    color: $text-03;
+    margin: rem(22px) rem(11px) rem(22px);
+
+    &:first-child {
+      background-color: transparent;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    p {
+      font-size: rem(16px);
+      font-weight: 300;
+      padding-bottom: 0 !important;
+    }
+  }
+
+  &__layer-0 {
+    @include layer('base');
+  }
+
+  &__layer-1 {
+    @include layer('flat');
+  }
+
+  &__layer-2 {
+    @include layer('raised');
+  }
+
+  &__layer-8 {
+    @include layer('overlay');
+  }
+
+  &__layer-12 {
+    @include layer('sticky-nav');
+  }
+
+  &__layer-16 {
+    @include layer('temporary-nav');
+  }
+
+  &__layer-24 {
+    @include layer('pop-out');
+  }
+}

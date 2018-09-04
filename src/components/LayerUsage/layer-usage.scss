@@ -1,0 +1,55 @@
+.layer-usage {
+  position: relative;
+  width: 100%;
+  max-width: 38rem;
+  margin-top: 4rem;
+  display: none;
+
+  @include breakpoint('768px') {
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    height: 26rem;
+  }
+
+  ul {
+    position: absolute;
+    top: 6.3rem;
+    left: 0;
+  }
+
+  img {
+    width: 100%;
+    float: right;
+  }
+
+  ul {
+    margin-left: 0 !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    list-style-type: none !important;
+    margin-bottom: 2rem;
+
+    &:nth-child(2) {
+      margin-bottom: 2.5rem;
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 2.8rem;
+    }
+
+    p {
+      font-size: rem(14px);
+      color: $color__navy-gray-6;
+      padding-bottom: 0.25rem !important;
+      line-height: 1.25 !important;
+    }
+
+    p:first-child {
+      font-weight: 600;
+    }
+  }
+}

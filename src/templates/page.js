@@ -20,6 +20,8 @@ import ComponentStatus from '../components/ComponentStatus';
 import ComponentReact from '../components/ComponentReact';
 import Glossary from '../components/Glossary';
 import MotionExample from '../components/MotionExample';
+import LayerTypes from '../components/LayerTypes';
+import LayerUsage from '../components/LayerUsage';
 
 // Custom Markdown
 import { h2, h3, h4, ul, ol, PageIntro, PageIcon, FlexGroup, ColorBlock } from '../components/markdown/Markdown';
@@ -51,6 +53,8 @@ const renderAst = new rehypeReact({
     'component-status': ComponentStatus,
     'glossary': Glossary,
     'motion-example': MotionExample,
+    'layer-types': LayerTypes,
+    'layer-usage': LayerUsage
   },
 }).Compiler;
 
