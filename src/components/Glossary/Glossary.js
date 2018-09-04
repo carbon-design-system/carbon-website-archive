@@ -7,6 +7,7 @@ class Glossary extends Component {
     const glossary = require('../../data/guidelines/glossary.js'); // eslint-disable-line
     return (
       <div className="glossary">
+        <GlossaryNav />
         <GlossaryList glossary={glossary} />
       </div>
     );
