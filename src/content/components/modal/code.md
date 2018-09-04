@@ -11,9 +11,8 @@ tabs: ['Code','Usage', 'Style']
     component="modal" 
     variation="modal--nofooter"
     codepen="KyXpKV"
-    
+    hasAngularVersion="true"
     hasReactVersion="true"
-    
     >
 </component>
 
@@ -22,9 +21,8 @@ tabs: ['Code','Usage', 'Style']
     component="modal" 
     variation="modal"
     codepen="dZVoPj"
-    
     hasReactVersion="true"
-    
+    hasAngularVersion="true"
     >
 </component>
 
@@ -33,8 +31,7 @@ tabs: ['Code','Usage', 'Style']
     component="modal" 
     variation="modal--danger"
     codepen="erwbeb"
-    
     hasReactVersion="true"
-    
+    hasAngularVersion="true"
     >
 </component>

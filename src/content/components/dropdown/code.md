@@ -14,6 +14,7 @@ variations:
     codepen="eeGYvQ"
     haslightversion="true"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>
  <component 
@@ -23,6 +24,7 @@ variations:
     codepen="eeGYvQ"
     haslightversion="true"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>
 <component-react
@@ -31,6 +33,7 @@ variations:
     variation="MultiSelect"
     >
 </component-react>
+
 
 Add react
  MultiSelect:

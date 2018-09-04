@@ -11,8 +11,7 @@ tabs: ['Code','Usage', 'Style']
     component="form" 
     variation="form"
     codepen="pdWorZ"
-    
     hasReactVersion="true"
-    
+    hasAngularVersion="true"
     >
 </component>

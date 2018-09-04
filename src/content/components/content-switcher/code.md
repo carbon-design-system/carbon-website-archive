@@ -12,6 +12,7 @@ tabs: ['Code','Usage', 'Style']
     variation="content-switcher"
     codepen="qVPBdz"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>
 <component 
@@ -20,5 +21,6 @@ tabs: ['Code','Usage', 'Style']
     variation="content-switcher--with-icon"
     codepen="qVPBdz"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>

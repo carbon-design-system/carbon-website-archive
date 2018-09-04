@@ -13,6 +13,7 @@ tabs: ['Code','Usage', 'Style']
     component="checkbox" 
     variation="checkbox"
     codepen="MOEgxQ"
-    hasReactVersion="true
+    hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>

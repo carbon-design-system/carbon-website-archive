@@ -12,6 +12,7 @@ tabs: ['Code','Usage', 'Style']
     variation="data-table-v2"
     codepen="MOEagV"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>
 <component 
@@ -20,6 +21,7 @@ tabs: ['Code','Usage', 'Style']
     variation="data-table-v2--expandable"
     codepen="gXGabM"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>
 <component 

@@ -11,8 +11,7 @@ tabs: ['Code','Usage', 'Style']
     component="radio-button" 
     variation="radio-button"
     codepen="YErXNB"
-    
+    hasAngularVersion="true"
     hasReactVersion="true"
-    
     >
 </component>

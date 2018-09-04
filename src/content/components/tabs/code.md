@@ -11,8 +11,7 @@ tabs: ['Code','Usage', 'Style']
     component="tabs" 
     variation="tabs"
     codepen="QOprdK"
-    
     hasReactVersion="true"
-    
+    hasAngularVersion="true"
     >
 </component>

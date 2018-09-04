@@ -12,66 +12,106 @@ tabs: ['Code','Usage', 'Style']
     variation="button--primary" 
     codepen="QMaZmK"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>
-
 <component 
     name="Secondary Button"
     component="button"
     variation="button--secondary" 
-    codepen="QMaZmK"
+    codepen="WdwJKG"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>
-
-variations:
-  button--primary:
-  - Primary button
-  button--secondary:
-  - Secondary button
-  button--tertiary:
-  - Tertiary button
-  button--ghost:
-  - Ghost button
-  button--danger:
-  - Danger button
-  button--danger--primary:
-  - Primary danger button
-  button--primary--small:
-  - Small primary button
-  button--secondary--small:
-  - Small secondary button
-  button--tertiary--small:
-  - Small tertiary button
-  button--ghost--small:
-  - Small ghost button
-  button--danger--primary--small:
-  - Small primary danger button
-  button--danger--small:
-  - Small danger button
-codepen:
-  button--primary:
-  - QMaZmK
-  button--secondary:
-  - WdwJKG
-  button--tertiary:
-  - WJqbvX
-  button--ghost:
-  - ppyVOw
-  button--danger:
-  - EoKLeR
-  button--danger--primary:
-  - bKVgOK
-  button--primary--small:
-  - zjVxoX
-  button--secondary--small:
-  - MGMYoZ
-  button--tertiary--small:
-  - JvQoyo
-  button--ghost--small:
-  - vjqEey
-  button--danger--primary--small:
-  - KedaJb
-  button--danger--small:
-  - xjobPx
+<component 
+    name="Tertiary Button"
+    component="button"
+    variation="button--tertiary" 
+    codepen="WJqbvX"
+    hasReactVersion="true"
+    hasAngularVersion="true"
+    >
+</component>
+<component 
+    name="Ghost Button"
+    component="button"
+    variation="button--ghost" 
+    codepen="ppyVOw"
+    hasReactVersion="true"
+    hasAngularVersion="true"
+    >
+</component>
+<component 
+    name="Danger button"
+    component="button"
+    variation="button--danger" 
+    codepen="EoKLeR"
+    hasReactVersion="true"
+    hasAngularVersion="true"
+    >
+</component>
+<component 
+    name="Primary Danger button"
+    component="button"
+    variation="button--danger--primary" 
+    codepen="bKVgOK"
+    hasReactVersion="true"
+    hasAngularVersion="true"
+    >
+</component>
+<component 
+    name="Small Primary button"
+    component="button"
+    variation="button--primary--small" 
+    codepen="zjVxoX"
+    hasReactVersion="true"
+    hasAngularVersion="true"
+    >
+</component>
+<component 
+    name="Small secondary button"
+    component="button"
+    variation="button--secondary--small" 
+    codepen="MGMYoZ"
+    hasReactVersion="true"
+    hasAngularVersion="true"
+    >
+</component>
+<component 
+    name="Small tertiary button"
+    component="button"
+    variation="button--tertiary--small" 
+    codepen="JvQoyo"
+    hasReactVersion="true"
+    hasAngularVersion="true"
+    >
+</component>
+<component 
+    name="Small ghost button"
+    component="button"
+    variation="button--ghost--small" 
+    codepen="vjqEey"
+    hasReactVersion="true"
+    hasAngularVersion="true"
+    >
+</component>
+<component 
+    name="Small primary danger button"
+    component="button"
+    variation="button--danger--primary--small" 
+    codepen="KedaJb"
+    hasReactVersion="true"
+    hasAngularVersion="true"
+    >
+</component>
+<component 
+    name="Small danger button"
+    component="button"
+    variation="button--danger--small" 
+    codepen="xjobPx"
+    hasReactVersion="true"
+    hasAngularVersion="true"
+    >
+</component>
 

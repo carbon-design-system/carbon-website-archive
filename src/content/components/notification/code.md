@@ -11,9 +11,8 @@ tabs: ['Code','Usage', 'Style']
     component="notification" 
     variation="inline-notification"
     codepen="EbwjVb"
-    
+    hasAngularVersion="true"
     hasReactVersion="true"
-    
     >
 </component>
 <component 
@@ -21,8 +20,7 @@ tabs: ['Code','Usage', 'Style']
     component="notification" 
     variation="toast-notification"
     codepen="mqBJeo"
-    
+    hasAngularVersion="true"
     hasReactVersion="true"
-    
     >
 </component>

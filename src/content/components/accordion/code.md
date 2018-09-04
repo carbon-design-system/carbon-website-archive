@@ -12,6 +12,7 @@ tabs: ['Code','Usage', 'Style']
     variation="accordion"
     codepen="dZvdaN"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>
 

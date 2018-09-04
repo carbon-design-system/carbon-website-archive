@@ -13,6 +13,7 @@ class ComponentExample extends Component {
     codepenSlug: PropTypes.string,
     hasLightVersion: PropTypes.string,
     hasReactVersion: PropTypes.string,
+    hasAngularVersion: PropTypes.string,
     hasLightBackground: PropTypes.string,
   };
 
@@ -60,6 +61,7 @@ class ComponentExample extends Component {
       codepenSlug, 
       hasLightVersion, 
       hasReactVersion,
+      hasAngularVersion,
       hasLightBackground, 
     } = this.props;
 
@@ -116,6 +118,11 @@ class ComponentExample extends Component {
             {hasReactVersion === "true" && (
               <a href={`http://react.carbondesignsystem.com/?selectedKind=${componentNameLink}`} target="_blank" rel="noopener noreferrer">
                 React
+              </a>
+            )}
+            {hasAngularVersion === "true" && (
+              <a href={`http://angular.carbondesignsystem.com/?selectedKind=${componentNameLink}`} target="_blank" rel="noopener noreferrer">
+                Angular
               </a>
             )}
             <a target="_blank" href={componentLink} rel="noopener noreferrer">

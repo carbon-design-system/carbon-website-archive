@@ -12,6 +12,7 @@ export default class ComponentCode extends React.Component {
     background: PropTypes.string,
     haslightversion: PropTypes.string,
     hasreactversion: PropTypes.string,
+    hasangularversion: PropTypes.string,
     haslightbackground: PropTypes.string,
   };
 
@@ -23,6 +24,7 @@ export default class ComponentCode extends React.Component {
       haslightbackground,
       haslightversion,
       hasreactversion,
+      hasangularversion,
       variation,
     } = this.props;
 
@@ -40,6 +42,7 @@ export default class ComponentCode extends React.Component {
           hideViewFullRender={this.props.hideViewFullRender}
           hasLightVersion={haslightversion}
           hasReactVersion={hasreactversion}
+          hasAngularVersion={hasangularversion}
           hasLightBackground={haslightbackground}
        />
       </div>   

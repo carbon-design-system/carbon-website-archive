@@ -12,6 +12,7 @@ tabs: ['Code','Usage', 'Style']
     variation="tooltip"
     codepen="pdeLom"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>
 <component 
