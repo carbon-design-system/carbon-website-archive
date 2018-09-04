@@ -3,7 +3,7 @@ label: Resources
 title: Resources
 ---
 
-## Tools
+## GitHub Repos
 
 <flex-group>
 <clickable-tile 
@@ -14,6 +14,35 @@ title: Resources
     >
     <img src="images/sketch-icon.png" alt="Carbon Design Kit" />
 </clickable-tile>
+<clickable-tile 
+    title="Carbon Components"
+    description="Carbon Components gives developers a collection of re-usable HTML and Sass partials they can use for building websites and user interfaces."
+    href="https://github.com/ibm/carbon-components" 
+    type="resource"
+    >
+    <img src="images/github-icon.png" alt="Carbon Component Library" />
+</clickable-tile>
+<clickable-tile 
+    title="Carbon Components React"
+    description="Carbon Components React gives developers a collection of re-usable React components they can use for bulding websites and user interfaces."
+    href="https://github.com/ibm/carbon-components-react" 
+    type="resource"
+    >
+    <img src="images/github-icon.png" alt="Carbon Components React" />
+</clickable-tile>
+<clickable-tile 
+    title="Carbon Components Anuglar"
+    description="Carbon Components Angular gives developers a collection of re-usable Angular components they can use for bulding websites and user interfaces."
+    href="https://github.com/ibm/carbon-components-angular" 
+    type="resource"
+    >
+    <img src="images/github-icon.png" alt="Carbon Components Angular" />
+</clickable-tile>
+</flex-group>
+
+## Tools
+
+<flex-group>
 <clickable-tile 
     title="Carbon CodePen"
     description="CodePen, a social development playground for front-end developers and designers, houses demos of Carbon Components."
@@ -54,50 +83,13 @@ title: Resources
     >
     <img src="images/react-icon.png" alt="Carbon React Storybook" />
 </clickable-tile>
-<clickable-tile 
-    title="IBM Plex"
-    description="IBM uses the font Plex across products for brand consistency and cohesion."
-    href="https://github.com/IBM/plex"
-    type="resource"
-    >
-    <img src="images/github-icon.png" alt="IBM Plex" />
-</clickable-tile>
 </flex-group>
 
-## GitHub Repos
+## Additional Resources
 
-<flex-group>
-<clickable-tile 
-    title="Carbon Design Kit"
-    description="A Sketch file containing core visual styles, components, and patterns a designer needs to use Carbon as a framework for building product experiences."
-    href="https://github.com/ibm/carbon-design-kit" 
-    type="resource"
-    >
-    <img src="images/sketch-icon.png" alt="Carbon Design Kit" />
-</clickable-tile>
-<clickable-tile 
-    title="Carbon Components"
-    description="Carbon Components gives developers a collection of re-usable HTML and Sass partials they can use for building websites and user interfaces."
-    href="https://github.com/ibm/carbon-components" 
-    type="resource"
-    >
-    <img src="images/github-icon.png" alt="Carbon Component Library" />
-</clickable-tile>
-<clickable-tile 
-    title="Carbon Components React"
-    description="Carbon Components React gives developers a collection of re-usable React components they can use for bulding websites and user interfaces."
-    href="https://github.com/ibm/carbon-components-react" 
-    type="resource"
-    >
-    <img src="images/github-icon.png" alt="Carbon Components React" />
-</clickable-tile>
-<clickable-tile 
-    title="Carbon Components Anuglar"
-    description="Carbon Components Angular gives developers a collection of re-usable Angular components they can use for bulding websites and user interfaces."
-    href="https://github.com/ibm/carbon-components-angular" 
-    type="resource"
-    >
-    <img src="images/github-icon.png" alt="Carbon Components Angular" />
-</clickable-tile>
-</flex-group>
+### [IBM Plex](https://github.com/IBM/plex)
 
+IBM uses the font Plex across products for brand consistency and cohesion.
+
+### [IBM Design Language](https://www.ibm.com/design/language/)
+Carbon uses the IBM Design Language as our guiding principle. These core values remind us to design for an outcome and to be authentically thoughtful.

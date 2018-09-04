@@ -333,7 +333,7 @@
     }
   }
   
-  .tile__info p {
+  .overview-page .tile__info p {
     @include typescale('zeta');
     color: $text-01;
   
