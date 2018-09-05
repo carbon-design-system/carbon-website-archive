@@ -43,7 +43,7 @@ class Layout extends React.Component {
   };
   
   render() {
-    const { location, children } = this.props;
+    const { children } = this.props;
     const classNames = classnames('container', {
       'container--expanded': !this.state.isOpen,
     });
