@@ -5,21 +5,9 @@ import Layout from "../layouts";
 import { ClickableTile } from 'carbon-components-react';
 
 class IndexPage extends React.Component {
-  state = {
-    windowWidth: window.innerWidth,
-  };
 
   componentDidMount() {
     document.title = 'Carbon Design System';
-    if (window.pathname === '/') {
-      window.addEventListener('resize', () => {
-        if (window.location.pathname.length === 1) {
-          this.setState({
-            windowWidth: window.innerWidth,
-          });
-        } 
-      });
-    }
   }
 
   handleClick = cat => {
@@ -50,7 +38,6 @@ class IndexPage extends React.Component {
     const styleIll = require('../content/homepage/images/style.png');
     const scatter = require('../content/homepage/images/scatter.svg');
     const shapes = require('../content/homepage/images/shapes.png');
-    const svgViewBox = this.state.windowWidth < 903 ? '0 0 4000 823' : '0 0 2500 823';
     
     return (
       <Layout location={this.props.location}>
@@ -58,7 +45,7 @@ class IndexPage extends React.Component {
           <section className="overview-page__banner" aria-label="overview page banner">
             <img className="banner__shapes" src={shapes} alt="" />
             <img className="banner__shapes" src={shapes} alt="" />
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox={svgViewBox}>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox='0 0 2500 823'>
                 <g fill="none" strokeWidth="2">
                   <path
                     d="M97.3 306.07c27.19 14.46 52 10.25 75.64-7.49l-17.81-30c-11.21 10.32-25.91 15.93-41.84 7.46-18.91-10.05-24.33-30.08-11.31-54.57l13.26-24.94c13-24.5 32.66-31.2 51.57-21.14 15.93 8.47 19.17 21.33 16.13 36.28l35.88-.38c2.43-30.7-8.83-51.54-36-66-39.93-21.23-81-5.95-109 46.61S57.37 284.84 97.3 306.07z"

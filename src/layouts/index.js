@@ -65,7 +65,9 @@ class Layout extends React.Component {
               title={data.site.siteMetadata.title}
               meta={[{ name: 'description', content: 'Carbon is the design system for IBM web and product. It is a series of individual styles, components, and guidelines used for creating unified UI.' }, { name: 'keywords', content: 'IBM, design, system, Carbon, design system, Bluemix, styleguide, style, guide, components, library, pattern, kit, component, cloud' }]}
               link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon32}` }]}
-            />
+            >
+              <html lang="en" />
+            </Helmet>
             <SideNavToggleBtn onToggleBtnClick={this.onToggleBtnClick} isOpen={this.state.isOpen} />
             <SideNav isFinal={this.state.isFinal} isOpen={this.state.isOpen} location={this.props.location} />
             <div className={classNames}>

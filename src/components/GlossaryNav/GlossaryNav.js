@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
 
+const getPath = typeof window !== 'undefined' && window.location.hash.substring(1, 2).toUpperCase();
+
 class GlossaryNav extends Component {
   state = {
     previousScroll: 0,
     isReverseScroll: false,
     isFixed: false,
-    activeLetter: window.location.hash.substring(1, 2).toUpperCase() || '',
+    activeLetter: getPath,
     letters: [],
   };
 
