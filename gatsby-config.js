@@ -4,6 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Carbon Design System',
   },
+  pathPrefix: `/carbon-website-gatsby`,
   plugins: [
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,

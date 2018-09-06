@@ -43,9 +43,10 @@
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "storybook:build": "build-storybook -c .storybook -o public/docs"
+    "storybook:build": "build-storybook -c .storybook -o public/docs",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
-  "devDependencies": {
+  "devDependencies": { 
     "@storybook/addon-actions": "^3.4.7",
     "@storybook/addon-knobs": "^3.4.7",
     "@storybook/addon-options": "^3.4.7",
@@ -54,6 +55,7 @@
     "babel-loader": "7.1.1",
     "gatsby-remark-static-images": "^1.0.0",
     "html-loader": "^0.5.5",
+    "loader-utils": "^1.1.0",
     "node-sass": "^4.9.3",
     "prettier": "^1.12.0",
     "react": "^16.4.2",
