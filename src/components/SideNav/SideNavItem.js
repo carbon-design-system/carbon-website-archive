@@ -3,8 +3,8 @@ import classnames from 'classnames';
 import { Link } from "gatsby";
 import { Icon } from 'carbon-components-react';
 
-const getPathArray = () =>
-  typeof window !== 'undefined' && window.location.pathname.split('/');
+const isBrowser = typeof window !== 'undefined';
+const pathArray = isBrowser ? window.location.pathname.split('/') : [];
 
 export default class SideNavItem extends React.Component {
 
@@ -21,8 +21,9 @@ export default class SideNavItem extends React.Component {
 
   renderSubNavItems = subItems =>
     Object.keys(subItems).map(item => {
+      const isSubActive = isBrowser && pathArray[2] === item;
       const subNavClasses = classnames('side-nav__sub-nav-item', {
-        'side-nav__sub-nav-item--active': getPathArray()[2] === item,
+        'side-nav__sub-nav-item--active': isSubActive,
       });
       return (
         <li className={subNavClasses} key={item}>
@@ -35,9 +36,10 @@ export default class SideNavItem extends React.Component {
    
     const {item, itemSlug } = this.props;
     const hasSubNav = !(item['sub-nav'] === undefined);
+    const isNavActive = isBrowser && pathArray[1] === itemSlug;
     const navItemClasses = classnames('side-nav__nav-item', {
-      'side-nav__nav-item--open': this.state.open || getPathArray()[1] === itemSlug,
-      'side-nav__nav-item--active': getPathArray()[1] === itemSlug && !hasSubNav,
+      'side-nav__nav-item--open': this.state.open || isNavActive,
+      'side-nav__nav-item--active': isNavActive && !hasSubNav,
     });
     return (
       <li className={navItemClasses}>
