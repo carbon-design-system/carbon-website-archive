@@ -1,0 +1,2 @@
+webpackJsonp([0xa4d98ca601c],{621:function(a,t){a.exports={data:{markdownRemark:{htmlAst:{type:"root",children:[],data:{quirksMode:!1}},fields:{slug:"/data-visualization/line-graph/line-graph",currentPage:"line-graph"},frontmatter:{title:"Line Graph",label:"Data Visualization",tabs:null}}},pathContext:{slug:"/data-visualization/line-graph/line-graph",currentPage:"line-graph"}}}});
+//# sourceMappingURL=path---data-visualization-line-graph-3c651662222b88dcf25f.js.map

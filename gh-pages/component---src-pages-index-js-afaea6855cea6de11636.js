@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{198:function(e,n,s){"use strict";s.r(n);var i=s(0),t=s.n(i),a=s(256);n.default=function(){return t.a.createElement(a.a,null,t.a.createElement("p",null,"Carbon is the design system for IBM Cloud products. It is a series of individual styles, components, and guidelines used for creating unified UI."))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-afaea6855cea6de11636.js.map

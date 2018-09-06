@@ -1,0 +1,2 @@
+webpackJsonp([89055704000631],{623:function(a,t){a.exports={data:{markdownRemark:{htmlAst:{type:"root",children:[],data:{quirksMode:!1}},fields:{slug:"/data-visualization/pie-chart/pie-chart",currentPage:"pie-chart"},frontmatter:{title:"Pie Chart",label:"Data Visualization",tabs:null}}},pathContext:{slug:"/data-visualization/pie-chart/pie-chart",currentPage:"pie-chart"}}}});
+//# sourceMappingURL=path---data-visualization-pie-chart-69bf0d3e362bb85b6cec.js.map
