@@ -1,2 +1,0 @@
-webpackJsonp([0x9c674b91cd47],{622:function(e,a){e.exports={data:{markdownRemark:{htmlAst:{type:"root",children:[],data:{quirksMode:!1}},fields:{slug:"/data-visualization/overview/overview",currentPage:"overview"},frontmatter:{title:"Overview",label:"Data Visualization",tabs:null}}},pathContext:{slug:"/data-visualization/overview/overview",currentPage:"overview"}}}});
-//# sourceMappingURL=path---data-visualization-overview-17ab9992f4cf5c8d0cd1.js.map

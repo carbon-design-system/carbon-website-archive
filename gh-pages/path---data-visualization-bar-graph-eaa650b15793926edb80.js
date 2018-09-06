@@ -1,2 +1,0 @@
-webpackJsonp([0xec76913d0612],{619:function(a,r){a.exports={data:{markdownRemark:{htmlAst:{type:"root",children:[],data:{quirksMode:!1}},fields:{slug:"/data-visualization/bar-graph/bar-graph",currentPage:"bar-graph"},frontmatter:{title:"Bar Graph",label:"Data Visualization",tabs:null}}},pathContext:{slug:"/data-visualization/bar-graph/bar-graph",currentPage:"bar-graph"}}}});
-//# sourceMappingURL=path---data-visualization-bar-graph-eaa650b15793926edb80.js.map

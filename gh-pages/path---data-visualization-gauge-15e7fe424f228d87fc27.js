@@ -1,2 +1,0 @@
-webpackJsonp([0x8a3ec53f6352],{620:function(a,t){a.exports={data:{markdownRemark:{htmlAst:{type:"root",children:[],data:{quirksMode:!1}},fields:{slug:"/data-visualization/gauge/gauge",currentPage:"gauge"},frontmatter:{title:"Gauge",label:"Data Visualization",tabs:null}}},pathContext:{slug:"/data-visualization/gauge/gauge",currentPage:"gauge"}}}});
-//# sourceMappingURL=path---data-visualization-gauge-15e7fe424f228d87fc27.js.map

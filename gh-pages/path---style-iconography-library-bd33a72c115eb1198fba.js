@@ -1,2 +1,0 @@
-webpackJsonp([0x8dc68f2e92c6],{646:function(r,e){r.exports={data:{markdownRemark:{htmlAst:{type:"root",children:[{type:"element",tagName:"icon-library",properties:{},children:[]}],data:{quirksMode:!1}},fields:{slug:"/style/iconography/library",currentPage:"library"},frontmatter:{title:"Iconography",label:"Style",tabs:["Library","Usage","Contribution"]}}},pathContext:{slug:"/style/iconography/library",currentPage:"library"}}}});
-//# sourceMappingURL=path---style-iconography-library-bd33a72c115eb1198fba.js.map

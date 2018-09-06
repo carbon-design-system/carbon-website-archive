@@ -1,2 +1,0 @@
-webpackJsonp([0xc67597803bd5],{624:function(t,a){t.exports={data:{markdownRemark:{htmlAst:{type:"root",children:[],data:{quirksMode:!1}},fields:{slug:"/data-visualization/scatter-plot/scatter-plot",currentPage:"scatter-plot"},frontmatter:{title:"Scatter Plot",label:"Data Visualization",tabs:null}}},pathContext:{slug:"/data-visualization/scatter-plot/scatter-plot",currentPage:"scatter-plot"}}}});
-//# sourceMappingURL=path---data-visualization-scatter-plot-a5454dff2321c9fdafea.js.map
