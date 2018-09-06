@@ -46,7 +46,7 @@
     "storybook:build": "build-storybook -c .storybook -o public/docs",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
-  "devDependencies": { 
+  "devDependencies": {
     "@storybook/addon-actions": "^3.4.7",
     "@storybook/addon-knobs": "^3.4.7",
     "@storybook/addon-options": "^3.4.7",
@@ -54,6 +54,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "7.1.1",
     "gatsby-remark-static-images": "^1.0.0",
+    "gh-pages": "^1.2.0",
     "html-loader": "^0.5.5",
     "loader-utils": "^1.1.0",
     "node-sass": "^4.9.3",
