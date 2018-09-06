@@ -2,7 +2,6 @@
   "name": "carbon-website-gatsby",
   "description": "Carbon Design System website",
   "version": "1.0.0",
-  "author": "Mari Johannessen <mari.l.johannessen@gmail.com>",
   "dependencies": {
     "@storybook/addon-info": "^3.4.7",
     "carbon-components": "^9.6.1",
@@ -63,6 +62,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/carbon-design-system/carbon-website-gatsby/"
   }
 }
