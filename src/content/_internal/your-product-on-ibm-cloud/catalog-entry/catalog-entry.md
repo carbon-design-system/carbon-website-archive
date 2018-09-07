@@ -1,6 +1,7 @@
 ---
 label: Your Product on IBM Cloud
 title: Catalog Entry
+internal: true
 ---
 
 <page-intro>The IBM Cloud Catalog ("Catalog") is the place developers, data scientists, IT admins, and other IBM Cloud users go to discover, evaluate, and create offerings. The following guidelines will help you create or update an offering listing to ensure that it meets IBM Cloud quality standards and meets your users' needs.</page-intro>
