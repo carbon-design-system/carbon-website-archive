@@ -7,10 +7,19 @@ import { Button, Search, Icon } from 'carbon-components-react';
 import SideNavItem from './SideNavItem';
 import navigation from '../../data/navigation/navigation.json';
 
+console.log(process.env.GATSBY_CARBON_ENV);
+
 export default class SideNav extends React.Component {
   renderNavItems = nav =>
     Object.keys(nav).map(item => {
-      return <SideNavItem itemSlug={item} item={nav[item]} key={item} />;
+      const { GATSBY_CARBON_ENV } = process.env;
+      const isInternal = GATSBY_CARBON_ENV !== 'internal' &&  nav[item].internal === 'true';
+      if (isInternal) {
+        return '';
+      }
+      return ( 
+        <SideNavItem itemSlug={item} item={nav[item]} key={item} />
+      );
     });
 
   render() {

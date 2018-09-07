@@ -1,6 +1,7 @@
 ---
 label: Your Product on IBM Cloud
 title: User Flow
+internal: true
 ---
 
 <page-intro>Users approach your product with specific goals in mind. When they achieve

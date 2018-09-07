@@ -1,6 +1,7 @@
 ---
 label: Your Product on IBM Cloud
 title: Service Providers
+internal: true
 tabs: ['General', 'Service Icon', 'Design Approval']
 ---
 

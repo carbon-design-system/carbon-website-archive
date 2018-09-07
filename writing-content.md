@@ -8,6 +8,7 @@ Required fields are:
 
 Non-required fields are:
 - `tabs`: An array of the page tabs (in the desired order)
+- `internal: true` Used to designate internal only content. 
 
 ### Example:
 
