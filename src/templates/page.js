@@ -2,6 +2,8 @@ import React from 'react';
 import rehypeReact from 'rehype-react';
 import Layout from "../layouts";
 
+import NotFoundPage from '../pages/404/404';
+
 // Components
 import PageHeader from '../components/PageHeader';
 import PageTabs from '../components/PageTabs';
@@ -63,14 +65,26 @@ export default ({ data }) => {
   let currentPage = post.fields.currentPage;
   let slug = post.fields.slug;
   let tabs = post.frontmatter.tabs;
+  let internal = post.frontmatter.internal;
 
-  return (
-    <Layout>
-      <PageHeader title={post.frontmatter.title} label={post.frontmatter.label} />
-      {!(tabs === null) && <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />}
-      <div className="page-content">{renderAst(post.htmlAst)}</div>
-    </Layout>
-  );
+  const { GATSBY_CARBON_ENV } = process.env;
+  const isInternal = GATSBY_CARBON_ENV !== 'internal' && internal == true;
+
+  if (isInternal) {
+    return ( 
+      <Layout>   
+        <NotFoundPage />
+      </Layout>
+    )
+  } else {
+    return ( 
+      <Layout>    
+        <PageHeader title={post.frontmatter.title} label={post.frontmatter.label} />
+        {!(tabs === null) && <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />}
+        <div className="page-content test"> {renderAst(post.htmlAst)}</div>
+      </Layout>
+    )
+  }
 };
 
 export const query = graphql`
@@ -85,6 +99,7 @@ export const query = graphql`
         title
         label
         tabs
+        internal
       }
     }
   }

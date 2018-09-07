@@ -1,6 +1,7 @@
 ---
 label: Your Product on IBM Cloud
 title: Principles
+internal: true
 ---
 
 ## User-Centered Product Development
