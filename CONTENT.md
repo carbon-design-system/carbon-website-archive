@@ -1,4 +1,19 @@
+## Adding a new page
+Create markdown file inside the `content` folder following the rules below. 
+
+Add page to navigation.json file.
+```
+src
+├── data
+   ├── navigation
+      ├── navigation.json
+```
+
+If page is internal only make sure to add `"internal": true` to the navigation.json file for that item. 
+
 ## Writing content
+
+All markdown files live inside of the `content` folder and follow the site navigation.
 
 Remember the frontmatter on top of each file.
 
@@ -7,7 +22,7 @@ Required fields are:
 - `label`: The label of the page _(not required on top level pages, e.g., Resources, if title and label are the same only title will display)_
 
 Non-required fields are:
-- `tabs`: An array of the page tabs (in the desired order)
+- `tabs`: An array of the page tabs (in the desired order), tab name should match markdown file name.
 - `internal: true` Used to designate internal only content. 
 
 ### Example:
@@ -23,7 +38,11 @@ tabs: ['Vanilla', 'React']
 This will render the following header:
 ![Header](https://user-images.githubusercontent.com/5447411/41934216-bc9c080e-794b-11e8-9d7f-1f9d89d44dd9.png)
 
-Global Components:
+## Custom Components
+
+These custom components can be used inside any markdown file. 
+
+### Global Components:
  
 - `<page-intro>`
 - `<page-intro> **Bold and blue text** </page-intro>`
@@ -34,15 +53,24 @@ Global Components:
 - `<color-block>#ff0000</color-block>`
 - `<color-card name="$ui-01" hex="#ffffff" border="true" small="true"></color-card>`
 
-Page Specific Components: 
+### Page Specific Components: 
 
+**Type**
 - `<type-scale-table>`
 - `<type-styles-table>`
 - `<type-weight-table>`
+
+**Glossary**
 - `<glossary>` 
+
+**Component Status**
 - `<component-status>`
+
+**Layer**
 - `<layer-types>`
 - `<layer-usage>`
+
+**Motion**
 - `<motion-example type="standard"></motion-example>`
 - `<motion-example type="ease-out"></motion-example>`
 - `<motion-example type="ease-in"></motion-example>`
@@ -50,7 +78,7 @@ Page Specific Components:
 - `<motion-example type="easing" correcttext="Easing" incorrecttext="No-Easing"></motion-example></motion-example>`
 - `<motion-example type="duration" correcttext="300ms" incorrecttext="600ms"></motion-example>`     
 
-Component Page Components: 
+## Component Page Components: 
 ```
 <component 
     name="Text Input"
@@ -59,10 +87,12 @@ Component Page Components:
     codepen="YEZLyd"
     haslightversion="true"
     hasReactVersion="true"
+    hasAngularVersion="true"
     hasLightBackground="true"
     >
 </component>
 ```
+`<component-docs component="accordion"></component-docs>`
 
 ### Example Clickable Tile inside FlexGroup
 ```
@@ -122,3 +152,6 @@ This will render the following set of examples
 Images will render as full width responsive images by default. Use blockquote in front of an image to render a smaller image for text to wrap around.
 
 `> ![tone](images/content-general-2.png)`
+
+This will render a small image with text flowing around. 
+![Example](https://user-images.githubusercontent.com/2753488/45236528-b02cb980-b2a1-11e8-9e81-af4ec353d3e9.png)
