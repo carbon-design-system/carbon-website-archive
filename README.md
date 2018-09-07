@@ -10,10 +10,6 @@ src
 ├── components
 ├── content
 ├── data
-   ├── guidelines
-      ├── glossary.js
-   ├── navigation
-   ├── component-status.json
 ├── layouts
 ├── pages
 ├── styles
@@ -26,21 +22,31 @@ src
 ## 👩‍💻 Development
 
 Install dependencies
-`yarn`
+```
+yarn
+```
 
 Run dev environment
-`yarn dev`
+```
+yarn dev
+```
 
 Run internal dev environment
-`yarn dev:internal` 
+```
+yarn dev:internal
+``` 
 
 ## 🚀 Build
 
 Runing the build commands generates all the files and places them in the `public` folder.
 
 Build external site
-`yarn build:external`
+```
+yarn build:external
+```
 
 Build internal site
-`yarn build:internal`
+```
+yarn build:internal
+```
 
