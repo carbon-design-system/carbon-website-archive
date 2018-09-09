@@ -11,6 +11,19 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Carbon Design System`,
+        short_name: `Carbon`,
+        start_url: `/`,
+        background_color: `#000000`,
+        theme_color: `#cccccc`,
+        display: `minimal-ui`,
+        icon: `src/content/global/images/favicon-32.png`, // This path is relative to the root of the site.
+      },
+    },
+    `gatsby-plugin-offline`,
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'content',
