@@ -25,4 +25,3 @@ tabs: ['Code','Usage', 'Style']
     hasReactVersion="true"
     >
 </component>
-<component-docs component="text-input"></component-docs>

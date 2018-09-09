@@ -35,6 +35,7 @@ export default class ClickTile extends React.Component {
       return (
         <ClickableTile
         target="_blank"
+        rel="noopener noreferrer"
         className={classNames}
         href={href}
       >
@@ -67,6 +68,7 @@ export default class ClickTile extends React.Component {
       return (
         <ClickableTile
         target="_blank"
+        rel="noopener noreferrer"
         className={classNames}
         href={href}
       >
