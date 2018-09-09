@@ -328,6 +328,7 @@ class IndexPage extends React.Component {
                 <li className="overview-page__list-item">
                   <ClickableTile
                     target="_blank"
+                    rel="noopener noreferrer"
                     href="https://github.com/ibm/carbon-design-kit"
                     className="overview-page__tile"
                   >
@@ -346,6 +347,7 @@ class IndexPage extends React.Component {
                 <li className="overview-page__list-item">
                   <ClickableTile
                     target="_blank"
+                    rel="noopener noreferrer"
                     href="https://github.com/ibm/carbon-components"
                     className="overview-page__tile"
                   >
@@ -361,6 +363,7 @@ class IndexPage extends React.Component {
                 <li className="overview-page__list-item">
                   <ClickableTile
                     target="_blank"
+                    rel="noopener noreferrer"
                     href="https://github.com/ibm/carbon-components-react"
                     className="overview-page__tile"
                   >
@@ -376,6 +379,7 @@ class IndexPage extends React.Component {
                 <li className="overview-page__list-item">
                   <ClickableTile
                     target="_blank"
+                    rel="noopener noreferrer"
                     href="https://github.com/ibm/carbon-components-angular"
                     className="overview-page__tile"
                   >
@@ -389,7 +393,7 @@ class IndexPage extends React.Component {
                   </ClickableTile>
                 </li>
                 <li className="overview-page__list-item">
-                  <ClickableTile target="_blank" href="http://www.codepen.io/team/carbon" className="overview-page__tile">
+                  <ClickableTile target="_blank" rel="noopener noreferrer" href="http://www.codepen.io/team/carbon" className="overview-page__tile">
                     <div className="tile__icon">
                       <img src={codepenIcon} alt="" />
                     </div>
@@ -403,7 +407,7 @@ class IndexPage extends React.Component {
                   </ClickableTile>
                 </li>
                 <li className="overview-page__list-item">
-                  <ClickableTile target="_blank" href="http://themes.carbondesignsystem.com/" className="overview-page__tile">
+                  <ClickableTile target="_blank" rel="noopener noreferrer" href="http://themes.carbondesignsystem.com/" className="overview-page__tile">
                     <div className="tile__icon">
                       <img src={sandboxIcon} alt="" />
                     </div>
