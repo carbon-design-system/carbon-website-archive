@@ -114,4 +114,4 @@ tabs: ['Code','Usage', 'Style']
     hasAngularVersion="true"
     >
 </component>
-
+<component-docs component="button"></component-docs>

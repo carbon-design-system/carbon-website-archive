@@ -48,3 +48,4 @@ tabs: ['Code','Usage', 'Style']
     hasReactVersion="true"
     >
 </component>
+<component-docs component="data-table-v2"></component-docs>

@@ -43,6 +43,6 @@ tabs: ['Code','Usage', 'Style']
     codepen="GOMKap"
     haslightversion="true"
     hasReactVersion="true"
-    
     >
 </component>
+<component-docs component="date-picker"></component-docs>

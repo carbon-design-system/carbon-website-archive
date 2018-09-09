@@ -27,6 +27,7 @@ variations:
     hasAngularVersion="true"
     >
 </component>
+
 <component-react
     name="Multi-select Dropdown"
     component="MultiSelect"
@@ -34,11 +35,18 @@ variations:
     >
 </component-react>
 
+<component-react
+    name="Inline Multi-select Dropdown"
+    component="MultiSelect"
+    variation="MultiSelect.Inline"
+    >
+</component-react>
 
-Add react
- MultiSelect:
- - Multi-select Dropdown
- MultiSelect.Inline:
- - Inline Multi-select Dropdown
- MultiSelect.Filterable:
- - Filter Dropdown
+<component-react
+    name="Filter Dropdown"
+    component="MultiSelect"
+    variation="MultiSelect.Filterable"
+    >
+</component-react>
+
+<component-docs component="dropdown"></component-docs>

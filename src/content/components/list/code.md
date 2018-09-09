@@ -11,9 +11,7 @@ tabs: ['Code','Usage', 'Style']
     component="list" 
     variation="list--ordered"
     codepen="MOEWEP"
-    
     hasReactVersion="true"
-    
     >
 </component>
 
@@ -22,8 +20,7 @@ tabs: ['Code','Usage', 'Style']
     component="list" 
     variation="list"
     codepen="JOrjOj"
-    
     hasReactVersion="true"
-    
     >
 </component>
+<component-docs component="list"></component-docs>

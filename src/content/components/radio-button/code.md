@@ -15,3 +15,4 @@ tabs: ['Code','Usage', 'Style']
     hasReactVersion="true"
     >
 </component>
+<component-docs component="radio-button"></component-docs>

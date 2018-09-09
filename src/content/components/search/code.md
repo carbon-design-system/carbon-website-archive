@@ -28,3 +28,4 @@ variations:
     
     >
 </component>
+<component-docs component="search"></component-docs>

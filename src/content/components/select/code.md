@@ -13,7 +13,6 @@ tabs: ['Code','Usage', 'Style']
     codepen="QOqbPg"
     haslightversion="true"
     hasReactVersion="true"
-    
     >
 </component>
 
@@ -22,7 +21,7 @@ tabs: ['Code','Usage', 'Style']
     component="select" 
     variation="select--inline"
     codepen="YErXbK"
-    
     hasReactVersion="true"
     >
 </component>
+<component-docs component="select"></component-docs>

@@ -24,3 +24,4 @@ tabs: ['Code','Usage', 'Style']
     hasReactVersion="true"
     >
 </component>
+<component-docs component="notification"></component-docs>

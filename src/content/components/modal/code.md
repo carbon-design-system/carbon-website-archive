@@ -35,3 +35,4 @@ tabs: ['Code','Usage', 'Style']
     hasAngularVersion="true"
     >
 </component>
+<component-docs component="modal"></component-docs>

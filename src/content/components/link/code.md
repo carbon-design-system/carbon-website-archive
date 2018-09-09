@@ -11,8 +11,7 @@ tabs: ['Code','Usage', 'Style']
     component="link" 
     variation="link"
     codepen="YErzrq"
-    
     hasReactVersion="true"
-    
     >
 </component>
+<component-docs component="link"></component-docs>

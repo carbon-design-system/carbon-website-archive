@@ -16,3 +16,4 @@ tabs: ['Code','Usage', 'Style']
     
     >
 </component>
+<component-docs component="progress-indicator"></component-docs>

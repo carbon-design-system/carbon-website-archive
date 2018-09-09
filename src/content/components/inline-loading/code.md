@@ -11,8 +11,7 @@ tabs: ['Code','Usage', 'Style']
     component="inline-loading" 
     variation="inline-loading"
     codepen="oMpMYK"
-    
     hasReactVersion="true"
-    
     >
 </component>
+<component-docs component="inline-loading"></component-docs>

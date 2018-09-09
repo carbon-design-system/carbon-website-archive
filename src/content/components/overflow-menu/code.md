@@ -11,8 +11,7 @@ tabs: ['Code','Usage', 'Style']
     component="overflow-menu" 
     variation="overflow-menu"
     codepen="MOEwjp"
-    
     hasReactVersion="true"
-    
     >
 </component>
+ <component-docs component="overflow-menu"></component-docs>

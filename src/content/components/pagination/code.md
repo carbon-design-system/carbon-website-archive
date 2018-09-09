@@ -11,8 +11,7 @@ tabs: ['Code','Usage', 'Style']
     component="pagination" 
     variation="pagination"
     codepen="MOEwbp"
-    
     hasReactVersion="true"
-    
     >
 </component>
+<component-docs component="pagination"></component-docs>

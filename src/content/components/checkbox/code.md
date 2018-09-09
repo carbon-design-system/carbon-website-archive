@@ -17,3 +17,4 @@ tabs: ['Code','Usage', 'Style']
     hasAngularVersion="true"
     >
 </component>
+<component-docs component="checkbox"></component-docs>

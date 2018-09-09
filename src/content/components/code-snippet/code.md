@@ -32,3 +32,4 @@ variations:</page-intro>
     hasReactVersion="true"
     >
 </component>
+<component-docs component="code-snippet"></component-docs>

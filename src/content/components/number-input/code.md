@@ -11,8 +11,7 @@ tabs: ['Code','Usage', 'Style']
     component="number-input" 
     variation="number-input"
     codepen="Xzebda"
-    
     hasReactVersion="true"
-    
     >
 </component>
+<component-docs component="number-input"></component-docs>
