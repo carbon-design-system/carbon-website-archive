@@ -69,6 +69,13 @@ class ComponentExample extends Component {
     this._releaseAndInstantiateComponents();
   };
 
+  componentDidUpdate({ htmlFile }) {
+    const { prevHtmlFile } = this.props;
+    if (prevHtmlFile !== htmlFile) {
+      this._releaseAndInstantiateComponents();
+    }
+  }
+
   _releaseAndInstantiateComponents() {
     const instances = this._instances;
     for (let instance = instances.pop(); instance; instance = instances.pop()) {
