@@ -12,7 +12,7 @@ import '../styles/index.scss';
 
 class Layout extends React.Component {
   static propTypes = {
-    children: PropTypes.array,
+    children: PropTypes.any,
   };
 
   state = {
