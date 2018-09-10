@@ -88,18 +88,6 @@ exports.onCreateWebpackConfig = ({
   actions,
 }) => {
   actions.setWebpackConfig({
-    entry: {
-      main: [require.resolve('react-dev-utils/webpackHotDevClient'), paths.appIndexJs],
-      'carbon-components': paths.carbonComponentsIndexJs,
-    },
-    output: {
-      path: paths.appBuild,
-      pathinfo: true,
-      filename: 'static/js/[name].js',
-      publicPath: publicPath,
-      library: ['CDS', '[name]'],
-      libraryTarget: 'var',
-    },
     module: {
       rules: [
         {

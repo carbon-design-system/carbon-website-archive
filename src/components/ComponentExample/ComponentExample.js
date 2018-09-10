@@ -2,7 +2,18 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import CodeExample from '../CodeExample/CodeExample';
+import * as components from 'carbon-components/es/globals/js/components';
 import { RadioButtonGroup, RadioButton } from 'carbon-components-react';
+import '../../polyfills';
+
+const componentNamesMap = {
+  Card: ['OverflowMenu'],
+  CodeSnippet: ['CodeSnippet', 'CopyButton'],
+  DataTable: ['DataTable', 'DataTableV2', 'OverflowMenu', 'Toolbar'],
+  DetailPageHeader: ['OverflowMenu', 'Tab'],
+  OrderSummary: ['Dropdown'],
+  Tabs: ['Tab', 'ContentSwitcher'],
+};
 
 class ComponentExample extends Component {
   static propTypes = {
@@ -48,6 +59,43 @@ class ComponentExample extends Component {
       currentHTMLfile: newHTML,
     });    
   };
+
+  _ref = null;
+
+  _instances = [];
+
+  _liveDemoRef = ref => {
+    this._ref = ref;
+    this._releaseAndInstantiateComponents();
+  };
+
+  _releaseAndInstantiateComponents() {
+    const instances = this._instances;
+    for (let instance = instances.pop(); instance; instance = instances.pop()) {
+      instance.release();
+    }
+    const ref = this._ref;
+    if (ref) {
+      const currentComponent = this.props.component
+        .replace(/-([a-z])/g, (match, token) => token.toUpperCase())
+        .replace(/^([a-z])/, (match, token) => token.toUpperCase());
+      (componentNamesMap[currentComponent] || [currentComponent]).forEach((name) => {
+        const TheComponent = components[name];
+        if (TheComponent) {
+          if (TheComponent.prototype.createdByLauncher) {
+            const initHandles = this.constructor._initHandles;
+            if (!initHandles.has(TheComponent)) {
+              initHandles.set(TheComponent, TheComponent.init());
+            }
+          } else {
+            const selectorInit = TheComponent.options.selectorInit;
+            // Gatsby's setup seems to use `.concat()` for [...arraylike], which does not work for `NodeList`
+            instances.push(...Array.from(ref.querySelectorAll(selectorInit)).map(elem => TheComponent.create(elem)));
+          }
+        }
+      });
+    }
+  }
 
   componentWillReceiveProps(props) {
     if (this.state.currentHTMLfile !== props.htmlFile) {
@@ -107,7 +155,7 @@ class ComponentExample extends Component {
       <div className={lightUIclassnames}>
         <div className={liveBackgroundClasses}>
           <div className={classNames}>
-            <div dangerouslySetInnerHTML={{ __html: this.state.currentHTMLfile }} />
+            <div ref={this._liveDemoRef} dangerouslySetInnerHTML={{ __html: this.state.currentHTMLfile }} />
           </div>
         </div>
         <div className="component-toolbar">
