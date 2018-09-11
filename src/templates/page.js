@@ -1,7 +1,6 @@
 import React from 'react';
 import rehypeReact from 'rehype-react';
-import Layout from "../layouts";
-
+import Layout from "../components/layouts";
 import NotFoundPage from '../pages/404/404';
 
 // Components
@@ -88,7 +87,7 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query BlogPostQuery($slug: String!) {
+  query ContentQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       htmlAst
       fields {

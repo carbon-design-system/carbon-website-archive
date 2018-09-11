@@ -108,6 +108,10 @@
   border-left: 4px solid $brand-01;
 }
 
+.side-nav__sub-nav-item a.side-nav__sub-nav-item--active {
+  color: red!important;
+}
+
 .side-nav__nav-item--open .side-nav__nav-item--arrow {
   transform: rotate(-180deg);
 }
