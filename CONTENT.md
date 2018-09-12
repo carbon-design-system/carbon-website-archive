@@ -63,8 +63,11 @@ These custom components can be used inside any markdown file.
 **Glossary**
 - `<glossary>` 
 
-**Component Status**
+**Component Status** (content pulled from data/components.json)
 - `<component-status>`
+
+**Component Overview** (content pulled from data/components.json)
+- `<component-overview>`
 
 **Layer**
 - `<layer-types>`
