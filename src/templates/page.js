@@ -77,7 +77,7 @@ export default ({ data }) => {
     )
   } else {
     return ( 
-      <Layout>    
+      <Layout>
         <PageHeader title={post.frontmatter.title} label={post.frontmatter.label} />
         {!(tabs === null) && <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />}
         <div className="page-content"> {renderAst(post.htmlAst)}</div>
@@ -87,7 +87,7 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query ContentQuery($slug: String!) {
+  query BlogPostQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       htmlAst
       fields {
