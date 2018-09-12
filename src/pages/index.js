@@ -39,8 +39,6 @@ class IndexPage extends React.Component {
   };
 
   render() {
-    
-    console.log(this.props);
     return (
       <Layout>
         <main id="maincontent" role="main" className="overview-page" tabIndex="-1">

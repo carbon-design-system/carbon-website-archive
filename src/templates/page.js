@@ -1,7 +1,7 @@
 import React from 'react';
 import rehypeReact from 'rehype-react';
 import Layout from "../components/layouts";
-import NotFoundPage from '../pages/404/404';
+import FourOhFour from "../components/404";
 
 // Components
 import PageHeader from '../components/PageHeader';
@@ -74,7 +74,7 @@ export default ({ data }) => {
   if (isInternal) {
     return ( 
       <Layout>   
-        <NotFoundPage />
+        <FourOhFour />
       </Layout>
     )
   } else {
