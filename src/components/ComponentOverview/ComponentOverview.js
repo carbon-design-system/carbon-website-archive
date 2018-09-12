@@ -14,11 +14,15 @@ class ComponentOverview extends React.Component {
       componentUrl = `/components/${component.toLowerCase().replace(' ', '-')}`
     }
 
-    let componentImg;
+   let componentImg;
+   try{ 
     componentImg = require(`../../content/components/overview/images/${component}.svg`);
-  
+   } catch(e) { 
+    componentImg = require('../../content/components/overview/images/NoImage.svg');
+   }
+
     return (
-      <li className="component-item">
+      <li className="component-item" key={component}>
           <div className="flex-item">
             <Link to={componentUrl}>
               <img src={componentImg} alt={component} />
