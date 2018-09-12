@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Dropdown</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Dropdown" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(59.000000, 20.500000)">
+            <polygon id="Rectangle-157-Copy-3" fill="#FFFFFF" points="0 7.10542736e-15 93.66875 7.10542736e-15 140 7.10542736e-15 140 27 0 27"></polygon>
+            <polygon id="Shape" fill="#3D70B2" transform="translate(125.066482, 13.510430) scale(1, -1) rotate(180.000000) translate(-125.066482, -13.510430) " points="121.677147 15.205098 125.066482 11.8157624 128.455818 15.205098"></polygon>
+            <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="9.27698213" y="11.1378953" width="83.3776547" height="4.06720267"></rect>
+            <rect id="Rectangle-11" fill="#FFFFFF" x="0" y="26.5600586" width="140" height="98"></rect>
+        </g>
+        <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="67.8170212" y="59.922075" width="54.9417679" height="4.06720267"></rect>
+        <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="67.8170212" y="76.863147" width="70.7694046" height="4.06720267"></rect>
+        <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="67.8170212" y="93.8042191" width="51.6541702" height="4.06720267"></rect>
+        <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="67.8170212" y="110.745291" width="67.3973343" height="4.06720267"></rect>
+        <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="67.8170212" y="127.686363" width="77.2703811" height="4.06720267"></rect>
+        <polygon id="Path-7" fill="#5A6872" fill-rule="nonzero" points="59.001808 47.0062519 58.998192 46.0062585 198.997754 45.5000033 199.001371 46.4999967"></polygon>
+    </g>
+</svg>
