@@ -25,6 +25,14 @@ If page is internal only make sure to add `"internal": true` to the navigation.j
 
 All markdown files live inside of the `content` folder and follow the site navigation.
 
+```
+src
+├── content
+   ├── getting-started
+      ├── designers
+          ├── designers.md
+```
+
 Remember the frontmatter on top of each file.
 
 Required fields are:
@@ -48,7 +56,7 @@ tabs: ['Vanilla', 'React']
 This will render the following header:
 ![Header](https://user-images.githubusercontent.com/5447411/41934216-bc9c080e-794b-11e8-9d7f-1f9d89d44dd9.png)
 
-## Standard Markdown 
+## Markdown 
 
 ### This generates an H2 heading with an underline
 	
@@ -101,7 +109,7 @@ Blocks of code are fenced by lines with three back-ticks
 	
 ``` 
 
-## Custom Components
+## Custom Markdown Components
 
 These custom components can be used inside any markdown file. 
 
@@ -157,8 +165,15 @@ These custom components can be used inside any markdown file.
     hasLightBackground="true"
     >
 </component>
+
+<component-docs component="accordion"></component-docs>
+
+<component-react
+    name="Multi-select Dropdown"
+    component="MultiSelect"
+    variation="MultiSelect"
+    >
 ```
-`<component-docs component="accordion"></component-docs>`
 
 ### Example Clickable Tile inside FlexGroup
 ```
