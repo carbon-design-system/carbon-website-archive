@@ -38,6 +38,59 @@ tabs: ['Vanilla', 'React']
 This will render the following header:
 ![Header](https://user-images.githubusercontent.com/5447411/41934216-bc9c080e-794b-11e8-9d7f-1f9d89d44dd9.png)
 
+## Standard Markdown 
+
+### This generates an H2 heading with an underline
+	
+	### This generates an H3 heading (blue).
+	
+	#### This generates an H4 heading. 
+	
+	**This is bold text.**
+	
+	_This is italic text or an image caption._ 
+	
+	This is a normal paragraph with a [link](http://www.link.com).
+	
+	> This is a block quote.
+
+### This generates an image:
+
+	![image alt text](images/image.png)
+
+### Lists
+
+	* This is a bulleted list
+	* List item 2 
+
+### Tables
+
+	| COL 1      | COL 2   |  COL 3     |
+	|------------|---------|------------|
+	| Row 1A     | Row 1B  | Row 1C     | 
+	| Row 2A     | Row 2B  | Row 2C     | 
+	| Row 3A     | Row 3B  | Row 3C     | 
+
+###  Code & syntax highlighting
+
+We support inline code and code blocks. 
+
+	Inline `code` has `back-ticks around` it.
+	
+	
+	```
+	Blocks of code are fenced by lines with three back-ticks 
+	
+	``` 
+
+Inline `code` has `back-ticks around` it.
+
+	
+```
+Blocks of code are fenced by lines with three back-ticks 
+	
+``` 
+
 ## Custom Components
 
 These custom components can be used inside any markdown file. 
