@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Pagination</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Pagination" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-9" transform="translate(9.000000, 62.000000)">
+            <rect id="Rectangle" fill="#FFFFFF" x="0" y="0.98352342" width="239" height="39.0164766"></rect>
+            <path d="M1,1.98352342 L1,39.9835234 L239,39.9835234 L239,1.98352342 L1,1.98352342 Z M0,0.98352342 L240,0.98352342 L240,40.9835234 L0,40.9835234 L0,0.98352342 Z" id="Background" fill="#DFE3E6" fill-rule="nonzero"></path>
+            <g id="Page-#-Field" transform="translate(195.000000, 8.983523)" fill="#3D70B2" fill-opacity="0.1">
+                <rect id="Rectangle-315-Copy-23" x="0" y="0" width="24" height="24"></rect>
+            </g>
+            <g id="Drop-Down-Items" transform="translate(8.000000, 8.983523)" fill="#3D70B2">
+                <rect id="Rectangle-315-Copy-21" fill-opacity="0.1" x="0" y="0" width="48.6259766" height="24"></rect>
+                <polygon id="Shape-Copy-37" transform="translate(37.625977, 12.935118) scale(1, -1) translate(-37.625977, -12.935118) " points="33.6259766 14.870237 37.6259766 11 41.6259766 14.870237"></polygon>
+            </g>
+            <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="66.614321" y="17.9835234" width="61.111265" height="6"></rect>
+        </g>
+        <polygon id="chevron" fill="#5A6872" fill-rule="nonzero" transform="translate(238.333333, 83.000000) rotate(90.000000) translate(-238.333333, -83.000000) " points="238.330656 81.6331484 234.817795 85.3331437 234.333333 84.8765298 238.330275 80.6666667 242.333333 84.8763401 241.849232 85.3333333"></polygon>
+        <polygon id="chevron-copy" fill="#5A6872" fill-rule="nonzero" transform="translate(193.333333, 83.000000) rotate(-90.000000) translate(-193.333333, -83.000000) " points="193.330656 81.6331484 189.817795 85.3331437 189.333333 84.8765298 193.330275 80.6666667 197.333333 84.8763401 196.849232 85.3333333"></polygon>
+    </g>
+</svg>

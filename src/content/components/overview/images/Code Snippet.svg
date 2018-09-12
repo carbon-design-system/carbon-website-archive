@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Code Snippet</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Code-Snippet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#FFFFFF" x="29" y="28.6730308" width="200" height="107.653938"></rect>
+        <path d="M29,28.6730308 L29,136.326969 L229,136.326969 L229,28.6730308 L29,28.6730308 Z M28,27.6730308 L230,27.6730308 L230,137.326969 L28,137.326969 L28,27.6730308 Z" id="Rectangle" fill="#DFE3E6" fill-rule="nonzero"></path>
+        <g id="copy" transform="translate(206.333333, 38.673031)" fill="#3D70B2">
+            <path d="M9.14814815,2.66666667 L9.14814815,0 L0,0 L0,13.3333333 L2.81481481,13.3333333 L2.81481481,16 L12.6666667,16 L12.6666667,2.66666667 L9.14814815,2.66666667 L9.14814815,2.66666667 Z M2.83971159,12 L1.4198558,12 L1.4198558,1.33333333 L7.80920688,1.33333333 L7.80920688,2.66666667 L2.83971159,2.66666667 L2.83971159,12 L2.83971159,12 Z M11.3588464,14.6666667 L4.25956739,14.6666667 L4.25956739,4 L11.3588464,4 L11.3588464,14.6666667 L11.3588464,14.6666667 Z" id="Shape"></path>
+            <rect id="Rectangle-path" x="5.69452892" y="5.33333333" width="4.25956739" height="1.35521743"></rect>
+            <rect id="Rectangle-path" x="5.69452892" y="7.33333333" width="4.25956739" height="1.35521743"></rect>
+            <rect id="Rectangle-path" x="5.69452892" y="9.33333333" width="2.66666667" height="1.35521743"></rect>
+        </g>
+        <rect id="Rectangle" fill-opacity="0.4" fill="#8C9BA5" x="39" y="44.6730308" width="90" height="4"></rect>
+        <rect id="Rectangle" fill-opacity="0.4" fill="#8C9BA5" x="39" y="56.6253853" width="119.734863" height="4"></rect>
+        <rect id="Rectangle" fill-opacity="0.4" fill="#8C9BA5" x="39" y="68.5777397" width="119.734863" height="4"></rect>
+        <rect id="Rectangle" fill-opacity="0.4" fill="#8C9BA5" x="39" y="80.5300942" width="136.669434" height="4"></rect>
+        <rect id="Rectangle" fill-opacity="0.4" fill="#8C9BA5" x="39" y="92.4824486" width="103.873047" height="4"></rect>
+        <rect id="Rectangle" fill-opacity="0.4" fill="#8C9BA5" x="39" y="116.387158" width="73.2880859" height="4"></rect>
+        <rect id="Rectangle" fill-opacity="0.4" fill="#8C9BA5" x="39" y="104.434803" width="103.873047" height="4"></rect>
+    </g>
+</svg>

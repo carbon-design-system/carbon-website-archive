@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Data Table</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Data-Table" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-6" transform="translate(19.000000, 20.000000)">
+            <g id="Structure" transform="translate(0.828125, 0.609375)">
+                <rect id="Background" stroke="#DFE3E6" fill="#FFFFFF" x="-0.362389326" y="-0.350585938" width="216.829278" height="124.172929"></rect>
+                <rect id="Zebra-Stripe" fill="#F0F3F6" x="0.137610674" y="24.8751947" width="215.829278" height="19.6894297"></rect>
+                <rect id="Zebra-Stripe" fill="#F0F3F6" x="0.137610674" y="64.2540542" width="215.829278" height="19.6894297"></rect>
+                <rect id="Zebra-Stripe" fill="#F0F3F6" x="0.137610674" y="103.632914" width="215.829278" height="19.6894297"></rect>
+                <path d="M0.249092739,24.4814061 L216.078371,24.4814061" id="Line-Copy-96" stroke="#3D70B2" stroke-linecap="square"></path>
+            </g>
+            <polygon id="Sort" fill="#5A6872" points="86.8626302 14.8515625 90.3626302 11.3515625 93.8626302 14.8515625"></polygon>
+            <rect id="Rectangle" fill="#DFE3E6" x="12.6757812" y="9.1015625" width="70" height="8"></rect>
+            <rect id="Rectangle" fill="#DFE3E6" x="151.175781" y="9.1015625" width="43.3538411" height="8"></rect>
+            <rect id="Rectangle" fill="#DFE3E6" x="12.6757812" y="34.109375" width="86.7076823" height="4"></rect>
+            <rect id="Rectangle" fill="#DFE3E6" x="151.175781" y="34.109375" width="26.796875" height="4"></rect>
+            <rect id="Rectangle" fill="#DFE3E6" x="12.6757812" y="73.0996094" width="64" height="4"></rect>
+            <rect id="Rectangle" fill="#DFE3E6" x="151.175781" y="73.0996094" width="26.796875" height="4"></rect>
+            <rect id="Rectangle" fill="#DFE3E6" x="12.6757812" y="53.609375" width="77.686849" height="4"></rect>
+            <rect id="Rectangle" fill="#DFE3E6" x="151.175781" y="53.609375" width="26.796875" height="4"></rect>
+            <rect id="Rectangle" fill="#DFE3E6" x="12.6757812" y="92.1171875" width="86.7076823" height="4"></rect>
+            <rect id="Rectangle" fill="#DFE3E6" x="151.175781" y="92.1171875" width="26.796875" height="4"></rect>
+            <rect id="Rectangle" fill="#DFE3E6" x="12.6757812" y="111.134766" width="72.1523438" height="4"></rect>
+            <rect id="Rectangle" fill="#DFE3E6" x="151.175781" y="111.134766" width="24.9301758" height="4"></rect>
+        </g>
+    </g>
+</svg>

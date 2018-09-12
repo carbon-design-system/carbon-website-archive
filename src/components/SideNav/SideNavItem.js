@@ -26,13 +26,12 @@ export default class SideNavItem extends React.Component {
       });
       return (
         <li className={subNavClasses} key={item}>
-          <Link to={`/${this.props.itemSlug}/${item}`}>{subItems[item].title}</Link>
+          <Link activeClassName="side-nav__sub-nav-item--active" to={`/${this.props.itemSlug}/${item}`}>{subItems[item].title}</Link>
         </li>
       );
     });
 
   render() {
-   
     const {item, itemSlug } = this.props;
     const hasSubNav = !(item['sub-nav'] === undefined);
     const navItemClasses = classnames('side-nav__nav-item', {

@@ -1,8 +1,19 @@
 import React from 'react';
 import ReactGA from 'react-ga';
 import { Link } from "gatsby";
-import Layout from "../layouts";
+import Layout from "../components/layouts";
 import { ClickableTile } from 'carbon-components-react';
+
+import sketchIcon from '../content/homepage/images/sketch-icon.svg';
+import githubIcon from '../content/homepage/images/github-icon.svg';
+import codepenIcon from '../content/homepage/images/codepen-icon.svg';
+import sandboxIcon from '../content/homepage/images/sandbox-icon.svg';
+import componentsIll from '../content/homepage/images/components.png';
+import gettingStartedIll from '../content/homepage/images/getting-started.png';
+import resourcesIll from '../content/homepage/images/resources.png';
+import styleIll from '../content/homepage/images/style.png';
+import scatter from '../content/homepage/images/scatter.svg';
+import shapes from '../content/homepage/images/shapes.png';
 
 class IndexPage extends React.Component {
 
@@ -28,19 +39,8 @@ class IndexPage extends React.Component {
   };
 
   render() {
-    const sketchIcon = require('../content/homepage/images/sketch-icon.svg');
-    const githubIcon = require('../content/homepage/images/github-icon.svg');
-    const codepenIcon = require('../content/homepage/images/codepen-icon.svg');
-    const sandboxIcon = require('../content/homepage/images/sandbox-icon.svg');
-    const componentsIll = require('../content/homepage/images/components.png');
-    const gettingStartedIll = require('../content/homepage/images/getting-started.png');
-    const resourcesIll = require('../content/homepage/images/resources.png');
-    const styleIll = require('../content/homepage/images/style.png');
-    const scatter = require('../content/homepage/images/scatter.svg');
-    const shapes = require('../content/homepage/images/shapes.png');
-    
     return (
-      <Layout location={this.props.location}>
+      <Layout>
         <main id="maincontent" role="main" className="overview-page" tabIndex="-1">
           <section className="overview-page__banner" aria-label="overview page banner">
             <img className="banner__shapes" src={shapes} alt="" />

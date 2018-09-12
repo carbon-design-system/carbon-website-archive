@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Accordion</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Accordion" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Path" fill="#DFE3E6" fill-rule="nonzero" points="38.0765769 133.448027 219.609761 133.448027 219.609761 132.448027 38.0765769 132.448027"></polygon>
+        <polygon id="Path" fill="#DFE3E6" fill-rule="nonzero" points="38.0765769 108.448027 219.609761 108.448027 219.609761 107.448027 38.0765769 107.448027"></polygon>
+        <polygon id="Path" fill="#DFE3E6" fill-rule="nonzero" points="38 83 219.533185 83 219.533185 82 38 82"></polygon>
+        <path d="M38.0765769,32 L219.609761,32" id="Path" stroke="#DFE3E6"></path>
+        <rect id="Rectangle" fill="#DFE3E6" x="52" y="91" width="43" height="8"></rect>
+        <rect id="Rectangle" fill="#DFE3E6" x="52" y="40" width="43" height="8"></rect>
+        <rect id="Rectangle" fill="#DFE3E6" x="52" y="54" width="160" height="6"></rect>
+        <rect id="Rectangle" fill="#DFE3E6" x="52" y="66" width="160" height="6"></rect>
+        <rect id="Rectangle" fill="#DFE3E6" x="51.5" y="116.277414" width="43" height="8"></rect>
+        <polygon id="chevron" fill="#5A6872" fill-rule="nonzero" transform="translate(42.998097, 44.333333) rotate(180.000000) translate(-42.998097, -44.333333) " points="42.9954192 42.9664818 39.4825581 46.666477 38.9980966 46.2098631 42.9950379 42 46.9980966 46.2096735 46.5139954 46.6666667"></polygon>
+        <polygon id="chevron" fill="#5A6872" fill-rule="nonzero" transform="translate(40.500000, 94.835237) rotate(90.000000) translate(-40.500000, -94.835237) " points="40.4973226 93.4683852 36.9844615 97.1683805 36.5 96.7117665 40.4969414 92.5019034 44.5 96.7115769 44.0158988 97.1685701"></polygon>
+        <polygon id="chevron" fill="#5A6872" fill-rule="nonzero" transform="translate(40.500000, 119.835237) rotate(90.000000) translate(-40.500000, -119.835237) " points="40.4973226 118.468385 36.9844615 122.16838 36.5 121.711767 40.4969414 117.501903 44.5 121.711577 44.0158988 122.16857"></polygon>
+    </g>
+</svg>

@@ -8,7 +8,7 @@ export default class PageTabs extends React.Component {
     slug: PropTypes.string,
     currentTab: PropTypes.string,
   };
-
+ 
   render() {
     const { tabs, slug, currentTab } = this.props;
     let linkSlug = slug.substring(0, slug.indexOf(currentTab));

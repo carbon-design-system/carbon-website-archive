@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Tag</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Tag" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-430" fill="#C9EF94" x="40.9941406" y="57.75" width="84" height="20" rx="10"></rect>
+        <rect id="Rectangle-7" fill-opacity="0.5" fill="#2F6514" x="53.5" y="64.75" width="60" height="6"></rect>
+        <rect id="Rectangle-430" fill="#C1E6FE" x="96.9941406" y="87.25" width="45" height="20" rx="10"></rect>
+        <rect id="Rectangle-7" fill-opacity="0.5" fill="#345D7F" x="109.771973" y="94.25" width="19.3237305" height="6"></rect>
+        <rect id="Rectangle-430" fill="#FED695" x="128.994141" y="57.75" width="89" height="20" rx="10"></rect>
+        <rect id="Rectangle-7" fill-opacity="0.5" fill="#A3382A" x="139.716797" y="64.75" width="67.109375" height="6"></rect>
+        <rect id="Rectangle-430" fill="#EED3FE" x="40.9941406" y="87.25" width="52" height="20" rx="10"></rect>
+        <rect id="Rectangle-7" fill-opacity="0.5" fill="#724396" x="52.7983398" y="94.25" width="27.1652832" height="6"></rect>
+        <path d="M145.994141,97.25 L145.994141,97.25 C145.994141,91.7271525 150.466761,87.25 155.998086,87.25 L183.990195,87.25 C189.515222,87.25 193.994141,91.7259382 193.994141,97.25 L193.994141,97.25 C193.994141,102.772847 189.521521,107.25 183.990195,107.25 L155.998086,107.25 C150.47306,107.25 145.994141,102.776475 145.994141,97.25 L145.994141,97.25 Z" id="Rectangle-430" fill="#DFE6EB"></path>
+        <rect id="Rectangle-7" fill-opacity="0.5" fill="#394B54" x="158.456055" y="94.25" width="23.8183594" height="6"></rect>
+    </g>
+</svg>

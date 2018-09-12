@@ -1,0 +1,69 @@
+.container--expanded .fourohfour-container {
+  @include breakpoint('1020px') {
+    padding-left: 0px;
+  }
+}
+
+.fourohfour-container {
+  position: absolute;
+  background-color: #f9f9fd;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+
+  .fourohfour-large {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: rem(-217px);
+    width: 80%;
+
+    img {
+      max-width: rem(500px);
+      width: 100%;
+    }
+
+    @include breakpoint('768px') {
+      margin-top: rem(-112px);
+    }
+  }
+
+  .fourohfour-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    .fourohfour-title {
+      text-align: center;
+      font-weight: 300;
+      font-size: rem(20px);
+      margin-bottom: 1rem;
+      color: $text-01;
+
+      @include breakpoint('768px') {
+        font-size: rem(28px);
+      }
+    }
+
+    .fourohfour-sub {
+      font-weight: 400;
+      font-size: rem(14px);
+      color: $text-02;
+      text-align: center;
+    }
+
+    a {
+      font-weight: 400;
+      color: #3869f4;
+      font-size: rem(14px);
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Overflow Menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M80.104113,26.539028 L84.3621813,22.2809597 L88.6202496,26.539028 L107.337891,26.539028 L107.337891,134.177734 L2,134.177734 L2,26.539028 L80.104113,26.539028 Z" id="path-1"></path>
+        <filter x="-6.6%" y="-4.5%" width="113.3%" height="112.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Overflow-Menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(74.500000, 14.500000)">
+            <g id="Group" transform="translate(0.000000, 0.445312)">
+                <g id="Rectangle-222">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M3,27.539028 L3,133.177734 L106.337891,133.177734 L106.337891,27.539028 L88.206036,27.539028 L84.3621813,23.6951733 L80.5183266,27.539028 L3,27.539028 Z M84.3621813,22.2809597 L88.6202496,26.539028 L107.337891,26.539028 L107.337891,134.177734 L2,134.177734 L2,26.539028 L80.104113,26.539028 L84.3621813,22.2809597 Z" id="Rectangle-222" fill="#DDE2E6" fill-rule="nonzero"></path>
+                <polygon id="Line" fill="#DDE2E6" fill-rule="nonzero" points="1.47240521 103.597375 106.472405 103.597375 106.972405 103.597375 106.972405 102.597375 0.972405211 102.597375 0.972405211 103.597375"></polygon>
+                <g id="overflow-menu-icon---20px" transform="translate(84.453722, 7.280960) rotate(-270.000000) translate(-84.453722, -7.280960) translate(77.453722, 5.725404)" fill="#8C9BA5">
+                    <path d="M1.55555556,3.11111111 C2.41466517,3.11111111 3.11111111,2.41466517 3.11111111,1.55555556 C3.11111111,0.696445945 2.41466517,0 1.55555556,0 C0.696445945,0 0,0.696445945 0,1.55555556 C0,2.41466517 0.696445945,3.11111111 1.55555556,3.11111111 Z" id="Oval"></path>
+                    <circle id="Oval" cx="7" cy="1.55555556" r="1.55555556"></circle>
+                    <circle id="Oval" cx="12.4444444" cy="1.55555556" r="1.55555556"></circle>
+                </g>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="16.3920898" y="41.7876089" width="57.0927734" height="4"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="16.3920898" y="56.7876089" width="70.6171875" height="4"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="16.3920898" y="71.7876089" width="65.3598633" height="4"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="16.3920898" y="86.0471474" width="47.3600006" height="4"></rect>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="16.3920898" y="117.177734" width="55.3699989" height="4"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

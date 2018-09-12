@@ -3,12 +3,12 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import classnames from 'classnames';
-import SideNav from '../components/SideNav';
-import SideNavToggleBtn from '../components/SideNavToggleBtn';
-import Footer from '../components/Footer';
-import favicon32 from '../content/global/images/favicon-32.png';
+import SideNav from '../SideNav';
+import SideNavToggleBtn from '../SideNavToggleBtn';
+import Footer from '../Footer';
+import favicon32 from '../../content/global/images/favicon-32.png';
 
-import '../styles/index.scss';
+import '../../styles/index.scss';
 
 class Layout extends React.Component {
   static propTypes = {

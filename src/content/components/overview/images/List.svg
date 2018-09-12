@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>List</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="List" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(34.500000, 32.000000)">
+            <rect id="Rectangle" fill="#D8D8D8" x="19.8161246" y="28.9454462" width="3.04897502" height="2"></rect>
+            <rect id="Rectangle" fill="#D8D8D8" x="19.8161246" y="52.9454462" width="3.04897502" height="2"></rect>
+            <circle id="Oval" fill="#DEE1E5" cx="3.96028646" cy="3" r="3"></circle>
+            <circle id="Oval" fill="#DEE1E5" cx="3.96028646" cy="74.0147821" r="3"></circle>
+            <circle id="Oval" fill="#DEE1E5" cx="3.96028646" cy="100.014782" r="3"></circle>
+            <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="19.8161246" y="0.0147821187" width="146.649571" height="6"></rect>
+            <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="19.8161246" y="71.0147821" width="146.649571" height="6"></rect>
+            <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="19.8161246" y="97.0147821" width="146.649571" height="6"></rect>
+            <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="42.1629292" y="25.9454462" width="146.649571" height="6"></rect>
+            <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="42.1629292" y="49.9454462" width="146.649571" height="6"></rect>
+        </g>
+    </g>
+</svg>

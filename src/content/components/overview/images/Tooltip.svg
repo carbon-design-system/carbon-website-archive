@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Tooltip</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M82.0289307,7.07106781 L89.0999985,5.63993297e-14 L96.1710663,7.07106781 L178.199997,7.07106781 L178.199997,79.09375 L2.45847787e-12,79.09375 L2.45847787e-12,7.07106781 L82.0289307,7.07106781 Z" id="path-1"></path>
+        <filter x="-3.4%" y="-3.8%" width="106.7%" height="115.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Tooltip" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tool-Tip---Small-(vertical)" transform="translate(39.000000, 29.500000)">
+            <g id="Group-2" transform="translate(0.126953, 26.000000)">
+                <g id="Combined-Shape-Copy-5">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <path stroke="#DFE3E6" stroke-width="1" d="M0.5,7.57106781 L0.5,78.59375 L177.699997,78.59375 L177.699997,7.57106781 L95.9639595,7.57106781 L89.0999985,0.707106781 L82.2360374,7.57106781 L0.5,7.57106781 Z" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd"></path>
+                </g>
+            </g>
+            <path d="M90.1269531,1.77635684e-15 C94.5449531,1.77635684e-15 98.1269531,3.582 98.1269531,8 C98.1269531,12.418 94.5449531,16 90.1269531,16 C85.7089531,16 82.1269531,12.418 82.1269531,8 C82.1269531,3.582 85.7089531,1.77635684e-15 90.1269531,1.77635684e-15 Z M90.1269531,5.71428571 C90.7581357,5.71428571 91.2698103,5.20261114 91.2698103,4.57142857 C91.2698103,3.940246 90.7581357,3.42857143 90.1269531,3.42857143 C89.4957706,3.42857143 88.984096,3.940246 88.984096,4.57142857 C88.984096,5.20261114 89.4957706,5.71428571 90.1269531,5.71428571 Z M91.2698103,6.85714286 L87.8412388,6.85714286 L87.8412388,8 L88.984096,8 L88.984096,11.4285714 L87.8412388,11.4285714 L87.8412388,12.5714286 L92.4126674,12.5714286 L92.4126674,11.4285714 L91.2698103,11.4285714 L91.2698103,6.85714286 Z" id="Shape-Copy-8" fill="#3D70B2"></path>
+        </g>
+        <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="67" y="87.6054688" width="123" height="6"></rect>
+        <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="67" y="102.605469" width="123" height="6"></rect>
+        <rect id="Rectangle-6" fill="#DEE1E5" x="41" y="33.0234375" width="69" height="8"></rect>
+    </g>
+</svg>

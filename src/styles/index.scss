@@ -16,12 +16,12 @@ $brand-01: $dark-blue;
 
 @import 'page.scss';
 @import 'home.scss';
-@import '../pages/404/404.scss';
 
 
 //---------------------------------------
 // Components
 //---------------------------------------
+@import '../components/404/404.scss';
 @import '../components/markdown/markdown.scss';
 @import '../components/PageHeader/page-header.scss';
 @import '../components/PageTabs/page-tabs.scss';
@@ -51,6 +51,7 @@ $brand-01: $dark-blue;
 @import '../components/ComponentDocs/component-docs.scss';
 @import '../components/ComponentStatus/component-status.scss';
 @import '../components/ComponentReact/component-react.scss';
+@import '../components/ComponentOverview/component-overview.scss';
 
 //---------------------------------------
 // Syntax

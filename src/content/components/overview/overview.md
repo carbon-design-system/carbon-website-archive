@@ -3,4 +3,4 @@ label: Components
 title: Overview
 ---
 
-<page-intro>test</page-intro>
+<component-overview></component-overview>

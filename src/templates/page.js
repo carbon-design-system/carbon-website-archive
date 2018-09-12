@@ -1,8 +1,7 @@
 import React from 'react';
 import rehypeReact from 'rehype-react';
-import Layout from "../layouts";
-
-import NotFoundPage from '../pages/404/404';
+import Layout from "../components/layouts";
+import FourOhFour from "../components/404";
 
 // Components
 import PageHeader from '../components/PageHeader';
@@ -24,6 +23,7 @@ import Glossary from '../components/Glossary';
 import MotionExample from '../components/MotionExample';
 import LayerTypes from '../components/LayerTypes';
 import LayerUsage from '../components/LayerUsage';
+import ComponentOverview from '../components/ComponentOverview';
 
 // Custom Markdown
 import { h2, h3, h4, ul, ol, PageIntro, PageIcon, FlexGroup, ColorBlock } from '../components/markdown/Markdown';
@@ -56,7 +56,8 @@ const renderAst = new rehypeReact({
     'glossary': Glossary,
     'motion-example': MotionExample,
     'layer-types': LayerTypes,
-    'layer-usage': LayerUsage
+    'layer-usage': LayerUsage,
+    'component-overview': ComponentOverview
   },
 }).Compiler;
 
@@ -73,12 +74,12 @@ export default ({ data }) => {
   if (isInternal) {
     return ( 
       <Layout>   
-        <NotFoundPage />
+        <FourOhFour />
       </Layout>
     )
   } else {
     return ( 
-      <Layout>    
+      <Layout>
         <PageHeader title={post.frontmatter.title} label={post.frontmatter.label} />
         {!(tabs === null) && <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />}
         <div className="page-content"> {renderAst(post.htmlAst)}</div>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Notification</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Notification" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(26.000000, 62.000000)">
+            <g id="Inline-Informational-Notification---one-line" transform="translate(0.500000, 0.500000)">
+                <rect id="Rectangle-157-Copy-13" stroke="#5596E6" x="-0.5" y="-0.5" width="206" height="41"></rect>
+                <rect id="Rectangle-157-Copy-14" fill="#5596E6" x="0" y="0" width="5" height="40"></rect>
+                <g id="UI-Icon/close/$ui-05" transform="translate(183.500000, 15.500000)" fill="#5A6872" fill-rule="nonzero">
+                    <path d="M5.70660463,5 L10,9.29339537 L9.29339537,10 L5,5.70660463 L0.706604633,10 L0,9.29339537 L4.29339537,5 L9.53673407e-08,0.706604728 L0.706604728,9.53674544e-08 L5,4.29339537 L9.29339537,0 L10,0.706604633 L5.70660463,5 Z" id="x"></path>
+                </g>
+                <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="45.0332031" y="16.5" width="125" height="6"></rect>
+                <path d="M29.5,20.0066968 L29.5045005,20.0066968 L29.5045005,19.0066968 L27.5045005,19.0066968 L27.5045005,20.0066968 L28.5,20.0066968 L28.5,23.9982246 L26.5,23.9982246 L26.5,24.9982246 L28.5,24.9982246 L28.5,25 L29.5,25 L29.5,24.9982246 L31.5,24.9982246 L31.5,23.9982246 L29.5,23.9982246 L29.5,20.0066968 Z M29,29 C24.581722,29 21,25.418278 21,21 C21,16.581722 24.581722,13 29,13 C33.418278,13 37,16.581722 37,21 C37,25.418278 33.418278,29 29,29 Z M29,17.75 C29.4142136,17.75 29.75,17.4142136 29.75,17 C29.75,16.5857864 29.4142136,16.25 29,16.25 C28.5857864,16.25 28.25,16.5857864 28.25,17 C28.25,17.4142136 28.5857864,17.75 29,17.75 Z" id="info" fill="#5596E6"></path>
+            </g>
+        </g>
+    </g>
+</svg>
