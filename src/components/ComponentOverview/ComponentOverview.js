@@ -35,16 +35,13 @@ class ComponentOverview extends React.Component {
 
   render() {   
     const componentList = require('../../data/components.json'); // eslint-disable-line
-    const content = (
-      <ul className="flex-container">
-        {Object.keys(componentList.items).map(item => {
-          return this.renderItems(componentList.items[item]);
-        })}      
-      </ul>
-    );
     return (
       <div>
-        {content}
+        <ul className="flex-container">
+          {Object.keys(componentList.items).map(item => {
+            return this.renderItems(componentList.items[item]);
+          })}      
+        </ul>
       </div>
     );
   }
