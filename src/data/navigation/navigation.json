@@ -1,4 +1,12 @@
 {
+  "about-carbon": {
+    "title": "About Carbon",
+    "sub-nav": {
+      "whats-new": {
+        "title": "What's New"
+      }
+    }
+  },
   "getting-started": {
     "title": "Getting Started",
     "sub-nav": {
@@ -13,14 +21,11 @@
       },
       "add-ons": {
         "title": "Add-Ons"
-      },
-      "contributing": {
-        "title": "Contributing"
       }
     }
   },
-  "whats-new": {
-    "title": "What's New"
+  "contributing": {
+    "title": "Contributing"
   },
   "guidelines": {
     "title": "Guidelines",
@@ -30,30 +35,7 @@
       },
       "content": {
         "title": "Content"
-      }
-    }
-  },
-  "your-product-on-ibm-cloud": {
-    "title": "Your Product on IBM Cloud",
-    "internal": true,
-    "sub-nav": {
-      "catalog-entry": {
-        "title": "Catalog Entry"
       },
-      "user-flow": {
-        "title": "User Flow"
-      },
-      "service-providers": {
-        "title": "Service Providers"
-      },
-      "principles": {
-        "title": "Principles"
-      }
-    }
-  },
-  "style": {
-    "title": "Style",
-    "sub-nav": {
       "color": {
         "title": "Color"
       },
@@ -77,6 +59,24 @@
       },
       "typography": {
         "title": "Typography"
+      }
+    }
+  },
+  "your-product-on-ibm-cloud": {
+    "title": "Your Product on IBM Cloud",
+    "internal": true,
+    "sub-nav": {
+      "catalog-entry": {
+        "title": "Catalog Entry"
+      },
+      "user-flow": {
+        "title": "User Flow"
+      },
+      "service-providers": {
+        "title": "Service Providers"
+      },
+      "principles": {
+        "title": "Principles"
       }
     }
   },

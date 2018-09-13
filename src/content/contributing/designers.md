@@ -1,5 +1,5 @@
 ---
-label: Getting Started
+label: Contributing
 title: Contributing
 tabs: ['Designers', 'Developers']
 ---
