@@ -161,8 +161,7 @@ class ComponentExample extends Component {
 
     const componentLink = `https://codepen.io/team/carbon/full/${codepenSlug}/`;
     const counter = Math.floor(Math.random() * 100) + 1;
-    
-  console.log(codepenSlug);
+
     return (
       <div className={lightUIclassnames}>
         <div className={liveBackgroundClasses}>
