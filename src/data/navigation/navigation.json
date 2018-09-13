@@ -192,6 +192,9 @@
       },
       "layout": {
         "title": "Layout"
+      },
+       "checkbox": {
+        "title": "Checkbox"
       }
     }
   },

@@ -14,6 +14,7 @@ export default class ComponentCode extends React.Component {
     hasreactversion: PropTypes.string,
     hasangularversion: PropTypes.string,
     haslightbackground: PropTypes.string,
+    experimental: PropTypes.string,
   };
 
   render() {
@@ -26,6 +27,7 @@ export default class ComponentCode extends React.Component {
       hasreactversion,
       hasangularversion,
       variation,
+      experimental,
     } = this.props;
 
     let htmlFile;
@@ -44,6 +46,7 @@ export default class ComponentCode extends React.Component {
           hasReactVersion={hasreactversion}
           hasAngularVersion={hasangularversion}
           hasLightBackground={haslightbackground}
+          experimental={experimental}
        />
       </div>   
       
