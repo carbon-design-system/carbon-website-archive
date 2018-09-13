@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import { Button, Icon } from 'carbon-components-react';
 
 import SideNavItem from './SideNavItem';
+import GlobalSearch from '../GlobalSearch';
 import navigation from '../../data/navigation/navigation.json';
 
 export default class SideNav extends React.Component {
@@ -34,7 +35,7 @@ export default class SideNav extends React.Component {
         <Link to="/" className="side-nav__logo">
           <span>Carbon</span> Design System
         </Link>
-     
+        <GlobalSearch />
         <ul className="side-nav__nav-items">{navItems}</ul>
         <div className="side-nav__links">
           <Button
