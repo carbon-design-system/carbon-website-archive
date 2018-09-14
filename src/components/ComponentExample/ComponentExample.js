@@ -4,7 +4,6 @@ import classnames from 'classnames';
 import CodeExample from '../CodeExample/CodeExample';
 import * as components from 'carbon-components/es/globals/js/components';
 import { RadioButtonGroup, RadioButton } from 'carbon-components-react';
-import '../../polyfills';
 
 const componentNamesMap = {
   Card: ['OverflowMenu'],

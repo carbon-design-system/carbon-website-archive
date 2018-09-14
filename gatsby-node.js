@@ -84,12 +84,25 @@ exports.createPages = ({ actions, graphql }) => {
   });
 };
 
-exports.onCreateWebpackConfig = ({
-  actions,
-}) => {
-  actions.setWebpackConfig({
+exports.onCreateWebpackConfig = ({ actions, getConfig }) => {
+  const config = getConfig();
+  const { module } = config;
+  const { rules } = module;
+  actions.replaceWebpackConfig({
+    ...config,
     module: {
+      ...module,
       rules: [
+        ...rules.map(item => {
+          const { use } = item;
+          if (!use || use.every(({ loader }) => !/babel-loader\.js$/i.test(loader))) {
+            return item;
+          }
+          return {
+            ...item,
+            exclude: /(node_modules|bower-components)[\/\\](?!(ansi-regex)[\/\\]).*/,
+          };
+        }),
         {
           test: /\.md$/,
           loaders: ['html-loader', 'markdown-loader'],
@@ -103,5 +116,5 @@ exports.onCreateWebpackConfig = ({
         },
       ],
     },
-  })
-}
+  });
+};

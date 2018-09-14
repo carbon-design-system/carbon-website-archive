@@ -1,3 +1,4 @@
+import '../polyfills';
 import React from 'react';
 import rehypeReact from 'rehype-react';
 import Layout from "../components/layouts";
