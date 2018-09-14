@@ -187,11 +187,11 @@
       "about": {
         "title": "About"
       },
-      "shell": {
-        "title": "Shell"
-      },
       "layout": {
         "title": "Layout"
+      },
+      "shell": {
+        "title": "Shell"
       },
        "checkbox": {
         "title": "Checkbox"
