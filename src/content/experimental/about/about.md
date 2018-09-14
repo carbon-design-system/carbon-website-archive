@@ -11,7 +11,7 @@ The Carbon team is continually updating components, and introducting new design 
 
 We want to provide early-access to our changes, so that designers and developers can test, work with, and provide feedback. These resources are provided in the "Experimental" section of the site.
 
-## What are "Experimental" resources
+## What are "Experimental" resources?
 
 Experimental components, designs, patterns, and other resources are work that is not fully tested. But they are in a state where it can be productive for designers and developers to work with them.
 
