@@ -9,6 +9,7 @@ class ComponentStatus extends React.Component {
     let vanilla;
     let react;
     let angular;
+    let experimental;
     if (currentItem.status === 0) {
       status = readyIcon;
     } else if (currentItem.status === 1) {
@@ -53,16 +54,27 @@ class ComponentStatus extends React.Component {
     } else {
       angular = notApplicableIcon;
     }
+
+    if (currentItem.experimental === 0) {
+      experimental = readyIcon;
+    } else if (currentItem.experimental === 1) {
+      experimental = underReviewIcon;
+    } else if (currentItem.experimental === 2) {
+      experimental = deprecatedIcon;
+    } else {
+      experimental = notApplicableIcon;
+    }
     return (
       <tr key={currentItem.item}>
         <td>
           {currentItem.item} {tag}
         </td>
         <td>{currentItem.added}</td>
-        <td>{status}</td>
+        
         <td>{vanilla}</td>
         <td>{react}</td>
         <td>{angular}</td>
+        <td>{experimental}</td>
       </tr>
     );
   };
@@ -88,7 +100,7 @@ class ComponentStatus extends React.Component {
         <span>-</span>
       </div>
     );
-    const currentVersion = `Current version: ${Packages.dependencies['carbon-components']} (June 4th, 2018)`;
+    const currentVersion = `Current version: ${Packages.dependencies['carbon-components']}`;
     const componentStatus = require('../../data/components.json'); // eslint-disable-line
     const content = (
       <div className="page page_md component-status-page">
@@ -118,10 +130,10 @@ class ComponentStatus extends React.Component {
             <tr>
               <th>Component</th>
               <th>Added</th>
-              <th>Status</th>
               <th>Vanilla</th>
               <th>React</th>
               <th>Angular</th>
+              <th>Experimental</th>
             </tr>
           </thead>
           <tbody>
