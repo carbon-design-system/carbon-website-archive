@@ -3220,9 +3220,9 @@ carbon-components-react@6.18.3:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@^9.6.1:
-  version "9.11.0"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.11.0.tgz#b301bfdc6066ccd7db914ed8bd0f2da1ff9f4c9c"
+carbon-components@^9.12.0:
+  version "9.14.0"
+  resolved "https://registry.npmjs.org/carbon-components/-/carbon-components-9.14.0.tgz#8e6f1197f608509626ffeb570f0cf808478bda88"
   dependencies:
     "@carbon/colors" "^0.0.1-alpha.0"
     carbon-icons "^7.0.7"

@@ -1,0 +1,20 @@
+/*
+    Since we are pulling in both experimental and the default carbon styles 
+    some atrributes aren't overwritten between the two sets so we need to
+    provide overrides. 
+*/
+
+$feature-flags: (); // Dummy value so `global-variable-exists()` check in `@feature-flag-enabled` work
+
+.components-x.carbon-demo-override {
+  $imported-modules-local: ();
+  $feature-flags: (
+    components-x: true,
+  );
+  @import 'carbon-components/src/globals/scss/styles';
+}
+
+// Checkbox
+.components-x.carbon-demo-override .bx--checkbox-label {
+  align-items: initial;
+}
