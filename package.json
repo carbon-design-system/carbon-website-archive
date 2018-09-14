@@ -3,6 +3,7 @@
   "description": "Carbon Design System website",
   "version": "1.0.0",
   "dependencies": {
+    "@reach/router": "^1.1.1",
     "@storybook/addon-info": "^3.4.7",
     "carbon-components": "^9.6.1",
     "carbon-components-react": "6.18.3",
@@ -73,5 +74,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/carbon-design-system/carbon-website-gatsby/"
+  },
+  "eslintConfig": {
+    "globals": {
+      "__PATH_PREFIX__": true
+    }
   }
 }
