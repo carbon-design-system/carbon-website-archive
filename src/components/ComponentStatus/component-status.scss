@@ -1,6 +1,8 @@
 .component-status-page {
-  table tr th:first-child {
+  table tr th:first-child,
+  table tr th:nth-child(2) {
     text-align: left;
+    padding-left: 1rem;
   }
 
   table tr th {
