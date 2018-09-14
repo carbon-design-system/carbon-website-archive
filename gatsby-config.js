@@ -74,6 +74,18 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        includePaths: [
+          path.resolve(__dirname, 'node_modules')
+        ],
+        importer: (url, prev, done) => {
+          done({
+            file: !/import-once(\.scss)?$/.test(url) ? url : path.resolve(__dirname, 'src/styles/import-once'),
+          });
+        },
+      },
+    },
   ],
 };

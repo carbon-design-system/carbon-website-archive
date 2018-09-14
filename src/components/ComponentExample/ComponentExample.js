@@ -26,6 +26,7 @@ class ComponentExample extends Component {
     hasReactVersion: PropTypes.string,
     hasAngularVersion: PropTypes.string,
     hasLightBackground: PropTypes.string,
+    experimental: PropTypes.string,
   };
 
   static _initHandles = new WeakMap();
@@ -118,6 +119,7 @@ class ComponentExample extends Component {
       hasReactVersion,
       hasAngularVersion,
       hasLightBackground, 
+      experimental,
     } = this.props;
 
     const classNames = classnames({
@@ -153,6 +155,8 @@ class ComponentExample extends Component {
  
     const liveBackgroundClasses = classnames('component-example__live', {
       'component-example__live--light': (this.state.currentFieldColor === 'field-01') & (hasLightVersion === 'true') || (hasLightBackground === 'true'),
+      'components-x': experimental === 'true',
+      'carbon-demo-override': experimental === 'true',
     });
 
     const componentLink = `https://codepen.io/team/carbon/full/${codepenSlug}/`;
@@ -180,9 +184,11 @@ class ComponentExample extends Component {
                 Angular
               </a>
             )}
-            <a target="_blank" href={componentLink} rel="noopener noreferrer">
-              CodePen
-            </a>
+            {codepenSlug !== undefined && (
+              <a target="_blank" href={componentLink} rel="noopener noreferrer">
+                CodePen
+              </a>
+            )}
           </div>
           {hasLightVersion === "true" && (
             <div className="component-toolbar__switcher">

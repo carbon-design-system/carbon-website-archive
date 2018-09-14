@@ -1,8 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
-
 import { Link } from "gatsby";
-import { Button, Search, Icon } from 'carbon-components-react';
+import { Button, Icon } from 'carbon-components-react';
 
 import SideNavItem from './SideNavItem';
 import navigation from '../../data/navigation/navigation.json';
@@ -35,9 +34,6 @@ export default class SideNav extends React.Component {
         <Link to="/" className="side-nav__logo">
           <span>Carbon</span> Design System
         </Link>
-        <div className="side-nav__search">
-          <Search small id="side-nav-search" labelText="Search" placeHolderText="Search" onChange={() => {}} />
-        </div>
         <ul className="side-nav__nav-items">{navItems}</ul>
         <div className="side-nav__links">
           <Button

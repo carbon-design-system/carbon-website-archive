@@ -3,7 +3,17 @@
 //---------------------------------------
 // Carbon Components
 //---------------------------------------
-@import 'node_modules/carbon-components/scss/globals/scss/styles.scss';
+@import 'carbon-components/scss/globals/scss/styles.scss';
+
+.components-x.carbon-demo-override {
+  $imported-modules-local: ();
+  $feature-flags: (
+    components-x: true,
+  );
+  @import 'carbon-components/src/globals/scss/styles';
+}
+
+@import 'experimental-overrides';
 
 //---------------------------------------
 // Page styles
@@ -12,11 +22,10 @@ $bright-blue: #3c6df0;
 $dark-blue: #3057d5;
 $brand-01: $dark-blue;
 
-@import 'mixins.scss';
+@import 'mixins';
 
-@import 'page.scss';
-@import 'home.scss';
-
+@import 'page';
+@import 'home';
 
 //---------------------------------------
 // Components

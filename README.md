@@ -17,7 +17,7 @@ src
 ```
 
 ## 📚 Writing Content 
-[Content writing guide](CONTENT.MD)
+[Content writing guide](CONTENT.md)
 
 ## 👩‍💻 Development
 

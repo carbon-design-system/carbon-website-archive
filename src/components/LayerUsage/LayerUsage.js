@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class LayerUsage extends Component {
 
   render() {
-    const layerUsageImage = require('../../content/style/layer/images/layer-usage-604.png');
+    const layerUsageImage = require('../../content/guidelines/layer/images/layer-usage-604.png');
 
     return (
       <div className="layer-usage">

@@ -9,6 +9,7 @@
     "carbon-icons": "^7.0.7",
     "classnames": "^2.2.6",
     "dotenv": "^6.0.0",
+    "flatpickr": "^4.5.2",
     "fs": "0.0.1-security",
     "gatsby": "next",
     "gatsby-image": "next",
