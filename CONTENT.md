@@ -217,14 +217,15 @@ This will render the following set of examples
 ## Component Page Components: 
 ```
 <component 
-    name="Text Input"
-    component="text-input" 
-    variation="text-input"
-    codepen="YEZLyd"
-    haslightversion="true"
-    hasReactVersion="true"
-    hasAngularVersion="true"
-    hasLightBackground="true"
+    name="Text Input" //Required
+    component="text-input" //Required
+    variation="text-input" //Required
+    codepen="YEZLyd" //Optional - Adds link to codepen
+    haslightversion="true" //Optional -If true shows the light/white background switcher
+    hasReactVersion="true" //Optional -If true links to react storybook
+    hasAngularVersion="true" //Optional -If true links to angular storkbook
+    hasLightBackground="true" //Optional -If true has light background 
+    experimental="true" //Optional -If true loads experimental version/styles
     >
 </component>
 
