@@ -9,6 +9,6 @@ const missingNativeCustomEvent = (() => {
     return true;
   }
 })();
-if (missingNativeCustomEvent) {
+if (missingNativeCustomEvent && typeof window !== 'undefined') {
   window.CustomEvent = CustomEventPolyfill;
 }
