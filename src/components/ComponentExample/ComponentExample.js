@@ -155,7 +155,7 @@ class ComponentExample extends Component {
  
     const liveBackgroundClasses = classnames('component-example__live', {
       'component-example__live--light': (this.state.currentFieldColor === 'field-01') & (hasLightVersion === 'true') || (hasLightBackground === 'true'),
-      'component-x': experimental === 'true',
+      'components-x': experimental === 'true',
       'carbon-demo-override': experimental === 'true',
     });
 

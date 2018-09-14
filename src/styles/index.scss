@@ -3,7 +3,15 @@
 //---------------------------------------
 // Carbon Components
 //---------------------------------------
-@import 'node_modules/carbon-components/scss/globals/scss/styles.scss';
+@import 'carbon-components/scss/globals/scss/styles.scss';
+
+.components-x.carbon-demo-override {
+  $imported-modules-local: ();
+  $feature-flags: (
+    components-x: true,
+  );
+  @import 'carbon-components/src/globals/scss/styles';
+}
 
 //---------------------------------------
 // Page styles
