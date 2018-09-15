@@ -50,17 +50,17 @@ If you still have questions or can't find the answer you are looking for feel fr
 
 **General inquiries**
 
-Email: carbon@us.ibm.com </br>
-Twitter: <a href="https://twitter.com/_carbondesign" target="_blank">@\_carbondesign</a>
+<p>Email: carbon@us.ibm.com </br>
+Twitter: <a href="https://twitter.com/_carbondesign" target="_blank">@\_carbondesign</a></p>
 
 **Slack channels (IBM internal only)**
 
-For design questions: #carbon-design-system </br>
-For developer questions: #carbon-components, #carbon-react
+<p>For design questions: #carbon-design-system<br>
+For developer questions: #carbon-components, #carbon-react</p>
 
 **GitHub repos**
 
-Open an issue in one of our <a href="https://github.com/carbon-design-system">GitHub repos</a>. Please choose the appropriate repo for your request.
+<p>Open an issue in one of our <a href="https://github.com/carbon-design-system">GitHub repos</a>. Please choose the appropriate repo for your request.</p>
 
 ## Featured
 

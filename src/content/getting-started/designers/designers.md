@@ -9,7 +9,7 @@ title: Designers
 
 ### 1. Download the Kit
 
-Go to the <a href="https://github.com/carbon-design-system/carbon-design-kit" target=blank> Carbon Design Kit</a> repo and click on the latest version of the Design Kit. Click the “View Raw” link to begin downloading the kit.
+<p>Go to the <a href="https://github.com/carbon-design-system/carbon-design-kit" target=blank> Carbon Design Kit</a> repo and click on the latest version of the Design Kit. Click the “View Raw” link to begin downloading the kit.</p>
 
 ![Download the Carbon Design Kit](images/designers-2.png)
 

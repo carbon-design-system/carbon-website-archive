@@ -5,7 +5,7 @@ tabs: ['Library', 'Usage', 'Contribution']
 ---
 
 ## Adding icons
-If you would like to add an UI icon to our library, please submit a pull request in the Carbon Design Kit <a href="https://github.com/ibm/carbon-design-kit" target=blank>GitHub repo.</a>
+<p>If you would like to add an UI icon to our library, please submit a pull request in the Carbon Design Kit <a href="https://github.com/ibm/carbon-design-kit" target=blank>GitHub repo.</a></p>
 
 **If you're not comfortable with making a Pull Request, please submit an issue in the repo with the icon attached.**
 
@@ -77,8 +77,8 @@ We use the following naming convention for SVG filenames:
 
 It's the goal of this library to make sure icons can be modified with CSS to change it's __color__ (`fill`) and __size__ (`width`, `height`).  
 
-Run SVG XML code through <a href="https://jakearchibald.github.io/svgomg/" target=blank>SVGOMG</a>
-Inspect the code and make sure that your XML doesn't include the following:
+<p>Run SVG XML code through <a href="https://jakearchibald.github.io/svgomg/" target=blank>SVGOMG</a>
+Inspect the code and make sure that your XML doesn't include the following:</p>
 
 - `<style>` tags
 - `<g>` tags
@@ -93,6 +93,7 @@ Inspect the code and make sure that your XML doesn't include the following:
 3. Add new SVG file(s) to <a href="https://github.com/ibm/carbon-icons/tree/master/svg" target=blank>svg</a> folder. SVG subfolders are deprecated as of version `3.0.0`.
 4. Submit a pull request
 5. Do not commit built files (files created from `npm run build` script).
+
 
 ### Testing SVGs
 

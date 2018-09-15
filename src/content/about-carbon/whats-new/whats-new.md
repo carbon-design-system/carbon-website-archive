@@ -129,8 +129,8 @@ _Sketch Palettes plugin_
 
 There's also a variety of other [plugins](https://github.com/ibm/carbon-design-kit/wiki/Suggested-Sketch-Plugins) we recommend to help improve your workflow using Sketch.
 
-Download the latest Kit today!
-<a href="https://github.com/ibm/carbon-design-kit" target="_blank">Carbon Design Kit</a>
+<p>Download the latest Kit today!
+<a href="https://github.com/ibm/carbon-design-kit" target="_blank">Carbon Design Kit</a></p>
 
 ## Carbon Sessions
 

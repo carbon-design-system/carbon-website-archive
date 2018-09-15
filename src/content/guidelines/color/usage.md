@@ -55,7 +55,7 @@ A universal variable can also have multiple associated roles when the color is c
 
 ### Type colors
 
-All type color combinations on Carbon must pass <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target=blank>WCAG AA standards</a> of 4.5:1 for normal text and 3:1 for large text. For larger text, if the font weight is light (300) or normal (400) the text should be no smaller than 24px. If the font weight is Semi-Bold (600) then the large text should be no smaller than 19px. In the table below are approved Carbon color combinations.
+<p>All type color combinations on Carbon must pass <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target=blank>WCAG AA standards</a> of 4.5:1 for normal text and 3:1 for large text. For larger text, if the font weight is light (300) or normal (400) the text should be no smaller than 24px. If the font weight is Semi-Bold (600) then the large text should be no smaller than 19px. In the table below are approved Carbon color combinations.</p>
 
 <div data-insert-component="ColorContrast"></div>
 
@@ -75,3 +75,4 @@ Other color accessibility concerns include color blindness and low vision users.
 * <a href="https://w3.ibm.com/able/devtest/quick/" target=blank>IBM accessibility quick guidance</a>
 * <a href="https://marijohannessen.github.io/color-contrast-checker/" target=blank>Color contrast checker</a>
 * <a href="https://www.ibm.com/design/language/resources/color-library" target=blank>IBM Design Language colors</a>
+

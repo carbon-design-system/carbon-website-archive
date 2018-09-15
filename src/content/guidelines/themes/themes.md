@@ -9,7 +9,7 @@ title: Themes
 
 Developers and designers can use Carbon Themes to modify existing components to fit their own specific visual styles and needs. Rather than changing each individual component's css or building modified components from scratch, components can now be easily customized by changing a set of universal variables that seamlessly propagate across all of the components.
 
-<a href="http://themes.carbondesignsystem.com/" target="_blank">Explore Themes</a>
+<p><a href="http://themes.carbondesignsystem.com/" target="_blank">Explore Themes</a></p>
 
 ### Theme terms
 

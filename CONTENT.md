@@ -72,6 +72,15 @@ This will render the following header:
 	
 	> This is a block quote.
 
+### Link
+
+You can create an inline link by wrapping link text in brackets [ ], and then wrapping the URL in parentheses ( ).
+
+`[Carbon](http://www.carbondesignsystem.com/)`
+
+If you need a link to open in a new window you will have to use standard html. You will also need to wrap the block of text in a `<p>` tag (unless its in a list)
+`<p>This is a link to <a href="http://www.carbondesignsystem.com" target="_blank">Carbon</a></p>`
+
 ### Images
 Images will render as full width responsive images by default. Use blockquote in front of an image to render a smaller image for text to wrap around.
 
