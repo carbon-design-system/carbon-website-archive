@@ -122,7 +122,7 @@ class ComponentExample extends Component {
     } = this.props;
 
     const { currentHTMLfile = '', currentFieldColor } = this.state;
-    const demoHtml = !experimental ? currentHTMLfile : currentHTMLfile.replace(/bx--/g, 'ptc--');
+    const demoHtml = !experimental ? currentHTMLfile : currentHTMLfile.replace(/bx--/g, 'demo--');
 
     const classNames = classnames({
       'component-example__live--rendered': true,
@@ -157,8 +157,7 @@ class ComponentExample extends Component {
  
     const liveBackgroundClasses = classnames('component-example__live', {
       'component-example__live--light': (currentFieldColor === 'field-01') & (hasLightVersion === 'true') || (hasLightBackground === 'true'),
-      'components-x': experimental === 'true',
-      'carbon-demo-override': experimental === 'true',
+      'carbon-demo-experimental': experimental === 'true',
     });
 
     const componentLink = `https://codepen.io/team/carbon/full/${codepenSlug}/`;
