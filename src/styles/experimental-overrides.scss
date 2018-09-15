@@ -13,9 +13,4 @@ $feature-flags: (); // Dummy value so `global-variable-exists()` check in `@feat
     components-x: true,
   );
   @import 'carbon-components/src/globals/scss/styles';
-
-  // Checkbox
-  .#{$prefix}--checkbox-label {
-    align-items: initial;
-  }
 }
