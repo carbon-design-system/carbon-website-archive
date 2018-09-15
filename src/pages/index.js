@@ -13,7 +13,6 @@ import gettingStartedIll from '../content/homepage/images/getting-started.png';
 import resourcesIll from '../content/homepage/images/resources.png';
 import styleIll from '../content/homepage/images/style.png';
 import scatter from '../content/homepage/images/scatter.svg';
-import shapes from '../content/homepage/images/shapes.png';
 
 class IndexPage extends React.Component {
 
@@ -43,8 +42,6 @@ class IndexPage extends React.Component {
       <Layout>
         <main id="maincontent" role="main" className="overview-page" tabIndex="-1">
           <section className="overview-page__banner" aria-label="overview page banner">
-            <img className="banner__shapes" src={shapes} alt="" />
-            <img className="banner__shapes" src={shapes} alt="" />
             <svg xmlns="http://www.w3.org/2000/svg" viewBox='0 0 2500 823'>
                 <g fill="none" strokeWidth="2">
                   <path
