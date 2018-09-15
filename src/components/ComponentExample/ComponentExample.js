@@ -121,6 +121,9 @@ class ComponentExample extends Component {
       experimental,
     } = this.props;
 
+    const { currentHTMLfile = '', currentFieldColor } = this.state;
+    const demoHtml = !experimental ? currentHTMLfile : currentHTMLfile.replace(/bx--/g, 'ptc--');
+
     const classNames = classnames({
       'component-example__live--rendered': true,
       [`${component}`]: true,
@@ -153,7 +156,7 @@ class ComponentExample extends Component {
     }
  
     const liveBackgroundClasses = classnames('component-example__live', {
-      'component-example__live--light': (this.state.currentFieldColor === 'field-01') & (hasLightVersion === 'true') || (hasLightBackground === 'true'),
+      'component-example__live--light': (currentFieldColor === 'field-01') & (hasLightVersion === 'true') || (hasLightBackground === 'true'),
       'components-x': experimental === 'true',
       'carbon-demo-override': experimental === 'true',
     });
@@ -165,7 +168,7 @@ class ComponentExample extends Component {
       <div className={lightUIclassnames}>
         <div className={liveBackgroundClasses}>
           <div className={classNames}>
-            <div ref={this._liveDemoRef} dangerouslySetInnerHTML={{ __html: this.state.currentHTMLfile }} />
+            <div ref={this._liveDemoRef} dangerouslySetInnerHTML={{ __html: demoHtml }} />
           </div>
         </div>
         <div className="component-toolbar">
@@ -192,7 +195,7 @@ class ComponentExample extends Component {
           {hasLightVersion === "true" && (
             <div className="component-toolbar__switcher">
               <RadioButtonGroup
-                defaultSelected={this.state.currentFieldColor}
+                defaultSelected={currentFieldColor}
                 name={`radio-button-group-${counter}`}
                 legend="Field selector"
                 onChange={this.onSwitchFieldColors}
@@ -203,7 +206,7 @@ class ComponentExample extends Component {
             </div>
           )}
         </div>
-        <CodeExample htmlFile={this.state.currentHTMLfile} />
+        <CodeExample htmlFile={currentHTMLfile} />
       </div>
     );
   }

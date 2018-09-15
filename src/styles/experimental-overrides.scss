@@ -7,14 +7,15 @@
 $feature-flags: (); // Dummy value so `global-variable-exists()` check in `@feature-flag-enabled` work
 
 .components-x.carbon-demo-override {
+  $prefix: 'ptc';
   $imported-modules-local: ();
   $feature-flags: (
     components-x: true,
   );
   @import 'carbon-components/src/globals/scss/styles';
-}
 
-// Checkbox
-.components-x.carbon-demo-override .bx--checkbox-label {
-  align-items: initial;
+  // Checkbox
+  .#{$prefix}--checkbox-label {
+    align-items: initial;
+  }
 }
