@@ -31,7 +31,7 @@ tabs: ['Swatches', 'Usage']
 <color-card name="hover-primary-text" hex="#294c86"></color-card>
 <color-card name="hover-danger" hex="#bd1427"></color-card>
 <color-card name="hover-secondary" hex="#3d70b2"></color-card>
-<color-card name="hover-row" hex="rgba(#5596e6, 0.1)"></color-card>
+<color-card name="hover-row" hex="rgba(85,150,230,.1)"></color-card>
 </flex-group>
 
 ### Support Colors
