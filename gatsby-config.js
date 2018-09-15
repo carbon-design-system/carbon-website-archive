@@ -6,7 +6,6 @@ module.exports = {
   siteMetadata: {
     title: 'Carbon Design System',
   },
-  pathPrefix: `/carbon-website-gatsby`,
   plugins: [
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -42,7 +41,6 @@ module.exports = {
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
               maxWidth: 590,
-              pathPrefix: '/carbon-website-gatsby',
               linkImagesToOriginal: false,
             },
           },
