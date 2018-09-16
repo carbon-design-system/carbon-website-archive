@@ -7,3 +7,5 @@ yarn-error.log
 # Build directory
 /public
 .DS_Store
+!manifest.yml
+!CNAME
