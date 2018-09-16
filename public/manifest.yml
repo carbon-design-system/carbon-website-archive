@@ -1,0 +1,7 @@
+---
+applications:
+- name: design-system-gatsby
+  buildpack: https://github.com/cloudfoundry-community/staticfile-buildpack.git
+  disk_quota: 256MB
+  memory: 128MB
+
