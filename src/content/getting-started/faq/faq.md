@@ -51,7 +51,7 @@ If you still have questions or can't find the answer you are looking for feel fr
 **General inquiries**
 
 <p>Email: carbon@us.ibm.com </br>
-Twitter: <a href="https://twitter.com/_carbondesign" target="_blank">@\_carbondesign</a></p>
+Twitter: <a href="https://twitter.com/_carbondesign" target="_blank">@_carbondesign</a></p>
 
 **Slack channels (IBM internal only)**
 
