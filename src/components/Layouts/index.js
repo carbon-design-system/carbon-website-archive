@@ -45,7 +45,7 @@ class Layout extends React.Component {
   
   render() {
     const { children } = this.props;
-    const classNames = classnames('container', {
+    const classNames = classnames({
       'container--expanded': !this.state.isOpen,
     });
 
@@ -71,7 +71,7 @@ class Layout extends React.Component {
             </Helmet>
             <SideNavToggleBtn onToggleBtnClick={this.onToggleBtnClick} isOpen={this.state.isOpen} />
             <SideNav isFinal={this.state.isFinal} isOpen={this.state.isOpen} location={this.props.location} />
-            <div className={classNames}>
+            <div className={`container ${classNames}`}>
               {children}
               <Footer isExpanded={this.state.isOpen} />
             </div>
