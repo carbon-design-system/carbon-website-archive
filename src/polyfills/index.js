@@ -8,6 +8,7 @@ import 'core-js/modules/es7.object.values';
 import 'core-js/modules/es6.promise.js';
 import 'core-js/modules/es6.string.includes';
 import 'core-js/modules/es6.string.trim';
+import 'core-js/modules/es6.symbol';
 /* eslint-enable import/no-extraneous-dependencies */
 
 import './custom-event';
