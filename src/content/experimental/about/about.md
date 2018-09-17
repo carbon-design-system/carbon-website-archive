@@ -7,7 +7,7 @@ title: About
 
 ## Introduction
 
-The Carbon team is continually updating components, and introducting new design and development guidelines into the Carbon Design System.
+The Carbon team is continually updating components, and introducing new design and development guidelines into the Carbon Design System.
 
 We want to provide early-access to our changes, so that designers and developers can test, work with, and provide feedback. These resources are provided in the "Experimental" section of the site.
 
@@ -21,4 +21,4 @@ But these resources are also the future path of the Carbon Design System. As the
 
 ## How can I help?
 
-Your feedback is critical for the success of the Carbon Design System, and for experimental components to improve and "graduate" to being production ready. Please open a Github issue from the footer of any page on the Carbon Design System website to let the team know what you think. Or, if you see problem, fix it and submit a pull request. We make sure that we acknowledge all contributors to the Carbon Design System.
+Your feedback is critical for the success of the Carbon Design System, and for experimental components to improve and "graduate" to being production ready. Please open a Github issue from the footer of any page on the Carbon Design System website to let the team know what you think. Or, if you see a problem, fix it and submit a pull request. We make sure that we acknowledge all contributors to the Carbon Design System.
