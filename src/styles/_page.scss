@@ -21,6 +21,7 @@ body {
     }
   }
   
+  .side-nav + .container--expanded, //Issue #51
   .container--expanded {
     width: 100%;
     margin-left: 0;
