@@ -1,5 +1,4 @@
-## Adding a new page
-Create markdown file inside the `content` folder following the rules below. 
+## Adding/updating navigation
 
 Add page to navigation.json file.
 ```
@@ -20,6 +19,9 @@ If page is internal only make sure to add `"internal": true` to the navigation.j
         "title": "Catalog Entry"
       },
 ```
+
+## Adding a new content page
+Create markdown file inside the `content` folder following the rules below. 
 
 ## Writing content
 
