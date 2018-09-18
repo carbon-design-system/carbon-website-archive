@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search} from 'carbon-components-react';
+import { Icon } from 'carbon-components-react';
 
 export default class GlobalSearch extends React.Component {
   componentDidMount() {
@@ -14,21 +14,28 @@ export default class GlobalSearch extends React.Component {
       apiKey: `296ea0c1d0e96b2b04900d0f4d1a6329`,
       indexName: `carbondesignsystem`,
       inputSelector: `#doc-search`,
-      debug: false,
+      debug: true,
     })
   }
 
   render() {
     return (
-      <div>
-        <Search
-          name=""
-          value=""
-          labelText="Search"
-          closeButtonLabelText="Close"
-          placeHolderText="Search"
+      <div className="bx--search bx--search--sm" role="search">
+
+        <Icon 
+          name="icon--search" 
+          description="Search Maginfier"
+          className="bx--search-magnifier"
+        />
+        <label htmlFor="doc-search" className="bx--label">
+          Search
+        </label>
+        <input
+          aria-label="Search"
+          type="text"
+          className="bx--search-input"
           id="doc-search"
-          small
+          placeholder="Search"
         />
       </div>
     );
