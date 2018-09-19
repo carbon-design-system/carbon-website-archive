@@ -14,6 +14,8 @@ import resourcesIll from '../content/homepage/images/resources.png';
 import styleIll from '../content/homepage/images/style.png';
 import scatter from '../content/homepage/images/scatter.svg';
 
+import '../polyfills';
+
 class IndexPage extends React.Component {
 
   componentDidMount() {
