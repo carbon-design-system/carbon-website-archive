@@ -289,7 +289,7 @@ class IndexPage extends React.Component {
                     <img src={gettingStartedIll} alt="" />
                   </Link>
                   <div className="list-item__info">
-                    <Link to="/getting-started">Getting Started</Link>
+                    <Link to="/getting-started/designers">Getting Started</Link>
                     <p>Onboarding for designers and developers who are using Carbon for the first time.</p>
                   </div>
                 </li>
@@ -298,7 +298,7 @@ class IndexPage extends React.Component {
                     <img src={styleIll} alt="" />
                   </Link>
                   <div className="list-item__info">
-                    <Link to="/style">Style</Link>
+                    <Link to="/guidelines/color/swatches">Guidelines</Link>
                     <p>Guidance on usage and application for basic design elements.</p>
                   </div>
                 </li>
@@ -307,7 +307,7 @@ class IndexPage extends React.Component {
                     <img src={componentsIll} alt="" />
                   </Link>
                   <div className="list-item__info">
-                    <Link to="/components">Components</Link>
+                    <Link to="/components/overview">Components</Link>
                     <p>A library of all Carbon components, comprised of code, usage and style guidelines.</p>
                   </div>
                 </li>

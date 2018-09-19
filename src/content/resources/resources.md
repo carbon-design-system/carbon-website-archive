@@ -70,7 +70,7 @@ title: Resources
 <clickable-tile 
     title="Carbon Boilerplate"
     description="A simple boilerplate for rapid UI prototyping with Carbon components."
-    href="A simple boilerplate for rapid UI prototyping with Carbon components."
+    href="https://github.com/carbon-design-system/carbon-boilerplate"
     type="resource"
     >
     <img src="images/github-icon.png" alt="Carbon Boilerplate" />
