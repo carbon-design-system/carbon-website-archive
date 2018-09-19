@@ -71,9 +71,9 @@ body {
   }
 
   // Inline code
-  p code,
-  li code,
-  td code {
+  p > code,
+  li > code,
+  td > code {
     @include reset;
     font-family: $font-family-mono;
     position: relative;
