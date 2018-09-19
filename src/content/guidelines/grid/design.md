@@ -1,5 +1,5 @@
 ---
-label: Style
+label: Guidelines
 title: Grid
 tabs: ['Design', 'Code']
 ---
@@ -8,7 +8,7 @@ tabs: ['Design', 'Code']
 
 ## Basic structure
 
-<div data-insert-component="GridExample"></div>
+![Interior left nav grid](images/grid-example.png)
 
 ### Grid with a side panel
 
@@ -17,9 +17,8 @@ A left or right side panel lives outside the bounds of the grid, including the g
 For example, when using a persistent left navigation panel, the grid starts after the 200px of the navigation on the left side of the viewport. Normal grid rules still apply within the content area.
 
 **Grid area with interior left navigation: page width minus 200px from left edge.**
-_
+
 ![Interior left nav grid](images/grid-4.png)
-_
 
 ## How it works
 

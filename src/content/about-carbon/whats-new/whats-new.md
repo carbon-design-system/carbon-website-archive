@@ -1,4 +1,5 @@
 ---
+label: About Carbon
 title: What's New
 ---
 

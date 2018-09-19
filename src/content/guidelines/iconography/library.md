@@ -1,5 +1,5 @@
 ---
-label: Style
+label: Guidelines
 title: Iconography
 tabs: ['Library', 'Usage', 'Contribution']
 ---
