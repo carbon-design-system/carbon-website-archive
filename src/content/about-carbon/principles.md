@@ -1,3 +1,8 @@
+---
+title: About Carbon
+label: Principles
+---
+
 # Principles
 
 These core principles drive everything we design at IBM. By relentlessly focusing on our users and their needs, we can ensure that our products and experiences deliver useful, meaningful, and delightful outcomes.  
