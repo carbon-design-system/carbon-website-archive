@@ -86,31 +86,10 @@ exports.createPages = ({ actions, graphql }) => {
 
 exports.onCreateWebpackConfig = ({ actions, getConfig, stage }) => {
   const config = getConfig();
-  const { entry, module } = config;
+  const { module } = config;
   const { rules } = module;
-  const { commons } = entry || {};
-  const appIndex = !commons ? -1 : commons.findIndex(item => /app$/i.test(item));
   actions.replaceWebpackConfig({
     ...config,
-    entry: stage !== 'develop' || appIndex < 0 ? entry : {
-      ...entry,
-      commons: [
-        // Ensure loading polyfills before RHL loads `react` module
-        // This prevents a condition where `Symbol` polyfill loaded
-        // after `react` is loaded and before `react-dom` is loaded
-        // which makes `react` and `react-dom` refer to different `Symbol` definitions.
-        //
-        // Refs:
-        // https://github.com/gatsbyjs/gatsby/issues/7003
-        // https://github.com/facebook/react/issues/8379#issuecomment-263962787
-        //
-        // The problem seems to happen only in development environment (see below link)
-        // and thus we patch `entry` WebPack config only for development environment.
-        // https://github.com/carbon-design-system/carbon-website-gatsby/issues/24#issuecomment-421593414
-        path.resolve(__dirname, 'src/polyfills/index.js'),
-        ...commons,
-      ],
-    },
     module: {
       ...module,
       rules: [
