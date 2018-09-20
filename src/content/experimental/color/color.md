@@ -16,7 +16,7 @@ title: Color
 <color-card name="ui-05" hex="#171717"></color-card>
 <color-card name="text-01" hex="#171717"></color-card>
 <color-card name="text-02" hex="#565656"></color-card>
-<color-card name="text-03" hex="#a4a4a4"></color-card>
+<color-card name="text-03" hex="#8c8c8c"></color-card>
 <color-card name="inverse-01" hex="#ffffff" border="true"></color-card>
 <color-card name="field-01" hex="#f2f4f8"></color-card>
 </flex-group>
