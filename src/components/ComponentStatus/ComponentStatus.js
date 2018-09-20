@@ -74,6 +74,7 @@ class ComponentStatus extends React.Component {
         <td>{vanilla}</td>
         <td>{react}</td>
         <td>{angular}</td>
+        <td>{experimental}</td>
       </tr>
     );
   };
@@ -132,6 +133,7 @@ class ComponentStatus extends React.Component {
               <th>Vanilla</th>
               <th>React</th>
               <th>Angular</th>
+              <th>Experimental</th>
             </tr>
           </thead>
           <tbody>
