@@ -11,7 +11,7 @@ class IconCard extends Component {
     viewBox: PropTypes.string,
     downloadUrl: PropTypes.string,
     svgString: PropTypes.string,
-    loading: PropTypes.bool
+    loading: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -21,19 +21,19 @@ class IconCard extends Component {
     viewBox: '',
     svgString: '',
     loading: false,
-  }
+  };
 
   state = {
-    displayCopied: false
+    displayCopied: false,
   };
 
   toggleCopied = () => {
     this.setState({
-      displayCopied: true
+      displayCopied: true,
     });
     setTimeout(() => {
       this.setState({
-        displayCopied: false
+        displayCopied: false,
       });
     }, 2500);
   };
@@ -52,17 +52,11 @@ class IconCard extends Component {
     return (
       <div className="icon">
         <div tabIndex={0} className="icon__card">
-          {loading
-            ? <Loading withOverlay={false} small />
-            : <Icon
-              name={name}
-              description={name}
-              height={height}
-              width={width}
-              viewBox={viewBox}
-              tabIndex={-1}
-              alt={name}
-            />}
+          {loading ? (
+            <Loading withOverlay={false} small />
+          ) : (
+            <Icon name={name} description={name} height={height} width={width} viewBox={viewBox} tabIndex={-1} alt={name} />
+          )}
           <div
             ref={iconActions => {
               this.iconActions = iconActions;
@@ -75,23 +69,13 @@ class IconCard extends Component {
                 {this.state.displayCopied ? 'Icon Copied!' : 'Copy Icon'}
               </Button>
             </CopyToClipboard>
-            <Link
-              onFocus={this.handleFocus}
-              tabIndex={0}
-              href={downloadUrl}
-              className="icon-button"
-              download
-            >
+            <Link onFocus={this.handleFocus} tabIndex={0} href={downloadUrl} className="icon-button" download>
               Download
             </Link>
           </div>
         </div>
-        <h5>
-          {loading ? null : name}
-        </h5>
-        <span>
-          {loading ? null : `#${name}`}
-        </span>
+        <h5>{loading ? null : name}</h5>
+        <span>{loading ? null : `#${name}`}</span>
       </div>
     );
   }

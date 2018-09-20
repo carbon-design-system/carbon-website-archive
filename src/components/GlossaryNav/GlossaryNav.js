@@ -19,9 +19,7 @@ class GlossaryNav extends Component {
     this.handleScroll();
 
     if (this.state.activeLetter) {
-      const activeLetter = document.querySelector(
-        `#${this.state.activeLetter}`
-      );
+      const activeLetter = document.querySelector(`#${this.state.activeLetter}`);
       window.scrollTo(0, activeLetter.offsetTop);
     }
 
@@ -68,9 +66,7 @@ class GlossaryNav extends Component {
 
   handleScroll = () => {
     const scrollPosition = this.updateScrollPosition();
-    const windowScroll = this.state.isReverseScroll
-      ? window.scrollY
-      : window.scrollY + window.innerHeight;
+    const windowScroll = this.state.isReverseScroll ? window.scrollY : window.scrollY + window.innerHeight;
     const scrolledItem = this.getActiveItem(windowScroll);
 
     if (scrolledItem !== this.state.activeLetter) {
@@ -132,11 +128,7 @@ class GlossaryNav extends Component {
       'glossary-nav': true,
       'glossary-nav--fixed': this.state.isFixed,
     });
-    return (
-      <ul className={classNames}>
-        {letters}
-      </ul>
-    );
+    return <ul className={classNames}>{letters}</ul>;
   }
 }
 

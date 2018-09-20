@@ -14,22 +14,14 @@ class IconEmptyState extends Component {
               </g>
             </svg>
             <svg width="62" height="65">
-              <g
-                fill="none"
-                fillRule="evenodd"
-                stroke="#D1D7F4"
-                transform="rotate(-17 25.91403275 57.1782927)">
+              <g fill="none" fillRule="evenodd" stroke="#D1D7F4" transform="rotate(-17 25.91403275 57.1782927)">
                 <path d="M32 0L0 56h64L32 0zm0 8l24 42.6666667H8L32 8z" />
                 <path d="M29.8666667 22.4v4.2666667l1.0666666 10.6666666h2.1333334l1.0666666-10.6666666V22.4z" />
                 <circle cx="32" cy="42.6666667" r="2.13333333" />
               </g>
             </svg>
             <svg width="52" height="72">
-              <g
-                fill="none"
-                fillRule="evenodd"
-                stroke="#D1D7F4"
-                transform="rotate(73 24.85112992 27.55744523)">
+              <g fill="none" fillRule="evenodd" stroke="#D1D7F4" transform="rotate(73 24.85112992 27.55744523)">
                 <path d="M41.05200631 47.24372504l6.1545984-6.1545984 14.30039044 14.30039044-6.1545984 6.1545984z" />
                 <circle cx="40.96" cy="40.96" r="2.56" />
                 <path d="M21.76 5.12c9.216 0 16.64 7.424 16.64 16.64 0 9.216-7.424 16.64-16.64 16.64-9.216 0-16.64-7.424-16.64-16.64 0-9.216 7.424-16.64 16.64-16.64zm0-5.12C9.728 0 0 9.728 0 21.76c0 12.032 9.728 21.76 21.76 21.76 12.032 0 21.76-9.728 21.76-21.76C43.52 9.728 33.792 0 21.76 0z" />
@@ -44,9 +36,8 @@ class IconEmptyState extends Component {
           </div>
           <h4>No results found.</h4>
           <p>
-            It appears we don't have an icon that matches your search. Try
-            different search terms or give us a hand - submit your own design to
-            the library.
+            It appears we don't have an icon that matches your search. Try different search terms or give us a hand - submit your
+            own design to the library.
           </p>
           <Button
             href="https://github.com/ibm/carbon-icons"
@@ -55,7 +46,8 @@ class IconEmptyState extends Component {
             icon="add--glyph"
             target="_blank"
             role="button"
-            iconDescription="submit an icon">
+            iconDescription="submit an icon"
+          >
             Submit an Icon
           </Button>
         </div>

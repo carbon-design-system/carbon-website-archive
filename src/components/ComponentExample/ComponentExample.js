@@ -39,7 +39,7 @@ class ComponentExample extends Component {
     this.setState({
       currentFieldColor: value,
     });
-    
+
     let newHTML;
     let currentComponent = this.props.component;
     const currentVariation = this.props.variation;
@@ -57,7 +57,7 @@ class ComponentExample extends Component {
     }
     this.setState({
       currentHTMLfile: newHTML,
-    });    
+    });
   };
 
   _ref = null;
@@ -86,7 +86,7 @@ class ComponentExample extends Component {
       const currentComponent = this.props.component
         .replace(/-([a-z])/g, (match, token) => token.toUpperCase())
         .replace(/^([a-z])/, (match, token) => token.toUpperCase());
-      (componentNamesMap[currentComponent] || [currentComponent]).forEach((name) => {
+      (componentNamesMap[currentComponent] || [currentComponent]).forEach(name => {
         const TheComponent = components[name];
         if (TheComponent) {
           if (TheComponent.prototype.createdByLauncher) {
@@ -106,18 +106,18 @@ class ComponentExample extends Component {
 
   componentWillReceiveProps(props) {
     if (this.state.currentHTMLfile !== props.htmlFile) {
-      this.setState({ currentHTMLfile: props.htmlFile })
+      this.setState({ currentHTMLfile: props.htmlFile });
     }
   }
 
   render() {
-    const { 
-      component, 
-      codepenSlug, 
-      hasLightVersion, 
+    const {
+      component,
+      codepenSlug,
+      hasLightVersion,
       hasReactVersion,
       hasAngularVersion,
-      hasLightBackground, 
+      hasLightBackground,
       experimental,
     } = this.props;
 
@@ -154,9 +154,10 @@ class ComponentExample extends Component {
         .charAt(0)
         .toUpperCase() + componentName.split(' ')[1].substring(1)}`;
     }
- 
+
     const liveBackgroundClasses = classnames('component-example__live', {
-      'component-example__live--light': (currentFieldColor === 'field-01') & (hasLightVersion === 'true') || (hasLightBackground === 'true'),
+      'component-example__live--light':
+        (currentFieldColor === 'field-01') & (hasLightVersion === 'true') || hasLightBackground === 'true',
       'carbon-demo-experimental': experimental === 'true',
     });
 
@@ -175,13 +176,21 @@ class ComponentExample extends Component {
             <p>Vanilla JS</p>
           </div>
           <div className="component-toolbar__links">
-            {hasReactVersion === "true" && (
-              <a href={`http://react.carbondesignsystem.com/?selectedKind=${componentNameLink}`} target="_blank" rel="noopener noreferrer">
+            {hasReactVersion === 'true' && (
+              <a
+                href={`http://react.carbondesignsystem.com/?selectedKind=${componentNameLink}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 React
               </a>
             )}
-            {hasAngularVersion === "true" && (
-              <a href={`http://angular.carbondesignsystem.com/?selectedKind=${componentNameLink}`} target="_blank" rel="noopener noreferrer">
+            {hasAngularVersion === 'true' && (
+              <a
+                href={`http://angular.carbondesignsystem.com/?selectedKind=${componentNameLink}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Angular
               </a>
             )}
@@ -191,7 +200,7 @@ class ComponentExample extends Component {
               </a>
             )}
           </div>
-          {hasLightVersion === "true" && (
+          {hasLightVersion === 'true' && (
             <div className="component-toolbar__switcher">
               <RadioButtonGroup
                 defaultSelected={currentFieldColor}

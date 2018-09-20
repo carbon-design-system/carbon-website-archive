@@ -9,7 +9,7 @@ export class PageIntro extends React.Component {
 
 export class PageIcon extends React.Component {
   render() {
-    return <Icon name={this.props.name} className={ `page-icon page-icon-${this.props.color}` } />;
+    return <Icon name={this.props.name} className={`page-icon page-icon-${this.props.color}`} />;
   }
 }
 
@@ -18,7 +18,12 @@ export class ColorBlock extends React.Component {
     const styles = {
       backgroundColor: this.props.children,
     };
-    return <span className="color-block">{this.props.children}<span className="color-block__color" style={styles}/></span>;
+    return (
+      <span className="color-block">
+        {this.props.children}
+        <span className="color-block__color" style={styles} />
+      </span>
+    );
   }
 }
 

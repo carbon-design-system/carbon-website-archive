@@ -181,6 +181,41 @@
       }
     }
   },
+  "experimental": {
+    "title": "Experimental",
+    "sub-nav": {
+      "about": {
+        "title": "About"
+      },
+      "color": {
+        "title": "Color"
+      },
+      "layout": {
+        "title": "Layout"
+      },
+      "checkbox": {
+        "title": "Checkbox"
+      },
+      "link": {
+        "title": "Link"
+      },
+      "text-input": {
+        "title": "Text Input"
+      },
+      "breadcrumb": {
+        "title": "Breadcrumb"
+      },
+      "accordion": {
+        "title": "Accordion"
+      },
+      "button": {
+        "title": "Button"
+      },
+      "shell": {
+        "title": "Shell"
+      }
+    }
+  },
   "data-visualization": {
     "title": "Data Visualization",
     "sub-nav": {

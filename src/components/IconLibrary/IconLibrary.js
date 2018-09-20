@@ -4,9 +4,7 @@ import icons from 'carbon-icons';
 import IconCard from '../IconCard';
 import IconEmptyState from '../IconEmptyState';
 
-
 export default class IconLibrary extends React.Component {
-
   static defaultProps = {
     currentPage: 'library',
   };
@@ -51,9 +49,7 @@ export default class IconLibrary extends React.Component {
       <div style={{ marginTop: '70px' }}>
         <h2>Service icons</h2>
         <div className="icon-container">
-          {this.renderIconCards(
-            icons.filter(icon => serviceIconNames.indexOf(icon.name) !== -1)
-          )}
+          {this.renderIconCards(icons.filter(icon => serviceIconNames.indexOf(icon.name) !== -1))}
         </div>
       </div>
     );
@@ -68,29 +64,27 @@ export default class IconLibrary extends React.Component {
     );
 
     return (
-
-          <div className="page iconography">
-            <div className="icon-container">
-              <Search
-                small
-                onChange={this.handleChange}
-                onKeyUp={this.handleClearInput}
-                placeHolderText="Search icon library"
-                aria-label="Icon library search"
-                value={this.state.searchValue}
-                labelText="Icon library search"
-              />
-            </div>
-            {this.state.searchValue.length > 0
-              ? searchResults
-                : (
-                  <React.Fragment>
-                    {initialIcons}
-                    {serviceIcons}
-                  </React.Fragment>
-                )}
-          </div>
-
+      <div className="page iconography">
+        <div className="icon-container">
+          <Search
+            small
+            onChange={this.handleChange}
+            onKeyUp={this.handleClearInput}
+            placeHolderText="Search icon library"
+            aria-label="Icon library search"
+            value={this.state.searchValue}
+            labelText="Icon library search"
+          />
+        </div>
+        {this.state.searchValue.length > 0 ? (
+          searchResults
+        ) : (
+          <React.Fragment>
+            {initialIcons}
+            {serviceIcons}
+          </React.Fragment>
+        )}
+      </div>
     );
   }
 

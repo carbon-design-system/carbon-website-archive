@@ -78,7 +78,8 @@ class CodePage extends Component {
           This component is currently only available in{' '}
           <a href="https://github.com/ibm/carbon-components-react" target="_blank">
             our React library
-          </a>.
+          </a>
+          .
         </p>
         <ComponentReactExample component={parent} variation={variation} />
       </div>

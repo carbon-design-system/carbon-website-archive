@@ -1,8 +1,8 @@
 import '../polyfills';
 import React from 'react';
 import rehypeReact from 'rehype-react';
-import Layout from "../components/layouts";
-import FourOhFour from "../components/404";
+import Layout from '../components/layouts';
+import FourOhFour from '../components/404';
 
 // Components
 import PageHeader from '../components/PageHeader';
@@ -40,25 +40,25 @@ const renderAst = new rehypeReact({
     pre: Snippet,
     table: PageTable,
     'page-intro': PageIntro,
-    'icon': PageIcon,
+    icon: PageIcon,
     'flex-group': FlexGroup,
     'clickable-tile': ClickTile,
-    'example': Example,
+    example: Example,
     'color-block': ColorBlock,
     'color-card': ColorCard,
     'icon-library': IconLibrary,
     'type-scale-table': TypeScaleTable,
     'type-weight-table': TypeWeightTable,
     'type-styles-table': TypeStylesTable,
-    'component': ComponentCode,
+    component: ComponentCode,
     'component-react': ComponentReact,
     'component-docs': ComponentDocs,
     'component-status': ComponentStatus,
-    'glossary': Glossary,
+    glossary: Glossary,
     'motion-example': MotionExample,
     'layer-types': LayerTypes,
     'layer-usage': LayerUsage,
-    'component-overview': ComponentOverview
+    'component-overview': ComponentOverview,
   },
 }).Compiler;
 
@@ -73,19 +73,19 @@ export default ({ data, pageContent }) => {
   const isInternal = GATSBY_CARBON_ENV !== 'internal' && internal == true;
 
   if (isInternal) {
-    return ( 
-      <Layout>   
+    return (
+      <Layout>
         <FourOhFour />
       </Layout>
-    )
+    );
   } else {
-    return ( 
+    return (
       <Layout>
         <PageHeader title={post.frontmatter.title} label={post.frontmatter.label} />
         {!(tabs === null) && <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />}
         <div className="page-content"> {renderAst(post.htmlAst)}</div>
       </Layout>
-    )
+    );
   }
 };
 

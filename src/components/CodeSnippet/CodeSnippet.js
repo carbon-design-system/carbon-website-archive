@@ -37,12 +37,10 @@ export default class Snippet extends React.Component {
   render() {
     const { children } = this.props;
     const type = this.state.multi ? 'multi' : 'single';
-    return (    
+    return (
       <CopyToClipboard text={children[0].props.children[0]} onCopy={() => this.setState({ copied: true })}>
         <CodeSnippet type={type}>
-          <div ref={element => this.codeRef = element}>
-            {children}
-          </div>
+          <div ref={element => (this.codeRef = element)}>{children}</div>
         </CodeSnippet>
       </CopyToClipboard>
     );

@@ -1,5 +1,4 @@
-## Adding a new page
-Create markdown file inside the `content` folder following the rules below. 
+## Adding/updating navigation
 
 Add page to navigation.json file.
 ```
@@ -21,9 +20,12 @@ If page is internal only make sure to add `"internal": true` to the navigation.j
       },
 ```
 
+## Adding a new content page
+Create markdown file inside the `content` folder following the rules below. 
+
 ## Writing content
 
-All markdown files live inside of the `content` folder and follow the site navigation.
+All markdown files live inside of the `content` folder and follow the site navigation. They live inside a folder that is named the same as the file.
 
 ```
 src

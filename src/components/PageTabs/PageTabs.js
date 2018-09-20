@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from "gatsby";
+import { Link } from 'gatsby';
 
 export default class PageTabs extends React.Component {
   static propTypes = {
@@ -8,7 +8,7 @@ export default class PageTabs extends React.Component {
     slug: PropTypes.string,
     currentTab: PropTypes.string,
   };
- 
+
   render() {
     const { tabs, slug, currentTab } = this.props;
     let linkSlug = slug.substring(0, slug.indexOf(currentTab));

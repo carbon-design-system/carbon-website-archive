@@ -1,5 +1,5 @@
 ---
-label: Style
+label: Guidelines
 title: Color
 tabs: ['Swatches', 'Usage']
 ---

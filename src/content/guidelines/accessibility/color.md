@@ -1,24 +1,30 @@
 ---
 label: Guidelines
 title: Accessibility
-tabs: ['Color', 'Keyboard']
+tabs: ['Overview','Color', 'Keyboard','Developers']
 ---
 
-<page-intro>WCAG guidelines contain recommendations for making the web accessible to users with disabilities, including color blindness or low vision.</page-intro>
+<page-intro>IBM is committed to serving all users, regardless of visual ability.</page-intro>
 
 ## Introduction
-Web and software experiences should be accessible for everyone, regardless of a person's abilities or impairments. Visual impairments can range in severity, from low vision, to color blindness, to complete blindness. The Carbon team has done extensive research and testing to ensure each component was designed with accessibility as our top priority.
+Visual impairments can include low vision, color blindness, and complete blindness. Carbon components have been designed to accommodate the entire spectrum of visual impairment, though designer diligence is still needed to ensure that the components are used correctly.
 
 ## Color contrast
-There are different levels of compliance for WCAG, ranging from A to AAA. **Carbon meets AA standards across our entire system.**
+**Carbon meets IBM Web Checklist (WCAG AA) standards across the entire system, including color contrast ratios.**
 
 AA requirements state that:
 
-* Text and images of text must have a contrast ratio of at least **4.5:1**. An exception is large text (at least 24px / 19px semi-bold) which must have a contrast ratio of **3:1.**
-* UI components: Visual information used to indicate states and boundaries of UI components must have a contrast ratio of **3:1** against adjacent colors.
+* Text and images of text must have a contrast ratio of at least **4.5:1**. An exception is large text (at least 24px regular / 19px semi-bold) which must have a contrast ratio of **3:1.**
+* UI components: Visual information used to indicate states and boundaries of UI components must have a contrast ratio of **3:1** against adjacent colors. A UI component is defined as "a part of the content that is perceived by users as a single control for a distinct function." This includes form elements.
+
+**Watch out for text against non-static backgrounds**
+There are times that text is rendered on a gradient background or image. You need to make sure that the text color always meets contrast standards. This is especially important for parallax applications or animations where text or backgrounds are moving independently of each other.
+
+[IBM Checkpoint 1.4.3 Contrast (Minimum)](https://www.ibm.com/able/guidelines/ci162/contrast.html)
 
 
-You can read more and view the entire guidelines for [WCAG 2.1](https://www.w3.org/TR/WCAG21/) on their website.
+Please refer to our [usage section on the Colors page](/style/colors/usage) to learn more about color contrast ratios. You can also use this [color contrast](https://marijohannessen.github.io/color-contrast-checker/) tool to ensure your ratios pass WCAG AA standards.
+
 
 To view best practices for using color in Data Visualization, view the [Data Vis color](/data-vis/overview/colors) page.
 
@@ -33,34 +39,35 @@ Color blindness involves difficulty in perceiving or distinguishing between colo
 | Monochromacy | All colors |  
 
 ### Designing for color blindness
-When designing color palettes, it's always good to run them through a color blind simulator. If you're working in Sketch, we recommend the [Stark](http://www.getstark.co/) plugin.
+Don't rely on color alone to convey meaning. This includes conveying information, indicating an action, prompting the user for a response, or distinguishing one visual element from another. When designing with color, it might help to use a color-blind simulator to review visibility of content. If you're working in Sketch, we recommend the [Stark](http://www.getstark.co/) plugin.  
 
 
 ![rainbow palette](images/color-accessibility-1.png)
-_Non-color blind user vs. color blind user_
+_Non-color blind user vs. color-blind user_
 
 
 ## Low vision
 Low vision can include partial sight in one or both eyes, and range from mild to severe. It affects 246 million people, or about 4% of the world’s population.
 
-| Type | Color deficiency |
+| Type | Visual deficiency |
 |------| ----------------|
 | Low acuity | Also known as **blurred vision.** Can make text difficult to read, since it would appear fuzzy. |
-| Low contrast sensitivity | The ability to determine fine detail and distinguish one object from another.     |
+| Low-contrast sensitivity | The ability to determine fine detail and distinguish one object from another.     |
 | Obstructed visual field | The user's view is partially obstrucuted. Can include central vision and spotty vision.  |
 | Retinitis Pigmentosa | Also known as **tunnel vision**. Obstructed peripheral vision - user is only able to see central elements  |
 
 _[Source: NoCoffee - Visual impairments ](https://accessgarage.wordpress.com/2013/02/09/458/)_
 
-![blurred vision and tunnel vision on Google.com](images/color-accessibility-2.png)
+![blurred vision and tunnel vision example on Google website](images/color-accessibility-2.png)
 
-_Low vision disabilities_
+_Low-vision disabilities_
 
 ### Designing for low vision
-To get an understanding of the various low vision disabilities, we recommend using the [NoCoffee](https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl) Chrome plugin to preview websites. Low vision users may be using a screen reader to preview your website or experience, so ensure you're following [keyboard guidelines](/guidelines/accessibility/keyboard) to ensure the page is read to the user in a logical order.
+To get an understanding of the various low-vision disabilities, we recommend using the [NoCoffee](https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl) Chrome plugin to preview websites. Low-vision users may be using a screen reader to preview your website or experience, so ensure you're following [keyboard guidelines](/guidelines/accessibility/keyboard) to ensure the page is read to the user in a logical order.
 
 
 ## Resources
+- [IBM Web Accessibility Checklist](https://www.ibm.com/able/guidelines/ci162/accessibility_checklist.html) - (Internal only) IBM's specific ruleset for creating accessible web applications.
 - [WCAG 2.1 guidelines](https://www.w3.org/TR/WCAG21/)
 - [IBM accessibility quick guidance](https://w3.ibm.com/able/devtest/quick/) - (Internal only)
 - [W3C low vision requirements](https://www.w3.org/TR/low-vision-needs/)
