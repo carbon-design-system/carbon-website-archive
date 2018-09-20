@@ -111,6 +111,10 @@ page-intro {
     margin-top: 60px;
 }
 
+page-intro strong {
+    color: #3057d5;
+}
+
 component:after,
 component-docs:after,
 component-react:after,
