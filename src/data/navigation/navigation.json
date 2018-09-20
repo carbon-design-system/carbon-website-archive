@@ -190,11 +190,26 @@
       "color": {
         "title": "Color"
       },
+      "layout": {
+        "title": "Layout"
+      },
       "checkbox": {
         "title": "Checkbox"
       },
-      "layout": {
-        "title": "Layout"
+      "link": {
+        "title": "Link"
+      },
+      "text-input": {
+        "title": "Text Input"
+      },
+      "breadcrumb": {
+        "title": "Breadcrumb"
+      },
+      "accordion": {
+        "title": "Accordion"
+      },
+      "button": {
+        "title": "Button"
       },
       "shell": {
         "title": "Shell"
