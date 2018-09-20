@@ -181,6 +181,23 @@
       }
     }
   },
+  "experimental": {
+    "title": "Experimental",
+    "sub-nav": {
+      "about": {
+        "title": "About"
+      },
+      "checkbox": {
+        "title": "Checkbox"
+      },
+      "layout": {
+        "title": "Layout"
+      },
+      "shell": {
+        "title": "Shell"
+      }
+    }
+  },
   "data-visualization": {
     "title": "Data Visualization",
     "sub-nav": {
