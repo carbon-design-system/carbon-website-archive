@@ -82,10 +82,12 @@ body,
     width: 100%;
     border-radius: 0;
     display: block;
+    color: black;
 }
 
 .vscode-body code {
     font-size: 12px;
+    color: black;
 }
 
 .vscode-body img {
