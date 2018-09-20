@@ -62,11 +62,7 @@ class ComponentReactExample extends Component {
   };
 
   render() {
-    const { 
-      name, 
-      component, 
-      variation, 
-    } = this.props;
+    const { name, component, variation } = this.props;
     const componentLink = `http://react.carbondesignsystem.com/?selectedKind=${component}&selectedStory=${variation}`;
     return (
       <div className="component-variation">
@@ -75,10 +71,11 @@ class ComponentReactExample extends Component {
           This component is currently only available in{' '}
           <a href="https://github.com/ibm/carbon-components-react" target="_blank">
             our React library
-          </a>.
+          </a>
+          .
         </p>
         <div>
-        <div className="svg--sprite" aria-hidden="true" />
+          <div className="svg--sprite" aria-hidden="true" />
           <div className="component-example__live component-example__live--light">
             <div className="component-example__live--rendered">
               <div ref={comp => (this.comp = comp)} />
@@ -94,5 +91,3 @@ class ComponentReactExample extends Component {
 }
 
 export default ComponentReactExample;
-
-

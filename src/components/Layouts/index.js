@@ -1,7 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { StaticQuery, graphql } from 'gatsby';
 import classnames from 'classnames';
 import SideNav from '../SideNav';
 import SideNavToggleBtn from '../SideNavToggleBtn';
@@ -42,7 +42,7 @@ class Layout extends React.Component {
       }, 5);
     }
   };
-  
+
   render() {
     const { children } = this.props;
     const classNames = classnames('container', {
@@ -64,7 +64,18 @@ class Layout extends React.Component {
           <>
             <Helmet
               title={data.site.siteMetadata.title}
-              meta={[{ name: 'description', content: 'Carbon is the design system for IBM web and product. It is a series of individual styles, components, and guidelines used for creating unified UI.' }, { name: 'keywords', content: 'IBM, design, system, Carbon, design system, Bluemix, styleguide, style, guide, components, library, pattern, kit, component, cloud' }]}
+              meta={[
+                {
+                  name: 'description',
+                  content:
+                    'Carbon is the design system for IBM web and product. It is a series of individual styles, components, and guidelines used for creating unified UI.',
+                },
+                {
+                  name: 'keywords',
+                  content:
+                    'IBM, design, system, Carbon, design system, Bluemix, styleguide, style, guide, components, library, pattern, kit, component, cloud',
+                },
+              ]}
               link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon32}` }]}
             >
               <html lang="en" />
@@ -75,7 +86,6 @@ class Layout extends React.Component {
               {children}
               <Footer isExpanded={this.state.isOpen} />
             </div>
-                
           </>
         )}
       />
@@ -83,4 +93,4 @@ class Layout extends React.Component {
   }
 }
 
-export default Layout
+export default Layout;

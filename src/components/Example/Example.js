@@ -12,35 +12,26 @@ export default class Example extends React.Component {
   };
 
   render() {
-    const {
-      children,
-      title,
-      text,
-      correct,
-    } = this.props;
+    const { children, title, text, correct } = this.props;
 
     const icon = correct ? 'icon--checkmark' : 'icon--close';
     const iconClassNames = classnames({
-      'example__icon': true,
+      example__icon: true,
       'example__icon--correct': correct,
       'example__icon--incorrect': !correct,
     });
-   
-    return (    
+
+    return (
       <div className="example">
         <p className="example__title">
           <Icon name={icon} className={iconClassNames} />
-          {title} 
+          {title}
         </p>
         <div className="example__content">
-          { text
-              ? <p className="example__text">{text}</p>
-              : null
-          }   
+          {text ? <p className="example__text">{text}</p> : null}
           {children}
         </div>
       </div>
     );
   }
 }
-

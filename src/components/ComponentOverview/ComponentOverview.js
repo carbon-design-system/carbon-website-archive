@@ -1,46 +1,44 @@
 import React from 'react';
-import { Link } from "gatsby";
+import { Link } from 'gatsby';
 
 class ComponentOverview extends React.Component {
-  renderItems = (currentItem) => {  
-
+  renderItems = currentItem => {
     const component = currentItem.item;
-  
-    let componentUrl
+
+    let componentUrl;
     if (component === 'Multiselect') {
-      componentUrl = '/components/dropdown'
-    } 
-    else {
-      componentUrl = `/components/${component.toLowerCase().replace(' ', '-')}`
+      componentUrl = '/components/dropdown';
+    } else {
+      componentUrl = `/components/${component.toLowerCase().replace(' ', '-')}`;
     }
 
-   let componentImg;
-   try{ 
-    componentImg = require(`../../content/components/overview/images/${component}.svg`);
-   } catch(e) { 
-    componentImg = require('../../content/components/overview/images/NoImage.svg');
-   }
+    let componentImg;
+    try {
+      componentImg = require(`../../content/components/overview/images/${component}.svg`);
+    } catch (e) {
+      componentImg = require('../../content/components/overview/images/NoImage.svg');
+    }
 
     return (
       <li className="component-item" key={component}>
-          <div className="flex-item">
-            <Link to={componentUrl}>
-              <img src={componentImg} alt={component} />
-              <p className="component-name">{component}</p>
-            </Link>
-          </div>
+        <div className="flex-item">
+          <Link to={componentUrl}>
+            <img src={componentImg} alt={component} />
+            <p className="component-name">{component}</p>
+          </Link>
+        </div>
       </li>
     );
   };
 
-  render() {   
+  render() {
     const componentList = require('../../data/components.json'); // eslint-disable-line
     return (
       <div>
         <ul className="flex-container">
           {Object.keys(componentList.items).map(item => {
             return this.renderItems(componentList.items[item]);
-          })}      
+          })}
         </ul>
       </div>
     );
@@ -48,4 +46,3 @@ class ComponentOverview extends React.Component {
 }
 
 export default ComponentOverview;
-

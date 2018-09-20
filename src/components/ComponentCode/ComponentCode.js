@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import ComponentExample from '../ComponentExample/ComponentExample';
- 
+
 export default class ComponentCode extends React.Component {
   static propTypes = {
     name: PropTypes.string,
@@ -18,10 +18,10 @@ export default class ComponentCode extends React.Component {
   };
 
   render() {
-    const { 
-      component, 
+    const {
+      component,
       name,
-      codepen, 
+      codepen,
       haslightbackground,
       haslightversion,
       hasreactversion,
@@ -33,7 +33,7 @@ export default class ComponentCode extends React.Component {
     let htmlFile;
     htmlFile = require(`carbon-components/html/${component}/${variation}.html`);
 
-    return (    
+    return (
       <div className="component-variation">
         <h2 className="page-h2">{name}</h2>
         <ComponentExample
@@ -47,9 +47,8 @@ export default class ComponentCode extends React.Component {
           hasAngularVersion={hasangularversion}
           hasLightBackground={haslightbackground}
           experimental={experimental}
-       />
-      </div>   
-      
+        />
+      </div>
     );
   }
 }

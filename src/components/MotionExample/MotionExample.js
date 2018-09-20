@@ -8,13 +8,13 @@ class MotionExample extends Component {
     type: PropTypes.string,
     correcttext: PropTypes.string,
     incorrecttext: PropTypes.string,
-  }
+  };
 
   static defaultProps = {
     type: 'standard',
     correcttext: 'Easing',
     incorrecttext: 'No-Easing',
-  }
+  };
 
   state = {
     playing: false,
@@ -26,7 +26,7 @@ class MotionExample extends Component {
       playing: !this.state.playing,
       mouseover: false,
     });
-  }
+  };
 
   overlayMouseOver = () => {
     if (this.state.playing) {
@@ -34,7 +34,7 @@ class MotionExample extends Component {
         mouseover: true,
       });
     }
-  }
+  };
 
   overlayMouseOut = () => {
     if (this.state.playing) {
@@ -42,21 +42,17 @@ class MotionExample extends Component {
         mouseover: false,
       });
     }
-  }
+  };
 
   render() {
-    const {
-      type,
-      correcttext,
-      incorrecttext,
-    } = this.props;
+    const { type, correcttext, incorrecttext } = this.props;
 
     const isSingleExample = type === 'standard' || type === 'ease-in' || type === 'ease-out';
 
     const containerClasses = classnames({
       'motion-example': true,
       'motion-example-easing--container': isSingleExample,
-      'paused': !this.state.playing,
+      paused: !this.state.playing,
     });
 
     const correctClassNames = classnames({
@@ -71,12 +67,12 @@ class MotionExample extends Component {
 
     const playIconClasses = classnames({
       'play-icon': true,
-      'hidden': this.state.playing
+      hidden: this.state.playing,
     });
 
     const pauseIconClasses = classnames({
       'pause-icon': true,
-      'hidden': !this.state.playing
+      hidden: !this.state.playing,
     });
 
     const motionCurveClasses = classnames({
@@ -86,24 +82,26 @@ class MotionExample extends Component {
 
     const overlayClasses = classnames({
       'motion-example__overlay': true,
-      'motion-example__overlay--hover': this.state.mouseover
+      'motion-example__overlay--hover': this.state.mouseover,
     });
 
-    const correctInfo = correcttext ?
-      (
-        <p className="motion-example__correct-text">
-          <Icon alt="correct" name="checkmark" description="correct example" />
-          {correcttext}
-        </p>
-      ) : '';
+    const correctInfo = correcttext ? (
+      <p className="motion-example__correct-text">
+        <Icon alt="correct" name="checkmark" description="correct example" />
+        {correcttext}
+      </p>
+    ) : (
+      ''
+    );
 
-    const incorrectInfo = incorrecttext ?
-      (
-        <p className="motion-example__incorrect-text">
-          <Icon alt="incorrect" name="close" description="incorrect example" />
-          {incorrecttext}
-        </p>
-      ) : '';
+    const incorrectInfo = incorrecttext ? (
+      <p className="motion-example__incorrect-text">
+        <Icon alt="incorrect" name="close" description="incorrect example" />
+        {incorrecttext}
+      </p>
+    ) : (
+      ''
+    );
 
     let curveSvg;
 
@@ -118,15 +116,15 @@ class MotionExample extends Component {
           xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <g id="standard-curve" fill="none" fillRule="evenodd">
-            <path d="M308.613556,11.0327944 C46.9895515,7.38131987 149.49053,309.874432 11,309.874427"></path>
+            <path d="M308.613556,11.0327944 C46.9895515,7.38131987 149.49053,309.874432 11,309.874427" />
           </g>
-          <polyline fill="none" points="10.8641341 10.9289277 10.8641341 312.930566 309.508426 312.930566"></polyline>
+          <polyline fill="none" points="10.8641341 10.9289277 10.8641341 312.930566 309.508426 312.930566" />
           <g id="standard-curve-2" fill="none" fillRule="evenodd">
             <path
               className="standard"
               d="M308.613556,11.0327944 C46.9895515,7.38131987 149.49053,309.874432 11,309.874427"
               strokeDasharray="465"
-            ></path>
+            />
           </g>
         </svg>
       );
@@ -141,15 +139,15 @@ class MotionExample extends Component {
           xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <g id="out-curve" fill="none" fillRule="evenodd">
-            <path d="M314.772644,10.4076925 C90.6179356,10.4076925 14.1472477,310.555156 14.1472477,310.555156"></path>
+            <path d="M314.772644,10.4076925 C90.6179356,10.4076925 14.1472477,310.555156 14.1472477,310.555156" />
           </g>
-          <polyline fill="none" points="10.8641341 10.9289277 10.8641341 312.930566 309.508426 312.930566"></polyline>
+          <polyline fill="none" points="10.8641341 10.9289277 10.8641341 312.930566 309.508426 312.930566" />
           <g id="out-curve-2" fill="none" fillRule="evenodd">
             <path
               className="ease-out"
               d="M314.772644,10.4076925 C90.6179356,10.4076925 14.1472477,310.555156 14.1472477,310.555156"
               strokeDasharray="456"
-            ></path>
+            />
           </g>
         </svg>
       );
@@ -164,16 +162,15 @@ class MotionExample extends Component {
           xmlnsXlink="http://www.w3.org/1999/xlink"
         >
           <g id="in-curve" fill="none" fillRule="evenodd">
-            <path d="M310.223828,10 C310.223828,10 88.1895065,310.22381 10,310.223828"></path>
+            <path d="M310.223828,10 C310.223828,10 88.1895065,310.22381 10,310.223828" />
           </g>
-          <polyline fill="none" points="10.8641341 10.9289277 10.8641341 312.930566 309.508426 312.930566"></polyline>
+          <polyline fill="none" points="10.8641341 10.9289277 10.8641341 312.930566 309.508426 312.930566" />
           <g id="in-curve-2" fill="none" fillRule="evenodd">
             <path
               className="ease-in"
               d="M310.223828,10 C310.223828,10 88.1895065,310.22381 10,310.223828"
               strokeDasharray="429"
-            >
-            </path>
+            />
           </g>
         </svg>
       );
@@ -201,41 +198,38 @@ class MotionExample extends Component {
               fillRule="evenodd"
               transform="translate(54.000000, 54.000000) rotate(-270.000000) translate(-54.000000, -54.000000) "
               points="54 5 103 103 5 103"
-            >
-            </polygon>
+            />
             <g className={pauseIconClasses} stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-              <rect x="0" y="0" width="37" height="98"></rect>
-              <rect x="61" y="0" width="37" height="98"></rect>
+              <rect x="0" y="0" width="37" height="98" />
+              <rect x="61" y="0" width="37" height="98" />
             </g>
           </svg>
         </button>
       </div>
     );
     const motionExampleContent = isSingleExample ? (
-        <div className={containerClasses}>
-          <div className="motion-example__easing-demo">
-            <div className={motionCurveClasses}>
-              {curveSvg}
-            </div>
-            <div className="motion-example__track">
-              <div className=" motion-example__element"></div>
-            </div>
+      <div className={containerClasses}>
+        <div className="motion-example__easing-demo">
+          <div className={motionCurveClasses}>{curveSvg}</div>
+          <div className="motion-example__track">
+            <div className=" motion-example__element" />
           </div>
-          {overlayContent}
         </div>
+        {overlayContent}
+      </div>
     ) : (
-        <div className={containerClasses}>
-          <div className="motion-example__track">
-            <div className={correctClassNames}></div>
-            {correctInfo}
-          </div>
-          <div className="motion-example__track">
-            <div className={incorrectClassNames}></div>
-            {incorrectInfo}
-          </div>
-          {overlayContent}
+      <div className={containerClasses}>
+        <div className="motion-example__track">
+          <div className={correctClassNames} />
+          {correctInfo}
         </div>
-      );
+        <div className="motion-example__track">
+          <div className={incorrectClassNames} />
+          {incorrectInfo}
+        </div>
+        {overlayContent}
+      </div>
+    );
     return motionExampleContent;
   }
 }

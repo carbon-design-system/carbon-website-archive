@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 class LayerTypes extends Component {
-
   render() {
     return (
       <div className="layer-types">

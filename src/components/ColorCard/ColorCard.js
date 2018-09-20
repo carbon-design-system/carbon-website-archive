@@ -45,15 +45,10 @@ export default class ColorCard extends React.Component {
   };
 
   render() {
-    const {  
-      hex, 
-      border, 
-      name, 
-      small 
-    } = this.props;
+    const { hex, border, name, small } = this.props;
 
     const buttonClassName = this.colorContrast(this.props.hex);
-    
+
     const classNames = classnames({
       'color-block': true,
     });
@@ -79,4 +74,3 @@ export default class ColorCard extends React.Component {
     );
   }
 }
-

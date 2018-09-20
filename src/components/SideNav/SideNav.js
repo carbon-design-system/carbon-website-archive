@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import { Link } from "gatsby";
+import { Link } from 'gatsby';
 import { Button, Icon } from 'carbon-components-react';
 
 import SideNavItem from './SideNavItem';
@@ -14,9 +14,7 @@ export default class SideNav extends React.Component {
       if (hideInternal) {
         return '';
       }
-      return ( 
-        <SideNavItem itemSlug={item} item={nav[item]} key={item} />
-      );
+      return <SideNavItem itemSlug={item} item={nav[item]} key={item} />;
     });
 
   render() {
@@ -47,11 +45,7 @@ export default class SideNav extends React.Component {
           </Button>
           <Link to="/resources#github" className="side-nav__link bx--btn bx--btn bx--btn--secondary">
             GitHub Repos
-            <Icon
-              className="bx--btn__icon"
-              name="icon--arrow--right"
-              description="Arrow right"
-            />
+            <Icon className="bx--btn__icon" name="icon--arrow--right" description="Arrow right" />
           </Link>
         </div>
       </nav>
