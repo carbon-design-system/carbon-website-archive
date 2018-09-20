@@ -187,6 +187,9 @@
       "about": {
         "title": "About"
       },
+      "color": {
+        "title": "Color"
+      },
       "checkbox": {
         "title": "Checkbox"
       },
