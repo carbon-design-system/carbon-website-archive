@@ -9,6 +9,10 @@
     top: .5rem;
   }
 
+  //---------------------------------------
+  // Algolia styles
+  //---------------------------------------
+
   .algolia-autocomplete {
     height: 2rem;
   }
@@ -39,6 +43,7 @@
     @include typescale('zeta');
     color: $text-02;
     font-size: .875rem;
+    padding-top: .5rem;
   }
 
   /* Title (eg. Bootstrap CDN) */

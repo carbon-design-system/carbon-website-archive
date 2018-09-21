@@ -11,6 +11,7 @@ $feature-flags: (); // Dummy value so `global-variable-exists()` check in `@feat
   $imported-modules-local: ();
   $feature-flags: (
     components-x: true,
+    ui-shell: true,
   );
   @import 'carbon-components/src/globals/scss/styles';
 }
