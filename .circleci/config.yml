@@ -13,7 +13,7 @@ jobs:
           name: Build external and internal sites
           command: |
             yarn build:external
-            yarn build:internal
+            # yarn build:internal
       - deploy:
           name: deploy to IBM Cloud
           command: |
