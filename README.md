@@ -19,7 +19,7 @@ src
 
 ## 📚 Writing Content
 
-[Content writing guide](CONTENT.md)
+[Content writing guide](docs/CONTENT.md)
 
 ## 👩‍💻 Development
 
