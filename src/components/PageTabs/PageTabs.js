@@ -11,15 +11,12 @@ export default class PageTabs extends React.Component {
 
   render() {
     const { tabs, slug, currentTab } = this.props;
-    let linkSlug = slug.substring(0, slug.indexOf(currentTab));
-    let pageTabs = [];
-    tabs.forEach(tab => {
-      pageTabs.push(
-        <li className={tab.toLowerCase().replace(' ', '-') === currentTab ? 'selected' : ''} key={tab}>
-          <Link to={`${linkSlug}${tab.toLowerCase().replace(' ', '-')}`}>{tab}</Link>
-        </li>
-      );
-    });
+    const linkSlug = slug.substring(0, slug.lastIndexOf(currentTab));
+    const pageTabs = tabs.map(tab => (
+      <li key={tab} className={tab.toLowerCase().replace(' ', '-') === currentTab ? 'selected' : ''} key={tab}>
+        <Link to={`${linkSlug}${tab.toLowerCase().replace(' ', '-')}`}>{tab}</Link>
+      </li>
+    ));
     return (
       <nav className="page-tabs">
         <ul className="page-tabs__list">{pageTabs}</ul>
