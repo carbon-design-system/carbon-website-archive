@@ -14,9 +14,11 @@ export default class IconLibrary extends React.Component {
     iconSearchResults: [],
   };
 
-  filterIconsByName = (icons, name) => icons.filter(icon => icon.name.includes(name));
+  filterIconsByName = (icons, name) =>
+    icons.filter(icon => icon.name.includes(name));
 
-  filterIconsByTag = (icons, tag) => icons.filter(icon => icon.tags.join('').includes(tag));
+  filterIconsByTag = (icons, tag) =>
+    icons.filter(icon => icon.tags.join('').includes(tag));
 
   handleSearch = (icons, searchValue) => {
     const searchVal = searchValue.toLowerCase();
@@ -41,7 +43,9 @@ export default class IconLibrary extends React.Component {
     const initialIcons = (
       <div style={{ marginTop: '70px' }}>
         <h2>UI icons</h2>
-        <div className="icon-container">{this.renderIconCards(iconsToShow)}</div>
+        <div className="icon-container">
+          {this.renderIconCards(iconsToShow)}
+        </div>
       </div>
     );
 
@@ -49,7 +53,9 @@ export default class IconLibrary extends React.Component {
       <div style={{ marginTop: '70px' }}>
         <h2>Service icons</h2>
         <div className="icon-container">
-          {this.renderIconCards(icons.filter(icon => serviceIconNames.indexOf(icon.name) !== -1))}
+          {this.renderIconCards(
+            icons.filter(icon => serviceIconNames.indexOf(icon.name) !== -1)
+          )}
         </div>
       </div>
     );
@@ -58,7 +64,11 @@ export default class IconLibrary extends React.Component {
       <div style={{ marginTop: '70px' }}>
         <h2>Search results</h2>
         <div className="icon-container">
-          {this.state.iconSearchResults.length > 0 ? this.renderIconCards(this.state.iconSearchResults) : <IconEmptyState />}
+          {this.state.iconSearchResults.length > 0 ? (
+            this.renderIconCards(this.state.iconSearchResults)
+          ) : (
+            <IconEmptyState />
+          )}
         </div>
       </div>
     );
@@ -192,8 +202,11 @@ function printAttributes(attrs) {
 
 function toSVG(icon) {
   const { svgData, width, height, viewBox } = icon;
-  const svg = children => `<svg ${printAttributes({ width, height, viewBox })}>${children}</svg>`;
-  const paths = svgData.paths.map(path => `<path d="${path.d}"></path>`).join('');
+  const svg = children =>
+    `<svg ${printAttributes({ width, height, viewBox })}>${children}</svg>`;
+  const paths = svgData.paths
+    .map(path => `<path d="${path.d}"></path>`)
+    .join('');
 
   if (!svgData.g) {
     return svg(paths);

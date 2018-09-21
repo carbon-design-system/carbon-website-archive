@@ -1,9 +1,8 @@
 ---
 label: Getting Started
 title: Developers
-tabs: ['Vanilla', 'React','Angular', 'Other']
+tabs: ['Vanilla', 'React', 'Angular', 'Other']
 ---
-
 
 <page-intro>The **[Carbon Components Angular Library](http://angular.carbondesignsystem.com/)** provides front-end developers & engineers a collection of reusable Angular components to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.</page-intro>
 
@@ -20,7 +19,7 @@ $ npm i --save-dev carbon-components-angular carbon-components @ngx-translate/co
 Then we need to include carbon-components in `src/styles.scss`:
 
 ```scss
-@import "~carbon-components/scss/globals/scss/styles.scss";
+@import '~carbon-components/scss/globals/scss/styles.scss';
 ```
 
 And set up our translations in `src/app/app.module.ts`:

@@ -41,8 +41,14 @@ class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <main id="maincontent" role="main" className="overview-page" tabIndex="-1">
-          <section className="overview-page__banner" aria-label="overview page banner">
+        <main
+          id="maincontent"
+          role="main"
+          className="overview-page"
+          tabIndex="-1">
+          <section
+            className="overview-page__banner"
+            aria-label="overview page banner">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2500 823">
               <g fill="none" strokeWidth="2">
                 <path
@@ -126,7 +132,12 @@ class IndexPage extends React.Component {
                 />
               </g>
               <g fill="none" stroke="#0B21A8" strokeWidth="2">
-                <circle cx="330.25" cy="343.51" r="65.56" transform="translate(-94.02 125.42) rotate(-19)" />
+                <circle
+                  cx="330.25"
+                  cy="343.51"
+                  r="65.56"
+                  transform="translate(-94.02 125.42) rotate(-19)"
+                />
                 <circle
                   data-name="Oval"
                   cx="304.83"
@@ -146,18 +157,48 @@ class IndexPage extends React.Component {
               </g>
               <g fill="none" stroke="#0B21A8" strokeWidth="2">
                 <path d="M664.58 377.77l-163.43-31.24L610.9 220.28l53.68 157.49z" />
-                <path data-name="Triangle" opacity=".3" d="M692.39 366.28l-163.42-31.23L638.72 208.8l53.67 157.48z" />
-                <path data-name="Triangle" opacity=".1" d="M725.64 350.6l-163.42-31.23 109.75-126.25 53.67 157.48z" />
+                <path
+                  data-name="Triangle"
+                  opacity=".3"
+                  d="M692.39 366.28l-163.42-31.23L638.72 208.8l53.67 157.48z"
+                />
+                <path
+                  data-name="Triangle"
+                  opacity=".1"
+                  d="M725.64 350.6l-163.42-31.23 109.75-126.25 53.67 157.48z"
+                />
               </g>
               <g fill="none" stroke="#0B21A8" strokeWidth="2">
-                <path data-name="Triangle" d="M74.92 510.53l11.09-166.01 138.68 93.54-149.77 72.47z" />
-                <path data-name="Triangle" opacity=".3" d="M89.71 536.74l11.09-166.01 138.68 93.54-149.77 72.47z" />
-                <path data-name="Triangle" opacity=".1" d="M109.33 567.83l11.08-166.01 138.69 93.54-149.77 72.47z" />
+                <path
+                  data-name="Triangle"
+                  d="M74.92 510.53l11.09-166.01 138.68 93.54-149.77 72.47z"
+                />
+                <path
+                  data-name="Triangle"
+                  opacity=".3"
+                  d="M89.71 536.74l11.09-166.01 138.68 93.54-149.77 72.47z"
+                />
+                <path
+                  data-name="Triangle"
+                  opacity=".1"
+                  d="M109.33 567.83l11.08-166.01 138.69 93.54-149.77 72.47z"
+                />
               </g>
               <g fill="none" stroke="#0B21A8" strokeWidth="2">
-                <path data-name="Triangle" d="M1140.96 534.62l77.65-147.15 88.64 141.86-166.29 5.29z" />
-                <path data-name="Triangle" opacity=".3" d="M1143.81 564.58l77.65-147.15 88.65 141.86-166.3 5.29z" />
-                <path data-name="Triangle" opacity=".1" d="M1149.08 600.96l77.65-147.15 88.65 141.86-166.3 5.29z" />
+                <path
+                  data-name="Triangle"
+                  d="M1140.96 534.62l77.65-147.15 88.64 141.86-166.29 5.29z"
+                />
+                <path
+                  data-name="Triangle"
+                  opacity=".3"
+                  d="M1143.81 564.58l77.65-147.15 88.65 141.86-166.3 5.29z"
+                />
+                <path
+                  data-name="Triangle"
+                  opacity=".1"
+                  d="M1149.08 600.96l77.65-147.15 88.65 141.86-166.3 5.29z"
+                />
               </g>
               <g fill="none" stroke="#0B21A8" strokeWidth="2">
                 <path d="M246.65 550.67l60.69-50.93 74.44 27.1 13.76 78.02-60.69 50.93-74.45-27.1-13.75-78.02z" />
@@ -173,7 +214,10 @@ class IndexPage extends React.Component {
                 />
               </g>
               <g fill="none" stroke="#0B21A8" strokeWidth="2">
-                <path data-name="Polygon" d="M1062.61 673.33h-82.18l-41.09-71.17 41.09-71.17h82.18l41.09 71.17-41.09 71.17z" />
+                <path
+                  data-name="Polygon"
+                  d="M1062.61 673.33h-82.18l-41.09-71.17 41.09-71.17h82.18l41.09 71.17-41.09 71.17z"
+                />
                 <path
                   data-name="Polygon"
                   opacity=".3"
@@ -186,9 +230,20 @@ class IndexPage extends React.Component {
                 />
               </g>
               <g fill="none" stroke="#0B21A8" strokeWidth="2">
-                <path data-name="Polygon" d="M753.93 90.33h99.99l49.99 86.59-49.99 86.59h-99.99l-50-86.59 50-86.59z" />
-                <path data-name="Polygon" opacity=".3" d="M799.07 114.06h99.98l50 86.6-50 86.59h-99.98l-50-86.59 50-86.6z" />
-                <path data-name="Polygon" opacity=".1" d="M843.05 121.65h99.98l50 86.59-50 86.59h-99.98l-50-86.59 50-86.59z" />
+                <path
+                  data-name="Polygon"
+                  d="M753.93 90.33h99.99l49.99 86.59-49.99 86.59h-99.99l-50-86.59 50-86.59z"
+                />
+                <path
+                  data-name="Polygon"
+                  opacity=".3"
+                  d="M799.07 114.06h99.98l50 86.6-50 86.59h-99.98l-50-86.59 50-86.6z"
+                />
+                <path
+                  data-name="Polygon"
+                  opacity=".1"
+                  d="M843.05 121.65h99.98l50 86.59-50 86.59h-99.98l-50-86.59 50-86.59z"
+                />
               </g>
               <g data-name="c1" fill="none" strokeWidth="2">
                 <path
@@ -229,7 +284,13 @@ class IndexPage extends React.Component {
                 />
               </g>
               <g fill="none" stroke="#0B21A8" strokeWidth="2">
-                <circle data-name="Oval" cx="1400.43" cy="210.27" r="79.61" transform="translate(1116.98 1596.97) rotate(-87)" />
+                <circle
+                  data-name="Oval"
+                  cx="1400.43"
+                  cy="210.27"
+                  r="79.61"
+                  transform="translate(1116.98 1596.97) rotate(-87)"
+                />
                 <circle
                   data-name="Oval"
                   cx="1374.91"
@@ -277,67 +338,98 @@ class IndexPage extends React.Component {
             <h1 className="banner__logo">
               <span className="banner__logo--bold">Carbon</span> Design System
             </h1>
-            <Link to="/components/overview" className="bx--btn bx--btn--secondary banner__cta-btn">
+            <Link
+              to="/components/overview"
+              className="bx--btn bx--btn--secondary banner__cta-btn">
               Explore the system
             </Link>
           </section>
-          <section aria-label="overview page section 1" className="overview-page__section">
+          <section
+            aria-label="overview page section 1"
+            className="overview-page__section">
             <ul className="overview-page__list">
               <li className="overview-page__list-item">
-                <Link to="/getting-started" aria-label="Getting started" className="list-item__icon">
+                <Link
+                  to="/getting-started"
+                  aria-label="Getting started"
+                  className="list-item__icon">
                   <img src={gettingStartedIll} alt="" />
                 </Link>
                 <div className="list-item__info">
                   <Link to="/getting-started/designers">Getting Started</Link>
-                  <p>Onboarding for designers and developers who are using Carbon for the first time.</p>
+                  <p>
+                    Onboarding for designers and developers who are using Carbon
+                    for the first time.
+                  </p>
                 </div>
               </li>
               <li className="overview-page__list-item">
-                <Link to="/style" aria-label="Style" className="list-item__icon">
+                <Link
+                  to="/style"
+                  aria-label="Style"
+                  className="list-item__icon">
                   <img src={styleIll} alt="" />
                 </Link>
                 <div className="list-item__info">
                   <Link to="/guidelines/color/swatches">Guidelines</Link>
-                  <p>Guidance on usage and application for basic design elements.</p>
+                  <p>
+                    Guidance on usage and application for basic design elements.
+                  </p>
                 </div>
               </li>
               <li className="overview-page__list-item">
-                <Link to="/components" aria-label="Components" className="list-item__icon">
+                <Link
+                  to="/components"
+                  aria-label="Components"
+                  className="list-item__icon">
                   <img src={componentsIll} alt="" />
                 </Link>
                 <div className="list-item__info">
                   <Link to="/components/overview">Components</Link>
-                  <p>A library of all Carbon components, comprised of code, usage and style guidelines.</p>
+                  <p>
+                    A library of all Carbon components, comprised of code, usage
+                    and style guidelines.
+                  </p>
                 </div>
               </li>
               <li className="overview-page__list-item">
-                <Link to="/resources" aria-label="Resources" className="list-item__icon">
+                <Link
+                  to="/resources"
+                  aria-label="Resources"
+                  className="list-item__icon">
                   <img src={resourcesIll} alt="" />
                 </Link>
                 <div className="list-item__info">
                   <Link to="/resources">Resources</Link>
-                  <p>A helpful list of tools, links and downloads that will improve a Carbon user's workflow.</p>
+                  <p>
+                    A helpful list of tools, links and downloads that will
+                    improve a Carbon user's workflow.
+                  </p>
                 </div>
               </li>
             </ul>
           </section>
-          <section aria-label="overview page section 2" className="overview-page__section overview-page__section--gray">
+          <section
+            aria-label="overview page section 2"
+            className="overview-page__section overview-page__section--gray">
             <ul className="overview-page__list">
               <li className="overview-page__list-item">
                 <ClickableTile
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://github.com/ibm/carbon-design-kit"
-                  className="overview-page__tile"
-                >
+                  className="overview-page__tile">
                   <div className="tile__icon">
                     <img src={sketchIcon} alt="" />
                   </div>
                   <div className="tile__info">
-                    <p aria-label="Carbon Design Kit on Github">Carbon Design Kit</p>
+                    <p aria-label="Carbon Design Kit on Github">
+                      Carbon Design Kit
+                    </p>
                     <p>
-                      A Sketch file containing core visual styles, components, and patterns a designer needs to use Carbon as a
-                      framework for building product experiences.
+                      A Sketch file containing core visual styles, components,
+                      and patterns a designer needs to use Carbon as a framework
+                      for building product experiences.
                     </p>
                   </div>
                 </ClickableTile>
@@ -347,16 +439,18 @@ class IndexPage extends React.Component {
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://github.com/ibm/carbon-components"
-                  className="overview-page__tile"
-                >
+                  className="overview-page__tile">
                   <div className="tile__icon">
                     <img src={githubIcon} alt="" />
                   </div>
                   <div className="tile__info">
-                    <p aria-label="Carbon Components on Github">Carbon Components</p>
+                    <p aria-label="Carbon Components on Github">
+                      Carbon Components
+                    </p>
                     <p>
-                      The Component Library gives developers a collection of re-usable HTML and Sass partials they can use for
-                      building websites and user interfaces.
+                      The Component Library gives developers a collection of
+                      re-usable HTML and Sass partials they can use for building
+                      websites and user interfaces.
                     </p>
                   </div>
                 </ClickableTile>
@@ -366,15 +460,17 @@ class IndexPage extends React.Component {
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://github.com/ibm/carbon-components-react"
-                  className="overview-page__tile"
-                >
+                  className="overview-page__tile">
                   <div className="tile__icon">
                     <img src={githubIcon} alt="" />
                   </div>
                   <div className="tile__info">
-                    <p aria-label="Carbon Components on Github">Carbon Components React</p>
+                    <p aria-label="Carbon Components on Github">
+                      Carbon Components React
+                    </p>
                     <p>
-                      The Component Library gives developers a collection of re-usable React components they can use for building
+                      The Component Library gives developers a collection of
+                      re-usable React components they can use for building
                       websites and user interfaces.
                     </p>
                   </div>
@@ -385,16 +481,18 @@ class IndexPage extends React.Component {
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://github.com/ibm/carbon-components-angular"
-                  className="overview-page__tile"
-                >
+                  className="overview-page__tile">
                   <div className="tile__icon">
                     <img src={githubIcon} alt="" />
                   </div>
                   <div className="tile__info">
-                    <p aria-label="Carbon Components on Github">Carbon Components Angular</p>
+                    <p aria-label="Carbon Components on Github">
+                      Carbon Components Angular
+                    </p>
                     <p>
-                      The Component Library gives developers a collection of re-usable Angular components they can use for
-                      building websites and user interfaces.
+                      The Component Library gives developers a collection of
+                      re-usable Angular components they can use for building
+                      websites and user interfaces.
                     </p>
                   </div>
                 </ClickableTile>
@@ -404,15 +502,15 @@ class IndexPage extends React.Component {
                   target="_blank"
                   rel="noopener noreferrer"
                   href="http://www.codepen.io/team/carbon"
-                  className="overview-page__tile"
-                >
+                  className="overview-page__tile">
                   <div className="tile__icon">
                     <img src={codepenIcon} alt="" />
                   </div>
                   <div className="tile__info">
                     <p>Carbon CodePen</p>
                     <p>
-                      CodePen, a social development playground for front-end designers and developers, houses demos of Carbon
+                      CodePen, a social development playground for front-end
+                      designers and developers, houses demos of Carbon
                       Components.
                     </p>
                   </div>
@@ -423,15 +521,15 @@ class IndexPage extends React.Component {
                   target="_blank"
                   rel="noopener noreferrer"
                   href="http://themes.carbondesignsystem.com/"
-                  className="overview-page__tile"
-                >
+                  className="overview-page__tile">
                   <div className="tile__icon">
                     <img src={sandboxIcon} alt="" />
                   </div>
                   <div className="tile__info">
                     <p>Theming Sandbox</p>
                     <p>
-                      This sandbox allows you to build a custom theme by changing a color variable's hex value and then exporting
+                      This sandbox allows you to build a custom theme by
+                      changing a color variable's hex value and then exporting
                       the theme sheet SCSS file.
                     </p>
                   </div>
@@ -442,14 +540,17 @@ class IndexPage extends React.Component {
           <section
             aria-label="overview page section 3"
             className="overview-page__section overview-page__section--contribute"
-            style={{ backgroundImage: `url(${scatter})` }}
-          >
+            style={{ backgroundImage: `url(${scatter})` }}>
             <div className="contribute__info">
               <h2>Wondering how to contribute to Carbon?</h2>
               <p>
-                We welcome all feedback, designs, or ideas in order to produce the best possible experience for our users. If
-                you're interested in contributing, check out our{' '}
-                <Link to="/getting-started/contributing">contributing guidelines</Link> to get started.
+                We welcome all feedback, designs, or ideas in order to produce
+                the best possible experience for our users. If you're interested
+                in contributing, check out our{' '}
+                <Link to="/getting-started/contributing">
+                  contributing guidelines
+                </Link>{' '}
+                to get started.
               </p>
             </div>
           </section>

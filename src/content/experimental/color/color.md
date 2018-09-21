@@ -21,7 +21,7 @@ title: Color
 <color-card name="field-01" hex="#f2f4f8"></color-card>
 </flex-group>
 
-### Hover Colors 
+### Hover Colors
 
 <flex-group>
 <color-card name="hover-primary" hex="#004ecc"></color-card>

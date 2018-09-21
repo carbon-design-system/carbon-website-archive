@@ -1,7 +1,7 @@
 ---
 label: Data Visualization
 title: Pie Chart
-tabs: ['Code','Usage','Style']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## General guidelines

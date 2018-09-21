@@ -7,20 +7,20 @@ title: IBM Design Language
 
 The Carbon Design System is integrating the new IBM Design Ethos and Language. It represents a completely fresh approach to the design of all things at IBM.
 
-The Carbon team will be updating components and introducing new guidelines incrementally into the Carbon Design System over the next few months. You’ll notice new entries marked “experimental” being added all the time. Experimental components are not fully tested and/or vetted, but are available for designers to work with. Your feedback on these components is critical for the success of Carbon; please open a github issue from the footer of any page on the Carbon site to let the team know what you think. 
+The Carbon team will be updating components and introducing new guidelines incrementally into the Carbon Design System over the next few months. You’ll notice new entries marked “experimental” being added all the time. Experimental components are not fully tested and/or vetted, but are available for designers to work with. Your feedback on these components is critical for the success of Carbon; please open a github issue from the footer of any page on the Carbon site to let the team know what you think.
 
 ### FAQ
 
 **What is changing?**
 
-Carbon is the IBM Design System for digital products. The new IBM Design Language will define and guide everything designed by IBM, including software products, digital and traditional marketing, hardware, advertising, events, physical spaces, and more. The Carbon Design System is the “digital manifestation” of the Design Language.    
+Carbon is the IBM Design System for digital products. The new IBM Design Language will define and guide everything designed by IBM, including software products, digital and traditional marketing, hardware, advertising, events, physical spaces, and more. The Carbon Design System is the “digital manifestation” of the Design Language.
 
 **How do I ensure that my products are ready for this transition?**
 
-Keep building with Carbon! The best way to ensure a smooth transition is to adhere to the Carbon Design System guidelines, elements and components. 
+Keep building with Carbon! The best way to ensure a smooth transition is to adhere to the Carbon Design System guidelines, elements and components.
 
 **How will teams adopt the new IBM Design Language?**
-   
+
 The IBM Design core team is establishing an adoption and activation program. A new <a href="https://w3.ibm.com/design/essentials">IBM Design Essentials</a> course is available. Teams will receive either in-person or remote education before the first products using the new IBM Design Language are released. We'll share news on Slack, Connections, and in the IBM Design Town Hall.
 
 ### Updates

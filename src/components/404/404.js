@@ -10,10 +10,14 @@ class FourOhFour extends React.Component {
           <img alt="404 jackalope" src={jackalope} />
         </div>
         <div className="fourohfour-caption">
-          <p className="fourohfour-title">Congratulations! You found the illusive jackalope!</p>
+          <p className="fourohfour-title">
+            Congratulations! You found the illusive jackalope!
+          </p>
           <p className="fourohfour-sub">
-            Unfortunately, we couldn't find the page you were looking for. Here are some helpful links instead:
-            <Link to="/components">Components</Link>,<Link to="/resources">Resources</Link>
+            Unfortunately, we couldn't find the page you were looking for. Here
+            are some helpful links instead:
+            <Link to="/components">Components</Link>,
+            <Link to="/resources">Resources</Link>
           </p>
         </div>
       </div>

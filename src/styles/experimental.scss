@@ -4,7 +4,9 @@
     provide overrides. 
 */
 
-$feature-flags: (); // Dummy value so `global-variable-exists()` check in `@feature-flag-enabled` work
+$feature-flags: (
+
+); // Dummy value so `global-variable-exists()` check in `@feature-flag-enabled` work
 
 .carbon-demo-experimental {
   $prefix: 'demo';

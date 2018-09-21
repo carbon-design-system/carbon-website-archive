@@ -1,20 +1,20 @@
 //---------------------------------------
-// UI Shell 
+// UI Shell
 //---------------------------------------
 
 .ui-shell.component-example__live--rendered .demo--platform-header {
-    position: relative;
+  position: relative;
 }
 
 .carbon-demo-experimental .demo--platform-header ~ .demo--side-nav {
-    position: relative;
-    top: 0!important;
+  position: relative;
+  top: 0 !important;
 }
 
 //---------------------------------------
-// Experimental Text Input 
+// Experimental Text Input
 //---------------------------------------
 
 .carbon-demo-experimental .demo--form-item {
-    margin-bottom: $spacing-lg;
+  margin-bottom: $spacing-lg;
 }

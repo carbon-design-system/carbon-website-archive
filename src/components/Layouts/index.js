@@ -76,12 +76,24 @@ class Layout extends React.Component {
                     'IBM, design, system, Carbon, design system, Bluemix, styleguide, style, guide, components, library, pattern, kit, component, cloud',
                 },
               ]}
-              link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon32}` }]}
-            >
+              link={[
+                {
+                  rel: 'shortcut icon',
+                  type: 'image/png',
+                  href: `${favicon32}`,
+                },
+              ]}>
               <html lang="en" />
             </Helmet>
-            <SideNavToggleBtn onToggleBtnClick={this.onToggleBtnClick} isOpen={this.state.isOpen} />
-            <SideNav isFinal={this.state.isFinal} isOpen={this.state.isOpen} location={this.props.location} />
+            <SideNavToggleBtn
+              onToggleBtnClick={this.onToggleBtnClick}
+              isOpen={this.state.isOpen}
+            />
+            <SideNav
+              isFinal={this.state.isFinal}
+              isOpen={this.state.isOpen}
+              location={this.props.location}
+            />
             <div className={classNames}>
               {children}
               <Footer isExpanded={this.state.isOpen} />

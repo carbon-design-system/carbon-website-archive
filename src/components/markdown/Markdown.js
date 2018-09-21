@@ -9,7 +9,12 @@ export class PageIntro extends React.Component {
 
 export class PageIcon extends React.Component {
   render() {
-    return <Icon name={this.props.name} className={`page-icon page-icon-${this.props.color}`} />;
+    return (
+      <Icon
+        name={this.props.name}
+        className={`page-icon page-icon-${this.props.color}`}
+      />
+    );
   }
 }
 

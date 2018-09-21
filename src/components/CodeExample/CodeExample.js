@@ -67,21 +67,25 @@ class CodeExample extends Component {
       'code-example__expand--hidden': !this.state.showBtn,
     });
 
-    const expandCodeBtnText = this.state.expandedCode ? 'Show less code' : 'Show more code';
+    const expandCodeBtnText = this.state.expandedCode
+      ? 'Show less code'
+      : 'Show more code';
     return (
       <div className="code-example">
         <div
           className={codeExampleClass}
           ref={ref => {
             this.codeBlock = ref;
-          }}
-        >
+          }}>
           <pre className="line-numbers">
             <code className="language-html">{htmlFile}</code>
           </pre>
         </div>
         <CopyToClipboard text={htmlFile} onCopy={this.handleCopy}>
-          <button data-copy-btn className="bx--snippet-button code-example__copy-btn" onClick={() => this.handleClick()}>
+          <button
+            data-copy-btn
+            className="bx--snippet-button code-example__copy-btn"
+            onClick={() => this.handleClick()}>
             Copy
             <Icon
               alt="copy button"
@@ -94,7 +98,12 @@ class CodeExample extends Component {
         </CopyToClipboard>
         <button className={expandBtnClass} onClick={this.expandCode}>
           <span>{expandCodeBtnText}</span>
-          <Icon alt="expand code" className={expandBtnIconClass} name="chevron--down" description="Expand code icon" />
+          <Icon
+            alt="expand code"
+            className={expandBtnIconClass}
+            name="chevron--down"
+            description="Expand code icon"
+          />
         </button>
       </div>
     );

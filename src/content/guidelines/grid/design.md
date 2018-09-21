@@ -50,17 +50,17 @@ In devices with a screen width greater than 768px, the margins are 5% on the lef
 
 **Example: Screen Width 768px**
 
-* 5% left = 38px (rounded to nearest whole pixel)
-* 5% right = 38px (rounded to nearest whole pixel)
-* 12 columns + gutters = 768px - 38px - 38px = 692px (rounded to nearest whole pixel)
+- 5% left = 38px (rounded to nearest whole pixel)
+- 5% right = 38px (rounded to nearest whole pixel)
+- 12 columns + gutters = 768px - 38px - 38px = 692px (rounded to nearest whole pixel)
 
 In devices with a screen width less than 768px, the margins are 3% on the left, and 3% on the right.
 
 **Example: Screen Width 320px**
 
-* 3% left = 10px (rounded to nearest whole pixel)
-* 3% right = 10px (rounded to nearest whole pixel)
-* 12 columns + gutters = 320px - 10px - 10px = 300px (rounded to nearest whole pixel)
+- 3% left = 10px (rounded to nearest whole pixel)
+- 3% right = 10px (rounded to nearest whole pixel)
+- 12 columns + gutters = 320px - 10px - 10px = 300px (rounded to nearest whole pixel)
 
 ### Breakpoints
 

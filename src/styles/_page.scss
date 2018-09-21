@@ -3,30 +3,30 @@
 //---------------------------------------
 
 body {
-    background: $ui-01;
-  }
-  
-  .side-nav + div, //Issue #51 weird bug where sometimes on reload of the page the classnames on container div disapear 
+  background: $ui-01;
+}
+
+.side-nav + div, //Issue #51 weird bug where sometimes on reload of the page the classnames on container div disapear 
   .container {
-    width: 100%;
-    margin-left: 0;
-    transition: $transition--base ease;
-    overflow-x: hidden;
-    position: relative;
-    min-height: 100vh;
-  
-    @include breakpoint('840px') {
-      margin-left: 12.5rem;
-      width: calc(100% - 12.5rem);
-    }
+  width: 100%;
+  margin-left: 0;
+  transition: $transition--base ease;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+
+  @include breakpoint('840px') {
+    margin-left: 12.5rem;
+    width: calc(100% - 12.5rem);
   }
-  
-  .side-nav + .container--expanded, //Issue #51
+}
+
+.side-nav + .container--expanded, //Issue #51
   .container--expanded {
-    width: 100%;
-    margin-left: 0;
-  }
- 
+  width: 100%;
+  margin-left: 0;
+}
+
 //---------------------------------------
 // Page styles
 //---------------------------------------

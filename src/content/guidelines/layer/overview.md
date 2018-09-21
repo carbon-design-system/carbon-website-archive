@@ -10,15 +10,15 @@ tabs: ['Overview', 'Usage']
 
 <layer-types></layer-types>
 
-Layer name | Elevation | Box-shadow
--------------------|--------------|-----------------
-**Base** | 0 | none
-**Flat** | 1 | none
-**Raised** | 2 | 0 1px 2px 0 rgba(0,0,0,0.10);
-**Overlay** | 8 | 0 4px 8px 0 rgba(0,0,0,0.10);
-**Sticky Nav** | 12 | 0 6px 12px 0 rgba(0,0,0,0.10);
-**Temporary Nav** | 16 | 0 8px 16px 0 rgba(0,0,0,0.10);
-**Pop-out** | 24 | 0 12px 24px 0 rgba(0,0,0,0.10);
+| Layer name        | Elevation | Box-shadow                      |
+| ----------------- | --------- | ------------------------------- |
+| **Base**          | 0         | none                            |
+| **Flat**          | 1         | none                            |
+| **Raised**        | 2         | 0 1px 2px 0 rgba(0,0,0,0.10);   |
+| **Overlay**       | 8         | 0 4px 8px 0 rgba(0,0,0,0.10);   |
+| **Sticky Nav**    | 12        | 0 6px 12px 0 rgba(0,0,0,0.10);  |
+| **Temporary Nav** | 16        | 0 8px 16px 0 rgba(0,0,0,0.10);  |
+| **Pop-out**       | 24        | 0 12px 24px 0 rgba(0,0,0,0.10); |
 
 ## Properties
 
@@ -48,5 +48,3 @@ The range of imagined planes in the UI are on a scale from 0 to 24, with zero be
 ![Layer elevation](images/layer-elevation-604.png)
 
 Each layer is a defined marker along the elevation scale. There is not a layer for each level of the scale.
-
-

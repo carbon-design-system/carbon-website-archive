@@ -7,7 +7,7 @@ tabs: ['General', 'Guidance', 'Glossary']
 ## Capitalization
 
 > ![capitalization](images/Aa.svg)
-Good content design is consistent and coherent so that users can trust and predict how to interact with it. Details matter.
+> Good content design is consistent and coherent so that users can trust and predict how to interact with it. Details matter.
 
 Always capitalize proper names, such as United States. Use ALL CAPS for abbreviations, acronyms, and initials (for example, IBM and ASCII) and two-letter abbreviations (for example, AL, AK, and AZ), and for OK.
 
@@ -20,10 +20,10 @@ Use sentence-style capitalization in text and for all text elements in the UI, e
 
 **Examples:**
 
-* Cloud Foundry apps
-* Business models
-* Creating Boolean expressions
-* Planning network architectures
+- Cloud Foundry apps
+- Business models
+- Creating Boolean expressions
+- Planning network architectures
 
 ### Headline style
 
@@ -31,27 +31,27 @@ Use headline-style capitalization for table/grid column headers and product name
 
 **Capitalize the initial letter of the following words:**
 
-* All nouns, pronouns, adjectives, verbs, adverbs, and subordinating conjunctions such as:
-* After
-* Although
-* Because
-* Before
-* How
-* If
-* Than
-* That
-* Though
-* Until
-* When
-* Where
-* Whether
-* While
+- All nouns, pronouns, adjectives, verbs, adverbs, and subordinating conjunctions such as:
+- After
+- Although
+- Because
+- Before
+- How
+- If
+- Than
+- That
+- Though
+- Until
+- When
+- Where
+- Whether
+- While
 
 **Do not capitalize the initial letter of the following words:**
 
-* articles, except as the first word
-* coordinating conjunctions
-* prepositions, except as the first or last word
+- articles, except as the first word
+- coordinating conjunctions
+- prepositions, except as the first or last word
 
 ## Do's & Dont's
 
@@ -81,7 +81,6 @@ To convey a more natural tone, use active voice. People tend to speak in active 
     <example title='Passive Voice' text='"The Limits window is used to specify the minimum and maximum values."'></example>
 </flex-group>
 
-
 ### Do use second person
 
 Engage your readers by using second person **(you, your)**. First person **(I, we, our)** focuses on the writer rather than the audience. People are interested in what they can do and how your story applies to their lives.
@@ -89,11 +88,11 @@ One exception to this is in the case of possessive adjectives in the UI. You can
 
 ### Don't be too formal or stuffy
 
-* Do not be afraid to use contractions once in a while. Decide whether they fit the context.
-* Occasionally begin sentences with **and, but or so.** This usage allows for shorter, scannable sentences. Do not overuse these devices, especially in instructional (steps) content.
-* For example, _“You can deploy an app to the cloud during lunch hour. And still have time to eat”_ is great for Discover, Try, Buy.
-* Occasionally use questions in headings. In both UIs and documentation, questions can be used to further conversational style, but don't overuse them, as they can add to noise and hinder retrievability. Make sure headings that use questions are meaningful. In a UI, questions can be used in a confirmation prompt in a dialog box. For example: _“Do you want to close without saving?”_
-* Use exclamation marks only positively, not negatively. Make sure you use no more than one exclamation mark in a context, such as a single window or a single Docs topic.
+- Do not be afraid to use contractions once in a while. Decide whether they fit the context.
+- Occasionally begin sentences with **and, but or so.** This usage allows for shorter, scannable sentences. Do not overuse these devices, especially in instructional (steps) content.
+- For example, _“You can deploy an app to the cloud during lunch hour. And still have time to eat”_ is great for Discover, Try, Buy.
+- Occasionally use questions in headings. In both UIs and documentation, questions can be used to further conversational style, but don't overuse them, as they can add to noise and hinder retrievability. Make sure headings that use questions are meaningful. In a UI, questions can be used in a confirmation prompt in a dialog box. For example: _“Do you want to close without saving?”_
+- Use exclamation marks only positively, not negatively. Make sure you use no more than one exclamation mark in a context, such as a single window or a single Docs topic.
 
 <flex-group>
     <example correct=true title="Exclamation Points" text='"Your IBM Bluemix account is ready!"'></example>

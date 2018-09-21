@@ -1,13 +1,13 @@
 ---
 label: Component
 title: List
-tabs: ['Code','Usage', 'Style']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## General guidelines
 
 | List type       | Purpose                                                                            |
-|-----------------|------------------------------------------------------------------------------------|
+| --------------- | ---------------------------------------------------------------------------------- |
 | Unordered Lists | To present content of equal status or value.                                       |
 | Ordered Lists   | Imply sequence and order, and are commonly used when giving a set of instructions. |
 
@@ -24,6 +24,7 @@ Arrange List items in a logical way. For example, if the List is about resource 
 Use List items that are grammatically parallel. For example, do not mix passive voice with active voice or declarative sentences (statements) with imperative sentences (direct command).
 
 ---
-***
-> 
-![list example](images/list-usage-1.png)
+
+---
+
+> ![list example](images/list-usage-1.png)
