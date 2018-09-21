@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactGA from 'react-ga';
 import { Link } from 'gatsby';
-import Layout from '../components/layouts';
+import Layout from '../components/Layouts';
 import { ClickableTile } from 'carbon-components-react';
 
 import sketchIcon from '../content/homepage/images/sketch-icon.svg';
