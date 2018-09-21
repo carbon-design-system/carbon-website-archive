@@ -1,7 +1,7 @@
 ---
 label: Component
 title: Structured List
-tabs: ['Code','Usage', 'Style']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 <page-intro>**Structured Lists** group content that is similar or related, such as terms or definitions.</page-intro>

@@ -31,10 +31,13 @@ class Footer extends Component {
     ];
     const formattedDate = `${
       months[lastUpdatedDate.getMonth()]
-    } ${lastUpdatedDate.getDate()}, ${lastUpdatedDate.getFullYear()} at ${lastUpdatedDate.toLocaleTimeString([], {
-      hour: '2-digit',
-      minute: '2-digit',
-    })}`;
+    } ${lastUpdatedDate.getDate()}, ${lastUpdatedDate.getFullYear()} at ${lastUpdatedDate.toLocaleTimeString(
+      [],
+      {
+        hour: '2-digit',
+        minute: '2-digit',
+      }
+    )}`;
     return formattedDate;
   };
 
@@ -51,14 +54,22 @@ class Footer extends Component {
 
   render() {
     const dribbble = (
-      <svg className="social-media__icon" width="32" height="32" viewBox="0 0 32 32">
+      <svg
+        className="social-media__icon"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32">
         <title>Dribble</title>
         <path d="M1 16c0-2.72.67-5.23 2.01-7.53 1.34-2.3 3.16-4.12 5.46-5.46C10.77 1.67 13.28 1 16 1c2.72 0 5.23.67 7.53 2.01 2.3 1.34 4.12 3.16 5.46 5.46C30.33 10.77 31 13.28 31 16c0 2.72-.67 5.23-2.01 7.53-1.34 2.3-3.16 4.12-5.46 5.46C21.23 30.33 18.72 31 16 31c-2.72 0-5.23-.67-7.53-2.01-2.3-1.34-4.12-3.16-5.46-5.46C1.67 21.23 1 18.72 1 16zm2.49 0c0 3.12 1.05 5.87 3.15 8.25.96-1.88 2.48-3.67 4.56-5.37 2.08-1.7 4.11-2.77 6.09-3.21-.3-.7-.59-1.33-.87-1.89-3.44 1.1-7.16 1.65-11.16 1.65-.78 0-1.36-.01-1.74-.03 0 .08-.005.18-.015.3-.01.12-.015.22-.015.3zm.39-3.09c.44.04 1.09.06 1.95.06 3.34 0 6.51-.45 9.51-1.35-1.52-2.7-3.19-4.95-5.01-6.75-1.58.8-2.935 1.91-4.065 3.33-1.13 1.42-1.925 2.99-2.385 4.71zm4.47 12.96c2.26 1.76 4.81 2.64 7.65 2.64 1.48 0 2.95-.28 4.41-.84-.4-3.42-1.18-6.73-2.34-9.93-1.84.4-3.695 1.41-5.565 3.03-1.87 1.62-3.255 3.32-4.155 5.1zm4.59-21.96c1.76 1.82 3.39 4.09 4.89 6.81 2.72-1.14 4.77-2.59 6.15-4.35C21.66 4.45 19 3.49 16 3.49c-1.02 0-2.04.14-3.06.42zm5.97 8.94c.3.64.64 1.45 1.02 2.43 1.48-.14 3.09-.21 4.83-.21 1.24 0 2.47.03 3.69.09-.16-2.72-1.14-5.14-2.94-7.26-1.3 1.94-3.5 3.59-6.6 4.95zm1.77 4.53c1.02 2.96 1.71 6 2.07 9.12 1.58-1.02 2.87-2.33 3.87-3.93s1.6-3.33 1.8-5.19c-1.46-.1-2.79-.15-3.99-.15-1.1 0-2.35.05-3.75.15z" />
       </svg>
     );
 
     const github = (
-      <svg className="social-media__icon" width="32" height="32" viewBox="0 0 32 32">
+      <svg
+        className="social-media__icon"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32">
         <title>Github</title>
         <g>
           <path d="M15.946 2C8.246 2 2 8.19 2 15.826c0 6.11 3.996 11.29 9.537 13.12.697.127.953-.3.953-.666 0-.33-.013-1.42-.02-2.574-3.88.836-4.698-1.63-4.698-1.63-.634-1.6-1.548-2.024-1.548-2.024-1.265-.858.095-.84.095-.84 1.4.097 2.132 1.424 2.132 1.424 1.244 2.114 3.263 1.503 4.06 1.15.124-.894.485-1.504.884-1.85-3.098-.35-6.354-1.535-6.354-6.832 0-1.51.545-2.743 1.437-3.71-.145-.35-.62-1.756.135-3.66 0 0 1.17-.372 3.834 1.417 1.112-.3 2.305-.46 3.49-.46 1.185.006 2.38.16 3.494.466 2.66-1.788 3.83-1.416 3.83-1.416.76 1.903.28 3.31.137 3.66.895.966 1.436 2.2 1.436 3.71 0 5.31-3.264 6.48-6.37 6.82.5.43.947 1.27.947 2.56 0 1.85-.015 3.34-.015 3.794 0 .368.25.8.956.663 5.538-1.83 9.53-7.01 9.53-13.117C29.894 8.19 23.646 2 15.946 2" />
@@ -68,7 +79,11 @@ class Footer extends Component {
     );
 
     const medium = (
-      <svg className="social-media__icon" width="32" height="32" viewBox="0 0 32 32">
+      <svg
+        className="social-media__icon"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32">
         <title>Medium</title>
         <path
           fillRule="evenodd"
@@ -78,7 +93,11 @@ class Footer extends Component {
     );
 
     const twitter = (
-      <svg className="social-media__icon" width="32" height="32" viewBox="0 0 32 32">
+      <svg
+        className="social-media__icon"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32">
         <title>Twitter</title>
         <g fillRule="evenodd">
           <path
@@ -107,7 +126,9 @@ class Footer extends Component {
     return (
       <footer className={footerClasses}>
         <div className="page-footer__content">
-          <p className="page-footer__text page-footer__version-link" id="page-footer__version-label">
+          <p
+            className="page-footer__text page-footer__version-link"
+            id="page-footer__version-label">
             Vanilla Components version{' '}
             <a
               className="page-footer__link"
@@ -115,12 +136,13 @@ class Footer extends Component {
               rel="noopener noreferrer"
               target="_blank"
               aria-labelledby="page-footer__version-label page-footer__version-number"
-              id="page-footer__version-number"
-            >
+              id="page-footer__version-number">
               {version}
             </a>
           </p>
-          <p className="page-footer__text page-footer__version-link" id="page-footer__react-version-label">
+          <p
+            className="page-footer__text page-footer__version-link"
+            id="page-footer__react-version-label">
             React Components version{' '}
             <a
               className="page-footer__link"
@@ -128,13 +150,13 @@ class Footer extends Component {
               rel="noopener noreferrer"
               target="_blank"
               aria-labelledby="page-footer__react-version-label page-footer__react-version-number"
-              id="page-footer__react-version-number"
-            >
+              id="page-footer__react-version-number">
               {reactVersion}
             </a>
           </p>
           <p className="page-footer__text">
-            Website last updated on <span className="page-footer__last-updated">{lastUpdated}</span>
+            Website last updated on{' '}
+            <span className="page-footer__last-updated">{lastUpdated}</span>
           </p>
           <p className="page-footer__text">Copyright © {currentYear} IBM</p>
         </div>
@@ -146,8 +168,7 @@ class Footer extends Component {
                 className="social-media__link"
                 rel="noopener noreferrer"
                 target="_blank"
-                aria-label="Dribble account for Carbon"
-              >
+                aria-label="Dribble account for Carbon">
                 {dribbble}
               </a>
             </li>
@@ -157,8 +178,7 @@ class Footer extends Component {
                 className="social-media__link"
                 rel="noopener noreferrer"
                 target="_blank"
-                aria-label="Medium account for Carbon"
-              >
+                aria-label="Medium account for Carbon">
                 {medium}
               </a>
             </li>
@@ -168,8 +188,7 @@ class Footer extends Component {
                 className="social-media__link"
                 rel="noopener noreferrer"
                 target="_blank"
-                aria-label="Twitter account for Carbon"
-              >
+                aria-label="Twitter account for Carbon">
                 {twitter}
               </a>
             </li>
@@ -179,16 +198,20 @@ class Footer extends Component {
                 className="social-media__link"
                 rel="noopener noreferrer"
                 target="_blank"
-                aria-label="GitHub account for Carbon"
-              >
+                aria-label="GitHub account for Carbon">
                 {github}
               </a>
             </li>
           </ul>
           <p className="page-footer__text">
             Have questions?
-            <CopyToClipboard text="carbon@us.ibm.com" onCopy={this.toggleCopied}>
-              <button tabIndex="0" className={footerLinkClasses} onClick={() => this.handleClick()}>
+            <CopyToClipboard
+              text="carbon@us.ibm.com"
+              onCopy={this.toggleCopied}>
+              <button
+                tabIndex="0"
+                className={footerLinkClasses}
+                onClick={() => this.handleClick()}>
                 Email us
               </button>
             </CopyToClipboard>
@@ -198,8 +221,7 @@ class Footer extends Component {
               className="page-footer__link"
               rel="noopener noreferrer"
               target="_blank"
-              aria-label="Open a GitHub issue"
-            >
+              aria-label="Open a GitHub issue">
               issue
             </a>{' '}
             in GitHub.

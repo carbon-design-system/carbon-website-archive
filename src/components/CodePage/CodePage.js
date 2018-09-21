@@ -40,11 +40,20 @@ class CodePage extends Component {
         htmlFile = require('carbon-components/html/time-picker/time-picker.html');
       } else if (parent === 'data-table' && variation === 'data-table-v2') {
         htmlFile = require('carbon-components/html/data-table-v2/data-table-v2.html');
-      } else if (parent === 'data-table' && variation === 'data-table-v2--expandable') {
+      } else if (
+        parent === 'data-table' &&
+        variation === 'data-table-v2--expandable'
+      ) {
         htmlFile = require('carbon-components/html/data-table-v2/data-table-v2--expandable.html');
-      } else if (parent === 'data-table' && variation === 'data-table-v2--pagination') {
+      } else if (
+        parent === 'data-table' &&
+        variation === 'data-table-v2--pagination'
+      ) {
         htmlFile = require('carbon-components/html/data-table-v2/data-table-v2--with-pager.html');
-      } else if (parent === 'data-table' && variation === 'data-table-v2--small') {
+      } else if (
+        parent === 'data-table' &&
+        variation === 'data-table-v2--small'
+      ) {
         htmlFile = require('carbon-components/html/data-table-v2/data-table-v2--small.html');
       } else {
         htmlFile = require(`carbon-components/html/${parent}/${variation}.html`);
@@ -76,7 +85,9 @@ class CodePage extends Component {
         <h2 className="component-variation__name">{title}</h2>
         <p>
           This component is currently only available in{' '}
-          <a href="https://github.com/ibm/carbon-components-react" target="_blank">
+          <a
+            href="https://github.com/ibm/carbon-components-react"
+            target="_blank">
             our React library
           </a>
           .
@@ -111,7 +122,13 @@ class CodePage extends Component {
     let codepenSlug = componentInfo.codepen;
     if (componentInfo.variations) {
       componentContent = Object.keys(componentInfo.variations).map(variation =>
-        this.renderVariation(component, variation, componentInfo.variations, componentInfo.variations[variation], codepenSlug)
+        this.renderVariation(
+          component,
+          variation,
+          componentInfo.variations,
+          componentInfo.variations[variation],
+          codepenSlug
+        )
       );
     } else {
       let htmlFile = require(`carbon-components/html/${component}/${component}.html`);
@@ -143,7 +160,10 @@ class CodePage extends Component {
 
     return (
       <div className="page code-page test">
-        <p className="page__desc" dangerouslySetInnerHTML={{ __html: description }} />
+        <p
+          className="page__desc"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
         {componentContent}
         {javascriptContent}
       </div>

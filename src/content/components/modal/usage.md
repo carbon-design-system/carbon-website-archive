@@ -1,16 +1,16 @@
 ---
 label: Component
 title: Modal
-tabs: ['Code','Usage', 'Style']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## Dismissal
 
 Modals may be dismissed in 3 ways:
 
-* Using the “x” in the upper right-hand corner of the Modal
-* Pressing the `ESC` key
-* Clicking / touching outside of the Modal area
+- Using the “x” in the upper right-hand corner of the Modal
+- Pressing the `ESC` key
+- Clicking / touching outside of the Modal area
 
 ## Structure
 

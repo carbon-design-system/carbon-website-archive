@@ -1,7 +1,7 @@
 ---
 label: Guidelines
 title: Accessibility
-tabs: ['Overview','Color', 'Keyboard','Developers']
+tabs: ['Overview', 'Color', 'Keyboard', 'Developers']
 ---
 
 <page-intro>IBM firmly believes that web and software experiences should be accessible for everyone, regardless of abilities or impairments. This guide will help ensure that your product or web experience meets or exceeds the standards for accessibility.</page-intro>
@@ -21,31 +21,32 @@ Accessible products:
 
 Disabilities can be thought of as a mismatch between one's ability and one's environment. They can be:
 
-| Type          |     Description |
-|-------------  | ----------------|  
-| Situational   |     A person with typical vision might struggle to view their screen in a bright environment. Or, a person sitting in a library may be unable to watch a video with the audio turned on. |
-| Temporary     |     A person with a broken wrist may not be able to type but will regain the ability when healed.      |
-| Long-Lasting  |     This is what people typically think of when they hear "disability."    |
+| Type         | Description                                                                                                                                                                          |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Situational  | A person with typical vision might struggle to view their screen in a bright environment. Or, a person sitting in a library may be unable to watch a video with the audio turned on. |
+| Temporary    | A person with a broken wrist may not be able to type but will regain the ability when healed.                                                                                        |
+| Long-Lasting | This is what people typically think of when they hear "disability."                                                                                                                  |
 
 Accessible design not only helps users with disabilities; it provides better user experiences for everyone.
-
 
 ## Main Categories of Disabilities
 
 ### Blind Users
 
 #### How they experience an interface
+
 - May use a **screen reader** to experience interfaces
 - May rely on Braille output
 - Cannot be expected to use a pointer or mouse for input
 
 #### What designers should think about
+
 - Is visual information translated effectively into text? Can the image be understood through its metadata alone?
 - When possible, test all designs through a screen reader.
 
 #### How this applies to everyone
-- As audio-only interfaces gain popluarity through devices like AI assistants, users are expecting more and more from the audio representations of experiences.
 
+- As audio-only interfaces gain popluarity through devices like AI assistants, users are expecting more and more from the audio representations of experiences.
 
 <div id='low-vision'></div>
 
@@ -54,48 +55,54 @@ Accessible design not only helps users with disabilities; it provides better use
 Low vision can include partial sight in one or both eyes, and range from mild to severe. It affects 246 million people, or about 4% of the world’s population.
 
 #### How they experience an interface
+
 - May use **screen readers**, **screen magnifiers**, **high contrast modes**, and/or **monochrome displays**
 - May have their browser font size adjusted to a larger setting
 - May not use adaptive technology at all
 
 #### What designers should think about
+
 - Maximize the **readability** and **visual clarity** of content.
 - Consider how relative proximity of information changes when a page is magnified.
 - Follow [keyboard guidelines](https://www.nngroup.com/articles/keyboard-accessibility/) and test with a screen reader to ensure the page is read to the user in a logical order.
 - To get a better understanding of the various low-vision disabilities, we recommend using the [NoCoffee](https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl) Chrome plugin to preview websites.
 
 #### How this applies to everyone
+
 - Users without disabilities sometimes need to view screens in poor lighting conditions. For example, imagine using a screen outside on a bright day. A higher-contrast design will make the screen more usable for everyone.
 - Vision worsens gradually starting around age 40 and good contrast helps this very large demographic use your interface.
-
 
 <div id='color'></div>
 
 ### Color-Blind Users
 
-Color-blindness affects 8% of all men and 0.4% of women. 
+Color-blindness affects 8% of all men and 0.4% of women.
 
 #### How they experience an interface
+
 - **Will not be able to differentiate between some colors** on an interface
 - Rely on non-color information to use an interface
 
 #### What designers should think about
-- Run your design through a **color-blind simulator**. If the design doesn't work, try another approach. If you're working in Sketch, we recommend the [Stark](http://www.getstark.co/) plugin. 
-- To view best practices for using color in Data Visualization, view the [Data Vis](/data-vis/overview/colors) color page.
 
+- Run your design through a **color-blind simulator**. If the design doesn't work, try another approach. If you're working in Sketch, we recommend the [Stark](http://www.getstark.co/) plugin.
+- To view best practices for using color in Data Visualization, view the [Data Vis](/data-vis/overview/colors) color page.
 
 <div id='deaf'></div>
 
 ### Deaf and Hard-of-Hearing Users
 
 #### How they experience an interface
+
 - May rely on **captioning** and other alternative representations of audio
 
 #### What designers should think about
+
 - Find alternatives to conveying information exclusively with sound.
 - Transcribe and caption all videos and animations that have meaningful audio.
 
 #### How this applies to everyone
+
 - All users can benefit from closed captioning. Imagine using your device in a loud environment or, alternatively, in a quiet environment when it wouldn't be appropriate to turn your sound on.
 
 <div id='physical'></div>
@@ -103,20 +110,25 @@ Color-blindness affects 8% of all men and 0.4% of women.
 ### Physical Disabilities
 
 #### How users with physical disabilities experience an interface
+
 - May rely on **keyboards**, **track balls**, **voice recognition** and other assistive technologies to interact with an interface
 - May not be able to use a mouse or other pointer
 
 #### What designers should think about
+
 - Design for good **keyboard interaction**, making sure all actions are keyboard accessible and efficient.
-- Learn how to navigate using a [keyboard](https://help.gnome.org/users/gnome-help/stable/keyboard-nav.html.en) and spend one day navigating the web, email, and digital products using only the keyboard. 
+- Learn how to navigate using a [keyboard](https://help.gnome.org/users/gnome-help/stable/keyboard-nav.html.en) and spend one day navigating the web, email, and digital products using only the keyboard.
 
 #### How this applies to everyone
+
 - Many users prefer to navigate interfaces with a keyboard and no mouse for efficiency. Good keyboard navigation can help everyone be more productive.
 
 <div id='cognitive'></div>
 
 ### Users with Cognitive Disabilities
+
 These users offer a broad spectrum of concerns for design. Functional cognitive disabilities can include difficulty with:
+
 - Memory
 - Problem solving
 - Attention
@@ -125,15 +137,17 @@ These users offer a broad spectrum of concerns for design. Functional cognitive 
 - Visual comprehension
 
 #### How they experience an interface
+
 - May have **limited working memory** and need information to remain visible throughout the completion of a task
 - May experience seizures when exposed to flashing content (epilepsy)
 
-
 #### What designers should think about
+
 - Designers should understand the danger of **complex language**, **non-stopping or flashing animations** and **fundamental cognitive usability heuristics.**
 - Design in as linear a fashion as possible and focus on design heuristics that have to do with **cognitive load and memory.**
 
 #### How this applies to everyone
+
 - Best practices for cognitive disabilities benefit all users. Busy environments can tax your cognitive load. Aging adults may also experience a decline in cognitive abilities. Placing a low cognitive load on users reduces mistakes and improves effectiveness, regardless of their abilities.
 
 ## Global Accessibility Standards
@@ -142,11 +156,13 @@ These users offer a broad spectrum of concerns for design. Functional cognitive 
 - Web Accessibility Initiative (WAI) contributors create and maintain [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG21/) (WCAG) which is the global accessibility standard.
 
 ## Resources
+
 - [IBM Web Accessibility Checklist](https://www.ibm.com/able/guidelines/ci162/accessibility_checklist.html) - IBM's specific ruleset for creating accessible web applications.
 - [IBM accessibility quick guidance](https://w3.ibm.com/able/devtest/quick/) - (Internal only)
 - [W3C low vision requirements](https://www.w3.org/TR/low-vision-needs/)
 
 ## Tools
+
 - [High Contrast Chrome plugin](https://chrome.google.com/webstore/detail/high-contrast/djcfdncoelnlbldjfhinnjlhdjlikmph/related?hl=en)
 - [Stark Sketch Plugin](http://www.getstark.co/)
 - [NoCoffee vision simulator](https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl)

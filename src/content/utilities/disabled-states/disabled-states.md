@@ -7,38 +7,37 @@ title: Disabled States
 
 ## Disabled variations
 
-| Variation | Description |
-|-----------|-------------|
-|**Default disabled**| Cannot be clicked, selected or interacted with. It is not read by a screen reader and takes on the default disabled visual style.|
-|**Read-only**| The user cannot interact with it but content is still readable & accessible to a screen reader. The visual style should contain no interactive indicators such as `$brand-01`, hover states, or text embellishments (ie. underlines).|
-|**Hidden**| The component is completely hidden from view. The user does not know the option is there.|
-
+| Variation            | Description                                                                                                                                                                                                                           |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Default disabled** | Cannot be clicked, selected or interacted with. It is not read by a screen reader and takes on the default disabled visual style.                                                                                                     |
+| **Read-only**        | The user cannot interact with it but content is still readable & accessible to a screen reader. The visual style should contain no interactive indicators such as `$brand-01`, hover states, or text embellishments (ie. underlines). |
+| **Hidden**           | The component is completely hidden from view. The user does not know the option is there.                                                                                                                                             |
 
 ## Default disabled
+
 A default disabled state is used when a component is temporarily disabled due to dependencies (when one piece of software relies on another one) or pre-requisites. This scenario is a temporary state change that is most commonly triggered by a user's action or inaction. Once the dependencies have been resolved and/or the pre-requisites have been fulfilled the default disabled component returns to its enabled state. In a temporarily disabled scenario the component should never fully disappear from the user's view.
 
 ![Default disabled example on the right](images/disabled-1.png)
 
 ### Style
+
 Default disabled states are most commonly styled by a decrease in opacity with no hover state change and `not-allowed` cursor applied. Refer to each individual component for the accurate disabled state.
 
 | Attribute | Default disabled style |
-|-----------|----------------|
-| Component | 50% opacity
-| Text | 25% opacity |
-| Icons | 50% opacity |
-| Hover | None |
-| Cursor | `not-allowed` |
+| --------- | ---------------------- |
+| Component | 50% opacity            |
+| Text      | 25% opacity            |
+| Icons     | 50% opacity            |
+| Hover     | None                   |
+| Cursor    | `not-allowed`          |
 
 ![Default disabled style examples](images/disabled-2.png)
 
-
 ### Additional warning
+
 An [Inline Warning Notification](http://carbondesignsystem.com/components/notification/code) can be shown in cases where a temporarily disabled item effects multiple items or the primary action of the flow. The Notification should describe how the user can enable or re-enable the disabled component.
 
-
 ![Additional warning with default disabled example](images/disabled-3.png)
-
 
 ## Hidden
 
@@ -48,9 +47,10 @@ For example, when a user is the organization owner they are allowed to add membe
 
 ![Example of hidden disabled content on the right](images/disabled-4.png)
 
-
 ## Read-only
-In scenarios where the content of a disabled component or element is still relevant to the user or important to task completion, then the read-only variation is  used. This allows the user to read the information but not interact with or change it. Read-only content should always be accessible to a screen reader.
+
+In scenarios where the content of a disabled component or element is still relevant to the user or important to task completion, then the read-only variation is used. This allows the user to read the information but not interact with or change it. Read-only content should always be accessible to a screen reader.
 
 ### Style
+
 The visual style of the read-only states vary by component but should never contain any interactive indicators such as `$brand-01` color usage, hover states, or text embellishments (ie. underlines).

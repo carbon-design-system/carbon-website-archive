@@ -33,7 +33,7 @@ The `bx--row` initializes the element as a `display: flex` parent item, and is u
 The `bx--col-{breakpoint}-{columnNumber}` is our mobile-first look at creating layouts. There are six major breakpoints
 
 | Breakpoint Name | Media Query |
-|-----------------|-------------|
+| --------------- | ----------- |
 | `xs`            | 0 - 576px   |
 | `sm`            | > 576px     |
 | `md`            | > 768px     |
@@ -66,6 +66,7 @@ Layouts often define spaces that span one or more columns. Those spaces mostly n
 `bx--col` classes by defining a left margin of the equivalent size to the styled element.
 
 Usage example
+
 ```html
 <div class="bx--grid">
   <div class="bx--row">
@@ -77,6 +78,7 @@ Usage example
 ```
 
 This is equivalent to the markup
+
 ```html
 <div class="bx--grid">
   <div class="bx--row">

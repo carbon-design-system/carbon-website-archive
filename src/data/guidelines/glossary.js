@@ -3,16 +3,20 @@ module.exports = {
   A: {
     'Common Actions': {
       Add: {
-        desc: 'Adds an existing object to a list, container, or system (for example, adding a document to a folder).',
+        desc:
+          'Adds an existing object to a list, container, or system (for example, adding a document to a folder).',
         subtext:
           'Combine Add with the object (for example, Add user, Add space, Add role, or Add privileges). Contrast with [Insert](#insert) and [New](#new).',
       },
       Apply: {
-        desc: 'Saves changes without closing the dialog. These properties often affect subsequent system behavior.',
-        subtext: 'Use instead of Save Changes. Contrast with [Save](#save) and [Save As](#save-as).',
+        desc:
+          'Saves changes without closing the dialog. These properties often affect subsequent system behavior.',
+        subtext:
+          'Use instead of Save Changes. Contrast with [Save](#save) and [Save As](#save-as).',
       },
       Approve: {
-        desc: 'Indicates the user agrees. In a business process, typically initiates the next step.',
+        desc:
+          'Indicates the user agrees. In a business process, typically initiates the next step.',
         subtext: 'See [Reject](#reject).',
       },
     },
@@ -32,8 +36,10 @@ module.exports = {
   B: {
     'Common Actions': {
       Back: {
-        desc: 'Returns the user to the previous step in a sequence of steps, such as in a wizard.',
-        subtext: 'Use instead of Previous. See [Next](#next) and [Finish](#finish).',
+        desc:
+          'Returns the user to the previous step in a sequence of steps, such as in a wizard.',
+        subtext:
+          'Use instead of Previous. See [Next](#next) and [Finish](#finish).',
       },
       Browse: {
         desc:
@@ -42,8 +48,10 @@ module.exports = {
     },
     Idioms: {
       bestseller: {
-        desc: '(noun) a significantly successful product or service in the marketplace.',
-        subtext: 'Context: Develop software for a cause or your company’s next bestseller.',
+        desc:
+          '(noun) a significantly successful product or service in the marketplace.',
+        subtext:
+          'Context: Develop software for a cause or your company’s next bestseller.',
       },
       bet: {
         desc: '(verb) to feel sure about something.',
@@ -69,11 +77,14 @@ module.exports = {
           'Where appropriate, combine Clear with the object (for example, Clear contents, Clear fields, Clear all). Contrast with [Delete](#delete) and [Remove](#remove).',
       },
       Close: {
-        desc: 'Closes the current page or window (for example, closing a secondary window containing online help).',
-        subtext: 'Do not use Close together with OK or Cancel actions. Contrast with [Done](#done). See [Cancel](#cancel).',
+        desc:
+          'Closes the current page or window (for example, closing a secondary window containing online help).',
+        subtext:
+          'Do not use Close together with OK or Cancel actions. Contrast with [Done](#done). See [Cancel](#cancel).',
       },
       Copy: {
-        desc: 'Creates new instances of the selected objects to a specific destination.',
+        desc:
+          'Creates new instances of the selected objects to a specific destination.',
         subtext:
           'Combine Copy with the object being copied (for example, Copy folder) or the destination (for example, Copy to clipboard) if there are multiple possibilities. Use instead of Create like. Contrast with [New](#new).',
       },
@@ -90,8 +101,10 @@ module.exports = {
     },
     Idioms: {
       'cold-blooded cyborg': {
-        desc: '(noun) a man-like robot with no feelings (to cloud its judgment) that flawlessly executes its mandate."',
-        subtext: 'Context: Create apps with the efficiency of a cold-blooded cyborg.',
+        desc:
+          '(noun) a man-like robot with no feelings (to cloud its judgment) that flawlessly executes its mandate."',
+        subtext:
+          'Context: Create apps with the efficiency of a cold-blooded cyborg.',
       },
       congrats: {
         desc: '(noun) congratulations.',
@@ -116,7 +129,8 @@ module.exports = {
           'Combine Delete with the object to delete (for example, Delete column or Delete table). Contrast with [Clear](#clear) and [Remove](#remove).',
       },
       Docs: {
-        desc: 'Opens a separate window containing the landing page for the Bluemix product documentation.',
+        desc:
+          'Opens a separate window containing the landing page for the Bluemix product documentation.',
         subtext:
           'Use as link text only for the specific link that points to the Bluemix product documentation from the console menu bar. See [Learn More](#learn-more).',
       },
@@ -131,7 +145,8 @@ module.exports = {
       },
       Drop: {
         desc: 'Use only for dropping a database table.',
-        subtext: 'In other cases, use [Delete](#delete), [Clear](#clear), or [Remove](#remove).',
+        subtext:
+          'In other cases, use [Delete](#delete), [Clear](#clear), or [Remove](#remove).',
       },
     },
     Idioms: {
@@ -144,7 +159,8 @@ module.exports = {
         subtext: 'Context: View docs.',
       },
       dream: {
-        desc: '(adjective) pertaining to something that is exceptionally gratifying, excellent, or beautiful.',
+        desc:
+          '(adjective) pertaining to something that is exceptionally gratifying, excellent, or beautiful.',
         subtext: 'Context: Build your dream app.',
       },
     },
@@ -155,7 +171,8 @@ module.exports = {
         desc: 'Allows data or values to be changed.',
       },
       'Empty trash': {
-        desc: 'Permanently deletes all files or objects that have been placed into a trash container.',
+        desc:
+          'Permanently deletes all files or objects that have been placed into a trash container.',
         subtext: 'See [Move to trash](#move-to-trash).',
       },
       Export: {
@@ -184,14 +201,16 @@ module.exports = {
     Idioms: {
       freebie: {
         desc: '(noun) something given away at no cost.',
-        subtext: 'Context: Enjoy freebies after the trial ends, and pay only for what you use beyond those.',
+        subtext:
+          'Context: Enjoy freebies after the trial ends, and pay only for what you use beyond those.',
       },
     },
   },
   G: {
     'Common Actions': {
       'Get help': {
-        desc: 'Opens a search field from which the user can search for help information.',
+        desc:
+          'Opens a search field from which the user can search for help information.',
         subtext:
           'Use only as link text on Support widget from the console menu bar. See [Docs](#docs) and [Learn more](#learn-more).',
       },
@@ -213,16 +232,21 @@ module.exports = {
     },
     Idioms: {
       hackathon: {
-        desc: '(noun) an event that brings together developers to work intensively on a software project.',
+        desc:
+          '(noun) an event that brings together developers to work intensively on a software project.',
         subtext: 'Context: Run a hackathon.',
       },
       'have a hand in': {
-        desc: '(phrase) to be directly involved in the accomplishment or creation of something.',
-        subtext: "Context: If you're a developer, you now have a hand in creating the future.",
+        desc:
+          '(phrase) to be directly involved in the accomplishment or creation of something.',
+        subtext:
+          "Context: If you're a developer, you now have a hand in creating the future.",
       },
       'hit the ground running': {
-        desc: '(phrase) to immediately accomplish something when just starting to learn how to do it.',
-        subtext: 'Context: Whatever your task, Bluemix contains everything you need to hit the ground running.',
+        desc:
+          '(phrase) to immediately accomplish something when just starting to learn how to do it.',
+        subtext:
+          'Context: Whatever your task, Bluemix contains everything you need to hit the ground running.',
       },
     },
   },
@@ -271,7 +295,8 @@ module.exports = {
     },
     Idioms: {
       'lost in space': {
-        desc: '(phrase) to be hopelessly adrift with no chance of return, unlocatable, lost to the world.',
+        desc:
+          '(phrase) to be hopelessly adrift with no chance of return, unlocatable, lost to the world.',
         subtext: 'Context: This page seems to be lost in space.',
       },
     },
@@ -279,11 +304,14 @@ module.exports = {
   M: {
     'Common Actions': {
       Move: {
-        desc: 'Transfers an object from one container (for example, folder, activity, or page) to another.',
+        desc:
+          'Transfers an object from one container (for example, folder, activity, or page) to another.',
       },
       'Move to trash': {
-        desc: 'A soft delete. Moves a file or object to an area from where it can later be permanently deleted or recovered.',
-        subtext: 'Use instead of Delete or Recycle bin. See [Empty trash](#empty-trash).',
+        desc:
+          'A soft delete. Moves a file or object to an area from where it can later be permanently deleted or recovered.',
+        subtext:
+          'Use instead of Delete or Recycle bin. See [Empty trash](#empty-trash).',
       },
     },
     Idioms: {
@@ -292,8 +320,10 @@ module.exports = {
         subtext: 'Context: Plan anything, even the monthly meetup.',
       },
       muscle: {
-        desc: '(noun) the metaphorical strength or physical power of something.',
-        subtext: 'Context: Whether startup or enterprise, your apps are supported by the muscle of an enterprise-ready cloud.',
+        desc:
+          '(noun) the metaphorical strength or physical power of something.',
+        subtext:
+          'Context: Whether startup or enterprise, your apps are supported by the muscle of an enterprise-ready cloud.',
       },
     },
   },
@@ -306,7 +336,8 @@ module.exports = {
           'Combine New with the object to create (for example, New user or New column). See [Create](#create). Contrast with [Add](#add), [Copy](#copy), and [Insert](#insert).',
       },
       Next: {
-        desc: 'Advances the user to the next step in a sequence of steps, such as in a wizard.',
+        desc:
+          'Advances the user to the next step in a sequence of steps, such as in a wizard.',
         subtext: 'See [Back](#Back) and [Finish](#finish).',
       },
     },
@@ -332,15 +363,18 @@ module.exports = {
       },
       'on-prem': {
         desc: '(adjective) on-premises.',
-        subtext: 'Context: Incrementally port application features across on-prem platforms and clouds with consistent services.',
+        subtext:
+          'Context: Incrementally port application features across on-prem platforms and clouds with consistent services.',
       },
       oops: {
         desc: '(expression) used to indicate an accident or a mistake.',
-        subtext: 'Context: Oops, sorry, the HTML5 File APIs are not fully supported in this browser.',
+        subtext:
+          'Context: Oops, sorry, the HTML5 File APIs are not fully supported in this browser.',
       },
       ops: {
         desc: '(noun) operations.',
-        subtext: 'Context: Bluemix mobile cloud services help developers minimize ops and maintenance cost.',
+        subtext:
+          'Context: Bluemix mobile cloud services help developers minimize ops and maintenance cost.',
       },
       org: {
         desc: '(noun) organization.',
@@ -354,15 +388,18 @@ module.exports = {
         desc: 'Starts audio, video, or an animation.',
       },
       Post: {
-        desc: 'Adds a new comment to an online community or adds status to a log or record.',
-        subtext: 'If you are editing an existing comment, use [Save](#save) instead.',
+        desc:
+          'Adds a new comment to an online community or adds status to a log or record.',
+        subtext:
+          'If you are editing an existing comment, use [Save](#save) instead.',
       },
       Preview: {
         desc:
           'Shows how an object or content will appear with formatting applied before the content is published or distributed. Alternatively, provides an incomplete display of an existing object without leaving the current context.',
       },
       Print: {
-        desc: 'Sends a copy of the currently selected object or the object in view to the printer.',
+        desc:
+          'Sends a copy of the currently selected object or the object in view to the printer.',
       },
     },
   },
@@ -370,10 +407,12 @@ module.exports = {
     'Common Actions': {
       Redo: {
         desc: 'Redoes an undo action.',
-        subtext: 'Likely used only as a Tooltip on an icon button. See [Undo](#undo).',
+        subtext:
+          'Likely used only as a Tooltip on an icon button. See [Undo](#undo).',
       },
       Refresh: {
-        desc: 'Reloads the view of an object when the displayed view has become unsynchronized with the source.',
+        desc:
+          'Reloads the view of an object when the displayed view has become unsynchronized with the source.',
         subtext: 'Likely used only as a tooltip on an icon button.',
       },
       Reject: {
@@ -397,11 +436,13 @@ module.exports = {
           'See [Restore defaults](#restore-defaults), [Undo](#undo), and [Cancel](#cancel). Contrast with [Restore](#restore).',
       },
       Restore: {
-        desc: 'Brings a file back after deletion, corruption, or similar event.',
+        desc:
+          'Brings a file back after deletion, corruption, or similar event.',
         subtext: 'Contrast with [Reset](#reset).',
       },
       'Restore all': {
-        desc: 'Completes a restore operation on all files or objects in a given system or container.',
+        desc:
+          'Completes a restore operation on all files or objects in a given system or container.',
         subtext: 'Contrast with [Restore](#restore).',
       },
       'Restore defaults': {
@@ -423,7 +464,8 @@ module.exports = {
   S: {
     'Common Actions': {
       Save: {
-        desc: 'Saves pending modifications made to a file or document. Does not close the window or panel.',
+        desc:
+          'Saves pending modifications made to a file or document. Does not close the window or panel.',
         subtext: 'Contrast with [Apply](#apply).',
       },
       'Save as': {
@@ -439,7 +481,8 @@ module.exports = {
         desc: 'Selects data from a table.',
       },
       'Select all': {
-        desc: 'Adds all objects in the view to the selection set or checks all Checkboxes.',
+        desc:
+          'Adds all objects in the view to the selection set or checks all Checkboxes.',
         subtext: 'Contrast with [Clear](#clear).',
       },
       Send: {
@@ -454,7 +497,8 @@ module.exports = {
         subtext: 'Use instead of Register.',
       },
       Start: {
-        desc: 'Deploy an app or service to its development or production environment so that it can be used.',
+        desc:
+          'Deploy an app or service to its development or production environment so that it can be used.',
         subtext: 'Use instead of [Launch](#launch).',
       },
       Sort: {
@@ -464,24 +508,29 @@ module.exports = {
       },
       'Submit an idea': {
         desc: 'Opens a separate window containing the IBM Cloud Ideas portal.',
-        subtext: 'Use only as link text on Support widget from the console menu bar.',
+        subtext:
+          'Use only as link text on Support widget from the console menu bar.',
       },
     },
     Idioms: {
       skunkworks: {
-        desc: '(noun) a high priority, often secret, project taken on by a small team without constraints from management.',
+        desc:
+          '(noun) a high priority, often secret, project taken on by a small team without constraints from management.',
         subtext: 'Context: Start a skunkworks.',
       },
       startup: {
         desc: '(noun) a newly established business.',
-        subtext: 'Context: Whether startup or enterprise, your apps are supported by the muscle of an enterprise-ready cloud.',
+        subtext:
+          'Context: Whether startup or enterprise, your apps are supported by the muscle of an enterprise-ready cloud.',
       },
       'start from scratch': {
         desc: '(phrase) to start from the beginning, to start from nothing.',
-        subtext: 'Context: Choose a package of sample code and services, or start from scratch.',
+        subtext:
+          'Context: Choose a package of sample code and services, or start from scratch.',
       },
       sweet: {
-        desc: '(adjective) pertaining to something that is considered excellent, awesome, or cool.',
+        desc:
+          '(adjective) pertaining to something that is considered excellent, awesome, or cool.',
         subtext: 'Context: We bet you have built some sweet apps by now.',
       },
       sync: {
@@ -500,7 +549,8 @@ module.exports = {
     },
     Idioms: {
       'test drive': {
-        desc: '(noun) a test or evaluation of a piece of software for a specified amount of time.',
+        desc:
+          '(noun) a test or evaluation of a piece of software for a specified amount of time.',
         subtext: 'Context: You have 1 day left in your Bluemix test drive.',
       },
       'time flies': {
@@ -542,7 +592,8 @@ module.exports = {
     },
     Idioms: {
       voila: {
-        desc: '(expression) draws attention to something that has been accomplished or gained.',
+        desc:
+          '(expression) draws attention to something that has been accomplished or gained.',
         subtext:
           'Context: Runtime and container usage is charged based on two things. One, how much memory your runtime or container uses, and two, the duration that memory is used. Multiply the two together, and voila! The GB-hour.',
       },

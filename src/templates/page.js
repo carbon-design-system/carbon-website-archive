@@ -27,7 +27,17 @@ import LayerUsage from '../components/LayerUsage';
 import ComponentOverview from '../components/ComponentOverview';
 
 // Custom Markdown
-import { h2, h3, h4, ul, ol, PageIntro, PageIcon, FlexGroup, ColorBlock } from '../components/markdown/Markdown';
+import {
+  h2,
+  h3,
+  h4,
+  ul,
+  ol,
+  PageIntro,
+  PageIcon,
+  FlexGroup,
+  ColorBlock,
+} from '../components/markdown/Markdown';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -81,8 +91,13 @@ export default ({ data, pageContent }) => {
   } else {
     return (
       <Layout>
-        <PageHeader title={post.frontmatter.title} label={post.frontmatter.label} />
-        {!(tabs === null) && <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />}
+        <PageHeader
+          title={post.frontmatter.title}
+          label={post.frontmatter.label}
+        />
+        {!(tabs === null) && (
+          <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
+        )}
         <div className="page-content"> {renderAst(post.htmlAst)}</div>
       </Layout>
     );

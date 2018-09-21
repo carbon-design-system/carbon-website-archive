@@ -1,7 +1,7 @@
 ---
 label: Getting Started
 title: Developers
-tabs: ['Vanilla', 'React','Angular', 'Other']
+tabs: ['Vanilla', 'React', 'Angular', 'Other']
 ---
 
 <page-intro>The Carbon team currently supports vanilla js, React and Angular. Developers wanting to use another framework can can follow the instructions for the [Vanilla](/getting-started/developers/vanilla) library to access the styles and build out their own components.</page-intro>
@@ -22,8 +22,11 @@ class BXLoading extends HTMLElement {
   // Called when this custom element gets into render tree
   connectedCallback() {
     // "this" here is "<bx-loading>" element
-    this.innerHTML = '(e.g. snippet from http://carbondesignsystem.com/components/loading/code)';
-    this.loading = CarbonComponents.Loading.create(this.querySelector('[data-loading]'));
+    this.innerHTML =
+      '(e.g. snippet from http://carbondesignsystem.com/components/loading/code)';
+    this.loading = CarbonComponents.Loading.create(
+      this.querySelector('[data-loading]')
+    );
   }
   // Called when this custom element gets out of render tree
   disconnectedCallback() {

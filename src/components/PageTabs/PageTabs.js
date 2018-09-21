@@ -13,8 +13,15 @@ export default class PageTabs extends React.Component {
     const { tabs, slug, currentTab } = this.props;
     const linkSlug = slug.substring(0, slug.lastIndexOf(currentTab));
     const pageTabs = tabs.map(tab => (
-      <li key={tab} className={tab.toLowerCase().replace(' ', '-') === currentTab ? 'selected' : ''} key={tab}>
-        <Link to={`${linkSlug}${tab.toLowerCase().replace(' ', '-')}`}>{tab}</Link>
+      <li
+        key={tab}
+        className={
+          tab.toLowerCase().replace(' ', '-') === currentTab ? 'selected' : ''
+        }
+        key={tab}>
+        <Link to={`${linkSlug}${tab.toLowerCase().replace(' ', '-')}`}>
+          {tab}
+        </Link>
       </li>
     ));
     return (

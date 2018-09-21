@@ -6,7 +6,7 @@
   }
 
   .bx--search-magnifier {
-    top: .5rem;
+    top: 0.5rem;
   }
 
   //---------------------------------------
@@ -26,7 +26,7 @@
     border-radius: 0;
   }
 
-  .algolia-autocomplete .ds-dropdown-menu [class^=ds-dataset-] {
+  .algolia-autocomplete .ds-dropdown-menu [class^='ds-dataset-'] {
     border: none;
     border-radius: 0;
   }
@@ -42,8 +42,8 @@
   .algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column {
     @include typescale('zeta');
     color: $text-02;
-    font-size: .875rem;
-    padding-top: .5rem;
+    font-size: 0.875rem;
+    padding-top: 0.5rem;
   }
 
   /* Title (eg. Bootstrap CDN) */
@@ -54,7 +54,15 @@
   }
 
   /* Title background hover  */
-  .algolia-autocomplete .ds-dropdown-menu .ds-suggestion.ds-cursor .algolia-docsearch-suggestion.suggestion-layout-simple, .algolia-autocomplete .ds-dropdown-menu .ds-suggestion.ds-cursor .algolia-docsearch-suggestion:not(.suggestion-layout-simple) .algolia-docsearch-suggestion--content {
+  .algolia-autocomplete
+    .ds-dropdown-menu
+    .ds-suggestion.ds-cursor
+    .algolia-docsearch-suggestion.suggestion-layout-simple,
+  .algolia-autocomplete
+    .ds-dropdown-menu
+    .ds-suggestion.ds-cursor
+    .algolia-docsearch-suggestion:not(.suggestion-layout-simple)
+    .algolia-docsearch-suggestion--content {
     background: $hover-row;
   }
 
@@ -88,14 +96,16 @@
       margin-left: 0;
     }
     .algolia-autocomplete .algolia-docsearch-suggestion--content {
-      width: 100% ;
+      width: 100%;
       padding-left: 0;
     }
     .algolia-autocomplete .algolia-docsearch-suggestion--content:before {
       display: none;
     }
-    .algolia-autocomplete .algolia-docsearch-suggestion .algolia-docsearch-suggestion--subcategory-column {
-      display: none ;
+    .algolia-autocomplete
+      .algolia-docsearch-suggestion
+      .algolia-docsearch-suggestion--subcategory-column {
+      display: none;
     }
     .algolia-autocomplete .algolia-docsearch-suggestion--title {
       padding: $spacing-xs 0;

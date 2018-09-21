@@ -47,7 +47,7 @@
     li {
       display: flex;
       align-items: center;
-      margin: 0 1rem .25rem;
+      margin: 0 1rem 0.25rem;
       margin-left: 0;
 
       @include breakpoint('552px') {
@@ -60,7 +60,7 @@
       }
 
       p {
-        margin-left: .35rem;
+        margin-left: 0.35rem;
         padding-bottom: 0;
       }
     }
@@ -70,12 +70,12 @@
     width: 4rem;
 
     .bx--dropdown__menu-text {
-      padding: .5rem;
+      padding: 0.5rem;
     }
 
     .bx--dropdown__arrow {
-      top: .75rem;
-      right: .6rem;
+      top: 0.75rem;
+      right: 0.6rem;
     }
 
     .bx--dropdown__list {
@@ -87,7 +87,7 @@
     }
 
     .bx--dropdown__link {
-      padding: .5rem;
+      padding: 0.5rem;
     }
 
     &:focus {
@@ -110,7 +110,7 @@
       fill: $color__white;
 
       span {
-        font-size: .675rem;
+        font-size: 0.675rem;
       }
     }
 

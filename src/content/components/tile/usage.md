@@ -1,7 +1,7 @@
 ---
 label: Component
 title: Tile
-tabs: ['Code','Usage', 'Style']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## Usage

@@ -10,8 +10,8 @@ tabs: ['Library', 'Usage', 'Contribution']
 
 You can find the source file for the icon library within the <a href="https://github.com/ibm/carbon-design-kit" target=blank>Carbon Design Kit.</a>
 
-* <a href="https://github.com/ibm/carbon-icons" target=blank>Carbon icons GitHub repo</a>
-* <a href="http://www.ibm.com/design/language/resources/icon-library/" target=blank>IBM Design Language icon library</a>
+- <a href="https://github.com/ibm/carbon-icons" target=blank>Carbon icons GitHub repo</a>
+- <a href="http://www.ibm.com/design/language/resources/icon-library/" target=blank>IBM Design Language icon library</a>
 
 ## Visual usage
 
@@ -39,7 +39,7 @@ When **using icons,** all touch targets need to be 44px or higher. With that sai
 
 Interactive UI icons need to pass the same color contrast ratio as typography at a 4.5:1 ratio. UI icons are always a solid color. The color of the icon should depend on the importance of the icon's action.
 
-|                        | SCSS             | HEX                             y   |
+|                        | SCSS             | HEX y                              |
 | ---------------------- | ---------------- | ---------------------------------- |
 | Primary action         | $brand-01        | <color-block>#3d70b2</color-block> |
 | Primary action:hover   | $hover-primary   | <color-block>#30588C</color-block> |
@@ -67,7 +67,7 @@ When drawing or re-sizing icons make sure the vector always aligns to the base p
 
 **Requirements:**
 
-* Install `carbon-icons`
+- Install `carbon-icons`
 
 Full installation details in <a href="https://github.com/ibm/carbon-icons">Carbon icons GitHub repo.</a>
 
@@ -118,7 +118,6 @@ Visit carbon-icons and browse the svg folder for any icons you want to use. (Rem
 
 Carbon icons ship with two main SVG files that contain different sets of external SVG sprite files:
 
-
 | Filename          | Description                                                                                                        | Supported versions     |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------ | ---------------------- |
 | carbon-icons.svg  | Contains current icons (consolidated subset of legacy icons used in IBM Bluemix)                                   | `3.x` and newer        |
@@ -152,5 +151,5 @@ Make sure that you do not duplicate this `id`.
 
 For more details on accessibility, see the following resources:
 
-* "Accessible SVGs" via [CSS-Tricks](https://css-tricks.com/accessible-svgs/)
-* "5.4 The 'desc' and 'title' elements" via [W3C.org](https://www.w3.org/TR/SVG11/struct.html#DescriptionAndTitleElements)
+- "Accessible SVGs" via [CSS-Tricks](https://css-tricks.com/accessible-svgs/)
+- "5.4 The 'desc' and 'title' elements" via [W3C.org](https://www.w3.org/TR/SVG11/struct.html#DescriptionAndTitleElements)

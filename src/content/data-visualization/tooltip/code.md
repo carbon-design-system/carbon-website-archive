@@ -1,7 +1,7 @@
 ---
 label: Data Visualization
 title: Tooltip
-tabs: ['Code','Usage','Style']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 <h2>Single Data Tooltip</h2>

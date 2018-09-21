@@ -55,21 +55,36 @@ class IconCard extends Component {
           {loading ? (
             <Loading withOverlay={false} small />
           ) : (
-            <Icon name={name} description={name} height={height} width={width} viewBox={viewBox} tabIndex={-1} alt={name} />
+            <Icon
+              name={name}
+              description={name}
+              height={height}
+              width={width}
+              viewBox={viewBox}
+              tabIndex={-1}
+              alt={name}
+            />
           )}
           <div
             ref={iconActions => {
               this.iconActions = iconActions;
             }}
             className="icon__actions"
-            onBlur={this.handleBlur}
-          >
+            onBlur={this.handleBlur}>
             <CopyToClipboard text={svgString} onCopy={this.toggleCopied}>
-              <Button onFocus={this.handleFocus} tabIndex={0} className="icon-button">
+              <Button
+                onFocus={this.handleFocus}
+                tabIndex={0}
+                className="icon-button">
                 {this.state.displayCopied ? 'Icon Copied!' : 'Copy Icon'}
               </Button>
             </CopyToClipboard>
-            <Link onFocus={this.handleFocus} tabIndex={0} href={downloadUrl} className="icon-button" download>
+            <Link
+              onFocus={this.handleFocus}
+              tabIndex={0}
+              href={downloadUrl}
+              className="icon-button"
+              download>
               Download
             </Link>
           </div>

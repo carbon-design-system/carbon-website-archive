@@ -1,7 +1,7 @@
 ---
 label: Component
 title: Form
-tabs: ['Code','Usage', 'Style']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## Color
@@ -21,20 +21,18 @@ _Example of light fields with $field-02 (left) and the default version with $fie
 
 **Disabled:** Disabled state appears at 50% opacity and has a `.not-allowed` cursor on hover.
 
-
 ## Typography
 
 Form headings and labels should be set in sentence case with the first letter of the first word capitalized. Please refer to the [Text Input](/components/text-input), [Dropdown](/components/dropdown), [Checkbox](/components/checkbox), [Radio button](/components/radio-button), [Toggle](/component/toggle), [Button](/component/button) pages for specific typography details on each component.
 
-| Property                                  | Font-size (px/rem)| Font-weight    | Type style         |
-|-------------------------------------------|-------------------|----------------|--------------------|
-| Heading                                   | 28 / 1.75         | Light / 300    | `.bx--type-beta`   |
-| `.bx--label`                              | 14 / 0.875        | Semi-Bold / 600| `.bx--type-zeta`   |
-| `.bx--text-input`                         | 14 / 0.875        | Normal / 400   | -                  |
-| `.bx--text-input::placeholder`            | 14 / 0.875        | Normal / 400   | -                  |
-| `.bx--form-requirement`                   | 12 / 0.75         | Normal / 40    | `.bx--type-caption`|
-| `.bx--form__helper-text`                  | 12 / 0.75         | Normal / 400   | `.bx--type-caption`|
-
+| Property                       | Font-size (px/rem) | Font-weight     | Type style          |
+| ------------------------------ | ------------------ | --------------- | ------------------- |
+| Heading                        | 28 / 1.75          | Light / 300     | `.bx--type-beta`    |
+| `.bx--label`                   | 14 / 0.875         | Semi-Bold / 600 | `.bx--type-zeta`    |
+| `.bx--text-input`              | 14 / 0.875         | Normal / 400    | -                   |
+| `.bx--text-input::placeholder` | 14 / 0.875         | Normal / 400    | -                   |
+| `.bx--form-requirement`        | 12 / 0.75          | Normal / 40     | `.bx--type-caption` |
+| `.bx--form__helper-text`       | 12 / 0.75          | Normal / 400    | `.bx--type-caption` |
 
 ## Structure
 
@@ -44,22 +42,21 @@ Forms can be one column or two. The width of each column varies based on the con
 
 All icons can be found on the [iconography](/style/iconography/library) library page.
 
-
 ### Recommended
 
 | Space between        | Property      | px / rem  | Spacing token |
-|----------------------|---------------|-----------|---------------|
+| -------------------- | ------------- | --------- | ------------- |
 | Inputs               | margin-bottom | 24 / 1.5  | $spacing-lg   |
 | Non-input components | margin-bottom | 32 / 2    | $spacing-xl   |
 | Grid gutter          | -             | 20 / 1.25 | -             |
-
-
 
 ![Structure and spacing measurements for a double column form ](images/form-style-2.png)
 _Structure and spacing measurements for a double column Form | px / rem_
 
 ---
-***
+
+---
+
 > ![Structure and spacing measurements for a single column form](images/form-style-1.png)
 
 _Structure and spacing measurements for a single column Form | px / rem_

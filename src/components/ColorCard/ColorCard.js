@@ -39,7 +39,9 @@ export default class ColorCard extends React.Component {
   colorContrast = ColorHEX => {
     if (ColorHEX.charAt(0) === '#') {
       const ConvertedHEX = color(ColorHEX);
-      return ConvertedHEX.luminosity() > 0.44 ? 'color-block__button--dark' : 'color-block__button--light';
+      return ConvertedHEX.luminosity() > 0.44
+        ? 'color-block__button--dark'
+        : 'color-block__button--light';
     }
     return 'color-block__button--dark';
   };
@@ -61,9 +63,15 @@ export default class ColorCard extends React.Component {
 
     return (
       <div tabIndex="0" className={classNames}>
-        <div tabIndex="0" className={exampleClassNames} style={{ backgroundColor: hex }}>
+        <div
+          tabIndex="0"
+          className={exampleClassNames}
+          style={{ backgroundColor: hex }}>
           <CopyToClipboard text={this.state.value} onCopy={this.toggleCopied}>
-            <button tabIndex="0" className={buttonClassName} onClick={() => this.handleClick()}>
+            <button
+              tabIndex="0"
+              className={buttonClassName}
+              onClick={() => this.handleClick()}>
               {this.state.displayCopied ? 'HEX Copied!' : 'Copy HEX'}
             </button>
           </CopyToClipboard>

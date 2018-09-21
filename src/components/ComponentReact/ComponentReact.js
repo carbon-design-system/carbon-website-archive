@@ -41,19 +41,33 @@ class ComponentReactExample extends Component {
     if (this.props.variation === 'MultiSelect.Filterable') {
       NewComponent = reactComponent.MultiSelect.Filterable;
       ReactDOM.render(
-        <NewComponent items={items} itemToString={item => (item ? item.text : '')} onChange={() => {}} placeholder="Filter" />,
+        <NewComponent
+          items={items}
+          itemToString={item => (item ? item.text : '')}
+          onChange={() => {}}
+          placeholder="Filter"
+        />,
         this.comp
       );
     } else if (this.props.variation === 'MultiSelect') {
       NewComponent = reactComponent[this.props.variation];
       ReactDOM.render(
-        <NewComponent items={items} itemToString={item => (item ? item.text : '')} label="MultiSelect Label" />,
+        <NewComponent
+          items={items}
+          itemToString={item => (item ? item.text : '')}
+          label="MultiSelect Label"
+        />,
         this.comp
       );
     } else if (this.props.variation === 'MultiSelect.Inline') {
       NewComponent = reactComponent.MultiSelect;
       ReactDOM.render(
-        <NewComponent items={items} itemToString={item => (item ? item.text : '')} label="MultiSelect Label" type="inline" />,
+        <NewComponent
+          items={items}
+          itemToString={item => (item ? item.text : '')}
+          label="MultiSelect Label"
+          type="inline"
+        />,
         this.comp
       );
     } else {
@@ -69,7 +83,9 @@ class ComponentReactExample extends Component {
         <h2 className="component-variation__name">{name}</h2>
         <p>
           This component is currently only available in{' '}
-          <a href="https://github.com/ibm/carbon-components-react" target="_blank">
+          <a
+            href="https://github.com/ibm/carbon-components-react"
+            target="_blank">
             our React library
           </a>
           .
@@ -80,7 +96,10 @@ class ComponentReactExample extends Component {
             <div className="component-example__live--rendered">
               <div ref={comp => (this.comp = comp)} />
             </div>
-            <a href={componentLink} className="component-example__view-full-render" rel="noopener noreferrer">
+            <a
+              href={componentLink}
+              className="component-example__view-full-render"
+              rel="noopener noreferrer">
               View on React Storybook
             </a>
           </div>

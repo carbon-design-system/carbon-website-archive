@@ -1,7 +1,7 @@
 ---
 label: Component
 title: Content Switcher
-tabs: ['Code','Usage', 'Style']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 <page-intro>**Content switcher** manipulates the content shown following an exclusive or “either/or” pattern.</page-intro>

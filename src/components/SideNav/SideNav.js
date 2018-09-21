@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import { Link } from 'gatsby';
 import { Button, Icon } from 'carbon-components-react';
 
-import GlobalSearch from '../GlobalSearch/GlobalSearch'
+import GlobalSearch from '../GlobalSearch/GlobalSearch';
 import SideNavItem from './SideNavItem';
 import navigation from '../../data/navigation/navigation.json';
 
@@ -11,7 +11,8 @@ export default class SideNav extends React.Component {
   renderNavItems = nav =>
     Object.keys(nav).map(item => {
       const { GATSBY_CARBON_ENV } = process.env;
-      const hideInternal = GATSBY_CARBON_ENV !== 'internal' && nav[item].internal;
+      const hideInternal =
+        GATSBY_CARBON_ENV !== 'internal' && nav[item].internal;
       if (hideInternal) {
         return '';
       }
@@ -41,13 +42,18 @@ export default class SideNav extends React.Component {
             kind="secondary"
             icon="icon--arrow--right"
             iconDescription="Arrow right"
-            href="https://github.com/ibm/carbon-design-kit"
-          >
+            href="https://github.com/ibm/carbon-design-kit">
             Design Kit
           </Button>
-          <Link to="/resources#github" className="side-nav__link bx--btn bx--btn bx--btn--secondary">
+          <Link
+            to="/resources#github"
+            className="side-nav__link bx--btn bx--btn bx--btn--secondary">
             GitHub Repos
-            <Icon className="bx--btn__icon" name="icon--arrow--right" description="Arrow right" />
+            <Icon
+              className="bx--btn__icon"
+              name="icon--arrow--right"
+              description="Arrow right"
+            />
           </Link>
         </div>
       </nav>

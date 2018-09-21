@@ -43,11 +43,17 @@ class ComponentExample extends Component {
     let newHTML;
     let currentComponent = this.props.component;
     const currentVariation = this.props.variation;
-    if (currentComponent !== currentVariation && !currentVariation.includes(currentComponent)) {
+    if (
+      currentComponent !== currentVariation &&
+      !currentVariation.includes(currentComponent)
+    ) {
       currentComponent = currentVariation;
     }
     if (value === 'field-02') {
-      if (currentVariation.includes('--') || currentVariation === 'code-snippet--inline') {
+      if (
+        currentVariation.includes('--') ||
+        currentVariation === 'code-snippet--inline'
+      ) {
         newHTML = require(`carbon-components/html/${currentComponent}/${currentVariation}-light.html`);
       } else {
         newHTML = require(`carbon-components/html/${currentComponent}/${currentVariation}--light.html`);
@@ -86,21 +92,27 @@ class ComponentExample extends Component {
       const currentComponent = this.props.component
         .replace(/-([a-z])/g, (match, token) => token.toUpperCase())
         .replace(/^([a-z])/, (match, token) => token.toUpperCase());
-      (componentNamesMap[currentComponent] || [currentComponent]).forEach(name => {
-        const TheComponent = components[name];
-        if (TheComponent) {
-          if (TheComponent.prototype.createdByLauncher) {
-            const initHandles = this.constructor._initHandles;
-            if (!initHandles.has(TheComponent)) {
-              initHandles.set(TheComponent, TheComponent.init());
+      (componentNamesMap[currentComponent] || [currentComponent]).forEach(
+        name => {
+          const TheComponent = components[name];
+          if (TheComponent) {
+            if (TheComponent.prototype.createdByLauncher) {
+              const initHandles = this.constructor._initHandles;
+              if (!initHandles.has(TheComponent)) {
+                initHandles.set(TheComponent, TheComponent.init());
+              }
+            } else {
+              const selectorInit = TheComponent.options.selectorInit;
+              // Gatsby's setup seems to use `.concat()` for [...arraylike], which does not work for `NodeList`
+              instances.push(
+                ...Array.from(ref.querySelectorAll(selectorInit)).map(elem =>
+                  TheComponent.create(elem)
+                )
+              );
             }
-          } else {
-            const selectorInit = TheComponent.options.selectorInit;
-            // Gatsby's setup seems to use `.concat()` for [...arraylike], which does not work for `NodeList`
-            instances.push(...Array.from(ref.querySelectorAll(selectorInit)).map(elem => TheComponent.create(elem)));
           }
         }
-      });
+      );
     }
   }
 
@@ -122,7 +134,9 @@ class ComponentExample extends Component {
     } = this.props;
 
     const { currentHTMLfile = '', currentFieldColor } = this.state;
-    const demoHtml = !experimental ? currentHTMLfile : currentHTMLfile.replace(/bx--/g, 'demo--');
+    const demoHtml = !experimental
+      ? currentHTMLfile
+      : currentHTMLfile.replace(/bx--/g, 'demo--');
 
     const classNames = classnames({
       'component-example__live--rendered': true,
@@ -157,7 +171,8 @@ class ComponentExample extends Component {
 
     const liveBackgroundClasses = classnames('component-example__live', {
       'component-example__live--light':
-        (currentFieldColor === 'field-01') & (hasLightVersion === 'true') || hasLightBackground === 'true',
+        (currentFieldColor === 'field-01') & (hasLightVersion === 'true') ||
+        hasLightBackground === 'true',
       'carbon-demo-experimental': experimental === 'true',
     });
 
@@ -168,7 +183,10 @@ class ComponentExample extends Component {
       <div className={lightUIclassnames}>
         <div className={liveBackgroundClasses}>
           <div className={classNames}>
-            <div ref={this._liveDemoRef} dangerouslySetInnerHTML={{ __html: demoHtml }} />
+            <div
+              ref={this._liveDemoRef}
+              dangerouslySetInnerHTML={{ __html: demoHtml }}
+            />
           </div>
         </div>
         <div className="component-toolbar">
@@ -180,8 +198,7 @@ class ComponentExample extends Component {
               <a
                 href={`http://react.carbondesignsystem.com/?selectedKind=${componentNameLink}`}
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 React
               </a>
             )}
@@ -189,8 +206,7 @@ class ComponentExample extends Component {
               <a
                 href={`http://angular.carbondesignsystem.com/?selectedKind=${componentNameLink}`}
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 Angular
               </a>
             )}
@@ -206,10 +222,17 @@ class ComponentExample extends Component {
                 defaultSelected={currentFieldColor}
                 name={`radio-button-group-${counter}`}
                 legend="Field selector"
-                onChange={this.onSwitchFieldColors}
-              >
-                <RadioButton value="field-01" id={`field-01-${counter}`} labelText="field-01" />
-                <RadioButton value="field-02" id={`field-02-${counter}`} labelText="field-02" />
+                onChange={this.onSwitchFieldColors}>
+                <RadioButton
+                  value="field-01"
+                  id={`field-01-${counter}`}
+                  labelText="field-01"
+                />
+                <RadioButton
+                  value="field-02"
+                  id={`field-02-${counter}`}
+                  labelText="field-02"
+                />
               </RadioButtonGroup>
             </div>
           )}
