@@ -1,4 +1,4 @@
-Closes IBM/carbon-components-react#
+Closes #
 
 {{short description}}
 
