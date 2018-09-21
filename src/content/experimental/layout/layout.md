@@ -8,6 +8,8 @@ title: Explaining the Grid
 ## Fixed 'Mini Unit' Grid
 Mini unit is the basic of the 2x Grid. It is the fundamental and the guide of every component. All mini units are 8 pixel by 8 pixel. Paddings, gutters, margins, spacers, and the dimensions of shapes are determined by mini units.
 
+![mini unit grid](images/mini_unit_grid.png)
+
 ## Fluid 2x Grid
 ### Columns
 Column structure is important for layouts. The primary layout choices for designs are 1, 2, 4, 8, and 16 columns. Maintaining column structure is vital to achieving a well crafted duo experience.
