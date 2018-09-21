@@ -19,5 +19,5 @@ jobs:
             # if [ "${CIRCLE_BRANCH}" == "master" ]; then
             if [ "${CIRCLE_BRANCH}" != "feat/add-circle-ci" ]; then
               curl -fsSL https://clis.ng.bluemix.net/install/linux | sh;
-              ibmcloud login --apikey $CLOUD_API_KEY;
+              ibmcloud login --apikey "${CLOUD_API_KEY}";
             fi
