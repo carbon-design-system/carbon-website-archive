@@ -8,14 +8,13 @@ jobs:
       - checkout
       - run: ls -al
       - run: pwd
-      # - run:
-          # name: Install dependencies from offline mirror
-          # command: yarn install --offline
-      # - run:
-          # name: Build external and internal sites
-          # command: |
-            # yarn build:external
-            # # yarn build:internal
+      - run:
+          name: Install dependencies from offline mirror
+          command: yarn install --offline
+      - run:
+          name: Build site
+          command: |
+            yarn build:external
       # - deploy:
           # name: deploy to IBM Cloud
           # command: |
