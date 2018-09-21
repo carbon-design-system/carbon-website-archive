@@ -6,20 +6,18 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - run: ls -al
-      - run: pwd
-      - run:
-          name: Install dependencies from offline mirror
-          command: yarn install --offline
-      - run:
-          name: Build site
-          command: |
-            yarn build:external
-      # - deploy:
-          # name: deploy to IBM Cloud
+      # - run:
+          # name: Install dependencies from offline mirror
+          # command: yarn install --offline
+      # - run:
+          # name: Build site
           # command: |
-            # # if [ "${CIRCLE_BRANCH}" == "master" ]; then
-            # if [ "${CIRCLE_BRANCH}" == "feat/add-circle-ci" ]; then
-              # curl -fsSL https://clis.ng.bluemix.net/install/linux | sh
-              # ibmcloud --help
-            # fi
+            # yarn build:external
+      - deploy:
+          name: deploy to IBM Cloud
+          command: |
+            # if [ "${CIRCLE_BRANCH}" == "master" ]; then
+            if [ "${CIRCLE_BRANCH}" == "feat/add-circle-ci" ]; then
+              curl -fsSL https://clis.ng.bluemix.net/install/linux | sh
+              ibmcloud --help
+            fi
