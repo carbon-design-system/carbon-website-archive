@@ -1,7 +1,30 @@
 {
   "name": "carbon-website-gatsby",
   "description": "Carbon Design System website",
-  "version": "1.0.0",
+  "private": true,
+  "version": "0.0.0",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carbon-design-system/carbon-website-gatsby/"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "build": "echo 'ERROR: Please specify environment by running either build:external or build:internal. This will set the correct environment variable for the build.'",
+    "build:external": "rm -rf .cache && cross-env GATSBY_CARBON_ENV=external gatsby build",
+    "build:internal": "rm -rf .cache && cross-env GATSBY_CARBON_ENV=internal gatsby build",
+    "dev": "yarn dev:external",
+    "dev:external": "rm -rf .cache && cross-env GATSBY_CARBON_ENV=external gatsby develop",
+    "dev:internal": "rm -rf .cache && cross-env GATSBY_CARBON_ENV=internal gatsby develop",
+    "format": "prettier --write \"**/*.{scss,css,js,md}\"",
+    "format:diff": "prettier --list-different \"**/*.{scss,css,js,md}\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybook:build": "build-storybook -c .storybook -o public/docs",
+    "deploy": "gatsby build && gh-pages -d public"
+  },
   "dependencies": {
     "@reach/router": "^1.1.1",
     "@storybook/addon-info": "^3.4.7",
@@ -37,23 +60,6 @@
     "react-router": "^4.3.1",
     "rehype-react": "^3.0.2"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "echo 'ERROR: Please specify environment by running either build:external or build:internal. This will set the correct environment variable for the build.'",
-    "build:external": "rm -rf .cache/* && cross-env GATSBY_CARBON_ENV=external gatsby build",
-    "build:internal": "rm -rf .cache/* && cross-env GATSBY_CARBON_ENV=internal gatsby build",
-    "dev": "yarn dev:external",
-    "dev:external": "rm -rf .cache/* && cross-env GATSBY_CARBON_ENV=external gatsby develop",
-    "dev:internal": "rm -rf .cache/* && cross-env GATSBY_CARBON_ENV=internal gatsby develop",
-    "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 9001 -c .storybook",
-    "storybook:build": "build-storybook -c .storybook -o public/docs",
-    "deploy": "gatsby build && gh-pages -d public"
-  },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.7",
     "@storybook/addon-knobs": "^3.4.7",
@@ -72,13 +78,58 @@
     "sass-loader": "^7.0.3",
     "storybook-readme": "^3.3.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/carbon-design-system/carbon-website-gatsby/"
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "loose": true,
+          "modules": false,
+          "useBuiltIns": false,
+          "shippedProposals": true,
+          "targets": {
+            "browsers": [
+              ">0.25%",
+              "not dead"
+            ]
+          }
+        }
+      ],
+      [
+        "@babel/preset-react",
+        {
+          "useBuiltIns": false,
+          "pragma": "React.createElement"
+        }
+      ]
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-proposal-class-properties",
+        {
+          "loose": true
+        }
+      ],
+      "@babel/plugin-syntax-dynamic-import",
+      "babel-plugin-macros",
+      [
+        "@babel/plugin-transform-runtime",
+        {
+          "helpers": true,
+          "regenerator": true
+        }
+      ]
+    ]
   },
   "eslintConfig": {
     "globals": {
       "__PATH_PREFIX__": true
     }
+  },
+  "prettier": {
+    "jsxBracketSameLine": true,
+    "printWidth": 80,
+    "singleQuote": true,
+    "trailingComma": "es5"
   }
 }

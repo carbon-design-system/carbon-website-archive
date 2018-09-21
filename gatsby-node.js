@@ -1,5 +1,4 @@
 const path = require('path');
-const paths = require('./paths');
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const publicPath = '/';
 
@@ -10,7 +9,12 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   if (node.internal.type === 'MarkdownRemark') {
     const dir = path.resolve(__dirname, '');
     const fileNode = getNode(node.parent);
-    const slug = createFilePath({ node, getNode, basePath: `content`, trailingSlash: false });
+    const slug = createFilePath({
+      node,
+      getNode,
+      basePath: `content`,
+      trailingSlash: false,
+    });
     const currentPage = slug.split('/').pop();
 
     // example
@@ -54,8 +58,12 @@ exports.createPages = ({ actions, graphql }) => {
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         const slug = node.fields.slug;
         const currentPage = node.fields.currentPage;
-        const tabs = node.frontmatter.tabs === null ? [] : node.frontmatter.tabs;
-        let currentPath = node.frontmatter.tabs === null ? slug.slice(0, slug.lastIndexOf(currentPage)) : slug;
+        const tabs =
+          node.frontmatter.tabs === null ? [] : node.frontmatter.tabs;
+        let currentPath =
+          node.frontmatter.tabs === null
+            ? slug.slice(0, slug.lastIndexOf(currentPage))
+            : slug;
         createPage({
           path: currentPath,
           component: path.resolve(`./src/templates/page.js`),
@@ -95,7 +103,10 @@ exports.onCreateWebpackConfig = ({ actions, getConfig, stage }) => {
       rules: [
         ...rules.map(item => {
           const { use } = item;
-          if (!use || use.every(({ loader }) => !/babel-loader\.js$/i.test(loader))) {
+          if (
+            !use ||
+            use.every(({ loader }) => !/babel-loader\.js$/i.test(loader))
+          ) {
             return item;
           }
           return {
