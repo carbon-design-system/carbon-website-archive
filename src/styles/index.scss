@@ -16,6 +16,7 @@ $brand-01: $dark-blue;
 
 @import 'page';
 @import 'home';
+@import 'demo-overrides';
 
 //---------------------------------------
 // Components
@@ -51,6 +52,7 @@ $brand-01: $dark-blue;
 @import '../components/ComponentStatus/component-status.scss';
 @import '../components/ComponentReact/component-react.scss';
 @import '../components/ComponentOverview/component-overview.scss';
+@import '../components/GlobalSearch/global-search.scss';
 
 //---------------------------------------
 // Syntax
