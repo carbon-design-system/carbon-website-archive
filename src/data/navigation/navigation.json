@@ -4,6 +4,9 @@
     "sub-nav": {
       "whats-new": {
         "title": "What's New"
+      },
+      "design-language": {
+        "title": "Design Language"
       }
     }
   },
