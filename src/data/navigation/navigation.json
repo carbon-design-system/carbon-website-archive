@@ -193,26 +193,14 @@
       "layout": {
         "title": "Layout"
       },
+      "shell": {
+        "title": "Shell"
+      },
       "checkbox": {
         "title": "Checkbox"
       },
-      "link": {
-        "title": "Link"
-      },
       "text-input": {
         "title": "Text Input"
-      },
-      "breadcrumb": {
-        "title": "Breadcrumb"
-      },
-      "accordion": {
-        "title": "Accordion"
-      },
-      "button": {
-        "title": "Button"
-      },
-      "shell": {
-        "title": "Shell"
       }
     }
   },
