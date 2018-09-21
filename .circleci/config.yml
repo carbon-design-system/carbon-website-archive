@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  deploy:
+  build:
     docker:
       - image: circleci/node:8.11
     working_directory: ~/repo
