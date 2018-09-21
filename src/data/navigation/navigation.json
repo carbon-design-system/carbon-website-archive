@@ -199,6 +199,9 @@
       "shell": {
         "title": "Shell"
       },
+      "link": {
+        "title": "Link"
+      },
       "checkbox": {
         "title": "Checkbox"
       },
