@@ -7,6 +7,7 @@ jobs:
     steps:
       - checkout
       - run: ls -al
+      - run: pwd
       # - run:
           # name: Install dependencies from offline mirror
           # command: yarn install --offline
