@@ -1,12 +1,16 @@
 ---
 label: Getting Started
 title: Developers
-tabs: ['Vanilla', 'React', 'Angular', 'Other']
+tabs: ['Vanilla', 'React','Angular', 'Other Frameworks']
 ---
 
-<page-intro>The Carbon team currently supports vanilla js, React and Angular. Developers wanting to use another framework can can follow the instructions for the [Vanilla](/getting-started/developers/vanilla) library to access the styles and build out their own components.</page-intro>
+<page-intro>The Carbon Design System supports vanilla js, React and Angular as core parts of the product. But you can still build components even if you're using a different framework.</page-intro>
 
-## Development
+## Development options
+
+**Using just the styles**
+
+Developers wanting to build in different ways follow the instructions for the [Vanilla](/getting-started/developers/vanilla) library to access the styles and build out their own components.
 
 **Wrapping a component with a JavaScript framework of your choice**
 
@@ -22,11 +26,8 @@ class BXLoading extends HTMLElement {
   // Called when this custom element gets into render tree
   connectedCallback() {
     // "this" here is "<bx-loading>" element
-    this.innerHTML =
-      '(e.g. snippet from http://carbondesignsystem.com/components/loading/code)';
-    this.loading = CarbonComponents.Loading.create(
-      this.querySelector('[data-loading]')
-    );
+    this.innerHTML = '(e.g. snippet from http://carbondesignsystem.com/components/loading/code)';
+    this.loading = CarbonComponents.Loading.create(this.querySelector('[data-loading]'));
   }
   // Called when this custom element gets out of render tree
   disconnectedCallback() {
@@ -36,10 +37,16 @@ class BXLoading extends HTMLElement {
 customElements.define('bx-loading', BXLoading);
 ```
 
-## Examples
+### Examples
 
-[Angular 4 wrapper for Carbon](https://codepen.io/asudoh/pen/VryJBO?editors=1010)
+[Angular 4 wrapper for Carbon](https://codepen.io/asudoh/pen/VryJBO?editors=1010) (We use this just as an example. [Angular](https://github.com/ibm/carbon-components-angular) is now supported by the Carbon Design System)
 
-## Troubleshooting
+### Troubleshooting
 
 If you experience any issues while getting set up with Carbon Components, please head over to the [Carbon Components GitHub repo](https://github.com/ibm/carbon-components) for more guidelines and support. Please [create an issue](https://github.com/ibm/carbon-components/issues) if your issue does not already exist.
+
+## Will the Carbon Design System support other frameworks in future?
+
+We are open to the idea of providing core support for additional frameworks in future. We added Angular support in the summer of 2018.
+
+For the Carbon Design System to incorporate additional frameworks into our core offering, those frameworks need clear, guaranteed, ongoing resources to maintain and support that option. If a team built a product using a Carbon version of Vue.js, for example, but had no plan to support that solution outside of their product, that couldn't become a core part of the Carbon Design System.
