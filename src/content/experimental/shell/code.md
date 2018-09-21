@@ -1,6 +1,7 @@
 ---
 label: Experimental
 title: Shell
+tabs: ['Code', 'Usage']
 ---
 
 <component 
