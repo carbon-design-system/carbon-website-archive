@@ -1,6 +1,6 @@
 ---
 name: Question ❓
-about: Usage question or discussion about Carbon Components React.
+about: Usage question or discussion about the Carbon Website.
 ---
 
 <!--
