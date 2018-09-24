@@ -17,7 +17,10 @@ export default class SideNavToggleBtn extends React.Component {
     });
 
     return (
-      <button aria-label="Toggle Side Navigation" onClick={onToggleBtnClick} className={classNames}>
+      <button
+        aria-label="Toggle Side Navigation"
+        onClick={onToggleBtnClick}
+        className={classNames}>
         <div>
           <span className="line" />
           <span className="line" />

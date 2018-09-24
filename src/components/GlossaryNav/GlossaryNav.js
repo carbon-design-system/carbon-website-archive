@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
 
-const getPath = typeof window !== 'undefined' && window.location.hash.substring(1, 2).toUpperCase();
+const getPath =
+  typeof window !== 'undefined' &&
+  window.location.hash.substring(1, 2).toUpperCase();
 
 class GlossaryNav extends Component {
   state = {
@@ -19,7 +21,9 @@ class GlossaryNav extends Component {
     this.handleScroll();
 
     if (this.state.activeLetter) {
-      const activeLetter = document.querySelector(`#${this.state.activeLetter}`);
+      const activeLetter = document.querySelector(
+        `#${this.state.activeLetter}`
+      );
       window.scrollTo(0, activeLetter.offsetTop);
     }
 
@@ -66,7 +70,9 @@ class GlossaryNav extends Component {
 
   handleScroll = () => {
     const scrollPosition = this.updateScrollPosition();
-    const windowScroll = this.state.isReverseScroll ? window.scrollY : window.scrollY + window.innerHeight;
+    const windowScroll = this.state.isReverseScroll
+      ? window.scrollY
+      : window.scrollY + window.innerHeight;
     const scrolledItem = this.getActiveItem(windowScroll);
 
     if (scrolledItem !== this.state.activeLetter) {

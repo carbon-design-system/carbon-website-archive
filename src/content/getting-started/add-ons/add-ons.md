@@ -30,13 +30,13 @@ Carbon Design System is an open-source project and we do encourage teams using C
 
 Add-ons are generally easier to contribute to because they are not fully managed by the Carbon team. Below are the items that you need to pass in order for your contribution to be accepted. You can read our full contribution process for [design](/contributing/designers) and [development](/contributing/developers) to learn more.
 
-|               |                                                     | Core library                              | Add-ons                                   |
-| ------------- | --------------------------------------------------- | ----------------------------------------- | ----------------------------------------- |
+|               |                                                     | Core library                                         | Add-ons                                              |
+| ------------- | --------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- |
 | Accessibility | WCAG AA                                             | <icon name="icon--checkmark--solid" color="green" /> | <icon name="icon--checkmark--solid" color="green" /> |
 |               | Keyboard tabbing                                    | <icon name="icon--checkmark--solid" color="green" /> | <icon name="icon--checkmark--solid" color="green" /> |
-|               | Carbon custom focus states                          | <icon name="icon--checkmark--solid" color="green" /> |                                           |
-| Visual + UX   | Carbon themed                                       | <icon name="icon--checkmark--solid" color="green" /> |                                           |
-|               | Universal pattern <br>(fits for 2-3 use cases)      | <icon name="icon--checkmark--solid" color="green" /> |                                           |
+|               | Carbon custom focus states                          | <icon name="icon--checkmark--solid" color="green" /> |                                                      |
+| Visual + UX   | Carbon themed                                       | <icon name="icon--checkmark--solid" color="green" /> |                                                      |
+|               | Universal pattern <br>(fits for 2-3 use cases)      | <icon name="icon--checkmark--solid" color="green" /> |                                                      |
 |               | Interaction states (hover, active, focus, disabled) | <icon name="icon--checkmark--solid" color="green" /> | <icon name="icon--checkmark--solid" color="green" /> |
 
 ## Who owns an add-on repo?
@@ -47,9 +47,9 @@ Once an add-on repo has been created, the team or product that requested it is i
 
 The table below shows the Carbon team's level of support for the Core library vs. the Add-ons repo.
 
-|                           | Core library                              | Add-ons                                   |
-| ------------------------- | ----------------------------------------- | ----------------------------------------- |
+|                           | Core library                                         | Add-ons                                              |
+| ------------------------- | ---------------------------------------------------- | ---------------------------------------------------- |
 | General design questions  | <icon name="icon--checkmark--solid" color="green" /> | <icon name="icon--checkmark--solid" color="green" /> |
-| Design feedback & support | <icon name="icon--checkmark--solid" color="green" /> |                                           |
+| Design feedback & support | <icon name="icon--checkmark--solid" color="green" /> |                                                      |
 | Troubleshooting           | <icon name="icon--checkmark--solid" color="green" /> | <icon name="icon--checkmark--solid" color="green" /> |
-| Bug fixes                 | <icon name="icon--checkmark--solid" color="green" /> |                                           |
+| Bug fixes                 | <icon name="icon--checkmark--solid" color="green" /> |                                                      |

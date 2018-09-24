@@ -1,7 +1,7 @@
 ---
 label: Component
 title: Notification
-tabs: ['Code','Usage', 'Style']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## Format
@@ -23,9 +23,10 @@ We recommend that Toast Notifications automatically disappear after five seconds
 Icons may provide additional clarity. Icons should be placed to the left of a title. These glyphs (16x16) can be found in the [iconography](/style/iconography/library) library.
 
 ---
-***
-> 
-![notification icons](images/notification-usage-1.png)
+
+---
+
+> ![notification icons](images/notification-usage-1.png)
 
 ## Placement
 

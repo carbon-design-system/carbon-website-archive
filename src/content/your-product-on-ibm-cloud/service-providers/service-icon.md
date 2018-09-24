@@ -6,6 +6,7 @@ tabs: ['General', 'Service Icon', 'Design Approval']
 ---
 
 ## Design guidelines
+
 Your design team has complete control over your icon's design. We recommend that all icons try to look and feel like IBM, or reflect your product portfolios style. Below are some best practices to consider when making your service's icon.
 
 ### Do:
@@ -26,8 +27,8 @@ Your design team has complete control over your icon's design. We recommend that
 - Use lines or strokes less than 1 pixel (px)
 - Add internal padding
 
-
 ### Color
+
 If you have multiple services, you should either use the same icon with a different color for each service or use the same color scheme for each distinct icon. The examples here show how a row of services from the same provider could look in the catalog. Refer to the [IBM Design Language](https://www.ibm.com/design/language/resources/color-library) color palette for color inspiration and accessibility guidelines.
 
 ![Multiple services in the Bluemix catalog A](images/service-providers-1.svg)
@@ -38,6 +39,7 @@ If you have multiple services, you should either use the same icon with a differ
 Only one SVG is required of your service icon for production purposes. It should be submitted at the dimensions of `32 x 32` px.
 
 ## Production guidelines
+
 ### Icon requirements
 
 <p>1. SVG is sized at 32 x 32 pixels.</p>
@@ -108,9 +110,10 @@ Only one SVG is required of your service icon for production purposes. It should
 9. Click `Save`.
 10. The `SVG Options` dialog will then open.
 11. Make sure the preferences are the same as in the image below.
-![export icons from Illustrator](images/service-icon-17.png)
+    ![export icons from Illustrator](images/service-icon-17.png)
 
 ### Optimize icon
+
 Once your icon is exported as an SVG you'll need to optimize and clean up the XML code.
 
 Run SVG XML code through [SVGOMG](https://jakearchibald.github.io/svgomg/).

@@ -181,4 +181,3 @@ Read more about the usage of [Data Vis Tooltips](/data-visualization/tooltip/usa
 ![small tooltip in a bar graph](images/usage-small-tooltip.png)
 
 _Small Tooltip used within a Bar Graph_
-

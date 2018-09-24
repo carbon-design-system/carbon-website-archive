@@ -1,7 +1,7 @@
 ---
 label: Guidelines
 title: Accessibility
-tabs: ['Overview','Color', 'Keyboard','Developers']
+tabs: ['Overview', 'Color', 'Keyboard', 'Developers']
 ---
 
 <page-intro>Developers have the power to make products work with assistive technology. Accessibility is already integrated into Carbon components — here are some ways that you can further ensure your deliverables are accessible!</page-intro>
@@ -45,6 +45,7 @@ Consider visually impaired people when labeling elements. Make sure there is tex
 <!-- Do this  -->
 <a>Read more about pricing</a>
 ```
+
 ```html
 <!--  Not this  -->
 <a>Click here</a>
@@ -91,6 +92,7 @@ Every image that is not decorative must include `alt` text with a meaningful des
 <!-- Example 1 -->
 <img src='puppy.jpg' title='Sleeping Puppy' alt='A sleeping puppy'/>
 ```
+
 ```html
 <!-- Example 2 -->
 <img src='puppy2.jpg' aria-labelledby='imagelabel'/>
@@ -130,6 +132,7 @@ Landmark roles identify regions in a page, and act much like native HTML tags wo
 <nav role='navigation'></nav>
 <main role='main'></main>
 ```
+
 ```html
 <!-- signpost roles -->
 <div role='banner'>This is a banner.</div>
@@ -151,11 +154,9 @@ You can style a page feature to fit your design but don't change it to the point
 
 Add styling to tabbable elements on hover and focus, so that keyboard only users can have a clear visual of where they are navigating. Never suppress the focus indicator altogether.
 
-
 ### Hiding elements
 
 When hiding content from a screen reader, consider source order. Use `visibility: hidden`, along with `display: none` in your CSS.
-
 
 ## JS best practices
 
@@ -177,5 +178,4 @@ foo.onmouseout = anotherFunction();
 foo.onfocus = someFunction();
 
 foo.onblur = anotherFunction();
-
 ```

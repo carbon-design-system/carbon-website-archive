@@ -1,0 +1,30 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:8.11
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies from offline mirror
+          command: yarn install --offline
+      - deploy:
+          name: deploy staging to IBM Cloud
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              # Build external site
+              yarn build:external
+
+              # Install `ibmcloud` CLI
+              curl -fsSL https://clis.ng.bluemix.net/install/linux | sh;
+
+              # Login and push staging manifest
+              ibmcloud login \
+                --apikey $CLOUD_API_KEY \
+                -a https://api.ng.bluemix.net \
+                -o carbon-design-system \
+                -s production;
+
+              ibmcloud cf push -f .circleci/manifest.staging.yml
+            fi

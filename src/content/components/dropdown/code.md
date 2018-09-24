@@ -1,13 +1,13 @@
 ---
 label: Component
 title: Dropdown
-tabs: ['Code','Usage', 'Style']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 <page-intro>**Dropdowns** present a list of options that can be used to filter existing content. </page-intro>
 variations:
 
- <component 
+<component 
     name="Dropdown"
     component="dropdown" 
     variation="dropdown"
@@ -17,7 +17,7 @@ variations:
     hasAngularVersion="true"
     >
 </component>
- <component 
+<component 
     name="Dropdown (Up)"
     component="dropdown" 
     variation="dropdown--up"

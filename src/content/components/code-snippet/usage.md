@@ -1,7 +1,7 @@
 ---
 label: Component
 title: Code Snippet
-tabs: ['Code','Usage','Style']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## General

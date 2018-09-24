@@ -1,7 +1,7 @@
 // Tile Article
 
 a.tile--article {
-  display: flex; 
+  display: flex;
   text-decoration: none;
   color: $text-01;
   flex-basis: calc(50% - 1rem);
@@ -100,7 +100,7 @@ a.tile--resource {
   height: 32px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  margin: 0 1.25rem 0 .25rem;
+  margin: 0 1.25rem 0 0.25rem;
 
   img {
     width: 100%;

@@ -47,7 +47,8 @@ class MotionExample extends Component {
   render() {
     const { type, correcttext, incorrecttext } = this.props;
 
-    const isSingleExample = type === 'standard' || type === 'ease-in' || type === 'ease-out';
+    const isSingleExample =
+      type === 'standard' || type === 'ease-in' || type === 'ease-out';
 
     const containerClasses = classnames({
       'motion-example': true,
@@ -113,12 +114,14 @@ class MotionExample extends Component {
           viewBox="0 0 320 320"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        >
+          xmlnsXlink="http://www.w3.org/1999/xlink">
           <g id="standard-curve" fill="none" fillRule="evenodd">
             <path d="M308.613556,11.0327944 C46.9895515,7.38131987 149.49053,309.874432 11,309.874427" />
           </g>
-          <polyline fill="none" points="10.8641341 10.9289277 10.8641341 312.930566 309.508426 312.930566" />
+          <polyline
+            fill="none"
+            points="10.8641341 10.9289277 10.8641341 312.930566 309.508426 312.930566"
+          />
           <g id="standard-curve-2" fill="none" fillRule="evenodd">
             <path
               className="standard"
@@ -136,12 +139,14 @@ class MotionExample extends Component {
           viewBox="0 0 320 320"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        >
+          xmlnsXlink="http://www.w3.org/1999/xlink">
           <g id="out-curve" fill="none" fillRule="evenodd">
             <path d="M314.772644,10.4076925 C90.6179356,10.4076925 14.1472477,310.555156 14.1472477,310.555156" />
           </g>
-          <polyline fill="none" points="10.8641341 10.9289277 10.8641341 312.930566 309.508426 312.930566" />
+          <polyline
+            fill="none"
+            points="10.8641341 10.9289277 10.8641341 312.930566 309.508426 312.930566"
+          />
           <g id="out-curve-2" fill="none" fillRule="evenodd">
             <path
               className="ease-out"
@@ -159,12 +164,14 @@ class MotionExample extends Component {
           viewBox="0 0 320 320"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
-        >
+          xmlnsXlink="http://www.w3.org/1999/xlink">
           <g id="in-curve" fill="none" fillRule="evenodd">
             <path d="M310.223828,10 C310.223828,10 88.1895065,310.22381 10,310.223828" />
           </g>
-          <polyline fill="none" points="10.8641341 10.9289277 10.8641341 312.930566 309.508426 312.930566" />
+          <polyline
+            fill="none"
+            points="10.8641341 10.9289277 10.8641341 312.930566 309.508426 312.930566"
+          />
           <g id="in-curve-2" fill="none" fillRule="evenodd">
             <path
               className="ease-in"
@@ -181,17 +188,17 @@ class MotionExample extends Component {
         className={overlayClasses}
         onClick={this.toggleMotionExample}
         onMouseOver={this.overlayMouseOver}
-        onMouseOut={this.overlayMouseOut}
-      >
-        <button className="motion-example__button" aria-label="Play motion example">
+        onMouseOut={this.overlayMouseOut}>
+        <button
+          className="motion-example__button"
+          aria-label="Play motion example">
           <svg
             width="99px"
             height="100px"
             viewBox="4 4 99 100"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-          >
+            xmlnsXlink="http://www.w3.org/1999/xlink">
             <polygon
               className={playIconClasses}
               stroke="none"
@@ -199,7 +206,12 @@ class MotionExample extends Component {
               transform="translate(54.000000, 54.000000) rotate(-270.000000) translate(-54.000000, -54.000000) "
               points="54 5 103 103 5 103"
             />
-            <g className={pauseIconClasses} stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+            <g
+              className={pauseIconClasses}
+              stroke="none"
+              strokeWidth="1"
+              fill="none"
+              fillRule="evenodd">
               <rect x="0" y="0" width="37" height="98" />
               <rect x="61" y="0" width="37" height="98" />
             </g>

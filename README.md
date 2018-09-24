@@ -5,6 +5,7 @@ This is a work in progress repo for re-architecting the [Carbon Design System we
 [Current Carbon Design System repo](https://github.com/carbon-design-system/design-system-website)
 
 ## 📂 Structure
+
 ```
 src
 ├── components
@@ -16,36 +17,42 @@ src
 ├── templates
 ```
 
-## 📚 Writing Content 
-[Content writing guide](CONTENT.md)
+## 📚 Writing Content
+
+[Content writing guide](docs/CONTENT.md)
 
 ## 👩‍💻 Development
 
 Install dependencies
+
 ```
 yarn
 ```
 
 Run dev environment
+
 ```
 yarn dev
 ```
 
 Run internal dev environment
+
 ```
 yarn dev:internal
-``` 
+```
 
 ## 🚀 Build
 
 Runing the build commands generates all the files and places them in the `public` folder.
 
 Build external site
+
 ```
 yarn build:external
 ```
 
 Build internal site
+
 ```
 yarn build:internal
 ```

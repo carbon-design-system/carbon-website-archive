@@ -15,8 +15,7 @@ export default class Container extends Component {
             flexDirection: 'column',
             alignItems: 'center',
             width: '100%',
-          }}
-        >
+          }}>
           {story()}
         </div>
       </React.StrictMode>

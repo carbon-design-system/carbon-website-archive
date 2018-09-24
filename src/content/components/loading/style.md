@@ -1,23 +1,23 @@
 ---
 label: Component
 title: Loading
-tabs: ['Code','Usage', 'Style']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## Color
 
-| Class                                | Property         | SCSS         | HEX      |
-|--------------------------------------|------------------|--------------|----------|
-|`.bx--loading__svg`                   | stroke           | $nav-05      | #00b4a0  |
-|`.bx--loading--small.bx--loading__svg`| stroke           | $ui-05       | #5a6872  |
-|`.bx--loading-overlay`                | background-color | $ui-01 @ 60% | #ffffff  |
+| Class                                  | Property         | SCSS         | HEX     |
+| -------------------------------------- | ---------------- | ------------ | ------- |
+| `.bx--loading__svg`                    | stroke           | $nav-05      | #00b4a0 |
+| `.bx--loading--small.bx--loading__svg` | stroke           | $ui-05       | #5a6872 |
+| `.bx--loading-overlay`                 | background-color | $ui-01 @ 60% | #ffffff |
 
 ## Structure
 
-| Class                | Property      | px / rem  | Spacing token |
-|----------------------|---------------|-----------|---------------|
-|`.bx--loading`        | height, width | 84 / 5.25 | - |
-|`.bx--loading--small` | height, width | 16 / 1    | - |
+| Class                 | Property      | px / rem  | Spacing token |
+| --------------------- | ------------- | --------- | ------------- |
+| `.bx--loading`        | height, width | 84 / 5.25 | -             |
+| `.bx--loading--small` | height, width | 16 / 1    | -             |
 
 <div data-insert-component="ImageGrid">
   <div>

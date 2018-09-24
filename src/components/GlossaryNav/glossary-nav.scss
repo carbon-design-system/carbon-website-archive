@@ -20,7 +20,7 @@
 
   li {
     list-style-type: none !important;
-    margin: .125rem 0;
+    margin: 0.125rem 0;
     padding: 0;
     width: 100%;
     transition: all $transition--base;
@@ -28,7 +28,7 @@
     a {
       @include font-smoothing;
       width: 100%;
-      padding: 0 .25rem;
+      padding: 0 0.25rem;
       display: flex;
       justify-content: center;
       text-decoration: none;

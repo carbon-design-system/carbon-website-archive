@@ -1,7 +1,7 @@
 ---
 label: Data Visualization
 title: Overview
-tabs: ['General', 'Colors','Style']
+tabs: ['General', 'Colors', 'Style']
 ---
 
 ## Graph basics
@@ -16,49 +16,59 @@ An effective visualization provides enough context to show the graph's purpose, 
 _Example of base graph with terminology labels_
 
 ### Title
+
 A title describes what the graph is about and is set in title case capitalization. It may state the type of quantitative and categorical relationship the data presents, for example “2017 Account Cost by Month.”
 
 ### X & Y Axes
+
 Typical graphs have two axes, the x-axis that runs horizontally and the y-axis that runs vertically. Together, the axes outline the area where visual information is displayed.
 
 ### Axis label
+
 An axis label describes the quantitative or categorical value of an axis. For a quantitative label, make sure to include the unit, either in the label name or in parentheses after it. In this case, “Cost in Dollars” is the y-axis label title and “Time” is the x-axis label title.
 
 ### Grid lines
+
 Grid lines are points of reference aligned to data increments that divide the area of a graph into smaller regions, enhancing the ability to notice subtle differences that makes comparing data easier. Grid lines are not required on a graph and can be toggled on as a filter option.
 
 ### Data representation
+
 The position where a quantitative and categorical value meet is portrayed as either a point, bar, or line.
 
 ### Data increments
+
 Keep the distance between tick marks on the x and y-axis consistently spaced. This provides a predictable reference and limits the likelihood of distorting data. The larger the data range, the more tick marks a graph should contain.
 
 Categorical values should be labeled in logical increments, such as consecutive months. For quantitative values, choose round numbers that fit the given data range and always include an additional increment greater than the dataset. It is also best practice to have a quantitative scale begin at zero to avoid exaggerating value differences.
 
 ### Key
-A key explains what the plotted data in a graph represents. We recommend using up to six data sets (and no more) in a key because any more loses the comparative value of graphs. The key is generally located to the right of a graph. However, if the amount of items listed in the key exceeds that space or the span of the graph is limited, place the key below.  
+
+A key explains what the plotted data in a graph represents. We recommend using up to six data sets (and no more) in a key because any more loses the comparative value of graphs. The key is generally located to the right of a graph. However, if the amount of items listed in the key exceeds that space or the span of the graph is limited, place the key below.
 
 ### Tooltips
 
 A tooltip appears when hovering over content in a graph, showing the exact value(s) for that point of intersection of the x and y-axes.
 
 ### Empty state
+
 Empty states appear when no data is available, which may be due to a number of reasons. When applicable, include a call to action that helps users to get the graph up and running.
 
 ### Abbreviations
+
 Abbreviate labels if spacing is a concern. Follow these conventions across graphs:
 
-***
-| Attribute             | Abbreviations  |
-|-----------------------|--------------- |
-| Days of the week      | Sun, Mon, Tues, Wed, Thu, Fri, Sat |
-| Months                | Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec  |
-| 12 hour time             | 9am, 12pm, 6pm |
-| Numbers               | Describe the unabbreviated number in the axis label and use abbreviated numbers in the data increments. For example, the axis label “Cost in thousands” may have data increments 1K, 1.5K, 2K, etc.|
-| Currency              | For instance, if an axis label uses “Dollars”, the data increment may be $100, $200, $300, etc.
+---
 
+| Attribute        | Abbreviations                                                                                                                                                                                       |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Days of the week | Sun, Mon, Tues, Wed, Thu, Fri, Sat                                                                                                                                                                  |
+| Months           | Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec                                                                                                                                          |
+| 12 hour time     | 9am, 12pm, 6pm                                                                                                                                                                                      |
+| Numbers          | Describe the unabbreviated number in the axis label and use abbreviated numbers in the data increments. For example, the axis label “Cost in thousands” may have data increments 1K, 1.5K, 2K, etc. |
+| Currency         | For instance, if an axis label uses “Dollars”, the data increment may be $100, $200, $300, etc.                                                                                                     |
 
 ## Accessibility
+
 Data visualization presents some of the most challenging accessibility problems on the web. Although there is no one solution for these challenges, here are our recommendations:
 
 1.

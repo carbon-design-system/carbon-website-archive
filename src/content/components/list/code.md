@@ -1,7 +1,7 @@
 ---
 label: Component
 title: List
-tabs: ['Code','Usage', 'Style']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 <page-intro>**Lists** consist of related content grouped together and organized vertically.</page-intro>

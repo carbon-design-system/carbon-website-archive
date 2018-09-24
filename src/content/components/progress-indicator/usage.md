@@ -1,7 +1,7 @@
 ---
 label: Component
 title: Progress Indicator
-tabs: ['Code','Usage', 'Style']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## General guidelines

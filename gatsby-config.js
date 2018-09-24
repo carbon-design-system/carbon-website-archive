@@ -33,7 +33,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-         `gatsby-remark-component`,
+          `gatsby-remark-component`,
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -44,7 +44,7 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
-          "gatsby-remark-copy-linked-files",
+          'gatsby-remark-copy-linked-files',
           {
             resolve: 'gatsby-remark-embedded-codesandbox',
             options: {
@@ -65,8 +65,8 @@ module.exports = {
 
               // Customise the embedding iframe given the generated url
               // default:
-              getIframe: url => `<iframe src="${url}" class="embedded-codesandbox" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>`
-        
+              getIframe: url =>
+                `<iframe src="${url}" class="embedded-codesandbox" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>`,
             },
           },
         ],
@@ -76,12 +76,12 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sass',
       options: {
-        includePaths: [
-          path.resolve(__dirname, 'node_modules')
-        ],
+        includePaths: [path.resolve(__dirname, 'node_modules')],
         importer: (url, prev, done) => {
           done({
-            file: !/import-once(\.scss)?$/.test(url) ? url : path.resolve(__dirname, 'src/styles/import-once'),
+            file: !/import-once(\.scss)?$/.test(url)
+              ? url
+              : path.resolve(__dirname, 'src/styles/import-once'),
           });
         },
       },

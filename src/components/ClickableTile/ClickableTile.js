@@ -15,7 +15,15 @@ export default class ClickTile extends React.Component {
   };
 
   render() {
-    const { children, href, date, author, title, type, description } = this.props;
+    const {
+      children,
+      href,
+      date,
+      author,
+      title,
+      type,
+      description,
+    } = this.props;
 
     const classNames = classnames({
       tile: true,
@@ -25,13 +33,19 @@ export default class ClickTile extends React.Component {
 
     if (type === 'resource') {
       return (
-        <ClickableTile target="_blank" rel="noopener noreferrer" className={classNames} href={href}>
+        <ClickableTile
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classNames}
+          href={href}>
           <div className="tile__img">{children}</div>
           <div className="tile__info">
             <h5>{title}</h5>
 
             <div className="tile__caption">
-              {description ? <p class="tile__description">{description}</p> : null}
+              {description ? (
+                <p class="tile__description">{description}</p>
+              ) : null}
               {author ? <p class="tile__author">{author}</p> : null}
               {date ? <p class="tile__date">{date}</p> : null}
             </div>
@@ -42,7 +56,11 @@ export default class ClickTile extends React.Component {
 
     if (type !== 'resource') {
       return (
-        <ClickableTile target="_blank" rel="noopener noreferrer" className={classNames} href={href}>
+        <ClickableTile
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classNames}
+          href={href}>
           <div className="tile__img">{children}</div>
           <div className="tile__info">
             <h5>{title}</h5>

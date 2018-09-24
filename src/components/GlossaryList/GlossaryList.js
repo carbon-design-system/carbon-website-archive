@@ -22,16 +22,26 @@ class Glossary extends Component {
             counter++;
             const currentWord = entry[list][word];
             let wordId = word.toLowerCase().replace(' ', '-');
-            const desc = currentWord.desc ? md.renderInline(currentWord.desc) : '';
-            const subtext = currentWord.subtext ? md.renderInline(currentWord.subtext) : '';
+            const desc = currentWord.desc
+              ? md.renderInline(currentWord.desc)
+              : '';
+            const subtext = currentWord.subtext
+              ? md.renderInline(currentWord.subtext)
+              : '';
             if (wordId === 'docs') {
               wordId = `${wordId}${counter}`;
             }
             return (
               <div id={wordId} key={word} className="glossary-entry__word">
                 <h4 className="glossary-entry__word-heading">{word}</h4>
-                <p className="glossary-entry__desc" dangerouslySetInnerHTML={{ __html: desc }} />
-                <p className="glossary-entry__subtext" dangerouslySetInnerHTML={{ __html: subtext }} />
+                <p
+                  className="glossary-entry__desc"
+                  dangerouslySetInnerHTML={{ __html: desc }}
+                />
+                <p
+                  className="glossary-entry__subtext"
+                  dangerouslySetInnerHTML={{ __html: subtext }}
+                />
               </div>
             );
           });

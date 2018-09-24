@@ -28,7 +28,7 @@ Movement should be slow enough that the user can recognize what's happening, but
 <motion-example type="duration" correcttext="300ms" incorrecttext="600ms"></motion-example>
 
 | Type                     | Duration  |
-|--------------------------|-----------|
+| ------------------------ | --------- |
 | Buttons/small components | 100-200ms |
 | Alerts/table reorder     | 250-300ms |
 | Panels/modals            | 300-400ms |

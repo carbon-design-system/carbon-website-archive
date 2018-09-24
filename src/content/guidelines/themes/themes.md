@@ -140,7 +140,7 @@ $structured-list-padding: 2rem !default;
 $structured-list-text-transform: none !default;
 
 // Skeleton Loading
-$skeleton: rgba($color__blue-51, 0.1) !default; 
+$skeleton: rgba($color__blue-51, 0.1) !default;
 ```
 
 ## Theming applied
@@ -151,13 +151,13 @@ The following examples demonstrates the relationship between the different themi
 
 ![Default theme applied](images/theme-1.png)
 
-| Key | Variable      | Role               | Value                 | Theme   |
-| --- | ------------- | ------------------ | --------------------- | ------- |
-| 1   | `$text-01  `    | Primary text       | `#152935`               | Default |
-| 2   | `$text-03  `    | Hint text          | `#cdd1d4 `              | Default |
+| Key | Variable        | Role               | Value                   | Theme   |
+| --- | --------------- | ------------------ | ----------------------- | ------- |
+| 1   | `$text-01`      | Primary text       | `#152935`               | Default |
+| 2   | `$text-03`      | Hint text          | `#cdd1d4`               | Default |
 | 3   | `$input-border` | Input border       | `1px solid transparent` | Default |
 | 4   | `$brand-01`     | Primary icon       | `#3d70b2`               | Default |
-| 5   | `$ui-02   `     | Default background | `#f4f7fb`               | Default |
+| 5   | `$ui-02`        | Default background | `#f4f7fb`               | Default |
 | 6   | `$field-01`     | Field background   | `#152935` @ 10%         | Default |
 
 ### Custom theme applied
@@ -166,11 +166,11 @@ Here is the same component but with a different theme applied. Notice how only t
 
 ![Custom theme applied](images/theme-2.png)
 
-| Key | Variable      | Role               | Value            | Theme  |
-| --- | ------------- | ------------------ | ---------------- | ------ |
-| 1   | `$text-01   `   | Primary text       | `#272727    `      | Watson |
-| 2   | `$text-03   `   | Hint text          | `#777677     `     | Watson |
+| Key | Variable        | Role               | Value              | Theme  |
+| --- | --------------- | ------------------ | ------------------ | ------ |
+| 1   | `$text-01`      | Primary text       | `#272727`          | Watson |
+| 2   | `$text-03`      | Hint text          | `#777677`          | Watson |
 | 3   | `$input-border` | Input border       | `1px solid $ui-04` | Watson |
-| 4   | `$brand-01  `   | Primary icon       | `#047cc0   `       | Watson |
-| 5   | `$ui-02 `       | Default background | `#f6f6f6 `         | Watson |
-| 6   | `$field-01`     | Field background   | `#ffffff `         | Watson |
+| 4   | `$brand-01`     | Primary icon       | `#047cc0`          | Watson |
+| 5   | `$ui-02`        | Default background | `#f6f6f6`          | Watson |
+| 6   | `$field-01`     | Field background   | `#ffffff`          | Watson |

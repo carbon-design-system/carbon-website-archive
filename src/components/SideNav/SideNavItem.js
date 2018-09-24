@@ -39,7 +39,9 @@ export default class SideNavItem extends React.Component {
 
       return (
         <li className={subNavClasses} key={item}>
-          <Link activeClassName="side-nav__sub-nav-item--active" to={`/${this.props.itemSlug}/${item}`}>
+          <Link
+            activeClassName="side-nav__sub-nav-item--active"
+            to={`/${this.props.itemSlug}/${item}`}>
             {subItems[item].title}
           </Link>
         </li>
@@ -54,8 +56,10 @@ export default class SideNavItem extends React.Component {
       <Location>
         {({ location }) => {
           const navItemClasses = classnames('side-nav__nav-item', {
-            'side-nav__nav-item--open': this.state.open || locationContainsPath(location, itemSlug),
-            'side-nav__nav-item--active': locationContainsPath(location, itemSlug) && !hasSubNav,
+            'side-nav__nav-item--open':
+              this.state.open || locationContainsPath(location, itemSlug),
+            'side-nav__nav-item--active':
+              locationContainsPath(location, itemSlug) && !hasSubNav,
           });
           return (
             <li className={navItemClasses}>
@@ -74,7 +78,11 @@ export default class SideNavItem extends React.Component {
               ) : (
                 <Link to={`/${itemSlug}`}>{item.title}</Link>
               )}
-              {hasSubNav && <ul className="side-nav__sub-nav">{this.renderSubNavItems(item['sub-nav'], location)}</ul>}
+              {hasSubNav && (
+                <ul className="side-nav__sub-nav">
+                  {this.renderSubNavItems(item['sub-nav'], location)}
+                </ul>
+              )}
             </li>
           );
         }}

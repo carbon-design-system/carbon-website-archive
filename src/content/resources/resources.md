@@ -92,4 +92,5 @@ title: Resources
 IBM uses the font Plex across products for brand consistency and cohesion.
 
 ### [IBM Design Language](https://www.ibm.com/design/language/)
+
 Carbon uses the IBM Design Language as our guiding principle. These core values remind us to design for an outcome and to be authentically thoughtful.

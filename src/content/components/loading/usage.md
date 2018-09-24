@@ -1,7 +1,7 @@
 ---
 label: Component
 title: Loading
-tabs: ['Code','Usage', 'Style']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## General guidelines
@@ -21,6 +21,7 @@ It is best practice to use a loading spinner whenever the wait time is anticipat
 Loading spinners may be scaled down if the loading experience is contextual to a certain item on the page.
 
 ---
-***
-> 
-![Small loader](images/loading-usage-2.png)
+
+---
+
+> ![Small loader](images/loading-usage-2.png)
