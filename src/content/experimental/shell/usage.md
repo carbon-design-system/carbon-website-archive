@@ -1,6 +1,6 @@
 ---
 label: Experimental
-title: Usage
+title: Shell
 tabs: ['Code', 'Usage']
 ---
 
