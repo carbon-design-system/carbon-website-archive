@@ -6,6 +6,13 @@ tabs: ['Code', 'Usage']
 
 <page-intro>The UI Shell is the top level in a product's UI. The Shell consists of the primary **header** and **footer**, as well as **header panels** that are used for navigation and global UI services.</page-intro>
 
+1.  [UI Shell Zones](#ui-shell-zones)
+2.  [UI Shell Components](#ui-shell-components)
+3.  [Side Navigation](#side-navigation)
+4.  [Panel Styles](#panel-styles)
+5.  [UI Shell Theming](#ui-shell-theming)
+
+
 ## UI Shell Zones
 
 The shell is divided into 3 distinct "zones" which establish purpose and level of control.
