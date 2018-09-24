@@ -196,8 +196,8 @@
       "layout": {
         "title": "Layout"
       },
-      "shell": {
-        "title": "Shell"
+      "ui-shell": {
+        "title": "UI Shell"
       },
       "link": {
         "title": "Link"
