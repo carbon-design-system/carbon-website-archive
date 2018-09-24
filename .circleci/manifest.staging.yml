@@ -1,0 +1,7 @@
+---
+applications:
+- name: carbon-website-staging
+  memory: 64M
+  buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  routes:
+  - route: staging.carbondesignsystem.com
