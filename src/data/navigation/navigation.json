@@ -199,6 +199,9 @@
       "shell": {
         "title": "Shell"
       },
+      "accordion": {
+        "title": "Accordion"
+      },
       "link": {
         "title": "Link"
       },
