@@ -21,6 +21,10 @@ class Layout extends React.Component {
     isFinal: false,
   };
 
+  componentDidMount() {
+    this.checkWidth();
+  }
+
   onToggleBtnClick = () => {
     if (this.state.isOpen) {
       this.setState({
@@ -41,6 +45,41 @@ class Layout extends React.Component {
         });
       }, 5);
     }
+  };
+
+  handleClose = evt => {
+    let isTarget = false;
+    if (evt.target.classList.contains('main-nav-item__heading') && evt.target.classList.contains('main-nav-item__list')) {
+      isTarget = true;
+    }
+    const isSmallerScreen = window.innerWidth < 1024 || screen.width < 1024;
+    if (!isTarget && isSmallerScreen) {
+      this.setState({
+        isOpen: false,
+      });
+    }
+  };
+
+  checkWidth = () => {
+    const width = window.innerWidth;
+    if (width < 1024) {
+      this.setState({
+        isOpen: false,
+      });
+    }
+    document.addEventListener('click', evt => {
+      this.handleClose(evt);
+    });
+    // document.addEventListener('touchstart', evt => {
+    //   this.handleClose(evt);
+    // });
+    document.addEventListener('keydown', evt => {
+      if (evt.which === 27 && this.state.isOpen) {
+        this.setState({
+          isOpen: false,
+        });
+      }
+    });
   };
 
   render() {
