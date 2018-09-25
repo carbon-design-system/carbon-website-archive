@@ -1,43 +1,43 @@
-## Adding/updating navigation
+# Content
 
-Add page to navigation.json file.
+## File Structure
 
-```
-src
-├── data
-   ├── navigation
-      ├── navigation.json
-```
-
-If page is internal only make sure to add `"internal": true` to the navigation.json file for that item.
-
-```
- "your-product-on-ibm-cloud": {
-    "title": "Your Product on IBM Cloud",
-    "internal": true,
-    "sub-nav": {
-      "catalog-entry": {
-        "title": "Catalog Entry"
-      },
-```
-
-## Adding a new content page
-
-Create markdown file inside the `content` folder following the rules below.
-
-## Writing content
-
-All markdown files live inside of the `content` folder and follow the site navigation. They live inside a folder that is named the same as the file.
+All markdown files live inside of the `src/content` folder and follow the site navigation. They live inside a folder that is named the same as the file unless it is a page with tabbed navigation. "Tabbed" pages *(for example Getting Starter > Developers)* should have all the pages inside the same folder, with the file name matching the page title. 
 
 ```
 src
 ├── content
    ├── getting-started
       ├── designers
+          ├── images
+                ├── image1.png
+                ├── image2.png
           ├── designers.md
 ```
+or
+```
+src
+├── content
+   ├── getting-started
+      ├── developers
+          ├── angular.md
+          ├── other-frameworks.md
+          ├── react.md
+          ├── vanilla.md
+```
 
-Remember the frontmatter on top of each file.
+## Frontmatter
+
+The top of each markdown file has required frontmatter fields to display the header for the page.
+
+```
+---
+label: Small label text above title
+title: Page Title
+tabs: ['Tab 1', 'Tab 2', 'Tab 3'']
+internal: true
+---
+```
 
 Required fields are:
 
@@ -49,22 +49,9 @@ Non-required fields are:
 - `tabs`: An array of the page tabs (in the desired order), tab name should match markdown file name.
 - `internal: true` Used to designate internal only content.
 
-### Example:
-
-```
----
-title: Getting Started
-label: Developers
-tabs: ['Vanilla', 'React']
----
-```
-
-This will render the following header:
-![Header](https://user-images.githubusercontent.com/5447411/41934216-bc9c080e-794b-11e8-9d7f-1f9d89d44dd9.png)
-
 ## Markdown
 
-### This generates an H2 heading with an underline
+    ### This generates an H2 heading with an underline
 
     ### This generates an H3 heading (blue).
 
@@ -84,7 +71,7 @@ You can create an inline link by wrapping link text in brackets [ ], and then wr
 
 `[Carbon](http://www.carbondesignsystem.com/)`
 
-If you need a link to open in a new window you will have to use standard html. You will also need to wrap the block of text in a `<p>` tag (unless its in a list)
+If you need a link to open in a new window you will have to use standard html. You will also need to wrap the block of text in either a `<p>` or `<li>` tag.
 `<p>This is a link to <a href="http://www.carbondesignsystem.com" target="_blank">Carbon</a></p>`
 
 ### Images
@@ -103,6 +90,9 @@ Smaller image w/ text wrapping
 
     * This is a bulleted list
     * List item 2
+
+    1. This is an ordered list
+    2. List item 2
 
 ### Tables
 
@@ -124,15 +114,9 @@ We support inline code and code blocks.
 
     ```
 
-Inline `code` has `back-ticks around` it.
-
-```
-Blocks of code are fenced by lines with three back-ticks
-```
-
 ## Custom Markdown Components
 
-These custom components can be used inside any markdown file.
+The carbon website has a handful of custom markdown components available for use inside any markdown file. Some are meant to be global and others were created for very specific use cases. 
 
 ### Global Components:
 
@@ -261,3 +245,4 @@ This will render the following set of examples
     variation="MultiSelect"
     >
 ```
+
