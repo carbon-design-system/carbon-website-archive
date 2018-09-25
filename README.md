@@ -58,11 +58,3 @@ Build internal site
 ```
 yarn build:internal
 ```
-
-## 📚 Writing Content
-
-All of the content on the Carbon website is handled  for more information on how to setup markdown files and how to use our custom markdown components.
-
-##  Navigation
-
-Need to update the navigation for the site? Read through our .
