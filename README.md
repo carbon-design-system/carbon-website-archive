@@ -17,11 +17,11 @@ src
 ├── templates
 ```
 
-## 📚 Writing Content
+## 👩‍💻 Development Contribution
 
-[Content writing guide](docs/CONTENT.md)
-
-## 👩‍💻 Development
+- 🤝 [Contribution Guidelines](.github/CONTRIBUTING.md) 
+- 📚 [Content/Markdown Guidelines](docs/CONTENT.md)
+- 🗺 [Navigation Guidelines](docs/NAVIGATION.md)
 
 Install dependencies
 
@@ -56,3 +56,11 @@ Build internal site
 ```
 yarn build:internal
 ```
+
+## 📚 Writing Content
+
+All of the content on the Carbon website is handled  for more information on how to setup markdown files and how to use our custom markdown components.
+
+##  Navigation
+
+Need to update the navigation for the site? Read through our .
