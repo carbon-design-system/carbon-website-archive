@@ -29,7 +29,7 @@ jobs:
               ibmcloud cf push -f .circleci/manifest.staging.yml
 
               # Build and deploy internal site
-              yarn build:external
+              yarn build:internal
 
               ibmcloud login \
                 --apikey $INTERNAL_CLOUD_API_KEY \
