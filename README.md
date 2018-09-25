@@ -17,13 +17,11 @@ src
 ├── templates
 ```
 
-## 📚 Writing Content
+## 👩‍💻 Development
 
-All of the content on the Carbon website is handled through markdown files. Please read through our [Content guide](docs/CONTENT.md) for more information on how to setup markdown files and how to use our custom markdown components.
-
-## 👩‍💻 Development & 🤝Contribution
-
-Please refer to the [Contribution Guidelines](.github/CONTRIBUTING.md) before starting any work.
+- 🤝 [Contribution Guidelines](.github/CONTRIBUTING.md) 
+- 📚 [Content/Markdown Guidelines](docs/CONTENT.md)
+- 🗺 [Navigation Guidelines](docs/NAVIGATION.md)
 
 Install dependencies
 
@@ -42,6 +40,8 @@ Run internal dev environment
 ```
 yarn dev:internal
 ```
+
+If you need more detailed information on how setup your machine to develop locally please take a look at our [wiki](https://github.com/carbon-design-system/carbon-website-gatsby/wiki).
 
 ## 🚀 Build
 
