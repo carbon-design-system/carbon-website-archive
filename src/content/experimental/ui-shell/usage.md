@@ -12,7 +12,6 @@ tabs: ['Code', 'Usage']
 4.  [Panel Styles](#panel-styles)
 5.  [UI Shell Theming](#ui-shell-theming)
 
-
 ## UI Shell Zones
 
 The shell is divided into 3 distinct "zones" which establish purpose and level of control.
