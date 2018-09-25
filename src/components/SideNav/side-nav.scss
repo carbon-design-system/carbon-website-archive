@@ -15,6 +15,7 @@
   position: fixed;
   z-index: 7000;
   transition: $transition--base $bx--standard-easing;
+  overflow-y: scroll;
 
   @media screen and (min-width: 840px) {
     box-shadow: none;
