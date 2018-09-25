@@ -19,9 +19,11 @@ src
 
 ## 📚 Writing Content
 
-[Content writing guide](docs/CONTENT.md)
+All of the content on the Carbon website is handled through markdown files. Please read through our [Content guide](docs/CONTENT.md) for more information on how to setup markdown files and how to use our custom markdown components.
 
-## 👩‍💻 Development
+## 👩‍💻 Development & 🤝Contribution
+
+Please refer to the [Contribution Guidelines](.github/CONTRIBUTING.md) before starting any work.
 
 Install dependencies
 
