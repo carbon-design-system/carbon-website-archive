@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import CodeExample from '../CodeExample/CodeExample';
 import * as components from 'carbon-components/es/globals/js/components';
+import settings from 'carbon-components/es/globals/js/settings';
 import { RadioButtonGroup, RadioButton } from 'carbon-components-react';
 
 const componentNamesMap = {
@@ -89,9 +90,13 @@ class ComponentExample extends Component {
     }
     const ref = this._ref;
     if (ref) {
-      const currentComponent = this.props.component
+      const { component, experimental } = this.props;
+      const currentComponent = component
         .replace(/-([a-z])/g, (match, token) => token.toUpperCase())
         .replace(/^([a-z])/, (match, token) => token.toUpperCase());
+      // TODO: See if instances with different prefixes may exist as the same time.
+      // If so, we need to figure out more sophisticted approach here.
+      settings.prefix = experimental ? 'demo' : 'bx';
       (componentNamesMap[currentComponent] || [currentComponent]).forEach(
         name => {
           const TheComponent = components[name];
