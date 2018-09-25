@@ -13,11 +13,3 @@ tabs: ['Code', 'Usage', 'Style']
     experimental="true"
     >
 </component>
-
-
-<component 
-    name="Accordion"
-    component="accordion" 
-    variation="accordion"
-    >
-</component>
