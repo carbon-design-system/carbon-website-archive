@@ -199,6 +199,9 @@
       "ui-shell": {
         "title": "UI Shell"
       },
+      "accordion": {
+        "title": "Accordion"
+      },
       "link": {
         "title": "Link"
       },
