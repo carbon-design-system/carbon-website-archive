@@ -17,6 +17,16 @@ tabs: ['Code', 'Usage', 'Style']
 </component>
 
 <component 
+    name="Text Input Password Visibility"
+    component="text-input" 
+    variation="text-input--toggle-password-visibility"
+    codepen="YEZLyd"
+    haslightversion="true"
+    hasReactVersion="true"
+    >
+</component>
+
+<component 
     name="Text Area"
     component="text-area" 
     variation="text-area"
@@ -25,3 +35,5 @@ tabs: ['Code', 'Usage', 'Style']
     hasReactVersion="true"
     >
 </component>
+
+<component-docs component="text-input"></component-docs>
