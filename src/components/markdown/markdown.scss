@@ -61,7 +61,8 @@
 // h2
 //----------------------------
 
-.page-h2 {
+.page-h2,
+.page-content h2 {
   @include typescale('beta');
   position: relative;
   color: $text-01;
@@ -163,4 +164,20 @@ blockquote p img {
   line-height: 1.75;
   width: 100%;
   max-width: 38rem;
+}
+
+//----------------------------
+// Markdown Anchor
+//----------------------------
+
+// This hides the anchor link from everything except h2
+// the custom markdown prevents the links from working for those html elements
+
+.page-h3,
+.page-h4,
+h5,
+h6 {
+  .anchor {
+    display: none;
+  }
 }
