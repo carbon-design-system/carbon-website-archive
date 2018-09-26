@@ -47,13 +47,13 @@ Columns and rows create key lines that are essential for visual rhythm, especial
 
 A [fluid grid](#fluid-grid) divides space by two. This division is immediately evident in the 2x column structure. Within a breakpoint, column count is constant and unit size scales with screen size. Choose a column count by starting with one, then divide by two as needed:
 
-| Fluid Grid Columns
-| -------------------
-| 1
-| 2
-| 4
-| 8
-| 16
+| Fluid Grid Columns |
+| ------------------- |
+| 1 |
+| 2 |
+| 4 |
+| 8 |
+| 16 |
 
 For dense content, use mini units for further alignment and spatial guidance.
 
@@ -238,12 +238,12 @@ When sizing boxes, constrain dimensions to one of the aspect ratios shown below 
 
 Choose an aspect ratio from the table, then multiply the base unit in each dimension as needed to set width and height, maintaining the ratio in either portrait or landscape.
 
-| Aspect Ratios
-| ---------------
-| 1:1
-| 2:1
-| 4:3
-| 16:9
+| Aspect Ratios |
+| --------------- |
+| 1:1 |
+| 2:1 |
+| 4:3 |
+| 16:9 |
 
 For example, to size a fluid box with a 2:1 landscape aspect ratio, you could span 4 columns in width and 2 column-widths of height. To size a fixed box with the same aspect ratio, you could start with an 80 pixel base unit, then multiply it by 4 in width and 2 in height, for a fixed box size of 320 by 160.
 
@@ -267,13 +267,13 @@ Take care to apply the intended vertical spacing just once:
 
 Components can be sized like other boxes: either fixed or fluid, and often hybrid, with fixed height and fluid width. When interior space within a component is cramped, use the minor sizing scale:
 
-| Px
-| -----
-| 2
-| 4
-| 8
-| 12
-| 16
+| Px |
+| ----- |
+| 2 |
+| 4 |
+| 8 |
+| 12 |
+| 16 |
 
 (TODO: Fully incorporate [Carbon spacing](../style/spacing) table including tokens, rems, examples)
 
