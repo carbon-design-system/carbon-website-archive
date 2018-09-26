@@ -124,7 +124,7 @@ Choose the layout approach that best meets the user's expectation in each case.
 
 Fluid Grids are ideal for editorial content, dashboards, images, video, data visualizations, etc. In each case, scaling the size of things is more useful to the user than scaling the number of visible things. In a fluid grid, we divide available width in half to create columns, repeating as necessary.
 
-`vimeo: https://vimeo.com/5299404`
+`vimeo: https://vimeo.com/292010288/ea512e04a5`
 
 ![fluid grid](images/fluid_grid.png)
 
@@ -258,7 +258,7 @@ Use cases are leading section in a webpage, divded section for editorial content
 
 See the [breakpoints table](#breakpoints) for pixel sizings.
 
-![key heights](images/sizing_scale_new.png)
+![key heights](images/sizing_scale_2.png)
 
 ### Scaling Multiple
 
