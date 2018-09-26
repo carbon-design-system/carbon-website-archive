@@ -22,7 +22,8 @@ The 2x Grid is the geometric foundation of all the visual elements of IBM Design
 
 The basic unit of 2x Grid geometry is the 8-pixel square Mini Unit. Multiples of mini units compose the dimensions of columns, rows, boxes, and their margins and padding. The mini unit adapts to your content while maintaining a consistent visual rhythm.
 
-![mini unit grid](images/mini_unit_grid_boarder.png)
+`vimeo: https://vimeo.com/292021969/7f59da33f0`
+
 
 At [breakpoint boundaries](#breakpoints), mini units divide the screen into a fixed master grid, and multiples of mini units map to [fluid grid](#fluid-grid) column widths and row heights. [Fixed boxes](#fixed) are sized in mini units, as are the fixed dimension of [hybrid boxes](#hybrid).
 
@@ -102,7 +103,7 @@ For best results, test designs and code at each of these standard breakpoints.
 
 Create **Custom Breakpoints** to accommodate special needs, by writing your own media queries and CSS rules. Refer to the grid code package for more information.
 
-![custom breakpoints](images/custom_breakpoints.png)
+`vimeo: https://vimeo.com/292015984`
 
 ## Grid Behaviors
 
@@ -194,7 +195,7 @@ In a UI layout, users expect to find certain types of content in certain areas. 
 ### Shell
 The shell is divided into 3 distinct "zones" which establish purpose and hierarchy.
 
-![UI Shell Zones](images/ui_shell_zones_new.png)
+![UI Shell Zones](images/ui_shell_regions.png)
 
 #### 1. Global sidenav
 #### 2. Header
@@ -259,7 +260,7 @@ Use cases are leading section in a webpage, divded section for editorial content
 
 See the [breakpoints table](#breakpoints) for pixel sizings.
 
-![key heights](images/sizing_sale_2.png)
+![key heights](images/sizing_scale.png)
 
 ### Scaling Multiple
 
