@@ -29,34 +29,46 @@ export default class SideNav extends React.Component {
       'side-nav__closed--final': isFinal && !isOpen,
     });
 
+    const classNamesClickToClose = classnames({
+      'side-nav-click-to-close': true,
+      'side-nav-click-to-close__closed': !isOpen,
+      'side-nav-click-to-close__closed--final': isFinal && !isOpen,
+    });
+
     return (
-      <nav className={classNames}>
-        <Link to="/" className="side-nav__logo">
-          <span>Carbon</span> Design System
-        </Link>
-        <GlobalSearch />
-        <ul className="side-nav__nav-items">{navItems}</ul>
-        <div className="side-nav__links">
-          <Button
-            className="side-nav__link"
-            kind="secondary"
-            icon="icon--arrow--right"
-            iconDescription="Arrow right"
-            href="https://github.com/ibm/carbon-design-kit">
-            Design Kit
-          </Button>
-          <Link
-            to="/resources#github"
-            className="side-nav__link bx--btn bx--btn bx--btn--secondary">
-            GitHub Repos
-            <Icon
-              className="bx--btn__icon"
-              name="icon--arrow--right"
-              description="Arrow right"
-            />
-          </Link>
+      <>
+        <div 
+          className={classNamesClickToClose}
+          onClick={()=>{ this.props.clickToClose(); }}>
         </div>
-      </nav>
+        <nav className={classNames}>
+          <Link to="/" className="side-nav__logo">
+            <span>Carbon</span> Design System
+          </Link>
+          <GlobalSearch />
+          <ul className="side-nav__nav-items">{navItems}</ul>
+          <div className="side-nav__links">
+            <Button
+              className="side-nav__link"
+              kind="secondary"
+              icon="icon--arrow--right"
+              iconDescription="Arrow right"
+              href="https://github.com/ibm/carbon-design-kit">
+              Design Kit
+            </Button>
+            <Link
+              to="/resources#github"
+              className="side-nav__link bx--btn bx--btn bx--btn--secondary">
+              GitHub Repos
+              <Icon
+                className="bx--btn__icon"
+                name="icon--arrow--right"
+                description="Arrow right"
+              />
+            </Link>
+          </div>
+        </nav>
+      </>
     );
   }
 }

@@ -60,6 +60,12 @@ class Layout extends React.Component {
     }
   };
 
+  clickToClose = () => {
+    this.setState({
+      isOpen: false,
+    });
+  }
+
   checkWidth = () => {
     const width = window.innerWidth;
     if (width < 1024) {
@@ -67,12 +73,6 @@ class Layout extends React.Component {
         isOpen: false,
       });
     }
-    document.addEventListener('click', evt => {
-      this.handleClose(evt);
-    });
-    // document.addEventListener('touchstart', evt => {
-    //   this.handleClose(evt);
-    // });
     document.addEventListener('keydown', evt => {
       if (evt.which === 27 && this.state.isOpen) {
         this.setState({
@@ -132,6 +132,7 @@ class Layout extends React.Component {
               isFinal={this.state.isFinal}
               isOpen={this.state.isOpen}
               location={this.props.location}
+              clickToClose={this.clickToClose}
             />
             <div className={classNames}>
               {children}
