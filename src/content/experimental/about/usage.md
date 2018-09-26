@@ -12,9 +12,6 @@ To turn on `feature-flags` include the **feature-flag** variable into your scss 
 
 Import Carbon components styles in after the feature-flag as seen below.
 
-**Note: You must be using sass and not the compiled css file in order to take advantage of the code using feature flags.** 
-
-
 ```scss
 
 $feature-flags: (
@@ -23,6 +20,9 @@ $feature-flags: (
  @import 'carbon-components/src/globals/scss/styles';
 
 ```
+
+**Note: You must be using sass and not the compiled css file in order to take advantage of the code using feature flags.** 
+
 
 
 ## Disclaimer 
