@@ -8,34 +8,21 @@ tabs: ['Overview', 'Usage']
 
 Carbon utilizes `feature-flags` to toggle experimental components on and off.
 
-To turn on `feature-flags` navigate to `_feature-flags.scss`
+To turn on `feature-flags` include the **feature-flag** variable into your scss file, then set `components-x` to `true`. 
 
+Import Carbon components styles in after the feature-flag as seen below.
 
-```bash
-
-carbon-components/
-
-├── globals
-│   └── scss
-│       └── _feature-flags.scss
-│    
-
-```
-
-
-At the top of the file under the `$feature-flags` variable set `components-x` to `true` it is set to *false* by default.
+**Note: You must be using sass and not the compiled css file in order to take advantage of the code using feature flags.** 
 
 
 ```scss
 
 $feature-flags: (
-  components-x: false,
-  ui-shell: false,
-) !default;
+    components-x: true,
+  );
+ @import 'carbon-components/src/globals/scss/styles';
 
 ```
-
-When you want to return to the stable Carbon components styling toggle `components-x` back to `false`.
 
 
 ## Disclaimer 
