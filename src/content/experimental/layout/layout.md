@@ -13,7 +13,7 @@ The 2x Grid is the geometric foundation of all the visual elements of IBM Design
 
 4.  [Grid Behaviors](#grid-behaviors)
 
-5.  [Screen Regions](#screen-regions)
+5.  [Grid Influencers](#grid-influencers)
 
 6.  [Sizing Scale](#sizing-scale)
 
@@ -118,11 +118,13 @@ Choose the layout approach that best meets the user's expectation in each case.
 1. [Fluid Grid](#fluid-grid)
 2. [Fixed Boxes](#fixed-boxes)
 3. [Hybrid](#hybrid)
-4. [Key Lines](#key-lines)
+4. [Guide Lines](#guide-lines)
 
 ### Fluid Grid
 
 Fluid Grids are ideal for editorial content, dashboards, images, video, data visualizations, etc. In each case, scaling the size of things is more useful to the user than scaling the number of visible things. In a fluid grid, we divide available width in half to create columns, repeating as necessary.
+
+`vimeo: https://vimeo.com/5299404`
 
 ![fluid grid](images/fluid_grid.png)
 
@@ -166,25 +168,56 @@ Horizontal and vertical alignment are equally critical. When present, the eye ca
 ![key alignments](images/key_alignments.png)
 
 
-## Screen Regions
+## Grid Influencers
 
-(Grid Influencers)
+1. [UI Regions](#ui-regions)
+1. [Shell](#shell)
+2. [Panel Behavior](#panel-behavior)
 
-Header
+### UI Regions
+In a UI layout, users expect to find certain types of content in certain areas. We call these areas UI Regions. It is especially important for these zones to be consistent across devices, and adapt across breakpoints.
 
-Side Rail
+| Common UI Regions |
+| ----- |
+| Headers |
+| Side Rails |
+| Side Panels |
+| Dropdown Menus |
+| Content |
+| Headers |
+| Dialogs |
+| Footers|
 
-Side Panel
 
-Dropdown Menu
 
-Content
+### Shell
+The shell is divided into 3 distinct "zones" which establish purpose and hierarchy.
 
-Header
+![UI Shell Zones](images/ui_shell_zones_new.png)
 
-Dialog
+#### 1. Global sidenav
+#### 2. Header
+#### 3. Local sidenav
 
-Footer
+### Panel Behavior
+All vertical panels expand to fill the full height of the browser window.
+
+#### Flexible Panels
+ The Flexible Panels allow for both collapsed and expanded states. The expanded state of a Flexible Panel is a fixed width that cannot be adjusted by the user. The collapsed Flexible Panel expands when the user hovers over any portion of it. 
+
+ When flexible panels expand, they either condense both the content and the grid or they push content beyond the edge of the browser. 
+
+![Flexible Panels](images/panel_flexible.png)
+
+#### Fixed Panels
+Fixed panels maintain a static width, cannot be collapsed and also exist outside of the responsive grid. 
+
+![Fixed Panels](images/panel_fixed_new.png)
+
+#### Floating Panels
+This panel style floats above the primary content area and does not affect the responsive grid. Floating panels conceal any UI elements below them and must be dismissable by the user. Inline menus, dropdowns and tooltips also float.
+
+![Floating Panels](images/panel_floating.png)
 
 ## Sizing Scale
 
@@ -225,6 +258,7 @@ Use cases are leading section in a webpage, divded section for editorial content
 
 See the [breakpoints table](#breakpoints) for pixel sizings.
 
+![key heights](images/sizing_scale_new.png)
 
 ### Scaling Multiple
 
@@ -247,12 +281,12 @@ Choose an aspect ratio from the table, then multiply the base unit in each dimen
 
 For example, to size a fluid box with a 2:1 landscape aspect ratio, you could span 4 columns in width and 2 column-widths of height. To size a fixed box with the same aspect ratio, you could start with an 80 pixel base unit, then multiply it by 4 in width and 2 in height, for a fixed box size of 320 by 160.
 
-![aspect ratio](images/aspect_ratios_columns.png)
+![aspect ratio](images/aspect_ratios.png)
 
 Aspect ratios do not apply to Hybrid Boxes, since one dimension is fixed and the other is fluid.
 
 
-### Vertical Rhythm
+### Visual Rhythm
 
 Use the fixed sizing scale to set vertical spacing between sections, by adding it to the top or bottom margin of a box:
 
