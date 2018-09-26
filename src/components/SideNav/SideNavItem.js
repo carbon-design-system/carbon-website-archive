@@ -3,6 +3,12 @@ import React from 'react';
 import classnames from 'classnames';
 import { Link } from 'gatsby';
 import { Icon } from 'carbon-components-react';
+import {
+  normalizeLocation,
+  locationContainsPathAtIndex,
+  locationContainsPath,
+  determineRoutePathIndex,
+} from './sideNavHelpers';
 
 export default class SideNavItem extends React.Component {
   state = {
@@ -16,25 +22,20 @@ export default class SideNavItem extends React.Component {
     });
   };
 
-  renderSubNavItems = (subItems, location) =>
-    Object.keys(subItems).map(item => {
-      const pathname = normalizeLocation(location);
-      let isItemActive = false;
+  renderSubNavItems = (subItems, location) => {
+    return Object.keys(subItems).map(item => {
+      // Whether or not a side nav "item" is activated. Only navItems that are
+      // routes will ever be active.
+      let isNavItemActive = locationContainsPathAtIndex(
+        location,
+        item,
+        determineRoutePathIndex(location)
+      );
 
-      // Support nested /components/:component/:tab
-      // Support nested /guidelines/:guideline/:tab
-      if (pathname.length === 3) {
-        // Match :component, :guideline
-        isItemActive = locationContainsPathAtIndex(location, item, -2);
-      }
-
-      // Support /components/overview
-      if (pathname.length === 2) {
-        isItemActive = locationContainsPathAtIndex(location, item, -1);
-      }
-
+      // If the users selects a route within a dropdown we style the "active" nav
+      // item accordingly
       const subNavClasses = classnames('side-nav__sub-nav-item', {
-        'side-nav__sub-nav-item--active': isItemActive,
+        'side-nav__sub-nav-item--active': isNavItemActive,
       });
 
       return (
@@ -47,6 +48,7 @@ export default class SideNavItem extends React.Component {
         </li>
       );
     });
+  };
 
   render() {
     const { item, itemSlug } = this.props;
@@ -89,38 +91,4 @@ export default class SideNavItem extends React.Component {
       </Location>
     );
   }
-}
-
-/**
- * Helper to determine if the location from @reach/router has the given path
- * anywhere in its pathname. Useful for top-level navigational items
- */
-function locationContainsPath(location, path) {
-  return normalizeLocation(location).indexOf(path) !== -1;
-}
-
-/**
- * Helper to determine if the location from @reach/router has the given path at
- * the given index. Supports negative indices that represent how far to go from
- * the end of the array backwards
- */
-function locationContainsPathAtIndex(location, path, index) {
-  const parts = normalizeLocation(location);
-  if (index < 0) {
-    return parts[parts.length + index] === path;
-  }
-  return parts[index] === path;
-}
-
-/**
- * Normalize the location object provided to us through @reach/router. We also
- * make sure to clean the __PATH_PREFIX__ defined in gatsby-config.js so that
- * we can work with our paths as if they did not have that prefix. This is
- * useful for asserting locations in the pathname for our nav sub-items
- */
-function normalizeLocation(location) {
-  return location.pathname
-    .replace(__PATH_PREFIX__, '')
-    .split('/')
-    .filter(Boolean);
 }
