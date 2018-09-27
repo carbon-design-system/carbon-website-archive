@@ -48,11 +48,14 @@ export default class SideNavItem extends React.Component {
     });
 
   componentDidMount = () => {
+    /*
+    Commenting out for now, this is breaking the build. We still need this to work though
     if (locationContainsPath(this.props.location, this.props.itemSlug) ) {
       this.setState({
         open: !this.state.open,
       });
     }
+    */
   };
    
   render() {
@@ -63,7 +66,7 @@ export default class SideNavItem extends React.Component {
       <Location>
         {({ location }) => {
           const navItemClasses = classnames('side-nav__nav-item', {
-            'side-nav__nav-item--open': this.state.open,
+            'side-nav__nav-item--open': this.state.open || locationContainsPath(location, itemSlug),
             'side-nav__nav-item--active': locationContainsPath(location, itemSlug) && !hasSubNav,
           });
           return (

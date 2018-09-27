@@ -22,7 +22,6 @@ export default class SideNav extends React.Component {
           itemSlug={item}
           item={nav[item]}
           key={item}
-          location={location}
         />
       );
     });
