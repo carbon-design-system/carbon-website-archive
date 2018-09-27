@@ -17,7 +17,7 @@ export default class SideNav extends React.Component {
       if (hideInternal) {
         return '';
       }
-      return <SideNavItem itemSlug={item} item={nav[item]} key={item} location={Location} />;
+      return <SideNavItem itemSlug={item} item={nav[item]} key={item} location={location} />;
     });
 
   render() {
