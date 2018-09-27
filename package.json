@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "build": "echo 'ERROR: Please specify environment by running either build:external or build:internal. This will set the correct environment variable for the build.'",
-    "build:external": "rm -rf .cache && cross-env GATSBY_CARBON_ENV=external gatsby build --prefix-paths",
+    "build:external": "rm -rf .cache && cross-env GATSBY_CARBON_ENV=external gatsby build",
     "build:internal": "rm -rf .cache && cross-env GATSBY_CARBON_ENV=internal gatsby build",
     "dev": "yarn dev:external",
     "dev:external": "rm -rf .cache && cross-env GATSBY_CARBON_ENV=external gatsby develop",
