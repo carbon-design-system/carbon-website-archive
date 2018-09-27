@@ -1,7 +1,6 @@
 ---
 label: Experimental
 title: Color in UI
-internal: true
 ---
 
 <page-intro>Maintaining consistent and engaging digital interfaces throughout IBM, whether applications or experiences, demands extended guidance around color usage. The following concepts are the foundation as we strive to achieve balance and harmony through our User Interface design.</page-intro>
