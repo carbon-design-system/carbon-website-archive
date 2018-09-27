@@ -25,7 +25,7 @@ The basic unit of 2x Grid geometry is the 8-pixel square Mini Unit. Multiples of
 `vimeo: https://vimeo.com/292010288`
 
 
-At [breakpoint boundaries](#breakpoints), mini units divide the screen into a fixed master grid, and multiples of mini units map to [fluid grid](#fluid-grid) column widths and row heights. [Fixed boxes](#fixed) are sized in mini units, as are the fixed dimension of [hybrid boxes](#hybrid).
+At [breakpoint boundaries](#breakpoints), mini units divide the screen into a fixed master grid, and multiples of mini units map to [fluid grid](#fluid-grid) column widths and row heights. [Fixed boxes](#fixed-boxes) are sized in mini units, as are the fixed dimension of [hybrid boxes](#hybrid).
 
 [Margin](#margin) and [padding](#padding) are always applied in fixed mini unit multiples. Boxes are sized by applying a [sizing scale](#sizing-scale) based on either fixed mini units or fluid column widths, along with a core set of [aspect ratios](#aspect-ratios).
 
@@ -64,7 +64,7 @@ A [fixed grid](#fixed-grid) starts with a fixed unit size from the [sizing scale
 
 When tiling fixed boxes, the column count is not known in advance, but a grid emerges visually due to the use of a consistent sizing scale. On breakpoint boundaries, fixed sizing scales match column sizes.
 
-[Hybrid grids](#hybrid-sizing) are also frequent in practice, and hybrid boxes have properties of both.
+[Hybrid grids](#hybrid) are also frequent in practice, and hybrid boxes have properties of both.
 
 ### Margins
 The margins at the outer edge of the grid are always a fixed size within a breakpoint, even when columns are fluid.
@@ -171,14 +171,14 @@ Horizontal and vertical alignment are equally critical. When present, the eye ca
 
 ## Grid Influencers
 
-1. [UI Regions](#ui-regions)
-1. [Shell](#shell)
-2. [Panel Behavior](#panel-behavior)
+1. [Screen Regions](#screen-regions)
+2. [Shell](#shell)
+3. [Panel Behavior](#panel-behavior)
 
-### UI Regions
-In a UI layout, users expect to find certain types of content in certain areas. We call these areas UI Regions. It is especially important for these zones to be consistent across devices, and adapt across breakpoints.
+### Screen Regions
+In a UI layout, users expect to find certain types of content in certain areas. We call these areas Screen Regions. It is especially important for these zones to be consistent across devices, and adapt across breakpoints.
 
-| Common UI Regions |
+| Common Screen Regions |
 | ----- |
 | Headers |
 | Side Rails |
