@@ -12,7 +12,6 @@ import {
 export default class SideNavItem extends React.Component {
   state = {
     open: false,
-    active: false,
   };
 
   toggleSubNav = () => {
@@ -49,6 +48,17 @@ export default class SideNavItem extends React.Component {
     });
   };
 
+  componentDidMount = () => {
+    /*
+    Commenting out for now, this is breaking the build. We still need this to work though
+    if (locationContainsPath(this.props.location, this.props.itemSlug) ) {
+      this.setState({
+        open: !this.state.open,
+      });
+    }
+    */
+  };
+   
   render() {
     const { item, itemSlug } = this.props;
     const hasSubNav = !(item['sub-nav'] === undefined);
@@ -57,16 +67,14 @@ export default class SideNavItem extends React.Component {
       <Location>
         {({ location }) => {
           const navItemClasses = classnames('side-nav__nav-item', {
-            'side-nav__nav-item--open':
-              this.state.open || locationContainsPath(location, itemSlug),
-            'side-nav__nav-item--active':
-              locationContainsPath(location, itemSlug) && !hasSubNav,
+            'side-nav__nav-item--open': this.state.open || locationContainsPath(location, itemSlug),
+            'side-nav__nav-item--active': locationContainsPath(location, itemSlug) && !hasSubNav,
           });
           return (
             <li className={navItemClasses}>
               {hasSubNav ? (
                 // eslint-disable-next-line
-                <a onClick={this.toggleSubNav}>
+                <button onClick={this.toggleSubNav}>
                   {item.title}{' '}
                   <Icon
                     className="side-nav__nav-item--arrow"
@@ -75,7 +83,7 @@ export default class SideNavItem extends React.Component {
                     description="Menu arrow icon"
                     alt="Menu arrow icon"
                   />
-                </a>
+                </button>
               ) : (
                 <Link to={`/${itemSlug}`}>{item.title}</Link>
               )}

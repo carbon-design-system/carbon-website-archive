@@ -1,0 +1,7 @@
+---
+applications:
+- name: carbon-website-internal
+  memory: 64M
+  buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  routes:
+  - route: carbondesignsystem-internal.stage1.mybluemix.net
