@@ -24,7 +24,7 @@ export default class SideNavItem extends React.Component {
     return Object.keys(subItems).map(item => {
       // Whether or not a side nav "item" is activated. Only navItems that are
       // routes will ever be active.
-      let isNavItemActive = locationContainsPathAtIndex(
+      const isNavItemActive = locationContainsPathAtIndex(
         location,
         item,
         determineRoutePathIndex(location)
