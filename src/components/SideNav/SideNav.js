@@ -17,7 +17,13 @@ export default class SideNav extends React.Component {
       if (hideInternal) {
         return '';
       }
-      return <SideNavItem itemSlug={item} item={nav[item]} key={item} location={location} />;
+      return (
+        <SideNavItem
+          itemSlug={item}
+          item={nav[item]}
+          key={item}
+        />
+      );
     });
 
   render() {
@@ -32,8 +38,7 @@ export default class SideNav extends React.Component {
 
     return (
       <Location>
-         {({ location }) => {
-          
+        {({ location }) => {
           return (
             <nav className={classNames}>
               <div class="side-nav--header">
