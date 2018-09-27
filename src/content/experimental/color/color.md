@@ -23,14 +23,6 @@ UI Foundational Colors
 
 Alerts Colors
 
-<Margin top="2rem">
-  <ColorMatrix colorName="gray"></ColorMatrix>
-  <ColorMatrix colorName="blue"></ColorMatrix>
-</Margin>
-<Margin top="2rem">
-  <ColorUIColorAnatomy></ColorUIColorAnatomy>
-</Margin>
-
 ## Themes
 Each theme works with a specific set of primary background colors. These colors are global variables which determine the color of the component being applied within each theme. The light theme uses White and Gray 10 backgrounds and the dark theme uses Gray 100, 90 and 80 backgrounds. Default color tokens are provided for each component based on the primary background color.
 
@@ -53,8 +45,6 @@ Dark
 | Global Background Dark  | —    | `#3d3d3d` | <Swatch hex="#3d3d3d">Gray 80 </Swatch> |
 | Global Background Dark  | —    | `#282828` | <Swatch hex="#282828">Gray 90 </Swatch> |
 | Global Background Dark  | —    | `#171717` | <Swatch hex="#171717">Gray 100</Swatch> |
-
-<Spacer amount="3rem" amountmd="4rem"></Spacer>
 
 ## Light Theme
 
@@ -207,8 +197,6 @@ The table below lists common colors that are not component specific such as prim
 | Alert – Error          | —    | `#da1e28` | <Swatch hex="#da1e28">Red 60</Swatch>    |
 | Alert – Warning        | —    | `#fdd13a` | <Swatch hex="#fdd13a">Yellow 30</Swatch> |
 | Alert – Success        | —    | `#24a249` | <Swatch hex="#24a249">Green 50</Swatch>  |
-
-<Spacer amount="3rem" amountmd="4rem"></Spacer>
 
 ## Digital Accessibility
 
