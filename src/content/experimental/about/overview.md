@@ -14,7 +14,7 @@ We want to provide early-access to our changes, so that designers and developers
 
 ## What are "Experimental" resources?
 
-Experimental components, designs, patterns, and other resources are work that is not fully tested. But they are in a state where it can be productive for designers and developers to work with them.
+Experimental components, designs, patterns, and other resources are work that is still under development, but they are in a state where it can be productive for designers and developers to work with them.
 
 They are not intended for production use, and are subject to change. They may have some non-functional pieces, or be lacking in documentation. There is no guarantee of support.
 

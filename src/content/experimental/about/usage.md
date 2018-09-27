@@ -8,7 +8,9 @@ tabs: ['Overview', 'Usage']
 
 Carbon utilizes `feature-flags` to toggle experimental components on and off.
 
-To turn on `feature-flags` include the **feature-flag** variable into your scss file, then set `components-x` to `true`. 
+We currently have two `feature-flags` that can be toggled. For **Experimental Components:** `components-x` and for **UI Shell:** `ui-shell`.
+
+To turn on the Experiment Components include the **feature-flag** variable into your scss file, then set `components-x` to `true`. 
 
 Import Carbon components styles in after the feature-flag as seen below.
 
@@ -27,6 +29,6 @@ $feature-flags: (
 
 ## Disclaimer 
 
-Experimental components, designs, patterns, and other resources are work that is not fully tested. But they are in a state where it can be productive for designers and developers to work with them.
+Experimental components, designs, patterns, and other resources are work that is still under development, but they are in a state where it can be productive for designers and developers to work with them.
 
 They are not intended for production use, and are subject to change. They may have some non-functional pieces, or be lacking in documentation. There is no guarantee of support.
