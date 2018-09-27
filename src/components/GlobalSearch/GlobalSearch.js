@@ -15,7 +15,7 @@ export default class GlobalSearch extends React.Component {
       indexName: `carbondesignsystem`,
       inputSelector: `#doc-search`,
       //set this to true if you need to debug css
-      debug: true, 
+      debug: false, 
     });
   }
 
