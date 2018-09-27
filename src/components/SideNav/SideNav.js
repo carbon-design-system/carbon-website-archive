@@ -39,9 +39,6 @@ export default class SideNav extends React.Component {
 
     return (
       <Location>
-        <>
-          <h1>Hi</h1>
-        </>
         {({ location }) => {
           return (
             <nav className={classNames}>
