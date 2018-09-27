@@ -16,8 +16,7 @@ export default class ClickTile extends React.Component {
 
   render() {
     const {
-      children,
-      href,
+      children, href,
       date,
       author,
       title,

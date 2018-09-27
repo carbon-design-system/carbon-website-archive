@@ -12,8 +12,8 @@ jobs:
       - run:
           name: Confirm project can build
           command: |
-            yarn build:external
             yarn build:internal
+            yarn build:external
       - deploy:
           name: deploy staging to IBM Cloud
           command: |
