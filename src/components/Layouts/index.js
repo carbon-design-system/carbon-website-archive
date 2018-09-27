@@ -49,7 +49,8 @@ class Layout extends React.Component {
 
   handleClose = evt => {
     let isTarget = false;
-    if (evt.target.classList.contains('main-nav-item__heading') && evt.target.classList.contains('main-nav-item__list')) {
+    // `<svg>` in IE11 does not have `.classList`
+    if (evt.target.classList && evt.target.classList.contains('main-nav-item__heading') && evt.target.classList.contains('main-nav-item__list')) {
       isTarget = true;
     }
     const isSmallerScreen = window.innerWidth < 1024 || screen.width < 1024;
