@@ -14,7 +14,8 @@ export default class GlobalSearch extends React.Component {
       apiKey: `296ea0c1d0e96b2b04900d0f4d1a6329`,
       indexName: `carbondesignsystem`,
       inputSelector: `#doc-search`,
-      debug: false,
+      //set this to true if you need to debug css
+      debug: true, 
     });
   }
 

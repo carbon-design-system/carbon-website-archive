@@ -15,7 +15,7 @@
   position: fixed;
   z-index: 7000;
   transition: $transition--base $bx--standard-easing;
-  overflow-y: scroll;
+  //overflow-y: scroll;
 
   @media screen and (min-width: 840px) {
     box-shadow: none;
@@ -29,6 +29,17 @@
 
 .side-nav__closed--final {
   display: none;
+}
+
+.side-nav--items {
+  overflow-y: scroll;
+}
+
+//===================
+// SIDE NAV HEADER
+//===================
+.side-nav--header {
+  //outline: 1px solid red;
 }
 
 //===================
