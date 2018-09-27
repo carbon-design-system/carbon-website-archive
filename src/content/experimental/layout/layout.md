@@ -291,7 +291,7 @@ Aspect ratios do not apply to Hybrid Boxes, since one dimension is fixed and the
 
 Use the fixed sizing scale to set vertical spacing between sections, by adding it to the top or bottom margin of a box:
 
-![spacers context](images/spacer_context.png)
+`vimeo: https://vimeo.com/292028388`
 
 Take care to apply the intended vertical spacing just once:
 
@@ -314,5 +314,5 @@ Components can be sized like other boxes: either fixed or fluid, and often hybri
 
 When multiple components adhere to the same scale, grid relationships naturally emerge. For example, vertically aligning form fields such as checkboxes and radio buttons produces a grid effect when interior spacing is consistent.
 
-![component heights](images/component_heights.png)
 
+`vimeo: https://vimeo.com/292028752`
