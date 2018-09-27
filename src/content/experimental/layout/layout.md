@@ -22,7 +22,8 @@ The 2x Grid is the geometric foundation of all the visual elements of IBM Design
 
 The basic unit of 2x Grid geometry is the 8-pixel square Mini Unit. Multiples of mini units compose the dimensions of columns, rows, boxes, and their margins and padding. The mini unit adapts to your content while maintaining a consistent visual rhythm.
 
-![mini unit grid](images/mini_unit_grid_boarder.png)
+`vimeo: https://vimeo.com/292010288`
+
 
 At [breakpoint boundaries](#breakpoints), mini units divide the screen into a fixed master grid, and multiples of mini units map to [fluid grid](#fluid-grid) column widths and row heights. [Fixed boxes](#fixed) are sized in mini units, as are the fixed dimension of [hybrid boxes](#hybrid).
 
@@ -102,7 +103,7 @@ For best results, test designs and code at each of these standard breakpoints.
 
 Create **Custom Breakpoints** to accommodate special needs, by writing your own media queries and CSS rules. Refer to the grid code package for more information.
 
-![custom breakpoints](images/custom_breakpoints.png)
+`vimeo: https://vimeo.com/292015984`
 
 ## Grid Behaviors
 
@@ -124,9 +125,9 @@ Choose the layout approach that best meets the user's expectation in each case.
 
 Fluid Grids are ideal for editorial content, dashboards, images, video, data visualizations, etc. In each case, scaling the size of things is more useful to the user than scaling the number of visible things. In a fluid grid, we divide available width in half to create columns, repeating as necessary.
 
-`vimeo: https://vimeo.com/292010288/ea512e04a5`
+`vimeo: https://vimeo.com/292024522`
 
-![fluid grid](images/fluid_grid.png)
+
 
 At each breakpoint, column count is fixed and column width is a multiple of mini units. Row height is a multiple of column size, following recommended aspect ratios. Margin and padding are fixed multiples of mini units. In between breakpoints, actual column width is a percentage of the grid area, not a mini unit multiple. Content scales fluidly.
 
@@ -135,7 +136,7 @@ At each breakpoint, column count is fixed and column width is a multiple of mini
 
 A grid can be formed with Fixed Boxes by tiling cards in an inline block, icons in toolbars, etc. Column count grows with browser width. Tiles wrap to the next line, or are sometimes truncated with an overflow scroll.
 
-![fixed grid](images/fixed_grid.png)
+`vimeo: https://vimeo.com/292024183`
 
 First choose a base size from the [sizing scale](#sizing-scale), then build up each Box in multiples of the base size, following recommended [aspect ratios](#aspect-ratios). A grid emerges when each tile uses a multiple of a consistent base size. Following this method ensures consistency of tile sizes even across products.
 
@@ -146,7 +147,7 @@ Hybrid Boxes have different scaling rules in each dimension, so they do not use 
 
 Use the [sizing scale](#sizing-scale) to size a fixed dimension. Use column-width multiples to size a grid-fluid dimension. Aspect ratios do not apply.
 
-![hybrid grid](images/hybrid_grid.png)
+`vimeo: https://vimeo.com/292025098`
 
 | Examples    |  Width         | Height
 |-------------|----------------|---------------
@@ -193,7 +194,7 @@ In a UI layout, users expect to find certain types of content in certain areas. 
 ### Shell
 The shell is divided into 3 distinct "zones" which establish purpose and hierarchy.
 
-![UI Shell Zones](images/ui_shell_zones_new.png)
+![UI Shell Zones](images/ui_shell_regions.png)
 
 #### 1. Global sidenav
 #### 2. Header
@@ -212,7 +213,7 @@ All vertical panels expand to fill the full height of the browser window.
 #### Fixed Panels
 Fixed panels maintain a static width, cannot be collapsed and also exist outside of the responsive grid. 
 
-![Fixed Panels](images/panel_fixed_new.png)
+![Fixed Panels](images/panel_fixed.png)
 
 #### Floating Panels
 This panel style floats above the primary content area and does not affect the responsive grid. Floating panels conceal any UI elements below them and must be dismissable by the user. Inline menus, dropdowns and tooltips also float.
@@ -258,13 +259,13 @@ Use cases are leading section in a webpage, divded section for editorial content
 
 See the [breakpoints table](#breakpoints) for pixel sizings.
 
-![key heights](images/sizing_scale_2.png)
+![key heights](images/sizing_scale.png)
 
 ### Scaling Multiple
 
 After determining your base size, multiply it as needed for each use. For box sizing, apply an [aspect ratio](#aspect-ratio) too.
 
-![key heights](images/key_heights_animation.png)
+`vimeo: https://vimeo.com/292026497`
 
 ### Aspect Ratio
 
@@ -290,7 +291,7 @@ Aspect ratios do not apply to Hybrid Boxes, since one dimension is fixed and the
 
 Use the fixed sizing scale to set vertical spacing between sections, by adding it to the top or bottom margin of a box:
 
-![spacers context](images/spacer_context.png)
+`vimeo: https://vimeo.com/292028388`
 
 Take care to apply the intended vertical spacing just once:
 
@@ -313,5 +314,5 @@ Components can be sized like other boxes: either fixed or fluid, and often hybri
 
 When multiple components adhere to the same scale, grid relationships naturally emerge. For example, vertically aligning form fields such as checkboxes and radio buttons produces a grid effect when interior spacing is consistent.
 
-![component heights](images/component_heights.png)
 
+`vimeo: https://vimeo.com/292028752`
