@@ -1,4 +1,5 @@
 import React from 'react';
+import { Location } from '@reach/router';
 import classnames from 'classnames';
 import { Link } from 'gatsby';
 import { Button, Icon } from 'carbon-components-react';
@@ -16,7 +17,7 @@ export default class SideNav extends React.Component {
       if (hideInternal) {
         return '';
       }
-      return <SideNavItem itemSlug={item} item={nav[item]} key={item} />;
+      return <SideNavItem itemSlug={item} item={nav[item]} key={item} location={location} />;
     });
 
   render() {
@@ -36,39 +37,45 @@ export default class SideNav extends React.Component {
     });
 
     return (
-      <>
-        <div 
-          className={classNamesClickToClose}
-          onClick={()=>{ this.props.clickToClose(); }}>
-        </div>
-        <nav className={classNames}>
-          <Link to="/" className="side-nav__logo">
-            <span>Carbon</span> Design System
-          </Link>
-          <GlobalSearch />
-          <ul className="side-nav__nav-items">{navItems}</ul>
-          <div className="side-nav__links">
-            <Button
-              className="side-nav__link"
-              kind="secondary"
-              icon="icon--arrow--right"
-              iconDescription="Arrow right"
-              href="https://github.com/ibm/carbon-design-kit">
-              Design Kit
-            </Button>
-            <Link
-              to="/resources#github"
-              className="side-nav__link bx--btn bx--btn bx--btn--secondary">
-              GitHub Repos
-              <Icon
-                className="bx--btn__icon"
-                name="icon--arrow--right"
-                description="Arrow right"
-              />
-            </Link>
-          </div>
-        </nav>
-      </>
+      <Location>
+         {({ location }) => {
+          return (
+            <>
+              <div 
+                className={classNamesClickToClose}
+                onClick={()=>{ this.props.clickToClose(); }}>
+              </div>
+              <nav className={classNames}>
+                <Link to="/" className="side-nav__logo">
+                  <span>Carbon</span> Design System
+                </Link>
+                <GlobalSearch />
+                <ul className="side-nav__nav-items">{navItems}</ul>
+                <div className="side-nav__links">
+                  <Button
+                    className="side-nav__link"
+                    kind="secondary"
+                    icon="icon--arrow--right"
+                    iconDescription="Arrow right"
+                    href="https://github.com/ibm/carbon-design-kit">
+                    Design Kit
+                  </Button>
+                  <Link
+                    to="/resources#github"
+                    className="side-nav__link bx--btn bx--btn bx--btn--secondary">
+                    GitHub Repos
+                    <Icon
+                      className="bx--btn__icon"
+                      name="icon--arrow--right"
+                      description="Arrow right"
+                    />
+                  </Link>
+                </div>
+              </nav>
+            </>
+          );
+        }}
+      </Location>
     );
   }
 }
