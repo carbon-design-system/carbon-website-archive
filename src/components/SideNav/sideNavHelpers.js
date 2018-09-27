@@ -15,14 +15,11 @@ function normalizeLocation(location) {
 }
 
 /**
- * Takes a normalized url array and determines based upon it's length where
- * our routing path is index wise and appends that index to a new array.
+ * Takes a location and determines based on it's normalized url array length
+ * the index of the route path within the array.
  */
-function determineRoutePathIndex(normalizedPath) {
+function determineRoutePathIndex(location) {
   const normalizedPathArray = normalizeLocation(location);
-  let routeIndex;
-  normalizedPathArray.length >= 2 ? (routeIndex = 1) : (routeIndex = 0);
-
   // Doing this hard coded check is kinda gnarly and brittle, but since we're
   // iterating through the entire array to check for "active" items in the nav
   // there are actually two places where "designers" is the 1st index element.
@@ -30,16 +27,10 @@ function determineRoutePathIndex(normalizedPath) {
     normalizedPathArray[0] === 'contributing' &&
     normalizedPathArray[1] === 'designers'
   ) {
-    routeIndex = 0;
+    return 0;
   }
 
-  console.log(
-    'normalizedPathArray',
-    normalizedPathArray,
-    'routeIndex',
-    routeIndex
-  );
-  return routeIndex;
+  return normalizedPathArray.length >= 2 ? 1 : 0;
 }
 
 /**
@@ -66,6 +57,5 @@ function locationContainsPathAtIndex(location, path, index) {
 module.exports = {
   locationContainsPath,
   locationContainsPathAtIndex,
-  normalizeLocation,
   determineRoutePathIndex,
 };

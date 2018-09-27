@@ -4,7 +4,6 @@ import classnames from 'classnames';
 import { Link } from 'gatsby';
 import { Icon } from 'carbon-components-react';
 import {
-  normalizeLocation,
   locationContainsPathAtIndex,
   locationContainsPath,
   determineRoutePathIndex,
