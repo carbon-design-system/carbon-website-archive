@@ -9,13 +9,15 @@ jobs:
       - run:
           name: Install dependencies from offline mirror
           command: yarn install --offline
+      - run:
+          name: Confirm project can build
+          command: |
+            yarn build:external
+            yarn build:internal
       - deploy:
           name: deploy staging to IBM Cloud
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              # Build external site
-              yarn build:external
-
               # Install `ibmcloud` CLI
               curl -fsSL https://clis.ng.bluemix.net/install/linux | sh
 
