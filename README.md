@@ -17,11 +17,11 @@ src
 ├── templates
 ```
 
-## 📚 Writing Content
-
-[Content writing guide](docs/CONTENT.md)
-
 ## 👩‍💻 Development
+
+- 🤝 [Contribution Guidelines](.github/CONTRIBUTING.md) 
+- 📚 [Content/Markdown Guidelines](docs/CONTENT.md)
+- 🗺 [Navigation Guidelines](docs/NAVIGATION.md)
 
 Install dependencies
 
@@ -40,6 +40,8 @@ Run internal dev environment
 ```
 yarn dev:internal
 ```
+
+If you need more detailed information on how to setup your machine to develop locally please take a look at our [wiki](https://github.com/carbon-design-system/carbon-website-gatsby/wiki).
 
 ## 🚀 Build
 
