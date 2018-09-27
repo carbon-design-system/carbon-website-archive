@@ -5,13 +5,10 @@
  * useful for asserting locations in the pathname for our nav sub-items
  */
 function normalizeLocation(location) {
-  return (
-    location.pathname
-      .replace(__PATH_PREFIX__, '')
-      .split('/')
-      .filter(Boolean),
-    routeIndex
-  );
+  return location.pathname
+    .replace(__PATH_PREFIX__, '')
+    .split('/')
+    .filter(Boolean);
 }
 
 /**
