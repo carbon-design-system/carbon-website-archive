@@ -62,7 +62,6 @@ export default class SideNavItem extends React.Component {
     return (
       <Location>
         {({ location }) => {
-          //console.log('retrn location', location);
           const navItemClasses = classnames('side-nav__nav-item', {
             'side-nav__nav-item--open': this.state.open,
             'side-nav__nav-item--active': locationContainsPath(location, itemSlug) && !hasSubNav,
