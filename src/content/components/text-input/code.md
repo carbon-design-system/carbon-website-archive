@@ -17,10 +17,10 @@ tabs: ['Code', 'Usage', 'Style']
 </component>
 
 <component 
-    name="Text Input Password Visibility"
+    name="Password Input"
     component="text-input" 
-    variation="text-input--toggle-password-visibility"
-    codepen="YEZLyd"
+    variation="text-input--password"
+    codepen="PyYXeb"
     haslightversion="true"
     hasReactVersion="true"
     >
