@@ -43,9 +43,14 @@
   top: 0;
   width: 100%;
   z-index: 500;
+  background: #ff000066;
 }
 
 .side-nav-click-to-close__closed {
+  display: none;
+}
+
+.side-nav-click-to-close__not_mobile {
   display: none;
 }
 
@@ -150,7 +155,6 @@
   margin-top: 0;
   max-height: 100rem;
 }
-
 
 //===================
 // SUB NAV ITEMS

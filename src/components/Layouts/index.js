@@ -19,6 +19,7 @@ class Layout extends React.Component {
   state = {
     isOpen: true,
     isFinal: false,
+    isMobile: false,
   };
 
   componentDidMount() {
@@ -50,7 +51,11 @@ class Layout extends React.Component {
   handleClose = evt => {
     let isTarget = false;
     // `<svg>` in IE11 does not have `.classList`
-    if (evt.target.classList && evt.target.classList.contains('main-nav-item__heading') && evt.target.classList.contains('main-nav-item__list')) {
+    if (
+      evt.target.classList &&
+      evt.target.classList.contains('main-nav-item__heading') &&
+      evt.target.classList.contains('main-nav-item__list')
+    ) {
       isTarget = true;
     }
     const isSmallerScreen = window.innerWidth < 1024 || screen.width < 1024;
@@ -65,13 +70,18 @@ class Layout extends React.Component {
     this.setState({
       isOpen: false,
     });
-  }
+  };
 
   checkWidth = () => {
     const width = window.innerWidth;
+    let isMobile = false;
     if (width < 1024) {
+      isMobile = true;
+    }
+    if (isMobile) {
       this.setState({
         isOpen: false,
+        isMobile: isMobile,
       });
     }
     document.addEventListener('keydown', evt => {
@@ -132,6 +142,7 @@ class Layout extends React.Component {
             <SideNav
               isFinal={this.state.isFinal}
               isOpen={this.state.isOpen}
+              isMobile={this.state.isMobile}
               location={this.props.location}
               clickToClose={this.clickToClose}
             />

@@ -17,11 +17,18 @@ export default class SideNav extends React.Component {
       if (hideInternal) {
         return '';
       }
-      return <SideNavItem itemSlug={item} item={nav[item]} key={item} location={location} />;
+      return (
+        <SideNavItem
+          itemSlug={item}
+          item={nav[item]}
+          key={item}
+          location={location}
+        />
+      );
     });
 
   render() {
-    const { isOpen, isFinal } = this.props;
+    const { isOpen, isFinal, isMobile } = this.props;
     const navItems = this.renderNavItems(navigation);
 
     const classNames = classnames({
@@ -34,18 +41,20 @@ export default class SideNav extends React.Component {
       'side-nav-click-to-close': true,
       'side-nav-click-to-close__closed': !isOpen,
       'side-nav-click-to-close__closed--final': isFinal && !isOpen,
+      'side-nav-click-to-close__not_mobile': !isMobile,
     });
 
     return (
       <Location>
-         {({ location }) => {
-          
+        {({ location }) => {
           return (
             <>
-              <div 
+              <div
                 className={classNamesClickToClose}
-                onClick={()=>{ this.props.clickToClose(); }}>
-              </div>
+                onClick={() => {
+                  this.props.clickToClose();
+                }}
+              />
               <nav className={classNames}>
                 <Link to="/" className="side-nav__logo">
                   <span>Carbon</span> Design System
