@@ -23,7 +23,6 @@ set -x
 # Go to root
 cd ..
 root_path=$PWD
-yarn_bin=$(yarn bin)
 
 # Parse our CLI arguments, most notably --env
 while [ "$1" != "" ]; do
