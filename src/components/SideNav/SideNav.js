@@ -28,7 +28,7 @@ export default class SideNav extends React.Component {
     });
 
   render() {
-    const { isOpen, isFinal, isMobile } = this.props;
+    const { isOpen, isFinal } = this.props;
     const navItems = this.renderNavItems(navigation);
 
     const classNames = classnames({
@@ -41,7 +41,6 @@ export default class SideNav extends React.Component {
       'side-nav-click-to-close': true,
       'side-nav-click-to-close__closed': !isOpen,
       'side-nav-click-to-close__closed--final': isFinal && !isOpen,
-      'side-nav-click-to-close__not_mobile': !isMobile,
     });
 
     return (

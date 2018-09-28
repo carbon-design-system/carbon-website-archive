@@ -19,7 +19,6 @@ class Layout extends React.Component {
   state = {
     isOpen: true,
     isFinal: false,
-    isMobile: false,
   };
 
   componentDidMount() {
@@ -74,14 +73,9 @@ class Layout extends React.Component {
 
   checkWidth = () => {
     const width = window.innerWidth;
-    let isMobile = false;
     if (width < 1024) {
-      isMobile = true;
-    }
-    if (isMobile) {
       this.setState({
         isOpen: false,
-        isMobile: isMobile,
       });
     }
     document.addEventListener('keydown', evt => {
@@ -142,7 +136,6 @@ class Layout extends React.Component {
             <SideNav
               isFinal={this.state.isFinal}
               isOpen={this.state.isOpen}
-              isMobile={this.state.isMobile}
               location={this.props.location}
               clickToClose={this.clickToClose}
             />

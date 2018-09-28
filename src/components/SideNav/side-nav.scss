@@ -45,12 +45,10 @@
   z-index: 500;
 }
 
-.side-nav-click-to-close__closed {
-  display: none;
-}
-
-.side-nav-click-to-close__not_mobile {
-  display: none;
+@media screen and (min-width: 1024px) {
+  .side-nav-click-to-close {
+    display: none;
+  }
 }
 
 //===================
