@@ -22,11 +22,7 @@ export default class SideNav extends React.Component {
           itemSlug={item}
           item={nav[item]}
           key={item}
-<<<<<<< HEAD
-          location={location}
-=======
           location={loc}
->>>>>>> a396958984d0504e3cfc0b196385fe48031917b3
         />
       );
     });
@@ -63,7 +59,7 @@ export default class SideNav extends React.Component {
                   <Link to="/" className="side-nav__logo">
                     <span>Carbon</span> Design System
                   </Link>
-                  <GlobalSearch />     
+                  <GlobalSearch />
                 </div>
                 <div class="side-nav--items">
                   <ul className="side-nav__nav-items">{navItems}</ul>
