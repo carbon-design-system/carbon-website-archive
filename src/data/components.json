@@ -6,7 +6,7 @@
       "vanilla": 0,
       "react": 0,
       "angular": 0,
-      "experimental": 1
+      "experimental": 0
     },
     {
       "item": "Breadcrumb",
@@ -15,7 +15,7 @@
       "vanilla": 0,
       "react": 0,
       "angular": 3,
-      "experimental": 1
+      "experimental": 0
     },
     {
       "item": "Button",
@@ -109,7 +109,7 @@
       "vanilla": 0,
       "react": 0,
       "angular": 3,
-      "experimental": 1
+      "experimental": 0
     },
     {
       "item": "List",
@@ -200,7 +200,7 @@
       "vanilla": 0,
       "react": 0,
       "angular": 0,
-      "experimental": 3
+      "experimental": 1
     },
     {
       "item": "Search",
@@ -266,7 +266,7 @@
       "vanilla": 0,
       "react": 0,
       "angular": 3,
-      "experimental": 1
+      "experimental": 0
     },
     {
       "item": "Tile",
@@ -295,6 +295,16 @@
       "react": 0,
       "angular": 0,
       "experimental": 3
+    },
+    {
+      "item": "UI Shell",
+      "added": "9.0.0",
+      "tag": "new",
+      "status": 3,
+      "vanilla": 3,
+      "react": 3,
+      "angular": 3,
+      "experimental": 1
     }
   ]
 }
