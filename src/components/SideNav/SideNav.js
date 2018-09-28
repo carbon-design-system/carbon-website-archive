@@ -9,7 +9,7 @@ import SideNavItem from './SideNavItem';
 import navigation from '../../data/navigation/navigation.json';
 
 export default class SideNav extends React.Component {
-  renderNavItems = nav =>
+  renderNavItems = (nav, loc) =>
     Object.keys(nav).map(item => {
       const { GATSBY_CARBON_ENV } = process.env;
       const hideInternal =
@@ -22,13 +22,13 @@ export default class SideNav extends React.Component {
           itemSlug={item}
           item={nav[item]}
           key={item}
+          location={loc}
         />
       );
     });
 
   render() {
     const { isOpen, isFinal } = this.props;
-    const navItems = this.renderNavItems(navigation);
 
     const classNames = classnames({
       'side-nav': true,
@@ -39,6 +39,7 @@ export default class SideNav extends React.Component {
     return (
       <Location>
         {({ location }) => {
+          const navItems = this.renderNavItems(navigation, location);
           return (
             <nav className={classNames}>
               <div class="side-nav--header">
