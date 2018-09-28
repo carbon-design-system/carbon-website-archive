@@ -17,6 +17,16 @@ tabs: ['Code', 'Usage', 'Style']
 </component>
 
 <component 
+    name="Password Input"
+    component="text-input" 
+    variation="text-input--password"
+    codepen="PyYXeb"
+    haslightversion="true"
+    hasReactVersion="true"
+    >
+</component>
+
+<component 
     name="Text Area"
     component="text-area" 
     variation="text-area"
@@ -25,3 +35,5 @@ tabs: ['Code', 'Usage', 'Style']
     hasReactVersion="true"
     >
 </component>
+
+<component-docs component="text-input"></component-docs>
