@@ -61,7 +61,8 @@
 // h2
 //----------------------------
 
-.page-h2 {
+.page-h2,
+.page-content h2 {
   @include typescale('beta');
   position: relative;
   color: $text-01;
@@ -149,8 +150,10 @@
 
 blockquote .gatsby-resp-image-wrapper,
 blockquote p img {
-  width: 4rem;
-  margin: 1.2rem 1.2rem 0.75rem 0;
+  width: 5.2rem;
+  height: auto;
+  margin: 1.2rem 0 0 0;
+  padding: 0 1.2rem 1.2rem 0;
   float: left;
 }
 
@@ -163,4 +166,28 @@ blockquote p img {
   line-height: 1.75;
   width: 100%;
   max-width: 38rem;
+}
+
+//----------------------------
+// Markdown Anchor
+//----------------------------
+
+// This hides the anchor link from everything except h2
+// the custom markdown prevents the links from working for those html elements
+
+.page-h3,
+.page-h4,
+h5,
+h6 {
+  .anchor {
+    display: none;
+  }
+}
+
+//----------------------------
+// Video Embed
+//----------------------------
+
+iframe.embedVideoIframe {
+  border: 1px solid $ui-03;
 }

@@ -35,13 +35,13 @@ If you want to help improve the docs, it's a good idea to let others know what y
 2. Navigate to your forked repository and copy the **SSH url**. Clone your fork by running the following in your terminal:
 
    ```
-   $ git clone git@github.com:{ YOUR_USERNAME }/carbon-components-react.git
-   $ cd carbon-components-react
+   $ git clone git@github.com:{ YOUR_USERNAME }/carbon-website-gatsby.git
+   $ cd carbon-website-gatsby
    ```
 
    See [GitHub docs](https://help.github.com/articles/fork-a-repo/) for more details on forking a repository.
 
-3. Once cloned, you will see `origin` as your default remote, pointing to your personal forked repository. Add a remote named `upstream` pointing to the main `carbon-components-react`:
+3. Once cloned, you will see `origin` as your default remote, pointing to your personal forked repository. Add a remote named `upstream` pointing to the main `carbon-website-gatsby`:
 
    ```
    $ git remote add upstream git@github.com:carbon-design-system/carbon-website-gatsby.git

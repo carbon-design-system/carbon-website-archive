@@ -28,7 +28,6 @@ import ComponentOverview from '../components/ComponentOverview';
 
 // Custom Markdown
 import {
-  h2,
   h3,
   h4,
   ul,
@@ -42,7 +41,6 @@ import {
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
-    h2: h2,
     h3: h3,
     h4: h4,
     ul: ul,
