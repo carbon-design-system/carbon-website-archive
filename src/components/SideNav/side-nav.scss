@@ -15,7 +15,6 @@
   position: fixed;
   z-index: 7000;
   transition: $transition--base $bx--standard-easing;
-  overflow-y: scroll;
 
   @media screen and (min-width: 840px) {
     box-shadow: none;
@@ -29,6 +28,10 @@
 
 .side-nav__closed--final {
   display: none;
+}
+
+.side-nav--items {
+  overflow-y: scroll;
 }
 
 //===================
@@ -45,6 +48,16 @@
   margin: $spacing-xl 0 $spacing-md;
   white-space: nowrap;
   padding: 0 $spacing-md;
+
+  &:hover {
+    color: $brand-01;
+  }
+
+  &:focus {
+    text-decoration: underline;
+    outline: none;
+    color: $brand-01;
+  }
 }
 
 .side-nav__logo span {
@@ -68,7 +81,8 @@
   margin-bottom: $spacing-2xl;
 }
 
-.side-nav__nav-item a {
+.side-nav__nav-item a,
+.side-nav__nav-item button {
   @include typescale('zeta');
   cursor: pointer;
   padding: $spacing-xs $spacing-md $spacing-xs $spacing-md;
@@ -85,8 +99,13 @@
   text-decoration: none;
   border-left: 4px solid transparent;
 
-  &:hover,
   &:focus {
+    color: $brand-01;
+    text-decoration: underline;
+    outline: none;
+  }
+
+  &:hover {
     color: $brand-01;
   }
 
@@ -116,6 +135,7 @@
   margin-top: 0;
   max-height: 100rem;
 }
+
 
 //===================
 // SUB NAV ITEMS
