@@ -1,5 +1,5 @@
 ---
-label: Experimental
+label: Component
 title: Accordion
 tabs: ['Code', 'Usage', 'Style']
 ---
@@ -7,7 +7,7 @@ tabs: ['Code', 'Usage', 'Style']
 <page-intro>**Accordion** enables users to expand and collapse sections of content</page-intro>
 
 <component 
-    name="Experimental Accordion"
+    name="Accordion"
     component="accordion" 
     variation="accordion"
     experimental="true"

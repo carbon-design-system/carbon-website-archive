@@ -202,14 +202,11 @@
       "accordion": {
         "title": "Accordion"
       },
-      "breadcrumb": {
-        "title": "Breadcrumb"
+      "link": {
+        "title": "Link"
       },
       "checkbox": {
         "title": "Checkbox"
-      },
-      "link": {
-        "title": "Link"
       },
       "text-input": {
         "title": "Text Input"

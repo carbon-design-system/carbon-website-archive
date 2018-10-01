@@ -13,8 +13,8 @@
   ],
   "scripts": {
     "build": "echo 'ERROR: Please specify environment by running either build:external or build:internal. This will set the correct environment variable for the build.'",
-    "build:external": "./tasks/build.sh --env external",
-    "build:internal": "./tasks/build.sh --env internal",
+    "build:external": "rm -rf .cache && cross-env GATSBY_CARBON_ENV=external gatsby build",
+    "build:internal": "rm -rf .cache && cross-env GATSBY_CARBON_ENV=internal gatsby build",
     "dev": "yarn dev:external",
     "dev:external": "rm -rf .cache && cross-env GATSBY_CARBON_ENV=external gatsby develop",
     "dev:internal": "rm -rf .cache && cross-env GATSBY_CARBON_ENV=internal gatsby develop",
@@ -26,10 +26,10 @@
     "deploy": "gatsby build && gh-pages -d public"
   },
   "dependencies": {
-    "@reach/router": "^1.2.1",
-    "@storybook/addon-info": "^3.4.11",
-    "carbon-components": "^9.26.0",
-    "carbon-components-react": "6.33.3",
+    "@reach/router": "^1.1.1",
+    "@storybook/addon-info": "^3.4.7",
+    "carbon-components": "^9.21.0",
+    "carbon-components-react": "6.32.4",
     "carbon-icons": "^7.0.7",
     "classnames": "^2.2.6",
     "custom-event": "^1.0.1",
@@ -43,7 +43,6 @@
     "gatsby-plugin-react-helmet": "3.0.0",
     "gatsby-plugin-sass": "2.0.1",
     "gatsby-plugin-sharp": "2.0.5",
-    "gatsby-react-router-scroll": "^2.0.0",
     "gatsby-remark-autolink-headers": "^2.0.6",
     "gatsby-remark-component": "^1.1.3",
     "gatsby-remark-copy-linked-files": "2.0.5",

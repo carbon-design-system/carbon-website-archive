@@ -2,10 +2,7 @@ require('dotenv').config();
 
 const path = require('path');
 
-const { PATH_PREFIX = '/' } = process.env;
-
 module.exports = {
-  pathPrefix: PATH_PREFIX,
   siteMetadata: {
     title: 'Carbon Design System',
   },
@@ -24,7 +21,7 @@ module.exports = {
         icon: `src/content/global/images/favicon-32.png`, // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-offline',
+    `gatsby-plugin-offline`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -46,14 +43,14 @@ module.exports = {
             className: `custom-class`,
           },
           {
-            resolve: 'gatsby-remark-embed-video',
+            resolve: "gatsby-remark-embed-video",
             options: {
               width: 606,
               ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
               height: 333, // Optional: Overrides optional.ratio
               related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
-              noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
-            },
+              noIframeBorder: true //Optional: Disable insertion of <style> border: 0
+            }
           },
           {
             resolve: `gatsby-remark-images`,

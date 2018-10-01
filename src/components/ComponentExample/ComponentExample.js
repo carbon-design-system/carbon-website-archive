@@ -52,7 +52,6 @@ class ComponentExample extends Component {
     }
     if (value === 'field-02') {
       if (
-        currentVariation !== 'text-input--password' && 
         currentVariation.includes('--') ||
         currentVariation === 'code-snippet--inline'
       ) {
