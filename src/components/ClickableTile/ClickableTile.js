@@ -44,10 +44,10 @@ export default class ClickTile extends React.Component {
 
             <div className="tile__caption">
               {description ? (
-                <p class="tile__description">{description}</p>
+                <p className="tile__description">{description}</p>
               ) : null}
-              {author ? <p class="tile__author">{author}</p> : null}
-              {date ? <p class="tile__date">{date}</p> : null}
+              {author ? <p className="tile__author">{author}</p> : null}
+              {date ? <p className="tile__date">{date}</p> : null}
             </div>
           </div>
         </ClickableTile>

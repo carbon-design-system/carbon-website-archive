@@ -133,7 +133,7 @@ class ComponentStatus extends React.Component {
     const componentStatus = require('../../data/components.json'); // eslint-disable-line
     const content = (
       <div className="page page_md component-status-page">
-        <p class="page-intro">{currentVersion}</p>
+        <p className="page-intro">{currentVersion}</p>
         <div className="component-status">
           <ul className="component-status__icon-list">
             <li>
@@ -178,7 +178,7 @@ class ComponentStatus extends React.Component {
         </table>
         <div className="component-status__description">
           <h2 className="page-h2">Tag descriptions</h2>
-          <table class="page-table">
+          <table className="page-table">
             <thead>
               <tr>
                 <th>Tag</th>
