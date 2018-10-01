@@ -13,11 +13,8 @@ public/*
 .DS_Store
 *.swp
 .idea
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+.vscode
+.vscode/launch.json
 
 # Coverage directory used by tools like Istanbul
 coverage
