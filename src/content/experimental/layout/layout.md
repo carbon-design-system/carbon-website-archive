@@ -173,32 +173,41 @@ Horizontal and vertical alignment are equally critical. When present, the eye ca
 
 ## Grid Influencers
 
+Within a design system, layouts often follow a common structure, especially with regard to navigation. This section covers which of these UI patterns you'll need, where users will expect to see them on a page and how they’ll affect the content that lives within the responsive grid.
+
 1. [Screen Regions](#screen-regions)
-2. [Shell](#shell)
-3. [Panel Behavior](#panel-behavior)
+2. [Panel Behavior](#panel-behavior)
 
 ### Screen Regions
-In a UI layout, users expect to find certain types of content in certain areas. We call these areas Screen Regions. It is especially important for these zones to be consistent across devices, and adapt across breakpoints.
+In a UI layout, users expect to find certain types of content in certain areas. We call these areas Screen Regions. It is especially important for these zones to be consistent across devices, and adapt across breakpoints. [Learn more about Shell on the Experimental UI Shell page.](http://staging.carbondesignsystem.com/experimental/ui-shell/usage)
 
-| Common Screen Regions |
-| ----- |
-| Headers |
-| Side Panels |
-| Dropdown Menus |
-| Content |
-| Dialogs |
-| Footers|
+
+![Shell Illustation](images/shell_illustration.png)
 
 
 
-### Shell
-The UI Shell is the top level in a product's UI. The Shell consists of the primary header and footer, as well as header panels that are used for local and global UI navigation.
+1. Header
+2. Global sidenav
+3. Local sidenav
 
-![UI Shell Zones](images/ui_shell_regions.png)
+<br><br>
 
-#### 1. Global sidenav
-#### 2. Header
-#### 3. Local sidenav
+![Dropdown Illustation](images/dropdown_illustration.png)
+
+
+4. Dropdown menu
+5. Content
+6. Footer
+
+<br><br>
+
+![Dialog Illustation](images/dialog_illustration.png)
+
+
+7. Dialog
+
+<br>
+
 
 ### Panel Behavior
 All vertical panels expand to fill the full height of the browser window.
