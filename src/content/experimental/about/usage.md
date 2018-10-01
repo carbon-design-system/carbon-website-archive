@@ -6,11 +6,11 @@ tabs: ['Overview', 'Usage']
 
 ## Feature-Flags
 
-Carbon utilizes `feature-flags` to toggle experimental components on and off.
+Carbon utilizes `feature-flags` to toggle new features on and off.
 
-We currently have two `feature-flags` that can be toggled. For **Experimental Components:** `components-x` and for **UI Shell:** `ui-shell`.
+We currently have two `feature-flags` available for testing. **Experimental Components:** use `components-x` and the **UI Shell:** uses `ui-shell`.
 
-To turn on the Experiment Components include the **feature-flag** variable into your scss file, then set `components-x` to `true`. 
+To turn on either of the feature flags include the **feature-flag** variable into your scss file, then set `components-x` and/or `ui-shell` to `true`. 
 
 Import Carbon components styles in after the feature-flag as seen below.
 
@@ -18,6 +18,7 @@ Import Carbon components styles in after the feature-flag as seen below.
 
 $feature-flags: (
     components-x: true,
+    ui-shell: true,
   );
  @import 'carbon-components/src/globals/scss/styles';
 
@@ -26,9 +27,8 @@ $feature-flags: (
 **Note: You must be using sass and not the compiled css file in order to take advantage of the code using feature flags.** 
 
 
-
 ## Disclaimer 
 
-Experimental components, designs, patterns, and other resources are work that is still under development, but they are in a state where it can be productive for designers and developers to work with them.
+Experimental components, designs, patterns, and other resources are work that is still under development. 
 
-They are not intended for production use, and are subject to change. They may have some non-functional pieces, or be lacking in documentation. There is no guarantee of support.
+They are not intended for production use, and are subject to change but are in a state where it can be productive for designers and developers to start to work with them. They may have some non-functional pieces, or be lacking in documentation. *There is no guarantee of support*.
