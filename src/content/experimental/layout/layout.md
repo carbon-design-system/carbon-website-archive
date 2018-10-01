@@ -60,7 +60,7 @@ For dense content, use Mini Units for further alignment and spatial guidance.
 
 ![grid customization](images/grid_customization.png)
 
-A [fixed grid](#fixed-boxes) starts with a fixed unit size from the [sizing scale](#sizing-scale), then tiles and wraps as needed, like text. To employ the 2x concept, choose a base unit from the sizing scale increase your container size using multiples of two.
+A [fixed grid](#fixed-boxes) starts with a fixed unit size from the [sizing scale](#sizing-scale), then tiles and wraps as needed, like text. To employ the 2x concept, multiply box sizes by two and mix them together to build your layout.
 
 When tiling fixed boxes, the column count is not known in advance, but a grid emerges visually due to the use of a consistent sizing scale. On breakpoint boundaries, fixed sizing scales match column sizes.
 
@@ -183,7 +183,6 @@ In a UI layout, users expect to find certain types of content in certain areas. 
 | Common Screen Regions |
 | ----- |
 | Headers |
-| Side Rails |
 | Side Panels |
 | Dropdown Menus |
 | Content |
@@ -193,7 +192,7 @@ In a UI layout, users expect to find certain types of content in certain areas. 
 
 
 ### Shell
-The shell is divided into 3 distinct "zones" which establish purpose and hierarchy.
+The UI Shell is the top level in a product's UI. The Shell consists of the primary header and footer, as well as header panels that are used for local and global UI navigation.
 
 ![UI Shell Zones](images/ui_shell_regions.png)
 
