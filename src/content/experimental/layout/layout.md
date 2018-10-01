@@ -187,7 +187,6 @@ In a UI layout, users expect to find certain types of content in certain areas. 
 | Side Panels |
 | Dropdown Menus |
 | Content |
-| Headers |
 | Dialogs |
 | Footers|
 
