@@ -23,14 +23,6 @@ UI Foundational Colors
 
 Alerts Colors
 
-<Margin top="2rem">
-  <ColorMatrix colorName="gray"></ColorMatrix>
-  <ColorMatrix colorName="blue"></ColorMatrix>
-</Margin>
-<Margin top="2rem">
-  <ColorUIColorAnatomy></ColorUIColorAnatomy>
-</Margin>
-
 ## Themes
 Each theme works with a specific set of primary background colors. These colors are global variables which determine the color of the component being applied within each theme. The light theme uses White and Gray 10 backgrounds and the dark theme uses Gray 100, 90 and 80 backgrounds. Default color tokens are provided for each component based on the primary background color.
 
@@ -53,8 +45,6 @@ Dark
 | Global Background Dark  | —    | `#3d3d3d` | <Swatch hex="#3d3d3d">Gray 80 </Swatch> |
 | Global Background Dark  | —    | `#282828` | <Swatch hex="#282828">Gray 90 </Swatch> |
 | Global Background Dark  | —    | `#171717` | <Swatch hex="#171717">Gray 100</Swatch> |
-
-<Spacer amount="3rem" amountmd="4rem"></Spacer>
 
 ## Light Theme
 
@@ -80,9 +70,6 @@ Gray 10 components are generally paired with White backgrounds and White compone
     caption="Avoid use of midtones."
   ></Dont>
 </DoDontLarge>
-
-
-
 <DoDontStack>
   <ImageWithCaption
     src="../media/pages/color-ui/ui-against-light-bg.gif"
@@ -136,14 +123,12 @@ Gray 90 components are generally paired with Gray 100 backgrounds and Gray 80 co
     caption="Do not apply components that are darker than the background unless using high contrast mode."
   ></Dont>
 </DoDontLarge>
-
 <DoDontStack>
   <ImageWithCaption
     src="../media/pages/color-ui/ui-against-dark-bg.gif"
     caption="Components with common colors across all dark UI backgrounds"
   ></ImageWithCaption>
 </DoDontStack>
-
 <Margin bottom="2rem">
   <HorizontalRow padded="true">
     <ColorUIExpandableImage theme="dark" caption="IBM Watson API Demo">
@@ -178,19 +163,19 @@ In some cases, it is helpful to apply light components to dark backgrounds or li
 
 -->
 
-# Interaction States
+## Interaction States
 
 The primary interaction states have been defined for all colors within the Duo palette. For values between 100 and 70, interaction gets lighter and for values between 60 and white, interaction gets darker.
 
-## Hover
+### Hover
 
 A unique set of hex values and color tokens exists for the hover states. These colors are outside of the core Duo palette and can be considered as half steps in between two adjacent colors.
 
-## Selected
+### Selected
 
 The selected state is one full step lighter for values between 100 and 70 and one full step darker for values between 60 and 10. Exception: White shares the same selected state as Gray 10. Example: the Blue 60 selected state is Blue 70.
 
-## Active
+### Active
 
 The active state is two full steps lighter for values between 100 and 70 and two full steps darker for values between 60 and 10. Exception: White shares the same active state as Gray 10. Example: the Blue 60 active state is Blue 80
 
@@ -198,7 +183,7 @@ The active state is two full steps lighter for values between 100 and 70 and two
 
 ![Duo Color Palette](images/interactive-color.png)
 
-# Commonly Used Colors
+## Commonly Used Colors
 
 The table below lists common colors that are not component specific such as primary text, icons and alerts. For a more comprehensive list of values, please refer to the Style section for each individual component.
 
@@ -213,13 +198,11 @@ The table below lists common colors that are not component specific such as prim
 | Alert – Warning        | —    | `#fdd13a` | <Swatch hex="#fdd13a">Yellow 30</Swatch> |
 | Alert – Success        | —    | `#24a249` | <Swatch hex="#24a249">Green 50</Swatch>  |
 
-<Spacer amount="3rem" amountmd="4rem"></Spacer>
-
-# Digital Accessibility
+## Digital Accessibility
 
 Using various forms of contrast is the most important consideration when making user-friendly color and interface choices. Awareness of standards and color blindness best practices is the key to accessible color selection.
 
-## WCAG 2.0 Standards
+### WCAG 2.0 Standards
 
 All type color combinations on Duo must pass WCAG AA standards of 4.5:1 for normal text and 3:1 for large text. For larger text, if the font weight is light (300) or normal (400) the text should be no smaller than 24px. If the font weight is Semi-Bold (600) then the large text should be no smaller than 19px.
 
@@ -232,7 +215,7 @@ Beyond black and white, the IBM color palette provides a range of accessible com
 
 ![WCAG 2.0 Blues](images/acc2.png)
 
-## Color Blindness
+### Color Blindness
 
 The most common form of color blindness is red/green, where sufferers mix up all colors which have red or green as part of the whole color. Our palette and its usage emphasize blues, darks and lights. These concepts ensure a pleasurable and consistent color experience for as many users as possible.
 
@@ -240,7 +223,7 @@ Those affected by Protanopia color blindness are less sensitive to red light, wh
 
 ![Chromatics](images/color-blindness.png)
 
-# Accessibility Resources
+## Accessibility Resources
 
 [Explore accessibility topics in greater depth.] (../guidelines/accessibility/overview) 
 
