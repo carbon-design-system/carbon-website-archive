@@ -32,6 +32,31 @@
 
 .side-nav--items {
   overflow-y: scroll;
+  width: 100%;
+}
+
+//===================
+// SIDE NAV click to close
+//===================
+
+.side-nav-click-to-close {
+  display: block;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+}
+
+@media screen and (min-width: 840px) {
+  .side-nav-click-to-close {
+    display: none;
+  }
+}
+
+.side-nav-click-to-close__closed {
+  display: none;
 }
 
 //===================
@@ -135,7 +160,6 @@
   margin-top: 0;
   max-height: 100rem;
 }
-
 
 //===================
 // SUB NAV ITEMS

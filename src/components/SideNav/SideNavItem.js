@@ -9,6 +9,20 @@ export default class SideNavItem extends React.Component {
     open: false,
   };
 
+  static getDerivedStateFromProps(props, state) {
+    const { location, itemSlug } = props;
+    const { open, prevLocation, prevItemSlug } = state;
+    return prevLocation === location && prevItemSlug === itemSlug
+      ? null
+      : {
+          open:
+            open ||
+            (location && itemSlug && locationContainsPath(location, itemSlug)),
+          prevLocation: location,
+          prevItemSlug: itemSlug,
+        };
+  }
+
   toggleSubNav = () => {
     this.setState({
       open: !this.state.open,
@@ -46,56 +60,39 @@ export default class SideNavItem extends React.Component {
     });
   };
 
-  componentDidMount = () => {
-    /*
-    Commenting out for now, this is breaking the build. We still need this to work though
-    if (locationContainsPath(this.props.location, this.props.itemSlug) ) {
-      this.setState({
-        open: !this.state.open,
-      });
-    }
-    */
-  };
-
   render() {
-    const { item, itemSlug } = this.props;
+    const { item, itemSlug, location } = this.props;
     const hasSubNav = !(item['sub-nav'] === undefined);
 
+    const navItemClasses = classnames('side-nav__nav-item', {
+      'side-nav__nav-item--open': this.state.open,
+      'side-nav__nav-item--active':
+        locationContainsPath(location, itemSlug) && !hasSubNav,
+    });
+
     return (
-      <Location>
-        {({ location }) => {
-          const navItemClasses = classnames('side-nav__nav-item', {
-            'side-nav__nav-item--open':
-              this.state.open || locationContainsPath(location, itemSlug),
-            'side-nav__nav-item--active':
-              locationContainsPath(location, itemSlug) && !hasSubNav,
-          });
-          return (
-            <li className={navItemClasses}>
-              {hasSubNav ? (
-                // eslint-disable-next-line
-                <button onClick={this.toggleSubNav}>
-                  {item.title}{' '}
-                  <Icon
-                    className="side-nav__nav-item--arrow"
-                    name="caret--down"
-                    aria-hidden="true"
-                    description="Menu arrow icon"
-                    alt="Menu arrow icon"
-                  />
-                </button>
-              ) : (
-                <Link to={`/${itemSlug}`}>{item.title}</Link>
-              )}
-              {hasSubNav && (
-                <ul className="side-nav__sub-nav">
-                  {this.renderSubNavItems(item['sub-nav'], location, itemSlug)}
-                </ul>
-              )}
-            </li>
-          );
-        }}
-      </Location>
+      <li className={navItemClasses}>
+        {hasSubNav ? (
+          // eslint-disable-next-line
+          <button onClick={this.toggleSubNav}>
+            {item.title}{' '}
+            <Icon
+              className="side-nav__nav-item--arrow"
+              name="caret--down"
+              aria-hidden="true"
+              description="Menu arrow icon"
+              alt="Menu arrow icon"
+            />
+          </button>
+        ) : (
+          <Link to={`/${itemSlug}`}>{item.title}</Link>
+        )}
+        {hasSubNav && (
+          <ul className="side-nav__sub-nav">
+            {this.renderSubNavItems(item['sub-nav'], location)}
+          </ul>
+        )}
+      </li>
     );
   }
 }
