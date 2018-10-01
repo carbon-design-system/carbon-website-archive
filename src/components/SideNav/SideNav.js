@@ -36,42 +36,56 @@ export default class SideNav extends React.Component {
       'side-nav__closed--final': isFinal && !isOpen,
     });
 
+    const classNamesClickToClose = classnames({
+      'side-nav-click-to-close': true,
+      'side-nav-click-to-close__closed': !isOpen,
+      'side-nav-click-to-close__closed--final': isFinal && !isOpen,
+    });
+
     return (
       <Location>
         {({ location }) => {
           const navItems = this.renderNavItems(navigation, location);
           return (
-            <nav className={classNames}>
-              <div class="side-nav--header">
-                <Link to="/" className="side-nav__logo">
-                  <span>Carbon</span> Design System
-                </Link>
-                <GlobalSearch />     
-              </div>
-              <div class="side-nav--items">
-                <ul className="side-nav__nav-items">{navItems}</ul>
-                <div className="side-nav__links">
-                  <Button
-                    className="side-nav__link"
-                    kind="secondary"
-                    icon="icon--arrow--right"
-                    iconDescription="Arrow right"
-                    href="https://github.com/ibm/carbon-design-kit">
-                    Design Kit
-                  </Button>
-                  <Link
-                    to="/resources#github"
-                    className="side-nav__link bx--btn bx--btn bx--btn--secondary">
-                    GitHub Repos
-                    <Icon
-                      className="bx--btn__icon"
-                      name="icon--arrow--right"
-                      description="Arrow right"
-                    />
+            <>
+              <div
+                className={classNamesClickToClose}
+                onClick={() => {
+                  this.props.clickToClose();
+                }}
+              />
+              <nav className={classNames}>
+                <div class="side-nav--header">
+                  <Link to="/" className="side-nav__logo">
+                    <span>Carbon</span> Design System
                   </Link>
+                  <GlobalSearch />
                 </div>
-              </div>
-            </nav>
+                <div class="side-nav--items">
+                  <ul className="side-nav__nav-items">{navItems}</ul>
+                  <div className="side-nav__links">
+                    <Button
+                      className="side-nav__link"
+                      kind="secondary"
+                      icon="icon--arrow--right"
+                      iconDescription="Arrow right"
+                      href="https://github.com/ibm/carbon-design-kit">
+                      Design Kit
+                    </Button>
+                    <Link
+                      to="/resources#github"
+                      className="side-nav__link bx--btn bx--btn bx--btn--secondary">
+                      GitHub Repos
+                      <Icon
+                        className="bx--btn__icon"
+                        name="icon--arrow--right"
+                        description="Arrow right"
+                      />
+                    </Link>
+                  </div>
+                </div>
+              </nav>
+            </>
           );
         }}
       </Location>
