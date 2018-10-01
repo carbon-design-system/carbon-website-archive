@@ -14,6 +14,7 @@ export default class SideNav extends React.Component {
       const { GATSBY_CARBON_ENV } = process.env;
       const hideInternal =
         GATSBY_CARBON_ENV !== 'internal' && nav[item].internal;
+
       if (hideInternal) {
         return '';
       }
@@ -55,13 +56,13 @@ export default class SideNav extends React.Component {
                 }}
               />
               <nav className={classNames}>
-                <div class="side-nav--header">
+                <div className="side-nav--header">
                   <Link to="/" className="side-nav__logo">
                     <span>Carbon</span> Design System
                   </Link>
                   <GlobalSearch />
                 </div>
-                <div class="side-nav--items">
+                <div className="side-nav--items">
                   <ul className="side-nav__nav-items">{navItems}</ul>
                   <div className="side-nav__links">
                     <Button
