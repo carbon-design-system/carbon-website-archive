@@ -9,22 +9,19 @@ import SideNavItem from './SideNavItem';
 import navigation from '../../data/navigation/navigation.json';
 
 export default class SideNav extends React.Component {
-  renderNavItems = nav =>
-    Object.keys(nav).map(item => {
+  renderNavItems = nav => {
+    return Object.keys(nav).map(item => {
       const { GATSBY_CARBON_ENV } = process.env;
       const hideInternal =
         GATSBY_CARBON_ENV !== 'internal' && nav[item].internal;
+
       if (hideInternal) {
         return '';
       }
-      return (
-        <SideNavItem
-          itemSlug={item}
-          item={nav[item]}
-          key={item}
-        />
-      );
+
+      return <SideNavItem itemSlug={item} item={nav[item]} key={item} />;
     });
+  };
 
   render() {
     const { isOpen, isFinal } = this.props;

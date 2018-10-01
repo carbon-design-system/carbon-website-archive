@@ -3,11 +3,6 @@ import React from 'react';
 import classnames from 'classnames';
 import { Link } from 'gatsby';
 import { Icon } from 'carbon-components-react';
-import {
-  locationContainsPathAtIndex,
-  locationContainsPath,
-  determineRoutePathIndex,
-} from './sideNavHelpers';
 
 export default class SideNavItem extends React.Component {
   state = {
@@ -20,15 +15,18 @@ export default class SideNavItem extends React.Component {
     });
   };
 
-  renderSubNavItems = (subItems, location) => {
+  renderSubNavItems = (subItems, location, itemSlug) => {
+    // Default to an empty array so we don't run normalize on a location we
+    // don't have yet when rendering the /index.
+    const normalizedPathArray = location ? normalizeLocation(location) : [];
+
     return Object.keys(subItems).map(item => {
-      // Whether or not a side nav "item" is activated. Only navItems that are
-      // routes will ever be active.
-      const isNavItemActive = locationContainsPathAtIndex(
-        location,
-        item,
-        determineRoutePathIndex(location)
-      );
+      // Check that the itemSlug (top most nav item w/ chidlren) matches the
+      // zeroeth indexed normalized path array item. This is so we avoid conflicting
+      // children with similar names but disimilar parents.
+      const isNavItemActive =
+        normalizedPathArray[0] === itemSlug &&
+        locationContainsPathAtIndex(location, item, 1);
 
       // If the users selects a route within a dropdown we style the "active" nav
       // item accordingly
@@ -58,7 +56,7 @@ export default class SideNavItem extends React.Component {
     }
     */
   };
-   
+
   render() {
     const { item, itemSlug } = this.props;
     const hasSubNav = !(item['sub-nav'] === undefined);
@@ -67,8 +65,10 @@ export default class SideNavItem extends React.Component {
       <Location>
         {({ location }) => {
           const navItemClasses = classnames('side-nav__nav-item', {
-            'side-nav__nav-item--open': this.state.open || locationContainsPath(location, itemSlug),
-            'side-nav__nav-item--active': locationContainsPath(location, itemSlug) && !hasSubNav,
+            'side-nav__nav-item--open':
+              this.state.open || locationContainsPath(location, itemSlug),
+            'side-nav__nav-item--active':
+              locationContainsPath(location, itemSlug) && !hasSubNav,
           });
           return (
             <li className={navItemClasses}>
@@ -89,7 +89,7 @@ export default class SideNavItem extends React.Component {
               )}
               {hasSubNav && (
                 <ul className="side-nav__sub-nav">
-                  {this.renderSubNavItems(item['sub-nav'], location)}
+                  {this.renderSubNavItems(item['sub-nav'], location, itemSlug)}
                 </ul>
               )}
             </li>
@@ -98,4 +98,38 @@ export default class SideNavItem extends React.Component {
       </Location>
     );
   }
+}
+
+/**
+ * Normalize the location object provided to us through @reach/router. We also
+ * make sure to clean the __PATH_PREFIX__ defined in gatsby-config.js so that
+ * we can work with our paths as if they did not have that prefix. This is
+ * useful for asserting locations in the pathname for our nav sub-items
+ */
+function normalizeLocation(location) {
+  return location.pathname
+    .replace(__PATH_PREFIX__, '')
+    .split('/')
+    .filter(Boolean);
+}
+
+/**
+ * Helper to determine if the location from @reach/router has the given path
+ * anywhere in its pathname. Useful for top-level navigational items
+ */
+function locationContainsPath(location, path) {
+  return normalizeLocation(location).indexOf(path) !== -1;
+}
+
+/**
+ * Helper to determine if the location from @reach/router has the given path at
+ * the given index.
+ */
+function locationContainsPathAtIndex(location, path, index) {
+  // An array of the various url parts split at the '/'s
+  const destructoredUrlArray = normalizeLocation(location);
+  if (index < 0) {
+    return destructoredUrlArray[destructoredUrlArray.length + index] === path;
+  }
+  return destructoredUrlArray[index] === path;
 }
