@@ -14,6 +14,7 @@ export default class SideNav extends React.Component {
       const { GATSBY_CARBON_ENV } = process.env;
       const hideInternal =
         GATSBY_CARBON_ENV !== 'internal' && nav[item].internal;
+
       if (hideInternal) {
         return '';
       }
