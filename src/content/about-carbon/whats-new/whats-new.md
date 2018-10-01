@@ -158,11 +158,7 @@ _Example of Multi-Select Dropdown_
 
 Small Toggle is a style variation of our traditional [Toggle](/components/toggle) component. It's more compact in size, which allows them to be used in Data Tables or inline with Form elements.
 
----
-
----
-
-![example of Small toggle](images/small-toggle.gif) > _Example of Small Toggle_
+[example of Small toggle](images/small-toggle.gif) > _Example of Small Toggle_
 
 ### Data Vis: Bar Graph
 

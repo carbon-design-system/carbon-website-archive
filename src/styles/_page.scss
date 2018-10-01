@@ -53,6 +53,13 @@ body {
     padding: 0 0 $spacing-md;
   }
 
+
+  // All em on Markdown pages
+  em {
+    font-size: .875em;
+    color: $text-02;
+  }
+
   // No padding when a paragraph is followed by certain elements
   p + .bx--snippet,
   p + ul {

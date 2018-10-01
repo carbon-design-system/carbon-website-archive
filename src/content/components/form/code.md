@@ -13,6 +13,7 @@ tabs: ['Code', 'Usage', 'Style']
     codepen="pdWorZ"
     hasReactVersion="true"
     hasAngularVersion="true"
+    haslightversion="true"
     >
 </component>
 <component-docs component="form"></component-docs>
