@@ -89,7 +89,7 @@ export default class SideNavItem extends React.Component {
         )}
         {hasSubNav && (
           <ul className="side-nav__sub-nav">
-            {this.renderSubNavItems(item['sub-nav'], location)}
+            {this.renderSubNavItems(item['sub-nav'], location, itemSlug)}
           </ul>
         )}
       </li>
