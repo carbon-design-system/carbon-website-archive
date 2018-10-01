@@ -3,308 +3,308 @@
     {
       "item": "Accordion",
       "added": "6.10.0",
-      "vanilla": 0,
-      "react": 0,
-      "angular": 0,
-      "experimental": 0
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "ready",
+      "experimental": "ready"
     },
     {
       "item": "Breadcrumb",
       "added": "7.0.0",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 3,
-      "experimental": 0
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "ready"
     },
     {
       "item": "Button",
       "added": "2.0.0",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 0,
-      "experimental": 1
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "ready",
+      "experimental": "under-review"
     },
     {
       "item": "Checkbox",
       "added": "2.0.0",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 0,
-      "experimental": 0
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "ready",
+      "experimental": "ready"
     },
     {
       "item": "Code Snippet",
       "added": "7.0.0",
       "tag": "updated",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 3,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "not-available"
     },
     {
       "item": "Content Switcher",
       "added": "4.0.0",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 0,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "ready",
+      "experimental": "not-available"
     },
     {
       "item": "Data Table",
       "added": "7.26.0",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 0,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "ready",
+      "experimental": "not-available"
     },
     {
       "item": "Date Picker",
       "added": "7.10.1",
       "tag": "updated",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 3,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "not-available"
     },
     {
       "item": "Dropdown",
       "added": "2.0.0",
       "tag": "updated",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 0,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "ready",
+      "experimental": "not-available"
     },
     {
       "item": "File Uploader",
       "added": "7.0.0",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 3,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "not-available"
     },
     {
       "item": "Form",
       "added": "2.0.0",
       "tag": "updated",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 0,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "ready",
+      "experimental": "not-available"
     },
     {
       "item": "Link",
       "added": "2.0.0",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 3,
-      "experimental": 0
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "ready"
     },
     {
       "item": "List",
       "added": "2.0.0",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 3,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "not-available"
     },
     {
       "item": "Loading",
       "added": "5.0.0",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 3,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "not-available"
     },
     {
       "item": "Modal",
       "added": "4.3.0",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 0,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "ready",
+      "experimental": "not-available"
     },
     {
       "item": "Multiselect",
       "added": "8.0.0",
-      "status": 0,
-      "vanilla": 3,
-      "react": 0,
-      "angular": 0,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "not-available",
+      "react": "ready",
+      "angular": "ready",
+      "experimental": "not-available"
     },
     {
       "item": "Notification",
       "added": "6.0.0",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 0,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "ready",
+      "experimental": "not-available"
     },
     {
       "item": "Number Input",
       "added": "6.0.0",
       "tag": "updated",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 3,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "not-available"
     },
     {
       "item": "Pagination",
       "added": "7.0.0",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 3,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "not-available"
     },
     {
       "item": "Progress Indicator",
       "added": "6.11.0",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 3,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "not-available"
     },
     {
       "item": "Overflow Menu",
       "added": "5.0.0",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 3,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "not-available"
     },
     {
       "item": "Radio Button",
       "added": "2.0.0",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 0,
-      "experimental": 1
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "ready",
+      "experimental": "under-review"
     },
     {
       "item": "Search",
       "added": "2.0.0",
       "tag": "updated",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 3,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "not-available"
     },
     {
       "item": "Select",
       "added": "4.0.0",
       "tag": "updated",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 3,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "not-available"
     },
     {
       "item": "Slider",
       "added": "7.10.0",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 3,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "not-available"
     },
     {
       "item": "Structured List",
       "added": "7.7.0",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 3,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "not-available"
     },
     {
       "item": "Tabs",
       "added": "2.13.0",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 0,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "ready",
+      "experimental": "not-available"
     },
     {
       "item": "Tag",
       "added": "6.0.0",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 3,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "not-available"
     },
     {
       "item": "Text Input",
       "added": "2.0.0",
       "tag": "updated",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 3,
-      "experimental": 0
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "ready"
     },
     {
       "item": "Tile",
       "added": "7.22.0",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 3,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "not-available"
     },
     {
       "item": "Toggle",
       "added": "4.0.0",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 3,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "not-available"
     },
     {
       "item": "Tooltip",
       "added": "2.0.0",
       "tag": "updated",
-      "status": 0,
-      "vanilla": 0,
-      "react": 0,
-      "angular": 0,
-      "experimental": 3
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "ready",
+      "experimental": "not-available"
     },
     {
       "item": "UI Shell",
       "added": "9.0.0",
       "tag": "new",
-      "status": 3,
-      "vanilla": 3,
-      "react": 3,
-      "angular": 3,
-      "experimental": 1
+      "status": "not-available",
+      "vanilla": "not-available",
+      "react": "not-available",
+      "angular": "not-available",
+      "experimental": "under-review"
     }
   ]
 }
