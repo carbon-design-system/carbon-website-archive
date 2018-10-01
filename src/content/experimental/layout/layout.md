@@ -224,7 +224,7 @@ This panel style floats above the primary content area and does not affect the r
 
 ## Sizing Scale
 
-We provide a sizing scale for both fixed and fluid sizes. Use it to size content as well as negative space. Like a type scale, the sizing scale constrains the range of sizes to improve consistency and rhythm,while still allowing a wide range of sizes.
+We provide a sizing scale for both fixed and fluid sizes. Use it to size content as well as negative space. Like a type scale, the sizing scale constrains the range of sizes to improve consistency and rhythm, while still allowing a wide range of sizes.
 
 To use it, first choose a fixed or fluid base unit, then multiply it in each dimension, applying aspect ratios as needed.
 
