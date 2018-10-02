@@ -4,6 +4,7 @@
 
 body {
   background: $ui-01;
+  line-height: 1.5;
 }
 
 .side-nav + div, //Issue #51 weird bug where sometimes on reload of the page the classnames on container div disapear 
@@ -48,8 +49,7 @@ body {
 
   // All paragraphs on Markdown pages
   // And divs when markdown doesn't wrap text in paragraphs (when you have to use html for links to open in a new window)
-  p,
-  & > div > div {
+  p {
     max-width: 38rem;
     line-height: 1.5;
     padding: 0 0 $spacing-md;
