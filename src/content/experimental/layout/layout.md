@@ -240,9 +240,9 @@ This panel style floats above the primary content area and does not affect the r
 
 ## Sizing Scale
 
-We provide a sizing scale for both fixed and fluid sizes. Use it to size content as well as negative space. Like a type scale, the sizing scale constrains the range of sizes to improve consistency and rhythm, while still allowing a wide range of sizes.
+We provide a sizing scale for both fixed and fluid sizes. Use it to size content as well as negative space. Like a type scale, the sizing scale constrains the range of sizes to improve consistency and rhythm, while still allowing a wide range of sizes. Spacing tokens are used to apply these relationships consistently across UIs.
 
-To use it, first choose a fixed or fluid base unit, then multiply it in each dimension, applying aspect ratios as needed.
+To use the scale, first choose a fixed or fluid base unit, then multiply it in each dimension, applying aspect ratios as needed.
 
 1. [Fixed Base Unit](#fixed-base-unit)
 2. [Fluid Base Unit](#fluid-base-unit)
@@ -295,6 +295,7 @@ Choose an aspect ratio from the table, then multiply the base unit in each dimen
 | --------------- |
 | 1:1 |
 | 2:1 |
+| 2:3 |
 | 3:2 |
 | 4:3 |
 | 16:9 |
