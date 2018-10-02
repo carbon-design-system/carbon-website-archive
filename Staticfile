@@ -1,1 +1,2 @@
 root: public
+force_https: true
