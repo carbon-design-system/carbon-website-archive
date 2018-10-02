@@ -329,19 +329,18 @@ Components can be sized like other boxes: either fixed or fluid, and often hybri
 
 It includes minute increments needed to create appropriate spacial relationships for detail-level designs. This scale is applied and used within all Carbon components.
 
-| Token            | rem   | px  |                                     
+
+| Token            | rem   | px  | Example                                       |
 | ---------------- | ----- | --- | --------------------------------------------- |
-| **$spacing-01** | 0.125 | 2   | 
-| **$spacing-02** | 0.25  | 4   | 
-| **$spacing-03**  | 0.5   | 8   |  
-| **$spacing-04**  | 0.75  | 12  | 
-| **$spacing-05**  | 1     | 16  | 
-| **$spacing-06**  | 1.5   | 24  | 
-| **$spacing-07**  | 2     | 32  | 
-| **$spacing-08** | 2.5   | 40  | 
-| **$spacing-09** | 3     | 48  | 
-
-
+| **$spacing-01** | 0.125 | 2   | ![spacing-3xs example](images/spacing-3.svg)  |
+| **$spacing-02** | 0.25  | 4   | ![spacing-2xs example](images/spacing-4.svg)  |
+| **$spacing-03**  | 0.5   | 8   | ![spacing-xs example](images/spacing-5.svg)   |
+| **$spacing-04**  | 0.75  | 12  | ![spacing-sm example](images/spacing-6.svg)   |
+| **$spacing-05**  | 1     | 16  | ![spacing-md example](images/spacing-7.svg)   |
+| **$spacing-06**  | 1.5   | 24  | ![spacing-lg example](images/spacing-8.svg)   |
+| **$spacing-07**  | 2     | 32  | ![spacing-xl example](images/spacing-9.svg)   |
+| **$spacing-08** | 2.5   | 40  | ![spacing-2xl example](images/spacing-10.svg) |
+| **$spacing-09** | 3     | 48  | ![spacing-3xl example](images/spacing-11.svg) |
 
 
 When multiple components adhere to the same scale, grid relationships naturally emerge. For example, vertically aligning form fields such as checkboxes and radio buttons produces a grid effect when interior spacing is consistent.
