@@ -4,8 +4,6 @@ title: Iconography
 tabs: ['Library', 'Usage', 'Contribution']
 ---
 
-## WIP
-
 <page-intro>**Iconography** uses images and symbols to represent an object visually. They communicate a message and should be distinct and informative. Icons should be used sparingly throughout the product to provide clarity and reduce cognitive load on users.</page-intro>
 
 ## Resources

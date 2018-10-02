@@ -21,3 +21,11 @@ $feature-flags: (
 .iconography--experimental .icon-size {
   margin-top: 4rem;
 }
+
+.iconography--experimental .icon__card-title,
+.iconography--experimental .icon__card-details {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
