@@ -56,6 +56,9 @@ A [fluid grid](#fluid-grid) divides space by twos. This division is immediately 
 | 8 |
 | 16 |
 
+
+<br>
+
 For dense content, use Mini Units for further alignment and spatial guidance.
 
 ![grid customization](images/grid_customization.png)
@@ -81,6 +84,11 @@ Padding is always a fixed multiple of Mini Units: 16 pixels at all breakpoints.
 Always align type to the edge of box padding. Note: some design tools add padding to text boxes by default; check text box padding and remove it if necessary.
 
 ![grid paddings sample](images/2x_padding_sample.png)
+
+<br>
+
+
+Take care not to place your type on the padding:
 
 ![spacing guidance](images/alignment_do_not.png)
 
@@ -222,7 +230,8 @@ All vertical panels expand to fill the full height of the browser window.
  `vimeo: https://vimeo.com/292975726`
  
  
- <br><br>
+ 
+
  or they push content the distance of their width. 
 
  `vimeo: https://vimeo.com/292976634`
@@ -318,6 +327,8 @@ Use the fixed sizing scale to set vertical spacing between sections, by adding i
 
 `vimeo: https://vimeo.com/292028388`
 
+<br>
+
 Take care to apply the intended vertical spacing just once:
 
 ![spacing guidance](images/spacing_guidance_new.png)
@@ -325,9 +336,9 @@ Take care to apply the intended vertical spacing just once:
 
 ### Components
 
-Components can be sized like other boxes: either fixed or fluid, and often hybrid, with fixed height and fluid width. When interior space within a component is cramped, use the minor sizing scale:
+Components can be sized like other boxes: either fixed or fluid, and often hybrid, with fixed height and fluid width. When interior space within a component is cramped, use the minor sizing scale; it includes minute increments needed to create appropriate spatial relationships for detail-level designs. 
 
-It includes minute increments needed to create appropriate spacial relationships for detail-level designs. This scale is applied and used within all Carbon components.
+The minor sizing scale is applied and used within all of our components:
 
 
 | Token            | rem   | px  | Example                                       |
@@ -342,7 +353,7 @@ It includes minute increments needed to create appropriate spacial relationships
 | **$spacing-08** | 2.5   | 40  | ![spacing-2xl example](images/spacing-10.svg) |
 | **$spacing-09** | 3     | 48  | ![spacing-3xl example](images/spacing-11.svg) |
 
-
+<br><br>
 When multiple components adhere to the same scale, grid relationships naturally emerge. For example, vertically aligning form fields such as checkboxes and radio buttons produces a grid effect when interior spacing is consistent.
 
 
