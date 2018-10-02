@@ -286,6 +286,7 @@ Choose an aspect ratio from the table, then multiply the base unit in each dimen
 | --------------- |
 | 1:1 |
 | 2:1 |
+| 3:2 |
 | 4:3 |
 | 16:9 |
 
