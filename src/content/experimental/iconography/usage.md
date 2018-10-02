@@ -1,5 +1,5 @@
 ---
-label: Guidelines
+label: Experimental
 title: Iconography
 tabs: ['Library', 'Usage', 'Contribution']
 ---
