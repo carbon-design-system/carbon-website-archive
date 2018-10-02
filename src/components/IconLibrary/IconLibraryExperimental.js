@@ -1,7 +1,6 @@
 import React from 'react';
 import { Search, Loading } from 'carbon-components-react';
 import icons from 'carbon-icons';
-import IconCard from '../IconCard';
 import IconEmptyState from '../IconEmptyState';
 
 const sizes = ['16', '32', 'Glyph'];
@@ -98,6 +97,7 @@ export default class IconLibraryExperimental extends React.Component {
   render() {
     const {
       errorLoadingIcons,
+      filteredIcons,
       icons,
       isLoading,
       searchValue,
@@ -142,6 +142,15 @@ export default class IconLibraryExperimental extends React.Component {
             </a>{' '}
             to make sure that this gets fixed!
           </p>
+        </div>
+      );
+    }
+
+    if (filteredIcons.length === 0) {
+      return (
+        <div className="page iconography--experimental">
+          {search}
+          <IconEmptyState />
         </div>
       );
     }

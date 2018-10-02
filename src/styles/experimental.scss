@@ -18,6 +18,10 @@ $feature-flags: (
   @import 'carbon-components/src/globals/scss/styles';
 }
 
+.iconography--experimental .icon-container {
+  width: 100%;
+}
+
 .iconography--experimental .icon-size {
   margin-top: 4rem;
 }
