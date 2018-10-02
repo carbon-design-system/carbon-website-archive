@@ -215,19 +215,26 @@ All vertical panels expand to fill the full height of the browser window.
 #### Flexible Panels
  Flexible panels allow for both collapsed and expanded states. The expanded state of a flexible panel is a fixed width that cannot be adjusted by the user. A collapsed flexible panel expands when the user hovers over any portion of it. 
 
- When flexible panels expand, they either condense both the content and the grid or they push content the distance of their width. 
+ When flexible panels expand, they either condense both the content and the grid 
+ 
+ `vimeo: https://vimeo.com/292975726`
+ 
+ 
+ 
+ or they push content the distance of their width. 
 
-![Flexible Panels](images/panel_flexible.png)
+ `vimeo: https://vimeo.com/292976634`
+
 
 #### Fixed Panels
 Fixed panels maintain a static width, cannot be collapsed and also exist outside of the responsive grid. 
 
-![Fixed Panels](images/panel_fixed.png)
+`vimeo: https://vimeo.com/292976634`
 
 #### Floating Panels
 This panel style floats above the primary content area and does not affect the responsive grid. Floating panels conceal any UI elements below them and must be dismissable by the user. Inline menus, dropdowns and tooltips also float.
 
-![Floating Panels](images/panel_floating.png)
+`vimeo: https://vimeo.com/292977039`
 
 ## Sizing Scale
 
@@ -292,7 +299,7 @@ Choose an aspect ratio from the table, then multiply the base unit in each dimen
 
 For example, to size a fluid box with a 2:1 landscape aspect ratio, you could span 4 columns in width and 2 column-widths of height. To size a fixed box with the same aspect ratio, you could start with an 80 pixel base unit, then multiply it by 4 in width and 2 in height, for a fixed box size of 320 by 160.
 
-![aspect ratio](images/aspect_ratios.png)
+![aspect ratio](images/apsect_ratios_revised.png)
 
 Aspect ratios do not apply to hybrid boxes, since one dimension is fixed and the other is fluid.
 
