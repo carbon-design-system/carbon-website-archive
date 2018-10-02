@@ -82,6 +82,8 @@ Always align type to the edge of box padding. Note: some design tools add paddin
 
 ![grid paddings sample](images/2x_padding_sample.png)
 
+![spacing guidance](images/alignment_do_not.png)
+
 ### Gutters
 Grid gutters can be absent as shown above, or present as shown below. The margin around each grid box matches its padding, for a total gutter of 32 pixels.
 
@@ -206,7 +208,7 @@ In a UI layout, users expect to find certain types of content in certain areas. 
 
 7. Dialog
 
-<br>
+
 
 
 ### Panel Behavior
@@ -220,7 +222,7 @@ All vertical panels expand to fill the full height of the browser window.
  `vimeo: https://vimeo.com/292975726`
  
  
- 
+ <br><br>
  or they push content the distance of their width. 
 
  `vimeo: https://vimeo.com/292976634`
@@ -229,7 +231,7 @@ All vertical panels expand to fill the full height of the browser window.
 #### Fixed Panels
 Fixed panels maintain a static width, cannot be collapsed and also exist outside of the responsive grid. 
 
-`vimeo: https://vimeo.com/292976634`
+`vimeo: https://vimeo.com/292988292`
 
 #### Floating Panels
 This panel style floats above the primary content area and does not affect the responsive grid. Floating panels conceal any UI elements below them and must be dismissable by the user. Inline menus, dropdowns and tooltips also float.
@@ -297,10 +299,13 @@ Choose an aspect ratio from the table, then multiply the base unit in each dimen
 | 4:3 |
 | 16:9 |
 
+<br><br>
+
 For example, to size a fluid box with a 2:1 landscape aspect ratio, you could span 4 columns in width and 2 column-widths of height. To size a fixed box with the same aspect ratio, you could start with an 80 pixel base unit, then multiply it by 4 in width and 2 in height, for a fixed box size of 320 by 160.
 
 ![aspect ratio](images/apsect_ratios_revised.png)
 
+<br><br>
 Aspect ratios do not apply to hybrid boxes, since one dimension is fixed and the other is fluid.
 
 ![hybrid box sample](images/hybrid_box_sample.png)
