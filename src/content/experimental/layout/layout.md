@@ -331,15 +331,15 @@ It includes minute increments needed to create appropriate spacial relationships
 
 | Token            | rem   | px  |                                     
 | ---------------- | ----- | --- | --------------------------------------------- |
-| **$spacing-3xs** | 0.125 | 2   | 
-| **$spacing-2xs** | 0.25  | 4   | 
-| **$spacing-xs**  | 0.5   | 8   |  
-| **$spacing-sm**  | 0.75  | 12  | 
-| **$spacing-md**  | 1     | 16  | 
-| **$spacing-lg**  | 1.5   | 24  | 
-| **$spacing-xl**  | 2     | 32  | 
-| **$spacing-2xl** | 2.5   | 40  | 
-| **$spacing-3xl** | 3     | 48  | 
+| **$spacing-01** | 0.125 | 2   | 
+| **$spacing-02** | 0.25  | 4   | 
+| **$spacing-03**  | 0.5   | 8   |  
+| **$spacing-04**  | 0.75  | 12  | 
+| **$spacing-05**  | 1     | 16  | 
+| **$spacing-06**  | 1.5   | 24  | 
+| **$spacing-07**  | 2     | 32  | 
+| **$spacing-08** | 2.5   | 40  | 
+| **$spacing-09** | 3     | 48  | 
 
 
 
