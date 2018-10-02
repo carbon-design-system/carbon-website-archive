@@ -26,8 +26,5 @@ See the [Data Tables](/components/data-table/usage) section for guidance on how 
 
 The default view of a set of Checkboxes is having no option selected.
 
----
-
----
-
-> ![The default state for checkboxes is unchecked.](images/checkbox-usage-1.png) > _By default, checkboxes are unchecked._
+![The default state for checkboxes is unchecked.](images/checkbox-usage-1.png) 
+_By default, checkboxes are unchecked._

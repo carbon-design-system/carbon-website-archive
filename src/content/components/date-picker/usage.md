@@ -42,11 +42,7 @@ For Date Pickers, use placeholder text so users input the date in the correct fo
 
 It is recommended to use the Date Picker with a calendar widget when the user is browsing between a range of dates. We can aid the user in making the proper choices by providing a visual reference of dates for them to choose from. The calendar widget appears once the user has interacted with the date input field (typically on `:focus`).
 
----
-
----
-
-> ![Selecting a dates from the Range Date Picker](images/date-picker-usage-4.gif)
+![Selecting a dates from the Range Date Picker](images/date-picker-usage-4.gif)
 
 _Selecting dates from the Range Date Picker_
 
@@ -58,10 +54,6 @@ The Simple Date Picker provides the user with a text input in which they can inp
 
 Time pickers provide the user with a text input in which they can input hours/minutes. Additionally, they can be accompanied by an “AM/PM” selection and a time zone selection, which is styled as an [Inline Select](/components/select).
 
----
-
----
-
-> ![Time picker example](images/time-picker-usage-1.png)
+![Time picker example](images/time-picker-usage-1.png)
 
 _Time picker used to set deployment time_

@@ -47,10 +47,18 @@ body {
   }
 
   // All paragraphs on Markdown pages
-  p {
+  // And divs when markdown doesn't wrap text in paragraphs (when you have to use html for links to open in a new window)
+  p,
+  & > div > div {
     max-width: 38rem;
     line-height: 1.5;
     padding: 0 0 $spacing-md;
+  }
+
+  // All em on Markdown pages
+  em {
+    font-size: .875em;
+    color: $text-02;
   }
 
   // No padding when a paragraph is followed by certain elements
