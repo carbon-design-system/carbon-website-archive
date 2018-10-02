@@ -1,7 +1,7 @@
 /*
-    Since we are pulling in both experimental and the default carbon styles 
+    Since we are pulling in both experimental and the default carbon styles
     some atrributes aren't overwritten between the two sets so we need to
-    provide overrides. 
+    provide overrides.
 */
 
 $feature-flags: (
@@ -16,4 +16,8 @@ $feature-flags: (
     ui-shell: true,
   );
   @import 'carbon-components/src/globals/scss/styles';
+}
+
+.iconography--experimental .icon-size {
+  margin-top: 4rem;
 }
