@@ -26,6 +26,7 @@
     "deploy": "gatsby build && gh-pages -d public"
   },
   "dependencies": {
+    "@carbon/icons-react": "^0.0.1-alpha.1",
     "@reach/router": "^1.2.1",
     "@storybook/addon-info": "^3.4.11",
     "carbon-components": "^9.26.0",

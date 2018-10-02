@@ -697,6 +697,10 @@
   version "0.0.1-alpha.0"
   resolved "https://registry.yarnpkg.com/@carbon/colors/-/colors-0.0.1-alpha.0.tgz#8c53ef65f864106a63cfc412d8ff083a8a04905f"
 
+"@carbon/icons-react@^0.0.1-alpha.1":
+  version "0.0.1-alpha.1"
+  resolved "https://registry.yarnpkg.com/@carbon/icons-react/-/icons-react-0.0.1-alpha.1.tgz#3d54239cde15b7a3643b167f803dc38a6dfe8651"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"

@@ -196,6 +196,9 @@
       "layout": {
         "title": "Layout"
       },
+      "iconography": {
+        "title": "Iconography"
+      },
       "ui-shell": {
         "title": "UI Shell"
       },
