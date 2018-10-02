@@ -1,7 +1,7 @@
 ---
 label: Component
 title: Accordion
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
 ## General guidelines

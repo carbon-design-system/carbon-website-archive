@@ -1,7 +1,7 @@
 ---
 label: Experimental
 title: Accordion
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
 <page-intro>**Accordion** enables users to expand and collapse sections of content</page-intro>
