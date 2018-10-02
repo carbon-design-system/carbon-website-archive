@@ -76,19 +76,11 @@ Filters within each category should start either as all unselected or all select
 
 If the filter(s) can be hidden in either a drawer, dropdown, or menu, then there should be an indicator visible on the closed filter state that informs the user that filters have been applied. At a minimum the indicator should include the number of filters applied and have the option to clear filters without re-opening the filter container.
 
----
-
----
-
-> ![Hidden filters not applied](images/filter-5.png)
+![Hidden filters not applied](images/filter-5.png)
 
 _Filters not applied_
 
----
-
----
-
-> ![Hidden filters applied](images/filter-6.png)
+![Hidden filters applied](images/filter-6.png)
 
 _Filters applied_
 

@@ -144,14 +144,29 @@
   max-width: 100%;
 }
 
+// Adds background color to component page images. Adds to all images on compponent pages for now
+.page-content--component .gatsby-resp-image-wrapper {
+  background: $ui-02;
+}
+
+.page-content--component .gatsby-resp-image-background-image {
+  background: transparent!important; // Need important to override inline style added by gatsby-remark-images
+}
+
+.page-content--component .gatsby-resp-image-image {
+  box-shadow: none!important; // Need important to override inline style added by gatsby-remark-images
+}
+
 //----------------------------
 // Inline image
 //----------------------------
 
 blockquote .gatsby-resp-image-wrapper,
 blockquote p img {
-  width: 4rem;
-  margin: 1.2rem 1.2rem 0.75rem 0;
+  width: 5.2rem;
+  height: auto;
+  margin: 1.2rem 0 0 0;
+  padding: 0 1.2rem 1.2rem 0;
   float: left;
 }
 
@@ -188,4 +203,11 @@ h6 {
 
 iframe.embedVideoIframe {
   border: 1px solid $ui-03;
+}
+
+//----------------------------
+// HR
+//----------------------------
+hr {
+  display: none;
 }

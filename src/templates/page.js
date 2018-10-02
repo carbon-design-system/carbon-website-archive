@@ -3,6 +3,7 @@ import React from 'react';
 import rehypeReact from 'rehype-react';
 import Layout from '../components/Layouts';
 import FourOhFour from '../components/404';
+import classnames from 'classnames';
 
 // Components
 import PageHeader from '../components/PageHeader';
@@ -13,6 +14,7 @@ import ClickTile from '../components/ClickableTile';
 import Example from '../components/Example';
 import ColorCard from '../components/ColorCard';
 import IconLibrary from '../components/IconLibrary';
+import IconLibraryExperimental from '../components/IconLibrary/IconLibraryExperimental';
 import TypeScaleTable from '../components/TypeScaleTable';
 import TypeStylesTable from '../components/TypeStylesTable';
 import TypeWeightTable from '../components/TypeWeightTable';
@@ -55,6 +57,7 @@ const renderAst = new rehypeReact({
     'color-block': ColorBlock,
     'color-card': ColorCard,
     'icon-library': IconLibrary,
+    'icon-library-experimental': IconLibraryExperimental,
     'type-scale-table': TypeScaleTable,
     'type-weight-table': TypeWeightTable,
     'type-styles-table': TypeStylesTable,
@@ -80,6 +83,10 @@ export default ({ data, pageContent }) => {
   const { GATSBY_CARBON_ENV } = process.env;
   const isInternal = GATSBY_CARBON_ENV !== 'internal' && internal == true;
 
+  const classNames = classnames('page-content', {
+    'page-content--component': post.frontmatter.label === 'Component'
+  });
+
   if (isInternal) {
     return (
       <Layout>
@@ -96,7 +103,7 @@ export default ({ data, pageContent }) => {
         {!(tabs === null) && (
           <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
         )}
-        <div className="page-content"> {renderAst(post.htmlAst)}</div>
+        <div className={classNames}> {renderAst(post.htmlAst)}</div>
       </Layout>
     );
   }

@@ -32,17 +32,10 @@ UI Foundational Colors
 
 Alerts Colors
 
--->
 
-<!-- <Margin top="2rem">
-  <ColorMatrix colorName="gray"></ColorMatrix>
-  <ColorMatrix colorName="blue"></ColorMatrix>
-</Margin>
-<Margin top="2rem">
-  <ColorUIColorAnatomy></ColorUIColorAnatomy>
-</Margin> -->
 
 ## IBM Base Theme
+
 
 | Color                                                 | Color name     | Hex Value | Tokens                   |
 |-------------------------------------------------------|----------------|-----------|--------------------------|
@@ -103,9 +96,7 @@ The light theme uses White and Gray 10 backgrounds and the dark theme uses Gray 
 | ![Gray 90](images/swatches/gray-90.png)   | Global Background Dark  | `#282828` | Gray 90    |
 | ![Gray 100](images/swatches/gray-100.png) | Global Background Dark  | `#171717` | Gray 100   |
 
-<Spacer amount="3rem" amountmd="4rem"></Spacer>
-
-### Light Theme
+## Light Theme
 
 Gray 10 components are generally paired with White backgrounds and White components with Gray 10 backgrounds. Some components, such as buttons and toggles, are common across both backgrounds.
 
@@ -119,22 +110,6 @@ Gray 10 components are generally paired with White backgrounds and White compone
 
 ![Components with common colors across both light UI backgrounds](images/ui-against-light-bg.gif)
 Components with common colors across both light UI backgrounds
-
-<!-- <Margin bottom="2rem">
-  <HorizontalRow padded="true">
-    <ColorUIExpandableImage caption="IBM Evidence Builder Prototype">
-      <img src="../media/pages/color-ui/color-in-ui-evidence-light.png" title="IBM Evidence Builder Prototype" />
-    </ColorUIExpandableImage>
-    <ColorUIExpandableImage caption="IBM Radar Prototype">
-      <img src="../media/pages/color-ui/color-in-ui-radar-light.jpg" title="IBM Radar Prototype" />
-    </ColorUIExpandableImage>
-    <ColorUIExpandableImage caption="IBM Cloud Platform Prototype">
-      <img src="../media/pages/color-ui/color-in-ui-platform-light.jpg" title="IBM Cloud Platform Prototype" />
-    </ColorUIExpandableImage>
-  </HorizontalRow>
-</Margin>
-
--->
 
 ### Dark Theme
 
@@ -150,24 +125,6 @@ Gray 90 components are generally paired with Gray 100 backgrounds and Gray 80 co
 
 ![Components with common colors across dark UI backgrounds](images/ui-against-dark-bg.gif)
 Components with common colors across dark UI backgrounds
-
-
-<!--
-<Margin bottom="2rem">
-  <HorizontalRow padded="true">
-    <ColorUIExpandableImage theme="dark" caption="IBM Watson API Demo">
-      <img src="../media/pages/color-ui/color-in-ui-api-dark.jpg" title="IBM Watson API Demo" />
-    </ColorUIExpandableImage>
-    <ColorUIExpandableImage theme="dark" caption="IBM Security Cloud Prototype">
-      <img src="../media/pages/color-ui/color-in-ui-security-dark.jpg" title="IBM Security Cloud Prototype" />
-    </ColorUIExpandableImage>
-    <ColorUIExpandableImage theme="dark" caption="IBM Watson Health Prototype">
-      <img src="../media/pages/color-ui/color-in-ui-health-dark.jpg" title="IBM Watson Health Prototype" />
-    </ColorUIExpandableImage>
-  </HorizontalRow>
-</Margin>
-
--->
 
 ## High Contrast
 
@@ -203,6 +160,7 @@ A unique set of hex values and color tokens exists for the hover states. These c
 | ![Secondary hover](images/swatches/hover-secondary.png)       | `0062ff`  | 0,98,255,100  | `$hover-secondary`    |
 | ![Row hover](images/swatches/hover-row.png)                   | `0530AD`  | 5,48,173,10   | `$hover-row`          |
 
+
 ### Selected
 
 The selected state is one full step lighter for values between 100 and 70 and one full step darker for values between 60 and 10. Exception: White shares the same selected state as Gray 10. Example: the Blue 60 selected state is Blue 70.
@@ -211,7 +169,9 @@ The selected state is one full step lighter for values between 100 and 70 and on
 
 The active state is two full steps lighter for values between 100 and 70 and two full steps darker for values between 60 and 10. Exception: White shares the same active state as Gray 10. Example: the Blue 60 active state is Blue 80
 
-<!--
+![Duo Color Palette](images/interactive-color.png)
+
+
 ## Commonly Used Colors
 
 The table below lists common colors that are not component specific, such as primary text, icons and alerts. For a more comprehensive list of values, please refer to the Style section for each individual component.
@@ -226,10 +186,6 @@ The table below lists common colors that are not component specific, such as pri
 | Alert – Error          | —    | `#da1e28` | <Swatch hex="#da1e28">Red 60</Swatch>    |
 | Alert – Warning        | —    | `#fdd13a` | <Swatch hex="#fdd13a">Yellow 30</Swatch> |
 | Alert – Success        | —    | `#24a249` | <Swatch hex="#24a249">Green 50</Swatch>  |
-
-<Spacer amount="3rem" amountmd="4rem"></Spacer>
-
--->
 
 ## Digital Accessibility
 
@@ -258,46 +214,8 @@ The third type of color deficiency, Tritanopia, is the least common and refers t
 
 ![Chromatics](images/color-blindness.png)
 
+
 ### Accessibility Resources
 
 [Carbon and Accessibility] (../guidelines/accessibility/overview) 
 
-<!-- 
-## Experimental theme
-
-<flex-group>
-<color-card name="brand-01" hex="#0062ff"></color-card>
-<color-card name="brand-02" hex="#0530ad"></color-card>
-<color-card name="brand-03" hex="#0062ff"></color-card>
-<color-card name="ui-01" hex="#f3f3f3"></color-card>
-<color-card name="ui-02" hex="#ffffff" border="true"></color-card>
-<color-card name="ui-03" hex="#dcdcdc"></color-card>
-<color-card name="ui-04" hex="#8c8c8c"></color-card>
-<color-card name="ui-05" hex="#171717"></color-card>
-<color-card name="text-01" hex="#171717"></color-card>
-<color-card name="text-02" hex="#565656"></color-card>
-<color-card name="text-03" hex="#8c8c8c"></color-card>
-<color-card name="inverse-01" hex="#ffffff" border="true"></color-card>
-<color-card name="field-01" hex="#f2f4f8"></color-card>
-</flex-group>
-
-### Hover Colors
-
-<flex-group>
-<color-card name="hover-primary" hex="#004ecc"></color-card>
-<color-card name="hover-primary-text" hex="#0045b3"></color-card>
-<color-card name="hover-danger" hex="#ad1820"></color-card>
-<color-card name="hover-secondary" hex="#0062ff"></color-card>
-<color-card name="hover-row" hex="rgba(5, 48, 173, 0.1)"></color-card>
-</flex-group>
-
-### Support Colors
-
-<flex-group>
-<color-card name="support-01" hex="#da1e28"></color-card>
-<color-card name="support-02" hex="#24a249"></color-card>
-<color-card name="support-03" hex="#fdd13a"></color-card>
-<color-card name="support-04" hex="#418cff"></color-card>
-</flex-group>
-
--->

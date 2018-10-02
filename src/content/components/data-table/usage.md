@@ -45,11 +45,7 @@ Improve table usability by making data sortable. Clickable headers enable users 
 
 The table toolbar is reserved for global table actions such as table settings, complex filter, export, or editing table data. Additional options can be added if you have an icon to support that function. Icons should be 16x16 px (glyphs). We recommend using no more than 5 icons within the table toolbar.
 
----
-
----
-
-> ![Table toolbar](images/data-table-usage-6.png)
+![Table toolbar](images/data-table-usage-6.png)
 
 _Table toolbar: Table settings_
 

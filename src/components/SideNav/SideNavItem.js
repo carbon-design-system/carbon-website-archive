@@ -9,31 +9,43 @@ export default class SideNavItem extends React.Component {
     open: false,
   };
 
+  static getDerivedStateFromProps(props, state) {
+    const { location, itemSlug } = props;
+    const { open, prevLocation, prevItemSlug } = state;
+    return prevLocation === location && prevItemSlug === itemSlug
+      ? null
+      : {
+          open:
+            open ||
+            (location && itemSlug && locationContainsPath(location, itemSlug)),
+          prevLocation: location,
+          prevItemSlug: itemSlug,
+        };
+  }
+
   toggleSubNav = () => {
     this.setState({
       open: !this.state.open,
     });
   };
 
-  renderSubNavItems = (subItems, location) =>
-    Object.keys(subItems).map(item => {
-      const pathname = normalizeLocation(location);
-      let isItemActive = false;
+  renderSubNavItems = (subItems, location, itemSlug) => {
+    // Default to an empty array so we don't run normalize on a location we
+    // don't have yet when rendering the /index.
+    const normalizedPathArray = location ? normalizeLocation(location) : [];
 
-      // Support nested /components/:component/:tab
-      // Support nested /guidelines/:guideline/:tab
-      if (pathname.length === 3) {
-        // Match :component, :guideline
-        isItemActive = locationContainsPathAtIndex(location, item, -2);
-      }
+    return Object.keys(subItems).map(item => {
+      // Check that the itemSlug (top most nav item w/ chidlren) matches the
+      // zeroeth indexed normalized path array item. This is so we avoid conflicting
+      // children with similar names but disimilar parents.
+      const isNavItemActive =
+        normalizedPathArray[0] === itemSlug &&
+        locationContainsPathAtIndex(location, item, 1);
 
-      // Support /components/overview
-      if (pathname.length === 2) {
-        isItemActive = locationContainsPathAtIndex(location, item, -1);
-      }
-
+      // If the users selects a route within a dropdown we style the "active" nav
+      // item accordingly
       const subNavClasses = classnames('side-nav__sub-nav-item', {
-        'side-nav__sub-nav-item--active': isItemActive,
+        'side-nav__sub-nav-item--active': isNavItemActive,
       });
 
       return (
@@ -46,78 +58,43 @@ export default class SideNavItem extends React.Component {
         </li>
       );
     });
-
-  componentDidMount = () => {
-    /*
-    Commenting out for now, this is breaking the build. We still need this to work though
-    if (locationContainsPath(this.props.location, this.props.itemSlug) ) {
-      this.setState({
-        open: !this.state.open,
-      });
-    }
-    */
   };
-   
+
   render() {
-    const { item, itemSlug } = this.props;
+    const { item, itemSlug, location } = this.props;
     const hasSubNav = !(item['sub-nav'] === undefined);
 
+    const navItemClasses = classnames('side-nav__nav-item', {
+      'side-nav__nav-item--open': this.state.open,
+      'side-nav__nav-item--active':
+        locationContainsPath(location, itemSlug) && !hasSubNav,
+    });
+
     return (
-      <Location>
-        {({ location }) => {
-          const navItemClasses = classnames('side-nav__nav-item', {
-            'side-nav__nav-item--open': this.state.open || locationContainsPath(location, itemSlug),
-            'side-nav__nav-item--active': locationContainsPath(location, itemSlug) && !hasSubNav,
-          });
-          return (
-            <li className={navItemClasses}>
-              {hasSubNav ? (
-                // eslint-disable-next-line
-                <button onClick={this.toggleSubNav}>
-                  {item.title}{' '}
-                  <Icon
-                    className="side-nav__nav-item--arrow"
-                    name="caret--down"
-                    aria-hidden="true"
-                    description="Menu arrow icon"
-                    alt="Menu arrow icon"
-                  />
-                </button>
-              ) : (
-                <Link to={`/${itemSlug}`}>{item.title}</Link>
-              )}
-              {hasSubNav && (
-                <ul className="side-nav__sub-nav">
-                  {this.renderSubNavItems(item['sub-nav'], location)}
-                </ul>
-              )}
-            </li>
-          );
-        }}
-      </Location>
+      <li className={navItemClasses}>
+        {hasSubNav ? (
+          // eslint-disable-next-line
+          <button onClick={this.toggleSubNav}>
+            {item.title}{' '}
+            <Icon
+              className="side-nav__nav-item--arrow"
+              name="caret--down"
+              aria-hidden="true"
+              description="Menu arrow icon"
+              alt="Menu arrow icon"
+            />
+          </button>
+        ) : (
+          <Link to={`/${itemSlug}`}>{item.title}</Link>
+        )}
+        {hasSubNav && (
+          <ul className="side-nav__sub-nav">
+            {this.renderSubNavItems(item['sub-nav'], location, itemSlug)}
+          </ul>
+        )}
+      </li>
     );
   }
-}
-
-/**
- * Helper to determine if the location from @reach/router has the given path
- * anywhere in its pathname. Useful for top-level navigational items
- */
-function locationContainsPath(location, path) {
-  return normalizeLocation(location).indexOf(path) !== -1;
-}
-
-/**
- * Helper to determine if the location from @reach/router has the given path at
- * the given index. Supports negative indices that represent how far to go from
- * the end of the array backwards
- */
-function locationContainsPathAtIndex(location, path, index) {
-  const parts = normalizeLocation(location);
-  if (index < 0) {
-    return parts[parts.length + index] === path;
-  }
-  return parts[index] === path;
 }
 
 /**
@@ -131,4 +108,25 @@ function normalizeLocation(location) {
     .replace(__PATH_PREFIX__, '')
     .split('/')
     .filter(Boolean);
+}
+
+/**
+ * Helper to determine if the location from @reach/router has the given path
+ * anywhere in its pathname. Useful for top-level navigational items
+ */
+function locationContainsPath(location, path) {
+  return normalizeLocation(location).indexOf(path) !== -1;
+}
+
+/**
+ * Helper to determine if the location from @reach/router has the given path at
+ * the given index.
+ */
+function locationContainsPathAtIndex(location, path, index) {
+  // An array of the various url parts split at the '/'s
+  const destructoredUrlArray = normalizeLocation(location);
+  if (index < 0) {
+    return destructoredUrlArray[destructoredUrlArray.length + index] === path;
+  }
+  return destructoredUrlArray[index] === path;
 }
