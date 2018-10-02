@@ -85,8 +85,6 @@ export default ({ data, pageContent }) => {
     'page-content--component': post.frontmatter.label === 'Component'
   });
 
-  console.log(post.frontmatter.label);
-
   if (isInternal) {
     return (
       <Layout>
