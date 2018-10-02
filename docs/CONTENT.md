@@ -71,8 +71,9 @@ You can create an inline link by wrapping link text in brackets [ ], and then wr
 
 `[Carbon](http://www.carbondesignsystem.com/)`
 
-If you need a link to open in a new window you will have to use standard html. You will also need to wrap the block of text in either a `<p>` or `<li>` tag.
-`<p>This is a link to <a href="http://www.carbondesignsystem.com" target="_blank">Carbon</a></p>`
+If you need a link to open in a new window you will have to use standard html to target the new window.
+
+`<a href="http://www.carbondesignsystem.com" target="_blank">Carbon</a></p>`
 
 ### Images
 
