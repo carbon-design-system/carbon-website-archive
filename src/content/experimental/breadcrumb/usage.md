@@ -1,7 +1,7 @@
 ---
 label: Experimental
 title: Breadcrumb
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
 ## Usage

@@ -1,6 +1,7 @@
 ---
 label: Experimental
 title: 2x Grid
+internal: true
 ---
 
 <page-intro>

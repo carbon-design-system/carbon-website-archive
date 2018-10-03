@@ -48,6 +48,14 @@ export default class SideNavItem extends React.Component {
         'side-nav__sub-nav-item--active': isNavItemActive,
       });
 
+      const { GATSBY_CARBON_ENV } = process.env;
+      const hideInternal =
+        GATSBY_CARBON_ENV !== 'internal' && subItems[item].internal;
+
+      if (hideInternal) {
+        return '';
+      }
+
       return (
         <li className={subNavClasses} key={item}>
           <Link
