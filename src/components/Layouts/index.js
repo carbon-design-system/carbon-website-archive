@@ -21,7 +21,7 @@ class Layout extends React.Component {
     isFinal: false,
   };
 
-  componentWillMount() {
+  componentDidMount() {
     this.checkWidth();
   }
 
