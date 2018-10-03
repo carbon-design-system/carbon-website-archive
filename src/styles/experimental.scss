@@ -18,10 +18,6 @@ $feature-flags: (
   @import 'carbon-components/src/globals/scss/styles';
 }
 
-.page.iconography--experimental {
-  max-width: 100%;
-}
-
 .iconography--experimental .icon-container {
   width: 100%;
 }
