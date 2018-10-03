@@ -1,7 +1,7 @@
 ---
 label: Experimental
 title: Text Input
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
 ## General guidelines
