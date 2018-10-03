@@ -72,19 +72,23 @@ class Layout extends React.Component {
   };
 
   checkWidth = () => {
-    const width = window.innerWidth;
-    if (width < 1024) {
-      this.setState({
-        isOpen: false,
-      });
-    }
-    document.addEventListener('keydown', evt => {
-      if (evt.which === 27 && this.state.isOpen) {
+    if (typeof window !== 'undefined') {
+      const width = window.innerWidth;
+
+      if (width < 1024) {
         this.setState({
           isOpen: false,
         });
       }
-    });
+
+      document.addEventListener('keydown', evt => {
+        if (evt.which === 27 && this.state.isOpen) {
+          this.setState({
+            isOpen: false,
+          });
+        }
+      });
+    }
   };
 
   render() {
