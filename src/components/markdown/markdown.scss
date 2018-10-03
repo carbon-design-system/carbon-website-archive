@@ -91,6 +91,7 @@
 //----------------------------
 
 .page-h3,
+.page-content h3,
 .component-docs h3 {
   @include typescale('delta');
   color: $brand-01;
@@ -149,7 +150,7 @@
   background: $ui-02;
 }
 
-.page-content--component .gatsby-resp-image-background-image {
+.gatsby-resp-image-background-image {
   background: transparent!important; // Need important to override inline style added by gatsby-remark-images
 }
 
