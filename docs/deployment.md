@@ -1,5 +1,7 @@
 # Deployments
 
+Update date in Footer.js component
+
 ## Internal
 
 ```bash
@@ -20,4 +22,29 @@ ibmcloud cf install-plugin blue-green-deploy -r CF-Community
 ibmcloud cf blue-green-deploy carbon-website-internal \
   -f .circleci/manifest.internal.yml \
   --delete-old-apps
+```
+
+## External
+
+
+```bash
+# Build the external site
+yarn build:external
+
+** we need a testing step in here to view **
+
+# Login
+
+cf login -sso -a https://api.ng.bluemix.net -o carbon-design-system -s production
+
+cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org
+cf install-plugin blue-green-deploy -f -r CF-Community
+
+cf p carbon-website -f .circleci/manifest.external.yml --delete-old-apps
+
+or
+
+cf login -sso -a https://api.ng.bluemix.net -o carbon-design-system -s production
+cf push carbon-website -f .circleci/manifest.external.yml
+
 ```
