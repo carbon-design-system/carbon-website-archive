@@ -25,6 +25,6 @@ Keep building with Carbon! The best way to ensure a smooth transition is to adhe
 
 ### Updates
 
-**Complete:** New IBM Design Language fonts, glyphs, and experimental grid have been integrated into Carbon as of 9/13/18.
+**Complete:** New IBM Design Language fonts, glyphs, and experimental grid have been integrated into Carbon.
 
-**Coming soon:** More icons, colors, and page geometry
+**In Progress:** More icons, colors, page geometry, [experimental components](/experimental/accordion/code) and [UI Shell](/experimental/ui-shell/code). 
