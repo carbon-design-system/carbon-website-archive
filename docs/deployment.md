@@ -31,7 +31,10 @@ ibmcloud cf blue-green-deploy carbon-website-internal \
 # Build the external site
 yarn build:external
 
-# Test that everything looks ok
+# Run build locally 
+npx serve public
+
+# Test local production build of website
 http://localhost:5000
 
 ## Login and push
