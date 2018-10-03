@@ -191,13 +191,16 @@
         "title": "About"
       },
       "color": {
-        "title": "Color"
+        "title": "Color",
+        "internal": true
       },
       "layout": {
-        "title": "Layout"
+        "title": "Layout",
+        "internal": true
       },
       "iconography/library": {
-        "title": "Iconography"
+        "title": "Iconography",
+        "internal": true
       },
       "ui-shell/code": {
         "title": "UI Shell"
