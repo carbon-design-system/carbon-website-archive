@@ -55,8 +55,8 @@ body {
     padding: 0 0 $spacing-md;
   }
 
-  // All em on Markdown pages
-  em {
+  // All em on Markdown pages after images
+  .gatsby-resp-image-link + em {
     font-size: .875em;
     color: $text-02;
   }
