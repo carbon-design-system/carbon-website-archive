@@ -1,4 +1,4 @@
-# Carbon Design System --
+# Carbon Design System -
 
 This is the [Carbon Design System website](http://www.carbondesignsystem.com) which is built using GatsbyJS.
 
