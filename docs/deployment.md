@@ -31,9 +31,24 @@ ibmcloud cf blue-green-deploy carbon-website-internal \
 # Build the external site
 yarn build:external
 
-** we need a testing step in here to view **
+# Test that everything looks ok
+http://localhost:5000
 
-ibmcloud --sso -a https://api.ng.bluemix.net -o carbon-design-system -s production
-ibmcloud cf push -f .circleci/manifest.external.yml
+## Login and push
+
+ibmcloud login \
+  --sso
+  -a https://api.ng.bluemix.net \
+  -o carbon-design-system \
+  -s production
+
+# Make sure you have blue-green-deploy installed as a plugin for cf
+ibmcloud cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org
+ibmcloud cf install-plugin blue-green-deploy -r CF-Community
+
+# Deploy the external website
+ibmcloud cf blue-green-deploy carbon-website \
+  -f .circleci/manifest.external.yml \
+  --delete-old-apps
 
 ```
