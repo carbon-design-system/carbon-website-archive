@@ -14,6 +14,7 @@ import ClickTile from '../components/ClickableTile';
 import Example from '../components/Example';
 import ColorCard from '../components/ColorCard';
 import IconLibrary from '../components/IconLibrary';
+import IconLibraryExperimental from '../components/IconLibrary/IconLibraryExperimental';
 import TypeScaleTable from '../components/TypeScaleTable';
 import TypeStylesTable from '../components/TypeStylesTable';
 import TypeWeightTable from '../components/TypeWeightTable';
@@ -56,6 +57,7 @@ const renderAst = new rehypeReact({
     'color-block': ColorBlock,
     'color-card': ColorCard,
     'icon-library': IconLibrary,
+    'icon-library-experimental': IconLibraryExperimental,
     'type-scale-table': TypeScaleTable,
     'type-weight-table': TypeWeightTable,
     'type-styles-table': TypeStylesTable,

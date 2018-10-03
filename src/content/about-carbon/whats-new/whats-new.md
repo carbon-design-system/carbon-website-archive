@@ -2,8 +2,17 @@
 label: About Carbon
 title: What's New
 ---
+<page-intro>October 2019</page-into>
 
-<page-intro>June 4, 2018: V9 Release</page-into>
+## Experimental
+
+A new [Experimental](/experimental/about/overview) section has been added to the website. Experimental components, designs, patterns, and other resources are work that is still under development.
+
+ **Experimental components, designs, and other resources are presented for testing and feedback. They are not intended for production use.**
+
+<hr class="divider">
+
+**June 4, 2018: V9 Release**
 
 ## Website
 
