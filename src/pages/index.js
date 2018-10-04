@@ -350,7 +350,7 @@ class IndexPage extends React.Component {
             <ul className="overview-page__list">
               <li className="overview-page__list-item">
                 <Link
-                  to="/getting-started"
+                  to="/getting-started/designers"
                   aria-label="Getting started"
                   className="list-item__link">
                   <img src={gettingStartedIll} alt="" />
@@ -366,8 +366,8 @@ class IndexPage extends React.Component {
               </li>
               <li className="overview-page__list-item">
                 <Link
-                  to="/style"
-                  aria-label="Style"
+                  to="/guidelines/accessibility/overview"
+                  aria-label="Guidelines"
                   className="list-item__link">
                   <img src={styleIll} alt="" />
                   <div className="list-item__info">
