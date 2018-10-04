@@ -30,7 +30,6 @@ module.exports = {
         icon: `src/content/global/images/favicon-32.png`, // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
