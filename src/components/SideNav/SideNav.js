@@ -29,6 +29,9 @@ export default class SideNav extends React.Component {
     });
 
   render() {
+    const { GATSBY_CARBON_ENV } = process.env;
+    const isInternal = GATSBY_CARBON_ENV == 'internal';
+
     const { isOpen, isFinal } = this.props;
 
     const classNames = classnames({
@@ -57,10 +60,19 @@ export default class SideNav extends React.Component {
               />
               <nav className={classNames}>
                 <div className="side-nav--header">
-                  <Link to="/" className="side-nav__logo">
-                    <span>Carbon</span> Design System
-                  </Link>
-                  <GlobalSearch />
+                  
+                  {isInternal ? (
+                    <Link to="/" className="side-nav__logo">
+                      <span>IBM</span> Design System
+                    </Link>
+                  ) : (
+                    <>
+                      <Link to="/" className="side-nav__logo">
+                        <span>Carbon</span> Design System
+                      </Link>
+                      <GlobalSearch />
+                    </>
+                  )}
                 </div>
                 <div className="side-nav--items">
                   <ul className="side-nav__nav-items">{navItems}</ul>

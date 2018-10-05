@@ -400,3 +400,20 @@
   left: 4rem;
   z-index: 1;
 }
+
+
+// Internal only
+.overview-page__banner.overview-page__banner--internal {
+  background: #000000;
+  color: $color__white;
+  align-items: normal;
+  height: auto;
+}
+
+.overview-page__banner--internal {
+  .banner__logo {
+    text-transform: none;
+    padding: 320px $spacing-xl $spacing-xl $spacing-xl;
+    font-size: 138px;
+  }
+}
