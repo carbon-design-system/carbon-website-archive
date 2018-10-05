@@ -103,6 +103,16 @@
       "experimental": "not-available"
     },
     {
+      "item": "Inline Loading",
+      "added": "2.0.0",
+      "tag": "updated",
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "not-available"
+    },
+    {
       "item": "Link",
       "added": "2.0.0",
       "status": "ready",
