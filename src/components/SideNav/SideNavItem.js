@@ -1,10 +1,29 @@
-import { Location } from '@reach/router';
 import React from 'react';
+import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { Link } from 'gatsby';
 import { Icon } from 'carbon-components-react';
 
 export default class SideNavItem extends React.Component {
+  static propTypes = {
+    /**
+     * The data structure for the nav item.
+     */
+    item: PropTypes.shape({
+      title: PropTypes.string,
+    }),
+
+    /**
+     * The key of the nav item.
+     */
+    itemSlug: PropTypes.string,
+
+    /**
+     * The location object.
+     */
+    location: PropTypes.object,
+  };
+
   state = {
     open: false,
   };
@@ -30,17 +49,11 @@ export default class SideNavItem extends React.Component {
   };
 
   renderSubNavItems = (subItems, location, itemSlug) => {
-    // Default to an empty array so we don't run normalize on a location we
-    // don't have yet when rendering the /index.
-    const normalizedPathArray = location ? normalizeLocation(location) : [];
-
     return Object.keys(subItems).map(item => {
       // Check that the itemSlug (top most nav item w/ chidlren) matches the
       // zeroeth indexed normalized path array item. This is so we avoid conflicting
       // children with similar names but disimilar parents.
-      const isNavItemActive =
-        normalizedPathArray[0] === itemSlug &&
-        locationContainsPathAtIndex(location, item, 1);
+      const isNavItemActive = locationContainsPath(location, [itemSlug, item]);
 
       // If the users selects a route within a dropdown we style the "active" nav
       // item accordingly
@@ -110,31 +123,27 @@ export default class SideNavItem extends React.Component {
  * make sure to clean the __PATH_PREFIX__ defined in gatsby-config.js so that
  * we can work with our paths as if they did not have that prefix. This is
  * useful for asserting locations in the pathname for our nav sub-items
+ * @param {string|string[]} path The path(s).
+ * @returns {string[]} The path tokens, with empty ones filtered out.
  */
-function normalizeLocation(location) {
-  return location.pathname
-    .replace(__PATH_PREFIX__, '')
-    .split('/')
-    .filter(Boolean);
+function normalizePath(path) {
+  const paths = Array.isArray(path) ? path : [path];
+  return paths.reduce((a, item) => [
+    ...a,
+    ...item.replace(__PATH_PREFIX__, '')
+      .split('/')
+      .filter(Boolean),
+  ], []);
 }
 
 /**
  * Helper to determine if the location from @reach/router has the given path
- * anywhere in its pathname. Useful for top-level navigational items
+ * @param {Object} location The location object.
+ * @param {string|string[]} path The path(s).
+ * @returns {boolean} `true` if the location from @reach/router has the given path(s).
  */
 function locationContainsPath(location, path) {
-  return normalizeLocation(location).indexOf(path) !== -1;
-}
-
-/**
- * Helper to determine if the location from @reach/router has the given path at
- * the given index.
- */
-function locationContainsPathAtIndex(location, path, index) {
-  // An array of the various url parts split at the '/'s
-  const destructoredUrlArray = normalizeLocation(location);
-  if (index < 0) {
-    return destructoredUrlArray[destructoredUrlArray.length + index] === path;
-  }
-  return destructoredUrlArray[index] === path;
+  const paths = normalizePath(path);
+  const locationParts = normalizePath(location.pathname);
+  return paths.every((path, i) => path === locationParts[i]);
 }
