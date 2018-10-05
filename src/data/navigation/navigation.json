@@ -122,6 +122,9 @@
       "form/code": {
         "title": "Form"
       },
+      "inline-loading/code": {
+        "title": "Inline Loading"
+      },
       "link/code": {
         "title": "Link"
       },
