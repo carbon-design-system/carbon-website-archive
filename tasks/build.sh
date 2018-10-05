@@ -1,5 +1,7 @@
 #!/bin/bash
 
+PATH_PREFIX=${1:-'/design/product'}
+
 function print_help {
   echo "Usage: ${0} [OPTIONS]"
   echo ""
@@ -57,7 +59,7 @@ case ${BUILD_ENV} in
     GATSBY_CARBON_ENV=$BUILD_ENV $(yarn bin)/gatsby build --prefix-paths
     ;;
   "internal")
-    GATSBY_CARBON_ENV=$BUILD_ENV PATH_PREFIX='/design/product' $(yarn bin)/gatsby build --prefix-paths
+    GATSBY_CARBON_ENV=$BUILD_ENV PATH_PREFIX=$PATH_PREFIX $(yarn bin)/gatsby build --prefix-paths
 
     # Temporary hack for our Staticfile deployments. We need to support
     # /design/product for our internal deployment. As a result, we need the
