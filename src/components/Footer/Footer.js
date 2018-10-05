@@ -13,34 +13,6 @@ class Footer extends Component {
     copied: false,
   };
 
-  getLastUpdate = () => {
-    const lastUpdatedDate = new Date(); // Date('07/25/2018') UPDATE BEFORE CF PUSH
-    const months = [
-      'January',
-      'February',
-      'March',
-      'April',
-      'May',
-      'June',
-      'July',
-      'August',
-      'September',
-      'October',
-      'November',
-      'December',
-    ];
-    const formattedDate = `${
-      months[lastUpdatedDate.getMonth()]
-    } ${lastUpdatedDate.getDate()}, ${lastUpdatedDate.getFullYear()} at ${lastUpdatedDate.toLocaleTimeString(
-      [],
-      {
-        hour: '2-digit',
-        minute: '2-digit',
-      }
-    )}`;
-    return formattedDate;
-  };
-
   handleClick = () => {
     this.setState({
       copied: true,
@@ -53,6 +25,7 @@ class Footer extends Component {
   };
 
   render() {
+    const lastUpdated = 'October 3, 2018';
     const dribbble = (
       <svg
         className="social-media__icon"
@@ -111,7 +84,6 @@ class Footer extends Component {
     const { isExpanded } = this.props;
     const version = Packages.dependencies['carbon-components'];
     const reactVersion = Packages.dependencies['carbon-components-react'];
-    const lastUpdated = this.getLastUpdate();
     const currentYear = new Date().getFullYear();
     const footerClasses = classNames({
       'page-footer': true,
