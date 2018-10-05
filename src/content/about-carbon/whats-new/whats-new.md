@@ -2,7 +2,7 @@
 label: About Carbon
 title: What's New
 ---
-<page-intro>October 2019</page-into>
+<page-intro>October 2018</page-into>
 
 ## Experimental
 
