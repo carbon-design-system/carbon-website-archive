@@ -11,18 +11,26 @@ import favicon32 from '../../content/global/images/favicon-32.png';
 import '../../styles/index.scss';
 import '../../styles/experimental.scss';
 
+const mobileBreakPoint = 1024;
+// check for the existence of window to avoid server rendering errors.
+const windowWidth = typeof window !== 'undefined' ? window.innerWidth : null;
+
 class Layout extends React.Component {
   static propTypes = {
     children: PropTypes.any,
   };
 
   state = {
-    isOpen: true,
+    // If we're in a "mobile" view the nav should render closed.
+    isOpen: windowWidth > mobileBreakPoint,
     isFinal: false,
   };
 
-  componentWillMount() {
-    this.checkWidth();
+  componentDidMount() {
+    // check for the existence of document to avoid server rendering errors.
+    if (typeof document !== 'undefined') {
+      this.addEscKeyHandler();
+    }
   }
 
   onToggleBtnClick = () => {
@@ -71,24 +79,14 @@ class Layout extends React.Component {
     });
   };
 
-  checkWidth = () => {
-    if (typeof window !== 'undefined') {
-      const width = window.innerWidth;
-
-      if (width < 1024) {
+  addEscKeyHandler = () => {
+    document.addEventListener('keydown', evt => {
+      if (evt.which === 27 && this.state.isOpen) {
         this.setState({
           isOpen: false,
         });
       }
-
-      document.addEventListener('keydown', evt => {
-        if (evt.which === 27 && this.state.isOpen) {
-          this.setState({
-            isOpen: false,
-          });
-        }
-      });
-    }
+    });
   };
 
   render() {
