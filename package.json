@@ -23,7 +23,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 9001 -c .storybook",
     "storybook:build": "build-storybook -c .storybook -o public/docs",
-    "deploy": "gatsby build && gh-pages -d public"
+    "deploy:internal": "yarn build:internal && cd public && surge",
+    "deploy:external": "yarn build:external && cd public && surge"
   },
   "dependencies": {
     "@carbon/icons-react": "^0.0.1-alpha.2",
@@ -81,7 +82,8 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "sass-loader": "^7.0.3",
-    "storybook-readme": "^3.3.0"
+    "storybook-readme": "^3.3.0",
+    "surge": "^0.20.1"
   },
   "babel": {
     "presets": [
