@@ -8,7 +8,7 @@ tabs: ['Code', 'Usage']
 
 1.  [UI Shell Zones](#ui-shell-zones)
 -  [UI Shell Components](#ui-shell-components)
--  [Side Navigation](#side-navigation)
+-  [Secondary Navigation](#secondary-navigation)
 -  [UI Shell Theming](#ui-shell-theming)
 
 ## UI Shell Zones
@@ -88,7 +88,7 @@ Product footers are persistent and attached to the bottom of the browser window.
 
 ![Footer](images/footer-1.png) -->
 
-## Side Navigation
+## Secondary Navigation
 
 If a secondary level of navigation is needed then a side nav can be nested below the header. There are several configurations of the side-nav but only one configuration should be used per product section.
 
