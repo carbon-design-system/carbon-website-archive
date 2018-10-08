@@ -76,7 +76,7 @@ These panels contain product-level navigation and can be either fixed-width or f
 
 These panels are at the same elevation as the primary content zone of the page, and can be either dismissable or fully fixed.
 
-![Header](images/on-page-panel.png)
+![On-Page Panel](images/on-page-panel.png)
 
 Use an on-page panel when:
 
