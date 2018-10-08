@@ -62,9 +62,13 @@ As a header scales down to fit smaller screen sizes, header links and menus shou
 
 These are vertical panels that are anchored in the Header and invoked by controls on the right side of the Header. Header Panels have a consistent width, span the full height of the viewport and are flush to the right edge of the viewport. Only one Header Panel can be open at a time. The Profile and Notifications panels are examples of this element. Header Panels are always treated as [floating panels](/experimental/layout#panel-behavior).
 
+
 Use a header panel when additional content or actions associated with a header icon needs to be shown.
 
 ![Header Panel template](images/header-panel.png)
+
+More details about panel types and behaviors can be found under [Layout](../experimental/layout/#panel-behavior)
+
 
 ### Side-Nav Panels
 
@@ -95,38 +99,36 @@ If a secondary level of navigation is needed then a side nav can be nested below
 If tabs are needed on a page when using a side-nav then then tabs are secondary in hierarchy to the side-nav. There should never be persistent tabs with a side-nav being nested under the tabs. 
 
 <!-- 
-
 ### L1 Navigation Menu
 
-Some products/platforms require an additional level of navigation above the L2 side nav. The L1 menu behaves like a product selector within the platform; the L1 selection will change the active product and thus the contents of the L2 menu.
+Some products/platforms require an additional level of navigation above the side nav. The L1 menu behaves like a product selector within the platform; the L1 selection will change the active product and thus the contents of the L2 menu.
 
 The L1 Menu is accessed by clicking on the header's left-side hamburger menu. It is always styled as a floating menu.
 
 ![L1 Navigation menu](images/L1-navigation.png)
-
 -->
 
-### L2 Side-nav
+### Side-nav
 
-The Side-nav contains secondary navigation and fits below the header. It can be configured to be either fixed-width or flexible, with only one level of nested items allowed. Both L2 links and L2 Category lists can be used in the Side-nav and may be mixed together. 
+The Side-nav contains secondary navigation and fits below the header. It can be configured to be either fixed-width or flexible, with only one level of nested items allowed. Both links and category lists can be used in the Side-nav and may be mixed together. 
 
 Use a side-nav when:
 
-- there are more than 5 secondary navigation items
+- there are more than five secondary navigation items
 - you expect users to switch between secondary items frequently
 
 
 #### Side-nav Items
 
-- **L2 Link:** Links to different pages
-- **L2 Category:** A Category must contain at least two L2 links. Categories can be either collapsible or fixed. The label of a Category is never a link.
+- **Link:** Links to different pages
+- **Category:** A Category must contain at least two links. Categories can be either collapsible or fixed. The label of a Category is never a link.
 - **L1 Title Bar** (optional): contains the name of the section or page. It should link to the product's landing page or main console. This element can also include an optional L1 Menu selector element, to enable context-switching.
 
 #### Flexible Side-nav
 
-Use a Flexible Side-nav when on-page space is a priority. The Flexible Side-nav has both an expanded and collapsed state. The expanded state contains both icons and corresponding L2 text, while the collapsed state shows only the icon. The side-nav expands on hover. It can also be expanded (to a fixed state) or collapsed by clicking on the chevron icon at the bottom of the panel.
+Use a Flexible Side-nav when on-page space is a priority. The Flexible Side-nav has both an expanded and collapsed state. The expanded state contains both icons and corresponding text, while the collapsed state shows only the icon. The side-nav expands on hover. It can also be expanded (to a fixed state) or collapsed by clicking on the chevron icon at the bottom of the panel.
 
-In a Flexible Side-nav, each L2 link and L2 category list has its own corresponding icon. Side-nav icons are stacked equidistant from each other in the collapsed state, and when expanded are aligned with their corresponding L2 labels.
+In a Flexible Side-nav, each link and category list has its own corresponding icon. Side-nav icons are stacked equidistant from each other in the collapsed state, and when expanded are aligned with their corresponding labels.
 
 A flexible side-nav is more friendly to responsive designs than a fixed nav. Fixed nav is best for products that have a minimum width of 672px. Consider using a flexible nav for a fully responsive solution.
 
@@ -135,19 +137,19 @@ Use a flexible side-nav when:
 - more space is needed for page content
 - a fully responsive solution is needed 
 
+![Side-nav Panel](images/side-nav-panel.png)
+
 #### Fixed Side-nav
 
-A fixed Side-nav contains only L2 Links and L2 Category lists, no icons, and cannot be collapsed.
+A fixed Side-nav contains only links and category lists—no icons—and cannot be collapsed.
 
 Use a fixed side-nav when:
 
 - icons cannot clearly describe the categories
 - designs are for desktop only
 
-![Header](images/side-nav-panel.png)
-
-<!--The left side navigation component can be fixed or flexible-width. It allows for two levels of nesting.
-
+<!--
+The left side navigation component can be fixed or flexible-width. It allows for two levels of nesting.
 #### L1 title bar (optional)
 
 The L1 element contains the name of the product. It should link to the product's landing page or main console. This element can also include an optional selector element, to enable context-switching.
@@ -160,12 +162,8 @@ L2 nav items can be either a Category or a Link. When clicked, L2 Categories rev
 A Category must contain at least 3 L3 Links.
 
 <mark>Side nav with L1, L2, L3 annotations.
-
 -->
 
-## Panels 
-
-Details about panel types and behaviors can be found under [Layout](../experimental/layout/#panel-behavior)
 
 <!-- 
 
@@ -193,4 +191,4 @@ This panel style is at a higher elevation than the primary content area and incl
 
 ## UI Shell Theming
 
-The UI Shell will be themeable and can be either light or dark. _More information how to apply a shell theme coming soon._
+The UI Shell will be themeable and can be either light or dark. _More information on how to apply a shell theme coming soon._
