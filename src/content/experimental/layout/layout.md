@@ -1,6 +1,6 @@
 ---
 label: Experimental
-title: 2x Grid
+title: Layout
 internal: true
 ---
 
@@ -28,7 +28,7 @@ The basic unit of 2x Grid geometry is the 8-pixel square Mini Unit. Multiples of
 
 At [breakpoint boundaries](#breakpoints), Mini Units divide the screen into a fixed master grid, and multiples of Mini Units map to [fluid grid](#fluid-grid) column widths and row heights. [Fixed boxes](#fixed-boxes) are sized in Mini Units, as are the fixed dimension of [hybrid boxes](#hybrid).
 
-[Margin](#margin) and [padding](#padding) are always applied in fixed Mini Unit multiples. Boxes are sized by applying a [sizing scale](#sizing-scale) based on either fixed Mini Units or fluid column widths, along with a core set of [aspect ratios](#aspect-ratio).
+[Margin](#margins) and [padding](#padding) are always applied in fixed Mini Unit multiples. Boxes are sized by applying a [sizing scale](#sizing-scale) based on either fixed Mini Units or fluid column widths, along with a core set of [aspect ratios](#aspect-ratio).
 
 
 ## 2x Grid Fundamentals
@@ -151,7 +151,7 @@ A grid can be formed with Fixed Boxes by tiling cards in an inline block, icons 
 
 `vimeo: https://vimeo.com/292024183`
 
-First choose a base size from the [sizing scale](#sizing-scale), then build up each Box in multiples of the base size, following recommended [aspect ratios](#aspect-ratios). A grid emerges when each tile uses a multiple of a consistent base size. Following this method ensures consistency of tile sizes even across products.
+First choose a base size from the [sizing scale](#sizing-scale), then build up each Box in multiples of the base size, following recommended [aspect ratios](#aspect-ratio). A grid emerges when each tile uses a multiple of a consistent base size. Following this method ensures consistency of tile sizes even across products.
 
 
 ### Hybrid
@@ -322,7 +322,7 @@ Aspect ratios do not apply to hybrid boxes, since one dimension is fixed and the
 ![hybrid box sample](images/hybrid_box_sample.png)
 
 
-### Visual Rhythm
+### Vertical Rhythm
 
 Use the fixed sizing scale to set vertical spacing between sections, by adding it to the top or bottom margin of a box:
 
