@@ -16,7 +16,7 @@
       "designers": {
         "title": "Designers"
       },
-      "developers/vanilla": {
+      "developers": {
         "title": "Developers"
       },
       "faq": {
@@ -27,28 +27,28 @@
       }
     }
   },
-  "contributing/designers": {
+  "contributing": {
     "title": "Contributing"
   },
   "guidelines": {
     "title": "Guidelines",
     "sub-nav": {
-      "accessibility/overview": {
+      "accessibility": {
         "title": "Accessibility"
       },
-      "content/general": {
+      "content": {
         "title": "Content"
       },
-      "color/swatches": {
+      "color": {
         "title": "Color"
       },
-      "grid/design": {
+      "grid": {
         "title": "Grid"
       },
-      "iconography/library": {
+      "iconography": {
         "title": "Iconography"
       },
-      "layer/overview": {
+      "layer": {
         "title": "Layer"
       },
       "motion": {
@@ -60,7 +60,7 @@
       "themes": {
         "title": "Themes"
       },
-      "typography/overview": {
+      "typography": {
         "title": "Typography"
       }
     }
@@ -75,7 +75,7 @@
       "user-flow": {
         "title": "User Flow"
       },
-      "service-providers/general": {
+      "service-providers": {
         "title": "Service Providers"
       },
       "principles": {
@@ -89,100 +89,100 @@
       "overview": {
         "title": "Overview"
       },
-      "accordion/code": {
+      "accordion": {
         "title": "Accordion"
       },
-      "breadcrumb/code": {
+      "breadcrumb": {
         "title": "Breadcrumb"
       },
-      "button/code": {
+      "button": {
         "title": "Button"
       },
-      "checkbox/code": {
+      "checkbox": {
         "title": "Checkbox"
       },
-      "code-snippet/code": {
+      "code-snippet": {
         "title": "Code Snippet"
       },
-      "content-switcher/code": {
+      "content-switcher": {
         "title": "Content Switcher"
       },
-      "data-table/code": {
+      "data-table": {
         "title": "Data Table"
       },
-      "date-picker/code": {
+      "date-picker": {
         "title": "Date Picker"
       },
-      "dropdown/code": {
+      "dropdown": {
         "title": "Dropdown"
       },
-      "file-uploader/code": {
+      "file-uploader": {
         "title": "File Uploader"
       },
-      "form/code": {
+      "form": {
         "title": "Form"
       },
-      "inline-loading/code": {
+      "inline-loading": {
         "title": "Inline Loading"
       },
       "link/code": {
         "title": "Link"
       },
-      "list/code": {
+      "list": {
         "title": "List"
       },
-      "loading/code": {
+      "loading": {
         "title": "Loading"
       },
-      "modal/code": {
+      "modal": {
         "title": "Modal"
       },
-      "notification/code": {
+      "notification": {
         "title": "Notification"
       },
-      "number-input/code": {
+      "number-input": {
         "title": "Number Input"
       },
-      "overflow-menu/code": {
+      "overflow-menu": {
         "title": "Overflow Menu"
       },
-      "pagination/code": {
+      "pagination": {
         "title": "Pagination"
       },
-      "progress-indicator/code": {
+      "progress-indicator": {
         "title": "Progress Indicator"
       },
-      "radio-button/code": {
+      "radio-button": {
         "title": "Radio Button"
       },
-      "search/code": {
+      "search": {
         "title": "Search"
       },
-      "select/code": {
+      "select": {
         "title": "Select"
       },
-      "slider/code": {
+      "slider": {
         "title": "Slider"
       },
-      "structured-list/code": {
+      "structured-list": {
         "title": "Structured List"
       },
-      "tabs/code": {
+      "tabs": {
         "title": "Tabs"
       },
-      "tag/code": {
+      "tag": {
         "title": "Tag"
       },
-      "text-input/code": {
+      "text-input": {
         "title": "Text Input"
       },
-      "tile/code": {
+      "tile": {
         "title": "Tile"
       },
-      "toggle/code": {
+      "toggle": {
         "title": "Toggle"
       },
-      "tooltip/code": {
+      "tooltip": {
         "title": "Tooltip"
       }
     }
@@ -190,7 +190,7 @@
   "experimental": {
     "title": "Experimental",
     "sub-nav": {
-      "about/overview": {
+      "about": {
         "title": "About"
       },
       "color": {
@@ -201,26 +201,26 @@
         "title": "Layout",
         "internal": true
       },
-      "iconography/library": {
+      "iconography": {
         "title": "Iconography",
         "internal": true
       },
-      "ui-shell/code": {
+      "ui-shell": {
         "title": "UI Shell"
       },
-      "accordion/code": {
+      "accordion": {
         "title": "Accordion"
       },
-      "breadcrumb/code": {
+      "breadcrumb": {
         "title": "Breadcrumb"
       },
-      "checkbox/code": {
+      "checkbox": {
         "title": "Checkbox"
       },
-      "link/code": {
+      "link": {
         "title": "Link"
       },
-      "text-input/code": {
+      "text-input": {
         "title": "Text Input"
       }
     }
@@ -228,25 +228,25 @@
   "data-visualization": {
     "title": "Data Visualization",
     "sub-nav": {
-      "overview/general": {
+      "overview": {
         "title": "Overview"
       },
-      "bar-graph/code": {
+      "bar-graph": {
         "title": "Bar Graph"
       },
-      "gauge/code": {
+      "gauge": {
         "title": "Gauge"
       },
-      "line-graph/code": {
+      "line-graph": {
         "title": "Line Graph"
       },
-      "pie-chart/code": {
+      "pie-chart": {
         "title": "Pie Chart"
       },
-      "scatter-plot/code": {
+      "scatter-plot": {
         "title": "Scatter Plot"
       },
-      "tooltip/code": {
+      "tooltip": {
         "title": "Tooltip"
       }
     }
