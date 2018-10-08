@@ -36,44 +36,53 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = ({ actions, graphql }) => {
   const { createRedirect, createPage } = actions;
 
-  return new Promise((resolve, reject) => {
-    graphql(`
-      {
-        allMarkdownRemark {
-          edges {
-            node {
-              fields {
-                slug
-                currentPage
-              }
-              frontmatter {
-                tabs
-              }
+  return graphql(`
+    {
+      allMarkdownRemark {
+        edges {
+          node {
+            fields {
+              slug
+              currentPage
+            }
+            frontmatter {
+              tabs
             }
           }
         }
       }
-    `).then(result => {
-      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        const slug = node.fields.slug;
-        const currentPage = node.fields.currentPage;
-        const tabs =
-          node.frontmatter.tabs === null ? [] : node.frontmatter.tabs;
-        let currentPath =
-          node.frontmatter.tabs === null
-            ? slug.slice(0, slug.lastIndexOf(currentPage))
-            : slug;
-        createPage({
-          path: currentPath,
-          component: path.resolve(`./src/templates/page.js`),
-          context: {
-            slug,
-            currentPage,
-          },
-        });
-        if (tabs.length > 1) {
-          const current = tabs[0].toLowerCase().replace(' ', '-');
+    }
+  `).then(result => {
+    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      const slug = node.fields.slug;
+      const currentPage = node.fields.currentPage;
+      const tabs =
+        node.frontmatter.tabs === null ? [] : node.frontmatter.tabs;
+      let currentPath =
+        node.frontmatter.tabs === null
+          ? slug.slice(0, slug.lastIndexOf(currentPage))
+          : slug;
+      createPage({
+        path: currentPath,
+        component: path.resolve(`./src/templates/page.js`),
+        context: {
+          slug,
+          currentPage,
+        },
+      });
+      if (tabs.length > 1) {
+        const current = tabs[0].toLowerCase().replace(' ', '-');
+        const lastIndex = currentPath.lastIndexOf(current);
+        if (lastIndex >= 0) {
           currentPath = currentPath.slice(0, currentPath.lastIndexOf(current));
+          createPage({
+            path: currentPath,
+            component: path.resolve(`./src/templates/page.js`),
+            context: {
+              slug,
+              currentPage: `${currentPath}${current}`,
+            },
+          });
           createRedirect({
             fromPath: `${currentPath}`,
             redirectInBrowser: true,
@@ -85,8 +94,7 @@ exports.createPages = ({ actions, graphql }) => {
             toPath: `${currentPath}${current}`,
           });
         }
-        resolve();
-      });
+      }
     });
   });
 };
