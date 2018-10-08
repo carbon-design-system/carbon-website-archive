@@ -52,7 +52,7 @@ As a header scales down to fit smaller screen sizes, header links and menus shou
 
 1. **Platform icon/Hamburger Menu** The platform icon appears in this space at wider browser widths, and switches to a hamburger menu to serve as overflow for header navigation links as the window narrows.
 - **Platform name** (e.g. Cloud, IoT, Watson). The platform name is always preceded by "IBM."
-- **Up to 5 optional horizontal platform-levl nav links and/or dropdown menus.** If using a dropdown, include the down-pointing chevron after the link label. Dropdowns open on click and are closed by either selecting an item in the menu, clicking outside the menu area, or clicking on the menu label.
+- **Up to 5 optional horizontal top-level nav links and/or dropdown menus.** If using a dropdown, include the down-pointing chevron after the link label. Dropdowns open on click and are closed by either selecting an item in the menu, clicking outside the menu area, or clicking on the menu label.
 - **L0 icons** These icons are typically reserved for universal functions such as search, notifications, etc.
 - **Global Switcher** The global app switcher provides a way to switch between contexts within a product/platform. The global app switcher is accessed by clicking on the 9 dot icon in the far right of the header.  
 
