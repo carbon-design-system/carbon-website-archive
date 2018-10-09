@@ -1,0 +1,64 @@
+//---------------------------------------
+// Halloween 🎃
+//---------------------------------------
+
+$halloween-background: #171717;
+$halloween-background-02: #272d33;
+$halloween-text: #f2f4f8;
+$halloween-active: #fc7b1e;
+
+body.halloween {
+  background: $halloween-background;
+  color: $halloween-text;
+
+  * {
+    color: $halloween-text;
+  }
+
+  a {
+    color: $halloween-active;
+
+    &:hover {
+      color: $halloween-text;
+    }
+  }
+
+  .side-nav {
+    background: $halloween-background;
+  }
+
+  // Active side border, active tab border
+  .side-nav__nav-item--active > a,
+  .side-nav__sub-nav-item--active,
+  .page-tabs__list li.selected {
+    border-color: $halloween-active;
+  }
+
+  .page-header {
+    background: $halloween-background-02;
+    border-color: $halloween-active;
+  }
+
+  .page-footer {
+    background: $halloween-background-02;
+
+    .page-footer__content .page-footer__text {
+      color: $halloween-text;
+    }
+  }
+
+  h1, h2, h3, h4,
+  .side-nav__nav-item a:hover, .side-nav__nav-item button:hover {
+    color: $halloween-active;
+  }
+
+  .page-h2:before,
+  h2:before {
+    background-color: $halloween-active;
+  }
+
+  .component-example__live {
+    background: $halloween-background-02;
+  }
+}
+

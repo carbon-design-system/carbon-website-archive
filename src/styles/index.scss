@@ -6,8 +6,8 @@
 //---------------------------------------
 // Page styles
 //---------------------------------------
-$bright-blue: #3c6df0;
-$dark-blue: #3057d5;
+$bright-blue: #3c6df0!default;
+$dark-blue: #3057d5!default;
 $brand-01: $dark-blue;
 
 @import 'mixins';
@@ -56,3 +56,9 @@ $brand-01: $dark-blue;
 //---------------------------------------
 @import 'prism.css';
 @import 'syntax.css';
+
+//---------------------------------------
+// Halloween 🎃
+//---------------------------------------
+
+@import 'halloween';
