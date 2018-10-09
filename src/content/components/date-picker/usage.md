@@ -14,12 +14,15 @@ tabs: ['Code', 'Usage', 'Style']
 
 <div class="image-grid">
   <div>
+    <img src="images/.png" alt=""/>
     ![Range Date Picker](images/date-picker-usage-1.png)
   </div>
   <div>
+    <img src="images/.png" alt=""/>
     ![Single Date Picker](images/date-picker-usage-2.png)
   </div>
   <div>
+    <img src="images/.png" alt=""/>
     ![Simple Date Picker](images/date-picker-usage-3.png)
   </div>
 </div>

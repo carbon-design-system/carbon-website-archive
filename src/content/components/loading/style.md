@@ -21,9 +21,11 @@ tabs: ['Code', 'Usage', 'Style']
 
 <div class="image-grid">
   <div>
+    <img src="images/.png" alt=""/>
     ![Large spinner structure measurements](images/loading-style-1.png)
   </div>
   <div>
+    <img src="images/.png" alt=""/>
     ![Small spinner structure measurements](images/loading-style-2.png)
   </div>
 </div>

@@ -95,12 +95,15 @@ The following specs are not built into the Select component but are recommended 
 
 <div class="image-grid">
   <div>
+    <img src="images/.png" alt=""/>
     ![Structure and spacing measurements for Small Select](images/select-style-4.png)
   </div>
   <div>
+    <img src="images/.png" alt=""/>
     ![Structure and spacing measurements for Small Select](images/select-style-5.png)
   </div>
 </div>
+
 _Structure and spacing measurements for Small Select | px / rem_
 
 _Examples of open and disabled Small Select states_

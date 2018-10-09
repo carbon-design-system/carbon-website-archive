@@ -98,15 +98,19 @@ The below images show how a Tooltip would respond to different amounts of data v
 
 <div class="image-grid">
   <div>
+   <img src="images/.png" alt=""/>
     ![Example of a tooltip with 3 data values](images/style-tooltip-4.png)
   </div>
   <div>
+    <img src="images/.png" alt=""/>
     ![Example of a tooltip with 4 data values](images/style-tooltip-5.png)
   </div>
   <div>
+    <img src="images/.png" alt=""/>
     ![Example of a tooltip with 4 data values](images/style-tooltip-6.png)
   </div>
   <div>
+    <img src="images/.png" alt=""/>
     ![Example of a tooltip with 5 data values](images/style-tooltip-3.png)
   </div>
 </div>
@@ -115,9 +119,11 @@ _Examples of Tooltip responsiveness for different data value amounts_
 
 <div class="image-grid">
   <div>
+    <img src="images/.png" alt=""/>
     ![Example of max-width labels, one column](images/style-tooltip-7.png)
   </div>
   <div>
+    <img src="images/.png" alt=""/>
     ![Example of max-width labels, one column](images/style-tooltip-8.png)
   </div>
 </div>

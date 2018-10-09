@@ -17,12 +17,15 @@ tabs: ['Code', 'Usage', 'Style']
 
 <div class="image-grid">
   <div>
+    <img src="images/.png" alt=""/>
     ![Overflow menu text hover example](images/overflow-menu-style-1.png)
   </div>
   <div>
+    <img src="images/.png" alt=""/>
     ![Overflow menu warning hover example](images/overflow-menu-style-2.png)
   </div>
 </div>
+
 _Text and warning hover examples for Overflow Menu_
 
 ## Typography
