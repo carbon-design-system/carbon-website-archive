@@ -5,7 +5,8 @@
 $halloween-background: #171717;
 $halloween-background-02: #272d33;
 $halloween-text: #f2f4f8;
-$halloween-active: #fc7b1e;
+$halloween-brand-01: #fc7b1e;
+$halloween-brand-02: #00ef48;
 
 body.halloween {
   background: $halloween-background;
@@ -16,7 +17,7 @@ body.halloween {
   }
 
   a {
-    color: $halloween-active;
+    color: $halloween-brand-01;
 
     &:hover {
       color: $halloween-text;
@@ -31,12 +32,12 @@ body.halloween {
   .side-nav__nav-item--active > a,
   .side-nav__sub-nav-item--active,
   .page-tabs__list li.selected {
-    border-color: $halloween-active;
+    border-color: $halloween-brand-01;
   }
 
   .page-header {
     background: $halloween-background-02;
-    border-color: $halloween-active;
+    border-color: $halloween-brand-01;
   }
 
   .page-footer {
@@ -49,12 +50,12 @@ body.halloween {
 
   h1, h2, h3, h4,
   .side-nav__nav-item a:hover, .side-nav__nav-item button:hover {
-    color: $halloween-active;
+    color: $halloween-brand-01;
   }
 
   .page-h2:before,
   h2:before {
-    background-color: $halloween-active;
+    background-color: $halloween-brand-01;
   }
 
   .component-example__live {
