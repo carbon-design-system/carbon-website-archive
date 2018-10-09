@@ -206,4 +206,10 @@
   margin-bottom: $spacing-md;
   display: flex;
   justify-content: space-between;
+  border-color: $brand-01;
+  color: $brand-01;
+
+  &:hover {
+    background: $brand-01;
+  }
 }
