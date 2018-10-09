@@ -404,16 +404,18 @@
 
 // Internal only
 .overview-page__banner.overview-page__banner--internal {
-  background: #000000;
-  color: $color__white;
+  background: #171717;
+  color: #F3F3F3;
   align-items: normal;
-  height: auto;
-}
+  height: 256px;
+  display: flex;
+  justify-content: flex-end;
+}   
 
 .overview-page__banner--internal {
   .banner__logo {
     text-transform: none;
-    padding: 320px $spacing-xl $spacing-xl $spacing-xl;
-    font-size: 138px;
+    padding: 0 0 32px 100px;
+    font-size: 48px;
   }
 }

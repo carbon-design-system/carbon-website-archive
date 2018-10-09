@@ -24,7 +24,7 @@ const sectionHeader = isInternal ? (
     className="overview-page__banner overview-page__banner--internal"
     aria-label="overview page banner">
     <h1 className="banner__logo">
-      Design System 
+      Product Design
     </h1>
   </section>
 ) : (

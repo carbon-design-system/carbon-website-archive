@@ -5,11 +5,11 @@
   @include typescale('zeta');
   @include layer('temporary-nav');
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; 
   background-color: $ui-01;
   border-right: 2px solid $ui-02;
   width: 12.5rem;
+  width: rem(240px);
   height: 100%;
   padding: $spacing-md 0;
   position: fixed;
@@ -64,13 +64,12 @@
 //===================
 .side-nav__logo {
   @include typescale('epsilon');
-  width: 100%;
   display: inline-block;
   color: $text-01;
   text-decoration: none;
   font-weight: 400;
   line-height: 1.2;
-  margin: $spacing-xl 0 $spacing-md;
+  margin: $spacing-xl $spacing-md $spacing-md 20px;
   white-space: nowrap;
   padding: 0 $spacing-md 0 0;
 

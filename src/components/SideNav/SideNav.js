@@ -63,7 +63,7 @@ export default class SideNav extends React.Component {
                   
                   {isInternal ? (
                     <Link to="/" className="side-nav__logo">
-                      <span>IBM</span> Design System
+                      <span>IBM</span> Product Design
                     </Link>
                   ) : (
                     <>
