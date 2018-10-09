@@ -87,6 +87,21 @@ Smaller image w/ text wrapping
 
 ![Example](https://user-images.githubusercontent.com/2753488/45236528-b02cb980-b2a1-11e8-9e81-af4ec353d3e9.png)
 
+#### Image Grid
+
+Image grids are used on component pages, usually under the "Style" tab to display a group of images in a grid. See the button page for an example. 
+
+```
+<div class="image-grid">
+  <div>
+    <img src="images/button-style-7.png" alt="Structure for a Primary Button"/>
+  </div>
+  <div>
+    <img src="images/button-style-8.png" alt="Structure for a small Primary Button"/>
+  </div>
+</div>
+```
+
 ### Lists
 
     * This is a bulleted list
