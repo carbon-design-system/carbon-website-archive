@@ -404,8 +404,8 @@
 
 // Internal only
 .overview-page__banner.overview-page__banner--internal {
-  background: #171717;
-  color: #F3F3F3;
+  background: $ibm-colors__gray--100;
+  color: $ibm-colors__gray--10;
   align-items: normal;
   height: 256px;
   display: flex;
