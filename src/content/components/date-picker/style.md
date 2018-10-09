@@ -80,18 +80,19 @@ Labels should be set in sentence case, with only the first word in a phrase and 
 
 <div class="image-grid">
   <div>
-    ![Structure for Simple & Single Date Pickers](images/date-picker-style-4.png)
+    <img src="images/date-picker-style-4.png" alt="Structure for Simple & Single Date Pickers"/>
   </div>
   <div>
-    ![Spacing for Simple & Single Date Pickers](images/date-picker-style-5.png)
+    <img src="images/date-picker-style-5.png" alt="Spacing for Simple & Single Date Pickers"/>
   </div>
   <div>
-    ![Structure for Simple & Single Date Pickers](images/date-picker-style-6.png)
+    <img src="images/date-picker-style-6.png" alt="Structure for Simple & Single Date Pickers"/>
   </div>
   <div>
-    ![Spacing for Simple & Single Date Pickers](images/date-picker-style-7.png)
+    <img src="images/date-picker-style-7.png" alt="Spacing for Simple & Single Date Pickers"/>
   </div>
 </div>
+
 _Structure and spacing for Simple & Single Date Pickers | px / rem_
 
 ### Range Date Picker
@@ -125,10 +126,11 @@ There are two types of time pickers; a 12-hour and 24-hour time picker. The 12-h
 
 <div class="image-grid">
   <div>
-    ![Structure for a Time Picker](images/time-picker-style-1.png)
+    <img src="images/time-picker-style-1.png" alt="Structure for a Time Picker"/>
   </div>
   <div>
-    ![Spacing for a Time Picker](images/time-picker-style-2.png)
+    <img src="images/time-picker-style-2.png" alt="Spacing for a Time Picker"/>
   </div>
 </div>
+
 _Structure and spacing for a Time Picker | px / rem_

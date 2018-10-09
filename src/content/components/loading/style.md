@@ -21,12 +21,10 @@ tabs: ['Code', 'Usage', 'Style']
 
 <div class="image-grid">
   <div>
-    <img src="images/.png" alt=""/>
-    ![Large spinner structure measurements](images/loading-style-1.png)
+    <img src="images/loading-style-1.png" alt="Large spinner structure measurements"/>
   </div>
   <div>
-    <img src="images/.png" alt=""/>
-    ![Small spinner structure measurements](images/loading-style-2.png)
+    <img src="images/loading-style-2.png" alt="Small spinner structure measurements"/>
   </div>
 </div>
 
@@ -36,8 +34,6 @@ _Structure measurements for small and large loading spinner | px / rem_
 
 The large Loading spinner should appear centered over a page or content that it is loading. Please note that the top-level navigation is not included in the page loading overlay.
 
-_
 ![Large spinner in context example](images/loading-style-4.png)
-_
 
 _Example of a large loading spinner in product context_

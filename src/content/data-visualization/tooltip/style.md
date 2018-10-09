@@ -43,11 +43,9 @@ Width varies based on content length.
 | Height            | 26  | 1.625 |
 | Padding: Internal | 10  | 0.625 |
 
----
-
----
-
-> ![Example of a Small Tooltip](images/style-tooltip-1.png)
+<div class="image-component">
+    <img src="images/style-tooltip-1.png" alt="Example of a Small Tooltip" />
+</div>
 
 _Example of a Small Tooltip_
 
@@ -62,11 +60,9 @@ Width varies based on content length.
 | Color bar           | 4   | -     |
 | Maximum label width | 120 | 7.5   |
 
----
-
----
-
-> ![Example of a Medium Tooltip](images/style-tooltip-2.png)
+<div class="image-component">
+    <img src="images/style-tooltip-2.png" alt="Example of a Medium Tooltip" />
+</div>
 
 _Example of a Medium Tooltip_
 
@@ -84,34 +80,28 @@ Width varies based on content length.
 | Color bar                         | 4   | -     |
 | Maximum label width               | 120 | 7.5   |
 
----
-
----
-
-> ![Example of a Large Tooltip](images/style-tooltip-3.png)
+<div class="image-component">
+    <img src="images/style-tooltip-3.png" alt="Example of a Large Tooltip" />
+</div>
 
 _Example of a Large Tooltip_
 
 ## Tooltip responsiveness
 
-The below images show how a Tooltip would respond to different amounts of data values. It also shows how the width of Tooltip changes when a label is at its max-width.
+The below images show how a Tooltip would respond to different amounts of data values. It also shows how the width of Tooltip changes when a label is at its max-widtgit h.
 
 <div class="image-grid">
   <div>
-   <img src="images/.png" alt=""/>
-    ![Example of a tooltip with 3 data values](images/style-tooltip-4.png)
+   <img src="images/style-tooltip-4.png" alt="Example of a tooltip with 3 data values"/>
   </div>
   <div>
-    <img src="images/.png" alt=""/>
-    ![Example of a tooltip with 4 data values](images/style-tooltip-5.png)
+    <img src="images/style-tooltip-5.png" alt="Example of a tooltip with 4 data values"/>
   </div>
   <div>
-    <img src="images/.png" alt=""/>
-    ![Example of a tooltip with 4 data values](images/style-tooltip-6.png)
+    <img src="images/style-tooltip-6.png" alt="Example of a tooltip with 4 data values"/>
   </div>
   <div>
-    <img src="images/.png" alt=""/>
-    ![Example of a tooltip with 5 data values](images/style-tooltip-3.png)
+    <img src="images/style-tooltip-3.png" alt="Example of a tooltip with 5 data values"/>
   </div>
 </div>
 
@@ -119,12 +109,10 @@ _Examples of Tooltip responsiveness for different data value amounts_
 
 <div class="image-grid">
   <div>
-    <img src="images/.png" alt=""/>
-    ![Example of max-width labels, one column](images/style-tooltip-7.png)
+    <img src="images/style-tooltip-7.png" alt="Example of max-width labels, one colum"/>
   </div>
   <div>
-    <img src="images/.png" alt=""/>
-    ![Example of max-width labels, one column](images/style-tooltip-8.png)
+    <img src="images/style-tooltip-8.png" alt="Example of max-width labels, one column"/>
   </div>
 </div>
 

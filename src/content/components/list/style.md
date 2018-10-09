@@ -32,12 +32,10 @@ Level 1 unordered list points are bulleted while Level 2 points are marked with 
 
 <div class="image-grid">
   <div>
-    <img src="images/.png" alt=""/>
-    ![Structure and spacing measurements for ordered and unordered lists](images/list-style-1.png)
+    <img src="images/list-style-1.png" alt="Structure and spacing measurements for ordered and unordered lists"/>
   </div>
   <div>
-    <img src="images/.png" alt=""/>
-    ![Example of ordered list](images/list-style-2.png)
+    <img src="images/list-style-2.png" alt="Example of ordered list"/>
   </div>
 </div>
 

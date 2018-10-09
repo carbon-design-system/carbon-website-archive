@@ -87,6 +87,16 @@ Smaller image w/ text wrapping
 
 ![Example](https://user-images.githubusercontent.com/2753488/45236528-b02cb980-b2a1-11e8-9e81-af4ec353d3e9.png)
 
+#### Image Component
+Image components are used on component pages under the Style and Usage tabs to display an image with padding around it and a light background color. See the tooltip page for an examples
+
+```
+<div class="image-component">
+    <img src="images/tooltip-style-1.png" alt="Closed and open states for a Tooltip" />
+</div>
+
+```
+
 #### Image Grid
 
 Image grids are used on component pages, usually under the "Style" tab to display a group of images in a grid. See the button page for an example. 
