@@ -156,6 +156,7 @@
 
 .page-content--component .gatsby-resp-image-image {
   box-shadow: none!important; // Need important to override inline style added by gatsby-remark-images
+  border: none!important;
 }
 
 //----------------------------

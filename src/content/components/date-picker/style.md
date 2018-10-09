@@ -78,7 +78,7 @@ Labels should be set in sentence case, with only the first word in a phrase and 
 | `.bx--date-picker__input:focus`                    | box-shadow                  | 2px         | -             |
 | `.bx--date-picker__icon + .bx--date-picker__input` | padding-left                | 48 / 3      | $spacing-3xl  |
 
-<div data-insert-component="ImageGrid">
+<div class="image-grid">
   <div>
     ![Structure for Simple & Single Date Pickers](images/date-picker-style-4.png)
   </div>
@@ -123,7 +123,7 @@ There are two types of time pickers; a 12-hour and 24-hour time picker. The 12-h
 | `.bx--time-picker__input-field` | padding-right, padding-left | 16 / 1   | $spacing-md   |
 | `.bx--select-input`             | padding-left                | 16 / 1   | $spacing-md   |
 
-<div data-insert-component="ImageGrid">
+<div class="image-grid">
   <div>
     ![Structure for a Time Picker](images/time-picker-style-1.png)
   </div>

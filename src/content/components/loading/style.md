@@ -19,7 +19,7 @@ tabs: ['Code', 'Usage', 'Style']
 | `.bx--loading`        | height, width | 84 / 5.25 | -             |
 | `.bx--loading--small` | height, width | 16 / 1    | -             |
 
-<div data-insert-component="ImageGrid">
+<div class="image-grid">
   <div>
     ![Large spinner structure measurements](images/loading-style-1.png)
   </div>

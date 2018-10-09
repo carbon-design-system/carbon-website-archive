@@ -14,7 +14,7 @@ tabs: ['Code', 'Usage', 'Style']
 | `.bx--checkbox-label::after`  | $inverse-01 | #ffffff |
 | `.bx--checkbox-label`         | $text-01    | #152935 |
 
-<div data-insert-component="ImageGrid">
+<div class="image-grid">
   <div>
     ![Normal checkbox example](images/checkbox-style-1.png)
   </div>

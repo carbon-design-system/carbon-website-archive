@@ -15,7 +15,7 @@ tabs: ['Code', 'Usage', 'Style']
 | `.bx--overflow-menu-options__option--danger`                                       | border-top       | $ui-04        | #8897a2                |
 | `.bx--overflow-menu__icon`                                                         | fill             | $ui-05        | #5a6872                |
 
-<div data-insert-component="ImageGrid">
+<div class="image-grid">
   <div>
     ![Overflow menu text hover example](images/overflow-menu-style-1.png)
   </div>

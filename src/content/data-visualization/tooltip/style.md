@@ -96,7 +96,7 @@ _Example of a Large Tooltip_
 
 The below images show how a Tooltip would respond to different amounts of data values. It also shows how the width of Tooltip changes when a label is at its max-width.
 
-<div data-insert-component="ImageGrid">
+<div class="image-grid">
   <div>
     ![Example of a tooltip with 3 data values](images/style-tooltip-4.png)
   </div>
@@ -113,7 +113,7 @@ The below images show how a Tooltip would respond to different amounts of data v
 
 _Examples of Tooltip responsiveness for different data value amounts_
 
-<div data-insert-component="ImageGrid">
+<div class="image-grid">
   <div>
     ![Example of max-width labels, one column](images/style-tooltip-7.png)
   </div>
