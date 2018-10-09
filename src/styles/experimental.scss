@@ -4,7 +4,7 @@
     provide overrides.
 */
 
-$css--plex: true;
+$css--plex: true; // Dummy value so global-variable-exists() check in @include exports('css--font-face') work
 
 $feature-flags: (
 
