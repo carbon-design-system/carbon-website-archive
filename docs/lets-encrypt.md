@@ -83,7 +83,15 @@ Press Enter to Continue
 
 At this point, you will need to add the TXT record to our DNS provider. The name
 of the sub-domain will be `_acme-challenge`. The type for the record will be
-`TXT`. The value will be the value provided in that prompt above. After you add this record with your DNS provider, you can press enter to
+`TXT`. The value will be the value provided in that prompt above. You can verify
+that the TXT record has been updated by running the following command in your
+terminal:
+
+```bash
+nslookup -q=txt _acme-challenge.carbondesignsystem.com
+```
+
+After you add this record with your DNS provider, you can press enter to
 continue.
 
 If everything works properly, you should see the following prompt in your
