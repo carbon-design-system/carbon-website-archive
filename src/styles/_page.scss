@@ -55,10 +55,27 @@ body {
     padding: 0 0 $spacing-md;
   }
 
-  // All em on Markdown pages after images
-  .gatsby-resp-image-link + em {
+  // All em on Markdown pages after images and image grid
+  .gatsby-resp-image-link + em,
+  .image-grid + p > em,
+  .image-component + p > em {
     font-size: .875em;
     color: $text-02;
+  }
+
+  // Images on component pages
+  .image-component {
+    background: $ui-02;
+    max-width: 38rem;
+    display: flex;
+    justify-content: center;
+    padding: $spacing-md 0;
+
+    .gatsby-resp-image-link,
+    > img {
+      width: 50%;
+      height: 50%;
+    }
   }
 
   // No padding when a paragraph is followed by certain elements
