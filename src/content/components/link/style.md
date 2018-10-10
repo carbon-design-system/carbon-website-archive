@@ -17,11 +17,9 @@ tabs: ['Code', 'Usage', 'Style']
 | `.bx--link:hover`                 | color    | $hover-primary-text | #294c86       |
 | `.bx--link[aria-disabled='true']` | color    | $brand-01           | #3d70b2 @ 50% |
 
----
-
----
-
-> ![Example of normal, hover, and disabled link states](images/link-style-1.png)
+<div class="image-component">
+    <img src="images/link-style-1.png" alt="Example of normal, hover, and disabled link states" />
+</div>
 
 _Normal, hover disabled Link states_
 
@@ -44,10 +42,8 @@ Links can be grouped horizontally or vertically and must be underlined. The foll
 | `.bx--link` | line-height   | 24 / 1.5 | -             |
 | `.bx--link` | padding-right | 16 / 1   | $spacing-md   |
 
----
-
----
-
-> ![Link structure and spacing measurements ](images/link-style-2.png)
+<div class="image-component">
+    <img src="images/link-style-2.png" alt="Link structure and spacing measurements" />
+</div>
 
 _Structure and spacing measurements for Link | px / rem_

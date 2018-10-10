@@ -71,9 +71,10 @@ body {
     justify-content: center;
     padding: $spacing-md 0;
 
-    .gatsby-resp-image-link {
+    .gatsby-resp-image-link,
+    > img {
       width: 50%;
-      height: auto;
+      height: 50%;
     }
   }
 

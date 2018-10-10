@@ -34,6 +34,8 @@ _Structure measurements for small and large loading spinner | px / rem_
 
 The large Loading spinner should appear centered over a page or content that it is loading. Please note that the top-level navigation is not included in the page loading overlay.
 
-![Large spinner in context example](images/loading-style-4.png)
+<div class="image-component">
+    <img src="images/loading-style-4.png" alt="Large spinner in context example" />
+</div>
 
 _Example of a large loading spinner in product context_

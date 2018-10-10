@@ -90,6 +90,7 @@
 // h3
 //----------------------------
 
+h3,
 .page-h3,
 .page-content h3,
 .component-docs h3 {
@@ -190,7 +191,6 @@ blockquote p img {
 // This hides the anchor link from everything except h2
 // the custom markdown prevents the links from working for those html elements
 
-.page-h3,
 .page-h4,
 h5,
 h6 {

@@ -1,3 +1,9 @@
+---
+label: Component
+title: Modal
+tabs: ['Code', 'Usage', 'Style']
+---
+
 ## Color
 
 | Class                        | Property         | SCSS      | HEX                   |
@@ -44,6 +50,7 @@ Modal labels are optional and should be set in all caps when used. Modal titles 
 
 ![Structure and spacing measurements for Passive Modal](images/modal-style-1.png)
 _Structure and spacing measurements for a Passive Modal | px / rem_
+
 ![Structure and spacing measurements for Transactional Modal elements](images/modal-style-2.png)
 _Structure and spacing measurements for a Transactional Modal | px / rem_
 
@@ -51,10 +58,8 @@ _Structure and spacing measurements for a Transactional Modal | px / rem_
 
 Modals should be full screen on mobile.
 
----
-
----
-
-> ![Modal on mobile](images/modal-style-3.png)
+<div class="image-component">
+    <img src="images/modal-style-3.png" alt="Modal on mobile" />
+</div>
 
 _Example of a Modal on a mobile screen_
