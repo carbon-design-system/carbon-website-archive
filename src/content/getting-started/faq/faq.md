@@ -31,9 +31,7 @@ Carbon components is supported in the following browsers:
 
 ### What language are the components written in?
 
-There are two different implementations of the Carbon Design System. One is a Vanilla.js library; that's written in ES6+, SCSS, and HTML and ships deliverables in vanilla javascript in ES5 as well as ES6, CSS, SCSS, and HTML. The other is a React library, that ships a React rewrite of the javascript, but uses the same CSS as the core library.
-
-There is also an unofficial, internal-only [Angular library](https://pages.github.ibm.com/adaniel/angular-carbon-components/) for Carbon Components that was built out by a team other than Carbon. Please note that we **do not** maintain this repo.
+There are currently three official implementations of the Carbon Design System. One is a Vanilla.js library; that's written in ES6+, SCSS, and HTML and ships deliverables in vanilla javascript in ES5 as well as ES6, CSS, SCSS, and HTML. There is also a React library, that ships a React rewrite of the javascript, but uses the same CSS as the core library and an Angular library, that ships an Angular rewrite of the javascript and also uses the same core CSS.
 
 ### I see a bug, how do I report it?
 
