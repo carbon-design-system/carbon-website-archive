@@ -2,15 +2,22 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import CodeExample from '../CodeExample/CodeExample';
-import * as components from 'carbon-components/es/globals/js/components';
+import * as carbonComponents from 'carbon-components/es/globals/js/components';
+import InlineLoadingDemoButton from '../../content/components/inline-loading/inline-loading-demo-button';
 import settings from 'carbon-components/es/globals/js/settings';
 import { RadioButtonGroup, RadioButton } from 'carbon-components-react';
+
+const components = {
+  ...carbonComponents,
+  InlineLoadingDemoButton,
+};
 
 const componentNamesMap = {
   Card: ['OverflowMenu'],
   CodeSnippet: ['CodeSnippet', 'CopyButton'],
   DataTable: ['DataTable', 'DataTableV2', 'OverflowMenu', 'Toolbar'],
   DetailPageHeader: ['OverflowMenu', 'Tab'],
+  InlineLoading: ['InlineLoading', 'InlineLoadingDemoButton'],
   OrderSummary: ['Dropdown'],
   Tabs: ['Tab', 'ContentSwitcher'],
 };
