@@ -17,8 +17,8 @@ body {
   min-height: 100vh;
 
   @include breakpoint('840px') {
-    margin-left: 12.5rem;
-    width: calc(100% - 12.5rem);
+    margin-left: rem(240px);
+    width: calc(100% - 240px);
   }
 }
 

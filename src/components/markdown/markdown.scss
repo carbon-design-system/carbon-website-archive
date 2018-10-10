@@ -93,7 +93,8 @@
 h3,
 .page-h3,
 .page-content h3,
-.component-docs h3 {
+.component-docs h3,
+h3:not(.bx--toast-notification__title) {
   @include typescale('delta');
   color: $brand-01;
   padding: 4rem 0 1rem;
