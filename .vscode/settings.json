@@ -1,5 +1,3 @@
 {
-  "markdown.styles": [
-    "./.vscode/markdown.css"
-  ]
+  "markdown.styles": ["./.vscode/markdown.css"]
 }

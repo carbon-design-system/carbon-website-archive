@@ -1,8 +1,10 @@
 /*
-    Since we are pulling in both experimental and the default carbon styles 
+    Since we are pulling in both experimental and the default carbon styles
     some atrributes aren't overwritten between the two sets so we need to
-    provide overrides. 
+    provide overrides.
 */
+
+$css--plex: true; // Dummy value so global-variable-exists() check in @include exports('css--font-face') work
 
 $feature-flags: (
 
@@ -16,4 +18,20 @@ $feature-flags: (
     ui-shell: true,
   );
   @import 'carbon-components/src/globals/scss/styles';
+}
+
+.iconography--experimental .icon-container {
+  width: 100%;
+}
+
+.iconography--experimental .icon-size {
+  margin-top: 4rem;
+}
+
+.iconography--experimental .icon__card-title,
+.iconography--experimental .icon__card-details {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

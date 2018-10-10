@@ -350,62 +350,64 @@ class IndexPage extends React.Component {
             <ul className="overview-page__list">
               <li className="overview-page__list-item">
                 <Link
-                  to="/getting-started"
+                  to="/getting-started/designers"
                   aria-label="Getting started"
-                  className="list-item__icon">
+                  className="list-item__link">
                   <img src={gettingStartedIll} alt="" />
+
+                  <div className="list-item__info">
+                    <span className="list-item__heading">Getting Started</span>
+                    <p>
+                      Onboarding for designers and developers who are using
+                      Carbon for the first time.
+                    </p>
+                  </div>
                 </Link>
-                <div className="list-item__info">
-                  <Link to="/getting-started/designers">Getting Started</Link>
-                  <p>
-                    Onboarding for designers and developers who are using Carbon
-                    for the first time.
-                  </p>
-                </div>
               </li>
               <li className="overview-page__list-item">
                 <Link
-                  to="/style"
-                  aria-label="Style"
-                  className="list-item__icon">
+                  to="/guidelines/accessibility/overview"
+                  aria-label="Guidelines"
+                  className="list-item__link">
                   <img src={styleIll} alt="" />
+                  <div className="list-item__info">
+                    <span className="list-item__heading">Guidelines</span>
+                    <p>
+                      Guidance on usage and application for basic design
+                      elements.
+                    </p>
+                  </div>
                 </Link>
-                <div className="list-item__info">
-                  <Link to="/guidelines/color/swatches">Guidelines</Link>
-                  <p>
-                    Guidance on usage and application for basic design elements.
-                  </p>
-                </div>
               </li>
               <li className="overview-page__list-item">
                 <Link
-                  to="/components"
+                  to="/components/overview"
                   aria-label="Components"
-                  className="list-item__icon">
+                  className="list-item__link">
                   <img src={componentsIll} alt="" />
+                  <div className="list-item__info">
+                    <span className="list-item__heading">Components</span>
+                    <p>
+                      A library of all Carbon components, comprised of code,
+                      usage and style guidelines.
+                    </p>
+                  </div>
                 </Link>
-                <div className="list-item__info">
-                  <Link to="/components/overview">Components</Link>
-                  <p>
-                    A library of all Carbon components, comprised of code, usage
-                    and style guidelines.
-                  </p>
-                </div>
               </li>
               <li className="overview-page__list-item">
                 <Link
                   to="/resources"
                   aria-label="Resources"
-                  className="list-item__icon">
+                  className="list-item__link">
                   <img src={resourcesIll} alt="" />
+                  <div className="list-item__info">
+                    <span className="list-item__heading">Resources</span>
+                    <p>
+                      A helpful list of tools, links and downloads that will
+                      improve a Carbon user's workflow.
+                    </p>
+                  </div>
                 </Link>
-                <div className="list-item__info">
-                  <Link to="/resources">Resources</Link>
-                  <p>
-                    A helpful list of tools, links and downloads that will
-                    improve a Carbon user's workflow.
-                  </p>
-                </div>
               </li>
             </ul>
           </section>

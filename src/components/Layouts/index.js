@@ -49,7 +49,12 @@ class Layout extends React.Component {
 
   handleClose = evt => {
     let isTarget = false;
-    if (evt.target.classList.contains('main-nav-item__heading') && evt.target.classList.contains('main-nav-item__list')) {
+    // `<svg>` in IE11 does not have `.classList`
+    if (
+      evt.target.classList &&
+      evt.target.classList.contains('main-nav-item__heading') &&
+      evt.target.classList.contains('main-nav-item__list')
+    ) {
       isTarget = true;
     }
     const isSmallerScreen = window.innerWidth < 1024 || screen.width < 1024;
@@ -60,26 +65,30 @@ class Layout extends React.Component {
     }
   };
 
-  checkWidth = () => {
-    const width = window.innerWidth;
-    if (width < 1024) {
-      this.setState({
-        isOpen: false,
-      });
-    }
-    document.addEventListener('click', evt => {
-      this.handleClose(evt);
+  clickToClose = () => {
+    this.setState({
+      isOpen: false,
     });
-    // document.addEventListener('touchstart', evt => {
-    //   this.handleClose(evt);
-    // });
-    document.addEventListener('keydown', evt => {
-      if (evt.which === 27 && this.state.isOpen) {
+  };
+
+  checkWidth = () => {
+    if (typeof window !== 'undefined') {
+      const width = window.innerWidth;
+
+      if (width < 1024) {
         this.setState({
           isOpen: false,
         });
       }
-    });
+
+      document.addEventListener('keydown', evt => {
+        if (evt.which === 27 && this.state.isOpen) {
+          this.setState({
+            isOpen: false,
+          });
+        }
+      });
+    }
   };
 
   render() {
@@ -132,6 +141,7 @@ class Layout extends React.Component {
               isFinal={this.state.isFinal}
               isOpen={this.state.isOpen}
               location={this.props.location}
+              clickToClose={this.clickToClose}
             />
             <div className={classNames}>
               {children}

@@ -122,7 +122,10 @@
       "form": {
         "title": "Form"
       },
-      "link": {
+      "inline-loading": {
+        "title": "Inline Loading"
+      },
+      "link/code": {
         "title": "Link"
       },
       "list": {
@@ -191,10 +194,16 @@
         "title": "About"
       },
       "color": {
-        "title": "Color"
+        "title": "Color",
+        "internal": true
       },
       "layout": {
-        "title": "Layout"
+        "title": "Layout",
+        "internal": true
+      },
+      "iconography": {
+        "title": "Iconography",
+        "internal": true
       },
       "ui-shell": {
         "title": "UI Shell"
@@ -202,11 +211,14 @@
       "accordion": {
         "title": "Accordion"
       },
-      "link": {
-        "title": "Link"
+      "breadcrumb": {
+        "title": "Breadcrumb"
       },
       "checkbox": {
         "title": "Checkbox"
+      },
+      "link": {
+        "title": "Link"
       },
       "text-input": {
         "title": "Text Input"

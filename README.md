@@ -1,8 +1,7 @@
 # Carbon Design System
 
-This is a work in progress repo for re-architecting the [Carbon Design System website](http://www.carbondesignsystem.com) using GatsbyJS.
+This is the [Carbon Design System website](http://www.carbondesignsystem.com) which is built using GatsbyJS.
 
-[Current Carbon Design System repo](https://github.com/carbon-design-system/design-system-website)
 
 ## 📂 Structure
 
@@ -17,11 +16,11 @@ src
 ├── templates
 ```
 
-## 📚 Writing Content
-
-[Content writing guide](docs/CONTENT.md)
-
 ## 👩‍💻 Development
+
+- 🤝 [Contribution Guidelines](.github/CONTRIBUTING.md) 
+- 📚 [Content/Markdown Guidelines](docs/CONTENT.md)
+- 🗺 [Navigation Guidelines](docs/NAVIGATION.md)
 
 Install dependencies
 
@@ -40,6 +39,8 @@ Run internal dev environment
 ```
 yarn dev:internal
 ```
+
+If you need more detailed information on how to setup your machine to develop locally please take a look at our [wiki](https://github.com/carbon-design-system/carbon-website-gatsby/wiki).
 
 ## 🚀 Build
 

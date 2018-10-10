@@ -21,10 +21,10 @@ Keep building with Carbon! The best way to ensure a smooth transition is to adhe
 
 **How will teams adopt the new IBM Design Language?**
 
-The IBM Design core team is establishing an adoption and activation program. A new <a href="https://w3.ibm.com/design/essentials">IBM Design Essentials</a> course is available. Teams will receive either in-person or remote education before the first products using the new IBM Design Language are released. We'll share news on Slack, Connections, and in the IBM Design Town Hall.
+<p>The IBM Design core team is establishing an adoption and activation program. A new <a href="https://w3.ibm.com/design/essentials">IBM Design Essentials</a> course is available. Teams will receive either in-person or remote education before the first products using the new IBM Design Language are released. We'll share news on Slack, Connections, and in the IBM Design Town Hall.</p>
 
 ### Updates
 
-**Complete:** New IBM Design Language fonts, glyphs, and experimental grid have been integrated into Carbon as of 9/13/18.
+**Complete:** New IBM Design Language fonts, glyphs, and experimental grid have been integrated into Carbon.
 
-**Coming soon:** More icons, colors, and page geometry
+**In Progress:** More icons, colors, page geometry, [experimental components](/experimental/accordion/code) and [UI Shell](/experimental/ui-shell/code). 

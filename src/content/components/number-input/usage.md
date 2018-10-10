@@ -13,8 +13,4 @@ tabs: ['Code', 'Usage', 'Style']
 - Use sentence-style capitalization (only the first word in a phrase and any proper nouns capitalized) for the label.
 - See further guidance for using number labels within [Forms.](/components/form/usage)
 
----
-
----
-
-> ![number input example](images/number-input-usage-1.png)
+![number input example](images/number-input-usage-1.png)

@@ -31,7 +31,7 @@ title: Resources
     <img src="images/github-icon.png" alt="Carbon Components React" />
 </clickable-tile>
 <clickable-tile 
-    title="Carbon Components Anuglar"
+    title="Carbon Components Angular"
     description="Carbon Components Angular gives developers a collection of re-usable Angular components they can use for bulding websites and user interfaces."
     href="https://github.com/ibm/carbon-components-angular" 
     type="resource"

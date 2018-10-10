@@ -2,8 +2,17 @@
 label: About Carbon
 title: What's New
 ---
+<page-intro>October 2018</page-into>
 
-<page-intro>June 4, 2018: V9 Release</page-into>
+## Experimental
+
+A new [Experimental](/experimental/about/overview) section has been added to the website. Experimental components, designs, patterns, and other resources are work that is still under development.
+
+ **Experimental components, designs, and other resources are presented for testing and feedback. They are not intended for production use.**
+
+<hr class="divider">
+
+**June 4, 2018: V9 Release**
 
 ## Website
 
@@ -158,11 +167,7 @@ _Example of Multi-Select Dropdown_
 
 Small Toggle is a style variation of our traditional [Toggle](/components/toggle) component. It's more compact in size, which allows them to be used in Data Tables or inline with Form elements.
 
----
-
----
-
-![example of Small toggle](images/small-toggle.gif) > _Example of Small Toggle_
+[example of Small toggle](images/small-toggle.gif) > _Example of Small Toggle_
 
 ### Data Vis: Bar Graph
 

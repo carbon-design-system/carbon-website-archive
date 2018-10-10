@@ -16,11 +16,11 @@ class ComponentStatus extends React.Component {
     let react;
     let angular;
     let experimental;
-    if (currentItem.status === 0) {
+    if (currentItem.status === "ready") {
       status = readyIcon;
-    } else if (currentItem.status === 1) {
+    } else if (currentItem.status === "under-review") {
       status = underReviewIcon;
-    } else if (currentItem.status === 2) {
+    } else if (currentItem.status === "deprecated") {
       status = deprecatedIcon;
     } else {
       status = notApplicableIcon;
@@ -33,41 +33,41 @@ class ComponentStatus extends React.Component {
         <span className="bx--tag bx--tag--third-party inline-tag">Updated</span>
       );
     }
-    if (currentItem.vanilla === 0) {
+    if (currentItem.vanilla === "ready") {
       vanilla = readyIcon;
-    } else if (currentItem.status === 1) {
+    } else if (currentItem.status === "under-review") {
       vanilla = underReviewIcon;
-    } else if (currentItem.status === 2) {
+    } else if (currentItem.status === "deprecated") {
       vanilla = deprecatedIcon;
     } else {
       vanilla = notApplicableIcon;
     }
 
-    if (currentItem.react === 0) {
+    if (currentItem.react === "ready") {
       react = readyIcon;
-    } else if (currentItem.status === 1) {
+    } else if (currentItem.status === "under-review") {
       react = underReviewIcon;
-    } else if (currentItem.status === 2) {
+    } else if (currentItem.status === "deprecated") {
       react = deprecatedIcon;
     } else {
       react = notApplicableIcon;
     }
 
-    if (currentItem.angular === 0) {
+    if (currentItem.angular === "ready") {
       angular = readyIcon;
-    } else if (currentItem.status === 1) {
+    } else if (currentItem.status === "under-review") {
       angular = underReviewIcon;
-    } else if (currentItem.status === 2) {
+    } else if (currentItem.status === "deprecated") {
       angular = deprecatedIcon;
     } else {
       angular = notApplicableIcon;
     }
 
-    if (currentItem.experimental === 0) {
+    if (currentItem.experimental === "ready") {
       experimental = readyIcon;
-    } else if (currentItem.experimental === 1) {
+    } else if (currentItem.experimental === "under-review") {
       experimental = underReviewIcon;
-    } else if (currentItem.experimental === 2) {
+    } else if (currentItem.experimental === "deprecated") {
       experimental = deprecatedIcon;
     } else {
       experimental = notApplicableIcon;
@@ -77,8 +77,6 @@ class ComponentStatus extends React.Component {
         <td>
           {currentItem.item} {tag}
         </td>
-        <td>{currentItem.added}</td>
-
         <td>{vanilla}</td>
         <td>{react}</td>
         <td>{angular}</td>
@@ -135,7 +133,7 @@ class ComponentStatus extends React.Component {
     const componentStatus = require('../../data/components.json'); // eslint-disable-line
     const content = (
       <div className="page page_md component-status-page">
-        <p class="page-intro">{currentVersion}</p>
+        <p className="page-intro">{currentVersion}</p>
         <div className="component-status">
           <ul className="component-status__icon-list">
             <li>
@@ -152,7 +150,7 @@ class ComponentStatus extends React.Component {
             </li>
             <li>
               {notApplicableIcon}
-              <p>Not applicable</p>
+              <p>Not available</p>
             </li>
           </ul>
         </div>
@@ -160,7 +158,6 @@ class ComponentStatus extends React.Component {
           <thead>
             <tr>
               <th>Component</th>
-              <th>Added</th>
               <th>Vanilla</th>
               <th>React</th>
               <th>Angular</th>
@@ -181,7 +178,7 @@ class ComponentStatus extends React.Component {
         </table>
         <div className="component-status__description">
           <h2 className="page-h2">Tag descriptions</h2>
-          <table class="page-table">
+          <table className="page-table">
             <thead>
               <tr>
                 <th>Tag</th>
@@ -200,9 +197,7 @@ class ComponentStatus extends React.Component {
                 <td>Under review</td>
                 <td>
                   Indicates that a component’s design, code, or usage is being
-                  re-examined. This means in the near future either changes are
-                  coming to the component or it will be deprecated for a new
-                  version.
+                  re-examined or created.
                 </td>
               </tr>
               <tr>
@@ -216,9 +211,9 @@ class ComponentStatus extends React.Component {
               </tr>
               <tr>
                 <td>{notApplicableIcon}</td>
-                <td>Not applicable</td>
+                <td>Not available</td>
                 <td>
-                  Component was not available in this version of the library.
+                  Component is not available in this version of the library.
                 </td>
               </tr>
               <tr>
