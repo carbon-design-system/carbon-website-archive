@@ -99,7 +99,6 @@ class Layout extends React.Component {
       'container--expanded': !this.state.isOpen,
     });
 
-
     return (
       <StaticQuery
         query={graphql`
