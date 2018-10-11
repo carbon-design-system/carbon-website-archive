@@ -24,7 +24,7 @@ const sectionHeader = isInternal ? (
     className="overview-page__banner overview-page__banner--internal"
     aria-label="overview page banner">
     <h1 className="banner__logo">
-      Product Design
+      IBM <span>Product Design</span>
     </h1>
   </section>
 ) : (
@@ -440,13 +440,12 @@ class IndexPage extends React.Component {
                     <img src={sketchIcon} alt="" />
                   </div>
                   <div className="tile__info">
-                    <p aria-label="Carbon Design Kit on Github">
-                      Carbon Design Kit
+                    <p aria-label="Design Kit on Github">
+                      {isInternal ? 'Design Kit' : 'Carbon Design Kit'}
                     </p>
                     <p>
                       A Sketch file containing core visual styles, components,
-                      and patterns a designer needs to use Carbon as a framework
-                      for building product experiences.
+                      and patterns a designer needs to use to building product experiences.
                     </p>
                   </div>
                 </ClickableTile>
@@ -461,8 +460,8 @@ class IndexPage extends React.Component {
                     <img src={githubIcon} alt="" />
                   </div>
                   <div className="tile__info">
-                    <p aria-label="Carbon Components on Github">
-                      Carbon Components
+                    <p aria-label="Components on Github">
+                      {isInternal ? 'Components' : 'Carbon Components'}
                     </p>
                     <p>
                       The Component Library gives developers a collection of
@@ -482,8 +481,8 @@ class IndexPage extends React.Component {
                     <img src={githubIcon} alt="" />
                   </div>
                   <div className="tile__info">
-                    <p aria-label="Carbon Components on Github">
-                      Carbon Components React
+                    <p aria-label="Components React on Github">
+                      {isInternal ? 'React Components' : 'Carbon Components React'}
                     </p>
                     <p>
                       The Component Library gives developers a collection of
@@ -503,8 +502,8 @@ class IndexPage extends React.Component {
                     <img src={githubIcon} alt="" />
                   </div>
                   <div className="tile__info">
-                    <p aria-label="Carbon Components on Github">
-                      Carbon Components Angular
+                    <p aria-label="Components Angular on Github">
+                      {isInternal ? 'Components Angular' : 'Carbon Components Angular'}
                     </p>
                     <p>
                       The Component Library gives developers a collection of
@@ -524,10 +523,12 @@ class IndexPage extends React.Component {
                     <img src={codepenIcon} alt="" />
                   </div>
                   <div className="tile__info">
-                    <p>Carbon CodePen</p>
+                    <p aria-label="CodePen">
+                      {isInternal ? 'CodePen' : 'Carbon CodePen'}
+                    </p>
                     <p>
                       CodePen, a social development playground for front-end
-                      designers and developers, houses demos of Carbon
+                      designers and developers, houses demos of our vanilla
                       Components.
                     </p>
                   </div>
