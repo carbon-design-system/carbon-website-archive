@@ -374,7 +374,7 @@ class IndexPage extends React.Component {
                     <span className="list-item__heading">Getting Started</span>
                     <p>
                       Onboarding for designers and developers who are using
-                      Carbon for the first time.
+                      the system for the first time.
                     </p>
                   </div>
                 </Link>
@@ -403,7 +403,7 @@ class IndexPage extends React.Component {
                   <div className="list-item__info">
                     <span className="list-item__heading">Components</span>
                     <p>
-                      A library of all Carbon components, comprised of code,
+                      A library of all components, comprised of code,
                       usage and style guidelines.
                     </p>
                   </div>
@@ -419,7 +419,7 @@ class IndexPage extends React.Component {
                     <span className="list-item__heading">Resources</span>
                     <p>
                       A helpful list of tools, links and downloads that will
-                      improve a Carbon user's workflow.
+                      improve a user's workflow.
                     </p>
                   </div>
                 </Link>
@@ -559,7 +559,7 @@ class IndexPage extends React.Component {
             className="overview-page__section overview-page__section--contribute"
             style={{ backgroundImage: `url(${scatter})` }}>
             <div className="contribute__info">
-              <h2>Wondering how to contribute to Carbon?</h2>
+              <h2>Wondering how to contribute?</h2>
               <p>
                 We welcome all feedback, designs, or ideas in order to produce
                 the best possible experience for our users. If you're interested
