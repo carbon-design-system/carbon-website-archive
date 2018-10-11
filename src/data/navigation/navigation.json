@@ -214,11 +214,17 @@
       "breadcrumb": {
         "title": "Breadcrumb"
       },
+      "button": {
+        "title": "Button"
+      },
       "checkbox": {
         "title": "Checkbox"
       },
       "link": {
         "title": "Link"
+      },
+      "radio-button": {
+        "title": "Radio Button"
       },
       "text-input": {
         "title": "Text Input"
