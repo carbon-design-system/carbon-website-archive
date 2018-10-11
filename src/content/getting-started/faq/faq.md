@@ -25,7 +25,7 @@ Carbon components is supported in the following browsers:
 
 - IE11
 - IE Edge latest
-- Firefox latest
+- Firefox latest/latest ESR
 - Chrome latest
 - Safari latest
 
