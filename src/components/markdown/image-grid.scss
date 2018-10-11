@@ -1,0 +1,94 @@
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 1rem 0;
+  max-width: 45rem;
+  background-color: $color__gray-3;
+  padding: 0 1rem 1rem;
+
+  img,
+  .gatsby-resp-image-link {
+    border: none;
+  }
+
+  > div,
+  > p {
+    width: 100%;
+
+    @include breakpoint('600px') {
+      //margin-right: 1rem;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    strong {
+      display: block;
+      margin-bottom: .5rem !important;
+    }
+
+    &.dark-bg {
+
+      img {
+        background-color: $color__blue-90;
+      }
+    }
+  }
+
+  div:first-child:nth-last-child(2),
+  div:first-child:nth-last-child(2) ~ div {
+
+    @include breakpoint('600px') {
+      width: calc(50% - 1rem);
+    }
+  }
+
+  div:first-child:nth-last-child(3),
+  div:first-child:nth-last-child(3) ~ div {
+    @include breakpoint('600px') {
+      width: calc(33.3333% - 1rem);
+    }
+  }
+
+  > div:first-child:nth-last-child(4),
+  > div:first-child:nth-last-child(4) ~ div {
+    @include breakpoint('600px') {
+      width: calc(50% - 1rem);
+    }
+  }
+
+  > div:first-child:nth-last-child(6),
+  > div:first-child:nth-last-child(6) ~ div {
+    @include breakpoint('600px') {
+      width: calc(33% - 1rem);
+    }
+  }
+  > div:first-child:nth-last-child(8),
+  > div:first-child:nth-last-child(8) ~ div {
+    @include breakpoint('600px') {
+      width: calc(25% - 1rem);
+    }
+  }
+
+  > div:first-child:nth-last-child(9),
+  > div:first-child:nth-last-child(9) ~ div {
+    @include breakpoint('600px') {
+      width: calc(33% - 1rem);
+    }
+  }
+}
+
+@for $i from 1 through 4 {
+  .image-grid--#{$i} {
+
+    > div:nth-child(#{$i}) {
+
+      img {
+        background-color: $color__blue-90;
+      }
+    }
+  }
+}
+

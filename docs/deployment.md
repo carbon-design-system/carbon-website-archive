@@ -5,8 +5,17 @@ Update date in Footer.js component
 ## Internal
 
 ```bash
+# Delete old build folder
+rm -rf public
+
 # Build the internal site
 yarn build:internal
+
+# Run build locally 
+npx serve public
+
+# Test local production build of website
+http://localhost:5000
 
 ibmcloud login \
   --sso
@@ -28,6 +37,9 @@ ibmcloud cf blue-green-deploy carbon-website-internal \
 
 
 ```bash
+# Delete old build folder
+rm -rf public
+
 # Build the external site
 yarn build:external
 
@@ -54,4 +66,8 @@ ibmcloud cf blue-green-deploy carbon-website \
   -f .circleci/manifest.external.yml \
   --delete-old-apps
 
+# Deploy external website without blue-green
+ibmcloud cf push -f .circleci/manifest.external.yml
+
 ```
+
