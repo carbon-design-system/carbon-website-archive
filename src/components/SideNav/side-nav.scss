@@ -1,6 +1,20 @@
 //===================
 // SIDE NAV
 //===================
+
+// Skip content
+.skip-to-content {
+  @include hidden;
+
+  &:focus {
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: initial;
+    z-index: 8000;
+  }
+}
+
 .side-nav {
   @include typescale('zeta');
   @include layer('temporary-nav');
