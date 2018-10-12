@@ -82,7 +82,7 @@
   text-decoration: none;
   font-weight: 400;
   line-height: 1.2;
-  margin: $spacing-xl $spacing-md $spacing-md 20px;
+  margin: $spacing-md $spacing-md $spacing-md 20px;
   white-space: nowrap;
   padding: 0 $spacing-md 0 0;
 
@@ -122,8 +122,9 @@
 .side-nav__nav-item button {
   @include typescale('zeta');
   cursor: pointer;
-  padding: $spacing-xs $spacing-md $spacing-xs $spacing-md;
-  color: $text-01;
+  padding: $spacing-2xs $spacing-md $spacing-2xs $spacing-md;
+  height: rem(32px);
+  color: $ibm-colors__gray--70;
   border: none;
   font-weight: 600;
   background: transparent;
@@ -137,13 +138,14 @@
   border-left: 4px solid transparent;
 
   &:focus {
-    color: $brand-01;
+    color: $ibm-colors__gray--100;
     text-decoration: underline;
     outline: none;
   }
 
   &:hover {
-    color: $brand-01;
+    color: $ibm-colors__gray--100;
+    background: $ui-02;
   }
 
   @media all and (max-width: 620px) {
@@ -153,15 +155,15 @@
 }
 
 .side-nav__nav-item--arrow {
-  height: rem(8px);
-  width: rem(8px);
-  fill: $ui-04;
+  height: rem(10px);
+  width: rem(10px);
+  fill: $ibm-colors__gray--40;
   transition: 0.3s;
 }
 
 .side-nav__nav-item--active > a {
-  color: $brand-01;
-  border-left: 4px solid $brand-01;
+  color: $ibm-colors__gray--100;
+  border-left: 4px solid $ibm-colors__blue--60;
 }
 
 .side-nav__nav-item--open .side-nav__nav-item--arrow {
@@ -185,11 +187,15 @@
 .side-nav__sub-nav-item {
   border-left: 4px solid transparent;
   padding: 0 $spacing-lg;
+
+  &:hover {
+    background: $ui-02; //#e0e0e0;  color to match other design/ websites. 
+  }
 }
 
 .side-nav__sub-nav-item a {
   font-weight: 400;
-  padding: $spacing-2xs $spacing-2xs $spacing-2xs $spacing-xs;
+  padding: $spacing-2xs $spacing-2xs $spacing-2xs 0;
   text-decoration: none;
 
   @media all and (max-width: 620px) {
@@ -199,12 +205,12 @@
 }
 
 .side-nav__sub-nav-item--active {
-  border-left: 4px solid $brand-01;
+  border-left: 4px solid $ibm-colors__blue--60;
 }
 
 .side-nav__sub-nav-item--active a {
   font-weight: 600;
-  color: $brand-01;
+  color: $ibm-colors__gray--100;
 }
 
 //===================
