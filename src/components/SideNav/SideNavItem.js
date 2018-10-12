@@ -69,8 +69,6 @@ export default class SideNavItem extends React.Component {
         return '';
       }
 
-      console.log(this.state.open);
-
       const tabIndex = this.state.open;
 
       return (
