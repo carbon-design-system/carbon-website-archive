@@ -223,7 +223,12 @@
   border-color: $brand-01;
   color: $brand-01;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: $brand-01;
+  }
+
+  &:focus {
+    outline-color: $brand-01;
   }
 }
