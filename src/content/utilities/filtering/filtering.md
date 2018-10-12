@@ -17,7 +17,6 @@ A single selection filter is when the user can pick **only one criteria** from a
 - Radio Button set (either stand alone or within a menu)
 
 ![single selection filters](images/filter-1.png)
-
 _Single selection filter as an Inline Dropdown_
 
 ### Multi-selection
@@ -30,7 +29,6 @@ A multi-selection filter is used when the user has the option to pick **more tha
 - Checkbox set (either stand alone or within a menu)
 
 ![multi-selection filters](images/filter-2.png)
-
 _Multi-selection filter set in a menu_
 
 ### Multiple categories
@@ -40,7 +38,6 @@ A category is a set of filter items within the same topic. For example, "size" i
 Multiple category selection is most commonly manifested in either a vertical list on the left side of the page or within a horizontal drawer at the top of the data set. Multiple categories should never be put within a menu or dropdown.
 
 ![Multiple filter categories examples](images/filter-3.png)
-
 _Multiple filter categories in a left panel_
 
 ## Triggering filters
@@ -52,7 +49,6 @@ A batch filter is when all filters are applied together at the end of the select
 The batch filter is beneficial to use when the user is making several filtering selections across different categories that may take a longer time to cognitively process. Batch filtering is also a good solution for slow data return speeds. This can prevent the user from having to wait for the data to load after every selection.
 
 ![Batch filter example](images/filter-4.png)
-
 _Batch filter example in a drawer_
 
 ### Interactive filter
@@ -77,11 +73,9 @@ Filters within each category should start either as all unselected or all select
 If the filter(s) can be hidden in either a drawer, dropdown, or menu, then there should be an indicator visible on the closed filter state that informs the user that filters have been applied. At a minimum the indicator should include the number of filters applied and have the option to clear filters without re-opening the filter container.
 
 ![Hidden filters not applied](images/filter-5.png)
-
 _Filters not applied_
 
 ![Hidden filters applied](images/filter-6.png)
-
 _Filters applied_
 
 ### Resetting filters
@@ -91,5 +85,4 @@ Each category should have a way to clear all applied filters at once without hav
 If multiple categories have been applied to the same data set then there should be a way to dismiss all filters across all categories at once.
 
 ![Filter reset example](images/filter-7.png)
-
 _Filter reset example for all categories and a single category_

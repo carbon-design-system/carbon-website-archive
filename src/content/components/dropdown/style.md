@@ -89,8 +89,6 @@ _Normal, active, open, and disabled states for Dropdown_
 ![Structure and spacing for a Multi-Select Dropdown](images/dropdown-style-3.png)
 _Structure and spacing measurements for a Multi-Select Dropdown | px / rem_
 
-<!--![Hover and focus states for a Multi-Select Dropdown](images/dropdown-style-4.png)
-_Hover and focus states for a Multi-Select Dropdown_-->
 
 ## Inline Dropdown
 
@@ -111,12 +109,9 @@ _Structure and spacing for Inline Dropdown | px / rem_
 
 Inline select has two different states, one for mouse hover and one for keyboard focus.
 
----
-
----
-
-> 
-> ![Hover and focus states for Inline Dropdown](images/dropdown-style-6.png)
+<div class="image-component">
+    <img src="images/dropdown-style-6.png" alt="Hover and focus states for Inline Dropdown" />
+</div>
 
 _Hover and focus states for Inline Dropdown_
 

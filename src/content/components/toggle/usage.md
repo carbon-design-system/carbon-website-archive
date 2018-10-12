@@ -8,7 +8,9 @@ tabs: ['Code', 'Usage', 'Style']
 
 Toggles are used for binary actions that occur immediately after the user “flips” the Toggle switch. They are commonly used for “On/Off” situations.
 
-![Toggle example](images/toggle-usage-1.png)
+<div class="image-component">
+    <img src="images/toggle-usage-1.png" alt="Toggle example" />
+</div>
 
 ### Heading
 

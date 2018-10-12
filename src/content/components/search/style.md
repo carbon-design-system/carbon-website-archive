@@ -44,5 +44,6 @@ The width of the Search field should appropriately fit the design and layout of 
 
 ![Structure and spacing measurements for regular search](images/search-style-2.png)
 _Structure and spacing measurements for Regular Search | px | rem_
+
 ![Structure and spacing measurements for small search](images/search-style-3.png)
 _Structure and spacing measurements for Small Search | px | rem_
