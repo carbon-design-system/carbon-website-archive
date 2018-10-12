@@ -90,6 +90,8 @@ class Layout extends React.Component {
   };
 
   render() {
+    const { GATSBY_CARBON_ENV } = process.env;
+    const isInternal = GATSBY_CARBON_ENV == 'internal';
     const { children } = this.props;
     const classNames = classnames('container', {
       'container--expanded': !this.state.isOpen,
@@ -102,6 +104,7 @@ class Layout extends React.Component {
             site {
               siteMetadata {
                 title
+                titleInternal
               }
             }
           }
@@ -109,7 +112,7 @@ class Layout extends React.Component {
         render={data => (
           <>
             <Helmet
-              title={data.site.siteMetadata.title}
+              title={isInternal ? data.site.siteMetadata.titleInternal : data.site.siteMetadata.titleInternal}
               meta={[
                 {
                   name: 'description',

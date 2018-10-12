@@ -13,7 +13,6 @@ tabs: ['Code', 'Usage', 'Style']
 - Nesting items is not recommended, as Structured Lists are used to present simple data. If you have additional content that needs to be shown, consider using a [Data Table,](/components/data-table) which supports nesting items.
 
 ![Structured List](images/structured-list-usage-2.png)
-
 _Structured List to present definitions_
 
 ## Interaction

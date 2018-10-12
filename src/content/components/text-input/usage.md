@@ -28,21 +28,19 @@ Effective form labeling helps users understand what information to enter into a 
 
 Placeholder text provides hints or examples of what to enter. Placeholder text disappears after the user begins entering data into the Input and should not contain crucial information. Use sentence-style capitalization, and in most cases, write the text as a direct statement without punctuation.
 
----
+<div class="image-component">
+    <img src="images/text-input-usage-1.png" alt="Placeholder text example" />
+</div>
 
----
-
-> ![Placeholder text example](images/text-input-usage-1.png) > _Placeholder text example_
+_Placeholder text example_
 
 ### Help text
 
 Help text is pertinent information that assists the user in completing a field. Help text is always available when the input is focused and appears underneath the label. Use sentence-style capitalization, and in most cases, write the text as full sentences with punctuation.
 
----
-
----
-
-> ![Help text example](images/text-input-usage-3.png) > _Help text example_
+<div class="image-component">
+    <img src="images/text-input-usage-3.png" alt="Help text example" />
+</div>
 
 ### Help text
 
@@ -56,9 +54,8 @@ Where possible, add programmatic assistance. Detect and pre-fill inputs to reduc
 
 Real time validation helps to streamline the process and keep data clean when the user is filling out forms. For full guidelines, refer to the [Forms](/components/form/usage) usage page.
 
----
+<div class="image-component">
+    <img src="images/text-input-usage-2.png" alt="Validation text example" />
+</div>
 
----
-
-> 
-> ![Validation on text field example](images/text-input-usage-2.png) > _Error example_
+_Error example_

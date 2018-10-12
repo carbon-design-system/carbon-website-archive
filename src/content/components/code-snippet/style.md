@@ -69,10 +69,8 @@ _Structure and spacing measurements for Multi-line Snippet | px / rem_
 | `.bx--snippet--inline`      | border-radius               | 4                       | -             |
 | `.bx--snippet--inline code` | padding-right, padding-left | 8 / 0.5                 | $spacing-xs   |
 
----
-
----
-
-> ![](images/code-snippet-style-3.png)
+<div class="image-component">
+    <img src="images/code-snippet-style-3.png" alt="" />
+</div>
 
 _Structure and spacing measurements for Inline Code Snippet | px / rem_

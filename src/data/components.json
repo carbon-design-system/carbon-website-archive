@@ -24,7 +24,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
-      "experimental": "under-review"
+      "experimental": "ready"
     },
     {
       "item": "Checkbox",
@@ -71,7 +71,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Dropdown",
@@ -81,7 +81,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "File Uploader",
@@ -100,6 +100,16 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "experimental": "not-available"
+    },
+    {
+      "item": "Inline Loading",
+      "added": "2.0.0",
+      "tag": "updated",
+      "status": "ready",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
       "experimental": "not-available"
     },
     {
@@ -200,7 +210,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
-      "experimental": "under-review"
+      "experimental": "ready"
     },
     {
       "item": "Search",
@@ -220,7 +230,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Slider",
@@ -284,7 +294,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Tooltip",
@@ -294,7 +304,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "UI Shell",
