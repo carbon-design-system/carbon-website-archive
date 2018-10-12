@@ -136,16 +136,18 @@ class Layout extends React.Component {
               ]}>
               <html lang="en" />
             </Helmet>
-            <SideNavToggleBtn
-              onToggleBtnClick={this.onToggleBtnClick}
-              isOpen={this.state.isOpen}
-            />
-            <SideNav
-              isFinal={this.state.isFinal}
-              isOpen={this.state.isOpen}
-              location={this.props.location}
-              clickToClose={this.clickToClose}
-            />
+            <div role="navigation" aria-label="Site Navigation">
+              <SideNavToggleBtn
+                onToggleBtnClick={this.onToggleBtnClick}
+                isOpen={this.state.isOpen}
+              />
+              <SideNav
+                isFinal={this.state.isFinal}
+                isOpen={this.state.isOpen}
+                location={this.props.location}
+                clickToClose={this.clickToClose}
+              />
+            </div>
             <div className={classNames}>
               {children}
               <Footer isExpanded={this.state.isOpen} />
