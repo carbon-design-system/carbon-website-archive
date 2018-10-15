@@ -18,35 +18,36 @@ tabs: ['Code', 'Usage', 'Style']
 | `.bx--btn--danger--primary:hover`                              | background-color         | $hover-danger    | #bd1427                |
 | `.bx--btn--danger--secondary:hover`                            | border                   | $support-01      | #e0182d                |
 
-<div data-insert-component="ImageGrid">
+<div class="image-grid">
   <div>
-    ![Example of a normal Primary Button](images/button-style-1.png)
+    <img src="images/button-style-1.png" alt="Example of a normal Primary Button"/>
   </div>
   <div>
-    ![Example of a Primary Button on hover](images/button-style-2.png)
+    <img src="images/button-style-2.png" alt="Example of a Primary Button on hover"/>
   </div>
   <div>
-    ![Example of a disabled Primary Button](images/button-style-3.png)
+    <img src="images/button-style-3.png" alt="Example of a disabled Primary Button"/>
   </div>
   <div>
-    ![Example of a Secondary Button](images/button-style-4.png)
+    <img src="images/button-style-4.png" alt="Example of a Secondary Button"/>
   </div>
   <div>
-    ![Example of a Secondary Button on hover](images/button-style-5.png)
+    <img src="images/button-style-5.png" alt="Example of a Secondary Button on hover"/>
   </div>
   <div>
-    ![Example of a disabled Secondary Button](images/button-style-6.png)
+    <img src="images/button-style-6.png" alt="Example of a disabled Secondary Button"/>
   </div>
   <div>
-    ![Example of a normal Ghost Button](images/button-style-15.png)
+    <img src="images/button-style-15.png" alt="Example of a Ghost Button"/>
   </div>
   <div>
-    ![Example of a Ghost Button on hover](images/button-style-16.png)
+    <img src="images/button-style-16.png" alt="Example of a Ghost Button on hover"/>
   </div>
   <div>
-    ![Example of a disabled Ghost Button](images/button-style-17.png)
+    <img src="images/button-style-17.png" alt="Example of a disabled Ghost Button"/>
   </div>
 </div>
+
 _Primary, Secondary, and Ghost Button state examples_
 
 ## Typography
@@ -70,36 +71,38 @@ A Button cannot have any element or text within 16 pixels / 1 rem of its borders
 | `.bx--btn .bx--btn__icon`        | margin-left, margin-right   | 8 / 0.5  | $spacing-xs   |
 | `.bx--btn--ghost .bx--btn__icon` | margin-left, margin-right   | 8 / 0.5  | $spacing-xs   |
 
-<div data-insert-component="ImageGrid">
+<div class="image-grid">
   <div>
-    ![Structure for a Primary Button](images/button-style-7.png)
+    <img src="images/button-style-7.png" alt="Structure for a Primary Button"/>
   </div>
   <div>
-    ![Structure for a small Primary Button](images/button-style-8.png)
+    <img src="images/button-style-8.png" alt="Structure for a small Primary Button"/>
   </div>
 </div>
+
 _Structure measurements for small and regular Primary Button | px / rem_
 
-<div data-insert-component="ImageGrid">
+<div class="image-grid">
   <div>
-    ![Spacing for Primary Button](images/button-style-9.png)
+    <img src="images/button-style-9.png" alt="Spacing for Primary Button"/>
   </div>
   <div>
-    ![Spacing for small Primary Button](images/button-style-10.png)
+    <img src="images/button-style-10.png" alt="Spacing for small Primary Button"/>
   </div>
   <div>
-    ![External Button spacing](images/button-style-11.png)
+    <img src="images/button-style-11.png" alt="External Button spacing"/>
   </div>
   <div>
-    ![Internal spacing for a Button with glyph](images/button-style-12.png)
+    <img src="images/button-style-12.png" alt="Internal spacing for a Button with glyph"/>
   </div>
   <div>
-  ![Ghost button spacing](images/button-style-13.png)
+    <img src="images/button-style-13.png" alt="Ghost button spacing"/>
   </div>
   <div>
-  ![Small Ghost button spacing](images/button-style-14.png)
+    <img src="images/button-style-14.png" alt="Small Ghost button spacing"/>
   </div>
 </div>
+
 _Spacing measurements for various Button types | px / rem_
 
 ### Recommended

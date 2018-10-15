@@ -12,15 +12,15 @@ tabs: ['Code', 'Usage', 'Style']
 | Single Date Picker | When a user needs to select one date, accompanied by a calendar widget.                     |
 | Simple Date Picker | When the date is known by the user, and they don't need a calendar to anticipate the dates. |
 
-<div data-insert-component="ImageGrid">
+<div class="image-grid">
   <div>
-    ![Range Date Picker](images/date-picker-usage-1.png)
+    <img src="images/date-picker-usage-1.png" alt="Range Date Picker"/>
   </div>
   <div>
-    ![Single Date Picker](images/date-picker-usage-2.png)
+    <img src="images/date-picker-usage-2.png" alt="Single Date Picker"/>
   </div>
   <div>
-    ![Simple Date Picker](images/date-picker-usage-3.png)
+    <img src="images/date-picker-usage-3.png" alt="Simple Date Picker"/>
   </div>
 </div>
 
@@ -54,6 +54,8 @@ The Simple Date Picker provides the user with a text input in which they can inp
 
 Time pickers provide the user with a text input in which they can input hours/minutes. Additionally, they can be accompanied by an “AM/PM” selection and a time zone selection, which is styled as an [Inline Select](/components/select).
 
-![Time picker example](images/time-picker-usage-1.png)
+<div class="image-component">
+    <img src="images/time-picker-usage-1.png" alt="Time picker examples" />
+</div>
 
 _Time picker used to set deployment time_

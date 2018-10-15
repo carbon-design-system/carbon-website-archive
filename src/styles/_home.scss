@@ -110,7 +110,8 @@
     @include typescale('beta');
   }
 
-  &--bold {
+  &--bold,
+  span {
     font-weight: 600;
   }
 }
@@ -399,4 +400,23 @@
   top: 4rem;
   left: 4rem;
   z-index: 1;
+}
+
+
+// Internal only
+.overview-page__banner.overview-page__banner--internal {
+  background: $brand-01;
+  color: $ibm-colors__gray--10;
+  align-items: normal;
+  height: 256px;
+  display: flex;
+  justify-content: flex-end;
+}   
+
+.overview-page__banner--internal {
+  .banner__logo {
+    text-transform: none;
+    padding: 0 0 32px 100px;
+    font-size: 48px;
+  }
 }

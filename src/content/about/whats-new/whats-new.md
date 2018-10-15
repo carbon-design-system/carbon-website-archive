@@ -1,5 +1,5 @@
 ---
-label: About Carbon
+label: About
 title: What's New
 ---
 <page-intro>October 2018</page-into>

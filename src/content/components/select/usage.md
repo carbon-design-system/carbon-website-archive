@@ -14,11 +14,9 @@ tabs: ['Code', 'Usage', 'Style']
 
 Small selects are commonly used in [Data Tables](/components/data-table). When using a Small select for a number selection, the increments in the select should be 10, 25, 50 and 100. The maximum amount of items a user can see per page is 100.
 
----
-
----
-
-> ![example of Small Select in Data Table](images/select-usage-3.png)
+<div class="image-component">
+    <img src="images/select-usage-3.png" alt="example of Small Select in Data Table" />
+</div>
 
 _Example of Small Select in Data Table_
 
@@ -26,11 +24,9 @@ _Example of Small Select in Data Table_
 
 Inline select is useful when you have multiple `select` fields within a form. Inline selects have less visual weight on a page, since stylistically they are borderless.
 
----
-
----
-
-> ![example of Inline Select](images/select-usage-4.png)
+<div class="image-component">
+    <img src="images/select-usage-4.png" alt="example of inline select" />
+</div>
 
 _Example of Inline Select_
 
@@ -46,11 +42,9 @@ Labels are essential to the usability of forms because they provide guidance to 
 
 Real time validation helps to streamline the process and keep data clean when the user is filling out forms. For full guidelines, refer to the [Forms](/components/form) usage page.
 
----
-
----
-
-> ![validation on select element](images/select-usage-1.png)
+<div class="image-component">
+    <img src="images/select-usage-1.png" alt="validation on select element" />
+</div>
 
 _Validation on Select_
 

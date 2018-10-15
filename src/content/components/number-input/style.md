@@ -60,10 +60,8 @@ The height of a Number Input is always the same. The width however, varies based
 | `.bx--number input[type='number']`       | box-shadow    | 1px      | -             |
 | `.bx--number input[type='number']:focus` | box-shadow    | 2px      | -             |
 
----
-
----
-
-> ![Structure and spacing for number input](images/number-input-style-1.png)
+<div class="image-component">
+    <img src="images/number-input-style-1.png" alt="Structure and spacing for number input" />
+</div>
 
 _Structure and spacing measurements for a Number Input | px / rem_
