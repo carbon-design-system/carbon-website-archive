@@ -5,6 +5,7 @@
 body {
   background: $ui-01;
   line-height: 1.5;
+  font-family: $font-family;
 }
 
 .side-nav + div, //Issue #51 weird bug where sometimes on reload of the page the classnames on container div disapear 
@@ -31,6 +32,11 @@ body {
 //---------------------------------------
 // Page styles
 //---------------------------------------
+
+button,
+.side-nav .bx--btn {
+  font-family: $font-family;
+}
 
 .page-content {
   padding: 4rem 12.5%;

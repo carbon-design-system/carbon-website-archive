@@ -28,6 +28,13 @@ export default class SideNav extends React.Component {
       );
     });
 
+    handleSkip = evt => {
+      if (evt.which === 13) {
+        document.activeElement.blur();
+        document.querySelector('#maincontent').focus();
+      }
+    };
+
   render() {
     const { GATSBY_CARBON_ENV } = process.env;
     const isInternal = GATSBY_CARBON_ENV == 'internal';
@@ -58,6 +65,9 @@ export default class SideNav extends React.Component {
                   this.props.clickToClose();
                 }}
               />
+              <a id="skip-to-content" href="#maincontent" className="skip-to-content" onKeyDown={this.handleSkip}>
+                Skip to main content
+              </a>
               <nav className={classNames}>
                 <div className="side-nav--header">
                   
@@ -75,7 +85,7 @@ export default class SideNav extends React.Component {
                   )}
                 </div>
                 <div className="side-nav--items">
-                  <ul className="side-nav__nav-items">{navItems}</ul>
+                  <ul role="menu" className="side-nav__nav-items">{navItems}</ul>
                   <div className="side-nav__links">
                     <Button
                       className="side-nav__link"

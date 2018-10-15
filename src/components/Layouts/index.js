@@ -112,7 +112,7 @@ class Layout extends React.Component {
         render={data => (
           <>
             <Helmet
-              title={isInternal ? data.site.siteMetadata.titleInternal : data.site.siteMetadata.titleInternal}
+              title={isInternal ? data.site.siteMetadata.titleInternal : data.site.siteMetadata.title}
               meta={[
                 {
                   name: 'description',
@@ -144,7 +144,7 @@ class Layout extends React.Component {
               location={this.props.location}
               clickToClose={this.clickToClose}
             />
-            <div className={classNames}>
+            <div className={classNames} id="maincontent">
               {children}
               <Footer isExpanded={this.state.isOpen} />
             </div>
