@@ -102,10 +102,10 @@ export default class SideNavItem extends React.Component {
             {item.title}{' '}
             <Icon
               className="side-nav__nav-item--arrow"
-              name="caret--down"
+              name="chevron--down"
               aria-hidden="true"
-              description="Menu arrow icon"
-              alt="Menu arrow icon"
+              description="Menu chevron icon"
+              alt="Menu chevron icon"
             />
           </button>
         ) : (
