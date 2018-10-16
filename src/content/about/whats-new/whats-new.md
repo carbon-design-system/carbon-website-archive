@@ -52,8 +52,8 @@ Go check out the [Swatches](/style/color/swatches) page to see the new color opt
 - The new, updated palette is available with Design Kit
 - The changes include (bold indicates a new color token):
 
-  - $ui-05 #5A6872 (passing 4.5:1, high contrast border, secondary icons)
-  - $ui-04 #8897A2 (passing 3:1, now used for emphasis borders)
+  - $ui-05 – #5A6872 (passing 4.5:1, high contrast border, secondary icons)
+  - $ui-04 – #8897A2 (passing 3:1, now used for emphasis borders)
   - $ui-03 – #DFE3E6 (not passing 3:1, now used for subtle borders)
   - $support-01 - #E0182D (passing 4.5:1)
   - $text-03 - #CDD1D4 (not passing 4,5:1, used only for placeholder text)
@@ -78,7 +78,7 @@ Go check out the [Swatches](/style/color/swatches) page to see the new color opt
 ## Design Kit
 
 - Download the latest version of the [Carbon Design Kit & Library](https://github.com/ibm/carbon-design-kit)
-- Components on the Component page are now split up into five different artboards: Controls, Inputs, Content, Navigation, Informative, and Data Tables
+- Components on the Component page are now split up into five different artboards: Controls, Content, Navigation, Inputs, and Data Tables
 - Library has been made more flexible and customizable
 - Kit and library have been updated with the new colors, components, and icon styles.
 
@@ -132,7 +132,7 @@ _Sketch Libraries in the Carbon Design Kit_
 
 ### Sketch Plugins
 
-With the latest release of the Design Kit, we've included the [Sketch Palettes](https://github.com/andrewfiorillo/sketch-palettes) plugin, which allows you to load in pre-saved palettes for Sketch. You can import Carbon's four color palettes (Carbon default theme, Data Vis primary, Data vis secondary, and Data Vis tertiary) into your working Sketch document.
+With the latest release of the Design Kit, we've included the [Sketch Palettes](https://github.com/andrewfiorillo/sketch-palettes) plugin, which allows you to load in pre-saved palettes for Sketch. You can import Carbon's four color palettes (Carbon default theme, Data Vis primary, Data Vis secondary, and Data Vis tertiary) into your working Sketch document.
 
 ![Sketch Palettes plugin](images/sketch-palettes.png)
 _Sketch Palettes plugin_
