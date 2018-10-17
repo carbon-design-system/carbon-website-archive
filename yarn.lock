@@ -3281,9 +3281,9 @@ capture-stack-trace@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.1.tgz#a6c0bbe1f38f3aa0b92238ecb6ff42c344d4135d"
 
-carbon-components-react@6.33.3:
-  version "6.33.3"
-  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.33.3.tgz#6386f959040b92d2ce427597756b6d4fdf0ce6be"
+carbon-components-react@6.39.3:
+  version "6.39.3"
+  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.39.3.tgz#20cb58462514e6b3fbec261cc8530c401e3868e8"
   dependencies:
     classnames "2.2.6"
     downshift "^1.31.14"
@@ -3295,9 +3295,9 @@ carbon-components-react@6.33.3:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@^9.26.0:
-  version "9.26.0"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.26.0.tgz#825023a8f8ed7d7b5f99bfb01d94bf0783e63a13"
+carbon-components@^9.29.1:
+  version "9.29.1"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.29.1.tgz#b74260df920f00d9a21c24553082dbc15b2506e1"
   dependencies:
     "@carbon/colors" "^0.0.1-alpha.0"
     carbon-icons "^7.0.7"

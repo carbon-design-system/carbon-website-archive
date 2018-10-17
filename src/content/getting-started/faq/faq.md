@@ -11,9 +11,13 @@ Carbon is the design system for IBM Cloud products. It is a series of individual
 
 Carbon has a [core team](https://github.com/orgs/carbon-design-system/people) of designers and front-end developers that are dedicated to developing and supporting the system. Our core team sits in the IBM Design Studio in Austin, Texas. There are also countless other designers and developers who also contribute back to [carbon-components](https://github.com/ibm/carbon-components#contributors) and [carbon-react](https://github.com/ibm/carbon-components-react#contributors).
 
+### Who can use Carbon?
+
+Anyone! Carbon is an open-source design system that is also the official product and digital design system for IBM. Carbon was originally developed to serve the IBM Cloud business unit, but has since expanded in scope to encompass all product and digital teams at IBM. [Contributions are welcome](/getting-started/contributing) from IBMers as well as the open-source community at large.
+
 ### How can I contribute and/or propose new components/ideas?
 
-We have contributing guidelines for [Developerss](/getting-started/contributing/developers) and [Designers](/getting-started/contributing/designers). We appreciate you helping out and contributing back.
+We have contributing guidelines for [Developers](/getting-started/contributing/developers) and [Designers](/getting-started/contributing/designers). We appreciate you helping out and contributing back.
 
 ### Which browsers are supported?
 
@@ -21,15 +25,13 @@ Carbon components is supported in the following browsers:
 
 - IE11
 - IE Edge latest
-- Firefox latest
+- Firefox latest/latest ESR
 - Chrome latest
 - Safari latest
 
 ### What language are the components written in?
 
-There are two different implementations of the Carbon Design System. One is a Vanilla.js library; that's written in ES6+, SCSS, and HTML and ships deliverables in vanilla javascript in ES5 as well as ES6, CSS, SCSS, and HTML. The other is a React library, that ships a React rewrite of the javascript, but uses the same CSS as the core library.
-
-There is also an unofficial, internal-only [Angular library](https://pages.github.ibm.com/adaniel/angular-carbon-components/) for Carbon Components that was built out by a team other than Carbon. Please note that we **do not** maintain this repo.
+There are currently three official implementations of the Carbon Design System. One is a Vanilla.js library; that's written in ES6+, SCSS, and HTML and ships deliverables in vanilla javascript in ES5 as well as ES6, CSS, SCSS, and HTML. There is also a React library, that ships a React rewrite of the javascript, but uses the same CSS as the core library and an Angular library, that ships an Angular rewrite of the javascript and also uses the same core CSS.
 
 ### I see a bug, how do I report it?
 

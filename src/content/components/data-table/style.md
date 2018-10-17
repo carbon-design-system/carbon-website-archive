@@ -92,9 +92,9 @@ After the simple table structure, tables can be enhanced by adding any of the fo
 | `.bx--table-sort-v2__icon`                                                       | padding                     | 2 / 0.125 | $spacing-3xs  |
 | `.bx--data-table-v2 td:first-of-type` </br> `.bx--data-table-v2 td:last-of-type` | padding-left, padding-right | 24 / 1.5  | $spacing-lg   |
 
-<div data-insert-component="ImageGrid">
+<div class="image-grid">
   <div>
-![Spacing for a basic Data Table](images/data-table-style-6.png)
+    <img src="images/.png" alt="Spacing for a basic Data Table"/>
 </div>
 </div>
 
@@ -114,12 +114,9 @@ _Structure and spacing measurements for a basic and an enhanced Data Table | px 
 | `.bx--toolbar > div`       | margin-left, margin-right | 4 / 0.25 | $spacing-2xs  |
 | `.bx--toolbar`             | margin-top, margin-bottom | 16 / 1   | $spacing-md   |
 
-<!-- Note: broken down by individual icons -->
 
----
-
----
-
-> ![Spacing for toolabr icons](images/data-table-style-7.png)
+<div class="image-component">
+    <img src="images/data-table-style-7.png" alt="Spacing for toolabr icons" />
+</div>
 
 _Structure and spacing measurements for toolbar icons | px / rem_

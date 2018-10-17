@@ -1,6 +1,6 @@
 {
-  "about-carbon": {
-    "title": "About Carbon",
+  "about": {
+    "title": "About",
     "sub-nav": {
       "whats-new": {
         "title": "What's New"
@@ -214,11 +214,17 @@
       "breadcrumb": {
         "title": "Breadcrumb"
       },
+      "button": {
+        "title": "Button"
+      },
       "checkbox": {
         "title": "Checkbox"
       },
       "link": {
         "title": "Link"
+      },
+      "radio-button": {
+        "title": "Radio Button"
       },
       "text-input": {
         "title": "Text Input"

@@ -19,12 +19,12 @@ tabs: ['Code', 'Usage', 'Style']
 | `.bx--loading`        | height, width | 84 / 5.25 | -             |
 | `.bx--loading--small` | height, width | 16 / 1    | -             |
 
-<div data-insert-component="ImageGrid">
+<div class="image-grid">
   <div>
-    ![Large spinner structure measurements](images/loading-style-1.png)
+    <img src="images/loading-style-1.png" alt="Large spinner structure measurements"/>
   </div>
   <div>
-    ![Small spinner structure measurements](images/loading-style-2.png)
+    <img src="images/loading-style-2.png" alt="Small spinner structure measurements"/>
   </div>
 </div>
 
@@ -34,8 +34,8 @@ _Structure measurements for small and large loading spinner | px / rem_
 
 The large Loading spinner should appear centered over a page or content that it is loading. Please note that the top-level navigation is not included in the page loading overlay.
 
-_
-![Large spinner in context example](images/loading-style-4.png)
-_
+<div class="image-component">
+    <img src="images/loading-style-4.png" alt="Large spinner in context example" />
+</div>
 
 _Example of a large loading spinner in product context_

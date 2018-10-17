@@ -15,12 +15,14 @@ It is best practice to use an Inline Loading component for any Create, Update, o
 ### Loading
 
 The **LOADING** state indicates that the action is still in progress.
+
 ![Example of a text Skeleton State in use on a Data Table](images/inline-loading-usage-1.png)
 _Example of the loading state for the Inline Loading component | px / rem_
 
 ### Success
 
 The **SUCCESS** state indicates that the action completed successfully.
+
 ![Example of a text Skeleton State in use on a Data Table](images/inline-loading-usage-2.png)
 _Example of the success state for the Inline Loading component | px / rem_
 

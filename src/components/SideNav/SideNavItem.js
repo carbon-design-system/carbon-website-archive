@@ -69,11 +69,14 @@ export default class SideNavItem extends React.Component {
         return '';
       }
 
+      const tabIndex = this.state.open;
+
       return (
-        <li className={subNavClasses} key={item}>
+        <li role="menuitem" tabIndex="-1" className={subNavClasses} key={item}>
           <Link
             activeClassName="side-nav__sub-nav-item--active"
-            to={`/${this.props.itemSlug}/${item}`}>
+            to={`/${this.props.itemSlug}/${item}`}
+            tabIndex={tabIndex ? 0 : -1}> 
             {subItems[item].title}
           </Link>
         </li>
@@ -92,24 +95,24 @@ export default class SideNavItem extends React.Component {
     });
 
     return (
-      <li className={navItemClasses}>
+      <li role="menuitem" tabIndex="-1" className={navItemClasses}>
         {hasSubNav ? (
           // eslint-disable-next-line
-          <button onClick={this.toggleSubNav}>
+          <button tabIndex="0" onClick={this.toggleSubNav}>
             {item.title}{' '}
             <Icon
               className="side-nav__nav-item--arrow"
-              name="caret--down"
+              name="chevron--down"
               aria-hidden="true"
-              description="Menu arrow icon"
-              alt="Menu arrow icon"
+              description="Menu chevron icon"
+              alt="Menu chevron icon"
             />
           </button>
         ) : (
           <Link to={`/${itemSlug}`}>{item.title}</Link>
         )}
         {hasSubNav && (
-          <ul className="side-nav__sub-nav">
+          <ul role="menu" aria-hidden="true" className="side-nav__sub-nav">
             {this.renderSubNavItems(item['sub-nav'], location, itemSlug)}
           </ul>
         )}

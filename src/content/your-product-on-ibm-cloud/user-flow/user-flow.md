@@ -11,7 +11,7 @@ discovery of your product to productive use.</page-intro>
 
 ## Contents
 
-###### test
+
 
 1.  [Discovery](#discovery)
 

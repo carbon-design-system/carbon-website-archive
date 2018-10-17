@@ -64,10 +64,8 @@ Text Input labels and placeholder text should be set in sentence case, with only
 ![Structure and spacing measurements for Text Input](images/text-input-style-2.png)
 _Structure and spacing measurements for Text Input | px / rem_
 
----
-
----
-
-> ![Active, help, error or disabled states for Text Input](images/text-input-style-3.png)
+<div class="image-component">
+    <img src="images/text-input-style-3.png" alt="Active, help, error or disabled states for Text Input" />
+</div>
 
 _Examples of active, help, error and disabled Text Input states_
