@@ -12,6 +12,7 @@ import Snippet from '../components/CodeSnippet';
 import PageTable from '../components/PageTable';
 import ClickTile from '../components/ClickableTile';
 import Example from '../components/Example';
+import ColorBlock from '../components/ColorBlock';
 import ColorCard from '../components/ColorCard';
 import IconLibrary from '../components/IconLibrary';
 import IconLibraryExperimental from '../components/IconLibrary/IconLibraryExperimental';
@@ -36,7 +37,6 @@ import {
   PageIntro,
   PageIcon,
   FlexGroup,
-  ColorBlock,
 } from '../components/markdown/Markdown';
 
 const renderAst = new rehypeReact({
@@ -82,7 +82,7 @@ export default ({ data, pageContent }) => {
   const isInternal = GATSBY_CARBON_ENV !== 'internal' && internal == true;
 
   const classNames = classnames('page-content', {
-    'page-content--component': post.frontmatter.label === 'Component'
+    'page-content--component': post.frontmatter.label === 'Component',
   });
 
   if (isInternal) {
