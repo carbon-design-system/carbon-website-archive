@@ -25,7 +25,7 @@ class Footer extends Component {
   };
 
   render() {
-    const lastUpdated = 'October 3, 2018';
+    const lastUpdated = 'October 17, 2018';
     const halloween = (
       <svg
         className="social-media__icon"
