@@ -10,7 +10,7 @@ title: Color in UI
 1. [Color Tokenization](#color-tokenization)
 2. [Color Anatomy](#color-anatomy)
 3. [Color Themes](#color-themes)
-4. [Color Roles] (#color-roles)
+4. [Color Roles](#color-roles)
 4. [High Contrast](#high-contrast)
 5. [Interaction States](#interaction-states)
 6. [Digital Accessibility](#digital-accessibility)
