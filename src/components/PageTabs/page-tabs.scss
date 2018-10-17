@@ -1,12 +1,17 @@
 .page-tabs {
-  padding-left: 12.5%;
-  padding-right: 12.5%;
+  padding-left: 3%;
+  padding-right: 3%;
   margin: -$spacing-3xl 0 0 0;
   width: auto;
   min-height: $spacing-3xl;
   height: auto;
   position: relative;
-  color: $text-01;
+  color: $text-01; 
+
+  @media all and (min-width: 620px) {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+  }
 }
 
 .page-tabs__list {
@@ -29,6 +34,10 @@
 
 .page-tabs__list li + li {
   margin-left: $spacing-3xl;
+
+  @media all and (max-width: 600px) {
+    margin-left: $spacing-lg;
+  }
 }
 
 .page-tabs__list li a {

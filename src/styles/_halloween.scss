@@ -1,0 +1,309 @@
+//---------------------------------------
+// Halloween 🎃
+//---------------------------------------
+
+$halloween-background: #171717;
+$halloween-background-02: #272d33;
+$halloween-text: #f2f4f8;
+$halloween-inverse-text: #171717;
+$halloween-brand-01: #fc7b1e;
+$halloween-brand-02: #00ef48;
+
+// Footer icon swapper
+.page-footer__social-media .social-media__link--halloween {
+  width: 60px;
+
+  &:hover .social-media__icon {
+    fill: $halloween-brand-01;
+  }
+}
+
+body.halloween {
+  background: $halloween-background;
+  color: $halloween-text;
+
+  * {
+    color: $halloween-text;
+  }
+
+  a {
+    color: $halloween-brand-01;
+
+    &:hover,
+    &:focus {
+      color: $halloween-text;
+    }
+  }
+
+  .side-nav {
+    background: $halloween-background;
+    border-color: $halloween-background-02;
+  }
+
+  // nav toggle button
+  .side-nav-toggle-btn {
+    background: $halloween-background-02;
+    border-color:  $halloween-background-02;
+  }
+
+  .side-nav-toggle-btn > div .line {
+    background: $halloween-text;
+  }
+
+  //nav item
+  .side-nav__nav-item a, .side-nav__nav-item button {
+    color: $halloween-text;
+
+    &:hover {
+      color: $halloween-text;
+    }
+  }
+
+  // Active side border, active tab border
+  .side-nav__nav-item--active > a,
+  li.side-nav__sub-nav-item--active {
+    border-color: $halloween-brand-02;
+  }
+
+  //nav hover background
+  .side-nav__sub-nav-item:hover,
+  .side-nav__nav-item a:hover, .side-nav__nav-item button:hover {
+    background: $halloween-background-02;
+    color: $halloween-text;
+
+    a {
+      color: $halloween-text;
+
+      &:focus {
+        color: $halloween-text;
+      }
+    }
+  }
+
+  // nav buttons 
+  .side-nav__link {
+    border-color: $halloween-brand-01;
+
+    &:hover,
+    &:focus {
+      background: $halloween-brand-01;
+      border-color: $halloween-brand-01;
+    }
+  }
+
+  .bx--btn--secondary .bx--btn__icon {
+    fill: $halloween-brand-01;
+  }
+
+  .bx--btn--secondary:hover,
+  .bx--btn--secondary:focus {
+    .bx--btn__icon {
+      fill: $halloween-text;
+    } 
+  }
+
+  .page-header {
+    background: $halloween-background-02;
+    border-color: $halloween-brand-01;
+  }
+
+
+  //footer 
+  .page-footer {
+    background: $halloween-background-02;
+
+    .page-footer__content .page-footer__text {
+      color: $halloween-text;
+    }
+  }
+  
+  .page-footer__content .page-footer__link {
+    color: $halloween-brand-01;
+
+    &:hover {
+      outline: none;
+    }
+
+    &:focus {
+      outline: 1px solid $halloween-brand-01;
+    }
+  }
+
+  .page-footer__social-media .social-media__link:hover .social-media__icon {
+    fill: $halloween-brand-01;
+  }
+
+  h1, h2, h3, h4,
+  .side-nav__nav-item a:hover, .side-nav__nav-item button:hover,
+  .side-nav__nav-item a:focus, .side-nav__nav-item button:focus {
+    color: $halloween-brand-01;
+  }
+
+  .page-h2:before,
+  h2:before {
+    background-color: $halloween-brand-02;
+  }
+
+  //page tabs
+  .page-tabs__list li.selected {
+    border-color: $halloween-brand-02;
+   
+    a {
+      color: $halloween-text;
+    }
+  }
+
+  .page-tabs__list {
+    bottom: 0;
+  }
+
+  .component-example__live {
+    background: $halloween-background-02;
+  }
+
+  // code
+  .page-content p > code, .page-content li > code, .page-content td > code {
+    color: $halloween-inverse-text;
+  }
+
+  // tables 
+  .page-table thead th, .component-docs table thead th, .typography-table table thead th, .type-styles-table table thead th {
+    border-color: $halloween-brand-02;
+  }
+
+  .component-docs pre[class*='language-']  {
+    background: $halloween-text!important;
+  }
+
+  //tile 
+  .bx--tile {
+    background: $halloween-background-02;
+  }
+
+  .tile--resource .tile__info h5,
+  .tile--article .tile__info h5 {
+    color: $halloween-text;
+  }
+
+  // glossary 
+  .glossary-entry .glossary-entry__subtext {
+    color: $halloween-text;
+  }
+
+  // code page
+  .component-toolbar__switcher .bx--radio-button__label {
+    color: $halloween-text;
+  }
+
+  // homepage
+  .overview-page__banner {
+    background: $halloween-background;
+
+    svg {
+      filter: grayscale(1) invert(1);
+    }
+  }
+
+  .overview-page__section.overview-page__section--gray {
+    background: $halloween-background;
+  }
+
+  .list-item__link img {
+    filter: hue-rotate(-200deg);
+  }
+
+  .banner__cta-btn {
+    border-color: $halloween-brand-01;
+
+    &:hover,
+    &:focus {
+      background: $halloween-brand-01;
+      border-color: $halloween-brand-01;
+    }
+  }
+
+  .overview-page__section {
+    background: $halloween-background-02;
+  }
+
+  .overview-page__section--contribute {
+    filter: grayscale(1);
+  }
+
+  .contribute__info h2 {
+    color: $halloween-text;
+  }
+
+  .list-item__info .list-item__heading {
+    color: $halloween-text;
+  }
+
+  .tile__icon img,
+  .gatsby-resp-image-image {
+    filter: grayscale(1) invert(1);
+  }
+
+  .overview-page .tile__info p  {
+    color: $halloween-text;
+  }
+
+  .contribute__info {
+    background: $halloween-background-02;
+    color: $halloween-text!important;
+
+    a {
+      border-color: $halloween-brand-01;
+    }
+  }
+
+  .overview-page {
+    background: $halloween-background-02;
+  }
+
+  .component-status__icon {
+    background: transparent;
+  }
+
+  .bx--tag {
+    color: black;
+  }
+
+  //search
+
+  .side-nav .bx--search--sm .bx--search-input {
+    background: $halloween-background-02;
+    color: $halloween-text;
+  }
+
+  .side-nav .bx--search--sm .bx--search-input {
+    fill: $halloween-text;
+  }
+
+  .side-nav .algolia-autocomplete .ds-dropdown-menu {
+    border-color: $halloween-background-02;
+  }
+
+  .side-nav .algolia-autocomplete .ds-dropdown-menu [class^=ds-dataset-],
+  .side-nav .algolia-autocomplete .algolia-docsearch-suggestion,
+  .side-nav .algolia-autocomplete .ds-dropdown-menu .ds-suggestion {
+    background: $halloween-background;
+    color: $halloween-text;
+    border-color: $halloween-background;
+  }
+
+  .side-nav .algolia-docsearch-suggestion--title,
+  .side-nav .algolia-docsearch-suggestion--text {
+    color: $halloween-text;
+  }
+
+  .side-nav .algolia-autocomplete .algolia-docsearch-suggestion--highlight {
+    color: $halloween-brand-01;
+    box-shadow: inset 0 -2px 0 0  $halloween-brand-01;
+  }
+
+  .side-nav .algolia-autocomplete .ds-dropdown-menu:before {
+   display: none;
+  }
+
+}
+

@@ -1,0 +1,29 @@
+//---------------------------------------
+// Halloween Components 🎃
+//---------------------------------------
+
+.halloween .component-example__live {
+    $bright-blue:  #fc7b1e;
+    $dark-blue: #fc7b1e;
+    
+    $brand-01: #fc7b1e;
+    $brand-02: #00ef48;
+    $brand-03: #fc7b1e;
+    $inverse-01: #152935;
+    $inverse-02: #272d33;
+    $ui-01: #202529;
+    $ui-02: #373d42;
+    $ui-03: #868d95;
+    $ui-04: #24a249;
+    $ui-05: #9deeb2;
+    $text-01: #f2f4f8;
+    $text-02: #9deeb2;
+    $text-03: #8c9ba5;
+    $field-01: rgba(255, 255, 255, .1);
+    $field-02: #171717;
+    $support-01: #da1e28;
+    $support-02: #8cd211;
+    $support-03: #efc100;
+    $support-04: #7cc7ff;
+    @import 'carbon-components/scss/globals/scss/styles.scss';
+}

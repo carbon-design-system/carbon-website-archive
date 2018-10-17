@@ -6,8 +6,8 @@
 //---------------------------------------
 // Page styles
 //---------------------------------------
-$bright-blue: #3c6df0;
-$dark-blue: #3057d5;
+$bright-blue: #3c6df0!default;
+$dark-blue: #3057d5!default;
 $brand-01: $dark-blue;
 $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial, sans-serif;
 
@@ -57,3 +57,9 @@ $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial, sans-se
 //---------------------------------------
 @import 'prism.css';
 @import 'syntax.css';
+
+//---------------------------------------
+// Halloween 🎃
+//---------------------------------------
+
+@import 'halloween';
