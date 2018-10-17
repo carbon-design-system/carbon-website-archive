@@ -5,8 +5,6 @@ import classNames from 'classnames';
 import CopyToClipboard from 'react-copy-to-clipboard';
 
 class Footer extends Component {
-
-
   static propTypes = {
     isExpanded: PropTypes.bool,
   };
@@ -92,7 +90,9 @@ class Footer extends Component {
         </g>
       </svg>
     );
-
+    
+    const { GATSBY_CARBON_ENV } = process.env;
+    const isInternal = GATSBY_CARBON_ENV == 'internal';
     const { isExpanded } = this.props;
     const version = Packages.dependencies['carbon-components'];
     const reactVersion = Packages.dependencies['carbon-components-react'];
@@ -146,14 +146,16 @@ class Footer extends Component {
         </div>
         <div className="page-footer__content">
           <ul className="page-footer__social-media">
-            <li>
-              <button 
-                className="social-media__link social-media__link--halloween" 
-                aria-label="Happy Halloween from Carbon"
-                onClick={() => document.body.classList.toggle('halloween')}>
-                {halloween}
-              </button>
-            </li>
+            {!isInternal ? (
+              <li>
+                <button 
+                  className="social-media__link social-media__link--halloween" 
+                  aria-label="Happy Halloween from Carbon"
+                  onClick={() => document.body.classList.toggle('halloween')}>
+                  {halloween}
+                </button>
+              </li>
+            ) : (null)}
             <li>
               <a
                 href="https://dribbble.com/_carbondesign"
