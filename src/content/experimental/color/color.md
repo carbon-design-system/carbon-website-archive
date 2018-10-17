@@ -1,6 +1,7 @@
 ---
 label: Experimental
 title: Color in UI
+internal: true
 ---
 
 <page-intro>Maintaining consistent and engaging digital interfaces throughout IBM—whether applications or experiences—demands extended guidance around color usage. The following concepts are the foundation as we strive to achieve balance and harmony through our user interface design.
@@ -20,7 +21,7 @@ title: Color in UI
 ## Color Tokenization
 Our palette is designed and implemented in a themable manner using tokens. Tokens are based on usage and purpose; so while the purpose of any given token will not change, the color value associated with it can be changed at any time. A color value can be associated with multiple tokens, but a token will only ever be associated with a single color value, per theme.
 
-Color values can also have multiple associated roles when the color is consistently used across those roles. This allows for uniform color application across themes while giving each theme the freedom to express its own individuality at a more detailed level. See [the themes section](https://duo.w3ibm.mybluemix.net/guidelines/themes/) for more information on theming and tokenization.
+Color values can also have multiple associated roles when the color is consistently used across those roles. This allows for uniform color application across themes while giving each theme the freedom to express its own individuality at a more detailed level. See [the themes section](guidelines/themes/) for more information on theming and tokenization.
 
 ![UI Examples](images/IBM_UI_Screens_new.gif)
 
@@ -39,16 +40,16 @@ We are starting with two core themes: light and dark. Each theme works with a sp
 
 ### Global Background Colors
 
-| Token                         | Role                                                         | Color Name     | Hex Value |                                                  |
-| :----------------------------- | :------------------------------------------------------------ | :-------------- | :--------- | :----------------------------------------------------- |
-| `$global-background-light-01`                   | Light Theme Background | White        | `ffffff`  | ![White](images/swatches/white.png)                |
-| `$global-background-dark-01`                   | Dark Theme Background                                             | Gray 100        | `171717`  | ![Gray 100](images/swatches/gray-100.png)               |
+| Token                         | Role                                                         | Color Name     | Value |                                                  
+| :----------------------------- | :------------------------------------------------------------ | :-------------- | :--------- | 
+| `$global-background-light-01`                   | Light Theme Background | White        | <color-block>#ffffff</color-block>                |
+| `$global-background-dark-01`                   | Dark Theme Background                                             | Gray 100        | <color-block>#171717</color-block>              |
 
 
 
 ### The Light Theme
 
-The light theme uses a White background; Gray 10 components are generally paired with White background, however inverse tokens can call a dark-themed value for components in the light theme when [more contrast is need.](#high-contrast)
+The light theme uses a White background; Gray 10 components are generally paired with White background, however inverse tokens can call a dark-themed value for components in the light theme when [more contrast is needed.](#high-contrast)
 
 ![Component Example 01](images/component_example_white_01.png)
 
@@ -58,7 +59,7 @@ The light theme uses a White background; Gray 10 components are generally paired
 
 ### The Dark Theme
 
-The dark theme uses a a Gray 100 background. Gray 90 components are generally paired with Gray 100 backgrounds, however inverse tokens can also call light-themed values for components in the dark theme when [more contrast is need.](#high-contrast)
+The dark theme uses a a Gray 100 background. Gray 90 components are generally paired with Gray 100 backgrounds, however inverse tokens can also call light-themed values for components in the dark theme when [more contrast is needed.](#high-contrast)
 
 
 ![Component Example 01](images/component_example_dark_01.png)
@@ -116,25 +117,25 @@ It's important to remember that these token names are not final. The information
 
 -->
 
-| Token                         | Role                                                         | Color Name     | Hex Value |                                                  |
-| :----------------------------- | :------------------------------------------------------------ | :-------------- | :--------- | :----------------------------------------------------- |
-| `$brand-01`                   | Primary brand <br>Interactive text <br> Primary icon color <br> Border highlight <br> Emphasis background | Blue 60        | `0062ff`  | ![Blue 60](images/swatches/blue-60.png)               |
-| `$brand-02`                   | Supporting brand                                             | Blue 80        | `0530ad`  | ![Blue 80](images/swatches/blue-80.png)               |
-| `$brand-03`                   | Tertiary brand <br> Loading                                | Blue 60        | `0062ff`  | ![Blue 60](images/swatches/blue-60.png)               |
-| `$ui-01`                      | Primary background <br> Layer 1 background                 | Gray 10        | `f3f3f3`  | ![Gray 10](images/swatches/gray-10.png)               |
-| `$ui-02`                      | Default page background <br> Layer 0 background <br> Secondary background | White          | `ffffff`  | ![White](images/swatches/white.png)                   |
-| `$ui-03`                      | Subtle border                                                | Gray 20        | `dcdcdc`  | ![Gray 20](images/swatches/gray-20.png)               |
-| `$ui-04`                      | 3:1 color contrast <br> Emphasis border                    | Gray 50        | `8c8c8c`  | ![Gray 50](images/swatches/gray-50.png)               |
-| `$ui-05`                      | 4.5:1 color contrast <br> High contrast border <br> Secondary icons | Gray 100       | `171717`  | ![Gray 100](images/swatches/gray-100.png)             |
-|`$inverse-01`| High contrast component background | Gray 80 | `3d3d3d` | ![Gray 100](images/swatches/gray-100.png) |
-| `$inverse-02` | Text for an inverse component | Gray 10 | `f3f3f3` | ![Gray 10](images/swatches/gray-10.png)  |
-| `$text-01`                    | Primary text <br> Body copy                                | Gray 100       | `171717`  | ![Gray 100](images/swatches/gray-100.png)             |
-| `$text-02`                    | Secondary text <br> Subtle text <br>Help text           | Gray 70        | `565656`  | ![Gray 70](images/swatches/gray-70.png)               |
-| `$text-03`                    | Placeholder text                                             | Gray 50        | `8c8c8c`  | ![Gray 50](images/swatches/gray-50.png)               |
-| `$support-01` | Error    | Red       | `d6182d`  | ![Support Red](images/swatches/support-red.png)       |
-| `$support-02` | Warning | Orange       | `f8792b`  | ![Support Orange](images/swatches/support-orange.png) |
-| `$support-03` | Caution | Yellow        | `fbCF47`  | ![Support Yellow](images/swatches/support-yellow.png) |
-| `$support-04` | Success  | Green        | `30a14c`  | ![Support Green](images/swatches/support-green.png)   |
+| Token                         | Role                                                         | Color Name     | Value |                                                  
+| :----------------------------- | :------------------------------------------------------------ | :-------------- | :--------- | 
+| `$brand-01`                   | Primary brand <br>Interactive text <br> Primary icon color <br> Border highlight <br> Emphasis background | Blue 60        |  <color-block>#0062ff</color-block>                |
+| `$brand-02`                   | Supporting brand                                             | Blue 80        |  <color-block>#0530ad</color-block>                |
+| `$brand-03`                   | Tertiary brand <br> Loading                                | Blue 60        |  <color-block>#0062ff</color-block>               |
+| `$ui-01`                      | Primary background <br> Layer 1 background                 | Gray 10        |  <color-block>#f3f3f3</color-block>               |
+| `$ui-02`                      | Default page background <br> Layer 0 background <br> Secondary background | White          |  <color-block>#ffffff</color-block>                   |
+| `$ui-03`                      | Subtle border                                                | Gray 20        |  <color-block>#dcdcdc</color-block>               |
+| `$ui-04`                      | 3:1 color contrast <br> Emphasis border                    | Gray 50        |  <color-block>#8c8c8c</color-block>               |
+| `$ui-05`                      | 4.5:1 color contrast <br> High contrast border <br> Secondary icons | Gray 100       |  <color-block>#171717</color-block>             |
+|`$inverse-01`| High contrast component background | Gray 80 |  <color-block>#3d3d3d</color-block> |
+| `$inverse-02` | Text for an inverse component | Gray 10 |  <color-block>#f3f3f3</color-block>  |
+| `$text-01`                    | Primary text <br> Body copy                                | Gray 100       |  <color-block>#171717</color-block>             |
+| `$text-02`                    | Secondary text <br> Subtle text <br>Help text           | Gray 70        |  <color-block>#565656</color-block>               |
+| `$text-03`                    | Placeholder text                                             | Gray 50        |  <color-block>#8c8c8c</color-block>               |
+| `$support-01` | Error    | Red       |  <color-block>#d6182d</color-block>       |
+| `$support-02` | Warning | Orange       |  <color-block>#f8792b</color-block> |
+| `$support-03` | Caution | Yellow        |  <color-block>#fbcf47</color-block> |
+| `$support-04` | Success  | Green        |  <color-block>#30a14c</color-block>   |
 
 <b> * Dark theme values are coming soon </b>
 
@@ -149,9 +150,11 @@ In some cases, it is helpful to apply light components to dark backgrounds or li
 
 The primary interaction states have been defined for all colors within the Duo palette. For values between 100 and 70, interaction gets lighter and for values between 60 and white, interaction gets darker.
 
-### Hover
+### Hover*
 
-A unique set of hex values and color tokens exists for the hover states. These colors are outside of the core Design Language Brand palette and can be considered as half steps in between two adjacent colors. <b>Hover values are coming soon.</b>
+A unique set of hex values and color tokens exists for the hover states. These colors are outside of the core Design Language Brand palette and can be considered as half steps in between two adjacent colors. 
+
+<b>*Hover values are coming soon.</b>
 
 
 ### Selected
@@ -222,7 +225,7 @@ The third type of color deficiency, Tritanopia, is the least common and refers t
 
 ### Accessibility Resources
 
-[Carbon and Accessibility](../guidelines/accessibility/overview) 
+See [Carbon and Accessibility](../guidelines/accessibility/overview) for more information.
 
 <!-- 
 ## Experimental theme
