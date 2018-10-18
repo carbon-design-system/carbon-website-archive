@@ -2,9 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { runInDebugContext } from 'vm';
 import classnames from 'classnames';
-// import CopyToClipboard from 'react-copy-to-clipboard';
-// import color from 'color';
-// import ReactGA from 'react-ga';
 
 export default class ColorBlock extends React.Component {
   static propTypes = {
