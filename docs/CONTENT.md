@@ -174,6 +174,9 @@ The carbon website has a handful of custom markdown components available for use
 - `<clickable-tile title="Title" author="John Smith" date="Janury 1, 2018" href="#"><img src="image.png" alt="Alt Text" type="article|resource" /></clickable-tile>`
 - `<example correct=true title="Ability" text='Example text or quote'></example>`
 - `<color-block showhex="true" size="xs">#ffaaaa</color-block>`
+  - `size` takes values of `xs`, `s`, `m`, `l` (12px, 24px, 40px, 80px respectively)
+  - `size` also accepts a number (e.g. `size="200"`, which would render a square that is 200px x 200px)
+  - leaving out these extra properties will default to no label, and a swatch size of 24px
 - `<color-card name="$ui-01" hex="#ffffff" border="true" small="true"></color-card>`
 
 ### Examples
