@@ -311,8 +311,8 @@
       "added": "9.0.0",
       "tag": "new",
       "status": "not-available",
-      "vanilla": "not-available",
-      "react": "not-available",
+      "vanilla": "under-review",
+      "react": "under-review",
       "angular": "not-available",
       "experimental": "under-review"
     }
