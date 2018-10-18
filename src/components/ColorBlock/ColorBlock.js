@@ -9,21 +9,19 @@ import classnames from 'classnames';
 export default class ColorBlock extends React.Component {
   static propTypes = {
     /**
-     * the hex code to be passed in as a value, if undefined then the content of `<color-block>` will be read as a string hex code
+     * should the hex be displayed? this will also prescribe a particular layout
      */
-    hex: PropTypes.string,
+    showhex: PropTypes.string,
     /**
-     * a string of the size "name" (e.g. 's'/'m'/'l', or accept a number)
-     * */
+     * `size` will pre-defined names sizes ('s'/'m'/'l') or a number that represents a value in pixels
+     */
     size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   };
 
   /**
-   * map string of display size to a size in px
-   * (assumed to be square)
+   * map string of display size to a size in px, or just return the number if a number was entered (assumed to be square)
    */
-  displaySize = () => {
-    const sizeString = this.props.size;
+  swatchSize = sizeString => {
     if (typeof sizeString == 'number') {
       return sizeString;
     } else if (sizeString === 'xs' || sizeString === 'XS') {
@@ -35,42 +33,27 @@ export default class ColorBlock extends React.Component {
     } else if (sizeString === 'l' || sizeString === 'L') {
       return '80px';
     } else {
-      return '12px';
+      return '24px';
     }
   };
 
-  /**
-   * determine if author has entered a property of "hex", or if they have only entered the hex as box content (deprecated usage)
-   */
-  hexString = () => {
-    if (this.props.hex) {
-      return this.props.hex;
-    } else {
-      return this.props.children;
+  renderHex(showhex, hex) {
+    let hexLabel = '';
+    if (showhex) {
+      hexLabel = hex;
     }
-  };
-
-  /**
-   * if there is no content inside the color-block, we'll return false
-   * if there *is* content inside the color-block, it will be used as the label
-   */
-  isLabel = () => {
-    if (typeof this.props.children == 'undefined') {
-      return false;
-    } else {
-      return true;
-    }
-  };
+    return hexLabel;
+  }
 
   render() {
-    const hex = this.hexString();
-    const squareSize = this.displaySize();
-    const showLabel = this.isLabel();
+    const hex = this.props.children;
+    const size = this.props.size;
+    const showhex = this.props.showhex == 'true' || this.props.showhex == true;
+    const squareSize = this.swatchSize(size);
 
     const colorBlockClassnames = classnames({
       'color-block__color': true,
-      'color-block__color--with-border': true,
-      'color-block__color--with-label': showLabel,
+      'color-block__color--with-label': showhex,
     });
     const colorBlockStyles = {
       backgroundColor: hex,
@@ -80,7 +63,7 @@ export default class ColorBlock extends React.Component {
 
     return (
       <div className="color-block">
-        {this.props.children}
+        {this.renderHex(showhex, hex)}
         <span className={colorBlockClassnames} style={colorBlockStyles} />
       </div>
     );

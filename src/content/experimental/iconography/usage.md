@@ -40,12 +40,12 @@ When **using icons,** all touch targets need to be 44px or higher. With that sai
 
 Interactive UI icons need to pass the same color contrast ratio as typography at a 4.5:1 ratio. UI icons are always a solid color. The color of the icon should depend on the importance of the icon's action.
 
-|                        | SCSS             | HEX y                              |
-| ---------------------- | ---------------- | ---------------------------------- |
-| Primary action         | $brand-01        | <color-block>#3d70b2</color-block> |
-| Primary action:hover   | $hover-primary   | <color-block>#30588C</color-block> |
-| Secondary action       | $ui-05           | <color-block>#5a6872</color-block> |
-| Secondary action:hover | $hover-secondary | <color-block>#3d70b2</color-block> |
+|                        | SCSS             | HEX y                                                       |
+| ---------------------- | ---------------- | ----------------------------------------------------------- |
+| Primary action         | $brand-01        | <color-block showhex="true" size="xs">#3d70b2</color-block> |
+| Primary action:hover   | $hover-primary   | <color-block showhex="true" size="xs">#30588C</color-block> |
+| Secondary action       | $ui-05           | <color-block showhex="true" size="xs">#5a6872</color-block> |
+| Secondary action:hover | $hover-secondary | <color-block showhex="true" size="xs">#3d70b2</color-block> |
 
 **Exception:** There is an exception to both the `brand-01` and UI color rules. Certain icons, such as status or notification icons, can inherit their parent color. For example, a warning icon is yellow because warning notifications are yellow.
 
