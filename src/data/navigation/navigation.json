@@ -231,6 +231,9 @@
       },
       "toggle": {
         "title": "Toggle"
+      },
+      "tooltip": {
+        "title": "Tooltip"
       }
     }
   },
