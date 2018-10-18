@@ -155,7 +155,7 @@
       "vanilla": "not-available",
       "react": "ready",
       "angular": "ready",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Notification",
@@ -174,7 +174,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Pagination",
@@ -248,7 +248,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Tabs",
@@ -285,7 +285,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Toggle",
@@ -294,7 +294,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "under-review"
+      "experimental": "ready"
     },
     {
       "item": "Tooltip",
