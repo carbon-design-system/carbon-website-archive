@@ -128,7 +128,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Loading",
@@ -239,7 +239,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Structured List",
@@ -266,7 +266,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Text Input",
@@ -304,7 +304,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
-      "experimental": "under-review"
+      "experimental": "ready"
     },
     {
       "item": "UI Shell",
