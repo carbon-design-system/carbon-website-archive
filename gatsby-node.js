@@ -1,5 +1,6 @@
 const path = require('path');
 const { createFilePath } = require(`gatsby-source-filesystem`);
+const { copy } = require('fs-extra');
 
 // Method that creates nodes based on the file system that we can use in our templates
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -135,4 +136,16 @@ exports.onCreateWebpackConfig = ({ actions, getConfig, stage }) => {
       ],
     },
   });
+};
+
+exports.onPostBuild = () => {
+  let src;
+  try {
+    src = path.resolve(path.dirname(require.resolve('carbon-icons')), 'svg');
+  } catch (err) {
+    console.error('Error locating the icons directory', err.stack);
+    return;
+  }
+  const dst = path.resolve(__dirname, 'public/assets/icons');
+  return copy(src, dst);
 };
