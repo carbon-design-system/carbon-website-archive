@@ -18,20 +18,6 @@ export class PageIcon extends React.Component {
   }
 }
 
-export class ColorBlock extends React.Component {
-  render() {
-    const styles = {
-      backgroundColor: this.props.children,
-    };
-    return (
-      <span className="color-block">
-        {this.props.children}
-        <span className="color-block__color" style={styles} />
-      </span>
-    );
-  }
-}
-
 export class FlexGroup extends React.Component {
   render() {
     return <div className="page-flex-group">{this.props.children}</div>;

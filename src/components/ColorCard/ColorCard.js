@@ -40,10 +40,10 @@ export default class ColorCard extends React.Component {
     if (ColorHEX.charAt(0) === '#') {
       const ConvertedHEX = color(ColorHEX);
       return ConvertedHEX.luminosity() > 0.44
-        ? 'color-block__button--dark'
-        : 'color-block__button--light';
+        ? 'color-card__button--dark'
+        : 'color-card__button--light';
     }
-    return 'color-block__button--dark';
+    return 'color-card__button--dark';
   };
 
   render() {
@@ -52,13 +52,13 @@ export default class ColorCard extends React.Component {
     const buttonClassName = this.colorContrast(this.props.hex);
 
     const classNames = classnames({
-      'color-block': true,
+      'color-card': true,
     });
 
     const exampleClassNames = classnames(name, {
-      'color-block__example': true,
-      'color-block__example--border': border,
-      'color-block__example--small': small,
+      'color-card__example': true,
+      'color-card__example--border': border,
+      'color-card__example--small': small,
     });
 
     return (
@@ -76,8 +76,8 @@ export default class ColorCard extends React.Component {
             </button>
           </CopyToClipboard>
         </div>
-        <p className="color-block__name">{name}</p>
-        <p className="color-block__hex">{hex}</p>
+        <p className="color-card__name">{name}</p>
+        <p className="color-card__hex">{hex}</p>
       </div>
     );
   }

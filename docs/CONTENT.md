@@ -2,7 +2,7 @@
 
 ## File Structure
 
-All markdown files live inside of the `src/content` folder and follow the site navigation. They live inside a folder that is named the same as the file unless it is a page with tabbed navigation. "Tabbed" pages *(for example Getting Starter > Developers)* should have all the pages inside the same folder, with the file name matching the page title. 
+All markdown files live inside of the `src/content` folder and follow the site navigation. They live inside a folder that is named the same as the file unless it is a page with tabbed navigation. "Tabbed" pages _(for example Getting Starter > Developers)_ should have all the pages inside the same folder, with the file name matching the page title.
 
 ```
 src
@@ -14,7 +14,9 @@ src
                 ├── image2.png
           ├── designers.md
 ```
+
 or
+
 ```
 src
 ├── content
@@ -88,18 +90,18 @@ Smaller image w/ text wrapping
 ![Example](https://user-images.githubusercontent.com/2753488/45236528-b02cb980-b2a1-11e8-9e81-af4ec353d3e9.png)
 
 #### Image Component
+
 Image components are used on component pages under the Style and Usage tabs to display an image with padding around it and a light background color. See the tooltip page for an examples
 
 ```
 <div class="image-component">
     <img src="images/tooltip-style-1.png" alt="Closed and open states for a Tooltip" />
 </div>
-
 ```
 
 #### Image Grid
 
-Image grids are used on component pages, usually under the "Style" tab to display a group of images in a grid. See the button page for an example. 
+Image grids are used on component pages, usually under the "Style" tab to display a group of images in a grid. See the button page for an example.
 
 ```
 <div class="image-grid">
@@ -142,12 +144,13 @@ We support inline code and code blocks.
 
 ## Custom Markdown Components
 
-The carbon website has a handful of custom markdown components available for use inside any markdown file. Some are meant to be global and others were created for very specific use cases. 
+The carbon website has a handful of custom markdown components available for use inside any markdown file. Some are meant to be global and others were created for very specific use cases.
 
 ### Video
+
 ```
   `video: https://www.youtube.com/embed/2Xc9gXyf2G4`
-  `youtube: https://www.youtube.com/watch?v=2Xc9gXyf2G4` 
+  `youtube: https://www.youtube.com/watch?v=2Xc9gXyf2G4`
   `youtube: 2Xc9gXyf2G4`
 
   `vimeo: https://vimeo.com/5299404`
@@ -170,7 +173,10 @@ The carbon website has a handful of custom markdown components available for use
 - `<flex-group>`
 - `<clickable-tile title="Title" author="John Smith" date="Janury 1, 2018" href="#"><img src="image.png" alt="Alt Text" type="article|resource" /></clickable-tile>`
 - `<example correct=true title="Ability" text='Example text or quote'></example>`
-- `<color-block>#ff0000</color-block>`
+- `<color-block showhex="true" size="xs">#ffaaaa</color-block>`
+  - `size` takes values of `xs`, `s`, `m`, `l` (12px, 24px, 40px, 80px respectively)
+  - `size` also accepts a number (e.g. `size="200"`, which would render a square that is 200px x 200px)
+  - leaving out these extra properties will default to no label, and a swatch size of 24px
 - `<color-card name="$ui-01" hex="#ffffff" border="true" small="true"></color-card>`
 
 ### Examples
@@ -289,4 +295,3 @@ This will render the following set of examples
     variation="MultiSelect"
     >
 ```
-

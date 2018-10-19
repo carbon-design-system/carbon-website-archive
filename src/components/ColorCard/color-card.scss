@@ -1,4 +1,4 @@
-.color-block {
+.color-card {
   margin-bottom: 3rem;
 
   &--small {
@@ -10,7 +10,7 @@
   }
 }
 
-.color-block__example {
+.color-card__example {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,8 +43,8 @@
   }
 }
 
-.color-block__button--dark,
-.color-block__button--light {
+.color-card__button--dark,
+.color-card__button--light {
   background: transparent;
   border: 2px solid currentColor;
   padding: 0.5em 0.75em;
@@ -55,19 +55,19 @@
   opacity: 0;
 }
 
-.color-block__button--dark {
+.color-card__button--dark {
   color: $text-01;
 }
 
-.color-block__button--light {
+.color-card__button--light {
   color: $inverse-01;
 }
 
-.color-block__name {
+.color-card__name {
   font-weight: 600;
 }
 
-.color-block__hex {
+.color-card__hex {
   padding: 0;
   font-size: 14px;
 }

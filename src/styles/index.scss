@@ -9,7 +9,8 @@
 $bright-blue: #3c6df0!default;
 $dark-blue: #3057d5!default;
 $brand-01: $dark-blue;
-$font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial, sans-serif;
+$font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
+  sans-serif;
 
 @import 'mixins';
 @import 'page';
@@ -30,6 +31,7 @@ $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial, sans-se
 @import '../components/SideNavToggleBtn/side-nav-toggle-btn.scss';
 @import '../components/Footer/footer.scss';
 @import '../components/Example/example.scss';
+@import '../components/ColorBlock/color-block.scss';
 @import '../components/ColorCard/color-card.scss';
 @import '../components/IconCard/icon-card.scss';
 @import '../components/IconEmptyState/icon-empty-state.scss';
