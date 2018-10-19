@@ -77,7 +77,7 @@ Use the SVG sprite (**carbon-icons.svg**) by serving it as a static asset.
 Then reference the SVG icon you want to display using a path to the SVG sprite file.
 To use SVG sprite files, they **must** be distributed through a web server and while using `svgxuse`.
 
-```html
+```
 <!-- From static assets  -->
 <svg>
   <use xlink:href="/path_to_static-assets/carbon-icons.svg#icon_name"></use>
@@ -92,13 +92,13 @@ To use SVG sprite files, they **must** be distributed through a web server and w
 
 You can override size and color with CSS.
 
-```html
+```
 <svg class="icon">
   <use xlink:href="/path_to_static-assets/carbon-icons.svg#icon_name"></use>
 </svg>
 ```
 
-```css
+```
 .icon {
   width: 24px;
   height: 24px;
@@ -131,7 +131,7 @@ Carbon icons ship with two main SVG files that contain different sets of externa
 
 For screen reader accessibility, provide a context-rich title for the SVG using `<title>` element.
 
-```html
+```
 <svg>
   <title>Add a new service</title>
   <use xlink:href="/carbon-icons/dist/icon--add--glyph"></use>
@@ -142,7 +142,7 @@ If support for older browsers is needed, use `aria-labelledby` attribute to refe
 The `<title>` element will be read by the screen reader to the user so it should describe its purpose.
 Make sure that you do not duplicate this `id`.
 
-```html
+```
 <svg aria-labelledby="add">
   <title id="add">Add a new service</title>
   <use xlink:href="/carbon-icons/dist/icon--add"></use>
