@@ -220,6 +220,9 @@
       "checkbox": {
         "title": "Checkbox"
       },
+      "dropdown": {
+        "title": "Dropdown"
+      },
       "link": {
         "title": "Link"
       },
