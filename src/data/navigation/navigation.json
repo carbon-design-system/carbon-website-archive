@@ -232,6 +232,9 @@
       "text-input": {
         "title": "Text Input"
       },
+      "tile": {
+        "title": "Tile"
+      },
       "toggle": {
         "title": "Toggle"
       },
