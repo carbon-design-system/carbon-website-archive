@@ -40,24 +40,6 @@
 }
 
 //----------------------------
-// Colorblock
-//----------------------------
-
-.color-block {
-  position: relative;
-}
-
-.color-block__color {
-  position: absolute;
-  top: $spacing-3xs;
-  left: 5rem;
-  display: block;
-  height: 12px;
-  width: 12px;
-  border: 1px solid $ui-03;
-}
-
-//----------------------------
 // h2
 //----------------------------
 
@@ -153,12 +135,12 @@ h3:not(.bx--toast-notification__title) {
 }
 
 .gatsby-resp-image-background-image {
-  background: transparent!important; // Need important to override inline style added by gatsby-remark-images
+  background: transparent !important; // Need important to override inline style added by gatsby-remark-images
 }
 
 .page-content--component .gatsby-resp-image-image {
-  box-shadow: none!important; // Need important to override inline style added by gatsby-remark-images
-  border: none!important;
+  box-shadow: none !important; // Need important to override inline style added by gatsby-remark-images
+  border: none !important;
 }
 
 //----------------------------
