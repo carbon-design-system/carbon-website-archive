@@ -223,6 +223,9 @@
       "link": {
         "title": "Link"
       },
+      "number-input": {
+        "title": "Number Input"
+      },
       "radio-button": {
         "title": "Radio Button"
       },

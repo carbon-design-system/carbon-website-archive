@@ -3765,10 +3765,10 @@ carbon-components-react@6.41.0:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@^9.31.0:
-  version "9.31.0"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.31.0.tgz#fc83926be24590e7b94dd0bd4828c96e2e9e5e27"
-  integrity sha512-rKKr5m34QJ6zrubqgO7GbGx5aS+P3A651ID+97NTc5xyUqmoMqWFp/h/Ov0vizEekNhcJTeadNSutqkkI4SqPQ==
+carbon-components@^9.33.0:
+  version "9.33.0"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.33.0.tgz#202c96c7cbc265cf12407513ef03e0a025f937bf"
+  integrity sha512-ZjOl5bJ6QLVOJdvkagsaNaqxLymZtuSiCoTUFha5fy1WajSt+2eD78lvxNwcEil1a5kkFcmpGHgoK5+zPkwv1Q==
   dependencies:
     "@carbon/colors" "^0.0.1-alpha.0"
     carbon-icons "^7.0.7"
