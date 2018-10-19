@@ -228,6 +228,9 @@
       },
       "text-input": {
         "title": "Text Input"
+      },
+      "toggle": {
+        "title": "Toggle"
       }
     }
   },

@@ -10,6 +10,7 @@ import favicon32 from '../../content/global/images/favicon-32.png';
 
 import '../../styles/index.scss';
 import '../../styles/experimental.scss';
+import '../../styles/halloween-components.scss';
 
 class Layout extends React.Component {
   static propTypes = {
@@ -146,7 +147,7 @@ class Layout extends React.Component {
               location={this.props.location}
               clickToClose={this.clickToClose}
             />
-            <div className={classNames} id="maincontent">
+            <div className={classNames}>
               {children}
               <Footer isExpanded={this.state.isOpen} />
             </div>
