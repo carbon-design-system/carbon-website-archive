@@ -249,3 +249,103 @@
 .carbon-demo-experimental .demo--form-item {
   margin-bottom: $spacing-lg;
 }
+
+//---------------------------------------
+// Experimental Tooltip
+//---------------------------------------
+
+.demo--tooltip {
+  @include layer('overlay');
+  @include reset;
+  position: absolute;
+  display: none;
+  min-width: rem(208px);
+  max-width: rem(288px);
+  // Need to add new UI color -- IBM Color Gray 80
+  background: $tooltip-background-color;
+  margin-top: $spacing-2xs;
+  padding: rem(16px) rem(16px) rem(24px) rem(16px);
+  border-radius: rem(2px);
+  z-index: z('floating');
+  word-wrap: break-word;
+  // Need to change inverse color to Gray--10 across the board?
+  color: $ui-01;
+
+  p {
+    @include font-family;
+    @include typescale('zeta');
+  }
+
+  // Need to change HTML to use small button, not override regular button styles
+  button {
+    height: auto;
+    padding: $button-padding-sm;
+    padding-right: rem(32px);
+  }
+
+  .demo--link {
+    // Need to add new link / UI color -- IBM Color Blue 40
+    color: $link-inverse-color;
+    font-size: rem(14px);
+
+    &:active {
+      color: $ui-01;
+    }
+
+    &:vistited {
+      color: $link-inverse-color;
+    }
+  }
+
+  .demo--tooltip__caret {
+    position: absolute;
+    // Need to add new UI color -- IBM Color Gray 80
+    background: $tooltip-background-color;
+    left: 0;
+    top: rem(-4px);
+    right: 0;
+    transform: rotate(-135deg);
+    width: 0.6rem;
+    height: 0.6rem;
+    margin: 0 auto;
+    content: '';
+  }
+
+  .demo--tooltip__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: rem(-16px);
+  }
+
+  &[data-floating-menu-direction='left'] {
+    .demo--tooltip__caret {
+      left: auto;
+      top: 50%;
+      right: rem(-5px);
+      transform: rotate(-45deg) translate(50%, -50%);
+    }
+  }
+
+  &[data-floating-menu-direction='top'] {
+    .demo--tooltip__caret {
+      top: auto;
+      bottom: rem(-6px);
+      transform: rotate(45deg);
+    }
+  }
+
+  &[data-floating-menu-direction='right'] {
+    .demo--tooltip__caret {
+      left: rem(-5px);
+      top: 50%;
+      right: auto;
+      transform: rotate(135deg) translate(-50%, 50%);
+    }
+  }
+}
+
+.demo--tooltip--shown {
+  display: block;
+}
