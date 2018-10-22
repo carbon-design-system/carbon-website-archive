@@ -220,8 +220,14 @@
       "checkbox": {
         "title": "Checkbox"
       },
+      "dropdown": {
+        "title": "Dropdown"
+      },
       "link": {
         "title": "Link"
+      },
+      "number-input": {
+        "title": "Number Input"
       },
       "radio-button": {
         "title": "Radio Button"
@@ -229,8 +235,14 @@
       "text-input": {
         "title": "Text Input"
       },
+      "tile": {
+        "title": "Tile"
+      },
       "toggle": {
         "title": "Toggle"
+      },
+      "tooltip": {
+        "title": "Tooltip"
       }
     }
   },
