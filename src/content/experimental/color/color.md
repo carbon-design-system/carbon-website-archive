@@ -137,7 +137,7 @@ It's important to remember that these token names are not final. The information
 | `$support-03` | Caution | Yellow        |  <color-block>#fbcf47</color-block> |
 | `$support-04` | Success  | Green        |  <color-block>#30a14c</color-block>   |
 
-<b> * Dark theme values are coming soon </b>
+***Dark theme values are coming soon**
 
 ## High Contrast
 
@@ -154,8 +154,7 @@ The primary interaction states have been defined for all colors within the Duo p
 
 A unique set of hex values and color tokens exists for the hover states. These colors are outside of the core Design Language Brand palette and can be considered as half steps in between two adjacent colors. 
 
-<b>*Hover values are coming soon.</b>
-
+***Hover values are coming soon.**
 
 ### Selected
 
@@ -163,7 +162,7 @@ The selected state is one full step lighter for values between 100 and 70 and on
 
 ### Active
 
-The active state is two full steps lighter for values between 100 and 70 and two full steps darker for values between 60 and 10. See [Color Anatomy](#color-anatomy) above to reference the steps. <i>Exception: White shares the same active state as Gray 10. Example: the Blue 60 active state is Blue 80.</i>
+The active state is two full steps lighter for values between 100 and 70 and two full steps darker for values between 60 and 10. See [Color Anatomy](#color-anatomy) above to reference the steps. *Exception: White shares the same active state as Gray 10. Example: the Blue 60 active state is Blue 80.*
 
 
 <!--
