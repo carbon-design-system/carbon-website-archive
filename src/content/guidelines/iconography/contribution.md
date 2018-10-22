@@ -44,7 +44,7 @@ tabs: ['Library', 'Usage', 'Contribution']
 9. Click `Export 'Artboard-Name'`.
 10. Name icon with the `#name--modifier` convention. (ex. copy.svg, copy--glyph.svg, add.svg, add--glyph.svg).
 
-<div data-insert-component="Video" data-props="icon-sketch.mp4"></div>
+<!--<div data-insert-component="Video" data-props="icon-sketch.mp4"></div>-->
 
 ### How to export SVGs from Adobe Illustrator
 
@@ -63,7 +63,7 @@ tabs: ['Library', 'Usage', 'Contribution']
 
 ![export an icon from illustrator](images/icon-contribution-3.png)
 
-<div data-insert-component="Video" data-props="icon-illustrator.mp4"></div>
+<!--<div data-insert-component="Video" data-props="icon-illustrator.mp4"></div>-->
 
 ## Developer guidelines
 
