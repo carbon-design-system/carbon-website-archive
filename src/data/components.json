@@ -81,7 +81,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
-      "experimental": "under-review"
+      "experimental": "ready"
     },
     {
       "item": "File Uploader",
@@ -128,7 +128,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Loading",
@@ -155,7 +155,7 @@
       "vanilla": "not-available",
       "react": "ready",
       "angular": "ready",
-      "experimental": "under-review"
+      "experimental": "ready"
     },
     {
       "item": "Notification",
@@ -174,7 +174,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "under-review"
+      "experimental": "available"
     },
     {
       "item": "Pagination",
@@ -239,7 +239,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Structured List",
@@ -266,7 +266,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Text Input",
@@ -285,7 +285,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "under-review"
+      "experimental": "ready"
     },
     {
       "item": "Toggle",
@@ -304,15 +304,15 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
-      "experimental": "under-review"
+      "experimental": "ready"
     },
     {
       "item": "UI Shell",
       "added": "9.0.0",
       "tag": "new",
       "status": "not-available",
-      "vanilla": "not-available",
-      "react": "not-available",
+      "vanilla": "under-review",
+      "react": "under-review",
       "angular": "not-available",
       "experimental": "under-review"
     }
