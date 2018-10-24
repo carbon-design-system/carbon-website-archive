@@ -5,7 +5,7 @@ import { withKnobs, text, boolean, number, color, select } from '@storybook/addo
 
 import PageTabs from './PageTabs';
 
-const stories = storiesOf('PageTAbs', module);
+const stories = storiesOf('PageTabs', module);
 
 stories.addDecorator(withKnobs);
 
