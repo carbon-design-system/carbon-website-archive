@@ -226,11 +226,17 @@
       "link": {
         "title": "Link"
       },
+      "list": {
+        "title": "List"
+      },
       "number-input": {
         "title": "Number Input"
       },
       "radio-button": {
         "title": "Radio Button"
+      },
+      "slider": {
+        "title": "Slider"
       },
       "text-input": {
         "title": "Text Input"
