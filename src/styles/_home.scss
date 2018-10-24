@@ -266,9 +266,6 @@
 }
 
 .list-item__info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   max-width: 300px;
   text-decoration: none;
 
@@ -284,6 +281,7 @@
 
   .list-item__heading {
     @include typescale('alpha');
+    display: block;
     text-decoration: none;
     color: $text-01;
     font-weight: 300;
