@@ -10,21 +10,12 @@ class ComponentStatus extends React.Component {
     deprecatedIcon,
     notApplicableIcon
   ) => {
-    let status;
     let tag;
     let vanilla;
     let react;
     let angular;
     let experimental;
-    if (currentItem.status === "ready") {
-      status = readyIcon;
-    } else if (currentItem.status === "under-review") {
-      status = underReviewIcon;
-    } else if (currentItem.status === "deprecated") {
-      status = deprecatedIcon;
-    } else {
-      status = notApplicableIcon;
-    }
+    
     if (currentItem.tag && currentItem.tag === 'new') {
       tag = <span className="bx--tag bx--tag--ibm inline-tag">New</span>;
     }
@@ -35,9 +26,9 @@ class ComponentStatus extends React.Component {
     }
     if (currentItem.vanilla === "ready") {
       vanilla = readyIcon;
-    } else if (currentItem.status === "under-review") {
+    } else if (currentItem.vanilla === "under-review") {
       vanilla = underReviewIcon;
-    } else if (currentItem.status === "deprecated") {
+    } else if (currentItem.vanilla === "deprecated") {
       vanilla = deprecatedIcon;
     } else {
       vanilla = notApplicableIcon;
@@ -45,9 +36,9 @@ class ComponentStatus extends React.Component {
 
     if (currentItem.react === "ready") {
       react = readyIcon;
-    } else if (currentItem.status === "under-review") {
+    } else if (currentItem.react === "under-review") {
       react = underReviewIcon;
-    } else if (currentItem.status === "deprecated") {
+    } else if (currentItem.react === "deprecated") {
       react = deprecatedIcon;
     } else {
       react = notApplicableIcon;
@@ -55,9 +46,9 @@ class ComponentStatus extends React.Component {
 
     if (currentItem.angular === "ready") {
       angular = readyIcon;
-    } else if (currentItem.status === "under-review") {
+    } else if (currentItem.angular === "under-review") {
       angular = underReviewIcon;
-    } else if (currentItem.status === "deprecated") {
+    } else if (currentItem.angular === "deprecated") {
       angular = deprecatedIcon;
     } else {
       angular = notApplicableIcon;
@@ -85,6 +76,7 @@ class ComponentStatus extends React.Component {
     );
   };
 
+  
   render() {
     const readyIcon = (
       <div className="component-status__icon ready">

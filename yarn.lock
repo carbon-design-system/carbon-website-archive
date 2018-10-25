@@ -1937,12 +1937,12 @@ babel-code-frame@6.26.0, babel-code-frame@^6.22.0, babel-code-frame@^6.26.0:
     esutils "^2.0.2"
     js-tokens "^3.0.2"
 
-babel-core@7.0.0-bridge.0:
+babel-core@7.0.0-bridge.0, babel-core@^7.0.0-bridge.0:
   version "7.0.0-bridge.0"
   resolved "https://registry.yarnpkg.com/babel-core/-/babel-core-7.0.0-bridge.0.tgz#95a492ddd90f9b4e9a4a1da14eb335b87b634ece"
   integrity sha512-poPX9mZH/5CSanm50Q+1toVci6pv5KSRv/5TWCwtzQS5XEwn40BcCrgIeMFWP9CKKIniKXNxoIOnOq4VVlGXhg==
 
-babel-core@^6.0.0, babel-core@^6.26.0, babel-core@^6.26.3:
+babel-core@^6.0.0, babel-core@^6.26.0:
   version "6.26.3"
   resolved "https://registry.yarnpkg.com/babel-core/-/babel-core-6.26.3.tgz#b2e2f09e342d0f0c88e2f02e067794125e75c207"
   integrity sha512-6jyFLuDmeidKmUEb3NM+/yawG0M2bDZ9Z1qbZP59cyHLz8kYGKYwpJP0UwUKKUiTRNvxfLesJnTedqczP7cTDA==
@@ -3750,10 +3750,10 @@ capture-stack-trace@^1.0.0:
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.1.tgz#a6c0bbe1f38f3aa0b92238ecb6ff42c344d4135d"
   integrity sha512-mYQLZnx5Qt1JgB1WEiMCf2647plpGeQ2NMR/5L0HNZzGQo4fuSPnK+wjfPnKZV0aiJDgzmWqqkV/g7JD+DW0qw==
 
-carbon-components-react@6.41.0:
-  version "6.41.0"
-  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.41.0.tgz#6fe3390180dc0b1faae850ba2c2ec3f46e27ef71"
-  integrity sha512-PNM7Z5Ls9QMo4hEVBGm3DWfT4FaVGxh00hq4ARuBNGvwt7OEwzK5QALLLiWHayiuV0Bbp3ay3GOQ+9V+l1Ze/Q==
+carbon-components-react@6.43.0:
+  version "6.43.0"
+  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.43.0.tgz#5f679d77e410d871d9fe4be7a982d47a8097c938"
+  integrity sha512-Pp0ssorIrpMpL68ymK3S0b9jSzpgRaUi5sYSYmqHNMbkyzPVJXBZoZA730jv4UGv1znQ5DU8/HjYHHH13DrYrA==
   dependencies:
     classnames "2.2.6"
     downshift "^1.31.14"
@@ -3765,10 +3765,10 @@ carbon-components-react@6.41.0:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@^9.35.0:
-  version "9.35.0"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.35.0.tgz#6feaedf23cc852553f1634c971f040695044ac1a"
-  integrity sha512-fUZr8VhDRlZiIGk/Hqr3CyC3uwUqK11lFpDBYdek/Pz7IG46sePLQx24FXspuM15Lq61GvOHUIqrV8ezbbglMQ==
+carbon-components@^9.38.1:
+  version "9.38.1"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.38.1.tgz#ce70c671d2add5ada975eca1e31971db5a8da817"
+  integrity sha512-IsEyr5GxE3ELiVcZhfs5UTpAQ9tBan0tNn+aLbbkXf0o4KaQepSDq1N9P5WIH3Xk2xx++GZb9+Hm0dNFB/XAkA==
   dependencies:
     "@carbon/colors" "^0.0.1-alpha.0"
     carbon-icons "^7.0.7"

@@ -5,7 +5,7 @@ import { withKnobs, text, boolean, number, color, select } from '@storybook/addo
 
 import SideNavToggleBtn from './SideNavToggleBtn';
 
-const stories = storiesOf('SideNav', module);
+const stories = storiesOf('SideNavToggleBtn', module);
 
 stories.addDecorator(withKnobs);
 

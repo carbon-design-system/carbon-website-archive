@@ -9,7 +9,8 @@ export default class ComponentDocs extends React.Component {
   render() {
     const { component } = this.props;
 
-    let componentDocUrl;
+    let componentDocUrl = '';
+    // Loading README.md causes Storybook build failure as of now
     componentDocUrl = require(`carbon-components/src/components/${component}/README.md`);
 
     return (
