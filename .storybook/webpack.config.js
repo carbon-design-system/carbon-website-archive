@@ -1,16 +1,24 @@
 const path = require('path');
 
 module.exports = storybookBaseConfig => {
-  const babelLoaderRule = storybookBaseConfig.module.rules.find(rule => /\/babel-loader\//i.test(rule.loader));
-  return ({
+  const babelLoaderRule = storybookBaseConfig.module.rules.find(rule =>
+    /\/babel-loader\//i.test(rule.loader)
+  );
+  const markdownLoaderRule = storybookBaseConfig.module.rules.find(
+    rule =>
+      rule.use && rule.use.some(use => /\/markdown-loader\//i.test(use.loader))
+  );
+  return {
     ...storybookBaseConfig,
     module: {
       ...storybookBaseConfig.module,
       rules: [
-        ...storybookBaseConfig.module.rules.filter(rule => rule !== babelLoaderRule),
+        ...storybookBaseConfig.module.rules.filter(
+          rule => rule !== babelLoaderRule && rule !== markdownLoaderRule
+        ),
         {
           ...babelLoaderRule,
-            exclude: /(node_modules)[\/\\](?!(gatsby)[\/\\]).*/,
+          exclude: /(node_modules)[\/\\](?!(gatsby)[\/\\]).*/,
         },
         {
           test: /\.css$/,
@@ -50,16 +58,20 @@ module.exports = storybookBaseConfig => {
         },
         {
           test: /\.md$/,
-          loaders: ['html-loader', 'markdown-loader'],
+          use: ['html-loader', 'markdown-loader'],
         },
         {
           test: /\.(html|svg)$/,
-          loader: 'html-loader',
-          options: {
-            minimize: false,
-          },
+          use: [
+            {
+              loader: 'html-loader',
+              options: {
+                minimize: false,
+              },
+            },
+          ],
         },
       ],
-    }
-  });
+    },
+  };
 };
