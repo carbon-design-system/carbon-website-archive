@@ -1,14 +1,16 @@
 //---------------------------------------
 // Carbon Components
 //---------------------------------------
+
+$feature-flags: (
+  components-x: true,
+  ui-shell: true,
+);
 @import 'carbon-components/scss/globals/scss/styles.scss';
 
 //---------------------------------------
 // Page styles
 //---------------------------------------
-$bright-blue: #3c6df0!default;
-$dark-blue: #3057d5!default;
-$brand-01: $dark-blue;
 $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
   sans-serif;
 
