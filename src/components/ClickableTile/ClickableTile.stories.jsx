@@ -5,7 +5,7 @@ import { withKnobs, text, boolean, number, color, select } from '@storybook/addo
 
 import ClickTile from './ClickableTile';
 
-const stories = storiesOf('CodeSnippet', module);
+const stories = storiesOf('ClickableTile', module);
 
 stories.addDecorator(withKnobs);
 
