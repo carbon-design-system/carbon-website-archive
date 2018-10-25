@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component, createRef } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import CodeExample from '../CodeExample/CodeExample';
 import * as carbonComponents from 'carbon-components/es/globals/js/components';
 import InlineLoadingDemoButton from '../../content/components/inline-loading/inline-loading-demo-button';
+import on from 'carbon-components/es/globals/js/misc/on';
 import settings from 'carbon-components/es/globals/js/settings';
 import { RadioButtonGroup, RadioButton } from 'carbon-components-react';
 
@@ -77,7 +78,9 @@ class ComponentExample extends Component {
 
   _ref = null;
 
-  _instances = [];
+  _handles = [];
+
+  _liveContainerRef = createRef();
 
   _liveDemoRef = ref => {
     this._ref = ref;
@@ -92,8 +95,8 @@ class ComponentExample extends Component {
   }
 
   _releaseAndInstantiateComponents() {
-    const instances = this._instances;
-    for (let instance = instances.pop(); instance; instance = instances.pop()) {
+    const handles = this._handles;
+    for (let instance = handles.pop(); instance; instance = handles.pop()) {
       instance.release();
     }
     const ref = this._ref;
@@ -109,19 +112,44 @@ class ComponentExample extends Component {
         name => {
           const TheComponent = components[name];
           if (TheComponent) {
+            const options = {};
+            if (name === 'OverflowMenu' || name === 'Tooltip') {
+              ['objMenuOffset', 'objMenuOffsetFlip'].forEach(name => {
+                if (TheComponent.options[name]) {
+                  options[name] = (menuBody, direction) => {
+                    const origOffset = TheComponent.options[name](menuBody, direction);
+                    const liveContainerRef = this._liveContainerRef.current;
+                    if (liveContainerRef) {
+                      const { left: origLeft, top: origTop } = origOffset;
+                      const { left: liveContainerLeft, top: liveContainerTop } = liveContainerRef.getBoundingClientRect();
+                      const { left: bodyLeft, top: bodyTop } = liveContainerRef.ownerDocument.body.getBoundingClientRect();
+                      return {
+                        left: origLeft - liveContainerLeft + bodyLeft,
+                        top: origTop - liveContainerTop + bodyTop,
+                      }
+                    }
+                    return origOffset;
+                  };
+                }  
+              });
+            }
             if (TheComponent.prototype.createdByLauncher) {
               const initHandles = this.constructor._initHandles;
               if (!initHandles.has(TheComponent)) {
-                initHandles.set(TheComponent, TheComponent.init());
+                initHandles.set(TheComponent, TheComponent.init(elem, options));
               }
             } else {
               const selectorInit = TheComponent.options.selectorInit;
               // Gatsby's setup seems to use `.concat()` for [...arraylike], which does not work for `NodeList`
-              instances.push(
+              handles.push(
                 ...Array.from(ref.querySelectorAll(selectorInit)).map(elem =>
-                  TheComponent.create(elem)
+                  TheComponent.create(elem, options)
                 )
               );
+            }
+            if (name === 'Tooltip') {
+              handles.push(on(ref, 'floating-menu-shown', evt => {
+              }))
             }
           }
         }
@@ -194,7 +222,7 @@ class ComponentExample extends Component {
 
     return (
       <div className={lightUIclassnames}>
-        <div className={liveBackgroundClasses}>
+        <div className={liveBackgroundClasses} ref={this._liveContainerRef} data-floating-menu-container>
           <div className={classNames}>
             <div
               ref={this._liveDemoRef}
