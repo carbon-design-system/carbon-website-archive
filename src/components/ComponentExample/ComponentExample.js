@@ -147,10 +147,6 @@ class ComponentExample extends Component {
                 )
               );
             }
-            if (name === 'Tooltip') {
-              handles.push(on(ref, 'floating-menu-shown', evt => {
-              }))
-            }
           }
         }
       );
