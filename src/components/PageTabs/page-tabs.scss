@@ -43,7 +43,6 @@
 .page-tabs__list li a {
   @include typescale('epsilon');
   text-decoration: none;
-  text-transform: capitalize;
   color: $text-01;
   font-weight: 600;
   white-space: nowrap;
