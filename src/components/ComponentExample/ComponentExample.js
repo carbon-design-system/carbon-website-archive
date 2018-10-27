@@ -136,7 +136,7 @@ class ComponentExample extends Component {
             if (TheComponent.prototype.createdByLauncher) {
               const initHandles = this.constructor._initHandles;
               if (!initHandles.has(TheComponent)) {
-                initHandles.set(TheComponent, TheComponent.init(elem, options));
+                initHandles.set(TheComponent, TheComponent.init(ref, options));
               }
             } else {
               const selectorInit = TheComponent.options.selectorInit;
