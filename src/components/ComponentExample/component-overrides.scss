@@ -146,6 +146,10 @@
         color: $brand-01 !important;
       }
     }
+
+    .bx--checkbox-wrapper {
+      margin-bottom: $spacing-md;border: 1px solid red;;
+    }
   }
 
   & > .dropdown > div {
@@ -223,6 +227,13 @@
   display: block;
 }
 
+.component-example__live .bx--form-item.bx--checkbox-wrapper {
+  margin-bottom: $spacing-md;
+}
+
+.number-input div .bx--form-item:last-child .bx--number {
+  width: 300px;
+}
 
 //---------------------------------------
 // UI Shell
