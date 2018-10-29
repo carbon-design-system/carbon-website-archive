@@ -65,7 +65,7 @@ button,
   .gatsby-resp-image-link + em,
   .image-grid + p > em,
   .image-component + p > em {
-    font-size: .875em;
+    font-size: 0.875em;
     color: $text-02;
   }
 
@@ -127,4 +127,35 @@ button,
     background: $ui-03;
     border: 0px transparent;
   }
+}
+
+.page-navigation-controls {
+  background: #eee;
+  display: flex;
+}
+.page-navigation-link {
+  appearance: none;
+  background: #ffffff;
+  border: 1px solid #eee;
+  display: block;
+  flex: 50%;
+  font-family: inherit;
+  padding: 50px;
+  text-align: left;
+  text-decoration: none;
+
+  &:hover {
+    background: #e8e8f0;
+    border-color: #e8e8f0;
+    cursor: pointer;
+  }
+}
+.target-page-direction {
+  display: block;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.target-page-name {
+  display: block;
+  font-size: 24px;
 }

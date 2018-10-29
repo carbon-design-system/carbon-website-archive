@@ -8,6 +8,7 @@ import classnames from 'classnames';
 // Components
 import PageHeader from '../components/PageHeader';
 import PageTabs from '../components/PageTabs';
+import Pagination from '../components/Pagination';
 import Snippet from '../components/CodeSnippet';
 import PageTable from '../components/PageTable';
 import ClickTile from '../components/ClickableTile';
@@ -78,6 +79,10 @@ export default ({ data, pageContent }) => {
   let tabs = post.frontmatter.tabs;
   let internal = post.frontmatter.internal;
 
+  console.log('\n\n\n\n📃 page.js:');
+  console.log('currentPage: ' + currentPage);
+  console.log('slug: ' + slug);
+
   const { GATSBY_CARBON_ENV } = process.env;
   const isInternal = GATSBY_CARBON_ENV !== 'internal' && internal == true;
 
@@ -101,6 +106,7 @@ export default ({ data, pageContent }) => {
         {!(tabs === null) && (
           <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
         )}
+        <Pagination slug={slug} currentTab={currentPage} tabs={tabs} />
         <div className={classNames}> {renderAst(post.htmlAst)}</div>
       </Layout>
     );

@@ -115,7 +115,11 @@ class Layout extends React.Component {
         render={data => (
           <>
             <Helmet
-              title={isInternal ? data.site.siteMetadata.titleInternal : data.site.siteMetadata.title}
+              title={
+                isInternal
+                  ? data.site.siteMetadata.titleInternal
+                  : data.site.siteMetadata.title
+              }
               meta={[
                 {
                   name: 'description',
