@@ -129,25 +129,32 @@ button,
   }
 }
 
-.page-navigation-controls {
+.pagination-controls {
   background: #eee;
   display: flex;
 }
-.page-navigation-link {
+
+.pagination-link {
   appearance: none;
   background: #ffffff;
   border: 1px solid #eee;
   display: block;
   flex: 50%;
   font-family: inherit;
+  max-width: 50%;
   padding: 50px;
   text-align: left;
   text-decoration: none;
+  transition: background-color 0.3s ease;
+  &-next {
+    margin-left: auto;
+  }
 
   &:hover {
-    background: #e8e8f0;
-    border-color: #e8e8f0;
+    background: #f3f3fa;
+    border-color: #f3f3fa;
     cursor: pointer;
+    transition: background-color 0.1s ease;
   }
 }
 .target-page-direction {
