@@ -241,6 +241,9 @@
       "slider": {
         "title": "Slider"
       },
+      "tag": {
+        "title": "Tag"
+      },
       "text-input": {
         "title": "Text Input"
       },
