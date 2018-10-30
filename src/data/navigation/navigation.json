@@ -220,6 +220,9 @@
       "checkbox": {
         "title": "Checkbox"
       },
+      "date-picker": {
+        "title": "Date Picker"
+      },
       "dropdown": {
         "title": "Dropdown"
       },

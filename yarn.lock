@@ -3294,10 +3294,10 @@ carbon-components-react@6.43.0:
     lodash.omit "^4.5.0"
     warning "^3.0.0"
     window-or-global "^1.0.1"
-
-carbon-components@^9.40.0:
+carbon-components@^9.41.0:
   version "9.41.0"
   resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.41.0.tgz#7fe2beb1cfe086566460844e6612328748d79cc9"
+  integrity sha512-PfBkUTrDBITYXpvE6y30SSEDuiWENrGxEJ4b93SLzerklU6Y7Ntb0fvfhG4eF4GrWlKOXc7/zCRIgtf7aiQ52g==
   dependencies:
     "@carbon/colors" "^0.0.1-alpha.0"
     carbon-icons "^7.0.7"
