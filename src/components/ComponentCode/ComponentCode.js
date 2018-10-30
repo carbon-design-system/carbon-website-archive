@@ -31,7 +31,14 @@ export default class ComponentCode extends React.Component {
     } = this.props;
 
     let htmlFile;
-    htmlFile = require(`carbon-components/html/${component}/${variation}.html`);
+    if (experimental) {
+      try {
+        htmlFile = require(`../../html/${component}/${variation}.html`);
+      } catch (err) {}
+    }
+    if (!htmlFile) {
+     htmlFile = require(`carbon-components/html/${component}/${variation}.html`);
+    }
 
     return (
       <div className="component-variation">
@@ -52,3 +59,4 @@ export default class ComponentCode extends React.Component {
     );
   }
 }
+

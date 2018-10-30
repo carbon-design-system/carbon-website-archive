@@ -565,7 +565,7 @@ class IndexPage extends React.Component {
                 We welcome all feedback, designs, or ideas in order to produce
                 the best possible experience for our users. If you're interested
                 in contributing, check out our{' '}
-                <Link to="/getting-started/contributing">
+                <Link to="/contributing">
                   contributing guidelines
                 </Link>{' '}
                 to get started.
