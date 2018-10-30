@@ -1,3 +1,7 @@
+@import 'carbon-components/scss/globals/scss/spacing';
+@import 'carbon-components/scss/globals/scss/typography';
+@import 'carbon-components/scss/globals/scss/vars';
+
 .svg--sprite {
   @include hidden;
 }
@@ -204,6 +208,14 @@
 
   & .select .bx--select--inline {
     max-width: 400px;
+  }
+
+  h3.#{$prefix}--toast-notification__title {
+    @include typescale('zeta');
+    @include letter-spacing;
+    font-weight: 600;
+    line-height: 1;
+    padding: 0 0 $spacing-3xs 0;
   }
 }
 
