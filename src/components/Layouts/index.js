@@ -7,6 +7,15 @@ import SideNav from '../SideNav';
 import SideNavToggleBtn from '../SideNavToggleBtn';
 import Footer from '../Footer';
 import favicon32 from '../../content/global/images/favicon-32.png';
+import { 
+  Header, 
+  HeaderMenuButton, 
+  HeaderName, 
+  HeaderNavigation, 
+  HeaderMenu, 
+  HeaderMenuItem
+} from 'carbon-components-react/lib/components/UIShell';
+
 
 import '../../styles/index.scss';
 import '../../styles/experimental.scss';
@@ -137,6 +146,25 @@ class Layout extends React.Component {
               ]}>
               <html lang="en" />
             </Helmet>
+            <Header>
+              <HeaderMenuButton
+                aria-label="Open menu"
+                onClick={console.log('clicked')}
+              />
+              <HeaderName href="#" prefix="IBM">
+                [Platform]
+              </HeaderName>
+              <HeaderNavigation aria-label="IBM [Platform]">
+                <HeaderMenuItem href="#">Catalog</HeaderMenuItem>
+                <HeaderMenuItem href="#">Docs</HeaderMenuItem>
+                <HeaderMenuItem href="#">Support</HeaderMenuItem>
+                <HeaderMenu aria-label="Manage">
+                  <HeaderMenuItem href="#">Link 1</HeaderMenuItem>
+                  <HeaderMenuItem href="#">Link 2</HeaderMenuItem>
+                  <HeaderMenuItem href="#">Link 3</HeaderMenuItem>
+                </HeaderMenu>
+              </HeaderNavigation>
+            </Header>
             <SideNavToggleBtn
               onToggleBtnClick={this.onToggleBtnClick}
               isOpen={this.state.isOpen}
