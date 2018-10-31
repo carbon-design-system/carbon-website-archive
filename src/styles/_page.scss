@@ -90,8 +90,10 @@ button,
     margin-top: 0;
   }
 
-  // All links on Markdown pages
-  a {
+  // All links on Markdown pages but not inside component examples
+  & > div > * > a,
+  .page-table td a,
+  .page-ul a {
     color: $brand-01;
     font-weight: 600;
   }
