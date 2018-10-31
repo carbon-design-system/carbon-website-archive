@@ -11,7 +11,6 @@
     {
       "item": "Breadcrumb",
       "added": "7.0.0",
-      "status": "ready",
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
@@ -20,7 +19,6 @@
     {
       "item": "Button",
       "added": "2.0.0",
-      "status": "ready",
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
@@ -28,8 +26,7 @@
     },
     {
       "item": "Checkbox",
-      "added": "2.0.0",
-      "status": "ready",
+      "added": "2.0.0",     
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
@@ -38,46 +35,41 @@
     {
       "item": "Code Snippet",
       "added": "7.0.0",
-      "tag": "updated",
-      "status": "ready",
-      "vanilla": "ready",
-      "react": "ready",
-      "angular": "not-available",
-      "experimental": "not-available"
-    },
-    {
-      "item": "Content Switcher",
-      "added": "4.0.0",
-      "status": "ready",
-      "vanilla": "ready",
-      "react": "ready",
-      "angular": "ready",
-      "experimental": "not-available"
-    },
-    {
-      "item": "Data Table",
-      "added": "7.26.0",
-      "status": "ready",
-      "vanilla": "ready",
-      "react": "ready",
-      "angular": "ready",
-      "experimental": "not-available"
-    },
-    {
-      "item": "Date Picker",
-      "added": "7.10.1",
-      "tag": "updated",
-      "status": "ready",
+      "tag": "updated",     
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
       "experimental": "under-review"
     },
     {
+      "item": "Content Switcher",
+      "added": "4.0.0",     
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "ready",
+      "experimental": "under-review"
+    },
+    {
+      "item": "Data Table",
+      "added": "7.26.0",
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "ready",
+      "experimental": "under-review"
+    },
+    {
+      "item": "Date Picker",
+      "added": "7.10.1",
+      "tag": "updated",    
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "ready"
+    },
+    {
       "item": "Dropdown",
       "added": "2.0.0",
-      "tag": "updated",
-      "status": "ready",
+      "tag": "updated",     
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
@@ -85,37 +77,33 @@
     },
     {
       "item": "File Uploader",
-      "added": "7.0.0",
-      "status": "ready",
+      "added": "7.0.0",     
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Form",
       "added": "2.0.0",
-      "tag": "updated",
-      "status": "ready",
+      "tag": "updated",    
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Inline Loading",
       "added": "2.0.0",
-      "tag": "updated",
-      "status": "ready",
+      "tag": "updated",      
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Link",
-      "added": "2.0.0",
-      "status": "ready",
+      "added": "2.0.0",    
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
@@ -123,35 +111,31 @@
     },
     {
       "item": "List",
-      "added": "2.0.0",
-      "status": "ready",
+      "added": "2.0.0",      
+      "vanilla": "ready",
+      "react": "ready",
+      "angular": "not-available",
+      "experimental": "ready"
+    },
+    {
+      "item": "Loading",
+      "added": "5.0.0",     
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
       "experimental": "under-review"
     },
     {
-      "item": "Loading",
-      "added": "5.0.0",
-      "status": "ready",
-      "vanilla": "ready",
-      "react": "ready",
-      "angular": "not-available",
-      "experimental": "not-available"
-    },
-    {
       "item": "Modal",
-      "added": "4.3.0",
-      "status": "ready",
+      "added": "4.3.0",     
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Multiselect",
-      "added": "8.0.0",
-      "status": "ready",
+      "added": "8.0.0",      
       "vanilla": "not-available",
       "react": "ready",
       "angular": "ready",
@@ -159,54 +143,48 @@
     },
     {
       "item": "Notification",
-      "added": "6.0.0",
-      "status": "ready",
+      "added": "6.0.0",   
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Number Input",
       "added": "6.0.0",
       "tag": "updated",
-      "status": "ready",
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "available"
+      "experimental": "ready"
     },
     {
       "item": "Pagination",
       "added": "7.0.0",
-      "status": "ready",
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Progress Indicator",
       "added": "6.11.0",
-      "status": "ready",
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Overflow Menu",
       "added": "5.0.0",
-      "status": "ready",
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Radio Button",
       "added": "2.0.0",
-      "status": "ready",
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
@@ -216,17 +194,16 @@
       "item": "Search",
       "added": "2.0.0",
       "tag": "updated",
-      "status": "ready",
+      
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Select",
       "added": "4.0.0",
       "tag": "updated",
-      "status": "ready",
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
@@ -235,16 +212,14 @@
     {
       "item": "Slider",
       "added": "7.10.0",
-      "status": "ready",
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "under-review"
+      "experimental": "ready"
     },
     {
       "item": "Structured List",
       "added": "7.7.0",
-      "status": "ready",
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
@@ -253,26 +228,23 @@
     {
       "item": "Tabs",
       "added": "2.13.0",
-      "status": "ready",
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
-      "experimental": "not-available"
+      "experimental": "under-review"
     },
     {
       "item": "Tag",
       "added": "6.0.0",
-      "status": "ready",
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "under-review"
+      "experimental": "ready"
     },
     {
       "item": "Text Input",
       "added": "2.0.0",
       "tag": "updated",
-      "status": "ready",
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
@@ -281,7 +253,6 @@
     {
       "item": "Tile",
       "added": "7.22.0",
-      "status": "ready",
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
@@ -290,7 +261,6 @@
     {
       "item": "Toggle",
       "added": "4.0.0",
-      "status": "ready",
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
@@ -300,7 +270,6 @@
       "item": "Tooltip",
       "added": "2.0.0",
       "tag": "updated",
-      "status": "ready",
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
@@ -310,11 +279,10 @@
       "item": "UI Shell",
       "added": "9.0.0",
       "tag": "new",
-      "status": "not-available",
       "vanilla": "under-review",
       "react": "under-review",
       "angular": "not-available",
-      "experimental": "under-review"
+      "experimental": "ready"
     }
   ]
 }

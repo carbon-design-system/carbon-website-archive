@@ -109,6 +109,24 @@ For developer questions: #carbon-components, #carbon-react</p>
 <flex-group>
 <clickable-tile 
     type="article"
+    title="Up & Running with Carbon React in less than 5 minutes"
+    author="Josh Black" 
+    date="October 19, 2018"
+    href="https://medium.com/carbondesign/up-running-with-carbon-react-in-less-than-5-minutes-25d43cca059e" 
+    >
+    <img src="images/article-8.png" alt="Up & Running with Carbon React in less than 5 minutes" />
+</clickable-tile>
+<clickable-tile 
+    type="article"
+    title="Hacktoberfest with Carbon"
+    author="Josh Black" 
+    date="October 16, 2018"
+    href="https://medium.com/carbondesign/hacktoberfest-with-carbon-95c48943f586" 
+    >
+    <img src="images/article-7.png" alt="Hacktoberfest with Carbon" />
+</clickable-tile>
+<clickable-tile 
+    type="article"
     title="Data Table updates in Carbon React v5.22.0"
     author="Josh Black" 
     date="February 20, 2018"

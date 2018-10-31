@@ -220,17 +220,29 @@
       "checkbox": {
         "title": "Checkbox"
       },
+      "date-picker": {
+        "title": "Date Picker"
+      },
       "dropdown": {
         "title": "Dropdown"
       },
       "link": {
         "title": "Link"
       },
+      "list": {
+        "title": "List"
+      },
       "number-input": {
         "title": "Number Input"
       },
       "radio-button": {
         "title": "Radio Button"
+      },
+      "slider": {
+        "title": "Slider"
+      },
+      "tag": {
+        "title": "Tag"
       },
       "text-input": {
         "title": "Text Input"

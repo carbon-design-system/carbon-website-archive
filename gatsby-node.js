@@ -72,7 +72,7 @@ exports.createPages = ({ actions, graphql }) => {
         },
       });
       if (tabs.length > 1) {
-        const current = tabs[0].toLowerCase().replace(' ', '-');
+        const current = tabs[0].toLowerCase().split(' ').join('-');
         const lastIndex = currentPath.lastIndexOf(current);
         if (lastIndex >= 0) {
           currentPath = currentPath.slice(0, currentPath.lastIndexOf(current));
