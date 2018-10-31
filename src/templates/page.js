@@ -79,7 +79,7 @@ export default ({ data, pageContent }) => {
   let tabs = post.frontmatter.tabs;
   let internal = post.frontmatter.internal;
 
-  console.log('\n\n\n\n📃 page.js:');
+  console.log('\n\n\n\n☸️ page.js:');
   console.log('currentPage: ' + currentPage);
   console.log('slug: ' + slug);
 
@@ -89,6 +89,8 @@ export default ({ data, pageContent }) => {
   const classNames = classnames('page-content', {
     'page-content--component': post.frontmatter.label === 'Component',
   });
+  console.log('tabs:');
+  console.log(tabs);
 
   if (isInternal) {
     return (
@@ -106,7 +108,7 @@ export default ({ data, pageContent }) => {
         {!(tabs === null) && (
           <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
         )}
-        <Pagination slug={slug} currentTab={currentPage} tabs={tabs} />
+        <Pagination slug={slug} currentPage={currentPage} currentTabs={tabs} />
         <div className={classNames}> {renderAst(post.htmlAst)}</div>
       </Layout>
     );
