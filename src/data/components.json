@@ -47,7 +47,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
-      "experimental": "under-review"
+      "experimental": "ready"
     },
     {
       "item": "Data Table",
@@ -194,7 +194,6 @@
       "item": "Search",
       "added": "2.0.0",
       "tag": "updated",
-      
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
@@ -207,7 +206,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "under-review"
+      "experimental": "ready"
     },
     {
       "item": "Slider",

@@ -264,3 +264,15 @@
 .carbon-demo-experimental .demo--date-picker__input[data-invalid] {
   box-shadow: none;
 }
+
+//---------------------------------------
+// Experimental Select
+//---------------------------------------
+.carbon-demo-experimental .demo--select--inline .demo--select-input,
+.carbon-demo-experimental .demo--select-input[data-invalid] {
+  box-shadow: none;
+}
+
+.carbon-demo-experimental .demo--select-input[data-invalid] ~ .demo--select__arrow {
+  bottom: 2.125rem;
+}
