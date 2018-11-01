@@ -220,6 +220,9 @@
       "checkbox": {
         "title": "Checkbox"
       },
+      "content-switcher": {
+        "title": "Content Switcher"
+      },
       "date-picker": {
         "title": "Date Picker"
       },
@@ -237,6 +240,9 @@
       },
       "radio-button": {
         "title": "Radio Button"
+      },
+      "select": {
+        "title": "Select"
       },
       "slider": {
         "title": "Slider"
