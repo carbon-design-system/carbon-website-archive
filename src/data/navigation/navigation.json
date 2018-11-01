@@ -315,5 +315,8 @@
   },
   "resources": {
     "title": "Resources"
+  },
+  "help": {
+    "help": "Help"
   }
 }
