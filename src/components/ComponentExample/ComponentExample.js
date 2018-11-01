@@ -136,7 +136,7 @@ class ComponentExample extends Component {
             if (TheComponent.prototype.createdByLauncher) {
               const initHandles = this.constructor._initHandles;
               if (!initHandles.has(TheComponent)) {
-                initHandles.set(TheComponent, TheComponent.init(elem, options));
+                initHandles.set(TheComponent, TheComponent.init(ref.ownerDocument, options));
               }
             } else {
               const selectorInit = TheComponent.options.selectorInit;
@@ -146,10 +146,6 @@ class ComponentExample extends Component {
                   TheComponent.create(elem, options)
                 )
               );
-            }
-            if (name === 'Tooltip') {
-              handles.push(on(ref, 'floating-menu-shown', evt => {
-              }))
             }
           }
         }

@@ -44,7 +44,8 @@
 //----------------------------
 
 .page-h2,
-.page-content h2 {
+.page-content > div > h2,
+.component-docs h2 {
   @include typescale('beta');
   position: relative;
   color: $text-01;
@@ -72,11 +73,8 @@
 // h3
 //----------------------------
 
-h3,
-.page-h3,
-.page-content h3,
-.component-docs h3,
-h3:not(.bx--toast-notification__title) {
+.page-content > div > h3,
+.component-docs h3 {
   @include typescale('delta');
   color: $brand-01;
   padding: 4rem 0 1rem;
@@ -109,13 +107,13 @@ h3:not(.bx--toast-notification__title) {
   max-width: 38rem;
 }
 
-.page-ul li {
+.page-ul > li {
   font-weight: 400;
   padding-left: 0.25rem;
   list-style-type: disc;
 }
 
-.page-ol li {
+.page-ol > li {
   font-weight: 400;
   padding-left: 0.25rem;
   list-style-type: decimal;
@@ -160,7 +158,8 @@ blockquote p img {
 // Blockquote
 //----------------------------
 
-.page-content blockquote {
+.page-content blockquote,
+:not(.component-example blockquote) {
   margin: 1.75rem 0 0;
   line-height: 1.75;
   width: 100%;
@@ -176,7 +175,9 @@ blockquote p img {
 
 .page-h4,
 h5,
-h6 {
+h6,
+:not(.component-example h5),
+:not(.component-example h6) {
   .anchor {
     display: none;
   }
@@ -193,6 +194,7 @@ iframe.embedVideoIframe {
 //----------------------------
 // HR
 //----------------------------
-hr {
+hr,
+:not(.component-example hr) {
   display: none;
 }
