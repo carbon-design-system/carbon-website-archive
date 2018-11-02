@@ -247,6 +247,9 @@
       "slider": {
         "title": "Slider"
       },
+      "structured-list": {
+        "title": "Structured List"
+      },
       "tag": {
         "title": "Tag"
       },

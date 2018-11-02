@@ -222,7 +222,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "under-review"
+      "experimental": "ready"
     },
     {
       "item": "Tabs",
