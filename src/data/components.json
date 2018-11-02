@@ -147,7 +147,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
-      "experimental": "under-review"
+      "experimental": "ready"
     },
     {
       "item": "Number Input",

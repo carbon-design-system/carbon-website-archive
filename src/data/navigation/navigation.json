@@ -235,6 +235,9 @@
       "list": {
         "title": "List"
       },
+      "notification": {
+        "title": "Notification"
+      },
       "number-input": {
         "title": "Number Input"
       },
