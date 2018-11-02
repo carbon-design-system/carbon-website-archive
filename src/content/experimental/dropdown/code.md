@@ -8,14 +8,14 @@ tabs: ['Code', 'Usage']
 variations:
 
 <component 
-    name="Dropdown"
+    name="Experimental Dropdown"
     component="dropdown" 
     variation="dropdown"
     experimental="true"
     >
 </component>
 <component 
-    name="Dropdown (Up)"
+    name="Experimental Dropdown (Up)"
     component="dropdown" 
     variation="dropdown--up"
     codepen="eeGYvQ"
