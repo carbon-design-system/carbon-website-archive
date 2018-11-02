@@ -158,8 +158,7 @@ blockquote p img {
 // Blockquote
 //----------------------------
 
-.page-content blockquote,
-:not(.component-example blockquote) {
+.page-content blockquote {
   margin: 1.75rem 0 0;
   line-height: 1.75;
   width: 100%;
@@ -175,9 +174,7 @@ blockquote p img {
 
 .page-h4,
 h5,
-h6,
-:not(.component-example h5),
-:not(.component-example h6) {
+h6 {
   .anchor {
     display: none;
   }
@@ -194,7 +191,6 @@ iframe.embedVideoIframe {
 //----------------------------
 // HR
 //----------------------------
-hr,
-:not(.component-example hr) {
+hr {
   display: none;
 }
