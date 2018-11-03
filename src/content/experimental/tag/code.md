@@ -7,7 +7,7 @@ tabs: ['Code', 'Usage']
 <page-intro>**Tags** are used for items that need to be labeled, categorized, or organized using keywords that describe them.</page-intro>
 
 <component 
-    name="Tag"
+    name="Experimental Tag"
     component="tag" 
     variation="tag"
     experimental="true"
