@@ -276,3 +276,10 @@
 .carbon-demo-experimental .demo--select-input[data-invalid] ~ .demo--select__arrow {
   bottom: 2.125rem;
 }
+
+//---------------------------------------
+// Experimental Notification
+//---------------------------------------
+.component-example .carbon-demo-experimental .demo--inline-notification {
+  display: inline-flex;
+}
