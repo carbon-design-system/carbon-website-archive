@@ -20,6 +20,7 @@ body {
   @include breakpoint('840px') {
     margin-left: rem(256px);
     width: calc(100% - 256px);
+    margin-top: 48px;
   }
 }
 

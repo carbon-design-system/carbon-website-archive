@@ -2,21 +2,6 @@
 // PageIntro
 //----------------------------
 
-.page-intro {
-  display: block;
-  //max-width: 38rem;
-  color: $text-01;
-  word-wrap: break-word;
-  font-size: 1.125rem;
-  line-height: 1.5;
-  font-weight: 600;
-  padding-bottom: 1rem;
-  letter-spacing: 0;
-}
-
-.page-intro > strong {
-  color: $brand-01;
-}
 
 //----------------------------
 // PageIcon
@@ -66,6 +51,7 @@
   @include type-style('heading-04');
   color: $text-01;
   margin-bottom: rem(24px);
+  margin-top: rem(24px);
 }
 
 //----------------------------
@@ -78,6 +64,7 @@
   font-weight: font-weight('semibold');
   color: $text-01;
   padding: 0 0 1rem 0;
+  margin-top: rem(32px);
 }
 
 //----------------------------
