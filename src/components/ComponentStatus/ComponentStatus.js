@@ -17,11 +17,11 @@ class ComponentStatus extends React.Component {
     let experimental;
     
     if (currentItem.tag && currentItem.tag === 'new') {
-      tag = <span className="bx--tag bx--tag--ibm inline-tag">New</span>;
+      tag = <span className="bx--tag bx--tag--teal inline-tag">New</span>;
     }
     if (currentItem.tag && currentItem.tag === 'updated') {
       tag = (
-        <span className="bx--tag bx--tag--third-party inline-tag">Updated</span>
+        <span className="bx--tag bx--tag--blue inline-tag">Updated</span>
       );
     }
     if (currentItem.vanilla === "ready") {
@@ -210,14 +210,14 @@ class ComponentStatus extends React.Component {
               </tr>
               <tr>
                 <td>
-                  <span className="bx--tag bx--tag--ibm">New</span>
+                  <span className="bx--tag bx--tag--teal">New</span>
                 </td>
                 <td />
                 <td>This component is brand new to our library.</td>
               </tr>
               <tr>
                 <td>
-                  <span className="bx--tag bx--tag--third-party">Updated</span>
+                  <span className="bx--tag bx--tag--blue">Updated</span>
                 </td>
                 <td />
                 <td>
