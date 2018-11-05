@@ -4,7 +4,7 @@
 
 .page-intro {
   display: block;
-  max-width: 38rem;
+  //max-width: 38rem;
   color: $text-01;
   word-wrap: break-word;
   font-size: 1.125rem;
@@ -89,7 +89,7 @@
   @include typescale('epsilon');
   margin: 1rem 0 1rem 1.5rem;
   line-height: 1.75;
-  max-width: 38rem;
+  //max-width: 38rem;
 }
 
 .page-ul > li {
@@ -148,7 +148,7 @@ blockquote p img {
   margin: 1.75rem 0 0;
   line-height: 1.75;
   width: 100%;
-  max-width: 38rem;
+  //max-width: 38rem;
 }
 
 //----------------------------
