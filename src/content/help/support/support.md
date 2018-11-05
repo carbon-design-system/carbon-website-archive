@@ -1,7 +1,6 @@
 ---
 label: Help
 title: Support
-tabs: ['Support', 'FAQ']
 ---
 
 The Carbon core team provides support for users of the design system. Find the use case below that most closely matches your own for the quickest response.

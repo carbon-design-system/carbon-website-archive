@@ -1,7 +1,6 @@
 ---
 label: Help
 title: FAQ
-tabs: ['Support', 'FAQ']
 ---
 
 The following are some of the most frequently asked questions about the Carbon Design System. Please check back often, as the Carbon team is constanly adding new FAQs to this list. 
