@@ -11,9 +11,6 @@ import {
   Header, 
   HeaderMenuButton, 
   HeaderName, 
-  HeaderNavigation, 
-  HeaderMenu, 
-  HeaderMenuItem
 } from 'carbon-components-react/lib/components/UIShell';
 
 
@@ -152,18 +149,9 @@ class Layout extends React.Component {
                 onClick={console.log('clicked')}
               />
               <HeaderName href="#" prefix="IBM">
-                [Platform]
+                Product Design
               </HeaderName>
-              <HeaderNavigation aria-label="IBM [Platform]">
-                <HeaderMenuItem href="#">Catalog</HeaderMenuItem>
-                <HeaderMenuItem href="#">Docs</HeaderMenuItem>
-                <HeaderMenuItem href="#">Support</HeaderMenuItem>
-                <HeaderMenu aria-label="Manage">
-                  <HeaderMenuItem href="#">Link 1</HeaderMenuItem>
-                  <HeaderMenuItem href="#">Link 2</HeaderMenuItem>
-                  <HeaderMenuItem href="#">Link 3</HeaderMenuItem>
-                </HeaderMenu>
-              </HeaderNavigation>
+              
             </Header>
             <SideNavToggleBtn
               onToggleBtnClick={this.onToggleBtnClick}

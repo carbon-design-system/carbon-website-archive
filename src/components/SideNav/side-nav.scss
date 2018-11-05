@@ -227,15 +227,4 @@
   margin-bottom: $spacing-md;
   display: flex;
   justify-content: space-between;
-  border-color: $brand-01;
-  color: $brand-01;
-
-  &:hover,
-  &:focus {
-    background: $brand-01;
-  }
-
-  &:focus {
-    outline-color: $brand-01;
-  }
 }
