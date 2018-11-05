@@ -7,14 +7,14 @@ tabs: ['Code', 'Usage']
 <page-intro>**Toggle** is a control that is used to quickly switch between two possible states.</page-intro>
 
 <component 
-    name="Toggle"
+    name="Experimental Toggle"
     component="toggle" 
     variation="toggle"
     experimental="true"
     >
 </component>
 <component 
-    name="Small Toggle"
+    name="Experimental Small Toggle"
     component="toggle" 
     variation="toggle--small"
     experimental="true"

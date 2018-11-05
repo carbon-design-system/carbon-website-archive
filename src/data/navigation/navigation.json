@@ -235,6 +235,9 @@
       "list": {
         "title": "List"
       },
+      "notification": {
+        "title": "Notification"
+      },
       "number-input": {
         "title": "Number Input"
       },
@@ -246,6 +249,9 @@
       },
       "slider": {
         "title": "Slider"
+      },
+      "structured-list": {
+        "title": "Structured List"
       },
       "tag": {
         "title": "Tag"

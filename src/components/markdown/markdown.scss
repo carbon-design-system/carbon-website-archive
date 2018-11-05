@@ -143,8 +143,7 @@ blockquote p img {
 // Blockquote
 //----------------------------
 
-.page-content blockquote,
-:not(.component-example blockquote) {
+.page-content blockquote {
   margin: 1.75rem 0 0;
   line-height: 1.75;
   width: 100%;
