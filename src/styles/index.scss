@@ -6,8 +6,15 @@ $feature-flags: (
   components-x: true,
   ui-shell: true,
 );
-@import 'carbon-components/scss/globals/scss/styles.scss';
+//@import '@carbon/layout/scss/layout.scss';
 //@import '@carbon/grid/scss/grid.scss';
+//@import '@carbon/type/scss/type.scss';
+
+// There are temp files copied from carbon-elements
+@import 'carbon/type/scss/type.scss';
+
+@import 'carbon-components/scss/globals/scss/styles.scss';
+
 
 //---------------------------------------
 // Page styles
