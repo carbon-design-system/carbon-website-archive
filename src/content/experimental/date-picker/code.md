@@ -7,21 +7,21 @@ tabs: ['Code', 'Usage']
 <page-intro>**Date and time pickers** allow users to select a single or a range of dates and times.</page-intro>
 
 <component 
-    name="Simple Date Picker"
+    name="Experimental Simple Date Picker"
     component="date-picker" 
     variation="date-picker"
     experimental="true"
     >
 </component>
 <component 
-    name="Single Date Picker"
+    name="Experimental Single Date Picker"
     component="date-picker" 
     variation="date-picker--single"
     experimental="true"
     >
 </component>
 <component 
-    name="Range Date Picker"
+    name="Experimental Range Date Picker"
     component="date-picker" 
     variation="date-picker--range"
     experimental="true"
