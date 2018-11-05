@@ -20,6 +20,7 @@ body {
   @include breakpoint('840px') {
     margin-left: rem(256px);
     width: calc(100% - 256px);
+    margin-top: 48px;
   }
 }
 
@@ -129,4 +130,8 @@ button,
     background: $ui-03;
     border: 0px transparent;
   }
+}
+
+.bx--platform-header {
+  z-index: 9999;
 }
