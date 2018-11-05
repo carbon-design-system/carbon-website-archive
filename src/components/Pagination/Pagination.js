@@ -1,9 +1,23 @@
 import React from 'react';
-import { Location } from '@reach/router';
+import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import navigation from '../../data/navigation/navigation.json';
 
 export default class Pagination extends React.Component {
+  static propTypes = {
+    /**
+     * array of tabs on this current page
+     */
+    currentTabs: PropTypes.array,
+    /**
+     * the lower-case slug-friendly name of the page
+     */
+    currentPage: PropTypes.string,
+    /**
+     * the full slug of the current page*/
+    slug: PropTypes.string,
+  };
+
   /**
    * e.g.converts "Item Name" to "item-name"
    */
@@ -67,6 +81,7 @@ export default class Pagination extends React.Component {
     if (currentHasSubnav) {
       currentSubnavItem = slug.substr(1).split('/')[1];
     }
+    //TODO: add checks for if page is internal
     console.log('\n\n\n\n📃 Pagination.js:');
     console.log('Gatsby <Location> location: ');
     console.log(location);
@@ -79,17 +94,14 @@ export default class Pagination extends React.Component {
     console.log(`currentSubnavItem: ${currentSubnavItem}`);
 
     let prevPagePath;
-    let prevPageName;
+    let prevPageTitle;
     let nextPagePath;
-    let nextPageName;
+    let nextPageTitle;
 
     /**
-     *
-     * Logic to find previous and next sections, and assign prev/next
-     *
-     *  */
-
-    // tabs aren't in navigation. so lets first check if we have any sibling tabs to go to thru props, before we bother looking at the navigation data
+     * Neighboring tabs:
+     * tabs aren't in navigation. so lets first check if we have any sibling tabs to go to thru props, before we bother looking at the navigation data
+     */
     if (currentTabs !== null) {
       currentTabs.forEach((tab, index) => {
         if (this.tabNameToUrl(tab) === currentPage) {
@@ -98,112 +110,94 @@ export default class Pagination extends React.Component {
               currentParentPath +
               '/' +
               this.tabNameToUrl(currentTabs[index - 1]);
-            prevPageName = currentTabs[index - 1];
+            prevPageTitle = currentTabs[index - 1];
           }
           if (currentTabs[index + 1]) {
             nextPagePath =
               currentParentPath +
               '/' +
               this.tabNameToUrl(currentTabs[index + 1]);
-            nextPageName = currentTabs[index + 1];
+            nextPageTitle = currentTabs[index] + ': ' + currentTabs[index + 1];
           }
         }
       });
     }
 
     /**
-     * find the  previous sibling item in the current subnav
+     * find the previous and next siblings in the  subnav
      * if the above didn't assign a value to prevPagePath,
      * that means we were either at the first tab, or that there are no tabs on the current page.
      */
-
-    if (prevPagePath === undefined && currentHasSubnav) {
-      console.log('TESTING OBJECT KEYS');
+    if (
+      currentHasSubnav &&
+      (prevPagePath === undefined || nextPagePath === undefined)
+    ) {
       const subnavArray = Object.keys(navigation[currentSection]['sub-nav']);
-      console.log(subnavArray);
-      console.log(
-        subnavArray[this.getKeyByValue(subnavArray, currentSubnavItem)]
+      const currentSubnavIndex = this.getKeyByValue(
+        subnavArray,
+        currentSubnavItem
       );
-      prevPagePath = `/${currentSection}/${
-        subnavArray[this.getKeyByValue(subnavArray, currentSubnavItem) - 1]
-      }`;
-      // subnavArray.forEach((item, index) => {
-      //   console.log(item);
-      //   console.log(subnavArray[index]);
-      //   console.log(navigation[currentSection]['sub-nav'][item]);
-      //   console.log(navigation[currentSection]['sub-nav'][subnavArray[index]]);
-      // });
+
+      if (prevPagePath === undefined && currentSubnavIndex > 0) {
+        const prevPathSlugPart = subnavArray[currentSubnavIndex - 1];
+        const prevTitle =
+          navigation[currentSection]['sub-nav'][
+            subnavArray[currentSubnavIndex - 1]
+          ].title;
+        prevPagePath = `/${currentSection}/${prevPathSlugPart}`;
+        prevPageTitle = `${prevTitle}`;
+      }
+
+      if (
+        nextPagePath === undefined &&
+        currentSubnavIndex < subnavArray.length - 1
+      ) {
+        const nextPathSlugPart =
+          subnavArray[parseInt(currentSubnavIndex, 10) + 1];
+        const nextTitle =
+          navigation[currentSection]['sub-nav'][
+            subnavArray[parseInt(currentSubnavIndex, 10) + 1]
+          ].title;
+        nextPagePath = `/${currentSection}/${nextPathSlugPart}`;
+        nextPageTitle = `${nextTitle}`;
+      }
     }
 
-    // prevPagePath = `/${currentSection}/${subnavArray[index]}`;
-    // prevPageName = `${this.tabUrlToName(
-    //   currentSection
-    // )}:  ${this.tabUrlToName(prevSubnavItem)}`;
-    // for (let subnavItem in navigation[currentSection]['sub-nav']) {
-    //   if (subnavItem === currentSubnav) {
-    //     break;
-    //   }
-    //   prevSubnavItem = subnavItem; // this ends up getting assigned the previous subnav item!
-    //   if (prevSubnavItem !== undefined) {
-    //     console.log(`currentParentPath: ${currentParentPath}`);
-    //     prevPagePath = `/${currentSection}/${prevSubnavItem}`;
-    //     prevPageName = `${this.tabUrlToName(
-    //       currentSection
-    //     )}:  ${this.tabUrlToName(prevSubnavItem)}`;
-    //   }
-    // }
-
-    // if (prevPagePath === undefined) {
-    //   if (currentHasSubnav) {
-    //     let prevSubnavItem;
-    //     for (let subnavItem in navigation[currentSection]['sub-nav']) {
-    //       if (subnavItem === currentSubnav) {
-    //         break;
-    //       }
-    //       prevSubnavItem = subnavItem; // this ends up getting assigned the previous subnav item!
-    //       if (prevSubnavItem !== undefined) {
-    //         console.log(`currentParentPath: ${currentParentPath}`);
-    //         prevPagePath = `/${currentSection}/${prevSubnavItem}`;
-    //         prevPageName = `${this.tabUrlToName(
-    //           currentSection
-    //         )}:  ${this.tabUrlToName(prevSubnavItem)}`;
-    //       }
-    //     }
-    //   }
-    // }
-
     /**
-     * find the next sibling in the current subnav
+     * if still undefined, we need to look in other sections
      */
-    // if (nextPagePath === undefined) {
-    //   if (currentHasSubnav) {
-    //     let nextSubnavItem;
-    //     console.log('LOOPING navigation > current subnav');
-    //     let matcher;
-    //     for (let subnavItem in navigation[currentSection]['sub-nav']) {
-    //       console.log(subnavItem);
-    //       nextSubnavItem = subnavItem; // this ends up getting assigned the next subnav item!
-    //       if (matcher === currentSubnav) {
-    //         break;
-    //       }
-    //       // if (nextSubnavItem !== undefined) {
-    //       //   console.log(`currentParentPath: ${currentParentPath}`);
-    //       //   nextPagePath = `/${currentSection}/${nextSubnavItem}`;
-    //       //   nextPageName = `${this.tabUrlToName(
-    //       //     currentSection
-    //       //   )} >  ${this.tabUrlToName(prevSubnavItem)}`;
-    //       // }
-    //     }
-    //   }
-    // }
+    if (prevPagePath === undefined) {
+      const sectionArray = Object.keys(navigation);
+      const currentSectionIndex = this.getKeyByValue(
+        sectionArray,
+        currentSection
+      );
+      const prevSection = sectionArray[parseInt(currentSectionIndex) - 1];
+      const prevSectionObject = navigation[prevSection];
+      prevPagePath = `${prevSection}`;
+      prevPageTitle = prevSectionObject.title;
+
+      const prevHasSubnav = typeof prevSectionObject['sub-nav'] === 'object';
+      let prevSubnavArray = Object.keys(prevSectionObject['sub-nav']);
+      let prevSubnavTarget;
+      if (prevHasSubnav) {
+        prevSubnavTarget = prevSubnavArray[prevSubnavArray.length - 1];
+      }
+      if (prevSubnavTarget !== undefined) {
+        prevPagePath += `/${prevSubnavTarget}`;
+        prevPageTitle += `: ${
+          prevSectionObject['sub-nav'][prevSubnavTarget].title
+        }`;
+      }
+    }
 
     return (
       <div className="pagination-controls">
         {this.renderPaginationLinks(
           prevPagePath,
-          prevPageName,
+          prevPageTitle,
           nextPagePath,
-          nextPageName
+          nextPageTitle
         )}
       </div>
     );
