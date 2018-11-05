@@ -46,23 +46,11 @@
 .page-h2,
 .page-content > div > h2,
 .component-docs h2 {
-  @include typescale('beta');
+  @include type-style('heading-05');
   position: relative;
   color: $text-01;
-  margin-top: 6rem;
-  font-weight: 300;
-  padding: $spacing-md 0 3rem;
-
-  &:before {
-    content: '';
-    width: 5rem;
-    height: 0.3rem;
-    display: block;
-    background-color: $brand-01;
-    position: absolute;
-    top: -0.5rem;
-    left: 0;
-  }
+  margin-top: rem(80px);
+  margin-bottom: rem(24px);
 
   div &:first-child {
     margin-top: 0;
@@ -75,11 +63,9 @@
 
 .page-content > div > h3,
 .component-docs h3 {
-  @include typescale('delta');
-  color: $brand-01;
-  padding: 4rem 0 1rem;
-  font-weight: 600;
-  letter-spacing: 0;
+  @include type-style('heading-04');
+  color: $text-01;
+  margin-bottom: rem(24px);
 }
 
 //----------------------------
@@ -88,11 +74,10 @@
 
 .page-h4,
 .component-docs h4 {
+  @include type-style('heading-02');
+  font-weight('semibold');
   color: $text-01;
-  padding: 2rem 0 1rem;
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.25;
+  padding: 0 0 1rem 0;
 }
 
 //----------------------------
@@ -175,9 +160,7 @@ blockquote p img {
 
 .page-h4,
 h5,
-h6,
-:not(.component-example h5),
-:not(.component-example h6) {
+h6 {
   .anchor {
     display: none;
   }
@@ -194,7 +177,6 @@ iframe.embedVideoIframe {
 //----------------------------
 // HR
 //----------------------------
-hr,
-:not(.component-example hr) {
+hr {
   display: none;
 }
