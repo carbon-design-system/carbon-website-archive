@@ -19,9 +19,6 @@
       "developers": {
         "title": "Developers"
       },
-      "faq": {
-        "title": "FAQ"
-      },
       "add-ons": {
         "title": "Add-Ons"
       }
@@ -315,5 +312,17 @@
   },
   "resources": {
     "title": "Resources"
+  },
+  "help": {
+    "title": "Help",
+    "sub-nav": {
+      "support": {
+        "title": "Support"
+      },
+        "faq": {
+          "title": "FAQ"
+        }
+      }
+    }
   }
-}
+
