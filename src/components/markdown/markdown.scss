@@ -75,7 +75,7 @@
 .page-h4,
 .component-docs h4 {
   @include type-style('heading-02');
-  font-weight('semibold');
+  font-weight: font-weight('semibold');
   color: $text-01;
   padding: 0 0 1rem 0;
 }
