@@ -56,7 +56,7 @@ button,
   // All paragraphs on Markdown pages
   // And divs when markdown doesn't wrap text in paragraphs (when you have to use html for links to open in a new window)
   p {
-    max-width: 38rem;
+    //max-width: 38rem;
     line-height: 1.5;
     padding: 0 0 $spacing-md;
   }
@@ -72,7 +72,7 @@ button,
   // Images on component pages
   .image-component {
     background: $ui-02;
-    max-width: 38rem;
+    //max-width: 38rem;
     display: flex;
     justify-content: center;
     padding: $spacing-md 0;
@@ -90,8 +90,10 @@ button,
     margin-top: 0;
   }
 
-  // All links on Markdown pages
-  a {
+  // All links on Markdown pages but not inside component examples
+  & > div > * > a,
+  .page-table td a,
+  .page-ul a {
     color: $brand-01;
     font-weight: 600;
   }
@@ -122,7 +124,7 @@ button,
   hr.divider {
     display: block;
     margin: 3rem 0;
-    max-width: 38rem;
+    //max-width: 38rem;
     height: 1px;
     background: $ui-03;
     border: 0px transparent;

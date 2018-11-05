@@ -7,7 +7,7 @@ tabs: ['Code', 'Usage']
 <page-intro>**Lists** consist of related content grouped together and organized vertically.</page-intro>
 
 <component 
-    name="Ordered List"
+    name="Experimental Ordered List"
     component="list" 
     variation="list--ordered"
     experimental="true"
@@ -15,7 +15,7 @@ tabs: ['Code', 'Usage']
 </component>
 
 <component 
-    name="Unordered List"
+    name="Experimental Unordered List"
     component="list" 
     variation="list"
     experimental="true"

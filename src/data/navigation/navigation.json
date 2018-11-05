@@ -220,6 +220,12 @@
       "checkbox": {
         "title": "Checkbox"
       },
+      "content-switcher": {
+        "title": "Content Switcher"
+      },
+      "date-picker": {
+        "title": "Date Picker"
+      },
       "dropdown": {
         "title": "Dropdown"
       },
@@ -229,14 +235,26 @@
       "list": {
         "title": "List"
       },
+      "notification": {
+        "title": "Notification"
+      },
       "number-input": {
         "title": "Number Input"
       },
       "radio-button": {
         "title": "Radio Button"
       },
+      "select": {
+        "title": "Select"
+      },
       "slider": {
         "title": "Slider"
+      },
+      "structured-list": {
+        "title": "Structured List"
+      },
+      "tag": {
+        "title": "Tag"
       },
       "text-input": {
         "title": "Text Input"

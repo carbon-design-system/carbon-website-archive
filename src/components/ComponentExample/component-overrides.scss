@@ -223,6 +223,13 @@
   display: block;
 }
 
+.component-example__live .bx--form-item.bx--checkbox-wrapper {
+  margin-bottom: $spacing-md;
+}
+
+.number-input div .bx--form-item:last-child .bx--number {
+  width: 300px;
+}
 
 //---------------------------------------
 // UI Shell
@@ -248,4 +255,31 @@
 
 .carbon-demo-experimental .demo--form-item {
   margin-bottom: $spacing-lg;
+}
+
+
+//---------------------------------------
+// Experimental Date Picker
+//---------------------------------------
+.carbon-demo-experimental .demo--date-picker__input[data-invalid] {
+  box-shadow: none;
+}
+
+//---------------------------------------
+// Experimental Select
+//---------------------------------------
+.carbon-demo-experimental .demo--select--inline .demo--select-input,
+.carbon-demo-experimental .demo--select-input[data-invalid] {
+  box-shadow: none;
+}
+
+.carbon-demo-experimental .demo--select-input[data-invalid] ~ .demo--select__arrow {
+  bottom: 2.125rem;
+}
+
+//---------------------------------------
+// Experimental Notification
+//---------------------------------------
+.component-example .carbon-demo-experimental .demo--inline-notification {
+  display: inline-flex;
 }
