@@ -29,4 +29,4 @@ tabs: ['Designers', 'Developers']
 
 ## Carbon Component Angular
 
-[Contributing Guidelines](https://github.com/ibm/carbon-components-angular/blob/master/README.md#contributing)
+[Contributing Guidelines](https://github.com/IBM/carbon-components-angular/blob/master/README.md#contributing)
