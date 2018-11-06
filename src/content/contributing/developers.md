@@ -8,24 +8,24 @@ tabs: ['Designers', 'Developers']
 
 ## Carbon Components
 
-[Contributing Guidelines](https://github.com/ibm/carbon-components/blob/master/docs/contributing.md)
+[Contributing Guidelines](https://github.com/IBM/carbon-components/blob/master/.github/CONTRIBUTING.md)
 
-- [Requirements](https://github.com/ibm/carbon-components/blob/master/docs/contributing.md#requirements)
-- [Coding Style](https://github.com/ibm/carbon-components/blob/master/docs/contributing.md#coding-style)
-- [Files and Folders](https://github.com/ibm/carbon-components/blob/master/docs/contributing.md#files-and-folders)
-- [Start Contributing](https://github.com/ibm/carbon-components/blob/master/docs/contributing.md#start-contributing)
+- [Requirements](https://github.com/IBM/carbon-components/blob/master/.github/CONTRIBUTING.md#requirements)
+- [Coding Style](https://github.com/IBM/carbon-components/blob/master/.github/CONTRIBUTING.md#coding-style)
+- [Files and Folders](https://github.com/IBM/carbon-components/blob/master/.github/CONTRIBUTING.md#files-and-folders)
+- [Start Contributing](https://github.com/IBM/carbon-components/blob/master/.github/CONTRIBUTING.md#start-contributing)
 
 ## Carbon Components React
 
-[Contributing Guidelines](https://github.com/ibm/carbon-components-react/blob/master/.github/CONTRIBUTING.md)
+[Contributing Guidelines](https://github.com/IBM/carbon-components-react/blob/master/.github/CONTRIBUTING.md)
 
-- [Issues and Bugs](https://github.com/ibm/carbon-components-react/blob/master/.github/CONTRIBUTING.md#issues-and-bugs)
-- [Feature Requests](https://github.com/ibm/carbon-components-react/blob/master/.github/CONTRIBUTING.md#feature-requests)
-- [Doc Fixes](https://github.com/ibm/carbon-components-react/blob/master/.github/CONTRIBUTING.md#doc-fixes)
-- [Submission Guidelines](https://github.com/ibm/carbon-components-react/blob/master/.github/CONTRIBUTING.md#submission-guidelines)
-- [Coding Standards](https://github.com/ibm/carbon-components-react/blob/master/.github/CONTRIBUTING.md#coding-standards)
-- [Commit Message Guidelines](https://github.com/ibm/carbon-components-react/blob/master/.github/CONTRIBUTING.md#commit-message-guidlines)
-- [Testing](https://github.com/ibm/carbon-components-react/blob/master/.github/CONTRIBUTING.md#testing)
+- [Issues and Bugs](https://github.com/IBM/carbon-components-react/blob/master/.github/CONTRIBUTING.md#issues-and-bugs)
+- [Feature Requests](https://github.com/IBM/carbon-components-react/blob/master/.github/CONTRIBUTING.md#feature-requests)
+- [Doc Fixes](https://github.com/IBM/carbon-components-react/blob/master/.github/CONTRIBUTING.md#doc-fixes)
+- [Submission Guidelines](https://github.com/IBM/carbon-components-react/blob/master/.github/CONTRIBUTING.md#submission-guidelines)
+- [Coding Standards](https://github.com/IBM/carbon-components-react/blob/master/.github/CONTRIBUTING.md#coding-standards)
+- [Commit Message Guidelines](https://github.com/IBM/carbon-components-react/blob/master/.github/CONTRIBUTING.md#commit-message-guidlines)
+- [Testing](https://github.com/IBM/carbon-components-react/blob/master/.github/CONTRIBUTING.md#testing)
 
 ## Carbon Component Angular
 
