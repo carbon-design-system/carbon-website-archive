@@ -8,12 +8,12 @@ tabs: ['Designers', 'Developers']
 
 ## Carbon Components
 
-[Contributing Guidelines](https://github.com/ibm/carbon-components/blob/master/docs/contributing.md)
+[Contributing Guidelines](https://github.com/ibm/carbon-components/blob/master/.github/CONTRIBUTING.md)
 
-- [Requirements](https://github.com/ibm/carbon-components/blob/master/docs/contributing.md#requirements)
-- [Coding Style](https://github.com/ibm/carbon-components/blob/master/docs/contributing.md#coding-style)
-- [Files and Folders](https://github.com/ibm/carbon-components/blob/master/docs/contributing.md#files-and-folders)
-- [Start Contributing](https://github.com/ibm/carbon-components/blob/master/docs/contributing.md#start-contributing)
+- [Requirements](https://github.com/ibm/carbon-components/blob/master/.github/CONTRIBUTING.md#requirements)
+- [Coding Style](https://github.com/ibm/carbon-components/blob/master/.github/CONTRIBUTING.md#coding-style)
+- [Files and Folders](https://github.com/ibm/carbon-components/blob/master/.github/CONTRIBUTING.md#files-and-folders)
+- [Start Contributing](https://github.com/ibm/carbon-components/blob/master/.github/CONTRIBUTING.md#start-contributing)
 
 ## Carbon Components React
 
