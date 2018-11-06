@@ -69,6 +69,15 @@ export default class SideNav extends React.Component {
                 Skip to main content
               </a>
               <nav className={classNames}>
+                {isInternal ? (
+                    null
+                ) : (
+                  <>
+                    <div className="side-nav--header">
+                      <GlobalSearch />
+                    </div>
+                  </>
+                )}
                 <div className="side-nav--items">
                   <ul role="menu" className="side-nav__nav-items">{navItems}</ul>
                   <div className="side-nav__links">

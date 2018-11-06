@@ -148,7 +148,7 @@ class Layout extends React.Component {
                 aria-label="Open menu"
                 onClick={console.log('clicked')}
               />
-              <HeaderName href="#" prefix="IBM">
+              <HeaderName href="/" prefix="IBM">
                 Product Design
               </HeaderName>
               
