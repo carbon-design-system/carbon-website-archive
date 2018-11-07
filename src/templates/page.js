@@ -79,18 +79,12 @@ export default ({ data, pageContent }) => {
   let tabs = post.frontmatter.tabs;
   let internal = post.frontmatter.internal;
 
-  console.log('\n\n\n\n☸️ page.js:');
-  console.log('currentPage: ' + currentPage);
-  console.log('slug: ' + slug);
-
   const { GATSBY_CARBON_ENV } = process.env;
   const isInternal = GATSBY_CARBON_ENV !== 'internal' && internal == true;
 
   const classNames = classnames('page-content', {
     'page-content--component': post.frontmatter.label === 'Component',
   });
-  console.log('tabs:');
-  console.log(tabs);
 
   if (isInternal) {
     return (

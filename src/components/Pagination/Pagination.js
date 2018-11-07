@@ -80,7 +80,7 @@ export default class Pagination extends React.Component {
     );
   };
 
-  //TODO: when linking to other section or subnav, check for tabs inside the markdown file
+  //TODO: when linking to a previous section or subnav, check for tabs inside the markdown file
   //TODO: add checks for if page is internal
 
   render() {
@@ -103,16 +103,6 @@ export default class Pagination extends React.Component {
     }
 
     let prevPagePath, prevPageTitle, nextPagePath, nextPageTitle;
-
-    console.log('\n\n\n\n ☸️ Pagination.js');
-    console.group();
-    console.log('currentTabs:');
-    console.log(currentTabs);
-    console.log('currentPage:');
-    console.log(currentPage);
-    console.log('currentPage:');
-    console.log(currentPage);
-    console.groupEnd();
 
     /**
      * Neighboring tabs:
@@ -156,13 +146,6 @@ export default class Pagination extends React.Component {
         currentSubnavArray,
         currentSubnavItem
       );
-      console.group();
-      console.log('currentSubnavArray:');
-      console.log(currentSubnavArray);
-      console.log('currentSubnavItem:');
-      console.log(currentSubnavItem);
-      console.log('currentSubnavIndex:');
-      console.log(currentSubnavIndex);
 
       if (prevPagePath === undefined && currentSubnavIndex > 0) {
         const prevPathSlugPart = currentSubnavArray[currentSubnavIndex - 1];
@@ -177,12 +160,10 @@ export default class Pagination extends React.Component {
         nextPagePath === undefined &&
         currentSubnavIndex < currentSubnavArray.length - 1
       ) {
-        console.log('next subnav');
         const nextPathSlugPart =
           currentSubnavArray[parseInt(currentSubnavIndex, 10) + 1];
         nextPagePath = `/${currentSection}/${nextPathSlugPart}`;
       }
-      console.groupEnd();
     }
 
     /**
@@ -227,6 +208,7 @@ export default class Pagination extends React.Component {
       }
     }
 
+    //TODO: get title properly!
     prevPageTitle = this.slugToTitleWithPath(prevPagePath);
     nextPageTitle = this.slugToTitleWithPath(nextPagePath);
 
