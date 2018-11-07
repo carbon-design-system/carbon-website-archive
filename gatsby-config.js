@@ -43,6 +43,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-responsive-iframe`,
           `gatsby-remark-component`,
           {
             resolve: `gatsby-remark-autolink-headers`,
