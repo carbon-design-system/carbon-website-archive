@@ -13,6 +13,7 @@ tabs: ['Code', 'Usage', 'Style']
     codepen="QOqbPg"
     haslightversion="true"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>
 

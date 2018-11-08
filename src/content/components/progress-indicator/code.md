@@ -11,9 +11,8 @@ tabs: ['Code', 'Usage', 'Style']
     component="progress-indicator" 
     variation="progress-indicator"
     codepen="jaGPyr"
-    
-    hasReactVersion="true"
-    
+    hasAngularVersion="true"
+    hasReactVersion="true" 
     >
 </component>
 <component-docs component="progress-indicator"></component-docs>
