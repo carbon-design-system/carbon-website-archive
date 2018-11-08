@@ -26,7 +26,7 @@
     },
     {
       "item": "Checkbox",
-      "added": "2.0.0",     
+      "added": "2.0.0",
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
@@ -35,15 +35,15 @@
     {
       "item": "Code Snippet",
       "added": "7.0.0",
-      "tag": "updated",     
+      "tag": "updated",
       "vanilla": "ready",
       "react": "ready",
-      "angular": "not-available",
+      "angular": "ready",
       "experimental": "under-review"
     },
     {
       "item": "Content Switcher",
-      "added": "4.0.0",     
+      "added": "4.0.0",
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
@@ -60,7 +60,7 @@
     {
       "item": "Date Picker",
       "added": "7.10.1",
-      "tag": "updated",    
+      "tag": "updated",
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
@@ -69,7 +69,7 @@
     {
       "item": "Dropdown",
       "added": "2.0.0",
-      "tag": "updated",     
+      "tag": "updated",
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
@@ -77,7 +77,7 @@
     },
     {
       "item": "File Uploader",
-      "added": "7.0.0",     
+      "added": "7.0.0",
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
@@ -86,7 +86,7 @@
     {
       "item": "Form",
       "added": "2.0.0",
-      "tag": "updated",    
+      "tag": "updated",
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
@@ -95,7 +95,7 @@
     {
       "item": "Inline Loading",
       "added": "2.0.0",
-      "tag": "updated",      
+      "tag": "updated",
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
@@ -103,7 +103,7 @@
     },
     {
       "item": "Link",
-      "added": "2.0.0",    
+      "added": "2.0.0",
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
@@ -111,7 +111,7 @@
     },
     {
       "item": "List",
-      "added": "2.0.0",      
+      "added": "2.0.0",
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
@@ -119,15 +119,15 @@
     },
     {
       "item": "Loading",
-      "added": "5.0.0",     
+      "added": "5.0.0",
       "vanilla": "ready",
       "react": "ready",
-      "angular": "not-available",
+      "angular": "ready",
       "experimental": "under-review"
     },
     {
       "item": "Modal",
-      "added": "4.3.0",     
+      "added": "4.3.0",
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
@@ -135,7 +135,7 @@
     },
     {
       "item": "Multiselect",
-      "added": "8.0.0",      
+      "added": "8.0.0",
       "vanilla": "not-available",
       "react": "ready",
       "angular": "ready",
@@ -143,7 +143,7 @@
     },
     {
       "item": "Notification",
-      "added": "6.0.0",   
+      "added": "6.0.0",
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
@@ -163,7 +163,7 @@
       "added": "7.0.0",
       "vanilla": "ready",
       "react": "ready",
-      "angular": "not-available",
+      "angular": "ready",
       "experimental": "under-review"
     },
     {
@@ -171,7 +171,7 @@
       "added": "6.11.0",
       "vanilla": "ready",
       "react": "ready",
-      "angular": "not-available",
+      "angular": "ready",
       "experimental": "under-review"
     },
     {
@@ -179,7 +179,7 @@
       "added": "5.0.0",
       "vanilla": "ready",
       "react": "ready",
-      "angular": "not-available",
+      "angular": "ready",
       "experimental": "under-review"
     },
     {
@@ -205,7 +205,7 @@
       "tag": "updated",
       "vanilla": "ready",
       "react": "ready",
-      "angular": "not-available",
+      "angular": "ready",
       "experimental": "ready"
     },
     {
@@ -246,7 +246,7 @@
       "tag": "updated",
       "vanilla": "ready",
       "react": "ready",
-      "angular": "not-available",
+      "angular": "ready",
       "experimental": "ready"
     },
     {
@@ -254,7 +254,7 @@
       "added": "7.22.0",
       "vanilla": "ready",
       "react": "ready",
-      "angular": "not-available",
+      "angular": "ready",
       "experimental": "ready"
     },
     {
@@ -262,7 +262,7 @@
       "added": "4.0.0",
       "vanilla": "ready",
       "react": "ready",
-      "angular": "not-available",
+      "angular": "ready",
       "experimental": "ready"
     },
     {

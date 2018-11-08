@@ -13,6 +13,7 @@ tabs: ['Code', 'Usage', 'Style']
     codepen="YEZLyd"
     haslightversion="true"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>
 
@@ -33,6 +34,7 @@ tabs: ['Code', 'Usage', 'Style']
     codepen="yPMjeg"
     haslightversion="true"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>
 
