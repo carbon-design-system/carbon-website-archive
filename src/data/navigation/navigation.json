@@ -19,9 +19,6 @@
       "developers": {
         "title": "Developers"
       },
-      "faq": {
-        "title": "FAQ"
-      },
       "add-ons": {
         "title": "Add-Ons"
       }
@@ -65,12 +62,12 @@
       }
     }
   },
-  "your-product-on-ibm-cloud": {
+ "your-product-on-ibm-cloud": {
     "title": "Your Product on IBM Cloud",
     "internal": true,
     "sub-nav": {
-      "catalog-entry": {
-        "title": "Catalog Entry"
+      "principles": {
+        "title": "Principles"
       },
       "user-flow": {
         "title": "User Flow"
@@ -78,8 +75,8 @@
       "service-providers": {
         "title": "Service Providers"
       },
-      "principles": {
-        "title": "Principles"
+      "catalog-entry": {
+        "title": "Catalog Entry"
       }
     }
   },
@@ -321,5 +318,17 @@
   },
   "resources": {
     "title": "Resources"
+  },
+  "help": {
+    "title": "Help",
+    "sub-nav": {
+      "support": {
+        "title": "Support"
+      },
+        "faq": {
+          "title": "FAQ"
+        }
+      }
+    }
   }
-}
+
