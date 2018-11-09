@@ -12,6 +12,7 @@ tabs: ['Code', 'Usage', 'Style']
     variation="pagination"
     codepen="MOEwbp"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>
 
