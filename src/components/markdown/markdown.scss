@@ -26,7 +26,7 @@
 .page-h2,
 .page-content > div > h2,
 .component-docs h2 {
-  @include type-style('heading-05');
+  @include type-style('heading-06');
   position: relative;
   color: $text-01;
   margin-top: rem(80px);
@@ -36,14 +36,14 @@
     margin-top: 0;
   }
 }
-
+ 
 //----------------------------
 // h3
 //----------------------------
 
 .page-content > div > h3,
 .component-docs h3 {
-  @include type-style('heading-04');
+  @include type-style('heading-05');
   color: $text-01;
   margin-bottom: rem(24px);
   margin-top: rem(24px);

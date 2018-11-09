@@ -6,7 +6,7 @@
   height: rem(48px);
   margin-top: rem(-48px);
   position: relative;
-  border-top: 1px solid $ui-04;
+  border-top: 1px solid rgba($ui-02, .25);
 
   @media all and (min-width: 620px) {
     padding-left: 12.5%;
