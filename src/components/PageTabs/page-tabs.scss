@@ -1,17 +1,10 @@
 .page-tabs {
-  padding-left: 3%;
-  padding-right: 3%;
   margin: 0;
-  width: auto;
+  width: 100%;
   height: rem(48px);
-  margin-top: rem(-48px);
   position: relative;
   border-top: 1px solid rgba($ui-02, .25);
-
-  @media all and (min-width: 620px) {
-    padding-left: 12.5%;
-    padding-right: 12.5%;
-  }
+  padding-left: $layout-lg;
 }
 
 .page-tabs__list {
