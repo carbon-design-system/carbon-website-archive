@@ -1,22 +1,5 @@
 .component-status-page {
-  table tr th:first-child,
-  table tr th:nth-child(2) {
-    text-align: left;
-    padding-left: 1rem;
-  }
-
-  table tr th {
-    text-align: center;
-    padding: 1rem 1.75rem;
-  }
-
-  table tr td {
-    padding: 1rem;
-  }
-
-  table tr td:nth-child(2) {
-    white-space: nowrap;
-  }
+  
 
   .inline-tag {
     margin-left: rem(8px);
@@ -99,8 +82,6 @@
     width: rem(16px);
     height: rem(16px);
     display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 50%;
     color: $color__white;
     width: 100%;

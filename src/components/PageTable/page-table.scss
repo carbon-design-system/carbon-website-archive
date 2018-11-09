@@ -13,10 +13,10 @@
       @include type-style('body-02');
       font-weight: font-weight('semibold');
       color: $text-01;
-      padding: 1rem;
+      padding: $spacing-md $spacing-md $spacing-sm;
       text-align: left;
       white-space: nowrap;
-      background: $ui-02;
+      border-bottom: 1px solid $ui-03;
     }
   }
 
@@ -27,7 +27,7 @@
       td {
         @include type-style('body-02');
         color: $text-01;
-        padding: 1rem;
+        padding: $spacing-md $spacing-md $spacing-lg;
 
         img[src$='checkmark--glyph.svg'] {
           width: 16px;
