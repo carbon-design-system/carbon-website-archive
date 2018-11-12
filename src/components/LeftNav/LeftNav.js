@@ -11,9 +11,7 @@ import navigation from '../../data/navigation/navigation.json';
 import { 
   SideNav,
   SideNavItems,
-  SideNavLink,
-  SideNavMenu,
-  SideNavMenuItem,
+  SideNavLink,xs
 } from 'carbon-components-react/lib/components/UIShell';
 import { Awake16 } from '@carbon/icons-react';
 

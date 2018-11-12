@@ -14,18 +14,8 @@ import {
   SkipToContent,  
   HeaderGlobalBar,
   HeaderGlobalAction,
-  SideNav,
-  SideNavHeader,
-  SideNavSwitcher,
-  SideNavDetails,
-  SideNavItems,
-  SideNavLink,
-  SideNavMenu,
-  SideNavMenuItem,
 } from 'carbon-components-react/lib/components/UIShell';
-import { Search16, Awake16 } from '@carbon/icons-react';
-
-
+import { Search16, Menu32 } from '@carbon/icons-react';
 
 import '../../styles/index.scss';
 import '../../styles/experimental.scss';
@@ -160,7 +150,7 @@ class Layout extends React.Component {
               <SkipToContent />
               <HeaderMenuButton
                 aria-label="Open menu"
-                onClick={console.log('clicked')}
+                onClick={console.log('')}
               />
               <HeaderName prefix="IBM" to="javascript:void(0)" element={Link} href="/">
                 Product Design
@@ -169,7 +159,7 @@ class Layout extends React.Component {
               <HeaderGlobalBar>
                 <GlobalSearch />
                 <HeaderGlobalAction
-                  aria-label="Notifications"
+                  aria-label="Search"
                   >
                   <Search16 />
                 </HeaderGlobalAction>

@@ -2,11 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { Link } from 'gatsby';
-import { Icon } from 'carbon-components-react';
 
 import { 
-  SideNav,
-  SideNavItems,
   SideNavLink,
   SideNavMenu,
   SideNavMenuItem,
@@ -107,7 +104,6 @@ export default class LeftNavItem extends React.Component {
     return (
       <>
         {hasSubNav ? (
-          
           <SideNavMenu {...menuItemProps}> 
             {this.renderSubNavItems(item['sub-nav'], location, itemSlug)}
           </SideNavMenu>
