@@ -10,7 +10,6 @@ tabs: ['Code', 'Usage']
     name="Overflow Menu"
     component="overflow-menu" 
     variation="overflow-menu"
-    codepen="MOEwjp"
     experimental="true"
     >
 </component>
