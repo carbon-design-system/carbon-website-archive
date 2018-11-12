@@ -13,6 +13,7 @@ variations:</page-intro>
     variation="code-snippet"
     codepen="mKJBoE"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>
 <component 
@@ -22,6 +23,7 @@ variations:</page-intro>
     codepen="pKJWMK"
     haslightversion="true"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>
 <component 
@@ -30,6 +32,7 @@ variations:</page-intro>
     variation="code-snippet--multi"
     codepen="ZRGXdq"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>
 <component-docs component="code-snippet"></component-docs>
