@@ -1,6 +1,22 @@
 # Deployments
 
-Update date in Footer.js component
+*Don't forget to update the date in Footer.js component*
+
+## Random (for staging or test links)
+
+```bash
+# Build the internal site
+yarn build:internal
+
+# Or build the external site
+yarn build:external
+
+# Login
+ibmcloud login --sso  -a https://api.stage1.ng.bluemix.net  -o 'carbon@us.ibm.com' -s production
+
+# Deploy to random url
+ibmcloud cf push -f .circleci/manifest.random.yml
+```
 
 ## Internal
 

@@ -4,7 +4,16 @@ import classnames from 'classnames';
 import { Link } from 'gatsby';
 import { Icon } from 'carbon-components-react';
 
-export default class SideNavItem extends React.Component {
+import { 
+  SideNav,
+  SideNavItems,
+  SideNavLink,
+  SideNavMenu,
+  SideNavMenuItem,
+} from 'carbon-components-react/lib/components/UIShell';
+import { Awake16 } from '@carbon/icons-react';
+
+export default class LeftNavItem extends React.Component {
   static propTypes = {
     /**
      * The data structure for the nav item.
@@ -50,36 +59,33 @@ export default class SideNavItem extends React.Component {
 
   renderSubNavItems = (subItems, location, itemSlug) => {
     return Object.keys(subItems).map(item => {
+      const { GATSBY_CARBON_ENV } = process.env;
+      const hideInternal =
+        GATSBY_CARBON_ENV !== 'internal' && subItems[item].internal;
       // Check that the itemSlug (top most nav item w/ chidlren) matches the
       // zeroeth indexed normalized path array item. This is so we avoid conflicting
       // children with similar names but disimilar parents.
       const isNavItemActive = locationContainsPath(location, [itemSlug, item]);
 
-      // If the users selects a route within a dropdown we style the "active" nav
-      // item accordingly
-      const subNavClasses = classnames('side-nav__sub-nav-item', {
-        'side-nav__sub-nav-item--active': isNavItemActive,
-      });
-
-      const { GATSBY_CARBON_ENV } = process.env;
-      const hideInternal =
-        GATSBY_CARBON_ENV !== 'internal' && subItems[item].internal;
-
+      const navItemProps = {
+        href: 'javascript:void(0)',
+        element: Link,
+        to: `/${this.props.itemSlug}/${item}`,
+        key: item
+      };
+      
+      if (isNavItemActive) {
+        navItemProps['aria-current'] = 'page';
+      }
+      
       if (hideInternal) {
         return '';
       }
 
-      const tabIndex = this.state.open;
-
       return (
-        <li role="menuitem" tabIndex="-1" className={subNavClasses} key={item}>
-          <Link
-            activeClassName="side-nav__sub-nav-item--active"
-            to={`/${this.props.itemSlug}/${item}`}
-            tabIndex={tabIndex ? 0 : -1}> 
-            {subItems[item].title}
-          </Link>
-        </li>
+        <SideNavMenuItem {...navItemProps}>
+          {subItems[item].title}
+        </SideNavMenuItem>
       );
     });
   };
@@ -87,36 +93,31 @@ export default class SideNavItem extends React.Component {
   render() {
     const { item, itemSlug, location } = this.props;
     const hasSubNav = !(item['sub-nav'] === undefined);
+    const isOpen = locationContainsPath(location, itemSlug);
 
-    const navItemClasses = classnames('side-nav__nav-item', {
-      'side-nav__nav-item--open': this.state.open,
-      'side-nav__nav-item--active':
-        locationContainsPath(location, itemSlug) && !hasSubNav,
-    });
+    const menuItemProps = {
+      icon: <Awake16 />,
+      title: item.title
+    };
+
+    if (isOpen) {
+      menuItemProps['defaultExpanded'] = true;
+    }
 
     return (
-      <li role="menuitem" tabIndex="-1" className={navItemClasses}>
+      <>
         {hasSubNav ? (
-          // eslint-disable-next-line
-          <button tabIndex="0" onClick={this.toggleSubNav}>
-            {item.title}{' '}
-            <Icon
-              className="side-nav__nav-item--arrow"
-              name="chevron--down"
-              aria-hidden="true"
-              description="Menu chevron icon"
-              alt="Menu chevron icon"
-            />
-          </button>
-        ) : (
-          <Link to={`/${itemSlug}`}>{item.title}</Link>
-        )}
-        {hasSubNav && (
-          <ul role="menu" aria-hidden="true" className="side-nav__sub-nav">
+          
+          <SideNavMenu {...menuItemProps}> 
             {this.renderSubNavItems(item['sub-nav'], location, itemSlug)}
-          </ul>
+          </SideNavMenu>
+        ) : (
+          <SideNavLink icon={<Awake16 />} href="javascript:void(0)" to={`/${itemSlug}`} element={Link}>
+            {item.title}
+          </SideNavLink>
         )}
-      </li>
+        
+      </>
     );
   }
 }
