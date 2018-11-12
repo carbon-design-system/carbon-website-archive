@@ -1,11 +1,18 @@
 {
-  
+  "about": {
+    "title": "About",
+    "sub-nav": {
+      "whats-new": {
+        "title": "What's New"
+      },
+      "design-language": {
+        "title": "Design Language"
+      }
+    }
+  },
   "getting-started": {
     "title": "Getting Started",
     "sub-nav": {
-      "about-carbon": {
-        "title": "About Carbon"
-      },
       "designers": {
         "title": "Designers"
       },
@@ -16,6 +23,9 @@
         "title": "Add-Ons"
       }
     }
+  },
+  "contributing": {
+    "title": "Contributing"
   },
   "guidelines": {
     "title": "Guidelines",
@@ -49,6 +59,24 @@
       },
       "typography": {
         "title": "Typography"
+      }
+    }
+  },
+  "your-product-on-ibm-cloud": {
+    "title": "Your Product on IBM Cloud",
+    "internal": true,
+    "sub-nav": {
+      "catalog-entry": {
+        "title": "Catalog Entry"
+      },
+      "user-flow": {
+        "title": "User Flow"
+      },
+      "service-providers": {
+        "title": "Service Providers"
+      },
+      "principles": {
+        "title": "Principles"
       }
     }
   },
@@ -239,9 +267,6 @@
       }
     }
   },
-  "component-status": {
-    "title": "Component Status"
-  },
   "data-visualization": {
     "title": "Data Visualization",
     "sub-nav": {
@@ -269,7 +294,7 @@
     }
   },
   "utilities": {
-    "title": "Patterns",
+    "title": "Utilities",
     "sub-nav": {
       "common-actions": {
         "title": "Common Actions"
@@ -288,49 +313,11 @@
       }
     }
   },
+  "component-status": {
+    "title": "Component Status"
+  },
   "resources": {
     "title": "Resources"
-  },
-  "contributing": {
-    "title": "Contributing",
-    "sub-nav": {
-      "designers": {
-      "title": "Designers"
-    },
-    "developers": {
-      "title": "Developers"
-    }
-  }
-  },
-  "about": {
-    "title": "Updates",
-    "sub-nav": {
-      "whats-new": {
-        "title": "What's New"
-      },
-      "design-language": {
-        "title": "Design Language"
-      }
-    }
-  },
-  "your-product-on-ibm-cloud": {
-    "title": "Your Product on IBM Cloud",
-    "internal": true,
-    "sub-nav": {
-      "principles": {
-        "title": "Principles"
-      },
-      "user-flow": {
-        "title": "User Flow"
-      },
-      "service-providers": {
-        "title": "Service Providers"
-      },
-      "catalog-entry": {
-        "title": "Catalog Entry"
-      }
-      
-    }
   },
   "help": {
     "title": "Help",
@@ -338,11 +325,10 @@
       "support": {
         "title": "Support"
       },
-      "faq": {
+        "faq": {
           "title": "FAQ"
         }
       }
     }
   }
-  
 
