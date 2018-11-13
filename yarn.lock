@@ -3877,10 +3877,10 @@ capture-stack-trace@^1.0.0:
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.1.tgz#a6c0bbe1f38f3aa0b92238ecb6ff42c344d4135d"
   integrity sha512-mYQLZnx5Qt1JgB1WEiMCf2647plpGeQ2NMR/5L0HNZzGQo4fuSPnK+wjfPnKZV0aiJDgzmWqqkV/g7JD+DW0qw==
 
-carbon-components-react@6.45.2:
-  version "6.45.2"
-  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.45.2.tgz#545ca3432a0979cbdf5637127e9b97ae5e850e94"
-  integrity sha512-dj5tMVBH5usX5f2BpSmVKdgGHDrX7KNB7tbwDrsmZMqFVn1JgXANxuRqVs6l+EL8Dkn+CcPpym2fey8ZNyhDqQ==
+carbon-components-react@6.49.0:
+  version "6.49.0"
+  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.49.0.tgz#011af5ddbcce8aba66591a1853128e9194f08d07"
+  integrity sha512-LtXogLn5RT/RD2pCQEm6zgXfaBihGpnm04KphXjvn6tv91ok2uGQiwPzdwp98zVri92SM4xXr4iE1TEspv4B/A==
   dependencies:
     "@carbon/icons-react" "^0.0.1-alpha.2"
     classnames "2.2.6"
@@ -3893,14 +3893,14 @@ carbon-components-react@6.45.2:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@^9.44.0:
-  version "9.44.0"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.44.0.tgz#23eb7729edf89d4a7850be3b1a0c90c00e73447b"
-  integrity sha512-DVoejeKkdAmALGJv0xQ40+kgscmKQYPNu5U4Ex1lc/AYV4+BdozOBVnhfwJQf4A2KMAQ1R+J3MBGv2qlVn8aLQ==
+carbon-components@^9.48.4:
+  version "9.48.4"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.48.4.tgz#8de06441efe19ac32b17532292fbd63701cac817"
+  integrity sha512-ELJywzQyBiPNmdjrqOr1intkivkXdB0TX1OwNQATuoE1iLBlAlKZnUfok2t5nSylK+ICZ8wnArIev5Xkel9RGw==
   dependencies:
     "@carbon/colors" "^0.0.1-alpha.0"
     carbon-icons "^7.0.7"
-    flatpickr "2.6.3"
+    flatpickr "4.5.2"
     lodash.debounce "^4.0.8"
     warning "^3.0.0"
 
@@ -6862,17 +6862,12 @@ flat@^4.0.0:
   dependencies:
     is-buffer "~2.0.3"
 
-flatpickr@2.6.3:
-  version "2.6.3"
-  resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-2.6.3.tgz#457357532deb135f3da64b425bf4435737961564"
-  integrity sha1-RXNXUy3rE189pktCW/RDVzeWFWQ=
-
 flatpickr@4.5.1:
   version "4.5.1"
   resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.5.1.tgz#f65eaf54c07538f87d6f68a67b03cf816d7fb82f"
   integrity sha512-dsLTFmRg6mlqYfJ35A7gLlbq+8fOqRty3cWncl6rwU4pMe//i0WKxKLVyBbSYAZry93Lg+yqsOph9haltcxCqQ==
 
-flatpickr@^4.5.2:
+flatpickr@4.5.2, flatpickr@^4.5.2:
   version "4.5.2"
   resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.5.2.tgz#47c8ad472a096e5fb7e74b809b0703535383f20d"
   integrity sha512-jDy4QYGpmiy7+Qk8QvKJ4spjDdxcx9cxMydmq1x427HkKWBw0qizLYeYM2F6tMcvvqGjU5VpJS55j4LnsaBblA==
