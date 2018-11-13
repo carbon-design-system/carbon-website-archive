@@ -283,3 +283,27 @@
 .component-example .carbon-demo-experimental .demo--inline-notification {
   display: inline-flex;
 }
+
+//---------------------------------------
+// Experimental Date Picker
+//---------------------------------------
+.component-example .carbon-demo-experimental .flatpickr-day.inRange {
+  box-shadow: none;
+}
+
+.component-example .carbon-demo-experimental .flatpickr-calendar.open {
+  margin-top: -1px;
+}
+
+.component-example .carbon-demo-experimental .cur-month {
+  text-transform: none!important;
+}
+
+.component-example .carbon-demo-experimental .flatpickr-current-month span.cur-month:hover,
+.component-example .carbon-demo-experimental .numInputWrapper:hover {
+  background: transparent;
+}
+
+.component-example .carbon-demo-experimental .numInputWrapper input {
+  width: 100%;
+}
