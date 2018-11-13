@@ -83,3 +83,11 @@
 .carbon-demo-v9 .demo--form-item {
   margin-bottom: $spacing-lg;
 }
+
+//---------------------------------------
+// Experimental Notification
+//---------------------------------------
+.component-example .carbon-demo-experimental .demo--inline-notification {
+  display: inline-flex;
+}
+

@@ -238,6 +238,9 @@
       "number-input": {
         "title": "Number Input"
       },
+      "overflow-menu": {
+        "title": "Overflow Menu"
+      },
       "radio-button": {
         "title": "Radio Button"
       },
