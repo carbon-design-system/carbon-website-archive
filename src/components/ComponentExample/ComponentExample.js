@@ -167,6 +167,20 @@ class ComponentExample extends Component {
           const TheComponent = components[name];
           if (TheComponent) {
             const options = {};
+            if (name === 'DatePicker') {
+              // Same as `this._liveContainerRef.current`, but that may not have been set up yet
+              const liveContainerRef = ref.closest('.component-example__live');
+              options.appendTo = liveContainerRef;
+              options.onPreCalendarPosition = (selectedDates, value, { _positionElement, calendarContainer }) => {
+                // Make it "post" positioning handler
+                Promise.resolve().then(() => {
+                  const { left: inputLeft, top: inputTop } = _positionElement.getBoundingClientRect();
+                  const { left: containerLeft, top: containerTop } = liveContainerRef.getBoundingClientRect();
+                  calendarContainer.style.left = `${inputLeft - containerLeft}px`;
+                  calendarContainer.style.top = `${inputTop - containerTop + _positionElement.offsetHeight}px`;
+                });
+              };
+            }
             if (name === 'OverflowMenu' || name === 'Tooltip') {
               ['objMenuOffset', 'objMenuOffsetFlip'].forEach(optionName => {
                 if (TheComponent.options[optionName]) {
