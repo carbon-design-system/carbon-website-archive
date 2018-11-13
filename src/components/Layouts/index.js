@@ -1,16 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql, Link } from 'gatsby';
 import classnames from 'classnames';
-import SideNav from '../SideNav';
-import SideNavToggleBtn from '../SideNavToggleBtn';
+import GlobalSearch from '../GlobalSearch';
 import Footer from '../Footer';
+import LeftNav from '../LeftNav';
 import favicon32 from '../../content/global/images/favicon-32.png';
+import { 
+  Header, 
+  HeaderMenuButton, 
+  HeaderName, 
+  SkipToContent,  
+  HeaderGlobalBar,
+  HeaderGlobalAction,
+} from 'carbon-components-react/lib/components/UIShell';
+import { Search16, Menu32 } from '@carbon/icons-react';
 
 import '../../styles/index.scss';
 import '../../styles/experimental.scss';
-import '../../styles/halloween-components.scss';
+//import '../../styles/halloween-components.scss';
 
 class Layout extends React.Component {
   static propTypes = {
@@ -137,16 +146,33 @@ class Layout extends React.Component {
               ]}>
               <html lang="en" />
             </Helmet>
-            <SideNavToggleBtn
-              onToggleBtnClick={this.onToggleBtnClick}
-              isOpen={this.state.isOpen}
-            />
-            <SideNav
-              isFinal={this.state.isFinal}
-              isOpen={this.state.isOpen}
-              location={this.props.location}
-              clickToClose={this.clickToClose}
-            />
+            <Header>
+              <SkipToContent />
+              <HeaderMenuButton
+                aria-label="Open menu"
+                onClick={console.log('')}
+              />
+              <HeaderName prefix="IBM" to="javascript:void(0)" element={Link} href="/">
+                Product Design
+              </HeaderName>
+
+              <HeaderGlobalBar>
+                <GlobalSearch />
+                <HeaderGlobalAction
+                  aria-label="Search"
+                  >
+                  <Search16 />
+                </HeaderGlobalAction>
+                <HeaderGlobalAction
+                  aria-label="Profile">
+                  <Search16 />
+                </HeaderGlobalAction>
+              </HeaderGlobalBar>
+              
+            </Header>
+           <LeftNav />
+
+            
             <div className={classNames}>
               {children}
               <Footer isExpanded={this.state.isOpen} />

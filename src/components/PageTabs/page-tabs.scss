@@ -1,54 +1,41 @@
 .page-tabs {
-  padding-left: 3%;
-  padding-right: 3%;
-  margin: -$spacing-3xl 0 0 0;
-  width: auto;
-  min-height: $spacing-3xl;
-  height: auto;
+  margin: 0;
+  width: 100%;
+  height: rem(48px);
   position: relative;
-  color: $text-01; 
-
-  @media all and (min-width: 620px) {
-    padding-left: 12.5%;
-    padding-right: 12.5%;
-  }
+  border-top: 1px solid rgba($ui-02, .25);
+  padding-left: $layout-lg;
 }
 
 .page-tabs__list {
   display: flex;
   flex-direction: row;
-  position: absolute;
   width: 100%;
   list-style: none;
   padding: 0;
-  bottom: 1px;
+  height: rem(48px);
+  position: relative;
+  top: -1px;
 }
 
 .page-tabs__list li {
-  padding: $spacing-sm 0 $spacing-md;
-}
-
-.page-tabs__list li.selected {
-  border-bottom: 2px solid $brand-01;
-}
-
-.page-tabs__list li + li {
-  margin-left: $spacing-3xl;
-
-  @media all and (max-width: 600px) {
-    margin-left: $spacing-lg;
-  }
+  display: flex;
+  align-self: center;
 }
 
 .page-tabs__list li a {
-  @include typescale('epsilon');
+  @include type-style('body-03');
+  padding: 0 $spacing-3xl 0 $spacing-md;
   text-decoration: none;
-  text-transform: capitalize;
-  color: $text-01;
-  font-weight: 600;
+  color: $inverse-02;
   white-space: nowrap;
+  border-top: 2px solid transparent;
+  height: rem(48px);
+  display: inline-flex;
+  align-items: center;
+}
 
-  &:hover {
-    color: $brand-01;
-  }
+.page-tabs__list li.selected a {
+  border-top: 2px solid $brand-01;
+  background: rgba(255,255,255,.1);
 }

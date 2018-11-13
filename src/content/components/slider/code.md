@@ -13,7 +13,6 @@ tabs: ['Code', 'Usage', 'Style']
     codepen="dZVoBx"
     haslightversion="true"
     hasReactVersion="true"
-    
     >
 </component>
 <component-docs component="slider"></component-docs>

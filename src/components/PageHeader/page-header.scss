@@ -1,38 +1,27 @@
 .page-header {
-  padding-left: 3%;
-  padding-right: 3%;
-  height: rem(200px);
-  background-color: $ui-02;
+  background: $ibm-colors__black;
+  color: $inverse-02;
+  height: rem(329px);
+  padding-top: $layout-xs;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
-  border-bottom: 1px solid $brand-01;
-  padding-bottom: 0;
+  justify-content: space-between;
   width: 100%;
-
-  @media all and (min-width: 620px) {
-    padding-left: 12.5%;
-    padding-right: 12.5%;
-  }
 }
 
 .page-header__label {
-  @include typescale('zeta');
-  color: $text-02;
-  font-weight: 400;
-  margin: 4rem 0 1rem;
-  white-space: nowrap;
-  text-transform: capitalize;
+  @include type-style('heading-04');
+  margin-left: $layout-lg;
 }
 
 .page-header__title {
-  @include typescale('mega');
-  color: $text-01;
+  // replace with type styles 
+  font-size: 60px;
   font-weight: 300;
-  margin: -1.15rem 0 0 -3px;
-  line-height: 1.25;
-  letter-spacing: 0;
-  padding: 0;
-  transition: $transition--base $bx--standard-easing;
+  line-height: 70px;
+  //@include type-style('display-02');
+  margin-bottom: $layout-xs;
+  margin-top: auto;
+  margin-left: $layout-lg;
 }

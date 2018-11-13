@@ -19,9 +19,6 @@
       "developers": {
         "title": "Developers"
       },
-      "faq": {
-        "title": "FAQ"
-      },
       "add-ons": {
         "title": "Add-Ons"
       }
@@ -65,12 +62,12 @@
       }
     }
   },
-  "your-product-on-ibm-cloud": {
+ "your-product-on-ibm-cloud": {
     "title": "Your Product on IBM Cloud",
     "internal": true,
     "sub-nav": {
-      "catalog-entry": {
-        "title": "Catalog Entry"
+      "principles": {
+        "title": "Principles"
       },
       "user-flow": {
         "title": "User Flow"
@@ -78,8 +75,8 @@
       "service-providers": {
         "title": "Service Providers"
       },
-      "principles": {
-        "title": "Principles"
+      "catalog-entry": {
+        "title": "Catalog Entry"
       }
     }
   },
@@ -220,17 +217,56 @@
       "checkbox": {
         "title": "Checkbox"
       },
+      "content-switcher": {
+        "title": "Content Switcher"
+      },
+      "date-picker": {
+        "title": "Date Picker"
+      },
+      "dropdown": {
+        "title": "Dropdown"
+      },
       "link": {
         "title": "Link"
+      },
+      "list": {
+        "title": "List"
+      },
+      "notification": {
+        "title": "Notification"
+      },
+      "number-input": {
+        "title": "Number Input"
+      },
+      "overflow-menu": {
+        "title": "Overflow Menu"
       },
       "radio-button": {
         "title": "Radio Button"
       },
+      "select": {
+        "title": "Select"
+      },
+      "slider": {
+        "title": "Slider"
+      },
+      "structured-list": {
+        "title": "Structured List"
+      },
+      "tag": {
+        "title": "Tag"
+      },
       "text-input": {
         "title": "Text Input"
       },
+      "tile": {
+        "title": "Tile"
+      },
       "toggle": {
         "title": "Toggle"
+      },
+      "tooltip": {
+        "title": "Tooltip"
       }
     }
   },
@@ -285,5 +321,17 @@
   },
   "resources": {
     "title": "Resources"
+  },
+  "help": {
+    "title": "Help",
+    "sub-nav": {
+      "support": {
+        "title": "Support"
+      },
+        "faq": {
+          "title": "FAQ"
+        }
+      }
+    }
   }
-}
+

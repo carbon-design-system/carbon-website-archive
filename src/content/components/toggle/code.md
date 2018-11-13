@@ -12,6 +12,7 @@ tabs: ['Code', 'Usage', 'Style']
     variation="toggle"
     codepen="ooZqxw"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>
 <component 
@@ -20,6 +21,7 @@ tabs: ['Code', 'Usage', 'Style']
     variation="toggle--small"
     codepen="pagwYV"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>
 <component-docs component="toggle"></component-docs>

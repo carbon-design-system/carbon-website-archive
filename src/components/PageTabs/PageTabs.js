@@ -16,10 +16,10 @@ export default class PageTabs extends React.Component {
       <li
         key={tab}
         className={
-          tab.toLowerCase().replace(' ', '-') === currentTab ? 'selected' : ''
+          tab.toLowerCase().split(' ').join('-') === currentTab ? 'selected' : ''
         }
         key={tab}>
-        <Link to={`${linkSlug}${tab.toLowerCase().replace(' ', '-')}`}>
+        <Link to={`${linkSlug}${tab.toLowerCase().split(' ').join('-')}`}>
           {tab}
         </Link>
       </li>

@@ -11,9 +11,8 @@ tabs: ['Code', 'Usage', 'Style']
     component="loading" 
     variation="loading"
     codepen="XzebrR"
-    
+    hasAngularVersion="true"
     hasReactVersion="true"
-    
     >
 </component>
 <component 
@@ -21,9 +20,8 @@ tabs: ['Code', 'Usage', 'Style']
     component="loading" 
     variation="loading--small"
     codepen="Xzebbg"
-    
+    hasAngularVersion="true"
     hasReactVersion="true"
-    
     >
 </component>
 <component-docs component="loading"></component-docs>

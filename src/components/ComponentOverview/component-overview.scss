@@ -51,7 +51,7 @@
 }
 
 .flex-item img {
-  background-color: #f5f7fa;
+  background-color: $ui-01;
 }
 
 .component-item {
@@ -61,7 +61,7 @@
 }
 
 .component-name {
-  color: #152935;
+  color: $text-01;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;

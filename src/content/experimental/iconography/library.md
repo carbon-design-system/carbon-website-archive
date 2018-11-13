@@ -1,8 +1,9 @@
 ---
 label: Experimental
 title: Iconography
-tabs: ['Library', 'Usage', 'Contribution']
+tabs: ['Library', 'Usage', 'Design and Contribution']
 internal: true
 ---
+
 
 <icon-library-experimental />
