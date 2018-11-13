@@ -1,7 +1,6 @@
 ---
 label: Contributing
-title: Contributing
-tabs: ['Designers', 'Developers']
+title: Developers
 ---
 
 <page-intro>**Welcome and thank you for contributing!** The Carbon team is committed to maintaining consistent, quality guidelines. Below are our contributing guidelines for [carbon-components](https://github.com/ibm/carbon-components) and [carbon-components-react](https://github.com/ibm/carbon-components-react).</page-intro>

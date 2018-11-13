@@ -1,5 +1,5 @@
 ---
-label: About
+label: Updates
 title: What's New
 ---
 <page-intro>October 2018</page-into>

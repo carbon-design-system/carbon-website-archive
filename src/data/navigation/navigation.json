@@ -11,9 +11,6 @@
       },
       "developers": {
         "title": "Developers"
-      },
-      "add-ons": {
-        "title": "Add-Ons"
       }
     }
   },
@@ -302,10 +299,13 @@
     },
     "developers": {
       "title": "Developers"
+    },
+    "add-ons": {
+      "title": "Add-Ons"
     }
   }
   },
-  "about": {
+  "updates": {
     "title": "Updates",
     "sub-nav": {
       "whats-new": {

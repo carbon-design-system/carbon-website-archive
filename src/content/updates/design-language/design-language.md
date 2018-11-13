@@ -1,5 +1,5 @@
 ---
-label: About Carbon
+label: Updates
 title: IBM Design Language
 ---
 
