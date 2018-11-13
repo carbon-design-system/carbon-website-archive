@@ -3,10 +3,64 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import CodeExample from '../CodeExample/CodeExample';
 import * as carbonComponents from 'carbon-components/es/globals/js/components';
+import { DIRECTION_TOP, DIRECTION_BOTTOM } from 'carbon-components/es/components/floating-menu/floating-menu';
 import InlineLoadingDemoButton from '../../content/components/inline-loading/inline-loading-demo-button';
 import on from 'carbon-components/es/globals/js/misc/on';
 import settings from 'carbon-components/es/globals/js/settings';
 import { RadioButtonGroup, RadioButton } from 'carbon-components-react';
+
+/**
+ * The CSS property names of the arrow keyed by the floating menu direction.
+ * @type {Object<string, string>}
+ */
+const triggerButtonPositionProps = {
+  [DIRECTION_TOP]: 'bottom',
+  [DIRECTION_BOTTOM]: 'top',
+};
+
+/**
+ * Determines how the position of arrow should affect the floating menu position.
+ * @type {Object<string, number>}
+ */
+const triggerButtonPositionFactors = {
+  [DIRECTION_TOP]: -2,
+  [DIRECTION_BOTTOM]: -1,
+};
+
+/**
+ * Determines how the vertical position of live demo container should affect the floating menu position offset.
+ * Refs:
+ * https://github.com/IBM/carbon-components/blob/v9.0.0/src/components/floating-menu/floating-menu.js#L61
+ * https://github.com/IBM/carbon-components/blob/v9.0.0/src/components/floating-menu/floating-menu.js#L69
+ * @type {Object<string, number>}
+ */
+const liveDemoContainerVerticalPositionFactors = {
+  [DIRECTION_TOP]: 1,
+  [DIRECTION_BOTTOM]: -1,
+};
+
+const getOverflowMenuOffsetExperimental = (menuBody, direction) => {
+  const triggerButtonPositionProp = triggerButtonPositionProps[direction];
+  const triggerButtonPositionFactor = triggerButtonPositionFactors[direction];
+  if (!triggerButtonPositionProp || !triggerButtonPositionFactor) {
+    console.warn('Wrong floating menu direction:', direction); // eslint-disable-line no-console
+  }
+  const menuWidth = menuBody.offsetWidth;
+  const menuHeight = menuBody.offsetHeight;
+  if (triggerButtonPositionProp === 'top' || triggerButtonPositionProp === 'bottom') {
+    return {
+      left: menuWidth / 2 - 16,
+      top: 0,
+    };
+  }
+
+  if (triggerButtonPositionProp === 'left' || triggerButtonPositionProp === 'right') {
+    return {
+      left: 0,
+      top: menuHeight / 2 - 16,
+    };
+  }
+};
 
 const components = {
   ...carbonComponents,
@@ -113,19 +167,34 @@ class ComponentExample extends Component {
           const TheComponent = components[name];
           if (TheComponent) {
             const options = {};
+            if (name === 'DatePicker') {
+              // Same as `this._liveContainerRef.current`, but that may not have been set up yet
+              const liveContainerRef = ref.closest('.component-example__live');
+              options.appendTo = liveContainerRef;
+              options.onPreCalendarPosition = (selectedDates, value, { _positionElement, calendarContainer }) => {
+                // Make it "post" positioning handler
+                Promise.resolve().then(() => {
+                  const { left: inputLeft, top: inputTop } = _positionElement.getBoundingClientRect();
+                  const { left: containerLeft, top: containerTop } = liveContainerRef.getBoundingClientRect();
+                  calendarContainer.style.left = `${inputLeft - containerLeft}px`;
+                  calendarContainer.style.top = `${inputTop - containerTop + _positionElement.offsetHeight}px`;
+                });
+              };
+            }
             if (name === 'OverflowMenu' || name === 'Tooltip') {
-              ['objMenuOffset', 'objMenuOffsetFlip'].forEach(name => {
-                if (TheComponent.options[name]) {
-                  options[name] = (menuBody, direction) => {
-                    const origOffset = TheComponent.options[name](menuBody, direction);
+              ['objMenuOffset', 'objMenuOffsetFlip'].forEach(optionName => {
+                if (TheComponent.options[optionName]) {
+                  options[optionName] = (menuBody, direction) => {
+                    const origOffset = name === 'OverflowMenu' && experimental ? getOverflowMenuOffsetExperimental(menuBody, direction) : TheComponent.options[optionName](menuBody, direction);
                     const liveContainerRef = this._liveContainerRef.current;
                     if (liveContainerRef) {
                       const { left: origLeft, top: origTop } = origOffset;
                       const { left: liveContainerLeft, top: liveContainerTop } = liveContainerRef.getBoundingClientRect();
-                      const { left: bodyLeft, top: bodyTop } = liveContainerRef.ownerDocument.body.getBoundingClientRect();
+                      const adjustLeft = liveContainerLeft + menuBody.ownerDocument.defaultView.pageXOffset;
+                      const adjustTop = liveContainerTop + menuBody.ownerDocument.defaultView.pageYOffset;
                       return {
-                        left: origLeft - liveContainerLeft + bodyLeft,
-                        top: origTop - liveContainerTop + bodyTop,
+                        left: origLeft - adjustLeft,
+                        top: origTop + adjustTop * liveDemoContainerVerticalPositionFactors[direction],
                       }
                     }
                     return origOffset;
