@@ -13,7 +13,7 @@ title: Designers
 
 The Carbon Design Kit contains core visual styles, components, color swatches, iconography, and templates. It also has a collection of symbols and text styles for rapid design and layout prototyping. Each is designated its own page, which may be accessed via the left side panel.
 
-The Design Kit is available through GitHub and internally to IBMers through Box Drive. The kti can be used as a normal file in the Sketch application or you can load the file as a Sketch Library source.
+The Design Kit is available through GitHub and internally to IBMers through Box Drive. The kit can be used as a normal file in the Sketch application or you can load the file as a Sketch Library source.
 
 ### Why Sketch?
 

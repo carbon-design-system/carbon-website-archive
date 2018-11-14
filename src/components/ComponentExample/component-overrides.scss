@@ -283,7 +283,7 @@
 .component-example .carbon-demo-experimental .demo--inline-notification {
   display: inline-flex;
 }
-
+ 
 //---------------------------------------
 // Experimental Date Picker
 //---------------------------------------
@@ -296,7 +296,7 @@
 }
 
 .component-example .carbon-demo-experimental .cur-month {
-  text-transform: none!important;
+  text-transform: none;
 }
 
 .component-example .carbon-demo-experimental .flatpickr-current-month span.cur-month:hover,
