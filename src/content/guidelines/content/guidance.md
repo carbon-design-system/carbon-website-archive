@@ -63,23 +63,23 @@ Use simple verbs and tenses, and keep sentences concise, simple, friendly, and p
 
 If you need to use past or future tense, avoid verb tenses with the words have, has, had, been, should, would, and will.
 
-<flex-group>
+<do-dont-group>
     <example correct=true title="Future Tense" text='"The API returns a promise."'></example>
-    <example title='Future Tense' text='"The API will return a promise."'></example>
-</flex-group>
-<flex-group>
+    <example title='Future Tense' description="lorem ipsum dolor site amet consecutor something or other" text='"The API will return a promise."'></example>
+</do-dont-group>
+<do-dont-group>
     <example correct=true title="Past Tense" text='"The limit was exceeded."'></example>
-    <example title='Past Tense' text='"The limit has been exceeded."'></example>
-</flex-group>
+    <example text='"The limit has been exceeded."'></example>
+</do-dont-group>
 
 ### Do use active voice
 
 To convey a more natural tone, use active voice. People tend to speak in active voice unless they have a reason not to. For example, a good reason to use passive voice is to avoid sounding judgmental or blaming the user. Consider how a statement like, “You entered the wrong value,” which is active voice, might not be a well received error message.
 
-<flex-group>
+<do-dont-group>
     <example correct=true title="Active Voice" text='"In the Limits window, specify the minimum and maximum values."'></example>
     <example title='Passive Voice' text='"The Limits window is used to specify the minimum and maximum values."'></example>
-</flex-group>
+</do-dont-group>
 
 ### Do use second person
 
@@ -94,10 +94,10 @@ One exception to this is in the case of possessive adjectives in the UI. You can
 - Occasionally use questions in headings. In both UIs and documentation, questions can be used to further conversational style, but don't overuse them, as they can add to noise and hinder retrievability. Make sure headings that use questions are meaningful. In a UI, questions can be used in a confirmation prompt in a dialog box. For example: _“Do you want to close without saving?”_
 - Use exclamation marks only positively, not negatively. Make sure you use no more than one exclamation mark in a context, such as a single window or a single Docs topic.
 
-<flex-group>
+<do-dont-group>
     <example correct=true title="Exclamation Points" text='"Your IBM Bluemix account is ready!"'></example>
     <example title='Exclamation Points' text='"You have reached your usage limit!"'></example>
-</flex-group>
+</do-dont-group>
 
 ### Don't be overly mannerly
 
@@ -107,11 +107,11 @@ Terms of politeness are superfluous, convey the wrong tone for technical materia
 
 Use **please** in a UI only when the user is being inconvenienced.
 
-<flex-group>
+<do-dont-group>
     <example correct=true title="Ability" text='"You can use the command line interface to update your app."'></example>
     <example title='Ability' text='"You may use the command line interface to update your app."'></example>
-</flex-group>
-<flex-group>
+</do-dont-group>
+<do-dont-group>
     <example correct=true title="Possibility" text='"You might need more advanced features when you are integrating with another app."'></example>
     <example title='Possibility' text='"You may need more advanced features when you are integrating with another app."'></example>
-</flex-group>
+</do-dont-group>

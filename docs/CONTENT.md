@@ -167,6 +167,8 @@ The carbon website has a handful of custom markdown components available for use
 
 ### Global Components:
 
+TODO: update code examples
+
 - `<page-intro>`
 - `<page-intro> **Bold and blue text** </page-intro>`
 - `<icon name="icon--checkmark--solid" color="green" />`

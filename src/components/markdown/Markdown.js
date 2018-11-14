@@ -24,6 +24,12 @@ export class FlexGroup extends React.Component {
   }
 }
 
+export class DoDontGroup extends React.Component {
+  render() {
+    return <div className="do-dont-group">{this.props.children}</div>;
+  }
+}
+
 export class h4 extends React.Component {
   render() {
     return <h4 className="page-h4">{this.props.children}</h4>;

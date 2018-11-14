@@ -37,6 +37,7 @@ import {
   PageIntro,
   PageIcon,
   FlexGroup,
+  DoDontGroup,
 } from '../components/markdown/Markdown';
 
 const renderAst = new rehypeReact({
@@ -50,6 +51,7 @@ const renderAst = new rehypeReact({
     'page-intro': PageIntro,
     icon: PageIcon,
     'flex-group': FlexGroup,
+    'do-dont-group': DoDontGroup,
     'clickable-tile': ClickTile,
     example: Example,
     'color-block': ColorBlock,
