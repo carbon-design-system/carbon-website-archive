@@ -103,7 +103,9 @@ One exception to this is in the case of possessive adjectives in the UI. You can
 
 Terms of politeness are superfluous, convey the wrong tone for technical material, and are not regarded the same way in all cultures.
 
-<example correct=true title="Using Please" text='"Indexing might take a few minutes. Please wait."'></example>
+<do-dont-group>
+    <example correct=true title="Using Please" text='"Indexing might take a few minutes. Please wait."'></example>
+</do-dont-group>
 
 Use **please** in a UI only when the user is being inconvenienced.
 
