@@ -2,7 +2,9 @@
 
 Update date in Footer.js component
 
-## Internal
+## Deploying for production/live
+
+### Internal website
 
 ```bash
 # Build the internal site
@@ -28,7 +30,7 @@ ibmcloud cf blue-green-deploy carbon-website-internal  -f .circleci/manifest.int
 ibmcloud cf push carbon-website-internal  -f .circleci/manifest.internal.yml
 ```
 
-## External
+### External website
 
 ```bash
 # Build the external site
@@ -41,7 +43,7 @@ npx serve public
 http://localhost:5000
 
 ## Login and push
-ibmcloud login -sso -a https://api.ng.bluemix.net -o carbon-design-system -s production
+ibmcloud login --sso -a https://api.ng.bluemix.net -o carbon-design-system -s production
 
 # Make sure you have blue-green-deploy installed as a plugin for cf
 ibmcloud cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org
@@ -55,3 +57,26 @@ ibmcloud cf push -f .circleci/manifest.external.yml
 
 ```
 
+## Deploying for development/preview builds
+
+```bash
+# Build the external site (for internal builds of the site, swap `internal` for `external`)
+yarn build:external
+
+# Run build locally 
+npx serve public
+
+# Test local production build of website
+http://localhost:5000
+
+# Login
+ibmcloud login --sso
+
+# Update `.circleci > manifest.external.yml`:
+  # - comment out or remove any `routes:` information
+  # - add the property: `random-route: true`
+
+# Deploy to preview link:
+ibmcloud cf push -f .circleci/manifest.external.yml
+
+```
