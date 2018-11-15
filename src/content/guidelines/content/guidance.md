@@ -65,11 +65,11 @@ If you need to use past or future tense, avoid verb tenses with the words have, 
 
 <do-dont-group>
     <example correct=true title="Future Tense" text='"The API returns a promise."'></example>
-    <example title='Future Tense' description="lorem ipsum dolor site amet consecutor something or other" text='"The API will return a promise."'></example>
+    <example title='Future Tense' text='"The API will return a promise."'></example>
 </do-dont-group>
 <do-dont-group>
     <example correct=true title="Past Tense" text='"The limit was exceeded."'></example>
-    <example text='"The limit has been exceeded."'></example>
+    <example title='Future Tense' text='"The limit has been exceeded."'></example>
 </do-dont-group>
 
 ### Do use active voice
