@@ -57,7 +57,7 @@ npx serve public
 http://localhost:5000
 
 ## Login and push
-ibmcloud login -sso -a https://api.ng.bluemix.net -o carbon-design-system -s production
+ibmcloud login --sso -a https://api.ng.bluemix.net -o carbon-design-system -s production
 
 # Make sure you have blue-green-deploy installed as a plugin for cf
 ibmcloud cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org
