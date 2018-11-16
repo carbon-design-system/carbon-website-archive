@@ -1,0 +1,334 @@
+{
+  "about": {
+    "title": "About",
+    "sub-nav": {
+      "whats-new": {
+        "title": "What's New"
+      },
+      "design-language": {
+        "title": "Design Language"
+      }
+    }
+  },
+  "getting-started": {
+    "title": "Getting Started",
+    "sub-nav": {
+      "designers": {
+        "title": "Designers"
+      },
+      "developers": {
+        "title": "Developers"
+      },
+      "add-ons": {
+        "title": "Add-Ons"
+      }
+    }
+  },
+  "contributing": {
+    "title": "Contributing"
+  },
+  "guidelines": {
+    "title": "Guidelines",
+    "sub-nav": {
+      "accessibility": {
+        "title": "Accessibility"
+      },
+      "content": {
+        "title": "Content"
+      },
+      "color": {
+        "title": "Color"
+      },
+      "grid": {
+        "title": "Grid"
+      },
+      "iconography": {
+        "title": "Iconography"
+      },
+      "layer": {
+        "title": "Layer"
+      },
+      "motion": {
+        "title": "Motion"
+      },
+      "spacing": {
+        "title": "Spacing"
+      },
+      "themes": {
+        "title": "Themes"
+      },
+      "typography": {
+        "title": "Typography"
+      }
+    }
+  },
+  "your-product-on-ibm-cloud": {
+    "title": "Your Product on IBM Cloud",
+    "internal": true,
+    "sub-nav": {
+      "catalog-entry": {
+        "title": "Catalog Entry"
+      },
+      "user-flow": {
+        "title": "User Flow"
+      },
+      "service-providers": {
+        "title": "Service Providers"
+      },
+      "principles": {
+        "title": "Principles"
+      }
+    }
+  },
+  "components": {
+    "title": "Components",
+    "sub-nav": {
+      "overview": {
+        "title": "Overview"
+      },
+      "accordion": {
+        "title": "Accordion"
+      },
+      "breadcrumb": {
+        "title": "Breadcrumb"
+      },
+      "button": {
+        "title": "Button"
+      },
+      "checkbox": {
+        "title": "Checkbox"
+      },
+      "code-snippet": {
+        "title": "Code Snippet"
+      },
+      "content-switcher": {
+        "title": "Content Switcher"
+      },
+      "data-table": {
+        "title": "Data Table"
+      },
+      "date-picker": {
+        "title": "Date Picker"
+      },
+      "dropdown": {
+        "title": "Dropdown"
+      },
+      "file-uploader": {
+        "title": "File Uploader"
+      },
+      "form": {
+        "title": "Form"
+      },
+      "inline-loading": {
+        "title": "Inline Loading"
+      },
+      "link/code": {
+        "title": "Link"
+      },
+      "list": {
+        "title": "List"
+      },
+      "loading": {
+        "title": "Loading"
+      },
+      "modal": {
+        "title": "Modal"
+      },
+      "notification": {
+        "title": "Notification"
+      },
+      "number-input": {
+        "title": "Number Input"
+      },
+      "overflow-menu": {
+        "title": "Overflow Menu"
+      },
+      "pagination": {
+        "title": "Pagination"
+      },
+      "progress-indicator": {
+        "title": "Progress Indicator"
+      },
+      "radio-button": {
+        "title": "Radio Button"
+      },
+      "search": {
+        "title": "Search"
+      },
+      "select": {
+        "title": "Select"
+      },
+      "slider": {
+        "title": "Slider"
+      },
+      "structured-list": {
+        "title": "Structured List"
+      },
+      "tabs": {
+        "title": "Tabs"
+      },
+      "tag": {
+        "title": "Tag"
+      },
+      "text-input": {
+        "title": "Text Input"
+      },
+      "tile": {
+        "title": "Tile"
+      },
+      "toggle": {
+        "title": "Toggle"
+      },
+      "tooltip": {
+        "title": "Tooltip"
+      }
+    }
+  },
+  "experimental": {
+    "title": "Experimental",
+    "sub-nav": {
+      "about": {
+        "title": "About"
+      },
+      "color": {
+        "title": "Color",
+        "internal": true
+      },
+      "layout": {
+        "title": "Layout",
+        "internal": true
+      },
+      "iconography": {
+        "title": "Iconography",
+        "internal": true
+      },
+      "ui-shell": {
+        "title": "UI Shell"
+      },
+      "accordion": {
+        "title": "Accordion"
+      },
+      "breadcrumb": {
+        "title": "Breadcrumb"
+      },
+      "button": {
+        "title": "Button"
+      },
+      "checkbox": {
+        "title": "Checkbox"
+      },
+      "content-switcher": {
+        "title": "Content Switcher"
+      },
+      "date-picker": {
+        "title": "Date Picker"
+      },
+      "dropdown": {
+        "title": "Dropdown"
+      },
+      "link": {
+        "title": "Link"
+      },
+      "list": {
+        "title": "List"
+      },
+      "notification": {
+        "title": "Notification"
+      },
+      "number-input": {
+        "title": "Number Input"
+      },
+      "radio-button": {
+        "title": "Radio Button"
+      },
+      "select": {
+        "title": "Select"
+      },
+      "slider": {
+        "title": "Slider"
+      },
+      "structured-list": {
+        "title": "Structured List"
+      },
+      "tag": {
+        "title": "Tag"
+      },
+      "text-input": {
+        "title": "Text Input"
+      },
+      "tile": {
+        "title": "Tile"
+      },
+      "toggle": {
+        "title": "Toggle"
+      },
+      "tooltip": {
+        "title": "Tooltip"
+      }
+    }
+  },
+  "data-visualization": {
+    "title": "Data Visualization",
+    "sub-nav": {
+      "overview": {
+        "title": "Overview"
+      },
+      "bar-graph": {
+        "title": "Bar Graph"
+      },
+      "gauge": {
+        "title": "Gauge"
+      },
+      "line-graph": {
+        "title": "Line Graph"
+      },
+      "pie-chart": {
+        "title": "Pie Chart"
+      },
+      "scatter-plot": {
+        "title": "Scatter Plot"
+      },
+      "tooltip": {
+        "title": "Tooltip"
+      }
+    }
+  },
+  "utilities": {
+    "title": "Utilities",
+    "sub-nav": {
+      "common-actions": {
+        "title": "Common Actions"
+      },
+      "disabled-states": {
+        "title": "Disabled States"
+      },
+      "filtering": {
+        "title": "Filtering"
+      },
+      "loading": {
+        "title": "Loading"
+      },
+      "overflow-content": {
+        "title": "Overflow Content"
+      }
+    }
+  },
+  "component-status": {
+    "title": "Component Status"
+  },
+  "resources": {
+    "title": "Resources"
+  },
+  "help": {
+    "title": "Help",
+    "sub-nav": {
+      "support": {
+        "title": "Support"
+      },
+        "faq": {
+          "title": "FAQ"
+        }
+      }
+    }
+  }
+
