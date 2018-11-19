@@ -207,6 +207,30 @@
   }
 }
 
+.component-example__live.component-example__live--ui-shell {
+  padding: 0;
+  height: 600px;
+}
+
+.component-example__live.component-example__live--ui-shell .component-example__live--rendered {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.component-example__live.component-example__live--ui-shell .component-example__live--rendered > div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.component-example__live.component-example__live--ui-shell .component-example__live--rendered {
+  header, aside {
+    position: absolute;
+  }
+}
+
 .page-header + div > .bx--tabs {
   background-color: $field-01;
 
