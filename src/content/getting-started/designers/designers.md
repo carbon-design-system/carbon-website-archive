@@ -45,12 +45,12 @@ The Carbon team releases frequent updates to the design kit. We track all releas
 	- To update to the latest Carbon library version you will have to download the newest version of the Carbon Design Kit each time it is released and replace the previous version.
 	- Follow the specific [instructions](https://github.com/IBM/carbon-design-kit/wiki/Sketch-Libraries-Overview) on the wiki to ensure a smooth transition.
 
-### Sync via Box Drive
+### Syncronize via Box Drive
 
 _For IBM internal users only._ Using Box Drive sync will ensure that your design kit file will always be up to date, eliminating the need to manually download new versions as they are released.
 
 1. Follow the instructions on [IBM Digital Design](https://www.ibm.com/standards/web/design-kit/) to get the design kit through Box Drive.
-- Once you have installed and gained access to the `IBM Design Kit`, navigate to the `product design` folder. Select the correct version of Carbon to find the right Carbon Design Kit file.
+- Once you have installed and gained access to the `IBM Design Kit`, navigate to the `product design` folder. Select the desired version of Carbon to find the right Carbon Design Kit file.
 - When updates are available to the kit library, a purple `Library Update` badge will appear in the top right corner of your Sketch file.
 	-  Click `Library Updates Available` then `Accept updates` in the modal.
 ![Update indicator screenshot](images/designers-5.png)
