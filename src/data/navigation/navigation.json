@@ -214,6 +214,9 @@
       "dropdown": {
         "title": "Dropdown"
       },
+      "inline-loading": {
+        "title": "Inline Loading"
+      },
       "link": {
         "title": "Link"
       },
