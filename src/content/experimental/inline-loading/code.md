@@ -10,7 +10,7 @@ tabs: ['Code', 'Usage']
     name="Inline Loading"
     component="inline-loading" 
     variation="inline-loading"
-    experimental=“true”
+    experimental="true"
     >
 </component>
 <component-docs component="inline-loading"></component-docs>
