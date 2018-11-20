@@ -223,6 +223,9 @@
       "list": {
         "title": "List"
       },
+      "loading": {
+        "title": "Loading"
+      },
       "notification": {
         "title": "Notification"
       },
