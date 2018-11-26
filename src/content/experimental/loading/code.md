@@ -1,5 +1,5 @@
 ---
-label: Component
+label: Experimental
 title: Loading
 tabs: ['Code', 'Usage']
 ---
@@ -7,14 +7,14 @@ tabs: ['Code', 'Usage']
 <page-intro>**Loading** spinners are used when retrieving data or performing slow computations, and help to notify users that loading is underway.</page-intro>
 
 <component 
-    name="Loading"
+    name="Experimental Loading"
     component="loading" 
     variation="loading"
     experimental="true"
     >
 </component>
 <component 
-    name="Loading"
+    name=" Experimental Loading"
     component="loading" 
     variation="loading--small"
     experimental="true"

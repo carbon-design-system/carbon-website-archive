@@ -1,5 +1,5 @@
 ---
-label: Component
+label: Experimental
 title: Loading
 tabs: ['Code', 'Usage']
 ---
