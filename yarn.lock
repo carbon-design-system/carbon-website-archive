@@ -781,11 +781,6 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@carbon/colors@^0.0.1-alpha.0":
-  version "0.0.1-alpha.0"
-  resolved "https://registry.yarnpkg.com/@carbon/colors/-/colors-0.0.1-alpha.0.tgz#8c53ef65f864106a63cfc412d8ff083a8a04905f"
-  integrity sha512-/v5d1iw5MuHQgBgArItzHF04VgqeE5u/oSXwx/FDrZOZiJQ2IAlq3ocCglAq0P2xd8Wkzy2jKKIcL7LOGQYfww==
-
 "@carbon/icons-react@^0.0.1-alpha.2":
   version "0.0.1-alpha.2"
   resolved "https://registry.yarnpkg.com/@carbon/icons-react/-/icons-react-0.0.1-alpha.2.tgz#d46a8bcb1986a7d57d10894c02db6b56040d5699"
@@ -3893,12 +3888,11 @@ carbon-components-react@6.49.0:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@^9.48.4:
-  version "9.48.4"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.48.4.tgz#8de06441efe19ac32b17532292fbd63701cac817"
-  integrity sha512-ELJywzQyBiPNmdjrqOr1intkivkXdB0TX1OwNQATuoE1iLBlAlKZnUfok2t5nSylK+ICZ8wnArIev5Xkel9RGw==
+carbon-components@^9.54.0:
+  version "9.54.0"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.54.0.tgz#d3b886edd9b535f4b29022a23bf70f37660f72ea"
+  integrity sha512-sKye1gdv+BG5y2Z0Kd+knu9TL10JXY8Nr62uF8X04Obg/fOv5/aJXMo6h9wlKLacgBn9nSFp6ubHl3nv6Kzh4w==
   dependencies:
-    "@carbon/colors" "^0.0.1-alpha.0"
     carbon-icons "^7.0.7"
     flatpickr "4.5.2"
     lodash.debounce "^4.0.8"
