@@ -8,7 +8,7 @@ tabs: ['Code', 'Usage']
 variations:</page-intro>
 
 <component
-    name="Code Snippet"
+    name="Experimental Code Snippet"
     component="code-snippet"
     variation="code-snippet"
     experimental="true"
