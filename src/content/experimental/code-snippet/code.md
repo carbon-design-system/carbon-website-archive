@@ -15,7 +15,7 @@ variations:</page-intro>
     >
 </component>
 <component
-    name="Inline Code Snippet"
+    name="Experimental Inline Code Snippet"
     component="code-snippet"
     variation="code-snippet--inline"
     haslightversion="true"
