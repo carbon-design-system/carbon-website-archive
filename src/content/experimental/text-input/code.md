@@ -15,7 +15,7 @@ tabs: ['Code', 'Usage']
 </component>
 
 <component
-    name="Text Area"
+    name="Experimental Text Area"
     component="text-area"
     variation="text-area"
     experimental="true"
