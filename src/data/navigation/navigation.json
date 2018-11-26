@@ -1,31 +1,18 @@
 {
-  "about": {
-    "title": "About",
-    "sub-nav": {
-      "whats-new": {
-        "title": "What's New"
-      },
-      "design-language": {
-        "title": "Design Language"
-      }
-    }
-  },
+  
   "getting-started": {
     "title": "Getting Started",
     "sub-nav": {
+      "about-carbon": {
+        "title": "About Carbon"
+      },
       "designers": {
         "title": "Designers"
       },
       "developers": {
         "title": "Developers"
-      },
-      "add-ons": {
-        "title": "Add-Ons"
       }
     }
-  },
-  "contributing": {
-    "title": "Contributing"
   },
   "guidelines": {
     "title": "Guidelines",
@@ -62,7 +49,7 @@
       }
     }
   },
- "your-product-on-ibm-cloud": {
+  "your-product-on-ibm-cloud": {
     "title": "Your Product on IBM Cloud",
     "internal": true,
     "sub-nav": {
@@ -78,6 +65,7 @@
       "catalog-entry": {
         "title": "Catalog Entry"
       }
+      
     }
   },
   "components": {
@@ -270,6 +258,29 @@
       }
     }
   },
+  "component-status": {
+    "title": "Component Status"
+  },
+  "patterns": {
+    "title": "Patterns",
+    "sub-nav": {
+      "common-actions": {
+        "title": "Common Actions"
+      },
+      "disabled-states": {
+        "title": "Disabled States"
+      },
+      "filtering": {
+        "title": "Filtering"
+      },
+      "loading": {
+        "title": "Loading"
+      },
+      "overflow-content": {
+        "title": "Overflow Content"
+      }
+    }
+  },
   "data-visualization": {
     "title": "Data Visualization",
     "sub-nav": {
@@ -296,31 +307,33 @@
       }
     }
   },
-  "utilities": {
-    "title": "Utilities",
-    "sub-nav": {
-      "common-actions": {
-        "title": "Common Actions"
-      },
-      "disabled-states": {
-        "title": "Disabled States"
-      },
-      "filtering": {
-        "title": "Filtering"
-      },
-      "loading": {
-        "title": "Loading"
-      },
-      "overflow-content": {
-        "title": "Overflow Content"
-      }
-    }
-  },
-  "component-status": {
-    "title": "Component Status"
-  },
   "resources": {
     "title": "Resources"
+  },
+  "contributing": {
+    "title": "Contributing",
+    "sub-nav": {
+      "designers": {
+      "title": "Designers"
+    },
+    "developers": {
+      "title": "Developers"
+    },
+    "add-ons": {
+      "title": "Add-Ons"
+    }
+  }
+  },
+  "updates": {
+    "title": "Updates",
+    "sub-nav": {
+      "whats-new": {
+        "title": "What's New"
+      },
+      "design-language": {
+        "title": "Design Language"
+      }
+    }
   },
   "help": {
     "title": "Help",
@@ -328,10 +341,11 @@
       "support": {
         "title": "Support"
       },
-        "faq": {
+      "faq": {
           "title": "FAQ"
         }
       }
     }
   }
+  
 
