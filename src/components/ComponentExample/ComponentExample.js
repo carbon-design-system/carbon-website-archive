@@ -275,7 +275,7 @@ class ComponentExample extends Component {
         .toUpperCase() + componentName.split(' ')[1].substring(1)}`;
     }
 
-    const liveBackgroundClasses = classnames('component-example__live', {
+    const liveBackgroundClasses = classnames('component-example__live', `component-example__live--${component}`, {
       'component-example__live--light':
         (currentFieldColor === 'field-01') & (hasLightVersion === 'true') ||
         hasLightBackground === 'true',
