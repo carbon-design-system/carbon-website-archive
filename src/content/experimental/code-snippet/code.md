@@ -23,7 +23,7 @@ variations:</page-intro>
     >
 </component>
 <component
-    name="Multi Line Code Snippet"
+    name="Experimental Multi Line Code Snippet"
     component="code-snippet"
     variation="code-snippet--multi"
     experimental="true"
