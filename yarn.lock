@@ -832,14 +832,14 @@
     react-inspector "^2.2.2"
     uuid "^3.2.1"
 
-"@storybook/addon-info@^4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-info/-/addon-info-4.0.2.tgz#21dc27af95eb7e5a95e1cb9aec829eae01ba77e4"
+"@storybook/addon-info@^4.0.9":
+  version "4.0.9"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-info/-/addon-info-4.0.9.tgz#4ca3cd32e30e7959bef2bc07dc00a5a9041395d3"
   dependencies:
     "@emotion/styled" "^0.10.6"
-    "@storybook/addons" "4.0.2"
-    "@storybook/client-logger" "4.0.2"
-    "@storybook/components" "4.0.2"
+    "@storybook/addons" "4.0.9"
+    "@storybook/client-logger" "4.0.8"
+    "@storybook/components" "4.0.9"
     core-js "2.5.7"
     global "^4.3.2"
     marksy "^6.1.0"
@@ -885,12 +885,12 @@
   version "3.4.10"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-3.4.10.tgz#13298cdcb7ccc396321b1336b9785b69273a022d"
 
-"@storybook/addons@4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-4.0.2.tgz#95fa2384c122953359693849abd711a1611a9bcf"
+"@storybook/addons@4.0.9":
+  version "4.0.9"
+  resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-4.0.9.tgz#cfa18fe10ddda454dbbc3aae17562e46d04d3955"
   dependencies:
-    "@storybook/channels" "4.0.2"
-    "@storybook/components" "4.0.2"
+    "@storybook/channels" "4.0.8"
+    "@storybook/components" "4.0.9"
     global "^4.3.2"
     util-deprecate "^1.0.2"
 
@@ -906,17 +906,17 @@
   version "3.4.10"
   resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-3.4.10.tgz#ab023a0d8cbd34a4eb4b8ae5c6f02654fed9190b"
 
-"@storybook/channels@4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-4.0.2.tgz#7a00367a5e4be8a05ed0fce3709a50cc62628629"
+"@storybook/channels@4.0.8":
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/@storybook/channels/-/channels-4.0.8.tgz#36d96ad714c685f144fd1f1e5394faf0e0291032"
 
 "@storybook/client-logger@3.4.10":
   version "3.4.10"
   resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-3.4.10.tgz#510854ee326808a65a20b79e3405763280bc7027"
 
-"@storybook/client-logger@4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-4.0.2.tgz#96b07b563115594cbf12546963d79123a0363bfd"
+"@storybook/client-logger@4.0.8":
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/@storybook/client-logger/-/client-logger-4.0.8.tgz#159bc1732811c543393d86e06a7c32b41047d217"
 
 "@storybook/components@3.4.10":
   version "3.4.10"
@@ -926,9 +926,9 @@
     glamorous "^4.12.1"
     prop-types "^15.6.1"
 
-"@storybook/components@4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-4.0.2.tgz#06ed3675c8d798b20c7464335d2bd090f99402af"
+"@storybook/components@4.0.9":
+  version "4.0.9"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-4.0.9.tgz#c5cc9f52768fd7a6078d9601cecacd0e357dc130"
   dependencies:
     "@emotion/core" "^0.13.1"
     "@emotion/provider" "^0.11.2"
@@ -3387,9 +3387,9 @@ capture-stack-trace@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.1.tgz#a6c0bbe1f38f3aa0b92238ecb6ff42c344d4135d"
 
-carbon-components-react@6.49.0:
-  version "6.49.0"
-  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.49.0.tgz#011af5ddbcce8aba66591a1853128e9194f08d07"
+carbon-components-react@6.52.1:
+  version "6.52.1"
+  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.52.1.tgz#e8c222a0fe30b78d15b7641bae63128359bf8315"
   dependencies:
     "@carbon/icons-react" "^0.0.1-alpha.2"
     classnames "2.2.6"
@@ -3402,9 +3402,9 @@ carbon-components-react@6.49.0:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@^9.54.0:
-  version "9.54.0"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.54.0.tgz#d3b886edd9b535f4b29022a23bf70f37660f72ea"
+carbon-components@^9.54.3:
+  version "9.54.5"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.54.5.tgz#4bc04e67ce785057043ea18b575e13408609da8d"
   dependencies:
     carbon-icons "^7.0.7"
     flatpickr "4.5.2"
