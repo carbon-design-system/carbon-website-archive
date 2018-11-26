@@ -1,5 +1,5 @@
 {
-  
+
   "getting-started": {
     "title": "Getting Started",
     "sub-nav": {
@@ -65,7 +65,7 @@
       "catalog-entry": {
         "title": "Catalog Entry"
       }
-      
+
     }
   },
   "components": {
@@ -204,6 +204,9 @@
       },
       "checkbox": {
         "title": "Checkbox"
+      },
+      "code-snippet": {
+        "title": "Code Snippet"
       },
       "content-switcher": {
         "title": "Content Switcher"
@@ -347,5 +350,3 @@
       }
     }
   }
-  
-
