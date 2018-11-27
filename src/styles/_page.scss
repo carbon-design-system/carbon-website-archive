@@ -47,7 +47,8 @@ button,
 }
 
 .page-content {
-  padding: $layout-lg;
+  padding-top: $layout-lg;
+  padding-bottom: $layout-lg;
   max-width: rem(1584px);
   margin-bottom: 7rem;
 
@@ -57,7 +58,7 @@ button,
 
   // The max width of the actual content
   & > div {
-    max-width: 55rem;
+    //max-width: 55rem;
   }
 
   // All paragraphs on Markdown pages

@@ -8,6 +8,11 @@ export default class PageTable extends React.Component {
 
   render() {
     const { children } = this.props;
-    return <table className="page-table">{children}</table>;
-  }
+    return (
+      <div class="bx--row">
+        <div class="bx--col-lg-15 bx--offset-lg-1">
+          <table className="page-table">{children}</table>
+        </div>
+      </div>
+    )};
 }

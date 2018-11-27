@@ -24,7 +24,7 @@
 //----------------------------
 
 .page-h2,
-.page-content > div > h2,
+.page-content > div > div > div > h2,
 .component-docs h2 {
   @include type-style('heading-06');
   position: relative;
@@ -41,7 +41,7 @@
 // h3
 //----------------------------
 
-.page-content > div > h3,
+.page-content > div > div > div > h3,
 .component-docs h3 {
   @include type-style('heading-05');
   color: $text-01;

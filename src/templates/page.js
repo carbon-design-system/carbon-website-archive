@@ -31,6 +31,10 @@ import ComponentOverview from '../components/ComponentOverview';
 
 // Custom Markdown
 import {
+  p,
+  h1,
+  h2,
+  h3,
   h4,
   ul,
   ol,
@@ -42,6 +46,10 @@ import {
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
+    p: p,
+    h1: h1,
+    h2: h2,
+    h3: h3,
     h4: h4,
     ul: ul,
     ol: ol,
@@ -81,7 +89,7 @@ export default ({ data, pageContent }) => {
   const { GATSBY_CARBON_ENV } = process.env;
   const isInternal = GATSBY_CARBON_ENV !== 'internal' && internal == true;
 
-  const classNames = classnames('page-content', {
+  const classNames = classnames('page-content', 'bx--grid', {
     'page-content--component': post.frontmatter.label === 'Component',
   });
 
@@ -102,7 +110,9 @@ export default ({ data, pageContent }) => {
             <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
           )}
         </PageHeader>
-        <div className={classNames}> {renderAst(post.htmlAst)}</div>
+        <div className={classNames}>
+          {renderAst(post.htmlAst)}
+        </div>
       </Layout>
     );
   }

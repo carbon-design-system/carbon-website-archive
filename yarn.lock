@@ -777,12 +777,6 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@carbon/icon-helpers@0.0.1-alpha.12":
-  version "0.0.1-alpha.12"
-  resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-0.0.1-alpha.12.tgz#27f1449ff8e503e42e478ca567dfa6a6b453debe"
-  integrity sha512-aWY4qjWLMPT01jP6owstwYoNn1QQhWdc4lNYNV7sMU0eRoRGV2IbpC4fsF4zHtvlpG3rH7glaTPXmSoTboVBSg==
-
-<<<<<<< HEAD
 "@carbon/colors@^0.0.1-alpha.12":
   version "0.0.1-alpha.12"
   resolved "https://registry.yarnpkg.com/@carbon/colors/-/colors-0.0.1-alpha.12.tgz#a68658d040a970c92e53566b8cdf4ce7a4f59ea2"
@@ -801,26 +795,15 @@
   resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-0.0.1-alpha.12.tgz#27f1449ff8e503e42e478ca567dfa6a6b453debe"
   integrity sha512-aWY4qjWLMPT01jP6owstwYoNn1QQhWdc4lNYNV7sMU0eRoRGV2IbpC4fsF4zHtvlpG3rH7glaTPXmSoTboVBSg==
 
-"@carbon/icons-react@^0.0.1-alpha.12":
-=======
 "@carbon/icons-react@^0.0.1-alpha.12", "@carbon/icons-react@^0.0.1-alpha.2":
->>>>>>> master
   version "0.0.1-alpha.12"
   resolved "https://registry.yarnpkg.com/@carbon/icons-react/-/icons-react-0.0.1-alpha.12.tgz#9cdc7846d0862838770c966a7f130953a89887a5"
   integrity sha512-9FivY8XDubIkrccl4lBAuR5WxbS8unlhQxH3LRVEZ9m/KlNbLww3E5DLMqoTyzPD0e67WkRzTrRi/mqO/aEMGA==
   dependencies:
     "@carbon/icon-helpers" "0.0.1-alpha.12"
     prop-types "^15.6.2"
-<<<<<<< HEAD
 
-"@carbon/icons-react@^0.0.1-alpha.2":
-  version "0.0.1-alpha.2"
-  resolved "https://registry.yarnpkg.com/@carbon/icons-react/-/icons-react-0.0.1-alpha.2.tgz#d46a8bcb1986a7d57d10894c02db6b56040d5699"
-  integrity sha512-G8LeOXztzi5l+GcdA2HecCKeheFSLP81pqDvDnu5Eah7zeU8yLYN6iII/P8xUFdKRfYD+j/mfc9wACRbmw/zVg==
-=======
->>>>>>> master
-
-"@carbon/import-once@0.0.1-alpha.12":
+"@carbon/import-once@0.0.1-alpha.12", "@carbon/import-once@^0.0.1-alpha.12":
   version "0.0.1-alpha.12"
   resolved "https://registry.yarnpkg.com/@carbon/import-once/-/import-once-0.0.1-alpha.12.tgz#bb8b21a619da5494abef4d9ad9b65e725ea30387"
   integrity sha512-H1HIKiiphk1WVi2SrLLZLzTIvL+ZyVkXEHFGf8cCqZ6wergnnZ8MW8lv4+4AMHV+atcBIpNoyLF7AEirvtAhjg==

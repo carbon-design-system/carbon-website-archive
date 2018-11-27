@@ -38,13 +38,17 @@ export default class Snippet extends React.Component {
     const { children } = this.props;
     const type = this.state.multi ? 'multi' : 'single';
     return (
-      <CopyToClipboard
-        text={children[0].props.children[0]}
-        onCopy={() => this.setState({ copied: true })}>
-        <CodeSnippet type={type}>
-          <div ref={element => (this.codeRef = element)}>{children}</div>
-        </CodeSnippet>
-      </CopyToClipboard>
+      <div class="bx--row">
+        <div class="bx--col-lg-10 bx--offset-lg-1">
+          <CopyToClipboard
+            text={children[0].props.children[0]}
+            onCopy={() => this.setState({ copied: true })}>
+            <CodeSnippet type={type}>
+              <div ref={element => (this.codeRef = element)}>{children}</div>
+            </CodeSnippet>
+          </CopyToClipboard>
+        </div>
+      </div>
     );
   }
 }
