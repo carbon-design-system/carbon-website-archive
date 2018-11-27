@@ -37,7 +37,7 @@ title: Roadmap
 - Sharing CSS with [Carbon Angular](/getting-started/developers/angular).
 - Guidelines for composite components.
 
-#### Making more reasons to contribution
+#### Making more reasons to contribute
 
 - Create and distribute **swag** to contributors; credits on site/github; poster, T-shirt, socks, Carbon Conference ticket.
 
