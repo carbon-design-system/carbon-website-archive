@@ -1,6 +1,6 @@
 ---
 label: Experimental
-title: Structured List
+title: Structured list
 tabs: ['Code', 'Usage']
 ---
 
@@ -8,9 +8,9 @@ tabs: ['Code', 'Usage']
 
 - Row height varies based on content, and can expand to fit multiple lines.
 - Column widths can either be equally proportional or proportioned based on content.
-- If your list extends past 25 items, consider using a [Data Table](/components/data-table) to present this larger set of content.
-- A maximum of one paragraph of text is recommended.
-- Nesting items is not recommended, as Structured Lists are used to present simple data. If you have additional content that needs to be shown, consider using a [Data Table,](/components/data-table) which supports nesting items.
+- If a list extends past 25 items, consider using a [data table](/components/data-table) to present this larger set of content.
+- A maximum of one paragraph of text is recommended per row.
+- Nesting items is not recommended, as structured lists are used to present simple data. If you have additional content that needs to be shown, consider using a [data table](/components/data-table), which supports nesting items.
 
 ## Interaction
 
@@ -20,5 +20,5 @@ Structured lists can be single-select if a user is choosing between a set of opt
 
 - Only one item can be selected from the list.
 - By default, one option should be selected.
-- If you need to select multiple items, use a [Data Table.](/components/data-table)
+- If you need to select multiple items, use a [data table.](/components/data-table)
 - When the user selects an item from the list, the selected row will appear with the `checkmark--glyph` icon.
