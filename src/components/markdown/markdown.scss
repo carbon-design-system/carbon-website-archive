@@ -1,24 +1,4 @@
 //----------------------------
-// PageIntro
-//----------------------------
-
-.page-intro {
-  display: block;
-  max-width: 38rem;
-  color: $text-01;
-  word-wrap: break-word;
-  font-size: 1.125rem;
-  line-height: 1.5;
-  font-weight: 600;
-  padding-bottom: 1rem;
-  letter-spacing: 0;
-}
-
-.page-intro > strong {
-  color: $brand-01;
-}
-
-//----------------------------
 // PageIcon
 //----------------------------
 
@@ -46,40 +26,27 @@
 .page-h2,
 .page-content > div > h2,
 .component-docs h2 {
-  @include typescale('beta');
+  @include type-style('heading-06');
   position: relative;
   color: $text-01;
-  margin-top: 6rem;
-  font-weight: 300;
-  padding: $spacing-md 0 3rem;
-
-  &:before {
-    content: '';
-    width: 5rem;
-    height: 0.3rem;
-    display: block;
-    background-color: $brand-01;
-    position: absolute;
-    top: -0.5rem;
-    left: 0;
-  }
+  margin-top: rem(80px);
+  margin-bottom: rem(24px);
 
   div &:first-child {
     margin-top: 0;
   }
 }
-
+ 
 //----------------------------
 // h3
 //----------------------------
 
 .page-content > div > h3,
 .component-docs h3 {
-  @include typescale('delta');
-  color: $brand-01;
-  padding: 4rem 0 1rem;
-  font-weight: 600;
-  letter-spacing: 0;
+  @include type-style('heading-05');
+  color: $text-01;
+  margin-bottom: rem(24px);
+  margin-top: rem(24px);
 }
 
 //----------------------------
@@ -88,11 +55,11 @@
 
 .page-h4,
 .component-docs h4 {
+  @include type-style('heading-02');
+  font-weight: font-weight('semibold');
   color: $text-01;
-  padding: 2rem 0 1rem;
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.25;
+  padding: 0 0 1rem 0;
+  margin-top: rem(32px);
 }
 
 //----------------------------
@@ -104,7 +71,7 @@
   @include typescale('epsilon');
   margin: 1rem 0 1rem 1.5rem;
   line-height: 1.75;
-  max-width: 38rem;
+  //max-width: 38rem;
 }
 
 .page-ul > li {
@@ -162,7 +129,7 @@ blockquote p img {
   margin: 1.75rem 0 0;
   line-height: 1.75;
   width: 100%;
-  max-width: 38rem;
+  //max-width: 38rem;
 }
 
 //----------------------------

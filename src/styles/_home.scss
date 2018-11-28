@@ -17,11 +17,11 @@
   background: linear-gradient(
     to right,
     #2e3f8f,
-    $dark-blue,
-    $dark-blue,
-    $bright-blue,
-    $dark-blue,
-    $dark-blue,
+    $brand-01,
+    $brand-01,
+    $brand-01,
+    $brand-01,
+    $brand-01,
     #2e3f8f
   );
   display: flex;
@@ -129,7 +129,7 @@
 
   &:hover {
     background: white;
-    color: $dark-blue;
+    color: $brand-01;
   }
 }
 
@@ -291,7 +291,7 @@
     white-space: nowrap;
 
     &:hover {
-      color: $bright-blue;
+      color: $brand-01;
     }
   }
 
@@ -369,7 +369,7 @@
 
 .overview-page__section--contribute h2 {
   @include typescale('alpha');
-  color: $bright-blue;
+  color: $brand-01;
   font-weight: 300;
   margin-bottom: 2rem;
 }
@@ -384,12 +384,12 @@
 
 .overview-page__section--contribute p a {
   font-weight: 300;
-  color: $bright-blue;
+  color: $brand-01;
   text-decoration: none;
-  border-bottom: 1px solid $bright-blue;
+  border-bottom: 1px solid $brand-01;
 
   &:hover {
-    color: $dark-blue;
+    color: $brand-01;
   }
 }
 

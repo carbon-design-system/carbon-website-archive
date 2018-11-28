@@ -1,32 +1,22 @@
 .side-nav-toggle-btn {
   position: fixed;
   top: 0;
-  left: calc(256px - 2.3rem);
-  width: 2.3rem;
-  height: 2.3rem;
-  background-color: $ui-01;
-  border: 1px solid transparent;
-  border-right: 2px solid $ui-02;
+  left: 0;
+  width: rem(48px);
+  height: rem(48px);
+  background-color: #252525;
   margin: 0;
   padding: 0;
   cursor: pointer;
-  z-index: 8000;
+  z-index: 10000;
   border-radius: 0;
+  border: none;
   transition: $transition--base $bx--standard-easing;
 
   &:focus {
     outline: none;
     border: 1px solid $brand-01, 0px solid $brand-01, 1px solid $brand-01,
       1px solid $brand-01;
-  }
-
-  &:hover {
-    background: $brand-01;
-    border-right: none;
-
-    .line {
-      background: $ui-01;
-    }
   }
 
   & > div {
@@ -47,7 +37,7 @@
       cursor: pointer;
       display: block;
       margin: rem(2px) 0;
-      background: $brand-01;
+      background: $ui-01;
       will-change: all;
     }
 
@@ -66,7 +56,6 @@
 
   &--closed {
     left: 0;
-    border-right: 0;
 
     > div {
       .line:nth-child(2) {

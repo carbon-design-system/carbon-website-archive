@@ -1,280 +1,87 @@
-.svg--sprite {
-  @include hidden;
-}
 
-.live-component__variation {
-  width: 100%;
-  max-width: 1000px;
-
-  & > .primary-button button,
-  & > .secondary-button button {
-    margin: 0.5rem;
-  }
-
-  & > .detail-page-header--no-tabs > .bx--detail-page-header--no-tabs {
-    width: 100%;
-    left: 0;
-    top: 206px;
-  }
-
-  & > .detail-page-header--with-tabs > .bx--detail-page-header--with-tabs {
-    width: 100%;
-    left: 0;
-    top: 206px;
-  }
-
-  & > .inline-notification .bx--inline-notification {
-    display: inline-flex;
-    margin-right: 10rem;
-  }
-
-  & > .overflow-menu .bx--overflow-menu {
-    position: absolute;
-    left: 3rem;
-
-    &:last-child {
-      left: 15em;
-    }
-  }
-
-  & .text-input .bx--form-item {
-    margin-right: 0;
-  }
-
-  & .bx--detail-page-header--with-tabs .bx--tabs {
-    background-color: $ui-01;
-  }
-
-  & .bx--detail-page-header--with-tabs .bx--tabs__nav--hidden,
-  & .tabs .bx--tabs__nav--hidden {
-    display: none;
-
-    @include breakpoint('768px') {
-      display: flex;
-      margin-top: 8px;
-    }
-  }
-
-  & .tabs .bx--tabs__nav {
-    z-index: 6000;
-  }
-
-  & .interior-left-nav .bx--interior-left-nav {
-    top: 8.5rem;
-    max-height: 80vh;
-  }
-
-  &
-    .interior-left-nav
-    .bx--interior-left-nav--collapseable
-    .bx--interior-left-nav-collapse {
-    margin-bottom: 0;
-  }
-}
-
-.component-example__live {
-  position: relative;
-
+//---------------------------------------
+// Button
+//---------------------------------------
+.component-example {
   .button button {
     margin: 0.5rem;
   }
+}
 
-  .data-table > div {
-    width: 100%;
-  }
-
-  .bx--tooltip__trigger:hover {
-    color: inherit;
-  }
-
-  & > .interior-left-nav .bx--interior-left-nav {
-    position: initial;
-    min-height: rem(400px);
-  }
-
-  &
-    > .interior-left-nav
-    .bx--interior-left-nav--collapseable
-    .bx--interior-left-nav-collapse {
-    margin-bottom: 0;
-  }
-
-  & .text-input .bx--text-input {
-    min-width: 20rem;
-  }
-
-  &
-    .detail-page-header
-    .bx--detail-page-header.bx--detail-page-header--no-tabs {
-    position: absolute;
-    left: 2rem;
-    top: 2rem;
-    width: calc(100% - 4rem);
-    .bx--overflow-menu--flip {
-      left: auto;
-    }
-  }
-
-  & .notification > div {
-    max-width: 700px;
-  }
-
-  &
-    .detail-page-header
-    .bx--detail-page-header.bx--detail-page-header--with-tabs {
-    position: absolute;
-    left: 2rem;
-    top: 2rem;
-    width: calc(100% - 4rem);
-
-    .bx--overflow-menu--flip {
-      left: auto;
-    }
-
-    .bx--tabs__nav {
-      bottom: 0;
-    }
-
-    & li:not(.bx--tabs__nav-item--selected) {
-      .bx--tabs__nav-link {
-        color: $text-01;
-      }
-    }
-
-    & .bx--tabs__nav-item:hover {
-      .bx--tabs__nav-link {
-        color: $brand-01 !important;
-      }
-    }
-  }
-
-  & > .dropdown > div {
-    width: 100%;
-    max-width: 502px;
-  }
-
-  & .loading .bx--loading-overlay {
-    position: absolute;
-  }
-
-  & .notification .bx--inline-notification {
-    display: inline-flex;
-  }
-
-  & .tabs .bx--tabs__nav--hidden {
-    display: none;
+//---------------------------------------
+// Tabs
+//---------------------------------------
+.component-example {
+  .tabs > div {
+    min-width: 100%;
 
     @include breakpoint('768px') {
-      display: flex;
+      min-width: 570px;
     }
   }
 
-  & .tabs .bx--tabs__nav {
-    z-index: 6000;
+  .tabs .demo--tabs+div {
+    padding: 0!important;
+    margin-top: 2rem;
   }
 
-  & .text-input .bx--form-item {
-    margin-right: 0;
-  }
-
-  & .tabs {
-    & > div {
-      min-width: 100%;
-
-      @include breakpoint('768px') {
-        min-width: 570px;
-      }
-    }
-
-    .bx--tabs + div {
-      padding: 0 !important;
-      margin-top: 2rem;
-    }
-
-    #tab-panel-1,
-    #tab-panel-2,
-    #tab-panel-3,
-    #tab-panel-4,
-    #tab-panel-5 {
-      h2 {
-        font-size: 1rem;
-      }
-    }
-  }
-
-  & .select .bx--select--inline {
-    max-width: 400px;
+  .demo--tabs__nav-item+.demo--tabs__nav-item {
+    margin-left: 3rem;
   }
 }
 
-.page-header + div > .bx--tabs {
-  background-color: $field-01;
-
-  @include breakpoint('768px') {
-    background-color: transparent;
-  }
+//---------------------------------------
+// Loading
+//---------------------------------------
+.component-example .loading .bx--loading-overlay,
+.component-example .loading .demo--loading-overlay {
+  position: absolute;
 }
 
-.bx--overflow-menu-options {
-  z-index: 7000;
+//---------------------------------------
+// Dropdown
+//---------------------------------------
+.component-example .demo--dropdown {
+  line-height: 1;
 }
-
-.bx--detail-page-header--with-tabs .bx--tabs {
-  display: block;
-}
-
-.component-example__live .bx--form-item.bx--checkbox-wrapper {
-  margin-bottom: $spacing-md;
-}
-
-.number-input div .bx--form-item:last-child .bx--number {
-  width: 300px;
-}
-
 //---------------------------------------
 // UI Shell
 //---------------------------------------
 
-.ui-shell.component-example__live--rendered .demo--platform-header {
+.ui-shell.component-example__live--rendered .bx--platform-header {
   position: relative;
 }
 
-.carbon-demo-experimental .demo--platform-header ~ .demo--side-nav {
+.carbon-demo-experimental .demo--platform-header ~ .bx--side-nav {
   position: relative;
   top: 0 !important;
 }
 
-.ui-shell.component-example__live--rendered .demo--platform__nav {
+.ui-shell.component-example__live--rendered .bx--platform__nav {
   top: 5rem;
   left: 2rem;
 }
 
 //---------------------------------------
-// Experimental Text Input
+// Experimental Notification
 //---------------------------------------
+.component-example .carbon-bx-experimental .bx--inline-notification {
+  display: inline-flex;
+}
 
-.carbon-demo-experimental .demo--form-item {
+//---------------------------------------
+// Clear form outline styles that aren't prefixed
+//---------------------------------------
+.carbon-demo-v9 .demo--select--inline .demo--select-input,
+.carbon-demo-v9 .demo--select-input[data-invalid],
+.carbon-demo-v9 .demo--text-area[data-invalid],
+.carbon-demo-v9 .demo--text-input[data-invalid],
+.carbon-demo-v9 .demo--date-picker__input[data-invalid] {
+  outline: none;
+}
+
+.carbon-demo-v9 .demo--form-item {
   margin-bottom: $spacing-lg;
-}
-
-
-//---------------------------------------
-// Experimental Date Picker
-//---------------------------------------
-.carbon-demo-experimental .demo--date-picker__input[data-invalid] {
-  box-shadow: none;
-}
-
-//---------------------------------------
-// Experimental Select
-//---------------------------------------
-.carbon-demo-experimental .demo--select--inline .demo--select-input,
-.carbon-demo-experimental .demo--select-input[data-invalid] {
-  box-shadow: none;
-}
-
-.carbon-demo-experimental .demo--select-input[data-invalid] ~ .demo--select__arrow {
-  bottom: 2.125rem;
 }
 
 //---------------------------------------
@@ -283,3 +90,4 @@
 .component-example .carbon-demo-experimental .demo--inline-notification {
   display: inline-flex;
 }
+

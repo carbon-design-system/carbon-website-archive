@@ -99,10 +99,11 @@ export default ({ data, pageContent }) => {
         <PageHeader
           title={post.frontmatter.title}
           label={post.frontmatter.label}
-        />
-        {!(tabs === null) && (
-          <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
-        )}
+        >
+          {!(tabs === null) && (
+            <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
+          )}
+        </PageHeader>
         <div className={classNames}> {renderAst(post.htmlAst)}</div>
       </Layout>
     );

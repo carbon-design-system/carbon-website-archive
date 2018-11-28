@@ -1,14 +1,24 @@
 //---------------------------------------
 // Carbon Components
 //---------------------------------------
+
+$feature-flags: (
+  components-x: true,
+  ui-shell: true,
+);
+//@import '@carbon/layout/scss/layout.scss';
+//@import '@carbon/grid/scss/grid.scss';
+//@import '@carbon/type/scss/type.scss';
+
+// There are temp files copied from carbon-elements
+@import 'carbon/type/scss/type.scss';
+
 @import 'carbon-components/scss/globals/scss/styles.scss';
+
 
 //---------------------------------------
 // Page styles
 //---------------------------------------
-$bright-blue: #3c6df0!default;
-$dark-blue: #3057d5!default;
-$brand-01: $dark-blue;
 $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
   sans-serif;
 
@@ -27,7 +37,6 @@ $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
 @import '../components/CodeSnippet/code-snippet.scss';
 @import '../components/ClickableTile/clickable-tile.scss';
 @import '../components/PageTable/page-table.scss';
-@import '../components/SideNav/side-nav.scss';
 @import '../components/SideNavToggleBtn/side-nav-toggle-btn.scss';
 @import '../components/Footer/footer.scss';
 @import '../components/Example/example.scss';
@@ -43,14 +52,12 @@ $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
 @import '../components/MotionExample/motion-example.scss';
 @import '../components/LayerTypes/layer-types.scss';
 @import '../components/LayerUsage/layer-usage.scss';
-@import '../components/ComponentCode/component-code.scss';
 @import '../components/ComponentExample/component-example.scss';
 @import '../components/ComponentExample/component-overrides.scss';
 @import '../components/CodeExample/code-example.scss';
 @import '../components/CodePage/code-page.scss';
 @import '../components/ComponentDocs/component-docs.scss';
 @import '../components/ComponentStatus/component-status.scss';
-@import '../components/ComponentReact/component-react.scss';
 @import '../components/ComponentOverview/component-overview.scss';
 @import '../components/GlobalSearch/global-search.scss';
 
