@@ -75,7 +75,7 @@ Data visualization presents some of the most challenging accessibility problems 
 Every data visualization is accompanied by an alternative data table view.
 
 2.
-Use an accessible color palette. See the [Colors](/data-vis/overview/colors) tab for more information about colors and how to apply them to your use case.
+Use an accessible color palette. See the [Colors](/data-visualization/overview/colors) tab for more information about colors and how to apply them to your use case.
 
 3.
 **Use inline SVG:** SVG 2.0 is currently in a draft state. In the meantime we can make the most of SVG 1.0 by utilizing the “title” and “desc” attributes in combination with ARIA roles and attributes. Below is an example section of code using this technique. To see a full example go to [Describler](http://describler.com/#intro) and select “aria-bar-chart.svg” from the dropdown on the left. Make sure to turn on your sound so you can hear the chart read to you!

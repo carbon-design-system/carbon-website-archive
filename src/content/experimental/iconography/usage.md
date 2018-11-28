@@ -83,7 +83,7 @@ To use SVG sprite files, they **must** be distributed through a web server and w
 
 `path_to_static-assets` is the path to your static assets where `carbon-icons.svg` is located.
 
-`icon_name` is the icon name, which will display the corresponding icon. Refer to the <a href="/style/iconography" target=blank>iconography library</a> page for a full list of icon names.
+`icon_name` is the icon name, which will display the corresponding icon. Refer to the <a href="/guidelines/iconography" target=blank>iconography library</a> page for a full list of icon names.
 
 ### CSS
 
@@ -118,7 +118,7 @@ Carbon icons ship with two main SVG files that contain different sets of externa
 | Filename          | Description                                                                                                        | Supported versions     |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------ | ---------------------- |
 | carbon-icons.svg  | Contains current icons (consolidated subset of legacy icons used in IBM Bluemix)                                   | `3.x` and newer        |
-| carbon-icons.json | JSON file created from carbon-icons.svg, used in [Carbon](http://carbondesignsystem.com/style/iconography/library) | `3.x` and newer        |
+| carbon-icons.json | JSON file created from carbon-icons.svg, used in [Carbon](/guidelines/iconography/library) | `3.x` and newer        |
 | carbon-icons.js   | JS module created from carbon-icons.svg, used in `Icon` React Component in [carbon-components-react](#)            | `3.x` and newer        |
 | sprite.svg        | SVG sprite contains legacy icons                                                                                   | `1.x`, `2.x` and `3.x` |
 | icons.json        | legacy JSON file created from sprite.svg                                                                           | `1.x`, `2.x` and `3.x` |

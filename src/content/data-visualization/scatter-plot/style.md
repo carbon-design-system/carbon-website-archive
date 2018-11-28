@@ -4,7 +4,7 @@ title: Scatter Plot
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-Refer to the style tab on the [Data Vis overview page](/data-vis/overview/style) for base graph style specifications.
+Refer to the style tab on the [Data Vis overview page](/data-visualization/overview/style) for base graph style specifications.
 
 ## Color
 

@@ -46,7 +46,7 @@ A new [Experimental](/experimental/about/overview) section has been added to the
 
 ## Color
 
-Go check out the [Swatches](/style/color/swatches) page to see the new color options and updates.
+Go check out the [Swatches](/guidelines/color/swatches) page to see the new color options and updates.
 
 - Colors have been updated to make them more accessible— changing hex values and roles for some of the swatches
 - The new, updated palette is available with Design Kit
@@ -61,7 +61,7 @@ Go check out the [Swatches](/style/color/swatches) page to see the new color opt
   - **$field-02 - #FFFFFF (input field background on ui-02)**
   - **$inverse-02 - #272d33 (passing 4,5:1)**
 
-- There are four new hover tokens added to the Carbon palette. They can now be found on the [Swatches](/style/color/swatches) page and are available in the Design Kit and palette plugin
+- There are four new hover tokens added to the Carbon palette. They can now be found on the [Swatches](/guidelines/color/swatches) page and are available in the Design Kit and palette plugin
 
   - $hover-primary – #30588c
   - $hover-primary-text – #294c86
@@ -71,7 +71,7 @@ Go check out the [Swatches](/style/color/swatches) page to see the new color opt
 
 ## Icons
 
-- Check out the [Iconography](/style/iconography/library) page to see the new icon style
+- Check out the [Iconography](/guidelines/iconography/library) page to see the new icon style
 - All Icons are now `16x16px` (24x24px is no longer being supported).
 - The `--glyph` modifier has been deprecated. Most of the glyph variations were replaced with a `--solid modifier`. Check out the [icon migration docs](https://github.com/ibm/carbon-icons/blob/master/docs/migration-guides/migration-v7.md) to see the status of all the icons.
 
@@ -173,7 +173,7 @@ Small Toggle is a style variation of our traditional [Toggle](/components/toggle
 
 Bar Graph is the newest addition to our Data Visualization collection. It comes in two variations: Bar Graph and Grouped Bar Graph. You can use this component to represent quantitative information, such as comparing the taco sales between Austin taco shops in the month of June.
 
-Read more about the usage of [Bar Graph](http://carbondesignsystem.com/data-visualization/bar-graph/usage), or check out our [CodePen](https://codepen.io/team/carbon/pen/OzBKKN) to view the live demo.
+Read more about the usage of [Bar Graph](/data-visualization/bar-graph/usage), or check out our [CodePen](https://codepen.io/team/carbon/pen/OzBKKN) to view the live demo.
 
 ![Bar Graph example](images/usage-bar-graph.png)
 
