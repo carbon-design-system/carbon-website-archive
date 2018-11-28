@@ -15,7 +15,7 @@ import {
   HeaderGlobalBar,
   HeaderGlobalAction,
 } from 'carbon-components-react/lib/components/UIShell';
-import { Search16, Menu32 } from '@carbon/icons-react';
+import { AppSwitcher20, Menu32 } from '@carbon/icons-react';
 
 import '../../styles/index.scss';
 import '../../styles/experimental.scss';
@@ -158,13 +158,8 @@ class Layout extends React.Component {
               <HeaderGlobalBar>
                 <GlobalSearch />
                 <HeaderGlobalAction
-                  aria-label="Search"
-                  >
-                  <Search16 />
-                </HeaderGlobalAction>
-                <HeaderGlobalAction
                   aria-label="Profile">
-                  <Search16 />
+                  <AppSwitcher20 />
                 </HeaderGlobalAction>
               </HeaderGlobalBar>
               
