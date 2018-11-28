@@ -72,6 +72,11 @@ If you need to use past or future tense, avoid verb tenses with the words have, 
     <example title='Future Tense' text='"The limit has been exceeded."'></example>
 </do-dont-group>
 
+<do-dont-group>
+    <example correct=true title="Past Tense" text='"The limit was exceeded."'></example>
+    <example title='Image Test' imgPath="content/guidelines/content/img-test.png"></example>
+</do-dont-group>
+
 ### Do use active voice
 
 To convey a more natural tone, use active voice. People tend to speak in active voice unless they have a reason not to. For example, a good reason to use passive voice is to avoid sounding judgmental or blaming the user. Consider how a statement like, “You entered the wrong value,” which is active voice, might not be a well received error message.
