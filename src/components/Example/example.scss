@@ -1,28 +1,22 @@
 .do-dont-group {
   align-items: flex-start;
   align-content: center;
-  background-color: $ui-03;
+  background: none;
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   justify-content: space-around;
-  margin-bottom: 32px;
-  padding: 32px 24px;
+  margin: 28px 0;
 }
 
 .example {
   box-sizing: border-box;
+  margin-bottom: 36px;
   width: 100%;
-  margin: 16px;
 }
 
-@media screen and (min-width: 900px) {
-  .example {
-    flex: 1;
-  }
-}
 .example-card {
-  background: $ui-01;
+  background: #ffffff;
   box-sizing: border-box;
   position: relative;
   padding: 40px;
@@ -105,4 +99,24 @@ p.example__description {
   @include font-smoothing;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (min-width: 900px) {
+  .do-dont-group {
+    max-width: 75%;
+  }
+  .example {
+    flex: 1;
+  }
+  .example:first-child {
+    margin-right: 24px;
+  }
+  .example:last-child {
+    margin-left: 24px;
+  }
+  // if there is only one example card in the group, it should be full width
+  .example:first-child:last-child {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

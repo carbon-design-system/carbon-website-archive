@@ -60,8 +60,7 @@ export default class Example extends React.Component {
     //   componentImg = require('../../content/components/overview/images/NoImage.svg');
     // }
 
-    const img = require('../../content/guidelines/content/img-test.png');
-    const layerUsageImage = require('../../content/guidelines/layer/images/layer-usage-604.png');
+    const testImage = require('../../content/guidelines/content/images/img-test.png');
 
     return (
       <div className={wrapperClassNames}>
@@ -70,8 +69,7 @@ export default class Example extends React.Component {
           <div className="example__content">
             {text ? <p className="example__text">{text}</p> : null}
             {/* {imgpath ? <img src={exampleImg} alt="example" /> : null} */}
-            <img src={img} />
-            {/* <img src={layerUsageImage} alt="test" /> */}
+            {imgpath ? <img src={testImage} alt="example image" /> : null}
             {/* <img className="example-image" src={exampleImg} alt="example" /> */}
             {children}
           </div>

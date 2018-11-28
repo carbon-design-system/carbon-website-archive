@@ -69,11 +69,11 @@ If you need to use past or future tense, avoid verb tenses with the words have, 
 </do-dont-group>
 <do-dont-group>
     <example correct=true title="Past Tense" text='"The limit was exceeded."'></example>
-    <example title='Future Tense' text='"The limit has been exceeded."'></example>
+    <example title='Past Tense' text='"The limit has been exceeded."'></example>
 </do-dont-group>
 
 <do-dont-group>
-    <example correct=true title="Past Tense" text='"The limit was exceeded."'></example>
+    <example correct="true" title='Image Test' imgPath="content/guidelines/content/img-test.png"></example>
     <example title='Image Test' imgPath="content/guidelines/content/img-test.png"></example>
 </do-dont-group>
 
@@ -109,10 +109,8 @@ One exception to this is in the case of possessive adjectives in the UI. You can
 Terms of politeness are superfluous, convey the wrong tone for technical material, and are not regarded the same way in all cultures.
 
 <do-dont-group>
-    <example correct=true title="Using Please" text='"Indexing might take a few minutes. Please wait."'></example>
+    <example correct=true title='Using Please' description='Use "please" in a UI only when the user is being inconvenienced.' text='"Indexing might take a few minutes. Please wait."'></example>
 </do-dont-group>
-
-Use **please** in a UI only when the user is being inconvenienced.
 
 <do-dont-group>
     <example correct=true title="Ability" text='"You can use the command line interface to update your app."'></example>
