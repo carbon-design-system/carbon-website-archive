@@ -217,11 +217,17 @@
       "dropdown": {
         "title": "Dropdown"
       },
+      "inline-loading": {
+        "title": "Inline Loading"
+      },
       "link": {
         "title": "Link"
       },
       "list": {
         "title": "List"
+      },
+      "loading": {
+        "title": "Loading"
       },
       "notification": {
         "title": "Notification"
@@ -338,6 +344,9 @@
       },
       "design-language": {
         "title": "Design Language"
+      },
+      "roadmap": {
+        "title": "Roadmap"
       }
     }
   },

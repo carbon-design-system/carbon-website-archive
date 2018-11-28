@@ -99,7 +99,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
-      "experimental": "under-review"
+      "experimental": "ready"
     },
     {
       "item": "Link",
@@ -123,7 +123,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
-      "experimental": "under-review"
+      "experimental": "ready"
     },
     {
       "item": "Modal",
