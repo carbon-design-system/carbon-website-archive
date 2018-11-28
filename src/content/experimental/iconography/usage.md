@@ -1,7 +1,7 @@
 ---
 label: Experimental
 title: Iconography
-tabs: ['Library', 'Usage', 'Contribution']
+tabs: ['Library', 'Usage', 'Design and Contribution']
 internal: true
 ---
 
@@ -26,15 +26,11 @@ While most icons occupy a square artboard, some icons may occupy a rectangular a
 
 All icons should be on a transparent background and with the artboard boundaries at the edges of the icon. At least one of the edges should be at the standard measurement of 24px or 16px.
 
-![icon usage](images/icon-usage-1.png)
-
 ### Padding
 
 When **creating icons,** do not add internal padding with Sketch or Illustrator. If the icon needs padding, developers can add this with CSS.
 
 When **using icons,** all touch targets need to be 44px or higher. With that said, a developer can add padding to a touch target with CSS to meet the 44px requirement.
-
-![icon padding](images/icon-usage-2.png)
 
 ### Color
 
