@@ -44,29 +44,20 @@ Bug reports, feature requests, and general feedback can be delivered to the Carb
 
 #### Design Issues
 
-[Design Kit](https://github.com/IBM/carbon-design-kit/issues/new)
-
-[Icons](https://github.com/IBM/carbon-icons/issues/new)
-
-[Website](https://github.com/carbon-design-system/carbon-website/issues/new/choose)
-
-[Components](https://github.com/IBM/carbon-components/issues/new/choose)
-
-[Elements](https://github.com/IBM/carbon-elements/issues/new/choose)
-
-[Charts](https://github.com/IBM/carbon-charts/issues/new)
-
-[Everything else](https://github.com/carbon-design-system/issue-tracking/issues/new)
+- [Design Kit](https://github.com/IBM/carbon-design-kit/issues/new)
+- [Icons](https://github.com/IBM/carbon-icons/issues/new)
+- [Website](https://github.com/carbon-design-system/carbon-website/issues/new/choose)
+- [Components](https://github.com/IBM/carbon-components/issues/new/choose)
+- [Elements](https://github.com/IBM/carbon-elements/issues/new/choose)
+- [Charts](https://github.com/IBM/carbon-charts/issues/new)
+- [Everything else](https://github.com/carbon-design-system/issue-tracking/issues/new)
 
 #### Code Issues
 
-[carbon-components](https://github.com/IBM/carbon-components/issues/new/choose)
-
-[carbon-components-react](https://github.com/IBM/carbon-components-react/issues/new/choose)
-
-[carbon-components-angular](https://github.com/IBM/carbon-components-angular/issues/new)
-
-[carbon-charts](https://github.com/IBM/carbon-charts/issues/new)
+- [carbon-components](https://github.com/IBM/carbon-components/issues/new/choose)
+- [carbon-components-react](https://github.com/IBM/carbon-components-react/issues/new/choose)
+- [carbon-components-angular](https://github.com/IBM/carbon-components-angular/issues/new)
+- [carbon-charts](https://github.com/IBM/carbon-charts/issues/new)
 
 
 
