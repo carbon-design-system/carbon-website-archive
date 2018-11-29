@@ -35,6 +35,9 @@
       "layer": {
         "title": "Layer"
       },
+      "layout": {
+        "title": "Layout"
+      },
       "motion": {
         "title": "Motion"
       },
@@ -180,10 +183,6 @@
       },
       "color": {
         "title": "Color",
-        "internal": true
-      },
-      "layout": {
-        "title": "Layout",
         "internal": true
       },
       "iconography": {
