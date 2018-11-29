@@ -24,7 +24,7 @@ There are a number of growing add-on repos that can be found under the [Carbon o
 
 ### Private vs Public
 
-Carbon Design System is an open-source project and we do encourage teams using Carbon Design System to stay open-source as well. However, if your product has privacy constraints, we can discuss options for creating an add-on repo under our Github Enterprise account.
+Carbon Design System is an open-source project and we do encourage teams using Carbon Design System to stay open-source as well. However, if your product has privacy constraints, we can discuss options for creating an add-on repo under our GitHub Enterprise account.
 
 ## Contributing to Add-ons
 

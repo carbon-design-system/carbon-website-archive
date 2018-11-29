@@ -33,14 +33,14 @@ Onboard your service to IBM Cloud by fulfilling the following requirements. Desi
 ### Use Carbon
 
 - Leverage the Carbon Design System for visual and user experience guidance. By utilizing the [Carbon Component Library](https://github.com/ibm/carbon-components), your development team can easily implement ready-made components to create comprehensive UI.
-- If you are new to Carbon, get started as a [designer](http://carbondesignsystem.com/getting-started/designers) or [developer](http://carbondesignsystem.com/getting-started/developers), and check the [FAQ's](http://carbondesignsystem.com/getting-started/FAQ) to learn more.
+- If you are new to Carbon, get started as a [designer](/getting-started/designers) or [developer](/getting-started/developers), and check the [FAQ's](/getting-started/FAQ) to learn more.
 
 ### Confirm accessibility
 
-Your service UI (e.g. Configuration, Dashboard) should follow [WCAG AA](https://www.w3.org/WAI/WCAG20/quickref/) gudielines. All Carbon components are designed to meet accessibility standards. However, if components are customized the designs must:
+Your service UI (e.g. Configuration, Dashboard) should follow [WCAG AA](https://www.w3.org/WAI/WCAG20/quickref/) guidelines. All Carbon components are designed to meet accessibility standards. However, if components are customized the designs must:
 
-- Pass [color contrast ratios](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) and meet [color usage](http://carbondesignsystem.com/style/colors/usage) guidelines, which include type color combinations and [data visualization](http://carbondesignsystem.com/data-vis/overview/colors) best practices. If necessary, use a [color contrast checker](https://marijohannessen.github.io/color-contrast-checker/) to verify your design.
-- Follow common [accessibility patterns](http://carbondesignsystem.com/guidelines/accessibility), such as keyboard tabbing, focus states, and nagivation order.
+- Pass [color contrast ratios](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) and meet [color usage](/guidelines/color/usage) guidelines, which include type color combinations and [data visualization](/data-visualization/overview/colors) best practices. If necessary, use a [color contrast checker](https://marijohannessen.github.io/color-contrast-checker/) to verify your design.
+- Follow common [accessibility patterns](/guidelines/accessibility), such as keyboard tabbing, focus states, and navigation order.
 
 ### Service icon
 
