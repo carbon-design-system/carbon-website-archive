@@ -26,7 +26,7 @@ class Footer extends Component {
   };
 
   render() {
-    const lastUpdated = 'November 7, 2018';
+    const lastUpdated = 'November 28, 2018';
     
     const version = Packages.dependencies['carbon-components'];
     const reactVersion = Packages.dependencies['carbon-components-react'];
