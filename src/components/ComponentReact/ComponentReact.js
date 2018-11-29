@@ -79,29 +79,31 @@ class ComponentReactExample extends Component {
     const { name, component, variation } = this.props;
     const componentLink = `http://react.carbondesignsystem.com/?selectedKind=${component}&selectedStory=${variation}`;
     return (
-      <div className="component-variation">
-        <h2 className="component-variation__name">{name}</h2>
-        <p>
-          This component is currently only available in{' '}
-          <a
-            href="https://github.com/ibm/carbon-components-react"
-            target="_blank">
-            our React library
-          </a>
-          .
-        </p>
-        <div>
-          <div className="svg--sprite" aria-hidden="true" />
-          <div className="component-example__live component-example__live--light">
-            <div className="component-example__live--rendered">
-              <div ref={comp => (this.comp = comp)} />
-            </div>
+      <div className="component-variation bx--row">
+        <div class="bx--col-lg-12 bx--offset-lg-4">
+          <h2 className="component-variation__name">{name}</h2>
+          <p>
+            This component is currently only available in{' '}
             <a
-              href={componentLink}
-              className="component-example__view-full-render"
-              rel="noopener noreferrer">
-              View on React Storybook
+              href="https://github.com/ibm/carbon-components-react"
+              target="_blank">
+              our React library
             </a>
+            .
+          </p>
+          <div>
+            <div className="svg--sprite" aria-hidden="true" />
+            <div className="component-example__live component-example__live--light">
+              <div className="component-example__live--rendered">
+                <div ref={comp => (this.comp = comp)} />
+              </div>
+              <a
+                href={componentLink}
+                className="component-example__view-full-render"
+                rel="noopener noreferrer">
+                View on React Storybook
+              </a>
+            </div>
           </div>
         </div>
       </div>

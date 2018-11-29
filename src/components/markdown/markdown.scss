@@ -28,7 +28,7 @@
   @include type-style('heading-06');
   position: relative;
   color: $text-01;
-  margin-top: 5rem;
+  margin-top: rem(56px);
   margin-bottom: $spacing-lg;
 }
  
@@ -40,7 +40,7 @@
 .component-docs h3 {
   @include type-style('heading-05');
   color: $text-01;
-  margin-top: 3rem;
+  margin-top: rem(24px);
   margin-bottom: $spacing-md;
 }
 
@@ -53,8 +53,7 @@
   @include type-style('heading-02');
   font-weight: font-weight('semibold');
   color: $text-01;
-  margin-bottom: $spacing-md;
-  margin-top: $spacing-xl;
+  margin-top: rem(8px);
 }
 
 // Targets heading elements when they are the first element on a page to remove top margin
