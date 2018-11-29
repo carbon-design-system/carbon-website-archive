@@ -1,0 +1,60 @@
+.page-footer {
+  background: $ibm-colors__black;
+  color: $ibm-colors__gray--30;
+  min-height: 320px;
+  padding: 1rem 0;
+  font-size: rem(14px);
+}
+
+.page-footer__text {
+  font-size: rem(14px);
+
+  &:first-child {
+    padding-bottom: $spacing-md;
+  }
+
+  .page-footer__link {
+    box-shadow: 0 1px currentColor;
+  }
+}
+
+.page-footer__link {
+  color: $ibm-colors__gray--10;
+  box-shadow: 0 0 currentColor;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    box-shadow: 0 1px currentColor;
+  }
+
+  &:focus {
+    box-shadow: 0 3px currentColor;
+  }
+}
+
+.page-footer__link--with-tooltip {
+  font-size: rem(14px);
+  position: relative;
+  margin-right: 4px;
+  margin-left: 5px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.page-footer__link--with-tooltip.show-tooltip:after {
+  display: block;
+}
+
+.page-footer__link--with-tooltip:after {
+  content: 'E-mail address copied to clipboard!';
+  position: absolute;
+  top: -3.2rem;
+  left: -3rem;
+  background: $ibm-colors__gray--80;
+  width: 150px;
+  padding: 0.5rem;
+  display: none;
+}

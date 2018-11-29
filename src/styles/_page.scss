@@ -16,18 +16,7 @@ body {
   overflow-x: hidden;
   position: relative;
   min-height: 100vh;
-
-  @include breakpoint('840px') {
-    margin-left: rem(256px);
-    width: calc(100% - 256px);
-    margin-top: 48px;
-  }
-}
-
-.side-nav + .container--expanded, //Issue #51
-  .container--expanded {
-  width: 100%;
-  margin-left: 0;
+  margin-top: 48px;
 }
 
 //---------------------------------------
@@ -49,7 +38,6 @@ button,
 .page-content {
   padding-top: $layout-lg;
   padding-bottom: $layout-lg;
-  max-width: rem(1584px);
   margin-bottom: 7rem;
 
   @media all and (max-width: 620px) {

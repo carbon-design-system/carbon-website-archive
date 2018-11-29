@@ -169,7 +169,7 @@ class Layout extends React.Component {
             
             <div className={classNames}>
               {children}
-              <Footer isExpanded={this.state.isOpen} />
+              <Footer />
             </div>
           </>
         )}
