@@ -318,7 +318,7 @@ const sectionHeader = isInternal ? (
       */}
     </svg>
     <h1 className="banner__logo">
-      <span className="banner__logo--bold">Carbon</span> Design System 
+      <span className="banner__logo--bold">Carbon</span> Design System
     </h1>
     <Link
       to="/components/overview"
@@ -440,7 +440,7 @@ class IndexPage extends React.Component {
                     <img src={sketchIcon} alt="" />
                   </div>
                   <div className="tile__info">
-                    <p aria-label="Design Kit on Github">
+                    <p aria-label="Design Kit on GitHub">
                       {isInternal ? 'Design Kit' : 'Carbon Design Kit'}
                     </p>
                     <p>
@@ -460,7 +460,7 @@ class IndexPage extends React.Component {
                     <img src={githubIcon} alt="" />
                   </div>
                   <div className="tile__info">
-                    <p aria-label="Components on Github">
+                    <p aria-label="Components on GitHub">
                       {isInternal ? 'Components' : 'Carbon Components'}
                     </p>
                     <p>
@@ -481,7 +481,7 @@ class IndexPage extends React.Component {
                     <img src={githubIcon} alt="" />
                   </div>
                   <div className="tile__info">
-                    <p aria-label="Components React on Github">
+                    <p aria-label="Components React on GitHub">
                       {isInternal ? 'React Components' : 'Carbon Components React'}
                     </p>
                     <p>
@@ -502,7 +502,7 @@ class IndexPage extends React.Component {
                     <img src={githubIcon} alt="" />
                   </div>
                   <div className="tile__info">
-                    <p aria-label="Components Angular on Github">
+                    <p aria-label="Components Angular on GitHub">
                       {isInternal ? 'Components Angular' : 'Carbon Components Angular'}
                     </p>
                     <p>
@@ -565,7 +565,7 @@ class IndexPage extends React.Component {
                 We welcome all feedback, designs, or ideas in order to produce
                 the best possible experience for our users. If you're interested
                 in contributing, check out our{' '}
-                <Link to="/contributing">
+                <Link to="/contributing/designers">
                   contributing guidelines
                 </Link>{' '}
                 to get started.

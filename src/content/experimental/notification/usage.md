@@ -20,7 +20,7 @@ We recommend that toast notifications automatically disappear after five seconds
 
 ### Icons
 
-Icons may provide additional clarity. Icons should be placed to the left of a title. These glyphs (16x16) can be found in the [iconography](/style/iconography/library) library.
+Icons may provide additional clarity. Icons should be placed to the left of a title. These glyphs (16x16) can be found in the [iconography](/guidelines/iconography/library) library.
 
 ## Placement
 
