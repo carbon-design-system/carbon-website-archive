@@ -7,7 +7,7 @@ title: IBM Design Language
 
 The Carbon Design System is integrating the new IBM Design Ethos and Language. It represents a completely fresh approach to the design of all things at IBM.
 
-The Carbon team will be updating components and introducing new guidelines incrementally into the Carbon Design System over the next few months. You’ll notice new entries marked “experimental” being added all the time. Experimental components are not fully tested and/or vetted, but are available for designers to work with. Your feedback on these components is critical for the success of Carbon; please open a github issue from the footer of any page on the Carbon site to let the team know what you think.
+The Carbon team will be updating components and introducing new guidelines incrementally into the Carbon Design System over the next few months. You’ll notice new entries marked “experimental” being added all the time. Experimental components are not fully tested and/or vetted, but are available for designers to work with. Your feedback on these components is critical for the success of Carbon; please open a GitHub issue from the footer of any page on the Carbon site to let the team know what you think.
 
 ### FAQ
 
@@ -27,4 +27,4 @@ Keep building with Carbon! The best way to ensure a smooth transition is to adhe
 
 **Complete:** New IBM Design Language fonts, glyphs, and experimental grid have been integrated into Carbon.
 
-**In Progress:** More icons, colors, page geometry, [experimental components](/experimental/accordion/code) and [UI Shell](/experimental/ui-shell/code). 
+**In Progress:** More icons, colors, page geometry, [experimental components](/experimental/accordion/code) and [UI Shell](/experimental/ui-shell/code).

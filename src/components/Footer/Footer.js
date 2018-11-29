@@ -39,6 +39,7 @@ class Footer extends Component {
     });
 
     return (
+<<<<<<< HEAD
       <footer className="page-footer">
         <div className="bx--grid">
           <div className="bx--row">
@@ -135,6 +136,77 @@ class Footer extends Component {
               className="page-footer__text page-footer__version-link"
               id="page-footer__version-label">
               Vanilla Components version{' '}
+=======
+      <footer className={footerClasses}>
+        <div className="page-footer__content">
+          <p
+            className="page-footer__text page-footer__version-link"
+            id="page-footer__version-label">
+            Vanilla Components version{' '}
+            <a
+              className="page-footer__link"
+              href="https://github.com/ibm/carbon-components/releases"
+              rel="noopener noreferrer"
+              target="_blank"
+              aria-labelledby="page-footer__version-label page-footer__version-number"
+              id="page-footer__version-number">
+              {version}
+            </a>
+          </p>
+          <p
+            className="page-footer__text page-footer__version-link"
+            id="page-footer__react-version-label">
+            React Components version{' '}
+            <a
+              className="page-footer__link"
+              href="https://github.com/ibm/carbon-components-react/releases"
+              rel="noopener noreferrer"
+              target="_blank"
+              aria-labelledby="page-footer__react-version-label page-footer__react-version-number"
+              id="page-footer__react-version-number">
+              {reactVersion}
+            </a>
+          </p>
+          <p className="page-footer__text">
+            Website last updated on{' '}
+            <span className="page-footer__last-updated">{lastUpdated}</span>
+          </p>
+          <p className="page-footer__text">Copyright © {currentYear} IBM</p>
+        </div>
+        <div className="page-footer__content">
+          <ul className="page-footer__social-media">
+            {/*  Halloween Icon
+              <li>
+                <button
+                  className="social-media__link social-media__link--halloween"
+                  aria-label="Happy Halloween from Carbon"
+                  onClick={() => document.body.classList.toggle('halloween')}>
+                  {halloween}
+                </button>
+              </li>
+            */}
+            <li>
+              <a
+                href="https://dribbble.com/_carbondesign"
+                className="social-media__link"
+                rel="noopener noreferrer"
+                target="_blank"
+                aria-label="Dribble account for Carbon">
+                {dribbble}
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://medium.com/@_carbondesign"
+                className="social-media__link"
+                rel="noopener noreferrer"
+                target="_blank"
+                aria-label="Medium account for Carbon">
+                {medium}
+              </a>
+            </li>
+            <li>
+>>>>>>> master
               <a
                 className="page-footer__link"
                 href="https://github.com/ibm/carbon-components/releases"

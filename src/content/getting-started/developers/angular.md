@@ -51,7 +51,7 @@ Start the server and start building.
 $ npm start
 ```
 
-**Note:** This isn't the only way to bootstrap a `carbon-components-angular` application, but the combination of `@angular/cli` and the `carbon-components` scss is our recommended setup.
+**Note:** This isn't the only way to bootstrap a `carbon-components-angular` application, but the combination of `@angular/cli` and the `carbon-components` SCSS is our recommended setup.
 
 ## Development
 

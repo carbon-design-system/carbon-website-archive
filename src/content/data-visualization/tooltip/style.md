@@ -6,7 +6,7 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-Note that the color value of top bar of the Small and Medium Tooltips and the side color bars on Large Tooltip vary based on colors chosen for your data. Refer to the style tab on the [Data Vis Overview page](/data-vis/overview/colors) for base graph style specifications.
+Note that the color value of top bar of the Small and Medium Tooltips and the side color bars on Large Tooltip vary based on colors chosen for your data. Refer to the style tab on the [Data Vis Overview page](/data-visualization/overview/colors) for base graph style specifications.
 
 | Color                                     | SCSS     | HEX     |
 | ----------------------------------------- | -------- | ------- |
@@ -32,7 +32,7 @@ Note that the color value of top bar of the Small and Medium Tooltips and the si
 
 ## Structure
 
-There are three different tooltips types. Refer to the [usage tab](/data-vis/tooltip/usage) for when to use which tooltip size.
+There are three different tooltips types. Refer to the [usage tab](/data-visualization/tooltip/usage) for when to use which tooltip size.
 
 ### Small Tooltip
 
