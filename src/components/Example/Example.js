@@ -45,32 +45,12 @@ export default class Example extends React.Component {
       'example__icon--incorrect': !correct,
     });
 
-    let exampleImg;
-    // exampleImg = require('../../content/components/overview/images/Notification.svg');
-    // exampleImg = require('../../content/guidelines/content/img-test.png');
-    // exampleImg = require(`../../${imgpath}`);
-    // try {
-    //   exampleImg = require(`../../${imgpath}`);
-    // } catch (e) {
-    //   exampleImg = require('../../content/components/overview/images/NoImage.svg');
-    // }
-    // try {
-    //   componentImg = require(`../../${imgpath}`);
-    // } catch (e) {
-    //   componentImg = require('../../content/components/overview/images/NoImage.svg');
-    // }
-
-    const testImage = require('../../content/guidelines/content/images/img-test.png');
-
     return (
       <div className={wrapperClassNames}>
         <div className="example-card">
           {/* <Icon name={icon} className={iconClassNames} /> */}
           <div className="example__content">
             {text ? <p className="example__text">{text}</p> : null}
-            {/* {imgpath ? <img src={exampleImg} alt="example" /> : null} */}
-            {imgpath ? <img src={testImage} alt="example image" /> : null}
-            {/* <img className="example-image" src={exampleImg} alt="example" /> */}
             {children}
           </div>
         </div>

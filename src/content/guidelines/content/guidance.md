@@ -73,8 +73,12 @@ If you need to use past or future tense, avoid verb tenses with the words have, 
 </do-dont-group>
 
 <do-dont-group>
-    <example correct="true" title='Image Test' imgPath="content/guidelines/content/img-test.png"></example>
-    <example title='Image Test' imgPath="content/guidelines/content/img-test.png"></example>
+    <example correct="true" title='Image Test'>
+        <img src='images/img-test.png' />
+    </example>
+    <example title='Image Test' >
+        <img src='images/img-test.png' />
+    </example>
 </do-dont-group>
 
 ### Do use active voice
