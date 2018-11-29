@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 // import { Icon } from 'carbon-components-react';
 
-export default class Example extends React.Component {
+export default class DoDontExample extends React.Component {
   static propTypes = {
     children: PropTypes.node,
     /** title for the caption (optional) */

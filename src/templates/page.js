@@ -11,7 +11,7 @@ import PageTabs from '../components/PageTabs';
 import Snippet from '../components/CodeSnippet';
 import PageTable from '../components/PageTable';
 import ClickTile from '../components/ClickableTile';
-import Example from '../components/Example';
+import DoDontExample from '../components/DoDontExample';
 import ColorBlock from '../components/ColorBlock';
 import ColorCard from '../components/ColorCard';
 import IconLibrary from '../components/IconLibrary';
@@ -53,7 +53,7 @@ const renderAst = new rehypeReact({
     'flex-group': FlexGroup,
     'do-dont-group': DoDontGroup,
     'clickable-tile': ClickTile,
-    example: Example,
+    'do-dont-example': DoDontExample,
     'color-block': ColorBlock,
     'color-card': ColorCard,
     'icon-library': IconLibrary,
@@ -98,8 +98,7 @@ export default ({ data, pageContent }) => {
       <Layout>
         <PageHeader
           title={post.frontmatter.title}
-          label={post.frontmatter.label}
-        >
+          label={post.frontmatter.label}>
           {!(tabs === null) && (
             <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
           )}
