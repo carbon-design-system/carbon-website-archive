@@ -90,7 +90,7 @@ export default ({ data, pageContent }) => {
   const isInternal = GATSBY_CARBON_ENV !== 'internal' && internal == true;
 
   const classNames = classnames({
-    'container--component': post.frontmatter.label === 'Component',
+    'container--component': post.frontmatter.label === 'Components',
   });
 
   if (isInternal) {

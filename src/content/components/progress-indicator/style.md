@@ -1,5 +1,5 @@
 ---
-label: Component
+label: Components
 title: Progress Indicator
 tabs: ['Code', 'Usage', 'Style']
 ---

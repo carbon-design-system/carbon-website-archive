@@ -1,5 +1,5 @@
 ---
-label: Component
+label: Components
 title: Content Switcher
 tabs: ['Code', 'Usage', 'Style']
 ---

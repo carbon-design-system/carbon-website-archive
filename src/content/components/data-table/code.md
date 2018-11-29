@@ -1,5 +1,5 @@
 ---
-label: Component
+label: Components
 title: Data Table
 tabs: ['Code', 'Usage', 'Style']
 ---

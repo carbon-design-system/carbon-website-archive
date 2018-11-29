@@ -77,6 +77,9 @@
       "overview": {
         "title": "Overview"
       },
+      "component-status": {
+        "title": "Component Status"
+      },
       "accordion": {
         "title": "Accordion"
       },
@@ -175,8 +178,8 @@
       }
     }
   },
-  "experimental": {
-    "title": "Experimental",
+  "experimental-components": {
+    "title": "Experimental Components",
     "sub-nav": {
       "about": {
         "title": "About"
@@ -260,9 +263,6 @@
         "title": "Tooltip"
       }
     }
-  },
-  "component-status": {
-    "title": "Component Status"
   },
   "patterns": {
     "title": "Patterns",
