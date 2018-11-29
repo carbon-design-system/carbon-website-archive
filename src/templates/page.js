@@ -89,8 +89,8 @@ export default ({ data, pageContent }) => {
   const { GATSBY_CARBON_ENV } = process.env;
   const isInternal = GATSBY_CARBON_ENV !== 'internal' && internal == true;
 
-  const classNames = classnames('page-content', 'bx--grid', {
-    'page-content--component': post.frontmatter.label === 'Component',
+  const classNames = classnames({
+    'container--component': post.frontmatter.label === 'Component',
   });
 
   if (isInternal) {
@@ -101,17 +101,19 @@ export default ({ data, pageContent }) => {
     );
   } else {
     return (
-      <Layout className="test">
-        <PageHeader
-          title={post.frontmatter.title}
-          label={post.frontmatter.label}
-        >
-          {!(tabs === null) && (
-            <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
-          )}
-        </PageHeader>
+      <Layout>
         <div className={classNames}>
-          {renderAst(post.htmlAst)}
+          <PageHeader
+            title={post.frontmatter.title}
+            label={post.frontmatter.label}
+          >
+            {!(tabs === null) && (
+              <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
+            )}
+          </PageHeader>
+          <div className="page-content bx--grid">
+            {renderAst(post.htmlAst)}
+          </div>
         </div>
       </Layout>
     );

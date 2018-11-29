@@ -95,15 +95,15 @@
 }
 
 // Adds background color to component page images. Adds to all images on compponent pages for now
-.page-content--component .gatsby-resp-image-wrapper {
-  background: $ui-02;
+.container--component .gatsby-resp-image-wrapper {
+  background: $ibm-colors__white;
 }
 
 .gatsby-resp-image-background-image {
   background: transparent !important; // Need important to override inline style added by gatsby-remark-images
 }
 
-.page-content--component .gatsby-resp-image-image {
+.container--component .gatsby-resp-image-image {
   box-shadow: none !important; // Need important to override inline style added by gatsby-remark-images
   border: none !important;
 }
