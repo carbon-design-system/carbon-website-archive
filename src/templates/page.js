@@ -101,7 +101,7 @@ export default ({ data, pageContent }) => {
     );
   } else {
     return (
-      <Layout>
+      <Layout className="test">
         <PageHeader
           title={post.frontmatter.title}
           label={post.frontmatter.label}
