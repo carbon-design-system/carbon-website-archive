@@ -181,14 +181,6 @@
       "about": {
         "title": "About"
       },
-      "color": {
-        "title": "Color",
-        "internal": true
-      },
-      "iconography": {
-        "title": "Iconography",
-        "internal": true
-      },
       "ui-shell": {
         "title": "UI Shell"
       },
