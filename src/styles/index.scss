@@ -7,7 +7,7 @@ $feature-flags: (
   ui-shell: true,
 );
 //@import '@carbon/layout/scss/layout.scss';
-//@import '@carbon/grid/scss/grid.scss';
+@import '@carbon/grid/scss/grid.scss';
 //@import '@carbon/type/scss/type.scss';
 
 // There are temp files copied from carbon-elements
@@ -59,6 +59,7 @@ $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
 @import '../components/ComponentStatus/component-status.scss';
 @import '../components/ComponentOverview/component-overview.scss';
 @import '../components/GlobalSearch/global-search.scss';
+@import '../components/LeftNav/left-nav.scss';
 
 //---------------------------------------
 // Syntax
@@ -66,7 +67,3 @@ $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
 @import 'prism';
 @import 'syntax';
 
-//---------------------------------------
-// Halloween 🎃
-//---------------------------------------
-//@import 'halloween';

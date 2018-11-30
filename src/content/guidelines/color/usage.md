@@ -1,7 +1,7 @@
 ---
 label: Guidelines
 title: Color
-tabs: ['Swatches', 'Usage']
+tabs: ['Swatches', 'Usage', 'Color in UI']
 ---
 
 <page-intro>**Color** brings a design to life. Color is versatile; it's used to express emotion and tone, as well as place emphasis and create associations. Color should always be used in meaningful and intentional ways in order to create patterns and visual cues.</page-intro>
@@ -67,7 +67,7 @@ Certain UI color combinations on Carbon must pass the new WCAG AA standards of a
 
 ### Additional color accessibility
 
-Other color accessibility concerns include color blindness and low vision users. Learn more about these additional color accessibility guidelines in the [accessibility section](http://carbondesignsystem.com/guidelines/accessibility/color) of the Carbon website.
+Other color accessibility concerns include color blindness and low vision users. Learn more about these additional color accessibility guidelines in the [accessibility section](/guidelines/accessibility/color) of the Carbon website.
 
 ## Resources
 

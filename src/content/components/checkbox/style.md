@@ -1,5 +1,5 @@
 ---
-label: Component
+label: Components
 title: Checkbox
 tabs: ['Code', 'Usage', 'Style']
 ---

@@ -15,11 +15,10 @@ import {
   HeaderGlobalBar,
   HeaderGlobalAction,
 } from 'carbon-components-react/lib/components/UIShell';
-import { Search16, Menu32 } from '@carbon/icons-react';
+import { AppSwitcher20, Menu32 } from '@carbon/icons-react';
 
 import '../../styles/index.scss';
 import '../../styles/experimental.scss';
-//import '../../styles/halloween-components.scss';
 
 class Layout extends React.Component {
   static propTypes = {
@@ -152,20 +151,15 @@ class Layout extends React.Component {
                 aria-label="Open menu"
                 onClick={console.log('')}
               />
-              <HeaderName prefix="IBM" to="javascript:void(0)" element={Link} href="/">
+              <HeaderName prefix="IBM" to="/" element={Link}>
                 Product Design
               </HeaderName>
 
               <HeaderGlobalBar>
                 <GlobalSearch />
                 <HeaderGlobalAction
-                  aria-label="Search"
-                  >
-                  <Search16 />
-                </HeaderGlobalAction>
-                <HeaderGlobalAction
                   aria-label="Profile">
-                  <Search16 />
+                  <AppSwitcher20 />
                 </HeaderGlobalAction>
               </HeaderGlobalBar>
               
@@ -175,7 +169,7 @@ class Layout extends React.Component {
             
             <div className={classNames}>
               {children}
-              <Footer isExpanded={this.state.isOpen} />
+              <Footer />
             </div>
           </>
         )}

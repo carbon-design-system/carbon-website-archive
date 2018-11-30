@@ -12,7 +12,6 @@
 
 .page-header__label {
   @include type-style('heading-04');
-  margin-left: $layout-lg;
 }
 
 .page-header__title {
@@ -23,5 +22,4 @@
   //@include type-style('display-02');
   margin-bottom: $layout-xs;
   margin-top: auto;
-  margin-left: $layout-lg;
 }

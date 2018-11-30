@@ -1,7 +1,7 @@
 ---
 label: Guidelines
 title: Color
-tabs: ['Swatches', 'Usage']
+tabs: ['Swatches', 'Usage', 'Color in UI']
 ---
 
 ## Carbon default theme

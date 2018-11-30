@@ -129,36 +129,42 @@ export default class IconLibraryExperimental extends React.Component {
     if (errorLoadingIcons) {
       console.error(errorLoadingIcons);
       return (
-        <div className="page iconography--experimental">
-          <h3>Yikes! Looks like something went wrong.</h3>
-          <p>
-            We're still working out some problems in our experimental website.
-            If you can, we'd appreciate it if you could make an issue on{' '}
-            <a
-              href="https://github.com/carbon-design-system/carbon-website-gatsby"
-              rel="noopener noreferrer"
-              target="_blank">
-              our repo
-            </a>{' '}
-            to make sure that this gets fixed!
-          </p>
+        <div className="page iconography--experimental bx--row">
+          <div class="bx--col-lg-12 bx--offset-lg-4">
+            <h3>Yikes! Looks like something went wrong.</h3>
+            <p>
+              We're still working out some problems in our experimental website.
+              If you can, we'd appreciate it if you could make an issue on{' '}
+              <a
+                href="https://github.com/carbon-design-system/carbon-website-gatsby"
+                rel="noopener noreferrer"
+                target="_blank">
+                our repo
+              </a>{' '}
+              to make sure that this gets fixed!
+            </p>
+          </div>
         </div>
       );
     }
 
     if (filteredIcons.length === 0) {
       return (
-        <div className="page iconography--experimental">
-          {search}
-          <IconEmptyState />
+        <div className="page iconography--experimental bx--row">
+          <div class="bx--col-lg-12 bx--offset-lg-4">
+            {search}
+            <IconEmptyState />
+          </div>
         </div>
       );
     }
 
     return (
-      <div className="page iconography--experimental">
-        {search}
-        {sections}
+      <div className="page iconography--experimental bx--row">
+        <div class="bx--col-lg-12 bx--offset-lg-4">
+          {search}
+          {sections}
+        </div>
       </div>
     );
   }

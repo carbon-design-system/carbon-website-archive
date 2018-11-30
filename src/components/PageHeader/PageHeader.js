@@ -15,10 +15,16 @@ const PageHeader = ({
 
   return (
     <div className="page-header">
-      {labelContent}
-      <h1 id="page-title" className="page-header__title">
-        {title}
-      </h1>
+      <div className="bx--grid">
+        <div class="bx--row">
+          <div class="bx--col-lg-12 bx--offset-lg-4">
+            {labelContent}
+            <h1 id="page-title" className="page-header__title">
+              {title}
+            </h1>
+          </div>
+        </div>
+      </div>
       {children}
     </div>
   );
