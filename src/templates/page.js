@@ -109,7 +109,7 @@ export default ({ data, pageContent }) => {
               <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
             )}
           </PageHeader>
-          <div className="page-content bx--grid">
+          <div className="page-content ibm--grid">
             {renderAst(post.htmlAst)}
           </div>
         </div>

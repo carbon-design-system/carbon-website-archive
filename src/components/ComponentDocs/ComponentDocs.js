@@ -15,7 +15,7 @@ export default class ComponentDocs extends React.Component {
 
     return (
       <div className="page_md component-docs bx--row">
-        <div class="bx--col-lg-12 bx--offset-lg-4">
+        <div class="ibm--col-lg-12 ibm--offset-lg-4">
           <h2 className="page-h2">Documentation</h2>
           <div
             dangerouslySetInnerHTML={{

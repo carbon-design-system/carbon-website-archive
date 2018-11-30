@@ -33,7 +33,7 @@ class IndexPage extends React.Component {
     return (
       <Layout>
         <div className="page_md component-docs bx--row">
-            <div class="bx--col-lg-12 bx--offset-lg-4">
+            <div class="ibm--col-lg-12 ibm--offset-lg-4">
                 {sectionHeader}
                 {isInternal ? 'IBM Design System' : 'Carbon Design System'}
             </div>

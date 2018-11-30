@@ -75,7 +75,7 @@ export default class IconLibrary extends React.Component {
 
     return (
       <div className="page iconography bx--row">
-        <div class="bx--col-lg-12 bx--offset-lg-4">
+        <div class="ibm--col-lg-12 ibm--offset-lg-4">
           <div className="icon-container">
             <Search
               small

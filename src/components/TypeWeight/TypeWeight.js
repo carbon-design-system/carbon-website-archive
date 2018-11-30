@@ -14,8 +14,8 @@ export default class typeWeight extends React.Component {
 
     if (type == "types") {
       return (
-        <div className="bx--row">
-          <div className="bx--col-lg-8 bx--offset-lg-4">
+        <div className="ibm--row">
+          <div className="ibm--col-lg-8 ibm--offset-lg-4">
             <div
                 className="type-weight"
                 dangerouslySetInnerHTML={{ __html: typeTypes }}
@@ -27,8 +27,8 @@ export default class typeWeight extends React.Component {
 
     if (type == "italic") {
       return (
-        <div className="bx--row">
-          <div className="bx--col-lg-8 bx--offset-lg-4">
+        <div className="ibm--row">
+          <div className="ibm--col-lg-8 ibm--offset-lg-4">
             <div
                 className="type-weight"
                 dangerouslySetInnerHTML={{ __html: typeWeightItalic }}
@@ -39,8 +39,8 @@ export default class typeWeight extends React.Component {
     }
    
     return (
-      <div className="bx--row">
-        <div className="bx--col-lg-8 bx--offset-lg-4">
+      <div className="ibm--row">
+        <div className="ibm--col-lg-8 ibm--offset-lg-4">
           <div
               className="type-weight"
               dangerouslySetInnerHTML={{ __html: typeWeight }}

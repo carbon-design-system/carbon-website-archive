@@ -12,29 +12,22 @@ Carbon uses the new IBM open-sourced typeface, IBM Plex. It has been carefully d
 
 <type-weight type="types"></type-weight>
 
-```html
-<p class="ibm-type">IBM Plex Sans</p>
-<p class="ibm-type-serif">IBM Plex Serif</p>
-<p class="ibm-type-mono">IBM Plex Mono</p>
-```
-
 ### Sans-serif font stack
 
 ```scss
-font-family: 'ibm-plex-sans', 'Helvetica Neue', Arial, sans-serif;
+font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 ```
 
 ### Serif font stack
 
 ```scss
-font-family: 'IBM Plex Serif', serif;
+font-family: 'IBM Plex Serif', 'Georgia', Times, serif;
 ```
 
 ### Mono font stack
 
 ```scss
-font-family: 'ibm-plex-mono', 'Menlo', 'DejaVu Sans Mono',
-  'Bitstream Vera Sans Mono', Courier;
+font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
 ```
 
 ## Scale
@@ -60,22 +53,12 @@ We suggest to use IBM Plex Light, Regular, and SemiBold for digital experiences.
 
 <type-weight></type-weight>
 
-```html
-<p class="ibm-type-semibold">Semibold</p>
-<p class="ibm-type-regular">Regular</p>
-<p class="ibm-type-light">Light</p>
-```
 
 ### Italic
 Each weight has an Italic style, which should only be used when you need to emphasize certain words in a sentence (titles of works, technical terms, names of devices, captions).
 
 <type-weight type="italic"></type-weight>
 
-```html
-<p class="ibm-type-semibold ibm-type-italic">Semibold Italic</p>
-<p class="ibm-type-regular ibm-type-italic">Regular</p>
-<p class="ibm-type-light ibm-type-italic">Light</p>
-```
 
 ## Type Color
 Careful consideration of color maintains quality and recognition for users. Legibility and accessibility are two keys. Keep colored type neutral when in paragraphs. Use primary blue for primary actions. 
