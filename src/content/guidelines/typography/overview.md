@@ -1,72 +1,82 @@
 ---
 label: Guidelines
 title: Typography
-tabs: ['Overview', 'Type Styles']
+tabs: ['Overview', 'Product', 'Editorial']
 ---
 
-<page-intro>**Typography** is used to create clear hierarchies, useful organizations, and purposeful alignments that guide users through the product and experience. It is the core structure of any well designed interface.</page-intro>
+<page-intro>Typography is used to create clear hierarchies, useful organizations, and purposeful alignments that guide users through the product and experience.</page-intro>
 
 ## Typeface: IBM Plex
 
 Carbon uses the new IBM open-sourced typeface, IBM Plex. It has been carefully designed to meet IBM's needs as a global technology company and reflect IBM's spirit, beliefs and design principles. IBM Plex can be accessed and downloaded from the [Plex GitHub Repo](https://github.com/ibm/plex).
 
-#### Sans-serif font stack
+<type-weight type="types"></type-weight>
+
+```html
+<p class="ibm-type">IBM Plex Sans</p>
+<p class="ibm-type-serif">IBM Plex Serif</p>
+<p class="ibm-type-mono">IBM Plex Mono</p>
+```
+
+### Sans-serif font stack
 
 ```scss
 font-family: 'ibm-plex-sans', 'Helvetica Neue', Arial, sans-serif;
 ```
 
-#### Monospaced font stack
+### Serif font stack
+
+```scss
+font-family: 'IBM Plex Serif', serif;
+```
+
+### Mono font stack
 
 ```scss
 font-family: 'ibm-plex-mono', 'Menlo', 'DejaVu Sans Mono',
   'Bitstream Vera Sans Mono', Courier;
 ```
 
-## Type scale
+## Scale
+
+The IBM type scale is built on a single equation. The formula for our scale was created to provide hierarchy for all types of experiences. The formula assumes that y₀=12px:
 
 <type-scale-table></type-scale-table>
 
-### How it works
+```
+Xn = Xn-1 + {INT[(n-2)/4] + 1} * 2
+Xn: step n type size Xn-1: step n-1 type size
+```
 
-IBM designed a complementary type scale to use with IBM Plex. Each step on the scale is determined by the previous step on the scale. Mathematically it works out to the following:
+## Style
 
-**X₂=X₁+{INT[(n-2)/4]+1}x2**
+Typography creates purposeful texture. It guides users to read and understand the hierarchy of information. The right typographic treatment and the controlled usage of type styles helps manage the display of content, keeping it useful, simple and effective.
 
-**X : step n type size X₁ : step n-1 type size**
-
-The gap between two steps is always based on increments of two. It is a non-linear arithmetic progression, providing a smaller interval for smaller type and a larger interval for larger type, allowing for a wide range of scales. It provides sensible value and works well in a product environments.
-
-## Typographic treatments
-
-### Font weight
+### Weights
 
 Font weight is an important typographic style that can add emphasis and is used to differentiate content hierarchy. Font weight and size pairings must be carefully balanced. A bold weight will always have more emphasis than a lighter weight font of the same size. However, a lighter weight font can rank hierarchically higher than a bold font if the lighter weight type size is significantly larger than the bold.
+ 
+We suggest to use IBM Plex Light, Regular, and SemiBold for digital experiences. The semibold weight is ideal for section headers, but should not be used for long text..
 
-IBM Plex family provides a wide range of weights. However, only SemiBold, Regular, Light should be used for product design.
+<type-weight></type-weight>
 
-<type-weight-table></type-weight-table>
+```html
+<p class="ibm-type-semibold">Semibold</p>
+<p class="ibm-type-regular">Regular</p>
+<p class="ibm-type-light">Light</p>
+```
 
-### Body copy
+### Italic
+Each weight has an Italic style, which should only be used when you need to emphasize certain words in a sentence (titles of works, technical terms, names of devices, captions).
 
-We recommend using two sizes for body copy. The first is UI specific. To maximize screen real estate we chose a smaller 14px / 0.875rem body copy size for the standard UI console. However, for areas that have prolonged reading, like Documentation, we use a larger body copy size of 16px / 1rem to enhance readability.
+<type-weight type="italic"></type-weight>
 
-| Body copy         | px   | rem      |
-| ----------------- | ---- | -------- |
-| Standard UI       | 14px | 0.875rem |
-| Prolonged reading | 16px | 1rem     |
+```html
+<p class="ibm-type-semibold ibm-type-italic">Semibold Italic</p>
+<p class="ibm-type-regular ibm-type-italic">Regular</p>
+<p class="ibm-type-light ibm-type-italic">Light</p>
+```
 
-### Line-height
+## Type Color
+Careful consideration of color maintains quality and recognition for users. Legibility and accessibility are two keys. Keep colored type neutral when in paragraphs. Use primary blue for primary actions. 
 
-Line-height, traditionally known as leading, is one of several factors that directly contribute to readability and pacing of copy. Line-heights are based on the size of the font itself. Ideal line-heights for standard copy have a ratio of 1:1.5 (typesize : line-height). For example, a type at 16px/1rem would have a line-height of 1.5rem/24px (16 x 1.5). The exception to this rule are headings, which need less spacing and therefore have a line-height ratio of 1:1.25.
-
-| Line-height | Ratio  |
-| ----------- | ------ |
-| Standard UI | 1:1.5  |
-| Headers     | 1:1.25 |
-
-### Line-length
-
-Line-length, traditionally known as measure, is the number of characters in a single line. It also directly contributes to the readability and pacing of copy. Lines that are too long degrade eye tracking from line to line, making it difficult to gauge which line to read next. In contrast, lines that are too short make it difficult for a reader to maintain a steady reading rhythm. Short lines often create disproportionate ragged edges that negatively affect the design.
-
-**Line-length: 52 - 78 characters**

@@ -151,12 +151,20 @@ class Layout extends React.Component {
                 aria-label="Open menu"
                 onClick={console.log('')}
               />
-              <HeaderName prefix="IBM" to="/" element={Link}>
-                Product Design
-              </HeaderName>
+              {isInternal ? (
+                <HeaderName prefix="IBM" to="/" element={Link}>
+                  Product Design
+                </HeaderName>
+              ) : (
+                <HeaderName prefix="" to="/" element={Link}>
+                  Carbon Design System
+                </HeaderName>
+              )}
+              
 
               <HeaderGlobalBar>
-                <GlobalSearch />
+                
+                {isInternal ? null : <GlobalSearch />}
                 <HeaderGlobalAction
                   aria-label="Profile">
                   <AppSwitcher20 />
