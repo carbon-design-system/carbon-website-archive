@@ -7,7 +7,13 @@ $feature-flags: (
   ui-shell: true,
 );
 //@import '@carbon/layout/scss/layout.scss';
-@import '@carbon/grid/scss/grid.scss';
+
+.carbon--grid-x {
+  $prefix: 'carbon--grid-x';
+  $imported-modules-local: ();
+  @import '@carbon/grid/scss/grid.scss';
+}
+
 //@import '@carbon/type/scss/type.scss';
 
 // There are temp files copied from carbon-elements

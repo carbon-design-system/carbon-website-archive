@@ -39,8 +39,8 @@ class Footer extends Component {
     });
 
     return (
-      <footer className="page-footer">
-        <div className="bx--grid">
+      <footer className="page-footer carbon--grid-x">
+        <div className="carbon--grid-x--grid">
           <div className="bx--row">
             <nav className="page-footer__nav bx--col-lg-2 bx--offset-lg-4">
               <ul>

@@ -14,8 +14,8 @@ const PageHeader = ({
     );
 
   return (
-    <div className="page-header">
-      <div className="bx--grid">
+    <div className="page-header carbon--grid-x">
+      <div className="carbon--grid-x--grid">
         <div class="bx--row">
           <div class="bx--col-lg-12 bx--offset-lg-4">
             {labelContent}

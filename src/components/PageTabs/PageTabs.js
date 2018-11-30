@@ -25,8 +25,8 @@ export default class PageTabs extends React.Component {
       </li>
     ));
     return (
-      <div className="page-tabs">
-        <div className="bx--grid">
+      <div className="page-tabs carbon--grid-x">
+        <div className="carbon--grid-x--grid">
           <div class="bx--row">
             <div class="bx--col-lg-12 bx--offset-lg-4">
               <nav>

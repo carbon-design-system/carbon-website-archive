@@ -89,7 +89,7 @@ export default ({ data, pageContent }) => {
   const { GATSBY_CARBON_ENV } = process.env;
   const isInternal = GATSBY_CARBON_ENV !== 'internal' && internal == true;
 
-  const classNames = classnames({
+  const classNames = classnames('carbon--grid-x', {
     'container--component': post.frontmatter.label === 'Components',
   });
 
@@ -111,7 +111,7 @@ export default ({ data, pageContent }) => {
               <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
             )}
           </PageHeader>
-          <div className="page-content bx--grid">
+          <div className="page-content carbon--grid-x--grid">
             {renderAst(post.htmlAst)}
           </div>
         </div>
