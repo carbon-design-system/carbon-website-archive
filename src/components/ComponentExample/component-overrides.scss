@@ -342,3 +342,8 @@
 //---------------------------------------
 // Experimental Tabs
 //---------------------------------------
+.component-example .carbon-demo-experimental .demo--tabs__nav-item {
+  @include breakpoint('768px') {
+    padding-right: rem(1px);
+  }
+}
