@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-// import { Icon } from 'carbon-components-react';
+import { CheckmarkFilled24, ErrorFilled24 } from '@carbon/icons-react';
 
 export default class DoDontExample extends React.Component {
   static propTypes = {
@@ -48,10 +48,14 @@ export default class DoDontExample extends React.Component {
     return (
       <div className={wrapperClassNames}>
         <div className="example-card">
-          {/* <Icon name={icon} className={iconClassNames} /> */}
+          {correct ? (
+            <CheckmarkFilled24 className={iconClassNames} />
+          ) : (
+            <ErrorFilled24 className={iconClassNames} />
+          )}
           <div className="example__content">
-            {text ? <p className="example__text">{text}</p> : null}
             {children}
+            {text ? <p className="example__text">{text}</p> : null}
           </div>
         </div>
         {this.renderCaption(title, description)}

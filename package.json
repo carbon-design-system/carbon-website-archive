@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "@carbon/grid": "^0.0.1-alpha.2",
-    "@carbon/icons-react": "^0.0.1-alpha.4",
+    "@carbon/icons-react": "^0.0.1-alpha.20",
     "@reach/router": "^1.2.1",
     "@storybook/addon-info": "^4.0.2",
     "carbon-components": "^9.48.4",
