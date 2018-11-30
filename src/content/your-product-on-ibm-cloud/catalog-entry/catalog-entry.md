@@ -207,7 +207,7 @@ Remember to follow the best practice of reducing cognitive load. This includes c
 
 - This page has more space for additional configuration fields. Use headings (especially on longer configurations) to delineate logical sections. For example, a Starter Kit has an "App Details" and a "Service Details" section. This page also includes a cost/order summary on the right side.
 - This configuration option may have multiple steps. Use the [Carbon progress indicator component](http://design-system.stage1.mybluemix.net/components/progress-indicator/code) and your best judgement when implementing steps.
-- Your offering team is responsible for building complex configuration pages using Carbon components as needed, including [order summary](http://v8.carbondesignsystem.com/add-ons/order-summary/code) and [forms](http://www.carbondesignsystem.com/components/form/code). Please follow the [Carbon grid](http://www.carbondesignsystem.com/style/grid/design).
+- Your offering team is responsible for building complex configuration pages using Carbon components as needed, including [order summary](http://v8.carbondesignsystem.com/add-ons/order-summary/code) and [forms](/components/form/code). Please follow the [Carbon grid](/guidelines/grid/design).
 
 ### 3. Long Description
 

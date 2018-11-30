@@ -1,7 +1,7 @@
 ---
 label: Experimental
 title: Iconography
-tabs: ['Library', 'Usage', 'Contribution']
+tabs: ['Library', 'Usage', 'Design and Contribution']
 internal: true
 ---
 
@@ -26,15 +26,11 @@ While most icons occupy a square artboard, some icons may occupy a rectangular a
 
 All icons should be on a transparent background and with the artboard boundaries at the edges of the icon. At least one of the edges should be at the standard measurement of 24px or 16px.
 
-![icon usage](images/icon-usage-1.png)
-
 ### Padding
 
 When **creating icons,** do not add internal padding with Sketch or Illustrator. If the icon needs padding, developers can add this with CSS.
 
 When **using icons,** all touch targets need to be 44px or higher. With that said, a developer can add padding to a touch target with CSS to meet the 44px requirement.
-
-![icon padding](images/icon-usage-2.png)
 
 ### Color
 
@@ -87,7 +83,7 @@ To use SVG sprite files, they **must** be distributed through a web server and w
 
 `path_to_static-assets` is the path to your static assets where `carbon-icons.svg` is located.
 
-`icon_name` is the icon name, which will display the corresponding icon. Refer to the <a href="/style/iconography" target=blank>iconography library</a> page for a full list of icon names.
+`icon_name` is the icon name, which will display the corresponding icon. Refer to the <a href="/guidelines/iconography" target=blank>iconography library</a> page for a full list of icon names.
 
 ### CSS
 
@@ -122,7 +118,7 @@ Carbon icons ship with two main SVG files that contain different sets of externa
 | Filename          | Description                                                                                                        | Supported versions     |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------ | ---------------------- |
 | carbon-icons.svg  | Contains current icons (consolidated subset of legacy icons used in IBM Bluemix)                                   | `3.x` and newer        |
-| carbon-icons.json | JSON file created from carbon-icons.svg, used in [Carbon](http://carbondesignsystem.com/style/iconography/library) | `3.x` and newer        |
+| carbon-icons.json | JSON file created from carbon-icons.svg, used in [Carbon](/guidelines/iconography/library) | `3.x` and newer        |
 | carbon-icons.js   | JS module created from carbon-icons.svg, used in `Icon` React Component in [carbon-components-react](#)            | `3.x` and newer        |
 | sprite.svg        | SVG sprite contains legacy icons                                                                                   | `1.x`, `2.x` and `3.x` |
 | icons.json        | legacy JSON file created from sprite.svg                                                                           | `1.x`, `2.x` and `3.x` |

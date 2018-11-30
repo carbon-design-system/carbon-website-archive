@@ -35,7 +35,7 @@ _Example of a dashboard using skeleton states to demonstrate progressive loading
 
 ### Code
 
-The skeleton state for _most_ components can be displayed simply by adding a modifier class of `bx--skeleton` to the component while data is loading and then removing the class after it has loaded in. You will have to create your own custom javascript to implement this based on your environment.
+The skeleton state for _most_ components can be displayed simply by adding a modifier class of `bx--skeleton` to the component while data is loading and then removing the class after it has loaded in. You will have to create your own custom JavaScript to implement this based on your environment.
 
 ```html
 <button class="bx--btn bx--btn--primary bx--skeleton"></button>

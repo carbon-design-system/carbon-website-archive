@@ -23,7 +23,7 @@ title: Developers
 - [Doc Fixes](https://github.com/ibm/carbon-components-react/blob/master/.github/CONTRIBUTING.md#doc-fixes)
 - [Submission Guidelines](https://github.com/ibm/carbon-components-react/blob/master/.github/CONTRIBUTING.md#submission-guidelines)
 - [Coding Standards](https://github.com/ibm/carbon-components-react/blob/master/.github/CONTRIBUTING.md#coding-standards)
-- [Commit Message Guidelines](https://github.com/ibm/carbon-components-react/blob/master/.github/CONTRIBUTING.md#commit-message-guidlines)
+- [Commit Message Guidelines](https://github.com/ibm/carbon-components-react/blob/master/.github/CONTRIBUTING.md#commit-message-guidelines)
 - [Testing](https://github.com/ibm/carbon-components-react/blob/master/.github/CONTRIBUTING.md#testing)
 
 ## Carbon Component Angular

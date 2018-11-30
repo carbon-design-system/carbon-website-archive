@@ -10,7 +10,7 @@ internal: true
 
 **The Jobs to be Done framework helps a product focus on what the user is trying to accomplish, rather than the steps they are taking to get there.**
 
-For example, the user takes screenshots of your dashboard to use in a monthly report and your team may develop functionality that exports the data in a nicely formatted pdf. This improves the user experience, but doesn't address the user's true job-to-be-done of communicating and collaborating with their team. The team used their time developing a way to print a pdf and not tagging, commenting, saving, and sharing charts within your application.
+For example, the user takes screenshots of your dashboard to use in a monthly report and your team may develop functionality that exports the data in a nicely formatted PDF. This improves the user experience, but doesn't address the user's true job-to-be-done of communicating and collaborating with their team. The team used their time developing a way to print a PDF and not tagging, commenting, saving, and sharing charts within your application.
 
 Product providers can start by talking to real users and mapping the steps taken to complete a job. Look at the tasks users take to achieve their final result. Are there any workarounds? Where are the inadequate solutions?
 
@@ -78,5 +78,3 @@ Basic visual design principles a product should follow:
 - Make screen layouts consistent with each other.
 - Arrange the screen elements in a way that is sensible and logical and consistent with the user’s conceptual model.
 - Incorporate into the composition of the screen the elements of graphic design which contribute to the application’s attractiveness: white space, color, overlap, size and shape differences, pattern, contrast, balance, etc.
-
-

@@ -338,18 +338,3 @@
 .component-example .carbon-demo-experimental .demo--loading-overlay {
   position: absolute;
 }
-
-//---------------------------------------
-// Experimental Tabs
-//---------------------------------------
-.demo--tabs__nav-item {
-  @include breakpoint('768px') {
-    padding-left: 1px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .carbon-demo-experimental .demo--tabs__nav-item {
-      padding-right: 1px;
-  }
-}

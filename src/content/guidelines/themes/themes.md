@@ -7,7 +7,7 @@ title: Themes
 
 ## Introduction to theming
 
-Developers and designers can use Carbon Themes to modify existing components to fit their own specific visual styles and needs. Rather than changing each individual component's css or building modified components from scratch, components can now be easily customized by changing a set of universal variables that seamlessly propagate across all of the components.
+Developers and designers can use Carbon Themes to modify existing components to fit their own specific visual styles and needs. Rather than changing each individual component's CSS or building modified components from scratch, components can now be easily customized by changing a set of universal variables that seamlessly propagate across all of the components.
 
 <p><a href="http://themes.carbondesignsystem.com/" target="_blank">Explore Themes</a></p>
 
@@ -38,7 +38,7 @@ There are two categories of variables: **color** and **global.**
 
 ### Color
 
-Each theme is assigned 25 universal color variables, which are determined by [common roles and usage](/style/color/usage). This allows for uniform color application across themes while giving each theme the freedom to express its own personality.
+Each theme is assigned 25 universal color variables, which are determined by [common roles and usage](/guidelines/color/usage). This allows for uniform color application across themes while giving each theme the freedom to express its own personality.
 
 ```scss
 //// Carbon
