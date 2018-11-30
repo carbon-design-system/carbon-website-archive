@@ -22,11 +22,11 @@ $ yarn add carbon-components-react carbon-components carbon-icons
 
 ### Getting Started
 
-1.  These components require the use of [Webpack](http://webpack.github.io/docs/tutorials/getting-started/) in your project. See our [webpack.config.js](https://github.com/carbon-design-system/carbon-components-react/blob/master/.storybook/webpack.config.js) for an example configuration.
+1.  These components require the use of [webpack](https://webpack.js.org/guides/getting-started/) in your project. See our [webpack.config.js](https://github.com/carbon-design-system/carbon-components-react/blob/master/.storybook/webpack.config.js) for an example configuration.
 
-2.  Components do not import any of the styles themselves, use the scss or css from `carbon-components` to bring in styling. You can also use the `unpkg` cdn to bring in the styles wholesale - `unpkg.com/carbon-components/css/carbon-components.css` aliases the latest css file.
+2.  Components do not import any of the styles themselves, use the SCSS or CSS from `carbon-components` to bring in styling. You can also use the `unpkg` CDN to bring in the styles wholesale - `unpkg.com/carbon-components/css/carbon-components.css` aliases the latest CSS file.
 
-3.  For older browsers (e.g. IE11), polyfills listed in the [carbon-components-react/.storybook/polyfills.js file](https://github.com/carbon-design-system/carbon-components-react/blob/master/.storybook/polyfills.js) is required.
+3.  For older browsers (e.g. IE11), polyfills listed in the [carbon-components-react/.storybook/polyfills.js file](https://github.com/carbon-design-system/carbon-components-react/blob/master/.storybook/polyfills.js) are required.
 
 If you just want to try out `carbon-components-react`, you can also use [CodeSandbox](https://codesandbox.io).
 

@@ -80,7 +80,7 @@ Always specify table headers with `<th />` elements, and make sure they stand ou
 </table>
 ```
 
-### Making accessible data visualizations.
+### Making accessible data visualizations
 
 It is important to take into account visually impaired users when including data visualizations. Consider accompanying visuals with a data table is another alternative for users who rely on screen readers. It is also important to take into account color choices for color-blind users.
 
@@ -123,7 +123,7 @@ Use SVG's instead of font icon libraries as those are not accessible.
 
 ### Utilize ARIA (Accessible Rich Internet Application) roles and landmark roles
 
-Aria roles convey the intent or meaning of an element to assistive technology. This helps users navigate when they can't see the layout and provides further context about different functionalities.
+ARIA roles convey the intent or meaning of an element to assistive technology. This helps users navigate when they can't see the layout and provides further context about different functionalities.
 
 Landmark roles identify regions in a page, and act much like native HTML tags would when it comes to semantics. Signpost roles describe other information about a given element's functionality on a page. These are especially helpful when building complex, custom interfaces or to reinforce semantics in native HTML elements.
 

@@ -74,26 +74,28 @@ export default class IconLibrary extends React.Component {
     );
 
     return (
-      <div className="page iconography">
-        <div className="icon-container">
-          <Search
-            small
-            onChange={this.handleChange}
-            onKeyUp={this.handleClearInput}
-            placeHolderText="Search icon library"
-            aria-label="Icon library search"
-            value={this.state.searchValue}
-            labelText="Icon library search"
-          />
+      <div className="page iconography bx--row">
+        <div class="bx--col-lg-12 bx--offset-lg-4">
+          <div className="icon-container">
+            <Search
+              small
+              onChange={this.handleChange}
+              onKeyUp={this.handleClearInput}
+              placeHolderText="Search icon library"
+              aria-label="Icon library search"
+              value={this.state.searchValue}
+              labelText="Icon library search"
+            />
+          </div>
+          {this.state.searchValue.length > 0 ? (
+            searchResults
+          ) : (
+            <React.Fragment>
+              {initialIcons}
+              {serviceIcons}
+            </React.Fragment>
+          )}
         </div>
-        {this.state.searchValue.length > 0 ? (
-          searchResults
-        ) : (
-          <React.Fragment>
-            {initialIcons}
-            {serviceIcons}
-          </React.Fragment>
-        )}
       </div>
     );
   }

@@ -1,5 +1,5 @@
 ---
-label: Component
+label: Components
 title: Progress Indicator
 tabs: ['Code', 'Usage', 'Style']
 ---
@@ -36,7 +36,7 @@ Labels should be one to two words only, with a limit of 16 characters total per 
 
 ## Structure
 
-The checkmark icon can be found in the [iconography](/style/iconography/library) library.
+The checkmark icon can be found in the [iconography](/guidelines/iconography/library) library.
 
 | Class                    | Property       | px / rem | Spacing token |
 | ------------------------ | -------------- | -------- | ------------- |

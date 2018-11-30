@@ -24,9 +24,9 @@ There are times that text is rendered on a gradient background or image. You nee
 
 [IBM Checkpoint 1.4.3 Contrast (Minimum)](https://www.ibm.com/able/guidelines/ci162/contrast.html)
 
-Please refer to our [usage section on the Colors page](/style/colors/usage) to learn more about color contrast ratios. You can also use this [color contrast](https://marijohannessen.github.io/color-contrast-checker/) tool to ensure your ratios pass WCAG AA standards.
+Please refer to our [usage section on the Colors page](/guidelines/color/usage) to learn more about color contrast ratios. You can also use this [color contrast](https://marijohannessen.github.io/color-contrast-checker/) tool to ensure your ratios pass WCAG AA standards.
 
-To view best practices for using color in Data Visualization, view the [Data Vis color](/data-vis/overview/colors) page.
+To view best practices for using color in Data Visualization, view the [Data Vis color](/data-visualization/overview/colors) page.
 
 ## Color blindness
 

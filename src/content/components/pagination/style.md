@@ -1,5 +1,5 @@
 ---
-label: Component
+label: Components
 title: Pagination
 tabs: ['Code', 'Usage', 'Style']
 ---

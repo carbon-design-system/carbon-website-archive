@@ -1,7 +1,7 @@
 ---
 label: Guidelines
 title: Iconography
-tabs: ['Library', 'Usage', 'Contribution']
+tabs: ['Library', 'Usage', 'Design and Contribution']
 ---
 
-<icon-library />
+<icon-library-experimental />

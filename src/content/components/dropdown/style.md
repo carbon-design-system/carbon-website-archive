@@ -1,5 +1,5 @@
 ---
-label: Component
+label: Components
 title: Dropdown
 tabs: ['Code', 'Usage', 'Style']
 ---
