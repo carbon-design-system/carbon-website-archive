@@ -36,7 +36,7 @@ $ npm start
 
 ### Using our starter app 
 
-<img style="width: 100%" src="images/carbon-angular-starter.png" />
+<img style="width: 100%" alt="carbon-angular-starter screenshot" src="images/carbon-angular-starter.png" />
 
 We recommend using the [carbon-angular-starter](https://github.com/carbon-design-system/carbon-angular-starter) for bootstrapping applications with Carbon components. Within 5 minutes your app will be running with the following already configured:
 
