@@ -4,7 +4,7 @@ title: Developers
 tabs: ['Vanilla', 'React', 'Angular', 'Other Frameworks']
 ---
 
-<page-intro>The Carbon Design System supports vanilla js, React and Angular as core parts of the product. But you can still build components even if you're using a different framework.</page-intro>
+<page-intro>The Carbon Design System supports vanilla JS, React and Angular as core parts of the product. But you can still build components even if you're using a different framework.</page-intro>
 
 ## Development options
 
@@ -42,7 +42,7 @@ customElements.define('bx-loading', BXLoading);
 
 ### Examples
 
-[Angular 4 wrapper for Carbon](https://codepen.io/asudoh/pen/VryJBO?editors=1010) (We use this just as an example. [Angular](https://github.com/ibm/carbon-components-angular) is now supported by the Carbon Design System)
+[Angular 4 wrapper for Carbon](https://codepen.io/asudoh/pen/VryJBO?editors=1010) (We use this just as an example. [Angular](https://github.com/ibm/carbon-components-angular) is now supported by the Carbon Design System.)
 
 ### Troubleshooting
 

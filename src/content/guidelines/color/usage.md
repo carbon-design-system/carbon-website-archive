@@ -67,7 +67,7 @@ Certain UI color combinations on Carbon must pass the new WCAG AA standards of a
 
 ### Additional color accessibility
 
-Other color accessibility concerns include color blindness and low vision users. Learn more about these additional color accessibility guidelines in the [accessibility section](http://carbondesignsystem.com/guidelines/accessibility/color) of the Carbon website.
+Other color accessibility concerns include color blindness and low vision users. Learn more about these additional color accessibility guidelines in the [accessibility section](/guidelines/accessibility/color) of the Carbon website.
 
 ## Resources
 

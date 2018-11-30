@@ -130,7 +130,7 @@ Importing a component this way will bring in any dependencies that component has
 
 Carbon Components are built to be included individually and not clobber global styles - all `class` attributes are prefixed by the `bx--` moniker. You can specify your own prefix by changing the SCSS variable `$prefix`.
 
-### Javascript
+### JavaScript
 
 Carbon Component has component JavaScript classes, each of which correspond to a component found in [our components page](../../components/overview). The first steps to work with component JavaScript classes are the following:
 
@@ -141,7 +141,7 @@ Carbon Component has component JavaScript classes, each of which correspond to a
 
 #### Using a module bundler: recommended
 
-We recommend using ECMAScript module along with your module bundler toolchain to do so. Using a module bundler will bring in only the component code your application needs, creating an optimized build for production. Carbon Components ships with a ECMAScript module build as well as UMD build for each component, for use with webpack or rollup.
+We recommend using ECMAScript module along with your module bundler toolchain to do so. Using a module bundler will bring in only the component code your application needs, creating an optimized build for production. Carbon Components ships with a ECMAScript module build as well as UMD build for each component, for use with webpack or Rollup.
 
 After you've installed the components through `npm`, you can grab a component JavaScript class reference by something like this:
 
@@ -206,7 +206,7 @@ While `.create()` API gives you the full control of component instantiation, the
 
 **Note**: `.init()` API does _not_ take care of DOM elements that hasn't been available at the time it's called.
 If the JavaScript framework you are using creates DOM elements dynamically,
-follow the instructions in [the next section](#wrapping-a-component-with-javascript-framework-of-your-choice) instead of using `.init()`.
+follow the instructions in the next section instead of using `.init()`.
 
 #### Wrapping a component with JavaScript framework of your choice
 

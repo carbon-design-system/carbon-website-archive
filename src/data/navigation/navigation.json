@@ -217,6 +217,9 @@
       "dropdown": {
         "title": "Dropdown"
       },
+      "file-uploader": {
+        "title": "File Uploader"
+      },
       "inline-loading": {
         "title": "Inline Loading"
       },

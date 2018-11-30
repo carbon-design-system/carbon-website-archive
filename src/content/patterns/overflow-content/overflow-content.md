@@ -39,7 +39,7 @@ There are three types of truncation: front-line, mid-line, and end-line.
 | **Mid-line**   | Used when several text strings have different beginnings and/or endings but the exact same middle characters. Can also be used to shorten a phrase or text string when the end of a string cannot be truncated by an ellipsis. | `123400005678` `987600004321` | `1234...5678` `9876...4321` |
 | **End-line**  | Used at the end of a character string or paragraph to indicate that there is more content in another location, to show that the pattern in a sequence continues, or to shorten a long text string.                             | `123456789`                   | `12345...`                  |
 
-An ellipsis on its own may also represent condensed content. This type of truncation requires an overflow menu on hover instead of a browser tooltip. 
+An ellipsis on its own may also represent condensed content. This type of truncation requires an overflow menu on hover instead of a browser tooltip.
 
 ![Example of a truncated Breadcrumb utilizing an ellipse with an Overflow Menu.](images/Ellipse.png)
 _Example of a truncated breadcrumb utilizing an ellipsis with an overflow menu._
@@ -91,7 +91,7 @@ Mid-line truncation does not have its own class as it requires JavaScript. This 
 
 ### 'Show more' buttons
 
-The ‘Show more’ button is used when there is a significant amount of overflow content. Implementing a ‘Show more’ button gives a user the ability to see the content in more digestible chunks, as opposed to all at once. A ‘Show more’ button is used in place of scrolling, gradients, or fades as they are more prominent and actionable. If needed, a 'Show less' can be used to again hide the content the user opened. ‘Show more’ can also be presented as ‘Load more’ in cases where performance is a concern. See the [Loading](/loading) section for additional details.
+The ‘Show more’ button is used when there is a significant amount of overflow content. Implementing a ‘Show more’ button gives a user the ability to see the content in more digestible chunks, as opposed to all at once. A ‘Show more’ button is used in place of scrolling, gradients, or fades as they are more prominent and actionable. If needed, a 'Show less' can be used to again hide the content the user opened. ‘Show more’ can also be presented as ‘Load more’ in cases where performance is a concern. See the [Loading](/components/loading) section for additional details.
 
 ![Example of a Code Snippet utilizing the 'Show more' Button.](images/show-more.gif)
 _Example of the 'Show more' button in context._
