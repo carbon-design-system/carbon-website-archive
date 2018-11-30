@@ -253,6 +253,9 @@
       "structured-list": {
         "title": "Structured List"
       },
+      "tabs": {
+        "title": "Tabs"
+      },
       "tag": {
         "title": "Tag"
       },
