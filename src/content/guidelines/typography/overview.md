@@ -4,11 +4,11 @@ title: Typography
 tabs: ['Overview', 'Product', 'Editorial']
 ---
 
-<page-intro>Typography is used to create clear hierarchies, useful organizations, and purposeful alignments that guide users through the product and experience.</page-intro>
+<page-intro>When used properly, typography can help create clear hierarchies, organize information, and guide users through the product or experience.</page-intro>
 
 ## Typeface: IBM Plex
 
-Carbon uses the new IBM open-sourced typeface, IBM Plex. It has been carefully designed to meet IBM's needs as a global technology company and reflect IBM's spirit, beliefs and design principles. IBM Plex can be accessed and downloaded from the [Plex GitHub Repo](https://github.com/ibm/plex).
+Carbon uses the new open-sourced typeface, IBM Plex. It has been carefully designed to meet IBM's needs as a global technology company and reflect IBM's spirit, beliefs and design principles. IBM Plex can be accessed and downloaded from the [Plex GitHub Repo](https://github.com/ibm/plex).
 
 <type-weight type="types"></type-weight>
 
@@ -47,19 +47,19 @@ Typography creates purposeful texture. It guides users to read and understand th
 
 ### Weights
 
-Font weight is an important typographic style that can add emphasis and is used to differentiate content hierarchy. Font weight and size pairings must be carefully balanced. A bold weight will always have more emphasis than a lighter weight font of the same size. However, a lighter weight font can rank hierarchically higher than a bold font if the lighter weight type size is significantly larger than the bold.
+Font weight is an important typographic variable that can add emphasis and differentiate content hierarchy. Font weight and size pairings must be carefully balanced. A bold weight will always have more emphasis than a lighter weight font of the same size. However, a lighter weight font can rank hierarchically higher than a bold font if the lighter weight type size is significantly larger than the bold one.
  
-We suggest to use IBM Plex Light, Regular, and SemiBold for digital experiences. The semibold weight is ideal for section headers, but should not be used for long text..
+We suggest using IBM Plex Light, Regular, and SemiBold for digital experiences. The semibold weight is ideal for section headers, but should not be used for long text.
 
 <type-weight></type-weight>
 
 
 ### Italic
-Each weight has an Italic style, which should only be used when you need to emphasize certain words in a sentence (titles of works, technical terms, names of devices, captions).
+Each weight has an italic style, which should only be used when you need to emphasize certain words in a sentence (titles of works, technical terms, names of devices, captions, etc.).
 
 <type-weight type="italic"></type-weight>
 
 
 ## Type Color
-Careful consideration of color maintains quality and recognition for users. Legibility and accessibility are two keys. Keep colored type neutral when in paragraphs. Use primary blue for primary actions. 
+Type color should be carefully considered. Legibility and accessibility are two keys. Keep type color neutral in running text. Use primary blue for primary actions. 
 
