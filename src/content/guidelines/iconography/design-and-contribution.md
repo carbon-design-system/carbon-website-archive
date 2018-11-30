@@ -14,15 +14,11 @@ tabs: ['Library', 'Usage', 'Design and Contribution']
 
 Don't see the icon you need in the library? Make your own! Follow these guidelines to ensure visual consistency and proper formatting.
 
-* All icons should be unique and not redundant with any existing icons in the system. Search the [library](/library) for the keyword(s) associated with your proposed new icon to ensure that it is not already represented.
-
-* All icons should adhere to the [IBM Design Language visual style](https://w3.ibm.com/design/language/elements/icons/).
-
-* All icons should comply with IBM [accessibility standards](/guidelines/accessibility/overview).
-
-* All icons should be usable across all supported platforms and devices.
-
-* All icons should be understandable by a global audience of users, regardless of nationality or language.
+- All icons should be unique and not redundant with any existing icons in the system. Search the [library](/library) for the keyword(s) associated with your proposed new icon to ensure that it is not already represented.
+- All icons should adhere to the [IBM Design Language visual style](https://w3.ibm.com/design/language/elements/icons/).
+- All icons should comply with IBM [accessibility standards](/guidelines/accessibility/overview).
+- All icons should be usable across all supported platforms and devices.
+- All icons should be understandable by a global audience of users, regardless of nationality or language.
 
 ## Producing an Icon
 
@@ -58,7 +54,6 @@ To be considered production-ready, all icon submissions must be delivered in SVG
 9. Click `Export 'Artboard-Name'`.
 10. Name icon with the `#name--modifier` convention. (ex. copy.svg, copy--glyph.svg, add.svg, add--glyph.svg).
 
-<!-- <div data-insert-component="Video" data-props="icon-sketch.mp4"></div> -->
 
 ### Export SVGs from Adobe Illustrator
 

@@ -150,17 +150,21 @@ export default class IconLibraryExperimental extends React.Component {
 
     if (filteredIcons.length === 0) {
       return (
-        <div className="page iconography--experimental">
-          {search}
-          <IconEmptyState />
+        <div className="page iconography--experimental bx--row">
+          <div class="bx--col-lg-12 bx--offset-lg-4">
+            {search}
+            <IconEmptyState />
+          </div>
         </div>
       );
     }
 
     return (
-      <div className="page iconography--experimental">
-        {search}
-        {sections}
+      <div className="page iconography--experimental bx--row">
+        <div class="bx--col-lg-12 bx--offset-lg-4">
+          {search}
+          {sections}
+        </div>
       </div>
     );
   }
