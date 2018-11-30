@@ -241,6 +241,9 @@
       "overflow-menu": {
         "title": "Overflow Menu"
       },
+      "progress-indicator": {
+        "title": "Progress Indicator"
+      },
       "radio-button": {
         "title": "Radio Button"
       },
