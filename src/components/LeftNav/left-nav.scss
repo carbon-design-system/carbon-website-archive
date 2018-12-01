@@ -1,3 +1,22 @@
+.bx--side-nav {
+
+    @include breakpoint('sm') {
+        display: none;
+    }
+  
+    @include breakpoint('md') {
+        display: none;
+    }
+
+    @include breakpoint('lg') {
+        display: block;
+    }
+
+   
+}
+
+
+// Bottom links
 .bx--side-nav__item {
     &:nth-last-child(2) {
         margin-top: $spacing-lg;
@@ -40,10 +59,6 @@
 /* temp styles until shell is updated */
 
 .bx--side-nav__footer {
-    display: none;
-}
-
-.bx--header__menu-trigger {
     display: none;
 }
 

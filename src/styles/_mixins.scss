@@ -3,34 +3,6 @@
 //--------------------
 
 //--------------------
-// BREAKPOINTS
-//
-// Usage:
-//
-// @include breakpoint('bp--xs--major') {
-//    // your content here
-// }
-//--------------------
-
-$breakpoints: (
-  bp--xs--major: 600px,
-  bp--sm--major: 840px,
-  bp--md--major: 1024px,
-);
-
-@mixin breakpoint($size) {
-  @if map-has-key($breakpoints, $size) {
-    @media screen and (min-width: map-get($breakpoints, $size)) {
-      @content;
-    }
-  } @else {
-    @media (min-width: $size) {
-      @content;
-    }
-  }
-}
-
-//--------------------
 // GRID MARGINS
 //
 // Usage:
