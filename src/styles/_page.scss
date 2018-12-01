@@ -34,6 +34,12 @@ body {
   z-index: 9999;
 }
 
+.bx--header__menu-trigger {
+  @include breakpoint('lg') {
+    display: none;
+  }
+}
+
 //---------------------------------------
 // Page styles
 //---------------------------------------
