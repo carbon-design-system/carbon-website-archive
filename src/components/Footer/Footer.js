@@ -107,11 +107,7 @@ class Footer extends Component {
                 </li>
               </ul>
             </nav>
-<<<<<<< HEAD
-            <div className="page-footer__content bx--col-lg-5 ibm--offset-lg-3">
-=======
             <div className="page-footer__content ibm--col-lg-5 ibm--offset-lg-3">
->>>>>>> v10
               <p className="page-footer__text">
                 Have questions?
                 <CopyToClipboard
@@ -171,11 +167,7 @@ class Footer extends Component {
           </div>
           </div>
           {/*<div className="ibm--row">
-<<<<<<< HEAD
-            <div class="ibm--col-lg-12 ibm--offset-lg-4">
-=======
             <div className="ibm--col-lg-12 ibm--offset-lg-4">
->>>>>>> v10
               IBM
             </div>
           </div>*/

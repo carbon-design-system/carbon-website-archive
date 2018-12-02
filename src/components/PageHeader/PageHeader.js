@@ -16,13 +16,8 @@ const PageHeader = ({
   return (
     <div className="page-header">
       <div className="ibm--grid">
-<<<<<<< HEAD
-        <div class="ibm--row">
-          <div class="ibm--col-lg-12 ibm--offset-lg-4">
-=======
         <div className="ibm--row">
           <div className="ibm--col-lg-12 ibm--offset-lg-4">
->>>>>>> v10
             {labelContent}
             <h1 id="page-title" className="page-header__title">
               {title}
