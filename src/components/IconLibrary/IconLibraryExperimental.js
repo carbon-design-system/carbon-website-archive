@@ -129,8 +129,8 @@ export default class IconLibraryExperimental extends React.Component {
     if (errorLoadingIcons) {
       console.error(errorLoadingIcons);
       return (
-        <div className="page iconography--experimental bx--row">
-          <div class="bx--col-lg-12 bx--offset-lg-4">
+        <div className="page iconography--experimental ibm--row">
+          <div className="ibm--col-lg-12 ibm--offset-lg-4">
             <h3>Yikes! Looks like something went wrong.</h3>
             <p>
               We're still working out some problems in our experimental website.
@@ -150,8 +150,8 @@ export default class IconLibraryExperimental extends React.Component {
 
     if (filteredIcons.length === 0) {
       return (
-        <div className="page iconography--experimental bx--row">
-          <div class="bx--col-lg-12 bx--offset-lg-4">
+        <div className="page iconography--experimental ibm--row">
+          <div className="ibm--col-lg-12 ibm--offset-lg-4">
             {search}
             <IconEmptyState />
           </div>
@@ -160,8 +160,8 @@ export default class IconLibraryExperimental extends React.Component {
     }
 
     return (
-      <div className="page iconography--experimental bx--row">
-        <div class="bx--col-lg-12 bx--offset-lg-4">
+      <div className="page iconography--experimental ibm--row">
+        <div className="ibm--col-lg-12 ibm--offset-lg-4">
           {search}
           {sections}
         </div>

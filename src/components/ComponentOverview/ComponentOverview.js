@@ -36,8 +36,8 @@ class ComponentOverview extends React.Component {
   render() {
     const componentList = require('../../data/components.json'); // eslint-disable-line
     return (
-      <div className="component-variation bx--row">
-        <div class="bx--col-lg-12 bx--offset-lg-4">
+      <div className="component-variation ibm--row">
+        <div className="ibm--col-lg-12 ibm--offset-lg-4">
           <ul className="flex-container">
             {Object.keys(componentList.items).map(item => {
               return this.renderItems(componentList.items[item]);

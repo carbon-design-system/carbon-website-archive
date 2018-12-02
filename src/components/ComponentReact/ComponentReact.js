@@ -79,8 +79,8 @@ class ComponentReactExample extends Component {
     const { name, component, variation } = this.props;
     const componentLink = `http://react.carbondesignsystem.com/?selectedKind=${component}&selectedStory=${variation}`;
     return (
-      <div className="component-variation bx--row">
-        <div class="bx--col-lg-12 bx--offset-lg-4">
+      <div className="component-variation ibm--row">
+        <div className="ibm--col-lg-12 ibm--offset-lg-4">
           <h2 className="component-variation__name">{name}</h2>
           <p>
             This component is currently only available in{' '}

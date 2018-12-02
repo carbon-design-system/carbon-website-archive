@@ -6,13 +6,15 @@ $feature-flags: (
   components-x: true,
   ui-shell: true,
 );
-//@import '@carbon/layout/scss/layout.scss';
-@import '@carbon/grid/scss/grid.scss';
+@import '@carbon/layout/scss/layout.scss'; 
+.container { //need this to avoid conflicts with old grid code 
+  $prefix: 'ibm';
+  $imported-modules-local: ();
+  @import '@carbon/grid/scss/grid.scss';
+}
 //@import '@carbon/type/scss/type.scss';
-
-// There are temp files copied from carbon-elements
+// There are temp files copied from carbon-elements -- need to refactor code to use new tokens before we can swap to latest
 @import 'carbon/type/scss/type.scss';
-
 @import 'carbon-components/scss/globals/scss/styles.scss';
 
 
