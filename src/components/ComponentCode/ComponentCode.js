@@ -41,8 +41,8 @@ export default class ComponentCode extends React.Component {
     }
 
     return (
-      <div className="component-variation bx--row">
-        <div class="bx--col-lg-12 bx--offset-lg-4">
+      <div className="component-variation ibm--row">
+        <div className="ibm--col-lg-12 ibm--offset-lg-4">
           <h2 className="page-h2">{name}</h2>
           <ComponentExample
             codepenSlug={codepen}
