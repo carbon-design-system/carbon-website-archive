@@ -125,7 +125,7 @@ class ComponentStatus extends React.Component {
     const componentStatus = require('../../data/components.json'); // eslint-disable-line
     const content = (
       <div className="ibm--row component-status-page">
-        <div class="ibm--col-lg-12 ibm--offset-lg-4">
+        <div className="ibm--col-lg-12 ibm--offset-lg-4">
           <p className="page-intro">{currentVersion}</p>
           <div className="component-status">
             <ul className="component-status__icon-list">

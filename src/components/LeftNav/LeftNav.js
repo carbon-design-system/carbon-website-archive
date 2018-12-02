@@ -2,16 +2,14 @@ import React from 'react';
 import { Location } from '@reach/router';
 import classnames from 'classnames';
 import { Link } from 'gatsby';
-import { Button, Icon } from 'carbon-components-react';
 
-import GlobalSearch from '../GlobalSearch/GlobalSearch';
 import LeftNavItem from './LeftNavItem';
 import navigation from '../../data/navigation/navigation.json';
 
 import { 
   SideNav,
   SideNavItems,
-  SideNavLink,xs
+  SideNavLink,
 } from 'carbon-components-react/lib/components/UIShell';
 import { Awake16 } from '@carbon/icons-react';
 
@@ -42,7 +40,6 @@ export default class LeftNav extends React.Component {
     const { isOpen, isFinal } = this.props;
 
     const classNames = classnames({
-      'side-nav': true,
       'side-nav__closed': !isOpen,
       'side-nav__closed--final': isFinal && !isOpen,
     });
@@ -59,19 +56,19 @@ export default class LeftNav extends React.Component {
           const navItems = this.renderNavItems(navigation, location);
           return (
             <>
-              <SideNav aria-label="Side navigation">
-                <SideNavItems>
-                  {navItems}
-                  <SideNavLink icon={<Awake16 />} href="https://github.com/ibm/carbon-design-kit" className="side-nav__website-link">Design Kit</SideNavLink>
-                  <SideNavLink icon={<Awake16 />} href="javascript:void(0)" to="/resources#github" className="side-nav__website-link" element={Link}>Github Repos</SideNavLink>
-                </SideNavItems>
-              </SideNav>
               <div
                 className={classNamesClickToClose}
                 onClick={() => {
                   this.props.clickToClose();
                 }}
               />
+              <SideNav aria-label="Side navigation" className={classNames}>
+                <SideNavItems>
+                  {navItems}
+                  <SideNavLink icon={<Awake16 />} href="https://github.com/ibm/carbon-design-kit" className="side-nav__website-link">Design Kit</SideNavLink>
+                  <SideNavLink icon={<Awake16 />} href="javascript:void(0)" to="/resources#github" className="side-nav__website-link" element={Link}>Github Repos</SideNavLink>
+                </SideNavItems>
+              </SideNav>
             </>
           );
         }}

@@ -14,8 +14,13 @@ export default class ComponentDocs extends React.Component {
     componentDocUrl = require(`carbon-components/src/components/${component}/README.md`);
 
     return (
+<<<<<<< HEAD
       <div className="page_md component-docs bx--row">
         <div class="ibm--col-lg-12 ibm--offset-lg-4">
+=======
+      <div className="page_md component-docs ibm--row">
+        <div className="ibm--col-lg-12 ibm--offset-lg-4">
+>>>>>>> v10
           <h2 className="page-h2">Documentation</h2>
           <div
             dangerouslySetInnerHTML={{

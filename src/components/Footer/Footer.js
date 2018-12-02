@@ -42,7 +42,7 @@ class Footer extends Component {
       <footer className="page-footer">
         <div className="ibm--grid">
           <div className="ibm--row">
-            <nav className="page-footer__nav bx--col-lg-2 ibm--offset-lg-4">
+            <nav className="page-footer__nav ibm--col-lg-2 ibm--offset-lg-4">
               <ul>
                 <li>
                   <Link to="/contributing/designers" className="page-footer__link">Contribute</Link>
@@ -73,7 +73,7 @@ class Footer extends Component {
                 </li>
               </ul>
             </nav>
-            <nav className="page-footer__nav bx--col-lg-2">
+            <nav className="page-footer__nav ibm--col-lg-2">
               <ul>
                 <li>
                   <a
@@ -107,7 +107,11 @@ class Footer extends Component {
                 </li>
               </ul>
             </nav>
+<<<<<<< HEAD
             <div className="page-footer__content bx--col-lg-5 ibm--offset-lg-3">
+=======
+            <div className="page-footer__content ibm--col-lg-5 ibm--offset-lg-3">
+>>>>>>> v10
               <p className="page-footer__text">
                 Have questions?
                 <CopyToClipboard
@@ -167,7 +171,11 @@ class Footer extends Component {
           </div>
           </div>
           {/*<div className="ibm--row">
+<<<<<<< HEAD
             <div class="ibm--col-lg-12 ibm--offset-lg-4">
+=======
+            <div className="ibm--col-lg-12 ibm--offset-lg-4">
+>>>>>>> v10
               IBM
             </div>
           </div>*/

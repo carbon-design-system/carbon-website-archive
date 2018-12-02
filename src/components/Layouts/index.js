@@ -66,7 +66,7 @@ class Layout extends React.Component {
     ) {
       isTarget = true;
     }
-    const isSmallerScreen = window.innerWidth < 1024 || screen.width < 1024;
+    const isSmallerScreen = window.innerWidth < 1056 || screen.width < 1056;
     if (!isTarget && isSmallerScreen) {
       this.setState({
         isOpen: false,
@@ -84,7 +84,7 @@ class Layout extends React.Component {
     if (typeof window !== 'undefined') {
       const width = window.innerWidth;
 
-      if (width < 1024) {
+      if (width < 1056) {
         this.setState({
           isOpen: false,
         });
@@ -104,9 +104,6 @@ class Layout extends React.Component {
     const { GATSBY_CARBON_ENV } = process.env;
     const isInternal = GATSBY_CARBON_ENV == 'internal';
     const { children } = this.props;
-    const classNames = classnames('container', {
-      'container--expanded': !this.state.isOpen,
-    });
 
     return (
       <StaticQuery
@@ -149,7 +146,7 @@ class Layout extends React.Component {
               <SkipToContent />
               <HeaderMenuButton
                 aria-label="Open menu"
-                onClick={console.log('')}
+                onClick={(this.onToggleBtnClick)}
               />
               {isInternal ? (
                 <HeaderName prefix="IBM" to="/" element={Link}>
@@ -172,10 +169,15 @@ class Layout extends React.Component {
               </HeaderGlobalBar>
               
             </Header>
-           <LeftNav />
+           <LeftNav
+              isFinal={this.state.isFinal}
+              isOpen={this.state.isOpen}
+              location={this.props.location}
+              clickToClose={this.clickToClose}
+            />
 
             
-            <div className={classNames}>
+            <div className="container">
               {children}
               <Footer />
             </div>
