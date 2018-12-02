@@ -28,6 +28,7 @@ import MotionExample from '../components/MotionExample';
 import LayerTypes from '../components/LayerTypes';
 import LayerUsage from '../components/LayerUsage';
 import ComponentOverview from '../components/ComponentOverview';
+import Homepage from '../components/Homepage';
 
 // Custom Markdown
 import {
@@ -76,6 +77,7 @@ const renderAst = new rehypeReact({
     'layer-types': LayerTypes,
     'layer-usage': LayerUsage,
     'component-overview': ComponentOverview,
+    'homepage': Homepage,
   },
 }).Compiler;
 
@@ -88,6 +90,7 @@ export default ({ data, pageContent }) => {
 
   const { GATSBY_CARBON_ENV } = process.env;
   const isInternal = GATSBY_CARBON_ENV !== 'internal' && internal == true;
+  const homepage = post.frontmatter.title === 'Homepage' == true;
 
   const classNames = classnames({
     'container--component': post.frontmatter.label === 'Components',
@@ -99,7 +102,18 @@ export default ({ data, pageContent }) => {
         <FourOhFour />
       </Layout>
     );
-  } else {
+  } else if (homepage) {
+    return (
+      <Layout>
+        <div className="container--homepage">
+          <div className="page-content ibm--grid">
+            {renderAst(post.htmlAst)}
+          </div>
+        </div>
+      </Layout>
+    )
+  }
+  else {
     return (
       <Layout>
         <div className={classNames}>
