@@ -96,7 +96,7 @@ module.exports = {
               // Customise the embedding iframe given the generated url
               // default:
               getIframe: url =>
-                `<iframe src="${url}" className="embedded-codesandbox" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>`,
+                `<iframe src="${url}" class="embedded-codesandbox" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>`,
             },
           },
         ],
