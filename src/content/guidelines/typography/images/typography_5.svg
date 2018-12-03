@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="71px" height="19px" viewBox="0 0 71 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Type-Specs_Overview" transform="translate(-442.000000, -5754.000000)">
+            <g id="Group-8" transform="translate(334.000000, 4875.000000)">
+                <g id="Interactive-text---Do" transform="translate(0.000000, 744.000000)">
+                    <g id="Group-10" transform="translate(106.000000, 129.000000)">
+                        <text id="Link" font-family="IBMPlexSans, IBM Plex Sans" font-size="24" font-weight="normal" line-spacing="30" fill="#0B6BFE">
+                            <tspan x="0" y="25">Link</tspan>
+                        </text>
+                        <g id="arrow-right" transform="translate(53.000000, 3.000000)">
+                            <g id="artwork" transform="translate(1.500000, 4.000000)" fill="#0064FF" fill-rule="nonzero">
+                                <polygon id="Shape" points="9.5325 0 8.4675 1.065 15.4425 8.0325 0 8.0325 0 9.5325 15.4425 9.5325 8.4675 16.5 9.5325 17.565 18.3075 8.7825"></polygon>
+                            </g>
+                            <g id="transparent_box">
+                                <rect id="Rectangle-path" x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
