@@ -59,7 +59,22 @@ Each weight has an italic style, which should only be used when you need to emph
 
 <type-weight type="italic"></type-weight>
 
-
 ## Type Color
 Type color should be carefully considered. Legibility and accessibility are two keys. Keep type color neutral in running text. Use primary blue for primary actions. 
 
+<do-dont-group>
+    <do-dont-example correct=true text="Neutral color for text"></do-dont-example>
+    <do-dont-example text="I'm a magenta sentence for no reason"></do-dont-example>
+</do-dont-group>
+<do-dont-group>
+    <do-dont-example correct=true text="Neutral color for text" dark="true"></do-dont-example>
+    <do-dont-example text="I'm a magenta sentence for no reason" dark="true"></do-dont-example>
+</do-dont-group>
+<do-dont-group>
+    <do-dont-example correct=true" label="Core blue colors are used for text links and primary actions"></do-dont-example>
+    <do-dont-example correct=true" label="Secondary actions use Gray 100 and icons"></do-dont-example>
+</do-dont-group>
+<do-dont-group>
+    <do-dont-example correct=true label="Other use cases for colored type are code snippets, warnings, alerts, etc."></do-dont-example>
+    <do-dont-example correct"true"></do-dont-example>
+</do-dont-group>
