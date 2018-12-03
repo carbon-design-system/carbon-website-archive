@@ -172,7 +172,8 @@ The carbon website has a handful of custom markdown components available for use
 - `<icon name="icon--checkmark--solid" color="green" />`
 - `<flex-group>`
 - `<clickable-tile title="Title" author="John Smith" date="Janury 1, 2018" href="#"><img src="image.png" alt="Alt Text" type="article|resource" /></clickable-tile>`
-- `<example correct=true title="Ability" text='Example text or quote'></example>`
+- `<do-dont-group>`
+- `<do-dont-example correct=true title="Ability" description="Lorem ipsum dolor sit amet" text='Example text or quote'></do-dont-example>`
 - `<color-block showhex="true" size="xs">#ffaaaa</color-block>`
   - `size` takes values of `xs`, `s`, `m`, `l` (12px, 24px, 40px, 80px respectively)
   - `size` also accepts a number (e.g. `size="200"`, which would render a square that is 200px x 200px)
@@ -210,32 +211,37 @@ This will render the following group of clickable tiles
 
 ![Tile Group](https://user-images.githubusercontent.com/2753488/43804229-e8d26a22-9a60-11e8-9aa9-e4f9b9759757.png)
 
-#### Example inside FlexGroup (with and without images)
+#### Example of the Do/Don't components:
+
+##### With text examples:
 
 ```
-<flex-group>
-    <example correct=true title="Ability" text='"You can use the command line interface to update your app."'></example>
-    <example title='Ability' text='"You may use the command line interface to update your app."'></example>
-</flex-group>
-<flex-group>
-    <example correct=true title="Possibility" text='"You might need more advanced features when you are integrating with another app."'></example>
-    <example title='Possibility' text='"You may need more advanced features when you are integrating with another app."'></example>
-</flex-group>
+<do-dont-group>
+    <do-dont-example correct=true title="Active Voice" text='"In the Limits window, specify the minimum and maximum values."'></do-dont-example>
+    <do-dont-example title='Passive Voice' text='"The Limits window is used to specify the minimum and maximum values."'></do-dont-example>
+</do-dont-group>
 ```
 
-This will render the following set of examples
-![Examples](https://user-images.githubusercontent.com/2753488/43850488-aba55aea-9afd-11e8-921d-418f65cf2460.png)
+This will render the following set of examples:
+![Example of the Do/Don't component with text examples](https://user-images.githubusercontent.com/2753488/43850488-aba55aea-9afd-11e8-921d-418f65cf2460.png)
+
+---
+
+##### With image examples:
 
 ```
-<flex-group>
-    <example correct="true" title="Test One">
-        <img src="images/content-general-1.png" alt="test2"/>
-    </example>
-    <example title="Test Two">
-        <img src="images/content-general-2.png" alt="test2"/>
-    </example>
-</flex-group>
+<do-dont-group>
+    <do-dont-example correct="true" title='Image Test'>
+        <img src='images/img-test.png' />
+    </do-dont-example>
+    <do-dont-example title='Image Test' >
+        <img src='images/img-test.png' />
+    </do-dont-example>
+</do-dont-group>
 ```
+
+This will render the following set of examples:
+![Example of the Do/Don't component with image examples](https://user-images.githubusercontent.com/2753488/43850488-aba55aea-9afd-11e8-921d-418f65cf2460.png)
 
 ### Page Specific Components:
 

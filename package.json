@@ -29,7 +29,7 @@
   "dependencies": {
     "@carbon/colors": "^0.0.1-alpha.12",
     "@carbon/grid": "^0.0.1-alpha.12",
-    "@carbon/icons-react": "^0.0.1-alpha.12",
+    "@carbon/icons-react": "^0.0.1-alpha.20",
     "@carbon/import-once": "^0.0.1-alpha.12",
     "@carbon/layout": "^0.0.1-alpha.12",
     "@carbon/type": "^0.0.1-alpha.12",
