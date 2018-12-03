@@ -90,7 +90,7 @@ Type color should be carefully considered. Legibility and accessibility are two 
     <do-dont-example correct=true label="Other use cases for colored type are code snippets, warnings, alerts, etc.">
         <img src="images/typography_7.svg" alt="Oops something went wrong! colored text">
     </do-dont-example>
-    <do-dont-example correct"true">
+    <do-dont-example correct=true>
         <img src="images/typography_8.svg" alt="Code sinppet with colored highlight type">
     </do-dont-example>
 </do-dont-group>
