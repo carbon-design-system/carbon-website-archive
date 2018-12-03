@@ -7,7 +7,7 @@ export default class DoDontExample extends React.Component {
   static propTypes = {
     children: PropTypes.node,
     /** title for the caption (optional) */
-    title: PropTypes.string,
+    label: PropTypes.string,
     /** description for the card caption (optional) */
     description: PropTypes.string,
     /** text displayed in the example card */
@@ -16,13 +16,15 @@ export default class DoDontExample extends React.Component {
     imgpath: PropTypes.string,
     /** mark card as true? if not defined, card will be marked as false */
     correct: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+    /** default to false, set to true for dark background */
+    dark: PropTypes.string,
   };
 
-  renderCaption = (title, description) => {
-    if (title || description) {
+  renderCaption = (label, description) => {
+    if (label || description) {
       return (
         <div className="example__caption">
-          {title && <h6 className="example__title">{title}</h6>}
+          {label && <p className="example__title">{label}</p>}
           {description && <p className="example__description">{description}</p>}
         </div>
       );
@@ -30,12 +32,13 @@ export default class DoDontExample extends React.Component {
   };
 
   render() {
-    const { children, title, description, text, imgpath, correct } = this.props;
+    const { children, label, description, text, correct, dark } = this.props;
 
     const wrapperClassNames = classnames({
       example: true,
       'example--correct': correct,
       'example--incorrect': !correct,
+      'example--dark': dark,
     });
 
     const icon = correct ? 'icon--checkmark' : 'icon--close';
@@ -48,17 +51,19 @@ export default class DoDontExample extends React.Component {
     return (
       <div className={wrapperClassNames}>
         <div className="example-card">
-          {correct ? (
-            <CheckmarkFilled24 className={iconClassNames} />
-          ) : (
-            <ErrorFilled24 className={iconClassNames} />
-          )}
-          <div className="example__content">
-            {children}
-            {text ? <p className="example__text">{text}</p> : null}
+          <div className="example-card__content">
+            {correct ? (
+              <CheckmarkFilled24 className={iconClassNames} />
+            ) : (
+              <ErrorFilled24 className={iconClassNames} />
+            )}
+            <div className="example__content">
+              {children}
+              {text ? <p className="example__text">{text}</p> : null}
+            </div>
           </div>
         </div>
-        {this.renderCaption(title, description)}
+        {this.renderCaption(label, description)}
       </div>
     );
   }

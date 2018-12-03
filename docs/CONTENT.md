@@ -171,9 +171,9 @@ The carbon website has a handful of custom markdown components available for use
 - `<page-intro> **Bold and blue text** </page-intro>`
 - `<icon name="icon--checkmark--solid" color="green" />`
 - `<flex-group>`
-- `<clickable-tile title="Title" author="John Smith" date="Janury 1, 2018" href="#"><img src="image.png" alt="Alt Text" type="article|resource" /></clickable-tile>`
+- `<clickable-tile label="Title" author="John Smith" date="Janury 1, 2018" href="#"><img src="image.png" alt="Alt Text" type="article|resource" /></clickable-tile>`
 - `<do-dont-group>`
-- `<do-dont-example correct=true title="Ability" description="Lorem ipsum dolor sit amet" text='Example text or quote'></do-dont-example>`
+- `<do-dont-example correct=true label="Ability" description="Lorem ipsum dolor sit amet" text='Example text or quote'></do-dont-example>`
 - `<color-block showhex="true" size="xs">#ffaaaa</color-block>`
   - `size` takes values of `xs`, `s`, `m`, `l` (12px, 24px, 40px, 80px respectively)
   - `size` also accepts a number (e.g. `size="200"`, which would render a square that is 200px x 200px)
@@ -217,8 +217,8 @@ This will render the following group of clickable tiles
 
 ```
 <do-dont-group>
-    <do-dont-example correct=true title="Active Voice" text='"In the Limits window, specify the minimum and maximum values."'></do-dont-example>
-    <do-dont-example title='Passive Voice' text='"The Limits window is used to specify the minimum and maximum values."'></do-dont-example>
+    <do-dont-example correct=true label="Active Voice" text='"In the Limits window, specify the minimum and maximum values."'></do-dont-example>
+    <do-dont-example label='Passive Voice' text='"The Limits window is used to specify the minimum and maximum values."'></do-dont-example>
 </do-dont-group>
 ```
 
@@ -231,10 +231,10 @@ This will render the following set of examples:
 
 ```
 <do-dont-group>
-    <do-dont-example correct="true" title='Image Test'>
+    <do-dont-example correct="true" label='Image Test'>
         <img src='images/img-test.png' />
     </do-dont-example>
-    <do-dont-example title='Image Test' >
+    <do-dont-example label='Image Test' >
         <img src='images/img-test.png' />
     </do-dont-example>
 </do-dont-group>
