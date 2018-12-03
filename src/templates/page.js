@@ -17,8 +17,7 @@ import ColorCard from '../components/ColorCard';
 import IconLibrary from '../components/IconLibrary';
 import IconLibraryExperimental from '../components/IconLibrary/IconLibraryExperimental';
 import TypeScaleTable from '../components/TypeScaleTable';
-import TypeStylesTable from '../components/TypeStylesTable';
-import TypeWeightTable from '../components/TypeWeightTable';
+import TypeWeight from '../components/TypeWeight';
 import ComponentCode from '../components/ComponentCode';
 import ComponentDocs from '../components/ComponentDocs';
 import ComponentStatus from '../components/ComponentStatus';
@@ -28,6 +27,7 @@ import MotionExample from '../components/MotionExample';
 import LayerTypes from '../components/LayerTypes';
 import LayerUsage from '../components/LayerUsage';
 import ComponentOverview from '../components/ComponentOverview';
+import Homepage from '../components/Homepage';
 
 // Custom Markdown
 import {
@@ -67,8 +67,7 @@ const renderAst = new rehypeReact({
     'icon-library': IconLibrary,
     'icon-library-experimental': IconLibraryExperimental,
     'type-scale-table': TypeScaleTable,
-    'type-weight-table': TypeWeightTable,
-    'type-styles-table': TypeStylesTable,
+    'type-weight': TypeWeight,
     component: ComponentCode,
     'component-react': ComponentReact,
     'component-docs': ComponentDocs,
@@ -78,6 +77,7 @@ const renderAst = new rehypeReact({
     'layer-types': LayerTypes,
     'layer-usage': LayerUsage,
     'component-overview': ComponentOverview,
+    'homepage': Homepage,
   },
 }).Compiler;
 
@@ -90,6 +90,7 @@ export default ({ data, pageContent }) => {
 
   const { GATSBY_CARBON_ENV } = process.env;
   const isInternal = GATSBY_CARBON_ENV !== 'internal' && internal == true;
+  const homepage = post.frontmatter.title === 'Homepage' == true;
 
   const classNames = classnames({
     'container--component': post.frontmatter.label === 'Components',
@@ -101,7 +102,18 @@ export default ({ data, pageContent }) => {
         <FourOhFour />
       </Layout>
     );
-  } else {
+  } else if (homepage) {
+    return (
+      <Layout>
+        <div className="container--homepage">
+          <div className="page-content ibm--grid">
+            {renderAst(post.htmlAst)}
+          </div>
+        </div>
+      </Layout>
+    )
+  }
+  else {
     return (
       <Layout>
         <div className={classNames}>
@@ -113,7 +125,7 @@ export default ({ data, pageContent }) => {
               <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
             )}
           </PageHeader>
-          <div className="page-content bx--grid">
+          <div className="page-content ibm--grid">
             {renderAst(post.htmlAst)}
           </div>
         </div>

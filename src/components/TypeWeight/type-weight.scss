@@ -1,0 +1,35 @@
+.type-weight {
+  background: $color__white;
+  padding: $spacing-md;
+
+  p {
+    font-size: rem(48px);
+    padding: 0;
+    line-height: 1.25;
+    color: $ibm-colors__gray--80;
+  }
+  
+  .ibm-type-italic {
+    font-style: italic;
+  }
+
+  .ibm-type-semibold {
+    font-weight: 600;
+  }
+
+  .ibm-type-regular {
+    font-weight: 400;
+  }
+
+  .ibm-type-light {
+    font-weight: 300;
+  }
+
+  .ibm-type-serif {
+    font-family: 'IBM Plex Serif', serif;
+  }
+
+  .ibm-type-mono {
+    font-family: 'ibm-plex-mono', 'Menlo', 'DejaVu Sans Mono','Bitstream Vera Sans Mono', Courier;
+  }
+}

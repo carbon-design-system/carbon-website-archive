@@ -23,7 +23,7 @@ body {
   background: $ibm-colors__white;
 }
 
-.bx--grid {
+.container .ibm--grid {
   margin: 0;
 }
 
@@ -32,6 +32,12 @@ body {
 //---------------------------------------
 .bx--header {
   z-index: 9999;
+}
+
+.bx--header__menu-trigger {
+  @include breakpoint('lg') {
+    display: none;
+  }
 }
 
 //---------------------------------------

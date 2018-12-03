@@ -90,7 +90,7 @@
 .component-example .carbon-demo-experimental .demo--inline-notification {
   display: inline-flex;
 }
- 
+
 //---------------------------------------
 // Experimental Date Picker
 //---------------------------------------
@@ -122,3 +122,11 @@
   position: absolute;
 }
 
+//---------------------------------------
+// Experimental Tabs
+//---------------------------------------
+.component-example .carbon-demo-experimental .demo--tabs__nav-item {
+  @include breakpoint('768px') {
+    padding-right: rem(1px);
+  }
+}
