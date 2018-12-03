@@ -101,9 +101,6 @@ p.example__description {
 }
 
 @media screen and (min-width: 900px) {
-  .do-dont-group {
-    max-width: 75%;
-  }
   .example {
     flex: 1;
   }
@@ -117,5 +114,11 @@ p.example__description {
   .example:first-child:last-child {
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1580px) {
+  .do-dont-group {
+    max-width: 75%;
   }
 }
