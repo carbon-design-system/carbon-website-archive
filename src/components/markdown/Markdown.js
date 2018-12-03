@@ -72,6 +72,18 @@ export class h3 extends React.Component {
   }
 }
 
+export class DoDontGroup extends React.Component {
+  render() {
+    return (
+      <div class="bx--row">
+        <div class="bx--col-lg-7 bx--offset-lg-4">
+          <div className="do-dont-group">{this.props.children}</div>
+        </div>
+      </div>
+    );
+  }
+}
+
 export class h4 extends React.Component {
   render() {
     return (

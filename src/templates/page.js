@@ -11,7 +11,7 @@ import PageTabs from '../components/PageTabs';
 import Snippet from '../components/CodeSnippet';
 import PageTable from '../components/PageTable';
 import ClickTile from '../components/ClickableTile';
-import Example from '../components/Example';
+import DoDontExample from '../components/DoDontExample';
 import ColorBlock from '../components/ColorBlock';
 import ColorCard from '../components/ColorCard';
 import IconLibrary from '../components/IconLibrary';
@@ -42,6 +42,7 @@ import {
   PageIntro,
   PageIcon,
   FlexGroup,
+  DoDontGroup,
 } from '../components/markdown/Markdown';
 
 const renderAst = new rehypeReact({
@@ -60,8 +61,9 @@ const renderAst = new rehypeReact({
     'page-intro': PageIntro,
     icon: PageIcon,
     'flex-group': FlexGroup,
+    'do-dont-group': DoDontGroup,
     'clickable-tile': ClickTile,
-    example: Example,
+    'do-dont-example': DoDontExample,
     'color-block': ColorBlock,
     'color-card': ColorCard,
     'icon-library': IconLibrary,
