@@ -241,9 +241,10 @@ This will render the following set of examples
 
 **Type**
 
+- `<type-weight>`
+- `<type-weight type="italic">`
+- `<type-weight type="type">`
 - `<type-scale-table>`
-- `<type-styles-table>`
-- `<type-weight-table>`
 
 **Glossary**
 
