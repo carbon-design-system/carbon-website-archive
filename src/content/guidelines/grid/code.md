@@ -9,9 +9,9 @@ tabs: ['Design', 'Code']
 ## Basic Usage
 
 ```html
-<div class="bx--grid">
-  <div class="bx--row">
-    <div class="bx--col-xs-12 ">
+<div class="ibm--grid">
+  <div class="ibm--row">
+    <div class="ibm--col-xs-12 ">
       <p>Content space for bx--col-xs-12 bx--col-sm-6</p>
     </div>
   </div>
@@ -46,10 +46,10 @@ The `bx--col-{breakpoint}-{columnNumber}` is our mobile-first look at creating l
 So an application layout that had two blocks of content that were each full width at mobile, but then at a medium breakpoint (approximately tablet) became two columns would look like this
 
 ```html
-<div class="bx--grid">
-  <div class="bx--row">
-    <div class="bx--col-xs-12 bx--col-md-6">Some content here</div>
-    <div class="bx--col-xs-12 bx--col-md-6">Some content here</div>
+<div class="ibm--grid">
+  <div class="ibm--row">
+    <div class="ibm--col-xs-12 bx--col-md-6">Some content here</div>
+    <div class="ibm--col-xs-12 bx--col-md-6">Some content here</div>
   </div>
 </div>
 ```
@@ -60,7 +60,7 @@ Instead of requiring a certain number of columns for an element to take up, you 
 
 **Important:** All `bx--col` elements must be the direct child of a `bx--row` element.
 
-#### bx--offset
+#### ibm--offset
 
 Layouts often define spaces that span one or more columns. Those spaces mostly needs to stay aligned with the grid. To achieve this, there are the classes `bx--col-{breakpoint}-{columnNumber}`. They work similarly to the
 `bx--col` classes by defining a left margin of the equivalent size to the styled element.
@@ -68,9 +68,9 @@ Layouts often define spaces that span one or more columns. Those spaces mostly n
 Usage example
 
 ```html
-<div class="bx--grid">
-  <div class="bx--row">
-    <div class="bx--offset-xs-2 bx--col-xs-10">
+<div class="ibm--grid">
+  <div class="ibm--row">
+    <div class="ibm--offset-xs-2 bx--col-xs-10">
       This content starts on the third column
     </div>
   </div>
@@ -80,16 +80,16 @@ Usage example
 This is equivalent to the markup
 
 ```html
-<div class="bx--grid">
-  <div class="bx--row">
-    <div class="bx--col-xs-2">
+<div class="ibm--grid">
+  <div class="ibm--row">
+    <div class="ibm--col-xs-2">
       <!-- Div for spacing only -->
     </div>
-    <div class="bx--col-xs-10">
+    <div class="ibm--col-xs-10">
       This content starts on the third column
     </div>
   </div>
 </div>
 ```
 
-The `bx--offset` functionality must be used together with `bx--col` classes and is subject to the same constraints.
+The `ibm--offset` functionality must be used together with `bx--col` classes and is subject to the same constraints.
