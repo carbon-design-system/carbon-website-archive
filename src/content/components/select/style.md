@@ -91,6 +91,7 @@ The following specs are not built into the Select component but are recommended 
 | `.bx--select-input` | height                      | 24 / 1.5 | -             |
 | `.bx--select-input` | padding-left, padding-right | 8 / 0.5  | $spacing-xs   |
 
+<grid-wrapper>
 <div class="image-grid">
   <div>
     <img src="images/select-style-4.png" alt="Structure and spacing measurements for Small Select"/>
@@ -99,6 +100,7 @@ The following specs are not built into the Select component but are recommended 
     <img src="images/select-style-5.png" alt="Structure and spacing measurements for Small Select"/>
   </div>
 </div>
+</grid-wrapper>
 
 _Structure and spacing measurements for Small Select | px / rem & examples of open and disabled Small Select states_
 

@@ -17,7 +17,7 @@ tabs: ['Code', 'Usage', 'Style']
 | `.bx--btn--danger--primary`</br> `.bx--btn--danger--secondary` | background-color         | $support-01      | #e0182d                |
 | `.bx--btn--danger--primary:hover`                              | background-color         | $hover-danger    | #bd1427                |
 | `.bx--btn--danger--secondary:hover`                            | border                   | $support-01      | #e0182d                |
-
+<grid-wrapper>
 <div class="image-grid">
   <div>
     <img src="images/button-style-1.png" alt="Example of a normal Primary Button"/>
@@ -47,6 +47,7 @@ tabs: ['Code', 'Usage', 'Style']
     <img src="images/button-style-17.png" alt="Example of a disabled Ghost Button"/>
   </div>
 </div>
+</grid-wrapper>
 
 _Primary, Secondary, and Ghost Button state examples_
 
@@ -71,6 +72,7 @@ A Button cannot have any element or text within 16 pixels / 1 rem of its borders
 | `.bx--btn .bx--btn__icon`        | margin-left, margin-right   | 8 / 0.5  | $spacing-xs   |
 | `.bx--btn--ghost .bx--btn__icon` | margin-left, margin-right   | 8 / 0.5  | $spacing-xs   |
 
+<grid-wrapper>
 <div class="image-grid">
   <div>
     <img src="images/button-style-7.png" alt="Structure for a Primary Button"/>
@@ -79,9 +81,11 @@ A Button cannot have any element or text within 16 pixels / 1 rem of its borders
     <img src="images/button-style-8.png" alt="Structure for a small Primary Button"/>
   </div>
 </div>
+</grid-wrapper>
 
 _Structure measurements for small and regular Primary Button | px / rem_
 
+<grid-wrapper>
 <div class="image-grid">
   <div>
     <img src="images/button-style-9.png" alt="Spacing for Primary Button"/>
@@ -102,6 +106,7 @@ _Structure measurements for small and regular Primary Button | px / rem_
     <img src="images/button-style-14.png" alt="Small Ghost button spacing"/>
   </div>
 </div>
+</grid-wrapper>
 
 _Spacing measurements for various Button types | px / rem_
 

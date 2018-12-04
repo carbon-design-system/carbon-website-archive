@@ -14,6 +14,7 @@ tabs: ['Code', 'Usage', 'Style']
 | `.bx--checkbox-label::after`  | $inverse-01 | #ffffff |
 | `.bx--checkbox-label`         | $text-01    | #152935 |
 
+<grid-wrapper>
 <div class="image-grid">
   <div>
     <img src="images/checkbox-style-1.png" alt="Normal checkbox example"/>
@@ -22,6 +23,7 @@ tabs: ['Code', 'Usage', 'Style']
   <img src="images/checkbox-style-2.png" alt="Disabled checkbox example"/>
   </div>
 </div>
+</grid-wrapper>
 
 _Disabled and normal Checkbox states_
 
