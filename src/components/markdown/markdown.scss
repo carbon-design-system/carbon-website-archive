@@ -30,6 +30,7 @@
   color: $text-01;
   margin-top: rem(56px);
   margin-bottom: $spacing-lg;
+  position: relative;
 }
  
 //----------------------------
@@ -42,6 +43,7 @@
   color: $text-01;
   margin-top: rem(24px);
   margin-bottom: $spacing-md;
+  position: relative;
 }
 
 //----------------------------
@@ -54,6 +56,7 @@
   font-weight: font-weight('semibold');
   color: $text-01;
   margin-top: rem(8px);
+  position: relative;
 }
 
 // Targets heading elements when they are the first element on a page to remove top margin
@@ -66,6 +69,15 @@
   .component-docs h2 {
     margin-top: 0;
   }
+}
+
+//----------------------------
+// h5
+//----------------------------
+
+.page-h5,
+.component-docs h5 {
+  position: relative;
 }
 
 //----------------------------
