@@ -1,7 +1,9 @@
 import React from 'react';
+import { Location } from '@reach/router';
 import { Link } from 'gatsby';
 import { Icon } from 'carbon-components-react';
-import { Location } from '@reach/router';
+import { Link20 } from '@carbon/icons-react';
+
 
 export class PageIntro extends React.Component {
   render() {
@@ -52,7 +54,6 @@ export class h1 extends React.Component {
 
 export class h2 extends React.Component {
   render() {
-    
     return (
       <Location>
         {({ location }) => {
@@ -62,7 +63,10 @@ export class h2 extends React.Component {
             <div className="ibm--row">
               <div className="ibm--col-lg-7 ibm--offset-lg-4">
                 <h2 className="page-h2" id={hash}>     
-                  <Link to={`${path}#${hash}`}>{this.props.children}</Link>
+                  <Link className="anchor-link" to={`${path}#${hash}`}>
+                    <Link20 className="anchor-link__icon" aria-label="Anchor Link" />
+                  </Link>
+                  {this.props.children}
                 </h2>
               </div>
             </div>
@@ -72,6 +76,7 @@ export class h2 extends React.Component {
     );
   }
 }
+
 
 export class h3 extends React.Component {
   render() {
