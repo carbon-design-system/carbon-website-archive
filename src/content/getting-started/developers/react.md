@@ -42,7 +42,7 @@ Please refer to the [Contribution Guidelines](https://github.com/carbon-design-s
 
 We recommend the use of [React Storybook](https://github.com/storybooks/react-storybook) for developing components.
 
-1.  Start the server:
+1.  Start the server, now:
 
 ```bash
 $ yarn storybook
