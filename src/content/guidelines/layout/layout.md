@@ -3,19 +3,15 @@ label: Guidelines
 title: Layout
 ---
 
+- [Mini Unit](#mini-unit)
+- [2x Grid Fundamentals](#2x-grid-fundamentals)
+- [Grid Behaviors](#grid-behaviors)
+- [Grid Influencers](#grid-influencers)
+- [Sizing Scale](#sizing-scale)
+
 <page-intro>
 The 2x Grid is the geometric foundation of all the visual elements of IBM Design, from typography to columns, boxes, icons, and illustrations. It provides structure and guidance to creative decision-making.
  </page-intro>
-
-1.  [Mini Unit](#mini-unit)
-
-2.  [2x Grid Fundamentals](#2x-grid-fundamentals)
-
-4.  [Grid Behaviors](#grid-behaviors)
-
-5.  [Grid Influencers](#grid-influencers)
-
-6.  [Sizing Scale](#sizing-scale)
 
 
 ## Mini Unit
@@ -85,12 +81,14 @@ Always align type to the edge of box padding. Note: some design tools add paddin
 
 ![grid paddings sample](images/2x_padding_sample.png)
 
-<br>
-
-
-Take care not to place your type on the padding:
-
-![spacing guidance](images/alignment_do_not.png)
+<do-dont-group>
+    <do-dont-example correct=true label="Always place type against the padding.">
+        <img src="images/layout_1.svg" alt="Always place type against the padding.">
+    </do-dont-example>
+    <do-dont-example label="Never place type on the padding.">
+        <img src="images/layout_2.svg" alt="Never place type on the padding.">
+    </do-dont-example>
+</do-dont-group>
 
 ### Gutters
 Grid gutters can be absent as shown above, or present as shown below. The margin around each grid box matches its padding, for a total gutter of 32 pixels.
