@@ -6,8 +6,9 @@ $feature-flags: (
   components-x: true,
   ui-shell: true,
 );
-@import '@carbon/layout/scss/layout.scss'; 
-.container { //need this to avoid conflicts with old grid code 
+@import '@carbon/layout/scss/layout.scss';
+.container {
+  //need this to avoid conflicts with old grid code
   $prefix: 'ibm';
   $imported-modules-local: ();
   @import '@carbon/grid/scss/grid.scss';
@@ -62,10 +63,11 @@ $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
 @import '../components/GlobalSearch/global-search.scss';
 @import '../components/LeftNav/left-nav.scss';
 @import '../components/Homepage/homepage.scss';
+@import '../components/TileGroup/tile-group.scss';
+@import '../components/FeatureTile/feature-tile.scss';
 
 //---------------------------------------
 // Syntax
 //---------------------------------------
 @import 'prism';
 @import 'syntax';
-

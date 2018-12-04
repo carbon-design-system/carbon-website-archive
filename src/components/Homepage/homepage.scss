@@ -1,4 +1,82 @@
+// TODO: Tokenize everything
+
 .container--homepage {
-  background: $ibm-colors__black;
+  background: #151515;
   color: $ibm-colors__white;
+}
+
+.container--homepage .page-content {
+  padding-top: 0;
+}
+
+.homepage--section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.homepage--section h3 {
+  padding-bottom: 1.5rem;
+}
+
+.homepage--section > div > p {
+  width: 50%;
+}
+
+.homepage--section > div > p > a {
+  color: #6ea6ff;
+}
+
+.homepage--header {
+  width: calc(100% - 15rem);
+  margin-left: 15rem;
+  height: rem(560px);
+  overflow: hidden;
+}
+
+.homepage--header img {
+  width: 100%;
+}
+
+.homepage--intro {
+  background: $ibm-colors__black;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  margin-bottom: 2rem;
+}
+
+.homepage--intro a {
+  color: white;
+}
+
+.homepage--intro h2 {
+  padding-bottom: 2rem;
+  max-width: rem(570px);
+}
+
+.homepage--footer {
+  padding: 4rem 1rem 9rem;
+  background-color: #051b75;
+}
+
+.homepage--footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.homepage--footer h2 {
+  max-width: 70%;
+}
+
+.homepage--footer a {
+  display: flex;
+  align-items: center;
+  color: #6ea6ff;
+  text-decoration: none;
+  margin-top: 1.5rem;
+}
+
+.homepage--footer svg {
+  margin-left: 1rem;
+  fill: #6ea6ff;
 }

@@ -5,10 +5,14 @@ a.tile--article {
   text-decoration: none;
   color: $text-01;
   flex-basis: calc(50% - 1rem);
-  max-width: rem(300px);
+  max-width: rem(320px);
   flex-direction: column;
   margin: 0 $spacing-md $spacing-xl 0;
   padding: 0;
+
+  background: #282828;
+  color: white;
+  height: rem(390px);
 
   @media all and (max-width: 600px) {
     flex-basis: 100%;
@@ -19,40 +23,57 @@ a.tile--article {
 
 .tile--article .tile__img {
   width: 100%;
+  height: rem(180px);
   margin: 0;
   border-bottom: 1px solid $ui-04;
+  overflow: hidden;
+
+  border-bottom: none;
+}
+
+.tile--article .tile__img img {
+  width: 100%;
 }
 
 .tile--article .tile__info {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: $spacing-xl $spacing-md;
+  padding: $spacing-md $spacing-md $spacing-lg;
 
   h5 {
     font-weight: 300;
     font-size: rem(20px);
     text-decoration: none;
     color: $text-01;
+
+    font-size: rem(16px);
+    font-weight: 600;
+    color: white;
   }
 }
 
 .tile--article .tile__caption p {
   padding: 0;
+  max-width: 75%;
 }
 
-.tile__author {
-  margin-top: $spacing-md;
-  font-weight: 600;
-  font-size: rem(14px);
-  color: $text-02;
+p.tile__author {
+  margin: 0;
+  padding-bottom: 0;
+  font-weight: 300;
+  font-size: rem(16px);
+  color: white;
 }
 
 .tile__date {
   font-size: rem(12px);
-  color: $text-02;
   font-weight: 300;
+  color: white;
+}
+
+.tile__divider {
+  color: black;
 }
 
 // Tile Resource
@@ -69,6 +90,14 @@ a.tile--resource {
   color: $text-01;
   min-width: rem(190px);
   max-width: rem(630px);
+
+  padding: $spacing-lg;
+  position: relative;
+  background: #282828;
+  color: white;
+  margin: 0;
+
+  // TODO: add hover state
 
   @media all and (max-width: 1283px) {
     width: 100%;
@@ -88,12 +117,18 @@ a.tile--resource {
     color: $text-01;
     margin: 0 0 $spacing-xs 0;
     padding: 0;
+
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
   }
 }
 
 .tile--resource .tile__description {
   padding-bottom: 0;
   color: $text-01;
+
+  color: white;
 }
 
 .tile--resource .tile__img {
@@ -101,10 +136,24 @@ a.tile--resource {
   height: 32px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  margin: 0 1.25rem 0 0.25rem;
+  position: absolute;
+  left: 1.5rem;
+  bottom: 1.5rem;
 
   img {
     width: 100%;
     margin: 0;
+  }
+}
+
+.tile--resource .tile__link-icon {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 20px;
+  height: 20px;
+
+  svg {
+    fill: white;
   }
 }

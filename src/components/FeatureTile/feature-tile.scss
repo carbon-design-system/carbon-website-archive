@@ -1,0 +1,43 @@
+a.feature-tile {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: rem(960px);
+  height: rem(320px);
+  margin-bottom: $spacing-lg;
+}
+
+.feature-tile__info {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #282828;
+  width: rem(320px);
+  height: rem(160px);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.feature-tile__info p {
+  padding-bottom: 0;
+  line-height: 1.25;
+}
+
+.feature-tile__info svg {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+
+.feature-tile__label {
+  font-size: rem(14px);
+  color: #bebebe;
+}
+
+.feature-tile__title {
+  font-size: rem(20px);
+  color: #f3f3f3;
+}
