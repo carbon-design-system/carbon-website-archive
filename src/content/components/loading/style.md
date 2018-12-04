@@ -19,6 +19,7 @@ tabs: ['Code', 'Usage', 'Style']
 | `.bx--loading`        | height, width | 84 / 5.25 | -             |
 | `.bx--loading--small` | height, width | 16 / 1    | -             |
 
+<grid-wrapper>
 <div class="image-grid">
   <div>
     <img src="images/loading-style-1.png" alt="Large spinner structure measurements"/>
@@ -27,6 +28,7 @@ tabs: ['Code', 'Usage', 'Style']
     <img src="images/loading-style-2.png" alt="Small spinner structure measurements"/>
   </div>
 </div>
+</grid-wrapper>
 
 _Structure measurements for small and large loading spinner | px / rem_
 

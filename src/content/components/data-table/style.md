@@ -92,11 +92,13 @@ After the simple table structure, tables can be enhanced by adding any of the fo
 | `.bx--table-sort-v2__icon`                                                       | padding                     | 2 / 0.125 | $spacing-3xs  |
 | `.bx--data-table-v2 td:first-of-type` </br> `.bx--data-table-v2 td:last-of-type` | padding-left, padding-right | 24 / 1.5  | $spacing-lg   |
 
+<grid-wrapper>
 <div class="image-grid">
   <div>
     <img src="images/.png" alt="Spacing for a basic Data Table"/>
 </div>
 </div>
+</grid-wrapper>
 
 _Structure and spacing measurements for a basic and an enhanced Data Table | px / rem_
 

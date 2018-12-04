@@ -96,6 +96,18 @@ export class h4 extends React.Component {
   }
 }
 
+export class h5 extends React.Component {
+  render() {
+    return (
+      <div className="ibm--row">
+        <div className="ibm--col-lg-7 ibm--offset-lg-4">
+          <h5 className="page-h5">{this.props.children}</h5>
+        </div>
+      </div>
+    );
+  }
+}
+
 export class ul extends React.Component {
   render() {
     return (
@@ -124,8 +136,20 @@ export class p extends React.Component {
   render() {
     return (
       <div className="ibm--row">
-        <div className="ibm--col-lg-7 ibm--offset-lg-4 ibm--col-sm-4 ibm--col-md-8">
+        <div className="ibm--col-lg-7 ibm--offset-lg-4">
           <p>{this.props.children}</p>
+        </div>
+      </div>
+    );
+  }
+}
+
+export class gridWrapper extends React.Component {
+  render() {
+    return (
+      <div className="ibm--row">
+        <div className="ibm--col-lg-12 ibm--offset-lg-4">
+          {this.props.children}
         </div>
       </div>
     );

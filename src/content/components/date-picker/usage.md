@@ -12,6 +12,7 @@ tabs: ['Code', 'Usage', 'Style']
 | Single Date Picker | When a user needs to select one date, accompanied by a calendar widget.                     |
 | Simple Date Picker | When the date is known by the user, and they don't need a calendar to anticipate the dates. |
 
+<grid-wrapper>
 <div class="image-grid">
   <div>
     <img src="images/date-picker-usage-1.png" alt="Range Date Picker"/>
@@ -23,6 +24,7 @@ tabs: ['Code', 'Usage', 'Style']
     <img src="images/date-picker-usage-3.png" alt="Simple Date Picker"/>
   </div>
 </div>
+</grid-wrapper>
 
 _Types of Date Pickers_
 

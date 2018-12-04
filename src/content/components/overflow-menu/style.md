@@ -15,6 +15,7 @@ tabs: ['Code', 'Usage', 'Style']
 | `.bx--overflow-menu-options__option--danger`                                       | border-top       | $ui-04        | #8897a2                |
 | `.bx--overflow-menu__icon`                                                         | fill             | $ui-05        | #5a6872                |
 
+<grid-wrapper>
 <div class="image-grid">
   <div>
     <img src="images/overflow-menu-style-1.png" alt="Overflow menu text hover example"/>
@@ -23,6 +24,7 @@ tabs: ['Code', 'Usage', 'Style']
     <img src="images/overflow-menu-style-2.png" alt="Overflow menu warning hover example"/>
   </div>
 </div>
+</grid-wrapper>
 
 _Text and warning hover examples for Overflow Menu_
 
