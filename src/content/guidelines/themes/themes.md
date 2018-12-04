@@ -15,8 +15,8 @@ Developers and designers can use Carbon Themes to modify existing components to 
 
 | Term         | Definition                                                                                                     |
 | ------------ | -------------------------------------------------------------------------------------------------------------- |
-| **Theme**    | The set of unique values assigned to the universal variables                                                   |
-| **Value**    | A theme's unique styles (ie hex code, line weight etc) assigned to a universal variable                        |
+| **Theme**    | The set of unique values assigned to the universal variables.                                                   |
+| **Value**    | A theme's unique styles (ie hex code, line weight etc) assigned to a universal variable.                        |
 | **Role**     | The systematic usage/s of a value. Roles cannot be changed between themes.                                     |
 | **Variable** | The code identifier for a unique role or set of roles. Variables are universal and never change across themes. |
 
