@@ -77,7 +77,6 @@ export class h2 extends React.Component {
   }
 }
 
-
 export class h3 extends React.Component {
   render() {
     return (
@@ -152,6 +151,7 @@ export class h5 extends React.Component {
     );
   }
 }
+
 
 export class DoDontGroup extends React.Component {
   render() {
