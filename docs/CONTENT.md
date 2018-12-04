@@ -101,9 +101,10 @@ Image components are used on component pages under the Style and Usage tabs to d
 
 #### Image Grid
 
-Image grids are used on component pages, usually under the "Style" tab to display a group of images in a grid. See the button page for an example.
+Image grids are used on component pages, usually under the "Style" tab to display a group of images in a grid. See the button page for an example. You need to wrap it with a grid-wrapper component to get the correct grid layout.
 
 ```
+<grid-wrapper>
 <div class="image-grid">
   <div>
     <img src="images/button-style-7.png" alt="Structure for a Primary Button"/>
@@ -112,6 +113,7 @@ Image grids are used on component pages, usually under the "Style" tab to displa
     <img src="images/button-style-8.png" alt="Structure for a small Primary Button"/>
   </div>
 </div>
+</grid-wrapper>
 ```
 
 ### Lists

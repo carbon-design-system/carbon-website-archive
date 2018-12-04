@@ -1,7 +1,6 @@
 ---
 label: Guidelines
 title: Layout
-internal: true
 ---
 
 <page-intro>
