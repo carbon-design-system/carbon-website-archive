@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { Icon } from 'carbon-components-react';
 
 export class PageIntro extends React.Component {
@@ -29,7 +30,9 @@ export class h1 extends React.Component {
     return (
       <div className="ibm--row">
         <div className="ibm--col-lg-7 ibm--offset-lg-4">
-          <h1 className="page-h1" id={this.props.id}>{this.props.children}</h1>
+          <h1 className="page-h1" id={this.props.id}>
+            {this.props.children}
+          </h1>
         </div>
       </div>
     );
@@ -38,11 +41,13 @@ export class h1 extends React.Component {
 
 export class h2 extends React.Component {
   render() {
+    const hash = this.props.children[0].toLowerCase().split(' ').join('-');
+    const path = location.pathname;
     return (
       <div className="ibm--row">
         <div className="ibm--col-lg-7 ibm--offset-lg-4">
-          <h2 className="page-h2" id={this.props.id}>     
-              {this.props.children}
+          <h2 className="page-h2" id={hash}>     
+            <Link to={`${path}#${hash}`}>{this.props.children}</Link>
           </h2>
         </div>
       </div>
