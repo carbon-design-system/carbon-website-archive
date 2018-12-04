@@ -35,6 +35,20 @@ variations:
 <iframe src="https://codesandbox.io/embed/6w5oqk5qjn?autoresize=1&hidenavigation=1&view=preview" width="500" height="200" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 </grid-wrapper>
 
+## Inline Multi-select
+<p>This component is currently only available in <a href="https://github.com/ibm/carbon-components-react" target="_blank">our React library</a>.</p>
+
+<grid-wrapper>
+<iframe src="https://codesandbox.io/embed/6w5oqk5qjn?autoresize=1&hidenavigation=1&view=preview" width="500" height="200" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+</grid-wrapper>
+
+## Filter 
+<p>This component is currently only available in <a href="https://github.com/ibm/carbon-components-react" target="_blank">our React library</a>.</p>
+
+<grid-wrapper>
+<iframe src="https://codesandbox.io/embed/6w5oqk5qjn?autoresize=1&hidenavigation=1&view=preview" width="500" height="200" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+</grid-wrapper>
+
 <!--
 <component-react
     name="Multi-select Dropdown"
