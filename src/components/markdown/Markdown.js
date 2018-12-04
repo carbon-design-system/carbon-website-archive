@@ -25,14 +25,24 @@ export class PageIcon extends React.Component {
   }
 }
 
+export class FlexGroup extends React.Component {
+  render() {
+    return (
+      <div className="ibm--row">
+        <div className="ibm--col-lg-12 ibm--offset-lg-4">
+          <div className="page-flex-group">{this.props.children}</div>
+        </div>
+      </div>
+    );
+  }
+}
+
 export class h1 extends React.Component {
   render() {
     return (
       <div className="ibm--row">
         <div className="ibm--col-lg-7 ibm--offset-lg-4">
-          <h1 className="page-h1" id={this.props.id}>
-            {this.props.children}
-          </h1>
+          <h1 className="page-h1">{this.props.children}</h1>
         </div>
       </div>
     );
@@ -60,7 +70,19 @@ export class h3 extends React.Component {
     return (
       <div className="ibm--row">
         <div className="ibm--col-lg-7 ibm--offset-lg-4">
-          <h3 className="page-h3" id={this.props.id}>{this.props.children}</h3>
+          <h3 className="page-h3">{this.props.children}</h3>
+        </div>
+      </div>
+    );
+  }
+}
+
+export class DoDontGroup extends React.Component {
+  render() {
+    return (
+      <div class="ibm--row">
+        <div class="ibm--col-lg-8 ibm--offset-lg-4">
+          <div className="do-dont-group">{this.props.children}</div>
         </div>
       </div>
     );
@@ -72,7 +94,7 @@ export class h4 extends React.Component {
     return (
       <div className="ibm--row">
         <div className="ibm--col-lg-7 ibm--offset-lg-4">
-          <h4 className="page-h4" id={this.props.id}>{this.props.children}</h4>
+          <h4 className="page-h4">{this.props.children}</h4>
         </div>
       </div>
     );
@@ -84,7 +106,7 @@ export class h5 extends React.Component {
     return (
       <div className="ibm--row">
         <div className="ibm--col-lg-7 ibm--offset-lg-4">
-          <h5 className="page-h5" id={this.props.id}>{this.props.children}</h5>
+          <h5 className="page-h5">{this.props.children}</h5>
         </div>
       </div>
     );
@@ -121,30 +143,6 @@ export class p extends React.Component {
       <div className="ibm--row">
         <div className="ibm--col-lg-7 ibm--offset-lg-4">
           <p>{this.props.children}</p>
-        </div>
-      </div>
-    );
-  }
-}
-
-export class DoDontGroup extends React.Component {
-  render() {
-    return (
-      <div class="ibm--row">
-        <div class="ibm--col-lg-8 ibm--offset-lg-4">
-          <div className="do-dont-group">{this.props.children}</div>
-        </div>
-      </div>
-    );
-  }
-}
-
-export class FlexGroup extends React.Component {
-  render() {
-    return (
-      <div className="ibm--row">
-        <div className="ibm--col-lg-12 ibm--offset-lg-4">
-          <div className="page-flex-group">{this.props.children}</div>
         </div>
       </div>
     );

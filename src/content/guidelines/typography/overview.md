@@ -7,7 +7,7 @@ tabs: ['Overview', 'Product', 'Editorial']
 - [Typeface: IBM Plex](#typeface-ibm-plex)
 - [Scale](#scale)
 - [Style](#style)
-- [Type Colors](#type-colors)
+- [Type Color](#type-color)
 
 When used properly, typography can help create clear hierarchies, organize information, and guide users through the product or experience.
 
