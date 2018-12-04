@@ -30,6 +30,7 @@
   color: $text-01;
   margin-top: rem(56px);
   margin-bottom: $spacing-lg;
+  position: relative;
 }
  
 //----------------------------
@@ -42,6 +43,7 @@
   color: $text-01;
   margin-top: rem(24px);
   margin-bottom: $spacing-md;
+  position: relative;
 }
 
 //----------------------------
@@ -54,6 +56,7 @@
   font-weight: font-weight('semibold');
   color: $text-01;
   margin-top: rem(8px);
+  position: relative;
 }
 
 // Targets heading elements when they are the first element on a page to remove top margin
@@ -69,7 +72,36 @@
 }
 
 //----------------------------
-// ul
+// h5
+//----------------------------
+
+.page-h5,
+.component-docs h5 {
+  position: relative;
+}
+
+//----------------------------
+// Anchor Link
+//----------------------------
+h2, h3, h4, h5 {
+  .anchor-link {
+    position: absolute;
+    left: rem(-24px);
+    opacity: 0;
+  }
+  
+  .anchor-link__icon {
+    fill: $ibm-colors__blue--50;
+  }
+
+  &:hover .anchor-link {
+    opacity: 1;
+  }
+}
+
+
+//----------------------------
+// ul / ol
 //----------------------------
 
 .page-ul,
@@ -77,7 +109,6 @@
   @include typescale('epsilon');
   margin: 0 0 $spacing-lg $spacing-lg;
   line-height: 1.75;
-  //max-width: 38rem;
 }
 
 .page-ul > li {
@@ -116,6 +147,39 @@
     max-width: 100%;
   }
 }
+
+// Targets list elements when they are the first element on a page to remove top margin
+// Adds anchor link styles
+.page-content > div > .ibm--row:first-child {
+  .page-ul {
+    margin-bottom: rem(72px);
+  }
+
+  .page-ul > li {
+    font-size: rem(20px);
+    list-style: none;
+
+    &:before {
+      content: '↳';
+      position: absolute;
+      left: 1rem;
+    }
+
+    a {
+      text-decoration: underline;
+      color: $ibm-colors__gray--90;
+      font-weight: 400;
+    }
+
+    &:hover {
+      a,
+      &:before {
+        color: $ibm-colors__blue--60;
+      }
+    }
+  }
+}
+
 
 //----------------------------
 // Image
