@@ -26,7 +26,7 @@ class Layout extends React.Component {
   };
 
   state = {
-    isOpen: true,
+    isOpen: false,
     isFinal: false,
   };
 
