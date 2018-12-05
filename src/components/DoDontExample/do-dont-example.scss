@@ -92,6 +92,8 @@ p.example__text {
   left: calc(1rem - 1px);
   top: calc(1rem - 1px);
   z-index: 10;
+  width: 24px;
+  height: 24px;
 }
 
 .example__icon--correct {
