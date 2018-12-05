@@ -79,11 +79,24 @@ export class h2 extends React.Component {
 export class h3 extends React.Component {
   render() {
     return (
-      <div className="ibm--row">
-        <div className="ibm--col-lg-7 ibm--offset-lg-4">
-          <h3 className="page-h3">{this.props.children}</h3>
-        </div>
-      </div>
+      <Location>
+        {({ location }) => {
+          const hash = this.props.children[0].toLowerCase().split(' ').join('-');
+          const path = location.pathname;
+          return (
+            <div className="ibm--row">
+              <div className="ibm--col-lg-7 ibm--offset-lg-4">
+                <h3 className="page-h3" id={hash}>     
+                  <Link className="anchor-link" to={`${path}#${hash}`}>
+                    <Link20 className="anchor-link__icon" aria-label="Anchor Link" />
+                  </Link>
+                  {this.props.children}
+                </h3>
+              </div>
+            </div>
+          )
+        }}
+      </Location>
     );
   }
 }
