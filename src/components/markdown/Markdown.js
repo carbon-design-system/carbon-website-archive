@@ -62,7 +62,7 @@ export class h2 extends React.Component {
             <div className="ibm--row">
               <div className="ibm--col-lg-7 ibm--offset-lg-4">
                 <h2 className="page-h2" id={hash}>     
-                  <Link className="anchor-link" to={`${path}#${hash}`}>
+                  {hash && (<Link className="anchor-link" to={`${path}#${hash}`}>
                     <Link20 className="anchor-link__icon" aria-label="Anchor Link" />
                   </Link>
                   {this.props.children}
