@@ -89,7 +89,7 @@ export class h3 extends React.Component {
                 <h3 className="page-h3" id={hash}>     
                   {hash && (<Link className="anchor-link" to={`${path}#${hash}`}>
                     <Link20 className="anchor-link__icon" aria-label="Anchor Link" />
-                  </Link>
+                  </Link>)}
                   {this.props.children}
                 </h3>
               </div>
