@@ -13,6 +13,7 @@ export default class ClickTile extends React.Component {
     type: PropTypes.string,
     description: PropTypes.string,
     excerpt: PropTypes.string,
+    dark: PropTypes.bool,
   };
 
   render() {
@@ -25,12 +26,14 @@ export default class ClickTile extends React.Component {
       type,
       description,
       excerpt,
+      dark,
     } = this.props;
 
     const classNames = classnames({
       tile: true,
       'tile--resource': type === 'resource',
       'tile--article': type === 'article',
+      'tile--dark': dark,
     });
 
     if (type === 'resource') {

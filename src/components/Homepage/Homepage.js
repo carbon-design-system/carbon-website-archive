@@ -3,21 +3,43 @@ import { Icon } from 'carbon-components-react';
 import ClickTile from '../ClickableTile';
 import TileGroup from '../TileGroup';
 import FeatureTile from '../FeatureTile';
+import { Link } from 'gatsby';
 
 const { GATSBY_CARBON_ENV } = process.env;
 const isInternal = GATSBY_CARBON_ENV == 'internal';
 
+// Icons
 const sketchIcon = require('../../content/homepage/images/sketch-icon.svg');
+
+// Banner image
 const bannerImg = require('../../content/homepage/images/homepage-placeholder-img.png');
+
+// Feature tiles images
 const gettingStartedDesigners = require('../../content/homepage/images/getting-started-designers.png');
 const gettingStartedDevelopers = require('../../content/homepage/images/getting-started-developers.png');
 
 const sectionHeader = isInternal ? (
-  <section className="homepage--header">
+  <section className="ibm--row homepage--header">
+    <div className="ibm--col-lg-4">
+      {' '}
+      <h3 className="homepage--header__title">
+        IBM Product <br />
+        Design System
+      </h3>
+    </div>
+    <div className="ibm--col-lg-8" />
     <img src={bannerImg} alt="IBM Product Design System banner image" />
   </section>
 ) : (
-  <section className="homepage--header">
+  <section className="ibm--row homepage--header">
+    <div className="ibm--col-lg-4">
+      {' '}
+      <h3 className="homepage--header__title">
+        IBM Product <br />
+        Design System
+      </h3>
+    </div>
+    <div className="ibm--col-lg-8" />{' '}
     <img src={bannerImg} alt="IBM Product Design System banner image" />
   </section>
 );
@@ -35,7 +57,8 @@ const introSection = (
         adipsicing elit.
       </h2>
       <h2>
-        Our system is built on the <a href="#">IBM Design Language</a>{' '}
+        Our system is built on the{' '}
+        <a href="https://www.ibm.com/design/language/">IBM Design Language</a>{' '}
         foundation as a resource for designers and developers. This collection
         of UI components, guidelines, code, and tooling ensures IBM products
         share a unified user experience.
@@ -52,15 +75,22 @@ class Homepage extends Component {
   render() {
     return (
       <div>
+        <span className="homepage--dots" />
         {sectionHeader}
         {introSection}
         <div className="ibm--row homepage--section">
           <div className="ibm--col-lg-12 ibm--offset-lg-4">
             <h3>Getting Started</h3>
-            <FeatureTile href="#" label="Start" title="Designing">
+            <FeatureTile
+              href="/getting-started/designers"
+              label="Start"
+              title="Designing">
               <img src={gettingStartedDesigners} />
             </FeatureTile>
-            <FeatureTile href="#" label="Start" title="Developing">
+            <FeatureTile
+              href="/getting-started/developers"
+              label="Start"
+              title="Developing">
               <img src={gettingStartedDevelopers} />
             </FeatureTile>
           </div>
@@ -71,19 +101,28 @@ class Homepage extends Component {
             <p>
               The Component Libraries give developers a collection of re-usable
               React components they can use for building websites and user
-              interfaces. See a <a href="#">complete list of resources.</a>
+              interfaces. See a{' '}
+              <Link to="/resources">complete list of resources.</Link>
             </p>
             <TileGroup maxWidth="640px">
-              <ClickTile title="Product Design Kit" type="resource" href="#">
+              <ClickTile
+                dark
+                title="Product Design Kit"
+                type="resource"
+                href="#">
                 <img src={sketchIcon} />
               </ClickTile>
-              <ClickTile title="Component Library" type="resource" href="#">
+              <ClickTile
+                dark
+                title="Component Library"
+                type="resource"
+                href="#">
                 <img src={sketchIcon} />
               </ClickTile>
-              <ClickTile title="Theming Sandbox" type="resource" href="#">
+              <ClickTile dark title="Theming Sandbox" type="resource" href="#">
                 <img src={sketchIcon} />
               </ClickTile>
-              <ClickTile title="Theming Sandbox" type="resource" href="#">
+              <ClickTile dark title="Theming Sandbox" type="resource" href="#">
                 <img src={sketchIcon} />
               </ClickTile>
             </TileGroup>
@@ -98,7 +137,8 @@ class Homepage extends Component {
                 author="Medium"
                 type="article"
                 href="#"
-                excerpt="The economic health report of global countries">
+                excerpt="The economic health report of global countries"
+                dark>
                 <img src="https://source.unsplash.com/random/320x180" />
               </ClickTile>
               <ClickTile
@@ -106,7 +146,8 @@ class Homepage extends Component {
                 author="Medium"
                 type="article"
                 href="#"
-                excerpt="The economic health report of global countries">
+                excerpt="The economic health report of global countries"
+                dark>
                 <img src="https://source.unsplash.com/random/320x180" />
               </ClickTile>
               <ClickTile
@@ -114,7 +155,8 @@ class Homepage extends Component {
                 author="Medium"
                 type="article"
                 href="#"
-                excerpt="The economic health report of global countries">
+                excerpt="The economic health report of global countries"
+                dark>
                 <img src="https://source.unsplash.com/random/320x180" />
               </ClickTile>
             </TileGroup>
@@ -135,14 +177,14 @@ class Homepage extends Component {
                 in contributing, check out our contributing guidelines to get
                 started.
               </h2>
-              <a href="#" alt="Start contributing">
+              <Link to="/contributing" alt="Start contributing">
                 Start contributing
                 <Icon
                   name="icon--arrow--right"
                   alt="start contributing icon"
                   width="20"
                 />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -9,9 +9,6 @@ a.tile--article {
   flex-direction: column;
   margin: 0 $spacing-md $spacing-xl 0;
   padding: 0;
-
-  background: #282828;
-  color: white;
   height: rem(390px);
 
   @media all and (max-width: 600px) {
@@ -21,13 +18,20 @@ a.tile--article {
   }
 }
 
+a.tile--article.tile--dark {
+  background: $ibm-colors__gray--90;
+  color: $ibm-colors__white;
+}
+
+a.tile--article.tile--dark:hover {
+  background: $ibm-colors__gray--80;
+}
+
 .tile--article .tile__img {
   width: 100%;
   height: rem(180px);
   margin: 0;
-  border-bottom: 1px solid $ui-04;
   overflow: hidden;
-
   border-bottom: none;
 }
 
@@ -42,15 +46,15 @@ a.tile--article {
   padding: $spacing-md $spacing-md $spacing-lg;
 
   h5 {
-    font-weight: 300;
-    font-size: rem(20px);
     text-decoration: none;
     color: $text-01;
-
     font-size: rem(16px);
     font-weight: 600;
-    color: white;
   }
+}
+
+.tile--article.tile--dark .tile__info h5 {
+  color: $ibm-colors__white;
 }
 
 .tile--article .tile__caption p {
@@ -63,17 +67,13 @@ p.tile__author {
   padding-bottom: 0;
   font-weight: 300;
   font-size: rem(16px);
-  color: white;
+  color: $ibm-colors__white;
 }
 
 .tile__date {
   font-size: rem(12px);
   font-weight: 300;
-  color: white;
-}
-
-.tile__divider {
-  color: black;
+  color: $ibm-colors__white;
 }
 
 // Tile Resource
@@ -82,22 +82,20 @@ a.tile--resource {
   width: calc(50% - 1rem);
   align-items: flex-start;
   min-height: 190px;
-  padding: $spacing-xl $spacing-md;
-  margin: 0 $spacing-md $spacing-md 0;
+  margin: 0;
   display: flex;
   align-items: flex-start;
   text-decoration: none;
   color: $text-01;
   min-width: rem(190px);
   max-width: rem(630px);
-
   padding: $spacing-lg;
   position: relative;
-  background: #282828;
-  color: white;
   margin: 0;
 
-  // TODO: add hover state
+  &:hover {
+    background: #3d3d3d;
+  }
 
   @media all and (max-width: 1283px) {
     width: 100%;
@@ -109,26 +107,37 @@ a.tile--resource {
   }
 }
 
+a.tile--resource.tile--dark {
+  background: $ibm-colors__gray--90;
+  color: $ibm-colors__white;
+}
+
+a.tile--resource.tile--dark:hover {
+  background: $ibm-colors__gray--80;
+}
+
 .tile--resource .tile__info {
   h5 {
-    font-size: 18px;
-    font-weight: 600;
     text-decoration: none;
     color: $text-01;
     margin: 0 0 $spacing-xs 0;
     padding: 0;
-
-    color: white;
     font-weight: 400;
-    font-size: 14px;
+    font-size: rem(16px);
   }
+}
+
+.tile--resource.tile--dark .tile__info h5 {
+  color: $ibm-colors__white;
 }
 
 .tile--resource .tile__description {
   padding-bottom: 0;
   color: $text-01;
+}
 
-  color: white;
+.tile--dark .tile__description {
+  color: $ibm-colors__white;
 }
 
 .tile--resource .tile__img {
@@ -137,8 +146,8 @@ a.tile--resource {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   position: absolute;
-  left: 1.5rem;
-  bottom: 1.5rem;
+  left: $spacing-lg;
+  bottom: $spacing-lg;
 
   img {
     width: 100%;
@@ -148,12 +157,12 @@ a.tile--resource {
 
 .tile--resource .tile__link-icon {
   position: absolute;
-  right: 1.5rem;
-  bottom: 1.5rem;
+  right: $spacing-lg;
+  bottom: $spacing-lg;
   width: 20px;
   height: 20px;
 
   svg {
-    fill: white;
+    fill: $ibm-colors__white;
   }
 }

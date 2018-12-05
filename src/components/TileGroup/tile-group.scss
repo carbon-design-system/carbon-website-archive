@@ -11,18 +11,18 @@
 
     &:nth-child(1),
     &:nth-child(3) {
-      border-right: 1px solid #595555;
+      border-right: 1px solid $ibm-colors__black;
     }
 
     &:nth-child(1),
     &:nth-child(2) {
-      border-bottom: 1px solid #595555;
+      border-bottom: 1px solid $ibm-colors__black;
     }
   }
 
   a.tile--article {
     margin-right: 0;
-    border-right: 1px solid #595555;
+    border-right: 1px solid $ibm-colors__black;
 
     &:last-child {
       border-right: none;

@@ -1,21 +1,22 @@
-// TODO: Tokenize everything
-
 .container--homepage {
-  background: #151515;
+  background: $ibm-colors__gray--100;
   color: $ibm-colors__white;
 }
 
 .container--homepage .page-content {
   padding-top: 0;
+  position: relative;
 }
 
 .homepage--section {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  position: relative;
+  padding-top: $spacing-xl;
+  padding-bottom: $spacing-xl;
+  z-index: 2;
 }
 
 .homepage--section h3 {
-  padding-bottom: 1.5rem;
+  padding-bottom: $spacing-lg;
 }
 
 .homepage--section > div > p {
@@ -23,39 +24,56 @@
 }
 
 .homepage--section > div > p > a {
-  color: #6ea6ff;
+  color: $ibm-colors__blue--40;
 }
 
 .homepage--header {
-  width: calc(100% - 15rem);
-  margin-left: 15rem;
+  width: calc(100% - 15rem); // 100% minus the width of the left nav
+  margin-left: 15rem; // The width of the left nav
   height: rem(560px);
   overflow: hidden;
+  position: relative;
+}
+
+.homepage--header__title {
+  left: 50%;
+  position: absolute;
+  bottom: 3.5rem;
+  z-index: 1;
 }
 
 .homepage--header img {
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .homepage--intro {
+  position: relative;
   background: $ibm-colors__black;
-  padding-top: 4rem;
+  padding-top: 3.5rem;
   padding-bottom: 6rem;
-  margin-bottom: 2rem;
+  margin-bottom: $spacing-xl;
+  z-index: 2;
 }
 
 .homepage--intro a {
-  color: white;
+  color: $ibm-colors__white;
 }
 
 .homepage--intro h2 {
-  padding-bottom: 2rem;
-  max-width: rem(570px);
+  padding-bottom: $spacing-xl;
+  max-width: 80%;
+  font-size: rem(32px);
+  line-height: rem(40px);
 }
 
 .homepage--footer {
-  padding: 4rem 1rem 9rem;
-  background-color: #051b75;
+  position: relative;
+  padding: 4rem $spacing-md 9rem;
+  background-color: $ibm-colors__blue--90;
+  z-index: 2;
 }
 
 .homepage--footer__info {
@@ -66,17 +84,35 @@
 
 .homepage--footer h2 {
   max-width: 70%;
+  font-size: rem(32px);
+  line-height: rem(40px);
 }
 
 .homepage--footer a {
   display: flex;
   align-items: center;
-  color: #6ea6ff;
+  color: $ibm-colors__blue--40;
   text-decoration: none;
-  margin-top: 1.5rem;
+  margin-top: $spacing-lg;
+}
+
+.homepage--footer a:hover {
+  text-decoration: underline;
 }
 
 .homepage--footer svg {
-  margin-left: 1rem;
-  fill: #6ea6ff;
+  margin-left: $spacing-md;
+  fill: $ibm-colors__blue--40;
+}
+
+.homepage--dots {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  left: -16px;
+  background: transparent;
+  background-image: radial-gradient(#2f302d 1px, transparent 0);
+  background-size: 16px 16px;
+  background-position-x: -36px;
 }

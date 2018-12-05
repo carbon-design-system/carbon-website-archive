@@ -4,6 +4,8 @@
   min-height: 320px;
   padding: 1rem 0;
   font-size: rem(14px);
+  position: relative;
+  z-index: 2;
 }
 
 .page-footer__text {
