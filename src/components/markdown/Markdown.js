@@ -81,7 +81,7 @@ export class h3 extends React.Component {
     return (
       <Location>
         {({ location }) => {
-          const hash = this.props.children[0].toLowerCase().split(' ').join('-');
+          const hash = this.props.children[0] && this.props.children[0].toLowerCase().split(' ').join('-');
           const path = location.pathname;
           return (
             <div className="ibm--row">
