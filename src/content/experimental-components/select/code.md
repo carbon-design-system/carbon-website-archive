@@ -37,4 +37,4 @@ tabs: ['Code', 'Usage']
     experimental="true"
     >
 </component>
-<component-docs component="select"></component-docs>
+<component-docs component="select" experimental="true"></component-docs>

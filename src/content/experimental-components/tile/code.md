@@ -34,4 +34,4 @@ tabs: ['Code', 'Usage']
     experimental="true"
     >
 </component>
-<component-docs component="tile"></component-docs>
+<component-docs component="tile" experimental="true"></component-docs>

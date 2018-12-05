@@ -4,14 +4,22 @@ import PropTypes from 'prop-types';
 export default class ComponentDocs extends React.Component {
   static propTypes = {
     component: PropTypes.string,
+    experimental: PropTypes.string,
   };
 
   render() {
-    const { component } = this.props;
+    const { component, experimental } = this.props;
 
     let componentDocUrl = '';
+    if (experimental === 'true') {
+      try {
+        componentDocUrl = require(`carbon-components/src/components/${component}/experimental.md`);
+      } catch (err) {}
+    }
     // Loading README.md causes Storybook build failure as of now
-    componentDocUrl = require(`carbon-components/src/components/${component}/README.md`);
+    if (!componentDocUrl) {
+      componentDocUrl = require(`carbon-components/src/components/${component}/README.md`);
+    }
 
     return (
       <div className="page_md component-docs ibm--row">

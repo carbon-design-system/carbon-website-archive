@@ -22,4 +22,4 @@ tabs: ['Code', 'Usage']
     >
 </component>
 
-<component-docs component="text-input"></component-docs>
+<component-docs component="text-input" experimental="true"></component-docs>

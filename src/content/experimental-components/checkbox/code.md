@@ -13,4 +13,4 @@ tabs: ['Code', 'Usage']
     experimental="true"
     >
 </component>
-<component-docs component="checkbox"></component-docs>
+<component-docs component="checkbox" experimental="true"></component-docs>
