@@ -13,4 +13,4 @@ tabs: ['Code', 'Usage']
     experimental="true"
     >
 </component>
-<component-docs component="inline-loading"></component-docs>
+<component-docs component="inline-loading" experimental="true"></component-docs>

@@ -13,4 +13,4 @@ tabs: ['Code', 'Usage']
     experimental="true"
     >
 </component>
-<component-docs component="radio-button"></component-docs>
+<component-docs component="radio-button" experimental="true"></component-docs>

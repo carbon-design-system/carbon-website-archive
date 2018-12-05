@@ -20,4 +20,4 @@ tabs: ['Code', 'Usage']
     experimental="true"
     >
 </component>
-<component-docs component="content-switcher"></component-docs>
+<component-docs component="content-switcher" experimental="true"></component-docs>

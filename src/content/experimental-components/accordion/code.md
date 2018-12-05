@@ -13,4 +13,4 @@ tabs: ['Code', 'Usage']
     experimental="true"
     >
 </component>
-<component-docs component="accordion"></component-docs>
+<component-docs component="accordion" experimental="true"></component-docs>

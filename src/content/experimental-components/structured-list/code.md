@@ -20,4 +20,4 @@ tabs: ['Code', 'Usage']
     experimental="true"
     >
 </component>
-<component-docs component="structured-list"></component-docs>
+<component-docs component="structured-list" experimental="true"></component-docs>

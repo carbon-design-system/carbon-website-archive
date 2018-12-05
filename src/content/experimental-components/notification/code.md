@@ -20,4 +20,4 @@ tabs: ['Code', 'Usage']
     experimental="true"
     >
 </component>
-<component-docs component="notification"></component-docs>
+<component-docs component="notification" experimental="true"></component-docs>

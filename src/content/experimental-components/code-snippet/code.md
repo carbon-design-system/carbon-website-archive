@@ -29,4 +29,4 @@ variations:</page-intro>
     experimental="true"
     >
 </component>
-<component-docs component="code-snippet"></component-docs>
+<component-docs component="code-snippet" experimental="true"></component-docs>

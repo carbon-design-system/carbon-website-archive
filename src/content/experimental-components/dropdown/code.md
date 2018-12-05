@@ -23,4 +23,4 @@ variations:
     >
 </component>
 
-<component-docs component="dropdown"></component-docs>
+<component-docs component="dropdown" experimental="true"></component-docs>

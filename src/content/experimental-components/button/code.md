@@ -76,4 +76,4 @@ tabs: ['Code', 'Usage']
     experimental="true"
     >
 </component>
-<component-docs component="button"></component-docs>
+<component-docs component="button" experimental="true"></component-docs>
