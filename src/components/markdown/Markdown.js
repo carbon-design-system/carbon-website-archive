@@ -1,5 +1,8 @@
 import React from 'react';
 import { Icon } from 'carbon-components-react';
+import { Location } from '@reach/router';
+import { Link } from 'gatsby';
+import { Link20 } from '@carbon/icons-react';
 
 export class PageIntro extends React.Component {
   render() {
@@ -51,11 +54,24 @@ export class h1 extends React.Component {
 export class h2 extends React.Component {
   render() {
     return (
-      <div className="ibm--row">
-        <div className="ibm--col-lg-7 ibm--offset-lg-4">
-          <h2 className="page-h2">{this.props.children}</h2>
-        </div>
-      </div>
+      <Location>
+        {({ location }) => {
+          const hash = typeof this.props.children[0] !== 'string' ? undefined : this.props.children[0].replace(/[:&]/g, '').toLowerCase().split(' ').join('-');
+          const path = location.pathname;
+          return (
+            <div className="ibm--row">
+              <div className="ibm--col-lg-7 ibm--offset-lg-4">
+                <h2 className="page-h2" id={hash}>     
+                  {hash && (<Link className="anchor-link" to={`${path}#${hash}`}>
+                    <Link20 className="anchor-link__icon" aria-label="Anchor Link" />
+                  </Link>)}
+                  {this.props.children}
+                </h2>
+              </div>
+            </div>
+          )
+        }}
+      </Location>
     );
   }
 }
@@ -63,9 +79,59 @@ export class h2 extends React.Component {
 export class h3 extends React.Component {
   render() {
     return (
+      <Location>
+        {({ location }) => {
+          const hash = typeof this.props.children[0] !== 'string' ? undefined : this.props.children[0].replace(/[:&]/g, '').toLowerCase().split(' ').join('-');
+          const path = location.pathname;
+          return (
+            <div className="ibm--row">
+              <div className="ibm--col-lg-7 ibm--offset-lg-4">
+                <h3 className="page-h3" id={hash}>     
+                  {hash && (<Link className="anchor-link" to={`${path}#${hash}`}>
+                    <Link20 className="anchor-link__icon" aria-label="Anchor Link" />
+                  </Link>)}
+                  {this.props.children}
+                </h3>
+              </div>
+            </div>
+          )
+        }}
+      </Location>
+    );
+  }
+}
+
+export class h4 extends React.Component {
+  render() {
+    return (
+      <Location>
+        {({ location }) => {
+          const hash = typeof this.props.children[0] !== 'string' ? undefined : this.props.children[0].replace(/[:&]/g, '').toLowerCase().split(' ').join('-');
+          const path = location.pathname;
+          return (
+            <div className="ibm--row">
+              <div className="ibm--col-lg-7 ibm--offset-lg-4">
+                <h4 className="page-h4" id={hash}>     
+                  {hash && (<Link className="anchor-link" to={`${path}#${hash}`}>
+                    <Link20 className="anchor-link__icon" aria-label="Anchor Link" />
+                  </Link>)}
+                  {this.props.children}
+                </h4>
+              </div>
+            </div>
+          )
+        }}
+      </Location>
+    );
+  }
+}
+
+export class h5 extends React.Component {
+  render() {
+    return (
       <div className="ibm--row">
         <div className="ibm--col-lg-7 ibm--offset-lg-4">
-          <h3 className="page-h3">{this.props.children}</h3>
+          <h5 className="page-h5">{this.props.children}</h5>
         </div>
       </div>
     );
@@ -78,30 +144,6 @@ export class DoDontGroup extends React.Component {
       <div class="ibm--row">
         <div class="ibm--col-lg-8 ibm--offset-lg-4">
           <div className="do-dont-group">{this.props.children}</div>
-        </div>
-      </div>
-    );
-  }
-}
-
-export class h4 extends React.Component {
-  render() {
-    return (
-      <div className="ibm--row">
-        <div className="ibm--col-lg-7 ibm--offset-lg-4">
-          <h4 className="page-h4">{this.props.children}</h4>
-        </div>
-      </div>
-    );
-  }
-}
-
-export class h5 extends React.Component {
-  render() {
-    return (
-      <div className="ibm--row">
-        <div className="ibm--col-lg-7 ibm--offset-lg-4">
-          <h5 className="page-h5">{this.props.children}</h5>
         </div>
       </div>
     );
