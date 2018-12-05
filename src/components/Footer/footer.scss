@@ -6,18 +6,7 @@
   font-size: rem(14px);
 }
 
-.page-footer__text {
-  font-size: rem(14px);
-
-  &:first-child {
-    padding-bottom: $spacing-md;
-  }
-
-  .page-footer__link {
-    box-shadow: 0 1px currentColor;
-  }
-}
-
+// Footer link styles
 .page-footer__link {
   color: $ibm-colors__gray--10;
   box-shadow: 0 0 currentColor;
@@ -33,6 +22,55 @@
   }
 }
 
+// Footer nav lists
+.page-footer__nav {
+  padding-bottom: rem(40px);
+  margin-bottom: $spacing-md;
+  position: relative;
+
+  &:after {
+    @include breakpoint('sm') {
+      content: '';
+      background: $ibm-colors__gray--80;
+      width: 100%;
+      height: 1px;
+      display: block;
+      position: absolute;
+      bottom: 0;
+    }
+
+    @include breakpoint('md') {
+      display: none;
+    }
+  }
+}
+
+.page-footer__nav li {
+  display: block;
+
+  @include breakpoint('sm') {
+    margin: .5rem 0;
+  }
+
+  @include breakpoint('lg') {
+    margin: 0;
+  }
+}
+
+.page-footer__text {
+  font-size: rem(14px);
+
+  &:first-child {
+    padding-bottom: $spacing-md;
+  }
+
+  .page-footer__link {
+    box-shadow: 0 1px currentColor;
+  }
+}
+
+
+// Footer paragraph 
 .page-footer__link--with-tooltip {
   font-size: rem(14px);
   position: relative;
@@ -57,4 +95,13 @@
   width: 150px;
   padding: 0.5rem;
   display: none;
+}
+
+// Footer logo
+.ibm-logo {
+  margin-top: rem(100px);
+
+  @include breakpoint('md') {
+    margin-top: rem(150px);
+  }
 }
