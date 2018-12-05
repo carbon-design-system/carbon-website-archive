@@ -56,7 +56,7 @@ export class h2 extends React.Component {
     return (
       <Location>
         {({ location }) => {
-          const hash = typeof this.props.children[0] !== 'string' ? undefined : this.props.children[0].toLowerCase().split(' ').join('-');
+          const hash = typeof this.props.children[0] !== 'string' ? undefined : this.props.children[0].replace(/[:&]/g, '').toLowerCase().split(' ').join('-');
           const path = location.pathname;
           return (
             <div className="ibm--row">
@@ -81,7 +81,7 @@ export class h3 extends React.Component {
     return (
       <Location>
         {({ location }) => {
-          const hash = typeof this.props.children[0] !== 'string' ? undefined : this.props.children[0].toLowerCase().split(' ').join('-');
+          const hash = typeof this.props.children[0] !== 'string' ? undefined : this.props.children[0].replace(/[:&]/g, '').toLowerCase().split(' ').join('-');
           const path = location.pathname;
           return (
             <div className="ibm--row">
@@ -106,7 +106,7 @@ export class h4 extends React.Component {
     return (
       <Location>
         {({ location }) => {
-          const hash = typeof this.props.children[0] !== 'string' ? undefined : this.props.children[0].toLowerCase().split(' ').join('-');
+          const hash = typeof this.props.children[0] !== 'string' ? undefined : this.props.children[0].replace(/[:&]/g, '').toLowerCase().split(' ').join('-');
           const path = location.pathname;
           return (
             <div className="ibm--row">

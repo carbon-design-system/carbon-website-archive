@@ -13,14 +13,6 @@ tabs: ['Overview', 'Product', 'Editorial']
 
 ## Typeface: IBM Plex
 
-## h2
-
-### h3
-
-#### h4
-
-##### h5
-
 Carbon uses the new open-sourced typeface, IBM Plex. It has been carefully designed to meet IBM's needs as a global technology company and reflect IBM's spirit, beliefs and design principles. IBM Plex can be accessed and downloaded from the [Plex GitHub Repo](https://github.com/ibm/plex).
 
 <type-weight type="types"></type-weight>
