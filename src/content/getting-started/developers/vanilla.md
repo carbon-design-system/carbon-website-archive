@@ -104,7 +104,7 @@ The same rules apply to all the following variables:
 ```scss
 // In styles.scss:
 // These are the default settings.
-$css--font-face: false !default;
+$css--font-face: true !default;
 $css--helpers: true !default;
 $css--body: true !default;
 $css--use-layer: true !default;
