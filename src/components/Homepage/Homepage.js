@@ -30,9 +30,13 @@ export class HomepageHeader extends React.Component {
     return (
       <div>
         <span className="homepage--dots" />
-        <section className="ibm--row homepage--header">
-          <div className="ibm--col-lg-4 ibm--offset-lg-4">
-            {homeTitle}
+        <section className="homepage--header">
+          <div className="ibm--grid">
+            <div className="ibm--row">
+              <div className="ibm--col-lg-4 ibm--offset-lg-4">
+                {homeTitle}
+              </div>
+            </div>
           </div>
           <img src={bannerImg} alt="IBM Product Design System banner image" />
         </section>

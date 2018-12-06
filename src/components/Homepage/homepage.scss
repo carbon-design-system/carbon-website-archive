@@ -40,7 +40,7 @@
   color: $ibm-colors__blue--40;
 }
 
-.container--homepage .ibm--row.homepage--header {
+.container--homepage .homepage--header {
   height: rem(560px);
   overflow: hidden;
   position: static;
@@ -49,6 +49,10 @@
     position: relative;
     z-index: 3;
   }
+}
+
+.container--homepage .homepage--header .ibm--grid {
+  height: rem(560px);
 }
 
 .homepage--header__title {
@@ -68,7 +72,8 @@
 .homepage--callout {
   position: relative;
   z-index: 2;
-  padding: 4rem $spacing-md 7rem;
+  padding-top: 4rem;
+  padding-bottom: 7rem;
   background: $ibm-colors__black;
 }
 

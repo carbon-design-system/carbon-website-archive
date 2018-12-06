@@ -112,7 +112,7 @@ export default ({ data, pageContent }) => {
       <Layout>
         <div className="container--homepage">
           <HomepageHeader />
-          <div className="page-content ibm--grid ibm--grid--padding">
+          <div className="page-content ibm--grid">
             {renderAst(post.htmlAst)}
           </div>
           <HomepageFooter />
