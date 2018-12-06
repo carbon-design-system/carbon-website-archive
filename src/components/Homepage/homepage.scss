@@ -1,3 +1,4 @@
+// Homepage inverse colors
 .container--homepage {
   background: $ibm-colors__gray--100;
   color: $ibm-colors__white;
@@ -11,48 +12,24 @@
   }
 }
 
-.container--homepage h3,
-.container--homepage .page-content > div > .ibm--row:first-child h3 {
-  margin-top: rem(64px);
-  padding-bottom: $spacing-lg;
-}
+// Homepage image header area
 
-.container--homepage .page-content {
-  padding-top: 0;
-  position: relative;
-}
-
-.container--homepage .ibm--row {
-  position: relative;
-  z-index: 2;
-}
-
-.homepage--section {
-  padding-top: $spacing-xl;
-  padding-bottom: $spacing-xl;
-}
-
-.homepage--section > div > p {
-  width: 50%;
-}
-
-.homepage--section > div > p > a {
-  color: $ibm-colors__blue--40;
-}
-
-.container--homepage .homepage--header {
-  height: rem(560px);
+.homepage--header {
+  height: 0;
   overflow: hidden;
-  position: static;
+  padding-top: 500px / 1200px * 100%;
+  position: relative;
 
-  div {
-    position: relative;
-    z-index: 3;
+  // Match max height at lg breakpoint
+  @include breakpoint('max') {
+    padding: 0;
+    height: 658px;
   }
 }
 
-.container--homepage .homepage--header .ibm--grid {
-  height: rem(560px);
+.homepage--header .ibm--grid,
+.homepage--header .ibm--row {
+  height: 100%;
 }
 
 .homepage--header__title {
@@ -64,11 +41,20 @@
 .homepage--header img {
   width: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+// Headings on homepage
+
+.container--homepage h3,
+.container--homepage .page-content > div > .ibm--row:first-child h3 {
+  margin-top: rem(64px);
+  padding-bottom: $spacing-lg;
 }
 
 // Homepage callout component (header/footer)
+
 .homepage--callout {
   position: relative;
   z-index: 2;
@@ -120,7 +106,8 @@
   fill: $ibm-colors__blue--40;
 }
 
-// Dot background patternn
+// Dots background pattern
+
 .homepage--dots {
   position: absolute;
   z-index: 1;
@@ -128,7 +115,14 @@
   height: 100%;
   left: -16px;
   background: transparent;
-  background-image: radial-gradient(#2f302d 1px, transparent 0);
+  background-image: radial-gradient(rgba(255,255,255,.15) 1px, transparent 0);
   background-size: 16px 16px;
   background-position-x: -36px;
+}
+
+// Needed for dots to appear below content
+
+.container--homepage .ibm--row {
+  position: relative;
+  z-index: 2;
 }
