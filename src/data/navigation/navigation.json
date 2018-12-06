@@ -172,95 +172,14 @@
       }
     }
   },
-  "experimental-components": {
-    "title": "Experimental Components",
+  "experimental": {
+    "title": "Experimental",
     "sub-nav": {
       "about": {
         "title": "About"
       },
       "ui-shell": {
         "title": "UI Shell"
-      },
-      "accordion": {
-        "title": "Accordion"
-      },
-      "breadcrumb": {
-        "title": "Breadcrumb"
-      },
-      "button": {
-        "title": "Button"
-      },
-      "checkbox": {
-        "title": "Checkbox"
-      },
-      "code-snippet": {
-        "title": "Code Snippet"
-      },
-      "content-switcher": {
-        "title": "Content Switcher"
-      },
-      "date-picker": {
-        "title": "Date Picker"
-      },
-      "dropdown": {
-        "title": "Dropdown"
-      },
-      "file-uploader": {
-        "title": "File Uploader"
-      },
-      "inline-loading": {
-        "title": "Inline Loading"
-      },
-      "link": {
-        "title": "Link"
-      },
-      "list": {
-        "title": "List"
-      },
-      "loading": {
-        "title": "Loading"
-      },
-      "notification": {
-        "title": "Notification"
-      },
-      "number-input": {
-        "title": "Number Input"
-      },
-      "overflow-menu": {
-        "title": "Overflow Menu"
-      },
-      "progress-indicator": {
-        "title": "Progress Indicator"
-      },
-      "radio-button": {
-        "title": "Radio Button"
-      },
-      "select": {
-        "title": "Select"
-      },
-      "slider": {
-        "title": "Slider"
-      },
-      "structured-list": {
-        "title": "Structured List"
-      },
-      "tabs": {
-        "title": "Tabs"
-      },
-      "tag": {
-        "title": "Tag"
-      },
-      "text-input": {
-        "title": "Text Input"
-      },
-      "tile": {
-        "title": "Tile"
-      },
-      "toggle": {
-        "title": "Toggle"
-      },
-      "tooltip": {
-        "title": "Tooltip"
       }
     }
   },

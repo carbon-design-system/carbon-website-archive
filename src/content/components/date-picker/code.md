@@ -1,7 +1,7 @@
 ---
 label: Components
 title: Date Picker
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
 <page-intro>**Date and time pickers** allow users to select a single or a range of dates and times.</page-intro>
@@ -10,39 +10,28 @@ tabs: ['Code', 'Usage', 'Style']
     name="Simple Date Picker"
     component="date-picker" 
     variation="date-picker"
-    codepen="POJoNb"
-    haslightversion="true"
-    hasReactVersion="true"
-    
+    experimental="true"
     >
 </component>
 <component 
     name="Single Date Picker"
     component="date-picker" 
     variation="date-picker--single"
-    codepen="VrMweY"
-    haslightversion="true"
-    hasReactVersion="true"
-    
+    experimental="true"
     >
 </component>
 <component 
     name="Range Date Picker"
     component="date-picker" 
     variation="date-picker--range"
-    codepen="aVLbNx"
-    haslightversion="true"
-    hasReactVersion="true"
-    
+    experimental="true"
     >
 </component>
-<component 
+<!--<component 
     name="Time Picker"
     component="time-picker" 
     variation="time-picker"
-    codepen="GOMKap"
-    haslightversion="true"
-    hasReactVersion="true"
+    experimental="true"
     >
-</component>
-<component-docs component="date-picker"></component-docs>
+</component>-->
+<component-docs component="date-picker" experimental="true"></component-docs>

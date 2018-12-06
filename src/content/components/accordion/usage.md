@@ -1,15 +1,16 @@
 ---
 label: Components
 title: Accordion
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
 ## General guidelines
 
-Accordions are best used when users need to consume specific areas of content within a page or when vertical space is limited.
+The accordion component delivers large amounts of content in a small space through progressive disclosure. That is, the user gets key details about the underlying content and can choose to expand that content within the constraints of the accordion. Accordions work especially well on mobile interfaces or whenever vertical space is at a premium.
 
-Use Accordions when there is enough content to condense. Avoid nested Accordions because it increases the cognitive load for users.
+Avoid "nested" accordions—that is, collapsible content within collapsible content. This type of pattern goes against UX best practices.
 
-Users may have multiple Accordions open at the same time. The entire header area is clickable to expand or collapse the content below.
+The Carbon accordion allows for multiple sections to be expanded simultaneously.    
 
-![accordion example](images/accordion-usage-1.png)
+A chevron is used to indicate the "expand/collapse" action, though the entire header area is clickable for the same action.
+
