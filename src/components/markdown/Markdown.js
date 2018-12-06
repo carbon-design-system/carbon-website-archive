@@ -197,3 +197,13 @@ export class gridWrapper extends React.Component {
     );
   }
 }
+
+export class AnchorLinks extends React.Component {
+  render() {
+    return (
+      <div className="anchor-links">
+        {this.props.children}
+      </div>
+    );
+  }
+}

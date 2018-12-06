@@ -44,6 +44,7 @@ import {
   PageIcon,
   FlexGroup,
   DoDontGroup,
+  AnchorLinks,
 } from '../components/markdown/Markdown';
 
 const renderAst = new rehypeReact({
@@ -82,6 +83,7 @@ const renderAst = new rehypeReact({
     'layer-usage': LayerUsage,
     'component-overview': ComponentOverview,
     homepage: Homepage,
+    'anchor-links': AnchorLinks,
   },
 }).Compiler;
 

@@ -16,31 +16,35 @@ The 2x Grid is the geometric foundation of all the visual elements of IBM Design
 
 ## Mini Unit
 
-The basic unit of 2x Grid geometry is the 8-pixel square Mini Unit. Multiples of mini units compose the dimensions of columns, rows, boxes, along with their margins and padding. The Mini Unit adapts to your content while maintaining a consistent visual rhythm.
-
-`vimeo: https://vimeo.com/292608020`
-
+The basic unit of 2x Grid geometry is the 8-pixel square Mini Unit. Multiples of mini units compose the dimensions of columns, rows, boxes, and their margins and padding. The mini unit adapts to your content while maintaining a consistent visual rhythm.
 
 At [breakpoint boundaries](#breakpoints), Mini Units divide the screen into a fixed master grid, and multiples of Mini Units map to [fluid grid](#fluid-grid) column widths and row heights. [Fixed boxes](#fixed-boxes) are sized in Mini Units, as are the fixed dimension of [hybrid boxes](#hybrid).
 
 [Margin](#margins) and [padding](#padding) are always applied in fixed Mini Unit multiples. Boxes are sized by applying a [sizing scale](#sizing-scale) based on either fixed Mini Units or fluid column widths, along with a core set of [aspect ratios](#aspect-ratio).
+
+`vimeo: https://vimeo.com/292608020`
+
 
 
 ## 2x Grid Fundamentals
 
 The core concept of the 2x Grid is to divide or multiply by two, forming a visual rhythm. Fluid grids are built by division, whereas fixed grids are built with multiplication. On breakpoint boundaries, these sizes match. Margins and padding are applied consistently in both cases.
 
-1.  [Columns and Rows](#columns-and-rows)
-2.  [Margins](#margins)
-3.  [Padding](#padding)
-4.  [Gutters](#gutters)
-5.  [Breakpoints](#breakpoints)
+<anchor-links>
+<ul>
+    <li><a href="#columns-and-rows">Columns and Rows</a></li>
+    <li><a href="#margins">Margins</a></li>
+    <li><a href="#padding">Padding</a></li>
+    <li><a href="#gutters">Gutters</a></li>
+    <li><a href="#breakpoints">Breakpoints</a></li>
+</ul>
+</anchor-links>
 
 ### Columns and Rows
 
 Columns and rows create key lines that are essential for visual rhythm, especially for typography. Construct columns by either dividing a space into a fluid grid, or by tiling fixed boxes in multiples.
 
-![grid columns](images/2x_grid_columns_new.png)
+![grid columns](images/layout_overview_columns-and-rows.svg)
 
 A [fluid grid](#fluid-grid) divides space by twos. This division is immediately evident in the 2x column structure. Within a breakpoint, the column count is constant and unit size scales with screen size. Choose a column count by starting with one, then divide by two as needed:
 
@@ -52,8 +56,6 @@ A [fluid grid](#fluid-grid) divides space by twos. This division is immediately 
 | 8 |
 | 16 |
 
-
-<br>
 
 For dense content, use Mini Units for further alignment and spatial guidance.
 

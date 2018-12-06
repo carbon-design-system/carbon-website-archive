@@ -162,19 +162,23 @@ h2, h3, h4, h5 {
 
 // Targets list elements when they are the first element on a page to remove top margin
 // Adds anchor link styles
-.page-content > div > .ibm--row:first-child {
-  .page-ul {
+.page-content > div > .ibm--row:first-child,
+.anchor-links {
+  .page-ul,
+  ul {
     margin-bottom: rem(72px);
+    position: relative;
   }
 
-  .page-ul > li {
+  .page-ul > li,
+  ul > li {
     font-size: rem(20px);
     list-style: none;
 
     &:before {
-      content: '↳';
+      content: "\21B3"; //"↳"
       position: absolute;
-      left: 1rem;
+      left: -1.5rem;
     }
 
     a {
