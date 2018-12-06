@@ -1,28 +1,46 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
+import React from 'react';
+import classNames from 'classnames';
 
-export default class GridWrapper extends React.Component {
-  static propTypes = {
-    children: PropTypes.node,
-    col: PropTypes.string,
-    flex: PropTypes.bool,
-  };
+const GridWrapper = ({
+  children, 
+  col_lg, 
+  flex
+}) => {
 
-  render() {
-    const { children, col, flex } = this.props;
-
-    const classNames = classnames({
-      'ibm--offset-lg-4': true,
+  const rowClasses = classNames(
+    `ibm--col-lg-${col_lg}`,
+    'ibm--offset-lg-4',
+    {
       'ibm--flex': flex,
-    });
-    
-    return (
-      <div className="ibm--row">
-        <div className={`ibm--col-lg-${col} ${classNames}`}>
-          {children}
-        </div>
+    }
+  );
+
+  return (
+    <div className="ibm--row">
+      <div className={rowClasses}>
+        {children}
       </div>
-    )
-  };
-}
+    </div>
+  )
+};
+
+GridWrapper.propTypes = {
+  children: PropTypes.node,
+
+  /**
+   * Specify the col width at large breakpoint, default is 12
+  */
+  col_lg: PropTypes.string,
+
+  /**
+   * Set to true to set display:flex | flexwrap: wrap to row
+  */
+  flex: PropTypes.bool,
+};
+
+GridWrapper.defaultProps = {
+  col_lg: '12',
+};
+
+export default GridWrapper;
