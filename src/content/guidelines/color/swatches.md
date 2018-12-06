@@ -6,7 +6,7 @@ tabs: ['Swatches', 'Usage', 'Color in UI']
 
 ## Carbon default theme
 
-<flex-group>
+<grid-wrapper col="12" flex="true">
 <color-card name="brand-01" hex="#3d70b2"></color-card>
 <color-card name="brand-02" hex="#5596e6"></color-card>
 <color-card name="brand-03" hex="#41d6c3"></color-card>
@@ -22,23 +22,23 @@ tabs: ['Swatches', 'Usage', 'Color in UI']
 <color-card name="inverse-02" hex="#272d33"></color-card>
 <color-card name="field-01" hex="#f4f7fb"></color-card>
 <color-card name="field-02" hex="#ffffff"></color-card>
-</flex-group>
+</grid-wrapper>
 
 ### Hover Colors
 
-<flex-group>
+<grid-wrapper col="12" flex="true">
 <color-card name="hover-primary" hex="#30588c"></color-card>
 <color-card name="hover-primary-text" hex="#294c86"></color-card>
 <color-card name="hover-danger" hex="#bd1427"></color-card>
 <color-card name="hover-secondary" hex="#3d70b2"></color-card>
 <color-card name="hover-row" hex="rgba(85,150,230,.1)"></color-card>
-</flex-group>
+</grid-wrapper>
 
 ### Support Colors
 
-<flex-group>
+<grid-wrapper col="12" flex="true">
 <color-card name="support-01" hex="#e0182d"></color-card>
 <color-card name="support-02" hex="#5aa700"></color-card>
 <color-card name="support-03" hex="#efc100"></color-card>
 <color-card name="support-04" hex="#5aaafa"></color-card>
-</flex-group>
+</grid-wrapper>
