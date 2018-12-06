@@ -11,6 +11,7 @@ import PageTabs from '../components/PageTabs';
 import Snippet from '../components/CodeSnippet';
 import PageTable from '../components/PageTable';
 import ClickTile from '../components/ClickableTile';
+import FeatureTile from '../components/FeatureTile';
 import DoDontExample from '../components/DoDontExample';
 import ColorBlock from '../components/ColorBlock';
 import ColorCard from '../components/ColorCard';
@@ -27,7 +28,8 @@ import MotionExample from '../components/MotionExample';
 import LayerTypes from '../components/LayerTypes';
 import LayerUsage from '../components/LayerUsage';
 import ComponentOverview from '../components/ComponentOverview';
-import Homepage from '../components/Homepage';
+import GridWrapper from '../components/GridWrapper';
+import { HomepageFooter, HomepageHeader } from '../components/Homepage/Homepage';
 
 // Custom Markdown
 import {
@@ -39,7 +41,6 @@ import {
   h5,
   ul,
   ol,
-  gridWrapper,
   PageIntro,
   PageIcon,
   FlexGroup,
@@ -59,12 +60,13 @@ const renderAst = new rehypeReact({
     ol: ol,
     pre: Snippet,
     table: PageTable,
-    'grid-wrapper': gridWrapper,
+    'grid-wrapper': GridWrapper,
     'page-intro': PageIntro,
     icon: PageIcon,
     'flex-group': FlexGroup,
     'do-dont-group': DoDontGroup,
     'clickable-tile': ClickTile,
+    'feature-tile': FeatureTile,
     'do-dont-example': DoDontExample,
     'color-block': ColorBlock,
     'color-card': ColorCard,
@@ -80,8 +82,7 @@ const renderAst = new rehypeReact({
     'motion-example': MotionExample,
     'layer-types': LayerTypes,
     'layer-usage': LayerUsage,
-    'component-overview': ComponentOverview,
-    homepage: Homepage,
+    'component-overview': ComponentOverview
   },
 }).Compiler;
 
@@ -110,9 +111,11 @@ export default ({ data, pageContent }) => {
     return (
       <Layout>
         <div className="container--homepage">
+          <HomepageHeader />
           <div className="page-content ibm--grid ibm--grid--padding">
             {renderAst(post.htmlAst)}
           </div>
+          <HomepageFooter />
         </div>
       </Layout>
     );

@@ -172,7 +172,6 @@ The carbon website has a handful of custom markdown components available for use
 - `<page-intro>`
 - `<page-intro> **Bold and blue text** </page-intro>`
 - `<icon name="icon--checkmark--solid" color="green" />`
-- `<flex-group>`
 - `<clickable-tile label="Title" author="John Smith" date="Janury 1, 2018" href="#"><img src="image.png" alt="Alt Text" type="article|resource" /></clickable-tile>`
 - `<do-dont-group>`
 - `<do-dont-example correct=true label="Ability" description="Lorem ipsum dolor sit amet" text='Example text or quote'></do-dont-example>`
@@ -184,10 +183,10 @@ The carbon website has a handful of custom markdown components available for use
 
 ### Examples
 
-#### Clickable Tile inside FlexGroup
+#### Clickable Tile
 
 ```
-<flex-group>
+
 <clickable-tile
     title="Data Table updates in Carbon React v5.22.0"
     author="Josh Black"
@@ -206,7 +205,7 @@ The carbon website has a handful of custom markdown components available for use
     >
     <img src="images/article-5.png" alt="Data Table updates in Carbon React v5.22.0" />
 </clickable-tile>
-</flex-group>
+
 ```
 
 This will render the following group of clickable tiles

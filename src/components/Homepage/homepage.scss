@@ -1,6 +1,20 @@
 .container--homepage {
   background: $ibm-colors__gray--100;
   color: $ibm-colors__white;
+
+  h2, h3, h4, h5, h6, p, li {
+    color: $ibm-colors__white;
+  }
+
+  a {
+    color: $ibm-colors__blue--40;
+  }
+}
+
+.container--homepage h3,
+.container--homepage .page-content > div > .ibm--row:first-child h3 {
+  margin-top: rem(64px);
+  padding-bottom: $spacing-lg;
 }
 
 .container--homepage .page-content {
@@ -8,15 +22,14 @@
   position: relative;
 }
 
-.homepage--section {
+.container--homepage .ibm--row {
   position: relative;
-  padding-top: $spacing-xl;
-  padding-bottom: $spacing-xl;
   z-index: 2;
 }
 
-.homepage--section h3 {
-  padding-bottom: $spacing-lg;
+.homepage--section {
+  padding-top: $spacing-xl;
+  padding-bottom: $spacing-xl;
 }
 
 .homepage--section > div > p {
@@ -27,19 +40,21 @@
   color: $ibm-colors__blue--40;
 }
 
-.homepage--header {
-  width: calc(100% - 15rem); // 100% minus the width of the left nav
-  margin-left: 15rem; // The width of the left nav
+.container--homepage .ibm--row.homepage--header {
   height: rem(560px);
   overflow: hidden;
-  position: relative;
+  position: static;
+
+  div {
+    position: relative;
+    z-index: 3;
+  }
 }
 
 .homepage--header__title {
-  left: 50%;
   position: absolute;
   bottom: 3.5rem;
-  z-index: 1;
+  z-index: 3;
 }
 
 .homepage--header img {
@@ -49,31 +64,21 @@
   left: 0;
 }
 
-.homepage--intro {
+// Homepage callout component (header/footer)
+.homepage--callout {
   position: relative;
-  background: $ibm-colors__black;
-  padding-top: 3.5rem;
-  padding-bottom: 6rem;
-  margin-bottom: $spacing-xl;
   z-index: 2;
+  padding: 4rem $spacing-md 7rem;
+  background: $ibm-colors__black;
 }
 
-.homepage--intro a {
-  color: $ibm-colors__white;
-}
-
-.homepage--intro h2 {
-  padding-bottom: $spacing-xl;
-  max-width: 80%;
-  font-size: rem(32px);
-  line-height: rem(40px);
-}
-
-.homepage--footer {
-  position: relative;
-  padding: 4rem $spacing-md 9rem;
+.homepage--callout--blue {
   background-color: $ibm-colors__blue--90;
   z-index: 2;
+}
+
+.homepage--callout a {
+  color: $ibm-colors__white;
 }
 
 .homepage--footer__info {
@@ -82,13 +87,18 @@
   align-items: flex-start;
 }
 
-.homepage--footer h2 {
+.homepage--callout h2 {
   max-width: 70%;
   font-size: rem(32px);
   line-height: rem(40px);
+  margin-bottom: 2rem;
 }
 
-.homepage--footer a {
+.homepage--callout h3 {
+  margin: 0;
+}
+
+.homepage--callout--blue a {
   display: flex;
   align-items: center;
   color: $ibm-colors__blue--40;
@@ -96,15 +106,16 @@
   margin-top: $spacing-lg;
 }
 
-.homepage--footer a:hover {
+.homepage--callout--blue a:hover {
   text-decoration: underline;
 }
 
-.homepage--footer svg {
+.homepage--callout--blue svg {
   margin-left: $spacing-md;
   fill: $ibm-colors__blue--40;
 }
 
+// Dot background patternn
 .homepage--dots {
   position: absolute;
   z-index: 1;

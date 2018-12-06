@@ -1,3 +1,3 @@
-import Homepage from './Homepage';
+import HomepageHeader from './Homepage';
 
-export default Homepage;
+export default HomepageHeader;
