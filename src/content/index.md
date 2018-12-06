@@ -2,7 +2,21 @@
 title: Homepage
 ---
 
-<homepage></homepage>
+### Getting Started
+
+<feature-tile
+    href="/getting-started/designers"
+    label="Start"
+    title="Designing">
+    <img src="homepage/images/getting-started-designers.png" alt="Get started for designers" />
+</feature-tile>
+
+<feature-tile
+    href="/getting-started/developers"
+    label="Start"
+    title="Developing">
+    <img src="homepage/images/getting-started-developers.png" alt="Get started for developers" />
+</feature-tile>
 
 ### Other Resources
 The Component Libraries give developers a collection of re-usable React components they can use for building websites and user interfaces. See a [complete list of resources](/resources).
@@ -75,5 +89,3 @@ The Component Libraries give developers a collection of re-usable React componen
     <img src="resources/images/article-6.png" alt="Data Table updates in Carbon React v5.22.0" />
 </clickable-tile>
 </grid-wrapper>
-
-<homepage-footer></homepage-footer>

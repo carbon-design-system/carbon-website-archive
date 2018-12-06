@@ -11,7 +11,8 @@
   }
 }
 
-.container--homepage h3 {
+.container--homepage h3,
+.container--homepage .page-content > div > .ibm--row:first-child h3 {
   margin-top: rem(64px);
   padding-bottom: $spacing-lg;
 }
@@ -63,31 +64,21 @@
   left: 0;
 }
 
-.homepage--intro {
+// Homepage callout component (header/footer)
+.homepage--callout {
   position: relative;
-  background: $ibm-colors__black;
-  padding-top: 3.5rem;
-  padding-bottom: 6rem;
-  margin-bottom: $spacing-xl;
   z-index: 2;
+  padding: 4rem $spacing-md 7rem;
+  background: $ibm-colors__black;
 }
 
-.homepage--intro a {
-  color: $ibm-colors__white;
-}
-
-.homepage--intro h2 {
-  padding-bottom: $spacing-xl;
-  max-width: 80%;
-  font-size: rem(32px);
-  line-height: rem(40px);
-}
-
-.homepage--footer {
-  position: relative;
-  padding: 4rem $spacing-md 9rem;
+.homepage--callout--blue {
   background-color: $ibm-colors__blue--90;
   z-index: 2;
+}
+
+.homepage--callout a {
+  color: $ibm-colors__white;
 }
 
 .homepage--footer__info {
@@ -96,13 +87,18 @@
   align-items: flex-start;
 }
 
-.homepage--footer h2 {
+.homepage--callout h2 {
   max-width: 70%;
   font-size: rem(32px);
   line-height: rem(40px);
+  margin-bottom: 2rem;
 }
 
-.homepage--footer a {
+.homepage--callout h3 {
+  margin: 0;
+}
+
+.homepage--callout--blue a {
   display: flex;
   align-items: center;
   color: $ibm-colors__blue--40;
@@ -110,15 +106,16 @@
   margin-top: $spacing-lg;
 }
 
-.homepage--footer a:hover {
+.homepage--callout--blue a:hover {
   text-decoration: underline;
 }
 
-.homepage--footer svg {
+.homepage--callout--blue svg {
   margin-left: $spacing-md;
   fill: $ibm-colors__blue--40;
 }
 
+// Dot background patternn
 .homepage--dots {
   position: absolute;
   z-index: 1;
