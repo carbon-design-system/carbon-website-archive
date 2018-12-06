@@ -142,14 +142,14 @@ class Layout extends React.Component {
               ]}>
               <html lang="en" />
             </Helmet>
-            <Header>
+            <Header aria-label="Header">
               <SkipToContent />
               <HeaderMenuButton
                 aria-label="Open menu"
                 onClick={(this.onToggleBtnClick)}
               />
               {isInternal ? (
-                <HeaderName prefix="IBM" to="/" element={Link}>
+                <HeaderName prefix="IBM" to="/" element={Link} href="/">
                   Product Design
                 </HeaderName>
               ) : (

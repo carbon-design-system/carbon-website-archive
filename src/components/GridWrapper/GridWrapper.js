@@ -36,7 +36,7 @@ GridWrapper.propTypes = {
   /**
    * Set to true to set display:flex | flexwrap: wrap to row
   */
-  flex: PropTypes.bool,
+  flex: PropTypes.string,
 };
 
 GridWrapper.defaultProps = {
