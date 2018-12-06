@@ -39,18 +39,21 @@
   color: $ibm-colors__blue--40;
 }
 
-.homepage--header {
-  //width: calc(100% - 15rem); // 100% minus the width of the left nav
-  margin-left: 15rem; // The width of the left nav
+.container--homepage .ibm--row.homepage--header {
   height: rem(560px);
   overflow: hidden;
-  position: relative;
+  position: static;
+
+  div {
+    position: relative;
+    z-index: 3;
+  }
 }
 
 .homepage--header__title {
   position: absolute;
   bottom: 3.5rem;
-  z-index: 1;
+  z-index: 3;
 }
 
 .homepage--header img {
