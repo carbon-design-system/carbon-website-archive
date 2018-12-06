@@ -4,7 +4,7 @@
 }
 
 @include breakpoint('lg') {
-    .bx--side-nav,
+    .bx--side-nav.side-nav,
     .side-nav__closed,
     .side-nav__closed--final {
         width: rem(256px);
@@ -13,7 +13,7 @@
 
 
 // Bottom links
-.bx--side-nav__item {
+.side-nav.bx--side-nav__item {
     &:nth-last-child(2) {
         margin-top: $spacing-lg;
 
@@ -54,20 +54,20 @@
 
 /* temp styles until shell is updated */
 
-.bx--side-nav__footer {
+.bx--side-nav.side-nav .bx--side-nav__footer {
     display: none;
 }
 
-.bx--side-nav__menu[role='menu'] a.bx--side-nav__link[role='menuitem'] {
+.bx--side-nav.side-nav .bx--side-nav__menu[role='menu'] a.bx--side-nav__link[role='menuitem'] {
     padding-left: 2rem;
 }
 
-.bx--side-nav__icon:not(.bx--side-nav__submenu-chevron) {
+.bx--side-nav.side-nav .bx--side-nav__icon:not(.bx--side-nav__submenu-chevron) {
     display: none;
 }
 
-.bx--side-nav__submenu-title,
-.bx--side-nav__link-text {
+.bx--side-nav.side-nav .bx--side-nav__submenu-title,
+.bx--side-nav.side-nav .bx--side-nav__link-text {
     padding-left: 1rem;
 }
 

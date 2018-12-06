@@ -34,4 +34,4 @@ tabs: ['Code', 'Usage']
     experimental="true"
     >
 </component>-->
-<component-docs component="date-picker"></component-docs>
+<component-docs component="date-picker" experimental="true"></component-docs>

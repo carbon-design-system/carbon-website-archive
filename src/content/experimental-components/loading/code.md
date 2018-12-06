@@ -20,4 +20,4 @@ tabs: ['Code', 'Usage']
     experimental="true"
     >
 </component>
-<component-docs component="loading"></component-docs>
+<component-docs component="loading" experimental="true"></component-docs>

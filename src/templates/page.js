@@ -82,7 +82,7 @@ const renderAst = new rehypeReact({
     'layer-types': LayerTypes,
     'layer-usage': LayerUsage,
     'component-overview': ComponentOverview,
-    'homepage': Homepage,
+    homepage: Homepage,
   },
 }).Compiler;
 
@@ -95,7 +95,7 @@ export default ({ data, pageContent }) => {
 
   const { GATSBY_CARBON_ENV } = process.env;
   const isInternal = GATSBY_CARBON_ENV !== 'internal' && internal == true;
-  const homepage = post.frontmatter.title === 'Homepage' == true;
+  const homepage = (post.frontmatter.title === 'Homepage') == true;
 
   const classNames = classnames({
     'container--component': post.frontmatter.label === 'Components',
@@ -111,21 +111,19 @@ export default ({ data, pageContent }) => {
     return (
       <Layout>
         <div className="container--homepage">
-          <div className="page-content ibm--grid">
+          <div className="page-content ibm--grid ibm--grid--padding">
             {renderAst(post.htmlAst)}
           </div>
         </div>
       </Layout>
-    )
-  }
-  else {
+    );
+  } else {
     return (
       <Layout>
         <div className={classNames}>
           <PageHeader
             title={post.frontmatter.title}
-            label={post.frontmatter.label}
-          >
+            label={post.frontmatter.label}>
             {!(tabs === null) && (
               <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
             )}

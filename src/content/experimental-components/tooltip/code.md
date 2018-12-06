@@ -28,4 +28,4 @@ tabs: ['Code', 'Usage']
     >
 </component>
 
-<component-docs component="tooltip"></component-docs>
+<component-docs component="tooltip" experimental="true"></component-docs>

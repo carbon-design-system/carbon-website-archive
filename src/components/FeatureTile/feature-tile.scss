@@ -1,0 +1,48 @@
+a.feature-tile {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: rem(960px); // grid?
+  height: rem(320px); // grid?
+  margin-bottom: $spacing-lg;
+}
+
+a.feature-tile:hover .feature-tile__info {
+  background-color: $ibm-colors__gray--80;
+}
+
+.feature-tile__info {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: $ibm-colors__gray--90;
+  width: rem(320px);
+  height: rem(160px);
+  padding: $spacing-md;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.feature-tile__info p {
+  padding-bottom: 0;
+  line-height: 1.25;
+}
+
+.feature-tile__info svg {
+  position: absolute;
+  bottom: $spacing-lg;
+  right: $spacing-lg;
+  fill: $ibm-colors__gray--30;
+}
+
+.feature-tile__label {
+  font-size: rem(14px);
+  color: $ibm-colors__gray--30;
+}
+
+.feature-tile__title {
+  font-size: rem(20px);
+  color: $ibm-colors-_gray--10;
+}

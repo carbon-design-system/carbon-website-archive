@@ -13,4 +13,4 @@ tabs: ['Code', 'Usage']
     experimental="true"
     >
 </component>
-<component-docs component="progress-indicator"></component-docs>
+<component-docs component="progress-indicator" experimental="true"></component-docs>

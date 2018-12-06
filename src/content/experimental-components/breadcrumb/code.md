@@ -13,4 +13,4 @@ tabs: ['Code', 'Usage']
     experimental="true"
     >
 </component>
-<component-docs component="breadcrumb"></component-docs>
+<component-docs component="breadcrumb" experimental="true"></component-docs>

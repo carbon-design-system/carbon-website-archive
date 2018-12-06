@@ -13,4 +13,4 @@ tabs: ['Code', 'Usage']
     experimental="true"
     >
 </component>
-<component-docs component="overflow-menu"></component-docs>
+<component-docs component="overflow-menu" experimental="true"></component-docs>

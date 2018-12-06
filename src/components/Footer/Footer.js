@@ -4,6 +4,7 @@ import Packages from '../../../package.json';
 import classNames from 'classnames';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import { Link } from 'gatsby';
+import IBMLogo from '../../content/global/images/footer_8bar.svg';
 
 class Footer extends Component {
   static propTypes = {
@@ -42,7 +43,7 @@ class Footer extends Component {
       <footer className="page-footer">
         <div className="ibm--grid">
           <div className="ibm--row">
-            <nav className="page-footer__nav ibm--col-lg-2 ibm--offset-lg-4">
+            <nav className="page-footer__nav ibm--col-lg-2 ibm--col-md-2 ibm--offset-lg-4">
               <ul>
                 <li>
                   <Link to="/contributing/designers" className="page-footer__link">Contribute</Link>
@@ -73,7 +74,7 @@ class Footer extends Component {
                 </li>
               </ul>
             </nav>
-            <nav className="page-footer__nav ibm--col-lg-2">
+            <nav className="page-footer__nav ibm--col-lg-2 ibm--col-md-2">
               <ul>
                 <li>
                   <a
@@ -107,7 +108,7 @@ class Footer extends Component {
                 </li>
               </ul>
             </nav>
-            <div className="page-footer__content ibm--col-lg-5 ibm--offset-lg-3">
+            <div className="page-footer__content ibm--col-lg-5 ibm--col-md-4 ibm--offset-lg-3">
               <p className="page-footer__text">
                 Have questions?
                 <CopyToClipboard
@@ -166,12 +167,11 @@ class Footer extends Component {
             <p className="page-footer__text">Copyright © {currentYear} IBM</p>
           </div>
           </div>
-          {/*<div className="ibm--row">
+          <div className="ibm--row">
             <div className="ibm--col-lg-12 ibm--offset-lg-4">
-              IBM
+              <img className="ibm-logo" src={IBMLogo} alt="IBM" />
             </div>
-          </div>*/
-          }
+          </div>
         </div>
       </footer>
     );

@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import { CheckmarkFilled24, ErrorFilled24 } from '@carbon/icons-react';
+import { CheckmarkFilled24, CloseFilled16 } from '@carbon/icons-react';
+// need to update to CloseFilled24 once that exists
 
 export default class DoDontExample extends React.Component {
   static propTypes = {
@@ -55,7 +56,7 @@ export default class DoDontExample extends React.Component {
             {correct ? (
               <CheckmarkFilled24 className={iconClassNames} />
             ) : (
-              <ErrorFilled24 className={iconClassNames} />
+              <CloseFilled16 className={iconClassNames} />
             )}
             <div className="example__content">
               {children}
