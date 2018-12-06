@@ -27,7 +27,8 @@ import MotionExample from '../components/MotionExample';
 import LayerTypes from '../components/LayerTypes';
 import LayerUsage from '../components/LayerUsage';
 import ComponentOverview from '../components/ComponentOverview';
-import Homepage from '../components/Homepage';
+import GridWrapper from '../components/GridWrapper';
+import { Homepage, HomepageFooter } from '../components/Homepage/Homepage';
 
 // Custom Markdown
 import {
@@ -39,7 +40,6 @@ import {
   h5,
   ul,
   ol,
-  gridWrapper,
   PageIntro,
   PageIcon,
   FlexGroup,
@@ -59,7 +59,7 @@ const renderAst = new rehypeReact({
     ol: ol,
     pre: Snippet,
     table: PageTable,
-    'grid-wrapper': gridWrapper,
+    'grid-wrapper': GridWrapper,
     'page-intro': PageIntro,
     icon: PageIcon,
     'flex-group': FlexGroup,
@@ -82,6 +82,7 @@ const renderAst = new rehypeReact({
     'layer-usage': LayerUsage,
     'component-overview': ComponentOverview,
     homepage: Homepage,
+    'homepage-footer': HomepageFooter,
   },
 }).Compiler;
 

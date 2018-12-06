@@ -1,6 +1,19 @@
 .container--homepage {
   background: $ibm-colors__gray--100;
   color: $ibm-colors__white;
+
+  h2, h3, h4, h5, h6, p, li {
+    color: $ibm-colors__white;
+  }
+
+  a {
+    color: $ibm-colors__blue--40;
+  }
+}
+
+.container--homepage h3 {
+  margin-top: rem(64px);
+  padding-bottom: $spacing-lg;
 }
 
 .container--homepage .page-content {
@@ -8,15 +21,14 @@
   position: relative;
 }
 
-.homepage--section {
+.container--homepage .ibm--row {
   position: relative;
-  padding-top: $spacing-xl;
-  padding-bottom: $spacing-xl;
   z-index: 2;
 }
 
-.homepage--section h3 {
-  padding-bottom: $spacing-lg;
+.homepage--section {
+  padding-top: $spacing-xl;
+  padding-bottom: $spacing-xl;
 }
 
 .homepage--section > div > p {
@@ -28,7 +40,7 @@
 }
 
 .homepage--header {
-  width: calc(100% - 15rem); // 100% minus the width of the left nav
+  //width: calc(100% - 15rem); // 100% minus the width of the left nav
   margin-left: 15rem; // The width of the left nav
   height: rem(560px);
   overflow: hidden;
@@ -36,7 +48,6 @@
 }
 
 .homepage--header__title {
-  left: 50%;
   position: absolute;
   bottom: 3.5rem;
   z-index: 1;

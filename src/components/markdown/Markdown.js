@@ -185,15 +185,3 @@ export class p extends React.Component {
     );
   }
 }
-
-export class gridWrapper extends React.Component {
-  render() {
-    return (
-      <div className="ibm--row">
-        <div className="ibm--col-lg-12 ibm--offset-lg-4">
-          {this.props.children}
-        </div>
-      </div>
-    );
-  }
-}
