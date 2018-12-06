@@ -25,8 +25,6 @@ import ComponentStatus from '../components/ComponentStatus';
 import ComponentReact from '../components/ComponentReact';
 import Glossary from '../components/Glossary';
 import MotionExample from '../components/MotionExample';
-import LayerTypes from '../components/LayerTypes';
-import LayerUsage from '../components/LayerUsage';
 import ComponentOverview from '../components/ComponentOverview';
 import GridWrapper from '../components/GridWrapper';
 import { HomepageFooter, HomepageHeader } from '../components/Homepage/Homepage';
@@ -80,8 +78,6 @@ const renderAst = new rehypeReact({
     'component-status': ComponentStatus,
     glossary: Glossary,
     'motion-example': MotionExample,
-    'layer-types': LayerTypes,
-    'layer-usage': LayerUsage,
     'component-overview': ComponentOverview
   },
 }).Compiler;
@@ -112,7 +108,7 @@ export default ({ data, pageContent }) => {
       <Layout>
         <div className="container--homepage">
           <HomepageHeader />
-          <div className="page-content ibm--grid ibm--grid--padding">
+          <div className="page-content ibm--grid">
             {renderAst(post.htmlAst)}
           </div>
           <HomepageFooter />

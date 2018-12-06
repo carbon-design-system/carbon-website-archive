@@ -11,9 +11,8 @@ export class HomepageHeader extends React.Component {
   render() {
     const { GATSBY_CARBON_ENV } = process.env;
     const isInternal = GATSBY_CARBON_ENV == 'internal';
-
     // Banner image
-    const bannerImg = require('../../content/homepage/images/homepage-placeholder-img.png');
+    const bannerImg = require('../../content/homepage/images/homepage_img.jpg');
 
     const homeTitle = isInternal ? (
       <h3 className="homepage--header__title">
@@ -30,9 +29,13 @@ export class HomepageHeader extends React.Component {
     return (
       <div>
         <span className="homepage--dots" />
-        <section className="ibm--row homepage--header">
-          <div className="ibm--col-lg-4 ibm--offset-lg-4">
-            {homeTitle}
+        <section className="homepage--header">
+          <div className="ibm--grid">
+            <div className="ibm--row">
+              <div className="ibm--col-lg-4 ibm--offset-lg-4">
+                {homeTitle}
+              </div>
+            </div>
           </div>
           <img src={bannerImg} alt="IBM Product Design System banner image" />
         </section>
