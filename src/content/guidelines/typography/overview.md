@@ -67,35 +67,35 @@ Each weight has an italic style, which should only be used when you need to emph
 ## Type Color
 Type color should be carefully considered. Legibility and accessibility are two keys. Keep type color neutral in running text. Use primary blue for primary actions. 
 
-<do-dont-group>
+<grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true>
         <img src="images/typography_1.svg" alt="Neutral color for text">    
     </do-dont-example>
     <do-dont-example>
         <img src="images/typography_2.svg" alt="I'm a magenta sentence for no reason">    
     </do-dont-example>
-</do-dont-group>
-<do-dont-group>
+</grid-wrapper>
+<grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true dark="true">
         <img src="images/typography_3.svg" alt="Neutral color for text">    
     </do-dont-example>
     <do-dont-example dark="true">
         <img src="images/typography_4.svg" alt="Color is not for decoration">
     </do-dont-example>
-</do-dont-group>
-<do-dont-group>
+</grid-wrapper>
+<grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true" label="Core blue colors are used for text links and primary actions">
         <img src="images/typography_5.svg" alt="Link with icon">
     </do-dont-example>
     <do-dont-example correct=true" label="Secondary actions use Gray 100 and icons">
         <img src="images/typography_6.svg" alt="Download with icon">
     </do-dont-example>
-</do-dont-group>
-<do-dont-group>
+</grid-wrapper>
+<grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Other use cases for colored type are code snippets, warnings, alerts, etc.">
         <img src="images/typography_7.svg" alt="Oops something went wrong! colored text">
     </do-dont-example>
     <do-dont-example correct=true>
         <img src="images/typography_8.svg" alt="Code sinppet with colored highlight type">
     </do-dont-example>
-</do-dont-group>
+</grid-wrapper>

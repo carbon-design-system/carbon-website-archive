@@ -10,10 +10,13 @@
 // Example
 .example {
   margin-bottom: 36px;
-  width: 50%;
 
   @include breakpoint('sm') {
     width: 100%;
+  }
+
+  @include breakpoint('md') {
+    width: calc(50% - 16px);
   }
 
   &:first-child {

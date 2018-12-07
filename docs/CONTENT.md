@@ -173,15 +173,34 @@ The carbon website has a handful of custom markdown components available for use
 - `<page-intro> **Bold and blue text** </page-intro>`
 - `<icon name="icon--checkmark--solid" color="green" />`
 - `<clickable-tile label="Title" author="John Smith" date="Janury 1, 2018" href="#"><img src="image.png" alt="Alt Text" type="article|resource" /></clickable-tile>`
-- `<do-dont-group>`
 - `<do-dont-example correct=true label="Ability" description="Lorem ipsum dolor sit amet" text='Example text or quote'></do-dont-example>`
 - `<color-block showhex="true" size="xs">#ffaaaa</color-block>`
   - `size` takes values of `xs`, `s`, `m`, `l` (12px, 24px, 40px, 80px respectively)
   - `size` also accepts a number (e.g. `size="200"`, which would render a square that is 200px x 200px)
   - leaving out these extra properties will default to no label, and a swatch size of 24px
 - `<color-card name="$ui-01" hex="#ffffff" border="true" small="true"></color-card>`
+- `<anchor-links>`
+- `<grid-wrapper col_lg="12" flex="true>` 
+  - `col_lg` Specify the col width at large breakpoint, default is 12
+  - `flex` Set to true to set display:flex | flexwrap: wrap to row 
 
 ### Examples
+
+#### Anchor Links
+
+This is a wrapper component to display a list as an anchor link list
+
+```
+<anchor-links>
+<ul>
+    <li><a href="#columns-and-rows">Columns and Rows</a></li>
+    <li><a href="#margins">Margins</a></li>
+    <li><a href="#padding">Padding</a></li>
+    <li><a href="#gutters">Gutters</a></li>
+    <li><a href="#breakpoints">Breakpoints</a></li>
+</ul>
+</anchor-links>
+```
 
 #### Clickable Tile
 
@@ -217,10 +236,10 @@ This will render the following group of clickable tiles
 ##### With text examples:
 
 ```
-<do-dont-group>
+<grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Active Voice" text='"In the Limits window, specify the minimum and maximum values."'></do-dont-example>
     <do-dont-example label='Passive Voice' text='"The Limits window is used to specify the minimum and maximum values."'></do-dont-example>
-</do-dont-group>
+</grid-wrapper>
 ```
 
 This will render the following set of examples:
@@ -231,14 +250,14 @@ This will render the following set of examples:
 ##### With image examples:
 
 ```
-<do-dont-group>
+<grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct="true" label='Image Test'>
         <img src='images/img-test.png' />
     </do-dont-example>
     <do-dont-example label='Image Test' >
         <img src='images/img-test.png' />
     </do-dont-example>
-</do-dont-group>
+</grid-wrapper>
 ```
 
 This will render the following set of examples:
