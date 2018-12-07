@@ -1,5 +1,5 @@
 ---
-label: Component
+label: Experimental
 title: Form
 tabs: ['Code', 'Usage']
 ---
@@ -7,7 +7,7 @@ tabs: ['Code', 'Usage']
 <page-intro>**Forms** are used for submitting data.</page-intro>
 
 <component 
-    name="Form"
+    name="Experimental Form"
     component="form" 
     variation="form"
     experimental="true"
