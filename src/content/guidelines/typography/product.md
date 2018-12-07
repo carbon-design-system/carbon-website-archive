@@ -14,4 +14,13 @@ Type tokens are simply pre-set configurations of typographic elements (font-size
 
 Even though IBM Plex contains a wide range of scales, it’s important to use a curated type set. For a clear and focused reading experience, consider content needs and how type works across various screen sizes.
 
-**add list of tokens here**
+#### Supporting styles
+<type-spec 
+    token="code-01" 
+    type="IBM Plex Mono" 
+    size="12px / .75rem" 
+    weight="400 / Regular" 
+    letter_spacing=".32px" 
+    line-height="1">
+This is for inline code snippets and smaller code elements.
+</type-spec>

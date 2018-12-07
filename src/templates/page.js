@@ -19,6 +19,7 @@ import IconLibrary from '../components/IconLibrary';
 import IconLibraryExperimental from '../components/IconLibrary/IconLibraryExperimental';
 import TypeScaleTable from '../components/TypeScaleTable';
 import TypeWeight from '../components/TypeWeight';
+import TypeSpec from '../components/TypeSpec';
 import ComponentCode from '../components/ComponentCode';
 import ComponentDocs from '../components/ComponentDocs';
 import ComponentStatus from '../components/ComponentStatus';
@@ -69,6 +70,7 @@ const renderAst = new rehypeReact({
     'icon-library-experimental': IconLibraryExperimental,
     'type-scale-table': TypeScaleTable,
     'type-weight': TypeWeight,
+    'type-spec': TypeSpec,
     component: ComponentCode,
     'component-react': ComponentReact,
     'component-docs': ComponentDocs,
