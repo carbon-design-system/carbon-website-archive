@@ -43,6 +43,7 @@ import {
   PageIcon,
   FlexGroup,
   DoDontGroup,
+  AnchorLinks,
 } from '../components/markdown/Markdown';
 
 const renderAst = new rehypeReact({
@@ -78,7 +79,8 @@ const renderAst = new rehypeReact({
     'component-status': ComponentStatus,
     glossary: Glossary,
     'motion-example': MotionExample,
-    'component-overview': ComponentOverview
+    'component-overview': ComponentOverview,
+    'anchor-links': AnchorLinks,
   },
 }).Compiler;
 
