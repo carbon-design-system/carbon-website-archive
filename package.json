@@ -45,7 +45,6 @@
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "3.0.0",
     "gatsby-plugin-sass": "2.0.1",
-    "gatsby-plugin-sharp": "2.0.5",
     "gatsby-react-router-scroll": "^2.0.0",
     "gatsby-remark-autolink-headers": "^2.0.6",
     "gatsby-remark-component": "^1.1.3",

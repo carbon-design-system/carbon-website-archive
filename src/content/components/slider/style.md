@@ -10,7 +10,7 @@ tabs: ['Code', 'Usage', 'Style']
 | --------------------------- | ---------------- | --------- | ------- |
 | `.bx--slider__thumb`        | fill             | $brand-01 | #3d70b2 |
 | `.bx--slider__filled-track` | background-color | $brand-01 | #3d70b2 |
-| `.bx--slider__track`        | background-color | $ui-05    | #5a6872 |
+| `.bx--slider__track`        | background-color | $ui-04    | #8897a2 |
 | `.bx--label`                | color            | $text-01  | #152935 |
 | `.bx--slider__range-label`  | color            | $text-02  | #5a6872 |
 

@@ -11,11 +11,11 @@ All steps that have already been completed are indicated by an outlined circle w
 | Class                                                | Property         | SCSS      | HEX     |
 | ---------------------------------------------------- | ---------------- | --------- | ------- |
 | `.bx--progress-step svg`                             | fill             | $brand-01 | #3d70b2 |
-| `.bx--progress-step--incomplete circle`              | fill             | $text-02  | #5a6872 |
+| `.bx--progress-step--incomplete circle`              | fill             | $ui-05    | #8897a2 |
 | `.bx--progress-step--current .bx--progress-line`     | background-color | $brand-01 | #3d70b2 |
 | `.bx--progress-step--incomplete .bx--progress-line`  | background-color | $ui-05    | #5a6872 |
-| `.bx--progress-step--complete .bx--progress-label`   | color            | $brand-01 | #3d70b2 |
-| `.bx--progress-step--incomplete .bx--progress-label` | color            | $ui-05    | #5a6872 |
+| `.bx--progress-step--complete .bx--progress-label`   | text color       | $brand-01 | #3d70b2 |
+| `.bx--progress-step--incomplete .bx--progress-label` | text color       | $ui-05    | #5a6872 |
 
 ---
 

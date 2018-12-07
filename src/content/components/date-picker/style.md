@@ -19,7 +19,7 @@ If a `min date` is set on the calendar, then any text appearing before that date
 | `.bx--date-picker__input.bx--text-input--light` | background-color | $field-02 | #ffffff |
 | `.bx--label`                                    | color            | $text-01  | #152935 |
 | `.bx--date-picker__calendar`                    | background-color | $ui-01    | #ffffff |
-| `.bx--date-picker__day.selected`                | border           | $text-01  | #152935 |
+| `.bx--date-picker__day.selected`                | color            | $text-01  | #152935 |
 | `.bx--date-picker__day.inRange`                 | background-color | $ui-02    | #f4f7fb |
 | `.bx--date-picker__icon`                        | fill             | $brand-01 | #3d70b2 |
 | `.bx--date-picker__day.today::after`            | background-color | $brand-01 | #3d70b2 |
@@ -31,13 +31,14 @@ _Date Picker example using both $field-02 (top) and $field-01 (bottom)_
 
 ### States
 
-| Class                                                      | Property      | SCSS        | HEX     |
-| ---------------------------------------------------------- | ------------- | ----------- | ------- |
-| `.bx--date-picker__input:focus`                            | border-bottom | $brand-01   | #3d70b2 |
-| `.bx--date-picker__input[data-invalid]`                    | box-shadow    | $support-01 | #e0182d |
-| `.bx--form-requirement`                                    | color         | $support-01 | #e0182d |
-| `.bx--date-picker__input:focus ~ .bx--label`               | color         | $brand-01   | #3d70b2 |
-| `.bx--date-picker__input[data-invalid]:focus + .bx--label` | border-bottom | $support-01 | #e0182d |
+| Class                                                      | Property         | SCSS        | HEX     |
+| ---------------------------------------------------------- | ---------------- | ----------- | ------- |
+| `.bx--date-picker__day:hover`                              | background-color | $ui-02    | #f4f7fb |
+| `.bx--date-picker__input:focus`                            | border-bottom    | $brand-01   | #3d70b2 |
+| `.bx--date-picker__input[data-invalid]`                    | box-shadow       | $support-01 | #e0182d |
+| `.bx--form-requirement`                                    | color            | $support-01 | #e0182d |
+| `.bx--date-picker__input:focus ~ .bx--label`               | color            | $brand-01   | #3d70b2 |
+| `.bx--date-picker__input[data-invalid]:focus + .bx--label` | border-bottom    | $support-01 | #e0182d |
 
 **Active:** Placeholder text should remain when the user clicks into the text input and gets a cursor. Once the user starts typing the hint text is replaced with the user input text.
 
