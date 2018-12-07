@@ -203,32 +203,6 @@
       }
     }
   },
-  "data-visualization": {
-    "title": "Data Visualization",
-    "sub-nav": {
-      "overview": {
-        "title": "Overview"
-      },
-      "bar-graph": {
-        "title": "Bar Graph"
-      },
-      "gauge": {
-        "title": "Gauge"
-      },
-      "line-graph": {
-        "title": "Line Graph"
-      },
-      "pie-chart": {
-        "title": "Pie Chart"
-      },
-      "scatter-plot": {
-        "title": "Scatter Plot"
-      },
-      "tooltip": {
-        "title": "Tooltip"
-      }
-    }
-  },
   "resources": {
     "title": "Resources"
   },
