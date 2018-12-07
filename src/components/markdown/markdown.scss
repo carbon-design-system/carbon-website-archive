@@ -129,6 +129,7 @@ h2, h3, h4, h5 {
   @include typescale('epsilon');
   margin: 0 0 $spacing-lg $spacing-lg;
   line-height: 1.75;
+  position: relative;
 }
 
 .page-ul > li {
@@ -183,7 +184,7 @@ h2, h3, h4, h5 {
     &:before {
       content: '↳';
       position: absolute;
-      left: 1rem;
+      left: -1.5rem;
     }
 
     a {
