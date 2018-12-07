@@ -7,8 +7,9 @@
 
   thead {
     th {
-      @include type-style('body-02');
-      font-weight: font-weight('semibold');
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-weight: 600;
       color: $text-01;
       padding: $spacing-md;
       text-align: left;
@@ -22,7 +23,7 @@
       border-bottom: 1px solid $ui-03;
 
       td {
-        @include type-style('body-02');
+        font-size: .875rem;
         color: $text-01;
         padding: $spacing-md;
 

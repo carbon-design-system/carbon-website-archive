@@ -16,7 +16,7 @@ const TypeSpec = ({
   return (
     <div className="ibm--row type-spec">
       <div className="type-spec__example ibm--offset-lg-4 ibm--col-lg-8 ibm--col-md-5">
-        <div>
+        <div className={token}>
 
           {children}
         </div>
