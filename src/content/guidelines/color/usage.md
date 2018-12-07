@@ -6,50 +6,69 @@ tabs: ['Swatches', 'Usage']
 
 <page-intro>**Color** brings a design to life. Color is versatile; it's used to express emotion and tone, as well as place emphasis and create associations. Color should always be used in meaningful and intentional ways in order to create patterns and visual cues.</page-intro>
 
-## Color palette
+## Color in UI
 
-The Carbon color palette is designed and implemented in a themable manner. The universal color variables are determined by common roles and usage; it is not based singularly on a color value (i.e. unique hex code). The same color value may be assigned to multiple variables in a theme's palette when the values have distinctly different roles.
+Carbon color application is designed and implemented in a themable manner. The universal color tokens are determined by common roles and usage; it is not based singularly on a color value (i.e. unique hex code). The same color value may be assigned to multiple tokens in a theme when the values have distinctly different roles.
 
-A universal variable can also have multiple associated roles when the color is consistently used across those roles. This allows for uniform color application across themes while giving each theme the freedom to express its own individuality at a more detailed level.
+A color token can also have multiple associated roles when the color is consistently used across those roles. This allows for uniform color application across themes while giving each theme the freedom to express its own individuality.
 
 ### Color terms
 
-| Term         | Definition                                                                                                                                                               |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Value**    | A unique color (hex code) assigned to a universal variable                                                                                                               |
-| **Role**     | The systematic usage/s of a color value                                                                                                                                  |
-| **Variable** | The code identifier for a unique role or set of roles. Variables are universal and never change across themes. Within a theme variables are assigned appropriate values. |
-| **Theme**    | The set of unique color values assigned to the universal palette                                                                                                         |
-| **Palette**  | The complete set of universal variables. The palette is the naming conventions of colors used in the UI. Each theme will use the same palette of variables.              |
+| Term         | Definition                                                                                                  |
+| ------------ | ----------------------------------------------------------------------------------------------------------- |
+| **Value**    | A unique color (hex code) assigned to a universal token                                                     |
+| **Role**     | The systematic usage/s of a color value                                                                     |
+| **Token**    | The code identifier for a unique role or set of roles. Tokens are universal and never change across themes. |
+| **Theme**    | The set of unique color values assigned to each color token                                                 |
 
-## Color roles
+## Color tokens
 
-| Variable                | Role(s)                                                                                                            | Value                                                       |
+| Token                   | Role(s)                                                                                                            | Value                                                       |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------- |
-| **$brand-01**           | Primary brand <br /> Interactive text <br /> Primary icon color <br /> Border highlight <br /> Emphasis background | <color-block showhex="true" size="xs">#3d70b2</color-block> |
-| **$brand-02**           | Supporting brand                                                                                                   | <color-block showhex="true" size="xs">#5596e6</color-block> |
-| **$brand-03**           | Tertiary brand <br /> Loading                                                                                      | <color-block showhex="true" size="xs">#00b4a0</color-block> |
-| **$ui-01**              | Primary background <br /> Layer 1 background                                                                       | <color-block showhex="true" size="xs">#ffffff</color-block> |
-| **$ui-02**              | Default page background <br /> Layer 0 background <br /> Secondary background                                      | <color-block showhex="true" size="xs">#f4f7fb</color-block> |
-| **$ui-03**              | Subtle border                                                                                                      | <color-block showhex="true" size="xs">#dfe3e6</color-block> |
-| **$ui-04**              | 3:1 color contrast <br /> Emphasis border                                                                          | <color-block showhex="true" size="xs">#8897a2</color-block> |
-| **$ui-05**              | 4.5:1 color contrast <br /> High contrast border <br /> Secondary icons                                            | <color-block showhex="true" size="xs">#5a6872</color-block> |
-| **$text-01**            | Primary text <br /> Body copy                                                                                      | <color-block showhex="true" size="xs">#152935</color-block> |
-| **$text-02**            | Secondary text <br /> Subtle text <br /> Help text                                                                 | <color-block showhex="true" size="xs">#5a6872</color-block> |
-| **$text-03**            | Placeholder text                                                                                                   | <color-block showhex="true" size="xs">#cdd1d4</color-block> |
+| **$interactive-01**     | Primary interactive color <br /> Interactive text <br /> Selected elements <br /> Featured elements                | <color-block showhex="true" size="xs">#0062ff</color-block> |
+| **$interactive-02**     | Secondary interactive color  <br /> Loading                                                                        | <color-block showhex="true" size="xs">#0062ff</color-block> |
+| **$ui-01**              | Primary container background <br /> Secondary page background                                                      | <color-block showhex="true" size="xs">#f3f3f3</color-block> |
+| **$ui-02**              | Primary page background <br /> Secondary container background                                                      | <color-block showhex="true" size="xs">#ffffff</color-block> |
+| **$ui-03**              | Subtle border <br /> Tertiary background color                                                                     | <color-block showhex="true" size="xs">#dcdcdc</color-block> |
+| **$ui-04**              | 3:1 AA element contrast <br /> Medium contrast border                                                              | <color-block showhex="true" size="xs">#8c8c8c</color-block> |
+| **$ui-05**              | 4.5:1 AA element contrast <br /> High contrast border <br /> Emphasis elements                                     | <color-block showhex="true" size="xs">#171717</color-block> |
+| **$text-01**            | Primary text <br /> Body copy <br /> Headers <br /> Hover text color for `text-02`                                 | <color-block showhex="true" size="xs">#171717</color-block> |
+| **$text-02**            | Secondary text <br /> Input labels <br /> Help text                                                                | <color-block showhex="true" size="xs">#565656</color-block> |
+| **$text-03**            | Placeholder text                                                                                                   | <color-block showhex="true" size="xs">#8c8c8c</color-block> |
+| **$icon-01**            | Primary icons                                                                                                      | <color-block showhex="true" size="xs">#171717</color-block> |
+| **$icon-02**            | Secondary icons                                                                                                    | <color-block showhex="true" size="xs">#565656</color-block> |
 | **$inverse-01**         | Inverse text color <br /> Inverse icon color                                                                       | <color-block showhex="true" size="xs">#ffffff</color-block> |
-| **$inverse-02**         | Inverse background color                                                                                           | <color-block showhex="true" size="xs">#272d33</color-block> |
-| **$field-01**           | Field color on $ui-01 background                                                                                   | <color-block showhex="true" size="xs">#f4f7fb</color-block> |
-| **$field-02**           | Field color on $ui-02 background                                                                                   | <color-block showhex="true" size="xs">#ffffff</color-block> |
-| **$hover-primary**      | $brand-01 element hover                                                                                            | `darken($brand-01, 10%)`                                    |
-| **$hover-primary-text** | $brand-01 text hover                                                                                               | `darken($brand-01, 15%)`                                    |
-| **$hover-danger**       | Danger hover                                                                                                       | `darken($support-01, 10%)`                                  |
-| **$hover-secondary**    | $ui-05 element hover                                                                                               | $brand-01                                                   |
-| **$hover-row**          | Row hover                                                                                                          | `rgba($brand-02, 0.1)`                                      |
+| **$inverse-02**         | High contrast backgrounds <br /> High contrast elements                                                            | <color-block showhex="true" size="xs">#3d3d3d</color-block> |
+| **$field-01**           | Default input fields <br /> Field color on $ui-01 backgrounds                                                      | <color-block showhex="true" size="xs">#f3f3f3</color-block> |
+| **$field-02**           | Input field color on $ui-02 backgrounds                                                                            | <color-block showhex="true" size="xs">#ffffff</color-block> |
 | **$support-01**         | Error                                                                                                              | <color-block showhex="true" size="xs">#e0182d</color-block> |
 | **$support-02**         | Success                                                                                                            | <color-block showhex="true" size="xs">#5aa700</color-block> |
 | **$support-03**         | Warning                                                                                                            | <color-block showhex="true" size="xs">#efc100</color-block> |
 | **$support-04**         | Information                                                                                                        | <color-block showhex="true" size="xs">#5aaafa</color-block> |
+| **$overlay-01**         | Background overlay                                                                                                 | `#ffffff` @ 60% opacity|
+| **$overlay-02**         | Contrast background overlay                                                                                        | `#171717` @ 70% opacity|
+
+### Interaction tokens
+
+| Token                   | Role(s)                                                                                                            | Value                                                       |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------- |
+| **$focus**              | Focus border <br /> Focus underline                                                                                | <color-block showhex="true" size="xs">#0062ff</color-block> |
+| **$hover-primary**      | `$interactive-01` hover                                                                                            | <color-block showhex="true" size="xs">#0353E9</color-block> |
+| **$hover-primary-text** | `$interactive-01` text hover                                                                                       | <color-block showhex="true" size="xs">#054ada</color-block> |
+| **$hover-secondary**    | Secondary hover <br /> `$inverse-02` hover                                                                         | <color-block showhex="true" size="xs">#4c4c4c</color-block> |
+| **$hover-ui**           | `ui-01` hover <br /> `ui-02` hover <br /> Transparent background hover                                             | <color-block showhex="true" size="xs">#e5e5e5</color-block> |
+| **$hover-danger**       | Danger hover <br /> `$support-01` hover                                                                            | <color-block showhex="true" size="xs">#ba1b23</color-block> |
+| **$hover-row**          | Row hover                                                                                                          | <color-block showhex="true" size="xs">#e5e5e5</color-block> |
+| **$active-primary**     | `brand-01` active                                                                                                  | <color-block showhex="true" size="xs">#0530ad</color-block> |
+| **$active-secondary**   | Secondary active <br /> `$inverse-02` active                                                                       | <color-block showhex="true" size="xs">#6f6f6f</color-block> |
+| **$active-ui**          | `$ui-01` active <br /> `$ui-02` active                                                                             | <color-block showhex="true" size="xs">#bebebe</color-block> |
+| **$active-danger**      | Danger active <br /> `$support-01` active                                                                          | <color-block showhex="true" size="xs">#750e13</color-block> |
+| **$selected-ui**        | Selected UI elements                                                                                               | <color-block showhex="true" size="xs">#dcdcdc</color-block> |
+| **$visited-link**       | Visited links                                                                                                      | <color-block showhex="true" size="xs">#8a3ffc</color-block> |
+| **$disabled-01**        | Disabled fields <br /> Disabled backgrounds <br /> Disabled border                                                 | <color-block showhex="true" size="xs">#f3f3f3</color-block> |
+| **$disabled-02**        | Disabled elements on `$disabled-01` <br /> Disabled label <br /> Disabled text on `$disabled-01` <br /> Disabled icons <br /> Disabled border | <color-block showhex="true" size="xs">#bebebe</color-block> |
+| **$disabled-03**        | Disabled text on `$disabled-02` <br /> Disabled icons on `$disabled-02`                                     | <color-block showhex="true" size="xs">#8c8c8c</color-block> |
+
 
 ## Color contrast | WCAG AA standards
 
