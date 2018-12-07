@@ -27,18 +27,6 @@ export class PageIcon extends React.Component {
   }
 }
 
-export class FlexGroup extends React.Component {
-  render() {
-    return (
-      <div className="ibm--row">
-        <div className="ibm--col-lg-12 ibm--offset-lg-4">
-          <div className="page-flex-group">{this.props.children}</div>
-        </div>
-      </div>
-    );
-  }
-}
-
 export class h1 extends React.Component {
   render() {
     return (
@@ -186,13 +174,11 @@ export class p extends React.Component {
   }
 }
 
-export class gridWrapper extends React.Component {
+export class AnchorLinks extends React.Component {
   render() {
     return (
-      <div className="ibm--row">
-        <div className="ibm--col-lg-12 ibm--offset-lg-4">
-          {this.props.children}
-        </div>
+      <div className="anchor-links">
+        {this.props.children}
       </div>
     );
   }

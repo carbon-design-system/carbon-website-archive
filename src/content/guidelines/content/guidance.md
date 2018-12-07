@@ -62,23 +62,23 @@ Use simple verbs and tenses, and keep sentences concise, simple, friendly, and p
 
 If you need to use past or future tense, avoid verb tenses with the words have, has, had, been, should, would, and will.
 
-<do-dont-group>
+<grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Future Tense" text='"The API returns a promise."'></do-dont-example>
     <do-dont-example label='Future Tense' text='"The API will return a promise."'></do-dont-example>
-</do-dont-group>
-<do-dont-group>
+</grid-wrapper>
+<grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Past Tense" text='"The limit was exceeded."'></do-dont-example>
     <do-dont-example label='Past Tense' text='"The limit has been exceeded."'></do-dont-example>
-</do-dont-group>
+</grid-wrapper>
 
 ### Do use active voice
 
 To convey a more natural tone, use active voice. People tend to speak in active voice unless they have a reason not to. For example, a good reason to use passive voice is to avoid sounding judgmental or blaming the user. Consider how a statement like, “You entered the wrong value,” which is active voice, might not be a well received error message.
 
-<do-dont-group>
+<grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Active Voice" text='"In the Limits window, specify the minimum and maximum values."'></do-dont-example>
     <do-dont-example label='Passive Voice' text='"The Limits window is used to specify the minimum and maximum values."'></do-dont-example>
-</do-dont-group>
+</grid-wrapper>
 
 ### Do use second person
 
@@ -93,24 +93,24 @@ One exception to this is in the case of possessive adjectives in the UI. You can
 - Occasionally use questions in headings. In both UIs and documentation, questions can be used to further conversational style, but don't overuse them, as they can add to noise and hinder retrievability. Make sure headings that use questions are meaningful. In a UI, questions can be used in a confirmation prompt in a dialog box. For example: _“Do you want to close without saving?”_
 - Use exclamation marks only positively, not negatively. Make sure you use no more than one exclamation mark in a context, such as a single window or a single Docs topic.
 
-<do-dont-group>
+<grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Exclamation Points" text='"Your IBM Bluemix account is ready!"'></do-dont-example>
     <do-dont-example label='Exclamation Points' text='"You have reached your usage limit!"'></do-dont-example>
-</do-dont-group>
+</grid-wrapper>
 
 ### Don't be overly mannerly
 
 Terms of politeness are superfluous, convey the wrong tone for technical material, and are not regarded the same way in all cultures.
 
-<do-dont-group>
+<grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label='Using Please' description='Use "please" in a UI only when the user is being inconvenienced.' text='"Indexing might take a few minutes. Please wait."'></do-dont-example>
-</do-dont-group>
+</grid-wrapper>
 
-<do-dont-group>
+<grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Ability" text='"You can use the command line interface to update your app."'></do-dont-example>
     <do-dont-example label='Ability' text='"You may use the command line interface to update your app."'></do-dont-example>
-</do-dont-group>
-<do-dont-group>
+</grid-wrapper>
+<grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Possibility" text='"You might need more advanced features when you are integrating with another app."'></do-dont-example>
     <do-dont-example label='Possibility' text='"You may need more advanced features when you are integrating with another app."'></do-dont-example>
-</do-dont-group>
+</grid-wrapper>

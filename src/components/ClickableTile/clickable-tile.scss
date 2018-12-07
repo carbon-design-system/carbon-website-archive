@@ -5,11 +5,15 @@ a.tile--article {
   text-decoration: none;
   color: $text-01;
   flex-basis: calc(50% - 1rem);
-  max-width: rem(320px);
+  max-width: 33%;
   flex-direction: column;
-  margin: 0 $spacing-md $spacing-xl 0;
+  margin: 0 1px $spacing-xl 0;
   padding: 0;
-  height: rem(390px);
+  background: $ibm-colors__white;
+
+  &:hover {
+    background: $ibm-colors__gray--20;
+  }
 
   @media all and (max-width: 600px) {
     flex-basis: 100%;
@@ -29,7 +33,6 @@ a.tile--article.tile--dark:hover {
 
 .tile--article .tile__img {
   width: 100%;
-  height: rem(180px);
   margin: 0;
   overflow: hidden;
   border-bottom: none;
@@ -44,13 +47,13 @@ a.tile--article.tile--dark:hover {
   flex-direction: column;
   justify-content: space-between;
   padding: $spacing-md $spacing-md $spacing-lg;
+}
 
-  h5 {
-    text-decoration: none;
-    color: $text-01;
-    font-size: rem(16px);
-    font-weight: 600;
-  }
+.tile--article .tile__info h5 {
+  text-decoration: none;
+  color: $text-01;
+  font-size: rem(16px);
+  font-weight: 600;
 }
 
 .tile--article.tile--dark .tile__info h5 {
@@ -67,43 +70,49 @@ p.tile__author {
   padding-bottom: 0;
   font-weight: 300;
   font-size: rem(16px);
+  color: $text-01;
+}
+
+.tile--article.tile--dark p.tile__author {
   color: $ibm-colors__white;
 }
 
 .tile__date {
   font-size: rem(12px);
   font-weight: 300;
+  color: $text-01;
+}
+
+.tile--article.tile--dark .tile__date {
   color: $ibm-colors__white;
 }
+
 
 // Tile Resource
 
 a.tile--resource {
-  width: calc(50% - 1rem);
   align-items: flex-start;
-  min-height: 190px;
+  min-height: 10rem;
   margin: 0;
   display: flex;
   align-items: flex-start;
   text-decoration: none;
   color: $text-01;
-  min-width: rem(190px);
-  max-width: rem(630px);
-  padding: $spacing-lg;
+  padding: rem(20px);
   position: relative;
-  margin: 0;
+  margin: 0 1px 1px 0;
+  background: $ibm-colors__white;
 
   &:hover {
-    background: #3d3d3d;
+    background: $ibm-colors__gray--20;
   }
 
-  @media all and (max-width: 1283px) {
+  @include breakpoint('sm') {
     width: 100%;
   }
 
-  @media all and (max-width: 600px) {
-    min-width: 100%;
-    min-height: 220px;
+  @include breakpoint('md') {
+    width: calc(50% - 1px);
   }
 }
 
@@ -116,15 +125,13 @@ a.tile--resource.tile--dark:hover {
   background: $ibm-colors__gray--80;
 }
 
-.tile--resource .tile__info {
-  h5 {
-    text-decoration: none;
-    color: $text-01;
-    margin: 0 0 $spacing-xs 0;
-    padding: 0;
-    font-weight: 400;
-    font-size: rem(16px);
-  }
+.tile--resource .tile__info  h5 {
+  text-decoration: none;
+  color: $text-01;
+  margin: 0 0 $spacing-xs 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: rem(14px);
 }
 
 .tile--resource.tile--dark .tile__info h5 {
@@ -162,6 +169,12 @@ a.tile--resource.tile--dark:hover {
   width: 20px;
   height: 20px;
 
+  svg {
+    fill: $ibm-colors__black;
+  }
+}
+
+.tile--dark .tile__link-icon {
   svg {
     fill: $ibm-colors__white;
   }

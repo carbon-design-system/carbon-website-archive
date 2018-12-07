@@ -1,79 +1,75 @@
+// Homepage inverse colors
 .container--homepage {
   background: $ibm-colors__gray--100;
   color: $ibm-colors__white;
+
+  h2, h3, h4, h5, h6, p, li {
+    color: $ibm-colors__white;
+  }
+
+  a {
+    color: $ibm-colors__blue--40;
+  }
 }
 
-.container--homepage .page-content {
-  padding-top: 0;
-  position: relative;
-}
-
-.homepage--section {
-  position: relative;
-  padding-top: $spacing-xl;
-  padding-bottom: $spacing-xl;
-  z-index: 2;
-}
-
-.homepage--section h3 {
-  padding-bottom: $spacing-lg;
-}
-
-.homepage--section > div > p {
-  width: 50%;
-}
-
-.homepage--section > div > p > a {
-  color: $ibm-colors__blue--40;
-}
+// Homepage image header area
 
 .homepage--header {
-  width: calc(100% - 15rem); // 100% minus the width of the left nav
-  margin-left: 15rem; // The width of the left nav
-  height: rem(560px);
+  height: 0;
   overflow: hidden;
+  padding-top: 500px / 1200px * 100%;
   position: relative;
+
+  // Match max height at lg breakpoint
+  @include breakpoint('max') {
+    padding: 0;
+    height: 658px;
+  }
+}
+
+.homepage--header .ibm--grid,
+.homepage--header .ibm--row {
+  height: 100%;
 }
 
 .homepage--header__title {
-  left: 50%;
   position: absolute;
   bottom: 3.5rem;
-  z-index: 1;
+  z-index: 3;
 }
 
 .homepage--header img {
   width: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
-.homepage--intro {
+// Headings on homepage
+
+.container--homepage h3,
+.container--homepage .page-content > div > .ibm--row:first-child h3 {
+  margin-top: rem(64px);
+  padding-bottom: $spacing-lg;
+}
+
+// Homepage callout component (header/footer)
+
+.homepage--callout {
   position: relative;
-  background: $ibm-colors__black;
-  padding-top: 3.5rem;
-  padding-bottom: 6rem;
-  margin-bottom: $spacing-xl;
   z-index: 2;
+  padding-top: 4rem;
+  padding-bottom: 7rem;
+  background: $ibm-colors__black;
 }
 
-.homepage--intro a {
-  color: $ibm-colors__white;
-}
-
-.homepage--intro h2 {
-  padding-bottom: $spacing-xl;
-  max-width: 80%;
-  font-size: rem(32px);
-  line-height: rem(40px);
-}
-
-.homepage--footer {
-  position: relative;
-  padding: 4rem $spacing-md 9rem;
+.homepage--callout--blue {
   background-color: $ibm-colors__blue--90;
   z-index: 2;
+}
+
+.homepage--callout a {
+  color: $ibm-colors__white;
 }
 
 .homepage--footer__info {
@@ -82,13 +78,18 @@
   align-items: flex-start;
 }
 
-.homepage--footer h2 {
+.homepage--callout h2 {
   max-width: 70%;
   font-size: rem(32px);
   line-height: rem(40px);
+  margin-bottom: 2rem;
 }
 
-.homepage--footer a {
+.homepage--callout h3 {
+  margin: 0;
+}
+
+.homepage--callout--blue a {
   display: flex;
   align-items: center;
   color: $ibm-colors__blue--40;
@@ -96,14 +97,16 @@
   margin-top: $spacing-lg;
 }
 
-.homepage--footer a:hover {
+.homepage--callout--blue a:hover {
   text-decoration: underline;
 }
 
-.homepage--footer svg {
+.homepage--callout--blue svg {
   margin-left: $spacing-md;
   fill: $ibm-colors__blue--40;
 }
+
+// Dots background pattern
 
 .homepage--dots {
   position: absolute;
@@ -112,7 +115,14 @@
   height: 100%;
   left: -16px;
   background: transparent;
-  background-image: radial-gradient(#2f302d 1px, transparent 0);
+  background-image: radial-gradient(rgba(255,255,255,.35) .5px, transparent 0);
   background-size: 16px 16px;
   background-position-x: -36px;
+}
+
+// Needed for dots to appear below content
+
+.container--homepage .ibm--row {
+  position: relative;
+  z-index: 2;
 }

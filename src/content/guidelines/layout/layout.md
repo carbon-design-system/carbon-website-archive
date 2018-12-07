@@ -81,14 +81,14 @@ Always align type to the edge of box padding. Note: some design tools add paddin
 
 ![grid paddings sample](images/2x_padding_sample.png)
 
-<do-dont-group>
+<grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Always place type against the padding.">
         <img src="images/layout_1.svg" alt="Always place type against the padding.">
     </do-dont-example>
     <do-dont-example label="Never place type on the padding.">
         <img src="images/layout_2.svg" alt="Never place type on the padding.">
     </do-dont-example>
-</do-dont-group>
+</grid-wrapper>
 
 ### Gutters
 Grid gutters can be absent as shown above, or present as shown below. The margin around each grid box matches its padding, for a total gutter of 32 pixels.

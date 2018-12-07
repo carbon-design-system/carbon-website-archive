@@ -1,18 +1,16 @@
 ---
-label: Components
+label: Experimental
 title: Progress Indicator
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
 <page-intro>**Progress Indicator** is a visual representation of a users progress through a set of steps. They guide the user through a number of steps in order to complete a specified process.</page-intro>
 
-<component 
+<component
     name="Progress Indicator"
-    component="progress-indicator" 
+    component="progress-indicator"
     variation="progress-indicator"
-    codepen="jaGPyr"
-    hasAngularVersion="true"
-    hasReactVersion="true" 
+    experimental="true"
     >
 </component>
-<component-docs component="progress-indicator"></component-docs>
+<component-docs component="progress-indicator" experimental="true"></component-docs>

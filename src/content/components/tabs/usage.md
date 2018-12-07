@@ -1,7 +1,7 @@
 ---
-label: Components
+label: Experimental
 title: Tabs
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
 ## General guidelines
@@ -17,5 +17,3 @@ A maximum of six tabs may be displayed. This is to maintain an uncluttered UI an
 ### Order
 
 Tab order should be consistent across an experience. Tabs with related content should be grouped adjacent to each other.
-
-![tab example](images/tab-usage-1.png)

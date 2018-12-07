@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import { ClickableTile, Icon } from 'carbon-components-react';
+import { ClickableTile } from 'carbon-components-react';
+import { Launch20 } from '@carbon/icons-react';
 
 export default class ClickTile extends React.Component {
   static propTypes = {
@@ -56,12 +57,7 @@ export default class ClickTile extends React.Component {
           </div>
           <div className="tile__img">{children}</div>
           <div className="tile__link-icon">
-            <Icon
-              name="icon--launch"
-              width="20"
-              height="20"
-              description="Launch the resource"
-            />
+            <Launch20 aria-label="Open resource" /> 
           </div>
         </ClickableTile>
       );
