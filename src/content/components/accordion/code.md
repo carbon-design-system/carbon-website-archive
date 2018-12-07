@@ -1,7 +1,7 @@
 ---
 label: Components
 title: Accordion
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
 <page-intro>**Accordion** enables users to expand and collapse sections of content</page-intro>
@@ -10,10 +10,7 @@ tabs: ['Code', 'Usage', 'Style']
     name="Accordion"
     component="accordion" 
     variation="accordion"
-    codepen="dZvdaN"
-    hasReactVersion="true"
-    hasAngularVersion="true"
+    experimental="true"
     >
 </component>
-
-<component-docs component="accordion"></component-docs>
+<component-docs component="accordion" experimental="true"></component-docs>

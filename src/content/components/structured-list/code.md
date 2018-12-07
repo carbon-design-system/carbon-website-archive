@@ -1,7 +1,7 @@
 ---
 label: Components
 title: Structured List
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
 <page-intro>**Structured Lists** group content that is similar or related, such as terms or definitions.</page-intro>
@@ -10,20 +10,14 @@ tabs: ['Code', 'Usage', 'Style']
     name="Structured List"
     component="structured-list" 
     variation="structured-list"
-    codepen="BJKxZa"
-    
-    hasReactVersion="true"
-    
+    experimental="true"
     >
 </component>
 <component 
     name="Structured List with selection"
     component="structured-list" 
     variation="structured-list--selection"
-    codepen="qpZYmK"
-    
-    hasReactVersion="true"
-    
+    experimental="true"
     >
 </component>
-<component-docs component="structured-list"></component-docs>
+<component-docs component="structured-list" experimental="true"></component-docs>

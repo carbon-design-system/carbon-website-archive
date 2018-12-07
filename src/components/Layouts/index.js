@@ -158,14 +158,12 @@ class Layout extends React.Component {
                 </HeaderName>
               )}
               
-
               <HeaderGlobalBar>
-                
                 {isInternal ? null : <GlobalSearch />}
-                <HeaderGlobalAction
-                  aria-label="Profile">
+                {/*<HeaderGlobalAction
+                  aria-label="Switch">
                   <AppSwitcher20 />
-                </HeaderGlobalAction>
+                </HeaderGlobalAction>*/}
               </HeaderGlobalBar>
               
             </Header>

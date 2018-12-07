@@ -41,8 +41,7 @@ import {
   ol,
   PageIntro,
   PageIcon,
-  FlexGroup,
-  DoDontGroup,
+  AnchorLinks,
 } from '../components/markdown/Markdown';
 
 const renderAst = new rehypeReact({
@@ -61,8 +60,6 @@ const renderAst = new rehypeReact({
     'grid-wrapper': GridWrapper,
     'page-intro': PageIntro,
     icon: PageIcon,
-    'flex-group': FlexGroup,
-    'do-dont-group': DoDontGroup,
     'clickable-tile': ClickTile,
     'feature-tile': FeatureTile,
     'do-dont-example': DoDontExample,
@@ -78,7 +75,8 @@ const renderAst = new rehypeReact({
     'component-status': ComponentStatus,
     glossary: Glossary,
     'motion-example': MotionExample,
-    'component-overview': ComponentOverview
+    'component-overview': ComponentOverview,
+    'anchor-links': AnchorLinks,
   },
 }).Compiler;
 

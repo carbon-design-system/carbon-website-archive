@@ -1,7 +1,7 @@
 ---
 label: Components
 title: Tile
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
 <page-intro>**Tiles** are flexible containers that house a variety of content.</page-intro>
@@ -10,32 +10,28 @@ tabs: ['Code', 'Usage', 'Style']
     name="Tile"
     component="tile" 
     variation="tile"
-    codepen="vWxRxR"
-    hasReactVersion="true"
+    experimental="true"
     >
 </component>
 <component 
     name="Clickable Tile"
     component="tile" 
     variation="tile--clickable"
-    codepen="ooZqaq"
-    hasReactVersion="true"
+    experimental="true"
     >
 </component>
 <component 
     name="Selectable Tile"
     component="tile" 
     variation="tile--selectable"
-    codepen="NwpYJW"
-    hasReactVersion="true"
+    experimental="true"
     >
 </component>
 <component 
     name="Expandable Tile"
     component="tile" 
     variation="tile--expandable"
-    codepen="NwpMqG"
-    hasReactVersion="true"
+    experimental="true"
     >
 </component>
-<component-docs component="tile"></component-docs>
+<component-docs component="tile" experimental="true"></component-docs>
