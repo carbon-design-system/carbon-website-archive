@@ -135,7 +135,13 @@ h2, h3, h4, h5 {
 .page-ul > li {
   font-weight: 400;
   padding-left: 0.25rem;
-  list-style-type: disc;
+  list-style-type: none;
+
+  &:before {
+    content: "\2013";
+    position: absolute;
+    left: -1rem;
+  }
 }
 
 .page-ol > li {
