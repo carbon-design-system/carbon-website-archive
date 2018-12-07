@@ -158,14 +158,14 @@ class Layout extends React.Component {
                 </HeaderName>
               )}
               
-              <HeaderGlobalBar>
+              {/*<HeaderGlobalBar>
                 {isInternal ? null : <GlobalSearch />}
                 {/*<HeaderGlobalAction
                   aria-label="Switch">
                   <AppSwitcher20 />
-                </HeaderGlobalAction>*/}
+                </HeaderGlobalAction>
               </HeaderGlobalBar>
-              
+              */}
             </Header>
            <LeftNav
               isFinal={this.state.isFinal}
