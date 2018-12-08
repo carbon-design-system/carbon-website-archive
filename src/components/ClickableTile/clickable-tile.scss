@@ -126,8 +126,7 @@ a.tile--resource.tile--dark:hover {
   color: $text-01;
   margin: 0 0 $spacing-xs 0;
   padding: 0;
-  font-weight: 400;
-  font-size: rem(14px);
+  @include type-style('body-short-01');
 }
 
 .tile--resource.tile--dark .tile__info h5 {

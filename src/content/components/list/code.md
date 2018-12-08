@@ -4,7 +4,7 @@ title: List
 tabs: ['Code', 'Usage']
 ---
 
-<page-intro>**Lists** consist of related content grouped together and organized vertically.</page-intro>
+**Lists** consist of related content grouped together and organized vertically.
 
 <component 
     name="Ordered List"

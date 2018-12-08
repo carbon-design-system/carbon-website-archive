@@ -4,7 +4,7 @@ title: Accessibility
 tabs: ['Overview', 'Color', 'Keyboard', 'Developers']
 ---
 
-<page-intro>IBM firmly believes that web and software experiences should be accessible for everyone, regardless of abilities or impairments. This guide will help ensure that your product or web experience meets or exceeds the standards for accessibility.</page-intro>
+IBM firmly believes that web and software experiences should be accessible for everyone, regardless of abilities or impairments. This guide will help ensure that your product or web experience meets or exceeds the standards for accessibility.
 
 ## Carbon and Accessibility
 

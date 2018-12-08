@@ -4,7 +4,7 @@ title: Checkbox
 tabs: ['Code', 'Usage']
 ---
 
-<page-intro>**Checkboxes** are used for a list of options where the user may select multiple options, including all or none.</page-intro>
+**Checkboxes** are used for a list of options where the user may select multiple options, including all or none.
 
 ### Checkbox States
 

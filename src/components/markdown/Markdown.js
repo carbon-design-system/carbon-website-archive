@@ -4,18 +4,6 @@ import { Location } from '@reach/router';
 import { Link } from 'gatsby';
 import { Link20 } from '@carbon/icons-react';
 
-export class PageIntro extends React.Component {
-  render() {
-    return (
-      <div className="ibm--row">
-        <div className="ibm--col-lg-7 ibm--offset-lg-4">
-          <p className="page-intro">{this.props.children}</p>
-        </div>
-      </div>
-    );
-  }
-}
-
 export class PageIcon extends React.Component {
   render() {
     return (

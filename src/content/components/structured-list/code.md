@@ -4,7 +4,7 @@ title: Structured List
 tabs: ['Code', 'Usage']
 ---
 
-<page-intro>**Structured Lists** group content that is similar or related, such as terms or definitions.</page-intro>
+**Structured Lists** group content that is similar or related, such as terms or definitions.
 
 <component 
     name="Structured List"

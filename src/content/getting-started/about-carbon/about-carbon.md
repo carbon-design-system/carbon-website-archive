@@ -3,7 +3,7 @@ label: Getting Started
 title: About Carbon
 ---
 
-<page-intro>Carbon is IBM's open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.</page-intro>
+Carbon is IBM's open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
 
 ### Intro
 As IBM's official design system, Carbon serves a wide range of designers and developers building digital products and experiences. The goals of the system include improving UI consistency and quality, making the design and development process more efficient and focused, establishing a shared vocabulary between designer and developer, and providing clear, discoverable guidance around design and development best practices.

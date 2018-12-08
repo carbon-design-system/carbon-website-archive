@@ -4,7 +4,7 @@ title: Number Input
 tabs: ['Code', 'Usage']
 ---
 
-<page-intro>**Number inputs** are similar to text inputs, but contain controls used to increase or decrease an incremental value.</page-intro>
+**Number inputs** are similar to text inputs, but contain controls used to increase or decrease an incremental value.
 
 <component 
     name="Number Input"

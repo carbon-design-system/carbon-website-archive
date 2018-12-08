@@ -4,7 +4,7 @@ title: Dropdown
 tabs: ['Code', 'Usage']
 ---
 
-<page-intro>**Dropdowns** present a list of options that can be used to filter existing content. </page-intro>
+**Dropdowns** present a list of options that can be used to filter existing content. 
 variations:
 
 <component 

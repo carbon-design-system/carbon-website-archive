@@ -3,8 +3,6 @@ label: Guidelines
 title: Spacing
 ---
 
-<page-intro>**Spacing** tokens are used to consistently apply margin and padding across components and UIs. Having a set spacing scale brings a rhythm to the product and creates a natural and familiar flow from page to page.</page-intro>
-
 ## Intro to spacing
 
 ### Two Scales

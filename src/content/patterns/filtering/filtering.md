@@ -3,7 +3,7 @@ label: Patterns
 title: Filtering
 ---
 
-<page-intro>**Filtering** is the mechanism by which a user adds or removes data items from a displayed data set by turning on and off certain predefined attributes.</page-intro>
+**Filtering** is the mechanism by which a user adds or removes data items from a displayed data set by turning on and off certain predefined attributes.
 
 ## Selecting filters
 

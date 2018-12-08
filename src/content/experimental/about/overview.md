@@ -4,7 +4,7 @@ title: About
 tabs: ['Overview', 'Usage']
 ---
 
-<page-intro>Experimental components, designs, and other resources are presented for testing and feedback. They are not intended for production use.</page-intro>
+Experimental components, designs, and other resources are presented for testing and feedback. They are not intended for production use.
 
 ## Introduction
 

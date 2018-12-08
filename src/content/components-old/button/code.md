@@ -4,7 +4,7 @@ title: Button
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-<page-intro>**Buttons** express what action will occur when the user clicks or touches it. Buttons are used to initialize an action, either in the background or foreground of an experience.</page-intro>
+**Buttons** express what action will occur when the user clicks or touches it. Buttons are used to initialize an action, either in the background or foreground of an experience.
 
 <component 
     name="Primary Button"

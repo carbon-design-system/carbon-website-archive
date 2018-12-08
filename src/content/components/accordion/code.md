@@ -4,7 +4,7 @@ title: Accordion
 tabs: ['Code', 'Usage']
 ---
 
-<page-intro>**Accordion** enables users to expand and collapse sections of content</page-intro>
+**Accordion** enables users to expand and collapse sections of content
 
 <component 
     name="Accordion"

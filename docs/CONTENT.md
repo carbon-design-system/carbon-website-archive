@@ -169,8 +169,8 @@ The carbon website has a handful of custom markdown components available for use
 
 ### Global Components:
 
-- `<page-intro>`
-- `<page-intro> **Bold and blue text** </page-intro>`
+- ``
+- ` **Bold and blue text** `
 - `<icon name="icon--checkmark--solid" color="green" />`
 - `<clickable-tile label="Title" author="John Smith" date="Janury 1, 2018" href="#"><img src="image.png" alt="Alt Text" type="article|resource" /></clickable-tile>`
 - `<do-dont-example correct=true label="Ability" description="Lorem ipsum dolor sit amet" text='Example text or quote'></do-dont-example>`

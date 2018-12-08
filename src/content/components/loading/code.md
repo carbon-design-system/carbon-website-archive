@@ -4,7 +4,7 @@ title: Loading
 tabs: ['Code', 'Usage']
 ---
 
-<page-intro>**Loading** spinners are used when retrieving data or performing slow computations, and help to notify users that loading is underway.</page-intro>
+**Loading** spinners are used when retrieving data or performing slow computations, and help to notify users that loading is underway.
 
 <component 
     name="Loading"

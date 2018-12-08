@@ -4,7 +4,7 @@ title: Tile
 tabs: ['Code', 'Usage']
 ---
 
-<page-intro>**Tiles** are flexible containers that house a variety of content.</page-intro>
+**Tiles** are flexible containers that house a variety of content.
 
 <component 
     name="Tile"

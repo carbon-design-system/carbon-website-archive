@@ -4,10 +4,10 @@ title: User Flow
 internal: true
 ---
 
-<page-intro>Users approach your product with specific goals in mind. When they achieve
+Users approach your product with specific goals in mind. When they achieve
 their goals quickly, they feel a sense of power. Thoughtful content and clean
 visual design add delight. Use this guidance to optimize the user's flow from
-discovery of your product to productive use.</page-intro>
+discovery of your product to productive use.
 
 ## Contents
 

@@ -40,7 +40,6 @@ import {
   h5,
   ul,
   ol,
-  PageIntro,
   PageIcon,
   AnchorLinks,
 } from '../components/markdown/Markdown';
@@ -59,7 +58,6 @@ const renderAst = new rehypeReact({
     pre: Snippet,
     table: PageTable,
     'grid-wrapper': GridWrapper,
-    'page-intro': PageIntro,
     icon: PageIcon,
     'clickable-tile': ClickTile,
     'feature-tile': FeatureTile,

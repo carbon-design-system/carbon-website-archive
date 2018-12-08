@@ -4,7 +4,7 @@ title: Developers
 tabs: ['Vanilla', 'React', 'Angular', 'Other Frameworks']
 ---
 
-<page-intro>The **Carbon Components React Library** provides front-end developers & engineers a collection of reusable React components to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.</page-intro>
+The **Carbon Components React Library** provides front-end developers & engineers a collection of reusable React components to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.
 
 ## Install
 
