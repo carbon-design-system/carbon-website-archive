@@ -14,16 +14,20 @@
     padding: $spacing-md;
     background: $ibm-colors__white; 
     border-left: 1px solid $ibm-colors__gray--20;
+    font-size: rem(12px);
 
-    h4,
-    p {
+    h4 {
         font-size: rem(12px);
         margin: 0;
         padding: 0;
     }
 }
 
-// this should be using carbon component but stlyes are wrong
+// this should be using carbon component styles?
+.type-spec__details .bx--snippet--inline {
+    margin: $spacing-xs 0 0 0;
+}
+
 .type-spec__details .bx--snippet--inline code {
     background: $ibm-colors__gray--20;
     font-size: rem(12px);
