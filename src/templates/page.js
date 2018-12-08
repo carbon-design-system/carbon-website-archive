@@ -25,7 +25,6 @@ import ComponentDocs from '../components/ComponentDocs';
 import ComponentStatus from '../components/ComponentStatus';
 import ComponentReact from '../components/ComponentReact';
 import Glossary from '../components/Glossary';
-import MotionExample from '../components/MotionExample';
 import ComponentOverview from '../components/ComponentOverview';
 import GridWrapper from '../components/GridWrapper';
 import { HomepageFooter, HomepageHeader } from '../components/Homepage/Homepage';
@@ -74,7 +73,6 @@ const renderAst = new rehypeReact({
     'component-docs': ComponentDocs,
     'component-status': ComponentStatus,
     glossary: Glossary,
-    'motion-example': MotionExample,
     'component-overview': ComponentOverview,
     'anchor-links': AnchorLinks,
   },

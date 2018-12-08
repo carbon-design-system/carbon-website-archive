@@ -114,18 +114,6 @@ export class h5 extends React.Component {
   }
 }
 
-export class DoDontGroup extends React.Component {
-  render() {
-    return (
-      <div class="ibm--row">
-        <div class="ibm--col-lg-8 ibm--offset-lg-4">
-          <div className="do-dont-group">{this.props.children}</div>
-        </div>
-      </div>
-    );
-  }
-}
-
 export class ul extends React.Component {
   render() {
     return (
