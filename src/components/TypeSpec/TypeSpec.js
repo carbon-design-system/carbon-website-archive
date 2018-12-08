@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import classNames from 'classnames';
 import { CodeSnippet } from 'carbon-components-react';
 
 const TypeSpec = ({
@@ -16,9 +15,10 @@ const TypeSpec = ({
   return (
     <div className="ibm--row type-spec">
       <div className="type-spec__example ibm--offset-lg-4 ibm--col-lg-8 ibm--col-md-5">
-        <div className={token}>
-
+        <div className={`bx--type-${token}`}>
           {children}
+
+          
         </div>
       </div>
       <div className="type-spec__details ibm--col-lg-4 ibm--col-md-3">
@@ -30,9 +30,7 @@ const TypeSpec = ({
           Weight: {weight}<br />
           Letter-spacing: {letter_spacing}
         </p>
-        <CodeSnippet type="inline">
-          ${token}
-        </CodeSnippet>
+        <CodeSnippet type="inline">${token}</CodeSnippet>
       </div>
     </div>
   )

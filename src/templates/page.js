@@ -82,7 +82,7 @@ const renderAst = new rehypeReact({
   },
 }).Compiler;
 
-export default ({ data, pageContent }) => {
+export default ({ data }) => {
   const post = data.markdownRemark;
   let currentPage = post.fields.currentPage;
   let slug = post.fields.slug;
