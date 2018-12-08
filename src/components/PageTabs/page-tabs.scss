@@ -23,8 +23,7 @@
 }
 
 .page-tabs__list li a {
-  font-size: 1rem;
-  font-weight: 400;
+  @include type-style('body-short-02');
   padding: 0 $spacing-3xl 0 $spacing-md;
   text-decoration: none;
   color: $inverse-02;

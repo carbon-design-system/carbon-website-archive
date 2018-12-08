@@ -63,8 +63,7 @@
 .component-name {
   color: $text-01;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
+  @include type-style('heading-02');
   text-align: left;
   display: flex;
   margin-top: 10px;

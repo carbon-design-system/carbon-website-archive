@@ -14,10 +14,10 @@
     padding: $spacing-md;
     background: $ibm-colors__white; 
     border-left: 1px solid $ibm-colors__gray--20;
-    font-size: rem(12px);
+    @include type-style('caption-01');
 
     h4 {
-        font-size: rem(12px);
+        @include type-style('heading-01');
         margin: 0;
         padding: 0;
     }
@@ -30,7 +30,7 @@
 
 .type-spec__details .bx--snippet--inline code {
     background: $ibm-colors__gray--20;
-    font-size: rem(12px);
+    @include type-style('code-01');
     padding: .2rem .5rem;
     border-radius: 3px;
 }

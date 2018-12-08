@@ -56,14 +56,14 @@ Letter-spacing: .32px
 
 <type-spec token="body-short-01" description="This is for short paragraphs with no more than 4 lines and is commonly used in components.">
 Type: IBM Plex Sans<br>
-Size: 14px / 1rem<br>
+Size: 14px / .875rem<br>
 Line height: 18 / 1.125rem <br>
 Weight: 400 / Regular<br>
 Letter-spacing: .16px
 </type-spec>
 <type-spec token="body-long-01" description="This is commonly used in both the Expressive and the Productive type theme layouts for long paragraphs with more than four lines. It is a good size for comfortable, long-form reading. We also use this for longer body copy in components such as Accordion or Structured List. We always left-align this type; we never center it. ">
 Type: IBM Plex Sans<br>
-Size: 14px / 1rem<br>
+Size: 14px / .875rem<br>
 Line height: 18 / 1.125rem <br>
 Weight: 400 / Regular<br>
 Letter-spacing: .16px
@@ -89,7 +89,7 @@ Letter-spacing: 0
 
 <type-spec token="heading-01" description="This is for component and layout headings.">
 Type: IBM Plex Sans<br>
-Size: 14px / 1rem<br>
+Size: 14px / .875rem<br>
 Line height: 18 / 1.125rem <br>
 Weight: 600 / Semi-bold<br>
 Letter-spacing: .16px

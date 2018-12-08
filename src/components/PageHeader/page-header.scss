@@ -11,9 +11,7 @@
 }
 
 .page-header__label {
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1.625rem;
+  @include type-style('heading-03');
 }
 
 .page-header__title {

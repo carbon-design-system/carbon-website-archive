@@ -27,15 +27,13 @@
   .glossary-entry__word-heading {
     padding-top: 1rem;
     padding-bottom: 0.5rem;
-    font-size: 1rem;
-    font-weight: 600;
+    @include type-style('heading-03');
   }
 
   .glossary-entry__subtext {
-    font-size: rem(13px);
+    @include type-style('body-short-02');
     color: $text-02;
     margin-top: 0.25rem;
-    //max-width: 38rem;
   }
 
   .glossary-entry__list {

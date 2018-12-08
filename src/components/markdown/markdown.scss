@@ -33,9 +33,7 @@
 
 .page-h2,
 .component-docs h2 {
-  font-size: 1.75rem;
-  font-weight: 400;
-  line-height: 2.25rem;
+  @include type-style('productive-heading-04');
   position: relative;
   color: $text-01;
   margin-top: rem(56px);
@@ -49,8 +47,7 @@
 
 .page-h3,
 .component-docs h3 {
-  font-size: 1.25rem;
-  font-weight: 400;
+  @include type-style('heading-03');
   color: $text-01;
   margin-top: rem(24px);
   margin-bottom: $spacing-md;
@@ -63,8 +60,7 @@
 
 .page-h4,
 .component-docs h4 {
-  font-size: 1rem;
-  font-weight: 600;
+  @include type-style('heading-02');
   color: $text-01;
   margin-top: rem(8px);
   margin-bottom: rem(8px);
@@ -191,7 +187,7 @@ h2, h3, h4, h5 {
 
   .page-ul > li,
   ul > li {
-    font-size: rem(20px);
+    @include type-style('heading-03');
     list-style: none;
 
     &:before {
