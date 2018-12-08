@@ -13,9 +13,9 @@ $feature-flags: (
   $imported-modules-local: ();
   @import '@carbon/grid/scss/grid.scss';
 }
-//@import '@carbon/type/scss/type.scss';
-// There are temp files copied from carbon-elements -- need to refactor code to use new tokens before we can swap to latest
-@import 'carbon/type/scss/type.scss';
+@import '@carbon/type/scss/type.scss';
+@import '@carbon/type/scss/_classes.scss';
+
 @import 'carbon-components/scss/globals/scss/styles.scss';
 
 //---------------------------------------
@@ -48,6 +48,7 @@ $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
 @import '../components/IconEmptyState/icon-empty-state.scss';
 @import '../components/TypeScaleTable/type-scale-table.scss';
 @import '../components/TypeWeight/type-weight.scss';
+@import '../components/TypeSpec/type-spec.scss';
 @import '../components/GlossaryNav/glossary-nav.scss';
 @import '../components/GlossaryList/glossary-list.scss';
 @import '../components/MotionExample/motion-example.scss';

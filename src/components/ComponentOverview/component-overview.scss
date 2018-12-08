@@ -36,7 +36,7 @@
     height: 165px;
     left: 16px;
     right: 16px;
-    background-color: #000;
+    background-color: $ibm-colors__black;
     opacity: 0;
     transition: opacity 200ms ease-in;
     pointer-events: none;
@@ -63,8 +63,7 @@
 .component-name {
   color: $text-01;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
+  @include type-style('heading-02');
   text-align: left;
   display: flex;
   margin-top: 10px;

@@ -44,20 +44,15 @@ export class HomepageHeader extends React.Component {
             <div className="ibm--row">
               <div className="ibm--col-lg-4 ibm--offset-lg-4">
                 <h3>
-                  Formerly known <br /> as Carbon
+                  {/*Formerly known <br /> as Carbon*/}
                 </h3>
               </div>
               <div className="ibm--col-lg-8">
                 <h2>
-                  <strong>Carbon Design System</strong> si amet finibus consectetur
-                  adipsicing elit.
+                  The <strong>Carbon Design System</strong> is IBM's open-source design system for products and experiences. 
                 </h2>
                 <h2>
-                  Our system is built on the{' '}
-                  <a href="https://www.ibm.com/design/language/">IBM Design Language</a>{' '}
-                  foundation as a resource for designers and developers. This collection
-                  of UI components, guidelines, code, and tooling ensures IBM products
-                  share a unified user experience.
+                With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                 </h2>
               </div>
             </div>

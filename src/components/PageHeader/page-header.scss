@@ -11,7 +11,7 @@
 }
 
 .page-header__label {
-  @include type-style('heading-04');
+  @include type-style('heading-03');
 }
 
 .page-header__title {
@@ -19,7 +19,6 @@
   font-size: 60px;
   font-weight: 300;
   line-height: 70px;
-  //@include type-style('display-02');
   margin-bottom: $layout-xs;
   margin-top: auto;
 }

@@ -1,7 +1,7 @@
 ---
 label: Guidelines
 title: Typography
-tabs: ['Overview', 'Product', 'Editorial']
+tabs: ['Overview', 'Productive', 'Expressive']
 ---
 
 - [Typeface: IBM Plex](#typeface-ibm-plex)

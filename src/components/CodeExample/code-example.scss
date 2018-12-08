@@ -75,7 +75,7 @@ $temp-text: $color__blue-90;
   cursor: pointer;
 
   span {
-    font-size: rem(12px);
+    @include type-style('caption-01');
   }
 
   &--icon {

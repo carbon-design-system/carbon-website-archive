@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 100%;
   display: block;
-  color: $color__white;
+  color: $ibm-colors__white;
   margin-bottom: 6rem;
 
   p {
@@ -47,7 +47,7 @@
   right: 0;
   bottom: 0;
   color: $text-02;
-  font-size: 0.75rem;
+  @include type-style('caption-01');
   padding: 0.5rem 1rem;
   z-index: 9999;
 }

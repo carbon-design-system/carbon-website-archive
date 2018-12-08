@@ -62,7 +62,7 @@ button,
   .gatsby-resp-image-link + em,
   .image-grid + p > em,
   .image-component + p > em {
-    font-size: .875em;
+    @include type-style('body-short-01');
     color: $text-02;
   }
 

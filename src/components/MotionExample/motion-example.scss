@@ -48,12 +48,12 @@
 
     svg {
       pointer-events: none;
-      fill: $color__white;
+      fill: $ibm-colors__white;
       height: rem(48px);
       width: rem(48px);
 
       g rect {
-        fill: $color__white;
+        fill: $ibm-colors__white;
       }
 
       .play-icon,

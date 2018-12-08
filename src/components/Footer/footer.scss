@@ -4,7 +4,7 @@
   min-height: 320px;
   padding-top: 1.5rem;
   padding-bottom: 2rem;
-  font-size: rem(14px);
+  @include type-style('body-short-01');
   position: relative;
   z-index: 2;
 }
@@ -61,7 +61,7 @@
 }
 
 .page-footer__text {
-  font-size: rem(14px);
+  @include type-style('body-short-01');
 
   &:first-child {
     padding-bottom: $spacing-md;
@@ -75,7 +75,7 @@
 
 // Footer paragraph 
 .page-footer__link--with-tooltip {
-  font-size: rem(14px);
+  @include type-style('body-short-01');
   position: relative;
   margin-right: 4px;
   margin-left: 5px;
