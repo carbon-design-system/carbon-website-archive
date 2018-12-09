@@ -4,7 +4,7 @@ title: Iconography
 tabs: ['Library', 'Usage', 'Design and Contribution']
 ---
 
-<page-intro>**Icons** are visual symbols used to quickly communicate functions, objects, or content in a UI.</page-intro>
+**Icons** are visual symbols used to quickly communicate functions, objects, or content in a UI.
 
 ## Using Icons
 

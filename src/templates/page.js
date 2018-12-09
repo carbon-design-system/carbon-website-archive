@@ -25,7 +25,6 @@ import ComponentDocs from '../components/ComponentDocs';
 import ComponentStatus from '../components/ComponentStatus';
 import ComponentReact from '../components/ComponentReact';
 import Glossary from '../components/Glossary';
-import MotionExample from '../components/MotionExample';
 import ComponentOverview from '../components/ComponentOverview';
 import GridWrapper from '../components/GridWrapper';
 import { HomepageFooter, HomepageHeader } from '../components/Homepage/Homepage';
@@ -40,7 +39,6 @@ import {
   h5,
   ul,
   ol,
-  PageIntro,
   PageIcon,
   AnchorLinks,
 } from '../components/markdown/Markdown';
@@ -59,7 +57,6 @@ const renderAst = new rehypeReact({
     pre: Snippet,
     table: PageTable,
     'grid-wrapper': GridWrapper,
-    'page-intro': PageIntro,
     icon: PageIcon,
     'clickable-tile': ClickTile,
     'feature-tile': FeatureTile,
@@ -76,7 +73,6 @@ const renderAst = new rehypeReact({
     'component-docs': ComponentDocs,
     'component-status': ComponentStatus,
     glossary: Glossary,
-    'motion-example': MotionExample,
     'component-overview': ComponentOverview,
     'anchor-links': AnchorLinks,
   },
@@ -92,10 +88,6 @@ export default ({ data }) => {
   const { GATSBY_CARBON_ENV } = process.env;
   const isInternal = GATSBY_CARBON_ENV !== 'internal' && internal == true;
   const homepage = (post.frontmatter.title === 'Homepage') == true;
-
-  const classNames = classnames({
-    'container--component': post.frontmatter.label === 'Components',
-  });
 
   if (isInternal) {
     return (
@@ -118,7 +110,6 @@ export default ({ data }) => {
   } else {
     return (
       <Layout>
-        <div className={classNames}>
           <PageHeader
             title={post.frontmatter.title}
             label={post.frontmatter.label}>
@@ -129,7 +120,6 @@ export default ({ data }) => {
           <div className="page-content ibm--grid">
             {renderAst(post.htmlAst)}
           </div>
-        </div>
       </Layout>
     );
   }

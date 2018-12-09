@@ -88,7 +88,7 @@
   margin-bottom: 1rem;
 
   h5 {
-    @include typescale('epsilon');
+   @include type-style('body-short-02');
     letter-spacing: 0.5px;
     line-height: 1.25;
     color: $text-01;
@@ -98,7 +98,7 @@
   }
 
   span {
-    @include typescale('omega');
+   @include type-style('helper-text-01');
     color: $text-03;
   }
 }

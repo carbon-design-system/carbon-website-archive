@@ -1,10 +1,10 @@
 ---
-label: Components
+
 title: Content Switcher
 tabs: ['Code', 'Usage']
 ---
 
-<page-intro>**Content switcher** manipulates the content shown following an exclusive or “either/or” pattern.</page-intro>
+**Content switcher** manipulates the content shown following an exclusive or “either/or” pattern.
 
 <component 
     name="Content Switcher"

@@ -169,8 +169,6 @@ The carbon website has a handful of custom markdown components available for use
 
 ### Global Components:
 
-- `<page-intro>`
-- `<page-intro> **Bold and blue text** </page-intro>`
 - `<icon name="icon--checkmark--solid" color="green" />`
 - `<clickable-tile label="Title" author="John Smith" date="Janury 1, 2018" href="#"><img src="image.png" alt="Alt Text" type="article|resource" /></clickable-tile>`
 - `<do-dont-example correct=true label="Ability" description="Lorem ipsum dolor sit amet" text='Example text or quote'></do-dont-example>`
@@ -271,6 +269,7 @@ This will render the following set of examples:
 - `<type-weight type="italic">`
 - `<type-weight type="type">`
 - `<type-scale-table>`
+- `<type-spec>`
 
 **Glossary**
 
@@ -283,20 +282,6 @@ This will render the following set of examples:
 **Component Overview** (content pulled from data/components.json)
 
 - `<component-overview>`
-
-**Layer**
-
-- `<layer-types>`
-- `<layer-usage>`
-
-**Motion**
-
-- `<motion-example type="standard"></motion-example>`
-- `<motion-example type="ease-out"></motion-example>`
-- `<motion-example type="ease-in"></motion-example>`
-- `<motion-example type="standard"></motion-example>`
-- `<motion-example type="easing" correcttext="Easing" incorrecttext="No-Easing"></motion-example></motion-example>`
-- `<motion-example type="duration" correcttext="300ms" incorrecttext="600ms"></motion-example>`
 
 ## Component Page Components:
 

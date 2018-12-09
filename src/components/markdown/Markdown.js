@@ -4,18 +4,6 @@ import { Location } from '@reach/router';
 import { Link } from 'gatsby';
 import { Link20 } from '@carbon/icons-react';
 
-export class PageIntro extends React.Component {
-  render() {
-    return (
-      <div className="ibm--row">
-        <div className="ibm--col-lg-7 ibm--offset-lg-4">
-          <p className="page-intro">{this.props.children}</p>
-        </div>
-      </div>
-    );
-  }
-}
-
 export class PageIcon extends React.Component {
   render() {
     return (
@@ -120,18 +108,6 @@ export class h5 extends React.Component {
       <div className="ibm--row">
         <div className="ibm--col-lg-7 ibm--offset-lg-4">
           <h5 className="page-h5">{this.props.children}</h5>
-        </div>
-      </div>
-    );
-  }
-}
-
-export class DoDontGroup extends React.Component {
-  render() {
-    return (
-      <div class="ibm--row">
-        <div class="ibm--col-lg-8 ibm--offset-lg-4">
-          <div className="do-dont-group">{this.props.children}</div>
         </div>
       </div>
     );

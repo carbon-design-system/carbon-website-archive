@@ -1,9 +1,9 @@
 ---
-label: Getting Started
+
 title: Designers
 ---
 
-<page-intro>This site, along with the Carbon Design Kit, provides designers with everything they need to get up and running with Carbon.</page-intro>
+This site, along with the Carbon Design Kit, provides designers with everything they need to get up and running with Carbon.
 
 ## Carbon Design Kit
 

@@ -3,6 +3,15 @@
   margin-bottom: 1.5rem;
   line-height: 1.25;
 
+  @include breakpoint('sm') {
+    width: 100%;
+  }
+
+  @include breakpoint('lg') {
+    width: auto;
+    min-width: 67.3%;
+  }
+
   thead {
     th {
       @include type-style('heading-01');

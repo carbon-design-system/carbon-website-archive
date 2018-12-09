@@ -220,11 +220,6 @@ h2, h3, h4, h5 {
   max-width: 100%;
 }
 
-// Adds background color to component page images. Adds to all images on compponent pages for now
-.container--component .gatsby-resp-image-wrapper {
-  background: $ibm-colors__white;
-}
-
 .gatsby-resp-image-background-image {
   background: transparent !important; // Need important to override inline style added by gatsby-remark-images
 }
@@ -232,19 +227,6 @@ h2, h3, h4, h5 {
 .container--component .gatsby-resp-image-image {
   box-shadow: none !important; // Need important to override inline style added by gatsby-remark-images
   border: none !important;
-}
-
-//----------------------------
-// Inline image
-//----------------------------
-
-blockquote .gatsby-resp-image-wrapper,
-blockquote p img {
-  width: 5.2rem;
-  height: auto;
-  margin: 1.2rem 0 0 0;
-  padding: 0 1.2rem 1.2rem 0;
-  float: left;
 }
 
 //----------------------------

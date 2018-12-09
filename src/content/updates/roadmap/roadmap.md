@@ -1,9 +1,8 @@
 ---
-label: Roadmap
 title: Roadmap
 ---
 
-<page-intro>This is the roadmap for the Carbon Design System, based on our planned design and development path. It is not a delivery commitment, and it is subject to change based on user needs and feedback.</page-intro>
+This is the roadmap for the Carbon Design System, based on our planned design and development path. It is not a delivery commitment, and it is subject to change based on user needs and feedback.
 
 ## Q4 2018
 

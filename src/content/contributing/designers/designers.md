@@ -1,9 +1,9 @@
 ---
-label: Contributing
+
 title: Designers
 ---
 
-<page-intro>**Welcome and thank you for contributing!** The Carbon team is committed to maintaining consistent, quality guidelines. We welcome all feedback, designs, or ideas in order to produce the best possible experience for our users. Below are our contribution models and best practices.<page-intro>
+**Welcome and thank you for contributing!** The Carbon team is committed to maintaining consistent, quality guidelines. We welcome all feedback, designs, or ideas in order to produce the best possible experience for our users. Below are our contribution models and best practices.
 
 ## Contribution models
 

@@ -24,9 +24,7 @@ $feature-flags: (
 $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
   sans-serif;
 
-@import 'mixins';
 @import 'page';
-@import 'home';
 
 //---------------------------------------
 // Components
@@ -51,7 +49,6 @@ $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
 @import '../components/TypeSpec/type-spec.scss';
 @import '../components/GlossaryNav/glossary-nav.scss';
 @import '../components/GlossaryList/glossary-list.scss';
-@import '../components/MotionExample/motion-example.scss';
 @import '../components/ComponentExample/component-example.scss';
 @import '../components/ComponentExample/component-overrides.scss';
 @import '../components/CodeExample/code-example.scss';

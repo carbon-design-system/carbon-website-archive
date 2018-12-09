@@ -1,11 +1,11 @@
 ---
-label: Components
+
 title: Code Snippet
 tabs: ['Code', 'Usage']
 ---
 
-<page-intro>**Code snippets** are small blocks of reusable code that can be inserted in a code file.
-variations:</page-intro>
+**Code snippets** are small blocks of reusable code that can be inserted in a code file.
+variations:
 
 <component
     name="Code Snippet"

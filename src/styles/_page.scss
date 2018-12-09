@@ -16,7 +16,7 @@ body {
   overflow-x: hidden;
   position: relative;
   min-height: 100vh;
-  margin-top: 48px;
+  margin-top: rem(48px);
 }
 
 .container .ibm--grid {
@@ -110,7 +110,6 @@ button,
   hr.divider {
     display: block;
     margin: 3rem 0;
-    //max-width: 38rem;
     height: 1px;
     background: $ui-03;
     border: 0px transparent;

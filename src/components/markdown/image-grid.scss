@@ -16,10 +16,6 @@
   > p {
     width: 100%;
 
-    @include breakpoint('600px') {
-      //margin-right: 1rem;
-    }
-
     &:last-child {
       margin-right: 0;
     }
@@ -40,41 +36,41 @@
   div:first-child:nth-last-child(2),
   div:first-child:nth-last-child(2) ~ div {
 
-    @include breakpoint('600px') {
+    @include breakpoint('md') {
       width: calc(50% - 1rem);
     }
   }
 
   div:first-child:nth-last-child(3),
   div:first-child:nth-last-child(3) ~ div {
-    @include breakpoint('600px') {
+    @include breakpoint('md') {
       width: calc(33.3333% - 1rem);
     }
   }
 
   > div:first-child:nth-last-child(4),
   > div:first-child:nth-last-child(4) ~ div {
-    @include breakpoint('600px') {
+    @include breakpoint('md') {
       width: calc(50% - 1rem);
     }
   }
 
   > div:first-child:nth-last-child(6),
   > div:first-child:nth-last-child(6) ~ div {
-    @include breakpoint('600px') {
+    @include breakpoint('md') {
       width: calc(33% - 1rem);
     }
   }
   > div:first-child:nth-last-child(8),
   > div:first-child:nth-last-child(8) ~ div {
-    @include breakpoint('600px') {
+    @include breakpoint('md') {
       width: calc(25% - 1rem);
     }
   }
 
   > div:first-child:nth-last-child(9),
   > div:first-child:nth-last-child(9) ~ div {
-    @include breakpoint('600px') {
+    @include breakpoint('md') {
       width: calc(33% - 1rem);
     }
   }

@@ -1,10 +1,10 @@
 ---
-label: Components
+
 title: Notification
 tabs: ['Code', 'Usage']
 ---
 
-<page-intro>**Notifications** are messages that communicate information to the user.</page-intro>
+**Notifications** are messages that communicate information to the user.
 
 <component 
     name="Inline Notification"

@@ -4,7 +4,7 @@ title: Accessibility
 tabs: ['Overview', 'Color', 'Keyboard', 'Developers']
 ---
 
-<page-intro>IBM is committed to serving all users, regardless of visual ability.</page-intro>
+IBM is committed to serving all users, regardless of visual ability.
 
 ## Introduction
 

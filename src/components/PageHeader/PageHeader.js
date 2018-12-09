@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 
 const PageHeader = ({
   children,
@@ -7,18 +8,26 @@ const PageHeader = ({
   title
 }) => {
   let labelContent =
-    label !== title ? (
-      <h4 className="page-header__label">{label}</h4>
+    label != null ? (
+      <div className="ibm--row page-header__label-row">
+        <div className="ibm--col-lg-6 ibm--offset-lg-4">
+          <p className="page-header__label">{label}</p>
+        </div>
+      </div>
     ) : (
       null
     );
 
+  const classNames = classnames( 'page-header', {
+    'page-header--md': label != null,
+  });
+  
   return (
-    <div className="page-header">
+    <div className={classNames}>
       <div className="ibm--grid">
+        {labelContent}
         <div className="ibm--row">
           <div className="ibm--col-lg-12 ibm--offset-lg-4">
-            {labelContent}
             <h1 id="page-title" className="page-header__title">
               {title}
             </h1>

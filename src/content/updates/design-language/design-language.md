@@ -1,5 +1,5 @@
 ---
-label: Updates
+
 title: IBM Design Language
 ---
 

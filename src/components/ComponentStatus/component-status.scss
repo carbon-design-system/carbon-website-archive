@@ -24,7 +24,7 @@
     flex-direction: column;
     white-space: nowrap;
 
-    @include breakpoint('552px') {
+    @include breakpoint('md') {
       flex-direction: row;
       align-items: center;
     }
@@ -35,7 +35,7 @@
       margin: 0 1rem 0.25rem;
       margin-left: 0;
 
-      @include breakpoint('552px') {
+      @include breakpoint('md') {
         margin-left: 1rem;
         margin-bottom: 0;
       }

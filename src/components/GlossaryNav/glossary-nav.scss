@@ -8,8 +8,9 @@
   justify-content: flex-start;
   line-height: 1.5;
   margin-top: 2rem;
+  padding-top: 72px;
 
-  @include breakpoint('bp--sm--major') {
+  @include breakpoint('lg') {
     display: flex;
   }
 

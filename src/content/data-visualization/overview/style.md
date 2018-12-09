@@ -1,5 +1,5 @@
 ---
-label: Data Visualization
+
 title: Overview
 tabs: ['General', 'Colors', 'Style']
 ---
