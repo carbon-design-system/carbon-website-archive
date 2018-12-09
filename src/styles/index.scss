@@ -24,9 +24,7 @@ $feature-flags: (
 $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
   sans-serif;
 
-@import 'mixins';
 @import 'page';
-@import 'home';
 
 //---------------------------------------
 // Components

@@ -68,7 +68,7 @@
   border-right: 1px solid $ui-03;
 
   p {
-    @include typescale('zeta');
+   @include type-style('body-short-01');
     color: $text-02;
     font-weight: 600;
     padding: 0 1rem;
@@ -82,7 +82,7 @@
   flex: 2;
 
   a {
-    @include typescale('zeta');
+   @include type-style('body-short-01');
     padding-left: 1rem;
   }
 }

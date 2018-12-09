@@ -118,7 +118,7 @@ p.example__text {
 }
 
 p.example__description {
-  @include typescale('zeta');
+ @include type-style('body-short-01');
   @include font-smoothing;
   margin: 0;
   padding: 0;
