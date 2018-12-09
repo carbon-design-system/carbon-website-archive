@@ -32,7 +32,8 @@
 //----------------------------
 
 .page-h2,
-.component-docs h2 {
+.component-docs h2,
+.icon-h2 {
   @include type-style('productive-heading-04');
   position: relative;
   color: $text-01;

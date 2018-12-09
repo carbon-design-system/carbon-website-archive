@@ -6,7 +6,7 @@
 }
 
 .icon-search {
-  margin-bottom: rem(96px);
+  margin-bottom: rem(48px);
 }
 
 .icon {
@@ -31,10 +31,6 @@
 .icon__card-details { 
   top: rem(28px);
   @include type-style('helper-text-01');
-}
-
-page-content > div > .ibm--row:first-child .icon-size .page-h2 {
-  margin-top: 3.5rem;
 }
 
 .icon__actions {

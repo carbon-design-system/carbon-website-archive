@@ -226,7 +226,7 @@ function createIconSections(icons, filteredIcons) {
     .map(size => (
       <section key={size} className="icon-size">
         <header>
-          <h2 className="page-h2">{isNaN(size) ? size : `${size}x${size}`}</h2>
+          <h2 className="icon-h2">{isNaN(size) ? size : `${size}x${size}`}</h2>
         </header>
         <div className="icon-container">
           {groups[size]
