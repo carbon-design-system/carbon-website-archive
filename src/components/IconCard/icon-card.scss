@@ -1,106 +1,36 @@
-.page.iconography {
-  max-width: 100%;
-}
-
-.version {
-  display: inline-block;
-  margin-bottom: rem(16px);
-  color: $text-03;
-}
-
-.icon-container-wrapper {
-  margin-top: rem(70px);
-}
 
 .icon-container {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-
-  @media (min-width: 1600px) {
-    width: 80%;
-  }
 }
 
-.container:not(.container--expanded) .iconography .bx--search {
-  @media (min-width: 1024px) {
-    width: 32rem;
-  }
-
-  @media (min-width: 1139px) {
-    width: 43rem;
-  }
-
-  @media (min-width: 1374px) {
-    width: 54rem;
-  }
-
-  @media (min-width: 1600px) {
-    width: 43rem;
-  }
-
-  @media (min-width: 1667px) {
-    width: 54rem;
-  }
-}
-
-.iconography .bx--search {
-  width: 100%;
-
-  @media (min-width: 562px) {
-    width: 32rem;
-  }
-
-  @media (min-width: 783px) {
-    width: 43rem;
-  }
-
-  @media (min-width: 840px) {
-    width: 32rem;
-  }
-
-  @media (min-width: 939px) {
-    width: 43rem;
-  }
-
-  @media (min-width: 1174px) {
-    width: 54rem;
-  }
-
-  @media (min-width: 1408px) {
-    width: 65rem;
-  }
-
-  @media (min-width: 1600px) {
-    width: 54rem;
-  }
-
-  @media (min-width: 1760px) {
-    width: 65rem;
-  }
+.icon-search {
+  margin-bottom: rem(48px);
 }
 
 .icon {
   flex: 1 1 10rem;
   max-width: 10rem;
-  height: 250px;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
+  position: relative;
+}
 
-  h5 {
-   @include type-style('body-short-02');
-    letter-spacing: 0.5px;
-    line-height: 1.25;
-    color: $text-01;
-    font-weight: 600;
-    margin-top: rem(16px);
-    margin-bottom: rem(5px);
-  }
+.icon__card-title,
+.icon__card-details {
+  position: absolute;
+  top: rem(12px);
+  left: rem(12px);
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 130px;
+  @include type-style('caption-01');
+}
 
-  span {
-   @include type-style('helper-text-01');
-    color: $text-03;
-  }
+.icon__card-details { 
+  top: rem(28px);
+  @include type-style('helper-text-01');
 }
 
 .icon__actions {
@@ -130,6 +60,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  outline: 1px solid $ibm-colors__gray--20;
 
   &:hover,
   &:focus,

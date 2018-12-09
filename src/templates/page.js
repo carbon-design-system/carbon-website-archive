@@ -16,7 +16,6 @@ import DoDontExample from '../components/DoDontExample';
 import ColorBlock from '../components/ColorBlock';
 import ColorCard from '../components/ColorCard';
 import IconLibrary from '../components/IconLibrary';
-import IconLibraryExperimental from '../components/IconLibrary/IconLibraryExperimental';
 import TypeScaleTable from '../components/TypeScaleTable';
 import TypeWeight from '../components/TypeWeight';
 import TypeSpec from '../components/TypeSpec';
@@ -64,7 +63,6 @@ const renderAst = new rehypeReact({
     'color-block': ColorBlock,
     'color-card': ColorCard,
     'icon-library': IconLibrary,
-    'icon-library-experimental': IconLibraryExperimental,
     'type-scale-table': TypeScaleTable,
     'type-weight': TypeWeight,
     'type-spec': TypeSpec,

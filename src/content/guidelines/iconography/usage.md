@@ -1,10 +1,8 @@
 ---
-label: Guidelines
+label: IBM's icons are visual symbols used to represennt ideas, objects, or actions. They communicate messages at a glance, afford interactivity, and draw attention to important information.
 title: Iconography
 tabs: ['Library', 'Usage', 'Design and Contribution']
 ---
-
-**Icons** are visual symbols used to quickly communicate functions, objects, or content in a UI.
 
 ## Using Icons
 
@@ -17,14 +15,14 @@ UI icons that appear within Carbon components are generally 16 px square. Icons 
 ![icon alignment](images/iconography-usage-sizing-2.svg)
 _16 px and 20 px icons are optimized to feel balanced when paired with 14pt and 16pt IBM Plex. Use 24 px and 32 px when larger icons are needed._
 
-<do-dont-group>
+<grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Do: use the correct icon size with IBM Plex.">
         <img src="images/iconography-usage-sizing-3.svg" alt="proper sizing">    
     </do-dont-example>
     <do-dont-example label="Don't: alter the icon-text size ratio.">
         <img src="images/iconography-usage-sizing-4.svg" alt="improper sizing">    
     </do-dont-example>
-</do-dont-group>
+</grid-wrapper>
 
 
 ### Touch Targets
@@ -50,14 +48,14 @@ Interactive UI icons need to pass the same color contrast ratio as typography at
 
 When used next to text, icons should be center-aligned. 
 
-<do-dont-group>
+<grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Do: center-align icons when they’re next to text.">
         <img src="images/iconography-usage-sizing-5.svg" alt="proper alignment">    
     </do-dont-example>
     <do-dont-example label="Don't: baseline-align icons to the text.">
         <img src="images/iconography-usage-sizing-6.svg" alt="improper alignment">    
     </do-dont-example>
-</do-dont-group>
+</grid-wrapper>
 
 ## Developer usage
 
