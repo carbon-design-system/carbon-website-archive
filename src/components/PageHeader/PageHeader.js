@@ -5,22 +5,21 @@ import classnames from 'classnames';
 const PageHeader = ({
   children,
   label,
-  title,
-  className
+  title
 }) => {
   let labelContent =
-    label !== title ? (
-      <h4 className="page-header__label">{label}</h4>
+    label != null ? (
+      <p className="page-header__label">{label}</p>
     ) : (
       null
     );
 
-    const classNames = classnames( 'page-header', className);
+  const classNames = classnames( 'page-header', {
+    'page-header--md': label != null,
+  });
   
-
   return (
     <div className={classNames}>
-    
       <div className="ibm--grid">
         <div className="ibm--row">
           <div className="ibm--col-lg-12 ibm--offset-lg-4">
@@ -32,7 +31,6 @@ const PageHeader = ({
         </div>
       </div>
       {children}
-    
     </div>
   );
 };

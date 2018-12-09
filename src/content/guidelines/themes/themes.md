@@ -37,7 +37,7 @@ The default theme acts as a starting point; from there designers and developers 
 
 <grid-wrapper col_lg="8" flex="true">
 <clickable-tile
-    title="Themes repo"
+    title="Carbon Themes"
     href="https://github.com/carbon-design-system/carbon-themes"
     type="resource"
     >

@@ -89,14 +89,6 @@ export default ({ data }) => {
   const isInternal = GATSBY_CARBON_ENV !== 'internal' && internal == true;
   const homepage = (post.frontmatter.title === 'Homepage') == true;
 
-  const classNames = classnames({
-    'container--component': post.frontmatter.label === 'Components',
-  });
-
-  const headerClassNames = classnames({
-    'page-header--md': post.frontmatter.label === 'Guidelines',
-  });
-
   if (isInternal) {
     return (
       <Layout>
@@ -118,9 +110,7 @@ export default ({ data }) => {
   } else {
     return (
       <Layout>
-        <div className={classNames}>
           <PageHeader
-            className={headerClassNames}
             title={post.frontmatter.title}
             label={post.frontmatter.label}>
             {!(tabs === null) && (
@@ -130,7 +120,6 @@ export default ({ data }) => {
           <div className="page-content ibm--grid">
             {renderAst(post.htmlAst)}
           </div>
-        </div>
       </Layout>
     );
   }
