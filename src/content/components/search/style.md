@@ -12,8 +12,8 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 | -------------------------------- | ---------------- | --------- | ------- |
 | `.bx--search-input`              | background-color | $field-01 | #f4f7fb |
 | `.bx--search--light`             | background-color | $field-02 | #ffffff |
-| `.bx--search-input`              | color            | $text-01  | #152935 |
-| `.bx--search-input::placeholder` | color            | $text-03  | #cdd1d4 |
+| `.bx--search-input`              | text color       | $text-01  | #152935 |
+| `.bx--search-input::placeholder` | text color       | $text-03  | #cdd1d4 |
 | `.bx--search-magnifier`          | fill             | $ui-05    | #5a6872 |
 
 ![Example of Search using $field-01 and $field-02](images/search-style-4.png)

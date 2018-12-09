@@ -11,7 +11,7 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 | Class                                                               | Property         | SCSS       | HEX                    |
 | ------------------------------------------------------------------- | ---------------- | ---------- | ---------------------- |
 | `.bx--dropdown`                                                     | background-color | $field-01  | #f4f7fb                |
-| `.bx--dropdown` </br> `bx--multi-select bx--combo-box bx--list-box` | box-shadow       | $ui-05     | #5a6872                |
+| `.bx--dropdown` </br> `.bx--multi-select` </br> `.bx--combo-box` </br> `.bx--list-box` | box-shadow | $ui-05     | 5a6872    |
 | `.bx--dropdown--light`                                              | background-color | $field-02  | #ffffff                |
 | `.bx--dropdown-list`                                                | background-color | $ui-01     | #ffffff                |
 | `.bx--dropdown-text`                                                | color            | $text-01   | #152935                |

@@ -11,8 +11,7 @@ tabs: ['Code', 'Usage', 'Style']
 | `.bx--accordion__title`       | color      | $text-01         | #152935 |
 | `.bx--accordion__content`     | color      | $text-01         | #152935 |
 | `.bx--accordion__arrow`       | fill       | $ui-05           | #5a6872 |
-| `.bx--accordion__arrow:hover` | fill       | $hover-secondary | #3d70b2 |
-| `.bx--accordion__item`        | border-top | $ui-04           | #8897a2 |
+| `.bx--accordion__item`        | border-top | $ui-03           | #dfe3e6 |
 
 ## Typography
 
