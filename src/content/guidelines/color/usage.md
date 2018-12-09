@@ -56,10 +56,10 @@ A color token can also have multiple associated roles when the color is consiste
 | **$hover-primary**      | `$interactive-01` hover                                                                                            | <color-block showhex="true" size="xs">#0353E9</color-block> |
 | **$hover-primary-text** | `$interactive-01` text hover                                                                                       | <color-block showhex="true" size="xs">#054ada</color-block> |
 | **$hover-secondary**    | Secondary hover <br /> `$inverse-02` hover                                                                         | <color-block showhex="true" size="xs">#4c4c4c</color-block> |
-| **$hover-ui**           | `ui-01` hover <br /> `ui-02` hover <br /> Transparent background hover                                             | <color-block showhex="true" size="xs">#e5e5e5</color-block> |
+| **$hover-ui**           | `$ui-01` hover <br /> `$ui-02` hover <br /> Transparent background hover                                             | <color-block showhex="true" size="xs">#e5e5e5</color-block> |
 | **$hover-danger**       | Danger hover <br /> `$support-01` hover                                                                            | <color-block showhex="true" size="xs">#ba1b23</color-block> |
 | **$hover-row**          | Row hover                                                                                                          | <color-block showhex="true" size="xs">#e5e5e5</color-block> |
-| **$active-primary**     | `brand-01` active                                                                                                  | <color-block showhex="true" size="xs">#0530ad</color-block> |
+| **$active-primary**     | `$brand-01` active                                                                                                  | <color-block showhex="true" size="xs">#0530ad</color-block> |
 | **$active-secondary**   | Secondary active <br /> `$inverse-02` active                                                                       | <color-block showhex="true" size="xs">#6f6f6f</color-block> |
 | **$active-ui**          | `$ui-01` active <br /> `$ui-02` active                                                                             | <color-block showhex="true" size="xs">#bebebe</color-block> |
 | **$active-danger**      | Danger active <br /> `$support-01` active                                                                          | <color-block showhex="true" size="xs">#750e13</color-block> |

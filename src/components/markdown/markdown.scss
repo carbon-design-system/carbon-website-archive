@@ -97,8 +97,8 @@ h2, h3, h4, h5 {
   &:before {
     display: block; 
     content: " "; 
-    margin-top: -100px; 
-    height: 100px; 
+    margin-top: -rem(56px); 
+    height: rem(56px); 
     visibility: hidden; 
     pointer-events: none;
   }
