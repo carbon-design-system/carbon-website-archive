@@ -1,5 +1,5 @@
 ---
-label: Updates
+
 title: What's New
 ---
 October 2018</page-into>

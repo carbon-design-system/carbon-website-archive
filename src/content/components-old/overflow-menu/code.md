@@ -1,5 +1,5 @@
 ---
-label: Components
+
 title: Overflow Menu
 tabs: ['Code', 'Usage', 'Style']
 ---

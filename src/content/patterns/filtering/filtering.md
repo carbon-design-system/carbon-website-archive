@@ -1,5 +1,5 @@
 ---
-label: Patterns
+
 title: Filtering
 ---
 

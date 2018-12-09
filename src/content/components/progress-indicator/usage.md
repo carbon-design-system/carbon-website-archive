@@ -1,5 +1,5 @@
 ---
-label: Experimental
+
 title: Progress Indicator
 tabs: ['Code', 'Usage']
 ---

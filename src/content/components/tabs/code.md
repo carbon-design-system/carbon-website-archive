@@ -1,5 +1,5 @@
 ---
-label: Experimental
+
 title: Tabs
 tabs: ['Code', 'Usage']
 ---

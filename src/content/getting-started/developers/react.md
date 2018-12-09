@@ -1,5 +1,5 @@
 ---
-label: Getting Started
+
 title: Developers
 tabs: ['Vanilla', 'React', 'Angular', 'Other Frameworks']
 ---

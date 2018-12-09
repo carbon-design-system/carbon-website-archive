@@ -1,5 +1,5 @@
 ---
-label: Components
+
 title: Slider
 tabs: ['Code', 'Usage']
 ---

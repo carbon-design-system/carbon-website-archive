@@ -1,5 +1,5 @@
 ---
-label: Components
+
 title: Structured List
 tabs: ['Code', 'Usage', 'Style']
 ---

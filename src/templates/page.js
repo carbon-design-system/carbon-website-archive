@@ -93,6 +93,10 @@ export default ({ data }) => {
     'container--component': post.frontmatter.label === 'Components',
   });
 
+  const headerClassNames = classnames({
+    'page-header--md': post.frontmatter.label === 'Guidelines',
+  });
+
   if (isInternal) {
     return (
       <Layout>
@@ -116,6 +120,7 @@ export default ({ data }) => {
       <Layout>
         <div className={classNames}>
           <PageHeader
+            className={headerClassNames}
             title={post.frontmatter.title}
             label={post.frontmatter.label}>
             {!(tabs === null) && (

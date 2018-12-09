@@ -1,5 +1,5 @@
 ---
-label: Components
+
 title: Search
 tabs: ['Code', 'Usage', 'Style']
 ---

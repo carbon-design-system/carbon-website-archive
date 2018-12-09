@@ -1,5 +1,5 @@
 ---
-label: Help
+
 title: Support
 ---
 

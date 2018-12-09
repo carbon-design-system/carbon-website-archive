@@ -1,5 +1,5 @@
 ---
-label: Components
+
 title: Select
 tabs: ['Code', 'Usage', 'Style']
 ---

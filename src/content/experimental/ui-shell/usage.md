@@ -1,5 +1,5 @@
 ---
-label: Experimental
+
 title: UI Shell
 tabs: ['Code', 'Usage']
 ---

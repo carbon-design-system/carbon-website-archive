@@ -1,13 +1,29 @@
 .page-header {
   background: $ibm-colors__black;
   color: $inverse-02;
-  height: rem(329px);
   padding-top: $layout-xs;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  width: 100%;
+  height: rem(256px);
+}
+
+.page-header--md {
+  height: rem(329px);
+}
+
+.page-header .ibm--grid,
+.page-header .ibm--row {
+  //height: 100%;
+}
+
+.page-header .ibm--col-lg-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .page-header__label {
