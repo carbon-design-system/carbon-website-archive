@@ -33,7 +33,7 @@
   @include type-style('helper-text-01');
 }
 
-.icon-size .page-h2 {
+page-content > div > .ibm--row:first-child .icon-size .page-h2 {
   margin-top: 3.5rem;
 }
 
