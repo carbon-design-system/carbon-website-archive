@@ -16,7 +16,7 @@ body {
   overflow-x: hidden;
   position: relative;
   min-height: 100vh;
-  margin-top: 48px;
+  margin-top: rem(48px);
 }
 
 .container .ibm--grid {
