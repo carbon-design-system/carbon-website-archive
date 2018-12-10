@@ -214,6 +214,9 @@
       "file-uploader": {
         "title": "File Uploader"
       },
+      "form": {
+        "title": "Form"
+      },
       "inline-loading": {
         "title": "Inline Loading"
       },

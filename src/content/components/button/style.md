@@ -8,10 +8,15 @@ tabs: ['Code', 'Usage', 'Style']
 
 | Class                                                          | Property                 | SCSS             | HEX                    |
 | -------------------------------------------------------------- | ------------------------ | ---------------- | ---------------------- |
+| `.bx--btn--primary`                                            | text color               | $inverse-01      | #ffffff                |
 | `.bx--btn--primary` </br> `.bx--btn--secondary`                | background-color, border | $brand-01        | #3d70b2                |
 | `.bx--btn--primary:hover`                                      | background-color         | $hover-primary   | #30588c                |
 | `.bx--btn--primary:disabled`                                   | opacity                  | $brand-01        | #3d70b2 at 50% opacity |
+| `.bx--btn--secondary`                                          | text color               | $brand-01        | #3d70b2                |
+| `.bx--btn--secondary`                                          | border                   | $brand-01        | #3d70b2                |
 | `.bx--btn--secondary:hover`                                    | background-color         | $hover-secondary | #3d70b2                |
+| `.bx--btn--secondary:hover`                                    | text color               | $inverse-01      | #ffffff                |
+| `.bx--btn--tertiary`                                           | text color               | $inverse-01      | #ffffff                |
 | `.bx--btn--tertiary`                                           | background-color         | $ui-05           | #5a6872                |
 | `.bx--btn--tertiary:hover`                                     | background-color         | $ui-05           | #5a6872                |
 | `.bx--btn--danger--primary`</br> `.bx--btn--danger--secondary` | background-color         | $support-01      | #e0182d                |

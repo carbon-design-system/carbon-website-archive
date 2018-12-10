@@ -11,14 +11,13 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 | Class                                  | Property   | SCSS        | HEX     |
 | -------------------------------------- | ---------- | ----------- | ------- |
 | `.bx--select-input`                    | background | $field-01   | #f4f7fb |
-| `.bx--select-input`                    | color      | $text-01    | #152935 |
+| `.bx--select-input`                    | text color | $text-01    | #152935 |
 | `.bx--select-input::placeholder`       | color      | $text-03    | #cdd1d4 |
 | `.bx--select--light.bx--select-input`  | background | $field-02   | #ffffff |
 | `.bx--select--inline.bx--select-input` | background | transparent | -       |
-| `.bx--label`                           | color      | $text-01    | #152935 |
-| `.bx--label`                           | color      | $text-01    | #152935 |
+| `.bx--label`                           | text color | $text-01    | #152935 |
 | `.bx--select__arrow`                   | fill       | $brand-01   | #3d70b2 |
-| `.bx--select--inline.bx--select-input` | color      | $brand-01   | #3d70b2 |
+| `.bx--select--inline.bx--select-input` | text color | $brand-01   | #3d70b2 |
 
 ![Default and new selection state examples for Select](images/select-style-1.png)
 _Examples of default and new selection Select states in $field-02 (right) and $field-01 (left)_
@@ -28,9 +27,9 @@ _Examples of default and new selection Select states in $field-02 (right) and $f
 | Class                                                | Property      | SCSS        | HEX     |
 | ---------------------------------------------------- | ------------- | ----------- | ------- |
 | `.bx--select-input:focus`                            | border-bottom | $brand-01   | #3d70b2 |
-| `.bx--select-input:focus ~ .bx--label`               | color         | $brand-01   | #3d70b2 |
-| `.bx--select-input[data-invalid]:focus ~ .bx--label` | color         | $support-01 | #e0182d |
-| `.bx--form-requirement`                              | color         | $support-01 | #e0182d |
+| `.bx--select-input:focus ~ .bx--label`               | text color    | $brand-01   | #3d70b2 |
+| `.bx--select-input[data-invalid]:focus ~ .bx--label` | text color    | $support-01 | #e0182d |
+| `.bx--form-requirement`                              | text color    | $support-01 | #e0182d |
 | `.bx--select-input[data-invalid]`                    | border-bottom | $support-01 | #e0182d |
 
 **Open:** Style determined by browser

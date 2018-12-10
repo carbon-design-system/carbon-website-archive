@@ -9,12 +9,12 @@ tabs: ['Code', 'Usage', 'Style']
 | Class                                                                                                | Property         | SCSS      | HEX     |
 | ---------------------------------------------------------------------------------------------------- | ---------------- | --------- | ------- |
 | `.bx--tile`                                                                                          | background-color | $ui-01    | #ffffff |
-| `.bx--tile`                                                                                          | border           | $field-01 | #f4f7fb |
-| `.bx--tile:focus`                                                                                    | border           | $ui-04    | #8897a2 |
+| `.bx--tile`                                                                                          | border           | $ui-03    | #dfe3e6 |
+| `.bx--tile:focus`                                                                                    | border           | $brand-01 | #3d70b2 |
 | `.bx--tile--is-selected` </br> `.bx--tile--is-selected:hover` </br> `.bx--tile--is-selected:focus`   | border           | $brand-01 | #3d70b2 |
 | `.bx--tile__chevron svg`                                                                             | fill             | $brand-01 | #3d70b2 |
-| `.bx--tile-input:checked + .bx--tile__checkmark svg`                                                 | fill             | $brand-01 | #3d70b2 |
-| `.bx--tile--clickable:hover` </br> `.bx--tile--selectable:hover` </br> `.bx--tile--expandable:hover` | border           | $ui-03    | #dfe3e6 |
+| `.bx--tile__checkmark svg`                                                                           | fill             | $brand-01 | #3d70b2 |
+| `.bx--tile--clickable:hover` </br> `.bx--tile--selectable:hover` </br> `.bx--tile--expandable:hover` | border           | $ui-04    | #8897a2 |
 
 ## Layer
 
