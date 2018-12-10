@@ -9,7 +9,7 @@
 
 // Example
 .example {
-  margin-bottom: 36px;
+  margin-bottom: rem(36px);
 
   @include breakpoint('sm') {
     width: 100%;
@@ -20,7 +20,13 @@
   }
 
   &:first-child {
-    margin-right: rem(32px);
+    @include breakpoint('sm') {
+      margin-right: 0;
+    }
+
+    @include breakpoint('md') {
+      margin-right: rem(32px);
+    }
   }
 }
 
