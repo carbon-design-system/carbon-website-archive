@@ -8,7 +8,7 @@ tabs: ['Code', 'Usage']
 
 - A File Uploader is commonly found in forms, but they can also live as stand alone elements.
 - **Add files** is the default text that appears with the File Uploader.
-- A File Uploader should always be accompanied by **Submit** or **Upload**, which is to be styled as a [Secondary Button](/components/button).
+- A File Uploader should always be accompanied by **Submit** or **Upload**, which is to be styled as a [Primary Button](/components/button).
 - Use an ellipsis (...) if the filename extends beyond the width of its parent element.
 
 ## Basic interaction
