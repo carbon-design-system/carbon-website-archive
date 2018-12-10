@@ -1,20 +1,18 @@
 ---
-label: Typography is used to create clear hierarchies, useful organizations, and purposeful alignments that guide users through the product experience.
+label: When used properly, typography can help create clear hierarchies, organize information, and guide users through the product or experience.
 title: Typography
 tabs: ['Overview', 'Productive', 'Expressive']
 ---
 
-## IBM Productive Theme
+## IBM productive theme
 
-The IBM Product type theme introduces the new IBM Design Language tokens. Please switch to the new tokens wherever possible. Legacy type tokens will be updated to the v19a type scale and should be used for maintenance purposes only.
+“IBM productive” is a theme designed for use in web-based product design at IBM. This theme introduces the new IBM Design Language tokens. Please switch to the new tokens wherever possible. 
 
-Type tokens are simply pre-set configurations of typographic elements (font-size, weight, line-height, etc) that are specifically calibrated for use in IBM product design. Selecting the appropriate type style is determined by layout or template structure. Products may have several levels of architecture or areas that require varying typographic hierarchies.
-
-## Productive Type Sets
+## Productive type sets
 
 Even though IBM Plex contains a wide range of scales, it’s important to use a curated type set. For a clear and focused reading experience, consider content needs and how type works across various screen sizes.
 
-#### Supporting styles
+### Supporting styles
 
 <type-spec token="code-01" description="This is for inline code snippets and smaller code elements.">
 Type: IBM Plex Mono<br>
@@ -52,30 +50,30 @@ Weight: 400 / Italic<br>
 Letter-spacing: .32px
 </type-spec>
 
-#### Body
+### Body
 
-<type-spec token="body-short-01" description="This is for short paragraphs with no more than 4 lines and is commonly used in components.">
+<type-spec token="body-short-01" description="This is for short paragraphs with no more than four lines and is commonly used in components.">
 Type: IBM Plex Sans<br>
 Size: 14px / .875rem<br>
 Line height: 18 / 1.125rem <br>
 Weight: 400 / Regular<br>
 Letter-spacing: .16px
 </type-spec>
-<type-spec token="body-long-01" description="This is commonly used in both the Expressive and the Productive type theme layouts for long paragraphs with more than four lines. It is a good size for comfortable, long-form reading. We also use this for longer body copy in components such as Accordion or Structured List. We always left-align this type; we never center it. ">
+<type-spec token="body-long-01" description="This is commonly used in both the expressive and the productive type theme layouts for long paragraphs with more than four lines. It is a good size for comfortable, long-form reading. We also use this for longer body copy in components such as _accordion_ or _structured list_. Always left-align this type; never center it.">
 Type: IBM Plex Sans<br>
 Size: 14px / .875rem<br>
 Line height: 18 / 1.125rem <br>
 Weight: 400 / Regular<br>
 Letter-spacing: .16px
 </type-spec>
-<type-spec token="body-short-02" description="This is for short paragraphs with no more than 4 lines and is commonly used in the expressive type theme for layouts.">
+<type-spec token="body-short-02" description="This is for short paragraphs with no more than four lines and is commonly used in the expressive type theme for layouts.">
 Type: IBM Plex Sans<br>
 Size: 16px / 1rem<br>
 Line height: 22px / 1.375rem <br>
 Weight: 400 / Regular<br>
 Letter-spacing: 0
 </type-spec>
-<type-spec token="body-long-02" description="This is commonly used in the expressive type theme layouts for long paragraphs with more than four lines. The looser line height and larger size makes for comfortable, long-form reading, in mediums that allow for more space. This size type is rarely used for body copy in components. We always left-align type; we never center it.">
+<type-spec token="body-long-02" description="This is commonly used in the expressive type theme layouts for long paragraphs with more than four lines. The looser line height and larger size makes for comfortable, long-form reading, in mediums that allow for more space. This type size is rarely used for body copy in components. Always left-align type; never center it.">
 Type: IBM Plex Sans<br>
 Size: 16px / 1rem<br>
 Line height: 14px / 1.5rem <br>
@@ -83,7 +81,7 @@ Weight: 400 / Regular<br>
 Letter-spacing: 0
 </type-spec>
 
-#### Headings
+### Headings
 
 <type-spec token="heading-01" description="This is for component and layout headings.">
 Type: IBM Plex Sans<br>
