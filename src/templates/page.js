@@ -28,7 +28,10 @@ import MotionExample from '../components/MotionExample';
 import ComponentOverview from '../components/ComponentOverview';
 import NextPrevious from '../components/NextPrevious';
 import GridWrapper from '../components/GridWrapper';
-import { HomepageFooter, HomepageHeader } from '../components/Homepage/Homepage';
+import {
+  HomepageFooter,
+  HomepageHeader,
+} from '../components/Homepage/Homepage';
 
 // Custom Markdown
 import {
@@ -125,10 +128,14 @@ export default ({ data, pageContent }) => {
               <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
             )}
           </PageHeader>
-          <NextPrevious slug={slug} currentTabs={tabs} currentPage={currentPage}/>
           <div className="page-content ibm--grid">
             {renderAst(post.htmlAst)}
           </div>
+          <NextPrevious
+            slug={slug}
+            currentTabs={tabs}
+            currentPage={currentPage}
+          />
         </div>
       </Layout>
     );
