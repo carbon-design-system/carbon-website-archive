@@ -4,11 +4,22 @@ title: Typography
 tabs: ['Overview', 'Productive', 'Expressive']
 ---
 
+- [Type tokens and themes](#type-tokens-and-themes)
 - [Typeface: IBM Plex](#typeface-ibm-plex)
 - [Scale](#scale)
 - [Style](#style)
 - [Type Color](#type-color)
 
+
+## Type tokens and themes
+
+Carbon utilizes type tokens and themes to manage typrography. 
+
+A _token_ is a named entity in a design system which represents specific visual attributes, such as font size, font weight, color, etc. Using tokens enables these specific values to be centralized and abstracted in the system, which in turn makes it easier to update designs—however wide-ranging—from a single source of truth. 
+
+A _theme_ is a complete set of tokens that have been designed to work harmoniously together.
+
+Two different themes in the same system could share the same token architecture, but would have different values for some or all of the tokens.
 
 ## Typeface: IBM Plex
 
