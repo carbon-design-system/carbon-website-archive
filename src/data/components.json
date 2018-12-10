@@ -96,8 +96,8 @@
       "tag": "updated",
       "vanilla": "ready",
       "react": "ready",
-      "angular": "ready",
-      "experimental": "ready"
+      "angular": "not-available",
+      "experimental": "not-available"
     },
     {
       "item": "Inline Loading",
