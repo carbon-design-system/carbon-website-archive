@@ -4,9 +4,9 @@ title: Typography
 tabs: ['Overview', 'Productive', 'Expressive']
 ---
 
-## IBM productive theme
+## IBM Productive theme
 
-“IBM productive” is a theme designed for use in web-based product design at IBM. This theme introduces the new IBM Design Language tokens. Please switch to the new tokens wherever possible. 
+“IBM Productive” is a theme designed for use in web-based product design at IBM. This theme introduces the new IBM Design Language tokens. Please switch to the new tokens wherever possible. 
 
 ## Productive type sets
 
