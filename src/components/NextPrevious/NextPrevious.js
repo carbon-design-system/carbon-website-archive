@@ -22,7 +22,7 @@ export default class NextPrevious extends React.Component {
    * e.g.converts "Item Name" to "item-name"
    */
   titleToSlug = string => {
-    return string.toLowerCase().replace(' ', '-');
+    if (string) return string.toLowerCase().replace(' ', '-');
   };
 
   /**
@@ -32,26 +32,33 @@ export default class NextPrevious extends React.Component {
     if (string && string.charAt(0) === '/') {
       string = string.substr(1);
     }
-    let newString = string
-      .split('/')
-      .pop()
-      .split('-')
-      .map(word => {
-        return word.charAt(0).toUpperCase() + word.slice(1);
-      });
-    return newString.join(' ');
+    let newString;
+    if (string) {
+      newString = string
+        .split('/')
+        .pop()
+        .split('-')
+        .map(word => {
+          return word.charAt(0).toUpperCase() + word.slice(1);
+        })
+        .join(' ');
+    }
+    return newString;
   };
 
   slugToTitleWithPath = string => {
     if (string && string.charAt(0) === '/') {
       string = string.substr(1);
     }
-    let newString = string
-      .split('/')
-      .map(word => {
-        return this.slugToTitle(word);
-      })
-      .join(': ');
+    let newString = string;
+    if (string) {
+      newString = string
+        .split('/')
+        .map(word => {
+          return this.slugToTitle(word);
+        })
+        .join(': ');
+    }
     return newString;
   };
 
