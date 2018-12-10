@@ -29,7 +29,7 @@ export default class NextPrevious extends React.Component {
    * e.g. converts "item-name" to "Item Name"
    */
   slugToTitle = string => {
-    if (string.charAt(0) === '/') {
+    if (string && string.charAt(0) === '/') {
       string = string.substr(1);
     }
     let newString = string
@@ -43,7 +43,7 @@ export default class NextPrevious extends React.Component {
   };
 
   slugToTitleWithPath = string => {
-    if (string.charAt(0) === '/') {
+    if (string && string.charAt(0) === '/') {
       string = string.substr(1);
     }
     let newString = string
