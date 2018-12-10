@@ -1,9 +1,9 @@
 ---
-label: Patterns
+
 title: Loading
 ---
 
-<page-intro>**Loading** is applied when additional information takes an extended amount of time to process and appear on screen. Skeleton states and the _loading_ component are two interactions that communicate to users that data is currently loading and the screen is not frozen.</page-intro>
+**Loading** is applied when additional information takes an extended amount of time to process and appear on screen. Skeleton states and the _loading_ component are two interactions that communicate to users that data is currently loading and the screen is not frozen.
 
 ## Skeleton states
 

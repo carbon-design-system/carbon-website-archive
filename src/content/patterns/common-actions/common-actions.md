@@ -1,9 +1,9 @@
 ---
-label: Patterns
+
 title: Common Actions
 ---
 
-<page-intro>**Common actions** are frequently used actions that appear multiple times across different components and workflows. For platform consistency, these actions should only be applied in the ways described below.</page-intro>
+**Common actions** are frequently used actions that appear multiple times across different components and workflows. For platform consistency, these actions should only be applied in the ways described below.
 
 ## Regressive actions
 

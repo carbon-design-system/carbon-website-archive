@@ -92,9 +92,6 @@
       "content-switcher": {
         "title": "Content Switcher"
       },
-      "data-table": {
-        "title": "Data Table"
-      },
       "date-picker": {
         "title": "Date Picker"
       },
@@ -119,9 +116,6 @@
       "loading": {
         "title": "Loading"
       },
-      "modal": {
-        "title": "Modal"
-      },
       "notification": {
         "title": "Notification"
       },
@@ -130,9 +124,6 @@
       },
       "overflow-menu": {
         "title": "Overflow Menu"
-      },
-      "pagination": {
-        "title": "Pagination"
       },
       "progress-indicator": {
         "title": "Progress Indicator"
@@ -200,32 +191,6 @@
       },
       "overflow-content": {
         "title": "Overflow Content"
-      }
-    }
-  },
-  "data-visualization": {
-    "title": "Data Visualization",
-    "sub-nav": {
-      "overview": {
-        "title": "Overview"
-      },
-      "bar-graph": {
-        "title": "Bar Graph"
-      },
-      "gauge": {
-        "title": "Gauge"
-      },
-      "line-graph": {
-        "title": "Line Graph"
-      },
-      "pie-chart": {
-        "title": "Pie Chart"
-      },
-      "scatter-plot": {
-        "title": "Scatter Plot"
-      },
-      "tooltip": {
-        "title": "Tooltip"
       }
     }
   },

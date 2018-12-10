@@ -1,39 +1,39 @@
 ---
-label: Guidelines
+label: IBM's icons are visual symbols used to represennt ideas, objects, or actions. They communicate messages at a glance, afford interactivity, and draw attention to important information.
 title: Iconography
 tabs: ['Library', 'Usage', 'Design and Contribution']
 ---
 
-<page-intro>**Iconography** uses images and symbols to represent an object visually. They communicate a message and should be distinct and informative. Icons should be used sparingly throughout the product to provide clarity and reduce cognitive load on users.</page-intro>
-
-## Resources
-
-<p>You can find the source file for the icon library within the <a href="https://github.com/ibm/carbon-design-kit" target=blank>Carbon Design Kit.</a></p>
-
-- <a href="https://github.com/ibm/carbon-icons" target=blank>Carbon icons GitHub repo</a>
-- <a href="http://www.ibm.com/design/language/resources/icon-library/" target=blank>IBM Design Language icon library</a>
-
-## Visual usage
+## Using Icons
 
 ### Sizing
 
-UI icons are `16px`.
+UI icons that appear within Carbon components are generally 16 px square. Icons sized at 20, 24, and 32 px can be also used within the UI. Icons should only be used at their original sizes and not resized in code.
 
-While most icons occupy a square artboard, some icons may occupy a rectangular artboard where only the width or height of the icons is 16px. Icons should only be used at their original sizes.
+![icon sizing](images/iconography-usage-sizing-1.svg)
 
-### Background
+![icon alignment](images/iconography-usage-sizing-2.svg)
+_16 px and 20 px icons are optimized to feel balanced when paired with 14pt and 16pt IBM Plex. Use 24 px and 32 px when larger icons are needed._
 
-All icons should be on a transparent background and with the artboard boundaries at the edges of the icon. At least one of the edges should be at the standard measurement of 24px or 16px.
+<grid-wrapper col_lg="8" flex="true">
+    <do-dont-example correct=true label="Do: use the correct icon size with IBM Plex.">
+        <img src="images/iconography-usage-sizing-3.svg" alt="proper sizing">    
+    </do-dont-example>
+    <do-dont-example label="Don't: alter the icon-text size ratio.">
+        <img src="images/iconography-usage-sizing-4.svg" alt="improper sizing">    
+    </do-dont-example>
+</grid-wrapper>
 
-### Padding
 
-When **creating icons,** do not add internal padding with Sketch or Illustrator. If the icon needs padding, developers can add this with CSS.
+### Touch Targets
 
-When **using icons,** all touch targets need to be 44px or higher. With that said, a developer can add padding to a touch target with CSS to meet the 44px requirement.
+All touch targets for interactive icons need to be 44 px or larger. Developers can add padding to a touch target with CSS to meet the 44 px requirement.
+
+![touch target padding](images/iconography-usage-padding-6.svg)
 
 ### Color
 
-Interactive UI icons need to pass the same color contrast ratio as typography at a 4.5:1 ratio. UI icons are always a solid color. The color of the icon should depend on the importance of the icon's action.
+Interactive UI icons need to pass the same color contrast ratio as typography at a 4.5:1 ratio. UI icons should always use solid colors. The color of the icon is determined by the importance of the icon's action.
 
 |                        | SCSS             | HEX y                                                       |
 | ---------------------- | ---------------- | ----------------------------------------------------------- |
@@ -44,18 +44,18 @@ Interactive UI icons need to pass the same color contrast ratio as typography at
 
 **Exception:** There is an exception to both the `brand-01` and UI color rules. Certain icons, such as status or notification icons, can inherit their parent color. For example, a warning icon is yellow because warning notifications are yellow.
 
-### Weight
+### Alignment
 
-Icons of the same size should have the same visual weight. One icon should not look heavier or lighter than another icon of the same size. Most UI Icons are drawn with a two pixel stroke.
+When used next to text, icons should be center-aligned. 
 
-Make sure the 2px stroke does not change when resizing icons because it causes
-icons to look uneven. When scaling icons you should always start each icon at the same base size (preferably the default of 24px).
-
-Glyphs or 16 pixel icons, should always be a filled icon. This adds visual weight to the icon, allowing it to maintain its proper emphasis and stay legible. Fine stroke weights can disappear or break at the glyph size.
-
-### Pixel grid
-
-When drawing or re-sizing icons make sure the vector always aligns to the base pixel grid. This ensures pixel clarity and crispness on all screen ratios. The x and y coordinates of icons should never contain decimals.
+<grid-wrapper col_lg="8" flex="true">
+    <do-dont-example correct=true label="Do: center-align icons when they’re next to text.">
+        <img src="images/iconography-usage-sizing-5.svg" alt="proper alignment">    
+    </do-dont-example>
+    <do-dont-example label="Don't: baseline-align icons to the text.">
+        <img src="images/iconography-usage-sizing-6.svg" alt="improper alignment">    
+    </do-dont-example>
+</grid-wrapper>
 
 ## Developer usage
 

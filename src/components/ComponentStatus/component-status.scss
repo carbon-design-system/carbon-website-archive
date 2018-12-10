@@ -1,5 +1,7 @@
 .component-status-page {
-  
+  .page-table {
+    width: 100%;
+  }
 
   .inline-tag {
     margin-left: rem(8px);
@@ -22,7 +24,7 @@
     flex-direction: column;
     white-space: nowrap;
 
-    @include breakpoint('552px') {
+    @include breakpoint('md') {
       flex-direction: row;
       align-items: center;
     }
@@ -33,7 +35,7 @@
       margin: 0 1rem 0.25rem;
       margin-left: 0;
 
-      @include breakpoint('552px') {
+      @include breakpoint('md') {
         margin-left: 1rem;
         margin-bottom: 0;
       }
@@ -66,7 +68,7 @@
     }
 
     .bx--dropdown__list-item {
-      background-color: $color__white;
+      background-color: $ibm-colors__white;
     }
 
     .bx--dropdown__link {
@@ -83,11 +85,11 @@
     height: rem(16px);
     display: flex;
     border-radius: 50%;
-    color: $color__white;
+    color: $ibm-colors__white;
     width: 100%;
 
     &.under-review {
-      fill: $color__white;
+      fill: $ibm-colors__white;
 
       span {
         font-size: 0.675rem;

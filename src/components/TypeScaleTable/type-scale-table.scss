@@ -3,7 +3,7 @@ $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
 
 .typography-table {
   overflow-x: scroll;
-  background: $color__white;
+  background: $ibm-colors__white;
 
   table tbody tr {
     border: none;
@@ -12,8 +12,7 @@ $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
   table thead th {
     border: none;
     color: $ibm-colors__gray--50;
-    font-weight: normal;
-    font-size: rem(12px);
+    @include type-style('caption-01');
     padding: 1rem;
     text-align: left;
   }
@@ -23,7 +22,7 @@ $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
     border: none;
     height: auto;
     padding: 0 1rem;
-    font-size: rem(12px);
+    font-size: .75rem;
   }
 
   @for $i from 1 through length($type-scale) {

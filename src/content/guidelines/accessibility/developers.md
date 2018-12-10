@@ -4,7 +4,7 @@ title: Accessibility
 tabs: ['Overview', 'Color', 'Keyboard', 'Developers']
 ---
 
-<page-intro>Developers have the power to make products work with assistive technology. Accessibility is already integrated into Carbon components — here are some ways that you can further ensure your deliverables are accessible!</page-intro>
+Developers have the power to make products work with assistive technology. Accessibility is already integrated into Carbon components — here are some ways that you can further ensure your deliverables are accessible!
 
 ## HTML best practices
 

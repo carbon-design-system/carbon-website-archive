@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 100%;
   display: block;
-  color: $color__white;
+  color: $ibm-colors__white;
   margin-bottom: 6rem;
 
   p {
@@ -47,7 +47,7 @@
   right: 0;
   bottom: 0;
   color: $text-02;
-  font-size: 0.75rem;
+  @include type-style('caption-01');
   padding: 0.5rem 1rem;
   z-index: 9999;
 }
@@ -68,7 +68,7 @@
   border-right: 1px solid $ui-03;
 
   p {
-    @include typescale('zeta');
+   @include type-style('body-short-01');
     color: $text-02;
     font-weight: 600;
     padding: 0 1rem;
@@ -82,7 +82,7 @@
   flex: 2;
 
   a {
-    @include typescale('zeta');
+   @include type-style('body-short-01');
     padding-left: 1rem;
   }
 }

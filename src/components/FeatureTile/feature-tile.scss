@@ -63,11 +63,11 @@ a.feature-tile:hover .feature-tile__info {
 }
 
 .feature-tile__label {
-  font-size: rem(14px);
+  @include type-style('body-short-01');
   color: $ibm-colors__gray--30;
 }
 
 .feature-tile__title {
-  font-size: rem(20px);
+  @include type-style('heading-03');
   color: $ibm-colors-_gray--10;
 }

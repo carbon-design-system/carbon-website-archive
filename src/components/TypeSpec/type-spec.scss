@@ -1,0 +1,36 @@
+.type-spec {
+    margin-bottom: $spacing-md;    
+}
+
+// Example code 
+.type-spec__example {
+    background: $ibm-colors__white; 
+    padding-top: $spacing-md;
+    padding-bottom: $spacing-md;
+}
+
+// Spec details
+.type-spec__details {
+    padding: $spacing-md;
+    background: $ibm-colors__white; 
+    border-left: 1px solid $ibm-colors__gray--20;
+    @include type-style('caption-01');
+
+    h4 {
+        @include type-style('heading-01');
+        margin: 0;
+        padding: 0;
+    }
+}
+
+// this should be using carbon component styles?
+.type-spec__details .bx--snippet--inline {
+    margin: $spacing-xs 0 0 0;
+}
+
+.type-spec__details .bx--snippet--inline code {
+    background: $ibm-colors__gray--20;
+    @include type-style('code-01');
+    padding: .2rem .5rem;
+    border-radius: 3px;
+}

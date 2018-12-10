@@ -9,9 +9,9 @@ title: Layout
 - [Grid Influencers](#grid-influencers)
 - [Sizing Scale](#sizing-scale)
 
-<page-intro>
+
 The 2x Grid is the geometric foundation of all the visual elements of IBM Design, from typography to columns, boxes, icons, and illustrations. It provides structure and guidance to creative decision-making.
- </page-intro>
+ 
 
 
 ## Mini Unit

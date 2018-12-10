@@ -1,9 +1,9 @@
 ---
-label: Patterns
+
 title: Overflow Content
 ---
 
-<page-intro>**Overflow content** is text, such as a paragraph or a text string, that exceeds a desired space. It also applies to a series of components that surpass a given space. Overflow content is typically reduced to fit a space or reduce repetition. Truncation and ‘Show more’ buttons are two ways to indicate that overflow content is continued elsewhere or below the fold.</page-intro>
+**Overflow content** is text, such as a paragraph or a text string, that exceeds a desired space. It also applies to a series of components that surpass a given space. Overflow content is typically reduced to fit a space or reduce repetition. Truncation and ‘Show more’ buttons are two ways to indicate that overflow content is continued elsewhere or below the fold.
 
 ## Truncation
 
@@ -80,14 +80,18 @@ To use front- and end-line truncation, enter the appropriate class below and add
 
 **Result**
 
+<grid-wrapper>
 <img src="https://media.github.ibm.com/user/1679/files/1c695894-538c-11e8-8cd2-bb0b1cac151b" alt="Result" style="width: 20%; margin-top: 0" />
+</grid-wrapper>
 
 #### Mid-line truncation
 
 Mid-line truncation does not have its own class as it requires JavaScript. This example in CodePen shows how it is implemented.
 
+<grid-wrapper col_lg="8">
 <iframe height='300' scrolling='no' title='Middle Truncation' src='//codepen.io/team/carbon/embed/KRoBQe/?height=300&theme-id=30962&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/team/carbon/pen/KRoBQe/'>Middle Truncation</a> by Carbon Design System (<a href='https://codepen.io/carbon'>@carbon</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+</grid-wrapper>
 
 ### 'Show more' buttons
 

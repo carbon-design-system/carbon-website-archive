@@ -1,10 +1,10 @@
 ---
-label: Components
+
 title: Tooltip
 tabs: ['Code', 'Usage']
 ---
 
-<page-intro>**Tooltips** provide additional information upon hover or focus. They often contain helper text that is contextual to an element.</page-intro>
+**Tooltips** provide additional information upon hover or focus. They often contain helper text that is contextual to an element.
 
 <component 
     name="Tooltip"

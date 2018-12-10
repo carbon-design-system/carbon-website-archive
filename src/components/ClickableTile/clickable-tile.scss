@@ -52,8 +52,7 @@ a.tile--article.tile--dark:hover {
 .tile--article .tile__info h5 {
   text-decoration: none;
   color: $text-01;
-  font-size: rem(16px);
-  font-weight: 600;
+  @include type-style('heading-02');
 }
 
 .tile--article.tile--dark .tile__info h5 {
@@ -68,8 +67,6 @@ a.tile--article.tile--dark:hover {
 p.tile__author {
   margin: 0;
   padding-bottom: 0;
-  font-weight: 300;
-  font-size: rem(16px);
   color: $text-01;
 }
 
@@ -78,8 +75,7 @@ p.tile__author {
 }
 
 .tile__date {
-  font-size: rem(12px);
-  font-weight: 300;
+  @include type-style('caption-01');
   color: $text-01;
 }
 
@@ -130,8 +126,7 @@ a.tile--resource.tile--dark:hover {
   color: $text-01;
   margin: 0 0 $spacing-xs 0;
   padding: 0;
-  font-weight: 400;
-  font-size: rem(14px);
+  @include type-style('body-short-01');
 }
 
 .tile--resource.tile--dark .tile__info h5 {

@@ -1,14 +1,20 @@
 .page-table,
-.component-docs table,
-.type-weight table {
-  width: 100%;
+.component-docs table {
   margin-bottom: 1.5rem;
   line-height: 1.25;
 
+  @include breakpoint('sm') {
+    width: 100%;
+  }
+
+  @include breakpoint('lg') {
+    width: auto;
+    min-width: 67.3%;
+  }
+
   thead {
     th {
-      @include type-style('body-02');
-      font-weight: font-weight('semibold');
+      @include type-style('heading-01');
       color: $text-01;
       padding: $spacing-md;
       text-align: left;
@@ -22,7 +28,7 @@
       border-bottom: 1px solid $ui-03;
 
       td {
-        @include type-style('body-02');
+        @include type-style('body-short-01');
         color: $text-01;
         padding: $spacing-md;
 

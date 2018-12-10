@@ -32,8 +32,9 @@
 //----------------------------
 
 .page-h2,
-.component-docs h2 {
-  @include type-style('heading-06');
+.component-docs h2,
+.icon-h2 {
+  @include type-style('productive-heading-04');
   position: relative;
   color: $text-01;
   margin-top: rem(56px);
@@ -47,7 +48,7 @@
 
 .page-h3,
 .component-docs h3 {
-  @include type-style('heading-05');
+  @include type-style('heading-03');
   color: $text-01;
   margin-top: rem(24px);
   margin-bottom: $spacing-md;
@@ -61,7 +62,6 @@
 .page-h4,
 .component-docs h4 {
   @include type-style('heading-02');
-  font-weight: font-weight('semibold');
   color: $text-01;
   margin-top: rem(8px);
   margin-bottom: rem(8px);
@@ -98,8 +98,8 @@ h2, h3, h4, h5 {
   &:before {
     display: block; 
     content: " "; 
-    margin-top: -100px; 
-    height: 100px; 
+    margin-top: rem(-56px); 
+    height: rem(56px); 
     visibility: hidden; 
     pointer-events: none;
   }
@@ -188,7 +188,7 @@ h2, h3, h4, h5 {
 
   .page-ul > li,
   ul > li {
-    font-size: rem(20px);
+    @include type-style('heading-03');
     list-style: none;
 
     &:before {
@@ -221,11 +221,6 @@ h2, h3, h4, h5 {
   max-width: 100%;
 }
 
-// Adds background color to component page images. Adds to all images on compponent pages for now
-.container--component .gatsby-resp-image-wrapper {
-  background: $ibm-colors__white;
-}
-
 .gatsby-resp-image-background-image {
   background: transparent !important; // Need important to override inline style added by gatsby-remark-images
 }
@@ -233,19 +228,6 @@ h2, h3, h4, h5 {
 .container--component .gatsby-resp-image-image {
   box-shadow: none !important; // Need important to override inline style added by gatsby-remark-images
   border: none !important;
-}
-
-//----------------------------
-// Inline image
-//----------------------------
-
-blockquote .gatsby-resp-image-wrapper,
-blockquote p img {
-  width: 5.2rem;
-  height: auto;
-  margin: 1.2rem 0 0 0;
-  padding: 0 1.2rem 1.2rem 0;
-  float: left;
 }
 
 //----------------------------

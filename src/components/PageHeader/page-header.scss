@@ -1,17 +1,25 @@
 .page-header {
   background: $ibm-colors__black;
   color: $inverse-02;
-  height: rem(329px);
-  padding-top: $layout-xs;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-end;
+  height: rem(240px);
+}
+
+.page-header--md {
+  height: rem(320px);
+}
+
+.page-header__label-row {
+  position: absolute;
+  top: rem(24px);
   width: 100%;
 }
 
 .page-header__label {
-  @include type-style('heading-04');
+  @include type-style('heading-03');
 }
 
 .page-header__title {
@@ -19,7 +27,6 @@
   font-size: 60px;
   font-weight: 300;
   line-height: 70px;
-  //@include type-style('display-02');
   margin-bottom: $layout-xs;
   margin-top: auto;
 }

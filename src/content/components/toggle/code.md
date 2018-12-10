@@ -1,10 +1,10 @@
 ---
-label: Components
+
 title: Toggle
 tabs: ['Code', 'Usage']
 ---
 
-<page-intro>**Toggle** is a control that is used to quickly switch between two possible states.</page-intro>
+**Toggle** is a control that is used to quickly switch between two possible states.
 
 <component 
     name="Toggle"

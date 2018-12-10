@@ -1,5 +1,5 @@
 ---
-label: Resources
+
 title: Resources
 ---
 

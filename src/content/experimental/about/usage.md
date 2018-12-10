@@ -1,5 +1,5 @@
 ---
-label: Components
+
 title: About
 tabs: ['Overview', 'Usage']
 ---

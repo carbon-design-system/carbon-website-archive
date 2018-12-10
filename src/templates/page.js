@@ -16,15 +16,14 @@ import DoDontExample from '../components/DoDontExample';
 import ColorBlock from '../components/ColorBlock';
 import ColorCard from '../components/ColorCard';
 import IconLibrary from '../components/IconLibrary';
-import IconLibraryExperimental from '../components/IconLibrary/IconLibraryExperimental';
 import TypeScaleTable from '../components/TypeScaleTable';
 import TypeWeight from '../components/TypeWeight';
+import TypeSpec from '../components/TypeSpec';
 import ComponentCode from '../components/ComponentCode';
 import ComponentDocs from '../components/ComponentDocs';
 import ComponentStatus from '../components/ComponentStatus';
 import ComponentReact from '../components/ComponentReact';
 import Glossary from '../components/Glossary';
-import MotionExample from '../components/MotionExample';
 import ComponentOverview from '../components/ComponentOverview';
 import NextPrevious from '../components/NextPrevious';
 import GridWrapper from '../components/GridWrapper';
@@ -43,7 +42,6 @@ import {
   h5,
   ul,
   ol,
-  PageIntro,
   PageIcon,
   AnchorLinks,
 } from '../components/markdown/Markdown';
@@ -62,7 +60,6 @@ const renderAst = new rehypeReact({
     pre: Snippet,
     table: PageTable,
     'grid-wrapper': GridWrapper,
-    'page-intro': PageIntro,
     icon: PageIcon,
     'clickable-tile': ClickTile,
     'feature-tile': FeatureTile,
@@ -70,21 +67,20 @@ const renderAst = new rehypeReact({
     'color-block': ColorBlock,
     'color-card': ColorCard,
     'icon-library': IconLibrary,
-    'icon-library-experimental': IconLibraryExperimental,
     'type-scale-table': TypeScaleTable,
     'type-weight': TypeWeight,
+    'type-spec': TypeSpec,
     component: ComponentCode,
     'component-react': ComponentReact,
     'component-docs': ComponentDocs,
     'component-status': ComponentStatus,
     glossary: Glossary,
-    'motion-example': MotionExample,
     'component-overview': ComponentOverview,
     'anchor-links': AnchorLinks,
   },
 }).Compiler;
 
-export default ({ data, pageContent }) => {
+export default ({ data }) => {
   const post = data.markdownRemark;
   let currentPage = post.fields.currentPage;
   let slug = post.fields.slug;
@@ -94,10 +90,6 @@ export default ({ data, pageContent }) => {
   const { GATSBY_CARBON_ENV } = process.env;
   const isInternal = GATSBY_CARBON_ENV !== 'internal' && internal == true;
   const homepage = (post.frontmatter.title === 'Homepage') == true;
-
-  const classNames = classnames({
-    'container--component': post.frontmatter.label === 'Components',
-  });
 
   if (isInternal) {
     return (
@@ -120,7 +112,6 @@ export default ({ data, pageContent }) => {
   } else {
     return (
       <Layout>
-        <div className={classNames}>
           <PageHeader
             title={post.frontmatter.title}
             label={post.frontmatter.label}>
@@ -131,12 +122,15 @@ export default ({ data, pageContent }) => {
           <div className="page-content ibm--grid">
             {renderAst(post.htmlAst)}
           </div>
+<<<<<<< HEAD
           <NextPrevious
             slug={slug}
             currentTabs={tabs}
             currentPage={currentPage}
           />
         </div>
+=======
+>>>>>>> e937fa21be0fe7cd3deccdd120a14b75fe4f68d8
       </Layout>
     );
   }

@@ -1,5 +1,5 @@
 ---
-label: Guidelines
+label: IBM's icons are visual symbols used to represennt ideas, objects, or actions. They communicate messages at a glance, afford interactivity, and draw attention to important information.
 title: Iconography
 tabs: ['Library', 'Usage', 'Design and Contribution']
 ---
@@ -23,6 +23,7 @@ Don't see the icon you need in the library? Make your own! Follow these guidelin
 ## Producing an Icon
 
 - Create a 16 x 16 or 32 x 32 px artboard for each icon.
+- 16 px icons should have 1 px padding. 32 px icons should have 2 px padding.
 - Set your workspace up from the start to snap to pixels and round values to whole pixels to avoid correcting shapes later.
 - Never use center borders. Centering can cause half pixels.
 - Avoid using the line tool; use the rectangle tool instead. The line tool will place the vector on half pixels.
@@ -32,7 +33,7 @@ Don't see the icon you need in the library? Make your own! Follow these guidelin
 
 ### Production-Ready 
 
-To be considered production-ready, all icon submissions must be delivered in SVG format at 16 x 16 pixels (for integration with Carbon components) or 32 x 32 (for service icons). 
+To be considered production-ready, all icon submissions must be delivered in SVG format at 16 x 16 px (for integration with Carbon components) or 32 x 32 (for service icons). 
 
 - Icons should be at whole pixels. No decimals are allowed in x and y coordinates or width and height fields.
 - Each artboard and the artwork within it must be aligned to the pixel grid.
@@ -43,7 +44,7 @@ To be considered production-ready, all icon submissions must be delivered in SVG
 
 ### Export SVGs from Sketch
 
-1. Draw a 16 x 16 or 32 x 32 px artboard. The artboard should hug the edges of the icon.
+1. Draw a 16 x 16 or 32 x 32 px artboard. 16 px icons should have 1 px padding. 32 px icons should have 2 px padding.
 2. Place the icon squarely on the artboard, making sure it's aligned to the pixel grid.
 3. Convert all strokes to outlines `(Shift + ⌘ + O)`
 4. Select any overlapping shapes and click the Union icon from the top navigation to merge all of the shapes together.
@@ -57,7 +58,7 @@ To be considered production-ready, all icon submissions must be delivered in SVG
 
 ### Export SVGs from Adobe Illustrator
 
-1. Draw a 16 x 16 or 32 x 32 px artboard. The artboard should hug the edges of the icon.
+1. Draw a 16 x 16 or 32 x 32 px artboard. 16 px icons should have 1 px padding. 32 px icons should have 2 px padding.
 2. Place the icon squarely on the artboard, making sure it's aligned to the pixel grid.
 3. Expand all strokes `(Object > Expand)`.
 4. Select all overlapping shapes and click the "Unite" icon in the Pathfinder panel to merge all of the shapes together.
@@ -69,7 +70,7 @@ To be considered production-ready, all icon submissions must be delivered in SVG
 10. The `SVG Options` dialog will then open.
 11. Make sure the preferences are the same as in the image below.
 
-![export an icon from illustrator](images/icon-contribution-3.png)
+![export an icon from illustrator](images/iconography-contribution-exportsvgfromai.png)
 
 ## Contribution Process
 

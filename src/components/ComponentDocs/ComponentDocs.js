@@ -16,7 +16,6 @@ export default class ComponentDocs extends React.Component {
         componentDocUrl = require(`carbon-components/src/components/${component}/experimental.md`);
       } catch (err) {}
     }
-    // Loading README.md causes Storybook build failure as of now
     if (!componentDocUrl) {
       componentDocUrl = require(`carbon-components/src/components/${component}/README.md`);
     }

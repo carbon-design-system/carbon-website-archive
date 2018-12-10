@@ -8,8 +8,9 @@
   justify-content: flex-start;
   line-height: 1.5;
   margin-top: 2rem;
+  padding-top: 72px;
 
-  @include breakpoint('bp--sm--major') {
+  @include breakpoint('lg') {
     display: flex;
   }
 
@@ -33,8 +34,7 @@
       justify-content: center;
       text-decoration: none;
       color: $color__navy-gray-7;
-      font-size: 1rem;
-      font-weight: 400;
+      @include type-style('body-short-02');
     }
 
     &.glossary-nav__item--active,

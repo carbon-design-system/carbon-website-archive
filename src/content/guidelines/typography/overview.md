@@ -1,7 +1,7 @@
 ---
-label: Guidelines
+label: Typography is used to create clear hierarchies, useful organizations, and purposeful alignments that guide users through the product experience.
 title: Typography
-tabs: ['Overview', 'Product', 'Editorial']
+tabs: ['Overview', 'Productive', 'Expressive']
 ---
 
 - [Typeface: IBM Plex](#typeface-ibm-plex)
