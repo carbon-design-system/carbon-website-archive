@@ -112,25 +112,19 @@ export default ({ data }) => {
   } else {
     return (
       <Layout>
-          <PageHeader
-            title={post.frontmatter.title}
-            label={post.frontmatter.label}>
-            {!(tabs === null) && (
-              <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
-            )}
-          </PageHeader>
-          <div className="page-content ibm--grid">
-            {renderAst(post.htmlAst)}
-          </div>
-<<<<<<< HEAD
-          <NextPrevious
-            slug={slug}
-            currentTabs={tabs}
-            currentPage={currentPage}
-          />
-        </div>
-=======
->>>>>>> e937fa21be0fe7cd3deccdd120a14b75fe4f68d8
+        <PageHeader
+          title={post.frontmatter.title}
+          label={post.frontmatter.label}>
+          {!(tabs === null) && (
+            <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
+          )}
+        </PageHeader>
+        <div className="page-content ibm--grid">{renderAst(post.htmlAst)}</div>
+        <NextPrevious
+          slug={slug}
+          currentTabs={tabs}
+          currentPage={currentPage}
+        />
       </Layout>
     );
   }
