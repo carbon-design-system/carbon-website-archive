@@ -71,7 +71,9 @@ export default class NextPrevious extends React.Component {
           </Link>
         )}
         {nextPath && (
-          <Link className="next-previous-link next-previous-link--next" to={nextPath}>
+          <Link
+            className="next-previous-link next-previous-link--next"
+            to={nextPath}>
             <span className="target-page-direction">Next </span>
             <span className="target-page-name">{nextName}</span>
           </Link>
@@ -83,6 +85,8 @@ export default class NextPrevious extends React.Component {
   //TODO: add checks for if page is internal
 
   render() {
+    const { GATSBY_CARBON_ENV } = process.env;
+
     const currentTabs = this.props.currentTabs;
     const currentPage = this.props.currentPage;
     const slug = this.props.slug;
@@ -169,13 +173,18 @@ export default class NextPrevious extends React.Component {
      * if still undefined, we need to look in other sections
      */
     const sectionArray = Object.keys(navigation);
-    const currentSectionIndex = this.getKeyByValue(
-      sectionArray,
-      currentSection
-    );
+    let currentSectionIndex = this.getKeyByValue(sectionArray, currentSection);
+
     if (prevPagePath === undefined) {
-      const prevSection = sectionArray[parseInt(currentSectionIndex) - 1];
-      const prevSectionObject = navigation[prevSection];
+      let prevSection = sectionArray[parseInt(currentSectionIndex) - 1];
+      let prevSectionObject = navigation[prevSection];
+      if (GATSBY_CARBON_ENV !== 'internal') {
+        while (prevSection && prevSectionObject.internal === true) {
+          currentSectionIndex--;
+          prevSection = sectionArray[parseInt(currentSectionIndex) - 1];
+          prevSectionObject = navigation[prevSection];
+        }
+      }
       if (prevSection) {
         prevPagePath = `${prevSection}`;
         const prevHasSubnav = typeof prevSectionObject['sub-nav'] === 'object';
@@ -190,9 +199,18 @@ export default class NextPrevious extends React.Component {
       }
     }
 
+    // const hideInternal = GATSBY_CARBON_ENV !== 'internal' && nav[item].internal;
+
     if (nextPagePath === undefined) {
-      const nextSection = sectionArray[parseInt(currentSectionIndex) + 1];
-      const nextSectionObject = navigation[nextSection];
+      let nextSection = sectionArray[parseInt(currentSectionIndex) + 1];
+      let nextSectionObject = navigation[nextSection];
+      if (GATSBY_CARBON_ENV !== 'internal') {
+        while (nextSection && nextSectionObject.internal === true) {
+          currentSectionIndex++;
+          nextSection = sectionArray[parseInt(currentSectionIndex) + 1];
+          nextSectionObject = navigation[nextSection];
+        }
+      }
       if (nextSection) {
         nextPagePath = `${nextSection}`;
         const nextHasSubnav = typeof nextSectionObject['sub-nav'] === 'object';
