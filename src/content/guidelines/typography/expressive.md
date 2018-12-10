@@ -6,7 +6,7 @@ tabs: ['Overview', 'Productive', 'Expressive']
 
 ## IBM Expressive theme
 
-"IBM Expressive" os a theme designed for editorial and digital marketing experiences at IBM. This theme introduces the new IBM Design Language tokens. Please switch to the new tokens wherever possible. 
+"IBM Expressive" is a theme designed for editorial and digital marketing experiences at IBM. This theme introduces the new IBM Design Language tokens. Please switch to the new tokens wherever possible. 
 
 ## Expressive type sets
 
