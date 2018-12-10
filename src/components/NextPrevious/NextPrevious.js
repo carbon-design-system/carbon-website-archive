@@ -97,8 +97,11 @@ export default class NextPrevious extends React.Component {
 
     const currentSection = slug.substr(1).split('/')[0];
 
-    const currentHasSubnav =
-      typeof navigation[currentSection]['sub-nav'] === 'object';
+    let currentHasSubnav;
+    if (navigation[currentSection]) {
+      currentHasSubnav =
+        typeof navigation[currentSection]['sub-nav'] === 'object';
+    }
 
     let currentSubnavItem;
     if (currentHasSubnav) {
