@@ -1,0 +1,73 @@
+a.feature-tile {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: block;
+  text-decoration: none;
+}
+
+.tile__img {
+  @include breakpoint('sm') {
+    display: none;
+  }
+
+  @include breakpoint('md') {
+    display: block;
+  }
+}
+
+.tile__img .gatsby-resp-image-wrapper {
+  margin: 0 !important; //needed to override automatic gatsby styles
+  max-width: 100% !important; //needed to override automatic gatsby styles
+}
+
+a.feature-tile:hover .feature-tile__info {
+  background-color: $ibm-colors__gray--80;
+}
+
+.feature-tile__info {
+  background-color: $ibm-colors__gray--90;
+  height: rem(160px);
+  padding: $spacing-md;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  @include breakpoint('sm') {
+    width: 100%;
+    position: relative;
+  }
+
+  @include breakpoint('md') {
+    width: 50%;
+    position: absolute;
+    right: 1rem;
+    bottom: 2rem;
+  }
+
+  @include breakpoint('lg') {
+    width: 25%;
+  }  
+}
+
+.feature-tile__info p {
+  padding-bottom: 0;
+  line-height: 1.25;
+}
+
+.feature-tile__info svg {
+  position: absolute;
+  bottom: $spacing-lg;
+  right: $spacing-lg;
+  fill: $ibm-colors__gray--30;
+}
+
+.feature-tile__label {
+  font-size: rem(14px);
+  color: $ibm-colors__gray--30;
+}
+
+.feature-tile__title {
+  font-size: rem(20px);
+  color: $ibm-colors-_gray--10;
+}

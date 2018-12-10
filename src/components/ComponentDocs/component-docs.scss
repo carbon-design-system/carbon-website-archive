@@ -4,12 +4,10 @@
 }
 
 //todo make this use the carbon code component. inject class somehow??
-.component-docs pre[class*='language-'] {
+body .component-docs pre[class*='language-'] {
   font-size: 0.75rem;
   line-height: 1.45;
-  background: #fff;
-  border: 1px solid #dfe3e6;
+  background: $ibm-colors__white;
   padding: 1rem 3rem 2rem 1.5rem !important;
-  max-width: 37.5rem;
   margin-bottom: 1.5rem !important;
 }

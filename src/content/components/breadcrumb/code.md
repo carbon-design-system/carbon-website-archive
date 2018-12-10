@@ -1,7 +1,7 @@
 ---
 label: Components
 title: Breadcrumb
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
 <page-intro>**Breadcrumb** enables users to quickly see their location within a path of navigation and move up to a parent level if desired.</page-intro>
@@ -10,9 +10,7 @@ tabs: ['Code', 'Usage', 'Style']
     name="Breadcrumb"
     component="breadcrumb" 
     variation="breadcrumb"
-    codepen="eevVxq"
-    hasReactVersion="true" 
+    experimental="true"
     >
 </component>
-
-<component-docs component="breadcrumb"></component-docs>
+<component-docs component="breadcrumb" experimental="true"></component-docs>

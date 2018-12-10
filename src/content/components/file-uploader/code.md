@@ -1,7 +1,7 @@
 ---
 label: Components
 title: File Uploader
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
 <page-intro>**File Uploader** allows the user to transfer a file or submit content of their own.</page-intro>
@@ -10,8 +10,7 @@ tabs: ['Code', 'Usage', 'Style']
     name="File Uploader"
     component="file-uploader" 
     variation="file-uploader"
-    codepen="pdWowZ"
-    hasReactVersion="true"
+    experimental="true"
     >
 </component>
-<component-docs component="file-uploader"></component-docs>
+<component-docs component="file-uploader" experimental="true"></component-docs>

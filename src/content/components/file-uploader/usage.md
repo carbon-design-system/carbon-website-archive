@@ -1,7 +1,7 @@
 ---
 label: Components
 title: File Uploader
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
 ## General
@@ -10,8 +10,6 @@ tabs: ['Code', 'Usage', 'Style']
 - **Add files** is the default text that appears with the File Uploader.
 - A File Uploader should always be accompanied by **Submit** or **Upload**, which is to be styled as a [Primary Button](/components/button).
 - Use an ellipsis (...) if the filename extends beyond the width of its parent element.
-
-![file uploader example](images/file-uploader-usage-1.png)
 
 ## Basic interaction
 
@@ -22,14 +20,9 @@ tabs: ['Code', 'Usage', 'Style']
 5. Any errors that may occur with the file should appear as an inline error
    [Notification](/components/notification).
 
-![file uploader error](images/file-uploader-usage-2.png)
-_Errors in File uploader_
-
 ## Upload state
 
 Developers using File Uploader will be able to use JavaScript to inject a Loading component when selected files are actually being uploaded.
-
-![File uploading state](images/file-uploader-usage-3.png)
 
 ## Removing files
 
