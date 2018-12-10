@@ -36,6 +36,7 @@
   position: absolute;
   bottom: 3.5rem;
   z-index: 3;
+  @include type-style('heading-03');
 }
 
 .homepage--header img {
@@ -79,10 +80,10 @@
 }
 
 .homepage--callout h2 {
-  max-width: 70%;
   font-size: rem(32px);
+  font-weight: 300;
   line-height: rem(40px);
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
 .homepage--callout h3 {
@@ -115,7 +116,7 @@
   height: 100%;
   left: -16px;
   background: transparent;
-  background-image: radial-gradient(rgba(255,255,255,.35) .5px, transparent 0);
+  background-image: radial-gradient(rgba(255,255,255,.35) 1px, transparent 0);
   background-size: 16px 16px;
   background-position-x: -36px;
 }
