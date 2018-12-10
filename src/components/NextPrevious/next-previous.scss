@@ -2,9 +2,6 @@
   background: #282828;
 }
 
-.next-previous-grid-container {
-}
-
 .next-previous-controls {
   display: flex;
   width: 100%;
@@ -34,15 +31,12 @@
   margin-right: 16px;
 }
 
-.next-previous-link--next {
-}
-
 .target-page-direction {
   display: block;
-  font-size: 14px;
+  font-size: rem(14px);
 }
 
 .target-page-name {
   display: block;
-  font-size: 20px;
+  font-size: rem(20px);
 }
