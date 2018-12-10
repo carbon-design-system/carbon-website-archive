@@ -59,21 +59,21 @@ export default class NextPrevious extends React.Component {
     return Object.keys(object).find(key => object[key] === value);
   };
 
-  renderNextPreviousLinks = (prevPath, prevName, nextPath, nexName) => {
+  renderNextPreviousLinks = (prevPath, prevName, nextPath, nextName) => {
     return (
       <>
         {prevPath && (
           <Link
-            className="next-previous-link next-previous-link-previous"
+            className="next-previous-link next-previous-link--previous"
             to={prevPath}>
-            <span className="target-page-direction">Previous:</span>
+            <span className="target-page-direction">Previous </span>
             <span className="target-page-name">{prevName}</span>
           </Link>
         )}
         {nextPath && (
-          <Link className="next-previous-link next-previous-link-next" to={nextPath}>
-            <span className="target-page-direction">Next:</span>
-            <span className="target-page-name">{nexName}</span>
+          <Link className="next-previous-link next-previous-link--next" to={nextPath}>
+            <span className="target-page-direction">Next </span>
+            <span className="target-page-name">{nextName}</span>
           </Link>
         )}
       </>
@@ -213,14 +213,16 @@ export default class NextPrevious extends React.Component {
 
     return (
       <div className="next-previous-wrapper">
-        <div className="ibm--row">
-          <div className="next-previous-controls ibm--offset-lg-4">
-            {this.renderNextPreviousLinks(
-              prevPagePath,
-              prevPageTitle,
-              nextPagePath,
-              nextPageTitle
-            )}
+        <div className="next-previous-grid-container ibm--grid">
+          <div className="ibm--row">
+            <div className="next-previous-controls ibm--offset-lg-4">
+              {this.renderNextPreviousLinks(
+                prevPagePath,
+                prevPageTitle,
+                nextPagePath,
+                nextPageTitle
+              )}
+            </div>
           </div>
         </div>
       </div>
