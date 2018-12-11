@@ -7,7 +7,7 @@ a.tile--article {
   flex-basis: calc(50% - 1rem);
   max-width: 33%;
   flex-direction: column;
-  margin: 0 1px $spacing-xl 0;
+  //margin: 0 1px $spacing-xl 0;
   padding: 0;
   background: $ibm-colors__white;
 
@@ -100,7 +100,7 @@ a.tile--resource {
   color: $text-01;
   padding: rem(20px);
   position: relative;
-  margin: 0 1px 1px 0;
+  //margin: 0 1px 1px 0;
   background: $ibm-colors__white;
 
   &:hover {
