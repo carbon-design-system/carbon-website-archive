@@ -6,7 +6,7 @@ tabs: ['Overview', 'Productive', 'Expressive']
 
 ## IBM Productive theme
 
-“IBM Productive” is a theme designed for use in web-based product design at IBM. This theme introduces the new IBM Design Language tokens. Please switch to the new tokens wherever possible. 
+The _Productive_ theme is for use in web-based product design at IBM. This theme introduces the new IBM Design Language tokens. Please switch to the new tokens wherever possible. 
 
 ## Productive type sets
 
@@ -21,14 +21,14 @@ Line height: 16px / 1rem <br>
 Weight: 400 / Regular<br>
 Letter-spacing: .32px
 </type-spec>
-<type-spec token="code-02" description="This is for large code snippets and larger code elements">
+<type-spec token="code-02" description="This is for large code snippets and larger code elements.">
 Type: IBM Plex Mono<br>
 Size: 12px / .75rem<br>
 Line height: 20px / 1.25rem <br>
 Weight: 400 / Regular<br>
 Letter-spacing: 0px
 </type-spec>
-<type-spec token="label-01" description="This is for field labels in components and error messages ">
+<type-spec token="label-01" description="This is for field labels in components and error messages.">
 Type: IBM Plex Sans<br>
 Size: 12px / .75rem<br>
 Line height: 16px / 1rem <br>
@@ -59,7 +59,7 @@ Line height: 18 / 1.125rem <br>
 Weight: 400 / Regular<br>
 Letter-spacing: .16px
 </type-spec>
-<type-spec token="body-long-01" description="This is commonly used in both the expressive and the productive type theme layouts for long paragraphs with more than four lines. It is a good size for comfortable, long-form reading. We also use this for longer body copy in components such as _accordion_ or _structured list_. Always left-align this type; never center it.">
+<type-spec token="body-long-01" description="This is commonly used in both the expressive and the productive type theme layouts for long paragraphs with more than four lines. It is a good size for comfortable, long-form reading. We also use this for longer body copy in components such as accordion or structured list. Always left-align this type; never center it.">
 Type: IBM Plex Sans<br>
 Size: 14px / .875rem<br>
 Line height: 18 / 1.125rem <br>
