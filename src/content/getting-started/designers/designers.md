@@ -11,7 +11,6 @@ The Carbon Design Kit is a constantly evolving document that contains all of the
 
 The design kit is available to the public through GitHub and internally to IBMers through Box Drive. The kit can be used directly in the Sketch application or loaded as a Sketch library source.
 
-test
 
 1.  [Carbon Design Kit](#why-sketch)
 -  [Download from GitHub](#download-from-github)
