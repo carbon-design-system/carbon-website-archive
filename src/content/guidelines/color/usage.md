@@ -74,15 +74,11 @@ Carbon uses _themes_ and _tokens_ to manage color. The universal color tokens ar
 
 <p>All type color combinations on Carbon must pass <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target=blank>WCAG AA standards</a> of 4.5:1 for normal text and 3:1 for large text. For larger text, if the font weight is light (300) or normal (400) the text should be no smaller than 24 px. If the font weight is semi-bold (600), then the large text should be no smaller than 19 px.</p>
 
-<div data-insert-component="ColorContrast"></div>
 
 ### UI colors
 
 Certain UI color combinations on Carbon must pass the new WCAG AA standards of a minimum 3:1 ratio. Carbon complies with a 4.5:1 color ratio for certain controls and all icons.
 
-<!--In the table below are approved Carbon color combinations.-->
-
-<div data-insert-component="UIColorContrast"></div>
 
 ### Additional color accessibility
 
