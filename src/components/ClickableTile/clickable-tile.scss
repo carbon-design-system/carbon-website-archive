@@ -46,7 +46,11 @@ a.tile--article.tile--dark:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: $spacing-md $spacing-md $spacing-lg;
+  padding: $spacing-md $spacing-md 4rem;
+
+  @include breakpoint('md') {
+    padding-right: 25%;
+  }
 }
 
 .tile--article .tile__info h5 {
@@ -122,11 +126,17 @@ a.tile--resource.tile--dark:hover {
 }
 
 .tile--resource .tile__info  h5 {
+  display: block;
+  width: 100%;
   text-decoration: none;
   color: $text-01;
   margin: 0 0 $spacing-xs 0;
-  padding: 0;
+  padding: 0 0 0 0;
   @include type-style('body-short-01');
+
+  @include breakpoint('md') {
+    padding-right: 25%;
+  }
 }
 
 .tile--resource.tile--dark .tile__info h5 {

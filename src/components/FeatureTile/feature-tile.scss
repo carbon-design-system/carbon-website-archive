@@ -1,6 +1,6 @@
 a.feature-tile {
   width: 100%;
-  margin-bottom: 2rem;
+  //margin: 1rem 0;
   display: block;
   text-decoration: none;
 }
@@ -71,3 +71,30 @@ a.feature-tile:hover .feature-tile__info {
   @include type-style('heading-03');
   color: $ibm-colors-_gray--10;
 }
+
+.ibm--flex {
+
+
+  a.tile--resource {
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      border-right: 1px solid $ibm-colors__black; 
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      border-bottom: 1px solid $ibm-colors__black; 
+    }
+  }
+
+  a.tile--article {
+    border-right: 1px solid $ibm-colors__black;
+
+    // selects every 3rd item and removes right border
+    &:nth-child(3n+3) {
+      border-right: none;
+    }
+  }
+}
+
