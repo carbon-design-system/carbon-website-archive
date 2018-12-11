@@ -8,9 +8,7 @@ tabs: ['Swatches', 'Usage']
 
 ## Color in UI
 
-Carbon color application is designed and implemented in a themable manner. The universal color tokens are determined by common roles and usage; it is not based singularly on a color value (i.e. unique hex code). The same color value may be assigned to multiple tokens in a theme when the values have distinctly different roles.
-
-A color token can also have multiple associated roles when the color is consistently used across those roles. This allows for uniform color application across themes while giving each theme the freedom to express its own individuality.
+Carbon uses _themes_ and _tokens_ to manage color. The universal color tokens are defined by common roles and usage, not specific color values. The same color value may be assigned to multiple tokens in a theme even if the values have distinctly different roles. A color token can also have multiple associated roles when the color is used consistently across those roles.
 
 ### Color terms
 
@@ -19,7 +17,7 @@ A color token can also have multiple associated roles when the color is consiste
 | **Value**    | A unique color (hex code) assigned to a universal token                                                     |
 | **Role**     | The systematic usage/s of a color value                                                                     |
 | **Token**    | The code identifier for a unique role or set of roles. Tokens are universal and never change across themes. |
-| **Theme**    | The set of unique color values assigned to each color token                                                 |
+| **Theme**    | The unique color values assigned to a distinct set of color tokens                                                 |
 
 ## Color tokens
 
@@ -74,19 +72,17 @@ A color token can also have multiple associated roles when the color is consiste
 
 ### Type colors
 
-<p>All type color combinations on Carbon must pass <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target=blank>WCAG AA standards</a> of 4.5:1 for normal text and 3:1 for large text. For larger text, if the font weight is light (300) or normal (400) the text should be no smaller than 24px. If the font weight is Semi-Bold (600) then the large text should be no smaller than 19px. In the table below are approved Carbon color combinations.</p>
+<p>All type color combinations on Carbon must pass <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target=blank>WCAG AA standards</a> of 4.5:1 for normal text and 3:1 for large text. For larger text, if the font weight is light (300) or normal (400) the text should be no smaller than 24 px. If the font weight is semi-bold (600), then the large text should be no smaller than 19 px.</p>
 
-<div data-insert-component="ColorContrast"></div>
 
 ### UI colors
 
-Certain UI color combinations on Carbon must pass the new WCAG AA standards of a minimum 3:1 ratio. Carbon complies with a 4.5:1 color ratio for certain controls and all icons. In the table below are approved Carbon color combinations.
+Certain UI color combinations on Carbon must pass the new WCAG AA standards of a minimum 3:1 ratio. Carbon complies with a 4.5:1 color ratio for certain controls and all icons.
 
-<div data-insert-component="UIColorContrast"></div>
 
 ### Additional color accessibility
 
-Other color accessibility concerns include color blindness and low vision users. Learn more about these additional color accessibility guidelines in the [accessibility section](/guidelines/accessibility/color) of the Carbon website.
+Other color accessibility concerns include color blindness and low vision users. Learn more about these and additional color accessibility guidelines in the [accessibility section](/guidelines/accessibility/color) of the Carbon website.
 
 ## Resources
 
