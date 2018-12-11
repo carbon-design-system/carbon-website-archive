@@ -6,7 +6,7 @@ tabs: ['Overview', 'Productive', 'Expressive']
 
 ## IBM Expressive theme
 
-"IBM Expressive" is a theme designed for editorial and digital marketing experiences at IBM. This theme introduces the new IBM Design Language tokens. Please switch to the new tokens wherever possible. 
+The _Expressive_ theme is for use in editorial and digital marketing experiences at IBM. This theme introduces the new IBM Design Language tokens. Please switch to the new tokens wherever possible. 
 
 ## Expressive type sets
 
@@ -81,8 +81,6 @@ Weight: 400 / Regular<br>
 Letter-spacing: 0
 </type-spec>
 
-## Fluid Type
-
 ### Headings
 
 <type-spec token="heading-01" description="This is for component and layout headings.">
@@ -106,6 +104,11 @@ Line height: 26px / 1.625rem <br>
 Weight: 400 / Regular<br>
 Letter-spacing: 0px
 </type-spec>
+
+## Fluid Type
+
+### Headings
+
 <type-spec token="expresssive-heading-04" description="This is for layout headings.">
 Type: IBM Plex Sans<br>
 Size: 24px / 1.5rem<br>
