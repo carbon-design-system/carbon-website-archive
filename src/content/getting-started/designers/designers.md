@@ -11,8 +11,6 @@ The Carbon Design Kit is a constantly evolving document that contains all of the
 
 The design kit is available to the public through GitHub and internally to IBMers through Box Drive. The kit can be used directly in the Sketch application or loaded as a Sketch library source.
 
-
-1.  [Carbon Design Kit](#why-sketch)
 -  [Download from GitHub](#download-from-github)
 -  [Use with Box Drive](#syncronize-via-box-drive)
 
@@ -37,10 +35,10 @@ The design kit is available to the public through GitHub and internally to IBMer
    - Use the left panel in the file to navigate through the different pages of the kit.
 ![Kit file screenshot](images/designers-3.png)
 
-3. Install the Design Kit as a Sketch Library
-   - The same Carbon Design Kit file can also be installed as a Sketch Library.
-   - Follow the [instructions](https://github.com/IBM/carbon-design-kit/wiki/Sketch-Libraries-Overview) on the repo wiki page to set the kit up as Sketch Library.
-![Sketch Library screenshot](images/designers-4.png)  
+3. Install the design kit as a Sketch library
+   - The same Carbon Design Kit file can also be installed as a Sketch library.
+   - Follow the [instructions](https://github.com/IBM/carbon-design-kit/wiki/Sketch-Libraries-Overview) on the repo wiki page to set the kit up as Sketch library.
+![Sketch library screenshot](images/designers-4.png)  
 
 4. Get the updates
 	- To update to the latest Carbon library version you will have to download the newest version of the Carbon Design Kit each time it is released and replace the previous version.
