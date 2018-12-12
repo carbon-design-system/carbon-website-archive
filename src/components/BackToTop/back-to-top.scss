@@ -1,0 +1,23 @@
+.back-to-top {
+    width: rem(48px);
+    height: rem(48px);
+    border-radius: rem(48px);
+    background: $ibm-colors__gray--30;
+    position: fixed;
+    bottom: rem(50px);
+    right: rem(30px);
+    cursor: pointer;
+
+    svg {
+        fill: $ibm-colors__black;
+    }
+
+    &:hover {
+        background: $ibm-colors__gray--90;
+        
+        svg {
+            fill: $ibm-colors__white;
+        }
+    }
+}
+

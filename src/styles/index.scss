@@ -37,7 +37,6 @@ $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
 @import '../components/CodeSnippet/code-snippet.scss';
 @import '../components/ClickableTile/clickable-tile.scss';
 @import '../components/PageTable/page-table.scss';
-@import '../components/SideNavToggleBtn/side-nav-toggle-btn.scss';
 @import '../components/Footer/footer.scss';
 @import '../components/DoDontExample/do-dont-example.scss';
 @import '../components/ColorBlock/color-block.scss';
@@ -59,8 +58,8 @@ $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
 @import '../components/GlobalSearch/global-search.scss';
 @import '../components/LeftNav/left-nav.scss';
 @import '../components/Homepage/homepage.scss';
-@import '../components/TileGroup/tile-group.scss';
 @import '../components/FeatureTile/feature-tile.scss';
+@import '../components/BackToTop/back-to-top.scss';
 
 //---------------------------------------
 // Syntax

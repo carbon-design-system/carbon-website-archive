@@ -26,6 +26,7 @@ import ComponentReact from '../components/ComponentReact';
 import Glossary from '../components/Glossary';
 import ComponentOverview from '../components/ComponentOverview';
 import GridWrapper from '../components/GridWrapper';
+import BackToTop from '../components/BackToTop';
 import { HomepageFooter, HomepageHeader } from '../components/Homepage/Homepage';
 
 // Custom Markdown
@@ -103,6 +104,7 @@ export default ({ data }) => {
           </div>
           <HomepageFooter />
         </div>
+        <BackToTop />
       </Layout>
     );
   } else {
@@ -118,6 +120,7 @@ export default ({ data }) => {
           <div className="page-content ibm--grid">
             {renderAst(post.htmlAst)}
           </div>
+          <BackToTop />
       </Layout>
     );
   }
