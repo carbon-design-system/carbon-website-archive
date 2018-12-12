@@ -40,7 +40,7 @@ export default class ClickTile extends React.Component {
     if (type === 'resource') {
       return (
         <div className={classNames}>
-          <div className="bx--aspect-ratio bx--aspect-ratio--16x9">
+          <div className="bx--aspect-ratio bx--aspect-ratio--2x1">
             <div className="bx--aspect-ratio--object">
               <ClickableTile
                 target="_blank"

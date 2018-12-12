@@ -191,7 +191,7 @@ p.tile__author {
 
 // Grouped tiles
 .ibm--flex {
-  .tile--resource a.bx--tile {
+  .tile--resource {
 
     &:nth-child(1),
     &:nth-child(3) {
@@ -204,7 +204,7 @@ p.tile__author {
     }
   }
 
-  .tile--resource.tile--dark a.bx--tile {
+  .tile--resource.tile--dark {
     border-color: $ibm-colors__black; 
   }
 
