@@ -7,10 +7,10 @@ title: Homepage
 <feature-tile
     href="/getting-started/designers"
     label="Start"
-    title="Designing">
+    title="Designing"
+    margin="true">
     <img src="homepage/images/getting-started-designers.png" alt="Get started for designers" />
 </feature-tile>
-
 <feature-tile
     href="/getting-started/developers"
     label="Start"

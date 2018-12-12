@@ -44,15 +44,12 @@ export class HomepageHeader extends React.Component {
             <div className="ibm--row">
               <div className="ibm--col-lg-4 ibm--offset-lg-4">
                 <h3>
-                  {/*Formerly known <br /> as Carbon*/}
+                  Inclusive, flexible and consistent
                 </h3>
               </div>
               <div className="ibm--col-lg-8">
                 <h2>
-                  The <strong>Carbon Design System</strong> is IBM's open-source design system for products and experiences. 
-                </h2>
-                <h2>
-                With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
+                  The <strong>Carbon Design System</strong> is IBM&rsquo;s open-source design system for products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                 </h2>
               </div>
             </div>
@@ -79,7 +76,7 @@ export class HomepageFooter extends React.Component {
               <div className="homepage--footer__info">
                 <h2>
                   We welcome all feedback, designs, or ideas in order to produce
-                  the best possible experience for our users. If you're interested
+                  the best possible experience for our users. If you&rsquo;re interested
                   in contributing, check out our contributing guidelines to get
                   started.
                 </h2>

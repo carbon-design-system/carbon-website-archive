@@ -13,6 +13,7 @@ $feature-flags: (
   $imported-modules-local: ();
   @import '@carbon/grid/scss/grid.scss';
 }
+@import '@carbon/grid/scss/aspect-ratio.scss';
 @import '@carbon/type/scss/type.scss';
 @import '@carbon/type/scss/_classes.scss';
 

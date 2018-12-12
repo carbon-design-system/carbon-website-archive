@@ -1,3 +1,7 @@
+.feature-tile--margin {
+  margin-bottom: $spacing-lg;
+}
+
 a.feature-tile {
   width: 100%;
   //margin: 1rem 0;
@@ -20,19 +24,7 @@ a.feature-tile {
   max-width: 100% !important; //needed to override automatic gatsby styles
 }
 
-a.feature-tile:hover .feature-tile__info {
-  background-color: $ibm-colors__gray--80;
-}
-
-.feature-tile__info {
-  background-color: $ibm-colors__gray--90;
-  height: rem(160px);
-  padding: $spacing-md;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-
+.feature-tile__tile {
   @include breakpoint('sm') {
     width: 100%;
     position: relative;
@@ -42,7 +34,7 @@ a.feature-tile:hover .feature-tile__info {
     width: 50%;
     position: absolute;
     right: 1rem;
-    bottom: 2rem;
+    bottom: 0;
   }
 
   @include breakpoint('lg') {
@@ -50,15 +42,29 @@ a.feature-tile:hover .feature-tile__info {
   }  
 }
 
+a.feature-tile:hover .feature-tile__info {
+  background-color: $ibm-colors__gray--80;
+}
+
+.feature-tile__info {
+  background-color: $ibm-colors__gray--90;
+  padding: $spacing-md;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+}
+
 .feature-tile__info p {
   padding-bottom: 0;
   line-height: 1.25;
 }
 
-.feature-tile__info svg {
+.feature-tile__icon {
   position: absolute;
-  bottom: $spacing-lg;
-  right: $spacing-lg;
+  bottom: rem(14px);
+  right: $spacing-md;
   fill: $ibm-colors__gray--30;
 }
 
@@ -69,32 +75,7 @@ a.feature-tile:hover .feature-tile__info {
 
 .feature-tile__title {
   @include type-style('heading-03');
-  color: $ibm-colors-_gray--10;
+  color: $ibm-colors__gray--10;
 }
 
-.ibm--flex {
-
-
-  a.tile--resource {
-
-    &:nth-child(1),
-    &:nth-child(3) {
-      border-right: 1px solid $ibm-colors__black; 
-    }
-
-    &:nth-child(1),
-    &:nth-child(2) {
-      border-bottom: 1px solid $ibm-colors__black; 
-    }
-  }
-
-  a.tile--article {
-    border-right: 1px solid $ibm-colors__black;
-
-    // selects every 3rd item and removes right border
-    &:nth-child(3n+3) {
-      border-right: none;
-    }
-  }
-}
 
