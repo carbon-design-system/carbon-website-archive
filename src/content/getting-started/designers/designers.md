@@ -12,7 +12,7 @@ The Carbon Design Kit is a constantly evolving document that contains all of the
 The design kit is available to the public through GitHub and internally to IBMers through Box Drive. The kit can be used directly in the Sketch application or loaded as a Sketch library source.
 
 -  [Download from GitHub](#download-from-github)
--  [Use with Box Drive](#syncronize-via-box-drive)
+-  [Use with Box Drive](#synchronize-via-box-drive)
 
 ### Why Sketch?
 
@@ -44,7 +44,7 @@ The design kit is available to the public through GitHub and internally to IBMer
 	- To update to the latest Carbon library version you will have to download the newest version of the Carbon Design Kit each time it is released and replace the previous version.
 	- Follow the specific [instructions](https://github.com/IBM/carbon-design-kit/wiki/Sketch-Libraries-Overview) on the wiki to ensure a smooth transition.
 
-### Syncronize via Box Drive
+### Synchronize via Box Drive
 
 _For IBM internal users only._ Using Box Drive sync will ensure that your design kit file will always be up to date, eliminating the need to manually download new versions as they are released.
 

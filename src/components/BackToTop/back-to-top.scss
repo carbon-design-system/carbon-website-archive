@@ -8,8 +8,7 @@
     bottom: rem(50px);
     right: rem(30px);
     cursor: pointer;
-    z-index: 5;
-    transition: opacity 0.2s linear 0s;
+    z-index: 9999;
 
     svg {
         fill: $ibm-colors__black;
@@ -23,4 +22,8 @@
             fill: $ibm-colors__white;
         }
     }
+}
+
+.back-to-top--visible {
+    opacity: 1;
 }
