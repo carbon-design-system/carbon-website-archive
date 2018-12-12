@@ -9,7 +9,7 @@ a.feature-tile {
   text-decoration: none;
 }
 
-.tile__img {
+a.feature-tile .tile__img {
   @include breakpoint('sm') {
     display: none;
   }

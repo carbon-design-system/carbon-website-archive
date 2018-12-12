@@ -77,6 +77,10 @@ p.tile__author {
   color: $ibm-colors__white;
 }
 
+.tile__divider {
+  padding-bottom: rem(3px);
+}
+
 .tile__date {
   @include type-style('caption-01');
   color: $text-01;
@@ -192,15 +196,26 @@ p.tile__author {
 // Grouped tiles
 .ibm--flex {
   .tile--resource {
+    @include breakpoint('sm') {
+      border-bottom: 1px solid $ibm-colors__gray--20; 
 
-    &:nth-child(1),
-    &:nth-child(3) {
-      border-right: 1px solid $ibm-colors__gray--20; 
+      &:last-child {
+        border: none;
+      }
     }
 
-    &:nth-child(1),
-    &:nth-child(2) {
-      border-bottom: 1px solid $ibm-colors__gray--20; 
+    @include breakpoint('md') {
+      border-bottom: none;
+      
+      &:nth-child(1),
+      &:nth-child(3) {
+        border-right: 1px solid $ibm-colors__gray--20; 
+      }
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        border-bottom: 1px solid $ibm-colors__gray--20; 
+      }
     }
   }
 
@@ -209,11 +224,22 @@ p.tile__author {
   }
 
   a.tile--article {
-    border-right: 1px solid $ibm-colors__gray--20; 
+    @include breakpoint('sm') {
+      border-bottom: 1px solid $ibm-colors__gray--20; 
 
-    // selects every 3rd item and removes right border
-    &:nth-child(3n+3) {
-      border-right: none;
+      &:last-child {
+        border: none;
+      }
+    }
+
+    @include breakpoint('md') {
+      border-bottom: none;
+      border-right: 1px solid $ibm-colors__gray--20; 
+
+      // selects every 3rd item and removes right border
+      &:nth-child(3n+3) {
+        border-right: none;
+      }
     }
   }
 
