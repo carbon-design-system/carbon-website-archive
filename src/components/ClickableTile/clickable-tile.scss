@@ -204,6 +204,7 @@ p.tile__author {
     @include breakpoint('md') {
       border: 1px solid transparent;
       border-bottom: none;
+      border-right: none;
 
       &:nth-child(2n + 2) {
         border-left: 1px solid $ibm-colors__gray--20; 

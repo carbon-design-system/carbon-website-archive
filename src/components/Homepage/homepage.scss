@@ -32,11 +32,12 @@
   height: 100%;
 }
 
-h3.homepage--header__title {
+.container--homepage h3.homepage--header__title {
   @include type-style('heading-03');
   position: absolute;
   bottom: 3.5rem;
   padding-bottom: 0;
+  margin-bottom: 0;
   z-index: 3;
 }
 
