@@ -104,10 +104,6 @@ p.tile__author {
 }
 
 .tile--resource a.bx--tile {
-  align-items: flex-start;
-  margin: 0;
-  display: flex;
-  align-items: flex-start;
   text-decoration: none;
   color: $text-01;
   padding: $spacing-md;
@@ -196,29 +192,35 @@ p.tile__author {
 // Grouped tiles
 .ibm--flex {
   .tile--resource {
+
     @include breakpoint('sm') {
       border-bottom: 1px solid $ibm-colors__gray--20; 
 
-      &:last-child {
-        border: none;
+      &.tile--dark {
+        border-bottom-color: $ibm-colors__black; 
       }
     }
 
     @include breakpoint('md') {
+      border: 1px solid transparent;
       border-bottom: none;
 
       &:nth-child(2n + 2) {
         border-left: 1px solid $ibm-colors__gray--20; 
+
+        &.tile--dark {
+          border-left-color: $ibm-colors__black; 
+        }
       }
 
       &:nth-child(n + 3) {
-        border-top: 1px solid $ibm-colors__gray--20; 
+        border-top: 1px solid $ibm-colors__gray--20;
+        
+        &.tile--dark {
+          border-top-color: $ibm-colors__black; 
+        }
       }
     }
-  }
-
-  .tile--resource.tile--dark {
-    border-color: $ibm-colors__black; 
   }
 
   a.tile--article {
