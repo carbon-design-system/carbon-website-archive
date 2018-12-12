@@ -1,12 +1,15 @@
 .back-to-top {
     width: rem(48px);
     height: rem(48px);
-    border-radius: rem(48px);
+    border-radius: rem(24px);
     background: $ibm-colors__gray--30;
+    border-color: $ibm-colors__gray--30;
     position: fixed;
     bottom: rem(50px);
     right: rem(30px);
     cursor: pointer;
+    z-index: 5;
+    transition: opacity 0.2s linear 0s;
 
     svg {
         fill: $ibm-colors__black;
@@ -14,10 +17,10 @@
 
     &:hover {
         background: $ibm-colors__gray--90;
-        
+        border-color: $ibm-colors__gray--90;
+
         svg {
             fill: $ibm-colors__white;
         }
     }
 }
-
