@@ -43,6 +43,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-smartypants`,
           `gatsby-remark-responsive-iframe`,
           `gatsby-remark-component`,
           {
