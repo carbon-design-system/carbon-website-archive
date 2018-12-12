@@ -9,9 +9,11 @@ const PageHeader = ({
 }) => {
   let labelContent =
     label != null ? (
-      <div className="ibm--row page-header__label-row">
-        <div className="ibm--col-lg-6 ibm--offset-lg-4">
-          <p className="page-header__label">{label}</p>
+      <div className="ibm--grid page-header__label-wrapper">
+        <div className="ibm--row">
+          <div className="ibm--col-lg-6 ibm--offset-lg-4">
+            <p className="page-header__label">{label}</p>
+          </div>
         </div>
       </div>
     ) : (
@@ -24,8 +26,8 @@ const PageHeader = ({
   
   return (
     <div className={classNames}>
+      {labelContent}
       <div className="ibm--grid">
-        {labelContent}
         <div className="ibm--row">
           <div className="ibm--col-lg-12 ibm--offset-lg-4">
             <h1 id="page-title" className="page-header__title">
