@@ -14,7 +14,3 @@ export default class BackToTop extends React.Component {
     );
   }
 }
-
-
-
-
