@@ -44,7 +44,8 @@ export class HomepageHeader extends React.Component {
             <div className="ibm--row">
               <div className="ibm--col-lg-4 ibm--offset-lg-4">
                 <h3>
-                  Inclusive, flexible and consistent
+                  Inclusive, flexible<br/>
+                  and consistent
                 </h3>
               </div>
               <div className="ibm--col-lg-8">
