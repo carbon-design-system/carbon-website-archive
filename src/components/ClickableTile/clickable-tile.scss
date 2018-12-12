@@ -206,15 +206,13 @@ p.tile__author {
 
     @include breakpoint('md') {
       border-bottom: none;
-      
-      &:nth-child(1),
-      &:nth-child(3) {
-        border-right: 1px solid $ibm-colors__gray--20; 
+
+      &:nth-child(2n + 2) {
+        border-left: 1px solid $ibm-colors__gray--20; 
       }
 
-      &:nth-child(1),
-      &:nth-child(2) {
-        border-bottom: 1px solid $ibm-colors__gray--20; 
+      &:nth-child(n + 3) {
+        border-top: 1px solid $ibm-colors__gray--20; 
       }
     }
   }
@@ -239,6 +237,10 @@ p.tile__author {
       // selects every 3rd item and removes right border
       &:nth-child(3n+3) {
         border-right: none;
+      }
+
+      &:nth-child(n + 4) {
+        border-top: 1px solid $ibm-colors__gray--20; 
       }
     }
   }
