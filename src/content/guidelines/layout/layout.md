@@ -3,17 +3,18 @@ label: Guidelines
 title: Layout
 ---
 
-- [Mini Unit](#mini-unit)
-- [2x Grid Fundamentals](#2x-grid-fundamentals)
-- [Grid Behaviors](#grid-behaviors)
-- [Grid Influencers](#grid-influencers)
-- [Sizing Scale](#sizing-scale)
-
+<anchor-links>
+<ul>
+    <li><a href="#miin-unit">Mini Unit</a></li>
+    <li><a href="#2x-grid-fundamentals">2x Grid Fundamentals</a></li>
+    <li><a href="#grid-behaviors">Grid Behaviors</a></li>
+    <li><a href="#grid-influencers">Grid Influencers</a></li>
+    <li><a href="#sizing-scale">Sizing Scale</a></li>
+</ul>
+</anchor-links>
 
 The 2x Grid is the geometric foundation of all the visual elements of IBM Design, from typography to columns, boxes, icons, and illustrations. It provides structure and guidance to creative decision-making.
  
-
-
 ## Mini Unit
 
 The basic unit of 2x Grid geometry is the 8-pixel square Mini Unit. Multiples of mini units compose the dimensions of columns, rows, boxes, along with their margins and padding. The Mini Unit adapts to your content while maintaining a consistent visual rhythm.
@@ -30,11 +31,15 @@ At [breakpoint boundaries](#breakpoints), Mini Units divide the screen into a fi
 
 The core concept of the 2x Grid is to divide or multiply by two, forming a visual rhythm. Fluid grids are built by division, whereas fixed grids are built with multiplication. On breakpoint boundaries, these sizes match. Margins and padding are applied consistently in both cases.
 
-1.  [Columns and Rows](#columns-and-rows)
-2.  [Margins](#margins)
-3.  [Padding](#padding)
-4.  [Gutters](#gutters)
-5.  [Breakpoints](#breakpoints)
+<anchor-links>
+<ul>
+    <li><a href="#columns-and-rows">Columns and Rows</a></li>
+    <li><a href="#margins">Margins</a></li>
+    <li><a href="#padding">Padding</a></li>
+    <li><a href="#gutters">Gutters</a></li>
+    <li><a href="#breakpoints">Breakpoints</a></li>
+</ul>
+</anchor-links>
 
 ### Columns and Rows
 
@@ -126,10 +131,14 @@ Carefully consider the user's goal for their screen space, particularly when dis
 
 Choose the layout approach that best meets the user's expectation in each case.
 
-1. [Fluid Grid](#fluid-grid)
-2. [Fixed Boxes](#fixed-boxes)
-3. [Hybrid](#hybrid)
-4. [Key Lines](#key-lines)
+<anchor-links>
+<ul>
+    <li><a href="#fluid-grid">Fluid Grid</a></li>
+    <li><a href="#fixed-boxes">Fixed Boxes</a></li>
+    <li><a href="#hybrid">Hybrid</a></li>
+    <li><a href="#key-lines">Key Lines</a></li>
+</ul>
+</anchor-links>
 
 ### Fluid Grid
 
@@ -193,7 +202,6 @@ In a UI layout, users expect to find certain types of content in certain areas. 
 ![Shell Illustation](images/shell_illustration.png)
 
 
-
 1. Header
 2. Global sidenav
 3. Local sidenav
@@ -251,12 +259,16 @@ We provide a sizing scale for both fixed and fluid sizes. Use it to size content
 
 To use the scale, first choose a fixed or fluid base unit, then multiply it in each dimension, applying aspect ratios as needed.
 
-1. [Fixed Base Unit](#fixed-base-unit)
-2. [Fluid Base Unit](#fluid-base-unit)
-3. [Scaling Multiple](#scaling-multiple)
-4. [Aspect Ratio](#aspect-ratio)
-5. [Vertical Rhythm](#vertical-rhythm)
-6. [Components](#components)
+<anchor-links>
+<ul>
+    <li><a href="#fixed-base-unit">Fixed Base Unit</a></li>
+    <li><a href="#fluid-base-unit">Fluid Base Unnit</a></li>
+    <li><a href="#scaling-muliple">Scaling Muliple</a></li>
+    <li><a href="#aspect-ratio">Aspect Ratio</a></li>
+    <li><a href="#vertical-rhythm">Vertical Rhythm</a></li>
+    <li><a href="#components">Components</a></li>
+</ul>
+</anchor-links>
 
 ### Fixed Base Unit
 

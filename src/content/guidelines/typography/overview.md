@@ -4,11 +4,15 @@ title: Typography
 tabs: ['Overview', 'Productive', 'Expressive']
 ---
 
-- [Type tokens and themes](#type-tokens-and-themes)
-- [Typeface: IBM Plex](#typeface-ibm-plex)
-- [Scale](#scale)
-- [Style](#style)
-- [Type Color](#type-color)
+<anchor-links>
+<ul>
+    <li><a href="#type-tokens-and-themes">Type tokens and themes</a></li>
+    <li><a href="#typeface-ibm-plex">Typeface: IBM Plex</a></li>
+    <li><a href="#scale">Scale</a></li>
+    <li><a href="#style">Style</a></li>
+    <li><a href="#type-color">Type Color</a></li>
+</ul>
+</anchor-links>
 
 
 ## Type tokens and themes
