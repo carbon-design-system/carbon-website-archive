@@ -7,3 +7,5 @@ applications:
   - route: www.carbondesignsystem.com
   - route: carbondesignsystem.com
   - route: design-system.mybluemix.net
+  env:
+    FORCE_HTTPS: true
