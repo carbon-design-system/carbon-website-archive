@@ -131,6 +131,15 @@ Carbon uses the IBM Design Language as our guiding principle. These core values 
 <grid-wrapper col_lg="12" flex="true">
 <clickable-tile
     type="article"
+    title="What to expect in Carbon 10"
+    author="Robin Cannon"
+    date="December 10, 2018"
+    href="https://medium.com/carbondesign/what-to-expect-in-carbon-10-5af1bd6e25f6"
+    >
+    <img src="images/article-9.png" alt="What to expect in Carbon 10" />
+</clickable-tile>
+<clickable-tile
+    type="article"
     title="Up & Running with Carbon React in less than 5 minutes"
     author="Josh Black"
     date="October 19, 2018"
