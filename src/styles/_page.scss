@@ -22,6 +22,16 @@ body {
 .container .ibm--grid {
   margin: 0;
   max-width: rem(1584px);
+
+  @include breakpoint('sm') {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @include breakpoint('lg') {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 //---------------------------------------
