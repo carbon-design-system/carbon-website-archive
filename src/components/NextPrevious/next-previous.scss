@@ -18,10 +18,10 @@
 
 .target-page-direction {
   display: block;
-  font-size: rem(14px);
+  @include type-style('body-short-01');
 }
 
 .target-page-name {
   display: block;
-  font-size: rem(20px);
+  @include type-style('heading-03');
 }
