@@ -7,11 +7,11 @@ import GlobalSearch from '../GlobalSearch';
 import Footer from '../Footer';
 import LeftNav from '../LeftNav';
 import favicon32 from '../../content/global/images/favicon-32.png';
-import { 
-  Header, 
-  HeaderMenuButton, 
-  HeaderName, 
-  SkipToContent,  
+import {
+  Header,
+  HeaderMenuButton,
+  HeaderName,
+  SkipToContent,
   HeaderGlobalBar,
   HeaderGlobalAction,
 } from 'carbon-components-react/lib/components/UIShell';
@@ -19,6 +19,10 @@ import { AppSwitcher20, Menu32 } from '@carbon/icons-react';
 
 import '../../styles/index.scss';
 import '../../styles/experimental.scss';
+
+// TODO
+import '@carbon/addons-website/scss/styles.scss';
+import { Example } from '@carbon/addons-website';
 
 class Layout extends React.Component {
   static propTypes = {
@@ -105,6 +109,8 @@ class Layout extends React.Component {
     const isInternal = GATSBY_CARBON_ENV == 'internal';
     const { children } = this.props;
 
+    return <Example />;
+
     return (
       <StaticQuery
         query={graphql`
@@ -120,7 +126,11 @@ class Layout extends React.Component {
         render={data => (
           <>
             <Helmet
-              title={isInternal ? data.site.siteMetadata.titleInternal : data.site.siteMetadata.title}
+              title={
+                isInternal
+                  ? data.site.siteMetadata.titleInternal
+                  : data.site.siteMetadata.title
+              }
               meta={[
                 {
                   name: 'description',
@@ -146,7 +156,7 @@ class Layout extends React.Component {
               <SkipToContent />
               <HeaderMenuButton
                 aria-label="Open menu"
-                onClick={(this.onToggleBtnClick)}
+                onClick={this.onToggleBtnClick}
               />
               {isInternal ? (
                 <HeaderName prefix="IBM" to="/" element={Link} href="/">
@@ -157,7 +167,7 @@ class Layout extends React.Component {
                   Carbon Design System
                 </HeaderName>
               )}
-              
+
               {/*<HeaderGlobalBar>
                 {isInternal ? null : <GlobalSearch />}
                 {/*<HeaderGlobalAction
@@ -167,14 +177,13 @@ class Layout extends React.Component {
               </HeaderGlobalBar>
               */}
             </Header>
-           <LeftNav
+            <LeftNav
               isFinal={this.state.isFinal}
               isOpen={this.state.isOpen}
               location={this.props.location}
               clickToClose={this.clickToClose}
             />
 
-            
             <div className="container">
               {children}
               <Footer />
