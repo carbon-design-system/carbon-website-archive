@@ -10,8 +10,10 @@
 // Flex
 //----------------------------
 .ibm--flex {
-  display: flex;
-  flex-wrap: wrap;
+  @include breakpoint('md') {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 //----------------------------

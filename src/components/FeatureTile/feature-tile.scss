@@ -3,19 +3,18 @@
 }
 
 a.feature-tile {
-  width: 100%;
-  //margin: 1rem 0;
   display: block;
   text-decoration: none;
-}
 
-a.feature-tile .tile__img {
+  // full bleed for tiles on mobile
   @include breakpoint('sm') {
-    display: none;
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
   }
 
   @include breakpoint('md') {
-    display: block;
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -38,7 +37,7 @@ a.feature-tile .tile__img {
   }
 
   @include breakpoint('lg') {
-    width: 25%;
+    width: 24%;
   }  
 }
 

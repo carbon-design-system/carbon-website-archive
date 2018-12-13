@@ -19,7 +19,7 @@ title: Homepage
 </feature-tile>
 
 ### Other Resources
-The Component Libraries give developers a collection of re-usable React components they can use for building websites and user interfaces. See a [complete list of resources](/resources).
+The Component Libraries give developers a collection of re-usable React components they can use for building websites and user interfaces. See a [complete list of resources.](/resources)
 
 <grid-wrapper col_lg="8" flex="true">
 <clickable-tile

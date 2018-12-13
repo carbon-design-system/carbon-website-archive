@@ -42,13 +42,13 @@ export class HomepageHeader extends React.Component {
         <div className="homepage--callout">
           <div className="ibm--grid">
             <div className="ibm--row">
-              <div className="ibm--col-lg-4 ibm--offset-lg-4">
+              <div className="ibm--col-md-4  ibm--col-lg-4 ibm--offset-lg-4">
                 <h3>
                   Inclusive, flexible<br/>
                   and consistent
                 </h3>
               </div>
-              <div className="ibm--col-lg-8">
+              <div className="ibm--col-lg-8 ibm--col-md-4">
                 <h2>
                   The <strong>Carbon Design System</strong> is IBM&rsquo;s open-source design system for products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                 </h2>
@@ -67,13 +67,13 @@ export class HomepageFooter extends React.Component {
       <div className="homepage--callout homepage--callout--blue">
         <div className="ibm--grid">
           <div className="ibm--row">
-            <div className="ibm--col-lg-4 ibm--offset-lg-4">
+            <div className="ibm--col-md-4 ibm--col-lg-4 ibm--offset-lg-4">
               <h3>
                 Wondering how <br />
                 to contribute?
               </h3>
             </div>
-            <div className="ibm--col-lg-8">
+            <div className="ibm--col-lg-8 ibm--col-md-4">
               <div className="homepage--footer__info">
                 <h2>
                   We welcome all feedback, designs, or ideas in order to produce

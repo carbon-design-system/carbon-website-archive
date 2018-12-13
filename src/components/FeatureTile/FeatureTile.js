@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Icon } from 'carbon-components-react';
 import { Link } from 'gatsby';
 import classnames from 'classnames';
+import { ArrowRight24 } from '@carbon/icons-react';
 
 export default class FeatureTile extends React.Component {
   static propTypes = {
@@ -26,12 +26,12 @@ export default class FeatureTile extends React.Component {
           <Link to={href} className="feature-tile">
             <div className="tile__img">{children}</div>
             <div className="feature-tile__tile">
-              <div className="bx--aspect-ratio bx--aspect-ratio--16x9">
+              <div className="bx--aspect-ratio bx--aspect-ratio--2x1">
                 <div className="bx--aspect-ratio--object">
                   <div className="feature-tile__info">
                     <p className="feature-tile__label">{label}</p>
                     <p className="feature-tile__title">{title}</p>
-                    <Icon className="feature-tile__icon" name="icon--arrow--right" description={`Go to ${title}`} />
+                    <ArrowRight24 aria-label={`Go to ${title}`} className="feature-tile__icon" />
                   </div>
                 </div>
               </div>

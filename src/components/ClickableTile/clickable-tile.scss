@@ -4,10 +4,7 @@ a.tile--article {
   display: flex;
   text-decoration: none;
   color: $text-01;
-  flex-basis: calc(50% - 1rem);
-  max-width: 33%;
   flex-direction: column;
-  //margin: 0 1px $spacing-xl 0;
   padding: 0;
   background: $ibm-colors__white;
 
@@ -15,10 +12,19 @@ a.tile--article {
     background: $ibm-colors__gray--20;
   }
 
-  @media all and (max-width: 600px) {
-    flex-basis: 100%;
-    max-width: 100%;
-    margin-right: 0;
+  // full bleed for tiles on mobile
+  @include breakpoint('sm') {
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+  }
+
+  @include breakpoint('md') {
+    width: 50%;
+    margin: 0;
+  }
+
+  @include breakpoint('lg') {
+    width: 33%;
   }
 }
 
@@ -94,12 +100,15 @@ p.tile__author {
 // Tile Resource
 
 .tile--resource {
+  // full bleed for tiles on mobile
   @include breakpoint('sm') {
-    width: 100%;
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
   }
 
   @include breakpoint('md') {
     width: calc(50% - 1px);
+    margin: 0;
   }
 }
 
@@ -234,6 +243,20 @@ p.tile__author {
     }
 
     @include breakpoint('md') {
+      border-bottom: none;
+      border-right: 1px solid $ibm-colors__gray--20; 
+
+      // selects every 3rd item and removes right border
+      &:nth-child(2n+2) {
+        border-right: none;
+      }
+
+      &:nth-child(n + 3) {
+        border-top: 1px solid $ibm-colors__gray--20; 
+      }
+    }
+
+    @include breakpoint('lg') {
       border-bottom: none;
       border-right: 1px solid $ibm-colors__gray--20; 
 
