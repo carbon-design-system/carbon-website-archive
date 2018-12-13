@@ -1,19 +1,33 @@
 ---
-label: Typography is used to create clear hierarchies, useful organizations, and purposeful alignments that guide users through the product experience.
+label: When used properly, typography can help create clear hierarchies, organize information, and guide users through the product or experience.
 title: Typography
 tabs: ['Overview', 'Productive', 'Expressive']
 ---
 
-- [Typeface: IBM Plex](#typeface-ibm-plex)
-- [Scale](#scale)
-- [Style](#style)
-- [Type Color](#type-color)
+<anchor-links>
+<ul>
+    <li><a href="#type-tokens-and-themes">Type tokens and themes</a></li>
+    <li><a href="#typeface-ibm-plex">Typeface: IBM Plex</a></li>
+    <li><a href="#scale">Scale</a></li>
+    <li><a href="#style">Style</a></li>
+    <li><a href="#type-color">Type Color</a></li>
+</ul>
+</anchor-links>
 
- When used properly, typography can help create clear hierarchies, organize information, and guide users through the product or experience.
+
+## Type tokens and themes
+
+Carbon utilizes type tokens and themes to manage typrography. 
+
+A _token_ is a named entity in a design system which represents specific visual attributes, such as font size, font weight, color, etc. Using tokens enables these specific values to be centralized and abstracted in the system, which in turn makes it easier to update designs—however wide-ranging—from a single source of truth. 
+
+A _theme_ is a complete set of tokens that have been designed to work harmoniously together.
+
+Two different themes in the same system could share the same token architecture, but would have different values for some or all of the tokens.
 
 ## Typeface: IBM Plex
 
-Carbon uses the new open-sourced typeface, IBM Plex. It has been carefully designed to meet IBM's needs as a global technology company and reflect IBM's spirit, beliefs and design principles. IBM Plex can be accessed and downloaded from the [Plex GitHub Repo](https://github.com/ibm/plex).
+Carbon uses the open-source typeface **IBM Plex**. It has been carefully designed to meet IBM's needs as a global technology company and reflect IBM's spirit, beliefs, and design principles. IBM Plex can be accessed and downloaded from the [Plex GitHub Repo](https://github.com/ibm/plex).
 
 <type-weight type="types"></type-weight>
 
@@ -37,7 +51,7 @@ font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans 
 
 ## Scale
 
-The IBM type scale is built on a single equation. The formula for our scale was created to provide hierarchy for all types of experiences. The formula assumes that y₀=12px:
+The IBM type scale is built on a single equation. The formula for our scale was created to provide hierarchy for all types of experiences. The formula assumes that y₀=12 px:
 
 <type-scale-table></type-scale-table>
 
@@ -48,7 +62,7 @@ Xn: step n type size Xn-1: step n-1 type size
 
 ## Style
 
-Typography creates purposeful texture. It guides users to read and understand the hierarchy of information. The right typographic treatment and the controlled usage of type styles helps manage the display of content, keeping it useful, simple and effective.
+Typography creates purposeful texture, guiding users to read and understand the hierarchy of information. The right typographic treatment and the controlled usage of type styles helps manage the display of content, keeping it useful, simple, and effective.
 
 ### Weights
 
@@ -65,7 +79,7 @@ Each weight has an italic style, which should only be used when you need to emph
 <type-weight type="italic"></type-weight>
 
 ## Type Color
-Type color should be carefully considered. Legibility and accessibility are two keys. Keep type color neutral in running text. Use primary blue for primary actions. 
+Type color should be carefully considered, with legibility and accessibility as paramount concerns. Keep type color neutral in running text. Use primary blue for primary actions. 
 
 <grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true>
@@ -93,7 +107,7 @@ Type color should be carefully considered. Legibility and accessibility are two 
 </grid-wrapper>
 <grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Other use cases for colored type are code snippets, warnings, alerts, etc.">
-        <img src="images/typography_7.svg" alt="Oops something went wrong! colored text">
+        <img src="images/typography_7.svg" alt="Oops, something went wrong! colored text">
     </do-dont-example>
     <do-dont-example correct=true>
         <img src="images/typography_8.svg" alt="Code sinppet with colored highlight type">

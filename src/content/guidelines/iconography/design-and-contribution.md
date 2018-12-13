@@ -4,10 +4,14 @@ title: Iconography
 tabs: ['Library', 'Usage', 'Design and Contribution']
 ---
 
-1.  [Design and Production Guidelines](#design-and-production-guidelines)
-- [Producing an Icon](#producing-an-icon)
-- [Exporting SVGs](#exporting-svgs)
-- [Contribution Process](#contribution-process)
+<anchor-links>
+<ul>
+    <li><a href="#design-and-production-guidelines">Design and Production Guidelines</a></li>
+    <li><a href="#producing-an-icon">Producing an Icon</a></li>
+    <li><a href="#exporting-svgs">Exporting SVGs</a></li>
+    <li><a href="#contribution-process">Contribution Process</a></li>
+</ul>
+</anchor-links>
 
 
 ## Design and Production Guidelines
