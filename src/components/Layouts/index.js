@@ -27,8 +27,6 @@ import {
   ul,
   ol,
 } from '../markdown/Markdown';
-import PageHeader from '../PageHeader';
-import PageTabs from '../PageTabs';
 
 import '../../styles/index.scss';
 import '../../styles/experimental.scss';
@@ -120,10 +118,6 @@ class Layout extends React.Component {
     const { GATSBY_CARBON_ENV } = process.env;
     const isInternal = GATSBY_CARBON_ENV == 'internal';
     const { children } = this.props;
-    const post = data.markdownRemark;
-    let currentPage = post.fields.currentPage;
-    let slug = post.fields.slug;
-    let tabs = post.frontmatter.tabs;
 
     return (
       <StaticQuery
@@ -196,13 +190,6 @@ class Layout extends React.Component {
 
             
             <div className="container">
-              <PageHeader
-                title={post.frontmatter.title}
-                label={post.frontmatter.label}>
-                {!(tabs === null) && (
-                  <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
-                )}
-              </PageHeader>
               <MDXProvider
                   components={{
                     // Map HTML element tag to React component
@@ -230,22 +217,3 @@ class Layout extends React.Component {
 }
 
 export default Layout;
-
-export const query = graphql`
-  query PageQuery($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      htmlAst
-      fields {
-        slug
-        currentPage
-      }
-      frontmatter {
-        title
-        label
-        tabs
-        internal
-      }
-    }
-  }
-`;
-
