@@ -3,7 +3,7 @@ title: Form
 tabs: ['Code', 'Usage']
 ---
 
-<page-intro>**Forms** are used for submitting data.</page-intro>
+**Forms** are used for submitting data.
 
 <component 
     name="Form"

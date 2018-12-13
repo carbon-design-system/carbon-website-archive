@@ -142,7 +142,7 @@ export class p extends React.Component {
   render() {
     return (
       <div className="ibm--row">
-        <div className="ibm--col-lg-7 ibm--offset-lg-4">
+        <div className="ibm--col-lg-7 ibm--col-md-6 ibm--offset-lg-4">
           <p>{this.props.children}</p>
         </div>
       </div>
