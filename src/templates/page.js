@@ -27,10 +27,8 @@ import Glossary from '../components/Glossary';
 import ComponentOverview from '../components/ComponentOverview';
 import NextPrevious from '../components/NextPrevious';
 import GridWrapper from '../components/GridWrapper';
-import {
-  HomepageFooter,
-  HomepageHeader,
-} from '../components/Homepage/Homepage';
+import BackToTop from '../components/BackToTop';
+import { HomepageFooter, HomepageHeader } from '../components/Homepage/Homepage';
 
 // Custom Markdown
 import {
@@ -107,6 +105,7 @@ export default ({ data }) => {
           </div>
           <HomepageFooter />
         </div>
+        <BackToTop />
       </Layout>
     );
   } else {
@@ -125,6 +124,7 @@ export default ({ data }) => {
           currentTabs={tabs}
           currentPage={currentPage}
         />
+        <BackToTop />
       </Layout>
     );
   }
