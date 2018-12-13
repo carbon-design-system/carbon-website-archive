@@ -260,6 +260,10 @@ p.tile__author {
       border-bottom: none;
       border-right: 1px solid $ibm-colors__gray--20; 
 
+      &:nth-child(2n+2) {
+        border-right: 1px solid $ibm-colors__gray--20; 
+      }
+
       // selects every 3rd item and removes right border
       &:nth-child(3n+3) {
         border-right: none;
