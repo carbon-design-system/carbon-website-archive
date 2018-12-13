@@ -25,6 +25,7 @@ import ComponentStatus from '../components/ComponentStatus';
 import ComponentReact from '../components/ComponentReact';
 import Glossary from '../components/Glossary';
 import ComponentOverview from '../components/ComponentOverview';
+import NextPrevious from '../components/NextPrevious';
 import GridWrapper from '../components/GridWrapper';
 import BackToTop from '../components/BackToTop';
 import { HomepageFooter, HomepageHeader } from '../components/Homepage/Homepage';
@@ -110,17 +111,19 @@ export default ({ data }) => {
   } else {
     return (
       <Layout>
-          <PageHeader
-            title={post.frontmatter.title}
-            label={post.frontmatter.label}>
-            {!(tabs === null) && (
-              <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
-            )}
-          </PageHeader>
-          <div className="page-content ibm--grid">
-            {renderAst(post.htmlAst)}
-          </div>
-          <BackToTop />
+        <PageHeader
+          title={post.frontmatter.title}
+          label={post.frontmatter.label}>
+          {!(tabs === null) && (
+            <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
+          )}
+        </PageHeader>
+        <div className="page-content ibm--grid">{renderAst(post.htmlAst)}</div>
+        <NextPrevious
+          slug={slug}
+          currentTabs={tabs}
+          currentPage={currentPage}
+        />
       </Layout>
     );
   }

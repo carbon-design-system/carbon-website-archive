@@ -1,17 +1,20 @@
-a.feature-tile {
-  width: 100%;
-  margin-bottom: 2rem;
-  display: block;
-  text-decoration: none;
+.feature-tile--margin {
+  margin-bottom: $spacing-lg;
 }
 
-.tile__img {
+a.feature-tile {
+  display: block;
+  text-decoration: none;
+
+  // full bleed for tiles on mobile
   @include breakpoint('sm') {
-    display: none;
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
   }
 
-  @include breakpoint('md') {
-    display: block;
+  @include breakpoint('lg') {
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -20,19 +23,7 @@ a.feature-tile {
   max-width: 100% !important; //needed to override automatic gatsby styles
 }
 
-a.feature-tile:hover .feature-tile__info {
-  background-color: $ibm-colors__gray--80;
-}
-
-.feature-tile__info {
-  background-color: $ibm-colors__gray--90;
-  height: rem(160px);
-  padding: $spacing-md;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-
+.feature-tile__tile {
   @include breakpoint('sm') {
     width: 100%;
     position: relative;
@@ -41,8 +32,8 @@ a.feature-tile:hover .feature-tile__info {
   @include breakpoint('md') {
     width: 50%;
     position: absolute;
-    right: 1rem;
-    bottom: 2rem;
+    right: 0;
+    bottom: 0;
   }
 
   @include breakpoint('lg') {
@@ -50,15 +41,29 @@ a.feature-tile:hover .feature-tile__info {
   }  
 }
 
+a.feature-tile:hover .feature-tile__info {
+  background-color: $ibm-colors__gray--80;
+}
+
+.feature-tile__info {
+  background-color: $ibm-colors__gray--90;
+  padding: $spacing-md;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+}
+
 .feature-tile__info p {
   padding-bottom: 0;
   line-height: 1.25;
 }
 
-.feature-tile__info svg {
+.feature-tile__icon {
   position: absolute;
-  bottom: $spacing-lg;
-  right: $spacing-lg;
+  bottom: rem(14px);
+  right: $spacing-md;
   fill: $ibm-colors__gray--30;
 }
 
@@ -69,5 +74,7 @@ a.feature-tile:hover .feature-tile__info {
 
 .feature-tile__title {
   @include type-style('heading-03');
-  color: $ibm-colors-_gray--10;
+  color: $ibm-colors__gray--10;
 }
+
+
