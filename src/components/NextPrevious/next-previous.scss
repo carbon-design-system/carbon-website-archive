@@ -1,34 +1,19 @@
 .next-previous-wrapper {
-  background: #282828;
-}
-
-.next-previous-controls {
-  display: flex;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.next-previous-controls a {
-  color: #ffffff;
-  padding-left: 16px;
-  transition: 0.35s ease all;
-}
-
-.next-previous-controls a:hover {
-  background: #565656;
-  box-shadow: -24px 0 0 #565656, 24px 0 0 #565656;
-  transition: 0.1s ease all;
+  background: $ibm-colors__gray--90;
+  color: $ibm-colors__white;
 }
 
 .next-previous-link {
-  display: block;
-  padding: 2em 0;
-  flex: 1;
+  color: $ibm-colors__white;
+  padding-bottom: 2em;
+  padding-top: 2em;
   text-decoration: none;
+  transition: 0.35s ease all;
 }
 
-.next-previous-link--previous {
-  margin-right: 16px;
+.next-previous-link:hover {
+  background: $ibm-colors__gray--70;
+  transition: 0.1s ease all;
 }
 
 .target-page-direction {

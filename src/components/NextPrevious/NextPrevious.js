@@ -71,7 +71,7 @@ export default class NextPrevious extends React.Component {
       <>
         {prevPath && (
           <Link
-            className="next-previous-link next-previous-link--previous"
+            className="next-previous-link next-previous-link--previous ibm--col-lg-6 ibm--col-md-4 ibm--col-sm-2 ibm--offset-lg-4"
             to={prevPath}>
             <span className="target-page-direction">Previous </span>
             <span className="target-page-name">{prevName}</span>
@@ -79,7 +79,7 @@ export default class NextPrevious extends React.Component {
         )}
         {nextPath && (
           <Link
-            className="next-previous-link next-previous-link--next"
+            className="next-previous-link next-previous-link--next ibm--col-lg-6 ibm--col-md-4 ibm--col-sm-2"
             to={nextPath}>
             <span className="target-page-direction">Next </span>
             <span className="target-page-name">{nextName}</span>
@@ -88,8 +88,6 @@ export default class NextPrevious extends React.Component {
       </>
     );
   };
-
-  //TODO: add checks for if page is internal
 
   render() {
     const { GATSBY_CARBON_ENV } = process.env;
@@ -209,8 +207,6 @@ export default class NextPrevious extends React.Component {
       }
     }
 
-    // const hideInternal = GATSBY_CARBON_ENV !== 'internal' && nav[item].internal;
-
     if (nextPagePath === undefined) {
       let nextSection = sectionArray[parseInt(currentSectionIndex) + 1];
       let nextSectionObject = navigation[nextSection];
@@ -240,18 +236,14 @@ export default class NextPrevious extends React.Component {
     nextPageTitle = this.slugToTitleWithPath(nextPagePath);
 
     return (
-      <div className="next-previous-wrapper">
-        <div className="next-previous-grid-container ibm--grid">
-          <div className="ibm--row">
-            <div className="next-previous-controls ibm--offset-lg-4">
-              {this.renderNextPreviousLinks(
-                prevPagePath,
-                prevPageTitle,
-                nextPagePath,
-                nextPageTitle
-              )}
-            </div>
-          </div>
+      <div className="next-previous-wrapper ibm--grid">
+        <div className="next-previous-controls ibm--row">
+          {this.renderNextPreviousLinks(
+            prevPagePath,
+            prevPageTitle,
+            nextPagePath,
+            nextPageTitle
+          )}
         </div>
       </div>
     );
