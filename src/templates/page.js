@@ -124,6 +124,7 @@ export default ({ data }) => {
           currentTabs={tabs}
           currentPage={currentPage}
         />
+        <BackToTop />
       </Layout>
     );
   }
