@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import navigation from '../../data/navigation/navigation.json';
+import classnames from 'classnames';
 
 export default class NextPrevious extends React.Component {
   static propTypes = {
@@ -67,6 +68,15 @@ export default class NextPrevious extends React.Component {
   };
 
   renderNextPreviousLinks = (prevPath, prevName, nextPath, nextName) => {
+    const nextButtonClassnames = classnames({
+      'next-previous-link': true,
+      'next-previous-link--next': true,
+      'ibm--col-lg-6': true,
+      'ibm--col-md-4': true,
+      'ibm--col-sm-2': true,
+      'ibm--offset-lg-10': !prevPath,
+    });
+
     return (
       <>
         {prevPath && (
@@ -78,9 +88,7 @@ export default class NextPrevious extends React.Component {
           </Link>
         )}
         {nextPath && (
-          <Link
-            className="next-previous-link next-previous-link--next ibm--col-lg-6 ibm--col-md-4 ibm--col-sm-2"
-            to={nextPath}>
+          <Link className={nextButtonClassnames} to={nextPath}>
             <span className="target-page-direction">Next </span>
             <span className="target-page-name">{nextName}</span>
           </Link>
