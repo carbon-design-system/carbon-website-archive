@@ -154,7 +154,7 @@ Carbon uses the IBM Design Language as our guiding principle. These core values 
     date="October 16, 2018"
     href="https://medium.com/carbondesign/hacktoberfest-with-carbon-95c48943f586"
     >
-    <img src="images/article-7.png" alt="Hacktoberfest with Carbon" />
+    <img src="images/article-7.jpg" alt="Hacktoberfest with Carbon" />
 </clickable-tile>
 <clickable-tile
     type="article"

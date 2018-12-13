@@ -86,6 +86,6 @@ The Component Libraries give developers a collection of re-usable React componen
     date="October 16, 2018"
     href="https://medium.com/carbondesign/hacktoberfest-with-carbon-95c48943f586"
     >
-    <img src="resources/images/article-7.png" alt="Hacktoberfest with Carbon" />
+    <img src="resources/images/article-7.jpg" alt="Hacktoberfest with Carbon" />
 </clickable-tile>
 </grid-wrapper>
