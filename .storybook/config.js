@@ -10,6 +10,9 @@ setAddon(infoAddon);
 function loadStories() {
   const req = require.context('../src/components', true, /.stories.jsx$/);
   req.keys().forEach(filename => req(filename));
+
+  const packageReq = require.context('../packages', true, /-story\.js/);
+  packageReq.keys().forEach(filename => packageReq(filename));
 }
 
 configure(loadStories, module);
