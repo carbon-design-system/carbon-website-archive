@@ -88,9 +88,8 @@
 }
 
 .homepage--callout h2 {
-  font-size: rem(32px);
-  font-weight: 400;
-  line-height: rem(40px);
+  //add back in once v10 is out
+  //@include type-style('expressive-heading-04', true);
   margin-bottom: 0;
 }
 

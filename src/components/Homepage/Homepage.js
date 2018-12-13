@@ -1,6 +1,5 @@
 import React from 'react';
-import { Icon } from 'carbon-components-react';
-import FeatureTile from '../FeatureTile';
+import { ArrowRight24 } from '@carbon/icons-react';
 import { Link } from 'gatsby';
 
 export class HomepageHeader extends React.Component {
@@ -49,7 +48,7 @@ export class HomepageHeader extends React.Component {
                 </h3>
               </div>
               <div className="ibm--col-lg-8 ibm--col-md-4">
-                <h2>
+                <h2 className="bx--type-expressive-heading-04">
                   The <strong>Carbon Design System</strong> is IBM&rsquo;s open-source design system for products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                 </h2>
               </div>
@@ -75,7 +74,7 @@ export class HomepageFooter extends React.Component {
             </div>
             <div className="ibm--col-lg-8 ibm--col-md-4">
               <div className="homepage--footer__info">
-                <h2>
+                <h2 className="bx--type-expressive-heading-04">
                   We welcome all feedback, designs, or ideas in order to produce
                   the best possible experience for our users. If you&rsquo;re interested
                   in contributing, check out our contributing guidelines to get
@@ -83,11 +82,7 @@ export class HomepageFooter extends React.Component {
                 </h2>
                 <Link to="/contributing" alt="Start contributing">
                   Start contributing
-                  <Icon
-                    name="icon--arrow--right"
-                    alt="start contributing icon"
-                    width="20"
-                  />
+                  <ArrowRight24 aria-label="Start Contributing" />
                 </Link>
               </div>
             </div>

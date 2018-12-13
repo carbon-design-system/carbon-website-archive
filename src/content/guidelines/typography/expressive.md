@@ -109,7 +109,7 @@ Letter-spacing: 0px
 
 ### Headings
 
-<type-spec token="expresssive-heading-04" description="This is for layout headings.">
+<type-spec token="expressive-heading-04" description="This is for layout headings.">
 Type: IBM Plex Sans<br>
 Size: 24px / 1.5rem<br>
 Line height: 36px / 1.875rem <br>

@@ -12,7 +12,7 @@ a.feature-tile {
     margin-left: -1rem;
   }
 
-  @include breakpoint('md') {
+  @include breakpoint('lg') {
     width: 100%;
     margin: 0;
   }
@@ -32,12 +32,12 @@ a.feature-tile {
   @include breakpoint('md') {
     width: 50%;
     position: absolute;
-    right: 1rem;
+    right: 0;
     bottom: 0;
   }
 
   @include breakpoint('lg') {
-    width: 24%;
+    width: 25%;
   }  
 }
 
