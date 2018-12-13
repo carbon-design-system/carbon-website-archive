@@ -13,10 +13,16 @@ $feature-flags: (
   $imported-modules-local: ();
   @import '@carbon/grid/scss/grid.scss';
 }
+@import '@carbon/grid/scss/aspect-ratio.scss';
 @import '@carbon/type/scss/type.scss';
 @import '@carbon/type/scss/_classes.scss';
 
 @import 'carbon-components/scss/globals/scss/styles.scss';
+
+//temporary
+.bx--aspect-ratio--2x1 {
+  padding-bottom: 50%;
+}
 
 //---------------------------------------
 // Page styles
@@ -59,7 +65,7 @@ $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
 @import '../components/GlobalSearch/global-search.scss';
 @import '../components/LeftNav/left-nav.scss';
 @import '../components/Homepage/homepage.scss';
-@import '../components/TileGroup/tile-group.scss';
+@import '../components/NextPrevious/next-previous.scss';
 @import '../components/FeatureTile/feature-tile.scss';
 
 //---------------------------------------

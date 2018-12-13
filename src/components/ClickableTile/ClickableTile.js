@@ -39,27 +39,33 @@ export default class ClickTile extends React.Component {
 
     if (type === 'resource') {
       return (
-        <ClickableTile
-          target="_blank"
-          rel="noopener noreferrer"
-          className={classNames}
-          href={href}>
-          <div className="tile__info">
-            <h5>{title}</h5>
+        <div className={classNames}>
+          <div className="bx--aspect-ratio bx--aspect-ratio--2x1">
+            <div className="bx--aspect-ratio--object">
+              <ClickableTile
+                target="_blank"
+                rel="noopener noreferrer"
+                
+                href={href}>
+                <div className="tile__info">
+                  <h5>{title}</h5>
 
-            <div className="tile__caption">
-              {description ? (
-                <p className="tile__description">{description}</p>
-              ) : null}
-              {author ? <p className="tile__author">{author}</p> : null}
-              {date ? <p className="tile__date">{date}</p> : null}
+                  <div className="tile__caption">
+                    {description ? (
+                      <p className="tile__description">{description}</p>
+                    ) : null}
+                    {author ? <p className="tile__author">{author}</p> : null}
+                    {date ? <p className="tile__date">{date}</p> : null}
+                  </div>
+                </div>
+                <div className="tile__img">{children}</div>
+                <div className="tile__link-icon">
+                  <Launch20 aria-label="Open resource" /> 
+                </div>
+              </ClickableTile>
             </div>
           </div>
-          <div className="tile__img">{children}</div>
-          <div className="tile__link-icon">
-            <Launch20 aria-label="Open resource" /> 
-          </div>
-        </ClickableTile>
+        </div>
       );
     }
 
@@ -74,7 +80,7 @@ export default class ClickTile extends React.Component {
           <div className="tile__info">
             <h5>{title}</h5>
             {author ? <p className="tile__author">{author}</p> : null}
-            <span className="tile__divider">-</span>
+            <span className="tile__divider">&#8212;</span>
             <div className="tile__caption">
               {date ? <p className="tile__date">{date}</p> : null}
               {excerpt ? <p className="tile__excerpt">{excerpt}</p> : null}
