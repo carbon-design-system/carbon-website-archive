@@ -217,8 +217,11 @@
       "whats-new": {
         "title": "What's New"
       },
-      "design-language": {
-        "title": "Design Language"
+      "release-highlights": {
+        "title": "Release Highlights"
+      },
+      "migrating-to-carbon-x": {
+        "title": "Migrating to Carbon X"
       },
       "roadmap": {
         "title": "Roadmap"
