@@ -244,14 +244,16 @@ export default class NextPrevious extends React.Component {
     nextPageTitle = this.slugToTitleWithPath(nextPagePath);
 
     return (
-      <div className="next-previous-wrapper ibm--grid">
-        <div className="next-previous-controls ibm--row">
-          {this.renderNextPreviousLinks(
-            prevPagePath,
-            prevPageTitle,
-            nextPagePath,
-            nextPageTitle
-          )}
+      <div className="next-previous-wrapper">
+        <div className="ibm--grid">
+          <div className="next-previous-controls ibm--row">
+            {this.renderNextPreviousLinks(
+              prevPagePath,
+              prevPageTitle,
+              nextPagePath,
+              nextPageTitle
+            )}
+          </div>
         </div>
       </div>
     );

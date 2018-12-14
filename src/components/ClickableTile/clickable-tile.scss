@@ -14,8 +14,7 @@ a.tile--article {
 
   // full bleed for tiles on mobile
   @include breakpoint('sm') {
-    width: calc(100% + 2rem);
-    margin-left: -1rem;
+    width: 100%;
   }
 
   @include breakpoint('md') {
@@ -102,8 +101,7 @@ p.tile__author {
 .tile--resource {
   // full bleed for tiles on mobile
   @include breakpoint('sm') {
-    width: calc(100% + 2rem);
-    margin-left: -1rem;
+    width: 100%;
   }
 
   @include breakpoint('md') {
@@ -199,7 +197,7 @@ p.tile__author {
 }
 
 // Grouped tiles
-.ibm--flex {
+.flex-wrap {
   .tile--resource {
 
     @include breakpoint('sm') {

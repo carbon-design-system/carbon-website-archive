@@ -39,7 +39,7 @@ export default class Snippet extends React.Component {
     const type = this.state.multi ? 'multi' : 'single';
     return (
       <div className="ibm--row">
-        <div className="ibm--col-lg-8 ibm--offset-lg-4">
+        <div className="ibm--col-lg-8 ibm--offset-lg-4 ibm--col-bleed">
           <CopyToClipboard
             text={children[0].props.children[0]}
             onCopy={() => this.setState({ copied: true })}>

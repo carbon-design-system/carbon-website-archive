@@ -27,10 +27,8 @@ import Glossary from '../components/Glossary';
 import ComponentOverview from '../components/ComponentOverview';
 import NextPrevious from '../components/NextPrevious';
 import GridWrapper from '../components/GridWrapper';
-import {
-  HomepageFooter,
-  HomepageHeader,
-} from '../components/Homepage/Homepage';
+import BackToTop from '../components/BackToTop';
+import { HomepageFooter, HomepageHeader } from '../components/Homepage/Homepage';
 
 // Custom Markdown
 import {
@@ -102,11 +100,12 @@ export default ({ data }) => {
       <Layout>
         <div className="container--homepage">
           <HomepageHeader />
-          <div className="page-content ibm--grid">
+          <main className="page-content ibm--grid" id="maincontent">
             {renderAst(post.htmlAst)}
-          </div>
+          </main>
           <HomepageFooter />
         </div>
+        <BackToTop />
       </Layout>
     );
   } else {
@@ -119,12 +118,13 @@ export default ({ data }) => {
             <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
           )}
         </PageHeader>
-        <div className="page-content ibm--grid">{renderAst(post.htmlAst)}</div>
+        <main className="page-content ibm--grid" id="maincontent">{renderAst(post.htmlAst)}</main>
         <NextPrevious
           slug={slug}
           currentTabs={tabs}
           currentPage={currentPage}
         />
+        <BackToTop />
       </Layout>
     );
   }
