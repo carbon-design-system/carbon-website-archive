@@ -1,10 +1,9 @@
 ---
-
 title: What's New
 ---
-October 2018</page-into>
+##October 2018
 
-## Experimental
+### Experimental
 
 A new [Experimental](/experimental/about/overview) section has been added to the website. Experimental components, designs, patterns, and other resources are work that is still under development.
 
@@ -12,17 +11,17 @@ A new [Experimental](/experimental/about/overview) section has been added to the
 
 <hr class="divider">
 
-**June 4, 2018: V9 Release**
+## June 4, 2018: V9 Release
 
-## Website
+### Website
 
 - Add-ons section has been removed. There is an [Add-ons](getting-started/add-ons) page that now lives under the Getting Started section
 - The [Contributing](/getting-started/contributing) page has been moved from the Guidelines to the Getting Started section
 - [Data Visualization](/data-visualization/overview/general) has moved from under the components section into its own section
 
-## Components
+### Components
 
-### New
+#### New
 
 - [Inline Code Snippet](/components/code-snippet/code)
 - [Icon Tooltip](/components/tooltip/code)
@@ -30,7 +29,7 @@ A new [Experimental](/experimental/about/overview) section has been added to the
 - [Danger Modal](/components/modal/code)
 - [Danger Primary Button](/components/button/code)
 
-### Updates (Visual & Interaction)
+#### Updates (Visual & Interaction)
 
 - [Code snippets](/components/code-snippet/code) now have a new style and new interaction options. There is also a variation with line numbers available.
 - [Interactive Tooltip](/components/tooltip/code) (formerly Tooltip) can now contain interactive elements and opens on click
@@ -44,7 +43,7 @@ A new [Experimental](/experimental/about/overview) section has been added to the
 - [Text Input](/components/text-input/code)
 - [Text Area](/components/text-input/code)
 
-## Color
+### Color
 
 Go check out the [Swatches](/guidelines/color/swatches) page to see the new color options and updates.
 
@@ -69,13 +68,13 @@ Go check out the [Swatches](/guidelines/color/swatches) page to see the new colo
 - $hover-secondary – #3d70b2
 - $hover-danger – #bd1427
 
-## Icons
+### Icons
 
 - Check out the [Iconography](/guidelines/iconography/library) page to see the new icon style
 - All Icons are now `16x16px` (24x24px is no longer being supported).
 - The `--glyph` modifier has been deprecated. Most of the glyph variations were replaced with a `--solid modifier`. Check out the [icon migration docs](https://github.com/ibm/carbon-icons/blob/master/docs/migration-guides/migration-v7.md) to see the status of all the icons.
 
-## Design Kit
+### Design Kit
 
 - Download the latest version of the [Carbon Design Kit & Library](https://github.com/ibm/carbon-design-kit)
 - Components on the Component page are now split up into five different artboards: Controls, Content, Navigation, Inputs, and Data Tables
@@ -85,9 +84,9 @@ Go check out the [Swatches](/guidelines/color/swatches) page to see the new colo
 
 <hr class="divider">
 
-**May 16, 2018**
+## May 16, 2018
 
-## Utilities
+### Utilities
 
 There is a new section called Utilities which gives guidance on common pattern handlings.
 Unlike the component section, these guidelines offer usage guidance with minimal code documentation. To read more about each of these utilities see the sections below:
@@ -98,40 +97,40 @@ Unlike the component section, these guidelines offer usage guidance with minimal
 - [Loading](utilities/loading)
 - [Overflow Content](utilities/overflow-content)
 
-## Themes
+### Themes
 
 The [Themes page](style/themes) has been moved to the Style section.
 
 <hr class="divider">
 
-**March 9, 2018**
+## March 9, 2018
 
-## Style
+### Style
 
 ### Systematic spacing
 
 We have tokenized our spacing and now offer two systemized scales. The Spacing Scale defines space within a component while the Layout Scale is used to help position elements on a page. Check out the new [Spacing](style/spacing) section to learn more about these scales and read the rest of the spacing guidelines.
 
-## Design Kit
+### Design Kit
 
-### Sketch Libraries
+#### Sketch Libraries
 
 We have recorded a [Carbon Design Kit with Sketch Libraries Tutorial](https://www.youtube.com/watch?v=Tm-s0Hcbwck&list=PL4BR_VlGD31aVhe1ScKk9UOhbi8YOL0dF) over on our YouTube channel. It goes over how to download the Carbon Sketch Kit, import a Sketch Library, as well as how to get and accept library updates/notifications. It also gives a brief overview of how the Library is organized and how to use the overrides panel and library symbols.
 
 <hr class="divider">
 
-**February 23, 2018**
+## February 23, 2018
 
-## Design Kit
+### Design Kit
 
-### Sketch Libraries
+#### Sketch Libraries
 
 The Carbon Design Kit now includes Sketch Libraries, a better way to share and version symbols across Sketch files. Check out our [Sketch Libraries wiki](https://github.com/ibm/carbon-design-kit/wiki/Sketch-Libraries-Overview) to get a quick tutorial on libraries.
 
 ![sketch libraries in the carbon design kit](images/sketch-libraries.png)
 _Sketch Libraries in the Carbon Design Kit_
 
-### Sketch Plugins
+#### Sketch Plugins
 
 With the latest release of the Design Kit, we've included the [Sketch Palettes](https://github.com/andrewfiorillo/sketch-palettes) plugin, which allows you to load in pre-saved palettes for Sketch. You can import Carbon's four color palettes (Carbon default theme, Data Vis primary, Data Vis secondary, and Data Vis tertiary) into your working Sketch document.
 
@@ -143,7 +142,7 @@ There's also a variety of other [plugins](https://github.com/ibm/carbon-design-k
 <p>Download the latest Kit today!
 <a href="https://github.com/ibm/carbon-design-kit" target="_blank">Carbon Design Kit</a></p>
 
-## Carbon Sessions
+### Carbon Sessions
 
 Interested in getting some 1:1 time with the Carbon team? Carbon Sessions is a chance for anyone using the Carbon Design System to ask questions and get feedback. Sessions happen very Wednesday morning (Central Standard Time). Time slots are around 10 minutes, but feel free to book more than one if you need additional time.
 
@@ -151,11 +150,11 @@ Sign up for a [Carbon Sessions time slot](https://github.com/ibm/design-system-w
 
 <hr class="divider">
 
-**February 9, 2018**
+## February 9, 2018
 
-## Components
+### Components
 
-### Dropdown
+#### Dropdown
 
 We're excited to bring some added functionality that enhances our [Dropdown](/components/dropdown) component. Filtering, Multi-select, and Inline Dropdown are new additions to our basic Dropdown component.
 
@@ -164,13 +163,13 @@ We're excited to bring some added functionality that enhances our [Dropdown](/co
 ![example of Dropdown with Multi-Select](images/dropdown-new.gif)
 _Example of Multi-Select Dropdown_
 
-### Small Toggle
+#### Small Toggle
 
 Small Toggle is a style variation of our traditional [Toggle](/components/toggle) component. It's more compact in size, which allows them to be used in Data Tables or inline with Form elements.
 
 [example of Small toggle](images/small-toggle.gif) > _Example of Small Toggle_
 
-### Data Vis: Bar Graph
+#### Data Vis: Bar Graph
 
 Bar Graph is the newest addition to our Data Visualization collection. It comes in two variations: Bar Graph and Grouped Bar Graph. You can use this component to represent quantitative information, such as comparing the taco sales between Austin taco shops in the month of June.
 
@@ -178,7 +177,7 @@ Read more about the usage of [Bar Graph](/data-visualization/bar-graph/usage), o
 
 ![Bar Graph example](images/usage-bar-graph.png)
 
-### Data Vis: Tooltip
+#### Data Vis: Tooltip
 
 We have created several Data Visualization Tooltip variations to show the value for a specific data point or increment range. Tooltips appear on hover above or below a data representation, depending on the use case.
 
