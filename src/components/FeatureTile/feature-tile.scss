@@ -5,17 +5,7 @@
 a.feature-tile {
   display: block;
   text-decoration: none;
-
-  // full bleed for tiles on mobile
-  @include breakpoint('sm') {
-    width: calc(100% + 2rem);
-    margin-left: -1rem;
-  }
-
-  @include breakpoint('lg') {
-    width: 100%;
-    margin: 0;
-  }
+  width: 100%;
 }
 
 .tile__img .gatsby-resp-image-wrapper {

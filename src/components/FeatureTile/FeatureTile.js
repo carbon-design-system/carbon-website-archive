@@ -22,7 +22,7 @@ export default class FeatureTile extends React.Component {
 
     return (
       <div class={classNames}>
-        <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--flex">
+        <div className="ibm--col-lg-12 ibm--offset-lg-4 flex-wrap ibm--col-bleed">
           <Link to={href} className="feature-tile">
             <div className="tile__img">{children}</div>
             <div className="feature-tile__tile">
