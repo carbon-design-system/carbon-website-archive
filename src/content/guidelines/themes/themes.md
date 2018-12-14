@@ -1,9 +1,7 @@
 ---
-label: Guidelines
+label: Themes are used to customize component styles to fit the specific aesthetic of a brand or product.
 title: Themes
 ---
-
-**Themes** are used to customize component styles to fit the specific aesthetic of a brand or product.
 
 ## Introduction to theming
 
