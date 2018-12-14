@@ -200,6 +200,24 @@ This is a wrapper component to display a list as an anchor link list
 </anchor-links>
 ```
 
+#### Grid Wrapper
+
+This is a wrapper component used to wrap components like tiles, do-dont, images and more. Shown with the default values below.
+
+```
+Properties
+
+    - col_lg: Specify the col width at large breakpoint, default is 12
+    - col_md: Specify the col width at medium breakpoint, default is 8
+    - col_sm: Specify the col width at small breakpoint, default is 4
+    - flex: Set to true to set display:flex | flexwrap: wrap to row
+    - bleed: Set to true to remove col padding
+
+
+<grid-wrapper />
+<grid-wrapper col_lg="12" col_md="8" col_sm="4" flex="false" bleed="false">
+```
+
 #### Clickable Tile
 
 ```
