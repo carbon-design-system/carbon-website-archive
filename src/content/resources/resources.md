@@ -5,7 +5,7 @@ title: Resources
 
 ## GitHub Repos
 
-<grid-wrapper col_lg="8" flex="true">
+<grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
     title="Carbon Design Kit"
     href="https://github.com/ibm/carbon-design-kit"
@@ -38,7 +38,7 @@ title: Resources
 
 ## Tools
 
-<grid-wrapper col_lg="8" flex="true">
+<grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
     title="Carbon CodePen"
     href="http://www.codepen.io/team/carbon"
@@ -88,7 +88,7 @@ Carbon uses the IBM Design Language as our guiding principle. These core values 
 
 ## Featured
 
-<grid-wrapper col_lg="12" flex="true">
+<grid-wrapper flex="true" bleed="true">
 <clickable-tile
     type="article"
     title="Smashing Magazine's “Design Systems” Book"
@@ -128,7 +128,7 @@ Carbon uses the IBM Design Language as our guiding principle. These core values 
 
 ## Articles
 
-<grid-wrapper col_lg="12" flex="true">
+<grid-wrapper col_lg="12" flex="true" bleed="true">
 <clickable-tile
     type="article"
     title="What to expect in Carbon 10"

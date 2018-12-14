@@ -6,7 +6,7 @@ tabs: ['Swatches', 'Usage']
 
 ## Carbon color tokens
 
-<grid-wrapper col_lg="12" flex="true">
+<grid-wrapper flex="true">
 <color-card name="interactive-01" hex="#0062ff" border="true"></color-card>
 <color-card name="interactive-02" hex="#0062ff" border="true"></color-card>
 <color-card name="ui-01" hex="#f3f3f3" border="true"></color-card>
@@ -29,7 +29,7 @@ tabs: ['Swatches', 'Usage']
 
 ### Support Colors
 
-<grid-wrapper col_lg="12" flex="true">
+<grid-wrapper flex="true">
 <color-card name="support-01" hex="#e0182d" border="true"></color-card>
 <color-card name="support-02" hex="#5aa700" border="true"></color-card>
 <color-card name="support-03" hex="#efc100" border="true"></color-card>
@@ -38,7 +38,7 @@ tabs: ['Swatches', 'Usage']
 
 ### Interaction Colors
 
-<grid-wrapper col_lg="12" flex="true">
+<grid-wrapper flex="true">
 <color-card name="focus" hex="#0062ff" border="true"></color-card>
 <color-card name="hover-primary" hex="#0353E9" border="true"></color-card>
 <color-card name="active-primary" hex="#0530ad" border="true"></color-card>
