@@ -100,9 +100,9 @@ export default ({ data }) => {
       <Layout>
         <div className="container--homepage">
           <HomepageHeader />
-          <div className="page-content ibm--grid">
+          <main className="page-content ibm--grid" id="maincontent">
             {renderAst(post.htmlAst)}
-          </div>
+          </main>
           <HomepageFooter />
         </div>
         <BackToTop />
@@ -118,7 +118,7 @@ export default ({ data }) => {
             <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
           )}
         </PageHeader>
-        <div className="page-content ibm--grid">{renderAst(post.htmlAst)}</div>
+        <main className="page-content ibm--grid" id="maincontent">{renderAst(post.htmlAst)}</main>
         <NextPrevious
           slug={slug}
           currentTabs={tabs}
