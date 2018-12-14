@@ -1,13 +1,17 @@
 ---
 title: Migrating to Carbon X
 ---
-- [Intro](#carbon-x-is-near)
-- [Rollout Plan](#rollout-plan)
-- [Design Kit](#design-kit)
-- [Tokens](#tokens)
-- [Icons](#icons)
-- [UI Shell](#ui-shell)
-- [Migration Tooling](#migration-tooling)
+<anchor-links>
+<ul>
+  <li><a href="#carbon-x-is-near">Intro</a></li>
+  <li><a href="#rollout-plan">Rollout Plan</a></li>
+  <li><a href="#design-kit">Design Kit</a></li>
+  <li><a href="#tokens">Tokens</a></li>
+  <li><a href="#icons">Icons</a></li>
+  <li><a href="#ui-shell">UI Shell</a></li>
+  <li><a href="#migration-tooling">Migration Tooling</a></li>
+</ul>
+</anchor-links>
 
 ## Carbon X is near!
 Carbon X, aka v10, is currently in Alpha release. Please use this opportunity to explore and experiment with the new components, elements, layouts, and UI shell. The Alpha release is a work in progress; changes will be frequent and possibly breaking. **This release is not approved for production.** Please explore the system and [provide bountiful feedback](../help/support#github-issues)! 
