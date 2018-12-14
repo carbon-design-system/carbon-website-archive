@@ -9,13 +9,13 @@ const PageHeader = ({
 }) => {
   let labelContent =
     label != null ? (
-      <div className="ibm--grid page-header__label-wrapper">
+      <header className="ibm--grid page-header__label-wrapper">
         <div className="ibm--row">
           <div className="ibm--col-lg-6 ibm--offset-lg-4">
             <p className="page-header__label">{label}</p>
           </div>
         </div>
-      </div>
+      </header>
     ) : (
       null
     );
