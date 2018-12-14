@@ -3,8 +3,9 @@
 }
 
 .page-content .bx--snippet {
-  margin: 0 0 $spacing-lg;
+  margin: 0 0 $spacing-lg -1rem;
   background: white;
+  width: calc(100% + 2rem);
 }
 
 .page-content pre div code[class*='language-'] {
