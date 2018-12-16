@@ -13,17 +13,15 @@ import {
 import TileGroup from './TileGroup';
 import ClickTile from '../ClickableTile';
 
-const stories = storiesOf('ClickableTile', module);
-
-stories.addDecorator(withKnobs);
-
-stories.add('default', () => {
-  return (
-    <TileGroup>
-      <ClickTile>Test</ClickTile>
-      <ClickTile>Test</ClickTile>
-      <ClickTile>Test</ClickTile>
-      <ClickTile>Test</ClickTile>
-    </TileGroup>
-  );
-});
+storiesOf('TileGroup', module)
+  .addDecorator(withKnobs)
+  .add('default', () => {
+    return (
+      <TileGroup>
+        <ClickTile>Test</ClickTile>
+        <ClickTile>Test</ClickTile>
+        <ClickTile>Test</ClickTile>
+        <ClickTile>Test</ClickTile>
+      </TileGroup>
+    );
+  });

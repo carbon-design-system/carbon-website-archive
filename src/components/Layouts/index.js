@@ -20,10 +20,6 @@ import { AppSwitcher20, Menu32 } from '@carbon/icons-react';
 import '../../styles/index.scss';
 import '../../styles/experimental.scss';
 
-// TODO
-import '@carbon/addons-website/scss/styles.scss';
-import { Example } from '@carbon/addons-website';
-
 class Layout extends React.Component {
   static propTypes = {
     children: PropTypes.any,
@@ -108,8 +104,6 @@ class Layout extends React.Component {
     const { GATSBY_CARBON_ENV } = process.env;
     const isInternal = GATSBY_CARBON_ENV == 'internal';
     const { children } = this.props;
-
-    return <Example />;
 
     return (
       <StaticQuery
