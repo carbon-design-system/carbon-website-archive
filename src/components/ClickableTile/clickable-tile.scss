@@ -4,10 +4,7 @@ a.tile--article {
   display: flex;
   text-decoration: none;
   color: $text-01;
-  flex-basis: calc(50% - 1rem);
-  max-width: 33%;
   flex-direction: column;
-  margin: 0 1px $spacing-xl 0;
   padding: 0;
   background: $ibm-colors__white;
 
@@ -15,10 +12,18 @@ a.tile--article {
     background: $ibm-colors__gray--20;
   }
 
-  @media all and (max-width: 600px) {
-    flex-basis: 100%;
-    max-width: 100%;
-    margin-right: 0;
+  // full bleed for tiles on mobile
+  @include breakpoint('sm') {
+    width: 100%;
+  }
+
+  @include breakpoint('md') {
+    width: 50%;
+    margin: 0;
+  }
+
+  @include breakpoint('lg') {
+    width: 33%;
   }
 }
 
@@ -32,7 +37,6 @@ a.tile--article.tile--dark:hover {
 }
 
 .tile--article .tile__img {
-  width: 100%;
   margin: 0;
   overflow: hidden;
   border-bottom: none;
@@ -46,7 +50,11 @@ a.tile--article.tile--dark:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: $spacing-md $spacing-md $spacing-lg;
+  padding: $spacing-md $spacing-md 5.5rem;
+
+  @include breakpoint('md') {
+    padding-right: 25%;
+  }
 }
 
 .tile--article .tile__info h5 {
@@ -74,6 +82,10 @@ p.tile__author {
   color: $ibm-colors__white;
 }
 
+.tile__divider {
+  padding-bottom: rem(3px);
+}
+
 .tile__date {
   @include type-style('caption-01');
   color: $text-01;
@@ -86,46 +98,55 @@ p.tile__author {
 
 // Tile Resource
 
-a.tile--resource {
-  align-items: flex-start;
-  min-height: 10rem;
-  margin: 0;
-  display: flex;
-  align-items: flex-start;
-  text-decoration: none;
-  color: $text-01;
-  padding: rem(20px);
-  position: relative;
-  margin: 0 1px 1px 0;
-  background: $ibm-colors__white;
-
-  &:hover {
-    background: $ibm-colors__gray--20;
-  }
-
+.tile--resource {
+  // full bleed for tiles on mobile
   @include breakpoint('sm') {
     width: 100%;
   }
 
   @include breakpoint('md') {
     width: calc(50% - 1px);
+    margin: 0;
   }
 }
 
-a.tile--resource.tile--dark {
+.tile--resource a.bx--tile {
+  text-decoration: none;
+  color: $text-01;
+  padding: $spacing-md;
+  position: relative;
+  background: $ibm-colors__white;
+  height: 100%;
+
+  &:hover {
+    background: $ibm-colors__gray--20;
+  }
+}
+
+.tile--resource.tile--dark a.bx--tile {
   background: $ibm-colors__gray--90;
   color: $ibm-colors__white;
 }
 
-a.tile--resource.tile--dark:hover {
+.tile--resource.tile--dark a.bx--tile:hover  {
   background: $ibm-colors__gray--80;
 }
 
+.tile--resource .tile__info {
+  width: 100%;
+
+  @include breakpoint('lg') {
+    width: 75%;
+  }
+}
+
 .tile--resource .tile__info  h5 {
+  display: block;
+  width: 100%;
   text-decoration: none;
   color: $text-01;
   margin: 0 0 $spacing-xs 0;
-  padding: 0;
+  padding: 0 0 0 0;
   @include type-style('body-short-01');
 }
 
@@ -148,8 +169,8 @@ a.tile--resource.tile--dark:hover {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   position: absolute;
-  left: $spacing-lg;
-  bottom: $spacing-lg;
+  left: $spacing-md;
+  bottom: $spacing-md;
 
   img {
     width: 100%;
@@ -159,8 +180,8 @@ a.tile--resource.tile--dark:hover {
 
 .tile--resource .tile__link-icon {
   position: absolute;
-  right: $spacing-lg;
-  bottom: $spacing-lg;
+  right: $spacing-md;
+  bottom: $spacing-md;
   width: 20px;
   height: 20px;
 
@@ -172,5 +193,87 @@ a.tile--resource.tile--dark:hover {
 .tile--dark .tile__link-icon {
   svg {
     fill: $ibm-colors__white;
+  }
+}
+
+// Grouped tiles
+.flex-wrap {
+  .tile--resource {
+
+    @include breakpoint('sm') {
+      border-bottom: 1px solid $ibm-colors__gray--20; 
+
+      &.tile--dark {
+        border-bottom-color: $ibm-colors__black; 
+      }
+    }
+
+    @include breakpoint('md') {
+      border: 1px solid transparent;
+      border-bottom: none;
+      border-right: none;
+
+      &:nth-child(2n + 2) {
+        border-left: 1px solid $ibm-colors__gray--20; 
+
+        &.tile--dark {
+          border-left-color: $ibm-colors__black; 
+        }
+      }
+
+      &:nth-child(n + 3) {
+        border-top: 1px solid $ibm-colors__gray--20;
+        
+        &.tile--dark {
+          border-top-color: $ibm-colors__black; 
+        }
+      }
+    }
+  }
+
+  a.tile--article {
+    @include breakpoint('sm') {
+      border-bottom: 1px solid $ibm-colors__gray--20; 
+
+      &:last-child {
+        border: none;
+      }
+    }
+
+    @include breakpoint('md') {
+      border-bottom: none;
+      border-right: 1px solid $ibm-colors__gray--20; 
+
+      // selects every 3rd item and removes right border
+      &:nth-child(2n+2) {
+        border-right: none;
+      }
+
+      &:nth-child(n + 3) {
+        border-top: 1px solid $ibm-colors__gray--20; 
+      }
+    }
+
+    @include breakpoint('lg') {
+      border-bottom: none;
+      border-right: 1px solid $ibm-colors__gray--20; 
+
+      &:nth-child(2n+2) {
+        border-right: 1px solid $ibm-colors__gray--20; 
+      }
+
+      // selects every 3rd item and removes right border
+      &:nth-child(3n+3) {
+        border-right: none;
+      }
+
+      &:nth-child(n + 4) {
+        border-top: 1px solid $ibm-colors__gray--20; 
+      }
+    }
+  }
+
+  a.tile--article.tile--dark {
+    border-color: $ibm-colors__black; 
   }
 }

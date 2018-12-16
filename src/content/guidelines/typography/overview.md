@@ -81,7 +81,7 @@ Each weight has an italic style, which should only be used when you need to emph
 ## Type Color
 Type color should be carefully considered, with legibility and accessibility as paramount concerns. Keep type color neutral in running text. Use primary blue for primary actions. 
 
-<grid-wrapper col_lg="8" flex="true">
+<grid-wrapper col_lg="8" flex="true"> 
     <do-dont-example correct=true>
         <img src="images/typography_1.svg" alt="Neutral color for text">    
     </do-dont-example>

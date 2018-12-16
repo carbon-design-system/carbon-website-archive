@@ -9,9 +9,18 @@
 //----------------------------
 // Flex
 //----------------------------
-.ibm--flex {
-  display: flex;
-  flex-wrap: wrap;
+.container .flex-wrap {
+  @include breakpoint('md') {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+//----------------------------
+// Bleed
+//----------------------------
+.container .ibm--col-bleed {
+  padding: 0;
 }
 
 //----------------------------

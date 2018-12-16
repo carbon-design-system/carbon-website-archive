@@ -1,15 +1,13 @@
 ---
-label: Guidelines
+label: Themes are used to customize component styles to fit the specific aesthetic of a brand or product.
 title: Themes
 ---
-
-**Themes** are used to customize component styles to fit the specific aesthetic of a brand or product.
 
 ## Introduction to theming
 
 Developers and designers can use theming to modify existing components to fit their own specific visual styles. Rather than changing each individual component's CSS or building modified components from scratch, components can instead be easily customized by changing a set of universal variables we call tokens that seamlessly propagate changes across all of the system.
 
-<grid-wrapper col_lg="8" flex="true">
+<grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
     title="Theming Sandbox"
     href="http://themes.carbondesignsystem.com/"
@@ -35,7 +33,7 @@ The Carbon Design System has a default theme which is based off of the IBM Desig
 
 The default theme acts as a starting point; from there designers and developers can define how their own components and styles deviate from the default. A theme can change as little as one or all of the token values. Those different values are then packaged into a new theme scss stylesheet which will replace the values of the default theme.
 
-<grid-wrapper col_lg="8" flex="true">
+<grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
     title="Carbon Themes"
     href="https://github.com/carbon-design-system/carbon-themes"

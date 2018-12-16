@@ -4725,10 +4725,10 @@ capture-stack-trace@^1.0.0:
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.1.tgz#a6c0bbe1f38f3aa0b92238ecb6ff42c344d4135d"
   integrity sha512-mYQLZnx5Qt1JgB1WEiMCf2647plpGeQ2NMR/5L0HNZzGQo4fuSPnK+wjfPnKZV0aiJDgzmWqqkV/g7JD+DW0qw==
 
-carbon-components-react@6.58.0:
-  version "6.58.0"
-  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.58.0.tgz#f2bb9325532a1194ca3edc46565275d6256d4f3d"
-  integrity sha512-q7yClznORyE516E0uJQN0DbvDxuN5KUrNDLDW5qgg7jFe56loi3pxHrd2wc31iR2iTqqUJUlafyNqMK+EdCh4g==
+carbon-components-react@6.59.0:
+  version "6.59.0"
+  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.59.0.tgz#b636c50704dc26c28c19a4ccac3154baf768b437"
+  integrity sha512-2FRXH7Uhbl4eKnFepo2OMimxz/H0/TF4EFFVELVCs64F6FuA2K3V9Lg0q8U1iP3jLh2GrCTUFwAj+REUC8ih/Q==
   dependencies:
     "@carbon/icons-react" "^0.0.1-alpha.20"
     classnames "2.2.6"
@@ -4741,10 +4741,10 @@ carbon-components-react@6.58.0:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@^9.60.0:
-  version "9.60.0"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.60.0.tgz#b46ef4144ebea62d32b8159ef304aa225dcaccf0"
-  integrity sha512-v8j1mBV5wB1yS2/0nNaByPL1npQd2wB277kUVPtvM8K+ED+fcqAnyHVpjGgyk4TAcr9F6iPQFCccAz5p8/cqyQ==
+carbon-components@^9.61.1:
+  version "9.61.1"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.61.1.tgz#c61cbd56f82d7fca65b0ec62416d51c243c3a169"
+  integrity sha512-NIMYMPDhdqAm/1gsNu4AOmKOlOBdiMvxxnbgErfupGGPeR25Vv+tFH9aXNPt20AOKYx0NmkD+EFOVlb1Vr3EZg==
   dependencies:
     carbon-icons "^7.0.7"
     flatpickr "4.5.2"
@@ -6375,6 +6375,11 @@ detect-node@^2.0.3:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/detect-node/-/detect-node-2.0.4.tgz#014ee8f8f669c5c58023da64b8179c083a28c46c"
   integrity sha512-ZIzRpLJrOj7jjP2miAtgqIfmzbxa4ZOr5jJc601zklsfEx9oTzmmj2nVpIPRpNlRTIh8lc1kyViIY7BWSGNmKw==
+
+detect-passive-events@^1.0.0:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/detect-passive-events/-/detect-passive-events-1.0.4.tgz#6ed477e6e5bceb79079735dcd357789d37f9a91a"
+  integrity sha1-btR35uW863kHlzXc01d4nTf5qRo=
 
 detect-port-alt@1.1.3:
   version "1.1.3"
@@ -15032,6 +15037,16 @@ react-router@^4.3.1:
     prop-types "^15.6.1"
     warning "^4.0.1"
 
+react-scroll-up@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/react-scroll-up/-/react-scroll-up-1.3.3.tgz#c02dcf57feb9b33e1491e864ccad220e7f7e50d3"
+  integrity sha1-wC3PV/65sz4UkehkzK0iDn9+UNM=
+  dependencies:
+    detect-passive-events "^1.0.0"
+    object-assign "^4.0.1"
+    prop-types "^15.5.8"
+    tween-functions "^1.1.0"
+
 react-side-effect@^1.1.0:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-1.1.5.tgz#f26059e50ed9c626d91d661b9f3c8bb38cd0ff2d"
@@ -17693,6 +17708,11 @@ tunnel-agent@^0.6.0:
   integrity sha1-J6XeoGs2sEoKmWZ3SykIaPD8QP0=
   dependencies:
     safe-buffer "^5.0.1"
+
+tween-functions@^1.1.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/tween-functions/-/tween-functions-1.2.0.tgz#1ae3a50e7c60bb3def774eac707acbca73bbc3ff"
+  integrity sha1-GuOlDnxguz3vd06scHrLynO7w/8=
 
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"

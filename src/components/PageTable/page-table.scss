@@ -4,12 +4,12 @@
   line-height: 1.25;
 
   @include breakpoint('sm') {
-    width: 100%;
+    width: calc(100%);
   }
 
-  @include breakpoint('lg') {
+  @include breakpoint('md') {
     width: auto;
-    min-width: 67.3%;
+    min-width: calc(67.3%);
   }
 
   thead {
