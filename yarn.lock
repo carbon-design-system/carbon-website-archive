@@ -877,7 +877,7 @@
     "@carbon/icon-helpers" "0.0.1-alpha.22"
     prop-types "^15.6.2"
 
-"@carbon/icons-react@^0.0.1-alpha.25":
+"@carbon/icons-react@alpha":
   version "0.0.1-alpha.26"
   resolved "https://registry.yarnpkg.com/@carbon/icons-react/-/icons-react-0.0.1-alpha.26.tgz#b4aa61162d30ee78563832c4903f5022e2cd2e36"
   integrity sha512-VKCKDGyuam6XmCjcs4J6AssI4LIqX3fZmjr0UMf1krr5o0LGSEbEB9EbGd0eDjwq64GpC/o4qZkQ76l2sBHvVA==
