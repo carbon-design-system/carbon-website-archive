@@ -1,5 +1,5 @@
 'use strict';
 
-const Example = require('./components/Example');
+import Example from './components/Example';
 
-exports.Example = Example;
+export { Example };

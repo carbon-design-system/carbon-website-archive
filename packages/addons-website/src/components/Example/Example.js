@@ -1,5 +1,5 @@
-const React = require('react');
+import React from 'react';
 
-module.exports = function Example() {
-  return React.createElement('span', { className: 'bx--example' }, 'Example');
-};
+export default function Example() {
+  return <span className="bx--example">Example</span>;
+}
