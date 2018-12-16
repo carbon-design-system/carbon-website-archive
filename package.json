@@ -36,7 +36,7 @@
   "dependencies": {
     "@carbon/colors": "alpha",
     "@carbon/grid": "alpha",
-    "@carbon/icons-react": "^0.0.1-alpha.25",
+    "@carbon/icons-react": "alpha",
     "@carbon/import-once": "alpha",
     "@carbon/layout": "alpha",
     "@carbon/type": "0.0.1-alpha.24",
