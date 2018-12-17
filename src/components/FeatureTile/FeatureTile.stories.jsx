@@ -12,10 +12,8 @@ import {
 
 import FeatureTile from './FeatureTile';
 
-const stories = storiesOf('ClickableTile', module);
-
-stories.addDecorator(withKnobs);
-
-stories.add('default', () => {
-  return <FeatureTile>Test</FeatureTile>;
-});
+storiesOf('FeatureTile', module)
+  .addDecorator(withKnobs)
+  .add('default', () => {
+    return <FeatureTile>Test</FeatureTile>;
+  });
