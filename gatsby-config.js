@@ -9,7 +9,6 @@ module.exports = {
   siteMetadata: {
     title: 'Carbon Design System',
     titleInternal: 'IBM Product Design',
-    lastUpdated: 'December 18, 2018',
   },
   plugins: [
     {
