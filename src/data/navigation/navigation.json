@@ -235,6 +235,9 @@
       "loading": {
         "title": "Loading"
       },
+      "modal": {
+        "title": "Modal"
+      },
       "notification": {
         "title": "Notification"
       },
