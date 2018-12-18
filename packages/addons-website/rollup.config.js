@@ -7,7 +7,7 @@ const nodeResolve = require('rollup-plugin-node-resolve');
 
 const baseConfig = {
   input: path.resolve(__dirname, './src/index.js'),
-  external: ['react', 'react-dom', 'prop-types'],
+  external: ['react', 'react-dom', 'prop-types', 'classnames','carbon-components'],
   plugins: [
     nodeResolve({
       jsnext: true,
