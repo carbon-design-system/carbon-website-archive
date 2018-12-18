@@ -1,5 +1,5 @@
 ---
-label: Experimental
+
 title: About
 tabs: ['Overview', 'Usage']
 ---

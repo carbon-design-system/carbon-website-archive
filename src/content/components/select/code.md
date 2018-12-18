@@ -1,19 +1,24 @@
 ---
-label: Component
+
 title: Select
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
-<page-intro>**Select** is a type of input that is used in forms, where a user is submitting data and chooses one option from a list.</page-intro>
+**Select** is a type of input that is used in forms, where a user is submitting data and chooses one option from a list.
 
 <component 
     name="Select"
     component="select" 
     variation="select"
-    codepen="QOqbPg"
-    haslightversion="true"
-    hasReactVersion="true"
-    hasAngularVersion="true"
+    experimental="true"
+    >
+</component>
+
+<component 
+    name="Select Invalid"
+    component="select" 
+    variation="select--invalid"
+    experimental="true"
     >
 </component>
 
@@ -21,8 +26,15 @@ tabs: ['Code', 'Usage', 'Style']
     name="Inline Select"
     component="select" 
     variation="select--inline"
-    codepen="YErXbK"
-    hasReactVersion="true"
+    experimental="true"
     >
 </component>
-<component-docs component="select"></component-docs>
+
+<component 
+    name="Inline Select Invalid"
+    component="select" 
+    variation="select--inline-invalid"
+    experimental="true"
+    >
+</component>
+<component-docs component="select" experimental="true"></component-docs>

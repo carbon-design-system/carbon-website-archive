@@ -1,68 +1,4 @@
-.component-variation {
-  margin: 3rem 0 6rem;
 
-  &__name {
-    position: relative;
-    color: $text-01;
-    font-weight: 300;
-    padding: 1rem 0 1.5rem;
-
-    &:before {
-      content: '';
-      width: rem(80px);
-      height: rem(5px);
-      display: block;
-      background-color: $brand-01;
-      position: absolute;
-      top: -0.5rem;
-      left: 0;
-    }
-  }
-
-  &__desc {
-    max-width: 45rem;
-    margin: 1rem 0;
-  }
-
-  & + .page_md h3 {
-    padding-top: 0 !important;
-  }
-}
-
-main[data-page|='components-code'] {
-  h3 + h4 {
-    margin-top: 1rem;
-  }
-
-  table tr td:nth-child(2):not(:last-child) {
-    white-space: nowrap;
-  }
-
-  table + h4 {
-    padding-top: 2rem;
-  }
-
-  table + h3 {
-    margin-top: 3rem;
-  }
-
-  p + h3 {
-    margin-top: 2rem !important;
-  }
-}
-
-main[data-page='components-code-button'] {
-  .page_md {
-    table tr td:nth-child(3) {
-      white-space: nowrap;
-    }
-
-    table tr td:nth-child(2) {
-      min-width: 15rem;
-      white-space: pre-wrap;
-    }
-  }
-}
 
 .code-page__react-version {
   display: flex;
@@ -74,28 +10,5 @@ main[data-page='components-code-button'] {
     width: 32px;
     height: 32px;
   }
-
-  p {
-    margin-bottom: 4px;
-  }
-
-  a {
-    margin-left: 2px;
-  }
-
-  & + .page_md h3 {
-    padding-top: 3rem;
-  }
 }
 
-.component-example__live .bx--form-item {
-  margin-bottom: $spacing-xl;
-}
-
-.component-example__live.component-example__live--light {
-  background: $ui-01;
-}
-
-.component-example__live.carbon-demo-experimental {
-  background: $ui-01;
-}

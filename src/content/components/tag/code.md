@@ -1,17 +1,16 @@
 ---
-label: Component
+
 title: Tag
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
-<page-intro>**Tags** are used for items that need to be labeled, categorized, or organized using keywords that describe them.</page-intro>
+**Tags** are used for items that need to be labeled, categorized, or organized using keywords that describe them.
 
 <component 
     name="Tag"
     component="tag" 
     variation="tag"
-    codepen="GOWdob"
-    hasReactVersion="true"
+    experimental="true"
     >
 </component>
-<component-docs component="tag"></component-docs>
+<component-docs component="tag" experimental="true"></component-docs>

@@ -3,18 +3,33 @@ $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
 
 .typography-table {
   overflow-x: scroll;
-  max-width: 45rem;
-  width: 100%;
+  background: $ibm-colors__white;
+
+  table tbody tr {
+    border: none;
+  }
+
+  table thead th {
+    border: none;
+    color: $ibm-colors__gray--50;
+    @include type-style('caption-01');
+    padding: 1rem;
+    text-align: left;
+  }
 
   table tbody td {
     white-space: nowrap;
+    border: none;
+    height: auto;
+    padding: 0 1rem;
+    font-size: .75rem;
   }
 
   @for $i from 1 through length($type-scale) {
-    table tbody tr:nth-child(#{$i}) td:nth-child(3) {
+    table tbody tr:nth-child(#{$i}) td:nth-child(2) {
       font-size: nth($type-scale, $i);
       white-space: nowrap;
-      color: $color__navy-gray-6;
+      color: $ibm-colors__gray--80;;
       width: 50%;
     }
   }

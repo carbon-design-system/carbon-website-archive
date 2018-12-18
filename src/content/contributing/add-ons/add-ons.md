@@ -1,9 +1,9 @@
 ---
-label: Contributing
+
 title: Add-ons
 ---
 
-<page-intro>**Add-on repositories**, or repos, are components built for a specific product or experience. The repos are built on top of the core Carbon repo, and enable teams to create their own custom components that follow Carbon's visual style and guidelines.</page-intro>
+**Add-on repositories**, or repos, are components built for a specific product or experience. The repos are built on top of the core Carbon repo, and enable teams to create their own custom components that follow Carbon's visual style and guidelines.
 
 ## Do you need an add-on repo?
 

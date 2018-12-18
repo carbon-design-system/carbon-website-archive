@@ -1,18 +1,16 @@
 ---
-label: Component
+
 title: Checkbox
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
-<page-intro>**Checkboxes** are used when there is a list of options and the user may select multiple options, including all or none.</page-intro>
+**Checkboxes** are used for a list of options where the user may select multiple options, including all or none.
 
 <component 
     name="Checkbox"
     component="checkbox" 
     variation="checkbox"
-    codepen="MOEgxQ"
-    hasReactVersion="true"
-    hasAngularVersion="true"
+    experimental="true"
     >
 </component>
-<component-docs component="checkbox"></component-docs>
+<component-docs component="checkbox" experimental="true"></component-docs>

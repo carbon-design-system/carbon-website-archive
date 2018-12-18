@@ -34,7 +34,7 @@ The top of each markdown file has required frontmatter fields to display the hea
 
 ```
 ---
-label: Small label text above title
+label: Optional paragraph of text at the top of a page
 title: Page Title
 tabs: ['Tab 1', 'Tab 2', 'Tab 3'']
 internal: true
@@ -44,12 +44,12 @@ internal: true
 Required fields are:
 
 - `title`: The title of the page
-- `label`: The label of the page _(not required on top level pages, e.g., Resources, if title and label are the same only title will display)_
 
 Non-required fields are:
 
+- `label`: The label of the page _(if added then header will display at medium height instead of small)_
 - `tabs`: An array of the page tabs (in the desired order), tab name should match markdown file name.
-- `internal: true` Used to designate internal only content.
+- `internal: true` Used to designate internal only content for display on w3 website.
 
 ## Markdown
 
@@ -101,9 +101,10 @@ Image components are used on component pages under the Style and Usage tabs to d
 
 #### Image Grid
 
-Image grids are used on component pages, usually under the "Style" tab to display a group of images in a grid. See the button page for an example.
+Image grids are used on component pages, usually under the "Style" tab to display a group of images in a grid. See the button page for an example. You need to wrap it with a grid-wrapper component to get the correct grid layout.
 
 ```
+<grid-wrapper>
 <div class="image-grid">
   <div>
     <img src="images/button-style-7.png" alt="Structure for a Primary Button"/>
@@ -112,6 +113,7 @@ Image grids are used on component pages, usually under the "Style" tab to displa
     <img src="images/button-style-8.png" alt="Structure for a small Primary Button"/>
   </div>
 </div>
+</grid-wrapper>
 ```
 
 ### Lists
@@ -167,24 +169,59 @@ The carbon website has a handful of custom markdown components available for use
 
 ### Global Components:
 
-- `<page-intro>`
-- `<page-intro> **Bold and blue text** </page-intro>`
 - `<icon name="icon--checkmark--solid" color="green" />`
-- `<flex-group>`
-- `<clickable-tile title="Title" author="John Smith" date="Janury 1, 2018" href="#"><img src="image.png" alt="Alt Text" type="article|resource" /></clickable-tile>`
-- `<example correct=true title="Ability" text='Example text or quote'></example>`
+- `<clickable-tile label="Title" author="John Smith" date="Janury 1, 2018" href="#"><img src="image.png" alt="Alt Text" type="article|resource" /></clickable-tile>`
+- `<do-dont-example correct=true label="Ability" description="Lorem ipsum dolor sit amet" text='Example text or quote'></do-dont-example>`
 - `<color-block showhex="true" size="xs">#ffaaaa</color-block>`
   - `size` takes values of `xs`, `s`, `m`, `l` (12px, 24px, 40px, 80px respectively)
   - `size` also accepts a number (e.g. `size="200"`, which would render a square that is 200px x 200px)
   - leaving out these extra properties will default to no label, and a swatch size of 24px
 - `<color-card name="$ui-01" hex="#ffffff" border="true" small="true"></color-card>`
+- `<anchor-links>`
+- `<grid-wrapper col_lg="12" flex="true>` 
+  - `col_lg` Specify the col width at large breakpoint, default is 12
+  - `flex` Set to true to set display:flex | flexwrap: wrap to row 
 
 ### Examples
 
-#### Clickable Tile inside FlexGroup
+#### Anchor Links
+
+This is a wrapper component to display a list as an anchor link list
 
 ```
-<flex-group>
+<anchor-links>
+<ul>
+    <li><a href="#columns-and-rows">Columns and Rows</a></li>
+    <li><a href="#margins">Margins</a></li>
+    <li><a href="#padding">Padding</a></li>
+    <li><a href="#gutters">Gutters</a></li>
+    <li><a href="#breakpoints">Breakpoints</a></li>
+</ul>
+</anchor-links>
+```
+
+#### Grid Wrapper
+
+This is a wrapper component used to wrap components like tiles, do-dont, images and more. Shown with the default values below.
+
+```
+Properties
+
+    - col_lg: Specify the col width at large breakpoint, default is 12
+    - col_md: Specify the col width at medium breakpoint, default is 8
+    - col_sm: Specify the col width at small breakpoint, default is 4
+    - flex: Set to true to set display:flex | flexwrap: wrap to row
+    - bleed: Set to true to remove col padding
+
+
+<grid-wrapper />
+<grid-wrapper col_lg="12" col_md="8" col_sm="4" flex="false" bleed="false">
+```
+
+#### Clickable Tile
+
+```
+
 <clickable-tile
     title="Data Table updates in Carbon React v5.22.0"
     author="Josh Black"
@@ -203,47 +240,54 @@ The carbon website has a handful of custom markdown components available for use
     >
     <img src="images/article-5.png" alt="Data Table updates in Carbon React v5.22.0" />
 </clickable-tile>
-</flex-group>
+
 ```
 
 This will render the following group of clickable tiles
 
 ![Tile Group](https://user-images.githubusercontent.com/2753488/43804229-e8d26a22-9a60-11e8-9aa9-e4f9b9759757.png)
 
-#### Example inside FlexGroup (with and without images)
+#### Example of the Do/Don't components:
+
+##### With text examples:
 
 ```
-<flex-group>
-    <example correct=true title="Ability" text='"You can use the command line interface to update your app."'></example>
-    <example title='Ability' text='"You may use the command line interface to update your app."'></example>
-</flex-group>
-<flex-group>
-    <example correct=true title="Possibility" text='"You might need more advanced features when you are integrating with another app."'></example>
-    <example title='Possibility' text='"You may need more advanced features when you are integrating with another app."'></example>
-</flex-group>
+<grid-wrapper col_lg="8" flex="true">
+    <do-dont-example correct=true label="Active Voice" text='"In the Limits window, specify the minimum and maximum values."'></do-dont-example>
+    <do-dont-example label='Passive Voice' text='"The Limits window is used to specify the minimum and maximum values."'></do-dont-example>
+</grid-wrapper>
 ```
 
-This will render the following set of examples
-![Examples](https://user-images.githubusercontent.com/2753488/43850488-aba55aea-9afd-11e8-921d-418f65cf2460.png)
+This will render the following set of examples:
+![Example of the Do/Don't component with text examples](https://user-images.githubusercontent.com/2753488/43850488-aba55aea-9afd-11e8-921d-418f65cf2460.png)
+
+---
+
+##### With image examples:
 
 ```
-<flex-group>
-    <example correct="true" title="Test One">
-        <img src="images/content-general-1.png" alt="test2"/>
-    </example>
-    <example title="Test Two">
-        <img src="images/content-general-2.png" alt="test2"/>
-    </example>
-</flex-group>
+<grid-wrapper col_lg="8" flex="true">
+    <do-dont-example correct="true" label='Image Test'>
+        <img src='images/img-test.png' />
+    </do-dont-example>
+    <do-dont-example label='Image Test' >
+        <img src='images/img-test.png' />
+    </do-dont-example>
+</grid-wrapper>
 ```
+
+This will render the following set of examples:
+![Example of the Do/Don't component with image examples](https://user-images.githubusercontent.com/2753488/43850488-aba55aea-9afd-11e8-921d-418f65cf2460.png)
 
 ### Page Specific Components:
 
 **Type**
 
+- `<type-weight>`
+- `<type-weight type="italic">`
+- `<type-weight type="type">`
 - `<type-scale-table>`
-- `<type-styles-table>`
-- `<type-weight-table>`
+- `<type-spec>`
 
 **Glossary**
 
@@ -256,20 +300,6 @@ This will render the following set of examples
 **Component Overview** (content pulled from data/components.json)
 
 - `<component-overview>`
-
-**Layer**
-
-- `<layer-types>`
-- `<layer-usage>`
-
-**Motion**
-
-- `<motion-example type="standard"></motion-example>`
-- `<motion-example type="ease-out"></motion-example>`
-- `<motion-example type="ease-in"></motion-example>`
-- `<motion-example type="standard"></motion-example>`
-- `<motion-example type="easing" correcttext="Easing" incorrecttext="No-Easing"></motion-example></motion-example>`
-- `<motion-example type="duration" correcttext="300ms" incorrecttext="600ms"></motion-example>`
 
 ## Component Page Components:
 

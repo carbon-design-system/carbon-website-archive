@@ -2,45 +2,56 @@
   width: 100%;
   max-width: 100%;
   display: block;
-  color: $color__white;
+  color: $ibm-colors__white;
   margin-bottom: 6rem;
 
-  &__live {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: rem(200px);
-    position: relative;
-    padding: 2rem 2rem 2.5rem;
-    margin: 1.5rem 0 0;
-    background-color: $ui-02;
-    color: $text-01;
-    border: 1px solid $ui-03;
-
-    &--light {
-      background-color: $ui-01;
-    }
-
-    &--rendered {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      width: 100%;
-    }
-  }
-
-  &__view-full-render {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    color: $text-02;
-    font-size: 0.75rem;
-    padding: 0.5rem 1rem;
-    z-index: 9999;
+  p {
+    margin: 0;
+    padding: 0;
   }
 }
+
+.component-example__live {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: rem(200px);
+  position: relative;
+  padding: 2rem 2rem 2.5rem;
+  margin: 1.5rem 0 0;
+  background-color: $ui-02;
+  color: $text-01;
+  border: 1px solid $ui-03;
+}
+
+.carbon-demo-v9.component-example__live {
+  background: #f5f7fa;
+}
+
+.component-example__live.component-example__live--light {
+  background-color: #fff;
+}
+
+.component-example__live.component-example__live--rendered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.component-example__view-full-render {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: $text-02;
+  @include type-style('caption-01');
+  padding: 0.5rem 1rem;
+  z-index: 9999;
+}
+
 
 .component-toolbar {
   display: flex;
@@ -57,7 +68,7 @@
   border-right: 1px solid $ui-03;
 
   p {
-    @include typescale('zeta');
+   @include type-style('body-short-01');
     color: $text-02;
     font-weight: 600;
     padding: 0 1rem;
@@ -71,7 +82,7 @@
   flex: 2;
 
   a {
-    @include typescale('zeta');
+   @include type-style('body-short-01');
     padding-left: 1rem;
   }
 }

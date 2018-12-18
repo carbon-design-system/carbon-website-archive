@@ -1,216 +1,257 @@
 import React from 'react';
-import { Search } from 'carbon-components-react';
+import { Search, Loading } from 'carbon-components-react';
 import icons from 'carbon-icons';
-import IconCard from '../IconCard';
 import IconEmptyState from '../IconEmptyState';
 
+const sizes = ['16', '32', 'Glyph'];
+
+/**
+ * Provides support for our experimental icon library, `@carbon/icons-react`,
+ * at the /experimental/iconography/library route
+ */
 export default class IconLibrary extends React.Component {
-  static defaultProps = {
-    currentPage: 'library',
-  };
-
   state = {
+    /**
+     * The error if an error occurs while loading icons
+     */
+    errorLoadingIcons: null,
+
+    /**
+     * Icon data that we load from `@carbon/icons-react`
+     */
+    icons: null,
+
+    /**
+     * Initialize as loading by default since we need to fetch all the icons
+     */
+    isLoading: true,
+
+    /**
+     * Initialize with empty string value for search
+     */
     searchValue: '',
-    iconSearchResults: [],
   };
 
-  filterIconsByName = (icons, name) =>
-    icons.filter(icon => icon.name.includes(name));
-
-  filterIconsByTag = (icons, tag) =>
-    icons.filter(icon => icon.tags.join('').includes(tag));
-
-  handleSearch = (icons, searchValue) => {
-    const searchVal = searchValue.toLowerCase();
-    const namedIcons = this.filterIconsByName(icons, searchVal);
-    // const taggedIcons = this.filterIconsByTag(icons, searchVal);
-    const searchResults = namedIcons
-      // .concat(taggedIcons)
-      .filter((icon, index, self) => index === self.indexOf(icon));
-
-    return searchResults;
-  };
-
-  handleChange = evt => {
-    const searchValue = evt.target.value.trim();
-    this.setState({
-      searchValue,
-      iconSearchResults: this.handleSearch(icons, searchValue),
+  /**
+   * Filter the current icon set by the given search value. Will shortcircuit if
+   * searchValue is an empty string as all icons will be visible with that
+   * query.
+   */
+  filterIcons = () => {
+    this.setState(state => {
+      const { icons, searchValue } = state;
+      const filteredIcons = Object.keys(icons).filter(icon => {
+        return (
+          searchValue === '' || icon.toLowerCase().indexOf(searchValue) !== -1
+        );
+      });
+      return {
+        filteredIcons,
+        sections: createIconSections(icons, filteredIcons),
+      };
     });
   };
+
+  /**
+   * Handle the `onChange` event from the Search component. We take the value of
+   * the event and set it as the searchValue, we then defer an update with
+   * `filterIcons` after the state has changed.
+   */
+  handleOnChange = event => {
+    const searchValue = event.target.value.trim().toLowerCase();
+    this.setState(
+      {
+        searchValue,
+      },
+      () => {
+        this.filterIcons();
+      }
+    );
+  };
+
+  /**
+   * When our component mounts, we need to fetch the icon data from
+   * `@carbon/react`
+   */
+  componentDidMount() {
+    import('@carbon/icons-react')
+      .then(icons => {
+        const filteredIcons = Object.keys(icons);
+        this.setState({
+          icons,
+          filteredIcons,
+          sections: createIconSections(icons, filteredIcons),
+          isLoading: false,
+          error: null,
+        });
+      })
+      .catch(error => {
+        this.setState({
+          errorLoadingIcons: error,
+          isLoading: false,
+          icons: null,
+        });
+      });
+  }
 
   render() {
-    const initialIcons = (
-      <div style={{ marginTop: '70px' }}>
-        <h2>UI icons</h2>
-        <div className="icon-container">
-          {this.renderIconCards(iconsToShow)}
-        </div>
-      </div>
+    const {
+      errorLoadingIcons,
+      filteredIcons,
+      icons,
+      isLoading,
+      searchValue,
+      sections,
+    } = this.state;
+
+    const search = (
+      <Search
+        small
+        className="icon-search"
+        onChange={this.handleOnChange}
+        placeHolderText="Search by descriptors like “edit, pencil, or draw"
+        aria-label="Icon library search"
+        value={this.state.searchValue}
+        labelText="Icon library search"
+      />
     );
 
-    const serviceIcons = (
-      <div style={{ marginTop: '70px' }}>
-        <h2>Service icons</h2>
-        <div className="icon-container">
-          {this.renderIconCards(
-            icons.filter(icon => serviceIconNames.indexOf(icon.name) !== -1)
-          )}
+    if (isLoading) {
+      return (
+        <div className="page">
+          {search}
+          {isLoading && <Loading />}
         </div>
-      </div>
-    );
+      );
+    }
 
-    const searchResults = (
-      <div style={{ marginTop: '70px' }}>
-        <h2>Search results</h2>
-        <div className="icon-container">
-          {this.state.iconSearchResults.length > 0 ? (
-            this.renderIconCards(this.state.iconSearchResults)
-          ) : (
+    if (errorLoadingIcons) {
+      console.error(errorLoadingIcons);
+      return (
+        <div className="page ibm--row">
+          <div className="ibm--col-lg-12 ibm--offset-lg-4">
+            <h3>Yikes! Looks like something went wrong.</h3>
+            <p>
+              We're still working out some problems in our experimental website.
+              If you can, we'd appreciate it if you could make an issue on{' '}
+              <a
+                href="https://github.com/carbon-design-system/carbon-website-gatsby"
+                rel="noopener noreferrer"
+                target="_blank">
+                our repo
+              </a>{' '}
+              to make sure that this gets fixed!
+            </p>
+          </div>
+        </div>
+      );
+    }
+
+    if (filteredIcons.length === 0) {
+      return (
+        <div className="page ibm--row">
+          <div className="ibm--col-lg-8 ibm--offset-lg-4">
+            {search}
+          </div>
+          <div className="ibm--col-lg-12 ibm--offset-lg-4">
             <IconEmptyState />
-          )}
+          </div>
         </div>
-      </div>
-    );
+      );
+    }
 
     return (
-      <div className="page iconography">
-        <div className="icon-container">
-          <Search
-            small
-            onChange={this.handleChange}
-            onKeyUp={this.handleClearInput}
-            placeHolderText="Search icon library"
-            aria-label="Icon library search"
-            value={this.state.searchValue}
-            labelText="Icon library search"
-          />
+      <div className="page ibm--row">
+        <div className="ibm--col-lg-8 ibm--offset-lg-4">
+          {search}
         </div>
-        {this.state.searchValue.length > 0 ? (
-          searchResults
-        ) : (
-          <React.Fragment>
-            {initialIcons}
-            {serviceIcons}
-          </React.Fragment>
-        )}
+        <div className="ibm--col-lg-12 ibm--offset-lg-4">
+          {sections}
+        </div>
       </div>
     );
   }
+}
 
-  renderIconCards(icons) {
-    return icons.map(icon => {
-      if (!icon.name.includes('glyph')) {
-        return (
-          <IconCard
-            key={icon.id}
-            name={icon.name}
-            viewBox={icon.viewBox}
-            width={icon.width.toString()}
-            height={icon.height.toString()}
-            svgString={toSVG(icon)}
-          />
-        );
+/**
+ * Takes a flat object where the keys are icon names and transforms them into an
+ * object where each key is a size and the value is an array of icons at that
+ * size.
+ */
+function groupIconsBySize(icons) {
+  return Object.keys(icons).reduce((acc, iconName) => {
+    const [group] = sizes.filter(size => iconName.indexOf(size) !== -1);
+    const friendlyName = iconName.replace(group, '');
+    const details = {
+      name: iconName,
+      friendlyName,
+      group,
+      Component: icons[iconName],
+    };
+
+    if (acc[group]) {
+      return {
+        ...acc,
+        [group]: acc[group].concat(details),
+      };
+    }
+
+    return {
+      ...acc,
+      [group]: [details],
+    };
+  }, {});
+}
+
+/**
+ * Creates all the sections for the icons but filters by what icons are
+ * available in filteredIcons. We use this method as part of our state
+ * transformations above, instead of in the render method, because including
+ * this in render causes noticeable jank in the UI. If we instead perform work
+ * after the state transition for the search bar, then we get less noticeable
+ * lag on the input.
+ */
+function createIconSections(icons, filteredIcons) {
+  const groups = groupIconsBySize(icons);
+  return Object.keys(groups)
+    .filter(size => {
+      if (!Array.isArray(groups[size])) {
+        return false;
       }
-    });
-  }
+      if (groups[size].length === 0) {
+        return false;
+      }
+      return true;
+    })
+    .map(size => (
+      <section key={size} className="icon-size">
+        <header>
+          <h2 className="icon-h2">{isNaN(size) ? size : `${size}x${size}`}</h2>
+        </header>
+        <div className="icon-container">
+          {groups[size]
+            .filter(icon => filteredIcons.indexOf(icon.name) !== -1)
+            .map(renderIcon)}
+        </div>
+      </section>
+    ));
 }
 
-const serviceIconNames = [
-  'icon--api',
-  'icon--app-services',
-  'icon--applications',
-  'icon--block-chain',
-  'icon--cf-apps',
-  'icon--console',
-  'icon--containers',
-  'icon--crash',
-  'icon--dashboard',
-  'icon--devices',
-  'icon--devops',
-  'icon--finance',
-  'icon--financial',
-  'icon--functions',
-  'icon--hpa',
-  'icon--hpa--stress',
-  'icon--spa—stress',
-  'icon--infrastructure',
-  'icon--integration',
-  'icon--not',
-  'icon--menu',
-  'icon--mobile',
-  'icon--network',
-  'icon--open-whisk',
-  'icon--pa',
-  'icon--pa-stress',
-  'icon--portfolio',
-  'icon--predictive',
-  'icon--schematics',
-  'icon--security',
-  'icon--services',
-  'icon--storage',
-  'icon--watson',
-  'icon--whisk',
-  'icon--iot',
-  'icon--pa--stress',
-];
-
-const deprecatedIcons = [
-  'icon--start',
-  'icon--upload',
-  'icon--warning',
-  'icon--stop',
-  'icon--play',
-  'icon-—pause',
-  'icon--info',
-  'icon--help',
-  'icon--folder',
-  'icon--favorite',
-  'icon--error',
-  'icon--dollars',
-  'icon--data',
-  'icon--header--notification',
-  'icon--header--notifciation',
-  'icon--header--ticket',
-  'icon--header--docs',
-  'icon--header--contact',
-  'icon--pause',
-  'icon--start--outline',
-  'icon--apis',
-  'icon--cloud-foundry',
-  'icon--apps',
-];
-
-const iconsToShow = icons.filter(icon => {
-  if (icon.name.includes('glyph')) {
-    return false;
-  }
-  if (deprecatedIcons.indexOf(icon.name) !== -1) {
-    return false;
-  }
-  if (serviceIconNames.indexOf(icon.name) !== -1) {
-    return false;
-  }
-  return true;
-});
-
-function printAttributes(attrs) {
-  return Object.keys(attrs)
-    .map(key => `${key}="${attrs[key]}"`)
-    .join(' ');
-}
-
-function toSVG(icon) {
-  const { svgData, width, height, viewBox } = icon;
-  const svg = children =>
-    `<svg ${printAttributes({ width, height, viewBox })}>${children}</svg>`;
-  const paths = svgData.paths
-    .map(path => `<path d="${path.d}"></path>`)
-    .join('');
-
-  if (!svgData.g) {
-    return svg(paths);
-  }
-
-  return svg(`<g ${printAttributes(svgData.g)}>${paths}</g>`);
+/**
+ * Renders an individual icon
+ */
+function renderIcon(icon) {
+  return (
+    <div key={icon.name} className="icon">
+      <div className="icon__card">
+        <icon.Component />
+      </div>
+      <h5 className="icon__card-title" title={icon.friendlyName}>
+        {icon.friendlyName}
+      </h5>
+      <span className="icon__card-details" title={icon.name}>
+        {icon.name}
+      </span>
+    </div>
+  );
 }

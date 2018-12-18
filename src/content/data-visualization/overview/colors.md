@@ -1,5 +1,5 @@
 ---
-label: Data Visualization
+
 title: Overview
 tabs: ['General', 'Colors', 'Style']
 ---
@@ -15,7 +15,7 @@ For data visualizations with touching colors (no white space between blocks of c
 The primary palette is always applied to the first data visualization of any given page. When there is only one data set, use the color `primary-04`.
 
 ![Example of primary-04 applied to one data set](images/colors-1.png)
-_Example of <code>primary-04</code> applied to one data set_
+_Example of primary-04 applied to one data set_
 
 ### Two or more variables
 

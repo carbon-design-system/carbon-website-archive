@@ -3,7 +3,8 @@
 }
 
 .page-content .bx--snippet {
-  margin: $spacing-md 0 $spacing-lg;
+  margin: 0 0 $spacing-lg 0;
+  background: white;
 }
 
 .page-content pre div code[class*='language-'] {
@@ -17,7 +18,7 @@ pre[class*='language-'] {
 
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
-  background: transparent !important;
+  background: white !important;
   padding: 0 !important;
   margin: 0 !important;
 }

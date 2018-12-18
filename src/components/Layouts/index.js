@@ -1,16 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql, Link } from 'gatsby';
 import classnames from 'classnames';
-import SideNav from '../SideNav';
-import SideNavToggleBtn from '../SideNavToggleBtn';
+import GlobalSearch from '../GlobalSearch';
 import Footer from '../Footer';
+import LeftNav from '../LeftNav';
 import favicon32 from '../../content/global/images/favicon-32.png';
+import {
+  Header,
+  HeaderMenuButton,
+  HeaderName,
+  SkipToContent,
+  HeaderGlobalBar,
+  HeaderGlobalAction,
+} from 'carbon-components-react/lib/components/UIShell';
+import { AppSwitcher20, Menu32 } from '@carbon/icons-react';
+import { WebsiteFooter } from '@carbon/addons-website';
 
 import '../../styles/index.scss';
 import '../../styles/experimental.scss';
-//import '../../styles/halloween-components.scss';
 
 class Layout extends React.Component {
   static propTypes = {
@@ -18,7 +27,7 @@ class Layout extends React.Component {
   };
 
   state = {
-    isOpen: true,
+    isOpen: false,
     isFinal: false,
   };
 
@@ -58,7 +67,7 @@ class Layout extends React.Component {
     ) {
       isTarget = true;
     }
-    const isSmallerScreen = window.innerWidth < 1024 || screen.width < 1024;
+    const isSmallerScreen = window.innerWidth < 1056 || screen.width < 1056;
     if (!isTarget && isSmallerScreen) {
       this.setState({
         isOpen: false,
@@ -76,7 +85,7 @@ class Layout extends React.Component {
     if (typeof window !== 'undefined') {
       const width = window.innerWidth;
 
-      if (width < 1024) {
+      if (width < 1056) {
         this.setState({
           isOpen: false,
         });
@@ -96,9 +105,9 @@ class Layout extends React.Component {
     const { GATSBY_CARBON_ENV } = process.env;
     const isInternal = GATSBY_CARBON_ENV == 'internal';
     const { children } = this.props;
-    const classNames = classnames('container', {
-      'container--expanded': !this.state.isOpen,
-    });
+    const version = Packages.dependencies['carbon-components'];
+    const reactVersion = Packages.dependencies['carbon-components-react'];
+    const currentYear = new Date().getFullYear();
 
     return (
       <StaticQuery
@@ -115,7 +124,11 @@ class Layout extends React.Component {
         render={data => (
           <>
             <Helmet
-              title={isInternal ? data.site.siteMetadata.titleInternal : data.site.siteMetadata.title}
+              title={
+                isInternal
+                  ? data.site.siteMetadata.titleInternal
+                  : data.site.siteMetadata.title
+              }
               meta={[
                 {
                   name: 'description',
@@ -137,19 +150,45 @@ class Layout extends React.Component {
               ]}>
               <html lang="en" />
             </Helmet>
-            <SideNavToggleBtn
-              onToggleBtnClick={this.onToggleBtnClick}
-              isOpen={this.state.isOpen}
-            />
-            <SideNav
+            <Header aria-label="Header">
+              <SkipToContent />
+              <HeaderMenuButton
+                aria-label="Open menu"
+                onClick={this.onToggleBtnClick}
+              />
+              {isInternal ? (
+                <HeaderName prefix="IBM" to="/" element={Link} href="/">
+                  Product Design
+                </HeaderName>
+              ) : (
+                <HeaderName prefix="" to="/" element={Link}>
+                  Carbon Design System
+                </HeaderName>
+              )}
+
+              {/*<HeaderGlobalBar>
+                {isInternal ? null : <GlobalSearch />}
+                {/*<HeaderGlobalAction
+                  aria-label="Switch">
+                  <AppSwitcher20 />
+                </HeaderGlobalAction>
+              </HeaderGlobalBar>
+              */}
+            </Header>
+            <LeftNav
               isFinal={this.state.isFinal}
               isOpen={this.state.isOpen}
               location={this.props.location}
               clickToClose={this.clickToClose}
             />
-            <div className={classNames}>
+
+            <div className="container">
               {children}
-              <Footer isExpanded={this.state.isOpen} />
+              <Footer />
+              <WebsiteFooter logoOffset={true} linksCol1={[{href: '/contributing/designers',linkText: 'Contribute'}, {href: 'https://www.ibm.com/privacy',linkText: 'Privacy'}, {href: 'https://www.ibm.com/legal',linkText: 'Terms of Use'},{href: 'https://www.ibm.com',linkText: 'IBM.com'}]} linksCol2={[ {href: 'https://dribbble.com/_carbondesign',linkText: 'Dribble'},{href: 'https://medium.com/@_carbondesign',linkText: 'Medium'}, {href: 'https://twitter.com/_carbondesign',linkText: 'Twitter'}]}>
+                <p>Have questions? Email us or open an issue in <a href="#">GitHub.</a></p>
+                <p>Last updated {data.site.siteMetadata.lastUpdated}<br/>Copyright © {currentYear} IBM</p>
+              </WebsiteFooter>
             </div>
           </>
         )}

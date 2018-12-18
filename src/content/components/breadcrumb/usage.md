@@ -1,25 +1,24 @@
 ---
-label: Component
+
 title: Breadcrumb
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
-## Usage
+## Intro
 
-Breadcrumbs enable users to quickly see their location within a path of navigation and move up to a parent level if desired. Each tier of the Breadcrumb should be clickable.
+The _breadcrumb_ component (aka, breadcrumb trail) is a secondary navigation pattern that shows heirarchy among content or traces a user's path. Breadcrumbs enable users to move quickly up to a parent level or previous step. All links in a breadcrumb should be clickable.
 
-## Best practices
+Breadcrumbs are very effective in products and experiences that have a large amount of content organized in a heirarchy of more than two levels. They are also highly effective in flows that contain multiple steps, operating in a similar way to a progress indicator. Breadcrumbs are always treated as secondary and should never entirely replace the primary navigation.
 
-- Breadcrumbs should not replace primary navigation.
-- You can have one Breadcrumb to show that the user is one-level deep.
-- In this case, the clicking the single, stand-alone Breadcrumb would act as a Back button to lead the user to the previous screen.
-- Place Breadcrumbs near the top of the page.
-- Show hierarchy, not history.
-- Keep Breadcrumb titles short but descriptive.
-- Do not use a Breadcrumb if you are taking users through a multi-step process (use a [Progress Indicator](/components/progress-indicator) for this.)
+Breadcrumbs' space-efficient design and high utility make them an easy choice for most designers.
 
-## Multiple tiers
+## Types of breadcrumbs
 
-If there are more than three levels, the home level and the last two levels are visible, with all middle levels being collapsed into ellipses and accessible from a dropdown. For styling of the Dropdown, refer to the [Overflow Menu](/components/overflow-menu).
+### Location-based
+These illustrate the site's heirarchy and show the user where they are within that heirarchy.
 
-![multiple tiers of breadcrumb](images/breadcrumb-usage-1.png)
+### Path-based
+These show the actual steps the user took to get to the current page, rather than reflecting the site's information architecture. Path-based breadcrumbs are always dynamically generated.
+
+
+

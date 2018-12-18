@@ -1,14 +1,17 @@
 ---
-label: Experimental
+
 title: UI Shell
 tabs: ['Code', 'Usage']
 ---
 
+<hr/>
+
 <component 
-    name="UI Shell"
+    name="Experimental UI Shell"
     component="ui-shell"
     variation="ui-shell" 
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 

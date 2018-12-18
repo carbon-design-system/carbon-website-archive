@@ -1,33 +1,36 @@
 .page-table,
-.component-docs table,
-.typography-table table,
-.type-styles-table table {
-  width: 100%;
-  max-width: 38rem;
-  margin-top: 1rem;
+.component-docs table {
   margin-bottom: 1.5rem;
   line-height: 1.25;
 
+  @include breakpoint('sm') {
+    width: calc(100%);
+  }
+
+  @include breakpoint('md') {
+    width: auto;
+    min-width: calc(67.3%);
+  }
+
   thead {
     th {
-      @include typescale('zeta');
-      font-weight: 600;
+      @include type-style('heading-01');
+      color: $text-01;
+      padding: $spacing-md;
       text-align: left;
-      line-height: 1.25;
-      padding: 1rem 3rem 1rem 0;
-      border-bottom: 2px solid $brand-01;
       white-space: nowrap;
+      background: $ibm-colors__white;
     }
   }
 
   tbody {
     tr {
-      border-bottom: 1px solid $ui-04;
+      border-bottom: 1px solid $ui-03;
 
       td {
-        @include typescale('zeta');
-        padding: 1rem 3rem 1rem 0;
-        line-height: 1.25;
+        @include type-style('body-short-01');
+        color: $text-01;
+        padding: $spacing-md;
 
         img[src$='checkmark--glyph.svg'] {
           width: 16px;
@@ -36,16 +39,7 @@
         }
 
         strong {
-          letter-spacing: 0;
-        }
-
-        &:first-child {
-          font-weight: 600;
-          white-space: nowrap;
-
-          @media all and (max-width: 550px) {
-            white-space: normal;
-          }
+          font-weight: font-weight('semibold');
         }
       }
     }

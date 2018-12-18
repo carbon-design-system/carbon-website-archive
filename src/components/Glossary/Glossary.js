@@ -8,7 +8,11 @@ class Glossary extends Component {
     return (
       <div className="glossary">
         <GlossaryNav />
-        <GlossaryList glossary={glossary} />
+        <div className="ibm--row">
+          <div className="ibm--col-lg-7 ibm--offset-lg-4">
+            <GlossaryList glossary={glossary} />
+          </div>
+        </div>
       </div>
     );
   }

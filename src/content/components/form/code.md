@@ -1,19 +1,15 @@
 ---
-label: Component
 title: Form
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
-<page-intro>**Forms** are used for submitting data.</page-intro>
+**Forms** are used for submitting data.
 
 <component 
     name="Form"
     component="form" 
     variation="form"
-    codepen="pdWorZ"
-    hasReactVersion="true"
-    hasAngularVersion="true"
-    haslightversion="true"
+    experimental="true"
     >
 </component>
 <component-docs component="form"></component-docs>

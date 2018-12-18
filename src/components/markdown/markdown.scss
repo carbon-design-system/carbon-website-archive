@@ -1,24 +1,4 @@
 //----------------------------
-// PageIntro
-//----------------------------
-
-.page-intro {
-  display: block;
-  max-width: 38rem;
-  color: $text-01;
-  word-wrap: break-word;
-  font-size: 1.125rem;
-  line-height: 1.5;
-  font-weight: 600;
-  padding-bottom: 1rem;
-  letter-spacing: 0;
-}
-
-.page-intro > strong {
-  color: $brand-01;
-}
-
-//----------------------------
 // PageIcon
 //----------------------------
 
@@ -27,16 +7,20 @@
 }
 
 //----------------------------
-// Flex Group
+// Flex
 //----------------------------
-
-.page-flex-group {
-  display: flex;
-  flex-wrap: wrap;
+.container .flex-wrap {
+  @include breakpoint('md') {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.page-flex-group + .page-flex-group {
-  border-top: 2px solid $ui-04;
+//----------------------------
+// Bleed
+//----------------------------
+.container .ibm--col-bleed {
+  padding: 0;
 }
 
 //----------------------------
@@ -44,42 +28,27 @@
 //----------------------------
 
 .page-h2,
-.page-content > div > h2,
-.component-docs h2 {
-  @include typescale('beta');
+.component-docs h2,
+.icon-h2 {
+  @include type-style('productive-heading-04');
   position: relative;
   color: $text-01;
-  margin-top: 6rem;
-  font-weight: 300;
-  padding: $spacing-md 0 3rem;
-
-  &:before {
-    content: '';
-    width: 5rem;
-    height: 0.3rem;
-    display: block;
-    background-color: $brand-01;
-    position: absolute;
-    top: -0.5rem;
-    left: 0;
-  }
-
-  div &:first-child {
-    margin-top: 0;
-  }
+  margin-top: rem(56px);
+  margin-bottom: $spacing-lg;
+  position: relative;
 }
-
+ 
 //----------------------------
 // h3
 //----------------------------
 
-.page-content > div > h3,
+.page-h3,
 .component-docs h3 {
-  @include typescale('delta');
-  color: $brand-01;
-  padding: 4rem 0 1rem;
-  font-weight: 600;
-  letter-spacing: 0;
+  @include type-style('heading-03');
+  color: $text-01;
+  margin-top: rem(24px);
+  margin-bottom: $spacing-md;
+  position: relative;
 }
 
 //----------------------------
@@ -88,29 +57,87 @@
 
 .page-h4,
 .component-docs h4 {
+  @include type-style('heading-02');
   color: $text-01;
-  padding: 2rem 0 1rem;
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.25;
+  margin-top: rem(8px);
+  margin-bottom: rem(8px);
+  position: relative;
+}
+
+// Targets heading elements when they are the first element on a page to remove top margin
+.page-content > div > .ibm--row:first-child {
+  .page-h4,
+  .component-docs h4,
+  .page-h3,
+  .component-docs h3,
+  .page-h2,
+  .component-docs h2 {
+    margin-top: 0;
+  }
 }
 
 //----------------------------
-// ul
+// h5
+//----------------------------
+
+.page-h5,
+.component-docs h5 {
+  position: relative;
+}
+
+//----------------------------
+// Anchor Link
+//----------------------------
+h2, h3, h4, h5 {
+  // This makes sure there is breathing room when 
+  // you jump to the heading anchor link
+  &:before {
+    display: block; 
+    content: " "; 
+    margin-top: rem(-56px); 
+    height: rem(56px); 
+    visibility: hidden; 
+    pointer-events: none;
+  }
+
+  .anchor-link {
+    position: absolute;
+    left: rem(-24px);
+    opacity: 0;
+  }
+  
+  .anchor-link__icon {
+    fill: $ibm-colors__blue--50;
+  }
+
+  &:hover .anchor-link {
+    opacity: 1;
+  }
+}
+
+
+//----------------------------
+// ul / ol
 //----------------------------
 
 .page-ul,
 .page-ol {
   @include typescale('epsilon');
-  margin: 1rem 0 1rem 1.5rem;
+  margin: 0 0 $spacing-lg $spacing-lg;
   line-height: 1.75;
-  max-width: 38rem;
+  position: relative;
 }
 
 .page-ul > li {
   font-weight: 400;
   padding-left: 0.25rem;
-  list-style-type: disc;
+  list-style-type: none;
+
+  &:before {
+    content: "\2013";
+    position: absolute;
+    left: -1rem;
+  }
 }
 
 .page-ol > li {
@@ -118,6 +145,76 @@
   padding-left: 0.25rem;
   list-style-type: decimal;
 }
+
+// The following is a css hack because remark is nesting 
+// tags inside of lists and causing double grid code
+.container .page-ol,
+.container .page-ul {
+  .ibm--row {
+    margin: 0;
+    width: 100%;
+  }
+
+  .ibm--offset-lg-4 {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .ibm--col-lg-7,
+  .ibm--col-lg-8,
+  .ibm--col-lg-12 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+//----------------------------
+// Anchor Link
+//----------------------------
+
+.page-content > div > .anchor-links:first-child .page-ul {
+  margin-top: 0;
+}
+
+.anchor-links {
+  .page-ul {
+    margin-bottom: 2.25rem;
+    margin-top: rem(72px);
+    position: relative;
+  }
+
+  .page-ul > li {
+    @include type-style('heading-03');
+    list-style: none;
+    cursor: pointer;
+    padding-bottom: $spacing-xs;
+
+    &:before {
+      content: "\21B3"; //"↳"
+      position: absolute;
+      left: -1.5rem;
+      cursor: pointer;
+    }
+
+    a {
+      @include type-style('heading-03');
+      color: $ibm-colors__gray--90;
+      text-decoration: none;
+    }
+
+    &:hover {
+      a,
+      &:before {
+        color: $ibm-colors__blue--60;
+      }
+    }
+  }
+}
+
 
 //----------------------------
 // Image
@@ -127,31 +224,13 @@
   max-width: 100%;
 }
 
-// Adds background color to component page images. Adds to all images on compponent pages for now
-.page-content--component .gatsby-resp-image-wrapper {
-  background: $ui-02;
-}
-
 .gatsby-resp-image-background-image {
   background: transparent !important; // Need important to override inline style added by gatsby-remark-images
 }
 
-.page-content--component .gatsby-resp-image-image {
+.container--component .gatsby-resp-image-image {
   box-shadow: none !important; // Need important to override inline style added by gatsby-remark-images
   border: none !important;
-}
-
-//----------------------------
-// Inline image
-//----------------------------
-
-blockquote .gatsby-resp-image-wrapper,
-blockquote p img {
-  width: 5.2rem;
-  height: auto;
-  margin: 1.2rem 0 0 0;
-  padding: 0 1.2rem 1.2rem 0;
-  float: left;
 }
 
 //----------------------------
@@ -162,7 +241,7 @@ blockquote p img {
   margin: 1.75rem 0 0;
   line-height: 1.75;
   width: 100%;
-  max-width: 38rem;
+  //max-width: 38rem;
 }
 
 //----------------------------

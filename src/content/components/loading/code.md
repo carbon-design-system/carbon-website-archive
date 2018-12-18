@@ -1,27 +1,23 @@
 ---
-label: Component
+
 title: Loading
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
-<page-intro>**Loading** spinners are used when retrieving data or performing slow computations, and help to notify users that loading is underway.</page-intro>
+**Loading** spinners are used when retrieving data or performing slow computations, and help to notify users that loading is underway.
 
 <component 
     name="Loading"
     component="loading" 
     variation="loading"
-    codepen="XzebrR"
-    hasAngularVersion="true"
-    hasReactVersion="true"
+    experimental="true"
     >
 </component>
 <component 
-    name="Loading"
+    name=" Experimental Loading"
     component="loading" 
     variation="loading--small"
-    codepen="Xzebbg"
-    hasAngularVersion="true"
-    hasReactVersion="true"
+    experimental="true"
     >
 </component>
-<component-docs component="loading"></component-docs>
+<component-docs component="loading" experimental="true"></component-docs>

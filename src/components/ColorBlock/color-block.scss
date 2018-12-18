@@ -1,6 +1,6 @@
 .color-block {
   position: relative;
-  font-size: 0.875rem;
+  @include type-style('body-short-01');
 }
 
 .color-block__color {

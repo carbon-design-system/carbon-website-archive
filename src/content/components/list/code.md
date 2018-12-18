@@ -1,17 +1,16 @@
 ---
-label: Component
+
 title: List
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
-<page-intro>**Lists** consist of related content grouped together and organized vertically.</page-intro>
+**Lists** consist of related content grouped together and organized vertically.
 
 <component 
     name="Ordered List"
     component="list" 
     variation="list--ordered"
-    codepen="MOEWEP"
-    hasReactVersion="true"
+    experimental="true"
     >
 </component>
 
@@ -19,8 +18,7 @@ tabs: ['Code', 'Usage', 'Style']
     name="Unordered List"
     component="list" 
     variation="list"
-    codepen="JOrjOj"
-    hasReactVersion="true"
+    experimental="true"
     >
 </component>
-<component-docs component="list"></component-docs>
+<component-docs component="list" experimental="true"></component-docs>

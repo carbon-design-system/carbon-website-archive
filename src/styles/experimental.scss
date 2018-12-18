@@ -10,28 +10,12 @@ $feature-flags: (
 
 ); // Dummy value so `global-variable-exists()` check in `@feature-flag-enabled` work
 
-.carbon-demo-experimental {
+.carbon-demo-v9 {
   $prefix: 'demo';
   $imported-modules-local: ();
   $feature-flags: (
-    components-x: true,
-    ui-shell: true,
+    components-x: false,
+    ui-shell: false,
   );
   @import 'carbon-components/src/globals/scss/styles';
-}
-
-.iconography--experimental .icon-container {
-  width: 100%;
-}
-
-.iconography--experimental .icon-size {
-  margin-top: 4rem;
-}
-
-.iconography--experimental .icon__card-title,
-.iconography--experimental .icon__card-details {
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }

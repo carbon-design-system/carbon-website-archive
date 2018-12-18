@@ -1,6 +1,22 @@
 # Deployments
 
-Update date in Footer.js component
+*Don't forget to update the date in Footer.js component*
+
+## Random (for staging or test links)
+
+```bash
+# Build the internal site
+yarn build:internal
+
+# Or build the external site
+yarn build:external
+
+# Login
+ibmcloud login --sso  -a https://api.stage1.ng.bluemix.net  -o 'carbon@us.ibm.com' -s production
+
+# Deploy to random url
+ibmcloud cf push -f .circleci/manifest.random.yml
+```
 
 ## Internal
 
@@ -41,7 +57,7 @@ npx serve public
 http://localhost:5000
 
 ## Login and push
-ibmcloud login -sso -a https://api.ng.bluemix.net -o carbon-design-system -s production
+ibmcloud login --sso -a https://api.ng.bluemix.net -o carbon-design-system -s production
 
 # Make sure you have blue-green-deploy installed as a plugin for cf
 ibmcloud cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org

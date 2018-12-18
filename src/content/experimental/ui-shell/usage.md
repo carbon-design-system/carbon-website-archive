@@ -1,10 +1,10 @@
 ---
-label: Experimental
+
 title: UI Shell
 tabs: ['Code', 'Usage']
 ---
 
-<page-intro>The UI Shell is the top level in a product's UI. The Shell consists of the primary **header** and **footer**, as well as **header panels** that are used for navigation and global UI services.</page-intro>
+The UI Shell is the top level in a product's UI. The Shell consists of the primary **header** and **footer**, as well as **header panels** that are used for navigation and global UI services.
 
 1.  [UI Shell Zones](#ui-shell-zones)
 -  [UI Shell Components](#ui-shell-components)

@@ -26,14 +26,11 @@
       "color": {
         "title": "Color"
       },
-      "grid": {
-        "title": "Grid"
-      },
       "iconography": {
         "title": "Iconography"
       },
-      "layer": {
-        "title": "Layer"
+      "layout": {
+        "title": "Layout"
       },
       "motion": {
         "title": "Motion"
@@ -74,6 +71,9 @@
       "overview": {
         "title": "Overview"
       },
+      "component-status": {
+        "title": "Component Status"
+      },
       "accordion": {
         "title": "Accordion"
       },
@@ -91,9 +91,6 @@
       },
       "content-switcher": {
         "title": "Content Switcher"
-      },
-      "data-table": {
-        "title": "Data Table"
       },
       "date-picker": {
         "title": "Date Picker"
@@ -119,9 +116,6 @@
       "loading": {
         "title": "Loading"
       },
-      "modal": {
-        "title": "Modal"
-      },
       "notification": {
         "title": "Notification"
       },
@@ -130,9 +124,6 @@
       },
       "overflow-menu": {
         "title": "Overflow Menu"
-      },
-      "pagination": {
-        "title": "Pagination"
       },
       "progress-indicator": {
         "title": "Progress Indicator"
@@ -178,109 +169,10 @@
       "about": {
         "title": "About"
       },
-      "color": {
-        "title": "Color",
-        "internal": true
-      },
-      "layout": {
-        "title": "Layout",
-        "internal": true
-      },
-      "iconography": {
-        "title": "Iconography",
-        "internal": true
-      },
       "ui-shell": {
         "title": "UI Shell"
-      },
-      "accordion": {
-        "title": "Accordion"
-      },
-      "breadcrumb": {
-        "title": "Breadcrumb"
-      },
-      "button": {
-        "title": "Button"
-      },
-      "checkbox": {
-        "title": "Checkbox"
-      },
-      "code-snippet": {
-        "title": "Code Snippet"
-      },
-      "content-switcher": {
-        "title": "Content Switcher"
-      },
-      "date-picker": {
-        "title": "Date Picker"
-      },
-      "dropdown": {
-        "title": "Dropdown"
-      },
-      "file-uploader": {
-        "title": "File Uploader"
-      },
-      "form": {
-        "title": "Form"
-      },
-      "inline-loading": {
-        "title": "Inline Loading"
-      },
-      "link": {
-        "title": "Link"
-      },
-      "list": {
-        "title": "List"
-      },
-      "loading": {
-        "title": "Loading"
-      },
-      "notification": {
-        "title": "Notification"
-      },
-      "number-input": {
-        "title": "Number Input"
-      },
-      "overflow-menu": {
-        "title": "Overflow Menu"
-      },
-      "progress-indicator": {
-        "title": "Progress Indicator"
-      },
-      "radio-button": {
-        "title": "Radio Button"
-      },
-      "select": {
-        "title": "Select"
-      },
-      "slider": {
-        "title": "Slider"
-      },
-      "structured-list": {
-        "title": "Structured List"
-      },
-      "tabs": {
-        "title": "Tabs"
-      },
-      "tag": {
-        "title": "Tag"
-      },
-      "text-input": {
-        "title": "Text Input"
-      },
-      "tile": {
-        "title": "Tile"
-      },
-      "toggle": {
-        "title": "Toggle"
-      },
-      "tooltip": {
-        "title": "Tooltip"
       }
     }
-  },
-  "component-status": {
-    "title": "Component Status"
   },
   "patterns": {
     "title": "Patterns",
@@ -299,32 +191,6 @@
       },
       "overflow-content": {
         "title": "Overflow Content"
-      }
-    }
-  },
-  "data-visualization": {
-    "title": "Data Visualization",
-    "sub-nav": {
-      "overview": {
-        "title": "Overview"
-      },
-      "bar-graph": {
-        "title": "Bar Graph"
-      },
-      "gauge": {
-        "title": "Gauge"
-      },
-      "line-graph": {
-        "title": "Line Graph"
-      },
-      "pie-chart": {
-        "title": "Pie Chart"
-      },
-      "scatter-plot": {
-        "title": "Scatter Plot"
-      },
-      "tooltip": {
-        "title": "Tooltip"
       }
     }
   },
@@ -351,8 +217,11 @@
       "whats-new": {
         "title": "What's New"
       },
-      "design-language": {
-        "title": "Design Language"
+      "release-highlights": {
+        "title": "Release Highlights"
+      },
+      "migrating-to-carbon-x": {
+        "title": "Migrating to Carbon X"
       },
       "roadmap": {
         "title": "Roadmap"

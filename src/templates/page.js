@@ -11,67 +11,74 @@ import PageTabs from '../components/PageTabs';
 import Snippet from '../components/CodeSnippet';
 import PageTable from '../components/PageTable';
 import ClickTile from '../components/ClickableTile';
-import Example from '../components/Example';
+import FeatureTile from '../components/FeatureTile';
+import DoDontExample from '../components/DoDontExample';
 import ColorBlock from '../components/ColorBlock';
 import ColorCard from '../components/ColorCard';
 import IconLibrary from '../components/IconLibrary';
-import IconLibraryExperimental from '../components/IconLibrary/IconLibraryExperimental';
 import TypeScaleTable from '../components/TypeScaleTable';
-import TypeStylesTable from '../components/TypeStylesTable';
-import TypeWeightTable from '../components/TypeWeightTable';
+import TypeWeight from '../components/TypeWeight';
+import TypeSpec from '../components/TypeSpec';
 import ComponentCode from '../components/ComponentCode';
 import ComponentDocs from '../components/ComponentDocs';
 import ComponentStatus from '../components/ComponentStatus';
 import ComponentReact from '../components/ComponentReact';
 import Glossary from '../components/Glossary';
-import MotionExample from '../components/MotionExample';
-import LayerTypes from '../components/LayerTypes';
-import LayerUsage from '../components/LayerUsage';
 import ComponentOverview from '../components/ComponentOverview';
+import NextPrevious from '../components/NextPrevious';
+import GridWrapper from '../components/GridWrapper';
+import BackToTop from '../components/BackToTop';
+import { HomepageFooter, HomepageHeader } from '../components/Homepage/Homepage';
 
 // Custom Markdown
 import {
+  p,
+  h1,
+  h2,
+  h3,
   h4,
+  h5,
   ul,
   ol,
-  PageIntro,
   PageIcon,
-  FlexGroup,
+  AnchorLinks,
 } from '../components/markdown/Markdown';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
+    p: p,
+    h1: h1,
+    h2: h2,
+    h3: h3,
     h4: h4,
+    h5: h5,
     ul: ul,
     ol: ol,
     pre: Snippet,
     table: PageTable,
-    'page-intro': PageIntro,
+    'grid-wrapper': GridWrapper,
     icon: PageIcon,
-    'flex-group': FlexGroup,
     'clickable-tile': ClickTile,
-    example: Example,
+    'feature-tile': FeatureTile,
+    'do-dont-example': DoDontExample,
     'color-block': ColorBlock,
     'color-card': ColorCard,
     'icon-library': IconLibrary,
-    'icon-library-experimental': IconLibraryExperimental,
     'type-scale-table': TypeScaleTable,
-    'type-weight-table': TypeWeightTable,
-    'type-styles-table': TypeStylesTable,
+    'type-weight': TypeWeight,
+    'type-spec': TypeSpec,
     component: ComponentCode,
     'component-react': ComponentReact,
     'component-docs': ComponentDocs,
     'component-status': ComponentStatus,
     glossary: Glossary,
-    'motion-example': MotionExample,
-    'layer-types': LayerTypes,
-    'layer-usage': LayerUsage,
     'component-overview': ComponentOverview,
+    'anchor-links': AnchorLinks,
   },
 }).Compiler;
 
-export default ({ data, pageContent }) => {
+export default ({ data }) => {
   const post = data.markdownRemark;
   let currentPage = post.fields.currentPage;
   let slug = post.fields.slug;
@@ -80,10 +87,7 @@ export default ({ data, pageContent }) => {
 
   const { GATSBY_CARBON_ENV } = process.env;
   const isInternal = GATSBY_CARBON_ENV !== 'internal' && internal == true;
-
-  const classNames = classnames('page-content', {
-    'page-content--component': post.frontmatter.label === 'Component',
-  });
+  const homepage = (post.frontmatter.title === 'Homepage') == true;
 
   if (isInternal) {
     return (
@@ -91,17 +95,36 @@ export default ({ data, pageContent }) => {
         <FourOhFour />
       </Layout>
     );
+  } else if (homepage) {
+    return (
+      <Layout>
+        <div className="container--homepage">
+          <HomepageHeader />
+          <main className="page-content ibm--grid" id="maincontent">
+            {renderAst(post.htmlAst)}
+          </main>
+          <HomepageFooter />
+        </div>
+        <BackToTop />
+      </Layout>
+    );
   } else {
     return (
       <Layout>
         <PageHeader
           title={post.frontmatter.title}
-          label={post.frontmatter.label}
+          label={post.frontmatter.label}>
+          {!(tabs === null) && (
+            <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
+          )}
+        </PageHeader>
+        <main className="page-content ibm--grid" id="maincontent">{renderAst(post.htmlAst)}</main>
+        <NextPrevious
+          slug={slug}
+          currentTabs={tabs}
+          currentPage={currentPage}
         />
-        {!(tabs === null) && (
-          <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
-        )}
-        <div className={classNames}> {renderAst(post.htmlAst)}</div>
+        <BackToTop />
       </Layout>
     );
   }

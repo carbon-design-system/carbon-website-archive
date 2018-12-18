@@ -1,24 +1,20 @@
 ---
-label: Component
+
 title: Toggle
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
 ## General guidelines
 
-Toggles are used for binary actions that occur immediately after the user “flips” the Toggle switch. They are commonly used for “On/Off” situations.
-
-<div class="image-component">
-    <img src="images/toggle-usage-1.png" alt="Toggle example" />
-</div>
+Toggles are used for binary actions that occur immediately after the user “flips” the toggle switch. They are commonly used for “on/off” switches.
 
 ### Heading
 
-A heading may accompany a Toggle to further clarify on the action the Toggle will perform.
+A heading may accompany a toggle to further clarify on the action the toggle will perform.
 
 ### Labels
 
-Use labels with a Toggle so the action is clear. Labels should be three words or less and appear on both sides of a Toggle.
+Use labels with a toggle so the action is clear. Labels should be three words or less and appear on the side of a toggle.
 
 ### Language
 
@@ -26,6 +22,4 @@ Use adjectives rather than verbs to describe labels and the state of the object 
 
 ## Small toggle
 
-Small toggles are more compact in size, therefore they can be used in use cases such as [Data Tables](/components/data-table/code).
-
-![small toggle in a data table](images/toggle-usage-2.png)
+Small toggles are more compact in size, therefore they can be used in use cases such as [data tables](/components/data-table/code).

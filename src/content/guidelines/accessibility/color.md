@@ -1,10 +1,10 @@
 ---
-label: Guidelines
+label: IBM firmly believes that web and software experiences should be accessible for everyone, regardless of abilities or impairments. 
 title: Accessibility
 tabs: ['Overview', 'Color', 'Keyboard', 'Developers']
 ---
 
-<page-intro>IBM is committed to serving all users, regardless of visual ability.</page-intro>
+IBM is committed to serving all users, regardless of visual ability.
 
 ## Introduction
 

@@ -1,18 +1,16 @@
 ---
-label: Component
+
 title: Slider
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage']
 ---
 
-<page-intro>**Sliders** provide a visual indication of adjustable content, where the user can move the handle along a horizontal track to increase or decrease the value.</page-intro>
+**Sliders** provide a visual indication of adjustable content, where the user can move the handle along a horizontal track to increase or decrease the value.
 
 <component 
     name="Slider"
     component="slider" 
     variation="slider"
-    codepen="dZVoBx"
-    haslightversion="true"
-    hasReactVersion="true"
+    experimental="true"
     >
 </component>
-<component-docs component="slider"></component-docs>
+<component-docs component="slider" experimental="true"></component-docs>

@@ -20,7 +20,8 @@ $temp-text: $color__blue-90;
 }
 
 .code-example__copy-btn {
-  height: 2.5rem;
+  height: 2rem;
+  width: 2rem;
   position: absolute;
   top: 0.75rem;
   right: 0.75rem;
@@ -74,7 +75,7 @@ $temp-text: $color__blue-90;
   cursor: pointer;
 
   span {
-    font-size: rem(12px);
+    @include type-style('caption-01');
   }
 
   &--icon {

@@ -16,17 +16,25 @@ body {
   overflow-x: hidden;
   position: relative;
   min-height: 100vh;
-
-  @include breakpoint('840px') {
-    margin-left: rem(256px);
-    width: calc(100% - 256px);
-  }
+  margin-top: rem(48px);
 }
 
-.side-nav + .container--expanded, //Issue #51
-  .container--expanded {
-  width: 100%;
-  margin-left: 0;
+.container .ibm--grid {
+  margin: 0;
+  max-width: rem(1584px);
+}
+
+//---------------------------------------
+// Header styles
+//---------------------------------------
+.bx--header {
+  z-index: 9999;
+}
+
+.bx--header__menu-trigger {
+  @include breakpoint('lg') {
+    display: none;
+  }
 }
 
 //---------------------------------------
@@ -39,40 +47,29 @@ button,
 }
 
 .page-content {
-  padding: 4rem 12.5%;
-  width: 100%;
-  margin-bottom: 7rem;
-
-  @media all and (max-width: 620px) {
-    padding: $spacing-3xl 3%;
-    margin-bottom: 14rem;
-  }
-
-  // The max width of the actual content
-  & > div {
-    max-width: 55rem;
-  }
+  padding-top: rem(64px);
+  padding-bottom: rem(64px);
 
   // All paragraphs on Markdown pages
   // And divs when markdown doesn't wrap text in paragraphs (when you have to use html for links to open in a new window)
   p {
-    max-width: 38rem;
+    //max-width: 38rem;
     line-height: 1.5;
-    padding: 0 0 $spacing-md;
+    padding: 0 0 $spacing-lg;
   }
 
   // All em on Markdown pages after images and image grid
   .gatsby-resp-image-link + em,
   .image-grid + p > em,
   .image-component + p > em {
-    font-size: .875em;
+    @include type-style('body-short-01');
     color: $text-02;
   }
 
   // Images on component pages
   .image-component {
     background: $ui-02;
-    max-width: 38rem;
+    //max-width: 38rem;
     display: flex;
     justify-content: center;
     padding: $spacing-md 0;
@@ -84,23 +81,12 @@ button,
     }
   }
 
-  // No padding when a paragraph is followed by certain elements
-  p + .bx--snippet,
-  p + ul {
-    margin-top: 0;
-  }
-
   // All links on Markdown pages but not inside component examples
   & > div > * > a,
   .page-table td a,
   .page-ul a {
     color: $brand-01;
     font-weight: 600;
-  }
-
-  // No padding between h2 and h3
-  .page-h2 + .page-h3 {
-    padding-top: 0;
   }
 
   // Inline code
@@ -116,7 +102,7 @@ button,
     font-size: inherit;
     border: 1px solid transparent;
     border-radius: 4px;
-    background-color: $field-01;
+    background-color: $ibm-colors__white;
     font-size: 85%;
   }
 
@@ -124,9 +110,12 @@ button,
   hr.divider {
     display: block;
     margin: 3rem 0;
-    max-width: 38rem;
     height: 1px;
     background: $ui-03;
     border: 0px transparent;
   }
+}
+
+.bx--platform-header {
+  z-index: 9999;
 }
