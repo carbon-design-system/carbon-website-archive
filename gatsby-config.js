@@ -8,7 +8,8 @@ module.exports = {
   pathPrefix: PATH_PREFIX,
   siteMetadata: {
     title: 'Carbon Design System',
-    titleInternal: 'IBM Product Design'
+    titleInternal: 'IBM Product Design',
+    lastUpdated: 'December 18, 2018',
   },
   plugins: [
     {
