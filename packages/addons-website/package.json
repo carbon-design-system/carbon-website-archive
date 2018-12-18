@@ -1,5 +1,5 @@
 {
-  "name": "carbon-addons-website",
+  "name": "@carbon/addons-website",
   "version": "0.0.1-alpha.0",
   "license": "Apache-2.0",
   "main": "lib/index.js",
@@ -12,10 +12,14 @@
     "umd"
   ],
   "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "yarn clean && rollup -c",
     "clean": "rimraf es lib umd",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "watch": "yarn clean && rollup -c -w"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",

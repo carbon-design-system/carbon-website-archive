@@ -105,8 +105,8 @@ class Layout extends React.Component {
     const { GATSBY_CARBON_ENV } = process.env;
     const isInternal = GATSBY_CARBON_ENV == 'internal';
     const { children } = this.props;
-    const version = Packages.dependencies['carbon-components'];
-    const reactVersion = Packages.dependencies['carbon-components-react'];
+    // const version = Packages.dependencies['carbon-components'];
+    // const reactVersion = Packages.dependencies['carbon-components-react'];
     const currentYear = new Date().getFullYear();
 
     return (
@@ -185,9 +185,40 @@ class Layout extends React.Component {
             <div className="container">
               {children}
               <Footer />
-              <WebsiteFooter logoOffset={true} linksCol1={[{href: '/contributing/designers',linkText: 'Contribute'}, {href: 'https://www.ibm.com/privacy',linkText: 'Privacy'}, {href: 'https://www.ibm.com/legal',linkText: 'Terms of Use'},{href: 'https://www.ibm.com',linkText: 'IBM.com'}]} linksCol2={[ {href: 'https://dribbble.com/_carbondesign',linkText: 'Dribble'},{href: 'https://medium.com/@_carbondesign',linkText: 'Medium'}, {href: 'https://twitter.com/_carbondesign',linkText: 'Twitter'}]}>
-                <p>Have questions? Email us or open an issue in <a href="#">GitHub.</a></p>
-                <p>Last updated {data.site.siteMetadata.lastUpdated}<br/>Copyright © {currentYear} IBM</p>
+              <WebsiteFooter
+                logoOffset={true}
+                linksCol1={[
+                  { href: '/contributing/designers', linkText: 'Contribute' },
+                  { href: 'https://www.ibm.com/privacy', linkText: 'Privacy' },
+                  {
+                    href: 'https://www.ibm.com/legal',
+                    linkText: 'Terms of Use',
+                  },
+                  { href: 'https://www.ibm.com', linkText: 'IBM.com' },
+                ]}
+                linksCol2={[
+                  {
+                    href: 'https://dribbble.com/_carbondesign',
+                    linkText: 'Dribble',
+                  },
+                  {
+                    href: 'https://medium.com/@_carbondesign',
+                    linkText: 'Medium',
+                  },
+                  {
+                    href: 'https://twitter.com/_carbondesign',
+                    linkText: 'Twitter',
+                  },
+                ]}>
+                <p>
+                  Have questions? Email us or open an issue in{' '}
+                  <a href="#">GitHub.</a>
+                </p>
+                <p>
+                  Last updated {data.site.siteMetadata.lastUpdated}
+                  <br />
+                  Copyright © {currentYear} IBM
+                </p>
               </WebsiteFooter>
             </div>
           </>
