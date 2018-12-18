@@ -34,6 +34,7 @@
     "deploy:external": "yarn build:external && cd public && surge"
   },
   "dependencies": {
+    "@carbon/addons-website": "^0.0.1-alpha.0",
     "@carbon/colors": "alpha",
     "@carbon/grid": "alpha",
     "@carbon/icons-react": "alpha",

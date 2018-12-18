@@ -24,7 +24,7 @@
 
 ## Pre-release
 
-5. Run `./tasks/publish.sh prerelease --exact --preid alpha --force-publish=* --npm-tag alpha`
+5. Run `./tasks/publish.sh prerelease --exact --preid alpha --force-publish='*' --npm-tag alpha`
 6. Confirm package changes
 
 ## Conventional commits
