@@ -244,6 +244,9 @@
       "overflow-menu": {
         "title": "Overflow Menu"
       },
+      "pagination": {
+        "title": "Pagination"
+      },
       "progress-indicator": {
         "title": "Progress Indicator"
       },

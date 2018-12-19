@@ -3469,10 +3469,9 @@ carbon-components-react@6.52.1:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@^9.58.2:
-  version "9.58.2"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.58.2.tgz#298dc5e479e755d425f749b56f4c3bc05674baa9"
-  integrity sha512-tNT+EffdKShBgYm7hZl+PYZo0tE7ABEvhQrZfG7qygT6YxnsOomtiEIr1T97HOpMHZ+O/3JSiqyQo9Yv8dScEw==
+carbon-components@^9.62.2:
+  version "9.62.2"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.62.2.tgz#e49fc41bf76032ff06f03c2dc5455b24ade51a1c"
   dependencies:
     carbon-icons "^7.0.7"
     flatpickr "4.5.2"
