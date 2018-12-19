@@ -1,7 +1,7 @@
 /* eslint-disable */
 module.exports = {
   A: {
-    'Common Actions': {
+    'Common actions': {
       Add: {
         desc:
           'Adds an existing object to a list, container, or system (for example, adding a document to a folder).',
@@ -34,7 +34,7 @@ module.exports = {
     },
   },
   B: {
-    'Common Actions': {
+    'Common actions': {
       Back: {
         desc:
           'Returns the user to the previous step in a sequence of steps, such as in a wizard.',
@@ -64,7 +64,7 @@ module.exports = {
     },
   },
   C: {
-    'Common Actions': {
+    'Common actions': {
       Cancel: {
         desc: 'Stops the current action and closes the dialog.',
         subtext:
@@ -122,7 +122,7 @@ module.exports = {
     },
   },
   D: {
-    'Common Actions': {
+    'Common actions': {
       Delete: {
         desc: 'Destroys an existing object.',
         subtext:
@@ -166,7 +166,7 @@ module.exports = {
     },
   },
   E: {
-    'Common Actions': {
+    'Common actions': {
       Edit: {
         desc: 'Allows data or values to be changed.',
       },
@@ -183,7 +183,7 @@ module.exports = {
     },
   },
   F: {
-    'Common Actions': {
+    'Common actions': {
       Filter: {
         desc: 'Shortens a list to objects that match the filter criteria.',
         subtext: 'Contrast with [Find](#find) and [Search](#search).',
@@ -207,7 +207,7 @@ module.exports = {
     },
   },
   G: {
-    'Common Actions': {
+    'Common actions': {
       'Get help': {
         desc:
           'Opens a search field from which the user can search for help information.',
@@ -224,7 +224,7 @@ module.exports = {
     },
   },
   H: {
-    'Common Actions': {
+    'Common actions': {
       Hide: {
         desc: 'Removes an element that was previously shown.',
         subtext: 'Context: Hide descriptions. See [Show](#show).',
@@ -251,7 +251,7 @@ module.exports = {
     },
   },
   I: {
-    'Common Actions': {
+    'Common actions': {
       Import: {
         desc:
           'Transforms data or objects from an external source. Typically opens a secondary window for the user to locate the external source.',
@@ -272,7 +272,7 @@ module.exports = {
     },
   },
   L: {
-    'Common Actions': {
+    'Common actions': {
       Launch: {
         desc: 'Do not use.',
         subtext: 'Use [Start](#start).',
@@ -302,7 +302,7 @@ module.exports = {
     },
   },
   M: {
-    'Common Actions': {
+    'Common actions': {
       Move: {
         desc:
           'Transfers an object from one container (for example, folder, activity, or page) to another.',
@@ -328,7 +328,7 @@ module.exports = {
     },
   },
   N: {
-    'Common Actions': {
+    'Common actions': {
       New: {
         desc:
           'Starts the creation of a new object. New either creates the object immediately or opens a dialog or set of fields where the user can enter properties.',
@@ -349,7 +349,7 @@ module.exports = {
     },
   },
   O: {
-    'Common Actions': {
+    'Common actions': {
       OK: {
         desc: 'Completes the current task.',
         subtext:
@@ -383,7 +383,7 @@ module.exports = {
     },
   },
   P: {
-    'Common Actions': {
+    'Common actions': {
       Play: {
         desc: 'Starts audio, video, or an animation.',
       },
@@ -404,7 +404,7 @@ module.exports = {
     },
   },
   R: {
-    'Common Actions': {
+    'Common actions': {
       Redo: {
         desc: 'Redoes an undo action.',
         subtext:
@@ -462,7 +462,7 @@ module.exports = {
     },
   },
   S: {
-    'Common Actions': {
+    'Common actions': {
       Save: {
         desc:
           'Saves pending modifications made to a file or document. Does not close the window or panel.',
@@ -541,7 +541,7 @@ module.exports = {
     },
   },
   T: {
-    'Common Actions': {
+    'Common actions': {
       Top: {
         desc: 'Returns to the top of the page.',
         subtext: 'Use instead of Back to top.',
@@ -560,7 +560,7 @@ module.exports = {
     },
   },
   U: {
-    'Common Actions': {
+    'Common actions': {
       Undo: {
         desc:
           'Reverts to the state before the most recent changes made by the user. Repeated use successively reverts to prior states in reverse chronological order. Applies to changes in data and not to changes made to the view.',
@@ -585,7 +585,7 @@ module.exports = {
     },
   },
   V: {
-    'Common Actions': {
+    'Common actions': {
       'View details': {
         desc: 'Presents additional information or properties for the object.',
       },

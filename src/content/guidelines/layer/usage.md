@@ -9,11 +9,11 @@ tabs: ['Overview', 'Usage']
 | Layer             | Components                                                |
 | ----------------- | --------------------------------------------------------- |
 | **Base**          | Detail page header without tabs                           |
-| **Flat**          | Interior left nav, Detail page header with tabs, Tables   |
-| **Raised**        | Modules, Cards                                            |
+| **Flat**          | Interior left nav, detail page header with tabs, tables   |
+| **Raised**        | Modules, cards                                            |
 | **Overlay**       | Overflow menu, dropdowns, tooltips                        |
-| **Sticky Nav**    | Global header (on scroll), Detail page header (on scroll) |
-| **Temporary Nav** | Global left nav                                           |
+| **Sticky nav**    | Global header (on scroll), detail page header (on scroll) |
+| **Temporary nav** | Global left nav                                           |
 | **Pop-out**       | Modals                                                    |
 
 <layer-usage></layer-usage>
@@ -32,6 +32,6 @@ To use in code, just include the layer mixin like so with the appropriate layer 
 | **Flat**          | `@include layer('flat')`          |
 | **Raised**        | `@include layer('raised')`        |
 | **Overlay**       | `@include layer('overlay')`       |
-| **Sticky Nav**    | `@include layer('global-header')` |
-| **Temporary Nav** | `@include layer('left-nav')`      |
+| **Sticky nav**    | `@include layer('global-header')` |
+| **Temporary nav** | `@include layer('left-nav')`      |
 | **Pop-out**       | `@include layer('pop-out')`       |

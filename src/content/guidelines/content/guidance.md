@@ -53,7 +53,7 @@ Only use headline-style capitalization for table/grid column headers and product
 - coordinating conjunctions
 - prepositions, except as the first or last word
 
-## Do's & Dont's
+## Do's & dont's
 
 These guidelines apply for developers and writers working with IBM Cloud UI and documentation.
 
@@ -77,8 +77,8 @@ If you need to use past or future tense, avoid verb tenses with the words have, 
 To convey a more natural tone, use active voice. People tend to speak in active voice unless they have a reason not to. For example, a good reason to use passive voice is to avoid sounding judgmental or blaming the user. Consider how a statement like, “You entered the wrong value,” which is active voice, might not be a well received error message.
 
 <flex-group>
-    <example correct=true title="Active Voice" text='"In the Limits window, specify the minimum and maximum values."'></example>
-    <example title='Passive Voice' text='"The Limits window is used to specify the minimum and maximum values."'></example>
+    <example correct=true title="Active voice" text='"In the Limits window, specify the minimum and maximum values."'></example>
+    <example title='Passive voice' text='"The Limits window is used to specify the minimum and maximum values."'></example>
 </flex-group>
 
 ### Do use second person
@@ -95,15 +95,15 @@ One exception to this is in the case of possessive adjectives in the UI. You can
 - Use exclamation marks only positively, not negatively. Make sure you use no more than one exclamation mark in a context, such as a single window or a single Docs topic.
 
 <flex-group>
-    <example correct=true title="Exclamation Points" text='"Your IBM Bluemix account is ready!"'></example>
-    <example title='Exclamation Points' text='"You have reached your usage limit!"'></example>
+    <example correct=true title="Exclamation points" text='"Your IBM Bluemix account is ready!"'></example>
+    <example title='Exclamation points' text='"You have reached your usage limit!"'></example>
 </flex-group>
 
 ### Don't be overly mannerly
 
 Terms of politeness are superfluous, convey the wrong tone for technical material, and are not regarded the same way in all cultures.
 
-<example correct=true title="Using Please" text='"Indexing might take a few minutes. Please wait."'></example>
+<example correct=true title="Using please" text='"Indexing might take a few minutes. Please wait."'></example>
 
 Use **please** in a UI only when the user is being inconvenienced.
 

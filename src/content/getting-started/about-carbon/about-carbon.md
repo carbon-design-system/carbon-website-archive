@@ -1,5 +1,5 @@
 ---
-label: Getting Started
+label: Getting started
 title: About Carbon
 ---
 
