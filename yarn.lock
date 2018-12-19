@@ -694,11 +694,22 @@
   version "0.0.1-alpha.12"
   resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-0.0.1-alpha.12.tgz#27f1449ff8e503e42e478ca567dfa6a6b453debe"
 
-"@carbon/icons-react@^0.0.1-alpha.12", "@carbon/icons-react@^0.0.1-alpha.2":
+"@carbon/icon-helpers@0.0.1-alpha.26":
+  version "0.0.1-alpha.26"
+  resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-0.0.1-alpha.26.tgz#0cb7574cce3e51b90a5cc31170865141366373b2"
+
+"@carbon/icons-react@^0.0.1-alpha.12":
   version "0.0.1-alpha.12"
   resolved "https://registry.yarnpkg.com/@carbon/icons-react/-/icons-react-0.0.1-alpha.12.tgz#9cdc7846d0862838770c966a7f130953a89887a5"
   dependencies:
     "@carbon/icon-helpers" "0.0.1-alpha.12"
+    prop-types "^15.6.2"
+
+"@carbon/icons-react@^0.0.1-alpha.26":
+  version "0.0.1-alpha.26"
+  resolved "https://registry.yarnpkg.com/@carbon/icons-react/-/icons-react-0.0.1-alpha.26.tgz#b4aa61162d30ee78563832c4903f5022e2cd2e36"
+  dependencies:
+    "@carbon/icon-helpers" "0.0.1-alpha.26"
     prop-types "^15.6.2"
 
 "@emotion/cache@^0.8.8":
@@ -3454,14 +3465,14 @@ capture-stack-trace@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.1.tgz#a6c0bbe1f38f3aa0b92238ecb6ff42c344d4135d"
 
-carbon-components-react@6.52.1:
-  version "6.52.1"
-  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.52.1.tgz#e8c222a0fe30b78d15b7641bae63128359bf8315"
+carbon-components-react@6.62.2:
+  version "6.62.2"
+  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.62.2.tgz#2db3888086779f384ea2a0e168978c07ee79b213"
   dependencies:
-    "@carbon/icons-react" "^0.0.1-alpha.2"
+    "@carbon/icons-react" "^0.0.1-alpha.26"
     classnames "2.2.6"
     downshift "^1.31.14"
-    flatpickr "4.5.1"
+    flatpickr "4.5.2"
     invariant "^2.2.3"
     lodash.debounce "^4.0.8"
     lodash.isequal "^4.5.0"
@@ -6071,10 +6082,6 @@ flat@^4.0.0:
   resolved "https://registry.yarnpkg.com/flat/-/flat-4.1.0.tgz#090bec8b05e39cba309747f1d588f04dbaf98db2"
   dependencies:
     is-buffer "~2.0.3"
-
-flatpickr@4.5.1:
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/flatpickr/-/flatpickr-4.5.1.tgz#f65eaf54c07538f87d6f68a67b03cf816d7fb82f"
 
 flatpickr@4.5.2, flatpickr@^4.5.2:
   version "4.5.2"
