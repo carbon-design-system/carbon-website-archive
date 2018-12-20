@@ -1,7 +1,7 @@
 ---
-label: Getting Started
+label: Getting started
 title: Developers
-tabs: ['Vanilla', 'React', 'Angular', 'Other Frameworks']
+tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
 ---
 
 <page-intro>The **Carbon Components Vanilla Library** provides front-end developers & engineers a collection of reusable HTML and SCSS partials to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.</page-intro>
@@ -20,7 +20,7 @@ If you prefer [Yarn](https://yarnpkg.com/en/), use the following command instead
 $ yarn add carbon-components
 ```
 
-## Getting Started
+## Getting started
 
 ### What's included
 

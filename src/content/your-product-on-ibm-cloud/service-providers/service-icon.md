@@ -1,8 +1,8 @@
 ---
-label: Your Product on IBM Cloud
-title: Service Providers
+label: Your product on IBM Cloud
+title: Service providers
 internal: true
-tabs: ['General', 'Service Icon', 'Design Approval']
+tabs: ['General', 'Service icon', 'Design approval']
 ---
 
 ## Design guidelines

@@ -1,7 +1,7 @@
 ---
-label: Getting Started
+label: Getting started
 title: Developers
-tabs: ['Vanilla', 'React', 'Angular', 'Other Frameworks']
+tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
 ---
 
 <page-intro>The Carbon Design System supports vanilla JS, React and Angular as core parts of the product. But you can still build components even if you're using a different framework.</page-intro>

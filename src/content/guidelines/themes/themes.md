@@ -9,7 +9,7 @@ title: Themes
 
 Developers and designers can use Carbon Themes to modify existing components to fit their own specific visual styles and needs. Rather than changing each individual component's CSS or building modified components from scratch, components can now be easily customized by changing a set of universal variables that seamlessly propagate across all of the components.
 
-<p><a href="http://themes.carbondesignsystem.com/" target="_blank">Explore Themes</a></p>
+<p><a href="http://themes.carbondesignsystem.com/" target="_blank">Explore themes</a></p>
 
 ### Theme terms
 
@@ -26,7 +26,7 @@ The Carbon Design System has a default theme which is based off of the IBM Cloud
 
 The default theme acts as a starting point; from there designers and developers only need to define how their own components and styles deviate from the default. A theme can change all of the values or as little as only one. Those different values are then packaged into a new theme which when called will override the values of the default.
 
-[Carbon Themes repo](https://github.com/carbon-design-system/carbon-themes)
+[Carbon themes repo](https://github.com/carbon-design-system/carbon-themes)
 
 ## Variables
 

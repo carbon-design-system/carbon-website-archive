@@ -371,7 +371,7 @@ class IndexPage extends React.Component {
                   <img src={gettingStartedIll} alt="" />
 
                   <div className="list-item__info">
-                    <span className="list-item__heading">Getting Started</span>
+                    <span className="list-item__heading">Getting started</span>
                     <p>
                       Onboarding for designers and developers who are using
                       the system for the first time.
@@ -418,7 +418,7 @@ class IndexPage extends React.Component {
                   <div className="list-item__info">
                     <span className="list-item__heading">Resources</span>
                     <p>
-                      A helpful list of tools, links and downloads that will
+                      A helpful list of tools, links, and downloads that will
                       improve a user's workflow.
                     </p>
                   </div>
@@ -461,10 +461,10 @@ class IndexPage extends React.Component {
                   </div>
                   <div className="tile__info">
                     <p aria-label="Components on GitHub">
-                      {isInternal ? 'Components' : 'Carbon Components'}
+                      {isInternal ? 'Components' : 'Carbon components'}
                     </p>
                     <p>
-                      The Component Library gives developers a collection of
+                      The component library gives developers a collection of
                       re-usable HTML and Sass partials they can use for building
                       websites and user interfaces.
                     </p>
@@ -482,10 +482,10 @@ class IndexPage extends React.Component {
                   </div>
                   <div className="tile__info">
                     <p aria-label="Components React on GitHub">
-                      {isInternal ? 'React Components' : 'Carbon Components React'}
+                      {isInternal ? 'React components' : 'Carbon React components'}
                     </p>
                     <p>
-                      The Component Library gives developers a collection of
+                      The component library gives developers a collection of
                       re-usable React components they can use for building
                       websites and user interfaces.
                     </p>
@@ -503,10 +503,10 @@ class IndexPage extends React.Component {
                   </div>
                   <div className="tile__info">
                     <p aria-label="Components Angular on GitHub">
-                      {isInternal ? 'Components Angular' : 'Carbon Components Angular'}
+                      {isInternal ? 'Angular components' : 'Carbon Angular components'}
                     </p>
                     <p>
-                      The Component Library gives developers a collection of
+                      The component library gives developers a collection of
                       re-usable Angular components they can use for building
                       websites and user interfaces.
                     </p>
@@ -544,7 +544,7 @@ class IndexPage extends React.Component {
                     <img src={sandboxIcon} alt="" />
                   </div>
                   <div className="tile__info">
-                    <p>Theming Sandbox</p>
+                    <p>Theming sandbox</p>
                     <p>
                       This sandbox allows you to build a custom theme by
                       changing a color variable's hex value and then exporting

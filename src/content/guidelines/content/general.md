@@ -4,7 +4,7 @@ title: Content
 tabs: ['General', 'Guidance', 'Glossary']
 ---
 
-## Voice & Tone
+## Voice and tone
 
 Using the appropriate voice and tone allows us to better connect and resonate with our users. Gone are the days when our users perceive their content experience as complex, distant, or disjointed. We've evolved and we now endorse a style that should feel like a conversation between friends – personal, relatable, clear, helpful, and engaging. Conversational style does not mean sloppy writing. It means creating content in a clear, concise way that anyone can understand. It means genuinely connecting with our users.
 

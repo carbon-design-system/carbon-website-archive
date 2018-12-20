@@ -6,7 +6,7 @@ tabs: ['Design', 'Code']
 
 <page-intro>The **CSS grid structure** utilizes a flexbox-based layout to enable developers to quickly craft layout. Use of our grid classes is not required, but is there to help align and speed the development process with the design specifications of the grid. The grid system is loosely based around the semantics of the Bootstrap grid, so if you're familiar with the technicalities of that grid, this should feel similar.</page-intro>
 
-## Basic Usage
+## Basic usage
 
 ```html
 <div class="bx--grid">

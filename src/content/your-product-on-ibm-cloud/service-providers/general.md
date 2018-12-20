@@ -1,8 +1,8 @@
 ---
-label: Your Product on IBM Cloud
-title: Service Providers
+label: Your product on IBM Cloud
+title: Service providers
 internal: true
-tabs: ['General', 'Service Icon', 'Design Approval']
+tabs: ['General', 'Service icon', 'Design approval']
 ---
 
 ## Introduction
@@ -52,19 +52,19 @@ Review the [service icon guidelines](#) for information on the design, productio
 
 Learn about the IBM Cloud Platform, including how the console works, plugin requirements for microservices, and more [here](https://console.stage1.bluemix.net/docs/developing/console-sdk/global-console.html#bluemix-global-console-overview). Every service should be navigable within the platform and does not launch out to a separate browser tab or window.
 
-#### Service Configuration Page
+#### Service configuration page
 
 A configuration page describes a service to potential customers. It may include but is not limited to the product description, images of the product, and the pricing table. Using Carbon components, create a configuration page that best characterizes your service.
 
 ![Service configuration page](images/sp-config-1.png)
 
-#### Service Dashboard
+#### Service dashboard
 
-Service Dashboards display information and details of an existing instance. Using Carbon components, create a dashboard that works for your service.
+Service dashboards display information and details of an existing instance. Using Carbon components, create a dashboard that works for your service.
 
 ![Service dashboard](images/sp-dashboard-1.png)
 
-#### Common Header
+#### Common header
 
 IBM Cloud and its products share a global header with composable variations. See the [Add-ons](carbondesignsystem.com/add-ons/header/code) library to learn more about its behavior and consume the component.
 
