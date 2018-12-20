@@ -19,15 +19,15 @@ Follow the checklist and instructions below to update your listing and make sure
 5. When changes have been approved, update your listing in the [Global Catalog production environment](https://resource-catalog.ng.bluemix.net/search).
 6. Monitor your analytics on Amplitude to confirm your changes had a positive effect.
 
-### Catalog Listing Checklist
+### Catalog listing checklist
 
 See the below sections for more details on each item.
 
 - Length of all text is correct. Check the following:
-  _ [Offering title](#title)
-  _ [Short description](#short-description)
-  _ [Long description](#long-description)
-  _ [Bullets](#bullets) (number of bullets, title and supporting text length)
+  - [Offering title](#title)
+  - [Short description](#short-description)
+  - [Long description](#long-description)
+  - [Bullets](#bullets) (number of bullets, title and supporting text length)
 - [Icon](#icon) follows service icon guidelines
 - [Media](#media) is up-to-date and brings value & clarity to users (optional)
 - [Pricing](#pricing) is concise and not written in complete sentences
@@ -35,27 +35,27 @@ See the below sections for more details on each item.
 
 ## Contents
 
-1. **[Editorial Guidance](#Editorial-Guidance)**
+1. **[Editorial guidance](#Editorial-Guidance)**
 
-2. **[Catalog Structure](#catalog-structure)**
+2. **[Catalog structure](#catalog-structure)**
 
-3. **[Featured Offerings](#Featured-Offerings)**
+3. **[Featured offerings](#Featured-Offerings)**
 
-4. **[Summary Card](#summary-card)**
+4. **[Summary card](#summary-card)**
 
-5. **[Offering Detail Page](#offering-detail-page)**
+5. **[Offering detail page](#offering-detail-page)**
 
-6. **[Search & Categorization](#Search-&-Categorization)**
+6. **[Search and categorization](#Search-&-Categorization)**
 
-7. **[Usage & Analytics](#usage-&-analytics)**
+7. **[Usage and analytics](#usage-&-analytics)**
 
-## Editorial Guidance
+## Editorial guidance
 
-### Voice & Tone
+### Voice and tone
 
-Reference the [Voice & Tone guidelines](http://design-system.stage1.mybluemix.net/guidelines/content/general) when writing content for the Catalog or anywhere in the IBM Cloud.
+Reference the [Voice and tone guidelines](http://design-system.stage1.mybluemix.net/guidelines/content/general) when writing content for the Catalog or anywhere in the IBM Cloud.
 
-### Catalog Principles
+### Catalog principles
 
 The Catalog is the place users go to discover, evaluate, and create. User testing studies and data have shown that users are more likely to be interested in or purchase an offering if the following best practices are met:
 
@@ -68,9 +68,9 @@ The Catalog is the place users go to discover, evaluate, and create. User testin
 
 To ensure that offerings meet the criteria outlined in these guidelines, the catalog team will be responsible for reviewing any proposed changes to an offering's catalog entry.
 
-For more details, see the [Catalog Governance](https://ibm.ent.box.com/notes/290560698464) document. For any questions, and to get your updates approved, contact Matt Heitzer and Mark Meredith.
+For more details, see the [Catalog governance](https://ibm.ent.box.com/notes/290560698464) document. For any questions, and to get your updates approved, contact Matt Heitzer and Mark Meredith.
 
-## Catalog Structure
+## Catalog structure
 
 The Catalog consists of several pages and content types:
 
@@ -78,7 +78,7 @@ The Catalog consists of several pages and content types:
 
 - An offering detail page, which contains metadata, text and media that describe your offering and configuration fields or page(s), depending on the complexity of your offering's configuration.
 
-## Featured Offerings
+## Featured offerings
 
 Contact Matt Heitzer or Mark Meredith to determine if your offering may be featured. Featured offerings need to be high performing and must meet all of the guidelines outlined in this document.
 
@@ -105,7 +105,7 @@ The featured offering card displays an illustration instead of the service icon.
 ![](images/Featured_offering-WatsonAssistant.png)
 ![](images/Featured_offering-VSI.png)
 
-## Summary Card
+## Summary card
 
 The summary card appears on the main Catalog page and contains a title, short description, icon, and metadata labels/tags. The summary card gives your users a quick overview of your offering and allows them to evaluate whether it meets their needs.
 
@@ -171,9 +171,9 @@ Visible tags:
 - "Use deep learning algorithms to analyze images that can give you insights into your visual content." (_99 characters_)
 - "Analyze text to extract meta-data from content such as concepts, entities, emotion, relations, sentiment, and more." (_114 characters, approaching the max_)
 
-## Offering Detail Page
+## Offering detail page
 
-Once users select an offering, they are taken to the Offering Detail page. This page is where users configure your offering (unless configuration is too complex; see below). It also provides space for more details, as well as metadata, media, and pricing information.
+Once users select an offering, they are taken to the offering detail page. This page is where users configure your offering (unless configuration is too complex; see below). It also provides space for more details, as well as metadata, media, and pricing information.
 
 ![](images/Offering_details-HIG.png)
 
@@ -209,7 +209,7 @@ Remember to follow the best practice of reducing cognitive load. This includes c
 - This configuration option may have multiple steps. Use the [Carbon progress indicator component](http://design-system.stage1.mybluemix.net/components/progress-indicator/code) and your best judgement when implementing steps.
 - Your offering team is responsible for building complex configuration pages using Carbon components as needed, including [order summary](http://v8.carbondesignsystem.com/add-ons/order-summary/code) and [forms](/components/form/code). Please follow the [Carbon grid](/guidelines/grid/design).
 
-### 3. Long Description
+### 3. Long description
 
 **Do**
 
@@ -298,7 +298,7 @@ Optional
 - Images of actual code that pertains to your offering
 - Screenshots of your offering in use if this will help users understand how they might use it
 
-### 6. Pricing Guidance
+### 6. Pricing guidance
 
 **Do**
 
@@ -316,7 +316,7 @@ Optional
 
 ![](images/pricing-example-2.png)
 
-## Search and Categorization
+## Search and categorization
 
 In the Catalog, users can use a combination of searching, browsing, and filtering to identify what they’re looking for. It’s important to configure your offering to show up in the right place so they discover what’s relevant to them.
 
@@ -353,6 +353,6 @@ To add search tags in the Global Catalog UI, type them into the “Tags” secti
 - Cloud Object Storage tagged “S3” and “COS”
 - Any noSQL databases tagged “noSQL”
 
-## Usage & Analytics
+## Usage and analytics
 
 Your offering is automatically instrumented in Amplitude. For a list of what is instrumented and best practices, see the [Platform Analytics Documentation](https://pages.github.ibm.com/Bluemix/platform-analytics/).

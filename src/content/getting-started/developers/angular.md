@@ -1,7 +1,6 @@
 ---
-
 title: Developers
-tabs: ['Vanilla', 'React', 'Angular', 'Other Frameworks']
+tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
 ---
 
 The **[Carbon Components Angular Library](http://angular.carbondesignsystem.com/)** provides front-end developers & engineers a collection of reusable Angular components to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.
@@ -53,4 +52,4 @@ We recommend using the [carbon-angular-starter](https://github.com/carbon-design
 
 ## Development
 
-Please refer to the [Contributing Guidelines](https://github.com/IBM/carbon-components-angular/blob/master/README.md#contributing) before starting any work.
+Please refer to the [contributing guidelines](https://github.com/IBM/carbon-components-angular/blob/master/README.md#contributing) before starting any work.

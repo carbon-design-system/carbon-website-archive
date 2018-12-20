@@ -5,7 +5,7 @@ title: Spacing
 
 ## Intro to spacing
 
-### Two Scales
+### Two scales
 
 Carbon has two spacing scales, one for general spacing within components and the other for layout spacing. Both are designed to complement the existing components and typography throughout the system.
 
@@ -13,8 +13,8 @@ Each scale has its own distinct purpose. The two scales have certain overlapping
 
 | Scale             | Purpose                                                                                                                                                                                                                            |
 | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Spacing Scale** | Used for smaller, more refined spacing situations, specifically within the context of a component (ie. the space between a label and a Text Input).                                                                                |
-| **Layout Scale**  | Used to create larger spacial differences most commonly with positioning components on a page (ie. the space between a Text fields and a Select). The Layout Scale controls the amount of white space set between larger elements. |
+| **Spacing scale** | Used for smaller, more refined spacing situations, specifically within the context of a component (i.e. the space between a label and a Text Input).                                                                                |
+| **Layout scale**  | Used to create larger spacial differences most commonly with positioning components on a page (i.e. the space between a Text fields and a Select). The Layout Scale controls the amount of white space set between larger elements. |
 
 ### Applying spacing
 
@@ -31,9 +31,9 @@ padding: $spacing-xl $spacing-sm 0 $spacing-sm;
 padding-left: $spacing-auto;
 ```
 
-## Spacing Scale
+## Spacing scale
 
-Use the Spacing Scale when building individual elements. It includes minute increments needed to create appropriate spacial relationships for detail-level designs. This scale is applied and used within all Carbon components.
+Use the spacing scale when building individual elements. It includes minute increments needed to create appropriate spacial relationships for detail-level designs. This scale is applied and used within all Carbon components.
 
 | Token            | rem   | px  | Example                                       |
 | ---------------- | ----- | --- | --------------------------------------------- |
@@ -60,9 +60,9 @@ There are a few other non-token methods that can be used for spacing elements. E
 | `auto`   | Used on one side of an element to allow undefined space to automatically grow and shrink according to screen size. Typically used for asymmetrical fluid spacing. |
 | Gutter   | Used to space items between the grid's 12 columns                                                                                                                 |
 
-## Layout Scale
+## Layout scale
 
-The Layout Scale is used for arranging components and other UI parts into a full page layout. It has larger increments that are used to control the density of a design. Use the smaller layout tokens to create more dense compositions and direct relationships. Use the larger tokens to increase the amount of white space and to disassociate sections.
+The layout scale is used for arranging components and other UI parts into a full page layout. It has larger increments that are used to control the density of a design. Use the smaller layout tokens to create more dense compositions and direct relationships. Use the larger tokens to increase the amount of white space and to disassociate sections.
 
 | Token           | rem | px  | Example                                      |
 | --------------- | --- | --- | -------------------------------------------- |
@@ -77,7 +77,7 @@ The Layout Scale is used for arranging components and other UI parts into a full
 ![Example of Layout tokens applied](images/spacing-2.png)
 _Example of Layout tokens applied_
 
-### Using Layout Scale with the grid
+### Using layout scale with the grid
 
 The Carbon 12-column grid is still an acceptable and encouraged way to horizontally space UI elements. The Layout Scale is most commonly used for vertical spacing but it can also be applied for horizontal spacing when appropriate, especially in the case of fixed spacing.
 

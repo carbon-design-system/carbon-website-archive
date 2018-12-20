@@ -139,7 +139,7 @@
       "item": "Modal",
       "added": "4.3.0",
       "tag": "updated",
-      "vanilla": "under-review",
+      "vanilla": "ready",
       "react": "under-review",
       "angular": "not-available",
       "experimental": "not-available"
@@ -175,7 +175,7 @@
       "item": "Pagination",
       "added": "7.0.0",
       "tag": "updated",
-      "vanilla": "under-review",
+      "vanilla": "ready",
       "react": "under-review",
       "angular": "not-available",
       "experimental": "not-available"

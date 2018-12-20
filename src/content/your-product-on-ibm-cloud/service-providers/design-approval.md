@@ -2,7 +2,7 @@
 
 title: Service Providers
 internal: true
-tabs: ['General', 'Service Icon', 'Design Approval']
+tabs: ['General', 'Service icon', 'Design approval']
 ---
 
 ## Requirements
