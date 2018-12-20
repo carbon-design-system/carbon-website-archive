@@ -116,6 +116,9 @@
       "loading": {
         "title": "Loading"
       },
+      "modal": {
+        "title": "Modal"
+      },
       "notification": {
         "title": "Notification"
       },
@@ -124,6 +127,9 @@
       },
       "overflow-menu": {
         "title": "Overflow menu"
+      },
+      "pagination": {
+        "title": "Pagination"
       },
       "progress-indicator": {
         "title": "Progress indicator"
