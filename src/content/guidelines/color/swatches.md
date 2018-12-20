@@ -24,7 +24,7 @@ tabs: ['Swatches', 'Usage']
 <color-card name="field-02" hex="#ffffff"></color-card>
 </flex-group>
 
-### Hover Colors
+### Hover colors
 
 <flex-group>
 <color-card name="hover-primary" hex="#30588c"></color-card>
@@ -34,7 +34,7 @@ tabs: ['Swatches', 'Usage']
 <color-card name="hover-row" hex="rgba(85,150,230,.1)"></color-card>
 </flex-group>
 
-### Support Colors
+### Support colors
 
 <flex-group>
 <color-card name="support-01" hex="#e0182d"></color-card>

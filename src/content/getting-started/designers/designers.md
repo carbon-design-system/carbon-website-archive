@@ -1,5 +1,5 @@
 ---
-label: Getting Started
+label: Getting started
 title: Designers
 ---
 
@@ -25,7 +25,7 @@ The Carbon team releases frequent updates to the design kit. We track all releas
 
 ### Download from GitHub
 
-1. Download the kit
+1. Download the Carbon Design Kit
    - Go to the <a href="https://github.com/carbon-design-system/carbon-design-kit" target=blank> Carbon Design Kit</a> repo and click the folder for latest version of the Carbon Design Kit.
    - On the next page click `Carbon Design Kit.sketch`
    - Click the “View Raw” link to begin downloading the kit.
@@ -36,7 +36,7 @@ The Carbon team releases frequent updates to the design kit. We track all releas
    - Use the left panel in the file to navigate through the different pages of the kit.
 ![Kit file screenshot](images/designers-3.png)
 
-3. Install the Design Kit as a Sketch Library
+3. Install the Carbon Design Kit as a Sketch Library
    - The same Carbon Design Kit file can also be installed as a Sketch Library.
    - Follow the [instructions](https://github.com/IBM/carbon-design-kit/wiki/Sketch-Libraries-Overview) on the repo wiki page to set the kit up as Sketch Library.
 ![Sketch Library screenshot](images/designers-4.png)  

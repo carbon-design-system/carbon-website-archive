@@ -1,7 +1,7 @@
 ---
-label: Getting Started
+label: Getting started
 title: Developers
-tabs: ['Vanilla', 'React', 'Angular', 'Other Frameworks']
+tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
 ---
 
 <page-intro>The **Carbon Components React Library** provides front-end developers & engineers a collection of reusable React components to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.</page-intro>
@@ -20,7 +20,7 @@ If you prefer [Yarn](https://yarnpkg.com/en/), use the following command instead
 $ yarn add carbon-components-react carbon-components carbon-icons
 ```
 
-### Getting Started
+### Getting started
 
 1.  These components require the use of [webpack](https://webpack.js.org/guides/getting-started/) in your project. See our [webpack.config.js](https://github.com/carbon-design-system/carbon-components-react/blob/master/.storybook/webpack.config.js) for an example configuration.
 
@@ -54,7 +54,7 @@ $ yarn storybook
 
 4.  Write stories for your components in `/.storybook`.
 
-### List of Available Components
+### List of available components
 
 View available React Components [here](http://react.carbondesignsystem.com). Usage information is available when you click the blue **?** icon in the top right corner of the selected component.
 
