@@ -1,5 +1,5 @@
 ---
-label: IBM firmly believes that web and software experiences should be accessible for everyone, regardless of abilities or impairments. 
+label: IBM firmly believes that web and software experiences should be accessible for everyone, regardless of abilities or impairments.
 title: Accessibility
 tabs: ['Overview', 'Color', 'Keyboard', 'Developers']
 ---
@@ -32,9 +32,7 @@ Use native HTML elements as much as you can and use them for their correct purpo
 When adding content, consider cognitive disabilities, younger people or early readers who may access your site, anyone whose native language isn’t the language your content is written in, and screen readers. Avoid dashes, abbreviations, acronyms (at least the first time) and table layouts if a table is not needed. If abbreviating, use native `<abbr />` element with title attribute.
 
 ```html
-"9 to 5"
-"November"
-<abbr title='November'>Nov</abbr>
+"9 to 5" "November" <abbr title="November">Nov</abbr>
 ```
 
 ### Use meaningful text labels
@@ -56,8 +54,10 @@ Consider visually impaired people when labeling elements. Make sure there is tex
 Always specify table headers with `<th />` elements, and make sure they stand out. Utilize scope attribute if necessary to specify if they are headers for rows or columns. Utilize alternative text along with tables for visually impaired users. `<caption />` is preferred, but `<table />` summary works, too.
 
 ```html
-<table summary='Names and Ages of My Coworkers'>
-  <caption>Names and Ages of My Coworkers</caption>
+<table summary="Names and Ages of My Coworkers">
+  <caption>
+    Names and Ages of My Coworkers
+  </caption>
   <thead>
     <tr>
       <th scope="col">Firstname</th>
@@ -90,13 +90,13 @@ Every image that is not decorative must include `alt` text with a meaningful des
 
 ```html
 <!-- Example 1 -->
-<img src='puppy.jpg' title='Sleeping Puppy' alt='A sleeping puppy'/>
+<img src="puppy.jpg" title="Sleeping Puppy" alt="A sleeping puppy" />
 ```
 
 ```html
 <!-- Example 2 -->
-<img src='puppy2.jpg' aria-labelledby='imagelabel'/>
-<p id='imagelabel'>This is a picture of a cute puppy in cup</p>
+<img src="puppy2.jpg" aria-labelledby="imagelabel" />
+<p id="imagelabel">This is a picture of a cute puppy in cup</p>
 ```
 
 ### Audio alternatives
@@ -105,9 +105,9 @@ Provide closed-captioning with videos or transcriptions of audio files.
 
 ```html
 <video controls>
-  <source src='example.mp4' type='video/mp4'/>
-  <source src='example.webm' type='video/webm'/>
-  <track kind='subtitles' src='subtitles_english.vtt' srclang='en'/>
+  <source src="example.mp4" type="video/mp4" />
+  <source src="example.webm" type="video/webm" />
+  <track kind="subtitles" src="subtitles_english.vtt" srclang="en" />
 </video>
 ```
 
@@ -117,7 +117,7 @@ Use SVG's instead of font icon libraries as those are not accessible.
 
 ```html
 <svg width="80" height="10">
-  <line class='line' x1="200" y1="0" x2="0" y2="0" />
+  <line class="line" x1="200" y1="0" x2="0" y2="0" />
 </svg>
 ```
 
@@ -129,19 +129,17 @@ Landmark roles identify regions in a page, and act much like native HTML tags wo
 
 ```html
 <!-- landmark roles -->
-<nav role='navigation'></nav>
-<main role='main'></main>
+<nav role="navigation"></nav>
+<main role="main"></main>
 ```
 
 ```html
 <!-- signpost roles -->
-<div role='banner'>This is a banner.</div>
-<div role='tabgroup'>
-  <div role='tab'></div>
-</div>
-<div role='combobox'></div>
-<div role='slider'></div>
-<button role='button'></button>
+<div role="banner">This is a banner.</div>
+<div role="tabgroup"><div role="tab"></div></div>
+<div role="combobox"></div>
+<div role="slider"></div>
+<button role="button"></button>
 ```
 
 ## CSS best practices

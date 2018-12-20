@@ -1,5 +1,4 @@
 ---
-
 title: Catalog Entry
 internal: true
 ---

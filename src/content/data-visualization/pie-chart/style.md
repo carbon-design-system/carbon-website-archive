@@ -1,5 +1,4 @@
 ---
-
 title: Pie Chart
 tabs: ['Code', 'Usage', 'Style']
 ---
@@ -8,10 +7,10 @@ tabs: ['Code', 'Usage', 'Style']
 
 Refer to the style tab on the [Data Vis overview page](/data-visualization/overview/style) for base graph style specifications.
 
-| Attribute     | SCSS     | HEX     |
-| ------------- | -------- | ------- |
-| Data Value    | $text-01 | #152935 |
-| Data Variable | $text-02 | #5a6872 |
+| Attribute     | SCSS      | HEX     |
+| ------------- | --------- | ------- |
+| Data Value    | \$text-01 | #152935 |
+| Data Variable | \$text-02 | #5a6872 |
 
 ![Pie Chart hover example](images/style-pie-chart-1.png)
 _Example of a Pie Chart section, hovered_

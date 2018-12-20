@@ -1,5 +1,4 @@
 ---
-
 title: Date Picker
 tabs: ['Code', 'Usage']
 ---

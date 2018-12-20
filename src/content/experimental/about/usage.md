@@ -1,5 +1,4 @@
 ---
-
 title: About
 tabs: ['Overview', 'Usage']
 ---
@@ -13,20 +12,17 @@ We currently have two `feature-flags` available for testing. **Experimental Comp
 To turn on either of the feature flags include the **feature-flag** variable into your SCSS file before importing `carbon-components`, then set `components-x` and/or `ui-shell` to `true`.
 
 ```scss
-
 $feature-flags: (
-    components-x: true,
-    ui-shell: true,
-  );
- @import 'carbon-components/src/globals/scss/styles';
-
+  components-x: true,
+  ui-shell: true,
+);
+@import 'carbon-components/src/globals/scss/styles';
 ```
 
 **Note: You must be using Sass and not the compiled CSS file in order to take advantage of the code using feature flags.**
-
 
 ## Disclaimer
 
 Experimental components, designs, patterns, and other resources are work that is still under development.
 
-They are not intended for production use, and are subject to change but are in a state where it can be productive for designers and developers to start to work with them. They may have some non-functional pieces, or be lacking in documentation. *There is no guarantee of support*.
+They are not intended for production use, and are subject to change but are in a state where it can be productive for designers and developers to start to work with them. They may have some non-functional pieces, or be lacking in documentation. _There is no guarantee of support_.

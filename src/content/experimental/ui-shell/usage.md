@@ -1,5 +1,4 @@
 ---
-
 title: UI Shell
 tabs: ['Code', 'Usage']
 ---
@@ -7,9 +6,10 @@ tabs: ['Code', 'Usage']
 The UI Shell is the top level in a product's UI. The Shell consists of the primary **header** and **footer**, as well as **header panels** that are used for navigation and global UI services.
 
 1.  [UI Shell Zones](#ui-shell-zones)
--  [UI Shell Components](#ui-shell-components)
--  [Secondary Navigation](#secondary-navigation)
--  [UI Shell Theming](#ui-shell-theming)
+
+- [UI Shell Components](#ui-shell-components)
+- [Secondary Navigation](#secondary-navigation)
+- [UI Shell Theming](#ui-shell-theming)
 
 ## UI Shell Zones
 
@@ -33,7 +33,7 @@ The UI Shell is designed to be configurable. A product/platform can choose which
 
 ### Primary Header
 
-The Header spans the full width of the viewport and is the topmost element in the UI. Header elements are persistent within a product. 
+The Header spans the full width of the viewport and is the topmost element in the UI. Header elements are persistent within a product.
 
 Use a header when:
 
@@ -51,10 +51,11 @@ As a header scales down to fit smaller screen sizes, header links and menus shou
 #### Header Elements
 
 1. **Platform icon/Hamburger Menu** The platform icon appears in this space at wider browser widths, and switches to a hamburger menu to serve as overflow for header navigation links as the window narrows.
+
 - **Platform name** (e.g. Cloud, IoT, Watson). The platform name is always preceded by "IBM."
 - **Up to 5 optional horizontal top-level nav links and/or dropdown menus.** If using a dropdown, include the down-pointing chevron after the link label. Dropdowns open on click and are closed by either selecting an item in the menu, clicking outside the menu area, or clicking on the menu label.
 - **L0 icons** These icons are typically reserved for universal functions such as search, notifications, etc.
-- **Global Switcher** The global app switcher provides a way to switch between contexts within a product/platform. The global app switcher is accessed by clicking on the 9 dot icon in the far right of the header.  
+- **Global Switcher** The global app switcher provides a way to switch between contexts within a product/platform. The global app switcher is accessed by clicking on the 9 dot icon in the far right of the header.
 
 ![Primary Header with app switcher](images/header-app-switcher2.png)
 
@@ -62,13 +63,11 @@ As a header scales down to fit smaller screen sizes, header links and menus shou
 
 These are vertical panels that are anchored in the Header and invoked by controls on the right side of the Header. Header Panels have a consistent width, span the full height of the viewport and are flush to the right edge of the viewport. Only one Header Panel can be open at a time. The Profile and Notifications panels are examples of this element. Header Panels are always treated as [floating panels](/experimental/layout#panel-behavior).
 
-
 Use a header panel when additional content or actions associated with a header icon needs to be shown.
 
 ![Header Panel template](images/header-panel.png)
 
 More details about panel types and behaviors can be found under [Layout](../experimental/layout/#panel-behavior)
-
 
 ### Side-Nav Panels
 
@@ -96,9 +95,9 @@ Product footers are persistent and attached to the bottom of the browser window.
 
 If a secondary level of navigation is needed then a side nav can be nested below the header. There are several configurations of the side-nav but only one configuration should be used per product section.
 
-If tabs are needed on a page when using a side-nav then then tabs are secondary in hierarchy to the side-nav. There should never be persistent tabs with a side-nav being nested under the tabs. 
+If tabs are needed on a page when using a side-nav then then tabs are secondary in hierarchy to the side-nav. There should never be persistent tabs with a side-nav being nested under the tabs.
 
-<!-- 
+<!--
 ### L1 Navigation Menu
 
 Some products/platforms require an additional level of navigation above the side nav. The L1 menu behaves like a product selector within the platform; the L1 selection will change the active product and thus the contents of the L2 menu.
@@ -110,13 +109,12 @@ The L1 Menu is accessed by clicking on the header's left-side hamburger menu. It
 
 ### Side-nav
 
-The Side-nav contains secondary navigation and fits below the header. It can be configured to be either fixed-width or flexible, with only one level of nested items allowed. Both links and category lists can be used in the Side-nav and may be mixed together. 
+The Side-nav contains secondary navigation and fits below the header. It can be configured to be either fixed-width or flexible, with only one level of nested items allowed. Both links and category lists can be used in the Side-nav and may be mixed together.
 
 Use a side-nav when:
 
 - there are more than five secondary navigation items
 - you expect users to switch between secondary items frequently
-
 
 #### Side-nav Items
 
@@ -135,7 +133,7 @@ A flexible side-nav is more friendly to responsive designs than a fixed nav. Fix
 Use a flexible side-nav when:
 
 - more space is needed for page content
-- a fully responsive solution is needed 
+- a fully responsive solution is needed
 
 ![Side-nav Panel](images/side-nav-panel.png)
 
@@ -164,8 +162,7 @@ A Category must contain at least 3 L3 Links.
 <mark>Side nav with L1, L2, L3 annotations.
 -->
 
-
-<!-- 
+<!--
 
 All vertical panels expand to fill the full height of the browser window.
 

@@ -179,9 +179,7 @@ For example, if you have the following HTML for modal:
 
 ```html
 <div data-modal id="modal-nofooter" class="bx--modal" tabindex="-1">
-  <div class="bx--modal-container">
-    ...
-  </div>
+  <div class="bx--modal-container">...</div>
 </div>
 ```
 

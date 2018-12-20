@@ -33,7 +33,7 @@ $ npm start
   <img style="width: 200px" alt="Edit on CodeSandbox" src="https://codesandbox.io/static/img/play-codesandbox.svg" />
 </a>
 
-### Using our starter app 
+### Using our starter app
 
 <img style="width: 100%" alt="carbon-angular-starter screenshot" src="images/carbon-angular-starter.png" />
 
@@ -48,7 +48,7 @@ We recommend using the [carbon-angular-starter](https://github.com/carbon-design
 - Service workers
 - Test framework
 
- Check out the [readme](https://github.com/carbon-design-system/carbon-angular-starter) for installation instructions.
+Check out the [readme](https://github.com/carbon-design-system/carbon-angular-starter) for installation instructions.
 
 ## Development
 

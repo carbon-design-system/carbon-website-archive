@@ -12,7 +12,6 @@ What is the difference between voice and tone? Simply put, we have the same voic
 
 **Voice** is the foundation for communicating IBM Cloud products and brand message. Our voice expresses the core of our personality, while bringing comfort, ease, and a sense of connection to our users. Our goal is to empower our users to meet their business goals. Be consistent with voice across the platform.
 
-
 **Tone** conveys your attitude toward what you are writing about and who you are writing to. When you create content – whether it's introductory text on the UI, an error message, or a topic in the docs – you are essentially a storyteller. Good storytellers are experts in two main areas: what they are saying (the important information that the audience needs to know) and how to say it (the experience that they want to create for the audience). Be a good storyteller.
 
 ## Conversation levels

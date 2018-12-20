@@ -178,9 +178,9 @@ The carbon website has a handful of custom markdown components available for use
   - leaving out these extra properties will default to no label, and a swatch size of 24px
 - `<color-card name="$ui-01" hex="#ffffff" border="true" small="true"></color-card>`
 - `<anchor-links>`
-- `<grid-wrapper col_lg="12" flex="true>` 
+- `<grid-wrapper col_lg="12" flex="true>`
   - `col_lg` Specify the col width at large breakpoint, default is 12
-  - `flex` Set to true to set display:flex | flexwrap: wrap to row 
+  - `flex` Set to true to set display:flex | flexwrap: wrap to row
 
 ### Examples
 

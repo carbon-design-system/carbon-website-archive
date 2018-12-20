@@ -52,7 +52,7 @@
   display: block;
 
   @include breakpoint('sm') {
-    margin: .5rem 0;
+    margin: 0.5rem 0;
   }
 
   @include breakpoint('lg') {
@@ -72,8 +72,7 @@
   }
 }
 
-
-// Footer paragraph 
+// Footer paragraph
 .page-footer__link--with-tooltip {
   @include type-style('body-short-01');
   position: relative;
@@ -108,4 +107,3 @@
     margin-top: rem(150px);
   }
 }
-

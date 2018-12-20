@@ -1,5 +1,4 @@
 ---
-
 title: Toggle
 tabs: ['Code', 'Usage']
 ---

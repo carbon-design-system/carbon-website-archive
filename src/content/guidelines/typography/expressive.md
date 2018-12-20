@@ -6,7 +6,7 @@ tabs: ['Overview', 'Productive', 'Expressive']
 
 ## IBM Expressive theme
 
-The _Expressive_ theme is for use in editorial and digital marketing experiences at IBM. This theme introduces the new IBM Design Language tokens. Please switch to the new tokens wherever possible. 
+The _Expressive_ theme is for use in editorial and digital marketing experiences at IBM. This theme introduces the new IBM Design Language tokens. Please switch to the new tokens wherever possible.
 
 ## Expressive type sets
 
@@ -142,6 +142,7 @@ Letter-spacing: 0px
 </type-spec>
 
 ### Display
+
 <type-spec token="display-01" description="Small Display">
 coming soon
 </type-spec>

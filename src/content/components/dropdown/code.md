@@ -1,10 +1,9 @@
 ---
-
 title: Dropdown
 tabs: ['Code', 'Usage']
 ---
 
-**Dropdowns** present a list of options that can be used to filter existing content. 
+**Dropdowns** present a list of options that can be used to filter existing content.
 variations:
 
 <component 

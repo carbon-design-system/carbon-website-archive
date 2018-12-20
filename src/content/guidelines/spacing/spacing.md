@@ -11,8 +11,8 @@ Carbon has two spacing scales, one for general spacing within components and the
 
 Each scale has its own distinct purpose. The two scales have certain overlapping values that serve two different roles so be mindful when picking a spacing token.
 
-| Scale             | Purpose                                                                                                                                                                                                                            |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Scale             | Purpose                                                                                                                                                                                                                             |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Spacing scale** | Used for smaller, more refined spacing situations, specifically within the context of a component (i.e. the space between a label and a Text Input).                                                                                |
 | **Layout scale**  | Used to create larger spacial differences most commonly with positioning components on a page (i.e. the space between a Text fields and a Select). The Layout Scale controls the amount of white space set between larger elements. |
 
@@ -35,17 +35,17 @@ padding-left: $spacing-auto;
 
 Use the spacing scale when building individual elements. It includes minute increments needed to create appropriate spacial relationships for detail-level designs. This scale is applied and used within all Carbon components.
 
-| Token            | rem   | px  | Example                                       |
-| ---------------- | ----- | --- | --------------------------------------------- |
-| **$spacing-3xs** | 0.125 | 2   | ![spacing-3xs example](images/spacing-3.svg)  |
-| **$spacing-2xs** | 0.25  | 4   | ![spacing-2xs example](images/spacing-4.svg)  |
-| **$spacing-xs**  | 0.5   | 8   | ![spacing-xs example](images/spacing-5.svg)   |
-| **$spacing-sm**  | 0.75  | 12  | ![spacing-sm example](images/spacing-6.svg)   |
-| **$spacing-md**  | 1     | 16  | ![spacing-md example](images/spacing-7.svg)   |
-| **$spacing-lg**  | 1.5   | 24  | ![spacing-lg example](images/spacing-8.svg)   |
-| **$spacing-xl**  | 2     | 32  | ![spacing-xl example](images/spacing-9.svg)   |
-| **$spacing-2xl** | 2.5   | 40  | ![spacing-2xl example](images/spacing-10.svg) |
-| **$spacing-3xl** | 3     | 48  | ![spacing-3xl example](images/spacing-11.svg) |
+| Token             | rem   | px  | Example                                       |
+| ----------------- | ----- | --- | --------------------------------------------- |
+| **\$spacing-3xs** | 0.125 | 2   | ![spacing-3xs example](images/spacing-3.svg)  |
+| **\$spacing-2xs** | 0.25  | 4   | ![spacing-2xs example](images/spacing-4.svg)  |
+| **\$spacing-xs**  | 0.5   | 8   | ![spacing-xs example](images/spacing-5.svg)   |
+| **\$spacing-sm**  | 0.75  | 12  | ![spacing-sm example](images/spacing-6.svg)   |
+| **\$spacing-md**  | 1     | 16  | ![spacing-md example](images/spacing-7.svg)   |
+| **\$spacing-lg**  | 1.5   | 24  | ![spacing-lg example](images/spacing-8.svg)   |
+| **\$spacing-xl**  | 2     | 32  | ![spacing-xl example](images/spacing-9.svg)   |
+| **\$spacing-2xl** | 2.5   | 40  | ![spacing-2xl example](images/spacing-10.svg) |
+| **\$spacing-3xl** | 3     | 48  | ![spacing-3xl example](images/spacing-11.svg) |
 
 ![Example of Spacing tokens applied](images/spacing-1.png)
 _Example of Spacing tokens applied_
@@ -64,15 +64,15 @@ There are a few other non-token methods that can be used for spacing elements. E
 
 The layout scale is used for arranging components and other UI parts into a full page layout. It has larger increments that are used to control the density of a design. Use the smaller layout tokens to create more dense compositions and direct relationships. Use the larger tokens to increase the amount of white space and to disassociate sections.
 
-| Token           | rem | px  | Example                                      |
-| --------------- | --- | --- | -------------------------------------------- |
-| **$layout-2xs** | 1   | 16  | ![layout-2xs example](images/spacing-12.svg) |
-| **$layout-xs**  | 1.5 | 24  | ![layout-xs example](images/spacing-13.svg)  |
-| **$layout-sm**  | 2   | 32  | ![layout-sm example](images/spacing-14.svg)  |
-| **$layout-md**  | 3   | 48  | ![layout-md example](images/spacing-15.svg)  |
-| **$layout-lg**  | 4   | 64  | ![layout-lg example](images/spacing-16.svg)  |
-| **$layout-xl**  | 6   | 96  | ![layout-xl example](images/spacing-17.svg)  |
-| **$layout-2xl** | 10  | 160 | ![layout-2xl example](images/spacing-18.svg) |
+| Token            | rem | px  | Example                                      |
+| ---------------- | --- | --- | -------------------------------------------- |
+| **\$layout-2xs** | 1   | 16  | ![layout-2xs example](images/spacing-12.svg) |
+| **\$layout-xs**  | 1.5 | 24  | ![layout-xs example](images/spacing-13.svg)  |
+| **\$layout-sm**  | 2   | 32  | ![layout-sm example](images/spacing-14.svg)  |
+| **\$layout-md**  | 3   | 48  | ![layout-md example](images/spacing-15.svg)  |
+| **\$layout-lg**  | 4   | 64  | ![layout-lg example](images/spacing-16.svg)  |
+| **\$layout-xl**  | 6   | 96  | ![layout-xl example](images/spacing-17.svg)  |
+| **\$layout-2xl** | 10  | 160 | ![layout-2xl example](images/spacing-18.svg) |
 
 ![Example of Layout tokens applied](images/spacing-2.png)
 _Example of Layout tokens applied_

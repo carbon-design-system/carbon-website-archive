@@ -1,5 +1,4 @@
 ---
-
 title: Service Providers
 internal: true
 tabs: ['General', 'Service icon', 'Design approval']

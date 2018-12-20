@@ -1,5 +1,4 @@
 ---
-
 title: UI Shell
 tabs: ['Code', 'Usage']
 ---
@@ -14,4 +13,3 @@ tabs: ['Code', 'Usage']
     hasReactVersion="true"
     >
 </component>
-

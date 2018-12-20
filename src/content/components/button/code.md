@@ -1,5 +1,4 @@
 ---
-
 title: Button
 tabs: ['Code', 'Usage']
 ---

@@ -1,5 +1,4 @@
 ---
-
 title: User Flow
 internal: true
 ---
@@ -10,8 +9,6 @@ visual design add delight. Use this guidance to optimize the user's flow from
 discovery of your product to productive use.
 
 ## Contents
-
-
 
 1.  [Discovery](#discovery)
 

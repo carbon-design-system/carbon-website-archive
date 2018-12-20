@@ -1,5 +1,4 @@
 ---
-
 title: Progress Indicator
 tabs: ['Code', 'Usage']
 ---

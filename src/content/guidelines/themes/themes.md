@@ -17,15 +17,14 @@ Developers and designers can use theming to modify existing components to fit th
 </clickable-tile>
 </grid-wrapper>
 
-
 ### Theme terms
 
-| Term         | Definition                                                                                                     |
-| ------------ | -------------------------------------------------------------------------------------------------------------- |
-| **Theme**    | The set of unique values assigned to each token.                                                               |
-| **Token**    | The code identifier for a unique role or set of roles. Tokens are universal and never change across themes.    |
-| **Role**     | The systematic usage/s of a value. Roles cannot be changed between themes.                                     |
-| **Value**    | The actual style (ie hex code) assigned to a token. |
+| Term      | Definition                                                                                                  |
+| --------- | ----------------------------------------------------------------------------------------------------------- |
+| **Theme** | The set of unique values assigned to each token.                                                            |
+| **Token** | The code identifier for a unique role or set of roles. Tokens are universal and never change across themes. |
+| **Role**  | The systematic usage/s of a value. Roles cannot be changed between themes.                                  |
+| **Value** | The actual style (ie hex code) assigned to a token.                                                         |
 
 ## Default theme
 
@@ -570,7 +569,10 @@ $tab-underline-disabled: 2px solid $ibm-colors__gray--10 !default !global;
 $toggle-background-color: $ibm-colors__green--50 !default !global;
 
 // Skeleton Loading
-$skeleton: rgba($color__blue-51, 0.1) !default !global; //old $field-01 TODO: Define for experimental
+$skeleton: rgba(
+  $color__blue-51,
+  0.1
+) !default !global; //old $field-01 TODO: Define for experimental
 ```
 
 ## Theming applied
@@ -579,11 +581,11 @@ The following example demonstrates the relationship between the different themes
 
 ![Default theme applied](images/themes-1.svg)
 
-| Key | Token           | Role               | White theme value       | Dark theme value    |
-| --- | --------------- | ------------------ | ----------------------- | ------------------- |
-| 1   | `$text-02`      | Label color        | `#565656` / Gray 70     | `#bebebe` / Gray 30 |
-| 2   | `$text-01`      | Primary text color | `#171717` / Gray 100    | `#f3f3f3` / Gray 10 |
-| 3   | `$ui-04`        | Border bottom color| `#8c8c8c` / Gray 50     | `#a4a4a4` / Gray 40 |
-| 4   | `$icon-01`      | Primary icon color | `#171717` / Gray 100    | `#f3f3f3` / Gray 10 |
-| 5   | `$field-01`     | Field color        | `#f3f3f3` / Gray 10     | `#3d3d3d` / Gray 80 |
-| 6   | `$ui-02`        | Page background    | `#ffffff` / White       | `#282828` / Gray 90 |
+| Key | Token       | Role                | White theme value    | Dark theme value    |
+| --- | ----------- | ------------------- | -------------------- | ------------------- |
+| 1   | `$text-02`  | Label color         | `#565656` / Gray 70  | `#bebebe` / Gray 30 |
+| 2   | `$text-01`  | Primary text color  | `#171717` / Gray 100 | `#f3f3f3` / Gray 10 |
+| 3   | `$ui-04`    | Border bottom color | `#8c8c8c` / Gray 50  | `#a4a4a4` / Gray 40 |
+| 4   | `$icon-01`  | Primary icon color  | `#171717` / Gray 100 | `#f3f3f3` / Gray 10 |
+| 5   | `$field-01` | Field color         | `#f3f3f3` / Gray 10  | `#3d3d3d` / Gray 80 |
+| 6   | `$ui-02`    | Page background     | `#ffffff` / White    | `#282828` / Gray 90 |
