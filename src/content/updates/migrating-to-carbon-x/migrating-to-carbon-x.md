@@ -1,6 +1,7 @@
 ---
 title: Migrating to Carbon X
 ---
+
 <anchor-links>
 <ul>
   <li><a href="#carbon-x-is-near">Intro</a></li>
@@ -14,19 +15,24 @@ title: Migrating to Carbon X
 </anchor-links>
 
 ## Carbon X is near!
-Carbon X, aka v10, is currently in Alpha release. Please use this opportunity to explore and experiment with the new components, elements, layouts, and UI shell. The Alpha release is a work in progress; changes will be frequent and possibly breaking. **This release is not approved for production.** Please explore the system and [provide bountiful feedback](../help/support#github-issues)! 
+
+Carbon X, aka v10, is currently in Alpha release. Please use this opportunity to explore and experiment with the new components, elements, layouts, and UI shell. The Alpha release is a work in progress; changes will be frequent and possibly breaking. **This release is not approved for production.** Please explore the system and [provide bountiful feedback](../help/support#github-issues)!
 
 ## Rollout plan
+
 - January 2019: Beta release
 - March 2019: Production release
 
 ### Adoption and activation sessions
+
 <p>The IBM Design core team is establishing an adoption and activation program. A new <a href="https://w3.ibm.com/design/essentials" target="blank">IBM Design Essentials</a> course is available, and teams will receive either in-person or remote education before the Production release of Carbon X. The Carbon team will share news on Slack, Connections, and in the IBM Design Town Hall as well.</p>
 
 ## Design kit
+
 The Beta release of Carbon X will arrive with a completely revised Sketch design kit, updated for the new IBM Design Language (f.k.a. "Duo"). All components in the kit have been reskinned, and colors, icons, typrography, UI shell, and grid elements will also reflect the new IBM Design Language.
 
 ## Tokens
+
 The **type** token architecure has been redesigned for better clarity and flexibility in v10. More detailed guidance on migrating to the new type tokens will be available in early 2019.
 
 The **color** token architecture for v10 is based on the v9 architecture, with some minor updates for the new design language. Carbon v9 users will see automatic, non-breaking color updates when they upgrade to v10.
@@ -34,16 +40,17 @@ The **color** token architecture for v10 is based on the v9 architecture, with s
 **Spacing** tokens will see no change from Carbon v9.
 
 ## Icons
-The iconography in Carbon X has been completely redesigned to align with the new IBM Design Language. 
+
+The iconography in Carbon X has been completely redesigned to align with the new IBM Design Language.
 
 Coming soon: Carbon X icon migration guide for developers
 
 ## UI shell
-The basic UI shell has been completely redesigned for Carbon X. Full documentation on the new shell is available on the Carbon website. 
+
+The basic UI shell has been completely redesigned for Carbon X. Full documentation on the new shell is available on the Carbon website.
 
 Coming soon: Carbon X UI shell migration guide for developers
 
 ## Migration tooling
 
-When Carbon X reaches its Production release, specific developer tooling (custom scripts) will be available to help automate the transition. Stay tuned for updates! 
-
+When Carbon X reaches its Production release, specific developer tooling (custom scripts) will be available to help automate the transition. Stay tuned for updates!

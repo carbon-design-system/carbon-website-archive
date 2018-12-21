@@ -28,7 +28,10 @@ import ComponentOverview from '../components/ComponentOverview';
 import NextPrevious from '../components/NextPrevious';
 import GridWrapper from '../components/GridWrapper';
 import BackToTop from '../components/BackToTop';
-import { HomepageFooter, HomepageHeader } from '../components/Homepage/Homepage';
+import {
+  HomepageFooter,
+  HomepageHeader,
+} from '../components/Homepage/Homepage';
 
 // Custom Markdown
 import {
@@ -118,7 +121,9 @@ export default ({ data }) => {
             <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
           )}
         </PageHeader>
-        <main className="page-content ibm--grid" id="maincontent">{renderAst(post.htmlAst)}</main>
+        <main className="page-content ibm--grid" id="maincontent">
+          {renderAst(post.htmlAst)}
+        </main>
         <NextPrevious
           slug={slug}
           currentTabs={tabs}

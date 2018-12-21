@@ -37,7 +37,7 @@ export default class ComponentCode extends React.Component {
       } catch (err) {}
     }
     if (!htmlFile) {
-     htmlFile = require(`carbon-components/html/${component}/${variation}.html`);
+      htmlFile = require(`carbon-components/html/${component}/${variation}.html`);
     }
 
     return (
@@ -61,4 +61,3 @@ export default class ComponentCode extends React.Component {
     );
   }
 }
-

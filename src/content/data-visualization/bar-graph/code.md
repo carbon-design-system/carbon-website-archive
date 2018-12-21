@@ -1,5 +1,4 @@
 ---
-
 title: Bar Graph
 tabs: ['Code', 'Usage', 'Style']
 ---

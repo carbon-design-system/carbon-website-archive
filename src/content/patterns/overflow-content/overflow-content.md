@@ -1,5 +1,4 @@
 ---
-
 title: Overflow Content
 ---
 
@@ -14,8 +13,6 @@ _Example of a browser tooltip being used for truncation._
 
 ![Example of end-line truncation for a paragraph.](images/Truncated-Paragraph.png)
 _Example of end-line truncation for a paragraph._
-
-
 
 ### Usage
 
@@ -33,11 +30,11 @@ Truncation should **not** be used on page headers, titles, labels, error message
 
 There are three types of truncation: front-line, mid-line, and end-line.
 
-| Type          | Purpose                                                                                                                                                                                                                        | Default                       | Truncated                   |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------- | --------------------------- |
+| Type           | Purpose                                                                                                                                                                                                                        | Default                       | Truncated                   |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------- | --------------------------- |
 | **Front-line** | Used at the beginning of a text string to indicate the text is continued from a previous location.                                                                                                                             | `123456789`                   | ...56789                    |
 | **Mid-line**   | Used when several text strings have different beginnings and/or endings but the exact same middle characters. Can also be used to shorten a phrase or text string when the end of a string cannot be truncated by an ellipsis. | `123400005678` `987600004321` | `1234...5678` `9876...4321` |
-| **End-line**  | Used at the end of a character string or paragraph to indicate that there is more content in another location, to show that the pattern in a sequence continues, or to shorten a long text string.                             | `123456789`                   | `12345...`                  |
+| **End-line**   | Used at the end of a character string or paragraph to indicate that there is more content in another location, to show that the pattern in a sequence continues, or to shorten a long text string.                             | `123456789`                   | `12345...`                  |
 
 An ellipsis on its own may also represent condensed content. This type of truncation requires an overflow menu on hover instead of a browser tooltip.
 

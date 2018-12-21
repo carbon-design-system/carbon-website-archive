@@ -2,11 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-const PageHeader = ({
-  children,
-  label,
-  title
-}) => {
+const PageHeader = ({ children, label, title }) => {
   let labelContent =
     label != null ? (
       <header className="ibm--grid page-header__label-wrapper">
@@ -16,14 +12,12 @@ const PageHeader = ({
           </div>
         </div>
       </header>
-    ) : (
-      null
-    );
+    ) : null;
 
-  const classNames = classnames( 'page-header', {
+  const classNames = classnames('page-header', {
     'page-header--md': label != null,
   });
-  
+
   return (
     <div className={classNames}>
       {labelContent}
@@ -52,7 +46,7 @@ PageHeader.propTypes = {
    */
   label: PropTypes.string,
 
-   /**
+  /**
    * Specify the title for the page
    */
   title: PropTypes.string,

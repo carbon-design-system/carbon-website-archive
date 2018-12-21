@@ -28,7 +28,7 @@ a.feature-tile {
 
   @include breakpoint('lg') {
     width: 25%;
-  }  
+  }
 }
 
 a.feature-tile:hover .feature-tile__info {
@@ -66,5 +66,3 @@ a.feature-tile:hover .feature-tile__info {
   @include type-style('heading-03');
   color: $ibm-colors__gray--10;
 }
-
-

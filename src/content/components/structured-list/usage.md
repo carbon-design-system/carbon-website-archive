@@ -1,5 +1,4 @@
 ---
-
 title: Structured list
 tabs: ['Code', 'Usage']
 ---

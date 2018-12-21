@@ -1,5 +1,4 @@
 ---
-
 title: Support
 ---
 
@@ -17,9 +16,9 @@ Answers to the most common questions about the design system can be found in the
 
 ### Slack Channels
 
-*Internal IBM users only.* The Carbon core team maintains the following channels and will provide support as time permits.
+_Internal IBM users only._ The Carbon core team maintains the following channels and will provide support as time permits.
 
-**Please try searching the Slack channel for your topic first.** Slack’s filtering feature will return more targeted and relevant results. For instance, if you have a technical question about the `DataTable` component, you could search “DataTable” in Slack and then filter by the #carbon-components channel. *Tip: You can start a new search directly from the message box using the `/s` slash command.*
+**Please try searching the Slack channel for your topic first.** Slack’s filtering feature will return more targeted and relevant results. For instance, if you have a technical question about the `DataTable` component, you could search “DataTable” in Slack and then filter by the #carbon-components channel. _Tip: You can start a new search directly from the message box using the `/s` slash command._
 
 For designer questions: [#carbon-design-system](https://ibm-studios.slack.com/messages/C0M053VPT/)
 
@@ -31,15 +30,16 @@ Messages to <carbon@us.ibm.com> will be addressed by the Carbon technical team a
 
 ### Twitter
 
-The Carbon team can also be reached on Twitter: [@_carbondesign](https://twitter.com/_carbondesign?lang=en)
-
+The Carbon team can also be reached on Twitter: [@\_carbondesign](https://twitter.com/_carbondesign?lang=en)
 
 ## If you have suggestions or contributions
 
 ### GitHub Pull Requests
+
 If you have a specific fix or contribution, you can generate a pull request in the appropriate Carbon repo.
 
 ### GitHub Issues
+
 Bug reports, feature requests, and general feedback can be delivered to the Carbon team via the creation of a GitHub issue.
 
 #### Design Issues

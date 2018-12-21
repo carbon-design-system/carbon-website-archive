@@ -9,16 +9,17 @@ title: Homepage
     label="Start"
     title="Designing"
     margin="true">
-    <img src="homepage/images/getting-started-designers.png" alt="Get started for designers" />
+<img src="homepage/images/getting-started-designers.png" alt="Get started for designers" />
 </feature-tile>
 <feature-tile
     href="/getting-started/developers"
     label="Start"
     title="Developing">
-    <img src="homepage/images/getting-started-developers.png" alt="Get started for developers" />
+<img src="homepage/images/getting-started-developers.png" alt="Get started for developers" />
 </feature-tile>
 
 ### Other Resources
+
 The Component Libraries give developers a collection of re-usable React components they can use for building websites and user interfaces. See a [complete list of resources.](/resources)
 
 <grid-wrapper col_lg="8" flex="true" bleed="true">
@@ -57,6 +58,7 @@ The Component Libraries give developers a collection of re-usable React componen
 </grid-wrapper>
 
 ### Latest Articles
+
 <grid-wrapper flex="true" bleed="true">
 <clickable-tile
     dark="true"

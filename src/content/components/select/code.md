@@ -1,5 +1,4 @@
 ---
-
 title: Select
 tabs: ['Code', 'Usage']
 ---
