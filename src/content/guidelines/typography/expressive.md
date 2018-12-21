@@ -116,7 +116,7 @@ Line height: 36px / 1.875rem <br>
 Weight: 400 / Regular<br>
 Letter-spacing: 0px
 </type-spec>
-<type-spec token="expresssive-heading-05" description="This is for layout headings.">
+<type-spec token="expressive-heading-05" description="This is for layout headings.">
 Type: IBM Plex Sans<br>
 Size: 42px / 2.625rem<br>
 Line height: 50px / 3.125rem <br>
