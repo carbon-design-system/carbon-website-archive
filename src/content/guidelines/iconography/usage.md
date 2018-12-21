@@ -24,7 +24,6 @@ _16 px and 20 px icons are optimized to feel balanced when paired with 14pt and 
     </do-dont-example>
 </grid-wrapper>
 
-
 ### Touch Targets
 
 All touch targets for interactive icons need to be 44 px or larger. Developers can add padding to a touch target with CSS to meet the 44 px requirement.
@@ -35,18 +34,18 @@ All touch targets for interactive icons need to be 44 px or larger. Developers c
 
 Interactive UI icons need to pass the same color contrast ratio as typography at a 4.5:1 ratio. UI icons should always use solid colors. The color of the icon is determined by the importance of the icon's action.
 
-|                        | SCSS             | HEX y                                                       |
-| ---------------------- | ---------------- | ----------------------------------------------------------- |
-| Primary action         | $brand-01        | <color-block showhex="true" size="xs">#3d70b2</color-block> |
-| Primary action:hover   | $hover-primary   | <color-block showhex="true" size="xs">#30588C</color-block> |
-| Secondary action       | $ui-05           | <color-block showhex="true" size="xs">#5a6872</color-block> |
-| Secondary action:hover | $hover-secondary | <color-block showhex="true" size="xs">#3d70b2</color-block> |
+|                        | SCSS              | HEX y                                                       |
+| ---------------------- | ----------------- | ----------------------------------------------------------- |
+| Primary action         | \$brand-01        | <color-block showhex="true" size="xs">#3d70b2</color-block> |
+| Primary action:hover   | \$hover-primary   | <color-block showhex="true" size="xs">#30588C</color-block> |
+| Secondary action       | \$ui-05           | <color-block showhex="true" size="xs">#5a6872</color-block> |
+| Secondary action:hover | \$hover-secondary | <color-block showhex="true" size="xs">#3d70b2</color-block> |
 
 **Exception:** There is an exception to both the `brand-01` and UI color rules. Certain icons, such as status or notification icons, can inherit their parent color. For example, a warning icon is yellow because warning notifications are yellow.
 
 ### Alignment
 
-When used next to text, icons should be center-aligned. 
+When used next to text, icons should be center-aligned.
 
 <grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Do: center-align icons when they’re next to text.">
@@ -114,14 +113,14 @@ Visit carbon-icons and browse the svg folder for any icons you want to use. (Rem
 
 Carbon icons ship with two main SVG files that contain different sets of external SVG sprite files:
 
-| Filename          | Description                                                                                                        | Supported versions     |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------ | ---------------------- |
-| carbon-icons.svg  | Contains current icons (consolidated subset of legacy icons used in IBM Bluemix)                                   | `3.x` and newer        |
-| carbon-icons.json | JSON file created from carbon-icons.svg, used in [Carbon](/guidelines/iconography/library) | `3.x` and newer        |
-| carbon-icons.js   | JS module created from carbon-icons.svg, used in `Icon` React Component in [carbon-components-react](#)            | `3.x` and newer        |
-| sprite.svg        | SVG sprite contains legacy icons                                                                                   | `1.x`, `2.x` and `3.x` |
-| icons.json        | legacy JSON file created from sprite.svg                                                                           | `1.x`, `2.x` and `3.x` |
-| legacy-icons.js   | JS module created from sprite.svg                                                                                  | `3.x` only             |
+| Filename          | Description                                                                                             | Supported versions     |
+| ----------------- | ------------------------------------------------------------------------------------------------------- | ---------------------- |
+| carbon-icons.svg  | Contains current icons (consolidated subset of legacy icons used in IBM Bluemix)                        | `3.x` and newer        |
+| carbon-icons.json | JSON file created from carbon-icons.svg, used in [Carbon](/guidelines/iconography/library)              | `3.x` and newer        |
+| carbon-icons.js   | JS module created from carbon-icons.svg, used in `Icon` React Component in [carbon-components-react](#) | `3.x` and newer        |
+| sprite.svg        | SVG sprite contains legacy icons                                                                        | `1.x`, `2.x` and `3.x` |
+| icons.json        | legacy JSON file created from sprite.svg                                                                | `1.x`, `2.x` and `3.x` |
+| legacy-icons.js   | JS module created from sprite.svg                                                                       | `3.x` only             |
 
 ### Accessibility
 

@@ -57,8 +57,7 @@ exports.createPages = ({ actions, graphql }) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       const slug = node.fields.slug;
       const currentPage = node.fields.currentPage;
-      const tabs =
-        node.frontmatter.tabs === null ? [] : node.frontmatter.tabs;
+      const tabs = node.frontmatter.tabs === null ? [] : node.frontmatter.tabs;
       let currentPath =
         node.frontmatter.tabs === null
           ? slug.slice(0, slug.lastIndexOf(currentPage))
@@ -72,7 +71,10 @@ exports.createPages = ({ actions, graphql }) => {
         },
       });
       if (tabs.length > 1) {
-        const current = tabs[0].toLowerCase().split(' ').join('-');
+        const current = tabs[0]
+          .toLowerCase()
+          .split(' ')
+          .join('-');
         const lastIndex = currentPath.lastIndexOf(current);
         if (lastIndex >= 0) {
           currentPath = currentPath.slice(0, currentPath.lastIndexOf(current));

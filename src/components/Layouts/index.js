@@ -2,9 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql, Link } from 'gatsby';
-import classnames from 'classnames';
+import Packages from '../../../package.json';
 import GlobalSearch from '../GlobalSearch';
-import Footer from '../Footer';
 import LeftNav from '../LeftNav';
 import favicon32 from '../../content/global/images/favicon-32.png';
 import {
@@ -16,6 +15,7 @@ import {
   HeaderGlobalAction,
 } from 'carbon-components-react/lib/components/UIShell';
 import { AppSwitcher20, Menu32 } from '@carbon/icons-react';
+import { WebsiteFooter } from '@carbon/addons-website';
 
 import '../../styles/index.scss';
 import '../../styles/experimental.scss';
@@ -104,6 +104,11 @@ class Layout extends React.Component {
     const { GATSBY_CARBON_ENV } = process.env;
     const isInternal = GATSBY_CARBON_ENV == 'internal';
     const { children } = this.props;
+    const version = Packages.dependencies['carbon-components'];
+    const reactVersion = Packages.dependencies['carbon-components-react'];
+    const currentYear = new Date().getFullYear();
+
+    const lastUpdated = 'December 19, 2018';
 
     return (
       <StaticQuery
@@ -180,7 +185,45 @@ class Layout extends React.Component {
 
             <div className="container">
               {children}
-              <Footer />
+              <WebsiteFooter
+                logoOffset={true}
+                linksCol1={[
+                  { href: '/contributing/designers', linkText: 'Contribute' },
+                  { href: 'https://www.ibm.com/privacy', linkText: 'Privacy' },
+                  {
+                    href: 'https://www.ibm.com/legal',
+                    linkText: 'Terms of Use',
+                  },
+                  { href: 'https://www.ibm.com', linkText: 'IBM.com' },
+                ]}
+                linksCol2={[
+                  {
+                    href: 'https://dribbble.com/_carbondesign',
+                    linkText: 'Dribble',
+                  },
+                  {
+                    href: 'https://medium.com/@_carbondesign',
+                    linkText: 'Medium',
+                  },
+                  {
+                    href: 'https://twitter.com/_carbondesign',
+                    linkText: 'Twitter',
+                  },
+                ]}>
+                <p>
+                  Have questions? Email us or open an issue in{' '}
+                  <a href="#">GitHub.</a>
+                </p>
+                <p>
+                  Vanilla Components version {version}
+                  <br />
+                  React Components version {reactVersion}
+                  <br />
+                  Last updated {lastUpdated}
+                  <br />
+                  Copyright © {currentYear} IBM
+                </p>
+              </WebsiteFooter>
             </div>
           </>
         )}

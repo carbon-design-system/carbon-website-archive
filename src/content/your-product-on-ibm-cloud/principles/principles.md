@@ -1,14 +1,13 @@
 ---
-
 title: Principles
 internal: true
 ---
 
-## User-Centered Product Development
+## User-centered product development
 
-### Clarify the Job to be Done
+### Clarify the 'Job to be Done'
 
-**The Jobs to be Done framework helps a product focus on what the user is trying to accomplish, rather than the steps they are taking to get there.**
+**The 'Jobs to be Done' framework helps a product focus on what the user is trying to accomplish, rather than the steps they are taking to get there.**
 
 For example, the user takes screenshots of your dashboard to use in a monthly report and your team may develop functionality that exports the data in a nicely formatted PDF. This improves the user experience, but doesn't address the user's true job-to-be-done of communicating and collaborating with their team. The team used their time developing a way to print a PDF and not tagging, commenting, saving, and sharing charts within your application.
 
@@ -16,7 +15,7 @@ Product providers can start by talking to real users and mapping the steps taken
 
 Understanding these jobs to be done will help your team identify the opportunities that lead to innovative products. Ignoring these opportunities leaves the product stagnant and at risk of losing users to competitors.
 
-### Content as UI (Defer to Data)
+### Content as UI (defer to data)
 
 **Your product's UI should defer to data before chrome or passive white space. Strive to put content at the center of your user's interaction with your product.**
 
@@ -24,9 +23,9 @@ Consider when your user needs information and how the importance of information 
 
 Help the user glean insights from your data rather than simply presenting it to them. This helps the user make informed decisions and accomplish tasks more quickly.
 
-## Put the User in Control
+## Put the user in control
 
-### Immediate Confirmation and Progress
+### Immediate confirmation and progress
 
 **A product should strive to provide immediate results of user actions, or feedback and status if that is not possible.**
 
@@ -34,19 +33,19 @@ A product may not be able to display information or return feedback immediately 
 
 The result of accurate system status is an increase in the user's perceived performance of the product and platform. This helps the user feel in control rather than at the mercy of the system.
 
-## Reduce the User's Memory Load
+## Reduce the user's memory load
 
-### Domain Model
+### Domain model
 
 **The IBM Cloud platform is a system composed of multiple applications, resources, and platforms working together. Your product should reflect an appropriate domain model and not your org chart or a system model.**
 
-_to do: Explanation of the Domain vs system model_
+_to do: Explanation of the domain vs system model_
 
 When planning your product's UI, put the emphasis on the tasks the user has to complete rather than business and technical limitations. Forcing the user to learn a new mental model for your product increases the time to productivity and creates a disjointed experience between your product and the platform. Understanding the task helps us develop a better tool. Your product plays a part in the overall system.
 
 Usability is increased when the user understands the domain model. Users can efficiently work within our platform, know what to expect when an action is taken, instinctively navigate the platform, and understand how components work and relate to each other.
 
-### Transferability of Learning
+### Transferability of learning
 
 **Knowledge the user gains in one part of our platform should be applicable to the rest of the platform.**
 
@@ -56,9 +55,9 @@ Follow similar patterns and concepts to help the user relate what they already k
 
 If this principle is followed, users will have a much shallower learning curve, be able to get to productive use in a shorter period, and perceive the product as easy to use. This builds confidence in a product and decreases the chance of users abandoning a product that is difficult to learn.
 
-## Support Consistency
+## Support consistency
 
-### Minimize Transitional Volatility
+### Minimize transitional volatility
 
 **Use a navigation and mental model that is consistent with the platform and neighboring products in your user's flow.**
 
@@ -68,7 +67,7 @@ A product can alleviate the effects of transitional volatility by following a si
 
 Users will be able to quickly move between screens and states in your product when they spend less time getting reoriented. Their expectations for the platform's capability will increase. When there is too much volatility the experience feels disjointed.
 
-##Create Aesthetic Appeal
+##Create aesthetic appeal
 **A pleasing visual design will improve a product's perceived quality and usability. A product must balance the aesthetic appeal with other user needs.**
 
 Users are more likely to forgive performance and usability shortcomings when there is an emotional connection to your product.

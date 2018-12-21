@@ -22,7 +22,7 @@ export class HomepageHeader extends React.Component {
       <h3 className="homepage--header__title">
         Carbon <br />
         Design System
-      </h3>   
+      </h3>
     );
 
     return (
@@ -31,9 +31,7 @@ export class HomepageHeader extends React.Component {
         <section className="homepage--header">
           <div className="ibm--grid">
             <div className="ibm--row">
-              <div className="ibm--col-lg-4 ibm--offset-lg-4">
-                {homeTitle}
-              </div>
+              <div className="ibm--col-lg-4 ibm--offset-lg-4">{homeTitle}</div>
             </div>
           </div>
           <img src={bannerImg} alt="IBM Product Design System banner image" />
@@ -43,13 +41,18 @@ export class HomepageHeader extends React.Component {
             <div className="ibm--row">
               <div className="ibm--col-md-4  ibm--col-lg-4 ibm--offset-lg-4">
                 <h3>
-                  Inclusive, flexible<br/>
+                  Inclusive, flexible
+                  <br />
                   and consistent
                 </h3>
               </div>
               <div className="ibm--col-lg-8 ibm--col-md-4">
                 <h2 className="bx--type-expressive-heading-04">
-                  The <strong>Carbon Design System</strong> is IBM&rsquo;s open-source design system for products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
+                  The <strong>Carbon Design System</strong> is IBM&rsquo;s
+                  open-source design system for products and experiences. With
+                  the IBM Design Language as its foundation, the system consists
+                  of working code, design tools and resources, human interface
+                  guidelines, and a vibrant community of contributors.
                 </h2>
               </div>
             </div>
@@ -61,8 +64,8 @@ export class HomepageHeader extends React.Component {
 }
 
 export class HomepageFooter extends React.Component {
-  render() { 
-    return (       
+  render() {
+    return (
       <div className="homepage--callout homepage--callout--blue">
         <div className="ibm--grid">
           <div className="ibm--row">
@@ -76,9 +79,9 @@ export class HomepageFooter extends React.Component {
               <div className="homepage--footer__info">
                 <h2 className="bx--type-expressive-heading-04">
                   We welcome all feedback, designs, or ideas in order to produce
-                  the best possible experience for our users. If you&rsquo;re interested
-                  in contributing, check out our contributing guidelines to get
-                  started.
+                  the best possible experience for our users. If you&rsquo;re
+                  interested in contributing, check out our contributing
+                  guidelines to get started.
                 </h2>
                 <Link to="/contributing" alt="Start contributing">
                   Start contributing

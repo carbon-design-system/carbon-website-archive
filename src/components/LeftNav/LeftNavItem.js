@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { Link } from 'gatsby';
 
-import { 
+import {
   SideNavLink,
   SideNavMenu,
   SideNavMenuItem,
@@ -68,13 +68,13 @@ export default class LeftNavItem extends React.Component {
         href: 'javascript:void(0)',
         element: Link,
         to: `/${this.props.itemSlug}/${item}`,
-        key: item
+        key: item,
       };
-      
+
       if (isNavItemActive) {
         navItemProps['aria-current'] = 'page';
       }
-      
+
       if (hideInternal) {
         return '';
       }
@@ -94,7 +94,7 @@ export default class LeftNavItem extends React.Component {
 
     const menuItemProps = {
       icon: <Awake16 />,
-      title: item.title
+      title: item.title,
     };
 
     if (isOpen) {
@@ -104,15 +104,18 @@ export default class LeftNavItem extends React.Component {
     return (
       <>
         {hasSubNav ? (
-          <SideNavMenu {...menuItemProps}> 
+          <SideNavMenu {...menuItemProps}>
             {this.renderSubNavItems(item['sub-nav'], location, itemSlug)}
           </SideNavMenu>
         ) : (
-          <SideNavLink icon={<Awake16 />} href="javascript:void(0)" to={`/${itemSlug}`} element={Link}>
+          <SideNavLink
+            icon={<Awake16 />}
+            href="javascript:void(0)"
+            to={`/${itemSlug}`}
+            element={Link}>
             {item.title}
           </SideNavLink>
         )}
-        
       </>
     );
   }
@@ -128,12 +131,16 @@ export default class LeftNavItem extends React.Component {
  */
 function normalizePath(path) {
   const paths = Array.isArray(path) ? path : [path];
-  return paths.reduce((a, item) => [
-    ...a,
-    ...item.replace(__PATH_PREFIX__, '')
-      .split('/')
-      .filter(Boolean),
-  ], []);
+  return paths.reduce(
+    (a, item) => [
+      ...a,
+      ...item
+        .replace(__PATH_PREFIX__, '')
+        .split('/')
+        .filter(Boolean),
+    ],
+    []
+  );
 }
 
 /**

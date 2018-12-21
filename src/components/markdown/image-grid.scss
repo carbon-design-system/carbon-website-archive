@@ -22,11 +22,10 @@
 
     strong {
       display: block;
-      margin-bottom: .5rem !important;
+      margin-bottom: 0.5rem !important;
     }
 
     &.dark-bg {
-
       img {
         background-color: $color__blue-90;
       }
@@ -35,7 +34,6 @@
 
   div:first-child:nth-last-child(2),
   div:first-child:nth-last-child(2) ~ div {
-
     @include breakpoint('md') {
       width: calc(50% - 1rem);
     }
@@ -78,13 +76,10 @@
 
 @for $i from 1 through 4 {
   .image-grid--#{$i} {
-
     > div:nth-child(#{$i}) {
-
       img {
         background-color: $color__blue-90;
       }
     }
   }
 }
-

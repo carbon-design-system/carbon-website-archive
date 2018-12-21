@@ -1,5 +1,4 @@
 ---
-
 title: Tooltip
 tabs: ['Code', 'Usage']
 ---

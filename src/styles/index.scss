@@ -18,6 +18,7 @@ $feature-flags: (
 @import '@carbon/type/scss/_classes.scss';
 
 @import 'carbon-components/scss/globals/scss/styles.scss';
+@import '@carbon/addons-website/scss/styles';
 
 //temporary
 .bx--aspect-ratio--2x1 {
@@ -43,7 +44,6 @@ $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
 @import '../components/CodeSnippet/code-snippet.scss';
 @import '../components/ClickableTile/clickable-tile.scss';
 @import '../components/PageTable/page-table.scss';
-@import '../components/Footer/footer.scss';
 @import '../components/DoDontExample/do-dont-example.scss';
 @import '../components/ColorBlock/color-block.scss';
 @import '../components/ColorCard/color-card.scss';

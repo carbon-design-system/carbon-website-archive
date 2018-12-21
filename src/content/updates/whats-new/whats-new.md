@@ -1,6 +1,7 @@
 ---
 title: What's New
 ---
+
 ##October 2018
 
 ### Experimental
@@ -51,22 +52,22 @@ Go check out the [Swatches](/guidelines/color/swatches) page to see the new colo
 - The new, updated palette is available with Design Kit
 - The changes include (bold indicates a new color token)
 
-- $ui-05 – #5A6872 (passing 4.5:1, high contrast border, secondary icons)
-- $ui-04 – #8897A2 (passing 3:1, now used for emphasis borders)
-- $ui-03 – #DFE3E6 (not passing 3:1, now used for subtle borders)
-- $support-01 - #E0182D (passing 4.5:1)
-- $text-03 - #CDD1D4 (not passing 4,5:1, used only for placeholder text)
-- $field-01 - #F4F7FB (input field background on ui-01)
-- **$field-02 - #FFFFFF (input field background on ui-02)**
-- **$inverse-02 - #272d33 (passing 4,5:1)**
+- \$ui-05 – #5A6872 (passing 4.5:1, high contrast border, secondary icons)
+- \$ui-04 – #8897A2 (passing 3:1, now used for emphasis borders)
+- \$ui-03 – #DFE3E6 (not passing 3:1, now used for subtle borders)
+- \$support-01 - #E0182D (passing 4.5:1)
+- \$text-03 - #CDD1D4 (not passing 4,5:1, used only for placeholder text)
+- \$field-01 - #F4F7FB (input field background on ui-01)
+- **\$field-02 - #FFFFFF (input field background on ui-02)**
+- **\$inverse-02 - #272d33 (passing 4,5:1)**
 
 - There are four new hover tokens added to the Carbon palette. They can now be found on the [Swatches](/guidelines/color/swatches) page and are available in the Design Kit and palette plugin
 
-- $hover-primary – #30588c
-- $hover-primary-text – #294c86
-- $hover-row – #5596e6 at 10% opacity
-- $hover-secondary – #3d70b2
-- $hover-danger – #bd1427
+- \$hover-primary – #30588c
+- \$hover-primary-text – #294c86
+- \$hover-row – #5596e6 at 10% opacity
+- \$hover-secondary – #3d70b2
+- \$hover-danger – #bd1427
 
 ### Icons
 
@@ -80,7 +81,6 @@ Go check out the [Swatches](/guidelines/color/swatches) page to see the new colo
 - Components on the Component page are now split up into five different artboards: Controls, Content, Navigation, Inputs, and Data Tables
 - Library has been made more flexible and customizable
 - Kit and library have been updated with the new colors, components, and icon styles.
-
 
 <hr class="divider">
 

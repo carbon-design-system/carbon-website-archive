@@ -2,15 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import classNames from 'classnames';
 
-const GridWrapper = ({
-  children, 
-  col_lg,
-  col_md,
-  col_sm,
-  flex,
-  bleed
-}) => {
-
+const GridWrapper = ({ children, col_lg, col_md, col_sm, flex, bleed }) => {
   const rowClasses = classNames(
     `ibm--col-lg-${col_lg}`,
     `ibm--col-md-${col_md}`,
@@ -24,11 +16,9 @@ const GridWrapper = ({
 
   return (
     <div className="ibm--row">
-      <div className={rowClasses}>
-        {children}
-      </div>
+      <div className={rowClasses}>{children}</div>
     </div>
-  )
+  );
 };
 
 GridWrapper.propTypes = {
@@ -36,28 +26,28 @@ GridWrapper.propTypes = {
 
   /**
    * Specify the col width at large breakpoint, default is 12
-  */
+   */
   col_lg: PropTypes.string,
 
   /**
    * Specify the col width at medium breakpoint, default is 8
-  */
- col_md: PropTypes.string,
+   */
+  col_md: PropTypes.string,
 
- /**
+  /**
    * Specify the col width at small breakpoint, default is 4
-  */
- col_sm: PropTypes.string,
+   */
+  col_sm: PropTypes.string,
 
   /**
    * Set to true to set display:flex | flexwrap: wrap to row
-  */
+   */
   flex: PropTypes.string,
 
   /**
    * Set to true to remove col padding
-  */
- bleed: PropTypes.string,
+   */
+  bleed: PropTypes.string,
 };
 
 GridWrapper.defaultProps = {

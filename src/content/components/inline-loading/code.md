@@ -1,5 +1,4 @@
 ---
-
 title: Inline Loading
 tabs: ['Code', 'Usage']
 ---
