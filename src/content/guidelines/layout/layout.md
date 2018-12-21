@@ -187,8 +187,12 @@ Horizontal and vertical alignment are equally critical. When present, the eye ca
 
 Within a design system, layouts often follow a common structure, especially with regard to navigation. This section covers which of these UI patterns you'll need, where users will expect to see them on a page and how they’ll affect the content that lives within the responsive grid.
 
-1. [Screen Regions](#screen-regions)
-2. [Panel Behavior](#panel-behavior)
+<anchor-links small="true">
+<ul>
+    <li><a href="#screen-regions">Screen Regions</a></li>
+    <li><a href="#panel-behavior">Panel Behavior</a></li>
+</ul>
+</anchor-links>
 
 ### Screen Regions
 

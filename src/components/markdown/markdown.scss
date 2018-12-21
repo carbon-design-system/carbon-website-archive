@@ -220,6 +220,7 @@ h5 {
 .anchor-links--small .page-ul {
   margin-top: 2.25rem;
 }
+.anchor-links--small a,
 .anchor-links--small .page-ul > li a {
   @include type-style('body-long-02');
 }
