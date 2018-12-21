@@ -8,7 +8,7 @@ tabs: ['Overview', 'Type Styles']
 
 ## Typeface: IBM Plex
 
-Carbon uses the new IBM open-sourced typeface, IBM Plex. It has been carefully designed to meet IBM's needs as a global technology company and reflect IBM's spirit, beliefs and design principles. IBM Plex can be accessed and downloaded from the [Plex GitHub Repo](https://github.com/ibm/plex).
+Carbon uses the new IBM open-sourced typeface, IBM Plex. It has been carefully designed to meet IBM's needs as a global technology company and reflect IBM's spirit, beliefs and design principles. IBM Plex can be accessed and downloaded from the [Plex GitHub repo](https://github.com/ibm/plex).
 
 #### Sans-serif font stack
 
@@ -43,7 +43,7 @@ The gap between two steps is always based on increments of two. It is a non-line
 
 Font weight is an important typographic style that can add emphasis and is used to differentiate content hierarchy. Font weight and size pairings must be carefully balanced. A bold weight will always have more emphasis than a lighter weight font of the same size. However, a lighter weight font can rank hierarchically higher than a bold font if the lighter weight type size is significantly larger than the bold.
 
-IBM Plex family provides a wide range of weights. However, only SemiBold, Regular, Light should be used for product design.
+IBM Plex family provides a wide range of weights. However, only Light, Regular, and SemiBold should be used for product design.
 
 <type-weight-table></type-weight-table>
 

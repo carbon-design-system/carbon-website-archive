@@ -1,6 +1,6 @@
 ---
 label: Component
-title: Code Snippet
+title: Code snippet
 tabs: ['Code', 'Usage', 'Style']
 ---
 
@@ -8,7 +8,7 @@ tabs: ['Code', 'Usage', 'Style']
 variations:</page-intro>
 
 <component 
-    name="Code Snippet"
+    name="Code snippet"
     component="code-snippet" 
     variation="code-snippet"
     codepen="mKJBoE"
@@ -17,7 +17,7 @@ variations:</page-intro>
     >
 </component>
 <component 
-    name="Inline Code Snippet"
+    name="Inline code snippet"
     component="code-snippet" 
     variation="code-snippet--inline"
     codepen="pKJWMK"
@@ -27,7 +27,7 @@ variations:</page-intro>
     >
 </component>
 <component 
-    name="Multi Line Code Snippet"
+    name="Multi line code snippet"
     component="code-snippet" 
     variation="code-snippet--multi"
     codepen="ZRGXdq"

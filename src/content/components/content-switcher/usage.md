@@ -1,6 +1,6 @@
 ---
 label: Component
-title: Content Switcher
+title: Content switcher
 tabs: ['Code', 'Usage', 'Style']
 ---
 
@@ -16,6 +16,6 @@ Based on usage, there should be a default selection. The default selection is al
 
 ### Example
 
-The content switcher is used for large groups of content, as opposed to the [Toggle](/components/toggle) which is meant for a “Yes/No” or “On/Off” binary decision.
+The content switcher is used for large groups of content, as opposed to the [toggle](/components/toggle) which is meant for a “Yes/No” or “On/Off” binary decision.
 
 ![content switcher example](images/content-switcher-usage-1.png)

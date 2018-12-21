@@ -256,7 +256,7 @@
 }
 
 //---------------------------------------
-// UI Shell
+// UI shell
 //---------------------------------------
 
 .ui-shell.component-example__live--rendered .demo--platform-header {
@@ -274,7 +274,7 @@
 }
 
 //---------------------------------------
-// Experimental Text Input
+// Experimental text input
 //---------------------------------------
 
 .carbon-demo-experimental .demo--form-item {
@@ -283,14 +283,14 @@
 
 
 //---------------------------------------
-// Experimental Date Picker
+// Experimental date picker
 //---------------------------------------
 .carbon-demo-experimental .demo--date-picker__input[data-invalid] {
   box-shadow: none;
 }
 
 //---------------------------------------
-// Experimental Select
+// Experimental select
 //---------------------------------------
 .carbon-demo-experimental .demo--select--inline .demo--select-input,
 .carbon-demo-experimental .demo--select-input[data-invalid] {
@@ -302,14 +302,14 @@
 }
 
 //---------------------------------------
-// Experimental Notification
+// Experimental notification
 //---------------------------------------
 .component-example .carbon-demo-experimental .demo--inline-notification {
   display: inline-flex;
 }
 
 //---------------------------------------
-// Experimental Date Picker
+// Experimental date picker
 //---------------------------------------
 .component-example .carbon-demo-experimental .flatpickr-day.inRange {
   box-shadow: none;
@@ -333,14 +333,14 @@
 }
 
 //---------------------------------------
-// Experimental Loading
+// Experimental loading
 //---------------------------------------
 .component-example .carbon-demo-experimental .demo--loading-overlay {
   position: absolute;
 }
 
 //---------------------------------------
-// Experimental Tabs
+// Experimental tabs
 //---------------------------------------
 .component-example .carbon-demo-experimental .demo--tabs__nav-item {
   @include breakpoint('768px') {

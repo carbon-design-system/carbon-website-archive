@@ -25,35 +25,35 @@ tabs: ['Code', 'Usage', 'Style']
 
 <div class="image-grid">
   <div>
-    <img src="images/button-style-1.png" alt="Example of a normal Primary Button"/>
+    <img src="images/button-style-1.png" alt="Example of a normal primary button"/>
   </div>
   <div>
-    <img src="images/button-style-2.png" alt="Example of a Primary Button on hover"/>
+    <img src="images/button-style-2.png" alt="Example of a primary button on hover"/>
   </div>
   <div>
-    <img src="images/button-style-3.png" alt="Example of a disabled Primary Button"/>
+    <img src="images/button-style-3.png" alt="Example of a disabled primary button"/>
   </div>
   <div>
-    <img src="images/button-style-4.png" alt="Example of a Secondary Button"/>
+    <img src="images/button-style-4.png" alt="Example of a secondary button"/>
   </div>
   <div>
-    <img src="images/button-style-5.png" alt="Example of a Secondary Button on hover"/>
+    <img src="images/button-style-5.png" alt="Example of a secondary button on hover"/>
   </div>
   <div>
-    <img src="images/button-style-6.png" alt="Example of a disabled Secondary Button"/>
+    <img src="images/button-style-6.png" alt="Example of a disabled secondary button"/>
   </div>
   <div>
-    <img src="images/button-style-15.png" alt="Example of a Ghost Button"/>
+    <img src="images/button-style-15.png" alt="Example of a ghost button"/>
   </div>
   <div>
-    <img src="images/button-style-16.png" alt="Example of a Ghost Button on hover"/>
+    <img src="images/button-style-16.png" alt="Example of a ghost button on hover"/>
   </div>
   <div>
-    <img src="images/button-style-17.png" alt="Example of a disabled Ghost Button"/>
+    <img src="images/button-style-17.png" alt="Example of a disabled ghost button"/>
   </div>
 </div>
 
-_Primary, Secondary, and Ghost Button state examples_
+_Primary, secondary, and ghost button state examples_
 
 ## Typography
 
@@ -65,7 +65,7 @@ Button text should be set in sentence case, with only the first word in a phrase
 
 ## Structure
 
-A Button cannot have any element or text within 16 pixels / 1 rem of its borders. For Button groups, the primary button is positioned on the outside of the set, while the secondary button is positioned inside. For a Button with a glyph, the space between the button label and the glyph must be greater than or equal to 16 pixels / 1 rem. This is to accommodate for instances where two or more buttons with glyphs appear together.
+A button cannot have any element or text within 16 pixels / 1 rem of its borders. For button groups, the primary button is positioned on the outside of the set, while the secondary button is positioned inside. For a button with a glyph, the space between the button label and the glyph must be greater than or equal to 16 pixels / 1 rem. This is to accommodate for instances where two or more buttons with glyphs appear together.
 
 | Class                            | Property                    | px / rem | Spacing token |
 | -------------------------------- | --------------------------- | -------- | ------------- |
@@ -78,41 +78,41 @@ A Button cannot have any element or text within 16 pixels / 1 rem of its borders
 
 <div class="image-grid">
   <div>
-    <img src="images/button-style-7.png" alt="Structure for a Primary Button"/>
+    <img src="images/button-style-7.png" alt="Structure for a primary button"/>
   </div>
   <div>
-    <img src="images/button-style-8.png" alt="Structure for a small Primary Button"/>
+    <img src="images/button-style-8.png" alt="Structure for a small primary button"/>
   </div>
 </div>
 
-_Structure measurements for small and regular Primary Button | px / rem_
+_Structure measurements for small and regular primary button | px / rem_
 
 <div class="image-grid">
   <div>
-    <img src="images/button-style-9.png" alt="Spacing for Primary Button"/>
+    <img src="images/button-style-9.png" alt="Spacing for primary button"/>
   </div>
   <div>
-    <img src="images/button-style-10.png" alt="Spacing for small Primary Button"/>
+    <img src="images/button-style-10.png" alt="Spacing for small primary button"/>
   </div>
   <div>
-    <img src="images/button-style-11.png" alt="External Button spacing"/>
+    <img src="images/button-style-11.png" alt="External button spacing"/>
   </div>
   <div>
-    <img src="images/button-style-12.png" alt="Internal spacing for a Button with glyph"/>
+    <img src="images/button-style-12.png" alt="Internal spacing for a button with glyph"/>
   </div>
   <div>
     <img src="images/button-style-13.png" alt="Ghost button spacing"/>
   </div>
   <div>
-    <img src="images/button-style-14.png" alt="Small Ghost button spacing"/>
+    <img src="images/button-style-14.png" alt="Small ghost button spacing"/>
   </div>
 </div>
 
-_Spacing measurements for various Button types | px / rem_
+_Spacing measurements for various button types | px / rem_
 
 ### Recommended
 
-The following specs are not built into any of the Button components but are recommended by design as the proper distance between Buttons.
+The following specs are not built into any of the button components but are recommended by design as the proper distance between buttons.
 
 | Attribute        | Property                  | px / rem   | Spacing token |
 | ---------------- | ------------------------- | ---------- | ------------- |

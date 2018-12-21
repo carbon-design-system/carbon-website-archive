@@ -7,7 +7,7 @@ tabs: ['Code', 'Usage', 'Style']
 <page-intro>**Buttons** express what action will occur when the user clicks or touches it. Buttons are used to initialize an action, either in the background or foreground of an experience.</page-intro>
 
 <component 
-    name="Primary Button"
+    name="Primary button"
     component="button"
     variation="button--primary" 
     codepen="QMaZmK"
@@ -16,7 +16,7 @@ tabs: ['Code', 'Usage', 'Style']
     >
 </component>
 <component 
-    name="Secondary Button"
+    name="Secondary button"
     component="button"
     variation="button--secondary" 
     codepen="WdwJKG"
@@ -25,7 +25,7 @@ tabs: ['Code', 'Usage', 'Style']
     >
 </component>
 <component 
-    name="Tertiary Button"
+    name="Tertiary button"
     component="button"
     variation="button--tertiary" 
     codepen="WJqbvX"
@@ -34,7 +34,7 @@ tabs: ['Code', 'Usage', 'Style']
     >
 </component>
 <component 
-    name="Ghost Button"
+    name="Ghost button"
     component="button"
     variation="button--ghost" 
     codepen="ppyVOw"
@@ -52,7 +52,7 @@ tabs: ['Code', 'Usage', 'Style']
     >
 </component>
 <component 
-    name="Primary Danger button"
+    name="Primary danger button"
     component="button"
     variation="button--danger--primary" 
     codepen="bKVgOK"
@@ -61,7 +61,7 @@ tabs: ['Code', 'Usage', 'Style']
     >
 </component>
 <component 
-    name="Small Primary button"
+    name="Small primary button"
     component="button"
     variation="button--primary--small" 
     codepen="zjVxoX"

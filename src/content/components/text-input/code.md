@@ -1,13 +1,13 @@
 ---
 label: Component
-title: Text Input
+title: Text input
 tabs: ['Code', 'Usage', 'Style']
 ---
 
 <page-intro>**Text inputs** enable the user to interact with and input data. Use when the application requires long-form content from the user.</page-intro>
 
 <component 
-    name="Text Input"
+    name="Text input"
     component="text-input" 
     variation="text-input"
     codepen="YEZLyd"
@@ -18,7 +18,7 @@ tabs: ['Code', 'Usage', 'Style']
 </component>
 
 <component 
-    name="Password Input"
+    name="Password input"
     component="text-input" 
     variation="text-input--password"
     codepen="PyYXeb"
@@ -28,7 +28,7 @@ tabs: ['Code', 'Usage', 'Style']
 </component>
 
 <component 
-    name="Text Area"
+    name="Text area"
     component="text-area" 
     variation="text-area"
     codepen="yPMjeg"

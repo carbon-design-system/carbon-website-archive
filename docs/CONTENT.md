@@ -1,8 +1,8 @@
 # Content
 
-## File Structure
+## File structure
 
-All markdown files live inside of the `src/content` folder and follow the site navigation. They live inside a folder that is named the same as the file unless it is a page with tabbed navigation. "Tabbed" pages _(for example Getting Starter > Developers)_ should have all the pages inside the same folder, with the file name matching the page title.
+All Markdown files live inside of the `src/content` folder and follow the site navigation. They live inside a folder that is named the same as the file unless it is a page with tabbed navigation. "Tabbed" pages _(for example Getting Starter > Developers)_ should have all the pages inside the same folder, with the file name matching the page title.
 
 ```
 src
@@ -30,7 +30,7 @@ src
 
 ## Frontmatter
 
-The top of each markdown file has required frontmatter fields to display the header for the page.
+The top of each Markdown file has required frontmatter fields to display the header for the page.
 
 ```
 ---
@@ -48,7 +48,7 @@ Required fields are:
 
 Non-required fields are:
 
-- `tabs`: An array of the page tabs (in the desired order), tab name should match markdown file name.
+- `tabs`: An array of the page tabs (in the desired order), tab name should match Markdown file name.
 - `internal: true` Used to designate internal only content.
 
 ## Markdown
@@ -89,7 +89,7 @@ Smaller image w/ text wrapping
 
 ![Example](https://user-images.githubusercontent.com/2753488/45236528-b02cb980-b2a1-11e8-9e81-af4ec353d3e9.png)
 
-#### Image Component
+#### Image component
 
 Image components are used on component pages under the Style and Usage tabs to display an image with padding around it and a light background color. See the tooltip page for an examples
 
@@ -99,17 +99,17 @@ Image components are used on component pages under the Style and Usage tabs to d
 </div>
 ```
 
-#### Image Grid
+#### Image grid
 
 Image grids are used on component pages, usually under the "Style" tab to display a group of images in a grid. See the button page for an example.
 
 ```
 <div class="image-grid">
   <div>
-    <img src="images/button-style-7.png" alt="Structure for a Primary Button"/>
+    <img src="images/button-style-7.png" alt="Structure for a primary button"/>
   </div>
   <div>
-    <img src="images/button-style-8.png" alt="Structure for a small Primary Button"/>
+    <img src="images/button-style-8.png" alt="Structure for a small primary button"/>
   </div>
 </div>
 ```
@@ -130,7 +130,7 @@ Image grids are used on component pages, usually under the "Style" tab to displa
     | Row 2A     | Row 2B  | Row 2C     |
     | Row 3A     | Row 3B  | Row 3C     |
 
-### Code & syntax highlighting
+### Code and syntax highlighting
 
 We support inline code and code blocks.
 
@@ -142,9 +142,9 @@ We support inline code and code blocks.
 
     ```
 
-## Custom Markdown Components
+## Custom Markdown components
 
-The carbon website has a handful of custom markdown components available for use inside any markdown file. Some are meant to be global and others were created for very specific use cases.
+The carbon website has a handful of custom Markdown components available for use inside any Markdown file. Some are meant to be global and others were created for very specific use cases.
 
 ### Video
 
@@ -165,7 +165,7 @@ The carbon website has a handful of custom markdown components available for use
   `twitchLive: dakotaz`
 ```
 
-### Global Components:
+### Global components:
 
 - `<page-intro>`
 - `<page-intro> **Bold and blue text** </page-intro>`
@@ -181,7 +181,7 @@ The carbon website has a handful of custom markdown components available for use
 
 ### Examples
 
-#### Clickable Tile inside FlexGroup
+#### Clickable tile inside FlexGroup
 
 ```
 <flex-group>
@@ -237,7 +237,7 @@ This will render the following set of examples
 </flex-group>
 ```
 
-### Page Specific Components:
+### Page specific components:
 
 **Type**
 
@@ -249,11 +249,11 @@ This will render the following set of examples
 
 - `<glossary>`
 
-**Component Status** (content pulled from data/components.json)
+**Component status** (content pulled from data/components.json)
 
 - `<component-status>`
 
-**Component Overview** (content pulled from data/components.json)
+**Component overview** (content pulled from data/components.json)
 
 - `<component-overview>`
 
@@ -271,11 +271,11 @@ This will render the following set of examples
 - `<motion-example type="easing" correcttext="Easing" incorrecttext="No-Easing"></motion-example></motion-example>`
 - `<motion-example type="duration" correcttext="300ms" incorrecttext="600ms"></motion-example>`
 
-## Component Page Components:
+## Component page components:
 
 ```
 <component
-    name="Text Input" //Required
+    name="Text input" //Required
     component="text-input" //Required
     variation="text-input" //Required
     codepen="YEZLyd" //Optional - Adds link to codepen
@@ -290,7 +290,7 @@ This will render the following set of examples
 <component-docs component="accordion"></component-docs>
 
 <component-react
-    name="Multi-select Dropdown"
+    name="Multi-select dropdown"
     component="MultiSelect"
     variation="MultiSelect"
     >

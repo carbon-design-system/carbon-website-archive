@@ -1,6 +1,6 @@
 ---
 label: Patterns
-title: Overflow Content
+title: Overflow content
 ---
 
 <page-intro>**Overflow content** is text, such as a paragraph or a text string, that exceeds a desired space. It also applies to a series of components that surpass a given space. Overflow content is typically reduced to fit a space or reduce repetition. Truncation and ‘Show more’ buttons are two ways to indicate that overflow content is continued elsewhere or below the fold.</page-intro>

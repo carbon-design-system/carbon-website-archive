@@ -7,7 +7,7 @@ title: Roadmap
 
 ## Q4 2018
 
-### Inspiring Visual Design
+### Inspiring visual design
 
 #### Layout
 
@@ -21,7 +21,7 @@ title: Roadmap
 - Show the core colors for use in a UI, with accessible interaction states.
 - Explain when I can open all the presets in the color palette.
 
-#### Icons and Illustration
+#### Icons and illustration
 
 - Show the shape elements shared by typography and icons.
 - Guidelines for creating a new icon.
@@ -29,7 +29,7 @@ title: Roadmap
 
 ## Q1 2019
 
-### Contribution and Adoption
+### Contribution and adoption
 
 #### Bringing in specific contributions from other IBM teams
 
@@ -43,7 +43,7 @@ title: Roadmap
 
 ## Q2 2019
 
-### Pattern Library
+### Pattern library
 
 Prioritize the most important compound components, layouts, and workflow patterns. Encourage bringing these in through contribution from extended teams.
 

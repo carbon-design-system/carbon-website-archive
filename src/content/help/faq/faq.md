@@ -39,7 +39,7 @@ First, make sure the problem is reproducible. Once confirmed, please open an iss
 
 #### Design Issue Repos
 
-[Design Kit](https://github.com/IBM/carbon-design-kit/issues/new)
+[Carbon Design Kit](https://github.com/IBM/carbon-design-kit/issues/new)
 
 [Icons](https://github.com/IBM/carbon-icons/issues/new)
 

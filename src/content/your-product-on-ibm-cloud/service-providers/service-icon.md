@@ -124,7 +124,7 @@ Inspect the code and make sure that your XML doesn't include the following:
 - `stroke` attributes
 - `stroke-width` attributes
 
-## Icon approval & submission
+## Icon approval and submission
 
 1. Ensure your icon meets all of the above icon requirements and is pixel perfect.
 2. Once your icon is ready, host one svg at 32x32px on your service endpoint.

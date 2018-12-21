@@ -1,11 +1,11 @@
 ---
 label: Experimental
-title: UI Shell
+title: UI shell
 tabs: ['Code', 'Usage']
 ---
 
 <component 
-    name="UI Shell"
+    name="UI shell"
     component="ui-shell"
     variation="ui-shell" 
     experimental="true"
