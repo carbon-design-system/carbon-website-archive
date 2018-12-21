@@ -1,5 +1,4 @@
 ---
-
 title: Loading
 tabs: ['Code', 'Usage']
 ---

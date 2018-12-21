@@ -3,7 +3,7 @@
   width: 100%;
   height: rem(48px);
   position: relative;
-  border-top: 1px solid rgba($ui-02, .25);
+  border-top: 1px solid rgba($ui-02, 0.25);
 }
 
 .page-tabs__list {
@@ -36,5 +36,5 @@
 
 .page-tabs__list li.selected a {
   border-top: 2px solid $brand-01;
-  background: rgba(255,255,255,.2);
+  background: rgba(255, 255, 255, 0.2);
 }

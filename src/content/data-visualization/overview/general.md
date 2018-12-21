@@ -1,5 +1,4 @@
 ---
-
 title: Overview
 tabs: ['General', 'Colors', 'Style']
 ---
@@ -65,7 +64,7 @@ Abbreviate labels if spacing is a concern. Follow these conventions across graph
 | Months           | Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec                                                                                                                                          |
 | 12 hour time     | 9am, 12pm, 6pm                                                                                                                                                                                      |
 | Numbers          | Describe the unabbreviated number in the axis label and use abbreviated numbers in the data increments. For example, the axis label “Cost in thousands” may have data increments 1K, 1.5K, 2K, etc. |
-| Currency         | For instance, if an axis label uses “Dollars”, the data increment may be $100, $200, $300, etc.                                                                                                     |
+| Currency         | For instance, if an axis label uses “Dollars”, the data increment may be $100, $200, \$300, etc.                                                                                                    |
 
 ## Accessibility
 

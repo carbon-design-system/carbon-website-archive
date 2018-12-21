@@ -14,12 +14,11 @@ tabs: ['Overview', 'Productive', 'Expressive']
 </ul>
 </anchor-links>
 
-
 ## Type tokens and themes
 
-Carbon utilizes type tokens and themes to manage typrography. 
+Carbon utilizes type tokens and themes to manage typrography.
 
-A _token_ is a named entity in a design system which represents specific visual attributes, such as font size, font weight, color, etc. Using tokens enables these specific values to be centralized and abstracted in the system, which in turn makes it easier to update designs—however wide-ranging—from a single source of truth. 
+A _token_ is a named entity in a design system which represents specific visual attributes, such as font size, font weight, color, etc. Using tokens enables these specific values to be centralized and abstracted in the system, which in turn makes it easier to update designs—however wide-ranging—from a single source of truth.
 
 A _theme_ is a complete set of tokens that have been designed to work harmoniously together.
 
@@ -46,7 +45,8 @@ font-family: 'IBM Plex Serif', 'Georgia', Times, serif;
 ### Mono font stack
 
 ```scss
-font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
+font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono',
+  'Bitstream Vera Sans Mono', Courier, monospace;
 ```
 
 ## Scale
@@ -67,19 +67,20 @@ Typography creates purposeful texture, guiding users to read and understand the 
 ### Weights
 
 Font weight is an important typographic variable that can add emphasis and differentiate content hierarchy. Font weight and size pairings must be carefully balanced. A bold weight will always have more emphasis than a lighter weight font of the same size. However, a lighter weight font can rank hierarchically higher than a bold font if the lighter weight type size is significantly larger than the bold one.
- 
+
 We suggest using IBM Plex Light, Regular, and SemiBold for digital experiences. The semibold weight is ideal for section headers, but should not be used for long text.
 
 <type-weight></type-weight>
 
-
 ### Italic
+
 Each weight has an italic style, which should only be used when you need to emphasize certain words in a sentence (titles of works, technical terms, names of devices, captions, etc.).
 
 <type-weight type="italic"></type-weight>
 
 ## Type Color
-Type color should be carefully considered, with legibility and accessibility as paramount concerns. Keep type color neutral in running text. Use primary blue for primary actions. 
+
+Type color should be carefully considered, with legibility and accessibility as paramount concerns. Keep type color neutral in running text. Use primary blue for primary actions.
 
 <grid-wrapper col_lg="8" flex="true"> 
     <do-dont-example correct=true>

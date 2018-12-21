@@ -1,5 +1,4 @@
 ---
-
 title: Accordion
 tabs: ['Code', 'Usage']
 ---

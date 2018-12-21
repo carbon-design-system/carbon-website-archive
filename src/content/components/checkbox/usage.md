@@ -1,5 +1,4 @@
 ---
-
 title: Checkbox
 tabs: ['Code', 'Usage']
 ---
@@ -12,7 +11,7 @@ The checkbox control allows for three states: **selected**, **unselected**, and 
 
 ### Checkbox vs. Radio Button
 
-Whereas radio buttons represent a group of _mutually exclusive_ choices, users can select one or more checkboxes from a group. In use cases where only one selection of a group is allowed, use the radio button component instead of the checkbox. 
+Whereas radio buttons represent a group of _mutually exclusive_ choices, users can select one or more checkboxes from a group. In use cases where only one selection of a group is allowed, use the radio button component instead of the checkbox.
 
 ### Checkbox vs. Toggle Switch
 

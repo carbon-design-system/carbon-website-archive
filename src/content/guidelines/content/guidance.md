@@ -52,7 +52,7 @@ Only use headline-style capitalization for table/grid column headers and product
 - coordinating conjunctions
 - prepositions, except as the first or last word
 
-## Do's & Dont's
+## Do's & dont's
 
 These guidelines apply for developers and writers working with IBM Cloud UI and documentation.
 

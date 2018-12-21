@@ -31,7 +31,10 @@ export default class FeatureTile extends React.Component {
                   <div className="feature-tile__info">
                     <p className="feature-tile__label">{label}</p>
                     <p className="feature-tile__title">{title}</p>
-                    <ArrowRight24 aria-label={`Go to ${title}`} className="feature-tile__icon" />
+                    <ArrowRight24
+                      aria-label={`Go to ${title}`}
+                      className="feature-tile__icon"
+                    />
                   </div>
                 </div>
               </div>

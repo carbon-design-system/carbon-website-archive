@@ -1,5 +1,4 @@
 ---
-
 title: Common Actions
 ---
 
@@ -9,7 +8,7 @@ title: Common Actions
 
 ### Cancel
 
-**Cancel** stops the current action and closes the component or item. The user should be warned of any possible negative consequences of stopping an action from progressing, such as data corruption or data loss. 
+**Cancel** stops the current action and closes the component or item. The user should be warned of any possible negative consequences of stopping an action from progressing, such as data corruption or data loss.
 
 **Usage:** Use a _secondary button_ or a _link_.
 
@@ -39,7 +38,7 @@ _"Close" action in an inline notification._
 
 ### Delete
 
-This action eradicates an existing object. _Delete_ actions cannot be easily undone and are typically permanent. The user should be warned of the negative consequences of destroying an object, such as loss of data. 
+This action eradicates an existing object. _Delete_ actions cannot be easily undone and are typically permanent. The user should be warned of the negative consequences of destroying an object, such as loss of data.
 
 **Usage:** Use either the `delete` "trash can" icon, a _danger button_, or a danger option in a menu. A _danger modal_ is used when a warning is needed to confirm an action.
 
@@ -49,7 +48,7 @@ _"Delete" action in a modal (top) and an overflow menu (bottom)._
 
 ### Remove
 
-This action removes an object from a list or item; however, the object is not destroyed as a result of the action. Multiple objects can be removed at once. 
+This action removes an object from a list or item; however, the object is not destroyed as a result of the action. Multiple objects can be removed at once.
 
 **Usage:** Use as a _button_ or `subtract` icon or glyph.
 
@@ -59,7 +58,7 @@ _"Remove" action as an icon._
 
 ### Reset
 
-This action reverts values back to their last saved state. The last saved state includes the values stored the last time the user clicked or triggered "Apply." 
+This action reverts values back to their last saved state. The last saved state includes the values stored the last time the user clicked or triggered "Apply."
 
 **Usage:** Typically applied as a _link_.
 
@@ -81,7 +80,7 @@ _"Add" action as a button with icon in a data table._
 
 ### Copy
 
-Creates a new identical instance of the selected object(s) in a specific destination. 
+Creates a new identical instance of the selected object(s) in a specific destination.
 
 **Usage:** Use the `copy` icon with the confirmation "copied" tooltip appearing post-click.
 
@@ -91,7 +90,7 @@ _"Copy" action as an icon with tooltip in a code snippet._
 
 ### Edit
 
-This action allows data or values to be changed. _Edit_ commonly triggers a state change to the targeted object or input item. 
+This action allows data or values to be changed. _Edit_ commonly triggers a state change to the targeted object or input item.
 
 **Usage:** Use as an option in a menu, or as a _button_ or `edit` icon.
 

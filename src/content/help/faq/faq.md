@@ -1,5 +1,4 @@
 ---
-
 title: FAQ
 ---
 
@@ -54,18 +53,17 @@ First, make sure the problem is reproducible. Once confirmed, please open an iss
 - [carbon-components-angular](https://github.com/IBM/carbon-components-angular/issues/new)
 - [carbon-charts](https://github.com/IBM/carbon-charts/issues/new)
 
-
 ### What can I expect for a response to my bug report?
 
 If you have a pressing bug or change it is best to make PR for the issue yourself. Our team works in sprints and will try to address your bug as soon as possible; sometimes within two or three days, but usually by the following sprint. Issues that are out of scope will be closed until they become a higher priority.
 
 Typical responses to bug reports will include:
 
-* Need more info, can't reproduce the problem
-* Won't fix, this isn't something we intend to support
-* Confirmed, will add to our roadmap (Carbon team will fix)
-* Confirmed, will accept PRs (need external member to fix)
-* Need to include design to verify this behavior is supported
+- Need more info, can't reproduce the problem
+- Won't fix, this isn't something we intend to support
+- Confirmed, will add to our roadmap (Carbon team will fix)
+- Confirmed, will accept PRs (need external member to fix)
+- Need to include design to verify this behavior is supported
 
 ### What should I do if I find a component that isn't accessible?
 

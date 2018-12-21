@@ -1,6 +1,6 @@
 # Deployments
 
-*Don't forget to update the date in Footer.js component*
+_Don't forget to update the date in Footer.js component_
 
 ## Random (for staging or test links)
 
@@ -24,7 +24,7 @@ ibmcloud cf push -f .circleci/manifest.random.yml
 # Build the internal site
 yarn build:internal
 
-# Run build locally 
+# Run build locally
 npx serve public
 
 # Test local production build of website
@@ -50,7 +50,7 @@ ibmcloud cf push carbon-website-internal  -f .circleci/manifest.internal.yml
 # Build the external site
 yarn build:external
 
-# Run build locally 
+# Run build locally
 npx serve public
 
 # Test local production build of website
@@ -70,4 +70,3 @@ ibmcloud cf blue-green-deploy carbon-website -f .circleci/manifest.external.yml 
 ibmcloud cf push -f .circleci/manifest.external.yml
 
 ```
-

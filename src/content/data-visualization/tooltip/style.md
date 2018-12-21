@@ -1,5 +1,4 @@
 ---
-
 title: Tooltip
 tabs: ['Code', 'Usage', 'Style']
 ---
@@ -8,13 +7,13 @@ tabs: ['Code', 'Usage', 'Style']
 
 Note that the color value of top bar of the Small and Medium Tooltips and the side color bars on Large Tooltip vary based on colors chosen for your data. Refer to the style tab on the [Data Vis Overview page](/data-visualization/overview/colors) for base graph style specifications.
 
-| Color                                     | SCSS     | HEX     |
-| ----------------------------------------- | -------- | ------- |
-| Background                                | $ui-01   | #ffffff |
-| Border                                    | $ui-04   | #8897a2 |
-| Quantitative data value label             | $text-01 | #152935 |
-| Additional data value label (qualitative) | $text-02 | #5a6872 |
-| Data increment label                      | $text-02 | #5a6872 |
+| Color                                     | SCSS      | HEX     |
+| ----------------------------------------- | --------- | ------- |
+| Background                                | \$ui-01   | #ffffff |
+| Border                                    | \$ui-04   | #8897a2 |
+| Quantitative data value label             | \$text-01 | #152935 |
+| Additional data value label (qualitative) | \$text-02 | #5a6872 |
+| Data increment label                      | \$text-02 | #5a6872 |
 
 ## Typography
 

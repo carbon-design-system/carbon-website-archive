@@ -1,7 +1,6 @@
 ---
-
 title: Developers
-tabs: ['Vanilla', 'React', 'Angular', 'Other Frameworks']
+tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
 ---
 
 The **Carbon Components Vanilla Library** provides front-end developers & engineers a collection of reusable HTML and SCSS partials to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.
@@ -20,7 +19,7 @@ If you prefer [Yarn](https://yarnpkg.com/en/), use the following command instead
 $ yarn add carbon-components
 ```
 
-## Getting Started
+## Getting started
 
 ### What's included
 
@@ -180,9 +179,7 @@ For example, if you have the following HTML for modal:
 
 ```html
 <div data-modal id="modal-nofooter" class="bx--modal" tabindex="-1">
-  <div class="bx--modal-container">
-    ...
-  </div>
+  <div class="bx--modal-container">...</div>
 </div>
 ```
 

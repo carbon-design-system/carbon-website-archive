@@ -28,7 +28,7 @@ class Footer extends Component {
 
   render() {
     const lastUpdated = 'December 10, 2018';
-    
+
     const version = Packages.dependencies['carbon-components'];
     const reactVersion = Packages.dependencies['carbon-components-react'];
     const currentYear = new Date().getFullYear();
@@ -46,11 +46,15 @@ class Footer extends Component {
             <nav className="page-footer__nav ibm--col-lg-2 ibm--col-md-2 ibm--offset-lg-4">
               <ul>
                 <li>
-                  <Link to="/contributing/designers" className="page-footer__link">Contribute</Link>
+                  <Link
+                    to="/contributing/designers"
+                    className="page-footer__link">
+                    Contribute
+                  </Link>
                 </li>
                 <li>
                   <a
-                     className="page-footer__link"
+                    className="page-footer__link"
                     href="https://www.ibm.com/privacy"
                     aria-label="Privacy">
                     Privacy
@@ -58,7 +62,7 @@ class Footer extends Component {
                 </li>
                 <li>
                   <a
-                     className="page-footer__link"
+                    className="page-footer__link"
                     href="https://www.ibm.com/legal"
                     aria-label="Privacy">
                     Terms of Use
@@ -66,7 +70,7 @@ class Footer extends Component {
                 </li>
                 <li>
                   <a
-                     className="page-footer__link"
+                    className="page-footer__link"
                     href="https://www.ibm.com/"
                     aria-label="IBM.com">
                     IBM.com
@@ -93,7 +97,7 @@ class Footer extends Component {
                     rel="noopener noreferrer"
                     target="_blank"
                     aria-label="Medium account for Carbon">
-                  Medium
+                    Medium
                   </a>
                 </li>
                 <li>
@@ -131,41 +135,41 @@ class Footer extends Component {
                   issue
                 </a>{' '}
                 in GitHub.
-            </p>
-            <p
-              className="page-footer__text page-footer__version-link"
-              id="page-footer__version-label">
-              Vanilla Components version{' '}
-              <a
-                className="page-footer__link"
-                href="https://github.com/ibm/carbon-components/releases"
-                rel="noopener noreferrer"
-                target="_blank"
-                aria-labelledby="page-footer__version-label page-footer__version-number"
-                id="page-footer__version-number">
-                {version}
-              </a>
-            </p>
-            <p
-              className="page-footer__text page-footer__version-link"
-              id="page-footer__react-version-label">
-              React Components version{' '}
-              <a
-                className="page-footer__link"
-                href="https://github.com/ibm/carbon-components-react/releases"
-                rel="noopener noreferrer"
-                target="_blank"
-                aria-labelledby="page-footer__react-version-label page-footer__react-version-number"
-                id="page-footer__react-version-number">
-                {reactVersion}
-              </a>
-            </p>
-            <p className="page-footer__text">
-              Last updated {' '}
-              <span className="page-footer__last-updated">{lastUpdated}</span>
-            </p>
-            <p className="page-footer__text">Copyright © {currentYear} IBM</p>
-          </div>
+              </p>
+              <p
+                className="page-footer__text page-footer__version-link"
+                id="page-footer__version-label">
+                Vanilla Components version{' '}
+                <a
+                  className="page-footer__link"
+                  href="https://github.com/ibm/carbon-components/releases"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  aria-labelledby="page-footer__version-label page-footer__version-number"
+                  id="page-footer__version-number">
+                  {version}
+                </a>
+              </p>
+              <p
+                className="page-footer__text page-footer__version-link"
+                id="page-footer__react-version-label">
+                React Components version{' '}
+                <a
+                  className="page-footer__link"
+                  href="https://github.com/ibm/carbon-components-react/releases"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  aria-labelledby="page-footer__react-version-label page-footer__react-version-number"
+                  id="page-footer__react-version-number">
+                  {reactVersion}
+                </a>
+              </p>
+              <p className="page-footer__text">
+                Last updated{' '}
+                <span className="page-footer__last-updated">{lastUpdated}</span>
+              </p>
+              <p className="page-footer__text">Copyright © {currentYear} IBM</p>
+            </div>
           </div>
           <div className="ibm--row">
             <div className="ibm--col-lg-12 ibm--offset-lg-4">

@@ -45,7 +45,6 @@ export default class ClickTile extends React.Component {
               <ClickableTile
                 target="_blank"
                 rel="noopener noreferrer"
-                
                 href={href}>
                 <div className="tile__info">
                   <h5>{title}</h5>
@@ -60,7 +59,7 @@ export default class ClickTile extends React.Component {
                 </div>
                 <div className="tile__img">{children}</div>
                 <div className="tile__link-icon">
-                  <Launch20 aria-label="Open resource" /> 
+                  <Launch20 aria-label="Open resource" />
                 </div>
               </ClickableTile>
             </div>

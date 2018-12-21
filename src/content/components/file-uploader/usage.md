@@ -1,5 +1,4 @@
 ---
-
 title: File Uploader
 tabs: ['Code', 'Usage']
 ---

@@ -8,7 +8,7 @@
     line-height: 1.25;
     color: $ibm-colors__gray--80;
   }
-  
+
   .ibm-type-italic {
     font-style: italic;
   }
@@ -30,6 +30,7 @@
   }
 
   .ibm-type-mono {
-    font-family: 'ibm-plex-mono', 'Menlo', 'DejaVu Sans Mono','Bitstream Vera Sans Mono', Courier;
+    font-family: 'ibm-plex-mono', 'Menlo', 'DejaVu Sans Mono',
+      'Bitstream Vera Sans Mono', Courier;
   }
 }

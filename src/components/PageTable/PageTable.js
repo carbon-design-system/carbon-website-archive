@@ -14,5 +14,6 @@ export default class PageTable extends React.Component {
           <table className="page-table">{children}</table>
         </div>
       </div>
-    )};
+    );
+  }
 }

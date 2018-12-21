@@ -1,5 +1,4 @@
 ---
-
 title: Disabled States
 ---
 
@@ -7,11 +6,11 @@ title: Disabled States
 
 ## Disabled variations
 
-| Variation            | Description                                                                                                                                                                                                                           |
-| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Default disabled** | Cannot be clicked, selected or interacted with. It is not read by a screen reader and takes on the default disabled visual style.                                                                                                     |
+| Variation            | Description                                                                                                                                                                                                                               |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Default disabled** | Cannot be clicked, selected or interacted with. It is not read by a screen reader and takes on the default disabled visual style.                                                                                                         |
 | **Read-only**        | The user cannot interact with it but content is still readable and accessible to a screen reader. The visual style should contain no interactive indicators such as `$brand-01`, hover states, or text embellishments (i.e., underlines). |
-| **Hidden**           | The component is completely hidden from view. The user does not know the option is there.                                                                                                                                             |
+| **Hidden**           | The component is completely hidden from view. The user does not know the option is there.                                                                                                                                                 |
 
 ## Default disabled
 

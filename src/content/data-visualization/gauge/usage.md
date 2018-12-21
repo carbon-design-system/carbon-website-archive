@@ -1,5 +1,4 @@
 ---
-
 title: Gauge
 tabs: ['Code', 'Usage', 'Style']
 ---

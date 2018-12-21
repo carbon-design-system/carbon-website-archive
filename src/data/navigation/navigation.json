@@ -1,7 +1,7 @@
 {
 
   "getting-started": {
-    "title": "Getting Started",
+    "title": "Getting started",
     "sub-nav": {
       "about-carbon": {
         "title": "About Carbon"
@@ -47,20 +47,20 @@
     }
   },
   "your-product-on-ibm-cloud": {
-    "title": "Your Product on IBM Cloud",
+    "title": "Your product on IBM Cloud",
     "internal": true,
     "sub-nav": {
       "principles": {
         "title": "Principles"
       },
       "user-flow": {
-        "title": "User Flow"
+        "title": "User flow"
       },
       "service-providers": {
-        "title": "Service Providers"
+        "title": "Service providers"
       },
       "catalog-entry": {
-        "title": "Catalog Entry"
+        "title": "Catalog entry"
       }
 
     }
@@ -87,25 +87,25 @@
         "title": "Checkbox"
       },
       "code-snippet": {
-        "title": "Code Snippet"
+        "title": "Code snippet"
       },
       "content-switcher": {
-        "title": "Content Switcher"
+        "title": "Content switcher"
       },
       "date-picker": {
-        "title": "Date Picker"
+        "title": "Date picker"
       },
       "dropdown": {
         "title": "Dropdown"
       },
       "file-uploader": {
-        "title": "File Uploader"
+        "title": "File uploader"
       },
       "form": {
         "title": "Form"
       },
       "inline-loading": {
-        "title": "Inline Loading"
+        "title": "Inline loading"
       },
       "link/code": {
         "title": "Link"
@@ -116,20 +116,26 @@
       "loading": {
         "title": "Loading"
       },
+      "modal": {
+        "title": "Modal"
+      },
       "notification": {
         "title": "Notification"
       },
       "number-input": {
-        "title": "Number Input"
+        "title": "Number input"
       },
       "overflow-menu": {
-        "title": "Overflow Menu"
+        "title": "Overflow menu"
+      },
+      "pagination": {
+        "title": "Pagination"
       },
       "progress-indicator": {
-        "title": "Progress Indicator"
+        "title": "Progress indicator"
       },
       "radio-button": {
-        "title": "Radio Button"
+        "title": "Radio button"
       },
       "search": {
         "title": "Search"
@@ -141,7 +147,7 @@
         "title": "Slider"
       },
       "structured-list": {
-        "title": "Structured List"
+        "title": "Structured list"
       },
       "tabs": {
         "title": "Tabs"
@@ -150,7 +156,7 @@
         "title": "Tag"
       },
       "text-input": {
-        "title": "Text Input"
+        "title": "Text input"
       },
       "tile": {
         "title": "Tile"
@@ -178,10 +184,10 @@
     "title": "Patterns",
     "sub-nav": {
       "common-actions": {
-        "title": "Common Actions"
+        "title": "Common actions"
       },
       "disabled-states": {
-        "title": "Disabled States"
+        "title": "Disabled states"
       },
       "filtering": {
         "title": "Filtering"
@@ -190,7 +196,7 @@
         "title": "Loading"
       },
       "overflow-content": {
-        "title": "Overflow Content"
+        "title": "Overflow content"
       }
     }
   },
@@ -207,7 +213,7 @@
       "title": "Developers"
     },
     "add-ons": {
-      "title": "Add-Ons"
+      "title": "Add-ons"
     }
   }
   },
@@ -215,7 +221,7 @@
     "title": "Updates",
     "sub-nav": {
       "whats-new": {
-        "title": "What's New"
+        "title": "What's new"
       },
       "release-highlights": {
         "title": "Release Highlights"

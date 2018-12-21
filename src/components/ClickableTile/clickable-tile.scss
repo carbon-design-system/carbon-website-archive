@@ -95,7 +95,6 @@ p.tile__author {
   color: $ibm-colors__white;
 }
 
-
 // Tile Resource
 
 .tile--resource {
@@ -128,7 +127,7 @@ p.tile__author {
   color: $ibm-colors__white;
 }
 
-.tile--resource.tile--dark a.bx--tile:hover  {
+.tile--resource.tile--dark a.bx--tile:hover {
   background: $ibm-colors__gray--80;
 }
 
@@ -140,7 +139,7 @@ p.tile__author {
   }
 }
 
-.tile--resource .tile__info  h5 {
+.tile--resource .tile__info h5 {
   display: block;
   width: 100%;
   text-decoration: none;
@@ -199,12 +198,11 @@ p.tile__author {
 // Grouped tiles
 .flex-wrap {
   .tile--resource {
-
     @include breakpoint('sm') {
-      border-bottom: 1px solid $ibm-colors__gray--20; 
+      border-bottom: 1px solid $ibm-colors__gray--20;
 
       &.tile--dark {
-        border-bottom-color: $ibm-colors__black; 
+        border-bottom-color: $ibm-colors__black;
       }
     }
 
@@ -214,18 +212,18 @@ p.tile__author {
       border-right: none;
 
       &:nth-child(2n + 2) {
-        border-left: 1px solid $ibm-colors__gray--20; 
+        border-left: 1px solid $ibm-colors__gray--20;
 
         &.tile--dark {
-          border-left-color: $ibm-colors__black; 
+          border-left-color: $ibm-colors__black;
         }
       }
 
       &:nth-child(n + 3) {
         border-top: 1px solid $ibm-colors__gray--20;
-        
+
         &.tile--dark {
-          border-top-color: $ibm-colors__black; 
+          border-top-color: $ibm-colors__black;
         }
       }
     }
@@ -233,7 +231,7 @@ p.tile__author {
 
   a.tile--article {
     @include breakpoint('sm') {
-      border-bottom: 1px solid $ibm-colors__gray--20; 
+      border-bottom: 1px solid $ibm-colors__gray--20;
 
       &:last-child {
         border: none;
@@ -242,38 +240,38 @@ p.tile__author {
 
     @include breakpoint('md') {
       border-bottom: none;
-      border-right: 1px solid $ibm-colors__gray--20; 
+      border-right: 1px solid $ibm-colors__gray--20;
 
       // selects every 3rd item and removes right border
-      &:nth-child(2n+2) {
+      &:nth-child(2n + 2) {
         border-right: none;
       }
 
       &:nth-child(n + 3) {
-        border-top: 1px solid $ibm-colors__gray--20; 
+        border-top: 1px solid $ibm-colors__gray--20;
       }
     }
 
     @include breakpoint('lg') {
       border-bottom: none;
-      border-right: 1px solid $ibm-colors__gray--20; 
+      border-right: 1px solid $ibm-colors__gray--20;
 
-      &:nth-child(2n+2) {
-        border-right: 1px solid $ibm-colors__gray--20; 
+      &:nth-child(2n + 2) {
+        border-right: 1px solid $ibm-colors__gray--20;
       }
 
       // selects every 3rd item and removes right border
-      &:nth-child(3n+3) {
+      &:nth-child(3n + 3) {
         border-right: none;
       }
 
       &:nth-child(n + 4) {
-        border-top: 1px solid $ibm-colors__gray--20; 
+        border-top: 1px solid $ibm-colors__gray--20;
       }
     }
   }
 
   a.tile--article.tile--dark {
-    border-color: $ibm-colors__black; 
+    border-color: $ibm-colors__black;
   }
 }
