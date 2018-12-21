@@ -9,7 +9,7 @@ tabs: ['General', 'Service icon', 'Design approval']
 
 ### Baseline requirements
 
-Services must meet the following baseline requirements in order to qualify for Experimental approval and beyond. See the [General tab](/getting-started/service-providers/general) for details on each capability:
+Services must meet the following baseline requirements in order to qualify for experimental approval and beyond. See the [General tab](/getting-started/service-providers/general) for details on each capability:
 
 <div class="bx--form-item bx--checkbox-wrapper">
   <input id="bx--checkbox-1" class="bx--checkbox" type="checkbox" value="urc" name="checkbox">

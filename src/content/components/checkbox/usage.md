@@ -20,7 +20,7 @@ Users should be able to select the checkbox by clicking on the box directly or b
 
 ### Tables
 
-See the [Data Tables](/components/data-table/usage) section for guidance on how to use Checkboxes within a table.
+See the [data tables](/components/data-table/usage) section for guidance on how to use Checkboxes within a table.
 
 ### Default selection
 

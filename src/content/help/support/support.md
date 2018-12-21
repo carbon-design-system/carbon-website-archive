@@ -7,15 +7,15 @@ The Carbon core team provides support for users of the design system. Find the u
 
 ## If you have questions
 
-### Carbon Website
+### Carbon website
 
 Please take some time to explore the content on this website before engaging the Carbon team. The site is very comprehensive and most of the guidelines and components are well documented.
 
-### Frequently Asked Questions
+### Frequently Asked Questions (FAQ)
 
 Answers to the most common questions about the design system can be found in the [Carbon FAQ](faq).
 
-### Slack Channels
+### Slack channels
 
 *Internal IBM users only.* The Carbon core team maintains the following channels and will provide support as time permits.
 
@@ -36,15 +36,15 @@ The Carbon team can also be reached on Twitter: [@_carbondesign](https://twitter
 
 ## If you have suggestions or contributions
 
-### GitHub Pull Requests
-If you have a specific fix or contribution, you can generate a pull request in the appropriate Carbon repo.
+### GitHub pull requests
+If you have a specific fix or contribution, you can generate a pull request (PR) in the appropriate Carbon repo.
 
-### GitHub Issues
+### GitHub issues
 Bug reports, feature requests, and general feedback can be delivered to the Carbon team via the creation of a GitHub issue.
 
-#### Design Issues
+#### Design issues
 
-[Design Kit](https://github.com/IBM/carbon-design-kit/issues/new)
+[Carbon Design Kit](https://github.com/IBM/carbon-design-kit/issues/new)
 
 [Icons](https://github.com/IBM/carbon-icons/issues/new)
 

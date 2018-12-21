@@ -190,7 +190,7 @@ Within a design system, layouts often follow a common structure, especially with
 2. [Panel Behavior](#panel-behavior)
 
 ### Screen Regions
-In a UI layout, users expect to find certain types of content in certain areas. We call these areas Screen Regions. It is especially important for these zones to be consistent across devices, and adapt across breakpoints. [Learn more about Shell on the Experimental UI Shell page.](http://staging.carbondesignsystem.com/experimental/ui-shell/usage)
+In a UI layout, users expect to find certain types of content in certain areas. We call these areas Screen Regions. It is especially important for these zones to be consistent across devices, and adapt across breakpoints. [Learn more about Shell on the Experimental UI shell page.](http://staging.carbondesignsystem.com/experimental/ui-shell/usage)
 
 
 ![Shell Illustation](images/shell_illustration.png)

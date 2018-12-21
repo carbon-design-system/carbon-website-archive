@@ -1,6 +1,6 @@
 ---
 label: Component
-title: Code Snippet
+title: Code snippet
 tabs: ['Code', 'Usage', 'Style']
 ---
 
@@ -31,7 +31,7 @@ Carbon has defined a set of accessible syntax colors. View an incontext [example
 
 ## Structure
 
-### Code Snippet
+### Code snippet
 
 | Class                  | Property      | px / rem   | Spacing token |
 | ---------------------- | ------------- | ---------- | ------------- |
@@ -44,9 +44,9 @@ Carbon has defined a set of accessible syntax colors. View an incontext [example
 || Spacing: icon & tooltip | 4 | 0.5| -->
 
 ![](images/code-snippet-style-1.png)
-_Structure and spacing measurements for Code Snippet | px / rem_
+_Structure and spacing measurements for code snippet | px / rem_
 
-### Multi-line Code Snippet
+### Multi-line code snippet
 
 | Class                                        | Property                    | px / rem                          | Spacing token |
 | -------------------------------------------- | --------------------------- | --------------------------------- | ------------- |
@@ -59,9 +59,9 @@ _Structure and spacing measurements for Code Snippet | px / rem_
 | `.bx--snippet__icon`                         | height, width               | 16 / 1                            | -             |
 
 ![](images/code-snippet-style-2.png)
-_Structure and spacing measurements for Multi-line Snippet | px / rem_
+_Structure and spacing measurements for multi-line snippet | px / rem_
 
-### Inline Code Snippet
+### Inline code snippet
 
 | Class                       | Property                    | px / rem                | Spacing token |
 | --------------------------- | --------------------------- | ----------------------- | ------------- |
@@ -73,4 +73,4 @@ _Structure and spacing measurements for Multi-line Snippet | px / rem_
     <img src="images/code-snippet-style-3.png" alt="" />
 </div>
 
-_Structure and spacing measurements for Inline Code Snippet | px / rem_
+_Structure and spacing measurements for inline code snippet | px / rem_

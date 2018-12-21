@@ -13,10 +13,10 @@ If page is internal only make sure to add `"internal": true` to the navigation.j
 
 ```
  "your-product-on-ibm-cloud": {
-    "title": "Your Product on IBM Cloud",
+    "title": "Your product on IBM Cloud",
     "internal": true,
     "sub-nav": {
       "catalog-entry": {
-        "title": "Catalog Entry"
+        "title": "Catalog entry"
       },
 ```

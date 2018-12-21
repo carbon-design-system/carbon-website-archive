@@ -1,13 +1,13 @@
 ---
 label: Component
-title: Progress Indicator
+title: Progress indicator
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-<page-intro>**Progress Indicator** is a visual representation of a users progress through a set of steps. They guide the user through a number of steps in order to complete a specified process.</page-intro>
+<page-intro>**Progress indicator** is a visual representation of a users progress through a set of steps. They guide the user through a number of steps in order to complete a specified process.</page-intro>
 
 <component 
-    name="Progress Indicator"
+    name="Progress indicator"
     component="progress-indicator" 
     variation="progress-indicator"
     codepen="jaGPyr"

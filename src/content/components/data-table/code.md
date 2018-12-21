@@ -1,13 +1,13 @@
 ---
 label: Component
-title: Data Table
+title: Data table
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-<page-intro>**Data Tables** present raw data sets and lend meaning to the data, while maintaining that the data is readable, scannable, and easily comparable.</page-intro>
+<page-intro>**Data tables** present raw data sets and lend meaning to the data, while maintaining that the data is readable, scannable, and easily comparable.</page-intro>
 
 <component 
-    name="Data Table"
+    name="Data table"
     component="data-table-v2" 
     variation="data-table-v2"
     codepen="MOEagV"
@@ -16,7 +16,7 @@ tabs: ['Code', 'Usage', 'Style']
     >
 </component>
 <component 
-    name="Expandable Data Table"
+    name="Expandable data table"
     component="data-table-v2" 
     variation="data-table-v2--expandable"
     codepen="gXGabM"
@@ -25,7 +25,7 @@ tabs: ['Code', 'Usage', 'Style']
     >
 </component>
 <component 
-    name="Data Table with Pagination"
+    name="Data table with pagination"
     component="data-table-v2" 
     variation="data-table-v2--with-pager"
     codepen="pdWjva"
@@ -33,7 +33,7 @@ tabs: ['Code', 'Usage', 'Style']
     >
 </component>
 <component 
-    name="Small Data Table"
+    name="Small data table"
     component="data-table-v2" 
     variation="data-table-v2--small"
     codepen="aVLvzX"
