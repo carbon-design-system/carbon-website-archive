@@ -5,7 +5,7 @@ import '/index.css';
 
 class App extends React.Component {
   render() {
-    return <Button kind="primary">Primary Button</Button>;
+    return <Button kind="primary">Primary button</Button>;
   }
 }
 

@@ -1,6 +1,6 @@
 ---
 label: Component
-title: Data Table
+title: Data table
 tabs: ['Code', 'Usage', 'Style']
 ---
 
@@ -20,25 +20,25 @@ tabs: ['Code', 'Usage', 'Style']
 
 ### Style options
 
-Specific styling on the Data Table component can be toggled on/off based on user or team preference.
+Specific styling on the data table component can be toggled on/off based on user or team preference.
 
-**Row dividers, Zebra striping, & table border**
+**Row dividers, zebra striping, & table border**
 
-If zebra striping is turned off, you must have Row dividers.
+If zebra striping is turned off, you must have row dividers.
 
 ![Data table: row styling](images/data-table-style-1.png)
 
-_Data Table with various row styling_
+_Data table with various row styling_
 
 <br/>
 
 **Background colors**
 
-Data Tables are built to be accessible against two `$ui-01` and `$ui-02`:
+Data tables are built to be accessible against two `$ui-01` and `$ui-02`:
 
 ![Data table: background colors](images/data-table-style-2.png)
 
-_Data Table on ui-01 vs ui-02_
+_Data table on ui-01 vs ui-02_
 
 ## Typography
 
@@ -68,9 +68,9 @@ Compact and Tall are designer and developer preferences. Tall row heights are on
 | `.bx--data-table-v2--tall`    | Tall    | 64 / 4              |
 
 ![Data table: row styling](images/data-table-style-3.png)
-_Data Table: varying row sizes_
+_Data table: varying row sizes_
 
-### Simple Data Table
+### Simple data table
 
 The basic table style is the required base from which tables can be developed. Basic tables are composed of a header row followed by rows of data below. At a minimum, tables require three or more columns.
 
@@ -98,7 +98,7 @@ After the simple table structure, tables can be enhanced by adding any of the fo
 </div>
 </div>
 
-_Structure and spacing measurements for a basic and an enhanced Data Table | px / rem_
+_Structure and spacing measurements for a basic and an enhanced data table | px / rem_
 
 ### Recommended
 

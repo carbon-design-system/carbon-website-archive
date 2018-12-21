@@ -4,7 +4,7 @@ title: Catalog entry
 internal: true
 ---
 
-<page-intro>The IBM Cloud Catalog ("Catalog") is the place developers, data scientists, IT admins, and other IBM Cloud users go to discover, evaluate, and create offerings. The following guidelines will help you create or update an offering listing to ensure that it meets IBM Cloud quality standards and meets your users' needs.</page-intro>
+<page-intro>The IBM Cloud Catalog (hereafter referred to simply as the Catalog) is the place developers, data scientists, IT admins, and other IBM Cloud users go to discover, evaluate, and create offerings. The following guidelines will help you create or update an offering listing to ensure that it meets IBM Cloud quality standards and meets your users' needs.</page-intro>
 
 ## How to use this document
 
@@ -29,7 +29,7 @@ See the below sections for more details on each item.
   - [Long description](#long-description)
   - [Bullets](#bullets) (number of bullets, title and supporting text length)
 - [Icon](#icon) follows service icon guidelines
-- [Media](#media) is up-to-date and brings value & clarity to users (optional)
+- [Media](#media) is up-to-date and brings value and clarity to users (optional)
 - [Pricing](#pricing) is concise and not written in complete sentences
 - Offering is [tagged](#search-tags) with relevant search terms
 
@@ -66,7 +66,7 @@ The Catalog is the place users go to discover, evaluate, and create. User testin
 
 ### Catalog governance
 
-To ensure that offerings meet the criteria outlined in these guidelines, the catalog team will be responsible for reviewing any proposed changes to an offering's catalog entry.
+To ensure that offerings meet the criteria outlined in these guidelines, the Catalog team will be responsible for reviewing any proposed changes to an offering's Catalog entry.
 
 For more details, see the [Catalog governance](https://ibm.ent.box.com/notes/290560698464) document. For any questions, and to get your updates approved, contact Matt Heitzer and Mark Meredith.
 
@@ -74,7 +74,7 @@ For more details, see the [Catalog governance](https://ibm.ent.box.com/notes/290
 
 The Catalog consists of several pages and content types:
 
-- A main page with an "All Categories" view and individual categories' views. The main page displays summary cards for each offering listing. This page also has search and filter functionality.
+- A main page with an "All Categories" view and individual category views. The main page displays summary cards for each offering listing. This page also has search and filter functionality.
 
 - An offering detail page, which contains metadata, text and media that describe your offering and configuration fields or page(s), depending on the complexity of your offering's configuration.
 
@@ -163,7 +163,7 @@ Visible tags:
 
 - Write more than 120 characters, as the short description doesn't appear anywhere else in the UI and will never be read
 - Repeat the name of the offering, as it will always be shown in combination with the title
-- Begin the sentence with "the service is...", as it is implied
+- Begin the sentence with "The service is...", as it is implied
 
 **Examples**
 
@@ -322,7 +322,7 @@ In the Catalog, users can use a combination of searching, browsing, and filterin
 
 ### Categorization
 
-The catalog team will work with individual offering teams to determine which category their offerings belong in.
+The Catalog team will work with individual offering teams to determine which category their offerings belong in.
 
 ###Filtering
 Tag your service with the appropriate required metadata, so users can narrow down their options and easily find your offering.
@@ -330,7 +330,7 @@ Tag your service with the appropriate required metadata, so users can narrow dow
 - **Author:** Use the _IBM_ tag if your service has been created by an IBM team or acquisition. Use the _third-Party_ tag if your service is the result of a business partnership and an external brand will be shown, even if the experience has been created by IBM. The _community_ tag is only used for community buildpacks.
 - **Compliance:** Use the _EU-Supported_ tag if your service meets the [criteria for EU-Supported Cloud](https://ibm.box.com/s/kdqtyq7rplwkpk31her53i14vg1lnt17).
 - **Plans:** Our IBM teams will work with you to determine if your service is a good candidate for our "Lite" plan.
-- **Release:** Only use the experimental or beta tag if your offering is going through the process of creating a new offering in the catalog.
+- **Release:** Only use the experimental or beta tag if your offering is going through the process of creating a new offering in the Catalog.
 
 ### Search tags
 

@@ -32,7 +32,7 @@ Based on the comprehensive IBM Design Language, every element and component of C
 
 #### Designers
 
-Carbon is the official implementation of the IBM Design Language for product and web designers, and represents an ever-growing ecosystem of design assets and guidance. With a comprehensive set of human interface guidelines, design kits, and documentation, Carbon helps designers work faster and smarter.  
+Carbon is the official implementation of the IBM Design Language for product and web designers, and represents an ever-growing ecosystem of design assets and guidance. With a comprehensive set of human interface guidelines, the Carbon Design Kit, and documentation, Carbon helps designers work faster and smarter.  
 
 #### Developers
 Carbon is built by developers, for developers. Our front-end libraries are continuously maintained and fully supported by the core Carbon team (and an army of open-source contributors).

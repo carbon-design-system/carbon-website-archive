@@ -1,13 +1,13 @@
 ---
 label: Component
-title: Inline Loading
+title: Inline loading
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-<page-intro>**Inline Loading** spinners are used when performing actions. They help notify user's that their action is being processed.</page-intro>
+<page-intro>**Inline loading** spinners are used when performing actions. They help notify users that their action is being processed.</page-intro>
 
 <component 
-    name="Inline Loading"
+    name="Inline loading"
     component="inline-loading" 
     variation="inline-loading"
     codepen="oMpMYK"

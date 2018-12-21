@@ -1,41 +1,41 @@
 ---
 label: Component
-title: Data Table
+title: Data table
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-## Basic Data Table
+## Basic data table
 
-The Data Table component is designed in a way for additional functionality to be added on to fit your team's needs.
+The data table component is designed in a way for additional functionality to be added on to fit your team's needs.
 
-The basic Data Table is shipped with a base style, which includes:
+The basic data table is shipped with a base style, which includes:
 
 - Borders
 - No zebra striping, row dividers instead.
-- No Pagination, Search, Table toolbar, or multi-select
+- No Pagination, search, table toolbar, or multi-select
 
 ![basic data table](images/data-table-usage-1.png)
 
-_Basic Data Table_
+_Basic data table_
 
 ## Additonal functionality
 
-The following can be added to the Data Table to increase its functionality.
+The following can be added to the data table to increase its functionality.
 
 ### Pagination
 
-Pagination divides table data into separate pages. Pagination is accompanied by an option that enables the user to change the number of items per page. See the [Pagination](/components/Pagination) component for further guidelines.
+Pagination divides table data into separate pages. Pagination is accompanied by an option that enables the user to change the number of items per page. See the [pagination](/components/Pagination) component for further guidelines.
 
 ![data table with pagination](images/data-table-usage-2.png)
 
-_Data Table with various Pagination methods_
+_Data table with various Pagination methods_
 
 ### Search
 
-Search returns results based on matches. It is used to locate and display a set of results. Search functionality within a table follows [Small search](/components/search) conventions. Search should be open by default, and live below the table title.
+Search returns results based on matches. It is used to locate and display a set of results. Search functionality within a table follows [small search](/components/search) conventions. Search should be open by default, and live below the table title.
 
 ![data table with search](images/data-table-usage-3.png)
-_Search on Data Tables_
+_Search on data tables_
 
 ### Sorting
 
@@ -47,18 +47,18 @@ The table toolbar is reserved for global table actions such as table settings, c
 
 ![Table toolbar](images/data-table-usage-6.png)
 
-_Table toolbar: Table settings_
+_Table toolbar: table settings_
 
-### Multi-select / Batch action
+### Multi-select / batch action
 
 Batch actions are functions that may be performed on multiple items within a table. Once the user selects more than one row from the table, the **batch action bar** appears at the top of the table, presenting the user with actions they can take. To exit or escape "batch action mode," the user can cancel out or deselect the items.
 
 ![Batch action mode](images/data-table-usage-7.png)
-_Batch action mode on Data Tables_
+_Batch action mode on data tables_
 
 ### Inline actions
 
-Inline actions are functions that may be performed on a specific table item. Each row is accompanied by an [Overflow menu](/components/overflow-menu) that contains actions related specifically to that table row.
+Inline actions are functions that may be performed on a specific table item. Each row is accompanied by an [overflow menu](/components/overflow-menu) that contains actions related specifically to that table row.
 
-![Inline action on Data Table](images/data-table-usage-8.png)
-_Inline actions on Data Tables_
+![Inline action on data table](images/data-table-usage-8.png)
+_Inline actions on data tables_

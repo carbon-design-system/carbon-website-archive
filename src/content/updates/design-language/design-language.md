@@ -13,7 +13,7 @@ The Carbon team will be updating components and introducing new guidelines incre
 
 **What is changing?**
 
-Carbon is the IBM Design System for digital products. The new IBM Design Language will define and guide everything designed by IBM, including software products, digital and traditional marketing, hardware, advertising, events, physical spaces, and more. The Carbon Design System is the “digital manifestation” of the Design Language.
+Carbon is the IBM Design System for digital products. The new IBM Design Language will define and guide everything designed by IBM, including software products, digital and traditional marketing, hardware, advertising, events, physical spaces, and more. The Carbon Design System is the digital manifestation of the Design Language.
 
 **How do I ensure that my products are ready for this transition?**
 
@@ -27,4 +27,4 @@ Keep building with Carbon! The best way to ensure a smooth transition is to adhe
 
 **Complete:** New IBM Design Language fonts, glyphs, and experimental grid have been integrated into Carbon.
 
-**In Progress:** More icons, colors, page geometry, [experimental components](/experimental/accordion/code) and [UI Shell](/experimental/ui-shell/code).
+**In Progress:** More icons, colors, page geometry, [experimental components](/experimental/accordion/code) and [UI shell](/experimental/ui-shell/code).

@@ -1,14 +1,14 @@
 ---
 label: Component
-title: File Uploader
+title: File uploader
 tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## General
 
-- A File Uploader is commonly found in forms, but they can also live as stand alone elements.
-- **Add files** is the default text that appears with the File Uploader.
-- A File Uploader should always be accompanied by **Submit** or **Upload**, which is to be styled as a [Primary Button](/components/button).
+- A file uploader is commonly found in forms, but they can also live as stand alone elements.
+- **Add files** is the default text that appears with the file uploader.
+- A file uploader should always be accompanied by **Submit** or **Upload**, which is to be styled as a [primary button](/components/button).
 - Use an ellipsis (...) if the filename extends beyond the width of its parent element.
 
 ![file uploader example](images/file-uploader-usage-1.png)
@@ -23,11 +23,11 @@ tabs: ['Code', 'Usage', 'Style']
    [Notification](/components/notification).
 
 ![file uploader error](images/file-uploader-usage-2.png)
-_Errors in File uploader_
+_Errors in file uploader_
 
 ## Upload state
 
-Developers using File Uploader will be able to use JavaScript to inject a Loading component when selected files are actually being uploaded.
+Developers using file uploader will be able to use JavaScript to inject a Loading component when selected files are actually being uploaded.
 
 ![File uploading state](images/file-uploader-usage-3.png)
 

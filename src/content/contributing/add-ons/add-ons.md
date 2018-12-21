@@ -18,15 +18,15 @@ If you've answered "yes" to all the questions above, then you definitely qualify
 
 If you answered "no" to any of the questions above but still feel like you need an add-on repo, please reach out to the a member of the Carbon team to discuss additional options. It might be that your component need is something that can be shared across the core Carbon organization. In this case, we can talk about how you can contribute this component back to the core Carbon repo.
 
-## Creating an Add-on repo
+## Creating an add-on repo
 
 There are a number of growing add-on repos that can be found under the [Carbon org](https://github.com/carbon-design-system). If you'd like to create an add-on repo we have created a [vanilla boilerplate](https://github.com/carbon-design-system/carbon-boilerplate) and a [react boilerplate](https://github.com/carbon-design-system/carbon-addons-boilerplate-react) that you can clone to get started. For further assistance please reach out to a member of the carbon design team.
 
-### Private vs Public
+### Private vs public
 
 Carbon Design System is an open-source project and we do encourage teams using Carbon Design System to stay open-source as well. However, if your product has privacy constraints, we can discuss options for creating an add-on repo under our GitHub Enterprise account.
 
-## Contributing to Add-ons
+## Contributing to add-ons
 
 Add-ons are generally easier to contribute to because they are not fully managed by the Carbon team. Below are the items that you need to pass in order for your contribution to be accepted. You can read our full contribution process for [design](/contributing/designers) and [development](/contributing/developers) to learn more.
 

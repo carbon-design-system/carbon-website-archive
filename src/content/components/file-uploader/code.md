@@ -1,13 +1,13 @@
 ---
 label: Component
-title: File Uploader
+title: File uploader
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-<page-intro>**File Uploader** allows the user to transfer a file or submit content of their own.</page-intro>
+<page-intro>**File uploader** allows the user to transfer a file or submit content of their own.</page-intro>
 
 <component 
-    name="File Uploader"
+    name="File uploader"
     component="file-uploader" 
     variation="file-uploader"
     codepen="pdWowZ"

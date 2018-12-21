@@ -93,7 +93,7 @@ export default class SideNav extends React.Component {
                       icon="icon--arrow--right"
                       iconDescription="Arrow right"
                       href="https://github.com/ibm/carbon-design-kit">
-                      Design kit
+                      Design Kit
                     </Button>
                     <Link
                       to="/resources#github"
