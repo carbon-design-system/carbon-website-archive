@@ -198,7 +198,6 @@ class Layout extends React.Component {
             />
 
             <div className="container">
-<<<<<<< HEAD
               <MDXProvider
                   components={{
                     // Map HTML element tag to React component
@@ -216,9 +215,6 @@ class Layout extends React.Component {
                   {children}
                 </div>
               </MDXProvider>
-              <Footer />
-=======
-              {children}
               <WebsiteFooter
                 logoOffset={true}
                 linksCol1={[
@@ -258,7 +254,6 @@ class Layout extends React.Component {
                   Copyright © {currentYear} IBM
                 </p>
               </WebsiteFooter>
->>>>>>> v10
             </div>
           </>
         )}
