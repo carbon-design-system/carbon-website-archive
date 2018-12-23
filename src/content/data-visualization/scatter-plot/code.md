@@ -1,5 +1,4 @@
 ---
-
 title: Scatter Plot
 tabs: ['Code', 'Usage', 'Style']
 ---

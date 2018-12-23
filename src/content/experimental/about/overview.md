@@ -1,5 +1,4 @@
 ---
-
 title: About
 tabs: ['Overview', 'Usage']
 ---
@@ -16,7 +15,7 @@ We want to provide early-access to our changes, so that designers and developers
 
 Experimental components, designs, patterns, and other resources are work that is still under development.
 
-They are not intended for production use, and are subject to change but are in a state where it can be productive for designers and developers to start to work with them. They may have some non-functional pieces, or be lacking in documentation. *There is no guarantee of support*.
+They are not intended for production use, and are subject to change but are in a state where it can be productive for designers and developers to start to work with them. They may have some non-functional pieces, or be lacking in documentation. _There is no guarantee of support_.
 
 These resources are also the future path of the Carbon Design System. As they are refined and improved, they may become core resources.
 

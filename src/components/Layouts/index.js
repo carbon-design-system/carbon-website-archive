@@ -2,20 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql, Link } from 'gatsby';
-import classnames from 'classnames';
+import Packages from '../../../package.json';
 import GlobalSearch from '../GlobalSearch';
-import Footer from '../Footer';
 import LeftNav from '../LeftNav';
 import favicon32 from '../../content/global/images/favicon-32.png';
-import { 
-  Header, 
-  HeaderMenuButton, 
-  HeaderName, 
-  SkipToContent,  
+import {
+  Header,
+  HeaderMenuButton,
+  HeaderName,
+  SkipToContent,
   HeaderGlobalBar,
   HeaderGlobalAction,
 } from 'carbon-components-react/lib/components/UIShell';
 import { AppSwitcher20, Menu32 } from '@carbon/icons-react';
+import { WebsiteFooter } from '@carbon/addons-website';
 
 import {
   p,
@@ -118,6 +118,11 @@ class Layout extends React.Component {
     const { GATSBY_CARBON_ENV } = process.env;
     const isInternal = GATSBY_CARBON_ENV == 'internal';
     const { children } = this.props;
+    const version = Packages.dependencies['carbon-components'];
+    const reactVersion = Packages.dependencies['carbon-components-react'];
+    const currentYear = new Date().getFullYear();
+
+    const lastUpdated = 'December 19, 2018';
 
     return (
       <StaticQuery
@@ -134,7 +139,11 @@ class Layout extends React.Component {
         render={data => (
           <>
             <Helmet
-              title={isInternal ? data.site.siteMetadata.titleInternal : data.site.siteMetadata.title}
+              title={
+                isInternal
+                  ? data.site.siteMetadata.titleInternal
+                  : data.site.siteMetadata.title
+              }
               meta={[
                 {
                   name: 'description',
@@ -160,7 +169,7 @@ class Layout extends React.Component {
               <SkipToContent />
               <HeaderMenuButton
                 aria-label="Open menu"
-                onClick={(this.onToggleBtnClick)}
+                onClick={this.onToggleBtnClick}
               />
               {isInternal ? (
                 <HeaderName prefix="IBM" to="/" element={Link} href="/">
@@ -171,7 +180,7 @@ class Layout extends React.Component {
                   Carbon Design System
                 </HeaderName>
               )}
-              
+
               {/*<HeaderGlobalBar>
                 {isInternal ? null : <GlobalSearch />}
                 {/*<HeaderGlobalAction
@@ -181,15 +190,15 @@ class Layout extends React.Component {
               </HeaderGlobalBar>
               */}
             </Header>
-           <LeftNav
+            <LeftNav
               isFinal={this.state.isFinal}
               isOpen={this.state.isOpen}
               location={this.props.location}
               clickToClose={this.clickToClose}
             />
 
-            
             <div className="container">
+<<<<<<< HEAD
               <MDXProvider
                   components={{
                     // Map HTML element tag to React component
@@ -208,6 +217,48 @@ class Layout extends React.Component {
                 </div>
               </MDXProvider>
               <Footer />
+=======
+              {children}
+              <WebsiteFooter
+                logoOffset={true}
+                linksCol1={[
+                  { href: '/contributing/designers', linkText: 'Contribute' },
+                  { href: 'https://www.ibm.com/privacy', linkText: 'Privacy' },
+                  {
+                    href: 'https://www.ibm.com/legal',
+                    linkText: 'Terms of Use',
+                  },
+                  { href: 'https://www.ibm.com', linkText: 'IBM.com' },
+                ]}
+                linksCol2={[
+                  {
+                    href: 'https://dribbble.com/_carbondesign',
+                    linkText: 'Dribble',
+                  },
+                  {
+                    href: 'https://medium.com/@_carbondesign',
+                    linkText: 'Medium',
+                  },
+                  {
+                    href: 'https://twitter.com/_carbondesign',
+                    linkText: 'Twitter',
+                  },
+                ]}>
+                <p>
+                  Have questions? Email us or open an issue in{' '}
+                  <a href="#">GitHub.</a>
+                </p>
+                <p>
+                  Vanilla Components version {version}
+                  <br />
+                  React Components version {reactVersion}
+                  <br />
+                  Last updated {lastUpdated}
+                  <br />
+                  Copyright © {currentYear} IBM
+                </p>
+              </WebsiteFooter>
+>>>>>>> v10
             </div>
           </>
         )}

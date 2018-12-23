@@ -1,11 +1,10 @@
 ---
-
 title: Resources
 ---
 
 ## GitHub Repos
 
-<grid-wrapper col_lg="8" flex="true">
+<grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
     title="Carbon Design Kit"
     href="https://github.com/ibm/carbon-design-kit"
@@ -38,7 +37,7 @@ title: Resources
 
 ## Tools
 
-<grid-wrapper col_lg="8" flex="true">
+<grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
     title="Carbon CodePen"
     href="http://www.codepen.io/team/carbon"
@@ -88,7 +87,7 @@ Carbon uses the IBM Design Language as our guiding principle. These core values 
 
 ## Featured
 
-<grid-wrapper col_lg="12" flex="true">
+<grid-wrapper flex="true" bleed="true">
 <clickable-tile
     type="article"
     title="Smashing Magazine's “Design Systems” Book"
@@ -128,7 +127,16 @@ Carbon uses the IBM Design Language as our guiding principle. These core values 
 
 ## Articles
 
-<grid-wrapper col_lg="12" flex="true">
+<grid-wrapper col_lg="12" flex="true" bleed="true">
+<clickable-tile
+    type="article"
+    title="What to expect in Carbon 10"
+    author="Robin Cannon"
+    date="December 10, 2018"
+    href="https://medium.com/carbondesign/what-to-expect-in-carbon-10-5af1bd6e25f6"
+    >
+    <img src="images/article-9.png" alt="What to expect in Carbon 10" />
+</clickable-tile>
 <clickable-tile
     type="article"
     title="Up & Running with Carbon React in less than 5 minutes"
@@ -145,7 +153,7 @@ Carbon uses the IBM Design Language as our guiding principle. These core values 
     date="October 16, 2018"
     href="https://medium.com/carbondesign/hacktoberfest-with-carbon-95c48943f586"
     >
-    <img src="images/article-7.png" alt="Hacktoberfest with Carbon" />
+    <img src="images/article-7.jpg" alt="Hacktoberfest with Carbon" />
 </clickable-tile>
 <clickable-tile
     type="article"

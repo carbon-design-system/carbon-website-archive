@@ -13,10 +13,17 @@ $feature-flags: (
   $imported-modules-local: ();
   @import '@carbon/grid/scss/grid.scss';
 }
+@import '@carbon/grid/scss/aspect-ratio.scss';
 @import '@carbon/type/scss/type.scss';
 @import '@carbon/type/scss/_classes.scss';
 
 @import 'carbon-components/scss/globals/scss/styles.scss';
+@import '@carbon/addons-website/scss/styles';
+
+//temporary
+.bx--aspect-ratio--2x1 {
+  padding-bottom: 50%;
+}
 
 //---------------------------------------
 // Page styles
@@ -37,8 +44,6 @@ $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
 @import '../components/CodeSnippet/code-snippet.scss';
 @import '../components/ClickableTile/clickable-tile.scss';
 @import '../components/PageTable/page-table.scss';
-@import '../components/SideNavToggleBtn/side-nav-toggle-btn.scss';
-@import '../components/Footer/footer.scss';
 @import '../components/DoDontExample/do-dont-example.scss';
 @import '../components/ColorBlock/color-block.scss';
 @import '../components/ColorCard/color-card.scss';
@@ -59,8 +64,9 @@ $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
 @import '../components/GlobalSearch/global-search.scss';
 @import '../components/LeftNav/left-nav.scss';
 @import '../components/Homepage/homepage.scss';
-@import '../components/TileGroup/tile-group.scss';
+@import '../components/NextPrevious/next-previous.scss';
 @import '../components/FeatureTile/feature-tile.scss';
+@import '../components/BackToTop/back-to-top.scss';
 
 //---------------------------------------
 // Syntax

@@ -1,0 +1,85 @@
+@import '../prefix';
+
+.#{$prefix}--example {
+  font-size: 4rem;
+}
+
+.#{$prefix}--website-footer {
+  @include type-style('body-short-01');
+  width: 100%;
+  background: $ibm-colors__black;
+  color: $ibm-colors__gray--30;
+  position: relative;
+  z-index: 2;
+}
+
+.#{$prefix}--website-footer .ibm--grid {
+  min-height: 370px;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+// Footer nav lists
+.#{$prefix}--website-footer__nav {
+  padding-bottom: rem(40px);
+  margin-bottom: $spacing-md;
+  position: relative;
+
+  &:after {
+    @include breakpoint('sm') {
+      content: '';
+      background: $ibm-colors__gray--80;
+      width: 100%;
+      height: 1px;
+      display: block;
+      position: absolute;
+      bottom: 0;
+    }
+
+    @include breakpoint('md') {
+      display: none;
+    }
+  }
+}
+
+.#{$prefix}--website-footer__nav li {
+  display: block;
+
+  @include breakpoint('sm') {
+    margin: .5rem 0;
+  }
+
+  @include breakpoint('lg') {
+    margin: 0;
+  }
+}
+
+// Footer link styles
+.#{$prefix}--website-footer a {
+  color: $ibm-colors__gray--10;
+  box-shadow: 0 0 currentColor;
+  box-shadow: 0 1px currentColor;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    box-shadow: 0 1px currentColor;
+  }
+
+  &:focus {
+    box-shadow: 0 3px currentColor;
+  }
+}
+
+.#{$prefix}--website-footer .#{$prefix}--website-footer__link {
+  box-shadow: 0 0 currentColor;
+}
+
+.#{$prefix}--website-footer__content,
+.#{$prefix}--website-footer__content p {
+  @include type-style('body-short-01');
+  padding-bottom: 1rem;
+}

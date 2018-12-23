@@ -7,24 +7,20 @@
 }
 
 //----------------------------
-// Flex Group
-//----------------------------
-
-.page-flex-group {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.page-flex-group + .page-flex-group {
-  border-top: 2px solid $ui-04;
-}
-
-//----------------------------
 // Flex
 //----------------------------
-.ibm--flex {
-  display: flex;
-  flex-wrap: wrap;
+.container .flex-wrap {
+  @include breakpoint('md') {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+//----------------------------
+// Bleed
+//----------------------------
+.container .ibm--col-bleed {
+  padding: 0;
 }
 
 //----------------------------
@@ -41,7 +37,7 @@
   margin-bottom: $spacing-lg;
   position: relative;
 }
- 
+
 //----------------------------
 // h3
 //----------------------------
@@ -92,15 +88,18 @@
 //----------------------------
 // Anchor Link
 //----------------------------
-h2, h3, h4, h5 {
-  // This makes sure there is breathing room when 
+h2,
+h3,
+h4,
+h5 {
+  // This makes sure there is breathing room when
   // you jump to the heading anchor link
   &:before {
-    display: block; 
-    content: " "; 
-    margin-top: rem(-56px); 
-    height: rem(56px); 
-    visibility: hidden; 
+    display: block;
+    content: ' ';
+    margin-top: rem(-56px);
+    height: rem(56px);
+    visibility: hidden;
     pointer-events: none;
   }
 
@@ -109,7 +108,7 @@ h2, h3, h4, h5 {
     left: rem(-24px);
     opacity: 0;
   }
-  
+
   .anchor-link__icon {
     fill: $ibm-colors__blue--50;
   }
@@ -118,7 +117,6 @@ h2, h3, h4, h5 {
     opacity: 1;
   }
 }
-
 
 //----------------------------
 // ul / ol
@@ -138,7 +136,7 @@ h2, h3, h4, h5 {
   list-style-type: none;
 
   &:before {
-    content: "\2013";
+    content: '\2013';
     position: absolute;
     left: -1rem;
   }
@@ -150,7 +148,7 @@ h2, h3, h4, h5 {
   list-style-type: decimal;
 }
 
-// The following is a css hack because remark is nesting 
+// The following is a css hack because remark is nesting
 // tags inside of lists and causing double grid code
 .container .page-ol,
 .container .page-ul {
@@ -176,31 +174,38 @@ h2, h3, h4, h5 {
   }
 }
 
-// Targets list elements when they are the first element on a page to remove top margin
-// Adds anchor link styles
-.page-content > div > .ibm--row:first-child,
+//----------------------------
+// Anchor Link
+//----------------------------
+
+.page-content > div > .anchor-links:first-child .page-ul {
+  margin-top: 0;
+}
+
 .anchor-links {
-  .page-ul,
-  ul {
-    margin-bottom: rem(72px);
+  .page-ul {
+    margin-bottom: 2.25rem;
+    margin-top: rem(72px);
     position: relative;
   }
 
-  .page-ul > li,
-  ul > li {
+  .page-ul > li {
     @include type-style('heading-03');
     list-style: none;
+    cursor: pointer;
+    padding-bottom: $spacing-xs;
 
     &:before {
-      content: "\21B3"; //"↳"
+      content: '\21B3'; //"↳"
       position: absolute;
       left: -1.5rem;
+      cursor: pointer;
     }
 
     a {
-      text-decoration: underline;
+      @include type-style('heading-03');
       color: $ibm-colors__gray--90;
-      font-weight: 400;
+      text-decoration: none;
     }
 
     &:hover {
@@ -211,7 +216,6 @@ h2, h3, h4, h5 {
     }
   }
 }
-
 
 //----------------------------
 // Image

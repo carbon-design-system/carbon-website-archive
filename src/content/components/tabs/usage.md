@@ -1,5 +1,4 @@
 ---
-
 title: Tabs
 tabs: ['Code', 'Usage']
 ---

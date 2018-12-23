@@ -6,7 +6,7 @@ tabs: ['Overview', 'Productive', 'Expressive']
 
 ## IBM Productive theme
 
-The _Productive_ theme is for use in web-based product design at IBM. This theme introduces the new IBM Design Language tokens. Please switch to the new tokens wherever possible. 
+The _Productive_ theme is for use in web-based product design at IBM. This theme introduces the new IBM Design Language tokens. Please switch to the new tokens wherever possible.
 
 ## Productive type sets
 

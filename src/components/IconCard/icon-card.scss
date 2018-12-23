@@ -1,4 +1,3 @@
-
 .icon-container {
   display: flex;
   flex-flow: row wrap;
@@ -28,7 +27,7 @@
   @include type-style('caption-01');
 }
 
-.icon__card-details { 
+.icon__card-details {
   top: rem(28px);
   @include type-style('helper-text-01');
 }

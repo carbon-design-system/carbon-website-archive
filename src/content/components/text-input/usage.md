@@ -1,15 +1,14 @@
 ---
-
 title: Text input
 tabs: ['Code', 'Usage']
 ---
 
 ## General guidelines
 
-| Type       | Purpose                                                                                    |
-| ---------- | ------------------------------------------------------------------------------------------ |
+| Type       | Purpose                                                                           |
+| ---------- | --------------------------------------------------------------------------------- |
 | Text input | When the expected user input is a single line of text, as opposed to a paragraph. |
-| Text area  | When the expected user input is more than one sentence.                              |
+| Text area  | When the expected user input is more than one sentence.                           |
 
 ## General guidelines
 
@@ -35,7 +34,7 @@ _Placeholder text example_
 
 ### Help text
 
-Help text is pertinent information that assists the user in completing a field. Help text is always available when the input is focused and appears underneath the label. Use sentence-style capitalization, and in most cases, write the text as full sentences with punctuation. 
+Help text is pertinent information that assists the user in completing a field. Help text is always available when the input is focused and appears underneath the label. Use sentence-style capitalization, and in most cases, write the text as full sentences with punctuation.
 
 <div class="image-component">
     <img src="images/text-input-usage-3.png" alt="Help text example" />

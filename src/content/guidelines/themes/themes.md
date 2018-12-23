@@ -1,15 +1,13 @@
 ---
-label: Guidelines
+label: Themes are used to customize component styles to fit the specific aesthetic of a brand or product.
 title: Themes
 ---
-
-**Themes** are used to customize component styles to fit the specific aesthetic of a brand or product.
 
 ## Introduction to theming
 
 Developers and designers can use theming to modify existing components to fit their own specific visual styles. Rather than changing each individual component's CSS or building modified components from scratch, components can instead be easily customized by changing a set of universal variables we call tokens that seamlessly propagate changes across all of the system.
 
-<grid-wrapper col_lg="8" flex="true">
+<grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
     title="Theming Sandbox"
     href="http://themes.carbondesignsystem.com/"
@@ -19,15 +17,14 @@ Developers and designers can use theming to modify existing components to fit th
 </clickable-tile>
 </grid-wrapper>
 
-
 ### Theme terms
 
-| Term         | Definition                                                                                                     |
-| ------------ | -------------------------------------------------------------------------------------------------------------- |
-| **Theme**    | The set of unique values assigned to each token.                                                               |
-| **Token**    | The code identifier for a unique role or set of roles. Tokens are universal and never change across themes.    |
-| **Role**     | The systematic usage/s of a value. Roles cannot be changed between themes.                                     |
-| **Value**    | The actual style (ie hex code) assigned to a token. |
+| Term      | Definition                                                                                                  |
+| --------- | ----------------------------------------------------------------------------------------------------------- |
+| **Theme** | The set of unique values assigned to each token.                                                            |
+| **Token** | The code identifier for a unique role or set of roles. Tokens are universal and never change across themes. |
+| **Role**  | The systematic usage/s of a value. Roles cannot be changed between themes.                                  |
+| **Value** | The actual style (ie hex code) assigned to a token.                                                         |
 
 ## Default theme
 
@@ -35,7 +32,7 @@ The Carbon Design System has a default theme which is based off of the IBM Desig
 
 The default theme acts as a starting point; from there designers and developers can define how their own components and styles deviate from the default. A theme can change as little as one or all of the token values. Those different values are then packaged into a new theme scss stylesheet which will replace the values of the default theme.
 
-<grid-wrapper col_lg="8" flex="true">
+<grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
     title="Carbon Themes"
     href="https://github.com/carbon-design-system/carbon-themes"
@@ -572,7 +569,10 @@ $tab-underline-disabled: 2px solid $ibm-colors__gray--10 !default !global;
 $toggle-background-color: $ibm-colors__green--50 !default !global;
 
 // Skeleton Loading
-$skeleton: rgba($color__blue-51, 0.1) !default !global; //old $field-01 TODO: Define for experimental
+$skeleton: rgba(
+  $color__blue-51,
+  0.1
+) !default !global; //old $field-01 TODO: Define for experimental
 ```
 
 ## Theming applied
@@ -581,11 +581,11 @@ The following example demonstrates the relationship between the different themes
 
 ![Default theme applied](images/themes-1.svg)
 
-| Key | Token           | Role               | White theme value       | Dark theme value    |
-| --- | --------------- | ------------------ | ----------------------- | ------------------- |
-| 1   | `$text-02`      | Label color        | `#565656` / Gray 70     | `#bebebe` / Gray 30 |
-| 2   | `$text-01`      | Primary text color | `#171717` / Gray 100    | `#f3f3f3` / Gray 10 |
-| 3   | `$ui-04`        | Border bottom color| `#8c8c8c` / Gray 50     | `#a4a4a4` / Gray 40 |
-| 4   | `$icon-01`      | Primary icon color | `#171717` / Gray 100    | `#f3f3f3` / Gray 10 |
-| 5   | `$field-01`     | Field color        | `#f3f3f3` / Gray 10     | `#3d3d3d` / Gray 80 |
-| 6   | `$ui-02`        | Page background    | `#ffffff` / White       | `#282828` / Gray 90 |
+| Key | Token       | Role                | White theme value    | Dark theme value    |
+| --- | ----------- | ------------------- | -------------------- | ------------------- |
+| 1   | `$text-02`  | Label color         | `#565656` / Gray 70  | `#bebebe` / Gray 30 |
+| 2   | `$text-01`  | Primary text color  | `#171717` / Gray 100 | `#f3f3f3` / Gray 10 |
+| 3   | `$ui-04`    | Border bottom color | `#8c8c8c` / Gray 50  | `#a4a4a4` / Gray 40 |
+| 4   | `$icon-01`  | Primary icon color  | `#171717` / Gray 100 | `#f3f3f3` / Gray 10 |
+| 5   | `$field-01` | Field color         | `#f3f3f3` / Gray 10  | `#3d3d3d` / Gray 80 |
+| 6   | `$ui-02`    | Page background     | `#ffffff` / White    | `#282828` / Gray 90 |

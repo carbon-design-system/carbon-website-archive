@@ -34,7 +34,7 @@ The top of each markdown file has required frontmatter fields to display the hea
 
 ```
 ---
-label: Small label text above title
+label: Optional paragraph of text at the top of a page
 title: Page Title
 tabs: ['Tab 1', 'Tab 2', 'Tab 3'']
 internal: true
@@ -44,12 +44,12 @@ internal: true
 Required fields are:
 
 - `title`: The title of the page
-- `label`: The label of the page _(not required on top level pages, e.g., Resources, if title and label are the same only title will display)_
 
 Non-required fields are:
 
+- `label`: The label of the page _(if added then header will display at medium height instead of small)_
 - `tabs`: An array of the page tabs (in the desired order), tab name should match markdown file name.
-- `internal: true` Used to designate internal only content.
+- `internal: true` Used to designate internal only content for display on w3 website.
 
 ## Markdown
 
@@ -178,9 +178,9 @@ The carbon website has a handful of custom markdown components available for use
   - leaving out these extra properties will default to no label, and a swatch size of 24px
 - `<color-card name="$ui-01" hex="#ffffff" border="true" small="true"></color-card>`
 - `<anchor-links>`
-- `<grid-wrapper col_lg="12" flex="true>` 
+- `<grid-wrapper col_lg="12" flex="true>`
   - `col_lg` Specify the col width at large breakpoint, default is 12
-  - `flex` Set to true to set display:flex | flexwrap: wrap to row 
+  - `flex` Set to true to set display:flex | flexwrap: wrap to row
 
 ### Examples
 
@@ -198,6 +198,24 @@ This is a wrapper component to display a list as an anchor link list
     <li><a href="#breakpoints">Breakpoints</a></li>
 </ul>
 </anchor-links>
+```
+
+#### Grid Wrapper
+
+This is a wrapper component used to wrap components like tiles, do-dont, images and more. Shown with the default values below.
+
+```
+Properties
+
+    - col_lg: Specify the col width at large breakpoint, default is 12
+    - col_md: Specify the col width at medium breakpoint, default is 8
+    - col_sm: Specify the col width at small breakpoint, default is 4
+    - flex: Set to true to set display:flex | flexwrap: wrap to row
+    - bleed: Set to true to remove col padding
+
+
+<grid-wrapper />
+<grid-wrapper col_lg="12" col_md="8" col_sm="4" flex="false" bleed="false">
 ```
 
 #### Clickable Tile
