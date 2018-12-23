@@ -5,7 +5,7 @@ import { StaticQuery, graphql, Link } from 'gatsby';
 import Packages from '../../../package.json';
 import GlobalSearch from '../GlobalSearch';
 import LeftNav from '../LeftNav';
-import favicon32 from '../../content/global/images/favicon-32.png';
+import favicon32 from '../../pages/global/images/favicon-32.png';
 import {
   Header,
   HeaderMenuButton,

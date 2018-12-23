@@ -52,7 +52,7 @@ See the below sections for more details on each item.
 
 ### Voice and tone
 
-Reference the [Voice and tone guidelines](http://design-system.stage1.mybluemix.net/guidelines/content/general) when writing content for the Catalog or anywhere in the IBM Cloud.
+Reference the [Voice and tone guidelines](http://design-system.stage1.mybluemix.net/guidelines/pages/general) when writing content for the Catalog or anywhere in the IBM Cloud.
 
 ### Catalog principles
 

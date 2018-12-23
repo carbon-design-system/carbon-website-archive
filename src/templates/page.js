@@ -82,7 +82,7 @@ const renderAst = new rehypeReact({
 }).Compiler;
 
 export default ({ data }) => {
-  const post = data.markdownRemark;
+  const post = data.Mdx;
   let currentPage = post.fields.currentPage;
   let slug = post.fields.slug;
   let tabs = post.frontmatter.tabs;
@@ -137,7 +137,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query BlogPostQuery($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    Mdx(fields: { slug: { eq: $slug } }) {
       htmlAst
       fields {
         slug

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class TypeScaleTable extends Component {
   render() {
-    const typographyTable = require('../../content/guidelines/typography/_type-scale-table.md');
+    const typographyTable = require('../../pages/guidelines/typography/_type-scale-table.md');
     return (
       <div className="ibm--row">
         <div className="ibm--col-lg-8 ibm--offset-lg-4 typography-table">

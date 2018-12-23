@@ -28,7 +28,7 @@ Button labels should clearly indicate the action of the button. Use active verbs
 
 For sets of buttons, use specific labels, such as **Save** or **Discard**, instead of using **OK** and **Cancel**. This is particularly helpful when the user is confirming an action.
 
-For consistency, see [labels and idioms](/guidelines/content/glossary) for the approved list of action labels.
+For consistency, see [labels and idioms](/guidelines/pages/glossary) for the approved list of action labels.
 
 ## Icon usage
 

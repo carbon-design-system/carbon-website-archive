@@ -13,7 +13,7 @@ export default class DoDontExample extends React.Component {
     description: PropTypes.string,
     /** text displayed in the example card */
     text: PropTypes.string,
-    /** path to the image displayed in the example card, starting under `src` folder. e.g.: `content/guidelines/content/img-test.svg` */
+    /** path to the image displayed in the example card, starting under `src` folder. e.g.: `content/guidelines/pages/img-test.svg` */
     imgpath: PropTypes.string,
     /** mark card as true? if not defined, card will be marked as false */
     correct: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),

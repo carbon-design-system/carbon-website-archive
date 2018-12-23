@@ -14,6 +14,7 @@ module.exports = {
     {
       resolve: `gatsby-mdx`,
       options: {
+        //extensions: [".mdx", ".md"],
         defaultLayouts: {
           default: require.resolve("./src/components/Layouts/index.js")
         }
@@ -36,7 +37,7 @@ module.exports = {
         background_color: `#000000`,
         theme_color: `#cccccc`,
         display: `minimal-ui`,
-        icon: `src/content/global/images/favicon-32.png`, // This path is relative to the root of the site.
+        icon: `src/pages/global/images/favicon-32.png`, // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-offline',
@@ -44,7 +45,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'content',
-        path: `${__dirname}/src/content/`,
+        path: `${__dirname}/src/pages/`,
       },
     },
     {
@@ -79,7 +80,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-embedded-codesandbox',
             options: {
-              directory: `${__dirname}/src/content`,
+              directory: `${__dirname}/src/pages`,
               // Optional:
 
               // Custom protocol for parsing the embedding link

@@ -16,9 +16,9 @@ class ComponentOverview extends React.Component {
 
     let componentImg;
     try {
-      componentImg = require(`../../content/components/overview/images/${component}.svg`);
+      componentImg = require(`../../pages/components/overview/images/${component}.svg`);
     } catch (e) {
-      componentImg = require('../../content/components/overview/images/NoImage.svg');
+      componentImg = require('../../pages/components/overview/images/NoImage.svg');
     }
 
     return (

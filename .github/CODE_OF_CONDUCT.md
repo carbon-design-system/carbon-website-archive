@@ -27,7 +27,7 @@ If you are subjected to or witness unacceptable behavior, or have any other conc
 5. `#carbon-components`: This channel is for questions about Carbon Components only. It is not the place to ask general coding questions. Instead, use a dev community like [StackOverflow](https://stackoverflow.com/).
 6. `#carbon-design-system`: Please post any design questions with an in-context screen shot (i.e. screen shot of the whole UI you are designing) with background as to what you are trying to accomplish in this flow. We welcome in-progress work to get community design feedback as well.
 
-<hr>
+<hr/>
 
 If you have suggestions to improve this Code of Conduct, please submit an issue or PR.
 

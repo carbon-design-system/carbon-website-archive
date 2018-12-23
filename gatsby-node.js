@@ -1,12 +1,14 @@
 const path = require('path');
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const { copy } = require('fs-extra');
+const componentWithMDXScope = require('gatsby-mdx/component-with-mdx-scope');
 
 // Method that creates nodes based on the file system that we can use in our templates
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
   // If the node type (file) is a markdown file
-  if (node.internal.type === 'MarkdownRemark') {
+  
+  if (node.internal.type === 'Mdx') {
     const dir = path.resolve(__dirname, '');
     const fileNode = getNode(node.parent);
     const slug = createFilePath({
@@ -39,9 +41,10 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark {
+      allMdx {
         edges {
           node {
+            id
             fields {
               slug
               currentPage
@@ -54,7 +57,7 @@ exports.createPages = ({ actions, graphql }) => {
       }
     }
   `).then(result => {
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    result.data.allMdx.edges.forEach(({ node }) => {
       const slug = node.fields.slug;
       const currentPage = node.fields.currentPage;
       const tabs = node.frontmatter.tabs === null ? [] : node.frontmatter.tabs;
@@ -64,7 +67,11 @@ exports.createPages = ({ actions, graphql }) => {
           : slug;
       createPage({
         path: currentPath,
-        component: path.resolve(`./src/templates/page.js`),
+        component: componentWithMDXScope(
+          path.resolve(`./src/templates/page.js`),
+          node.code.scope,
+          __dirname,
+        ),
         context: {
           slug,
           currentPage,
