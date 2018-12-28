@@ -3,6 +3,7 @@ import { Icon } from 'carbon-components-react';
 import { Location } from '@reach/router';
 import { Link } from 'gatsby';
 import { Link20 } from '@carbon/icons-react';
+import classnames from 'classnames';
 
 export class PageIcon extends React.Component {
   render() {
@@ -188,6 +189,10 @@ export class p extends React.Component {
 
 export class AnchorLinks extends React.Component {
   render() {
-    return <div className="anchor-links">{this.props.children}</div>;
+    const classNames = classnames({
+      'anchor-links': true,
+      'anchor-links--small': this.props.small,
+    });
+    return <div className={classNames}>{this.props.children}</div>;
   }
 }
