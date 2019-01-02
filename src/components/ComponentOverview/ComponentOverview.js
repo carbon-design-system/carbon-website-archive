@@ -23,12 +23,10 @@ class ComponentOverview extends React.Component {
 
     return (
       <li className="component-item" key={component}>
-        <div className="flex-item">
           <Link to={componentUrl}>
             <img src={componentImg} alt={component} />
             <p className="component-name">{component}</p>
           </Link>
-        </div>
       </li>
     );
   };
@@ -36,9 +34,9 @@ class ComponentOverview extends React.Component {
   render() {
     const componentList = require('../../data/components.json'); // eslint-disable-line
     return (
-      <div className="component-variation ibm--row">
-        <div className="ibm--col-lg-12 ibm--offset-lg-4">
-          <ul className="flex-container">
+      <div className="ibm--row">
+        <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
+          <ul className="component-overview">
             {Object.keys(componentList.items).map(item => {
               return this.renderItems(componentList.items[item]);
             })}

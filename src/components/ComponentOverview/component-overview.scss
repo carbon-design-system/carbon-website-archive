@@ -1,15 +1,9 @@
-// CSS styles here
-// @include layer('raised');
 
-#maincontent {
-  padding-bottom: 7rem;
+// temporary until added to componnents
+$active-ui: #bebebe;
+$hover-ui: #e5e5e5;
 
-  @media all and (max-width: 600px) {
-    padding-bottom: 14rem;
-  }
-}
-
-.flex-container {
+.component-overview {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -18,57 +12,92 @@
   justify-content: flex-start;
 }
 
-.flex-item {
+.component-item {
+  display: flex;
+  width: 33%;
+  background: $ibm-colors__white;
   position: relative;
-  justify-content: space-around;
-  padding: 16px;
-  color: #152935;
-
-  a {
-    display: block;
-    text-decoration: none;
-  }
-
-  &:after {
-    position: absolute;
-    content: '';
-    top: 16px;
-    height: 165px;
-    left: 16px;
-    right: 16px;
-    background-color: $ibm-colors__black;
-    opacity: 0;
-    transition: opacity 200ms ease-in;
-    pointer-events: none;
-  }
+  transition: $transition--base;
 
   &:hover {
-    &:after {
-      opacity: 0.05;
-      transition: opacity 300ms ease-out;
+    background: $hover-ui;
+  }
+
+  &:active {
+    background: $active-ui;
+  }
+
+  @include breakpoint('sm') {
+    width: 100%;
+    border-bottom: 1px solid $ibm-colors__gray--20;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  @include breakpoint('md') {
+    width: 50%;
+    border-bottom: none;
+    border-right: 1px solid $ibm-colors__gray--20;
+
+    // selects every 2nd item and removes right border
+    &:nth-child(2n + 2) {
+      border-right: none;
+    }
+
+    &:nth-child(n + 3) {
+      border-top: 1px solid $ibm-colors__gray--20;
+    }
+  }
+
+  @include breakpoint('lg') {
+    width: 33%;
+    border-bottom: none;
+    border-top: none;
+    border-right: 1px solid $ibm-colors__gray--20;
+
+    &:nth-child(2n + 2) {
+      border-right: 1px solid $ibm-colors__gray--20;
+    }
+
+    &:nth-child(3n) {
+      border-right: none;
+    }
+
+    &:nth-child(n + 3) {
+      border-top: none;
+    }
+
+    &:nth-child(n + 5) {
+      border-top: 1px solid $ibm-colors__gray--20;
+    }
+  }
+
+  @include breakpoint('xlg') {
+    width: 25%;
+    border-bottom: none;
+    border-right: 1px solid $ibm-colors__gray--20;
+
+    // selects every 3rd item and removes right border
+    &:nth-child(4n + 4),
+    &:nth-child(4n) {
+      border-right: none;
+    }
+
+    &:nth-child(3n) {
+      border-right: 1px solid $ibm-colors__gray--20;
     }
   }
 }
 
-.flex-item img {
-  background-color: $ui-01;
-}
-
-.component-item {
-  margin-top: 20px;
-  margin-bottom: 32px;
-  display: flex;
-}
-
 .component-name {
+  @include type-style('body-short-02');
   color: $text-01;
   text-decoration: none;
-  @include type-style('heading-02');
   text-align: left;
   display: flex;
-  margin-top: 10px;
-}
-
-.component-name:hover {
-  color: #3d70b2;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }

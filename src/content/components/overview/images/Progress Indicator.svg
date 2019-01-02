@@ -1,23 +1,51 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-    <title>Progress Indicator</title>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Progress-Indicator" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M202.457031,63.8333333 C206.123698,63.8333333 209.123698,66.8333333 209.123698,70.5 C209.123698,74.1666667 206.123698,77.1666667 202.457031,77.1666667 C198.790365,77.1666667 195.790365,74.1666667 195.790365,70.5 C195.790365,66.8333333 198.790365,63.8333333 202.457031,63.8333333 L202.457031,63.8333333 Z M202.457031,62.5 C198.057031,62.5 194.457031,66.1 194.457031,70.5 C194.457031,74.9 198.057031,78.5 202.457031,78.5 C206.857031,78.5 210.457031,74.9 210.457031,70.5 C210.457031,66.1 206.857031,62.5 202.457031,62.5 L202.457031,62.5 L202.457031,62.5 Z" id="Indicator-Circle---Future-Step" fill="#8C9BA5"></path>
-        <polygon id="Path" fill="#8C9BA5" fill-rule="nonzero" points="125.995089 71.18 194.457031 71.18 194.457031 69.18 125.995089 69.18"></polygon>
-        <g id="Indicator-Circle---Current-Step" transform="translate(110.832031, 62.500000)">
-            <path d="M7.895,1.28 C11.415,1.28 14.295,4.16 14.295,7.68 C14.295,11.2 11.415,14.08 7.895,14.08 C4.375,14.08 1.495,11.2 1.495,7.68 C1.495,4.16 4.375,1.28 7.895,1.28 L7.895,1.28 Z M7.895,0 C3.671,0 0.215,3.456 0.215,7.68 C0.215,11.904 3.671,15.36 7.895,15.36 C12.119,15.36 15.575,11.904 15.575,7.68 C15.575,3.456 12.119,0 7.895,0 L7.895,0 L7.895,0 Z" id="Shape" fill="#3D70B2"></path>
-            <circle id="Oval-4" fill="#4178BE" cx="7.895" cy="7.68" r="3.84"></circle>
+    <defs>
+        <path d="M10.5,5.2 L9.8,4.5 L6,8.3 L4.2,6.5 L3.5,7.2 L6,9.7 L10.5,5.2 Z M7,0 C3.15,0 0,3.15 0,7 C0,10.85 3.15,14 7,14 C10.85,14 14,10.85 14,7 C14,3.15 10.85,0 7,0 Z M7,13 C3.7,13 1,10.3 1,7 C1,3.7 3.7,1 7,1 C10.3,1 13,3.7 13,7 C13,10.3 10.3,13 7,13 Z" id="path-1"></path>
+        <path d="M7,4.4408921e-16 C3.13400675,-2.22044605e-16 4.4408921e-16,3.13400675 0,7 C-4.4408921e-16,10.8659932 3.13400675,14 7,14 C10.8659932,14 14,10.8659932 14,7 C14,5.14348457 13.2625021,3.36300718 11.9497475,2.05025253 C10.6369928,0.737497883 8.85651543,2.22044605e-16 7,4.4408921e-16 Z M7,13 C3.6862915,13 1,10.3137085 1,7 C1,3.6862915 3.6862915,1 7,1 C10.3137085,1 13,3.6862915 13,7 C13,8.59129894 12.367859,10.1174224 11.2426407,11.2426407 C10.1174224,12.367859 8.59129894,13 7,13 Z" id="path-3"></path>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="progress_indicator" transform="translate(52.000000, 147.000000)">
+            <g id="Group-31">
+                <g id="Group-30">
+                    <g id="Group-29" transform="translate(72.000000, 11.000000)">
+                        <g id="icon/status/checkmark/16">
+                            <g id="checkmark" transform="translate(1.000000, 1.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                                <g id="color/blue/60" mask="url(#mask-2)" fill="#0062FF">
+                                    <g transform="translate(-1.000000, -1.000000)">
+                                        <rect x="0" y="0" width="40" height="40"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <rect id="Rectangle-15-Copy-82" fill="#0062FF" x="0" y="0" width="72" height="2"></rect>
+                    <rect id="Rectangle-15-Copy-83" fill="#0062FF" x="72" y="0" width="72" height="2"></rect>
+                    <rect id="Rectangle-15-Copy-84" fill="#DCDCDC" x="144" y="0" width="72" height="2"></rect>
+                    <g id="Group-Copy-3" transform="translate(144.000000, 11.000000)">
+                        <g id="radio--button--unchecked" transform="translate(1.000000, 1.000000)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-3"></use>
+                            <g id="color/cool-gray/100" mask="url(#mask-4)" fill="#13171A">
+                                <g transform="translate(43.000000, -1.000000)">
+                                    <rect x="0" y="0" width="40" height="40"></rect>
+                                </g>
+                            </g>
+                        </g>
+                        <rect id="transparent-rectangle" x="0" y="0" width="16" height="16"></rect>
+                    </g>
+                    <circle id="Oval-9" stroke="#0F6DFF" stroke-width="2.114048" fill="#0F6DFF" cx="8" cy="19" r="6"></circle>
+                </g>
+            </g>
         </g>
-        <polygon id="Path" fill="#3D70B2" fill-rule="nonzero" points="43.9981572 71.5 111.832031 71.5 111.832031 69.5 43.9981572 69.5"></polygon>
-        <g id="Indicator-Circle---Completed-Step" transform="translate(28.542969, 62.500000)" fill="#3D70B2">
-            <path d="M8,1.33333333 C11.6666667,1.33333333 14.6666667,4.33333333 14.6666667,8 C14.6666667,11.6666667 11.6666667,14.6666667 8,14.6666667 C4.33333333,14.6666667 1.33333333,11.6666667 1.33333333,8 C1.33333333,4.33333333 4.33333333,1.33333333 8,1.33333333 L8,1.33333333 Z M8,0 C3.6,0 0,3.6 0,8 C0,12.4 3.6,16 8,16 C12.4,16 16,12.4 16,8 C16,3.6 12.4,0 8,0 L8,0 L8,0 Z" id="Shape"></path>
-            <polygon id="Shape" points="6.86666667 9.06666667 5.13333333 7.33333333 4.2 8.26666667 6.86666667 10.9333333 11.8666667 6 10.9333333 5.06666667"></polygon>
-        </g>
-        <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="28.5429688" y="88.5" width="30" height="6"></rect>
-        <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="110.832031" y="88.5" width="40" height="6"></rect>
-        <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="194.457031" y="88.5" width="35" height="6"></rect>
     </g>
 </svg>
