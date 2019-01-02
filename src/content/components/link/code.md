@@ -12,5 +12,6 @@ tabs: ['Code', 'Usage', 'Style']
     variation="link"
     codepen="YErzrq"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>

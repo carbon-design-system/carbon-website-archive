@@ -12,6 +12,7 @@ tabs: ['Code', 'Usage', 'Style']
     variation="list--ordered"
     codepen="MOEWEP"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>
 
@@ -21,6 +22,7 @@ tabs: ['Code', 'Usage', 'Style']
     variation="list"
     codepen="JOrjOj"
     hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>
 <component-docs component="list"></component-docs>
