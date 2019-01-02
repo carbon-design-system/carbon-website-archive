@@ -37,6 +37,4 @@ Carbon is the official implementation of the IBM Design Language for product and
 #### Developers
 Carbon is built by developers, for developers. Our front-end libraries are continuously maintained and fully supported by the core Carbon team (and an army of open-source contributors).
 
-There are two different implementations of the Carbon Design System. One is a vanilla JavaScript library; that's written in ES6+, SCSS, and HTML and ships deliverables in vanilla JavaScript in ES5 as well as ES6, CSS, SCSS and HTML. The other is a React library that ships a React rewrite of the JavaScript, but uses the same CSS as the core library.
-
-There is also an unofficial, internal-only Angular library for Carbon Components that was built out by a team other than Carbon. Please note that the Carbon team does not maintain this repo.
+There are three different implementations of the Carbon Design System. One is a vanilla JavaScript library; that's written in ES6+, SCSS, and HTML and ships deliverables in vanilla JavaScript in ES5 as well as ES6, CSS, SCSS and HTML. Another is a React library that ships a React rewrite of the JavaScript, but uses the same CSS as the core library. There is also an Angular library that uses the same CSS.
