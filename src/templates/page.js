@@ -47,6 +47,7 @@ import {
   AnchorLinks,
 } from '../components/markdown/Markdown';
 
+/*
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
@@ -81,16 +82,17 @@ const renderAst = new rehypeReact({
   },
 }).Compiler;
 
+*/
 export default ({ data }) => {
-  const post = data.Mdx;
-  let currentPage = post.fields.currentPage;
-  let slug = post.fields.slug;
-  let tabs = post.frontmatter.tabs;
-  let internal = post.frontmatter.internal;
+  const page = data.Mdx;
+  let currentPage = page.fields.currentPage;
+  let slug = page.fields.slug;
+  let tabs = page.frontmatter.tabs;
+  let internal = page.frontmatter.internal;
 
   const { GATSBY_CARBON_ENV } = process.env;
   const isInternal = GATSBY_CARBON_ENV !== 'internal' && internal == true;
-  const homepage = (post.frontmatter.title === 'Homepage') == true;
+  const homepage = (page.frontmatter.title === 'Homepage') == true;
 
   if (isInternal) {
     return (
@@ -104,7 +106,7 @@ export default ({ data }) => {
         <div className="container--homepage">
           <HomepageHeader />
           <main className="page-content ibm--grid" id="maincontent">
-            {renderAst(post.htmlAst)}
+            {page.htmlAst}
           </main>
           <HomepageFooter />
         </div>
@@ -115,14 +117,14 @@ export default ({ data }) => {
     return (
       <Layout>
         <PageHeader
-          title={post.frontmatter.title}
-          label={post.frontmatter.label}>
+          title={page.frontmatter.title}
+          label={page.frontmatter.label}>
           {!(tabs === null) && (
             <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
           )}
         </PageHeader>
         <main className="page-content ibm--grid" id="maincontent">
-          {renderAst(post.htmlAst)}
+          {renderAst(page.htmlAst)}
         </main>
         <NextPrevious
           slug={slug}
@@ -134,21 +136,3 @@ export default ({ data }) => {
     );
   }
 };
-
-export const query = graphql`
-  query BlogPostQuery($slug: String!) {
-    Mdx(fields: { slug: { eq: $slug } }) {
-      htmlAst
-      fields {
-        slug
-        currentPage
-      }
-      frontmatter {
-        title
-        label
-        tabs
-        internal
-      }
-    }
-  }
-`;
