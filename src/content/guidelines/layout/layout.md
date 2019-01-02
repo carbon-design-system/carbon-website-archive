@@ -29,7 +29,7 @@ At [breakpoint boundaries](#breakpoints), Mini Units divide the screen into a fi
 
 The core concept of the 2x Grid is to divide or multiply by two, forming a visual rhythm. Fluid grids are built by division, whereas fixed grids are built with multiplication. On breakpoint boundaries, these sizes match. Margins and padding are applied consistently in both cases.
 
-<anchor-links>
+<anchor-links small="true">
 <ul>
     <li><a href="#columns-and-rows">Columns and Rows</a></li>
     <li><a href="#margins">Margins</a></li>
@@ -131,7 +131,7 @@ Carefully consider the user's goal for their screen space, particularly when dis
 
 Choose the layout approach that best meets the user's expectation in each case.
 
-<anchor-links>
+<anchor-links small="true">
 <ul>
     <li><a href="#fluid-grid">Fluid Grid</a></li>
     <li><a href="#fixed-boxes">Fixed Boxes</a></li>
@@ -187,8 +187,12 @@ Horizontal and vertical alignment are equally critical. When present, the eye ca
 
 Within a design system, layouts often follow a common structure, especially with regard to navigation. This section covers which of these UI patterns you'll need, where users will expect to see them on a page and how they’ll affect the content that lives within the responsive grid.
 
-1. [Screen Regions](#screen-regions)
-2. [Panel Behavior](#panel-behavior)
+<anchor-links small="true">
+<ul>
+    <li><a href="#screen-regions">Screen Regions</a></li>
+    <li><a href="#panel-behavior">Panel Behavior</a></li>
+</ul>
+</anchor-links>
 
 ### Screen Regions
 
@@ -248,7 +252,7 @@ We provide a sizing scale for both fixed and fluid sizes. Use it to size content
 
 To use the scale, first choose a fixed or fluid base unit, then multiply it in each dimension, applying aspect ratios as needed.
 
-<anchor-links>
+<anchor-links small="true">
 <ul>
     <li><a href="#fixed-base-unit">Fixed Base Unit</a></li>
     <li><a href="#fluid-base-unit">Fluid Base Unnit</a></li>
