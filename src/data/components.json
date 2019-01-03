@@ -13,7 +13,7 @@
       "added": "7.0.0",
       "vanilla": "ready",
       "react": "ready",
-      "angular": "not-available",
+      "angular": "ready",
       "experimental": "ready"
     },
     {
@@ -98,7 +98,7 @@
       "tag": "updated",
       "vanilla": "ready",
       "react": "ready",
-      "angular": "not-available",
+      "angular": "ready",
       "experimental": "ready"
     },
     {
@@ -106,7 +106,7 @@
       "added": "2.0.0",
       "vanilla": "ready",
       "react": "ready",
-      "angular": "not-available",
+      "angular": "ready",
       "experimental": "ready"
     },
     {
@@ -114,7 +114,7 @@
       "added": "2.0.0",
       "vanilla": "ready",
       "react": "ready",
-      "angular": "not-available",
+      "angular": "ready",
       "experimental": "ready"
     },
     {
@@ -221,7 +221,7 @@
       "added": "7.7.0",
       "vanilla": "ready",
       "react": "ready",
-      "angular": "not-available",
+      "angular": "ready",
       "experimental": "ready"
     },
     {

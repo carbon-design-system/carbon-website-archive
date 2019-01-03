@@ -11,7 +11,8 @@ tabs: ['Code', 'Usage', 'Style']
     component="breadcrumb" 
     variation="breadcrumb"
     codepen="eevVxq"
-    hasReactVersion="true" 
+    hasReactVersion="true"
+    hasAngularVersion="true"
     >
 </component>
 

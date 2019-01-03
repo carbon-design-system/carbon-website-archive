@@ -11,9 +11,8 @@ tabs: ['Code', 'Usage', 'Style']
     component="structured-list" 
     variation="structured-list"
     codepen="BJKxZa"
-    
     hasReactVersion="true"
-    
+    hasAngularVersion="true"
     >
 </component>
 <component 
@@ -21,9 +20,8 @@ tabs: ['Code', 'Usage', 'Style']
     component="structured-list" 
     variation="structured-list--selection"
     codepen="qpZYmK"
-    
     hasReactVersion="true"
-    
+    hasAngularVersion="true"
     >
 </component>
 <component-docs component="structured-list"></component-docs>
