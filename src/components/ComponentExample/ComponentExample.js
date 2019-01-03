@@ -11,6 +11,7 @@ import InlineLoadingDemoButton from '../../content/components/inline-loading/inl
 import on from 'carbon-components/es/globals/js/misc/on';
 import settings from 'carbon-components/es/globals/js/settings';
 import { RadioButtonGroup, RadioButton } from 'carbon-components-react';
+import { Launch16 } from '@carbon/icons-react';
 
 /**
  * The CSS property names of the arrow keyed by the floating menu direction.
@@ -342,7 +343,7 @@ class ComponentExample extends Component {
         </div>
         <div className="component-toolbar">
           <div className="component-toolbar__current">
-            <p>Vanilla JS</p>
+            Vanilla JS
           </div>
           <div className="component-toolbar__links">
             {hasReactVersion === 'true' && (
@@ -350,7 +351,7 @@ class ComponentExample extends Component {
                 href={`http://react.carbondesignsystem.com/?selectedKind=${componentNameLink}`}
                 target="_blank"
                 rel="noopener noreferrer">
-                React
+                React <Launch16 />
               </a>
             )}
             {hasAngularVersion === 'true' && (
@@ -358,12 +359,12 @@ class ComponentExample extends Component {
                 href={`http://angular.carbondesignsystem.com/?selectedKind=${componentNameLink}`}
                 target="_blank"
                 rel="noopener noreferrer">
-                Angular
+                Angular <Launch16 />
               </a>
             )}
             {codepenSlug !== undefined && (
               <a target="_blank" href={componentLink} rel="noopener noreferrer">
-                CodePen
+                CodePen <Launch16 />
               </a>
             )}
           </div>

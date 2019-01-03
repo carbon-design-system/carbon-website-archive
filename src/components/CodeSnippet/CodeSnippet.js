@@ -7,7 +7,7 @@ import 'prismjs/components/prism-bash';
 import 'prismjs/components/prism-scss';
 import { CopyToClipboard } from 'react-copy-to-clipboard/lib/Component';
 
-require('prismjs/themes/prism.css');
+require('../../styles/prism.css');
 
 export default class Snippet extends React.Component {
   static propTypes = {

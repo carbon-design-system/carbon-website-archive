@@ -5,6 +5,7 @@ import classnames from 'classnames';
 import { Icon } from 'carbon-components-react';
 import ReactGA from 'react-ga';
 import Prism from 'prismjs';
+import { Copy20 } from '@carbon/icons-react';
 
 class CodeExample extends Component {
   static propTypes = {
@@ -68,8 +69,8 @@ class CodeExample extends Component {
     });
 
     const expandCodeBtnText = this.state.expandedCode
-      ? 'Show less code'
-      : 'Show more code';
+      ? 'Show less'
+      : 'Show more';
     return (
       <div className="code-example">
         <div
@@ -87,12 +88,7 @@ class CodeExample extends Component {
             className="bx--snippet-button code-example__copy-btn"
             onClick={() => this.handleClick()}>
             Copy
-            <Icon
-              alt="copy button"
-              className="code-example__copy-btn--icon bx--snippet__icon"
-              name="copy"
-              description="Copy code icon"
-            />
+            <Copy20 className="code-example__copy-btn--icon bx--snippet__icon" />
             <div className={copyBtnClass} data-feedback="Copied!" />
           </button>
         </CopyToClipboard>
