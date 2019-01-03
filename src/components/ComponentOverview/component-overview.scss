@@ -13,7 +13,6 @@ $hover-ui: #e5e5e5;
 }
 
 .component-item {
-  display: flex;
   width: 33%;
   background: $ibm-colors__white;
   position: relative;
@@ -27,6 +26,7 @@ $hover-ui: #e5e5e5;
     background: $active-ui;
   }
 
+  // Display one column, bottom border except last item
   @include breakpoint('sm') {
     width: 100%;
     border-bottom: 1px solid $ibm-colors__gray--20;
@@ -36,9 +36,9 @@ $hover-ui: #e5e5e5;
     }
   }
 
+  // Display two colums
   @include breakpoint('md') {
     width: 50%;
-    border-bottom: none;
     border-right: 1px solid $ibm-colors__gray--20;
 
     // selects every 2nd item and removes right border
@@ -46,53 +46,79 @@ $hover-ui: #e5e5e5;
       border-right: none;
     }
 
-    &:nth-child(n + 3) {
-      border-top: 1px solid $ibm-colors__gray--20;
+    &:last-child,
+    &:nth-last-child(2) {
+      border-bottom: none;
+    }
+
+    &:last-child {
+      border-right: none;
     }
   }
 
+  // Display three columnns
   @include breakpoint('lg') {
-    width: 33%;
-    border-bottom: none;
-    border-top: none;
-    border-right: 1px solid $ibm-colors__gray--20;
+    width: 33.33%;
 
     &:nth-child(2n + 2) {
       border-right: 1px solid $ibm-colors__gray--20;
     }
 
-    &:nth-child(3n) {
+    // selects every 3rd item and removes right border
+    &:nth-child(3n + 3) {
       border-right: none;
     }
 
-    &:nth-child(n + 3) {
-      border-top: none;
+    &:last-child,
+    &:nth-last-child(2),
+    &:nth-last-child(3) {
+      border-bottom: none;
     }
 
-    &:nth-child(n + 5) {
-      border-top: 1px solid $ibm-colors__gray--20;
+    &:last-child {
+      border-right: none;
     }
   }
 
+  // Display four columnns
   @include breakpoint('xlg') {
     width: 25%;
-    border-bottom: none;
-    border-right: 1px solid $ibm-colors__gray--20;
 
-    // selects every 3rd item and removes right border
-    &:nth-child(4n + 4),
-    &:nth-child(4n) {
+    &:nth-child(3n + 3) {
+      border-right: 1px solid $ibm-colors__gray--20;
+    }
+
+    // selects every 4th item and removes right border
+    &:nth-child(4n + 4) {
       border-right: none;
     }
 
-    &:nth-child(3n) {
-      border-right: 1px solid $ibm-colors__gray--20;
+    &:last-child,
+    &:nth-last-child(2),
+    &:nth-last-child(3),
+    &:nth-last-child(4) {
+      border-bottom: none;
+    }
+
+    &:last-child {
+      border-right: none;
     }
   }
 }
 
+.component-item__link {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.component-item__img {
+  margin: auto;
+  display: block;
+}
+
 .component-name {
-  @include type-style('body-short-02');
+  @include type-style('caption-01');
   color: $text-01;
   text-decoration: none;
   text-align: left;
