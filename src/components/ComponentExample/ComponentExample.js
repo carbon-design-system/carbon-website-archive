@@ -319,7 +319,7 @@ class ComponentExample extends Component {
       `component-example__live--${component}`,
       {
         'component-example__live--light':
-          (currentFieldColor === 'field-01') & (hasLightVersion === 'true') ||
+          (currentFieldColor === 'field-02') & (hasLightVersion === 'true') ||
           hasLightBackground === 'true',
         'carbon-demo-v9': experimental != 'true',
       }
