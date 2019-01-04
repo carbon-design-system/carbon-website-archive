@@ -1,6 +1,3 @@
-$temp-bg: #fff;
-$temp-text: $color__blue-90;
-
 .code-example {
   display: flex;
   flex-direction: column;
@@ -9,7 +6,8 @@ $temp-text: $color__blue-90;
 
   code[class*='language-'],
   pre[class*='language-'] {
-    background-color: #fff;
+    background: $ui-05;
+    color: $inverse-01;
   }
 
   pre[class*='language-'] {
@@ -26,28 +24,34 @@ $temp-text: $color__blue-90;
   top: 0.75rem;
   right: 0.75rem;
   color: transparent;
-  background-color: #fff;
+  background: $ui-05;
   cursor: pointer;
   z-index: 20;
 
+  &:hover {
+    background: $ui-05;
+  }
+
   &:focus {
     @include focus-outline;
+    background: $ui-05;
   }
 
   &:hover svg {
-    fill: $brand-02;
+    fill: $inverse-01;
   }
 
   svg {
     position: absolute;
     top: 0.5rem;
     left: 0.5rem;
+    fill: $inverse-01;
   }
 }
 
 .code-example__raw-html {
-  background-color: #fff;
-  border: 1px solid $color__gray-1;
+  background: $ui-05;
+  color: $inverse-01;
   padding: $spacing-md 0 $spacing-md $spacing-md;
   max-height: 12rem;
   min-height: 7rem;
@@ -64,15 +68,18 @@ $temp-text: $color__blue-90;
 }
 
 .code-example__expand {
-  @include helvetica;
   position: absolute;
   bottom: rem(2px);
   right: rem(2px);
-  color: $temp-text;
-  background-color: $temp-bg;
+  color: $inverse-01;
+  background-color: $ui-05;
   border: none;
   padding: 1rem;
   cursor: pointer;
+
+  &:focus {
+    @include focus-outline;
+  }
 
   span {
     @include type-style('caption-01');
@@ -80,7 +87,7 @@ $temp-text: $color__blue-90;
 
   &--icon {
     margin-left: 0.5rem;
-    fill: $temp-text;
+    fill: $inverse-01;
     transition: $transition--base;
 
     &--rotated {
