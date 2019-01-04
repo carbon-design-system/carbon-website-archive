@@ -45,7 +45,7 @@ import {
   ol,
   PageIcon,
   AnchorLinks,
-} from '../components/markdown/Markdown';
+} from '../components/Markdown/Markdown';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
