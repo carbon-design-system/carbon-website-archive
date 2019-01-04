@@ -47,7 +47,7 @@ class Glossary extends Component {
           });
           return (
             <div key={list} className="glossary-entry__list">
-              <h2 className="glossary-entry__heading page-h2">{list}</h2>
+              <h2 className="glossary-entry__heading page-h2 bx--type-expressive-heading-04">{list}</h2>
               {listItems}
             </div>
           );

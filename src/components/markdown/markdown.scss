@@ -30,7 +30,7 @@
 .page-h2,
 .component-docs h2,
 .icon-h2 {
-  @include type-style('expressive-heading-04');
+  //@include type-style('expressive-heading-04');
   position: relative;
   color: $text-01;
   margin-top: rem(56px);
@@ -44,7 +44,7 @@
 
 .page-h3,
 .component-docs h3 {
-  @include type-style('heading-02');
+  @include type-style('heading-03');
   color: $text-01;
   margin-top: rem(24px);
   margin-bottom: $spacing-md;
