@@ -199,7 +199,7 @@ class Layout extends React.Component {
                 linksCol2={[
                   {
                     href: 'https://dribbble.com/_carbondesign',
-                    linkText: 'Dribble',
+                    linkText: 'Dribbble',
                   },
                   {
                     href: 'https://medium.com/@_carbondesign',
@@ -212,7 +212,7 @@ class Layout extends React.Component {
                 ]}>
                 <p>
                   Have questions? Email us or open an issue in{' '}
-                  <a href="#">GitHub.</a>
+                  <a href="https://github.com/carbon-design-system/carbon-website/issues/new/choose">GitHub.</a>
                 </p>
                 <p>
                   Vanilla Components version {version}
