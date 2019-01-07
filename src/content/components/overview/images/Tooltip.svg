@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
     <title>Artboard</title>
     <desc>Created with Sketch.</desc>
     <defs>
@@ -29,7 +29,7 @@
             <rect id="Rectangle-Copy-2" fill="#BEBEBE" x="16" y="54" width="165" height="12"></rect>
             <rect id="Rectangle-Copy" fill="#BEBEBE" x="16" y="35" width="125" height="12"></rect>
             <rect id="Rectangle-Copy-3" fill="#BEBEBE" x="16" y="73" width="125" height="12"></rect>
-            <rect id="Rectangle-3-Copy-10" fill="#E5E5E5" x="16" y="125" width="76" height="12"></rect>
+            <rect id="Rectangle-3-Copy-10" fill="#CACACA" x="16" y="125" width="76" height="12"></rect>
         </g>
     </g>
 </svg>

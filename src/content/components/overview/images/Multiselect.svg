@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
     <title>Artboard</title>
     <desc>Created with Sketch.</desc>
     <defs>
@@ -8,7 +8,7 @@
         <filter x="-4.7%" y="-8.2%" width="109.3%" height="120.6%" filterUnits="objectBoundingBox" id="filter-2">
             <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0.862745106   0 0 0 0 0.862745106   0 0 0 0 0.862745106  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
         </filter>
         <polygon id="path-3" points="5 0 10 5 9.293 5.707 5 1.414 0.707 5.707 0 5"></polygon>
         <polygon id="path-5" points="4.707 4 8 0.707 7.293 0 4 3.293 0.707 0 0 0.707 3.293 4 0 7.293 0.707 8 4 4.707 7.293 8 8 7.293"></polygon>
@@ -23,9 +23,9 @@
             </g>
             <polygon id="Rectangle-Copy-24" fill="#F3F3F3" points="0 32 216 32 216 64 0 64"></polygon>
             <polygon id="Rectangle-Copy-28" fill="#F3F3F3" points="0 64 216 64 216 96 0 96"></polygon>
-            <rect id="Rectangle-8" fill="#DCDCDC" x="16" y="63" width="192" height="1"></rect>
-            <polygon id="Rectangle-Copy-29" fill="#F3F3F3" points="0 97 216 97 216 129 0 129"></polygon>
-            <rect id="Rectangle-8-Copy" fill="#DCDCDC" x="16" y="96" width="192" height="1"></rect>
+            <rect id="Rectangle-8" fill="#DCDCDC" x="12" y="63" width="192" height="1"></rect>
+            <polygon id="Rectangle-Copy-29" fill="#F3F3F3" points="0 91 216 91 216 129 0 129"></polygon>
+            <rect id="Rectangle-8-Copy" fill="#DCDCDC" x="12" y="96" width="192" height="1"></rect>
             <g id="icon/navigation/chevron/up/16" transform="translate(184.000000, 8.000000)">
                 <g id="Group">
                     <g id="chevron--up" transform="translate(3.000000, 5.000000)">

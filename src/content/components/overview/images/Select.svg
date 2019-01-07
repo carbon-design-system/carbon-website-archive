@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
     <title>Artboard</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <polygon id="path-1" points="0 0 5 4.375 0 8.75"></polygon>
+        <polygon id="path-1" points="0 0 4.365 3.819375 0 7.63875"></polygon>
     </defs>
     <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Select" transform="translate(52.000000, 144.000000)">
@@ -15,22 +15,20 @@
                 </g>
                 <rect id="Rectangle-Copy-13" fill="#D8D8D8" x="16" y="10" width="116" height="12"></rect>
             </g>
-            <g id="icon/navigation/caret/left/20" transform="translate(192.000000, 17.000000) scale(1, -1) rotate(90.000000) translate(-192.000000, -17.000000) translate(182.000000, 7.000000)">
-                <g id="Group">
-                    <g id="caret--left" transform="translate(6.875000, 5.625000)">
-                        <mask id="mask-2" fill="white">
-                            <use xlink:href="#path-1"></use>
-                        </mask>
-                        <use id="Mask" fill="#000000" fill-rule="nonzero" transform="translate(2.500000, 4.375000) scale(-1, 1) translate(-2.500000, -4.375000) " xlink:href="#path-1"></use>
-                        <g id="color/black" mask="url(#mask-2)" fill="#000000">
-                            <g transform="translate(-6.875000, -5.625000)">
-                                <rect x="0" y="0" width="25" height="25"></rect>
-                            </g>
-                        </g>
+        </g>
+        <g id="icon/navigation/caret/right/20" transform="translate(246.730000, 160.730000) rotate(90.000000) translate(-246.730000, -160.730000) translate(238.000000, 152.000000)">
+            <g id="caret--right" stroke-width="1" fill-rule="evenodd" transform="translate(7.093125, 4.910625)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <g id="color/black" mask="url(#mask-2)" fill="#000000">
+                    <g transform="translate(-7.093125, -4.910625)">
+                        <rect x="0" y="0" width="35" height="35"></rect>
                     </g>
-                    <rect id="transparent-rectangle" x="0" y="0" width="20" height="20"></rect>
                 </g>
             </g>
+            <rect id="transparent-rectangle" transform="translate(8.730000, 8.730000) rotate(-90.000000) translate(-8.730000, -8.730000) " x="0" y="0" width="17.46" height="17.46"></rect>
         </g>
     </g>
 </svg>

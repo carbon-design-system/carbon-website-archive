@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
     <title>Artboard</title>
     <desc>Created with Sketch.</desc>
     <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Link" transform="translate(133.000000, 150.000000)">
-            <text id="Text-link-Copy-8" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="20" fill="#0062FF">
-                <tspan x="0" y="14">Text link</tspan>
-            </text>
-            <path d="M2,20.5 L54,20.5" id="Path-3" stroke="#0062FF"></path>
+        <g id="Link-2" transform="translate(131.000000, 149.000000)">
+            <g id="Link">
+                <text id="Text-link-Copy-8" font-family="IBMPlexSans, IBM Plex Sans" font-size="16" font-weight="normal" line-spacing="20" fill="#0062FF">
+                    <tspan x="0" y="16">Text link</tspan>
+                </text>
+                <path d="M2,21.5 L61.109375,21.5" id="Path-3" stroke="#0062FF"></path>
+            </g>
         </g>
     </g>
 </svg>
