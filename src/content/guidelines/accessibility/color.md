@@ -4,23 +4,25 @@ title: Accessibility
 tabs: ['Overview', 'Color', 'Keyboard', 'Developers']
 ---
 
-IBM is committed to serving all users, regardless of visual ability.
-
 ## Introduction
 
 Visual impairments can include low vision, color blindness, and complete blindness. Carbon components have been designed to accommodate the entire spectrum of visual impairment, though designer diligence is still needed to ensure that the components are used correctly.
 
 ## Color contrast
 
-**Carbon meets IBM Web Checklist (WCAG AA) standards across the entire system, including color contrast ratios.**
+**Carbon meets [WCAG AA standards](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) across all standard themes in the system, including color contrast ratios.**
 
-AA requirements state that:
+### Standard text
+Standard text and images of text must have a contrast ratio of at least **4.5:1**. 
 
-- Text and images of text must have a contrast ratio of at least **4.5:1**. An exception is large text (at least 24px regular / 19px semi-bold) which must have a contrast ratio of **3:1.**
-- UI components: Visual information used to indicate states and boundaries of UI components must have a contrast ratio of **3:1** against adjacent colors. A UI component is defined as "a part of the content that is perceived by users as a single control for a distinct function." This includes form elements.
+### Large text
+Large text (at least 24 px regular and light / 19 px semi-bold) must have a contrast ratio of **3:1.**
 
-**Watch out for text against non-static backgrounds**
-There are times that text is rendered on a gradient background or image. You need to make sure that the text color always meets contrast standards. This is especially important for parallax applications or animations where text or backgrounds are moving independently of each other.
+### Text against non-static backgrounds
+When text is rendered on a gradient background or image, make sure the text color meets contrast standards in all places it appears. This is especially important for parallax applications or animations where text and backgrounds are moving independently of each other.
+
+### UI components 
+Visual information used to indicate states and boundaries of UI components must have a contrast ratio of **3:1** against adjacent colors. A UI component is defined as "a part of the content that is perceived by users as a single control for a distinct function." This includes form elements.
 
 [IBM Checkpoint 1.4.3 Contrast (Minimum)](https://www.ibm.com/able/guidelines/ci162/contrast.html)
 
@@ -69,9 +71,9 @@ To get an understanding of the various low-vision disabilities, we recommend usi
 
 ## Resources
 
-- [IBM Web Accessibility Checklist](https://www.ibm.com/able/guidelines/ci162/accessibility_checklist.html) - (Internal only) IBM's specific ruleset for creating accessible web applications.
+- [IBM Accessibility quick guidance](https://w3.ibm.com/able/devtest/quick/)(Internal only)
+- [IBM Web Accessibility Checklist](https://www.ibm.com/able/guidelines/ci162/accessibility_checklist.html)
 - [WCAG 2.1 guidelines](https://www.w3.org/TR/WCAG21/)
-- [IBM accessibility quick guidance](https://w3.ibm.com/able/devtest/quick/) - (Internal only)
 - [W3C low vision requirements](https://www.w3.org/TR/low-vision-needs/)
 
 ## Tools

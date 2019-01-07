@@ -67,23 +67,6 @@ Carbon uses _themes_ and _tokens_ to manage color. The universal color tokens ar
 | **\$disabled-02**        | Disabled elements on `$disabled-01` <br /> Disabled label <br /> Disabled text on `$disabled-01` <br /> Disabled icons <br /> Disabled border | <color-block showhex="true" size="xs">#bebebe</color-block> |
 | **\$disabled-03**        | Disabled text on `$disabled-02` <br /> Disabled icons on `$disabled-02`                                                                       | <color-block showhex="true" size="xs">#8c8c8c</color-block> |
 
-## Color contrast | WCAG AA standards
+## Color and accessibility
 
-### Type colors
-
-<p>All type color combinations on Carbon must pass <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target=blank>WCAG AA standards</a> of 4.5:1 for normal text and 3:1 for large text. For larger text, if the font weight is light (300) or normal (400) the text should be no smaller than 24 px. If the font weight is semi-bold (600), then the large text should be no smaller than 19 px.</p>
-
-### UI colors
-
-Certain UI color combinations on Carbon must pass the new WCAG AA standards of a minimum 3:1 ratio. Carbon complies with a 4.5:1 color ratio for certain controls and all icons.
-
-### Additional color accessibility
-
-Other color accessibility concerns include color blindness and low vision users. Learn more about these and additional color accessibility guidelines in the [accessibility section](/guidelines/accessibility/color) of the Carbon website.
-
-## Resources
-
-- <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target=blank>IBM accessible color guide</a>
-- <a href="https://w3.ibm.com/able/devtest/quick/" target=blank>IBM accessibility quick guidance</a>
-- <a href="https://marijohannessen.github.io/color-contrast-checker/" target=blank>Color contrast checker</a>
-- <a href="https://www.ibm.com/design/language/resources/color-library" target=blank>IBM Design Language colors</a>
+Check out the [accessibility section](/guidelines/accessibility/color) for complete guidance on color and accessibility in Carbon.
