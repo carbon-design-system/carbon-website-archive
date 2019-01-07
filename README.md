@@ -28,12 +28,6 @@ Install dependencies
 yarn
 ```
 
-Build website-addons package
-```
-cd packages/addons-website
-yarn build
-```
-
 Run dev environment
 
 ```
