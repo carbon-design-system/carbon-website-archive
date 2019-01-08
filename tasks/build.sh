@@ -51,6 +51,9 @@ fi
 # Remove the .cache directory to prevent any weirdness
 rm -rf .cache
 
+# Generate build timestamp
+/bin/sh ./tasks/build-timestamp.sh
+
 # Switch on the BUILD_ENV to target all of our supported build environments
 case ${BUILD_ENV} in
   "external")
