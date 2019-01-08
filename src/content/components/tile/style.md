@@ -1,5 +1,5 @@
 ---
-label: Component
+
 title: Tile
 tabs: ['Code', 'Usage', 'Style']
 ---

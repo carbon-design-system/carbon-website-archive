@@ -1,5 +1,5 @@
 ---
-label: Component
+
 title: Number Input
 tabs: ['Code', 'Usage', 'Style']
 ---

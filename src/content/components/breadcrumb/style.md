@@ -1,5 +1,5 @@
 ---
-label: Component
+
 title: Breadcrumb
 tabs: ['Code', 'Usage', 'Style']
 ---

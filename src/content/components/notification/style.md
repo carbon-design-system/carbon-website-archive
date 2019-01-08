@@ -1,5 +1,5 @@
 ---
-label: Component
+
 title: Notification
 tabs: ['Code', 'Usage', 'Style']
 ---

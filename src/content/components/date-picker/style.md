@@ -1,5 +1,5 @@
 ---
-label: Component
+
 title: Date picker
 tabs: ['Code', 'Usage', 'Style']
 ---

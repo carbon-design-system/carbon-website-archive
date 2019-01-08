@@ -1,5 +1,5 @@
 ---
-label: Component
+
 title: Radio Button
 tabs: ['Code', 'Usage', 'Style']
 ---

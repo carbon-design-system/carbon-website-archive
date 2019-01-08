@@ -1,5 +1,5 @@
 ---
-label: Component
+
 title: Tooltip
 tabs: ['Code', 'Usage', 'Style']
 ---

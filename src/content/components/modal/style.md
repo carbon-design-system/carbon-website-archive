@@ -1,5 +1,5 @@
 ---
-label: Component
+
 title: Modal
 tabs: ['Code', 'Usage', 'Style']
 ---

@@ -1,5 +1,5 @@
 ---
-label: Component
+
 title: Toggle
 tabs: ['Code', 'Usage', 'Style']
 ---
