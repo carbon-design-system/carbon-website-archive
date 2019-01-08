@@ -54,7 +54,7 @@
     "fs": "0.0.1-security",
     "gatsby": "2.0.72",
     "gatsby-image": "2.0.22",
-    "gatsby-mdx": "^0.2.0",
+    "gatsby-mdx": "^0.3.2",
     "gatsby-plugin-google-analytics": "^2.0.8",
     "gatsby-plugin-manifest": "^2.0.11",
     "gatsby-plugin-offline": "^2.0.18",
@@ -85,8 +85,8 @@
     "rehype-react": "^3.1.0"
   },
   "devDependencies": {
-    "@mdx-js/loader": "^0.16.6",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@mdx-js/loader": "^0.16.6",
     "@storybook/addon-actions": "^3.4.7",
     "@storybook/addon-info": "^4.1.2",
     "@storybook/addon-knobs": "^3.4.7",
@@ -99,8 +99,8 @@
     "gatsby-remark-static-images": "^1.0.0",
     "gh-pages": "^1.2.0",
     "html-loader": "^0.5.5",
-    "loader-utils": "^1.1.0",
     "lerna": "^3.6.0",
+    "loader-utils": "^1.1.0",
     "node-sass": "^4.10.0",
     "prettier": "^1.15.3",
     "react": "^16.6.3",
