@@ -88,17 +88,17 @@
 //----------------------------
 // Anchor Link
 //----------------------------
-h2,
-h3,
-h4,
-h5 {
+.page-h2,
+.page-h3,
+.page-h4,
+.page-h5 {
   // This makes sure there is breathing room when
   // you jump to the heading anchor link
   &:before {
     display: block;
     content: ' ';
-    margin-top: rem(-56px);
-    height: rem(56px);
+    margin-top: rem(-48px);
+    padding-bottom: rem(48px);
     visibility: hidden;
     pointer-events: none;
   }
