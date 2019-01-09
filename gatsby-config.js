@@ -8,7 +8,7 @@ module.exports = {
   pathPrefix: PATH_PREFIX,
   siteMetadata: {
     title: 'Carbon Design System',
-    titleInternal: 'IBM Product Design'
+    titleInternal: 'IBM Product Design',
   },
   plugins: [
     {
@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-80001368-1",
+        trackingId: 'UA-131128838-1',
       },
     },
     `gatsby-plugin-sharp`,
@@ -51,6 +51,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-smartypants`,
           `gatsby-remark-responsive-iframe`,
           `gatsby-remark-component`,
           {
@@ -71,7 +72,7 @@ module.exports = {
               // base for generating different widths of each image.
               maxWidth: 1024,
               linkImagesToOriginal: false,
-              backgroundColor: "transparent",
+              backgroundColor: 'transparent',
             },
           },
           'gatsby-remark-copy-linked-files',

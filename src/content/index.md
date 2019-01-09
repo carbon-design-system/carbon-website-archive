@@ -7,21 +7,22 @@ title: Homepage
 <feature-tile
     href="/getting-started/designers"
     label="Start"
-    title="Designing">
-    <img src="homepage/images/getting-started-designers.png" alt="Get started for designers" />
+    title="Designing"
+    margin="true">
+<img src="homepage/images/getting-started-designers.png" alt="Get started for designers" />
 </feature-tile>
-
 <feature-tile
     href="/getting-started/developers"
     label="Start"
     title="Developing">
-    <img src="homepage/images/getting-started-developers.png" alt="Get started for developers" />
+<img src="homepage/images/getting-started-developers.png" alt="Get started for developers" />
 </feature-tile>
 
 ### Other Resources
-The Component Libraries give developers a collection of re-usable React components they can use for building websites and user interfaces. See a [complete list of resources](/resources).
 
-<grid-wrapper col_lg="8" flex="true">
+The Component Libraries give developers a collection of re-usable React components they can use for building websites and user interfaces. See a [complete list of resources.](/resources)
+
+<grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
     dark="true"
     title="Carbon Design Kit"
@@ -57,7 +58,18 @@ The Component Libraries give developers a collection of re-usable React componen
 </grid-wrapper>
 
 ### Latest Articles
-<grid-wrapper col_lg="12" flex="true">
+
+<grid-wrapper flex="true" bleed="true">
+<clickable-tile
+    dark="true"
+    type="article"
+    title="What to expect in Carbon 10"
+    author="Robin Cannon"
+    date="December 10, 2018"
+    href="https://medium.com/carbondesign/what-to-expect-in-carbon-10-5af1bd6e25f6"
+    >
+    <img src="resources/images/article-9.png" alt="What to expect in Carbon 10" />
+</clickable-tile>
 <clickable-tile
     dark="true"
     type="article"
@@ -76,16 +88,6 @@ The Component Libraries give developers a collection of re-usable React componen
     date="October 16, 2018"
     href="https://medium.com/carbondesign/hacktoberfest-with-carbon-95c48943f586"
     >
-    <img src="resources/images/article-7.png" alt="Hacktoberfest with Carbon" />
-</clickable-tile>
-<clickable-tile
-    dark="true"
-    type="article"
-    title="Data Table updates in Carbon React v5.22.0"
-    author="Josh Black"
-    date="February 20, 2018"
-    href="https://medium.com/carbondesign/data-table-updates-in-carbon-react-v5-22-0-6da0c24a96d6"
-    >
-    <img src="resources/images/article-6.png" alt="Data Table updates in Carbon React v5.22.0" />
+    <img src="resources/images/article-7.jpg" alt="Hacktoberfest with Carbon" />
 </clickable-tile>
 </grid-wrapper>

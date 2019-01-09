@@ -1,5 +1,4 @@
 ---
-
 title: Pie Chart
 tabs: ['Code', 'Usage', 'Style']
 ---

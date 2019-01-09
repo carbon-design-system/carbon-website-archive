@@ -4,11 +4,14 @@ title: Iconography
 tabs: ['Library', 'Usage', 'Design and Contribution']
 ---
 
-1.  [Design and Production Guidelines](#design-and-production-guidelines)
-- [Producing an Icon](#producing-an-icon)
-- [Exporting SVGs](#exporting-svgs)
-- [Contribution Process](#contribution-process)
-
+<anchor-links>
+<ul>
+    <li><a href="#design-and-production-guidelines">Design and Production Guidelines</a></li>
+    <li><a href="#producing-an-icon">Producing an Icon</a></li>
+    <li><a href="#exporting-svgs">Exporting SVGs</a></li>
+    <li><a href="#contribution-process">Contribution Process</a></li>
+</ul>
+</anchor-links>
 
 ## Design and Production Guidelines
 
@@ -31,9 +34,9 @@ Don't see the icon you need in the library? Make your own! Follow these guidelin
 - Ungroup icon layers completely. The icon should be on the top-most layer in your artboard.
 - Make sure to properly name layers and artboards (these names will also be exported into the code).
 
-### Production-Ready 
+### Production-Ready
 
-To be considered production-ready, all icon submissions must be delivered in SVG format at 16 x 16 px (for integration with Carbon components) or 32 x 32 (for service icons). 
+To be considered production-ready, all icon submissions must be delivered in SVG format at 16 x 16 px (for integration with Carbon components) or 32 x 32 (for service icons).
 
 - Icons should be at whole pixels. No decimals are allowed in x and y coordinates or width and height fields.
 - Each artboard and the artwork within it must be aligned to the pixel grid.
@@ -54,7 +57,6 @@ To be considered production-ready, all icon submissions must be delivered in SVG
 8. In the `Export` widget select "SVG" in the format dropdown.
 9. Click `Export 'Artboard-Name'`.
 10. Name icon with the `#name--modifier` convention. (ex. copy.svg, copy--glyph.svg, add.svg, add--glyph.svg).
-
 
 ### Export SVGs from Adobe Illustrator
 

@@ -3,6 +3,7 @@ import { Icon } from 'carbon-components-react';
 import { Location } from '@reach/router';
 import { Link } from 'gatsby';
 import { Link20 } from '@carbon/icons-react';
+import classnames from 'classnames';
 
 export class PageIcon extends React.Component {
   render() {
@@ -32,20 +33,32 @@ export class h2 extends React.Component {
     return (
       <Location>
         {({ location }) => {
-          const hash = typeof this.props.children[0] !== 'string' ? undefined : this.props.children[0].replace(/[:&]/g, '').toLowerCase().split(' ').join('-');
+          const hash =
+            typeof this.props.children[0] !== 'string'
+              ? undefined
+              : this.props.children[0]
+                  .replace(/[:&]/g, '')
+                  .toLowerCase()
+                  .split(' ')
+                  .join('-');
           const path = location.pathname;
           return (
             <div className="ibm--row">
               <div className="ibm--col-lg-7 ibm--offset-lg-4">
-                <h2 className="page-h2" id={hash}>     
-                  {hash && (<Link className="anchor-link" to={`${path}#${hash}`}>
-                    <Link20 className="anchor-link__icon" aria-label="Anchor Link" />
-                  </Link>)}
+                <h2 className="page-h2 bx--type-expressive-heading-04" id={hash}>
+                  {hash && (
+                    <Link className="anchor-link" to={`${path}#${hash}`}>
+                      <Link20
+                        className="anchor-link__icon"
+                        aria-label="Anchor Link"
+                      />
+                    </Link>
+                  )}
                   {this.props.children}
                 </h2>
               </div>
             </div>
-          )
+          );
         }}
       </Location>
     );
@@ -57,20 +70,32 @@ export class h3 extends React.Component {
     return (
       <Location>
         {({ location }) => {
-          const hash = typeof this.props.children[0] !== 'string' ? undefined : this.props.children[0].replace(/[:&]/g, '').toLowerCase().split(' ').join('-');
+          const hash =
+            typeof this.props.children[0] !== 'string'
+              ? undefined
+              : this.props.children[0]
+                  .replace(/[:&]/g, '')
+                  .toLowerCase()
+                  .split(' ')
+                  .join('-');
           const path = location.pathname;
           return (
             <div className="ibm--row">
               <div className="ibm--col-lg-7 ibm--offset-lg-4">
-                <h3 className="page-h3" id={hash}>     
-                  {hash && (<Link className="anchor-link" to={`${path}#${hash}`}>
-                    <Link20 className="anchor-link__icon" aria-label="Anchor Link" />
-                  </Link>)}
+                <h3 className="page-h3" id={hash}>
+                  {hash && (
+                    <Link className="anchor-link" to={`${path}#${hash}`}>
+                      <Link20
+                        className="anchor-link__icon"
+                        aria-label="Anchor Link"
+                      />
+                    </Link>
+                  )}
                   {this.props.children}
                 </h3>
               </div>
             </div>
-          )
+          );
         }}
       </Location>
     );
@@ -82,20 +107,32 @@ export class h4 extends React.Component {
     return (
       <Location>
         {({ location }) => {
-          const hash = typeof this.props.children[0] !== 'string' ? undefined : this.props.children[0].replace(/[:&]/g, '').toLowerCase().split(' ').join('-');
+          const hash =
+            typeof this.props.children[0] !== 'string'
+              ? undefined
+              : this.props.children[0]
+                  .replace(/[:&]/g, '')
+                  .toLowerCase()
+                  .split(' ')
+                  .join('-');
           const path = location.pathname;
           return (
             <div className="ibm--row">
               <div className="ibm--col-lg-7 ibm--offset-lg-4">
-                <h4 className="page-h4" id={hash}>     
-                  {hash && (<Link className="anchor-link" to={`${path}#${hash}`}>
-                    <Link20 className="anchor-link__icon" aria-label="Anchor Link" />
-                  </Link>)}
+                <h4 className="page-h4" id={hash}>
+                  {hash && (
+                    <Link className="anchor-link" to={`${path}#${hash}`}>
+                      <Link20
+                        className="anchor-link__icon"
+                        aria-label="Anchor Link"
+                      />
+                    </Link>
+                  )}
                   {this.props.children}
                 </h4>
               </div>
             </div>
-          )
+          );
         }}
       </Location>
     );
@@ -142,7 +179,7 @@ export class p extends React.Component {
   render() {
     return (
       <div className="ibm--row">
-        <div className="ibm--col-lg-7 ibm--offset-lg-4">
+        <div className="ibm--col-lg-7 ibm--col-md-6 ibm--offset-lg-4">
           <p>{this.props.children}</p>
         </div>
       </div>
@@ -152,10 +189,10 @@ export class p extends React.Component {
 
 export class AnchorLinks extends React.Component {
   render() {
-    return (
-      <div className="anchor-links">
-        {this.props.children}
-      </div>
-    );
+    const classNames = classnames({
+      'anchor-links': true,
+      'anchor-links--small': this.props.small,
+    });
+    return <div className={classNames}>{this.props.children}</div>;
   }
 }

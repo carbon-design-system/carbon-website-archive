@@ -1,36 +1,45 @@
 .type-spec {
-    margin-bottom: $spacing-md;    
+  margin-bottom: $spacing-md;
 }
 
-// Example code 
+// Example code
 .type-spec__example {
-    background: $ibm-colors__white; 
-    padding-top: $spacing-md;
-    padding-bottom: $spacing-md;
+  background: $ibm-colors__white;
+  padding-top: $spacing-md;
+  padding-bottom: $spacing-md;
+}
+
+.type-spec__example > div {
+
+  @include breakpoint('md') {
+    padding-right: 25%;
+  }
 }
 
 // Spec details
 .type-spec__details {
-    padding: $spacing-md;
-    background: $ibm-colors__white; 
-    border-left: 1px solid $ibm-colors__gray--20;
-    @include type-style('caption-01');
+  padding: $spacing-md;
+  background: $ibm-colors__white;
+  border-left: 1px solid $ibm-colors__gray--20;
+  @include type-style('caption-01');
 
-    h4 {
-        @include type-style('heading-01');
-        margin: 0;
-        padding: 0;
-    }
+  h4 {
+    @include type-style('heading-01');
+    margin: 0;
+    padding: 0;
+  }
 }
 
 // this should be using carbon component styles?
 .type-spec__details .bx--snippet--inline {
-    margin: $spacing-xs 0 0 0;
+  margin: $spacing-xs 0 0 0;
+}
+
+.type-spec__details .bx--snippet {
+  background: $ibm-colors__gray--20;
 }
 
 .type-spec__details .bx--snippet--inline code {
-    background: $ibm-colors__gray--20;
-    @include type-style('code-01');
-    padding: .2rem .5rem;
-    border-radius: 3px;
+  @include type-style('code-01');
+  color: $text-01;
 }

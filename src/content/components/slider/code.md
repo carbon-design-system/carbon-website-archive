@@ -1,5 +1,4 @@
 ---
-
 title: Slider
 tabs: ['Code', 'Usage']
 ---

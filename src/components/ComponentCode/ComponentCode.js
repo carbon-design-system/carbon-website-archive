@@ -37,13 +37,13 @@ export default class ComponentCode extends React.Component {
       } catch (err) {}
     }
     if (!htmlFile) {
-     htmlFile = require(`carbon-components/html/${component}/${variation}.html`);
+      htmlFile = require(`carbon-components/html/${component}/${variation}.html`);
     }
 
     return (
       <div className="component-variation ibm--row">
         <div className="ibm--col-lg-12 ibm--offset-lg-4">
-          <h2 className="page-h2">{name}</h2>
+          <h2 className="page-h2 bx--type-expressive-heading-04">{name}</h2>
           <ComponentExample
             codepenSlug={codepen}
             component={component}
@@ -61,4 +61,3 @@ export default class ComponentCode extends React.Component {
     );
   }
 }
-

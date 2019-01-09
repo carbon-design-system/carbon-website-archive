@@ -1,5 +1,4 @@
 ---
-
 title: Date Picker
 tabs: ['Code', 'Usage']
 ---
@@ -27,11 +26,11 @@ tabs: ['Code', 'Usage']
     experimental="true"
     >
 </component>
-<!--<component 
+<component 
     name="Time Picker"
     component="time-picker" 
     variation="time-picker"
     experimental="true"
     >
-</component>-->
+</component>
 <component-docs component="date-picker" experimental="true"></component-docs>

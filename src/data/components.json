@@ -61,7 +61,7 @@
       "vanilla": "under-review",
       "react": "under-review",
       "angular": "not-available",
-      "experimental": "under-review"
+      "experimental": "not-available"
     },
     {
       "item": "Date Picker",
@@ -96,8 +96,8 @@
       "tag": "updated",
       "vanilla": "ready",
       "react": "ready",
-      "angular": "ready",
-      "experimental": "ready"
+      "angular": "not-available",
+      "experimental": "not-available"
     },
     {
       "item": "Inline Loading",
@@ -139,10 +139,10 @@
       "item": "Modal",
       "added": "4.3.0",
       "tag": "updated",
-      "vanilla": "under-review",
+      "vanilla": "ready",
       "react": "under-review",
       "angular": "not-available",
-      "experimental": "under-review"
+      "experimental": "not-available"
     },
     {
       "item": "Multiselect",
@@ -175,10 +175,10 @@
       "item": "Pagination",
       "added": "7.0.0",
       "tag": "updated",
-      "vanilla": "under-review",
+      "vanilla": "ready",
       "react": "under-review",
       "angular": "not-available",
-      "experimental": "under-review"
+      "experimental": "not-available"
     },
     {
       "item": "Progress Indicator",

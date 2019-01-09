@@ -150,9 +150,7 @@ export default class IconLibrary extends React.Component {
     if (filteredIcons.length === 0) {
       return (
         <div className="page ibm--row">
-          <div className="ibm--col-lg-8 ibm--offset-lg-4">
-            {search}
-          </div>
+          <div className="ibm--col-lg-8 ibm--offset-lg-4">{search}</div>
           <div className="ibm--col-lg-12 ibm--offset-lg-4">
             <IconEmptyState />
           </div>
@@ -162,12 +160,8 @@ export default class IconLibrary extends React.Component {
 
     return (
       <div className="page ibm--row">
-        <div className="ibm--col-lg-8 ibm--offset-lg-4">
-          {search}
-        </div>
-        <div className="ibm--col-lg-12 ibm--offset-lg-4">
-          {sections}
-        </div>
+        <div className="ibm--col-lg-8 ibm--offset-lg-4">{search}</div>
+        <div className="ibm--col-lg-12 ibm--offset-lg-4">{sections}</div>
       </div>
     );
   }
@@ -226,7 +220,7 @@ function createIconSections(icons, filteredIcons) {
     .map(size => (
       <section key={size} className="icon-size">
         <header>
-          <h2 className="icon-h2">{isNaN(size) ? size : `${size}x${size}`}</h2>
+          <h2 className="icon-h2 bx--type-expressive-heading-04">{isNaN(size) ? size : `${size}x${size}`}</h2>
         </header>
         <div className="icon-container">
           {groups[size]

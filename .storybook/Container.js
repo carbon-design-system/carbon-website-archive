@@ -9,6 +9,7 @@ export default class Container extends Component {
       <React.StrictMode>
         <div
           role="main"
+          className="container"
           style={{
             padding: '3em',
             display: 'flex',

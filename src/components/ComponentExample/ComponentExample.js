@@ -3,11 +3,15 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import CodeExample from '../CodeExample/CodeExample';
 import * as carbonComponents from 'carbon-components/es/globals/js/components';
-import { DIRECTION_TOP, DIRECTION_BOTTOM } from 'carbon-components/es/components/floating-menu/floating-menu';
+import {
+  DIRECTION_TOP,
+  DIRECTION_BOTTOM,
+} from 'carbon-components/es/components/floating-menu/floating-menu';
 import InlineLoadingDemoButton from '../../content/components/inline-loading/inline-loading-demo-button';
 import on from 'carbon-components/es/globals/js/misc/on';
 import settings from 'carbon-components/es/globals/js/settings';
 import { RadioButtonGroup, RadioButton } from 'carbon-components-react';
+import { Launch16 } from '@carbon/icons-react';
 
 /**
  * The CSS property names of the arrow keyed by the floating menu direction.
@@ -47,14 +51,20 @@ const getOverflowMenuOffsetExperimental = (menuBody, direction) => {
   }
   const menuWidth = menuBody.offsetWidth;
   const menuHeight = menuBody.offsetHeight;
-  if (triggerButtonPositionProp === 'top' || triggerButtonPositionProp === 'bottom') {
+  if (
+    triggerButtonPositionProp === 'top' ||
+    triggerButtonPositionProp === 'bottom'
+  ) {
     return {
       left: menuWidth / 2 - 16,
       top: 0,
     };
   }
 
-  if (triggerButtonPositionProp === 'left' || triggerButtonPositionProp === 'right') {
+  if (
+    triggerButtonPositionProp === 'left' ||
+    triggerButtonPositionProp === 'right'
+  ) {
     return {
       left: 0,
       top: menuHeight / 2 - 16,
@@ -114,8 +124,8 @@ class ComponentExample extends Component {
     }
     if (value === 'field-02') {
       if (
-        currentVariation !== 'text-input--password' && 
-        currentVariation.includes('--') ||
+        (currentVariation !== 'text-input--password' &&
+          currentVariation.includes('--')) ||
         currentVariation === 'code-snippet--inline'
       ) {
         newHTML = require(`carbon-components/html/${currentComponent}/${currentVariation}-light.html`);
@@ -171,13 +181,26 @@ class ComponentExample extends Component {
               // Same as `this._liveContainerRef.current`, but that may not have been set up yet
               const liveContainerRef = ref.closest('.component-example__live');
               options.appendTo = liveContainerRef;
-              options.onPreCalendarPosition = (selectedDates, value, { _positionElement, calendarContainer }) => {
+              options.onPreCalendarPosition = (
+                selectedDates,
+                value,
+                { _positionElement, calendarContainer }
+              ) => {
                 // Make it "post" positioning handler
                 Promise.resolve().then(() => {
-                  const { left: inputLeft, top: inputTop } = _positionElement.getBoundingClientRect();
-                  const { left: containerLeft, top: containerTop } = liveContainerRef.getBoundingClientRect();
-                  calendarContainer.style.left = `${inputLeft - containerLeft}px`;
-                  calendarContainer.style.top = `${inputTop - containerTop + _positionElement.offsetHeight}px`;
+                  const {
+                    left: inputLeft,
+                    top: inputTop,
+                  } = _positionElement.getBoundingClientRect();
+                  const {
+                    left: containerLeft,
+                    top: containerTop,
+                  } = liveContainerRef.getBoundingClientRect();
+                  calendarContainer.style.left = `${inputLeft -
+                    containerLeft}px`;
+                  calendarContainer.style.top = `${inputTop -
+                    containerTop +
+                    _positionElement.offsetHeight}px`;
                 });
               };
             }
@@ -185,27 +208,43 @@ class ComponentExample extends Component {
               ['objMenuOffset', 'objMenuOffsetFlip'].forEach(optionName => {
                 if (TheComponent.options[optionName]) {
                   options[optionName] = (menuBody, direction) => {
-                    const origOffset = name === 'OverflowMenu' && experimental ? getOverflowMenuOffsetExperimental(menuBody, direction) : TheComponent.options[optionName](menuBody, direction);
+                    const origOffset =
+                      name === 'OverflowMenu' && experimental
+                        ? getOverflowMenuOffsetExperimental(menuBody, direction)
+                        : TheComponent.options[optionName](menuBody, direction);
                     const liveContainerRef = this._liveContainerRef.current;
                     if (liveContainerRef) {
                       const { left: origLeft, top: origTop } = origOffset;
-                      const { left: liveContainerLeft, top: liveContainerTop } = liveContainerRef.getBoundingClientRect();
-                      const adjustLeft = liveContainerLeft + menuBody.ownerDocument.defaultView.pageXOffset;
-                      const adjustTop = liveContainerTop + menuBody.ownerDocument.defaultView.pageYOffset;
+                      const {
+                        left: liveContainerLeft,
+                        top: liveContainerTop,
+                      } = liveContainerRef.getBoundingClientRect();
+                      const adjustLeft =
+                        liveContainerLeft +
+                        menuBody.ownerDocument.defaultView.pageXOffset;
+                      const adjustTop =
+                        liveContainerTop +
+                        menuBody.ownerDocument.defaultView.pageYOffset;
                       return {
                         left: origLeft - adjustLeft,
-                        top: origTop + adjustTop * liveDemoContainerVerticalPositionFactors[direction],
-                      }
+                        top:
+                          origTop +
+                          adjustTop *
+                            liveDemoContainerVerticalPositionFactors[direction],
+                      };
                     }
                     return origOffset;
                   };
-                }  
+                }
               });
             }
             if (TheComponent.prototype.createdByLauncher) {
               const initHandles = this.constructor._initHandles;
               if (!initHandles.has(TheComponent)) {
-                initHandles.set(TheComponent, TheComponent.init(ref.ownerDocument, options));
+                initHandles.set(
+                  TheComponent,
+                  TheComponent.init(ref.ownerDocument, options)
+                );
               }
             } else {
               const selectorInit = TheComponent.options.selectorInit;
@@ -275,19 +314,26 @@ class ComponentExample extends Component {
         .toUpperCase() + componentName.split(' ')[1].substring(1)}`;
     }
 
-    const liveBackgroundClasses = classnames('component-example__live', `component-example__live--${component}`, {
-      'component-example__live--light':
-        (currentFieldColor === 'field-01') & (hasLightVersion === 'true') ||
-        hasLightBackground === 'true',
-      'carbon-demo-v9': experimental != 'true',
-    });
+    const liveBackgroundClasses = classnames(
+      'component-example__live',
+      `component-example__live--${component}`,
+      {
+        'component-example__live--light':
+          (currentFieldColor === 'field-02') & (hasLightVersion === 'true') ||
+          hasLightBackground === 'true',
+        'carbon-demo-v9': experimental != 'true',
+      }
+    );
 
     const componentLink = `https://codepen.io/team/carbon/full/${codepenSlug}/`;
     const counter = Math.floor(Math.random() * 100) + 1;
 
     return (
       <div className={lightUIclassnames}>
-        <div className={liveBackgroundClasses} ref={this._liveContainerRef} data-floating-menu-container>
+        <div
+          className={liveBackgroundClasses}
+          ref={this._liveContainerRef}
+          data-floating-menu-container>
           <div className={classNames}>
             <div
               ref={this._liveDemoRef}
@@ -297,7 +343,7 @@ class ComponentExample extends Component {
         </div>
         <div className="component-toolbar">
           <div className="component-toolbar__current">
-            <p>Vanilla JS</p>
+            Vanilla JS
           </div>
           <div className="component-toolbar__links">
             {hasReactVersion === 'true' && (
@@ -305,7 +351,7 @@ class ComponentExample extends Component {
                 href={`http://react.carbondesignsystem.com/?selectedKind=${componentNameLink}`}
                 target="_blank"
                 rel="noopener noreferrer">
-                React
+                React <Launch16 />
               </a>
             )}
             {hasAngularVersion === 'true' && (
@@ -313,12 +359,12 @@ class ComponentExample extends Component {
                 href={`http://angular.carbondesignsystem.com/?selectedKind=${componentNameLink}`}
                 target="_blank"
                 rel="noopener noreferrer">
-                Angular
+                Angular <Launch16 />
               </a>
             )}
             {codepenSlug !== undefined && (
               <a target="_blank" href={componentLink} rel="noopener noreferrer">
-                CodePen
+                CodePen <Launch16 />
               </a>
             )}
           </div>

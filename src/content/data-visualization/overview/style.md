@@ -1,18 +1,17 @@
 ---
-
 title: Overview
 tabs: ['General', 'Colors', 'Style']
 ---
 
 ## Color
 
-| Color           | SCSS     | HEX     |
-| --------------- | -------- | ------- |
-| Graph title     | $text-02 | #5a6872 |
-| Axis labels     | $text-02 | #5a6872 |
-| Grid lines      | $text-02 | #5a6872 |
-| Data Increments | $text-02 | #5a6872 |
-| Tooltip: text   | $text-02 | #5a6872 |
+| Color           | SCSS      | HEX     |
+| --------------- | --------- | ------- |
+| Graph title     | \$text-02 | #5a6872 |
+| Axis labels     | \$text-02 | #5a6872 |
+| Grid lines      | \$text-02 | #5a6872 |
+| Data Increments | \$text-02 | #5a6872 |
+| Tooltip: text   | \$text-02 | #5a6872 |
 
 ## Typography
 

@@ -1,5 +1,4 @@
 ---
-
 title: Line Graph
 tabs: ['Code', 'Usage', 'Style']
 ---

@@ -15,50 +15,48 @@ class ComponentStatus extends React.Component {
     let react;
     let angular;
     let experimental;
-    
+
     if (currentItem.tag && currentItem.tag === 'new') {
       tag = <span className="bx--tag bx--tag--teal inline-tag">New</span>;
     }
     if (currentItem.tag && currentItem.tag === 'updated') {
-      tag = (
-        <span className="bx--tag bx--tag--blue inline-tag">Updated</span>
-      );
+      tag = <span className="bx--tag bx--tag--blue inline-tag">Updated</span>;
     }
-    if (currentItem.vanilla === "ready") {
+    if (currentItem.vanilla === 'ready') {
       vanilla = readyIcon;
-    } else if (currentItem.vanilla === "under-review") {
+    } else if (currentItem.vanilla === 'under-review') {
       vanilla = underReviewIcon;
-    } else if (currentItem.vanilla === "deprecated") {
+    } else if (currentItem.vanilla === 'deprecated') {
       vanilla = deprecatedIcon;
     } else {
       vanilla = notApplicableIcon;
     }
 
-    if (currentItem.react === "ready") {
+    if (currentItem.react === 'ready') {
       react = readyIcon;
-    } else if (currentItem.react === "under-review") {
+    } else if (currentItem.react === 'under-review') {
       react = underReviewIcon;
-    } else if (currentItem.react === "deprecated") {
+    } else if (currentItem.react === 'deprecated') {
       react = deprecatedIcon;
     } else {
       react = notApplicableIcon;
     }
 
-    if (currentItem.angular === "ready") {
+    if (currentItem.angular === 'ready') {
       angular = readyIcon;
-    } else if (currentItem.angular === "under-review") {
+    } else if (currentItem.angular === 'under-review') {
       angular = underReviewIcon;
-    } else if (currentItem.angular === "deprecated") {
+    } else if (currentItem.angular === 'deprecated') {
       angular = deprecatedIcon;
     } else {
       angular = notApplicableIcon;
     }
 
-    if (currentItem.experimental === "ready") {
+    if (currentItem.experimental === 'ready') {
       experimental = readyIcon;
-    } else if (currentItem.experimental === "under-review") {
+    } else if (currentItem.experimental === 'under-review') {
       experimental = underReviewIcon;
-    } else if (currentItem.experimental === "deprecated") {
+    } else if (currentItem.experimental === 'deprecated') {
       experimental = deprecatedIcon;
     } else {
       experimental = notApplicableIcon;
@@ -76,7 +74,6 @@ class ComponentStatus extends React.Component {
     );
   };
 
-  
   render() {
     const readyIcon = (
       <div className="component-status__icon ready">
@@ -170,7 +167,7 @@ class ComponentStatus extends React.Component {
             </tbody>
           </table>
           <div className="component-status__description">
-            <h2 className="page-h2">Tag descriptions</h2>
+            <h2 className="page-h2 bx--type-expressive-heading-04">Tag descriptions</h2>
             <table className="page-table">
               <thead>
                 <tr>
@@ -197,8 +194,8 @@ class ComponentStatus extends React.Component {
                   <td>{deprecatedIcon}</td>
                   <td>Deprecated</td>
                   <td>
-                    Deprecated components have either been completely replaced by
-                    new components or are no longer being supported in the
+                    Deprecated components have either been completely replaced
+                    by new components or are no longer being supported in the
                     component library.
                   </td>
                 </tr>
@@ -222,8 +219,9 @@ class ComponentStatus extends React.Component {
                   </td>
                   <td />
                   <td>
-                    Applied only to existing components after they have been under
-                    review, tweaked, and re-released to the design system site.
+                    Applied only to existing components after they have been
+                    under review, tweaked, and re-released to the design system
+                    site.
                   </td>
                 </tr>
               </tbody>

@@ -1,0 +1,37 @@
+{
+  "name": "@carbon/addons-website",
+  "version": "0.0.1-alpha.0",
+  "license": "Apache-2.0",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "es",
+    "lib",
+    "scss",
+    "src",
+    "umd"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "yarn clean && rollup -c",
+    "clean": "rimraf es lib umd",
+    "prepublishOnly": "yarn build",
+    "watch": "yarn clean && rollup -c -w"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.68.0",
+    "rollup-plugin-babel": "^4.1.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6"
+  }
+}

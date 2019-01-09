@@ -2,9 +2,10 @@
   min-height: auto;
 }
 
-.page-content .bx--snippet {
-  margin: 0 0 $spacing-lg;
-  background: white;
+.page-content .bx--snippet--website .bx--snippet {
+  margin: 0 0 $spacing-lg 0;
+  background: $ui-05;
+  color: $inverse-01;
 }
 
 .page-content pre div code[class*='language-'] {
@@ -18,7 +19,7 @@ pre[class*='language-'] {
 
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
-  background: white !important;
+  background: $ui-05;
   padding: 0 !important;
   margin: 0 !important;
 }

@@ -1,15 +1,14 @@
 ---
-
 title: Gauge
 tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## Color
 
-| Color | SCSS        | HEX     |
-| ----- | ----------- | ------- |
-| Total | $ui-03      | #dfe3e6 |
-| Used  | $primary-04 | #00a68f |
+| Color | SCSS         | HEX     |
+| ----- | ------------ | ------- |
+| Total | \$ui-03      | #dfe3e6 |
+| Used  | \$primary-04 | #00a68f |
 
 ## Typography
 

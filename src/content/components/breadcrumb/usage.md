@@ -1,5 +1,4 @@
 ---
-
 title: Breadcrumb
 tabs: ['Code', 'Usage']
 ---
@@ -15,10 +14,9 @@ Breadcrumbs' space-efficient design and high utility make them an easy choice fo
 ## Types of breadcrumbs
 
 ### Location-based
+
 These illustrate the site's heirarchy and show the user where they are within that heirarchy.
 
 ### Path-based
+
 These show the actual steps the user took to get to the current page, rather than reflecting the site's information architecture. Path-based breadcrumbs are always dynamically generated.
-
-
-

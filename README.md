@@ -2,7 +2,6 @@
 
 This is the [Carbon Design System website](http://www.carbondesignsystem.com) which is built using GatsbyJS.
 
-
 ## 📂 Structure
 
 ```
@@ -18,7 +17,7 @@ src
 
 ## 👩‍💻 Development
 
-- 🤝 [Contribution Guidelines](.github/CONTRIBUTING.md) 
+- 🤝 [Contribution Guidelines](.github/CONTRIBUTING.md)
 - 📚 [Content/Markdown Guidelines](docs/CONTENT.md)
 - 🗺 [Navigation Guidelines](docs/NAVIGATION.md)
 
@@ -26,6 +25,12 @@ Install dependencies
 
 ```
 yarn
+```
+
+Build website-addons package
+```
+cd packages/addons-website
+yarn build
 ```
 
 Run dev environment

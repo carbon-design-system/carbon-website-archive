@@ -1,12 +1,12 @@
 ---
-label: Guidelines
+label: IBM firmly believes that web and software experiences should be accessible for everyone, regardless of abilities or impairments.
 title: Accessibility
 tabs: ['Overview', 'Color', 'Keyboard', 'Developers']
 ---
 
 IBM firmly believes that web and software experiences should be accessible for everyone, regardless of abilities or impairments. This guide will help ensure that your product or web experience meets or exceeds the standards for accessibility.
 
-## Carbon and Accessibility
+## Carbon and accessibility
 
 Carbon is committed to following and complying with best practices when it comes to accessibility. All Carbon components follow the [IBM Accessibility Checklist](https://www.ibm.com/able/guidelines/ci162/accessibility_checklist.html) which is based on WCAG AA, Section 508, and European standards. Carbon's patterns are **perceivable**, **operable**, and **understandable to users**, even when using a screen reader or other assistive technology.
 
@@ -29,9 +29,9 @@ Disabilities can be thought of as a mismatch between one's ability and one's env
 
 Accessible design not only helps users with disabilities; it provides better user experiences for everyone.
 
-## Main Categories of Disabilities
+## Main categories of disabilities
 
-### Blind Users
+### Blind users
 
 #### How they experience an interface
 
@@ -50,7 +50,7 @@ Accessible design not only helps users with disabilities; it provides better use
 
 <div id='low-vision'></div>
 
-### Low-Vision Users
+### Low-vision users
 
 Low vision can include partial sight in one or both eyes, and range from mild to severe. It affects 246 million people, or about 4% of the world’s population.
 
@@ -74,7 +74,7 @@ Low vision can include partial sight in one or both eyes, and range from mild to
 
 <div id='color'></div>
 
-### Color-Blind Users
+### Color-blind users
 
 Color-blindness affects 8% of all men and 0.4% of women.
 
@@ -90,7 +90,7 @@ Color-blindness affects 8% of all men and 0.4% of women.
 
 <div id='deaf'></div>
 
-### Deaf and Hard-of-Hearing Users
+### Deaf and hard-of-hearing users
 
 #### How they experience an interface
 
@@ -107,7 +107,7 @@ Color-blindness affects 8% of all men and 0.4% of women.
 
 <div id='physical'></div>
 
-### Physical Disabilities
+### Physical disabilities
 
 #### How users with physical disabilities experience an interface
 
@@ -125,7 +125,7 @@ Color-blindness affects 8% of all men and 0.4% of women.
 
 <div id='cognitive'></div>
 
-### Users with Cognitive Disabilities
+### Users with cognitive disabilities
 
 These users offer a broad spectrum of concerns for design. Functional cognitive disabilities can include difficulty with:
 
@@ -150,7 +150,7 @@ These users offer a broad spectrum of concerns for design. Functional cognitive 
 
 - Best practices for cognitive disabilities benefit all users. Busy environments can tax your cognitive load. Aging adults may also experience a decline in cognitive abilities. Placing a low cognitive load on users reduces mistakes and improves effectiveness, regardless of their abilities.
 
-## Global Accessibility Standards
+## Global accessibility standards
 
 - [World Wide Web Consortium](https://www.w3.org/WAI/) (W3C)'s Web Accessibility Initiative (WAI) is an effort to improve the accessibility of the World Wide Web for people of all abilities.
 - Web Accessibility Initiative (WAI) contributors create and maintain [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG21/) (WCAG) which is the global accessibility standard.

@@ -1,5 +1,4 @@
 ---
-
 title: Loading
 tabs: ['Code', 'Usage']
 ---
@@ -17,4 +16,3 @@ It is best practice to use a loading spinner whenever the wait time is anticipat
 ## Size
 
 Loading spinners may be scaled down if the loading experience is contextual to a certain item on the page.
-

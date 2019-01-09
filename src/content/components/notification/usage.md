@@ -1,5 +1,4 @@
 ---
-
 title: Notification
 tabs: ['Code', 'Usage']
 ---

@@ -26,25 +26,25 @@ Use sentence-style capitalization in text and for all text elements in the UI, e
 
 ### Headline style
 
-Use headline-style capitalization for table/grid column headers and product names. Headline style capitalizes words based on parts of speech.
+Only use headline-style capitalization for table/grid column headers and product names. Headline style capitalizes words based on parts of speech.
 
 **Capitalize the initial letter of the following words:**
 
 - All nouns, pronouns, adjectives, verbs, adverbs, and subordinating conjunctions such as:
-- After
-- Although
-- Because
-- Before
-- How
-- If
-- Than
-- That
-- Though
-- Until
-- When
-- Where
-- Whether
-- While
+  - After
+  - Although
+  - Because
+  - Before
+  - How
+  - If
+  - Than
+  - That
+  - Though
+  - Until
+  - When
+  - Where
+  - Whether
+  - While
 
 **Do not capitalize the initial letter of the following words:**
 
@@ -52,7 +52,7 @@ Use headline-style capitalization for table/grid column headers and product name
 - coordinating conjunctions
 - prepositions, except as the first or last word
 
-## Do's & Dont's
+## Do's & dont's
 
 These guidelines apply for developers and writers working with IBM Cloud UI and documentation.
 

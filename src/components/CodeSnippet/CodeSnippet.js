@@ -7,7 +7,7 @@ import 'prismjs/components/prism-bash';
 import 'prismjs/components/prism-scss';
 import { CopyToClipboard } from 'react-copy-to-clipboard/lib/Component';
 
-require('prismjs/themes/prism.css');
+require('../../styles/prism.css');
 
 export default class Snippet extends React.Component {
   static propTypes = {
@@ -39,11 +39,11 @@ export default class Snippet extends React.Component {
     const type = this.state.multi ? 'multi' : 'single';
     return (
       <div className="ibm--row">
-        <div className="ibm--col-lg-8 ibm--offset-lg-4">
+        <div className="ibm--col-lg-8 ibm--offset-lg-4 ibm--col-bleed">
           <CopyToClipboard
             text={children[0].props.children[0]}
             onCopy={() => this.setState({ copied: true })}>
-            <CodeSnippet type={type}>
+            <CodeSnippet type={type} className="bx--snippet--website">
               <div ref={element => (this.codeRef = element)}>{children}</div>
             </CodeSnippet>
           </CopyToClipboard>
