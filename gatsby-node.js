@@ -6,7 +6,7 @@ const { copy } = require('fs-extra');
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
   // If the node type (file) is a markdown file
-  if (node.internal.type === 'MarkdownRemark') {
+  if (node.internal.type === 'Mdx') {
     const dir = path.resolve(__dirname, '');
     const fileNode = getNode(node.parent);
     const slug = createFilePath({
@@ -39,7 +39,7 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark {
+      allMdx {
         edges {
           node {
             fields {
@@ -54,7 +54,7 @@ exports.createPages = ({ actions, graphql }) => {
       }
     }
   `).then(result => {
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    result.data.allMdx.edges.forEach(({ node }) => {
       const slug = node.fields.slug;
       const currentPage = node.fields.currentPage;
       const tabs = node.frontmatter.tabs === null ? [] : node.frontmatter.tabs;
