@@ -46,11 +46,11 @@ title: Resources
     <img src="images/codepen-icon.png" alt="Carbon CodePen" />
 </clickable-tile>
 <clickable-tile
-    title="Themeing Sandbox"
+    title="Theming Sandbox"
     href="http://themes.carbondesignsystem.com/"
     type="resource"
     >
-    <img src="images/sandbox-icon.png" alt="Themeing Sandbox" />
+    <img src="images/sandbox-icon.png" alt="Theming Sandbox" />
 </clickable-tile>
 <clickable-tile
     title="Color Contrast Checker"
