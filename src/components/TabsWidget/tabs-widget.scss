@@ -1,0 +1,42 @@
+.tabs-widget {
+  margin-bottom: $spacing-3xl;
+
+  nav.bx--tabs {
+    min-height: 2.8rem;
+
+    ul.bx--tabs__nav {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+
+      li.bx--tabs__nav-item {
+        border: none;
+        margin: 0;
+        border-left: rem(1px) solid $ibm-colors__gray--30;
+        &:first-child {
+          border-left: none;
+        }
+
+        a.bx--tabs__nav-link {
+          border: none;
+          box-sizing: border-box;
+          background: $ui-03;
+          color: $text-01;
+          padding: $spacing-sm $spacing-md;
+        }
+      }
+
+      li.bx--tabs__nav-item--selected {
+        a.bx--tabs__nav-link {
+          background: #fff;
+          border-top: $spacing-3xs solid $ibm-colors__blue--60;
+          padding-top: rem(10px);
+        }
+      }
+    }
+  }
+
+  div.tab-content {
+    background: #fff;
+    padding: $spacing-3xl $spacing-lg $spacing-lg $spacing-lg;
+  }
+}
