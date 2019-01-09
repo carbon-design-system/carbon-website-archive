@@ -48,62 +48,6 @@ module.exports = {
         path: `${__dirname}/src/pages/`,
       },
     },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          `gatsby-remark-smartypants`,
-          `gatsby-remark-responsive-iframe`,
-          `gatsby-remark-component`,
-          {
-            resolve: 'gatsby-remark-embed-video',
-            options: {
-              width: 606,
-              ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
-              height: 333, // Optional: Overrides optional.ratio
-              related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
-              noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
-            },
-          },
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 1024,
-              linkImagesToOriginal: false,
-              backgroundColor: 'transparent',
-            },
-          },
-          'gatsby-remark-copy-linked-files',
-          {
-            resolve: 'gatsby-remark-embedded-codesandbox',
-            options: {
-              directory: `${__dirname}/src/pages`,
-              // Optional:
-
-              // Custom protocol for parsing the embedding link
-              // default:
-              protocol: 'embedded-codesandbox://',
-
-              // Customise Codesandbox embedding options:
-              // https://codesandbox.io/docs/embedding#embed-options
-              // default:
-              embedOptions: {
-                view: 'preview',
-                hidenavigation: 1,
-              },
-
-              // Customise the embedding iframe given the generated url
-              // default:
-              getIframe: url =>
-                `<iframe src="${url}" class="embedded-codesandbox" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>`,
-            },
-          },
-        ],
-      },
-    },
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-sass',
