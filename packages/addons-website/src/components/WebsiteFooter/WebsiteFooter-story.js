@@ -14,7 +14,7 @@ storiesOf('Website Footer', module).add(
         { href: 'https://www.ibm.com', linkText: 'IBM.com' },
       ]}
       linksCol2={[
-        { href: 'https://dribbble.com/_carbondesign', linkText: 'Dribble' },
+        { href: 'https://dribbble.com/_carbondesign', linkText: 'Dribbble' },
         { href: 'https://medium.com/@_carbondesign', linkText: 'Medium' },
         { href: 'https://twitter.com/_carbondesign', linkText: 'Twitter' },
       ]}>

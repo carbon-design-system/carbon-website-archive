@@ -43,7 +43,7 @@ export default class Snippet extends React.Component {
           <CopyToClipboard
             text={children[0].props.children[0]}
             onCopy={() => this.setState({ copied: true })}>
-            <CodeSnippet type={type}>
+            <CodeSnippet type={type} className="bx--snippet--website">
               <div ref={element => (this.codeRef = element)}>{children}</div>
             </CodeSnippet>
           </CopyToClipboard>
