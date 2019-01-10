@@ -56,7 +56,7 @@
     "fs": "0.0.1-security",
     "gatsby": "2.0.72",
     "gatsby-image": "2.0.22",
-    "gatsby-mdx": "^0.2.0",
+    "gatsby-mdx": "^0.3.0",
     "gatsby-plugin-google-analytics": "^2.0.8",
     "gatsby-plugin-manifest": "^2.0.11",
     "gatsby-plugin-offline": "^2.0.18",

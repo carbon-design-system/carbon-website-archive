@@ -17,6 +17,24 @@ import {
 import { AppSwitcher20, Menu32 } from '@carbon/icons-react';
 import { WebsiteFooter } from '@carbon/addons-website';
 
+import Snippet from '../CodeSnippet';
+import PageTable from '../PageTable';
+import ClickTile from '../ClickableTile';
+import FeatureTile from '../FeatureTile';
+import DoDontExample from '../DoDontExample';
+import ColorBlock from '../ColorBlock';
+import ColorCard from '../ColorCard';
+import IconLibrary from '../IconLibrary';
+import TypeScaleTable from '../TypeScaleTable';
+import TypeWeight from '../TypeWeight';
+import TypeSpec from '../TypeSpec';
+import ComponentCode from '../ComponentCode';
+import ComponentDocs from '../ComponentDocs';
+import ComponentStatus from '../ComponentStatus';
+import ComponentReact from '../ComponentReact';
+import Glossary from '../Glossary';
+import ComponentOverview from '../ComponentOverview';
+
 import {
   p,
   h1,
@@ -208,7 +226,29 @@ class Layout extends React.Component {
                     h4: h4,
                     h5: h5,
                     ul: ul,
-                    ol: ol
+                    ol: ol,
+                    pre: Snippet,
+                    table: PageTable,
+                    /* switch all of these to direct react component imports
+                    'grid-wrapper': GridWrapper,
+                    icon: PageIcon,
+                    'clickable-tile': ClickTile,
+                    'feature-tile': FeatureTile,
+                    'do-dont-example': DoDontExample,
+                    'color-block': ColorBlock,
+                    'color-card': ColorCard,
+                    'icon-library': IconLibrary,
+                    'type-scale-table': TypeScaleTable,
+                    'type-weight': TypeWeight,
+                    'type-spec': TypeSpec,
+                    component: ComponentCode,
+                    'component-react': ComponentReact,
+                    'component-docs': ComponentDocs,
+                    'component-status': ComponentStatus,
+                    glossary: Glossary,
+                    'component-overview': ComponentOverview,
+                    'anchor-links': AnchorLinks,
+                    */
                   }}
                 >
                 <div className="page-content ibm--grid">

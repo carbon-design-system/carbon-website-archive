@@ -14,42 +14,11 @@ module.exports = {
     {
       resolve: `gatsby-mdx`,
       options: {
+        root: __dirname,
+        //extensions: ['.mdx', '.md'],
         defaultLayouts: {
           default: require.resolve("./src/components/Layouts/index.js")
-        }
-      }
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-131128838-1',
-      },
-    },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Carbon Design System`,
-        short_name: `Carbon`,
-        start_url: `/`,
-        background_color: `#000000`,
-        theme_color: `#cccccc`,
-        display: `minimal-ui`,
-        icon: `src/content/global/images/favicon-32.png`, // This path is relative to the root of the site.
-      },
-    },
-    'gatsby-plugin-offline',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'content',
-        path: `${__dirname}/src/content/`,
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
+        },
         plugins: [
           `gatsby-remark-smartypants`,
           `gatsby-remark-responsive-iframe`,
@@ -101,6 +70,34 @@ module.exports = {
             },
           },
         ],
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-131128838-1',
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Carbon Design System`,
+        short_name: `Carbon`,
+        start_url: `/`,
+        background_color: `#000000`,
+        theme_color: `#cccccc`,
+        display: `minimal-ui`,
+        icon: `src/content/global/images/favicon-32.png`, // This path is relative to the root of the site.
+      },
+    },
+    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'content',
+        path: `${__dirname}/src/content/`,
       },
     },
     'gatsby-plugin-react-helmet',

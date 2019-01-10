@@ -1,6 +1,7 @@
 const path = require('path');
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const { copy } = require('fs-extra');
+const componentWithMDXScope = require('gatsby-mdx/component-with-mdx-scope')
 
 // Method that creates nodes based on the file system that we can use in our templates
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -42,6 +43,9 @@ exports.createPages = ({ actions, graphql }) => {
       allMdx {
         edges {
           node {
+            code {
+              scope
+            }
             fields {
               slug
               currentPage
