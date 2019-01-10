@@ -6,7 +6,7 @@
 .color-token-table__theme-switcher {
   margin-bottom: $spacing-xl;
   justify-content: space-between;
-  background: $ibm-colors__white;
+  background: $ui-02;
 
   @include breakpoint('md') {
     justify-content: flex-start;
@@ -16,11 +16,11 @@
 
 .color-token-table__theme-switcher
   .bx--content-switcher-btn:not(.bx--content-switcher--selected) {
-  background-color: $ibm-colors__white;
-  color: $ibm-colors__gray--100;
+  background-color: $ui-02;
+  color: $text-01;
 
   &:hover {
-    background-color: $ibm-colors__gray--30;
+    background-color: $ibm-colors__gray--30; // $hover-ui
   }
 }
 
@@ -84,13 +84,13 @@
 }
 
 .color-token-table .page-table {
-  background: $ibm-colors__white;
+  background: $ui-02;
   margin-top: $spacing-xs;
   width: calc(100%);
 }
 
 .color-token-table .page-table thead tr {
-  border-bottom: 2px solid $ibm-colors__gray--10;
+  border-bottom: 2px solid $ui-01;
   display: flex;
 
   @media all and (max-width: 580px) {
@@ -104,7 +104,7 @@
 
 .color-token-table .page-table tbody tr {
   display: flex;
-  border-bottom: 2px solid $ibm-colors__gray--10;
+  border-bottom: 2px solid $ui-01;
   min-height: rem(104px);
 
   @media all and (max-width: 580px) {
@@ -123,5 +123,5 @@
 }
 
 .color-token-table .page-table tbody tr td:not(:last-child) {
-  border-right: 2px solid $ibm-colors__gray--10;
+  border-right: 2px solid $ui-01;
 }
