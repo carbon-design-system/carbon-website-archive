@@ -90,7 +90,7 @@
 }
 
 .color-token-table .page-table thead tr {
-  border-bottom: 2px solid $ui-01;
+  border-bottom: 1px solid $ibm-colors__gray--20;
   display: flex;
 
   @media all and (max-width: 580px) {
@@ -100,11 +100,12 @@
 
 .color-token-table .page-table thead tr th {
   flex: 1;
+  flex-basis: calc(100% / 3);
 }
 
 .color-token-table .page-table tbody tr {
   display: flex;
-  border-bottom: 2px solid $ui-01;
+  border-bottom: 1px solid $ibm-colors__gray--20;
   min-height: rem(104px);
 
   @media all and (max-width: 580px) {
@@ -114,8 +115,13 @@
   }
 }
 
+.color-token-table .page-table tbody tr:last-child {
+  border-bottom: none;
+}
+
 .color-token-table .page-table tbody tr td {
   flex: 1;
+  flex-basis: calc(100% / 3);
 
   &:last-child {
     padding-right: $spacing-xs;
@@ -123,5 +129,5 @@
 }
 
 .color-token-table .page-table tbody tr td:not(:last-child) {
-  border-right: 2px solid $ui-01;
+  border-right: 1px solid $ibm-colors__gray--20;
 }

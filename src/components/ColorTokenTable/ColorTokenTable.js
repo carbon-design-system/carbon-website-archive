@@ -32,7 +32,7 @@ export default class ColorTokenTable extends React.Component {
       <div className="color-token-value">
         <ul>
           <li>{value[currentTheme].name}</li>
-          <li>-</li>
+          <li>—</li>
           <li>{value[currentTheme].hex}</li>
         </ul>
         <div>
@@ -54,7 +54,14 @@ export default class ColorTokenTable extends React.Component {
   };
 
   renderToken = (token, tokenInfo) => {
-    const roles = tokenInfo.role.map(role => <li>{role};</li>);
+    const roles = tokenInfo.role.map((role, i) => {
+      return (
+        <li>
+          {role}
+          {i !== tokenInfo.role.length - 1 && ';'}
+        </li>
+      );
+    });
     return (
       <tr>
         <td>
