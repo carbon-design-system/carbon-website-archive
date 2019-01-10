@@ -26,20 +26,22 @@ export default class ColorTokenTable extends React.Component {
   };
 
   renderValue = (token, tokenInfo) => {
+    const currentTheme = this.state.theme;
+    const value = tokenInfo.value;
     return (
       <div className="color-token-value">
         <ul>
-          <li>{tokenInfo.value[this.state.theme].name}</li>
+          <li>{value[currentTheme].name}</li>
           <li>-</li>
-          <li>{tokenInfo.value[this.state.theme].hex}</li>
+          <li>{value[currentTheme].hex}</li>
         </ul>
         <div>
           <div
             className="color-token-value__block"
-            style={{ backgroundColor: tokenInfo.value[this.state.theme].hex }}
+            style={{ backgroundColor: value[currentTheme].hex }}
           />
           <OverflowMenu floatingMenu={false}>
-            <CopyToClipboard text={tokenInfo.value[this.state.theme].hex}>
+            <CopyToClipboard text={value[currentTheme].hex}>
               <OverflowMenuItem itemText="Copy hex" />
             </CopyToClipboard>
             <CopyToClipboard text={token}>
