@@ -1,0 +1,5 @@
+@import '../prefix';
+
+.#{$prefix}--header--website {
+  background: $ibm-colors__gray--100;
+}
