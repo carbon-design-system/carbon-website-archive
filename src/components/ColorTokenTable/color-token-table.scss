@@ -1,0 +1,128 @@
+.color-token-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-token-table__theme-switcher {
+  margin-bottom: $spacing-xl;
+  justify-content: space-between;
+  background: $ibm-colors__white;
+
+  @include breakpoint('md') {
+    justify-content: flex-start;
+    background: transparent;
+  }
+}
+
+.color-token-table__theme-switcher
+  .bx--content-switcher-btn:not(.bx--content-switcher--selected) {
+  background-color: $ibm-colors__white;
+  color: $ibm-colors__gray--100;
+
+  &:hover {
+    background-color: $ibm-colors__gray--30;
+  }
+}
+
+.color-token-table__theme-switcher .bx--content-switcher-btn {
+  padding: $spacing-xs $spacing-xl $spacing-xs $spacing-md;
+  flex: 1;
+
+  @include breakpoint('sm') {
+    padding-right: $spacing-md;
+  }
+
+  @include breakpoint('md') {
+    padding-right: 4rem;
+    flex: none;
+  }
+}
+
+.color-token-value {
+  display: flex;
+  justify-content: space-between;
+}
+
+.color-token-value .bx--overflow-menu {
+  margin-left: $spacing-xs;
+}
+
+.color-token-value .bx--overflow-menu-options {
+  left: -9.25rem;
+  top: $spacing-xl;
+}
+
+.color-token-value .bx--overflow-menu__icon {
+  width: rem(12px);
+  height: rem(12px);
+}
+
+.color-token-value > div {
+  display: flex;
+
+  @media all and (max-width: 580px) {
+    position: absolute;
+    right: $spacing-md;
+    top: $spacing-md;
+  }
+}
+
+.color-token-value__block {
+  display: block;
+  width: rem(48px);
+  height: rem(48px);
+
+  @media all and (max-width: 672px) {
+    width: rem(32px);
+    height: rem(32px);
+  }
+
+  @media all and (max-width: 580px) {
+    width: rem(48px);
+    height: rem(48px);
+  }
+}
+
+.color-token-table .page-table {
+  background: $ibm-colors__white;
+  max-width: rem(962px);
+  margin-top: $spacing-xs;
+  width: calc(100%);
+}
+
+.color-token-table .page-table thead tr {
+  border-bottom: 2px solid $ibm-colors__gray--10;
+  display: flex;
+
+  @media all and (max-width: 580px) {
+    display: none;
+  }
+}
+
+.color-token-table .page-table thead tr th {
+  flex: 1;
+}
+
+.color-token-table .page-table tbody tr {
+  display: flex;
+  border-bottom: 2px solid $ibm-colors__gray--10;
+  min-height: rem(104px);
+
+  @media all and (max-width: 580px) {
+    flex-direction: column;
+    height: auto;
+    position: relative;
+  }
+}
+
+.color-token-table .page-table tbody tr td {
+  flex: 1;
+
+  &:last-child {
+    padding-right: $spacing-xs;
+  }
+}
+
+.color-token-table .page-table tbody tr td:not(:last-child) {
+  border-right: 2px solid $ibm-colors__gray--10;
+}
