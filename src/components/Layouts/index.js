@@ -108,7 +108,11 @@ class Layout extends React.Component {
     const version = Packages.dependencies['carbon-components'];
     const reactVersion = Packages.dependencies['carbon-components-react'];
     const currentYear = new Date().getFullYear();
-    const lastUpdated = new Intl.DateTimeFormat().format(new Date(Number(timestamp)));
+    const lastUpdated = new Intl.DateTimeFormat(undefined, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    }).format(new Date(Number(timestamp)));
 
     return (
       <StaticQuery
