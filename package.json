@@ -32,7 +32,7 @@
     "format:diff": "prettier --list-different \"**/*.{scss,css,js,md}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "storybook:build": "build-storybook -c .storybook -o public/docs"
+    "storybook:build": "build-storybook -c .storybook -o public/storybook"
   },
   "dependencies": {
     "@carbon/addons-website": "^0.0.1-alpha.0",
