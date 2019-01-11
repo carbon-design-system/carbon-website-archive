@@ -5,6 +5,14 @@ title: Disabled states
 
 <page-intro>**A disabled state** is applied to a component when the user is not allowed to interact with the component due to either permissions, dependencies, or pre-requisites. Disabled states completely remove the interactive function of a component.</page-intro>
 
+<anchor-links>
+<ul>
+    <li><a href="#default-disabled">Default disabled</a></li>
+    <li><a href="#read-only">Read-only</a></li>
+    <li><a href="#hidden">Hidden</a></li>
+</ul>
+</anchor-links>
+
 ## Disabled variations
 
 | Variation            | Description                                                                                                                                                                                                                           |
