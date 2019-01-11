@@ -5,6 +5,14 @@
   z-index: 9999;
 }
 
+.bx--side-nav {
+  display: none;
+}
+
+.bx--header__menu-trigger svg {
+  margin-top: 2px;
+}
+
 a.bx--header__name {
   @include type-style('body-short-02');
 }
