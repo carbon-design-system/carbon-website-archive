@@ -22,6 +22,7 @@
     "build:packages": "lerna run build --stream --prefix --npm-client yarn",
     "build:external": "rm -rf public && yarn build:packages && ./tasks/build.sh --env external",
     "build:internal": "rm -rf public && yarn build:packages && ./tasks/build.sh --env internal",
+    "serve": "gatsby serve",
     "clean": "lerna clean --yes && rm -rf build && rm -rf node_modules",
     "clean:cache": "rm -rf .cache",
     "dev": "yarn dev:external",
@@ -31,9 +32,7 @@
     "format:diff": "prettier --list-different \"**/*.{scss,css,js,md}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "storybook:build": "build-storybook -c .storybook -o public/docs",
-    "deploy:internal": "yarn build:internal && cd public && surge",
-    "deploy:external": "yarn build:external && cd public && surge"
+    "storybook:build": "build-storybook -c .storybook -o public/docs"
   },
   "dependencies": {
     "@carbon/addons-website": "^0.0.1-alpha.0",
