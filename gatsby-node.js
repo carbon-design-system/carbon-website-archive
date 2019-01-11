@@ -116,9 +116,11 @@ exports.onCreateWebpackConfig = ({ actions, getConfig, stage }) => {
       ...module,
       rules: [
         ...rules.map(item => {
-          const { use } = item;
+          const { use, include } = item;
+          const includeList = !include || Array.isArray(include) ? include : [include];
           if (
             !use ||
+            includeList && includeList.some(item => /node_modules/i.test(item)) ||
             use.every(({ loader }) => !/babel-loader\.js$/i.test(loader))
           ) {
             return item;
