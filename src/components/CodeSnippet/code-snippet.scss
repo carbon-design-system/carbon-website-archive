@@ -1,3 +1,22 @@
+.page-content .bx--snippet--single {
+  background: $ui-05;
+  color: $inverse-01;
+}
+
+.page-content .bx--snippet--multi {
+  background: $ui-05;
+  color: $inverse-01;
+  margin-bottom: $spacing-lg;
+}
+
+.page-content .bx--snippet-button {
+  background: $ui-05;
+}
+
+.page-content .bx--snippet__icon {
+  fill: $inverse-01;
+}
+
 .page-content .bx--snippet--multi .bx--snippet-container {
   min-height: auto;
 }
