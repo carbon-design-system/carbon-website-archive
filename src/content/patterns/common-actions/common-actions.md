@@ -4,8 +4,8 @@ title: Common Actions
 
 **Common actions** are frequently used actions that appear multiple times across different components and workflows. For platform consistency, these actions should only be applied in the ways described below.
 
+<b>Regressive Actions</b>
 <anchor-links>
-  <b>Regressive Actions</b>
 <ul>
     <li><a href="#cancel">Cancel</a></li>
     <li><a href="#clear">Clear</a></li>
@@ -15,9 +15,8 @@ title: Common Actions
     <li><a href="#reset">Reset</a></li>
 </ul>
 </anchor-links>
-
+<b>Progressive Actions</b>
 <anchor-links>
-  <b>Progressive Actions</b>
 <ul>
     <li><a href="#add">Add</a></li>
     <li><a href="#copy">Copy</a></li>
