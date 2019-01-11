@@ -12,41 +12,35 @@
 }
 
 // Bottom links
+.bx--side-nav__divider {
+  display: block;
+  margin: rem(64px) 1rem 0;
+  border-color: $ibm-colors__gray--80;
+}
+
 .side-nav .bx--side-nav__item {
   &:nth-last-child(2) {
-    margin-top: $spacing-lg;
-
     .side-nav__website-link {
-      border-top: 1px solid $ibm-colors__gray--50;
-      padding-top: $spacing-lg;
+      margin-top: 1rem;
     }
   }
 
-  &:nth-last-child(1),
-  &:nth-last-child(2) {
-    a.bx--side-nav__link,
-    .bx--side-nav__icon {
-      min-height: 2rem;
-      height: auto;
-    }
-
+  &:nth-last-child(2),
+  &:nth-last-child(1) {
     .side-nav__website-link {
-      margin: 0 1rem;
+      flex-direction: row-reverse;
+      justify-content: space-between;
     }
 
-    .bx--side-nav__icon {
-      display: none;
-    }
-
-    &:hover {
-      background: transparent;
-    }
-
-    .bx--side-nav__submenu-title,
-    .bx--side-nav__link-text {
-      padding-left: 0;
+    .side-nav__website-link > .bx--side-nav__icon {
+      display: block;
+      flex: 0;
     }
   }
+}
+
+.bx--side-nav__navigation {
+  padding-top: $spacing-lg;
 }
 
 /* temp styles until shell is updated */
@@ -58,7 +52,7 @@
 .bx--side-nav.side-nav
   .bx--side-nav__menu[role='menu']
   a.bx--side-nav__link[role='menuitem'] {
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 .bx--side-nav.side-nav .bx--side-nav__icon:not(.bx--side-nav__submenu-chevron) {
@@ -92,4 +86,74 @@
 
 .side-nav-click-to-close__closed {
   display: none;
+}
+
+
+//===================
+// SIDE NAV overrides
+//===================
+
+.bx--side-nav__navigation {
+  background-color: $ui-05;
+}
+
+.bx--side-nav__items {
+  // flex: 0;
+}
+
+.bx--side-nav .bx--side-nav__submenu[aria-haspopup='true'],
+.bx--side-nav__item > a.bx--side-nav__link {
+  @include type-style('heading-01');
+  color: $active-01;
+}
+
+.bx--side-nav a.bx--side-nav__link > .bx--side-nav__link-text {
+  color: $active-01;
+}
+
+.bx--side-nav a.bx--side-nav__link:hover > .bx--side-nav__link-text,
+.bx--side-nav a.bx--side-nav__link[aria-current='page'] > .bx--side-nav__link-text {
+  color: $ui-01;
+}
+
+.bx--side-nav__item:not(.bx--side-nav__item--active):hover {
+  background-color: $ui-05;
+}
+
+.bx--side-nav__item:not(.bx--side-nav__item--active):hover > .bx--side-nav__submenu,
+.bx--side-nav__menu[role='menu'] a.bx--side-nav__link[role='menuitem']:not(.bx--side-nav__link--current):not([aria-current='page']):hover,
+.bx--side-nav__item:not(.bx--side-nav__item--active):hover > .bx--side-nav__link {
+  background-color: #353535;
+  color: $ui-01;
+}
+
+.bx--side-nav .bx--side-nav__item .bx--side-nav__submenu[aria-expanded="true"] {
+  background-color: $ui-05;
+  color: $active-01;
+
+  &:hover {
+    background-color: #353535;
+    color: $ui-01;
+  }
+}
+
+.bx--side-nav a.bx--side-nav__link,
+.bx--side-nav__submenu[aria-haspopup='true'] {
+  min-height: 2rem;
+  height: 2rem;
+}
+
+.bx--side-nav .bx--side-nav__icon,
+.bx--side-nav .bx--side-nav__icon svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+.bx--side-nav__submenu > .bx--side-nav__icon, a.bx--side-nav__link > .bx--side-nav__icon {
+  margin-right: 0;
+}
+
+.bx--side-nav a.bx--side-nav__link[aria-current='page'],
+.bx--side-nav__menu[role='menu'] a.bx--side-nav__link--current, .bx--side-nav__menu[role='menu'] a.bx--side-nav__link[aria-current='page'] {
+  background-color: $ibm-colors__gray--80;
 }

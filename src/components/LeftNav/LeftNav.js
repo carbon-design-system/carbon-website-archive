@@ -12,6 +12,7 @@ import {
   SideNavLink,
 } from 'carbon-components-react/lib/components/UIShell';
 import { Awake16 } from '@carbon/icons-react';
+import { Launch16 } from '@carbon/icons-react';
 
 export default class LeftNav extends React.Component {
   renderNavItems = (nav, loc) =>
@@ -65,14 +66,15 @@ export default class LeftNav extends React.Component {
               <SideNav aria-label="Side navigation" className={classNames}>
                 <SideNavItems>
                   {navItems}
+                  <hr className="bx--side-nav__divider" / >
                   <SideNavLink
-                    icon={<Awake16 />}
+                    icon={<Launch16 />}
                     href="https://github.com/ibm/carbon-design-kit"
                     className="side-nav__website-link">
                     Design Kit
                   </SideNavLink>
                   <SideNavLink
-                    icon={<Awake16 />}
+                    icon={<Launch16 />}
                     href="javascript:void(0)"
                     to="/resources#github"
                     className="side-nav__website-link"

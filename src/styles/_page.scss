@@ -8,7 +8,7 @@ body {
   font-family: $font-family;
 }
 
-.side-nav + div, //Issue #51 weird bug where sometimes on reload of the page the classnames on container div disapear 
+.side-nav + div, //Issue #51 weird bug where sometimes on reload of the page the classnames on container div disapear
   .container {
   width: 100%;
   margin-left: 0;
@@ -35,6 +35,10 @@ body {
   @include breakpoint('lg') {
     display: none;
   }
+}
+
+.bx--header .bx--header__name {
+  font-size: 1rem;
 }
 
 //---------------------------------------
