@@ -5,6 +5,14 @@
   z-index: 9999;
 }
 
+a.bx--header__name {
+  @include type-style('body-short-02');
+}
+
+.bx--header__name--prefix {
+  @include type-style('heading-02');
+}
+
 .bx--header__nav {
   display: none;
 
