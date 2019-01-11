@@ -71,7 +71,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-embedded-codesandbox',
             options: {
-              directory: `${__dirname}/src/content`,
+              directory: `${__dirname}/src/content/`,
               // Optional:
 
               // Custom protocol for parsing the embedding link
@@ -89,7 +89,7 @@ module.exports = {
               // Customise the embedding iframe given the generated url
               // default:
               getIframe: url =>
-                `<iframe src="${url}" class="embedded-codesandbox" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>`,
+                `<iframe src="${url}" class="bx--codesandbox" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>`,
             },
           },
         ],

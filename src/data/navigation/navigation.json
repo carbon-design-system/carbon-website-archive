@@ -1,5 +1,4 @@
 {
-
   "getting-started": {
     "title": "Getting started",
     "sub-nav": {
@@ -11,6 +10,29 @@
       },
       "developers": {
         "title": "Developers"
+      }
+    }
+  },
+  "tutorial": {
+    "title": "Tutorial",
+    "sub-nav": {
+      "introduction": {
+        "title": "Introduction"
+      },
+      "1-dev-env": {
+        "title": "1. Development environment"
+      },
+      "2-app-shell": {
+        "title": "2. Application shell"
+      },
+      "3-grid-and-components": {
+        "title": "3. Grid and components"
+      },
+      "4-form-validation": {
+        "title": "4. Form validation"
+      },
+      "5-data-table": {
+        "title": "5. Data table"
       }
     }
   },
@@ -62,7 +84,6 @@
       "catalog-entry": {
         "title": "Catalog entry"
       }
-
     }
   },
   "components": {
@@ -207,15 +228,15 @@
     "title": "Contributing",
     "sub-nav": {
       "designers": {
-      "title": "Designers"
-    },
-    "developers": {
-      "title": "Developers"
-    },
-    "add-ons": {
-      "title": "Add-ons"
+        "title": "Designers"
+      },
+      "developers": {
+        "title": "Developers"
+      },
+      "add-ons": {
+        "title": "Add-ons"
+      }
     }
-  }
   },
   "updates": {
     "title": "Updates",
@@ -241,8 +262,8 @@
         "title": "Support"
       },
       "faq": {
-          "title": "FAQ"
-        }
+        "title": "FAQ"
       }
     }
   }
+}
