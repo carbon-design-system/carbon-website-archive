@@ -5,8 +5,30 @@
   z-index: 9999;
 }
 
+.bx--side-nav {
+  display: block;
+
+  @include breakpoint('md') {
+    display: none;
+  }
+}
+
+.bx--header__nav {
+  display: none;
+
+  @include breakpoint('md') {
+    display: block;
+  }
+
+}
+
 .#{$prefix}--header__action {
   border-width: 2px;
+  display: block;
+
+  @include breakpoint('md') {
+    display: none;
+  }
 }
 
 a.#{$prefix}--header__name:focus {
