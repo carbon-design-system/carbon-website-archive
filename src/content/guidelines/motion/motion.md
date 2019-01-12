@@ -10,8 +10,8 @@ Guidance coming soon
 <p>lorem ipsum dolor sit amet</p>
 
 <div className="ibm--row">
-<div className="ibm--col-lg-11 ibm--offset-lg-4">
-<div className="tabs-widget">
+<div className="ibm--col-lg-7 ibm--offset-lg-4">
+<div className="website-tabs">
 <tabs><tab label="tab 1"><div>
 
 Content for first tab goes here.
