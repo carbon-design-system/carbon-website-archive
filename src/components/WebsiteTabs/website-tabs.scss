@@ -34,13 +34,13 @@
 }
 
 .website-tabs li.bx--tabs__nav-item--selected a.bx--tabs__nav-link {
-  background: #fff;
+  background: $ui-02;
   border: none;
   border-top: $spacing-3xs solid $ibm-colors__blue--60;
   padding-top: rem(10px);
 }
 
 .website-tabs div.tab-content {
-  background: #fff;
+  background: $ui-02;
   padding: $spacing-3xl $spacing-lg $spacing-lg $spacing-lg;
 }
