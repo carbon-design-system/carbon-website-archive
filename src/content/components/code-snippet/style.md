@@ -1,6 +1,6 @@
 ---
 
-title: Code snippet
+title: Code Snippet
 tabs: ['Code', 'Usage', 'Style']
 ---
 
