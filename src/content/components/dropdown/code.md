@@ -1,6 +1,6 @@
 ---
 title: Dropdown
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 **Dropdowns** present a list of options that can be used to filter existing content.
