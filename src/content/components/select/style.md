@@ -8,29 +8,29 @@ tabs: ['Code', 'Usage', 'Style']
 
 Inputs come in two different colors. The default input color is `$field-01` and is used on `$ui-01` page backgrounds. The light version input color is `$field-02` and is used on `$ui-02` page backgrounds.
 
-| Class                                  | Property   | SCSS        | HEX     |
-| -------------------------------------- | ---------- | ----------- | ------- |
-| `.bx--select-input`                    | background | $field-01   | #f4f7fb |
-| `.bx--select-input`                    | text color | $text-01    | #152935 |
-| `.bx--select-input::placeholder`       | color      | $text-03    | #cdd1d4 |
-| `.bx--select--light.bx--select-input`  | background | $field-02   | #ffffff |
-| `.bx--select--inline.bx--select-input` | background | transparent | -       |
-| `.bx--label`                           | text color | $text-01    | #152935 |
-| `.bx--select__arrow`                   | fill       | $brand-01   | #3d70b2 |
-| `.bx--select--inline.bx--select-input` | text color | $brand-01   | #3d70b2 |
+| Class                                  | Property   | SCSS        |
+| -------------------------------------- | ---------- | ----------- |
+| `.bx--select-input`                    | background | $field-01   |
+| `.bx--select-input`                    | text color | $text-01    |
+| `.bx--select-input::placeholder`       | color      | $text-03    |
+| `.bx--select--light.bx--select-input`  | background | $field-02   |
+| `.bx--select--inline.bx--select-input` | background | transparent |
+| `.bx--label`                           | text color | $text-01    |
+| `.bx--select__arrow`                   | fill       | $brand-01   |
+| `.bx--select--inline.bx--select-input` | text color | $brand-01   |
 
 ![Default and new selection state examples for Select](images/select-style-1.png)
 _Examples of default and new selection Select states in $field-02 (right) and $field-01 (left)_
 
 ### States
 
-| Class                                                | Property      | SCSS        | HEX     |
-| ---------------------------------------------------- | ------------- | ----------- | ------- |
-| `.bx--select-input:focus`                            | border-bottom | $brand-01   | #3d70b2 |
-| `.bx--select-input:focus ~ .bx--label`               | text color    | $brand-01   | #3d70b2 |
-| `.bx--select-input[data-invalid]:focus ~ .bx--label` | text color    | $support-01 | #e0182d |
-| `.bx--form-requirement`                              | text color    | $support-01 | #e0182d |
-| `.bx--select-input[data-invalid]`                    | border-bottom | $support-01 | #e0182d |
+| Class                                                | Property      | SCSS        |
+| ---------------------------------------------------- | ------------- | ----------- |
+| `.bx--select-input:focus`                            | border-bottom | $brand-01   |
+| `.bx--select-input:focus ~ .bx--label`               | text color    | $brand-01   |
+| `.bx--select-input[data-invalid]:focus ~ .bx--label` | text color    | $support-01 |
+| `.bx--form-requirement`                              | text color    | $support-01 |
+| `.bx--select-input[data-invalid]`                    | border-bottom | $support-01 |
 
 **Open:** Style determined by browser
 
@@ -93,9 +93,6 @@ The following specs are not built into the Select component but are recommended 
 <div class="image-grid">
   <div>
     <img src="images/select-style-4.png" alt="Structure and spacing measurements for Small Select"/>
-  </div>
-  <div>
-    <img src="images/select-style-5.png" alt="Structure and spacing measurements for Small Select"/>
   </div>
 </div>
 

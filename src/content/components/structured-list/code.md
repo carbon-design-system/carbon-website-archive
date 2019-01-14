@@ -1,6 +1,6 @@
 ---
-title: Structured List
-tabs: ['Code', 'Usage']
+title: Structured list
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 **Structured Lists** group content that is similar or related, such as terms or definitions.

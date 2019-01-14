@@ -1,6 +1,6 @@
 ---
 title: Slider
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## Types of sliders

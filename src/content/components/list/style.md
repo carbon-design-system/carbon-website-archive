@@ -1,14 +1,13 @@
 ---
-
 title: List
 tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## Color
 
-| Attribute         | Property | SCSS     | HEX     |
-| ----------------- | -------- | -------- | ------- |
-| `.bx--list__item` | color    | $text-01 | #152935 |
+| Attribute         | Property | SCSS     |
+| ----------------- | -------- | -------- |
+| `.bx--list__item` | color    | $text-01 |
 
 ## Typography
 
@@ -33,9 +32,6 @@ Level 1 unordered list points are bulleted while Level 2 points are marked with 
 <div class="image-grid">
   <div>
     <img src="images/list-style-1.png" alt="Structure and spacing measurements for ordered and unordered lists"/>
-  </div>
-  <div>
-    <img src="images/list-style-2.png" alt="Example of ordered list"/>
   </div>
 </div>
 

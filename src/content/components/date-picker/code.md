@@ -1,6 +1,6 @@
 ---
-title: Date Picker
-tabs: ['Code', 'Usage']
+title: Date picker
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 **Date and time pickers** allow users to select a single or a range of dates and times.

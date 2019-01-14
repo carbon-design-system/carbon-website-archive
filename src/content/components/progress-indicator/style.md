@@ -1,6 +1,6 @@
 ---
 
-title: Progress Indicator
+title: Progress indicator
 tabs: ['Code', 'Usage', 'Style']
 ---
 
@@ -8,14 +8,14 @@ tabs: ['Code', 'Usage', 'Style']
 
 All steps that have already been completed are indicated by an outlined circle with a checkmark. The current step the user is on is indicated by a filled circle. Steps the user has not encountered yet, or future steps, are indicated by an outlined circle.
 
-| Class                                                | Property         | SCSS      | HEX     |
-| ---------------------------------------------------- | ---------------- | --------- | ------- |
-| `.bx--progress-step svg`                             | fill             | $brand-01 | #3d70b2 |
-| `.bx--progress-step--incomplete circle`              | fill             | $ui-05    | #8897a2 |
-| `.bx--progress-step--current .bx--progress-line`     | background-color | $brand-01 | #3d70b2 |
-| `.bx--progress-step--incomplete .bx--progress-line`  | background-color | $ui-05    | #5a6872 |
-| `.bx--progress-step--complete .bx--progress-label`   | text color       | $brand-01 | #3d70b2 |
-| `.bx--progress-step--incomplete .bx--progress-label` | text color       | $ui-05    | #5a6872 |
+| Class                                                | Property         | SCSS      |
+| ---------------------------------------------------- | ---------------- | --------- |
+| `.bx--progress-step svg`                             | fill             | $brand-01 |
+| `.bx--progress-step--incomplete circle`              | fill             | $ui-05    |
+| `.bx--progress-step--current .bx--progress-line`     | background-color | $brand-01 |
+| `.bx--progress-step--incomplete .bx--progress-line`  | background-color | $ui-05    |
+| `.bx--progress-step--complete .bx--progress-label`   | text color       | $brand-01 |
+| `.bx--progress-step--incomplete .bx--progress-label` | text color       | $ui-05    |
 
 ---
 
