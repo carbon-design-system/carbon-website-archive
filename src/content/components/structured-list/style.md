@@ -6,15 +6,15 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                                                                      | Property         | SCSS       | HEX                    |
-| -------------------------------------------------------------------------- | ---------------- | ---------- | ---------------------- |
-| `.bx--structured-list-th` </br> `.bx--structured-list-td`                  | color            | $text-01   | #152935                |
-| `.bx--structured-list-row--header-row`                                     | border-bottom    | $brand-01  | #3d70b2                |
-| `.bx--structured-list-row`                                                 | border-bottom    | $ui-03     | #dfe3e6                |
-| `.bx--structured-list--border`                                             | border           | $ui-04     | #8897a2                |
-| `.bx--structured-list-row--selected`                                       | background-color | $hover-row | #5596e6 at 10% opacity |
-| `.bx--structured-list-row:hover:not(.bx--structured-list-row--header-row)` | background-color | $hover-row | #5596e6 at 10% opacity |
-| `.bx--structured-list-input:checked + .bx--structured-list-svg`            | fill             | $brand-02  | #5596e6                |
+| Class                                                                      | Property         | SCSS       |
+| -------------------------------------------------------------------------- | ---------------- | ---------- |
+| `.bx--structured-list-th` </br> `.bx--structured-list-td`                  | color            | $text-01   |
+| `.bx--structured-list-row--header-row`                                     | border-bottom    | $brand-01  |
+| `.bx--structured-list-row`                                                 | border-bottom    | $ui-03     |
+| `.bx--structured-list--border`                                             | border           | $ui-04     |
+| `.bx--structured-list-row--selected`                                       | background-color | $hover-row |
+| `.bx--structured-list-row:hover:not(.bx--structured-list-row--header-row)` | background-color | $hover-row |
+| `.bx--structured-list-input:checked + .bx--structured-list-svg`            | fill             | $brand-02  |
 
 ## Typography
 
