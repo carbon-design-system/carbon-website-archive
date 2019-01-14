@@ -4,6 +4,14 @@ title: Loading
 
 **Loading** is applied when additional information takes an extended amount of time to process and appear on screen. Skeleton states and the _loading_ component are two interactions that communicate to users that data is currently loading and the screen is not frozen.
 
+<anchor-links>
+<ul>
+    <li><a href="#skeleton-states">Skeleton states</a></li>
+    <li><a href="#loading-components">Loading components</a></li>
+  <li><a href="#load-more-button"><em>Load more</em> button</a></li>
+</ul>
+</anchor-links>
+
 ## Skeleton states
 
 _Skeleton states_ are simplified versions of Carbon components used on an initial page load to indicate that the information on the page has not entirely loaded yet. They should only appear for 1-3 seconds, disappearing once the actual content loads in.
@@ -102,18 +110,18 @@ The [_inline loading_](/components/inline-loading/code) component is used when a
 ![Example of Small Loader in the context of a Detail Page Header.](images/small-loading-1.gif)
 _Example of inline loader in context._
 
-## 'Load more' button
+## _Load more_ button
 
-A 'Load more' button may be used to extend a list where there are a large number of options (25 or more) that the user can choose from. It can also be used in cases where the list of options is populated via a database. Using 'Load more' allows the data to load in progressive batches.
+A _Load more_ button may be used to extend a list where there are a large number of options (25 or more) that the user can choose from. It can also be used in cases where the list of options is populated via a database. Using _Load more_ allows the data to load in progressive batches.
 
-![Example of a 'Load More' Button inside of a Filter Dropdown.](images/load-more.png)
-_Example of 'Load more' button in context._
+![Example of a _Load More_ button inside of a filter dropdown.](images/load-more.png)
+_Example of _Load more_ button in context._
 
 <!--## Progress Loader
 
-A Progress Loader is used to represent a specific load time for an item. This amount of time, whatever unit, can be measured based on actual events.
+A _progress loader_ is used to represent a specific load time for an item. This amount of time, whatever unit, can be measured based on actual events.
 
-Use cases for a Progress Loader include:
+Use cases for a progress loader include:
 
 - A file being uploaded (0 to 100%)
 - A new item being provisioned (0 to 10 minutes)
