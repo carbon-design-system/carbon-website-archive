@@ -1,6 +1,6 @@
 ---
 
-title: Progress Indicator
+title: Progress indicator
 tabs: ['Code', 'Usage', 'Style']
 ---
 
