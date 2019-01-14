@@ -4,6 +4,14 @@ title: Filtering
 
 **Filtering** is the mechanism by which a user adds or removes data items from a displayed data set by turning on and off certain predefined attributes.
 
+<anchor-links>
+<ul>
+    <li><a href="#selecting-filters">Selecting filters</a></li>
+    <li><a href="#triggering-filters">Triggering filters</a></li>
+    <li><a href="#filter-interaction">Filter interaction</a></li>
+</ul>
+</anchor-links>
+
 ## Selecting filters
 
 ### Single selection
