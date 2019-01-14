@@ -1,6 +1,6 @@
 ---
 
-title: Radio Button
+title: Radio button
 tabs: ['Code', 'Usage', 'Style']
 ---
 
