@@ -1,5 +1,5 @@
 ---
-title: Inline Loading
+title: Inline loading
 tabs: ['Code', 'Usage', 'Style']
 ---
 
