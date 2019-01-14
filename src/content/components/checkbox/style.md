@@ -6,20 +6,17 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                         | Property         | SCSS        | HEX     |
-| ----------------------------- | ---------------- | ----------- | ------- |
-| `.bx--checkbox:checked`       | background-color | $brand-01   | #3d70b2 |
-| `.bx--checkbox-label::before` | border           | $ui-05      | #5a6872 |
-| `.bx--checkbox-label::before` | fill             | $ui-01      | #ffffff |
-| `.bx--checkbox-label::after`  | checkmark        | $inverse-01 | #ffffff |
-| `.bx--checkbox-label`         | color            | $text-01    | #152935 |
+| Class                         | Property         | SCSS        |
+| ----------------------------- | ---------------- | ----------- |
+| `.bx--checkbox:checked`       | background-color | $brand-01   |
+| `.bx--checkbox-label::before` | border           | $ui-05      |
+| `.bx--checkbox-label::before` | fill             | $ui-01      |
+| `.bx--checkbox-label::after`  | checkmark        | $inverse-01 |
+| `.bx--checkbox-label`         | color            | $text-01    |
 
 <div class="image-grid">
   <div>
     <img src="images/checkbox-style-1.png" alt="Normal checkbox example"/>
-  </div>
-  <div>
-  <img src="images/checkbox-style-2.png" alt="Disabled checkbox example"/>
   </div>
 </div>
 

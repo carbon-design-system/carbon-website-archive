@@ -6,16 +6,16 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                                                                          | Property         | SCSS        | HEX     |
-| ------------------------------------------------------------------------------ | ---------------- | ----------- | ------- |
-| `.bx--toast-notification`                                                      | background-color | $ui-01      | #ffffff |
-| `.bx--toast-notification__title` </br> `.bx--inline-notification__title`       | color            | $text-01    | #152935 |
-| `.bx--toast-notification__subtitle` </br> `.bx--inline-notification__subtitle` | color            | $text-02    | #5a6872 |
-| `.bx--toast-notification__icon` </br> `.bx--inline-notification__close-icon`   | fill             | $ui-05      | #5a6872 |
-| `.bx--toast-notification--error` </br> `.bx--inline-notification--error`       | border-left      | $support-01 | #e0182d |
-| `.bx--toast-notification--info` </br> `.bx--inline-notification--info`         | border-left      | $support-04 | #5aaafa |
-| `.bx--toast-notification--success` </br> `.bx--inline-notification--success`   | border-left      | $support-02 | #5aa700 |
-| `.bx--toast-notification--warning` </br> `.bx--inline-notification--warning`   | border-left      | $support-03 | #efc100 |
+| Class                                                                          | Property         | SCSS        |
+| ------------------------------------------------------------------------------ | ---------------- | ----------- |
+| `.bx--toast-notification`                                                      | background-color | $ui-01      |
+| `.bx--toast-notification__title` </br> `.bx--inline-notification__title`       | color            | $text-01    |
+| `.bx--toast-notification__subtitle` </br> `.bx--inline-notification__subtitle` | color            | $text-02    |
+| `.bx--toast-notification__icon` </br> `.bx--inline-notification__close-icon`   | fill             | $ui-05      |
+| `.bx--toast-notification--error` </br> `.bx--inline-notification--error`       | border-left      | $support-01 |
+| `.bx--toast-notification--info` </br> `.bx--inline-notification--info`         | border-left      | $support-04 |
+| `.bx--toast-notification--success` </br> `.bx--inline-notification--success`   | border-left      | $support-02 |
+| `.bx--toast-notification--warning` </br> `.bx--inline-notification--warning`   | border-left      | $support-03 |
 
 ## Typography
 

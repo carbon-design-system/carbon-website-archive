@@ -1,6 +1,6 @@
 ---
 title: Link
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## Link text

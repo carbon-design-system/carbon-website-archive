@@ -1,6 +1,6 @@
 ---
-title: Number Input
-tabs: ['Code', 'Usage']
+title: Number input
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## General guidelines

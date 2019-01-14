@@ -1,6 +1,6 @@
 ---
-title: Radio Button
-tabs: ['Code', 'Usage']
+title: Radio button
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## General guidelines

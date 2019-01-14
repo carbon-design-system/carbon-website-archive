@@ -1,5 +1,4 @@
 ---
-
 title: Date picker
 tabs: ['Code', 'Usage', 'Style']
 ---
@@ -10,35 +9,35 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 
 If a `min date` is set on the calendar, then any text appearing before that date will be `#152935 @ 50%`, otherwise all text should be `#152935` (unless the number is selected or highlighted). Please refer to [select](/components/select), for inline select styling.
 
-| Class                                           | Property         | SCSS      | HEX     |
-| ----------------------------------------------- | ---------------- | --------- | ------- |
-| `.bx--date-picker__input`                       | background-color | $field-01 | #f4f7fb |
-| `.bx--date-picker__input`                       | border-bottom    | $ui-05    | #5a6872 |
-| `.bx--date-picker__input`                       | color            | $text-01  | #152935 |
-| `.bx--date-picker__input::placeholder`          | color            | $text-02  | #5a6872 |
-| `.bx--date-picker__input.bx--text-input--light` | background-color | $field-02 | #ffffff |
-| `.bx--label`                                    | color            | $text-01  | #152935 |
-| `.bx--date-picker__calendar`                    | background-color | $ui-01    | #ffffff |
-| `.bx--date-picker__day.selected`                | color            | $text-01  | #152935 |
-| `.bx--date-picker__day.inRange`                 | background-color | $ui-02    | #f4f7fb |
-| `.bx--date-picker__icon`                        | fill             | $brand-01 | #3d70b2 |
-| `.bx--date-picker__day.today::after`            | background-color | $brand-01 | #3d70b2 |
-| `.bx--date-picker__day.selected`                | border           | $brand-01 | #3d70b2 |
-| `.bx--date-picker__day.inRange`                 | background-color | $text-01  | #152935 |
+| Class                                           | Property         | SCSS      |
+| ----------------------------------------------- | ---------------- | --------- |
+| `.bx--date-picker__input`                       | background-color | $field-01 |
+| `.bx--date-picker__input`                       | border-bottom    | $ui-05    |
+| `.bx--date-picker__input`                       | color            | $text-01  |
+| `.bx--date-picker__input::placeholder`          | color            | $text-02  |
+| `.bx--date-picker__input.bx--text-input--light` | background-color | $field-02 |
+| `.bx--label`                                    | color            | $text-01  |
+| `.bx--date-picker__calendar`                    | background-color | $ui-01    |
+| `.bx--date-picker__day.selected`                | color            | $text-01  |
+| `.bx--date-picker__day.inRange`                 | background-color | $ui-02    |
+| `.bx--date-picker__icon`                        | fill             | $brand-01 |
+| `.bx--date-picker__day.today::after`            | background-color | $brand-01 |
+| `.bx--date-picker__day.selected`                | border           | $brand-01 |
+| `.bx--date-picker__day.inRange`                 | background-color | $text-01  |
 
 ![Example of a date picker](images/date-picker-style-1.png)
 _Date picker example using both $field-02 (top) and $field-01 (bottom)_
 
 ### States
 
-| Class                                                      | Property      | SCSS        | HEX     |
-| ---------------------------------------------------------- | ------------- | ----------- | ------- |
-| `.bx--date-picker__input:focus`                            | border-bottom | $brand-01   | #3d70b2 |
-| `.bx--date-picker__input[data-invalid]`                    | box-shadow    | $support-01 | #e0182d |
-| `.bx--form-requirement`                                    | color         | $support-01 | #e0182d |
-| `.bx--date-picker__input:focus ~ .bx--label`               | color         | $brand-01   | #3d70b2 |
-| `.bx--date-picker__input[data-invalid]:focus + .bx--label` | border-bottom | $support-01 | #e0182d |
-| `.bx--date-picker__input[data-invalid]:focus + .bx--label` | border-bottom | $support-01 | #e0182d |
+| Class                                                      | Property      | SCSS        |
+| ---------------------------------------------------------- | ------------- | ----------- |
+| `.bx--date-picker__input:focus`                            | border-bottom | $brand-01   |
+| `.bx--date-picker__input[data-invalid]`                    | box-shadow    | $support-01 |
+| `.bx--form-requirement`                                    | color         | $support-01 |
+| `.bx--date-picker__input:focus ~ .bx--label`               | color         | $brand-01   |
+| `.bx--date-picker__input[data-invalid]:focus + .bx--label` | border-bottom | $support-01 |
+| `.bx--date-picker__input[data-invalid]:focus + .bx--label` | border-bottom | $support-01 |
 
 **Active:** Placeholder text should remain when the user clicks into the text input and gets a cursor. Once the user starts typing the hint text is replaced with the user input text.
 
@@ -83,15 +82,6 @@ Labels should be set in sentence case, with only the first word in a phrase and 
   <div>
     <img src="images/date-picker-style-4.png" alt="Structure for simple and single date pickers"/>
   </div>
-  <div>
-    <img src="images/date-picker-style-5.png" alt="Spacing for simple and single date pickers"/>
-  </div>
-  <div>
-    <img src="images/date-picker-style-6.png" alt="Structure for simple and single date pickers"/>
-  </div>
-  <div>
-    <img src="images/date-picker-style-7.png" alt="Spacing for simple and single date pickers"/>
-  </div>
 </div>
 
 _Structure and spacing for simple and single date pickers | px / rem_
@@ -128,9 +118,6 @@ There are two types of time pickers; a 12-hour and 24-hour time picker. The 12-h
 <div class="image-grid">
   <div>
     <img src="images/time-picker-style-1.png" alt="Structure for a time picker"/>
-  </div>
-  <div>
-    <img src="images/time-picker-style-2.png" alt="Spacing for a time picker"/>
   </div>
 </div>
 

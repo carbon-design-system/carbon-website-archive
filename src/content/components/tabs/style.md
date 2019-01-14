@@ -6,12 +6,12 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                                               | Property      | SCSS                | HEX     |
-| --------------------------------------------------- | ------------- | ------------------- | ------- |
-| `.bx--tabs__nav-item--selected .bx--tabs__nav-link` | color         | $brand-01           | #3d70b2 |
-| `.bx--tabs__nav-item--selected`                     | border-bottom | $brand-01           | #3d70b2 |
-| `.bx--tabs__nav-link`                               | color         | $text-01            | #152935 |
-| `.bx--tabs__nav-link:hover`                         | color         | $hover-primary-text | #294c86 |
+| Class                                               | Property      | SCSS                |
+| --------------------------------------------------- | ------------- | ------------------- |
+| `.bx--tabs__nav-item--selected .bx--tabs__nav-link` | color         | $brand-01           |
+| `.bx--tabs__nav-item--selected`                     | border-bottom | $brand-01           |
+| `.bx--tabs__nav-link`                               | color         | $text-01            |
+| `.bx--tabs__nav-link:hover`                         | color         | $hover-primary-text |
 
 ## Typography
 

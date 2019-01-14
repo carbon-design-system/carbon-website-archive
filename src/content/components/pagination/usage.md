@@ -1,6 +1,6 @@
 ---
 title: Pagination
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## Usage
