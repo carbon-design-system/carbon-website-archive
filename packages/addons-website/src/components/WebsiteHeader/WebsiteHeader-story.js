@@ -1,7 +1,6 @@
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import React from 'react';
-import { Fade16 } from '@carbon/icons-react';
 
 import {
   SkipToContent,
@@ -22,7 +21,7 @@ storiesOf('Website Header', module).add(
   'Website Header',
   () => (
     <>
-        <Header className="bx--header--website">
+      <Header className="bx--header--website">
         <SkipToContent />
         <HeaderMenuButton
             aria-label="Open menu"
@@ -42,14 +41,13 @@ storiesOf('Website Header', module).add(
             <HeaderMenuItem href="#">Support</HeaderMenuItem>
           </HeaderNavigation>
       </Header>
-      <SideNav aria-label="Side navigation">
+      <SideNav aria-label="Side navigation" className="bx--side-nav--website bx--side-nav--website--with-header-nav bx--side-nav--open">
       <SideNavItems>
        <SideNavMenu title="Manage">
           <SideNavMenuItem href="#" aria-current="page">Link 1</SideNavMenuItem>
           <SideNavMenuItem href="#">Link 2</SideNavMenuItem>
           <SideNavMenuItem href="#">Link 3</SideNavMenuItem>
         </SideNavMenu>
-        
         <SideNavLink href="#" aria-current="page">Current</SideNavLink>
         <SideNavLink href="#">Docs</SideNavLink>
         <SideNavLink href="#">Support</SideNavLink>

@@ -19,3 +19,11 @@ command instead:
 ```bash
 yarn add @carbon/addons-website
 ```
+
+# Development
+
+```bash
+yarn storybook
+```
+
+_A preview url will be generated when opening a pull requrest at `/storybook` for easier review_

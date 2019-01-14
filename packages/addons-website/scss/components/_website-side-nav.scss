@@ -1,0 +1,17 @@
+@import '../prefix';
+
+.#{$prefix}--side-nav--website--with-header-nav {
+    width: 0;
+
+    @include breakpoint('lg') {
+        display: none;
+    }
+}
+
+.#{$prefix}--side-nav--website--with-header-nav.#{$prefix}--side-nav.#{$prefix}--side-nav--open {
+    width: 16rem;
+}
+
+.#{$prefix}--side-nav--website--with-header-nav .#{$prefix}--side-nav__footer {
+    display: none;
+}
