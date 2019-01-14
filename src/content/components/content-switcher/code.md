@@ -1,6 +1,6 @@
 ---
 title: Content Switcher
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 **Content switcher** manipulates the content shown following an exclusive or “either/or” pattern.
