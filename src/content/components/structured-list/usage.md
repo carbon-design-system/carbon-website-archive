@@ -1,6 +1,6 @@
 ---
 title: Structured list
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## Content
