@@ -279,6 +279,10 @@ This will render the following set of examples:
 
 - `<component-overview>`
 
+**Color Token Table** (content pulled from data/guidelines/color-tokens.js)
+
+- `<color-token-table>
+
 ## Component Page Components:
 
 ```

@@ -12,6 +12,8 @@ import { CopyToClipboard } from 'react-copy-to-clipboard/lib/Component';
 
 import colorTokens from '../../data/guidelines/color-tokens';
 
+import { themes } from '@carbon/themes';
+
 export default class ColorTokenTable extends React.Component {
   static propTypes = {};
 
@@ -27,21 +29,34 @@ export default class ColorTokenTable extends React.Component {
 
   renderValue = (token, tokenInfo) => {
     const currentTheme = this.state.theme;
-    const value = tokenInfo.value;
+    console.log(themes);
+    let newFormattedToken = token.replace('$', '');
+    newFormattedToken = newFormattedToken.split('-');
+    newFormattedToken = `${newFormattedToken[0]}${newFormattedToken[1]
+      .charAt(1)
+      .toUpperCase() + newFormattedToken[1].substring(1)}`;
+    console.log(newFormattedToken);
+    const formattedToken = token.replace('$', '').replace('-', '');
+    // const value = tokenInfo.value;
     return (
       <div className="color-token-value">
         <ul>
-          <li>{value[currentTheme].name}</li>
+          {/* <li>{value[currentTheme].name}</li> */}
           <li>—</li>
-          <li>{value[currentTheme].hex}</li>
+          <li>{themes[currentTheme][formattedToken]}</li>
         </ul>
         <div>
           <div
             className="color-token-value__block"
-            style={{ backgroundColor: value[currentTheme].hex }}
+            style={{
+              backgroundColor: themes[currentTheme][formattedToken],
+              border:
+                themes[currentTheme][formattedToken] === '#ffffff' &&
+                '1px solid #BEBEBE',
+            }}
           />
           <OverflowMenu floatingMenu={false}>
-            <CopyToClipboard text={value[currentTheme].hex}>
+            <CopyToClipboard text={themes[currentTheme][formattedToken]}>
               <OverflowMenuItem itemText="Copy hex" />
             </CopyToClipboard>
             <CopyToClipboard text={token}>
@@ -53,17 +68,17 @@ export default class ColorTokenTable extends React.Component {
     );
   };
 
-  renderToken = (token, tokenInfo) => {
+  renderToken = (token, tokenInfo, key) => {
     const roles = tokenInfo.role.map((role, i) => {
       return (
-        <li>
+        <li key={i}>
           {role}
           {i !== tokenInfo.role.length - 1 && ';'}
         </li>
       );
     });
     return (
-      <tr>
+      <tr key={key}>
         <td>
           <code>{token}</code>
         </td>
@@ -83,9 +98,9 @@ export default class ColorTokenTable extends React.Component {
             className="color-token-table__theme-switcher"
             onChange={this.switchTheme}>
             <Switch name="white" text="White" />
-            <Switch name="gray-10" text="Gray 10" />
-            <Switch name="gray-100" text="Gray 100" />
-            <Switch name="gray-90" text="Gray 90" />
+            <Switch name="g10" text="Gray 10" />
+            <Switch name="g100" text="Gray 100" />
+            <Switch name="g90" text="Gray 90" />
           </ContentSwitcher>
         </div>
         <div className="ibm--col-lg-7 ibm--offset-lg-4">
@@ -101,8 +116,13 @@ export default class ColorTokenTable extends React.Component {
               </tr>
             </thead>
             <tbody>
-              {Object.keys(colorTokens).map(token => {
-                return this.renderToken(token, colorTokens[token]);
+              {Object.keys(colorTokens['core-tokens']).map((token, i) => {
+                console.log(colorTokens['core-tokens'][token]);
+                return this.renderToken(
+                  token,
+                  colorTokens['core-tokens'][token],
+                  i
+                );
               })}
             </tbody>
           </table>
@@ -120,8 +140,12 @@ export default class ColorTokenTable extends React.Component {
               </tr>
             </thead>
             <tbody>
-              {Object.keys(colorTokens).map(token => {
-                return this.renderToken(token, colorTokens[token]);
+              {Object.keys(colorTokens['core-tokens']).map((token, i) => {
+                return this.renderToken(
+                  token,
+                  colorTokens['core-tokens'][token],
+                  i
+                );
               })}
             </tbody>
           </table>
@@ -139,9 +163,15 @@ export default class ColorTokenTable extends React.Component {
               </tr>
             </thead>
             <tbody>
-              {Object.keys(colorTokens).map(token => {
-                return this.renderToken(token, colorTokens[token]);
-              })}
+              {Object.keys(colorTokens['interaction-tokens']).map(
+                (token, i) => {
+                  return this.renderToken(
+                    token,
+                    colorTokens['interaction-tokens'][token],
+                    i
+                  );
+                }
+              )}
             </tbody>
           </table>
         </div>
