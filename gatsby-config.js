@@ -63,10 +63,11 @@ module.exports = {
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
               maxWidth: 1024,
-              linkImagesToOriginal: true,
+              linkImagesToOriginal: false,
               backgroundColor: 'transparent',
             },
           },
+          `gatsby-remark-unwrap-images`,
           'gatsby-remark-copy-linked-files',
           {
             resolve: 'gatsby-remark-embedded-codesandbox',

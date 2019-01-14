@@ -69,15 +69,19 @@ button,
   .image-component + p > em {
     @include type-style('body-short-01');
     color: $text-02;
+    font-style: normal;
   }
 
   // Images on component pages
   .image-component {
     background: $ui-02;
-    //max-width: 38rem;
     display: flex;
     justify-content: center;
     padding: $spacing-md 0;
+
+    @include breakpoint('lg') {
+      margin-left: 25%!important;
+    }
 
     .gatsby-resp-image-link,
     > img {
@@ -137,6 +141,8 @@ button,
 
 //images 
 .gatsby-resp-image-wrapper {
+  background: $ui-02;
+  
   @include breakpoint('lg') {
     margin-left: 25%!important;
   }

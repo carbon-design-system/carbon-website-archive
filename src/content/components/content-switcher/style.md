@@ -36,8 +36,5 @@ Content switchers must have at least two options for the user to choose from. Ea
 | `.bx--content-switcher-btn:not(:first-of-type)` </br> `.bx--content-switcher-btn` | border, border-left, </br> border-right | 1px      | -             |
 | `.bx--content-switcher-btn`                                                       | padding-left, padding-right             | 32 / 2   | $spacing-xl   |
 
-<div class="image-component">
-    <img src="images/content-switcher-style-1.png" alt="Content switcher structure and spacing measurements" />
-</div>
-    
+ ![Content switcher structure and spacing measurements](images/content-switcher-style-1.png)   
 _Structure and spacing measurements for content switcher | px / rem_
