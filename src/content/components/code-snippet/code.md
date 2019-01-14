@@ -1,6 +1,6 @@
 ---
 title: Code Snippet
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 **Code snippets** are small blocks of reusable code that can be inserted in a code file.
