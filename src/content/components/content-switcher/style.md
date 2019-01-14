@@ -6,13 +6,13 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                                                            | Property                  | SCSS           | HEX     |
-| ---------------------------------------------------------------- | ------------------------- | -------------- | ------- |
-| `.bx--content-switcher-btn`                                      | border                    | $brand-01      | #3d70b2 |
-| `.bx--content-switcher-btn`                                      | color                     | $brand-01      | #3d70b2 |
-| `.bx--content-switcher-btn.bx--content-switcher--selected`       | background-color          | $brand-01      | #3d70b2 |
-| `.bx--content-switcher-btn.bx--content-switcher--selected`       | color                     | $inverse-01    | #ffffff |
-| `.bx--content-switcher-btn.bx--content-switcher--selected:hover` | background & border color | $hover-primary | #30588c |
+| Class                                                            | Property                  | SCSS           |
+| ---------------------------------------------------------------- | ------------------------- | -------------- |
+| `.bx--content-switcher-btn`                                      | border                    | $brand-01      |
+| `.bx--content-switcher-btn`                                      | color                     | $brand-01      |
+| `.bx--content-switcher-btn.bx--content-switcher--selected`       | background-color          | $brand-01      |
+| `.bx--content-switcher-btn.bx--content-switcher--selected`       | color                     | $inverse-01    |
+| `.bx--content-switcher-btn.bx--content-switcher--selected:hover` | background & border color | $hover-primary |
 
 ### States
 
