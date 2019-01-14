@@ -6,11 +6,11 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                            | Property | SCSS     | HEX     |
-| -------------------------------- | -------- | -------- | ------- |
-| `.bx--loading__svg`              | stroke   | $ui-05   | #152935 |
-| `.bx--inline-loading__checkmark` | stroke   | $ui-05   | #5a6872 |
-| `.bx--inline-loading__text`      | color    | $text-01 | #152935 |
+| Class                            | Property | SCSS     |
+| -------------------------------- | -------- | -------- |
+| `.bx--loading__svg`              | stroke   | $ui-05   |
+| `.bx--inline-loading__checkmark` | stroke   | $ui-05   |
+| `.bx--inline-loading__text`      | color    | $text-01 |
 
 ## Structure
 
