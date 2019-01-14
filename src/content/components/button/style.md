@@ -27,30 +27,6 @@ tabs: ['Code', 'Usage', 'Style']
   <div>
     <img src="images/button-style-1.png" alt="Example of a normal primary button"/>
   </div>
-  <div>
-    <img src="images/button-style-2.png" alt="Example of a primary button on hover"/>
-  </div>
-  <div>
-    <img src="images/button-style-3.png" alt="Example of a disabled primary button"/>
-  </div>
-  <div>
-    <img src="images/button-style-4.png" alt="Example of a secondary button"/>
-  </div>
-  <div>
-    <img src="images/button-style-5.png" alt="Example of a secondary button on hover"/>
-  </div>
-  <div>
-    <img src="images/button-style-6.png" alt="Example of a disabled secondary button"/>
-  </div>
-  <div>
-    <img src="images/button-style-15.png" alt="Example of a ghost button"/>
-  </div>
-  <div>
-    <img src="images/button-style-16.png" alt="Example of a ghost button on hover"/>
-  </div>
-  <div>
-    <img src="images/button-style-17.png" alt="Example of a disabled ghost button"/>
-  </div>
 </div>
 
 _Primary, secondary, and ghost button state examples_
@@ -80,29 +56,11 @@ A button cannot have any element or text within 16 pixels / 1 rem of its borders
   <div>
     <img src="images/button-style-7.png" alt="Structure for a primary button"/>
   </div>
-  <div>
-    <img src="images/button-style-8.png" alt="Structure for a small primary button"/>
-  </div>
 </div>
 
 _Structure measurements for small and regular primary button | px / rem_
 
 <div class="image-grid">
-  <div>
-    <img src="images/button-style-9.png" alt="Spacing for primary button"/>
-  </div>
-  <div>
-    <img src="images/button-style-10.png" alt="Spacing for small primary button"/>
-  </div>
-  <div>
-    <img src="images/button-style-11.png" alt="External button spacing"/>
-  </div>
-  <div>
-    <img src="images/button-style-12.png" alt="Internal spacing for a button with glyph"/>
-  </div>
-  <div>
-    <img src="images/button-style-13.png" alt="Ghost button spacing"/>
-  </div>
   <div>
     <img src="images/button-style-14.png" alt="Small ghost button spacing"/>
   </div>
