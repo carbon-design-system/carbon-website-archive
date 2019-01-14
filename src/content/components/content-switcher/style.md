@@ -1,6 +1,6 @@
 ---
 
-title: Content switcher
+title: Content Switcher
 tabs: ['Code', 'Usage', 'Style']
 ---
 
