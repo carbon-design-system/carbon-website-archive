@@ -6,12 +6,12 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                                   | Property         | SCSS      | HEX     |
-| --------------------------------------- | ---------------- | --------- | ------- |
-| `.bx--radio-button__appearance`         | border           | $ui-05    | #5a6872 |
-| `.bx--radio-button__appearance`         | background-color | $ui-01    | #ffffff |
-| `.bx--radio-button__appearance:checked` | border           | $brand-01 | #3d70b2 |
-| `.bx--radio-button__appearance::before` | dot              | $brand-01 | #3d70b2 |
+| Class                                   | Property         | SCSS      |
+| --------------------------------------- | ---------------- | --------- |
+| `.bx--radio-button__appearance`         | border           | $ui-05    |
+| `.bx--radio-button__appearance`         | background-color | $ui-01    |
+| `.bx--radio-button__appearance:checked` | border           | $brand-01 |
+| `.bx--radio-button__appearance::before` | dot              | $brand-01 |
 
 ## Typography
 
