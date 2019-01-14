@@ -6,13 +6,13 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                      | Property   | SCSS        | HEX     |
-| -------------------------- | ---------- | ----------- | ------- |
-| `.bx--label`               | color      | $text-01    | #152935 |
-| `.bx--label-description`   | color      | $text-02    | #5a6872 |
-| `.bx--file-filename`       | color      | $text-01    | #152935 |
-| `.bx--file__selected-file` | background | $ui-01      | #ffffff |
-| `.bx--file-close`          | fill       | $inverse-01 | #152935 |
+| Class                      | Property   | SCSS        |
+| -------------------------- | ---------- | ----------- |
+| `.bx--label`               | color      | $text-01    |
+| `.bx--label-description`   | color      | $text-02    |
+| `.bx--file-filename`       | color      | $text-01    |
+| `.bx--file__selected-file` | background | $ui-01      |
+| `.bx--file-close`          | fill       | $inverse-01 |
 
 ## Typography
 
@@ -49,8 +49,3 @@ The following specs are not built into the File Uploader component but are recom
 | `.bx--file-close` | height, width             | 16 / 1   | -             |
 | `.bx--file-close` | margin-left, margin-right | 16 / 1   | $spacing-md   |
 
-<div class="image-component">
-    <img src="images/file-uploader-style-2.png" alt="Structure and spacing measurements for File Uploader" />
-</div>
-
-_Recommended structure and spacing measurements for File Uploader | px / rem_
