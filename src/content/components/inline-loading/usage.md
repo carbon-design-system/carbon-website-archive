@@ -1,6 +1,6 @@
 ---
 title: Inline Loading
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## General
