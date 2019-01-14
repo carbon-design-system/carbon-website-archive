@@ -6,22 +6,22 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                                                          | Property                 | SCSS             | HEX                    |
-| -------------------------------------------------------------- | ------------------------ | ---------------- | ---------------------- |
-| `.bx--btn--primary`                                            | text color               | $inverse-01      | #ffffff                |
-| `.bx--btn--primary` </br> `.bx--btn--secondary`                | background-color, border | $brand-01        | #3d70b2                |
-| `.bx--btn--primary:hover`                                      | background-color         | $hover-primary   | #30588c                |
-| `.bx--btn--primary:disabled`                                   | opacity                  | $brand-01        | #3d70b2 at 50% opacity |
-| `.bx--btn--secondary`                                          | text color               | $brand-01        | #3d70b2                |
-| `.bx--btn--secondary`                                          | border                   | $brand-01        | #3d70b2                |
-| `.bx--btn--secondary:hover`                                    | background-color         | $hover-secondary | #3d70b2                |
-| `.bx--btn--secondary:hover`                                    | text color               | $inverse-01      | #ffffff                |
-| `.bx--btn--tertiary`                                           | text color               | $inverse-01      | #ffffff                |
-| `.bx--btn--tertiary`                                           | background-color         | $ui-05           | #5a6872                |
-| `.bx--btn--tertiary:hover`                                     | background-color         | $ui-05           | #5a6872                |
-| `.bx--btn--danger--primary`</br> `.bx--btn--danger--secondary` | background-color         | $support-01      | #e0182d                |
-| `.bx--btn--danger--primary:hover`                              | background-color         | $hover-danger    | #bd1427                |
-| `.bx--btn--danger--secondary:hover`                            | border                   | $support-01      | #e0182d                |
+| Class                                                          | Property                 | SCSS             |
+| -------------------------------------------------------------- | ------------------------ | ---------------- |
+| `.bx--btn--primary`                                            | text color               | $inverse-01      |
+| `.bx--btn--primary` </br> `.bx--btn--secondary`                | background-color, border | $brand-01        |
+| `.bx--btn--primary:hover`                                      | background-color         | $hover-primary   |
+| `.bx--btn--primary:disabled`                                   | opacity                  | $brand-01        |
+| `.bx--btn--secondary`                                          | text color               | $brand-01        |
+| `.bx--btn--secondary`                                          | border                   | $brand-01        |
+| `.bx--btn--secondary:hover`                                    | background-color         | $hover-secondary |
+| `.bx--btn--secondary:hover`                                    | text color               | $inverse-01      |
+| `.bx--btn--tertiary`                                           | text color               | $inverse-01      |
+| `.bx--btn--tertiary`                                           | background-color         | $ui-05           |
+| `.bx--btn--tertiary:hover`                                     | background-color         | $ui-05           |
+| `.bx--btn--danger--primary`</br> `.bx--btn--danger--secondary` | background-color         | $support-01      |
+| `.bx--btn--danger--primary:hover`                              | background-color         | $hover-danger    |
+| `.bx--btn--danger--secondary:hover`                            | border                   | $support-01      |
 
 <div class="image-grid">
   <div>
