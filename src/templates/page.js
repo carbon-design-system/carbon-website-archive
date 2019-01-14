@@ -34,6 +34,7 @@ import {
 } from '../components/Homepage/Homepage';
 import { Tabs } from 'carbon-components-react';
 import { Tab } from 'carbon-components-react';
+import WebsiteTabs from '../components/WebsiteTabs';
 
 // Custom Markdown
 import {
@@ -56,11 +57,7 @@ function createElementCustom(component, props, children) {
     'div'; // Default to div
 
   // And return the formed component
-  return (
-    <Tag {...props}>
-      {children}
-    </Tag>
-  );
+  return <Tag {...props}>{children}</Tag>;
 }
 
 const renderAst = new rehypeReact({
@@ -96,6 +93,7 @@ const renderAst = new rehypeReact({
     'anchor-links': AnchorLinks,
     tabs: Tabs,
     tab: Tab,
+    'website-tabs': WebsiteTabs,
   },
 }).Compiler;
 

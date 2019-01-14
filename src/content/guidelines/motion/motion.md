@@ -9,14 +9,24 @@ Guidance coming soon
 
 <p>lorem ipsum dolor sit amet</p>
 
+## testing grid wrapper
+
+regular sentence lorem ipsum dolor sit amet
+
+<grid-wrapper col_lg="12" col_md="8" col_sm="4">inside grid wrapper! whoa</grid-wrapper>
+
+regular sentence lorem ipsum dolor sit amet
+
+## testing tabs
+
 <div className="ibm--row">
-<div className="ibm--col-lg-7 ibm--offset-lg-4">
+<div className="ibm--col-lg-12 ibm--offset-lg-4">
 <div className="website-tabs">
 <tabs><tab label="tab 1"><div>
 
 Content for first tab goes here.
 
-## testing markdown
+### testing markdown inside tabs
 
 well heck
 
@@ -38,6 +48,17 @@ Content for third tab goes here.
 </div>
 </div>
 
----
+## testing `website-tabs`
 
-<p>lorem ipsum dolor sit amet</p>
+<website-tabs>
+<tab label="tab 2"><div>
+
+Content for second tab goes here.
+
+</div></tab>
+<tab label="tab 2"><div>
+
+Content for second tab goes here.
+
+</div></tab>
+</website-tabs>
