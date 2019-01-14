@@ -56,6 +56,11 @@ button,
     //max-width: 38rem;
     line-height: 1.5;
     padding: 0 0 $spacing-lg;
+
+    &:empty {
+      padding: 0;
+      margin: 0;
+    }
   }
 
   // All em on Markdown pages after images and image grid
@@ -117,4 +122,11 @@ button,
 
 .bx--platform-header {
   z-index: 9999;
+}
+
+// iframe
+.gatsby-resp-iframe-wrapper {
+    @include breakpoint('lg') {
+      margin-left: 25%;
+    }
 }
