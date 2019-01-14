@@ -1,6 +1,6 @@
 ---
 
-title: Date picker
+title: Date Picker
 tabs: ['Code', 'Usage', 'Style']
 ---
 
