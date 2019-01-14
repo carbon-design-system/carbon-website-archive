@@ -1,6 +1,6 @@
 ---
 title: Date Picker
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## Usage
