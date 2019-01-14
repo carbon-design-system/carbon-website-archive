@@ -30,6 +30,7 @@ body {
 .bx--header {
   z-index: 9999;
   background-color: $ui-05;
+  border-bottom: 1px solid $ibm-colors__gray--80;
 }
 
 .bx--header__menu-trigger {

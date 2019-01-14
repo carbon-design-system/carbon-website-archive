@@ -99,12 +99,33 @@
 // SIDE NAV overrides
 //===================
 
+.bx--side-nav__submenu:focus,
+a.bx--side-nav__link:focus {
+  outline: 2px solid $brand-01;
+  outline-offset: -2px;
+}
+
+.bx--side-nav {
+  border-top: none;
+  border-right: 1px solid $ibm-colors__gray--80;
+}
+
+.bx--side-nav.side-nav--light {
+  background-color: $ui-02;
+  border-right: none;
+}
+
 .bx--side-nav__navigation {
+  padding-top: 1rem;
   background-color: $ui-05;
 }
 
 .side-nav--light .bx--side-nav__navigation {
   background-color: $ui-02;
+}
+
+.side-nav .bx--side-nav__icon > svg {
+  fill: $active-01;
 }
 
 .side-nav--light .bx--side-nav__icon > svg {
@@ -151,6 +172,10 @@
 .bx--side-nav__item:not(.bx--side-nav__item--active):hover > .bx--side-nav__link {
   background-color: #353535;
   color: $ui-01;
+
+  .bx--side-nav__icon svg {
+    fill: $ui-01;
+  }
 }
 
 .side-nav--light .bx--side-nav__item:not(.bx--side-nav__item--active):hover > .bx--side-nav__submenu,
@@ -171,6 +196,14 @@
   &:hover {
     background-color: #353535;
     color: $ui-01;
+
+    .bx--side-nav__icon svg {
+      fill: $ui-01;
+    }
+  }
+
+  .bx--side-nav__icon svg {
+    fill: $active-01;
   }
 }
 
@@ -181,6 +214,14 @@
   &:hover {
     background-color: #e5e5e5;
     color: $text-01;
+
+    .bx--side-nav__icon svg {
+      fill: $text-01;
+    }
+  }
+
+  .bx--side-nav__icon svg {
+    fill: $text-02;
   }
 }
 
