@@ -1,6 +1,6 @@
 ---
 
-title: Number Input
+title: Number input
 tabs: ['Code', 'Usage', 'Style']
 ---
 
