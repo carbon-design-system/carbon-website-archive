@@ -4,6 +4,22 @@ title: Common Actions
 
 **Common actions** are frequently used actions that appear multiple times across different components and workflows. For platform consistency, these actions should only be applied in the ways described below.
 
+<anchor-links>
+<ul>
+    <li><a href="#cancel">Cancel</a></li>
+    <li><a href="#clear">Clear</a></li>
+    <li><a href="#close">Close</a></li>
+    <li><a href="#delete">Delete</a></li>
+    <li><a href="#remove">Remove</a></li>
+    <li><a href="#reset">Reset</a></li>
+    <li><a href="#add">Add</a></li>
+    <li><a href="#copy">Copy</a></li>
+    <li><a href="#edit">Edit</a></li>
+    <li><a href="#next">Next</a></li>
+    <li><a href="#refresh">Refresh</a></li>
+</ul>
+</anchor-links>
+
 ## Regressive actions
 
 ### Cancel
