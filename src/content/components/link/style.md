@@ -6,16 +6,16 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class       | Property | SCSS      | HEX     |
-| ----------- | -------- | --------- | ------- |
-| `.bx--link` | color    | $brand-01 | #3d70b2 |
+| Class       | Property | SCSS      |
+| ----------- | -------- | --------- |
+| `.bx--link` | color    | $brand-01 |
 
 ### States
 
-| Class                             | Property | SCSS                | HEX           |
-| --------------------------------- | -------- | ------------------- | ------------- |
-| `.bx--link:hover`                 | color    | $hover-primary-text | #294c86       |
-| `.bx--link[aria-disabled='true']` | color    | $brand-01           | #3d70b2 @ 50% |
+| Class                             | Property | SCSS                |
+| --------------------------------- | -------- | ------------------- |
+| `.bx--link:hover`                 | color    | $hover-primary-text |
+| `.bx--link[aria-disabled='true']` | color    | $brand-01           |
 
 <div class="image-component">
     <img src="images/link-style-1.png" alt="Example of normal, hover, and disabled link states" />
