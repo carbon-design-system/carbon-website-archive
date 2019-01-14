@@ -1,6 +1,6 @@
 ---
 title: Number Input
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 **Number inputs** are similar to text inputs, but contain controls used to increase or decrease an incremental value.
