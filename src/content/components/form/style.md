@@ -1,5 +1,4 @@
 ---
-label: Component
 title: Form
 tabs: ['Code', 'Usage', 'Style']
 ---
