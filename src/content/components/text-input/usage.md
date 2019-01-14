@@ -1,5 +1,5 @@
 ---
-title: Text input
+title: Text Input
 tabs: ['Code', 'Usage', 'Style']
 ---
 
