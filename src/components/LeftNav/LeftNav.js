@@ -40,10 +40,9 @@ export default class LeftNav extends React.Component {
 
     const { isOpen, isFinal } = this.props;
 
-    const classNames = classnames('side-nav', {
-      'side-nav__closed': !isOpen,
-      'side-nav__closed--final': isFinal && !isOpen,
-    });
+
+
+
 
     const classNamesClickToClose = classnames({
       'side-nav-click-to-close': true,
@@ -55,6 +54,13 @@ export default class LeftNav extends React.Component {
       <Location>
         {({ location }) => {
           const navItems = this.renderNavItems(navigation, location);
+
+          const classNames = classnames('side-nav', {
+            'side-nav__closed': !isOpen,
+            'side-nav__closed--final': isFinal && !isOpen,
+            'side-nav--light' : location.pathname !== '/'
+          });
+
           return (
             <>
               <div

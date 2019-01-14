@@ -15,7 +15,13 @@
 .bx--side-nav__divider {
   display: block;
   margin: rem(64px) 1rem 0;
+  border-style: solid;
+  border-bottom: none;
   border-color: $ibm-colors__gray--80;
+}
+
+.side-nav--light .bx--side-nav__divider {
+  border-color: $ui-03;
 }
 
 .side-nav .bx--side-nav__item {
@@ -97,12 +103,16 @@
   background-color: $ui-05;
 }
 
-.bx--side-nav__items {
-  // flex: 0;
+.side-nav--light .bx--side-nav__navigation {
+  background-color: $ui-02;
+}
+
+.side-nav--light .bx--side-nav__icon > svg {
+  fill: $text-02;
 }
 
 .bx--side-nav .bx--side-nav__submenu[aria-haspopup='true'],
-.bx--side-nav__item > a.bx--side-nav__link {
+.bx--side-nav__item > a.bx--side-nav__link  {
   @include type-style('heading-01');
   color: $active-01;
 }
@@ -111,13 +121,29 @@
   color: $active-01;
 }
 
+.bx--side-nav.side-nav--light .bx--side-nav__item .bx--side-nav__submenu[aria-haspopup='true'],
+.side-nav--light .bx--side-nav__item > a.bx--side-nav__link,
+.bx--side-nav.side-nav--light a.bx--side-nav__link > .bx--side-nav__link-text
+ {
+  color: $text-02;
+}
+
 .bx--side-nav a.bx--side-nav__link:hover > .bx--side-nav__link-text,
 .bx--side-nav a.bx--side-nav__link[aria-current='page'] > .bx--side-nav__link-text {
   color: $ui-01;
 }
 
+.bx--side-nav.side-nav--light a.bx--side-nav__link:hover > .bx--side-nav__link-text,
+.bx--side-nav.side-nav--light a.bx--side-nav__link[aria-current='page'] > .bx--side-nav__link-text {
+  color: $text-01;
+}
+
 .bx--side-nav__item:not(.bx--side-nav__item--active):hover {
   background-color: $ui-05;
+}
+
+.side-nav--light .bx--side-nav__item:not(.bx--side-nav__item--active):hover {
+  background-color: $ui-02;
 }
 
 .bx--side-nav__item:not(.bx--side-nav__item--active):hover > .bx--side-nav__submenu,
@@ -125,6 +151,17 @@
 .bx--side-nav__item:not(.bx--side-nav__item--active):hover > .bx--side-nav__link {
   background-color: #353535;
   color: $ui-01;
+}
+
+.side-nav--light .bx--side-nav__item:not(.bx--side-nav__item--active):hover > .bx--side-nav__submenu,
+.side-nav--light .bx--side-nav__menu[role='menu'] a.bx--side-nav__link[role='menuitem']:not(.bx--side-nav__link--current):not([aria-current='page']):hover,
+.side-nav--light .bx--side-nav__item:not(.bx--side-nav__item--active):hover > .bx--side-nav__link {
+  background-color: #e5e5e5;
+  color: $text-01;
+
+  .bx--side-nav__icon svg {
+    fill: $text-01;
+  }
 }
 
 .bx--side-nav .bx--side-nav__item .bx--side-nav__submenu[aria-expanded="true"] {
@@ -135,6 +172,26 @@
     background-color: #353535;
     color: $ui-01;
   }
+}
+
+.bx--side-nav.side-nav--light .bx--side-nav__item .bx--side-nav__submenu[aria-expanded="true"] {
+  background-color: $ui-02;
+  color: $text-02;
+
+  &:hover {
+    background-color: #e5e5e5;
+    color: $text-01;
+  }
+}
+
+.bx--side-nav a.bx--side-nav__link[aria-current='page'],
+.bx--side-nav__menu[role='menu'] a.bx--side-nav__link--current, .bx--side-nav__menu[role='menu'] a.bx--side-nav__link[aria-current='page'] {
+  background-color: $ibm-colors__gray--80;
+}
+
+.bx--side-nav.side-nav--light a.bx--side-nav__link[aria-current='page'],
+.side-nav--light .bx--side-nav__menu[role='menu'] a.bx--side-nav__link--current,.side-nav--light .bx--side-nav__menu[role='menu'] a.bx--side-nav__link[aria-current='page'] {
+  background-color: $ui-03;
 }
 
 .bx--side-nav a.bx--side-nav__link,
@@ -151,9 +208,4 @@
 
 .bx--side-nav__submenu > .bx--side-nav__icon, a.bx--side-nav__link > .bx--side-nav__icon {
   margin-right: 0;
-}
-
-.bx--side-nav a.bx--side-nav__link[aria-current='page'],
-.bx--side-nav__menu[role='menu'] a.bx--side-nav__link--current, .bx--side-nav__menu[role='menu'] a.bx--side-nav__link[aria-current='page'] {
-  background-color: $ibm-colors__gray--80;
 }
