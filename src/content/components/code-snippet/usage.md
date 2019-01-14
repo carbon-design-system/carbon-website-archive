@@ -1,6 +1,6 @@
 ---
 title: Code Snippet
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## General
