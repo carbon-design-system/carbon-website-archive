@@ -14,6 +14,23 @@ tabs: ['Overview', 'Productive', 'Expressive']
 </ul>
 </anchor-links>
 
+## Get started
+
+<grid-wrapper col_lg="8" flex="true" bleed="true">
+<clickable-tile
+    title="Get the Latest IBM Plex™ download on GitHub"
+    href="https://github.com/IBM/plex/releases/latest"
+    type="resource"
+    >
+</clickable-tile>
+<clickable-tile
+    title="Visit the IBM Plex™ website to learn more"
+    href="https://www.ibm.com/plex/"
+    type="resource"
+    >
+</clickable-tile>
+</grid-wrapper>
+
 ## Type tokens and themes
 
 Carbon utilizes type tokens and themes to manage typrography.
@@ -82,7 +99,7 @@ Each weight has an italic style, which should only be used when you need to emph
 
 Type color should be carefully considered, with legibility and accessibility as paramount concerns. Keep type color neutral in running text. Use primary blue for primary actions.
 
-<grid-wrapper col_lg="8" flex="true"> 
+<grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true>
         <img src="images/typography_1.svg" alt="Neutral color for text">    
     </do-dont-example>

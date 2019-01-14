@@ -13,7 +13,19 @@ title: Layout
 </ul>
 </anchor-links>
 
+## Get started
+
 The 2x Grid is the geometric foundation of all the visual elements of IBM Design, from typography to columns, boxes, icons, and illustrations. It provides structure and guidance to creative decision-making.
+
+<grid-wrapper col_lg="8" flex="true" bleed="true">
+<clickable-tile
+    title="Carbon Design Kit"
+    href="https://github.com/ibm/carbon-design-kit"
+    type="resource"
+    >
+    <img src="images/sketch-icon.png" alt="Carbon Design Kit"  />
+</clickable-tile>
+</grid-wrapper>
 
 ## Mini Unit
 
@@ -45,6 +57,8 @@ Columns and rows create key lines that are essential for visual rhythm, especial
 
 ![grid columns](images/2x_grid_columns_new.png)
 
+#### Fluid grid
+
 A [fluid grid](#fluid-grid) divides space by twos. This division is immediately evident in the 2x column structure. Within a breakpoint, the column count is constant and unit size scales with screen size. Choose a column count by starting with one, then divide by two as needed:
 
 | Fluid Grid Columns |
@@ -61,9 +75,13 @@ For dense content, use Mini Units for further alignment and spatial guidance.
 
 ![grid customization](images/grid_customization.png)
 
+#### Fixed grid
+
 A [fixed grid](#fixed-boxes) starts with a fixed unit size from the [sizing scale](#sizing-scale), then tiles and wraps as needed, like text. To employ the 2x concept, multiply box sizes by two and mix them together to build your layout.
 
 When tiling fixed boxes, the column count is not known in advance, but a grid emerges visually due to the use of a consistent sizing scale. On breakpoint boundaries, fixed sizing scales match column sizes.
+
+#### Hybrid grid
 
 [Hybrid grids](#hybrid) are also frequent in practice, and hybrid boxes have properties of both.
 
