@@ -4,7 +4,6 @@ title: Common Actions
 
 **Common actions** are frequently used actions that appear multiple times across different components and workflows. For platform consistency, these actions should only be applied in the ways described below.
 
-<b>Regressive Actions</b>
 <anchor-links>
 <ul>
     <li><a href="#cancel">Cancel</a></li>
@@ -13,11 +12,6 @@ title: Common Actions
     <li><a href="#delete">Delete</a></li>
     <li><a href="#remove">Remove</a></li>
     <li><a href="#reset">Reset</a></li>
-</ul>
-</anchor-links>
-<b>Progressive Actions</b>
-<anchor-links>
-<ul>
     <li><a href="#add">Add</a></li>
     <li><a href="#copy">Copy</a></li>
     <li><a href="#edit">Edit</a></li>
