@@ -1,5 +1,4 @@
 ---
-label: Component
 title: Inline Loading
 tabs: ['Code', 'Usage', 'Style']
 ---
