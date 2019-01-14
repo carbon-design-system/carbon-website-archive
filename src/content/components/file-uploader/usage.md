@@ -1,6 +1,6 @@
 ---
 title: File Uploader
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## General
