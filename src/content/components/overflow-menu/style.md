@@ -1,6 +1,6 @@
 ---
 
-title: Overflow Menu
+title: Overflow menu
 tabs: ['Code', 'Usage', 'Style']
 ---
 
