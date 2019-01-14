@@ -1,6 +1,7 @@
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import React from 'react';
+import { Launch16 } from '@carbon/icons-react';
 
 import {
   SideNav,
@@ -16,7 +17,7 @@ storiesOf('Website SideNav', module).add(
     <>
         <SideNav aria-label="Side navigation" className="bx--side-nav--website">
         <SideNavItems>
-        <SideNavMenu title="Manage">
+        <SideNavMenu title="Section header">
             <SideNavMenuItem href="#" aria-current="page">Link 1</SideNavMenuItem>
             <SideNavMenuItem href="#">Link 2</SideNavMenuItem>
             <SideNavMenuItem href="#">Link 3</SideNavMenuItem>
@@ -25,7 +26,19 @@ storiesOf('Website SideNav', module).add(
           <SideNavLink href="#" aria-current="page">Current</SideNavLink>
           <SideNavLink href="#">Docs</SideNavLink>
           <SideNavLink href="#">Support</SideNavLink>
-
+          <SideNavLink
+            icon={<Launch16 />}
+            href="javascript:void(0)"
+            className="side-nav__website-link">
+            External Link
+          </SideNavLink>
+          <SideNavLink
+            icon={<Launch16 />}
+            href="javascript:void(0)"
+            to="/resources#github"
+            className="side-nav__website-link">
+            External Link
+        </SideNavLink>
         </SideNavItems>
       </SideNav>
     </>
