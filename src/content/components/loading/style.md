@@ -6,11 +6,11 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                                  | Property         | SCSS         | HEX     |
-| -------------------------------------- | ---------------- | ------------ | ------- |
-| `.bx--loading__svg`                    | stroke           | $nav-05      | #00b4a0 |
-| `.bx--loading--small.bx--loading__svg` | stroke           | $ui-05       | #5a6872 |
-| `.bx--loading-overlay`                 | background-color | $ui-01 @ 60% | #ffffff |
+| Class                                  | Property         | SCSS         |
+| -------------------------------------- | ---------------- | ------------ |
+| `.bx--loading__svg`                    | stroke           | $nav-05      |
+| `.bx--loading--small.bx--loading__svg` | stroke           | $ui-05       |
+| `.bx--loading-overlay`                 | background-color | $ui-01 @ 60% |
 
 ## Structure
 
@@ -22,9 +22,6 @@ tabs: ['Code', 'Usage', 'Style']
 <div class="image-grid">
   <div>
     <img src="images/loading-style-1.png" alt="Large spinner structure measurements"/>
-  </div>
-  <div>
-    <img src="images/loading-style-2.png" alt="Small spinner structure measurements"/>
   </div>
 </div>
 
