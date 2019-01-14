@@ -33,7 +33,7 @@ The Beta release of Carbon X will arrive with a completely revised Sketch design
 
 ## Tokens
 
-The **type** token architecure has been redesigned for better clarity and flexibility in v10. More detailed guidance on migrating to the new type tokens will be available in early 2019.
+The **type** token architecture has been redesigned for better clarity and flexibility in v10. More detailed guidance on migrating to the new type tokens will be available in early 2019.
 
 The **color** token architecture for v10 is based on the v9 architecture, with some minor updates for the new design language. Carbon v9 users will see automatic, non-breaking color updates when they upgrade to v10.
 
