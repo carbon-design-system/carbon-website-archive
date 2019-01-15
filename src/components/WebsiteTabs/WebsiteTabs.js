@@ -10,12 +10,8 @@ import classnames from 'classnames';
 
 export default class WebsiteTabs extends React.Component {
   render() {
-    let tabChildren = [];
-
-    this.props.children.forEach(child => {
-      if (child.type && child.type.displayName == 'Tab') {
-        tabChildren.push(child);
-      }
+    let tabChildren = this.props.children.filter(child => {
+      return child.type && child.type.displayName === 'Tab';
     });
 
     const classNames = classnames({
