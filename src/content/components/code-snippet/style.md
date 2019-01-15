@@ -44,6 +44,7 @@ Carbon has defined a set of accessible syntax colors. View an incontext [example
 || Spacing: icon & tooltip | 4 | 0.5| -->
 
 ![](images/code-snippet-style-1.png)
+
 _Structure and spacing measurements for code snippet | px / rem_
 
 ### Multi-line code snippet
@@ -58,7 +59,8 @@ _Structure and spacing measurements for code snippet | px / rem_
 | `.bx--snippet--multi`                        | padding-left                | 24 / 1.5                          | $spacing-lg   |
 | `.bx--snippet__icon`                         | height, width               | 16 / 1                            | -             |
 
-![](images/code-snippet-style-2.png)
+![Structure and spacing measurements for multi-line snippet](images/code-snippet-style-2.png)
+
 _Structure and spacing measurements for multi-line snippet | px / rem_
 
 ### Inline code snippet
@@ -69,8 +71,6 @@ _Structure and spacing measurements for multi-line snippet | px / rem_
 | `.bx--snippet--inline`      | border-radius               | 4                       | -             |
 | `.bx--snippet--inline code` | padding-right, padding-left | 8 / 0.5                 | $spacing-xs   |
 
-<div class="image-component">
-    <img src="images/code-snippet-style-3.png" alt="" />
-</div>
+![Structure and spacing measurements for inline snippet](images/code-snippet-style-3.png)
 
 _Structure and spacing measurements for inline code snippet | px / rem_
