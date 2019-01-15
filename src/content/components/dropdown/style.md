@@ -108,10 +108,7 @@ _Structure and spacing for Inline Dropdown | px / rem_
 
 Inline select has two different states, one for mouse hover and one for keyboard focus.
 
-<div class="image-component">
-    <img src="images/dropdown-style-6.png" alt="Hover and focus states for Inline Dropdown" />
-</div>
-
+![Hover and focus states for Inline Dropdown](images/dropdown-style-6.png)
 _Hover and focus states for Inline Dropdown_
 
 ## Filtering

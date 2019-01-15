@@ -40,10 +40,7 @@ _Examples of default and new selection Select states in $field-02 (right) and $f
 
 **Disabled:** Disabled state has a `.not-allowed` cursor hover and appears at 50% opacity.
 
-<div class="image-component">
-    <img src="images/select-style-3.png" alt="Open, disabled, and more information/help state examples for Select" />
-</div>
-
+![Open, disabled, and more information/help state examples for Select](images/select-style-3.png)
 _Examples of open, disabled, and help Select states_
 
 ## Typography
@@ -90,7 +87,7 @@ The following specs are not built into the Select component but are recommended 
 | `.bx--select-input` | height                      | 24 / 1.5 | -             |
 | `.bx--select-input` | padding-left, padding-right | 8 / 0.5  | $spacing-xs   |
 
-![Structure and spacing measurements for Small Select](images/select-style-4.png)  
+![Structure and spacing measurements for Small Select](images/select-style-4.png)
 _Structure and spacing measurements for Small Select | px / rem & examples of open and disabled Small Select states_
 
 ### Recommended
@@ -109,8 +106,5 @@ The following specs are not built into the Small Select component but are recomm
 | `.bx--select-input` | padding-right | 2.5 / 40 | $spacing-2xl  |
 | `.bx--select-input` | padding-left  | 16 / 1   | $spacing-md   |
 
-<div class="image-component">
-    <img src="images/select-style-6.png" alt="Structure and spacing measurements for Inline Select" />
-</div>
-
+![Structure and spacing measurements for Inline Select](images/select-style-6.png)
 _Structure and spacing measurements for Inline Select (focused) | px / rem_

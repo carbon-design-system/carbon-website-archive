@@ -19,7 +19,6 @@ Text inputs come in two different colors. The default input color is `$field-01`
 | `.bx--form__helper-text`       | color            | $text-02  |
 
 ![Default and user input states for Text Input in both field colors](images/text-input-style-1.png)
-
 _Examples of default and user-input states for Text Input in both $field-02 (left) and $field-01 (right)_
 
 ### States
@@ -64,8 +63,5 @@ Text Input labels and placeholder text should be set in sentence case, with only
 ![Structure and spacing measurements for Text Input](images/text-input-style-2.png)
 _Structure and spacing measurements for Text Input | px / rem_
 
-<div class="image-component">
-    <img src="images/text-input-style-3.png" alt="Active, help, error or disabled states for Text Input" />
-</div>
-
+![Active, help, error or disabled states for Text Input](images/text-input-style-3.png)
 _Examples of active, help, error and disabled Text Input states_

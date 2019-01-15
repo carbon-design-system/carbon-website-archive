@@ -63,33 +63,6 @@ button,
     }
   }
 
-  // All em on Markdown pages after images and image grid
-  .gatsby-resp-image-link + em,
-  .image-grid + p > em,
-  .image-component + p > em {
-    @include type-style('body-short-01');
-    color: $text-02;
-    font-style: normal;
-  }
-
-  // Images on component pages
-  .image-component {
-    background: $ui-02;
-    display: flex;
-    justify-content: center;
-    padding: $spacing-md 0;
-
-    @include breakpoint('lg') {
-      margin-left: 25%!important;
-    }
-
-    .gatsby-resp-image-link,
-    > img {
-      width: 50%;
-      height: 50%;
-    }
-  }
-
   // All links on Markdown pages but not inside component examples
   & > div > * > a,
   .page-table td a,
@@ -141,13 +114,32 @@ button,
 
 //images 
 .gatsby-resp-image-wrapper {
-  background: $ui-02;
-  
   @include breakpoint('lg') {
-    margin-left: 25%!important;
+    left: -1rem; //to align on grid
   }
 }
 
 .ibm--row .gatsby-resp-image-wrapper { 
   margin-left: auto!important;
+}
+
+// All em on Markdown pages after images and image grid
+.gatsby-resp-image-link + em,
+.gatsby-resp-image-wrapper + em,
+.image-grid + p > em {
+  @include type-style('body-short-01');
+  color: $text-02;
+  font-style: normal;
+}
+
+//svg images
+.page-content > div > img[src*="svg"] {
+  background: $ui-02;
+  margin-bottom: $spacing-xl;
+
+  @include breakpoint('lg') {
+    margin-left: calc(25% - 1rem);
+    position: relative;
+    left: -.5rem;
+  }
 }

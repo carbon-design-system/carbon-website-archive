@@ -78,7 +78,7 @@ Labels should be set in sentence case, with only the first word in a phrase and 
 | `.bx--date-picker__input:focus`                    | box-shadow                  | 2px         | -             |
 | `.bx--date-picker__icon + .bx--date-picker__input` | padding-left                | 48 / 3      | $spacing-3xl  |
 
- ![Structure for simple and single date pickers](images/date-picker-style-4.png)  
+ ![Structure for simple and single date pickers](images/date-picker-style-4.png)
 _Structure and spacing for simple and single date pickers | px / rem_
 
 ### Range date picker

@@ -17,12 +17,8 @@ All steps that have already been completed are indicated by an outlined circle w
 | `.bx--progress-step--complete .bx--progress-label`   | text color       | $brand-01 |
 | `.bx--progress-step--incomplete .bx--progress-label` | text color       | $ui-05    |
 
----
 
----
-
-> ![Examples of current, completed, and future steps for Progress Indicator](images/progress-indicator-style-1.png)
-
+![Examples of current, completed, and future steps for Progress Indicator](images/progress-indicator-style-1.png)
 _Examples of current, completed, and future steps for Progress Indicator_
 
 ## Typography

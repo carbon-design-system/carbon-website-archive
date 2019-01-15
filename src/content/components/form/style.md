@@ -52,10 +52,5 @@ All icons can be found on the [iconography](/guidelines/iconography/library) lib
 ![Structure and spacing measurements for a double column form ](images/form-style-2.png)
 _Structure and spacing measurements for a double column Form | px / rem_
 
----
-
----
-
 > ![Structure and spacing measurements for a single column form](images/form-style-1.png)
-
 _Structure and spacing measurements for a single column Form | px / rem_

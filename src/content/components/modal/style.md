@@ -58,8 +58,5 @@ _Structure and spacing measurements for a Transactional Modal | px / rem_
 
 Modals should be full screen on mobile.
 
-<div class="image-component">
-    <img src="images/modal-style-3.png" alt="Modal on mobile" />
-</div>
-
+![Modal on mobile](images/modal-style-3.png)
 _Example of a Modal on a mobile screen_
