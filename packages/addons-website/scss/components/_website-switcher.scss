@@ -1,0 +1,19 @@
+@import '../prefix';
+
+.#{$prefix}--website-switcher {
+  position: fixed;
+  right: 0;
+  width: mini-units(32);
+  background-color: red;
+  height: 100%;
+  z-index: 1000;
+  will-change: width;
+  transition: width 0.11s cubic-bezier(0.2, 0, 1, 0.9);
+  padding: 1rem 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.#{$prefix}--website-switcher--closed {
+  width: 0;
+}
