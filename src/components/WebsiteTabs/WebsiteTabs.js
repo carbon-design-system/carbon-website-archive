@@ -16,6 +16,7 @@ export default class WebsiteTabs extends React.Component {
 
     const classNames = classnames({
       'website-tabs': true,
+      'two-tabs': !(tabChildren.length > 2),
       'three-plus-tabs': tabChildren.length > 2,
     });
 

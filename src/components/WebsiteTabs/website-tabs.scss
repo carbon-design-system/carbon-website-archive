@@ -7,8 +7,8 @@
 }
 
 .website-tabs ul.bx--tabs__nav {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .website-tabs li.bx--tabs__nav-item {
@@ -58,10 +58,57 @@
 }
 
 @media screen and (max-width: 768px) {
-  // special case for 2 tabs at mobile-size breakpoint
-  .website-tabs .bx--tabs-trigger {
+  .website-tabs ul.bx--tabs__nav {
+    box-shadow: none;
+  }
+
+  /**
+  *  special case for 2 tabs at mobile-size breakpoint
+  */
+  .website-tabs.two-tabs .bx--tabs-trigger {
     display: none;
   }
+
+  .website-tabs.two-tabs ul.bx--tabs__nav {
+    background: none;
+    box-shadow: none;
+    flex-direction: row;
+    font-size: 1rem;
+    padding-top: 0;
+    z-index: auto;
+  }
+
+  .website-tabs.two-tabs ul.bx--tabs__nav--hidden {
+    max-height: none;
+  }
+
+  .website-tabs.two-tabs li.bx--tabs__nav-item {
+    background: none;
+    height: auto;
+    width: 50%;
+  }
+
+  .website-tabs.two-tabs .bx--tabs__nav-link {
+    display: block;
+    height: auto;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+
+  .website-tabs.two-tabs .bx--tabs__nav-item--selected:not([disabled]) {
+    display: block;
+  }
+
+  .website-tabs.two-tabs .bx--tabs__nav-item--selected .bx--tabs__nav-link {
+    font-weight: 600;
+  }
+
+  /**
+  *  style alterations for dropdown (used with 3 or more tabs)
+  */
   .website-tabs.three-plus-tabs .bx--tabs-trigger {
     display: flex;
   }
