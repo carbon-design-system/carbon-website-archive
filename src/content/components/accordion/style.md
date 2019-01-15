@@ -3,10 +3,6 @@ title: Accordion
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-![Structure and spacing measurements for Accordion](images/accordion-style-2.png)
-
-![Structure and spacing measurements for Accordion](images/accordion-style-2.png)
-
 ## Color
 
 | Class                         | Property   | SCSS             |
