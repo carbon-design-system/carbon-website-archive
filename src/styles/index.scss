@@ -2,6 +2,12 @@
 // Carbon Components
 //---------------------------------------
 
+@import '@carbon/type/scss/classes';
+@import '@carbon/type/scss/reset';
+
+@include type-reset();
+@include type-classes();
+
 $feature-flags: (
   components-x: true,
   ui-shell: true,
@@ -14,8 +20,6 @@ $feature-flags: (
   @import '@carbon/grid/scss/grid.scss';
 }
 @import '@carbon/grid/scss/aspect-ratio.scss';
-@import '@carbon/type/scss/type.scss';
-@import '@carbon/type/scss/_classes.scss';
 
 @import 'carbon-components/scss/globals/scss/styles.scss';
 @import '@carbon/addons-website/scss/styles';
@@ -38,7 +42,6 @@ $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
 //---------------------------------------
 @import '../components/404/404.scss';
 @import '../components/markdown/markdown.scss';
-@import '../components/markdown/image-grid.scss';
 @import '../components/PageHeader/page-header.scss';
 @import '../components/PageTabs/page-tabs.scss';
 @import '../components/CodeSnippet/code-snippet.scss';
