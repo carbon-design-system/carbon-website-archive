@@ -104,7 +104,7 @@ button,
 // iframe
 .gatsby-resp-iframe-wrapper {
     @include breakpoint('lg') {
-      margin-left: 25%;
+      margin-left: calc(25% + .5rem)!important;
     }
 }
 
@@ -115,7 +115,7 @@ button,
 //images 
 .gatsby-resp-image-wrapper {
   @include breakpoint('lg') {
-    left: -1rem; //to align on grid
+    margin-left: calc(25% + .5rem)!important;
   }
 }
 
@@ -128,8 +128,9 @@ button,
 .gatsby-resp-image-wrapper + em,
 .image-grid + p > em {
   @include type-style('body-short-01');
-  color: $text-02;
   font-style: normal;
+  padding-top: $spacing-xs;
+  color: $text-02;
 }
 
 //svg images
@@ -138,8 +139,6 @@ button,
   margin-bottom: $spacing-xl;
 
   @include breakpoint('lg') {
-    margin-left: calc(25% - 1rem);
-    position: relative;
-    left: -.5rem;
+    margin-left: calc(25% + .5rem)!important;
   }
 }
