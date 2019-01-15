@@ -33,6 +33,7 @@ tabs: ['Code', 'Usage', 'Style']
 
 
 ![Structure and spacing measurements for Tile](images/tile-style-2.png)
+
 _Structure and spacing measurements for Tile | px / rem_
 
 ### Proportions for grid

@@ -18,6 +18,7 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 | `.bx--number__controls svg`        | fill             | $brand-01 |
 
 ![Number Input example in $field-01 and $field-02](images/number-input-style-2.png)
+
 _Number Input example in $field-02 (left) and $field-01 (right)_
 
 ### States
@@ -60,8 +61,6 @@ The height of a Number Input is always the same. The width however, varies based
 | `.bx--number input[type='number']`       | box-shadow    | 1px      | -             |
 | `.bx--number input[type='number']:focus` | box-shadow    | 2px      | -             |
 
-<div class="image-component">
-    <img src="images/number-input-style-1.png" alt="Structure and spacing for number input" />
-</div>
+![Structure and spacing for number input](images/number-input-style-1.png)
 
 _Structure and spacing measurements for a Number Input | px / rem_

@@ -17,11 +17,8 @@ All steps that have already been completed are indicated by an outlined circle w
 | `.bx--progress-step--complete .bx--progress-label`   | text color       | $brand-01 |
 | `.bx--progress-step--incomplete .bx--progress-label` | text color       | $ui-05    |
 
----
 
----
-
-> ![Examples of current, completed, and future steps for Progress Indicator](images/progress-indicator-style-1.png)
+![Examples of current, completed, and future steps for Progress Indicator](images/progress-indicator-style-1.png)
 
 _Examples of current, completed, and future steps for Progress Indicator_
 
@@ -47,6 +44,7 @@ The checkmark icon can be found in the [iconography](/style/iconography/library)
 | `.bx--progress-label`    | width          | 75%      | -             |
 
 ![Structure and spacing for Progress Indicator](images/progress-indicator-style-2.png)
+
 _Structure and spacing measurements for Progress Indicator | px / rem_
 
 ### Recommended
@@ -58,4 +56,5 @@ The following specs are not built into the Progress Indicator component but are 
 | `.bx--progress` | margin   | 16 / 1   | $spacing-md   |
 
 ![Structure and spacing for Progress Indicator](images/progress-indicator-style-3.png)
+
 _Recommended structure and spacing measurements for Progress Indicator | px / rem_

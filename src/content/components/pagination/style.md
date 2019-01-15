@@ -37,4 +37,5 @@ The Pagination bar is most commonly used in [Data Tables](/components/data-table
 | `.bx--pagination .bx--select-input`                         | padding-right               | 20 / 1.25 | -             |
 
 ![Structure and spacing for pagination](images/pagination-style-1.png)
+
 _Structure and spacing measurements for Pagination | px / rem_

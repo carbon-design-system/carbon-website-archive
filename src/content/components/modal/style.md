@@ -49,17 +49,17 @@ Modal labels are optional and should be set in all caps when used. Modal titles 
 | `.bx--btn--secondary + .bx--btn--primary,` | margin-left                 | 16 / 1     | $spacing-md   |
 
 ![Structure and spacing measurements for Passive Modal](images/modal-style-1.png)
+
 _Structure and spacing measurements for a Passive Modal | px / rem_
 
 ![Structure and spacing measurements for Transactional Modal elements](images/modal-style-2.png)
+
 _Structure and spacing measurements for a Transactional Modal | px / rem_
 
 ## Mobile
 
 Modals should be full screen on mobile.
 
-<div class="image-component">
-    <img src="images/modal-style-3.png" alt="Modal on mobile" />
-</div>
+![Modal on mobile](images/modal-style-3.png)
 
 _Example of a Modal on a mobile screen_

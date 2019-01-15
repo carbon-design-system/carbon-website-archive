@@ -15,12 +15,7 @@ tabs: ['Code', 'Usage', 'Style']
 | `.bx--overflow-menu-options__option--danger:hover` | background-color | $hover-danger |
 | `.bx--overflow-menu-options__option--danger`       | border-top       | $ui-04        |
 
-
-<div class="image-grid">
-  <div>
-    <img src="images/overflow-menu-style-1.png" alt="Overflow menu text hover example"/>
-  </div>
-</div>
+![Overflow menu text hover example](images/overflow-menu-style-1.png)
 
 _Text and warning hover examples for Overflow Menu_
 
@@ -50,6 +45,4 @@ The height of an Overflow Menu is determined by the amount of content in the men
 | `.bx--overflow-menu-options`                 | width                       | 180 / 11.25 | -             |
 | `.bx--overflow-menu-options__option--danger` | border-top                  | 1px         | -             |
 
-<div class="image-component">
-    <img src="images/overflow-menu-style-3.png" alt="Structure and spacing measurements for an overflow menu" />
-</div>
+![Structure and spacing measurements for an overflow menu](images/overflow-menu-style-3.png)

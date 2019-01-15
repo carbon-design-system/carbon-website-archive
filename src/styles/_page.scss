@@ -63,29 +63,6 @@ button,
     }
   }
 
-  // All em on Markdown pages after images and image grid
-  .gatsby-resp-image-link + em,
-  .image-grid + p > em,
-  .image-component + p > em {
-    @include type-style('body-short-01');
-    color: $text-02;
-  }
-
-  // Images on component pages
-  .image-component {
-    background: $ui-02;
-    //max-width: 38rem;
-    display: flex;
-    justify-content: center;
-    padding: $spacing-md 0;
-
-    .gatsby-resp-image-link,
-    > img {
-      width: 50%;
-      height: 50%;
-    }
-  }
-
   // All links on Markdown pages but not inside component examples
   & > div > * > a,
   .page-table td a,
@@ -127,7 +104,7 @@ button,
 // iframe
 .gatsby-resp-iframe-wrapper {
     @include breakpoint('lg') {
-      margin-left: 25%;
+      margin-left: calc(25% + .5rem)!important;
     }
 }
 
@@ -137,11 +114,32 @@ button,
 
 //images 
 .gatsby-resp-image-wrapper {
+  background: $ui-02;
+
   @include breakpoint('lg') {
-    margin-left: 25%!important;
+    margin-left: calc(25% + .5rem)!important;
   }
 }
 
 .ibm--row .gatsby-resp-image-wrapper { 
   margin-left: auto!important;
+}
+
+// All em on Markdown pages after images and image grid
+.gatsby-resp-image-link + em,
+.gatsby-resp-image-wrapper + div > div > p > em {
+  @include type-style('body-short-01');
+  font-style: normal;
+  padding-top: $spacing-xs;
+  color: $text-02;
+}
+
+//svg images
+.page-content > div > img[src*="svg"] {
+  background: $ui-02;
+  margin-bottom: $spacing-xl;
+
+  @include breakpoint('lg') {
+    margin-left: calc(25% + .5rem)!important;
+  }
 }

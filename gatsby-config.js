@@ -43,7 +43,6 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          `gatsby-remark-unwrap-images`,
           `gatsby-remark-smartypants`,
           `gatsby-remark-component`,
           {
@@ -56,6 +55,7 @@ module.exports = {
             },
           },
           `gatsby-remark-responsive-iframe`,
+          `gatsby-remark-unwrap-images`,
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -63,7 +63,7 @@ module.exports = {
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
               maxWidth: 1024,
-              linkImagesToOriginal: true,
+              linkImagesToOriginal: false,
               backgroundColor: 'transparent',
             },
           },
