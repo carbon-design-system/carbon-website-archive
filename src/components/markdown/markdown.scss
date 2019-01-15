@@ -60,7 +60,7 @@
   @include type-style('heading-02');
   color: $text-01;
   margin-top: rem(8px);
-  margin-bottom: rem(8px);
+  margin-bottom: rem(16px);
   position: relative;
 }
 
@@ -83,6 +83,10 @@
 .page-h5,
 .component-docs h5 {
   position: relative;
+  @include type-style('heading-02');
+  color: $text-01;
+  margin-top: rem(8px);
+  margin-bottom: rem(16px);
 }
 
 //----------------------------
