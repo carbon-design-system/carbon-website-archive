@@ -32,7 +32,6 @@ import {
   HomepageFooter,
   HomepageHeader,
 } from '../components/Homepage/Homepage';
-import { Tabs } from 'carbon-components-react';
 import { Tab } from 'carbon-components-react';
 import WebsiteTabs from '../components/WebsiteTabs';
 
@@ -91,7 +90,6 @@ const renderAst = new rehypeReact({
     glossary: Glossary,
     'component-overview': ComponentOverview,
     'anchor-links': AnchorLinks,
-    tabs: Tabs,
     tab: Tab,
     'website-tabs': WebsiteTabs,
   },

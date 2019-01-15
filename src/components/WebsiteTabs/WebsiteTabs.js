@@ -1,5 +1,6 @@
 import React from 'react';
 import { Tabs } from 'carbon-components-react';
+import classnames from 'classnames';
 
 /**
  * remove wrapper elements from internal content:
@@ -17,10 +18,15 @@ export default class WebsiteTabs extends React.Component {
       }
     });
 
+    const classNames = classnames({
+      'website-tabs': true,
+      'three-plus-tabs': tabChildren.length > 2,
+    });
+
     return (
       <div className="ibm--row">
         <div className="ibm--col-lg-12 ibm--offset-lg-4">
-          <div className="website-tabs">
+          <div className={classNames}>
             <Tabs>{tabChildren}</Tabs>
           </div>
         </div>

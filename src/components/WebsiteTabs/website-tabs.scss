@@ -45,39 +45,59 @@
   padding: $spacing-3xl $spacing-lg $spacing-lg $spacing-lg;
 }
 
+.website-tabs div.ibm--row {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.website-tabs div.ibm--row > div[class^='ibm--col-'] {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (max-width: 768px) {
+  // special case for 2 tabs at mobile-size breakpoint
   .website-tabs .bx--tabs-trigger {
+    display: none;
+  }
+  .website-tabs.three-plus-tabs .bx--tabs-trigger {
+    display: flex;
+  }
+
+  .website-tabs.three-plus-tabs .bx--tabs-trigger {
     border-top: $spacing-3xs solid $ibm-colors__blue--60;
     font-weight: 600;
   }
 
-  .website-tabs .bx--tabs-trigger-text {
+  .website-tabs.three-plus-tabs .bx--tabs-trigger-text {
     font-weight: 600;
   }
 
-  .website-tabs nav.bx--tabs {
+  .website-tabs.three-plus-tabs nav.bx--tabs {
     background: #fff;
   }
 
-  .website-tabs .bx--tabs-trigger {
+  .website-tabs.three-plus-tabs .bx--tabs-trigger {
     background: #fff;
     border-bottom: none;
   }
 
-  .website-tabs ul.bx--tabs__nav {
+  .website-tabs.three-plus-tabs ul.bx--tabs__nav {
     background: transparent;
   }
 
-  .website-tabs ul.bx--tabs__nav--hidden {
+  .website-tabs.three-plus-tabs ul.bx--tabs__nav--hidden {
     box-shadow: none;
   }
 
-  .website-tabs li.bx--tabs__nav-item {
+  .website-tabs.three-plus-tabs li.bx--tabs__nav-item {
     border-left: none;
     background: #fff;
   }
 
-  .website-tabs a.bx--tabs__nav-link {
+  .website-tabs.three-plus-tabs a.bx--tabs__nav-link {
     background: none;
     margin-left: 0;
     margin-right: 0;
