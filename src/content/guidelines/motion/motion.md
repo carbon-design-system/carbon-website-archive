@@ -51,12 +51,22 @@ Content for third tab goes here.
 ## testing `website-tabs`
 
 <website-tabs>
-<tab label="tab 2"><div>
+<tab label="Curves"><div>
 
 Content for second tab goes here.
 
 </div></tab>
 <tab label="tab 2"><div>
+
+Content for second tab goes here.
+
+</div></tab>
+<tab label="tab 3"><div>
+
+Content for second tab goes here.
+
+</div></tab>
+<tab label="tab 4"><div>
 
 Content for second tab goes here.
 

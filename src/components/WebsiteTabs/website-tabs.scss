@@ -44,3 +44,42 @@
   background: $ui-02;
   padding: $spacing-3xl $spacing-lg $spacing-lg $spacing-lg;
 }
+
+@media screen and (max-width: 768px) {
+  .website-tabs .bx--tabs-trigger {
+    border-top: $spacing-3xs solid $ibm-colors__blue--60;
+    font-weight: 600;
+  }
+
+  .website-tabs .bx--tabs-trigger-text {
+    font-weight: 600;
+  }
+
+  .website-tabs nav.bx--tabs {
+    background: #fff;
+  }
+
+  .website-tabs .bx--tabs-trigger {
+    background: #fff;
+    border-bottom: none;
+  }
+
+  .website-tabs ul.bx--tabs__nav {
+    background: transparent;
+  }
+
+  .website-tabs ul.bx--tabs__nav--hidden {
+    box-shadow: none;
+  }
+
+  .website-tabs li.bx--tabs__nav-item {
+    border-left: none;
+    background: #fff;
+  }
+
+  .website-tabs a.bx--tabs__nav-link {
+    background: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
