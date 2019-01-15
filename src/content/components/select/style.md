@@ -20,6 +20,7 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 | `.bx--select--inline.bx--select-input` | text color | $brand-01   |
 
 ![Default and new selection state examples for Select](images/select-style-1.png)
+
 _Examples of default and new selection Select states in $field-02 (right) and $field-01 (left)_
 
 ### States
@@ -41,6 +42,7 @@ _Examples of default and new selection Select states in $field-02 (right) and $f
 **Disabled:** Disabled state has a `.not-allowed` cursor hover and appears at 50% opacity.
 
 ![Open, disabled, and more information/help state examples for Select](images/select-style-3.png)
+
 _Examples of open, disabled, and help Select states_
 
 ## Typography
@@ -69,6 +71,7 @@ Select text should be set in sentence case, with only the first word in a phrase
 | `.bx--select-input:focus` | box-shadow    | 2px      | -             |
 
 ![Structure and spacing measurements for Select](images/select-style-2.png)
+
 _Structure and spacing measurements for Select | px / rem_
 
 ### Recommended
@@ -88,6 +91,7 @@ The following specs are not built into the Select component but are recommended 
 | `.bx--select-input` | padding-left, padding-right | 8 / 0.5  | $spacing-xs   |
 
 ![Structure and spacing measurements for Small Select](images/select-style-4.png)
+
 _Structure and spacing measurements for Small Select | px / rem & examples of open and disabled Small Select states_
 
 ### Recommended
@@ -107,4 +111,5 @@ The following specs are not built into the Small Select component but are recomm
 | `.bx--select-input` | padding-left  | 16 / 1   | $spacing-md   |
 
 ![Structure and spacing measurements for Inline Select](images/select-style-6.png)
+
 _Structure and spacing measurements for Inline Select (focused) | px / rem_

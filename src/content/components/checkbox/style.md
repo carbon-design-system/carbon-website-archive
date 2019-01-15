@@ -15,6 +15,7 @@ tabs: ['Code', 'Usage', 'Style']
 | `.bx--checkbox-label`         | color            | $text-01    |
 
 ![Disabled and normal checkbox states](images/checkbox-style-1.png)
+
 _Disabled and normal checkbox states_
 
 ## Typography
@@ -36,4 +37,5 @@ Checkbox headings and labels should be sentence case, with only the first word i
 | `.bx--form-item.bx--checkbox-wrapper` | margin-bottom  | 16 / 1    | $spacing-md   |
 
 ![Structure and spacing measurements for checkbox](images/checkbox-style-3.png)
+
 _Structure and spacing measurements for checkbox | px / rem_

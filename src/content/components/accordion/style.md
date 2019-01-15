@@ -36,4 +36,5 @@ There is no limit to the height of an open row, however, the padding specs below
 | `.bx--accordion__item--active` | padding-bottom             | 24 / 1.5   | $spacing-lg   |
 
 ![Structure and spacing measurements for Accordion](images/accordion-style-1.png)
+
 _Structure and spacing measurements for Accordion | px / rem_

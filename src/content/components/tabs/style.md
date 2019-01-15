@@ -30,4 +30,5 @@ Tab label should be set in sentence case, and should not exceed three words.
 | `.bx--tabs__nav-item`                       | padding-top, padding-bottom | 16 / 1   | $spacing-md   |
 
 ![Structure and spacing measurements for Tabs](images/tab-style-1.png)
+
 _Structure and spacing measurements for Tab | px / rem_

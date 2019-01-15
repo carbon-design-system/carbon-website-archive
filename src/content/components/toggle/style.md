@@ -16,6 +16,7 @@ tabs: ['Code', 'Usage', 'Style']
 | `.bx--toggle__label`                                                     | color                    | $text-01  |
 
 ![Inactive, inactive hover, and active states for a Toggle](images/toggle-style-1.png)
+
 _Examples of inactive, inactive hover, and active states for a Toggle_
 
 ## Typography
@@ -40,6 +41,7 @@ Toggle labels should be set in sentence case, with only the first word in a phra
 | `.bx--toggle__text--left` </br> `.bx--toggle__text--right` | margin-right, margin-left | 8 / 0.5  | $spacing-xs   |
 
 ![Structure and spacing measurements for toggle](images/toggle-style-2.png)
+
 _Structure and spacing measurements for Toggle | px / rem_
 
 ### Small toggle
@@ -52,4 +54,5 @@ _Structure and spacing measurements for Toggle | px / rem_
 | `.bx--toggle--small`                                                    | margin-top, margin-bottom | 16 / 1     | $spacing-md   |
 
 ![Structure and spacing measurements for small toggle](images/toggle-style-3.png)
+
 _Structure and spacing measurements for Small Toggle | px / rem_

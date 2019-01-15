@@ -115,7 +115,7 @@ button,
 //images 
 .gatsby-resp-image-wrapper {
   background: $ui-02;
-  
+
   @include breakpoint('lg') {
     margin-left: calc(25% + .5rem)!important;
   }
@@ -127,8 +127,7 @@ button,
 
 // All em on Markdown pages after images and image grid
 .gatsby-resp-image-link + em,
-.gatsby-resp-image-wrapper + em,
-.image-grid + p > em {
+.gatsby-resp-image-wrapper + div > div > p > em {
   @include type-style('body-short-01');
   font-style: normal;
   padding-top: $spacing-xs;

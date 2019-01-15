@@ -24,4 +24,5 @@ All tags have the same height. However, the width of tags varies based on the am
 | `.bx--tag` | padding-left, padding-right | 10 / 0.625 | -             |
 
 ![Structure and spacing measurementst](images/tag-style-1.png)
+
 _Structure and spacing measurements for a Tag | px / rem_

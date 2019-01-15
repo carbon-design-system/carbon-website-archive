@@ -49,6 +49,7 @@ Notification titles should not exceed more than three words. Notification text s
 | `.bx--toast-notification__subtitle` | margin-bottom                            | 16 / 1       | $spacing-md   |
 
 ![Structure and spacing for a toast notification](images/notification-style-1.png)
+
 _Structure and spacing measurements for a Toast Notification | px / rem_
 
 ### Inline Notification
@@ -67,4 +68,5 @@ The width of an Inline Notification will vary based on content.
 | `.bx--inline-notification`                                                                                                                                   | padding-left, padding-left  | 16 / 1     | $spacing-md   |
 
 ![Structure and spacing for an inline notification](images/notification-style-2.png)
+
 _Structure and spacing measurements for a Inline Notification | px / rem_

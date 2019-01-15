@@ -20,6 +20,7 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 | `.bx--list-box__selection--multi`                                   | background-color | $brand-01  |
 
 ![Dropdown example with $field-01 and $field-02](images/dropdown-style-9.png)
+
 _Example of Dropdowns with $field-02 (left) and $field-01 (right)_
 
 ### States
@@ -69,9 +70,11 @@ Dropdowns have two states, open and closed. An open and closed Dropdown should b
 | `.bx--dropdown:focus` | box-shadow                  | 2px         | -              |
 
 ![Structure and spacing for a closed dropdown](images/dropdown-style-2.png)
+
 _Structure and spacing measurements for Dropdown | px / rem_
 
 ![Normal, active, open, and disabled states for Dropdown](images/dropdown-style-1.png)
+
 _Normal, active, open, and disabled states for Dropdown_
 
 ## Multi-Select Dropdown
@@ -86,6 +89,7 @@ _Normal, active, open, and disabled states for Dropdown_
 | `.bx--list-box__selection--multi` | margin-right                | 10 / 0.625 | -              |
 
 ![Structure and spacing for a Multi-Select Dropdown](images/dropdown-style-3.png)
+
 _Structure and spacing measurements for a Multi-Select Dropdown | px / rem_
 
 
@@ -102,6 +106,7 @@ _Structure and spacing measurements for a Multi-Select Dropdown | px / rem_
 | `.bx--checkbox-label::before`        | height                      | 18 / 1.125 | -             |
 
 ![Structure and spacing for Inline Dropdown](images/dropdown-style-5.png)
+
 _Structure and spacing for Inline Dropdown | px / rem_
 
 ### Inline Dropdown states
@@ -109,6 +114,7 @@ _Structure and spacing for Inline Dropdown | px / rem_
 Inline select has two different states, one for mouse hover and one for keyboard focus.
 
 ![Hover and focus states for Inline Dropdown](images/dropdown-style-6.png)
+
 _Hover and focus states for Inline Dropdown_
 
 ## Filtering
@@ -124,7 +130,9 @@ Filtering can be used with Dropdown and Multi-select Dropdown but not Inline Dro
 | `.bx--list-box__selection--multi` | height                      | 18 / 1.125 | -             |
 
 ![Spacing for Multi-select Dropdown with Filtering](images/dropdown-style-7.png)
+
 _Spacing for Multi-select Dropdown with Filtering | px / rem_
 
 ![Interation states for Multi-select Dropdown with Filtering](images/dropdown-style-8.png)
+
 _Interaction states for Multi-select Dropdown with Filtering | px / rem_

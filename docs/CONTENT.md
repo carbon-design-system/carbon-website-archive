@@ -79,17 +79,17 @@ If you need a link to open in a new window you will have to use standard html to
 
 ### Images
 
-Images will render as full width responsive images by default. 
+Images will render as full width responsive images by default. **You must have a line break after the image, otherwise markdown will place it inside a paragraph tag and it will display at the incorrect width**
 
 `![image alt text](images/image.png)`
 
 #### Image captions
 
-If you place markdown italic text immediatley following an image it will render in the caption styles. 
-
+If you place markdown italic text following an image it will render in the caption styles. **You must have a line break after the image, otherwise markdown will place it inside a paragraph tag and it will display at the incorrect width**
 
 ```
 ![Structure and spacing measurements for Accordion](images/accordion-style-1.png)
+
 _Structure and spacing measurements for Accordion | px / rem_
 ```
 

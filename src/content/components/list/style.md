@@ -30,4 +30,5 @@ Level 1 unordered list points are bulleted while Level 2 points are marked with 
 | `.bx--list--ordered`                              | line-height | 24/1.5   | -             |
 
 ![Structure and spacing measurements for ordered and unordered lists](images/list-style-1.png)
+
 _Structure and spacing measurements for an ordered and an unordered List | px / rem_

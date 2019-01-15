@@ -16,6 +16,7 @@ tabs: ['Code', 'Usage', 'Style']
 | `.bx--overflow-menu-options__option--danger`       | border-top       | $ui-04        |
 
 ![Overflow menu text hover example](images/overflow-menu-style-1.png)
+
 _Text and warning hover examples for Overflow Menu_
 
 ## Typography

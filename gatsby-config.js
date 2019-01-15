@@ -43,7 +43,6 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          `gatsby-remark-unwrap-images`,
           `gatsby-remark-smartypants`,
           `gatsby-remark-component`,
           {
@@ -56,6 +55,7 @@ module.exports = {
             },
           },
           `gatsby-remark-responsive-iframe`,
+          `gatsby-remark-unwrap-images`,
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -67,7 +67,6 @@ module.exports = {
               backgroundColor: 'transparent',
             },
           },
-          `gatsby-remark-unwrap-images`,
           'gatsby-remark-copy-linked-files',
           {
             resolve: 'gatsby-remark-embedded-codesandbox',
