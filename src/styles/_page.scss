@@ -114,6 +114,8 @@ button,
 
 //images 
 .gatsby-resp-image-wrapper {
+  background: $ui-02;
+  
   @include breakpoint('lg') {
     margin-left: calc(25% + .5rem)!important;
   }
