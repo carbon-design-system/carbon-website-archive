@@ -8,11 +8,6 @@
   height: rem(48px);
   margin-bottom: $spacing-xl;
   background: $ui-02;
-
-  // @include breakpoint('md') {
-  //   justify-content: flex-start;
-  //   background: transparent;
-  // }
 }
 
 .color-token-table__theme-switcher--sticky {
@@ -59,7 +54,6 @@
 
   @include breakpoint('md') {
     padding-right: 4rem;
-    // flex: none;
   }
 }
 
