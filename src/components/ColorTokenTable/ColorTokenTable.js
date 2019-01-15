@@ -9,17 +9,55 @@ import {
   OverflowMenuItem,
 } from 'carbon-components-react';
 import { CopyToClipboard } from 'react-copy-to-clipboard/lib/Component';
-
 import colorTokens from '../../data/guidelines/color-tokens';
-
-import { themes } from '@carbon/themes';
 
 export default class ColorTokenTable extends React.Component {
   static propTypes = {};
 
   state = {
     theme: 'white',
+    sticky: false,
+    mobile: false,
   };
+
+  componentDidMount() {
+    if (window.innerWidth < 500) {
+      this.setState({
+        mobile: true,
+      });
+    }
+    this.addResizeListener();
+    this.addScrollListener();
+  }
+
+  addScrollListener() {
+    document.addEventListener('scroll', e => {
+      let stickyPoint = this.state.mobile ? 1340 : 1244;
+      if (window.scrollY >= stickyPoint) {
+        this.setState({
+          sticky: true,
+        });
+      } else if (window.scrollY < stickyPoint) {
+        this.setState({
+          sticky: false,
+        });
+      }
+    });
+  }
+
+  addResizeListener() {
+    window.addEventListener('resize', e => {
+      if (window.innerWidth < 500) {
+        this.setState({
+          mobile: true,
+        });
+      } else if (window.innerWidth > 500) {
+        this.setState({
+          mobile: false,
+        });
+      }
+    });
+  }
 
   switchTheme = theme => {
     this.setState({
@@ -27,36 +65,45 @@ export default class ColorTokenTable extends React.Component {
     });
   };
 
+  hexToRgb = hex => {
+    let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result
+      ? {
+          r: parseInt(result[1], 16),
+          g: parseInt(result[2], 16),
+          b: parseInt(result[3], 16),
+        }
+      : null;
+  };
+
   renderValue = (token, tokenInfo) => {
     const currentTheme = this.state.theme;
-    console.log(themes);
-    let newFormattedToken = token.replace('$', '');
-    newFormattedToken = newFormattedToken.split('-');
-    newFormattedToken = `${newFormattedToken[0]}${newFormattedToken[1]
-      .charAt(1)
-      .toUpperCase() + newFormattedToken[1].substring(1)}`;
-    console.log(newFormattedToken);
-    const formattedToken = token.replace('$', '').replace('-', '');
-    // const value = tokenInfo.value;
+    const value = tokenInfo.value;
+    let bgColor = value[currentTheme].hex;
+    if (bgColor.substring(bgColor.length - 3, bgColor.length) === '50%') {
+      let hex = bgColor.substring(0, bgColor.length - 6);
+      bgColor = `rgba(${this.hexToRgb(hex).r}, ${this.hexToRgb(hex).g}, ${
+        this.hexToRgb(hex).b
+      }, 0.5)`;
+    }
     return (
       <div className="color-token-value">
         <ul>
-          {/* <li>{value[currentTheme].name}</li> */}
+          <li>{value[currentTheme].name}</li>
           <li>—</li>
-          <li>{themes[currentTheme][formattedToken]}</li>
+          <li>{value[currentTheme].hex}</li>
         </ul>
         <div>
           <div
             className="color-token-value__block"
             style={{
-              backgroundColor: themes[currentTheme][formattedToken],
+              backgroundColor: bgColor,
               border:
-                themes[currentTheme][formattedToken] === '#ffffff' &&
-                '1px solid #BEBEBE',
+                value[currentTheme].hex === '#ffffff' && '1px solid #BEBEBE',
             }}
           />
           <OverflowMenu floatingMenu={false}>
-            <CopyToClipboard text={themes[currentTheme][formattedToken]}>
+            <CopyToClipboard text={value[currentTheme].hex}>
               <OverflowMenuItem itemText="Copy hex" />
             </CopyToClipboard>
             <CopyToClipboard text={token}>
@@ -91,44 +138,29 @@ export default class ColorTokenTable extends React.Component {
   };
 
   render() {
+    const themeSwitcherClasses = classnames(
+      'color-token-table__theme-switcher',
+      {
+        'color-token-table__theme-switcher--sticky': this.state.sticky,
+      }
+    );
     return (
       <div className="ibm--row color-token-table">
         <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
           <ContentSwitcher
-            className="color-token-table__theme-switcher"
+            className={themeSwitcherClasses}
             onChange={this.switchTheme}>
-            <Switch name="white" text="White" />
-            <Switch name="g10" text="Gray 10" />
-            <Switch name="g100" text="Gray 100" />
-            <Switch name="g90" text="Gray 90" />
+            <Switch name="white" text={this.state.mobile ? 'Wte' : 'White'} />
+            <Switch name="g10" text={this.state.mobile ? 'G10' : 'Gray 10'} />
+            <Switch
+              name="g100"
+              text={this.state.mobile ? 'G100' : 'Gray 100'}
+            />
+            <Switch name="g90" text={this.state.mobile ? 'G90' : 'Gray 90'} />
           </ContentSwitcher>
         </div>
         <div className="ibm--col-lg-7 ibm--offset-lg-4">
           <h3 className="page-h3">Core color tokens</h3>
-        </div>
-        <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
-          <table className="page-table">
-            <thead>
-              <tr>
-                <th>Token</th>
-                <th>Role</th>
-                <th>Value</th>
-              </tr>
-            </thead>
-            <tbody>
-              {Object.keys(colorTokens['core-tokens']).map((token, i) => {
-                console.log(colorTokens['core-tokens'][token]);
-                return this.renderToken(
-                  token,
-                  colorTokens['core-tokens'][token],
-                  i
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-        <div className="ibm--col-lg-7 ibm--offset-lg-4">
-          <h3 className="page-h3">Support color tokens</h3>
         </div>
         <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
           <table className="page-table">
