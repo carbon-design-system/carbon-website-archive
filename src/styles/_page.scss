@@ -125,8 +125,14 @@ button,
   margin-left: auto!important;
 }
 
+//Two images in a row
+.gatsby-resp-image-wrapper + .gatsby-resp-image-wrapper,
+.gatsby-resp-image-link + .gatsby-resp-image-link {
+  margin-top: 2rem;
+}
+
 // All em on Markdown pages after images and image grid
-.gatsby-resp-image-link + em,
+.gatsby-resp-image-link + div > div > p > em,
 .gatsby-resp-image-wrapper + div > div > p > em {
   @include type-style('body-short-01');
   font-style: normal;
