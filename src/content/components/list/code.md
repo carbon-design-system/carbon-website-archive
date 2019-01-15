@@ -1,6 +1,6 @@
 ---
 title: List
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 **Lists** consist of related content grouped together and organized vertically.

@@ -6,16 +6,16 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                        | Property         | SCSS       | HEX                    |
-| ---------------------------- | ---------------- | ---------- | ---------------------- |
-| `.bx--snippet--single`       | background       | $ui-01     | #ffffff                |
-| `.bx--snippet--single`       | border           | $ui-03     | #dfe3e6                |
-| `.bx--snippet__icon`         | color            | $brand-01  | #3d70b2                |
-| `.bx--snippet--inline`       | background-color | $field-01  | #ffffff                |
-| `.bx--snippet--inline`       | color            | $text-02   | #5a6872                |
-| `.bx--snippet--inline:hover` | background-color | $hover-row | #5596e6 at 10% opacity |
-| `.bx--snippet--light`        | background-color | $field-02  | #f4f7fB                |
-| `.bx--snippet--light:hover`  | background-color | $ui-02     | #d0dced                |
+| Class                        | Property         | SCSS       |
+| ---------------------------- | ---------------- | ---------- |
+| `.bx--snippet--single`       | background       | $ui-01     |
+| `.bx--snippet--single`       | border           | $ui-03     |
+| `.bx--snippet__icon`         | color            | $brand-01  |
+| `.bx--snippet--inline`       | background-color | $field-01  |
+| `.bx--snippet--inline`       | color            | $text-02   |
+| `.bx--snippet--inline:hover` | background-color | $hover-row |
+| `.bx--snippet--light`        | background-color | $field-02  |
+| `.bx--snippet--light:hover`  | background-color | $ui-02     |
 
 ### Syntax colors
 

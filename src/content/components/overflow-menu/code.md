@@ -1,6 +1,6 @@
 ---
-title: Overflow Menu
-tabs: ['Code', 'Usage']
+title: Overflow menu
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 **Overflow menu** is used when additional options are available to the user and there is a space constraint.

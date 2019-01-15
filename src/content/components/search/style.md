@@ -8,13 +8,13 @@ tabs: ['Code', 'Usage', 'Style']
 
 Inputs come in two different colors. The default input color is `$field-01` and is used on `$ui-01` page backgrounds. The light version input color is `$field-02` and is used on `$ui-02` page backgrounds.
 
-| Class                            | Property         | SCSS      | HEX     |
-| -------------------------------- | ---------------- | --------- | ------- |
-| `.bx--search-input`              | background-color | $field-01 | #f4f7fb |
-| `.bx--search--light`             | background-color | $field-02 | #ffffff |
-| `.bx--search-input`              | text color       | $text-01  | #152935 |
-| `.bx--search-input::placeholder` | text color       | $text-03  | #cdd1d4 |
-| `.bx--search-magnifier`          | fill             | $ui-05    | #5a6872 |
+| Class                            | Property         | SCSS      |
+| -------------------------------- | ---------------- | --------- |
+| `.bx--search-input`              | background-color | $field-01 |
+| `.bx--search--light`             | background-color | $field-02 |
+| `.bx--search-input`              | text color       | $text-01  |
+| `.bx--search-input::placeholder` | text color       | $text-03  |
+| `.bx--search-magnifier`          | fill             | $ui-05    |
 
 ![Example of Search using $field-01 and $field-02](images/search-style-4.png)
 _Example of Search using $field-02 (top) and $field-01 (bottom)_

@@ -6,16 +6,16 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                                                                                                                                                         | Property         | SCSS        | HEX     |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------- | ------- |
-| `.bx--tooltip__label`                                                                                                                                         | text color       | $text-01    | #152935 |
-| `svg`                                                                                                                                                         | fill             | $brand-01   | #3d70b2 |
-| `.bx--tooltip--shown`                                                                                                                                         | background-color | $ui-01      | #ffffff |
-| `.bx--tooltip`                                                                                                                                                | color            | $text-01    | #152935 |
-| `.bx--tooltip`                                                                                                                                                | border           | $ui-03      | #dfe3e6 |
-| `.bx--tooltip__trigger path`                                                                                                                                  | fill             | $brand-01   | #3d70b2 |
-| `.bx--tooltip--definition__bottom p` </br> `.bx--tooltip--definition__top p` </br> `.bx--tooltip--icon__top::after` </br> `.bx--tooltip--icon__bottom::after` | text color       | $inverse-01 | #ffffff |
-| `.bx--tooltip--definition__bottom` </br> `.bx--tooltip--definition__top` </br> `.bx--tooltip--icon__top::after` </br> `.bx--tooltip--icon__bottom::after`     | background-color | $inverse-02 | #272d33 |
+| Class                                                                                                                                                         | Property         | SCSS        |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------- |
+| `.bx--tooltip__label`                                                                                                                                         | text color       | $text-01    |
+| `svg`                                                                                                                                                         | fill             | $brand-01   |
+| `.bx--tooltip--shown`                                                                                                                                         | background-color | $ui-01      |
+| `.bx--tooltip`                                                                                                                                                | color            | $text-01    |
+| `.bx--tooltip`                                                                                                                                                | border           | $ui-03      |
+| `.bx--tooltip__trigger path`                                                                                                                                  | fill             | $brand-01   |
+| `.bx--tooltip--definition__bottom p` </br> `.bx--tooltip--definition__top p` </br> `.bx--tooltip--icon__top::after` </br> `.bx--tooltip--icon__bottom::after` | text color       | $inverse-01 |
+| `.bx--tooltip--definition__bottom` </br> `.bx--tooltip--definition__top` </br> `.bx--tooltip--icon__top::after` </br> `.bx--tooltip--icon__bottom::after`     | background-color | $inverse-02 |
 
 <div class="image-component">
     <img src="images/tooltip-style-1.png" alt="Closed and open states for a Tooltip" />
