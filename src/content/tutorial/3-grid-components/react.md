@@ -1,6 +1,6 @@
 ---
-title: 4. Form Validation
-tabs: ['Vanilla', 'React', 'Angular']
+title: 3. Grid and Components
+tabs: ['Vanilla', 'React']
 ---
 
 ## To Do

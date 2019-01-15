@@ -1,6 +1,6 @@
 ---
 title: 1. Development Environment
-tabs: ['Vanilla', 'React', 'Angular']
+tabs: ['Vanilla', 'React']
 ---
 
 Coming soon.

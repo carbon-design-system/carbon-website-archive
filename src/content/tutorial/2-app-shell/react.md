@@ -1,6 +1,6 @@
 ---
 title: 2. Application Shell
-tabs: ['Vanilla', 'React', 'Angular']
+tabs: ['Vanilla', 'React']
 ---
 
 ## Add Carbon components
@@ -125,4 +125,8 @@ Finally, update all import paths to point to the `carbon-components` directory i
 
 At this point, your app should look like this live example.
 
-**To Do**
+<div class="ibm--row">
+  <div class="ibm--col-lg-8 ibm--offset-lg-4">
+    <iframe src="https://codesandbox.io/embed/xo6j8yw44q?autoresize=1&hidenavigation=1&view=preview" style="width:100%; height:500px; border:0; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+  </div>
+</div>

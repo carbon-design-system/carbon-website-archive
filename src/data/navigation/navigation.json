@@ -25,14 +25,8 @@
       "2-app-shell": {
         "title": "2. Application shell"
       },
-      "3-grid-and-components": {
+      "3-grid-components": {
         "title": "3. Grid and components"
-      },
-      "4-form-validation": {
-        "title": "4. Form validation"
-      },
-      "5-data-table": {
-        "title": "5. Data table"
       }
     }
   },
