@@ -110,6 +110,34 @@ a.bx--side-nav__link:focus {
   border-right: 1px solid $ibm-colors__gray--80;
 }
 
+.bx--side-nav .bx--side-nav__item--active {
+  background: transparent;
+}
+
+.bx--side-nav.side-nav--light .bx--side-nav__item.bx--side-nav__item--active .bx--side-nav__submenu[aria-haspopup='true'] {
+  color: $text-01;
+
+  .bx--side-nav__icon svg {
+    fill: $icon-01;
+  }
+}
+
+.bx--side-nav.side-nav--light .bx--side-nav__item.bx--side-nav__item--active .bx--side-nav__submenu[aria-haspopup='true'][aria-expanded="false"] {
+  background-color: $ui-03;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+    background-color: $brand-01;
+  }
+}
+
+
 .bx--side-nav.side-nav--light {
   background-color: $ui-02;
   border-right: none;

@@ -26,6 +26,7 @@ export default class LeftNav extends React.Component {
       }
       return (
         <LeftNavItem
+          isCurrentCategory={loc.pathname.includes(item) ? true : false}
           itemSlug={item}
           item={nav[item]}
           key={item}
@@ -39,10 +40,6 @@ export default class LeftNav extends React.Component {
     const isInternal = GATSBY_CARBON_ENV == 'internal';
 
     const { isOpen, isFinal } = this.props;
-
-
-
-
 
     const classNamesClickToClose = classnames({
       'side-nav-click-to-close': true,
