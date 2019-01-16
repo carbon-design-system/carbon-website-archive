@@ -11,29 +11,24 @@ import classnames from 'classnames';
 export default class WebsiteTabs extends React.Component {
   constructor() {
     super();
+    // this.updateDimensions = this.updateDimensions.bind(this);
     this.state = {
       displayTabsAtSmallerBreakpoints: false,
-      tabChildren: [],
     };
+    this.tabChildren = [];
   }
 
   /**
-   * Update state of new dimensions & determine if tabs should be shown at smaller breakpoints
+   * Calculate & Update state of new dimensions
    */
-  updateIfTabsShown = () => {
+  updateDimensions = () => {
     let shouldShowTabs = false;
     if (window.innerWidth <= 500) {
-      if (
-        this.state.tabChildren.length > 0 &&
-        this.state.tabChildren.length <= 2
-      ) {
+      if (this.tabChildren.length > 0 && this.tabChildren.length <= 2) {
         shouldShowTabs = true;
       }
     } else if (window.innerWidth <= 768) {
-      if (
-        this.state.tabChildren.length > 0 &&
-        this.state.tabChildren.length <= 3
-      ) {
+      if (this.tabChildren.length > 0 && this.tabChildren.length <= 3) {
         shouldShowTabs = true;
       }
     }
@@ -41,17 +36,15 @@ export default class WebsiteTabs extends React.Component {
   };
 
   componentDidMount() {
-    window.addEventListener('resize', this.updateIfTabsShown);
-    this.setState({
-      tabChildren: this.props.children.filter(child => {
-        return child.type && child.type.displayName === 'Tab';
-      }),
+    window.addEventListener('resize', this.updateDimensions);
+    this.tabChildren = this.props.children.filter(child => {
+      return child.type && child.type.displayName === 'Tab';
     });
-    this.updateIfTabsShown();
+    this.updateDimensions();
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.updateIfTabsShown);
+    window.removeEventListener('resize', this.updateDimensions);
   }
 
   render() {
@@ -65,7 +58,7 @@ export default class WebsiteTabs extends React.Component {
       <div className="ibm--row">
         <div className="ibm--col-lg-12 ibm--offset-lg-4">
           <div className={classNames}>
-            <Tabs>{this.state.tabChildren}</Tabs>
+            <Tabs>{this.tabChildren}</Tabs>
           </div>
         </div>
       </div>
