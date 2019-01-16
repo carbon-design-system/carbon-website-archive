@@ -122,6 +122,7 @@ Advances the user to the next step in a sequence of steps, such as in a wizard.
 **Usage:** Use a _button with icon_ or a standalone `forward` icon.
 
 ![Example of next as a Button with Icon](images/common-action-11.png)
+
 _"Next" action as a button with icon in a wizard._
 
 ### Refresh
@@ -131,4 +132,5 @@ This action reloads the view of an object, list, or data set when the displayed 
 **Usage:** Use the `refresh` icon or a _button_.
 
 ![Example of edit in a Data Table cell](images/common-action-12.png)
+
 _"Refresh" action as a ghost button with icon in the action bar of a data table._
