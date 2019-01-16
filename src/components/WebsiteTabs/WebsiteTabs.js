@@ -9,36 +9,63 @@ import classnames from 'classnames';
  * */
 
 export default class WebsiteTabs extends React.Component {
-  render() {
-    let tabChildren = this.props.children.filter(child => {
-      return child.type && child.type.displayName === 'Tab';
-    });
-
-    const showTabsAtSmallSize = () => {
-      let shouldShowTabs = false;
-      if (window.innerWidth <= 500) {
-        if (tabChildren.length <= 2) {
-          shouldShowTabs = true;
-        }
-      } else if (window.innerWidth <= 768) {
-        if (tabChildren.length <= 3) {
-          shouldShowTabs = true;
-        }
-      }
-      return shouldShowTabs;
+  constructor() {
+    super();
+    this.state = {
+      displayTabsAtSmallerBreakpoints: false,
+      tabChildren: [],
     };
+  }
 
+  /**
+   * Update state of new dimensions & determine if tabs should be shown at smaller breakpoints
+   */
+  updateIfTabsShown = () => {
+    let shouldShowTabs = false;
+    if (window.innerWidth <= 500) {
+      if (
+        this.state.tabChildren.length > 0 &&
+        this.state.tabChildren.length <= 2
+      ) {
+        shouldShowTabs = true;
+      }
+    } else if (window.innerWidth <= 768) {
+      if (
+        this.state.tabChildren.length > 0 &&
+        this.state.tabChildren.length <= 3
+      ) {
+        shouldShowTabs = true;
+      }
+    }
+    this.setState({ displayTabsAtSmallerBreakpoints: shouldShowTabs });
+  };
+
+  componentDidMount() {
+    window.addEventListener('resize', this.updateIfTabsShown);
+    this.setState({
+      tabChildren: this.props.children.filter(child => {
+        return child.type && child.type.displayName === 'Tab';
+      }),
+    });
+    this.updateIfTabsShown();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateIfTabsShown);
+  }
+
+  render() {
     const classNames = classnames({
       'website-tabs': true,
-      'bp-tabs-shown': showTabsAtSmallSize(),
-      'bp-tabs-not-shown': !showTabsAtSmallSize(),
+      'bp-tabs-shown': this.state.displayTabsAtSmallerBreakpoints,
+      'bp-tabs-not-shown': !this.state.displayTabsAtSmallerBreakpoints,
     });
 
     return (
       <div className="ibm--row">
         <div className="ibm--col-lg-12 ibm--offset-lg-4">
           <div className={classNames}>
-            <Tabs>{tabChildren}</Tabs>
+            <Tabs>{this.state.tabChildren}</Tabs>
           </div>
         </div>
       </div>
