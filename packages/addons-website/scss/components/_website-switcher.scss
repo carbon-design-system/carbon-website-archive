@@ -3,19 +3,20 @@
 .#{$prefix}--website-switcher {
   position: fixed;
   right: 0;
-  width: 0;
+  width: rem(256px);
   background-color: $ibm-colors__gray--100;
   height: 100%;
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  will-change: width;
-  transition: width 0.11s cubic-bezier(0.2, 0, 1, 0.9);
+  transform: translate(16rem);
+  will-change: transform;
+  transition: transform 0.11s cubic-bezier(0.2, 0, 1, 0.9);
   overflow-y: auto;
   overflow-x: hidden;
 }
 
 .#{$prefix}--website-switcher--expanded {
-  width: mini-units(32);
+  transform: translate(0);
 }
 
 .#{$prefix}--website-switcher-list__item--current {
@@ -28,7 +29,7 @@
     display: block;
     position: absolute;
     bottom: -.5rem;
-    width: mini-units(28);
+    width: rem(222px);
     border-top: 1px solid $ibm-colors__gray--80;
   }
 }
