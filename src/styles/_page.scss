@@ -4,8 +4,6 @@
 
 body {
   background: $ui-01;
-  line-height: 1.5;
-  font-family: $font-family;
 }
 
 .side-nav + div, //Issue #51 weird bug where sometimes on reload of the page the classnames on container div disapear 
@@ -40,12 +38,6 @@ body {
 //---------------------------------------
 // Page styles
 //---------------------------------------
-
-button,
-.side-nav .bx--btn {
-  font-family: $font-family;
-}
-
 .page-content {
   padding-top: rem(64px);
   padding-bottom: rem(64px);
@@ -75,16 +67,14 @@ button,
   li > code,
   td > code {
     @include reset;
-    font-family: $font-family-mono;
+    @include type-style('code-02');
     position: relative;
     display: inline;
     padding: rem(1px) $spacing-xs;
     background: transparent;
-    font-size: inherit;
     border: 1px solid transparent;
     border-radius: 4px;
     background-color: $ibm-colors__gray--20;
-    font-size: 85%;
   }
 
   // HR dividers

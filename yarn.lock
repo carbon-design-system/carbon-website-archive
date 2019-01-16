@@ -4715,9 +4715,9 @@ carbon-components-react@6.70.0:
     window-or-global "^1.0.1"
 
 carbon-components@^9.62.6:
-  version "9.64.0"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.64.0.tgz#bcc9599545799ede9c4e721b0f306dfd54a2bcb9"
-  integrity sha512-3fh7RCrSUfWvJs/Wy6SnvXI5iPe/fYb8eYez3p16Xz/5Nw1QNR9G1IVe/6VzVbvWCQWfZdvDliMNtIDAhK/82Q==
+  version "9.66.4"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.66.4.tgz#241cb4dcc222bcd889f20b3ab01bfd7ddc9b5d58"
+  integrity sha512-ZlbII1rzgdhDhb4vCzato0IxQwAeVXXK0E1grdpbJoG2WSBSVRXk3kiDGGnjUVFWNLFl1YJ/9MmqHf43Q7Cvow==
   dependencies:
     carbon-icons "^7.0.7"
     flatpickr "4.5.2"
