@@ -168,7 +168,7 @@ class Layout extends React.Component {
               />
               {isInternal ? (
                 <HeaderName prefix="IBM" to="/" element={Link} href="/">
-                  Product Design
+                  Product Design System
                 </HeaderName>
               ) : (
                 <HeaderName prefix="" to="/" element={Link}>
