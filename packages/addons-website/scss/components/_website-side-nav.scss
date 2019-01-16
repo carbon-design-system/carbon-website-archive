@@ -16,23 +16,8 @@
     display: none;
 }
 
-
-
-.side-nav__closed,
-.side-nav__closed--final {
-  width: 0;
-}
-
-@include breakpoint('lg') {
-  .bx--side-nav.side-nav,
-  .side-nav__closed,
-  .side-nav__closed--final {
-    width: rem(256px);
-  }
-}
-
 // Bottom links
-.bx--side-nav__divider {
+.#{$prefix}--side-nav__divider {
   display: block;
   margin: rem(64px) 1rem 0;
   border-style: solid;
@@ -40,109 +25,84 @@
   border-color: $ibm-colors__gray--80;
 }
 
-.bx--side-nav--website--light .bx--side-nav__divider {
+.#{$prefix}--side-nav--website--light .#{$prefix}--side-nav__divider {
   border-color: $ui-03;
 }
 
-.bx--side-nav--website .bx--side-nav__item {
+.#{$prefix}--side-nav--website .#{$prefix}--side-nav__item {
   &:nth-last-child(2) {
-    .side-nav__website-link {
+    .#{$prefix}--side-nav--website-link {
       margin-top: 1rem;
     }
   }
 
   &:nth-last-child(2),
   &:nth-last-child(1) {
-    .side-nav__website-link {
+    .#{$prefix}--side-nav--website-link {
       flex-direction: row-reverse;
       justify-content: space-between;
     }
 
-    .side-nav__website-link > .bx--side-nav__icon {
+    .#{$prefix}--side-nav--website-link > .#{$prefix}--side-nav__icon {
       display: block;
       flex: 0;
     }
   }
 }
 
-.bx--side-nav__navigation {
+.#{$prefix}--side-nav__navigation {
   padding-top: $spacing-lg;
 }
 
 /* temp styles until shell is updated */
 
-.bx--side-nav.bx--side-nav--website .bx--side-nav__footer {
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website .#{$prefix}--side-nav__footer {
   display: none;
 }
 
-.bx--side-nav.side-nav
-  .bx--side-nav__menu[role='menu']
-  a.bx--side-nav__link[role='menuitem'] {
+.#{$prefix}--side-nav.side-nav
+  .#{$prefix}--side-nav__menu[role='menu']
+  a.#{$prefix}--side-nav__link[role='menuitem'] {
   padding-left: 1rem;
 }
 
-.bx--side-nav.bx--side-nav--website .bx--side-nav__icon:not(.bx--side-nav__submenu-chevron) {
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website .#{$prefix}--side-nav__icon:not(.#{$prefix}--side-nav__submenu-chevron) {
   display: none;
 }
 
-.bx--side-nav.bx--side-nav--website .bx--side-nav__submenu-title,
-.bx--side-nav.bx--side-nav--website .bx--side-nav__link-text {
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website .#{$prefix}--side-nav__submenu-title,
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website .#{$prefix}--side-nav__link-text {
   padding-left: 1rem;
 }
-
-//===================
-// SIDE NAV click to close
-//===================
-
-.side-nav-click-to-close {
-  display: block;
-  height: 100vh;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 500;
-}
-
-@include breakpoint('lg') {
-  .side-nav-click-to-close {
-    display: none;
-  }
-}
-
-.side-nav-click-to-close__closed {
-  display: none;
-}
-
 
 //===================
 // SIDE NAV overrides
 //===================
 
-.bx--side-nav__submenu:focus,
-a.bx--side-nav__link:focus {
+.#{$prefix}--side-nav__submenu:focus,
+a.#{$prefix}--side-nav__link:focus {
   outline: 2px solid $brand-01;
   outline-offset: -2px;
 }
 
-.bx--side-nav {
+.#{$prefix}--side-nav {
   border-top: none;
   border-right: 1px solid $ibm-colors__gray--80;
 }
 
-.bx--side-nav .bx--side-nav__item--active {
+.#{$prefix}--side-nav .#{$prefix}--side-nav__item--active {
   background: transparent;
 }
 
-.bx--side-nav.bx--side-nav--website--light .bx--side-nav__item.bx--side-nav__item--active .bx--side-nav__submenu[aria-haspopup='true'] {
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website--light .#{$prefix}--side-nav__item.#{$prefix}--side-nav__item--active .#{$prefix}--side-nav__submenu[aria-haspopup='true'] {
   color: $text-01;
 
-  .bx--side-nav__icon svg {
+  .#{$prefix}--side-nav__icon svg {
     fill: $icon-01;
   }
 }
 
-.bx--side-nav.bx--side-nav--website--light .bx--side-nav__item.bx--side-nav__item--active .bx--side-nav__submenu[aria-haspopup='true'][aria-expanded="false"] {
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website--light .#{$prefix}--side-nav__item.#{$prefix}--side-nav__item--active .#{$prefix}--side-nav__submenu[aria-haspopup='true'][aria-expanded="false"] {
   background-color: $ui-03;
   position: relative;
 
@@ -158,86 +118,86 @@ a.bx--side-nav__link:focus {
 }
 
 
-.bx--side-nav.bx--side-nav--website--light {
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website--light {
   background-color: $ui-02;
   border-right: none;
 }
 
-.bx--side-nav__navigation {
+.#{$prefix}--side-nav__navigation {
   padding-top: 1rem;
   background-color: $ui-05;
 }
 
-.bx--side-nav--website--light .bx--side-nav__navigation {
+.#{$prefix}--side-nav--website--light .#{$prefix}--side-nav__navigation {
   background-color: $ui-02;
 }
 
-.bx--side-nav--website .bx--side-nav__icon > svg {
+.#{$prefix}--side-nav--website .#{$prefix}--side-nav__icon > svg {
   fill: $active-01;
 }
 
-.bx--side-nav--website--light .bx--side-nav__icon > svg {
+.#{$prefix}--side-nav--website--light .#{$prefix}--side-nav__icon > svg {
   fill: $text-02;
 }
 
-.bx--side-nav .bx--side-nav__submenu[aria-haspopup='true'],
-.bx--side-nav__item > a.bx--side-nav__link  {
+.#{$prefix}--side-nav .#{$prefix}--side-nav__submenu[aria-haspopup='true'],
+.#{$prefix}--side-nav__item > a.#{$prefix}--side-nav__link  {
   @include type-style('heading-01');
   color: $active-01;
 }
 
-.bx--side-nav a.bx--side-nav__link > .bx--side-nav__link-text {
+.#{$prefix}--side-nav a.#{$prefix}--side-nav__link > .#{$prefix}--side-nav__link-text {
   color: $active-01;
 }
 
-.bx--side-nav.bx--side-nav--website--light .bx--side-nav__item .bx--side-nav__submenu[aria-haspopup='true'],
-.bx--side-nav--website--light .bx--side-nav__item > a.bx--side-nav__link,
-.bx--side-nav.bx--side-nav--website--light a.bx--side-nav__link > .bx--side-nav__link-text
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website--light .#{$prefix}--side-nav__item .#{$prefix}--side-nav__submenu[aria-haspopup='true'],
+.#{$prefix}--side-nav--website--light .#{$prefix}--side-nav__item > a.#{$prefix}--side-nav__link,
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website--light a.#{$prefix}--side-nav__link > .#{$prefix}--side-nav__link-text
  {
   color: $text-02;
 }
 
-.bx--side-nav a.bx--side-nav__link:hover > .bx--side-nav__link-text,
-.bx--side-nav a.bx--side-nav__link[aria-current='page'] > .bx--side-nav__link-text {
+.#{$prefix}--side-nav a.#{$prefix}--side-nav__link:hover > .#{$prefix}--side-nav__link-text,
+.#{$prefix}--side-nav a.#{$prefix}--side-nav__link[aria-current='page'] > .#{$prefix}--side-nav__link-text {
   color: $ui-01;
 }
 
-.bx--side-nav.bx--side-nav--website--light a.bx--side-nav__link:hover > .bx--side-nav__link-text,
-.bx--side-nav.bx--side-nav--website--light a.bx--side-nav__link[aria-current='page'] > .bx--side-nav__link-text {
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website--light a.#{$prefix}--side-nav__link:hover > .#{$prefix}--side-nav__link-text,
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website--light a.#{$prefix}--side-nav__link[aria-current='page'] > .#{$prefix}--side-nav__link-text {
   color: $text-01;
 }
 
-.bx--side-nav__item:not(.bx--side-nav__item--active):hover {
+.#{$prefix}--side-nav__item:not(.#{$prefix}--side-nav__item--active):hover {
   background-color: $ui-05;
 }
 
-.bx--side-nav--website--light .bx--side-nav__item:not(.bx--side-nav__item--active):hover {
+.#{$prefix}--side-nav--website--light .#{$prefix}--side-nav__item:not(.#{$prefix}--side-nav__item--active):hover {
   background-color: $ui-02;
 }
 
-.bx--side-nav__item:not(.bx--side-nav__item--active):hover > .bx--side-nav__submenu,
-.bx--side-nav__menu[role='menu'] a.bx--side-nav__link[role='menuitem']:not(.bx--side-nav__link--current):not([aria-current='page']):hover,
-.bx--side-nav__item:not(.bx--side-nav__item--active):hover > .bx--side-nav__link {
+.#{$prefix}--side-nav__item:not(.#{$prefix}--side-nav__item--active):hover > .#{$prefix}--side-nav__submenu,
+.#{$prefix}--side-nav__menu[role='menu'] a.#{$prefix}--side-nav__link[role='menuitem']:not(.#{$prefix}--side-nav__link--current):not([aria-current='page']):hover,
+.#{$prefix}--side-nav__item:not(.#{$prefix}--side-nav__item--active):hover > .#{$prefix}--side-nav__link {
   background-color: #353535;
   color: $ui-01;
 
-  .bx--side-nav__icon svg {
+  .#{$prefix}--side-nav__icon svg {
     fill: $ui-01;
   }
 }
 
-.bx--side-nav--website--light .bx--side-nav__item:not(.bx--side-nav__item--active):hover > .bx--side-nav__submenu,
-.bx--side-nav--website--light .bx--side-nav__menu[role='menu'] a.bx--side-nav__link[role='menuitem']:not(.bx--side-nav__link--current):not([aria-current='page']):hover,
-.bx--side-nav--website--light .bx--side-nav__item:not(.bx--side-nav__item--active):hover > .bx--side-nav__link {
+.#{$prefix}--side-nav--website--light .#{$prefix}--side-nav__item:not(.#{$prefix}--side-nav__item--active):hover > .#{$prefix}--side-nav__submenu,
+.#{$prefix}--side-nav--website--light .#{$prefix}--side-nav__menu[role='menu'] a.#{$prefix}--side-nav__link[role='menuitem']:not(.#{$prefix}--side-nav__link--current):not([aria-current='page']):hover,
+.#{$prefix}--side-nav--website--light .#{$prefix}--side-nav__item:not(.#{$prefix}--side-nav__item--active):hover > .#{$prefix}--side-nav__link {
   background-color: #e5e5e5;
   color: $text-01;
 
-  .bx--side-nav__icon svg {
+  .#{$prefix}--side-nav__icon svg {
     fill: $text-01;
   }
 }
 
-.bx--side-nav .bx--side-nav__item .bx--side-nav__submenu[aria-expanded="true"] {
+.#{$prefix}--side-nav .#{$prefix}--side-nav__item .#{$prefix}--side-nav__submenu[aria-expanded="true"] {
   background-color: $ui-05;
   color: $active-01;
 
@@ -245,17 +205,17 @@ a.bx--side-nav__link:focus {
     background-color: #353535;
     color: $ui-01;
 
-    .bx--side-nav__icon svg {
+    .#{$prefix}--side-nav__icon svg {
       fill: $ui-01;
     }
   }
 
-  .bx--side-nav__icon svg {
+  .#{$prefix}--side-nav__icon svg {
     fill: $active-01;
   }
 }
 
-.bx--side-nav.bx--side-nav--website--light .bx--side-nav__item .bx--side-nav__submenu[aria-expanded="true"] {
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website--light .#{$prefix}--side-nav__item .#{$prefix}--side-nav__submenu[aria-expanded="true"] {
   background-color: $ui-02;
   color: $text-02;
 
@@ -263,38 +223,38 @@ a.bx--side-nav__link:focus {
     background-color: #e5e5e5;
     color: $text-01;
 
-    .bx--side-nav__icon svg {
+    .#{$prefix}--side-nav__icon svg {
       fill: $text-01;
     }
   }
 
-  .bx--side-nav__icon svg {
+  .#{$prefix}--side-nav__icon svg {
     fill: $text-02;
   }
 }
 
-.bx--side-nav a.bx--side-nav__link[aria-current='page'],
-.bx--side-nav__menu[role='menu'] a.bx--side-nav__link--current, .bx--side-nav__menu[role='menu'] a.bx--side-nav__link[aria-current='page'] {
+.#{$prefix}--side-nav a.#{$prefix}--side-nav__link[aria-current='page'],
+.#{$prefix}--side-nav__menu[role='menu'] a.#{$prefix}--side-nav__link--current, .#{$prefix}--side-nav__menu[role='menu'] a.#{$prefix}--side-nav__link[aria-current='page'] {
   background-color: $ibm-colors__gray--80;
 }
 
-.bx--side-nav.bx--side-nav--website--light a.bx--side-nav__link[aria-current='page'],
-.bx--side-nav--website--light .bx--side-nav__menu[role='menu'] a.bx--side-nav__link--current,.bx--side-nav--website--light .bx--side-nav__menu[role='menu'] a.bx--side-nav__link[aria-current='page'] {
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website--light a.#{$prefix}--side-nav__link[aria-current='page'],
+.#{$prefix}--side-nav--website--light .#{$prefix}--side-nav__menu[role='menu'] a.#{$prefix}--side-nav__link--current,.#{$prefix}--side-nav--website--light .#{$prefix}--side-nav__menu[role='menu'] a.#{$prefix}--side-nav__link[aria-current='page'] {
   background-color: $ui-03;
 }
 
-.bx--side-nav a.bx--side-nav__link,
-.bx--side-nav__submenu[aria-haspopup='true'] {
+.#{$prefix}--side-nav a.#{$prefix}--side-nav__link,
+.#{$prefix}--side-nav__submenu[aria-haspopup='true'] {
   min-height: 2rem;
   height: 2rem;
 }
 
-.bx--side-nav .bx--side-nav__icon,
-.bx--side-nav .bx--side-nav__icon svg {
+.#{$prefix}--side-nav .#{$prefix}--side-nav__icon,
+.#{$prefix}--side-nav .#{$prefix}--side-nav__icon svg {
   height: 1rem;
   width: 1rem;
 }
 
-.bx--side-nav__submenu > .bx--side-nav__icon, a.bx--side-nav__link > .bx--side-nav__icon {
+.#{$prefix}--side-nav__submenu > .#{$prefix}--side-nav__icon, a.#{$prefix}--side-nav__link > .#{$prefix}--side-nav__icon {
   margin-right: 0;
 }

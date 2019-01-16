@@ -27,17 +27,18 @@ storiesOf('Website SideNav', module)
           <SideNavLink href="#" aria-current="page">Current</SideNavLink>
           <SideNavLink href="#">Docs</SideNavLink>
           <SideNavLink href="#">Support</SideNavLink>
+          <hr className="bx--side-nav__divider" / >
           <SideNavLink
             icon={<Launch16 />}
             href="javascript:void(0)"
-            className="side-nav__website-link">
+            className="bx--side-nav--website-link">
             External Link
           </SideNavLink>
           <SideNavLink
             icon={<Launch16 />}
             href="javascript:void(0)"
             to="/resources#github"
-            className="side-nav__website-link">
+            className="bx--side-nav--website-link">
             External Link
         </SideNavLink>
         </SideNavItems>
@@ -65,17 +66,18 @@ storiesOf('Website SideNav', module)
           <SideNavLink href="#" aria-current="page">Current</SideNavLink>
           <SideNavLink href="#">Docs</SideNavLink>
           <SideNavLink href="#">Support</SideNavLink>
+          <hr className="bx--side-nav__divider" / >
           <SideNavLink
             icon={<Launch16 />}
             href="javascript:void(0)"
-            className="side-nav__website-link">
+            className="bx--side-nav--website-link">
             External Link
           </SideNavLink>
           <SideNavLink
             icon={<Launch16 />}
             href="javascript:void(0)"
             to="/resources#github"
-            className="side-nav__website-link">
+            className="bx--side-nav--website-link">
             External Link
         </SideNavLink>
         </SideNavItems>
