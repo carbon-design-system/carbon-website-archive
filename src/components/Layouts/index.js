@@ -192,6 +192,7 @@ class Layout extends React.Component {
               isSwitcherFinal={this.state.isSwitcherFinal}
               isSwitcherOpen={this.state.isSwitcherOpen}
               links={[
+                { href: 'https://www.ibm.com/design/language/', linkText: 'IBM Design Language' },
                 { href: 'https://www.ibm.com/standards/web/', linkText: 'IBM Digital Design' },
                 { href: 'https://www.ibm.com/design/', linkText: 'IBM Design' }
               ]}

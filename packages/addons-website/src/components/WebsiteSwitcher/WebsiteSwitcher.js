@@ -15,9 +15,6 @@ const WebsiteSwitcher = (props) => {
   return (
     <div className={classNames}>
       <ul className={`${prefix}--website-switcher__list`}>
-        <li className={`${prefix}--website-switcher-list__item ${prefix}--website-switcher-list__item--current`}>
-          IBM Design System
-        </li>
         {links &&
           links.map((link, i) => {
             return (
