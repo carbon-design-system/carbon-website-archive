@@ -7,7 +7,7 @@ const PageHeader = ({ children, label, title }) => {
     label != null ? (
       <header className="ibm--grid page-header__label-wrapper">
         <div className="ibm--row">
-          <div className="ibm--col-lg-6 ibm--offset-lg-4">
+          <div className="ibm--col-lg-6 ibm--col-md-4 ibm--offset-lg-4">
             <p className="page-header__label">{label}</p>
           </div>
         </div>
@@ -24,9 +24,9 @@ const PageHeader = ({ children, label, title }) => {
       <div className="ibm--grid">
         <div className="ibm--row">
           <div className="ibm--col-lg-12 ibm--offset-lg-4">
-            <h1 id="page-title" className="page-header__title">
+            <h2 id="page-title" className="page-header__title bx--type-display-01">
               {title}
-            </h1>
+            </h2>
           </div>
         </div>
       </div>
