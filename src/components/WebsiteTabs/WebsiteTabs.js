@@ -14,10 +14,31 @@ export default class WebsiteTabs extends React.Component {
       return child.type && child.type.displayName === 'Tab';
     });
 
+    console.log('!! WebsiteTabs !!');
+
+    const showTabsAtSmallSize = () => {
+      let shouldShowTabs = false;
+      console.log('show tabs??');
+      console.log(window.innerWidth);
+      console.log(tabChildren.length);
+      if (window.innerWidth <= 500) {
+        console.log('📱📱📱 small breakpoint!!');
+        if (tabChildren.length <= 2) {
+          shouldShowTabs = true;
+        }
+      } else if (window.innerWidth <= 768) {
+        console.log('🖥🖥🖥🖥 medium breakpoint!!');
+        if (tabChildren.length <= 3) {
+          shouldShowTabs = true;
+        }
+      }
+      return shouldShowTabs;
+    };
+
     const classNames = classnames({
       'website-tabs': true,
-      'two-tabs': !(tabChildren.length > 2),
-      'three-plus-tabs': tabChildren.length > 2,
+      'bp-tabs-shown': showTabsAtSmallSize(),
+      'bp-tabs-not-shown': !showTabsAtSmallSize(),
     });
 
     return (

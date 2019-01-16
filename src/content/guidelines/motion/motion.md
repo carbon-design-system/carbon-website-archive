@@ -22,14 +22,5 @@ lorem ipsum dolor sit amet
 Content for second tab goes here.
 
 </div></tab>
-<tab label="tab 3"><div>
 
-Content for third tab goes here.
-
-</div></tab>
-<tab label="tab 4"><div>
-
-Content for fourth tab goes here.
-
-</div></tab>
 </website-tabs>
