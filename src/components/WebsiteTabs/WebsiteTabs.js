@@ -11,7 +11,6 @@ import classnames from 'classnames';
 export default class WebsiteTabs extends React.Component {
   constructor() {
     super();
-    // this.updateDimensions = this.updateDimensions.bind(this);
     this.state = {
       displayTabsAtSmallerBreakpoints: false,
     };
@@ -19,16 +18,17 @@ export default class WebsiteTabs extends React.Component {
   }
 
   /**
-   * Calculate & Update state of new dimensions
+   * check browser width. checking to see if when need to display
+   * tabs or the default dropdown while at a smaller screen size
    */
   updateDimensions = () => {
     let shouldShowTabs = false;
     if (window.innerWidth <= 500) {
-      if (this.tabChildren.length > 0 && this.tabChildren.length <= 2) {
+      if (this.tabChildren.length <= 2) {
         shouldShowTabs = true;
       }
     } else if (window.innerWidth <= 768) {
-      if (this.tabChildren.length > 0 && this.tabChildren.length <= 3) {
+      if (this.tabChildren.length <= 3) {
         shouldShowTabs = true;
       }
     }
