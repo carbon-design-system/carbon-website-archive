@@ -128,34 +128,49 @@ button,
   }
 }
 
-.ibm--row .gatsby-resp-image-wrapper {
-  margin-left: 0!important;
-}
-
-// All em on Markdown pages after images and image grid
-.gatsby-resp-image-link + em,
-.gatsby-resp-image-wrapper + div > div > p > em {
-  @include type-style('body-short-01');
-  font-style: normal;
-  padding-top: $spacing-xs;
-  color: $text-01;
-  display: block;
-
-  @include breakpoint('lg') {
-    padding-right: 35%;
-  }
-
-  @include breakpoint('lg') {
-    padding-right: 44%;
-  }
+img[src*="svg"] + img[src*="svg"],
+.gatsby-resp-image-wrapper + .gatsby-resp-image-wrapper {
+  margin-top: 4rem;
 }
 
 //svg images
 .page-content > div > img[src*="svg"] {
   background: $ui-02;
-  margin-bottom: $spacing-xl;
+  margin-bottom: -6px; //needed to match alignment with other images on the page
 
   @include breakpoint('lg') {
     margin-left: calc(25% + .5rem)!important;
   }
+}
+
+
+.ibm--row .gatsby-resp-image-wrapper,
+.ibm-row img[src*="svg"] { 
+  margin-left: 0!important;
+  margin-bottom: 0;
+}
+
+
+// Caption styles - All em on Markdown pages after images
+.gatsby-resp-image-link,
+.gatsby-resp-image-wrapper,
+ img[src*="svg"] {
+   + div > div > p > em {
+      @include type-style('body-short-01');
+      font-style: normal;
+      color: $text-01;
+      display: block;
+
+      @include breakpoint('lg') {
+        padding-right: 35%;
+      }
+
+      @include breakpoint('lg') {
+        padding-right: 44%;
+      }
+
+      &:first-child {
+        padding-top: $spacing-xs;
+      }
+    }
 }
