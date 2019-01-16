@@ -53,8 +53,8 @@ export default class LeftNav extends React.Component {
           const navItems = this.renderNavItems(navigation, location);
 
           const classNames = classnames('side-nav', {
-            'side-nav__closed': !isOpen,
-            'side-nav__closed--final': isFinal && !isOpen,
+            'side-nav__closed': !isLeftNavOpen,
+            'side-nav__closed--final': isLeftNavFinal && !isLeftNavOpen,
             'side-nav--light' : location.pathname !== '/'
           });
 
