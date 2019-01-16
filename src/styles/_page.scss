@@ -8,7 +8,7 @@ body {
   font-family: $font-family;
 }
 
-.side-nav + div, //Issue #51 weird bug where sometimes on reload of the page the classnames on container div disapear 
+.side-nav + div, //Issue #51 weird bug where sometimes on reload of the page the classnames on container div disapear
   .container {
   width: 100%;
   margin-left: 0;
@@ -29,12 +29,18 @@ body {
 //---------------------------------------
 .bx--header {
   z-index: 9999;
+  background-color: $ui-05;
+  border-bottom: 1px solid $ibm-colors__gray--80;
 }
 
 .bx--header__menu-trigger {
   @include breakpoint('lg') {
     display: none;
   }
+}
+
+.bx--header .bx--header__name {
+  font-size: 1rem;
 }
 
 //---------------------------------------
@@ -108,38 +114,63 @@ button,
     }
 }
 
-.ibm--row .gatsby-resp-iframe-wrapper { 
+.ibm--row .gatsby-resp-iframe-wrapper {
   margin-left: 0;
 }
 
-//images 
+//images
 .gatsby-resp-image-wrapper {
   background: $ui-02;
+  margin-left: 0!important;
+  margin-bottom: 4rem;
 
   @include breakpoint('lg') {
     margin-left: calc(25% + .5rem)!important;
   }
 }
 
-.ibm--row .gatsby-resp-image-wrapper { 
-  margin-left: auto!important;
-}
-
-// All em on Markdown pages after images and image grid
-.gatsby-resp-image-link + em,
-.gatsby-resp-image-wrapper + div > div > p > em {
-  @include type-style('body-short-01');
-  font-style: normal;
-  padding-top: $spacing-xs;
-  color: $text-02;
+img[src*="svg"] + img[src*="svg"],
+.gatsby-resp-image-wrapper + .gatsby-resp-image-wrapper {
+  //margin-top: 4rem;
 }
 
 //svg images
 .page-content > div > img[src*="svg"] {
   background: $ui-02;
-  margin-bottom: $spacing-xl;
+  margin-bottom: 4rem;
 
   @include breakpoint('lg') {
     margin-left: calc(25% + .5rem)!important;
   }
+}
+
+.ibm--row .gatsby-resp-image-wrapper,
+.ibm-row img[src*="svg"] { 
+  margin-left: 0!important;
+  margin-bottom: 0;
+}
+
+// Caption styles - All em on Markdown pages after images
+.gatsby-resp-image-link,
+.gatsby-resp-image-wrapper,
+ img[src*="svg"] {
+   + div > div > p > em {
+      @include type-style('body-short-01');
+      font-style: normal;
+      color: $text-01;
+      display: block;
+
+      @include breakpoint('lg') {
+        padding-right: 35%;
+      }
+
+      @include breakpoint('lg') {
+        padding-right: 44%;
+      }
+
+      &:first-child {
+        padding-top: $spacing-xs;
+        margin-top: -4rem; //needed because of default image spacing
+      }
+    }
 }

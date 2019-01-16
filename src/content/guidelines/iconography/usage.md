@@ -13,6 +13,7 @@ UI icons that appear within Carbon components are generally 16 px square. Icons 
 ![icon sizing](images/iconography-usage-sizing-1.svg)
 
 ![icon alignment](images/iconography-usage-sizing-2.svg)
+
 _16 px and 20 px icons are optimized to feel balanced when paired with 14pt and 16pt IBM Plex. Use 24 px and 32 px when larger icons are needed._
 
 <grid-wrapper col_lg="8" flex="true">
