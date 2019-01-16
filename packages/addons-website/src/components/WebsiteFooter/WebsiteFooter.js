@@ -59,7 +59,7 @@ const WebsiteFooter = ({ children, linksCol1, linksCol2, logoOffset }) => {
             </ul>
           </nav>
           <div
-            className={`${prefix}--website-footer__content ibm--col-lg-5 ibm--col-md-4 ibm--offset-lg-3`}>
+            className={`${prefix}--website-footer__content ibm--col-lg-5 ibm--col-md-4 ibm--offset-lg-2`}>
             {children}
           </div>
         </div>

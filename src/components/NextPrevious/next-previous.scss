@@ -1,12 +1,19 @@
 .next-previous-wrapper {
   background: $ibm-colors__gray--90;
   color: $ibm-colors__white;
+  min-height: rem(128px);
+}
+
+.next-previous-wrapper .ibm--grid,
+.next-previous-wrapper .ibm--row {
+  min-height: rem(128px);
 }
 
 .next-previous-link {
+  position: relative;
   color: $ibm-colors__white;
-  padding-bottom: 2em;
-  padding-top: 2em;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
   text-decoration: none;
   transition: 0.35s ease all;
 }
@@ -22,6 +29,7 @@
 }
 
 .target-page-name {
-  display: block;
   @include type-style('heading-03');
+  display: block;
+  max-width: rem(300px);
 }
