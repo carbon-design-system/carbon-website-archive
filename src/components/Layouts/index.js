@@ -58,6 +58,7 @@ class Layout extends React.Component {
         });
       }, 5);
     }
+
   };
 
   handleClose = evt => {
