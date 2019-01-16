@@ -41,14 +41,6 @@ export default class LeftNav extends React.Component {
 
     const { isLeftNavOpen, isLeftNavFinal } = this.props;
 
-<<<<<<< HEAD
-    const classNames = classnames('side-nav', {
-      'side-nav__closed': !isLeftNavOpen,
-      'side-nav__closed--final': isLeftNavFinal && !isLeftNavOpen,
-    });
-
-=======
->>>>>>> e1426f229ad0b7bb2f3653a14591267f1e6a3b82
     const classNamesClickToClose = classnames({
       'side-nav-click-to-close': true,
       'side-nav-click-to-close__closed': !isLeftNavOpen,
