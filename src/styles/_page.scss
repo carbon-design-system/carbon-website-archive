@@ -152,7 +152,6 @@ img[src*="svg"] + img[src*="svg"],
    + div > div > p > em {
       @include type-style('body-short-01');
       font-style: normal;
-      padding-top: $spacing-xs;
       color: $text-01;
       display: block;
 
@@ -162,6 +161,10 @@ img[src*="svg"] + img[src*="svg"],
 
       @include breakpoint('lg') {
         padding-right: 44%;
+      }
+
+      &:first-child {
+        padding-top: $spacing-xs;
       }
     }
 }
