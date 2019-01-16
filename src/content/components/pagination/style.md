@@ -6,12 +6,12 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                          | Property         | SCSS     | HEX     |
-| ------------------------------ | ---------------- | -------- | ------- |
-| `.bx--pagination`              | background-color | $ui-01   | #ffffff |
-| `.bx--pagination`              | border           | $ui-04   | #8897a2 |
-| `.bx--pagination__text`        | color            | $text-02 | #5a6872 |
-| `.bx--pagination__button-icon` | fill             | $ui-05   | #5a6872 |
+| Class                          | Property         | SCSS     |
+| ------------------------------ | ---------------- | -------- |
+| `.bx--pagination`              | background-color | $ui-01   |
+| `.bx--pagination`              | border           | $ui-04   |
+| `.bx--pagination__text`        | color            | $text-02 |
+| `.bx--pagination__button-icon` | fill             | $ui-05   |
 
 ## Typography
 
@@ -37,4 +37,5 @@ The Pagination bar is most commonly used in [Data Tables](/components/data-table
 | `.bx--pagination .bx--select-input`                         | padding-right               | 20 / 1.25 | -             |
 
 ![Structure and spacing for pagination](images/pagination-style-1.png)
+
 _Structure and spacing measurements for Pagination | px / rem_

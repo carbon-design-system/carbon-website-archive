@@ -1,6 +1,6 @@
 ---
 title: Checkbox
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 **Checkboxes** are used for a list of options where the user may select multiple options, including all or none.
@@ -37,10 +37,7 @@ See the [Data Table](/components/data-table/usage) section for guidance on how t
 
 The default view of a set of checkboxes is having no option selected.
 
-<div class="image-component">
-    <img src="images/checkbox-usage-1.png" alt="The default state for checkboxes is unchecked." />
-</div>
-
+![The default state for checkboxes is unchecked.](images/checkbox-usage-1.png)  
 _By default, checkboxes are unchecked._
 
 ### Related Components

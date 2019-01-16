@@ -1,6 +1,6 @@
 ---
 
-title: Number Input
+title: Number input
 tabs: ['Code', 'Usage', 'Style']
 ---
 
@@ -8,27 +8,28 @@ tabs: ['Code', 'Usage', 'Style']
 
 Inputs come in two different colors. The default input color is `$field-01` and is used on `$ui-01` page backgrounds. The light version input color is `$field-02` and is used on `$ui-02` page backgrounds.
 
-| Class                              | Property         | SCSS      | HEX     |
-| ---------------------------------- | ---------------- | --------- | ------- |
-| `.bx--number`                      | background-color | $field-01 | #f4f7fb |
-| `.bx--number--light`               | background-color | $field-02 | #ffffff |
-| `.bx--label`                       | color            | $text-01  | #152935 |
-| `.bx--number input[type='number']` | color            | $text-01  | #152935 |
-| `.bx--number input[type='number']` | box-shadow       | $ui-05    | #5a6872 |
-| `.bx--number__controls svg`        | fill             | $brand-01 | #3d70b2 |
+| Class                              | Property         | SCSS      |
+| ---------------------------------- | ---------------- | --------- |
+| `.bx--number`                      | background-color | $field-01 |
+| `.bx--number--light`               | background-color | $field-02 |
+| `.bx--label`                       | color            | $text-01  |
+| `.bx--number input[type='number']` | color            | $text-01  |
+| `.bx--number input[type='number']` | box-shadow       | $ui-05    |
+| `.bx--number__controls svg`        | fill             | $brand-01 |
 
 ![Number Input example in $field-01 and $field-02](images/number-input-style-2.png)
+
 _Number Input example in $field-02 (left) and $field-01 (right)_
 
 ### States
 
-| Class                                                               | Property   | SCSS        | HEX     |
-| ------------------------------------------------------------------- | ---------- | ----------- | ------- |
-| `.bx--number input[type='number']:focus`                            | box-shadow | $brand-01   | #3d70b2 |
-| `.bx--number input[type='number']:focus ~ .bx--label`               | color      | $brand-01   | #3d70b2 |
-| `.bx--number[data-invalid] input[type='number']`                    | box-shadow | $support-01 | #e0182d |
-| `.bx--number[data-invalid] input[type='number']:focus ~ .bx--label` | color      | $support-01 | #e0182d |
-| `.bx--form-requirement`                                             | color      | $support-01 | #e0182d |
+| Class                                                               | Property   | SCSS        |
+| ------------------------------------------------------------------- | ---------- | ----------- |
+| `.bx--number input[type='number']:focus`                            | box-shadow | $brand-01   |
+| `.bx--number input[type='number']:focus ~ .bx--label`               | color      | $brand-01   |
+| `.bx--number[data-invalid] input[type='number']`                    | box-shadow | $support-01 |
+| `.bx--number[data-invalid] input[type='number']:focus ~ .bx--label` | color      | $support-01 |
+| `.bx--form-requirement`                                             | color      | $support-01 |
 
 **Active:** Number input should have a default number to start. The input should never be empty.
 
@@ -60,8 +61,6 @@ The height of a Number Input is always the same. The width however, varies based
 | `.bx--number input[type='number']`       | box-shadow    | 1px      | -             |
 | `.bx--number input[type='number']:focus` | box-shadow    | 2px      | -             |
 
-<div class="image-component">
-    <img src="images/number-input-style-1.png" alt="Structure and spacing for number input" />
-</div>
+![Structure and spacing for number input](images/number-input-style-1.png)
 
 _Structure and spacing measurements for a Number Input | px / rem_

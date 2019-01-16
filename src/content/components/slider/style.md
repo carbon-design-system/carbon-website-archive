@@ -6,13 +6,13 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                       | Attribute        | SCSS      | HEX     |
-| --------------------------- | ---------------- | --------- | ------- |
-| `.bx--slider__thumb`        | fill             | $brand-01 | #3d70b2 |
-| `.bx--slider__filled-track` | background-color | $brand-01 | #3d70b2 |
-| `.bx--slider__track`        | background-color | $ui-04    | #5a6872 |
-| `.bx--label`                | color            | $text-01  | #152935 |
-| `.bx--slider__range-label`  | color            | $text-02  | #5a6872 |
+| Class                       | Attribute        | SCSS      |
+| --------------------------- | ---------------- | --------- |
+| `.bx--slider__thumb`        | fill             | $brand-01 |
+| `.bx--slider__filled-track` | background-color | $brand-01 |
+| `.bx--slider__track`        | background-color | $ui-04    |
+| `.bx--label`                | color            | $text-01  |
+| `.bx--slider__range-label`  | color            | $text-02  |
 
 ## Typography
 

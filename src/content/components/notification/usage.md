@@ -1,6 +1,6 @@
 ---
 title: Notification
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## Format

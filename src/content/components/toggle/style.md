@@ -6,18 +6,16 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                                                                    | Property                 | SCSS      | HEX     |
-| ------------------------------------------------------------------------ | ------------------------ | --------- | ------- |
-| `.bx--toggle__appearance:after`                                          | background-color         | $ui-01    | #ffffff |
-| `.bx--toggle__appearance:after`                                          | border                   | $ui-05    | #5a6872 |
-| `.bx--toggle--small + .bx--toggle__label .bx--toggle__appearance:before` | border                   | $ui-05    | #5a6872 |
-| `.bx--toggle:checked + .bx--toggle__label .bx--toggle__appearance:after` | background-color, border | $brand-01 | #3d70b2 |
-| `.bx--toggle__check`                                                     | fill                     | $brand-01 | #3d70b2 |
-| `.bx--toggle__label`                                                     | color                    | $text-01  | #152935 |
+| Class                                                                    | Property                 | SCSS      |
+| ------------------------------------------------------------------------ | ------------------------ | --------- |
+| `.bx--toggle__appearance:after`                                          | background-color         | $ui-01    |
+| `.bx--toggle__appearance:after`                                          | border                   | $ui-05    |
+| `.bx--toggle--small + .bx--toggle__label .bx--toggle__appearance:before` | border                   | $ui-05    |
+| `.bx--toggle:checked + .bx--toggle__label .bx--toggle__appearance:after` | background-color, border | $brand-01 |
+| `.bx--toggle__check`                                                     | fill                     | $brand-01 |
+| `.bx--toggle__label`                                                     | color                    | $text-01  |
 
-<div class="image-component">
-    <img src="images/toggle-style-1.png" alt="Inactive, inactive hover, and active states for a Toggle" />
-</div>
+![Inactive, inactive hover, and active states for a Toggle](images/toggle-style-1.png)
 
 _Examples of inactive, inactive hover, and active states for a Toggle_
 
@@ -42,9 +40,7 @@ Toggle labels should be set in sentence case, with only the first word in a phra
 | `.bx--toggle__label`                                       | margin-top, margin-bottom | 16 / 1   | $spacing-md   |
 | `.bx--toggle__text--left` </br> `.bx--toggle__text--right` | margin-right, margin-left | 8 / 0.5  | $spacing-xs   |
 
-<div class="image-component">
-    <img src="images/toggle-style-2.png" alt="Structure and spacing measurements for toggle" />
-</div>
+![Structure and spacing measurements for toggle](images/toggle-style-2.png)
 
 _Structure and spacing measurements for Toggle | px / rem_
 
@@ -58,4 +54,5 @@ _Structure and spacing measurements for Toggle | px / rem_
 | `.bx--toggle--small`                                                    | margin-top, margin-bottom | 16 / 1     | $spacing-md   |
 
 ![Structure and spacing measurements for small toggle](images/toggle-style-3.png)
+
 _Structure and spacing measurements for Small Toggle | px / rem_

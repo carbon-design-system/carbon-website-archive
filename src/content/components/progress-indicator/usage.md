@@ -1,6 +1,6 @@
 ---
-title: Progress Indicator
-tabs: ['Code', 'Usage']
+title: Progress indicator
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## General guidelines
