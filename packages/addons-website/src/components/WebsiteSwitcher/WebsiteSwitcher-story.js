@@ -7,7 +7,7 @@ storiesOf('Website Switcher', module).add(
   () => (
     <WebsiteSwitcher
       links={[
-        { href: 'https://www.ibm.com/privacy', linkText: 'IBM Digital Design' },
+        { href: 'https://www.ibm.com/standards/web/', linkText: 'IBM Digital Design' },
         { href: 'https://www.ibm.com/design/', linkText: 'IBM Design' }
       ]}>
     </WebsiteSwitcher>

@@ -6,7 +6,7 @@ import { settings } from 'carbon-components';
 const { prefix } = settings;
 
 const WebsiteSwitcher = (props) => {
-  const { isSwitcherOpen, isSwitcherFinal } = props;
+  const { isSwitcherOpen, isSwitcherFinal, links } = props;
 
   const classNames = classnames(`${prefix}--website-switcher`, {
     [`${prefix}--website-switcher--expanded`]: isSwitcherOpen
@@ -18,14 +18,31 @@ const WebsiteSwitcher = (props) => {
         <li className={`${prefix}--website-switcher-list__item ${prefix}--website-switcher-list__item--current`}>
           IBM Design System
         </li>
-        <li className={`${prefix}--website-switcher-list__item`}>
-          <a className={`${prefix}--website-switcher-list__item-link`} tabIndex="0" href="#">
-            IBM Design System
-          </a>
-        </li>
+        {links &&
+          links.map((link, i) => {
+            return (
+              <li 
+                key={i}
+                className={`${prefix}--website-switcher-list__item`}>
+                <a
+                  className={`${prefix}--website-switcher-list__item-link`}
+                  href={link.href}
+                  aria-label={link.linkText}>
+                  {link.linkText}
+                </a>
+              </li>
+            );
+          })}
       </ul>
     </div>
   );
+};
+
+WebsiteSwitcher.propTypes = {
+  /**
+   * Specify an array of links
+   */
+  links: PropTypes.array,
 };
 
 export default WebsiteSwitcher;
