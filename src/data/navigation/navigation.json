@@ -72,7 +72,7 @@
         "title": "Overview"
       },
       "component-status": {
-        "title": "Component Status"
+        "title": "Component status"
       },
       "accordion": {
         "title": "Accordion"
@@ -176,7 +176,7 @@
         "title": "About"
       },
       "ui-shell": {
-        "title": "UI Shell"
+        "title": "UI shell"
       }
     }
   },
@@ -224,7 +224,7 @@
         "title": "What's new"
       },
       "release-highlights": {
-        "title": "Release Highlights"
+        "title": "Release highlights"
       },
       "migrating-to-carbon-x": {
         "title": "Migrating to Carbon X"

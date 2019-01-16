@@ -12,7 +12,7 @@ jobs:
       - run:
           name: Confirm project can build
           command: |
-            yarn build:external
+            yarn build:external && yarn storybook:build
       - deploy:
           name: deploy next to IBM Cloud
           command: |
@@ -32,30 +32,6 @@ jobs:
 
               ibmcloud cf blue-green-deploy carbon-website-next \
                 -f .circleci/manifest.next.yml \
-                --delete-old-apps
-            fi
-      - deploy:
-          name: deploy website-addons to IBM Cloud
-          command: |
-            if [ "${CIRCLE_BRANCH}" == "v10" ]; then
-              # Install `ibmcloud` CLI
-              curl -fsSL https://clis.ng.bluemix.net/install/linux | sh
-
-              # Login and push staging manifest
-              ibmcloud login \
-                --apikey $CLOUD_API_KEY \
-                -a https://api.ng.bluemix.net \
-                -o carbon-design-system \
-                -s production
-
-              ibmcloud cf add-plugin-repo CF-Community https://plugins.cloudfoundry.org
-              ibmcloud cf install-plugin blue-green-deploy -f -r CF-Community
-
-              # Default storybook build
-              yarn build-storybook
-
-              ibmcloud cf blue-green-deploy carbon-website-addons-storybook \
-                -f .circleci/manifest.website-addons.yml \
                 --delete-old-apps
             fi
 

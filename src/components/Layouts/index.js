@@ -17,6 +17,7 @@ import {
 import { AppSwitcher20, Menu32, Close20 } from '@carbon/icons-react';
 import { WebsiteFooter, WebsiteSwitcher } from '@carbon/addons-website';
 
+import timestamp from 'raw-loader!../../../build-timestamp';
 import '../../styles/index.scss';
 import '../../styles/experimental.scss';
 
@@ -112,8 +113,11 @@ class Layout extends React.Component {
     const version = Packages.dependencies['carbon-components'];
     const reactVersion = Packages.dependencies['carbon-components-react'];
     const currentYear = new Date().getFullYear();
-
-    const lastUpdated = 'December 19, 2018';
+    const lastUpdated = new Intl.DateTimeFormat(undefined, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    }).format(new Date(Number(timestamp)));
 
     return (
       <StaticQuery

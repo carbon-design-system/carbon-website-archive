@@ -42,10 +42,7 @@ Width varies based on content length.
 | Height            | 26  | 1.625 |
 | Padding: Internal | 10  | 0.625 |
 
-<div class="image-component">
-    <img src="images/style-tooltip-1.png" alt="Example of a Small Tooltip" />
-</div>
-
+![Example of a Small Tooltip](images/style-tooltip-1.png)
 _Example of a Small Tooltip_
 
 ### Medium Tooltip
@@ -59,10 +56,7 @@ Width varies based on content length.
 | Color bar           | 4   | -     |
 | Maximum label width | 120 | 7.5   |
 
-<div class="image-component">
-    <img src="images/style-tooltip-2.png" alt="Example of a Medium Tooltip" />
-</div>
-
+![Example of a Medium Tooltip](images/style-tooltip-2.png)
 _Example of a Medium Tooltip_
 
 ### Large Tooltip
@@ -79,12 +73,7 @@ Width varies based on content length.
 | Color bar                         | 4   | -     |
 | Maximum label width               | 120 | 7.5   |
 
-<grid-wrapper>
-<div class="image-component">
-    <img src="images/style-tooltip-3.png" alt="Example of a Large Tooltip" />
-</div>
-</grid-wrapper>
-
+![Example of a Large Tooltip](images/images/style-tooltip-3.png)
 _Example of a Large Tooltip_
 
 ## Tooltip responsiveness

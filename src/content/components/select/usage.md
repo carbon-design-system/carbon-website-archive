@@ -1,6 +1,6 @@
 ---
 title: Select
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 | Select type   | Purpose                                                                                                                                                     |

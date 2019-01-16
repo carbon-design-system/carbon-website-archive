@@ -1,17 +1,17 @@
 ---
 
-title: Radio Button
+title: Radio button
 tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## Color
 
-| Class                                   | Property         | SCSS      | HEX     |
-| --------------------------------------- | ---------------- | --------- | ------- |
-| `.bx--radio-button__appearance`         | border           | $ui-05    | #5a6872 |
-| `.bx--radio-button__appearance`         | background-color | $ui-01    | #ffffff |
-| `.bx--radio-button__appearance:checked` | border           | $brand-01 | #3d70b2 |
-| `.bx--radio-button__appearance::before` | dot              | $brand-01 | #3d70b2 |
+| Class                                   | Property         | SCSS      |
+| --------------------------------------- | ---------------- | --------- |
+| `.bx--radio-button__appearance`         | border           | $ui-05    |
+| `.bx--radio-button__appearance`         | background-color | $ui-01    |
+| `.bx--radio-button__appearance:checked` | border           | $brand-01 |
+| `.bx--radio-button__appearance::before` | dot              | $brand-01 |
 
 ## Typography
 
@@ -31,9 +31,7 @@ Radio Button labels and headings should be set in sentence case, with only the f
 | `.bx--radio-button__label`                | margin-right  | 16 / 1     | $spacing-md   |
 | `.bx--radio-button__appearance`           | margin-right  | 8 / 0.5    | $spacing-xs   |
 
-<div class="image-component">
-    <img src="images/radio-button-style-1.png" alt="Structure and spacing measurements for a radio button" />
-</div>
+![Structure and spacing measurements for a radio button](images/radio-button-style-1.png)
 
 _Structure and spacing measurements for Radio Button | px | rem_
 
@@ -46,8 +44,6 @@ The following specs are not built into the Radio Button component but are recomm
 | `.bx--radio-button-group`  | margin        | 16 / 1   | $spacing-md   |
 | `.bx--radio-button__label` | margin-bottom | 16 / 1   | $spacing-md   |
 
-<div class="image-component">
-    <img src="images/radio-button-style-2.png" alt="Structure and spacing measurements for a radio butto" />
-</div>
+![Structure and spacing measurements for a radio button](images/radio-button-style-2.png)
 
 _Recommended structure and spacing measurements for Radio Button | px | rem_

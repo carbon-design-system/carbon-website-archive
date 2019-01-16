@@ -1,20 +1,20 @@
 ---
 
-title: Structured List
+title: Structured list
 tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## Color
 
-| Class                                                                      | Property         | SCSS       | HEX                    |
-| -------------------------------------------------------------------------- | ---------------- | ---------- | ---------------------- |
-| `.bx--structured-list-th` </br> `.bx--structured-list-td`                  | color            | $text-01   | #152935                |
-| `.bx--structured-list-row--header-row`                                     | border-bottom    | $brand-01  | #3d70b2                |
-| `.bx--structured-list-row`                                                 | border-bottom    | $ui-03     | #dfe3e6                |
-| `.bx--structured-list--border`                                             | border           | $ui-04     | #8897a2                |
-| `.bx--structured-list-row--selected`                                       | background-color | $hover-row | #5596e6 at 10% opacity |
-| `.bx--structured-list-row:hover:not(.bx--structured-list-row--header-row)` | background-color | $hover-row | #5596e6 at 10% opacity |
-| `.bx--structured-list-input:checked + .bx--structured-list-svg`            | fill             | $brand-02  | #5596e6                |
+| Class                                                                      | Property         | SCSS       |
+| -------------------------------------------------------------------------- | ---------------- | ---------- |
+| `.bx--structured-list-th` </br> `.bx--structured-list-td`                  | color            | $text-01   |
+| `.bx--structured-list-row--header-row`                                     | border-bottom    | $brand-01  |
+| `.bx--structured-list-row`                                                 | border-bottom    | $ui-03     |
+| `.bx--structured-list--border`                                             | border           | $ui-04     |
+| `.bx--structured-list-row--selected`                                       | background-color | $hover-row |
+| `.bx--structured-list-row:hover:not(.bx--structured-list-row--header-row)` | background-color | $hover-row |
+| `.bx--structured-list-input:checked + .bx--structured-list-svg`            | fill             | $brand-02  |
 
 ## Typography
 
@@ -39,7 +39,9 @@ Structured Lists by default are not accompanied by a border, but one may be adde
 | `.bx--structured-list-svg`                                | height, width               | 16 / 1      | -             |
 
 ![Spacing and measurements for Structured List](images/structured-list-style-1.png)
+
 _Spacing and measurements for Structured List | px / rem_
 
 ![Spacing and measurements for Structured List with selection](images/structured-list-style-2.png)
+
 _Spacing and measurements for Structured List with selection | px / rem_

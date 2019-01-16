@@ -6,15 +6,15 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                                                                                                | Property         | SCSS      | HEX     |
-| ---------------------------------------------------------------------------------------------------- | ---------------- | --------- | ------- |
-| `.bx--tile`                                                                                          | background-color | $ui-01    | #ffffff |
-| `.bx--tile`                                                                                          | border           | $ui-03    | #dfe3e6 |
-| `.bx--tile:focus`                                                                                    | border           | $brand-01 | #3d70b2 |
-| `.bx--tile--is-selected` </br> `.bx--tile--is-selected:hover` </br> `.bx--tile--is-selected:focus`   | border           | $brand-01 | #3d70b2 |
-| `.bx--tile__chevron svg`                                                                             | fill             | $brand-01 | #3d70b2 |
-| `.bx--tile__checkmark svg`                                                                           | fill             | $brand-01 | #3d70b2 |
-| `.bx--tile--clickable:hover` </br> `.bx--tile--selectable:hover` </br> `.bx--tile--expandable:hover` | border           | $ui-04    | #8897a2 |
+| Class                                                                                                | Property         | SCSS      |
+| ---------------------------------------------------------------------------------------------------- | ---------------- | --------- |
+| `.bx--tile`                                                                                          | background-color | $ui-01    |
+| `.bx--tile`                                                                                          | border           | $ui-03    |
+| `.bx--tile:focus`                                                                                    | border           | $brand-01 |
+| `.bx--tile--is-selected` </br> `.bx--tile--is-selected:hover` </br> `.bx--tile--is-selected:focus`   | border           | $brand-01 |
+| `.bx--tile__chevron svg`                                                                             | fill             | $brand-01 |
+| `.bx--tile__checkmark svg`                                                                           | fill             | $brand-01 |
+| `.bx--tile--clickable:hover` </br> `.bx--tile--selectable:hover` </br> `.bx--tile--expandable:hover` | border           | $ui-04    |
 
 ## Layer
 
@@ -30,10 +30,10 @@ tabs: ['Code', 'Usage', 'Style']
 | `.bx--tile` | min-width  | 128 / 8          | -             |
 | `.bx--tile` | padding    | 16 / 1 (minimum) | $spacing-md   |
 
-![Structure and spacing measurements for Tile](images/tile-style-3.png)
-_Structure and spacing measurements for Tile | px / rem_
+
 
 ![Structure and spacing measurements for Tile](images/tile-style-2.png)
+
 _Structure and spacing measurements for Tile | px / rem_
 
 ### Proportions for grid
