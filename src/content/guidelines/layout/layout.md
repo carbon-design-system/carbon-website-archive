@@ -300,7 +300,7 @@ Use the fixed sizing scale to set vertical spacing between sections, by adding i
 `vimeo: https://vimeo.com/292028388`
 
 <grid-wrapper col_lg="8" flex="true">
-    <do-don t-example correct=true label="Mini unit is the guide when needed. Spacer snaps to the text box and does not necessarily need to snap to the mini unit.">
+    <do-dont-example correct=true label="Mini unit is the guide when needed. Spacer snaps to the text box and does not necessarily need to snap to the mini unit.">
         <img src="images/Layout_overview_Visual rhythm Do.svg" alt="Always place type against the padding.">    
     </do-dont-example>
     <do-dont-example label="In Sketch, always use “Auto” in alignment to ensure the text box is fitting with the content. Spacer snaps to the text box.">
