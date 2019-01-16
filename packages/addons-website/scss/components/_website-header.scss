@@ -5,13 +5,13 @@
   z-index: 9999;
 }
 
-.#{$prefix}--header__action--active,
-.#{$prefix}--header__action--active:hover {
-  background-color: #333;
-}
-
 .#{$prefix}--header__action--active {
   border-color: transparent;
+  background: transparent;
+}
+
+.#{$prefix}--header__action--active:hover {
+  background-color: #333;
 }
 
 .#{$prefix}--header__menu-trigger svg {

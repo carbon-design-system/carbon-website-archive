@@ -113,6 +113,8 @@ class Layout extends React.Component {
       month: 'long',
       day: 'numeric',
     }).format(new Date(Number(timestamp)));
+    const { isOpen } = this.state;
+
 
     return (
       <StaticQuery
@@ -160,6 +162,7 @@ class Layout extends React.Component {
               <HeaderMenuButton
                 aria-label="Open menu"
                 onClick={this.onToggleBtnClick}
+                isActive={isOpen}
               />
               {isInternal ? (
                 <HeaderName prefix="IBM" to="/" element={Link} href="/">
