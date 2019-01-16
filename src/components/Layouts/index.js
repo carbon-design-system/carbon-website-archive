@@ -36,23 +36,25 @@ class Layout extends React.Component {
     this.checkWidth();
   }
 
-  onToggleBtnClick = (open, final) => {
-    if (this.state[open]) {
+  onToggleBtnClick = (clickedPanel, finalClickedPanel, closePanel, finalClosePanel) => {
+    if (this.state[clickedPanel]) {
       this.setState({
-        [open]: false,
+        [clickedPanel]: false,
       });
       setTimeout(() => {
         this.setState({
-          [final]: true,
+          [finalClickedPanel]: true,
         });
       }, 5);
     } else {
       this.setState({
-        [final]: false,
+        [finalClickedPanel]: false,
+        [finalClosePanel]: true,
       });
       setTimeout(() => {
         this.setState({
-          [open]: true,
+          [clickedPanel]: true,
+          [closePanel]: false,
         });
       }, 5);
     }
@@ -157,7 +159,7 @@ class Layout extends React.Component {
               <SkipToContent />
               <HeaderMenuButton
                 aria-label="Open menu"
-                onClick={() => this.onToggleBtnClick('isLeftNavOpen', 'isLeftNavFinal')}
+                onClick={() => this.onToggleBtnClick('isLeftNavOpen', 'isLeftNavFinal', 'isSwitcherOpen', 'isSwitcherFinal')}
               />
               {isInternal ? (
                 <HeaderName prefix="IBM" to="/" element={Link} href="/">
@@ -173,7 +175,7 @@ class Layout extends React.Component {
                 {/* {isInternal ? null : <GlobalSearch />} */}
                 <HeaderGlobalAction
                   aria-label="Switch"
-                  onClick={() => this.onToggleBtnClick('isSwitcherOpen', 'isSwitcherFinal')}
+                  onClick={() => this.onToggleBtnClick('isSwitcherOpen', 'isSwitcherFinal', 'isLeftNavOpen', 'isLeftNavFinal')}
                 >
                   {this.state.isSwitcherOpen ? <Close20 /> : <AppSwitcher20 />}
                 </HeaderGlobalAction>
