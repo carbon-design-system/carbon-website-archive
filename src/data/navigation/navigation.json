@@ -183,6 +183,9 @@
   "patterns": {
     "title": "Patterns",
     "sub-nav": {
+      "overview": {
+        "title": "Overview"
+      },
       "common-actions": {
         "title": "Common actions"
       },
