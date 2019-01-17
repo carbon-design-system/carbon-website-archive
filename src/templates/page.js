@@ -100,7 +100,7 @@ export default ({ data }) => {
     );
   } else if (homepage) {
     if (typeof document !== 'undefined') {
-      document.body.style.background = "#282828";
+      document.body.style.background = '#282828';
     }
 
     return (
@@ -116,9 +116,8 @@ export default ({ data }) => {
       </Layout>
     );
   } else {
-
     if (typeof document !== 'undefined') {
-      document.body.style.background = "#f3f3f3";
+      document.body.style.background = '#f3f3f3';
     }
 
     return (

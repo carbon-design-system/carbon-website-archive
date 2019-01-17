@@ -342,9 +342,7 @@ class ComponentExample extends Component {
           </div>
         </div>
         <div className="component-toolbar">
-          <div className="component-toolbar__current">
-            Vanilla JS
-          </div>
+          <div className="component-toolbar__current">Vanilla JS</div>
           <div className="component-toolbar__links">
             {hasReactVersion === 'true' && (
               <a
