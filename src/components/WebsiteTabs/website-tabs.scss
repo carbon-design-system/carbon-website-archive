@@ -26,10 +26,11 @@
   box-sizing: border-box;
   background: $ui-03;
   color: $text-01;
+  line-height: 1.5;
   padding: $spacing-sm $spacing-md;
 }
-.website-tabs a.bx--tabs__nav-link:hover .bx--tabs__nav-link,
-.website-tabs .bx--tabs__nav-item:hover:not([disabled]) .bx--tabs__nav-link {
+.website-tabs li.bx--tabs__nav-item:hover a.bx--tabs__nav-link,
+.website-tabs li.bx--tabs__nav-item:hover:not([disabled]) a.bx--tabs__nav-link {
   border-bottom: none;
 }
 
@@ -104,9 +105,8 @@
   .website-tabs.bp-tabs-shown a.bx--tabs__nav-link {
     display: block;
     height: auto;
-    line-height: 1.5;
     margin: 0;
-    padding: 0.75rem 1rem;
+    padding: $spacing-sm $spacing-md;
     text-overflow: ellipsis;
     width: 100%;
   }
@@ -117,7 +117,7 @@
 
   .website-tabs.bp-tabs-shown
     li.bx--tabs__nav-item--selected
-    .bx--tabs__nav-link {
+    a.bx--tabs__nav-link {
     font-weight: 600;
   }
 
