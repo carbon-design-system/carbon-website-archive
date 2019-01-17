@@ -1,5 +1,4 @@
 {
-
   "getting-started": {
     "title": "Getting started",
     "sub-nav": {
@@ -62,7 +61,6 @@
       "catalog-entry": {
         "title": "Catalog entry"
       }
-
     }
   },
   "components": {
@@ -206,16 +204,19 @@
   "contributing": {
     "title": "Contributing",
     "sub-nav": {
+      "governance": {
+        "title": "Governance"
+      },
       "designers": {
-      "title": "Designers"
-    },
-    "developers": {
-      "title": "Developers"
-    },
-    "add-ons": {
-      "title": "Add-ons"
+        "title": "Designers"
+      },
+      "developers": {
+        "title": "Developers"
+      },
+      "add-ons": {
+        "title": "Add-ons"
+      }
     }
-  }
   },
   "updates": {
     "title": "Updates",
@@ -241,8 +242,8 @@
         "title": "Support"
       },
       "faq": {
-          "title": "FAQ"
-        }
+        "title": "FAQ"
       }
     }
   }
+}
