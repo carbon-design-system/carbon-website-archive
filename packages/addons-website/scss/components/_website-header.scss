@@ -26,7 +26,7 @@ a.#{$prefix}--header__name {
   @include type-style('heading-02');
 }
 
-.#{$prefix}--header__action {
+.#{$prefix}--header__action--memu {
   border-width: 2px;
   display: block;
 

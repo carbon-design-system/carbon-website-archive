@@ -164,6 +164,7 @@ class Layout extends React.Component {
             <Header aria-label="Header">
               <SkipToContent />
               <HeaderMenuButton
+                className="bx--header__action--menu"
                 aria-label="Open menu"
                 onClick={() => this.onToggleBtnClick('isLeftNavOpen', 'isLeftNavFinal', 'isSwitcherOpen', 'isSwitcherFinal')}
                 isActive={isOpen}
@@ -181,6 +182,7 @@ class Layout extends React.Component {
               <HeaderGlobalBar>
                 {/* {isInternal ? null : <GlobalSearch />} */}
                 <HeaderGlobalAction
+                  className="bx--header__action--switcher"
                   aria-label="Switch"
                   onClick={() => this.onToggleBtnClick('isSwitcherOpen', 'isSwitcherFinal', 'isLeftNavOpen', 'isLeftNavFinal')}
                 >
