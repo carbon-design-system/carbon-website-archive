@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="736px" height="223px" viewBox="0 0 736 223" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>common-action-8</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1,7 L0,7 L0,1 C0,0.44771525 0.44771525,0 1,0 L7,0 L7,1 L1,1 L1,7 Z M12,4 L12,12 L4,12 L4,4 L12,4 Z M12,3 L4,3 C3.44771525,3 3,3.44771525 3,4 L3,12 C3,12.5522847 3.44771525,13 4,13 L12,13 C12.5522847,13 13,12.5522847 13,12 L13,4 C13,3.44771525 12.5522847,3 12,3 Z" id="path-1"></path>
+    </defs>
+    <g id="common-action-8" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Code-snippet_single-line-Copy-2" transform="translate(132.000000, 80.000000)">
+            <rect id="Rectangle-2-Copy-6" fill="#F3F3F3" x="0" y="31" width="448" height="32"></rect>
+            <text id="@mixin-grid-containe" font-family="IBMPlexMono, IBM Plex Mono" font-size="12" font-weight="normal" line-spacing="16" fill="#171717">
+                <tspan x="16" y="51">@mixin grid-container { width: 100%; padding-right: p</tspan>
+            </text>
+            <g id="copy-btn" transform="translate(416.000000, 31.000000)">
+                <rect id="Rectangle" fill="#BEBEBE" x="0" y="0" width="32" height="32"></rect>
+                <g id="icon/file/copy/20" transform="translate(8.000000, 8.000000)">
+                    <g id="copy" stroke-width="1" fill-rule="evenodd" transform="translate(2.000000, 2.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="icon-color" fill="#000000" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="transparent-rectangle" x="0" y="0" width="16" height="16"></rect>
+                </g>
+            </g>
+            <g id="Tooltip" transform="translate(392.000000, 0.000000)">
+                <path d="M44,24 L40,29 L36,24 L2,24 C0.8954305,24 1.3527075e-16,23.1045695 0,22 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 L79,0 C80.1045695,-2.02906125e-16 81,0.8954305 81,2 L81,22 C81,23.1045695 80.1045695,24 79,24 L44,24 Z" id="Combined-Shape" fill="#3D3D3D"></path>
+                <text id="Copied!" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="20" letter-spacing="0.100000001" fill="#F3F3F3">
+                    <tspan x="16.182" y="16">Copied!</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

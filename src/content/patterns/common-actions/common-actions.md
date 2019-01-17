@@ -28,7 +28,7 @@ title: Common Actions
 
 **Usage:** Use a _secondary button_ or a _link_.
 
-![Example of cancel in a modal](images/common-action-1.png)
+![Example of cancel in a modal](images/common-action-1.svg)
 
 _"Cancel" action as a button._
 
@@ -38,7 +38,7 @@ This action clears data from fields or removes selections. _Clear_ can also dele
 
 **Usage:** Use the `x` icon on the right side of a field, item, or value.
 
-![Example of clear in Multi-select Dropdown and in Search](images/common-action-2.png)
+![Example of clear in Multi-select Dropdown and in Search](images/common-action-2.svg)
 
 _"Clear" action in multi-select dropdown (top) and in search (bottom)._
 
@@ -48,7 +48,7 @@ This action closes the current page, window, or menu. One example is closing a s
 
 **Usage:** Use the `close` icon, which is typically placed on the upper right side of the element. Do not use _close_ in a button.
 
-![Example of close in an inline notification](images/common-action-3.png)
+![Example of close in an inline notification](images/common-action-3.svg)
 
 _"Close" action in an inline notification._
 
@@ -58,7 +58,7 @@ This action eradicates an existing object. _Delete_ actions cannot be easily und
 
 **Usage:** Use either the `delete` "trash can" icon, a _danger button_, or a danger option in a menu. A _danger modal_ is used when a warning is needed to confirm an action.
 
-![Example of delete in a Modal and Overflow Menu](images/common-action-4.png)
+![Example of delete in a Modal and Overflow Menu](images/common-action-4.svg)
 
 _"Delete" action in a modal (top) and an overflow menu (bottom)._
 
@@ -68,7 +68,7 @@ This action removes an object from a list or item; however, the object is not de
 
 **Usage:** Use as a _button_ or `subtract` icon or glyph.
 
-![Example of Remove in a Structured List](images/common-action-5.png)
+![Example of Remove in a Structured List](images/common-action-5.svg)
 
 _"Remove" action as an icon._
 
@@ -78,7 +78,7 @@ This action reverts values back to their last saved state. The last saved state 
 
 **Usage:** Typically applied as a _link_.
 
-![Example of reset in a filter](images/common-action-6.png)
+![Example of reset in a filter](images/common-action-6.svg)
 
 _"Reset" action in a filter._
 
@@ -90,7 +90,7 @@ This action adds an existing object to a list, set, or system. For example, addi
 
 **Usage:** Use a _primary button_, _button with icon_, `add--glyph` or `add--outline` icon.
 
-![Example of add as a Button with Icon in a Data Table](images/common-action-7.png)
+![Example of add as a Button with Icon in a Data Table](images/common-action-7.svg)
 
 _"Add" action as a button with icon in a data table._
 
@@ -100,7 +100,7 @@ Creates a new identical instance of the selected object(s) in a specific destina
 
 **Usage:** Use the `copy` icon with the confirmation "copied" tooltip appearing post-click.
 
-![Example of copy in a Code Snippet](images/common-action-8.png)
+![Example of copy in a Code Snippet](images/common-action-8.svg)
 
 _"Copy" action as an icon with tooltip in a code snippet._
 
@@ -110,8 +110,8 @@ This action allows data or values to be changed. _Edit_ commonly triggers a stat
 
 **Usage:** Use as an option in a menu, or as a _button_ or `edit` icon.
 
-![Example of edit in a Data Table cell](images/common-action-9.png)
-![Example of edit in an Overflow Menu](images/common-action-10.png)
+![Example of edit in a Data Table cell](images/common-action-9.svg)
+![Example of edit in an Overflow Menu](images/common-action-10.svg)
 
 _Example of "edit" options for a data table cell and overflow menu._
 
@@ -121,7 +121,7 @@ Advances the user to the next step in a sequence of steps, such as in a wizard.
 
 **Usage:** Use a _button with icon_ or a standalone `forward` icon.
 
-![Example of next as a Button with Icon](images/common-action-11.png)
+![Example of next as a Button with Icon](images/common-action-11.svg)
 
 _"Next" action as a button with icon in a wizard._
 
@@ -131,6 +131,6 @@ This action reloads the view of an object, list, or data set when the displayed 
 
 **Usage:** Use the `refresh` icon or a _button_.
 
-![Example of edit in a Data Table cell](images/common-action-12.png)
+![Example of edit in a Data Table cell](images/common-action-12.svg)
 
 _"Refresh" action as a ghost button with icon in the action bar of a data table._

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="736px" height="492px" viewBox="0 0 736 492" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>common-action-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="5.88375 5 10 0.88375 9.11625 0 5 4.11625 0.88375 0 0 0.88375 4.11625 5 0 9.11625 0.88375 10 5 5.88375 9.11625 10 10 9.11625"></polygon>
+    </defs>
+    <g id="common-action-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy-4" fill-opacity="0.7" fill="#000000" x="0" y="0" width="736" height="492"></rect>
+        <g id="color/gray/10" transform="translate(112.000000, 115.000000)" fill="#F3F3F3">
+            <rect x="0" y="0" width="512" height="182"></rect>
+        </g>
+        <g id="color/gray/10" transform="translate(112.000000, 113.000000)" fill="#F3F3F3">
+            <rect x="0" y="0" width="512" height="233"></rect>
+        </g>
+        <g id="color/blue/60" transform="translate(368.000000, 298.000000)" fill="#0F6DFF">
+            <rect x="0" y="0" width="256" height="64"></rect>
+        </g>
+        <g id="color/gray/80" transform="translate(112.000000, 298.000000)" fill="#3D3D3D">
+            <rect x="0" y="0" width="256" height="64"></rect>
+        </g>
+        <text id="Cancel-Copy" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" fill="#FFFFFF">
+            <tspan x="128" y="328">Cancel</tspan>
+        </text>
+        <text id="Save-Copy" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" fill="#FFFFFF">
+            <tspan x="384" y="328">Save</tspan>
+        </text>
+        <g id="icon/navigation/close/20" transform="translate(590.000000, 127.000000)">
+            <g id="Group">
+                <g id="close" transform="translate(5.000000, 5.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="icon-color" fill="#000000" xlink:href="#path-1"></use>
+                </g>
+                <rect id="transparent-rectangle" x="0" y="0" width="20" height="20"></rect>
+            </g>
+        </g>
+        <text id="Optional-label-Copy-4" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="20" fill="#565656">
+            <tspan x="128" y="143">Optional label</tspan>
+        </text>
+        <text id="Transactional-modal" font-family="IBMPlexSans, IBM Plex Sans" font-size="20" font-weight="normal" line-spacing="26" fill="#171717">
+            <tspan x="128" y="177">Transactional modal title</tspan>
+        </text>
+        <text id="Lorem-ipsum-dolor-si-Copy-6" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="20" fill="#171717">
+            <tspan x="128" y="204">Lorem ipsum dolor sit lorem a amet, consectetur </tspan>
+            <tspan x="128" y="224">adipiscing elit, sed do eiusmod tempor incididunt ut labore </tspan>
+            <tspan x="128" y="244">et dolore magna aliqua. Ut enim ad minim veniam.</tspan>
+        </text>
+    </g>
+</svg>
