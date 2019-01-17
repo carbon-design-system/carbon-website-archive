@@ -80,9 +80,9 @@ To use front- and end-line truncation, enter the appropriate class below and add
 
 **Result**
 
-<grid-wrapper>
-<img src="https://media.github.ibm.com/user/1679/files/1c695894-538c-11e8-8cd2-bb0b1cac151b" alt="Result" style="width: 20%; margin-top: 0" />
-</grid-wrapper>
+
+![Result.](images/1c695894-538c-11e8-8cd2-bb0b1cac151b.svg)
+
 
 #### Mid-line truncation
 
