@@ -217,7 +217,8 @@ class Layout extends React.Component {
                   },
                 ]}>
                 <p>
-                  Have questions? Email us or open an issue in{' '}
+                  Have questions? Email us or open an issue <br />
+                  in{' '}
                   <a href="https://github.com/carbon-design-system/carbon-website/issues/new/choose">
                     GitHub.
                   </a>
