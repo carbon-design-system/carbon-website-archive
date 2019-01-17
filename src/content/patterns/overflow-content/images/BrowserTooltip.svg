@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="736px" height="404px" viewBox="0 0 736 404" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>BrowserTooltip</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="4.707 4 8 0.707 7.293 0 4 3.293 0.707 0 0 0.707 3.293 4 0 7.293 0.707 8 4 4.707 7.293 8 8 7.293"></polygon>
+        <polygon id="path-3" points="4.707 4 8 0.707 7.293 0 4 3.293 0.707 0 0 0.707 3.293 4 0 7.293 0.707 8 4 4.707 7.293 8 8 7.293"></polygon>
+        <filter x="-61.5%" y="-40.0%" width="223.1%" height="180.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.404900046 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-6" x="0" y="0" width="302.5" height="24.5"></rect>
+        <filter x="-4.8%" y="-51.0%" width="109.6%" height="218.4%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.244565217 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="BrowserTooltip" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="Only-.jpg-and-.png-f" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.100000001" fill="#565656">
+            <tspan x="256" y="122">Only .jpg and .png files. 500km </tspan>
+            <tspan x="256" y="140">max file size.</tspan>
+        </text>
+        <text id="Account-photo-Copy" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" line-spacing="20" letter-spacing="0.1" fill="#171717">
+            <tspan x="256" y="94">Account photo</tspan>
+        </text>
+        <g id="components-light/lg/button-fixed/primary/active/max-width/4-unit-height" transform="translate(256.000000, 160.000000)">
+            <g id="color/blue/60" fill="#0062FF">
+                <rect x="0" y="0" width="96" height="32"></rect>
+            </g>
+            <g id="color/blue/50" opacity="0.3" fill="#408BFC">
+                <rect x="0" y="0" width="96" height="32"></rect>
+            </g>
+            <g id="text/shared/B-tight-—-body/white" transform="translate(16.000000, 7.000000)" fill="#FFFFFF" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" letter-spacing="0.100000001" line-spacing="18">
+                <text id="B-tight-—-Body-copy">
+                    <tspan x="0" y="14">Add file</tspan>
+                </text>
+            </g>
+        </g>
+        <rect id="Rectangle-2-Copy-31" fill="#F3F3F3" x="256" y="216" width="224" height="32"></rect>
+        <rect id="Rectangle-2-Copy-33" fill="#F3F3F3" x="256" y="256" width="224" height="32"></rect>
+        <text id="Document_01.pdf-Copy-5" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="24" fill="#171717">
+            <tspan x="272" y="238">Document_01.pdf</tspan>
+        </text>
+        <text id="Long-file-name-to…lt" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="24" fill="#171717">
+            <tspan x="272" y="274">Long-file-name-to…ltip.png</tspan>
+        </text>
+        <g id="icon/navigation/close/16" transform="translate(456.000000, 224.000000)">
+            <g id="Group">
+                <g id="close" transform="translate(4.000000, 4.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="icon-color" fill="#000000" xlink:href="#path-1"></use>
+                </g>
+                <rect id="transparent-rectangle" x="0" y="0" width="16" height="16"></rect>
+            </g>
+        </g>
+        <g id="icon/navigation/close/16" transform="translate(456.000000, 264.000000)">
+            <g id="Group">
+                <g id="close" transform="translate(4.000000, 4.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="icon-color" fill="#000000" xlink:href="#path-3"></use>
+                </g>
+                <rect id="transparent-rectangle" x="0" y="0" width="16" height="16"></rect>
+            </g>
+        </g>
+        <g id="Group" transform="translate(318.000000, 284.000000)">
+            <g id="Group-2-Copy-41">
+                <g id="Default" filter="url(#filter-5)">
+                    <polygon id="White-outline" fill="#FFFFFF" points="7.01124879 20 9.1396432 18.8896269 10.9847087 17.9608104 8.05088321 12.6292483 13 12.6292483 0 0 0 17.7294365 3.78838211 14.1636223"></polygon>
+                    <polygon id="Black" fill="#000000" points="7.09061682 18 9.07005607 16.938642 5.95865341 11.0717347 10 11.0717347 1 2 1 14.6189939 3.83719977 11.8645477"></polygon>
+                </g>
+            </g>
+            <g id="Group-15" transform="translate(13.000000, 15.000000)">
+                <g id="Rectangle" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                    <rect stroke="#95989A" stroke-width="1" stroke-linejoin="square" fill="#F0F1F1" fill-rule="evenodd" x="0.5" y="0.5" width="301.5" height="23.5"></rect>
+                </g>
+                <text id="Long-file-name-to-sh" font-family="Helvetica" font-size="14" font-weight="normal" fill="#171717">
+                    <tspan x="9" y="17">Long-file-name-to-show-a-browser-tooltip.png</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
