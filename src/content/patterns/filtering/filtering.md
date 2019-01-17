@@ -100,4 +100,3 @@ If multiple categories have been applied to the same data set then there should 
 ![Filter reset example](images/filter-7.svg)
 
 _Filter reset example for all categories and a single category_
-.svg
