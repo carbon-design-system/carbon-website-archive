@@ -1,3 +1,7 @@
+.bx--snippet--website {
+  margin-bottom: $spacing-lg;
+}
+
 .page-content .bx--snippet--single {
   background: $ui-05;
   color: $inverse-01;
@@ -6,7 +10,6 @@
 .page-content .bx--snippet--multi {
   background: $ui-05;
   color: $inverse-01;
-  margin-bottom: $spacing-lg;
 }
 
 .page-content .bx--snippet-button {
