@@ -83,3 +83,7 @@
   @include type-style('body-short-01');
   padding-bottom: 1rem;
 }
+
+.#{$prefix}--website-footer__content p:last-child {
+  padding-bottom: rem(48px);
+}
