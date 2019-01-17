@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="736px" height="414px" viewBox="0 0 736 414" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>common-action-12</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M13.75,0 L1.25,0 C0.559644063,0 0,0.559644063 0,1.25 L0,13.75 C0,14.4403559 0.559644063,15 1.25,15 L13.75,15 C14.4403559,15 15,14.4403559 15,13.75 L15,1.25 C15,0.559644063 14.4403559,0 13.75,0 Z" id="path-1"></path>
+        <path d="M13.75,0 L1.25,0 C0.559644063,0 0,0.559644063 0,1.25 L0,13.75 C0,14.4403559 0.559644063,15 1.25,15 L13.75,15 C14.4403559,15 15,14.4403559 15,13.75 L15,1.25 C15,0.559644063 14.4403559,0 13.75,0 Z M1.25,13.75 L1.25,1.25 L13.75,1.25 L13.75,13.75 L1.25,13.75 Z" id="path-3"></path>
+        <path d="M13.75,0 L1.25,0 C0.559644063,0 0,0.559644063 0,1.25 L0,13.75 C0,14.4403559 0.559644063,15 1.25,15 L13.75,15 C14.4403559,15 15,14.4403559 15,13.75 L15,1.25 C15,0.559644063 14.4403559,0 13.75,0 Z M1.25,13.75 L1.25,1.25 L13.75,1.25 L13.75,13.75 L1.25,13.75 Z" id="path-5"></path>
+        <path d="M13.75,0 L1.25,0 C0.559644063,0 0,0.559644063 0,1.25 L0,13.75 C0,14.4403559 0.559644063,15 1.25,15 L13.75,15 C14.4403559,15 15,14.4403559 15,13.75 L15,1.25 C15,0.559644063 14.4403559,0 13.75,0 Z M1.25,13.75 L1.25,1.25 L13.75,1.25 L13.75,13.75 L1.25,13.75 Z" id="path-7"></path>
+        <path d="M13.75,0 L1.25,0 C0.559644063,0 0,0.559644063 0,1.25 L0,13.75 C0,14.4403559 0.559644063,15 1.25,15 L13.75,15 C14.4403559,15 15,14.4403559 15,13.75 L15,1.25 C15,0.559644063 14.4403559,0 13.75,0 Z M1.25,13.75 L1.25,1.25 L13.75,1.25 L13.75,13.75 L1.25,13.75 Z" id="path-9"></path>
+        <path d="M13.75,0 L1.25,0 C0.559644063,0 0,0.559644063 0,1.25 L0,13.75 C0,14.4403559 0.559644063,15 1.25,15 L13.75,15 C14.4403559,15 15,14.4403559 15,13.75 L15,1.25 C15,0.559644063 14.4403559,0 13.75,0 Z M6.25,10.9375 L3.125,7.8125 L4.11875,6.875 L6.25,8.96875 L10.88125,4.375 L11.875,5.3625 L6.25,10.9375 Z" id="path-11"></path>
+        <path d="M13.75,0 L1.25,0 C0.559644063,0 0,0.559644063 0,1.25 L0,13.75 C0,14.4403559 0.559644063,15 1.25,15 L13.75,15 C14.4403559,15 15,14.4403559 15,13.75 L15,1.25 C15,0.559644063 14.4403559,0 13.75,0 Z M6.25,10.9375 L3.125,7.8125 L4.11875,6.875 L6.25,8.96875 L10.88125,4.375 L11.875,5.3625 L6.25,10.9375 Z" id="path-13"></path>
+        <path d="M13.75,0 L1.25,0 C0.559644063,0 0,0.559644063 0,1.25 L0,13.75 C0,14.4403559 0.559644063,15 1.25,15 L13.75,15 C14.4403559,15 15,14.4403559 15,13.75 L15,1.25 C15,0.559644063 14.4403559,0 13.75,0 Z M6.25,10.9375 L3.125,7.8125 L4.11875,6.875 L6.25,8.96875 L10.88125,4.375 L11.875,5.3625 L6.25,10.9375 Z" id="path-15"></path>
+        <path d="M13.75,0 L1.25,0 C0.559644063,0 0,0.559644063 0,1.25 L0,13.75 C0,14.4403559 0.559644063,15 1.25,15 L13.75,15 C14.4403559,15 15,14.4403559 15,13.75 L15,1.25 C15,0.559644063 14.4403559,0 13.75,0 Z M1.25,13.75 L1.25,1.25 L13.75,1.25 L13.75,13.75 L1.25,13.75 Z" id="path-17"></path>
+        <path d="M13.75,0 L1.25,0 C0.559644063,0 0,0.559644063 0,1.25 L0,13.75 C0,14.4403559 0.559644063,15 1.25,15 L13.75,15 C14.4403559,15 15,14.4403559 15,13.75 L15,1.25 C15,0.559644063 14.4403559,0 13.75,0 Z M6.25,10.9375 L3.125,7.8125 L4.11875,6.875 L6.25,8.96875 L10.88125,4.375 L11.875,5.3625 L6.25,10.9375 Z" id="path-19"></path>
+        <path d="M13.75,0 L1.25,0 C0.559644063,0 0,0.559644063 0,1.25 L0,13.75 C0,14.4403559 0.559644063,15 1.25,15 L13.75,15 C14.4403559,15 15,14.4403559 15,13.75 L15,1.25 C15,0.559644063 14.4403559,0 13.75,0 Z M1.25,13.75 L1.25,1.25 L13.75,1.25 L13.75,13.75 L1.25,13.75 Z" id="path-21"></path>
+        <path d="M13.75,0 L1.25,0 C0.559644063,0 0,0.559644063 0,1.25 L0,13.75 C0,14.4403559 0.559644063,15 1.25,15 L13.75,15 C14.4403559,15 15,14.4403559 15,13.75 L15,1.25 C15,0.559644063 14.4403559,0 13.75,0 Z M1.25,13.75 L1.25,1.25 L13.75,1.25 L13.75,13.75 L1.25,13.75 Z" id="path-23"></path>
+        <path d="M11,6.5 L10.295,5.795 L6.5,9.585 L6.5,0 L5.5,0 L5.5,9.585 L1.705,5.795 L1,6.5 L6,11.5 L11,6.5 Z M11,11 L11,13 L1,13 L1,11 L0,11 L0,13 C0,13.5522847 0.44771525,14 1,14 L11,14 C11.5522847,14 12,13.5522847 12,13 L12,11 L11,11 Z" id="path-25"></path>
+        <path d="M11,8.5 C11,11.2614237 8.76142375,13.5 6,13.5 C3.23857625,13.5 1,11.2614237 1,8.5 C1,5.73857625 3.23857625,3.5 6,3.5 L9.09,3.5 L7.3,5.295 L8,6 L11,3 L8,0 L7.3,0.705 L9.095,2.5 L6,2.5 C2.6862915,2.5 4.4408921e-16,5.1862915 0,8.5 C-4.4408921e-16,11.8137085 2.6862915,14.5 6,14.5 C9.3137085,14.5 12,11.8137085 12,8.5 L11,8.5 Z" id="path-27"></path>
+        <path d="M4,5 L5,5 L5,11 L4,11 L4,5 Z M7,5 L8,5 L8,11 L7,11 L7,5 Z M0,2 L0,3 L1,3 L1,13 C1,13.5522847 1.44771525,14 2,14 L10,14 C10.5522847,14 11,13.5522847 11,13 L11,3 L12,3 L12,2 L0,2 Z M2,13 L2,3 L10,3 L10,13 L2,13 Z M4,0 L8,0 L8,1 L4,1 L4,0 Z" id="path-29"></path>
+    </defs>
+    <g id="common-action-12" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(-102.000000, 16.000000)">
+            <g id="Group-7" transform="translate(118.000000, 0.000000)">
+                <rect id="Rectangle-5-Copy-13" fill="#F3F3F3" x="0" y="0" width="737" height="88"></rect>
+                <text id="Data-table-title" font-family="IBMPlexSans, IBM Plex Sans" font-size="20" font-weight="normal" line-spacing="26" fill="#252525">
+                    <tspan x="16" y="37">Data table title</tspan>
+                </text>
+                <g id="Group-6" transform="translate(0.000000, 119.000000)">
+                    <polygon id="Rectangle-5-Copy-29" fill="#DCDCDC" points="0 0 737 0 737 32 0 32"></polygon>
+                    <text id="Column-2" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" line-spacing="18" letter-spacing="0.00999999978" fill="#252525">
+                        <tspan x="248" y="21">Column 2</tspan>
+                    </text>
+                    <text id="Column-3" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" line-spacing="18" letter-spacing="0.00999999978" fill="#252525">
+                        <tspan x="440" y="21">Column 3</tspan>
+                    </text>
+                    <text id="Column-1" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" line-spacing="18" letter-spacing="0.00999999978" fill="#252525">
+                        <tspan x="56" y="21">Column 1</tspan>
+                    </text>
+                </g>
+                <g id="icon/toggle/check-box/unchecked/16-copy-14" transform="translate(16.000000, 125.000000)">
+                    <g id="check--box--unchecked" transform="translate(2.500000, 2.500000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M6.5,10 L13.5,10" id="Line" stroke="#F3F3F3" stroke-linecap="square"></path>
+                </g>
+                <g id="Row-Item---default-Copy" transform="translate(0.000000, 151.000000)">
+                    <polygon id="Rectangle-5-Copy-13" fill="#F3F3F3" points="0 0 737 0 737 32 0 32"></polygon>
+                    <g id="icon/toggle/check-box/unchecked/20" transform="translate(16.000000, 6.000000)">
+                        <g id="check--box--unchecked" stroke-width="1" fill-rule="evenodd" transform="translate(2.500000, 2.500000)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-3"></use>
+                            <g id="color/black" mask="url(#mask-4)" fill="#000000">
+                                <g transform="translate(-2.500000, -2.500000)">
+                                    <rect x="0" y="0" width="20" height="20"></rect>
+                                </g>
+                            </g>
+                        </g>
+                        <rect id="transparent-rectangle" x="0" y="0" width="20" height="20"></rect>
+                    </g>
+                    <rect id="Rectangle" fill="#DCDCDC" x="0" y="31" width="737" height="1"></rect>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="248" y="21">Row item</tspan>
+                        <tspan x="306.922" y="21"> </tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="440" y="21">Row item</tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="439" y="21">Row item</tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="56" y="21">Row item</tspan>
+                    </text>
+                </g>
+                <g id="Row-Item---default-Copy-5" transform="translate(0.000000, 279.000000)">
+                    <polygon id="Rectangle-5-Copy-13" fill="#F3F3F3" points="0 0 737 0 737 32 0 32"></polygon>
+                    <g id="icon/toggle/check-box/unchecked/20" transform="translate(16.000000, 6.000000)">
+                        <g id="check--box--unchecked" stroke-width="1" fill-rule="evenodd" transform="translate(2.500000, 2.500000)">
+                            <mask id="mask-6" fill="white">
+                                <use xlink:href="#path-5"></use>
+                            </mask>
+                            <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-5"></use>
+                            <g id="color/black" mask="url(#mask-6)" fill="#000000">
+                                <g transform="translate(-2.500000, -2.500000)">
+                                    <rect x="0" y="0" width="20" height="20"></rect>
+                                </g>
+                            </g>
+                        </g>
+                        <rect id="transparent-rectangle" x="0" y="0" width="20" height="20"></rect>
+                    </g>
+                    <rect id="Rectangle" fill="#DCDCDC" x="0" y="31" width="737" height="1"></rect>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="248" y="21">Row item</tspan>
+                        <tspan x="306.922" y="21"> </tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="440" y="21">Row item</tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="56" y="21">Row item</tspan>
+                    </text>
+                </g>
+                <g id="Row-Item---default-Copy-2" transform="translate(0.000000, 183.000000)">
+                    <polygon id="Rectangle-5-Copy-13" fill="#F3F3F3" points="0 0 737 0 737 32 0 32"></polygon>
+                    <g id="icon/toggle/check-box/unchecked/20" transform="translate(16.000000, 6.000000)">
+                        <g id="check--box--unchecked" stroke-width="1" fill-rule="evenodd" transform="translate(2.500000, 2.500000)">
+                            <mask id="mask-8" fill="white">
+                                <use xlink:href="#path-7"></use>
+                            </mask>
+                            <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-7"></use>
+                            <g id="color/black" mask="url(#mask-8)" fill="#000000">
+                                <g transform="translate(-2.500000, -2.500000)">
+                                    <rect x="0" y="0" width="20" height="20"></rect>
+                                </g>
+                            </g>
+                        </g>
+                        <rect id="transparent-rectangle" x="0" y="0" width="20" height="20"></rect>
+                    </g>
+                    <rect id="Rectangle" fill="#DCDCDC" x="0" y="31" width="737" height="1"></rect>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="248" y="21">Row item</tspan>
+                        <tspan x="306.922" y="21"> </tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="440" y="21">Row item</tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="439" y="21">Row item</tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="56" y="21">Row item</tspan>
+                    </text>
+                </g>
+                <g id="Row-Item---default-Copy-6" transform="translate(0.000000, 311.000000)">
+                    <polygon id="Rectangle-5-Copy-13" fill="#F3F3F3" points="0 0 737 0 737 32 0 32"></polygon>
+                    <g id="icon/toggle/check-box/unchecked/20" transform="translate(16.000000, 6.000000)">
+                        <g id="check--box--unchecked" stroke-width="1" fill-rule="evenodd" transform="translate(2.500000, 2.500000)">
+                            <mask id="mask-10" fill="white">
+                                <use xlink:href="#path-9"></use>
+                            </mask>
+                            <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-9"></use>
+                            <g id="color/black" mask="url(#mask-10)" fill="#000000">
+                                <g transform="translate(-2.500000, -2.500000)">
+                                    <rect x="0" y="0" width="20" height="20"></rect>
+                                </g>
+                            </g>
+                        </g>
+                        <rect id="transparent-rectangle" x="0" y="0" width="20" height="20"></rect>
+                    </g>
+                    <rect id="Rectangle" fill="#DCDCDC" x="0" y="31" width="737" height="1"></rect>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="248" y="21">Row item</tspan>
+                        <tspan x="306.922" y="21"> </tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="440" y="21">Row item</tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="56" y="21">Row item</tspan>
+                    </text>
+                </g>
+                <g id="Row-Item---selected:-last" transform="translate(0.000000, 215.000000)">
+                    <polygon id="Rectangle-5-Copy-13" fill="#DCDCDC" points="0 0 737 0 737 32 0 32"></polygon>
+                    <g id="icon/toggle/check-box/checked/filled/20" transform="translate(16.000000, 6.000000)">
+                        <g id="Group">
+                            <g id="checkbox--checked--filled" transform="translate(2.500000, 2.500000)">
+                                <mask id="mask-12" fill="white">
+                                    <use xlink:href="#path-11"></use>
+                                </mask>
+                                <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-11"></use>
+                                <g id="color/black" mask="url(#mask-12)" fill="#000000">
+                                    <g transform="translate(-2.500000, -2.500000)">
+                                        <rect x="0" y="0" width="20" height="20"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                            <rect id="transparent-rectangle" x="0" y="0" width="20" height="20"></rect>
+                        </g>
+                    </g>
+                    <rect id="border-bottom" fill="#DCDCDC" x="0" y="31" width="737" height="1"></rect>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#171717">
+                        <tspan x="248" y="21">Row item</tspan>
+                        <tspan x="306.922" y="21"> </tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#171717">
+                        <tspan x="440" y="21">Row item</tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#171717">
+                        <tspan x="56" y="21">Row item</tspan>
+                    </text>
+                </g>
+                <g id="Row-Item---default-Copy-11" transform="translate(0.000000, 183.000000)">
+                    <polygon id="Rectangle-5-Copy-13" fill="#DCDCDC" points="0 0 737 0 737 32 0 32"></polygon>
+                    <g id="icon/toggle/check-box/checked/filled/20" transform="translate(16.000000, 6.000000)">
+                        <g id="Group">
+                            <g id="checkbox--checked--filled" transform="translate(2.500000, 2.500000)">
+                                <mask id="mask-14" fill="white">
+                                    <use xlink:href="#path-13"></use>
+                                </mask>
+                                <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-13"></use>
+                                <g id="color/black" mask="url(#mask-14)" fill="#000000">
+                                    <g transform="translate(-2.500000, -2.500000)">
+                                        <rect x="0" y="0" width="20" height="20"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                            <rect id="transparent-rectangle" x="0" y="0" width="20" height="20"></rect>
+                        </g>
+                    </g>
+                    <rect id="border-bottom" fill="#BEBEBE" x="0" y="31" width="737" height="1"></rect>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#171717">
+                        <tspan x="248" y="21">Row item</tspan>
+                        <tspan x="306.922" y="21"> </tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#171717">
+                        <tspan x="440" y="21">Row item</tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#171717">
+                        <tspan x="56" y="21">Row item</tspan>
+                    </text>
+                </g>
+                <g id="Row-Item---selected:-first" transform="translate(0.000000, 151.000000)">
+                    <polygon id="Rectangle-5-Copy-13" fill="#DCDCDC" points="0 0 737 0 737 32 0 32"></polygon>
+                    <g id="icon/toggle/check-box/checked/filled/20" transform="translate(16.000000, 6.000000)">
+                        <g id="Group">
+                            <g id="checkbox--checked--filled" transform="translate(2.500000, 2.500000)">
+                                <mask id="mask-16" fill="white">
+                                    <use xlink:href="#path-15"></use>
+                                </mask>
+                                <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-15"></use>
+                                <g id="color/black" mask="url(#mask-16)" fill="#000000">
+                                    <g transform="translate(-2.500000, -2.500000)">
+                                        <rect x="0" y="0" width="20" height="20"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                            <rect id="transparent-rectangle" x="0" y="0" width="20" height="20"></rect>
+                        </g>
+                    </g>
+                    <rect id="border-bottom" fill="#BEBEBE" x="0" y="31" width="737" height="1"></rect>
+                    <rect id="border-top" fill="#BEBEBE" x="0" y="0" width="737" height="1"></rect>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#171717">
+                        <tspan x="248" y="21">Row item</tspan>
+                        <tspan x="306.922" y="21"> </tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#171717">
+                        <tspan x="440" y="21">Row item</tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#171717">
+                        <tspan x="56" y="21">Row item</tspan>
+                    </text>
+                </g>
+                <g id="Row-Item---default-Copy-7" transform="translate(0.000000, 343.000000)">
+                    <polygon id="Rectangle-5-Copy-13" fill="#F3F3F3" points="0 0 737 0 737 32 0 32"></polygon>
+                    <g id="icon/toggle/check-box/unchecked/20" transform="translate(16.000000, 6.000000)">
+                        <g id="check--box--unchecked" stroke-width="1" fill-rule="evenodd" transform="translate(2.500000, 2.500000)">
+                            <mask id="mask-18" fill="white">
+                                <use xlink:href="#path-17"></use>
+                            </mask>
+                            <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-17"></use>
+                            <g id="color/black" mask="url(#mask-18)" fill="#000000">
+                                <g transform="translate(-2.500000, -2.500000)">
+                                    <rect x="0" y="0" width="20" height="20"></rect>
+                                </g>
+                            </g>
+                        </g>
+                        <rect id="transparent-rectangle" x="0" y="0" width="20" height="20"></rect>
+                    </g>
+                    <rect id="Rectangle" fill="#DCDCDC" x="0" y="31" width="664" height="1"></rect>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="248" y="21">Row item</tspan>
+                        <tspan x="306.922" y="21"> </tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="440" y="21">Row item</tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="439" y="21">Row item</tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="56" y="21">Row item</tspan>
+                    </text>
+                </g>
+                <g id="Row-Item---select:last" transform="translate(0.000000, 343.000000)">
+                    <polygon id="Rectangle-5-Copy-13" fill="#DCDCDC" points="0 0 737 0 737 32 0 32"></polygon>
+                    <g id="icon/toggle/check-box/checked/filled/20" transform="translate(16.000000, 6.000000)">
+                        <g id="Group">
+                            <g id="checkbox--checked--filled" transform="translate(2.500000, 2.500000)">
+                                <mask id="mask-20" fill="white">
+                                    <use xlink:href="#path-19"></use>
+                                </mask>
+                                <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-19"></use>
+                                <g id="color/black" mask="url(#mask-20)" fill="#000000">
+                                    <g transform="translate(-2.500000, -2.500000)">
+                                        <rect x="0" y="0" width="20" height="20"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                            <rect id="transparent-rectangle" x="0" y="0" width="20" height="20"></rect>
+                        </g>
+                    </g>
+                    <rect id="border-bottom" fill="#DCDCDC" x="0" y="31" width="664" height="1"></rect>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#171717">
+                        <tspan x="248" y="21">Row item</tspan>
+                        <tspan x="306.922" y="21"> </tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#171717">
+                        <tspan x="440" y="21">Row item</tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#171717">
+                        <tspan x="56" y="21">Row item</tspan>
+                    </text>
+                </g>
+                <g id="Row-Item---default-Copy-4" transform="translate(0.000000, 247.000000)">
+                    <polygon id="Rectangle-5-Copy-13" fill="#F3F3F3" points="0 0 737 0 737 32 0 32"></polygon>
+                    <polygon id="hover" fill="#E5E5E5" points="0 0 737 0 737 32 0 32"></polygon>
+                    <g id="icon/toggle/check-box/unchecked/20" transform="translate(16.000000, 6.000000)">
+                        <g id="check--box--unchecked" stroke-width="1" fill-rule="evenodd" transform="translate(2.500000, 2.500000)">
+                            <mask id="mask-22" fill="white">
+                                <use xlink:href="#path-21"></use>
+                            </mask>
+                            <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-21"></use>
+                            <g id="color/black" mask="url(#mask-22)" fill="#000000">
+                                <g transform="translate(-2.500000, -2.500000)">
+                                    <rect x="0" y="0" width="20" height="20"></rect>
+                                </g>
+                            </g>
+                        </g>
+                        <rect id="transparent-rectangle" x="0" y="0" width="20" height="20"></rect>
+                    </g>
+                    <rect id="Rectangle" fill="#DCDCDC" x="0" y="31" width="737" height="1"></rect>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="248" y="21">Row item</tspan>
+                        <tspan x="306.922" y="21"> </tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="440" y="21">Row item</tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="56" y="21">Row item</tspan>
+                    </text>
+                </g>
+                <g id="Row-Item---default-Copy-8" transform="translate(0.000000, 375.000000)">
+                    <polygon id="Rectangle-5-Copy-13" fill="#F3F3F3" points="0 0 736 0 736 32 0 32"></polygon>
+                    <g id="icon/toggle/check-box/unchecked/20" transform="translate(16.000000, 6.000000)">
+                        <g id="check--box--unchecked" stroke-width="1" fill-rule="evenodd" transform="translate(2.500000, 2.500000)">
+                            <mask id="mask-24" fill="white">
+                                <use xlink:href="#path-23"></use>
+                            </mask>
+                            <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-23"></use>
+                            <g id="color/black" mask="url(#mask-24)" fill="#000000">
+                                <g transform="translate(-2.500000, -2.500000)">
+                                    <rect x="0" y="0" width="20" height="20"></rect>
+                                </g>
+                            </g>
+                        </g>
+                        <rect id="transparent-rectangle" x="0" y="0" width="20" height="20"></rect>
+                    </g>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="248" y="21">Row item</tspan>
+                        <tspan x="306.922" y="21"> </tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="440" y="21">Row item</tspan>
+                    </text>
+                    <text id="Row-item" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="56" y="21">Row item</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group-7-Copy-22" transform="translate(118.000000, 88.000000)">
+                <rect id="Rectangle-2-Copy-296" fill="#0F6DFF" x="0" y="0" width="704" height="32"></rect>
+                <g id="Group-10" transform="translate(533.000000, 6.000000)">
+                    <g id="icon/file/download/16" transform="translate(47.000000, 1.000000)">
+                        <g id="Group">
+                            <g id="download" transform="translate(2.000000, 1.000000)">
+                                <mask id="mask-26" fill="white">
+                                    <use xlink:href="#path-25"></use>
+                                </mask>
+                                <use id="icon-color" fill="#F3F3F3" xlink:href="#path-25"></use>
+                            </g>
+                            <rect id="transparent-rectangle" x="0" y="0" width="16" height="16"></rect>
+                        </g>
+                    </g>
+                    <text id="Pause" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#F3F3F3">
+                        <tspan x="0" y="14">Pause</tspan>
+                    </text>
+                </g>
+                <text id="4-items-selected" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#F3F3F3">
+                    <tspan x="16" y="20">4 items selected</tspan>
+                </text>
+                <g id="Group-9" transform="translate(412.000000, 0.000000)">
+                    <g id="icon/action/restart/16" transform="translate(73.000000, 7.000000)">
+                        <g id="restart" stroke-width="1" fill-rule="evenodd" transform="translate(1.500000, 0.500000)">
+                            <mask id="mask-28" fill="white">
+                                <use xlink:href="#path-27"></use>
+                            </mask>
+                            <use id="icon-color" fill="#F3F3F3" xlink:href="#path-27"></use>
+                        </g>
+                        <rect id="transparent-rectangle" x="0" y="0" width="16" height="16"></rect>
+                    </g>
+                    <text id="Refresh" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#F3F3F3">
+                        <tspan x="16" y="20">Refresh</tspan>
+                    </text>
+                </g>
+                <g id="Cancel-btn" transform="translate(645.000000, 6.000000)" fill="#F3F3F3" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" letter-spacing="0.00999999978" line-spacing="18">
+                    <text id="Cancel">
+                        <tspan x="0" y="14">Cancel</tspan>
+                    </text>
+                </g>
+                <rect id="Rectangle-Copy" fill="#F3F3F3" x="628" y="8" width="1" height="16"></rect>
+                <g id="icon/formatting/delete/16" transform="translate(380.000000, 7.000000)">
+                    <g id="delete" stroke-width="1" fill-rule="evenodd" transform="translate(2.000000, 1.000000)">
+                        <mask id="mask-30" fill="white">
+                            <use xlink:href="#path-29"></use>
+                        </mask>
+                        <use id="icon-color" fill="#F3F3F3" xlink:href="#path-29"></use>
+                    </g>
+                    <rect id="transparent-rectangle" x="0" y="0" width="16" height="16"></rect>
+                </g>
+                <text id="Delete" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#F3F3F3">
+                    <tspan x="330" y="20">Delete</tspan>
+                </text>
+            </g>
+            <g id="Group-4" transform="translate(0.000000, 369.000000)">
+                <g id="Group" stroke="#DCDCDC">
+                    <polyline id="Path-16" transform="translate(462.151987, 5.772216) rotate(-270.000000) translate(-462.151987, -5.772216) " points="456.379771 -60.379771 467.775428 -48.9841138 456.883273 -38.0919591 467.897955 -27.077277 456.911828 -16.0911491 467.871958 -5.05392461 456.902953 5.91508125 467.910522 16.9226508 456.920624 27.9125487 467.924204 38.9161282 456.884489 49.9558434 467.826639 60.8979934 456.800428 71.9242038"></polyline>
+                    <polyline id="Path-16" transform="translate(330.151987, 5.772216) rotate(-270.000000) translate(-330.151987, -5.772216) " points="324.379771 -60.379771 335.775428 -48.9841138 324.883273 -38.0919591 335.897955 -27.077277 324.911828 -16.0911491 335.871958 -5.05392461 324.902953 5.91508125 335.910522 16.9226508 324.920624 27.9125487 335.924204 38.9161282 324.884489 49.9558434 335.826639 60.8979934 324.800428 71.9242038"></polyline>
+                    <polyline id="Path-16" transform="translate(198.151987, 5.772216) rotate(-270.000000) translate(-198.151987, -5.772216) " points="192.379771 -60.379771 203.775428 -48.9841138 192.883273 -38.0919591 203.897955 -27.077277 192.911828 -16.0911491 203.871958 -5.05392461 192.902953 5.91508125 203.910522 16.9226508 192.920624 27.9125487 203.924204 38.9161282 192.884489 49.9558434 203.826639 60.8979934 192.800428 71.9242038"></polyline>
+                    <polyline id="Path-16" transform="translate(726.151987, 5.772216) rotate(-270.000000) translate(-726.151987, -5.772216) " points="720.379771 -60.379771 731.775428 -48.9841138 720.883273 -38.0919591 731.897955 -27.077277 720.911828 -16.0911491 731.871958 -5.05392461 720.902953 5.91508125 731.910522 16.9226508 720.920624 27.9125487 731.924204 38.9161282 720.884489 49.9558434 731.826639 60.8979934 720.800428 71.9242038"></polyline>
+                    <polyline id="Path-16" transform="translate(594.151987, 5.772216) rotate(-270.000000) translate(-594.151987, -5.772216) " points="588.379771 -60.379771 599.775428 -48.9841138 588.883273 -38.0919591 599.897955 -27.077277 588.911828 -16.0911491 599.871958 -5.05392461 588.902953 5.91508125 599.910522 16.9226508 588.920624 27.9125487 599.924204 38.9161282 588.884489 49.9558434 599.826639 60.8979934 588.800428 71.9242038"></polyline>
+                    <polyline id="Path-16" transform="translate(66.151987, 5.772216) rotate(-270.000000) translate(-66.151987, -5.772216) " points="60.379771 -60.379771 71.7754281 -48.9841138 60.8832733 -38.0919591 71.8979554 -27.077277 60.9118275 -16.0911491 71.8719585 -5.05392461 60.9029526 5.91508125 71.9105222 16.9226508 60.9206243 27.9125487 71.9242038 38.9161282 60.8844886 49.9558434 71.8266386 60.8979934 60.8004282 71.9242038"></polyline>
+                    <polyline id="Path-16" transform="translate(858.151987, 5.772216) rotate(-270.000000) translate(-858.151987, -5.772216) " points="852.379771 -60.379771 863.775428 -48.9841138 852.883273 -38.0919591 863.897955 -27.077277 852.911828 -16.0911491 863.871958 -5.05392461 852.902953 5.91508125 863.910522 16.9226508 852.920624 27.9125487 863.924204 38.9161282 852.884489 49.9558434 863.826639 60.8979934 852.800428 71.9242038"></polyline>
+                </g>
+                <polygon id="Fill-1" fill="#FFFFFF" points="857.997 1 852 6.997 847 11.997 835.997 1 825 11.997 813.997 1 803 11.997 791.997 1 781 11.997 769.997 1 759 11.997 747.997 1 737 11.997 725.997 1 715 11.997 703.997 1 693 11.997 681.997 1 671 11.997 659.997 1 649 11.997 637.997 1 627 11.997 615.997 1 605 11.997 593.997 1 583 11.997 571.998 1 561 11.997 560.994 11.997 549.997 1 539 11.997 527.998 1 517 11.997 516.994 11.997 505.997 1 495 11.997 483.997 1 473 11.997 461.998 1 451 11.997 450.994 11.997 439.997 1 429 11.997 417.998 1 407 11.997 406.994 11.997 395.997 1 385 11.997 373.998 1 363 11.997 362.994 11.997 351.997 1 341 11.997 329.998 1 319 11.997 318.994 11.997 307.998 1 297 11.997 285.997 1 275 11.997 263.998 1 253 11.997 252.994 11.997 241.997 1 231 11.997 219.998 1 209 11.997 208.994 11.997 197.997 1 187 11.997 175.998 1 165 11.997 164.994 11.997 153.997 1 143 11.997 131.998 1 121 11.997 120.994 11.997 116 7.003 109.998 1 99 11.997 99 101 869 101 869 11.997"></polygon>
+            </g>
+        </g>
+        <polyline id="Shape" stroke="#FFFFFF" stroke-width="16" fill-rule="nonzero" points="8 400 8 8 728 8 728 394.333081"></polyline>
+    </g>
+</svg>
