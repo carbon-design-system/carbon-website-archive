@@ -154,6 +154,8 @@
     background: transparent;
     box-shadow: 0 rem(2px) rem(6px) 0 #00000033;
     padding-top: 0;
+    margin-top: -1px;
+    overflow: hidden;
   }
 
   .website-tabs.bp-tabs-not-shown ul.bx--tabs__nav--hidden {
@@ -189,8 +191,8 @@
 
   .website-tabs.bp-tabs-not-shown a.bx--tabs__nav-link:hover {
     background: #e5e5e5;
-    box-shadow: 0 -1px 0 0 #fff;
-    z-index: 100;
+    box-shadow: 0 1px 0 0 #fff;
+    z-index: 1000;
   }
   .website-tabs.bp-tabs-not-shown li.bx--tabs__nav-item:first-child:hover {
     box-shadow: none;
@@ -203,13 +205,10 @@
     width: calc(100% - 2rem);
     box-sizing: border-box;
     position: absolute;
-    bottom: 0;
+    top: 0;
     z-index: 100;
-    border-bottom: 1px solid #dcdcdc;
+    border-top: 1px solid #dcdcdc;
   }
-  .website-tabs.bp-tabs-not-shown
-    li.bx--tabs__nav-item:last-child
-    a.bx--tabs__nav-link::after,
   .website-tabs.bp-tabs-not-shown a.bx--tabs__nav-link:hover::after {
     display: none;
   }
