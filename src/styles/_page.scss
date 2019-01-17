@@ -116,6 +116,7 @@ body {
 
   @include breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
+    max-width: calc(75% - 0.5rem);
   }
 }
 
@@ -127,6 +128,7 @@ body {
 
   @include breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
+    max-width: calc(75% - 0.5rem);
   }
 }
 
