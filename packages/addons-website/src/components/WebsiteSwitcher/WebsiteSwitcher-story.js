@@ -6,6 +6,7 @@ storiesOf('Website Switcher', module).add(
   'Website Switcher',
   () => (
     <WebsiteSwitcher
+      isSwitcherOpen={true}
       links={[
         { href: 'https://www.ibm.com/design/language/', linkText: 'IBM Design Language' },
         { href: 'https://www.ibm.com/standards/web/', linkText: 'IBM Digital Design' },
