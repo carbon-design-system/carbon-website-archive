@@ -8,6 +8,10 @@
   }
 }
 
+.#{$prefix}--side-nav--website {
+  z-index: 16000;
+}
+
 .#{$prefix}--side-nav--website--with-header-nav.#{$prefix}--side-nav.#{$prefix}--side-nav--open {
   width: 16rem;
 }
