@@ -10,7 +10,6 @@
 }
 
 .type-spec__example > div {
-
   @include breakpoint('md') {
     padding-right: 25%;
   }
