@@ -9,6 +9,7 @@ a.feature-tile {
 }
 
 .tile__img .gatsby-resp-image-wrapper {
+  background: transparent;
   margin: 0 !important; //needed to override automatic gatsby styles
   max-width: 100% !important; //needed to override automatic gatsby styles
 }

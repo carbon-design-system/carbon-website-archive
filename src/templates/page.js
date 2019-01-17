@@ -32,6 +32,7 @@ import {
   HomepageFooter,
   HomepageHeader,
 } from '../components/Homepage/Homepage';
+import ColorTokenTable from '../components/ColorTokenTable';
 
 // Custom Markdown
 import {
@@ -78,6 +79,7 @@ const renderAst = new rehypeReact({
     glossary: Glossary,
     'component-overview': ComponentOverview,
     'anchor-links': AnchorLinks,
+    'color-token-table': ColorTokenTable,
   },
 }).Compiler;
 
@@ -100,7 +102,7 @@ export default ({ data }) => {
     );
   } else if (homepage) {
     if (typeof document !== 'undefined') {
-      document.body.style.background = "#282828";
+      document.body.style.background = '#282828';
     }
 
     return (
@@ -116,9 +118,8 @@ export default ({ data }) => {
       </Layout>
     );
   } else {
-
     if (typeof document !== 'undefined') {
-      document.body.style.background = "#f3f3f3";
+      document.body.style.background = '#f3f3f3';
     }
 
     return (

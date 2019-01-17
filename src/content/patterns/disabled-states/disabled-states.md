@@ -4,6 +4,14 @@ title: Disabled States
 
 **A disabled state** is applied to a component when the user is not allowed to interact with the component due to either permissions, dependencies, or pre-requisites. Disabled states completely remove the interactive function of a component.
 
+<anchor-links>
+<ul>
+    <li><a href="#default-disabled">Default disabled</a></li>
+    <li><a href="#read-only">Read-only</a></li>
+    <li><a href="#hidden">Hidden</a></li>
+</ul>
+</anchor-links>
+
 ## Disabled variations
 
 | Variation            | Description                                                                                                                                                                                                                               |
@@ -38,6 +46,14 @@ An [inline warning notification](/components/notification/code) can be shown in 
 
 ![Additional warning with default disabled example](images/disabled-3.png)
 
+## Read-only
+
+In scenarios where the content of a disabled component or element is still relevant to the user or important to task completion, then the _read-only_ variation is used. This allows the user to read the information but not interact with or change it. Read-only content should always be accessible to a screen reader.
+
+### Style
+
+The visual style of the read-only states vary by component but should never contain any interactive indicators such as `$brand-01` color usage, hover states, or text embellishments (i.e., underlines).
+
 ## Hidden
 
 The _hidden disabled_ variation is used when something or someone does not have permission to view, interact with, or take action on an element of the UI. This variation completely hides the component, page, action, etc. from the user's interface. The only way to enable the hidden element and have it resurfaced on the UI is to change the assigned permission.
@@ -46,10 +62,3 @@ For example, when a user is the organization owner they are allowed to add membe
 
 ![Example of hidden disabled content on the right](images/disabled-4.png)
 
-## Read-only
-
-In scenarios where the content of a disabled component or element is still relevant to the user or important to task completion, then the _read-only_ variation is used. This allows the user to read the information but not interact with or change it. Read-only content should always be accessible to a screen reader.
-
-### Style
-
-The visual style of the read-only states vary by component but should never contain any interactive indicators such as `$brand-01` color usage, hover states, or text embellishments (i.e., underlines).

@@ -68,7 +68,6 @@ export default class NextPrevious extends React.Component {
   };
 
   renderNextPreviousLinks = (prevPath, prevName, nextPath, nextName) => {
-
     let truncatedPrevName, truncatedNextName;
     if (typeof prevName !== 'undefined') {
       truncatedPrevName = prevName.substring(prevName.indexOf(':') + 1).trim();

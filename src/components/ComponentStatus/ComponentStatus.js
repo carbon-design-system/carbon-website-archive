@@ -167,7 +167,9 @@ class ComponentStatus extends React.Component {
             </tbody>
           </table>
           <div className="component-status__description">
-            <h2 className="page-h2 bx--type-expressive-heading-04">Tag descriptions</h2>
+            <h2 className="page-h2 bx--type-expressive-heading-04">
+              Tag descriptions
+            </h2>
             <table className="page-table">
               <thead>
                 <tr>

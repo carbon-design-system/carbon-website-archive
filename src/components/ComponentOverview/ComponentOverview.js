@@ -25,12 +25,16 @@ class ComponentOverview extends React.Component {
       <li className="component-item" key={component}>
         <div className="bx--aspect-ratio bx--aspect-ratio--align bx--aspect-ratio--1x1">
           <div className="bx--aspect-ratio--object">
-              <Link to={componentUrl} className="component-item__link">
-                <img src={componentImg} alt={component}  className="component-item__img"/>
-                <p className="component-name">{component}</p>
-              </Link>
-            </div>
+            <Link to={componentUrl} className="component-item__link">
+              <img
+                src={componentImg}
+                alt={component}
+                className="component-item__img"
+              />
+              <p className="component-name">{component}</p>
+            </Link>
           </div>
+        </div>
       </li>
     );
   };
