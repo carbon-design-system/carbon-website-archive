@@ -33,6 +33,7 @@ export default class ColorTokenTable extends React.Component {
   addScrollListener() {
     document.addEventListener('scroll', e => {
       let stickyPoint = this.state.mobile ? 1340 : 1244;
+      console.log(window.scrollY);
       if (window.scrollY >= stickyPoint) {
         this.setState({
           sticky: true,
@@ -144,6 +145,9 @@ export default class ColorTokenTable extends React.Component {
         'color-token-table__theme-switcher--sticky': this.state.sticky,
       }
     );
+    const h3Classes = classnames('page-h3', {
+      'page-h3--sticky': this.state.sticky,
+    });
     return (
       <div className="ibm--row color-token-table">
         <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
@@ -160,7 +164,7 @@ export default class ColorTokenTable extends React.Component {
           </ContentSwitcher>
         </div>
         <div className="ibm--col-lg-7 ibm--offset-lg-4">
-          <h3 className="page-h3">Core color tokens</h3>
+          <h3 className={h3Classes}>Core color tokens</h3>
         </div>
         <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
           <table className="page-table">
