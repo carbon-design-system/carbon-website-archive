@@ -18,13 +18,13 @@ Contributors are members of the community who contribute to the Carbon Design Sy
 - Reporting bugs or missing features by creating GitHub issues
 - Fixing bugs, adding features, and improving documentation by submitting GitHub pull requests
 
-### Committers
+### Maintainers
 
-Committers are members of the community who are committed to the success of individual Carbon Design System projects. Each project has a team of committers, and each team has a lead. In addition to their participation as a contributor, committers have privileges to:
+Maintainers are members of the community who are committed to the success of individual Carbon Design System projects. Each project has a team of maintainers, and each team has a lead. In addition to their participation as a contributor, maintainers have privileges to:
 
 - Label, close, and manage GitHub issues
 - Close and merge GitHub pull requests
-- Nominate and vote on new committers
+- Nominate and vote on new maintainers
 
 ## Teams
 
@@ -39,12 +39,12 @@ Core team members are IBM employees who are responsible for the leadership and s
 
 ### Project teams
 
-Project teams supplement the core team and are narrowly focused on specific areas of interest, should that be a domain-specific component implementation, tooling, etc. As a distributed model, project teams operate independently although it's recommended that they follow this governance structure to define users, roles, and how decisions are made.
+Project teams are narrowly focused on specific areas of interest. Although not a requirement, it's recommended that project teams include at least one member of the core team to help ensure coherent project vision. As a distributed model, project teams operate independently although it's recommended that they follow this governance structure to define roles, responsibilities, and how decisions are made.
 
 Each project team has a lead committer, responsible for:
 
-- Deciding on the initial membership of project team committers (in consultation with the core team)
-- Determining and publishing project team policies and mechanics, including the way committers join and leave the team (which should be based on team consensus)
+- Deciding on the initial membership of project team maintainers (in consultation with the core team)
+- Determining and publishing project team policies and mechanics, including the way maintainers join and leave the team (which should be based on team consensus)
 - Communicating core vision downward to the team
 - Ensuring that issues and pull requests progress at a reasonable rate, assigning issue owners and pull request reviewers as necessary
 - Making final decisions in cases where team is unable to reach consensus (should be rare)
@@ -55,22 +55,32 @@ The way that project teams communicate internally and externally is left to each
 - Each project should have a dedicated Slack channel (IBM internal)
 - Project teams should actively seek out discussion and input from stakeholders who are not members of the team
 
-In general, the core team is responsible for these projects:
+### Project team categories
+
+**Design** - design kits and designer tooling.
 
 - [Carbon Design Kit](https://github.com/IBM/carbon-design-kit)
+
+**Elements** - how the IBM Design Language is implemented.
+
 - [Carbon Icons](https://github.com/IBM/carbon-icons)
 - [Carbon Elements](https://github.com/IBM/carbon-elements)
-- [Carbon Spec](https://github.com/carbon-design-system/carbon-spec)
-- [Carbon Components](https://github.com/IBM/carbon-components)
+
+**Components** - component implementation appearance and behavior.
+
+<!-- Remove comment in v11 -->
+<!-- - [Carbon Spec and Styles](https://github.com/carbon-design-system/carbon-spec) -->
+- [Carbon Components Vanilla](https://github.com/IBM/carbon-components)
 - [Carbon Components React](carbon-components-react)
+- [Carbon Components Angular](https://github.com/IBM/carbon-components-angular)
+- [Carbon Components Vue](https://github.com/carbon-design-system/carbon-components-vue)
+
+**Website** - online presence.
+
 - [Carbon Website](https://github.com/carbon-design-system/carbon-website)
 - [Carbon Website (Archived)](https://github.com/IBM/design-system-website)
 
-Some projects external to the core team:
-
-- [Carbon Components Angular](https://github.com/IBM/carbon-components-angular)
-- [Carbon Components Vue](https://github.com/carbon-design-system/carbon-components-vue)
-- [Carbon Add-ons Cloud](https://github.com/carbon-design-system/carbon-addons-cloud)
+**Add-ons** - see [add-on guidance](/contributing/add-ons) for custom components that follow the IBM Design Language.
 
 ### Technical steering committee
 
