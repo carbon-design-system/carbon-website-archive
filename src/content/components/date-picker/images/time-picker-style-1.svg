@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="736px" height="395px" viewBox="0 0 736 395" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>time-picker-style-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="5 6 0 1 0.707 0.293 5 4.586 9.293 0.293 10 1"></polygon>
+        <polygon id="path-3" points="5 6 0 1 0.707 0.293 5 4.586 9.293 0.293 10 1"></polygon>
+        <polygon id="path-5" points="5 6 0 1 0.707 0.293 5 4.586 9.293 0.293 10 1"></polygon>
+        <polygon id="path-7" points="5 6 0 1 0.707 0.293 5 4.586 9.293 0.293 10 1"></polygon>
+    </defs>
+    <g id="time-picker-style-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-25-Copy" fill="#F3F3F3" x="237" y="104" width="77" height="32"></rect>
+        <rect id="Rectangle-25-Copy-3" fill="#F3F3F3" x="237" y="262" width="77" height="32"></rect>
+        <g id="Group-12" transform="translate(315.000000, 104.000000)">
+            <rect id="Rectangle-25-Copy-2" fill="#F3F3F3" x="0" y="0" width="85" height="32"></rect>
+            <g id="icon/navigation/chevron/down/16" transform="translate(61.000000, 8.000000)">
+                <g id="Group">
+                    <g id="chevron--down" transform="translate(3.000000, 5.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="icon-color" fill="#000000" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="transparent-rectangle" transform="translate(8.000000, 8.000000) rotate(-90.000000) translate(-8.000000, -8.000000) " x="0" y="0" width="16" height="16"></rect>
+                </g>
+            </g>
+            <rect id="Rectangle-Copy" fill="#8C8C8C" x="0" y="31" width="85" height="1"></rect>
+            <text id="AM" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" fill="#171717">
+                <tspan x="16" y="21">AM</tspan>
+            </text>
+        </g>
+        <g id="Group-12-Copy-2" transform="translate(315.000000, 262.000000)">
+            <rect id="Rectangle-25-Copy-2" fill="#F3F3F3" x="0" y="0" width="85" height="32"></rect>
+            <rect id="Rectangle-Copy" fill="#8C8C8C" x="0" y="31" width="85" height="1"></rect>
+            <text id="AM" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" fill="#171717">
+                <tspan x="16" y="21">AM</tspan>
+            </text>
+        </g>
+        <g id="Group-12-Copy" transform="translate(401.000000, 104.000000)">
+            <rect id="Rectangle-25-Copy-2" fill="#F3F3F3" x="0" y="0" width="126" height="32"></rect>
+            <g id="icon/navigation/chevron/down/16" transform="translate(102.000000, 8.000000)">
+                <g id="Group">
+                    <g id="chevron--down" transform="translate(3.000000, 5.000000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="icon-color" fill="#000000" xlink:href="#path-3"></use>
+                    </g>
+                    <rect id="transparent-rectangle" transform="translate(8.000000, 8.000000) rotate(-90.000000) translate(-8.000000, -8.000000) " x="0" y="0" width="16" height="16"></rect>
+                </g>
+            </g>
+            <rect id="Rectangle-Copy" fill="#8C8C8C" x="0" y="31" width="126" height="1"></rect>
+            <text id="Timezone" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" fill="#A4A4A4">
+                <tspan x="16" y="21">Timezone</tspan>
+            </text>
+        </g>
+        <g id="Group-12-Copy-3" transform="translate(401.000000, 262.000000)">
+            <rect id="Rectangle-25-Copy-2" fill="#F3F3F3" x="0" y="0" width="126" height="32"></rect>
+            <g id="icon/navigation/chevron/down/16" transform="translate(94.000000, 8.000000)">
+                <g id="Group">
+                    <g id="chevron--down" transform="translate(3.000000, 5.000000)">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <use id="icon-color" fill="#000000" xlink:href="#path-5"></use>
+                    </g>
+                    <rect id="transparent-rectangle" transform="translate(8.000000, 8.000000) rotate(-90.000000) translate(-8.000000, -8.000000) " x="0" y="0" width="16" height="16"></rect>
+                </g>
+            </g>
+            <rect id="Rectangle-Copy" fill="#8C8C8C" x="0" y="31" width="126" height="1"></rect>
+            <text id="Timezone" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" fill="#A4A4A4">
+                <tspan x="16" y="21">Timezone</tspan>
+            </text>
+        </g>
+        <rect id="Rectangle" fill="#8C8C8C" x="237" y="135" width="77" height="1"></rect>
+        <rect id="Rectangle-Copy-2" fill="#8C8C8C" x="237" y="293" width="77" height="1"></rect>
+        <text id="Choose-a-time" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="16" fill="#565656">
+            <tspan x="237" y="92">Choose a time</tspan>
+        </text>
+        <text id="Choose-a-time-Copy" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="16" fill="#565656">
+            <tspan x="237" y="250">Choose a time</tspan>
+        </text>
+        <text id="hh:mm" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" fill="#A4A4A4">
+            <tspan x="253" y="125">hh:mm</tspan>
+        </text>
+        <text id="hh:mm-copy" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" fill="#A4A4A4">
+            <tspan x="253" y="283">hh:mm</tspan>
+        </text>
+        <text id="32/2-copy-3" font-family="IBMPlexMono, IBM Plex Mono" font-size="12" font-weight="normal" fill="#D12765">
+            <tspan x="191" y="125">32/2</tspan>
+        </text>
+        <path id="Path-2-Copy-78" d="M229,105 L229,135 L232.5,135 L232.5,136 L224.5,136 L224.5,135 L228,135 L228,105 L224.5,105 L224.5,104 L232.5,104 L232.5,105 L229,105 Z" fill="#D12765" fill-rule="nonzero"></path>
+        <text id="77/4.8125" font-family="IBMPlexMono, IBM Plex Mono" font-size="12" font-weight="normal" fill="#D12765">
+            <tspan x="243" y="161">77/4.8125</tspan>
+        </text>
+        <text id="85/5.3125" font-family="IBMPlexMono, IBM Plex Mono" font-size="12" font-weight="normal" fill="#D12765">
+            <tspan x="326" y="161">85/5.3125</tspan>
+        </text>
+        <text id="1" font-family="IBMPlexMono, IBM Plex Mono" font-size="12" font-weight="normal" fill="#D12765">
+            <tspan x="310" y="98">1</tspan>
+        </text>
+        <text id="1-copy" font-family="IBMPlexMono, IBM Plex Mono" font-size="12" font-weight="normal" fill="#D12765">
+            <tspan x="396" y="98">1</tspan>
+        </text>
+        <text id="126/7.875" font-family="IBMPlexMono, IBM Plex Mono" font-size="12" font-weight="normal" fill="#D12765">
+            <tspan x="431" y="161">126/7.875</tspan>
+        </text>
+        <path id="Path-2-Copy-79" d="M275.5,107.5 L275.5,182.5 L279,182.5 L279,183.5 L271,183.5 L271,182.5 L274.5,182.5 L274.5,107.5 L271,107.5 L271,106.5 L279,106.5 L279,107.5 L275.5,107.5 Z" fill="#D12765" fill-rule="nonzero"></path>
+        <path id="Path-2-Copy-82" d="M315,102 L315,136 L314,136 L314,102 L310.5,102 L310.5,101 L318.5,101 L318.5,102 L315,102 Z" fill="#D12765" fill-rule="nonzero"></path>
+        <path id="Path-2-Copy-83" d="M401,102 L401,136 L400,136 L400,102 L396.5,102 L396.5,101 L404.5,101 L404.5,102 L401,102 Z" fill="#D12765" fill-rule="nonzero"></path>
+        <path id="Path-2-Copy-80" d="M357.5,103.5 L357.5,186.5 L361,186.5 L361,187.5 L353,187.5 L353,186.5 L356.5,186.5 L356.5,103.5 L353,103.5 L353,102.5 L361,102.5 L361,103.5 L357.5,103.5 Z" fill="#D12765" fill-rule="nonzero"></path>
+        <path id="Path-2-Copy-81" d="M464,83 L464,207 L467.5,207 L467.5,208 L459.5,208 L459.5,207 L463,207 L463,83 L459.5,83 L459.5,82 L467.5,82 L467.5,83 L464,83 Z" fill="#D12765" fill-rule="nonzero"></path>
+        <g id="Group-14-Copy-4" transform="translate(237.000000, 94.000000)">
+            <rect id="Rectangle-9-Copy" fill="#8A3FFC" x="0" y="1" width="8" height="8"></rect>
+            <text id="8" font-family="IBMPlexSans, IBM Plex Sans" font-size="8" font-weight="normal" fill="#FFFFFF">
+                <tspan x="1.6" y="8">8</tspan>
+            </text>
+        </g>
+        <path id="Path-2-Copy-42" d="M246,293.5 L246,307.5 L249.5,307.5 L249.5,308.5 L241.5,308.5 L241.5,307.5 L245,307.5 L245,293.5 L241.5,293.5 L241.5,292.5 L249.5,292.5 L249.5,293.5 L246,293.5 Z" fill="#009E9A" fill-rule="nonzero"></path>
+        <text id="16/1-copy-12" font-family="IBMPlexMono, IBM Plex Mono" font-size="12" font-weight="normal" fill="#007D79">
+            <tspan x="229" y="319">16/1</tspan>
+        </text>
+        <polygon id="Rectangle-6-Copy-18" fill="#87EDED" opacity="0.5" points="237 262 253 262 253 285.013707 253 294 237 294"></polygon>
+        <polygon id="Rectangle-6-Copy-19" fill="#87EDED" opacity="0.5" points="298 262 314 262 314 285.013707 314 294 298 294"></polygon>
+        <polygon id="Rectangle-6-Copy-20" fill="#87EDED" opacity="0.5" points="315 262 331 262 331 285.013707 331 294 315 294"></polygon>
+        <polygon id="Rectangle-6-Copy-22" fill="#87EDED" opacity="0.5" points="401 262 417 262 417 285.013707 417 294 401 294"></polygon>
+        <polygon id="Rectangle-6-Copy-21" fill="#87EDED" opacity="0.5" points="384 262 400 262 400 285.013707 400 294 384 294"></polygon>
+        <polygon id="Rectangle-6-Copy-24" fill="#87EDED" opacity="0.5" points="511 262 527 262 527 285.013707 527 294 511 294"></polygon>
+        <polygon id="Rectangle-6-Copy-23" fill="#87EDED" opacity="0.5" points="352 262 368 262 368 285.013707 368 294 352 294"></polygon>
+        <polygon id="Rectangle-6-Copy-25" fill="#87EDED" opacity="0.5" points="479 262 495 262 495 285.013707 495 294 479 294"></polygon>
+        <path d="M237.5,263 L237.5,295" id="Path-2-Copy-32" stroke="#009E9A" stroke-dasharray="2"></path>
+        <path d="M298.5,263 L298.5,295" id="Path-2-Copy-33" stroke="#009E9A" stroke-dasharray="2"></path>
+        <path d="M315.5,263 L315.5,295" id="Path-2-Copy-34" stroke="#009E9A" stroke-dasharray="2"></path>
+        <path d="M401.5,263 L401.5,295" id="Path-2-Copy-35" stroke="#009E9A" stroke-dasharray="2"></path>
+        <path d="M252.5,263 L252.5,295" id="Path-2-Copy-58" stroke="#009E9A" stroke-dasharray="2"></path>
+        <path d="M313.5,263 L313.5,295" id="Path-2-Copy-59" stroke="#009E9A" stroke-dasharray="2"></path>
+        <path d="M330.5,263 L330.5,295" id="Path-2-Copy-60" stroke="#009E9A" stroke-dasharray="2"></path>
+        <path d="M416.5,263 L416.5,295" id="Path-2-Copy-65" stroke="#009E9A" stroke-dasharray="2"></path>
+        <path d="M399.5,263 L399.5,295" id="Path-2-Copy-61" stroke="#009E9A" stroke-dasharray="2"></path>
+        <path d="M526.5,263 L526.5,295" id="Path-2-Copy-66" stroke="#009E9A" stroke-dasharray="2"></path>
+        <path d="M352.5,263 L352.5,295" id="Path-2-Copy-62" stroke="#009E9A" stroke-dasharray="2"></path>
+        <path d="M479.5,263 L479.5,295" id="Path-2-Copy-67" stroke="#009E9A" stroke-dasharray="2"></path>
+        <path d="M367.5,263 L367.5,295" id="Path-2-Copy-63" stroke="#009E9A" stroke-dasharray="2"></path>
+        <path d="M494.5,263 L494.5,295" id="Path-2-Copy-68" stroke="#009E9A" stroke-dasharray="2"></path>
+        <path d="M384.5,263 L384.5,295" id="Path-2-Copy-64" stroke="#009E9A" stroke-dasharray="2"></path>
+        <path d="M511.5,263 L511.5,295" id="Path-2-Copy-69" stroke="#009E9A" stroke-dasharray="2"></path>
+        <g id="icon/navigation/chevron/down/16" transform="translate(368.000000, 270.000000)">
+            <g id="Group">
+                <g id="chevron--down" transform="translate(3.000000, 5.000000)">
+                    <mask id="mask-8" fill="white">
+                        <use xlink:href="#path-7"></use>
+                    </mask>
+                    <use id="icon-color" fill="#000000" xlink:href="#path-7"></use>
+                </g>
+                <rect id="transparent-rectangle" transform="translate(8.000000, 8.000000) rotate(-90.000000) translate(-8.000000, -8.000000) " x="0" y="0" width="16" height="16"></rect>
+            </g>
+        </g>
+        <rect id="Rectangle-Copy-5" stroke="#D12765" x="503.5" y="112.5" width="15" height="15"></rect>
+        <path d="M506,107.5 L516.5,107.5" id="Path-3-Copy-5" stroke="#D12765" transform="translate(511.000000, 107.500000) rotate(-90.000000) translate(-511.000000, -107.500000) "></path>
+        <text id="16/1" font-family="IBMPlexMono, IBM Plex Mono" font-size="12" font-weight="normal" fill="#D12765">
+            <tspan x="496" y="98">16/1</tspan>
+        </text>
+    </g>
+</svg>
