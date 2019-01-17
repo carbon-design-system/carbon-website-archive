@@ -55,8 +55,8 @@ export default class LeftNav extends React.Component {
           const classNames = classnames('side-nav', {
             'side-nav__closed': !isOpen,
             'side-nav__closed--final': isFinal && !isOpen,
-            'bx--side-nav--website--light' : location.pathname !== '/',
-            'bx--side-nav--website': true
+            'bx--side-nav--website--light': location.pathname !== '/',
+            'bx--side-nav--website': true,
           });
 
           return (
@@ -70,7 +70,7 @@ export default class LeftNav extends React.Component {
               <SideNav aria-label="Side navigation" className={classNames}>
                 <SideNavItems>
                   {navItems}
-                  <hr className="bx--side-nav__divider" / >
+                  <hr className="bx--side-nav__divider" />
                   <SideNavLink
                     icon={<Launch16 />}
                     href="https://github.com/ibm/carbon-design-kit"

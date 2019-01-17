@@ -115,7 +115,6 @@ class Layout extends React.Component {
     }).format(new Date(Number(timestamp)));
     const { isOpen } = this.state;
 
-
     return (
       <StaticQuery
         query={graphql`
@@ -219,7 +218,9 @@ class Layout extends React.Component {
                 ]}>
                 <p>
                   Have questions? Email us or open an issue in{' '}
-                  <a href="https://github.com/carbon-design-system/carbon-website/issues/new/choose">GitHub.</a>
+                  <a href="https://github.com/carbon-design-system/carbon-website/issues/new/choose">
+                    GitHub.
+                  </a>
                 </p>
                 <p>
                   Vanilla Components version {version}
