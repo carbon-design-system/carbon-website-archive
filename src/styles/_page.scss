@@ -119,8 +119,9 @@ body {
   }
 }
 
-//svg images
-.page-content > div > img[src*='svg'] {
+//svg and gif images
+.page-content > div > img[src*='svg'],
+.page-content > div > img[src*='gif'] {
   background: $ui-02;
   margin-bottom: 4rem;
 
@@ -130,7 +131,8 @@ body {
 }
 
 .ibm--row .gatsby-resp-image-wrapper,
-.ibm-row img[src*='svg'] {
+.ibm-row img[src*='svg'],
+.ibm-row img[src*='gif'] {
   margin-left: 0 !important;
   margin-bottom: 0;
 }
@@ -138,7 +140,8 @@ body {
 // Caption styles - All em on Markdown pages after images
 .gatsby-resp-image-link,
 .gatsby-resp-image-wrapper,
-img[src*='svg'] {
+img[src*='svg'],
+img[src*='gif'] {
   + div > div > p > em {
     @include type-style('body-short-01');
     font-style: normal;
