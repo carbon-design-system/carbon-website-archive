@@ -88,13 +88,14 @@ export default class LeftNavItem extends React.Component {
   };
 
   render() {
-    const { item, itemSlug, location } = this.props;
+    const { item, itemSlug, location, isCurrentCategory } = this.props;
     const hasSubNav = !(item['sub-nav'] === undefined);
     const isOpen = locationContainsPath(location, itemSlug);
 
     const menuItemProps = {
       icon: <Awake16 />,
       title: item.title,
+      isActive: isCurrentCategory,
     };
 
     if (isOpen) {

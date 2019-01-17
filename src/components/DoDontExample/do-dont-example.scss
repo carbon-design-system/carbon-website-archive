@@ -48,7 +48,6 @@
   left: 0;
   bottom: 0;
   right: 0;
-  padding: rem(64px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,7 +63,7 @@
 }
 
 p.example__text {
-  padding: 0;
+  padding: 4rem;
   font-weight: 300;
   font-size: rem(24px);
   line-height: 1.25;

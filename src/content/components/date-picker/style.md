@@ -26,6 +26,7 @@ If a `min date` is set on the calendar, then any text appearing before that date
 | `.bx--date-picker__day.inRange`                 | background-color | $text-01  |
 
 ![Example of a date picker](images/date-picker-style-1.png)
+
 _Date picker example using both $field-02 (top) and $field-01 (bottom)_
 
 ### States
@@ -78,11 +79,7 @@ Labels should be set in sentence case, with only the first word in a phrase and 
 | `.bx--date-picker__input:focus`                    | box-shadow                  | 2px         | -             |
 | `.bx--date-picker__icon + .bx--date-picker__input` | padding-left                | 48 / 3      | $spacing-3xl  |
 
-<div class="image-grid">
-  <div>
-    <img src="images/date-picker-style-4.png" alt="Structure for simple and single date pickers"/>
-  </div>
-</div>
+ ![Structure for simple and single date pickers](images/date-picker-style-4.png)
 
 _Structure and spacing for simple and single date pickers | px / rem_
 
@@ -99,9 +96,11 @@ _Structure and spacing for simple and single date pickers | px / rem_
 | `.bx--date-picker__input`                                          | padding-bottom                           | 4 / .25      | $spacing-2xs  |
 
 ![Structure for date picker](images/date-picker-style-2.png)
+
 _Structure for date picker | px / rem_
 
 ![Spacing for date picker](images/date-picker-style-3.png)
+
 _Spacing for date picker | px / rem_
 
 ### Time picker
@@ -115,10 +114,7 @@ There are two types of time pickers; a 12-hour and 24-hour time picker. The 12-h
 | `.bx--time-picker__input-field` | padding-right, padding-left | 16 / 1   | $spacing-md   |
 | `.bx--select-input`             | padding-left                | 16 / 1   | $spacing-md   |
 
-<div class="image-grid">
-  <div>
-    <img src="images/time-picker-style-1.png" alt="Structure for a time picker"/>
-  </div>
-</div>
+
+![Structure for a time picker](images/date-picker-style-1.png)  
 
 _Structure and spacing for a time picker | px / rem_

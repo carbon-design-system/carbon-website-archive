@@ -23,11 +23,7 @@ tabs: ['Code', 'Usage', 'Style']
 | `.bx--btn--danger--primary:hover`                              | background-color         | $hover-danger    |
 | `.bx--btn--danger--secondary:hover`                            | border                   | $support-01      |
 
-<div class="image-grid">
-  <div>
-    <img src="images/button-style-1.png" alt="Example of a normal primary button"/>
-  </div>
-</div>
+![Example of a normal primary button](images/button-style-1.png)
 
 _Primary, secondary, and ghost button state examples_
 
@@ -52,19 +48,11 @@ A button cannot have any element or text within 16 pixels / 1 rem of its borders
 | `.bx--btn .bx--btn__icon`        | margin-left, margin-right   | 8 / 0.5  | $spacing-xs   |
 | `.bx--btn--ghost .bx--btn__icon` | margin-left, margin-right   | 8 / 0.5  | $spacing-xs   |
 
-<div class="image-grid">
-  <div>
-    <img src="images/button-style-7.png" alt="Structure for a primary button"/>
-  </div>
-</div>
+![Structure for a primary button](images/button-style-7.png)
 
 _Structure measurements for small and regular primary button | px / rem_
 
-<div class="image-grid">
-  <div>
-    <img src="images/button-style-14.png" alt="Small ghost button spacing"/>
-  </div>
-</div>
+![Structure for a primary button](images/button-style-14.png)
 
 _Spacing measurements for various button types | px / rem_
 

@@ -17,9 +17,11 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 | `.bx--search-magnifier`          | fill             | $ui-05    |
 
 ![Example of Search using $field-01 and $field-02](images/search-style-4.png)
+
 _Example of Search using $field-02 (top) and $field-01 (bottom)_
 
 ![Normal, hover, and input search states](images/search-style-1.png)
+
 _Examples of normal, hover, and input Search states_
 
 ## Typography
@@ -43,7 +45,9 @@ The width of the Search field should appropriately fit the design and layout of 
 | `.bx--search-input`                               | padding-left, padding-right | 40 / 2.5 | $spacing-2xl  |
 
 ![Structure and spacing measurements for regular search](images/search-style-2.png)
+
 _Structure and spacing measurements for Regular Search | px | rem_
 
 ![Structure and spacing measurements for small search](images/search-style-3.png)
+
 _Structure and spacing measurements for Small Search | px | rem_
