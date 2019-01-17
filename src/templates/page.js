@@ -32,6 +32,7 @@ import {
   HomepageFooter,
   HomepageHeader,
 } from '../components/Homepage/Homepage';
+import ColorTokenTable from '../components/ColorTokenTable';
 
 // Custom Markdown
 import {
@@ -78,6 +79,7 @@ const renderAst = new rehypeReact({
     glossary: Glossary,
     'component-overview': ComponentOverview,
     'anchor-links': AnchorLinks,
+    'color-token-table': ColorTokenTable,
   },
 }).Compiler;
 
