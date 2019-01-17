@@ -113,6 +113,7 @@ class Layout extends React.Component {
       month: 'long',
       day: 'numeric',
     }).format(new Date(Number(timestamp)));
+    const { isOpen } = this.state;
 
     return (
       <StaticQuery
@@ -160,6 +161,7 @@ class Layout extends React.Component {
               <HeaderMenuButton
                 aria-label="Open menu"
                 onClick={this.onToggleBtnClick}
+                isActive={isOpen}
               />
               {isInternal ? (
                 <HeaderName prefix="IBM" to="/" element={Link} href="/">
@@ -215,8 +217,11 @@ class Layout extends React.Component {
                   },
                 ]}>
                 <p>
-                  Have questions? Email us or open an issue <br />in{' '}
-                  <a href="https://github.com/carbon-design-system/carbon-website/issues/new/choose">GitHub.</a>
+                  Have questions? Email us or open an issue <br />
+                  in{' '}
+                  <a href="https://github.com/carbon-design-system/carbon-website/issues/new/choose">
+                    GitHub.
+                  </a>
                 </p>
                 <p>
                   Vanilla Components version {version}

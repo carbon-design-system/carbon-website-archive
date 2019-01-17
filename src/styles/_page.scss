@@ -99,9 +99,9 @@ body {
 
 // iframe
 .gatsby-resp-iframe-wrapper {
-    @include breakpoint('lg') {
-      margin-left: calc(25% + .5rem)!important;
-    }
+  @include breakpoint('lg') {
+    margin-left: calc(25% + 0.5rem) !important;
+  }
 }
 
 .ibm--row .gatsby-resp-iframe-wrapper {
@@ -111,51 +111,51 @@ body {
 //images
 .gatsby-resp-image-wrapper {
   background: $ui-02;
-  margin-left: 0!important;
+  margin-left: 0 !important;
   margin-bottom: 4rem;
 
   @include breakpoint('lg') {
-    margin-left: calc(25% + .5rem)!important;
+    margin-left: calc(25% + 0.5rem) !important;
   }
 }
 
 //svg images
-.page-content > div > img[src*="svg"] {
+.page-content > div > img[src*='svg'] {
   background: $ui-02;
   margin-bottom: 4rem;
 
   @include breakpoint('lg') {
-    margin-left: calc(25% + .5rem)!important;
+    margin-left: calc(25% + 0.5rem) !important;
   }
 }
 
 .ibm--row .gatsby-resp-image-wrapper,
-.ibm-row img[src*="svg"] { 
-  margin-left: 0!important;
+.ibm-row img[src*='svg'] {
+  margin-left: 0 !important;
   margin-bottom: 0;
 }
 
 // Caption styles - All em on Markdown pages after images
 .gatsby-resp-image-link,
 .gatsby-resp-image-wrapper,
- img[src*="svg"] {
-   + div > div > p > em {
-      @include type-style('body-short-01');
-      font-style: normal;
-      color: $text-01;
-      display: block;
+img[src*='svg'] {
+  + div > div > p > em {
+    @include type-style('body-short-01');
+    font-style: normal;
+    color: $text-01;
+    display: block;
 
-      @include breakpoint('lg') {
-        padding-right: 35%;
-      }
-
-      @include breakpoint('lg') {
-        padding-right: 44%;
-      }
-
-      &:first-child {
-        padding-top: $spacing-xs;
-        margin-top: -4rem; //needed because of default image spacing
-      }
+    @include breakpoint('lg') {
+      padding-right: 35%;
     }
+
+    @include breakpoint('lg') {
+      padding-right: 44%;
+    }
+
+    &:first-child {
+      padding-top: $spacing-xs;
+      margin-top: -4rem; //needed because of default image spacing
+    }
+  }
 }
