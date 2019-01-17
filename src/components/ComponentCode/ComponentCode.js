@@ -42,29 +42,28 @@ export default class ComponentCode extends React.Component {
 
     return (
       <>
-      <div className="ibm--row">
-        <div className="ibm--col-lg-12 ibm--offset-lg-4">
-          <h2 className="page-h2 bx--type-expressive-heading-04">{name}</h2>
+        <div className="ibm--row">
+          <div className="ibm--col-lg-12 ibm--offset-lg-4">
+            <h2 className="page-h2 bx--type-expressive-heading-04">{name}</h2>
+          </div>
         </div>
-      </div>
-        
-      <div className="component-variation ibm--row">
-        <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
-          
-          <ComponentExample
-            codepenSlug={codepen}
-            component={component}
-            variation={variation}
-            htmlFile={htmlFile}
-            hideViewFullRender={this.props.hideViewFullRender}
-            hasLightVersion={haslightversion}
-            hasReactVersion={hasreactversion}
-            hasAngularVersion={hasangularversion}
-            hasLightBackground={haslightbackground}
-            experimental={experimental}
-          />
+
+        <div className="component-variation ibm--row">
+          <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
+            <ComponentExample
+              codepenSlug={codepen}
+              component={component}
+              variation={variation}
+              htmlFile={htmlFile}
+              hideViewFullRender={this.props.hideViewFullRender}
+              hasLightVersion={haslightversion}
+              hasReactVersion={hasreactversion}
+              hasAngularVersion={hasangularversion}
+              hasLightBackground={haslightbackground}
+              experimental={experimental}
+            />
+          </div>
         </div>
-      </div>
       </>
     );
   }

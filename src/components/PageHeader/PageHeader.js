@@ -24,7 +24,9 @@ const PageHeader = ({ children, label, title }) => {
       <div className="ibm--grid">
         <div className="ibm--row">
           <div className="ibm--col-lg-12 ibm--offset-lg-4">
-            <h2 id="page-title" className="page-header__title bx--type-display-01">
+            <h2
+              id="page-title"
+              className="page-header__title bx--type-display-01">
               {title}
             </h2>
           </div>
