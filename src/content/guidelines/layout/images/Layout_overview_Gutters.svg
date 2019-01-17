@@ -1,177 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="928px" height="522px" viewBox="0 0 928 522" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1120px" height="630px" viewBox="0 0 1120 630" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
     <title>Layout_overview_Gutters</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <rect id="path-1" x="0" y="280" width="779" height="49"></rect>
-        <rect id="path-2" x="0" y="210" width="379" height="49"></rect>
-        <rect id="path-3" x="400" y="210" width="379" height="49"></rect>
-        <rect id="path-4" x="0" y="140" width="179" height="49"></rect>
-        <rect id="path-5" x="200" y="140" width="179" height="49"></rect>
-        <rect id="path-6" x="400" y="140" width="179" height="49"></rect>
-        <rect id="path-7" x="600" y="140" width="179" height="49"></rect>
-        <rect id="path-8" x="0" y="70" width="79" height="49"></rect>
-        <rect id="path-9" x="100" y="70" width="79" height="49"></rect>
-        <rect id="path-10" x="200" y="70" width="79" height="49"></rect>
-        <rect id="path-11" x="300" y="70" width="79" height="49"></rect>
-        <rect id="path-12" x="400" y="70" width="79" height="49"></rect>
-        <rect id="path-13" x="500" y="70" width="79" height="49"></rect>
-        <rect id="path-14" x="600" y="70" width="79" height="49"></rect>
-        <rect id="path-15" x="700" y="70" width="79" height="49"></rect>
-        <polygon id="path-16" points="50 0 79 0 79 49 50 49"></polygon>
-        <polygon id="path-17" points="100 0 129 0 129 49 100 49"></polygon>
-        <polygon id="path-18" points="150 0 179 0 179 49 150 49"></polygon>
-        <polygon id="path-19" points="200 0 229 0 229 49 200 49"></polygon>
-        <polygon id="path-20" points="250 0 279 0 279 49 250 49"></polygon>
-        <polygon id="path-21" points="300 0 329 0 329 49 300 49"></polygon>
-        <polygon id="path-22" points="350 0 379 0 379 49 350 49"></polygon>
-        <polygon id="path-23" points="400 0 429 0 429 49 400 49"></polygon>
-        <polygon id="path-24" points="450 0 479 0 479 49 450 49"></polygon>
-        <polygon id="path-25" points="500 0 529 0 529 49 500 49"></polygon>
-        <polygon id="path-26" points="550 0 579 0 579 49 550 49"></polygon>
-        <polygon id="path-27" points="600 0 629 0 629 49 600 49"></polygon>
-        <polygon id="path-28" points="0 0 29 0 29 49 0 49"></polygon>
-        <polygon id="path-29" points="650 0 679 0 679 49 650 49"></polygon>
-        <polygon id="path-30" points="700 0 729 0 729 49 700 49"></polygon>
-        <polygon id="path-31" points="750 0 779 0 779 49 750 49"></polygon>
+        <rect id="path-1" x="0" y="338.835443" width="942.599512" height="59.2962025"></rect>
+        <rect id="path-2" x="0" y="254.126582" width="458.594628" height="59.2962025"></rect>
+        <rect id="path-3" x="484.004884" y="254.126582" width="458.594628" height="59.2962025"></rect>
+        <rect id="path-4" x="0" y="169.417722" width="216.592186" height="59.2962025"></rect>
+        <rect id="path-5" x="242.002442" y="169.417722" width="216.592186" height="59.2962025"></rect>
+        <rect id="path-6" x="484.004884" y="169.417722" width="216.592186" height="59.2962025"></rect>
+        <rect id="path-7" x="726.007326" y="169.417722" width="216.592186" height="59.2962025"></rect>
+        <rect id="path-8" x="0" y="84.7088608" width="95.5909646" height="59.2962025"></rect>
+        <rect id="path-9" x="121.001221" y="84.7088608" width="95.5909646" height="59.2962025"></rect>
+        <rect id="path-10" x="242.002442" y="84.7088608" width="95.5909646" height="59.2962025"></rect>
+        <rect id="path-11" x="363.003663" y="84.7088608" width="95.5909646" height="59.2962025"></rect>
+        <rect id="path-12" x="484.004884" y="84.7088608" width="95.5909646" height="59.2962025"></rect>
+        <rect id="path-13" x="605.006105" y="84.7088608" width="95.5909646" height="59.2962025"></rect>
+        <rect id="path-14" x="726.007326" y="84.7088608" width="95.5909646" height="59.2962025"></rect>
+        <rect id="path-15" x="847.008547" y="84.7088608" width="95.5909646" height="59.2962025"></rect>
+        <polygon id="path-16" points="60.5006105 0 95.5909646 0 95.5909646 59.2962025 60.5006105 59.2962025"></polygon>
+        <polygon id="path-17" points="121.001221 0 156.091575 0 156.091575 59.2962025 121.001221 59.2962025"></polygon>
+        <polygon id="path-18" points="181.501832 0 216.592186 0 216.592186 59.2962025 181.501832 59.2962025"></polygon>
+        <polygon id="path-19" points="242.002442 0 277.092796 0 277.092796 59.2962025 242.002442 59.2962025"></polygon>
+        <polygon id="path-20" points="302.503053 0 337.593407 0 337.593407 59.2962025 302.503053 59.2962025"></polygon>
+        <polygon id="path-21" points="363.003663 0 398.094017 0 398.094017 59.2962025 363.003663 59.2962025"></polygon>
+        <polygon id="path-22" points="423.504274 0 458.594628 0 458.594628 59.2962025 423.504274 59.2962025"></polygon>
+        <polygon id="path-23" points="484.004884 0 519.095238 0 519.095238 59.2962025 484.004884 59.2962025"></polygon>
+        <polygon id="path-24" points="544.505495 0 579.595849 0 579.595849 59.2962025 544.505495 59.2962025"></polygon>
+        <polygon id="path-25" points="605.006105 0 640.096459 0 640.096459 59.2962025 605.006105 59.2962025"></polygon>
+        <polygon id="path-26" points="665.506716 0 700.59707 0 700.59707 59.2962025 665.506716 59.2962025"></polygon>
+        <polygon id="path-27" points="726.007326 0 761.09768 0 761.09768 59.2962025 726.007326 59.2962025"></polygon>
+        <polygon id="path-28" points="0 0 35.0903541 0 35.0903541 59.2962025 0 59.2962025"></polygon>
+        <polygon id="path-29" points="786.507937 0 821.598291 0 821.598291 59.2962025 786.507937 59.2962025"></polygon>
+        <polygon id="path-30" points="847.008547 0 882.098901 0 882.098901 59.2962025 847.008547 59.2962025"></polygon>
+        <polygon id="path-31" points="907.509158 0 942.599512 0 942.599512 59.2962025 907.509158 59.2962025"></polygon>
     </defs>
     <g id="Gutters" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="containers" transform="translate(75.000000, 104.000000)">
-            <g id="Rectangle-17-Copy-527">
-                <rect stroke="#97C1FF" stroke-width="1" x="-0.5" y="279.5" width="780" height="50"></rect>
-                <rect stroke="#EDF4FF" stroke-width="10" stroke-linejoin="square" x="5" y="285" width="769" height="39"></rect>
+        <g id="Group" transform="translate(65.000000, 76.000000)">
+            <g id="containers" transform="translate(24.200244, 48.405063)">
+                <g id="Rectangle-17-Copy-527">
+                    <rect stroke="#97C1FF" stroke-width="1.21" x="-0.605" y="338.230443" width="943.809512" height="60.5062025"></rect>
+                    <rect stroke="#EDF4FF" stroke-width="12.1" stroke-linejoin="square" x="6.05" y="344.885443" width="930.499512" height="47.1962025"></rect>
+                </g>
+                <g id="Rectangle-17-Copy-525">
+                    <rect stroke="#97C1FF" stroke-width="1.21" x="-0.605" y="253.521582" width="459.804628" height="60.5062025"></rect>
+                    <rect stroke="#EDF4FF" stroke-width="12.1" stroke-linejoin="square" x="6.05" y="260.176582" width="446.494628" height="47.1962025"></rect>
+                </g>
+                <g id="Rectangle-17-Copy-526">
+                    <rect stroke="#97C1FF" stroke-width="1.21" x="483.399884" y="253.521582" width="459.804628" height="60.5062025"></rect>
+                    <rect stroke="#EDF4FF" stroke-width="12.1" stroke-linejoin="square" x="490.054884" y="260.176582" width="446.494628" height="47.1962025"></rect>
+                </g>
+                <g id="Rectangle-17-Copy-521">
+                    <rect stroke="#97C1FF" stroke-width="1.21" x="-0.605" y="168.812722" width="217.802186" height="60.5062025"></rect>
+                    <rect stroke="#EDF4FF" stroke-width="12.1" stroke-linejoin="square" x="6.05" y="175.467722" width="204.492186" height="47.1962025"></rect>
+                </g>
+                <g id="Rectangle-17-Copy-522">
+                    <rect stroke="#97C1FF" stroke-width="1.21" x="241.397442" y="168.812722" width="217.802186" height="60.5062025"></rect>
+                    <rect stroke="#EDF4FF" stroke-width="12.1" stroke-linejoin="square" x="248.052442" y="175.467722" width="204.492186" height="47.1962025"></rect>
+                </g>
+                <g id="Rectangle-17-Copy-523">
+                    <rect stroke="#97C1FF" stroke-width="1.21" x="483.399884" y="168.812722" width="217.802186" height="60.5062025"></rect>
+                    <rect stroke="#EDF4FF" stroke-width="12.1" stroke-linejoin="square" x="490.054884" y="175.467722" width="204.492186" height="47.1962025"></rect>
+                </g>
+                <g id="Rectangle-17-Copy-524">
+                    <rect stroke="#97C1FF" stroke-width="1.21" x="725.402326" y="168.812722" width="217.802186" height="60.5062025"></rect>
+                    <rect stroke="#EDF4FF" stroke-width="12.1" stroke-linejoin="square" x="732.057326" y="175.467722" width="204.492186" height="47.1962025"></rect>
+                </g>
+                <g id="Rectangle-17-Copy-513">
+                    <rect stroke="#97C1FF" stroke-width="1.21" x="-0.605" y="84.1038608" width="96.8009646" height="60.5062025"></rect>
+                    <rect stroke="#EDF4FF" stroke-width="12.1" stroke-linejoin="square" x="6.05" y="90.7588608" width="83.4909646" height="47.1962025"></rect>
+                </g>
+                <g id="Rectangle-17-Copy-514">
+                    <rect stroke="#97C1FF" stroke-width="1.21" x="120.396221" y="84.1038608" width="96.8009646" height="60.5062025"></rect>
+                    <rect stroke="#EDF4FF" stroke-width="12.1" stroke-linejoin="square" x="127.051221" y="90.7588608" width="83.4909646" height="47.1962025"></rect>
+                </g>
+                <g id="Rectangle-17-Copy-515">
+                    <rect stroke="#97C1FF" stroke-width="1.21" x="241.397442" y="84.1038608" width="96.8009646" height="60.5062025"></rect>
+                    <rect stroke="#EDF4FF" stroke-width="12.1" stroke-linejoin="square" x="248.052442" y="90.7588608" width="83.4909646" height="47.1962025"></rect>
+                </g>
+                <g id="Rectangle-17-Copy-516">
+                    <rect stroke="#97C1FF" stroke-width="1.21" x="362.398663" y="84.1038608" width="96.8009646" height="60.5062025"></rect>
+                    <rect stroke="#EDF4FF" stroke-width="12.1" stroke-linejoin="square" x="369.053663" y="90.7588608" width="83.4909646" height="47.1962025"></rect>
+                </g>
+                <g id="Rectangle-17-Copy-517">
+                    <rect stroke="#97C1FF" stroke-width="1.21" x="483.399884" y="84.1038608" width="96.8009646" height="60.5062025"></rect>
+                    <rect stroke="#EDF4FF" stroke-width="12.1" stroke-linejoin="square" x="490.054884" y="90.7588608" width="83.4909646" height="47.1962025"></rect>
+                </g>
+                <g id="Rectangle-17-Copy-518">
+                    <rect stroke="#97C1FF" stroke-width="1.21" x="604.401105" y="84.1038608" width="96.8009646" height="60.5062025"></rect>
+                    <rect stroke="#EDF4FF" stroke-width="12.1" stroke-linejoin="square" x="611.056105" y="90.7588608" width="83.4909646" height="47.1962025"></rect>
+                </g>
+                <g id="Rectangle-17-Copy-519">
+                    <rect stroke="#97C1FF" stroke-width="1.21" x="725.402326" y="84.1038608" width="96.8009646" height="60.5062025"></rect>
+                    <rect stroke="#EDF4FF" stroke-width="12.1" stroke-linejoin="square" x="732.057326" y="90.7588608" width="83.4909646" height="47.1962025"></rect>
+                </g>
+                <g id="Rectangle-17-Copy-520">
+                    <rect stroke="#97C1FF" stroke-width="1.21" x="846.403547" y="84.1038608" width="96.8009646" height="60.5062025"></rect>
+                    <rect stroke="#EDF4FF" stroke-width="12.1" stroke-linejoin="square" x="853.058547" y="90.7588608" width="83.4909646" height="47.1962025"></rect>
+                </g>
+                <g id="Rectangle-17-Copy-488">
+                    <path stroke="#97C1FF" stroke-width="1.21" d="M59.8956105,-0.605 L96.1959646,-0.605 L96.1959646,59.9012025 L59.8956105,59.9012025 L59.8956105,-0.605 Z"></path>
+                    <path stroke="#EDF4FF" stroke-width="12.1" d="M66.5506105,6.05 L66.5506105,53.2462025 L89.5409646,53.2462025 L89.5409646,6.05 L66.5506105,6.05 Z" stroke-linejoin="square"></path>
+                </g>
+                <g id="Rectangle-17-Copy-489">
+                    <path stroke="#97C1FF" stroke-width="1.21" d="M120.396221,-0.605 L156.696575,-0.605 L156.696575,59.9012025 L120.396221,59.9012025 L120.396221,-0.605 Z"></path>
+                    <path stroke="#EDF4FF" stroke-width="12.1" d="M127.051221,6.05 L127.051221,53.2462025 L150.041575,53.2462025 L150.041575,6.05 L127.051221,6.05 Z" stroke-linejoin="square"></path>
+                </g>
+                <g id="Rectangle-17-Copy-490">
+                    <path stroke="#97C1FF" stroke-width="1.21" d="M180.896832,-0.605 L217.197186,-0.605 L217.197186,59.9012025 L180.896832,59.9012025 L180.896832,-0.605 Z"></path>
+                    <path stroke="#EDF4FF" stroke-width="12.1" d="M187.551832,6.05 L187.551832,53.2462025 L210.542186,53.2462025 L210.542186,6.05 L187.551832,6.05 Z" stroke-linejoin="square"></path>
+                </g>
+                <g id="Rectangle-17-Copy-491">
+                    <path stroke="#97C1FF" stroke-width="1.21" d="M241.397442,-0.605 L277.697796,-0.605 L277.697796,59.9012025 L241.397442,59.9012025 L241.397442,-0.605 Z"></path>
+                    <path stroke="#EDF4FF" stroke-width="12.1" d="M248.052442,6.05 L248.052442,53.2462025 L271.042796,53.2462025 L271.042796,6.05 L248.052442,6.05 Z" stroke-linejoin="square"></path>
+                </g>
+                <g id="Rectangle-17-Copy-492">
+                    <path stroke="#97C1FF" stroke-width="1.21" d="M301.898053,-0.605 L338.198407,-0.605 L338.198407,59.9012025 L301.898053,59.9012025 L301.898053,-0.605 Z"></path>
+                    <path stroke="#EDF4FF" stroke-width="12.1" d="M308.553053,6.05 L308.553053,53.2462025 L331.543407,53.2462025 L331.543407,6.05 L308.553053,6.05 Z" stroke-linejoin="square"></path>
+                </g>
+                <g id="Rectangle-17-Copy-493">
+                    <path stroke="#97C1FF" stroke-width="1.21" d="M362.398663,-0.605 L398.699017,-0.605 L398.699017,59.9012025 L362.398663,59.9012025 L362.398663,-0.605 Z"></path>
+                    <path stroke="#EDF4FF" stroke-width="12.1" d="M369.053663,6.05 L369.053663,53.2462025 L392.044017,53.2462025 L392.044017,6.05 L369.053663,6.05 Z" stroke-linejoin="square"></path>
+                </g>
+                <g id="Rectangle-17-Copy-494">
+                    <path stroke="#97C1FF" stroke-width="1.21" d="M422.899274,-0.605 L459.199628,-0.605 L459.199628,59.9012025 L422.899274,59.9012025 L422.899274,-0.605 Z"></path>
+                    <path stroke="#EDF4FF" stroke-width="12.1" d="M429.554274,6.05 L429.554274,53.2462025 L452.544628,53.2462025 L452.544628,6.05 L429.554274,6.05 Z" stroke-linejoin="square"></path>
+                </g>
+                <g id="Rectangle-17-Copy-495">
+                    <path stroke="#97C1FF" stroke-width="1.21" d="M483.399884,-0.605 L519.700238,-0.605 L519.700238,59.9012025 L483.399884,59.9012025 L483.399884,-0.605 Z"></path>
+                    <path stroke="#EDF4FF" stroke-width="12.1" d="M490.054884,6.05 L490.054884,53.2462025 L513.045238,53.2462025 L513.045238,6.05 L490.054884,6.05 Z" stroke-linejoin="square"></path>
+                </g>
+                <g id="Rectangle-17-Copy-496">
+                    <path stroke="#97C1FF" stroke-width="1.21" d="M543.900495,-0.605 L580.200849,-0.605 L580.200849,59.9012025 L543.900495,59.9012025 L543.900495,-0.605 Z"></path>
+                    <path stroke="#EDF4FF" stroke-width="12.1" d="M550.555495,6.05 L550.555495,53.2462025 L573.545849,53.2462025 L573.545849,6.05 L550.555495,6.05 Z" stroke-linejoin="square"></path>
+                </g>
+                <g id="Rectangle-17-Copy-497">
+                    <path stroke="#97C1FF" stroke-width="1.21" d="M604.401105,-0.605 L640.701459,-0.605 L640.701459,59.9012025 L604.401105,59.9012025 L604.401105,-0.605 Z"></path>
+                    <path stroke="#EDF4FF" stroke-width="12.1" d="M611.056105,6.05 L611.056105,53.2462025 L634.046459,53.2462025 L634.046459,6.05 L611.056105,6.05 Z" stroke-linejoin="square"></path>
+                </g>
+                <g id="Rectangle-17-Copy-498">
+                    <path stroke="#97C1FF" stroke-width="1.21" d="M664.901716,-0.605 L701.20207,-0.605 L701.20207,59.9012025 L664.901716,59.9012025 L664.901716,-0.605 Z"></path>
+                    <path stroke="#EDF4FF" stroke-width="12.1" d="M671.556716,6.05 L671.556716,53.2462025 L694.54707,53.2462025 L694.54707,6.05 L671.556716,6.05 Z" stroke-linejoin="square"></path>
+                </g>
+                <g id="Rectangle-17-Copy-499">
+                    <path stroke="#97C1FF" stroke-width="1.21" d="M725.402326,-0.605 L761.70268,-0.605 L761.70268,59.9012025 L725.402326,59.9012025 L725.402326,-0.605 Z"></path>
+                    <path stroke="#EDF4FF" stroke-width="12.1" d="M732.057326,6.05 L732.057326,53.2462025 L755.04768,53.2462025 L755.04768,6.05 L732.057326,6.05 Z" stroke-linejoin="square"></path>
+                </g>
+                <g id="Rectangle-17-Copy-487">
+                    <path stroke="#97C1FF" stroke-width="1.21" d="M-0.605,-0.605 L35.6953541,-0.605 L35.6953541,59.9012025 L-0.605,59.9012025 L-0.605,-0.605 Z"></path>
+                    <path stroke="#EDF4FF" stroke-width="12.1" d="M6.05,6.05 L6.05,53.2462025 L29.0403541,53.2462025 L29.0403541,6.05 L6.05,6.05 Z" stroke-linejoin="square"></path>
+                </g>
+                <g id="Rectangle-17-Copy-500">
+                    <path stroke="#97C1FF" stroke-width="1.21" d="M785.902937,-0.605 L822.203291,-0.605 L822.203291,59.9012025 L785.902937,59.9012025 L785.902937,-0.605 Z"></path>
+                    <path stroke="#EDF4FF" stroke-width="12.1" d="M792.557937,6.05 L792.557937,53.2462025 L815.548291,53.2462025 L815.548291,6.05 L792.557937,6.05 Z" stroke-linejoin="square"></path>
+                </g>
+                <g id="Rectangle-17-Copy-501">
+                    <path stroke="#97C1FF" stroke-width="1.21" d="M846.403547,-0.605 L882.703901,-0.605 L882.703901,59.9012025 L846.403547,59.9012025 L846.403547,-0.605 Z"></path>
+                    <path stroke="#EDF4FF" stroke-width="12.1" d="M853.058547,6.05 L853.058547,53.2462025 L876.048901,53.2462025 L876.048901,6.05 L853.058547,6.05 Z" stroke-linejoin="square"></path>
+                </g>
+                <g id="Rectangle-17-Copy-502">
+                    <path stroke="#97C1FF" stroke-width="1.21" d="M906.904158,-0.605 L943.204512,-0.605 L943.204512,59.9012025 L906.904158,59.9012025 L906.904158,-0.605 Z"></path>
+                    <path stroke="#EDF4FF" stroke-width="12.1" d="M913.559158,6.05 L913.559158,53.2462025 L936.549512,53.2462025 L936.549512,6.05 L913.559158,6.05 Z" stroke-linejoin="square"></path>
+                </g>
             </g>
-            <g id="Rectangle-17-Copy-525">
-                <rect stroke="#97C1FF" stroke-width="1" x="-0.5" y="209.5" width="380" height="50"></rect>
-                <rect stroke="#EDF4FF" stroke-width="10" stroke-linejoin="square" x="5" y="215" width="369" height="39"></rect>
+            <g id="margins" transform="translate(0.000000, 22.992405)" fill="#FFCFE1" stroke="#FFCFE1" stroke-width="1.21">
+                <rect id="margin" x="979.504878" y="0.605" width="10.8901221" height="453.797595"></rect>
+                <rect id="margin" x="0.605" y="0.605" width="10.8901221" height="453.797595"></rect>
             </g>
-            <g id="Rectangle-17-Copy-526">
-                <rect stroke="#97C1FF" stroke-width="1" x="399.5" y="209.5" width="380" height="50"></rect>
-                <rect stroke="#EDF4FF" stroke-width="10" stroke-linejoin="square" x="405" y="215" width="369" height="39"></rect>
+            <g id="browser">
+                <rect id="Frame" stroke="#BEBEBE" stroke-width="1.21" x="0.60501221" y="23.5975316" width="989.789976" height="453.797342"></rect>
+                <path d="M3.0624,0 L987.9376,0 C989.628917,6.27813363e-14 991,1.37108318 991,3.0624 L991,24.144323 L0,24.144323 L0,3.0624 C-2.07126573e-16,1.37108318 1.37108318,-1.33399351e-16 3.0624,-4.4408921e-16 Z" id="Rectangle-2-Copy-25" fill="#565656"></path>
+                <ellipse id="Oval-5-Copy-18" fill="#FFFFFF" cx="15.7301587" cy="12.092075" rx="3.63003663" ry="3.62118891"></ellipse>
+                <ellipse id="Oval-5-Copy-19" fill="#FFFFFF" cx="30.2503053" cy="12.092075" rx="3.63003663" ry="3.62118891"></ellipse>
             </g>
-            <g id="Rectangle-17-Copy-521">
-                <rect stroke="#97C1FF" stroke-width="1" x="-0.5" y="139.5" width="180" height="50"></rect>
-                <rect stroke="#EDF4FF" stroke-width="10" stroke-linejoin="square" x="5" y="145" width="169" height="39"></rect>
-            </g>
-            <g id="Rectangle-17-Copy-522">
-                <rect stroke="#97C1FF" stroke-width="1" x="199.5" y="139.5" width="180" height="50"></rect>
-                <rect stroke="#EDF4FF" stroke-width="10" stroke-linejoin="square" x="205" y="145" width="169" height="39"></rect>
-            </g>
-            <g id="Rectangle-17-Copy-523">
-                <rect stroke="#97C1FF" stroke-width="1" x="399.5" y="139.5" width="180" height="50"></rect>
-                <rect stroke="#EDF4FF" stroke-width="10" stroke-linejoin="square" x="405" y="145" width="169" height="39"></rect>
-            </g>
-            <g id="Rectangle-17-Copy-524">
-                <rect stroke="#97C1FF" stroke-width="1" x="599.5" y="139.5" width="180" height="50"></rect>
-                <rect stroke="#EDF4FF" stroke-width="10" stroke-linejoin="square" x="605" y="145" width="169" height="39"></rect>
-            </g>
-            <g id="Rectangle-17-Copy-513">
-                <rect stroke="#97C1FF" stroke-width="1" x="-0.5" y="69.5" width="80" height="50"></rect>
-                <rect stroke="#EDF4FF" stroke-width="10" stroke-linejoin="square" x="5" y="75" width="69" height="39"></rect>
-            </g>
-            <g id="Rectangle-17-Copy-514">
-                <rect stroke="#97C1FF" stroke-width="1" x="99.5" y="69.5" width="80" height="50"></rect>
-                <rect stroke="#EDF4FF" stroke-width="10" stroke-linejoin="square" x="105" y="75" width="69" height="39"></rect>
-            </g>
-            <g id="Rectangle-17-Copy-515">
-                <rect stroke="#97C1FF" stroke-width="1" x="199.5" y="69.5" width="80" height="50"></rect>
-                <rect stroke="#EDF4FF" stroke-width="10" stroke-linejoin="square" x="205" y="75" width="69" height="39"></rect>
-            </g>
-            <g id="Rectangle-17-Copy-516">
-                <rect stroke="#97C1FF" stroke-width="1" x="299.5" y="69.5" width="80" height="50"></rect>
-                <rect stroke="#EDF4FF" stroke-width="10" stroke-linejoin="square" x="305" y="75" width="69" height="39"></rect>
-            </g>
-            <g id="Rectangle-17-Copy-517">
-                <rect stroke="#97C1FF" stroke-width="1" x="399.5" y="69.5" width="80" height="50"></rect>
-                <rect stroke="#EDF4FF" stroke-width="10" stroke-linejoin="square" x="405" y="75" width="69" height="39"></rect>
-            </g>
-            <g id="Rectangle-17-Copy-518">
-                <rect stroke="#97C1FF" stroke-width="1" x="499.5" y="69.5" width="80" height="50"></rect>
-                <rect stroke="#EDF4FF" stroke-width="10" stroke-linejoin="square" x="505" y="75" width="69" height="39"></rect>
-            </g>
-            <g id="Rectangle-17-Copy-519">
-                <rect stroke="#97C1FF" stroke-width="1" x="599.5" y="69.5" width="80" height="50"></rect>
-                <rect stroke="#EDF4FF" stroke-width="10" stroke-linejoin="square" x="605" y="75" width="69" height="39"></rect>
-            </g>
-            <g id="Rectangle-17-Copy-520">
-                <rect stroke="#97C1FF" stroke-width="1" x="699.5" y="69.5" width="80" height="50"></rect>
-                <rect stroke="#EDF4FF" stroke-width="10" stroke-linejoin="square" x="705" y="75" width="69" height="39"></rect>
-            </g>
-            <g id="Rectangle-17-Copy-488">
-                <path stroke="#97C1FF" stroke-width="1" d="M49.5,-0.5 L79.5,-0.5 L79.5,49.5 L49.5,49.5 L49.5,-0.5 Z"></path>
-                <path stroke="#EDF4FF" stroke-width="10" d="M55,5 L55,44 L74,44 L74,5 L55,5 Z" stroke-linejoin="square"></path>
-            </g>
-            <g id="Rectangle-17-Copy-489">
-                <path stroke="#97C1FF" stroke-width="1" d="M99.5,-0.5 L129.5,-0.5 L129.5,49.5 L99.5,49.5 L99.5,-0.5 Z"></path>
-                <path stroke="#EDF4FF" stroke-width="10" d="M105,5 L105,44 L124,44 L124,5 L105,5 Z" stroke-linejoin="square"></path>
-            </g>
-            <g id="Rectangle-17-Copy-490">
-                <path stroke="#97C1FF" stroke-width="1" d="M149.5,-0.5 L179.5,-0.5 L179.5,49.5 L149.5,49.5 L149.5,-0.5 Z"></path>
-                <path stroke="#EDF4FF" stroke-width="10" d="M155,5 L155,44 L174,44 L174,5 L155,5 Z" stroke-linejoin="square"></path>
-            </g>
-            <g id="Rectangle-17-Copy-491">
-                <path stroke="#97C1FF" stroke-width="1" d="M199.5,-0.5 L229.5,-0.5 L229.5,49.5 L199.5,49.5 L199.5,-0.5 Z"></path>
-                <path stroke="#EDF4FF" stroke-width="10" d="M205,5 L205,44 L224,44 L224,5 L205,5 Z" stroke-linejoin="square"></path>
-            </g>
-            <g id="Rectangle-17-Copy-492">
-                <path stroke="#97C1FF" stroke-width="1" d="M249.5,-0.5 L279.5,-0.5 L279.5,49.5 L249.5,49.5 L249.5,-0.5 Z"></path>
-                <path stroke="#EDF4FF" stroke-width="10" d="M255,5 L255,44 L274,44 L274,5 L255,5 Z" stroke-linejoin="square"></path>
-            </g>
-            <g id="Rectangle-17-Copy-493">
-                <path stroke="#97C1FF" stroke-width="1" d="M299.5,-0.5 L329.5,-0.5 L329.5,49.5 L299.5,49.5 L299.5,-0.5 Z"></path>
-                <path stroke="#EDF4FF" stroke-width="10" d="M305,5 L305,44 L324,44 L324,5 L305,5 Z" stroke-linejoin="square"></path>
-            </g>
-            <g id="Rectangle-17-Copy-494">
-                <path stroke="#97C1FF" stroke-width="1" d="M349.5,-0.5 L379.5,-0.5 L379.5,49.5 L349.5,49.5 L349.5,-0.5 Z"></path>
-                <path stroke="#EDF4FF" stroke-width="10" d="M355,5 L355,44 L374,44 L374,5 L355,5 Z" stroke-linejoin="square"></path>
-            </g>
-            <g id="Rectangle-17-Copy-495">
-                <path stroke="#97C1FF" stroke-width="1" d="M399.5,-0.5 L429.5,-0.5 L429.5,49.5 L399.5,49.5 L399.5,-0.5 Z"></path>
-                <path stroke="#EDF4FF" stroke-width="10" d="M405,5 L405,44 L424,44 L424,5 L405,5 Z" stroke-linejoin="square"></path>
-            </g>
-            <g id="Rectangle-17-Copy-496">
-                <path stroke="#97C1FF" stroke-width="1" d="M449.5,-0.5 L479.5,-0.5 L479.5,49.5 L449.5,49.5 L449.5,-0.5 Z"></path>
-                <path stroke="#EDF4FF" stroke-width="10" d="M455,5 L455,44 L474,44 L474,5 L455,5 Z" stroke-linejoin="square"></path>
-            </g>
-            <g id="Rectangle-17-Copy-497">
-                <path stroke="#97C1FF" stroke-width="1" d="M499.5,-0.5 L529.5,-0.5 L529.5,49.5 L499.5,49.5 L499.5,-0.5 Z"></path>
-                <path stroke="#EDF4FF" stroke-width="10" d="M505,5 L505,44 L524,44 L524,5 L505,5 Z" stroke-linejoin="square"></path>
-            </g>
-            <g id="Rectangle-17-Copy-498">
-                <path stroke="#97C1FF" stroke-width="1" d="M549.5,-0.5 L579.5,-0.5 L579.5,49.5 L549.5,49.5 L549.5,-0.5 Z"></path>
-                <path stroke="#EDF4FF" stroke-width="10" d="M555,5 L555,44 L574,44 L574,5 L555,5 Z" stroke-linejoin="square"></path>
-            </g>
-            <g id="Rectangle-17-Copy-499">
-                <path stroke="#97C1FF" stroke-width="1" d="M599.5,-0.5 L629.5,-0.5 L629.5,49.5 L599.5,49.5 L599.5,-0.5 Z"></path>
-                <path stroke="#EDF4FF" stroke-width="10" d="M605,5 L605,44 L624,44 L624,5 L605,5 Z" stroke-linejoin="square"></path>
-            </g>
-            <g id="Rectangle-17-Copy-487">
-                <path stroke="#97C1FF" stroke-width="1" d="M-0.5,-0.5 L29.5,-0.5 L29.5,49.5 L-0.5,49.5 L-0.5,-0.5 Z"></path>
-                <path stroke="#EDF4FF" stroke-width="10" d="M5,5 L5,44 L24,44 L24,5 L5,5 Z" stroke-linejoin="square"></path>
-            </g>
-            <g id="Rectangle-17-Copy-500">
-                <path stroke="#97C1FF" stroke-width="1" d="M649.5,-0.5 L679.5,-0.5 L679.5,49.5 L649.5,49.5 L649.5,-0.5 Z"></path>
-                <path stroke="#EDF4FF" stroke-width="10" d="M655,5 L655,44 L674,44 L674,5 L655,5 Z" stroke-linejoin="square"></path>
-            </g>
-            <g id="Rectangle-17-Copy-501">
-                <path stroke="#97C1FF" stroke-width="1" d="M699.5,-0.5 L729.5,-0.5 L729.5,49.5 L699.5,49.5 L699.5,-0.5 Z"></path>
-                <path stroke="#EDF4FF" stroke-width="10" d="M705,5 L705,44 L724,44 L724,5 L705,5 Z" stroke-linejoin="square"></path>
-            </g>
-            <g id="Rectangle-17-Copy-502">
-                <path stroke="#97C1FF" stroke-width="1" d="M749.5,-0.5 L779.5,-0.5 L779.5,49.5 L749.5,49.5 L749.5,-0.5 Z"></path>
-                <path stroke="#EDF4FF" stroke-width="10" d="M755,5 L755,44 L774,44 L774,5 L755,5 Z" stroke-linejoin="square"></path>
-            </g>
-        </g>
-        <g id="margins" transform="translate(55.000000, 83.000000)" fill="#FFCFE1" stroke="#FFCFE1">
-            <rect id="margin" x="809.5" y="0.5" width="9" height="375"></rect>
-            <rect id="margin" x="0.5" y="0.5" width="9" height="375"></rect>
-        </g>
-        <g id="browser" transform="translate(55.000000, 64.000000)">
-            <rect id="Frame" stroke="#BEBEBE" x="0.5" y="19.5" width="818" height="375"></rect>
-            <path d="M2.53090909,0 L816.469091,0 C817.866873,6.18172439e-14 819,1.1331266 819,2.53090909 L819,19.9518987 L0,19.9518987 L-4.4408921e-16,2.53090909 C-6.15268196e-16,1.1331266 1.1331266,2.56768479e-16 2.53090909,0 Z" id="Rectangle-2-Copy-25" fill="#565656"></path>
-            <ellipse id="Oval-5-Copy-18" fill="#FFFFFF" cx="13" cy="9.99240506" rx="3" ry="2.99240506"></ellipse>
-            <ellipse id="Oval-5-Copy-19" fill="#FFFFFF" cx="25" cy="9.99240506" rx="3" ry="2.99240506"></ellipse>
         </g>
     </g>
 </svg>
