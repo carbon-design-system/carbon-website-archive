@@ -10,18 +10,18 @@ tabs: ['Library', 'Usage', 'Design and Contribution']
 
 UI icons that appear within Carbon components are generally 16 px square. Icons sized at 20, 24, and 32 px can be also used within the UI. Icons should only be used at their original sizes and not resized in code.
 
-![icon sizing](images/iconography-usage-sizing-1.svg)
+![icon sizing](images/Iconography-usage-sizing-1.svg)
 
-![icon alignment](images/iconography-usage-sizing-2.svg)
+![icon alignment](images/Iconography-usage-sizing-2.svg)
 
 _16 px and 20 px icons are optimized to feel balanced when paired with 14pt and 16pt IBM Plex. Use 24 px and 32 px when larger icons are needed._
 
 <grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Do: use the correct icon size with IBM Plex.">
-        <img src="images/iconography-usage-sizing-3.svg" alt="proper sizing">    
+        <img src="images/Iconography-usage-sizing-3.svg" alt="proper sizing">    
     </do-dont-example>
     <do-dont-example label="Don't: alter the icon-text size ratio.">
-        <img src="images/iconography-usage-sizing-4.svg" alt="improper sizing">    
+        <img src="images/Iconography-usage-sizing-4.svg" alt="improper sizing">    
     </do-dont-example>
 </grid-wrapper>
 
@@ -29,7 +29,7 @@ _16 px and 20 px icons are optimized to feel balanced when paired with 14pt and 
 
 All touch targets for interactive icons need to be 44 px or larger. Developers can add padding to a touch target with CSS to meet the 44 px requirement.
 
-![touch target padding](images/iconography-usage-padding-6.svg)
+![touch target padding](images/Iconography-usage-padding-6.svg)
 
 ### Color
 
@@ -50,10 +50,10 @@ When used next to text, icons should be center-aligned.
 
 <grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Do: center-align icons when they’re next to text.">
-        <img src="images/iconography-usage-sizing-5.svg" alt="proper alignment">    
+        <img src="images/Iconography-usage-sizing-5.svg" alt="proper alignment">    
     </do-dont-example>
     <do-dont-example label="Don't: baseline-align icons to the text.">
-        <img src="images/iconography-usage-sizing-6.svg" alt="improper alignment">    
+        <img src="images/Iconography-usage-sizing-6.svg" alt="improper alignment">    
     </do-dont-example>
 </grid-wrapper>
 
