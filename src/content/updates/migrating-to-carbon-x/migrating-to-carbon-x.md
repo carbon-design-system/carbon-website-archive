@@ -19,7 +19,7 @@ title: Migrating to Carbon X
 
 ## Carbon X is near!
 
-Carbon X, aka v10, is currently in Alpha release. Please use this opportunity to explore and experiment with the new components, elements, layouts, and UI shell. The Alpha release is a work in progress; changes will be frequent and possibly breaking. **This release is not approved for production.** Please explore the system and [provide bountiful feedback](../help/support#github-issues)!
+Carbon X, aka v10, is currently in Alpha release. Please use this opportunity to explore and experiment with the new components, elements, layouts, and UI shell. The Alpha release is a work in progress; changes will be frequent and possibly breaking. **This release is not approved for production.** Please explore the system and [provide bountiful feedback](/help/support#github-issues)!
 
 ## Rollout plan
 
