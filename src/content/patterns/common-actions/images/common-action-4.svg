@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="736px" height="730px" viewBox="0 0 736 730" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>common-action-4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="5.88375 5 10 0.88375 9.11625 0 5 4.11625 0.88375 0 0 0.88375 4.11625 5 0 9.11625 0.88375 10 5 5.88375 9.11625 10 10 9.11625"></polygon>
+        <polygon id="path-3" points="1 32 129.293945 32 129.293945 0 161 0 161 32 161 161 1 161"></polygon>
+        <filter x="-6.2%" y="-5.0%" width="112.5%" height="112.4%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-32.7%" y="-24.4%" width="165.3%" height="155.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M1,2 C1.55228475,2 2,1.55228475 2,1 C2,0.44771525 1.55228475,0 1,0 C0.44771525,0 0,0.44771525 0,1 C0,1.55228475 0.44771525,2 1,2 Z M1,7 C1.55228475,7 2,6.55228475 2,6 C2,5.44771525 1.55228475,5 1,5 C0.44771525,5 0,5.44771525 0,6 C0,6.55228475 0.44771525,7 1,7 Z M1,12 C1.55228475,12 2,11.5522847 2,11 C2,10.4477153 1.55228475,10 1,10 C0.44771525,10 0,10.4477153 0,11 C0,11.5522847 0.44771525,12 1,12 Z" id="path-6"></path>
+    </defs>
+    <g id="common-action-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy-5" fill-opacity="0.7" fill="#000000" x="0" y="0" width="736" height="409"></rect>
+        <g id="color/gray/10" transform="translate(112.000000, 82.000000)" fill="#F3F3F3">
+            <rect x="0" y="0" width="512" height="182"></rect>
+        </g>
+        <g id="color/gray/10" transform="translate(112.000000, 80.000000)" fill="#F3F3F3">
+            <rect x="0" y="0" width="512" height="233"></rect>
+        </g>
+        <g id="Component/Button/Pieces/Background/Primary-Danger,-enabled" transform="translate(368.000000, 265.000000)" fill="#E0182D">
+            <polygon id="Background" points="256 64 0 64 0 0 256 0"></polygon>
+        </g>
+        <g id="color/gray/80" transform="translate(112.000000, 265.000000)" fill="#3D3D3D">
+            <rect x="0" y="0" width="256" height="64"></rect>
+        </g>
+        <text id="Cancel-Copy-2" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" fill="#FFFFFF">
+            <tspan x="128" y="295">Cancel</tspan>
+        </text>
+        <text id="Delete" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" fill="#FFFFFF">
+            <tspan x="384" y="295">Delete</tspan>
+        </text>
+        <g id="icon/navigation/close/20" transform="translate(590.000000, 94.000000)">
+            <g id="Group">
+                <g id="close" transform="translate(5.000000, 5.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="icon-color" fill="#000000" xlink:href="#path-1"></use>
+                </g>
+                <rect id="transparent-rectangle" x="0" y="0" width="20" height="20"></rect>
+            </g>
+        </g>
+        <text id="Optional-label-Copy-5" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="20" fill="#565656">
+            <tspan x="128" y="110">Optional label</tspan>
+        </text>
+        <text id="Danger-modal-title" font-family="IBMPlexSans, IBM Plex Sans" font-size="20" font-weight="normal" line-spacing="26" fill="#171717">
+            <tspan x="128" y="144">Danger modal title</tspan>
+        </text>
+        <text id="Lorem-ipsum-dolor-si-Copy-7" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="20" fill="#171717">
+            <tspan x="128" y="171">Lorem ipsum dolor sit lorem a amet, consectetur </tspan>
+            <tspan x="128" y="191">adipiscing elit, sed do eiusmod tempor incididunt ut labore </tspan>
+            <tspan x="128" y="211">et dolore magna aliqua. Ut enim ad minim veniam.</tspan>
+        </text>
+        <g id="Overflow-Menu/Open-Copy-4" transform="translate(287.000000, 489.000000)">
+            <rect id="Rectangle-2-Copy-7" fill="#F3F3F3" x="41" y="32" width="120" height="32"></rect>
+            <g id="Rectangle-2-Copy-10">
+                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                <use fill="#F3F3F3" fill-rule="evenodd" xlink:href="#path-3"></use>
+            </g>
+            <rect id="Rectangle-2-Copy-11" fill="#F3F3F3" x="129" y="0" width="32" height="32"></rect>
+            <g id="Option-1" transform="translate(1.000000, 32.000000)">
+                <rect id="Background" x="0" y="0" width="160" height="32"></rect>
+                <text font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" fill="#565656">
+                    <tspan x="16" y="21">Option 1</tspan>
+                </text>
+            </g>
+            <g id="Option-1-Copy-2" transform="translate(1.000000, 64.000000)">
+                <rect id="Background" x="0" y="0" width="160" height="32"></rect>
+                <text id="Option-2" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" fill="#565656">
+                    <tspan x="16" y="21">Option 2</tspan>
+                </text>
+            </g>
+            <g id="Option-1-Copy-3" transform="translate(1.000000, 96.000000)">
+                <rect id="Background" x="0" y="0" width="160" height="32"></rect>
+                <text id="Option-3" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" fill="#565656">
+                    <tspan x="16" y="21">Option 3</tspan>
+                </text>
+            </g>
+            <g id="Option-1-Copy-4" transform="translate(1.000000, 129.000000)">
+                <rect id="Background" fill="#DA1E28" x="0" y="0" width="160" height="32"></rect>
+                <text id="Option-4" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="16" y="21">Option 4</tspan>
+                </text>
+            </g>
+            <g id="Cursor/Hand/Pointing" transform="translate(120.000000, 129.000000)">
+                <g id="pointing" filter="url(#filter-5)" transform="translate(9.000000, 8.000000)">
+                    <path d="M3.27,12.28 C2.99,11.92 2.64,11.19 2.03,10.28 C1.68,9.78 0.82,8.83 0.56,8.34 C0.372571391,8.04223059 0.318185191,7.67965592 0.41,7.34 C0.566959969,6.69420883 1.17956117,6.26581639 1.84,6.34 C2.3508012,6.44261082 2.82022287,6.69296904 3.19,7.06 C3.44818056,7.30317315 3.68566746,7.56741914 3.9,7.85 C4.06,8.05 4.1,8.13 4.28,8.36 C4.46,8.59 4.58,8.82 4.49,8.48 C4.42,7.98 4.3,7.14 4.13,6.39 C4,5.82 3.97,5.73 3.85,5.3 C3.73,4.87 3.66,4.51 3.53,4.02 C3.41116675,3.5385718 3.31770464,3.05123369 3.25,2.56 C3.12395297,1.93170405 3.21565432,1.27921373 3.51,0.71 C3.85939302,0.381369522 4.37193038,0.294632431 4.81,0.49 C5.25059657,0.815336248 5.57910137,1.2696514 5.75,1.79 C6.01206519,2.43038854 6.18696098,3.10306465 6.27,3.79 C6.43,4.79 6.74,6.25 6.75,6.55 C6.75,6.18 6.68,5.4 6.75,5.05 C6.81935301,4.68512412 7.07295842,4.3823117 7.42,4.25 C7.71780915,4.15862519 8.03284549,4.13807935 8.34,4.19 C8.65003669,4.25481591 8.92466387,4.43314524 9.11,4.69 C9.34168097,5.27339299 9.47025898,5.89259761 9.49,6.52 C9.51677857,5.97058648 9.61081334,5.42652817 9.77,4.9 C9.93710411,4.66454921 10.1811322,4.49479052 10.46,4.42 C10.7905931,4.35955512 11.1294069,4.35955512 11.46,4.42 C11.7310945,4.51063084 11.968241,4.68151586 12.14,4.91 C12.3517705,5.44034596 12.4799623,6.00034169 12.52,6.57 C12.52,6.71 12.59,6.18 12.81,5.83 C12.924325,5.49059769 13.2110346,5.23796868 13.5621281,5.16727587 C13.9132216,5.09658306 14.2753596,5.21856637 14.5121281,5.48727587 C14.7488967,5.75598537 14.824325,6.13059769 14.71,6.47 C14.71,7.12 14.71,7.09 14.71,7.53 C14.71,7.97 14.71,8.36 14.71,8.73 C14.6735613,9.31517926 14.5933368,9.89680669 14.47,10.47 C14.2959749,10.9771188 14.0537528,11.4581987 13.75,11.9 C13.2644478,12.4399641 12.8632544,13.0501826 12.56,13.71 C12.4847582,14.0378036 12.4511598,14.3737882 12.46,14.71 C12.4589965,15.020633 12.499351,15.3300173 12.58,15.63 C12.1711391,15.6732223 11.7588609,15.6732223 11.35,15.63 C10.96,15.57 10.48,14.79 10.35,14.55 C10.2856779,14.4211326 10.1540282,14.3397056 10.01,14.3397056 C9.86597177,14.3397056 9.73432211,14.4211326 9.67,14.55 C9.45,14.93 8.96,15.62 8.62,15.66 C7.95,15.74 6.57,15.66 5.48,15.66 C5.48,15.66 5.66,14.66 5.25,14.3 C4.84,13.94 4.42,13.52 4.11,13.24 L3.27,12.28 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <path d="M3.27,12.28 C2.99,11.92 2.64,11.19 2.03,10.28 C1.68,9.78 0.82,8.83 0.56,8.34 C0.372571391,8.04223059 0.318185191,7.67965592 0.41,7.34 C0.566959969,6.69420883 1.17956117,6.26581639 1.84,6.34 C2.3508012,6.44261082 2.82022287,6.69296904 3.19,7.06 C3.44818056,7.30317315 3.68566746,7.56741914 3.9,7.85 C4.06,8.05 4.1,8.13 4.28,8.36 C4.46,8.59 4.58,8.82 4.49,8.48 C4.42,7.98 4.3,7.14 4.13,6.39 C4,5.82 3.97,5.73 3.85,5.3 C3.73,4.87 3.66,4.51 3.53,4.02 C3.41116675,3.5385718 3.31770464,3.05123369 3.25,2.56 C3.12395297,1.93170405 3.21565432,1.27921373 3.51,0.71 C3.85939302,0.381369522 4.37193038,0.294632431 4.81,0.49 C5.25059657,0.815336248 5.57910137,1.2696514 5.75,1.79 C6.01206519,2.43038854 6.18696098,3.10306465 6.27,3.79 C6.43,4.79 6.74,6.25 6.75,6.55 C6.75,6.18 6.68,5.4 6.75,5.05 C6.81935301,4.68512412 7.07295842,4.3823117 7.42,4.25 C7.71780915,4.15862519 8.03284549,4.13807935 8.34,4.19 C8.65003669,4.25481591 8.92466387,4.43314524 9.11,4.69 C9.34168097,5.27339299 9.47025898,5.89259761 9.49,6.52 C9.51677857,5.97058648 9.61081334,5.42652817 9.77,4.9 C9.93710411,4.66454921 10.1811322,4.49479052 10.46,4.42 C10.7905931,4.35955512 11.1294069,4.35955512 11.46,4.42 C11.7310945,4.51063084 11.968241,4.68151586 12.14,4.91 C12.3517705,5.44034596 12.4799623,6.00034169 12.52,6.57 C12.52,6.71 12.59,6.18 12.81,5.83 C12.924325,5.49059769 13.2110346,5.23796868 13.5621281,5.16727587 C13.9132216,5.09658306 14.2753596,5.21856637 14.5121281,5.48727587 C14.7488967,5.75598537 14.824325,6.13059769 14.71,6.47 C14.71,7.12 14.71,7.09 14.71,7.53 C14.71,7.97 14.71,8.36 14.71,8.73 C14.6735613,9.31517926 14.5933368,9.89680669 14.47,10.47 C14.2959749,10.9771188 14.0537528,11.4581987 13.75,11.9 C13.2644478,12.4399641 12.8632544,13.0501826 12.56,13.71 C12.4847582,14.0378036 12.4511598,14.3737882 12.46,14.71 C12.4589965,15.020633 12.499351,15.3300173 12.58,15.63 C12.1711391,15.6732223 11.7588609,15.6732223 11.35,15.63 C10.96,15.57 10.48,14.79 10.35,14.55 C10.2856779,14.4211326 10.1540282,14.3397056 10.01,14.3397056 C9.86597177,14.3397056 9.73432211,14.4211326 9.67,14.55 C9.45,14.93 8.96,15.62 8.62,15.66 C7.95,15.74 6.57,15.66 5.48,15.66 C5.48,15.66 5.66,14.66 5.25,14.3 C4.84,13.94 4.42,13.52 4.11,13.24 L3.27,12.28 Z" id="Shape" stroke="#000000" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M11.75,12.8258906 L11.75,9.37410925 C11.75,9.16749441 11.5821068,9 11.375,9 C11.1678932,9 11,9.16749441 11,9.37410925 L11,12.8258906 C11,13.0325054 11.1678932,13.1999998 11.375,13.1999998 C11.5821068,13.1999998 11.75,13.0325054 11.75,12.8258906 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                    <path d="M9.76999391,12.8246259 L9.74999391,9.37107174 C9.74880023,9.16494995 9.57994213,8.99881831 9.37283879,9.00000633 C9.16573545,9.00119435 8.99881268,9.16925216 9.00000636,9.37537395 L9.02000636,12.8289281 C9.02120004,13.0350499 9.19005814,13.2011815 9.39716148,13.1999935 C9.60426482,13.1988055 9.77118758,13.0307477 9.76999391,12.8246259 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                    <path d="M7.00000651,9.37899137 L7.02000651,12.8254025 C7.02121411,13.0334966 7.19008343,13.2012066 7.39718669,13.1999933 C7.60428995,13.1987799 7.77120136,13.0291026 7.76999376,12.8210084 L7.74999376,9.37459734 C7.74878616,9.16650318 7.57991685,8.99879317 7.37281359,9.00000654 C7.16571032,9.00121992 6.99879891,9.17089721 7.00000651,9.37899137 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                </g>
+            </g>
+            <g id="icon/navigation/overflow-menu/16" transform="translate(137.000000, 8.000000)">
+                <g id="overflow--menu" stroke-width="1" fill-rule="evenodd" transform="translate(7.000000, 2.000000)">
+                    <mask id="mask-7" fill="white">
+                        <use xlink:href="#path-6"></use>
+                    </mask>
+                    <use id="icon-color" fill="#000000" xlink:href="#path-6"></use>
+                </g>
+                <rect id="transparent-rectangle" x="0" y="0" width="16" height="16"></rect>
+            </g>
+            <rect id="Rectangle-2-Copy-15" fill="#DCDCDC" x="0" y="128" width="162" height="1"></rect>
+        </g>
+    </g>
+</svg>

@@ -113,6 +113,10 @@ export default ({ data }) => {
       </Layout>
     );
   } else if (homepage) {
+    if (typeof document !== 'undefined') {
+      document.body.style.background = '#282828';
+    }
+
     return (
       <Layout>
         <div className="container--homepage">
@@ -126,6 +130,10 @@ export default ({ data }) => {
       </Layout>
     );
   } else {
+    if (typeof document !== 'undefined') {
+      document.body.style.background = '#f3f3f3';
+    }
+
     return (
       <Layout>
         <PageHeader

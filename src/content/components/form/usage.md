@@ -1,6 +1,6 @@
 ---
 title: Form
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## Effective form design

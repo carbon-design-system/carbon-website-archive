@@ -81,7 +81,9 @@ class ComponentReactExample extends Component {
     return (
       <div className="component-variation ibm--row">
         <div className="ibm--col-lg-12 ibm--offset-lg-4">
-          <h2 className="component-variation__name bx--type-expressive-heading-04">{name}</h2>
+          <h2 className="component-variation__name bx--type-expressive-heading-04">
+            {name}
+          </h2>
           <p>
             This component is currently only available in{' '}
             <a

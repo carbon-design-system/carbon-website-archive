@@ -17,6 +17,7 @@ import {
 import { AppSwitcher20, Menu32 } from '@carbon/icons-react';
 import { WebsiteFooter } from '@carbon/addons-website';
 
+import timestamp from 'raw-loader!../../../build-timestamp';
 import '../../styles/index.scss';
 import '../../styles/experimental.scss';
 
@@ -107,8 +108,12 @@ class Layout extends React.Component {
     const version = Packages.dependencies['carbon-components'];
     const reactVersion = Packages.dependencies['carbon-components-react'];
     const currentYear = new Date().getFullYear();
-
-    const lastUpdated = 'December 19, 2018';
+    const lastUpdated = new Intl.DateTimeFormat(undefined, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    }).format(new Date(Number(timestamp)));
+    const { isOpen } = this.state;
 
     return (
       <StaticQuery
@@ -156,10 +161,11 @@ class Layout extends React.Component {
               <HeaderMenuButton
                 aria-label="Open menu"
                 onClick={this.onToggleBtnClick}
+                isActive={isOpen}
               />
               {isInternal ? (
                 <HeaderName prefix="IBM" to="/" element={Link} href="/">
-                  Product Design
+                  Product Design System
                 </HeaderName>
               ) : (
                 <HeaderName prefix="" to="/" element={Link}>
@@ -211,8 +217,11 @@ class Layout extends React.Component {
                   },
                 ]}>
                 <p>
-                  Have questions? Email us or open an issue in{' '}
-                  <a href="https://github.com/carbon-design-system/carbon-website/issues/new/choose">GitHub.</a>
+                  Have questions? Email us or open an issue <br />
+                  in{' '}
+                  <a href="https://github.com/carbon-design-system/carbon-website/issues/new/choose">
+                    GitHub.
+                  </a>
                 </p>
                 <p>
                   Vanilla Components version {version}
