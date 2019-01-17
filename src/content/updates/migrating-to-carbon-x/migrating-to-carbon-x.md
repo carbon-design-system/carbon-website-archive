@@ -5,15 +5,15 @@ title: Migrating to Carbon X
 <anchor-links>
 <ul>
   <li><a href="#carbon-x-is-near">Intro</a></li>
-  <li><a href="#rollout-plan">Rollout Plan</a></li>
-  <li><a href="#design-kit">Design Kit</a></li>
+  <li><a href="#rollout-plan">Rollout plan</a></li>
+  <li><a href="#design-kit">Design kit</a></li>
   <li><a href="#component-code">Component code</a></li>
   <li><a href="#tokens">Tokens</a></li>
   <li><a href="#icons">Icons</a></li>
   <li><a href="#themes">Themes</a></li>
-  <li><a href="#ui-shell">UI Shell</a></li>
-  <li><a href="#grid-and-layout">Grid and Layout</a></li>
-  <li><a href="#migration-tooling">Migration Tooling</a></li>
+  <li><a href="#ui-shell">UI shell</a></li>
+  <li><a href="#grid-and-layout">Grid and layout</a></li>
+  <li><a href="#migration-tooling">Migration tooling</a></li>
 </ul>
 </anchor-links>
 
@@ -28,7 +28,7 @@ Carbon X, aka v10, is currently in Alpha release. Please use this opportunity to
 
 ### Adoption and activation sessions
 
-<p>The IBM Design core team is establishing an adoption and activation program. A new <a href="https://w3.ibm.com/design/essentials" target="blank">IBM Design Essentials</a> course is available, and teams will receive either in-person or remote education before the Production release of Carbon X. The Carbon team will share news on Slack, Connections, and in the IBM Design Town Hall as well.</p>
+<p>The IBM Design core team is establishing an adoption and activation program. A new <a href="https://w3.ibm.com/design/essentials" target="blank">IBM Design Essentials</a> course is available, and teams will receive either in-person or remote education before (or soon after) the Production release of Carbon X. The Carbon team will share news on Slack, Connections, and in the IBM Design Town Hall as well.</p>
 
 ## Design kit
 
@@ -43,6 +43,7 @@ The Digital Design group has published a detailed guide on [setting up auto-sync
 The redesigned components will be available in the current repos once released. All components have been reskinned to the new IBM Design Language for v10. Detailed technical migration instructions will be published to the repos upon Beta release.
 
 [carbon-components repo](https://github.com/IBM/carbon-components)
+
 [carbon-components-react repo](https://github.com/IBM/carbon-components-react)
 
 ## Tokens
@@ -65,7 +66,7 @@ Carbon now supports four all-new themes, which will be stored in a new repo: @ca
 
 The basic UI shell has been completely redesigned for Carbon X, though it is still considered experimental. Full documentation on the new UI shell is available on the Carbon website.
 
-Coming soon: Carbon X UI shell migration guide for developers
+_Coming soon: Carbon X UI shell migration guide for developers_
 
 ## Grid and layout
 
@@ -74,5 +75,6 @@ The page grid has been completely redesigned for v10, to align with the IBM Desi
 ## Migration tooling
 
 When Carbon X reaches its Production release, specific developer tooling (custom scripts) will be available to help automate the transition. Stay tuned for updates!
+
 
 _Last updated: 16 January 2019_
