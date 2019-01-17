@@ -14,7 +14,7 @@ import {
   SideNavMenu,
   SideNavLink,
   SideNavMenuItem,
-  SideNavItems
+  SideNavItems,
 } from 'carbon-components-react/lib/components/UIShell';
 
 storiesOf('Website Header', module).add(
@@ -24,37 +24,44 @@ storiesOf('Website Header', module).add(
       <Header className="bx--header--website">
         <SkipToContent />
         <HeaderMenuButton
-            aria-label="Open menu"
-            onClick={action('Menu clicked')}
-          />
-          <HeaderName href="#" prefix="IBM">
-            Design
-          </HeaderName>
-          <HeaderNavigation aria-label="IBM [Platform]">
-            <HeaderMenu aria-label="Manage">
-              <HeaderMenuItem href="#">Link 1</HeaderMenuItem>
-              <HeaderMenuItem href="#">Link 2</HeaderMenuItem>
-              <HeaderMenuItem href="#">Link 3</HeaderMenuItem>
-            </HeaderMenu>
-            <HeaderMenuItem href="#" aria-current="page">Current</HeaderMenuItem>
-            <HeaderMenuItem href="#">Docs</HeaderMenuItem>
-            <HeaderMenuItem href="#">Support</HeaderMenuItem>
-          </HeaderNavigation>
+          aria-label="Open menu"
+          onClick={action('Menu clicked')}
+        />
+        <HeaderName href="#" prefix="IBM">
+          Design
+        </HeaderName>
+        <HeaderNavigation aria-label="IBM [Platform]">
+          <HeaderMenu aria-label="Manage">
+            <HeaderMenuItem href="#">Link 1</HeaderMenuItem>
+            <HeaderMenuItem href="#">Link 2</HeaderMenuItem>
+            <HeaderMenuItem href="#">Link 3</HeaderMenuItem>
+          </HeaderMenu>
+          <HeaderMenuItem href="#" aria-current="page">
+            Current
+          </HeaderMenuItem>
+          <HeaderMenuItem href="#">Docs</HeaderMenuItem>
+          <HeaderMenuItem href="#">Support</HeaderMenuItem>
+        </HeaderNavigation>
       </Header>
-      <SideNav aria-label="Side navigation" className="bx--side-nav--website bx--side-nav--website--with-header-nav bx--side-nav--open">
-      <SideNavItems>
-       <SideNavMenu title="Manage">
-          <SideNavMenuItem href="#" aria-current="page">Link 1</SideNavMenuItem>
-          <SideNavMenuItem href="#">Link 2</SideNavMenuItem>
-          <SideNavMenuItem href="#">Link 3</SideNavMenuItem>
-        </SideNavMenu>
-        <SideNavLink href="#" aria-current="page">Current</SideNavLink>
-        <SideNavLink href="#">Docs</SideNavLink>
-        <SideNavLink href="#">Support</SideNavLink>
-
-      </SideNavItems>
-    </SideNav>
-  </>
+      <SideNav
+        aria-label="Side navigation"
+        className="bx--side-nav--website bx--side-nav--website--with-header-nav bx--side-nav--open">
+        <SideNavItems>
+          <SideNavMenu title="Manage">
+            <SideNavMenuItem href="#" aria-current="page">
+              Link 1
+            </SideNavMenuItem>
+            <SideNavMenuItem href="#">Link 2</SideNavMenuItem>
+            <SideNavMenuItem href="#">Link 3</SideNavMenuItem>
+          </SideNavMenu>
+          <SideNavLink href="#" aria-current="page">
+            Current
+          </SideNavLink>
+          <SideNavLink href="#">Docs</SideNavLink>
+          <SideNavLink href="#">Support</SideNavLink>
+        </SideNavItems>
+      </SideNav>
+    </>
   ),
   {
     info: {

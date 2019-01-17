@@ -49,7 +49,7 @@
   display: block;
 
   @include breakpoint('sm') {
-    margin: .5rem 0;
+    margin: 0.5rem 0;
   }
 
   @include breakpoint('lg') {

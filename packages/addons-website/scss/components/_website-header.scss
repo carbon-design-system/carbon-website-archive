@@ -103,7 +103,8 @@ a.#{$prefix}--header__menu-item[role='menuitem'][aria-current='page']:after {
   color: $ibm-colors__gray--30;
 }
 
-.#{$prefix}--header__menu .#{$prefix}--header__menu-item[role='menuitem'][aria-current='page'] {
+.#{$prefix}--header__menu
+  .#{$prefix}--header__menu-item[role='menuitem'][aria-current='page'] {
   background: transparent;
 }
 
@@ -119,13 +120,16 @@ a.#{$prefix}--header__menu-item[role='menuitem'][aria-current='page']:after {
   border-bottom: 1px solid $ibm-colors__gray--70;
 }
 
-.#{$prefix}--header__menu .#{$prefix}--header__menu-item[role='menuitem']:hover:after,
-.#{$prefix}--header__menu li:last-child .#{$prefix}--header__menu-item[role='menuitem']:after {
+.#{$prefix}--header__menu
+  .#{$prefix}--header__menu-item[role='menuitem']:hover:after,
+.#{$prefix}--header__menu
+  li:last-child
+  .#{$prefix}--header__menu-item[role='menuitem']:after {
   display: none;
 }
 
-.#{$prefix}--header__menu .#{$prefix}--header__menu-item[role='menuitem']:hover {
+.#{$prefix}--header__menu
+  .#{$prefix}--header__menu-item[role='menuitem']:hover {
   color: $ibm-colors__gray--10;
   background: #353535;
 }
-
