@@ -49,7 +49,7 @@
   display: block;
 
   @include breakpoint('sm') {
-    margin: .5rem 0;
+    margin: 0.5rem 0;
   }
 
   @include breakpoint('lg') {
@@ -82,4 +82,8 @@
 .#{$prefix}--website-footer__content p {
   @include type-style('body-short-01');
   padding-bottom: 1rem;
+}
+
+.#{$prefix}--website-footer__content p:last-child {
+  padding-bottom: rem(48px);
 }

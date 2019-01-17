@@ -8,10 +8,12 @@ title: Overflow Content
 
 Truncation, or shortening, is typically used for static text or links that exceed the size of their container. Truncated items are represented by an ellipsis `...` and should represent three or more truncated characters in a text string. There must be at least four characters of non-truncated content in a truncated string. Truncated items always include a browser tooltip on hover to show the entire string, name, or phrase that the ellipsis is representing. The only time a browser tooltip does not need to be used is at the end of a truncated paragraph.
 
-![Example of a browser tooltip being used for truncation.](images/BrowserTooltip.png)
+![Example of a browser tooltip being used for truncation.](images/BrowserTooltip.svg)
+
 _Example of a browser tooltip being used for truncation._
 
-![Example of end-line truncation for a paragraph.](images/Truncated-Paragraph.png)
+![Example of end-line truncation for a paragraph.](images/Truncated-Paragraph.svg)
+
 _Example of end-line truncation for a paragraph._
 
 ### Usage
@@ -38,7 +40,8 @@ There are three types of truncation: front-line, mid-line, and end-line.
 
 An ellipsis on its own may also represent condensed content. This type of truncation requires an overflow menu on hover instead of a browser tooltip.
 
-![Example of a truncated Breadcrumb utilizing an ellipse with an Overflow Menu.](images/Ellipse.png)
+![Example of a truncated Breadcrumb utilizing an ellipse with an Overflow Menu.](images/Ellipse.svg)
+
 _Example of a truncated breadcrumb utilizing an ellipsis with an overflow menu._
 
 ### Code
@@ -77,9 +80,9 @@ To use front- and end-line truncation, enter the appropriate class below and add
 
 **Result**
 
-<grid-wrapper>
-<img src="https://media.github.ibm.com/user/1679/files/1c695894-538c-11e8-8cd2-bb0b1cac151b" alt="Result" style="width: 20%; margin-top: 0" />
-</grid-wrapper>
+
+![Result.](images/1c695894-538c-11e8-8cd2-bb0b1cac151b.svg)
+
 
 #### Mid-line truncation
 
@@ -95,4 +98,5 @@ Mid-line truncation does not have its own class as it requires JavaScript. This 
 The ‘Show more’ button is used when there is a significant amount of overflow content. Implementing a ‘Show more’ button gives a user the ability to see the content in more digestible chunks, as opposed to all at once. A ‘Show more’ button is used in place of scrolling, gradients, or fades as they are more prominent and actionable. If needed, a 'Show less' can be used to again hide the content the user opened. ‘Show more’ can also be presented as ‘Load more’ in cases where performance is a concern. See the [Loading](/components/loading) section for additional details.
 
 ![Example of a Code Snippet utilizing the 'Show more' Button.](images/show-more.gif)
+
 _Example of the 'Show more' button in context._
