@@ -581,6 +581,8 @@ The following example demonstrates the relationship between the different themes
 
 ![Default theme applied](images/themes-1.svg)
 
+_Default theme applied_
+
 | Key | Token       | Role                | White theme value    | Dark theme value    |
 | --- | ----------- | ------------------- | -------------------- | ------------------- |
 | 1   | `$text-02`  | Label color         | `#565656` / Gray 70  | `#bebebe` / Gray 30 |

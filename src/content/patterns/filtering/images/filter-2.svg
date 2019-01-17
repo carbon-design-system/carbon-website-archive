@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="736px" height="362px" viewBox="0 0 736 362" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>filter-2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11,6.5 L10.295,5.795 L6.5,9.585 L6.5,0 L5.5,0 L5.5,9.585 L1.705,5.795 L1,6.5 L6,11.5 L11,6.5 Z M11,11 L11,13 L1,13 L1,11 L0,11 L0,13 C0,13.5522847 0.44771525,14 1,14 L11,14 C11.5522847,14 12,13.5522847 12,13 L12,11 L11,11 Z" id="path-1"></path>
+        <path d="M12.5,7.38 C12.5,7.255 12.5,7.13 12.5,7 C12.5,6.87 12.5,6.745 12.5,6.615 L13.46,5.77 C13.8226785,5.44861899 13.9027429,4.91345193 13.65,4.5 L12.47,2.5 C12.2310889,2.08873489 11.7355635,1.90265151 11.285,2.055 L10.07,2.465 C9.86065614,2.32343568 9.64180423,2.19646816 9.415,2.085 L9.165,0.825 C9.07063152,0.349884227 8.64930803,0.0107188198 8.165,0.02 L5.82,0.02 C5.33569197,0.0107188198 4.91436848,0.349884227 4.82,0.825 L4.57,2.085 C4.33991492,2.19444594 4.11771309,2.31974773 3.905,2.46 L2.715,2.03 C2.25839183,1.88195725 1.76100441,2.07923327 1.53,2.5 L0.35,4.5 C0.112085016,4.91234575 0.197840727,5.43524643 0.555,5.75 L1.5,6.62 C1.5,6.745 1.5,6.87 1.5,7 C1.5,7.13 1.5,7.255 1.5,7.385 L0.555,8.225 C0.184625338,8.54299553 0.0979728044,9.08193202 0.35,9.5 L1.53,11.5 C1.76891112,11.9112651 2.26443652,12.0973485 2.715,11.945 L3.93,11.535 C4.13934386,11.6765643 4.35819577,11.8035318 4.585,11.915 L4.835,13.175 C4.92936848,13.6501158 5.35069197,13.9892812 5.835,13.98 L8.195,13.98 C8.67930803,13.9892812 9.10063152,13.6501158 9.195,13.175 L9.445,11.915 C9.67508508,11.8055541 9.89728691,11.6802523 10.11,11.54 L11.32,11.95 C11.7612283,12.0828775 12.2361328,11.8970453 12.47,11.5 L13.65,9.5 C13.887915,9.08765425 13.8021593,8.56475357 13.445,8.25 L12.5,7.38 Z M11.605,11 L9.89,10.42 C9.48730614,10.7570721 9.02871944,11.0210556 8.535,11.2 L8.18,13 L5.82,13 L5.465,11.225 C4.97488533,11.0425731 4.51988891,10.7770176 4.12,10.44 L2.395,11 L1.215,9 L2.58,7.805 C2.48786393,7.28740157 2.48786393,6.75759843 2.58,6.24 L1.215,5 L2.395,3 L4.11,3.58 C4.51269386,3.24292786 4.97128056,2.97894437 5.465,2.8 L5.82,1 L8.18,1 L8.535,2.775 C9.02511467,2.95742692 9.48011109,3.22298245 9.88,3.56 L11.605,3 L12.785,5 L11.42,6.2 C11.512241,6.71758916 11.512241,7.24741084 11.42,7.765 L12.785,9 L11.605,11 Z M7,10 C5.34314575,10 4,8.65685425 4,7 C4,5.34314575 5.34314575,4 7,4 C8.65685425,4 10,5.34314575 10,7 C10.0081032,7.79810602 9.69463548,8.56588494 9.13026021,9.13026021 C8.56588494,9.69463548 7.79810602,10.0081032 7,10 Z M7,5 C6.46584954,4.98755672 5.94987987,5.19427211 5.57207599,5.57207599 C5.19427211,5.94987987 4.98755672,6.46584954 5,7 C4.98755672,7.53415046 5.19427211,8.05012013 5.57207599,8.42792401 C5.94987987,8.80572789 6.46584954,9.01244328 7,9 C7.53415046,9.01244328 8.05012013,8.80572789 8.42792401,8.42792401 C8.80572789,8.05012013 9.01244328,7.53415046 9,7 C9.01244328,6.46584954 8.80572789,5.94987987 8.42792401,5.57207599 C8.05012013,5.19427211 7.53415046,4.98755672 7,5 Z" id="path-3"></path>
+        <rect id="path-5" x="0" y="28" width="224" height="128"></rect>
+        <filter x="-4.5%" y="-6.2%" width="108.9%" height="115.6%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-7" points="5 0 10 5 9.293 5.707 5 1.414 0.707 5.707 0 5"></polygon>
+        <path d="M11,0 L1,0 C0.44771525,0 0,0.44771525 0,1 L0,11 C0,11.5522847 0.44771525,12 1,12 L11,12 C11.5522847,12 12,11.5522847 12,11 L12,1 C12,0.44771525 11.5522847,0 11,0 Z M1,11 L1,1 L11,1 L11,11 L1,11 Z" id="path-9"></path>
+        <path d="M11,0 L1,0 C0.44771525,0 0,0.44771525 0,1 L0,11 C0,11.5522847 0.44771525,12 1,12 L11,12 C11.5522847,12 12,11.5522847 12,11 L12,1 C12,0.44771525 11.5522847,0 11,0 Z M1,11 L1,1 L11,1 L11,11 L1,11 Z" id="path-11"></path>
+        <rect id="path-13" x="0" y="0" width="12" height="12" rx="2"></rect>
+        <polygon id="path-15" points="2.5 5.25 0 2.77 0.795 1.985 2.5 3.675 6.205 0 7 0.79"></polygon>
+        <rect id="path-17" x="0" y="0" width="12" height="12" rx="2"></rect>
+        <polygon id="path-19" points="2.5 5.25 0 2.77 0.795 1.985 2.5 3.675 6.205 0 7 0.79"></polygon>
+        <polygon id="path-21" points="4.707 4 8 0.707 7.293 0 4 3.293 0.707 0 0 0.707 3.293 4 0 7.293 0.707 8 4 4.707 7.293 8 8 7.293"></polygon>
+    </defs>
+    <g id="filter-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" transform="translate(73.000000, 121.000000)">
+            <g id="Group">
+                <path d="M288.5,26.5 L577,26.5 L576.5,26 L576.5,27 L577,26.5 L288.5,26.5 Z M288.5,26.5 L0,26.5 L0.5,27 L0.5,26 L0,26.5 L288.5,26.5 Z" id="Rectangle-3-Copy-35" stroke="#DCDCDC"></path>
+                <path d="M288.5,142.5 L577,142.5 L576.5,142 L576.5,143 L577,142.5 L288.5,142.5 Z M288.5,142.5 L0,142.5 L0.5,143 L0.5,142 L0,142.5 L288.5,142.5 Z" id="Rectangle-3-Copy-38" stroke="#DCDCDC"></path>
+                <path d="M288.5,84.5 L577,84.5 L576.5,84 L576.5,85 L577,84.5 L288.5,84.5 Z M288.5,84.5 L0,84.5 L0.5,85 L0.5,84 L0,84.5 L288.5,84.5 Z" id="Rectangle-3-Copy-39" stroke="#DCDCDC"></path>
+                <text id="Saturated-Fat-(g)" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" line-spacing="18" letter-spacing="0.100000001" fill="#171717">
+                    <tspan x="16" y="14">Saturated Fat (g)</tspan>
+                </text>
+                <text id="8" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.100000001" fill="#565656">
+                    <tspan x="16" y="57">8</tspan>
+                </text>
+                <text id="4" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.100000001" fill="#565656">
+                    <tspan x="16" y="115">4</tspan>
+                </text>
+                <text id="2" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.100000001" fill="#565656">
+                    <tspan x="16" y="173">2</tspan>
+                </text>
+                <text id="Carbs-(g)" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" line-spacing="18" letter-spacing="0.100000001" fill="#171717">
+                    <tspan x="170" y="14">Carbs (g)</tspan>
+                </text>
+                <text id="30" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.100000001" fill="#565656">
+                    <tspan x="170" y="57">30</tspan>
+                </text>
+                <text id="45" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.100000001" fill="#565656">
+                    <tspan x="170" y="115">45</tspan>
+                </text>
+                <text id="23" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.100000001" fill="#565656">
+                    <tspan x="170" y="173">23</tspan>
+                </text>
+                <text id="Protein-(g)" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" line-spacing="18" letter-spacing="0.100000001" fill="#171717">
+                    <tspan x="314" y="14">Protein (g)</tspan>
+                </text>
+                <text id="30" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.100000001" fill="#565656">
+                    <tspan x="314" y="57">30</tspan>
+                </text>
+                <text id="45" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.100000001" fill="#565656">
+                    <tspan x="314" y="115">45</tspan>
+                </text>
+                <text id="23" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.100000001" fill="#565656">
+                    <tspan x="314" y="173">23</tspan>
+                </text>
+                <text id="7" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.100000001" fill="#565656">
+                    <tspan x="458" y="57">7</tspan>
+                </text>
+                <text id="3" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.100000001" fill="#565656">
+                    <tspan x="458" y="115">3</tspan>
+                </text>
+                <text id="5" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.100000001" fill="#565656">
+                    <tspan x="458" y="173">5</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="Group-2" transform="translate(-134.000000, 345.000000)">
+            <g id="Group" stroke="#DCDCDC">
+                <polyline id="Path-16" transform="translate(462.151987, 5.772216) rotate(-270.000000) translate(-462.151987, -5.772216) " points="456.379771 -60.379771 467.775428 -48.9841138 456.883273 -38.0919591 467.897955 -27.077277 456.911828 -16.0911491 467.871958 -5.05392461 456.902953 5.91508125 467.910522 16.9226508 456.920624 27.9125487 467.924204 38.9161282 456.884489 49.9558434 467.826639 60.8979934 456.800428 71.9242038"></polyline>
+                <polyline id="Path-16" transform="translate(330.151987, 5.772216) rotate(-270.000000) translate(-330.151987, -5.772216) " points="324.379771 -60.379771 335.775428 -48.9841138 324.883273 -38.0919591 335.897955 -27.077277 324.911828 -16.0911491 335.871958 -5.05392461 324.902953 5.91508125 335.910522 16.9226508 324.920624 27.9125487 335.924204 38.9161282 324.884489 49.9558434 335.826639 60.8979934 324.800428 71.9242038"></polyline>
+                <polyline id="Path-16" transform="translate(198.151987, 5.772216) rotate(-270.000000) translate(-198.151987, -5.772216) " points="192.379771 -60.379771 203.775428 -48.9841138 192.883273 -38.0919591 203.897955 -27.077277 192.911828 -16.0911491 203.871958 -5.05392461 192.902953 5.91508125 203.910522 16.9226508 192.920624 27.9125487 203.924204 38.9161282 192.884489 49.9558434 203.826639 60.8979934 192.800428 71.9242038"></polyline>
+                <polyline id="Path-16" transform="translate(726.151987, 5.772216) rotate(-270.000000) translate(-726.151987, -5.772216) " points="720.379771 -60.379771 731.775428 -48.9841138 720.883273 -38.0919591 731.897955 -27.077277 720.911828 -16.0911491 731.871958 -5.05392461 720.902953 5.91508125 731.910522 16.9226508 720.920624 27.9125487 731.924204 38.9161282 720.884489 49.9558434 731.826639 60.8979934 720.800428 71.9242038"></polyline>
+                <polyline id="Path-16" transform="translate(594.151987, 5.772216) rotate(-270.000000) translate(-594.151987, -5.772216) " points="588.379771 -60.379771 599.775428 -48.9841138 588.883273 -38.0919591 599.897955 -27.077277 588.911828 -16.0911491 599.871958 -5.05392461 588.902953 5.91508125 599.910522 16.9226508 588.920624 27.9125487 599.924204 38.9161282 588.884489 49.9558434 599.826639 60.8979934 588.800428 71.9242038"></polyline>
+                <polyline id="Path-16" transform="translate(858.151987, 5.772216) rotate(-270.000000) translate(-858.151987, -5.772216) " points="852.379771 -60.379771 863.775428 -48.9841138 852.883273 -38.0919591 863.897955 -27.077277 852.911828 -16.0911491 863.871958 -5.05392461 852.902953 5.91508125 863.910522 16.9226508 852.920624 27.9125487 863.924204 38.9161282 852.884489 49.9558434 863.826639 60.8979934 852.800428 71.9242038"></polyline>
+            </g>
+            <polygon id="Fill-1" fill="#F3F3F3" points="857.997 1 852 6.997 847 11.997 835.997 1 825 11.997 813.997 1 803 11.997 791.997 1 781 11.997 769.997 1 759 11.997 747.997 1 737 11.997 725.997 1 715 11.997 703.997 1 693 11.997 681.997 1 671 11.997 659.997 1 649 11.997 637.997 1 627 11.997 615.997 1 605 11.997 593.997 1 583 11.997 571.998 1 561 11.997 560.994 11.997 549.997 1 539 11.997 527.998 1 517 11.997 516.994 11.997 505.997 1 495 11.997 483.997 1 473 11.997 461.998 1 451 11.997 450.994 11.997 439.997 1 429 11.997 417.998 1 407 11.997 406.994 11.997 395.997 1 385 11.997 373.998 1 363 11.997 362.994 11.997 351.997 1 341 11.997 329.998 1 319 11.997 318.994 11.997 307.998 1 297 11.997 285.997 1 275 11.997 263.998 1 253 11.997 252.994 11.997 241.997 1 231 11.997 219.998 1 209 11.997 208.994 11.997 197.997 1 187 11.997 175.998 1 165 11.997 164.994 11.997 153.997 1 143 11.997 131.998 1 121 11.997 120.994 11.997 116 7.003 109.998 1 99 11.997 99 17 869 17 869 11.997"></polygon>
+        </g>
+        <g id="icon/file/download/16" transform="translate(596.000000, 84.000000)">
+            <g id="Group">
+                <g id="download" transform="translate(2.000000, 1.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="icon-color" fill="#000000" xlink:href="#path-1"></use>
+                </g>
+                <rect id="transparent-rectangle" x="0" y="0" width="16" height="16"></rect>
+            </g>
+        </g>
+        <g id="icon/image/settings/16" transform="translate(628.000000, 84.000000)">
+            <g id="settings" stroke-width="1" fill-rule="evenodd" transform="translate(1.000000, 1.000000)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <use id="icon-color" fill="#000000" xlink:href="#path-3"></use>
+            </g>
+            <rect id="transparent-rectangle" x="0" y="0" width="16" height="16"></rect>
+        </g>
+        <g id="Group-13" transform="translate(375.000000, 82.000000)">
+            <g id="Group-12">
+                <g id="Rectangle-4-Copy-21">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                    <use fill="#DCDCDC" fill-rule="evenodd" xlink:href="#path-5"></use>
+                </g>
+                <rect id="Rectangle-8-Copy-31" fill="#DCDCDC" x="16" y="123" width="192" height="1"></rect>
+                <polygon id="Rectangle-Copy-51" fill="#DCDCDC" points="0 28 224 28 224 60 0 60"></polygon>
+                <polygon id="Rectangle-Copy-55" fill="#F3F3F3" points="0 92 224 92 224 124 0 124"></polygon>
+                <polygon id="Rectangle-Copy-56" fill="#F3F3F3" points="0 124 224 124 224 156 0 156"></polygon>
+                <polygon id="Rectangle-Copy-59" fill="#F3F3F3" points="0 60 224 60 224 92 0 92"></polygon>
+                <polygon id="Rectangle-Copy-63" fill="#DCDCDC" points="0 60 224 60 224 92 0 92"></polygon>
+                <text id="Tacos" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" fill="#565656">
+                    <tspan x="32" y="49">Tacos</tspan>
+                </text>
+                <text id="Not-a-taco" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" fill="#565656">
+                    <tspan x="32" y="113">Not a taco</tspan>
+                </text>
+                <text id="Breakfast-tacos" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" fill="#565656">
+                    <tspan x="32" y="81">Breakfast tacos</tspan>
+                </text>
+                <text id="Sides" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" fill="#565656">
+                    <tspan x="32" y="145">Sides</tspan>
+                </text>
+                <rect id="Rectangle-8-Copy-32" fill="#DCDCDC" x="16" y="123" width="192" height="1"></rect>
+                <text id="filters-are-selected-copy-7" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" fill="#252525">
+                    <tspan x="59" y="17">filters are selected</tspan>
+                </text>
+                <g id="icon/navigation/chevron/up/16" transform="translate(194.000000, 12.000000) rotate(-180.000000) translate(-194.000000, -12.000000) translate(186.000000, 4.000000)">
+                    <g id="Group">
+                        <g id="chevron--up" transform="translate(3.000000, 5.000000)">
+                            <mask id="mask-8" fill="white">
+                                <use xlink:href="#path-7"></use>
+                            </mask>
+                            <use id="icon-color" fill="#000000" xlink:href="#path-7"></use>
+                        </g>
+                        <rect id="transparent-rectangle" transform="translate(8.000000, 8.000000) rotate(-90.000000) translate(-8.000000, -8.000000) " x="0" y="0" width="16" height="16"></rect>
+                    </g>
+                </g>
+                <g id="icon/toggle/check-box/unchecked/16" transform="translate(8.000000, 132.000000)">
+                    <g id="check--box--unchecked" stroke-width="1" fill-rule="evenodd" transform="translate(2.000000, 2.000000)">
+                        <mask id="mask-10" fill="white">
+                            <use xlink:href="#path-9"></use>
+                        </mask>
+                        <use id="icon-color" fill="#000000" xlink:href="#path-9"></use>
+                    </g>
+                    <rect id="transparent-rectangle" x="0" y="0" width="16" height="16"></rect>
+                </g>
+                <g id="icon/toggle/check-box/unchecked/16" transform="translate(8.000000, 100.000000)">
+                    <g id="check--box--unchecked" stroke-width="1" fill-rule="evenodd" transform="translate(2.000000, 2.000000)">
+                        <mask id="mask-12" fill="white">
+                            <use xlink:href="#path-11"></use>
+                        </mask>
+                        <use id="icon-color" fill="#000000" xlink:href="#path-11"></use>
+                    </g>
+                    <rect id="transparent-rectangle" x="0" y="0" width="16" height="16"></rect>
+                </g>
+                <g id="Group-Copy-12" transform="translate(8.000000, 36.000000)">
+                    <rect id="Rectangle-9" fill="#FFFFFF" x="3" y="3" width="10" height="10"></rect>
+                    <g id="icon/toggle/check-box/checked/filled/16">
+                        <g id="Group">
+                            <g id="checkbox--checked--filled" transform="translate(2.000000, 2.000000)">
+                                <g id="icon-color-2">
+                                    <mask id="mask-14" fill="white">
+                                        <use xlink:href="#path-13"></use>
+                                    </mask>
+                                    <use id="icon-color" fill="#000000" xlink:href="#path-13"></use>
+                                </g>
+                                <g id="icon-color-1" transform="translate(2.500000, 3.500000)">
+                                    <mask id="mask-16" fill="white">
+                                        <use xlink:href="#path-15"></use>
+                                    </mask>
+                                    <use id="icon-color" fill="#FFFFFF" xlink:href="#path-15"></use>
+                                </g>
+                            </g>
+                            <rect id="transparent-rectangle" x="0" y="0" width="16" height="16"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-Copy-16" transform="translate(8.000000, 68.000000)">
+                    <rect id="Rectangle-9" fill="#FFFFFF" x="3" y="3" width="10" height="10"></rect>
+                    <g id="icon/toggle/check-box/checked/filled/16">
+                        <g id="Group">
+                            <g id="checkbox--checked--filled" transform="translate(2.000000, 2.000000)">
+                                <g id="icon-color-2">
+                                    <mask id="mask-18" fill="white">
+                                        <use xlink:href="#path-17"></use>
+                                    </mask>
+                                    <use id="icon-color" fill="#000000" xlink:href="#path-17"></use>
+                                </g>
+                                <g id="icon-color-1" transform="translate(2.500000, 3.500000)">
+                                    <mask id="mask-20" fill="white">
+                                        <use xlink:href="#path-19"></use>
+                                    </mask>
+                                    <use id="icon-color" fill="#FFFFFF" xlink:href="#path-19"></use>
+                                </g>
+                            </g>
+                            <rect id="transparent-rectangle" x="0" y="0" width="16" height="16"></rect>
+                        </g>
+                    </g>
+                </g>
+                <rect id="Rectangle-4-Copy-9" fill="#171717" x="9" y="0" width="42" height="24" rx="12"></rect>
+                <text id="2" font-family="IBMPlexSans, IBM Plex Sans" font-size="12" font-weight="normal" line-spacing="16" fill="#F3F3F3">
+                    <tspan x="17" y="15">2</tspan>
+                </text>
+                <g id="icon/navigation/close/16" transform="translate(32.000000, 4.000000)">
+                    <g id="Group">
+                        <g id="close" transform="translate(4.000000, 4.000000)">
+                            <mask id="mask-22" fill="white">
+                                <use xlink:href="#path-21"></use>
+                            </mask>
+                            <use id="icon-color" fill="#F3F3F3" xlink:href="#path-21"></use>
+                        </g>
+                        <rect id="transparent-rectangle" x="0" y="0" width="16" height="16"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
