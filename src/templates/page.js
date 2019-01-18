@@ -92,6 +92,7 @@ const renderAst = new rehypeReact({
     glossary: Glossary,
     'component-overview': ComponentOverview,
     'anchor-links': AnchorLinks,
+    tabs: Tabs,
     tab: Tab,
     'website-tabs': WebsiteTabs,
     'color-token-table': ColorTokenTable,
