@@ -1,5 +1,9 @@
 @import '../prefix';
 
+.#{$prefix}--header__action--switcher {
+  border: rem(2px) solid transparent;
+}
+
 .#{$prefix}--website-switcher {
   position: fixed;
   right: 0;
