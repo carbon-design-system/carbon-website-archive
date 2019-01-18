@@ -2,15 +2,10 @@
 .component-docs table {
   margin-bottom: 1.5rem;
   line-height: 1.25;
-
-  @include breakpoint('sm') {
-    width: calc(100%);
-  }
+  width: calc(100%);
 
   @include breakpoint('md') {
     min-width: calc(67.3%);
-    max-width: 50%;
-    width: 100%;
   }
 
   thead {
@@ -44,7 +39,21 @@
         }
 
         @include breakpoint('md') {
+          &:last-child {
+            padding-right: 5rem;
+          }
+        }
+
+        @include breakpoint('lg') {
+          min-width: rem(100px);
+        }
+
+        @include breakpoint('xlg') {
           min-width: rem(150px);
+
+          &:last-child {
+            padding-right: 6rem;
+          }
         }
       }
     }
