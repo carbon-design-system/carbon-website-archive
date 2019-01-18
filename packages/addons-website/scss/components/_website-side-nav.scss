@@ -65,7 +65,7 @@
   display: none;
 }
 
-.#{$prefix}--side-nav.side-nav
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website
   .#{$prefix}--side-nav__menu[role='menu']
   a.#{$prefix}--side-nav__link[role='menuitem'] {
   padding-left: 1rem;
