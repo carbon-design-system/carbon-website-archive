@@ -131,7 +131,7 @@
   .website-tabs.bp-tabs-not-shown .bx--tabs-trigger {
     background: #fff;
     border-bottom: 1px solid #d8d8d8;
-    border-top: $spacing-3xs solid $ibm-colors__blue--60;
+    border-top: rem(3px) solid $ibm-colors__blue--60;
     font-weight: 600;
     height: rem(50px);
     position: relative;
