@@ -8,8 +8,9 @@
   }
 
   @include breakpoint('md') {
-    width: auto;
     min-width: calc(67.3%);
+    max-width: 50%;
+    width: 100%;
   }
 
   thead {
@@ -40,6 +41,10 @@
 
         strong {
           font-weight: font-weight('semibold');
+        }
+
+        @include breakpoint('md') {
+          min-width: rem(150px);
         }
       }
     }
