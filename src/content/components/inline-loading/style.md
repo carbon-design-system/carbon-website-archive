@@ -41,5 +41,6 @@ Button text should be set in sentence case, with only the first word in a phrase
 The Inline Loading component should appear during any user action loading. If button is used to trigger the action, the Inline Loading component should replace that button.
 
 ![Inline Loading spinner in context example](images/inline-loading-style-3.png)
+![Inline Loading spinner animated_in context example](images/inline-loading-animated.gif)
 
 _Example of a inline loading in product context_
