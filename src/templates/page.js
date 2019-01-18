@@ -32,6 +32,7 @@ import {
   HomepageFooter,
   HomepageHeader,
 } from '../components/Homepage/Homepage';
+import { Tabs } from 'carbon-components-react';
 import { Tab } from 'carbon-components-react';
 import WebsiteTabs from '../components/WebsiteTabs';
 import ColorTokenTable from '../components/ColorTokenTable';
