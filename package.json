@@ -25,7 +25,7 @@
     "serve": "gatsby serve",
     "clean": "lerna clean --yes && rm -rf build && rm -rf node_modules",
     "clean:cache": "rm -rf .cache",
-    "dev": "yarn dev:external",
+    "dev": "yarn clean:cache && yarn dev:external",
     "dev:external": "./tasks/build-timestamp.sh && cross-env GATSBY_CARBON_ENV=external gatsby develop",
     "dev:internal": "./tasks/build-timestamp.sh && cross-env GATSBY_CARBON_ENV=internal gatsby develop",
     "format": "prettier --write \"**/*.{scss,css,js,md}\"",
