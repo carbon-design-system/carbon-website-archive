@@ -2,10 +2,6 @@
 title: Homepage
 ---
 
-import FeatureTile from '../../src/components/FeatureTile';
-import GridWrapper from '../../src/components/GridWrapper';
-import ClickableTile from '../../src/components/ClickableTile';
-
 <FeatureTile
     href="/getting-started/designers"
     label="Start"
@@ -67,5 +63,37 @@ The Component Libraries give developers a collection of re-usable React componen
 ### Latest Articles
 
 <GridWrapper flex="true" bleed="true">
-  test
+  <ClickableTile
+    dark="true"
+    type="article"
+    title="What to expect in Carbon 10"
+    author="Robin Cannon"
+    date="December 10, 2018"
+    href="https://medium.com/carbondesign/what-to-expect-in-carbon-10-5af1bd6e25f6">
+    <img
+      src="resources/images/article-9.png"
+      alt="What to expect in Carbon 10"
+    />
+  </ClickableTile>
+  <ClickableTile
+    dark="true"
+    type="article"
+    title="Up & Running with Carbon React in less than 5 minutes"
+    author="Josh Black"
+    date="October 19, 2018"
+    href="https://medium.com/carbondesign/up-running-with-carbon-react-in-less-than-5-minutes-25d43cca059e">
+    <img
+      src="resources/images/article-8.png"
+      alt="Up & Running with Carbon React in less than 5 minutes"
+    />
+  </ClickableTile>
+  <ClickableTile
+    dark="true"
+    type="article"
+    title="Hacktoberfest with Carbon"
+    author="Josh Black"
+    date="October 16, 2018"
+    href="https://medium.com/carbondesign/hacktoberfest-with-carbon-95c48943f586">
+    <img src="resources/images/article-7.jpg" alt="Hacktoberfest with Carbon" />
+  </ClickableTile>
 </GridWrapper>

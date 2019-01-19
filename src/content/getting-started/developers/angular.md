@@ -30,12 +30,20 @@ $ npm start
 **Note:** This isn't the only way to bootstrap a `carbon-components-angular` application, but the combination of `@angular/cli` and the `carbon-components` scss is our recommended setup.
 
 <a target="_blank" href="https://codesandbox.io/s/0129r494ql">
-  <img style="width: 200px" alt="Edit on CodeSandbox" src="https://codesandbox.io/static/img/play-codesandbox.svg" />
+  <img
+    style="width: 200px"
+    alt="Edit on CodeSandbox"
+    src="https://codesandbox.io/static/img/play-codesandbox.svg">
+  </img>
 </a>
 
 ### Using our starter app
 
-<img style="width: 100%" alt="carbon-angular-starter screenshot" src="images/carbon-angular-starter.png" />
+<img
+  style="width: 100%"
+  alt="carbon-angular-starter screenshot"
+  src="images/carbon-angular-starter.png"
+/>
 
 We recommend using the [carbon-angular-starter](https://github.com/carbon-design-system/carbon-angular-starter) for bootstrapping applications with Carbon components. Within 5 minutes your app will be running with the following already configured:
 
