@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-const jackalope = require('../../content---update/404/images/jackalope.svg');
+const jackalope = require('../../content/404/images/jackalope.svg');
 
 class FourOhFour extends React.Component {
   render() {

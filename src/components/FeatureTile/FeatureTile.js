@@ -20,28 +20,6 @@ export default class FeatureTile extends React.Component {
       'feature-tile--margin': margin === 'true',
     });
 
-    return (
-      <div class={classNames}>
-        <div className="ibm--col-lg-12 ibm--offset-lg-4 flex-wrap ibm--col-bleed">
-          <Link to={href} className="feature-tile">
-            <div className="tile__img">{children}</div>
-            <div className="feature-tile__tile">
-              <div className="bx--aspect-ratio bx--aspect-ratio--2x1">
-                <div className="bx--aspect-ratio--object">
-                  <div className="feature-tile__info">
-                    <p className="feature-tile__label">{label}</p>
-                    <p className="feature-tile__title">{title}</p>
-                    <ArrowRight24
-                      aria-label={`Go to ${title}`}
-                      className="feature-tile__icon"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Link>
-        </div>
-      </div>
-    );
+    return <div>{title}</div>;
   }
 }

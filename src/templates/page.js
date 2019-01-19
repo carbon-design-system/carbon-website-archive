@@ -7,6 +7,7 @@ import Layout from '../components/Layouts';
 import FourOhFour from '../components/404';
 
 // Components
+import FeatureTile from '../components/FeatureTile';
 import PageHeader from '../components/PageHeader';
 import PageTabs from '../components/PageTabs';
 import NextPrevious from '../components/NextPrevious';
@@ -43,9 +44,7 @@ export default ({ data }) => {
         <div className="container--homepage">
           <HomepageHeader />
           <main className="page-content ibm--grid" id="maincontent">
-            <MDXRenderer scope={this.props.__mdxScope}>
-              {post.code.body}
-            </MDXRenderer>
+            <MDXRenderer>{post.code.body}</MDXRenderer>
           </main>
           <HomepageFooter />
         </div>
