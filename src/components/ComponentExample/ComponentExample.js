@@ -7,7 +7,7 @@ import {
   DIRECTION_TOP,
   DIRECTION_BOTTOM,
 } from 'carbon-components/es/components/floating-menu/floating-menu';
-import InlineLoadingDemoButton from '../../content/components/inline-loading/inline-loading-demo-button';
+import InlineLoadingDemoButton from '../../content---update/components/inline-loading/inline-loading-demo-button';
 import on from 'carbon-components/es/globals/js/misc/on';
 import settings from 'carbon-components/es/globals/js/settings';
 import { RadioButtonGroup, RadioButton } from 'carbon-components-react';
