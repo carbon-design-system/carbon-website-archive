@@ -17,7 +17,7 @@ module.exports = {
         root: __dirname,
         //extensions: ['.mdx', '.md'],
         defaultLayouts: {
-          default: require.resolve("./src/components/Layouts/index.js")
+          default: require.resolve('./src/components/Layouts/index.js'),
         },
         plugins: [
           `gatsby-remark-smartypants`,
@@ -70,7 +70,7 @@ module.exports = {
             },
           },
         ],
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
