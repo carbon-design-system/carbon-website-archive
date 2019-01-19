@@ -1,7 +1,6 @@
 const path = require('path');
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const { copy } = require('fs-extra');
-const componentWithMDXScope = require('gatsby-mdx/component-with-mdx-scope')
 
 // Method that creates nodes based on the file system that we can use in our templates
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -106,30 +105,15 @@ exports.createPages = ({ actions, graphql }) => {
   });
 };
 
-exports.onCreateWebpackConfig = ({ actions, getConfig, stage }) => {
-  const config = getConfig();
-  const { module } = config;
-  const { rules } = module;
-  actions.replaceWebpackConfig({
-    ...config,
+exports.onCreateWebpackConfig = ({ actions, getConfig, stage, loaders }) => {
+  actions.setWebpackConfig({
     module: {
-      ...module,
       rules: [
-        ...rules.map(item => {
-          const { use, include } = item;
-          const includeList = !include || Array.isArray(include) ? include : [include];
-          if (
-            !use ||
-            includeList && includeList.some(item => /node_modules/i.test(item)) ||
-            use.every(({ loader }) => !/babel-loader\.js$/i.test(loader))
-          ) {
-            return item;
-          }
-          return {
-            ...item,
-            exclude: /(node_modules|bower-components)[\/\\](?!(ansi-regex)[\/\\]).*/,
-          };
-        }),
+        {
+          test: /\.js/,
+          include: path.dirname(require.resolve('ansi-regex')),
+          use: [loaders.js()],
+        },
         {
           test: /\.md$/,
           loaders: ['html-loader', 'markdown-loader'],
