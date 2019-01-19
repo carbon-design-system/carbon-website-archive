@@ -19,21 +19,6 @@ import { WebsiteFooter } from '@carbon/addons-website';
 
 import Snippet from '../CodeSnippet';
 import PageTable from '../PageTable';
-import ClickTile from '../ClickableTile';
-import FeatureTile from '../FeatureTile';
-import DoDontExample from '../DoDontExample';
-import ColorBlock from '../ColorBlock';
-import ColorCard from '../ColorCard';
-import IconLibrary from '../IconLibrary';
-import TypeScaleTable from '../TypeScaleTable';
-import TypeWeight from '../TypeWeight';
-import TypeSpec from '../TypeSpec';
-import ComponentCode from '../ComponentCode';
-import ComponentDocs from '../ComponentDocs';
-import ComponentStatus from '../ComponentStatus';
-import ComponentReact from '../ComponentReact';
-import Glossary from '../Glossary';
-import ComponentOverview from '../ComponentOverview';
 
 import { p, h1, h2, h3, h4, h5, ul, ol } from '../markdown/Markdown';
 
