@@ -1,6 +1,7 @@
 import '../polyfills';
 import React from 'react';
 import { graphql } from 'gatsby';
+import MDXRenderer from 'gatsby-mdx/mdx-renderer';
 
 import Layout from '../components/Layouts';
 import FourOhFour from '../components/404';
@@ -58,9 +59,7 @@ export default ({ data }) => {
           )}
         </PageHeader>
         <main className="page-content ibm--grid" id="maincontent">
-          <MDXRenderer scope={this.props.__mdxScope}>
-            {post.code.body}
-          </MDXRenderer>
+          <MDXRenderer>{post.code.body}</MDXRenderer>
         </main>
         <NextPrevious
           slug={slug}

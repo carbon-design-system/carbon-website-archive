@@ -35,22 +35,12 @@ import ComponentReact from '../ComponentReact';
 import Glossary from '../Glossary';
 import ComponentOverview from '../ComponentOverview';
 
-import {
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  ul,
-  ol,
-} from '../markdown/Markdown';
+import { p, h1, h2, h3, h4, h5, ul, ol } from '../markdown/Markdown';
 
 import '../../styles/index.scss';
 import '../../styles/experimental.scss';
 
-import { MDXProvider } from "@mdx-js/tag";
-
+import { MDXProvider } from '@mdx-js/tag';
 
 class Layout extends React.Component {
   static propTypes = {
@@ -217,19 +207,19 @@ class Layout extends React.Component {
 
             <div className="container">
               <MDXProvider
-                  components={{
-                    // Map HTML element tag to React component
-                    p: p,
-                    h1: h1,
-                    h2: h2,
-                    h3: h3,
-                    h4: h4,
-                    h5: h5,
-                    ul: ul,
-                    ol: ol,
-                    pre: Snippet,
-                    table: PageTable,
-                    /* switch all of these to direct react component imports
+                components={{
+                  // Map HTML element tag to React component
+                  p: p,
+                  h1: h1,
+                  h2: h2,
+                  h3: h3,
+                  h4: h4,
+                  h5: h5,
+                  ul: ul,
+                  ol: ol,
+                  pre: Snippet,
+                  table: PageTable,
+                  /* switch all of these to direct react component imports
                     'grid-wrapper': GridWrapper,
                     icon: PageIcon,
                     'clickable-tile': ClickTile,
@@ -249,11 +239,8 @@ class Layout extends React.Component {
                     'component-overview': ComponentOverview,
                     'anchor-links': AnchorLinks,
                     */
-                  }}
-                >
-                <div className="page-content ibm--grid">
-                  {children}
-                </div>
+                }}>
+                {children}
               </MDXProvider>
               <WebsiteFooter
                 logoOffset={true}
@@ -282,7 +269,9 @@ class Layout extends React.Component {
                 ]}>
                 <p>
                   Have questions? Email us or open an issue in{' '}
-                  <a href="https://github.com/carbon-design-system/carbon-website/issues/new/choose">GitHub.</a>
+                  <a href="https://github.com/carbon-design-system/carbon-website/issues/new/choose">
+                    GitHub.
+                  </a>
                 </p>
                 <p>
                   Vanilla Components version {version}
