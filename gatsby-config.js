@@ -21,18 +21,18 @@ module.exports = {
         },
         plugins: [
           `gatsby-remark-smartypants`,
-          `gatsby-remark-responsive-iframe`,
           `gatsby-remark-component`,
           {
             resolve: 'gatsby-remark-embed-video',
             options: {
-              width: 606,
-              ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
-              height: 333, // Optional: Overrides optional.ratio
+              width: 1024,
+              ratio: 1.77, // Optional: Defaults to 16/9 = 1.77  // height: 333, 1584Optional: Overrides optional.ratio
               related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
               noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
             },
           },
+          `gatsby-remark-responsive-iframe`,
+          `gatsby-remark-unwrap-images`,
           {
             resolve: `gatsby-remark-images`,
             options: {

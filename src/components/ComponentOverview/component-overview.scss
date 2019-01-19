@@ -1,15 +1,8 @@
-// CSS styles here
-// @include layer('raised');
+// temporary until added to componnents
+$active-ui: #bebebe;
+$hover-ui: #e5e5e5;
 
-#maincontent {
-  padding-bottom: 7rem;
-
-  @media all and (max-width: 600px) {
-    padding-bottom: 14rem;
-  }
-}
-
-.flex-container {
+.component-overview {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -18,57 +11,118 @@
   justify-content: flex-start;
 }
 
-.flex-item {
+.component-item {
+  width: 33%;
+  background: $ibm-colors__white;
   position: relative;
-  justify-content: space-around;
-  padding: 16px;
-  color: #152935;
-
-  a {
-    display: block;
-    text-decoration: none;
-  }
-
-  &:after {
-    position: absolute;
-    content: '';
-    top: 16px;
-    height: 165px;
-    left: 16px;
-    right: 16px;
-    background-color: $ibm-colors__black;
-    opacity: 0;
-    transition: opacity 200ms ease-in;
-    pointer-events: none;
-  }
+  transition: $transition--base;
 
   &:hover {
-    &:after {
-      opacity: 0.05;
-      transition: opacity 300ms ease-out;
+    background: $hover-ui;
+  }
+
+  &:active {
+    background: $active-ui;
+  }
+
+  // Display one column, bottom border except last item
+  @include breakpoint('sm') {
+    width: 100%;
+    border-bottom: 1px solid $ibm-colors__gray--20;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  // Display two colums
+  @include breakpoint('md') {
+    width: 50%;
+    border-right: 1px solid $ibm-colors__gray--20;
+
+    // selects every 2nd item and removes right border
+    &:nth-child(2n + 2) {
+      border-right: none;
+    }
+
+    &:last-child,
+    &:nth-last-child(2) {
+      border-bottom: none;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  // Display three columnns
+  @include breakpoint('lg') {
+    width: 33.33%;
+
+    &:nth-child(2n + 2) {
+      border-right: 1px solid $ibm-colors__gray--20;
+    }
+
+    // selects every 3rd item and removes right border
+    &:nth-child(3n + 3) {
+      border-right: none;
+    }
+
+    &:last-child,
+    &:nth-last-child(2),
+    &:nth-last-child(3) {
+      border-bottom: none;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  // Display four columnns
+  @include breakpoint('xlg') {
+    width: 25%;
+
+    &:nth-child(3n + 3) {
+      border-right: 1px solid $ibm-colors__gray--20;
+    }
+
+    // selects every 4th item and removes right border
+    &:nth-child(4n + 4) {
+      border-right: none;
+    }
+
+    &:last-child,
+    &:nth-last-child(2),
+    &:nth-last-child(3),
+    &:nth-last-child(4) {
+      border-bottom: none;
+    }
+
+    &:last-child {
+      border-right: none;
     }
   }
 }
 
-.flex-item img {
-  background-color: $ui-01;
+.component-item__link {
+  display: flex;
+  height: 100%;
+  width: 100%;
 }
 
-.component-item {
-  margin-top: 20px;
-  margin-bottom: 32px;
-  display: flex;
+.component-item__img {
+  margin: auto;
+  display: block;
 }
 
 .component-name {
+  @include type-style('caption-01');
   color: $text-01;
   text-decoration: none;
-  @include type-style('heading-02');
   text-align: left;
   display: flex;
-  margin-top: 10px;
-}
-
-.component-name:hover {
-  color: #3d70b2;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }

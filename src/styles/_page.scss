@@ -4,11 +4,9 @@
 
 body {
   background: $ui-01;
-  line-height: 1.5;
-  font-family: $font-family;
 }
 
-.side-nav + div, //Issue #51 weird bug where sometimes on reload of the page the classnames on container div disapear 
+.side-nav + div, //Issue #51 weird bug where sometimes on reload of the page the classnames on container div disapear
   .container {
   width: 100%;
   margin-left: 0;
@@ -29,6 +27,8 @@ body {
 //---------------------------------------
 .bx--header {
   z-index: 9999;
+  background-color: $ui-05;
+  border-bottom: 1px solid $ibm-colors__gray--80;
 }
 
 .bx--header__menu-trigger {
@@ -37,15 +37,13 @@ body {
   }
 }
 
+.bx--header .bx--header__name {
+  font-size: 1rem;
+}
+
 //---------------------------------------
 // Page styles
 //---------------------------------------
-
-button,
-.side-nav .bx--btn {
-  font-family: $font-family;
-}
-
 .page-content {
   padding-top: rem(64px);
   padding-bottom: rem(64px);
@@ -56,28 +54,10 @@ button,
     //max-width: 38rem;
     line-height: 1.5;
     padding: 0 0 $spacing-lg;
-  }
 
-  // All em on Markdown pages after images and image grid
-  .gatsby-resp-image-link + em,
-  .image-grid + p > em,
-  .image-component + p > em {
-    @include type-style('body-short-01');
-    color: $text-02;
-  }
-
-  // Images on component pages
-  .image-component {
-    background: $ui-02;
-    //max-width: 38rem;
-    display: flex;
-    justify-content: center;
-    padding: $spacing-md 0;
-
-    .gatsby-resp-image-link,
-    > img {
-      width: 50%;
-      height: 50%;
+    &:empty {
+      padding: 0;
+      margin: 0;
     }
   }
 
@@ -93,16 +73,14 @@ button,
   li > code,
   td > code {
     @include reset;
-    font-family: $font-family-mono;
+    @include type-style('code-02');
     position: relative;
     display: inline;
     padding: rem(1px) $spacing-xs;
     background: transparent;
-    font-size: inherit;
     border: 1px solid transparent;
     border-radius: 4px;
     background-color: $ibm-colors__gray--20;
-    font-size: 85%;
   }
 
   // HR dividers
@@ -117,4 +95,72 @@ button,
 
 .bx--platform-header {
   z-index: 9999;
+}
+
+// iframe
+.gatsby-resp-iframe-wrapper {
+  @include breakpoint('lg') {
+    margin-left: calc(25% + 0.5rem) !important;
+  }
+}
+
+.ibm--row .gatsby-resp-iframe-wrapper {
+  margin-left: 0;
+}
+
+//images
+.gatsby-resp-image-wrapper {
+  background: $ui-02;
+  margin-left: 0 !important;
+  margin-bottom: 4rem;
+
+  @include breakpoint('lg') {
+    margin-left: calc(25% + 0.5rem) !important;
+    max-width: calc(75% - 0.5rem);
+  }
+}
+
+//svg and gif images
+.page-content > div > img[src*='svg'],
+.page-content > div > img[src*='gif'] {
+  background: $ui-02;
+  margin-bottom: 4rem;
+
+  @include breakpoint('lg') {
+    margin-left: calc(25% + 0.5rem) !important;
+    max-width: calc(75% - 0.5rem);
+  }
+}
+
+.ibm--row .gatsby-resp-image-wrapper,
+.ibm-row img[src*='svg'],
+.ibm-row img[src*='gif'] {
+  margin-left: 0 !important;
+  margin-bottom: 0;
+}
+
+// Caption styles - All em on Markdown pages after images
+.gatsby-resp-image-link,
+.gatsby-resp-image-wrapper,
+img[src*='svg'],
+img[src*='gif'] {
+  + div > div > p > em {
+    @include type-style('body-short-01');
+    font-style: normal;
+    color: $text-01;
+    display: block;
+
+    @include breakpoint('lg') {
+      padding-right: 35%;
+    }
+
+    @include breakpoint('lg') {
+      padding-right: 44%;
+    }
+
+    &:first-child {
+      padding-top: $spacing-xs;
+      margin-top: -4rem; //needed because of default image spacing
+    }
+  }
 }

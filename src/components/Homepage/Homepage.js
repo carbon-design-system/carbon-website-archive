@@ -47,7 +47,7 @@ export class HomepageHeader extends React.Component {
                 </h3>
               </div>
               <div className="ibm--col-lg-8 ibm--col-md-4">
-                <h2 className="bx--type-expressive-heading-04">
+                <h2 className="bx--type-expressive-paragraph-01">
                   The <strong>Carbon Design System</strong> is IBM&rsquo;s
                   open-source design system for products and experiences. With
                   the IBM Design Language as its foundation, the system consists
@@ -77,7 +77,7 @@ export class HomepageFooter extends React.Component {
             </div>
             <div className="ibm--col-lg-8 ibm--col-md-4">
               <div className="homepage--footer__info">
-                <h2 className="bx--type-expressive-heading-04">
+                <h2 className="bx--type-expressive-paragraph-01">
                   We welcome all feedback, designs, or ideas in order to produce
                   the best possible experience for our users. If you&rsquo;re
                   interested in contributing, check out our contributing

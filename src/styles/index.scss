@@ -2,6 +2,15 @@
 // Carbon Components
 //---------------------------------------
 
+@import '@carbon/type/scss/type';
+@import '@carbon/type/scss/font-face/sans';
+@import '@carbon/type/scss/font-face/serif';
+@import '@carbon/type/scss/font-face/mono';
+@import '@carbon/type/scss/classes';
+
+@include type-reset();
+@include type-classes();
+
 $feature-flags: (
   components-x: true,
   ui-shell: true,
@@ -14,22 +23,13 @@ $feature-flags: (
   @import '@carbon/grid/scss/grid.scss';
 }
 @import '@carbon/grid/scss/aspect-ratio.scss';
-@import '@carbon/type/scss/type.scss';
-@import '@carbon/type/scss/_classes.scss';
 
 @import 'carbon-components/scss/globals/scss/styles.scss';
 @import '@carbon/addons-website/scss/styles';
 
-//temporary
-.bx--aspect-ratio--2x1 {
-  padding-bottom: 50%;
-}
-
 //---------------------------------------
 // Page styles
 //---------------------------------------
-$font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
-  sans-serif;
 
 @import 'page';
 
@@ -38,7 +38,6 @@ $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
 //---------------------------------------
 @import '../components/404/404.scss';
 @import '../components/markdown/markdown.scss';
-@import '../components/markdown/image-grid.scss';
 @import '../components/PageHeader/page-header.scss';
 @import '../components/PageTabs/page-tabs.scss';
 @import '../components/CodeSnippet/code-snippet.scss';
@@ -67,6 +66,7 @@ $font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
 @import '../components/NextPrevious/next-previous.scss';
 @import '../components/FeatureTile/feature-tile.scss';
 @import '../components/BackToTop/back-to-top.scss';
+@import '../components/ColorTokenTable/color-token-table.scss';
 
 //---------------------------------------
 // Syntax
