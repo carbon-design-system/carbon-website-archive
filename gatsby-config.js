@@ -19,6 +19,13 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve('./src/components/Layouts/index.js'),
         },
+        globalScope: `
+          import { Button } from 'carbon-components-react';
+          export default { Button };
+          import FeatureTile from '${__dirname}/src/components/FeatureTile';
+          import ClickableTile from '${__dirname}/src/components/ClickableTile';
+          import GridWrapper from '${__dirname}/src/components/GridWrapper';
+        `,
         plugins: [
           `gatsby-remark-smartypants`,
           `gatsby-remark-component`,
