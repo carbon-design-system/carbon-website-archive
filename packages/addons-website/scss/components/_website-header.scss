@@ -5,8 +5,9 @@
 }
 
 .#{$prefix}--header--website {
-  background: $ibm-colors__gray--100;
   z-index: 9999;
+  background-color: $ui-05;
+  border-bottom: 1px solid $ibm-colors__gray--80;
 }
 
 .#{$prefix}--header__action--active {
