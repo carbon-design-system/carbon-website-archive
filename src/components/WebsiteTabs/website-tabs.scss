@@ -37,7 +37,7 @@
 .website-tabs li.bx--tabs__nav-item--selected a.bx--tabs__nav-link {
   background: $ui-02;
   border: none;
-  border-top: $spacing-3xs solid $ibm-colors__blue--60;
+  border-top: rem(3px) solid $ibm-colors__blue--60;
   padding-top: rem(10px);
 }
 
@@ -63,6 +63,7 @@
     margin-left: -1rem;
     margin-right: -1rem;
   }
+  // TODO: class for negative margins. ibm--col--bleed
 
   .website-tabs ul.bx--tabs__nav {
     box-shadow: none;
