@@ -57,7 +57,7 @@ export default class WebsiteTabs extends React.Component {
 
     return (
       <div className="ibm--row">
-        <div className="ibm--col-lg-12 ibm--offset-lg-4">
+        <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
           <div className={classNames}>
             <Tabs>{this.tabChildren}</Tabs>
           </div>

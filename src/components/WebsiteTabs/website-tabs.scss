@@ -59,12 +59,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .website-tabs {
-    margin-left: -1rem;
-    margin-right: -1rem;
-  }
-  // TODO: class for negative margins. ibm--col--bleed
-
   .website-tabs ul.bx--tabs__nav {
     box-shadow: none;
   }
