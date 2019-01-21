@@ -1,5 +1,9 @@
 @import '../prefix';
 
+.container {
+  padding-top: 0 !important;
+}
+
 .#{$prefix}--header--website {
   background: $ibm-colors__gray--100;
   z-index: 9999;
