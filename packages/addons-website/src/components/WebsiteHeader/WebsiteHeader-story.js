@@ -15,7 +15,11 @@ import {
   SideNavLink,
   SideNavMenuItem,
   SideNavItems,
+  HeaderGlobalBar,
+  HeaderGlobalAction,
 } from 'carbon-components-react/lib/components/UIShell';
+import { Close20 } from '@carbon/icons-react';
+import WebsiteSwitcher from '../WebsiteSwitcher/WebsiteSwitcher';
 
 storiesOf('Website Header', module)
   .add(
@@ -31,7 +35,25 @@ storiesOf('Website Header', module)
           <HeaderName href="#" prefix="IBM">
             Website
           </HeaderName>
+
+          <HeaderGlobalBar>
+            <HeaderGlobalAction
+              className="bx--header__action--switcher"
+              aria-label="Switch"
+            >
+              <Close20 />
+            </HeaderGlobalAction>
+          </HeaderGlobalBar>
         </Header>
+
+        <WebsiteSwitcher
+          isSwitcherOpen
+          links={[
+            { href: 'https://www.ibm.com/design/language/', linkText: 'IBM Design Language' },
+            { href: 'https://www.ibm.com/standards/web/', linkText: 'IBM Digital Design' },
+            { href: 'https://www.ibm.com/design/', linkText: 'IBM Design' }
+          ]}>
+        </WebsiteSwitcher>
       </>
     ),
     {
@@ -65,6 +87,12 @@ storiesOf('Website Header', module)
             <HeaderMenuItem href="#">Docs</HeaderMenuItem>
             <HeaderMenuItem href="#">Support</HeaderMenuItem>
           </HeaderNavigation>
+          <HeaderGlobalAction
+              className="bx--header__action--switcher"
+              aria-label="Switch"
+            >
+              <Close20 />
+          </HeaderGlobalAction>
         </Header>
         <SideNav
           aria-label="Side navigation"
@@ -84,6 +112,15 @@ storiesOf('Website Header', module)
             <SideNavLink href="#">Support</SideNavLink>
           </SideNavItems>
         </SideNav>
+
+        <WebsiteSwitcher
+          isSwitcherOpen
+          links={[
+            { href: 'https://www.ibm.com/design/language/', linkText: 'IBM Design Language' },
+            { href: 'https://www.ibm.com/standards/web/', linkText: 'IBM Digital Design' },
+            { href: 'https://www.ibm.com/design/', linkText: 'IBM Design' }
+          ]}>
+        </WebsiteSwitcher>
       </>
     ),
     {

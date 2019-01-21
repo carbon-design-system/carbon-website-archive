@@ -1,5 +1,9 @@
 @import '../prefix';
 
+.container {
+  padding-top: 0 !important;
+}
+
 .#{$prefix}--header--website {
   z-index: 9999;
   background-color: $ui-05;
@@ -27,7 +31,7 @@ a.#{$prefix}--header__name {
   @include type-style('heading-02');
 }
 
-.#{$prefix}--header__action {
+.#{$prefix}--header__action--memu {
   border-width: 2px;
   display: block;
 
