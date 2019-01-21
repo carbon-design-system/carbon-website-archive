@@ -32,7 +32,6 @@ import {
   HomepageFooter,
   HomepageHeader,
 } from '../components/Homepage/Homepage';
-import { Tabs } from 'carbon-components-react';
 import { Tab } from 'carbon-components-react';
 import WebsiteTabs from '../components/WebsiteTabs';
 import ColorTokenTable from '../components/ColorTokenTable';
@@ -50,16 +49,6 @@ import {
   PageIcon,
   AnchorLinks,
 } from '../components/markdown/Markdown';
-
-function createElementCustom(component, props, children) {
-  const Tag =
-    (components && component && components[component]) || // Get component from map if present
-    component || // Otherwise just the string
-    'div'; // Default to div
-
-  // And return the formed component
-  return <Tag {...props}>{children}</Tag>;
-}
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -92,7 +81,6 @@ const renderAst = new rehypeReact({
     glossary: Glossary,
     'component-overview': ComponentOverview,
     'anchor-links': AnchorLinks,
-    tabs: Tabs,
     tab: Tab,
     'website-tabs': WebsiteTabs,
     'color-token-table': ColorTokenTable,

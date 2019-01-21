@@ -1,12 +1,6 @@
 import React from 'react';
-import { Tabs } from 'carbon-components-react';
+import { Tabs, Tab } from 'carbon-components-react';
 import classnames from 'classnames';
-
-/**
- * remove wrapper elements from internal content:
- * - ibm-row // row-wrapper divs generated in Markdown.js
- * - ibm-row > ibm--col* // column dives that are direct children to rows, which would be generated & placed in Markdown.js
- * */
 
 export default class WebsiteTabs extends React.Component {
   constructor() {
@@ -15,6 +9,7 @@ export default class WebsiteTabs extends React.Component {
       displayTabsAtSmallerBreakpoints: false,
     };
     this.tabChildren = [];
+    this.displayTabsAtSmallerBreakpoints = false;
   }
 
   /**
@@ -35,11 +30,15 @@ export default class WebsiteTabs extends React.Component {
     this.setState({ displayTabsAtSmallerBreakpoints: shouldShowTabs });
   };
 
+  updateTabChildren = () => {
+    this.tabChildren = this.props.children.filter(child => {
+      return child.$$typeof !== undefined;
+    });
+  };
+
   componentDidMount() {
     window.addEventListener('resize', this.updateDimensions);
-    this.tabChildren = this.props.children.filter(child => {
-      return child.type && child.type.displayName === 'Tab';
-    });
+    this.updateTabChildren();
     this.updateDimensions();
   }
 
@@ -48,6 +47,8 @@ export default class WebsiteTabs extends React.Component {
   }
 
   render() {
+    this.updateTabChildren();
+
     const classNames = classnames({
       'website-tabs': true,
       'bp-tabs-shown': this.state.displayTabsAtSmallerBreakpoints,
