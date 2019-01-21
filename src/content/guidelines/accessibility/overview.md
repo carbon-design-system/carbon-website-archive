@@ -4,7 +4,15 @@ title: Accessibility
 tabs: ['Overview', 'Color', 'Keyboard', 'Developers']
 ---
 
-IBM firmly believes that web and software experiences should be accessible for everyone, regardless of abilities or impairments. This guide will help ensure that your product or web experience meets or exceeds the standards for accessibility.
+<anchor-links>
+<ul>
+    <li><a href="#carbon-and-accessibility">Carbon and accessibility</a></li>
+    <li><a href="#categories-of-disabilities">Categories of disabilities</a></li>
+    <li><a href="#global-accessibility-standards">Global accessibility standards</a></li>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#tools">Tools</a></li>
+</ul>
+</anchor-links>
 
 ## Carbon and accessibility
 
@@ -12,24 +20,22 @@ Carbon is committed to following and complying with best practices when it comes
 
 However, _how you use Carbon_ also affects the accessibility of a product. Read this page to learn about accessibility in general. Then, while you're working, use the role-specific Carbon accessibility guidelines to help you make products that anyone can use.
 
-## What does it mean for a product to be accessible?
-
-Accessible products:
+For a product to be considered accessible, it should:
 
 - Give every user the same benefits, regardless of ability
 - Can adapt to any user in any context
 
-Disabilities can be thought of as a mismatch between one's ability and one's environment. They can be:
+## Categories of disabilities
+
+Disabilities can be thought of as a mismatch between one's ability and one's environment, and can be broken into three main types:
 
 | Type         | Description                                                                                                                                                                          |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Situational  | A person with typical vision might struggle to view their screen in a bright environment. Or, a person sitting in a library may be unable to watch a video with the audio turned on. |
 | Temporary    | A person with a broken wrist may not be able to type but will regain the ability when healed.                                                                                        |
-| Long-Lasting | This is what people typically think of when they hear "disability."                                                                                                                  |
+| Long-lasting | This is what people typically think of when they hear "disability."                                                                                                                  |
 
-Accessible design not only helps users with disabilities; it provides better user experiences for everyone.
-
-## Main categories of disabilities
+Remember, accessible design not only helps users with disabilities; it provides better user experiences for everyone.
 
 ### Blind users
 
@@ -46,13 +52,11 @@ Accessible design not only helps users with disabilities; it provides better use
 
 #### How this applies to everyone
 
-- As audio-only interfaces gain popluarity through devices like AI assistants, users are expecting more and more from the audio representations of experiences.
-
-<div id='low-vision'></div>
+- As audio-only interfaces gain popularity through devices like AI assistants, users are expecting more and more from the audio representations of experiences.
 
 ### Low-vision users
 
-Low vision can include partial sight in one or both eyes, and range from mild to severe. It affects 246 million people, or about 4% of the world’s population.
+Low vision can include partial sight in one or both eyes and can range from mild to severe. It affects approximately 4% of the world’s population.
 
 #### How they experience an interface
 
@@ -70,9 +74,7 @@ Low vision can include partial sight in one or both eyes, and range from mild to
 #### How this applies to everyone
 
 - Users without disabilities sometimes need to view screens in poor lighting conditions. For example, imagine using a screen outside on a bright day. A higher-contrast design will make the screen more usable for everyone.
-- Vision worsens gradually starting around age 40 and good contrast helps this very large demographic use your interface.
-
-<div id='color'></div>
+- Vision worsens gradually starting around age 40, and good contrast helps this very large demographic use your interface.
 
 ### Color-blind users
 
@@ -86,9 +88,7 @@ Color-blindness affects 8% of all men and 0.4% of women.
 #### What designers should think about
 
 - Run your design through a **color-blind simulator**. If the design doesn't work, try another approach. If you're working in Sketch, we recommend the [Stark](http://www.getstark.co/) plugin.
-- To view best practices for using color in Data Visualization, view the [Data Vis](/data-visualization/overview/colors) color page.
-
-<div id='deaf'></div>
+<!-- - To view best practices for using color in Data Visualization, view the [Data Vis](/data-visualization/overview/colors) color page. -->
 
 ### Deaf and hard-of-hearing users
 
@@ -105,25 +105,21 @@ Color-blindness affects 8% of all men and 0.4% of women.
 
 - All users can benefit from closed captioning. Imagine using your device in a loud environment or, alternatively, in a quiet environment when it wouldn't be appropriate to turn your sound on.
 
-<div id='physical'></div>
-
 ### Physical disabilities
 
 #### How users with physical disabilities experience an interface
 
 - May rely on **keyboards**, **track balls**, **voice recognition** and other assistive technologies to interact with an interface
-- May not be able to use a mouse or other pointer
+- May not be able to use a keyboard, mouse, or other pointer
 
 #### What designers should think about
 
 - Design for good **keyboard interaction**, making sure all actions are keyboard accessible and efficient.
-- Learn how to navigate using a [keyboard](https://help.gnome.org/users/gnome-help/stable/keyboard-nav.html.en) and spend one day navigating the web, email, and digital products using only the keyboard.
+- Learn how to navigate using a [keyboard](https://help.gnome.org/users/gnome-help/stable/keyboard-nav.html.en) and spend some time navigating the web, email, and digital products using only the keyboard.
 
 #### How this applies to everyone
 
 - Many users prefer to navigate interfaces with a keyboard and no mouse for efficiency. Good keyboard navigation can help everyone be more productive.
-
-<div id='cognitive'></div>
 
 ### Users with cognitive disabilities
 
@@ -153,17 +149,17 @@ These users offer a broad spectrum of concerns for design. Functional cognitive 
 ## Global accessibility standards
 
 - [World Wide Web Consortium](https://www.w3.org/WAI/) (W3C)'s Web Accessibility Initiative (WAI) is an effort to improve the accessibility of the World Wide Web for people of all abilities.
-- Web Accessibility Initiative (WAI) contributors create and maintain [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG21/) (WCAG) which is the global accessibility standard.
+- Web Accessibility Initiative (WAI) contributors create and maintain [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG21/) (WCAG), which is the global accessibility standard.
 
 ## Resources
 
-- [IBM Web Accessibility Checklist](https://www.ibm.com/able/guidelines/ci162/accessibility_checklist.html) - IBM's specific ruleset for creating accessible web applications.
+- [IBM Web Accessibility Checklist](https://www.ibm.com/able/guidelines/ci162/accessibility_checklist.html) - IBM's specific ruleset for creating accessible web applications
 - [IBM accessibility quick guidance](https://w3.ibm.com/able/devtest/quick/) - (Internal only)
 - [W3C low vision requirements](https://www.w3.org/TR/low-vision-needs/)
 
 ## Tools
 
-- [High Contrast Chrome plugin](https://chrome.google.com/webstore/detail/high-contrast/djcfdncoelnlbldjfhinnjlhdjlikmph/related?hl=en)
-- [Stark Sketch Plugin](http://www.getstark.co/)
+- [High-contrast Chrome plugin](https://chrome.google.com/webstore/detail/high-contrast/djcfdncoelnlbldjfhinnjlhdjlikmph/related?hl=en)
+- [Stark Sketch plugin](http://www.getstark.co/)
 - [NoCoffee vision simulator](https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl)
 - [Color contrast checker](https://marijohannessen.github.io/color-contrast-checker/)

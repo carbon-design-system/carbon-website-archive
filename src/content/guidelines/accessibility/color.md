@@ -4,9 +4,19 @@ title: Accessibility
 tabs: ['Overview', 'Color', 'Keyboard', 'Developers']
 ---
 
+<anchor-links>
+<ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#color-contrast">Color contrast</a></li>
+    <li><a href="#low-vision">Low vision</a></li>
+    <li><a href="#resources">Resources</a></li>
+    <li><a href="#tools">Tools</a></li>
+</ul>
+</anchor-links>
+
 ## Introduction
 
-Visual impairments can include low vision, color blindness, and complete blindness. Carbon components have been designed to accommodate the entire spectrum of visual impairment, though designer diligence is still needed to ensure that the components are used correctly.
+Visual impairments can include low vision, color blindness, and complete blindness. Carbon components have been designed to accommodate the entire spectrum of visual impairment, though designers still need to exercise diligence to ensure that the components are used correctly.
 
 ## Color contrast
 
@@ -28,11 +38,11 @@ Visual information used to indicate states and boundaries of UI components must 
 
 Please refer to our [usage section on the Colors page](/guidelines/color/usage) to learn more about color contrast ratios. You can also use this [color contrast](https://marijohannessen.github.io/color-contrast-checker/) tool to ensure your ratios pass WCAG AA standards.
 
-To view best practices for using color in Data Visualization, view the [Data Vis color](/data-visualization/overview/colors) page.
+<!-- To view best practices for using color in data visualization, view the [Data Vis color](/data-visualization/overview/colors) page. -->
 
 ## Color blindness
 
-Color blindness involves difficulty in perceiving or distinguishing between colors, as well as sensitivity to color brightness. It affects approximately 1 in 12 men and 1 in 200 women worldwide.
+Color blindness involves difficulty in perceiving or distinguishing between colors, as well as sensitivity to color brightness. It affects approximately one in twelve men and one in two hundred women worldwide.
 
 | Type         | Color deficiency |
 | ------------ | ---------------- |
@@ -46,18 +56,18 @@ Color blindness involves difficulty in perceiving or distinguishing between colo
 Don't rely on color alone to convey meaning. This includes conveying information, indicating an action, prompting the user for a response, or distinguishing one visual element from another. When designing with color, it might help to use a color-blind simulator to review visibility of content. If you're working in Sketch, we recommend the [Stark](http://www.getstark.co/) plugin.
 
 ![rainbow palette](images/color-accessibility-1.png)
-_Non-color blind user vs. color-blind user_
+_Non-color-blind user vs. color-blind user_
 
 ## Low vision
 
-Low vision can include partial sight in one or both eyes, and range from mild to severe. It affects 246 million people, or about 4% of the world’s population.
+Low vision can include partial sight in one or both eyes and can range from mild to severe. It affects about 4% of the world’s population.
 
 | Type                     | Visual deficiency                                                                                         |
 | ------------------------ | --------------------------------------------------------------------------------------------------------- |
-| Low acuity               | Also known as **blurred vision.** Can make text difficult to read, since it would appear fuzzy.           |
-| Low-contrast sensitivity | The ability to determine fine detail and distinguish one object from another.                             |
-| Obstructed visual field  | The user's view is partially obstrucuted. Can include central vision and spotty vision.                   |
-| Retinitis Pigmentosa     | Also known as **tunnel vision**. Obstructed peripheral vision - user is only able to see central elements |
+| Low acuity               | Also known as **blurred vision.** Can make text difficult to read, since it appears fuzzy.           |
+| Low-contrast sensitivity | Decreased ability to determine fine detail and distinguish one object from another                             |
+| Obstructed visual field  | The user's view is partially obstructed. Can include central vision and spotty vision.                   |
+| Retinitis Pigmentosa     | Also known as **tunnel vision**; the user is only able to see central elements |
 
 _[Source: NoCoffee - Visual impairments ](https://accessgarage.wordpress.com/2013/02/09/458/)_
 
@@ -67,7 +77,7 @@ _Low-vision disabilities_
 
 ### Designing for low vision
 
-To get an understanding of the various low-vision disabilities, we recommend using the [NoCoffee](https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl) Chrome plugin to preview websites. Low-vision users may be using a screen reader to preview your website or experience, so ensure you're following [keyboard guidelines](/guidelines/accessibility/keyboard) to ensure the page is read to the user in a logical order.
+To get an understanding of the various low-vision disabilities, we recommend using the [NoCoffee](https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl) Chrome plugin to preview websites. Low-vision users may be using a screen reader to preview your website or experience, so be sure to follow [keyboard guidelines](/guidelines/accessibility/keyboard) to ensure the page is read to the user in a logical order.
 
 ## Resources
 
@@ -79,5 +89,5 @@ To get an understanding of the various low-vision disabilities, we recommend usi
 ## Tools
 
 - [High Contrast Chrome plugin](https://chrome.google.com/webstore/detail/high-contrast/djcfdncoelnlbldjfhinnjlhdjlikmph/related?hl=en)
-- [Stark Sketch Plugin](http://www.getstark.co/)
+- [Stark Sketch plugin](http://www.getstark.co/)
 - [NoCoffee vision simulator](https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl)
