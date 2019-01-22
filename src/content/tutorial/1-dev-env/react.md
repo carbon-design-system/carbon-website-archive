@@ -77,8 +77,4 @@ We'll customize the Sass build in a later step as it's a bad practice to include
 
 At this point, your app should look like this live example.
 
-<div class="ibm--row">
-  <div class="ibm--col-lg-8 ibm--offset-lg-4">
-    <iframe src="https://codesandbox.io/embed/k5wrxqp3j5?autoresize=1&hidenavigation=1&view=preview" style="width:100%; height:500px; border:0; border-radius: 0; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
-  </div>
-</div>
+[Completed Tutorial](embedded-codesandbox://tutorial/1-dev-env/app-react)

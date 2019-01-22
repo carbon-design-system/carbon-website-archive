@@ -12,8 +12,6 @@ By the end of this tutorial, you will be able to:
 - Add Carbon styling with a custom build
 - Use the Carbon UI shell for global navigation
 - Use the grid and various Carbon components
-- Build and validate a form with various input types
-- Render interactive data in the data table component
 
 ## Install prerequisites
 
@@ -30,7 +28,5 @@ If you downloaded and installed Node.js, then you already have npm. If you prefe
 ## What you'll build
 
 After completing all tutorial steps, your web application will look like this:
-
-**TODO**
 
 [Completed Tutorial](embedded-codesandbox://tutorial/introduction/app-react)

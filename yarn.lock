@@ -8315,10 +8315,9 @@ gatsby-remark-embed-video@^1.4.0:
     get-video-id "^3.1.0"
     unist-util-visit "^1.4.0"
 
-gatsby-remark-embedded-codesandbox@^1.2.0:
+"gatsby-remark-embedded-codesandbox@github:mattrosno/gatsby-remark-embedded-codesandbox#release":
   version "1.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-embedded-codesandbox/-/gatsby-remark-embedded-codesandbox-1.2.0.tgz#8acbb7bbeea3ced8209a0a6133adf65662c5ab27"
-  integrity sha512-/fOAegvx3u5xoLOa64EoenMJVHkSqeHcFoZxNRxWot/Z8fiGfvmCnDRvQjvxYhUL84m7nb+037HDzACV0Fr+EQ==
+  resolved "https://codeload.github.com/mattrosno/gatsby-remark-embedded-codesandbox/tar.gz/46e9cf99b008b020c89e988e3aa84443e788086d"
   dependencies:
     jest "^23.1.0"
     lz-string "^1.4.4"
