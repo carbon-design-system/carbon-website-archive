@@ -58,7 +58,7 @@
   padding: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .website-tabs ul.bx--tabs__nav {
     box-shadow: none;
   }
@@ -209,7 +209,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: rem(672px)) {
   .website-tabs.bp-tabs-shown li.bx--tabs__nav-item {
     width: 50%;
     max-width: 50%;

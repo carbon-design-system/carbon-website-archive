@@ -18,11 +18,11 @@ export default class WebsiteTabs extends React.Component {
    */
   updateDimensions = () => {
     let shouldShowTabs = false;
-    if (window.innerWidth <= 500) {
+    if (window.innerWidth < 500) {
       if (this.tabChildren.length <= 2) {
         shouldShowTabs = true;
       }
-    } else if (window.innerWidth <= 768) {
+    } else if (window.innerWidth < 1056) {
       if (this.tabChildren.length <= 3) {
         shouldShowTabs = true;
       }
