@@ -16,7 +16,6 @@ tabs: ['Library', 'Usage', 'Contribution']
 
 ## Design and production guidelines
 
-
 Don't see the icon you need in the library? Make your own! Follow these guidelines to ensure visual consistency and proper formatting.
 
 - All icons should be unique and not redundant with any existing icons in the system. Search the [library](/library) for the keyword(s) associated with your proposed new icon to ensure that it is not already represented.
