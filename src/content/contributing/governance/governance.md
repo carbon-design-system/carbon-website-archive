@@ -41,9 +41,9 @@ Core team members are IBM employees who are responsible for the leadership and s
 
 Project teams are narrowly focused on specific areas of interest. Although not a requirement, it's recommended that project teams include at least one member of the core team to help ensure coherent project vision. As a distributed model, project teams operate independently although it's recommended that they follow this governance structure to define roles, responsibilities, and how decisions are made.
 
-Each project team has a lead committer, responsible for:
+Each project team has a lead maintainer, responsible for:
 
-- Deciding on the initial membership of project team maintainers (in consultation with the core team)
+- Deciding on the initial membership of project maintainers (in consultation with the core team)
 - Determining and publishing project team policies and mechanics, including the way maintainers join and leave the team (which should be based on team consensus)
 - Communicating core vision downward to the team
 - Ensuring that issues and pull requests progress at a reasonable rate, assigning issue owners and pull request reviewers as necessary
@@ -84,7 +84,7 @@ The way that project teams communicate internally and externally is left to each
 
 ### Technical steering committee
 
-Each project lead is expected to participate in the technical steering committee to foster collaboration among the core team and all project teams. This close communication on cross-cutting concerns greatly mitigates the risk of misalignment that can come from decentralized decisions.
+Each project lead is expected to participate in the technical steering committee to foster collaboration among the core team and all project teams. This close communication on cross-cutting concerns greatly mitigates the risk of misalignment that can come from decentralized efforts.
 
 ## Decision making
 
@@ -114,7 +114,7 @@ In some cases, though, consensus cannot be reached. These cases tend to split in
 
 In either case, an alternative form of decision-making is needed.
 
-- For the "trivial" case, the project lead will make an executive decision or defer the decision to another committer on the team
+- For the "trivial" case, the project lead will make an executive decision or defer the decision to another maintainer on the team
 - For the "deep" case, the project lead is empowered to make a final decision, but should consult with the rest of the core team before doing so
 
 ## Contribution process
