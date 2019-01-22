@@ -9,8 +9,6 @@
 
 // Example
 .example {
-  margin-bottom: rem(36px);
-
   @include breakpoint('sm') {
     width: 100%;
   }
@@ -128,6 +126,7 @@ p.example__description {
   @include font-smoothing;
   margin: 0;
   padding: 0;
+  padding-bottom: rem(24px);
 }
 
 .example.example--full-width {

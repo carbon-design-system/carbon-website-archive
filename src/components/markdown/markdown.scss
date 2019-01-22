@@ -33,7 +33,7 @@
   //@include type-style('expressive-heading-04', true);
   position: relative;
   color: $text-01;
-  margin-top: rem(56px);
+  margin-top: rem(48px);
   margin-bottom: $spacing-lg;
   position: relative;
 }
@@ -60,7 +60,7 @@
   @include type-style('heading-02');
   color: $text-01;
   margin-top: rem(8px);
-  margin-bottom: rem(16px);
+  margin-bottom: 0;
   position: relative;
 }
 
@@ -122,6 +122,14 @@
   }
 }
 
+.page-h2:before {
+  padding-bottom: rem(56px);
+}
+
+.page-h4:before {
+  margin-top: -2rem;
+}
+
 //----------------------------
 // ul / ol
 //----------------------------
@@ -146,10 +154,24 @@
   }
 }
 
+.page-ul > li span,
+.page-ol > li span {
+  margin-top: 1rem;
+}
+
 .page-ol > li {
   font-weight: 400;
   padding-left: 0.25rem;
   list-style-type: decimal;
+}
+
+.page-ol > li:last-child p {
+  padding-bottom: 0;
+}
+
+.page-ul .page-ul {
+  margin-top: -1.25rem;
+  margin-bottom: 0;
 }
 
 // The following is a css hack because remark is nesting
