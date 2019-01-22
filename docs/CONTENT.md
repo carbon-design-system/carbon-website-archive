@@ -159,6 +159,8 @@ The carbon website has a handful of custom markdown components available for use
 - `<grid-wrapper col_lg="12" flex="true>`
   - `col_lg` Specify the col width at large breakpoint, default is 12
   - `flex` Set to true to set display:flex | flexwrap: wrap to row
+- `<website-tabs> … </website-tabs>`
+  - inside, place `<tab label="Tab Label"><div> [tab content] </div></tab>`
 
 ### Examples
 
@@ -256,6 +258,35 @@ This will render the following set of examples:
 
 This will render the following set of examples:
 ![Example of the Do/Don't component with image examples](https://user-images.githubusercontent.com/2753488/43850488-aba55aea-9afd-11e8-921d-418f65cf2460.png)
+
+#### Website Tabs
+
+```
+<website-tabs>
+<tab label="Tab 1"><div>
+
+lorem ipsum dolor sit amet
+
+</div></tab>
+<tab label="Tab 2"><div>
+
+Content for second tab goes here.
+
+</div></tab>
+<tab label="Tab 3"><div>
+
+Content for third tab goes here.
+
+</div></tab>
+</website-tabs>
+```
+
+- Complete component block surrounded in `<website-tabs> … </website-tabs>`
+- Each tab element has a label property, which will be the displayed label of the tab
+  - `<tab label="Lorem">`
+- Each Tab element also has a div wrapper inside of it, with no space between the div and tab
+  - `<tab label="Lorem"><div> … </div></tab>`
+
 
 ### Page Specific Components:
 
