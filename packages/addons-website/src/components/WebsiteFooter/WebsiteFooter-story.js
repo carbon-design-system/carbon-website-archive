@@ -14,12 +14,13 @@ storiesOf('Website Footer', module).add(
         { href: 'https://www.ibm.com', linkText: 'IBM.com' },
       ]}
       linksCol2={[
-        { href: 'https://dribbble.com/_carbondesign', linkText: 'Dribble' },
+        { href: 'https://dribbble.com/_carbondesign', linkText: 'Dribbble' },
         { href: 'https://medium.com/@_carbondesign', linkText: 'Medium' },
         { href: 'https://twitter.com/_carbondesign', linkText: 'Twitter' },
       ]}>
       <p>
-        Have questions? Email us or open an issue in <a href="#">GitHub.</a>
+        Have questions? Email us or open an issue in<br />{' '}
+        <a href="#">GitHub.</a>
       </p>
       <p>
         Last updated January 1, 2000

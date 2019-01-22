@@ -68,6 +68,15 @@ export default class NextPrevious extends React.Component {
   };
 
   renderNextPreviousLinks = (prevPath, prevName, nextPath, nextName) => {
+    let truncatedPrevName, truncatedNextName;
+    if (typeof prevName !== 'undefined') {
+      truncatedPrevName = prevName.substring(prevName.indexOf(':') + 1).trim();
+    }
+
+    if (typeof nextName !== 'undefined') {
+      truncatedNextName = nextName.substring(nextName.indexOf(':') + 1).trim();
+    }
+
     const nextButtonClassnames = classnames({
       'next-previous-link': true,
       'next-previous-link--next': true,
@@ -84,13 +93,13 @@ export default class NextPrevious extends React.Component {
             className="next-previous-link next-previous-link--previous ibm--col-lg-6 ibm--col-md-4 ibm--col-sm-2 ibm--offset-lg-4"
             to={prevPath}>
             <span className="target-page-direction">Previous </span>
-            <span className="target-page-name">{prevName}</span>
+            <span className="target-page-name">{truncatedPrevName}</span>
           </Link>
         )}
         {nextPath && (
           <Link className={nextButtonClassnames} to={nextPath}>
             <span className="target-page-direction">Next </span>
-            <span className="target-page-name">{nextName}</span>
+            <span className="target-page-name">{truncatedNextName}</span>
           </Link>
         )}
       </>

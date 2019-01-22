@@ -79,42 +79,20 @@ If you need a link to open in a new window you will have to use standard html to
 
 ### Images
 
-Images will render as full width responsive images by default. Use blockquote in front of an image to render a smaller image for text to wrap around.
+Images will render as full width responsive images by default. **You must have a line break after the image, otherwise markdown will place it inside a paragraph tag and it will display at the incorrect width**
 
-100% width standard image
 `![image alt text](images/image.png)`
 
-Smaller image w/ text wrapping
-`> ![tone](images/content-general-2.png)`
+#### Image captions
 
-![Example](https://user-images.githubusercontent.com/2753488/45236528-b02cb980-b2a1-11e8-9e81-af4ec353d3e9.png)
-
-#### Image Component
-
-Image components are used on component pages under the Style and Usage tabs to display an image with padding around it and a light background color. See the tooltip page for an examples
+If you place markdown italic text following an image it will render in the caption styles. **You must have a line break after the image, otherwise markdown will place it inside a paragraph tag and it will display at the incorrect width**
 
 ```
-<div class="image-component">
-    <img src="images/tooltip-style-1.png" alt="Closed and open states for a Tooltip" />
-</div>
+![Structure and spacing measurements for Accordion](images/accordion-style-1.png)
+
+_Structure and spacing measurements for Accordion | px / rem_
 ```
 
-#### Image Grid
-
-Image grids are used on component pages, usually under the "Style" tab to display a group of images in a grid. See the button page for an example. You need to wrap it with a grid-wrapper component to get the correct grid layout.
-
-```
-<grid-wrapper>
-<div class="image-grid">
-  <div>
-    <img src="images/button-style-7.png" alt="Structure for a Primary Button"/>
-  </div>
-  <div>
-    <img src="images/button-style-8.png" alt="Structure for a small Primary Button"/>
-  </div>
-</div>
-</grid-wrapper>
-```
 
 ### Lists
 
@@ -300,6 +278,10 @@ This will render the following set of examples:
 **Component Overview** (content pulled from data/components.json)
 
 - `<component-overview>`
+
+**Color Token Table** (content pulled from data/guidelines/color-tokens.js)
+
+- `<color-token-table>
 
 ## Component Page Components:
 

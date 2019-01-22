@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="736px" height="288px" viewBox="0 0 736 288" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>common-action-3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="5.88375 5 10 0.88375 9.11625 0 5 4.11625 0.88375 0 0 0.88375 4.11625 5 0 9.11625 0.88375 10 5 5.88375 9.11625 10 10 9.11625"></polygon>
+    </defs>
+    <g id="common-action-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(224.000000, 80.000000)">
+            <rect id="Rectangle-2-Copy-32" fill="#EDF4FF" x="0" y="0" width="288" height="128"></rect>
+            <rect id="Path" fill="#054ADA" x="0" y="0" width="3" height="128"></rect>
+            <text id="Roius-abnta-mod-temp" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" fill="#171717">
+                <tspan x="19" y="48">Roius abnta mod tempor adsfiso </tspan>
+                <tspan x="19" y="66">incidfid idunt ut labnt empor.</tspan>
+            </text>
+            <text id="Time-stamp-[00:00:00" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" fill="#171717">
+                <tspan x="19" y="108">Time stamp [00:00:00]</tspan>
+                <tspan x="19" y="126"></tspan>
+                <tspan x="19" y="144"></tspan>
+            </text>
+            <text id="Notification-title" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" line-spacing="18" fill="#171717">
+                <tspan x="19" y="30">Notification title</tspan>
+            </text>
+            <g id="icon/navigation/close/16" transform="translate(254.000000, 14.000000)">
+                <g id="Group">
+                    <g id="close" transform="translate(5.000000, 5.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="icon-color" fill="#000000" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="transparent-rectangle" x="0" y="0" width="20" height="20"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

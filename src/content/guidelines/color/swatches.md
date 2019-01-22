@@ -4,6 +4,25 @@ title: Color
 tabs: ['Swatches', 'Usage']
 ---
 
+## Get started
+
+<grid-wrapper col_lg="8" flex="true" bleed="true">
+<clickable-tile
+    title="Carbon Design Kit"
+    href="https://github.com/ibm/carbon-design-kit"
+    type="resource"
+    >
+    <img src="images/sketch-icon.png" alt="Carbon Design Kit" />
+</clickable-tile>
+<clickable-tile
+    title="Color Palettes for Adobe™(.ase)"
+    href="https://w3.ibm.com/design/language//IBM-color-palettes.zip"
+    type="resource"
+    >
+    <img src="images/ase.png" alt="Color palettes for Adobe" />
+</clickable-tile>
+</grid-wrapper>
+
 ## Carbon color tokens
 
 <grid-wrapper flex="true">

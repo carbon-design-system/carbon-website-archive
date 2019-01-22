@@ -94,8 +94,12 @@
 //---------------------------------------
 // Experimental Notification
 //---------------------------------------
-.component-example .carbon-bx-experimental .bx--inline-notification {
+.component-example .bx--inline-notification {
   display: inline-flex;
+}
+
+.component-example .bx--inline-notification__subtitle {
+  min-width: 300px;
 }
 
 //---------------------------------------

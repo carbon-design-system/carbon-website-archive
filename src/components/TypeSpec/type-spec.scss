@@ -9,6 +9,12 @@
   padding-bottom: $spacing-md;
 }
 
+.type-spec__example > div {
+  @include breakpoint('md') {
+    padding-right: 25%;
+  }
+}
+
 // Spec details
 .type-spec__details {
   padding: $spacing-md;
@@ -28,9 +34,11 @@
   margin: $spacing-xs 0 0 0;
 }
 
-.type-spec__details .bx--snippet--inline code {
+.type-spec__details .bx--snippet {
   background: $ibm-colors__gray--20;
+}
+
+.type-spec__details .bx--snippet--inline code {
   @include type-style('code-01');
-  padding: 0.2rem 0.5rem;
-  border-radius: 3px;
+  color: $text-01;
 }
