@@ -27,7 +27,7 @@ If a `min date` is set on the calendar, then any text appearing before that date
 
 ![Example of a date picker](images/date-picker-style-1.png)
 
-_Date picker example using both $field-02 (top) and $field-01 (bottom)_
+_Date picker example_
 
 ### States
 
@@ -115,6 +115,6 @@ There are two types of time pickers; a 12-hour and 24-hour time picker. The 12-h
 | `.bx--select-input`             | padding-left                | 16 / 1   | $spacing-md   |
 
 
-![Structure for a time picker](images/date-picker-style-1.png)  
+![Structure for a time picker](images/time-picker-style-1.png)  
 
 _Structure and spacing for a time picker | px / rem_
