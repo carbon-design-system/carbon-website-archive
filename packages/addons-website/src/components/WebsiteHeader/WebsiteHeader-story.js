@@ -18,7 +18,7 @@ import {
   HeaderGlobalBar,
   HeaderGlobalAction,
 } from 'carbon-components-react/lib/components/UIShell';
-import { Close20 } from '@carbon/icons-react';
+import { Close20, AppSwitcher20 } from '@carbon/icons-react';
 import WebsiteSwitcher from '../WebsiteSwitcher/WebsiteSwitcher';
 
 storiesOf('Website Header', module)
@@ -26,9 +26,10 @@ storiesOf('Website Header', module)
     'Website Header',
     () => (
       <>
-        <Header className="bx--header--website">
+        <Header aria-label="Header" className="bx--header--website">
           <SkipToContent />
           <HeaderMenuButton
+            className="bx--header__action--menu"
             aria-label="Open menu"
             onClick={action('Menu clicked')}
           />
@@ -39,21 +40,11 @@ storiesOf('Website Header', module)
           <HeaderGlobalBar>
             <HeaderGlobalAction
               className="bx--header__action--switcher"
-              aria-label="Switch"
-            >
-              <Close20 />
+              aria-label="Switch">
+              <AppSwitcher20 />
             </HeaderGlobalAction>
           </HeaderGlobalBar>
         </Header>
-
-        <WebsiteSwitcher
-          isSwitcherOpen
-          links={[
-            { href: 'https://www.ibm.com/design/language/', linkText: 'IBM Design Language' },
-            { href: 'https://www.ibm.com/standards/web/', linkText: 'IBM Digital Design' },
-            { href: 'https://www.ibm.com/design/', linkText: 'IBM Design' }
-          ]}>
-        </WebsiteSwitcher>
       </>
     ),
     {
@@ -66,9 +57,10 @@ storiesOf('Website Header', module)
     'Website Header with Nav',
     () => (
       <>
-        <Header className="bx--header--website">
+        <Header aria-label="Header" className="bx--header--website">
           <SkipToContent />
           <HeaderMenuButton
+            className="bx--header__action--menu"
             aria-label="Open menu"
             onClick={action('Menu clicked')}
           />
@@ -87,12 +79,13 @@ storiesOf('Website Header', module)
             <HeaderMenuItem href="#">Docs</HeaderMenuItem>
             <HeaderMenuItem href="#">Support</HeaderMenuItem>
           </HeaderNavigation>
-          <HeaderGlobalAction
+          <HeaderGlobalBar>
+            <HeaderGlobalAction
               className="bx--header__action--switcher"
-              aria-label="Switch"
-            >
-              <Close20 />
-          </HeaderGlobalAction>
+              aria-label="Switch">
+              <AppSwitcher20 />
+            </HeaderGlobalAction>
+          </HeaderGlobalBar>
         </Header>
         <SideNav
           aria-label="Side navigation"
@@ -112,20 +105,56 @@ storiesOf('Website Header', module)
             <SideNavLink href="#">Support</SideNavLink>
           </SideNavItems>
         </SideNav>
-
-        <WebsiteSwitcher
-          isSwitcherOpen
-          links={[
-            { href: 'https://www.ibm.com/design/language/', linkText: 'IBM Design Language' },
-            { href: 'https://www.ibm.com/standards/web/', linkText: 'IBM Digital Design' },
-            { href: 'https://www.ibm.com/design/', linkText: 'IBM Design' }
-          ]}>
-        </WebsiteSwitcher>
       </>
     ),
     {
       info: {
         text: 'Website Header with nav',
+      },
+    }
+  )
+  .add(
+    'Website Header with Switcher',
+    () => (
+      <>
+        <Header aria-label="Header" className="bx--header--website">
+          <SkipToContent />
+          <HeaderMenuButton
+            className="bx--header__action--menu"
+            aria-label="Open menu"
+            onClick={action('Menu clicked')}
+          />
+          <HeaderName href="#" prefix="IBM">
+            Website
+          </HeaderName>
+          <HeaderGlobalBar>
+            <HeaderGlobalAction
+              className="bx--header__action--switcher"
+              aria-label="Switch">
+              <AppSwitcher20 />
+            </HeaderGlobalAction>
+          </HeaderGlobalBar>
+        </Header>
+
+        <WebsiteSwitcher
+          isSwitcherOpen
+          links={[
+            {
+              href: 'https://www.ibm.com/design/language/',
+              linkText: 'IBM Design Language',
+            },
+            {
+              href: 'https://www.ibm.com/standards/web/',
+              linkText: 'IBM Digital Design',
+            },
+            { href: 'https://www.ibm.com/design/', linkText: 'IBM Design' },
+          ]}
+        />
+      </>
+    ),
+    {
+      info: {
+        text: 'Website Header with Switcher',
       },
     }
   );
