@@ -8,6 +8,10 @@
   }
 }
 
+.#{$prefix}--side-nav--website {
+  z-index: 16000;
+}
+
 .#{$prefix}--side-nav--website--with-header-nav.#{$prefix}--side-nav.#{$prefix}--side-nav--open {
   width: 16rem;
 }
@@ -61,7 +65,7 @@
   display: none;
 }
 
-.#{$prefix}--side-nav.side-nav
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website
   .#{$prefix}--side-nav__menu[role='menu']
   a.#{$prefix}--side-nav__link[role='menuitem'] {
   padding-left: 1rem;

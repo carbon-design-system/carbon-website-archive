@@ -25,12 +25,6 @@ body {
 //---------------------------------------
 // Header styles
 //---------------------------------------
-.bx--header {
-  z-index: 9999;
-  background-color: $ui-05;
-  border-bottom: 1px solid $ibm-colors__gray--80;
-}
-
 .bx--header__menu-trigger {
   @include breakpoint('lg') {
     display: none;
@@ -116,6 +110,7 @@ body {
 
   @include breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
+    max-width: calc(75% - 0.5rem);
   }
 }
 
@@ -127,6 +122,7 @@ body {
 
   @include breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
+    max-width: calc(75% - 0.5rem);
   }
 }
 

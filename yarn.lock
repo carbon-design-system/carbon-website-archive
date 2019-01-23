@@ -4663,14 +4663,14 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30000929"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000929.tgz#f18c557b9cbf33e2787134c915b82e3ed3331b87"
-  integrity sha512-bap0KDH7KJ2Hc4zWb1bBJwsyl+76jOukW6TH8uxaVI7BrzF2CnibTj53ro7VZAHB+ucMlIGBC1rhG2BQY0ekeg==
+  version "1.0.30000928"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000928.tgz#2e83d2b14276442da239511615eb7c62fed0cfa7"
+  integrity sha512-nAoeTspAEzLjqGSeibzM09WojORi08faeOOI5GBmFWC3/brydovb9lYJWM+p48rEQsdevfpufK58gPiDtwOWKw==
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000792, caniuse-lite@^1.0.30000805, caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30000864, caniuse-lite@^1.0.30000928:
-  version "1.0.30000929"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000929.tgz#7b391b781a9c3097ecc39ea053301aea8ea16317"
-  integrity sha512-n2w1gPQSsYyorSVYqPMqbSaz1w7o9ZC8VhOEGI9T5MfGDzp7sbopQxG6GaQmYsaq13Xfx/mkxJUWC1Dz3oZfzw==
+  version "1.0.30000928"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000928.tgz#805e828dc72b06498e3683a32e61c7507fd67b88"
+  integrity sha512-aSpMWRXL6ZXNnzm8hgE4QDLibG5pVJ2Ujzsuj3icazlIkxXkPXtL+BWnMx6FBkWmkZgBHGUxPZQvrbRw2ZTxhg==
 
 capture-exit@^1.2.0:
   version "1.2.0"
@@ -4701,9 +4701,9 @@ carbon-components-react@6.70.0:
     window-or-global "^1.0.1"
 
 carbon-components@^9.62.6:
-  version "9.66.5"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.66.5.tgz#1ae0fee9042c50e71997e98c1738afeea6f5c9ec"
-  integrity sha512-Iv0MN5I2udgZvYmu7yvWIoJs64HgBo1iLQj6b/FOvoLFzo+H/IliDmPlozu2hQEY5KMby2s7QREM/Zzs7kM9kQ==
+  version "9.66.3"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.66.3.tgz#cb46c1aa5362db179221a1c72fc9bb4ce973d52e"
+  integrity sha512-z2nhG0vZIk73IsTpyKyT/fZcugvphGHBZBsNbnrD3ZafdCA27g4LeJ9BbAiY8lidK2/UZekh7d1fUDJz6iOilg==
   dependencies:
     carbon-icons "^7.0.7"
     flatpickr "4.5.2"

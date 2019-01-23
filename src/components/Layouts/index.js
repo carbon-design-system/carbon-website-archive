@@ -14,8 +14,8 @@ import {
   HeaderGlobalBar,
   HeaderGlobalAction,
 } from 'carbon-components-react/lib/components/UIShell';
-import { AppSwitcher20, Menu32 } from '@carbon/icons-react';
-import { WebsiteFooter } from '@carbon/addons-website';
+import { AppSwitcher20, Menu32, Close20 } from '@carbon/icons-react';
+import { WebsiteFooter, WebsiteSwitcher } from '@carbon/addons-website';
 
 import timestamp from 'raw-loader!../../../build-timestamp';
 import '../../styles/index.scss';
@@ -27,31 +27,40 @@ class Layout extends React.Component {
   };
 
   state = {
-    isOpen: false,
-    isFinal: false,
+    isLeftNavOpen: false,
+    isLeftNavFinal: false,
+    isSwitcherOpen: false,
+    isSwitcherFinal: false,
   };
 
   componentDidMount() {
     this.checkWidth();
   }
 
-  onToggleBtnClick = () => {
-    if (this.state.isOpen) {
+  onToggleBtnClick = (
+    clickedPanel,
+    finalClickedPanel,
+    closePanel,
+    finalClosePanel
+  ) => {
+    if (this.state[clickedPanel]) {
       this.setState({
-        isOpen: false,
+        [clickedPanel]: false,
       });
       setTimeout(() => {
         this.setState({
-          isFinal: true,
+          [finalClickedPanel]: true,
         });
       }, 5);
     } else {
       this.setState({
-        isFinal: false,
+        [finalClickedPanel]: false,
+        [finalClosePanel]: true,
       });
       setTimeout(() => {
         this.setState({
-          isOpen: true,
+          [clickedPanel]: true,
+          [closePanel]: false,
         });
       }, 5);
     }
@@ -70,14 +79,14 @@ class Layout extends React.Component {
     const isSmallerScreen = window.innerWidth < 1056 || screen.width < 1056;
     if (!isTarget && isSmallerScreen) {
       this.setState({
-        isOpen: false,
+        isLeftNavOpen: false,
       });
     }
   };
 
   clickToClose = () => {
     this.setState({
-      isOpen: false,
+      isLeftNavOpen: false,
     });
   };
 
@@ -87,14 +96,14 @@ class Layout extends React.Component {
 
       if (width < 1056) {
         this.setState({
-          isOpen: false,
+          isLeftNavOpen: false,
         });
       }
 
       document.addEventListener('keydown', evt => {
-        if (evt.which === 27 && this.state.isOpen) {
+        if (evt.which === 27 && this.state.isLeftNavOpen) {
           this.setState({
-            isOpen: false,
+            isLeftNavOpen: false,
           });
         }
       });
@@ -156,11 +165,19 @@ class Layout extends React.Component {
               ]}>
               <html lang="en" />
             </Helmet>
-            <Header aria-label="Header">
+            <Header aria-label="Header" className="bx--header--website">
               <SkipToContent />
               <HeaderMenuButton
+                className="bx--header__action--menu"
                 aria-label="Open menu"
-                onClick={this.onToggleBtnClick}
+                onClick={() =>
+                  this.onToggleBtnClick(
+                    'isLeftNavOpen',
+                    'isLeftNavFinal',
+                    'isSwitcherOpen',
+                    'isSwitcherFinal'
+                  )
+                }
                 isActive={isOpen}
               />
               {isInternal ? (
@@ -173,18 +190,43 @@ class Layout extends React.Component {
                 </HeaderName>
               )}
 
-              {/*<HeaderGlobalBar>
-                {isInternal ? null : <GlobalSearch />}
-                {/*<HeaderGlobalAction
-                  aria-label="Switch">
-                  <AppSwitcher20 />
+              <HeaderGlobalBar>
+                {/* {isInternal ? null : <GlobalSearch />} */}
+                <HeaderGlobalAction
+                  className="bx--header__action--switcher"
+                  aria-label="Switch"
+                  onClick={() =>
+                    this.onToggleBtnClick(
+                      'isSwitcherOpen',
+                      'isSwitcherFinal',
+                      'isLeftNavOpen',
+                      'isLeftNavFinal'
+                    )
+                  }>
+                  {this.state.isSwitcherOpen ? <Close20 /> : <AppSwitcher20 />}
                 </HeaderGlobalAction>
               </HeaderGlobalBar>
-              */}
             </Header>
+
+            <WebsiteSwitcher
+              isSwitcherFinal={this.state.isSwitcherFinal}
+              isSwitcherOpen={this.state.isSwitcherOpen}
+              links={[
+                {
+                  href: 'https://www.ibm.com/design/language/',
+                  linkText: 'IBM Design Language',
+                },
+                {
+                  href: 'https://www.ibm.com/standards/web/',
+                  linkText: 'IBM Digital Design',
+                },
+                { href: 'https://www.ibm.com/design/', linkText: 'IBM Design' },
+              ]}
+            />
+
             <LeftNav
-              isFinal={this.state.isFinal}
-              isOpen={this.state.isOpen}
+              isLeftNavFinal={this.state.isLeftNavFinal}
+              isLeftNavOpen={this.state.isLeftNavOpen}
               location={this.props.location}
               clickToClose={this.clickToClose}
             />
