@@ -40,7 +40,7 @@ Duo motion recognizes different moments in user's experience, and offers two mod
 <website-tabs>
 <tab label="Curves"><div>
 
-lorem ipsum dolor sit amet
+<img src="images/Style-curves.svg" alt="Curve graphs representing differences between Productive and Expressive animation curves" />
 
 </div></tab>
 <tab label="Abstract"><div>
@@ -67,13 +67,19 @@ Productive and Expression are both essential to an interface. Reserve Expressive
 
 Our [Components](#) have Duo motion build in. Use this guidance to customize motion, combine and coordinate motion through out experiences. 
 
-[ IMAGE ]
-- caption: 
+[ VIDEO ]
+caption:
 Productive moments are labeled blue, and expressive moments are labeled magenta.
 
 ## Easing
 
 Strictly linear movement appears unnatural to the human eye. Elements on the screen speed up quickly and slow down smoothly, obeying the physics of a light-weight material. "Easing curves" describe the precise amount of accelerations in motion. We commonly use one of these three types of easing.
+
+<grid-wrapper col_lg="12" flex="true">
+    <do-dont-example correct=true label="Active Voice">
+        <img src="images/example-FPO.png" alt="Easing oninon skin example">   
+    </do-dont-example>
+</grid-wrapper>
 
 [ DO ]
 
@@ -88,7 +94,7 @@ Use `standard-easing` when an element is visible from the beginning to  end of a
 <website-tabs>
 <tab label="Curves"><div>
 
-lorem ipsum dolor sit amet
+<img src="images/Style-curves.svg" alt="Curve graphs representing differences between Productive and Expressive animation curves" />
 
 </div></tab>
 <tab label="Examples"><div>
@@ -110,7 +116,7 @@ Use `entrance-ease` when adding elements to the view such as a modal or toaster 
 <website-tabs>
 <tab label="Curves"><div>
 
-lorem ipsum dolor sit amet
+<img src="images/Style-curves.svg" alt="Curve graphs representing differences between Productive and Expressive animation curves" />
 
 </div></tab>
 <tab label="Examples"><div>
@@ -132,7 +138,7 @@ Use `exit-easing` when removing elements from view, such as closing a modal or t
 <website-tabs>
 <tab label="Curves"><div>
 
-lorem ipsum dolor sit amet
+<img src="images/Style-curves.svg" alt="Curve graphs representing differences between Productive and Expressive animation curves" />
 
 </div></tab>
 <tab label="Examples"><div>
