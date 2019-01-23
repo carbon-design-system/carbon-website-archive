@@ -15,12 +15,12 @@ _Users_ are members of the community who are using Carbon guidelines, components
 _Contributors_ are members of the community who contribute to Carbon in a material way. Anyone can be a contributor. In addition to participating as a user, they also can contribute by:
 
 - Supporting new users and answering questions on Slack (IBM internal)
-- Reporting bugs or missing features by creating GitHub issues
-- Fixing bugs, adding features, and improving documentation by submitting GitHub pull requests
+- Reporting bugs or missing features through GitHub issue creation and participation
+- Fixing bugs, adding features, and improving documentation through GitHub pull request creation and participation
 
 ### Maintainers
 
-Maintainers are members of the community who are committed to the success of individual Carbon projects. Each project has a team of maintainers, and each team has a lead. In addition to their participation as a contributor, maintainers have privileges to:
+_Maintainers_ are members of the community who are committed to the success of individual Carbon projects. Each project has a team of maintainers, and each team has a lead. In addition to their participation as a contributor, maintainers have privileges to:
 
 - Label, close, and manage GitHub issues.
 - Close and merge GitHub pull requests.
@@ -43,6 +43,7 @@ Project teams are narrowly focused on specific areas of interest. Although not r
 
 Each project team has a lead maintainer, responsible for:
 
+- Participation in the [technical steering committee](#technical-steering-committee)
 - Deciding on the initial membership of project maintainers (in consultation with the core team)
 - Determining and publishing project team policies and mechanics, including the way maintainers join and leave the team (which should be based on team consensus)
 - Communicating core vision to the team
@@ -73,7 +74,7 @@ The way that project teams communicate internally and externally is left to each
 - [Carbon Components Vanilla](https://github.com/IBM/carbon-components)
 - [Carbon Components React](carbon-components-react)
 - [Carbon Components Angular](https://github.com/IBM/carbon-components-angular)
-- [Carbon Components Vue](https://github.com/carbon-design-system/carbon-components-vue)
+- [Carbon Components Vue (Experimental)](https://github.com/carbon-design-system/carbon-components-vue)
 
 **Website** - online presence
 
