@@ -5,6 +5,11 @@
 .page-content .bx--snippet--single {
   background: $ui-05;
   color: $inverse-01;
+  max-width: 100%;
+}
+
+.page-content .code-snippet .bx--snippet--single {
+  max-width: 47.5rem;
 }
 
 .page-content .bx--snippet--multi {
@@ -12,8 +17,17 @@
   color: $inverse-01;
 }
 
+.page-content .bx--snippet--multi .bx--snippet-container {
+  overflow: auto;
+}
+
 .page-content .bx--snippet-button {
   background: $ui-05;
+  transition: background $transition--base;
+
+  &:hover {
+    background: #353535;
+  }
 }
 
 .page-content .bx--snippet__icon {
@@ -44,6 +58,10 @@ pre[class*='language-'] {
   background: $ui-05;
   padding: 0 !important;
   margin: 0 !important;
+}
+
+.token {
+  white-space: nowrap;
 }
 
 .token.comment,
