@@ -32,7 +32,7 @@
     @include breakpoint('sm') {
       content: '';
       background: $ibm-colors__gray--80;
-      width: 100%;
+      width: calc(100% - 2rem);
       height: 1px;
       display: block;
       position: absolute;
