@@ -13,11 +13,8 @@ const WebsiteSwitcher = props => {
   });
 
   return (
-    <div className={classNames}>
-      <ul
-        className={`${prefix}--website-switcher__list`}
-        role="navigation"
-        aria-label="website switcher">
+    <nav className={classNames} role="navigation" aria-label="website switcher">
+      <ul className={`${prefix}--website-switcher__list`}>
         {links &&
           links.map((link, i) => {
             return (
@@ -32,7 +29,7 @@ const WebsiteSwitcher = props => {
             );
           })}
       </ul>
-    </div>
+    </nav>
   );
 };
 
