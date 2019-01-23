@@ -66,6 +66,10 @@ pre[class*='language-'] {
   white-space: nowrap;
 }
 
+.token.comment {
+  color: #BEBEBE !important;
+}
+
 .token.tag {
   color: #6EA6FF !important;
 }
