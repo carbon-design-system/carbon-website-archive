@@ -190,7 +190,6 @@
   .page-ul {
     margin-bottom: 2.25rem;
     margin-top: rem(72px);
-    position: relative;
   }
 
   .page-ul > li {
@@ -198,17 +197,22 @@
     list-style: none;
     cursor: pointer;
     padding-bottom: $spacing-xs;
+    position: relative;
 
     &:before {
       content: '\21B3'; //"↳"
+      transition: color $transition--base;
       position: absolute;
       left: -1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
       cursor: pointer;
     }
 
     a {
       @include type-style('heading-03');
-      color: $ibm-colors__gray-90;
+      transition: color $transition--base;
+      color: $ibm-colors__gray--90;
       text-decoration: none;
     }
 
@@ -224,9 +228,22 @@
 .anchor-links--small .page-ul {
   margin-top: 2.25rem;
 }
+
+.anchor-links--small .page-ul > li {
+  margin-left: -1.5rem;
+  padding: 0;
+
+  &::before {
+    left: 0;
+  }
+}
+
 .anchor-links--small a,
 .anchor-links--small .page-ul > li a {
   @include type-style('body-long-02');
+  display: inline-block;
+  width: 100%;
+  padding: rem(4px) 0 rem(4px) rem(32px);
 }
 
 //----------------------------

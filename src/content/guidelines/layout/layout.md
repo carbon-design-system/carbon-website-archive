@@ -14,7 +14,7 @@ title: Layout
 </clickable-tile>
 </grid-wrapper>
 
-<anchor-links>
+<anchor-links small="true">
 <ul>
     <li><a href="#miin-unit">Mini Unit</a></li>
     <li><a href="#2x-grid-fundamentals">2x Grid Fundamentals</a></li>
