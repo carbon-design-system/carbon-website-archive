@@ -5,22 +5,23 @@ import { settings } from 'carbon-components';
 
 const { prefix } = settings;
 
-const WebsiteSwitcher = (props) => {
+const WebsiteSwitcher = props => {
   const { isSwitcherOpen, isSwitcherFinal, links } = props;
 
   const classNames = classnames(`${prefix}--website-switcher`, {
-    [`${prefix}--website-switcher--expanded`]: isSwitcherOpen
+    [`${prefix}--website-switcher--expanded`]: isSwitcherOpen,
   });
 
   return (
     <div className={classNames}>
-      <ul className={`${prefix}--website-switcher__list`}>
+      <ul
+        className={`${prefix}--website-switcher__list`}
+        role="navigation"
+        aria-label="website switcher">
         {links &&
           links.map((link, i) => {
             return (
-              <li 
-                key={i}
-                className={`${prefix}--website-switcher-list__item`}>
+              <li key={i} className={`${prefix}--website-switcher-list__item`}>
                 <a
                   className={`${prefix}--website-switcher-list__item-link`}
                   href={link.href}
