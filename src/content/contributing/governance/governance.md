@@ -22,9 +22,9 @@ _Contributors_ are members of the community who contribute to Carbon in a materi
 
 _Maintainers_ are members of the community who are committed to the success of individual Carbon projects. Each project has a team of maintainers, and each team has a lead. In addition to their participation as a contributor, maintainers have privileges to:
 
-- Label, close, and manage GitHub issues.
-- Close and merge GitHub pull requests.
-- Nominate and vote on new maintainers.
+- Label, close, and manage GitHub issues
+- Close and merge GitHub pull requests
+- Nominate and vote on new maintainers
 
 ## Teams
 
@@ -43,7 +43,7 @@ Project teams are narrowly focused on specific areas of interest. Although not r
 
 Each project team has a lead maintainer, responsible for:
 
-- Participation in the [technical steering committee](#technical-steering-committee)
+- Participating in the [technical steering committee](#technical-steering-committee)
 - Deciding on the initial membership of project maintainers (in consultation with the core team)
 - Determining and publishing project team policies and mechanics, including the way maintainers join and leave the team (which should be based on team consensus)
 - Communicating core vision to the team
@@ -116,7 +116,7 @@ In some cases, though, consensus cannot be reached. These cases tend to split in
 In either case, an alternative form of decision-making is needed.
 
 - For the "trivial" case, the project lead will make an executive decision or defer the decision to another maintainer on the team.
-- For the "deep" case, the project lead is empowered to make a final decision, but should consult with the rest of the core team before doing so.
+- For the "deep" case, the project lead is empowered to make a final decision, but should consult with the core team before doing so.
 
 ## Contribution process
 
