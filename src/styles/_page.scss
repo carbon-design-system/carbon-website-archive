@@ -55,6 +55,18 @@ body {
     }
   }
 
+  > div > div:first-child p {
+    padding-bottom: 0;
+  }
+
+  > div > div:nth-child(2) h2:before {
+    padding-bottom: rem(80px);
+  }
+
+  > div > div:nth-child(2) h3 {
+    margin-top: rem(48px);
+  }
+
   // All links on Markdown pages but not inside component examples
   & > div > * > a,
   .page-table td a,
@@ -85,6 +97,14 @@ body {
     background: $ui-03;
     border: 0px transparent;
   }
+
+  img {
+    margin-bottom: rem(24px);
+  }
+
+  img + img {
+    margin-bottom: 0;
+  }
 }
 
 .bx--platform-header {
@@ -106,7 +126,7 @@ body {
 .gatsby-resp-image-wrapper {
   background: $ui-02;
   margin-left: 0 !important;
-  margin-bottom: 4rem;
+  margin-bottom: rem(24px);
 
   @include breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
@@ -118,7 +138,7 @@ body {
 .page-content > div > img[src*='svg'],
 .page-content > div > img[src*='gif'] {
   background: $ui-02;
-  margin-bottom: 4rem;
+  // margin-bottom: 4rem;
 
   @include breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
@@ -154,7 +174,11 @@ img[src*='gif'] {
 
     &:first-child {
       padding-top: $spacing-xs;
-      margin-top: -4rem; //needed because of default image spacing
+      // margin-top: -4rem; //needed because of default image spacing
     }
   }
+}
+
+.page-content iframe {
+  margin-bottom: rem(24px);
 }

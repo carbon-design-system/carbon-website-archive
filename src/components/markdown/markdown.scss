@@ -38,6 +38,10 @@
   position: relative;
 }
 
+.page-h2#articles:before {
+  padding-bottom: rem(80px);
+}
+
 //----------------------------
 // h3
 //----------------------------
@@ -49,6 +53,14 @@
   margin-top: rem(24px);
   margin-bottom: $spacing-md;
   position: relative;
+}
+
+.component-docs h3 {
+  margin-top: rem(48px);
+}
+
+.page-h3#sizing {
+  margin-top: 1.125rem;
 }
 
 //----------------------------
@@ -64,6 +76,10 @@
   position: relative;
 }
 
+.component-docs h4 {
+  margin-top: rem(48px);
+}
+
 // Targets heading elements when they are the first element on a page to remove top margin
 .page-content > div > .ibm--row:first-child {
   .page-h4,
@@ -73,6 +89,10 @@
   .page-h2,
   .component-docs h2 {
     margin-top: 0;
+  }
+
+  .page-h2:before {
+    padding-bottom: 3rem;
   }
 }
 
@@ -208,6 +228,10 @@
   margin-top: 0;
 }
 
+.page-content > div:first-child > .anchor-links:first-child .page-ul {
+  margin-bottom: 0;
+}
+
 .anchor-links {
   .page-ul {
     width: auto;
@@ -246,7 +270,8 @@
 
       &:before {
         content: '\21B3'; //"↳"
-        font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial, sans-serif;
+        font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
+          sans-serif;
         color: $ibm-colors__gray-90;
         transition: color $transition--base;
         padding-right: rem(16px);
@@ -257,7 +282,7 @@
 }
 
 .anchor-links--small .page-ul {
-  margin-top: 2.25rem;
+  margin-top: rem(56px);
 }
 
 .anchor-links--small a,
@@ -322,4 +347,20 @@ iframe.embedVideoIframe {
 //----------------------------
 hr {
   display: none;
+}
+
+//----------------------------
+// Tiles
+//----------------------------
+
+.page-content > div > .tile--resource {
+  margin-bottom: 0;
+}
+
+//----------------------------
+// Table
+//----------------------------
+
+.component-docs p + table {
+  margin-top: 0;
 }
