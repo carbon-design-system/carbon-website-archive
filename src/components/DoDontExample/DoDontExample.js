@@ -35,15 +35,16 @@ export default class DoDontExample extends React.Component {
   };
 
   render() {
-    const {
-      children,
-      label,
-      description,
-      text,
-      correct,
-      dark,
-      full_width,
-    } = this.props;
+    const { children, label, description, text, dark, full_width } = this.props;
+
+    let correct = this.props.correct;
+
+    // our gatsby setup converts many values to strings. cleanse:
+    if (correct === 'true') {
+      correct = true;
+    } else if (correct === 'false') {
+      correct = false;
+    }
 
     const wrapperClassNames = classnames({
       example: true,

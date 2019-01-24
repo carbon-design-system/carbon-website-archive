@@ -76,15 +76,15 @@ Productive moments are labeled blue, and expressive moments are labeled magenta.
 Strictly linear movement appears unnatural to the human eye. Elements on the screen speed up quickly and slow down smoothly, obeying the physics of a light-weight material. "Easing curves" describe the precise amount of accelerations in motion. We commonly use one of these three types of easing.
 
 <grid-wrapper col_lg="12">
-    <do-dont-example full_width="true" correct=true label="Active Voice">
+    <do-dont-example full_width="true" correct=true label="Lorem Ipsum">
         <img src="images/example-FPO.png" alt="Easing oninon skin example">   
     </do-dont-example>
 </grid-wrapper>
 
 Avoid easing curves that are unnatural, distracting, or decorative should be avoided. Duo motion is essential and efficient. We guide the users to value as quickly as possible. 
 
-<grid-wrapper col_lg="12" true="false">
-    <do-dont-example correct=true label="Active Voice">
+<grid-wrapper col_lg="12">
+    <do-dont-example full_width="true" correct=false label="Lorem Ipsum">
         <img src="images/example-FPO.png" alt="Easing oninon skin example">   
     </do-dont-example>
 </grid-wrapper>
@@ -196,23 +196,37 @@ Duo Components has dynamic motion build in. When creating custome motion, use th
 
 Elements of the Duo interface dance on the Grid. Motion paths trace lines along the grid which never run diagonal. 
 
-[ DO ]
-caption: 
-When expanding or moving elements across the screen, stagger the timing of horizontal and vertical animations to create a path with a rounded corner.
+<grid-wrapper col_lg="12">
+    <do-dont-example full_width="true" correct=true label="When expanding or moving elements across the screen, stagger the timing of horizontal and vertical animations to create a path with a rounded corner.">
+        <img src="images/example-FPO.png" alt="Easing oninon skin example">   
+    </do-dont-example>
+</grid-wrapper>
 
-[ DONT ]
-caption:
-Not staggering horizontal and vertical animations create a straight diagonal path. It breaks the grid and is harsh to the eye.
 
-[ DO/DONT ]
-captions:
-(DO) When removing an item from the grid, thumbnails on the edge existing and re-entering container create a smooth transition.
-(DONT) Thumbnails moving on diagonal paths feels sporadic and harsh.
+<grid-wrapper col_lg="12">
+    <do-dont-example full_width="true" correct=false label="Not staggering horizontal and vertical animations create a straight diagonal path. It breaks the grid and is harsh to the eye.">
+        <img src="images/example-FPO.png" alt="Easing oninon skin example">   
+    </do-dont-example>
+</grid-wrapper>
 
-[ DO/DONT ]
-captions:
-(DO) When sorting or shuffling items on the grid, always using rounded corner paths to visually organize the movements.
-(DONT) Criss cross sorting appears disorganized. Avoid this motion path. 
+
+<grid-wrapper col_lg="8" flex=true>
+    <do-dont-example correct=true label="When removing an item from the grid, thumbnails on the edge existing and re-entering container create a smooth transition.">
+        <img src="images/example-FPO.png" alt="Easing oninon skin example">   
+    </do-dont-example>
+    <do-dont-example correct=false label="Thumbnails moving on diagonal paths feels sporadic and harsh.">
+        <img src="images/example-FPO.png" alt="Easing oninon skin example">   
+    </do-dont-example>
+</grid-wrapper>
+
+<grid-wrapper col_lg="8" flex=true>
+    <do-dont-example correct=true label="When sorting or shuffling items on the grid, always using rounded corner paths to visually organize the movements.">
+        <img src="images/example-FPO.png" alt="Easing oninon skin example">   
+    </do-dont-example>
+    <do-dont-example correct=false label="Criss cross sorting appears disorganized. Avoid this motion path.">
+        <img src="images/example-FPO.png" alt="Easing oninon skin example">   
+    </do-dont-example>
+</grid-wrapper>
 
 ## Choreography
 
@@ -238,10 +252,14 @@ When the new content panel is on the same layer, motion is “expanding”, reve
 
 > Effective use of inconsistency in motion highlights a difference in meaning or intent behind actions with similar visual appearance.
 
-[ DO/DONT ]
-captions:
-(DO) Use motion to reinforce meaning. Affirmative action here triggers a different exit motion for the modal than negation.
-(DONT) Criss cross sorting appears disorganized. Avoid this motion path. 
+<grid-wrapper col_lg="8" flex=true>
+    <do-dont-example correct=true label="Use motion to reinforce meaning. Affirmative action here triggers a different exit motion for the modal than negation.">
+        <img src="images/example-FPO.png" alt="Easing oninon skin example">   
+    </do-dont-example>
+    <do-dont-example correct=false label="Criss cross sorting appears disorganized. Avoid this motion path.">
+        <img src="images/example-FPO.png" alt="Easing oninon skin example">   
+    </do-dont-example>
+</grid-wrapper>
 
 ### Continuity
 
@@ -251,9 +269,11 @@ Motion can help establishing a sense of continuity between screens and experienc
 caption:
 Shared elements can effectively guide users through a multi-layered information architecture.
 
-[ DONT ]
-caption:
-Continuous elements are for guidance and should not distract. Always finish a sequence with the important content on page.
+<grid-wrapper col_lg="8" flex=true>
+    <do-dont-example correct=false label="Continuous elements are for guidance and should not distract. Always finish a sequence with the important content on page.">
+        <img src="images/example-FPO.png" alt="Easing oninon skin example">   
+    </do-dont-example>
+</grid-wrapper>
 
 ### Sequence & Stagger
 
