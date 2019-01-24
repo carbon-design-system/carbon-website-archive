@@ -229,6 +229,10 @@ This will render the following group of clickable tiles
 
 #### Example of the Do/Don't components:
 
+- can include property `full=true` to use the example as a full-width component.
+    - e.g. `<do-dont-example full=true>`
+    - this option will cause the element to fill the full width of its containing wrappper. adjust the column count of the enclosing `<grid-wrapper>` to expand the maxium width.
+
 ##### With text examples:
 
 ```
