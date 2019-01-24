@@ -117,10 +117,10 @@ p.example__text {
   padding: 8px 0 0 0;
 }
 
-.example__title {
+p.example__title {
   @include type-style('body-short-01');
   margin: 0;
-  padding: 0 !important;
+  padding: 0;
 }
 
 p.example__description {
