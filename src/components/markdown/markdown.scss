@@ -157,20 +157,20 @@
 .page-ul,
 .page-ol {
   @include typescale('epsilon');
-  margin: 0 0 $spacing-lg $spacing-lg;
-  line-height: 1.75;
+  margin: rem(24px) 0 $spacing-lg $spacing-lg;
+  line-height: 1.5;
   position: relative;
 }
 
 .page-ul > li {
   font-weight: 400;
-  padding-left: 0.25rem;
+  padding-left: 0;
   list-style-type: none;
 
   &:before {
     content: '\2013';
     position: absolute;
-    left: -1rem;
+    left: -1.4rem;
   }
 }
 
