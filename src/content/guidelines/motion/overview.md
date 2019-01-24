@@ -75,17 +75,19 @@ Productive moments are labeled blue, and expressive moments are labeled magenta.
 
 Strictly linear movement appears unnatural to the human eye. Elements on the screen speed up quickly and slow down smoothly, obeying the physics of a light-weight material. "Easing curves" describe the precise amount of accelerations in motion. We commonly use one of these three types of easing.
 
-<grid-wrapper col_lg="12" flex="true">
-    <do-dont-example correct=true label="Active Voice">
+<grid-wrapper col_lg="12">
+    <do-dont-example full_width="true" correct=true label="Active Voice">
         <img src="images/example-FPO.png" alt="Easing oninon skin example">   
     </do-dont-example>
 </grid-wrapper>
 
-[ DO ]
-
 Avoid easing curves that are unnatural, distracting, or decorative should be avoided. Duo motion is essential and efficient. We guide the users to value as quickly as possible. 
 
-[ DONT ]
+<grid-wrapper col_lg="12" true="false">
+    <do-dont-example correct=true label="Active Voice">
+        <img src="images/example-FPO.png" alt="Easing oninon skin example">   
+    </do-dont-example>
+</grid-wrapper>
 
 ### Standard easing
 
