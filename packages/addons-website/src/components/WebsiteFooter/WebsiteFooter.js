@@ -23,6 +23,7 @@ const WebsiteFooter = ({ children, linksCol1, linksCol2, logoOffset }) => {
       <div className="ibm--grid">
         <div className="ibm--row">
           <nav
+            aria-label="Footer nav"
             className={`${prefix}--website-footer__nav ibm--col-lg-2 ibm--col-md-2 ibm--offset-lg-4`}>
             <ul>
               {linksCol1 &&
@@ -41,6 +42,7 @@ const WebsiteFooter = ({ children, linksCol1, linksCol2, logoOffset }) => {
             </ul>
           </nav>
           <nav
+            aria-label="Footer nav continued"
             className={`${prefix}--website-footer__nav ibm--col-lg-2 ibm--col-md-2`}>
             <ul>
               {linksCol2 &&
