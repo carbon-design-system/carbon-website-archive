@@ -19,7 +19,7 @@
 .type-spec__details {
   padding: $spacing-md;
   background: $ibm-colors__white;
-  border-left: 1px solid $ibm-colors__gray--20;
+  border-left: 1px solid $ibm-colors__gray-20;
   @include type-style('caption-01');
 
   h4 {
@@ -35,7 +35,7 @@
 }
 
 .type-spec__details .bx--snippet {
-  background: $ibm-colors__gray--20;
+  background: $ibm-colors__gray-20;
 }
 
 .type-spec__details .bx--snippet--inline code {
