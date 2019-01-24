@@ -97,7 +97,7 @@ a.#{$prefix}--header__menu-item[role='menuitem'][aria-current='page']:after {
 .#{$prefix}--header__menu-title[role='menuitem'][aria-expanded='true']
   + .#{$prefix}--header__menu {
   background: $ibm-colors__gray-90;
-  color: $ibm-colors__gray--10;
+  color: $ibm-colors__gray-10;
 }
 
 .#{$prefix}--header__menu .#{$prefix}--header__menu-item[role='menuitem'] {
