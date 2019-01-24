@@ -18,7 +18,7 @@
 
 1. Make sure your local branch is up-to-date by running `git pull upstream master`
 2. Make sure your git status is clean (will also be checked in our publish task)
-3. Make sure dependencies are up-to-date by doing `yarn clean &&`yarn install`
+3. Make sure dependencies are up-to-date by doing `yarn clean && yarn install`
 4. Run `yarn build` to build all package assets
 5. Run `./tasks/publish.sh` with the appropriate flags (see release steps below)
 
