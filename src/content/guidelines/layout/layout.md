@@ -5,17 +5,17 @@ title: Layout
 
 <anchor-links>
 <ul>
-    <li><a href="#miin-unit">Mini Unit</a></li>
-    <li><a href="#2x-grid-fundamentals">2x Grid Fundamentals</a></li>
-    <li><a href="#grid-behaviors">Grid Behaviors</a></li>
-    <li><a href="#grid-influencers">Grid Influencers</a></li>
-    <li><a href="#sizing-scale">Sizing Scale</a></li>
+    <li><a href="#miin-unit">Mini unit</a></li>
+    <li><a href="#2x-grid-fundamentals">2x grid fundamentals</a></li>
+    <li><a href="#grid-behaviors">Grid behaviors</a></li>
+    <li><a href="#grid-influencers">Grid influencers</a></li>
+    <li><a href="#sizing-scale">Sizing scale</a></li>
 </ul>
 </anchor-links>
 
 ## Get started
 
-The 2x Grid is the geometric foundation of all the visual elements of IBM Design, from typography to columns, boxes, icons, and illustrations. It provides structure and guidance to creative decision-making.
+The _2x grid_ is the geometric foundation of all the visual elements of IBM Design, from typography to columns, boxes, icons, and illustrations. It provides structure and guidance to creative decision-making.
 
 <grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
@@ -29,7 +29,7 @@ The 2x Grid is the geometric foundation of all the visual elements of IBM Design
 
 ## Mini Unit
 
-The basic unit of 2x Grid geometry is the 8-pixel square Mini Unit. Multiples of mini units compose the dimensions of columns, rows, boxes, along with their margins and padding. The Mini Unit adapts to your content while maintaining a consistent visual rhythm.
+The basic unit of 2x grid geometry is the 8-pixel square _Mini Unit_. Multiples of Mini Units compose the dimensions of columns, rows, boxes, along with their margins and padding. The Mini Unit adapts to your content while maintaining a consistent visual rhythm.
 
 `vimeo: https://vimeo.com/292608020`
 
@@ -37,13 +37,13 @@ At [breakpoint boundaries](#breakpoints), Mini Units divide the screen into a fi
 
 [Margin](#margins) and [padding](#padding) are always applied in fixed Mini Unit multiples. Boxes are sized by applying a [sizing scale](#sizing-scale) based on either fixed Mini Units or fluid column widths, along with a core set of [aspect ratios](#aspect-ratio).
 
-## 2x Grid Fundamentals
+## 2x grid fundamentals
 
-The core concept of the 2x Grid is to divide or multiply by two, forming a visual rhythm. Fluid grids are built by division, whereas fixed grids are built with multiplication. On breakpoint boundaries, these sizes match. Margins and padding are applied consistently in both cases.
+The core concept of the 2x grid is to divide or multiply by two, forming a visual rhythm. Fluid grids are built by division, whereas fixed grids are built with multiplication. On breakpoint boundaries, these sizes match. Margins and padding are applied consistently in both cases.
 
 <anchor-links small="true">
 <ul>
-    <li><a href="#columns-and-rows">Columns and Rows</a></li>
+    <li><a href="#columns-and-rows">Columns and rows</a></li>
     <li><a href="#margins">Margins</a></li>
     <li><a href="#padding">Padding</a></li>
     <li><a href="#gutters">Gutters</a></li>
@@ -59,7 +59,7 @@ Columns and rows create key lines that are essential for visual rhythm, especial
 
 #### Fluid grid
 
-A [fluid grid](#fluid-grid) divides space by twos. This division is immediately evident in the 2x column structure. Within a breakpoint, the column count is constant and unit size scales with screen size. Choose a column count by starting with one, then divide by two as needed:
+A [fluid grid](#fluid-grid) divides space by twos. This division is immediately evident in the 2x column structure. Within a breakpoint, the column count is constant, and unit size scales with screen size. Choose a column count by starting with one, then divide by two as needed:
 
 | Fluid Grid Columns |
 | ------------------ |
@@ -91,7 +91,7 @@ The margins at the outer edge of the grid are always a fixed size within a break
 
 ![grid margins](images/2x_grid_margins_new.png)
 
-See [Breakpoints](#breakpoints) for a table of margin sizes.
+See [breakpoints](#breakpoints) for a table of margin sizes.
 
 ### Padding
 
@@ -134,13 +134,13 @@ Use this set of standard breakpoints to maintain layout integrity across screen 
 
 For best results, test designs and code at each of these standard breakpoints.
 
-Create **Custom Breakpoints** to accommodate special needs, by writing your own media queries and CSS rules. Refer to the grid code package for more information.
+Create **custom breakpoints** to accommodate special needs, by writing your own media queries and CSS rules. Refer to the grid code package for more information.
 
 `vimeo: https://vimeo.com/292015984`
 
-## Grid Behaviors
+## Grid behaviors
 
-In user interfaces, screen size is dictated by the device and the user's chosen window size. We may know content in advance or the content may be dynamic.
+In user interfaces, screen size is dictated by the device and the user's chosen window size. We may know content in advance, or the content may be dynamic.
 
 Carefully consider the user's goal for their screen space, particularly when displaying dynamic content. For example, when the user resizes their browser, is their goal to:
 
@@ -151,14 +151,14 @@ Choose the layout approach that best meets the user's expectation in each case.
 
 <anchor-links small="true">
 <ul>
-    <li><a href="#fluid-grid">Fluid Grid</a></li>
-    <li><a href="#fixed-boxes">Fixed Boxes</a></li>
+    <li><a href="#fluid-grid">Fluid grid</a></li>
+    <li><a href="#fixed-boxes">Fixed boxes</a></li>
     <li><a href="#hybrid">Hybrid</a></li>
-    <li><a href="#key-lines">Key Lines</a></li>
+    <li><a href="#key-lines">Key lines</a></li>
 </ul>
 </anchor-links>
 
-### Fluid Grid
+### Fluid grid
 
 Fluid grids are ideal for editorial content, dashboards, images, video, data visualizations, etc. In each case, scaling the size of things is more useful to the user than scaling the number of visible things. In a fluid grid, we divide available width in half to create columns, repeating as necessary.
 
@@ -166,13 +166,13 @@ Fluid grids are ideal for editorial content, dashboards, images, video, data vis
 
 At each breakpoint, column count is fixed and column width is a multiple of Mini Units. Row height is a multiple of column size, following recommended aspect ratios. Margin and padding are fixed multiples of Mini Units. In between breakpoints, actual column width is a percentage of the grid area, not a Mini Unit multiple. Content scales fluidly.
 
-### Fixed Boxes
+### Fixed boxes
 
-A grid can be formed with Fixed Boxes by tiling cards in an inline block, icons in toolbars, etc. Column count grows with browser width. Tiles wrap to the next line, or are sometimes truncated with an overflow scroll.
+A grid can be formed with fixed boxes by tiling cards in an inline block, icons in toolbars, etc. Column count grows with browser width. Tiles wrap to the next line, or are sometimes truncated with an overflow scroll.
 
 `vimeo: https://vimeo.com/292024183`
 
-First choose a base size from the [sizing scale](#sizing-scale), then build up each Box in multiples of the base size, following recommended [aspect ratios](#aspect-ratio). A grid emerges when each tile uses a multiple of a consistent base size. Following this method ensures consistency of tile sizes even across products.
+First choose a base size from the [sizing scale](#sizing-scale), then build up each box in multiples of the base size, following recommended [aspect ratios](#aspect-ratio). A grid emerges when each tile uses a multiple of a consistent base size. Following this method ensures consistency of tile sizes, even across products.
 
 ### Hybrid
 
@@ -193,30 +193,30 @@ Use the [sizing scale](#sizing-scale) to size a fixed dimension. Use column-widt
 
 See [screen regions](#screen-regions) for more discussion on headers, side panels, etc.
 
-### Key Lines
+### Key lines
 
-Regardless how your grid is built, ensure the overall layout has visible key lines: vertical and horizontal lines on which multiple objects align.
+Regardless of how your grid is built, ensure the overall layout has visible key lines: vertical and horizontal lines on which multiple objects align.
 
-Horizontal and vertical alignment are equally critical. When present, the eye can follow content more easily, increase the pereption of visual harmony.
+Horizontal and vertical alignment are equally critical. When present, the eye can follow content more easily, increasing the perception of visual harmony.
 
 ![key alignments](images/key_alignments.png)
 
-## Grid Influencers
+## Grid influencers
 
-Within a design system, layouts often follow a common structure, especially with regard to navigation. This section covers which of these UI patterns you'll need, where users will expect to see them on a page and how they’ll affect the content that lives within the responsive grid.
+Within a design system, layouts often follow a common structure, especially with regard to navigation. This section covers which of these UI patterns you'll need, where users will expect to see them on a page, and how they’ll affect the content that lives within the responsive grid.
 
 <anchor-links small="true">
 <ul>
-    <li><a href="#screen-regions">Screen Regions</a></li>
-    <li><a href="#panel-behavior">Panel Behavior</a></li>
+    <li><a href="#screen-regions">Screen regions</a></li>
+    <li><a href="#panel-behavior">Panel behavior</a></li>
 </ul>
 </anchor-links>
 
-### Screen Regions
+### Screen regions
 
-In a UI layout, users expect to find certain types of content in certain areas. We call these areas Screen Regions. It is especially important for these zones to be consistent across devices, and adapt across breakpoints. [Learn more about Shell on the Experimental UI Shell page.](http://staging.carbondesignsystem.com/experimental/ui-shell/usage)
+In a UI layout, users expect to find certain types of content in certain areas. We call these areas _screen regions_. It is especially important for these zones to be consistent across devices and adapt across breakpoints. [Learn more about the shell on the experimental UI shell page.](/experimental/ui-shell/usage)
 
-![Shell Illustation](images/shell_illustration.png)
+![Shell illustation](images/shell_illustration.png)
 
 1. Header
 2. Global sidenav
@@ -224,7 +224,7 @@ In a UI layout, users expect to find certain types of content in certain areas. 
 
 <br><br>
 
-![Dropdown Illustation](images/dropdown_illustration.png)
+![Dropdown illustation](images/dropdown_illustration.png)
 
 4. Dropdown menu
 5. Content
@@ -232,15 +232,15 @@ In a UI layout, users expect to find certain types of content in certain areas. 
 
 <br><br>
 
-![Dialog Illustation](images/dialog_illustration.png)
+![Dialog illustation](images/dialog_illustration.png)
 
 7. Dialog
 
-### Panel Behavior
+### Panel behavior
 
 All vertical panels expand to fill the full height of the browser window.
 
-#### Flexible Panels
+#### Flexible panels
 
 Flexible panels allow for both collapsed and expanded states. The expanded state of a flexible panel is a fixed width that cannot be adjusted by the user. A collapsed flexible panel expands when the user hovers over any portion of it.
 
@@ -252,19 +252,19 @@ or they push content the distance of their width.
 
 `vimeo: https://vimeo.com/292976634`
 
-#### Fixed Panels
+#### Fixed panels
 
-Fixed panels maintain a static width, cannot be collapsed and also exist outside of the responsive grid.
+Fixed panels maintain a static width, cannot be collapsed, and also exist outside of the responsive grid.
 
 `vimeo: https://vimeo.com/292988292`
 
-#### Floating Panels
+#### Floating panels
 
 This panel style floats above the primary content area and does not affect the responsive grid. Floating panels conceal any UI elements below them and must be dismissable by the user. Inline menus, dropdowns and tooltips also float.
 
 `vimeo: https://vimeo.com/292977039`
 
-## Sizing Scale
+## Sizing scale
 
 We provide a sizing scale for both fixed and fluid sizes. Use it to size content as well as negative space. Like a type scale, the sizing scale constrains the range of sizes to improve consistency and rhythm, while still allowing a wide range of sizes. Spacing tokens are used to apply these relationships consistently across UIs.
 
@@ -272,22 +272,22 @@ To use the scale, first choose a fixed or fluid base unit, then multiply it in e
 
 <anchor-links small="true">
 <ul>
-    <li><a href="#fixed-base-unit">Fixed Base Unit</a></li>
-    <li><a href="#fluid-base-unit">Fluid Base Unnit</a></li>
-    <li><a href="#scaling-muliple">Scaling Muliple</a></li>
-    <li><a href="#aspect-ratio">Aspect Ratio</a></li>
-    <li><a href="#vertical-rhythm">Vertical Rhythm</a></li>
+    <li><a href="#fixed-base-unit">Fixed base unit</a></li>
+    <li><a href="#fluid-base-unit">Fluid base unit</a></li>
+    <li><a href="#scaling-muliple">Scaling multiple</a></li>
+    <li><a href="#aspect-ratio">Aspect ratio</a></li>
+    <li><a href="#vertical-rhythm">Vertical rhythm</a></li>
     <li><a href="#components">Components</a></li>
 </ul>
 </anchor-links>
 
-### Fixed Base Unit
+### Fixed base unit
 
 Use this fixed sizing scale, comprised of select Mini Unit multiples, when sizing icons, tiling boxes, and applying vertical margin space in a layout.
 
 ![spacers](images/spacers.png)
 
-| Sizing Scale (px) | Mini Units |
+| Sizing scale (px) | Mini units |
 | ----------------- | ---------- |
 | 8                 | 1x         |
 | 16                | 2x         |
@@ -299,7 +299,7 @@ Use this fixed sizing scale, comprised of select Mini Unit multiples, when sizin
 
 Choose a size to use as your fixed base unit. (Also see the [breakpoints table](#breakpoints).)
 
-### Fluid Base Unit
+### Fluid base unit
 
 For fluid grids, the column width is the base unit. Just as a box can span multiple columns, its height is a multiple of column width.
 
@@ -309,19 +309,19 @@ See the [breakpoints table](#breakpoints) for pixel sizings.
 
 ![key heights](images/fixed_fluid_units.png)
 
-### Scaling Multiple
+### Scaling multiple
 
 After determining your base size, multiply it as needed for each use. For box sizing, apply an [aspect ratio](#aspect-ratio) too.
 
 `vimeo: https://vimeo.com/292026497`
 
-### Aspect Ratio
+### Aspect ratio
 
 When sizing boxes, constrain dimensions to one of the aspect ratios shown below whenever possible. Doing so will heighten the perception of unity between products.
 
 Choose an aspect ratio from the table, then multiply the base unit in each dimension as needed to set width and height, maintaining the ratio in either portrait or landscape.
 
-| Aspect Ratios |
+| Aspect ratios |
 | ------------- |
 | 1:1           |
 | 2:1           |
@@ -341,7 +341,7 @@ Aspect ratios do not apply to hybrid boxes, since one dimension is fixed and the
 
 ![hybrid box sample](images/hybrid_box_sample.png)
 
-### Vertical Rhythm
+### Vertical rhythm
 
 Use the fixed sizing scale to set vertical spacing between sections, by adding it to the top or bottom margin of a box:
 
