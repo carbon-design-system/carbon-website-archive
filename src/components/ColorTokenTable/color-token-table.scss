@@ -119,7 +119,7 @@
 }
 
 .color-token-table .page-table thead tr {
-  border-bottom: 1px solid $ibm-colors__gray--20;
+  border-bottom: 1px solid $ibm-colors__gray-20;
   display: flex;
 
   @media all and (max-width: 580px) {
@@ -134,7 +134,7 @@
 
 .color-token-table .page-table tbody tr {
   display: flex;
-  border-bottom: 1px solid $ibm-colors__gray--20;
+  border-bottom: 1px solid $ibm-colors__gray-20;
   min-height: rem(104px);
 
   @media all and (max-width: 580px) {
@@ -158,5 +158,5 @@
 }
 
 .color-token-table .page-table tbody tr td:not(:last-child) {
-  border-right: 1px solid $ibm-colors__gray--20;
+  border-right: 1px solid $ibm-colors__gray-20;
 }

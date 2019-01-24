@@ -114,7 +114,7 @@
   }
 
   .anchor-link__icon {
-    fill: $ibm-colors__blue--50;
+    fill: $ibm-colors__blue-50;
   }
 
   &:hover .anchor-link {
@@ -208,14 +208,14 @@
 
     a {
       @include type-style('heading-03');
-      color: $ibm-colors__gray--90;
+      color: $ibm-colors__gray-90;
       text-decoration: none;
     }
 
     &:hover {
       a,
       &:before {
-        color: $ibm-colors__blue--60;
+        color: $ibm-colors__blue-60;
       }
     }
   }
