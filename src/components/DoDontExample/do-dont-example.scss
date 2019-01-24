@@ -56,6 +56,7 @@
 .example__content {
   font-size: 1.25rem;
   font-weight: 300;
+  width: 100%;
 
   .gatsby-resp-image-link {
     width: 100%;
@@ -127,4 +128,18 @@ p.example__description {
   @include font-smoothing;
   margin: 0;
   padding: 0;
+}
+
+.example.example--full-width {
+  width: 100%;
+}
+.example.example--full-width .example-card {
+  padding-top: 0;
+}
+.example.example--full-width .example-card__content {
+  position: relative;
+}
+
+.example span.gatsby-resp-image-wrapper {
+  max-width: 100% !important; // marked !important to overcome inline styles inserted by gatsby.
 }
