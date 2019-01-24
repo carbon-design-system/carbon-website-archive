@@ -57,6 +57,7 @@ module.exports = {
           },
           `gatsby-remark-responsive-iframe`,
           `gatsby-remark-unwrap-images`,
+          `gatsby-remark-relative-images`,
           {
             resolve: `gatsby-remark-images`,
             options: {

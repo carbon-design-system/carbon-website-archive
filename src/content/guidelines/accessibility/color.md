@@ -58,6 +58,9 @@ Don't rely on color alone to convey meaning. This includes conveying information
 ![rainbow palette](images/color-accessibility-1.png)
 _Non-color-blind user vs. color-blind user_
 
+<image-component src="images/color-accessibility-1.png" alt="rainbow palette" caption="Non-color blind user vs. color-blind user">
+</image-component>
+
 ## Low vision
 
 Low vision can include partial sight in one or both eyes and can range from mild to severe. It affects about 4% of the world’s population.
