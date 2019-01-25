@@ -185,9 +185,11 @@ class Layout extends React.Component {
                   Product Design System
                 </HeaderName>
               ) : (
-                <HeaderName prefix="" to="/" element={Link}>
-                  Carbon Design System
-                </HeaderName>
+                <HeaderName
+                  prefix="Carbon Design System"
+                  to="/"
+                  element={Link}
+                />
               )}
 
               <HeaderGlobalBar>

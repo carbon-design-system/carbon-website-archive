@@ -3,9 +3,9 @@ title: Accordion
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-<component 
+<component
     name="Accordion"
-    component="accordion" 
+    component="accordion"
     variation="accordion"
     experimental="true"
     >
