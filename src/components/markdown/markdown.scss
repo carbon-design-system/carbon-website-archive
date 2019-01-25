@@ -211,21 +211,21 @@
       position: relative;
       display: inline-block;
       transition: color $transition--base;
-      color: $ibm-colors__gray--90;
+      color: $ibm-colors__gray-90;
       text-decoration: none;
       margin-bottom: rem(4px);
 
       &:hover {
-        color: $ibm-colors__blue--60;
+        color: $ibm-colors__blue-60;
         &::before {
-          color: $ibm-colors__blue--60;
+          color: $ibm-colors__blue-60;
         }
       }
 
       &:before {
         content: '\21B3'; //"↳"
         font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial, sans-serif;
-        color: $ibm-colors__gray--90;
+        color: $ibm-colors__gray-90;
         transition: color $transition--base;
         padding-right: rem(16px);
         cursor: pointer;
