@@ -188,34 +188,47 @@
 
 .anchor-links {
   .page-ul {
+    width: auto;
     margin-bottom: 2.25rem;
     margin-top: rem(72px);
-    position: relative;
   }
 
   .page-ul > li {
     @include type-style('heading-03');
+    width: auto;
     list-style: none;
-    cursor: pointer;
-    padding-bottom: $spacing-xs;
+    margin-left: -1.5rem;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
 
     &:before {
-      content: '\21B3'; //"↳"
-      position: absolute;
-      left: -1.5rem;
-      cursor: pointer;
+      display: none;
     }
 
     a {
       @include type-style('heading-03');
+      position: relative;
+      display: inline-block;
+      transition: color $transition--base;
       color: $ibm-colors__gray-90;
       text-decoration: none;
-    }
+      margin-bottom: rem(4px);
 
-    &:hover {
-      a,
-      &:before {
+      &:hover {
         color: $ibm-colors__blue-60;
+        &::before {
+          color: $ibm-colors__blue-60;
+        }
+      }
+
+      &:before {
+        content: '\21B3'; //"↳"
+        font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial, sans-serif;
+        color: $ibm-colors__gray-90;
+        transition: color $transition--base;
+        padding-right: rem(16px);
+        cursor: pointer;
       }
     }
   }
@@ -224,9 +237,11 @@
 .anchor-links--small .page-ul {
   margin-top: 2.25rem;
 }
+
 .anchor-links--small a,
 .anchor-links--small .page-ul > li a {
   @include type-style('body-long-02');
+  margin-bottom: 0;
 }
 
 //----------------------------
