@@ -60,7 +60,26 @@
   }
 }
 
-.component-docs table {
+.component-docs p {
+  @include breakpoint('md') {
+    max-width: 75%;
+  }
+
+  @include breakpoint('lg') {
+    max-width: 55%;
+  }
+}
+
+.component-docs table,
+ {
   width: calc(100% + 2rem);
   margin-left: -1rem;
+
+  @include breakpoint('md') {
+    max-width: 75%;
+  }
+
+  @include breakpoint('lg') {
+    max-width: 50%;
+  }
 }
