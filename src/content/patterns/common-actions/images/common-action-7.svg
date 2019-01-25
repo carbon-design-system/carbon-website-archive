@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="736px" height="250px" viewBox="0 0 736 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>common-action-7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12.5,7.38 C12.5,7.255 12.5,7.13 12.5,7 C12.5,6.87 12.5,6.745 12.5,6.615 L13.46,5.77 C13.8226785,5.44861899 13.9027429,4.91345193 13.65,4.5 L12.47,2.5 C12.2310889,2.08873489 11.7355635,1.90265151 11.285,2.055 L10.07,2.465 C9.86065614,2.32343568 9.64180423,2.19646816 9.415,2.085 L9.165,0.825 C9.07063152,0.349884227 8.64930803,0.0107188198 8.165,0.02 L5.82,0.02 C5.33569197,0.0107188198 4.91436848,0.349884227 4.82,0.825 L4.57,2.085 C4.33991492,2.19444594 4.11771309,2.31974773 3.905,2.46 L2.715,2.03 C2.25839183,1.88195725 1.76100441,2.07923327 1.53,2.5 L0.35,4.5 C0.112085016,4.91234575 0.197840727,5.43524643 0.555,5.75 L1.5,6.62 C1.5,6.745 1.5,6.87 1.5,7 C1.5,7.13 1.5,7.255 1.5,7.385 L0.555,8.225 C0.184625338,8.54299553 0.0979728044,9.08193202 0.35,9.5 L1.53,11.5 C1.76891112,11.9112651 2.26443652,12.0973485 2.715,11.945 L3.93,11.535 C4.13934386,11.6765643 4.35819577,11.8035318 4.585,11.915 L4.835,13.175 C4.92936848,13.6501158 5.35069197,13.9892812 5.835,13.98 L8.195,13.98 C8.67930803,13.9892812 9.10063152,13.6501158 9.195,13.175 L9.445,11.915 C9.67508508,11.8055541 9.89728691,11.6802523 10.11,11.54 L11.32,11.95 C11.7612283,12.0828775 12.2361328,11.8970453 12.47,11.5 L13.65,9.5 C13.887915,9.08765425 13.8021593,8.56475357 13.445,8.25 L12.5,7.38 Z M11.605,11 L9.89,10.42 C9.48730614,10.7570721 9.02871944,11.0210556 8.535,11.2 L8.18,13 L5.82,13 L5.465,11.225 C4.97488533,11.0425731 4.51988891,10.7770176 4.12,10.44 L2.395,11 L1.215,9 L2.58,7.805 C2.48786393,7.28740157 2.48786393,6.75759843 2.58,6.24 L1.215,5 L2.395,3 L4.11,3.58 C4.51269386,3.24292786 4.97128056,2.97894437 5.465,2.8 L5.82,1 L8.18,1 L8.535,2.775 C9.02511467,2.95742692 9.48011109,3.22298245 9.88,3.56 L11.605,3 L12.785,5 L11.42,6.2 C11.512241,6.71758916 11.512241,7.24741084 11.42,7.765 L12.785,9 L11.605,11 Z M7,10 C5.34314575,10 4,8.65685425 4,7 C4,5.34314575 5.34314575,4 7,4 C8.65685425,4 10,5.34314575 10,7 C10.0081032,7.79810602 9.69463548,8.56588494 9.13026021,9.13026021 C8.56588494,9.69463548 7.79810602,10.0081032 7,10 Z M7,5 C6.46584954,4.98755672 5.94987987,5.19427211 5.57207599,5.57207599 C5.19427211,5.94987987 4.98755672,6.46584954 5,7 C4.98755672,7.53415046 5.19427211,8.05012013 5.57207599,8.42792401 C5.94987987,8.80572789 6.46584954,9.01244328 7,9 C7.53415046,9.01244328 8.05012013,8.80572789 8.42792401,8.42792401 C8.80572789,8.05012013 9.01244328,7.53415046 9,7 C9.01244328,6.46584954 8.80572789,5.94987987 8.42792401,5.57207599 C8.05012013,5.19427211 7.53415046,4.98755672 7,5 Z" id="path-1"></path>
+        <path d="M0,12.5 L13,12.5 L13,13.5 L0,13.5 L0,12.5 Z M11.20705,3.5 C11.5971895,3.10938024 11.5971895,2.47656976 11.20705,2.08595 L9.41405,0.29295 C9.02322541,-0.0966942111 8.39082459,-0.0966942111 8,0.29295 L0.5,7.79295 L0.5,11 L3.70705,11 L11.20705,3.5 Z M8.70655,0.9995 L10.5,2.79295 L9,4.29295 L7.20665,2.4996 L8.70655,0.9995 Z M1.5,10 L1.5,8.20705 L6.49965,3.2067 L8.29295,5 L3.29295,10 L1.5,10 Z" id="path-3"></path>
+        <path d="M0,13 L12,13 L12,14 L0,14 L0,13 Z M11,7 L10.295,6.295 L6.5,10.085 L6.5,0 L5.5,0 L5.5,10.085 L1.705,6.295 L1,7 L6,12 L11,7 Z" id="path-5"></path>
+    </defs>
+    <g id="common-action-7" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(-21.000000, -55.000000)">
+            <g id="Group">
+                <rect id="Rectangle-5-Copy-15" fill="#F3F3F3" x="0" y="0" width="742" height="136"></rect>
+                <g id="Group-4-Copy-2" transform="translate(502.000000, 88.000000)">
+                    <rect id="Rectangle-2-Copy-298" fill="#F3F3F3" x="0" y="0" width="48" height="48"></rect>
+                    <g id="icon/image/settings/16" transform="translate(16.000000, 16.000000)">
+                        <g id="settings" stroke-width="1" fill-rule="evenodd" transform="translate(1.000000, 1.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="icon-color" fill="#000000" xlink:href="#path-1"></use>
+                        </g>
+                        <rect id="transparent-rectangle" x="0" y="0" width="16" height="16"></rect>
+                    </g>
+                </g>
+                <g id="Group-6-Copy-2" transform="translate(0.000000, 136.000000)">
+                    <polygon id="Rectangle-5-Copy-29" fill="#FFFFFF" points="74 0 742 0 742 48 74 48"></polygon>
+                    <polygon id="Rectangle-5-Copy-29" fill="#DCDCDC" points="0 0 742 0 742 48 0 48"></polygon>
+                    <text id="Rule" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" line-spacing="18" letter-spacing="0.00999999978" fill="#252525">
+                        <tspan x="118" y="29">Rule</tspan>
+                    </text>
+                    <text id="Attached-Groups" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" line-spacing="18" letter-spacing="0.00999999978" fill="#252525">
+                        <tspan x="310" y="29">Attached Groups</tspan>
+                    </text>
+                    <text id="Status" font-family="IBMPlexSans-SemiBold, IBM Plex Sans" font-size="14" font-weight="500" line-spacing="18" letter-spacing="0.00999999978" fill="#252525">
+                        <tspan x="502" y="29">Status</tspan>
+                    </text>
+                </g>
+                <g id="Row-Item---default-Copy-2" transform="translate(0.000000, 184.000000)">
+                    <polygon id="Rectangle-5-Copy-13" fill="#F3F3F3" points="0 0 742 0 742 48 0 48"></polygon>
+                    <rect id="Rectangle" fill="#DCDCDC" x="5" y="47" width="737" height="1"></rect>
+                    <text id="Round-Robin" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="118" y="29">Round Robin</tspan>
+                    </text>
+                    <text id="Maureen’s-VM-Group" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="310" y="29">Maureen’s VM Group</tspan>
+                    </text>
+                    <text id="Active" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="502" y="29">Active</tspan>
+                    </text>
+                </g>
+                <g id="Row-Item---default-Copy-5" transform="translate(0.000000, 232.000000)">
+                    <polygon id="Rectangle-5-Copy-13" fill="#F3F3F3" points="0 0 742 0 742 48 0 48"></polygon>
+                    <rect id="Rectangle" fill="#DCDCDC" x="74" y="47" width="668" height="1"></rect>
+                    <text id="Round-Robin" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="118" y="29">Round Robin</tspan>
+                    </text>
+                    <text id="Maureen’s-VM-Group" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="310" y="29">Maureen’s VM Group</tspan>
+                    </text>
+                    <text id="Active" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="18" letter-spacing="0.00999999978" fill="#565656">
+                        <tspan x="502" y="29">Active</tspan>
+                    </text>
+                </g>
+                <g id="Group-Copy-2" transform="translate(550.000000, 88.000000)">
+                    <rect id="Rectangle-5-Copy-80" fill="#0F6FFF" x="0" y="0" width="192" height="48"></rect>
+                    <text id="Load-Balancer" font-family="IBMPlexSans, IBM Plex Sans" font-size="14" font-weight="normal" line-spacing="20" letter-spacing="0.1" fill="#FFFFFF">
+                        <tspan x="17" y="28">Load Balancer</tspan>
+                    </text>
+                    <g id="Group-5-Copy-39" transform="translate(156.000000, 14.000000)">
+                        <polygon id="Shape" fill="#FFFFFF" fill-rule="nonzero" points="10.875 9.625 10.875 4 9.625 4 9.625 9.625 4 9.625 4 10.875 9.625 10.875 9.625 16.5 10.875 16.5 10.875 10.875 16.5 10.875 16.5 9.625"></polygon>
+                        <rect id="Rectangle-path" x="0" y="0" width="20" height="20"></rect>
+                    </g>
+                </g>
+                <g id="Group-3" transform="translate(454.000000, 88.000000)">
+                    <rect id="Rectangle-2-Copy-297" fill="#F3F3F3" x="0" y="0" width="48" height="48"></rect>
+                    <g id="icon/formatting/edit/20" transform="translate(16.000000, 16.000000)">
+                        <g id="edit" stroke-width="1" fill-rule="evenodd" transform="translate(1.500000, 1.000000)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <use id="icon-color" fill="#000000" xlink:href="#path-3"></use>
+                        </g>
+                        <rect id="transparent-rectangle" x="0" y="0" width="16" height="16"></rect>
+                    </g>
+                </g>
+                <g id="Group-3" transform="translate(406.000000, 88.000000)">
+                    <rect id="Rectangle-2-Copy-297" fill="#F3F3F3" x="0" y="0" width="48" height="48"></rect>
+                    <g id="icon/navigation/down-to-bottom/20" transform="translate(16.000000, 16.000000)">
+                        <g id="down--to--bottom" stroke-width="1" fill-rule="evenodd" transform="translate(2.000000, 1.000000)">
+                            <mask id="mask-6" fill="white">
+                                <use xlink:href="#path-5"></use>
+                            </mask>
+                            <use id="icon-color" fill="#000000" xlink:href="#path-5"></use>
+                        </g>
+                        <rect id="transparent-rectangle" x="0" y="0" width="16" height="16"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g id="Group" transform="translate(-148.000000, 212.000000)" stroke="#DCDCDC">
+            <polyline id="Path-16" transform="translate(462.151987, 5.772216) rotate(-270.000000) translate(-462.151987, -5.772216) " points="456.379771 -60.379771 467.775428 -48.9841138 456.883273 -38.0919591 467.897955 -27.077277 456.911828 -16.0911491 467.871958 -5.05392461 456.902953 5.91508125 467.910522 16.9226508 456.920624 27.9125487 467.924204 38.9161282 456.884489 49.9558434 467.826639 60.8979934 456.800428 71.9242038"></polyline>
+            <polyline id="Path-16" transform="translate(330.151987, 5.772216) rotate(-270.000000) translate(-330.151987, -5.772216) " points="324.379771 -60.379771 335.775428 -48.9841138 324.883273 -38.0919591 335.897955 -27.077277 324.911828 -16.0911491 335.871958 -5.05392461 324.902953 5.91508125 335.910522 16.9226508 324.920624 27.9125487 335.924204 38.9161282 324.884489 49.9558434 335.826639 60.8979934 324.800428 71.9242038"></polyline>
+            <polyline id="Path-16" transform="translate(198.151987, 5.772216) rotate(-270.000000) translate(-198.151987, -5.772216) " points="192.379771 -60.379771 203.775428 -48.9841138 192.883273 -38.0919591 203.897955 -27.077277 192.911828 -16.0911491 203.871958 -5.05392461 192.902953 5.91508125 203.910522 16.9226508 192.920624 27.9125487 203.924204 38.9161282 192.884489 49.9558434 203.826639 60.8979934 192.800428 71.9242038"></polyline>
+            <polyline id="Path-16" transform="translate(726.151987, 5.772216) rotate(-270.000000) translate(-726.151987, -5.772216) " points="720.379771 -60.379771 731.775428 -48.9841138 720.883273 -38.0919591 731.897955 -27.077277 720.911828 -16.0911491 731.871958 -5.05392461 720.902953 5.91508125 731.910522 16.9226508 720.920624 27.9125487 731.924204 38.9161282 720.884489 49.9558434 731.826639 60.8979934 720.800428 71.9242038"></polyline>
+            <polyline id="Path-16" transform="translate(594.151987, 5.772216) rotate(-270.000000) translate(-594.151987, -5.772216) " points="588.379771 -60.379771 599.775428 -48.9841138 588.883273 -38.0919591 599.897955 -27.077277 588.911828 -16.0911491 599.871958 -5.05392461 588.902953 5.91508125 599.910522 16.9226508 588.920624 27.9125487 599.924204 38.9161282 588.884489 49.9558434 599.826639 60.8979934 588.800428 71.9242038"></polyline>
+            <polyline id="Path" transform="translate(836.002169, 6.024575) rotate(-270.000000) translate(-836.002169, -6.024575) " points="841.469782 -26.9513838 830.500776 -15.9823779 841.508345 -4.97480832 830.518447 6.01508959 841.522027 17.0186691 830.482312 28.0583843 841.424462 39.0005342"></polyline>
+        </g>
+        <polygon id="Fill-1" fill="#FFFFFF" points="709.997 213 704 218.997 699 223.997 687.997 213 677 223.997 665.997 213 655 223.997 643.997 213 633 223.997 621.997 213 611 223.997 599.997 213 589 223.997 577.997 213 567 223.997 555.997 213 545 223.997 533.997 213 523 223.997 511.997 213 501 223.997 489.997 213 479 223.997 467.997 213 457 223.997 445.997 213 435 223.997 423.998 213 413 223.997 412.994 223.997 401.997 213 391 223.997 379.998 213 369 223.997 368.994 223.997 357.997 213 347 223.997 335.997 213 325 223.997 313.998 213 303 223.997 302.994 223.997 291.997 213 281 223.997 269.998 213 259 223.997 258.994 223.997 247.997 213 237 223.997 225.998 213 215 223.997 214.994 223.997 203.997 213 193 223.997 181.998 213 171 223.997 170.994 223.997 159.998 213 149 223.997 137.997 213 127 223.997 115.998 213 105 223.997 104.994 223.997 93.997 213 83 223.997 71.998 213 61 223.997 60.994 223.997 49.997 213 39 223.997 27.998 213 17 223.997 16.994 223.997 5.997 213 -5 223.997 -16.002 213 -27 223.997 -27.006 223.997 -32 219.003 -38.002 213 -49 223.997 -49 259 721 259 721 223.997"></polygon>
+        <polyline id="Path-3" stroke="#FFFFFF" stroke-width="16" fill-rule="nonzero" points="8 238.751953 8 8 724.21875 8"></polyline>
+    </g>
+</svg>

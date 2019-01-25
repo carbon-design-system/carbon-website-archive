@@ -30,7 +30,7 @@
 .page-h2,
 .component-docs h2,
 .icon-h2 {
-  //@include type-style('expressive-heading-04');
+  //@include type-style('expressive-heading-04', true);
   position: relative;
   color: $text-01;
   margin-top: rem(56px);
@@ -60,7 +60,7 @@
   @include type-style('heading-02');
   color: $text-01;
   margin-top: rem(8px);
-  margin-bottom: rem(8px);
+  margin-bottom: rem(16px);
   position: relative;
 }
 
@@ -83,6 +83,10 @@
 .page-h5,
 .component-docs h5 {
   position: relative;
+  @include type-style('heading-02');
+  color: $text-01;
+  margin-top: rem(8px);
+  margin-bottom: rem(16px);
 }
 
 //----------------------------
@@ -110,7 +114,7 @@
   }
 
   .anchor-link__icon {
-    fill: $ibm-colors__blue--50;
+    fill: $ibm-colors__blue-50;
   }
 
   &:hover .anchor-link {
@@ -204,14 +208,14 @@
 
     a {
       @include type-style('heading-03');
-      color: $ibm-colors__gray--90;
+      color: $ibm-colors__gray-90;
       text-decoration: none;
     }
 
     &:hover {
       a,
       &:before {
-        color: $ibm-colors__blue--60;
+        color: $ibm-colors__blue-60;
       }
     }
   }

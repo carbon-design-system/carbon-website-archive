@@ -11,65 +11,6 @@
   }
 }
 
-// Bottom links
-.side-nav .bx--side-nav__item {
-  &:nth-last-child(2) {
-    margin-top: $spacing-lg;
-
-    .side-nav__website-link {
-      border-top: 1px solid $ibm-colors__gray--50;
-      padding-top: $spacing-lg;
-    }
-  }
-
-  &:nth-last-child(1),
-  &:nth-last-child(2) {
-    a.bx--side-nav__link,
-    .bx--side-nav__icon {
-      min-height: 2rem;
-      height: auto;
-    }
-
-    .side-nav__website-link {
-      margin: 0 1rem;
-    }
-
-    .bx--side-nav__icon {
-      display: none;
-    }
-
-    &:hover {
-      background: transparent;
-    }
-
-    .bx--side-nav__submenu-title,
-    .bx--side-nav__link-text {
-      padding-left: 0;
-    }
-  }
-}
-
-/* temp styles until shell is updated */
-
-.bx--side-nav.side-nav .bx--side-nav__footer {
-  display: none;
-}
-
-.bx--side-nav.side-nav
-  .bx--side-nav__menu[role='menu']
-  a.bx--side-nav__link[role='menuitem'] {
-  padding-left: 2rem;
-}
-
-.bx--side-nav.side-nav .bx--side-nav__icon:not(.bx--side-nav__submenu-chevron) {
-  display: none;
-}
-
-.bx--side-nav.side-nav .bx--side-nav__submenu-title,
-.bx--side-nav.side-nav .bx--side-nav__link-text {
-  padding-left: 1rem;
-}
-
 //===================
 // SIDE NAV click to close
 //===================
