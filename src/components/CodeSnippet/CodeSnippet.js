@@ -22,7 +22,7 @@ export default class Snippet extends React.Component {
   componentDidMount() {
     Prism.highlightAll();
     if (this.codeRef) {
-      if (this.codeRef.clientHeight > 18) {
+      if (this.codeRef.clientHeight > 20) {
         this.setState({ multi: true });
       } else {
         this.setState({ multi: false });
