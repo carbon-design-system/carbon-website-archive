@@ -3,11 +3,16 @@
   flex-direction: column;
   position: relative;
   max-width: 100%;
+  background: $ui-05;
 
   code[class*='language-'],
   pre[class*='language-'] {
     background: $ui-05;
     color: $inverse-01;
+  }
+
+  code[class*='language-'] {
+    @include type-style('code-02');
   }
 
   pre[class*='language-'] {
@@ -21,16 +26,12 @@
   height: 2rem;
   width: 2rem;
   position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
+  top: 0.5rem;
+  right: 0.5rem;
   color: transparent;
   background: $ui-05;
   cursor: pointer;
   z-index: 20;
-
-  &:hover {
-    background: $ui-05;
-  }
 
   &:focus {
     @include focus-outline;
@@ -49,10 +50,17 @@
   }
 }
 
+.code-title {
+  @include type-style('code-02');
+  display: block;
+  margin-bottom: 1rem;
+}
+
 .code-example__raw-html {
   background: $ui-05;
   color: $inverse-01;
-  padding: $spacing-md 0 $spacing-md $spacing-md;
+  margin: 0 $spacing-md;
+  padding: $spacing-md 0;
   max-height: 12rem;
   min-height: 7rem;
   height: auto;
@@ -61,28 +69,46 @@
   justify-content: space-between;
   overflow-y: hidden;
   transition: $transition--base;
+  border-bottom: 1px solid $ibm-colors__gray-80;
 
   &--expanded {
     max-height: 100rem;
   }
 }
 
+.code-example__expand-container {
+  display: flex;
+  justify-content: flex-end;
+  height: rem(48px);
+  width: 100%;
+  background-color: $ui-05;
+}
+
 .code-example__expand {
-  position: absolute;
-  bottom: rem(2px);
-  right: rem(2px);
   color: $inverse-01;
   background-color: $ui-05;
   border: none;
   padding: 1rem;
+  padding-bottom: rem(18px);
+  display: flex;
+  align-items: center;
   cursor: pointer;
 
   &:focus {
     @include focus-outline;
+    outline-offset: -1px;
+  }
+
+  &:hover span {
+    border-bottom: 1px solid $inverse-01;
   }
 
   span {
-    @include type-style('caption-01');
+    @include type-style('body-short-01');
+    display: inline-block;
+    line-height: 1;
+    border-bottom: 1px solid transparent;
+    transition: border $transition--base;
   }
 
   &--icon {
