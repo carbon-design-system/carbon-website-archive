@@ -6,11 +6,18 @@ tabs: ['Basics', 'Choreography', 'Resources']
 
 <anchor-links>
 <ul>
+    <li><a href="#get-started">Get started</a></li>
     <li><a href="#style">Style</a></li>
     <li><a href="#easing">Easing</a></li>
     <li><a href="#duration">Duration</a></li>
 </ul>
 </anchor-links>
+
+## Get started
+
+<grid-wrapper col_lg="8" flex="true" bleed="true">
+  <clickable-tile title="Motion Generator" href="https://ibm.github.io/motion/" type="resource"></clickable-tile>
+</grid-wrapper>
 
 ## Style
 
