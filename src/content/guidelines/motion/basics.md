@@ -37,10 +37,14 @@ Duo motion recognizes different moments in user's experience, and offers two mod
       </grid-wrapper>
     </div></tab>
   <tab label="Abstract"><div>
-      `vimeo: https://vimeo.com/310583009`
+    
+`vimeo: https://vimeo.com/310583009`
+      
   </div></tab>
   <tab label="In-situ"><div>
-      `vimeo: https://vimeo.com/310583036`
+    
+`vimeo: https://vimeo.com/310583036`
+      
   </div></tab>
 </website-tabs>
 
@@ -78,12 +82,16 @@ Use `standard-easing` when an element is visible from the beginning to  end of a
 <website-tabs>
   <tab label="Curves">
     <div>
-    `vimeo: https://vimeo.com/310582611`
+      
+`vimeo: https://vimeo.com/310582611`
+    
     </div>
   </tab>
   <tab label="Examples">
     <div>
-    `vimeo: https://vimeo.com/310582667`
+      
+`vimeo: https://vimeo.com/310582667`
+
     </div>
   </tab>
 </website-tabs>
@@ -100,12 +108,16 @@ Use `entrance-ease` when adding elements to the view such as a modal or toaster 
 <website-tabs>
   <tab label="Curves">
     <div>
-    `vimeo: https://vimeo.com/310582467`
+      
+`vimeo: https://vimeo.com/310582467`
+    
     </div>
   </tab>
   <tab label="Examples">
     <div>
-    `vimeo: https://vimeo.com/310582503`
+      
+`vimeo: https://vimeo.com/310582503`
+    
     </div>
   </tab>
 </website-tabs>
@@ -122,12 +134,16 @@ Use `exit-easing` when removing elements from view, such as closing a modal or t
 <website-tabs>
   <tab label="Curves">
     <div>
-    `vimeo: https://vimeo.com/310582530`
+      
+`vimeo: https://vimeo.com/310582530`
+    
     </div>
   </tab>
   <tab label="Examples">
     <div>
-    `vimeo: https://vimeo.com/310582574`
+      
+`vimeo: https://vimeo.com/310582574`
+    
     </div>
   </tab>
 </website-tabs>
