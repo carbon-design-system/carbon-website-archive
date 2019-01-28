@@ -3,7 +3,7 @@
 .#{$prefix}--header--website {
   z-index: 9999;
   background-color: $ui-05;
-  border-bottom: 1px solid $ibm-colors__gray--80;
+  border-bottom: 1px solid $ibm-colors__gray-80;
 }
 
 .#{$prefix}--header__action--active {
@@ -21,10 +21,12 @@
 
 a.#{$prefix}--header__name {
   @include type-style('body-short-02');
+  font-weight: 600;
 }
 
 .#{$prefix}--header__name--prefix {
   @include type-style('heading-02');
+  font-weight: 400;
 }
 
 .#{$prefix}--header__action--menu {
@@ -61,27 +63,27 @@ a.#{$prefix}--header__menu-item[role='menuitem'],
 
 a.#{$prefix}--header__menu-item[role='menuitem'] {
   position: relative;
-  color: $ibm-colors__gray--30;
+  color: $ibm-colors__gray-30;
   border-width: 2px;
 }
 
 // Hover
 a.#{$prefix}--header__menu-item[role='menuitem']:hover {
   background-color: #353535;
-  color: $ibm-colors__gray--10;
+  color: $ibm-colors__gray-10;
 }
 
 // Hover with expanded
 a.#{$prefix}--header__menu-item.#{$prefix}--header__menu-title[role='menuitem']:hover,
 .#{$prefix}--header__menu-title[role='menuitem'][aria-expanded='true'] {
-  background: $ibm-colors__gray--70;
-  color: $ibm-colors__gray--10;
+  background: $ibm-colors__gray-70;
+  color: $ibm-colors__gray-10;
 }
 
 // Current page
 a.#{$prefix}--header__menu-item[role='menuitem'][aria-current='page'] {
-  background: $ibm-colors__gray--80;
-  color: $ibm-colors__gray--10;
+  background: $ibm-colors__gray-80;
+  color: $ibm-colors__gray-10;
 }
 
 a.#{$prefix}--header__menu-item[role='menuitem'][aria-current='page']:after {
@@ -90,18 +92,18 @@ a.#{$prefix}--header__menu-item[role='menuitem'][aria-current='page']:after {
   position: absolute;
   left: -2px;
   bottom: -2px;
-  border-top: 4px solid $ibm-colors__blue--60;
+  border-top: 4px solid $ibm-colors__blue-60;
 }
 
 // Expanded drop down menn
 .#{$prefix}--header__menu-title[role='menuitem'][aria-expanded='true']
   + .#{$prefix}--header__menu {
-  background: $ibm-colors__gray--90;
-  color: $ibm-colors__gray--10;
+  background: $ibm-colors__gray-90;
+  color: $ibm-colors__gray-10;
 }
 
 .#{$prefix}--header__menu .#{$prefix}--header__menu-item[role='menuitem'] {
-  color: $ibm-colors__gray--30;
+  color: $ibm-colors__gray-30;
 }
 
 .#{$prefix}--header__menu
@@ -118,7 +120,7 @@ a.#{$prefix}--header__menu-item[role='menuitem'][aria-current='page']:after {
   left: 8px;
   bottom: -3px;
   border-top: none;
-  border-bottom: 1px solid $ibm-colors__gray--70;
+  border-bottom: 1px solid $ibm-colors__gray-70;
 }
 
 .#{$prefix}--header__menu
@@ -131,6 +133,6 @@ a.#{$prefix}--header__menu-item[role='menuitem'][aria-current='page']:after {
 
 .#{$prefix}--header__menu
   .#{$prefix}--header__menu-item[role='menuitem']:hover {
-  color: $ibm-colors__gray--10;
+  color: $ibm-colors__gray-10;
   background: #353535;
 }
