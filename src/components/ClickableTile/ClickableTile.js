@@ -77,9 +77,11 @@ export default class ClickTile extends React.Component {
           href={href}>
           <div className="tile__img">{children}</div>
           <div className="tile__info">
-            <h5>{title}</h5>
-            {author ? <p className="tile__author">{author}</p> : null}
-            <span className="tile__divider">&#8212;</span>
+            <div className="tile__info-title">
+              <h5>{title}</h5>
+              {author ? <p className="tile__author">{author}</p> : null}
+
+            </div>
             <div className="tile__caption">
               {date ? <p className="tile__date">{date}</p> : null}
               {excerpt ? <p className="tile__excerpt">{excerpt}</p> : null}
