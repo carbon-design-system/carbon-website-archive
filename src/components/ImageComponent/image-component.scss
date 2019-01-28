@@ -1,95 +1,16 @@
-.icon-container {
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%;
+.image-component.no-caption {
+  margin-bottom: rem(24px);
 }
 
-.icon-search {
-  margin-bottom: rem(48px);
+.image-component.white > *:not(.image-component__caption) {
+  background: white;
 }
 
-.icon {
-  flex: 1 1 10rem;
-  max-width: 10rem;
-  position: relative;
+.image-component.border > *:not(.image-component__caption) {
+  border: 1px solid $ui-03;
 }
 
-.icon__card-title,
-.icon__card-details {
-  position: absolute;
-  top: rem(12px);
-  left: rem(12px);
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  max-width: 130px;
-  @include type-style('caption-01');
-}
-
-.icon__card-details {
-  top: rem(28px);
-  @include type-style('helper-text-01');
-}
-
-.icon__actions {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: $brand-01;
-  transition: $transition--base;
-  opacity: 0;
-
-  &.displayed {
-    opacity: 1;
-  }
-}
-
-.icon__card {
-  background: $ui-02;
-  height: 10rem;
-  text-align: center;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  outline: 1px solid $ibm-colors__gray--20;
-
-  &:hover,
-  &:focus,
-  .icon__actions:focus,
-  button:focus,
-  a:focus {
-    .icon__actions {
-      opacity: 1;
-    }
-  }
-}
-
-.icon-button,
-a.icon-button {
-  border: 2px solid $inverse-01;
-  background-color: $brand-01;
-  min-width: rem(112px);
-  margin: 0.2rem 0;
-  color: $inverse-01 !important;
-  height: 2.5rem;
-  padding: 0 1rem;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &:hover,
-  &:active,
-  &:focus {
-    background-color: $inverse-01;
-    color: $brand-01 !important;
-  }
+p.image-component__caption {
+  @include type-style('body-short-01');
+  padding-top: rem(8px);
 }

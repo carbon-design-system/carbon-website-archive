@@ -52,7 +52,11 @@ The core concept of the 2x Grid is to divide or multiply by two, forming a visua
 
 Columns and rows create key lines that are essential for visual rhythm, especially for typography. Construct columns by either dividing a space into a fluid grid, or by tiling fixed boxes in multiples.
 
+<image-component cols="12" bg="white">
+
 ![Columns and rows](images/Layout_overview_Columns-rows.svg)
+
+</image-component>
 
 #### Fluid grid
 
@@ -83,14 +87,21 @@ For dense content, use mini units for further alignment and spatial guidance.
 
 The margins at the outer edge of the grid are always a fixed size within a breakpoint, even when columns are fluid. See [Breakpoints](#breakpoints) for a table of margin sizes.
 
+<image-component cols="12" bg="white">
+
 ![Margins](images/Layout_overview_Margins.svg)
+
+</image-component>
 
 ### Padding
 
 Padding is always a fixed multiple of mini units: 16 pixels at all standard breakpoints. Always align type to the edge of box padding. Note, some design tools add padding to text boxes by default; check text box padding and remove it if necessary.
 
+<image-component cols="12" bg="white">
+
 ![Padding](images/Layout_overview_Paddings.svg)
 
+</image-component>
 
 <grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Always place type against the padding.">
@@ -106,7 +117,11 @@ Padding is always a fixed multiple of mini units: 16 pixels at all standard brea
 
 Grid gutters can be absent as shown above, or present as shown below. Th margin around each grid box matches its padding, for a total gutter of 32 pixels. For closely related content, consider a gutterless grid. Apply gutters when content warrants more separation.
 
+<image-component cols="12" bg="white">
+
 ![Gutters](images/Layout_overview_Gutters.svg)
+
+</image-component>
 
 ### Breakpoints
 
@@ -176,7 +191,11 @@ Here are some common UI behaviors:
 
 Regardless how your grid is built, ensure the overall layout has visible guide lines: vertical and horizontal lines on which multiple objects align. Horizontal and vertical alignment are equally critical. When present, the eye can follow content more easily, increasing the perception of visual harmony.
 
+<image-component cols="12">
+
 ![key alignments](images/Layout_overview_Key-alignment.svg)
+
+</image-component>
 
 ## Grid influencers
 
@@ -193,22 +212,23 @@ Within a design system, layouts often follow a common structure, especially with
 
 In a UI layout, users expect to find certain types of content in certain areas. We call these areas Screen Regions. It is especially important for these zones to be consistent across devices, and adapt across breakpoints. [Learn more about Shell on the Experimental UI Shell page.](http://staging.carbondesignsystem.com/experimental/ui-shell/usage)
 
+<image-component cols="12" bg="white" caption="1. Header 2. Global sidenav 3. Local sidenav">
+
 ![Shell Illustation](images/Layout_overview_Screen-regions-1.svg)
 
-_1. Header_
-_2. Global sidenav_
-_3. Local sidenav_
+</image-component>
 
+<image-component cols="12" bg="white" caption="4. Dropdown menu 5. Content 6. Footer">
 
 ![Dropdown Illustation](images/Layout_overview_Screen-regions-2.svg)
 
-_4. Dropdown menu_
-_5. Content_
-_6. Footer_
+</image-component>
+
+<image-component cols="12" bg="white" caption="7. Dialog">
 
 ![Dialog Illustation](images/Layout_overview_Screen-regions-3.svg)
 
-_7. Dialog_
+</image-component>
 
 ### Panel behavior
 
@@ -251,7 +271,11 @@ We provide a sizing scale for both fixed and fluid sizes. Use it to size content
 
 Use this fixed sizing scale, comprised of select mini unit multiples, when sizing icons, tiling boxes, and applying vertical margin space.
 
-![fixed base unit](images/Layout_overview_Fixed-base-unit.svg)
+<image-component cols="12" bg="white">
+
+![Fixed base unit](images/Layout_overview_Fixed-base-unit.svg)
+
+</image-component>
 
 Choose a size to use as your fixed base unit. Also see the [breakpoints table](#breakpoints).
 
@@ -269,7 +293,11 @@ Choose a size to use as your fixed base unit. Also see the [breakpoints table](#
 
 For fluid grids, the column width is the base unit. Just as a box can span multiple columns, its height is a multiple of column width. Use cases are leading section in a webpage, divded section for editorial content, modals, etc. Check out the [breakpoints table](#breakpoints) for pixel sizings.
 
+<image-component cols="12" bg="white">
+
 ![Fluid base unit](images/Layout_overview_Fluid-base-unit.svg)
+
+</image-component>
 
 ### Scaling multiple
 
@@ -290,7 +318,11 @@ Choose an aspect ratio from the table, then multiply the base unit in each dimen
 
 For example, to size a fluid box with a 2:1 landscape aspect ratio, you could span 4 columns in width and 2 column-widths of height. To size a fixed box with the same aspect ratio, you could start with an 80 pixel base unit, then multiply it by 4 in width and 2 in height, for a fixed box size of 320 by 160.
 
-![aspect ratio](images/Layout_overview_Aspect-ratio.svg)
+<image-component cols="12" bg="white">
+
+![aspect ratio](images/Layout_overview_Aspect ratio.svg)
+
+</image-component>
 
 _Aspect ratios do not apply to Hybrid Boxes, since one dimension is fixed and the other is fluid._
 
