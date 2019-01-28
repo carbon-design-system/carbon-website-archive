@@ -39,7 +39,7 @@ title: Homepage
 
 The Component Libraries give developers a collection of re-usable React components they can use for building websites and user interfaces. See a [complete list of resources.](/resources)
 
-<grid-wrapper col_lg="8" flex="true" bleed="true">
+<grid-wrapper className="tile--resource--no-margin" col_lg="8" flex="true" bleed="true">
 <clickable-tile
     dark="true"
     title="Carbon Design Kit"

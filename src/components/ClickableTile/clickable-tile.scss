@@ -121,6 +121,10 @@ a.tile--article.tile--dark:hover {
   }
 }
 
+.tile--resource--no-margin .tile--resource {
+  margin-bottom: 0;
+}
+
 .tile--resource a.bx--tile {
   text-decoration: none;
   color: $text-01;
@@ -241,51 +245,13 @@ a.tile--article.tile--dark:hover {
     }
   }
 
-  a.tile--article {
-    @include breakpoint('sm') {
-      border-bottom: 1px solid $ibm-colors__gray-20;
-
-      &:last-child {
-        border: none;
-      }
-    }
-
-    @include breakpoint('md') {
-      border-bottom: none;
-      border-right: none;
-
-      // selects every 3rd item and removes right border
-      &:nth-child(2n + 2) {
-        border-right: none;
-      }
-
-      &:nth-child(n + 3) {
-        border-top: 1px solid $ibm-colors__gray-20;
-      }
-    }
-
-    @include breakpoint('lg') {
-      border-bottom: none;
-      border-right: none;
-
-      &:nth-child(2n + 2) {
-        border-right: none;
-      }
-
-      // selects every 3rd item and removes right border
-      &:nth-child(3n + 3) {
-        border-right: none;
-      }
-
-      &:nth-child(n + 4) {
-        border-top: 1px solid $ibm-colors__gray-20;
-      }
-    }
-  }
-
   a.tile--article.tile--dark {
     border-color: $ibm-colors__black;
   }
+}
+
+a.tile--article .tile__caption p {
+  color: $text-02;
 }
 
 a.tile--article.tile--dark .tile__caption p {

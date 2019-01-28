@@ -70,9 +70,6 @@ a.feature-tile:hover .feature-tile__info {
 
 a.feature-tile.feature-tile--mobile {
   display: block;
-  // max-height: 400px;
-
-
 
   @include breakpoint('md') {
     display: none;

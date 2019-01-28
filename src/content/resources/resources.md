@@ -4,7 +4,7 @@ title: Resources
 
 ## GitHub Repos
 
-<grid-wrapper col_lg="8" flex="true" bleed="true">
+<grid-wrapper className="tile--resource--no-margin" col_lg="8" flex="true" bleed="true">
 <clickable-tile
     title="Carbon Design Kit"
     href="https://github.com/ibm/carbon-design-kit"
@@ -37,7 +37,7 @@ title: Resources
 
 ## Tools
 
-<grid-wrapper col_lg="8" flex="true" bleed="true">
+<grid-wrapper className="tile--resource--no-margin" col_lg="8" flex="true" bleed="true">
 <clickable-tile
     title="Carbon CodePen"
     href="http://www.codepen.io/team/carbon"
