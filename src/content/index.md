@@ -8,14 +8,31 @@ title: Homepage
     href="/getting-started/designers"
     label="Start"
     title="Designing"
-    margin="true">
-<img src="homepage/images/getting-started-designers.png" alt="Get started for designers" />
+    margin="true"
+    className="feature-tile--desktop">
+  <img src="homepage/images/getting-started-designers.png" alt="Get started for designers" />
+</feature-tile>
+<feature-tile
+    href="/getting-started/designers"
+    label="Start"
+    title="Designing"
+    margin="true"
+    className="feature-tile--mobile">
+<img src="homepage/images/getting-started-designers-mobile.png" alt="Get started for developers" />
 </feature-tile>
 <feature-tile
     href="/getting-started/developers"
     label="Start"
-    title="Developing">
+    title="Developing"
+    className="feature-tile--desktop">
 <img src="homepage/images/getting-started-developers.png" alt="Get started for developers" />
+</feature-tile>
+<feature-tile
+    href="/getting-started/developers"
+    label="Start"
+    title="Developing"
+    className="feature-tile--mobile">
+<img src="homepage/images/getting-started-developers-mobile.png" alt="Get started for developers" />
 </feature-tile>
 
 ### Other Resources

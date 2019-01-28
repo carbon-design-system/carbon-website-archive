@@ -66,18 +66,14 @@ a.tile--article.tile--dark:hover {
   object-fit: cover;
 }
 
-.tile__info,
-.tile__img {
-  flex: 50%;
-}
-
 .tile--article .tile__info {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: $spacing-md;
 
-  @include breakpoint('md') {
+  @include breakpoint('xlg') {
     padding-right: 25%;
   }
 }
@@ -85,7 +81,7 @@ a.tile--article.tile--dark:hover {
 .tile--article .tile__info h5 {
   text-decoration: none;
   color: $text-01;
-  @include type-style('heading-02');
+  @include type-style('body-short-02');
 }
 
 .tile--article.tile--dark .tile__info h5 {
@@ -93,31 +89,10 @@ a.tile--article.tile--dark:hover {
 }
 
 .tile--article .tile__caption p {
+  @include type-style('caption-01');
   padding: 0;
   max-width: 75%;
-}
-
-p.tile__author {
-  margin: 0;
-  padding-bottom: 0;
-  color: $text-01;
-}
-
-.tile--article.tile--dark p.tile__author {
-  color: $ibm-colors__white;
-}
-
-.tile__divider {
-  padding-bottom: rem(3px);
-}
-
-.tile__date {
-  @include type-style('caption-01');
-  color: $text-01;
-}
-
-.tile--article.tile--dark .tile__date {
-  color: $ibm-colors__white;
+  color: #bebebe;
 }
 
 // Tile Resource
