@@ -15,6 +15,12 @@ body {
   position: relative;
   min-height: 100vh;
   margin-top: rem(48px);
+  transition: 0.35s cubic-bezier(0.2, 0, 0.38, 0.9) margin-top;
+}
+
+.sticky--tabs.sticky-tabs--header-hidden .side-nav + div,
+.sticky--tabs.sticky-tabs--header-hidden container {
+  margin-top: 0;
 }
 
 .container .ibm--grid {

@@ -31,10 +31,44 @@ class Layout extends React.Component {
     isLeftNavFinal: false,
     isSwitcherOpen: false,
     isSwitcherFinal: false,
+    isTabsSticky: false,
+    isHeaderHidden: false,
+  };
+
+  handleScroll = () => {
+    console.log(this);
+    var winHeight = window.innerHeight;
+
+    // Annoying to compute doc height due to browser inconsistency
+    var body = document.body;
+    var html = document.documentElement;
+    var docHeight = Math.max(
+      body.scrollHeight,
+      body.offsetHeight,
+      html.clientHeight,
+      html.scrollHeight,
+      html.offsetHeight
+    );
+
+    var value = document.body.scrollTop;
+
+    console.log(`docHeight = ${docHeight}`);
+    console.log(`value = ${value}`);
+
+    // if (this.scrollTop > 147) {
+    //   wrap.addClass("fix-search");
+    // } else {
+    //   wrap.removeClass("fix-search");
+    // }
   };
 
   componentDidMount() {
     this.checkWidth();
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   onToggleBtnClick = (

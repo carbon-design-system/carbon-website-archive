@@ -1,9 +1,14 @@
 @import '../prefix';
 
 .#{$prefix}--header--website {
-  z-index: 9999;
+  z-index: 13000;
   background-color: $ui-05;
   border-bottom: 1px solid $ibm-colors__gray-80;
+  transition: 0.35s cubic-bezier(0.2, 0, 0.38, 0.9) top;
+}
+
+.sticky--tabs.sticky-tabs--header-hidden .#{$prefix}--header--website {
+  top: -3rem;
 }
 
 .#{$prefix}--header__action--active {
