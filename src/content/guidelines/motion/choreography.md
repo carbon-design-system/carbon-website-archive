@@ -23,22 +23,30 @@ _When expanding or moving elements across the screen, stagger the timing of hori
 
 _Not staggering horizontal and vertical animations create a straight diagonal path. It breaks the grid and is harsh to the eye._
 
-<grid-wrapper col_lg="8" flex=true>
-    <do-dont-example correct=true label="When removing an item from the grid, thumbnails on the edge existing and re-entering container create a smooth transition.">
-        `vimeo: https://vimeo.com/310582738`
-    </do-dont-example>
-    <do-dont-example correct=false label="Thumbnails moving on diagonal paths feels sporadic and harsh.">
-        `vimeo: https://vimeo.com/310582775`
-    </do-dont-example>
+<grid-wrapper col_lg="8" flex="true">
+<do-dont-example correct=true label="When removing an item from the grid, thumbnails on the edge existing and re-entering container create a smooth transition.">
+
+`vimeo: https://vimeo.com/310582738`
+
+</do-dont-example>
+<do-dont-example correct="false" label="Thumbnails moving on diagonal paths feels sporadic and harsh.">
+
+`vimeo: https://vimeo.com/310582775`
+
+</do-dont-example>
 </grid-wrapper>
 
-<grid-wrapper col_lg="8" flex=true>
-    <do-dont-example correct=true label="When sorting or shuffling items on the grid, always using rounded corner paths to visually organize the movements.">
-        `vimeo: https://vimeo.com/310582816`
-    </do-dont-example>
-    <do-dont-example correct=false label="Criss cross sorting appears disorganized. Avoid this motion path.">
-        `vimeo: https://vimeo.com/310582851`
-    </do-dont-example>
+<grid-wrapper col_lg="8" flex="true">
+<do-dont-example correct="true" label="When sorting or shuffling items on the grid, always using rounded corner paths to visually organize the movements.">
+
+`vimeo: https://vimeo.com/310582816`
+
+</do-dont-example>
+<do-dont-example correct="false" label="Criss cross sorting appears disorganized. Avoid this motion path.">
+
+`vimeo: https://vimeo.com/310582851`
+
+</do-dont-example>
 </grid-wrapper>
 
 ## Composition
@@ -66,13 +74,17 @@ _When the new content panel is on the same layer, motion is “expanding”, rev
 
 Effective use of inconsistency in motion highlights a difference in meaning or intent behind actions with similar visual appearance.
 
-<grid-wrapper col_lg="8" flex=true>
-    <do-dont-example correct=true label="Use motion to reinforce meaning. Affirmative action here triggers a different exit motion for the modal than negation.">
-        `vimeo: https://vimeo.com/310582134`
-    </do-dont-example>
-    <do-dont-example correct=false label="Criss cross sorting appears disorganized. Avoid this motion path.">
-        `vimeo: https://vimeo.com/310582167`
-    </do-dont-example>
+<grid-wrapper col_lg="8" flex="true">
+<do-dont-example correct=true label="Use motion to reinforce meaning. Affirmative action here triggers a different exit motion for the modal than negation.">
+
+`vimeo: https://vimeo.com/310582134`
+
+</do-dont-example>
+<do-dont-example correct="false" label="Criss cross sorting appears disorganized. Avoid this motion path.">
+
+`vimeo: https://vimeo.com/310582167`
+
+</do-dont-example>
 </grid-wrapper>
 
 ### Continuity
@@ -83,10 +95,12 @@ Motion can help establishing a sense of continuity between screens and experienc
 
 _Shared elements can effectively guide users through a multi-layered information architecture._
 
-<grid-wrapper col_lg="8" flex=true>
-    <do-dont-example correct=false label="Continuous elements are for guidance and should not distract. Always finish a sequence with the important content on page.">
-        `vimeo: https://vimeo.com/310582279`
-    </do-dont-example>
+<grid-wrapper col_lg="8" flex="true">
+<do-dont-example correct="false" label="Continuous elements are for guidance and should not distract. Always finish a sequence with the important content on page.">
+
+`vimeo: https://vimeo.com/310582279`
+
+</do-dont-example>
 </grid-wrapper>
 
 ### Sequence & Stagger

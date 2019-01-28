@@ -36,12 +36,20 @@ Duo motion recognizes different moments in user's experience, and offers two mod
         </div>
       </grid-wrapper>
     </div></tab>
-  <tab label="Abstract"><div>
-      `vimeo: https://vimeo.com/310583009`
-  </div></tab>
-  <tab label="In-situ"><div>
-      `vimeo: https://vimeo.com/310583036`
-  </div></tab>
+<tab label="Abstract">
+<div>
+
+`vimeo: https://vimeo.com/310583009`
+
+</div>
+</tab>
+<tab label="In-situ">
+<div>
+
+`vimeo: https://vimeo.com/310583036`
+
+</div>
+</tab>
 </website-tabs>
 
 
