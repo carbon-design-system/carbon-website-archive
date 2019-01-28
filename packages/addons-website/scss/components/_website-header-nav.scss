@@ -37,12 +37,12 @@ a.#{$prefix}--header__menu-item[role='menuitem']:hover {
 
 // Active
 a.#{$prefix}--header__menu-item[role='menuitem'][aria-current='page'],
-.bx--header .submenu--active > a.bx--header__menu-item {
+.#{$prefix}--header .submenu--active > a.#{$prefix}--header__menu-item {
   background: $ibm-colors__gray-90;
 }
 
 a.#{$prefix}--header__menu-item[role='menuitem'][aria-current='page']:after,
-.bx--header .submenu--active > a.bx--header__menu-item:after {
+.#{$prefix}--header .submenu--active > a.#{$prefix}--header__menu-item:after {
   content: '';
   width: calc(100% + 4px);
   position: absolute;
