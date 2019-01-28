@@ -70,10 +70,10 @@
   }
 }
 
-.component-docs table,
- {
+.component-docs table {
   width: calc(100% + 2rem);
   margin-left: -1rem;
+  margin-top: rem(16px);
 
   @include breakpoint('md') {
     max-width: 75%;
