@@ -17,7 +17,7 @@ For specific capitalization rules for different element or component types, see 
 Use sentence-style capitalization in text and for all text elements in the UI, except for table/grid column headers, headings for groups of toggles, and product names. Sentence style capitalizes only the first word of each sentence and proper nouns
 (such as names).
 
-**Examples:**
+#### Examples:
 
 - Cloud Foundry apps
 - Business models
@@ -28,7 +28,7 @@ Use sentence-style capitalization in text and for all text elements in the UI, e
 
 Only use headline-style capitalization for table/grid column headers and product names. Headline style capitalizes words based on parts of speech.
 
-**Capitalize the initial letter of the following words:**
+#### Capitalize the initial letter of the following words:
 
 - All nouns, pronouns, adjectives, verbs, adverbs, and subordinating conjunctions such as:
   - After
@@ -46,7 +46,7 @@ Only use headline-style capitalization for table/grid column headers and product
   - Whether
   - While
 
-**Do not capitalize the initial letter of the following words:**
+#### Do not capitalize the initial letter of the following words:
 
 - articles, except as the first word
 - coordinating conjunctions

@@ -13,7 +13,7 @@
 
   h2 {
     margin-top: 4rem !important;
-    padding-bottom: 2rem !important;
+    padding-bottom: 0 !important;
   }
 
   .glossary-entry__desc {
@@ -22,10 +22,14 @@
 
   .glossary-entry__word {
     padding-bottom: 1.5rem;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
   }
 
   .glossary-entry__word-heading {
-    padding-top: 1rem;
+    padding-top: rem(24px);
     padding-bottom: 0.5rem;
     @include type-style('heading-03');
   }
@@ -34,10 +38,11 @@
     @include type-style('body-short-02');
     color: $text-02;
     margin-top: 0.25rem;
+    padding-bottom: 0;
   }
 
   .glossary-entry__list {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
 }
 

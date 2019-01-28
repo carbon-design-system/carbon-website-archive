@@ -61,7 +61,7 @@ When used next to text, icons should be center-aligned.
 
 ### Using SVG sprite (recommended)
 
-**Requirements:**
+#### Requirements:
 
 - Install `carbon-icons`
 

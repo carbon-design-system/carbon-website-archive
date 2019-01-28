@@ -3,7 +3,7 @@
   max-width: 100%;
   display: block;
   color: $ibm-colors__white;
-  margin-bottom: 6rem;
+  margin-bottom: rem(24px);
 
   p {
     margin: 0;
@@ -19,7 +19,7 @@
   min-height: rem(200px);
   position: relative;
   padding: 2rem 2rem 2.5rem;
-  margin: 1.5rem 0 0;
+  margin: 0;
   background-color: $ui-02;
   color: $text-01;
   border: 1rem solid $ui-02;
