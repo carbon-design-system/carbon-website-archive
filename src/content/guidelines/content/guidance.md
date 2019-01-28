@@ -79,14 +79,14 @@ These more complex tenses, when used excessively, can be more difficult for read
 
 ## Active and passive voice
 
-The _active voice_ is direct and punchy, and emphasizes the subject of the verb. When a sentence is written in active voice, the subject performs an action, denoted by the verb—the subject "acts upon" the verb in these sentences. For example, "John ate the apple." In situations where either voice will work, generally choose the active voice for more directness.
+The _active voice_ is direct and punchy, and emphasizes the subject of the sentence. The subject clearly "acts upon" the verb (hence, "active"). For example, "John ate the apple." In situations where either voice will work, generally choose the active voice for more directness.
 
 <grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Active Voice" text='"Next, the admin configures access privileges."'></do-dont-example>
     <do-dont-example label='Passive Voice' text='"Next, access privileges are configured by the admin."'></do-dont-example>
 </grid-wrapper>
 
-The _passive voice_, on the other hand, flips the construction so that the subject is secondary to the verb and object (hence, passive). Often, the subject is not even included in the sentence. For example, "_The apple was eaten by John_" or just "_The apple was eaten_". Only sentences that contain direct objects can be reconstructed into the passive voice. Thus, "_John ate_" cannot be constructed passively.  
+The _passive voice_, on the other hand, flips the construction so that the subject is secondary to the verb and object (hence, "passive"). Often, the subject is not even included in the sentence. For example, "_The apple was eaten by John_" or just "_The apple was eaten_." Only sentences that contain direct objects can be constructed in the passive voice. Thus, "_John ate_" cannot be constructed passively.
 
  The passive voice makes for a more natural tone in certain use cases. For example, if the true subject of the sentence is a system, and the human is secondary, passive voice can be acceptable.  
 
