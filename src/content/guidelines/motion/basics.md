@@ -24,28 +24,32 @@ tabs: ['Basics', 'Choreography', 'Resources']
 Duo motion recognizes different moments in user's experience, and offers two modes - the Productive motion, and the Expressive motion. The motion curves are designed to reflect the philosophical duality of Man and Machine.
 
 <website-tabs>
-  <tab label="Curves"><div>
-      <grid-wrapper col_lg="8" flex="true">
-        <div>
-          <p>Productive</p>
-          <img src="images/Motion_overview_Curves_productive.svg" alt="Curve graphs representing differences between Productive and Expressive animation curves" />
-        </div>
-        <div>
-          <p>Expressive</p>
-          <img src="images/Motion_overview_Curves_expressive.svg" alt="Curve graphs representing differences between Productive and Expressive animation curves" />
-        </div>
-      </grid-wrapper>
-    </div></tab>
-  <tab label="Abstract"><div>
-    
+<tab label="Curves"><div>
+
+test
+
+<grid-wrapper col_lg="8" flex="true">
+<div>
+<p>Productive</p>
+<img src="images/Motion_overview_Curves_productive.svg" alt="Curve graphs representing differences between Productive and Expressive animation curves" />
+</div>
+<div>
+<p>Expressive</p>
+<img src="images/Motion_overview_Curves_expressive.svg" alt="Curve graphs representing differences between Productive and Expressive animation curves" />
+</div>
+</grid-wrapper>
+
+</div></tab>
+<tab label="Abstract"><div>
+
 `vimeo: https://vimeo.com/310583009`
-      
-  </div></tab>
-  <tab label="In-situ"><div>
-    
+
+</div></tab>
+<tab label="In-situ"><div>
+
 `vimeo: https://vimeo.com/310583036`
-      
-  </div></tab>
+
+</div></tab>
 </website-tabs>
 
 
@@ -80,20 +84,20 @@ Avoid easing curves that are unnatural, distracting, or decorative should be avo
 Use `standard-easing` when an element is visible from the beginning to  end of a motion. Tiles expanding and table rows sorting are good examples.
 
 <website-tabs>
-  <tab label="Curves">
-    <div>
-      
+<tab label="Curves">
+<div>
+
 `vimeo: https://vimeo.com/310582611`
-    
-    </div>
-  </tab>
-  <tab label="Examples">
-    <div>
-      
+
+</div>
+</tab>
+<tab label="Examples">
+<div>
+
 `vimeo: https://vimeo.com/310582667`
 
-    </div>
-  </tab>
+</div>
+</tab>
 </website-tabs>
 
 | Curves        | Productive                      | Expressive                      |
@@ -106,20 +110,20 @@ Use `standard-easing` when an element is visible from the beginning to  end of a
 Use `entrance-ease` when adding elements to the view such as a modal or toaster appearing, or moving in response to users' input, such as dropdown opening or toggle. An element quickly appears and slows down to a stop.
 
 <website-tabs>
-  <tab label="Curves">
-    <div>
-      
+<tab label="Curves">
+<div>
+
 `vimeo: https://vimeo.com/310582467`
-    
-    </div>
-  </tab>
-  <tab label="Examples">
-    <div>
-      
+
+</div>
+</tab>
+<tab label="Examples">
+<div>
+
 `vimeo: https://vimeo.com/310582503`
-    
-    </div>
-  </tab>
+
+</div>
+</tab>
 </website-tabs>
 
 | Curves        | Productive                      | Expressive                      |
@@ -132,20 +136,20 @@ Use `entrance-ease` when adding elements to the view such as a modal or toaster 
 Use `exit-easing` when removing elements from view, such as closing a modal or toaster. The element speeds up as it exits from view, implying that its departure from the screen is permanent.
 
 <website-tabs>
-  <tab label="Curves">
-    <div>
-      
+<tab label="Curves">
+<div>
+
 `vimeo: https://vimeo.com/310582530`
-    
-    </div>
-  </tab>
-  <tab label="Examples">
-    <div>
-      
+
+</div>
+</tab>
+<tab label="Examples">
+<div>
+
 `vimeo: https://vimeo.com/310582574`
-    
-    </div>
-  </tab>
+
+</div>
+</tab>
 </website-tabs>
 
 | Curves        | Productive                      | Expressive                      |
