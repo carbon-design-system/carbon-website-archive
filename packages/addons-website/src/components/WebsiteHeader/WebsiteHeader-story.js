@@ -73,7 +73,10 @@ storiesOf('Website Header', module)
               <HeaderMenuItem href="#">Link 2</HeaderMenuItem>
               <HeaderMenuItem href="#">Link 3</HeaderMenuItem>
             </HeaderMenu>
-            <HeaderMenu aria-label="Manage active" className="submenu--active">
+            <HeaderMenu
+              aria-label="Manage active"
+              aria-current="page"
+              className="submenu--active">
               <HeaderMenuItem href="#">Link 1</HeaderMenuItem>
               <HeaderMenuItem href="#" aria-current="page">
                 Current
