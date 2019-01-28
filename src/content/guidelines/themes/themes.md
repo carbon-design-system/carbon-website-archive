@@ -3,17 +3,28 @@ label: Themes are used to customize component styles to fit the specific aesthet
 title: Themes
 ---
 
+<anchor-links>
+<ul>
+    <li><a href="#introduction-to-theming">Introduction to theming</a></li>
+    <li><a href="#default-theme">Default theme</a></li>
+    <li><a href="#customizing-a-theme">Customizing a theme</a></li>
+    <li><a href="#tokens">Tokens</a></li>
+    <li><a href="#theming-applied">Theming applied</a></li>
+</ul>
+</anchor-links>
+
 ## Introduction to theming
 
-Developers and designers can use theming to modify existing components to fit their own specific visual styles. Rather than changing each individual component's CSS or building modified components from scratch, components can instead be easily customized by changing a set of universal variables we call tokens that seamlessly propagate changes across all of the system.
+Themes are used to modify existing components to fit a specific visual style. By using Carbon's tokens, developers can easily customize all of their components by changing a set of universal variables, eliminating the need to modify individual components.
+
 
 <grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
-    title="Theming Sandbox"
+    title="Theming sandbox"
     href="http://themes.carbondesignsystem.com/"
     type="resource"
     >
-    <img src="images/sandbox-icon.png" alt="Theming Sandbox" />
+    <img src="images/sandbox-icon.png" alt="Theming sandbox" />
 </clickable-tile>
 </grid-wrapper>
 
@@ -21,20 +32,18 @@ Developers and designers can use theming to modify existing components to fit th
 
 | Term      | Definition                                                                                                  |
 | --------- | ----------------------------------------------------------------------------------------------------------- |
-| **Theme** | The set of unique values assigned to each token.                                                            |
+| **Theme** | The set of unique values assigned to the system's tokens                                                            |
 | **Token** | The code identifier for a unique role or set of roles. Tokens are universal and never change across themes. |
-| **Role**  | The systematic usage/s of a value. Roles cannot be changed between themes.                                  |
-| **Value** | The actual style (ie hex code) assigned to a token.                                                         |
+| **Role**  | The systematic usage/s of a token. Roles cannot be changed between themes.                                  |
+| **Value** | The actual style (i.e. hex code) assigned to a token                                                         |
 
 ## Default theme
 
-The Carbon Design System has a default theme which is based off of the IBM Design Language. When `carbon-components` is downloaded and installed, they are preset to use the default theme.
-
-The default theme acts as a starting point; from there designers and developers can define how their own components and styles deviate from the default. A theme can change as little as one or all of the token values. Those different values are then packaged into a new theme scss stylesheet which will replace the values of the default theme.
+Carbon's default theme is based on the IBM Design Language, a.k.a. "Duo." When `carbon-components` is downloaded and installed, the components are preset to use the default theme.
 
 <grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
-    title="Carbon Themes"
+    title="Carbon themes"
     href="https://github.com/carbon-design-system/carbon-themes"
     type="resource"
     >
@@ -42,11 +51,76 @@ The default theme acts as a starting point; from there designers and developers 
 </clickable-tile>
 </grid-wrapper>
 
+## Customizing a theme
+
+The default theme acts as a starting point; from there designers and developers can define how their own components and styles deviate from the default. Altering one, some, or all of the default token values will result in a new theme. The developer then packages those new values into a new theme scss stylesheet which will replace the values of the default theme:
+
+1. Create a theme mixin that effectively mimics this structure, but changes up hex values as needed:
+
+```scss
+@mixin theme-white {
+  $interactive-01: #0062ff !default !global;
+  $interactive-02: #171717 !default !global;
+  $interactive-03: #0062ff !default !global;
+  $ui-background: #ffffff !default !global;
+  $ui-01: #f3f3f3 !default !global;
+  $ui-02: #ffffff !default !global;
+  $ui-03: #dcdcdc !default !global;
+  $ui-04: #8c8c8c !default !global;
+  $ui-05: #171717 !default !global;
+  $text-01: #171717 !default !global;
+  $text-02: #565656 !default !global;
+  $text-03: #8c8c8c !default !global;
+  $text-04: #ffffff !default !global;
+  $icon-01: #171717 !default !global;
+  $icon-02: #565656 !default !global;
+  $field-01: #f3f3f3 !default !global;
+  $field-02: #ffffff !default !global;
+  $inverse-01: #ffffff !default !global;
+  $inverse-02: #3d3d3d !default !global;
+  $support-01: #da1e28 !default !global;
+  $support-02: #198038 !default !global;
+  $support-03: #fdd13a !default !global;
+  $support-04: #054ada !default !global;
+  $overlay-01: rgba(23, 23, 23, 0.5) !default !global;
+  $focus: #0062ff !default !global;
+  $hover-primary: #0353e9 !default !global;
+  $active-primary: #0530ad !default !global;
+  $hover-primary-text: #054ada !default !global;
+  $hover-secondary: #4c4c4c !default !global;
+  $active-secondary: #6f6f6f !default !global;
+  $hover-tertiary: #0353e9 !default !global;
+  $active-tertiary: #0530ad !default !global;
+  $hover-ui: #e5e5e5 !default !global;
+  $active-ui: #bebebe !default !global;
+  $selected-ui: #dcdcdc !default !global;
+  $hover-selected-ui: #cacaca !default !global;
+  $hover-danger: #ba1b23 !default !global;
+  $active-danger: #750e13 !default !global;
+  $hover-row: #e5e5e5 !default !global;
+  $visited-link: #8a3ffc !default !global;
+  $disabled-01: #f3f3f3 !default !global;
+  $disabled-02: #bebebe !default !global;
+  $disabled-03: #8c8c8c !default !global;
+  $brand-01: #0062ff !default !global;
+  $brand-02: #171717 !default !global;
+  $brand-03: #0062ff !default !global;
+  $active-01: #bebebe !default !global;
+  $hover-field: #e5e5e5 !default !global;
+}
+```
+
+2. Name the mixin (i.e., instead of `theme-white`, choose a unique name)
+
+3. `@include UNIQUE-THEME-MIXIN();` in your scss, before importing component scss, etc. 
+
+Alternatively, for relatively minor changes to an existing theme, a developer can make changes on a per-token basis. For example, after importing an existing Carbon theme, she could just set something like `$interactive-01: hotpink;`.
+
 ## Tokens
 
-By using tokens the code only needs to be changed in one place to see the effect system wide. Tokens are used across all components and make it easy for them to be systematically updated while keeping global patterns and styles consistent.
+With tokens, the code only needs to be changed in one place to see the effect system-wide. Tokens are used across all components and help keep global patterns and styles consistent.
 
-All tokens come pre-baked into the Carbon component source code. Tokens are denoted by the prefix `$` (eg. `$ui-01`). Tokens can also be nested within other tokens. For example `$interactive-01` calls the IBM Design Language color palette token `$ibm-color__blue--60` for its value in the default theme.
+All tokens come pre-baked into the Carbon component source code. Tokens are denoted by the prefix `$` (e.g. `$ui-01`). Tokens can also be nested within other tokens. For example, `$interactive-01` calls the IBM Design Language color palette token `$ibm-color__blue--60` for its value in the default theme.
 
 There are several token categories:
 
@@ -57,7 +131,7 @@ There are several token categories:
 
 ### Color
 
-Each theme is assigned 38 universal color variables, which are determined by [common roles and usage](/guidelines/color/usage). This allows for uniform color application across themes while giving each theme the freedom to express its own personality.
+Each theme is assigned 38 universal color variables, which are determined by [common roles and usage](/guidelines/color/usage). This allows for uniform color application across themes while maintaining full styling flexibility.
 
 ```scss
 //// _color-tokens
@@ -106,7 +180,7 @@ $disabled-03: $ibm-colors__gray--50 !default !global;
 
 ### Spacing
 
-Carbon has two spacing scales, one for general spacing within components and the other for layout spacing. Both are designed to compliment the components and typography throughout the system. Each scale has its own [distinct purpose](/guidelines/spacing). The two scales have certain overlapping
+Carbon has two spacing scales, one for general spacing within components and the other for layout spacing. Both are designed to complement the components and typography throughout the system. Each scale has its own [distinct purpose](/guidelines/spacing). The two scales have certain overlapping values that serve two different roles, so be mindful when choosing a spacing token.
 
 ```scss
 //// _spacing
@@ -136,7 +210,7 @@ $layout-2xl: $spacing-baseline * 10 !default;
 
 ### Typography
 
-Typography has four categories (universal, productive, editorial and additional) of type styles that can be customized through tokens. These tokens are used both within components and across layouts. Type tokens are determine by their [role](/guidelines/typography/product) in across system.
+Typography has four categories of type styles (universal, productive, editorial, and additional) that can be customized through tokens. These tokens are used both within components and across layouts. Type tokens are determined by their [role](/guidelines/typography/productive) across the system.
 
 ```scss
 // Universal
@@ -470,7 +544,7 @@ $display-04: (
 
 ### Global
 
-The other categories are global and component specific variables. These control more general styling of components, such as layer usage or border width.
+The other categories are global and component-specific variables. These control more general styling of components, such as layer usage or border width.
 
 ```scss
 // Global
@@ -577,7 +651,7 @@ $skeleton: rgba(
 
 ## Theming applied
 
-The following example demonstrates the relationship between the different themes. Each theme shares the same variables and roles, with only the value changing according to each individual theme.
+The following example demonstrates the relationship between the different themes. Each theme shares the same variables and roles, with only the value changing for each individual theme.
 
 ![Default theme applied](images/themes-1.svg)
 
