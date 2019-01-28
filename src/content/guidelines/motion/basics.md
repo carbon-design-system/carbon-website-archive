@@ -21,12 +21,28 @@ tabs: ['Basics', 'Choreography', 'Resources']
 
 ## Style
 
+<website-tabs>
+<tab label="Tab 1"><div>
+
+lorem ipsum dolor sit amet
+
+</div></tab>
+<tab label="Tab 2"><div>
+
+Content for second tab goes here.
+
+</div></tab>
+<tab label="Tab 3"><div>
+
+Content for third tab goes here.
+
+</div></tab>
+</website-tabs>
+
 Duo motion recognizes different moments in user's experience, and offers two modes - the Productive motion, and the Expressive motion. The motion curves are designed to reflect the philosophical duality of Man and Machine.
 
 <website-tabs>
 <tab label="Curves"><div>
-
-test
 
 <grid-wrapper col_lg="8" flex="true">
 <div>
