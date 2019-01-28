@@ -143,3 +143,10 @@ p.example__description {
 .example span.gatsby-resp-image-wrapper {
   max-width: 100% !important; // marked !important to overcome inline styles inserted by gatsby.
 }
+
+// Example video content
+.example__content .gatsby-resp-iframe-wrapper {
+  padding-bottom: 0 !important;
+  height: 100% !important;
+  position: static !important;
+}
