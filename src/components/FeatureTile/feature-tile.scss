@@ -88,7 +88,7 @@ a.feature-tile.feature-tile--desktop {
 
 div.feature-tile--margin.feature-tile--mobile,
 div.feature-tile--mobile {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 
   @include breakpoint('md') {
     margin-bottom: 0;
@@ -101,7 +101,7 @@ div.feature-tile--desktop
   margin-bottom: 0;
 
   @include breakpoint('md') {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 
     & > .ibm--col-lg-12 {
       padding: 0;

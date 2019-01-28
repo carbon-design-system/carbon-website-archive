@@ -5,6 +5,7 @@ a.tile--article {
   text-decoration: none;
   color: $text-01;
   flex-direction: column;
+  justify-content: space-between;
   padding: 0;
   background: $ibm-colors__white;
   margin: 1rem;
@@ -36,7 +37,8 @@ a.tile--article {
       margin-right: 1rem;
     }
 
-    &:last-child {
+    &:last-child,
+    &:nth-child(3n + 3) {
       margin-right: 0;
     }
   }
@@ -73,8 +75,16 @@ a.tile--article.tile--dark:hover {
   justify-content: space-between;
   padding: $spacing-md;
 
+  @include breakpoint('md') {
+    padding-right: 30%;
+  }
+
+  @include breakpoint('lg') {
+    padding-right: 1rem;
+  }
+
   @include breakpoint('xlg') {
-    padding-right: 25%;
+    padding-right: 30%;
   }
 }
 
@@ -92,7 +102,6 @@ a.tile--article.tile--dark:hover {
   @include type-style('caption-01');
   padding: 0;
   max-width: 75%;
-  color: #bebebe;
 }
 
 // Tile Resource
@@ -278,3 +287,9 @@ a.tile--article.tile--dark:hover {
     border-color: $ibm-colors__black;
   }
 }
+
+a.tile--article.tile--dark .tile__caption p {
+  color: #bebebe;
+}
+
+
