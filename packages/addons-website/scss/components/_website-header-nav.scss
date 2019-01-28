@@ -20,14 +20,14 @@
 a.#{$prefix}--header__menu-item[role='menuitem'] {
   @include type-style('body-short-02');
   position: relative;
-  color: $ibm-colors__white;
+  color: $ibm-colors__gray-10;
   border-width: 2px;
 }
 
 // Hover
 a.#{$prefix}--header__menu-item[role='menuitem']:hover {
-  background-color: $ibm-colors__gray-90;
-  color: $ibm-colors__white;
+  background-color: #2c2c2c;
+  color: $ibm-colors__gray-10;
 }
 
 // Item with dropdown
@@ -35,7 +35,7 @@ a.#{$prefix}--header__menu-item[role='menuitem']:hover {
   background: $ibm-colors__gray-90;
 }
 
-// Active
+// Selected
 a.#{$prefix}--header__menu-item[role='menuitem'][aria-current='page'],
 .#{$prefix}--header .submenu--active > a.#{$prefix}--header__menu-item {
   background: $ibm-colors__gray-90;
@@ -49,6 +49,11 @@ a.#{$prefix}--header__menu-item[role='menuitem'][aria-current='page']:after,
   left: -2px;
   bottom: -2px;
   border-top: 4px solid $ibm-colors__blue-60;
+}
+
+//Active
+a.#{$prefix}--header__menu-item[role='menuitem']:active {
+  background: $ibm-colors__gray-80;
 }
 
 //----------------------------
@@ -71,15 +76,22 @@ a.#{$prefix}--header__menu-item[role='menuitem'][aria-current='page']:after,
   background: #353535; //$hover-ui gray 90 theme
 }
 
-// Active
+// Selected
 .#{$prefix}--header__menu
   .#{$prefix}--header__menu-item[role='menuitem'][aria-current='page'] {
   color: $ibm-colors__gray-10;
   font-weight: 600;
-  background: #353535; //$hover-ui gray 90 theme
+  background: $ibm-colors__gray-80;
 }
 
 .#{$prefix}--header__menu
   .#{$prefix}--header__menu-item[role='menuitem'][aria-current='page']:after {
   display: none;
+}
+
+// Focus/Active
+.#{$prefix}--header__menu
+  .#{$prefix}--header__menu-item[role='menuitem']:active {
+  color: $ibm-colors__gray-10;
+  background: $ibm-colors__gray-70;
 }
