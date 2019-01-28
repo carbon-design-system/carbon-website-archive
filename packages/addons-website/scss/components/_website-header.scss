@@ -22,6 +22,11 @@
 a.#{$prefix}--header__name {
   @include type-style('body-short-02');
   font-weight: 600;
+  padding-left: 0;
+
+  @include breakpoint('lg') {
+    padding-left: 1rem;
+  }
 }
 
 .#{$prefix}--header__name--prefix {

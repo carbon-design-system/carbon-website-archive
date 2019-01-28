@@ -38,7 +38,7 @@ a.#{$prefix}--header__menu-item[role='menuitem']:hover {
 // Selected
 a.#{$prefix}--header__menu-item[role='menuitem'][aria-current='page'],
 .#{$prefix}--header .submenu--active > a.#{$prefix}--header__menu-item {
-  background: $ibm-colors__gray-90;
+  background: transparent;
 }
 
 a.#{$prefix}--header__menu-item[role='menuitem'][aria-current='page']:after,
@@ -59,6 +59,26 @@ a.#{$prefix}--header__menu-item[role='menuitem']:active {
 //----------------------------
 // Drop down nav
 //----------------------------
+.#{$prefix}--header__menu .#{$prefix}--header__menu-item[role='menuitem']:after,
+.#{$prefix}--header__menu
+  .#{$prefix}--header__menu-item[role='menuitem'][aria-current='page']:after {
+  content: '';
+  width: calc(100% - 16px);
+  position: absolute;
+  left: 8px;
+  bottom: -3px;
+  border-top: none;
+  border-bottom: 1px solid $ibm-colors__gray-70;
+}
+
+.#{$prefix}--header__menu
+  .#{$prefix}--header__menu-item[role='menuitem']:hover:after,
+.#{$prefix}--header__menu
+  li:last-child
+  .#{$prefix}--header__menu-item[role='menuitem']:after {
+  display: none;
+}
+
 .#{$prefix}--header__menu-title[role='menuitem'][aria-expanded='true']
   + .#{$prefix}--header__menu {
   background: $ibm-colors__gray-90;
