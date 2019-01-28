@@ -49,6 +49,7 @@ Duo motion recognizes different moments in user's experience, and offers two mod
   </div></tab>
 </website-tabs>
 
+
 ### Productive
 
 Productive motion create a sense of efficiency and responsiveness, while being subtle. Use productive motion for moments when user needs to focus on tasks — micro-interactions such as button interaction and dropdown menus, revealing additional information upon user's request, or rendering data tables and visualizations.
@@ -61,9 +62,9 @@ Productive and Expression are both essential to an interface. Reserve Expressive
 
 Our [Components](#) have Duo motion build in. Use this guidance to customize motion, combine and coordinate motion through out experiences.
 
-[ VIDEO ]
-caption:
-Productive moments are labeled blue, and expressive moments are labeled magenta.
+`vimeo: https://vimeo.com/310583077`
+
+_Productive moments are labeled blue, and expressive moments are labeled magenta._
 
 ## Easing
 
