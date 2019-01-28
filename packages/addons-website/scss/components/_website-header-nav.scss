@@ -1,0 +1,83 @@
+//----------------------------
+// Header Navigation
+//----------------------------
+
+.#{$prefix}--header__nav {
+  margin-left: auto;
+  display: none;
+
+  @include breakpoint('lg') {
+    display: block;
+    position: absolute;
+    left: 25%; //to align 4 columns over
+    top: 0;
+  }
+}
+
+//----------------------------
+// Top level nav
+//----------------------------
+a.#{$prefix}--header__menu-item[role='menuitem'] {
+  @include type-style('body-short-02');
+  position: relative;
+  color: $ibm-colors__white;
+  border-width: 2px;
+}
+
+// Hover
+a.#{$prefix}--header__menu-item[role='menuitem']:hover {
+  background-color: $ibm-colors__gray-90;
+  color: $ibm-colors__white;
+}
+
+// Item with dropdown
+.#{$prefix}--header__menu-title[role='menuitem'][aria-expanded='true'] {
+  background: $ibm-colors__gray-90;
+}
+
+// Active
+a.#{$prefix}--header__menu-item[role='menuitem'][aria-current='page'] {
+  background: $ibm-colors__gray-90;
+}
+
+a.#{$prefix}--header__menu-item[role='menuitem'][aria-current='page']:after {
+  content: '';
+  width: calc(100% + 4px);
+  position: absolute;
+  left: -2px;
+  bottom: -2px;
+  border-top: 4px solid $ibm-colors__blue-60;
+}
+
+//----------------------------
+// Drop down nav
+//----------------------------
+.#{$prefix}--header__menu-title[role='menuitem'][aria-expanded='true']
+  + .#{$prefix}--header__menu {
+  background: $ibm-colors__gray-90;
+}
+
+.#{$prefix}--header__menu .#{$prefix}--header__menu-item[role='menuitem'] {
+  @include type-style('body-short-01');
+  color: $ibm-colors__gray-30;
+}
+
+// Hover
+.#{$prefix}--header__menu
+  .#{$prefix}--header__menu-item[role='menuitem']:hover {
+  color: $ibm-colors__gray-10;
+  background: #353535; //$hover-ui gray 90 theme
+}
+
+// Active
+.#{$prefix}--header__menu
+  .#{$prefix}--header__menu-item[role='menuitem'][aria-current='page'] {
+  color: $ibm-colors__gray-10;
+  font-weight: 600;
+  background: #353535; //$hover-ui gray 90 theme
+}
+
+.#{$prefix}--header__menu
+  .#{$prefix}--header__menu-item[role='menuitem'][aria-current='page']:after {
+  display: none;
+}
