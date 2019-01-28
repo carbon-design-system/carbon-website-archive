@@ -1,69 +1,53 @@
-// .container--expanded .fourohfour-container {
-//   @include breakpoint('1020px') {
-//     padding-left: 0px;
-//   }
-// }
+.page-content.fourohfour {
+  position: relative;
+  padding-top: rem(48px);
+  min-height: rem(800px);
+  background-color: $ibm-colors__gray-100;
+}
 
-// .fourohfour-container {
-//   position: absolute;
-//   background-color: #f9f9fd;
-//   left: 50%;
-//   top: 50%;
-//   transform: translate(-50%, -50%);
-//   width: 100%;
-//   height: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   user-select: none;
+.fourohfour-repeat {
+  position: absolute;
+  top: 0;
+  left: 19%;
+}
 
-//   .fourohfour-large {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     margin-top: rem(-217px);
-//     width: 80%;
+p.fourohfour-repeat__text {
+  font-size: rem(200px);
+  font-weight: 600;
+  color: $ibm-colors__gray-90;
+  padding: 0;
+  line-height: 1;
+  z-index: 2;
 
-//     img {
-//       max-width: rem(500px);
-//       width: 100%;
-//     }
+  &:nth-child(1) {
+    top: 25%;
+  }
+  &:nth-child(2) {
+    top: 50%;
+  }
+  &:nth-child(3) {
+    top: 75%;
+  }
+}
 
-//     @include breakpoint('768px') {
-//       margin-top: rem(-112px);
-//     }
-//   }
+.fourohfour-body {
+  z-index: 3;
+}
 
-//   .fourohfour-caption {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     padding: 1rem 2rem;
+.anchor-links.anchor-links--small.fourohfour-body__anchor-links .page-ul {
+  margin-top: rem(24px);
+}
 
-//     .fourohfour-title {
-//       text-align: center;
-//       font-weight: 300;
-//       font-size: rem(20px);
-//       margin-bottom: 1rem;
-//       color: $text-01;
+.fourohfour-body__heading {
+  font-size: rem(28px);
+  line-height: rem(36px);
+  margin-bottom: rem(24px);
+}
 
-//       @include breakpoint('768px') {
-//         font-size: rem(28px);
-//       }
-//     }
-
-//     .fourohfour-sub {
-//       font-weight: 400;
-//       font-size: rem(14px);
-//       color: $text-02;
-//       text-align: center;
-//     }
-
-//     a {
-//       font-weight: 400;
-//       color: #3869f4;
-//       font-size: rem(14px);
-//     }
-//   }
-// }
+.fourohfour-body__heading,
+.fourohfour-body__text,
+.fourohfour-body__anchor-links.anchor-links--small .page-ul > li a,
+.fourohfour-body__anchor-links.anchor-links--small .page-ul > li a::before
+ {
+  color: $ibm-colors__gray-10;
+}
