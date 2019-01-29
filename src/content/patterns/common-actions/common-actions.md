@@ -29,7 +29,6 @@ title: Common Actions
 **Usage:** Use a _secondary button_ or a _link_.
 
 ![Example of cancel in a modal](images/common-action-1.svg)
-
 _"Cancel" action as a button._
 
 ### Clear

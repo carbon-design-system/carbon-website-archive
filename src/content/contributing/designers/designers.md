@@ -16,11 +16,11 @@ Carbon has three different levels of contribution. Click on the contribution lev
 
 If you are not sure which model your contribution fits into, open an issue in one our repos and we will figure out which model it falls into.
 
-**Not sure where to open an issue?**
+#### Not sure where to open an issue?
 
 All contribution proposals should be opened in the [carbon-contribution repo](https://github.com/carbon-design-system/carbon-contribution). This includes light, medium, and heavy contributions (all components, icons, guideline updates, etc.).
 
-**Not sure how to submit an issue?**
+#### Not sure how to submit an issue?
 
 It's not so bad, we promise! You can read a [tutorial](https://help.github.com/articles/creating-an-issue/) on GitHub to get familiar with best practices.
 

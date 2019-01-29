@@ -3,21 +3,20 @@ label: Motion can bring your work to life, guide users through complex experienc
 title: Motion
 tabs: ['Basics', 'Choreography', 'Resources']
 ---
+## Get started
+
+<grid-wrapper col_lg="8" flex="true" bleed="true">
+  <clickable-tile title="Motion Generator" href="https://ibm.github.io/motion/" type="resource"></clickable-tile>
+  <clickable-tile title="IBM Motion Package" href="https://github.com/IBM/carbon-elements/tree/master/packages/motion" type="resource"></clickable-tile>
+</grid-wrapper>
 
 <anchor-links>
 <ul>
-    <li><a href="#get-started">Get started</a></li>
     <li><a href="#style">Style</a></li>
     <li><a href="#easing">Easing</a></li>
     <li><a href="#duration">Duration</a></li>
 </ul>
 </anchor-links>
-
-## Get started
-
-<grid-wrapper col_lg="8" flex="true" bleed="true">
-  <clickable-tile title="Motion Generator" href="https://ibm.github.io/motion/" type="resource"></clickable-tile>
-</grid-wrapper>
 
 ## Style
 
@@ -60,9 +59,9 @@ Productive motion create a sense of efficiency and responsiveness, while being
 
 Expressive motion delivers enthusiastic and vibrant, thus more visible movement. Use expressive motion for significant moments such as user opening a new page or clicking the primary action button, or when the movement itself conveys a meaning or needs to be noticed by the user such as system alert or notification box appearing.
 
-Productive and Expression are both essential to an interface. Reserve Expressive motion for occational, important moments to better capture user’s attention, and offer rhymic break to the productive experience.
+Productive and Expression are both essential to an interface. Reserve Expressive motion for occasional, important moments to better capture user’s attention, and offer rhythmic break to the productive experience.
 
-Our [Components](#) have Duo motion build in. Use this guidance to customize motion, combine and coordinate motion through out experiences.
+Our [Components](http://localhost:8000/components/overview) have Duo motion build in. Use this guidance to customize motion, combine and coordinate motion through out experiences.
 
 `vimeo: https://vimeo.com/310583077`
 
@@ -156,13 +155,13 @@ Use `exit-easing` when removing elements from view, such as closing a modal or t
 | CSS           | cubic-bezier(0.2, 0, 1, 0.9)    | cubic-bezier(0.4, 0.14, 1, 1)   |
 | After Effects | Outgoing 20%, incoming 0%       | Outgoing 40%, incoming 0%       |
 
-An exception to exits: if an element leaves the view but stays nearby, ready to reappear upon user action, use Standard easing instead. A good example of this is a side panel. The panel would leave the view, but slows down as it exits, implying that it would come to rest just outside the view, and ready to be recalled. Learn more about our [Space and Light](#) modal.
+An exception to exits: if an element leaves the view but stays nearby, ready to reappear upon user action, use Standard easing instead. A good example of this is a side panel. The panel would leave the view, but slows down as it exits, implying that it would come to rest just outside the view, and ready to be recalled.
 
 [ VIDEO ]
 
-### Duo Easing Curves
+### Easing Curve Summary
 
-Cubic-bezier curve notation is the standard way to express easing curves. [Duo Motion Package](#) has the easing curves stored as tokens for fast access. Reference [Code](#) tab for details on how to use motion curve tokens.
+Cubic-bezier curve notation is the standard way to express easing curves. [IBM Motion Package](https://github.com/IBM/carbon-elements/tree/master/packages/motion) has the easing curves stored as tokens for fast access.
 
 | Easing          | Productive                      | Expressive                      |
 |-----------------|---------------------------------|---------------------------------|
@@ -172,23 +171,24 @@ Cubic-bezier curve notation is the standard way to express easing curves. [Duo M
 
 ## Duration
 
-Duo motion’s duration is dynamically calculated based on the size of the animation - the larger the change in distance (traveled) or size (scaling) of the element, the longer the animation takes. Duo uses a non-linear duration scale to achieve better perceived consistency across all distances. [More about non-linear duration scale](#)
+Duration is calculated based on the style and size of the motion. Among the two motion styles, **productive** motion is significantly faster than **expressive** motion. Motion’s duration should be dynamic based on the size of the animation - the larger the change in distance (traveled) or size (scaling) of the element, the longer the animation takes.
 
 `vimeo: https://vimeo.com/310582312`
 
-Duo Components has dynamic motion build in. When creating custome motion, use the [Motion Generator](#) to get the accurate duration for you element, or watch the tutorial to learn how to use [IBM Motion Package](#)’s javascript methods to get duration like a pro.
+When custom duration is possible, please use the [Motion Generator](https://ibm.github.io/motion/) to get the customized duration calculated for you element. We uses a non-linear duration scale to achieve better perceived consistency across all distances.
 
 <grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
-    title="Motion Generator"
-    href="https://ibm.github.io/motion/"
-    type="resource"
-    >
-</clickable-tile>
-<clickable-tile
-    title="IBM Motion Package"
-    href="https://github.com/IBM/carbon-elements/tree/master/packages/motion"
-    type="resource"
-    >
+title="Motion Generator"
+href="https://ibm.github.io/motion/"
+type="resource"
+>
 </clickable-tile>
 </grid-wrapper>
+
+We are working on making dynamic duration a build-in feature for all Carbon components. Currently, we offer two static values as tokens for easier implementation.
+
+| Style          | Token                      | Value                      |
+|-----------------|---------------------------------|---------------------------------|
+| Productive | $transition--base | 100ms |
+| Expressive |   $transition--expansion | 150ms |
