@@ -186,8 +186,6 @@ type="resource"
 </clickable-tile>
 </grid-wrapper>
 
-<br><br>
-
 We are working on making dynamic duration a build-in feature for all Carbon components. Currently, we offer two static values as tokens for easier implementation.
 
 | Style          | Token                      | Value                      |
