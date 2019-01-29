@@ -190,7 +190,7 @@ Cubic-bezier curve notation is the standard way to express easing curves. [IBM M
 Duration is calculated based on the style and size of the motion. Among the two motion styles, **productive** motion is significantly faster than **expressive** motion. Motion’s duration should be dynamic based on the size of the animation - the larger the change in distance (traveled) or size (scaling) of the element, the longer the animation takes.
 
 <grid-wrapper col_lg="12" flex="true">
-<do-dont-example correct="true" full_width="true" label="Duration contrast.">
+<do-dont-example correct="true" full_width="true" label="Duration contrast between a taller and a shorter component.">
 
 `vimeo: https://vimeo.com/310582312`
 

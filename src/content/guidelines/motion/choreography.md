@@ -16,7 +16,7 @@ tabs: ['Basics', 'Choreography', 'Resources']
 Elements of our interface dance on the Grid. Motion paths trace lines along the grid which never run diagonal.
 
 
-<grid-wrapper col_lg="8" flex="true">
+<grid-wrapper col_lg="12" flex="true">
 <do-dont-example correct="true" full_width="true" label="When expanding or moving elements across the screen, stagger the timing of horizontal and vertical animations to create a path with a rounded corner.">
 
 `vimeo: https://vimeo.com/310582887`
@@ -24,7 +24,7 @@ Elements of our interface dance on the Grid. Motion paths trace lines along the 
 </do-dont-example>
 </grid-wrapper>
 
-<grid-wrapper col_lg="8" flex="true">
+<grid-wrapper col_lg="12" flex="true">
 <do-dont-example correct="false" full_width="true" label="Not staggering horizontal and vertical animations create a straight diagonal path. It breaks the grid and is harsh to the eye.">
 
 `vimeo: https://vimeo.com/310582699`
