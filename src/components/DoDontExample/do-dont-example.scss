@@ -146,6 +146,16 @@ p.example__description {
   position: relative;
 }
 
+.example--full-width .example__caption {
+  @include breakpoint('sm') {
+    width: 100%;
+  }
+
+  @include breakpoint('md') {
+    width: calc(50% - 16px);
+  }
+}
+
 .example span.gatsby-resp-image-wrapper {
   max-width: 100% !important; // marked !important to overcome inline styles inserted by gatsby.
 }
