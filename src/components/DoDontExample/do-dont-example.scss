@@ -9,7 +9,7 @@
 
 // Example
 .example {
-  margin-bottom: rem(24px);
+  margin-bottom: rem(36px);
 
   @include breakpoint('sm') {
     width: 100%;
@@ -117,7 +117,7 @@ p.example__text {
   padding: 8px 0 0 0;
 }
 
-p.example__title {
+.example__title {
   @include type-style('body-short-01');
   margin: 0;
   padding: 0;
@@ -128,7 +128,6 @@ p.example__description {
   @include font-smoothing;
   margin: 0;
   padding: 0;
-  padding-bottom: rem(24px);
 }
 
 .example.example--full-width {
