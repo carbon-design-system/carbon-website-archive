@@ -133,6 +133,11 @@ p.example__description {
 .example.example--full-width {
   width: 100%;
 }
+.example.example--full-width:first-child {
+  @include breakpoint('sm') {
+    margin-right: 0;
+  }
+}
 .example.example--full-width .example-card {
   padding-top: 0;
 }
@@ -146,7 +151,6 @@ p.example__description {
 
 // Example video content
 .example__content .gatsby-resp-iframe-wrapper {
-  padding-bottom: 0 !important;
   height: 100% !important;
   position: static !important;
 }
