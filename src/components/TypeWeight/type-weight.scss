@@ -1,12 +1,13 @@
 .type-weight {
   background: $ibm-colors__white;
   padding: $spacing-md;
+  margin-bottom: rem(24px);
 
   p {
     font-size: rem(48px);
     padding: 0;
     line-height: 1.25;
-    color: $ibm-colors__gray--80;
+    color: $ibm-colors__gray-80;
   }
 
   .ibm-type-italic {

@@ -1,6 +1,6 @@
 .page-header {
   background: $ibm-colors__black;
-  color: $inverse-02;
+  color: $inverse-01;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -22,10 +22,6 @@
 }
 
 .page-header__title {
-  // replace with type styles
-  font-size: 60px;
-  font-weight: 300;
-  line-height: 70px;
   margin-bottom: $layout-xs;
   margin-top: auto;
 }
