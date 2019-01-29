@@ -10,6 +10,50 @@
   border: 1px solid $ui-03;
 }
 
+.image-component.fixed-default {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .image-component__caption {
+    align-self: flex-start;
+  }
+
+  > span.gatsby-resp-image-wrapper {
+    background: $ui-02;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  img.gatsby-resp-image-image {
+    max-width: 720px;
+    width: 720px !important;
+    height: auto !important;
+    position: relative !important;
+  }
+}
+
+.image-component.fixed-large {
+  > span.gatsby-resp-image-wrapper {
+    background: $ui-02;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img.gatsby-resp-image-image {
+    max-width: 1120px;
+    width: 1120px !important;
+    height: auto !important;
+    position: relative !important;
+  }
+}
+
 p.image-component__caption {
   @include type-style('body-short-01');
   padding-top: rem(8px);
