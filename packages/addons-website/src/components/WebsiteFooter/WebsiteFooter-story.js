@@ -19,7 +19,8 @@ storiesOf('Website Footer', module).add(
         { href: 'https://twitter.com/_carbondesign', linkText: 'Twitter' },
       ]}>
       <p>
-        Have questions? Email us or open an issue in<br />{' '}
+        Have questions? Email us or open
+        <br /> an issue in
         <a href="#">GitHub.</a>
       </p>
       <p>
