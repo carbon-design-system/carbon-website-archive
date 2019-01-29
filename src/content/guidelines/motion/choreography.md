@@ -13,7 +13,7 @@ tabs: ['Basics', 'Choreography', 'Resources']
 
 ## Paths
 
-Elements of the Duo interface dance on the Grid. Motion paths trace lines along the grid which never run diagonal.
+Elements of our interface dance on the Grid. Motion paths trace lines along the grid which never run diagonal.
 
 `vimeo: https://vimeo.com/310582887`
 
