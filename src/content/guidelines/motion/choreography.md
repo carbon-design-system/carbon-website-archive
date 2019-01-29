@@ -15,13 +15,22 @@ tabs: ['Basics', 'Choreography', 'Resources']
 
 Elements of our interface dance on the Grid. Motion paths trace lines along the grid which never run diagonal.
 
+
+<grid-wrapper col_lg="8" flex="true">
+<do-dont-example correct="true" full_width="true" label="When expanding or moving elements across the screen, stagger the timing of horizontal and vertical animations to create a path with a rounded corner.">
+
 `vimeo: https://vimeo.com/310582887`
 
-_When expanding or moving elements across the screen, stagger the timing of horizontal and vertical animations to create a path with a rounded corner._
+</do-dont-example>
+</grid-wrapper>
+
+<grid-wrapper col_lg="8" flex="true">
+<do-dont-example correct="false" full_width="true" label="Not staggering horizontal and vertical animations create a straight diagonal path. It breaks the grid and is harsh to the eye.">
 
 `vimeo: https://vimeo.com/310582699`
 
-_Not staggering horizontal and vertical animations create a straight diagonal path. It breaks the grid and is harsh to the eye._
+</do-dont-example>
+</grid-wrapper>
 
 <grid-wrapper col_lg="8" flex="true">
 <do-dont-example correct=true label="When removing an item from the grid, thumbnails on the edge existing and re-entering container create a smooth transition.">
@@ -57,20 +66,31 @@ When multiple animated elements coexist or interact with each other within the s
 
 When elements convey the same meaning, or perform the same functions, use the same motion for them. Similarly, actions with dramatically different meaning and intente should carry different motions. This helps to reinforce the meaning behind a motion, and improves user’s proficiency with the interface.
 
+<grid-wrapper col_lg="12" flex="true">
+<do-dont-example correct="true" full_width="true" label="Both expanding a row of a data table and opening a dropdown uses a chevron. The intent is to reveal additional content hidden in a seam, therefore they should have the same motion style (productive) and easing (entrance, standard), albeit different durations due to their difference in size.">
+
 `vimeo: https://vimeo.com/310581970`
 
-_Both expanding a row of a data table and opening a dropdown uses a chevron. The intent is to reveal additional content hidden in a seam, therefore they should have the same motion style (productive) and easing (entrance, standard), albeit different durations due to their difference in size._
-
+</do-dont-example>
+</grid-wrapper>
 
 Pay attention to the spatial relationships between elements and screens, and information hierarchy. Visually similar elements may need the different motions to respect their respective spatial location.
 
+<grid-wrapper col_lg="12" flex="true">
+<do-dont-example correct="true" full_width="true" label="When the new content panel is on a higher layer, motion is “sliding”, moving content within with the panel.  Also always dim the content below when new layer is introduced above.">
+
 `vimeo: https://vimeo.com/310581999`
 
-_When the new content panel is on a higher layer, motion is “sliding”, moving content within with the panel.  Also always dim the content below when new layer is introduced above._
+</do-dont-example>
+</grid-wrapper>
+
+<grid-wrapper col_lg="12" flex="true">
+<do-dont-example correct="true" full_width="true" label="When the new content panel is on the same layer, motion is “expanding”, revealing content within with a mask.">
 
 `vimeo: https://vimeo.com/310582064`
 
-_When the new content panel is on the same layer, motion is “expanding”, revealing content within with a mask._
+</do-dont-example>
+</grid-wrapper>
 
 Effective use of inconsistency in motion highlights a difference in meaning or intent behind actions with similar visual appearance.
 
@@ -91,9 +111,13 @@ Effective use of inconsistency in motion highlights a difference in meaning or i
 
 Motion can help establishing a sense of continuity between screens and experiences. Pay attention to shared elements across screens, such as the title panels, or buttons, to create a graceful transition.
 
+<grid-wrapper col_lg="12" flex="true">
+<do-dont-example correct="true" full_width="true" label="Shared elements can effectively guide users through a multi-layered information architecture.">
+
 `vimeo: https://vimeo.com/310582206`
 
-_Shared elements can effectively guide users through a multi-layered information architecture._
+</do-dont-example>
+</grid-wrapper>
 
 <grid-wrapper col_lg="8" flex="true">
 <do-dont-example correct="false" label="Continuous elements are for guidance and should not distract. Always finish a sequence with the important content on page.">
@@ -107,13 +131,23 @@ _Shared elements can effectively guide users through a multi-layered information
 
 When multiple elements need to animate, distribute their entrances over time in stead of introducing everything at the user at once. This will help user to understand the content and orient themselves.
 
+<grid-wrapper col_lg="12" flex="true">
+<do-dont-example correct="true" full_width="true" label="Staggering the entrance of table content by 20ms significantly reduces the cognitive load. Depending on the number of staggered elements, the delay should be adjusted to ensure total time is still within 500 ms.">
+
 `vimeo: https://vimeo.com/310582972`
 
-_Staggering the entrance of table content by 20ms significantly reduces the cognitive load. Depending on the number of staggered elements, the delay should be adjusted to ensure total time is still within 500 ms._
+</do-dont-example>
+</grid-wrapper>
 
 Sequence the entrance of page content when possible. Start with the most orienting content, such as the static content* and header, and end with the most important information, such as the Call to Action button or a calculation result, to focus user’s attention to them.
 
+<grid-wrapper col_lg="12" flex="true">
+<do-dont-example correct="true" full_width="true" label="Sequencing of this interface prioritizes Call to Action button, and reserves data visualization for later when users begin to interact with it.">
+
 `vimeo: https://vimeo.com/310582919`
+
+</do-dont-example>
+</grid-wrapper>
 
 Follow this recommended sequence of different types of content when choreographing content entrance. Not all categories might be present in every experience. [Learn to categorize content in Motion Strategy ](#)
 

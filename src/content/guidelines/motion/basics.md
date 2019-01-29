@@ -63,19 +63,35 @@ Productive and Expression are both essential to an interface. Reserve Expressive
 
 Our [Components](http://localhost:8000/components/overview) have Duo motion build in. Use this guidance to customize motion, combine and coordinate motion through out experiences.
 
+<grid-wrapper col_lg="12" flex="true">
+<do-dont-example correct="true" full_width="true" label="Productive moments are labeled blue, and expressive moments are labeled magenta.">
+
 `vimeo: https://vimeo.com/310583077`
 
-_Productive moments are labeled blue, and expressive moments are labeled magenta._
+</do-dont-example>
+</grid-wrapper>
 
 ## Easing
 
 Strictly linear movement appears unnatural to the human eye. Elements on the screen speed up quickly and slow down smoothly, obeying the physics of a light-weight material. "Easing curves" describe the precise amount of accelerations in motion. We commonly use one of these three types of easing.
 
+<grid-wrapper col_lg="8" flex="true">
+<do-dont-example correct="true" full_width="true" label="Elements on the screen speed up quickly and slow down smoothly, obeying the physics of a light-weight material.">
+
 `vimeo: https://vimeo.com/310582370`
+
+</do-dont-example>
+</grid-wrapper>
 
 Avoid easing curves that are unnatural, distracting, or decorative should be avoided. Duo motion is essential and efficient. We guide the users to value as quickly as possible.
 
+<grid-wrapper col_lg="8" flex="true">
+<do-dont-example correct="false" full_width="true" label="Easing curves that suggest bounce, stretch, or sudden stops are not recommended.">
+
 `vimeo: https://vimeo.com/310582418`
+
+</do-dont-example>
+</grid-wrapper>
 
 ### Standard easing
 
@@ -173,7 +189,13 @@ Cubic-bezier curve notation is the standard way to express easing curves. [IBM M
 
 Duration is calculated based on the style and size of the motion. Among the two motion styles, **productive** motion is significantly faster than **expressive** motion. Motion’s duration should be dynamic based on the size of the animation - the larger the change in distance (traveled) or size (scaling) of the element, the longer the animation takes.
 
+<grid-wrapper col_lg="12" flex="true">
+<do-dont-example correct="true" full_width="true" label="Duration contrast.">
+
 `vimeo: https://vimeo.com/310582312`
+
+</do-dont-example>
+</grid-wrapper>
 
 When custom duration is possible, please use the [Motion Generator](https://ibm.github.io/motion/) to get the customized duration calculated for you element. We uses a non-linear duration scale to achieve better perceived consistency across all distances.
 
