@@ -4,6 +4,7 @@
 
 body {
   background: $ui-01;
+  font-family: $font-family;
 }
 
 .side-nav + div, //Issue #51 weird bug where sometimes on reload of the page the classnames on container div disapear
