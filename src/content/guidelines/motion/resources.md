@@ -35,7 +35,7 @@ Follow these steps to assess your interface for purposeful motion:
 1. Assign or determine either efficient or enthusiastic motion
 1. Prototype and test
 
-## Motion Evaluation Checklist
+## Evaluation Checklist
 
 1. Is your motion purposeful?
     - What problem is motion solving?

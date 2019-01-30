@@ -3,20 +3,22 @@ label: Motion can bring your work to life, guide users through complex experienc
 title: Motion
 tabs: ['Basics', 'Choreography', 'Resources']
 ---
-## Get started
-
-<grid-wrapper col_lg="8" flex="true" bleed="true">
-  <clickable-tile title="Motion Generator" href="https://ibm.github.io/motion/" type="resource"></clickable-tile>
-  <clickable-tile title="IBM Motion Package" href="https://github.com/IBM/carbon-elements/tree/master/packages/motion" type="resource"></clickable-tile>
-</grid-wrapper>
 
 <anchor-links>
 <ul>
+    <li><a href="#resources">Resources</a></li>
     <li><a href="#style">Style</a></li>
     <li><a href="#easing">Easing</a></li>
     <li><a href="#duration">Duration</a></li>
 </ul>
 </anchor-links>
+
+## Resources
+
+<grid-wrapper col_lg="8" flex="true" bleed="true">
+  <clickable-tile title="Motion Generator" href="https://ibm.github.io/motion/" type="resource"></clickable-tile>
+  <clickable-tile title="IBM Motion Package" href="https://github.com/IBM/carbon-elements/tree/master/packages/motion" type="resource"></clickable-tile>
+</grid-wrapper>
 
 ## Style
 
