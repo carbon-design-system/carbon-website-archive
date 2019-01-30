@@ -43,6 +43,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-plugin-catch-links`,
           `gatsby-remark-smartypants`,
           `gatsby-remark-component`,
           {
