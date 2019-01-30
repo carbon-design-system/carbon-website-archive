@@ -19,6 +19,11 @@
 //----------------------------
 // Bleed
 //----------------------------
+
+html {
+  scroll-behavior: smooth;
+}
+
 .container .ibm--col-bleed {
   padding: 0;
 }
