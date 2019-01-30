@@ -136,7 +136,7 @@ $layout-2xl: $spacing-baseline * 10 !default;
 
 ### Typography
 
-Typography has four categories (universal, productive, editorial and additional) of type styles that can be customized through tokens. These tokens are used both within components and across layouts. Type tokens are determine by their [role](/guidelines/typography/product) in across system.
+Typography has four categories (universal, productive, editorial and additional) of type styles that can be customized through tokens. These tokens are used both within components and across layouts. Type tokens are determine by their [role](/guidelines/typography/productive) in across system.
 
 ```scss
 // Universal
