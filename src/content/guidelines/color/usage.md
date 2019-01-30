@@ -4,14 +4,6 @@ title: Color
 tabs: ['Swatches', 'Usage']
 ---
 
-<page-intro>**Color** brings a design to life. Color is versatile; it's used to express emotion and tone, as well as place emphasis and create associations. Color should always be used in meaningful and intentional ways in order to create patterns and visual cues.</page-intro>
-
-## Color palette
-
-The Carbon color palette is designed and implemented in a themable manner. The universal color variables are determined by common roles and usage; it is not based singularly on a color value (i.e. unique hex code). The same color value may be assigned to multiple variables in a theme's palette when the values have distinctly different roles.
-
-A universal variable can also have multiple associated roles when the color is consistently used across those roles. This allows for uniform color application across themes while giving each theme the freedom to express its own individuality at a more detailed level.
-
 ### Color terms
 
 | Term         | Definition                                                                                                                                                               |
