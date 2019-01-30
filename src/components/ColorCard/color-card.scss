@@ -32,10 +32,10 @@
   &:focus,
   button:focus {
     cursor: pointer;
-    transform: scale(1.1);
+    //transform: scale(1.1);
     opacity: 1;
-    position: relative;
-    z-index: 100;
+    //position: relative;
+    //z-index: 100;
 
     button {
       opacity: 1;
