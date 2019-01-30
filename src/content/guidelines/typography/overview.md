@@ -101,33 +101,33 @@ Type color should be carefully considered, with legibility and accessibility as 
 
 <grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true>
-        <img src="images/typography_1.svg" alt="Neutral color for text">    
+        <img src="images/Typography_overview_Type-color-1.svg" alt="Neutral color for text">    
     </do-dont-example>
     <do-dont-example>
-        <img src="images/typography_2.svg" alt="I'm a magenta sentence for no reason">    
+        <img src="images/Typography_overview_Type-color-2.svg" alt="I'm a magenta sentence for no reason">    
     </do-dont-example>
 </grid-wrapper>
 <grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true dark="true">
-        <img src="images/typography_3.svg" alt="Neutral color for text">    
+        <img src="images/Typography_overview_Type-color-3.svg" alt="Neutral color for text">    
     </do-dont-example>
     <do-dont-example dark="true">
-        <img src="images/typography_4.svg" alt="Color is not for decoration">
+        <img src="images/Typography_overview_Type-color-4.svg" alt="Color is not for decoration">
     </do-dont-example>
 </grid-wrapper>
 <grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true" label="Core blue colors are used for text links and primary actions">
-        <img src="images/typography_5.svg" alt="Link with icon">
+        <img src="images/Typography_overview_Type-color-5.svg" alt="Link with icon">
     </do-dont-example>
     <do-dont-example correct=true" label="Secondary actions use Gray 100 and icons">
-        <img src="images/typography_6.svg" alt="Download with icon">
+        <img src="images/Typography_overview_Type-color-6.svg" alt="Download with icon">
     </do-dont-example>
 </grid-wrapper>
 <grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Other use cases for colored type are code snippets, warnings, alerts, etc.">
-        <img src="images/typography_7.svg" alt="Oops, something went wrong! colored text">
+        <img src="images/Typography_overview_Type-color-7.svg" alt="Oops, something went wrong! colored text">
     </do-dont-example>
     <do-dont-example correct=true>
-        <img src="images/typography_8.svg" alt="Code sinppet with colored highlight type">
+        <img src="images/Typography_overview_Type-color-8.svg" alt="Code sinppet with colored highlight type">
     </do-dont-example>
 </grid-wrapper>

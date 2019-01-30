@@ -43,7 +43,6 @@ The Digital Design group has published a detailed guide on [setting up auto-sync
 The redesigned components will be available in the current repos once released. All components have been reskinned to the new IBM Design Language for v10. Detailed technical migration instructions will be published to the repos upon Beta release.
 
 [carbon-components repo](https://github.com/IBM/carbon-components)
-
 [carbon-components-react repo](https://github.com/IBM/carbon-components-react)
 
 ## Tokens
@@ -76,5 +75,4 @@ The page grid has been completely redesigned for v10, to align with the IBM Desi
 
 When Carbon X reaches its Production release, specific developer tooling (custom scripts) will be available to help automate the transition. Stay tuned for updates!
 
-
-_Last updated: 16 January 2019_
+_Last updated: 22 January 2019_
