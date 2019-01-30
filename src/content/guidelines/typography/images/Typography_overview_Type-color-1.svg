@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="352px" height="352px" viewBox="0 0 352 352" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Typography_overview_Type-color-1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Type-color-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="352" height="352"></rect>
+        <polygon id="Rectangle-16-Copy-169" points="0 0 352 0 352 352 0 352"></polygon>
+        <g id="Group" transform="translate(78.000000, 124.000000)" fill="#3D3D3D" font-family="IBMPlexSans, IBM Plex Sans" font-size="29.3333333" font-weight="normal" line-spacing="36.6666667">
+            <text id="Neutral-color-for-te-Copy">
+                <tspan x="0.222222222" y="30.6666667">Neutral color </tspan>
+                <tspan x="0.222222222" y="67.3333333">for text </tspan>
+            </text>
+        </g>
+    </g>
+</svg>

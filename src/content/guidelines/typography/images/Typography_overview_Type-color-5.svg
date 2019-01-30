@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="352px" height="352px" viewBox="0 0 352 352" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Typography_overview_Type-color-5</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Type-color-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="352" height="352"></rect>
+        <g id="Interactive-text---Do">
+            <rect id="Rectangle-16-Copy-150" x="0" y="0" width="352" height="352"></rect>
+            <g id="Group-10" transform="translate(129.555556, 157.666667)">
+                <text id="Link" font-family="IBMPlexSans, IBM Plex Sans" font-size="29.3333333" font-weight="normal" line-spacing="36.6666667" fill="#0B6BFE">
+                    <tspan x="0" y="30">Link</tspan>
+                </text>
+                <g id="arrow-right" transform="translate(64.777778, 3.666667)">
+                    <g id="artwork" transform="translate(1.833333, 4.888889)" fill="#0064FF" fill-rule="nonzero">
+                        <polygon id="Shape" points="11.6508333 0 10.3491667 1.30166667 18.8741667 9.8175 0 9.8175 0 11.6508333 18.8741667 11.6508333 10.3491667 20.1666667 11.6508333 21.4683333 22.3758333 10.7341667"></polygon>
+                    </g>
+                    <g id="transparent_box">
+                        <rect id="Rectangle-path" x="0" y="0" width="29.3333333" height="29.3333333"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

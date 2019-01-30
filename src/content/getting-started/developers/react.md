@@ -29,10 +29,6 @@ $ yarn add carbon-components-react carbon-components carbon-icons
 
 If you just want to try out `carbon-components-react`, you can also use [CodeSandbox](https://codesandbox.io).
 
-<a target="_blank" href="https://codesandbox.io/s/x2mjypo6pp">
-  <img style="width: 200px" alt="Edit on CodeSandbox" src="https://codesandbox.io/static/img/play-codesandbox.svg" />
-</a>
-
 ## Development
 
 Please refer to the [Contribution Guidelines](https://github.com/carbon-design-system/carbon-components-react/blob/master/.github/CONTRIBUTING.md) before starting any work.

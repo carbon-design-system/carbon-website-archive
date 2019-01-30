@@ -2,10 +2,11 @@
   display: flex;
   flex-flow: row wrap;
   width: 100%;
+  padding-bottom: rem(24px);
 }
 
 .icon-search {
-  margin-bottom: rem(48px);
+  margin-bottom: rem(32px);
 }
 
 .icon {
