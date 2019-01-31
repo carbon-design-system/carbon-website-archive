@@ -26,15 +26,20 @@
   @include type-style('body-short-02');
   padding: 0 $spacing-3xl 0 $spacing-md;
   text-decoration: none;
-  color: $inverse-02;
+  color: $inverse-01;
   white-space: nowrap;
   border-top: 2px solid transparent;
   height: rem(48px);
   display: inline-flex;
   align-items: center;
+  transition: $transition--base;
+
+  &:hover {
+    background: #353535;
+  }
 }
 
 .page-tabs__list li.selected a {
   border-top: 2px solid $brand-01;
-  background: rgba(255, 255, 255, 0.2);
+  background: $ibm-colors__gray-80;
 }

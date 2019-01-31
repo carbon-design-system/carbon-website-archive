@@ -32,6 +32,9 @@ import {
   HomepageFooter,
   HomepageHeader,
 } from '../components/Homepage/Homepage';
+import { Tab } from 'carbon-components-react';
+import WebsiteTabs from '../components/WebsiteTabs';
+import ColorTokenTable from '../components/ColorTokenTable';
 
 // Custom Markdown
 import {
@@ -78,6 +81,9 @@ const renderAst = new rehypeReact({
     glossary: Glossary,
     'component-overview': ComponentOverview,
     'anchor-links': AnchorLinks,
+    tab: Tab,
+    'website-tabs': WebsiteTabs,
+    'color-token-table': ColorTokenTable,
   },
 }).Compiler;
 
@@ -99,6 +105,10 @@ export default ({ data }) => {
       </Layout>
     );
   } else if (homepage) {
+    if (typeof document !== 'undefined') {
+      document.body.style.background = '#282828';
+    }
+
     return (
       <Layout>
         <div className="container--homepage">
@@ -112,6 +122,10 @@ export default ({ data }) => {
       </Layout>
     );
   } else {
+    if (typeof document !== 'undefined') {
+      document.body.style.background = '#f3f3f3';
+    }
+
     return (
       <Layout>
         <PageHeader

@@ -9,7 +9,7 @@ a.tile--article {
   background: $ibm-colors__white;
 
   &:hover {
-    background: $ibm-colors__gray--20;
+    background: $ibm-colors__gray-20;
   }
 
   // full bleed for tiles on mobile
@@ -28,12 +28,12 @@ a.tile--article {
 }
 
 a.tile--article.tile--dark {
-  background: $ibm-colors__gray--90;
+  background: $ibm-colors__gray-90;
   color: $ibm-colors__white;
 }
 
 a.tile--article.tile--dark:hover {
-  background: $ibm-colors__gray--80;
+  background: $ibm-colors__gray-80;
 }
 
 .tile--article .tile__img {
@@ -98,6 +98,8 @@ p.tile__author {
 // Tile Resource
 
 .tile--resource {
+  margin-bottom: rem(24px);
+
   // full bleed for tiles on mobile
   @include breakpoint('sm') {
     width: 100%;
@@ -106,6 +108,7 @@ p.tile__author {
   @include breakpoint('md') {
     width: calc(50% - 1px);
     margin: 0;
+    margin-bottom: rem(24px);
   }
 }
 
@@ -118,17 +121,17 @@ p.tile__author {
   height: 100%;
 
   &:hover {
-    background: $ibm-colors__gray--20;
+    background: $ibm-colors__gray-20;
   }
 }
 
 .tile--resource.tile--dark a.bx--tile {
-  background: $ibm-colors__gray--90;
+  background: $ibm-colors__gray-90;
   color: $ibm-colors__white;
 }
 
 .tile--resource.tile--dark a.bx--tile:hover {
-  background: $ibm-colors__gray--80;
+  background: $ibm-colors__gray-80;
 }
 
 .tile--resource .tile__info {
@@ -199,7 +202,7 @@ p.tile__author {
 .flex-wrap {
   .tile--resource {
     @include breakpoint('sm') {
-      border-bottom: 1px solid $ibm-colors__gray--20;
+      border-bottom: 1px solid $ibm-colors__gray-20;
 
       &.tile--dark {
         border-bottom-color: $ibm-colors__black;
@@ -212,7 +215,7 @@ p.tile__author {
       border-right: none;
 
       &:nth-child(2n + 2) {
-        border-left: 1px solid $ibm-colors__gray--20;
+        border-left: 1px solid $ibm-colors__gray-20;
 
         &.tile--dark {
           border-left-color: $ibm-colors__black;
@@ -220,7 +223,7 @@ p.tile__author {
       }
 
       &:nth-child(n + 3) {
-        border-top: 1px solid $ibm-colors__gray--20;
+        border-top: 1px solid $ibm-colors__gray-20;
 
         &.tile--dark {
           border-top-color: $ibm-colors__black;
@@ -231,7 +234,7 @@ p.tile__author {
 
   a.tile--article {
     @include breakpoint('sm') {
-      border-bottom: 1px solid $ibm-colors__gray--20;
+      border-bottom: 1px solid $ibm-colors__gray-20;
 
       &:last-child {
         border: none;
@@ -240,7 +243,7 @@ p.tile__author {
 
     @include breakpoint('md') {
       border-bottom: none;
-      border-right: 1px solid $ibm-colors__gray--20;
+      border-right: 1px solid $ibm-colors__gray-20;
 
       // selects every 3rd item and removes right border
       &:nth-child(2n + 2) {
@@ -248,16 +251,16 @@ p.tile__author {
       }
 
       &:nth-child(n + 3) {
-        border-top: 1px solid $ibm-colors__gray--20;
+        border-top: 1px solid $ibm-colors__gray-20;
       }
     }
 
     @include breakpoint('lg') {
       border-bottom: none;
-      border-right: 1px solid $ibm-colors__gray--20;
+      border-right: 1px solid $ibm-colors__gray-20;
 
       &:nth-child(2n + 2) {
-        border-right: 1px solid $ibm-colors__gray--20;
+        border-right: 1px solid $ibm-colors__gray-20;
       }
 
       // selects every 3rd item and removes right border
@@ -266,7 +269,7 @@ p.tile__author {
       }
 
       &:nth-child(n + 4) {
-        border-top: 1px solid $ibm-colors__gray--20;
+        border-top: 1px solid $ibm-colors__gray-20;
       }
     }
   }

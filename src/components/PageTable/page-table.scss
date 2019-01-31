@@ -2,13 +2,9 @@
 .component-docs table {
   margin-bottom: 1.5rem;
   line-height: 1.25;
-
-  @include breakpoint('sm') {
-    width: calc(100%);
-  }
+  width: calc(100%);
 
   @include breakpoint('md') {
-    width: auto;
     min-width: calc(67.3%);
   }
 
@@ -41,7 +37,49 @@
         strong {
           font-weight: font-weight('semibold');
         }
+
+        @include breakpoint('md') {
+          &:last-child {
+            padding-right: 5rem;
+          }
+        }
+
+        @include breakpoint('lg') {
+          min-width: rem(100px);
+        }
+
+        @include breakpoint('xlg') {
+          min-width: rem(150px);
+
+          &:last-child {
+            padding-right: 6rem;
+          }
+        }
       }
     }
+  }
+}
+
+.component-docs p {
+  @include breakpoint('md') {
+    max-width: 75%;
+  }
+
+  @include breakpoint('lg') {
+    max-width: 55%;
+  }
+}
+
+.component-docs table {
+  width: calc(100% + 2rem);
+  margin-left: -1rem;
+  margin-top: rem(16px);
+
+  @include breakpoint('md') {
+    max-width: 75%;
+  }
+
+  @include breakpoint('lg') {
+    max-width: 50%;
   }
 }

@@ -8,7 +8,7 @@
   @include type-style('body-short-01');
   width: 100%;
   background: $ibm-colors__black;
-  color: $ibm-colors__gray--30;
+  color: $ibm-colors__gray-30;
   position: relative;
   z-index: 2;
 }
@@ -31,8 +31,8 @@
   &:after {
     @include breakpoint('sm') {
       content: '';
-      background: $ibm-colors__gray--80;
-      width: 100%;
+      background: $ibm-colors__gray-80;
+      width: calc(100% - 2rem);
       height: 1px;
       display: block;
       position: absolute;
@@ -49,7 +49,7 @@
   display: block;
 
   @include breakpoint('sm') {
-    margin: .5rem 0;
+    margin: 0.5rem 0;
   }
 
   @include breakpoint('lg') {
@@ -59,7 +59,7 @@
 
 // Footer link styles
 .#{$prefix}--website-footer a {
-  color: $ibm-colors__gray--10;
+  color: $ibm-colors__gray-10;
   box-shadow: 0 0 currentColor;
   box-shadow: 0 1px currentColor;
   text-decoration: none;
@@ -82,4 +82,8 @@
 .#{$prefix}--website-footer__content p {
   @include type-style('body-short-01');
   padding-bottom: 1rem;
+}
+
+.#{$prefix}--website-footer__content p:last-child {
+  padding-bottom: rem(48px);
 }

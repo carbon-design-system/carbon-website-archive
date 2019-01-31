@@ -4,11 +4,10 @@
 
 body {
   background: $ui-01;
-  line-height: 1.5;
   font-family: $font-family;
 }
 
-.side-nav + div, //Issue #51 weird bug where sometimes on reload of the page the classnames on container div disapear 
+.side-nav + div, //Issue #51 weird bug where sometimes on reload of the page the classnames on container div disapear
   .container {
   width: 100%;
   margin-left: 0;
@@ -27,28 +26,22 @@ body {
 //---------------------------------------
 // Header styles
 //---------------------------------------
-.bx--header {
-  z-index: 9999;
-}
-
 .bx--header__menu-trigger {
   @include breakpoint('lg') {
     display: none;
   }
 }
 
+.bx--header .bx--header__name span {
+  font-weight: 400;
+}
+
 //---------------------------------------
 // Page styles
 //---------------------------------------
-
-button,
-.side-nav .bx--btn {
-  font-family: $font-family;
-}
-
 .page-content {
-  padding-top: rem(64px);
-  padding-bottom: rem(64px);
+  padding-top: rem(80px);
+  padding-bottom: rem(104px);
 
   // All paragraphs on Markdown pages
   // And divs when markdown doesn't wrap text in paragraphs (when you have to use html for links to open in a new window)
@@ -63,6 +56,18 @@ button,
     }
   }
 
+  > div > div:first-child p {
+    padding-bottom: 0;
+  }
+
+  > div > div:nth-child(2) h2:before {
+    padding-bottom: rem(80px);
+  }
+
+  > div > div:nth-child(2) h3 {
+    margin-top: rem(48px);
+  }
+
   // All links on Markdown pages but not inside component examples
   & > div > * > a,
   .page-table td a,
@@ -75,16 +80,14 @@ button,
   li > code,
   td > code {
     @include reset;
-    font-family: $font-family-mono;
+    @include type-style('code-02');
     position: relative;
     display: inline;
     padding: rem(1px) $spacing-xs;
     background: transparent;
-    font-size: inherit;
     border: 1px solid transparent;
     border-radius: 4px;
-    background-color: $ibm-colors__gray--20;
-    font-size: 85%;
+    background-color: $ibm-colors__gray-20;
   }
 
   // HR dividers
@@ -95,6 +98,14 @@ button,
     background: $ui-03;
     border: 0px transparent;
   }
+
+  img {
+    margin-bottom: rem(24px);
+  }
+
+  img + img {
+    margin-bottom: 0;
+  }
 }
 
 .bx--platform-header {
@@ -103,43 +114,72 @@ button,
 
 // iframe
 .gatsby-resp-iframe-wrapper {
-    @include breakpoint('lg') {
-      margin-left: calc(25% + .5rem)!important;
-    }
+  @include breakpoint('lg') {
+    margin-left: calc(25% + 0.5rem) !important;
+  }
 }
 
-.ibm--row .gatsby-resp-iframe-wrapper { 
+.ibm--row .gatsby-resp-iframe-wrapper {
   margin-left: 0;
 }
 
-//images 
+//images
 .gatsby-resp-image-wrapper {
   background: $ui-02;
+  margin-left: 0 !important;
+  margin-bottom: rem(24px);
 
   @include breakpoint('lg') {
-    margin-left: calc(25% + .5rem)!important;
+    margin-left: calc(25% + 0.5rem) !important;
+    max-width: calc(75% - 0.5rem);
   }
 }
 
-.ibm--row .gatsby-resp-image-wrapper { 
-  margin-left: auto!important;
-}
-
-// All em on Markdown pages after images and image grid
-.gatsby-resp-image-link + em,
-.gatsby-resp-image-wrapper + div > div > p > em {
-  @include type-style('body-short-01');
-  font-style: normal;
-  padding-top: $spacing-xs;
-  color: $text-02;
-}
-
-//svg images
-.page-content > div > img[src*="svg"] {
+//svg and gif images
+.page-content > div > img[src*='svg'],
+.page-content > div > img[src*='gif'] {
   background: $ui-02;
-  margin-bottom: $spacing-xl;
+  // margin-bottom: 4rem;
 
   @include breakpoint('lg') {
-    margin-left: calc(25% + .5rem)!important;
+    margin-left: calc(25% + 0.5rem) !important;
+    max-width: calc(75% - 0.5rem);
   }
+}
+
+.ibm--row .gatsby-resp-image-wrapper,
+.ibm-row img[src*='svg'],
+.ibm-row img[src*='gif'] {
+  margin-left: 0 !important;
+  margin-bottom: 0;
+}
+
+// Caption styles - All em on Markdown pages after images
+.gatsby-resp-image-link,
+.gatsby-resp-image-wrapper,
+img[src*='svg'],
+img[src*='gif'] {
+  + div > div > p > em {
+    @include type-style('body-short-01');
+    font-style: normal;
+    color: $text-01;
+    display: block;
+
+    @include breakpoint('lg') {
+      padding-right: 35%;
+    }
+
+    @include breakpoint('lg') {
+      padding-right: 44%;
+    }
+
+    &:first-child {
+      padding-top: $spacing-xs;
+      // margin-top: -4rem; //needed because of default image spacing
+    }
+  }
+}
+
+.page-content iframe {
+  margin-bottom: rem(24px);
 }

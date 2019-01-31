@@ -19,6 +19,8 @@ export default class DoDontExample extends React.Component {
     correct: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
     /** default to false, set to true for dark background */
     dark: PropTypes.string,
+    /** default to false, set true to have a full-width example card */
+    full_width: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
   };
 
   renderCaption = (label, description) => {
@@ -33,10 +35,20 @@ export default class DoDontExample extends React.Component {
   };
 
   render() {
-    const { children, label, description, text, correct, dark } = this.props;
+    const { children, label, description, text, dark, full_width } = this.props;
+
+    let correct = this.props.correct;
+
+    // our gatsby setup converts many values to strings. cleanse:
+    if (correct === 'true') {
+      correct = true;
+    } else if (correct === 'false') {
+      correct = false;
+    }
 
     const wrapperClassNames = classnames({
       example: true,
+      'example--full-width': full_width,
       'example--correct': correct,
       'example--incorrect': !correct,
       'example--dark': dark,

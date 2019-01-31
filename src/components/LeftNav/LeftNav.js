@@ -12,6 +12,7 @@ import {
   SideNavLink,
 } from 'carbon-components-react/lib/components/UIShell';
 import { Awake16 } from '@carbon/icons-react';
+import { Launch16 } from '@carbon/icons-react';
 
 export default class LeftNav extends React.Component {
   renderNavItems = (nav, loc) =>
@@ -25,6 +26,7 @@ export default class LeftNav extends React.Component {
       }
       return (
         <LeftNavItem
+          isCurrentCategory={loc.pathname.includes(item) ? true : false}
           itemSlug={item}
           item={nav[item]}
           key={item}
@@ -37,23 +39,26 @@ export default class LeftNav extends React.Component {
     const { GATSBY_CARBON_ENV } = process.env;
     const isInternal = GATSBY_CARBON_ENV == 'internal';
 
-    const { isOpen, isFinal } = this.props;
-
-    const classNames = classnames('side-nav', {
-      'side-nav__closed': !isOpen,
-      'side-nav__closed--final': isFinal && !isOpen,
-    });
+    const { isLeftNavOpen, isLeftNavFinal } = this.props;
 
     const classNamesClickToClose = classnames({
       'side-nav-click-to-close': true,
-      'side-nav-click-to-close__closed': !isOpen,
-      'side-nav-click-to-close__closed--final': isFinal && !isOpen,
+      'side-nav-click-to-close__closed': !isLeftNavOpen,
+      'side-nav-click-to-close__closed--final': isLeftNavFinal && !isLeftNavOpen,
     });
 
     return (
       <Location>
         {({ location }) => {
           const navItems = this.renderNavItems(navigation, location);
+
+          const classNames = classnames('side-nav', {
+            'side-nav__closed': !isLeftNavOpen,
+            'side-nav__closed--final': isLeftNavFinal && !isLeftNavOpen,
+            'bx--side-nav--website--light': location.pathname !== '/',
+            'bx--side-nav--website': true,
+          });
+
           return (
             <>
               <div
@@ -65,17 +70,18 @@ export default class LeftNav extends React.Component {
               <SideNav aria-label="Side navigation" className={classNames}>
                 <SideNavItems>
                   {navItems}
+                  <hr className="bx--side-nav__divider" />
                   <SideNavLink
-                    icon={<Awake16 />}
+                    icon={<Launch16 />}
                     href="https://github.com/ibm/carbon-design-kit"
-                    className="side-nav__website-link">
+                    className="bx--side-nav--website-link">
                     Design Kit
                   </SideNavLink>
                   <SideNavLink
-                    icon={<Awake16 />}
+                    icon={<Launch16 />}
                     href="javascript:void(0)"
                     to="/resources#github"
-                    className="side-nav__website-link"
+                    className="bx--side-nav--website-link"
                     element={Link}>
                     Github Repos
                   </SideNavLink>

@@ -1,16 +1,33 @@
+.bx--snippet--website {
+  margin-bottom: $spacing-lg;
+}
+
 .page-content .bx--snippet--single {
   background: $ui-05;
   color: $inverse-01;
+  max-width: 100%;
+}
+
+.page-content .code-snippet .bx--snippet--single {
+  max-width: 47.5rem;
 }
 
 .page-content .bx--snippet--multi {
   background: $ui-05;
   color: $inverse-01;
-  margin-bottom: $spacing-lg;
+}
+
+.page-content .bx--snippet--multi .bx--snippet-container {
+  overflow: auto;
 }
 
 .page-content .bx--snippet-button {
   background: $ui-05;
+  transition: background $transition--base;
+
+  &:hover {
+    background: #353535;
+  }
 }
 
 .page-content .bx--snippet__icon {
@@ -33,6 +50,8 @@
 
 code[class*='language-'],
 pre[class*='language-'] {
+  font-size: rem(14px) !important;
+  line-height: rem(20px) !important;
   font-family: 'ibm-plex-mono' !important;
 }
 
@@ -43,74 +62,39 @@ pre[class*='language-'] {
   margin: 0 !important;
 }
 
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: #898ea4;
+.token {
+  white-space: nowrap;
 }
 
-.token.punctuation {
-  color: #687985;
-}
-
-.token.operator {
-  color: #687985;
-}
-
-.token.boolean,
-.token.number {
-  color: #006456;
-}
-
-.token.property {
-  color: #97702d;
+.token.comment {
+  color: #BEBEBE !important;
 }
 
 .token.tag {
-  color: #687985;
+  color: #6EA6FF !important;
 }
 
 .token.string {
-  color: #2d74da;
+  color: #FA75A6 !important;
 }
 
-.token.selector {
-  color: #5a3ec8;
-}
-
-.token.attr-name {
-  color: #2d74da;
-}
-
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string {
-  color: #2d74da;
+.token.attr-name,
+.token.property,
+.token.function {
+  color: #92EEEE !important;
 }
 
 .token.attr-value,
 .token.keyword,
 .token.control,
 .token.directive,
-.token.unit {
-  color: #5b8121;
+.token.unit,
+.token.selector {
+  color: #BB8EFF !important;
 }
 
-.token.statement,
-.token.regex,
-.token.atrule {
-  color: #006456;
-}
-
-.token.placeholder,
 .token.variable {
-  color: #831b4c;
-}
-
-.token.deleted {
-  text-decoration: line-through;
+  color: #ffffff !important;
 }
 
 .token.inserted {

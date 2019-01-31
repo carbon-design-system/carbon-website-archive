@@ -1,5 +1,5 @@
 ---
-label: IBM's icons are visual symbols used to represennt ideas, objects, or actions. They communicate messages at a glance, afford interactivity, and draw attention to important information.
+label: IBM's icons are visual symbols used to represent ideas, objects, or actions. They communicate messages at a glance, afford interactivity, and draw attention to important information.
 title: Iconography
 tabs: ['Library', 'Usage', 'Design and Contribution']
 ---
@@ -13,6 +13,7 @@ UI icons that appear within Carbon components are generally 16 px square. Icons 
 ![icon sizing](images/iconography-usage-sizing-1.svg)
 
 ![icon alignment](images/iconography-usage-sizing-2.svg)
+
 _16 px and 20 px icons are optimized to feel balanced when paired with 14pt and 16pt IBM Plex. Use 24 px and 32 px when larger icons are needed._
 
 <grid-wrapper col_lg="8" flex="true">
@@ -60,7 +61,7 @@ When used next to text, icons should be center-aligned.
 
 ### Using SVG sprite (recommended)
 
-**Requirements:**
+#### Requirements:
 
 - Install `carbon-icons`
 
