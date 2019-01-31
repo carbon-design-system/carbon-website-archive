@@ -25,16 +25,19 @@ IBM Design System recognizes different moments in user's experience, and offers 
 <website-tabs>
 <tab label="Curves"><div>
 
-<grid-wrapper col_lg="8" flex="true">
+<simple-columns gutter=true>
+
 <div>
 <p>Productive</p>
 <img src="images/Motion_overview_Curves_productive.svg" alt="Curve graphs representing differences between Productive and Expressive animation curves" />
 </div>
+
 <div>
 <p>Expressive</p>
 <img src="images/Motion_overview_Curves_expressive.svg" alt="Curve graphs representing differences between Productive and Expressive animation curves" />
 </div>
-</grid-wrapper>
+
+</simple-columns>
 
 </div></tab>
 <tab label="Abstract">
