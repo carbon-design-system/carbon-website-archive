@@ -3,22 +3,20 @@ label: Motion can bring your work to life, guide users through complex experienc
 title: Motion
 tabs: ['Basics', 'Choreography', 'Resources']
 ---
-
-<anchor-links>
-<ul>
-    <li><a href="#resources">Resources</a></li>
-    <li><a href="#style">Style</a></li>
-    <li><a href="#easing">Easing</a></li>
-    <li><a href="#duration">Duration</a></li>
-</ul>
-</anchor-links>
-
 ## Resources
 
 <grid-wrapper col_lg="8" flex="true" bleed="true">
   <clickable-tile title="Motion Generator" href="https://ibm.github.io/motion/" type="resource"></clickable-tile>
   <clickable-tile title="IBM Motion Package" href="https://github.com/IBM/carbon-elements/tree/master/packages/motion" type="resource"></clickable-tile>
 </grid-wrapper>
+
+<anchor-links>
+<ul>
+    <li><a href="#style">Style</a></li>
+    <li><a href="#easing">Easing</a></li>
+    <li><a href="#duration">Duration</a></li>
+</ul>
+</anchor-links>
 
 ## Style
 
@@ -63,7 +61,7 @@ Expressive motion delivers enthusiastic and vibrant, thus more visible movement.
 
 Productive and Expression are both essential to an interface. Reserve Expressive motion for occasional, important moments to better capture user’s attention, and offer rhythmic break to the productive experience.
 
-Our [Components](http://localhost:8000/components/overview) have Duo motion build in. Use this guidance to customize motion, combine and coordinate motion through out experiences.
+Our [Components](http://localhost:8000/components/overview) have basic motion build in. Use this guidance to customize motion, combine and coordinate motion through out experiences.
 
 <grid-wrapper col_lg="12" flex="true">
 <do-dont-example correct="true" full_width="true" label="Productive moments are labeled blue, and expressive moments are labeled magenta.">
@@ -85,7 +83,7 @@ Strictly linear movement appears unnatural to the human eye. Elements on the scr
 </do-dont-example>
 </grid-wrapper>
 
-Avoid easing curves that are unnatural, distracting, or decorative should be avoided. Duo motion is essential and efficient. We guide the users to value as quickly as possible.
+Avoid easing curves that are unnatural, distracting, or decorative should be avoided. IBM motion is essential and efficient. We guide the users to value as quickly as possible.
 
 <grid-wrapper col_lg="8" flex="true">
 <do-dont-example correct="false" full_width="true" label="Easing curves that suggest bounce, stretch, or sudden stops are not recommended.">
