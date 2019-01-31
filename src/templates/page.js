@@ -35,6 +35,8 @@ import {
 import { Tab } from 'carbon-components-react';
 import WebsiteTabs from '../components/WebsiteTabs';
 import ColorTokenTable from '../components/ColorTokenTable';
+import { Grid, Column } from '../components/Grid/Grid';
+import SimpleColumns from '../components/SimpleColumns';
 
 // Custom Markdown
 import {
@@ -84,6 +86,9 @@ const renderAst = new rehypeReact({
     tab: Tab,
     'website-tabs': WebsiteTabs,
     'color-token-table': ColorTokenTable,
+    grid: Grid,
+    column: Column,
+    'simple-columns': SimpleColumns,
   },
 }).Compiler;
 

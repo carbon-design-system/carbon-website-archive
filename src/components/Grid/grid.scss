@@ -1,0 +1,178 @@
+//----------------------------
+// Background
+//----------------------------
+.background {
+  padding-bottom: rem(64px);
+  padding-top: rem(32px);
+
+  @include breakpoint('lg') {
+    padding-bottom: rem(80px);
+    padding-top: rem(56px);
+  }
+}
+
+.background:last-child {
+  padding-bottom: rem(48px);
+
+  @include breakpoint('lg') {
+    padding-bottom: rem(128px);
+  }
+}
+
+.background--header {
+  padding-top: 2rem;
+  padding-bottom: 0;
+
+  @include breakpoint('md') {
+    height: 400px;
+  }
+
+  @include breakpoint('lg') {
+    height: 560px;
+  }
+}
+
+//----------------------------
+// Background tight
+// used on design philosophy page
+//----------------------------
+.background--tight {
+  padding-bottom: 0;
+}
+
+//----------------------------
+// Background colors
+//----------------------------
+.background--white {
+  background-color: $ibm-colors__white;
+}
+
+.background--gray-10 {
+  background-color: $ibm-colors__gray-10;
+}
+
+.background--gray-20 {
+  background-color: $ibm-colors__gray-20;
+}
+
+.background--gray-80 {
+  background-color: $ibm-colors__gray-80;
+  color: $ibm-colors__gray-10;
+}
+
+.background--gray-100 {
+  background-color: $ibm-colors__gray-100;
+  color: $ibm-colors__gray-10;
+}
+
+.background--magenta-20 {
+  background-color: $ibm-colors__magenta-20;
+}
+
+.background--black {
+  background-color: $ibm-colors__black;
+  color: $ibm-colors__gray-10;
+}
+
+.background-bleed {
+  padding: 0;
+
+  .ibm--grid {
+    padding: 0;
+  }
+
+  .ibm-col-lg-16 {
+    padding: 0;
+  }
+}
+
+.background--nopadding {
+  padding: 1rem 0 0 0;
+}
+
+.background div[class^='ibm--col-'] {
+  position: relative;
+}
+
+//----------------------------
+// Columns
+//----------------------------
+.ibm--col-right {
+  @include breakpoint('md') {
+    text-align: right;
+
+    .page-p {
+      padding-right: 0;
+    }
+  }
+}
+
+.container .ibm--col-border {
+  position: relative;
+  border-top: 1px solid $ui-04;
+  margin: 0 1rem rem(40px) 1rem;
+  padding-bottom: rem(136px);
+  padding-top: 2rem;
+  padding-left: 0;
+
+  @include breakpoint('lg') {
+    margin: 2rem 0 0 0;
+    padding-top: 0;
+    padding-left: 1rem;
+    border-top: 0;
+    border-left: 1px solid $ui-04;
+    padding-bottom: rem(112px);
+  }
+
+  .page-p,
+  .page-h3 {
+    padding-right: 10%;
+  }
+
+  img[src*='svg'] {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    height: auto;
+
+    @include breakpoint('lg') {
+      bottom: 0;
+      left: 1rem;
+    }
+  }
+
+  div:last-child {
+    @include type-style('body-short-02');
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+
+    @include breakpoint('lg') {
+      bottom: 0;
+      left: 1rem;
+    }
+  }
+}
+
+.container .ibm--col-border.ibm--col-lg-4.ibm--offset-lg-4 {
+  @include breakpoint('lg') {
+    margin-left: 25%;
+  }
+}
+
+// hide on mobile
+.ibm--col-sm-0 {
+  display: none;
+
+  @include breakpoint('md') {
+    display: block;
+  }
+}
+
+.ibm--col-md-0 {
+  display: none;
+
+  @include breakpoint('lg') {
+    display: block;
+  }
+}
