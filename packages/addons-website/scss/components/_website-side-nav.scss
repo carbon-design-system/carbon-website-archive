@@ -4,7 +4,7 @@
   width: 0;
 
   @include breakpoint('lg') {
-    display: none;
+    display: none; //hides the side nav at large breakpoint fi there is a header nav also
   }
 }
 
@@ -17,7 +17,7 @@
 }
 
 .#{$prefix}--side-nav--website--with-header-nav .#{$prefix}--side-nav__footer {
-  display: none;
+  display: none; //hides footer from UI Shell
 }
 
 // Bottom links
@@ -96,6 +96,9 @@ a.#{$prefix}--side-nav__link:focus {
 .#{$prefix}--side-nav {
   border-top: none;
   border-right: 1px solid $ibm-colors__gray-80;
+  transform: translate(0rem);
+  will-change: transform;
+  transition: transform 0.11s cubic-bezier(0.2, 0, 1, 0.9);
 }
 
 .#{$prefix}--side-nav .#{$prefix}--side-nav__item--active {
