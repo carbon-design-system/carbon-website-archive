@@ -85,7 +85,7 @@ The Component Libraries give developers a collection of re-usable React componen
     date="December 10, 2018"
     href="https://medium.com/carbondesign/what-to-expect-in-carbon-10-5af1bd6e25f6"
     >
-    <img src="resources/images/article-9.png" alt="What to expect in Carbon 10" />
+    <img src="resources/images/Article_01.png" alt="What to expect in Carbon 10" />
 </clickable-tile>
 <clickable-tile
     dark="true"
@@ -95,7 +95,7 @@ The Component Libraries give developers a collection of re-usable React componen
     date="October 19, 2018"
     href="https://medium.com/carbondesign/up-running-with-carbon-react-in-less-than-5-minutes-25d43cca059e"
     >
-    <img src="resources/images/article-8.png" alt="Up & Running with Carbon React in less than 5 minutes" />
+    <img src="resources/images/Article_02.png" alt="Up & Running with Carbon React in less than 5 minutes" />
 </clickable-tile>
 <clickable-tile
     dark="true"
@@ -105,6 +105,6 @@ The Component Libraries give developers a collection of re-usable React componen
     date="October 16, 2018"
     href="https://medium.com/carbondesign/hacktoberfest-with-carbon-95c48943f586"
     >
-    <img src="resources/images/article-7.jpg" alt="Hacktoberfest with Carbon" />
+    <img src="resources/images/Article_03.png" alt="Hacktoberfest with Carbon" />
 </clickable-tile>
 </grid-wrapper>

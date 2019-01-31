@@ -74,10 +74,7 @@ a.tile--article.tile--dark:hover {
   flex-direction: column;
   justify-content: space-between;
   padding: $spacing-md;
-
-  @include breakpoint('md') {
-    padding-right: 30%;
-  }
+  padding-right: 25%;
 
   @include breakpoint('lg') {
     padding-right: 1rem;
