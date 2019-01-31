@@ -16,7 +16,7 @@ tabs: ['Overview', 'Color', 'Keyboard', 'Developers']
 
 ## Carbon and accessibility
 
-Carbon is committed to following and complying with best practices when it comes to accessibility. All Carbon components follow the [IBM Accessibility Checklist](https://www.ibm.com/able/guidelines/ci162/accessibility_checklist.html) which is based on WCAG AA, Section 508, and European standards. Carbon's patterns are **perceivable**, **operable**, and **understandable to users**, even when using a screen reader or other assistive technology.
+Carbon is committed to following and complying with best practices when it comes to accessibility. All Carbon components follow the [IBM Accessibility Checklist](https://www.ibm.com/able/guidelines/ci162/accessibility_checklist.html) which is based on WCAG AA, Section 508, and European standards. Carbon's patterns are perceivable, operable, and understandable to users, even when using a screen reader or other assistive technology.
 
 However, _how you use Carbon_ also affects the accessibility of a product. Read this page to learn about accessibility in general. Then, while you're working, use the role-specific Carbon accessibility guidelines to help you make products that anyone can use.
 
@@ -41,7 +41,7 @@ Remember, accessible design not only helps users with disabilities; it provides 
 
 #### How they experience an interface
 
-- May use a **screen reader** to experience interfaces
+- May use a screen reader to experience interfaces
 - May rely on Braille output
 - Cannot be expected to use a pointer or mouse for input
 
@@ -60,13 +60,13 @@ Low vision can include partial sight in one or both eyes and can range from mild
 
 #### How they experience an interface
 
-- May use **screen readers**, **screen magnifiers**, **high contrast modes**, and/or **monochrome displays**
+- May use screen readers, screen magnifiers, high-contrast modes, and/or monochrome displays
 - May have their browser font size adjusted to a larger setting
 - May not use adaptive technology at all
 
 #### What designers should think about
 
-- Maximize the **readability** and **visual clarity** of content.
+- Maximize the readability and visual clarity of content.
 - Consider how relative proximity of information changes when a page is magnified.
 - Follow [keyboard guidelines](https://www.nngroup.com/articles/keyboard-accessibility/) and test with a screen reader to ensure the page is read to the user in a logical order.
 - To get a better understanding of the various low-vision disabilities, we recommend using the [NoCoffee](https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl) Chrome plugin to preview websites.
@@ -82,19 +82,19 @@ Color-blindness affects 8% of all men and 0.4% of women.
 
 #### How they experience an interface
 
-- **Will not be able to differentiate between some colors** on an interface
+- Will not be able to differentiate between some colors on an interface
 - Rely on non-color information to use an interface
 
 #### What designers should think about
 
-- Run your design through a **color-blind simulator**. If the design doesn't work, try another approach. If you're working in Sketch, we recommend the [Stark](http://www.getstark.co/) plugin.
+- Run your design through a color-blind simulator. If the design doesn't work, try another approach. If you're working in Sketch, we recommend the [Stark](http://www.getstark.co/) plugin.
 <!-- - To view best practices for using color in Data Visualization, view the [Data Vis](/data-visualization/overview/colors) color page. -->
 
 ### Deaf and hard-of-hearing users
 
 #### How they experience an interface
 
-- May rely on **captioning** and other alternative representations of audio
+- May rely on captioning and other alternative representations of audio
 
 #### What designers should think about
 
@@ -109,12 +109,12 @@ Color-blindness affects 8% of all men and 0.4% of women.
 
 #### How users with physical disabilities experience an interface
 
-- May rely on **keyboards**, **track balls**, **voice recognition** and other assistive technologies to interact with an interface
+- May rely on keyboards, track balls, voice recognition, and other assistive technologies to interact with an interface
 - May not be able to use a keyboard, mouse, or other pointer
 
 #### What designers should think about
 
-- Design for good **keyboard interaction**, making sure all actions are keyboard accessible and efficient.
+- Design for good keyboard interaction, making sure all actions are keyboard accessible and efficient.
 - Learn how to navigate using a [keyboard](https://help.gnome.org/users/gnome-help/stable/keyboard-nav.html.en) and spend some time navigating the web, email, and digital products using only the keyboard.
 
 #### How this applies to everyone
@@ -134,13 +134,13 @@ These users offer a broad spectrum of concerns for design. Functional cognitive 
 
 #### How they experience an interface
 
-- May have **limited working memory** and need information to remain visible throughout the completion of a task
+- May have limited working memory and need information to remain visible throughout the completion of a task
 - May experience seizures when exposed to flashing content (epilepsy)
 
 #### What designers should think about
 
-- Designers should understand the danger of **complex language**, **non-stopping or flashing animations** and **fundamental cognitive usability heuristics.**
-- Design in as linear a fashion as possible and focus on design heuristics that have to do with **cognitive load and memory.**
+- Designers should understand the danger of complex language, non-stopping or flashing animations and fundamental cognitive usability heuristics.
+- Design in as linear a fashion as possible and focus on design heuristics that have to do with cognitive load and memory.
 
 #### How this applies to everyone
 
