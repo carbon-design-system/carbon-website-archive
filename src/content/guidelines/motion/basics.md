@@ -3,24 +3,26 @@ label: Motion can bring your work to life, guide users through complex experienc
 title: Motion
 tabs: ['Basics', 'Choreography', 'Resources']
 ---
-## Get started
-
-<grid-wrapper col_lg="8" flex="true" bleed="true">
-  <clickable-tile title="Motion Generator" href="https://ibm.github.io/motion/" type="resource"></clickable-tile>
-  <clickable-tile title="IBM Motion Package" href="https://github.com/IBM/carbon-elements/tree/master/packages/motion" type="resource"></clickable-tile>
-</grid-wrapper>
 
 <anchor-links>
 <ul>
+    <li><a href="#resources">Resources</a></li>
     <li><a href="#style">Style</a></li>
     <li><a href="#easing">Easing</a></li>
     <li><a href="#duration">Duration</a></li>
 </ul>
 </anchor-links>
 
+## Resources
+
+<grid-wrapper col_lg="8" flex="true" bleed="true">
+  <clickable-tile title="Motion Generator" href="https://ibm.github.io/motion/" type="resource"></clickable-tile>
+  <clickable-tile title="IBM Motion Package" href="https://github.com/IBM/carbon-elements/tree/master/packages/motion" type="resource"></clickable-tile>
+</grid-wrapper>
+
 ## Style
 
-Duo motion recognizes different moments in user's experience, and offers two modes - the Productive motion, and the Expressive motion. The motion curves are designed to reflect the philosophical duality of Man and Machine.
+IBM Design System recognizes different moments in user's experience, and offers two styles of motion - the Productive motion, and the Expressive motion. The motion curves are designed to reflect the philosophical duality of Man and Machine.
 
 <website-tabs>
 <tab label="Curves"><div>
@@ -190,7 +192,7 @@ Cubic-bezier curve notation is the standard way to express easing curves. [IBM M
 Duration is calculated based on the style and size of the motion. Among the two motion styles, **productive** motion is significantly faster than **expressive** motion. Motion’s duration should be dynamic based on the size of the animation - the larger the change in distance (traveled) or size (scaling) of the element, the longer the animation takes.
 
 <grid-wrapper col_lg="12" flex="true">
-<do-dont-example correct="true" full_width="true" label="Duration contrast.">
+<do-dont-example correct="true" full_width="true" label="Duration contrast between a taller and a shorter component.">
 
 `vimeo: https://vimeo.com/310582312`
 
