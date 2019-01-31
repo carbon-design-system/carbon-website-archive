@@ -98,6 +98,8 @@ p.tile__author {
 // Tile Resource
 
 .tile--resource {
+  margin-bottom: rem(24px);
+
   // full bleed for tiles on mobile
   @include breakpoint('sm') {
     width: 100%;
@@ -106,6 +108,7 @@ p.tile__author {
   @include breakpoint('md') {
     width: calc(50% - 1px);
     margin: 0;
+    margin-bottom: rem(24px);
   }
 }
 
