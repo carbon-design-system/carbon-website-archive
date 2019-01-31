@@ -1,20 +1,8 @@
 ---
-label: Color is a foundational element of Carbon. Careful application of color drives consistency, engagement, and focus for all digital interfaces.  
+label: Color is a foundational element of Carbon. Careful application of color drives consistency, engagement, and focus for all user interfaces.  
 title: Color
 tabs: ['Overview', 'Usage']
 ---
-
-<anchor-links>
-<ul>
-    <li><a href="#resources">Resources</a></li>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#ibm-color-anatomy">IBM Color anatomy</a></li>
-    <li><a href="#tokens">Tokens</a></li>
-    <li><a href="#themes">Themes</a></li>
-    <li><a href="#interaction-states">Interaction states</a></li>
-    <li><a href="#digital-accessibility">Digital accessibility</a></li>
-</ul>
-</anchor-links>
 
 ## Resources
 
@@ -27,12 +15,43 @@ tabs: ['Overview', 'Usage']
     <img src="images/ase.png" alt="Color palettes for Adobe" />
 </clickable-tile>
 </grid-wrapper>
+<grid-wrapper col_lg="8" flex="true" bleed="true">
+<clickable-tile
+    title="Elements package: Color"
+    href="https://github.com/IBM/carbon-elements/tree/master/packages/colors"
+    type="resource"
+    >
+    <img src="images/sketch-icon.png" alt="Github" />
+</clickable-tile>
+</grid-wrapper>
+
+<anchor-links>
+<ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#color-anatomy">Color anatomy</a></li>
+    <li><a href="#implementing-color">Implementing color</a></li>
+    <li><a href="#accessibility">Accessibility</a></li>
+</ul>
+</anchor-links>
 
 ## Introduction
 
+Application of the color palette brings a unified and recognizable consistency to IBM's vast array of digital products and interfaces. This consistency is grounded by a set of well-defined rules on how to work with the Carbon component library in the context of dark and light themes. 
+
+![Color in UI](images/IBM_UI_Screens.gif)
+
+## Color anatomy
+
+Carbon's default themes are derived from the IBM Design Language color palette. The Neutral Gray family is dominant in the default themes, making use of subtle shifts in value to help organize content into distinct zones. 
+
+The core Blue family serves as the primary action color across all IBM products and experiences. Additional colors are used sparingly and purposefully.
+
+![Color anatomy](images/color_anatomy_bkg.svg)
+
+## Implementing color
+
 Carbon uses _tokens_ and _themes_ to manage color. Tokens are role-based, and themes specify the color values that serve those roles in the UI. 
 
-### Color terms
 
 | Term      | Definition                                                                                                  |
 | --------- | ----------------------------------------------------------------------------------------------------------- |
@@ -41,26 +60,21 @@ Carbon uses _tokens_ and _themes_ to manage color. Tokens are role-based, and th
 | Role | The systematic usage(s) of a token. Roles cannot be changed between themes.                                  |
 | Value | The actual style (i.e. hex code) assigned to a token                         |
 
+### Tokens
 
-## IBM color anatomy
-
-Carbon's default themes are derived from the IBM Design Language color palette. The Neutral Gray family is dominant in the default themes, making use of subtle shifts in value to help organize content into distinct zones. 
-
-The core Blue family serves as the primary action color across all IBM products and experiences. Additional colors are used sparingly and purposefully.
-
-![Color anatomy](images/color_anatomy_bkg.svg)
-
-## Tokens
-
-Color in Carbon is managed using color tokens. Tokens are a method of abstracting color by role or usage, independent of the actual color values desired for any specific case. For example, instead of needing to code all instances of input labels in a UI to be `#565656`, the _form_ component in Carbon specifies the token `$text-02` for these lables, and that token is specified in a separate theme file to be `#565656`. For a different theme, that same `text-02` token could be mapped to a different hex value, like `#ffffff`. Thus, tokens not only allow for more efficient color updates within a theme, but also enable any UI (or portion of a UI) built with Carbon to easily switch between different themes. 
+Color in Carbon is managed using color tokens. Tokens are a method of abstracting color by role or usage, independent of the actual color values. For example, instead of needing to code all instances of input labels in a UI to be `#565656`, the _form_ component in Carbon specifies the token `$text-02` for these lables, and that token is specified in a separate theme file to be `#565656`. For a different theme, that same `text-02` token could be mapped to a different hex value, like `#ffffff`. Thus, tokens not only allow for more efficient color updates within a theme, but also enable any UI (or portion of a UI) built with Carbon to easily switch between different themes. 
 
 A single token can be associated with multiple roles, but only if the color value is used consistently across those roles. This allows for uniform color application across themes while maintaining full styling flexibility.
 
 With this system, all Carbon users can create their own themes by assigning new values to the established color tokens. IBM products should use one of the four IBM default themes.
 
-## Themes
+### Themes
 
 Themes serve as an organizational framework for color in Carbon, with each theme based on a specific primary background color. There are two default "light" themes and two default "dark" themes.  The light themes use White and Gray 10 backgrounds, and the dark themes use Gray 100 and Gray 90 backgrounds. Default color tokens are provided for each component based on the primary background color.
+
+![Theme backgrounds](images/theme_swatches.png)
+
+#### Global background colors
 
 | Theme | Primary Background       | Token                | Hex value    |    |
 | --- | ----------- | ------------------- | -------------------- | ------------------- |
@@ -69,9 +83,9 @@ Themes serve as an organizational framework for color in Carbon, with each theme
 | Gray 90  | Global Background Dark   | `$ui-background` | <color-block showhex="true" size="xs">#282828</color-block>    |
 | Gray 100   | Global Background Dark  | `$ui-background`        | <color-block showhex="true" size="xs">#171717</color-block>     |
 
-### Light theme
+#### Light themes
 
-Gray 10 components are generally paired with White backgrounds and White components with Gray 10 backgrounds. Some components, such as buttons and toggles, are common across both backgrounds. 
+Gray 10 components are paired with White backgrounds to make the White theme and White components with Gray 10 backgrounds to make the Gray 10 theme. Some components, such as buttons and toggles, share the same colors across both light themes.
 
 <grid-wrapper col_lg="12" flex="true">
     <do-dont-example correct=true label="Gray 10 dropdown on White background.">
@@ -95,12 +109,12 @@ Gray 10 components are generally paired with White backgrounds and White compone
 ![Light theme sample](images/Light_theme_sample_revised.gif)
 
 
-_Components with common colors across both light UI backgrounds_
+_Components with common colors across both light themes_
 
 
-### Dark theme
+#### Dark themes
 
-Gray 90 components are generally paired with Gray 100 backgrounds and Gray 80 components with Gray 90 backgrounds. Some components, such as buttons and toggles, are common across all three dark UI backgrounds.
+Gray 90 components are paired with Gray 100 backgrounds to make the Gray 100 Theme and Gray 80 components with Gray 90 backgrounds to make the Gray 90 Theme. Some components, such as buttons and toggles, share the same colors across both light themes.
 
 <grid-wrapper col_lg="12" flex="true">
     <do-dont-example correct=true label="Gray 90 dropdown on Gray 100 background.">
@@ -125,7 +139,7 @@ Gray 90 components are generally paired with Gray 100 backgrounds and Gray 80 co
 
 _Components with common colors across both dark UI backgrounds_
 
-### High contrast
+#### High contrast
 
 In some cases, it is helpful to apply light components to dark backgrounds or light components to dark backgrounds. This technique is useful to focus attention or create visual tension.
 
@@ -139,23 +153,23 @@ In some cases, it is helpful to apply light components to dark backgrounds or li
 </grid-wrapper>
 
 
-## Interaction states
+### Interaction states
 
 In addition to the enabled-state tokens above, the five other primary interaction states have been defined and tokenized for each default theme. For values between Black and 70, interaction gets lighter, and for values between 60 and White, interaction gets darker.
 
-### Hover
+#### Hover
 Hover states have their own tokens. In the IBM default themes, these colors fall outside of the core palette steps and act as "half steps" between two adjacent colors. The White theme shares the same hover value as the Gray 10 theme; the two dark theme backgrounds share a hover value as well.
 
-### Active
+#### Active
 The active state is two full steps lighter for values between 100 and 70 and two full steps darker for values between 60 and 10. For example, the Blue 60 active state is Blue 80. The exception is that White shares the same active state as Gray 10, and Black shares the same active state as Gray 100. 
 
-### Selected
+#### Selected
 The selected state is one full step lighter for values between 100 and 70, and one full step darker for values between 60 and 10. For example, the Blue 60 selected state is Blue 70. The exception is that White shares the same selected state as Gray 10, and Black shares the same selected state as Gray 100. 
 
-### Focus
+#### Focus
 The focus state usually appears as a Blue 60 border in the light theme and as a White border in the dark theme.
 
-### Disabled
+#### Disabled
 Disabled components are unavailable for interaction, so they don't receive hover or focus and are not subject to WC3 contrast compliance standards. For the dark themes, disabled values are two full steps lighter than their respective background. For light themes, they are two full steps darker. The exception is that the White theme disabled value is Gray 30.     
 
 ![Interactive states light theme](images/Interactive_states_light_new.png)
@@ -168,7 +182,7 @@ _Light theme interactive tokens_
 _Dark theme interactive tokens_
 
 
-## Digital accessibility
+## Accessibility
 
 Using various forms of contrast is the most important consideration when making user-friendly color and interface choices. Awareness of standards and best practices is the key to accessible color selection.
 
