@@ -61,7 +61,7 @@ Expressive motion delivers enthusiastic and vibrant, thus more visible movement.
 
 Productive and Expression are both essential to an interface. Reserve Expressive motion for occasional, important moments to better capture user’s attention, and offer rhythmic break to the productive experience.
 
-Our [Components](http://localhost:8000/components/overview) have basic motion build in. Use this guidance to customize motion, combine and coordinate motion through out experiences.
+Our [Components](../../components/overview/) have basic motion build in. Use this guidance to customize motion, combine and coordinate motion through out experiences.
 
 <grid-wrapper col_lg="12" flex="true">
 <do-dont-example correct="true" full_width="true" label="Productive moments are labeled blue, and expressive moments are labeled magenta.">
