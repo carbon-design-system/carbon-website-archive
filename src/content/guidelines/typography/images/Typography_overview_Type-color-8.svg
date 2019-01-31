@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="352px" height="352px" viewBox="0 0 352 352" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Typography_overview_Type-color-8</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Type-color-8" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="352" height="352"></rect>
+        <g id="Color-type-for-specific-usage---Dont">
+            <rect id="Rectangle-16-Copy-153" x="0" y="0" width="352" height="352"></rect>
+            <text id="&lt;p-class=“ibm-type-m" font-family="IBMPlexMono, IBM Plex Mono" font-size="24.4444444" font-weight="normal" line-spacing="31.7777778">
+                <tspan x="59.8888889" y="154.555556" fill="#0047E3">&lt;p</tspan>
+                <tspan x="89.2222222" y="154.555556" fill="#0064FF"> </tspan>
+                <tspan x="103.888889" y="154.555556" fill="#00BAB6">class</tspan>
+                <tspan x="177.222222" y="154.555556" fill="#0064FF">=</tspan>
+                <tspan x="191.888889" y="154.555556" fill="#006EFF">“ibm-</tspan>
+                <tspan x="59.8888889" y="186.333333" fill="#006EFF">type-mono”</tspan>
+                <tspan x="206.555556" y="186.333333" fill="#0047E3">&gt;</tspan>
+                <tspan x="221.222222" y="186.333333" fill="#393939">code </tspan>
+                <tspan x="59.8888889" y="218.111111" fill="#393939">snippet</tspan>
+                <tspan x="162.555556" y="218.111111" fill="#0047E3">&lt;/p&gt;</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
