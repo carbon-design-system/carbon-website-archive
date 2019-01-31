@@ -6,14 +6,6 @@ import { Link } from 'gatsby';
 import '../polyfills';
 
 class NotFoundPage extends React.Component {
-  componentDidMount() {
-    let sideNav = document.querySelector('.bx--side-nav');
-
-    if (sideNav.classList.contains('bx--side-nav--website--light')) {
-      sideNav.classList.remove('bx--side-nav--website--light');
-    }
-  }
-
   render() {
     return (
       <Layout>
