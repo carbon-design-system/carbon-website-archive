@@ -14,7 +14,7 @@ import {
   HeaderGlobalBar,
   HeaderGlobalAction,
 } from 'carbon-components-react/lib/components/UIShell';
-import { AppSwitcher20, Menu32, Close20, Search20 } from '@carbon/icons-react';
+import { AppSwitcher20, Close20, Search20 } from '@carbon/icons-react';
 import { WebsiteFooter, WebsiteSwitcher } from '@carbon/addons-website';
 
 import timestamp from 'raw-loader!../../../build-timestamp';
@@ -146,7 +146,7 @@ class Layout extends React.Component {
       month: 'long',
       day: 'numeric',
     }).format(new Date(Number(timestamp)));
-    const { isOpen } = this.state;
+    const { isLeftNavOpen } = this.state;
 
     return (
       <StaticQuery
@@ -202,18 +202,16 @@ class Layout extends React.Component {
                     'isSwitcherFinal'
                   )
                 }
-                isActive={isOpen}
+                isActive={isLeftNavOpen}
               />
               {isInternal ? (
-                <HeaderName prefix="IBM" to="/" element={Link} href="/">
-                  Product Design System
+                <HeaderName prefix="" to="/" element={Link} href="/">
+                  <span>IBM Product</span>&nbsp;Design&nbsp;<span>System</span>
                 </HeaderName>
               ) : (
-                <HeaderName
-                  prefix="Carbon Design System"
-                  to="/"
-                  element={Link}
-                />
+                <HeaderName prefix="" to="/" element={Link}>
+                  <span>Carbon</span>&nbsp;Design&nbsp;<span>System</span>
+                </HeaderName>
               )}
 
               <HeaderGlobalBar>
