@@ -18,7 +18,12 @@ tabs: ['Overview', 'Resources']
 ## Get Started
 
 <grid-wrapper col_lg="8" flex="true" bleed="true">
-  <clickable-tile title="Motion Generator" href="#" type="resource"></clickable-tile>
+<clickable-tile
+    title="Motion Generator"
+    href="#"
+    type="resource"
+    >
+</clickable-tile>
 </grid-wrapper>
 
 ## Style
@@ -28,21 +33,19 @@ Duo motion recognizes different moments in user's experience, and offers two mod
 <website-tabs>
   <tab label="Curves"><div>
       <grid-wrapper col_lg="8" flex="true">
-        <div>
-          <p>Productive</p>
-          <img src="images/Motion_overview_Curves_productive.svg" alt="Curve graphs representing differences between Productive and Expressive animation curves" />
-        </div>
-        <div>
-          <p>Expressive</p>
-          <img src="images/Motion_overview_Curves_expressive.svg" alt="Curve graphs representing differences between Productive and Expressive animation curves" />
-        </div>
+        <p>Productive</p>
+        <img src="images/Motion_overview_Curves_productive.svg" alt="Curve graphs representing differences between Productive and Expressive animation curves" />
+      </grid-wrapper>
+      <grid-wrapper col_lg="8" flex="true">
+        <p>Expressive</p>
+        <img src="images/Motion_overview_Curves_expressive.svg" alt="Curve graphs representing differences between Productive and Expressive animation curves" />
       </grid-wrapper>
     </div></tab>
   <tab label="Abstract"><div>
-      `vimeo: https://vimeo.com/310583009`
+      Content for second tab goes here.
   </div></tab>
   <tab label="In-situ"><div>
-      `vimeo: https://vimeo.com/310583036`
+      Content for third tab goes here.
   </div></tab>
 </website-tabs>
 
