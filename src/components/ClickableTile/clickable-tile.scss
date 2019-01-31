@@ -10,10 +10,6 @@ a.tile--article {
   background: $ibm-colors__white;
   margin: 1rem;
 
-  &:hover {
-    background: $ibm-colors__gray-20;
-  }
-
   // full bleed for tiles on mobile
   @include breakpoint('sm') {
     width: calc(100% - 2rem);
@@ -131,7 +127,7 @@ a.tile--article.tile--dark:hover {
   height: 100%;
 
   &:hover {
-    background: $ibm-colors__gray-20;
+    background: $hover-ui;
   }
 }
 
