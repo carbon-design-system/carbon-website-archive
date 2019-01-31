@@ -22,6 +22,7 @@ import '../../styles/index.scss';
 import '../../styles/experimental.scss';
 
 class Layout extends React.Component {
+
   static propTypes = {
     children: PropTypes.any,
   };
@@ -38,10 +39,26 @@ class Layout extends React.Component {
     this.checkWidth();
   }
 
-  handleSearchClick = (searchClick) => {
+  handleSearchClick = (isSearchOpen) => {
     this.setState({
-      [searchClick]: !this.state.searchClick,
-    })
+      [isSearchOpen]: !this.state.isSearchOpen
+    }, this.handleSearchEventListener);
+  }
+
+  handleSearchEventListener = () => {
+    if(this.state.isSearchOpen) {
+      document.body.addEventListener('click',this.handleCloseSearchClick);
+    } else {
+      document.body.removeEventListener('click',this.handleCloseSearchClick);
+    }
+  }
+
+  handleCloseSearchClick = (evt) => {
+    const className = evt.target.classList[0];
+    const filters = ['bx--search', 'bx--search-input', 'bx--search-magnifier', 'bx--search-close', 'ds-dataset-1'];
+    if(filters.indexOf(className) === -1) {
+      this.handleSearchClick('isSearchOpen');
+    }
   }
 
   onToggleBtnClick = (
@@ -203,8 +220,9 @@ class Layout extends React.Component {
                 {/* {isInternal ? null : <GlobalSearch />} */}
                 {this.state.isSearchOpen ? <GlobalSearch /> : 
                 <HeaderGlobalAction
+                  className="bx--header__action--search"
                   onClick={() =>
-                    this.onToggleBtnClick(
+                    this.handleSearchClick(
                       'isSearchOpen'
                     )
                 }>
