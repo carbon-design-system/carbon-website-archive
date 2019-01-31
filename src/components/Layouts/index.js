@@ -181,15 +181,13 @@ class Layout extends React.Component {
                 isActive={isLeftNavOpen}
               />
               {isInternal ? (
-                <HeaderName prefix="IBM" to="/" element={Link} href="/">
-                  Product Design System
+                <HeaderName prefix="" to="/" element={Link} href="/">
+                  <span>IBM Product</span>&nbsp;Design&nbsp;<span>System</span>
                 </HeaderName>
               ) : (
-                <HeaderName
-                  prefix="Carbon Design System"
-                  to="/"
-                  element={Link}
-                />
+                <HeaderName prefix="" to="/" element={Link}>
+                  <span>Carbon</span>&nbsp;Design&nbsp;<span>System</span>
+                </HeaderName>
               )}
 
               <HeaderGlobalBar>

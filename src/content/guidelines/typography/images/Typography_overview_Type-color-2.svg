@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="352px" height="352px" viewBox="0 0 352 352" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Typography_overview_Type-color-2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Type-color-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="352" height="352"></rect>
+        <polygon id="Rectangle-16-Copy-169" points="0 0 352 0 352 352 0 352"></polygon>
+        <text id="I’m-a-magenta-senten" font-family="IBMPlexSans, IBM Plex Sans" font-size="29.3333333" font-weight="normal" line-spacing="36.6666667" fill="#EE538B">
+            <tspan x="78.2222222" y="153.444444">I’m a magenta </tspan>
+            <tspan x="78.2222222" y="190.111111">sentence for </tspan>
+            <tspan x="78.2222222" y="226.777778">no reason</tspan>
+        </text>
+    </g>
+</svg>
