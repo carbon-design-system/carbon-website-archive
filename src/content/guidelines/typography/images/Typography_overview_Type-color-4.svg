@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="352px" height="352px" viewBox="0 0 352 352" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Typography_overview_Type-color-4</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Type-color-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="352" height="352"></rect>
+        <polygon id="Rectangle-16-Copy-170" fill="#252525" points="0 0 352 0 352 352 0 352"></polygon>
+        <text id="Color-is-not-for-dec" font-family="IBMPlexSans, IBM Plex Sans" font-size="29.3333333" font-weight="normal" line-spacing="36.6666667">
+            <tspan x="78.2222222" y="171.777778" fill="#C48AFF">Color is</tspan>
+            <tspan x="176.576889" y="171.777778" fill="#B380E0"> </tspan>
+            <tspan x="183.499556" y="171.777778" fill="#5CA6FF">not</tspan>
+            <tspan x="226.883556" y="171.777778" fill="#B380E0"> </tspan>
+            <tspan x="233.806222" y="171.777778" fill="#C48AFF">for</tspan>
+            <tspan x="270.384889" y="171.777778" fill="#B380E0"> </tspan>
+            <tspan x="78.2222222" y="208.444444" fill="#00D9D4">decoration</tspan>
+        </text>
+    </g>
+</svg>
