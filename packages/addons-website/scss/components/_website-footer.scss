@@ -1,9 +1,5 @@
 @import '../prefix';
 
-.#{$prefix}--example {
-  font-size: 4rem;
-}
-
 .#{$prefix}--website-footer {
   @include type-style('body-short-01');
   width: 100%;
@@ -15,8 +11,8 @@
 
 .#{$prefix}--website-footer .ibm--grid {
   min-height: 370px;
-  padding-top: 1.5rem;
-  padding-bottom: 2rem;
+  padding-top: $spacing-lg;
+  padding-bottom: $spacing-xl;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -25,7 +21,7 @@
 // Footer nav lists
 .#{$prefix}--website-footer__nav {
   padding-bottom: rem(40px);
-  margin-bottom: $spacing-md;
+  margin-bottom: $spacing-lg;
   position: relative;
 
   &:after {
@@ -49,7 +45,7 @@
   display: block;
 
   @include breakpoint('sm') {
-    margin: 0.5rem 0;
+    margin: 0 0 $spacing-xs 0;
   }
 
   @include breakpoint('lg') {
