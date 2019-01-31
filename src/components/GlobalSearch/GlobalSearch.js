@@ -21,14 +21,14 @@ export default class GlobalSearch extends React.Component {
 
   render() {
     return (
-      <div className="bx--search bx--search--sm" role="search">
+      <div className="bx--search bx--search--xl" role="search">
         <Icon
           name="icon--search"
           description="Search Maginfier"
           className="bx--search-magnifier"
         />
         <label htmlFor="doc-search" className="bx--label">
-          Search
+          Search by element, component, or token, etc
         </label>
         <input
           aria-label="Search"
@@ -36,6 +36,11 @@ export default class GlobalSearch extends React.Component {
           className="bx--search-input"
           id="doc-search"
           placeholder="Search"
+        />
+        <Icon
+          name="icon--close"
+          description="Search Clear"
+          className="bx--search-close"
         />
       </div>
     );

@@ -14,7 +14,7 @@ import {
   HeaderGlobalBar,
   HeaderGlobalAction,
 } from 'carbon-components-react/lib/components/UIShell';
-import { AppSwitcher20, Menu32, Close20 } from '@carbon/icons-react';
+import { AppSwitcher20, Menu32, Close20, Search20 } from '@carbon/icons-react';
 import { WebsiteFooter, WebsiteSwitcher } from '@carbon/addons-website';
 
 import timestamp from 'raw-loader!../../../build-timestamp';
@@ -29,12 +29,19 @@ class Layout extends React.Component {
   state = {
     isLeftNavOpen: false,
     isLeftNavFinal: false,
+    isSearchOpen: false,
     isSwitcherOpen: false,
     isSwitcherFinal: false,
   };
 
   componentDidMount() {
     this.checkWidth();
+  }
+
+  handleSearchClick = (searchClick) => {
+    this.setState({
+      [searchClick]: !this.state.searchClick,
+    })
   }
 
   onToggleBtnClick = (
@@ -194,6 +201,15 @@ class Layout extends React.Component {
 
               <HeaderGlobalBar>
                 {/* {isInternal ? null : <GlobalSearch />} */}
+                {this.state.isSearchOpen ? <GlobalSearch /> : 
+                <HeaderGlobalAction
+                  onClick={() =>
+                    this.onToggleBtnClick(
+                      'isSearchOpen'
+                    )
+                }>
+                  <Search20 />
+                </HeaderGlobalAction>}
                 <HeaderGlobalAction
                   className="bx--header__action--switcher"
                   aria-label="Switch"
