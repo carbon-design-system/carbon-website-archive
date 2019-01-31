@@ -55,7 +55,7 @@ export default class LeftNav extends React.Component {
           const classNames = classnames('side-nav', {
             'side-nav__closed': !isLeftNavOpen,
             'side-nav__closed--final': isLeftNavFinal && !isLeftNavOpen,
-            'bx--side-nav--website--light': location.pathname !== '/',
+            'bx--side-nav--website--light': location.pathname !== '/' && location.pathname !== '/404/',
             'bx--side-nav--website': true,
           });
 
