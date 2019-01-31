@@ -311,9 +311,3 @@ a.#{$prefix}--side-nav__link > .#{$prefix}--side-nav__icon {
 .#{$prefix}--header ~ .#{$prefix}--side-nav {
   transition: 0.35s cubic-bezier(0.2, 0, 0.38, 0.9) top;
 }
-
-.sticky--tabs.sticky-tabs--header-hidden
-  .#{$prefix}--header
-  ~ .#{$prefix}--side-nav {
-  top: 0;
-}

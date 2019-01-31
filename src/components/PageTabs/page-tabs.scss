@@ -9,16 +9,6 @@
   z-index: 12000;
 }
 
-.sticky--tabs .page-tabs {
-  position: fixed;
-  top: 3rem;
-}
-
-.sticky--tabs.sticky-tabs--header-hidden .page-tabs {
-  position: fixed;
-  top: 0;
-}
-
 .page-tabs__list {
   display: flex;
   flex-direction: row;

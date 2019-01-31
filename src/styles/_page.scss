@@ -19,11 +19,6 @@ body {
   transition: 0.35s cubic-bezier(0.2, 0, 0.38, 0.9) margin-top;
 }
 
-.sticky--tabs.sticky-tabs--header-hidden .side-nav + div,
-.sticky--tabs.sticky-tabs--header-hidden container {
-  margin-top: 0;
-}
-
 .container .ibm--grid {
   margin: 0;
   max-width: rem(1584px);
@@ -188,4 +183,33 @@ img[src*='gif'] {
 
 .page-content iframe {
   margin-bottom: rem(24px);
+}
+
+//---------------------------------------
+// Sticky tab states
+//---------------------------------------
+
+.sticky-tabs.sticky-tabs--header-hidden .side-nav + div,
+.sticky-tabs.sticky-tabs--header-hidden container {
+  margin-top: 0;
+}
+
+.sticky-tabs.sticky-tabs--header-hidden .#{$prefix}--header--website {
+  top: -3rem;
+}
+
+.sticky-tabs.sticky-tabs--header-hidden
+  .#{$prefix}--header
+  ~ .#{$prefix}--side-nav {
+  top: 0;
+}
+
+.sticky-tabs .page-tabs {
+  position: fixed;
+  top: 3rem;
+}
+
+.sticky-tabs.sticky-tabs--header-hidden .page-tabs {
+  position: fixed;
+  top: 0;
 }
