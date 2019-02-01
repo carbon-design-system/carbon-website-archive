@@ -4,6 +4,7 @@
 
 .website-tabs img {
   width: 100%;
+  margin-bottom: 0;
 }
 
 .website-tabs nav.bx--tabs {
@@ -70,7 +71,7 @@
   .website-tabs div.tab-content {
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 
   /**
@@ -218,4 +219,8 @@
     width: 50%;
     max-width: 50%;
   }
+}
+
+.website-tabs .gatsby-resp-iframe-wrapper {
+  padding-top: 8px;
 }
