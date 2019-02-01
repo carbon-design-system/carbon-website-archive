@@ -28,9 +28,11 @@ title: Common Actions
 
 **Usage:** Use a _secondary button_ or a _link_.
 
+<image-component cols="8" caption='"Cancel" action as a button.'>
+
 ![Example of cancel in a modal](images/common-action-1.png)
 
-_"Cancel" action as a button._
+</image-component>
 
 ### Clear
 
@@ -38,9 +40,11 @@ This action clears data from fields or removes selections. _Clear_ can also dele
 
 **Usage:** Use the `x` icon on the right side of a field, item, or value.
 
+<image-component cols="8" caption='"Clear" action in multi-select dropdown (top) and in search (bottom).'>
+
 ![Example of clear in Multi-select Dropdown and in Search](images/common-action-2.png)
 
-_"Clear" action in multi-select dropdown (top) and in search (bottom)._
+</image-component>
 
 ### Close
 
@@ -48,9 +52,11 @@ This action closes the current page, window, or menu. One example is closing a s
 
 **Usage:** Use the `close` icon, which is typically placed on the upper right side of the element. Do not use _close_ in a button.
 
+<image-component cols="8" caption='"Close" action in an inline notification.'>
+
 ![Example of close in an inline notification](images/common-action-3.png)
 
-_"Close" action in an inline notification._
+</image-component>
 
 ### Delete
 
@@ -58,9 +64,11 @@ This action eradicates an existing object. _Delete_ actions cannot be easily und
 
 **Usage:** Use either the `delete` "trash can" icon, a _danger button_, or a danger option in a menu. A _danger modal_ is used when a warning is needed to confirm an action.
 
+<image-component cols="8" caption='"Delete" action in a modal (top) and an overflow menu (bottom).'>
+
 ![Example of delete in a Modal and Overflow Menu](images/common-action-4.png)
 
-_"Delete" action in a modal (top) and an overflow menu (bottom)._
+</image-component>
 
 ### Remove
 
@@ -68,9 +76,11 @@ This action removes an object from a list or item; however, the object is not de
 
 **Usage:** Use as a _button_ or `subtract` icon or glyph.
 
+<image-component cols="8" caption='"Remove" action as an icon.'>
+
 ![Example of Remove in a Structured List](images/common-action-5.png)
 
-_"Remove" action as an icon._
+</image-component>
 
 ### Reset
 
@@ -78,9 +88,11 @@ This action reverts values back to their last saved state. The last saved state 
 
 **Usage:** Typically applied as a _link_.
 
+<image-component cols="8" caption='"Reset" action in a filter.'>
+
 ![Example of reset in a filter](images/common-action-6.png)
 
-_"Reset" action in a filter._
+</image-component>
 
 ## Progressive actions
 
@@ -90,9 +102,11 @@ This action adds an existing object to a list, set, or system. For example, addi
 
 **Usage:** Use a _primary button_, _button with icon_, `add--glyph` or `add--outline` icon.
 
+<image-component cols="8" caption='"Add" action as a button with icon in a data table.'>
+
 ![Example of add as a Button with Icon in a Data Table](images/common-action-7.png)
 
-_"Add" action as a button with icon in a data table._
+</image-component>
 
 ### Copy
 
@@ -100,9 +114,11 @@ Creates a new identical instance of the selected object(s) in a specific destina
 
 **Usage:** Use the `copy` icon with the confirmation "copied" tooltip appearing post-click.
 
+<image-component cols="8" caption='"Copy" action as an icon with tooltip in a code snippet.'>
+
 ![Example of copy in a Code Snippet](images/common-action-8.png)
 
-_"Copy" action as an icon with tooltip in a code snippet._
+</image-component>
 
 ### Edit
 
@@ -110,10 +126,17 @@ This action allows data or values to be changed. _Edit_ commonly triggers a stat
 
 **Usage:** Use as an option in a menu, or as a _button_ or `edit` icon.
 
+<image-component cols="8">
+
 ![Example of edit in a Data Table cell](images/common-action-9.png)
+
+</image-component>
+
+<image-component cols="8" caption='Example of "edit" options for a data table cell and overflow menu.'>
+
 ![Example of edit in an Overflow Menu](images/common-action-10.png)
 
-_Example of "edit" options for a data table cell and overflow menu._
+</image-component>
 
 ### Next
 
@@ -121,9 +144,11 @@ Advances the user to the next step in a sequence of steps, such as in a wizard.
 
 **Usage:** Use a _button with icon_ or a standalone `forward` icon.
 
+<image-component cols="8" caption='"Next" action as a button with icon in a wizard.'>
+
 ![Example of next as a Button with Icon](images/common-action-11.png)
 
-_"Next" action as a button with icon in a wizard._
+</image-component>
 
 ### Refresh
 
@@ -131,6 +156,8 @@ This action reloads the view of an object, list, or data set when the displayed 
 
 **Usage:** Use the `refresh` icon or a _button_.
 
+<image-component cols="8" caption='"Refresh" action as a ghost button with icon in the action bar of a data table.'>
+
 ![Example of edit in a Data Table cell](images/common-action-12.png)
 
-_"Refresh" action as a ghost button with icon in the action bar of a data table._
+</image-component>

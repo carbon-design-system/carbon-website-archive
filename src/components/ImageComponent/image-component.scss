@@ -3,12 +3,20 @@
   flex-direction: column;
 }
 
+.image-component > img {
+  margin-bottom: 0;
+}
+
 .image-component.no-caption {
   margin-bottom: rem(24px);
 }
 
-.image-component.white > *:not(.image-component__caption) {
+.image-component > *:not(.image-component__caption) {
   background: white;
+}
+
+.image-component.transparent-bg > *:not(.image-component__caption) {
+  background: transparent;
 }
 
 .image-component.border > *:not(.image-component__caption) {
@@ -20,6 +28,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: $ui-02;
 
   .image-component__caption {
     align-self: flex-start;

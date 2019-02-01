@@ -15,13 +15,21 @@ It is best practice to use an Inline Loading component for any Create, Update, o
 
 The **LOADING** state indicates that the action is still in progress.
 
+<image-component cols="8">
+
 ![Example of inline loading](images/inline-loading-usage-1.png)
+
+</image-component>
 
 ### Success
 
 The **SUCCESS** state indicates that the action completed successfully.
 
+<image-component cols="8">
+
 ![Example of loading success](images/inline-loading-usage-2.png)
+
+</image-component>
 
 ## Guidelines
 

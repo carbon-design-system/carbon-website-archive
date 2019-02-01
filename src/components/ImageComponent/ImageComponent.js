@@ -5,13 +5,10 @@ const path = require('path');
 
 class ImageComponent extends Component {
   static propTypes = {
-    src: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired,
     caption: PropTypes.string,
-    cols: PropTypes.string,
+    cols: PropTypes.number,
     children: PropTypes.node,
-    bg: PropTypes.string,
-    border: PropTypes.bool,
+    border: PropTypes.string,
     className: PropTypes.string,
     onGrid: PropTypes.bool,
   };
@@ -23,27 +20,25 @@ class ImageComponent extends Component {
 
   render() {
     const {
-      src,
-      alt,
       caption,
       children,
       cols,
-      bg,
       border,
       className,
       onGrid,
       fixed,
+      bg,
     } = this.props;
     const columnClasses = classnames({
-      'ibm--col-lg-12 ibm--offset-lg-4': cols == '12',
-      'ibm--col-lg-8 ibm--offset-lg-4': cols == '8',
-      'ibm--col-lg-6 ibm--col-md-6 ibm--offset-lg-4': cols == '6',
-      'ibm--col-lg-4 ibm--offset-lg-4': cols == '4',
+      'ibm--col-lg-12 ibm--offset-lg-4': cols == 12,
+      'ibm--col-lg-8 ibm--offset-lg-4': cols == 8,
+      'ibm--col-lg-6 ibm--col-md-6 ibm--offset-lg-4': cols == 6,
+      'ibm--col-lg-4 ibm--offset-lg-4': cols == 4,
     });
     const imgComponentClasses = classnames('image-component', className, {
       'no-caption': caption === undefined,
-      white: bg === 'white',
       border: border === 'true',
+      'transparent-bg': bg === 'none',
       'fixed-default': fixed === 'default',
       'fixed-large': fixed === 'large',
     });

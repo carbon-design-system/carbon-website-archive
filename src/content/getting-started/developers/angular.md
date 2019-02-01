@@ -31,7 +31,7 @@ $ npm start
 
 ### Using our starter app
 
-<image-component cols="12">
+<image-component cols="12" bg="none">
 
 ![carbon-angular-starter screenshot](images/carbon-angular-starter.png)
 
