@@ -10,12 +10,12 @@ class ImageComponent extends Component {
     children: PropTypes.node,
     border: PropTypes.string,
     className: PropTypes.string,
-    onGrid: PropTypes.bool,
+    fixed: PropTypes.string,
+    bg: PropTypes.string,
   };
 
   static defaultProps = {
     cols: '12',
-    onGrid: true,
   };
 
   render() {
@@ -25,7 +25,6 @@ class ImageComponent extends Component {
       cols,
       border,
       className,
-      onGrid,
       fixed,
       bg,
     } = this.props;
