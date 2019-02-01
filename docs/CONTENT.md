@@ -290,7 +290,7 @@ Content for third tab goes here.
   - `<tab label="Lorem">`
 - Each Tab element also has a div wrapper inside of it, with no space between the div and tab
   - `<tab label="Lorem"><div> … </div></tab>`
-- Because of the way Markdown processes files, an empty line is required to be the first bit of content inside of the `<tab><div>` stack, e.g.:
+- Because of the way Markdown processes files, an **empty line** is required to be the first bit of content inside of the `<tab><div>` stack, e.g.:
 ```
 <website-tabs>
 <tab label="Tab 1"><div>
@@ -300,7 +300,9 @@ lorem ipsum dolor sit amet
 </div></tab>
 </website-tabs>
 ```
-- note the empty line after `<tab label="Tab 1"><div>` and before the first line of content, in this case `lorem ipsum…`
+- note the empty line after `<tab label="Tab 1"><div>` and before the first line of content, in this case `lorem ipsum…`. **Verify that there are no whitespace characters in these empty lines**.
+- Do not indent interior components. 
+    - Unfortunately, this component is extra fragile when written inside of a markdown file, because we are passing `<tab>` components into the `<website-tabs>` component, and markdown can interfere when child components are indendented. 
 
 
 ### Page Specific Components:
