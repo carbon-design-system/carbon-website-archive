@@ -119,8 +119,9 @@ body {
   }
 }
 
-.ibm--row .gatsby-resp-iframe-wrapper {
-  margin-left: 0;
+.ibm--row .gatsby-resp-iframe-wrapper,
+.example__content .gatsby-resp-iframe-wrapper {
+  margin-left: 0 !important;
 }
 
 //images
