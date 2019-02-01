@@ -246,7 +246,6 @@ function renderIcon(icon) {
         {icon.friendlyName}
       </h5>
       <span className="icon__card-details" title={icon.name}>
-        {icon.name}
       </span>
     </div>
   );
