@@ -49,13 +49,15 @@ class ImageComponent extends Component {
     });
 
     return (
-      <div className="ibm--row">
+      <div className="ibm--row image-component__container">
         <div className={columnClasses}>
-          <div className={imgComponentClasses}>
-            {children}
-            {caption && <p className="image-component__caption">{caption}</p>}
-          </div>
+          <div className={imgComponentClasses}>{children}</div>
         </div>
+        {caption && (
+          <div className="ibm--col-lg-4 ibm--offset-lg-4">
+            <p className="image-component__caption">{caption}</p>
+          </div>
+        )}
       </div>
     );
   }
