@@ -13,7 +13,7 @@ class FourOhFour extends React.Component {
           <div className="ibm--row">
             <div className="ibm--col-lg-12 ibm--offset-lg-4 fourohfour-body">
               <div className="fourohfour-body">
-                <h2 className="fourohfour-body__heading">Something's wrong!</h2>
+                <h2 className="fourohfour-body__heading">Something's wrong...</h2>
                 <p className="fourohfour-body__text">Sorry, we cannot find the page you are looking for.</p>
                 <p className="fourohfour-body__text">Maybe some of these most visited links will help you?</p>
                 {this.props.children}
