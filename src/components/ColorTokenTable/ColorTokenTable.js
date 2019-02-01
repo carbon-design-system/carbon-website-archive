@@ -33,7 +33,6 @@ export default class ColorTokenTable extends React.Component {
   addScrollListener() {
     document.addEventListener('scroll', e => {
       let stickyPoint = this.state.mobile ? 1340 : 1244;
-      console.log(window.scrollY);
       if (window.scrollY >= stickyPoint) {
         this.setState({
           sticky: true,
@@ -70,10 +69,10 @@ export default class ColorTokenTable extends React.Component {
     let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
     return result
       ? {
-          r: parseInt(result[1], 16),
-          g: parseInt(result[2], 16),
-          b: parseInt(result[3], 16),
-        }
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16),
+      }
       : null;
   };
 
@@ -85,7 +84,7 @@ export default class ColorTokenTable extends React.Component {
       let hex = bgColor.substring(0, bgColor.length - 6);
       bgColor = `rgba(${this.hexToRgb(hex).r}, ${this.hexToRgb(hex).g}, ${
         this.hexToRgb(hex).b
-      }, 0.5)`;
+        }, 0.5)`;
     }
     return (
       <div className="color-token-value">

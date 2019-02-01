@@ -4,7 +4,7 @@ title: Resources
 
 ## GitHub Repos
 
-<grid-wrapper col_lg="8" flex="true" bleed="true">
+<grid-wrapper className="tile--resource--no-margin" col_lg="8" flex="true" bleed="true">
 <clickable-tile
     title="Carbon Design Kit"
     href="https://github.com/ibm/carbon-design-kit"
@@ -37,7 +37,7 @@ title: Resources
 
 ## Tools
 
-<grid-wrapper col_lg="8" flex="true" bleed="true">
+<grid-wrapper className="tile--resource--no-margin" col_lg="8" flex="true" bleed="true">
 <clickable-tile
     title="Carbon CodePen"
     href="http://www.codepen.io/team/carbon"
@@ -93,35 +93,35 @@ Carbon uses the IBM Design Language as our guiding principle. These core values 
     title="Smashing Magazine's “Design Systems” Book"
     href="https://www.smashingmagazine.com/design-systems-book/"
     >
-    <img src="images/article-1.png" alt="Data Table updates in Carbon React v5.22.0" />
+    <img src="images/Featured_01.png" alt="Smashing Magazine's “Design Systems” Book" />
 </clickable-tile>
 <clickable-tile
     type="article"
     title="Winter 2017 HOW In-House Design Award Winner"
     href="http://www.howdesign.com/84-award-winning-projects-from-in-house-design-teams/"
     >
-    <img src="images/article-2.png" alt="Winter 2017 HOW In-House Design Award Winner" />
+    <img src="images/Featured_02.png" alt="Winter 2017 HOW In-House Design Award Winner" />
 </clickable-tile>
 <clickable-tile
     type="article"
     title="Path to Design System Maturity"
     href="https://medium.com/ux-power-tools/the-path-to-design-system-maturity-d403daba692a"
     >
-    <img src="images/article-3.png" alt="Path to Design System Maturity" />
+    <img src="images/Featured_03.png" alt="Path to Design System Maturity" />
 </clickable-tile>
 <clickable-tile
     type="article"
     title="Responsive Web Design Podcast"
     href="https://responsivewebdesign.com/podcast/ibm-carbon/"
     >
-    <img src="images/article-4a.png" alt="Responsive Web Design Podcast" />
+    <img src="images/Featured_04.png" alt="Responsive Web Design Podcast" />
 </clickable-tile>
 <clickable-tile
     type="article"
     title="UX Pin Virtual Design Summit"
     href="https://www.youtube.com/watch?v=eSvq5MieOdw&t=144s"
     >
-    <img src="images/article-5a.png" alt="UX Pin Virtual Design Summit" />
+    <img src="images/Featured_05.png" alt="UX Pin Virtual Design Summit" />
 </clickable-tile>
 </grid-wrapper>
 
@@ -135,7 +135,7 @@ Carbon uses the IBM Design Language as our guiding principle. These core values 
     date="December 10, 2018"
     href="https://medium.com/carbondesign/what-to-expect-in-carbon-10-5af1bd6e25f6"
     >
-    <img src="images/article-9.png" alt="What to expect in Carbon 10" />
+    <img src="images/Article_01.png" alt="What to expect in Carbon 10" />
 </clickable-tile>
 <clickable-tile
     type="article"
@@ -144,7 +144,7 @@ Carbon uses the IBM Design Language as our guiding principle. These core values 
     date="October 19, 2018"
     href="https://medium.com/carbondesign/up-running-with-carbon-react-in-less-than-5-minutes-25d43cca059e"
     >
-    <img src="images/article-8.png" alt="Up & Running with Carbon React in less than 5 minutes" />
+    <img src="images/Article_02.png" alt="Up & Running with Carbon React in less than 5 minutes" />
 </clickable-tile>
 <clickable-tile
     type="article"
@@ -153,7 +153,7 @@ Carbon uses the IBM Design Language as our guiding principle. These core values 
     date="October 16, 2018"
     href="https://medium.com/carbondesign/hacktoberfest-with-carbon-95c48943f586"
     >
-    <img src="images/article-7.jpg" alt="Hacktoberfest with Carbon" />
+    <img src="images/Article_03.png" alt="Hacktoberfest with Carbon" />
 </clickable-tile>
 <clickable-tile
     type="article"
@@ -162,7 +162,7 @@ Carbon uses the IBM Design Language as our guiding principle. These core values 
     date="February 20, 2018"
     href="https://medium.com/carbondesign/data-table-updates-in-carbon-react-v5-22-0-6da0c24a96d6"
     >
-    <img src="images/article-6.png" alt="Data Table updates in Carbon React v5.22.0" />
+    <img src="images/Article_04.png" alt="Data Table updates in Carbon React v5.22.0" />
 </clickable-tile>
 <clickable-tile
     type="article"
@@ -171,7 +171,7 @@ Carbon uses the IBM Design Language as our guiding principle. These core values 
     date="August 11, 2017"
     href="https://medium.com/design-ibm/introducing-carbon-themes-83d3985a8627"
     >
-    <img src="images/article-4.png" alt="Introducing Carbon Themes" />
+    <img src="images/Article_05.png" alt="Introducing Carbon Themes" />
 </clickable-tile>
 <clickable-tile
     type="article"
@@ -180,6 +180,6 @@ Carbon uses the IBM Design Language as our guiding principle. These core values 
     date="March 30, 2017"
     href="https://medium.com/design-ibm/carbon-designing-inside-big-blue-8577883cfe42"
     >
-    <img src="images/article-5.png" alt="Carbon: Designing inside Big Blue" />
+    <img src="images/Article_06.png" alt="Carbon: Designing inside Big Blue" />
 </clickable-tile>
 </grid-wrapper>

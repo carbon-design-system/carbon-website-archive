@@ -13,17 +13,21 @@ export default class FeatureTile extends React.Component {
   };
 
   render() {
-    const { children, title, label, href, margin } = this.props;
+    const { children, title, label, href, margin, className } = this.props;
 
     const classNames = classnames({
       'ibm--row': true,
       'feature-tile--margin': margin === 'true',
-    });
+    }, className);
+
+    const linkClasses = classnames({
+      'feature-tile': true,
+    }, className)
 
     return (
       <div class={classNames}>
-        <div className="ibm--col-lg-12 ibm--offset-lg-4 flex-wrap ibm--col-bleed">
-          <Link to={href} className="feature-tile">
+        <div className="ibm--col-lg-12 ibm--offset-lg-4 flex-wrap">
+          <Link to={href} className={linkClasses}>
             <div className="tile__img">{children}</div>
             <div className="feature-tile__tile">
               <div className="bx--aspect-ratio bx--aspect-ratio--2x1">
