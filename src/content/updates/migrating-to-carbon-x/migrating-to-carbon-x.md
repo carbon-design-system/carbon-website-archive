@@ -23,7 +23,7 @@ Carbon X, aka v10, is currently in Alpha release. Please use this opportunity to
 
 ## Rollout plan
 
-- January 2019: Beta release
+- February 2019: Beta release
 - March 2019: Production release
 
 ### Adoption and activation sessions

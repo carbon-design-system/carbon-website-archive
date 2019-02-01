@@ -124,6 +124,8 @@ class Layout extends React.Component {
     }).format(new Date(Number(timestamp)));
     const { isLeftNavOpen } = this.state;
 
+    const is404 = children.key === null;
+
     return (
       <StaticQuery
         query={graphql`
@@ -185,10 +187,10 @@ class Layout extends React.Component {
                   <span>IBM Product</span>&nbsp;Design&nbsp;<span>System</span>
                 </HeaderName>
               ) : (
-                <HeaderName prefix="" to="/" element={Link}>
-                  <span>Carbon</span>&nbsp;Design&nbsp;<span>System</span>
-                </HeaderName>
-              )}
+                  <HeaderName prefix="" to="/" element={Link}>
+                    <span>Carbon</span>&nbsp;Design&nbsp;<span>System</span>
+                  </HeaderName>
+                )}
 
               <HeaderGlobalBar>
                 {/* {isInternal ? null : <GlobalSearch />} */}
@@ -225,6 +227,7 @@ class Layout extends React.Component {
             />
 
             <LeftNav
+              is404Page={is404}
               isLeftNavFinal={this.state.isLeftNavFinal}
               isLeftNavOpen={this.state.isLeftNavOpen}
               location={this.props.location}

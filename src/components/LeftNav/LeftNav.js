@@ -39,7 +39,7 @@ export default class LeftNav extends React.Component {
     const { GATSBY_CARBON_ENV } = process.env;
     const isInternal = GATSBY_CARBON_ENV == 'internal';
 
-    const { isLeftNavOpen, isLeftNavFinal } = this.props;
+    const { isLeftNavOpen, isLeftNavFinal, is404Page } = this.props;
 
     const classNamesClickToClose = classnames({
       'side-nav-click-to-close': true,
@@ -55,7 +55,7 @@ export default class LeftNav extends React.Component {
           const classNames = classnames('side-nav', {
             'side-nav__closed': !isLeftNavOpen,
             'side-nav__closed--final': isLeftNavFinal && !isLeftNavOpen,
-            'bx--side-nav--website--light': location.pathname !== '/',
+            'bx--side-nav--website--light': location.pathname !== '/' && !is404Page,
             'bx--side-nav--website': true,
           });
 
