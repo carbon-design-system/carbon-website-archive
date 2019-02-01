@@ -1,7 +1,28 @@
+// Needs dark theme colors
 .bx--header {
   .bx--search {
-    height: 2rem;
-    width: auto;
+    width: rem(288px);
+  }
+
+  .bx--search-input {
+    width: rem(288px);
+    height: 3rem;
+  }
+
+  .bx--search-magnifier,
+  .bx--search-close {
+    width: rem(20px);
+    height: rem(20px);
+    fill: $ibm-colors__gray-10;
+  }
+
+  .bx--search-close {
+    right: rem(14px);
+  }
+
+  .bx--search--dark .bx--search-input{
+    background-color: $ibm-colors__gray-80;
+    color: $ibm-colors__gray-10;
   }
 
   //---------------------------------------
