@@ -21,13 +21,11 @@ Tone conveys your attitude toward what you are writing about and who you are wri
 Here’s how conversational you should be based on the six stages of the user journey:
 
 ###Most: 
-
 ####Discover, Try, Buy content
 
 “Thanks for joining IBM Bluemix for your free 30-day trial. It’s been great having you! Unfortunately, your Bluemix trial account, with IBMid name@domain, is now deactivated because your trial is over. While your account is deactivated, you can’t access resources. Don’t worry, your apps are not deleted.”
 
 ###More: 
-
 ####Getting started content (for example, welcome), content for remaining experiences (Productive Use, Manage and Upgrade, Leverage and Extend, Get Support)
 
 “To start using Bluemix, name your first organization. Think of an org as a project or team that shares resources, such as apps, databases, and other services. Orgs exist in geographic regions, so decide where you’d like to put your first one.”
