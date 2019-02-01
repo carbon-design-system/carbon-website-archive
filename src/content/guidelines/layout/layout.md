@@ -174,7 +174,7 @@ Here are some common UI behaviors:
 
 ### Key lines
 
-Regardless how your grid is built, ensure the overall layout has visible guide lines: vertical and horizontal lines on which multiple objects align. Horizontal and vertical alignment are equally critical. When present, the eye can follow content more easily, increase the perception of visual harmony.
+Regardless how your grid is built, ensure the overall layout has visible guide lines: vertical and horizontal lines on which multiple objects align. Horizontal and vertical alignment are equally critical. When present, the eye can follow content more easily, increasing the perception of visual harmony.
 
 ![key alignments](images/Layout_overview_Key-alignment.svg)
 

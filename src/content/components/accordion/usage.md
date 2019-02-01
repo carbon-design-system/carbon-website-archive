@@ -12,3 +12,5 @@ Avoid "nested" accordions—that is, collapsible content within collapsible cont
 The Carbon accordion allows for multiple sections to be expanded simultaneously.
 
 A chevron is used to indicate the "expand/collapse" action, though the entire header area is clickable for the same action.
+
+![accordion example](images/accordion-usage-1.png)
