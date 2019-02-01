@@ -2,7 +2,8 @@ import '../polyfills';
 import React from 'react';
 import rehypeReact from 'rehype-react';
 import Layout from '../components/Layouts';
-import FourOhFour from '../components/404';
+import { FourOhFour } from '@carbon/addons-website';
+
 import classnames from 'classnames';
 
 // Components

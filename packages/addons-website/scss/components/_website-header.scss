@@ -6,6 +6,10 @@
   border-bottom: 1px solid $inverse-02;
 }
 
+.#{$prefix}--header__action {
+  transition: $transition--base;
+}
+
 .#{$prefix}--header__action--active {
   border-color: transparent;
   background: transparent;
@@ -22,7 +26,7 @@
 a.#{$prefix}--header__name {
   @include type-style('body-short-02');
   font-weight: 600;
-  padding-left: 0;
+  padding-left: 0.5rem;
 
   @include breakpoint('lg') {
     padding-left: 1rem;

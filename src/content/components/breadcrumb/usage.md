@@ -11,6 +11,8 @@ Breadcrumbs are very effective in products and experiences that have a large amo
 
 Breadcrumbs' space-efficient design and high utility make them an easy choice for most designers.
 
+![multiple tiers of breadcrumb](images/breadcrumb-usage-1.png)
+
 ## Types of breadcrumbs
 
 ### Location-based
@@ -20,3 +22,4 @@ These illustrate the site's heirarchy and show the user where they are within th
 ### Path-based
 
 These show the actual steps the user took to get to the current page, rather than reflecting the site's information architecture. Path-based breadcrumbs are always dynamically generated.
+
