@@ -69,7 +69,7 @@ With this system, all Carbon users can create their own themes by assigning new 
 
 ### Themes
 
-Themes serve as an organizational framework for color in Carbon, with each theme based on a specific primary background color. There are two default "light" themes and two default "dark" themes.  The light themes use White and Gray 10 backgrounds, and the dark themes use Gray 100 and Gray 90 backgrounds. Default color tokens are provided for each component based on the primary background color.
+Themes serve as an organizational framework for color in Carbon, with each theme based on a specific primary background color. There are two default "light" themes and two default "dark" themes.  The light themes use White and Gray 10 backgrounds, and the dark themes use Gray 100 and Gray 90 backgrounds. Default color tokens are provided for each component based on the primary background color. 
 
 ![Theme backgrounds](images/theme_swatches.png)
 
