@@ -5,9 +5,7 @@ tabs: ['Overview', 'Usage']
 
 ## Feature-Flags
 
-Carbon utilizes `feature-flags` to toggle new features on and off.
-
-We currently have two `feature-flags` available for testing. **Experimental Components:** use `components-x` and the **UI Shell:** uses `ui-shell`.
+Carbon utilizes `feature-flags` to toggle new features on and off. We currently have two `feature-flags` available for testing. **Experimental Components:** use `components-x` and the **UI Shell:** uses `ui-shell`.
 
 To turn on either of the feature flags include the **feature-flag** variable into your SCSS file before importing `carbon-components`, then set `components-x` and/or `ui-shell` to `true`.
 
@@ -19,7 +17,7 @@ $feature-flags: (
 @import 'carbon-components/src/globals/scss/styles';
 ```
 
-**Note: You must be using Sass and not the compiled CSS file in order to take advantage of the code using feature flags.**
+_Note: You must be using Sass and not the compiled CSS file in order to take advantage of the code using feature flags._
 
 ## Disclaimer
 
