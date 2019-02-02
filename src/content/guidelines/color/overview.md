@@ -11,19 +11,18 @@ tabs: ['Overview', 'Usage']
     title="Color palettes for Adobe™(.ase)"
     href="https://w3.ibm.com/design/language//IBM-color-palettes.zip"
     type="resource"
-    >
-    <img src="images/ase.png" alt="Color palettes for Adobe" />
+     >
+    <img src="images/ase.png" alt="Color palettes for Adobe"  />
 </clickable-tile>
-</grid-wrapper>
-<grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
     title="Elements package: Color"
     href="https://github.com/IBM/carbon-elements/tree/master/packages/colors"
     type="resource"
     >
-    <img src="images/sketch-icon.png" alt="Github" />
+    <img src="images/sketch-icon.png" alt="Github"  />
 </clickable-tile>
 </grid-wrapper>
+
 
 <anchor-links>
 <ul>
