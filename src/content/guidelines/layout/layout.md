@@ -2,7 +2,7 @@
 label: The grid is the framework for all the visual elements and typography at IBM. It’s fundamental to everything we design.
 title: Layout
 ---
-## Get started
+## Resources
 
 <grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
