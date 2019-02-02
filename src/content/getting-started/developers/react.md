@@ -3,23 +3,37 @@ title: Developers
 tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
 ---
 
-The **Carbon Components React Library** provides front-end developers & engineers a collection of reusable React components to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.
+
+<anchor-links>
+<ul>
+    <li><a href="#carbon-react-library">Carbon React Library</a></li>
+    <li><a href="#install">Install</a></li>
+    <li><a href="#development">Development</a></li>
+    <li><a href="#troubleshooting">Troubleshooting</a></li>
+</ul>
+</anchor-links>
+
+
+## Carbon React Library
+
+The library provides front-end developers & engineers a collection of reusable React components to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.
 
 ## Install
 
-Using npm:
+####Using npm:
 
 ```bash
 $ npm install --save carbon-components-react carbon-components carbon-icons
 ```
 
-If you prefer [Yarn](https://yarnpkg.com/en/), use the following command instead:
+####If you prefer [Yarn](https://yarnpkg.com/en/):
+use the following command instead:
 
 ```bash
 $ yarn add carbon-components-react carbon-components carbon-icons
 ```
 
-### Getting started
+### Resources
 
 1.  These components require the use of [webpack](https://webpack.js.org/guides/getting-started/) in your project. See our [webpack.config.js](https://github.com/carbon-design-system/carbon-components-react/blob/master/.storybook/webpack.config.js) for an example configuration.
 
@@ -29,6 +43,10 @@ $ yarn add carbon-components-react carbon-components carbon-icons
 
 If you just want to try out `carbon-components-react`, you can also use [CodeSandbox](https://codesandbox.io).
 
+<a target="_blank" href="https://codesandbox.io/s/x2mjypo6pp">
+  <img style="width: 200px" alt="Edit on CodeSandbox" src="https://codesandbox.io/static/img/play-codesandbox.svg" />
+</a>
+
 ## Development
 
 Please refer to the [Contribution Guidelines](https://github.com/carbon-design-system/carbon-components-react/blob/master/.github/CONTRIBUTING.md) before starting any work.
@@ -37,7 +55,7 @@ Please refer to the [Contribution Guidelines](https://github.com/carbon-design-s
 
 We recommend the use of [React Storybook](https://github.com/storybooks/react-storybook) for developing components.
 
-1.  Start the server:
+####Start the server:
 
 ```bash
 $ yarn storybook
