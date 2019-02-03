@@ -4,17 +4,9 @@ title: Typography
 tabs: ['Overview', 'Productive', 'Expressive']
 ---
 
-<anchor-links>
-<ul>
-    <li><a href="#type-tokens-and-themes">Type tokens and themes</a></li>
-    <li><a href="#typeface-ibm-plex">Typeface: IBM Plex</a></li>
-    <li><a href="#scale">Scale</a></li>
-    <li><a href="#style">Style</a></li>
-    <li><a href="#type-color">Type Color</a></li>
-</ul>
-</anchor-links>
 
-## Get started
+
+## Resources
 
 <grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
@@ -30,6 +22,16 @@ tabs: ['Overview', 'Productive', 'Expressive']
     >
 </clickable-tile>
 </grid-wrapper>
+
+<anchor-links>
+<ul>
+    <li><a href="#type-tokens-and-themes">Type tokens and themes</a></li>
+    <li><a href="#typeface-ibm-plex">Typeface: IBM Plex</a></li>
+    <li><a href="#scale">Scale</a></li>
+    <li><a href="#style">Style</a></li>
+    <li><a href="#type-color">Type Color</a></li>
+</ul>
+</anchor-links>
 
 ## Type tokens and themes
 
