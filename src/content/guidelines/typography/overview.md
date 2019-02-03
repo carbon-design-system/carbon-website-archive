@@ -14,6 +14,7 @@ tabs: ['Overview', 'Productive', 'Expressive']
     href="https://github.com/IBM/plex/releases/latest"
     type="resource"
     >
+    <img src="images/github-icon.png" alt="Latest IBM Plex" />
 </clickable-tile>
 <clickable-tile
     title="Visit the IBM Plex™ website to learn more"
