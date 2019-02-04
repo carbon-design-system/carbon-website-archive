@@ -16,6 +16,7 @@ import {
 } from 'carbon-components-react/lib/components/UIShell';
 import { AppSwitcher20, Close20 } from '@carbon/icons-react';
 import { WebsiteFooter, WebsiteSwitcher } from '@carbon/addons-website';
+import SmoothScroll from 'smooth-scroll';
 
 import timestamp from 'raw-loader!../../../build-timestamp';
 import '../../styles/index.scss';
@@ -35,6 +36,10 @@ class Layout extends React.Component {
 
   componentDidMount() {
     this.checkWidth();
+
+    const scroll = new SmoothScroll('a[href*="#"]', {
+      speedAsDuration: true,
+    });
   }
 
   onToggleBtnClick = (

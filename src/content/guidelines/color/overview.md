@@ -26,10 +26,10 @@ tabs: ['Overview', 'Usage']
 
 <anchor-links>
 <ul>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#color-anatomy">Color anatomy</a></li>
-    <li><a href="#implementing-color">Implementing color</a></li>
-    <li><a href="#accessibility">Accessibility</a></li>
+    <li><a data-scroll href="#introduction">Introduction</a></li>
+    <li><a data-scroll href="#color-anatomy">Color anatomy</a></li>
+    <li><a data-scroll href="#implementing-color">Implementing color</a></li>
+    <li><a data-scroll href="#accessibility">Accessibility</a></li>
 </ul>
 </anchor-links>
 
