@@ -6,18 +6,18 @@ title: Designers
 
 <grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
-    title="Carbon Design Kit"
+    title="Download the design kit from Github"
     href="https://github.com/ibm/carbon-design-kit"
     type="resource"
      >
-    <img src="images/sketch-icon.png" alt="Carbon Design Kit"  />
+    <img src="images/sketch-icon.png" alt="Connect the kit through Box (IBMers only)"  />
 </clickable-tile>
 <clickable-tile
     title="Download Box Drive."
     href="https://www.box.com/resources/downloads/drive"
     type="resource"
     >
-    <img src="images/box-icon.png" alt="Carbon Design Kit"  />
+    <img src="images/github-icon.png" alt="Carbon Design Kit"  />
 </clickable-tile>
 </grid-wrapper>
 
@@ -34,10 +34,6 @@ This site, along with the Carbon Design Kit, provides designers with everything 
 
 The design kit is available to the public through GitHub and [internally to IBMers through Box Drive.](#synchronize-via-box-drive) The kit can be used directly in the Sketch application or loaded as a Sketch library source.
 
-
-### Why Sketch?
-
-<p><a href="https://www.sketchapp.com/" target=blank>Sketch</a> is rapidly becoming the industry-standard software for UI design on Mac and is recommended by the IBM Design System team. Sketch is relatively affordable to license, and offers a 30-day free trial for new users. There are also plenty of free tutorials available online.</p>
 
 ### Releases
 

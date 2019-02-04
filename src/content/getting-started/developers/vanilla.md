@@ -8,7 +8,7 @@ tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
 <ul>
     <li><a href="#carbon-vanilla-library">Carbon Vanilla Library</a></li>
     <li><a href="#install">Install</a></li>
-    <li><a href="#resources">Resources</a></li>
+    <li><a href="#getting-started">Getting started</a></li>
      <li><a href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </anchor-links>
@@ -21,6 +21,8 @@ The library provides front-end developers & engineers a collection of reusable H
 
 ####Using npm:
 
+<br>
+
 ```bash
 $ npm install --save carbon-components
 ```
@@ -32,12 +34,12 @@ use the following command instead:
 $ yarn add carbon-components
 ```
 
-## Resources
+## Getting started
 
 
 <anchor-links small="true">
 <ul>
-    <li><a href="#what’s-included">What's included</a></li>
+    <li><a href="#whats-included">What's included</a></li>
     <li><a href="#cdn">CDN</a></li>
     <li><a href="#codepen">CodePen</a></li>
     <li><a href="#scss">SCSS</a></li>

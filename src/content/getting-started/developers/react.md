@@ -8,6 +8,7 @@ tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
 <ul>
     <li><a href="#carbon-react-library">Carbon React Library</a></li>
     <li><a href="#install">Install</a></li>
+    <li><a href="#getting-started">Getting started</a></li>
     <li><a href="#development">Development</a></li>
     <li><a href="#troubleshooting">Troubleshooting</a></li>
 </ul>
@@ -20,7 +21,8 @@ The library provides front-end developers & engineers a collection of reusable R
 
 ## Install
 
-####Using npm:
+**Using npm:**
+
 
 ```bash
 $ npm install --save carbon-components-react carbon-components carbon-icons
@@ -33,7 +35,7 @@ use the following command instead:
 $ yarn add carbon-components-react carbon-components carbon-icons
 ```
 
-### Resources
+## Getting started
 
 1.  These components require the use of [webpack](https://webpack.js.org/guides/getting-started/) in your project. See our [webpack.config.js](https://github.com/carbon-design-system/carbon-components-react/blob/master/.storybook/webpack.config.js) for an example configuration.
 
