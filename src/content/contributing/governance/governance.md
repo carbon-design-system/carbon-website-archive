@@ -15,8 +15,8 @@ _Users_ are members of the community who are using Carbon guidelines, components
 _Contributors_ are members of the community who contribute to Carbon in a material way. Anyone can be a contributor. In addition to participating as a user, they also can contribute by:
 
 - Supporting new users and answering questions on Slack (IBM internal)
-- Reporting bugs or missing features through GitHub issue creation and participation
-- Fixing bugs, adding features, and improving documentation through GitHub pull request creation and participation
+- Reporting bugs or missing features through GitHub issues
+- Fixing bugs, adding features, and improving documentation through GitHub pull requests
 
 ### Maintainers
 
@@ -32,6 +32,7 @@ _Maintainers_ are members of the community who are committed to the success of i
 
 Core team members are IBM employees responsible for the leadership and strategic direction of the Carbon Design System as a whole. The core team also directs how the IBM Design Language is reflected in digital products and experiences. Core team responsibilities include:
 
+- Actively engaging with users, contributors, and maintainers
 - Setting overall direction and vision
 - Setting priorities and release schedule
 - Focusing on broad, cross-cutting concerns
@@ -43,11 +44,12 @@ Project teams are narrowly focused on specific areas of interest. Although not r
 
 Each project team has a lead maintainer, responsible for:
 
+- Acting as a point of primary contact for the team
 - Participating in the [technical steering committee](#technical-steering-committee)
 - Deciding on the initial membership of project maintainers (in consultation with the core team)
 - Determining and publishing project team policies and mechanics, including the way maintainers join and leave the team (which should be based on team consensus)
 - Communicating core vision to the team
-- Ensuring that issues and pull requests progress at a reasonable rate, assigning issue owners and pull request reviewers as necessary
+- Ensuring that issues and pull requests progress at a reasonable rate
 - Making final decisions in cases where the team is unable to reach consensus (should be rare)
 
 The way that project teams communicate internally and externally is left to each team, but:
@@ -72,7 +74,7 @@ The way that project teams communicate internally and externally is left to each
 <!-- Remove comment in v11 -->
 <!-- - [Carbon Spec and Styles](https://github.com/carbon-design-system/carbon-spec) -->
 - [Carbon Components Vanilla](https://github.com/IBM/carbon-components)
-- [Carbon Components React](carbon-components-react)
+- [Carbon Components React](https://github.com/IBM/carbon-components-react)
 - [Carbon Components Angular](https://github.com/IBM/carbon-components-angular)
 - [Carbon Components Vue (Experimental)](https://github.com/carbon-design-system/carbon-components-vue)
 
@@ -104,7 +106,7 @@ Whenever possible, seek to reach consensus through discussion and design iterati
 
 Consensus is reached when most people are left with only "minor" objections. While they might choose the tradeoffs slightly differently, they do not feel a strong need to _actively block_ the issue or pull request from progressing.
 
-One important question is: consensus among which people, exactly? Of course, the broader the consensus, the better. But at the very least, **consensus within the members of the project team should be the norm for most decisions**. If the core team has done its job of communicating the values and priorities, it should be possible to fit the debate about the issue into that framework and reach a fairly clear outcome.
+One important question is: consensus among which people, exactly? Of course, the broader the consensus, the better. When a decision in a project team affects other teams (e.g. new/changed API), the team will be encouraged to invite people (e.g. leads) from affected teams. But at the very least, **consensus within the members of the project team should be the norm for most decisions**. If the core team has done its job of communicating the values and priorities, it should be possible to fit the debate about the issue into that framework and reach a fairly clear outcome.
 
 ### Lack of consensus
 
