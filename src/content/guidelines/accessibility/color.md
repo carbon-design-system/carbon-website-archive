@@ -55,8 +55,11 @@ Color blindness involves difficulty in perceiving or distinguishing between colo
 
 Don't rely on color alone to convey meaning. This includes conveying information, indicating an action, prompting the user for a response, or distinguishing one visual element from another. When designing with color, it might help to use a color-blind simulator to review visibility of content. If you're working in Sketch, we recommend the [Stark](http://www.getstark.co/) plugin.
 
+<image-component cols="8" caption="Non-color blind user vs color-blind user">
+
 ![rainbow palette](images/color-accessibility-1.png)
-_Non-color-blind user vs. color-blind user_
+
+</image-component>
 
 ## Low vision
 
@@ -73,10 +76,11 @@ Low vision can include partial sight in one or both eyes and can range from mild
 
 #### Low-vision disabilities
 
+<image-component cols="8" caption="Low-vision disabilities">
+
 ![blurred vision and tunnel vision example on Google website](images/color-accessibility-2.png)
 
-_[Source: NoCoffee - Visual impairments ](https://accessgarage.wordpress.com/2013/02/09/458/)_
-
+</image-component>
 
 ### Designing for low vision
 

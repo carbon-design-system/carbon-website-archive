@@ -30,11 +30,11 @@ tabs: ['Code', 'Usage', 'Style']
 | `.bx--tile` | min-width  | 128 / 8          | -             |
 | `.bx--tile` | padding    | 16 / 1 (minimum) | $spacing-md   |
 
-
+<image-component fixed="default" caption="Structure and spacing measurements for Tile | px / rem">
 
 ![Structure and spacing measurements for Tile](images/tile-style-2.png)
 
-_Structure and spacing measurements for Tile | px / rem_
+</image-component>
 
 ### Proportions for grid
 

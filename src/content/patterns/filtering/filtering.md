@@ -23,9 +23,11 @@ A _single-selection filter_ is employed when the user can pick **only one attrib
 - search
 - radio button set (either standalone or within a menu)
 
+<image-component cols="8" caption="Single selection filter as an inline dropdown">
+
 ![single selection filters](images/filter-1.png)
 
-_Single selection filter as an inline dropdown_
+</image-component>
 
 ### Multi-selection
 
@@ -36,9 +38,11 @@ A _multi-selection filter_ is employed when the user has the option to pick **mo
 - search with tags
 - checkbox set (either standalone or within a menu)
 
+<image-component cols="8" caption="Multi-selection filter set in a menu">
+
 ![multi-selection filters](images/filter-2.png)
 
-_Multi-selection filter set in a menu_
+</image-component>
 
 ### Multiple categories
 
@@ -46,9 +50,11 @@ A _category_ is a set of filter items within the same topic. For example, "size"
 
 Multiple category selection is most commonly manifested in either a vertical list on the left side of the page or within a horizontal drawer at the top of the data set. Multiple categories should never be put within a menu or dropdown.
 
+<image-component cols="8" caption="Multiple filter categories in a left panel">
+
 ![Multiple filter categories examples](images/filter-3.png)
 
-_Multiple filter categories in a left panel_
+</image-component>
 
 ## Triggering filters
 
@@ -58,9 +64,11 @@ A _batch filter_ is employed when all filters are applied together at the end of
 
 The batch filter works best when the user is making several filtering selections across different categories that may take a longer time to mentally process. Batch filtering is also a good solution for slow data-return speeds. This can prevent the user from having to wait for the data to load after every selection.
 
+<image-component cols="8" caption="Batch filter example in a drawer">
+
 ![Batch filter example](images/filter-4.png)
 
-_Batch filter example in a drawer_
+</image-component>
 
 ### Interactive filter
 
@@ -83,13 +91,17 @@ Filters within each category should start either as _all unselected_ or _all sel
 
 If the filter(s) can be hidden in either a drawer, dropdown, or menu, then there should be an indicator visible on the closed filter state that informs the user that filters have been applied. At a minimum, the indicator should include the number of filters applied and have the option to clear filters without re-opening the filter container.
 
+<image-component cols="8" caption="Filters not applied">
+
 ![Hidden filters not applied](images/filter-5.png)
 
-_Filters not applied_
+</image-component>
+
+<image-component cols="8" caption="Filters applied">
 
 ![Hidden filters applied](images/filter-6.png)
 
-_Filters applied_
+</image-component>
 
 ### Resetting filters
 
@@ -97,6 +109,8 @@ Each category should have a way to clear all applied filters at once without hav
 
 If multiple categories have been applied to the same data set then there should be a way to dismiss all filters across all categories at once.
 
+<image-component cols="8" caption="Filter reset example for all categories and a single category">
+
 ![Filter reset example](images/filter-7.png)
 
-_Filter reset example for all categories and a single category_
+</image-component>
