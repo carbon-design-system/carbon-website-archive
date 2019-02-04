@@ -23,7 +23,7 @@ However, _how you use Carbon_ also affects the accessibility of a product. Read 
 For a product to be considered accessible, it should:
 
 - Give every user the same benefits, regardless of ability
-- Can adapt to any user in any context
+- Adapt to any user in any context
 
 ## Categories of disabilities
 
