@@ -13,6 +13,10 @@ It is best practice to use a loading spinner whenever the wait time is anticipat
 
 > “The rhythmic oscillations of tape reels in motion got us thinking about a user’s waiting experience. If a user watches search results load, showing the machine at work relays a sense of efficiency. The swift and even balance of the spinning circles indicates that progress is being made.”
 
+![Small loader](images/loading.gif)
+
 ## Size
 
 Loading spinners may be scaled down if the loading experience is contextual to a certain item on the page.
+
+![Small loader](images/loading-usage-2.png)

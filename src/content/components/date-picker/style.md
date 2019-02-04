@@ -115,6 +115,6 @@ There are two types of time pickers; a 12-hour and 24-hour time picker. The 12-h
 | `.bx--select-input`             | padding-left                | 16 / 1   | $spacing-md   |
 
 
-![Structure for a time picker](images/date-picker-style-1.png)  
+![Structure for a time picker](images/time-picker-style-1.png)  
 
 _Structure and spacing for a time picker | px / rem_

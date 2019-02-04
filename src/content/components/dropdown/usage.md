@@ -39,6 +39,8 @@ Selecting an item from the dropdown will close the drawer and the selected optio
 
 The label remains persistent within the dropdown. Once the user chooses an option from the list, a number badge will appear to the left of the label containing the total number of selected items. Selected options float to the top of the list in alphanumeric order.
 
+![multiselect dropdown](images/dropdown-usage-1.png)
+
 #### Clear all
 
 To clear all selected items from a list, hover over the number badge and click the "x" icon next to the value. To help with clarity, a browser tooltip appears when the user hovers over the "x" (or `close`) icon to indicate the click action results.

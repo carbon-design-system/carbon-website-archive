@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="544px" height="544px" viewBox="0 0 544 544" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Motion_overview_Curves_expressive</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Curves_expressive" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="544" height="544"></rect>
+        <g id="Group">
+            <polygon id="Rectangle-21" fill="#F3F3F3" points="0 5.68434189e-14 544 5.68434189e-14 544 544 0 544"></polygon>
+            <path d="M0,542.788419 C219.002389,470.66889 163.826001,1.21158129 542.745051,1.21158129" id="expressive" stroke="#FA75A6" stroke-width="2.42316258"></path>
+            <polygon id="Rectangle-21-Copy-3" fill="#BEBEBE" points="-3.53050922e-14 0 1.20888289 0 1.20888289 543.788419 -3.53050922e-14 543.788419"></polygon>
+            <text id="time-copy" font-family="IBMPlexSans, IBM Plex Sans" font-size="16.9621381" font-weight="normal" fill="#6F6F6F">
+                <tspan x="497.959911" y="529.498886">time</tspan>
+            </text>
+            <text id="distance-copy" transform="translate(20.501114, 42.192650) rotate(90.000000) translate(-20.501114, -42.192650) " font-family="IBMPlexSans, IBM Plex Sans" font-size="16.9621381" font-weight="normal" fill="#6F6F6F">
+                <tspan x="-11.9988864" y="48.1926503">distance</tspan>
+            </text>
+            <polygon id="Rectangle-21-Copy" fill="#BEBEBE" points="0 543 544.788419 543 544.788419 544.211581 0 544.211581"></polygon>
+        </g>
+    </g>
+</svg>
