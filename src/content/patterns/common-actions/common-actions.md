@@ -6,17 +6,17 @@ title: Common Actions
 
 <anchor-links>
 <ul>
-    <li><a href="#cancel">Cancel</a></li>
-    <li><a href="#clear">Clear</a></li>
-    <li><a href="#close">Close</a></li>
-    <li><a href="#delete">Delete</a></li>
-    <li><a href="#remove">Remove</a></li>
-    <li><a href="#reset">Reset</a></li>
-    <li><a href="#add">Add</a></li>
-    <li><a href="#copy">Copy</a></li>
-    <li><a href="#edit">Edit</a></li>
-    <li><a href="#next">Next</a></li>
-    <li><a href="#refresh">Refresh</a></li>
+    <li><a data-scroll href="#cancel">Cancel</a></li>
+    <li><a data-scroll href="#clear">Clear</a></li>
+    <li><a data-scroll href="#close">Close</a></li>
+    <li><a data-scroll href="#delete">Delete</a></li>
+    <li><a data-scroll href="#remove">Remove</a></li>
+    <li><a data-scroll href="#reset">Reset</a></li>
+    <li><a data-scroll href="#add">Add</a></li>
+    <li><a data-scroll href="#copy">Copy</a></li>
+    <li><a data-scroll href="#edit">Edit</a></li>
+    <li><a data-scroll href="#next">Next</a></li>
+    <li><a data-scroll href="#refresh">Refresh</a></li>
 </ul>
 </anchor-links>
 

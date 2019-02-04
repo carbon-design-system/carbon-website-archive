@@ -6,9 +6,9 @@ title: Loading
 
 <anchor-links>
 <ul>
-    <li><a href="#skeleton-states">Skeleton states</a></li>
-    <li><a href="#loading-components">Loading components</a></li>
-  <li><a href="#load-more-button"><em>Load more</em> button</a></li>
+    <li><a data-scroll href="#skeleton-states">Skeleton states</a></li>
+    <li><a data-scroll href="#loading-components">Loading components</a></li>
+  <li><a data-scroll href="#load-more-button"><em>Load more</em> button</a></li>
 </ul>
 </anchor-links>
 
