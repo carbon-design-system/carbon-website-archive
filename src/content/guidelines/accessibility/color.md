@@ -20,18 +20,18 @@ Visual impairments can include low vision, color blindness, and complete blindne
 
 ## Color contrast
 
-**Carbon meets [WCAG AA standards](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) across all standard themes in the system, including color contrast ratios.**
+Carbon meets [WCAG AA standards](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) across all standard themes in the system, including color contrast ratios.
 
-### Standard text
+#### Standard text
 Standard text and images of text must have a contrast ratio of at least **4.5:1**. 
 
-### Large text
+#### Large text
 Large text (at least 24 px regular and light / 19 px semi-bold) must have a contrast ratio of **3:1.**
 
-### Text against non-static backgrounds
+#### Text against non-static backgrounds
 When text is rendered on a gradient background or image, make sure the text color meets contrast standards in all places it appears. This is especially important for parallax applications or animations where text and backgrounds are moving independently of each other.
 
-### UI components 
+#### UI components 
 Visual information used to indicate states and boundaries of UI components must have a contrast ratio of **3:1** against adjacent colors. A UI component is defined as "a part of the content that is perceived by users as a single control for a distinct function." This includes form elements.
 
 [IBM Checkpoint 1.4.3 Contrast (Minimum)](https://www.ibm.com/able/guidelines/ci162/contrast.html)
@@ -64,16 +64,19 @@ Low vision can include partial sight in one or both eyes and can range from mild
 
 | Type                     | Visual deficiency                                                                                         |
 | ------------------------ | --------------------------------------------------------------------------------------------------------- |
-| Low acuity               | Also known as **blurred vision.** Can make text difficult to read, since it appears fuzzy.           |
+| Low acuity               | Also known as "blurred vision." Can make text difficult to read, since it appears fuzzy.           |
 | Low-contrast sensitivity | Decreased ability to determine fine detail and distinguish one object from another                             |
 | Obstructed visual field  | The user's view is partially obstructed. Can include central vision and spotty vision.                   |
-| Retinitis Pigmentosa     | Also known as **tunnel vision**; the user is only able to see central elements |
+| Retinitis Pigmentosa     | Also known as "tunnel vision." The user is only able to see central elements. |
 
-_[Source: NoCoffee - Visual impairments ](https://accessgarage.wordpress.com/2013/02/09/458/)_
+
+
+#### Low-vision disabilities
 
 ![blurred vision and tunnel vision example on Google website](images/color-accessibility-2.png)
 
-_Low-vision disabilities_
+_[Source: NoCoffee - Visual impairments ](https://accessgarage.wordpress.com/2013/02/09/458/)_
+
 
 ### Designing for low vision
 
