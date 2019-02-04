@@ -72,4 +72,4 @@ First, refer to the [Carbon accessibility guidelines](/guidelines/accessibility)
 ### I haven't updated to the latest version of Carbon yet, but I still need the old documentation. Is there a place I can find it?
 
 Every version of Carbon that is still supported is hosted at its own domain. You can find the old sites version here:
-**[V6](http://v6.carbondesignsystem.com/)**, **[V7](http://v7.carbondesignsystem.com/)**, and **[V8](http://v8.carbondesignsystem.com/)**.
+**[V6](http://v6.carbondesignsystem.com/)**, **[V7](http://v7.carbondesignsystem.com/)**, **[V8](http://v8.carbondesignsystem.com/)**, and **[V9](http://v9.carbondesignsystem.com/).**

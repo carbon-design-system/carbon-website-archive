@@ -47,7 +47,7 @@
     border-radius: 0;
   }
 
-  /* Main category (eg. Getting Started) */
+  /* Main category (eg. Getting started) */
   .algolia-autocomplete .algolia-docsearch-suggestion--category-header {
     @include type-style('body-short-02');
     border-bottom: 1px solid $ui-03;
