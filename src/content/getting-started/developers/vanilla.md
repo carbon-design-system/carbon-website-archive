@@ -39,7 +39,7 @@ $ yarn add carbon-components
 
 <anchor-links small="true">
 <ul>
-    <li><a href="#whats-included">What's included</a></li>
+    <li><a href="#what’s-included">What's included</a></li>
     <li><a href="#cdn">CDN</a></li>
     <li><a href="#codepen">CodePen</a></li>
     <li><a href="#scss">SCSS</a></li>
