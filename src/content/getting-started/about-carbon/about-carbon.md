@@ -6,7 +6,7 @@ title: About Carbon
 <ul>
     <li><a href="#introduction">Introduction</a></li>
     <li><a href="#guiding-principles">Guiding principles</a></li>
-    <li><a href="#who-is-carbon-for?">Who is Carbon for?</a></li>
+    <li><a href="#who-is-carbon-for">Who is Carbon for?</a></li>
 </ul>
 </anchor-links>
 
