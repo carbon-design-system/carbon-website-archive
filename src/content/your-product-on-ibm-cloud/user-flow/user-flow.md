@@ -35,13 +35,13 @@ discovery of your product to productive use.
 ## Discovery
 
 Every product has a set of public URLs for direct entry via internet search, and
-is also listed in the IBM Cloud catalog. Users can discover and enter a product
+is also listed in the IBM Cloud Catalog. Users can discover and enter a product
 in one of two primary ways:
 
 1.  Direct entry by URL (from an internet search, product marketing page,
     solution page, or other link)
 
-2.  Discovery in IBM Cloud catalog (or an embedded catalog component)
+2.  Discovery in IBM Cloud Catalog (or an embedded catalog component)
 
 Users do not need to visit the Cloud Catalog or Dashboard in order to enter a
 product. They can enter it directly, as illustrated in this user flow diagram:
@@ -83,7 +83,7 @@ catalog.
 
 ## Catalog
 
-When the user finds your product in the catalog and clicks on it, they will be
+When the user finds your product in the IBM Cloud Catalog and clicks on it, they will be
 taken directly into the product UI. This is a change from previous flows
 (2014-2017).
 
@@ -129,7 +129,7 @@ A guided walkthrough is an essential tool for enabling the user to achieve this.
 ## Provisioning and Loading
 
 Perceived performance is absolutely essential on a cloud platform. When a user
-enters your product, either from the IBM Cloud catalog or via direct link, it should
+enters your product, either from the IBM Cloud Catalog or via direct link, it should
 load [within two
 seconds](https://medium.com/@vikigreen/impact-of-slow-page-load-time-on-website-performance-40d5c9ce568a).
 Users will interpret slow loading performance as a sign of how their own app or
@@ -203,7 +203,7 @@ capabilities will be registered for use by other products.
 ## Resources
 
 Users can browse all their resources by visiting the resource list in the
-dashboard. The purpose of the resource list is to help users find things they've
+IBM Cloud Dashboard. The purpose of the resource list is to help users find things they've
 created and worked on previously, and to provide a lookup system for making
 connections between resources. It is not meant to give a fine-grained view of
 every detail of a resource. To see granular data, the user must open the
@@ -211,7 +211,7 @@ resource in its product UI.
 
 ![](images/Resource-Groups-1.png)
 
-Expose Resources using a coarse-grained granularity that is sufficient enough
+Expose resources using a coarse-grained granularity that is sufficient enough
 to:
 
 1.  help the user find a prior piece of work without wading through many
