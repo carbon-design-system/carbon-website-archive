@@ -22,4 +22,8 @@ Arrange list items in a logical way. For example, if the list is about resource 
 
 Use list items that are grammatically parallel. For example, do not mix passive voice with active voice or declarative sentences (statements) with imperative sentences (direct command).
 
+<image-component cols="8">
+
 ![Example of a list](images/list-usage-1.png)
+
+</image-component>
