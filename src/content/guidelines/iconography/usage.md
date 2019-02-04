@@ -10,11 +10,17 @@ tabs: ['Library', 'Usage', 'Design and Contribution']
 
 UI icons that appear within Carbon components are generally 16 px square. Icons sized at 20, 24, and 32 px can be also used within the UI. Icons should only be used at their original sizes and not resized in code.
 
+<image-component  cols="12">
+
 ![icon sizing](images/iconography-usage-sizing-1.svg)
+
+</image-component>
+
+<image-component cols="12" caption="16 px and 20 px icons are optimized to feel balanced when paired with 14pt and 16pt IBM Plex. Use 24 px and 32 px when larger icons are needed.">
 
 ![icon alignment](images/iconography-usage-sizing-2.svg)
 
-_16 px and 20 px icons are optimized to feel balanced when paired with 14pt and 16pt IBM Plex. Use 24 px and 32 px when larger icons are needed._
+</image-component>
 
 <grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Do: use the correct icon size with IBM Plex.">
@@ -29,7 +35,11 @@ _16 px and 20 px icons are optimized to feel balanced when paired with 14pt and 
 
 All touch targets for interactive icons need to be 44 px or larger. Developers can add padding to a touch target with CSS to meet the 44 px requirement.
 
+<image-component  cols="4">
+
 ![touch target padding](images/iconography-usage-padding-6.svg)
+
+</image-component>
 
 ### Color
 

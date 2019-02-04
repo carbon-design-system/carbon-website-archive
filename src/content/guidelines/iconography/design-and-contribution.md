@@ -72,7 +72,11 @@ To be considered production-ready, all icon submissions must be delivered in SVG
 10. The `SVG Options` dialog will then open.
 11. Make sure the preferences are the same as in the image below.
 
+<image-component cols="6">
+
 ![export an icon from illustrator](images/iconography-contribution-exportsvgfromai.png)
+
+</image-component>
 
 ## Contribution Process
 

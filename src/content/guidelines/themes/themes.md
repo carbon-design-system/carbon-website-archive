@@ -579,9 +579,11 @@ $skeleton: rgba(
 
 The following example demonstrates the relationship between the different themes. Each theme shares the same variables and roles, with only the value changing according to each individual theme.
 
+<image-component cols="8" caption="Default theme applied">
+
 ![Default theme applied](images/themes-1.svg)
 
-_Default theme applied_
+</image-component>
 
 | Key | Token       | Role                | White theme value    | Dark theme value    |
 | --- | ----------- | ------------------- | -------------------- | ------------------- |
