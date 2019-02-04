@@ -87,6 +87,7 @@ Color-blindness affects 8% of all men and 0.4% of women.
 
 #### What designers should think about
 
+
 - Run your design through a color-blind simulator. If the design doesn't work, try another approach. If you're working in Sketch, we recommend the [Stark](http://www.getstark.co/) plugin.
 <!-- - To view best practices for using color in Data Visualization, view the [Data Vis](/data-visualization/overview/colors) color page. -->
 
