@@ -27,6 +27,8 @@ $feature-flags: (
 @import 'carbon-components/scss/globals/scss/styles.scss';
 @import '@carbon/addons-website/scss/styles';
 
+$font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+
 //---------------------------------------
 // Page styles
 //---------------------------------------
@@ -36,7 +38,6 @@ $feature-flags: (
 //---------------------------------------
 // Components
 //---------------------------------------
-@import '../components/404/404.scss';
 @import '../components/markdown/markdown.scss';
 @import '../components/PageHeader/page-header.scss';
 @import '../components/PageTabs/page-tabs.scss';
@@ -68,6 +69,7 @@ $feature-flags: (
 @import '../components/BackToTop/back-to-top.scss';
 @import '../components/WebsiteTabs/website-tabs.scss';
 @import '../components/ColorTokenTable/color-token-table.scss';
+@import '../components/SimpleColumns/simple-columns.scss';
 
 //---------------------------------------
 // Syntax

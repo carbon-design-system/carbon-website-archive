@@ -4,6 +4,7 @@
 
 body {
   background: $ui-01;
+  font-family: $font-family;
 }
 
 .side-nav + div, //Issue #51 weird bug where sometimes on reload of the page the classnames on container div disapear
@@ -13,7 +14,7 @@ body {
   transition: $transition--base ease;
   overflow-x: hidden;
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - 48px);
   margin-top: rem(48px);
 }
 
@@ -31,16 +32,16 @@ body {
   }
 }
 
-.bx--header .bx--header__name {
-  font-size: 1rem;
+.bx--header .bx--header__name span {
+  font-weight: 400;
 }
 
 //---------------------------------------
 // Page styles
 //---------------------------------------
 .page-content {
-  padding-top: rem(64px);
-  padding-bottom: rem(64px);
+  padding-top: rem(80px);
+  padding-bottom: rem(104px);
 
   // All paragraphs on Markdown pages
   // And divs when markdown doesn't wrap text in paragraphs (when you have to use html for links to open in a new window)
@@ -53,6 +54,18 @@ body {
       padding: 0;
       margin: 0;
     }
+  }
+
+  > div > div:first-child p {
+    padding-bottom: 0;
+  }
+
+  > div > div:nth-child(2) h2:before {
+    padding-bottom: rem(80px);
+  }
+
+  > div > div:nth-child(2) h3 {
+    margin-top: rem(48px);
   }
 
   // All links on Markdown pages but not inside component examples
@@ -74,7 +87,7 @@ body {
     background: transparent;
     border: 1px solid transparent;
     border-radius: 4px;
-    background-color: $ibm-colors__gray--20;
+    background-color: $ibm-colors__gray-20;
   }
 
   // HR dividers
@@ -84,6 +97,14 @@ body {
     height: 1px;
     background: $ui-03;
     border: 0px transparent;
+  }
+
+  img {
+    margin-bottom: rem(24px);
+  }
+
+  img + img {
+    margin-bottom: 0;
   }
 }
 
@@ -98,15 +119,16 @@ body {
   }
 }
 
-.ibm--row .gatsby-resp-iframe-wrapper {
-  margin-left: 0;
+.ibm--row .gatsby-resp-iframe-wrapper,
+.example__content .gatsby-resp-iframe-wrapper {
+  margin-left: 0 !important;
 }
 
 //images
 .gatsby-resp-image-wrapper {
   background: $ui-02;
   margin-left: 0 !important;
-  margin-bottom: 4rem;
+  margin-bottom: rem(24px);
 
   @include breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
@@ -118,7 +140,7 @@ body {
 .page-content > div > img[src*='svg'],
 .page-content > div > img[src*='gif'] {
   background: $ui-02;
-  margin-bottom: 4rem;
+  // margin-bottom: 4rem;
 
   @include breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
@@ -154,7 +176,11 @@ img[src*='gif'] {
 
     &:first-child {
       padding-top: $spacing-xs;
-      margin-top: -4rem; //needed because of default image spacing
+      // margin-top: -4rem; //needed because of default image spacing
     }
   }
+}
+
+.page-content iframe {
+  margin-bottom: rem(24px);
 }

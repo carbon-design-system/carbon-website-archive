@@ -16,7 +16,7 @@ title: Layout
 
 <anchor-links>
 <ul>
-    <li><a href="#miin-unit">Mini Unit</a></li>
+    <li><a href="#mini-unit">Mini Unit</a></li>
     <li><a href="#2x-grid-fundamentals">2x Grid Fundamentals</a></li>
     <li><a href="#grid-behaviors">Grid Behaviors</a></li>
     <li><a href="#grid-influencers">Grid Influencers</a></li>
@@ -52,7 +52,7 @@ The core concept of the 2x Grid is to divide or multiply by two, forming a visua
 
 Columns and rows create key lines that are essential for visual rhythm, especially for typography. Construct columns by either dividing a space into a fluid grid, or by tiling fixed boxes in multiples.
 
-![Columns and rows](images/Layout_overview_Columns and Rows.svg)
+![Columns and rows](images/Layout_overview_Columns-rows.svg)
 
 #### Fluid grid
 
@@ -76,7 +76,7 @@ When tiling fixed boxes, the column count is not known in advance, but a grid em
 
 For dense content, use mini units for further alignment and spatial guidance.
 
-![Columns and rows for dense content](images/Layout_overview_Columns and Rows Light Dense.svg)
+![Columns and rows for dense content](images/Layout_overview_Columns-rows-light-dense.svg)
 
 
 ### Margins
@@ -91,14 +91,16 @@ Padding is always a fixed multiple of mini units: 16 pixels at all standard brea
 
 ![Padding](images/Layout_overview_Paddings.svg)
 
+
 <grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Always place type against the padding.">
-        <img src="images/Layout_overview_Paddings Do.svg" alt="Always place type against the padding.">    
+        <img src="images/Layout_overview_Paddings-do.svg" alt="Always place type against the padding.">    
     </do-dont-example>
     <do-dont-example label="Never place type on the padding.">
-        <img src="images/Layout_overview_Paddings Dont.svg" alt="Never place type on the padding.">    
+        <img src="images/Layout_overview_Paddings-dont.svg" alt="Never place type on the padding.">    
     </do-dont-example>
 </grid-wrapper>
+
 
 ### Gutters
 
@@ -172,9 +174,9 @@ Here are some common UI behaviors:
 
 ### Key lines
 
-Regardless how your grid is built, ensure the overall layout has visible guide lines: vertical and horizontal lines on which multiple objects align. Horizontal and vertical alignment are equally critical. When present, the eye can follow content more easily, increase the perception of visual harmony.
+Regardless how your grid is built, ensure the overall layout has visible guide lines: vertical and horizontal lines on which multiple objects align. Horizontal and vertical alignment are equally critical. When present, the eye can follow content more easily, increasing the perception of visual harmony.
 
-![key alignments](images/Layout_overview_Key Alignment.svg)
+![key alignments](images/Layout_overview_Key-alignment.svg)
 
 ## Grid influencers
 
@@ -191,20 +193,20 @@ Within a design system, layouts often follow a common structure, especially with
 
 In a UI layout, users expect to find certain types of content in certain areas. We call these areas Screen Regions. It is especially important for these zones to be consistent across devices, and adapt across breakpoints. [Learn more about Shell on the Experimental UI Shell page.](http://staging.carbondesignsystem.com/experimental/ui-shell/usage)
 
-![Shell Illustation](images/Layout_overview_Screen regions 1.svg)
+![Shell Illustation](images/Layout_overview_Screen-regions-1.svg)
 
 _1. Header_
 _2. Global sidenav_
 _3. Local sidenav_
 
 
-![Dropdown Illustation](images/Layout_overview_Screen regions 2.svg)
+![Dropdown Illustation](images/Layout_overview_Screen-regions-2.svg)
 
 _4. Dropdown menu_
 _5. Content_
 _6. Footer_
 
-![Dialog Illustation](images/Layout_overview_Screen regions 3.svg)
+![Dialog Illustation](images/Layout_overview_Screen-regions-3.svg)
 
 _7. Dialog_
 
@@ -249,7 +251,7 @@ We provide a sizing scale for both fixed and fluid sizes. Use it to size content
 
 Use this fixed sizing scale, comprised of select mini unit multiples, when sizing icons, tiling boxes, and applying vertical margin space.
 
-![Fixed base unit](images/Layout_overview_Fixed base unit.svg)
+![fixed base unit](images/Layout_overview_Fixed-base-unit.svg)
 
 Choose a size to use as your fixed base unit. Also see the [breakpoints table](#breakpoints).
 
@@ -267,7 +269,7 @@ Choose a size to use as your fixed base unit. Also see the [breakpoints table](#
 
 For fluid grids, the column width is the base unit. Just as a box can span multiple columns, its height is a multiple of column width. Use cases are leading section in a webpage, divded section for editorial content, modals, etc. Check out the [breakpoints table](#breakpoints) for pixel sizings.
 
-![Fluid base unit](images/Layout_overview_Fluid base unit.svg)
+![Fluid base unit](images/Layout_overview_Fluid-base-unit.svg)
 
 ### Scaling multiple
 
@@ -288,7 +290,7 @@ Choose an aspect ratio from the table, then multiply the base unit in each dimen
 
 For example, to size a fluid box with a 2:1 landscape aspect ratio, you could span 4 columns in width and 2 column-widths of height. To size a fixed box with the same aspect ratio, you could start with an 80 pixel base unit, then multiply it by 4 in width and 2 in height, for a fixed box size of 320 by 160.
 
-![aspect ratio](images/Layout_overview_Aspect ratio.svg)
+![aspect ratio](images/Layout_overview_Aspect-ratio.svg)
 
 _Aspect ratios do not apply to Hybrid Boxes, since one dimension is fixed and the other is fluid._
 
@@ -301,10 +303,10 @@ Use the fixed sizing scale to set vertical spacing between sections, by adding i
 
 <grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Mini unit is the guide when needed. Spacer snaps to the text box and does not necessarily need to snap to the mini unit.">
-        <img src="images/Layout_overview_Visual rhythm Do.svg" alt="Always place type against the padding.">    
+        <img src="images/Layout_overview_Visual-rhythm-do.svg" alt="Mini unit is the guide when needed. Spacer snaps to the text box and does not necessarily need to snap to the mini unit.">    
     </do-dont-example>
     <do-dont-example label="In Sketch, always use “Auto” in alignment to ensure the text box is fitting with the content. Spacer snaps to the text box.">
-        <img src="images/Layout_overview_Visual rhythm Dont.svg" alt="Never place type on the padding.">    
+        <img src="images/Layout_overview_Visual-rhythm-dont.svg" alt="Always use “Auto” in alignment to ensure the text box is fitting with the content. Spacer snaps to the text box.">    
     </do-dont-example>
 </grid-wrapper>
 

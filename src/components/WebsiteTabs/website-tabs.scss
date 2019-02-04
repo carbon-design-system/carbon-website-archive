@@ -2,6 +2,11 @@
   margin-bottom: $spacing-3xl;
 }
 
+.website-tabs img {
+  width: 100%;
+  margin-bottom: 0;
+}
+
 .website-tabs nav.bx--tabs {
   min-height: 2.8rem;
 }
@@ -14,7 +19,7 @@
 .website-tabs li.bx--tabs__nav-item {
   border: none;
   margin: 0;
-  border-left: rem(1px) solid $ibm-colors__gray--30;
+  border-left: rem(1px) solid $ibm-colors__gray-30;
 }
 
 .website-tabs li.bx--tabs__nav-item:first-child {
@@ -37,7 +42,7 @@
 .website-tabs li.bx--tabs__nav-item--selected a.bx--tabs__nav-link {
   background: $ui-02;
   border: none;
-  border-top: rem(3px) solid $ibm-colors__blue--60;
+  border-top: rem(3px) solid $ibm-colors__blue-60;
   padding-top: rem(9px);
 }
 
@@ -66,7 +71,7 @@
   .website-tabs div.tab-content {
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 
   /**
@@ -126,7 +131,7 @@
   .website-tabs.bp-tabs-not-shown .bx--tabs-trigger {
     background: #fff;
     border-bottom: 1px solid #d8d8d8;
-    border-top: rem(3px) solid $ibm-colors__blue--60;
+    border-top: rem(3px) solid $ibm-colors__blue-60;
     font-weight: 600;
     height: rem(50px);
     position: relative;
@@ -214,4 +219,8 @@
     width: 50%;
     max-width: 50%;
   }
+}
+
+.website-tabs .gatsby-resp-iframe-wrapper {
+  padding-top: 8px;
 }

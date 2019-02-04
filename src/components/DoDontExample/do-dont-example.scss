@@ -9,7 +9,7 @@
 
 // Example
 .example {
-  margin-bottom: rem(36px);
+  margin-bottom: rem(24px);
 
   @include breakpoint('sm') {
     width: 100%;
@@ -38,7 +38,7 @@
 }
 
 .example--dark .example-card {
-  background: $ibm-colors__gray--90;
+  background: $ibm-colors__gray-90;
   color: $ibm-colors__white;
 }
 
@@ -56,6 +56,7 @@
 .example__content {
   font-size: 1.25rem;
   font-weight: 300;
+  width: 100%;
 
   .gatsby-resp-image-link {
     width: 100%;
@@ -87,11 +88,11 @@ p.example__text {
 }
 
 .example--correct .example-card::before {
-  background: $ibm-colors__green--50;
+  background: $ibm-colors__green-50;
 }
 
 .example--incorrect .example-card::before {
-  background: $ibm-colors__magenta--50;
+  background: $ibm-colors__magenta-50;
 }
 
 .example__icon {
@@ -105,18 +106,19 @@ p.example__text {
 }
 
 .example__icon--correct {
-  fill: $ibm-colors__green--50;
+  fill: $ibm-colors__green-50;
 }
 
 .example__icon--incorrect {
-  fill: $ibm-colors__magenta--50;
+  fill: $ibm-colors__magenta-50;
 }
 
 .example__caption {
   padding: 8px 0 0 0;
+  max-width: rem(352px);
 }
 
-.example__title {
+p.example__title {
   @include type-style('body-short-01');
   margin: 0;
   padding: 0;
@@ -127,4 +129,40 @@ p.example__description {
   @include font-smoothing;
   margin: 0;
   padding: 0;
+  padding-bottom: rem(24px);
+}
+
+.example.example--full-width {
+  width: 100%;
+}
+.example.example--full-width:first-child {
+  @include breakpoint('sm') {
+    margin-right: 0;
+  }
+}
+.example.example--full-width .example-card {
+  padding-top: 0;
+}
+.example.example--full-width .example-card__content {
+  position: relative;
+}
+
+.example--full-width .example__caption {
+  @include breakpoint('sm') {
+    width: 100%;
+  }
+
+  @include breakpoint('md') {
+    width: calc(50% - 16px);
+  }
+}
+
+.example span.gatsby-resp-image-wrapper {
+  max-width: 100% !important; // marked !important to overcome inline styles inserted by gatsby.
+}
+
+// Example video content
+.example__content .gatsby-resp-iframe-wrapper {
+  height: 100% !important;
+  position: static !important;
 }
