@@ -65,7 +65,7 @@ button,
   .gatsby-resp-image-link + em,
   .image-grid + p > em,
   .image-component + p > em {
-    font-size: .875em;
+    font-size: 0.875em;
     color: $text-02;
   }
 
@@ -128,5 +128,36 @@ button,
     height: 1px;
     background: $ui-03;
     border: 0px transparent;
+  }
+}
+
+//---------------------------------------
+// Annoucement
+//---------------------------------------
+
+.bx--legacy-notification {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 40px;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #efc100;
+  z-index: 10;
+  align-items: center;
+
+  p {
+    font-size: rem(14px);
+  }
+
+  a {
+    font-weight: 600;
+    color: #000;
   }
 }
