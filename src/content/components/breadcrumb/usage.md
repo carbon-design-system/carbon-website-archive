@@ -11,7 +11,11 @@ Breadcrumbs are very effective in products and experiences that have a large amo
 
 Breadcrumbs' space-efficient design and high utility make them an easy choice for most designers.
 
+<image-component  cols="8">
+
 ![multiple tiers of breadcrumb](images/breadcrumb-usage-1.png)
+
+</image-component>
 
 ## Types of breadcrumbs
 
