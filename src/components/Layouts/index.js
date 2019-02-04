@@ -37,7 +37,11 @@ class Layout extends React.Component {
     this.checkWidth();
 
     const scroll = new SmoothScroll('a[href*="#"]', {
-      speedAsDuration: true,
+      speed: 200,
+      durationMin: 90,
+      durationMax: 800,
+      easing: 'easeInOutCubic',
+      offset: 24
     });
   }
 
