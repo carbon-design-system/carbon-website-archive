@@ -38,7 +38,6 @@ $font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 //---------------------------------------
 // Components
 //---------------------------------------
-@import '../components/404/404.scss';
 @import '../components/markdown/markdown.scss';
 @import '../components/PageHeader/page-header.scss';
 @import '../components/PageTabs/page-tabs.scss';
@@ -70,6 +69,7 @@ $font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 @import '../components/BackToTop/back-to-top.scss';
 @import '../components/WebsiteTabs/website-tabs.scss';
 @import '../components/ColorTokenTable/color-token-table.scss';
+@import '../components/SimpleColumns/simple-columns.scss';
 
 //---------------------------------------
 // Syntax

@@ -14,7 +14,7 @@ body {
   transition: $transition--base ease;
   overflow-x: hidden;
   position: relative;
-  min-height: 100vh;
+  min-height: calc(100vh - 48px);
   margin-top: rem(48px);
 }
 
@@ -119,8 +119,9 @@ body {
   }
 }
 
-.ibm--row .gatsby-resp-iframe-wrapper {
-  margin-left: 0;
+.ibm--row .gatsby-resp-iframe-wrapper,
+.example__content .gatsby-resp-iframe-wrapper {
+  margin-left: 0 !important;
 }
 
 //images

@@ -4,10 +4,22 @@
 }
 
 .color-token-table__theme-switcher {
+  position: relative;
   width: 100%;
   height: rem(48px);
   margin-bottom: 1.75rem;
   background: $ui-02;
+}
+
+.color-token-table__theme-switcher::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -16px;
+  left: 0;
+  width: 110%;
+  height: 64px;
+  background: $ui-01;
 }
 
 .color-token-table__theme-switcher--sticky {
@@ -34,8 +46,8 @@
   }
 }
 
-.page-h3--sticky {
-  margin-top: 100px;
+h3.page-h3--sticky {
+  margin-top: 100px !important;
 }
 
 .color-token-table__theme-switcher
@@ -65,6 +77,7 @@
   .bx--content-switcher-btn:not(:last-of-type)::after {
   height: 24px;
   right: -1px;
+  top: 12px;
 }
 
 .color-token-value {
