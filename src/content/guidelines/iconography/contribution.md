@@ -1,19 +1,21 @@
 ---
 label: IBM's icons are visual symbols used to represent ideas, objects, or actions. They communicate messages at a glance, afford interactivity, and draw attention to important information.
 title: Iconography
-tabs: ['Library', 'Usage', 'Design and Contribution']
+tabs: ['Library', 'Usage', 'Contribution']
+
 ---
 
 <anchor-links>
 <ul>
-    <li><a href="#design-and-production-guidelines">Design and Production Guidelines</a></li>
-    <li><a href="#producing-an-icon">Producing an Icon</a></li>
+    <li><a href="#design-and-production-guidelines">Design and production guidelines</a></li>
+    <li><a href="#producing-an-icon">Producing an icon</a></li>
     <li><a href="#exporting-svgs">Exporting SVGs</a></li>
-    <li><a href="#contribution-process">Contribution Process</a></li>
+    <li><a href="#contribution-process">Contribution process</a></li>
 </ul>
 </anchor-links>
 
-## Design and Production Guidelines
+## Design and production guidelines
+
 
 Don't see the icon you need in the library? Make your own! Follow these guidelines to ensure visual consistency and proper formatting.
 
@@ -23,7 +25,7 @@ Don't see the icon you need in the library? Make your own! Follow these guidelin
 - All icons should be usable across all supported platforms and devices.
 - All icons should be understandable by a global audience of users, regardless of nationality or language.
 
-## Producing an Icon
+## Producing an icon
 
 - Create a 16 x 16 or 32 x 32 px artboard for each icon.
 - 16 px icons should have 1 px padding. 32 px icons should have 2 px padding.
@@ -34,7 +36,7 @@ Don't see the icon you need in the library? Make your own! Follow these guidelin
 - Ungroup icon layers completely. The icon should be on the top-most layer in your artboard.
 - Make sure to properly name layers and artboards (these names will also be exported into the code).
 
-### Production-Ready
+### Production-ready
 
 To be considered production-ready, all icon submissions must be delivered in SVG format at 16 x 16 px (for integration with Carbon components) or 32 x 32 (for service icons).
 
@@ -78,10 +80,10 @@ To be considered production-ready, all icon submissions must be delivered in SVG
 
 </image-component>
 
-## Contribution Process
+## Contribution process
 
 Does your icon have potential for other products at IBM? If so, please consider contributing to the design system. IBM welcomes icon contributions in the form of a pull request to our [icons repository](https://github.com/IBM/carbon-icons). If you're unable to make a pull request, please [submit an issue in the repo](https://github.com/IBM/carbon-icons/issues/new) with the icon attached.
 
 Please note that Carbon contribution is **not required** in order to introduce a new icon into your product's UI. If your icon is determined to be broadly useful in Carbon and passes IBM Brand design reviews, then it may also be integrated into the design system.
 
-If your icon submission is accepted, we will notify you. If changes are needed, you'll need to create a new contribution issue after reworking it based on feedback from the Design System and Brand teams.
+If your icon submission is accepted, the team will notify you. If changes are needed, you'll need to create a new contribution issue after reworking it based on feedback from the Design System and Brand teams.
