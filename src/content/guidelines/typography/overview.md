@@ -10,7 +10,7 @@ tabs: ['Overview', 'Productive', 'Expressive']
 
 <grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
-    title="Get the Latest IBM Plex™ download on GitHub"
+    title="Get the latest IBM Plex™ download on GitHub"
     href="https://github.com/IBM/plex/releases/latest"
     type="resource"
     >
@@ -30,7 +30,7 @@ tabs: ['Overview', 'Productive', 'Expressive']
     <li><a href="#typeface-ibm-plex">Typeface: IBM Plex</a></li>
     <li><a href="#scale">Scale</a></li>
     <li><a href="#style">Style</a></li>
-    <li><a href="#type-color">Type Color</a></li>
+    <li><a href="#type-color">Type color</a></li>
 </ul>
 </anchor-links>
 
@@ -98,7 +98,7 @@ Each weight has an italic style, which should only be used when you need to emph
 
 <type-weight type="italic"></type-weight>
 
-## Type Color
+## Type color
 
 Type color should be carefully considered, with legibility and accessibility as paramount concerns. Keep type color neutral in running text. Use primary blue for primary actions.
 
