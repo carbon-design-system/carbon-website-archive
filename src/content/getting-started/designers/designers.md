@@ -10,14 +10,14 @@ title: Designers
     href="https://github.com/ibm/carbon-design-kit"
     type="resource"
      >
-    <img src="images/sketch-icon.png" alt="Connect the kit through Box (IBMers only)"  />
+    <img src="images/github-icon.png" alt="Connect the kit through Box (IBMers only)"  />
 </clickable-tile>
 <clickable-tile
     title="Download Box Drive."
     href="https://www.box.com/resources/downloads/drive"
     type="resource"
     >
-    <img src="images/github-icon.png" alt="Carbon Design Kit"  />
+    <img src="images/box-icon.png" alt="Carbon Design Kit"  />
 </clickable-tile>
 </grid-wrapper>
 
