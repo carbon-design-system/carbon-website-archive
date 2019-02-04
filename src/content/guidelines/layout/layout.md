@@ -17,7 +17,7 @@ title: Layout
 
 <anchor-links>
 <ul>
-    <li><a href="#miin-unit">Mini unit</a></li>
+    <li><a href="#mini-unit">Mini unit</a></li>
     <li><a href="#2x-grid-fundamentals">2x grid fundamentals</a></li>
     <li><a href="#grid-behaviors">Grid behaviors</a></li>
     <li><a href="#grid-influencers">Grid influencers</a></li>
