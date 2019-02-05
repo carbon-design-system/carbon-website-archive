@@ -14,7 +14,11 @@ All forms are comprised of 6 elements:
 - **Actions:** Allow users to submit a form.
 - **Validation:** Ensures the data submitted by the user conforms to acceptable parameters.
 
+<image-component cols="8">
+
 ![effective form design](images/form-usage-1.png)
+
+</image-component>
 
 ## Form logic
 
@@ -22,7 +26,11 @@ All forms are comprised of 6 elements:
 - **Checkboxes** are used when there are lists of options and the user may select any number of choices, including zero, one, or several. In other words, each checkbox is independent of all other checkboxes in the list, so checking one box doesn’t uncheck the others. A stand-alone checkbox, or a toggle can be used for a single option that the user can turn on or off.
 - For fields in which a single selection is required and there are a large number of possible options, consider using a **Select** element.
 
+<image-component cols="8">
+
 ![form logic](images/form-usage-4.png)
+
+</image-component>
 
 ## General guidelines
 
@@ -64,8 +72,11 @@ Placeholder text provides hints or examples of what to enter. Placeholder text d
 
 Effective error messaging can help the user to understand the problem and how to fix it. First, inform the user what has happened, then provide guidance on next steps or possible resolutions. [Inline Notifications](/components/notification) can be used to state the general problem with the users input, such as _“Please input the required fields.”_ Inline Notifications can occur pre or post submission, depending on the type of data the user is inputting.
 
+<image-component cols="8" caption="Inline Notification for error messaging">
+
 ![Inline notification on forms](images/form-usage-2.png)
-_Inline Notification for error messaging_
+
+</image-component>
 
 ### Form validation
 
@@ -79,5 +90,8 @@ The validation label below the field should be as informative as possible when d
 
 All fields in a form are assumed required, with optional fields being tagged as so.
 
+<image-component cols="8" caption="Denote optional fields within a Form">
+
 ![optional fields in a form](images/form-usage-5.png)
-_Denote optional fields within a Form_
+
+</image-component>

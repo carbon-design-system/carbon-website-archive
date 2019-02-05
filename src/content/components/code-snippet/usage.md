@@ -17,4 +17,8 @@ Terminal commands are often longer strings and should only appear on one line. A
 
 Code Snippets are accompanied by a **Copy icon**, which allows users to copy the provided code to their clipboard. The copy icon must be accompanied by a confirmation that states the successful action of copying an item to the users clipboard.
 
+<image-component cols="8" >
+
 ![code snippet example](images/code-snippet-usage-1.png)
+
+</image-component>

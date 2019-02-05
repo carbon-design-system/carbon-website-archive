@@ -1,4 +1,4 @@
-# Let's Encrypt
+# Let's encrypt
 
 [Let's Encrypt](https://letsencrypt.org/) is a free, automated way to get SSL
 certificates for custom domains. Certificates generated with this tool last for

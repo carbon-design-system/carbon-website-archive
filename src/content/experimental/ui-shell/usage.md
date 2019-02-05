@@ -17,15 +17,27 @@ The shell is divided into 3 distinct "zones" which establish purpose and level o
 
 The **Global** zone holds the IBM global platform switcher, which allows the user to quickly navigate between different IBM platforms. This zone cannot be altered by the platform or product owner.
 
+<image-component cols="12">
+
 ![Global Zone](images/zones-global.png)
+
+</image-component>
 
 The **Platform** zone contains platform-level elements, which could include functions like search, docs, support, profile, and notifications. Platform owners can also choose to include custom top-nav text links in this zone.
 
+<image-component>
+
 ![Platform Zone](images/zones-platform.png)
+
+</image-component>
 
 The **Local** zone is controlled at the product level. It contains the product-level side nav as well as the main content area.
 
+<image-component>
+
 ![Local Zone](images/zones-local.png)
+
+</image-component>
 
 ## UI Shell Components
 
@@ -40,13 +52,21 @@ Use a header when:
 - you want links to top level pages to be persistent on screen
 - you expect users to switch between top level pages frequently
 
+<image-component>
+
 ![Primary Header template and example](images/header-generic.png)
+
+</image-component>
 
 #### Header Responsive Behavior
 
 As a header scales down to fit smaller screen sizes, header links and menus should collapse into a left-nav hamburger menu. The left nav menu (previously L1 menu) is reserved for this scenario and should not be used as primary navigation with the header. If an additional navigation menu is needed, use an app switcher placed on the far right side of the header.
 
+<image-component>
+
 ![Responsive Header example](images/header-responsive.png)
+
+</image-component>
 
 #### Header Elements
 
@@ -57,7 +77,11 @@ As a header scales down to fit smaller screen sizes, header links and menus shou
 - **L0 icons** These icons are typically reserved for universal functions such as search, notifications, etc.
 - **Global Switcher** The global app switcher provides a way to switch between contexts within a product/platform. The global app switcher is accessed by clicking on the 9 dot icon in the far right of the header.
 
+<image-component>
+
 ![Primary Header with app switcher](images/header-app-switcher2.png)
+
+</image-component>
 
 ### Header Panels
 
@@ -65,7 +89,11 @@ These are vertical panels that are anchored in the Header and invoked by control
 
 Use a header panel when additional content or actions associated with a header icon needs to be shown.
 
+<image-component>
+
 ![Header Panel template](images/header-panel.png)
+
+</image-component>
 
 More details about panel types and behaviors can be found under [Layout](../experimental/layout/#panel-behavior)
 
@@ -73,13 +101,21 @@ More details about panel types and behaviors can be found under [Layout](../expe
 
 These panels contain product-level navigation and can be either fixed-width or flexible.
 
+<image-component>
+
 ![Side-Nav Panels](images/side-nav-panel.png)
+
+</image-component>
 
 ### On-Page Panels
 
 These panels are at the same elevation as the primary content zone of the page, and can be either dismissable or fully fixed.
 
+<image-component>
+
 ![On-Page Panel](images/on-page-panel.png)
+
+</image-component>
 
 Use an on-page panel when:
 
@@ -135,7 +171,11 @@ Use a flexible side-nav when:
 - more space is needed for page content
 - a fully responsive solution is needed
 
+<image-component>
+
 ![Side-nav Panel](images/side-nav-panel.png)
+
+</image-component>
 
 #### Fixed Side-nav
 
