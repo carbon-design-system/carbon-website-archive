@@ -41,7 +41,7 @@ class Layout extends React.Component {
       durationMin: 90,
       durationMax: 800,
       easing: 'easeInOutCubic',
-      offset: 24
+      offset: 24,
     });
   }
 
@@ -175,6 +175,17 @@ class Layout extends React.Component {
               ]}>
               <html lang="en" />
             </Helmet>
+            <div className="website-alert">
+              <p className="website-alert__text">
+                Carbon V10 is in beta; for production ready components use
+                Carbon V9.
+              </p>
+              <a href="https://www.carbondesignsystem.com">
+                <button class="bx--btn bx--btn--primary" type="button">
+                  View V9 site
+                </button>
+              </a>
+            </div>
             <Header aria-label="Header" className="bx--header--website">
               <SkipToContent />
               <HeaderMenuButton
@@ -195,10 +206,10 @@ class Layout extends React.Component {
                   <span>IBM Product</span>&nbsp;Design&nbsp;<span>System</span>
                 </HeaderName>
               ) : (
-                  <HeaderName prefix="" to="/" element={Link}>
-                    <span>Carbon</span>&nbsp;Design&nbsp;<span>System</span>
-                  </HeaderName>
-                )}
+                <HeaderName prefix="" to="/" element={Link}>
+                  <span>Carbon</span>&nbsp;Design&nbsp;<span>System</span>
+                </HeaderName>
+              )}
 
               <HeaderGlobalBar>
                 {/* {isInternal ? null : <GlobalSearch />} */}

@@ -184,3 +184,43 @@ img[src*='gif'] {
 .page-content iframe {
   margin-bottom: rem(24px);
 }
+
+// Website alert banner
+.website-alert {
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 9999;
+  background: $ui-02;
+}
+
+.website-alert__text {
+  @include type-style('body-short-01');
+  padding: rem(14px) 0 0 $spacing-md;
+  color: $text-01;
+}
+
+.website-alert + .bx--header {
+  top: 3rem;
+}
+
+.website-alert + .bx--header ~ .bx--side-nav {
+  top: 6rem;
+}
+
+.website-alert + .bx--header ~ .bx--side-nav + div,
+.website-alert + .bx--header ~ .bx--side-nav + .container {
+  margin-top: 6rem;
+}
+
+.website-alert
+  + .bx--header
+  ~ .bx--side-nav
+  + div
+  .color-token-table__theme-switcher--sticky {
+  top: 112px;
+}
