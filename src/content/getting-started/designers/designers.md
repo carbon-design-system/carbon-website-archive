@@ -6,14 +6,14 @@ title: Designers
 
 <grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
-    title="Download the design kit from Github"
+    title="Download design kit from Github"
     href="https://github.com/ibm/carbon-design-kit"
     type="resource"
      >
     <img src="images/github-icon.png" alt="Carbon design kit"  />
 </clickable-tile>
 <clickable-tile
-    title="Connect the kit through Box (IBMers only)"
+    title="Connect kit through Box (IBMers only)"
     href="https://www.box.com/resources/downloads/drive"
     type="resource"
     >
