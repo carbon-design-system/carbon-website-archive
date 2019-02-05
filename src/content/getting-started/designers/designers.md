@@ -47,7 +47,7 @@ The design kit is available to the public through GitHub and [internally to IBMe
    - On the next page click `Carbon Design Kit.sketch`
    - Click the “View Raw” link to begin downloading the kit.
 
-<image-component fixed="large" caption="Carbon Design Kit repo">
+<image-component cols="12" caption="Carbon Design Kit repo">
   
 ![Carbon Design Kit repo screenshot](images/designers-2_new.png)
 
@@ -57,7 +57,7 @@ The design kit is available to the public through GitHub and [internally to IBMe
    - Open and use the kit like any other Sketch file.
    - Use the left panel in the file to navigate through the different pages of the kit.
 
-<image-component fixed="large" caption="Design kit file">
+<image-component cols="12" caption="Design kit file">
   
 ![Kit file screenshot](images/designers-3.png)
 
@@ -68,7 +68,7 @@ The design kit is available to the public through GitHub and [internally to IBMe
    - The same Carbon Design Kit file can also be installed as a Sketch Library.
    - Follow the [instructions](https://github.com/IBM/carbon-design-kit/wiki/Sketch-Libraries-Overview) on the repo wiki page to set the kit up as Sketch Library.
 
-<image-component fixed="large" caption="Sketch library">
+<image-component cols="12" caption="Sketch library">
   
 ![Sketch Library screenshot](images/designers-4.png)
 
@@ -87,7 +87,7 @@ _For IBM internal users only._ Using Box Drive sync will ensure that your design
 - Once you have installed and gained access to the `IBM Design Kit`, navigate to the `product design` folder. Select the desired version of Carbon to find the right Carbon Design Kit file.
 - When updates are available to the kit library, a purple `Library Update` badge will appear in the top right corner of your Sketch file. - Click `Library Updates Available` then `Accept updates` in the modal.
 
-<image-component fixed="large" caption="Update indicator">
+<image-component cols="12" caption="Update indicator">
 
 ![Update indicator screenshot](images/designers-5.png)
 
