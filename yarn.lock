@@ -728,6 +728,11 @@
   version "0.0.1-alpha.31"
   resolved "https://registry.yarnpkg.com/@carbon/layout/-/layout-0.0.1-alpha.31.tgz#e9f06db5c8617e67a4169ad22fc56b00bc828a50"
 
+"@carbon/motion@^0.0.1-alpha.31":
+  version "0.0.1-alpha.31"
+  resolved "https://registry.yarnpkg.com/@carbon/motion/-/motion-0.0.1-alpha.31.tgz#bf2b5206da0640aecf646616db9eedc7d882a44d"
+  integrity sha512-MzH+DvNAGH7tetWcSptYPUrtnB9qbwRcVcATE9Jz12En8LYqLzalL3B6pKZS5Cml3X3NiKm9gzNqb4MM01YJYw==
+
 "@carbon/type@0.0.1-alpha.31":
   version "0.0.1-alpha.31"
   resolved "https://registry.yarnpkg.com/@carbon/type/-/type-0.0.1-alpha.31.tgz#d99b1f22315af78719ece22980ec5930de606ecd"
