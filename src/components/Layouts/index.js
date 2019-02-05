@@ -141,6 +141,20 @@ class Layout extends React.Component {
               ]}>
               <html lang="en" />
             </Helmet>
+
+            <div className="website-alert">
+              <p className="website-alert__text">
+                Carbon X is here! Check out the new version 10.0.0-beta site and
+                carbon-components.
+              </p>
+              <a href="https://next.carbondesignsystem.com">
+                <button
+                  class="bx--btn bx--btn--secondary bx--btn--sm"
+                  type="button">
+                  View V10-beta
+                </button>
+              </a>
+            </div>
             <SideNavToggleBtn
               onToggleBtnClick={this.onToggleBtnClick}
               isOpen={this.state.isOpen}
@@ -152,7 +166,7 @@ class Layout extends React.Component {
               clickToClose={this.clickToClose}
             />
             <div className={classNames}>
-              <div class="bx--legacy-notification" role="alert">
+              {/* <div class="bx--legacy-notification" role="alert">
                 <div class="bx--notification-inline__details">
                   <div class="bx--notification-inline__text">
                     <p class="bx--notification-inline__subtitle">
@@ -166,7 +180,7 @@ class Layout extends React.Component {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
               {children}
               <Footer isExpanded={this.state.isOpen} />
             </div>
