@@ -307,7 +307,3 @@ a.#{$prefix}--side-nav__link:focus {
 a.#{$prefix}--side-nav__link > .#{$prefix}--side-nav__icon {
   margin-right: 0;
 }
-
-.#{$prefix}--header ~ .#{$prefix}--side-nav {
-  transition: 0.35s cubic-bezier(0.2, 0, 0.38, 0.9) top;
-}

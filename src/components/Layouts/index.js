@@ -35,32 +35,51 @@ class Layout extends React.Component {
     isHeaderHidden: false,
   };
 
-  handleScroll = () => {
-    console.log(this);
-    var winHeight = window.innerHeight;
-
-    // Annoying to compute doc height due to browser inconsistency
-    var body = document.body;
-    var html = document.documentElement;
-    var docHeight = Math.max(
-      body.scrollHeight,
-      body.offsetHeight,
-      html.clientHeight,
-      html.scrollHeight,
-      html.offsetHeight
-    );
-
-    var value = document.body.scrollTop;
-
-    console.log(`docHeight = ${docHeight}`);
-    console.log(`value = ${value}`);
-
-    // if (this.scrollTop > 147) {
-    //   wrap.addClass("fix-search");
-    // } else {
-    //   wrap.removeClass("fix-search");
-    // }
+  handleScroll = event => {
+    // Save the element we're wanting to scroll
+    var el = document.querySelector('#target');
+    var pageY = window.scrollY;
+    //  If  we've scrolled past the height of the element, add a class
+    if (el.getBoundingClientRect().bottom <= 0) {
+      console.log(el.getBoundingClientRect().bottom + ' bottom');
+      this.setState({
+        headerIsActive: true,
+      });
+      //  If we've scrolled back up to  the top of the container, remove the class
+    } else if (pageY == 0) {
+      console.log('at top');
+      this.setState({
+        headerIsActive: false,
+      });
+    }
   };
+
+  // handleScroll = () => {
+  //   console.log(this);
+  //   var winHeight = window.innerHeight;
+
+  //   // Annoying to compute doc height due to browser inconsistency
+  //   var body = document.body;
+  //   var html = document.documentElement;
+  //   var docHeight = Math.max(
+  //     body.scrollHeight,
+  //     body.offsetHeight,
+  //     html.clientHeight,
+  //     html.scrollHeight,
+  //     html.offsetHeight
+  //   );
+
+  //   var value = document.body.scrollTop;
+
+  //   console.log(`docHeight = ${docHeight}`);
+  //   console.log(`value = ${value}`);
+
+  //   // if (this.scrollTop > 147) {
+  //   //   wrap.addClass("fix-search");
+  //   // } else {
+  //   //   wrap.removeClass("fix-search");
+  //   // }
+  // };
 
   componentDidMount() {
     this.checkWidth();

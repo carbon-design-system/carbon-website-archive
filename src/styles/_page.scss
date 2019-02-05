@@ -187,40 +187,74 @@ img[src*='gif'] {
 }
 
 //---------------------------------------
-// Sticky page-tab states (with site header)
+// Sticky page-tab states and site-header scroll behavior
 //---------------------------------------
 
-.site-header-hidden .side-nav + div,
-.site-header-hidden container {
-  margin-top: 0;
-  // @include carbon--motion(standard, expressive);
+/**
+ * default state: free-scrolling
+ */
+
+// global site header
+.#{$prefix}--header--website {
+  transition-property: carbon--motion(standard);
+  position: absolute;
 }
 
-.#{$prefix}--header--website,
-.site-header-hidden .#{$prefix}--header ~ .#{$prefix}--side-nav {
-  // @include carbon--motion(standard, expressive);
+// side nav
+.#{$prefix}--side-nav {
+  transition-property: carbon--motion(standard);
+  position: absolute;
+  height: 100vh;
 }
 
 /**
- * sticky page tab state changes
+ * state: sticky default start
+ * - .sticky-site-header class added to a parent element (body?)
+ * - hide header stuck in place just above browser edge
+ * - side nav at top edge of window
+ * - sticky tabs able to go to top edge of window
  */
 
-// site header hidden
-.site-header-hidden .#{$prefix}--header--website {
-  top: -3rem;
-}
-.site-header-hidden .#{$prefix}--header ~ .#{$prefix}--side-nav {
-  top: 0;
+.sticky-site-header.header-hidden {
+  .#{$prefix}--header--website {
+    position: fixed;
+    top: -3rem;
+  }
+
+  .#{$prefix}--side-nav {
+    position: fixed;
+    top: 0;
+  }
+
+  // while header is hidden, sticky tabs are at top of window
+  .site-header-hidden .page-tabs {
+    position: fixed;
+    top: 0;
+  }
 }
 
-// while header is visible, but tabs are also sticky, they sit underneath the header
-.stickied-page-tabs .page-tabs {
-  position: fixed;
-  top: 3rem;
-}
+/**
+ * state: scroll up and see header peek back out
+ * - .sticky-site-header.header-visible classes added to a parent element (body?)
+ * - header sticks to top browser edge
+ * - side nav moves down 3 rem to accomdate header
+ * - any sticked page tabs will move down to accomodate header
+ */
 
-// while header is hidden, sticky tabs are at top of window
-.stickied-page-tabs.site-header-hidden .page-tabs {
-  position: fixed;
-  top: 0;
+.sticky-site-header.header-visible {
+  .#{$prefix}--header--website {
+    position: fixed;
+    top: 0;
+  }
+
+  .#{$prefix}--side-nav {
+    position: fixed;
+    top: 3rem;
+  }
+
+  // while header is visible, but tabs are also sticky, they sit underneath the header
+  .page-tabs {
+    position: fixed;
+    top: 3rem;
+  }
 }
