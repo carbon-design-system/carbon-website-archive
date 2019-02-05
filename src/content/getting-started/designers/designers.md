@@ -48,7 +48,7 @@ The design kit is available to the public through GitHub and [internally to IBMe
    - Click the “View Raw” link to begin downloading the kit.
 
 <image-component cols="12" caption="Carbon Design Kit repo">
-  
+
 ![Carbon Design Kit repo screenshot](images/designers-2_new.png)
 
 </image-component>
@@ -58,7 +58,7 @@ The design kit is available to the public through GitHub and [internally to IBMe
    - Use the left panel in the file to navigate through the different pages of the kit.
 
 <image-component cols="12" caption="Design kit file">
-  
+
 ![Kit file screenshot](images/designers-3.png)
 
 </image-component>
@@ -69,7 +69,7 @@ The design kit is available to the public through GitHub and [internally to IBMe
    - Follow the [instructions](https://github.com/IBM/carbon-design-kit/wiki/Sketch-Libraries-Overview) on the repo wiki page to set the kit up as Sketch Library.
 
 <image-component cols="12" caption="Sketch library">
-  
+
 ![Sketch Library screenshot](images/designers-4.png)
 
 </image-component>
