@@ -6,9 +6,9 @@ title: Disabled States
 
 <anchor-links>
 <ul>
-    <li><a href="#default-disabled">Default disabled</a></li>
-    <li><a href="#read-only">Read-only</a></li>
-    <li><a href="#hidden">Hidden</a></li>
+    <li><a data-scroll href="#default-disabled">Default disabled</a></li>
+    <li><a data-scroll href="#read-only">Read-only</a></li>
+    <li><a data-scroll href="#hidden">Hidden</a></li>
 </ul>
 </anchor-links>
 
