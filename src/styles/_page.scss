@@ -193,19 +193,25 @@ img[src*='gif'] {
 .site-header-hidden .side-nav + div,
 .site-header-hidden container {
   margin-top: 0;
+  // @include carbon--motion(standard, expressive);
 }
 
-.site-header-hidden .#{$prefix}--header--website {
-  top: -3rem;
-}
-
+.#{$prefix}--header--website,
 .site-header-hidden .#{$prefix}--header ~ .#{$prefix}--side-nav {
-  top: 0;
+  // @include carbon--motion(standard, expressive);
 }
 
 /**
  * sticky page tab state changes
  */
+
+// site header hidden
+.site-header-hidden .#{$prefix}--header--website {
+  top: -3rem;
+}
+.site-header-hidden .#{$prefix}--header ~ .#{$prefix}--side-nav {
+  top: 0;
+}
 
 // while header is visible, but tabs are also sticky, they sit underneath the header
 .stickied-page-tabs .page-tabs {

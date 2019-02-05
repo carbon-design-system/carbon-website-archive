@@ -4,7 +4,6 @@
   z-index: 13000;
   background-color: $ui-05;
   border-bottom: 1px solid $inverse-02;
-  transition: 0.35s cubic-bezier(0.2, 0, 0.38, 0.9) top;
 }
 
 .#{$prefix}--header__action {

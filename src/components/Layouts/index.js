@@ -64,22 +64,14 @@ class Layout extends React.Component {
 
   componentDidMount() {
     this.checkWidth();
-<<<<<<< HEAD
-    window.addEventListener('scroll', this.handleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-=======
 
     const scroll = new SmoothScroll('a[href*="#"]', {
       speed: 200,
       durationMin: 90,
       durationMax: 800,
       easing: 'easeInOutCubic',
-      offset: 24
+      offset: 24,
     });
->>>>>>> c0779f3ef385a7a77fcb9ce8bf467ea059180f29
   }
 
   onToggleBtnClick = (
@@ -232,10 +224,10 @@ class Layout extends React.Component {
                   <span>IBM Product</span>&nbsp;Design&nbsp;<span>System</span>
                 </HeaderName>
               ) : (
-                  <HeaderName prefix="" to="/" element={Link}>
-                    <span>Carbon</span>&nbsp;Design&nbsp;<span>System</span>
-                  </HeaderName>
-                )}
+                <HeaderName prefix="" to="/" element={Link}>
+                  <span>Carbon</span>&nbsp;Design&nbsp;<span>System</span>
+                </HeaderName>
+              )}
 
               <HeaderGlobalBar>
                 {/* {isInternal ? null : <GlobalSearch />} */}
