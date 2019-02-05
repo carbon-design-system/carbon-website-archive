@@ -7,10 +7,10 @@ tabs: ['Library', 'Usage', 'Contribution']
 
 <anchor-links>
 <ul>
-    <li><a href="#design-and-production-guidelines">Design and production guidelines</a></li>
-    <li><a href="#producing-an-icon">Producing an icon</a></li>
-    <li><a href="#exporting-svgs">Exporting SVGs</a></li>
-    <li><a href="#contribution-process">Contribution process</a></li>
+    <li><a data-scroll href="#design-and-production-guidelines">Design and production guidelines</a></li>
+    <li><a data-scroll href="#producing-an-icon">Producing an icon</a></li>
+    <li><a data-scroll href="#exporting-svgs">Exporting SVGs</a></li>
+    <li><a data-scroll href="#contribution-process">Contribution process</a></li>
 </ul>
 </anchor-links>
 

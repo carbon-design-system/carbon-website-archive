@@ -6,9 +6,9 @@ title: Filtering
 
 <anchor-links>
 <ul>
-    <li><a href="#selecting-filters">Selecting filters</a></li>
-    <li><a href="#triggering-filters">Triggering filters</a></li>
-    <li><a href="#filter-interaction">Filter interaction</a></li>
+    <li><a data-scroll href="#selecting-filters">Selecting filters</a></li>
+    <li><a data-scroll href="#triggering-filters">Triggering filters</a></li>
+    <li><a data-scroll href="#filter-interaction">Filter interaction</a></li>
 </ul>
 </anchor-links>
 

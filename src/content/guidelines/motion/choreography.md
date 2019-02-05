@@ -6,8 +6,8 @@ tabs: ['Basics', 'Choreography', 'Resources']
 
 <anchor-links>
 <ul>
-    <li><a href="#paths">Paths</a></li>
-    <li><a href="#composition">Composition</a></li>
+    <li><a data-scroll href="#paths">Paths</a></li>
+    <li><a data-scroll href="#composition">Composition</a></li>
 </ul>
 </anchor-links>
 
