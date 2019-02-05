@@ -151,7 +151,7 @@ export default class PageTabs extends React.Component {
 
     const classes = {
       tabs: classNames(`ibm--tabs`, className),
-      tablist: classNames(`ibm--tabs__nav`, {
+      tablist: classNames(`ibm--tabs__nav page-tabs__list`, {
         [`ibm--tabs__nav--hidden`]: this.state.dropdownHidden,
       }),
     };
@@ -161,30 +161,10 @@ export default class PageTabs extends React.Component {
         <div className="ibm--grid">
           <div className="ibm--row">
             <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
-              {/* <nav>
-                <ul className="page-tabs__list">{pageTabs}</ul>
-              </nav> */}
               <nav {...other} className={classes.tabs} role={role}>
-                <div
-                  role="listbox"
-                  aria-label={ariaLabel}
-                  tabIndex={0}
-                  className={`ibm--tabs-trigger`}
-                  onClick={this.handleDropdownClick}
-                  onKeyPress={this.handleDropdownClick}>
-                  <a
-                    tabIndex={-1}
-                    className={`ibm--tabs-trigger-text`}
-                    href={triggerHref}
-                    onClick={this.handleDropdownClick}>
-                    {selectedLabel}
-                  </a>
-                  <ChevronDownGlyph aria-hidden />
-                </div>
-                {/* <ul role="tablist" className={classes.tablist}>
-                  {tabsWithProps}
-                </ul> */}
-                <ul className="page-tabs__list">{pageTabs}</ul>
+                <ul role="tablist" className={classes.tablist}>
+                  {pageTabs}
+                </ul>
               </nav>
             </div>
           </div>
