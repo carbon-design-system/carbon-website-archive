@@ -22,6 +22,7 @@ title: Layout
     <li><a href="#grid-behaviors">Grid behaviors</a></li>
     <li><a href="#grid-influencers">Grid influencers</a></li>
     <li><a href="#sizing-scale">Sizing scale</a></li>
+
 </ul>
 </anchor-links>
 
@@ -45,11 +46,12 @@ The core concept of the 2x grid is to divide or multiply by two, forming a visua
 
 <anchor-links small="true">
 <ul>
-    <li><a href="#columns-and-rows">Columns and rows</a></li>
-    <li><a href="#margins">Margins</a></li>
-    <li><a href="#padding">Padding</a></li>
-    <li><a href="#gutters">Gutters</a></li>
-    <li><a href="#breakpoints">Breakpoints</a></li>
+
+    <li><a data-scroll href="#columns-and-rows">Columns and rows</a></li>
+    <li><a data-scroll href="#margins">Margins</a></li>
+    <li><a data-scroll href="#padding">Padding</a></li>
+    <li><a data-scroll href="#gutters">Gutters</a></li>
+    <li><a data-scroll href="#breakpoints">Breakpoints</a></li>
 </ul>
 </anchor-links>
 
@@ -160,10 +162,11 @@ For example, when the user resizes their browser, is their goal to: **See more t
 
 <anchor-links small="true">
 <ul>
-    <li><a href="#fluid-grid">Fluid grid</a></li>
-    <li><a href="#fixed-boxes">Fixed boxes</a></li>
-    <li><a href="#hybrid">Hybrid</a></li>
-    <li><a href="#key-lines">Key lines</a></li>
+
+    <li><a data-scroll href="#fluid-columns">Fluid columns</a></li>
+    <li><a data-scroll href="#fixed-boxes">Fixed boxes</a></li>
+    <li><a data-scroll href="#hybrid-boxes">Hybrid boxes</a></li>
+    <li><a data-scroll href="#key-lines">Key lines</a></li>
 </ul>
 </anchor-links>
 
@@ -214,8 +217,9 @@ Within a design system, layouts often follow a common structure, especially with
 
 <anchor-links small="true">
 <ul>
-    <li><a href="#screen-regions">Screen regions</a></li>
-    <li><a href="#panel-behavior">Panel behavior</a></li>
+
+    <li><a data-scroll href="#screen-regions">Screen Regions</a></li>
+    <li><a data-scroll href="#panel-behavior">Panel Behavior</a></li>
 </ul>
 </anchor-links>
 
@@ -269,12 +273,12 @@ We provide a sizing scale for both fixed and fluid sizes. Use it to size content
 
 <anchor-links small="true">
 <ul>
-    <li><a href="#fixed-base-unit">Fixed base unit</a></li>
-    <li><a href="#fluid-base-unit">Fluid base unit</a></li>
-    <li><a href="#scaling-muliple">Scaling multiple</a></li>
-    <li><a href="#aspect-ratio">Aspect ratio</a></li>
-    <li><a href="#vertical-rhythm">Vertical rhythm</a></li>
-    <li><a href="#components">Components</a></li>
+    <li><a data-scroll href="#fixed-base-unit">Fixed Base Unit</a></li>
+    <li><a data-scroll href="#fluid-base-unit">Fluid Base Unnit</a></li>
+    <li><a data-scroll href="#scaling-muliple">Scaling Muliple</a></li>
+    <li><a data-scroll href="#aspect-ratio">Aspect Ratio</a></li>
+    <li><a data-scroll href="#vertical-rhythm">Vertical Rhythm</a></li>
+    <li><a data-scroll href="#components">Components</a></li>
 </ul>
 </anchor-links>
 
