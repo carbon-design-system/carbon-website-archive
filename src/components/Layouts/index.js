@@ -37,6 +37,14 @@ class Layout extends React.Component {
 
   componentDidMount() {
     this.checkWidth();
+
+    const scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 200,
+      durationMin: 90,
+      durationMax: 800,
+      easing: 'easeInOutCubic',
+      offset: 24
+    });
   }
 
   handleSearchClick = (isSearchOpen) => {

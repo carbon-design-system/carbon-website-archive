@@ -38,10 +38,14 @@ Structured Lists by default are not accompanied by a border, but one may be adde
 | `.bx-structured-list-condensed`                           | padding-top, padding-bottom | 10 / 0.625  | -             |
 | `.bx--structured-list-svg`                                | height, width               | 16 / 1      | -             |
 
+<image-component fixed="default" caption="Spacing and measurements for Structured List | px / rem">
+
 ![Spacing and measurements for Structured List](images/structured-list-style-1.png)
 
-_Spacing and measurements for Structured List | px / rem_
+</image-component>
+
+<image-component fixed="default" caption="Spacing and measurements for Structured List with selection | px / rem">
 
 ![Spacing and measurements for Structured List with selection](images/structured-list-style-2.png)
 
-_Spacing and measurements for Structured List with selection | px / rem_
+</image-component>

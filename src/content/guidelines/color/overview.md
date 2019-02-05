@@ -11,26 +11,25 @@ tabs: ['Overview', 'Usage']
     title="Color palettes for Adobe™(.ase)"
     href="https://w3.ibm.com/design/language//IBM-color-palettes.zip"
     type="resource"
-    >
-    <img src="images/ase.png" alt="Color palettes for Adobe" />
+     >
+    <img src="images/ase.png" alt="Color palettes for Adobe"  />
 </clickable-tile>
-</grid-wrapper>
-<grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
     title="Elements package: Color"
     href="https://github.com/IBM/carbon-elements/tree/master/packages/colors"
     type="resource"
     >
-    <img src="images/sketch-icon.png" alt="Github" />
+    <img src="images/sketch-icon.png" alt="Github"  />
 </clickable-tile>
 </grid-wrapper>
 
+
 <anchor-links>
 <ul>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#color-anatomy">Color anatomy</a></li>
-    <li><a href="#implementing-color">Implementing color</a></li>
-    <li><a href="#accessibility">Accessibility</a></li>
+    <li><a data-scroll href="#introduction">Introduction</a></li>
+    <li><a data-scroll href="#color-anatomy">Color anatomy</a></li>
+    <li><a data-scroll href="#implementing-color">Implementing color</a></li>
+    <li><a data-scroll href="#accessibility">Accessibility</a></li>
 </ul>
 </anchor-links>
 
@@ -70,7 +69,7 @@ With this system, all Carbon users can create their own themes by assigning new 
 
 ### Themes
 
-Themes serve as an organizational framework for color in Carbon, with each theme based on a specific primary background color. There are two default "light" themes and two default "dark" themes.  The light themes use White and Gray 10 backgrounds, and the dark themes use Gray 100 and Gray 90 backgrounds. Default color tokens are provided for each component based on the primary background color.
+Themes serve as an organizational framework for color in Carbon, with each theme based on a specific primary background color. There are two default "light" themes and two default "dark" themes.  The light themes use White and Gray 10 backgrounds, and the dark themes use Gray 100 and Gray 90 backgrounds. Default color tokens are provided for each component based on the primary background color. 
 
 ![Theme backgrounds](images/theme_swatches.png)
 
