@@ -22,13 +22,23 @@ tabs: ['Code', 'Usage', 'Style']
 | -------------------------------- | ------------- | -------- |
 | `.bx--inline-loading__animation` | width, height | 16 / 2   |
 
+<image-component fixed="default">
+
 ![Inline Loading spinner structure measurements](images/inline-loading-style-1.png)
+
+</image-component>
+
+<image-component fixed="default">
 
 ![Inline Loading States](images/inline-loading-style-2.png)
 
+</image-component>
+
+<image-component fixed="default" caption="Structure measurements for small and large loading spinner | px / rem">
+
 ![Inline Loading spinner in context example](images/inline-loading-style-3.png)
 
-_Structure measurements for small and large loading spinner | px / rem_
+</image-component>
 
 ## Typography
 
@@ -42,6 +52,8 @@ Button text should be set in sentence case, with only the first word in a phrase
 
 The Inline Loading component should appear during any user action loading. If button is used to trigger the action, the Inline Loading component should replace that button.
 
+<image-component fixed="default" caption="Example of a inline loading in product context">
+
 ![Inline Loading spinner animated_in context example](images/inline-loading-animated.gif)
 
-_Example of a inline loading in product context_
+</image-component>

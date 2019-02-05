@@ -20,9 +20,11 @@ When a user hovers overs a Breadcrumb, the Breadcrumb title should be underlined
 | ----------- | ------------------ | ----------- | ---------- |
 | `.bx--link` | 14 / 0.875         | Roman / 400 | -          |
 
+<image-component fixed="default" caption="Breadcrumb typography treatment example">
+
 ![Breadcrumb typography treatment example](images/breadcrumb-style-1.png)
 
-_Breadcrumb typography treatment example_
+</image-component>
 
 ## Structure
 
@@ -32,9 +34,11 @@ The on-click dropdown should follow the [Overflow Menu](/components/overflow-men
 | ----------------------------- | ----------- | ------ | ------------- |
 | `.bx--breadcrumb-item::after` | margin-left | 16 / 1 | $spacing-md   |
 
+<image-component fixed="default" caption="Structure and spacing measurements for Breadcrumb | px / rem">
+
 ![Truncated breadcrumb dropdown example](images/breadcrumb-style-2.png)
 
-_Structure and spacing measurements for Breadcrumb | px / rem_
+</image-component>
 
 ## Recommended
 
@@ -59,6 +63,8 @@ Truncated breadcrumbs are not currently built into the Breadcrumb component. The
 | ---------------------------- | ---------- | -------- | ------------- |
 | `.bx--overflow-menu-options` | margin-top | 8 / 0.5  | $spacing-xs   |
 
+<image-component fixed="default" caption="Recommended structure and spacing measurements for Breadcrumb | px / rem">
+
 ![Truncated breadcrumb dropdown example](images/breadcrumb-style-3.png)
 
-_Recommended structure and spacing measurements for Breadcrumb | px / rem_
+</image-component>

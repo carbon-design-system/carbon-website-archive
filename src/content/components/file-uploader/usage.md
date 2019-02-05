@@ -10,7 +10,11 @@ tabs: ['Code', 'Usage', 'Style']
 - A File Uploader should always be accompanied by **Submit** or **Upload**, which is to be styled as a [Primary Button](/components/button).
 - Use an ellipsis (...) if the filename extends beyond the width of its parent element.
 
+<image-component cols="8">
+
 ![file uploader example](images/file-uploader-usage-1.png)
+
+</image-component>
 
 ## Basic interaction
 
@@ -21,14 +25,21 @@ tabs: ['Code', 'Usage', 'Style']
 5. Any errors that may occur with the file should appear as an inline error
    [Notification](/components/notification).
 
+<image-component cols="8" caption="Errors in file uploader">
+
 ![file uploader error](images/file-uploader-usage-2.png)
-_Errors in file uploader_
+
+</image-component>
 
 ## Upload state
 
 Developers using File Uploader will be able to use JavaScript to inject a Loading component when selected files are actually being uploaded.
 
+<image-component cols="8">
+
 ![File uploading state](images/file-uploader-usage-3.png)
+
+</image-component>
 
 ## Removing files
 

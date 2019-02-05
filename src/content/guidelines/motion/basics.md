@@ -12,9 +12,9 @@ tabs: ['Basics', 'Choreography', 'Resources']
 
 <anchor-links>
 <ul>
-    <li><a href="#style">Style</a></li>
-    <li><a href="#easing">Easing</a></li>
-    <li><a href="#duration">Duration</a></li>
+    <li><a data-scroll href="#style">Style</a></li>
+    <li><a data-scroll href="#easing">Easing</a></li>
+    <li><a data-scroll href="#duration">Duration</a></li>
 </ul>
 </anchor-links>
 

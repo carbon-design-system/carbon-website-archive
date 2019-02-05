@@ -16,7 +16,7 @@ jobs:
       - deploy:
           name: deploy next to IBM Cloud
           command: |
-            if [ "${CIRCLE_BRANCH}" == "v10" ]; then
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
               # Install `ibmcloud` CLI
               curl -fsSL https://clis.ng.bluemix.net/install/linux | sh
 
@@ -34,4 +34,3 @@ jobs:
                 -f .circleci/manifest.next.yml \
                 --delete-old-apps
             fi
-

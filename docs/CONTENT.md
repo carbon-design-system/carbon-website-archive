@@ -305,6 +305,28 @@ lorem ipsum dolor sit amet
     - Unfortunately, this component is extra fragile when written inside of a markdown file, because we are passing `<tab>` components into the `<website-tabs>` component, and markdown can interfere when child components are indendented. 
 
 
+#### Image Component
+
+```
+<image-component cols="8" caption="Enter caption here">
+
+![image alt text](/images/image1.png)
+
+</image-component>
+```
+
+**Note: The space before and after the markdown link is mandatory.**
+
+Component that wraps around the images on the website so we can customize them.
+
+Will by default resize with the grid, and you can pass in number of columns (4, 6, 8 or 12). The default is `12`.
+If the image needs to be fixed, you can add the `fixed="default"` option. This will give the image a max-width of 720px.
+There is also a `fixed="large"` option that will give the image a max-width of 1120px.
+
+If the image needs a transparent background you can add the option `bg="none"`. It will by default get a white background.
+
+Caption is also optional and can be added with the `caption` option.
+
 ### Page Specific Components:
 
 **Type**
