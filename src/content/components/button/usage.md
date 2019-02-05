@@ -39,12 +39,18 @@ For consistency, see [labels and idioms](/guidelines/content/glossary) for the a
 - Glyphs must be the same color value as the text within a button.
 - Ghost buttons require a glyph icon.
 
+<image-component  cols="8" caption="Glyph usage in Buttons">
+
 ![button with glyph](images/button-usage-1.png)
-_Glyph usage in Buttons_
+
+</image-component>
 
 ## Danger button usage
 
 Danger buttons have a different visual style to inform users of potentially destructive actions they are about to take. If using the danger button as a standalone, we recommend styling it as a **secondary button**. Within a set, the danger button should be styled as a **primary button.**
 
+<image-component cols="8" caption="Danger button set">
+
 ![danger button set in modal](images/button-usage-2.png)
-_Danger button set_
+
+</image-component>

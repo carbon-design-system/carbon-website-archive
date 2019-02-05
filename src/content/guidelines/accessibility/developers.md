@@ -4,7 +4,13 @@ title: Accessibility
 tabs: ['Overview', 'Color', 'Keyboard', 'Developers']
 ---
 
-Developers have the power to make products work with assistive technology. Accessibility is already integrated into Carbon components — here are some ways that you can further ensure your deliverables are accessible!
+<anchor-links>
+<ul>
+    <li><a href="#html-best-practices">HTML best practices</a></li>
+    <li><a href="#css-best-practices">CSS best practices</a></li>
+    <li><a href="#js-best-practices">JS best practices</a></li>
+</ul>
+</anchor-links>
 
 ## HTML best practices
 
@@ -14,7 +20,7 @@ Think of code hierarchy when structuring your content so that screen readers and
 
 ### Use semantic HTML
 
-Use native HTML elements as much as you can and use them for their correct purpose. These elements have built-in accessibility benefits. They inform screen readers what they are and do, and standard interactive elements, such as button, include keyboard functionality. Aside from making it accessible, this will also make it easier to develop and maintain, better on mobile and good for SEO.
+Use native HTML elements as much as you can, and use them for their correct purpose. These elements have built-in accessibility benefits. They inform screen readers what they are and what they do, and standard interactive elements, such as a button, include keyboard functionality. Aside from making it accessible, this will also make it easier to develop and maintain, better on mobile, and good for search engine optimization.
 
 ```html
 <button>Play Video</button>
@@ -29,7 +35,7 @@ Use native HTML elements as much as you can and use them for their correct purpo
 
 ### Use clear language
 
-When adding content, consider cognitive disabilities, younger people or early readers who may access your site, anyone whose native language isn’t the language your content is written in, and screen readers. Avoid dashes, abbreviations, acronyms (at least the first time) and table layouts if a table is not needed. If abbreviating, use native `<abbr />` element with title attribute.
+When adding content, consider cognitive disabilities, anyone whose native language isn’t the language your content is written in, and screen readers. When possible, avoid dashes, abbreviations, acronyms (at least the first time), and table layouts if a table is not needed. If abbreviating, use the native `<abbr />` element with title attribute.
 
 ```html
 "9 to 5" "November" <abbr title="November">Nov</abbr>
@@ -51,7 +57,7 @@ Consider visually impaired people when labeling elements. Make sure there is tex
 
 ### Making accessible data tables
 
-Always specify table headers with `<th />` elements, and make sure they stand out. Utilize scope attribute if necessary to specify if they are headers for rows or columns. Utilize alternative text along with tables for visually impaired users. `<caption />` is preferred, but `<table />` summary works, too.
+Always specify table headers with `<th />` elements, and make sure they stand out. Utilize `scope` attribute if necessary to specify if they are headers for rows or columns. Utilize alternative text along with tables for visually impaired users. `<caption />` is preferred, but `<table />` summary works too.
 
 ```html
 <table summary="Names and Ages of My Coworkers">
@@ -82,11 +88,11 @@ Always specify table headers with `<th />` elements, and make sure they stand ou
 
 ### Making accessible data visualizations
 
-It is important to take into account visually impaired users when including data visualizations. Consider accompanying visuals with a data table is another alternative for users who rely on screen readers. It is also important to take into account color choices for color-blind users.
+It is important to take into account visually impaired users when including data visualizations. Consider accompanying visuals with a data table as another alternative for users who rely on screen readers. It is also important to take into account color choices for color-blind users.
 
 ### Multimedia text alternatives
 
-Every image that is not decorative must include `alt` text with a meaningful description of the image and a `title` attribute. You can also utilize `aria-labelledby` along with `id` attributes instead of `alt` text. If the image is decorative, use an empty `alt` attribute, otherwise the screen reader will read the whole image url if the `alt` is left out.
+Every image that is not decorative must include `alt` text with a meaningful description of the image and a `title` attribute. You can also utilize `aria-labelledby` along with `id` attributes instead of `alt` text. **If the image is decorative, use an empty `alt` attribute; otherwise the screen reader will read the whole image url if the `alt` is left out.**
 
 ```html
 <!-- Example 1 -->
@@ -113,7 +119,7 @@ Provide closed-captioning with videos or transcriptions of audio files.
 
 ### Avoid font icon libraries
 
-Use SVG's instead of font icon libraries as those are not accessible.
+Use SVG's instead of font icon libraries, as those are not accessible.
 
 ```html
 <svg width="80" height="10">
@@ -146,11 +152,11 @@ Landmark roles identify regions in a page, and act much like native HTML tags wo
 
 ### CSS rule of thumb
 
-You can style a page feature to fit your design but don't change it to the point that it doesn't look or behave as expected. Just because you can use CSS to make any HTML element to look like anything doesn't mean that you should.
+You can style a page feature to fit your design, but don't change it to the point that it doesn't look or behave as expected. 
 
 ### Style focus indicators
 
-Add styling to tabbable elements on hover and focus, so that keyboard only users can have a clear visual of where they are navigating. Never suppress the focus indicator altogether.
+Add styling to tabbable elements on hover and focus, so that keyboard-only users can have a clear visual of where they are navigating. Never suppress the focus indicator altogether.
 
 ### Hiding elements
 
@@ -162,9 +168,9 @@ When hiding content from a screen reader, consider source order. Use `visibility
 
 Don't rely too much on JavaScript to generate HTML and CSS. Follow the "Unobtrusive JavaScript" principle, which means that JavaScript should be used to enhance functionality not build it entirely. Use your built-in browser functionality as much as possible. If you're utilizing JavaScript to make complex UI features, use WAI-ARIA to make elements accessible. Examples of unobtrusive JavaScript include providing client-side form validation and custom controls for HTML5 `<video />` elements that are accessible to keyboards.
 
-### Accessible mouse specific events
+### Accessible mouse-specific events
 
-Double up mouse specific events with other events for keyboard only users.
+Double up mouse-specific events with other events for keyboard-only users.
 
 ```javascript
 const foo = document.querySelector('.foo-class');
