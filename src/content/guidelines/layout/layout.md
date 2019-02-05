@@ -11,18 +11,17 @@ title: Layout
     href="https://github.com/ibm/carbon-design-kit"
     type="resource"
     >
-    <img src="images/sketch-icon.png" alt="Carbon Design Kit"  />
+    <img src="images/sketch-icon.png" alt="Carbon Design Kit"/>
 </clickable-tile>
 </grid-wrapper>
 
 <anchor-links>
 <ul>
-    <li><a href="#mini-unit">Mini unit</a></li>
-    <li><a href="#2x-grid-fundamentals">2x grid fundamentals</a></li>
-    <li><a href="#grid-behaviors">Grid behaviors</a></li>
-    <li><a href="#grid-influencers">Grid influencers</a></li>
-    <li><a href="#sizing-scale">Sizing scale</a></li>
-
+     <li><a data-scroll href="#mini-unit">Mini unit</a></li>
+    <li><a data-scroll href="#2x-grid-fundamentals">2x Grid fundamentals</a></li>
+    <li><a data-scroll href="#grid-behaviors">Grid behaviors</a></li>
+    <li><a data-scroll href="#grid-influencers">Grid influencers</a></li>
+    <li><a data-scroll href="#sizing-scale">Sizing scale</a></li>
 </ul>
 </anchor-links>
 
@@ -46,7 +45,6 @@ The core concept of the 2x grid is to divide or multiply by two, forming a visua
 
 <anchor-links small="true">
 <ul>
-
     <li><a data-scroll href="#columns-and-rows">Columns and rows</a></li>
     <li><a data-scroll href="#margins">Margins</a></li>
     <li><a data-scroll href="#padding">Padding</a></li>
@@ -217,9 +215,8 @@ Within a design system, layouts often follow a common structure, especially with
 
 <anchor-links small="true">
 <ul>
-
-    <li><a data-scroll href="#screen-regions">Screen Regions</a></li>
-    <li><a data-scroll href="#panel-behavior">Panel Behavior</a></li>
+    <li><a data-scroll href="#screen-regions">Screen regions</a></li>
+    <li><a data-scroll href="#panel-behavior">Panel behavior</a></li>
 </ul>
 </anchor-links>
 
@@ -273,11 +270,11 @@ We provide a sizing scale for both fixed and fluid sizes. Use it to size content
 
 <anchor-links small="true">
 <ul>
-    <li><a data-scroll href="#fixed-base-unit">Fixed Base Unit</a></li>
-    <li><a data-scroll href="#fluid-base-unit">Fluid Base Unnit</a></li>
-    <li><a data-scroll href="#scaling-muliple">Scaling Muliple</a></li>
-    <li><a data-scroll href="#aspect-ratio">Aspect Ratio</a></li>
-    <li><a data-scroll href="#vertical-rhythm">Vertical Rhythm</a></li>
+    <li><a data-scroll href="#fixed-base-unit">Fixed base unit</a></li>
+    <li><a data-scroll href="#fluid-base-unit">Fluid base unit</a></li>
+    <li><a data-scroll href="#scaling-multiple">Scaling multiple</a></li>
+    <li><a data-scroll href="#aspect-ratio">Aspect ratio</a></li>
+    <li><a data-scroll href="#vertical-rhythm">Vertical rhythm</a></li>
     <li><a data-scroll href="#components">Components</a></li>
 </ul>
 </anchor-links>
