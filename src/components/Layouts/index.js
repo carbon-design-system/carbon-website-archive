@@ -144,8 +144,7 @@ class Layout extends React.Component {
 
             <div className="website-alert">
               <p className="website-alert__text">
-                Carbon X has arrived! Check out the v10 beta site and all-new
-                carbon-components library.
+                See what's coming soon with Carbon V10-beta.
               </p>
               <a href="https://next.carbondesignsystem.com">
                 <button
