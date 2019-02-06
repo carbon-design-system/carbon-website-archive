@@ -212,8 +212,12 @@ img[src*='gif'] {
 
 .website-alert__text {
   @include type-style('body-short-01');
-  padding: rem(14px) $spacing-md 0 $spacing-md;
+  padding: $spacing-2xs $spacing-md 0 $spacing-md;
   color: $text-01;
+
+  @include breakpoint('md') {
+    padding-top: rem(14px);
+  }
 }
 
 .website-alert + .bx--header {
