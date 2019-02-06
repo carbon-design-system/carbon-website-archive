@@ -41,7 +41,7 @@ class Layout extends React.Component {
       durationMin: 90,
       durationMax: 800,
       easing: 'easeInOutCubic',
-      offset: 24
+      offset: 24,
     });
   }
 
@@ -175,6 +175,17 @@ class Layout extends React.Component {
               ]}>
               <html lang="en" />
             </Helmet>
+            <div className="website-alert">
+              <p className="website-alert__text">
+                Carbon v10 is currently in beta; for production-ready
+                components, use Carbon v9
+              </p>
+              <a href="https://www.carbondesignsystem.com">
+                <button class="bx--btn bx--btn--primary" type="button">
+                  Go to v9
+                </button>
+              </a>
+            </div>
             <Header aria-label="Header" className="bx--header--website">
               <SkipToContent />
               <HeaderMenuButton
@@ -195,10 +206,10 @@ class Layout extends React.Component {
                   <span>IBM Product</span>&nbsp;Design&nbsp;<span>System</span>
                 </HeaderName>
               ) : (
-                  <HeaderName prefix="" to="/" element={Link}>
-                    <span>Carbon</span>&nbsp;Design&nbsp;<span>System</span>
-                  </HeaderName>
-                )}
+                <HeaderName prefix="" to="/" element={Link}>
+                  <span>Carbon</span>&nbsp;Design&nbsp;<span>System</span>
+                </HeaderName>
+              )}
 
               <HeaderGlobalBar>
                 {/* {isInternal ? null : <GlobalSearch />} */}
@@ -270,8 +281,8 @@ class Layout extends React.Component {
                   },
                 ]}>
                 <p>
-                  Have questions? Email us or open an issue <br />
-                  in{' '}
+                  Have questions? Email us or open
+                  <br /> an issue in{' '}
                   <a href="https://github.com/carbon-design-system/carbon-website/issues/new/choose">
                     GitHub.
                   </a>

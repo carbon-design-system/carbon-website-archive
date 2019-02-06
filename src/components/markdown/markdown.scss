@@ -165,10 +165,23 @@
   position: relative;
 }
 
+.page-ul {
+  margin-left: 0;
+}
+
 .page-ul > li {
   font-weight: 400;
-  padding-left: 0;
+  padding-left: 1rem;
   list-style-type: none;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '\2013';
+    margin-right: 0.5rem;
+    margin-bottom: 0.25rem;
+    left: 0;
+  }
 }
 
 .page-ul > li span,
