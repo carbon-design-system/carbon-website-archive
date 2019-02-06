@@ -35,6 +35,14 @@ class Layout extends React.Component {
 
   componentDidMount() {
     this.checkWidth();
+
+    const scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 200,
+      durationMin: 90,
+      durationMax: 800,
+      easing: 'easeInOutCubic',
+      offset: 24
+    });
   }
 
   onToggleBtnClick = (
@@ -262,8 +270,8 @@ class Layout extends React.Component {
                   },
                 ]}>
                 <p>
-                  Have questions? Email us or open an issue <br />
-                  in{' '}
+                  Have questions? Email us or open
+                  <br /> an issue in{' '}
                   <a href="https://github.com/carbon-design-system/carbon-website/issues/new/choose">
                     GitHub.
                   </a>

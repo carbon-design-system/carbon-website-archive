@@ -4,24 +4,17 @@ title: Typography
 tabs: ['Overview', 'Productive', 'Expressive']
 ---
 
-<anchor-links>
-<ul>
-    <li><a href="#type-tokens-and-themes">Type tokens and themes</a></li>
-    <li><a href="#typeface-ibm-plex">Typeface: IBM Plex</a></li>
-    <li><a href="#scale">Scale</a></li>
-    <li><a href="#style">Style</a></li>
-    <li><a href="#type-color">Type Color</a></li>
-</ul>
-</anchor-links>
 
-## Get started
+
+## Resources
 
 <grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
-    title="Get the Latest IBM Plex™ download on GitHub"
+    title="Get the latest IBM Plex™ download on GitHub"
     href="https://github.com/IBM/plex/releases/latest"
     type="resource"
     >
+    <img src="images/github-icon.png" alt="Latest IBM Plex" />
 </clickable-tile>
 <clickable-tile
     title="Visit the IBM Plex™ website to learn more"
@@ -30,6 +23,16 @@ tabs: ['Overview', 'Productive', 'Expressive']
     >
 </clickable-tile>
 </grid-wrapper>
+
+<anchor-links>
+<ul>
+    <li><a href="#type-tokens-and-themes">Type tokens and themes</a></li>
+    <li><a href="#typeface-ibm-plex">Typeface: IBM Plex</a></li>
+    <li><a href="#scale">Scale</a></li>
+    <li><a href="#style">Style</a></li>
+    <li><a href="#type-color">Type color</a></li>
+</ul>
+</anchor-links>
 
 ## Type tokens and themes
 
@@ -95,7 +98,7 @@ Each weight has an italic style, which should only be used when you need to emph
 
 <type-weight type="italic"></type-weight>
 
-## Type Color
+## Type color
 
 Type color should be carefully considered, with legibility and accessibility as paramount concerns. Keep type color neutral in running text. Use primary blue for primary actions.
 

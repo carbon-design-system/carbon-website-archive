@@ -19,9 +19,11 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 | `.bx--dropdown__arrow`                                              | fill             | $brand-01  |
 | `.bx--list-box__selection--multi`                                   | background-color | $brand-01  |
 
+<image-component fixed="default" caption="Example of Dropdowns with $field-02 (left) and $field-01 (right)">
+
 ![Dropdown example with $field-01 and $field-02](images/dropdown-style-9.png)
 
-_Example of Dropdowns with $field-02 (left) and $field-01 (right)_
+</image-component>
 
 ### States
 
@@ -69,13 +71,17 @@ Dropdowns have two states, open and closed. An open and closed Dropdown should b
 | `.bx--dropdown`       | box-shadow                  | 1px         | -              |
 | `.bx--dropdown:focus` | box-shadow                  | 2px         | -              |
 
+<image-component fixed="default" caption="Structure and spacing measurements for Dropdown | px / rem">
+
 ![Structure and spacing for a closed dropdown](images/dropdown-style-2.png)
 
-_Structure and spacing measurements for Dropdown | px / rem_
+</image-component>
+
+<image-component fixed="default" caption="Normal, active, open, and disabled states for Dropdown">
 
 ![Normal, active, open, and disabled states for Dropdown](images/dropdown-style-1.png)
 
-_Normal, active, open, and disabled states for Dropdown_
+</image-component>
 
 ## Multi-Select Dropdown
 
@@ -88,9 +94,11 @@ _Normal, active, open, and disabled states for Dropdown_
 | `.bx--list-box__selection--multi` | height                      | 18 / 1.125 | -              |
 | `.bx--list-box__selection--multi` | margin-right                | 10 / 0.625 | -              |
 
+<image-component fixed="default" caption="Structure and spacing measurements for a Multi-Select Dropdown | px / rem">
+
 ![Structure and spacing for a Multi-Select Dropdown](images/dropdown-style-3.png)
 
-_Structure and spacing measurements for a Multi-Select Dropdown | px / rem_
+</image-component>
 
 
 ## Inline Dropdown
@@ -105,17 +113,21 @@ _Structure and spacing measurements for a Multi-Select Dropdown | px / rem_
 | `.bx--list-box__menu-icon`           | padding-right               | 10 / 0.625 | -             |
 | `.bx--checkbox-label::before`        | height                      | 18 / 1.125 | -             |
 
+<image-component fixed="default" caption="Structure and spacing for Inline Dropdown | px / rem">
+
 ![Structure and spacing for Inline Dropdown](images/dropdown-style-5.png)
 
-_Structure and spacing for Inline Dropdown | px / rem_
+</image-component>
 
 ### Inline Dropdown states
 
 Inline select has two different states, one for mouse hover and one for keyboard focus.
 
+<image-component fixed="default" caption="Hover and focus states for Inline Dropdown">
+
 ![Hover and focus states for Inline Dropdown](images/dropdown-style-6.png)
 
-_Hover and focus states for Inline Dropdown_
+</image-component>
 
 ## Filtering
 
@@ -129,10 +141,14 @@ Filtering can be used with Dropdown and Multi-select Dropdown but not Inline Dro
 | `.bx--list-box__selection`        | padding-left, padding-right | 16 / 1     | $spacing-md   |
 | `.bx--list-box__selection--multi` | height                      | 18 / 1.125 | -             |
 
+<image-component fixed="default" caption="Spacing for Multi-select Dropdown with Filtering | px / rem">
+
 ![Spacing for Multi-select Dropdown with Filtering](images/dropdown-style-7.png)
 
-_Spacing for Multi-select Dropdown with Filtering | px / rem_
+</image-component>
+
+<image-component fixed="default" caption="Interaction states for Multi-select Dropdown with Filtering | px / rem">
 
 ![Interation states for Multi-select Dropdown with Filtering](images/dropdown-style-8.png)
 
-_Interaction states for Multi-select Dropdown with Filtering | px / rem_
+</image-component>
