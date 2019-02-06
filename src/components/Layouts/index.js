@@ -14,7 +14,7 @@ import {
   HeaderGlobalBar,
   HeaderGlobalAction,
 } from 'carbon-components-react/lib/components/UIShell';
-import { AppSwitcher20, Close20 } from '@carbon/icons-react';
+import { ArrowRight20, AppSwitcher20, Close20, Information20 } from '@carbon/icons-react';
 import { WebsiteFooter, WebsiteSwitcher } from '@carbon/addons-website';
 
 import timestamp from 'raw-loader!../../../build-timestamp';
@@ -176,13 +176,15 @@ class Layout extends React.Component {
               <html lang="en" />
             </Helmet>
             <div className="website-alert">
+              <Information20 className="website-alert__icon" />
               <p className="website-alert__text">
-                Carbon v10 is currently in beta; for production-ready
-                components, use Carbon v9
+                <span>Carbon v10 is currently in beta</span><span>;</span> <span>for production-ready
+                components, use Carbon v9</span>
               </p>
-              <a href="https://www.carbondesignsystem.com">
-                <button class="bx--btn bx--btn--primary" type="button">
-                  Go to v9
+              <a className="website-alert__button" href=" https://www.carbondesignsystem.com">
+                <button class="bx--btn bx--btn--secondary" type="button">
+                  <span>Go to v9</span>
+                  <ArrowRight20 />
                 </button>
               </a>
             </div>
@@ -206,10 +208,10 @@ class Layout extends React.Component {
                   <span>IBM Product</span>&nbsp;Design&nbsp;<span>System</span>
                 </HeaderName>
               ) : (
-                <HeaderName prefix="" to="/" element={Link}>
-                  <span>Carbon</span>&nbsp;Design&nbsp;<span>System</span>
-                </HeaderName>
-              )}
+                  <HeaderName prefix="" to="/" element={Link}>
+                    <span>Carbon</span>&nbsp;Design&nbsp;<span>System</span>
+                  </HeaderName>
+                )}
 
               <HeaderGlobalBar>
                 {/* {isInternal ? null : <GlobalSearch />} */}
