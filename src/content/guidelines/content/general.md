@@ -1,31 +1,31 @@
 ---
-label: Guidelines
+label: Content design can make or break an online experience. Always strive for writing that is clear, concise, and on-brand.
 title: Content
 tabs: ['General', 'Guidance', 'Glossary']
 ---
 
 ## Voice and tone
 
-Using the appropriate voice and tone allows us to better connect and resonate with our users. Gone are the days when our users perceive their content experience as complex, distant, or disjointed. We've evolved and we now endorse a style that should feel like a conversation between friends – personal, relatable, clear, helpful, and engaging. Conversational style does not mean sloppy writing. It means creating content in a clear, concise way that anyone can understand. It means genuinely connecting with our users.
+Consistent voice and tone are crucial for connecting and resonating with users. What's the difference between voice and tone? One way to think about it is that voice is always consistent, but tone often changes depending on context.
 
-What is the difference between voice and tone? Simply put, we have the same voice all the time, but our tone often changes. Consider this: You have one voice, but you most likely use a certain tone when you are having coffee with friends and a different tone when you are meeting with your boss.
+**Voice** is the foundation for communicating about IBM products and delivering brand messages. At IBM, our voice expresses the core of our personality, while bringing comfort, ease, and a sense of connection to our users. Through careful use of the IBM voice, we help empower users to meet their business goals. 
 
-**Voice** is the foundation for communicating IBM Cloud products and brand message. Our voice expresses the core of our personality, while bringing comfort, ease, and a sense of connection to our users. Our goal is to empower our users to meet their business goals. Be consistent with voice across the platform.
+**Tone** conveys an attitude toward both the subject matter and the reader. All content – whether it's introductory text on the UI, an error message, or a topic in the docs – tells part of a bigger story. Good storytellers are skilled in two main areas: what they are saying (the substantive content) and how to say it to any given audience (the style and tone in which it is presented). Be a good storyteller.
 
-**Tone** conveys your attitude toward what you are writing about and who you are writing to. When you create content – whether it's introductory text on the UI, an error message, or a topic in the docs – you are essentially a storyteller. Good storytellers are experts in two main areas: what they are saying (the important information that the audience needs to know) and how to say it (the experience that they want to create for the audience). Be a good storyteller.
+## Conversational levels
 
-## Conversation levels
+Content should never feel complex, distant, or disjointed. Rather, it should feel like a conversation with a smart friend – personal, relatable, helpful, and engaging. Do not mistake conversational style for sloppy writing! Conversational content still needs to be clear, concise, and easy to understand. The best content creates a connection with the user.
 
-Here's how conversational you should be based on the six stages of the user journey:
+Here's a quick guide to conversational levels based on the six stages of the user journey:
 
-> **MOST: Discover, Try, Buy content**
+> **Less conversational: instructional content for how to complete a task (e.g. steps)**
 
-“Thanks for joining IBM Bluemix for your free 30-day trial. It's been great having you! Unfortunately, your Bluemix trial account, with IBMid name@domain, is now deactivated because your trial is over. While your account is deactivated, you can't access resources. Don't worry, your apps are not deleted.”
+“Go to Avatar icon > Account > Notifications to set up general account and spending notifications. Spending notifications are available only for Subscription and Pay-As-You-Go account owners.”
 
-> **MORE: Getting started interface content (for example, welcome), interface content for remaining experiences (Productive Use, Manage and Upgrade, Leverage and Extend, Get Support)**
+> **More conversational: _Getting started_ interface content (for example, welcome pages) and standard interface content for productive use, managing and upgrading, _leverage and extend_ content, and support**
 
-“To start using Bluemix, name your first organization. Think of an org as a project or team that shares resources, such as apps, databases, and other services. Orgs exist in geographic regions, so decide where you'd like to put your first one.”
+“To start using IBM Cloud, name your first organization. Think of an org as a project or team that shares resources, such as apps, databases, and other services. Orgs exist in geographic regions, so decide where you'd like to put your first one.”
 
-> **LESS: Instructional content (steps) for how to complete a task**
+> **Most conversational: _Discover, try, buy_ content**
 
-“Go to Avatar icon > Account > Notifications to set up general account and spending notifications. Spending notifications are available only for Subscription and Pay-As-You-Go Bluemix account owners.”
+“Watson Assistant comes pre-trained with industry-relevant content. It can make sense of your historical chat or call logs, and it has a visual dialog editor — meaning it's never been easier to get started (developers not required).”

@@ -3,38 +3,48 @@ label: Themes are used to customize component styles to fit the specific aesthet
 title: Themes
 ---
 
-## Introduction to theming
-
-Developers and designers can use theming to modify existing components to fit their own specific visual styles. Rather than changing each individual component's CSS or building modified components from scratch, components can instead be easily customized by changing a set of universal variables we call tokens that seamlessly propagate changes across all of the system.
+## Resources
 
 <grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
-    title="Theming Sandbox"
+    title="Theming sandbox"
     href="http://themes.carbondesignsystem.com/"
     type="resource"
     >
-    <img src="images/sandbox-icon.png" alt="Theming Sandbox" />
+    <img src="images/sandbox-icon.png" alt="Theming sandbox" />
 </clickable-tile>
 </grid-wrapper>
+
+
+<anchor-links>
+<ul>
+    <li><a href="#theming-basics">Theming basics</a></li>
+    <li><a href="#customizing-a-theme">Customizing a theme</a></li>
+    <li><a href="#tokens">Tokens</a></li>
+    <li><a href="#theming-applied">Theming applied</a></li>
+</ul>
+</anchor-links>
+
+## Theming basics
+
+Themes are used to modify existing components to fit a specific visual style. By using Carbon's tokens, developers can easily customize all of their components by changing a set of universal variables, eliminating the need to modify individual components.
 
 ### Theme terms
 
 | Term      | Definition                                                                                                  |
 | --------- | ----------------------------------------------------------------------------------------------------------- |
-| **Theme** | The set of unique values assigned to each token.                                                            |
+| **Theme** | The set of unique values assigned to the system's tokens                                                            |
 | **Token** | The code identifier for a unique role or set of roles. Tokens are universal and never change across themes. |
-| **Role**  | The systematic usage/s of a value. Roles cannot be changed between themes.                                  |
-| **Value** | The actual style (ie hex code) assigned to a token.                                                         |
+| **Role**  | The systematic usage/s of a token. Roles cannot be changed between themes.                                  |
+| **Value** | The actual style (i.e. hex code) assigned to a token                                                         |
 
-## Default theme
+### Default theme
 
-The Carbon Design System has a default theme which is based off of the IBM Design Language. When `carbon-components` is downloaded and installed, they are preset to use the default theme.
-
-The default theme acts as a starting point; from there designers and developers can define how their own components and styles deviate from the default. A theme can change as little as one or all of the token values. Those different values are then packaged into a new theme scss stylesheet which will replace the values of the default theme.
+Carbon's default theme (White theme) is based on the IBM Design Language. When `carbon-components` is downloaded and installed, the components are preset to use the default theme.
 
 <grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
-    title="Carbon Themes"
+    title="Carbon themes"
     href="https://github.com/carbon-design-system/carbon-themes"
     type="resource"
     >
@@ -42,11 +52,74 @@ The default theme acts as a starting point; from there designers and developers 
 </clickable-tile>
 </grid-wrapper>
 
+## Customizing a theme
+
+The default theme acts as a starting point; from there designers and developers can define how their own components and styles deviate from the default. Altering one, some, or all of the default token values will result in a new theme. The developer then packages those new values into a new theme scss stylesheet which will replace the values of the default theme:
+
+1. Create a theme mixin that effectively mimics this structure, but changes up hex values as needed:
+
+        @mixin theme-white {
+          $interactive-01: #0062ff !default !global;
+          $interactive-02: #171717 !default !global;
+          $interactive-03: #0062ff !default !global;
+          $ui-background: #ffffff !default !global;
+          $ui-01: #f3f3f3 !default !global;
+          $ui-02: #ffffff !default !global;
+          $ui-03: #dcdcdc !default !global;
+          $ui-04: #8c8c8c !default !global;
+          $ui-05: #171717 !default !global;
+          $text-01: #171717 !default !global;
+          $text-02: #565656 !default !global;
+          $text-03: #8c8c8c !default !global;
+          $text-04: #ffffff !default !global;
+          $icon-01: #171717 !default !global;
+          $icon-02: #565656 !default !global;
+          $field-01: #f3f3f3 !default !global;
+          $field-02: #ffffff !default !global;
+          $inverse-01: #ffffff !default !global;
+          $inverse-02: #3d3d3d !default !global;
+          $support-01: #da1e28 !default !global;
+          $support-02: #198038 !default !global;
+          $support-03: #fdd13a !default !global;
+          $support-04: #054ada !default !global;
+          $overlay-01: rgba(23, 23, 23, 0.5) !default !global;
+          $focus: #0062ff !default !global;
+          $hover-primary: #0353e9 !default !global;
+          $active-primary: #0530ad !default !global;
+          $hover-primary-text: #054ada !default !global;
+          $hover-secondary: #4c4c4c !default !global;
+          $active-secondary: #6f6f6f !default !global;
+          $hover-tertiary: #0353e9 !default !global;
+          $active-tertiary: #0530ad !default !global;
+          $hover-ui: #e5e5e5 !default !global;
+          $active-ui: #bebebe !default !global;
+          $selected-ui: #dcdcdc !default !global;
+          $hover-selected-ui: #cacaca !default !global;
+          $hover-danger: #ba1b23 !default !global;
+          $active-danger: #750e13 !default !global;
+          $hover-row: #e5e5e5 !default !global;
+          $visited-link: #8a3ffc !default !global;
+          $disabled-01: #f3f3f3 !default !global;
+          $disabled-02: #bebebe !default !global;
+          $disabled-03: #8c8c8c !default !global;
+          $brand-01: #0062ff !default !global;
+          $brand-02: #171717 !default !global;
+          $brand-03: #0062ff !default !global;
+          $active-01: #bebebe !default !global;
+          $hover-field: #e5e5e5 !default !global;
+        }
+
+2. Name the mixin (i.e., instead of `theme-white`, choose a unique name)
+
+3. `@include UNIQUE-THEME-MIXIN();` in your scss, before importing component scss, etc. 
+
+Alternatively, for relatively minor changes to an existing theme, a developer can make changes on a per-token basis. For example, after importing an existing Carbon theme, she could just set something like `$interactive-01: hotpink;`.
+
 ## Tokens
 
-By using tokens the code only needs to be changed in one place to see the effect system wide. Tokens are used across all components and make it easy for them to be systematically updated while keeping global patterns and styles consistent.
+With tokens, the code only needs to be changed in one place to see the effect system-wide. Tokens are used across all components and help keep global patterns and styles consistent.
 
-All tokens come pre-baked into the Carbon component source code. Tokens are denoted by the prefix `$` (eg. `$ui-01`). Tokens can also be nested within other tokens. For example `$interactive-01` calls the IBM Design Language color palette token `$ibm-color__blue--60` for its value in the default theme.
+All tokens come pre-baked into the Carbon component source code. Tokens are denoted by the prefix `$` (e.g. `$ui-01`). Tokens can also be nested within other tokens. For example, `$interactive-01` calls the IBM Design Language color palette token `$ibm-color__blue--60` for its value in the default theme.
 
 There are several token categories:
 
@@ -57,56 +130,56 @@ There are several token categories:
 
 ### Color
 
-Each theme is assigned 38 universal color variables, which are determined by [common roles and usage](/guidelines/color/usage). This allows for uniform color application across themes while giving each theme the freedom to express its own personality.
+Each theme is assigned 38 universal color variables, which are determined by [common roles and usage](/guidelines/color/usage). This allows for uniform color application across themes while maintaining full styling flexibility.
 
 ```scss
 //// _color-tokens
 // White Theme tokens
-$interactive-01: $ibm-colors__blue-60 !default !global;
-$interactive-02: $ibm-colors__blue-60 !default !global;
-$ui-01: $ibm-colors__gray-10 !default !global;
+$interactive-01: $ibm-colors__blue--60 !default !global;
+$interactive-02: $ibm-colors__blue--60 !default !global;
+$ui-01: $ibm-colors__gray--10 !default !global;
 $ui-02: $ibm-colors__white !default !global;
-$ui-03: $ibm-colors__gray-20 !default !global;
-$ui-04: $ibm-colors__gray-50 !default !global;
-$ui-05: $ibm-colors__gray-100 !default !global;
-$icon-01: $ibm-colors__gray-100 !default !global;
-$icon-02: $ibm-colors__gray-70 !default !global;
-$text-01: $ibm-colors__gray-100 !default !global;
-$text-02: $ibm-colors__gray-70 !default !global;
-$text-03: $ibm-colors__gray-50 !default !global;
-$inverse-01: $ibm-colors__gray-10 !default !global;
-$inverse-02: $ibm-colors__gray-80 !default !global;
-$field-01: $ibm-colors__gray-10 !default !global;
+$ui-03: $ibm-colors__gray--20 !default !global;
+$ui-04: $ibm-colors__gray--50 !default !global;
+$ui-05: $ibm-colors__gray--100 !default !global;
+$icon-01: $ibm-colors__gray--100 !default !global;
+$icon-02: $ibm-colors__gray--70 !default !global;
+$text-01: $ibm-colors__gray--100 !default !global;
+$text-02: $ibm-colors__gray--70 !default !global;
+$text-03: $ibm-colors__gray--50 !default !global;
+$inverse-01: $ibm-colors__gray--10 !default !global;
+$inverse-02: $ibm-colors__gray--80 !default !global;
+$field-01: $ibm-colors__gray--10 !default !global;
 $field-02: $ibm-colors__white !default
-$support-01: $ibm-colors__red-60 !default !global;
-$support-02: $ibm-colors__green-60 !default !global;
+$support-01: $ibm-colors__red--60 !default !global;
+$support-02: $ibm-colors__green--60 !default !global;
 $support-03: $ibm-colors__yellow !default !global;
-$support-04: $ibm-colors__blue-70 !default !global;
+$support-04: $ibm-colors__blue--70 !default !global;
 $overlay-01: rgba(255, 255, 255, 6) !default !global;
 $overlay-02: rgba(23, 23, 23, 7) !default !global;
 
 // Interaction tokens
-$focus: $ibm-colors__blue-60 !default !global;
+$focus: $ibm-colors__blue--60 !default !global;
 $hover-primary: #0353E9 !default !global;
-$hover-primary-text: $ibm-colors__blue-70 !default !global; !default !global;
+$hover-primary-text: $ibm-colors__blue--70 !default !global; !default !global;
 $hover-secondary: #6f6f6f !default !global;
 $hover-ui: #e5e5e5 !default !global;
 $hover-danger: #ba1b23 !default !global;
 $hover-row: #e5e5e5 !default !global;
-$active-primary: $ibm-colors__blue-80 !default !global; !default !global;
-$active-secondary: $ibm-colors__gray-60 !default !global;
-$active-ui: $ibm-colors__gray-30 !default !global;
-$active-danger: $ibm-colors__red-80 !default !global;
-$selected-ui: $ibm-colors__gray-20 !default !global;
-$visited-link: $ibm-colors__purple-60 !default !global;
-$disabled-01: $ibm-colors__gray-10 !default !global;
-$disabled-02: $ibm-colors__gray-30 !default !global;
-$disabled-03: $ibm-colors__gray-50 !default !global;
+$active-primary: $ibm-colors__blue--80 !default !global; !default !global;
+$active-secondary: $ibm-colors__gray--60 !default !global;
+$active-ui: $ibm-colors__gray--30 !default !global;
+$active-danger: $ibm-colors__red--80 !default !global;
+$selected-ui: $ibm-colors__gray--20 !default !global;
+$visited-link: $ibm-colors__purple--60 !default !global;
+$disabled-01: $ibm-colors__gray--10 !default !global;
+$disabled-02: $ibm-colors__gray--30 !default !global;
+$disabled-03: $ibm-colors__gray--50 !default !global;
 ```
 
 ### Spacing
 
-Carbon has two spacing scales, one for general spacing within components and the other for layout spacing. Both are designed to compliment the components and typography throughout the system. Each scale has its own [distinct purpose](/guidelines/spacing). The two scales have certain overlapping
+Carbon has two spacing scales, one for general spacing within components and the other for layout spacing. Both are designed to complement the components and typography throughout the system. Each scale has its own [distinct purpose](/guidelines/spacing). The two scales have certain overlapping values that serve two different roles, so be mindful when choosing a spacing token.
 
 ```scss
 //// _spacing
@@ -136,7 +209,7 @@ $layout-2xl: $spacing-baseline * 10 !default;
 
 ### Typography
 
-Typography has four categories (universal, productive, editorial and additional) of type styles that can be customized through tokens. These tokens are used both within components and across layouts. Type tokens are determine by their [role](/guidelines/typography/productive) in across system.
+Typography has four categories of type styles (universal, productive, editorial, and additional) that can be customized through tokens. These tokens are used both within components and across layouts. Type tokens are determined by their [role](/guidelines/typography/productive) across the system.
 
 ```scss
 // Universal
@@ -470,18 +543,18 @@ $display-04: (
 
 ### Global
 
-The other categories are global and component specific variables. These control more general styling of components, such as layer usage or border width.
+The other categories are global and component-specific variables. These control more general styling of components, such as layer usage or border width.
 
 ```scss
 // Global
 $input-border: 1px solid transparent !default !global;
 $input-label-weight: 400 !default !global;
-$disabled: $ibm-colors__gray-30 !default !global;
-$disabled-background-color: $ibm-colors__gray-10 !default !global;
-$focus: $ibm-colors__blue-60 !default !global;
+$disabled: $ibm-colors__gray--30 !default !global;
+$disabled-background-color: $ibm-colors__gray--10 !default !global;
+$focus: $ibm-colors__blue--60 !default !global;
 
 // Link
-$link-visited: $ibm-colors__purple-60 !default !global;
+$link-visited: $ibm-colors__purple--60 !default !global;
 $link-inverse-color: #6ea6ff !default !global;
 
 // Tooltip
@@ -521,7 +594,7 @@ $snippet-border-color: $ui-03 !default !global; // TODO: Define for experimental
 // Content Switcher
 $content-switcher-border-radius: 0px !default !global;
 $content-switcher-option-border: 1px solid $brand-01 !default !global;
-$content-switcher-divider: $ibm-colors__gray-30 !default !global;
+$content-switcher-divider: $ibm-colors__gray--30 !default !global;
 
 // Data Table
 $data-table-heading-transform: uppercase !default !global;
@@ -529,17 +602,17 @@ $data-table-heading-border-bottom: 1px solid $brand-01 !default !global;
 $data-table-row-height: 2rem !default !global;
 
 // Date Picker
-$date-picker-in-range-background-color: $ibm-colors__blue-20 !default !global;
+$date-picker-in-range-background-color: $ibm-colors__blue--20 !default !global;
 
 // Modal
 $modal-border-top: $brand-01 4px solid !default !global;
 $modal-footer-background-color: $ui-03 !default !global;
 
 // Notification
-$notification-info-background-color: $ibm-colors__blue-10 !default !global;
-$notification-error-background-color: $ibm-colors__red-10 !default !global;
+$notification-info-background-color: $ibm-colors__blue--10 !default !global;
+$notification-error-background-color: $ibm-colors__red--10 !default !global;
 $notification-warning-background-color: rgba(#fdd13a, 0.15) !default !global;
-$notification-success-background-color: $ibm-colors__green-10 !default !global;
+$notification-success-background-color: $ibm-colors__green--10 !default !global;
 
 // Progress Indicator
 $progress-indicator-bar-width: 1px inset transparent !default !global;
@@ -547,8 +620,8 @@ $progress-indicator-stroke-width: 5 !default !global;
 $progress-indicator-line-offset: 0.625rem !default !global;
 
 //Code Snippet
-$copy-active: $ibm-colors__gray-30 !default !global;
-$copy-btn-feedback: $ibm-colors__gray-80 !default !global;
+$copy-active: $ibm-colors__gray--30 !default !global;
+$copy-btn-feedback: $ibm-colors__gray--80 !default !global;
 
 // Radio Button
 $radio-border-width: 1px !default !global;
@@ -560,13 +633,13 @@ $structured-list-text-transform: none !default !global;
 // Slider
 
 //Tab
-$tab-underline-color: 2px solid $ibm-colors__gray-30 !default !global;
-$tab-underline-color-hover: 2px solid $ibm-colors__gray-60 !default !global;
-$tab-text-disabled: $ibm-colors__gray-30 !default !global;
-$tab-underline-disabled: 2px solid $ibm-colors__gray-10 !default !global;
+$tab-underline-color: 2px solid $ibm-colors__gray--30 !default !global;
+$tab-underline-color-hover: 2px solid $ibm-colors__gray--60 !default !global;
+$tab-text-disabled: $ibm-colors__gray--30 !default !global;
+$tab-underline-disabled: 2px solid $ibm-colors__gray--10 !default !global;
 
 // Toggle
-$toggle-background-color: $ibm-colors__green-50 !default !global;
+$toggle-background-color: $ibm-colors__green--50 !default !global;
 
 // Skeleton Loading
 $skeleton: rgba(
@@ -577,11 +650,9 @@ $skeleton: rgba(
 
 ## Theming applied
 
-The following example demonstrates the relationship between the different themes. Each theme shares the same variables and roles, with only the value changing according to each individual theme.
+The following example demonstrates the relationship between the different themes. Each theme shares the same variables and roles, with only the value changing for each individual theme.
 
 ![Default theme applied](images/themes-1.svg)
-
-_Default theme applied_
 
 | Key | Token       | Role                | White theme value    | Dark theme value    |
 | --- | ----------- | ------------------- | -------------------- | ------------------- |

@@ -13,7 +13,7 @@ const WebsiteSwitcher = props => {
   });
 
   return (
-    <nav className={classNames} role="navigation" aria-label="website switcher">
+    <nav className={classNames} aria-label="website switcher">
       <ul className={`${prefix}--website-switcher__list`}>
         {links &&
           links.map((link, i) => {
@@ -21,6 +21,7 @@ const WebsiteSwitcher = props => {
               <li key={i} className={`${prefix}--website-switcher-list__item`}>
                 <a
                   className={`${prefix}--website-switcher-list__item-link`}
+                  tabIndex={isSwitcherOpen ? 0 : -1}
                   href={link.href}
                   aria-label={link.linkText}>
                   {link.linkText}
