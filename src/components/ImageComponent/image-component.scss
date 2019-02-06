@@ -40,15 +40,19 @@
     align-items: center;
     justify-content: center;
     margin-right: 0 !important;
-    width: 100% !important;
+    width: 70% !important;
     max-width: 100% !important;
   }
 
   img.gatsby-resp-image-image {
-    max-width: 720px;
-    width: 720px !important;
+    max-width: 736px;
+    width: 736px !important;
     height: auto !important;
     position: relative !important;
+
+    // @include breakpoint('1250px') {
+    //   width: 736px !important;
+    // }
   }
 }
 
@@ -69,7 +73,7 @@
     align-items: center;
     justify-content: center;
     margin-right: 0 !important;
-    width: 100% !important;
+    width: 70% !important;
     max-width: 100% !important;
   }
 
