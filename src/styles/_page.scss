@@ -192,31 +192,59 @@ img[src*='gif'] {
   top: 0;
   left: 0;
   display: flex;
+  align-items: center;
   width: 100%;
-  justify-content: space-between;
   z-index: 9999;
-  background: $ui-02;
+  background: $brand-01;
 
   @include breakpoint('md') {
     height: 3rem;
   }
 }
 
-.website-alert .bx--btn {
-  width: 8rem;
+.website-alert__icon {
+  margin: 0 1rem;
+  fill: $inverse-01;
+}
 
-  @include breakpoint('md') {
-    width: auto;
+.website-alert__button {
+  justify-self: flex-end;
+  margin-left: auto;
+  height: 100%;
+  text-decoration: none;
+}
+
+.website-alert .bx--btn {
+  height: 100%;
+  width: 100%;
+  padding: 0 1rem;
+  display: inline-flex;
+  align-items: center;
+
+  svg {
+    margin-left: rem(8px);
+    fill: $inverse-01;
   }
 }
 
 .website-alert__text {
   @include type-style('body-short-01');
-  padding: $spacing-2xs $spacing-md 0 $spacing-md;
-  color: $text-01;
+  color: $inverse-01;
+}
 
-  @include breakpoint('md') {
-    padding-top: rem(14px);
+.website-alert__text span {
+  &:nth-of-type(1),
+  &:nth-of-type(2) {
+    font-weight: 600;
+  }
+
+  &:nth-of-type(2),
+  &:nth-of-type(3) {
+    display: none;
+
+    @include breakpoint('md') {
+      display: inline;
+    }
   }
 }
 
