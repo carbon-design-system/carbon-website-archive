@@ -245,16 +245,16 @@ class Layout extends React.Component {
               links={[
                 { href: 'https://www.ibm.com/design/', linkText: 'IBM Design' },
                 {
+                  href: 'https://www.ibm.com/design/language/',
+                  linkText: 'IBM Design Language',
+                },
+                {
                   href: 'https://next.carbondesignsystem.com',
                   linkText: 'IBM Product Design',
                 },
                 {
                   href: 'https://www.ibm.com/standards/web/',
                   linkText: 'IBM Digital Design',
-                },
-                {
-                  href: 'https://www.ibm.com/design/language/',
-                  linkText: 'IBM Design Language',
                 },
                 {
                   href: 'https://www.ibm.com/design/research/',
