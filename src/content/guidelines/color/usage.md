@@ -1,7 +1,7 @@
 ---
 label: Guidelines
 title: Color
-tabs: ['Swatches', 'Usage']
+tabs: ['Overview', 'Usage']
 ---
 
 ## Tokens by theme

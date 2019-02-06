@@ -290,7 +290,7 @@ Content for third tab goes here.
   - `<tab label="Lorem">`
 - Each Tab element also has a div wrapper inside of it, with no space between the div and tab
   - `<tab label="Lorem"><div> … </div></tab>`
-- Because of the way Markdown processes files, an empty line is required to be the first bit of content inside of the `<tab><div>` stack, e.g.:
+- Because of the way Markdown processes files, an **empty line** is required to be the first bit of content inside of the `<tab><div>` stack, e.g.:
 ```
 <website-tabs>
 <tab label="Tab 1"><div>
@@ -300,8 +300,32 @@ lorem ipsum dolor sit amet
 </div></tab>
 </website-tabs>
 ```
-- note the empty line after `<tab label="Tab 1"><div>` and before the first line of content, in this case `lorem ipsum…`
+- note the empty line after `<tab label="Tab 1"><div>` and before the first line of content, in this case `lorem ipsum…`. **Verify that there are no whitespace characters in these empty lines**.
+- Do not indent interior components. 
+    - Unfortunately, this component is extra fragile when written inside of a markdown file, because we are passing `<tab>` components into the `<website-tabs>` component, and markdown can interfere when child components are indendented. 
 
+
+#### Image Component
+
+```
+<image-component cols="8" caption="Enter caption here">
+
+![image alt text](/images/image1.png)
+
+</image-component>
+```
+
+**Note: The space before and after the markdown link is mandatory.**
+
+Component that wraps around the images on the website so we can customize them.
+
+Will by default resize with the grid, and you can pass in number of columns (4, 6, 8 or 12). The default is `12`.
+If the image needs to be fixed, you can add the `fixed="default"` option. This will give the image a max-width of 720px.
+There is also a `fixed="large"` option that will give the image a max-width of 1120px.
+
+If the image needs a transparent background you can add the option `bg="none"`. It will by default get a white background.
+
+Caption is also optional and can be added with the `caption` option.
 
 ### Page Specific Components:
 

@@ -11,9 +11,11 @@ tabs: ['Code', 'Usage', 'Style']
 | Single Date Picker | When a user needs to select one date, accompanied by a calendar widget.                     |
 | Simple Date Picker | When the date is known by the user, and they don't need a calendar to anticipate the dates. |
 
+<image-component cols="8" caption="Types of date pickers">
 
 ![range, single, and simple date pickers](images/date-picker-usage-1.png)
-_Types of date pickers_
+
+</image-component>
 
 ## General guidelines
 
@@ -30,6 +32,12 @@ For Date Pickers, use placeholder text so users input the date in the correct fo
 ### Calendar widget
 
 It is recommended to use the Date Picker with a calendar widget when the user is browsing between a range of dates. We can aid the user in making the proper choices by providing a visual reference of dates for them to choose from. The calendar widget appears once the user has interacted with the date input field (typically on `:focus`).
+
+<image-component fixed="default" caption="Selecting dates from the range date picker>
+
+![example of date picker](images/date-picker-usage-animation-1.gif)
+
+</image-component>
 
 ### Simple Date Picker
 

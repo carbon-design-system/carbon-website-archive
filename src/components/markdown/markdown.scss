@@ -169,12 +169,6 @@
   font-weight: 400;
   padding-left: 0;
   list-style-type: none;
-
-  &:before {
-    content: '\2013';
-    position: absolute;
-    left: -1.4rem;
-  }
 }
 
 .page-ul > li span,
@@ -194,6 +188,9 @@
 
 .page-ul .page-ul {
   margin-top: -1.25rem;
+}
+
+.page-ol .page-ul {
   margin-bottom: 0;
 }
 
@@ -251,10 +248,6 @@
     display: flex;
     align-items: center;
 
-    &:before {
-      display: none;
-    }
-
     a {
       @include type-style('heading-03');
       position: relative;
@@ -277,7 +270,7 @@
           sans-serif;
         color: $ibm-colors__gray-90;
         transition: color $transition--base;
-        padding-right: rem(16px);
+        padding-right: rem(8px);
         cursor: pointer;
       }
     }
@@ -286,6 +279,12 @@
 
 .anchor-links--small .page-ul {
   margin-top: rem(56px);
+}
+
+.anchor-links--column .page-ul {
+  @include breakpoint('md') {
+    column-count: 2;
+  }
 }
 
 .anchor-links--small a,
