@@ -18,6 +18,12 @@ Users can choose a numerical value by:
 - ↑ ↓ ← → changes the value by one step size increment. (_Example: Pressing `→` changes the inputted value from 59 to 60, increasing the value by 1 unit._)
 - `Shift` + ↑ ↓ ← → changes the value by 10 step size increments. (_Example: Typing `Shift + →` changes the value from 60 to 70, increasing the inputted value by 10 units._)
 
+<image-component fixed="large" caption="Example of a Slider interaction">
+
+![slider interaction](images/slider-usage-animation-1.gif)
+
+</image-component>
+
 ## Best practices
 
 - The slider label should indicate what value the slider is changing.
