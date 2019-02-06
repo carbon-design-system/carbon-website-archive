@@ -3,23 +3,51 @@ title: Developers
 tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
 ---
 
-The **Carbon Components Vanilla Library** provides front-end developers & engineers a collection of reusable HTML and SCSS partials to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.
+
+<anchor-links>
+<ul>
+    <li><a href="#carbon-vanilla-library">Carbon Vanilla Library</a></li>
+    <li><a href="#install">Install</a></li>
+    <li><a href="#getting-started">Getting started</a></li>
+     <li><a href="#troubleshooting">Troubleshooting</a></li>
+</ul>
+</anchor-links>
+
+## Carbon Vanilla Library
+
+The library provides front-end developers & engineers a collection of reusable HTML and SCSS partials to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.
 
 ## Install
 
-Using npm:
+####Using npm:
+
+<br>
 
 ```bash
 $ npm install --save carbon-components
 ```
 
-If you prefer [Yarn](https://yarnpkg.com/en/), use the following command instead:
+####If you prefer [Yarn](https://yarnpkg.com/en/):
+use the following command instead:
 
 ```bash
 $ yarn add carbon-components
 ```
 
 ## Getting started
+
+
+<anchor-links small="true">
+<ul>
+    <li><a href="#what’s-included">What's included</a></li>
+    <li><a href="#cdn">CDN</a></li>
+    <li><a href="#codepen">CodePen</a></li>
+    <li><a href="#scss">SCSS</a></li>
+    <li><a href="#javascript">Javascript</a></li>
+    <li><a href="#polyfills-for-older-browsers">Polyfills for older browsers</a></li>
+    
+</ul>
+</anchor-links>
 
 ### What's included
 
@@ -45,14 +73,14 @@ carbon-components/
 
 ### CDN
 
-Use unpkg for easy access to our built static files. This is great for prototyping and trying `carbon-components` without installing anything.
+Use unpkg for easy access to our built static files. This is great for prototyping and trying `carbon-components` without installing anything. See all files from `carbon-components` available on [unpkg CDN](https://unpkg.com/carbon-components/).
 
-|     | URL                                                                  |
+| Scripts    | URL                                                                  |
 | --- | -------------------------------------------------------------------- |
 | CSS | https://unpkg.com/carbon-components/css/carbon-components.min.css    |
 | ES5 | https://unpkg.com/carbon-components/scripts/carbon-components.min.js |
 
-See all files from `carbon-components` available on [unpkg CDN](https://unpkg.com/carbon-components/).
+
 
 ### CodePen
 
@@ -117,13 +145,13 @@ You can override these default settings by redeclaring the variables.
 
 #### Importing SCSS files
 
-To add a component style to your build, simply import the component directly.
+To add a component style to your build, simply import the component directly. Importing a component this way will bring in any dependencies that component has as well. The import system removes duplicate dependencies, so shared dependencies between components will not create extra CSS.
 
 ```js
 @import 'node_modules/carbon-components/scss/components/card/card';
 ```
 
-Importing a component this way will bring in any dependencies that component has as well. The import system removes duplicate dependencies, so shared dependencies between components will not create extra CSS.
+
 
 #### Namespacing
 
@@ -133,14 +161,11 @@ Carbon Components are built to be included individually and not clobber global s
 
 Carbon Component has component JavaScript classes, each of which correspond to a component found in [our components page](../../components/overview). The first steps to work with component JavaScript classes are the following:
 
-1.  [Getting component class reference](#1-getting-component-javascript-class-reference)
-2.  [Instantiating component class on DOM nodes](#2-instantiating-component-class-on-dom-nodes)
+#### 1. Getting component JavaScript class reference 
 
-### 1. Getting component JavaScript class reference
+<br>
 
-#### Using a module bundler: recommended
-
-We recommend using ECMAScript module along with your module bundler toolchain to do so. Using a module bundler will bring in only the component code your application needs, creating an optimized build for production. Carbon Components ships with a ECMAScript module build as well as UMD build for each component, for use with webpack or Rollup.
+**Using a module bundler:** We recommend using ECMAScript module along with your module bundler toolchain to do so. Using a module bundler will bring in only the component code your application needs, creating an optimized build for production. Carbon Components ships with a ECMAScript module build as well as UMD build for each component, for use with webpack or Rollup.
 
 After you've installed the components through `npm`, you can grab a component JavaScript class reference by something like this:
 
@@ -148,9 +173,8 @@ After you've installed the components through `npm`, you can grab a component Ja
 import { Modal } from 'carbon-components';
 ```
 
-#### Using pre-built bundle
 
-Users can also opt to use the pre-built `carbon-components.js` file directly, like below. We recommend that most users do _not_ use this file, as it includes components your application may or may not actually be using.
+**Using pre-built bundle:** Users can also opt to use the pre-built `carbon-components.js` file directly, like below. We recommend that most users do _not_ use this file, as it includes components your application may or may not actually be using.
 
 ```html
 <html>
@@ -167,11 +191,12 @@ Once you load `carbon-components.js` via `<script>` tag, you can grab a componen
 var Modal = CarbonComponents.Modal;
 ```
 
-**Note**: By default, pre-built bundle automatically instantiates all components on the page when `DOMContentLoaded` event on the page fires. In case you don't want that behavior, you can set `CarbonComponents.settings.disableAutoInit = true` right after `carbon-components.js` is loaded.
+_Note: By default, pre-built bundle automatically instantiates all components on the page when_ `DOMContentLoaded` _event on the page fires. In case you don't want that behavior, you can set_ `CarbonComponents.settings.disableAutoInit = true` _right after_ `carbon-components.js` _is loaded._
 
-**Caveat**: Don't use pre-built `carbon-components.js` if you are importing components via ECMAScript module syntax. Doing so will cause Carbon code loaded twice, often competing each other.
+_Caveat: Don't use pre-built_ `carbon-components.js` _if you are importing components via ECMAScript module syntax. Doing so will cause Carbon code loaded twice, often competing each other._
 
-### 2. Instantiating component class on DOM nodes
+#### 2. Instantiating component class on DOM nodes
+
 
 Once you have a [component JavaScript class reference](#1-getting-component-javascript-class-reference), you can instantiate it on a DOM node with the `.create()` API.
 
@@ -190,7 +215,7 @@ const modalElement = document.getElementById('modal-nofooter');
 const modalInstance = Modal.create(modalElement);
 ```
 
-**Note**: The DOM element to instantiate components on typically has a `data-componentname` attribute, e.g. `data-modal` for modal.
+_Note: The DOM element to instantiate components on typically has a `data-componentname` attribute, e.g. `data-modal` for modal._
 
 Instantiating a component basically does two things:
 
@@ -201,9 +226,9 @@ Instantiating a component basically does two things:
 
 While `.create()` API gives you the full control of component instantiation, there is a higher-level API for instantiating components, which is, `.init(rootElement)`. It instantiates all components with `data-componentname` attribute (e.g. `data-modal` for modal) inside the given `rootElement`. If `rootElement` is omitted, `document` is used.
 
-**Note**: `.init()` API does _not_ take care of DOM elements that hasn't been available at the time it's called.
+_Note:_ `.init()` _API does not take care of DOM elements that hasn't been available at the time it's called.
 If the JavaScript framework you are using creates DOM elements dynamically,
-follow the instructions in the next section instead of using `.init()`.
+follow the instructions in the next section instead of using_ `.init()`.
 
 #### Wrapping a component with JavaScript framework of your choice
 
