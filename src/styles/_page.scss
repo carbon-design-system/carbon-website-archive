@@ -161,3 +161,60 @@ button,
     color: #000;
   }
 }
+
+//---------------------------------------
+// Annoucement Banner
+//---------------------------------------
+.website-alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: black;
+  color: $inverse-01;
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+
+  @include breakpoint('bp--sm--major') {
+    height: 3rem;
+  }
+}
+
+.website-alert__text {
+  font-size: rem(14px);
+  padding: rem(14px) 0 0 $spacing-md;
+  color: $inverse-01;
+}
+
+.website-alert .bx--btn--secondary {
+  border-color: $inverse-01;
+  color: $inverse-01;
+  margin: $spacing-md $spacing-xs;
+
+  &:hover {
+    background: $inverse-01;
+    color: black;
+  }
+
+  @include breakpoint('bp--sm--major') {
+    margin: $spacing-xs;
+  }
+}
+
+.website-alert + button + div + a + .side-nav + div {
+  margin-top: 4rem;
+
+  @include breakpoint('bp--sm--major') {
+    margin-top: 3rem;
+  }
+}
+
+.website-alert + .side-nav-toggle-btn {
+  top: 4rem;
+
+  @include breakpoint('bp--sm--major') {
+    top: 3rem;
+  }
+}
