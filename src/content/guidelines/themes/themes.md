@@ -13,6 +13,13 @@ title: Themes
     >
     <img src="images/sandbox-icon.png" alt="Theming sandbox" />
 </clickable-tile>
+<clickable-tile
+    title="Carbon themes"
+    href="https://github.com/carbon-design-system/carbon-themes"
+    type="resource"
+    >
+    <img src="images/github-icon.png" alt="Theming repo" />
+</clickable-tile>
 </grid-wrapper>
 
 
@@ -33,30 +40,26 @@ Themes are used to modify existing components to fit a specific visual style. By
 
 | Term      | Definition                                                                                                  |
 | --------- | ----------------------------------------------------------------------------------------------------------- |
-| **Theme** | The set of unique values assigned to the system's tokens                                                            |
-| **Token** | The code identifier for a unique role or set of roles. Tokens are universal and never change across themes. |
-| **Role**  | The systematic usage/s of a token. Roles cannot be changed between themes.                                  |
-| **Value** | The actual style (i.e. hex code) assigned to a token                                                         |
+| _Theme_ | The set of unique values assigned to the system's tokens                                                            |
+| _Token_ | The code identifier for a unique role or set of roles. Tokens are universal and never change across themes. |
+| _Role_  | The systematic usage/s of a token. Roles cannot be changed between themes.                                  |
+| _Value_ | The actual style (i.e. hex code) assigned to a token                                                         |
 
 ### Default theme
 
-Carbon's default theme (White theme) is based on the IBM Design Language. When `carbon-components` is downloaded and installed, the components are preset to use the default theme.
+Carbon's default theme (White theme) is based on the IBM Design Language. When `carbon-components` is downloaded and installed, the components are preset to use the default theme. [See the collection of themes for use with Carbon components here.](https://github.com/carbon-design-system/carbon-themes) 
 
-<grid-wrapper col_lg="8" flex="true" bleed="true">
-<clickable-tile
-    title="Carbon themes"
-    href="https://github.com/carbon-design-system/carbon-themes"
-    type="resource"
-    >
-    <img src="images/github-icon.png" alt="Theming repo" />
-</clickable-tile>
-</grid-wrapper>
+
 
 ## Customizing a theme
 
 The default theme acts as a starting point; from there designers and developers can define how their own components and styles deviate from the default. Altering one, some, or all of the default token values will result in a new theme. The developer then packages those new values into a new theme scss stylesheet which will replace the values of the default theme:
 
-1. Create a theme mixin that effectively mimics this structure, but changes up hex values as needed:
+####1. Create a theme mixin that effectively mimics this structure, but changes up hex values as needed:
+
+<br>
+
+
 
         @mixin theme-white {
           $interactive-01: #0062ff !default !global;
@@ -109,9 +112,11 @@ The default theme acts as a starting point; from there designers and developers 
           $hover-field: #e5e5e5 !default !global;
         }
 
-2. Name the mixin (i.e., instead of `theme-white`, choose a unique name)
+####2. Name the mixin (i.e., instead of `theme-white`, choose a unique name)
 
-3. `@include UNIQUE-THEME-MIXIN();` in your scss, before importing component scss, etc. 
+####3. Include this in your scss, before importing component scss, etc.:
+
+`@include UNIQUE-THEME-MIXIN();` 
 
 Alternatively, for relatively minor changes to an existing theme, a developer can make changes on a per-token basis. For example, after importing an existing Carbon theme, she could just set something like `$interactive-01: hotpink;`.
 
