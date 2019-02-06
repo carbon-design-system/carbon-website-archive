@@ -4,9 +4,22 @@ tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
 ---
 
 
+## Resources
+
+<grid-wrapper col_lg="8" flex="true" bleed="true">
+<clickable-tile
+    title="Try React components with CodeSandbox."
+    href="https://codesandbox.io/s/x2mjypo6pp"
+    type="resource"
+     >
+    <img src="images/codesandbox.png" alt="CodeSandbox"/>
+</clickable-tile>
+</grid-wrapper>
+
+
 <anchor-links>
 <ul>
-    <li><a href="#carbon-react-library">Carbon React Library</a></li>
+    <li><a href="#carbon-react-library">Carbon React library</a></li>
     <li><a href="#install">Install</a></li>
     <li><a href="#getting-started">Getting started</a></li>
     <li><a href="#development">Development</a></li>
@@ -15,14 +28,15 @@ tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
 </anchor-links>
 
 
-## Carbon React Library
+## Carbon React library
 
 The library provides front-end developers & engineers a collection of reusable React components to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.
 
 ## Install
 
-**Using npm:**
+####Using npm:
 
+<br>
 
 ```bash
 $ npm install --save carbon-components-react carbon-components carbon-icons
@@ -43,11 +57,6 @@ $ yarn add carbon-components-react carbon-components carbon-icons
 
 3.  For older browsers (e.g. IE11), polyfills listed in the [carbon-components-react/.storybook/polyfills.js file](https://github.com/carbon-design-system/carbon-components-react/blob/master/.storybook/polyfills.js) are required.
 
-If you just want to try out `carbon-components-react`, you can also use [CodeSandbox](https://codesandbox.io).
-
-<a target="_blank" href="https://codesandbox.io/s/x2mjypo6pp">
-  <img style="width: 200px" alt="Edit on CodeSandbox" src="https://codesandbox.io/static/img/play-codesandbox.svg" />
-</a>
 
 ## Development
 
