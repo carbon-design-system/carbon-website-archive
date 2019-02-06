@@ -57,6 +57,7 @@
   font-size: 1.25rem;
   font-weight: 300;
   width: 100%;
+  padding: 1.5rem;
 
   .gatsby-resp-image-link {
     width: 100%;
@@ -115,6 +116,7 @@ p.example__text {
 
 .example__caption {
   padding: 8px 0 0 0;
+  max-width: rem(352px);
 }
 
 p.example__title {
@@ -134,6 +136,11 @@ p.example__description {
 .example.example--full-width {
   width: 100%;
 }
+.example.example--full-width:first-child {
+  @include breakpoint('sm') {
+    margin-right: 0;
+  }
+}
 .example.example--full-width .example-card {
   padding-top: 0;
 }
@@ -141,6 +148,22 @@ p.example__description {
   position: relative;
 }
 
+.example--full-width .example__caption {
+  @include breakpoint('sm') {
+    width: 100%;
+  }
+
+  @include breakpoint('md') {
+    width: calc(50% - 16px);
+  }
+}
+
 .example span.gatsby-resp-image-wrapper {
   max-width: 100% !important; // marked !important to overcome inline styles inserted by gatsby.
+}
+
+// Example video content
+.example__content .gatsby-resp-iframe-wrapper {
+  height: 100% !important;
+  position: static !important;
 }
