@@ -144,14 +144,14 @@ class Layout extends React.Component {
 
             <div className="website-alert">
               <p className="website-alert__text">
-                Carbon X is here! Check out the new version 10.0.0-beta site and
-                carbon-components.
+                Carbon X has arrived! Check out the v10 beta site and all-new
+                carbon-components library.
               </p>
               <a href="https://next.carbondesignsystem.com">
                 <button
                   class="bx--btn bx--btn--secondary bx--btn--sm"
                   type="button">
-                  View V10-beta
+                  Go to V10-beta
                 </button>
               </a>
             </div>
