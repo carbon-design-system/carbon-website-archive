@@ -18,6 +18,7 @@ export default class HTML extends React.Component {
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
+          <noscript>This website requires JavaScript.</noscript>
           <div
             key={`body`}
             id="___gatsby"
