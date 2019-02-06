@@ -177,12 +177,12 @@ class Layout extends React.Component {
             </Helmet>
             <div className="website-alert">
               <p className="website-alert__text">
-                Carbon V10 is in beta; for production ready components use
-                Carbon V9.
+                Carbon v10 is currently in beta; for production-ready
+                components, use Carbon v9
               </p>
               <a href="https://www.carbondesignsystem.com">
                 <button class="bx--btn bx--btn--primary" type="button">
-                  View V9 site
+                  Go to v9
                 </button>
               </a>
             </div>
