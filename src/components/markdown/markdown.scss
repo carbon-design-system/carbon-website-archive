@@ -261,6 +261,10 @@
     display: flex;
     align-items: center;
 
+    &:before {
+      display: none;
+    }
+
     a {
       @include type-style('heading-03');
       position: relative;
