@@ -184,3 +184,75 @@ img[src*='gif'] {
 .page-content iframe {
   margin-bottom: rem(24px);
 }
+
+// Website alert banner
+.website-alert {
+  height: 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 9999;
+  background: $ui-02;
+
+  @include breakpoint('md') {
+    height: 3rem;
+  }
+}
+
+.website-alert .bx--btn {
+  width: 8rem;
+
+  @include breakpoint('md') {
+    width: auto;
+  }
+}
+
+.website-alert__text {
+  @include type-style('body-short-01');
+  padding: $spacing-2xs $spacing-md 0 $spacing-md;
+  color: $text-01;
+
+  @include breakpoint('md') {
+    padding-top: rem(14px);
+  }
+}
+
+.website-alert + .bx--header {
+  top: 4rem;
+
+  @include breakpoint('md') {
+    top: 3rem;
+  }
+}
+
+.website-alert + .bx--header ~ .bx--side-nav {
+  top: 7rem;
+
+  @include breakpoint('md') {
+    top: 6rem;
+  }
+}
+
+.website-alert + .bx--header ~ .bx--side-nav + div,
+.website-alert + .bx--header ~ .bx--side-nav + .container {
+  margin-top: 7rem;
+
+  @include breakpoint('md') {
+    margin-top: 6rem;
+  }
+}
+
+.website-alert
+  + .bx--header
+  ~ .bx--side-nav
+  + div
+  .color-token-table__theme-switcher--sticky {
+  top: 128px;
+
+  @include breakpoint('md') {
+    top: 112px;
+  }
+}
