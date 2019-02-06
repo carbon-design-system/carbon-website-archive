@@ -1,11 +1,16 @@
 @import '../prefix';
 
-.#{$prefix}--side-nav--website--with-header-nav {
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website--with-header-nav {
   width: 0;
+  border-right-width: 0px;
 
   @include breakpoint('lg') {
     display: none;
   }
+}
+
+.#{$prefix}--side-nav--website--with-header-nav.#{$prefix}--side-nav.#{$prefix}--side-nav--open {
+  border-right-width: 1px;
 }
 
 .#{$prefix}--side-nav--website {
