@@ -4,16 +4,16 @@ title: Migrating to Carbon X
 
 <anchor-links>
 <ul>
-  <li><a href="#carbon-x-is-near">Intro</a></li>
-  <li><a href="#rollout-plan">Rollout plan</a></li>
-  <li><a href="#design-kit">Design kit</a></li>
-  <li><a href="#component-code">Component code</a></li>
-  <li><a href="#tokens">Tokens</a></li>
-  <li><a href="#icons">Icons</a></li>
-  <li><a href="#themes">Themes</a></li>
-  <li><a href="#ui-shell">UI shell</a></li>
-  <li><a href="#grid-and-layout">Grid and layout</a></li>
-  <li><a href="#migration-tooling">Migration tooling</a></li>
+  <li><a data-scroll href="#carbon-x-is-near">Intro</a></li>
+  <li><a data-scroll href="#rollout-plan">Rollout plan</a></li>
+  <li><a data-scroll href="#design-kit">Design kit</a></li>
+  <li><a data-scroll href="#component-code">Component code</a></li>
+  <li><a data-scroll href="#tokens">Tokens</a></li>
+  <li><a data-scroll href="#icons">Icons</a></li>
+  <li><a data-scroll href="#themes">Themes</a></li>
+  <li><a data-scroll href="#ui-shell">UI shell</a></li>
+  <li><a data-scroll href="#grid-and-layout">Grid and layout</a></li>
+  <li><a data-scroll href="#migration-tooling">Migration tooling</a></li>
 </ul>
 </anchor-links>
 

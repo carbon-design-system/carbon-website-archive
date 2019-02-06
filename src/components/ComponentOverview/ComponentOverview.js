@@ -8,7 +8,7 @@ class ComponentOverview extends React.Component {
     let componentUrl;
     if (component === 'Multiselect') {
       componentUrl = '/components/dropdown';
-    } else if (component === 'UI Shell') {
+    } else if (component === 'UI shell') {
       componentUrl = '/experimental/ui-shell';
     } else {
       componentUrl = `/components/${component.toLowerCase().replace(' ', '-')}`;

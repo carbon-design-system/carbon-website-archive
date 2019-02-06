@@ -15,9 +15,11 @@ tabs: ['Code', 'Usage', 'Style']
 | `.bx--overflow-menu-options__option--danger:hover` | background-color | $hover-danger |
 | `.bx--overflow-menu-options__option--danger`       | border-top       | $ui-04        |
 
+<image-component fixed="default" caption="Text and warning hover examples for Overflow Menu">
+
 ![Overflow menu text hover example](images/overflow-menu-style-1.png)
 
-_Text and warning hover examples for Overflow Menu_
+</image-component>
 
 ## Typography
 
@@ -45,4 +47,8 @@ The height of an Overflow Menu is determined by the amount of content in the men
 | `.bx--overflow-menu-options`                 | width                       | 180 / 11.25 | -             |
 | `.bx--overflow-menu-options__option--danger` | border-top                  | 1px         | -             |
 
+<image-component fixed="default">
+
 ![Structure and spacing measurements for an overflow menu](images/overflow-menu-style-3.png)
+
+</image-component>

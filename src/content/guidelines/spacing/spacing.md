@@ -44,21 +44,21 @@ Use the spacing scale when building individual components. It includes small inc
 
 | Token             | rem   | px  | Example                                       |
 | ----------------- | ----- | --- | --------------------------------------------- |
-| `$spacing-01`  | 0.125 | 2   | ![spacing-3xs example](images/spacing-3.svg)  |
-| `$spacing-02` | 0.25  | 4   | ![spacing-2xs example](images/spacing-4.svg)  |
-| `$spacing-03` | 0.5   | 8   | ![spacing-xs example](images/spacing-5.svg)   |
-| `$spacing-04`  | 0.75  | 12  | ![spacing-sm example](images/spacing-6.svg)   |
-| `$spacing-05`  | 1     | 16  | ![spacing-md example](images/spacing-7.svg)   |
-| `$spacing-06`  | 1.5   | 24  | ![spacing-lg example](images/spacing-8.svg)   |
-| `$spacing-07`  | 2     | 32  | ![spacing-xl example](images/spacing-9.svg)   |
-| `$spacing-08` | 2.5   | 40  | ![spacing-2xl example](images/spacing-10.svg) |
-| `$spacing-09` | 3     | 48  | ![spacing-3xl example](images/spacing-11.svg) |
+| **\$spacing-3xs** | 0.125 | 2   | ![spacing-3xs example](images/spacing-3.svg)  |
+| **\$spacing-2xs** | 0.25  | 4   | ![spacing-2xs example](images/spacing-4.svg)  |
+| **\$spacing-xs**  | 0.5   | 8   | ![spacing-xs example](images/spacing-5.svg)   |
+| **\$spacing-sm**  | 0.75  | 12  | ![spacing-sm example](images/spacing-6.svg)   |
+| **\$spacing-md**  | 1     | 16  | ![spacing-md example](images/spacing-7.svg)   |
+| **\$spacing-lg**  | 1.5   | 24  | ![spacing-lg example](images/spacing-8.svg)   |
+| **\$spacing-xl**  | 2     | 32  | ![spacing-xl example](images/spacing-9.svg)   |
+| **\$spacing-2xl** | 2.5   | 40  | ![spacing-2xl example](images/spacing-10.svg) |
+| **\$spacing-3xl** | 3     | 48  | ![spacing-3xl example](images/spacing-11.svg) |
 
-<br><br>
+<image-component cols="6" caption="Example of spacing tokens applied">
 
-![Example of Spacing tokens applied](images/spacing-1_revised.png)
+![Example of spacing tokens applied](images/spacing-1.png)
 
-_Example of Spacing tokens applied_
+</image-component>
 
 ### Other spacing options
 
@@ -85,12 +85,14 @@ The layout scale is used for arranging components and other UI parts into a full
 | `$layout-07` | 10  | 160 | ![layout-2xl example](images/spacing-18.svg) |
 
 
-<br><br>
 
 
-![Example of Layout tokens applied](images/layout_revised.png)
+<image-component cols="6" border="true" caption="Example of layout tokens applied">
 
-_Example of Layout tokens applied_
+![Example of layout tokens applied](images/spacing-2.png)
+
+</image-component>
+
 
 ### Using layout scale with the grid
 
