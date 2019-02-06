@@ -11,11 +11,12 @@ tabs: ['Code', 'Usage', 'Style']
 - A maximum of one paragraph of text is recommended per row.
 - Nesting items is not recommended, as structured lists are used to present simple data. If you have additional content that needs to be shown, consider using a [data table](/components/data-table), which supports nesting items.
 
-<image-component  cols="12” caption=“Structured List to present definitions.“>
+<image-component cols="12"  caption="By default, checkboxes are unchecked.">
 
-![Structured List to present definitions.](images/structured-list-usage-2.png)
+![The default state for checkboxes is unchecked.](images/structured-list-usage-2.png)
 
 </image-component>
+
 
 ## Interaction
 
