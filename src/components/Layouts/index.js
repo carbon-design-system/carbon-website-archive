@@ -14,7 +14,12 @@ import {
   HeaderGlobalBar,
   HeaderGlobalAction,
 } from 'carbon-components-react/lib/components/UIShell';
-import { ArrowRight20, AppSwitcher20, Close20, Information20 } from '@carbon/icons-react';
+import {
+  ArrowRight20,
+  AppSwitcher20,
+  Close20,
+  Information20,
+} from '@carbon/icons-react';
 import { WebsiteFooter, WebsiteSwitcher } from '@carbon/addons-website';
 
 import timestamp from 'raw-loader!../../../build-timestamp';
@@ -178,10 +183,13 @@ class Layout extends React.Component {
             <div className="website-alert">
               <Information20 className="website-alert__icon" />
               <p className="website-alert__text">
-                <span>Carbon v10 is currently in beta</span><span>;</span> <span>for production-ready
-                components, use Carbon v9</span>
+                <span>Carbon v10 is currently in beta</span>
+                <span>;</span>{' '}
+                <span>for production-ready components, use Carbon v9</span>
               </p>
-              <a className="website-alert__button" href=" https://www.carbondesignsystem.com">
+              <a
+                className="website-alert__button"
+                href=" https://www.carbondesignsystem.com">
                 <button class="bx--btn bx--btn--secondary" type="button">
                   <span>Go to v9</span>
                   <ArrowRight20 />
@@ -208,10 +216,10 @@ class Layout extends React.Component {
                   <span>IBM Product</span>&nbsp;Design&nbsp;<span>System</span>
                 </HeaderName>
               ) : (
-                  <HeaderName prefix="" to="/" element={Link}>
-                    <span>Carbon</span>&nbsp;Design&nbsp;<span>System</span>
-                  </HeaderName>
-                )}
+                <HeaderName prefix="" to="/" element={Link}>
+                  <span>Carbon</span>&nbsp;Design&nbsp;<span>System</span>
+                </HeaderName>
+              )}
 
               <HeaderGlobalBar>
                 {/* {isInternal ? null : <GlobalSearch />} */}
@@ -235,15 +243,31 @@ class Layout extends React.Component {
               isSwitcherFinal={this.state.isSwitcherFinal}
               isSwitcherOpen={this.state.isSwitcherOpen}
               links={[
+                { href: 'https://www.ibm.com/design/', linkText: 'IBM Design' },
                 {
-                  href: 'https://www.ibm.com/design/language/',
-                  linkText: 'IBM Design Language',
+                  href: 'https://next.carbondesignsystem.com',
+                  linkText: 'IBM Product Design',
                 },
                 {
                   href: 'https://www.ibm.com/standards/web/',
                   linkText: 'IBM Digital Design',
                 },
-                { href: 'https://www.ibm.com/design/', linkText: 'IBM Design' },
+                {
+                  href: 'https://www.ibm.com/design/language/',
+                  linkText: 'IBM Design Language',
+                },
+                {
+                  href: 'https://www.ibm.com/design/research/',
+                  linkText: 'IBM Design Research',
+                },
+                {
+                  href: 'https://www.ibm.com/design/thinking/',
+                  linkText: 'Enterprise Design Thinking',
+                },
+                {
+                  href: 'https://www.ibm.com/services/ibmix/',
+                  linkText: 'IBM iX',
+                },
               ]}
             />
 
