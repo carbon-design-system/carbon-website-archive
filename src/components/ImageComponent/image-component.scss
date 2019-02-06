@@ -49,10 +49,6 @@
     width: 736px !important;
     height: auto !important;
     position: relative !important;
-
-    // @include breakpoint('1250px') {
-    //   width: 736px !important;
-    // }
   }
 }
 
@@ -73,15 +69,26 @@
     align-items: center;
     justify-content: center;
     margin-right: 0 !important;
-    width: 70% !important;
+    width: 100% !important;
     max-width: 100% !important;
+
+    @include breakpoint('1230px') {
+      width: 70% !important;
+    }
   }
 
   img.gatsby-resp-image-image {
     max-width: 1120px;
-    width: 1120px !important;
     height: auto !important;
     position: relative !important;
+
+    @include breakpoint('1056px') {
+      width: 900px !important;
+    }
+
+    @include breakpoint('1230px') {
+      width: 1120px !important;
+    }
   }
 }
 
