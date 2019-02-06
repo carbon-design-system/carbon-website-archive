@@ -202,6 +202,14 @@ img[src*='gif'] {
   }
 }
 
+.website-alert .bx--btn {
+  width: 8rem;
+
+  @include breakpoint('md') {
+    width: auto;
+  }
+}
+
 .website-alert__text {
   @include type-style('body-short-01');
   padding: rem(14px) $spacing-md 0 $spacing-md;
