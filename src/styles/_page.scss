@@ -187,7 +187,7 @@ img[src*='gif'] {
 
 // Website alert banner
 .website-alert {
-  height: 3rem;
+  height: 4rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -196,25 +196,41 @@ img[src*='gif'] {
   justify-content: space-between;
   z-index: 9999;
   background: $ui-02;
+
+  @include breakpoint('md') {
+    height: 3rem;
+  }
 }
 
 .website-alert__text {
   @include type-style('body-short-01');
-  padding: rem(14px) 0 0 $spacing-md;
+  padding: rem(14px) $spacing-md 0 $spacing-md;
   color: $text-01;
 }
 
 .website-alert + .bx--header {
-  top: 3rem;
+  top: 4rem;
+
+  @include breakpoint('md') {
+    top: 3rem;
+  }
 }
 
 .website-alert + .bx--header ~ .bx--side-nav {
-  top: 6rem;
+  top: 7rem;
+
+  @include breakpoint('md') {
+    top: 6rem;
+  }
 }
 
 .website-alert + .bx--header ~ .bx--side-nav + div,
 .website-alert + .bx--header ~ .bx--side-nav + .container {
-  margin-top: 6rem;
+  margin-top: 7rem;
+
+  @include breakpoint('md') {
+    margin-top: 6rem;
+  }
 }
 
 .website-alert
@@ -222,5 +238,9 @@ img[src*='gif'] {
   ~ .bx--side-nav
   + div
   .color-token-table__theme-switcher--sticky {
-  top: 112px;
+  top: 128px;
+
+  @include breakpoint('md') {
+    top: 112px;
+  }
 }
