@@ -1,8 +1,18 @@
 ---
+label: Spacing is an important — and often overlooked — part of visual design. Carbon takes a lot of the guesswork out of spacing to help designers deliver clear, functional layouts.
 title: Spacing
 ---
 
-Spacing is an important—and often overlooked—part of visual design. Carbon takes a lot of the guesswork out of spacing to help designers deliver clear, functional layouts.
+<anchor-links>
+<ul>
+    <li><a href="#carbon's-two-scales">Carbon's two scales</a></li>
+    <li><a href="#spacing-scale">Spacing scale</a></li>
+    <li><a href="#layout-scale">Layout scale</a></li>
+    <li><a href="#designing-with-space">Designing with space</a></li>
+    <li><a href="#faq">FAQ</a></li>
+</ul>
+</anchor-links>
+
 
 ## Carbon's two scales
 
@@ -10,12 +20,12 @@ Carbon has two spacing scales; one for general spacing within components and the
 
 | Scale             | Purpose                                                                                                                                                                                                                             |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Spacing scale** | Used for smaller, more refined spacing needs, specifically within the context of a component (i.e. the space between a label and a text input).                                                                                |
-| **Layout scale**  | Typically used for positioning components on a page (i.e., the space between a text field and a selector). |
+| Spacing scale | Used for smaller, more refined spacing needs, specifically within the context of a component (i.e. the space between a label and a text input).                                                                                |
+| Layout scale | Typically used for positioning components on a page (i.e., the space between a text field and a selector). |
 
 ### Applying spacing
 
-Both the spacing and layout scales can be applied to `margin` or `padding` properties. Likewise, these spacing tokens can be applied to both vertical and horizontal edges. The token takes the place of the values normally assigned to `margin` and `padding`. The following are all approved ways to syntactically apply Carbon spacing tokens:
+Both the Spacing and the Layout scales can be applied to `margin` or `padding` properties. Likewise, these spacing tokens can be applied to both vertical and horizontal edges. The token takes the place of the values normally assigned to `margin` and `padding`. The following are all approved ways to syntactically apply Carbon spacing tokens:
 
 ```css
 margin: $spacing-xs;
@@ -58,7 +68,7 @@ There are a few other non-token methods that can be used for spacing elements. E
 | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `center` | Used to fluidly center an element between two edges.                                                                                                              |
 | `auto`   | Used on one side of an element to allow undefined space to automatically grow and shrink according to screen size. Typically used for asymmetrical fluid spacing. |
-| Gutter   | Used to space items between the grid's columns                                                                                                                 |
+| `gutter`   | Used to space items between the grid's 12 columns                                                                                                                 |
 
 ## Layout scale
 
@@ -66,13 +76,13 @@ The layout scale is used for arranging components and other UI parts into a full
 
 | Token            | rem | px  | Example                                      |
 | ---------------- | --- | --- | -------------------------------------------- |
-| **\$layout-2xs** | 1   | 16  | ![layout-2xs example](images/spacing-12.svg) |
-| **\$layout-xs**  | 1.5 | 24  | ![layout-xs example](images/spacing-13.svg)  |
-| **\$layout-sm**  | 2   | 32  | ![layout-sm example](images/spacing-14.svg)  |
-| **\$layout-md**  | 3   | 48  | ![layout-md example](images/spacing-15.svg)  |
-| **\$layout-lg**  | 4   | 64  | ![layout-lg example](images/spacing-16.svg)  |
-| **\$layout-xl**  | 6   | 96  | ![layout-xl example](images/spacing-17.svg)  |
-| **\$layout-2xl** | 10  | 160 | ![layout-2xl example](images/spacing-18.svg) |
+| `$layout-01` | 1   | 16  | ![layout-2xs example](images/spacing-12.svg) |
+| `$layout-02`  | 1.5 | 24  | ![layout-xs example](images/spacing-13.svg)  |
+| `$layout-03`  | 2   | 32  | ![layout-sm example](images/spacing-14.svg)  |
+| `$layout-04`  | 3   | 48  | ![layout-md example](images/spacing-15.svg)  |
+| `$layout-05`  | 4   | 64  | ![layout-lg example](images/spacing-16.svg)  |
+| `$layout-06` | 6   | 96  | ![layout-xl example](images/spacing-17.svg)  |
+| `$layout-07` | 10  | 160 | ![layout-2xl example](images/spacing-18.svg) |
 
 <image-component cols="6" border="true" caption="Example of layout tokens applied">
 
@@ -80,13 +90,14 @@ The layout scale is used for arranging components and other UI parts into a full
 
 </image-component>
 
+
 ### Using layout scale with the grid
 
-The Carbon grid is still an acceptable and encouraged way to horizontally space UI elements. The layout scale is most commonly used for vertical spacing, but it can also be applied for horizontal spacing when appropriate, especially in the case of fixed spacing.
+The Carbon grid is the encouraged way to horizontally space UI elements. The layout scale is most commonly used for vertical spacing, but it can also be applied for horizontal spacing when appropriate, especially in the case of fixed spacing.
 
 ## Designing with space
 
-Every part of a UI should be intentional, including the empty space between elements. The amount of space between items creates relationships and hierarchy.
+Every part of a UI should be intentional including the empty space between elements. The amount of space between items creates relationships and hierarchy.
 
 ### Creating relationships
 
@@ -104,22 +115,22 @@ Elements that are set close to each other can be easily overlooked. Users may se
 
 ### White space
 
-Empty space—also known as white space—is important in design. It can be used to break up sections on a page or to help create focus on certain element(s). White space helps with information processing; too much dense information can be disorienting or overwhelming for a user. Sections of a UI are allowed to be dense, but the whole page should not be crowded; there should be white space to let the user's eye rest. 
+Empty space — also known as white space — is important in design. It can be used to break up sections on a page or to help create focus on certain element(s). White space helps with information processing; too much dense information can be disorienting or overwhelming for a user. Sections of a UI are allowed to be dense, but the whole page should not be crowded; there should be white space to let the user’s eye rest.
 
 ## FAQ
 
-### Are spacing increments outside of the scale allowed?
+##### Are spacing increments outside of the scale allowed?
 
 There are always exceptions to the rule, but deviating from the spacing scales should be avoided whenever possible.
 
-### Can I still use the Carbon grid for horizontal spacing?
+##### Can I still use the Carbon grid for horizontal spacing?
 
-Yes. In fact, it's encouraged.
+Yes, in fact it's encouraged.
 
-### Can I still use percentages for spacing?
+##### Can I still use percentages for spacing?
 
-Percentages like 50% (1/2) or 33% (1/3) are still acceptable ways to divide a page. Percentages can all still be used to control max and min widths. However, using percentages for padding or margin inside of a component or element should be avoided (ex. `padding-right: 10%`). The exception to this is if you're applying it to fit the 5% grid margins.
+Percentages like 50% (1/2) or 33% (1/3) are still acceptable ways to divide a page. Percentages can all still be used to control max and min widths. However, using percentages for padding or margin inside of a component or element should be avoided (ex. `padding-right: 10%`). The exception to this is if you’re applying it to fit the 5% grid margins.
 
-### Are the spacing tokens responsive?
+##### Are the spacing tokens responsive?
 
-No, the tokens themselves do not change values based on the screen size. However, it is acceptable at page breakpoints to jump a step(s) on the spacing scale to fit spacing needs (i.e., at 1440 px `padding-right: $spacing-md` but at breakpoint 768 px `padding-right: $spacing-xs`).
+No, the tokens themselves do not change values based on the screen size. However, it is acceptable at page breakpoints to jump a step(s) on the spacing scale to fit spacing needs (i.e., at 1440 px `padding-right: $spacing-md` but at breakpoint 768px `padding-right: $spacing-xs`).
