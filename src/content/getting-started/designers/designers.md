@@ -24,6 +24,7 @@ title: Designers
 <anchor-links>
 <ul>
     <li><a href="#carbon-design-kit">Carbon Design Kit</a></li>
+    <li><a href="#how-to-get-it">How to get it</a></li>
     <li><a href="#get-the-kit-via-box">Get the kit via Box (IBMer only)</a></li>
     <li><a href="#download-the-kit-from-github">Download the kit from GitHub</a></li>
     <li><a href="#connect-with-us">Connect with us</a></li>
@@ -38,7 +39,7 @@ The Carbon Design Kit is a constantly evolving document that contains all of the
 
 Every six months the Carbon team releases a major update to the system, including a new design kit, along with new version of the components. Style refinement and bug fixes are released as continuous updates that happen throughout the year. We track all release updates in our [change log](https://github.com/carbon-design-system/carbon-design-kit/releases).
 
-### How to get it
+## How to get it
 
 Currently, there are three ways to obtain the kit. For timely updates, be sure to install the kit as Sketch Shared Library.
 
