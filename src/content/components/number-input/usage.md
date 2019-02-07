@@ -3,7 +3,12 @@ title: Number input
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-## General guidelines
+## General guidance
+
+_Number inputs_ are similar to text inputs, but contain controls used to increase or decrease an incremental value.
+
+
+## Format
 
 - Do not use number inputs when large value changes are expected. They work best for making small, incremental changes that only require a few clicks.
 - Enable the user to also choose to type a number in the field.

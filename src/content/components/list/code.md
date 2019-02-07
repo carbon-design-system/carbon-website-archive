@@ -3,7 +3,6 @@ title: List
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-**Lists** consist of related content grouped together and organized vertically.
 
 <component 
     name="Ordered List"
