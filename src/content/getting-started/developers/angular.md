@@ -3,7 +3,19 @@ title: Developers
 tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
 ---
 
-The **[Carbon Components Angular Library](http://angular.carbondesignsystem.com/)** provides front-end developers & engineers a collection of reusable Angular components to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.
+
+<anchor-links>
+<ul>
+    <li><a href="#carbon-angular-library">Carbon Angular Library</a></li>
+    <li><a href="#install">Install</a></li>
+    <li><a href="#development">Development</a></li>
+    
+</ul>
+</anchor-links>
+
+## Carbon Angular Library
+
+The [Library](http://angular.carbondesignsystem.com/) provides front-end developers & engineers a collection of reusable Angular components to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.
 
 ## Install
 
@@ -27,11 +39,19 @@ Thats it! Now start the server and start building.
 $ npm start
 ```
 
-**Note:** This isn't the only way to bootstrap a `carbon-components-angular` application, but the combination of `@angular/cli` and the `carbon-components` scss is our recommended setup.
+_Note: This isn't the only way to bootstrap a_ `carbon-components-angular` _application, but the combination of_ `@angular/cli` _and the_ `carbon-components` _scss is our recommended setup._
+
+<a target="_blank" href="https://codesandbox.io/s/0129r494ql">
+  <img style="width: 200px" alt="Edit on CodeSandbox" src="https://codesandbox.io/static/img/play-codesandbox.svg" />
+</a>
 
 ### Using our starter app
 
-<img style="width: 100%" alt="carbon-angular-starter screenshot" src="images/carbon-angular-starter.png" />
+<image-component cols="12" bg="none">
+
+![carbon-angular-starter screenshot](images/carbon-angular-starter.png)
+
+</image-component>
 
 We recommend using the [carbon-angular-starter](https://github.com/carbon-design-system/carbon-angular-starter) for bootstrapping applications with Carbon components. Within 5 minutes your app will be running with the following already configured:
 

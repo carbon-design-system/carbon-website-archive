@@ -67,6 +67,7 @@ The Header spans the full width of the viewport and is the topmost element in th
 
 </image-component>
 
+
 #### Header responsive behavior
 
 As a header scales down to fit smaller screen sizes, header links and menus should collapse into a left-nav hamburger menu. The left nav menu (previously L1 menu) is reserved for this scenario and should not be used as primary navigation with the header. If an additional navigation menu is needed, use an app switcher placed on the far right side of the header.

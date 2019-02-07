@@ -31,16 +31,28 @@ The footer area of a Modal typically contains a set of buttons. Refer to [Button
 
 Transactional Modals are used to validate user decisions or to gain secondary confirmation from the user. Typically, the Modal requests either a 'yes' or 'no' response.
 
+<image-component cols="8">
+
 ![transactional modal](images/modal-usage-1.png)
+
+</image-component>
 
 ### Passive Modal
 
 This Modal is used as a style of notifications. We highly discourage the use of this, due to its disruptive nature. Passive Modal notifications should only appear if there is an action the user needs to address immediately. Passive Modal notifications are persistent on-screen. That is, they do not automatically go away after appearing. Users must either engage with or dismiss the notification.
 
+<image-component cols="8">
+
 ![Passive modal](images/modal-usage-3.png)
+
+</image-component>
 
 ### Input Modal
 
 Modals used in this case include input areas that the user may interact with. These may include but are not limited to Forms, Dropdowns, Selectors, and Links.
 
+<image-component cols="8">
+
 ![input modal](images/modal-usage-2.png)
+
+</image-component>

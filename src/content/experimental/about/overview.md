@@ -9,7 +9,6 @@ Experimental components, designs, and other resources are presented for testing 
 
 We want to provide early-access to our changes, so that designers and developers can test, work with, and provide feedback. These resources are provided in the "Experimental" section of the site.
 
-
 ## What are "experimental" resources?
 
 Experimental components, designs, patterns, and other resources are work that is still under development.
