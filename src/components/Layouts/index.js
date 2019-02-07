@@ -146,7 +146,7 @@ class Layout extends React.Component {
               <p className="website-alert__text">
                 See what's coming soon with Carbon V10-beta.
               </p>
-              <a href="https://next.carbondesignsystem.com">
+              <a href="https://next.carbondesignsystem.com" tabIndex="-1">
                 <button
                   class="bx--btn bx--btn--secondary bx--btn--sm"
                   type="button">
