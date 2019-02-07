@@ -3,7 +3,6 @@ title: Pagination
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-**Pagination** is used for splitting up content or data into several pages, with a control for navigating to the next or previous page.
 
 <component 
     name="Pagination"

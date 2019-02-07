@@ -3,29 +3,37 @@ title: Modal
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-## Dismissal
+<anchor-links>
+<ul>
+    <li><a data-scroll href="#general-guidance">General guidance</a></li>
+    <li><a data-scroll href="#format">Format</a></li>
+    <li><a data-scroll href="#variations">Variations</a></li>
+    <li><a data-scroll href="#dismissal">Dismissal</a></li>
+</ul>
+</anchor-links>
 
-Modals may be dismissed in 3 ways:
 
-- Using the “x” in the upper right-hand corner of the Modal
-- Pressing the `ESC` key
-- Clicking / touching outside of the Modal area
+## General guidance
 
-## Structure
+_Modals_ communicate information via a secondary window and allow the user to maintain the context of a particular task. Use Modals sparingly because they interrupt user workflow.
 
-### Header
+## Format
+
+#### Header
 
 Include a heading within the Modal that mirrors the action or button that was clicked by the user. Headers include a close button “x” in the upper right-hand corner of the Modal.
 
-### Body
+#### Body
 
 The body content within a Modal should be as minimal as possible. Components that may be used in Modals include: Form fields, Text Area, Select, and Radio Buttons.
 
-### Footer
+#### Footer
 
 The footer area of a Modal typically contains a set of buttons. Refer to [Button](/components/button) guidelines for usage.
 
-## Usage
+
+
+## Variations
 
 ### Transactional Modal
 
@@ -56,3 +64,13 @@ Modals used in this case include input areas that the user may interact with. Th
 ![input modal](images/modal-usage-2.png)
 
 </image-component>
+
+
+## Dismissal
+
+Modals may be dismissed in 3 ways:
+
+- Using the “x” in the upper right-hand corner of the Modal
+- Pressing the `ESC` key
+- Clicking / touching outside of the Modal area
+
