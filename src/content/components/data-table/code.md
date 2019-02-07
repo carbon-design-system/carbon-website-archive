@@ -4,7 +4,6 @@ title: Data table
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-<page-intro>**Data tables** present raw data sets and lend meaning to the data, while maintaining that the data is readable, scannable, and easily comparable.</page-intro>
 
 <component 
     name="Data table"

@@ -3,15 +3,16 @@ title: Developers
 tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
 ---
 
-The Carbon Design System supports vanilla JS, React and Angular as core parts of the product. But you can still build components even if you're using a different framework.
 
 ## Development options
+The Carbon Design System supports vanilla JS, React and Angular as core parts of the product. But you can still build components even if you're using a different framework.
 
-#### Using just the styles
+
+**Using just the styles**
 
 Developers wanting to build in different ways follow the instructions for the [Vanilla](/getting-started/developers/vanilla) library to access the styles and build out their own components.
 
-#### Wrapping a component with a JavaScript framework of your choice
+**Wrapping a component with a JavaScript framework of your choice**
 
 Many JavaScript frameworks have a mechanism to dynamically create/destroy DOM elements, for example, upon change in array.
 This often makes it unclear when the DOM element to instantiate a Carbon component is available, which often depends on the JavaScript framework you use.

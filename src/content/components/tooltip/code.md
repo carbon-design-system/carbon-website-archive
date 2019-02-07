@@ -3,7 +3,7 @@ title: Tooltip
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-**Tooltips** provide additional information upon hover or focus. They often contain helper text that is contextual to an element.
+
 
 <component 
     name="Tooltip"
