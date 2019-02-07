@@ -3,7 +3,7 @@ title: Tile
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-## Usage
+## General guidance
 
 Tiles are a highly flexible component for displaying a wide variety of content, including informational, getting started, how-to, next steps, and more.
 
@@ -11,7 +11,7 @@ Carbon ships a basic tile structure that responds to the grid. Tiles have no pre
 
 When using a call-to-action (CTA) within a tile, use a [secondary button](/components/button). Primary buttons should be reserved for the most important action a user can take on the page.
 
-## Types of tiles
+## Variations
 
 _All of the images below represent examples of types of content that could be presented within a tile. The styling in these examples is for illustration only; you are free to create your own layout and design within a tile._
 
