@@ -3,7 +3,6 @@ title: Tile
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-**Tiles** are flexible containers that house a variety of content.
 
 <component 
     name="Tile"

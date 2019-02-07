@@ -3,25 +3,39 @@ title: Dropdown
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-## Usage
+
+<anchor-links>
+<ul>
+    <li><a data-scroll href="#general-guidance">General guidance</a></li>
+    <li><a data-scroll href="#variations">Variations</a></li>
+    <li><a data-scroll href="#content">Content</a></li>
+    <li><a data-scroll href="#interaction">Interaction</a></li>
+</ul>
+</anchor-links>
+
+## General guidance
+
+_Dropdowns_ present a list of options that can be used to filter existing content. They can also be used as menus. This can be seen in [Tabs](/components/tabs), when used in a smaller screen size, collapses into a dropdown.
+
+## Variations
 
 | Type                         | Purpose                                                                                                                                                                                  |
 | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dropdown                     | User needs to pick one option from a list.                                                                                                                                               |
-| Filter dropdown              | When a list contains more than 25 items, use filtering to help find options from the list. May only be used with dropdown or multi-select dropdown. Cannot be used with inline dropdown. |
-| Multi-select dropdown        | User needs to select multiple options from a dropdown.                                                                                                                                   |
-| Inline dropdown              | A stylized dropdown that can be formatted to appear inline with other content and allows the user to select one option.                                                                  |
-| Inline multi-select dropdown | A stylized dropdown that can be formatted to appear inline with other content and allows the user to select more than one option.                                                        |
+| _Dropdown_                     | User needs to pick one option from a list.                                                                                                                                               |
+| _Filter dropdown_              | When a list contains more than 25 items, use filtering to help find options from the list. May only be used with dropdown or multi-select dropdown. Cannot be used with inline dropdown. |
+| _Multi-select dropdown_        | User needs to select multiple options from a dropdown.                                                                                                                                   |
+| _Inline dropdown_              | A stylized dropdown that can be formatted to appear inline with other content and allows the user to select one option.                                                                  |
+| _Inline multi-select dropdown_ | A stylized dropdown that can be formatted to appear inline with other content and allows the user to select more than one option.                                                        |
 
-Dropdowns can also be used as menus. This can be seen in [Tabs](/components/tabs), when used in a smaller screen size, collapses into a dropdown.
+
 
 ## Content
 
-### Labels
+#### Labels
 
 Labels inform users what to expect in the list of dropdown options. Use clear labels for the dropdown trigger so that users understand the purpose. Keep the label short and concise by limiting it to a single line of text.
 
-### Dropdown options
+#### Dropdown options
 
 Describe the dropdown option succinctly in one line of text. Never use images or icons within a dropdown. Avoid having multiple lines of text in a dropdown, but if text wrapping is necessary, limit it to two lines and an ellipsis (...) for overflow content. We recommend presenting the options in alphabetical order.
 
