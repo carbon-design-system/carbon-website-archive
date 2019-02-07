@@ -60,7 +60,7 @@ If you would rather not receive library updates, or if you are looking for previ
 
 ## Get the kit via Box
 
-_For IBM internal users only._ Using Box Drive sync will ensure that your design kit file will always be up to date, eliminating the need to manually download new versions as they are released.
+Using Box Drive sync will ensure that your design kit file will always be up to date, eliminating the need to manually download new versions as they are released.
 
 1. Follow the instructions on [IBM Digital Design](https://www.ibm.com/standards/web/design-kit/) to get the design kit through Box Drive.
 
