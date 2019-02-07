@@ -25,7 +25,7 @@ title: Designers
 <ul>
     <li><a href="#carbon-design-kit">Carbon Design Kit</a></li>
     <li><a href="#how-to-get-it">How to get it</a></li>
-    <li><a href="#get-the-kit-via-box">Get the kit via Box (IBMer only)</a></li>
+    <li><a href="#get-the-kit-via-box">Get the kit via Box</a></li>
     <li><a href="#download-the-kit-from-github">Download the kit from GitHub</a></li>
     <li><a href="#connect-with-us">Connect with us</a></li>
 </ul>
@@ -33,7 +33,7 @@ title: Designers
 
 ## Carbon Design Kit
 
-The Carbon Design Kit is a constantly evolving document that contains all of the design system’s visual assets, including components, icons, color palettes, grids, etc. The kit aims to help you work faster, with confidence that your product or experience is well aligned with the IBM Design System. It utilizes symbols and text styles, organized via pages in the left side panel of Sketch. This site, along with the Carbon Design Kit, provides designers with everything they need to get up and running with Carbon.
+The Carbon Design Kit is a constantly evolving document that contains all of the design system’s visual assets, including components, icons, color palettes, grids, etc. The kit helps you to work faster, and with confidence that your product or experience is aligned with the IBM Design System. It utilizes symbols and text styles, organized via pages in the left side panel of Sketch. This site, along with the Carbon Design Kit, provides designers with everything they need to get up and running with Carbon.
 
 ### Release Schedule
 
@@ -53,7 +53,7 @@ Currently, there are three ways to obtain the kit. For timely updates, be sure t
 </clickable-tile>
 </grid-wrapper>
 
-If you are an IBMer who might work with a proprietary add-on library, please set up the kit via the Box Drive by following [these instructions](#get-the-kit-via-box).
+If you might work with a proprietary add-on library and still want to be connected for updates, please set up the kit via the Box Drive by following [these instructions](#get-the-kit-via-box).
 
 If you would rather not receive library updates, or if you are looking for previous versions of the design kit, please visit our GitHub repository, and follow [these instructions](#download-the-kit-from-github) to download the kit.
 
