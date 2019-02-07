@@ -33,9 +33,6 @@ Icons may provide additional clarity. Icons should be placed to the left of a ti
 
 </image-component>
 
-## Placement
-
-
 ## Variations
 
 | Notification type   | Purpose                                                                                                                                                     |
