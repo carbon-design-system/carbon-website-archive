@@ -189,6 +189,7 @@ class Layout extends React.Component {
               </p>
               <a
                 className="website-alert__button"
+                tabIndex="-1"
                 href=" https://www.carbondesignsystem.com">
                 <button class="bx--btn bx--btn--secondary" type="button">
                   <span>Go to v9</span>
