@@ -23,7 +23,7 @@ Icons may provide additional clarity. Icons should be placed to the left of a ti
 
 <image-component cols="8">
 
-![input modal](images/notification-usage-1.png)
+![The three icon states](images/notification-usage-1.png)
 
 </image-component>
 
@@ -35,7 +35,7 @@ Toast notifications slide in and out a page from the top-right corner. Actionabl
 
 <image-component cols="8">
 
-![input modal](images/notification-usage-2.png)
+![Toast notification example](images/notification-usage-2.png)
 
 </image-component>
 
@@ -45,6 +45,6 @@ Inline notifications appear near its related item. In [Forms](/components/form),
 
 <image-component cols="8">
 
-![input modal](images/notification-usage-3.png)
+![Form example with inline notification](images/notification-usage-3.png)
 
 </image-component>

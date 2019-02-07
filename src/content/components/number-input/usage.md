@@ -11,3 +11,9 @@ tabs: ['Code', 'Usage', 'Style']
 - Use a clear and concise label for the number input.
 - Use sentence-style capitalization (only the first word in a phrase and any proper nouns capitalized) for the label.
 - See further guidance for using number labels within [forms](/components/form/usage).
+
+<image-component cols="8">
+
+![number input example](images/number-input-usage-1.png)
+
+</image-component>

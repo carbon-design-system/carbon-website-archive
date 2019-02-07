@@ -11,6 +11,12 @@ tabs: ['Code', 'Usage', 'Style']
 
 **Small Search** can be used when there are space constraints in your design. It can also be component specific. For example, Small Search can be used to filter data within a [Data Table](/components/data-table).
 
+<image-component cols="8" caption="Small Search to filter table data">
+
+![Search at the top of the data table](images/search-usage-1.png)
+
+</image-component>
+
 ### Search fields
 
 Set users' context for the search with helpful placeholder text within the search field (Search documents), that pertains to the page or section the search box is in. Search in the global header should just say Search.

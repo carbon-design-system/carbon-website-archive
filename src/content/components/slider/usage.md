@@ -7,6 +7,12 @@ tabs: ['Code', 'Usage', 'Style']
 
 The _slider_ in its basic form should be accompanied by a label and a number input that doubles as a display for the slider's current value. The basic slider does **not** include discrete values, as the slider represents a percentage of 0-100. In this case it is not necessary for a user to choose a specific value, but instead generally increase or decrease an input. For example, the user increases the slider amount and the volume of the music gets louder. The more complex versions should be used for selecting a specific value within a value range.
 
+<image-component cols="8" caption="Slider used to change volume">
+
+![Example of volume slider](images/slider-usage-1.png)
+
+</image-component>
+
 ## Interaction
 
 Users can choose a numerical value by:
