@@ -8,7 +8,7 @@ tabs: ['General', 'Guidance', 'Glossary']
 <anchor-links>
 <ul>
     <li><a href="#capitalization">Capitalization</a></li>
-    <li><a href="#do’s--dont’s">Do’s & dont’s</a></li>
+    <li><a href="#dos--donts">Do’s & dont’s</a></li>
 </ul>
 
 </anchor-links>
