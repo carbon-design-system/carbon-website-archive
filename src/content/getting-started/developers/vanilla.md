@@ -6,14 +6,14 @@ tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
 
 <anchor-links>
 <ul>
-    <li><a href="#carbon-vanilla-library">Carbon Vanilla Library</a></li>
+    <li><a href="#carbon-vanilla-library">Carbon Vanilla library</a></li>
     <li><a href="#install">Install</a></li>
     <li><a href="#getting-started">Getting started</a></li>
      <li><a href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </anchor-links>
 
-## Carbon Vanilla Library
+## Carbon Vanilla library
 
 The library provides front-end developers & engineers a collection of reusable HTML and SCSS partials to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.
 
