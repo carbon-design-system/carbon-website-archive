@@ -13,7 +13,7 @@ tabs: ['Code', 'Usage', 'Style']
 
 <image-component cols="12"  caption="Structured List to present definitions.">
 
-![Structured List to present definitions.](images/structured-list-usage-2.png)
+![Structured list to present definitions.](images/structured-list-usage-2.png)
 
 </image-component>
 
