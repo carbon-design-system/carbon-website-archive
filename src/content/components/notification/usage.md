@@ -41,7 +41,7 @@ Icons may provide additional clarity. Icons should be placed to the left of a ti
 | _Inline notification_  | Inline notifications show up in task flows, to notify users of the status of an action. They usually appear at the top of the primary content area. |
 
 
-### Placement
+## Placement
 
 #### Toast notifications
 
@@ -53,7 +53,7 @@ Toast notifications slide in and out a page from the top-right corner. Actionabl
 
 </image-component>
 
-### Inline notifications
+#### Inline notifications
 
 Inline notifications appear near its related item. In [Forms](/components/form), we recommend placing the inline notification at the bottom of the form, right before the submission buttons. Depending on the context of the page, inline notifications can appear above the content as well.
 
