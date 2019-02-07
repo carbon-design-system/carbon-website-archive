@@ -3,8 +3,6 @@ title: Code snippet
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-**Code snippets** are small blocks of reusable code that can be inserted in a code file.
-variations:
 
 <component
     name="Code Snippet"
