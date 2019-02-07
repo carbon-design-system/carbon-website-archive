@@ -4,6 +4,19 @@ title: Accessibility
 tabs: ['Overview', 'Color', 'Keyboard', 'Developers']
 ---
 
+## Resources
+
+<grid-wrapper col_lg="8" flex="true" bleed="true">
+<clickable-tile
+    title="Carbon color contrast tool"
+    href="https://marijohannessen.github.io/color-contrast-checker/"
+    type="resource"
+     >
+
+</clickable-tile>
+</grid-wrapper>
+
+
 <anchor-links>
 <ul>
     <li><a href="#introduction">Introduction</a></li>
@@ -46,16 +59,16 @@ Color blindness involves difficulty in perceiving or distinguishing between colo
 
 | Type         | Color deficiency |
 | ------------ | ---------------- |
-| Protanopia   | Red/green        |
-| Tritanopia   | Blue             |
-| Deuteranopia | Green            |
-| Monochromacy | All colors       |
+| _Protanopia_   | Red/green        |
+| _Tritanopia_   | Blue             |
+| _Deuteranopia_ | Green            |
+| _Monochromacy_ | All colors       |
 
 ### Designing for color blindness
 
 Don't rely on color alone to convey meaning. This includes conveying information, indicating an action, prompting the user for a response, or distinguishing one visual element from another. When designing with color, it might help to use a color-blind simulator to review visibility of content. If you're working in Sketch, we recommend the [Stark](http://www.getstark.co/) plugin.
 
-<image-component cols="8" caption="Non-color blind user vs color-blind user">
+<image-component cols="12">
 
 ![rainbow palette](images/color-accessibility-1.png)
 
@@ -67,16 +80,16 @@ Low vision can include partial sight in one or both eyes and can range from mild
 
 | Type                     | Visual deficiency                                                                                         |
 | ------------------------ | --------------------------------------------------------------------------------------------------------- |
-| Low acuity               | Also known as "blurred vision." Can make text difficult to read, since it appears fuzzy.           |
-| Low-contrast sensitivity | Decreased ability to determine fine detail and distinguish one object from another                             |
-| Obstructed visual field  | The user's view is partially obstructed. Can include central vision and spotty vision.                   |
-| Retinitis Pigmentosa     | Also known as "tunnel vision." The user is only able to see central elements. |
+| _Low acuity_               | Also known as "blurred vision." Can make text difficult to read, since it appears fuzzy.           |
+| _Low-contrast sensitivity_ | Decreased ability to determine fine detail and distinguish one object from another                             |
+| _Obstructed visual field_  | The user's view is partially obstructed. Can include central vision and spotty vision.                   |
+| _Retinitis Pigmentosa_     | Also known as "tunnel vision." The user is only able to see central elements. |
 
 
 
-#### Low-vision disabilities
+### Low-vision disabilities
 
-<image-component cols="8" caption="Low-vision disabilities">
+<image-component cols="12">
 
 ![blurred vision and tunnel vision example on Google website](images/color-accessibility-2.png)
 
