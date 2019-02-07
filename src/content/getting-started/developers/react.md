@@ -68,6 +68,8 @@ We recommend the use of [React Storybook](https://github.com/storybooks/react-st
 
 ####Start the server:
 
+<br>
+
 ```bash
 $ yarn storybook
 ```
