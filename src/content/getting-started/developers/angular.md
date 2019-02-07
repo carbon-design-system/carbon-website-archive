@@ -3,17 +3,29 @@ title: Developers
 tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
 ---
 
+## Resources
+
+<grid-wrapper col_lg="8" flex="true" bleed="true">
+<clickable-tile
+    title="Try Angular components with CodeSandbox."
+    href="https://codesandbox.io/s/0129r494ql"
+    type="resource"
+     >
+    <img src="images/codesandbox.png" alt="CodeSandbox"/>
+</clickable-tile>
+</grid-wrapper>
+
 
 <anchor-links>
 <ul>
-    <li><a href="#carbon-angular-library">Carbon Angular Library</a></li>
+    <li><a href="#carbon-angular-library">Carbon Angular library</a></li>
     <li><a href="#install">Install</a></li>
     <li><a href="#development">Development</a></li>
     
 </ul>
 </anchor-links>
 
-## Carbon Angular Library
+## Carbon Angular library
 
 The [Library](http://angular.carbondesignsystem.com/) provides front-end developers & engineers a collection of reusable Angular components to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.
 
@@ -41,9 +53,6 @@ $ npm start
 
 _Note: This isn't the only way to bootstrap a_ `carbon-components-angular` _application, but the combination of_ `@angular/cli` _and the_ `carbon-components` _scss is our recommended setup._
 
-<a target="_blank" href="https://codesandbox.io/s/0129r494ql">
-  <img style="width: 200px" alt="Edit on CodeSandbox" src="https://codesandbox.io/static/img/play-codesandbox.svg" />
-</a>
 
 ### Using our starter app
 

@@ -3,40 +3,21 @@ title: Form
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-## Effective form design
+<anchor-links>
+<ul>
+    <li><a data-scroll href="#general-guidance">General guidance</a></li>
+    <li><a data-scroll href="#format">Format</a></li>
+    <li><a data-scroll href="#form-logic">Form logic</a></li>
+    <li><a data-scroll href="#validation--errors">Validation & errors</a></li>
+</ul>
+</anchor-links>
 
-All forms are comprised of 6 elements:
 
-- **Labels:** Inform users what the corresponding input fields mean.
-- **Input fields:** Enable users to provide information. Information can be entered through a variety of different input fields ranging from text fields, checkboxes, and many other types.
-- **Help text:** Provides assistance on how to fill out a field. Help text is optional.
-- **Placeholder text:** Hints at what goes into a field. Placeholder text is optional.
-- **Actions:** Allow users to submit a form.
-- **Validation:** Ensures the data submitted by the user conforms to acceptable parameters.
-
-<image-component cols="8">
-
-![effective form design](images/form-usage-1.png)
-
-</image-component>
-
-## Form logic
-
-- **Radio Buttons** are used when there is a list of two or more options that are mutually exclusive and the user must select exactly one choice. In other words, clicking a non-selected radio button will deselect whatever other button was previously selected in the list.
-- **Checkboxes** are used when there are lists of options and the user may select any number of choices, including zero, one, or several. In other words, each checkbox is independent of all other checkboxes in the list, so checking one box doesn’t uncheck the others. A stand-alone checkbox, or a toggle can be used for a single option that the user can turn on or off.
-- For fields in which a single selection is required and there are a large number of possible options, consider using a **Select** element.
-
-<image-component cols="8">
-
-![form logic](images/form-usage-4.png)
-
-</image-component>
-
-## General guidelines
+## General guidance
 
 ### Keep it short
 
-Be as concise as possible when designing forms. Think about each field and what value the data will provide. What do you gain by collecting this information?
+_Forms_ are used for submitting data so be as concise as possible when designing. Think about each field and what value the data will provide. What do you gain by collecting this information?
 
 **Begin by asking:**
 
@@ -65,6 +46,38 @@ Help text is pertinent information that assists the user in completing a field. 
 ### Placeholder text
 
 Placeholder text provides hints or examples of what to enter. Placeholder text disappears after the user begins entering data into the Input and should not contain crucial information. Use sentence-style capitalization, and in most cases, write the text as a direct statement without punctuation.
+
+## Format
+
+All forms are comprised of 6 elements:
+
+- **Labels:** Inform users what the corresponding input fields mean.
+- **Input fields:** Enable users to provide information. Information can be entered through a variety of different input fields ranging from text fields, checkboxes, and many other types.
+- **Help text:** Provides assistance on how to fill out a field. Help text is optional.
+- **Placeholder text:** Hints at what goes into a field. Placeholder text is optional.
+- **Actions:** Allow users to submit a form.
+- **Validation:** Ensures the data submitted by the user conforms to acceptable parameters.
+
+<image-component cols="8">
+
+![effective form design](images/form-usage-1.png)
+
+</image-component>
+
+
+
+## Form logic
+
+- **Radio Buttons** are used when there is a list of two or more options that are mutually exclusive and the user must select exactly one choice. In other words, clicking a non-selected radio button will deselect whatever other button was previously selected in the list.
+- **Checkboxes** are used when there are lists of options and the user may select any number of choices, including zero, one, or several. In other words, each checkbox is independent of all other checkboxes in the list, so checking one box doesn’t uncheck the others. A stand-alone checkbox, or a toggle can be used for a single option that the user can turn on or off.
+- **Select elements** are used for fields in which a single selection is required and there are a large number of possible options.
+
+<image-component cols="8">
+
+![form logic](images/form-usage-4.png)
+
+</image-component>
+
 
 ## Validation and errors
 

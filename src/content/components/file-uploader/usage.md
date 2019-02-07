@@ -3,7 +3,19 @@ title: File uploader
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-## General
+<anchor-links>
+<ul>
+    <li><a data-scroll href="#general-guidance">General guidance</a></li>
+    <li><a data-scroll href="#interaction">Interaction</a></li>
+    <li><a data-scroll href="#upload-state">Upload state</a></li>
+    <li><a data-scroll href="#removing-files">Removing files</a></li>
+</ul>
+</anchor-links>
+
+## General guidance
+
+_File Uploader_ allows the user to transfer a file or submit content of their own.
+
 
 - A File Uploader is commonly found in forms, but they can also live as stand alone elements.
 - **Add files** is the default text that appears with the File Uploader.
@@ -16,7 +28,7 @@ tabs: ['Code', 'Usage', 'Style']
 
 </image-component>
 
-## Basic interaction
+## Interaction
 
 1. The user may select 1 or more files to upload at a time. By default, any file type is accepted, but you can add parameters to validate a specific file type.
 2. The action of clicking **Add files** will trigger a browser-specific upload window.

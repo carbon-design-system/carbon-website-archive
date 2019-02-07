@@ -3,9 +3,9 @@ title: Toggle
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-## General guidelines
+## General guidance
 
-Toggles are used for binary actions that occur immediately after the user “flips” the toggle switch. They are commonly used for “on/off” switches.
+_Toggle_ is a control that is used to quickly switch between two possible states. Toggles are only used for these binary actions that occur immediately after the user “flips” the toggle switch. They are commonly used for “on/off” switches.
 
 <image-component cols="8">
 
@@ -13,15 +13,16 @@ Toggles are used for binary actions that occur immediately after the user “fli
 
 </image-component>
 
-### Heading
+#### Heading
+
 
 A heading may accompany a toggle to further clarify on the action the toggle will perform.
 
-### Labels
+#### Labels
 
 Use labels with a toggle so the action is clear. Labels should be three words or less and appear on the side of a toggle.
 
-### Language
+#### Language
 
 Use adjectives rather than verbs to describe labels and the state of the object affected.
 

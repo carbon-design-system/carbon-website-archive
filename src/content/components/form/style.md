@@ -52,13 +52,13 @@ All icons can be found on the [iconography](/guidelines/iconography/library) lib
 | Non-input components | margin-bottom | 32 / 2    | $spacing-xl   |
 | Grid gutter          | -             | 20 / 1.25 | -             |
 
-<image-component fixed="default" caption="Structure and spacing measurements for a double column Form | px / rem">
+<image-component fixed="large" caption="Structure and spacing measurements for a double column Form | px / rem">
 
 ![Structure and spacing measurements for a double column form ](images/form-style-2.png)
 
 </image-component>
 
-<image-component fixed="default" caption="Structure and spacing measurements for a single column Form | px / rem">
+<image-component fixed="large" caption="Structure and spacing measurements for a single column Form | px / rem">
 
 ![Structure and spacing measurements for a single column form](images/form-style-1.png)
 

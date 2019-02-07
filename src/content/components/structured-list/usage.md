@@ -3,6 +3,12 @@ title: Structured list
 tabs: ['Code', 'Usage', 'Style']
 ---
 
+## General guidance
+
+_Structured Lists_ group content that is similar or related, such as terms or definitions.
+
+
+
 ## Content
 
 - Row height varies based on content, and can expand to fit multiple lines.
