@@ -22,11 +22,5 @@ Breadcrumbs' space-efficient design and high utility make them an easy choice fo
 
 | Breadcrumb type   | Purpose                                                                                                                                                     |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| _Location-based_      | These illustrate the site's heirarchy and show the user where they are within that heirarchy.                                                                                                |
-| _Path-based_  | These show the actual steps the user took to get to the current page, rather than reflecting the site's information architecture. Path-based breadcrumbs are always dynamically generated.
- |
-
-
-
-
-
+| _Location-based_      | These illustrate the site's heirarchy and show the user where they are within that heirarchy.|
+| _Path-based_  | These show the actual steps the user took to get to the current page, rather than reflecting the site's information architecture. Path-based breadcrumbs are always dynamically generated.|
