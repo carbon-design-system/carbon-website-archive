@@ -18,7 +18,7 @@ title: Layout
 <anchor-links>
 <ul>
     <li><a data-scroll href="#mini-unit">Mini unit</a></li>
-    <li><a data-scroll href="#2x-grid-fundamentals">2x Grid fundamentals</a></li>
+    <li><a data-scroll href="#2x-grid-fundamentals">2x grid fundamentals</a></li>
     <li><a data-scroll href="#grid-behaviors">Grid behaviors</a></li>
     <li><a data-scroll href="#grid-influencers">Grid influencers</a></li>
     <li><a data-scroll href="#sizing-scale">Sizing scale</a></li>
