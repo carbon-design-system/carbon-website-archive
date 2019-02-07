@@ -3,7 +3,6 @@ title: Content switcher
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-**Content switcher** manipulates the content shown following an exclusive or “either/or” pattern.
 
 <component 
     name="Content switcher"
