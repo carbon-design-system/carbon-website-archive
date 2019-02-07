@@ -3,13 +3,21 @@ title: Select
 tabs: ['Code', 'Usage', 'Style']
 ---
 
+
+
+## General guidance
+_Select_ is a type of input that is used in forms, where a user is submitting data and chooses one option from a list.
+
+
+## Variations
+
 | Select type   | Purpose                                                                                                                                                     |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Default       | Typically used in forms with a variety of other components.                                                                                                 |
-| Small select  | When vertical space is a concern, or Select is being paired with larger component, such as [Cards](/add-ons/card) or [Data Tables](/components/data-table). |
-| Inline select | When multiple selects are grouped together.                                                                                                                 |
+| _Default_      | Typically used in forms with a variety of other components.                                                                                                 |
+| _Small select_  | When vertical space is a concern, or Select is being paired with larger component, such as [Cards](/add-ons/card) or [Data Tables](/components/data-table). |
+| _Inline select_ | When multiple selects are grouped together.                                                                                                                 |
 
-### Small select
+#### Small select
 
 _Small selects_ are commonly used in [data tables](/components/data-table). When using a small select for a number selection, the increments in the select should be 10, 25, 50 and 100. The maximum amount of items a user can see per page is 100.
 
@@ -19,7 +27,7 @@ _Small selects_ are commonly used in [data tables](/components/data-table). When
 
 </image-component>
 
-### Inline select
+#### Inline select
 
 Inline select is useful when you have multiple `select` fields within a form. Inline selects have less visual weight on a page because they are borderless.
 
@@ -58,9 +66,9 @@ One of the <a href="https://www.w3.org/TR/WCAG20-TECHS/G202.html" target=blank>W
 
 While you can make a select element easily usable by a mouse, making it usable with keyboard navigation is complex. The default `select` element should follow this process:
 
-|         | Mouse                                    | Keyboard                                            |
+| State        | Mouse                                    | Keyboard                                            |
 | ------- | ---------------------------------------- | --------------------------------------------------- |
-| :hover  | move your cursor over the select element | use the tab key to focus the select element         |
-| :focus  | click on the select element              | press enter                                         |
-| :       | move your cursor over the desired option | use the top and bottom arrow keys to pick an option |
+| _:hover_  | move your cursor over the select element | use the tab key to focus the select element         |
+| _:focus_  | click on the select element              | press enter                                         |
+| _:_       | move your cursor over the desired option | use the top and bottom arrow keys to pick an option |
 | :select | click on the desired option              | press enter                                         |

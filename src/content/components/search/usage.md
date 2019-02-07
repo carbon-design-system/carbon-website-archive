@@ -3,13 +3,22 @@ title: Search
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-## General guidelines
+## General guidance
 
-### Search variations
+_Search_ enables users to specify a word or a phrase to find particular relevant pieces of content without the use of navigation. Search can be used as the primary means of discovering content, or as a filter to aid the user in finding content.
 
-**Large Search** should be used at a global level, when the user is searching content within a page view.
 
-**Small Search** can be used when there are space constraints in your design. It can also be component specific. For example, Small Search can be used to filter data within a [Data Table](/components/data-table).
+
+
+## Variations
+
+| Search type   | Purpose                                                                                                                                                     |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| _Large search_      | This should be used at a global level, when the user is searching content within a page view.                                                                                             |
+| _Small search_  | Choose small when there are space constraints in your design. It can also be component specific. For example, Small Search can be used to filter data within a [Data Table](/components/data-table). |
+
+
+## Format
 
 <image-component cols="8" caption="Small Search to filter table data">
 

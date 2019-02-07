@@ -41,11 +41,11 @@ Every six months the Carbon team releases a major update to the system, includin
 
 ## How to get it
 
-Currently, there are three ways to obtain the kit. For timely updates, install the kit as Sketch Shared Library. Please make sure your Sketch App is version 53 or above.
+There are three ways to obtain the kit. For timely updates, install the kit as Sketch Shared Library. Please note this requires Sketch version 53 or above.
 
 <grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
-    title="Add Carbon design kit to Sketch library"
+    title="Add Carbon design kit to Sketch library (Beta)"
     href="sketch://add-library/cloud/JaVzz"
     type="resource"
      >
@@ -60,7 +60,7 @@ If you would rather not receive library updates, or if you are looking for previ
 
 ## Get the kit via Box
 
-_For IBM internal users only._ Using Box Drive sync will ensure that your design kit file will always be up to date, eliminating the need to manually download new versions as they are released.
+Using Box Drive sync will ensure that your design kit file will always be up to date, eliminating the need to manually download new versions as they are released.
 
 1. Follow the instructions on [IBM Digital Design](https://www.ibm.com/standards/web/design-kit/) to get the design kit through Box Drive.
 

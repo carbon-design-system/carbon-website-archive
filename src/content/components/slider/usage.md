@@ -3,7 +3,10 @@ title: Slider
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-## Types of sliders
+## General guidance
+
+
+_Sliders_ provide a visual indication of adjustable content, where the user can move the handle along a horizontal track to increase or decrease the value.
 
 The _slider_ in its basic form should be accompanied by a label and a number input that doubles as a display for the slider's current value. The basic slider does **not** include discrete values, as the slider represents a percentage of 0-100. In this case it is not necessary for a user to choose a specific value, but instead generally increase or decrease an input. For example, the user increases the slider amount and the volume of the music gets louder. The more complex versions should be used for selecting a specific value within a value range.
 

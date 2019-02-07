@@ -37,6 +37,6 @@ There is no limit to the height of an open row, however, the padding specs below
 
 <image-component caption="Structure and spacing measurements for Accordion | px / rem" fixed="default">
 
-![Structure and spacing measurements for Accordion](images/accordion-style-1.png)
+![Structure and spacing measurements for Accordion](images/test1.png)
 
 </image-component>
