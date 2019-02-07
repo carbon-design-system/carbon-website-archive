@@ -284,3 +284,11 @@ img[src*='gif'] {
     top: 112px;
   }
 }
+
+.website-alert + .bx--header ~ .bx--website-switcher {
+  top: 7rem;
+
+  @include breakpoint('md') {
+    top: 6rem;
+  }
+}
