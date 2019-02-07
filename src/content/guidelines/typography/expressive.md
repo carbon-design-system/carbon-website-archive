@@ -76,7 +76,7 @@ Letter-spacing: 0
 <type-spec token="body-long-02" description="This is commonly used in the expressive type theme layouts for long paragraphs with more than four lines. The looser line height and larger size makes for comfortable, long-form reading, in mediums that allow for more space. This size type is rarely used for body copy in components. Always left-align type; never center it.">
 Type: IBM Plex Sans<br>
 Size: 16px / 1rem<br>
-Line height: 14px / 1.5rem <br>
+Line height: 24px / 1.5rem <br>
 Weight: 400 / Regular<br>
 Letter-spacing: 0
 </type-spec>
