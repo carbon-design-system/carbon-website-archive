@@ -14,7 +14,7 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Typography
 
-All Accordion labels are set in sentence case and should not exceed three words. Set body text appropriately based on content.
+All accordion labels are set in sentence case and should not exceed three words. Set body text appropriately based on content.
 
 | Class                     | Font-size (px/rem) | Font-weight  | Text style |
 | ------------------------- | ------------------ | ------------ | ---------- |
