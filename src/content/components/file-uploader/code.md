@@ -4,9 +4,9 @@ tabs: ['Code', 'Usage', 'Style']
 ---
 
 
-<component 
-    name="File Uploader"
-    component="file-uploader" 
+<component
+    name="File uploader"
+    component="file-uploader"
     variation="file-uploader"
     experimental="true"
     >
