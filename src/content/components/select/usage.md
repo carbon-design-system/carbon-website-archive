@@ -14,7 +14,7 @@ _Select_ is a type of input that is used in forms, where a user is submitting da
 | Select type   | Purpose                                                                                                                                                     |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | _Default_      | Typically used in forms with a variety of other components.                                                                                                 |
-| _Small select_  | When vertical space is a concern, or Select is being paired with larger component, such as [Cards](/add-ons/card) or [Data Tables](/components/data-table). |
+| _Small select_  | When vertical space is a concern, or Select is being paired with larger component, such as [cards](/add-ons/card) or [data tables](/components/data-table). |
 | _Inline select_ | When multiple selects are grouped together.                                                                                                                 |
 
 #### Small select

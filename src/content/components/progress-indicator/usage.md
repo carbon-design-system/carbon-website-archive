@@ -5,9 +5,9 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## General guidance
 
-_Progress Indicator_ is a visual representation of a users progress through a set of steps. They guide the user through a number of steps in order to complete a specified process.
+_Progress indicator_ is a visual representation of a users progress through a set of steps. They guide the user through a number of steps in order to complete a specified process.
 
-Use Progress Indicators to keep the user on track when completing a specific task. By dividing the end goal into smaller, sub-tasks, it increases the percentage of completeness as each task is completed.
+Use progress indicators to keep the user on track when completing a specific task. By dividing the end goal into smaller, sub-tasks, it increases the percentage of completeness as each task is completed.
 
 ## Best practices
 
@@ -17,8 +17,8 @@ Display the steps in order from left to right. Indicate to the user that they ar
 
 #### Indicate the current step
 
-Keeping the user informed of where they currently are within the process or task at hand will give them a sense of control. This helps the user to know where they are in relation to where they have been, and what sections are to follow. Clear labels should accompany the Progress Indicator to indicate what the user will accomplish within each step. Keep labels between one to two words.
+Keeping the user informed of where they currently are within the process or task at hand will give them a sense of control. This helps the user to know where they are in relation to where they have been, and what sections are to follow. Clear labels should accompany the progress indicator to indicate what the user will accomplish within each step. Keep labels between one to two words.
 
 #### Validation
 
-Use validation to confirm that a previous step has been completed. If the user cannot proceed onto another step without first completing a task, use an [Inline Notification](/experimental/notification) to inform them.
+Use validation to confirm that a previous step has been completed. If the user cannot proceed onto another step without first completing a task, use an [inline notification](/experimental/notification) to inform them.
