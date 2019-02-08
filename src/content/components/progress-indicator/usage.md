@@ -21,4 +21,4 @@ Keeping the user informed of where they currently are within the process or task
 
 #### Validation
 
-Use validation to confirm that a previous step has been completed. If the user cannot proceed onto another step without first completing a task, use an [inline notification](/experimental/notification) to inform them.
+Use validation to confirm that a previous step has been completed. If the user cannot proceed onto another step without first completing a task, use an [Inline Notification](/experimental/notification) to inform them.
