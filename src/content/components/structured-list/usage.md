@@ -3,6 +3,12 @@ title: Structured list
 tabs: ['Code', 'Usage', 'Style']
 ---
 
+## General guidance
+
+_Structured Lists_ group content that is similar or related, such as terms or definitions.
+
+
+
 ## Content
 
 - Row height varies based on content, and can expand to fit multiple lines.
@@ -10,6 +16,13 @@ tabs: ['Code', 'Usage', 'Style']
 - If a list extends past 25 items, consider using a [data table](/components/data-table) to present this larger set of content.
 - A maximum of one paragraph of text is recommended per row.
 - Nesting items is not recommended, as structured lists are used to present simple data. If you have additional content that needs to be shown, consider using a [data table](/components/data-table), which supports nesting items.
+
+<image-component cols="12"  caption="Structured List to present definitions.">
+
+![Structured list to present definitions.](images/structured-list-usage-2.png)
+
+</image-component>
+
 
 ## Interaction
 

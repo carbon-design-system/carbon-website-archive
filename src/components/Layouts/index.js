@@ -183,12 +183,13 @@ class Layout extends React.Component {
             <div className="website-alert">
               <Information20 className="website-alert__icon" />
               <p className="website-alert__text">
-                <span>Carbon v10 is currently in beta</span>
+                <span>Carbon v10 is in beta</span>
                 <span>;</span>{' '}
-                <span>for production-ready components, use Carbon v9</span>
+                <span>for production-ready components, use Carbon v9.</span>
               </p>
               <a
                 className="website-alert__button"
+                tabIndex="-1"
                 href=" https://www.carbondesignsystem.com">
                 <button class="bx--btn bx--btn--secondary" type="button">
                   <span>Go to v9</span>

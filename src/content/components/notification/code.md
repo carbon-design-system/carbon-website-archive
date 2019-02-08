@@ -3,7 +3,6 @@ title: Notification
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-**Notifications** are messages that communicate information to the user.
 
 <component 
     name="Inline Notification"
