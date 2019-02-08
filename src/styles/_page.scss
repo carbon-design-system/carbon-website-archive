@@ -199,8 +199,13 @@ img[src*='gif'] {
 }
 
 .website-alert__icon {
-  margin: 0 1rem;
+  margin-right: 1.375rem;
+  margin-left: 0.875rem;
   fill: $inverse-01;
+
+  @include breakpoint('lg') {
+    margin: 0 1rem;
+  }
 }
 
 .website-alert__button {
