@@ -20,6 +20,12 @@ _Search_ enables users to specify a word or a phrase to find particular relevant
 
 ## Format
 
+<image-component cols="8" caption="Small Search to filter table data">
+
+![Search at the top of the data table](images/search-usage-1.png)
+
+</image-component>
+
 ### Search fields
 
 Set users' context for the search with helpful placeholder text within the search field (Search documents), that pertains to the page or section the search box is in. Search in the global header should just say Search.
