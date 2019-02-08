@@ -19,7 +19,7 @@ tabs: ['Overview', 'Usage']
     href="https://github.com/IBM/carbon-elements/tree/master/packages/colors"
     type="resource"
     >
-    <img src="images/sketch-icon.png" alt="Github"  />
+    <img src="images/sketch-icon.png" alt="GitHub"  />
 </clickable-tile>
 </grid-wrapper>
 

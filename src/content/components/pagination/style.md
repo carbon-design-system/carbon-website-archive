@@ -23,7 +23,7 @@ Pagination text should be set in set in sentence case with the first letter of e
 
 ## Structure
 
-The Pagination bar is most commonly used in [Data Tables](/components/data-table). The width can vary depending on content and layout, but should span the entire width of the table it's being paired with. The size of the chevron is 8px by 12px.
+The Pagination bar is most commonly used in data tables. The width can vary depending on content and layout, but should span the entire width of the table it's being paired with. The size of the chevron is 8px by 12px.
 
 | Class                                                       | Property                    | px / rem  | Spacing token |
 | ----------------------------------------------------------- | --------------------------- | --------- | ------------- |
@@ -36,7 +36,7 @@ The Pagination bar is most commonly used in [Data Tables](/components/data-table
 | `.bx--pagination--inline .bx--pagination__button--backward` | padding-left, padding-right | 16 / 1    | $spacing-md   |
 | `.bx--pagination .bx--select-input`                         | padding-right               | 20 / 1.25 | -             |
 
-<image-component fixed="default" caption="Structure and spacing measurements for Pagination | px / rem">
+<image-component fixed="large" caption="Structure and spacing measurements for Pagination | px / rem">
 
 ![Structure and spacing for pagination](images/pagination-style-1.png)
 
