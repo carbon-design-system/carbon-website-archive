@@ -54,10 +54,10 @@ Carbon uses _tokens_ and _themes_ to manage color. Tokens are role-based, and th
 
 | Term      | Definition                                                                                                  |
 | --------- | ----------------------------------------------------------------------------------------------------------- |
-| Theme | The set of unique values assigned to the tokens of a Carbon interface                                                            |
-| Token | The code identifier for a unique role or set of roles. Tokens are universal and never change across themes. |
-| Role | The systematic usage(s) of a token. Roles cannot be changed between themes.                                  |
-| Value | The actual style (i.e. hex code) assigned to a token                         |
+| _Theme_ | The set of unique values assigned to the tokens of a Carbon interface                                                            |
+| _Token_ | The code identifier for a unique role or set of roles. Tokens are universal and never change across themes. |
+| _Role_ | The systematic usage(s) of a token. Roles cannot be changed between themes.                                  |
+| _Value_ | The actual style (i.e. hex code) assigned to a token                         |
 
 ### Tokens
 
@@ -74,6 +74,8 @@ Themes serve as an organizational framework for color in Carbon, with each theme
 ![Theme backgrounds](images/theme_swatches.png)
 
 #### Global background colors
+
+<br>
 
 | Theme | Primary Background       | Token                | Hex value    |    |
 | --- | ----------- | ------------------- | -------------------- | ------------------- |
