@@ -27,6 +27,12 @@ We recommend that toast notifications automatically disappear after five seconds
 Icons may provide additional clarity. Icons should be placed to the left of a title. These glyphs (16x16) can be found in the [iconography](/guidelines/iconography/library) library.
 
 
+<image-component cols="8">
+
+![The three icon states](images/notification-usage-1.png)
+
+</image-component>
+
 ## Variations
 
 | Notification type   | Purpose                                                                                                                                                     |
@@ -35,16 +41,34 @@ Icons may provide additional clarity. Icons should be placed to the left of a ti
 | _Inline notification_  | Inline notifications show up in task flows, to notify users of the status of an action. They usually appear at the top of the primary content area. |
 
 
-### Placement
+## Placement
 
 #### Toast notifications
 
 Toast notifications slide in and out a page from the top-right corner. Actionable notifications do not appear on mobile screen widths.
 
+<image-component cols="8">
+
+![Toast notification example](images/notification-usage-2.png)
+
+</image-component>
+
 #### Inline notifications
 
 Inline notifications appear near its related item. In [Forms](/components/form), we recommend placing the inline notification at the bottom of the form, right before the submission buttons. Depending on the context of the page, inline notifications can appear above the content as well.
 
+<image-component cols="8">
 
+![Form example with inline notification](images/notification-usage-3.png)
 
+</image-component>
 
+#### Inline notifications
+
+Inline notifications appear near its related item. In [Forms](/components/form), we recommend placing the inline notification at the bottom of the form, right before the submission buttons. Depending on the context of the page, inline notifications can appear above the content as well.
+
+<image-component cols="8">
+
+![Form example with inline notification](images/notification-usage-3.png)
+
+</image-component>
