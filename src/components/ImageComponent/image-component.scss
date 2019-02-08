@@ -46,9 +46,17 @@
 
   img.gatsby-resp-image-image {
     max-width: 736px;
-    width: 736px !important;
+    width: 100%;
     height: auto !important;
     position: relative !important;
+
+    @include breakpoint('sm') {
+      min-width: 368px !important;
+    }
+
+    @include breakpoint('md') {
+      width: 736px !important;
+    }
   }
 }
 
