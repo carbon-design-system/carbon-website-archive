@@ -19,10 +19,9 @@ Users can choose a numerical value by:
 - Using the ↑ ↓ ← → arrow keys automatically updates the value in the text input and moves the slider handle to the corresponding value.
 - The **step size increment** is how many increments the inputted value and slider handle will jump when using the arrow keys. Make sure to set the step size increments to reasonable values.
 - ↑ ↓ ← → changes the value by one step size increment. _Example: Pressing `→` changes the inputted value from 59 to 60, increasing the value by 1 unit._
-- `Shift` + ↑ ↓ ← → changes the value by 10 step size increments. 
-_Example: Typing_ `Shift` + → _changes the value from 60 to 70, increasing the inputted value by 10 units._
+- `Shift` + ↑ ↓ ← → changes the value by 10 step size increments. _Example: Typing_ `Shift` + → _changes the value from 60 to 70, increasing the inputted value by 10 units._
 
-<image-component fixed="large" caption="Example of a slider interaction">
+<image-component cols="8" caption="Example of a Slider interaction">
 
 ![slider interaction](images/slider-usage-animation-1.gif)
 
