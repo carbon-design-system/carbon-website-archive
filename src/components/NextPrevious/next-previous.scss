@@ -2,6 +2,7 @@
   background: $ibm-colors__gray-90;
   color: $ibm-colors__white;
   min-height: rem(128px);
+  z-index: 9999;
 }
 
 .next-previous-wrapper .ibm--grid,
