@@ -49,8 +49,6 @@ export default class WebsiteTabs extends React.Component {
   render() {
     this.updateTabChildren();
 
-    console.log(this.tabChildren[0].props);
-
     const classNames = classnames({
       'website-tabs': true,
       'bp-tabs-shown': this.state.displayTabsAtSmallerBreakpoints,
