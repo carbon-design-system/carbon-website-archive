@@ -7,7 +7,7 @@ tabs: ['Code', 'Usage', 'Style']
 
 _Pagination_ is used for splitting up content or data into several pages, with a control for navigating to the next or previous page.
 
-Generally, Pagination is used if there are more than 25 items displayed in one view. The default number displayed will vary depending on the context.
+Generally, pagination is used if there are more than 25 items displayed in one view. The default number displayed will vary depending on the context.
 
 ## Best practices
 
@@ -17,7 +17,7 @@ Clearly identify which page the user is on by displaying the current page number
 
 #### Provide various options for navigating
 
-_Previous_ and _next_ chevrons or links are the most useful way for the user to move forward or backward through pages of data. Provide an [Inline select](/components/select) in which users can choose the page they wish to navigate to.
+_Previous_ and _next_ chevrons or links are the most useful way for the user to move forward or backward through pages of data. Provide an [inline select](/components/select) in which users can choose the page they wish to navigate to.
 
 <image-component cols="8">
 
@@ -27,7 +27,7 @@ _Previous_ and _next_ chevrons or links are the most useful way for the user to 
 
 #### Items per page
 
-Use an Inline select within the Pagination bar so the user can change the amount of data displayed per page.
+Use an inline select within the pagination bar so the user can change the amount of data displayed per page.
 
 <image-component cols="8">
 
