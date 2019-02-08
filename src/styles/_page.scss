@@ -186,7 +186,7 @@ img[src*='gif'] {
 
 // Website alert banner
 .website-alert {
-  height: 4rem;
+  height: rem(40px);
   position: fixed;
   top: 0;
   left: 0;
@@ -195,15 +195,16 @@ img[src*='gif'] {
   width: 100%;
   z-index: 9999;
   background: $brand-01;
-
-  @include breakpoint('md') {
-    height: 3rem;
-  }
 }
 
 .website-alert__icon {
-  margin: 0 1rem;
+  margin-right: 1.375rem;
+  margin-left: 0.875rem;
   fill: $inverse-01;
+
+  @include breakpoint('lg') {
+    margin: 0 1rem;
+  }
 }
 
 .website-alert__button {
@@ -248,28 +249,16 @@ img[src*='gif'] {
 }
 
 .website-alert + .bx--header {
-  top: 4rem;
-
-  @include breakpoint('md') {
-    top: 3rem;
-  }
+  top: rem(40px);
 }
 
 .website-alert + .bx--header ~ .bx--side-nav {
-  top: 7rem;
-
-  @include breakpoint('md') {
-    top: 6rem;
-  }
+  top: 5.5rem;
 }
 
 .website-alert + .bx--header ~ .bx--side-nav + div,
 .website-alert + .bx--header ~ .bx--side-nav + .container {
-  margin-top: 7rem;
-
-  @include breakpoint('md') {
-    margin-top: 6rem;
-  }
+  margin-top: 5.5rem;
 }
 
 .website-alert
@@ -277,17 +266,9 @@ img[src*='gif'] {
   ~ .bx--side-nav
   + div
   .color-token-table__theme-switcher--sticky {
-  top: 128px;
-
-  @include breakpoint('md') {
-    top: 112px;
-  }
+  top: 104px;
 }
 
 .website-alert + .bx--header ~ .bx--website-switcher {
-  top: 7rem;
-
-  @include breakpoint('md') {
-    top: 6rem;
-  }
+  top: 5.5rem;
 }
