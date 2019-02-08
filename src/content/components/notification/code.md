@@ -4,16 +4,16 @@ tabs: ['Code', 'Usage', 'Style']
 ---
 
 
-<component 
-    name="Inline Notification"
-    component="notification" 
+<component
+    name="Inline notification"
+    component="notification"
     variation="inline-notification"
     experimental="true"
     >
 </component>
-<component 
-    name="Toast Notification"
-    component="notification" 
+<component
+    name="Toast notification"
+    component="notification"
     variation="toast-notification"
     experimental="true"
     >
