@@ -43,7 +43,7 @@ $ yarn add carbon-components
     <li><a href="#cdn">CDN</a></li>
     <li><a href="#codepen">CodePen</a></li>
     <li><a href="#scss">SCSS</a></li>
-    <li><a href="#javascript">Javascript</a></li>
+    <li><a href="#javascript">JavaScript</a></li>
     <li><a href="#polyfills-for-older-browsers">Polyfills for older browsers</a></li>
     
 </ul>
