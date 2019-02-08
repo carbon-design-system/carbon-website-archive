@@ -61,6 +61,10 @@
   .gatsby-resp-image-link {
     width: 100%;
   }
+
+  img {
+    margin-bottom: 0;
+  }
 }
 
 p.example__text {
@@ -81,7 +85,7 @@ p.example__text {
   content: '';
   position: absolute;
   left: 0;
-  top: 0;
+  top: -1px;
   width: 100%;
   height: 3px;
   z-index: 1;
