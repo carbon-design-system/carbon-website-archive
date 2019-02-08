@@ -68,8 +68,10 @@ class Layout extends React.Component {
   }
 
   handleCloseSearchClick = (evt) => {
+    console.log(evt.target);
     const className = evt.target.classList[0];
-    const filters = ['bx--search', 'bx--search-input', 'bx--search-magnifier', 'bx--search-close', 'ds-dataset-1'];
+    console.log(className); 
+    const filters = ['bx--search', 'bx--search-input', 'bx--search-magnifier', 'ds-dataset-1'];
     if(filters.indexOf(className) === -1) {
       this.handleSearchClick('isSearchOpen');
     }
@@ -252,6 +254,7 @@ class Layout extends React.Component {
                 {this.state.isSearchOpen ? <GlobalSearch /> : 
                 <HeaderGlobalAction
                   className="bx--header__action--search"
+                  aria-label="Search Website"
                   onClick={() =>
                     this.handleSearchClick(
                       'isSearchOpen'
