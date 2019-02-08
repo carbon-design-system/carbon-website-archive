@@ -44,7 +44,7 @@ Carbon Design System is an open-source project and we do encourage teams using C
 
 Add-ons are generally easier to contribute to because they are not fully managed by the Carbon team. Below are the items that you need to pass in order for your contribution to be accepted. You can read our full contribution process for [design](/contributing/designers) and [development](/contributing/developers) to learn more.
 
-|               |                                                     | Core library                                         | Add-ons                                              |
+| Category              | Metric                                                    | Core library                                         | Add-ons                                              |
 | ------------- | --------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- |
 | Accessibility | WCAG AA                                             | <icon name="icon--checkmark--solid" color="green" /> | <icon name="icon--checkmark--solid" color="green" /> |
 |               | Keyboard tabbing                                    | <icon name="icon--checkmark--solid" color="green" /> | <icon name="icon--checkmark--solid" color="green" /> |
