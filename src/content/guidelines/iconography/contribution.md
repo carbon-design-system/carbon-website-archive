@@ -18,13 +18,13 @@ tabs: ['Library', 'Usage', 'Contribution']
 
 Don't see the icon you need in the library? Make your own! Follow these guidelines to ensure visual consistency and proper formatting.
 
-- All icons should be unique and not redundant with any existing icons in the system. Search the [library](/library) for the keyword(s) associated with your proposed new icon to ensure that it is not already represented.
+- All icons should be unique and not redundant with any existing icons in the system. Search the [library](/guidelines/iconography/library) for the keyword(s) associated with your proposed new icon to ensure that it is not already represented.
 - All icons should adhere to the [IBM Design Language visual style](https://w3.ibm.com/design/language/elements/icons/).
 - All icons should comply with IBM [accessibility standards](/guidelines/accessibility/overview).
 - All icons should be usable across all supported platforms and devices.
 - All icons should be understandable by a global audience of users, regardless of nationality or language.
 
-## Producing an icon
+## Making an icon
 
 - Create a 16 x 16 or 32 x 32 px artboard for each icon.
 - 16 px icons should have 1 px padding. 32 px icons should have 2 px padding.
@@ -33,7 +33,7 @@ Don't see the icon you need in the library? Make your own! Follow these guidelin
 - Avoid using the line tool; use the rectangle tool instead. The line tool will place the vector on half pixels.
 - Be aware of automatic alignments which can place vectors on uneven or half pixels.
 - Ungroup icon layers completely. The icon should be on the top-most layer in your artboard.
-- Make sure to properly name layers and artboards (these names will also be exported into the code).
+- Make sure to properly name layers and artboards _(these names will also be exported into the code)_.
 
 ### Production-ready
 
@@ -57,16 +57,16 @@ To be considered production-ready, all icon submissions must be delivered in SVG
 7. Click `Make Exportable` at the bottom of the right toolbar in Sketch.
 8. In the `Export` widget select "SVG" in the format dropdown.
 9. Click `Export 'Artboard-Name'`.
-10. Name icon with the `#name--modifier` convention. (ex. copy.svg, copy--glyph.svg, add.svg, add--glyph.svg).
+10. Name icon with the `#name--modifier` convention _(i.e._ `copy.svg`, `copy--glyph.svg`, `add.svg`, `add--glyph.svg`).
 
 ### Export SVGs from Adobe Illustrator
 
 1. Draw a 16 x 16 or 32 x 32 px artboard. 16 px icons should have 1 px padding. 32 px icons should have 2 px padding.
 2. Place the icon squarely on the artboard, making sure it's aligned to the pixel grid.
-3. Expand all strokes `(Object > Expand)`.
+3. Expand all strokes `Object` → `Expand`.
 4. Select all overlapping shapes and click the "Unite" icon in the Pathfinder panel to merge all of the shapes together.
 5. Make sure the icon is at `#000000` and has no additional styling.
-6. Select `File` > `Save a Copy...`` from the top navigation.
+6. Select `File` → `Save a Copy...` from the top navigation.
 7. On the `Format` dropdown select "SVG."
 8. Below `Format` select `Use Artboard`, then select either all or a range of artboards, depending on your need.
 9. Click `Save`.
@@ -81,7 +81,7 @@ To be considered production-ready, all icon submissions must be delivered in SVG
 
 ## Contribution process
 
-Does your icon have potential for other products at IBM? If so, please consider contributing to the design system. IBM welcomes icon contributions in the form of a pull request to our [icons repository](https://github.com/IBM/carbon-icons). If you're unable to make a pull request, please [submit an issue in the repo](https://github.com/IBM/carbon-icons/issues/new) with the icon attached.
+Does your icon have potential for other products at IBM? If so, please consider contributing to the design system. IBM welcomes icon contributions in the form of a pull request to our [icons repository](https://github.com/IBM/carbon-elements/tree/master/packages/icons). If you're unable to make a pull request, please [submit an issue in the repo](https://github.com/IBM/carbon-elements/issues/new) with the icon attached.
 
 Please note that Carbon contribution is **not required** in order to introduce a new icon into your product's UI. If your icon is determined to be broadly useful in Carbon and passes IBM Brand design reviews, then it may also be integrated into the design system.
 
