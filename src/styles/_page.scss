@@ -80,12 +80,11 @@ body {
   li > code,
   td > code {
     @include reset;
-    @include type-style('code-02');
+    @include type-style('code-01');
     position: relative;
     display: inline;
     padding: rem(1px) $spacing-xs;
     background: transparent;
-    border: 1px solid transparent;
     border-radius: 4px;
     background-color: $ibm-colors__gray-20;
   }
