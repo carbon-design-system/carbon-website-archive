@@ -3,24 +3,36 @@ title: Button
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-## General guidelines
+<anchor-links>
+<ul>
+    <li><a data-scroll href="#general-guidance">General guidance</a></li>
+    <li><a data-scroll href="#variations">Variations</a></li>
+    <li><a data-scroll href="#labels">Labels</a></li>
+    <li><a data-scroll href="#icon-usage">Icon usage</a></li>
+    <li><a data-scroll href="#danger-button-usage">Danger button usage</a></li>
+</ul>
+</anchor-links>
+
+## General guidance
+
+_Buttons_ express what action will occur when the user clicks or touches it. Buttons are used to initialize an action, either in the background or foreground of an experience.
 
 Buttons are used primarily on action items. Some examples include **Add**, **Save**, **Delete**, and **Sign up**. Each page can have one or two **primary** buttons. Any remaining calls-to-action should be represented as secondary buttons.
 
 Do not use buttons as navigational elements. Instead, use [links](/components/link) when the desired action is to take the user to a new page.
 
-## Usage
+## Variations
 
 | Button type      | Purpose                                                                                                                                                                                                                                                                                                                                                                           |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Primary          | For the principal call to action on the page.                                                                                                                                                                                                                                                                                                                                     |
-| Secondary        | For secondary actions on each page.                                                                                                                                                                                                                                                                                                                                               |
-| Button with icon | When words are not enough, icons can be used in buttons to better communicate what the button does. Icons are always paired with text.                                                                                                                                                                                                                                            |
-| Disabled button  | Use when the user cannot proceed until an input is collected.                                                                                                                                                                                                                                                                                                                     |
-| Set of buttons   | When an action required by the user has more than one option, always use a a negative action button (secondary) paired with a positive action button (primary) in that order. Negative action buttons will be on the left; positive action buttons on the right. When these two types of buttons are paired in the correct order, they will automatically space themselves apart. |
+| _Primary_          | For the principal call to action on the page.                                                                                                                                                                                                                                                                                                                                     |
+| _Secondary_        | For secondary actions on each page.                                                                                                                                                                                                                                                                                                                                               |
+| _Button with icon_ | When words are not enough, icons can be used in buttons to better communicate what the button does. Icons are always paired with text.                                                                                                                                                                                                                                            |
+| _Disabled button_  | Use when the user cannot proceed until an input is collected.                                                                                                                                                                                                                                                                                                                     |
+| _Set of buttons_   | When an action required by the user has more than one option, always use a a negative action button (secondary) paired with a positive action button (primary) in that order. Negative action buttons will be on the left; positive action buttons on the right. When these two types of buttons are paired in the correct order, they will automatically space themselves apart. |
 | Small button     | Use when there is not enough vertical space for a regular sized button.                                                                                                                                                                                                                                                                                                           |
-| Ghost button     | When an action does not require primary dominance on the page.                                                                                                                                                                                                                                                                                                                    |
-| Danger button    | When an action has potentially destructive effects on the user's data (delete, remove, etc).                                                                                                                                                                                                                                                                                      |
+| _Ghost button_     | When an action does not require primary dominance on the page.                                                                                                                                                                                                                                                                                                                    |
+| _Danger button_    | When an action has potentially destructive effects on the user's data (delete, remove, etc).                                                                                                                                                                                                                                                                                      |
 
 ## Labels
 

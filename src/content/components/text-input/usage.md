@@ -3,14 +3,17 @@ title: Text input
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-## General guidelines
+## General guidance
+
+_Text inputs_ enable the user to interact with and input data. Use when the application requires long-form content from the user.
+
 
 | Type       | Purpose                                                                           |
 | ---------- | --------------------------------------------------------------------------------- |
 | Text input | When the expected user input is a single line of text, as opposed to a paragraph. |
 | Text area  | When the expected user input is more than one sentence.                           |
 
-## General guidelines
+## Format
 
 ### Labels
 
