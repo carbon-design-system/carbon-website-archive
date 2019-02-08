@@ -72,7 +72,7 @@ All forms are comprised of 6 elements:
 - **Checkboxes** are used when there are lists of options and the user may select any number of choices, including zero, one, or several. In other words, each checkbox is independent of all other checkboxes in the list, so checking one box doesn’t uncheck the others. A stand-alone checkbox, or a toggle can be used for a single option that the user can turn on or off.
 - **Select elements** are used for fields in which a single selection is required and there are a large number of possible options.
 
-<image-component cols="8">
+<image-component cols="12">
 
 ![form logic](images/form-usage-4.png)
 
