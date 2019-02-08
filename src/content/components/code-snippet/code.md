@@ -5,14 +5,14 @@ tabs: ['Code', 'Usage', 'Style']
 
 
 <component
-    name="Code Snippet"
+    name="Code snippet"
     component="code-snippet"
     variation="code-snippet"
     experimental="true"
     >
 </component>
 <component
-    name="Inline Code Snippet"
+    name="Inline code snippet"
     component="code-snippet"
     variation="code-snippet--inline"
     haslightversion="true"
@@ -20,7 +20,7 @@ tabs: ['Code', 'Usage', 'Style']
     >
 </component>
 <component
-    name="Multi Line Code Snippet"
+    name="Multi line code snippet"
     component="code-snippet"
     variation="code-snippet--multi"
     experimental="true"
