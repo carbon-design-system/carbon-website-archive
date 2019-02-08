@@ -10,14 +10,15 @@
   }
 
   .bx--search-magnifier,
-  .bx--search-close {
+  .bx--search-clear {
     width: rem(20px);
     height: rem(20px);
     fill: $ibm-colors__gray-10;
   }
 
   .bx--search-close {
-    right: rem(14px);
+    width: rem(48px);
+    height: rem(48px);
   }
 
   .bx--search--dark .bx--search-input{

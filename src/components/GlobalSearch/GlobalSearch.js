@@ -2,6 +2,11 @@ import React from 'react';
 import { Close20, Search20 } from '@carbon/icons-react';
 
 export default class GlobalSearch extends React.Component {
+  
+  state = {
+    inputValue: ''
+  }
+  
   componentDidMount() {
     if (
       typeof window === `undefined` || // eslint-disable-line no-undef
@@ -15,7 +20,7 @@ export default class GlobalSearch extends React.Component {
       indexName: `carbondesignsystem`,
       inputSelector: `#doc-search`,
       //set this to true if you need to debug css
-      debug: false,
+      debug: true,
     });
   }
 
@@ -34,13 +39,23 @@ export default class GlobalSearch extends React.Component {
           type="text"
           className="bx--search-input"
           id="doc-search"
-          placeholder="Search"
+          placeholder="Search by element, component, or token, etc"
+          value={this.state.inputValue}
+          onChange={(evt) => this.setState({ inputValue: evt.target.value })}
         />
-        <Close20
-          description="Search Clear"
-          className="bx--search-close"
-        />
+        <button 
+          className="bx--search-close" 
+          title="Clear search input" 
+          aria-label="Clear search input"
+          onClick={() => this.setState({ inputValue: '' })}
+        >
+          <Close20
+            description="Search Clear"
+            className="bx--search-clear"
+          />
+        </button>
       </div>
     );
   }
 }
+
