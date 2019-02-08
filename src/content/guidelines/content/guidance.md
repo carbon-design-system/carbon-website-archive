@@ -56,9 +56,9 @@ Only use headline-style capitalization for table/grid column headers and product
 
 #### Do not capitalize the initial letter of the following words:
 
-- articles, except as the first word (a, the, etc.)
-- coordinating conjunctions (but, and, etc. )
-- prepositions, except as the first or last word (to, for, etc.)
+- Articles, except as the first word (a, the, etc.)
+- Coordinating conjunctions (but, and, etc. )
+- Prepositions, except as the first or last word (to, for, etc.)
 
 ## Verb tense
 

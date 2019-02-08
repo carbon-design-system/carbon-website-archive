@@ -10,7 +10,7 @@ _Tabs_ are used to quickly navigate between views within the same context.
 
 #### Text
 
-Each Tab label describes its content and sets user expectations. Labels are concise and use one to two words maximum. Keep in mind that at mobile widths, the character length of a title will impact the experience. Icons are not permitted in Tab labels.
+Each tab label describes its content and sets user expectations. Labels are concise and use one to two words maximum. Keep in mind that at mobile widths, the character length of a title will impact the experience. Icons are not permitted in tab labels.
 
 #### Number of tabs
 

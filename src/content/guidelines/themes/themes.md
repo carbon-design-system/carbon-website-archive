@@ -54,7 +54,7 @@ Carbon's default theme (White theme) is based on the IBM Design Language. When `
 
 ## Customizing a theme
 
-The default theme acts as a starting point; from there designers and developers can define how their own components and styles deviate from the default. Altering one, some, or all of the default token values will result in a new theme. The developer then packages those new values into a new theme scss stylesheet which will replace the values of the default theme:
+The default theme acts as a starting point; from there designers and developers can define how their own components and styles deviate from the default. Altering one, some, or all of the default token values will result in a new theme. The developer then packages those new values into a new theme SCSS stylesheet which will replace the values of the default theme:
 
 1. Create a theme mixin that effectively mimics this structure, but changes up hex values as needed:
 
@@ -111,7 +111,7 @@ The default theme acts as a starting point; from there designers and developers 
 
 2. Name the mixin (i.e., instead of `theme-white`, choose a unique name)
 
-3. `@include UNIQUE-THEME-MIXIN();` in your scss, before importing component scss, etc. 
+3. `@include UNIQUE-THEME-MIXIN();` in your SCSS, before importing component SCSS, etc. 
 
 Alternatively, for relatively minor changes to an existing theme, a developer can make changes on a per-token basis. For example, after importing an existing Carbon theme, she could just set something like `$interactive-01: hotpink;`.
 
@@ -123,10 +123,10 @@ All tokens come pre-baked into the Carbon component source code. Tokens are deno
 
 There are several token categories:
 
-- color
-- spacing
-- typography
-- global
+- Color
+- Spacing
+- Typography
+- Global
 
 ### Color
 
