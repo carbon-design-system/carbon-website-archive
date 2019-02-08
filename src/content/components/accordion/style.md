@@ -23,7 +23,7 @@ All Accordion labels are set in sentence case and should not exceed three words.
 
 ## Structure
 
-There is no limit to the height of an open row, however, the padding specs below should be followed. The width of an Accordion varies based on the content, layout, and page design. The chevron icon can be found on the [iconography](/guidelines/iconography/library) library page. Avoid having any text within 16px / 1rem of the Accordion's sides. Additionally, include padding between labels, body copy, and separation lines to provide breathing room between elements.
+There is no limit to the height of an open row, however, the padding specs below should be followed. The width of an accordion varies based on the content, layout, and page design. The chevron icon can be found on the [iconography](/guidelines/iconography/library) library page. Avoid having any text within 16px / 1rem of the accordion's sides. Additionally, include padding between labels, body copy, and separation lines to provide breathing room between elements.
 
 | Class                          | Property                   | px/rem     | Spacing token |
 | ------------------------------ | -------------------------- | ---------- | ------------- |
@@ -35,8 +35,8 @@ There is no limit to the height of an open row, however, the padding specs below
 | `.bx--accordion__content`      | padding-left               | 40 / 2.5   | $spacing-2xl  |
 | `.bx--accordion__item--active` | padding-bottom             | 24 / 1.5   | $spacing-lg   |
 
-<image-component caption="Structure and spacing measurements for Accordion | px / rem" fixed="default">
+<image-component caption="Structure and spacing measurements for accordion | px / rem" fixed="default">
 
-![Structure and spacing measurements for Accordion](images/test1.png)
+![Structure and spacing measurements for accordion](images/test1.png)
 
 </image-component>
