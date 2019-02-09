@@ -312,3 +312,26 @@ a.#{$prefix}--side-nav__link:focus {
 a.#{$prefix}--side-nav__link > .#{$prefix}--side-nav__icon {
   margin-right: 0;
 }
+
+.bx--side-nav.bx--side-nav--website:not(.side-nav__closed) {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+
+  &::before {
+    content: '';
+    background: $overlay-01;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+  }
+
+  & + div {
+    position: fixed;
+  }
+
+  @include breakpoint('lg') {
+    & + div {
+      position: inherit;
+    }
+  }
+}
