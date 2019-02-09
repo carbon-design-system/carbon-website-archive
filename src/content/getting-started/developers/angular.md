@@ -11,7 +11,7 @@ tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
     href="https://codesandbox.io/s/0129r494ql"
     type="resource"
      >
-    <img src="images/codesandbox.png" alt="CodeSandbox"/>
+    <img src="images/codesandbox.png" alt=""/>
 </clickable-tile>
 </grid-wrapper>
 
