@@ -34,7 +34,7 @@ Notification titles should not exceed more than three words. Notification text s
 
 ## Structure
 
-### Toast Notification
+### Toast notification
 
 | Property                            | Property                                 | px / rem     | Spacing token |
 | ----------------------------------- | ---------------------------------------- | ------------ | ------------- |
@@ -48,15 +48,15 @@ Notification titles should not exceed more than three words. Notification text s
 | `.bx--toast-notification__title`    | padding-bottom                           | 2 / 0.125    | $spacing-2xs  |
 | `.bx--toast-notification__subtitle` | margin-bottom                            | 16 / 1       | $spacing-md   |
 
-<image-component fixed="default" caption="Structure and spacing measurements for a Toast Notification | px / rem">
+<image-component fixed="default" caption="Structure and spacing measurements for a toast notification | px / rem">
 
 ![Structure and spacing for a toast notification](images/notification-style-1.png)
 
 </image-component>
 
-### Inline Notification
+### Inline notification
 
-The width of an Inline Notification will vary based on content.
+The width of an _inline notification_ will vary based on content.
 
 | Property                                                                                                                                                     | Property                    | px / rem   | Spacing token |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------- | ---------- | ------------- |
@@ -69,7 +69,7 @@ The width of an Inline Notification will vary based on content.
 | `.bx--inline-notification`                                                                                                                                   | padding-top, padding-bottom | 12 / 0.75  | $spacing-sm   |
 | `.bx--inline-notification`                                                                                                                                   | padding-left, padding-left  | 16 / 1     | $spacing-md   |
 
-<image-component fixed="default" caption="Structure and spacing measurements for a Inline Notification | px / rem">
+<image-component fixed="default" caption="Structure and spacing measurements for a inline notification | px / rem">
 
 ![Structure and spacing for an inline notification](images/notification-style-2.png)
 
