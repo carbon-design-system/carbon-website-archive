@@ -17,9 +17,9 @@ All steps that have already been completed are indicated by an outlined circle w
 | `.bx--progress-step--complete .bx--progress-label`   | text color       | $brand-01 |
 | `.bx--progress-step--incomplete .bx--progress-label` | text color       | $ui-05    |
 
-<image-component fixed="default" caption="Examples of current, completed, and future steps for Progress Indicator">
+<image-component fixed="default" caption="Examples of current, completed, and future steps for progress indicator">
 
-![Examples of current, completed, and future steps for Progress Indicator](images/progress-indicator-style-1.png)
+![Examples of current, completed, and future steps for progress indicator](images/progress-indicator-style-1.png)
 
 </image-component>
 
@@ -44,22 +44,22 @@ The checkmark icon can be found in the [iconography](/style/iconography/library)
 | `.bx--progress-step svg` | margin-bottom  | 8 / 0.5  | $spacing-xs   |
 | `.bx--progress-label`    | width          | 75%      | -             |
 
-<image-component fixed="default" caption="Structure and spacing measurements for Progress Indicator | px / rem">
+<image-component fixed="default" caption="Structure and spacing measurements for progress indicator | px / rem">
 
-![Structure and spacing for Progress Indicator](images/progress-indicator-style-2.png)
+![Structure and spacing for progress indicator](images/progress-indicator-style-2.png)
 
 </image-component>
 
 ### Recommended
 
-The following specs are not built into the Progress Indicator component but are recommended by design as the proper amount between Progress Indicator elements.
+The following specs are not built into the progress indicator component but are recommended by design as the proper amount between Progress Indicator elements.
 
 | Class           | Property | px / rem | Spacing token |
 | --------------- | -------- | -------- | ------------- |
 | `.bx--progress` | margin   | 16 / 1   | $spacing-md   |
 
-<image-component fixed="default" caption="Recommended structure and spacing measurements for Progress Indicator | px / rem">
+<image-component fixed="default" caption="Recommended structure and spacing measurements for progress indicator | px / rem">
 
-![Structure and spacing for Progress Indicator](images/progress-indicator-style-3.png)
+![Structure and spacing for progress indicator](images/progress-indicator-style-3.png)
 
 </image-component>
