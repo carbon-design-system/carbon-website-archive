@@ -8,6 +8,5 @@ tabs: ['Code', 'Usage']
     component="ui-shell"
     variation="ui-shell" 
     experimental="true"
-    hasReactVersion="true"
     >
 </component>
