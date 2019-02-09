@@ -10,14 +10,14 @@ title: Designers
     href="sketch://add-library/cloud/JaVzz"
     type="resource"
      >
-    <img src="images/sketch-icon.png" alt="Carbon design kit Sketch Shared Library"  />
+    <img src="images/sketch-icon.png" alt=""  />
 </clickable-tile>
 <clickable-tile
     title="Download Carbon design kit from GitHub"
     href="https://github.com/IBM/carbon-design-kit"
     type="resource"
     >
-    <img src="images/github-icon.png" alt="Box design kit github repo"  />
+    <img src="images/github-icon.png" alt=""  />
 </clickable-tile>
 </grid-wrapper>
 
@@ -49,7 +49,7 @@ There are three ways to obtain the kit. For timely updates, install the kit as S
     href="sketch://add-library/cloud/JaVzz"
     type="resource"
      >
-    <img src="images/sketch-icon.png" alt="Carbon design kit Sketch Shared Library"  />
+    <img src="images/sketch-icon.png" alt=""  />
 </clickable-tile>
 </grid-wrapper>
 

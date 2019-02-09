@@ -11,14 +11,14 @@ title: Themes
     href="http://themes.carbondesignsystem.com/"
     type="resource"
     >
-    <img src="images/sandbox-icon.png" alt="Theming sandbox" />
+    <img src="images/sandbox-icon.png" alt="" />
 </clickable-tile>
 <clickable-tile
     title="Carbon themes"
     href="https://github.com/carbon-design-system/carbon-themes"
     type="resource"
     >
-    <img src="images/github-icon.png" alt="Theming repo" />
+    <img src="images/github-icon.png" alt="" />
 </clickable-tile>
 </grid-wrapper>
 
