@@ -15,7 +15,7 @@ tabs: ['Code', 'Usage', 'Style']
 | `.bx--overflow-menu-options__option--danger:hover` | background-color | $hover-danger |
 | `.bx--overflow-menu-options__option--danger`       | border-top       | $ui-04        |
 
-<image-component fixed="default" caption="Text and warning hover examples for Overflow Menu">
+<image-component fixed="default" caption="Text and warning hover examples for overflow menu">
 
 ![Overflow menu text hover example](images/overflow-menu-style-1.png)
 
@@ -23,7 +23,7 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Typography
 
-Overflow Menu text should be set in set in sentence case with the first letter of the first word capitalized.
+Overflow menu text should be set in set in sentence case with the first letter of the first word capitalized.
 
 | Property                          | Font-size (px/rem) | Font-weight  | Type styles |
 | --------------------------------- | ------------------ | ------------ | ----------- |
@@ -37,7 +37,7 @@ Overflow Menu text should be set in set in sentence case with the first letter o
 
 ## Structure
 
-The height of an Overflow Menu is determined by the amount of content in the menu. The Overflow Menu icon can be found in the [iconography](/style/iconography/library) library.
+The height of an overflow menu is determined by the amount of content in the menu. The overflow menu icon can be found in the [iconography](/style/iconography/library) library.
 
 | Class                                        | Property                    | px / rem    | Spacing token |
 | -------------------------------------------- | --------------------------- | ----------- | ------------- |

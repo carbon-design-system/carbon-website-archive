@@ -14,7 +14,7 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Typography
 
-When a user hovers overs a Breadcrumb, the Breadcrumb title should be underlined.
+When a user hovers overs a breadcrumb, the breadcrumb title should be underlined.
 
 | Class       | Font-size (px/rem) | Font-weight | Type style |
 | ----------- | ------------------ | ----------- | ---------- |
@@ -34,7 +34,7 @@ The on-click dropdown should follow the [Overflow Menu](/components/overflow-men
 | ----------------------------- | ----------- | ------ | ------------- |
 | `.bx--breadcrumb-item::after` | margin-left | 16 / 1 | $spacing-md   |
 
-<image-component fixed="default" caption="Structure and spacing measurements for Breadcrumb | px / rem">
+<image-component fixed="default" caption="Structure and spacing measurements for breadcrumb | px / rem">
 
 ![Truncated breadcrumb dropdown example](images/breadcrumb-style-2.png)
 
@@ -42,7 +42,7 @@ The on-click dropdown should follow the [Overflow Menu](/components/overflow-men
 
 ## Recommended
 
-Truncated breadcrumbs are not currently built into the Breadcrumb component. The following colors from the [Overflow Menu](/overflow/style) are recommended for the overflow Breadcrumb list.
+Truncated breadcrumbs are not currently built into the breadcrumb component. The following colors from the [Overflow Menu](/overflow/style) are recommended for the overflow breadcrumb list.
 
 ### Color
 
@@ -63,7 +63,7 @@ Truncated breadcrumbs are not currently built into the Breadcrumb component. The
 | ---------------------------- | ---------- | -------- | ------------- |
 | `.bx--overflow-menu-options` | margin-top | 8 / 0.5  | $spacing-xs   |
 
-<image-component fixed="default" caption="Recommended structure and spacing measurements for Breadcrumb | px / rem">
+<image-component fixed="default" caption="Recommended structure and spacing measurements for breadcrumb | px / rem">
 
 ![Truncated breadcrumb dropdown example](images/breadcrumb-style-3.png)
 
