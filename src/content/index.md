@@ -46,7 +46,7 @@ The Component Libraries give developers a collection of re-usable React componen
     href="https://github.com/ibm/carbon-design-kit"
     type="resource"
     >
-    <img src="resources/images/sketch-icon.png" alt="Carbon Design Kit" />
+    <img src="resources/images/sketch-icon.png" alt="" />
 </clickable-tile>
 <clickable-tile
     dark="true"
@@ -54,7 +54,7 @@ The Component Libraries give developers a collection of re-usable React componen
     href="https://github.com/ibm/carbon-components"
     type="resource"
     >
-    <img src="resources/images/github-icon-inverted.png" alt="Carbon Component Library" />
+    <img src="resources/images/github-icon-inverted.png" alt="" />
 </clickable-tile>
 <clickable-tile
     dark="true"
@@ -62,7 +62,7 @@ The Component Libraries give developers a collection of re-usable React componen
     href="https://github.com/ibm/carbon-components-react"
     type="resource"
     >
-    <img src="resources/images/github-icon-inverted.png" alt="Carbon Components React" />
+    <img src="resources/images/github-icon-inverted.png" alt="" />
 </clickable-tile>
 <clickable-tile
     dark="true"
@@ -70,7 +70,7 @@ The Component Libraries give developers a collection of re-usable React componen
     href="https://github.com/ibm/carbon-components-angular"
     type="resource"
     >
-    <img src="resources/images/github-icon-inverted.png" alt="Carbon Components Angular" />
+    <img src="resources/images/github-icon-inverted.png" alt="" />
 </clickable-tile>
 </grid-wrapper>
 
@@ -85,7 +85,7 @@ The Component Libraries give developers a collection of re-usable React componen
     date="December 10, 2018"
     href="https://medium.com/carbondesign/what-to-expect-in-carbon-10-5af1bd6e25f6"
     >
-    <img src="resources/images/homepage_01.png" alt="What to expect in Carbon 10" />
+    <img src="resources/images/homepage_01.png" alt="" />
 </clickable-tile>
 <clickable-tile
     dark="true"
@@ -95,7 +95,7 @@ The Component Libraries give developers a collection of re-usable React componen
     date="October 19, 2018"
     href="https://medium.com/carbondesign/up-running-with-carbon-react-in-less-than-5-minutes-25d43cca059e"
     >
-    <img src="resources/images/homepage_02.png" alt="Up & Running with Carbon React in less than 5 minutes" />
+    <img src="resources/images/homepage_02.png" alt="" />
 </clickable-tile>
 <clickable-tile
     dark="true"
@@ -105,6 +105,6 @@ The Component Libraries give developers a collection of re-usable React componen
     date="October 16, 2018"
     href="https://medium.com/carbondesign/hacktoberfest-with-carbon-95c48943f586"
     >
-    <img src="resources/images/Article_03.png" alt="Hacktoberfest with Carbon" />
+    <img src="resources/images/Article_03.png" alt="" />
 </clickable-tile>
 </grid-wrapper>
