@@ -47,6 +47,7 @@ class Layout extends React.Component {
       durationMax: 800,
       easing: 'easeInOutCubic',
       offset: 24,
+      topOnEmptyHash: false,
     });
   }
 
