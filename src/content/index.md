@@ -2,7 +2,7 @@
 title: Homepage
 ---
 
-### Getting Started
+### Getting started
 
 <feature-tile
     href="/getting-started/designers"
@@ -35,9 +35,9 @@ title: Homepage
 <img src="homepage/images/getting-started-developers-mobile.png" alt="Get started for developers" />
 </feature-tile>
 
-### Other Resources
+### Other resources
 
-The Component Libraries give developers a collection of re-usable React components they can use for building websites and user interfaces. See a [complete list of resources.](/resources)
+The component libraries give developers a collection of re-usable React components they can use for building websites and user interfaces. See a [complete list of resources.](/resources)
 
 <grid-wrapper className="tile--resource--no-margin" col_lg="8" flex="true" bleed="true">
 <clickable-tile
@@ -74,7 +74,7 @@ The Component Libraries give developers a collection of re-usable React componen
 </clickable-tile>
 </grid-wrapper>
 
-### Latest Articles
+### Latest articles
 
 <grid-wrapper flex="true" bleed="true">
 <clickable-tile
