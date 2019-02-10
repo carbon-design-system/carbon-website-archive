@@ -1,5 +1,10 @@
 const path = require('path');
 
+const replaceTable = {
+  breakingChangesX: true,
+  componentsX: true,
+};
+
 module.exports = storybookBaseConfig => {
   const babelLoaderRule = storybookBaseConfig.module.rules.find(rule =>
     /\/babel-loader\//i.test(rule.loader)
@@ -55,6 +60,17 @@ module.exports = storybookBaseConfig => {
               },
             },
           ],
+        },
+        {
+          test: /(\/|\\)FeatureFlags\.js$/,
+          loader: 'string-replace-loader',
+          options: {
+            multiple: Object.keys(replaceTable).map(key => ({
+              search: `exports\.${key}\\s*=\\s*false`,
+              replace: `exports.${key} = ${replaceTable[key]}`,
+              flags: 'i',
+            })),
+          },
         },
         {
           test: /\.md$/,
