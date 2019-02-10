@@ -94,6 +94,14 @@
 //---------------------------------------
 // Experimental Notification
 //---------------------------------------
+.component-example__live.component-example__live--notification
+  .component-example__live--rendered
+  > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .component-example .bx--inline-notification {
   display: inline-flex;
 }
