@@ -120,7 +120,7 @@
       "modal": {
         "title": "Modal"
       },
-      "multi-select": {
+      "multi-select/code": {
         "title": "Multi select"
       },
       "notification": {
