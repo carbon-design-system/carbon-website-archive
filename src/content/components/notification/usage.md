@@ -12,11 +12,11 @@ _Notifications_ are messages that communicate information to the user.
 
 #### Title
 
-All notifications have subject titles, which should be short and descriptive. _Example: “Tester-app-02 has crashed.”_
+All notifications have subject titles, which should be short and descriptive. (Example: “Tester-app-02 has crashed.”)
 
 #### Message
 
-We recommend the body of the notification be contained within two lines. Be descriptive and include any troubleshooting actions or next steps. When possible, communicate the main message using just the title. You can include [Links](/components/link) within the notification body that redirect the user to next steps.
+We recommend the body of the notification be contained within two lines. Be descriptive and include any troubleshooting actions or next steps. When possible, communicate the main message using just the title. You can include [links](/components/link) within the notification body that redirect the user to next steps.
 
 #### Dismissal
 
@@ -55,7 +55,7 @@ Toast notifications slide in and out a page from the top-right corner. Actionabl
 
 #### Inline notifications
 
-Inline notifications appear near its related item. In [Forms](/components/form), we recommend placing the inline notification at the bottom of the form, right before the submission buttons. Depending on the context of the page, inline notifications can appear above the content as well.
+Inline notifications appear near its related item. In [forms](/components/form), we recommend placing the inline notification at the bottom of the form, right before the submission buttons. Depending on the context of the page, inline notifications can appear above the content as well.
 
 <image-component cols="8">
 
