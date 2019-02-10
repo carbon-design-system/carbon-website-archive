@@ -25,6 +25,6 @@ title: Developers
 - [Commit message guidelines](https://github.com/ibm/carbon-components-react/blob/master/.github/CONTRIBUTING.md#commit-message-guidelines)
 - [Testing](https://github.com/ibm/carbon-components-react/blob/master/.github/CONTRIBUTING.md#testing)
 
-## Carbon component Angular
+## Carbon components Angular
 
 [Contributing guidelines](https://github.com/IBM/carbon-components-angular/blob/master/README.md#contributing)

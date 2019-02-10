@@ -34,7 +34,7 @@ Carbon X, aka v10, is currently in Alpha release. Please use this opportunity to
 
 The Beta release of Carbon X will arrive with a completely revised Sketch design kit, updated for the new IBM Design Language (f.k.a. "Duo"). All components in the kit have been reskinned, and colors, icons, typrography, UI shell, and grid elements will also reflect the new IBM Design Language.
 
-Internal IBM users will now be able to auto-sync the design kit with Box Drive, allowing users to update the Sketch library automatically. The manual download method will also still be available via the [Github repository](https://github.com/IBM/carbon-design-kit).
+Internal IBM users will now be able to auto-sync the design kit with Box Drive, allowing users to update the Sketch library automatically. The manual download method will also still be available via the [GitHub repository](https://github.com/IBM/carbon-design-kit).
 
 The Digital Design group has published a detailed guide on [setting up auto-sync for the design kit using Box Drive](https://www.ibm.com/standards/web/design-kit/).
 

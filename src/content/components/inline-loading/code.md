@@ -4,9 +4,9 @@ tabs: ['Code', 'Usage', 'Style']
 ---
 
 
-<component 
-    name="Inline Loading"
-    component="inline-loading" 
+<component
+    name="Inline loading"
+    component="inline-loading"
     variation="inline-loading"
     experimental="true"
     >

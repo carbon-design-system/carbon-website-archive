@@ -20,7 +20,7 @@ tabs: ['Basics', 'Choreography', 'Resources']
 
 ## Style
 
-IBM Design System recognizes different moments in user's experience, and offers two styles of motion - the Productive motion, and the Expressive motion. The motion curves are designed to reflect the philosophical duality of Man and Machine.
+IBM Design System recognizes different moments in user's experience, and offers two styles of motion - _productive_ motion, and _expressive_ motion. The motion curves are designed to reflect the philosophical duality of Man and Machine.
 
 <website-tabs>
 <tab label="Curves"><div>
@@ -29,12 +29,12 @@ IBM Design System recognizes different moments in user's experience, and offers 
 
 <div>
 <p>Productive</p>
-<img src="images/Motion_overview_Curves_productive.svg" alt="Curve graphs representing differences between Productive and Expressive animation curves" />
+<img src="images/Motion_overview_Curves_productive.svg" alt="Curve graphs representing differences between productive and expressive animation curves" />
 </div>
 
 <div>
 <p>Expressive</p>
-<img src="images/Motion_overview_Curves_expressive.svg" alt="Curve graphs representing differences between Productive and Expressive animation curves" />
+<img src="images/Motion_overview_Curves_expressive.svg" alt="Curve graphs representing differences between productive and expressive animation curves" />
 </div>
 
 </simple-columns>
@@ -64,7 +64,7 @@ Expressive motion delivers enthusiastic and vibrant, thus more visible movement.
 
 Productive and Expression are both essential to an interface. Reserve Expressive motion for occasional, important moments to better capture user’s attention, and offer rhythmic break to the productive experience.
 
-Our [Components](../../components/overview/) have basic motion build in. Use this guidance to customize motion, combine and coordinate motion through out experiences.
+Our [components](../../components/overview/) have basic motion build in. Use this guidance to customize motion, combine and coordinate motion through out experiences.
 
 <grid-wrapper col_lg="12" flex="true">
 <do-dont-example correct="true" full_width="true" label="Productive moments are labeled blue, and expressive moments are labeled magenta.">
@@ -174,11 +174,11 @@ Use `exit-easing` when removing elements from view, such as closing a modal or t
 | CSS           | cubic-bezier(0.2, 0, 1, 0.9)    | cubic-bezier(0.4, 0.14, 1, 1)   |
 | After Effects | Outgoing 20%, incoming 0%       | Outgoing 40%, incoming 0%       |
 
-An exception to exits: if an element leaves the view but stays nearby, ready to reappear upon user action, use Standard easing instead. A good example of this is a side panel. The panel would leave the view, but slows down as it exits, implying that it would come to rest just outside the view, and ready to be recalled.
+An exception to exits: if an element leaves the view but stays nearby, ready to reappear upon user action, use standard easing instead. A good example of this is a side panel. The panel would leave the view, but slows down as it exits, implying that it would come to rest just outside the view, and ready to be recalled.
 
 [ VIDEO ]
 
-### Easing Curve Summary
+### Easing curve summary
 
 Cubic-bezier curve notation is the standard way to express easing curves. [IBM Motion Package](https://github.com/IBM/carbon-elements/tree/master/packages/motion) has the easing curves stored as tokens for fast access.
 
