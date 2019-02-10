@@ -1,0 +1,31 @@
+{
+  "name": "multiselect",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "carbon-components": "9.68.13",
+    "carbon-components-react": "6.82.0",
+    "carbon-icons": "7.0.7",
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
+    "react-scripts": "2.0.3"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "ajv": "6.8.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
