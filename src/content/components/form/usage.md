@@ -68,7 +68,7 @@ All forms are comprised of 6 elements:
 
 ## Form logic
 
-- **Radio Buttons** are used when there is a list of two or more options that are mutually exclusive and the user must select exactly one choice. In other words, clicking a non-selected radio button will deselect whatever other button was previously selected in the list.
+- **Radio buttons** are used when there is a list of two or more options that are mutually exclusive and the user must select exactly one choice. In other words, clicking a non-selected radio button will deselect whatever other button was previously selected in the list.
 - **Checkboxes** are used when there are lists of options and the user may select any number of choices, including zero, one, or several. In other words, each checkbox is independent of all other checkboxes in the list, so checking one box doesn’t uncheck the others. A stand-alone checkbox, or a toggle can be used for a single option that the user can turn on or off.
 - **Select elements** are used for fields in which a single selection is required and there are a large number of possible options.
 
@@ -79,13 +79,13 @@ All forms are comprised of 6 elements:
 </image-component>
 
 
-## Validation and errors
+## Validation & errors
 
 ### Error messaging
 
-Effective error messaging can help the user to understand the problem and how to fix it. First, inform the user what has happened, then provide guidance on next steps or possible resolutions. [Inline Notifications](/components/notification) can be used to state the general problem with the users input, such as _“Please input the required fields.”_ Inline Notifications can occur pre or post submission, depending on the type of data the user is inputting.
+Effective error messaging can help the user to understand the problem and how to fix it. First, inform the user what has happened, then provide guidance on next steps or possible resolutions. [Inline notifications](/components/notification) can be used to state the general problem with the users input, such as _“Please input the required fields.”_ Inline Notifications can occur pre or post submission, depending on the type of data the user is inputting.
 
-<image-component cols="8" caption="Inline Notification for error messaging">
+<image-component cols="8" caption="Inline notification for error messaging">
 
 ![Inline notification on forms](images/form-usage-2.png)
 
@@ -109,7 +109,7 @@ The validation label below the field should be as informative as possible when d
 
 All fields in a form are assumed required, with optional fields being tagged as so.
 
-<image-component cols="8" caption="Denote optional fields within a Form">
+<image-component cols="8" caption="Denote optional fields within a form">
 
 ![optional fields in a form](images/form-usage-5.png)
 

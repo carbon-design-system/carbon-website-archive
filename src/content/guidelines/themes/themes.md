@@ -11,14 +11,14 @@ title: Themes
     href="http://themes.carbondesignsystem.com/"
     type="resource"
     >
-    <img src="images/sandbox-icon.png" alt="Theming sandbox" />
+    <img src="images/sandbox-icon.png" alt="" />
 </clickable-tile>
 <clickable-tile
     title="Carbon themes"
     href="https://github.com/carbon-design-system/carbon-themes"
     type="resource"
     >
-    <img src="images/github-icon.png" alt="Theming repo" />
+    <img src="images/github-icon.png" alt="" />
 </clickable-tile>
 </grid-wrapper>
 
@@ -53,7 +53,7 @@ Carbon's default theme (White theme) is based on the IBM Design Language. When `
 
 ## Customizing a theme
 
-The default theme acts as a starting point; from there designers and developers can define how their own components and styles deviate from the default. Altering one, some, or all of the default token values will result in a new theme. The developer then packages those new values into a new theme scss stylesheet which will replace the values of the default theme:
+The default theme acts as a starting point; from there designers and developers can define how their own components and styles deviate from the default. Altering one, some, or all of the default token values will result in a new theme. The developer then packages those new values into a new theme SCSS stylesheet which will replace the values of the default theme:
 
 ####1. Create a theme mixin that effectively mimics this structure, but changes up hex values as needed:
 
@@ -116,6 +116,7 @@ The default theme acts as a starting point; from there designers and developers 
 
 ####3. Include this in your scss, before importing component scss, etc.:
 
+
 `@include UNIQUE-THEME-MIXIN();` 
 
 Alternatively, for relatively minor changes to an existing theme, a developer can make changes on a per-token basis. For example, after importing an existing Carbon theme, she could just set something like `$interactive-01: hotpink;`.
@@ -128,10 +129,10 @@ All tokens come pre-baked into the Carbon component source code. Tokens are deno
 
 There are several token categories:
 
-- color
-- spacing
-- typography
-- global
+- Color
+- Spacing
+- Typography
+- Global
 
 ### Color
 
