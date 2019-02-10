@@ -87,6 +87,9 @@
       "code-snippet": {
         "title": "Code snippet"
       },
+      "combo-box/code": {
+        "title": "Combo box"
+      },
       "content-switcher": {
         "title": "Content switcher"
       },
@@ -116,6 +119,9 @@
       },
       "modal": {
         "title": "Modal"
+      },
+      "multi-select": {
+        "title": "Multi select"
       },
       "notification": {
         "title": "Notification"
