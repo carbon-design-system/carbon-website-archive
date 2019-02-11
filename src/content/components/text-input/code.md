@@ -9,6 +9,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="text-input"
     variation="text-input"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 
@@ -17,7 +18,9 @@ tabs: ['Code', 'Usage', 'Style']
     component="text-area"
     variation="text-area"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 
-<component-docs component="text-input" experimental="true"></component-docs>
+<component-docs component="text-input" experimental="true"
+hasReactVersion="true"></component-docs>

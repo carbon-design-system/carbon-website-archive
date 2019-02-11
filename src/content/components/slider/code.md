@@ -8,6 +8,8 @@ tabs: ['Code', 'Usage', 'Style']
     component="slider" 
     variation="slider"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
-<component-docs component="slider" experimental="true"></component-docs>
+<component-docs component="slider" experimental="true"
+hasReactVersion="true"></component-docs>

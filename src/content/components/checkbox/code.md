@@ -9,6 +9,8 @@ tabs: ['Code', 'Usage', 'Style']
     component="checkbox" 
     variation="checkbox"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
-<component-docs component="checkbox" experimental="true"></component-docs>
+<component-docs component="checkbox" experimental="true"
+hasReactVersion="true"></component-docs>

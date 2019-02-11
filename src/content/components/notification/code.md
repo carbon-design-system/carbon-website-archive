@@ -9,6 +9,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="notification"
     variation="inline-notification"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component
@@ -16,6 +17,8 @@ tabs: ['Code', 'Usage', 'Style']
     component="notification"
     variation="toast-notification"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
-<component-docs component="notification" experimental="true"></component-docs>
+<component-docs component="notification" experimental="true"
+hasReactVersion="true"></component-docs>

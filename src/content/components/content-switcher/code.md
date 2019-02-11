@@ -9,6 +9,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="content-switcher" 
     variation="content-switcher"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component 
@@ -16,6 +17,8 @@ tabs: ['Code', 'Usage', 'Style']
     component="content-switcher" 
     variation="content-switcher--with-icon"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
-<component-docs component="content-switcher" experimental="true"></component-docs>
+<component-docs component="content-switcher" experimental="true"
+hasReactVersion="true"></component-docs>

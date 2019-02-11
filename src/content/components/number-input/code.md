@@ -9,6 +9,8 @@ tabs: ['Code', 'Usage', 'Style']
     component="number-input" 
     variation="number-input"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
-<component-docs component="number-input" experimental="true"></component-docs>
+<component-docs component="number-input" experimental="true"
+hasReactVersion="true"></component-docs>

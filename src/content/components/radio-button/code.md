@@ -10,6 +10,8 @@ tabs: ['Code', 'Usage', 'Style']
     component="radio-button"
     variation="radio-button"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
-<component-docs component="radio-button" experimental="true"></component-docs>
+<component-docs component="radio-button" experimental="true"
+hasReactVersion="true"></component-docs>

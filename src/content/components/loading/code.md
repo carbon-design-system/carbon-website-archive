@@ -10,6 +10,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="loading" 
     variation="loading"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component 
@@ -17,6 +18,8 @@ tabs: ['Code', 'Usage', 'Style']
     component="loading" 
     variation="loading--small"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
-<component-docs component="loading" experimental="true"></component-docs>
+<component-docs component="loading" experimental="true"
+hasReactVersion="true"></component-docs>
