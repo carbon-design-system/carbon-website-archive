@@ -64,7 +64,7 @@ When multiple animated elements coexist or interact with each other within the s
 
 ### Consistency
 
-When elements convey the same meaning, or perform the same functions, use the same motion for them. Similarly, actions with dramatically different meaning and intente should carry different motions. This helps to reinforce the meaning behind a motion, and improves user’s proficiency with the interface.
+When elements convey the same meaning, or perform the same functions, use the same motion for them. Similarly, actions with dramatically different meaning and intent should carry different motions. This helps to reinforce the meaning behind a motion, and improves user’s proficiency with the interface.
 
 <grid-wrapper col_lg="12" flex="true">
 <do-dont-example correct="true" full_width="true" label="Both expanding a row of a data table and opening a dropdown uses a chevron. The intent is to reveal additional content hidden in a seam, therefore they should have the same motion style (productive) and easing (entrance, standard), albeit different durations due to their difference in size.">
@@ -139,7 +139,7 @@ When multiple elements need to animate, distribute their entrances over time in 
 </do-dont-example>
 </grid-wrapper>
 
-Sequence the entrance of page content when possible. Start with the most orienting content, such as the static content* and header, and end with the most important information, such as the _call to action_ button or a calculation result, to focus user’s attention to them.
+Sequence the loading of page content when possible. Start with the most orienting content, such as the static content* and header, and end with the most important information, such as the _call to action_ button or a calculation result, to focus user’s attention to them.
 
 <grid-wrapper col_lg="12" flex="true">
 <do-dont-example correct="true" full_width="true" label="Sequencing of this interface prioritizes Call to Action button, and reserves data visualization for later when users begin to interact with it.">
@@ -155,6 +155,6 @@ Follow this recommended sequence of different types of content when choreographi
 |-----|-----------------------|---------------------------------------------------------|
 | 1   | Static content        | UI shell, top and side navigation                       |
 | 2   | Static content (body) | Header, written content, images                         |
-| 3   | Dynamic content       | Data within a data table, querie results from data base |
+| 3   | Dynamic content       | Data within a data table, query results from data base |
 | 4   | Primary action        | Primary action button                                   |
 | 5   | Animated content      | Data visualizations                                     |
