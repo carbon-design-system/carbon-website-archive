@@ -24,7 +24,7 @@ title: Designers
 <anchor-links>
 <ul>
     <li><a href="#carbon-design-kit">Carbon Design Kit</a></li>
-    <li><a href="#how-to-get-it">How to get it</a></li>
+    <li><a href="#how-to-get-it">How to get the kit</a></li>
     <li><a href="#get-the-kit-via-box">Get the kit via Box</a></li>
     <li><a href="#download-the-kit-from-github">Download the kit from GitHub</a></li>
     <li><a href="#connect-with-us">Connect with us</a></li>
