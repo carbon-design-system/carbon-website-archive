@@ -35,6 +35,11 @@
   }
 }
 
+// APP SWITCHER
 .bx--website-switcher {
-  box-shadow: 0;
+  box-shadow: none;
+}
+
+.bx--website-switcher--expanded {
+  box-shadow: 0 rem(2px) rem(8px) rgba(0, 0, 0, 0.2);
 }
