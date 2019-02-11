@@ -1,5 +1,6 @@
 .bx--side-nav {
   width: rem(256px);
+  will-change: transform;
   transition: $transition--expansion transform $carbon--standard-easing;
   transform: translateX(0);
 }
@@ -15,6 +16,7 @@
   .side-nav__closed,
   .side-nav__closed--final {
     border-right-width: 1px;
+    transform: translateX(0);
   }
 }
 

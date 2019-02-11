@@ -317,6 +317,7 @@ a.#{$prefix}--side-nav__link > .#{$prefix}--side-nav__icon {
   content: '';
   visibility: hidden;
   opacity: 0;
+  will-change: opacity;
   transition: $transition--expansion opacity $carbon--standard-easing,
   $transition--expansion visibility $carbon--standard-easing;
   background: $overlay-01;
@@ -329,18 +330,23 @@ a.#{$prefix}--side-nav__link > .#{$prefix}--side-nav__icon {
 .bx--side-nav.bx--side-nav--website:not(.side-nav__closed) {
   box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
 
+  & + div {
+    position: fixed;
+  }
+
   & + div::before {
     opacity: 1;
     visibility: initial;
   }
 
-  & + div {
-    position: fixed;
-  }
-
   @include breakpoint('lg') {
     & + div {
       position: inherit;
+    }
+
+    & + div::before {
+      visibility: hidden;
+      opacity: 0;
     }
   }
 }
