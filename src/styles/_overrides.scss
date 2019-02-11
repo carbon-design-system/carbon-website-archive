@@ -1,4 +1,7 @@
-.component-example .component-example__live .content-switcher .bx--content-switcher {
+.component-example
+  .component-example__live
+  .content-switcher
+  .bx--content-switcher {
   height: auto;
 
   @include breakpoint('md') {
@@ -11,8 +14,8 @@
   }
 }
 
-
-.component-example .component-example__live.component-example__live--code-snippet {
+.component-example
+  .component-example__live.component-example__live--code-snippet {
   padding: 2rem 0 2.5rem;
 
   & > div {
@@ -30,4 +33,8 @@
       width: auto;
     }
   }
+}
+
+.bx--website-switcher {
+  box-shadow: 0;
 }
