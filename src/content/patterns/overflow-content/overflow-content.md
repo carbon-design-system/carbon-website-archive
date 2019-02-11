@@ -2,9 +2,20 @@
 title: Overflow Content
 ---
 
-**Overflow content** is text, such as a paragraph or a text string, that exceeds a desired space. It also applies to a series of components that surpass a given space. Overflow content is typically reduced to fit a space or reduce repetition. Truncation and ‘Show more’ buttons are two ways to indicate that overflow content is continued elsewhere or below the fold.
+## Purpose
+
+_Overflow content_ is text, such as a paragraph or a text string, that exceeds a desired space. It also applies to a series of components that surpass a given space. Overflow content is typically reduced to fit a space or reduce repetition. Truncation and ‘Show more’ buttons are two ways to indicate that overflow content is continued elsewhere or below the fold.
 
 ## Truncation
+
+<anchor-links small="true">
+<ul>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#variations">Variations</a></li>
+    <li><a href="#code">Code</a></li>
+    <li><a href="#show-more-buttons">‘Show more’ buttons</a></li>
+</ul>
+</anchor-links>
 
 Truncation, or shortening, is typically used for static text or links that exceed the size of their container. Truncated items are represented by an ellipsis `...` and should represent three or more truncated characters in a text string. There must be at least four characters of non-truncated content in a truncated string. Truncated items always include a browser tooltip on hover to show the entire string, name, or phrase that the ellipsis is representing. The only time a browser tooltip does not need to be used is at the end of a truncated paragraph.
 
@@ -38,9 +49,11 @@ There are three types of truncation: front-line, mid-line, and end-line.
 
 | Type           | Purpose                                                                                                                                                                                                                        | Default                       | Truncated                   |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------- | --------------------------- |
-| **Front-line** | Used at the beginning of a text string to indicate the text is continued from a previous location.                                                                                                                             | `123456789`                   | ...56789                    |
-| **Mid-line**   | Used when several text strings have different beginnings and/or endings but the exact same middle characters. Can also be used to shorten a phrase or text string when the end of a string cannot be truncated by an ellipsis. | `123400005678` `987600004321` | `1234...5678` `9876...4321` |
-| **End-line**   | Used at the end of a character string or paragraph to indicate that there is more content in another location, to show that the pattern in a sequence continues, or to shorten a long text string.                             | `123456789`                   | `12345...`                  |
+| _Front-line_ | Used at the beginning of a text string to indicate the text is continued from a previous location.                                                                                                                             | `123456789`                   | `...56789`                   |
+| _Mid-line_   | Used when several text strings have different beginnings and/or endings but the exact same middle characters. Can also be used to shorten a phrase or text string when the end of a string cannot be truncated by an ellipsis. | `123400005678` `987600004321` | `1234...5678` `9876...4321` |
+| _End-line_  | Used at the end of a character string or paragraph to indicate that there is more content in another location, to show that the pattern in a sequence continues, or to shorten a long text string.                             | `123456789`                   | `12345...`                  |
+
+####Ellipses
 
 An ellipsis on its own may also represent condensed content. This type of truncation requires an overflow menu on hover instead of a browser tooltip.
 
@@ -56,10 +69,12 @@ To use front- and end-line truncation, enter the appropriate class below and add
 
 | Type          | Class                       |
 | ------------- | --------------------------- |
-| **Frontline** | `.bx--text-truncate--front` |
-| **End-line**  | `.bx--text-truncate--end`   |
+| _Frontline_ | `.bx--text-truncate--front` |
+| _End-line_  | `.bx--text-truncate--end`   |
 
-**Example Usage**
+####Example Usage
+
+<br>
 
 ```html
 <div class="container">
@@ -84,7 +99,9 @@ To use front- and end-line truncation, enter the appropriate class below and add
 }
 ```
 
-**Result**
+####Result
+
+<br>
 
 <image-component cols="8">
 
