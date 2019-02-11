@@ -99,7 +99,7 @@ To use SVG sprite files, they **must** be distributed through a web server and w
 
 `path_to_static-assets` is the path to your static assets where `carbon-icons.svg` is located.
 
-<p>`icon_name` is the icon name, which will display the corresponding icon. Refer to the <a href="/guidelines/iconography" target=blank>iconography library</a> page for a full list of icon names.</p>
+`icon_name` is the icon name, which will display the corresponding icon. Refer to the [iconography library]("/guidelines/iconography") page for a full list of icon names.
 
 ### CSS
 
