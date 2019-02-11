@@ -132,7 +132,7 @@ Grid gutters can be absent as shown above, or present as shown below. Th margin 
 
 Use this set of standard breakpoints to maintain layout integrity across screen sizes. For best results, test designs and code at each of these standard breakpoints.
 
-Create **Custom Breakpoints** to accommodate special needs, by writing your own media queries and CSS rules. Refer to the [grid code package](https://github.com/IBM/carbon-elements/tree/master/packages/grid) for more information.
+Create custom breakpoints to accommodate special needs, by writing your own media queries and CSS rules. Refer to the [grid code package](https://github.com/IBM/carbon-elements/tree/master/packages/grid) for more information.
 
 | Breakpoint | Value (px/rem) | Columns | Size (%) | Size  | Padding | Margin |
 | ---------- | -------------- | ------- | -------- | ----- | ------- | ------ |
@@ -143,8 +143,6 @@ Create **Custom Breakpoints** to accommodate special needs, by writing your own 
 | Max        | 1584 / 99      | 16      | 6.25%    | 96 px | 16 px   | 24 px  |
 
 For best results, test designs and code at each of these standard breakpoints.
-
-Create **custom breakpoints** to accommodate special needs, by writing your own media queries and CSS rules. Refer to the grid code package for more information.
 
 `vimeo: https://vimeo.com/292015984`
 
