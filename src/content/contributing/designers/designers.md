@@ -2,9 +2,11 @@
 title: Designers
 ---
 
-**Welcome and thank you for contributing!** The Carbon team is committed to maintaining consistent, quality guidelines. We welcome all feedback, designs, or ideas in order to produce the best possible experience for our users. Below are our contribution models and best practices.
+
 
 ## Contribution models
+
+Welcome and thank you for contributing! The Carbon team is committed to maintaining consistent, quality guidelines. We welcome all feedback, designs, or ideas in order to produce the best possible experience for our users. Below are our contribution models and best practices.
 
 Carbon has three different levels of contribution. Click on the contribution level name to read more details about the workflow process for that particular level of contribution.
 
@@ -32,7 +34,7 @@ Every contribution must meet the same standards as Carbon assets before it may b
 
 - Is your design [WCAG AA](https://www.w3.org/WAI/WCAG20/quickref/) accessible?
 - Does your design pass [color contrast](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) ratio?
-- Have you considered [keyboard tabbing](/guidelines/accessibility) and focus states?
+- Have you considered [keyboard tabbing](/guidelines/accessibility/keyboard) and focus states?
 
 #### Visual style and UX patterns
 
