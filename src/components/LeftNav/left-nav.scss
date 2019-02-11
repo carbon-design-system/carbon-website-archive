@@ -1,6 +1,12 @@
+.bx--side-nav {
+  width: rem(256px);
+  transition: $transition--expansion transform $carbon--standard-easing;
+  transform: translateX(0);
+}
+
 .side-nav__closed,
 .side-nav__closed--final {
-  width: 0;
+  transform: translateX(-(rem(256px)));
   border-right-width: 0px;
 }
 
@@ -9,7 +15,6 @@
   .side-nav__closed,
   .side-nav__closed--final {
     border-right-width: 1px;
-    width: rem(256px);
   }
 }
 
