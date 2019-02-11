@@ -167,7 +167,7 @@ Carbon uses the IBM Design Language as our guiding principle. These core values 
 <clickable-tile
     type="article"
     title="Introducing Carbon Themes"
-    author="Bethany Sonefield"
+    author="Bethany Sonefeld"
     date="August 11, 2017"
     href="https://medium.com/design-ibm/introducing-carbon-themes-83d3985a8627"
     >
@@ -176,7 +176,7 @@ Carbon uses the IBM Design Language as our guiding principle. These core values 
 <clickable-tile
     type="article"
     title="Carbon: Designing inside Big Blue"
-    author="Bethany Sonefield"
+    author="Bethany Sonefeld"
     date="March 30, 2017"
     href="https://medium.com/design-ibm/carbon-designing-inside-big-blue-8577883cfe42"
     >
