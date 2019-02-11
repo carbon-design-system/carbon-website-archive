@@ -127,7 +127,7 @@ Motion can help establishing a sense of continuity between screens and experienc
 </do-dont-example>
 </grid-wrapper>
 
-### Sequence & Stagger
+### Sequence & stagger
 
 When multiple elements need to animate, distribute their entrances over time in stead of introducing everything at the user at once. This will help user to understand the content and orient themselves.
 
@@ -139,7 +139,7 @@ When multiple elements need to animate, distribute their entrances over time in 
 </do-dont-example>
 </grid-wrapper>
 
-Sequence the entrance of page content when possible. Start with the most orienting content, such as the static content* and header, and end with the most important information, such as the Call to Action button or a calculation result, to focus user’s attention to them.
+Sequence the entrance of page content when possible. Start with the most orienting content, such as the static content* and header, and end with the most important information, such as the _call to action_ button or a calculation result, to focus user’s attention to them.
 
 <grid-wrapper col_lg="12" flex="true">
 <do-dont-example correct="true" full_width="true" label="Sequencing of this interface prioritizes Call to Action button, and reserves data visualization for later when users begin to interact with it.">

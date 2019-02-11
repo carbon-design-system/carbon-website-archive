@@ -11,14 +11,14 @@ title: Layout
     href="https://github.com/ibm/carbon-design-kit"
     type="resource"
     >
-    <img src="images/sketch-icon.png" alt="Carbon Design Kit"/>
+    <img src="images/sketch-icon.png" alt=""/>
 </clickable-tile>
 </grid-wrapper>
 
 <anchor-links>
 <ul>
     <li><a data-scroll href="#mini-unit">Mini unit</a></li>
-    <li><a data-scroll href="#2x-grid-fundamentals">2x Grid fundamentals</a></li>
+    <li><a data-scroll href="#2x-grid-fundamentals">2x grid fundamentals</a></li>
     <li><a data-scroll href="#grid-behaviors">Grid behaviors</a></li>
     <li><a data-scroll href="#grid-influencers">Grid influencers</a></li>
     <li><a data-scroll href="#sizing-scale">Sizing scale</a></li>
@@ -132,7 +132,7 @@ Grid gutters can be absent as shown above, or present as shown below. Th margin 
 
 Use this set of standard breakpoints to maintain layout integrity across screen sizes. For best results, test designs and code at each of these standard breakpoints.
 
-Create **Custom Breakpoints** to accommodate special needs, by writing your own media queries and CSS rules. Refer to the [grid code package](https://github.com/IBM/carbon-elements/tree/master/packages/grid) for more information.
+Create custom breakpoints to accommodate special needs, by writing your own media queries and CSS rules. Refer to the [grid code package](https://github.com/IBM/carbon-elements/tree/master/packages/grid) for more information.
 
 | Breakpoint | Value (px/rem) | Columns | Size (%) | Size  | Padding | Margin |
 | ---------- | -------------- | ------- | -------- | ----- | ------- | ------ |
@@ -143,8 +143,6 @@ Create **Custom Breakpoints** to accommodate special needs, by writing your own 
 | Max        | 1584 / 99      | 16      | 6.25%    | 96 px | 16 px   | 24 px  |
 
 For best results, test designs and code at each of these standard breakpoints.
-
-Create **custom breakpoints** to accommodate special needs, by writing your own media queries and CSS rules. Refer to the grid code package for more information.
 
 `vimeo: https://vimeo.com/292015984`
 

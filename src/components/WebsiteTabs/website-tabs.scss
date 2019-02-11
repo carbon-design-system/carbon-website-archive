@@ -46,7 +46,7 @@
   padding-top: rem(9px);
 }
 
-.website-tabs div.tab-content {
+.website-tabs > div {
   background: $ui-02;
   padding: $spacing-3xl $spacing-md $spacing-md $spacing-md;
 }
@@ -68,7 +68,7 @@
     box-shadow: none;
   }
 
-  .website-tabs div.tab-content {
+  .website-tabs > div {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 2rem;

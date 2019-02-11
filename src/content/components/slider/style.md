@@ -16,7 +16,7 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Typography
 
-Slider labels should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized, and no more than three words.
+_Slider_ labels should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized, and no more than three words.
 
 | Class                      | Font-size (px/rem) | Font-weight     | Type style       |
 | -------------------------- | ------------------ | --------------- | ---------------- |
@@ -25,7 +25,7 @@ Slider labels should be set in sentence case, with only the first word in a phra
 
 ## Structure
 
-The width of a Slider varies based on page content and layout.
+The width of a slider varies based on page content and layout.
 
 | Class                                   | Property                  | px / rem | Spacing token |
 | --------------------------------------- | ------------------------- | -------- | ------------- |
@@ -35,15 +35,15 @@ The width of a Slider varies based on page content and layout.
 | `.bx--slider`                           | margin-left, margin-right | 16 / 1   | $spacing-md   |
 | `.bx--slider__range-label:last-of-type` | margin-right              | 16 / 1   | $spacing-md   |
 
-<image-component fixed="default" caption="Structure and spacing measurements for Slider | px / rem">
+<image-component fixed="default" caption="Structure and spacing measurements for slider | px / rem">
 
-![Structure and spacing measurements for Slider](images/slider-style-1.png)
+![Structure and spacing measurements for slider](images/slider-style-1.png)
 
 </image-component>
 
 ### Recommended
 
-The following specs are not built into the Slider component but are recommended by design as the proper sizing for the slider tracking line.
+The following specs are not built into the slider component but are recommended by design as the proper sizing for the slider tracking line.
 
 | Class               | Property  | px / rem   | Spacing token |
 | ------------------- | --------- | ---------- | ------------- |

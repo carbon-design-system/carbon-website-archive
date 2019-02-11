@@ -2,6 +2,19 @@
 title: What’s New
 ---
 
+<anchor-links>
+<ul>
+    <li><a href="#october-2018">October 2018</a></li>
+    <li><a href="#june-4,-2018:-v9-release">June 4, 2018: V9 release</a></li>
+    <li><a href="#may-16,-2018">May 16, 2018</a></li>
+    <li><a href="#march-9,-2018">March 9, 2018</a></li>
+    <li><a href="#february-23,-2018">February 23, 2018</a></li>
+    <li><a href="#february-9,-2018">February 9, 2018</a></li>
+</ul>
+</anchor-links>
+
+
+
 ##October 2018
 
 ### Experimental
@@ -10,13 +23,12 @@ A new [Experimental](/experimental/about/overview) section has been added to the
 
 **Experimental components, designs, and other resources are presented for testing and feedback. They are not intended for production use.**
 
-<hr class="divider">
 
 ## June 4, 2018: V9 Release
 
 ### Website
 
-- Add-ons section has been removed. There is an [Add-ons](getting-started/add-ons) page that now lives under the Getting Started section
+- Add-ons section has been removed. There is an [Add-ons](contributing/add-ons) page that now lives under the Getting Started section
 - The [Contributing](/getting-started/contributing) page has been moved from the Guidelines to the Getting Started section
 - [Data Visualization](/data-visualization/overview/general) has moved from under the components section into its own section
 
@@ -34,7 +46,7 @@ A new [Experimental](/experimental/about/overview) section has been added to the
 
 - [Code snippets](/components/code-snippet/code) now have a new style and new interaction options. There is also a variation with line numbers available.
 - [Interactive Tooltip](/components/tooltip/code) (formerly Tooltip) can now contain interactive elements and opens on click
-- **Updated all inputs so they meet the new WCAG 3:1 color ratio guidelines for defined objects**
+- Updated all inputs so they meet the new WCAG 3:1 color ratio guidelines for defined objects
 - [Date & Time Picker](/components/date-picker/code)
 - [Dropdown](/components/dropdown/code)
 - [Number Input](/components/number-input/code)
@@ -44,30 +56,32 @@ A new [Experimental](/experimental/about/overview) section has been added to the
 - [Text Input](/components/text-input/code)
 - [Text Area](/components/text-input/code)
 
+
+
 ### Color
 
-Go check out the [Swatches](/guidelines/color/swatches) page to see the new color options and updates.
+####Go check out the [Swatches](/guidelines/color/swatches) page to see the new color options and updates.
 
 - Colors have been updated to make them more accessible— changing hex values and roles for some of the swatches
 - The new, updated palette is available with Design Kit
 - The changes include (bold indicates a new color token)
+- `$ui-05 – #5A6872` (passing 4.5:1, high contrast border, secondary icons)
+- `$ui-04 – #8897A2` (passing 3:1, now used for emphasis borders)
+- `$ui-03 – #DFE3E6` (not passing 3:1, now used for subtle borders)
+- `$support-01 – #E0182D` (passing 4.5:1)
+- `$support-01 – #CDD1D4` (not passing 4,5:1, used only for placeholder text)
+- `$field-01 – #F4F7FB` (input field background on `$ui-01`)
+- `$field-02 – #FFFFFF` (input field background on `$ui-02`)
+- `$inverse-02 – #272d33` (passing 4,5:1)
 
-- \$ui-05 – #5A6872 (passing 4.5:1, high contrast border, secondary icons)
-- \$ui-04 – #8897A2 (passing 3:1, now used for emphasis borders)
-- \$ui-03 – #DFE3E6 (not passing 3:1, now used for subtle borders)
-- \$support-01 - #E0182D (passing 4.5:1)
-- \$text-03 - #CDD1D4 (not passing 4,5:1, used only for placeholder text)
-- \$field-01 - #F4F7FB (input field background on ui-01)
-- **\$field-02 - #FFFFFF (input field background on ui-02)**
-- **\$inverse-02 - #272d33 (passing 4,5:1)**
 
-- There are four new hover tokens added to the Carbon palette. They can now be found on the [Swatches](/guidelines/color/swatches) page and are available in the Design Kit and palette plugin
+There are four new hover tokens added to the Carbon palette. They can now be found on the [Swatches](/guidelines/color/swatches) page and are available in the Design Kit and palette plugin
 
-- \$hover-primary – #30588c
-- \$hover-primary-text – #294c86
-- \$hover-row – #5596e6 at 10% opacity
-- \$hover-secondary – #3d70b2
-- \$hover-danger – #bd1427
+- `$hover-primary – #30588c`
+- `$hover-primary-text – #294c86`
+- `$hover-row – #5596e6` at 10% opacity
+- `$hover-secondary – #3d70b2`
+- `$hover-danger – #bd1427` 
 
 ### Icons
 
@@ -82,7 +96,6 @@ Go check out the [Swatches](/guidelines/color/swatches) page to see the new colo
 - Library has been made more flexible and customizable
 - Kit and library have been updated with the new colors, components, and icon styles.
 
-<hr class="divider">
 
 ## May 16, 2018
 
@@ -91,25 +104,24 @@ Go check out the [Swatches](/guidelines/color/swatches) page to see the new colo
 There is a new section called Utilities which gives guidance on common pattern handlings.
 Unlike the component section, these guidelines offer usage guidance with minimal code documentation. To read more about each of these utilities see the sections below:
 
-- [Common Actions](utilities/common-actions)
-- [Disabled States](utilities/disabled-states)
-- [Filtering](utilities/filtering)
-- [Loading](utilities/loading)
-- [Overflow Content](utilities/overflow-content)
+- [Common Actions](patterns/common-actions)
+- [Disabled States](patterns/disabled-states)
+- [Filtering](patterns/filtering)
+- [Loading](patterns/loading)
+- [Overflow Content](patterns/overflow-content)
 
 ### Themes
 
-The [Themes page](style/themes) has been moved to the Style section.
+The [Themes page](guidelines/themes) has been moved to the Style section.
 
-<hr class="divider">
 
 ## March 9, 2018
 
 ### Style
 
-### Systematic spacing
+#### Systematic spacing
 
-We have tokenized our spacing and now offer two systemized scales. The Spacing Scale defines space within a component while the Layout Scale is used to help position elements on a page. Check out the new [Spacing](style/spacing) section to learn more about these scales and read the rest of the spacing guidelines.
+We have tokenized our spacing and now offer two systemized scales. The Spacing Scale defines space within a component while the Layout Scale is used to help position elements on a page. Check out the new [Spacing](guidelines/spacing) section to learn more about these scales and read the rest of the spacing guidelines.
 
 ### Design Kit
 
@@ -117,7 +129,6 @@ We have tokenized our spacing and now offer two systemized scales. The Spacing S
 
 We have recorded a [Carbon Design Kit with Sketch Libraries Tutorial](https://www.youtube.com/watch?v=Tm-s0Hcbwck&list=PL4BR_VlGD31aVhe1ScKk9UOhbi8YOL0dF) over on our YouTube channel. It goes over how to download the Carbon Sketch Kit, import a Sketch Library, as well as how to get and accept library updates/notifications. It also gives a brief overview of how the Library is organized and how to use the overrides panel and library symbols.
 
-<hr class="divider">
 
 ## February 23, 2018
 
@@ -127,20 +138,30 @@ We have recorded a [Carbon Design Kit with Sketch Libraries Tutorial](https://ww
 
 The Carbon Design Kit now includes Sketch Libraries, a better way to share and version symbols across Sketch files. Check out our [Sketch Libraries wiki](https://github.com/ibm/carbon-design-kit/wiki/Sketch-Libraries-Overview) to get a quick tutorial on libraries.
 
+
+<image-component cols="8"  caption="Sketch libraries in the Carbon design kit.">
+
 ![sketch libraries in the carbon design kit](images/sketch-libraries.png)
-_Sketch Libraries in the Carbon Design Kit_
+
+</image-component>
+
 
 #### Sketch Plugins
 
-With the latest release of the Design Kit, we've included the [Sketch Palettes](https://github.com/andrewfiorillo/sketch-palettes) plugin, which allows you to load in pre-saved palettes for Sketch. You can import Carbon's four color palettes (Carbon default theme, Data Vis primary, Data Vis secondary, and Data Vis tertiary) into your working Sketch document.
+With the latest release of the Design Kit, we've included the [Sketch Palettes](https://github.com/andrewfiorillo/sketch-palettes) plugin, which allows you to load in pre-saved palettes for Sketch. You can import Carbon's four color palettes (Carbon default theme, Data Vis primary, Data Vis secondary, and Data Vis tertiary) into your working Sketch document. There's also a variety of other [plugins](https://github.com/ibm/carbon-design-kit/wiki/Suggested-Sketch-Plugins) we recommend to help improve your workflow using Sketch.
+
+Download the latest kit today! [Carbon design kit](https://github.com/ibm/carbon-design-kit).
+
+
+
+
+<image-component cols="8"  caption="Sketch palettes plugin.">
 
 ![Sketch Palettes plugin](images/sketch-palettes.png)
-_Sketch Palettes plugin_
 
-There's also a variety of other [plugins](https://github.com/ibm/carbon-design-kit/wiki/Suggested-Sketch-Plugins) we recommend to help improve your workflow using Sketch.
+</image-component>
 
-<p>Download the latest Kit today!
-<a href="https://github.com/ibm/carbon-design-kit" target="_blank">Carbon Design Kit</a></p>
+
 
 ### Carbon Sessions
 
@@ -148,7 +169,6 @@ Interested in getting some 1:1 time with the Carbon team? Carbon Sessions is a c
 
 Sign up for a [Carbon Sessions time slot](https://github.com/ibm/design-system-website/wiki/Carbon-Sessions) if you're interested in chatting further!
 
-<hr class="divider">
 
 ## February 9, 2018
 
@@ -156,18 +176,32 @@ Sign up for a [Carbon Sessions time slot](https://github.com/ibm/design-system-w
 
 #### Dropdown
 
-We're excited to bring some added functionality that enhances our [Dropdown](/components/dropdown) component. Filtering, Multi-select, and Inline Dropdown are new additions to our basic Dropdown component.
+We're excited to bring some added functionality that enhances our [Dropdown](/components/dropdown) component. Filtering, Multi-select, and Inline Dropdown are new additions to our basic Dropdown component. 
 
-**Note: This component is currently only available in [React](http://react.carbondesignsystem.com/?selectedKind=ComboBox&selectedStory=default&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Factions%2Factions-panel).**
+_Note: This component is currently only available in [React](http://react.carbondesignsystem.com/?selectedKind=ComboBox&selectedStory=default&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Factions%2Factions-panel)._
+
+
+
+<image-component cols="8"  caption="Example of a dropdown with multi-select.">
 
 ![example of Dropdown with Multi-Select](images/dropdown-new.gif)
-_Example of Multi-Select Dropdown_
+
+</image-component>
+
+
 
 #### Small Toggle
 
 Small Toggle is a style variation of our traditional [Toggle](/components/toggle) component. It's more compact in size, which allows them to be used in Data Tables or inline with Form elements.
 
-[example of Small toggle](images/small-toggle.gif) > _Example of Small Toggle_
+<image-component cols="8"  caption="Example of small toggle.">
+
+![example of Small toggle](images/small-toggle.gif)
+
+</image-component>
+
+
+
 
 #### Data Vis: Bar Graph
 
@@ -175,7 +209,16 @@ Bar Graph is the newest addition to our Data Visualization collection. It comes 
 
 Read more about the usage of [Bar Graph](/data-visualization/bar-graph/usage), or check out our [CodePen](https://codepen.io/team/carbon/pen/OzBKKN) to view the live demo.
 
+
+
+
+<image-component cols="8">
+
 ![Bar Graph example](images/usage-bar-graph.png)
+
+</image-component>
+
+
 
 #### Data Vis: Tooltip
 
@@ -183,6 +226,11 @@ We have created several Data Visualization Tooltip variations to show the value 
 
 Read more about the usage of [Data Vis Tooltips](/data-visualization/tooltip/usage), or check out our [CodePen](https://codepen.io/team/carbon/pen/rJWymp) to view the live demo.
 
+
+
+<image-component cols="8"  caption="Small tooltip used within a bar graph.">
+
 ![small tooltip in a bar graph](images/usage-small-tooltip.png)
 
-_Small Tooltip used within a Bar Graph_
+</image-component>
+
