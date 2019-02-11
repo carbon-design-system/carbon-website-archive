@@ -2,15 +2,19 @@
 title: Disabled States
 ---
 
-**A disabled state** is applied to a component when the user is not allowed to interact with the component due to either permissions, dependencies, or pre-requisites. Disabled states completely remove the interactive function of a component.
-
 <anchor-links>
 <ul>
+    <li><a data-scroll href="#purpose">Purpose</a></li>
+    <li><a data-scroll href="#disabled-variations">Disabled variations</a></li>
     <li><a data-scroll href="#default-disabled">Default disabled</a></li>
     <li><a data-scroll href="#read-only">Read-only</a></li>
     <li><a data-scroll href="#hidden">Hidden</a></li>
 </ul>
 </anchor-links>
+
+## Purpose
+
+A _disabled state_ is applied to a component when the user is not allowed to interact with the component due to either permissions, dependencies, or pre-requisites. Disabled states completely remove the interactive function of a component.
 
 ## Disabled variations
 

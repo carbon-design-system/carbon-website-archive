@@ -43,6 +43,9 @@ export default class NextPrevious extends React.Component {
           return word.charAt(0).toUpperCase() + word.slice(1);
         })
         .join(' ');
+      if (string === 'ui-shell') {
+        newString = 'UI shell';
+      }
     }
     return newString;
   };
