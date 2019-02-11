@@ -181,7 +181,7 @@ class Layout extends React.Component {
               ]}>
               <html lang="en" />
             </Helmet>
-            <div className="website-alert">
+            <aside aria-label="alert banner" className="website-alert">
               <Information20 className="website-alert__icon" />
               <p className="website-alert__text">
                 <span>Carbon v10 is in beta</span>
@@ -197,7 +197,7 @@ class Layout extends React.Component {
                   <ArrowRight20 />
                 </button>
               </a>
-            </div>
+            </aside>
             <Header aria-label="Header" className="bx--header--website">
               <SkipToContent />
               <HeaderMenuButton
