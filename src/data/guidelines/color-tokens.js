@@ -225,6 +225,27 @@ module.exports = {
         },
       },
     },
+    '$text-04': {
+      role: ['Text on $interactive colors'],
+      value: {
+        white: {
+          name: 'White',
+          hex: '#ffffff',
+        },
+        g10: {
+          name: 'White',
+          hex: '#ffffff',
+        },
+        g100: {
+          name: 'White',
+          hex: '#ffffff',
+        },
+        g90: {
+          name: 'White',
+          hex: '#ffffff',
+        },
+      },
+    },
     '$icon-01': {
       role: ['Primary icons'],
       value: {
@@ -264,6 +285,27 @@ module.exports = {
         g90: {
           name: 'Gray 30',
           hex: '#bebebe',
+        },
+      },
+    },
+    '$icon-03': {
+      role: ['Tertiary icons', `Icons on $interactive colors`, `Icons on non-ui colors`],
+      value: {
+        white: {
+          name: 'White',
+          hex: '#ffffff',
+        },
+        g10: {
+          name: 'White',
+          hex: '#ffffff',
+        },
+        g100: {
+          name: 'White',
+          hex: '#ffffff',
+        },
+        g90: {
+          name: 'White',
+          hex: '#ffffff',
         },
       },
     },
@@ -522,7 +564,7 @@ module.exports = {
       },
     },
     '$hover-secondary': {
-      role: ['Secondary hover', '$inverse-01 hover'],
+      role: ['$interactive-02 hover'],
       value: {
         white: {
           name: 'Gray 80 hover',
@@ -539,6 +581,27 @@ module.exports = {
         g90: {
           name: 'Gray 60 hover',
           hex: '#606060',
+        },
+      },
+    },
+    '$hover-tertiary': {
+      role: ['$interactive-03 hover', '$inverse-01 hover'],
+      value: {
+        white: {
+          name: 'Blue 60 hover',
+          hex: '#0353e9',
+        },
+        g10: {
+          name: 'Blue 60 hover',
+          hex: '#0353e9',
+        },
+        g100: {
+          name: 'Gray 10',
+          hex: '#f3f3f3',
+        },
+        g90: {
+          name: 'Gray 10',
+          hex: '#f3f3f3s',
         },
       },
     },
@@ -606,7 +669,7 @@ module.exports = {
       },
     },
     '$active-primary': {
-      role: ['$brand-01 active'],
+      role: ['$interactive-01 active'],
       value: {
         white: {
           name: 'Blue 80',
@@ -627,7 +690,7 @@ module.exports = {
       },
     },
     '$active-secondary': {
-      role: ['Secondary active', '$inverse-01 active'],
+      role: ['$interactive-02 active', '$inverse-01 active'],
       value: {
         white: {
           name: 'Gray 60',
@@ -644,6 +707,27 @@ module.exports = {
         g90: {
           name: 'Gray 80',
           hex: '#3d3d3d',
+        },
+      },
+    },
+    '$active-tertiary': {
+      role: ['$interactive-03 active'],
+      value: {
+        white: {
+          name: 'Blue 80',
+          hex: '#0530ad',
+        },
+        g10: {
+          name: 'Blue 80',
+          hex: '#0530ad',
+        },
+        g100: {
+          name: 'Gray 30',
+          hex: '#bebebe',
+        },
+        g90: {
+          name: 'Gray 30',
+          hex: '#bebebe',
         },
       },
     },
@@ -707,6 +791,27 @@ module.exports = {
         g90: {
           name: 'Gray 70',
           hex: '#565656',
+        },
+      },
+    },
+    '$highlight': {
+      role: ['$interactive-01 highlight'],
+      value: {
+        white: {
+          name: 'Blue 20',
+          hex: '#C9deff',
+        },
+        g10: {
+          name: 'Blue 10',
+          hex: '#edf4ff',
+        },
+        g100: {
+          name: 'Blue 90',
+          hex: '#051b75',
+        },
+        g90: {
+          name: 'Blue 80',
+          hex: '#0530ad',
         },
       },
     },
