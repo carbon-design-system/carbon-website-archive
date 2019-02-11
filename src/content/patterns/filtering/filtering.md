@@ -2,8 +2,6 @@
 title: Filtering
 ---
 
-**Filtering** is the mechanism by which a user adds or removes data items from a displayed data set by turning on and off certain predefined attributes.
-
 <anchor-links>
 <ul>
     <li><a data-scroll href="#selecting-filters">Selecting filters</a></li>
@@ -13,6 +11,9 @@ title: Filtering
 </anchor-links>
 
 ## Selecting filters
+
+_Filtering_ is the mechanism by which a user adds or removes data items from a displayed data set by turning on and off certain predefined attributes.
+
 
 ### Single selection
 
