@@ -142,7 +142,7 @@ _Components with common colors across both dark UI backgrounds_
 
 #### High contrast
 
-In some cases, it is helpful to apply light components to dark backgrounds or light components to dark backgrounds. This technique is useful to focus attention or create visual tension.
+In some cases, it is helpful to apply light components to dark backgrounds or dark components to light backgrounds. This technique is useful to focus attention or create visual tension.
 
 <grid-wrapper col_lg="12" flex="true">
     <do-dont-example correct=true label=" ">
