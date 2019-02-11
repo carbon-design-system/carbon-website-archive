@@ -1,4 +1,7 @@
-.component-example .component-example__live .content-switcher .bx--content-switcher {
+.component-example
+  .component-example__live
+  .content-switcher
+  .bx--content-switcher {
   height: auto;
 
   @include breakpoint('md') {
@@ -11,8 +14,8 @@
   }
 }
 
-
-.component-example .component-example__live.component-example__live--code-snippet {
+.component-example
+  .component-example__live.component-example__live--code-snippet {
   padding: 2rem 0 2.5rem;
 
   & > div {
@@ -29,5 +32,34 @@
     & > div {
       width: auto;
     }
+  }
+}
+
+// APP SWITCHER
+.bx--website-switcher {
+  box-shadow: none;
+}
+
+.bx--website-switcher--expanded {
+  box-shadow: 0 rem(2px) rem(8px) rgba(0, 0, 0, 0.2);
+}
+
+//PROGRESS INDICATOR
+.component-example__live--rendered.progress-indicator {
+  .bx--progress-label {
+    margin: 0.5rem 0 0 0;
+    line-height: 1.45;
+  }
+
+  .bx--progress-optional {
+    margin-left: 1.5rem;
+    margin-top: 1.75rem;
+  }
+}
+
+//NUMBER & TEXT INPUT
+.component-example__live {
+  .bx--form-item {
+    margin-bottom: 2rem;
   }
 }
