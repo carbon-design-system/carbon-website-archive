@@ -4,7 +4,7 @@ tabs: ['Code', 'Usage', 'Style']
 ---
 
 <component 
-    name="Small Search"
+    name="Small search"
     component="search" 
     variation="search--small"
     experimental="true"
@@ -12,7 +12,7 @@ tabs: ['Code', 'Usage', 'Style']
 </component>
 
 <component 
-    name="Large Search"
+    name="Large search"
     component="search" 
     variation="search--large"
     experimental="true"

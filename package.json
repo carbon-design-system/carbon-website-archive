@@ -43,7 +43,7 @@
     "@carbon/layout": "0.0.1-alpha.31",
     "@carbon/type": "0.0.1-alpha.31",
     "@reach/router": "^1.2.1",
-    "carbon-components": "^9.70.0",
+    "carbon-components": "^9.71.0",
     "carbon-components-react": "6.85.0",
     "carbon-icons": "^7.0.7",
     "classnames": "^2.2.6",

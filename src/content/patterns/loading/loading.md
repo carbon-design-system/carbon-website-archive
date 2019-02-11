@@ -8,15 +8,15 @@ title: Loading
 <ul>
     <li><a data-scroll href="#skeleton-states">Skeleton states</a></li>
     <li><a data-scroll href="#loading-components">Loading components</a></li>
-  <li><a data-scroll href="#load-more-button"><em>Load more</em> button</a></li>
+  <li><a data-scroll href="#load-more">Load more</a></li>
 </ul>
 </anchor-links>
 
 ## Skeleton states
 
-_Skeleton states_ are simplified versions of Carbon components used on an initial page load to indicate that the information on the page has not entirely loaded yet. They should only appear for 1-3 seconds, disappearing once the actual content loads in.
+_Skeleton states_ are simplified versions of Carbon components used on an initial page load to indicate that the information on the page has not entirely loaded yet. They should only appear for 1–3 seconds, disappearing once the actual content loads in.
 
-A Carbon skeleton state is shown as a stripped down, bare bones version of a component, using a `field-01` rectangular block for text. Motion is used in a skeleton state to convey that the page is not stuck loading but rather that data is still being pulled in.
+A Carbon skeleton state is shown as a stripped down, bare bones version of a component, using a `$field-01` rectangular block for text. Motion is used in a skeleton state to convey that the page is not stuck loading but rather that data is still being pulled in.
 
 <image-component cols="8" caption="Example of a text skeleton state in a data table.">
 
@@ -26,7 +26,7 @@ A Carbon skeleton state is shown as a stripped down, bare bones version of a com
 
 ### Usage
 
-Skeleton states are not meant to represent every component on a page, but rather to illustrate the overall architecture of the page while it's loading. Typically, components that should have skeleton states are container-based components (_tiles_, _structured list_, etc.), data-based components (_data tables_, _cards_, etc.), and data-based text. Action components (_button_, _input fields_, _checkboxes_, _toggle_, etc.) do not need to have a skeleton state in most use cases, as they are not pulling in data and do not need additional time to load in.
+Skeleton states are not meant to represent every component on a page, but rather to illustrate the overall architecture of the page while it's loading. Typically, components that should have skeleton states are container-based components _(tiles, structured list, etc.)_, data-based components _(data tables, cards, etc.)_, and data-based text. Action components _(button, input fields, checkboxes, toggle, etc.)_ do not need to have a skeleton state in most use cases, as they are not pulling in data and do not need additional time to load in.
 
 There are several components that should **never** be represented by a skeleton state since the data for these items should already be loaded in by the time a user interacts with them. These include:
 
@@ -38,7 +38,7 @@ There are several components that should **never** be represented by a skeleton 
 
 ### Progressive loading
 
-When utilizing skeleton states, the order in which components, data, and content load in needs to be planned and designed for using the _progressive loading_ technique. Progressive loading is when content loads in batches. The first batch to load should be the most simplified view of the page, followed by the secondary and tertiary batches, with each batch adding more page detail until the entire viewport has been loaded. The primary batch should illustrate a page's structural layout (the skeleton state versions of the container-based components), data-based text (the skeleton state version of text) and non-data text. Secondary and tertiary batches can include images, content below the fold, interactive (action-based) components, and/or data-based text. Remember that not all items need a skeleton state, but instead can be expressed as negative or white space until they load in. For example, a 600 x 600px image could be shown as a 600 x 600px area of white space until the secondary or tertiary batch when the full image loads in.
+When utilizing skeleton states, the order in which components, data, and content load in needs to be planned and designed for using the _progressive loading_ technique. Progressive loading is when content loads in batches. The first batch to load should be the most simplified view of the page, followed by the secondary and tertiary batches, with each batch adding more page detail until the entire viewport has been loaded. The primary batch should illustrate a page's structural layout (the skeleton state versions of the container-based components), data-based text (the skeleton state version of text) and non-data text. Secondary and tertiary batches can include images, content below the fold, interactive (action-based) components, and/or data-based text. Remember that not all items need a skeleton state, but instead can be expressed as negative or white space until they load in. _For example, a 600 x 600 px image could be shown as a 600 x 600 px area of white space until the secondary or tertiary batch when the full image loads in._
 
 <image-component cols="8" caption="Example of a dashboard using skeleton states to demonstrate progressive loading">
 
@@ -114,21 +114,21 @@ The [_loading_](/components/loading/code) component should be used when the enti
 
 ### Inline loading
 
-The [_inline loading_](/components/inline-loading/code) component is used when a single component is processing and appears inline to the relative component. For example, when a user sends a user invite, an _inline loading_ component indicates the system is processing the invite request until the request is complete.
+The [_inline loading_](/components/inline-loading/code) component is used when a single component is processing and appears inline to the relative component. _For example, when a user sends a user invite, an inline loading component indicates the system is processing the invite request until the request is complete._
 
 <image-component cols="8" caption="Example of inline loader in context.">
 
-![Example of Small Loader in the context of a Detail Page Header.](images/inline-loading-animated.gif)
+![Example of small loader in the context of a Detail Page Header.](images/inline-loading-animated.gif)
 
 </image-component>
 
-## _Load more_ button
+## Load more
 
-A _Load more_ button may be used to extend a list where there are a large number of options (25 or more) that the user can choose from. It can also be used in cases where the list of options is populated via a database. Using _Load more_ allows the data to load in progressive batches.
+A _load more_ action may be used to extend a list where there are a large number of options (25 or more) that the user can choose from. It can also be used in cases where the list of options is populated via a database. Using _load more_ allows the data to load in progressive batches.
 
-<image-component cols="8" caption="Example of Load more button in context.">
+<image-component cols="8" caption="Example of load more button in context.">
 
-![Example of a _Load More_ button inside of a filter dropdown.](images/load-more.png)
+![Example of a _load more_ action inside of a filter dropdown.](images/load-more.png)
 
 </image-component>
 

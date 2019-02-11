@@ -17,9 +17,9 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 | `.bx--number input[type='number']` | box-shadow       | $ui-05    |
 | `.bx--number__controls svg`        | fill             | $brand-01 |
 
-<image-component fixed="default" caption="Number Input example in $field-02 (left) and $field-01 (right)">
+<image-component fixed="default" caption="Number input example">
 
-![Number Input example in $field-01 and $field-02](images/number-input-style-2.png)
+![Number input example](images/number-input-style-2.png)
 
 </image-component>
 
@@ -43,7 +43,7 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 
 ## Typography
 
-Number Input labels should use sentence case, with only the first word in a phrase and any proper nouns capitalized.
+Number input labels should use sentence case, with only the first word in a phrase and any proper nouns capitalized.
 
 | Class                              | Font-size (px/rem) | Font-weight     | Type style          |
 | ---------------------------------- | ------------------ | --------------- | ------------------- |
@@ -53,7 +53,7 @@ Number Input labels should use sentence case, with only the first word in a phra
 
 ## Structure
 
-The height of a Number Input is always the same. The width however, varies based on content, layout and design. The caret icon can be found in the [iconography](/guidelines/iconography/library) library.
+The height of a number input is always the same. The width however, varies based on content, layout and design. The caret icon can be found in the [iconography](/guidelines/iconography/library) library.
 
 | Class                                    | Property      | px / rem | Spacing token |
 | ---------------------------------------- | ------------- | -------- | ------------- |
@@ -63,7 +63,7 @@ The height of a Number Input is always the same. The width however, varies based
 | `.bx--number input[type='number']`       | box-shadow    | 1px      | -             |
 | `.bx--number input[type='number']:focus` | box-shadow    | 2px      | -             |
 
-<image-component fixed="default" caption="Structure and spacing measurements for a Number Input | px / rem">
+<image-component fixed="default" caption="Structure and spacing measurements for a number input | px / rem">
 
 ![Structure and spacing for number input](images/number-input-style-1.png)
 
