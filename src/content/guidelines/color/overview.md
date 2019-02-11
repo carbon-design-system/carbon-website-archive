@@ -131,7 +131,7 @@ Gray 90 components are paired with Gray 100 backgrounds to make the Gray 100 The
         <img src="images/Dark_theme_03_new.png" alt="White overflow menu on Gray 10 card.">    
     </do-dont-example>
     <do-dont-example label="Do not apply components that are darker than the background unless using high-contrast mode.">
-        <img src="images/Dark_theme_01_new.png" alt="Do not apply components that are darker than the background unless using high-contrast mode.">    
+        <img src="images/Dark_theme_04_new.png" alt="Do not apply components that are darker than the background unless using high-contrast mode.">    
     </do-dont-example>
 </grid-wrapper>
 
