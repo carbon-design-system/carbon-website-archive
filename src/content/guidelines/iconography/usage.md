@@ -1,5 +1,5 @@
 ---
-label: IBM's icons are visual symbols used to represent ideas, objects, or actions. They communicate messages at a glance, afford interactivity, and draw attention to important information.
+label: IBM’s icons are visual symbols used to represent ideas, objects, or actions. They communicate messages at a glance, afford interactivity, and draw attention to important information.
 title: Iconography
 tabs: ['Library', 'Usage', 'Contribution']
 ---
@@ -33,7 +33,7 @@ UI icons that appear within Carbon components are generally 16 px square. Icons 
     <do-dont-example correct=true label="Do: use the correct icon size with IBM Plex.">
         <img src="images/iconography-usage-sizing-3.svg" alt="proper sizing">    
     </do-dont-example>
-    <do-dont-example label="Don't: alter the icon-text size ratio.">
+    <do-dont-example label="Don’t: alter the icon-text size ratio.">
         <img src="images/iconography-usage-sizing-4.svg" alt="improper sizing">    
     </do-dont-example>
 </grid-wrapper>
@@ -69,7 +69,7 @@ When used next to text, icons should be center-aligned.
     <do-dont-example correct=true label="Do: center-align icons when they’re next to text.">
         <img src="images/iconography-usage-sizing-5.svg" alt="proper alignment">    
     </do-dont-example>
-    <do-dont-example label="Don't: baseline-align icons to the text.">
+    <do-dont-example label="Don’t: baseline-align icons to the text.">
         <img src="images/iconography-usage-sizing-6.svg" alt="improper alignment">    
     </do-dont-example>
 </grid-wrapper>
