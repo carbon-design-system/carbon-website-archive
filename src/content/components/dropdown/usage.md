@@ -15,7 +15,7 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## General guidance
 
-_Dropdowns_ present a list of options that can be used to filter existing content. They can also be used as menus. This can be seen in [Tabs](/components/tabs), when used in a smaller screen size, collapses into a dropdown.
+_Dropdowns_ present a list of options that can be used to filter existing content. They can also be used as menus. This can be seen in [tabs](/components/tabs), when used in a smaller screen size, collapses into a dropdown.
 
 ## Variations
 
@@ -79,7 +79,7 @@ By default, the dropdown displays a label when closed. When the user hovers over
 
 </image-component>
 
-### Multi-select Filter dropdown
+### Multi-select filter dropdown
 
 This variation of dropdown follows the same interaction patterns described above with the following exceptions:
 

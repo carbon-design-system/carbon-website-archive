@@ -25,7 +25,7 @@ Form inputs come in two different colors. The default input color is `$field-01`
 
 ## Typography
 
-Form headings and labels should be set in sentence case with the first letter of the first word capitalized. Please refer to the [Text Input](/components/text-input), [Dropdown](/components/dropdown), [Checkbox](/components/checkbox), [Radio button](/components/radio-button), [Toggle](/component/toggle), [Button](/component/button) pages for specific typography details on each component.
+Form headings and labels should be set in sentence case with the first letter of the first word capitalized. Please refer to the [text input](/components/text-input), [dropdown](/components/dropdown), [checkbox](/components/checkbox), [radio button](/components/radio-button), [toggle](/component/toggle), and [button](/component/button) pages for specific typography details on each component.
 
 | Property                       | Font-size (px/rem) | Font-weight     | Type style          |
 | ------------------------------ | ------------------ | --------------- | ------------------- |
@@ -52,13 +52,13 @@ All icons can be found on the [iconography](/guidelines/iconography/library) lib
 | Non-input components | margin-bottom | 32 / 2    | $spacing-xl   |
 | Grid gutter          | -             | 20 / 1.25 | -             |
 
-<image-component fixed="large" caption="Structure and spacing measurements for a double column Form | px / rem">
+<image-component fixed="large" caption="Structure and spacing measurements for a double column form | px / rem">
 
 ![Structure and spacing measurements for a double column form ](images/form-style-2.png)
 
 </image-component>
 
-<image-component fixed="large" caption="Structure and spacing measurements for a single column Form | px / rem">
+<image-component fixed="large" caption="Structure and spacing measurements for a single column form | px / rem">
 
 ![Structure and spacing measurements for a single column form](images/form-style-1.png)
 

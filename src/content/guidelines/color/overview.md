@@ -12,14 +12,14 @@ tabs: ['Overview', 'Usage']
     href="https://w3.ibm.com/design/language//IBM-color-palettes.zip"
     type="resource"
      >
-    <img src="images/ase.png" alt="Color palettes for Adobe"  />
+    <img src="images/ase.png" alt=""  />
 </clickable-tile>
 <clickable-tile
     title="Elements package: Color"
     href="https://github.com/IBM/carbon-elements/tree/master/packages/colors"
     type="resource"
     >
-    <img src="images/sketch-icon.png" alt="Github"  />
+    <img src="images/sketch-icon.png" alt=""  />
 </clickable-tile>
 </grid-wrapper>
 
@@ -142,7 +142,7 @@ _Components with common colors across both dark UI backgrounds_
 
 #### High contrast
 
-In some cases, it is helpful to apply light components to dark backgrounds or light components to dark backgrounds. This technique is useful to focus attention or create visual tension.
+In some cases, it is helpful to apply light components to dark backgrounds or dark components to light backgrounds. This technique is useful to focus attention or create visual tension.
 
 <grid-wrapper col_lg="12" flex="true">
     <do-dont-example correct=true label=" ">

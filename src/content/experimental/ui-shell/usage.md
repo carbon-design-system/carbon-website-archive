@@ -19,7 +19,7 @@ tabs: ['Code', 'Usage']
 The UI Shell is the top level in a product's UI. The Shell consists of the primary **header** and **footer**, as well as **header panels** that are used for navigation and global UI services. The shell is further divided into 3 distinct "zones" which establish purpose and level of control.
 
 ###Global zone
-The Global zone holds the IBM global platform switcher, which allows the user to quickly navigate between different IBM platforms. This zone cannot be altered by the platform or product owner.
+The global zone holds the IBM global platform switcher, which allows the user to quickly navigate between different IBM platforms. This zone cannot be altered by the platform or product owner.
 
 <image-component cols="12">
 
@@ -28,7 +28,7 @@ The Global zone holds the IBM global platform switcher, which allows the user to
 </image-component>
 
 ###Platform zone
-The Platform zone contains platform-level elements, which could include functions like search, docs, support, profile, and notifications. Platform owners can also choose to include custom top-nav text links in this zone.
+The platform zone contains platform-level elements, which could include functions like search, docs, support, profile, and notifications. Platform owners can also choose to include custom top-nav text links in this zone.
 
 <image-component cols="12">
 
@@ -38,7 +38,7 @@ The Platform zone contains platform-level elements, which could include function
 
 
 ###Local zone
-The Local zone is controlled at the product level. It contains the product-level side nav as well as the main content area.
+The local zone is controlled at the product level. It contains the product-level side nav as well as the main content area.
 
 
 <image-component cols="12">
@@ -54,12 +54,12 @@ The UI Shell is designed to be configurable. A product/platform can choose which
 
 ### Primary header
 
-The Header spans the full width of the viewport and is the topmost element in the UI. Header elements are persistent within a product.
+The header spans the full width of the viewport and is the topmost element in the UI. Header elements are persistent within a product.
 
 **Use a header when:**
 
-- you want links to top level pages to be persistent on screen
-- you expect users to switch between top level pages frequently
+- Links to top level pages are persistent on screen
+- Users are expected to switch between top level pages frequently
 
 <image-component cols="12">
 
@@ -82,16 +82,16 @@ As a header scales down to fit smaller screen sizes, header links and menus shou
 
 <br>
 
-- **The Platform icon/Hamburger menu:** The platform icon appears in this space at wider browser widths, and switches to a hamburger menu to serve as overflow for header navigation links as the window narrows.
+- **The platform icon/hamburger menu:** The platform icon appears in this space at wider browser widths, and switches to a hamburger menu to serve as overflow for header navigation links as the window narrows.
 
-- **The Platform name (e.g. Cloud, IoT, Watson):** The platform name is always preceded by "IBM."
+- **The platform name (e.g. Cloud, IoT, Watson):** The platform name is always preceded by "IBM."
 
 - **Up to 5 optional horizontal top-level nav links and/or dropdown menus:**
  If using a dropdown, include the down-pointing chevron after the link label. Dropdowns open on click and are closed by either selecting an item in the menu, clicking outside the menu area, or clicking on the menu label.
 
 - **The L0 icons:** These icons are typically reserved for universal functions such as search, notifications, etc.
 
-- **The Global Switcher:** The global app switcher provides a way to switch between contexts within a product/platform. The global app switcher is accessed by clicking on the 9 dot icon in the far right of the header.
+- **The global switcher:** The global app switcher provides a way to switch between contexts within a product/platform. The global app switcher is accessed by clicking on the 9 dot icon in the far right of the header.
 
 <image-component cols="12">
 
@@ -112,7 +112,7 @@ Use a header panel when additional content or actions associated with a header i
 
 </image-component>
 
-### Side-Nav panels
+### Side-nav panels
 
 These panels contain product-level navigation and can be either fixed-width or flexible.
 
@@ -122,7 +122,7 @@ These panels contain product-level navigation and can be either fixed-width or f
 
 </image-component>
 
-### On-Page panels
+### On-page panels
 
 These panels are at the same elevation as the primary content zone of the page, and can be either dismissable or fully fixed.
 
@@ -164,8 +164,8 @@ The Side-nav contains secondary navigation and fits below the header. It can be 
 
 **Use a side-nav when:**
 
-- there are more than five secondary navigation items
-- you expect users to switch between secondary items frequently
+- There are more than five secondary navigation items
+- Users are expected to switch between secondary items frequently
 
 #### Side-nav items
 
@@ -185,8 +185,8 @@ A flexible side-nav is more friendly to responsive designs than a fixed nav. Fix
 
 **Use a flexible side-nav when:**
 
-- more space is needed for page content
-- a fully responsive solution is needed
+- More space is needed for page content
+- A fully responsive solution is needed
 
 <image-component cols="12">
 
@@ -200,8 +200,8 @@ A fixed Side-nav contains only links and category lists—no icons—and cannot 
 
 **Use a fixed side-nav when:**
 
-- icons cannot clearly describe the categories
-- designs are for desktop only
+- Icons cannot clearly describe the categories
+- Designs are for desktop only
 
 <!--
 The left side navigation component can be fixed or flexible-width. It allows for two levels of nesting.

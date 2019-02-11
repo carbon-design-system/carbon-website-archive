@@ -5,28 +5,28 @@ tabs: ['Code', 'Usage', 'Style']
 
 
 <component 
-    name="Primary Button"
+    name="Primary button"
     component="button"
     variation="button--primary" 
     experimental="true"
     >
 </component>
 <component 
-    name="Secondary Button"
+    name="Secondary button"
     component="button"
     variation="button--secondary" 
     experimental="true"
     >
 </component>
 <component 
-    name="Tertiary Button"
+    name="Tertiary button"
     component="button"
     variation="button--tertiary" 
     experimental="true"
     >
 </component>
 <component 
-    name="Ghost Button"
+    name="Ghost button"
     component="button"
     variation="button--ghost" 
     experimental="true"
@@ -40,7 +40,7 @@ tabs: ['Code', 'Usage', 'Style']
     >
 </component>
 <component 
-    name="Small Primary button"
+    name="Small primary button"
     component="button"
     variation="button--primary--small" 
     experimental="true"
