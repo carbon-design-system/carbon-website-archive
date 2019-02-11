@@ -15,7 +15,7 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Typography
 
-Radio Button labels and headings should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized.
+_Radio button_ labels and headings should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized.
 
 | Class                      | Font-size (px/rem) | Font-weight     | Type style       |
 | -------------------------- | ------------------ | --------------- | ---------------- |
@@ -31,7 +31,7 @@ Radio Button labels and headings should be set in sentence case, with only the f
 | `.bx--radio-button__label`                | margin-right  | 16 / 1     | $spacing-md   |
 | `.bx--radio-button__appearance`           | margin-right  | 8 / 0.5    | $spacing-xs   |
 
-<image-component fixed="default" caption="Structure and spacing measurements for Radio Button | px | rem">
+<image-component fixed="default" caption="Structure and spacing measurements for radio button | px | rem">
 
 ![Structure and spacing measurements for a radio button](images/radio-button-style-1.png)
 
@@ -39,14 +39,14 @@ Radio Button labels and headings should be set in sentence case, with only the f
 
 ### Recommended
 
-The following specs are not built into the Radio Button component but are recommended by design as the proper amount of space around a grouping of or in between stacked Radio Buttons.
+The following specs are not built into the radio button component but are recommended by design as the proper amount of space around a grouping of or in between stacked radio buttons.
 
 | Class                      | Property      | px / rem | Spacing token |
 | -------------------------- | ------------- | -------- | ------------- |
 | `.bx--radio-button-group`  | margin        | 16 / 1   | $spacing-md   |
 | `.bx--radio-button__label` | margin-bottom | 16 / 1   | $spacing-md   |
 
-<image-component fixed="default" caption="Recommended structure and spacing measurements for Radio Button | px | rem">
+<image-component fixed="default" caption="Recommended structure and spacing measurements for radio button | px | rem">
 
 ![Structure and spacing measurements for a radio button](images/radio-button-style-2.png)
 

@@ -11,7 +11,7 @@ title: Layout
     href="https://github.com/ibm/carbon-design-kit"
     type="resource"
     >
-    <img src="images/sketch-icon.png" alt="Carbon Design Kit"/>
+    <img src="images/sketch-icon.png" alt=""/>
 </clickable-tile>
 </grid-wrapper>
 
