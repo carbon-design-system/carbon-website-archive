@@ -180,6 +180,11 @@ img[src*='gif'] {
   }
 }
 
+.website-codesandbox {
+  height: 500px;
+  width: 100%;
+}
+
 .page-content iframe {
   margin-bottom: rem(24px);
 }

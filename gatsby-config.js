@@ -55,7 +55,6 @@ module.exports = {
               noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
             },
           },
-          `gatsby-remark-responsive-iframe`,
           `gatsby-remark-unwrap-images`,
           `gatsby-remark-relative-images`,
           {
@@ -91,9 +90,10 @@ module.exports = {
               // Customise the embedding iframe given the generated url
               // default:
               getIframe: url =>
-                `<iframe src="${url}" class="embedded-codesandbox" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>`,
+                `<div class="ibm--row"><div class="ibm--col-lg-12 ibm--offset-lg-4"><iframe src="${url}" class="website-codesandbox" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe></div></div>`,
             },
           },
+          `gatsby-remark-responsive-iframe`,
         ],
       },
     },

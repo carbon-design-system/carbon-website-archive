@@ -31,6 +31,7 @@ Build website-addons package
 ```
 cd packages/addons-website
 yarn build
+cd ../../
 ```
 
 Run dev environment
