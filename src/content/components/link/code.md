@@ -8,5 +8,6 @@ tabs: ['Code', 'Usage', 'Style']
     component="link" 
     variation="link"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
