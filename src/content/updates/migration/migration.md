@@ -1,10 +1,10 @@
 ---
-title: Migrating to Carbon X
+title: Migration 
 ---
 
 <anchor-links>
 <ul>
-  <li><a data-scroll href="#carbon-x-is-near">Intro</a></li>
+  <li><a data-scroll href="#carbon-x-is-near">Carbon X is near</a></li>
   <li><a data-scroll href="#rollout-plan">Rollout plan</a></li>
   <li><a data-scroll href="#design-kit">Design kit</a></li>
   <li><a data-scroll href="#component-code">Component code</a></li>
@@ -17,14 +17,14 @@ title: Migrating to Carbon X
 </ul>
 </anchor-links>
 
-## Carbon X is near!
+## Carbon X is near
 
 Carbon X, aka v10, is currently in Alpha release. Please use this opportunity to explore and experiment with the new components, elements, layouts, and UI shell. The Alpha release is a work in progress; changes will be frequent and possibly breaking. **This release is not approved for production.** Please explore the system and [provide bountiful feedback](/help/support#github-issues)!
 
 ## Rollout plan
 
-- February 2019: Beta release
-- March 2019: Production release
+- **February 2019:** Beta release
+- **March 2019:** Production release
 
 ### Adoption and activation sessions
 
@@ -42,16 +42,36 @@ The Digital Design group has published a detailed guide on [setting up auto-sync
 
 The redesigned components will be available in the current repos once released. All components have been reskinned to the new IBM Design Language for v10. Detailed technical migration instructions will be published to the repos upon Beta release.
 
-[carbon-components repo](https://github.com/IBM/carbon-components)
-[carbon-components-react repo](https://github.com/IBM/carbon-components-react)
+
+<grid-wrapper className="tile--resource--no-margin" col_lg="8" flex="true" bleed="true">
+<clickable-tile
+    title="Carbon Components"
+    href="https://github.com/ibm/carbon-components"
+    type="resource"
+    >
+    <img src="images/github-icon.png" alt="Carbon Component Library" />
+</clickable-tile>
+<clickable-tile
+    title="Carbon Components React"
+    href="https://github.com/ibm/carbon-components-react"
+    type="resource"
+    >
+    <img src="images/react-icon.png" alt="Carbon Components React" />
+</clickable-tile>
+</grid-wrapper>
+
 
 ## Tokens
 
-The **type** token architecture has been completely redesigned for better clarity and flexibility in v10, moving from a "class-name" approach to a more standard token architecture. More detailed technical guidance on migrating to the new type tokens will be available in early 2019.
+### Type tokens
+The type token architecture has been completely redesigned for better clarity and flexibility in v10, moving from a "class-name" approach to a more standard token architecture. More detailed technical guidance on migrating to the new type tokens will be available in early 2019.
 
-The **color** token architecture for v10 is based on the v9 architecture, with some minor updates for the new design language. Carbon v9 users will see automatic, non-breaking color updates when they upgrade to v10.
 
-**Spacing** tokens will see no change from Carbon v9.
+### Color tokens
+The color token architecture for v10 is based on the v9 architecture, with some minor updates for the new design language. Carbon v9 users will see automatic, non-breaking color updates when they upgrade to v10.
+
+### Spacing tokens
+Spacing tokens will see no change from Carbon v9.
 
 ## Icons
 

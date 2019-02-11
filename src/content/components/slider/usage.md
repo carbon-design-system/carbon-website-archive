@@ -16,6 +16,12 @@ The slider in its basic form should be accompanied by a label and a number input
 
 </image-component>
 
+<image-component cols="8" caption="Slider used to change volume">
+
+![Example of volume slider](images/slider-usage-1.png)
+
+</image-component>
+
 ## Interaction
 
 Users can choose a numerical value by:
