@@ -10,7 +10,6 @@ A new [Experimental](/experimental/about/overview) section has been added to the
 
 **Experimental components, designs, and other resources are presented for testing and feedback. They are not intended for production use.**
 
-<hr class="divider">
 
 ## June 4, 2018: V9 Release
 
@@ -82,7 +81,6 @@ Go check out the [Swatches](/guidelines/color/swatches) page to see the new colo
 - Library has been made more flexible and customizable
 - Kit and library have been updated with the new colors, components, and icon styles.
 
-<hr class="divider">
 
 ## May 16, 2018
 
@@ -101,7 +99,6 @@ Unlike the component section, these guidelines offer usage guidance with minimal
 
 The [Themes page](style/themes) has been moved to the Style section.
 
-<hr class="divider">
 
 ## March 9, 2018
 
@@ -117,7 +114,6 @@ We have tokenized our spacing and now offer two systemized scales. The Spacing S
 
 We have recorded a [Carbon Design Kit with Sketch Libraries Tutorial](https://www.youtube.com/watch?v=Tm-s0Hcbwck&list=PL4BR_VlGD31aVhe1ScKk9UOhbi8YOL0dF) over on our YouTube channel. It goes over how to download the Carbon Sketch Kit, import a Sketch Library, as well as how to get and accept library updates/notifications. It also gives a brief overview of how the Library is organized and how to use the overrides panel and library symbols.
 
-<hr class="divider">
 
 ## February 23, 2018
 
@@ -148,7 +144,6 @@ Interested in getting some 1:1 time with the Carbon team? Carbon Sessions is a c
 
 Sign up for a [Carbon Sessions time slot](https://github.com/ibm/design-system-website/wiki/Carbon-Sessions) if you're interested in chatting further!
 
-<hr class="divider">
 
 ## February 9, 2018
 
