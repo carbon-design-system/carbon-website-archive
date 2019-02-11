@@ -20,7 +20,7 @@ tabs: ['Basics', 'Choreography', 'Resources']
 
 ## Style
 
-IBM Design System recognizes different moments in user's experience, and offers two styles of motion - _productive_ motion, and _expressive_ motion. The motion curves are designed to reflect the philosophical duality of Man and Machine.
+IBM Design System recognizes different moments in user's experience, and offers two styles of motion—_productive_ motion, and _expressive_ motion. The motion curves are designed to reflect the philosophical duality of Man and Machine.
 
 <website-tabs>
 <tab label="Curves"><div>
@@ -56,18 +56,18 @@ IBM Design System recognizes different moments in user's experience, and offers 
 
 ### Productive
 
-Productive motion create a sense of efficiency and responsiveness, while being subtle. Use productive motion for moments when user needs to focus on tasks — micro-interactions such as button interaction and dropdown menus, revealing additional information upon user's request, or rendering data tables and visualizations.
+Productive motion creates a sense of efficiency and responsiveness, while being subtle. Use Productive motion for moments when user needs to focus on tasks—micro-interactions such as button interaction and dropdown menus, revealing additional information upon user's request, or rendering data tables and visualizations.
 
 ### Expressive
 
 Expressive motion delivers enthusiastic and vibrant, thus more visible movement. Use expressive motion for significant moments such as user opening a new page or clicking the primary action button, or when the movement itself conveys a meaning or needs to be noticed by the user such as system alert or notification box appearing.
 
-Productive and Expression are both essential to an interface. Reserve Expressive motion for occasional, important moments to better capture user’s attention, and offer rhythmic break to the productive experience.
+Productivity and Expression are both essential to an interface. Reserve Expressive motion for occasional, important moments to better capture user’s attention, and offer rhythmic break to the productive experience.
 
 Our [components](../../components/overview/) have basic motion build in. Use this guidance to customize motion, combine and coordinate motion through out experiences.
 
 <grid-wrapper col_lg="12" flex="true">
-<do-dont-example correct="true" full_width="true" label="Productive moments are labeled blue, and expressive moments are labeled magenta.">
+<do-dont-example correct="true" full_width="true" label="Productive moments are labeled blue, and Expressive moments are labeled magenta.">
 
 `vimeo: https://vimeo.com/310583077`
 
@@ -190,7 +190,7 @@ Cubic-bezier curve notation is the standard way to express easing curves. [IBM M
 
 ## Duration
 
-Duration is calculated based on the style and size of the motion. Among the two motion styles, **productive** motion is significantly faster than **expressive** motion. Motion’s duration should be dynamic based on the size of the animation - the larger the change in distance (traveled) or size (scaling) of the element, the longer the animation takes.
+Duration is calculated based on the style and size of the motion. Among the two motion styles, _Productive_ motion is significantly faster than _Expressive_ motion. Motion’s duration should be dynamic based on the size of the animation - the larger the change in distance (traveled) or size (scaling) of the element, the longer the animation takes.
 
 <grid-wrapper col_lg="12" flex="true">
 <do-dont-example correct="true" full_width="true" label="Duration contrast between a taller and a shorter component.">
