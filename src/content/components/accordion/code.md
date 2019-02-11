@@ -8,6 +8,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="accordion"
     variation="accordion"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component-docs component="accordion" experimental="true"></component-docs>
