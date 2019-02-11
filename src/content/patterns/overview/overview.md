@@ -17,4 +17,4 @@ The patterns library is constantly growing, and the Carbon team encourages contr
 
 [Loading](/patterns/loading) is applied when additional information takes an extended amount of time to process and appear on screen.
 
-[Overflow content](patterns/overflow-content) is text, such as a paragraph or a text string, that exceeds a desired space. 
+[Overflow content](/patterns/overflow-content) is text, such as a paragraph or a text string, that exceeds a desired space. 
