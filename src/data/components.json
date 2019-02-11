@@ -37,7 +37,7 @@
       "experimental": "not-available"
     },
     {
-      "item": "Code Snippet",
+      "item": "Code snippet",
       "added": "7.0.0",
       "tag": "updated",
       "vanilla": "ready",
@@ -46,7 +46,7 @@
       "experimental": "not-available"
     },
     {
-      "item": "Content Switcher",
+      "item": "Content switcher",
       "added": "4.0.0",
       "tag": "updated",
       "vanilla": "ready",
@@ -55,7 +55,7 @@
       "experimental": "not-available"
     },
     {
-      "item": "Data Table",
+      "item": "Data table",
       "added": "7.26.0",
       "tag": "updated",
       "vanilla": "under-review",
@@ -64,7 +64,7 @@
       "experimental": "not-available"
     },
     {
-      "item": "Date Picker",
+      "item": "Date picker",
       "added": "7.10.1",
       "tag": "updated",
       "vanilla": "ready",
@@ -82,7 +82,7 @@
       "experimental": "not-available"
     },
     {
-      "item": "File Uploader",
+      "item": "File uploader",
       "added": "7.0.0",
       "tag": "updated",
       "vanilla": "ready",
@@ -100,7 +100,7 @@
       "experimental": "not-available"
     },
     {
-      "item": "Inline Loading",
+      "item": "Inline loading",
       "added": "2.0.0",
       "tag": "updated",
       "vanilla": "ready",
@@ -163,7 +163,7 @@
       "experimental": "not-available"
     },
     {
-      "item": "Number Input",
+      "item": "Number input",
       "added": "6.0.0",
       "tag": "updated",
       "vanilla": "ready",
@@ -181,7 +181,7 @@
       "experimental": "not-available"
     },
     {
-      "item": "Progress Indicator",
+      "item": "Progress indicator",
       "added": "6.11.0",
       "tag": "updated",
       "vanilla": "ready",
@@ -190,7 +190,7 @@
       "experimental": "not-available"
     },
     {
-      "item": "Overflow Menu",
+      "item": "Overflow menu",
       "added": "5.0.0",
       "tag": "updated",
       "vanilla": "ready",
@@ -199,7 +199,7 @@
       "experimental": "not-available"
     },
     {
-      "item": "Radio Button",
+      "item": "Radio button",
       "added": "2.0.0",
       "tag": "updated",
       "vanilla": "ready",
@@ -235,7 +235,7 @@
       "experimental": "not-available"
     },
     {
-      "item": "Structured List",
+      "item": "Structured list",
       "added": "7.7.0",
       "tag": "updated",
       "vanilla": "ready",
@@ -262,7 +262,7 @@
       "experimental": "not-available"
     },
     {
-      "item": "Text Input",
+      "item": "Text input",
       "added": "2.0.0",
       "tag": "updated",
       "vanilla": "ready",
@@ -298,7 +298,7 @@
       "experimental": "not-available"
     },
     {
-      "item": "UI Shell",
+      "item": "UI shell",
       "added": "9.0.0",
       "tag": "new",
       "vanilla": "not-available",

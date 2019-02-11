@@ -2,6 +2,20 @@
 title: Governance
 ---
 
+<anchor-links>
+<ul>
+    <li><a data-scroll href="#open-source">Open-source</a></li>
+    <li><a data-scroll href="#roles-and-responsibilities">Roles and responsibilities</a></li>
+    <li><a data-scroll href="#teams">Teams</a></li>
+    <li><a data-scroll href="#decision-making">Decision-making</a></li>
+    <li><a data-scroll href="#contribution-process">Contribution process</a></li>
+    <li><a data-scroll href="#clas">CLAs</a></li>
+    <li><a data-scroll href="#support">Support</a></li>
+</ul>
+</anchor-links>
+
+## Open-source
+
 The Carbon Design System community welcomes all feedback and contributions of design, code, guidance, and ideas in order to produce the best possible experience for our users. Carbon is an ecosystem of open-source projects, and this document describes how the system is governed, how decisions are made, and how you can get involved.
 
 ## Roles and responsibilities
@@ -60,16 +74,19 @@ The way that project teams communicate internally and externally is left to each
 
 ### Project team categories
 
-**Design** - design kits and designer tooling
+####Design
+Design kits and designer tooling.
 
 - [Carbon Design Kit](https://github.com/IBM/carbon-design-kit)
 
-**Elements** - how the IBM Design Language is implemented
+####Elements
+How the IBM Design Language is implemented.
 
 - [Carbon Icons](https://github.com/IBM/carbon-icons)
 - [Carbon Elements](https://github.com/IBM/carbon-elements)
 
-**Components** - component implementation, appearance, and behavior
+####Components
+Component implementation, appearance, and behavior.
 
 <!-- Remove comment in v11 -->
 <!-- - [Carbon Spec and Styles](https://github.com/carbon-design-system/carbon-spec) -->
@@ -78,12 +95,14 @@ The way that project teams communicate internally and externally is left to each
 - [Carbon Components Angular](https://github.com/IBM/carbon-components-angular)
 - [Carbon Components Vue (Experimental)](https://github.com/carbon-design-system/carbon-components-vue)
 
-**Website** - online presence
+####Website
+Online presence.
 
 - [Carbon Website](https://github.com/carbon-design-system/carbon-website)
 - [Carbon Website (Archived)](https://github.com/IBM/design-system-website)
 
-**Add-ons** - see [add-on guidance](/contributing/add-ons) for custom components that follow the IBM Design Language.
+####Add-ons
+See [add-on guidance](/contributing/add-ons) for custom components that follow the IBM Design Language.
 
 ### Technical steering committee
 
