@@ -12,5 +12,4 @@ tabs: ['Code', 'Usage', 'Style']
     hasReactVersion="true"
     >
 </component>
-<component-docs component="checkbox" experimental="true"
-hasReactVersion="true"></component-docs>
+<component-docs component="checkbox" experimental="true"></component-docs>

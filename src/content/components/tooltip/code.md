@@ -30,5 +30,4 @@ tabs: ['Code', 'Usage', 'Style']
     >
 </component>
 
-<component-docs component="tooltip" experimental="true"
-hasReactVersion="true"></component-docs>
+<component-docs component="tooltip" experimental="true"></component-docs>

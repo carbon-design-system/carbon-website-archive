@@ -12,5 +12,4 @@ tabs: ['Code', 'Usage', 'Style']
     hasReactVersion="true"
     >
 </component>
-<component-docs component="file-uploader" experimental="true"
-hasReactVersion="true"></component-docs>
+<component-docs component="file-uploader" experimental="true"></component-docs>

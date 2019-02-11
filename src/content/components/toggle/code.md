@@ -20,5 +20,4 @@ tabs: ['Code', 'Usage', 'Style']
     hasReactVersion="true"
     >
 </component>
-<component-docs component="toggle" experimental="true"
-hasReactVersion="true"></component-docs>
+<component-docs component="toggle" experimental="true"></component-docs>

@@ -23,5 +23,4 @@ tabs: ['Code', 'Usage', 'Style']
     >
 </component>
 
-<component-docs component="dropdown" experimental="true"
-hasReactVersion="true"></component-docs>
+<component-docs component="dropdown" experimental="true"></component-docs>

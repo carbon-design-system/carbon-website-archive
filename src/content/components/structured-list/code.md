@@ -20,5 +20,4 @@ tabs: ['Code', 'Usage', 'Style']
     hasReactVersion="true"
     >
 </component>
-<component-docs component="structured-list" experimental="true"
-hasReactVersion="true"></component-docs>
+<component-docs component="structured-list" experimental="true"></component-docs>

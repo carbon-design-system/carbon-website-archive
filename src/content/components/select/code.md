@@ -41,5 +41,4 @@ tabs: ['Code', 'Usage', 'Style']
     hasReactVersion="true"
     >
 </component>
-<component-docs component="select" experimental="true"
-hasReactVersion="true"></component-docs>
+<component-docs component="select" experimental="true"></component-docs>

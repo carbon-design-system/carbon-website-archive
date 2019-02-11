@@ -84,5 +84,4 @@ tabs: ['Code', 'Usage', 'Style']
     hasReactVersion="true"
     >
 </component>
-<component-docs component="button" experimental="true"
-hasReactVersion="true"></component-docs>
+<component-docs component="button" experimental="true"></component-docs>

@@ -36,5 +36,4 @@ tabs: ['Code', 'Usage', 'Style']
     hasReactVersion="true"
     >
 </component>
-<component-docs component="date-picker" experimental="true"
-hasReactVersion="true"></component-docs>
+<component-docs component="date-picker" experimental="true"></component-docs>

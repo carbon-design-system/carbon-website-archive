@@ -11,5 +11,4 @@ tabs: ['Code', 'Usage', 'Style']
     hasReactVersion="true"
     >
 </component>
-<component-docs component="accordion" experimental="true"
-hasReactVersion="true"></component-docs>
+<component-docs component="accordion" experimental="true"></component-docs>

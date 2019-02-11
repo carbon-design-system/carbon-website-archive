@@ -29,5 +29,4 @@ tabs: ['Code', 'Usage', 'Style']
     hasReactVersion="true"
     >
 </component>
-<component-docs component="code-snippet" experimental="true"
-hasReactVersion="true"></component-docs>
+<component-docs component="code-snippet" experimental="true"></component-docs>
