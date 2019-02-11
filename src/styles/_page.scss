@@ -102,6 +102,10 @@ body {
     margin-bottom: rem(24px);
   }
 
+  td > img {
+    margin-bottom: 0;
+  }
+
   img + img {
     margin-bottom: 0;
   }
@@ -139,7 +143,6 @@ body {
 .page-content > div > img[src*='svg'],
 .page-content > div > img[src*='gif'] {
   background: $ui-02;
-  // margin-bottom: 4rem;
 
   @include breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
