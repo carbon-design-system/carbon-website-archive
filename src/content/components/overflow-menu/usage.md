@@ -21,10 +21,15 @@ The text within an overflow menu should be direct so users can quickly decide on
 
 </image-component>
 
+<image-component cols="8">
+
+![An overflow menu with a significant action](images/overflow-menu-usage-1.png)
+
+</image-component>
+
 #### Positioning
 
-Depending on where the overflow menu appears within the UI, the caret or arrow may be left or right aligned so the overflow menu is clearly visible.
-
+Depending on where the Overflow Menu appears within the UI, the caret or arrow may be left or right aligned so the Overflow Menu is clearly visible.
 
 <image-component cols="8" caption="Right-aligned Overflow Menu">
 
