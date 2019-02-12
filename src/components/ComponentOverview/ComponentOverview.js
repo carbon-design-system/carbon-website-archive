@@ -4,7 +4,6 @@ import { Link } from 'gatsby';
 class ComponentOverview extends React.Component {
   renderItems = currentItem => {
     const component = currentItem.item;
-
     let componentUrl;
     if (component === 'Multiselect') {
       componentUrl = '/components/dropdown';

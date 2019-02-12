@@ -25,6 +25,12 @@ _Previous_ and _next_ chevrons or links are the most useful way for the user to 
 
 </image-component>
 
+<image-component cols="8">
+
+![Example of pagination controls on data table](images/pagination-usage-1.png)
+
+</image-component>
+
 #### Items per page
 
 Use an inline select within the pagination bar so the user can change the amount of data displayed per page.

@@ -1,8 +1,8 @@
 ---
-title: Carbon X Release Highlights
+title: Release Highlights
 ---
 
-## Exciting changes coming with Carbon X
+## Exciting changes
 
 The Carbon team is excited to announce the upcoming release of Carbon X, a major update to IBM's open-source design system.
 

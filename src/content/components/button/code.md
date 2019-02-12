@@ -9,6 +9,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="button"
     variation="button--primary" 
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component 
@@ -16,6 +17,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="button"
     variation="button--secondary" 
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component 
@@ -23,6 +25,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="button"
     variation="button--tertiary" 
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component 
@@ -30,6 +33,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="button"
     variation="button--ghost" 
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component 
@@ -37,6 +41,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="button"
     variation="button--danger--primary" 
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component 
@@ -44,6 +49,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="button"
     variation="button--primary--small" 
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component 
@@ -51,6 +57,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="button"
     variation="button--secondary--small" 
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component 
@@ -58,6 +65,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="button"
     variation="button--tertiary--small" 
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component 
@@ -65,6 +73,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="button"
     variation="button--ghost--small" 
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component 
@@ -72,6 +81,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="button"
     variation="button--danger--primary--small" 
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component-docs component="button" experimental="true"></component-docs>

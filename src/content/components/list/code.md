@@ -9,6 +9,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="list" 
     variation="list--ordered"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 
@@ -17,6 +18,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="list" 
     variation="list"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component-docs component="list" experimental="true"></component-docs>

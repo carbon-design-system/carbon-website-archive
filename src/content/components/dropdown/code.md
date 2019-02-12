@@ -10,6 +10,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="dropdown" 
     variation="dropdown"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component 
@@ -18,6 +19,7 @@ tabs: ['Code', 'Usage', 'Style']
     variation="dropdown--up"
     codepen="eeGYvQ"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 

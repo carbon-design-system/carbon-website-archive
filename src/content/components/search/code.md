@@ -8,6 +8,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="search" 
     variation="search--small"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 
@@ -16,6 +17,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="search" 
     variation="search--large"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 
