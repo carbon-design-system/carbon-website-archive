@@ -14,5 +14,4 @@ The patterns library is constantly growing, and the Carbon team encourages contr
 |[Common actions](/patterns/common-actions)  | These are the frequently used actions that appear multiple times across different components and workflows.  |
 |[Disabled states](/patterns/disabled-states)   |Are used to completely remove the interactive function of a component.   |
 |[Filtering](/patterns/filtering)   |Is the mechanism by which a user adds or removes data items from a displayed data set.   |
-|[Loading](/patterns/loading)   |Is applied when additional information takes an extended amount of time to process and appear on screen.   |
 |[Overflow content](/patterns/overflow-content) |Is text, such as a paragraph or a text string, that exceeds a desired space. |
