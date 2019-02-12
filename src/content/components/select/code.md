@@ -8,6 +8,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="select" 
     variation="select"
     experimental="true"
+    hasReactVersion="true"
     haslightversion="true"
     hasReactversion="true"
     >
@@ -18,6 +19,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="select" 
     variation="select--invalid"
     experimental="true"
+    hasReactVersion="true"
     haslightversion="true"
     >
 </component>
@@ -27,6 +29,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="select" 
     variation="select--inline"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 
@@ -35,6 +38,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="select" 
     variation="select--inline-invalid"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component-docs component="select" experimental="true"></component-docs>

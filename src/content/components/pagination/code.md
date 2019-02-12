@@ -9,6 +9,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="pagination" 
     variation="pagination"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 
