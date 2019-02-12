@@ -9,6 +9,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="tile" 
     variation="tile"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component 
@@ -16,6 +17,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="tile" 
     variation="tile--clickable"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component 
@@ -23,6 +25,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="tile" 
     variation="tile--selectable"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component 
@@ -30,6 +33,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="tile" 
     variation="tile--expandable"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component-docs component="tile" experimental="true"></component-docs>
