@@ -1,5 +1,5 @@
 ---
-title: Overflow Content
+title: Overflow content
 ---
 
 **Overflow content** is text, such as a paragraph or a text string, that exceeds a desired space. It also applies to a series of components that surpass a given space. Overflow content is typically reduced to fit a space or reduce repetition. Truncation and ‘Show more’ buttons are two ways to indicate that overflow content is continued elsewhere or below the fold.
@@ -24,11 +24,11 @@ Truncation, or shortening, is typically used for static text or links that excee
 
 Good use cases for truncation include:
 
-- breadcrumbs
-- pagination
-- long URL links
-- paragraph of text (i.e. a description paragraph)
-- shortening of a long item name (user- or platform-generated)
+- Breadcrumbs
+- Pagination
+- Long URL links
+- Paragraph of text (i.e. a description paragraph)
+- Shortening of a long item name (user- or platform-generated)
 
 Truncation should **not** be used on page headers, titles, labels, error messages, validation messages, notifications, menu items, or tabs.
 
@@ -59,7 +59,7 @@ To use front- and end-line truncation, enter the appropriate class below and add
 | **Frontline** | `.bx--text-truncate--front` |
 | **End-line**  | `.bx--text-truncate--end`   |
 
-**Example Usage**
+**Example usage**
 
 ```html
 <div class="container">

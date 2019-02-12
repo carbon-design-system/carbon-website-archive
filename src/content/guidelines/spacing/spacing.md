@@ -25,7 +25,7 @@ Carbon has two spacing scales; one for general spacing within components and the
 
 ### Applying spacing
 
-Both the Spacing and the Layout scales can be applied to `margin` or `padding` properties. Likewise, these spacing tokens can be applied to both vertical and horizontal edges. The token takes the place of the values normally assigned to `margin` and `padding`. The following are all approved ways to syntactically apply Carbon spacing tokens:
+Both the _spacing_ and the _layout_ scales can be applied to `margin` or `padding` properties. Likewise, these spacing tokens can be applied to both vertical and horizontal edges. The token takes the place of the values normally assigned to `margin` and `padding`. The following are all approved ways to syntactically apply Carbon spacing tokens:
 
 ```css
 margin: $spacing-xs;

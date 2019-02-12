@@ -21,21 +21,21 @@ IBM Motion implements sophisticated curves and duration. Use the IBM Motion Gene
   <clickable-tile title="Motion Generator" href="https://ibm.github.io/motion/" type="resource"></clickable-tile>
 </grid-wrapper>
 
-## Motion Design Strategy
+## Motion design strategy
 
 Follow these steps to assess your interface for purposeful motion:
 
 1. Define the goals and values of product.
-1. Establish information hierarchy within the view.
-1. Identify the journey you will guide users through
-1. Identify key moments and opportunities for UI motion in the journey. Examples:
+2. Establish information hierarchy within the view.
+3. Identify the journey you will guide users through
+4. Identify key moments and opportunities for UI motion in the journey. Examples:
     - Give feedback, such as hover states, active states component behaviors, such as opening a drop-down menu
     - Solutions to a UX need, such as reducing cognitive load with progressive disclosure
     - Provide guidance, such as revealing a call to action Primary action button to draw users’ attention
-1. Assign or determine either efficient or enthusiastic motion
-1. Prototype and test
+5. Assign or determine either efficient or enthusiastic motion
+6. Prototype and test
 
-## Evaluation Checklist
+## Evaluation checklist
 
 1. Is your motion purposeful?
     - What problem is motion solving?
@@ -45,7 +45,7 @@ Follow these steps to assess your interface for purposeful motion:
     - Do user actions receive immediate feedback that's seen and felt?
     - Do my micro-interactions use ease-out on user input?
     - Do my micro-interactions fall within a static duration ranging from 60 - 100ms?
-    - If there are large, or full screen, transitions in your product, are some elements continuous to guide the user?
+    - If there are large or full screen transitions in your product, are some elements continuous to guide the user?
 
 3. Is your motion meticulous?
     - Did you use the appropriate easing curves?
@@ -58,6 +58,6 @@ Follow these steps to assess your interface for purposeful motion:
 5. Is your motion responsive?
     - Check your motion on different screens. In general, the smaller the screen is, the longer the animation should take - this ensures the motion will be perceivable to the user's eye.
 
-## Adaptive Interface Motion Design
+## Adaptive interface motion design
 
-Not all devices are powerful enough to smoothly perform all the motion you have designed into the interface, no matter how essential the motion design is. Provide alternatives signifiers for devices with less computing power and users with disabilities. Consider motion-simplified designs for mobil and tablet. Make sure there is always way to communicate the meaning behind a motion statically.
+Not all devices are powerful enough to smoothly perform all motion you have designed into the interface, no matter how essential the motion design is. Provide alternative signifiers for devices with less computing power and users with disabilities. Consider motion-simplified designs for mobile and tablet. Make sure there is always a way to communicate the meaning behind a motion statically.

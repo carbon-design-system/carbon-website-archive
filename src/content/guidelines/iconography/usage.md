@@ -15,7 +15,7 @@ tabs: ['Library', 'Usage', 'Contribution']
 
 ### Sizing
 
-UI icons that appear within Carbon components are generally 16 px square. Icons sized at 20, 24, and 32 px can be also used within the UI. Icons should only be used at their original sizes and not resized in code.
+UI icons that appear within Carbon components are generally 16 px squares, however icons sized at 20 px, 24 px, and 32 px can be also used within the UI. Icons should only be used at their original sizes and not resized in code.
 
 <image-component  cols="12">
 
@@ -38,7 +38,7 @@ UI icons that appear within Carbon components are generally 16 px square. Icons 
     </do-dont-example>
 </grid-wrapper>
 
-### Touch Targets
+### Touch targets
 
 All touch targets for interactive icons need to be 44 px or larger. Developers can add padding to a touch target with CSS to meet the 44 px requirement.
 
