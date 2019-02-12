@@ -148,7 +148,7 @@ class Layout extends React.Component {
               </p>
               <a href="https://next.carbondesignsystem.com" tabIndex="-1">
                 <button
-                  class="bx--btn bx--btn--secondary bx--btn--sm"
+                  className="bx--btn bx--btn--secondary bx--btn--sm"
                   type="button">
                   Go to V10-beta
                 </button>
