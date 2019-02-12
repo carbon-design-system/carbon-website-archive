@@ -6,14 +6,14 @@ title: Designers
 
 <grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
-    title="Add Carbon design kit to Sketch library"
+    title="Add Carbon Design Kit to Sketch library"
     href="sketch://add-library/cloud/JaVzz"
     type="resource"
      >
     <img src="images/sketch-icon.png" alt=""  />
 </clickable-tile>
 <clickable-tile
-    title="Download Carbon design kit from GitHub"
+    title="Download Carbon Design Kit from GitHub"
     href="https://github.com/IBM/carbon-design-kit"
     type="resource"
     >
@@ -24,7 +24,7 @@ title: Designers
 <anchor-links>
 <ul>
     <li><a href="#carbon-design-kit">Carbon Design Kit</a></li>
-    <li><a href="#how-to-get-it">How to get it</a></li>
+    <li><a href="#how-to-get-it">How to get the kit</a></li>
     <li><a href="#get-the-kit-via-box">Get the kit via Box</a></li>
     <li><a href="#download-the-kit-from-github">Download the kit from GitHub</a></li>
     <li><a href="#connect-with-us">Connect with us</a></li>

@@ -2,15 +2,20 @@
 title: Loading
 ---
 
-**Loading** is applied when additional information takes an extended amount of time to process and appear on screen. Skeleton states and the _loading_ component are two interactions that communicate to users that data is currently loading and the screen is not frozen.
-
 <anchor-links>
 <ul>
+    <li><a data-scroll href="#purpose">Purpose</a></li>
     <li><a data-scroll href="#skeleton-states">Skeleton states</a></li>
     <li><a data-scroll href="#loading-components">Loading components</a></li>
-  <li><a data-scroll href="#load-more">Load more</a></li>
+    <li><a data-scroll href="#load-more">Load more</a></li>
 </ul>
 </anchor-links>
+
+
+## Purpose
+
+_Loading_ is applied when additional information takes an extended amount of time to process and appear on screen. Skeleton states and the _loading_ component are two interactions that communicate to users that data is currently loading and the screen is not frozen.
+
 
 ## Skeleton states
 
