@@ -9,6 +9,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="modal" 
     variation="modal--nofooter"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 
@@ -17,6 +18,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="modal" 
     variation="modal"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 
@@ -25,6 +27,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="modal" 
     variation="modal--danger"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 
@@ -33,6 +36,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="modal" 
     variation="modal--input"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component-docs component="modal"></component-docs>

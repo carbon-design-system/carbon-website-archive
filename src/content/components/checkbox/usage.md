@@ -46,10 +46,10 @@ Generally, toggle switches are preferred when the resulting action will be insta
 
 <br>
 
-- [Toggle](/experimental/toggle)
-- [Radio Button](/experimental/radio-button)
-- [Form](/experimental/form)
-- _Data Table (coming soon)_
+- [Toggle](/components/toggle)
+- [Radio button](/components/radio-button)
+- [Form](/components/form)
+- _Data table (coming soon)_
 
 
 ## Content
@@ -63,5 +63,5 @@ Always use clear and concise labels for checkboxes. Be explicit about the result
 
 ## Tables
 
-See the [Data Table](/components/data-table/usage) section for guidance on how to use checkboxes within a table.
+See the [data table](/components/data-table/usage) section for guidance on how to use checkboxes within a table.
 

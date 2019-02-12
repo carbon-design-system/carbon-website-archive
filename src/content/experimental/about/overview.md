@@ -7,7 +7,7 @@ tabs: ['Overview', 'Usage']
 
 Experimental components, designs, and other resources are presented for testing and feedback. They are not intended for production use. The Carbon team is continually updating components, and introducing new design and development guidelines into the Carbon Design System.
 
-We want to provide early-access to our changes, so that designers and developers can test, work with, and provide feedback. These resources are provided in the "Experimental" section of the site.
+We want to provide early-access to our changes, so that designers and developers can test, work with, and provide feedback. These resources are provided in the "experimental" section of the site.
 
 ## What are "experimental" resources?
 

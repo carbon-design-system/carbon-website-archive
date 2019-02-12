@@ -2,23 +2,27 @@
 title: Disabled States
 ---
 
-**A disabled state** is applied to a component when the user is not allowed to interact with the component due to either permissions, dependencies, or pre-requisites. Disabled states completely remove the interactive function of a component.
-
 <anchor-links>
 <ul>
+    <li><a data-scroll href="#purpose">Purpose</a></li>
+    <li><a data-scroll href="#disabled-variations">Disabled variations</a></li>
     <li><a data-scroll href="#default-disabled">Default disabled</a></li>
     <li><a data-scroll href="#read-only">Read-only</a></li>
     <li><a data-scroll href="#hidden">Hidden</a></li>
 </ul>
 </anchor-links>
 
+## Purpose
+
+A _disabled state_ is applied to a component when the user is not allowed to interact with the component due to either permissions, dependencies, or pre-requisites. Disabled states completely remove the interactive function of a component.
+
 ## Disabled variations
 
 | Variation            | Description                                                                                                                                                                                                                               |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Default disabled** | Cannot be clicked, selected or interacted with. It is not read by a screen reader and takes on the default disabled visual style.                                                                                                         |
-| **Read-only**        | The user cannot interact with it but content is still readable and accessible to a screen reader. The visual style should contain no interactive indicators such as `$brand-01`, hover states, or text embellishments (i.e., underlines). |
-| **Hidden**           | The component is completely hidden from view. The user does not know the option is there.                                                                                                                                                 |
+| _Default disabled_| Cannot be clicked, selected or interacted with. It is not read by a screen reader and takes on the default disabled visual style.                                                                                                         |
+| _Read-only_        | The user cannot interact with it but content is still readable and accessible to a screen reader. The visual style should contain no interactive indicators such as `$interactive-01`, hover states, or text embellishments (i.e., underlines). |
+| _Hidden_          | The component is completely hidden from view. The user does not know the option is there.                                                                                                                                                 |
 
 ## Default disabled
 
@@ -36,11 +40,11 @@ Default disabled states are most commonly styled by a decrease in opacity with n
 
 | Attribute | Default disabled style |
 | --------- | ---------------------- |
-| Component | 50% opacity            |
-| Text      | 25% opacity            |
-| Icons     | 50% opacity            |
-| Hover     | None                   |
-| Cursor    | `not-allowed`          |
+| _Component_ | 50% opacity            |
+| _Text_      | 25% opacity            |
+| _Icons_     | 50% opacity            |
+| _Hover_     | None                   |
+| _Cursor_   | `not-allowed`          |
 
 <image-component cols="8">
 

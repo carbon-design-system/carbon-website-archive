@@ -13,7 +13,13 @@ _Overflow menu_ is used when additional options are available to the user and th
 
 #### Text
 
-The text within an Overflow Menu should be direct so users can quickly decide on an action. Actions that could cause a significant change to the user's data (Delete app, Delete service, etc.) is separated by a horizontal rule and live below the primary set of actions.
+The text within an overflow menu should be direct so users can quickly decide on an action. Actions that could cause a significant change to the user's data (delete app, delete service, etc.) are separated by a horizontal rule and live below the primary set of actions.
+
+<image-component cols="8">
+
+![An overflow menu with a significant action](images/overflow-menu-usage-1.png)
+
+</image-component>
 
 <image-component cols="8">
 
