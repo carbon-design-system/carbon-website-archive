@@ -40,6 +40,7 @@
 
 .container--homepage h3.homepage--header__title {
   @include type-style('heading-03');
+  font-weight: 600;
   position: absolute;
   bottom: 3.5rem;
   padding-bottom: 0;
