@@ -6,7 +6,7 @@ tabs: ['Basics', 'Choreography', 'Resources']
 
 <anchor-links>
 <ul>
-    <li><a href="#motion-generator">Motion generator</a></li>
+    <li><a href="#motion-generator">Motion Generator</a></li>
     <li><a href="#motion-design-strategy">Motion design strategy</a></li>
     <li><a href="#evaluation-checklist">Evaluation checklist</a></li>
     <li><a href="#adaptive-interface-motion-design">Adaptive interface motion design</a></li>
@@ -39,25 +39,19 @@ Follow these steps to assess your interface for purposeful motion:
 
 1. Is your motion purposeful?
     - What problem is motion solving?
-    - Does it enhance the user experience?
-
+    - Does it enhance the user's understanding of an action?
 2. Is your motion responsive?
     - Do user actions receive immediate feedback that's seen and felt?
-    - Do my micro-interactions use ease-out on user input?
-    - Do my micro-interactions fall within a static duration ranging from 60 - 100ms?
-    - If there are large or full screen transitions in your product, are some elements continuous to guide the user?
-
+    - Do my micro-interactions use `ease-out` on user input?
+    - Do my micro-interactions fall within a static duration ranging from 90–120ms?
+    - If there are large, or full screen, transitions in your product, are there continuous elements in your transition to guide the user?
 3. Is your motion meticulous?
     - Did you use the appropriate easing curves?
-    - Is each motion individually considered and choreographed across elements?
-    - Are larger elements and motions on smaller screens taking more time than on larger screens?
-
+    - Is each motion individually considered and has a unified relationship with each other?
+    - Are the motion effective across all screen sizes? Keep in mind that on mobile screens, subtle motions may be easily missed.
 4. Is your motion unobtrusive?
-    - The best interface motion may go unnoticed, because it often keeps users engaged with their tasks. Is your motion frequently noticed by the average users? If so consider removing it, or minimizing it.
+    - The best interface motion may go unnoticed, because it often keeps users engaged with their tasks. Is your motion frequently noticed by the average users? If so, consider removing or minimizing it.
 
-5. Is your motion responsive?
-    - Check your motion on different screens. In general, the smaller the screen is, the longer the animation should take - this ensures the motion will be perceivable to the user's eye.
+## Accessible Interface Motion Design
 
-## Adaptive interface motion design
-
-Not all devices are powerful enough to smoothly perform all motion you have designed into the interface, no matter how essential the motion design is. Provide alternative signifiers for devices with less computing power and users with disabilities. Consider motion-simplified designs for mobile and tablet. Make sure there is always a way to communicate the meaning behind a motion statically.
+A large population of users exist with impaired vision or impaired ability to perceive and handle motion in UI. In addition, not all devices are powerful enough to smoothly perform all the motion you would like, no matter how essential the motion design is. Always provide alternatives for interface state transitions. Consider simplified or reduced motion designs for mobile and tablet. Make sure there is always a way to communicate similar messages statically.
