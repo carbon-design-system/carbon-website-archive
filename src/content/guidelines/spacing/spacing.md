@@ -5,7 +5,7 @@ title: Spacing
 
 <anchor-links>
 <ul>
-        <li><a href="#carbon's-two-scales">Carbon’s two scales</a></li>
+        <li><a href="#carbons-two-scales">Carbon’s two scales</a></li>
     <li><a href="#spacing-scale">Spacing scale</a></li>
     <li><a href="#layout-scale">Layout scale</a></li>
     <li><a href="#designing-with-space">Designing with space</a></li>
