@@ -142,7 +142,7 @@ Create custom breakpoints to accommodate special needs, by writing your own medi
 | X-Large    | 1312 / 82      | 16      | 6.25%    | 80 px | 16 px   | 16 px  |
 | Max        | 1584 / 99      | 16      | 6.25%    | 96 px | 16 px   | 24 px  |
 
-For best results, test designs and code at each of these standard breakpoints.
+
 
 `vimeo: https://vimeo.com/292015984`
 
