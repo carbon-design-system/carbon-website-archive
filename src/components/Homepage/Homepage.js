@@ -19,11 +19,11 @@ export class HomepageHeader extends React.Component {
         Design System
       </h3>
     ) : (
-      <h3 className="homepage--header__title">
-        Carbon <br />
-        Design System
-      </h3>
-    );
+        <h3 className="homepage--header__title">
+          <span>Carbon <br />
+            Design System</span>
+        </h3>
+      );
 
     return (
       <div>
