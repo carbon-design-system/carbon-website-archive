@@ -73,20 +73,20 @@ module.exports = {
       role: ['Default page background'],
       value: {
         white: {
-          name: 'Blue 60',
-          hex: '#0062ff',
+          name: 'White',
+          hex: '#ffffff',
         },
         g10: {
-          name: 'Blue 60',
-          hex: '#0062ff',
+          name: 'Gray 10',
+          hex: '#f3f3f3',
         },
         g90: {
-          name: 'White',
-          hex: '#ffffff',
+          name: 'Gray 90',
+          hex: '#282828',
         },
         g100: {
-          name: 'White',
-          hex: '#ffffff',
+          name: 'Gray 100',
+          hex: '#171717',
         },
       },
     },
@@ -668,6 +668,27 @@ module.exports = {
         },
       },
     },
+    '$hover-selected-ui': {
+      role: ['data table selected row hover'],
+      value: {
+        white: {
+          name: 'Gray 20 Hover',
+          hex: '#cacaca',
+        },
+        g10: {
+          name: 'Gray 20 Hover',
+          hex: '#cacaca',
+        },
+        g90: {
+          name: 'Gray 70 Hover',
+          hex: '#656565',
+        },
+        g100: {
+          name: 'Gray 80 Hover',
+          hex: '#4c4c4c',
+        },
+      },
+    },
     '$hover-danger': {
       role: ['Danger hover', '$support-01 hover'],
       value: {
@@ -833,27 +854,6 @@ module.exports = {
         g100: {
           name: 'Gray 80',
           hex: '#3d3d3d',
-        },
-      },
-    },
-    '$hover-selected-ui': {
-      role: ['data table selected row hover'],
-      value: {
-        white: {
-          name: 'Gray 20 Hover',
-          hex: '#cacaca',
-        },
-        g10: {
-          name: 'Gray 20 Hover',
-          hex: '#cacaca',
-        },
-        g90: {
-          name: 'Gray 70 Hover',
-          hex: '#656565',
-        },
-        g100: {
-          name: 'Gray 80 Hover',
-          hex: '#4c4c4c',
         },
       },
     },
