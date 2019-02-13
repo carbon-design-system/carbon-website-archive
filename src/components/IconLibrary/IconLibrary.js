@@ -109,7 +109,7 @@ export default class IconLibrary extends React.Component {
         small
         className="icon-search"
         onChange={this.handleOnChange}
-        placeHolderText="Search by descriptors like “add, or check”"
+        placeHolderText="Search by descriptors like “add”, or “check”"
         aria-label="Icon library search"
         value={this.state.searchValue}
         labelText="Icon library search"
