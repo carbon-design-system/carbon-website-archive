@@ -48,6 +48,27 @@ module.exports = {
         },
       },
     },
+    '$ui-background': {
+      role: ['Default page background'],
+      value: {
+        white: {
+          name: 'White',
+          hex: '#ffffff',
+        },
+        g10: {
+          name: 'Gray 10',
+          hex: '#f3f3f3',
+        },
+        g100: {
+          name: 'Gray 100',
+          hex: '#171717',
+        },
+        g90: {
+          name: 'Gray 90',
+          hex: '#282828',
+        },
+      },
+    },
     '$ui-01': {
       role: ['Primary container background', 'Secondary page background'],
       value: {
