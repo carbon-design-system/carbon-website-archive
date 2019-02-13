@@ -1,6 +1,10 @@
 ---
 name: Question ❓
 about: Usage question or discussion about the Carbon Website.
+title: ''
+labels: ''
+assignees: ''
+
 ---
 
 <!--
