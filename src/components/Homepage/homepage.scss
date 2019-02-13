@@ -40,11 +40,17 @@
 
 .container--homepage h3.homepage--header__title {
   @include type-style('heading-03');
+  display: none;
+  font-weight: 600;
   position: absolute;
   bottom: 3.5rem;
   padding-bottom: 0;
   margin-bottom: 0;
   z-index: 3;
+
+  @include breakpoint('md') {
+    display: block;
+  }
 }
 
 .homepage--header img {
