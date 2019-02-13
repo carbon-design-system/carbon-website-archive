@@ -1,6 +1,6 @@
 .glossary-nav {
   position: absolute;
-  right: 0;
+  right: $spacing-lg;
   padding: 0;
   display: none;
   flex-direction: column;
@@ -24,22 +24,23 @@
   padding: 0;
   width: 100%;
   transition: all $transition--base;
+  display: block;
 }
 
 .bx--list__item a {
-  width: rem(60px);
+  @include type-style('body-short-02');
+  width: rem(32px);
   height: rem(32px);
-  padding: rem(5px) 0 0 $spacing-md;
+  padding: rem(5px) 0 0 0;
   display: block;
-  justify-content: center;
+  text-align: center;
   text-decoration: none;
   color: $text-02;
-  @include type-style('body-short-02');
 }
 
 .bx--list__item:hover a {
   color: $text-01;
-  background: $ui-02;
+  background: $hover-ui;
 }
 
 .bx--list__item.glossary-nav__item--active a {
