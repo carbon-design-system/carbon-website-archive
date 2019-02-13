@@ -19,7 +19,7 @@ UI icons that appear within Carbon components are generally 16 px square. Icons 
 
 <image-component  cols="12">
 
-![icon sizing](images/iconography-usage-sizing-1.svg)
+![icon sizing](images/iconography_usage_sizing-1.png)
 
 </image-component>
 
