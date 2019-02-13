@@ -28,7 +28,7 @@ module.exports = {
       },
     },
     '$interactive-02': {
-      role: ['Secondary interactive color', 'Loading'],
+      role: ['Secondary button'],
       value: {
         white: {
           name: 'Gray 100',
@@ -45,6 +45,48 @@ module.exports = {
         g100: {
           name: 'Gray 60',
           hex: '#6f6f6f',
+        },
+      },
+    },
+    '$interactive-03': {
+      role: ['Tertiary button'],
+      value: {
+        white: {
+          name: 'Blue 60',
+          hex: '#0062ff',
+        },
+        g10: {
+          name: 'Blue 60',
+          hex: '#0062ff',
+        },
+        g90: {
+          name: 'White',
+          hex: '#ffffff',
+        },
+        g100: {
+          name: 'White',
+          hex: '#ffffff',
+        },
+      },
+    },
+    '$ui-background': {
+      role: ['Default page background'],
+      value: {
+        white: {
+          name: 'Blue 60',
+          hex: '#0062ff',
+        },
+        g10: {
+          name: 'Blue 60',
+          hex: '#0062ff',
+        },
+        g90: {
+          name: 'White',
+          hex: '#ffffff',
+        },
+        g100: {
+          name: 'White',
+          hex: '#ffffff',
         },
       },
     },
