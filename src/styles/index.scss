@@ -8,8 +8,8 @@
 @import '@carbon/type/scss/font-face/mono';
 @import '@carbon/type/scss/classes';
 
-@include type-reset();
-@include type-classes();
+@include carbon--type-reset();
+@include carbon--type-classes();
 
 $feature-flags: (
   components-x: true,

@@ -20,10 +20,10 @@
   padding: $spacing-md;
   background: $ibm-colors__white;
   border-left: 1px solid $ibm-colors__gray-20;
-  @include type-style('caption-01');
+  @include carbon--type-style('caption-01');
 
   h4 {
-    @include type-style('heading-01');
+    @include carbon--type-style('heading-01');
     margin: 0;
     padding: 0;
   }
@@ -39,6 +39,6 @@
 }
 
 .type-spec__details .bx--snippet--inline code {
-  @include type-style('code-01');
+  @include carbon--type-style('code-01');
   color: $text-01;
 }

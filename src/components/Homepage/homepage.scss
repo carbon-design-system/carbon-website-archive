@@ -39,7 +39,7 @@
 }
 
 .container--homepage h3.homepage--header__title {
-  @include type-style('heading-03');
+  @include carbon--type-style('expressive-heading-03');
   display: none;
   font-weight: 600;
   position: absolute;
@@ -65,7 +65,7 @@
 
 .container--homepage h3,
 .container--homepage .page-content > div > .ibm--row:first-child h3 {
-  @include type-style('heading-03');
+  @include carbon--type-style('expressive-heading-03');
   margin-top: rem(64px);
   margin-bottom: $spacing-lg;
 }
@@ -101,7 +101,7 @@
 
 .homepage--callout h2 {
   //add back in once v10 is out
-  //@include type-style('expressive-heading-04', true);
+  //@include carbon--type-style('expressive-heading-04', true);
   margin-bottom: 0;
 }
 
