@@ -32,8 +32,12 @@ body {
   }
 }
 
-.bx--header .bx--header__name span {
+.bx--header .bx--header__name {
   font-weight: 400;
+}
+
+.bx--header .bx--header__name span {
+  font-weight: 600;
 }
 
 //---------------------------------------
@@ -89,12 +93,12 @@ body {
   }
 
   td > code {
-    @include type-style('code-01');
+    @include carbon--type-style('code-01');
   }
 
   p > code,
   li > code {
-    @include type-style('code-02');
+    @include carbon--type-style('code-02');
   }
 
   // HR dividers
@@ -172,7 +176,7 @@ body {
 img[src*='svg'],
 img[src*='gif'] {
   + div > div > p > em {
-    @include type-style('body-short-01');
+    @include carbon--type-style('body-short-01');
     font-style: normal;
     color: $text-01;
     display: block;
@@ -240,7 +244,7 @@ img[src*='gif'] {
 }
 
 .website-alert__text {
-  @include type-style('body-short-01');
+  @include carbon--type-style('body-short-01');
   color: $inverse-01;
 }
 
