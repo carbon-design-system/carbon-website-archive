@@ -82,7 +82,7 @@ class ComponentReactExample extends Component {
   render() {
     const { name, component, variation } = this.props;
     const storybookMessage = {
-      'MultiSelect-MultiSelect.Filterable': 'Check off Filtable in KNOBS tab',
+      'MultiSelect-MultiSelect.Filterable': 'Check off Filterable in KNOBS tab',
       'MultiSelect-MultiSelect.Inline': 'Select inline in UI type in KNOBS tab',
     }[`${component}-${variation || 'default'}`];
     const storybookVariation = {
@@ -93,36 +93,40 @@ class ComponentReactExample extends Component {
     const componentLink = `http://react.carbondesignsystem.com/?selectedKind=${component}&selectedStory=${storybookVariation || 'default'}`;
 
     return (
-      <div className="component-variation ibm--row">
-        <div className="ibm--col-lg-12 ibm--offset-lg-4">
-          <h2 className="component-variation__name bx--type-expressive-heading-04">
-            {name}
-          </h2>
-          <p>
-            This component is currently only available in{' '}
-            <a
-              href="https://github.com/ibm/carbon-components-react"
-              target="_blank">
-              our React library
-            </a>
-            .
-          </p>
-          <div>
-            <div className="svg--sprite" aria-hidden="true" />
-            <div className="component-example__live component-example__live--light">
-              <div className="component-example__live--rendered">
-                <div ref={comp => (this.comp = comp)} />
-              </div>
+      <>
+        <div className="ibm--row">
+          <div className="ibm--col-lg-12 ibm--offset-lg-4">
+            <h2 className="page-h2 bx--type-expressive-heading-04">{name}</h2>
+            <p className="component-example__heading-label">
+              This component is currently only available in{' '}
               <a
-                href={componentLink}
-                className="component-example__view-full-render component-example__view-full-render--react"
-                rel="noopener noreferrer">
-                View on React Storybook{storybookMessage &&` (${storybookMessage})`}
+                href="https://github.com/ibm/carbon-components-react"
+                target="_blank">
+                our React library
               </a>
+              .
+            </p>
+          </div>
+        </div>
+        <div className="component-variation ibm--row">
+          <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
+            <div>
+              <div className="svg--sprite" aria-hidden="true" />
+              <div className="component-example__live">
+                <div className="component-example__live--rendered">
+                  <div ref={comp => (this.comp = comp)} />
+                </div>
+                <a
+                  href={componentLink}
+                  className="component-example__view-full-render component-example__view-full-render--react"
+                  rel="noopener noreferrer">
+                  View on React Storybook{storybookMessage &&` (${storybookMessage})`}
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 }
