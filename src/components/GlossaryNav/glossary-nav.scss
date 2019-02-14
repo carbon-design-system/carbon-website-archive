@@ -28,7 +28,7 @@
 }
 
 .bx--list__item a {
-  @include type-style('body-short-02');
+  @include carbon-type-style('body-short-02');
   width: rem(32px);
   height: rem(32px);
   padding: rem(5px) 0 0 0;
