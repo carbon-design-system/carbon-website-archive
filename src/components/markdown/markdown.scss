@@ -247,8 +247,13 @@
 .anchor-links {
   .page-ul {
     width: auto;
-    margin-bottom: 2.25rem;
-    margin-top: rem(72px);
+    margin-bottom: 0;
+    margin-top: rem(48px);
+
+    @include breakpoint('md') {
+      margin-bottom: 2.25rem;
+      margin-top: rem(72px);
+    }
   }
 
   .page-ul > li {
