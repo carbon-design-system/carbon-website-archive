@@ -1,5 +1,5 @@
 ---
-label: IBM's icons are visual symbols used to represent ideas, objects, or actions. They communicate messages at a glance, afford interactivity, and draw attention to important information.
+label: IBM’s icons are visual symbols used to represent ideas, objects, or actions. They communicate messages at a glance, afford interactivity, and draw attention to important information.
 title: Iconography
 tabs: ['Library', 'Usage', 'Contribution']
 
@@ -73,7 +73,7 @@ To be considered production-ready, all icon submissions must be delivered in SVG
 10. The `SVG Options` dialog will then open.
 11. Make sure the preferences are the same as in the image below.
 
-<image-component cols="6">
+<image-component>
 
 ![export an icon from illustrator](images/iconography-contribution-exportsvgfromai.png)
 

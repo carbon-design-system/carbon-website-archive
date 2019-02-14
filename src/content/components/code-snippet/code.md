@@ -9,6 +9,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="code-snippet"
     variation="code-snippet"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component
@@ -17,6 +18,7 @@ tabs: ['Code', 'Usage', 'Style']
     variation="code-snippet--inline"
     haslightversion="true"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component
@@ -24,6 +26,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="code-snippet"
     variation="code-snippet--multi"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component-docs component="code-snippet" experimental="true"></component-docs>
