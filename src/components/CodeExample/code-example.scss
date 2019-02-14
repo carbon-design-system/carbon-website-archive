@@ -12,7 +12,7 @@
   }
 
   code[class*='language-'] {
-    @include type-style('code-02');
+    @include carbon--type-style('code-02');
   }
 
   pre[class*='language-'] {
@@ -51,7 +51,7 @@
 }
 
 .code-title {
-  @include type-style('code-02');
+  @include carbon--type-style('code-02');
   display: block;
   margin-bottom: 1rem;
 }
@@ -104,7 +104,7 @@
   }
 
   span {
-    @include type-style('body-short-01');
+    @include carbon--type-style('body-short-01');
     display: inline-block;
     line-height: 1;
     border-bottom: 1px solid transparent;

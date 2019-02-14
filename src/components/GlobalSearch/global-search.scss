@@ -29,14 +29,14 @@
 
   /* Main category (eg. Getting started) */
   .algolia-autocomplete .algolia-docsearch-suggestion--category-header {
-    @include type-style('body-short-02');
+    @include carbon--type-style('body-short-02');
     border-bottom: 1px solid $ui-03;
     font-weight: bold;
   }
 
   /* Category (eg. Contributing, Grid, Style) */
   .algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column {
-    @include type-style('body-short-01');
+    @include carbon--type-style('body-short-01');
     color: $text-02;
     font-size: 0.875rem;
     padding-top: 0.5rem;
@@ -46,7 +46,7 @@
   .algolia-autocomplete .algolia-docsearch-suggestion--title {
     font-weight: bold;
     color: $text-01;
-    @include type-style('body-short-01');
+    @include carbon--type-style('body-short-01');
   }
 
   /* Title background hover  */
@@ -64,7 +64,7 @@
 
   /* Description description (eg. Bootstrap currently works...) */
   .algolia-autocomplete .algolia-docsearch-suggestion--text {
-    @include type-style('body-short-01');
+    @include carbon--type-style('body-short-01');
     color: $text-02;
   }
 

@@ -35,7 +35,7 @@
       justify-content: center;
       text-decoration: none;
       color: $color__navy-gray-7;
-      @include type-style('body-short-02');
+      @include carbon--type-style('body-short-02');
     }
 
     &.glossary-nav__item--active,

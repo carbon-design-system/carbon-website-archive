@@ -123,13 +123,13 @@ p.example__text {
 }
 
 p.example__title {
-  @include type-style('body-short-01');
+  @include carbon--type-style('body-short-01');
   margin: 0;
   padding: 0;
 }
 
 p.example__description {
-  @include type-style('body-short-01');
+  @include carbon--type-style('body-short-01');
   @include font-smoothing;
   margin: 0;
   padding: 0;
