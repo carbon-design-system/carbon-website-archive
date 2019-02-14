@@ -15,7 +15,7 @@
 }
 
 .glossary-entry__word-heading {
-  @include carbon--type-style('heading-03');
+  @include carbon--type-style('expressive-heading-03');
   padding-top: rem(24px);
   padding-bottom: 0.5rem;
 }
