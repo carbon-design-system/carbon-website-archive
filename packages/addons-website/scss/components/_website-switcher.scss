@@ -56,7 +56,7 @@
 }
 
 .#{$prefix}--website-switcher-list__item-link {
-  @include type-style('heading-01');
+  @include carbon--type-style('heading-01');
   display: block;
   text-decoration: none;
   padding: rem(6px) 1rem;

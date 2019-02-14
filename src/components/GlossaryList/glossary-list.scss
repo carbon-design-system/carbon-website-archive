@@ -31,11 +31,11 @@
   .glossary-entry__word-heading {
     padding-top: rem(24px);
     padding-bottom: 0.5rem;
-    @include type-style('heading-03');
+    @include carbon--type-style('expressive-heading-03');
   }
 
   .glossary-entry__subtext {
-    @include type-style('body-short-02');
+    @include carbon--type-style('body-short-02');
     color: $text-02;
     margin-top: 0.25rem;
     padding-bottom: 0;
