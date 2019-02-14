@@ -1,5 +1,5 @@
 ---
-title: Catalog Entry
+title: Catalog entry
 internal: true
 ---
 

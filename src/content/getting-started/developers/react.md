@@ -43,7 +43,8 @@ $ npm install --save carbon-components-react carbon-components carbon-icons
 ```
 
 ####If you prefer [Yarn](https://yarnpkg.com/en/):
-use the following command instead:
+
+<br>
 
 ```bash
 $ yarn add carbon-components-react carbon-components carbon-icons
