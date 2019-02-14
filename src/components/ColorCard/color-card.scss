@@ -66,7 +66,7 @@
 
 .color-card__hex {
   padding: 0;
-  @include type-style('body-short-01');
+  @include carbon--type-style('body-short-01');
 }
 
 .hover-row {
