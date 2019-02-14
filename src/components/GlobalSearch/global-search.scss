@@ -64,8 +64,7 @@
 
   /* Main category (eg. Getting started) */
   .algolia-autocomplete .algolia-docsearch-suggestion--category-header {
-<<<<<<< HEAD
-    @include type-style('label-01');
+    @include carbon--type-style('label-01');
     margin: 0 16px;
     padding: 0 0 $spacing-xs;
     color: $text-02;
@@ -73,11 +72,6 @@
 
   .algolia-autocomplete .algolia-docsearch-suggestion--category-header {
     padding-top: $spacing-xs;
-=======
-    @include carbon--type-style('body-short-02');
-    border-bottom: 1px solid $ui-03;
-    font-weight: bold;
->>>>>>> d4a6fdb1ff6b9e482c7b6c479df9999aaa96691b
   }
 
   /* Category (eg. Contributing, Grid, Style) */
@@ -93,12 +87,8 @@
   .algolia-autocomplete .algolia-docsearch-suggestion--title {
     font-weight: bold;
     color: $text-01;
-<<<<<<< HEAD
-    @include type-style('body-short-02');
+    @include carbon--type-style('body-short-02');
     margin-bottom: 0;
-=======
-    @include carbon--type-style('body-short-01');
->>>>>>> d4a6fdb1ff6b9e482c7b6c479df9999aaa96691b
   }
 
   /* Suggestion wrapper background hover  */
@@ -115,7 +105,7 @@
     .ds-dropdown-menu 
     .ds-suggestion.ds-cursor 
     .algolia-docsearch-suggestion:not(.suggestion-layout-simple) 
-    .algolia-docsearch-suggestion--content{
+    .algolia-docsearch-suggestion--content {
     background: $hover-ui;
   }
 
@@ -157,7 +147,7 @@
    .algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column-text,
    /* Suggestion Title Text */
    .algolia-autocomplete .algolia-docsearch-suggestion--title {
-    @include type-style('body-short-01');
+    @include carbon--type-style('body-short-01');
     color: $text-01;
   }
 
