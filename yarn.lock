@@ -4121,7 +4121,7 @@ capture-stack-trace@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.1.tgz#a6c0bbe1f38f3aa0b92238ecb6ff42c344d4135d"
 
-carbon-components-react@^6.91.0:
+carbon-components-react@^6.93.0:
   version "6.93.2"
   resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.93.2.tgz#2f2181bba188bf42709a351f0258310acd04bd85"
   dependencies:
@@ -4136,9 +4136,9 @@ carbon-components-react@^6.91.0:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@^9.74.0:
-  version "9.74.4"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.74.4.tgz#840b53438ec87d902eca579e4edb40e9d659d342"
+carbon-components@^9.75.0:
+  version "9.75.0"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.75.0.tgz#6d22638b58c8df97e8590a56f60e909b55bf5b70"
   dependencies:
     carbon-icons "^7.0.7"
     flatpickr "4.5.2"
