@@ -6,22 +6,76 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                                                          | Property                 | SCSS             |
+### Primary button
+
+| Class                                                          | Property                 | Color token      |
 | -------------------------------------------------------------- | ------------------------ | ---------------- |
-| `.bx--btn--primary`                                            | text color               | $inverse-01      |
-| `.bx--btn--primary` </br> `.bx--btn--secondary`                | background-color, border | $brand-01        |
-| `.bx--btn--primary:hover`                                      | background-color         | $hover-primary   |
-| `.bx--btn--primary:disabled`                                   | opacity                  | $brand-01        |
-| `.bx--btn--secondary`                                          | text color               | $brand-01        |
-| `.bx--btn--secondary`                                          | border                   | $brand-01        |
-| `.bx--btn--secondary:hover`                                    | background-color         | $hover-secondary |
-| `.bx--btn--secondary:hover`                                    | text color               | $inverse-01      |
-| `.bx--btn--tertiary`                                           | text color               | $inverse-01      |
-| `.bx--btn--tertiary`                                           | background-color         | $ui-05           |
-| `.bx--btn--tertiary:hover`                                     | background-color         | $ui-05           |
-| `.bx--btn--danger--primary`</br> `.bx--btn--danger--secondary` | background-color         | $support-01      |
-| `.bx--btn--danger--primary:hover`                              | background-color         | $hover-danger    |
-| `.bx--btn--danger--secondary:hover`                            | border                   | $support-01      |
+| `.bx--btn--primary`                                            | text color               | $text-04        |
+| `.bx--btn__icon`                                               | svg                      | $icon-03        |
+| `.bx--btn--primary`                                            | background-color         | $interactive-01  |
+| `:hover`                                                       | background-color         | $hover-primary   |
+| `:active`                                                      | background-color         | $active-primary  |
+| `:focus`                                                       | border                   | $focus           |
+| `:disabled`                                                    | background-color         | $disabled-02        |
+| `:disabled`                                                    | text color               | $disabled-03        |
+
+### Secondary button
+
+| Class                                                          | Property                 | Color token      |
+| -------------------------------------------------------------- | ------------------------ | ---------------- |
+| `.bx--btn--secondary`                                          | text color               | $text-04        |
+| `.bx--btn__icon`                                               | svg                      | $icon-03        |
+| `.bx--btn--secondary`                                          | background-color         | $interactive-02  |
+| `.bx--btn--secondary`                                          | border                   | $interactive-02  |
+| `:hover`                                                       | background-color         | $hover-secondary |
+| `:active`                                                      | background-color         | $active-secondary|
+| `:focus`                                                       | border                   | $focus           |
+| `:disabled`                                                    | background-color         | $disabled-02        |
+| `:disabled`                                                    | text color               | $disabled-03        |
+
+### Tertiary button
+
+| Class                                                          | Property                 | Color token      |
+| -------------------------------------------------------------- | ------------------------ | ---------------- |
+| `.bx--btn--tertiary`                                           | text color               | $interactive-03  |
+| `.bx--btn__icon`                                               | svg                      | $interactive-03  |
+| `.bx--btn--tertiary`                                           | background-color         | transparent      |
+| `.bx--btn--tertiary`                                           | border                   | $interactive-03  |
+| `:hover`                                                       | text color               | $text-04         |
+| `:hover`                                                       | svg                      | $icon-03         |
+| `:hover`                                                       | background-color         | $hover-tertiary  |
+| `:active`                                                      | background-color         | $active-tertiary |
+| `:focus`                                                       | border                   | $focus           |
+| `:disabled`                                                    | background-color         | $disabled-02     |
+| `:disabled`                                                    | text color               | $disabled-03     |
+
+### Ghost button
+
+| Class                                                          | Property                 | Color token      |
+| -------------------------------------------------------------- | ------------------------ | ---------------- |
+| `.bx--btn--ghost`                                              | text color               | $interactive-01  |
+| `.bx--btn__icon`                                               | svg                      | $interactive-01  |
+| `.bx--btn--ghost`                                              | background-color         | $interactive-01  |
+| `:hover`                                                       | text color               | $hover-primary-text |
+| `:hover`                                                       | svg                      | $hover-primary-text |
+| `:hover`                                                       | background-color         | $hover-ui        |
+| `:active`                                                      | background-color         | $active-ui |
+| `:focus`                                                       | border                   | $focus           |
+| `:disabled`                                                    | text color               | $disabled-03     |
+
+### Danger button
+
+| Class                                                          | Property                 | Color token      |
+| -------------------------------------------------------------- | ------------------------ | ---------------- |
+| `.bx--btn--danger--primar`                                     | text color               | $text-04         |
+| `.bx--btn__icon`                                               | svg                      | $icon-03         |
+| `.bx--btn--danger--primary`                                    | background-color         | $support-01      |
+| `:hover`                                                       | background-color         | $hover-danger    |
+| `:active`                                                      | background-color         | $active-danger   |
+| `:focus`                                                       | border                   | $focus           |
+| `:disabled`                                                    | background-color         | $disabled-02     |
+| `:disabled`                                                    | text color               | $disabled-03     |
+
 
 <image-component fixed="default" caption="Primary, secondary, and ghost button state examples">
 
@@ -35,7 +89,7 @@ Button text should be set in sentence case, with only the first word in a phrase
 
 | Class      | Font-size (px/rem) | Font-weight     | Type style       |
 | ---------- | ------------------ | --------------- | ---------------- |
-| `.bx--btn` | 14 / 0.875         | Semi-Bold / 600 | `.bx--type-zeta` |
+| `.bx--btn` | 14 / 0.875         | Regular / 400 | `$body-short-01` |
 
 ## Structure
 
@@ -43,12 +97,15 @@ A button cannot have any element or text within 16 pixels / 1 rem of its borders
 
 | Class                            | Property                    | px / rem | Spacing token |
 | -------------------------------- | --------------------------- | -------- | ------------- |
-| `.bx--btn--primary`              | height                      | 40 / 2.5 | $spacing-2xl  |
-| `.bx--btn--sm`                   | height                      | 32 / 2   | $spacing-xl   |
-| `.bx--btn`                       | padding-left, padding-right | 16 / 1   | $spacing-md   |
-| `.bx--btn--sm`                   | padding-left, padding-right | 16 / 1   | $spacing-md   |
-| `.bx--btn .bx--btn__icon`        | margin-left, margin-right   | 8 / 0.5  | $spacing-xs   |
-| `.bx--btn--ghost .bx--btn__icon` | margin-left, margin-right   | 8 / 0.5  | $spacing-xs   |
+| `.bx--btn--primary`              | height                      | 48 / 3   | –  |
+| `.bx--btn--sm`                   | height                      | 32 / 2   | –  |
+| `.bx--btn__icon`                 | size                        | 16 x 16  | –  |
+| `.bx--btn`                       | padding-left                | 16 / 1   | $spacing-05   |
+| `.bx--btn`                       | padding-right               | 64 / 1   | –  |
+| `.bx--btn--sm`                   | padding-left                | 16 / 1   | $spacing-05   |
+| `.bx--btn--sm`                   | padding-right               | 64 / 4   | –  |
+| `.bx--btn__icon`                 | margin-left, margin-right   | 16 / 1   | $spacing-05   |
+| `.bx--btn--ghost`                | padding-left, padding-right | 16 / 2   | $spacing-05   |
 
 <image-component fixed="default" caption="Structure measurements for small and regular primary button | px / rem">
 
@@ -68,5 +125,5 @@ The following specs are not built into any of the button components but are reco
 
 | Attribute        | Property                  | px / rem   | Spacing token |
 | ---------------- | ------------------------- | ---------- | ------------- |
-| External: button | margin                    | 10 / 0.625 | -             |
-| Button pairings  | margin-left, margin-right | 8 / 0.5    | $spacing-xs   |
+| External: button | margin                    | 1px        | -             |
+| Button pairings  | margin-left, margin-right | 0          | –   |
