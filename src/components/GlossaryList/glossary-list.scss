@@ -15,13 +15,13 @@
 }
 
 .glossary-entry__word-heading {
-  @include carbon-type-style('heading-03');
+  @include carbon--type-style('heading-03');
   padding-top: rem(24px);
   padding-bottom: 0.5rem;
 }
 
 .glossary-entry__subtext {
-  @include carbon-type-style('body-short-02');
+  @include carbon--type-style('body-short-02');
   color: $text-02;
   margin-top: 0.25rem;
   padding-bottom: 0;
