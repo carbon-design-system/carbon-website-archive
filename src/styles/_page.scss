@@ -32,8 +32,12 @@ body {
   }
 }
 
-.bx--header .bx--header__name span {
+.bx--header .bx--header__name {
   font-weight: 400;
+}
+
+.bx--header .bx--header__name span {
+  font-weight: 600;
 }
 
 //---------------------------------------
@@ -80,13 +84,21 @@ body {
   li > code,
   td > code {
     @include reset;
-    @include type-style('code-01');
     position: relative;
     display: inline;
     padding: rem(1px) $spacing-xs;
     background: transparent;
     border-radius: 4px;
     background-color: $ibm-colors__gray-20;
+  }
+
+  td > code {
+    @include type-style('code-01');
+  }
+
+  p > code,
+  li > code {
+    @include type-style('code-02');
   }
 
   // HR dividers
@@ -115,6 +127,7 @@ body {
 .gatsby-resp-iframe-wrapper {
   @include breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
+    padding-bottom: 43% !important;
   }
 }
 
