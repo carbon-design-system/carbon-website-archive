@@ -93,6 +93,6 @@
 }
 
 p.image-component__caption {
-  @include type-style('body-short-01');
+  @include carbon--type-style('body-short-01');
   padding-top: rem(8px);
 }
