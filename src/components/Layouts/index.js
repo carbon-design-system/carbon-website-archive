@@ -218,10 +218,10 @@ class Layout extends React.Component {
                   <span>IBM Product</span>&nbsp;Design&nbsp;<span>System</span>
                 </HeaderName>
               ) : (
-                <HeaderName prefix="" to="/" element={Link}>
-                  <span>Carbon</span>&nbsp;Design&nbsp;<span>System</span>
-                </HeaderName>
-              )}
+                  <HeaderName prefix="" to="/" element={Link}>
+                    Carbon&nbsp;<span>Design System</span>
+                  </HeaderName>
+                )}
 
               <HeaderGlobalBar>
                 {/* {isInternal ? null : <GlobalSearch />} */}
