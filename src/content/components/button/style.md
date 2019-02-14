@@ -49,7 +49,7 @@ tabs: ['Code', 'Usage', 'Style']
 | `:disabled`                                                    | background-color         | $disabled-02     |
 | `:disabled`                                                    | text color               | $disabled-03     |
 
-## Ghost button
+### Ghost button
 
 | Class                                                          | Property                 | Color token      |
 | -------------------------------------------------------------- | ------------------------ | ---------------- |
