@@ -1,6 +1,6 @@
 .color-block {
   position: relative;
-  @include type-style('body-short-01');
+  @include carbon--type-style('body-short-01');
 }
 
 .color-block__color {

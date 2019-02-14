@@ -307,7 +307,7 @@ $heading-02: (
   letter-spacing: 0,
 ) !default;
 
-$heading-03: (
+$expressive-heading-03: (
   font-family: font-family('sans'),
   font-size: type-scale(5),
   font-weight: font-weight('regular'),

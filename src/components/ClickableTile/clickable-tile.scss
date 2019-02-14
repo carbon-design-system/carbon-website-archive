@@ -84,7 +84,7 @@ a.tile--article.tile--dark:hover {
 .tile--article .tile__info h5 {
   text-decoration: none;
   color: $text-01;
-  @include type-style('body-short-02');
+  @include carbon--type-style('body-short-02');
 }
 
 .tile--article.tile--dark .tile__info h5 {
@@ -92,7 +92,7 @@ a.tile--article.tile--dark:hover {
 }
 
 .tile--article .tile__caption p {
-  @include type-style('caption-01');
+  @include carbon--type-style('caption-01');
   padding: 0;
   max-width: 75%;
 }
@@ -155,7 +155,7 @@ a.tile--article.tile--dark:hover {
   color: $text-01;
   margin: 0 0 $spacing-xs 0;
   padding: 0 0 0 0;
-  @include type-style('body-short-01');
+  @include carbon--type-style('body-short-01');
 }
 
 .tile--resource.tile--dark .tile__info h5 {
