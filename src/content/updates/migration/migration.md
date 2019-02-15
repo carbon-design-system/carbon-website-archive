@@ -4,7 +4,7 @@ title: Migration
 
 <anchor-links>
 <ul>
-  <li><a data-scroll href="#carbon-x-is-near">Carbon X is near</a></li>
+  <li><a data-scroll href="#carbon-x">Carbon X</a></li>
   <li><a data-scroll href="#rollout-plan">Rollout plan</a></li>
   <li><a data-scroll href="#design-kit">Design kit</a></li>
   <li><a data-scroll href="#component-code">Component code</a></li>
@@ -17,7 +17,7 @@ title: Migration
 </ul>
 </anchor-links>
 
-## Carbon X is near
+## Carbon X
 
 Carbon X, aka v10, is currently in Alpha release. Please use this opportunity to explore and experiment with the new components, elements, layouts, and UI shell. The Alpha release is a work in progress; changes will be frequent and possibly breaking. **This release is not approved for production.** Please explore the system and [provide bountiful feedback](/help/support#github-issues)!
 

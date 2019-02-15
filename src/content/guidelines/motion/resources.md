@@ -21,21 +21,21 @@ IBM Motion implements sophisticated curves and duration. Use the IBM Motion Gene
   <clickable-tile title="Motion Generator" href="https://ibm.github.io/motion/" type="resource"></clickable-tile>
 </grid-wrapper>
 
-## Motion Design Strategy
+## Motion design strategy
 
 Follow these steps to assess your interface for purposeful motion:
 
 1. Define the goals and values of product.
-1. Establish information hierarchy within the view.
-1. Identify the journey you will guide users through.
-1. Identify key moments and opportunities for UI motion in the journey. Examples:
+2. Establish information hierarchy within the view.
+3. Identify the journey you will guide users through
+4. Identify key moments and opportunities for UI motion in the journey. Examples:
     - Give feedback, such as hover states, active states component behaviors, such as opening a drop-down menu
     - Solutions to a UX need, such as reducing cognitive load with progressive disclosure
-    - Provide guidance, such as revealing a call to action button to draw users’ attention
-1. Assign or determine either Productive or Expressive motion.
-1. Prototype and test with users.
+    - Provide guidance, such as revealing a call to action Primary action button to draw users’ attention
+5. Assign or determine either efficient or enthusiastic motion
+6. Prototype and test
 
-## Evaluation Checklist
+## Evaluation checklist
 
 1. Is your motion purposeful?
     - What problem is motion solving?

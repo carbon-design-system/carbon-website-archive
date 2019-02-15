@@ -1,5 +1,5 @@
 ---
-title: Common Actions
+title: Common actions
 ---
 
 
