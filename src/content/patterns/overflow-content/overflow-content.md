@@ -1,5 +1,5 @@
 ---
-title: Overflow Content
+title: Overflow content
 ---
 
 ## Purpose
@@ -35,11 +35,11 @@ Truncation, or shortening, is typically used for static text or links that excee
 
 Good use cases for truncation include:
 
-- breadcrumbs
-- pagination
-- long URL links
-- paragraph of text (i.e. a description paragraph)
-- shortening of a long item name (user- or platform-generated)
+- Breadcrumbs
+- Pagination
+- Long URL links
+- Paragraph of text (i.e. a description paragraph)
+- Shortening of a long item name (user- or platform-generated)
 
 Truncation should **not** be used on page headers, titles, labels, error messages, validation messages, notifications, menu items, or tabs.
 

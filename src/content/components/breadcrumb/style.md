@@ -6,19 +6,19 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                         | Property | SCSS                |
+| Class                         | Property | Color token         |
 | ----------------------------- | -------- | ------------------- |
-| `.bx--link`                   | color    | $brand-01           |
-| `.bx--link:hover`             | color    | $hover-primary-text |
-| `.bx--breadcrumb-item::after` | color    | $text-02            |
+| `.bx--link`                   | color    | $interactive-01   |
+| `.bx--link:hover`             | color    | $hover-primary-text|
+| `.bx--breadcrumb-item::after` | color    | $text-01          |
 
 ## Typography
 
 When a user hovers overs a breadcrumb, the breadcrumb title should be underlined.
 
-| Class       | Font-size (px/rem) | Font-weight | Type style |
+| Class       | Font-size (px/rem) | Font-weight | Type token |
 | ----------- | ------------------ | ----------- | ---------- |
-| `.bx--link` | 14 / 0.875         | Roman / 400 | -          |
+| `.bx--link` | 14 / 0.875         | Regular / 400 | $body-short-01|
 
 <image-component fixed="default" caption="Breadcrumb typography treatment example">
 
@@ -28,11 +28,11 @@ When a user hovers overs a breadcrumb, the breadcrumb title should be underlined
 
 ## Structure
 
-The on-click dropdown should follow the [Overflow Menu](/components/overflow-menu) specs for sizing, padding, and interaction.
+The on-click dropdown should follow the [overflow menu](/components/overflow-menu) specs for sizing, padding, and interaction.
 
 | Class                         | Property    | px/rem | Spacing token |
 | ----------------------------- | ----------- | ------ | ------------- |
-| `.bx--breadcrumb-item::after` | margin-left | 16 / 1 | $spacing-md   |
+| `.bx--breadcrumb-item`        | margin-left | 8 / 0.5 | $spacing-03 |
 
 <image-component fixed="default" caption="Structure and spacing measurements for breadcrumb | px / rem">
 
@@ -42,26 +42,26 @@ The on-click dropdown should follow the [Overflow Menu](/components/overflow-men
 
 ## Recommended
 
-Truncated breadcrumbs are not currently built into the breadcrumb component. The following colors from the [Overflow Menu](/overflow/style) are recommended for the overflow breadcrumb list.
+Truncated breadcrumbs are not currently built into the breadcrumb component. The following colors from the [overflow menu](/overflow/style) are recommended for the overflow breadcrumb list.
 
 ### Color
 
-| Class                                      | Property         | SCSS       |
+| Class                                      | Property         | Color token    |
 | ------------------------------------------ | ---------------- | ---------- |
-| `.bx--overflow-menu-options__btn`          | color            | $text-01   |
+| `.bx--overflow-menu-options__btn`          | color            | $icon-01   |
 | `.bx--overflow-menu-options__option:hover` | background-color | $hover-row |
 
 ### Typography
 
-| Class                             | Font-size (px/rem) | Font-weight | Font style |
+| Class                             | Font-size (px/rem) | Font-weight | Type token |
 | --------------------------------- | ------------------ | ----------- | ---------- |
-| `.bx--overflow-menu-options__btn` | 14 / 0.875         | Roman / 400 | -          |
+| `.bx--overflow-menu-options__btn` | 14 / 0.875         | Regular / 400 | $body-short-01 |
 
 ### Structure
 
 | Class                        | Property   | px / rem | Spacing token |
 | ---------------------------- | ---------- | -------- | ------------- |
-| `.bx--overflow-menu-options` | margin-top | 8 / 0.5  | $spacing-xs   |
+| `.bx--overflow-menu-options` | height     | 32 / 2   | – |
 
 <image-component fixed="default" caption="Recommended structure and spacing measurements for breadcrumb | px / rem">
 
