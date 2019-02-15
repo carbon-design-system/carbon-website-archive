@@ -14,8 +14,9 @@ class ComponentStatus extends React.Component {
     let vanilla;
     let react;
     let angular;
+    let vue;
     let experimental;
-    
+
     if (currentItem.tag && currentItem.tag === 'new') {
       tag = <span className="bx--tag bx--tag--ibm inline-tag">New</span>;
     }
@@ -24,41 +25,51 @@ class ComponentStatus extends React.Component {
         <span className="bx--tag bx--tag--third-party inline-tag">Updated</span>
       );
     }
-    if (currentItem.vanilla === "ready") {
+    if (currentItem.vanilla === 'ready') {
       vanilla = readyIcon;
-    } else if (currentItem.vanilla === "under-review") {
+    } else if (currentItem.vanilla === 'under-review') {
       vanilla = underReviewIcon;
-    } else if (currentItem.vanilla === "deprecated") {
+    } else if (currentItem.vanilla === 'deprecated') {
       vanilla = deprecatedIcon;
     } else {
       vanilla = notApplicableIcon;
     }
 
-    if (currentItem.react === "ready") {
+    if (currentItem.react === 'ready') {
       react = readyIcon;
-    } else if (currentItem.react === "under-review") {
+    } else if (currentItem.react === 'under-review') {
       react = underReviewIcon;
-    } else if (currentItem.react === "deprecated") {
+    } else if (currentItem.react === 'deprecated') {
       react = deprecatedIcon;
     } else {
       react = notApplicableIcon;
     }
 
-    if (currentItem.angular === "ready") {
+    if (currentItem.angular === 'ready') {
       angular = readyIcon;
-    } else if (currentItem.angular === "under-review") {
+    } else if (currentItem.angular === 'under-review') {
       angular = underReviewIcon;
-    } else if (currentItem.angular === "deprecated") {
+    } else if (currentItem.angular === 'deprecated') {
       angular = deprecatedIcon;
     } else {
       angular = notApplicableIcon;
     }
 
-    if (currentItem.experimental === "ready") {
+    if (currentItem.vue === 'ready') {
+      vue = readyIcon;
+    } else if (currentItem.vue === 'under-review') {
+      vue = underReviewIcon;
+    } else if (currentItem.vue === 'deprecated') {
+      vue = deprecatedIcon;
+    } else {
+      vue = notApplicableIcon;
+    }
+
+    if (currentItem.experimental === 'ready') {
       experimental = readyIcon;
-    } else if (currentItem.experimental === "under-review") {
+    } else if (currentItem.experimental === 'under-review') {
       experimental = underReviewIcon;
-    } else if (currentItem.experimental === "deprecated") {
+    } else if (currentItem.experimental === 'deprecated') {
       experimental = deprecatedIcon;
     } else {
       experimental = notApplicableIcon;
@@ -71,12 +82,12 @@ class ComponentStatus extends React.Component {
         <td>{vanilla}</td>
         <td>{react}</td>
         <td>{angular}</td>
+        <td>{vue}</td>
         <td>{experimental}</td>
       </tr>
     );
   };
 
-  
   render() {
     const readyIcon = (
       <div className="component-status__icon ready">
@@ -153,6 +164,7 @@ class ComponentStatus extends React.Component {
               <th>Vanilla</th>
               <th>React</th>
               <th>Angular</th>
+              <th>Vue</th>
               <th>Experimental</th>
             </tr>
           </thead>

@@ -6,6 +6,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -14,6 +15,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -22,6 +24,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -30,6 +33,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -39,6 +43,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -47,6 +52,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -55,6 +61,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "under-review",
       "experimental": "under-review"
     },
     {
@@ -64,6 +71,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -73,6 +81,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -81,6 +90,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -90,6 +100,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -99,6 +110,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "not-available",
       "experimental": "ready"
     },
     {
@@ -107,6 +119,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -115,6 +128,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -123,6 +137,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -131,6 +146,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -139,6 +155,7 @@
       "vanilla": "not-available",
       "react": "ready",
       "angular": "ready",
+      "vue": "not-available",
       "experimental": "ready"
     },
     {
@@ -147,6 +164,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -156,6 +174,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -164,6 +183,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -172,6 +192,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -180,6 +201,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -188,6 +210,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -197,6 +220,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
+      "vue": "ready",
       "experimental": "under-review"
     },
     {
@@ -206,6 +230,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -214,6 +239,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -222,6 +248,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -230,6 +257,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -238,6 +266,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "not-available",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -247,6 +276,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -255,6 +285,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -263,6 +294,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -272,6 +304,7 @@
       "vanilla": "ready",
       "react": "ready",
       "angular": "ready",
+      "vue": "ready",
       "experimental": "ready"
     },
     {
@@ -281,6 +314,7 @@
       "vanilla": "under-review",
       "react": "under-review",
       "angular": "not-available",
+      "vue": "not-available",
       "experimental": "ready"
     }
   ]
