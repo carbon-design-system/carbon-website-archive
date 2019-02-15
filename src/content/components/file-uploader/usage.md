@@ -3,16 +3,32 @@ title: File Uploader
 tabs: ['Code', 'Usage']
 ---
 
-## General
+<anchor-links>
+<ul>
+    <li><a data-scroll href="#general-guidance">General guidance</a></li>
+    <li><a data-scroll href="#interaction">Interaction</a></li>
+    <li><a data-scroll href="#upload-state">Upload state</a></li>
+    <li><a data-scroll href="#removing-files">Removing files</a></li>
+</ul>
+</anchor-links>
+
+## General guidance
+
+_File Uploader_ allows the user to transfer a file or submit content of their own.
+
 
 - A File Uploader is commonly found in forms, but they can also live as stand alone elements.
 - **Add files** is the default text that appears with the File Uploader.
 - A File Uploader should always be accompanied by **Submit** or **Upload**, which is to be styled as a [Primary Button](/components/button).
 - Use an ellipsis (...) if the filename extends beyond the width of its parent element.
 
+<image-component cols="8">
+
 ![file uploader example](images/file-uploader-usage-1.png)
 
-## Basic interaction
+</image-component>
+
+## Interaction
 
 1. The user may select 1 or more files to upload at a time. By default, any file type is accepted, but you can add parameters to validate a specific file type.
 2. The action of clicking **Add files** will trigger a browser-specific upload window.
@@ -21,14 +37,21 @@ tabs: ['Code', 'Usage']
 5. Any errors that may occur with the file should appear as an inline error
    [Notification](/components/notification).
 
+<image-component cols="8" caption="Errors in file uploader">
+
 ![file uploader error](images/file-uploader-usage-2.png)
-_Errors in file uploader_
+
+</image-component>
 
 ## Upload state
 
 Developers using File Uploader will be able to use JavaScript to inject a Loading component when selected files are actually being uploaded.
 
+<image-component cols="8">
+
 ![File uploading state](images/file-uploader-usage-3.png)
+
+</image-component>
 
 ## Removing files
 

@@ -1,21 +1,21 @@
 ---
 
-title: Radio Button
+title: Radio button
 tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## Color
 
-| Class                                   | Property         | SCSS      | HEX     |
-| --------------------------------------- | ---------------- | --------- | ------- |
-| `.bx--radio-button__appearance`         | border           | $ui-05    | #5a6872 |
-| `.bx--radio-button__appearance`         | background-color | $ui-01    | #ffffff |
-| `.bx--radio-button__appearance:checked` | border           | $brand-01 | #3d70b2 |
-| `.bx--radio-button__appearance::before` | dot              | $brand-01 | #3d70b2 |
+| Class                                   | Property         | SCSS      |
+| --------------------------------------- | ---------------- | --------- |
+| `.bx--radio-button__appearance`         | border           | $ui-05    |
+| `.bx--radio-button__appearance`         | background-color | $ui-01    |
+| `.bx--radio-button__appearance:checked` | border           | $brand-01 |
+| `.bx--radio-button__appearance::before` | dot              | $brand-01 |
 
 ## Typography
 
-Radio Button labels and headings should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized.
+_Radio button_ labels and headings should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized.
 
 | Class                      | Font-size (px/rem) | Font-weight     | Type style       |
 | -------------------------- | ------------------ | --------------- | ---------------- |
@@ -31,23 +31,23 @@ Radio Button labels and headings should be set in sentence case, with only the f
 | `.bx--radio-button__label`                | margin-right  | 16 / 1     | $spacing-md   |
 | `.bx--radio-button__appearance`           | margin-right  | 8 / 0.5    | $spacing-xs   |
 
-<div class="image-component">
-    <img src="images/radio-button-style-1.png" alt="Structure and spacing measurements for a radio button" />
-</div>
+<image-component fixed="default" caption="Structure and spacing measurements for radio button | px | rem">
 
-_Structure and spacing measurements for Radio Button | px | rem_
+![Structure and spacing measurements for a radio button](images/radio-button-style-1.png)
+
+</image-component>
 
 ### Recommended
 
-The following specs are not built into the Radio Button component but are recommended by design as the proper amount of space around a grouping of or in between stacked Radio Buttons.
+The following specs are not built into the radio button component but are recommended by design as the proper amount of space around a grouping of or in between stacked radio buttons.
 
 | Class                      | Property      | px / rem | Spacing token |
 | -------------------------- | ------------- | -------- | ------------- |
 | `.bx--radio-button-group`  | margin        | 16 / 1   | $spacing-md   |
 | `.bx--radio-button__label` | margin-bottom | 16 / 1   | $spacing-md   |
 
-<div class="image-component">
-    <img src="images/radio-button-style-2.png" alt="Structure and spacing measurements for a radio butto" />
-</div>
+<image-component fixed="default" caption="Recommended structure and spacing measurements for radio button | px | rem">
 
-_Recommended structure and spacing measurements for Radio Button | px | rem_
+![Structure and spacing measurements for a radio button](images/radio-button-style-2.png)
+
+</image-component>

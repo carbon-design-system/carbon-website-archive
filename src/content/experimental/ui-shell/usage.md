@@ -3,85 +3,136 @@ title: UI Shell
 tabs: ['Code', 'Usage']
 ---
 
-The UI Shell is the top level in a product's UI. The Shell consists of the primary **header** and **footer**, as well as **header panels** that are used for navigation and global UI services.
+<anchor-links>
+<ul>
+    <li><a href="#ui-shell-zones">UI Shell zones</a></li>
+    <li><a href="#ui-shell-components">UI Shell components</a></li>
+    <li><a href="#secondary-navigation">Secondary navigation</a></li>
+    <li><a href="#ui-shell-theming">UI Shell theming</a></li>
+    
+</ul>
+</anchor-links>
 
-1.  [UI Shell Zones](#ui-shell-zones)
 
-- [UI Shell Components](#ui-shell-components)
-- [Secondary Navigation](#secondary-navigation)
-- [UI Shell Theming](#ui-shell-theming)
+## UI Shell zones
 
-## UI Shell Zones
+The UI Shell is the top level in a product's UI. The Shell consists of the primary **header** and **footer**, as well as **header panels** that are used for navigation and global UI services. The shell is further divided into 3 distinct "zones" which establish purpose and level of control.
 
-The shell is divided into 3 distinct "zones" which establish purpose and level of control.
+###Global zone
+The global zone holds the IBM global platform switcher, which allows the user to quickly navigate between different IBM platforms. This zone cannot be altered by the platform or product owner.
 
-The **Global** zone holds the IBM global platform switcher, which allows the user to quickly navigate between different IBM platforms. This zone cannot be altered by the platform or product owner.
+<image-component cols="12">
 
 ![Global Zone](images/zones-global.png)
 
-The **Platform** zone contains platform-level elements, which could include functions like search, docs, support, profile, and notifications. Platform owners can also choose to include custom top-nav text links in this zone.
+</image-component>
+
+###Platform zone
+The platform zone contains platform-level elements, which could include functions like search, docs, support, profile, and notifications. Platform owners can also choose to include custom top-nav text links in this zone.
+
+<image-component cols="12">
 
 ![Platform Zone](images/zones-platform.png)
 
-The **Local** zone is controlled at the product level. It contains the product-level side nav as well as the main content area.
+</image-component>
+
+
+###Local zone
+The local zone is controlled at the product level. It contains the product-level side nav as well as the main content area.
+
+
+<image-component cols="12">
 
 ![Local Zone](images/zones-local.png)
 
-## UI Shell Components
+</image-component>
+
+
+## UI Shell components
 
 The UI Shell is designed to be configurable. A product/platform can choose which shell components and configurations to use.
 
-### Primary Header
+### Primary header
 
-The Header spans the full width of the viewport and is the topmost element in the UI. Header elements are persistent within a product.
+The header spans the full width of the viewport and is the topmost element in the UI. Header elements are persistent within a product.
 
-Use a header when:
+**Use a header when:**
 
-- you want links to top level pages to be persistent on screen
-- you expect users to switch between top level pages frequently
+- Links to top level pages are persistent on screen
+- Users are expected to switch between top level pages frequently
+
+<image-component cols="12">
 
 ![Primary Header template and example](images/header-generic.png)
 
-#### Header Responsive Behavior
+</image-component>
+
+
+#### Header responsive behavior
 
 As a header scales down to fit smaller screen sizes, header links and menus should collapse into a left-nav hamburger menu. The left nav menu (previously L1 menu) is reserved for this scenario and should not be used as primary navigation with the header. If an additional navigation menu is needed, use an app switcher placed on the far right side of the header.
 
+<image-component cols="12">
+
 ![Responsive Header example](images/header-responsive.png)
 
-#### Header Elements
+</image-component>
 
-1. **Platform icon/Hamburger Menu** The platform icon appears in this space at wider browser widths, and switches to a hamburger menu to serve as overflow for header navigation links as the window narrows.
+#### Header elements
 
-- **Platform name** (e.g. Cloud, IoT, Watson). The platform name is always preceded by "IBM."
-- **Up to 5 optional horizontal top-level nav links and/or dropdown menus.** If using a dropdown, include the down-pointing chevron after the link label. Dropdowns open on click and are closed by either selecting an item in the menu, clicking outside the menu area, or clicking on the menu label.
-- **L0 icons** These icons are typically reserved for universal functions such as search, notifications, etc.
-- **Global Switcher** The global app switcher provides a way to switch between contexts within a product/platform. The global app switcher is accessed by clicking on the 9 dot icon in the far right of the header.
+<br>
+
+- **The platform icon/hamburger menu:** The platform icon appears in this space at wider browser widths, and switches to a hamburger menu to serve as overflow for header navigation links as the window narrows.
+
+- **The platform name (e.g. Cloud, IoT, Watson):** The platform name is always preceded by "IBM."
+
+- **Up to 5 optional horizontal top-level nav links and/or dropdown menus:**
+ If using a dropdown, include the down-pointing chevron after the link label. Dropdowns open on click and are closed by either selecting an item in the menu, clicking outside the menu area, or clicking on the menu label.
+
+- **The L0 icons:** These icons are typically reserved for universal functions such as search, notifications, etc.
+
+- **The global switcher:** The global app switcher provides a way to switch between contexts within a product/platform. The global app switcher is accessed by clicking on the 9 dot icon in the far right of the header.
+
+<image-component cols="12">
 
 ![Primary Header with app switcher](images/header-app-switcher2.png)
 
-### Header Panels
+</image-component>
+
+
+### Header panels
 
 These are vertical panels that are anchored in the Header and invoked by controls on the right side of the Header. Header Panels have a consistent width, span the full height of the viewport and are flush to the right edge of the viewport. Only one Header Panel can be open at a time. The Profile and Notifications panels are examples of this element. Header Panels are always treated as [floating panels](/experimental/layout#panel-behavior).
 
-Use a header panel when additional content or actions associated with a header icon needs to be shown.
+Use a header panel when additional content or actions associated with a header icon needs to be shown. More details about panel types and behaviors can be found under the [Layout](../experimental/layout/#panel-behavior) section.
+
+<image-component cols="12">
 
 ![Header Panel template](images/header-panel.png)
 
-More details about panel types and behaviors can be found under [Layout](../experimental/layout/#panel-behavior)
+</image-component>
 
-### Side-Nav Panels
+### Side-nav panels
 
 These panels contain product-level navigation and can be either fixed-width or flexible.
 
+<image-component cols="12">
+
 ![Side-Nav Panels](images/side-nav-panel.png)
 
-### On-Page Panels
+</image-component>
+
+### On-page panels
 
 These panels are at the same elevation as the primary content zone of the page, and can be either dismissable or fully fixed.
 
+<image-component cols="12">
+
 ![On-Page Panel](images/on-page-panel.png)
 
-Use an on-page panel when:
+</image-component>
+
+**Use an on-page panel when:**
 
 - presenting additional information that is relevant to the page context (i.e., contextual help)
 - content does not need to always be on the page
@@ -91,7 +142,7 @@ Product footers are persistent and attached to the bottom of the browser window.
 
 ![Footer](images/footer-1.png) -->
 
-## Secondary Navigation
+## Secondary navigation
 
 If a secondary level of navigation is needed then a side nav can be nested below the header. There are several configurations of the side-nav but only one configuration should be used per product section.
 
@@ -111,18 +162,20 @@ The L1 Menu is accessed by clicking on the header's left-side hamburger menu. It
 
 The Side-nav contains secondary navigation and fits below the header. It can be configured to be either fixed-width or flexible, with only one level of nested items allowed. Both links and category lists can be used in the Side-nav and may be mixed together.
 
-Use a side-nav when:
+**Use a side-nav when:**
 
-- there are more than five secondary navigation items
-- you expect users to switch between secondary items frequently
+- There are more than five secondary navigation items
+- Users are expected to switch between secondary items frequently
 
-#### Side-nav Items
+#### Side-nav items
+
+<br>
 
 - **Link:** Links to different pages
 - **Category:** A Category must contain at least two links. Categories can be either collapsible or fixed. The label of a Category is never a link.
-- **L1 Title Bar** (optional): contains the name of the section or page. It should link to the product's landing page or main console. This element can also include an optional L1 Menu selector element, to enable context-switching.
+- **L1 title bar:** (optional): contains the name of the section or page. It should link to the product's landing page or main console. This element can also include an optional L1 Menu selector element, to enable context-switching.
 
-#### Flexible Side-nav
+#### Flexible side-nav
 
 Use a Flexible Side-nav when on-page space is a priority. The Flexible Side-nav has both an expanded and collapsed state. The expanded state contains both icons and corresponding text, while the collapsed state shows only the icon. The side-nav expands on hover. It can also be expanded (to a fixed state) or collapsed by clicking on the chevron icon at the bottom of the panel.
 
@@ -130,21 +183,25 @@ In a Flexible Side-nav, each link and category list has its own corresponding ic
 
 A flexible side-nav is more friendly to responsive designs than a fixed nav. Fixed nav is best for products that have a minimum width of 672px. Consider using a flexible nav for a fully responsive solution.
 
-Use a flexible side-nav when:
+**Use a flexible side-nav when:**
 
-- more space is needed for page content
-- a fully responsive solution is needed
+- More space is needed for page content
+- A fully responsive solution is needed
+
+<image-component cols="12">
 
 ![Side-nav Panel](images/side-nav-panel.png)
 
-#### Fixed Side-nav
+</image-component>
+
+#### Fixed side-nav
 
 A fixed Side-nav contains only links and category lists—no icons—and cannot be collapsed.
 
-Use a fixed side-nav when:
+**Use a fixed side-nav when:**
 
-- icons cannot clearly describe the categories
-- designs are for desktop only
+- Icons cannot clearly describe the categories
+- Designs are for desktop only
 
 <!--
 The left side navigation component can be fixed or flexible-width. It allows for two levels of nesting.
@@ -186,6 +243,6 @@ This panel style is at a higher elevation than the primary content area and incl
 
 -->
 
-## UI Shell Theming
+## UI Shell theming
 
 The UI Shell will be themeable and can be either light or dark. _More information on how to apply a shell theme coming soon._

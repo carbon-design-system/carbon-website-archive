@@ -6,16 +6,16 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                        | Property         | SCSS      | HEX                   |
-| ---------------------------- | ---------------- | --------- | --------------------- |
-| `.bx--modal-container`       | background-color | $ui-01    | #ffffff               |
-| `.bx--modal-container`       | border-top       | $brand-01 | #3d70b2               |
-| `.bx--modal-header__label`   | color            | $text-01  | #152935               |
-| `.bx--modal-header__heading` | color            | $text-02  | #5a6872               |
-| `.bx--modal-content`         | color            | $text-01  | #152935               |
-| `.bx--modal-close__icon`     | fill             | $ui-05    | #5a6872               |
-| `.bx--modal-footer`          | background-color | $ui-05    | #5a6872               |
-| `.bx--modal`                 | background-color | $ui-03    | #dfe3e6 @ 50% opacity |
+| Class                        | Property         | SCSS      |
+| ---------------------------- | ---------------- | --------- |
+| `.bx--modal-container`       | background-color | $ui-01    |
+| `.bx--modal-container`       | border-top       | $brand-01 |
+| `.bx--modal-header__label`   | color            | $text-01  |
+| `.bx--modal-header__heading` | color            | $text-02  |
+| `.bx--modal-content`         | color            | $text-01  |
+| `.bx--modal-close__icon`     | fill             | $ui-05    |
+| `.bx--modal-footer`          | background-color | $ui-05    |
+| `.bx--modal`                 | background-color | $ui-03    |
 
 ## Typography
 
@@ -48,18 +48,24 @@ Modal labels are optional and should be set in all caps when used. Modal titles 
 | `.bx--modal-footer`                        | padding-left, padding-right | 48 / 3     | $spacing-3xl  |
 | `.bx--btn--secondary + .bx--btn--primary,` | margin-left                 | 16 / 1     | $spacing-md   |
 
+<image-component fixed="default" caption="Structure and spacing measurements for a Passive Modal | px / rem">
+
 ![Structure and spacing measurements for Passive Modal](images/modal-style-1.png)
-_Structure and spacing measurements for a Passive Modal | px / rem_
+
+</image-component>
+
+<image-component fixed="default" caption="Structure and spacing measurements for a Transactional Modal | px / rem">
 
 ![Structure and spacing measurements for Transactional Modal elements](images/modal-style-2.png)
-_Structure and spacing measurements for a Transactional Modal | px / rem_
+
+</image-component>
 
 ## Mobile
 
 Modals should be full screen on mobile.
 
-<div class="image-component">
-    <img src="images/modal-style-3.png" alt="Modal on mobile" />
-</div>
+<image-component fixed="default" caption="Example of a Modal on a mobile screen">
 
-_Example of a Modal on a mobile screen_
+![Modal on mobile](images/modal-style-3.png)
+
+</image-component>

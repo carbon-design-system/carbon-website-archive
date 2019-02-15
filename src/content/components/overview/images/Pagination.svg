@@ -1,23 +1,78 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="258px" height="165px" viewBox="0 0 258 165" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-    <title>Pagination</title>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Artboard</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Pagination" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-9" transform="translate(9.000000, 62.000000)">
-            <rect id="Rectangle" fill="#FFFFFF" x="0" y="0.98352342" width="239" height="39.0164766"></rect>
-            <path d="M1,1.98352342 L1,39.9835234 L239,39.9835234 L239,1.98352342 L1,1.98352342 Z M0,0.98352342 L240,0.98352342 L240,40.9835234 L0,40.9835234 L0,0.98352342 Z" id="Background" fill="#DFE3E6" fill-rule="nonzero"></path>
-            <g id="Page-#-Field" transform="translate(195.000000, 8.983523)" fill="#3D70B2" fill-opacity="0.1">
-                <rect id="Rectangle-315-Copy-23" x="0" y="0" width="24" height="24"></rect>
+    <defs>
+        <path d="M150.670488,20.80552 C150.670488,23.50988 148.876376,25.6206 147.38568,26.61 L145.710296,26.61 C147.728672,25.145688 148.863184,23.932024 149.338096,21.86088 L149.272136,21.834496 C148.849992,22.573248 148.216776,23.166888 147.082264,23.166888 C145.512416,23.166888 144.364712,22.071952 144.364712,20.330608 C144.364712,18.510112 145.617952,17.24368 147.504408,17.24368 C149.470016,17.24368 150.670488,18.602456 150.670488,20.80552 Z M147.5176,22.12472 C148.665304,22.12472 149.351288,21.46512 149.351288,20.27784 L149.351288,20.159112 C149.351288,18.971832 148.665304,18.312232 147.5176,18.312232 C146.369896,18.312232 145.683912,18.971832 145.683912,20.159112 L145.683912,20.27784 C145.683912,21.46512 146.369896,22.12472 147.5176,22.12472 Z" id="path-1"></path>
+        <polygon id="path-2" points="67.356024 26.61 61.300896 26.61 61.300896 25.633792 63.873336 25.633792 63.873336 18.219888 63.780992 18.219888 61.4592 20.383376 60.812792 19.6842 63.253312 17.401984 64.981464 17.401984 64.981464 25.633792 67.356024 25.633792"></polygon>
+        <polygon id="path-3" points="0 0 4.365 3.819375 0 7.63875"></polygon>
+        <polygon id="path-5" points="0 0 4.365 3.819375 0 7.63875"></polygon>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pagination" transform="translate(52.000000, 139.000000)">
+            <g>
+                <rect id="Rectangle" fill="#D8D8D8" fill-rule="nonzero" x="163" y="0" width="21" height="41"></rect>
+                <polygon id="Rectangle-2-Copy-331" fill="#F3F3F3" fill-rule="nonzero" points="3.88 1.77635684e-14 172.66 1.77635684e-14 172.66 41.71 3.88 41.71"></polygon>
+                <rect id="Rectangle-2-Copy-480" fill="#BEBEBE" fill-rule="nonzero" x="-1.0658141e-14" y="1.77635684e-14" width="41.71" height="41.71"></rect>
+                <rect id="Rectangle-2-Copy-330" fill="#F3F3F3" fill-rule="nonzero" x="173.63" y="1.77635684e-14" width="41.71" height="41.71"></rect>
+                <rect id="Rectangle-2-Copy-332" fill="#0F6FFF" fill-rule="nonzero" x="141" y="38" width="13.58" height="3.88"></rect>
+                <g id="…" transform="translate(101.000000, 12.000000)" fill="#252525" font-family="IBMPlexSans, IBM Plex Sans" font-size="13.192" font-weight="normal">
+                    <text>
+                        <tspan x="0.85" y="14.61">…</tspan>
+                    </text>
+                </g>
+                <g id="9" fill-rule="nonzero">
+                    <use fill="#000000" xlink:href="#path-1"></use>
+                    <use fill="#252525" xlink:href="#path-1"></use>
+                </g>
+                <g id="1" fill-rule="nonzero">
+                    <use fill="#000000" xlink:href="#path-2"></use>
+                    <use fill="#252525" xlink:href="#path-2"></use>
+                </g>
+                <g id="icon/navigation/caret/right/20" transform="translate(185.000000, 13.000000)">
+                    <g id="caret--right" transform="translate(7.093125, 4.910625)">
+                        <g id="Mask" fill="#000000" fill-rule="nonzero">
+                            <polygon id="path-1" points="0 0 4.365 3.819375 0 7.63875"></polygon>
+                        </g>
+                        <g id="color/black-Clipped">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="path-1"></g>
+                            <g id="color/black" mask="url(#mask-4)">
+                                <g transform="translate(-8.000000, -5.000000)" id="Group">
+                                    <g transform="translate(0.906875, 0.089375)">
+                                        <rect id="Rectangle" fill="#000000" fill-rule="nonzero" x="0" y="0" width="35" height="35"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <rect id="transparent-rectangle" transform="translate(8.730000, 8.730000) rotate(-90.000000) translate(-8.730000, -8.730000) " x="0" y="0" width="17.46" height="17.46"></rect>
+                </g>
             </g>
-            <g id="Drop-Down-Items" transform="translate(8.000000, 8.983523)" fill="#3D70B2">
-                <rect id="Rectangle-315-Copy-21" fill-opacity="0.1" x="0" y="0" width="48.6259766" height="24"></rect>
-                <polygon id="Shape-Copy-37" transform="translate(37.625977, 12.935118) scale(1, -1) translate(-37.625977, -12.935118) " points="33.6259766 14.870237 37.6259766 11 41.6259766 14.870237"></polygon>
+            <g id="icon/navigation/caret/right/20" transform="translate(20.460000, 22.000000) scale(-1, 1) translate(-20.460000, -22.000000) translate(11.460000, 13.000000)">
+                <g id="caret--right" transform="translate(7.093125, 4.910625)">
+                    <g id="Mask" fill="#000000" fill-rule="nonzero">
+                        <polygon id="path-3" points="0 0 4.365 3.819375 0 7.63875"></polygon>
+                    </g>
+                    <g id="color/black-Clipped">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <g id="path-3"></g>
+                        <g id="color/black" mask="url(#mask-6)">
+                            <g transform="translate(-8.000000, -5.000000)" id="Group">
+                                <g transform="translate(0.906875, 0.089375)">
+                                    <rect id="Rectangle" fill="#000000" fill-rule="nonzero" x="0" y="0" width="35" height="35"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <rect id="transparent-rectangle" transform="translate(8.730000, 8.730000) rotate(-90.000000) translate(-8.730000, -8.730000) " x="0" y="0" width="17.46" height="17.46"></rect>
             </g>
-            <rect id="Rectangle-5" fill-opacity="0.1" fill="#152935" x="66.614321" y="17.9835234" width="61.111265" height="6"></rect>
         </g>
-        <polygon id="chevron" fill="#5A6872" fill-rule="nonzero" transform="translate(238.333333, 83.000000) rotate(90.000000) translate(-238.333333, -83.000000) " points="238.330656 81.6331484 234.817795 85.3331437 234.333333 84.8765298 238.330275 80.6666667 242.333333 84.8763401 241.849232 85.3333333"></polygon>
-        <polygon id="chevron-copy" fill="#5A6872" fill-rule="nonzero" transform="translate(193.333333, 83.000000) rotate(-90.000000) translate(-193.333333, -83.000000) " points="193.330656 81.6331484 189.817795 85.3331437 189.333333 84.8765298 193.330275 80.6666667 197.333333 84.8763401 196.849232 85.3333333"></polygon>
     </g>
 </svg>

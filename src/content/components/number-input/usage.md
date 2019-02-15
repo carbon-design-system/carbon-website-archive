@@ -3,7 +3,12 @@ title: Number Input
 tabs: ['Code', 'Usage']
 ---
 
-## General guidelines
+## General guidance
+
+_Number inputs_ are similar to text inputs, but contain controls used to increase or decrease an incremental value.
+
+
+## Format
 
 - Do not use number inputs when large value changes are expected. They work best for making small, incremental changes that only require a few clicks.
 - Enable the user to also choose to type a number in the field.
@@ -11,3 +16,9 @@ tabs: ['Code', 'Usage']
 - Use a clear and concise label for the number input.
 - Use sentence-style capitalization (only the first word in a phrase and any proper nouns capitalized) for the label.
 - See further guidance for using number labels within [forms](/components/form/usage).
+
+<image-component cols="8">
+
+![number input example](images/number-input-usage-1.png)
+
+</image-component>

@@ -1,8 +1,28 @@
 ---
 label: When used properly, typography can help create clear hierarchies, organize information, and guide users through the product or experience.
 title: Typography
-tabs: ['Overview', 'Productive', 'Expressive']
+tabs: ['Overview', 'Productive']
 ---
+
+
+
+## Resources
+
+<grid-wrapper col_lg="8" flex="true" bleed="true">
+<clickable-tile
+    title="Get the latest IBM Plex™ download on GitHub"
+    href="https://github.com/IBM/plex/releases/latest"
+    type="resource"
+    >
+    <img src="images/github-icon.png" alt="" />
+</clickable-tile>
+<clickable-tile
+    title="Visit the IBM Plex™ website to learn more"
+    href="https://www.ibm.com/plex/"
+    type="resource"
+    >
+</clickable-tile>
+</grid-wrapper>
 
 <anchor-links>
 <ul>
@@ -10,7 +30,7 @@ tabs: ['Overview', 'Productive', 'Expressive']
     <li><a href="#typeface-ibm-plex">Typeface: IBM Plex</a></li>
     <li><a href="#scale">Scale</a></li>
     <li><a href="#style">Style</a></li>
-    <li><a href="#type-color">Type Color</a></li>
+    <li><a href="#type-color">Type color</a></li>
 </ul>
 </anchor-links>
 
@@ -78,11 +98,11 @@ Each weight has an italic style, which should only be used when you need to emph
 
 <type-weight type="italic"></type-weight>
 
-## Type Color
+## Type color
 
 Type color should be carefully considered, with legibility and accessibility as paramount concerns. Keep type color neutral in running text. Use primary blue for primary actions.
 
-<grid-wrapper col_lg="8" flex="true"> 
+<grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true>
         <img src="images/Typography_overview_Type-color-1.svg" alt="Neutral color for text">    
     </do-dont-example>

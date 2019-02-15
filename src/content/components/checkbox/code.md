@@ -3,13 +3,13 @@ title: Checkbox
 tabs: ['Code', 'Usage']
 ---
 
-**Checkboxes** are used for a list of options where the user may select multiple options, including all or none.
 
 <component 
     name="Checkbox"
     component="checkbox" 
     variation="checkbox"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component-docs component="checkbox" experimental="true"></component-docs>

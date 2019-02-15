@@ -3,7 +3,8 @@ title: Breadcrumb
 tabs: ['Code', 'Usage']
 ---
 
-## Intro
+## General guidance
+
 
 The _breadcrumb_ component (aka, breadcrumb trail) is a secondary navigation pattern that shows heirarchy among content or traces a user's path. Breadcrumbs enable users to move quickly up to a parent level or previous step. All links in a breadcrumb should be clickable.
 
@@ -11,15 +12,15 @@ Breadcrumbs are very effective in products and experiences that have a large amo
 
 Breadcrumbs' space-efficient design and high utility make them an easy choice for most designers.
 
+<image-component  cols="8">
+
 ![multiple tiers of breadcrumb](images/breadcrumb-usage-1.png)
 
-## Types of breadcrumbs
+</image-component>
 
-### Location-based
+## Variations
 
-These illustrate the site's heirarchy and show the user where they are within that heirarchy.
-
-### Path-based
-
-These show the actual steps the user took to get to the current page, rather than reflecting the site's information architecture. Path-based breadcrumbs are always dynamically generated.
-
+| Breadcrumb type   | Purpose                                                                                                                                                     |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| _Location-based_      | These illustrate the site's heirarchy and show the user where they are within that heirarchy.|
+| _Path-based_  | These show the actual steps the user took to get to the current page, rather than reflecting the site's information architecture. Path-based breadcrumbs are always dynamically generated.|

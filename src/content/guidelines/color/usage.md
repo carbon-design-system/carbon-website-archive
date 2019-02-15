@@ -1,5 +1,5 @@
 ---
-label: Guidelines
+label: Color is a foundational element of Carbon. Careful application of color drives consistency, engagement, and focus for all user interfaces.
 title: Color
 tabs: ['Overview', 'Usage']
 ---

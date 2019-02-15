@@ -1,34 +1,52 @@
 ---
-label: IBM's icons are visual symbols used to represennt ideas, objects, or actions. They communicate messages at a glance, afford interactivity, and draw attention to important information.
+label: IBM’s icons are visual symbols used to represent ideas, objects, or actions. They communicate messages at a glance, afford interactivity, and draw attention to important information.
 title: Iconography
-tabs: ['Library', 'Usage', 'Design and Contribution']
+tabs: ['Library', 'Usage', 'Contribution']
 ---
 
-## Using Icons
+<anchor-links>
+<ul>
+    <li><a href="#usage-for-designers">Usage for designers</a></li>
+    <li><a href="#usage-for-developers">Usage for developers</a></li>
+</ul>
+</anchor-links>
+
+## Usage for designers
 
 ### Sizing
 
-UI icons that appear within Carbon components are generally 16 px square. Icons sized at 20, 24, and 32 px can be also used within the UI. Icons should only be used at their original sizes and not resized in code.
+UI icons that appear within Carbon components are generally 16 px squares, however icons sized at 20 px, 24 px, and 32 px can be also used within the UI. Icons should only be used at their original sizes and not resized in code.
 
-![icon sizing](images/iconography-usage-sizing-1.svg)
+<image-component  cols="12">
+
+![icon sizing](images/iconography_usage_sizing-alt.svg)
+
+</image-component>
+
+<image-component cols="12" caption="16 px and 20 px icons are optimized to feel balanced when paired with 14pt and 16pt IBM Plex. Use 24 px and 32 px when larger icons are needed.">
 
 ![icon alignment](images/iconography-usage-sizing-2.svg)
-_16 px and 20 px icons are optimized to feel balanced when paired with 14pt and 16pt IBM Plex. Use 24 px and 32 px when larger icons are needed._
+
+</image-component>
 
 <grid-wrapper col_lg="8" flex="true">
-    <do-dont-example correct="true" label="Do: use the correct icon size with IBM Plex.">
-        <img src="images/iconography-usage-sizing-3.svg" alt="proper sizing" />
+    <do-dont-example correct=true label="Do: use the correct icon size with IBM Plex.">
+        <img src="images/iconography-usage-sizing-3.svg" alt="proper sizing">    
     </do-dont-example>
-    <do-dont-example label="Don't: alter the icon-text size ratio.">
-        <img src="images/iconography-usage-sizing-4.svg" alt="improper sizing" />
+    <do-dont-example label="Don’t: alter the icon-text size ratio.">
+        <img src="images/iconography-usage-sizing-4.svg" alt="improper sizing">    
     </do-dont-example>
 </grid-wrapper>
 
-### Touch Targets
+### Touch targets
 
 All touch targets for interactive icons need to be 44 px or larger. Developers can add padding to a touch target with CSS to meet the 44 px requirement.
 
+<image-component  cols="4">
+
 ![touch target padding](images/iconography-usage-padding-6.svg)
+
+</image-component>
 
 ### Color
 
@@ -48,15 +66,15 @@ Interactive UI icons need to pass the same color contrast ratio as typography at
 When used next to text, icons should be center-aligned.
 
 <grid-wrapper col_lg="8" flex="true">
-    <do-dont-example correct="true" label="Do: center-align icons when they’re next to text.">
-        <img src="images/iconography-usage-sizing-5.svg" alt="proper alignment" />
+    <do-dont-example correct=true label="Do: center-align icons when they’re next to text.">
+        <img src="images/iconography-usage-sizing-5.svg" alt="proper alignment">    
     </do-dont-example>
-    <do-dont-example label="Don't: baseline-align icons to the text.">
-        <img src="images/iconography-usage-sizing-6.svg" alt="improper alignment" />
+    <do-dont-example label="Don’t: baseline-align icons to the text.">
+        <img src="images/iconography-usage-sizing-6.svg" alt="improper alignment">    
     </do-dont-example>
 </grid-wrapper>
 
-## Developer usage
+## Usage for developers
 
 ### Using SVG sprite (recommended)
 
@@ -64,7 +82,7 @@ When used next to text, icons should be center-aligned.
 
 - Install `carbon-icons`
 
-<p>Full installation details in <a href="https://github.com/ibm/carbon-icons">Carbon icons GitHub repo.</a></p>
+<p>Full installation details can be found in the <a href="https://github.com/ibm/carbon-icons" target=blank>Carbon icons GitHub repo.</a></p>
 
 ### Using SVG sprite from static assets (recommended)
 
@@ -81,7 +99,7 @@ To use SVG sprite files, they **must** be distributed through a web server and w
 
 `path_to_static-assets` is the path to your static assets where `carbon-icons.svg` is located.
 
-<p>`icon_name` is the icon name, which will display the corresponding icon. Refer to the <a href="/guidelines/iconography" target="_blank">iconography library</a> page for a full list of icon names.</p>
+`icon_name` is the icon name, which will display the corresponding icon. Refer to the [iconography library]("/guidelines/iconography") page for a full list of icon names.
 
 ### CSS
 
@@ -107,7 +125,7 @@ All icons in the library are standardized so that they do not include `stroke` o
 
 If you're unable to use the recommended SVG sprite or `svgxuse`, you can inline SVG directly into your HTML.
 
-Visit carbon-icons and browse the svg folder for any icons you want to use. (Remember, svg subfolders contain deprecated icons. Don't use these).
+Visit carbon-icons and browse the svg folder for any icons you want to use. (Remember, svg subfolders contain deprecated icons. Don't use these.)
 
 ### Main files
 
@@ -133,8 +151,10 @@ For screen reader accessibility, provide a context-rich title for the SVG using 
 </svg>
 ```
 
-If support for older browsers is needed, use `aria-labelledby` attribute to reference the `<title>` element using an `id`.
-The `<title>` element will be read by the screen reader to the user so it should describe its purpose.
+If support for older browsers is needed, use the `aria-labelledby` attribute to reference the `<title>` element using an `id`.
+
+The `<title>` element will be read by the screen reader to the user, so it should describe its purpose.
+
 Make sure that you do not duplicate this `id`.
 
 ```html

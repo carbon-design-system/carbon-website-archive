@@ -15,7 +15,7 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Typography
 
-The File Uploader label and instruction text should be set in sentence case, with only the first letter of the first word in the sentence capitalized.
+The file uploader label and instruction text should be set in sentence case, with only the first letter of the first word in the sentence capitalized.
 
 | Class                    | Font-size (px/rem) | Font-weight     | Type style          |
 | ------------------------ | ------------------ | --------------- | ------------------- |
@@ -25,7 +25,7 @@ The File Uploader label and instruction text should be set in sentence case, wit
 
 ## Structure
 
-The width of an uploaded file varies based on the content and layout of a design. Refer to the [Button](/components/button) guidelines for styling and usage of the “Add files” button.
+The width of an uploaded file varies based on the content and layout of a design. Refer to the [button](/components/button) guidelines for styling and usage of the “Add files” button.
 
 | Class                      | Property                    | px / rem   | Spacing token |
 | -------------------------- | --------------------------- | ---------- | ------------- |
@@ -33,13 +33,15 @@ The width of an uploaded file varies based on the content and layout of a design
 | `.bx--file__selected-file` | padding-left, padding-right | 16 /1      | $spacing-md   |
 | `.bx--file__selected-file` | margin-bottom               | 16 /1      | $spacing-md   |
 
-![Structure and spacing measurements for File Uploader](images/file-uploader-style-1.png)
+<image-component fixed="default" caption="Structure and spacing measurements for file uploader | px / rem">
 
-_Structure and spacing measurements for File Uploader | px / rem_
+![Structure and spacing measurements for file uploader](images/file-uploader-style-1.png)
+
+</image-component>
 
 ### Recommended
 
-The following specs are not built into the File Uploader component but are recommended by design as the proper amount between File Uploader elements.
+The following specs are not built into the file uploader component but are recommended by design as the proper amount between file uploader elements.
 
 | Class             | Property                  | px / rem | Spacing token |
 | ----------------- | ------------------------- | -------- | ------------- |

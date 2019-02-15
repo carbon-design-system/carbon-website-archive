@@ -8,29 +8,32 @@ tabs: ['Code', 'Usage', 'Style']
 
 Inputs come in two different colors. The default input color is `$field-01` and is used on `$ui-01` page backgrounds. The light version input color is `$field-02` and is used on `$ui-02` page backgrounds.
 
-| Class                                  | Property   | SCSS        | HEX     |
-| -------------------------------------- | ---------- | ----------- | ------- |
-| `.bx--select-input`                    | background | $field-01   | #f4f7fb |
-| `.bx--select-input`                    | text color | $text-01    | #152935 |
-| `.bx--select-input::placeholder`       | color      | $text-03    | #cdd1d4 |
-| `.bx--select--light.bx--select-input`  | background | $field-02   | #ffffff |
-| `.bx--select--inline.bx--select-input` | background | transparent | -       |
-| `.bx--label`                           | text color | $text-01    | #152935 |
-| `.bx--select__arrow`                   | fill       | $brand-01   | #3d70b2 |
-| `.bx--select--inline.bx--select-input` | text color | $brand-01   | #3d70b2 |
+| Class                                  | Property   | SCSS        |
+| -------------------------------------- | ---------- | ----------- |
+| `.bx--select-input`                    | background | $field-01   |
+| `.bx--select-input`                    | text color | $text-01    |
+| `.bx--select-input::placeholder`       | color      | $text-03    |
+| `.bx--select--light.bx--select-input`  | background | $field-02   |
+| `.bx--select--inline.bx--select-input` | background | transparent |
+| `.bx--label`                           | text color | $text-01    |
+| `.bx--select__arrow`                   | fill       | $brand-01   |
+| `.bx--select--inline.bx--select-input` | text color | $brand-01   |
+
+<image-component fixed="default" caption="Examples of default and new selection Select states in $field-02 (right) and $field-01 (left)">
 
 ![Default and new selection state examples for Select](images/select-style-1.png)
-_Examples of default and new selection Select states in $field-02 (right) and $field-01 (left)_
+
+</image-component>
 
 ### States
 
-| Class                                                | Property      | SCSS        | HEX     |
-| ---------------------------------------------------- | ------------- | ----------- | ------- |
-| `.bx--select-input:focus`                            | border-bottom | $brand-01   | #3d70b2 |
-| `.bx--select-input:focus ~ .bx--label`               | text color    | $brand-01   | #3d70b2 |
-| `.bx--select-input[data-invalid]:focus ~ .bx--label` | text color    | $support-01 | #e0182d |
-| `.bx--form-requirement`                              | text color    | $support-01 | #e0182d |
-| `.bx--select-input[data-invalid]`                    | border-bottom | $support-01 | #e0182d |
+| Class                                                | Property      | SCSS        |
+| ---------------------------------------------------- | ------------- | ----------- |
+| `.bx--select-input:focus`                            | border-bottom | $brand-01   |
+| `.bx--select-input:focus ~ .bx--label`               | text color    | $brand-01   |
+| `.bx--select-input[data-invalid]:focus ~ .bx--label` | text color    | $support-01 |
+| `.bx--form-requirement`                              | text color    | $support-01 |
+| `.bx--select-input[data-invalid]`                    | border-bottom | $support-01 |
 
 **Open:** Style determined by browser
 
@@ -40,11 +43,11 @@ _Examples of default and new selection Select states in $field-02 (right) and $f
 
 **Disabled:** Disabled state has a `.not-allowed` cursor hover and appears at 50% opacity.
 
-<div class="image-component">
-    <img src="images/select-style-3.png" alt="Open, disabled, and more information/help state examples for Select" />
-</div>
+<image-component fixed="default" caption="Examples of open, disabled, and help Select states">
 
-_Examples of open, disabled, and help Select states_
+![Open, disabled, and more information/help state examples for Select](images/select-style-3.png)
+
+</image-component>
 
 ## Typography
 
@@ -71,8 +74,11 @@ Select text should be set in sentence case, with only the first word in a phrase
 | `.bx--select-input`       | box-shadow    | 1px      | -             |
 | `.bx--select-input:focus` | box-shadow    | 2px      | -             |
 
+<image-component fixed="default" caption="Structure and spacing measurements for Select | px / rem">
+
 ![Structure and spacing measurements for Select](images/select-style-2.png)
-_Structure and spacing measurements for Select | px / rem_
+
+</image-component>
 
 ### Recommended
 
@@ -90,16 +96,11 @@ The following specs are not built into the Select component but are recommended 
 | `.bx--select-input` | height                      | 24 / 1.5 | -             |
 | `.bx--select-input` | padding-left, padding-right | 8 / 0.5  | $spacing-xs   |
 
-<div class="image-grid">
-  <div>
-    <img src="images/select-style-4.png" alt="Structure and spacing measurements for Small Select"/>
-  </div>
-  <div>
-    <img src="images/select-style-5.png" alt="Structure and spacing measurements for Small Select"/>
-  </div>
-</div>
+<image-component fixed="default" caption="Structure and spacing measurements for Small Select | px / rem & examples of open and disabled Small Select states">
 
-_Structure and spacing measurements for Small Select | px / rem & examples of open and disabled Small Select states_
+![Structure and spacing measurements for Small Select](images/select-style-4.png)
+
+</image-component>
 
 ### Recommended
 
@@ -117,8 +118,8 @@ The following specs are not built into the Small Select component but are recomm
 | `.bx--select-input` | padding-right | 2.5 / 40 | $spacing-2xl  |
 | `.bx--select-input` | padding-left  | 16 / 1   | $spacing-md   |
 
-<div class="image-component">
-    <img src="images/select-style-6.png" alt="Structure and spacing measurements for Inline Select" />
-</div>
+<image-component fixed="default" caption="Structure and spacing measurements for Inline Select (focused) | px / rem">
 
-_Structure and spacing measurements for Inline Select (focused) | px / rem_
+![Structure and spacing measurements for Inline Select](images/select-style-6.png)
+
+</image-component>

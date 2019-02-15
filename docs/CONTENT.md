@@ -2,7 +2,7 @@
 
 ## File Structure
 
-All markdown files live inside of the `src/content` folder and follow the site navigation. They live inside a folder that is named the same as the file unless it is a page with tabbed navigation. "Tabbed" pages _(for example Getting Starter > Developers)_ should have all the pages inside the same folder, with the file name matching the page title.
+All markdown files live inside of the `src/content` folder and follow the site navigation. They live inside a folder that is named the same as the file, unless it is a page with tabbed navigation. "Tabbed" pages _(for example Getting Started > Developers)_ should have all the pages inside the same folder, with the file name matching the page title.
 
 ```
 src
@@ -34,8 +34,8 @@ The top of each markdown file has required frontmatter fields to display the hea
 
 ```
 ---
-label: Optional paragraph of text at the top of a page
-title: Page Title
+label: Optional paragraph of text at the top of a page (Used only in Guidelines pages)
+title: Page title
 tabs: ['Tab 1', 'Tab 2', 'Tab 3'']
 internal: true
 ---
@@ -47,21 +47,21 @@ Required fields are:
 
 Non-required fields are:
 
-- `label`: The label of the page _(if added then header will display at medium height instead of small)_
+- `label`: The label of the page _(if added then header will display at medium height instead of small)_ (Used only in Guidelines pages)
 - `tabs`: An array of the page tabs (in the desired order), tab name should match markdown file name.
-- `internal: true` Used to designate internal only content for display on w3 website.
+- `internal: true` Used to designate internal-only content for display on w3 website.
 
-## Markdown
+## Basic formatting
 
-    ### This generates an H2 heading with an underline
+    ## This generates an H2 heading
 
-    ### This generates an H3 heading (blue).
+    ### This generates an H3 heading
 
-    #### This generates an H4 heading.
+    #### This generates an H4 heading
 
     **This is bold text.**
 
-    _This is italic text or an image caption._
+    _This is italic text._
 
     This is a normal paragraph with a [link](http://www.link.com).
 
@@ -79,19 +79,36 @@ If you need a link to open in a new window you will have to use standard html to
 
 ### Images
 
-Images will render as full width responsive images by default. **You must have a line break after the image, otherwise markdown will place it inside a paragraph tag and it will display at the incorrect width**
-
-`![image alt text](images/image.png)`
-
-#### Image captions
-
-If you place markdown italic text following an image it will render in the caption styles. **You must have a line break after the image, otherwise markdown will place it inside a paragraph tag and it will display at the incorrect width**
+All images are delivered through the image component, which wraps around the images on the website so we can customize them.
 
 ```
-![Structure and spacing measurements for Accordion](images/accordion-style-1.png)
+<image-component cols="8" caption="Enter caption here">
 
-_Structure and spacing measurements for Accordion | px / rem_
+![image alt text](/images/image1.png)
+
+</image-component>
 ```
+_example of 8-column fluid image with caption_
+
+**Note: The line breaks before and after the markdown link are mandatory.**
+
+Will by default resize with the grid, and you can pass in number of columns that the image should span (4, 6, 8 or 12). The default (if no value is specified) is `12`.
+
+If the image needs to be fixed, you can add the `fixed="default"` option. This will give the image a max-width of 720 px.
+There is also a `fixed="large"` option that will give the image a max-width of 1120 px.
+
+If the image needs a transparent background you can add the option `bg="none"`. It will by default get a white background.
+
+Caption is also optional and can be added with the `caption` option.
+
+```
+<image-component fixed="large">
+
+![image alt text](/images/image1.png)
+
+</image-component>
+```
+_example of 1120 px fixed image without caption_
 
 
 ### Lists
@@ -103,6 +120,9 @@ _Structure and spacing measurements for Accordion | px / rem_
     2. List item 2
 
 ### Tables
+To add a table, use three or more hyphens (---) to create each column’s header, and use pipes (|) to separate each column. You can optionally add pipes on either end of the table.
+
+Tip: Creating tables with hyphens and pipes can be tedious. To speed up the process, try using the [Markdown Tables Generator](http://www.tablesgenerator.com/markdown_tables). Build a table using the graphical interface, and then copy the generated Markdown-formatted text into your file.
 
     | COL 1      | COL 2   |  COL 3     |
     |------------|---------|------------|
@@ -110,11 +130,12 @@ _Structure and spacing measurements for Accordion | px / rem_
     | Row 2A     | Row 2B  | Row 2C     |
     | Row 3A     | Row 3B  | Row 3C     |
 
+
 ### Code & syntax highlighting
 
 We support inline code and code blocks.
 
-    Inline `code` has `back-ticks around` it.
+    Inline `code` has `back-ticks` around it.
 
 
     ```
@@ -147,18 +168,53 @@ The carbon website has a handful of custom markdown components available for use
 
 ### Global Components:
 
+#### Icon
 - `<icon name="icon--checkmark--solid" color="green" />`
+
+#### Clickable tile
 - `<clickable-tile label="Title" author="John Smith" date="Janury 1, 2018" href="#"><img src="image.png" alt="Alt Text" type="article|resource" /></clickable-tile>`
-- `<do-dont-example correct=true label="Ability" description="Lorem ipsum dolor sit amet" text='Example text or quote'></do-dont-example>`
+
+#### Do - Don't example: text
+
+```
+<grid-wrapper col_lg="8" flex="true">
+  <do-dont-example correct=true label="caption" description="Lorem ipsum dolor sit amet" text='Example text or quote'>
+  </do-dont-example>`
+</grid-wrapper>
+
+```
+
+#### Do - Don't example: images
+
+```
+<grid-wrapper col_lg="8" flex="true">
+    <do-dont-example correct=true label="Do: center-align icons when they’re next to text.">
+        <img src="images/iconography-usage-sizing-5.svg" alt="proper alignment">    
+    </do-dont-example>
+    <do-dont-example label="Don't: baseline-align icons to the text.">
+        <img src="images/iconography-usage-sizing-6.svg" alt="improper alignment">    
+    </do-dont-example>
+</grid-wrapper>
+
+```
+#### Color block
 - `<color-block showhex="true" size="xs">#ffaaaa</color-block>`
   - `size` takes values of `xs`, `s`, `m`, `l` (12px, 24px, 40px, 80px respectively)
   - `size` also accepts a number (e.g. `size="200"`, which would render a square that is 200px x 200px)
   - leaving out these extra properties will default to no label, and a swatch size of 24px
+
+#### Color card
 - `<color-card name="$ui-01" hex="#ffffff" border="true" small="true"></color-card>`
+
+#### Anchor links
 - `<anchor-links>`
+
+#### Grid wrapper
 - `<grid-wrapper col_lg="12" flex="true>`
   - `col_lg` Specify the col width at large breakpoint, default is 12
   - `flex` Set to true to set display:flex | flexwrap: wrap to row
+
+#### Website tabs
 - `<website-tabs> … </website-tabs>`
   - inside, place `<tab label="Tab Label"><div> [tab content] </div></tab>`
 
@@ -171,7 +227,7 @@ This is a wrapper component to display a list as an anchor link list
 ```
 <anchor-links>
 <ul>
-    <li><a href="#columns-and-rows">Columns and Rows</a></li>
+    <li><a href="#columns-and-rows">Columns and rows</a></li>
     <li><a href="#margins">Margins</a></li>
     <li><a href="#padding">Padding</a></li>
     <li><a href="#gutters">Gutters</a></li>
@@ -242,9 +298,6 @@ This will render the following group of clickable tiles
 </grid-wrapper>
 ```
 
-This will render the following set of examples:
-![Example of the Do/Don't component with text examples](https://user-images.githubusercontent.com/2753488/43850488-aba55aea-9afd-11e8-921d-418f65cf2460.png)
-
 ---
 
 ##### With image examples:
@@ -305,7 +358,8 @@ lorem ipsum dolor sit amet
     - Unfortunately, this component is extra fragile when written inside of a markdown file, because we are passing `<tab>` components into the `<website-tabs>` component, and markdown can interfere when child components are indendented. 
 
 
-### Page Specific Components:
+
+### Page-specific components
 
 **Type**
 

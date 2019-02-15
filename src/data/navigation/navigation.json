@@ -1,5 +1,4 @@
 {
-
   "getting-started": {
     "title": "Getting started",
     "sub-nav": {
@@ -62,7 +61,6 @@
       "catalog-entry": {
         "title": "Catalog entry"
       }
-
     }
   },
   "components": {
@@ -195,9 +193,6 @@
       "filtering": {
         "title": "Filtering"
       },
-      "loading": {
-        "title": "Loading"
-      },
       "overflow-content": {
         "title": "Overflow content"
       }
@@ -209,16 +204,19 @@
   "contributing": {
     "title": "Contributing",
     "sub-nav": {
+      "governance": {
+        "title": "Governance"
+      },
       "designers": {
-      "title": "Designers"
-    },
-    "developers": {
-      "title": "Developers"
-    },
-    "add-ons": {
-      "title": "Add-ons"
+        "title": "Designers"
+      },
+      "developers": {
+        "title": "Developers"
+      },
+      "add-ons": {
+        "title": "Add-ons"
+      }
     }
-  }
   },
   "updates": {
     "title": "Updates",
@@ -229,8 +227,8 @@
       "release-highlights": {
         "title": "Release highlights"
       },
-      "migrating-to-carbon-x": {
-        "title": "Migrating to Carbon X"
+      "migration": {
+        "title": "Migration"
       },
       "roadmap": {
         "title": "Roadmap"
@@ -244,8 +242,8 @@
         "title": "Support"
       },
       "faq": {
-          "title": "FAQ"
-        }
+        "title": "FAQ"
       }
     }
   }
+}

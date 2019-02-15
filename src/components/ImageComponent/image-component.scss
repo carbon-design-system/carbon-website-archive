@@ -1,0 +1,98 @@
+.image-component__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-component > img {
+  margin-bottom: 0;
+}
+
+.image-component.no-caption {
+  margin-bottom: rem(24px);
+}
+
+.image-component > *:not(.image-component__caption) {
+  background: white;
+}
+
+.image-component.transparent-bg > *:not(.image-component__caption) {
+  background: transparent;
+}
+
+.image-component.border > *:not(.image-component__caption) {
+  border: 1px solid $ui-03;
+}
+
+.image-component.fixed-default {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $ui-02;
+
+  .image-component__caption {
+    align-self: flex-start;
+  }
+
+  > span.gatsby-resp-image-wrapper {
+    background: $ui-02;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0 !important;
+    width: 70% !important;
+    max-width: 100% !important;
+  }
+
+  img.gatsby-resp-image-image {
+    max-width: 736px;
+    width: 736px !important;
+    height: auto !important;
+    position: relative !important;
+  }
+}
+
+.image-component.fixed-large {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $ui-02;
+
+  .image-component__caption {
+    align-self: flex-start;
+  }
+
+  > span.gatsby-resp-image-wrapper {
+    background: $ui-02;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+
+    @include breakpoint('1230px') {
+      width: 70% !important;
+    }
+  }
+
+  img.gatsby-resp-image-image {
+    max-width: 1120px;
+    height: auto !important;
+    position: relative !important;
+
+    @include breakpoint('1056px') {
+      width: 900px !important;
+    }
+
+    @include breakpoint('1230px') {
+      width: 1120px !important;
+    }
+  }
+}
+
+p.image-component__caption {
+  @include carbon--type-style('body-short-01');
+  padding-top: rem(8px);
+}

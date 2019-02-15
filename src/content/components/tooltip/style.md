@@ -6,22 +6,22 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                                                                                                                                                         | Property         | SCSS        | HEX     |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------- | ------- |
-| `.bx--tooltip__label`                                                                                                                                         | text color       | $text-01    | #152935 |
-| `svg`                                                                                                                                                         | fill             | $brand-01   | #3d70b2 |
-| `.bx--tooltip--shown`                                                                                                                                         | background-color | $ui-01      | #ffffff |
-| `.bx--tooltip`                                                                                                                                                | color            | $text-01    | #152935 |
-| `.bx--tooltip`                                                                                                                                                | border           | $ui-03      | #dfe3e6 |
-| `.bx--tooltip__trigger path`                                                                                                                                  | fill             | $brand-01   | #3d70b2 |
-| `.bx--tooltip--definition__bottom p` </br> `.bx--tooltip--definition__top p` </br> `.bx--tooltip--icon__top::after` </br> `.bx--tooltip--icon__bottom::after` | text color       | $inverse-01 | #ffffff |
-| `.bx--tooltip--definition__bottom` </br> `.bx--tooltip--definition__top` </br> `.bx--tooltip--icon__top::after` </br> `.bx--tooltip--icon__bottom::after`     | background-color | $inverse-02 | #272d33 |
+| Class                                                                                                                                                         | Property         | SCSS        |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------- |
+| `.bx--tooltip__label`                                                                                                                                         | text color       | $text-01    |
+| `svg`                                                                                                                                                         | fill             | $brand-01   |
+| `.bx--tooltip--shown`                                                                                                                                         | background-color | $ui-01      |
+| `.bx--tooltip`                                                                                                                                                | color            | $text-01    |
+| `.bx--tooltip`                                                                                                                                                | border           | $ui-03      |
+| `.bx--tooltip__trigger path`                                                                                                                                  | fill             | $brand-01   |
+| `.bx--tooltip--definition__bottom p` </br> `.bx--tooltip--definition__top p` </br> `.bx--tooltip--icon__top::after` </br> `.bx--tooltip--icon__bottom::after` | text color       | $inverse-01 |
+| `.bx--tooltip--definition__bottom` </br> `.bx--tooltip--definition__top` </br> `.bx--tooltip--icon__top::after` </br> `.bx--tooltip--icon__bottom::after`     | background-color | $inverse-02 |
 
-<div class="image-component">
-    <img src="images/tooltip-style-1.png" alt="Closed and open states for a Tooltip" />
-</div>
+<image-component fixed="default" caption="Example of closed and open states for a tooltip">
 
-_Example of closed and open states for a Tooltip_
+![Closed and open states for a tooltip](images/tooltip-style-1.png)
+
+</image-component>
 
 ## Typography
 
@@ -41,9 +41,9 @@ Tooltip labels and text should be set in sentence case.
 
 ## Structure
 
-All Tooltip types have a varying height based on the amount of content they contain.
+All tooltip types have a varying height based on the amount of content they contain.
 
-### Interactive Tooltip
+### Interactive tooltip
 
 | Class                       | Property      | px / rem | Spacing token |
 | --------------------------- | ------------- | -------- | ------------- |
@@ -53,13 +53,13 @@ All Tooltip types have a varying height based on the amount of content they cont
 | `.bx--tooltip`              | padding       | 16 / 1   | $spacing-md   |
 | `.bx--tooltip`              | margin-top    | 8 / 0.5  | $spacing-2xs  |
 
-<div class="image-component">
-    <img src="images/tooltip-style-2.png" alt="Structure and spacing measurements for an Interactive Tooltip" />
-</div>
+<image-component fixed="default" caption="Structure and spacing measurements for an interactive tooltip | px / rem">
 
-_Structure and spacing measurements for an Interactive Tooltip | px / rem_
+![Structure and spacing measurements for an interactive tooltip](images/tooltip-style-2.png)
 
-### Definition Tooltip
+</image-component>
+
+### Definition tooltip
 
 | Class                                                                    | Property      | px / rem  | Spacing token |
 | ------------------------------------------------------------------------ | ------------- | --------- | ------------- |
@@ -68,31 +68,31 @@ _Structure and spacing measurements for an Interactive Tooltip | px / rem_
 | `.bx--tooltip--definition__bottom` </br> `.bx--tooltip--definition__top` | padding       | 8 / 0.5   | $spacing-xs   |
 | `.bx--tooltip--definition .bx--tooltip__trigger`                         | border-bottom | 2px       | -             |
 
-<div class="image-component">
-    <img src="images/tooltip-style-3.png" alt="Structure and spacing measurements for a Definition Tooltip" />
-</div>
+<image-component fixed="default" caption="Structure and spacing measurements for a definition tooltip | px / rem">
 
-_Structure and spacing measurements for a Definition Tooltip | px / rem_
+![Structure and spacing measurements for a definition tooltip](images/tooltip-style-3.png)
 
-### Icon Tooltip
+</image-component>
+
+### Icon tooltip
 
 | Class                                                                      | Property  | px / rem | Spacing token |
 | -------------------------------------------------------------------------- | --------- | -------- | ------------- |
 | `.bx--tooltip--icon__top:before` </br> `.bx--tooltip--icon__bottom:before` | max-width | 176 / 11 | -             |
 | `.bx--tooltip--icon__top:before` </br> `.bx--tooltip--icon__bottom:before` | padding   | 4 / 0.25 | $spacing-2xs  |
 
-<div class="image-component">
-    <img src="images/tooltip-style-4.png" alt="Structure and spacing measurements for an Icon Tooltip" />
-</div>
+<image-component fixed="default" caption="Structure and spacing measurements for an icon tooltip | px / rem">
 
-_Structure and spacing measurements for an Icon Tooltip | px / rem_
+![Structure and spacing measurements for an icon tooltip](images/tooltip-style-4.png)
+
+</image-component>
 
 ### Placement
 
-Tooltips should be placed below the Tooltip icon unless it is within the height of the Tooltip box plus 16px / 1rem of the bottom of the page. In that instance, the Tooltip should appear above the icon or defined word. On mobile, Tooltips can only appear below the Tooltip icon.
+Tooltips should be placed below the tooltip icon unless it is within the height of the tooltip box plus 16px / 1rem of the bottom of the page. In that instance, the tooltip should appear above the icon or defined word. On mobile, tooltips can only appear below the tooltip icon.
 
-<div class="image-component">
-    <img src="images/tooltip-style-5.png" alt="Placement examples for a Tooltip" />
-</div>
+<image-component fixed="default" caption="Placement examples for a tooltip">
 
-_Placement examples for a Tooltip_
+![Placement examples for a tooltip](images/tooltip-style-5.png)
+
+</image-component>

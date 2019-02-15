@@ -23,8 +23,8 @@ All tags have the same height. However, the width of tags varies based on the am
 | `.bx--tag` | margin                      | 3px        | -             |
 | `.bx--tag` | padding-left, padding-right | 10 / 0.625 | -             |
 
-<div class="image-component">
-    <img src="images/tag-style-1.png" alt="Structure and spacing measurementst" />
-</div>
+<image-component fixed="default" caption="Structure and spacing measurements for a tag | px / rem">
 
-_Structure and spacing measurements for a Tag | px / rem_
+![Structure and spacing measurementst](images/tag-style-1.png)
+
+</image-component>

@@ -2,25 +2,25 @@
 title: Roadmap
 ---
 
-This is the roadmap for the Carbon Design System, based on our planned design and development path. It is not a delivery commitment, and it is subject to change based on user needs and feedback.
+This is the roadmap for the Carbon Design System, based on our planned design and development path. It is not a delivery commitment and is subject to change based on user needs and feedback.
 
 ## Q4 2018
 
-### Inspiring Visual Design
+### Inspiring visual design
 
 #### Layout
 
-- Guidance on how to use the mini unit (mu). Make the mini unit a constant token.
+- Guidance on how to use the _mini unit_ (mu). Make the mini unit a constant token.
 - Guidance on how to use a consistent scaling multiplier to size boxes.
 - Add support for 16-column grid.
-- Convert the Carbon Grid to 2mu gutter.
+- Convert the Carbon grid to 2 mu gutter.
 
 #### Color
 
 - Show the core colors for use in a UI, with accessible interaction states.
-- Explain when I can open all the presets in the color palette.
+- Explain when I can open all the presents in the color palette.
 
-#### Icons and Illustration
+#### Icons and illustration
 
 - Show the shape elements shared by typography and icons.
 - Guidelines for creating a new icon.
@@ -28,7 +28,7 @@ This is the roadmap for the Carbon Design System, based on our planned design an
 
 ## Q1 2019
 
-### Contribution and Adoption
+### Contribution and adoption
 
 #### Bringing in specific contributions from other IBM teams
 
@@ -38,18 +38,18 @@ This is the roadmap for the Carbon Design System, based on our planned design an
 
 #### Making more reasons to contribute
 
-- Create and distribute **swag** to contributors; credits on site/github; poster, T-shirt, socks, Carbon Conference ticket.
+- Create and distribute **swag** to contributors; credits on site/GitHub; posters, T-shirts, socks, Carbon Conference tickets.
 
 ## Q2 2019
 
-### Pattern Library
+### Pattern library
 
 Prioritize the most important compound components, layouts, and workflow patterns. Encourage bringing these in through contribution from extended teams.
 
 - Publish on the website the full list of **all** components that we propose, even if 0% complete.
 - Prioritize and solicit contributions based on follows and upvotes for components.
 
-#### Compound Components
+#### Compound components
 
 - Shell (header, global navigation, avatar, left/right sidebars, breadcrumbs, footer)
 - Forms
@@ -63,19 +63,19 @@ Prioritize the most important compound components, layouts, and workflow pattern
 - Calendar/scheduler
 - Data visualization
 
-#### Page Template
+#### Page templates
 
 - Home page
 - Dashboard page
 - Detail page
 - Profile page
-- Catalogue page
+- Catalog page
 - Billing and usage page
 - Management page
 - Docs page
 - Legal
 
-#### Workflow Patterns
+#### Workflow patterns
 
 - Login
 - First-time use
@@ -92,4 +92,4 @@ Prioritize the most important compound components, layouts, and workflow pattern
 ### UI Software Development Kit (SDK)
 
 - Provide a developer with all the tooling and components needed to build a full UI - sharing common shell/chrome/panels and other layout clues.
-- Make that UI Framework SDK universal for any UI.
+- Make that UI framework SDK universal for any UI.

@@ -24,7 +24,7 @@
 }
 
 a.#{$prefix}--header__name {
-  @include type-style('body-short-02');
+  @include carbon--type-style('body-short-02');
   font-weight: 600;
   padding-left: 0.5rem;
 
@@ -34,7 +34,7 @@ a.#{$prefix}--header__name {
 }
 
 .#{$prefix}--header__name--prefix {
-  @include type-style('heading-02');
+  @include carbon--type-style('heading-02');
   font-weight: 400;
 }
 

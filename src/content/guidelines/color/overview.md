@@ -11,26 +11,25 @@ tabs: ['Overview', 'Usage']
     title="Color palettes for Adobe™(.ase)"
     href="https://w3.ibm.com/design/language//IBM-color-palettes.zip"
     type="resource"
-    >
-    <img src="images/ase.png" alt="Color palettes for Adobe" />
+     >
+    <img src="images/ase.png" alt=""  />
 </clickable-tile>
-</grid-wrapper>
-<grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
     title="Elements package: Color"
     href="https://github.com/IBM/carbon-elements/tree/master/packages/colors"
     type="resource"
     >
-    <img src="images/sketch-icon.png" alt="Github" />
+    <img src="images/sketch-icon.png" alt=""  />
 </clickable-tile>
 </grid-wrapper>
 
+
 <anchor-links>
 <ul>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#color-anatomy">Color anatomy</a></li>
-    <li><a href="#implementing-color">Implementing color</a></li>
-    <li><a href="#accessibility">Accessibility</a></li>
+    <li><a data-scroll href="#introduction">Introduction</a></li>
+    <li><a data-scroll href="#color-anatomy">Color anatomy</a></li>
+    <li><a data-scroll href="#implementing-color">Implementing color</a></li>
+    <li><a data-scroll href="#accessibility">Accessibility</a></li>
 </ul>
 </anchor-links>
 
@@ -55,10 +54,10 @@ Carbon uses _tokens_ and _themes_ to manage color. Tokens are role-based, and th
 
 | Term      | Definition                                                                                                  |
 | --------- | ----------------------------------------------------------------------------------------------------------- |
-| Theme | The set of unique values assigned to the tokens of a Carbon interface                                                            |
-| Token | The code identifier for a unique role or set of roles. Tokens are universal and never change across themes. |
-| Role | The systematic usage(s) of a token. Roles cannot be changed between themes.                                  |
-| Value | The actual style (i.e. hex code) assigned to a token                         |
+| _Theme_ | The set of unique values assigned to the tokens of a Carbon interface                                                            |
+| _Token_ | The code identifier for a unique role or set of roles. Tokens are universal and never change across themes. |
+| _Role_ | The systematic usage(s) of a token. Roles cannot be changed between themes.                                  |
+| _Value_ | The actual style (i.e. hex code) assigned to a token                         |
 
 ### Tokens
 
@@ -70,11 +69,13 @@ With this system, all Carbon users can create their own themes by assigning new 
 
 ### Themes
 
-Themes serve as an organizational framework for color in Carbon, with each theme based on a specific primary background color. There are two default "light" themes and two default "dark" themes.  The light themes use White and Gray 10 backgrounds, and the dark themes use Gray 100 and Gray 90 backgrounds. Default color tokens are provided for each component based on the primary background color.
+Themes serve as an organizational framework for color in Carbon, with each theme based on a specific primary background color. There are two default "light" themes and two default "dark" themes.  The light themes use White and Gray 10 backgrounds, and the dark themes use Gray 100 and Gray 90 backgrounds. Default color tokens are provided for each component based on the primary background color. 
 
 ![Theme backgrounds](images/theme_swatches.png)
 
 #### Global background colors
+
+<br>
 
 | Theme | Primary Background       | Token                | Hex value    |    |
 | --- | ----------- | ------------------- | -------------------- | ------------------- |
@@ -130,7 +131,7 @@ Gray 90 components are paired with Gray 100 backgrounds to make the Gray 100 The
         <img src="images/Dark_theme_03_new.png" alt="White overflow menu on Gray 10 card.">    
     </do-dont-example>
     <do-dont-example label="Do not apply components that are darker than the background unless using high-contrast mode.">
-        <img src="images/Dark_theme_01_new.png" alt="Do not apply components that are darker than the background unless using high-contrast mode.">    
+        <img src="images/Dark_theme_04_new.png" alt="Do not apply components that are darker than the background unless using high-contrast mode.">    
     </do-dont-example>
 </grid-wrapper>
 
@@ -141,7 +142,7 @@ _Components with common colors across both dark UI backgrounds_
 
 #### High contrast
 
-In some cases, it is helpful to apply light components to dark backgrounds or light components to dark backgrounds. This technique is useful to focus attention or create visual tension.
+In some cases, it is helpful to apply light components to dark backgrounds or dark components to light backgrounds. This technique is useful to focus attention or create visual tension.
 
 <grid-wrapper col_lg="12" flex="true">
     <do-dont-example correct=true label=" ">

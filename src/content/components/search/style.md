@@ -8,19 +8,25 @@ tabs: ['Code', 'Usage', 'Style']
 
 Inputs come in two different colors. The default input color is `$field-01` and is used on `$ui-01` page backgrounds. The light version input color is `$field-02` and is used on `$ui-02` page backgrounds.
 
-| Class                            | Property         | SCSS      | HEX     |
-| -------------------------------- | ---------------- | --------- | ------- |
-| `.bx--search-input`              | background-color | $field-01 | #f4f7fb |
-| `.bx--search--light`             | background-color | $field-02 | #ffffff |
-| `.bx--search-input`              | text color       | $text-01  | #152935 |
-| `.bx--search-input::placeholder` | text color       | $text-03  | #cdd1d4 |
-| `.bx--search-magnifier`          | fill             | $ui-05    | #5a6872 |
+| Class                            | Property         | SCSS      |
+| -------------------------------- | ---------------- | --------- |
+| `.bx--search-input`              | background-color | $field-01 |
+| `.bx--search--light`             | background-color | $field-02 |
+| `.bx--search-input`              | text color       | $text-01  |
+| `.bx--search-input::placeholder` | text color       | $text-03  |
+| `.bx--search-magnifier`          | fill             | $ui-05    |
+
+<image-component fixed="default" caption="Example of Search using $field-02 (top) and $field-01 (bottom)">
 
 ![Example of Search using $field-01 and $field-02](images/search-style-4.png)
-_Example of Search using $field-02 (top) and $field-01 (bottom)_
+
+</image-component>
+
+<image-component fixed="default" caption="Examples of normal, hover, and input Search states">
 
 ![Normal, hover, and input search states](images/search-style-1.png)
-_Examples of normal, hover, and input Search states_
+
+</image-component>
 
 ## Typography
 
@@ -42,8 +48,14 @@ The width of the Search field should appropriately fit the design and layout of 
 | `.bx--search-magnifier` </br> `.bx--search-close` | height, width               | 16 / 1   | -             |
 | `.bx--search-input`                               | padding-left, padding-right | 40 / 2.5 | $spacing-2xl  |
 
+<image-component fixed="default" caption="Structure and spacing measurements for Regular Search | px | rem">
+
 ![Structure and spacing measurements for regular search](images/search-style-2.png)
-_Structure and spacing measurements for Regular Search | px | rem_
+
+</image-component>
+
+<image-component fixed="default" caption="Structure and spacing measurements for Small Search | px | rem">
 
 ![Structure and spacing measurements for small search](images/search-style-3.png)
-_Structure and spacing measurements for Small Search | px | rem_
+
+</image-component>

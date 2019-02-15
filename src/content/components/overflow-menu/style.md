@@ -1,35 +1,29 @@
 ---
 
-title: Overflow Menu
+title: Overflow menu
 tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## Color
 
-| Class                                              | Property         | SCSS          | HEX                    |
-| -------------------------------------------------- | ---------------- | ------------- | ---------------------- |
-| `.bx--overflow-menu__icon`                         | fill             | $ui-05        | #5a6872                |
-| `.bx--overflow-menu-options`                       | background-color | $ui-01        | #ffffff                |
-| `.bx--overflow-menu-options__option:hover`         | background-color | $hover-row    | #5596e6 at 10% opacity |
-| `.bx--overflow-menu-options__btn`                  | color            | $text-01      | #152935                |
-| `.bx--overflow-menu-options__option--danger:hover` | background-color | $hover-danger | #bd1427                |
-| `.bx--overflow-menu-options__option--danger`       | border-top       | $ui-04        | #8897a2                |
+| Class                                              | Property         | SCSS          |
+| -------------------------------------------------- | ---------------- | ------------- |
+| `.bx--overflow-menu__icon`                         | fill             | $ui-05        |
+| `.bx--overflow-menu-options`                       | background-color | $ui-01        |
+| `.bx--overflow-menu-options__option:hover`         | background-color | $hover-row    |
+| `.bx--overflow-menu-options__btn`                  | color            | $text-01      |
+| `.bx--overflow-menu-options__option--danger:hover` | background-color | $hover-danger |
+| `.bx--overflow-menu-options__option--danger`       | border-top       | $ui-04        |
 
+<image-component fixed="default" caption="Text and warning hover examples for overflow menu">
 
-<div class="image-grid">
-  <div>
-    <img src="images/overflow-menu-style-1.png" alt="Overflow menu text hover example"/>
-  </div>
-  <div>
-    <img src="images/overflow-menu-style-2.png" alt="Overflow menu warning hover example"/>
-  </div>
-</div>
+![Overflow menu text hover example](images/overflow-menu-style-1.png)
 
-_Text and warning hover examples for Overflow Menu_
+</image-component>
 
 ## Typography
 
-Overflow Menu text should be set in set in sentence case with the first letter of the first word capitalized.
+Overflow menu text should be set in set in sentence case with the first letter of the first word capitalized.
 
 | Property                          | Font-size (px/rem) | Font-weight  | Type styles |
 | --------------------------------- | ------------------ | ------------ | ----------- |
@@ -43,7 +37,7 @@ Overflow Menu text should be set in set in sentence case with the first letter o
 
 ## Structure
 
-The height of an Overflow Menu is determined by the amount of content in the menu. The Overflow Menu icon can be found in the [iconography](/style/iconography/library) library.
+The height of an overflow menu is determined by the amount of content in the menu. The overflow menu icon can be found in the [iconography](/style/iconography/library) library.
 
 | Class                                        | Property                    | px / rem    | Spacing token |
 | -------------------------------------------- | --------------------------- | ----------- | ------------- |
@@ -53,6 +47,8 @@ The height of an Overflow Menu is determined by the amount of content in the men
 | `.bx--overflow-menu-options`                 | width                       | 180 / 11.25 | -             |
 | `.bx--overflow-menu-options__option--danger` | border-top                  | 1px         | -             |
 
-<div class="image-component">
-    <img src="images/overflow-menu-style-3.png" alt="Structure and spacing measurements for an overflow menu" />
-</div>
+<image-component fixed="default">
+
+![Structure and spacing measurements for an overflow menu](images/overflow-menu-style-3.png)
+
+</image-component>

@@ -17,18 +17,18 @@ module.exports = {
           name: 'Blue 60',
           hex: '#0062ff',
         },
-        g100: {
+        g90: {
           name: 'Blue 60',
           hex: '#0062ff',
         },
-        g90: {
+        g100: {
           name: 'Blue 60',
           hex: '#0062ff',
         },
       },
     },
     '$interactive-02': {
-      role: ['Secondary interactive color', 'Loading'],
+      role: ['Secondary interactive color', 'Secondary button'],
       value: {
         white: {
           name: 'Gray 100',
@@ -38,13 +38,55 @@ module.exports = {
           name: 'Gray 100',
           hex: '#171717',
         },
+        g90: {
+          name: 'Gray 60',
+          hex: '#6f6f6f',
+        },
         g100: {
           name: 'Gray 60',
           hex: '#6f6f6f',
         },
+      },
+    },
+    '$interactive-03': {
+      role: ['Tertiary interactive color','Tertiary button'],
+      value: {
+        white: {
+          name: 'Blue 60',
+          hex: '#0062ff',
+        },
+        g10: {
+          name: 'Blue 60',
+          hex: '#0062ff',
+        },
         g90: {
-          name: 'Gray 60',
-          hex: '#6f6f6f',
+          name: 'White',
+          hex: '#ffffff',
+        },
+        g100: {
+          name: 'White',
+          hex: '#ffffff',
+        },
+      },
+    },
+    '$ui-background': {
+      role: ['Default page background'],
+      value: {
+        white: {
+          name: 'White',
+          hex: '#ffffff',
+        },
+        g10: {
+          name: 'Gray 10',
+          hex: '#f3f3f3',
+        },
+        g90: {
+          name: 'Gray 90',
+          hex: '#282828',
+        },
+        g100: {
+          name: 'Gray 100',
+          hex: '#171717',
         },
       },
     },
@@ -59,11 +101,11 @@ module.exports = {
           name: 'White',
           hex: '#ffffff',
         },
-        g100: {
+        g90: {
           name: 'Gray 80',
           hex: '#3d3d3d',
         },
-        g90: {
+        g100: {
           name: 'Gray 90',
           hex: '#282828',
         },
@@ -80,11 +122,11 @@ module.exports = {
           name: 'Gray 10',
           hex: '#f3f3f3',
         },
-        g100: {
+        g90: {
           name: 'Gray 70',
           hex: '#565656',
         },
-        g90: {
+        g100: {
           name: 'Gray 80',
           hex: '#3d3d3d',
         },
@@ -101,11 +143,11 @@ module.exports = {
           name: 'Gray 20',
           hex: '#dcdcdc',
         },
-        g100: {
+        g90: {
           name: 'Gray 70',
           hex: '#565656',
         },
-        g90: {
+        g100: {
           name: 'Gray 80',
           hex: '#3d3d3d',
         },
@@ -122,11 +164,11 @@ module.exports = {
           name: 'Gray 50',
           hex: '#8c8c8c',
         },
-        g100: {
+        g90: {
           name: 'Gray 50',
           hex: '#8c8c8c',
         },
-        g90: {
+        g100: {
           name: 'Gray 60',
           hex: '#6f6f6f',
         },
@@ -147,11 +189,11 @@ module.exports = {
           name: 'Gray 100',
           hex: '#171717',
         },
-        g100: {
+        g90: {
           name: 'Gray 10',
           hex: '#f3f3f3',
         },
-        g90: {
+        g100: {
           name: 'Gray 10',
           hex: '#f3f3f3',
         },
@@ -173,11 +215,11 @@ module.exports = {
           name: 'Gray 100',
           hex: '#171717',
         },
-        g100: {
+        g90: {
           name: 'Gray 10',
           hex: '#f3f3f3',
         },
-        g90: {
+        g100: {
           name: 'Gray 10',
           hex: '#f3f3f3',
         },
@@ -194,11 +236,11 @@ module.exports = {
           name: 'Gray 70',
           hex: '#565656',
         },
-        g100: {
+        g90: {
           name: 'Gray 30',
           hex: '#bebebe',
         },
-        g90: {
+        g100: {
           name: 'Gray 30',
           hex: '#bebebe',
         },
@@ -215,13 +257,34 @@ module.exports = {
           name: 'Gray 50',
           hex: '#8c8c8c',
         },
+        g90: {
+          name: 'Gray 50',
+          hex: '#8c8c8c',
+        },
         g100: {
           name: 'Gray 60',
           hex: '#6f6f6f',
         },
+      },
+    },
+    '$text-04': {
+      role: ['Text on interactive colors'],
+      value: {
+        white: {
+          name: 'White',
+          hex: '#ffffff',
+        },
+        g10: {
+          name: 'White',
+          hex: '#ffffff',
+        },
         g90: {
-          name: 'Gray 50',
-          hex: '#8c8c8c',
+          name: 'White',
+          hex: '#ffffff',
+        },
+        g100: {
+          name: 'White',
+          hex: '#ffffff',
         },
       },
     },
@@ -236,11 +299,11 @@ module.exports = {
           name: 'Gray 100',
           hex: '#171717',
         },
-        g100: {
+        g90: {
           name: 'Gray 10',
           hex: '#f3f3f3',
         },
-        g90: {
+        g100: {
           name: 'Gray 10',
           hex: '#f3f3f3',
         },
@@ -257,13 +320,76 @@ module.exports = {
           name: 'Gray 70',
           hex: '#565656',
         },
+        g90: {
+          name: 'Gray 30',
+          hex: '#bebebe',
+        },
         g100: {
           name: 'Gray 30',
           hex: '#bebebe',
         },
+      },
+    },
+    '$icon-03': {
+      role: ['Tertiary icons', `Icons on interactive colors`, `Icons on non-ui colors`],
+      value: {
+        white: {
+          name: 'White',
+          hex: '#ffffff',
+        },
+        g10: {
+          name: 'White',
+          hex: '#ffffff',
+        },
         g90: {
-          name: 'Gray 30',
-          hex: '#bebebe',
+          name: 'White',
+          hex: '#ffffff',
+        },
+        g100: {
+          name: 'White',
+          hex: '#ffffff',
+        },
+      },
+    },
+    '$field-01': {
+      role: ['Default input fields', 'Field color on $ui-backgrounds'],
+      value: {
+        white: {
+          name: 'Gray 10',
+          hex: '#f3f3f3',
+        },
+        g10: {
+          name: 'White',
+          hex: '#ffffff',
+        },
+        g90: {
+          name: 'Gray 80',
+          hex: '#3d3d3d',
+        },
+        g100: {
+          name: 'Gray 90',
+          hex: '#282828',
+        },
+      },
+    },
+    '$field-02': {
+      role: ['Input field color on $ui-02 backgrounds'],
+      value: {
+        white: {
+          name: 'White',
+          hex: '#ffffff',
+        },
+        g10: {
+          name: 'Gray 10',
+          hex: '#f3f3f3',
+        },
+        g90: {
+          name: 'Gray 70',
+          hex: '#565656',
+        },
+        g100: {
+          name: 'Gray 80',
+          hex: '#3d3d3d',
         },
       },
     },
@@ -278,11 +404,11 @@ module.exports = {
           name: 'White',
           hex: '#ffffff',
         },
-        g100: {
+        g90: {
           name: 'Gray 100',
           hex: '#171717',
         },
-        g90: {
+        g100: {
           name: 'Gray 100',
           hex: '#171717',
         },
@@ -299,55 +425,13 @@ module.exports = {
           name: 'Gray 80',
           hex: '#3d3d3d',
         },
-        g100: {
-          name: 'Gray 10',
-          hex: '#f3f3f3',
-        },
         g90: {
           name: 'Gray 10',
           hex: '#f3f3f3',
         },
-      },
-    },
-    '$field-01': {
-      role: ['Default input fields', 'Field color on $ui-01 backgrounds'],
-      value: {
-        white: {
+        g100: {
           name: 'Gray 10',
           hex: '#f3f3f3',
-        },
-        g10: {
-          name: 'White',
-          hex: '#ffffff',
-        },
-        g100: {
-          name: 'Gray 90',
-          hex: '#282828',
-        },
-        g90: {
-          name: 'Gray 80',
-          hex: '#3d3d3d',
-        },
-      },
-    },
-    '$field-02': {
-      role: ['Input field color on $ui-02 backgrounds'],
-      value: {
-        white: {
-          name: 'White',
-          hex: '#ffffff',
-        },
-        g10: {
-          name: 'Gray 10',
-          hex: '#f3f3f3',
-        },
-        g100: {
-          name: 'Gray 80',
-          hex: '#3d3d3d',
-        },
-        g90: {
-          name: 'Gray 70',
-          hex: '#565656',
         },
       },
     },
@@ -362,11 +446,11 @@ module.exports = {
           name: 'Red 60',
           hex: '#da1e28',
         },
-        g100: {
+        g90: {
           name: 'Red 50',
           hex: '#fb4b53',
         },
-        g90: {
+        g100: {
           name: 'Red 50',
           hex: '#fb4b53',
         },
@@ -383,11 +467,11 @@ module.exports = {
           name: 'Green 60',
           hex: '#198038',
         },
-        g100: {
+        g90: {
           name: 'Green 50',
           hex: '#24a148',
         },
-        g90: {
+        g100: {
           name: 'Green 50',
           hex: '#24a148',
         },
@@ -404,11 +488,11 @@ module.exports = {
           name: 'Yellow',
           hex: '#fdd13a',
         },
-        g100: {
+        g90: {
           name: 'Yellow',
           hex: '#fdd13a',
         },
-        g90: {
+        g100: {
           name: 'Yellow',
           hex: '#fdd13a',
         },
@@ -425,11 +509,11 @@ module.exports = {
           name: 'Blue 70',
           hex: '#054ada',
         },
-        g100: {
+        g90: {
           name: 'Blue 50',
           hex: '#408bfc',
         },
-        g90: {
+        g100: {
           name: 'Blue 50',
           hex: '#408bfc',
         },
@@ -446,11 +530,11 @@ module.exports = {
           name: 'Gray 100',
           hex: '#171717 @ 50%',
         },
-        g100: {
+        g90: {
           name: 'Gray 100',
           hex: '#171717 @ 70%',
         },
-        g90: {
+        g100: {
           name: 'Gray 100',
           hex: '#171717 @ 70%',
         },
@@ -469,11 +553,11 @@ module.exports = {
           name: 'Blue 60',
           hex: '#0062ff',
         },
-        g100: {
+        g90: {
           name: 'White',
           hex: '#ffffff',
         },
-        g90: {
+        g100: {
           name: 'White',
           hex: '#ffffff',
         },
@@ -483,19 +567,19 @@ module.exports = {
       role: ['$interactive-01 hover'],
       value: {
         white: {
-          name: 'Blue 60 Hover',
+          name: 'Blue 60 hover',
           hex: '#0353e9',
         },
         g10: {
-          name: 'Blue 60 Hover',
-          hex: '#0353e9',
-        },
-        g100: {
-          name: 'Blue 60 Hover',
+          name: 'Blue 60 hover',
           hex: '#0353e9',
         },
         g90: {
-          name: 'Blue 60 Hover',
+          name: 'Blue 60 hover',
+          hex: '#0353e9',
+        },
+        g100: {
+          name: 'Blue 60 hover',
           hex: '#0353e9',
         },
       },
@@ -511,18 +595,18 @@ module.exports = {
           name: 'Blue 70',
           hex: '#054ada',
         },
-        g100: {
+        g90: {
           name: 'Blue 70',
           hex: '#054ada',
         },
-        g90: {
+        g100: {
           name: 'Blue 70',
           hex: '#054ada',
         },
       },
     },
     '$hover-secondary': {
-      role: ['Secondary hover', '$inverse-01 hover'],
+      role: ['$interactive-02 hover'],
       value: {
         white: {
           name: 'Gray 80 hover',
@@ -532,13 +616,34 @@ module.exports = {
           name: 'Gray 80 hover',
           hex: '#4c4c4c',
         },
+        g90: {
+          name: 'Gray 60 hover',
+          hex: '#606060',
+        },
         g100: {
           name: 'Gray 60 hover',
           hex: '#606060',
         },
+      },
+    },
+    '$hover-tertiary': {
+      role: ['$interactive-03 hover', '$inverse-01 hover'],
+      value: {
+        white: {
+          name: 'Blue 60 hover',
+          hex: '#0353e9',
+        },
+        g10: {
+          name: 'Blue 60 hover',
+          hex: '#0353e9',
+        },
         g90: {
-          name: 'Gray 60 hover',
-          hex: '#606060',
+          name: 'Gray 10',
+          hex: '#f3f3f3',
+        },
+        g100: {
+          name: 'Gray 10',
+          hex: '#f3f3f3',
         },
       },
     },
@@ -553,12 +658,33 @@ module.exports = {
           name: 'Gray 10 hover',
           hex: '#e5e5e5',
         },
+        g90: {
+          name: 'Gray 80 hover',
+          hex: '#4c4c4c',
+        },
         g100: {
           name: 'Gray 90 hover',
           hex: '#353535',
         },
+      },
+    },
+    '$hover-selected-ui': {
+      role: ['data table selected row hover'],
+      value: {
+        white: {
+          name: 'Gray 20 Hover',
+          hex: '#cacaca',
+        },
+        g10: {
+          name: 'Gray 20 Hover',
+          hex: '#cacaca',
+        },
         g90: {
-          name: 'Gray 80 hover',
+          name: 'Gray 70 Hover',
+          hex: '#656565',
+        },
+        g100: {
+          name: 'Gray 80 Hover',
           hex: '#4c4c4c',
         },
       },
@@ -574,11 +700,11 @@ module.exports = {
           name: 'Red 60 hover',
           hex: '#ba1b23',
         },
-        g100: {
+        g90: {
           name: 'Red 60 hover',
           hex: '#ba1b23',
         },
-        g90: {
+        g100: {
           name: 'Red 60 hover',
           hex: '#ba1b23',
         },
@@ -595,18 +721,18 @@ module.exports = {
           name: 'Gray 10 hover',
           hex: '#e5e5e5',
         },
-        g100: {
-          name: 'Gray 90 hover',
-          hex: '#353535',
-        },
         g90: {
           name: 'Gray 80 hover',
           hex: '#4c4c4c',
         },
+        g100: {
+          name: 'Gray 90 hover',
+          hex: '#353535',
+        },
       },
     },
     '$active-primary': {
-      role: ['$brand-01 active'],
+      role: ['$interactive-01 active'],
       value: {
         white: {
           name: 'Blue 80',
@@ -616,18 +742,18 @@ module.exports = {
           name: 'Blue 80',
           hex: '#0530ad',
         },
-        g100: {
+        g90: {
           name: 'Blue 80',
           hex: '#0530ad',
         },
-        g90: {
+        g100: {
           name: 'Blue 80',
           hex: '#0530ad',
         },
       },
     },
     '$active-secondary': {
-      role: ['Secondary active', '$inverse-01 active'],
+      role: ['$interactive-02 active', '$inverse-01 active'],
       value: {
         white: {
           name: 'Gray 60',
@@ -637,13 +763,34 @@ module.exports = {
           name: 'Gray 60',
           hex: '#6f6f6f',
         },
+        g90: {
+          name: 'Gray 80',
+          hex: '#3d3d3d',
+        },
         g100: {
           name: 'Gray 80',
           hex: '#3d3d3d',
         },
+      },
+    },
+    '$active-tertiary': {
+      role: ['$interactive-03 active'],
+      value: {
+        white: {
+          name: 'Blue 80',
+          hex: '#0530ad',
+        },
+        g10: {
+          name: 'Blue 80',
+          hex: '#0530ad',
+        },
         g90: {
-          name: 'Gray 80',
-          hex: '#3d3d3d',
+          name: 'Gray 30',
+          hex: '#bebebe',
+        },
+        g100: {
+          name: 'Gray 30',
+          hex: '#bebebe',
         },
       },
     },
@@ -658,13 +805,13 @@ module.exports = {
           name: 'Gray 30',
           hex: '#bebebe',
         },
-        g100: {
-          name: 'Gray 70',
-          hex: '#565656',
-        },
         g90: {
           name: 'Gray 60',
           hex: '#6f6f6f',
+        },
+        g100: {
+          name: 'Gray 70',
+          hex: '#565656',
         },
       },
     },
@@ -679,11 +826,11 @@ module.exports = {
           name: 'Red 80',
           hex: '#750e13',
         },
-        g100: {
+        g90: {
           name: 'Red 80',
           hex: '#750e13',
         },
-        g90: {
+        g100: {
           name: 'Red 80',
           hex: '#750e13',
         },
@@ -700,13 +847,34 @@ module.exports = {
           name: 'Gray 20',
           hex: '#dcdcdc',
         },
+        g90: {
+          name: 'Gray 70',
+          hex: '#565656',
+        },
         g100: {
           name: 'Gray 80',
           hex: '#3d3d3d',
         },
+      },
+    },
+    '$highlight': {
+      role: ['$interactive-01 highlight'],
+      value: {
+        white: {
+          name: 'Blue 20',
+          hex: '#C9deff',
+        },
+        g10: {
+          name: 'Blue 10',
+          hex: '#edf4ff',
+        },
         g90: {
-          name: 'Gray 70',
-          hex: '#565656',
+          name: 'Blue 80',
+          hex: '#0530ad',
+        },
+        g100: {
+          name: 'Blue 90',
+          hex: '#051b75',
         },
       },
     },
@@ -721,11 +889,11 @@ module.exports = {
           name: 'Purple 60',
           hex: '#8a3ffc',
         },
-        g100: {
+        g90: {
           name: 'Purple 40',
           hex: '#bb8eff',
         },
-        g90: {
+        g100: {
           name: 'Purple 40',
           hex: '#bb8eff',
         },
@@ -742,13 +910,13 @@ module.exports = {
           name: 'White',
           hex: '#ffffff',
         },
-        g100: {
-          name: 'Gray 90',
-          hex: '#282828',
-        },
         g90: {
           name: 'Gray 80',
           hex: '#3d3d3d',
+        },
+        g100: {
+          name: 'Gray 90',
+          hex: '#282828',
         },
       },
     },
@@ -769,13 +937,13 @@ module.exports = {
           name: 'Gray 30',
           hex: '#bebebe',
         },
-        g100: {
-          name: 'Gray 80',
-          hex: '#3d3d3d',
-        },
         g90: {
           name: 'Gray 70',
           hex: '#565656',
+        },
+        g100: {
+          name: 'Gray 80',
+          hex: '#3d3d3d',
         },
       },
     },
@@ -790,13 +958,13 @@ module.exports = {
           name: 'Gray 50',
           hex: '#8c8c8c',
         },
-        g100: {
-          name: 'Gray 60',
-          hex: '#6f6f6f',
-        },
         g90: {
           name: 'Gray 50',
           hex: '#8c8c8c',
+        },
+        g100: {
+          name: 'Gray 60',
+          hex: '#6f6f6f',
         },
       },
     },

@@ -3,13 +3,13 @@ title: Content Switcher
 tabs: ['Code', 'Usage']
 ---
 
-**Content switcher** manipulates the content shown following an exclusive or “either/or” pattern.
 
 <component 
     name="Content Switcher"
     component="content-switcher" 
     variation="content-switcher"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component 
@@ -17,6 +17,7 @@ tabs: ['Code', 'Usage']
     component="content-switcher" 
     variation="content-switcher--with-icon"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component-docs component="content-switcher" experimental="true"></component-docs>

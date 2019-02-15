@@ -3,7 +3,7 @@ title: Accordion
 tabs: ['Code', 'Usage']
 ---
 
-## General guidelines
+## General guidance
 
 The accordion component delivers large amounts of content in a small space through progressive disclosure. That is, the user gets key details about the underlying content and can choose to expand that content within the constraints of the accordion. Accordions work especially well on mobile interfaces or whenever vertical space is at a premium.
 
@@ -13,4 +13,8 @@ The Carbon accordion allows for multiple sections to be expanded simultaneously.
 
 A chevron is used to indicate the "expand/collapse" action, though the entire header area is clickable for the same action.
 
+<image-component cols="8" >
+
 ![accordion example](images/accordion-usage-1.png)
+
+</image-component>

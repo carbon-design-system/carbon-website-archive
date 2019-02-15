@@ -3,9 +3,9 @@ title: Loading
 tabs: ['Code', 'Usage']
 ---
 
-## General guidelines
+## General guidance
 
-The waiting experience is a crucial design opportunity. Although it may not be obvious what is occurring on the back-end, we can communicate clearly to reassure the user that progress is happening.
+_Loading_ spinners are used when retrieving data or performing slow computations, and help to notify users that loading is underway. The waiting experience is a crucial design opportunity. Although it may not be obvious what is occurring on the back-end, we can communicate clearly to reassure the user that progress is happening.
 
 It is best practice to use a loading spinner whenever the wait time is anticipated to be longer than three seconds.
 
@@ -19,4 +19,8 @@ It is best practice to use a loading spinner whenever the wait time is anticipat
 
 Loading spinners may be scaled down if the loading experience is contextual to a certain item on the page.
 
+<image-component cols="8">
+
 ![Small loader](images/loading-usage-2.png)
+
+</image-component>

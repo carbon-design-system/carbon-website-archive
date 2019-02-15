@@ -14,7 +14,7 @@ Carbon has a [core team](https://github.com/orgs/carbon-design-system/people) of
 
 ### How can I contribute and/or propose new components/ideas?
 
-We have contributing guidelines for [Developers](/contributing/developers) and [Designers](/contributing/designers). We appreciate you helping out and contributing back.
+We have contributing guidelines for [developers](/contributing/developers) and [designers](/contributing/designers). We appreciate you helping out and contributing back.
 
 ### Which browsers are supported?
 
@@ -36,7 +36,7 @@ There is also an unofficial, internal-only Angular library for Carbon Components
 
 First, make sure the problem is reproducible. Once confirmed, please open an issue in the appropriate GitHub repo (see below). We will address the bug as soon as we can. If you have a fix for the bug please feel free to submit a PR for it.
 
-#### Design Issue Repos
+#### Design issue repos
 
 - [Design Kit](https://github.com/IBM/carbon-design-kit/issues/new)
 - [Icons](https://github.com/IBM/carbon-icons/issues/new)
@@ -46,7 +46,7 @@ First, make sure the problem is reproducible. Once confirmed, please open an iss
 - [Charts](https://github.com/IBM/carbon-charts/issues/new)
 - [Everything else](https://github.com/carbon-design-system/issue-tracking/issues/new)
 
-#### Code Repos
+#### Code repos
 
 - [carbon-components](https://github.com/IBM/carbon-components/issues/new/choose)
 - [carbon-components-react](https://github.com/IBM/carbon-components-react/issues/new/choose)
@@ -72,4 +72,4 @@ First, refer to the [Carbon accessibility guidelines](/guidelines/accessibility)
 ### I haven't updated to the latest version of Carbon yet, but I still need the old documentation. Is there a place I can find it?
 
 Every version of Carbon that is still supported is hosted at its own domain. You can find the old sites version here:
-**[V6](http://v6.carbondesignsystem.com/)**, **[V7](http://v7.carbondesignsystem.com/)**, and **[V8](http://v8.carbondesignsystem.com/)**.
+**[V6](http://v6.carbondesignsystem.com/)**, **[V7](http://v7.carbondesignsystem.com/)**, **[V8](http://v8.carbondesignsystem.com/)**, and **[V9](http://v9.carbondesignsystem.com/).**
