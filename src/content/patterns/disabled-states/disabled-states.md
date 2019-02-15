@@ -1,5 +1,5 @@
 ---
-title: Disabled States
+title: Disabled states
 ---
 
 <anchor-links>
