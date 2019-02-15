@@ -29,9 +29,9 @@
 
 .bx--list__item a {
   @include carbon--type-style('body-short-02');
-  width: rem(32px);
-  height: rem(32px);
-  padding: rem(5px) 0 0 0;
+  width: rem(24px);
+  height: rem(24px);
+  padding: rem(1px) 0 0 0;
   display: block;
   text-align: center;
   text-decoration: none;
