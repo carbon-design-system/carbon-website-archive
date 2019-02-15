@@ -97,9 +97,9 @@ _Example of a large loader in context._
 
 ### Inline loading
 
-The [_inline loading_](/components/inline-loading/code) component is used when a single component is processing and appears inline to the relative component. For example, when a user tries to restart a stopped application, an _inline loading_ component indicates the system is processing the restart request.
+The [_inline loading_](/components/inline-loading/code) component is used when a single component is processing and appears inline to the relative component. For example, when a user sends a user invite, an _inline loading_ component indicates the system is processing the invite request until the request is complete.
 
-![Example of Small Loader in the context of a Detail Page Header.](images/small-loading-1.gif)
+![Example of Small Loader in the context of a Detail Page Header.](images/inline-loading-animated.gif)
 _Example of inline loader in context._
 
 ## 'Load more' button

@@ -5,35 +5,48 @@ a.tile--article {
   text-decoration: none;
   color: $text-01;
   flex-direction: column;
+  justify-content: space-between;
   padding: 0;
   background: $ibm-colors__white;
-
-  &:hover {
-    background: $ibm-colors__gray--20;
-  }
+  margin: 1rem;
 
   // full bleed for tiles on mobile
   @include breakpoint('sm') {
-    width: 100%;
+    width: calc(100% - 2rem);
   }
 
   @include breakpoint('md') {
-    width: 50%;
-    margin: 0;
+    width: calc(50% - .5rem);
+    margin-left: 0;
+    margin-bottom: 0;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
   }
 
   @include breakpoint('lg') {
-    width: 33%;
+    width: calc(33% - .51rem);
+    margin-right: 1rem;
+
+    &:nth-child(even) {
+      margin-right: 1rem;
+    }
+
+    &:last-child,
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
   }
 }
 
 a.tile--article.tile--dark {
-  background: $ibm-colors__gray--90;
+  background: $ibm-colors__gray-90;
   color: $ibm-colors__white;
 }
 
 a.tile--article.tile--dark:hover {
-  background: $ibm-colors__gray--80;
+  background: $ibm-colors__gray-80;
 }
 
 .tile--article .tile__img {
@@ -42,25 +55,36 @@ a.tile--article.tile--dark:hover {
   border-bottom: none;
 }
 
+.tile__img span {
+  height: 100%;
+}
+
 .tile--article .tile__img img {
   width: 100%;
+  object-fit: cover;
 }
 
 .tile--article .tile__info {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: $spacing-md $spacing-md 5.5rem;
+  padding: $spacing-md;
+  padding-right: 25%;
 
-  @include breakpoint('md') {
-    padding-right: 25%;
+  @include breakpoint('lg') {
+    padding-right: 1rem;
+  }
+
+  @include breakpoint('xlg') {
+    padding-right: 30%;
   }
 }
 
 .tile--article .tile__info h5 {
   text-decoration: none;
   color: $text-01;
-  @include type-style('heading-02');
+  @include type-style('body-short-02');
 }
 
 .tile--article.tile--dark .tile__info h5 {
@@ -68,36 +92,16 @@ a.tile--article.tile--dark:hover {
 }
 
 .tile--article .tile__caption p {
+  @include type-style('caption-01');
   padding: 0;
   max-width: 75%;
-}
-
-p.tile__author {
-  margin: 0;
-  padding-bottom: 0;
-  color: $text-01;
-}
-
-.tile--article.tile--dark p.tile__author {
-  color: $ibm-colors__white;
-}
-
-.tile__divider {
-  padding-bottom: rem(3px);
-}
-
-.tile__date {
-  @include type-style('caption-01');
-  color: $text-01;
-}
-
-.tile--article.tile--dark .tile__date {
-  color: $ibm-colors__white;
 }
 
 // Tile Resource
 
 .tile--resource {
+  margin-bottom: rem(24px);
+
   // full bleed for tiles on mobile
   @include breakpoint('sm') {
     width: 100%;
@@ -106,7 +110,12 @@ p.tile__author {
   @include breakpoint('md') {
     width: calc(50% - 1px);
     margin: 0;
+    margin-bottom: rem(24px);
   }
+}
+
+.tile--resource--no-margin .tile--resource {
+  margin-bottom: 0;
 }
 
 .tile--resource a.bx--tile {
@@ -118,17 +127,17 @@ p.tile__author {
   height: 100%;
 
   &:hover {
-    background: $ibm-colors__gray--20;
+    background: $hover-ui;
   }
 }
 
 .tile--resource.tile--dark a.bx--tile {
-  background: $ibm-colors__gray--90;
+  background: $ibm-colors__gray-90;
   color: $ibm-colors__white;
 }
 
 .tile--resource.tile--dark a.bx--tile:hover {
-  background: $ibm-colors__gray--80;
+  background: $ibm-colors__gray-80;
 }
 
 .tile--resource .tile__info {
@@ -199,7 +208,7 @@ p.tile__author {
 .flex-wrap {
   .tile--resource {
     @include breakpoint('sm') {
-      border-bottom: 1px solid $ibm-colors__gray--20;
+      border-bottom: 1px solid $ibm-colors__gray-20;
 
       &.tile--dark {
         border-bottom-color: $ibm-colors__black;
@@ -212,7 +221,7 @@ p.tile__author {
       border-right: none;
 
       &:nth-child(2n + 2) {
-        border-left: 1px solid $ibm-colors__gray--20;
+        border-left: 1px solid $ibm-colors__gray-20;
 
         &.tile--dark {
           border-left-color: $ibm-colors__black;
@@ -220,7 +229,7 @@ p.tile__author {
       }
 
       &:nth-child(n + 3) {
-        border-top: 1px solid $ibm-colors__gray--20;
+        border-top: 1px solid $ibm-colors__gray-20;
 
         &.tile--dark {
           border-top-color: $ibm-colors__black;
@@ -229,49 +238,17 @@ p.tile__author {
     }
   }
 
-  a.tile--article {
-    @include breakpoint('sm') {
-      border-bottom: 1px solid $ibm-colors__gray--20;
-
-      &:last-child {
-        border: none;
-      }
-    }
-
-    @include breakpoint('md') {
-      border-bottom: none;
-      border-right: 1px solid $ibm-colors__gray--20;
-
-      // selects every 3rd item and removes right border
-      &:nth-child(2n + 2) {
-        border-right: none;
-      }
-
-      &:nth-child(n + 3) {
-        border-top: 1px solid $ibm-colors__gray--20;
-      }
-    }
-
-    @include breakpoint('lg') {
-      border-bottom: none;
-      border-right: 1px solid $ibm-colors__gray--20;
-
-      &:nth-child(2n + 2) {
-        border-right: 1px solid $ibm-colors__gray--20;
-      }
-
-      // selects every 3rd item and removes right border
-      &:nth-child(3n + 3) {
-        border-right: none;
-      }
-
-      &:nth-child(n + 4) {
-        border-top: 1px solid $ibm-colors__gray--20;
-      }
-    }
-  }
-
   a.tile--article.tile--dark {
     border-color: $ibm-colors__black;
   }
 }
+
+a.tile--article .tile__caption p {
+  color: $text-02;
+}
+
+a.tile--article.tile--dark .tile__caption p {
+  color: #bebebe;
+}
+
+

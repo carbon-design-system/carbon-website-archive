@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="352px" height="352px" viewBox="0 0 352 352" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Typography_overview_Type-color-6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M20.1666667,11.9166667 L18.8741667,10.6241667 L11.9166667,17.5725 L11.9166667,0 L10.0833333,0 L10.0833333,17.5725 L3.12583333,10.6241667 L1.83333333,11.9166667 L11,21.0833333 L20.1666667,11.9166667 Z M20.1666667,20.1666667 L20.1666667,23.8333333 L1.83333333,23.8333333 L1.83333333,20.1666667 L0,20.1666667 L0,23.8333333 C0,24.8458554 0.820811292,25.6666667 1.83333333,25.6666667 L20.1666667,25.6666667 C21.1791887,25.6666667 22,24.8458554 22,23.8333333 L22,20.1666667 L20.1666667,20.1666667 Z" id="path-1"></path>
+    </defs>
+    <g id="Type-color-6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="352" height="352"></rect>
+        <g id="Interactive-text---Dont">
+            <rect id="Interactive---Dont" x="0" y="0" width="352" height="352"></rect>
+            <g id="Group-11" transform="translate(90.444444, 157.666667)">
+                <text id="Download" font-family="IBMPlexSans, IBM Plex Sans" font-size="29.3333333" font-weight="normal" line-spacing="36.6666667" fill="#393939">
+                    <tspan x="0" y="30">Download</tspan>
+                </text>
+                <g id="icon/file/download/24" transform="translate(143.000000, 3.666667)">
+                    <g id="Group">
+                        <g id="download" transform="translate(3.666667, 1.833333)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                            <g id="color/black" mask="url(#mask-2)" fill="#000000">
+                                <g transform="translate(-3.666667, -1.833333)">
+                                    <rect x="0" y="0" width="49" height="49"></rect>
+                                </g>
+                            </g>
+                        </g>
+                        <rect id="transparent-rectangle" x="0" y="0" width="29.3333333" height="29.3333333"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

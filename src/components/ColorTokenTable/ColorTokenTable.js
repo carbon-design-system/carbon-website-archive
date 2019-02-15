@@ -32,8 +32,8 @@ export default class ColorTokenTable extends React.Component {
 
   addScrollListener() {
     document.addEventListener('scroll', e => {
-      let stickyPoint = this.state.mobile ? 1340 : 1244;
       console.log(window.scrollY);
+      let stickyPoint = this.state.mobile ? 436 : 450;
       if (window.scrollY >= stickyPoint) {
         this.setState({
           sticky: true,

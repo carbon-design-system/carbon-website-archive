@@ -78,6 +78,7 @@ class CodeExample extends Component {
           ref={ref => {
             this.codeBlock = ref;
           }}>
+          <span className="code-title">Code:</span>
           <pre className="line-numbers">
             <code className="language-html">{htmlFile}</code>
           </pre>
@@ -92,15 +93,18 @@ class CodeExample extends Component {
             <div className={copyBtnClass} data-feedback="Copied!" />
           </button>
         </CopyToClipboard>
-        <button className={expandBtnClass} onClick={this.expandCode}>
-          <span>{expandCodeBtnText}</span>
-          <Icon
-            alt="expand code"
-            className={expandBtnIconClass}
-            name="chevron--down"
-            description="Expand code icon"
-          />
-        </button>
+        <div className="code-example__expand-container">
+          <button className={expandBtnClass} onClick={this.expandCode}>
+            <span>{expandCodeBtnText}</span>
+            <Icon
+              alt="expand code"
+              className={expandBtnIconClass}
+              name="chevron--down"
+              description="Expand code icon"
+            />
+          </button>
+        </div>
+
       </div>
     );
   }

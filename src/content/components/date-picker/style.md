@@ -125,13 +125,7 @@ There are two types of time pickers; a 12-hour and 24-hour time picker. The 12-h
 | `.bx--time-picker__input-field` | padding-right, padding-left | 16 / 1   | $spacing-md   |
 | `.bx--select-input`             | padding-left                | 16 / 1   | $spacing-md   |
 
-<div class="image-grid">
-  <div>
-    <img src="images/time-picker-style-1.png" alt="Structure for a time picker"/>
-  </div>
-  <div>
-    <img src="images/time-picker-style-2.png" alt="Spacing for a time picker"/>
-  </div>
-</div>
+
+![Structure for a time picker](images/time-picker-style-1.png)  
 
 _Structure and spacing for a time picker | px / rem_

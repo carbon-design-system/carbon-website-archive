@@ -33,9 +33,13 @@
   //@include type-style('expressive-heading-04', true);
   position: relative;
   color: $text-01;
-  margin-top: rem(56px);
+  margin-top: rem(48px);
   margin-bottom: $spacing-lg;
   position: relative;
+}
+
+.page-h2#articles:before {
+  padding-bottom: rem(80px);
 }
 
 //----------------------------
@@ -51,6 +55,17 @@
   position: relative;
 }
 
+.component-docs h3 {
+  margin-top: rem(48px);
+}
+
+.page-h3#sizing {
+  margin-top: 1.125rem;
+}
+
+.page-h3#what’s-included {
+  margin-bottom: rem(24px);
+}
 //----------------------------
 // h4
 //----------------------------
@@ -60,8 +75,12 @@
   @include type-style('heading-02');
   color: $text-01;
   margin-top: rem(8px);
-  margin-bottom: rem(16px);
+  margin-bottom: 0;
   position: relative;
+}
+
+.component-docs h4 {
+  margin-top: rem(48px);
 }
 
 // Targets heading elements when they are the first element on a page to remove top margin
@@ -73,6 +92,10 @@
   .page-h2,
   .component-docs h2 {
     margin-top: 0;
+  }
+
+  .page-h2:before {
+    padding-bottom: 3rem;
   }
 }
 
@@ -114,12 +137,20 @@
   }
 
   .anchor-link__icon {
-    fill: $ibm-colors__blue--50;
+    fill: $ibm-colors__blue-50;
   }
 
   &:hover .anchor-link {
     opacity: 1;
   }
+}
+
+.page-h2:before {
+  padding-bottom: rem(56px);
+}
+
+.page-h4:before {
+  margin-top: -2rem;
 }
 
 //----------------------------
@@ -129,27 +160,35 @@
 .page-ul,
 .page-ol {
   @include typescale('epsilon');
-  margin: 0 0 $spacing-lg $spacing-lg;
-  line-height: 1.75;
+  margin: 0 0 rem(24px) $spacing-lg;
+  line-height: 1.5;
   position: relative;
 }
 
 .page-ul > li {
   font-weight: 400;
-  padding-left: 0.25rem;
+  padding-left: 0;
   list-style-type: none;
+}
 
-  &:before {
-    content: '\2013';
-    position: absolute;
-    left: -1rem;
-  }
+.page-ul > li span,
+.page-ol > li span {
+  margin-top: 1rem;
 }
 
 .page-ol > li {
   font-weight: 400;
   padding-left: 0.25rem;
   list-style-type: decimal;
+}
+
+.page-ol > li:last-child p {
+  padding-bottom: 0;
+}
+
+.page-ul .page-ul {
+  margin-top: -1.25rem;
+  margin-bottom: 0;
 }
 
 // The following is a css hack because remark is nesting
@@ -186,47 +225,69 @@
   margin-top: 0;
 }
 
+.page-content > div:first-child > .anchor-links:first-child .page-ul {
+  margin-bottom: 0;
+}
+
 .anchor-links {
   .page-ul {
+    width: auto;
     margin-bottom: 2.25rem;
     margin-top: rem(72px);
-    position: relative;
   }
 
   .page-ul > li {
     @include type-style('heading-03');
+    width: auto;
     list-style: none;
-    cursor: pointer;
-    padding-bottom: $spacing-xs;
-
-    &:before {
-      content: '\21B3'; //"↳"
-      position: absolute;
-      left: -1.5rem;
-      cursor: pointer;
-    }
+    margin-left: -1.5rem;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
 
     a {
       @include type-style('heading-03');
-      color: $ibm-colors__gray--90;
+      position: relative;
+      display: inline-block;
+      transition: color $transition--base;
+      color: $ibm-colors__gray-90;
       text-decoration: none;
-    }
+      margin-bottom: rem(4px);
 
-    &:hover {
-      a,
+      &:hover {
+        color: $ibm-colors__blue-60;
+        &::before {
+          color: $ibm-colors__blue-60;
+        }
+      }
+
       &:before {
-        color: $ibm-colors__blue--60;
+        content: '\21B3'; //"↳"
+        font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
+          sans-serif;
+        color: $ibm-colors__gray-90;
+        transition: color $transition--base;
+        padding-right: rem(8px);
+        cursor: pointer;
       }
     }
   }
 }
 
 .anchor-links--small .page-ul {
-  margin-top: 2.25rem;
+  margin-top: rem(56px);
 }
+
+.anchor-links--column .page-ul {
+  @include breakpoint('md') {
+    column-count: 2;
+  }
+}
+
 .anchor-links--small a,
 .anchor-links--small .page-ul > li a {
   @include type-style('body-long-02');
+  margin-bottom: 0;
 }
 
 //----------------------------
@@ -285,4 +346,20 @@ iframe.embedVideoIframe {
 //----------------------------
 hr {
   display: none;
+}
+
+//----------------------------
+// Tiles
+//----------------------------
+
+.page-content > div > .tile--resource {
+  margin-bottom: 0;
+}
+
+//----------------------------
+// Table
+//----------------------------
+
+.component-docs p + table {
+  margin-top: 0;
 }

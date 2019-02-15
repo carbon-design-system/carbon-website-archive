@@ -4,7 +4,9 @@ import { graphql } from 'gatsby';
 import MDXRenderer from 'gatsby-mdx/mdx-renderer';
 
 import Layout from '../components/Layouts';
-import FourOhFour from '../components/404';
+import { FourOhFour } from '@carbon/addons-website';
+
+import classnames from 'classnames';
 
 // Components
 import FeatureTile from '../components/FeatureTile';

@@ -18,3 +18,6 @@ Based on usage, there should be a default selection. The default selection is al
 ### Content switcher vs. toggle
 
 The content switcher is used for large groups of content, as opposed to the [toggle](/components/toggle) which is meant for a “yes/no” or “on/off” binary decision.
+
+
+![content switcher example](images/content-switcher-usage-1.png)

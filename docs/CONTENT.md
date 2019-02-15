@@ -159,6 +159,8 @@ The carbon website has a handful of custom markdown components available for use
 - `<grid-wrapper col_lg="12" flex="true>`
   - `col_lg` Specify the col width at large breakpoint, default is 12
   - `flex` Set to true to set display:flex | flexwrap: wrap to row
+- `<website-tabs> … </website-tabs>`
+  - inside, place `<tab label="Tab Label"><div> [tab content] </div></tab>`
 
 ### Examples
 
@@ -227,6 +229,10 @@ This will render the following group of clickable tiles
 
 #### Example of the Do/Don't components:
 
+- can include property `full=true` to use the example as a full-width component.
+    - e.g. `<do-dont-example full=true>`
+    - this option will cause the element to fill the full width of its containing wrappper. adjust the column count of the enclosing `<grid-wrapper>` to expand the maxium width.
+
 ##### With text examples:
 
 ```
@@ -256,6 +262,48 @@ This will render the following set of examples:
 
 This will render the following set of examples:
 ![Example of the Do/Don't component with image examples](https://user-images.githubusercontent.com/2753488/43850488-aba55aea-9afd-11e8-921d-418f65cf2460.png)
+
+#### Website Tabs
+
+```
+<website-tabs>
+<tab label="Tab 1"><div>
+
+lorem ipsum dolor sit amet
+
+</div></tab>
+<tab label="Tab 2"><div>
+
+Content for second tab goes here.
+
+</div></tab>
+<tab label="Tab 3"><div>
+
+Content for third tab goes here.
+
+</div></tab>
+</website-tabs>
+```
+
+- Complete component block surrounded in `<website-tabs> … </website-tabs>`
+- Each tab element has a label property, which will be the displayed label of the tab
+  - `<tab label="Lorem">`
+- Each Tab element also has a div wrapper inside of it, with no space between the div and tab
+  - `<tab label="Lorem"><div> … </div></tab>`
+- Because of the way Markdown processes files, an **empty line** is required to be the first bit of content inside of the `<tab><div>` stack, e.g.:
+```
+<website-tabs>
+<tab label="Tab 1"><div>
+
+lorem ipsum dolor sit amet
+
+</div></tab>
+</website-tabs>
+```
+- note the empty line after `<tab label="Tab 1"><div>` and before the first line of content, in this case `lorem ipsum…`. **Verify that there are no whitespace characters in these empty lines**.
+- Do not indent interior components. 
+    - Unfortunately, this component is extra fragile when written inside of a markdown file, because we are passing `<tab>` components into the `<website-tabs>` component, and markdown can interfere when child components are indendented. 
+
 
 ### Page Specific Components:
 

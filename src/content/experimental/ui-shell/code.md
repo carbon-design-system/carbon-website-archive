@@ -3,8 +3,6 @@ title: UI Shell
 tabs: ['Code', 'Usage']
 ---
 
-<hr/>
-
 <component 
     name="Experimental UI Shell"
     component="ui-shell"

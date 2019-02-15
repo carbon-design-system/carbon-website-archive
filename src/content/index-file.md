@@ -6,22 +6,39 @@ title: Homepage
     href="/getting-started/designers"
     label="Start"
     title="Designing"
-    margin="true">
-<img src="homepage/images/getting-started-designers.png" alt="Get started for designers" />
+    margin="true"
+    className="feature-tile--desktop">
+  <img src="homepage/images/getting-started-designers.png" alt="Get started for designers" />
+</FeatureTile>
+<FeatureTile
+    href="/getting-started/designers"
+    label="Start"
+    title="Designing"
+    margin="true"
+    className="feature-tile--mobile">
+<img src="homepage/images/getting-started-designers-mobile.png" alt="Get started for developers" />
 </FeatureTile>
 <FeatureTile
     href="/getting-started/developers"
     label="Start"
-    title="Developing">
+    title="Developing"
+    className="feature-tile--desktop">
 <img src="homepage/images/getting-started-developers.png" alt="Get started for developers" />
+</FeatureTile>
+<FeatureTile
+    href="/getting-started/developers"
+    label="Start"
+    title="Developing"
+    className="feature-tile--mobile">
+<img src="homepage/images/getting-started-developers-mobile.png" alt="Get started for developers" />
 </FeatureTile>
 
 ### Other Resources
 
 The Component Libraries give developers a collection of re-usable React components they can use for building websites and user interfaces. See a [complete list of resources.](/resources)
 
-<GridWrapper col_lg="8" flex="true" bleed="true">
-  <ClickableTile
+<GridWrapper className="tile--resource--no-margin" col_lg="8" flex="true" bleed="true">
+<ClickableTile
     dark="true"
     title="Carbon Design Kit"
     href="https://github.com/ibm/carbon-design-kit"
@@ -69,31 +86,28 @@ The Component Libraries give developers a collection of re-usable React componen
     title="What to expect in Carbon 10"
     author="Robin Cannon"
     date="December 10, 2018"
-    href="https://medium.com/carbondesign/what-to-expect-in-carbon-10-5af1bd6e25f6">
-    <img
-      src="resources/images/article-9.png"
-      alt="What to expect in Carbon 10"
-    />
-  </ClickableTile>
-  <ClickableTile
+    href="https://medium.com/carbondesign/what-to-expect-in-carbon-10-5af1bd6e25f6"
+    >
+    <img src="resources/images/homepage_01.png" alt="What to expect in Carbon 10" />
+</ClickableTile>
+<ClickableTile
     dark="true"
     type="article"
     title="Up & Running with Carbon React in less than 5 minutes"
     author="Josh Black"
     date="October 19, 2018"
-    href="https://medium.com/carbondesign/up-running-with-carbon-react-in-less-than-5-minutes-25d43cca059e">
-    <img
-      src="resources/images/article-8.png"
-      alt="Up & Running with Carbon React in less than 5 minutes"
-    />
-  </ClickableTile>
-  <ClickableTile
+    href="https://medium.com/carbondesign/up-running-with-carbon-react-in-less-than-5-minutes-25d43cca059e"
+    >
+    <img src="resources/images/homepage_02.png" alt="Up & Running with Carbon React in less than 5 minutes" />
+</ClickableTile>
+<ClickableTile
     dark="true"
     type="article"
     title="Hacktoberfest with Carbon"
     author="Josh Black"
     date="October 16, 2018"
-    href="https://medium.com/carbondesign/hacktoberfest-with-carbon-95c48943f586">
-    <img src="resources/images/article-7.jpg" alt="Hacktoberfest with Carbon" />
-  </ClickableTile>
+    href="https://medium.com/carbondesign/hacktoberfest-with-carbon-95c48943f586"
+    >
+    <img src="resources/images/Article_03.png" alt="Hacktoberfest with Carbon" />
+</ClickableTile>
 </GridWrapper>
