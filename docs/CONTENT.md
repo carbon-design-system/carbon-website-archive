@@ -282,7 +282,7 @@ This will render the following set of examples
     haslightversion="true" //Optional -If true shows the light/white background switcher
     hasReactVersion="true" //Optional -If true links to react storybook
     hasAngularVersion="true" //Optional -If true links to angular storkbook
-    hasVueVersion="true" // Optional -If true links to vue storybook
+    hasVueVersion="ComponentName&selectedStory=ABC" // Optional -If true links to vue storybook. Selected story is optional and only required to target a specific story.
     hasLightBackground="true" //Optional -If true has light background
     experimental="true" //Optional -If true loads experimental version/styles
     >
