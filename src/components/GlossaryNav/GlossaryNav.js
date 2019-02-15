@@ -74,6 +74,8 @@ class GlossaryNav extends Component {
       ? window.scrollY
       : window.scrollY + window.innerHeight;
     const scrolledItem = this.getActiveItem(windowScroll);
+    const navHeight =
+      document.querySelector('.glossary-nav').clientHeight - 160;
 
     if (scrolledItem !== this.state.activeLetter) {
       this.setState({
@@ -81,7 +83,10 @@ class GlossaryNav extends Component {
       });
     }
     if (this.state.letters.length > 0) {
-      if (scrollPosition >= this.state.letters[0].top) {
+      if (
+        scrollPosition >= this.state.letters[0].top &&
+        navHeight < window.innerHeight
+      ) {
         this.setState({
           isFixed: true,
         });
