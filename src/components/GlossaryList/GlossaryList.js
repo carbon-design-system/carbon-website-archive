@@ -18,6 +18,7 @@ class Glossary extends Component {
       <div id={glossaryEntry} key={glossaryEntry} className="glossary-entry">
         <h2 className="glossary-entry__main-heading bx--type-display-02">
           {glossaryEntry}
+          <span>{glossaryEntry}</span>
         </h2>
         {Object.keys(entry).map(list => {
           const listItems = Object.keys(entry[list]).map(word => {
