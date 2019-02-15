@@ -6,13 +6,14 @@ tabs: ['Code', 'Usage', 'Style']
 
 <page-intro>**Breadcrumb** enables users to quickly see their location within a path of navigation and move up to a parent level if desired.</page-intro>
 
-<component 
+<component
     name="Breadcrumb"
-    component="breadcrumb" 
+    component="breadcrumb"
     variation="breadcrumb"
     codepen="eevVxq"
     hasReactVersion="true"
     hasAngularVersion="true"
+    hasVueVersion="Breadcrumb"
     >
 </component>
 

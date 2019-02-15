@@ -6,109 +6,115 @@ tabs: ['Code', 'Usage', 'Style']
 
 <page-intro>**Buttons** express what action will occur when the user clicks or touches it. Buttons are used to initialize an action, either in the background or foreground of an experience.</page-intro>
 
-<component 
+<component
     name="Primary button"
     component="button"
-    variation="button--primary" 
+    variation="button--primary"
     codepen="QMaZmK"
     hasReactVersion="true"
     hasAngularVersion="true"
+    hasVueVersion="Button&selectedStory=primary"
     >
 </component>
-<component 
+<component
     name="Secondary button"
     component="button"
-    variation="button--secondary" 
+    variation="button--secondary"
     codepen="WdwJKG"
     hasReactVersion="true"
     hasAngularVersion="true"
+    hasVueVersion="Button&selectedStory=secondary"
     >
 </component>
-<component 
+<component
     name="Tertiary button"
     component="button"
-    variation="button--tertiary" 
+    variation="button--tertiary"
     codepen="WJqbvX"
     hasReactVersion="true"
     hasAngularVersion="true"
+    hasVueVersion="Button&selectedStory=tertiary"
     >
 </component>
-<component 
+<component
     name="Ghost button"
     component="button"
-    variation="button--ghost" 
+    variation="button--ghost"
     codepen="ppyVOw"
     hasReactVersion="true"
     hasAngularVersion="true"
+    hasVueVersion="Button&selectedStory=ghost"
     >
 </component>
-<component 
+<component
     name="Danger button"
     component="button"
-    variation="button--danger" 
+    variation="button--danger"
     codepen="EoKLeR"
     hasReactVersion="true"
     hasAngularVersion="true"
+    hasVueVersion="Button&selectedStory=danger"
     >
 </component>
-<component 
+<component
     name="Primary danger button"
     component="button"
-    variation="button--danger--primary" 
+    variation="button--danger--primary"
     codepen="bKVgOK"
     hasReactVersion="true"
     hasAngularVersion="true"
+    hasVueVersion="Button&selectedStory=danger--primary"
     >
 </component>
-<component 
+<component
     name="Small primary button"
     component="button"
-    variation="button--primary--small" 
+    variation="button--primary--small"
     codepen="zjVxoX"
     hasReactVersion="true"
     hasAngularVersion="true"
     >
 </component>
-<component 
+<component
     name="Small secondary button"
     component="button"
-    variation="button--secondary--small" 
+    variation="button--secondary--small"
     codepen="MGMYoZ"
     hasReactVersion="true"
     hasAngularVersion="true"
     >
 </component>
-<component 
+<component
     name="Small tertiary button"
     component="button"
-    variation="button--tertiary--small" 
+    variation="button--tertiary--small"
     codepen="JvQoyo"
     hasReactVersion="true"
     hasAngularVersion="true"
     >
 </component>
-<component 
+<component
     name="Small ghost button"
     component="button"
-    variation="button--ghost--small" 
+    variation="button--ghost--small"
     codepen="vjqEey"
     hasReactVersion="true"
     hasAngularVersion="true"
     >
 </component>
-<component 
+<component
     name="Small primary danger button"
     component="button"
-    variation="button--danger--primary--small" 
+    variation="button--danger--primary--small"
     codepen="KedaJb"
     hasReactVersion="true"
     hasAngularVersion="true"
     >
 </component>
-<component 
+<component
     name="Small danger button"
     component="button"
-    variation="button--danger--small" 
+    variation="button--danger--small"
     codepen="xjobPx"
     hasReactVersion="true"
     hasAngularVersion="true"

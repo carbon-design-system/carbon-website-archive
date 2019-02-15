@@ -13,6 +13,7 @@ export default class ComponentCode extends React.Component {
     haslightversion: PropTypes.string,
     hasreactversion: PropTypes.string,
     hasangularversion: PropTypes.string,
+    hasvueversion: PropTypes.string,
     haslightbackground: PropTypes.string,
     experimental: PropTypes.string,
   };
@@ -26,6 +27,7 @@ export default class ComponentCode extends React.Component {
       haslightversion,
       hasreactversion,
       hasangularversion,
+      hasvueversion,
       variation,
       experimental,
     } = this.props;
@@ -37,7 +39,7 @@ export default class ComponentCode extends React.Component {
       } catch (err) {}
     }
     if (!htmlFile) {
-     htmlFile = require(`carbon-components/html/${component}/${variation}.html`);
+      htmlFile = require(`carbon-components/html/${component}/${variation}.html`);
     }
 
     return (
@@ -52,6 +54,7 @@ export default class ComponentCode extends React.Component {
           hasLightVersion={haslightversion}
           hasReactVersion={hasreactversion}
           hasAngularVersion={hasangularversion}
+          hasVueVersion={hasvueversion}
           hasLightBackground={haslightbackground}
           experimental={experimental}
         />
@@ -59,4 +62,3 @@ export default class ComponentCode extends React.Component {
     );
   }
 }
-
