@@ -1,7 +1,7 @@
 ---
 label: When used properly, typography can help create clear hierarchies, organize information, and guide users through the product or experience.
 title: Typography
-tabs: ['Overview', 'Productive', 'Expressive']
+tabs: ['Overview', 'Productive']
 ---
 
 ## IBM Productive theme
