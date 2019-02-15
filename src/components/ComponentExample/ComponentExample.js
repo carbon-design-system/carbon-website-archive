@@ -314,16 +314,6 @@ class ComponentExample extends Component {
         .charAt(0)
         .toUpperCase() + componentName.split(' ')[1].substring(1)}`;
     }
-    console.log(componentNameLink);
-    console.log(component);
-    console.dir(this.props);
-
-    // let componentNameStory;
-    // const splitLink = componentNameLink.split('/');
-    // if (splitLink.length > 1) {
-    //   compoentNameLink = splitLink[0];
-    //   componentNameStory = splitLink[1];
-    // }
 
     const liveBackgroundClasses = classnames(
       'component-example__live',
