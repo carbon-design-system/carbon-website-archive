@@ -33,8 +33,12 @@ body {
   }
 }
 
-.bx--header .bx--header__name span {
+.bx--header .bx--header__name {
   font-weight: 400;
+}
+
+.bx--header .bx--header__name span {
+  font-weight: 600;
 }
 
 //---------------------------------------
@@ -81,14 +85,21 @@ body {
   li > code,
   td > code {
     @include reset;
-    @include type-style('code-02');
     position: relative;
     display: inline;
     padding: rem(1px) $spacing-xs;
     background: transparent;
-    border: 1px solid transparent;
     border-radius: 4px;
     background-color: $ibm-colors__gray-20;
+  }
+
+  td > code {
+    @include carbon--type-style('code-01');
+  }
+
+  p > code,
+  li > code {
+    @include carbon--type-style('code-02');
   }
 
   // HR dividers
@@ -104,6 +115,10 @@ body {
     margin-bottom: rem(24px);
   }
 
+  td > img {
+    margin-bottom: 0;
+  }
+
   img + img {
     margin-bottom: 0;
   }
@@ -117,6 +132,7 @@ body {
 .gatsby-resp-iframe-wrapper {
   @include breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
+    padding-bottom: 43% !important;
   }
 }
 
@@ -141,7 +157,6 @@ body {
 .page-content > div > img[src*='svg'],
 .page-content > div > img[src*='gif'] {
   background: $ui-02;
-  // margin-bottom: 4rem;
 
   @include breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
@@ -162,7 +177,7 @@ body {
 img[src*='svg'],
 img[src*='gif'] {
   + div > div > p > em {
-    @include type-style('body-short-01');
+    @include carbon--type-style('body-short-01');
     font-style: normal;
     color: $text-01;
     display: block;
@@ -186,6 +201,95 @@ img[src*='gif'] {
   margin-bottom: rem(24px);
 }
 
+// Website alert banner
+.website-alert {
+  height: rem(40px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  z-index: 9999;
+  background: $brand-01;
+}
+
+.website-alert__icon {
+  margin-right: 1.375rem;
+  margin-left: 0.875rem;
+  fill: $inverse-01;
+
+  @include breakpoint('lg') {
+    margin: 0 1rem;
+  }
+}
+
+.website-alert__button {
+  justify-self: flex-end;
+  margin-left: auto;
+  height: 100%;
+  text-decoration: none;
+}
+
+.website-alert .bx--btn {
+  height: 100%;
+  width: 100%;
+  padding: 0 1rem;
+  display: inline-flex;
+  align-items: center;
+
+  svg {
+    margin-left: rem(8px);
+    fill: $inverse-01;
+  }
+}
+
+.website-alert__text {
+  @include carbon--type-style('body-short-01');
+  color: $inverse-01;
+}
+
+.website-alert__text span {
+  &:nth-of-type(1),
+  &:nth-of-type(2) {
+    font-weight: 600;
+  }
+
+  &:nth-of-type(2),
+  &:nth-of-type(3) {
+    display: none;
+
+    @include breakpoint('md') {
+      display: inline;
+    }
+  }
+}
+
+.website-alert + .bx--header {
+  top: rem(40px);
+}
+
+.website-alert + .bx--header ~ .bx--side-nav {
+  top: 5.5rem;
+}
+
+.website-alert + .bx--header ~ .bx--side-nav + div,
+.website-alert + .bx--header ~ .bx--side-nav + .container {
+  margin-top: 5.5rem;
+}
+
+.website-alert
+  + .bx--header
+  ~ .bx--side-nav
+  + div
+  .color-token-table__theme-switcher--sticky {
+  top: 104px;
+}
+
+.website-alert + .bx--header ~ .bx--website-switcher {
+  top: 5.5rem;
+}
+
 //---------------------------------------
 // Sticky page-tab states and site-header scroll behavior
 //---------------------------------------
@@ -197,7 +301,7 @@ img[src*='gif'] {
 // global site header
 .#{$prefix}--header--website {
   transition-property: carbon--motion(standard);
-  position: absolute;
+  // position: absolute;
 }
 
 // side nav

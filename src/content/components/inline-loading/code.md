@@ -3,13 +3,13 @@ title: Inline loading
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-**Inline Loading** spinners are used when performing actions. They help notify user's that their action is being processed.
 
-<component 
-    name="Inline Loading"
-    component="inline-loading" 
+<component
+    name="Inline loading"
+    component="inline-loading"
     variation="inline-loading"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component-docs component="inline-loading" experimental="true"></component-docs>

@@ -1,7 +1,7 @@
 ---
 label: When used properly, typography can help create clear hierarchies, organize information, and guide users through the product or experience.
 title: Typography
-tabs: ['Overview', 'Productive', 'Expressive']
+tabs: ['Overview', 'Productive']
 ---
 
 ## IBM Productive theme
@@ -76,7 +76,7 @@ Letter-spacing: 0
 <type-spec token="body-long-02" description="This is commonly used in the expressive type theme layouts for long paragraphs with more than four lines. The looser line height and larger size makes for comfortable, long-form reading, in mediums that allow for more space. This type size is rarely used for body copy in components. Always left-align type; never center it.">
 Type: IBM Plex Sans<br>
 Size: 16px / 1rem<br>
-Line height: 14px / 1.5rem <br>
+Line height: 24px / 1.5rem <br>
 Weight: 400 / Regular<br>
 Letter-spacing: 0
 </type-spec>
@@ -97,7 +97,7 @@ Line height: 22px / 1.375rem <br>
 Weight: 600 / Semi-bold<br>
 Letter-spacing: 0px
 </type-spec>
-<type-spec token="heading-03" description="This is for component and layout headings.">
+<type-spec token="expressive-heading-03" description="This is for component and layout headings.">
 Type: IBM Plex Sans<br>
 Size: 20px / 1.25rem<br>
 Line height: 26px / 1.625rem <br>

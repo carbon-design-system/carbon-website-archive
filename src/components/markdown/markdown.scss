@@ -30,7 +30,6 @@
 .page-h2,
 .component-docs h2,
 .icon-h2 {
-  //@include type-style('expressive-heading-04', true);
   position: relative;
   color: $text-01;
   margin-top: rem(48px);
@@ -48,7 +47,7 @@
 
 .page-h3,
 .component-docs h3 {
-  @include type-style('heading-03');
+  @include carbon--type-style('expressive-heading-03');
   color: $text-01;
   margin-top: rem(24px);
   margin-bottom: $spacing-md;
@@ -72,7 +71,7 @@
 
 .page-h4,
 .component-docs h4 {
-  @include type-style('heading-02');
+  @include carbon--type-style('heading-02');
   color: $text-01;
   margin-top: rem(8px);
   margin-bottom: 0;
@@ -106,7 +105,7 @@
 .page-h5,
 .component-docs h5 {
   position: relative;
-  @include type-style('heading-02');
+  @include carbon--type-style('heading-02');
   color: $text-01;
   margin-top: rem(8px);
   margin-bottom: rem(16px);
@@ -165,10 +164,23 @@
   position: relative;
 }
 
+.page-ul {
+  margin-left: 0;
+}
+
 .page-ul > li {
   font-weight: 400;
-  padding-left: 0;
+  padding-left: 1rem;
   list-style-type: none;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '\2013';
+    margin-right: 0.5rem;
+    margin-bottom: 0.25rem;
+    left: 0;
+  }
 }
 
 .page-ul > li span,
@@ -235,21 +247,29 @@
 .anchor-links {
   .page-ul {
     width: auto;
-    margin-bottom: 2.25rem;
-    margin-top: rem(72px);
+    margin-bottom: 0;
+    margin-top: rem(48px);
+
+    @include breakpoint('md') {
+      margin-bottom: 2.25rem;
+      margin-top: rem(72px);
+    }
   }
 
   .page-ul > li {
-    @include type-style('heading-03');
+    @include carbon--type-style('expressive-heading-03');
     width: auto;
     list-style: none;
-    margin-left: -1.5rem;
     padding-left: 0;
     display: flex;
     align-items: center;
 
+    &:before {
+      display: none;
+    }
+
     a {
-      @include type-style('heading-03');
+      @include carbon--type-style('expressive-heading-03');
       position: relative;
       display: inline-block;
       transition: color $transition--base;
@@ -278,7 +298,7 @@
 }
 
 .anchor-links--small .page-ul {
-  margin-top: rem(56px);
+  margin-top: rem(16px);
 }
 
 .anchor-links--column .page-ul {
@@ -289,7 +309,7 @@
 
 .anchor-links--small a,
 .anchor-links--small .page-ul > li a {
-  @include type-style('body-long-02');
+  @include carbon--type-style('body-long-02');
   margin-bottom: 0;
 }
 

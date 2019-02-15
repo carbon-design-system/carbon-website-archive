@@ -3,29 +3,30 @@ title: Code snippet
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-**Code snippets** are small blocks of reusable code that can be inserted in a code file.
-variations:
 
 <component
-    name="Code Snippet"
+    name="Code snippet"
     component="code-snippet"
     variation="code-snippet"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component
-    name="Inline Code Snippet"
+    name="Inline code snippet"
     component="code-snippet"
     variation="code-snippet--inline"
     haslightversion="true"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component
-    name="Multi Line Code Snippet"
+    name="Multi line code snippet"
     component="code-snippet"
     variation="code-snippet--multi"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component-docs component="code-snippet" experimental="true"></component-docs>

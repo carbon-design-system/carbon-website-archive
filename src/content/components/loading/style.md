@@ -27,7 +27,7 @@ tabs: ['Code', 'Usage', 'Style']
 
 ### Placement
 
-The large Loading spinner should appear centered over a page or content that it is loading. Please note that the top-level navigation is not included in the page loading overlay.
+The large loading spinner should appear centered over a page or content that it is loading. Please note that the top-level navigation is not included in the page loading overlay.
 
 <image-component fixed="default" caption="Example of a large loading spinner in product context">
 

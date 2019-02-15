@@ -2,9 +2,22 @@
 title: Add-ons
 ---
 
-**Add-on repositories**, or repos, are components built for a specific product or experience. The repos are built on top of the core Carbon repo, and enable teams to create their own custom components that follow Carbon's visual style and guidelines.
+<anchor-links>
+<ul>
+    <li><a data-scroll href="#add-on-repositories">Add-on repositories</a></li>
+    <li><a data-scroll href="#checklist">Checklist</a></li>
+    <li><a data-scroll href="#creating-add-ons">Creating add-ons</a></li>
+    <li><a data-scroll href="#contributing-to-add-ons">Grid influencers</a></li>
+    <li><a data-scroll href="#ownership">Sizing scale</a></li>
+    <li><a data-scroll href="#carbon-support">Carbon support</a></li>
+</ul>
+</anchor-links>
 
-## Do you need an add-on repo?
+## Add-on repositories
+
+Add-on repositories, or repos, are components built for a specific product or experience. The repos are built on top of the core Carbon repo, and enable teams to create their own custom components that follow Carbon's visual style and guidelines.
+
+## Checklist
 
 Please answer yes or no to the following list of questions:
 
@@ -13,11 +26,13 @@ Please answer yes or no to the following list of questions:
 - Will these components only be needed by your team?
 - Do you need these custom components to match Carbon's visual style?
 
-If you've answered "yes" to all the questions above, then you definitely qualify for an add-on repo! Jump to the next section to learn about the required steps to create an add-on repo.
+####If you've answered "yes" to all the questions above... 
+then you definitely qualify for an add-on repo! Jump to the next section to learn about the required steps to create an add-on repo.
 
-If you answered "no" to any of the questions above but still feel like you need an add-on repo, please reach out to the a member of the Carbon team to discuss additional options. It might be that your component need is something that can be shared across the core Carbon organization. In this case, we can talk about how you can contribute this component back to the core Carbon repo.
+####If you answered "no" to any of the questions above...
+but still feel like you need an add-on repo, please reach out to the a member of the Carbon team to discuss additional options. It might be that your component need is something that can be shared across the core Carbon organization. In this case, we can talk about how you can contribute this component back to the core Carbon repo.
 
-## Creating an add-on repo
+## Creating add-ons
 
 There are a number of growing add-on repos that can be found under the [Carbon org](https://github.com/carbon-design-system). If you'd like to create an add-on repo we have created a [vanilla boilerplate](https://github.com/carbon-design-system/carbon-boilerplate) and a [react boilerplate](https://github.com/carbon-design-system/carbon-addons-boilerplate-react) that you can clone to get started. For further assistance please reach out to a member of the carbon design team.
 
@@ -29,7 +44,7 @@ Carbon Design System is an open-source project and we do encourage teams using C
 
 Add-ons are generally easier to contribute to because they are not fully managed by the Carbon team. Below are the items that you need to pass in order for your contribution to be accepted. You can read our full contribution process for [design](/contributing/designers) and [development](/contributing/developers) to learn more.
 
-|               |                                                     | Core library                                         | Add-ons                                              |
+| Category              | Metric                                                    | Core library                                         | Add-ons                                              |
 | ------------- | --------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- |
 | Accessibility | WCAG AA                                             | <icon name="icon--checkmark--solid" color="green" /> | <icon name="icon--checkmark--solid" color="green" /> |
 |               | Keyboard tabbing                                    | <icon name="icon--checkmark--solid" color="green" /> | <icon name="icon--checkmark--solid" color="green" /> |
@@ -38,7 +53,7 @@ Add-ons are generally easier to contribute to because they are not fully managed
 |               | Universal pattern <br>(fits for 2-3 use cases)      | <icon name="icon--checkmark--solid" color="green" /> |                                                      |
 |               | Interaction states (hover, active, focus, disabled) | <icon name="icon--checkmark--solid" color="green" /> | <icon name="icon--checkmark--solid" color="green" /> |
 
-## Who owns an add-on repo?
+## Ownership
 
 Once an add-on repo has been created, the team or product that requested it is in charge of maintaining and keeping it up to date. This involves carrying over specific changes from the core Carbon repo, as well as making sure it is using the latest major version of Carbon Components.
 
@@ -46,7 +61,7 @@ Once an add-on repo has been created, the team or product that requested it is i
 
 The table below shows the Carbon team's level of support for the Core library vs. the Add-ons repo.
 
-|                           | Core library                                         | Add-ons                                              |
+| Support category                        | Core library                                         | Add-ons                                              |
 | ------------------------- | ---------------------------------------------------- | ---------------------------------------------------- |
 | General design questions  | <icon name="icon--checkmark--solid" color="green" /> | <icon name="icon--checkmark--solid" color="green" /> |
 | Design feedback & support | <icon name="icon--checkmark--solid" color="green" /> |                                                      |

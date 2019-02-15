@@ -6,7 +6,6 @@
   margin-bottom: rem(24px);
 
   p {
-    margin: 0;
     padding: 0;
   }
 }
@@ -42,7 +41,7 @@
   right: 0;
   bottom: 0;
   color: $text-02;
-  @include type-style('caption-01');
+  @include carbon--type-style('caption-01');
   padding: 0.5rem 1rem;
   z-index: 9999;
 }
@@ -50,7 +49,7 @@
 // Component Toolbar
 
 .component-toolbar {
-  @include type-style('body-short-01');
+  @include carbon--type-style('body-short-01');
   display: flex;
   align-items: center;
   height: rem(48px);
@@ -82,6 +81,7 @@
     fill: $ibm-colors__blue-40;
     position: relative;
     top: 3px;
+    margin-top: -2px;
     margin-left: $spacing-2xs;
   }
 }
@@ -99,7 +99,7 @@
   }
 
   .bx--radio-button__label {
-    @include type-style('body-short-01');
+    @include carbon--type-style('body-short-01');
     color: $inverse-01;
   }
 

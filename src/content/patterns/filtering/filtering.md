@@ -2,15 +2,18 @@
 title: Filtering
 ---
 
-**Filtering** is the mechanism by which a user adds or removes data items from a displayed data set by turning on and off certain predefined attributes.
-
 <anchor-links>
 <ul>
+    <li><a data-scroll href="#purpose">Purpose</a></li>
     <li><a data-scroll href="#selecting-filters">Selecting filters</a></li>
     <li><a data-scroll href="#triggering-filters">Triggering filters</a></li>
     <li><a data-scroll href="#filter-interaction">Filter interaction</a></li>
 </ul>
 </anchor-links>
+
+## Purpose
+
+_Filtering_ is the mechanism by which a user adds or removes data items from a displayed data set by turning on and off certain predefined attributes.
 
 ## Selecting filters
 
@@ -18,10 +21,10 @@ title: Filtering
 
 A _single-selection filter_ is employed when the user can pick **only one attribute** from a category to modify the data results. Under the hood, single selection behaves like a radio button. Ways in which a single selection filter can manifest include:
 
-- basic dropdown
-- inline dropdown
-- search
-- radio button set (either standalone or within a menu)
+- Basic dropdown
+- Inline dropdown
+- Search
+- Radio button set (either standalone or within a menu)
 
 <image-component cols="8" caption="Single selection filter as an inline dropdown">
 
@@ -33,10 +36,10 @@ A _single-selection filter_ is employed when the user can pick **only one attrib
 
 A _multi-selection filter_ is employed when the user has the option to pick **more than one attribute** from a category to modify the data results. Under the hood, multi-selections behave like _checkboxes_. Ways in which a single selection filter can manifest include:
 
-- multi-select dropdown
-- inline multi-select dropdown
-- search with tags
-- checkbox set (either standalone or within a menu)
+- Multi-select dropdown
+- Inline multi-select dropdown
+- Search with tags
+- Checkbox set (either standalone or within a menu)
 
 <image-component cols="8" caption="Multi-selection filter set in a menu">
 
@@ -78,10 +81,10 @@ An _interactive filter_ returns results after each individual selection is made.
 
 Each filter interaction should contain the following patterns and states:
 
-- default start state
-- unselected and selected state
-- filter applied state
-- clear filter(s) action
+- Default start state
+- Unselected and selected state
+- Filter applied state
+- Clear filter(s) action
 
 ### Starting states
 

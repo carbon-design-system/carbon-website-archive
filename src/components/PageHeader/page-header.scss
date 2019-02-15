@@ -18,7 +18,7 @@
 }
 
 .page-header__label {
-  @include type-style('heading-03');
+  @include carbon--type-style('expressive-heading-03');
 }
 
 .page-header__title {

@@ -3,14 +3,14 @@ title: Dropdown
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-**Dropdowns** present a list of options that can be used to filter existing content.
-variations:
+
 
 <component 
     name="Dropdown"
     component="dropdown" 
     variation="dropdown"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component 
@@ -19,6 +19,7 @@ variations:
     variation="dropdown--up"
     codepen="eeGYvQ"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 

@@ -3,13 +3,14 @@ title: Loading
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-**Loading** spinners are used when retrieving data or performing slow computations, and help to notify users that loading is underway.
+
 
 <component 
     name="Loading"
     component="loading" 
     variation="loading"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component 
@@ -17,6 +18,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="loading" 
     variation="loading--small"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component-docs component="loading" experimental="true"></component-docs>

@@ -26,7 +26,7 @@
 }
 
 .page-tabs__list li a {
-  @include type-style('body-short-02');
+  @include carbon--type-style('body-short-02');
   padding: 0 $spacing-3xl 0 $spacing-md;
   text-decoration: none;
   color: $inverse-01;

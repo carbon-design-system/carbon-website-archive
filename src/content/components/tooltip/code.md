@@ -3,13 +3,14 @@ title: Tooltip
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-**Tooltips** provide additional information upon hover or focus. They often contain helper text that is contextual to an element.
+
 
 <component 
     name="Tooltip"
     component="tooltip" 
     variation="tooltip"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component 
@@ -17,6 +18,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="tooltip" 
     variation="tooltip--icon"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component 
@@ -24,6 +26,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="tooltip" 
     variation="tooltip--icon"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 

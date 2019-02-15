@@ -3,13 +3,13 @@ title: Text input
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-**Text inputs** enable the user to interact with and input data. Use when the application requires long-form content from the user.
 
 <component
     name="Text Input"
     component="text-input"
     variation="text-input"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 
@@ -18,6 +18,7 @@ tabs: ['Code', 'Usage', 'Style']
     component="text-area"
     variation="text-area"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 

@@ -3,33 +3,41 @@ title: Modal
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-## Dismissal
+<anchor-links>
+<ul>
+    <li><a data-scroll href="#general-guidance">General guidance</a></li>
+    <li><a data-scroll href="#format">Format</a></li>
+    <li><a data-scroll href="#variations">Variations</a></li>
+    <li><a data-scroll href="#dismissal">Dismissal</a></li>
+</ul>
+</anchor-links>
 
-Modals may be dismissed in 3 ways:
 
-- Using the “x” in the upper right-hand corner of the Modal
-- Pressing the `ESC` key
-- Clicking / touching outside of the Modal area
+## General guidance
 
-## Structure
+_Modals_ communicate information via a secondary window and allow the user to maintain the context of a particular task. Use modals sparingly because they interrupt user workflow.
 
-### Header
+## Format
 
-Include a heading within the Modal that mirrors the action or button that was clicked by the user. Headers include a close button “x” in the upper right-hand corner of the Modal.
+#### Header
 
-### Body
+Include a heading within the modal that mirrors the action or button that was clicked by the user. Headers include a close button “x” in the upper right-hand corner of the modal.
 
-The body content within a Modal should be as minimal as possible. Components that may be used in Modals include: Form fields, Text Area, Select, and Radio Buttons.
+#### Body
 
-### Footer
+The body content within a modal should be as minimal as possible. Components that may be used in modals include: form fields, text area, select, and radio buttons.
 
-The footer area of a Modal typically contains a set of buttons. Refer to [Button](/components/button) guidelines for usage.
+#### Footer
 
-## Usage
+The footer area of a modal typically contains a set of buttons. Refer to [button](/components/button) guidelines for usage.
 
-### Transactional Modal
 
-Transactional Modals are used to validate user decisions or to gain secondary confirmation from the user. Typically, the Modal requests either a 'yes' or 'no' response.
+
+## Variations
+
+### Transactional modal
+
+Transactional modals are used to validate user decisions or to gain secondary confirmation from the user. Typically, the modal requests either a 'yes' or 'no' response.
 
 <image-component cols="8">
 
@@ -37,9 +45,9 @@ Transactional Modals are used to validate user decisions or to gain secondary co
 
 </image-component>
 
-### Passive Modal
+### Passive modal
 
-This Modal is used as a style of notifications. We highly discourage the use of this, due to its disruptive nature. Passive Modal notifications should only appear if there is an action the user needs to address immediately. Passive Modal notifications are persistent on-screen. That is, they do not automatically go away after appearing. Users must either engage with or dismiss the notification.
+This modal is used as a style of notifications. We highly discourage the use of this, due to its disruptive nature. Passive modal notifications should only appear if there is an action the user needs to address immediately. Passive modal notifications are persistent on-screen. That is, they do not automatically go away after appearing. Users must either engage with or dismiss the notification.
 
 <image-component cols="8">
 
@@ -47,12 +55,22 @@ This Modal is used as a style of notifications. We highly discourage the use of 
 
 </image-component>
 
-### Input Modal
+### Input modal
 
-Modals used in this case include input areas that the user may interact with. These may include but are not limited to Forms, Dropdowns, Selectors, and Links.
+Modals used in this case include input areas that the user may interact with. These may include but are not limited to forms, dropdowns, selectors, and links.
 
 <image-component cols="8">
 
 ![input modal](images/modal-usage-2.png)
 
 </image-component>
+
+
+## Dismissal
+
+Modals may be dismissed in 3 ways:
+
+- Using the “x” in the upper right-hand corner of the modal
+- Pressing the `ESC` key
+- Clicking / touching outside of the modal area
+

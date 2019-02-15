@@ -3,7 +3,31 @@ title: Developers
 tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
 ---
 
-The **[Carbon Components Angular Library](http://angular.carbondesignsystem.com/)** provides front-end developers & engineers a collection of reusable Angular components to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.
+## Resources
+
+<grid-wrapper col_lg="8" flex="true" bleed="true">
+<clickable-tile
+    title="Try Angular components with CodeSandbox."
+    href="https://codesandbox.io/s/0129r494ql"
+    type="resource"
+     >
+    <img src="images/codesandbox.png" alt=""/>
+</clickable-tile>
+</grid-wrapper>
+
+
+<anchor-links>
+<ul>
+    <li><a href="#carbon-angular-library">Carbon Angular library</a></li>
+    <li><a href="#install">Install</a></li>
+    <li><a href="#development">Development</a></li>
+    
+</ul>
+</anchor-links>
+
+## Carbon Angular library
+
+The [library](http://angular.carbondesignsystem.com/) provides front-end developers & engineers a collection of reusable Angular components to build websites and user interfaces. Adopting the library enables developers to use consistent markup, styles, and behavior in prototype and production work.
 
 ## Install
 
@@ -21,13 +45,14 @@ Then we need to include carbon-components in `src/styles.scss`:
 @import '~carbon-components/scss/globals/scss/styles.scss';
 ```
 
-Thats it! Now start the server and start building.
+That's it! Now start the server and start building.
 
 ```sh
 $ npm start
 ```
 
-**Note:** This isn't the only way to bootstrap a `carbon-components-angular` application, but the combination of `@angular/cli` and the `carbon-components` scss is our recommended setup.
+_Note: This isn't the only way to bootstrap a_ `carbon-components-angular` _application, but the combination of_ `@angular/cli` _and the_ `carbon-components` _scss is our recommended setup._
+
 
 ### Using our starter app
 
@@ -37,7 +62,7 @@ $ npm start
 
 </image-component>
 
-We recommend using the [carbon-angular-starter](https://github.com/carbon-design-system/carbon-angular-starter) for bootstrapping applications with Carbon components. Within 5 minutes your app will be running with the following already configured:
+We recommend using the [carbon-angular-starter](https://github.com/carbon-design-system/carbon-angular-starter) for bootstrapping applications with Carbon components. Within five minutes your app will be running with the following already configured:
 
 - Angular-cli
 - Build process
