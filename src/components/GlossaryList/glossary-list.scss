@@ -1,28 +1,15 @@
-.glossary-entry__list {
-  margin-bottom: 8rem;
+.glossary-entry {
+  padding-top: rem(36px);
 }
 
 .glossary-entry__desc {
   padding-bottom: 0;
 }
 
-.glossary-entry__word {
-  padding-bottom: 1.5rem;
-
-  &:last-of-type {
-    padding-bottom: 0;
-  }
-}
-
-.glossary-entry__word-heading {
-  @include carbon--type-style('expressive-heading-03');
-  padding-top: rem(24px);
-  padding-bottom: 0.5rem;
-}
-
 .glossary-entry__subtext {
   @include carbon--type-style('body-short-02');
   color: $text-02;
+  font-style: italic;
   margin-top: 0.25rem;
   padding-bottom: 0;
 }

@@ -16,6 +16,9 @@ class Glossary extends Component {
     let counter = 0;
     return (
       <div id={glossaryEntry} key={glossaryEntry} className="glossary-entry">
+        <h2 className="glossary-entry__main-heading bx--type-display-02">
+          {glossaryEntry}
+        </h2>
         {Object.keys(entry).map(list => {
           const listItems = Object.keys(entry[list]).map(word => {
             counter++;
@@ -32,7 +35,7 @@ class Glossary extends Component {
             }
             return (
               <div id={wordId} key={word} className="glossary-entry__word">
-                <h4 className="glossary-entry__word-heading">{word}</h4>
+                <h4 className="page-h4 glossary-entry__word-heading">{word}</h4>
                 <p
                   className="glossary-entry__desc"
                   dangerouslySetInnerHTML={{ __html: desc }}
@@ -46,9 +49,7 @@ class Glossary extends Component {
           });
           return (
             <div key={list} className="glossary-entry__list">
-              <h2 className="glossary-entry__heading page-h2 bx--type-expressive-heading-04">
-                {list}
-              </h2>
+              <h3 className="glossary-entry__heading page-h3">{list}</h3>
               {listItems}
             </div>
           );
