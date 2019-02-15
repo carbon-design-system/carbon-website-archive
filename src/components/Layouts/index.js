@@ -19,6 +19,7 @@ import {
   AppSwitcher20,
   Close20,
   Information20,
+  Search20
 } from '@carbon/icons-react';
 import { WebsiteFooter, WebsiteSwitcher } from '@carbon/addons-website';
 
@@ -27,6 +28,7 @@ import '../../styles/index.scss';
 import '../../styles/experimental.scss';
 
 class Layout extends React.Component {
+
   static propTypes = {
     children: PropTypes.any,
   };
@@ -34,6 +36,7 @@ class Layout extends React.Component {
   state = {
     isLeftNavOpen: false,
     isLeftNavFinal: false,
+    isSearchOpen: false,
     isSwitcherOpen: false,
     isSwitcherFinal: false,
   };
@@ -49,6 +52,30 @@ class Layout extends React.Component {
       offset: 24,
       topOnEmptyHash: false,
     });
+  }
+
+  handleSearchClick = (isSearchOpen) => {
+    this.setState({
+      [isSearchOpen]: !this.state.isSearchOpen
+    }, this.handleSearchEventListener);
+  }
+
+  handleSearchEventListener = () => {
+    if(this.state.isSearchOpen) {
+      document.body.addEventListener('click',this.handleCloseSearchClick);
+    } else {
+      document.body.removeEventListener('click',this.handleCloseSearchClick);
+    }
+  }
+
+  handleCloseSearchClick = (evt) => {
+    console.log(evt.target);
+    const className = evt.target.classList[0];
+    console.log(className); 
+    const filters = ['bx--search', 'bx--search-input', 'bx--search-magnifier', 'ds-dataset-1'];
+    if(filters.indexOf(className) === -1) {
+      this.handleSearchClick('isSearchOpen');
+    }
   }
 
   onToggleBtnClick = (
@@ -225,6 +252,17 @@ class Layout extends React.Component {
 
               <HeaderGlobalBar>
                 {/* {isInternal ? null : <GlobalSearch />} */}
+                {this.state.isSearchOpen ? <GlobalSearch /> : 
+                <HeaderGlobalAction
+                  className="bx--header__action--search"
+                  aria-label="Search Website"
+                  onClick={() =>
+                    this.handleSearchClick(
+                      'isSearchOpen'
+                    )
+                }>
+                  <Search20 />
+                </HeaderGlobalAction>}
                 <HeaderGlobalAction
                   className="bx--header__action--switcher"
                   aria-label="Switch"
