@@ -1,7 +1,7 @@
 @import '../prefix';
 
 .#{$prefix}--website-footer {
-  @include type-style('body-short-01');
+  @include carbon--type-style('body-short-01');
   width: 100%;
   background: $ibm-colors__black;
   color: $ibm-colors__gray-30;
@@ -76,7 +76,7 @@
 
 .#{$prefix}--website-footer__content,
 .#{$prefix}--website-footer__content p {
-  @include type-style('body-short-01');
+  @include carbon--type-style('body-short-01');
   padding-bottom: 1rem;
 }
 

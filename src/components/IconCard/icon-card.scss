@@ -31,12 +31,12 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 130px;
-  @include type-style('caption-01');
+  @include carbon--type-style('caption-01');
 }
 
 .icon__card-details {
   top: rem(28px);
-  @include type-style('helper-text-01');
+  @include carbon--type-style('helper-text-01');
 }
 
 .icon__actions {
