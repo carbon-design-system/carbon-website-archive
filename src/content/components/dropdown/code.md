@@ -43,5 +43,11 @@ tabs: ['Code', 'Usage', 'Style']
     experimental="true"
     >
 </component-react>
+<component-react
+    name="Combo box"
+    component="ComboBox"
+    experimental="true"
+    >
+</component-react>
 
 <component-docs component="dropdown" experimental="true"></component-docs>
