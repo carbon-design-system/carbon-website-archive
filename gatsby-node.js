@@ -105,14 +105,33 @@ exports.createPages = ({ actions, graphql }) => {
   });
 };
 
-exports.onCreateWebpackConfig = ({ actions, getConfig, stage, loaders }) => {
-  actions.setWebpackConfig({
+exports.onCreateWebpackConfig = ({ actions, getConfig, stage }) => {
+  const config = getConfig();
+  const { module } = config;
+  const { rules } = module;
+  const replaceTable = {
+    breakingChangesX: true,
+    componentsX: true,
+  };
+  actions.replaceWebpackConfig({
+    ...config,
     module: {
       rules: [
         {
           test: /\.js/,
           include: path.dirname(require.resolve('ansi-regex')),
           use: [loaders.js()],
+        },
+        {
+          test: /(\/|\\)FeatureFlags\.js$/,
+          loader: 'string-replace-loader',
+          options: {
+            multiple: Object.keys(replaceTable).map(key => ({
+              search: `export\\s+var\\s+${key}\\s*=\\s*false`,
+              replace: `export var ${key} = ${replaceTable[key]}`,
+              flags: 'i',
+            })),
+          },
         },
         {
           test: /\.md$/,
