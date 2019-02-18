@@ -5,22 +5,26 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                            | Property | SCSS     |
-| -------------------------------- | -------- | -------- |
-| `.bx--loading__svg`              | stroke   | $ui-05   |
-| `.bx--inline-loading__checkmark` | stroke   | $ui-05   |
-| `.bx--inline-loading__text`      | color    | $text-01 |
+| Class                            | Property | Color token  |
+| -------------------------------- | -------- | ------------ |
+| `.bx--loading__svg`              | stroke   | `$ui-03`     |
+| `.bx--inline-loading__checkmark` | color    | `$interactive-01`  |
+| `.bx--inline-loading__text`      | color    | `$text-01`   |
+
+## Typography
+
+Button text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized.
+
+| Class                       | Font-size (px/rem) | Font-weight   | Type token       |
+| --------------------------- | ------------------ | ------------- | ---------------- |
+| `.bx--inline-loading__text` | 14 / 0.875         | Regular / 400 | `$body-short-01` |
 
 ## Structure
 
-| Property  | px  | rem |
-| --------- | --- | --- |
-| Spinner   | 16  | 1   |
-| Checkmark | 16  | 1   |
-
-| Class                            | Property      | px / rem |
-| -------------------------------- | ------------- | -------- |
-| `.bx--inline-loading__animation` | width, height | 16 / 2   |
+| Class                      | Property                    | px / rem   | Spacing token |
+| -------------------------- | --------------------------- | ---------- | ------------- |
+| Spinner                    | width, height               |  16 / 1    | –             |
+| Checkmark                  | width, height               |  16 / 1    | –             |
 
 <image-component fixed="default">
 
@@ -39,14 +43,6 @@ tabs: ['Code', 'Usage', 'Style']
 ![Inline loading spinner in context example](images/inline-loading-style-3.png)
 
 </image-component>
-
-## Typography
-
-Button text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized.
-
-| Class                       | Font-size (px/rem) | Font-weight   | Type style       |
-| --------------------------- | ------------------ | ------------- | ---------------- |
-| `.bx--inline-loading__text` | 14 / 0.875         | Regular / 400 | `.bx--type-zeta` |
 
 ### Placement
 
