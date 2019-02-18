@@ -1,14 +1,13 @@
 .glossary-nav {
   position: absolute;
-  right: 1rem;
-  padding: 1rem;
+  right: $spacing-lg;
+  padding: 0;
   display: none;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   line-height: 1.5;
-  margin-top: 2rem;
-  padding-top: 72px;
+  padding-top: rem(160px);
 
   @include breakpoint('lg') {
     display: flex;
@@ -17,35 +16,34 @@
   &--fixed {
     position: fixed;
     top: 0;
-    z-index: -1;
   }
+}
 
-  li {
-    list-style-type: none !important;
-    margin: 0.125rem 0;
-    padding: 0;
-    width: 100%;
-    transition: all $transition--base;
+.bx--list__item {
+  list-style-type: none !important;
+  padding: 0;
+  width: 100%;
+  transition: all $transition--base;
+  display: block;
+}
 
-    a {
-      @include font-smoothing;
-      width: 100%;
-      padding: 0 0.25rem;
-      display: flex;
-      justify-content: center;
-      text-decoration: none;
-      color: $color__navy-gray-7;
-      @include type-style('body-short-02');
-    }
+.bx--list__item a {
+  @include carbon--type-style('body-short-02');
+  width: rem(24px);
+  height: rem(24px);
+  padding: rem(1px) 0 0 0;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: $text-02;
+}
 
-    &.glossary-nav__item--active,
-    &:hover {
-      transform: scale3d(1.5, 1.5, 1.5);
+.bx--list__item:hover a {
+  color: $text-01;
+  background: $hover-ui;
+}
 
-      a {
-        color: $brand-01;
-        font-weight: 600;
-      }
-    }
-  }
+.bx--list__item.glossary-nav__item--active a {
+  color: $text-01;
+  background: $ui-03;
 }

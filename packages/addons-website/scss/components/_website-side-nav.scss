@@ -158,7 +158,7 @@ a.#{$prefix}--side-nav__link:focus {
 
 .#{$prefix}--side-nav .#{$prefix}--side-nav__submenu[aria-haspopup='true'],
 .#{$prefix}--side-nav__item > a.#{$prefix}--side-nav__link {
-  @include type-style('heading-01');
+  @include carbon--type-style('heading-01');
   color: $active-01;
 }
 
