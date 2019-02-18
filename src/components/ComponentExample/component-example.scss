@@ -10,6 +10,11 @@
   }
 }
 
+// To override the padding from `.page-content > div > div:first-child p`
+.page-content > div > div:first-child .component-example__heading-label {
+  padding-bottom: 1.5rem;
+}
+
 .component-example__live {
   display: flex;
   align-items: center;
@@ -44,6 +49,11 @@
   @include carbon--type-style('caption-01');
   padding: 0.5rem 1rem;
   z-index: 9999;
+}
+
+
+.component-example__view-full-render--react {
+  z-index: z(dropdown) - 1;
 }
 
 // Component Toolbar
