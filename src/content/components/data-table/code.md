@@ -6,43 +6,44 @@ tabs: ['Code', 'Usage', 'Style']
 
 <page-intro>**Data tables** present raw data sets and lend meaning to the data, while maintaining that the data is readable, scannable, and easily comparable.</page-intro>
 
-<component 
+<component
     name="Data table"
-    component="data-table-v2" 
+    component="data-table-v2"
     variation="data-table-v2"
     codepen="MOEagV"
     hasReactVersion="true"
     hasAngularVersion="true"
+    hasVueVersion="DataTable"
     >
 </component>
-<component 
+<component
     name="Expandable data table"
-    component="data-table-v2" 
+    component="data-table-v2"
     variation="data-table-v2--expandable"
     codepen="gXGabM"
     hasReactVersion="true"
     hasAngularVersion="true"
     >
 </component>
-<component 
+<component
     name="Data table with pagination"
-    component="data-table-v2" 
+    component="data-table-v2"
     variation="data-table-v2--with-pager"
     codepen="pdWjva"
     hasReactVersion="true"
     >
 </component>
-<component 
+<component
     name="Small data table"
-    component="data-table-v2" 
+    component="data-table-v2"
     variation="data-table-v2--small"
     codepen="aVLvzX"
     hasReactVersion="true"
     >
 </component>
-<component 
+<component
     name="Toolbar"
-    component="toolbar" 
+    component="toolbar"
     variation="toolbar"
     codepen="yPzYNK"
     hasReactVersion="true"

@@ -6,12 +6,13 @@ tabs: ['Code', 'Usage', 'Style']
 
 <page-intro>**Links** are used primarily as a navigational element. Links may also change what or how data is displayed (view more, show all). If the action taken by the user will change or manipulate data, use a button.</page-intro>
 
-<component 
+<component
     name="Link"
-    component="link" 
+    component="link"
     variation="link"
     codepen="YErzrq"
     hasReactVersion="true"
     hasAngularVersion="true"
+    hasVueVersion="Link"
     >
 </component>

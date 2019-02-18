@@ -6,23 +6,25 @@ tabs: ['Code', 'Usage', 'Style']
 
 <page-intro>**Lists** consist of related content grouped together and organized vertically.</page-intro>
 
-<component 
+<component
     name="Ordered List"
-    component="list" 
+    component="list"
     variation="list--ordered"
     codepen="MOEWEP"
     hasReactVersion="true"
     hasAngularVersion="true"
+    hasVueVersion="List"
     >
 </component>
 
-<component 
+<component
     name="Unordered List"
-    component="list" 
+    component="list"
     variation="list"
     codepen="JOrjOj"
     hasReactVersion="true"
     hasAngularVersion="true"
+    hasVueVersion="List"
     >
 </component>
 <component-docs component="list"></component-docs>

@@ -6,14 +6,15 @@ tabs: ['Code', 'Usage', 'Style']
 
 <page-intro>**Forms** are used for submitting data.</page-intro>
 
-<component 
+<component
     name="Form"
-    component="form" 
+    component="form"
     variation="form"
     codepen="pdWorZ"
     hasReactVersion="true"
     hasAngularVersion="true"
     haslightversion="true"
+    hasVueVersion="Form"
     >
 </component>
 <component-docs component="form"></component-docs>

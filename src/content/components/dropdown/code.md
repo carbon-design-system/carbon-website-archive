@@ -7,19 +7,20 @@ tabs: ['Code', 'Usage', 'Style']
 <page-intro>**Dropdowns** present a list of options that can be used to filter existing content. </page-intro>
 variations:
 
-<component 
+<component
     name="Dropdown"
-    component="dropdown" 
+    component="dropdown"
     variation="dropdown"
     codepen="eeGYvQ"
     haslightversion="true"
     hasReactVersion="true"
     hasAngularVersion="true"
+    hasVueVersion="Dropdown"
     >
 </component>
-<component 
+<component
     name="Dropdown (Up)"
-    component="dropdown" 
+    component="dropdown"
     variation="dropdown--up"
     codepen="eeGYvQ"
     haslightversion="true"

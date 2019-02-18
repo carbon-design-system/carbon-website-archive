@@ -6,22 +6,24 @@ tabs: ['Code', 'Usage', 'Style']
 
 <page-intro>**Notifications** are messages that communicate information to the user.</page-intro>
 
-<component 
+<component
     name="Inline Notification"
-    component="notification" 
+    component="notification"
     variation="inline-notification"
     codepen="EbwjVb"
     hasAngularVersion="true"
     hasReactVersion="true"
+    hasVueVersion="InlineNotification"
     >
 </component>
-<component 
+<component
     name="Toast Notification"
-    component="notification" 
+    component="notification"
     variation="toast-notification"
     codepen="mqBJeo"
     hasAngularVersion="true"
     hasReactVersion="true"
+    hasVueVersion="ToastNotification"
     >
 </component>
 <component-docs component="notification"></component-docs>

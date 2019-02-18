@@ -6,12 +6,13 @@ tabs: ['Code', 'Usage', 'Style']
 
 <page-intro>**Number inputs** are similar to text inputs, but contain controls used to increase or decrease an incremental value.</page-intro>
 
-<component 
+<component
     name="Number input"
-    component="number-input" 
+    component="number-input"
     variation="number-input"
     codepen="Xzebda"
     hasReactVersion="true"
+    hasVueVersion="NumberInput"
     >
 </component>
 <component-docs component="number-input"></component-docs>

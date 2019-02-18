@@ -6,13 +6,14 @@ tabs: ['Code', 'Usage', 'Style']
 
 <page-intro>**Checkboxes** are used when there is a list of options and the user may select multiple options, including all or none.</page-intro>
 
-<component 
+<component
     name="Checkbox"
-    component="checkbox" 
+    component="checkbox"
     variation="checkbox"
     codepen="MOEgxQ"
     hasReactVersion="true"
     hasAngularVersion="true"
+    hasVueVersion="Checkbox"
     >
 </component>
 <component-docs component="checkbox"></component-docs>
