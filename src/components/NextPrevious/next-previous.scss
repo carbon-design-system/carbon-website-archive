@@ -2,6 +2,7 @@
   background: $ibm-colors__gray-90;
   color: $ibm-colors__white;
   min-height: rem(128px);
+  position: relative;
 }
 
 .next-previous-wrapper .ibm--grid,
@@ -19,17 +20,17 @@
 }
 
 .next-previous-link:hover {
-  background: $ibm-colors__black;
+  background: $ibm-colors__gray-80;
   transition: 0.1s ease all;
 }
 
 .target-page-direction {
   display: block;
-  @include type-style('body-short-01');
+  @include carbon--type-style('body-short-01');
 }
 
 .target-page-name {
-  @include type-style('heading-03');
+  @include carbon--type-style('expressive-heading-03');
   display: block;
   max-width: rem(275px);
 }

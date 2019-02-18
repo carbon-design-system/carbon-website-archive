@@ -12,6 +12,7 @@ class Glossary extends Component {
           <div className="ibm--col-lg-7 ibm--offset-lg-4">
             <GlossaryList glossary={glossary} />
           </div>
+          <div className="ibm--col-lg-1 ibm--offset-lg-4" />
         </div>
       </div>
     );

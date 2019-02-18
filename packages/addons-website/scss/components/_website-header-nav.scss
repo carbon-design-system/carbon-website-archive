@@ -18,7 +18,7 @@
 // Top level nav
 //----------------------------
 a.#{$prefix}--header__menu-item[role='menuitem'] {
-  @include type-style('body-short-02');
+  @include carbon--type-style('body-short-02');
   position: relative;
   color: $ibm-colors__gray-10;
   border-width: 2px;
@@ -85,7 +85,7 @@ a.#{$prefix}--header__menu-item[role='menuitem']:active {
 }
 
 .#{$prefix}--header__menu .#{$prefix}--header__menu-item[role='menuitem'] {
-  @include type-style('body-short-01');
+  @include carbon--type-style('body-short-01');
   color: $ibm-colors__gray-30;
 }
 

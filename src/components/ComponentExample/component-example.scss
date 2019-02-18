@@ -6,9 +6,13 @@
   margin-bottom: rem(24px);
 
   p {
-    margin: 0;
     padding: 0;
   }
+}
+
+// To override the padding from `.page-content > div > div:first-child p`
+.page-content > div > div:first-child .component-example__heading-label {
+  padding-bottom: 1.5rem;
 }
 
 .component-example__live {
@@ -42,15 +46,20 @@
   right: 0;
   bottom: 0;
   color: $text-02;
-  @include type-style('caption-01');
+  @include carbon--type-style('caption-01');
   padding: 0.5rem 1rem;
   z-index: 9999;
+}
+
+
+.component-example__view-full-render--react {
+  z-index: z(dropdown) - 1;
 }
 
 // Component Toolbar
 
 .component-toolbar {
-  @include type-style('body-short-01');
+  @include carbon--type-style('body-short-01');
   display: flex;
   align-items: center;
   height: rem(48px);
@@ -100,7 +109,7 @@
   }
 
   .bx--radio-button__label {
-    @include type-style('body-short-01');
+    @include carbon--type-style('body-short-01');
     color: $inverse-01;
   }
 

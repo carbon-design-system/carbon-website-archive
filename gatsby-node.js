@@ -106,6 +106,10 @@ exports.onCreateWebpackConfig = ({ actions, getConfig, stage }) => {
   const config = getConfig();
   const { module } = config;
   const { rules } = module;
+  const replaceTable = {
+    breakingChangesX: true,
+    componentsX: true,
+  };
   actions.replaceWebpackConfig({
     ...config,
     module: {
@@ -124,6 +128,17 @@ exports.onCreateWebpackConfig = ({ actions, getConfig, stage }) => {
             exclude: /(node_modules|bower-components)[\/\\](?!(ansi-regex)[\/\\]).*/,
           };
         }),
+        {
+          test: /(\/|\\)FeatureFlags\.js$/,
+          loader: 'string-replace-loader',
+          options: {
+            multiple: Object.keys(replaceTable).map(key => ({
+              search: `export\\s+var\\s+${key}\\s*=\\s*false`,
+              replace: `export var ${key} = ${replaceTable[key]}`,
+              flags: 'i',
+            })),
+          },
+        },
         {
           test: /\.md$/,
           loaders: ['html-loader', 'markdown-loader'],
