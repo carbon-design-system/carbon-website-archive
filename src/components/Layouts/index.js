@@ -19,7 +19,7 @@ import {
   AppSwitcher20,
   Close20,
   Information20,
-  Search20
+  Search20,
 } from '@carbon/icons-react';
 import { WebsiteFooter, WebsiteSwitcher } from '@carbon/addons-website';
 
@@ -35,7 +35,6 @@ import '../../styles/experimental.scss';
 import { MDXProvider } from '@mdx-js/tag';
 
 class Layout extends React.Component {
-
   static propTypes = {
     children: PropTypes.any,
   };
@@ -61,29 +60,37 @@ class Layout extends React.Component {
     });
   }
 
-  handleSearchClick = (isSearchOpen) => {
-    this.setState({
-      [isSearchOpen]: !this.state.isSearchOpen
-    }, this.handleSearchEventListener);
-  }
+  handleSearchClick = isSearchOpen => {
+    this.setState(
+      {
+        [isSearchOpen]: !this.state.isSearchOpen,
+      },
+      this.handleSearchEventListener
+    );
+  };
 
   handleSearchEventListener = () => {
-    if(this.state.isSearchOpen) {
-      document.body.addEventListener('click',this.handleCloseSearchClick);
+    if (this.state.isSearchOpen) {
+      document.body.addEventListener('click', this.handleCloseSearchClick);
     } else {
-      document.body.removeEventListener('click',this.handleCloseSearchClick);
+      document.body.removeEventListener('click', this.handleCloseSearchClick);
     }
-  }
+  };
 
-  handleCloseSearchClick = (evt) => {
+  handleCloseSearchClick = evt => {
     console.log(evt.target);
     const className = evt.target.classList[0];
-    console.log(className); 
-    const filters = ['bx--search', 'bx--search-input', 'bx--search-magnifier', 'ds-dataset-1'];
-    if(filters.indexOf(className) === -1) {
+    console.log(className);
+    const filters = [
+      'bx--search',
+      'bx--search-input',
+      'bx--search-magnifier',
+      'ds-dataset-1',
+    ];
+    if (filters.indexOf(className) === -1) {
       this.handleSearchClick('isSearchOpen');
     }
-  }
+  };
 
   onToggleBtnClick = (
     clickedPanel,
@@ -252,24 +259,23 @@ class Layout extends React.Component {
                   <span>IBM Product</span>&nbsp;Design&nbsp;<span>System</span>
                 </HeaderName>
               ) : (
-                  <HeaderName prefix="" to="/" element={Link}>
-                    Carbon&nbsp;<span>Design System</span>
-                  </HeaderName>
-                )}
+                <HeaderName prefix="" to="/" element={Link}>
+                  Carbon&nbsp;<span>Design System</span>
+                </HeaderName>
+              )}
 
               <HeaderGlobalBar>
                 {/* {isInternal ? null : <GlobalSearch />} */}
-                {this.state.isSearchOpen ? <GlobalSearch /> : 
-                <HeaderGlobalAction
-                  className="bx--header__action--search"
-                  aria-label="Search Website"
-                  onClick={() =>
-                    this.handleSearchClick(
-                      'isSearchOpen'
-                    )
-                }>
-                  <Search20 />
-                </HeaderGlobalAction>}
+                {this.state.isSearchOpen ? (
+                  <GlobalSearch />
+                ) : (
+                  <HeaderGlobalAction
+                    className="bx--header__action--search"
+                    aria-label="Search Website"
+                    onClick={() => this.handleSearchClick('isSearchOpen')}>
+                    <Search20 />
+                  </HeaderGlobalAction>
+                )}
                 <HeaderGlobalAction
                   className="bx--header__action--switcher"
                   aria-label="Switch"
