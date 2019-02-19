@@ -44,9 +44,9 @@ Checkbox headings and labels should be sentence case, with only the first word i
 | ------------------------------------- | -------------- | --------- | ------------- |
 | `.bx--checkbox`                       | height & width | 16px      | –             |
 | `.bx--checkbox`                       | border         | 1px       | –             |
-| `.bx--label`                          | margin-bottom  | 8 / 0.5   | $spacing-03   |
-| `.bx--checkbox-label`                 | padding-left   | 8 / 0.5   | $spacing-03   |
-| `.bx--form-item.bx--checkbox-wrapper` | margin-bottom  | 8 / 0.5   | $spacing-03   |
+| `.bx--label`                          | margin-bottom  | 8 / 0.5   | `$spacing-03`   |
+| `.bx--checkbox-label`                 | padding-left   | 8 / 0.5   | `$spacing-03`   |
+| `.bx--form-item.bx--checkbox-wrapper` | margin-bottom  | 8 / 0.5   | `$spacing-03`   |
 
 <image-component fixed="default" caption="Structure and spacing measurements for checkbox | px / rem">
 
