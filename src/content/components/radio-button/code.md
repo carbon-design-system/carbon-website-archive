@@ -1,7 +1,10 @@
 ---
 title: Radio Button
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
+
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
 
 
 
@@ -12,5 +15,5 @@ tabs: ['Code', 'Usage']
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="radio-button" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="radio-button" experimental="true"></ComponentDocs>

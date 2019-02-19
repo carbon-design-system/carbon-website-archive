@@ -1,7 +1,10 @@
 ---
 title: Dropdown
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
+
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
 
 
 <AnchorLinks>

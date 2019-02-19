@@ -1,7 +1,10 @@
 ---
 title: Tabs
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
+
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
 
 ## General guidance
 _Tabs_ are used to quickly navigate between views within the same context.

@@ -1,42 +1,45 @@
 ---
 title: Modal
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
 
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
 
-<component 
+
+<ComponentCode
     name="Passive Modal"
     component="modal" 
     variation="modal--nofooter"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
+</ComponentCode>
 
-<component 
+<ComponentCode
     name="Transactional Modal"
     component="modal" 
     variation="modal"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
+</ComponentCode>
 
-<component 
+<ComponentCode
     name="Danger Modal"
     component="modal" 
     variation="modal--danger"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
+</ComponentCode>
 
-<component 
+<ComponentCode
     name="Input Modal"
     component="modal" 
     variation="modal--input"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="modal"></component-docs>
+</ComponentCode>
+<ComponentDocs component="modal"></ComponentDocs>

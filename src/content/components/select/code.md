@@ -1,9 +1,12 @@
 ---
 title: Select
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
 
-<component 
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
+
+<ComponentCode
     name="Select"
     component="select" 
     variation="select"
@@ -12,9 +15,9 @@ tabs: ['Code', 'Usage']
     haslightversion="true"
     hasReactversion="true"
     >
-</component>
+</ComponentCode>
 
-<component 
+<ComponentCode
     name="Select Invalid"
     component="select" 
     variation="select--invalid"
@@ -22,23 +25,23 @@ tabs: ['Code', 'Usage']
     hasReactVersion="true"
     haslightversion="true"
     >
-</component>
+</ComponentCode>
 
-<component 
+<ComponentCode
     name="Inline Select"
     component="select" 
     variation="select--inline"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
+</ComponentCode>
 
-<component 
+<ComponentCode
     name="Inline Select Invalid"
     component="select" 
     variation="select--inline-invalid"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="select" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="select" experimental="true"></ComponentDocs>

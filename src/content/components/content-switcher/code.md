@@ -1,23 +1,26 @@
 ---
 title: Content Switcher
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
 
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
 
-<component 
+
+<ComponentCode
     name="Content Switcher"
     component="content-switcher" 
     variation="content-switcher"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component 
+</ComponentCode>
+<ComponentCode
     name="Content Switcher with Icon" 
     component="content-switcher" 
     variation="content-switcher--with-icon"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="content-switcher" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="content-switcher" experimental="true"></ComponentDocs>

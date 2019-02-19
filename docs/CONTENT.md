@@ -399,9 +399,9 @@ lorem ipsum dolor sit amet
     hasLightBackground="true" //Optional -If true has light background
     experimental="true" //Optional -If true loads experimental version/styles
     >
-</component>
+</ComponentCode>
 
-<component-docs component="accordion"></component-docs>
+<ComponentDocs component="accordion"></ComponentDocs>
 
 <component-react
     name="Multi-select Dropdown"

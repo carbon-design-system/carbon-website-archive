@@ -1,19 +1,22 @@
 ---
 title: Dropdown
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
 
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
 
 
-<component 
+
+<ComponentCode
     name="Dropdown"
     component="dropdown" 
     variation="dropdown"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component 
+</ComponentCode>
+<ComponentCode
     name="Dropdown (Up)"
     component="dropdown" 
     variation="dropdown--up"
@@ -21,7 +24,7 @@ tabs: ['Code', 'Usage']
     experimental="true"
     hasReactVersion="true"
     >
-</component>
+</ComponentCode>
 <component-react
     name="Multi select"
     component="MultiSelect"
@@ -50,4 +53,4 @@ tabs: ['Code', 'Usage']
     >
 </component-react>
 
-<component-docs component="dropdown" experimental="true"></component-docs>
+<ComponentDocs component="dropdown" experimental="true"></ComponentDocs>

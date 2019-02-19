@@ -1,13 +1,16 @@
 ---
 title: UI Shell
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
 
-<component 
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
+
+<ComponentCode
     name="Experimental UI Shell"
     component="ui-shell"
     variation="ui-shell" 
     experimental="true"
     hasReactVersion="true"
     >
-</component>
+</ComponentCode>

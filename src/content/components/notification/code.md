@@ -1,7 +1,10 @@
 ---
 title: Notification
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
+
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
 
 
 <component
@@ -11,7 +14,7 @@ tabs: ['Code', 'Usage']
     experimental="true"
     hasReactVersion="true"
     >
-</component>
+</ComponentCode>
 <component
     name="Toast notification"
     component="notification"
@@ -19,5 +22,5 @@ tabs: ['Code', 'Usage']
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="notification" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="notification" experimental="true"></ComponentDocs>

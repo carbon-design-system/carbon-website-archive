@@ -1,7 +1,10 @@
 ---
 title: Inline Loading
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
+
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
 <AnchorLinks>
 <ul>
     <li><a data-scroll href="#general-guidance">General guidance</a></li>

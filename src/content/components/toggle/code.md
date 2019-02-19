@@ -1,23 +1,26 @@
 ---
 title: Toggle
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
 
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
 
-<component 
+
+<ComponentCode
     name="Toggle"
     component="toggle" 
     variation="toggle"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component 
+</ComponentCode>
+<ComponentCode
     name="Small toggle"
     component="toggle" 
     variation="toggle--small"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="toggle" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="toggle" experimental="true"></ComponentDocs>

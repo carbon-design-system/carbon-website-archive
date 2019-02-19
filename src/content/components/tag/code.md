@@ -1,15 +1,18 @@
 ---
 title: Tag
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
 
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
 
-<component 
+
+<ComponentCode
     name="Tag"
     component="tag" 
     variation="tag"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="tag" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="tag" experimental="true"></ComponentDocs>

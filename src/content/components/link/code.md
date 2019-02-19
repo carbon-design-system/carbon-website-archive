@@ -1,13 +1,16 @@
 ---
 title: Link
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
 
-<component 
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
+
+<ComponentCode
     name="Link"
     component="link" 
     variation="link"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
+</ComponentCode>

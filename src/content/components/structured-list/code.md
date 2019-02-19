@@ -1,23 +1,26 @@
 ---
 title: Structured List
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
 
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
 
-<component 
+
+<ComponentCode
     name="Structured list"
     component="structured-list" 
     variation="structured-list"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component 
+</ComponentCode>
+<ComponentCode
     name="Structured list with selection"
     component="structured-list" 
     variation="structured-list--selection"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="structured-list" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="structured-list" experimental="true"></ComponentDocs>

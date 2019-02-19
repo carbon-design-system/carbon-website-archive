@@ -1,14 +1,17 @@
 ---
 title: Slider
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
 
-<component 
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
+
+<ComponentCode
     name="Slider"
     component="slider" 
     variation="slider"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="slider" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="slider" experimental="true"></ComponentDocs>

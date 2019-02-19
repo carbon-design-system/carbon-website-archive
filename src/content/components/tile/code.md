@@ -1,39 +1,42 @@
 ---
 title: Tile
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
 
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
 
-<component 
+
+<ComponentCode
     name="Tile"
     component="tile" 
     variation="tile"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component 
+</ComponentCode>
+<ComponentCode
     name="Clickable Tile"
     component="tile" 
     variation="tile--clickable"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component 
+</ComponentCode>
+<ComponentCode
     name="Selectable Tile"
     component="tile" 
     variation="tile--selectable"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component 
+</ComponentCode>
+<ComponentCode
     name="Expandable Tile"
     component="tile" 
     variation="tile--expandable"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="tile" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="tile" experimental="true"></ComponentDocs>

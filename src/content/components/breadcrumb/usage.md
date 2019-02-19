@@ -1,7 +1,8 @@
 ---
 title: Breadcrumb
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
+
 
 ## General guidance
 

@@ -1,15 +1,18 @@
 ---
 title: Checkbox
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
 
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
 
-<component 
+
+<ComponentCode
     name="Checkbox"
     component="checkbox" 
     variation="checkbox"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="checkbox" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="checkbox" experimental="true"></ComponentDocs>

@@ -1,7 +1,10 @@
 ---
 title: Text Input
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
+
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
 
 
 <component
@@ -11,7 +14,7 @@ tabs: ['Code', 'Usage']
     experimental="true"
     hasReactVersion="true"
     >
-</component>
+</ComponentCode>
 
 <component
     name="Text Area"
@@ -20,6 +23,6 @@ tabs: ['Code', 'Usage']
     experimental="true"
     hasReactVersion="true"
     >
-</component>
+</ComponentCode>
 
-<component-docs component="text-input" experimental="true"></component-docs>
+<ComponentDocs component="text-input" experimental="true"></ComponentDocs>

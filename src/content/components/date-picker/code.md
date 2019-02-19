@@ -1,7 +1,10 @@
 ---
 title: Date Picker
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
+
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
 
 
 <component
@@ -11,7 +14,7 @@ tabs: ['Code', 'Usage']
     experimental="true"
     hasReactVersion="true"
     >
-</component>
+</ComponentCode>
 <component
     name="Single date picker"
     component="date-picker"
@@ -19,7 +22,7 @@ tabs: ['Code', 'Usage']
     experimental="true"
     hasReactVersion="true"
     >
-</component>
+</ComponentCode>
 <component
     name="Range date picker"
     component="date-picker"
@@ -27,7 +30,7 @@ tabs: ['Code', 'Usage']
     experimental="true"
     hasReactVersion="true"
     >
-</component>
+</ComponentCode>
 <component
     name="Time picker"
     component="time-picker"
@@ -35,5 +38,5 @@ tabs: ['Code', 'Usage']
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="date-picker" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="date-picker" experimental="true"></ComponentDocs>

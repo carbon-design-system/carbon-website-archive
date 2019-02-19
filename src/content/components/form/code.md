@@ -1,15 +1,18 @@
 ---
 title: Form
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
 
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
 
-<component 
+
+<ComponentCode
     name="Form"
     component="form" 
     variation="form"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="form"></component-docs>
+</ComponentCode>
+<ComponentDocs component="form"></ComponentDocs>

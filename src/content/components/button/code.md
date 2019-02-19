@@ -1,87 +1,90 @@
 ---
 title: Button
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
 
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
 
-<component 
+
+<ComponentCode
     name="Primary button"
     component="button"
     variation="button--primary" 
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component 
+</ComponentCode>
+<ComponentCode
     name="Secondary button"
     component="button"
     variation="button--secondary" 
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component 
+</ComponentCode>
+<ComponentCode
     name="Tertiary button"
     component="button"
     variation="button--tertiary" 
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component 
+</ComponentCode>
+<ComponentCode
     name="Ghost button"
     component="button"
     variation="button--ghost" 
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component 
+</ComponentCode>
+<ComponentCode
     name="Danger button"
     component="button"
     variation="button--danger--primary" 
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component 
+</ComponentCode>
+<ComponentCode
     name="Small primary button"
     component="button"
     variation="button--primary--small" 
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component 
+</ComponentCode>
+<ComponentCode
     name="Small secondary button"
     component="button"
     variation="button--secondary--small" 
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component 
+</ComponentCode>
+<ComponentCode
     name="Small tertiary button"
     component="button"
     variation="button--tertiary--small" 
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component 
+</ComponentCode>
+<ComponentCode
     name="Small ghost button"
     component="button"
     variation="button--ghost--small" 
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component 
+</ComponentCode>
+<ComponentCode
     name="Small danger button"
     component="button"
     variation="button--danger--primary--small" 
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="button" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="button" experimental="true"></ComponentDocs>

@@ -1,7 +1,10 @@
 ---
 title: Tabs
-tabs: ['Code', 'Usage']
+tabs: ['Code', 'Usage','Style']
 ---
+
+import ComponentCode from '../../../../src/components/ComponentCode';
+import ComponentDocs from '../../../../src/components/ComponentDocs';
 
 
 <component
@@ -11,5 +14,5 @@ tabs: ['Code', 'Usage']
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="tabs" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="tabs" experimental="true"></ComponentDocs>
