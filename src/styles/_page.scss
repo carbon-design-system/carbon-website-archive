@@ -128,7 +128,7 @@ body {
 }
 
 // iframe
-.gatsby-resp-iframe-wrapper {
+:not(.website-tabs) .gatsby-resp-iframe-wrapper {
   @include breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
     padding-bottom: 43% !important;
