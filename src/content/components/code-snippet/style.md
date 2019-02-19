@@ -6,16 +6,23 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                        | Property         | SCSS       |
+### Single & Multi-line
+
+| Class                        | Property         | Color token |
 | ---------------------------- | ---------------- | ---------- |
-| `.bx--snippet--single`       | background       | $ui-01     |
-| `.bx--snippet--single`       | border           | $ui-03     |
-| `.bx--snippet__icon`         | color            | $brand-01  |
-| `.bx--snippet--inline`       | background-color | $field-01  |
-| `.bx--snippet--inline`       | color            | $text-02   |
-| `.bx--snippet--inline:hover` | background-color | $hover-row |
-| `.bx--snippet--light`        | background-color | $field-02  |
-| `.bx--snippet--light:hover`  | background-color | $ui-02     |
+| `.bx--snippet`               | background       | `$field-01`  |
+| `.bx--snippet__icon`         | color            | `$icon-01`   |
+| `.bx--snippet-button:hover`  | background-color | `$hover-ui ` |
+| `.bx--snippet--light`        | background-color | `$field-02`  |
+| `.bx--snippet--light:hover`  | background-color | `$hover-ui`  |
+
+### Inline snippet
+
+| Class                        | Property         | Color token |
+| ---------------------------- | ---------------- | ---------- |
+| `.bx--snippet--inline`       | background-color | `$field-01`  |
+| `.bx--snippet--inline`       | color            | `$text-02 `  |
+| `.bx--snippet--inline:hover` | background-color | `$hover-ui`  |
 
 ### Syntax colors
 
@@ -23,22 +30,21 @@ Carbon has defined a set of accessible syntax colors. View an incontext [example
 
 ## Typography
 
-| Class                       | Font-size (px/rem)    | Font-weight  | Font-family |
-| --------------------------- | --------------------- | ------------ | ----------- |
-| `.bx--snippet.code`         | 85% of body copy size | Normal / 400 | Monospace   |
-| `.bx--snippet.code`         | 85% of body copy size | Normal / 400 | Monospace   |
-| `.bx--snippet--inline.code` | 85% of body copy size | Normal / 400 | Monospace   |
+| Class                       | Font-size (px/rem)    | Font-weight   | Type token  |
+| --------------------------- | --------------------- | ------------- | ----------- |
+| `.bx--snippet.code`         | 12 / 0.75             | Regular / 400 | `$code-01 ` |
+| `.bx--snippet--inline.code` | 12 / 0.75             | Regular / 400 | `$code-01 ` |
 
 ## Structure
 
-### Code snippet
+### Single line
 
 | Class                  | Property      | px / rem   | Spacing token |
 | ---------------------- | ------------- | ---------- | ------------- |
-| `.bx--snippet--single` | height        | 56 / 3.5   | -             |
-| `.bx--snippet--single` | width (100%)  | 600 / 37.5 | -             |
-| `.bx--snippet--single` | padding-right | 40 / 2.5   | $spacing-2xl  |
-| `.bx--snippet--single` | padding-left  | 16 / 1     | $spacing-md   |
+| `.bx--snippet--single` | height        | 40 / 3     | –             |
+| `.bx--snippet--single` | max-width     | 768 / 48   | –             |
+| `.bx--snippet--single` | padding-right | 48 / 3     | `$spacing-09` |
+| `.bx--snippet--single` | padding-left  | 16 / 1     | `$spacing-05` |
 
 <!-- Not done with spacing but with positioning
 || Spacing: icon & tooltip | 4 | 0.5| -->
@@ -53,13 +59,14 @@ Carbon has defined a set of accessible syntax colors. View an incontext [example
 
 | Class                                        | Property                    | px / rem                          | Spacing token |
 | -------------------------------------------- | --------------------------- | --------------------------------- | ------------- |
-| `.bx--snippet--multi`                        | min-height                  | 288 / 18                          | -             |
-| `.bx--snippet--multi .bx--snippet-container` | max-height                  | Varies based on amount of content | -             |
-| `.bx--snippet--multi`                        | width                       | 600 / 37.5                        | -             |
-| `.bx--snippet--multi`                        | padding-top, padding-bottom | 16 / 1                            | $spacing-md   |
-| `.bx--snippet--multi`                        | padding-right               | 48 / 3                            | $spacing-3xl  |
-| `.bx--snippet--multi`                        | padding-left                | 24 / 1.5                          | $spacing-lg   |
-| `.bx--snippet__icon`                         | height, width               | 16 / 1                            | -             |
+| `.bx--snippet--multi`                        | min-height                  | 288 / 18                          | –             |
+| `.bx--snippet--multi`                        | max-height                  | Varies based on content           | –             |
+| `.bx--snippet--multi`                        | max-width                   | 768 / 48                          | –             |
+| `.bx--snippet-container`                     | padding-top, padding-bottom | 16 / 1                            | `$spacing-05` |
+| `.bx--snippet-container`                     | padding-right               | 48 / 3                            | `$spacing-09` |
+| `.bx--snippet-container`                     | padding-left                | 16 / 1                            | `$spacing-05` |
+| `.bx--snippet__icon`                         | height, width               | 16px                              | –             |
+| `.bx--snippet-button`                        | height, width               | 32 / 2                            | –             |
 
 <image-component fixed="default" caption="Structure and spacing measurements for multi-line snippet | px / rem">
 
@@ -71,9 +78,10 @@ Carbon has defined a set of accessible syntax colors. View an incontext [example
 
 | Class                       | Property                    | px / rem                | Spacing token |
 | --------------------------- | --------------------------- | ----------------------- | ------------- |
-| `.bx--snippet--inline`      | width                       | Varies based on content | -             |
-| `.bx--snippet--inline`      | border-radius               | 4                       | -             |
-| `.bx--snippet--inline code` | padding-right, padding-left | 8 / 0.5                 | $spacing-xs   |
+| `.bx--snippet--inline`      | height                      | 16 / 1                  | –             |
+| `.bx--snippet--inline`      | width                       | Varies based on content | –             |
+| `.bx--snippet--inline`      | border-radius               | 2                       | -             |
+| `.bx--snippet--inline code` | padding-right, padding-left | 8 / 0.5                 | $spacing-03   |
 
 <image-component fixed="default" caption="Structure and spacing measurements for inline code snippet | px / rem">
 
