@@ -1,10 +1,7 @@
 ---
 title: Select
-tabs: ['Code', 'Usage','Style']
+tabs: ['Code', 'Usage', 'Style']
 ---
-
-import ComponentCode from '../../../../src/components/ComponentCode';
-import ComponentDocs from '../../../../src/components/ComponentDocs';
 
 
 
@@ -17,28 +14,28 @@ _Select_ is a type of input that is used in forms, where a user is submitting da
 | Select type   | Purpose                                                                                                                                                     |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | _Default_      | Typically used in forms with a variety of other components.                                                                                                 |
-| _Small select_  | When vertical space is a concern, or Select is being paired with larger component, such as [cards](/add-ons/card) or [data tables](/components/data-table). |
+| _Small select_  | When vertical space is a concern, or select is being paired with a larger component like [data tables](/components/data-table). |
 | _Inline select_ | When multiple selects are grouped together.                                                                                                                 |
 
 #### Small select
 
 _Small selects_ are commonly used in [data tables](/components/data-table). When using a small select for a number selection, the increments in the select should be 10, 25, 50 and 100. The maximum amount of items a user can see per page is 100.
 
-<ImageComponent cols="8" caption="Example of small select in data table">
+<image-component cols="8" caption="Example of small select in data table">
 
 ![Example of a small select](images/select-usage-3.png)
 
-</ImageComponent>
+</image-component>
 
 #### Inline select
 
-Inline select is useful when you have multiple `select` fields within a form. Inline selects have less visual weight on a page because they are borderless.
+Inline select is useful when you have multiple select fields within a form. Inline selects have less visual weight on a page because they are borderless.
 
-<ImageComponent cols="8" caption="Example of Inline select">
+<image-component cols="8" caption="Example of inline select">
 
 ![Example of a small select](images/select-usage-4.png)
 
-</ImageComponent>
+</image-component>
 
 ## General guidelines
 
@@ -50,11 +47,11 @@ Labels are essential to the usability of forms. Do not place a label inside a _s
 
 Real-time validation helps to streamline the process and keep data clean when the user is filling out forms. For full guidelines, refer to the [forms](/components/form) usage page.
 
-<ImageComponent cols="8" caption="Validation on select">
+<image-component cols="8" caption="Validation on select">
 
 ![Example of a small select](images/select-usage-1.png)
 
-</ImageComponent>
+</image-component>
 
 ### Order
 
@@ -62,12 +59,12 @@ The order of the select list should be based on the frequency of use. If applica
 
 ## Accessibility
 
-### Styling _select_ dropdowns
+### Styling select dropdowns
 
-<p>To maximize accessibility, it is strongly recommended not to style _select_ dropdowns.
-One of the <a href="https://www.w3.org/TR/WCAG20-TECHS/G202.html" target="_blank">WCAG 2.0 standards</a> for accessibility is “ensuring keyboard control for all functionality.” CSS alternatives to `select` elements do not meet this requirement.</p>
+To maximize accessibility, it is strongly recommended not to style select dropdowns.
+One of the [WCAG 2.0 standards](https://www.w3.org/TR/WCAG20-TECHS/G202.html) for accessibility is “ensuring keyboard control for all functionality.” CSS alternatives to select elements do not meet this requirement.
 
-While you can make a select element easily usable by a mouse, making it usable with keyboard navigation is complex. The default `select` element should follow this process:
+While you can make a select element easily usable by a mouse, making it usable with keyboard navigation is complex. The default select element should follow this process:
 
 | State        | Mouse                                    | Keyboard                                            |
 | ------- | ---------------------------------------- | --------------------------------------------------- |
