@@ -19,13 +19,21 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve('./src/components/Layouts/index.js'),
         },
-        /*    globalScope: `
-          import { Button } from 'carbon-components-react';
-          export default { Button };
-          import FeatureTile from '${__dirname}/src/components/FeatureTile';
-          import ClickableTile from '${__dirname}/src/components/ClickableTile';
-          import GridWrapper from '${__dirname}/src/components/GridWrapper';
-        `, */
+        globalScope: `
+        import AnchorLinks from '${__dirname}/src/components/AnchorLinks';
+        import { Button } from 'carbon-components-react';
+        import ClickableTile from '${__dirname}/src/components/ClickableTile';
+        import FeatureTile from '${__dirname}/src/components/FeatureTile';
+        import GridWrapper from '${__dirname}/src/components/GridWrapper';
+
+        export default {
+          AnchorLinks,
+          Button,
+          ClickableTile,
+          FeatureTile,
+          GridWrapper
+        };
+      `,
         gatsbyRemarkPlugins: [
           /* { resolve: 'gatsby-remark-unwrap-images' },
           {
