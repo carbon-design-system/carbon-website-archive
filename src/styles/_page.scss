@@ -212,6 +212,7 @@ img[src*='gif'] {
   width: 100%;
   z-index: 9999;
   background: $brand-01;
+  display: none;
 }
 
 .website-alert__icon {
@@ -301,7 +302,9 @@ img[src*='gif'] {
 // global site header
 .#{$prefix}--header--website {
   transition-property: carbon--motion(standard);
-  // position: absolute;
+  position: absolute;
+}
+.#{$prefix}--header--global {
 }
 
 // side nav

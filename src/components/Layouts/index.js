@@ -263,49 +263,52 @@ class Layout extends React.Component {
               ]}>
               <html lang="en" />
             </Helmet>
-            <aside aria-label="alert banner" className="website-alert">
-              <Information20 className="website-alert__icon" />
-              <p className="website-alert__text">
-                <span>Carbon v10 is in beta</span>
-                <span>;</span>{' '}
-                <span>for production-ready components, use Carbon v9.</span>
-              </p>
-              <a
-                className="website-alert__button"
-                tabIndex="-1"
-                href=" https://www.carbondesignsystem.com">
-                <button class="bx--btn bx--btn--secondary" type="button">
-                  <span>Go to v9</span>
-                  <ArrowRight20 />
-                </button>
-              </a>
-            </aside>
+
             <Header aria-label="Header" className="bx--header--website">
               <SkipToContent />
-              <HeaderMenuButton
-                className="bx--header__action--menu"
-                aria-label="Open menu"
-                onClick={() =>
-                  this.onToggleBtnClick(
-                    'isLeftNavOpen',
-                    'isLeftNavFinal',
-                    'isSwitcherOpen',
-                    'isSwitcherFinal'
-                  )
-                }
-                isActive={isLeftNavOpen}
-              />
-              {isInternal ? (
-                <HeaderName prefix="" to="/" element={Link} href="/">
-                  <span>IBM Product</span>&nbsp;Design&nbsp;<span>System</span>
-                </HeaderName>
-              ) : (
-                <HeaderName prefix="" to="/" element={Link}>
-                  Carbon&nbsp;<span>Design System</span>
-                </HeaderName>
-              )}
+
+              {/* <aside aria-label="alert banner" className="website-alert">
+                <Information20 className="website-alert__icon" />
+                <p className="website-alert__text">
+                  <span>Carbon v10 is in beta</span>
+                  <span>;</span>{' '}
+                  <span>for production-ready components, use Carbon v9.</span>
+                </p>
+                <a
+                  className="website-alert__button"
+                  tabIndex="-1"
+                  href=" https://www.carbondesignsystem.com">
+                  <button class="bx--btn bx--btn--secondary" type="button">
+                    <span>Go to v9</span>
+                    <ArrowRight20 />
+                  </button>
+                </a>
+              </aside> */}
 
               <HeaderGlobalBar>
+                <HeaderMenuButton
+                  className="bx--header__action--menu"
+                  aria-label="Open menu"
+                  onClick={() =>
+                    this.onToggleBtnClick(
+                      'isLeftNavOpen',
+                      'isLeftNavFinal',
+                      'isSwitcherOpen',
+                      'isSwitcherFinal'
+                    )
+                  }
+                  isActive={isLeftNavOpen}
+                />
+                {isInternal ? (
+                  <HeaderName prefix="" to="/" element={Link} href="/">
+                    <span>IBM Product</span>&nbsp;Design&nbsp;
+                    <span>System</span>
+                  </HeaderName>
+                ) : (
+                  <HeaderName prefix="" to="/" element={Link}>
+                    Carbon&nbsp;<span>Design System</span>
+                  </HeaderName>
+                )}
                 {/* {isInternal ? null : <GlobalSearch />} */}
                 {this.state.isSearchOpen ? (
                   <GlobalSearch />
