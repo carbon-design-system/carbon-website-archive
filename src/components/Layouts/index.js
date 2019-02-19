@@ -19,16 +19,22 @@ import {
   AppSwitcher20,
   Close20,
   Information20,
-  Search20
+  Search20,
 } from '@carbon/icons-react';
 import { WebsiteFooter, WebsiteSwitcher } from '@carbon/addons-website';
+
+import Snippet from '../CodeSnippet';
+import PageTable from '../PageTable';
+
+import { p, h1, h2, h3, h4, h5, ul, ol } from '../markdown/Markdown';
 
 import timestamp from 'raw-loader!../../../build-timestamp';
 import '../../styles/index.scss';
 import '../../styles/experimental.scss';
 
-class Layout extends React.Component {
+import { MDXProvider } from '@mdx-js/tag';
 
+class Layout extends React.Component {
   static propTypes = {
     children: PropTypes.any,
   };
@@ -54,29 +60,37 @@ class Layout extends React.Component {
     });
   }
 
-  handleSearchClick = (isSearchOpen) => {
-    this.setState({
-      [isSearchOpen]: !this.state.isSearchOpen
-    }, this.handleSearchEventListener);
-  }
+  handleSearchClick = isSearchOpen => {
+    this.setState(
+      {
+        [isSearchOpen]: !this.state.isSearchOpen,
+      },
+      this.handleSearchEventListener
+    );
+  };
 
   handleSearchEventListener = () => {
-    if(this.state.isSearchOpen) {
-      document.body.addEventListener('click',this.handleCloseSearchClick);
+    if (this.state.isSearchOpen) {
+      document.body.addEventListener('click', this.handleCloseSearchClick);
     } else {
-      document.body.removeEventListener('click',this.handleCloseSearchClick);
+      document.body.removeEventListener('click', this.handleCloseSearchClick);
     }
-  }
+  };
 
-  handleCloseSearchClick = (evt) => {
+  handleCloseSearchClick = evt => {
     console.log(evt.target);
     const className = evt.target.classList[0];
-    console.log(className); 
-    const filters = ['bx--search', 'bx--search-input', 'bx--search-magnifier', 'ds-dataset-1'];
-    if(filters.indexOf(className) === -1) {
+    console.log(className);
+    const filters = [
+      'bx--search',
+      'bx--search-input',
+      'bx--search-magnifier',
+      'ds-dataset-1',
+    ];
+    if (filters.indexOf(className) === -1) {
       this.handleSearchClick('isSearchOpen');
     }
-  }
+  };
 
   onToggleBtnClick = (
     clickedPanel,
@@ -245,24 +259,23 @@ class Layout extends React.Component {
                   <span>IBM Product</span>&nbsp;Design&nbsp;<span>System</span>
                 </HeaderName>
               ) : (
-                  <HeaderName prefix="" to="/" element={Link}>
-                    Carbon&nbsp;<span>Design System</span>
-                  </HeaderName>
-                )}
+                <HeaderName prefix="" to="/" element={Link}>
+                  Carbon&nbsp;<span>Design System</span>
+                </HeaderName>
+              )}
 
               <HeaderGlobalBar>
                 {/* {isInternal ? null : <GlobalSearch />} */}
-                {this.state.isSearchOpen ? <GlobalSearch /> : 
-                <HeaderGlobalAction
-                  className="bx--header__action--search"
-                  aria-label="Search Website"
-                  onClick={() =>
-                    this.handleSearchClick(
-                      'isSearchOpen'
-                    )
-                }>
-                  <Search20 />
-                </HeaderGlobalAction>}
+                {this.state.isSearchOpen ? (
+                  <GlobalSearch />
+                ) : (
+                  <HeaderGlobalAction
+                    className="bx--header__action--search"
+                    aria-label="Search Website"
+                    onClick={() => this.handleSearchClick('isSearchOpen')}>
+                    <Search20 />
+                  </HeaderGlobalAction>
+                )}
                 <HeaderGlobalAction
                   className="bx--header__action--switcher"
                   aria-label="Switch"
@@ -320,7 +333,42 @@ class Layout extends React.Component {
             />
 
             <div className="container">
-              {children}
+              <MDXProvider
+                components={{
+                  // Map HTML element tag to React component
+                  p: p,
+                  h1: h1,
+                  h2: h2,
+                  h3: h3,
+                  h4: h4,
+                  h5: h5,
+                  ul: ul,
+                  ol: ol,
+                  pre: Snippet,
+                  table: PageTable,
+                  /* switch all of these to direct react component imports
+                    'grid-wrapper': GridWrapper,
+                    icon: PageIcon,
+                    'clickable-tile': ClickTile,
+                    'feature-tile': FeatureTile,
+                    'do-dont-example': DoDontExample,
+                    'color-block': ColorBlock,
+                    'color-card': ColorCard,
+                    'icon-library': IconLibrary,
+                    'type-scale-table': TypeScaleTable,
+                    'type-weight': TypeWeight,
+                    'type-spec': TypeSpec,
+                    component: ComponentCode,
+                    'component-react': ComponentReact,
+                    'component-docs': ComponentDocs,
+                    'component-status': ComponentStatus,
+                    glossary: Glossary,
+                    'component-overview': ComponentOverview,
+                    'anchor-links': AnchorLinks,
+                    */
+                }}>
+                {children}
+              </MDXProvider>
               <WebsiteFooter
                 logoOffset={true}
                 linksCol1={[
