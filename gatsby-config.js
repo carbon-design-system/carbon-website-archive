@@ -15,23 +15,26 @@ module.exports = {
       resolve: `gatsby-mdx`,
       options: {
         root: __dirname,
-        //extensions: ['.mdx', '.md'],
         defaultLayouts: {
           default: require.resolve('./src/components/Layouts/index.js'),
         },
         globalScope: `
         import AnchorLinks from '${__dirname}/src/components/AnchorLinks';
-        import { Button } from 'carbon-components-react';
         import ClickableTile from '${__dirname}/src/components/ClickableTile';
         import FeatureTile from '${__dirname}/src/components/FeatureTile';
         import GridWrapper from '${__dirname}/src/components/GridWrapper';
+        import DoDontExample from '${__dirname}/src/components/DoDontExample';
+        import ComponentCode from '${__dirname}/src/components/ComponentCode';
+        import ComponentDocs from '${__dirname}/src/components/ComponentDocs';
 
         export default {
           AnchorLinks,
-          Button,
           ClickableTile,
           FeatureTile,
-          GridWrapper
+          GridWrapper,
+          DoDontExample,
+          ComponentDocs,
+          ComponentCode
         };
       `,
         gatsbyRemarkPlugins: [
