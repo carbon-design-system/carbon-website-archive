@@ -2,7 +2,6 @@
 title: FAQ
 ---
 
-The following are some of the most frequently asked questions about the Carbon Design System. Please check back often, as the Carbon team is constanly adding new FAQs to this list.
 
 ### What is the Carbon Design System?
 
