@@ -1,7 +1,10 @@
 ---
 title: Notification
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage','Style']
 ---
+
+
+
 
 ## General guidance
 
@@ -27,11 +30,11 @@ We recommend that toast notifications automatically disappear after five seconds
 Icons may provide additional clarity. Icons should be placed to the left of a title. These glyphs (16x16) can be found in the [iconography](/guidelines/iconography/library) library.
 
 
-<image-component cols="8">
+<ImageComponent cols="8">
 
 ![The three icon states](images/notification-usage-1.png)
 
-</image-component>
+</ImageComponent>
 
 ## Variations
 
@@ -47,28 +50,28 @@ Icons may provide additional clarity. Icons should be placed to the left of a ti
 
 Toast notifications slide in and out a page from the top-right corner. Actionable notifications do not appear on mobile screen widths.
 
-<image-component cols="8">
+<ImageComponent cols="8">
 
 ![Toast notification example](images/notification-usage-2.png)
 
-</image-component>
+</ImageComponent>
 
 #### Inline notifications
 
 Inline notifications appear near its related item. In [forms](/components/form), we recommend placing the inline notification at the bottom of the form, right before the submission buttons. Depending on the context of the page, inline notifications can appear above the content as well.
 
-<image-component cols="8">
+<ImageComponent cols="8">
 
 ![Form example with inline notification](images/notification-usage-3.png)
 
-</image-component>
+</ImageComponent>
 
 #### Inline notifications
 
 Inline notifications appear near its related item. In [Forms](/components/form), we recommend placing the inline notification at the bottom of the form, right before the submission buttons. Depending on the context of the page, inline notifications can appear above the content as well.
 
-<image-component cols="8">
+<ImageComponent cols="8">
 
 ![Form example with inline notification](images/notification-usage-3.png)
 
-</image-component>
+</ImageComponent>

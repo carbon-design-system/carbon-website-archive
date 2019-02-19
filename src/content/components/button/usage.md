@@ -1,9 +1,12 @@
 ---
 title: Button
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage','Style']
 ---
 
-<anchor-links>
+
+
+
+<AnchorLinks>
 <ul>
     <li><a data-scroll href="#general-guidance">General guidance</a></li>
     <li><a data-scroll href="#variations">Variations</a></li>
@@ -11,7 +14,7 @@ tabs: ['Code', 'Usage', 'Style']
     <li><a data-scroll href="#icon-usage">Icon usage</a></li>
     <li><a data-scroll href="#danger-button-usage">Danger button usage</a></li>
 </ul>
-</anchor-links>
+</AnchorLinks>
 
 ## General guidance
 
@@ -51,18 +54,18 @@ For consistency, see [labels and idioms](/guidelines/content/glossary) for the a
 - Glyphs must be the same color value as the text within a button.
 - Ghost buttons require a glyph icon.
 
-<image-component  cols="8" caption="Glyph usage in Buttons">
+<ImageComponent  cols="8" caption="Glyph usage in Buttons">
 
 ![button with glyph](images/button-usage-1.png)
 
-</image-component>
+</ImageComponent>
 
 ## Danger button usage
 
 Danger buttons have a different visual style to inform users of potentially destructive actions they are about to take. If using the danger button as a standalone, we recommend styling it as a **secondary button**. Within a set, the danger button should be styled as a **primary button.**
 
-<image-component cols="8" caption="Danger button set">
+<ImageComponent cols="8" caption="Danger button set">
 
 ![danger button set in modal](images/button-usage-2.png)
 
-</image-component>
+</ImageComponent>

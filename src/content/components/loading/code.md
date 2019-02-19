@@ -1,24 +1,27 @@
 ---
 title: Loading
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage','Style']
 ---
 
 
 
-<component 
+
+
+
+<ComponentCode
     name="Loading"
     component="loading" 
     variation="loading"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component 
+</ComponentCode>
+<ComponentCode
     name=" Experimental Loading"
     component="loading" 
     variation="loading--small"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="loading" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="loading" experimental="true"></ComponentDocs>

@@ -1,7 +1,10 @@
 ---
-title: Radio button
-tabs: ['Code', 'Usage', 'Style']
+title: Radio Button
+tabs: ['Code', 'Usage','Style']
 ---
+
+
+
 
 
 
@@ -12,5 +15,5 @@ tabs: ['Code', 'Usage', 'Style']
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="radio-button" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="radio-button" experimental="true"></ComponentDocs>

@@ -1,13 +1,16 @@
 ---
 title: Link
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage','Style']
 ---
 
-<component 
+
+
+
+<ComponentCode
     name="Link"
     component="link" 
     variation="link"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
+</ComponentCode>

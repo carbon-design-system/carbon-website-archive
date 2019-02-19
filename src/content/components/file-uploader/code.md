@@ -1,7 +1,10 @@
 ---
-title: File uploader
-tabs: ['Code', 'Usage', 'Style']
+title: File Uploader
+tabs: ['Code', 'Usage','Style']
 ---
+
+
+
 
 
 <component
@@ -11,5 +14,5 @@ tabs: ['Code', 'Usage', 'Style']
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="file-uploader" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="file-uploader" experimental="true"></ComponentDocs>

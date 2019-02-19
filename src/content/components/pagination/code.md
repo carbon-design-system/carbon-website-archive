@@ -1,16 +1,19 @@
 ---
 title: Pagination
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage','Style']
 ---
 
 
-<component 
+
+
+
+<ComponentCode
     name="Pagination"
     component="pagination" 
     variation="pagination"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
+</ComponentCode>
 
-<component-docs component="pagination"></component-docs>
+<ComponentDocs component="pagination"></ComponentDocs>

@@ -1,7 +1,10 @@
 ---
 title: Tabs
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage','Style']
 ---
+
+
+
 
 
 <component
@@ -11,5 +14,5 @@ tabs: ['Code', 'Usage', 'Style']
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="tabs" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="tabs" experimental="true"></ComponentDocs>

@@ -48,24 +48,24 @@ Modal labels are optional and should be set in all caps when used. Modal titles 
 | `.bx--modal-footer`                        | padding-left, padding-right | 48 / 3     | $spacing-3xl  |
 | `.bx--btn--secondary + .bx--btn--primary,` | margin-left                 | 16 / 1     | $spacing-md   |
 
-<image-component fixed="default" caption="Structure and spacing measurements for a Passive Modal | px / rem">
+<ImageComponent fixed="default" caption="Structure and spacing measurements for a Passive Modal | px / rem">
 
 ![Structure and spacing measurements for Passive Modal](images/modal-style-1.png)
 
-</image-component>
+</ImageComponent>
 
-<image-component fixed="default" caption="Structure and spacing measurements for a Transactional Modal | px / rem">
+<ImageComponent fixed="default" caption="Structure and spacing measurements for a Transactional Modal | px / rem">
 
 ![Structure and spacing measurements for Transactional Modal elements](images/modal-style-2.png)
 
-</image-component>
+</ImageComponent>
 
 ## Mobile
 
 Modals should be full screen on mobile.
 
-<image-component fixed="default" caption="Example of a Modal on a mobile screen">
+<ImageComponent fixed="default" caption="Example of a Modal on a mobile screen">
 
 ![Modal on mobile](images/modal-style-3.png)
 
-</image-component>
+</ImageComponent>

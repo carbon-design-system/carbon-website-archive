@@ -6,13 +6,13 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                       | Attribute        | SCSS      |
-| --------------------------- | ---------------- | --------- |
-| `.bx--slider__thumb`        | fill             | $brand-01 |
-| `.bx--slider__filled-track` | background-color | $brand-01 |
-| `.bx--slider__track`        | background-color | $ui-04    |
-| `.bx--label`                | color            | $text-01  |
-| `.bx--slider__range-label`  | color            | $text-02  |
+| Class                       | Attribute        | SCSS      | HEX     |
+| --------------------------- | ---------------- | --------- | ------- |
+| `.bx--slider__thumb`        | fill             | $brand-01 | #3d70b2 |
+| `.bx--slider__filled-track` | background-color | $brand-01 | #3d70b2 |
+| `.bx--slider__track`        | background-color | $ui-04    | #5a6872 |
+| `.bx--label`                | color            | $text-01  | #152935 |
+| `.bx--slider__range-label`  | color            | $text-02  | #5a6872 |
 
 ## Typography
 
@@ -35,11 +35,11 @@ The width of a slider varies based on page content and layout.
 | `.bx--slider`                           | margin-left, margin-right | 16 / 1   | $spacing-md   |
 | `.bx--slider__range-label:last-of-type` | margin-right              | 16 / 1   | $spacing-md   |
 
-<image-component fixed="default" caption="Structure and spacing measurements for slider | px / rem">
+<ImageComponent fixed="default" caption="Structure and spacing measurements for slider | px / rem">
 
 ![Structure and spacing measurements for slider](images/slider-style-1.png)
 
-</image-component>
+</ImageComponent>
 
 ### Recommended
 

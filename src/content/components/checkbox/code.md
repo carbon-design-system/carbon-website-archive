@@ -1,15 +1,18 @@
 ---
 title: Checkbox
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage','Style']
 ---
 
 
-<component 
+
+
+
+<ComponentCode
     name="Checkbox"
     component="checkbox" 
     variation="checkbox"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="checkbox" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="checkbox" experimental="true"></ComponentDocs>

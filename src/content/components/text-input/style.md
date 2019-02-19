@@ -18,11 +18,11 @@ Text inputs come in two different colors. The default input color is `$field-01`
 | `.bx--text-input--light`       | background-color | $field-02 |
 | `.bx--form__helper-text`       | color            | $text-02  |
 
-<image-component fixed="default" caption="Examples of default and user-input states for Text Input in both $field-02 (left) and $field-01 (right)">
+<ImageComponent fixed="default" caption="Examples of default and user-input states for Text Input in both $field-02 (left) and $field-01 (right)">
 
 ![Default and user input states for Text Input in both field colors](images/text-input-style-1.png)
 
-</image-component>
+</ImageComponent>
 
 ### States
 
@@ -63,14 +63,14 @@ Text Input labels and placeholder text should be set in sentence case, with only
 | `.bx--text-input`       | box-shadow                  | 1px      | -             |
 | `.bx--text-input:focus` | box-shadow                  | 2px      | -             |
 
-<image-component fixed="default" caption="Structure and spacing measurements for Text Input | px / rem">
+<ImageComponent fixed="default" caption="Structure and spacing measurements for Text Input | px / rem">
 
 ![Structure and spacing measurements for Text Input](images/text-input-style-2.png)
 
-</image-component>
+</ImageComponent>
 
-<image-component fixed="default" caption="Examples of active, help, error and disabled Text Input states">
+<ImageComponent fixed="default" caption="Examples of active, help, error and disabled Text Input states">
 
 ![Active, help, error or disabled states for Text Input](images/text-input-style-3.png)
 
-</image-component>
+</ImageComponent>

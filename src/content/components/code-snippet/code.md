@@ -1,7 +1,10 @@
 ---
-title: Code snippet
-tabs: ['Code', 'Usage', 'Style']
+title: Code Snippet
+tabs: ['Code', 'Usage','Style']
 ---
+
+
+
 
 
 <component
@@ -11,7 +14,7 @@ tabs: ['Code', 'Usage', 'Style']
     experimental="true"
     hasReactVersion="true"
     >
-</component>
+</ComponentCode>
 <component
     name="Inline code snippet"
     component="code-snippet"
@@ -20,7 +23,7 @@ tabs: ['Code', 'Usage', 'Style']
     experimental="true"
     hasReactVersion="true"
     >
-</component>
+</ComponentCode>
 <component
     name="Multi line code snippet"
     component="code-snippet"
@@ -28,5 +31,5 @@ tabs: ['Code', 'Usage', 'Style']
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="code-snippet" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="code-snippet" experimental="true"></ComponentDocs>

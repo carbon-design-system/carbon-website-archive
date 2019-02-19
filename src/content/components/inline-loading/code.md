@@ -1,7 +1,10 @@
 ---
-title: Inline loading
-tabs: ['Code', 'Usage', 'Style']
+title: Inline Loading
+tabs: ['Code', 'Usage','Style']
 ---
+
+
+
 
 
 <component
@@ -11,5 +14,5 @@ tabs: ['Code', 'Usage', 'Style']
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="inline-loading" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="inline-loading" experimental="true"></ComponentDocs>

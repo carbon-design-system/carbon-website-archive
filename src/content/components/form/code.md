@@ -1,15 +1,18 @@
 ---
 title: Form
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage','Style']
 ---
 
 
-<component 
+
+
+
+<ComponentCode
     name="Form"
     component="form" 
     variation="form"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="form"></component-docs>
+</ComponentCode>
+<ComponentDocs component="form"></ComponentDocs>

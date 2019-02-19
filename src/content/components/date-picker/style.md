@@ -25,11 +25,11 @@ If a `min date` is set on the calendar, then any text appearing before that date
 | `.bx--date-picker__day.selected`                | border           | $brand-01 |
 | `.bx--date-picker__day.inRange`                 | background-color | $text-01  |
 
-<image-component fixed="default" caption="Date picker example using both $field-02 (top) and $field-01 (bottom)">
+<ImageComponent fixed="default" caption="Date picker example using both $field-02 (top) and $field-01 (bottom)">
 
 ![Example of a date picker](images/date-picker-style-1.png)
 
-</image-component>
+</ImageComponent>
 
 ### States
 
@@ -81,11 +81,11 @@ Labels should be set in sentence case, with only the first word in a phrase and 
 | `.bx--date-picker__input:focus`                    | box-shadow                  | 2px         | -             |
 | `.bx--date-picker__icon + .bx--date-picker__input` | padding-left                | 48 / 3      | $spacing-3xl  |
 
-<image-component fixed="default" caption="Structure and spacing for simple and single date pickers | px / rem">
+<ImageComponent fixed="default" caption="Structure and spacing for simple and single date pickers | px / rem">
 
 ![Structure for simple and single date pickers](images/date-picker-style-4.png)
 
-</image-component>
+</ImageComponent>
 
 ### Range date picker
 
@@ -99,17 +99,17 @@ Labels should be set in sentence case, with only the first word in a phrase and 
 | `.bx--date-picker__input`                                          | padding-right, padding-left, padding-top | 16 / 1       | $spacing-md   |
 | `.bx--date-picker__input`                                          | padding-bottom                           | 4 / .25      | $spacing-2xs  |
 
-<image-component fixed="default" caption="Structure for date picker | px / rem">
+<ImageComponent fixed="default" caption="Structure for date picker | px / rem">
 
 ![Structure for date picker](images/date-picker-style-2.png)
 
-</image-component>
+</ImageComponent>
 
-<image-component fixed="default" caption="Spacing for date picker | px / rem">
+<ImageComponent fixed="default" caption="Spacing for date picker | px / rem">
 
 ![Spacing for date picker](images/date-picker-style-3.png)
 
-</image-component>
+</ImageComponent>
 
 ### Time picker
 
@@ -122,8 +122,8 @@ There are two types of time pickers; a 12-hour and 24-hour time picker. The 12-h
 | `.bx--time-picker__input-field` | padding-right, padding-left | 16 / 1   | $spacing-md   |
 | `.bx--select-input`             | padding-left                | 16 / 1   | $spacing-md   |
 
-<image-component fixed="default" caption="Structure and spacing for a time picker | px / rem">
+<ImageComponent fixed="default" caption="Structure and spacing for a time picker | px / rem">
 
 ![Structure for a time picker](images/time-picker-style-1.png)
 
-</image-component>
+</ImageComponent>

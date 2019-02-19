@@ -1,14 +1,17 @@
 ---
 title: Slider
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage','Style']
 ---
 
-<component 
+
+
+
+<ComponentCode
     name="Slider"
     component="slider" 
     variation="slider"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="slider" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="slider" experimental="true"></ComponentDocs>

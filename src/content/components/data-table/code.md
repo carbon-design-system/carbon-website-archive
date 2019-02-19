@@ -5,7 +5,7 @@ tabs: ['Code', 'Usage', 'Style']
 ---
 
 
-<component 
+<ComponentCode
     name="Data table"
     component="data-table-v2" 
     variation="data-table-v2"
@@ -13,8 +13,8 @@ tabs: ['Code', 'Usage', 'Style']
     hasReactVersion="true"
     hasAngularVersion="true"
     >
-</component>
-<component 
+</ComponentCode>
+<ComponentCode
     name="Expandable data table"
     component="data-table-v2" 
     variation="data-table-v2--expandable"
@@ -22,29 +22,29 @@ tabs: ['Code', 'Usage', 'Style']
     hasReactVersion="true"
     hasAngularVersion="true"
     >
-</component>
-<component 
+</ComponentCode>
+<ComponentCode
     name="Data table with pagination"
     component="data-table-v2" 
     variation="data-table-v2--with-pager"
     codepen="pdWjva"
     hasReactVersion="true"
     >
-</component>
-<component 
+</ComponentCode>
+<ComponentCode
     name="Small data table"
     component="data-table-v2" 
     variation="data-table-v2--small"
     codepen="aVLvzX"
     hasReactVersion="true"
     >
-</component>
-<component 
+</ComponentCode>
+<ComponentCode
     name="Toolbar"
     component="toolbar" 
     variation="toolbar"
     codepen="yPzYNK"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="data-table-v2"></component-docs>
+</ComponentCode>
+<ComponentDocs component="data-table-v2"></ComponentDocs>

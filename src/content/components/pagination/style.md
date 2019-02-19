@@ -36,8 +36,8 @@ The Pagination bar is most commonly used in data tables. The width can vary depe
 | `.bx--pagination--inline .bx--pagination__button--backward` | padding-left, padding-right | 16 / 1    | $spacing-md   |
 | `.bx--pagination .bx--select-input`                         | padding-right               | 20 / 1.25 | -             |
 
-<image-component fixed="large" caption="Structure and spacing measurements for Pagination | px / rem">
+<ImageComponent fixed="large" caption="Structure and spacing measurements for Pagination | px / rem">
 
 ![Structure and spacing for pagination](images/pagination-style-1.png)
 
-</image-component>
+</ImageComponent>

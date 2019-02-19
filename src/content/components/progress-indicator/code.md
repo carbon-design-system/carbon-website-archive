@@ -1,7 +1,10 @@
 ---
-title: Progress indicator
-tabs: ['Code', 'Usage', 'Style']
+title: Progress Indicator
+tabs: ['Code', 'Usage','Style']
 ---
+
+
+
 
 
 <component
@@ -11,5 +14,5 @@ tabs: ['Code', 'Usage', 'Style']
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="progress-indicator" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="progress-indicator" experimental="true"></ComponentDocs>

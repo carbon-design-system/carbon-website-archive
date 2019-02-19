@@ -1,15 +1,18 @@
 ---
 title: Tag
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage','Style']
 ---
 
 
-<component 
+
+
+
+<ComponentCode
     name="Tag"
     component="tag" 
     variation="tag"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="tag" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="tag" experimental="true"></ComponentDocs>

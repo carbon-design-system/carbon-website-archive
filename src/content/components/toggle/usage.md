@@ -1,17 +1,20 @@
 ---
 title: Toggle
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage','Style']
 ---
+
+
+
 
 ## General guidance
 
 _Toggle_ is a control that is used to quickly switch between two possible states. Toggles are only used for these binary actions that occur immediately after the user “flips” the toggle switch. They are commonly used for “on/off” switches.
 
-<image-component cols="8">
+<ImageComponent cols="8">
 
 ![Example image of on and off toggles.](images/toggle-usage-1.png)
 
-</image-component>
+</ImageComponent>
 
 #### Heading
 
@@ -30,8 +33,8 @@ Use adjectives rather than verbs to describe labels and the state of the object 
 
 Small toggles are more compact in size, therefore they can be used in use cases such as [data tables](/components/data-table/code).
 
-<image-component cols="8">
+<ImageComponent cols="8">
 
 ![Example image of small toggles within a data table.](images/toggle-usage-2.png)
 
-</image-component>
+</ImageComponent>

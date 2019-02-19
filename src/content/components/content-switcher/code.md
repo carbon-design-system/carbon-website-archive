@@ -1,23 +1,26 @@
 ---
-title: Content switcher
-tabs: ['Code', 'Usage', 'Style']
+title: Content Switcher
+tabs: ['Code', 'Usage','Style']
 ---
 
 
-<component 
-    name="Content switcher"
+
+
+
+<ComponentCode
+    name="Content Switcher"
     component="content-switcher" 
     variation="content-switcher"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component 
-    name="Content switcher with icon" 
+</ComponentCode>
+<ComponentCode
+    name="Content Switcher with Icon" 
     component="content-switcher" 
     variation="content-switcher--with-icon"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="content-switcher" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="content-switcher" experimental="true"></ComponentDocs>

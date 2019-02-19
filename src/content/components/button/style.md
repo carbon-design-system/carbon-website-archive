@@ -77,11 +77,11 @@ tabs: ['Code', 'Usage', 'Style']
 | `:disabled`                                                    | text color               | $disabled-03     |
 
 
-<image-component fixed="default" caption="Primary, secondary, and ghost button state examples">
+<ImageComponent fixed="default" caption="Primary, secondary, and ghost button state examples">
 
 ![Example of a normal primary button](images/button-style-1.png)
 
-</image-component>
+</ImageComponent>
 
 ## Typography
 
@@ -107,17 +107,17 @@ A button cannot have any element or text within 16 pixels / 1 rem of its borders
 | `.bx--btn__icon`                 | margin-left, margin-right   | 16 / 1   | $spacing-05   |
 | `.bx--btn--ghost`                | padding-left, padding-right | 16 / 2   | $spacing-05   |
 
-<image-component fixed="default" caption="Structure measurements for small and regular primary button | px / rem">
+<ImageComponent fixed="default" caption="Structure measurements for small and regular primary button | px / rem">
 
 ![Structure for a primary button](images/button-style-7.png)
 
-</image-component>
+</ImageComponent>
 
-<image-component fixed="default" caption="Spacing measurements for various button types | px / rem">
+<ImageComponent fixed="default" caption="Spacing measurements for various button types | px / rem">
 
 ![Structure for a primary button](images/button-style-14.png)
 
-</image-component>
+</ImageComponent>
 
 ### Recommended
 

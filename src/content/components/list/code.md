@@ -1,24 +1,27 @@
 ---
 title: List
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage','Style']
 ---
 
 
-<component 
+
+
+
+<ComponentCode
     name="Ordered List"
     component="list" 
     variation="list--ordered"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
+</ComponentCode>
 
-<component 
+<ComponentCode
     name="Unordered List"
     component="list" 
     variation="list"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
-<component-docs component="list" experimental="true"></component-docs>
+</ComponentCode>
+<ComponentDocs component="list" experimental="true"></ComponentDocs>

@@ -16,17 +16,17 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 | `.bx--search-input::placeholder` | text color       | $text-03  |
 | `.bx--search-magnifier`          | fill             | $ui-05    |
 
-<image-component fixed="default" caption="Example of Search using $field-02 (top) and $field-01 (bottom)">
+<ImageComponent fixed="default" caption="Example of Search using $field-02 (top) and $field-01 (bottom)">
 
 ![Example of Search using $field-01 and $field-02](images/search-style-4.png)
 
-</image-component>
+</ImageComponent>
 
-<image-component fixed="default" caption="Examples of normal, hover, and input Search states">
+<ImageComponent fixed="default" caption="Examples of normal, hover, and input Search states">
 
 ![Normal, hover, and input search states](images/search-style-1.png)
 
-</image-component>
+</ImageComponent>
 
 ## Typography
 
@@ -48,14 +48,14 @@ The width of the Search field should appropriately fit the design and layout of 
 | `.bx--search-magnifier` </br> `.bx--search-close` | height, width               | 16 / 1   | -             |
 | `.bx--search-input`                               | padding-left, padding-right | 40 / 2.5 | $spacing-2xl  |
 
-<image-component fixed="default" caption="Structure and spacing measurements for Regular Search | px | rem">
+<ImageComponent fixed="default" caption="Structure and spacing measurements for Regular Search | px | rem">
 
 ![Structure and spacing measurements for regular search](images/search-style-2.png)
 
-</image-component>
+</ImageComponent>
 
-<image-component fixed="default" caption="Structure and spacing measurements for Small Search | px | rem">
+<ImageComponent fixed="default" caption="Structure and spacing measurements for Small Search | px | rem">
 
 ![Structure and spacing measurements for small search](images/search-style-3.png)
 
-</image-component>
+</ImageComponent>

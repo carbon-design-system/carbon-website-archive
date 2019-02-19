@@ -1,24 +1,27 @@
 ---
 title: Search
-tabs: ['Code', 'Usage', 'Style']
+tabs: ['Code', 'Usage','Style']
 ---
 
-<component 
+
+
+
+<ComponentCode
     name="Small search"
     component="search" 
     variation="search--small"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
+</ComponentCode>
 
-<component 
+<ComponentCode
     name="Large search"
     component="search" 
     variation="search--large"
     experimental="true"
     hasReactVersion="true"
     >
-</component>
+</ComponentCode>
 
-<component-docs component="search"></component-docs>
+<ComponentDocs component="search"></ComponentDocs>
