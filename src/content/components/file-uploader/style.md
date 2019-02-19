@@ -18,7 +18,7 @@ tabs: ['Code', 'Usage', 'Style']
 | ----------------------------- | ---------- | ----------- |
 | File name: invalid            | text color | `$disabled-02`|
 | Error message                 | text color | `$support-01` |
-| `.bx--file-filename`          | border-bottom | $support-01 |
+| `.bx--file-filename`          | border-bottom | `$support-01` |
 
 ## Typography
 
