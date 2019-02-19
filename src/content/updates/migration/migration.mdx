@@ -1,20 +1,64 @@
 ---
-title: Migration 
+title: Migration
 ---
 
+import GridWrapper from '../../../../src/components/GridWrapper';
+import AnchorLinks from '../../../../src/components/AnchorLinks';
+import ClickableTile from '../../../../src/components/ClickableTile';
+
 <AnchorLinks>
-<ul>
-  <li><a data-scroll href="#carbon-x">Carbon X</a></li>
-  <li><a data-scroll href="#rollout-plan">Rollout plan</a></li>
-  <li><a data-scroll href="#design-kit">Design kit</a></li>
-  <li><a data-scroll href="#component-code">Component code</a></li>
-  <li><a data-scroll href="#tokens">Tokens</a></li>
-  <li><a data-scroll href="#icons">Icons</a></li>
-  <li><a data-scroll href="#themes">Themes</a></li>
-  <li><a data-scroll href="#ui-shell">UI shell</a></li>
-  <li><a data-scroll href="#grid-and-layout">Grid and layout</a></li>
-  <li><a data-scroll href="#migration-tooling">Migration tooling</a></li>
-</ul>
+  <ul>
+    <li>
+      <a data-scroll href="#carbon-x">
+        Carbon X
+      </a>
+    </li>
+    <li>
+      <a data-scroll href="#rollout-plan">
+        Rollout plan
+      </a>
+    </li>
+    <li>
+      <a data-scroll href="#design-kit">
+        Design kit
+      </a>
+    </li>
+    <li>
+      <a data-scroll href="#component-code">
+        Component code
+      </a>
+    </li>
+    <li>
+      <a data-scroll href="#tokens">
+        Tokens
+      </a>
+    </li>
+    <li>
+      <a data-scroll href="#icons">
+        Icons
+      </a>
+    </li>
+    <li>
+      <a data-scroll href="#themes">
+        Themes
+      </a>
+    </li>
+    <li>
+      <a data-scroll href="#ui-shell">
+        UI shell
+      </a>
+    </li>
+    <li>
+      <a data-scroll href="#grid-and-layout">
+        Grid and layout
+      </a>
+    </li>
+    <li>
+      <a data-scroll href="#migration-tooling">
+        Migration tooling
+      </a>
+    </li>
+  </ul>
 </AnchorLinks>
 
 ## Carbon X
@@ -42,35 +86,37 @@ The Digital Design group has published a detailed guide on [setting up auto-sync
 
 The redesigned components will be available in the current repos once released. All components have been reskinned to the new IBM Design Language for v10. Detailed technical migration instructions will be published to the repos upon Beta release.
 
-
-<GridWrapper className="tile--resource--no-margin" col_lg="8" flex="true" bleed="true">
-<ClickableTile
+<GridWrapper
+  className="tile--resource--no-margin"
+  col_lg="8"
+  flex="true"
+  bleed="true">
+  <ClickableTile
     title="Carbon Components"
     href="https://github.com/ibm/carbon-components"
-    type="resource"
-    >
+    type="resource">
     <img src="images/github-icon.png" alt="Carbon Component Library" />
-</ClickableTile>
-<ClickableTile
+  </ClickableTile>
+  <ClickableTile
     title="Carbon Components React"
     href="https://github.com/ibm/carbon-components-react"
-    type="resource"
-    >
+    type="resource">
     <img src="images/react-icon.png" alt="Carbon Components React" />
-</ClickableTile>
+  </ClickableTile>
 </GridWrapper>
-
 
 ## Tokens
 
 ### Type tokens
+
 The type token architecture has been completely redesigned for better clarity and flexibility in v10, moving from a "class-name" approach to a more standard token architecture. More detailed technical guidance on migrating to the new type tokens will be available in early 2019.
 
-
 ### Color tokens
+
 The color token architecture for v10 is based on the v9 architecture, with some minor updates for the new design language. Carbon v9 users will see automatic, non-breaking color updates when they upgrade to v10.
 
 ### Spacing tokens
+
 Spacing tokens will see no change from Carbon v9.
 
 ## Icons

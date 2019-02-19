@@ -2,14 +2,37 @@
 title: Disabled states
 ---
 
+import AnchorLinks from '../../../../src/components/AnchorLinks';
+import ImageComponent from '../../../../src/components/ImageComponent';
+
 <AnchorLinks>
-<ul>
-    <li><a data-scroll href="#purpose">Purpose</a></li>
-    <li><a data-scroll href="#disabled-variations">Disabled variations</a></li>
-    <li><a data-scroll href="#default-disabled">Default disabled</a></li>
-    <li><a data-scroll href="#read-only">Read-only</a></li>
-    <li><a data-scroll href="#hidden">Hidden</a></li>
-</ul>
+  <ul>
+    <li>
+      <a data-scroll href="#purpose">
+        Purpose
+      </a>
+    </li>
+    <li>
+      <a data-scroll href="#disabled-variations">
+        Disabled variations
+      </a>
+    </li>
+    <li>
+      <a data-scroll href="#default-disabled">
+        Default disabled
+      </a>
+    </li>
+    <li>
+      <a data-scroll href="#read-only">
+        Read-only
+      </a>
+    </li>
+    <li>
+      <a data-scroll href="#hidden">
+        Hidden
+      </a>
+    </li>
+  </ul>
 </AnchorLinks>
 
 ## Purpose
@@ -18,11 +41,11 @@ A _disabled state_ is applied to a component when the user is not allowed to int
 
 ## Disabled variations
 
-| Variation            | Description                                                                                                                                                                                                                               |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| _Default disabled_| Cannot be clicked, selected or interacted with. It is not read by a screen reader and takes on the default disabled visual style.                                                                                                         |
+| Variation          | Description                                                                                                                                                                                                                                     |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| _Default disabled_ | Cannot be clicked, selected or interacted with. It is not read by a screen reader and takes on the default disabled visual style.                                                                                                               |
 | _Read-only_        | The user cannot interact with it but content is still readable and accessible to a screen reader. The visual style should contain no interactive indicators such as `$interactive-01`, hover states, or text embellishments (i.e., underlines). |
-| _Hidden_          | The component is completely hidden from view. The user does not know the option is there.                                                                                                                                                 |
+| _Hidden_           | The component is completely hidden from view. The user does not know the option is there.                                                                                                                                                       |
 
 ## Default disabled
 
@@ -38,13 +61,13 @@ A _default disabled_ state is used when a component is temporarily disabled due 
 
 Default disabled states are most commonly styled by a decrease in opacity with no hover state change and `not-allowed` cursor applied. Refer to each individual component for the accurate disabled state.
 
-| Attribute | Default disabled style |
-| --------- | ---------------------- |
+| Attribute   | Default disabled style |
+| ----------- | ---------------------- |
 | _Component_ | 50% opacity            |
 | _Text_      | 25% opacity            |
 | _Icons_     | 50% opacity            |
 | _Hover_     | None                   |
-| _Cursor_   | `not-allowed`          |
+| _Cursor_    | `not-allowed`          |
 
 <ImageComponent cols="8">
 
@@ -81,4 +104,3 @@ For example, when a user is the organization owner they are allowed to add membe
 ![Example of hidden disabled content on the right](images/disabled-4.png)
 
 </ImageComponent>
-
