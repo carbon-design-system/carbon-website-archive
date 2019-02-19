@@ -14,7 +14,7 @@ _Select_ is a type of input that is used in forms, where a user is submitting da
 | Select type   | Purpose                                                                                                                                                     |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | _Default_      | Typically used in forms with a variety of other components.                                                                                                 |
-| _Small select_  | When vertical space is a concern, or Select is being paired with larger component, such as [cards](/add-ons/card) or [data tables](/components/data-table). |
+| _Small select_  | When vertical space is a concern, or select is being paired with a larger component like [data tables](/components/data-table). |
 | _Inline select_ | When multiple selects are grouped together.                                                                                                                 |
 
 #### Small select
@@ -29,9 +29,9 @@ _Small selects_ are commonly used in [data tables](/components/data-table). When
 
 #### Inline select
 
-Inline select is useful when you have multiple `select` fields within a form. Inline selects have less visual weight on a page because they are borderless.
+Inline select is useful when you have multiple select fields within a form. Inline selects have less visual weight on a page because they are borderless.
 
-<image-component cols="8" caption="Example of Inline select">
+<image-component cols="8" caption="Example of inline select">
 
 ![Example of a small select](images/select-usage-4.png)
 
@@ -59,12 +59,12 @@ The order of the select list should be based on the frequency of use. If applica
 
 ## Accessibility
 
-### Styling _select_ dropdowns
+### Styling select dropdowns
 
-<p>To maximize accessibility, it is strongly recommended not to style _select_ dropdowns.
-One of the <a href="https://www.w3.org/TR/WCAG20-TECHS/G202.html" target=blank>WCAG 2.0 standards</a> for accessibility is “ensuring keyboard control for all functionality.” CSS alternatives to `select` elements do not meet this requirement.</p>
+To maximize accessibility, it is strongly recommended not to style select dropdowns.
+One of the [WCAG 2.0 standards](https://www.w3.org/TR/WCAG20-TECHS/G202.html) for accessibility is “ensuring keyboard control for all functionality.” CSS alternatives to select elements do not meet this requirement.
 
-While you can make a select element easily usable by a mouse, making it usable with keyboard navigation is complex. The default `select` element should follow this process:
+While you can make a select element easily usable by a mouse, making it usable with keyboard navigation is complex. The default select element should follow this process:
 
 | State        | Mouse                                    | Keyboard                                            |
 | ------- | ---------------------------------------- | --------------------------------------------------- |
