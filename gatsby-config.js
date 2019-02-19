@@ -25,6 +25,7 @@ module.exports = {
         import GridWrapper from '${__dirname}/src/components/GridWrapper';
         import DoDontExample from '${__dirname}/src/components/DoDontExample';
         import ComponentCode from '${__dirname}/src/components/ComponentCode';
+        import ComponentReact from '${__dirname}/src/components/ComponentReact';
         import ComponentDocs from '${__dirname}/src/components/ComponentDocs';
         import ImageComponent from '${__dirname}/src/components/ImageComponent';
 
@@ -36,7 +37,8 @@ module.exports = {
           DoDontExample,
           ImageComponent,
           ComponentDocs,
-          ComponentCode
+          ComponentCode,
+          ComponentReact
         };
       `,
         gatsbyRemarkPlugins: [
