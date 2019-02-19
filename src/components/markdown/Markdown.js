@@ -33,10 +33,11 @@ export class h2 extends React.Component {
     return (
       <Location>
         {({ location }) => {
+          console.log(this.props.children);
           const hash =
-            typeof this.props.children[0] !== 'string'
+            typeof this.props.children !== 'string'
               ? undefined
-              : this.props.children[0]
+              : this.props.children
                   .replace(/[:&?’‘“”'",.]/g, '')
                   .toLowerCase()
                   .split(' ')
@@ -73,9 +74,9 @@ export class h3 extends React.Component {
       <Location>
         {({ location }) => {
           const hash =
-            typeof this.props.children[0] !== 'string'
+            typeof this.props.children !== 'string'
               ? undefined
-              : this.props.children[0]
+              : this.props.children
                   .replace(/[:&?’‘“”'",.]/g, '')
                   .toLowerCase()
                   .split(' ')
@@ -110,9 +111,9 @@ export class h4 extends React.Component {
       <Location>
         {({ location }) => {
           const hash =
-            typeof this.props.children[0] !== 'string'
+            typeof this.props.children !== 'string'
               ? undefined
-              : this.props.children[0]
+              : this.props.children
                   .replace(/[:&?’‘“”'",.]/g, '')
                   .toLowerCase()
                   .split(' ')
