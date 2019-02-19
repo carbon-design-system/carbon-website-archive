@@ -2,7 +2,9 @@
 title: Developers
 ---
 
-**Welcome and thank you for contributing!** The Carbon team is committed to maintaining consistent, quality guidelines. Below are our contributing guidelines for [carbon-components](https://github.com/ibm/carbon-components) and [carbon-components-react](https://github.com/ibm/carbon-components-react).
+## How to contribute
+
+The Carbon team is committed to maintaining consistent, quality guidelines. Below are our contributing guidelines for [carbon-components](https://github.com/ibm/carbon-components) and [carbon-components-react](https://github.com/ibm/carbon-components-react).
 
 ## Carbon components
 
