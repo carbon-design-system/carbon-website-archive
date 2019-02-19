@@ -25,7 +25,7 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 
 </image-component>
 
-### States
+### Interactive states
 
 | Class                                                          | Property   | SCSS        |
 | -------------------------------------------------------------- | ---------- | ----------- |
