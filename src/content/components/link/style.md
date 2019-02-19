@@ -5,20 +5,23 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class       | Property | SCSS      |
-| ----------- | -------- | --------- |
-| `.bx--link` | color    | $brand-01 |
+| Class       | Property | Color token |
+| ----------- | -------- | ----------- |
+| `.bx--link` | color    | `$interactive-01` |
 
-### States
+### Interactive states
 
-| Class                             | Property | SCSS                |
-| --------------------------------- | -------- | ------------------- |
-| `.bx--link:hover`                 | color    | $hover-primary-text |
-| `.bx--link[aria-disabled='true']` | color    | $brand-01           |
+| Class                             | Property   | Color token           |
+| --------------------------------- | ---------- | --------------------- |
+| `:hover`                          | text color | `$hover-primary-text` |
+| `:active`                         | text color | `$text-01` |
+| `:focus`                          | border     | `$focus` |
+| `:visited`                        | text color | `$visited`        |
+| `:disabled`                       | text color | `$disabled-02`        |
 
-<image-component fixed="default" caption="Normal, hover disabled Link states">
+<image-component fixed="default" caption="Normal, hover, disabled link states">
 
-![Example of normal, hover, and disabled link states](images/link-style-1.png)
+![Example of enabled, hover, and disabled link states](images/link-style-1.png)
 
 </image-component>
 
@@ -28,7 +31,7 @@ Link text should be set in set in sentence case with the first letter of each wo
 
 | Property    | Font-size (px/rem) | Font-weight     | Text style       |
 | ----------- | ------------------ | --------------- | ---------------- |
-| `.bx--link` | 14 / 0.875         | Semi-Bold / 600 | `.bx--type-zeta` |
+| `.bx--link` | 14 / 0.875         | Regular / 400   | `$body-short-01` |
 
 ## Structure
 
@@ -38,8 +41,7 @@ Links can be grouped horizontally or vertically and must be underlined. The foll
 
 | Class       | Property      | px / rem | Spacing token |
 | ----------- | ------------- | -------- | ------------- |
-| `.bx--link` | line-height   | 24 / 1.5 | -             |
-| `.bx--link` | padding-right | 16 / 1   | $spacing-md   |
+| `.bx--link` | padding-right | 16 / 1   | `$spacing-05` |
 
 <image-component fixed="default" caption="Structure and spacing measurements for Link | px / rem">
 
