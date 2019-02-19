@@ -30,8 +30,14 @@ module.exports = {
         import ImageComponent from '${__dirname}/src/components/ImageComponent';
         import ColorBlock from '${__dirname}/src/components/ColorBlock';
 
+        import { Tab } from 'carbon-components-react';
+        import WebsiteTabs from '${__dirname}/src/components/WebsiteTabs';
+        import SimpleColumns from '${__dirname}/src/components/SimpleColumns';
+
         export default {
           AnchorLinks,
+          WebsiteTabs,
+          SimpleColumns,
           ClickableTile,
           FeatureTile,
           GridWrapper,
@@ -65,7 +71,7 @@ module.exports = {
           { resolve: 'gatsby-remark-responsive-iframe' },
           { resolve: 'gatsby-remark-copy-linked-files' },
           { resolve: 'gatsby-remark-smartypants' },
-          { resolve: 'gatsby-plugin-catch-links'},
+          { resolve: 'gatsby-plugin-catch-links' },
         ],
       },
     },
