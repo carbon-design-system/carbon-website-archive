@@ -5,18 +5,18 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Attribute         | Property | SCSS     |
-| ----------------- | -------- | -------- |
-| `.bx--list__item` | color    | $text-01 |
+| Attribute         | Property | Color token |
+| ----------------- | -------- | ---------- |
+| `.bx--list__item` | color    | `$text-01` |
 
 ## Typography
 
 Level 1 and 2 of any list type should be set in bold and sentence case, with only the first word in a phrase and any proper noun capitalized. **Line height** for lists should be set at 24px / 1.5rem.
 
-| Class                                 | Font-size (px/rem) | Font-weight     | Text style       |
+| Class                                 | Font-size (px/rem) | Font-weight     | Type token      |
 | ------------------------------------- | ------------------ | --------------- | ---------------- |
-| `.bx--list__item`                     | 14 / 0.875         | Semi-Bold / 600 | `.bx--type-zeta` |
-| `.bx--list--nested > .bx--list__item` | 14 / 0.875         | Normal / 400    | -                |
+| `.bx--list__item`                     | 14 / 0.875         | Regular / 400   | `$body-short-01` |
+| `.bx--list--nested`                   | 14 / 0.875         | Regular / 400   | `$body-short-01` |
 
 ## Structure
 
@@ -24,12 +24,13 @@ There are two types of Lists, ordered and unordered.
 Level 1 ordered list points are marked numerically while Level 2 points are marked with a dash.
 Level 1 unordered list points are bulleted while Level 2 points are marked with a dash.
 
-| Class                                             | Property    | px / rem | Spacing token |
-| ------------------------------------------------- | ----------- | -------- | ------------- |
-| `.bx--list--unordered` </br> `.bx--list--ordered` | padding     | 16 / 1   | $spacing-md   |
-| `.bx--list--ordered`                              | line-height | 24/1.5   | -             |
+| Item                                             | Property      | px / rem | Spacing token |
+| ------------------------------------------------ | ------------- | -------- | ------------- |
+| Level 1                                          | margin-bottom | 4 / 0.25 | `$spacing-02` |
+| Level 2                                          | margin-bottom | 0        | –             |
+| Level 2                                          | padding-left  | 16 / 1   | `$spacing-05` |
 
-<image-component fixed="default" caption="Structure and spacing measurements for an ordered and an unordered List | px / rem">
+<image-component fixed="default" caption="Structure and spacing measurements for an ordered and an unordered list | px / rem">
 
 ![Structure and spacing measurements for ordered and unordered lists](images/list-style-1.png)
 
