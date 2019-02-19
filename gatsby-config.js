@@ -26,6 +26,7 @@ module.exports = {
         import DoDontExample from '${__dirname}/src/components/DoDontExample';
         import ComponentCode from '${__dirname}/src/components/ComponentCode';
         import ComponentDocs from '${__dirname}/src/components/ComponentDocs';
+        import ImageComponent from '${__dirname}/src/components/ImageComponent';
 
         export default {
           AnchorLinks,
@@ -33,6 +34,7 @@ module.exports = {
           FeatureTile,
           GridWrapper,
           DoDontExample,
+          ImageComponent,
           ComponentDocs,
           ComponentCode
         };

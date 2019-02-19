@@ -346,26 +346,6 @@ class Layout extends React.Component {
                   ol: ol,
                   pre: Snippet,
                   table: PageTable,
-                  /* switch all of these to direct react component imports
-                    'grid-wrapper': GridWrapper,
-                    icon: PageIcon,
-                    'clickable-tile': ClickTile,
-                    'feature-tile': FeatureTile,
-                    'do-dont-example': DoDontExample,
-                    'color-block': ColorBlock,
-                    'color-card': ColorCard,
-                    'icon-library': IconLibrary,
-                    'type-scale-table': TypeScaleTable,
-                    'type-weight': TypeWeight,
-                    'type-spec': TypeSpec,
-                    component: ComponentCode,
-                    'component-react': ComponentReact,
-                    'component-docs': ComponentDocs,
-                    'component-status': ComponentStatus,
-                    glossary: Glossary,
-                    'component-overview': ComponentOverview,
-                    'anchor-links': AnchorLinks,
-                    */
                 }}>
                 {children}
               </MDXProvider>
