@@ -29,10 +29,9 @@ module.exports = {
         import ComponentDocs from '${__dirname}/src/components/ComponentDocs';
         import ImageComponent from '${__dirname}/src/components/ImageComponent';
         import ColorBlock from '${__dirname}/src/components/ColorBlock';
-
-        import { Tab } from 'carbon-components-react';
         import WebsiteTabs from '${__dirname}/src/components/WebsiteTabs';
         import SimpleColumns from '${__dirname}/src/components/SimpleColumns';
+        import Video from '${__dirname}/src/components/Video';
 
         export default {
           AnchorLinks,
@@ -46,7 +45,8 @@ module.exports = {
           ComponentDocs,
           ComponentCode,
           ComponentReact,
-          ColorBlock
+          ColorBlock,
+          Video,
         };
       `,
         gatsbyRemarkPlugins: [

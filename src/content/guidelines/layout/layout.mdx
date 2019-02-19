@@ -36,7 +36,7 @@ At breakpoint boundaries, mini units divide the screen into a fixed master grid,
 
 Margin and padding are always applied in fixed mini unit multiples. Boxes are sized by applying a sizing scale based on either fixed mini units or fluid column widths, along with a core set of aspect ratios.
 
-`vimeo: https://vimeo.com/292608020`
+<Video vimeoId="292608020" />
 
 ## 2x grid fundamentals
 
@@ -143,7 +143,7 @@ Create custom breakpoints to accommodate special needs, by writing your own medi
 
 For best results, test designs and code at each of these standard breakpoints.
 
-`vimeo: https://vimeo.com/292015984`
+<Video vimeoId="292015984" />
 
 ## Grid behaviors
 
@@ -188,13 +188,13 @@ Fluid column structures are ideal for editorial content, dashboards, images, vid
 
 At each breakpoint, column count is fixed and column width is a multiple of mini units. Row height is a multiple of column size, following recommended aspect ratios. Margin and padding are fixed multiples of mini units. In between breakpoints, actual column width is a percentage of the grid area, not a mini unit multiple. Content scales fluidly.
 
-`vimeo: https://vimeo.com/292024522`
+<Video vimeoId="292024522" />
 
 ### Fixed boxes
 
 A grid can be formed with fixed boxes by arranging tiles in an inline block, icons in toolbars, etc. Column count grows with browser width. Tiles wrap to the next line, or are sometimes truncated with an overflow scroll.
 
-`vimeo: https://vimeo.com/292024183`
+<Video vimeoId="292024183" />
 
 First choose a base size from the [sizing scale](#sizing-scale), then build up each box in multiples of the base size, following recommended [aspect ratios](#aspect-ratio). A grid emerges when each tile uses a multiple of a consistent base size. Following this method ensures consistency of tile sizes, even across products.
 
@@ -204,7 +204,7 @@ Hybrid boxes have different scaling rules in each dimension, so they do not use 
 
 Use the [sizing scale](#sizing-scale) to size a fixed dimension. Use column-width multiples to size a grid-fluid dimension. Aspect ratios do not apply.
 
-`vimeo: https://vimeo.com/292025098`
+<Video vimeoId="292025098" />
 
 Here are some common UI behaviors:
 
@@ -274,19 +274,19 @@ All vertical panels expand to fill the full height of the browser window.
 
 The flexible panels allow for both collapsed and expanded states. The expanded state of a flexible Panel is a fixed width that cannot be adjusted by the user. The collapsed Flexible Panel expands when the user hovers over any portion of it. When flexible panels expand, they either condense both the content and the grid or they push content beyond the edge of the browser.
 
-`vimeo: https://vimeo.com/292975726`
+<Video vimeoId="292975726" />
 
 #### Fixed panels
 
 Fixed panels maintain a static width, cannot be collapsed, and also exist outside of the responsive grid.
 
-`vimeo: https://vimeo.com/292988292`
+<Video vimeoId="292988292" />
 
 #### Floating panels
 
 This panel style floats above the primary content area and does not affect the responsive grid. Floating panels conceal any UI elements below them and must be dismissable by the user. Inline menus, dropdowns and tooltips also float.
 
-`vimeo: https://vimeo.com/292977039`
+<Video vimeoId="292977039" />
 
 ## Sizing scale
 
@@ -365,7 +365,7 @@ For fluid grids, the column width is the base unit. Just as a box can span multi
 
 After determining your base size, multiply it as needed for each use. For box sizing, apply an [aspect ratio](#aspect-ratio) too.
 
-`vimeo: https://vimeo.com/292026497`
+<Video vimeoId="292026497" />
 
 ### Aspect ratio
 
@@ -390,7 +390,7 @@ For example, to size a fluid box with a 2:1 landscape aspect ratio, you could sp
 
 Use the fixed sizing scale to set vertical spacing between sections, by adding it to the top or bottom margin of a box:
 
-`vimeo: https://vimeo.com/292028388`
+<Video vimeoId="292028388" />
 
 <GridWrapper col_lg="8" flex="true">
   <DoDontExample
@@ -415,4 +415,4 @@ Components can be sized like other boxes: either fixed or fluid, and often hybri
 
 When multiple components adhere to the same scale, grid relationships naturally emerge. For example, vertically aligning form fields such as checkboxes and radio buttons produces a grid effect when interior spacing is consistent.
 
-`vimeo: https://vimeo.com/292028752`
+<Video vimeoId="292028752" />

@@ -5,8 +5,6 @@ tabs: ['Basics', 'Choreography', 'Resources']
 ---
 
 import { Tab } from 'carbon-components-react';
-import WebsiteTabs from '../../../../src/components/WebsiteTabs';
-import SimpleColumns from '../../../../src/components/SimpleColumns';
 
 ## Resources
 
@@ -62,12 +60,12 @@ IBM Design System recognizes different moments in user's experience, and offers 
 <Tab label="Abstract">
 <div>
 
-`vimeo: https://vimeo.com/310583009`
+<Video vimeoId="310583009" />
 
 </div></Tab>
 <Tab label="In-situ"><div>
 
-`vimeo: https://vimeo.com/310583036`
+<Video vimeoId="310583036" />
 
 </div></Tab>
 </WebsiteTabs>
@@ -87,7 +85,7 @@ Our [components](../../components/overview/) have basic motion build in. Use thi
 <GridWrapper col_lg="12" flex="true">
 <DoDontExample correct="true" full_width="true" label="Productive moments are labeled blue, and Expressive moments are labeled magenta.">
 
-`vimeo: https://vimeo.com/310583077`
+<Video vimeoId="310583077" />
 
 </DoDontExample>
 </GridWrapper>
@@ -99,7 +97,7 @@ Strictly linear movement appears unnatural to the human eye. Elements on the scr
 <GridWrapper col_lg="8" flex="true">
 <DoDontExample correct="true" full_width="true" label="Elements on the screen speed up quickly and slow down smoothly, obeying the physics of a light-weight material.">
 
-`vimeo: https://vimeo.com/310582370`
+<Video vimeoId="310582370" />
 
 </DoDontExample>
 </GridWrapper>
@@ -111,7 +109,7 @@ Avoid easing curves that are unnatural, distracting, or decorative should be avo
 <GridWrapper col_lg="8" flex="true">
 <DoDontExample correct="false" full_width="true" label="Easing curves that suggest bounce, stretch, or sudden stops are not recommended.">
 
-`vimeo: https://vimeo.com/310582418`
+<Video vimeoId="310582418" />
 
 </DoDontExample>
 </GridWrapper>
@@ -124,14 +122,14 @@ Use `standard-easing` when an element is visible from the beginning to end of a 
 <Tab label="Curves">
 <div>
 
-`vimeo: https://vimeo.com/310582611`
+<Video vimeoId="310582611" />
 
 </div>
 </Tab>
 <Tab label="Examples">
 <div>
 
-`vimeo: https://vimeo.com/310582667`
+<Video vimeoId="310582667" />
 
 </div>
 </Tab>
@@ -150,14 +148,14 @@ Use `entrance-ease` when adding elements to the view such as a modal or toaster 
 <Tab label="Curves">
 <div>
 
-`vimeo: https://vimeo.com/310582467`
+<Video vimeoId="310582467" />
 
 </div>
 </Tab>
 <Tab label="Examples">
 <div>
 
-`vimeo: https://vimeo.com/310582503`
+<Video vimeoId="310582503" />
 
 </div>
 </Tab>
@@ -176,14 +174,14 @@ Use `exit-easing` when removing elements from view, such as closing a modal or t
 <Tab label="Curves">
 <div>
 
-`vimeo: https://vimeo.com/310582530`
+<Video vimeoId="310582530" />
 
 </div>
 </Tab>
 <Tab label="Examples">
 <div>
 
-`vimeo: https://vimeo.com/310582574`
+<Video vimeoId="310582574" />
 
 </div>
 </Tab>
@@ -195,8 +193,6 @@ Use `exit-easing` when removing elements from view, such as closing a modal or t
 | After Effects | Outgoing 20%, incoming 0%    | Outgoing 40%, incoming 0%     |
 
 An exception to exits: if an element leaves the view but stays nearby, ready to reappear upon user action, use standard easing instead. A good example of this is a side panel. The panel would leave the view, but slows down as it exits, implying that it would come to rest just outside the view, and ready to be recalled.
-
-[ VIDEO ]
 
 ### Easing curve summary
 
@@ -215,7 +211,7 @@ Duration is calculated based on the style and size of the motion. Among the two 
 <GridWrapper col_lg="12" flex="true">
 <DoDontExample correct="true" full_width="true" label="Duration contrast between a taller and a shorter component.">
 
-`vimeo: https://vimeo.com/310582312`
+<Video vimeoId="310582312" />
 
 </DoDontExample>
 </GridWrapper>
