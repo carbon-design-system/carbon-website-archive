@@ -25,7 +25,7 @@
     "serve": "gatsby serve",
     "clean": "lerna clean --yes && rm -rf build && rm -rf node_modules",
     "clean:cache": "rm -rf .cache",
-    "dev": "yarn dev:external",
+    "dev": "yarn clean:cache && yarn dev:external",
     "dev:external": "./tasks/build-timestamp.sh && cross-env GATSBY_CARBON_ENV=external gatsby develop",
     "dev:internal": "./tasks/build-timestamp.sh && cross-env GATSBY_CARBON_ENV=internal gatsby develop",
     "format": "prettier --write \"**/*.{scss,css,js,md}\"",
@@ -36,6 +36,8 @@
   },
   "dependencies": {
     "@carbon/addons-website": "^0.0.1-alpha.17",
+    "@mdx-js/mdx": "^0.16.6",
+    "@mdx-js/tag": "^0.16.6",
     "@carbon/colors": "0.0.1-alpha.31",
     "@carbon/grid": "0.0.1-alpha.32",
     "@carbon/icons-react": "0.0.1-alpha.31",
@@ -53,6 +55,7 @@
     "fs": "0.0.1-security",
     "gatsby": "2.0.110",
     "gatsby-image": "2.0.22",
+    "gatsby-mdx": "^0.3.0",
     "gatsby-plugin-catch-links": "^2.0.9",
     "gatsby-plugin-google-analytics": "^2.0.8",
     "gatsby-plugin-manifest": "^2.0.17",
@@ -86,6 +89,7 @@
     "rehype-react": "^3.1.0"
   },
   "devDependencies": {
+    "@mdx-js/loader": "^0.16.6",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@storybook/addon-actions": "^3.4.7",
     "@storybook/addon-info": "^4.1.2",
@@ -99,6 +103,7 @@
     "gatsby-remark-static-images": "^1.0.0",
     "gh-pages": "^1.2.0",
     "html-loader": "^0.5.5",
+    "loader-utils": "^1.1.0",
     "lerna": "^3.6.0",
     "node-sass": "^4.10.0",
     "prettier": "^1.15.3",

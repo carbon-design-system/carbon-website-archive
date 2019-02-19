@@ -12,6 +12,45 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-mdx`,
+      options: {
+        root: __dirname,
+        //extensions: ['.mdx', '.md'],
+        defaultLayouts: {
+          default: require.resolve('./src/components/Layouts/index.js'),
+        },
+        /*    globalScope: `
+          import { Button } from 'carbon-components-react';
+          export default { Button };
+          import FeatureTile from '${__dirname}/src/components/FeatureTile';
+          import ClickableTile from '${__dirname}/src/components/ClickableTile';
+          import GridWrapper from '${__dirname}/src/components/GridWrapper';
+        `, */
+        gatsbyRemarkPlugins: [
+          /* { resolve: 'gatsby-remark-unwrap-images' },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1024,
+              linkImagesToOriginal: false,
+            },
+          }, */
+          {
+            resolve: 'gatsby-remark-embed-video',
+            options: {
+              width: 1024,
+              ratio: 1.77, // Optional: Defaults to 16/9 = 1.77  // height: 333, 1584Optional: Overrides optional.ratio
+              related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
+              noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
+            },
+          },
+          { resolve: 'gatsby-remark-responsive-iframe' },
+          { resolve: 'gatsby-remark-copy-linked-files' },
+          { resolve: 'gatsby-remark-smartypants' },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: 'UA-131128838-1',
