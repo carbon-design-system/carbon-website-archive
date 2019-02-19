@@ -28,6 +28,7 @@ module.exports = {
         import ComponentReact from '${__dirname}/src/components/ComponentReact';
         import ComponentDocs from '${__dirname}/src/components/ComponentDocs';
         import ImageComponent from '${__dirname}/src/components/ImageComponent';
+        import ColorBlock from '${__dirname}/src/components/ColorBlock';
 
         export default {
           AnchorLinks,
@@ -38,7 +39,8 @@ module.exports = {
           ImageComponent,
           ComponentDocs,
           ComponentCode,
-          ComponentReact
+          ComponentReact,
+          ColorBlock
         };
       `,
         gatsbyRemarkPlugins: [
