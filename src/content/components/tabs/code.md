@@ -3,10 +3,6 @@ title: Tabs
 tabs: ['Code', 'Usage','Style']
 ---
 
-
-
-
-
 <component
     name="Tabs"
     component="tabs"

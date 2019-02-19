@@ -2,10 +2,6 @@
 title: Number Input
 tabs: ['Code', 'Usage','Style']
 ---
-
-
-
-
 ## General guidance
 
 _Number inputs_ are similar to text inputs, but contain controls used to increase or decrease an incremental value.

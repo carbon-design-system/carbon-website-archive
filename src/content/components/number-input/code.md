@@ -3,10 +3,6 @@ title: Number Input
 tabs: ['Code', 'Usage','Style']
 ---
 
-
-
-
-
 <ComponentCode
     name="Number Input"
     component="number-input" 

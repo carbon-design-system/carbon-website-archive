@@ -2,10 +2,6 @@
 title: Link
 tabs: ['Code', 'Usage','Style']
 ---
-
-
-
-
 <ComponentCode
     name="Link"
     component="link" 

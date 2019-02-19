@@ -2,10 +2,6 @@
 title: Structured list
 tabs: ['Code', 'Usage','Style']
 ---
-
-
-
-
 ## General guidance
 
 _Structured lists_ group content that is similar or related, such as terms and definitions.

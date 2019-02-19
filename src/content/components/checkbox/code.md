@@ -3,10 +3,6 @@ title: Checkbox
 tabs: ['Code', 'Usage','Style']
 ---
 
-
-
-
-
 <ComponentCode
     name="Checkbox"
     component="checkbox" 

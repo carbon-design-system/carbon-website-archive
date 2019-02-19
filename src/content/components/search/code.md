@@ -2,10 +2,6 @@
 title: Search
 tabs: ['Code', 'Usage','Style']
 ---
-
-
-
-
 <ComponentCode
     name="Small search"
     component="search" 

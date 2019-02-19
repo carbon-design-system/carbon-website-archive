@@ -4,8 +4,6 @@ title: Typography
 tabs: ['Overview', 'Productive']
 ---
 
-
-
 ## Resources
 
 <grid-wrapper col_lg="8" flex="true" bleed="true">

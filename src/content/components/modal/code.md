@@ -3,10 +3,6 @@ title: Modal
 tabs: ['Code', 'Usage','Style']
 ---
 
-
-
-
-
 <ComponentCode
     name="Passive Modal"
     component="modal" 

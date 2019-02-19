@@ -3,10 +3,6 @@ title: Toggle
 tabs: ['Code', 'Usage','Style']
 ---
 
-
-
-
-
 <ComponentCode
     name="Toggle"
     component="toggle" 

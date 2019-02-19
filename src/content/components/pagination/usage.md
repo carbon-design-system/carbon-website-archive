@@ -2,10 +2,6 @@
 title: Pagination
 tabs: ['Code', 'Usage','Style']
 ---
-
-
-
-
 ## General guidance
 
 _Pagination_ is used for splitting up content or data into several pages, with a control for navigating to the next or previous page.

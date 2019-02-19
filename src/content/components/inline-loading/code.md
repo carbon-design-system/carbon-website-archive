@@ -3,10 +3,6 @@ title: Inline Loading
 tabs: ['Code', 'Usage','Style']
 ---
 
-
-
-
-
 <component
     name="Inline loading"
     component="inline-loading"

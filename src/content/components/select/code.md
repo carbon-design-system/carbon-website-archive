@@ -2,10 +2,6 @@
 title: Select
 tabs: ['Code', 'Usage','Style']
 ---
-
-
-
-
 <ComponentCode
     name="Select"
     component="select" 

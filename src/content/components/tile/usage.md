@@ -2,10 +2,6 @@
 title: Tile
 tabs: ['Code', 'Usage','Style']
 ---
-
-
-
-
 ## General guidance
 
 Tiles are a highly flexible component for displaying a wide variety of content, including informational, getting started, how-to, next steps, and more.

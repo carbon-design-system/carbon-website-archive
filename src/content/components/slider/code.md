@@ -2,10 +2,6 @@
 title: Slider
 tabs: ['Code', 'Usage','Style']
 ---
-
-
-
-
 <ComponentCode
     name="Slider"
     component="slider" 

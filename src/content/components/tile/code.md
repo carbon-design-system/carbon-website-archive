@@ -3,10 +3,6 @@ title: Tile
 tabs: ['Code', 'Usage','Style']
 ---
 
-
-
-
-
 <ComponentCode
     name="Tile"
     component="tile" 

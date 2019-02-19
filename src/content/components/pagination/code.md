@@ -3,10 +3,6 @@ title: Pagination
 tabs: ['Code', 'Usage','Style']
 ---
 
-
-
-
-
 <ComponentCode
     name="Pagination"
     component="pagination" 

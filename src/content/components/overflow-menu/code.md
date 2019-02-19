@@ -2,10 +2,6 @@
 title: Overflow Menu
 tabs: ['Code', 'Usage','Style']
 ---
-
-
-
-
 <ComponentCode
     name="Overflow Menu"
     component="overflow-menu" 

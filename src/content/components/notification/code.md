@@ -3,10 +3,6 @@ title: Notification
 tabs: ['Code', 'Usage','Style']
 ---
 
-
-
-
-
 <component
     name="Inline notification"
     component="notification"

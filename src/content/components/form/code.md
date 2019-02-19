@@ -3,10 +3,6 @@ title: Form
 tabs: ['Code', 'Usage','Style']
 ---
 
-
-
-
-
 <ComponentCode
     name="Form"
     component="form" 

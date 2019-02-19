@@ -3,10 +3,6 @@ title: Date Picker
 tabs: ['Code', 'Usage','Style']
 ---
 
-
-
-
-
 <component
     name="Simple date picker"
     component="date-picker"

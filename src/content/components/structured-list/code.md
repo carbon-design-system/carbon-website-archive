@@ -3,10 +3,6 @@ title: Structured List
 tabs: ['Code', 'Usage','Style']
 ---
 
-
-
-
-
 <ComponentCode
     name="Structured list"
     component="structured-list" 

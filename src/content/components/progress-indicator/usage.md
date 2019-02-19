@@ -2,10 +2,6 @@
 title: Progress Indicator
 tabs: ['Code', 'Usage','Style']
 ---
-
-
-
-
 ## General guidance
 
 _Progress indicator_ is a visual representation of a users progress through a set of steps. They guide the user through a number of steps in order to complete a specified process.

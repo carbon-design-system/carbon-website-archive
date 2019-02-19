@@ -4,10 +4,6 @@ tabs: ['Code', 'Usage','Style']
 ---
 
 
-
-
-
-
 <component
     name="Radio button"
     component="radio-button"

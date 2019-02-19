@@ -3,10 +3,6 @@ title: Code Snippet
 tabs: ['Code', 'Usage','Style']
 ---
 
-
-
-
-
 <component
     name="Code snippet"
     component="code-snippet"

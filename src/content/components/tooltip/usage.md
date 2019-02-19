@@ -2,10 +2,6 @@
 title: Tooltip
 tabs: ['Code', 'Usage','Style']
 ---
-
-
-
-
 ## General guidance
 
 _Tooltips_ provide additional information upon hover or focus. They often contain helper text that is contextual to an element.

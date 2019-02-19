@@ -3,10 +3,6 @@ title: Date Picker
 tabs: ['Code', 'Usage','Style']
 ---
 
-
-
-
-
 <AnchorLinks>
 <ul>
     <li><a data-scroll href="#general-guidance">General guidance</a></li>

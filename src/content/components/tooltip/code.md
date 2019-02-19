@@ -4,10 +4,6 @@ tabs: ['Code', 'Usage','Style']
 ---
 
 
-
-
-
-
 <ComponentCode
     name="Tooltip"
     component="tooltip" 

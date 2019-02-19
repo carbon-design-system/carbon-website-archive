@@ -3,10 +3,6 @@ title: List
 tabs: ['Code', 'Usage','Style']
 ---
 
-
-
-
-
 <ComponentCode
     name="Ordered List"
     component="list" 

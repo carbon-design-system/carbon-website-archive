@@ -3,10 +3,6 @@ title: Button
 tabs: ['Code', 'Usage','Style']
 ---
 
-
-
-
-
 <ComponentCode
     name="Primary button"
     component="button"

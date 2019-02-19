@@ -2,10 +2,6 @@
 title: Content Switcher
 tabs: ['Code', 'Usage','Style']
 ---
-
-
-
-
 ## General guidance
 
 _Content switcher_ manipulates the content shown following an exclusive or “either/or” pattern.

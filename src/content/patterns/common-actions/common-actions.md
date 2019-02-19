@@ -2,8 +2,6 @@
 title: Common actions
 ---
 
-
-
 <anchor-links>
 <ul>
     <li><a href="#purpose">Purpose</a></li>

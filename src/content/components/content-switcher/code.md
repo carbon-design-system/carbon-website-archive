@@ -3,10 +3,6 @@ title: Content Switcher
 tabs: ['Code', 'Usage','Style']
 ---
 
-
-
-
-
 <ComponentCode
     name="Content Switcher"
     component="content-switcher" 

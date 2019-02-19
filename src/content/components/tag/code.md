@@ -3,10 +3,6 @@ title: Tag
 tabs: ['Code', 'Usage','Style']
 ---
 
-
-
-
-
 <ComponentCode
     name="Tag"
     component="tag" 

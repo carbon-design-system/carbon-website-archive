@@ -2,10 +2,6 @@
 title: Tabs
 tabs: ['Code', 'Usage','Style']
 ---
-
-
-
-
 ## General guidance
 _Tabs_ are used to quickly navigate between views within the same context.
 

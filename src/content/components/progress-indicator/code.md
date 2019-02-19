@@ -3,10 +3,6 @@ title: Progress Indicator
 tabs: ['Code', 'Usage','Style']
 ---
 
-
-
-
-
 <component
     name="Progress indicator"
     component="progress-indicator"

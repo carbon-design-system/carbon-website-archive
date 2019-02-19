@@ -3,10 +3,6 @@ title: Text Input
 tabs: ['Code', 'Usage','Style']
 ---
 
-
-
-
-
 <component
     name="Text Input"
     component="text-input"

@@ -2,10 +2,6 @@
 title: Notification
 tabs: ['Code', 'Usage','Style']
 ---
-
-
-
-
 ## General guidance
 
 _Notifications_ are messages that communicate information to the user.

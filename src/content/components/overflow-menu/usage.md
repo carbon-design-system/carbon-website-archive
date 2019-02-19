@@ -2,10 +2,6 @@
 title: Overflow Menu
 tabs: ['Code', 'Usage','Style']
 ---
-
-
-
-
 ## General guidance
 
 

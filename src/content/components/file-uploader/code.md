@@ -3,10 +3,6 @@ title: File Uploader
 tabs: ['Code', 'Usage','Style']
 ---
 
-
-
-
-
 <component
     name="File uploader"
     component="file-uploader"

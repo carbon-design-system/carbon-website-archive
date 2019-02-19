@@ -2,10 +2,6 @@
 title: List
 tabs: ['Code', 'Usage','Style']
 ---
-
-
-
-
 ## General guidance
 
 _Lists_ consist of related content grouped together and organized vertically.
