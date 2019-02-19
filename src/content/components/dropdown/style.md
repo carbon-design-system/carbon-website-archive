@@ -5,19 +5,22 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-Inputs come in two different colors. The default input color is `$field-01` and is used on `$ui-01` page backgrounds. The light version input color is `$field-02` and is used on `$ui-02` page backgrounds.
+Inputs come in two different colors. The default input color is `$field-01` and is used on `$ui-background` and `$ui-01` page backgrounds. The `--light` version input color is `$field-02` and is used on `$ui-02` page backgrounds.
 
 | Class                                                               | Property         | SCSS       |
 | ------------------------------------------------------------------- | ---------------- | ---------- |
-| `.bx--dropdown`                                                     | background-color | $field-01  |
-| `.bx--dropdown` </br> `.bx--multi-select` </br> `.bx--combo-box` </br> `.bx--list-box` | box-shadow | $ui-05     |
-| `.bx--dropdown--light`                                              | background-color | $field-02  |
-| `.bx--dropdown-list`                                                | background-color | $ui-01     |
-| `.bx--dropdown-text`                                                | color            | $text-01   |
-| `.bx--dropdown-text::placeholder`                                   | color            | $text-03   |
-| `.bx--dropdown-link:hover` </br> `.bx--dropdown-link:focus`         | background-color | $hover-row |
-| `.bx--dropdown__arrow`                                              | fill             | $brand-01  |
-| `.bx--list-box__selection--multi`                                   | background-color | $brand-01  |
+| `.bx--label`                                                        | text color       | `$text-02` |
+| `.bx--dropdown`                                                     | background-color | `$field-01`|
+| `.bx--dropdown`                                                     | border-bottom | `$ui-04 `    |
+| `.bx--dropdown--light`                                              | background-color | `$field-02`  |
+| `.bx--dropdown-list`                                                | background-color | `$ui-01`     |
+| `.bx--dropdown-text`                                                | text color       | `$text-01`   |
+| `:placeholder`                                                      | text color       | `$text-03 `  |
+| `.bx--dropdown-item`                                                | background-color | `$hover-ui`  |
+| `.bx--dropdown-item`                                                | text color       |` $text-02`   |
+| `.bx--dropdown__arrow`                                              | fill             | `$icon-01`   |
+| `.bx--list-box__selection--multi`                                   | background-color | `$ui-05`     |
+| `.bx--dropdown--open`                                               | box-shadow      | `0 4px 8px 0 rgba(0,0,0,0.10);` |
 
 <image-component fixed="default" caption="Example of dropdowns with $field-02 (left) and $field-01 (right)">
 
@@ -29,9 +32,14 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 
 | Class                                                          | Property   | SCSS        |
 | -------------------------------------------------------------- | ---------- | ----------- |
-| `.bx--form-requirement`                                        | color      | $support-01 |
-| `.bx--dropdown--open:focus` </br> `.bx--list-box__field:focus` | box-shadow | $brand-01   |
-| `.bx--select-input[data-invalid]`                              | box-shadow | $support-01 |
+| `:focus`                                                       | border     | `$focus`   |
+| `.bx--dropdown-item:hover`                                     | background-color | `$ui-hover` |
+| `.bx--dropdown-item:hover`                                     | text color | `$text-01` |
+| `.bx--form-requirement`                                        | text color | `$support-01` |
+| `[data-invalid]`                                               | border-bottom | `$support-01` |
+| `.bx--label:disabled`                                          | text color | `$disbaled-02` |
+| `.bx--dropdown:disabled`                                       | background-color | `$disbaled-01` |
+| `.bx--dropdown-text:disabled`                                  | text color | `$disbaled-02` |
 
 **Active:** Placeholder text should remain when the user clicks into the text input and gets a cursor. Once the user starts typing, the hint text is replaced with the user input text.
 
@@ -39,7 +47,7 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 
 **Error:** Error messages appear below the input field and are always present while invalid.
 
-**Disabled:** Disabled state appears at 50% opacity and has a `.not-allowed` cursor on hover.
+**Disabled:** Disabled state should has a `.not-allowed` cursor on hover.
 
 ## Typography
 
@@ -47,16 +55,10 @@ All dropdown text should be set in sentence case, with only the first word in a 
 
 | Class                   | Font-size  | Font-weight     | Type style          |
 | ----------------------- | ---------- | --------------- | ------------------- |
-| `.bx--dropdown-text`    | 14 / 0.875 | Semi-bold / 600 | `.bx--type-zeta`    |
-| `.bx--dropdown-link`    | 14 / 0.875 | Normal / 400    | -                   |
-| `.bx--list-box__label`  | 14 / 0.875 | Semi-bold / 600 | `.bx--type-zeta`    |
-| `.bx--form-requirement` | 12 / 0.75  | Normal / 400    | `.bx--type-caption` |
-
-## Layer
-
-| Class                   | Layer, Elevation | Box-shadow                |
-| ------------------------------------------------------ | ---------------- | ------------------------------- |
-| `.bx--dropdown--open:focus` </br> `.bx--dropdown-list` | Overlay, 8       | `0 4px 8px 0 rgba(0,0,0,0.10);` |
+| `.bx--dropdown-text`    | 14 / 0.875 | Regular / 400   | `$body-short-01`    |
+| `.bx--dropdown-link`    | 14 / 0.875 | Regular / 400   | `$body-short-01`    |
+| `.bx--label`            | 14 / 0.875 | Regular / 400   | `$label-01`    |
+| `.bx--form-requirement` | 12 / 0.75  | Regular / 400   | `$label-01`    |
 
 ## Structure
 
@@ -64,12 +66,12 @@ Dropdowns have two states, open and closed. An open and closed dropdown should b
 
 | Class                 | Property                    | px / rem    | Spacing tokens |
 | --------------------- | --------------------------- | ----------- | -------------- |
-| `.bx--dropdown`       | height                      | 40 / 2.5    | -              |
-| `.bx--dropdown-text`  | padding-left                | 16 / 1      | $spacing-md    |
-| `.bx--dropdown-text`  | padding-right               | 40 / 2.5    | $spacing-2xl   |
-| `.bx--dropdown-text`  | padding-top, padding-bottom | 13 / 0.8125 | -              |
-| `.bx--dropdown`       | box-shadow                  | 1px         | -              |
-| `.bx--dropdown:focus` | box-shadow                  | 2px         | -              |
+| `.bx--label`          | margin-bottom               | 8 / 0.5     | `$spacing-03`  |
+| `.bx--dropdown`       | height                      | 40 / 2.5    | –              |
+| `.bx--dropdown-text`  | padding-left                | 16 / 1      | `$spacing-05`  |
+| `.bx--dropdown__arrow`| padding-right, padding-left | 16 / 1      | `$spacing-05`  |
+| `.bx--dropdown`       | border-bottom               | 1px         | –              |
+| `.bx--dropdown-item`  | height                      | 40 / 2.5    | –              |
 
 <image-component fixed="default" caption="Structure and spacing measurements for dropdown | px / rem">
 
@@ -87,12 +89,13 @@ Dropdowns have two states, open and closed. An open and closed dropdown should b
 
 | Class                             | Property                    | px / rem   | Spacing tokens |
 | --------------------------------- | --------------------------- | ---------- | -------------- |
-| `.bx--list-box__menu-item`        | height                      | 40 / 2.5   | -              |
-| `.bx--list-box__field`            | padding-left, padding-right | 16 / 1     | $spacing-md    |
-| `.bx--checkbox-label`             | padding-left                | 4 / 0.25   | $spacing-2xs   |
-| `.bx--list-box__menu-icon`        | padding-left, padding-right | 16 / 1     | $spacing-md    |
-| `.bx--list-box__selection--multi` | height                      | 18 / 1.125 | -              |
-| `.bx--list-box__selection--multi` | margin-right                | 10 / 0.625 | -              |
+| `.bx--list-box`                   | height                      | 40 / 2.5   | –              |
+| `.bx--list-box__menu-item`        | height                      | 40 / 2.5   | –              |
+| `.bx--list-box__field`            | padding-left, padding-right | 16 / 1     | `$spacing-05`  |
+| `.bx--checkbox-label`             | padding-left                | 16 / 1     | `$spacing-05`  |
+| `.bx--list-box__menu-icon`        | padding-left, padding-right | 16 / 1     | `$spacing-05`  |
+| `.bx--list-box__selection--multi` | height                      | 24 / 1.5   | –              |
+| `.bx--list-box__selection--multi` | margin-right                | 16 / 1     | `$spacing-05`  |
 
 <image-component fixed="default" caption="Structure and spacing measurements for a multi-select dropdown | px / rem">
 
@@ -107,11 +110,9 @@ Dropdowns have two states, open and closed. An open and closed dropdown should b
 | ------------------------------------ | --------------------------- | ---------- | ------------- |
 | `.bx--list-box.bx--list-box--inline` | height                      | 32 / 2     | -             |
 | `.bx--list-box__menu-item`           | height                      | 40 / 2.5   | -             |
-| `.bx--list-box__menu-item`           | padding-right, padding-left | 16 / 1     | $spacing-md   |
-| `.bx--checkbox-label`                | padding-left                | 4 / 0.25   | $spacing-2xs  |
-| `.bx--list-box__menu-icon`           | padding-right               | 12 / 0.75  | $spacing-sm   |
-| `.bx--list-box__menu-icon`           | padding-right               | 10 / 0.625 | -             |
-| `.bx--checkbox-label::before`        | height                      | 18 / 1.125 | -             |
+| `.bx--list-box__menu-item`           | padding-right, padding-left | 16 / 1     | `$spacing-05` |
+| `.bx--checkbox-label`                | padding-left                | 16 / 1     | `$spacing-05` |
+| `.bx--list-box__menu-icon`           | padding-left, padding-right | 16 / 1     | `$spacing-05` |
 
 <image-component fixed="default" caption="Structure and spacing for inline dropdown | px / rem">
 
@@ -135,11 +136,11 @@ Filtering can be used with dropdown and multi-select dropdown but not inline dro
 
 | Class                             | Property                    | px / rem   | Spacing token |
 | --------------------------------- | --------------------------- | ---------- | ------------- |
-| `.bx--list-box__selection`        | height                      | 40 / 2.5   | -             |
-| `.bx--list-box__selection svg`    | height                      | 10 / 0.625 | -             |
-| `.bx--list-box__menu-icon`        | padding-left, padding-right | 16 / 1     | $spacing-md   |
-| `.bx--list-box__selection`        | padding-left, padding-right | 16 / 1     | $spacing-md   |
-| `.bx--list-box__selection--multi` | height                      | 18 / 1.125 | -             |
+| `.bx--list-box__selection`        | height                      | 40 / 2.5   | –             |
+| `.bx--list-box__selection svg`    | height                      | 16 / 1     | –             |
+| `.bx--list-box__menu-icon`        | padding-left, padding-right | 16 / 1     | `$spacing-05` |
+| `.bx--list-box__selection`        | padding-left, padding-right | 16 / 1     | `$spacing-05` |
+| `.bx--list-box__selection--multi` | height                      | 24 / 1.5   | –             |
 
 <image-component fixed="default" caption="Spacing for multi-select dropdown with filtering | px / rem">
 
