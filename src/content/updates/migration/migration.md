@@ -19,12 +19,12 @@ title: Migration
 
 ## Carbon X
 
-Carbon X, aka v10, is currently in Alpha release. Please use this opportunity to explore and experiment with the new components, elements, layouts, and UI shell. The Alpha release is a work in progress; changes will be frequent and possibly breaking. **This release is not approved for production.** Please explore the system and [provide bountiful feedback](/help/support#github-issues)!
+Carbon X, aka v10, is currently in Beta release. Please use this opportunity to explore and experiment with the new components, elements, layouts, and UI shell. The Beta release is a work in progress; changes will be frequent and possibly breaking. **This release is not approved for production.** Please explore the system and [provide bountiful feedback](/help/support#github-issues)!
 
 ## Rollout plan
 
-- **February 2019:** Beta release
-- **March 2019:** Production release
+- **Mid-February 2019:** Beta release - current
+- **Mid-March 2019:** Production release
 
 ### Adoption and activation sessions
 
@@ -32,7 +32,7 @@ Carbon X, aka v10, is currently in Alpha release. Please use this opportunity to
 
 ## Design kit
 
-The Beta release of Carbon X will arrive with a completely revised Sketch design kit, updated for the new IBM Design Language (f.k.a. "Duo"). All components in the kit have been reskinned, and colors, icons, typrography, UI shell, and grid elements will also reflect the new IBM Design Language.
+The Beta release of Carbon X includes a completely revised Sketch design kit, updated for the new IBM Design Language (f.k.a. "Duo"). All components in the kit have been reskinned, and colors, icons, typrography, UI shell, and grid elements will also reflect the new IBM Design Language.
 
 Internal IBM users will now be able to auto-sync the design kit with Box Drive, allowing users to update the Sketch library automatically. The manual download method will also still be available via the [GitHub repository](https://github.com/IBM/carbon-design-kit).
 
@@ -40,7 +40,7 @@ The Digital Design group has published a detailed guide on [setting up auto-sync
 
 ## Component code
 
-The redesigned components will be available in the current repos once released. All components have been reskinned to the new IBM Design Language for v10. Detailed technical migration instructions will be published to the repos upon Beta release.
+The redesigned components will be available in the current repos once released. All components have been reskinned to the new IBM Design Language for v10. Detailed technical migration instructions will be published to the repos as available.
 
 
 <grid-wrapper className="tile--resource--no-margin" col_lg="8" flex="true" bleed="true">
