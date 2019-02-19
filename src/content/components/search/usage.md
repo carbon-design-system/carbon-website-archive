@@ -20,11 +20,11 @@ _Search_ enables users to specify a word or a phrase to find particular relevant
 
 ## Format
 
-<image-component cols="8" caption="Small Search to filter table data">
+<ImageComponent cols="8" caption="Small Search to filter table data">
 
 ![Search at the top of the data table](images/search-usage-1.png)
 
-</image-component>
+</ImageComponent>
 
 ### Search fields
 

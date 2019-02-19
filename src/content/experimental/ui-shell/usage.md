@@ -3,7 +3,7 @@ title: UI Shell
 tabs: ['Code', 'Usage']
 ---
 
-<anchor-links>
+<AnchorLinks>
 <ul>
     <li><a href="#ui-shell-zones">UI Shell zones</a></li>
     <li><a href="#ui-shell-components">UI Shell components</a></li>
@@ -11,7 +11,7 @@ tabs: ['Code', 'Usage']
     <li><a href="#ui-shell-theming">UI Shell theming</a></li>
     
 </ul>
-</anchor-links>
+</AnchorLinks>
 
 
 ## UI Shell zones
@@ -21,31 +21,31 @@ The UI Shell is the top level in a product's UI. The Shell consists of the prima
 ###Global zone
 The global zone holds the IBM global platform switcher, which allows the user to quickly navigate between different IBM platforms. This zone cannot be altered by the platform or product owner.
 
-<image-component cols="12">
+<ImageComponent cols="12">
 
 ![Global Zone](images/zones-global.png)
 
-</image-component>
+</ImageComponent>
 
 ###Platform zone
 The platform zone contains platform-level elements, which could include functions like search, docs, support, profile, and notifications. Platform owners can also choose to include custom top-nav text links in this zone.
 
-<image-component cols="12">
+<ImageComponent cols="12">
 
 ![Platform Zone](images/zones-platform.png)
 
-</image-component>
+</ImageComponent>
 
 
 ###Local zone
 The local zone is controlled at the product level. It contains the product-level side nav as well as the main content area.
 
 
-<image-component cols="12">
+<ImageComponent cols="12">
 
 ![Local Zone](images/zones-local.png)
 
-</image-component>
+</ImageComponent>
 
 
 ## UI Shell components
@@ -61,22 +61,22 @@ The header spans the full width of the viewport and is the topmost element in th
 - Links to top level pages are persistent on screen
 - Users are expected to switch between top level pages frequently
 
-<image-component cols="12">
+<ImageComponent cols="12">
 
 ![Primary Header template and example](images/header-generic.png)
 
-</image-component>
+</ImageComponent>
 
 
 #### Header responsive behavior
 
 As a header scales down to fit smaller screen sizes, header links and menus should collapse into a left-nav hamburger menu. The left nav menu (previously L1 menu) is reserved for this scenario and should not be used as primary navigation with the header. If an additional navigation menu is needed, use an app switcher placed on the far right side of the header.
 
-<image-component cols="12">
+<ImageComponent cols="12">
 
 ![Responsive Header example](images/header-responsive.png)
 
-</image-component>
+</ImageComponent>
 
 #### Header elements
 
@@ -93,11 +93,11 @@ As a header scales down to fit smaller screen sizes, header links and menus shou
 
 - **The global switcher:** The global app switcher provides a way to switch between contexts within a product/platform. The global app switcher is accessed by clicking on the 9 dot icon in the far right of the header.
 
-<image-component cols="12">
+<ImageComponent cols="12">
 
 ![Primary Header with app switcher](images/header-app-switcher2.png)
 
-</image-component>
+</ImageComponent>
 
 
 ### Header panels
@@ -106,31 +106,31 @@ These are vertical panels that are anchored in the Header and invoked by control
 
 Use a header panel when additional content or actions associated with a header icon needs to be shown. More details about panel types and behaviors can be found under the [Layout](../experimental/layout/#panel-behavior) section.
 
-<image-component cols="12">
+<ImageComponent cols="12">
 
 ![Header Panel template](images/header-panel.png)
 
-</image-component>
+</ImageComponent>
 
 ### Side-nav panels
 
 These panels contain product-level navigation and can be either fixed-width or flexible.
 
-<image-component cols="12">
+<ImageComponent cols="12">
 
 ![Side-Nav Panels](images/side-nav-panel.png)
 
-</image-component>
+</ImageComponent>
 
 ### On-page panels
 
 These panels are at the same elevation as the primary content zone of the page, and can be either dismissable or fully fixed.
 
-<image-component cols="12">
+<ImageComponent cols="12">
 
 ![On-Page Panel](images/on-page-panel.png)
 
-</image-component>
+</ImageComponent>
 
 **Use an on-page panel when:**
 
@@ -188,11 +188,11 @@ A flexible side-nav is more friendly to responsive designs than a fixed nav. Fix
 - More space is needed for page content
 - A fully responsive solution is needed
 
-<image-component cols="12">
+<ImageComponent cols="12">
 
 ![Side-nav Panel](images/side-nav-panel.png)
 
-</image-component>
+</ImageComponent>
 
 #### Fixed side-nav
 

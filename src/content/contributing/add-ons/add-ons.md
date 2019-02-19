@@ -2,7 +2,7 @@
 title: Add-ons
 ---
 
-<anchor-links>
+<AnchorLinks>
 <ul>
     <li><a data-scroll href="#add-on-repositories">Add-on repositories</a></li>
     <li><a data-scroll href="#checklist">Checklist</a></li>
@@ -11,7 +11,7 @@ title: Add-ons
     <li><a data-scroll href="#ownership">Sizing scale</a></li>
     <li><a data-scroll href="#carbon-support">Carbon support</a></li>
 </ul>
-</anchor-links>
+</AnchorLinks>
 
 ## Add-on repositories
 

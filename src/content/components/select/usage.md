@@ -21,21 +21,21 @@ _Select_ is a type of input that is used in forms, where a user is submitting da
 
 _Small selects_ are commonly used in [data tables](/components/data-table). When using a small select for a number selection, the increments in the select should be 10, 25, 50 and 100. The maximum amount of items a user can see per page is 100.
 
-<image-component cols="8" caption="Example of small select in data table">
+<ImageComponent cols="8" caption="Example of small select in data table">
 
 ![Example of a small select](images/select-usage-3.png)
 
-</image-component>
+</ImageComponent>
 
 #### Inline select
 
 Inline select is useful when you have multiple `select` fields within a form. Inline selects have less visual weight on a page because they are borderless.
 
-<image-component cols="8" caption="Example of Inline select">
+<ImageComponent cols="8" caption="Example of Inline select">
 
 ![Example of a small select](images/select-usage-4.png)
 
-</image-component>
+</ImageComponent>
 
 ## General guidelines
 
@@ -47,11 +47,11 @@ Labels are essential to the usability of forms. Do not place a label inside a _s
 
 Real-time validation helps to streamline the process and keep data clean when the user is filling out forms. For full guidelines, refer to the [forms](/components/form) usage page.
 
-<image-component cols="8" caption="Validation on select">
+<ImageComponent cols="8" caption="Validation on select">
 
 ![Example of a small select](images/select-usage-1.png)
 
-</image-component>
+</ImageComponent>
 
 ### Order
 

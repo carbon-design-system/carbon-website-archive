@@ -115,7 +115,7 @@ _Structure and spacing measurements for a basic and an enhanced data table | px 
 | `.bx--toolbar`             | margin-top, margin-bottom | 16 / 1   | $spacing-md   |
 
 
-<div class="image-component">
+<div class="ImageComponent">
     <img src="images/data-table-style-7.png" alt="Spacing for toolabr icons" />
 </div>
 

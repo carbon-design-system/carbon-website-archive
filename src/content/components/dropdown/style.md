@@ -19,11 +19,11 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 | `.bx--dropdown__arrow`                                              | fill             | $brand-01  |
 | `.bx--list-box__selection--multi`                                   | background-color | $brand-01  |
 
-<image-component fixed="default" caption="Example of dropdowns with $field-02 (left) and $field-01 (right)">
+<ImageComponent fixed="default" caption="Example of dropdowns with $field-02 (left) and $field-01 (right)">
 
 ![Dropdown example with $field-01 and $field-02](images/dropdown-style-9.png)
 
-</image-component>
+</ImageComponent>
 
 ### States
 
@@ -71,17 +71,17 @@ Dropdowns have two states, open and closed. An open and closed dropdown should b
 | `.bx--dropdown`       | box-shadow                  | 1px         | -              |
 | `.bx--dropdown:focus` | box-shadow                  | 2px         | -              |
 
-<image-component fixed="default" caption="Structure and spacing measurements for dropdown | px / rem">
+<ImageComponent fixed="default" caption="Structure and spacing measurements for dropdown | px / rem">
 
 ![Structure and spacing for a closed dropdown](images/dropdown-style-2.png)
 
-</image-component>
+</ImageComponent>
 
-<image-component fixed="default" caption="Normal, active, open, and disabled states for dropdown">
+<ImageComponent fixed="default" caption="Normal, active, open, and disabled states for dropdown">
 
 ![Normal, active, open, and disabled states for dropdown](images/dropdown-style-1.png)
 
-</image-component>
+</ImageComponent>
 
 ## Multi-select dropdown
 
@@ -94,11 +94,11 @@ Dropdowns have two states, open and closed. An open and closed dropdown should b
 | `.bx--list-box__selection--multi` | height                      | 18 / 1.125 | -              |
 | `.bx--list-box__selection--multi` | margin-right                | 10 / 0.625 | -              |
 
-<image-component fixed="default" caption="Structure and spacing measurements for a multi-select dropdown | px / rem">
+<ImageComponent fixed="default" caption="Structure and spacing measurements for a multi-select dropdown | px / rem">
 
 ![Structure and spacing for a multi-select dropdown](images/dropdown-style-3.png)
 
-</image-component>
+</ImageComponent>
 
 
 ## Inline dropdown
@@ -113,21 +113,21 @@ Dropdowns have two states, open and closed. An open and closed dropdown should b
 | `.bx--list-box__menu-icon`           | padding-right               | 10 / 0.625 | -             |
 | `.bx--checkbox-label::before`        | height                      | 18 / 1.125 | -             |
 
-<image-component fixed="default" caption="Structure and spacing for inline dropdown | px / rem">
+<ImageComponent fixed="default" caption="Structure and spacing for inline dropdown | px / rem">
 
 ![Structure and spacing for inline dropdown](images/dropdown-style-5.png)
 
-</image-component>
+</ImageComponent>
 
 ### Inline dropdown states
 
 Inline select has two different states; one for mouse hover and one for keyboard focus.
 
-<image-component fixed="default" caption="Hover and focus states for inline dropdown">
+<ImageComponent fixed="default" caption="Hover and focus states for inline dropdown">
 
 ![Hover and focus states for inline dropdown](images/dropdown-style-6.png)
 
-</image-component>
+</ImageComponent>
 
 ## Filtering
 
@@ -141,14 +141,14 @@ Filtering can be used with dropdown and multi-select dropdown but not inline dro
 | `.bx--list-box__selection`        | padding-left, padding-right | 16 / 1     | $spacing-md   |
 | `.bx--list-box__selection--multi` | height                      | 18 / 1.125 | -             |
 
-<image-component fixed="default" caption="Spacing for multi-select dropdown with filtering | px / rem">
+<ImageComponent fixed="default" caption="Spacing for multi-select dropdown with filtering | px / rem">
 
 ![Spacing for multi-select dropdown with filtering](images/dropdown-style-7.png)
 
-</image-component>
+</ImageComponent>
 
-<image-component fixed="default" caption="Interaction states for multi-select dropdown with filtering | px / rem">
+<ImageComponent fixed="default" caption="Interaction states for multi-select dropdown with filtering | px / rem">
 
 ![Interaction states for multi-select dropdown with filtering](images/dropdown-style-8.png)
 
-</image-component>
+</ImageComponent>

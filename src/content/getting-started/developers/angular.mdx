@@ -5,28 +5,26 @@ tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
 
 import GridWrapper from '../../../../src/components/GridWrapper';
 import ClickableTile from '../../../../src/components/ClickableTile';
+import ImageComponent from '../../../../src/components/ImageComponent';
 
 ## Resources
 
 <GridWrapper col_lg="8" flex="true" bleed="true">
-<ClickableTile
+  <ClickableTile
     title="Try Angular components with CodeSandbox."
     href="https://codesandbox.io/s/0129r494ql"
-    type="resource"
-     >
-    <img src="images/codesandbox.png" alt=""/>
-</ClickableTile>
+    type="resource">
+    <img src="images/codesandbox.png" alt="" />
+  </ClickableTile>
 </GridWrapper>
 
+<AnchorLinks>
 
-<anchor-links>
-<ul>
-    <li><a href="#carbon-angular-library">Carbon Angular library</a></li>
-    <li><a href="#install">Install</a></li>
-    <li><a href="#development">Development</a></li>
-    
-</ul>
-</anchor-links>
+- [Carbon Angular library](#carbon-angular-library)
+- [Install](#install)
+- [Development](#development)
+
+</AnchorLinks>
 
 ## Carbon Angular library
 
@@ -56,14 +54,13 @@ $ npm start
 
 _Note: This isn't the only way to bootstrap a_ `carbon-components-angular` _application, but the combination of_ `@angular/cli` _and the_ `carbon-components` _scss is our recommended setup._
 
-
 ### Using our starter app
 
-<image-component cols="12" bg="none">
+<ImageComponent cols="12" bg="none">
 
 ![carbon-angular-starter screenshot](images/carbon-angular-starter.png)
 
-</image-component>
+</ImageComponent>
 
 We recommend using the [carbon-angular-starter](https://github.com/carbon-design-system/carbon-angular-starter) for bootstrapping applications with Carbon components. Within five minutes your app will be running with the following already configured:
 

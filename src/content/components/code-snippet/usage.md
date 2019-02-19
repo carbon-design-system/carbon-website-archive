@@ -9,7 +9,7 @@ _Code snippets_ are small blocks of reusable code that can be inserted in a code
 variations.
 
 
-<p>Our code snippets are built with basic styling. We recommend using <a href="https://github.com/chriskempson/base16" target=blank>Base16</a> for more complex syntax highlighting. Base16 provides carefully chosen syntax highlighting and a default set of sixteen colors suitable for a wide range of applications. The theme we recommend using is **Solarflare**.</p>
+<p>Our code snippets are built with basic styling. We recommend using <a href="https://github.com/chriskempson/base16" target="blank">Base16</a> for more complex syntax highlighting. Base16 provides carefully chosen syntax highlighting and a default set of sixteen colors suitable for a wide range of applications. The theme we recommend using is **Solarflare**.</p>
 
 #### Overflow
 
@@ -22,8 +22,8 @@ Terminal commands are often longer strings and should only appear on one line. A
 
 Code snippets are accompanied by a **Copy icon**, which allows users to copy the provided code to their clipboard. The copy icon must be accompanied by a confirmation that states the successful action of copying an item to the users clipboard.
 
-<image-component cols="8" >
+<ImageComponent cols="8" >
 
 ![code snippet example](images/code-snippet-usage-1.png)
 
-</image-component>
+</ImageComponent>

@@ -2,13 +2,13 @@
 title: Inline Loading
 tabs: ['Code', 'Usage']
 ---
-<anchor-links>
+<AnchorLinks>
 <ul>
     <li><a data-scroll href="#general-guidance">General guidance</a></li>
     <li><a data-scroll href="#format">Format</a></li>
     <li><a data-scroll href="#states">States</a></li>
 </ul>
-</anchor-links>
+</AnchorLinks>
 
 
 ## General guidance
@@ -37,19 +37,19 @@ It is best practice to use an Inline loading component for any Create, Update, o
 
 The _loading_ state indicates that the action is still in progress.
 
-<image-component cols="8">
+<ImageComponent cols="8">
 
 ![Example of inline loading](images/inline-loading-usage-1.png)
 
-</image-component>
+</ImageComponent>
 
 #### Success
 
 The success state indicates that the action completed successfully.
 
-<image-component cols="8">
+<ImageComponent cols="8">
 
 ![Example of loading success](images/inline-loading-usage-2.png)
 
-</image-component>
+</ImageComponent>
 

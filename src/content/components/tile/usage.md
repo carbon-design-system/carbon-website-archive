@@ -19,38 +19,38 @@ _All of the images below represent examples of types of content that could be pr
 
 Read-only tiles are used to display information to the user, such as features or services offered. Read-only tiles are often seen on marketing pages to promote content. These tiles can have internal calls-to-action (CTAs), such as a [button](/components/button) or a [link](/components/link).
 
-<image-component cols="12">
+<ImageComponent cols="12">
 
 ![Example image of read-only tiles.](images/tile-usage-1.png)
 
-</image-component>
+</ImageComponent>
 
 ### Clickable
 
 Clickable tiles can be used as navigational items, where the entire tile is a clickable state, which redirects the user to a new page. Clickable tiles cannot contain separate internal CTAs.
 
-<image-component cols="12">
+<ImageComponent cols="12">
 
 ![Example image of clickable tiles.](images/tile-usage-2.png)
 
-</image-component>
+</ImageComponent>
 
 ### Selectable
 
 Selectable tiles work like a [radio button](/components/radio-button), where the entire tile is a click target. Selectable tiles may contain internal CTAs (like links to docs) if the internal CTA is given its own click target. Selectable tiles work well for presenting options to a user in a structured manner, such as a set of pricing plans.
 
-<image-component cols="12">
+<ImageComponent cols="12">
 
 ![Example image of selectable tiles.](images/tile-usage-3.png)
 
-</image-component>
+</ImageComponent>
 
 ### Expandable
 
 Expandable tiles are helpful for hiding/showing larger amounts of content to a user. They can only be stacked in a single column, and cannot live in a row or horizontal grid. When expanded, tiles push content down the page. Expandable tiles may contain internal CTAs (like links to docs) if the internal CTA is given its own click target.
 
-<image-component cols="12">
+<ImageComponent cols="12">
 
 ![Example image of expandable tiles.](images/tile-usage-4.png)
 
-</image-component>
+</ImageComponent>

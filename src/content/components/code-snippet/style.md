@@ -43,11 +43,11 @@ Carbon has defined a set of accessible syntax colors. View an incontext [example
 <!-- Not done with spacing but with positioning
 || Spacing: icon & tooltip | 4 | 0.5| -->
 
-<image-component fixed="default" caption="Structure and spacing measurements for code snippet | px / rem">
+<ImageComponent fixed="default" caption="Structure and spacing measurements for code snippet | px / rem">
 
 ![](images/code-snippet-style-1.png)
 
-</image-component>
+</ImageComponent>
 
 ### Multi-line code snippet
 
@@ -61,11 +61,11 @@ Carbon has defined a set of accessible syntax colors. View an incontext [example
 | `.bx--snippet--multi`                        | padding-left                | 24 / 1.5                          | $spacing-lg   |
 | `.bx--snippet__icon`                         | height, width               | 16 / 1                            | -             |
 
-<image-component fixed="default" caption="Structure and spacing measurements for multi-line snippet | px / rem">
+<ImageComponent fixed="default" caption="Structure and spacing measurements for multi-line snippet | px / rem">
 
 ![Structure and spacing measurements for multi-line snippet](images/code-snippet-style-2.png)
 
-</image-component>
+</ImageComponent>
 
 ### Inline code snippet
 
@@ -75,8 +75,8 @@ Carbon has defined a set of accessible syntax colors. View an incontext [example
 | `.bx--snippet--inline`      | border-radius               | 4                       | -             |
 | `.bx--snippet--inline code` | padding-right, padding-left | 8 / 0.5                 | $spacing-xs   |
 
-<image-component fixed="default" caption="Structure and spacing measurements for inline code snippet | px / rem">
+<ImageComponent fixed="default" caption="Structure and spacing measurements for inline code snippet | px / rem">
 
 ![Structure and spacing measurements for inline snippet](images/code-snippet-style-3.png)
 
-</image-component>
+</ImageComponent>

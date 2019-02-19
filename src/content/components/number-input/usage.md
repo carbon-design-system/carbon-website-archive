@@ -17,8 +17,8 @@ _Number inputs_ are similar to text inputs, but contain controls used to increas
 - Use sentence-style capitalization (only the first word in a phrase and any proper nouns capitalized) for the label.
 - See further guidance for using number labels within [forms](/components/form/usage).
 
-<image-component cols="8">
+<ImageComponent cols="8">
 
 ![number input example](images/number-input-usage-1.png)
 
-</image-component>
+</ImageComponent>

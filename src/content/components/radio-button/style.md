@@ -31,11 +31,11 @@ _Radio button_ labels and headings should be set in sentence case, with only the
 | `.bx--radio-button__label`                | margin-right  | 16 / 1     | $spacing-md   |
 | `.bx--radio-button__appearance`           | margin-right  | 8 / 0.5    | $spacing-xs   |
 
-<image-component fixed="default" caption="Structure and spacing measurements for radio button | px | rem">
+<ImageComponent fixed="default" caption="Structure and spacing measurements for radio button | px | rem">
 
 ![Structure and spacing measurements for a radio button](images/radio-button-style-1.png)
 
-</image-component>
+</ImageComponent>
 
 ### Recommended
 
@@ -46,8 +46,8 @@ The following specs are not built into the radio button component but are recomm
 | `.bx--radio-button-group`  | margin        | 16 / 1   | $spacing-md   |
 | `.bx--radio-button__label` | margin-bottom | 16 / 1   | $spacing-md   |
 
-<image-component fixed="default" caption="Recommended structure and spacing measurements for radio button | px | rem">
+<ImageComponent fixed="default" caption="Recommended structure and spacing measurements for radio button | px | rem">
 
 ![Structure and spacing measurements for a radio button](images/radio-button-style-2.png)
 
-</image-component>
+</ImageComponent>

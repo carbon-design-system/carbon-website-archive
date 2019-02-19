@@ -8,28 +8,28 @@ _Overflow content_ is text, such as a paragraph or a text string, that exceeds a
 
 ## Truncation
 
-<anchor-links small="true">
+<AnchorLinks small="true">
 <ul>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#variations">Variations</a></li>
     <li><a href="#code">Code</a></li>
     <li><a href="#show-more-buttons">‘Show more’ buttons</a></li>
 </ul>
-</anchor-links>
+</AnchorLinks>
 
 Truncation, or shortening, is typically used for static text or links that exceed the size of their container. Truncated items are represented by an ellipsis `...` and should represent three or more truncated characters in a text string. There must be at least four characters of non-truncated content in a truncated string. Truncated items always include a browser tooltip on hover to show the entire string, name, or phrase that the ellipsis is representing. The only time a browser tooltip does not need to be used is at the end of a truncated paragraph.
 
-<image-component cols="8" caption="Example of a browser tooltip being used for truncation.">
+<ImageComponent cols="8" caption="Example of a browser tooltip being used for truncation.">
 
 ![Example of a browser tooltip being used for truncation.](images/BrowserTooltip.png)
 
-</image-component>
+</ImageComponent>
 
-<image-component cols="8" caption="Example of end-line truncation for a paragraph.">
+<ImageComponent cols="8" caption="Example of end-line truncation for a paragraph.">
 
 ![Example of end-line truncation for a paragraph.](images/Truncated-Paragraph.png)
 
-</image-component>
+</ImageComponent>
 
 ### Usage
 
@@ -57,11 +57,11 @@ There are three types of truncation: front-line, mid-line, and end-line.
 
 An ellipsis on its own may also represent condensed content. This type of truncation requires an overflow menu on hover instead of a browser tooltip.
 
-<image-component cols="8" caption="Example of a truncated breadcrumb utilizing an ellipsis with an overflow menu.">
+<ImageComponent cols="8" caption="Example of a truncated breadcrumb utilizing an ellipsis with an overflow menu.">
 
 ![Example of a truncated Breadcrumb utilizing an ellipse with an Overflow Menu.](images/Ellipse.png)
 
-</image-component>
+</ImageComponent>
 
 ### Code
 
@@ -103,27 +103,27 @@ To use front- and end-line truncation, enter the appropriate class below and add
 
 <br />
 
-<image-component cols="8">
+<ImageComponent cols="8">
 
 ![Result.](images/1c695894-538c-11e8-8cd2-bb0b1cac151b.png)
 
-</image-component>
+</ImageComponent>
 
 #### Mid-line truncation
 
 Mid-line truncation does not have its own class as it requires JavaScript. This example in CodePen shows how it is implemented.
 
-<grid-wrapper col_lg="8">
+<GridWrapper col_lg="8">
 <iframe height='300' scrolling='no' title='Middle Truncation' src='//codepen.io/team/carbon/embed/KRoBQe/?height=300&theme-id=30962&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/team/carbon/pen/KRoBQe/'>Middle Truncation</a> by Carbon Design System (<a href='https://codepen.io/carbon'>@carbon</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-</grid-wrapper>
+</GridWrapper>
 
 ### 'Show more' buttons
 
 The ‘Show more’ button is used when there is a significant amount of overflow content. Implementing a ‘Show more’ button gives a user the ability to see the content in more digestible chunks, as opposed to all at once. A ‘Show more’ button is used in place of scrolling, gradients, or fades as they are more prominent and actionable. If needed, a 'Show less' can be used to again hide the content the user opened. ‘Show more’ can also be presented as ‘Load more’ in cases where performance is a concern. See the [Loading](/components/loading) section for additional details.
 
-<image-component cols="8" caption="Example of the 'Show more' button in context.">
+<ImageComponent cols="8" caption="Example of the 'Show more' button in context.">
 
 ![Example of a Code Snippet utilizing the 'Show more' Button.](images/show-more.gif)
 
-</image-component>
+</ImageComponent>

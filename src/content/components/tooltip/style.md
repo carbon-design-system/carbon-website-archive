@@ -17,11 +17,11 @@ tabs: ['Code', 'Usage', 'Style']
 | `.bx--tooltip--definition__bottom p` </br> `.bx--tooltip--definition__top p` </br> `.bx--tooltip--icon__top::after` </br> `.bx--tooltip--icon__bottom::after` | text color       | $inverse-01 |
 | `.bx--tooltip--definition__bottom` </br> `.bx--tooltip--definition__top` </br> `.bx--tooltip--icon__top::after` </br> `.bx--tooltip--icon__bottom::after`     | background-color | $inverse-02 |
 
-<image-component fixed="default" caption="Example of closed and open states for a tooltip">
+<ImageComponent fixed="default" caption="Example of closed and open states for a tooltip">
 
 ![Closed and open states for a tooltip](images/tooltip-style-1.png)
 
-</image-component>
+</ImageComponent>
 
 ## Typography
 
@@ -53,11 +53,11 @@ All tooltip types have a varying height based on the amount of content they cont
 | `.bx--tooltip`              | padding       | 16 / 1   | $spacing-md   |
 | `.bx--tooltip`              | margin-top    | 8 / 0.5  | $spacing-2xs  |
 
-<image-component fixed="default" caption="Structure and spacing measurements for an interactive tooltip | px / rem">
+<ImageComponent fixed="default" caption="Structure and spacing measurements for an interactive tooltip | px / rem">
 
 ![Structure and spacing measurements for an interactive tooltip](images/tooltip-style-2.png)
 
-</image-component>
+</ImageComponent>
 
 ### Definition tooltip
 
@@ -68,11 +68,11 @@ All tooltip types have a varying height based on the amount of content they cont
 | `.bx--tooltip--definition__bottom` </br> `.bx--tooltip--definition__top` | padding       | 8 / 0.5   | $spacing-xs   |
 | `.bx--tooltip--definition .bx--tooltip__trigger`                         | border-bottom | 2px       | -             |
 
-<image-component fixed="default" caption="Structure and spacing measurements for a definition tooltip | px / rem">
+<ImageComponent fixed="default" caption="Structure and spacing measurements for a definition tooltip | px / rem">
 
 ![Structure and spacing measurements for a definition tooltip](images/tooltip-style-3.png)
 
-</image-component>
+</ImageComponent>
 
 ### Icon tooltip
 
@@ -81,18 +81,18 @@ All tooltip types have a varying height based on the amount of content they cont
 | `.bx--tooltip--icon__top:before` </br> `.bx--tooltip--icon__bottom:before` | max-width | 176 / 11 | -             |
 | `.bx--tooltip--icon__top:before` </br> `.bx--tooltip--icon__bottom:before` | padding   | 4 / 0.25 | $spacing-2xs  |
 
-<image-component fixed="default" caption="Structure and spacing measurements for an icon tooltip | px / rem">
+<ImageComponent fixed="default" caption="Structure and spacing measurements for an icon tooltip | px / rem">
 
 ![Structure and spacing measurements for an icon tooltip](images/tooltip-style-4.png)
 
-</image-component>
+</ImageComponent>
 
 ### Placement
 
 Tooltips should be placed below the tooltip icon unless it is within the height of the tooltip box plus 16px / 1rem of the bottom of the page. In that instance, the tooltip should appear above the icon or defined word. On mobile, tooltips can only appear below the tooltip icon.
 
-<image-component fixed="default" caption="Placement examples for a tooltip">
+<ImageComponent fixed="default" caption="Placement examples for a tooltip">
 
 ![Placement examples for a tooltip](images/tooltip-style-5.png)
 
-</image-component>
+</ImageComponent>

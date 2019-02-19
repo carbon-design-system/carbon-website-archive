@@ -17,11 +17,11 @@ All steps that have already been completed are indicated by an outlined circle w
 | `.bx--progress-step--complete .bx--progress-label`   | text color       | $brand-01 |
 | `.bx--progress-step--incomplete .bx--progress-label` | text color       | $ui-05    |
 
-<image-component fixed="default" caption="Examples of current, completed, and future steps for progress indicator">
+<ImageComponent fixed="default" caption="Examples of current, completed, and future steps for progress indicator">
 
 ![Examples of current, completed, and future steps for progress indicator](images/progress-indicator-style-1.png)
 
-</image-component>
+</ImageComponent>
 
 ## Typography
 
@@ -44,11 +44,11 @@ The checkmark icon can be found in the [iconography](/style/iconography/library)
 | `.bx--progress-step svg` | margin-bottom  | 8 / 0.5  | $spacing-xs   |
 | `.bx--progress-label`    | width          | 75%      | -             |
 
-<image-component fixed="default" caption="Structure and spacing measurements for progress indicator | px / rem">
+<ImageComponent fixed="default" caption="Structure and spacing measurements for progress indicator | px / rem">
 
 ![Structure and spacing for progress indicator](images/progress-indicator-style-2.png)
 
-</image-component>
+</ImageComponent>
 
 ### Recommended
 
@@ -58,8 +58,8 @@ The following specs are not built into the progress indicator component but are 
 | --------------- | -------- | -------- | ------------- |
 | `.bx--progress` | margin   | 16 / 1   | $spacing-md   |
 
-<image-component fixed="default" caption="Recommended structure and spacing measurements for progress indicator | px / rem">
+<ImageComponent fixed="default" caption="Recommended structure and spacing measurements for progress indicator | px / rem">
 
 ![Structure and spacing for progress indicator](images/progress-indicator-style-3.png)
 
-</image-component>
+</ImageComponent>

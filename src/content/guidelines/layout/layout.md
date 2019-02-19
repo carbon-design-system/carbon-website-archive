@@ -3,27 +3,53 @@ label: The grid is the framework for all the visual elements and typography at I
 title: Layout
 ---
 
+import AnchorLinks from '../../../../src/components/AnchorLinks';
+import ImageComponent from '../../../../src/components/ImageComponent';
+import DoDontExample from '../../../../src/components/DoDontExample';
+import GridWrapper from '../../../../src/components/GridWrapper';
+
 ## Resources
 
-<grid-wrapper col_lg="8" flex="true" bleed="true">
-<clickable-tile
+<GridWrapper col_lg="8" flex="true" bleed="true">
+  <ClickableTile
     title="Carbon Design Kit"
     href="https://github.com/ibm/carbon-design-kit"
-    type="resource"
-    >
-    <img src="images/sketch-icon.png" alt=""/>
-</clickable-tile>
-</grid-wrapper>
+    type="resource">
+    <img src="images/sketch-icon.png" alt="" />
+  </ClickableTile>
+</GridWrapper>
 
-<anchor-links>
+<AnchorLinks>
+
 <ul>
-    <li><a data-scroll href="#mini-unit">Mini unit</a></li>
-    <li><a data-scroll href="#2x-grid-fundamentals">2x grid fundamentals</a></li>
-    <li><a data-scroll href="#grid-behaviors">Grid behaviors</a></li>
-    <li><a data-scroll href="#grid-influencers">Grid influencers</a></li>
-    <li><a data-scroll href="#sizing-scale">Sizing scale</a></li>
+  <li>
+    <a data-scroll href="#mini-unit">
+      Mini unit
+    </a>
+  </li>
+  <li>
+    <a data-scroll href="#2x-grid-fundamentals">
+      2x grid fundamentals
+    </a>
+  </li>
+  <li>
+    <a data-scroll href="#grid-behaviors">
+      Grid behaviors
+    </a>
+  </li>
+  <li>
+    <a data-scroll href="#grid-influencers">
+      Grid influencers
+    </a>
+  </li>
+  <li>
+    <a data-scroll href="#sizing-scale">
+      Sizing scale
+    </a>
+  </li>
 </ul>
-</anchor-links>
+
+</AnchorLinks>
 
 ## Get started
 
@@ -43,33 +69,51 @@ Margin and padding are always applied in fixed mini unit multiples. Boxes are si
 
 The core concept of the 2x grid is to divide or multiply by two, forming a visual rhythm. Fluid grids are built by division, whereas fixed grids are built with multiplication. On breakpoint boundaries, these sizes match. Margins and padding are applied consistently in both cases.
 
-<anchor-links small="true">
+<AnchorLinks small="true">
+
 <ul>
-    <li><a data-scroll href="#columns-and-rows">Columns and rows</a></li>
-    <li><a data-scroll href="#margins">Margins</a></li>
-    <li><a data-scroll href="#padding">Padding</a></li>
-    <li><a data-scroll href="#gutters">Gutters</a></li>
-    <li><a data-scroll href="#breakpoints">Breakpoints</a></li>
+  <li>
+    <a data-scroll href="#columns-and-rows">
+      Columns and rows
+    </a>
+  </li>
+  <li>
+    <a data-scroll href="#margins">
+      Margins
+    </a>
+  </li>
+  <li>
+    <a data-scroll href="#padding">
+      Padding
+    </a>
+  </li>
+  <li>
+    <a data-scroll href="#gutters">
+      Gutters
+    </a>
+  </li>
+  <li>
+    <a data-scroll href="#breakpoints">
+      Breakpoints
+    </a>
+  </li>
 </ul>
-</anchor-links>
+
+</AnchorLinks>
 
 ### Columns and Rows
 
 Columns and rows create key lines that are essential for visual rhythm, especially for typography. Construct columns by either dividing a space into a fluid grid, or by tiling fixed boxes in multiples.
 
-<image-component cols="12" >
+<ImageComponent cols="12" >
 
 ![Columns and rows](images/Layout_overview_Columns-rows.svg)
 
-</image-component>
+</ImageComponent>
 
 #### Fluid grid
 
 A [fluid grid](#fluid-grid) divides space by twos. This division is immediately evident in the 2x column structure. Within a breakpoint, the column count is constant, and unit size scales with screen size. Choose a column count by starting with one, then divide by two as needed:
-
-| Fluid Grid Columns |
-| ------------------ |
-| 1, 2, 4, 8, 16     |
 
 #### Fixed grid
 
@@ -87,46 +131,50 @@ For dense content, use mini units for further alignment and spatial guidance.
 
 ![Columns and rows for dense content](images/Layout_overview_Columns-rows-light-dense.svg)
 
-
 ### Margins
 
 The margins at the outer edge of the grid are always a fixed size within a breakpoint, even when columns are fluid. See [Breakpoints](#breakpoints) for a table of margin sizes.
 
-<image-component cols="12" >
+<ImageComponent cols="12" >
 
 ![Margins](images/Layout_overview_Margins.svg)
 
-</image-component>
+</ImageComponent>
 
 ### Padding
 
 Padding is always a fixed multiple of mini units: 16 pixels at all standard breakpoints. Always align type to the edge of box padding. Note, some design tools add padding to text boxes by default; check text box padding and remove it if necessary.
 
-<image-component cols="12" >
+<ImageComponent cols="12" >
 
 ![Padding](images/Layout_overview_Paddings.svg)
 
-</image-component>
+</ImageComponent>
 
-<grid-wrapper col_lg="8" flex="true">
-    <do-dont-example correct=true label="Always place type against the padding.">
-        <img src="images/Layout_overview_Paddings-do.svg" alt="Always place type against the padding.">    
-    </do-dont-example>
-    <do-dont-example label="Never place type on the padding.">
-        <img src="images/Layout_overview_Paddings-dont.svg" alt="Never place type on the padding.">    
-    </do-dont-example>
-</grid-wrapper>
-
+<GridWrapper col_lg="8" flex="true">
+  <DoDontExample correct="true" label="Always place type against the padding.">
+    <img
+      src="images/Layout_overview_Paddings-do.svg"
+      alt="Always place type against the padding."
+    />
+  </DoDontExample>
+  <DoDontExample label="Never place type on the padding.">
+    <img
+      src="images/Layout_overview_Paddings-dont.svg"
+      alt="Never place type on the padding."
+    />
+  </DoDontExample>
+</GridWrapper>
 
 ### Gutters
 
 Grid gutters can be absent as shown above, or present as shown below. Th margin around each grid box matches its padding, for a total gutter of 32 pixels. For closely related content, consider a gutterless grid. Apply gutters when content warrants more separation.
 
-<image-component cols="12" >
+<ImageComponent cols="12" >
 
 ![Gutters](images/Layout_overview_Gutters.svg)
 
-</image-component>
+</ImageComponent>
 
 ### Breakpoints
 
@@ -156,14 +204,32 @@ In user interfaces, screen size is dictated by the device and the user’s chose
 
 For example, when the user resizes their browser, is their goal to: **See more things?** Then scale column count by tiling fixed boxes. **See more content within each thing?** Then scale boxes and use fixed column counts.
 
-<anchor-links small="true">
+<AnchorLinks small="true">
+
 <ul>
-    <li><a data-scroll href="#fluid-columns">Fluid columns</a></li>
-    <li><a data-scroll href="#fixed-boxes">Fixed boxes</a></li>
-    <li><a data-scroll href="#hybrid-boxes">Hybrid boxes</a></li>
-    <li><a data-scroll href="#key-lines">Key lines</a></li>
+  <li>
+    <a data-scroll href="#fluid-columns">
+      Fluid columns
+    </a>
+  </li>
+  <li>
+    <a data-scroll href="#fixed-boxes">
+      Fixed boxes
+    </a>
+  </li>
+  <li>
+    <a data-scroll href="#hybrid-boxes">
+      Hybrid boxes
+    </a>
+  </li>
+  <li>
+    <a data-scroll href="#key-lines">
+      Key lines
+    </a>
+  </li>
 </ul>
-</anchor-links>
+
+</AnchorLinks>
 
 ### Fluid grid
 
@@ -210,34 +276,44 @@ Horizontal and vertical alignment are equally critical. When present, the eye ca
 
 Within a design system, layouts often follow a common structure, especially with regard to navigation. This section covers which of these UI patterns you'll need, where users will expect to see them on a page, and how they’ll affect the content that lives within the responsive grid.
 
-<anchor-links small="true">
+<AnchorLinks small="true">
+
 <ul>
-    <li><a data-scroll href="#screen-regions">Screen regions</a></li>
-    <li><a data-scroll href="#panel-behavior">Panel behavior</a></li>
+  <li>
+    <a data-scroll href="#screen-regions">
+      Screen regions
+    </a>
+  </li>
+  <li>
+    <a data-scroll href="#panel-behavior">
+      Panel behavior
+    </a>
+  </li>
 </ul>
-</anchor-links>
+
+</AnchorLinks>
 
 ### Screen regions
 
 In a UI layout, users expect to find certain types of content in certain areas. We call these areas _screen regions_. It is especially important for these zones to be consistent across devices and adapt across breakpoints. [Learn more about the shell on the experimental UI shell page.](/experimental/ui-shell/usage)
 
-<image-component cols="12"  caption="1. Header 2. Global sidenav 3. Local sidenav">
+<ImageComponent cols="12"  caption="1. Header 2. Global sidenav 3. Local sidenav">
 
 ![Shell Illustation](images/Layout_overview_Screen-regions-1.svg)
 
-</image-component>
+</ImageComponent>
 
-<image-component cols="12"  caption="4. Dropdown menu 5. Content 6. Footer">
+<ImageComponent cols="12"  caption="4. Dropdown menu 5. Content 6. Footer">
 
 ![Dropdown Illustation](images/Layout_overview_Screen-regions-2.svg)
 
-</image-component>
+</ImageComponent>
 
-<image-component cols="12"  caption="7. Dialog">
+<ImageComponent cols="12"  caption="7. Dialog">
 
 ![Dialog Illustation](images/Layout_overview_Screen-regions-3.svg)
 
-</image-component>
+</ImageComponent>
 
 ### Panel behavior
 
@@ -265,26 +341,52 @@ This panel style floats above the primary content area and does not affect the r
 
 We provide a sizing scale for both fixed and fluid sizes. Use it to size content as well as negative space. Like a type scale, the sizing scale constrains the range of sizes to improve consistency and rhythm, while still allowing a wide range of sizes. Spacing tokens are used to apply these relationships consistently across UIs.
 
-<anchor-links small="true">
+<AnchorLinks small="true">
+
 <ul>
-    <li><a data-scroll href="#fixed-base-unit">Fixed base unit</a></li>
-    <li><a data-scroll href="#fluid-base-unit">Fluid base unit</a></li>
-    <li><a data-scroll href="#scaling-multiple">Scaling multiple</a></li>
-    <li><a data-scroll href="#aspect-ratio">Aspect ratio</a></li>
-    <li><a data-scroll href="#vertical-rhythm">Vertical rhythm</a></li>
-    <li><a data-scroll href="#components">Components</a></li>
+  <li>
+    <a data-scroll href="#fixed-base-unit">
+      Fixed base unit
+    </a>
+  </li>
+  <li>
+    <a data-scroll href="#fluid-base-unit">
+      Fluid base unit
+    </a>
+  </li>
+  <li>
+    <a data-scroll href="#scaling-multiple">
+      Scaling multiple
+    </a>
+  </li>
+  <li>
+    <a data-scroll href="#aspect-ratio">
+      Aspect ratio
+    </a>
+  </li>
+  <li>
+    <a data-scroll href="#vertical-rhythm">
+      Vertical rhythm
+    </a>
+  </li>
+  <li>
+    <a data-scroll href="#components">
+      Components
+    </a>
+  </li>
 </ul>
-</anchor-links>
+
+</AnchorLinks>
 
 ### Fixed base unit
 
 Use this fixed sizing scale, comprised of select mini unit multiples, when sizing icons, tiling boxes, and applying vertical margin space.
 
-<image-component cols="12" >
+<ImageComponent cols="12" >
 
 ![Fixed base unit](images/Layout_overview_Fixed-base-unit.svg)
 
-</image-component>
+</ImageComponent>
 
 Choose a size to use as your fixed base unit. Also see the [breakpoints table](#breakpoints).
 
@@ -302,11 +404,11 @@ Choose a size to use as your fixed base unit. Also see the [breakpoints table](#
 
 For fluid grids, the column width is the base unit. Just as a box can span multiple columns, its height is a multiple of column width. Use cases are leading section in a webpage, divded section for editorial content, modals, etc. Check out the [breakpoints table](#breakpoints) for pixel sizings.
 
-<image-component cols="12" >
+<ImageComponent cols="12" >
 
 ![Fluid base unit](images/Layout_overview_Fluid-base-unit.svg)
 
-</image-component>
+</ImageComponent>
 
 ### Scaling multiple
 
@@ -320,17 +422,17 @@ When sizing boxes, constrain dimensions to one of the aspect ratios shown below 
 
 Choose an aspect ratio from the table, then multiply the base unit in each dimension as needed to set width and height, maintaining the ratio in either portrait or landscape.
 
-| Aspect ratios |
-| ------------- |
+| Aspect ratios                 |
+| ----------------------------- |
 | 1:1, 2:1, 2:3, 3:2, 4:3, 16:9 |
 
 For example, to size a fluid box with a 2:1 landscape aspect ratio, you could span 4 columns in width and 2 column-widths of height. To size a fixed box with the same aspect ratio, you could start with an 80 pixel base unit, then multiply it by 4 in width and 2 in height, for a fixed box size of 320 by 160.
 
-<image-component cols="12"  caption="Aspect ratios do not apply to Hybrid Boxes, since one dimension is fixed and the other is fluid.">
+<ImageComponent cols="12"  caption="Aspect ratios do not apply to Hybrid Boxes, since one dimension is fixed and the other is fluid.">
 
 ![aspect ratio](images/Layout_overview_Aspect-ratio.svg)
 
-</image-component>
+</ImageComponent>
 
 ### Vertical rhythm
 
@@ -338,22 +440,26 @@ Use the fixed sizing scale to set vertical spacing between sections, by adding i
 
 `vimeo: https://vimeo.com/292028388`
 
-<grid-wrapper col_lg="8" flex="true">
-    <do-dont-example correct=true label="Mini unit is the guide when needed. Spacer snaps to the text box and does not necessarily need to snap to the mini unit.">
-        <img src="images/Layout_overview_Visual-rhythm-do.svg" alt="Mini unit is the guide when needed. Spacer snaps to the text box and does not necessarily need to snap to the mini unit.">    
-    </do-dont-example>
-    <do-dont-example label="In Sketch, always use “Auto” in alignment to ensure the text box is fitting with the content. Spacer snaps to the text box.">
-        <img src="images/Layout_overview_Visual-rhythm-dont.svg" alt="Always use “Auto” in alignment to ensure the text box is fitting with the content. Spacer snaps to the text box.">    
-    </do-dont-example>
-</grid-wrapper>
+<GridWrapper col_lg="8" flex="true">
+  <DoDontExample
+    correct="true"
+    label="Mini unit is the guide when needed. Spacer snaps to the text box and does not necessarily need to snap to the mini unit.">
+    <img
+      src="images/Layout_overview_Visual-rhythm-do.svg"
+      alt="Mini unit is the guide when needed. Spacer snaps to the text box and does not necessarily need to snap to the mini unit."
+    />
+  </DoDontExample>
+  <DoDontExample label="In Sketch, always use “Auto” in alignment to ensure the text box is fitting with the content. Spacer snaps to the text box.">
+    <img
+      src="images/Layout_overview_Visual-rhythm-dont.svg"
+      alt="Always use “Auto” in alignment to ensure the text box is fitting with the content. Spacer snaps to the text box."
+    />
+  </DoDontExample>
+</GridWrapper>
 
 ### Components
 
 Components can be sized like other boxes: either fixed or fluid, and often hybrid, with fixed height and fluid width. When interior space within a component is cramped, use the minor sizing scale:
-
-| Px |
-|----|
-| 2, 4, 8, 12, 16 |
 
 When multiple components adhere to the same scale, grid relationships naturally emerge. For example, vertically aligning form fields such as checkboxes and radio buttons produces a grid effect when interior spacing is consistent.
 

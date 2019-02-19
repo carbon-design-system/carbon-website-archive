@@ -2,7 +2,7 @@
 title: Migration 
 ---
 
-<anchor-links>
+<AnchorLinks>
 <ul>
   <li><a data-scroll href="#carbon-x">Carbon X</a></li>
   <li><a data-scroll href="#rollout-plan">Rollout plan</a></li>
@@ -15,7 +15,7 @@ title: Migration
   <li><a data-scroll href="#grid-and-layout">Grid and layout</a></li>
   <li><a data-scroll href="#migration-tooling">Migration tooling</a></li>
 </ul>
-</anchor-links>
+</AnchorLinks>
 
 ## Carbon X
 
@@ -43,22 +43,22 @@ The Digital Design group has published a detailed guide on [setting up auto-sync
 The redesigned components will be available in the current repos once released. All components have been reskinned to the new IBM Design Language for v10. Detailed technical migration instructions will be published to the repos upon Beta release.
 
 
-<grid-wrapper className="tile--resource--no-margin" col_lg="8" flex="true" bleed="true">
-<clickable-tile
+<GridWrapper className="tile--resource--no-margin" col_lg="8" flex="true" bleed="true">
+<ClickableTile
     title="Carbon Components"
     href="https://github.com/ibm/carbon-components"
     type="resource"
     >
     <img src="images/github-icon.png" alt="Carbon Component Library" />
-</clickable-tile>
-<clickable-tile
+</ClickableTile>
+<ClickableTile
     title="Carbon Components React"
     href="https://github.com/ibm/carbon-components-react"
     type="resource"
     >
     <img src="images/react-icon.png" alt="Carbon Components React" />
-</clickable-tile>
-</grid-wrapper>
+</ClickableTile>
+</GridWrapper>
 
 
 ## Tokens

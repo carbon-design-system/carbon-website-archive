@@ -2,7 +2,7 @@
 title: What’s New
 ---
 
-<anchor-links>
+<AnchorLinks>
 <ul>
     <li><a href="#october-2018">October 2018</a></li>
     <li><a href="#june-4,-2018:-v9-release">June 4, 2018: V9 release</a></li>
@@ -11,7 +11,7 @@ title: What’s New
     <li><a href="#february-23,-2018">February 23, 2018</a></li>
     <li><a href="#february-9,-2018">February 9, 2018</a></li>
 </ul>
-</anchor-links>
+</AnchorLinks>
 
 
 
@@ -139,11 +139,11 @@ We have recorded a [Carbon Design Kit with Sketch Libraries Tutorial](https://ww
 The Carbon Design Kit now includes Sketch Libraries, a better way to share and version symbols across Sketch files. Check out our [Sketch Libraries wiki](https://github.com/ibm/carbon-design-kit/wiki/Sketch-Libraries-Overview) to get a quick tutorial on libraries.
 
 
-<image-component cols="8"  caption="Sketch libraries in the Carbon design kit.">
+<ImageComponent cols="8"  caption="Sketch libraries in the Carbon design kit.">
 
 ![sketch libraries in the carbon design kit](images/sketch-libraries.png)
 
-</image-component>
+</ImageComponent>
 
 
 #### Sketch Plugins
@@ -155,11 +155,11 @@ Download the latest kit today! [Carbon design kit](https://github.com/ibm/carbon
 
 
 
-<image-component cols="8"  caption="Sketch palettes plugin.">
+<ImageComponent cols="8"  caption="Sketch palettes plugin.">
 
 ![Sketch Palettes plugin](images/sketch-palettes.png)
 
-</image-component>
+</ImageComponent>
 
 
 
@@ -182,11 +182,11 @@ _Note: This component is currently only available in [React](http://react.carbon
 
 
 
-<image-component cols="8"  caption="Example of a dropdown with multi-select.">
+<ImageComponent cols="8"  caption="Example of a dropdown with multi-select.">
 
 ![example of Dropdown with Multi-Select](images/dropdown-new.gif)
 
-</image-component>
+</ImageComponent>
 
 
 
@@ -194,11 +194,11 @@ _Note: This component is currently only available in [React](http://react.carbon
 
 Small Toggle is a style variation of our traditional [Toggle](/components/toggle) component. It's more compact in size, which allows them to be used in Data Tables or inline with Form elements.
 
-<image-component cols="8"  caption="Example of small toggle.">
+<ImageComponent cols="8"  caption="Example of small toggle.">
 
 ![example of Small toggle](images/small-toggle.gif)
 
-</image-component>
+</ImageComponent>
 
 
 
@@ -212,11 +212,11 @@ Read more about the usage of [Bar Graph](/data-visualization/bar-graph/usage), o
 
 
 
-<image-component cols="8">
+<ImageComponent cols="8">
 
 ![Bar Graph example](images/usage-bar-graph.png)
 
-</image-component>
+</ImageComponent>
 
 
 
@@ -228,9 +228,9 @@ Read more about the usage of [Data Vis Tooltips](/data-visualization/tooltip/usa
 
 
 
-<image-component cols="8"  caption="Small tooltip used within a bar graph.">
+<ImageComponent cols="8"  caption="Small tooltip used within a bar graph.">
 
 ![small tooltip in a bar graph](images/usage-small-tooltip.png)
 
-</image-component>
+</ImageComponent>
 

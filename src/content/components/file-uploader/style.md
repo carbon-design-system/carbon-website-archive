@@ -33,11 +33,11 @@ The width of an uploaded file varies based on the content and layout of a design
 | `.bx--file__selected-file` | padding-left, padding-right | 16 /1      | $spacing-md   |
 | `.bx--file__selected-file` | margin-bottom               | 16 /1      | $spacing-md   |
 
-<image-component fixed="default" caption="Structure and spacing measurements for file uploader | px / rem">
+<ImageComponent fixed="default" caption="Structure and spacing measurements for file uploader | px / rem">
 
 ![Structure and spacing measurements for file uploader](images/file-uploader-style-1.png)
 
-</image-component>
+</ImageComponent>
 
 ### Recommended
 

@@ -20,8 +20,8 @@ A maximum of six tabs may be displayed. This is to maintain an uncluttered UI an
 
 Tab order should be consistent across an experience. Tabs with related content should be grouped adjacent to each other.
 
-<image-component cols="8">
+<ImageComponent cols="8">
 
 ![An example of tabs being used.](images/tab-usage-1.png)
 
-</image-component>
+</ImageComponent>

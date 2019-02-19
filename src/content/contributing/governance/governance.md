@@ -2,7 +2,7 @@
 title: Governance
 ---
 
-<anchor-links>
+<AnchorLinks>
 <ul>
     <li><a data-scroll href="#open-source">Open-source</a></li>
     <li><a data-scroll href="#roles-and-responsibilities">Roles and responsibilities</a></li>
@@ -12,7 +12,7 @@ title: Governance
     <li><a data-scroll href="#clas">CLAs</a></li>
     <li><a data-scroll href="#support">Support</a></li>
 </ul>
-</anchor-links>
+</AnchorLinks>
 
 ## Open-source
 

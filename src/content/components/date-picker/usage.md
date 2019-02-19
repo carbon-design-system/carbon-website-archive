@@ -4,7 +4,7 @@ tabs: ['Code', 'Usage']
 ---
 
 
-<anchor-links>
+<AnchorLinks>
 <ul>
     <li><a data-scroll href="#general-guidance">General guidance</a></li>
     <li><a data-scroll href="#variations">Variations</a></li>
@@ -12,7 +12,7 @@ tabs: ['Code', 'Usage']
     <li><a data-scroll href="#interaction">Interaction</a></li>
     <li><a data-scroll href="#time-picker">Time picker</a></li>
 </ul>
-</anchor-links>
+</AnchorLinks>
 
 ## General guidance
 
@@ -27,11 +27,11 @@ _Date and time pickers_ allow users to select a single or a range of dates and t
 | _Simple date picker_ | When the date is known by the user and they don't need a calendar to anticipate the dates. |
 
 
-<image-component cols="8" caption="Types of date pickers">
+<ImageComponent cols="8" caption="Types of date pickers">
 
 ![range, single, and simple date pickers](images/date-picker-usage-1.png)
 
-</image-component>
+</ImageComponent>
 
 
 ## Content
@@ -48,11 +48,11 @@ For date pickers, use placeholder text so users input the date in the correct fo
 
 It is recommended to use the date picker with a calendar widget when the user is browsing between a range of dates. Aid the user in making the proper choices by providing a visual reference of dates to choose from. The calendar widget appears once the user has interacted with the date input field (typically on `:focus`).
 
-<image-component cols="8" caption="Selecting dates from the range date picker">
+<ImageComponent cols="8" caption="Selecting dates from the range date picker">
 
 ![example of date picker](images/date-picker-usage-animation-1.gif)
 
-</image-component>
+</ImageComponent>
 
 #### Simple date picker
 

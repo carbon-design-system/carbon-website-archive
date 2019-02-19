@@ -3,14 +3,14 @@ title: Checkbox
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-<anchor-links>
+<AnchorLinks>
 <ul>
     <li><a data-scroll href="#general-guidance">General guidance</a></li>
     <li><a data-scroll href="#related-components">Related components</a></li>
     <li><a data-scroll href="#content">Content</a></li>
     <li><a data-scroll href="#tables">Tables</a></li>
 </ul>
-</anchor-links>
+</AnchorLinks>
 
 ## General guidance
 _Checkboxes_ are used for a list of options where the user may select multiple options, including all or none.
@@ -27,11 +27,11 @@ Users should be able to select the checkbox by clicking on the box directly or b
 
 The default view of a set of checkboxes is having no option selected.
 
-<image-component cols="8"  caption="By default, checkboxes are unchecked.">
+<ImageComponent cols="8"  caption="By default, checkboxes are unchecked.">
 
 ![The default state for checkboxes is unchecked.](images/checkbox-usage-1.png)
 
-</image-component>
+</ImageComponent>
 
 
 ## Related components

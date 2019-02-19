@@ -4,12 +4,18 @@ title: Iconography
 tabs: ['Library', 'Usage', 'Contribution']
 ---
 
-<anchor-links>
-<ul>
-    <li><a href="#usage-for-designers">Usage for designers</a></li>
-    <li><a href="#usage-for-developers">Usage for developers</a></li>
-</ul>
-</anchor-links>
+import AnchorLinks from '../../../../src/components/AnchorLinks';
+import ImageComponent from '../../../../src/components/ImageComponent';
+import DoDontExample from '../../../../src/components/DoDontExample';
+import GridWrapper from '../../../../src/components/GridWrapper';
+import ColorBlock from '../../../../src/components/ColorBlock';
+
+<AnchorLinks>
+
+- [Usage for designers](#usage-for-designers)
+- [Usage for developers](#usage-for-developers)
+
+</AnchorLinks>
 
 ## Usage for designers
 
@@ -17,47 +23,49 @@ tabs: ['Library', 'Usage', 'Contribution']
 
 UI icons that appear within Carbon components are generally 16 px squares, however icons sized at 20 px, 24 px, and 32 px can be also used within the UI. Icons should only be used at their original sizes and not resized in code.
 
-<image-component  cols="12">
+<ImageComponent  cols="12">
 
 ![icon sizing](images/iconography_usage_sizing-alt.svg)
 
-</image-component>
+</ImageComponent>
 
-<image-component cols="12" caption="16 px and 20 px icons are optimized to feel balanced when paired with 14pt and 16pt IBM Plex. Use 24 px and 32 px when larger icons are needed.">
+<ImageComponent cols="12" caption="16 px and 20 px icons are optimized to feel balanced when paired with 14pt and 16pt IBM Plex. Use 24 px and 32 px when larger icons are needed.">
 
 ![icon alignment](images/iconography-usage-sizing-2.svg)
 
-</image-component>
+</ImageComponent>
 
-<grid-wrapper col_lg="8" flex="true">
-    <do-dont-example correct=true label="Do: use the correct icon size with IBM Plex.">
-        <img src="images/iconography-usage-sizing-3.svg" alt="proper sizing">    
-    </do-dont-example>
-    <do-dont-example label="Don’t: alter the icon-text size ratio.">
-        <img src="images/iconography-usage-sizing-4.svg" alt="improper sizing">    
-    </do-dont-example>
-</grid-wrapper>
+<GridWrapper col_lg="8" flex="true">
+  <DoDontExample
+    correct="true"
+    label="Do: use the correct icon size with IBM Plex.">
+    <img src="images/iconography-usage-sizing-3.svg" alt="proper sizing" />
+  </DoDontExample>
+  <DoDontExample label="Don’t: alter the icon-text size ratio.">
+    <img src="images/iconography-usage-sizing-4.svg" alt="improper sizing" />
+  </DoDontExample>
+</GridWrapper>
 
 ### Touch targets
 
 All touch targets for interactive icons need to be 44 px or larger. Developers can add padding to a touch target with CSS to meet the 44 px requirement.
 
-<image-component  cols="4">
+<ImageComponent  cols="4">
 
 ![touch target padding](images/iconography-usage-padding-6.svg)
 
-</image-component>
+</ImageComponent>
 
 ### Color
 
 Interactive UI icons need to pass the same color contrast ratio as typography at a 4.5:1 ratio. UI icons should always use solid colors. The color of the icon is determined by the importance of the icon's action.
 
-|                        | SCSS              | HEX y                                                       |
-| ---------------------- | ----------------- | ----------------------------------------------------------- |
-| Primary action         | \$brand-01        | <color-block showhex="true" size="xs">#3d70b2</color-block> |
-| Primary action:hover   | \$hover-primary   | <color-block showhex="true" size="xs">#30588C</color-block> |
-| Secondary action       | \$ui-05           | <color-block showhex="true" size="xs">#5a6872</color-block> |
-| Secondary action:hover | \$hover-secondary | <color-block showhex="true" size="xs">#3d70b2</color-block> |
+|                        | SCSS              | HEX y                                                     |
+| ---------------------- | ----------------- | --------------------------------------------------------- |
+| Primary action         | \$brand-01        | <ColorBlock showhex="true" size="xs">#3d70b2</ColorBlock> |
+| Primary action:hover   | \$hover-primary   | <ColorBlock showhex="true" size="xs">#30588C</ColorBlock> |
+| Secondary action       | \$ui-05           | <ColorBlock showhex="true" size="xs">#5a6872</ColorBlock> |
+| Secondary action:hover | \$hover-secondary | <ColorBlock showhex="true" size="xs">#3d70b2</ColorBlock> |
 
 **Exception:** There is an exception to both the `brand-01` and UI color rules. Certain icons, such as status or notification icons, can inherit their parent color. For example, a warning icon is yellow because warning notifications are yellow.
 
@@ -65,14 +73,16 @@ Interactive UI icons need to pass the same color contrast ratio as typography at
 
 When used next to text, icons should be center-aligned.
 
-<grid-wrapper col_lg="8" flex="true">
-    <do-dont-example correct=true label="Do: center-align icons when they’re next to text.">
-        <img src="images/iconography-usage-sizing-5.svg" alt="proper alignment">    
-    </do-dont-example>
-    <do-dont-example label="Don’t: baseline-align icons to the text.">
-        <img src="images/iconography-usage-sizing-6.svg" alt="improper alignment">    
-    </do-dont-example>
-</grid-wrapper>
+<GridWrapper col_lg="8" flex="true">
+  <DoDontExample
+    correct="true"
+    label="Do: center-align icons when they’re next to text.">
+    <img src="images/iconography-usage-sizing-5.svg" alt="proper alignment" />
+  </DoDontExample>
+  <DoDontExample label="Don’t: baseline-align icons to the text.">
+    <img src="images/iconography-usage-sizing-6.svg" alt="improper alignment" />
+  </DoDontExample>
+</GridWrapper>
 
 ## Usage for developers
 
@@ -82,7 +92,7 @@ When used next to text, icons should be center-aligned.
 
 - Install `carbon-icons`
 
-<p>Full installation details can be found in the <a href="https://github.com/ibm/carbon-icons" target=blank>Carbon icons GitHub repo.</a></p>
+<p>Full installation details can be found in the <a href="https://github.com/ibm/carbon-icons" target="blank">Carbon icons GitHub repo.</a></p>
 
 ### Using SVG sprite from static assets (recommended)
 

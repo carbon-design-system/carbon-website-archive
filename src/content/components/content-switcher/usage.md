@@ -22,8 +22,8 @@ Based on usage, there should be a default selection. The default selection is al
 
 The content switcher is used for large groups of content, as opposed to the [toggle](/components/toggle) which is meant for a “yes/no” or “on/off” binary decision.
 
-<image-component cols="8">
+<ImageComponent cols="8">
 
 ![content switcher example](images/content-switcher-usage-1.png)
 
-</image-component>
+</ImageComponent>

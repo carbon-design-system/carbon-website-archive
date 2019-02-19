@@ -19,11 +19,11 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 | `.bx--select__arrow`                   | fill       | $brand-01   |
 | `.bx--select--inline.bx--select-input` | text color | $brand-01   |
 
-<image-component fixed="default" caption="Examples of default and new selection Select states in $field-02 (right) and $field-01 (left)">
+<ImageComponent fixed="default" caption="Examples of default and new selection Select states in $field-02 (right) and $field-01 (left)">
 
 ![Default and new selection state examples for Select](images/select-style-1.png)
 
-</image-component>
+</ImageComponent>
 
 ### States
 
@@ -43,11 +43,11 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 
 **Disabled:** Disabled state has a `.not-allowed` cursor hover and appears at 50% opacity.
 
-<image-component fixed="default" caption="Examples of open, disabled, and help Select states">
+<ImageComponent fixed="default" caption="Examples of open, disabled, and help Select states">
 
 ![Open, disabled, and more information/help state examples for Select](images/select-style-3.png)
 
-</image-component>
+</ImageComponent>
 
 ## Typography
 
@@ -74,11 +74,11 @@ Select text should be set in sentence case, with only the first word in a phrase
 | `.bx--select-input`       | box-shadow    | 1px      | -             |
 | `.bx--select-input:focus` | box-shadow    | 2px      | -             |
 
-<image-component fixed="default" caption="Structure and spacing measurements for Select | px / rem">
+<ImageComponent fixed="default" caption="Structure and spacing measurements for Select | px / rem">
 
 ![Structure and spacing measurements for Select](images/select-style-2.png)
 
-</image-component>
+</ImageComponent>
 
 ### Recommended
 
@@ -96,11 +96,11 @@ The following specs are not built into the Select component but are recommended 
 | `.bx--select-input` | height                      | 24 / 1.5 | -             |
 | `.bx--select-input` | padding-left, padding-right | 8 / 0.5  | $spacing-xs   |
 
-<image-component fixed="default" caption="Structure and spacing measurements for Small Select | px / rem & examples of open and disabled Small Select states">
+<ImageComponent fixed="default" caption="Structure and spacing measurements for Small Select | px / rem & examples of open and disabled Small Select states">
 
 ![Structure and spacing measurements for Small Select](images/select-style-4.png)
 
-</image-component>
+</ImageComponent>
 
 ### Recommended
 
@@ -118,8 +118,8 @@ The following specs are not built into the Small Select component but are recomm
 | `.bx--select-input` | padding-right | 2.5 / 40 | $spacing-2xl  |
 | `.bx--select-input` | padding-left  | 16 / 1   | $spacing-md   |
 
-<image-component fixed="default" caption="Structure and spacing measurements for Inline Select (focused) | px / rem">
+<ImageComponent fixed="default" caption="Structure and spacing measurements for Inline Select (focused) | px / rem">
 
 ![Structure and spacing measurements for Inline Select](images/select-style-6.png)
 
-</image-component>
+</ImageComponent>

@@ -7,11 +7,11 @@ tabs: ['Code', 'Usage', 'Style']
 
 Form inputs come in two different colors. The default input color is `$field-01` and is used on `$ui-01` page backgrounds. The light version input color is `$field-02` and is used on `$ui-02` page backgrounds. For full color specs, refer to each specific component.
 
-<image-component fixed="default" caption="Example of light fields with $field-02 (left) and the default version with $field-01 (right)">
+<ImageComponent fixed="default" caption="Example of light fields with $field-02 (left) and the default version with $field-01 (right)">
 
 ![Example of form fields in the two colors](images/form-style-3.png)
 
-</image-component>
+</ImageComponent>
 
 ### States
 
@@ -52,14 +52,14 @@ All icons can be found on the [iconography](/guidelines/iconography/library) lib
 | Non-input components | margin-bottom | 32 / 2    | $spacing-xl   |
 | Grid gutter          | -             | 20 / 1.25 | -             |
 
-<image-component fixed="large" caption="Structure and spacing measurements for a double column form | px / rem">
+<ImageComponent fixed="large" caption="Structure and spacing measurements for a double column form | px / rem">
 
 ![Structure and spacing measurements for a double column form ](images/form-style-2.png)
 
-</image-component>
+</ImageComponent>
 
-<image-component fixed="large" caption="Structure and spacing measurements for a single column form | px / rem">
+<ImageComponent fixed="large" caption="Structure and spacing measurements for a single column form | px / rem">
 
 ![Structure and spacing measurements for a single column form](images/form-style-1.png)
 
-</image-component>
+</ImageComponent>

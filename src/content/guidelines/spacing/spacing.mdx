@@ -3,25 +3,37 @@ label: Spacing is an important — and often overlooked — part of visual desig
 title: Spacing
 ---
 
-<anchor-links>
-<ul>
-        <li><a href="#carbons-two-scales">Carbon’s two scales</a></li>
-    <li><a href="#spacing-scale">Spacing scale</a></li>
-    <li><a href="#layout-scale">Layout scale</a></li>
-    <li><a href="#designing-with-space">Designing with space</a></li>
-    <li><a href="#faq">FAQ</a></li>
-</ul>
-</anchor-links>
+import ImageComponent from '../../../../src/components/ImageComponent';
+import AnchorLinks from '../../../../src/components/AnchorLinks';
 
+<AnchorLinks>
+  <ul>
+    <li>
+      <a href="#carbons-two-scales">Carbon’s two scales</a>
+    </li>
+    <li>
+      <a href="#spacing-scale">Spacing scale</a>
+    </li>
+    <li>
+      <a href="#layout-scale">Layout scale</a>
+    </li>
+    <li>
+      <a href="#designing-with-space">Designing with space</a>
+    </li>
+    <li>
+      <a href="#faq">FAQ</a>
+    </li>
+  </ul>
+</AnchorLinks>
 
 ## Carbon's two scales
 
 Carbon has two spacing scales; one for general spacing within components and the other for layout spacing. Both are designed to complement the existing components and typography throughout the system. The two scales have certain overlapping values that serve two different roles, so be mindful when picking a spacing token.
 
-| Scale             | Purpose                                                                                                                                                                                                                             |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| _Spacing scale_ | Used for smaller, more refined spacing needs, specifically within the context of a component (i.e. the space between a label and a text input).                                                                                |
-| _Layout scale_ | Typically used for positioning components on a page (i.e., the space between a text field and a selector). |
+| Scale           | Purpose                                                                                                                                         |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| _Spacing scale_ | Used for smaller, more refined spacing needs, specifically within the context of a component (i.e. the space between a label and a text input). |
+| _Layout scale_  | Typically used for positioning components on a page (i.e., the space between a text field and a selector).                                      |
 
 ### Applying spacing
 
@@ -42,25 +54,25 @@ padding-left: $spacing-auto;
 
 Use the spacing scale when building individual components. It includes small increments needed to create appropriate spatial relationships for detail-level designs. This scale is applied and used within all Carbon components.
 
-| Token             | rem   | px  | Example                                       |
-| ----------------- | ----- | --- | --------------------------------------------- |
+| Token         | rem   | px  | Example                                       |
+| ------------- | ----- | --- | --------------------------------------------- |
 | `$spacing-01` | 0.125 | 2   | ![spacing-3xs example](images/spacing-3.svg)  |
 | `$spacing-02` | 0.25  | 4   | ![spacing-2xs example](images/spacing-4.svg)  |
 | `$spacing-03` | 0.5   | 8   | ![spacing-xs example](images/spacing-5.svg)   |
 | `$spacing-04` | 0.75  | 12  | ![spacing-sm example](images/spacing-6.svg)   |
 | `$spacing-05` | 1     | 16  | ![spacing-md example](images/spacing-7.svg)   |
-| `$spacing-06`  | 1.5   | 24  | ![spacing-lg example](images/spacing-8.svg)   |
-| `$spacing-07`  | 2     | 32  | ![spacing-xl example](images/spacing-9.svg)   |
+| `$spacing-06` | 1.5   | 24  | ![spacing-lg example](images/spacing-8.svg)   |
+| `$spacing-07` | 2     | 32  | ![spacing-xl example](images/spacing-9.svg)   |
 | `$spacing-08` | 2.5   | 40  | ![spacing-2xl example](images/spacing-10.svg) |
 | `$spacing-09` | 3     | 48  | ![spacing-3xl example](images/spacing-11.svg) |
 
 <br />
 
-<image-component cols="8" caption="Example of spacing tokens applied">
+<ImageComponent cols="8" caption="Example of spacing tokens applied">
 
 ![Example of spacing tokens applied](images/spacing-1_revised.png)
 
-</image-component>
+</ImageComponent>
 
 ### Other spacing options
 
@@ -70,30 +82,29 @@ There are a few other non-token methods that can be used for spacing elements. E
 | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `center` | Used to fluidly center an element between two edges.                                                                                                              |
 | `auto`   | Used on one side of an element to allow undefined space to automatically grow and shrink according to screen size. Typically used for asymmetrical fluid spacing. |
-| `gutter`   | Used to space items between the grid's 12 columns                                                                                                                 |
+| `gutter` | Used to space items between the grid's 12 columns                                                                                                                 |
 
 ## Layout scale
 
 The layout scale is used for arranging components and other UI parts into a full page layout. It has larger increments that are used to control the density of a design. Use the smaller layout tokens to create more dense compositions and direct relationships. Use the larger tokens to increase the amount of white space and to disassociate sections.
 
-| Token            | rem | px  | Example                                      |
-| ---------------- | --- | --- | -------------------------------------------- |
+| Token        | rem | px  | Example                                      |
+| ------------ | --- | --- | -------------------------------------------- |
 | `$layout-01` | 1   | 16  | ![layout-2xs example](images/spacing-12.svg) |
-| `$layout-02`  | 1.5 | 24  | ![layout-xs example](images/spacing-13.svg)  |
-| `$layout-03`  | 2   | 32  | ![layout-sm example](images/spacing-14.svg)  |
-| `$layout-04`  | 3   | 48  | ![layout-md example](images/spacing-15.svg)  |
-| `$layout-05`  | 4   | 64  | ![layout-lg example](images/spacing-16.svg)  |
+| `$layout-02` | 1.5 | 24  | ![layout-xs example](images/spacing-13.svg)  |
+| `$layout-03` | 2   | 32  | ![layout-sm example](images/spacing-14.svg)  |
+| `$layout-04` | 3   | 48  | ![layout-md example](images/spacing-15.svg)  |
+| `$layout-05` | 4   | 64  | ![layout-lg example](images/spacing-16.svg)  |
 | `$layout-06` | 6   | 96  | ![layout-xl example](images/spacing-17.svg)  |
 | `$layout-07` | 10  | 160 | ![layout-2xl example](images/spacing-18.svg) |
 
 <br />
 
-<image-component cols="12" caption="Example of layout tokens applied">
+<ImageComponent cols="12" caption="Example of layout tokens applied">
 
 ![Example of layout tokens applied](images/layout_revised.png)
 
-</image-component>
-
+</ImageComponent>
 
 ### Using layout scale with the grid
 

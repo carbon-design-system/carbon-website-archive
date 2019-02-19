@@ -2,7 +2,7 @@
 title: Disabled states
 ---
 
-<anchor-links>
+<AnchorLinks>
 <ul>
     <li><a data-scroll href="#purpose">Purpose</a></li>
     <li><a data-scroll href="#disabled-variations">Disabled variations</a></li>
@@ -10,7 +10,7 @@ title: Disabled states
     <li><a data-scroll href="#read-only">Read-only</a></li>
     <li><a data-scroll href="#hidden">Hidden</a></li>
 </ul>
-</anchor-links>
+</AnchorLinks>
 
 ## Purpose
 
@@ -28,11 +28,11 @@ A _disabled state_ is applied to a component when the user is not allowed to int
 
 A _default disabled_ state is used when a component is temporarily disabled due to dependencies (when one piece of software relies on another one) or pre-requisites. This scenario is a temporary state change that is most commonly triggered by a user's action or inaction. Once the dependencies have been resolved and/or the pre-requisites have been fulfilled, the default disabled component returns to its enabled state. In a temporarily disabled scenario the component should never fully disappear from the user's view.
 
-<image-component cols="8">
+<ImageComponent cols="8">
 
 ![Default disabled example on the right](images/disabled-1.png)
 
-</image-component>
+</ImageComponent>
 
 ### Style
 
@@ -46,21 +46,21 @@ Default disabled states are most commonly styled by a decrease in opacity with n
 | _Hover_     | None                   |
 | _Cursor_   | `not-allowed`          |
 
-<image-component cols="8">
+<ImageComponent cols="8">
 
 ![Default disabled style examples](images/disabled-2.png)
 
-</image-component>
+</ImageComponent>
 
 ### Additional warning
 
 An [inline warning notification](/components/notification/code) can be shown in cases where a temporarily disabled item affects multiple items or the primary action of the flow. The notification should describe how the user can enable or re-enable the disabled component.
 
-<image-component cols="8">
+<ImageComponent cols="8">
 
 ![Additional warning with default disabled example](images/disabled-3.png)
 
-</image-component>
+</ImageComponent>
 
 ## Read-only
 
@@ -76,9 +76,9 @@ The _hidden disabled_ variation is used when something or someone does not have 
 
 For example, when a user is the organization owner they are allowed to add members to the organization. Any users that are not an organization owner would not be shown the “Add member” button on a team directory page. Once the user is made an organization owner, **then and only then** will the button be visible.
 
-<image-component cols="8">
+<ImageComponent cols="8">
 
 ![Example of hidden disabled content on the right](images/disabled-4.png)
 
-</image-component>
+</ImageComponent>
 

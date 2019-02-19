@@ -35,11 +35,11 @@ The width of a slider varies based on page content and layout.
 | `.bx--slider`                           | margin-left, margin-right | 16 / 1   | $spacing-md   |
 | `.bx--slider__range-label:last-of-type` | margin-right              | 16 / 1   | $spacing-md   |
 
-<image-component fixed="default" caption="Structure and spacing measurements for slider | px / rem">
+<ImageComponent fixed="default" caption="Structure and spacing measurements for slider | px / rem">
 
 ![Structure and spacing measurements for slider](images/slider-style-1.png)
 
-</image-component>
+</ImageComponent>
 
 ### Recommended
 
