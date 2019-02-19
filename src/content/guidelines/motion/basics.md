@@ -86,7 +86,7 @@ Strictly linear movement appears unnatural to the human eye. Elements on the scr
 </do-dont-example>
 </grid-wrapper>
 
-<br>
+<br />
 
 Avoid easing curves that are unnatural, distracting, or decorative should be avoided. IBM motion is essential and efficient. We guide the users to value as quickly as possible.
 
@@ -202,7 +202,7 @@ Duration is calculated based on the style and size of the motion. Among the two 
 </do-dont-example>
 </grid-wrapper>
 
-<br>
+<br />
 
 When custom duration is possible, please use the [Motion Generator](https://ibm.github.io/motion/) to get the customized duration calculated for you element. We uses a non-linear duration scale to achieve better perceived consistency across all distances.
 
@@ -215,7 +215,7 @@ type="resource"
 </clickable-tile>
 </grid-wrapper>
 
-<br>
+<br />
 
 We are working on making dynamic duration a build-in feature for all Carbon components. Currently, we offer two static values as tokens for easier implementation.
 

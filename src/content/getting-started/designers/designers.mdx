@@ -2,42 +2,36 @@
 title: Designers
 ---
 
+import GridWrapper from '../../../../src/components/GridWrapper';
+import AnchorLinks from '../../../../src/components/AnchorLinks';
+import ClickableTile from '../../../../src/components/ClickableTile';
+
 ## Resources
 
-<grid-wrapper col_lg="8" flex="true" bleed="true">
-  <clickable-tile
+<GridWrapper col_lg="8" flex="true" bleed="true">
+  <ClickableTile
     title="Add Carbon Design Kit to Sketch library"
     href="sketch://add-library/cloud/JaVzz"
     type="resource">
     <img src="images/sketch-icon.png" alt="" />
-  </clickable-tile>
-  <clickable-tile
+  </ClickableTile>
+  <ClickableTile
     title="Download Carbon Design Kit from GitHub"
     href="https://github.com/IBM/carbon-design-kit"
     type="resource">
     <img src="images/github-icon.png" alt="" />
-  </clickable-tile>
-</grid-wrapper>
+  </ClickableTile>
+</GridWrapper>
 
-<anchor-links>
-  <ul>
-    <li>
-      <a href="#carbon-design-kit">Carbon Design Kit</a>
-    </li>
-    <li>
-      <a href="#how-to-get-it">How to get the kit</a>
-    </li>
-    <li>
-      <a href="#get-the-kit-via-box">Get the kit via Box</a>
-    </li>
-    <li>
-      <a href="#download-the-kit-from-github">Download the kit from GitHub</a>
-    </li>
-    <li>
-      <a href="#connect-with-us">Connect with us</a>
-    </li>
-  </ul>
-</anchor-links>
+<AnchorLinks>
+
+- [Carbon Design Kit](#carbon-design-kit)
+- [How to get the kit](#how-to-get-it)
+- [Get the kit via Box](#get-the-kit-via-box)
+- [Download the kit from GitHub](#download-the-kit-from-github)
+- [Connect with us](#connect-with-us)
+
+</AnchorLinks>
 
 ## Carbon Design Kit
 
@@ -51,14 +45,14 @@ Every six months the Carbon team releases a major update to the system, includin
 
 There are three ways to obtain the kit. For timely updates, install the kit as Sketch Shared Library. Please note this requires Sketch version 53 or above.
 
-<grid-wrapper col_lg="8" flex="true" bleed="true">
-  <clickable-tile
+<GridWrapper col_lg="8" flex="true" bleed="true">
+  <ClickableTile
     title="Add Carbon design kit to Sketch library (Beta)"
     href="sketch://add-library/cloud/JaVzz"
     type="resource">
     <img src="images/sketch-icon.png" alt="" />
-  </clickable-tile>
-</grid-wrapper>
+  </ClickableTile>
+</GridWrapper>
 
 If you might work with a proprietary add-on library and still want to be connected for updates, please set up the kit via the Box Drive by following [these instructions](#get-the-kit-via-box).
 
@@ -70,8 +64,9 @@ Using Box Drive sync will ensure that your design kit file will always be up to 
 
 1. Follow the instructions on [IBM Digital Design](https://www.ibm.com/standards/web/design-kit/) to get the design kit through Box Drive.
 
-- Once you have installed and gained access to the `IBM Design Kit`, navigate to the `product design` folder. Select the desired version of Carbon to find the right Carbon Design Kit file.
-- When updates are available to the kit library, a purple `Library Update` badge will appear in the top right corner of your Sketch file. - Click `Library Updates Available` then `Accept updates` in the modal.
+2. Once you have installed and gained access to the `IBM Design Kit`, navigate to the `product design` folder. Select the desired version of Carbon to find the right Carbon Design Kit file.
+
+3. When updates are available to the kit library, a purple `Library Update` badge will appear in the top right corner of your Sketch file. - Click `Library Updates Available` then `Accept updates` in the modal.
 
 <image-component cols="12" caption="Update indicator">
 
@@ -81,9 +76,9 @@ Using Box Drive sync will ensure that your design kit file will always be up to 
 
 ## Download the kit from GitHub
 
-#### 1. Download the Carbon Design Kit
+#### `1.` Download the Carbon Design Kit
 
-- Go to the <a href="https://github.com/carbon-design-system/carbon-design-kit" target=blank> Carbon Design Kit</a> repo and click the folder for latest version of the Carbon Design Kit.
+- Go to the <a href="https://github.com/carbon-design-system/carbon-design-kit" target="blank"> Carbon Design Kit</a> repo and click the folder for latest version of the Carbon Design Kit.
 - On the next page click `Carbon Design Kit.sketch`
 - Click the “View Raw” link to begin downloading the kit.
 
@@ -93,7 +88,7 @@ Using Box Drive sync will ensure that your design kit file will always be up to 
 
 </image-component>
 
-#### 2. Open the Carbon Design Kit in Sketch
+#### `2.` Open the Carbon Design Kit in Sketch
 
 - Open and use the kit like any other Sketch file.
 - Use the left panel in the file to navigate through the different pages of the kit.

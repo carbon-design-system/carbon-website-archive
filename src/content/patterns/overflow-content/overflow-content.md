@@ -74,7 +74,7 @@ To use front- and end-line truncation, enter the appropriate class below and add
 
 ####Example Usage
 
-<br>
+<br />
 
 ```html
 <div class="container">
@@ -101,7 +101,7 @@ To use front- and end-line truncation, enter the appropriate class below and add
 
 ####Result
 
-<br>
+<br />
 
 <image-component cols="8">
 

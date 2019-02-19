@@ -44,7 +44,7 @@ Generally, toggle switches are preferred when the resulting action will be insta
 
 #### References
 
-<br>
+<br />
 
 - [Toggle](/components/toggle)
 - [Radio button](/components/radio-button)

@@ -54,7 +54,7 @@ Use the spacing scale when building individual components. It includes small inc
 | `$spacing-08` | 2.5   | 40  | ![spacing-2xl example](images/spacing-10.svg) |
 | `$spacing-09` | 3     | 48  | ![spacing-3xl example](images/spacing-11.svg) |
 
-<br>
+<br />
 
 <image-component cols="8" caption="Example of spacing tokens applied">
 
@@ -86,7 +86,7 @@ The layout scale is used for arranging components and other UI parts into a full
 | `$layout-06` | 6   | 96  | ![layout-xl example](images/spacing-17.svg)  |
 | `$layout-07` | 10  | 160 | ![layout-2xl example](images/spacing-18.svg) |
 
-<br>
+<br />
 
 <image-component cols="12" caption="Example of layout tokens applied">
 

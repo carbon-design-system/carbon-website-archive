@@ -75,7 +75,7 @@ Themes serve as an organizational framework for color in Carbon, with each theme
 
 #### Global background colors
 
-<br>
+<br />
 
 | Theme | Primary Background       | Token                | Hex value    |    |
 | --- | ----------- | ------------------- | -------------------- | ------------------- |

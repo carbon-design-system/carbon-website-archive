@@ -24,7 +24,7 @@ Elements of our interface dance on the Grid. Motion paths trace lines along the 
 </do-dont-example>
 </grid-wrapper>
 
-<br>
+<br />
 
 <grid-wrapper col_lg="12" flex="true">
 <do-dont-example correct="false" full_width="true" label="Not staggering horizontal and vertical animations create a straight diagonal path. It breaks the grid and is harsh to the eye.">
@@ -34,7 +34,7 @@ Elements of our interface dance on the Grid. Motion paths trace lines along the 
 </do-dont-example>
 </grid-wrapper>
 
-<br>
+<br />
 
 <grid-wrapper col_lg="8" flex="true">
 <do-dont-example correct=true label="When removing an item from the grid, thumbnails on the edge existing and re-entering container create a smooth transition.">
@@ -49,7 +49,7 @@ Elements of our interface dance on the Grid. Motion paths trace lines along the 
 </do-dont-example>
 </grid-wrapper>
 
-<br>
+<br />
 
 <grid-wrapper col_lg="8" flex="true">
 <do-dont-example correct="true" label="When sorting or shuffling items on the grid, always using rounded corner paths to visually organize the movements.">
@@ -82,7 +82,7 @@ In below example, both expanding a row of a data table and opening a dropdown us
 </do-dont-example>
 </grid-wrapper>
 
-<br>
+<br />
 
 Pay attention to the spatial relationships between elements and screens, and information hierarchy. Visually similar elements may need the different motions to respect their respective spatial location.
 
@@ -94,7 +94,7 @@ Pay attention to the spatial relationships between elements and screens, and inf
 </do-dont-example>
 </grid-wrapper>
 
-<br>
+<br />
 
 <grid-wrapper col_lg="12" flex="true">
 <do-dont-example correct="true" full_width="true" label="When the new content panel is on the same layer, motion is “pushing”, revealing content within with a mask.">
@@ -104,7 +104,7 @@ Pay attention to the spatial relationships between elements and screens, and inf
 </do-dont-example>
 </grid-wrapper>
 
-<br>
+<br />
 
 Effective use of inconsistency in motion highlights a difference in meaning or intent behind actions with similar visual appearance.
 
@@ -133,7 +133,7 @@ Motion can help establishing a sense of continuity between screens and experienc
 </do-dont-example>
 </grid-wrapper>
 
-<br>
+<br />
 
 <grid-wrapper col_lg="8" flex="true">
 <do-dont-example correct="false" label="Continuous elements are for guidance and should not distract. Always finish a sequence with the important content on page.">
@@ -157,7 +157,7 @@ For example, staggering the entrance of table content by 20ms significantly redu
 </do-dont-example>
 </grid-wrapper>
 
-<br>
+<br />
 
 Sequence the loading of page content when possible. Start with the most orienting content, such as the static content* and header, and end with the most important information, such as the _call to action_ button or a calculation result, to focus user’s attention to them.
 
@@ -169,7 +169,7 @@ Sequence the loading of page content when possible. Start with the most orientin
 </do-dont-example>
 </grid-wrapper>
 
-<br>
+<br />
 
 Follow this recommended sequence of different types of content when choreographing content entrance. Not all categories might be present in every experience. [Learn to categorize content in Motion Strategy ](#)
 

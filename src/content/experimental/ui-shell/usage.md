@@ -80,7 +80,7 @@ As a header scales down to fit smaller screen sizes, header links and menus shou
 
 #### Header elements
 
-<br>
+<br />
 
 - **The platform icon/hamburger menu:** The platform icon appears in this space at wider browser widths, and switches to a hamburger menu to serve as overflow for header navigation links as the window narrows.
 
@@ -169,7 +169,7 @@ The Side-nav contains secondary navigation and fits below the header. It can be 
 
 #### Side-nav items
 
-<br>
+<br />
 
 - **Link:** Links to different pages
 - **Category:** A Category must contain at least two links. Categories can be either collapsible or fixed. The label of a Category is never a link.

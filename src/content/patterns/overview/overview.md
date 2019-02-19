@@ -7,7 +7,7 @@ In Carbon, _patterns_ comprise common user flows and scenarios which are too com
 
 The patterns library is constantly growing, and the Carbon team encourages contributions of UX patterns which can apply to a broad set of Carbon users.
 
-<br>
+<br />
 
 |Carbon Patterns |   |
 |---|---|

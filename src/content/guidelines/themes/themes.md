@@ -57,7 +57,7 @@ The default theme acts as a starting point; from there designers and developers 
 
 ####1. Create a theme mixin that effectively mimics this structure, but changes up hex values as needed:
 
-<br>
+<br />
 
 
 
