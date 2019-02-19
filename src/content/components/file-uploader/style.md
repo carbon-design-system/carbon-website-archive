@@ -5,23 +5,30 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                      | Property   | SCSS        |
+| Class                      | Property   | Color token |
 | -------------------------- | ---------- | ----------- |
-| `.bx--label`               | color      | $text-01    |
-| `.bx--label-description`   | color      | $text-02    |
-| `.bx--file-filename`       | color      | $text-01    |
-| `.bx--file__selected-file` | background | $ui-01      |
-| `.bx--file-close`          | fill       | $inverse-01 |
+| `.bx--label`               | text color | `$text-01`  |
+| `.bx--label-description`   | text color | `$text-02`  |
+| `.bx--file-filename`       | color      | `$text-01`  |
+| `.bx--file__selected-file` | background | `$ui-01`    |
+| `.bx--file-close`          | fill       | `$icon-01`  |
+
+### Interactive states
+| Class                         | Property   | Color token |
+| ----------------------------- | ---------- | ----------- |
+| File name: invalid            | text color | `$disabled-02`|
+| Error message                 | text color | `$support-01` |
+| `.bx--file-filename`          | border-bottom | `$support-01` |
 
 ## Typography
 
 The file uploader label and instruction text should be set in sentence case, with only the first letter of the first word in the sentence capitalized.
 
-| Class                    | Font-size (px/rem) | Font-weight     | Type style          |
+| Class                    | Font-size (px/rem) | Font-weight     | Type token          |
 | ------------------------ | ------------------ | --------------- | ------------------- |
-| `.bx--label`             | 14 / 0.875         | Semi-Bold / 600 | `.bx--type-zeta`    |
-| `.bx--label-description` | 14 / 0.875         | Normal / 400    | -                   |
-| `.bx--file-filename`     | 12 / 0.75          | Normal / 400    | `.bx--type-caption` |
+| `.bx--label`             | 14 / 0.875         | Semi-bold / 600 | `$heading-01`       |
+| `.bx--label-description` | 14 / 0.875         | Regular / 400   | `$body-short-01`    |
+| `.bx--file-filename`     | 14 / 0.875         | Regular / 400   | `$body-short-01`    |
 
 ## Structure
 
@@ -29,9 +36,10 @@ The width of an uploaded file varies based on the content and layout of a design
 
 | Class                      | Property                    | px / rem   | Spacing token |
 | -------------------------- | --------------------------- | ---------- | ------------- |
-| `.bx--file-filename`       | height                      | 30 / 1.875 | -             |
-| `.bx--file__selected-file` | padding-left, padding-right | 16 /1      | $spacing-md   |
-| `.bx--file__selected-file` | margin-bottom               | 16 /1      | $spacing-md   |
+| `.bx--file-filename`       | height                      | 40 / 2.5   | –             |
+| `.bx--file-filename`       | width                       | 224 / 14   | –             |
+| `.bx--file__selected-file` | padding-left                | 16 / 1     | `$spacing-03` |
+| `.bx--file__selected-file` | margin-bottom               | 8 / 0.5    | `$spacing-05` |
 
 <image-component fixed="default" caption="Structure and spacing measurements for file uploader | px / rem">
 
@@ -45,6 +53,6 @@ The following specs are not built into the file uploader component but are recom
 
 | Class             | Property                  | px / rem | Spacing token |
 | ----------------- | ------------------------- | -------- | ------------- |
-| `.bx--file-close` | height, width             | 16 / 1   | -             |
-| `.bx--file-close` | margin-left, margin-right | 16 / 1   | $spacing-md   |
+| `.bx--file-close` | height, width             | 16 / 1   | –             |
+| `.bx--file-close` | margin-left, margin-right | 16 / 1   | `$spacing-05` |
 
