@@ -53,7 +53,7 @@ There are three ways to obtain the kit. For timely updates, install the kit as S
 
 If you work with a proprietary add-on library and still want to be connected for updates, set up the kit via Box Drive by following [these instructions](#get-the-kit-via-box). (Internal IBM users only)
 
-If you would rather not receive library updates, or if you are looking for previous versions of the design kit, please visit the GitHub repository and follow [these instructions](#download-the-kit-from-github) to download the kit.
+For one-time downloads of the kit, or if you are looking for previous versions, please visit the GitHub repository and follow [these instructions](#download-the-kit-from-github) to download the kit.
 
 
 ### Get the kit via Box (IBM internal only)
