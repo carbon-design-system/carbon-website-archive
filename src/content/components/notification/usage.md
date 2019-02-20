@@ -59,7 +59,7 @@ Inline notifications appear near its related item. In [forms](/components/form),
 
 <image-component cols="8">
 
-![Form example with inline notification.](images/notification-usage-3.png)
+![Form example with inline notification](images/notification-usage-3.png)
 
 </image-component>
 
