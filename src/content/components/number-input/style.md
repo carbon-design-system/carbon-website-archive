@@ -6,16 +6,16 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-Inputs come in two different colors. The default input color is `$field-01` and is used on `$ui-01` page backgrounds. The light version input color is `$field-02` and is used on `$ui-02` page backgrounds.
+Inputs come in two different colors. The default input color is `$field-01` and is used on `$ui-background` and `$ui-01` page backgrounds. The `--light` version input color is `$field-02` and is used on `$ui-02` page backgrounds.
 
-| Class                              | Property         | SCSS      |
-| ---------------------------------- | ---------------- | --------- |
-| `.bx--number`                      | background-color | $field-01 |
-| `.bx--number--light`               | background-color | $field-02 |
-| `.bx--label`                       | color            | $text-01  |
-| `.bx--number input[type='number']` | color            | $text-01  |
-| `.bx--number input[type='number']` | box-shadow       | $ui-05    |
-| `.bx--number__controls svg`        | fill             | $brand-01 |
+| Class                              | Property         | Color token |
+| ---------------------------------- | ---------------- | ---------- |
+| `.bx--label`                       | text color       | `$text-02` |
+| `.bx--number input[type='number']` | text color       | `$text-01` |
+| `.bx--number`                      | background-color | `$field-01`|
+| `.bx--number--light`               | background-color | `$field-02`|
+| `.bx--number`                      | border-bottom    | `$ui-04`   |
+| `.bx--number__controls`            | svg color        | `$icon-01` |
 
 <image-component fixed="default" caption="Number input example">
 
@@ -23,15 +23,18 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 
 </image-component>
 
-### States
+### Interactive states
 
-| Class                                                               | Property   | SCSS        |
-| ------------------------------------------------------------------- | ---------- | ----------- |
-| `.bx--number input[type='number']:focus`                            | box-shadow | $brand-01   |
-| `.bx--number input[type='number']:focus ~ .bx--label`               | color      | $brand-01   |
-| `.bx--number[data-invalid] input[type='number']`                    | box-shadow | $support-01 |
-| `.bx--number[data-invalid] input[type='number']:focus ~ .bx--label` | color      | $support-01 |
-| `.bx--form-requirement`                                             | color      | $support-01 |
+| Class                                                               | Property      | Color token |
+| ------------------------------------------------------------------- | ------------- | ----------- |
+| `.bx--number:focus`                                                 | border        | `$focus`      |
+| `.bx--number__controls:focus`                                       | border        | `$focus`      |
+| `[data-invalid]`                                                    | border        | `$support-01` |
+| `[data-invalid]:focus`                                              | color         | `$support-01` |
+| `.bx--form-requirement`                                             | text color    | `$support-01` |
+| `.bx--label:disabled`                                               | text color    | `$disabled-02` |
+| `.bx--number:disabled`                                              | background-color | `$disabled-01`|
+| `.bx--number input[type='number']:disabled`                         | text color       | `$disabled-03` |
 
 **Active:** Number input should have a default number to start. The input should never be empty.
 
@@ -39,17 +42,17 @@ Inputs come in two different colors. The default input color is `$field-01` and 
 
 **Error:** Error messages appear below the input field and are always present while invalid.
 
-**Disabled:** Disabled state appears at 50% opacity and has a `.not-allowed` cursor on hover.
+**Disabled:** Disabled state should have a `.not-allowed` cursor on hover.
 
 ## Typography
 
 Number input labels should use sentence case, with only the first word in a phrase and any proper nouns capitalized.
 
-| Class                              | Font-size (px/rem) | Font-weight     | Type style          |
+| Class                              | Font-size (px/rem) | Font-weight     | Type token          |
 | ---------------------------------- | ------------------ | --------------- | ------------------- |
-| `.bx--label`                       | 14 / 0.875         | Semi-Bold / 600 | `.bx--type-zeta`    |
-| `.bx--number input[type='number']` | 14 / 0.875         | Normal / 400    | -                   |
-| `.bx--form-requirement`            | 12 / 0.75          | Normal / 400    | `.bx--type-caption` |
+| `.bx--label`                       | 12 / 0.75          | Regular / 400   | `$label-01`         |
+| `.bx--number input[type='number']` | 14 / 0.875         | Regular / 400   | `$body-short-01`    |
+| `.bx--form-requirement`            | 12 / 0.75          | Regular / 400   | `$label-01`         |
 
 ## Structure
 
@@ -57,11 +60,11 @@ The height of a number input is always the same. The width however, varies based
 
 | Class                                    | Property      | px / rem | Spacing token |
 | ---------------------------------------- | ------------- | -------- | ------------- |
-| `.bx--number input[type='number']`       | height        | 40 / 2.5 | -             |
-| `.bx--number input[type='number']`       | padding-left  | 16 / 1   | $spacing-md   |
-| `.bx--number input[type='number']`       | padding-right | 32 / 2   | $spacing-xl   |
-| `.bx--number input[type='number']`       | box-shadow    | 1px      | -             |
-| `.bx--number input[type='number']:focus` | box-shadow    | 2px      | -             |
+| `.bx--label`                             | margin-bottom | 8 / 0.5  | `$spacing-03` |
+| `.bx--number input`                      | height        | 40 / 2.5 | –             |
+| `.bx--number input[type='number']`       | padding-left  | 16 / 1   | `$spacing-05` |
+| `.bx--number__controls`                  | padding-left, padding-right | 16 / 1     | `$spacing-05` |
+| `.bx--number`                           | border-bottom  | 1px      | –             |
 
 <image-component fixed="default" caption="Structure and spacing measurements for a number input | px / rem">
 

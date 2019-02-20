@@ -55,7 +55,7 @@ If a `min date` is set on the calendar, then any text appearing before that date
 
 **Error:** Error messages appear below the input field and are always present while invalid.
 
-**Disabled:** Disabled state should has a `.not-allowed` cursor on hover.
+**Disabled:** Disabled state should have a `.not-allowed` cursor on hover.
 
 ## Typography
 

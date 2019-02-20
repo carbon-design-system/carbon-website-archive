@@ -6,14 +6,25 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                                              | Property         | SCSS          |
+| Class                                              | Property         | Color token   |
 | -------------------------------------------------- | ---------------- | ------------- |
-| `.bx--overflow-menu__icon`                         | fill             | $ui-05        |
-| `.bx--overflow-menu-options`                       | background-color | $ui-01        |
-| `.bx--overflow-menu-options__option:hover`         | background-color | $hover-row    |
-| `.bx--overflow-menu-options__btn`                  | color            | $text-01      |
-| `.bx--overflow-menu-options__option--danger:hover` | background-color | $hover-danger |
-| `.bx--overflow-menu-options__option--danger`       | border-top       | $ui-04        |
+| `.bx--overflow-menu__icon`                         | fill             | `$icon-01`    |
+| `.bx--overflow-menu-options`                       | background-color | `$ui-01`      |
+| `.bx--overflow-menu-options__btn`                  | color            | `$text-02`    |
+| `.bx--overflow-menu-options__option--danger`       | background-color | `$support-01` |
+| `.bx--overflow-menu-options`                       | box-shadow       | `0 2px 6px 0 rgba(0, 0, 0, 0.3)` |
+
+### Interactive states
+
+| Class                                              | Property         | Color token   |
+| -------------------------------------------------- | ---------------- | ------------- |
+| `.bx--overflow-menu:focus`                         | border           | `$focus`      |
+| `option:focus`                                     | border           | `$focus`      |
+| `.bx--overflow-menu:hover`                         | background-color | `$hover-ui `  |
+| `option:hover`                                     | background-color | `$hover-row ` |
+| `option:hover`                                     | text color       | `$text-01`    |
+| `option--danger:hover`                             | background-color | `$hover-danger`|
+| `option:disabled`                                  | text color       | `$disabled-02`|
 
 <image-component fixed="default" caption="Text and warning hover examples for overflow menu">
 
@@ -25,15 +36,9 @@ tabs: ['Code', 'Usage', 'Style']
 
 Overflow menu text should be set in set in sentence case with the first letter of the first word capitalized.
 
-| Property                          | Font-size (px/rem) | Font-weight  | Type styles |
-| --------------------------------- | ------------------ | ------------ | ----------- |
-| `.bx--overflow-menu-options__btn` | 14 / 0.875         | Normal / 400 | -           |
-
-## Layer
-
-| Class                        | Layer, Elevation | Box-shadow                     |
-| ---------------------------- | ---------------- | ------------------------------ |
-| `.bx--overflow-menu-options` | Overlay, 8       | 0 4px 8px 0 rgba(0, 0, 0, 0.1) |
+| Property                          | Font-size (px/rem) | Font-weight   | Type token       |
+| --------------------------------- | ------------------ | ------------- | ---------------- |
+| `.bx--overflow-menu-options__btn` | 14 / 0.875         | Regular / 400 | `$body-short-01` |
 
 ## Structure
 
@@ -41,11 +46,10 @@ The height of an overflow menu is determined by the amount of content in the men
 
 | Class                                        | Property                    | px / rem    | Spacing token |
 | -------------------------------------------- | --------------------------- | ----------- | ------------- |
-| `.bx--overflow-menu-options__btn`            | padding-top, padding-bottom | 8 / 0.5     | $spacing-xs   |
-| `.bx--overflow-menu-options__btn`            | padding-right, padding-left | 16 / 1      | $spacing-md   |
-| `.bx--overflow-menu__icon`                   | padding                     | 16 / 1      | $spacing-md   |
-| `.bx--overflow-menu-options`                 | width                       | 180 / 11.25 | -             |
-| `.bx--overflow-menu-options__option--danger` | border-top                  | 1px         | -             |
+| `.bx--overflow-menu__icon`                   | icon size                   | 16 x 16px   | –             |
+| `.bx--overflow-menu-options__btn`            | padding-right, padding-left | 16 / 1      | `$spacing-05` |
+| `.bx--overflow-menu-options`                 | height                      | 32 / 2      | –             |
+| `.bx--overflow-menu-options__option--danger` | border-top                  | 1px         | –             |
 
 <image-component fixed="default">
 
