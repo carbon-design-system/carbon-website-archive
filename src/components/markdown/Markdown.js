@@ -33,7 +33,6 @@ export class h2 extends React.Component {
     return (
       <Location>
         {({ location }) => {
-          console.log(this.props.children);
           const hash =
             typeof this.props.children !== 'string'
               ? undefined
