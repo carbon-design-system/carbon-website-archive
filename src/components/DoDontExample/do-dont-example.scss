@@ -125,7 +125,7 @@ p.example__text {
 p.example__title {
   @include carbon--type-style('body-short-01');
   margin: 0;
-  padding: 0;
+  padding: 0 25% 0 0;
 }
 
 p.example__description {
