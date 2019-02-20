@@ -147,6 +147,13 @@ body {
     height: 100%;
   }
 }
+.website-tabs .gatsby-resp-iframe-wrapper,
+.example .gatsby-resp-iframe-wrapper {
+  @include breakpoint('lg') {
+    margin-left: 0;
+    padding-bottom: 56.543% !important;
+  }
+}
 
 .ibm--row .gatsby-resp-iframe-wrapper,
 .example__content .gatsby-resp-iframe-wrapper {
