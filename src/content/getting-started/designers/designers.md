@@ -24,7 +24,7 @@ title: Designers
 <anchor-links>
 <ul>
     <li><a href="#carbon-design-kit">Carbon Design Kit</a></li>
-    <li><a href="#how-to-get-it">How to get it</a></li>
+    <li><a href="#getting-the-kit">Getting the kit</a></li>
     <li><a href="#contribute">Contribute</a></li>
 </ul>
 </anchor-links>
@@ -37,9 +37,13 @@ The Carbon Design Kit is a constantly evolving Sketch document containing all of
 
 The Carbon core team releases a major update to the system approximately twice a year, including a revised design kit and new versions of the components when needed. Style refinements and bug fixes are released as continuous updates throughout the year. All design kit release updates are tracked in the [change log](https://github.com/carbon-design-system/carbon-design-kit/releases).
 
-## How to get it
+## Getting the kit
 
-There are three ways to obtain the kit. For timely updates, install the kit as Sketch Shared Library. _Please note: this method requires Sketch version 53 or above._
+There are three ways to obtain the kit; via Sketch shared library, via Box Drive, and via GitHub. 
+
+### Sketch shared library (preferred) 
+
+For timely updates, install the kit as Sketch shared library. _Note: this method requires Sketch version 53 or above._
 
 <grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
@@ -51,17 +55,11 @@ There are three ways to obtain the kit. For timely updates, install the kit as S
 </clickable-tile>
 </grid-wrapper>
 
-If you work with a proprietary add-on library and still want to be connected for updates, set up the kit via Box Drive by following [these instructions](#get-the-kit-via-box). (Internal IBM users only)
-
-For one-time downloads of the kit, or if you are looking for previous versions, please visit the GitHub repository and follow [these instructions](#download-the-kit-from-github) to download the kit.
-
-
 ### Get the kit via Box (IBM internal only)
 
-Using Box Drive sync will ensure that your design kit file will always be up to date, eliminating the need to manually download new versions as they are released.
+If you work with a proprietary add-on library and still want to be connected for updates, set up the kit via Box Drive. Using Box Drive sync will ensure that your design kit file will always be up to date, eliminating the need to manually download new versions as they are released.
 
 1. Follow the instructions on [IBM Digital Design](https://www.ibm.com/standards/web/design-kit/) to get the design kit through Box Drive.
-
 - Once you have installed and gained access to the `IBM Design Kit` folder, navigate to the `product design` folder. Select the desired version of Carbon.
 - When updates are available to the kit library, a purple `Library Updates Available` badge will appear in the top right corner of your Sketch file. 
 - Click `Library Updates Available` then `Accept Updates` in the modal.
@@ -73,6 +71,8 @@ Using Box Drive sync will ensure that your design kit file will always be up to 
 </image-component>
 
 ### Download the kit from GitHub
+
+This is the best method for one-time downloads of the kit, or if you are looking for previous versions.
 
 #### 1. Download the Carbon Design Kit
    - Go to the <a href="https://github.com/carbon-design-system/carbon-design-kit" target=blank>Carbon Design Kit</a> repo and click the folder for latest version of the Carbon Design Kit.
