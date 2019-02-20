@@ -63,9 +63,9 @@ Only use headline-style capitalization for table/grid column headers and product
 
 #### Do not capitalize the initial letter of the following words:
 
-- articles, except as the first word (a, the, etc.)
-- coordinating conjunctions (but, and, etc. )
-- prepositions, except as the first or last word (to, for, etc.)
+- Articles, except as the first word (a, the, etc.)
+- Coordinating conjunctions (but, and, etc. )
+- Prepositions, except as the first or last word (to, for, etc.)
 
 ## Verb tense
 
@@ -76,12 +76,12 @@ For example, for the verb "to write," the simplest tenses would be "You write," 
 These more complex tenses, when used excessively, can be more difficult for readers to parse.
 
 <grid-wrapper col_lg="8" flex="true">
-    <do-dont-example correct=true label="Do: use simple future tenses." text='The API will return a promise.'></do-dont-example>
-    <do-dont-example label="Don't: use complex future tenses when simple ones will suffice." text='The API will be returning a promise.'></do-dont-example>
+    <do-dont-example correct=true label="Do use simple future tenses." text='The API will return a promise.'></do-dont-example>
+    <do-dont-example label="Don’t use complex future tenses when simple ones will suffice." text='The API will be returning a promise.'></do-dont-example>
 </grid-wrapper>
 <grid-wrapper col_lg="8" flex="true">
-    <do-dont-example correct=true label="Do: use simple past tenses." text='The API exceeded its limit.'></do-dont-example>
-    <do-dont-example label="Don't: use complex past tenses when simple ones will suffice." text='The API has exceeded its limit.'></do-dont-example>
+    <do-dont-example correct=true label="Do use simple past tenses." text='The API exceeded its limit.'></do-dont-example>
+    <do-dont-example label="Don’t use complex past tenses when simple ones will suffice." text='The API has exceeded its limit.'></do-dont-example>
 </grid-wrapper>
 
 ## Active and passive voice
@@ -89,17 +89,17 @@ These more complex tenses, when used excessively, can be more difficult for read
 The _active voice_ is direct and punchy, and emphasizes the subject of the sentence. The subject clearly "acts upon" the verb (hence, "active"). For example, "John ate the apple." In situations where either voice will work, generally choose the active voice for more directness.
 
 <grid-wrapper col_lg="8" flex="true">
-    <do-dont-example correct=true label="Do: use active voice when appropriate." text='Next, the admin configures access privileges.'></do-dont-example>
-    <do-dont-example label="Don't: use passive voice when active voice will suffice." text='Next, access privileges are configured by the admin.'></do-dont-example>
+    <do-dont-example correct=true label="Do use active voice when appropriate." text='Next, the admin configures access privileges.'></do-dont-example>
+    <do-dont-example label="Don’t use passive voice when active voice will suffice." text='Next, access privileges are configured by the admin.'></do-dont-example>
 </grid-wrapper>
 
-The _passive voice_, on the other hand, flips the construction so that the subject is secondary to the verb and object (hence, "passive"). Often, the subject is not even included in the sentence. For example, "_The apple was eaten by John_" or just "_The apple was eaten_." Only sentences that contain direct objects can be constructed in the passive voice. Thus, "_John ate_" cannot be constructed passively.
+The _passive voice_, on the other hand, flips the construction so that the subject is secondary to the verb and object (hence, "passive"). Often, the subject is not even included in the sentence. For example, “_The apple was eaten by John_" or just “_The apple was eaten_." Only sentences that contain direct objects can be constructed in the passive voice. Thus, “_John ate_" cannot be constructed passively.
 
  The passive voice makes for a more natural tone in certain use cases. For example, if the true subject of the sentence is a system, and the human is secondary, passive voice can be acceptable.  
 
 <grid-wrapper col_lg="8" flex="true">
-    <do-dont-example correct=true label="Do: use passive voice when appropriate." text='The database needs to be rebooted.'></do-dont-example>
-    <do-dont-example label="Don't: use active voice when passive voice is more appropriate." text='Someone needs to reboot the database.'></do-dont-example>
+    <do-dont-example correct=true label="Do use passive voice when appropriate." text='The database needs to be rebooted.'></do-dont-example>
+    <do-dont-example label="Don’t use active voice when passive voice is more appropriate." text='Someone needs to reboot the database.'></do-dont-example>
 </grid-wrapper>
 
 ## First and second person
@@ -118,29 +118,37 @@ While a more formal tone is often appropriate for technical and business writing
 - Use **exclamation marks** only positively, not negatively. Make sure you use no more than one exclamation mark in a context, such as a single window or a single Docs topic.
 
 <grid-wrapper col_lg="8" flex="true">
-    <do-dont-example correct=true label="Do: use exclamation points for positive messages." text='Your IBM Cloud account is ready!'></do-dont-example>
-    <do-dont-example label="Don't: use exclamation points for negative messages" text='You have reached your usage limit!!'></do-dont-example>
+    <do-dont-example correct=true label="Do use exclamation points for positive messages." text='Your IBM Cloud account is ready!'></do-dont-example>
+    <do-dont-example label="Don’t use exclamation points for negative messages" text='You have reached your usage limit!!'></do-dont-example>
 </grid-wrapper>
 
-**Terms of politeness** are often overused, can convey the wrong tone for technical material, and are not regarded the same way in all cultures. Use terms such as "please" and "thank you" carefully.
+<br>
+
+#### Terms of politeness
+Often overused, these terms can convey the wrong tone for technical material, and are not regarded the same way in all cultures. Use terms such as "please" and "thank you" carefully.
+
 
 <grid-wrapper col_lg="8" flex="true">
-    <do-dont-example correct=true description='Do: Use terms of politeness in a UI only when the user is being inconvenienced.' text='Indexing might take a few minutes. Please wait.'></do-dont-example>
-    <do-dont-example description="Don't: Use terms of politeness superfluously." text='Please create a subscription account to get full access to the catalog.'></do-dont-example>
+    <do-dont-example correct=true label="Do Use terms of politeness in a UI only when the user is being inconvenienced." text='Indexing might take a few minutes. Please wait.'></do-dont-example>
+    <do-dont-example label="Don’t Use terms of politeness superfluously." text='Please create a subscription account to get full access to the catalog.'></do-dont-example>
 </grid-wrapper>
 
 ## Can, may, and might
 
-**Terms of ability** are often misused. Remember, "can" implies ability, and "may" implies permission (and sometimes uncertainty).
+#### Terms of ability
+These terms are often misused. Remember, "can" implies ability, and "may" implies permission (and sometimes uncertainty).
 
 <grid-wrapper col_lg="8" flex="true">
-    <do-dont-example correct=true label="Do: use 'can' to express ability." text='You can use the command line interface to update your app.'></do-dont-example>
-    <do-dont-example label="Don't: use 'may' when you mean 'can.'" text='You may use the command line interface to update your app.'></do-dont-example>
+    <do-dont-example correct=true label="Do use ‘can’ to express ability." text='You can use the command line interface to update your app.'></do-dont-example>
+<do-dont-example label="Don’t use ‘may’ when you mean ‘can.’" text='You may use the command line interface to update your app.'></do-dont-example>
 </grid-wrapper>
 
-**Terms of possibility** can also be confusing. Remember, when either "may" or "might" will work, generally go with "might" to avoid confusion with the multiple meanings of "may."
+<br>
+
+#### Terms of possibility
+These terms can also be confusing. Remember, when either "may" or "might" will work, generally go with "might" to avoid confusion with the multiple meanings of "may."
 
 <grid-wrapper col_lg="8" flex="true">
-    <do-dont-example correct=true label="Do: use 'might' to clarify possibility." text='You might need more advanced features when integrating with another app.'></do-dont-example>
-    <do-dont-example label="Don't: use 'may' when 'might' will work." text='You may need more advanced features when integrating with another app.'></do-dont-example>
+        <do-dont-example correct=true label="Do use ‘might’ to clarify possibility." text='You might need more advanced features when integrating with another app.'></do-dont-example>
+    <do-dont-example label="Don’t use ‘may’ when ‘might’ will work." text='You may need more advanced features when integrating with another app.'></do-dont-example>
 </grid-wrapper>

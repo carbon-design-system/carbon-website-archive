@@ -28,7 +28,8 @@ $ npm install --save carbon-components
 ```
 
 ####If you prefer [Yarn](https://yarnpkg.com/en/):
-use the following command instead:
+
+<br>
 
 ```bash
 $ yarn add carbon-components
@@ -39,11 +40,11 @@ $ yarn add carbon-components
 
 <anchor-links small="true">
 <ul>
-    <li><a href="#what’s-included">What's included</a></li>
+    <li><a href="#whats-included">What's included</a></li>
     <li><a href="#cdn">CDN</a></li>
     <li><a href="#codepen">CodePen</a></li>
     <li><a href="#scss">SCSS</a></li>
-    <li><a href="#javascript">Javascript</a></li>
+    <li><a href="#javascript">JavaScript</a></li>
     <li><a href="#polyfills-for-older-browsers">Polyfills for older browsers</a></li>
     
 </ul>

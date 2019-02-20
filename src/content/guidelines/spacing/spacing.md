@@ -5,7 +5,7 @@ title: Spacing
 
 <anchor-links>
 <ul>
-    <li><a href="#carbon's-two-scales">Carbon's two scales</a></li>
+        <li><a href="#carbons-two-scales">Carbon’s two scales</a></li>
     <li><a href="#spacing-scale">Spacing scale</a></li>
     <li><a href="#layout-scale">Layout scale</a></li>
     <li><a href="#designing-with-space">Designing with space</a></li>
@@ -20,12 +20,12 @@ Carbon has two spacing scales; one for general spacing within components and the
 
 | Scale             | Purpose                                                                                                                                                                                                                             |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Spacing scale | Used for smaller, more refined spacing needs, specifically within the context of a component (i.e. the space between a label and a text input).                                                                                |
-| Layout scale | Typically used for positioning components on a page (i.e., the space between a text field and a selector). |
+| _Spacing scale_ | Used for smaller, more refined spacing needs, specifically within the context of a component (i.e. the space between a label and a text input).                                                                                |
+| _Layout scale_ | Typically used for positioning components on a page (i.e., the space between a text field and a selector). |
 
 ### Applying spacing
 
-Both the Spacing and the Layout scales can be applied to `margin` or `padding` properties. Likewise, these spacing tokens can be applied to both vertical and horizontal edges. The token takes the place of the values normally assigned to `margin` and `padding`. The following are all approved ways to syntactically apply Carbon spacing tokens:
+Both the _spacing_ and the _layout_ scales can be applied to `margin` or `padding` properties. Likewise, these spacing tokens can be applied to both vertical and horizontal edges. The token takes the place of the values normally assigned to `margin` and `padding`. The following are all approved ways to syntactically apply Carbon spacing tokens:
 
 ```css
 margin: $spacing-xs;
@@ -44,19 +44,21 @@ Use the spacing scale when building individual components. It includes small inc
 
 | Token             | rem   | px  | Example                                       |
 | ----------------- | ----- | --- | --------------------------------------------- |
-| **\$spacing-3xs** | 0.125 | 2   | ![spacing-3xs example](images/spacing-3.svg)  |
-| **\$spacing-2xs** | 0.25  | 4   | ![spacing-2xs example](images/spacing-4.svg)  |
-| **\$spacing-xs**  | 0.5   | 8   | ![spacing-xs example](images/spacing-5.svg)   |
-| **\$spacing-sm**  | 0.75  | 12  | ![spacing-sm example](images/spacing-6.svg)   |
-| **\$spacing-md**  | 1     | 16  | ![spacing-md example](images/spacing-7.svg)   |
-| **\$spacing-lg**  | 1.5   | 24  | ![spacing-lg example](images/spacing-8.svg)   |
-| **\$spacing-xl**  | 2     | 32  | ![spacing-xl example](images/spacing-9.svg)   |
-| **\$spacing-2xl** | 2.5   | 40  | ![spacing-2xl example](images/spacing-10.svg) |
-| **\$spacing-3xl** | 3     | 48  | ![spacing-3xl example](images/spacing-11.svg) |
+| `$spacing-01` | 0.125 | 2   | ![spacing-3xs example](images/spacing-3.svg)  |
+| `$spacing-02` | 0.25  | 4   | ![spacing-2xs example](images/spacing-4.svg)  |
+| `$spacing-03` | 0.5   | 8   | ![spacing-xs example](images/spacing-5.svg)   |
+| `$spacing-04` | 0.75  | 12  | ![spacing-sm example](images/spacing-6.svg)   |
+| `$spacing-05` | 1     | 16  | ![spacing-md example](images/spacing-7.svg)   |
+| `$spacing-06`  | 1.5   | 24  | ![spacing-lg example](images/spacing-8.svg)   |
+| `$spacing-07`  | 2     | 32  | ![spacing-xl example](images/spacing-9.svg)   |
+| `$spacing-08` | 2.5   | 40  | ![spacing-2xl example](images/spacing-10.svg) |
+| `$spacing-09` | 3     | 48  | ![spacing-3xl example](images/spacing-11.svg) |
 
-<image-component cols="6" caption="Example of spacing tokens applied">
+<br>
 
-![Example of spacing tokens applied](images/spacing-1.png)
+<image-component cols="8" caption="Example of spacing tokens applied">
+
+![Example of spacing tokens applied](images/spacing-1_revised.png)
 
 </image-component>
 
@@ -84,9 +86,11 @@ The layout scale is used for arranging components and other UI parts into a full
 | `$layout-06` | 6   | 96  | ![layout-xl example](images/spacing-17.svg)  |
 | `$layout-07` | 10  | 160 | ![layout-2xl example](images/spacing-18.svg) |
 
-<image-component cols="6" border="true" caption="Example of layout tokens applied">
+<br>
 
-![Example of layout tokens applied](images/spacing-2.png)
+<image-component cols="12" caption="Example of layout tokens applied">
+
+![Example of layout tokens applied](images/layout_revised.png)
 
 </image-component>
 

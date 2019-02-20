@@ -2,19 +2,21 @@
 title: Support
 ---
 
+
+## Questions
+
 The Carbon core team provides support for users of the design system. Find the use case below that most closely matches your own for the quickest response.
 
-## If you have questions
 
-### Carbon Website
+### Carbon website
 
 Please take some time to explore the content on this website before engaging the Carbon team. The site is very comprehensive and most of the guidelines and components are well documented.
 
-### Frequently Asked Questions
+### Frequently asked questions
 
 Answers to the most common questions about the design system can be found in the [Carbon FAQ](faq).
 
-### Slack Channels
+### Slack channels
 
 _Internal IBM users only._ The Carbon core team maintains the following channels and will provide support as time permits.
 
@@ -32,17 +34,17 @@ Messages to <carbon@us.ibm.com> will be addressed by the Carbon technical team a
 
 The Carbon team can also be reached on Twitter: [@\_carbondesign](https://twitter.com/_carbondesign?lang=en)
 
-## If you have suggestions or contributions
+## Suggestions or contributions
 
-### GitHub Pull Requests
+### GitHub pull requests
 
 If you have a specific fix or contribution, you can generate a pull request in the appropriate Carbon repo.
 
-### GitHub Issues
+### GitHub issues
 
 Bug reports, feature requests, and general feedback can be delivered to the Carbon team via the creation of a GitHub issue.
 
-#### Design Issues
+#### Design issues
 
 - [Design Kit](https://github.com/IBM/carbon-design-kit/issues/new)
 - [Icons](https://github.com/IBM/carbon-icons/issues/new)
@@ -52,7 +54,7 @@ Bug reports, feature requests, and general feedback can be delivered to the Carb
 - [Charts](https://github.com/IBM/carbon-charts/issues/new)
 - [Everything else](https://github.com/carbon-design-system/issue-tracking/issues/new)
 
-#### Code Issues
+#### Code issues
 
 - [carbon-components](https://github.com/IBM/carbon-components/issues/new/choose)
 - [carbon-components-react](https://github.com/IBM/carbon-components-react/issues/new/choose)

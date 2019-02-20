@@ -5,55 +5,51 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-| Class                            | Property | SCSS     |
-| -------------------------------- | -------- | -------- |
-| `.bx--loading__svg`              | stroke   | $ui-05   |
-| `.bx--inline-loading__checkmark` | stroke   | $ui-05   |
-| `.bx--inline-loading__text`      | color    | $text-01 |
-
-## Structure
-
-| Property  | px  | rem |
-| --------- | --- | --- |
-| Spinner   | 16  | 1   |
-| Checkmark | 16  | 1   |
-
-| Class                            | Property      | px / rem |
-| -------------------------------- | ------------- | -------- |
-| `.bx--inline-loading__animation` | width, height | 16 / 2   |
-
-<image-component fixed="default">
-
-![Inline Loading spinner structure measurements](images/inline-loading-style-1.png)
-
-</image-component>
-
-<image-component fixed="default">
-
-![Inline Loading States](images/inline-loading-style-2.png)
-
-</image-component>
-
-<image-component fixed="default" caption="Structure measurements for small and large loading spinner | px / rem">
-
-![Inline Loading spinner in context example](images/inline-loading-style-3.png)
-
-</image-component>
+| Class                            | Property | Color token  |
+| -------------------------------- | -------- | ------------ |
+| `.bx--loading__svg`              | stroke   | `$ui-03`     |
+| `.bx--inline-loading__checkmark` | color    | `$interactive-01`  |
+| `.bx--inline-loading__text`      | color    | `$text-01`   |
 
 ## Typography
 
 Button text should be set in sentence case, with only the first word in a phrase and any proper nouns capitalized.
 
-| Class                       | Font-size (px/rem) | Font-weight   | Type style       |
+| Class                       | Font-size (px/rem) | Font-weight   | Type token       |
 | --------------------------- | ------------------ | ------------- | ---------------- |
-| `.bx--inline-loading__text` | 14 / 0.875         | Regular / 400 | `.bx--type-zeta` |
+| `.bx--inline-loading__text` | 14 / 0.875         | Regular / 400 | `$body-short-01` |
+
+## Structure
+
+| Class                      | Property                    | px / rem   | Spacing token |
+| -------------------------- | --------------------------- | ---------- | ------------- |
+| Spinner                    | width, height               |  16 / 1    | –             |
+| Checkmark                  | width, height               |  16 / 1    | –             |
+
+<image-component fixed="default">
+
+![Inline loading spinner structure measurements](images/inline-loading-style-1.png)
+
+</image-component>
+
+<image-component fixed="default">
+
+![Inline loading states](images/inline-loading-style-2.png)
+
+</image-component>
+
+<image-component fixed="default" caption="Structure measurements for small and large loading spinner | px / rem">
+
+![Inline loading spinner in context example](images/inline-loading-style-3.png)
+
+</image-component>
 
 ### Placement
 
-The Inline Loading component should appear during any user action loading. If button is used to trigger the action, the Inline Loading component should replace that button.
+The inline loading component should appear during any user action loading. If button is used to trigger the action, the inline loading component should replace that button.
 
 <image-component fixed="default" caption="Example of a inline loading in product context">
 
-![Inline Loading spinner animated_in context example](images/inline-loading-animated.gif)
+![Inline loading spinner animated_in context example](images/inline-loading-animated.gif)
 
 </image-component>

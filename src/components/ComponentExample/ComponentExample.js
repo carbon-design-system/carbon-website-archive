@@ -344,9 +344,17 @@ class ComponentExample extends Component {
         <div className="component-toolbar">
           <div className="component-toolbar__current">Vanilla JS</div>
           <div className="component-toolbar__links">
-            {hasReactVersion === 'true' && (
+            {hasReactVersion === 'true' && experimental != 'true' && (
               <a
                 href={`http://react.carbondesignsystem.com/?selectedKind=${componentNameLink}`}
+                target="_blank"
+                rel="noopener noreferrer">
+                React <Launch16 />
+              </a>
+            )}
+            {hasReactVersion === 'true' && experimental === 'true' && (
+              <a
+                href={`http://react-experimental.carbondesignsystem.com/?selectedKind=${componentNameLink}`}
                 target="_blank"
                 rel="noopener noreferrer">
                 React <Launch16 />

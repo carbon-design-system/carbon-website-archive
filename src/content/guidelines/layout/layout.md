@@ -11,7 +11,7 @@ title: Layout
     href="https://github.com/ibm/carbon-design-kit"
     type="resource"
     >
-    <img src="images/sketch-icon.png" alt="Carbon Design Kit"/>
+    <img src="images/sketch-icon.png" alt=""/>
 </clickable-tile>
 </grid-wrapper>
 
@@ -29,9 +29,9 @@ title: Layout
 
 The _2x grid_ is the geometric foundation of all the visual elements of IBM Design, from typography to columns, boxes, icons, and illustrations. It provides structure and guidance to creative decision-making.
 
-## Mini Unit
+## Mini unit
 
-The basic unit of 2x grid geometry is the 8-pixel square _Mini Unit_. Multiples of Mini Units compose the dimensions of columns, rows, boxes, along with their margins and padding. The Mini Unit adapts to your content while maintaining a consistent visual rhythm.
+The basic unit of 2x grid geometry is the 8-pixel square _Mini unit_. Multiples of Mini Units compose the dimensions of columns, rows, boxes, along with their margins and padding. The Mini Unit adapts to your content while maintaining a consistent visual rhythm.
 
 At breakpoint boundaries, mini units divide the screen into a fixed master grid, and multiples of mini units map to fluid grid column widths and row heights. Fixed boxes are sized in mini units, as are the fixed dimension of hybrid boxes.
 
@@ -90,7 +90,7 @@ For dense content, use mini units for further alignment and spatial guidance.
 
 ### Margins
 
-The margins at the outer edge of the grid are always a fixed size within a breakpoint, even when columns are fluid. See [Breakpoints](#breakpoints) for a table of margin sizes.
+The margins at the outer edge of the grid are always a fixed size within a breakpoint, even when columns are fluid. See [breakpoints](#breakpoints) for a table of margin sizes.
 
 <image-component cols="12" >
 
@@ -132,7 +132,7 @@ Grid gutters can be absent as shown above, or present as shown below. Th margin 
 
 Use this set of standard breakpoints to maintain layout integrity across screen sizes. For best results, test designs and code at each of these standard breakpoints.
 
-Create **Custom Breakpoints** to accommodate special needs, by writing your own media queries and CSS rules. Refer to the [grid code package](https://github.com/IBM/carbon-elements/tree/master/packages/grid) for more information.
+Create custom breakpoints to accommodate special needs, by writing your own media queries and CSS rules. Refer to the [grid code package](https://github.com/IBM/carbon-elements/tree/master/packages/grid) for more information.
 
 | Breakpoint | Value (px/rem) | Columns | Size (%) | Size  | Padding | Margin |
 | ---------- | -------------- | ------- | -------- | ----- | ------- | ------ |
@@ -143,8 +143,6 @@ Create **Custom Breakpoints** to accommodate special needs, by writing your own 
 | Max        | 1584 / 99      | 16      | 6.25%    | 96 px | 16 px   | 24 px  |
 
 For best results, test designs and code at each of these standard breakpoints.
-
-Create **custom breakpoints** to accommodate special needs, by writing your own media queries and CSS rules. Refer to the grid code package for more information.
 
 `vimeo: https://vimeo.com/292015984`
 
@@ -177,7 +175,7 @@ At each breakpoint, column count is fixed and column width is a multiple of mini
 
 ### Fixed boxes
 
-A grid can be formed with fixed boxes by tiling cards in an inline block, icons in toolbars, etc. Column count grows with browser width. Tiles wrap to the next line, or are sometimes truncated with an overflow scroll.
+A grid can be formed with fixed boxes by arranging tiles in an inline block, icons in toolbars, etc. Column count grows with browser width. Tiles wrap to the next line, or are sometimes truncated with an overflow scroll.
 
 `vimeo: https://vimeo.com/292024183`
 
@@ -247,7 +245,7 @@ All vertical panels expand to fill the full height of the browser window.
 
 #### Flexible panels
 
-The Flexible panels allow for both collapsed and expanded states. The expanded state of a Flexible Panel is a fixed width that cannot be adjusted by the user. The collapsed Flexible Panel expands when the user hovers over any portion of it. When flexible panels expand, they either condense both the content and the grid or they push content beyond the edge of the browser.
+The flexible panels allow for both collapsed and expanded states. The expanded state of a flexible Panel is a fixed width that cannot be adjusted by the user. The collapsed Flexible Panel expands when the user hovers over any portion of it. When flexible panels expand, they either condense both the content and the grid or they push content beyond the edge of the browser.
 
 `vimeo: https://vimeo.com/292975726`
 
@@ -328,7 +326,7 @@ Choose an aspect ratio from the table, then multiply the base unit in each dimen
 
 For example, to size a fluid box with a 2:1 landscape aspect ratio, you could span 4 columns in width and 2 column-widths of height. To size a fixed box with the same aspect ratio, you could start with an 80 pixel base unit, then multiply it by 4 in width and 2 in height, for a fixed box size of 320 by 160.
 
-<image-component cols="12"  caption="Aspect ratios do not apply to Hybrid Boxes, since one dimension is fixed and the other is fluid.">
+<image-component cols="12"  caption="Aspect ratios do not apply to hybrid boxes, since one dimension is fixed and the other is fluid.">
 
 ![aspect ratio](images/Layout_overview_Aspect-ratio.svg)
 

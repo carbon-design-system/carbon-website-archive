@@ -18,7 +18,7 @@ tabs: ['Overview', 'Color', 'Keyboard', 'Developers']
 
 Carbon is committed to following and complying with best practices when it comes to accessibility. All Carbon components follow the [IBM Accessibility Checklist](https://www.ibm.com/able/guidelines/ci162/accessibility_checklist.html) which is based on WCAG AA, Section 508, and European standards. Carbon's patterns are perceivable, operable, and understandable to users, even when using a screen reader or other assistive technology.
 
-However, _how you use Carbon_ also affects the accessibility of a product. Read this page to learn about accessibility in general. Then, while you're working, use the role-specific Carbon accessibility guidelines to help you make products that anyone can use.
+However, how you use Carbon also affects the accessibility of a product. Read this page to learn about accessibility in general. Then, while you're working, use the role-specific Carbon accessibility guidelines to help you make products that anyone can use.
 
 For a product to be considered accessible, it should:
 

@@ -32,7 +32,6 @@ export default class ColorTokenTable extends React.Component {
 
   addScrollListener() {
     document.addEventListener('scroll', e => {
-      console.log(window.scrollY);
       let stickyPoint = this.state.mobile ? 436 : 450;
       if (window.scrollY >= stickyPoint) {
         this.setState({
@@ -156,11 +155,8 @@ export default class ColorTokenTable extends React.Component {
             onChange={this.switchTheme}>
             <Switch name="white" text={this.state.mobile ? 'Wte' : 'White'} />
             <Switch name="g10" text={this.state.mobile ? 'G10' : 'Gray 10'} />
-            <Switch
-              name="g100"
-              text={this.state.mobile ? 'G100' : 'Gray 100'}
-            />
             <Switch name="g90" text={this.state.mobile ? 'G90' : 'Gray 90'} />
+            <Switch name="g100" text={this.state.mobile ? 'G100' : 'Gray 100'} />
           </ContentSwitcher>
         </div>
         <div className="ibm--col-lg-7 ibm--offset-lg-4">

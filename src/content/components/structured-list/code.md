@@ -5,17 +5,19 @@ tabs: ['Code', 'Usage', 'Style']
 
 
 <component 
-    name="Structured List"
+    name="Structured list"
     component="structured-list" 
     variation="structured-list"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component 
-    name="Structured List with selection"
+    name="Structured list with selection"
     component="structured-list" 
     variation="structured-list--selection"
     experimental="true"
+    hasReactVersion="true"
     >
 </component>
 <component-docs component="structured-list" experimental="true"></component-docs>

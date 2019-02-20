@@ -12,7 +12,7 @@ tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
     href="https://codesandbox.io/s/x2mjypo6pp"
     type="resource"
      >
-    <img src="images/codesandbox.png" alt="CodeSandbox"/>
+    <img src="images/codesandbox.png" alt=""/>
 </clickable-tile>
 </grid-wrapper>
 
@@ -43,7 +43,8 @@ $ npm install --save carbon-components-react carbon-components carbon-icons
 ```
 
 ####If you prefer [Yarn](https://yarnpkg.com/en/):
-use the following command instead:
+
+<br>
 
 ```bash
 $ yarn add carbon-components-react carbon-components carbon-icons

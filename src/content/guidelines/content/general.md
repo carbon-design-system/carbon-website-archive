@@ -8,9 +8,13 @@ tabs: ['General', 'Guidance', 'Glossary']
 
 Consistent voice and tone are crucial for connecting and resonating with users. What's the difference between voice and tone? One way to think about it is that voice is always consistent, but tone often changes depending on context.
 
-**Voice** is the foundation for communicating about IBM products and delivering brand messages. At IBM, our voice expresses the core of our personality, while bringing comfort, ease, and a sense of connection to our users. Through careful use of the IBM voice, we help empower users to meet their business goals. 
+### Voice
 
-**Tone** conveys an attitude toward both the subject matter and the reader. All content – whether it's introductory text on the UI, an error message, or a topic in the docs – tells part of a bigger story. Good storytellers are skilled in two main areas: what they are saying (the substantive content) and how to say it to any given audience (the style and tone in which it is presented). Be a good storyteller.
+Voice is the foundation for communicating about IBM products and delivering brand messages. At IBM, our voice expresses the core of our personality, while bringing comfort, ease, and a sense of connection to our users. Through careful use of the IBM voice, we help empower users to meet their business goals. 
+
+### Tone
+
+Tone conveys an attitude toward both the subject matter and the reader. All content – whether it's introductory text on the UI, an error message, or a topic in the docs – tells part of a bigger story. Good storytellers are skilled in two main areas: what they are saying (the substantive content) and how to say it to any given audience (the style and tone in which it is presented). Be a good storyteller.
 
 ## Conversational levels
 
