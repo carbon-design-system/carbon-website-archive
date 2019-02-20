@@ -32,6 +32,12 @@
   background: $ui-05;
   cursor: pointer;
   z-index: 20;
+  background: $ui-05;
+  transition: background $transition--base;
+
+  &:hover {
+    background: #353535;
+  }
 
   &:focus {
     @include focus-outline;
