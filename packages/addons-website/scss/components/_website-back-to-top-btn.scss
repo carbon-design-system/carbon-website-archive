@@ -1,4 +1,6 @@
-.back-to-top {
+@import '../prefix';
+
+.#{$prefix}--back-to-top {
   width: rem(48px);
   height: rem(48px);
   border-radius: rem(24px);
