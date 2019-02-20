@@ -51,14 +51,14 @@ module.exports = {
       `,
         gatsbyRemarkPlugins: [
           { resolve: 'gatsby-remark-unwrap-images' },
-          /* {
+          {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 1120,
               linkImagesToOriginal: false,
               backgroundColor: 'transparent',
             },
-          },  */
+          },
           {
             resolve: 'gatsby-remark-embed-video',
             options: {
