@@ -168,11 +168,14 @@ The carbon website has a handful of custom markdown components available for use
 
 ### Global Components:
 
-#### Icon
-- `<icon name="icon--checkmark--solid" color="green" />`
-
 #### Clickable tile
-- `<ClickableTile label="Title" author="John Smith" date="Janury 1, 2018" href="#"><img src="image.png" alt="Alt Text" type="article|resource" /></ClickableTile>`
+```
+<ClickableTile label="Title" author="John Smith" date="Janury 1, 2018" href="#">
+
+![](images/image.png)
+
+</ClickableTile>
+```
 
 #### Do - Don't example: text
 
@@ -189,10 +192,14 @@ The carbon website has a handful of custom markdown components available for use
 ```
 <GridWrapper col_lg="8" flex="true">
     <DoDontExample correct="true" label="Do: center-align icons when they’re next to text.">
-        <img src="images/iconography-usage-sizing-5.svg" alt="proper alignment">    
+
+![](images/image.png)
+
     </DoDontExample>
     <DoDontExample label="Don't: baseline-align icons to the text.">
-        <img src="images/iconography-usage-sizing-6.svg" alt="improper alignment">    
+
+![](images/image.png)
+
     </DoDontExample>
 </GridWrapper>
 
@@ -204,10 +211,11 @@ The carbon website has a handful of custom markdown components available for use
   - leaving out these extra properties will default to no label, and a swatch size of 24px
 
 #### Color card
-- `<color-card name="$ui-01" hex="#ffffff" border="true" small="true"></color-card>`
+- `<ColorCard name="$ui-01" hex="#ffffff" border="true" small="true"></ColorCard>`
 
 #### Anchor links
 - `<AnchorLinks>`
+- `<AnchorLinks small>`
 
 #### Grid wrapper
 - `<GridWrapper col_lg="12" flex="true>`
@@ -215,8 +223,8 @@ The carbon website has a handful of custom markdown components available for use
   - `flex` Set to true to set display:flex | flexwrap: wrap to row
 
 #### Website tabs
-- `<website-tabs> … </website-tabs>`
-  - inside, place `<tab label="Tab Label"><div> [tab content] </div></tab>`
+- `<WebsiteTabs> … </WebsiteTabs>`
+  - inside, place `<Tab label="Tab Label"><div> [tab content] </div></Tab>`
 
 ### Examples
 
@@ -226,13 +234,13 @@ This is a wrapper component to display a list as an anchor link list
 
 ```
 <AnchorLinks>
-<ul>
-    <li><a href="#columns-and-rows">Columns and rows</a></li>
-    <li><a href="#margins">Margins</a></li>
-    <li><a href="#padding">Padding</a></li>
-    <li><a href="#gutters">Gutters</a></li>
-    <li><a href="#breakpoints">Breakpoints</a></li>
-</ul>
+
+- [General guidance ](#general-guidance)
+- [Variations](#variations)
+- [Labels](#labels) 
+- [Icon usage](#icon-usage)
+- [Danger button usage](#danger-button-usage)
+
 </AnchorLinks>
 ```
 
@@ -259,22 +267,20 @@ Properties
 ```
 
 <ClickableTile
-    title="Data Table updates in Carbon React v5.22.0"
-    author="Josh Black"
-    date="February 20, 2018"
-    type="article"
-    href="https://medium.com/carbondesign/data-table-updates-in-carbon-react-v5-22-0-6da0c24a96d6"
-    >
-    <img src="images/article-5.png" alt="Data Table updates in Carbon React v5.22.0" />
+    title="Add Carbon Design Kit to Sketch library"
+    href="sketch://add-library/cloud/JaVzz"
+    type="resource">
+
+![](images/sketch-icon.png)
+
 </ClickableTile>
 <ClickableTile
-    title="Data Table updates in Carbon React v5.22.0"
-    author="Josh Black"
-    date="February 20, 2018"
-    type="article"
-    href="https://medium.com/carbondesign/data-table-updates-in-carbon-react-v5-22-0-6da0c24a96d6"
-    >
-    <img src="images/article-5.png" alt="Data Table updates in Carbon React v5.22.0" />
+    title="Download Carbon Design Kit from GitHub"
+    href="https://github.com/IBM/carbon-design-kit"
+    type="resource">
+
+![](images/github-icon.png)
+
 </ClickableTile>
 
 ```
@@ -305,10 +311,14 @@ This will render the following group of clickable tiles
 ```
 <GridWrapper col_lg="8" flex="true">
     <DoDontExample correct="true" label='Image Test'>
-        <img src='images/img-test.png' />
+
+![](images/image.png)
+
     </DoDontExample>
     <DoDontExample label='Image Test' >
-        <img src='images/img-test.png' />
+
+![](images/image.png)
+
     </DoDontExample>
 </GridWrapper>
 ```
@@ -319,43 +329,43 @@ This will render the following set of examples:
 #### Website Tabs
 
 ```
-<website-tabs>
-<tab label="Tab 1"><div>
+<WebsiteTabs>
+<Tab label="Tab 1"><div>
 
 lorem ipsum dolor sit amet
 
-</div></tab>
-<tab label="Tab 2"><div>
+</div></Tab>
+<Tab label="Tab 2"><div>
 
 Content for second tab goes here.
 
-</div></tab>
-<tab label="Tab 3"><div>
+</div></Tab>
+<Tab label="Tab 3"><div>
 
 Content for third tab goes here.
 
-</div></tab>
-</website-tabs>
+</div></Tab>
+</WebsiteTabs>
 ```
 
-- Complete component block surrounded in `<website-tabs> … </website-tabs>`
+- Complete component block surrounded in `<WebsiteTabs> … </WebsiteTabs>`
 - Each tab element has a label property, which will be the displayed label of the tab
-  - `<tab label="Lorem">`
+  - `<Tab label="Lorem">`
 - Each Tab element also has a div wrapper inside of it, with no space between the div and tab
-  - `<tab label="Lorem"><div> … </div></tab>`
-- Because of the way Markdown processes files, an **empty line** is required to be the first bit of content inside of the `<tab><div>` stack, e.g.:
+  - `<Tab label="Lorem"><div> … </div></Tab>`
+- Because of the way Markdown processes files, an **empty line** is required to be the first bit of content inside of the `<Tab><div>` stack, e.g.:
 ```
-<website-tabs>
-<tab label="Tab 1"><div>
+<WebsiteTabs>
+<Tab label="Tab 1"><div>
 
 lorem ipsum dolor sit amet
 
-</div></tab>
-</website-tabs>
+</div></Tab>
+</WebsiteTabs>
 ```
-- note the empty line after `<tab label="Tab 1"><div>` and before the first line of content, in this case `lorem ipsum…`. **Verify that there are no whitespace characters in these empty lines**.
+- note the empty line after `<Tab label="Tab 1"><div>` and before the first line of content, in this case `lorem ipsum…`. **Verify that there are no whitespace characters in these empty lines**.
 - Do not indent interior components. 
-    - Unfortunately, this component is extra fragile when written inside of a markdown file, because we are passing `<tab>` components into the `<website-tabs>` component, and markdown can interfere when child components are indendented. 
+    - Unfortunately, this component is extra fragile when written inside of a markdown file, because we are passing `<Tab>` components into the `<WebsiteTabs>` component, and markdown can interfere when child components are indendented. 
 
 
 
@@ -363,32 +373,32 @@ lorem ipsum dolor sit amet
 
 **Type**
 
-- `<type-weight>`
-- `<type-weight type="italic">`
-- `<type-weight type="type">`
-- `<type-scale-table>`
-- `<type-spec>`
+- `<TypeWeight>`
+- `<TypeWeight type="italic">`
+- `<TypeWeight type="type">`
+- `<TypeScaleTable>`
+- `<TypeSpec>`
 
 **Glossary**
 
-- `<glossary>`
+- `<Glossary>`
 
 **Component Status** (content pulled from data/components.json)
 
-- `<component-status>`
+- `<ComponentStatus>`
 
 **Component Overview** (content pulled from data/components.json)
 
-- `<component-overview>`
+- `<ComponentOverview>`
 
 **Color Token Table** (content pulled from data/guidelines/color-tokens.js)
 
-- `<color-token-table>
+- `<ColorTokenTable>
 
 ## Component Page Components:
 
 ```
-<component
+<ComponentCode
     name="Text Input" //Required
     component="text-input" //Required
     variation="text-input" //Required
@@ -403,9 +413,10 @@ lorem ipsum dolor sit amet
 
 <ComponentDocs component="accordion"></ComponentDocs>
 
-<component-react
+<ComponentReact
     name="Multi-select Dropdown"
     component="MultiSelect"
     variation="MultiSelect"
     >
+</ComponentReact>
 ```
