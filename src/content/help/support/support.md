@@ -2,9 +2,11 @@
 title: Support
 ---
 
+
+## Questions
+
 The Carbon core team provides support for users of the design system. Find the use case below that most closely matches your own for the quickest response.
 
-## If you have questions
 
 ### Carbon website
 
@@ -32,7 +34,7 @@ Messages to <carbon@us.ibm.com> will be addressed by the Carbon technical team a
 
 The Carbon team can also be reached on Twitter: [@\_carbondesign](https://twitter.com/_carbondesign?lang=en)
 
-## If you have suggestions or contributions
+## Suggestions or contributions
 
 ### GitHub pull requests
 
