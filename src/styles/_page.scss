@@ -134,7 +134,8 @@ body {
     padding-bottom: 43% !important;
   }
 }
-.website-tabs .gatsby-resp-iframe-wrapper {
+.website-tabs .gatsby-resp-iframe-wrapper,
+.example .gatsby-resp-iframe-wrapper {
   @include breakpoint('lg') {
     margin-left: 0;
     padding-bottom: 56.543% !important;
