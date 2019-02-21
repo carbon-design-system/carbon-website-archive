@@ -3,7 +3,6 @@ import { Icon } from 'carbon-components-react';
 import { Location } from '@reach/router';
 import { Link } from 'gatsby';
 import { Link20 } from '@carbon/icons-react';
-import classnames from 'classnames';
 
 export class PageIcon extends React.Component {
   render() {
