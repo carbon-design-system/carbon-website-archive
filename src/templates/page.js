@@ -2,7 +2,7 @@ import '../polyfills';
 import React from 'react';
 import rehypeReact from 'rehype-react';
 import Layout from '../components/Layouts';
-import { FourOhFour } from '@carbon/addons-website';
+import { FourOhFour, WebsiteBackToTopBtn } from '@carbon/addons-website';
 
 import classnames from 'classnames';
 
@@ -28,7 +28,6 @@ import Glossary from '../components/Glossary';
 import ComponentOverview from '../components/ComponentOverview';
 import NextPrevious from '../components/NextPrevious';
 import GridWrapper from '../components/GridWrapper';
-import BackToTop from '../components/BackToTop';
 import {
   HomepageFooter,
   HomepageHeader,
@@ -123,7 +122,7 @@ export default ({ data }) => {
           </main>
           <HomepageFooter />
         </div>
-        <BackToTop />
+        <WebsiteBackToTopBtn />
       </Layout>
     );
   } else {
@@ -148,7 +147,7 @@ export default ({ data }) => {
           currentTabs={tabs}
           currentPage={currentPage}
         />
-        <BackToTop />
+        <WebsiteBackToTopBtn />
       </Layout>
     );
   }
