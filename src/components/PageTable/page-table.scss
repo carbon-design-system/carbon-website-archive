@@ -38,22 +38,12 @@
           font-weight: font-weight('semibold');
         }
 
-        @include breakpoint('md') {
-          &:last-child {
-            padding-right: 5rem;
-          }
-        }
-
         @include breakpoint('lg') {
           min-width: rem(100px);
         }
 
         @include breakpoint('xlg') {
           min-width: rem(150px);
-
-          &:last-child {
-            padding-right: 6rem;
-          }
         }
       }
     }
