@@ -43,7 +43,7 @@ There are three ways to obtain the kit; via Sketch shared library, via Box Drive
 
 ### Sketch shared library (preferred) 
 
-For timely updates, install the kit as Sketch shared library. _Note: this method requires Sketch version 53 or above._
+For timely updates, install the kit as Sketch shared library. _Note: Be sure you have the latest version of Sketch installed on your machine._
 
 <grid-wrapper col_lg="8" flex="true" bleed="true">
 <clickable-tile
