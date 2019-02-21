@@ -40,11 +40,13 @@ export default class Snippet extends React.Component {
     return (
       <div className="ibm--row">
         <div className="ibm--col-lg-8 ibm--offset-lg-4 ibm--col-bleed">
-          <CopyToClipboard onCopy={() => this.setState({ copied: true })}>
-            <CodeSnippet type={type} className="bx--snippet--website">
-              <div ref={element => (this.codeRef = element)}>{children}</div>
-            </CodeSnippet>
-          </CopyToClipboard>
+          <div className="bx--snippet--website">
+            <CopyToClipboard onCopy={() => this.setState({ copied: true })}>
+              <CodeSnippet type={type}>
+                <div ref={element => (this.codeRef = element)}>{children}</div>
+              </CodeSnippet>
+            </CopyToClipboard>
+          </div>
         </div>
       </div>
     );
