@@ -13,6 +13,7 @@ const baseConfig = {
     'prop-types',
     'classnames',
     'carbon-components',
+    'react-scroll-up',
   ],
   plugins: [
     nodeResolve({
@@ -70,6 +71,7 @@ module.exports = [
         react: 'React',
         'react-dom': 'ReactDOM',
         'prop-types': 'PropTypes',
+        'react-scroll-up': 'ScrollToTop',
       },
     },
   },
