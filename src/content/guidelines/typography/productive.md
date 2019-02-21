@@ -10,11 +10,13 @@ The Productive theme is for use in web-based product design at IBM. This theme i
 
 Type tokens are simply pre-set configurations of typographic elements (font-size, weight, line-height, etc) that are specifically calibrated for use in IBM product design. Selecting the appropriate type style is determined by layout or template structure. Layouts may have several levels of architecture or areas that require varying typographic hierarchies.
 
-## Productive type sets
+### Productive type sets
 
 Even though IBM Plex contains a wide range of scales, it’s important to use curated sets below for their specified purpose. For consistent, reliable performance across various screen sizes, do not use fluid type in components or in product UI. 
 
-### Supporting styles
+#### Supporting styles
+
+<br>
 
 <type-spec token="code-01" description="This is for inline code snippets and smaller code elements.">
 Type: IBM Plex Mono<br>
@@ -37,13 +39,6 @@ Line height: 16px / 1rem <br>
 Weight: 400 / Regular<br>
 Letter-spacing: .32px
 </type-spec>
-<type-spec token="caption-01" description="This is for captions or legal content in a layout — not for body copy.">
-Type: IBM Plex Sans<br>
-Size: 12px / .75rem<br>
-Line height: 16px / 1rem <br>
-Weight: 400 / Regular<br>
-Letter-spacing: .32px
-</type-spec>
 <type-spec token="helper-text-01" description="This is for explanatory helper text that appears below a field title within a component.">
 Type: IBM Plex Sans<br>
 Size: 12px / .75rem<br>
@@ -52,7 +47,9 @@ Weight: 400 / Italic<br>
 Letter-spacing: .32px
 </type-spec>
 
-### Body
+#### Body
+
+<br>
 
 <type-spec token="body-short-01" description="This is for short paragraphs with no more than four lines and is commonly used in components.">
 Type: IBM Plex Sans<br>
@@ -83,7 +80,9 @@ Weight: 400 / Regular<br>
 Letter-spacing: 0
 </type-spec>
 
-### Headings
+#### Headings
+
+<br>
 
 <type-spec token="heading-01" description="This is for component and layout headings.">
 Type: IBM Plex Sans<br>
