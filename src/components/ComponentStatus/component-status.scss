@@ -1,118 +1,19 @@
-.component-status-page {
-  .page-table {
-    width: calc(100% + 2rem);
-  }
-
-  .inline-tag {
-    margin-left: rem(8px);
-  }
+.component-status .bx--tag {
+  white-space: nowrap;
 }
 
-.component-status {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 2rem;
-  width: 100%;
-  max-width: 45rem;
+.component-status .page-table td {
+  padding: $spacing-sm 0;
+}
 
-  &__icon-list {
-    display: flex;
-    align-items: flex-start;
-    padding-left: 0;
-    margin-left: 0 !important;
-    flex-direction: column;
-    white-space: nowrap;
+.component-status__key {
+  margin-top: rem(80px);
+}
 
-    @include breakpoint('md') {
-      flex-direction: row;
-      align-items: center;
-    }
+.component-status__key .page-h4 {
+  margin-bottom: 1.5rem;
+}
 
-    li {
-      display: flex;
-      align-items: center;
-      margin: 0 1rem 0.25rem;
-      margin-left: 0;
-
-      @include breakpoint('md') {
-        margin-left: 1rem;
-        margin-bottom: 0;
-      }
-
-      &:first-child {
-        margin-left: 0;
-      }
-
-      p {
-        margin-left: 0.35rem;
-        padding-bottom: 0;
-      }
-    }
-  }
-
-  &__dropdown {
-    width: 4rem;
-
-    .bx--dropdown__menu-text {
-      padding: 0.5rem;
-    }
-
-    .bx--dropdown__arrow {
-      top: 0.75rem;
-      right: 0.6rem;
-    }
-
-    .bx--dropdown__list {
-      @include layer('overlay');
-    }
-
-    .bx--dropdown__list-item {
-      background-color: $ibm-colors__white;
-    }
-
-    .bx--dropdown__link {
-      padding: 0.5rem;
-    }
-
-    &:focus {
-      outline: none;
-    }
-  }
-
-  &__icon {
-    width: rem(16px);
-    height: rem(16px);
-    display: flex;
-    border-radius: 50%;
-    color: $ibm-colors__white;
-    width: 100%;
-
-    &.under-review {
-      fill: $ibm-colors__white;
-
-      span {
-        font-size: 0.675rem;
-      }
-    }
-
-    &.not-applicable {
-      background-color: transparent;
-      color: #cdd1d4;
-
-      span {
-        font-size: 1.5rem;
-      }
-    }
-  }
-
-  &__description {
-    table tbody tr td:first-child {
-      font-weight: 400 !important;
-    }
-
-    h2 {
-      margin-top: 5rem !important;
-    }
-  }
+.component-status--unavailable {
+  padding-left: $spacing-sm;
 }
