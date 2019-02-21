@@ -4,16 +4,13 @@ import { graphql } from 'gatsby';
 import MDXRenderer from 'gatsby-mdx/mdx-renderer';
 
 import Layout from '../components/Layouts';
-import { FourOhFour } from '@carbon/addons-website';
-
-import classnames from 'classnames';
+import { FourOhFour, WebsiteBackToTopBtn } from '@carbon/addons-website';
 
 // Components
-import FeatureTile from '../components/FeatureTile';
 import PageHeader from '../components/PageHeader';
 import PageTabs from '../components/PageTabs';
 import NextPrevious from '../components/NextPrevious';
-import BackToTop from '../components/BackToTop';
+
 import {
   HomepageFooter,
   HomepageHeader,
@@ -50,7 +47,7 @@ export default ({ data }) => {
           </main>
           <HomepageFooter />
         </div>
-        <BackToTop />
+        <WebsiteBackToTopBtn />
       </Layout>
     );
   } else {
@@ -75,7 +72,7 @@ export default ({ data }) => {
           currentTabs={tabs}
           currentPage={currentPage}
         />
-        <BackToTop />
+        <WebsiteBackToTopBtn />
       </Layout>
     );
   }
