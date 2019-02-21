@@ -6,11 +6,13 @@ tabs: ['Overview', 'Productive']
 
 ## IBM Productive theme
 
-The _Productive_ theme is for use in web-based product design at IBM. This theme introduces the new IBM Design Language tokens. Please switch to the new tokens wherever possible.
+The Productive theme is for use in web-based product design at IBM. This theme introduces the new IBM Design Language tokens. Please switch to the new tokens wherever possible.
+
+Type tokens are simply pre-set configurations of typographic elements (font-size, weight, line-height, etc) that are specifically calibrated for use in IBM product design. Selecting the appropriate type style is determined by layout or template structure. Layouts may have several levels of architecture or areas that require varying typographic hierarchies.
 
 ## Productive type sets
 
-Even though IBM Plex contains a wide range of scales, it’s important to use a curated type set. For a clear and focused reading experience, consider content needs and how type works across various screen sizes.
+Even though IBM Plex contains a wide range of scales, it’s important to use curated sets below for their specified purpose. For consistent, reliable performance across various screen sizes, do not use fluid type in components or in product UI. 
 
 ### Supporting styles
 
@@ -97,7 +99,7 @@ Line height: 22px / 1.375rem <br>
 Weight: 600 / Semi-bold<br>
 Letter-spacing: 0px
 </type-spec>
-<type-spec token="expressive-heading-03" description="This is for component and layout headings.">
+<type-spec token="productive-heading-03" description="This is for component and layout headings.">
 Type: IBM Plex Sans<br>
 Size: 20px / 1.25rem<br>
 Line height: 26px / 1.625rem <br>
