@@ -9,17 +9,19 @@ export default class PageTable extends React.Component {
 
   render() {
     const { children } = this.props;
+    let gridSize;
+    if (Array.isArray(children[1].props.children)) {
+      gridSize = children[1].props.children[0].props.children.length;
+    } else {
+      gridSize = children[1].props.children.props.children.length;
+    }
 
-    let gridSize =
-      children[1].props.children[0].props.children.length > 3
-        ? 'ibm--col-lg-12'
-        : 'ibm--col-lg-8 ibm--col-md-6';
-
-    const classNames = classnames(
-      gridSize,
-      'ibm--offset-lg-4 ibm--col-bleed',
-      'page-table__container'
-    );
+    const classNames = classnames({
+      'ibm--col-lg-8 ibm--col-md-6': gridSize < 4,
+      'ibm--col-lg-12': gridSize > 3,
+      'ibm--offset-lg-4 ibm--col-bleed': true,
+      'page-table__container': true,
+    });
 
     return (
       <div className="ibm--row">
