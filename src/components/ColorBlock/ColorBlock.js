@@ -8,7 +8,7 @@ export default class ColorBlock extends React.Component {
     /**
      * should the hex be displayed? this will also prescribe a particular layout
      */
-    showhex: PropTypes.string,
+    showhex: PropTypes.bool,
     /**
      * `size` will pre-defined names sizes ('s'/'m'/'l') or a number that represents a value in pixels
      */
