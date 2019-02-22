@@ -11,7 +11,7 @@ import {
   SideNavItems,
   SideNavLink,
 } from 'carbon-components-react/lib/components/UIShell';
-import { Awake16 } from '@carbon/icons-react';
+
 import { Launch16 } from '@carbon/icons-react';
 
 export default class LeftNav extends React.Component {

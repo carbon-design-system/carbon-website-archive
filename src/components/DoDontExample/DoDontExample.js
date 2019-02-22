@@ -16,11 +16,11 @@ export default class DoDontExample extends React.Component {
     /** path to the image displayed in the example card, starting under `src` folder. e.g.: `content/guidelines/content/img-test.svg` */
     imgpath: PropTypes.string,
     /** mark card as true? if not defined, card will be marked as false */
-    correct: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+    correct: PropTypes.bool,
     /** default to false, set to true for dark background */
     dark: PropTypes.string,
     /** default to false, set true to have a full-width example card */
-    full_width: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+    full_width: PropTypes.bool,
   };
 
   renderCaption = (label, description) => {
@@ -60,7 +60,6 @@ export default class DoDontExample extends React.Component {
       'example__icon--correct': correct,
       'example__icon--incorrect': !correct,
     });
-
     return (
       <div className={wrapperClassNames}>
         <div className="example-card">
