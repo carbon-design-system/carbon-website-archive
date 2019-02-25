@@ -18,6 +18,10 @@ The basic data table is shipped with a base style, which includes:
 
 _Basic data table_
 
+### Horizontal alignment of columns
+
+All text within columns should be left-aligned, including headers. Variable numerical values (e.g. prices, percentages, etc.) and their column headers should be right-aligned. Some numbers, such as port numbers, are left-aligned, as they represent discrete values that remain consistent over time.
+
 ## Additonal functionality
 
 The following can be added to the data table to increase its functionality.
