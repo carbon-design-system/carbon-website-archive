@@ -201,17 +201,8 @@ img[src*='gif'] {
     color: $text-01;
     display: block;
 
-    @include breakpoint('lg') {
-      padding-right: 35%;
-    }
-
-    @include breakpoint('lg') {
-      padding-right: 44%;
-    }
-
     &:first-child {
       padding-top: $spacing-xs;
-      // margin-top: -4rem; //needed because of default image spacing
     }
   }
 }
