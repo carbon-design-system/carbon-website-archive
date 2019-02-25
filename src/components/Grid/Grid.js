@@ -72,13 +72,17 @@ export class Column extends React.Component {
      */
     bleedLg: PropTypes.boolean,
     /**
-     * Specify a column bleed class
+     * Specify a column bleed class at small breakpoint
      */
-    bleedLeft: PropTypes.boolean,
+    bleedLeftSm: PropTypes.boolean,
     /**
-     * Specify a column bleed class
+     * Specify a column bleed class at medium breakpoint
      */
-    bleedRight: PropTypes.boolean,
+    bleedLeftMd: PropTypes.boolean,
+    /**
+     * Specify a column bleed class at large breakpoint
+     */
+    bleedLeftLg: PropTypes.boolean,
     /**
      * Specify a class name for column
      */
