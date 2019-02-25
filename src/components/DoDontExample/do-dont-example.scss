@@ -157,14 +157,30 @@ p.example__description {
   position: relative;
 }
 
+.ibm--col-lg-12 > .example--full-width .example__caption {
+  width: 100%;
+
+  @include breakpoint('md') {
+    width: 75%;
+  }
+
+  @include breakpoint('xlg') {
+    width: 50%;
+  }
+}
+
 .example--full-width .example__caption {
   @include breakpoint('sm') {
     width: 100%;
   }
 
   @include breakpoint('md') {
-    width: calc(50% - 16px);
+    width: 75%;
   }
+
+  // @include breakpoint('xlg') {
+  //   width: 70%;
+  // }
 }
 
 .example span.gatsby-resp-image-wrapper {
