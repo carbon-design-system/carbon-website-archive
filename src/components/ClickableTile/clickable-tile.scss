@@ -8,36 +8,8 @@ a.tile--article {
   justify-content: space-between;
   padding: 0;
   background: $ibm-colors__white;
-  margin: 1rem;
-
-  // full bleed for tiles on mobile
-  @include breakpoint('sm') {
-    width: calc(100% - 2rem);
-  }
-
-  @include breakpoint('md') {
-    width: calc(50% - .5rem);
-    margin-left: 0;
-    margin-bottom: 0;
-
-    &:nth-child(even) {
-      margin-right: 0;
-    }
-  }
-
-  @include breakpoint('lg') {
-    width: calc(33% - .51rem);
-    margin-right: 1rem;
-
-    &:nth-child(even) {
-      margin-right: 1rem;
-    }
-
-    &:last-child,
-    &:nth-child(3n + 3) {
-      margin-right: 0;
-    }
-  }
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
 a.tile--article.tile--dark {
@@ -106,7 +78,7 @@ a.tile--article.tile--dark:hover {
   }
 
   @include breakpoint('md') {
-    width: calc(50% - 1px);
+    width: 100%;
     margin: 0;
     margin-bottom: rem(24px);
   }
@@ -203,39 +175,45 @@ a.tile--article.tile--dark:hover {
 }
 
 // Grouped tiles
-.flex-wrap {
-  .tile--resource {
-    @include breakpoint('sm') {
-      border-bottom: 1px solid $ibm-colors__gray-20;
+.tile--group > div .tile--resource {
+  @include breakpoint('sm') {
+    border-bottom: 1px solid $ibm-colors__gray-20;
 
-      &.tile--dark {
-        border-bottom-color: $ibm-colors__black;
-      }
-    }
-
-    @include breakpoint('md') {
-      border: 1px solid transparent;
-      border-bottom: none;
-      border-right: none;
-
-      &:nth-child(2n + 2) {
-        border-left: 1px solid $ibm-colors__gray-20;
-
-        &.tile--dark {
-          border-left-color: $ibm-colors__black;
-        }
-      }
-
-      &:nth-child(n + 3) {
-        border-top: 1px solid $ibm-colors__gray-20;
-
-        &.tile--dark {
-          border-top-color: $ibm-colors__black;
-        }
-      }
+    &.tile--dark {
+      border-bottom-color: $ibm-colors__black;
     }
   }
 
+  @include breakpoint('md') {
+    border-bottom: none;
+  }
+}
+
+.tile--group > div:nth-child(2n + 2) {
+  @include breakpoint('md') {
+    .tile--resource {
+      border-left: 1px solid $ibm-colors__gray-20;
+
+      &.tile--dark {
+        border-left-color: $ibm-colors__black;
+      }
+    }
+  }
+}
+
+.tile--group > div:nth-child(n + 3) {
+  @include breakpoint('md') {
+    .tile--resource {
+      border-top: 1px solid $ibm-colors__gray-20;
+
+      &.tile--dark {
+        border-top-color: $ibm-colors__black;
+      }
+    }
+  }
+}
+
+.tile--group {
   a.tile--article.tile--dark {
     border-color: $ibm-colors__black;
   }
@@ -248,5 +226,3 @@ a.tile--article .tile__caption p {
 a.tile--article.tile--dark .tile__caption p {
   color: #bebebe;
 }
-
-

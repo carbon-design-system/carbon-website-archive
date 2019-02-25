@@ -32,6 +32,7 @@ module.exports = {
         import WebsiteTabs from '${__dirname}/src/components/WebsiteTabs';
         import SimpleColumns from '${__dirname}/src/components/SimpleColumns';
         import Video from '${__dirname}/src/components/Video';
+        import { Row, Column } from '${__dirname}/src/components/Grid/Grid';
 
         export default {
           AnchorLinks,
@@ -47,6 +48,8 @@ module.exports = {
           ComponentReact,
           ColorBlock,
           Video,
+          Row,
+          Column
         };
       `,
         gatsbyRemarkPlugins: [
