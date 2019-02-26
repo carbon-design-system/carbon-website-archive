@@ -403,10 +403,10 @@ lorem ipsum dolor sit amet
     component="text-input" //Required
     variation="text-input" //Required
     codepen="YEZLyd" //Optional - Adds link to codepen
-    hasLightVersion //Optional -If true shows the light/white background switcher
-    hasReactVersion //Optional -If true links to react storybook
-    hasAngularVersion //Optional -If true links to angular storkbook
-    experimental //Optional -If true loads experimental version/styles
+    hasLightVersion //Optional - shows the light/white background switcher
+    hasReactVersion //Optional -links to react storybook
+    hasAngularVersion //Optional -links to angular storkbook
+    experimental //Optional -loads experimental version/styles
     >
 </ComponentCode>
 
