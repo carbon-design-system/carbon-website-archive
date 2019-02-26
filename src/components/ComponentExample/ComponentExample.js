@@ -95,10 +95,9 @@ class ComponentExample extends Component {
     hideViewFullRender: PropTypes.bool,
     codepenSlug: PropTypes.string,
     hasLightVersion: PropTypes.string,
-    hasReactVersion: PropTypes.string,
-    hasAngularVersion: PropTypes.string,
-    hasLightBackground: PropTypes.string,
-    experimental: PropTypes.string,
+    hasReactVersion: PropTypes.bool,
+    hasAngularVersion: PropTypes.bool,
+    experimental: PropTypes.bool,
   };
 
   static _initHandles = new WeakMap();
@@ -274,7 +273,6 @@ class ComponentExample extends Component {
       hasLightVersion,
       hasReactVersion,
       hasAngularVersion,
-      hasLightBackground,
       experimental,
     } = this.props;
 
@@ -319,9 +317,8 @@ class ComponentExample extends Component {
       `component-example__live--${component}`,
       {
         'component-example__live--light':
-          (currentFieldColor === 'field-02') & (hasLightVersion === 'true') ||
-          hasLightBackground === 'true',
-        'carbon-demo-v9': experimental != 'true',
+          (currentFieldColor === 'field-02') & (hasLightVersion === true),
+        'carbon-demo-v9': experimental != true,
       }
     );
 
@@ -344,7 +341,7 @@ class ComponentExample extends Component {
         <div className="component-toolbar">
           <div className="component-toolbar__current">Vanilla JS</div>
           <div className="component-toolbar__links">
-            {hasReactVersion === 'true' && experimental != 'true' && (
+            {hasReactVersion === true && experimental != true && (
               <a
                 href={`http://react.carbondesignsystem.com/?selectedKind=${componentNameLink}`}
                 target="_blank"
@@ -352,7 +349,7 @@ class ComponentExample extends Component {
                 React <Launch16 />
               </a>
             )}
-            {hasReactVersion === 'true' && experimental === 'true' && (
+            {hasReactVersion === true && experimental === true && (
               <a
                 href={`http://react-experimental.carbondesignsystem.com/?selectedKind=${componentNameLink}`}
                 target="_blank"
@@ -360,7 +357,7 @@ class ComponentExample extends Component {
                 React <Launch16 />
               </a>
             )}
-            {hasAngularVersion === 'true' && (
+            {hasAngularVersion === true && (
               <a
                 href={`http://angular.carbondesignsystem.com/?selectedKind=${componentNameLink}`}
                 target="_blank"
@@ -374,7 +371,7 @@ class ComponentExample extends Component {
               </a>
             )}
           </div>
-          {hasLightVersion === 'true' && (
+          {hasLightVersion === true && (
             <div className="component-toolbar__switcher">
               <RadioButtonGroup
                 defaultSelected={currentFieldColor}
