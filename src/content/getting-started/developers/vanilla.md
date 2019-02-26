@@ -41,7 +41,7 @@ carbon-components/
 │   └── index.js
 ├── es
 │   └── index.js
-└── src
+└── src (Deprecated and subject to breaking changes, please use es/umd/scss instead)
 ```
 
 ### CDN
