@@ -53,3 +53,13 @@ The _success_ state indicates that the action completed successfully.
 
 </image-component>
 
+#### Error
+
+The _error_ state indicates that the action did not complete successfully.
+
+<image-component cols="8">
+
+![Example of loading error](images/inline-loading-usage-3.png)
+
+</image-component>
+
