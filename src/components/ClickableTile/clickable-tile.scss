@@ -185,6 +185,8 @@ a.tile--article.tile--dark:hover {
   }
 
   @include breakpoint('md') {
+    border: 1px solid transparent;
+    border-right: none;
     border-bottom: none;
   }
 }
