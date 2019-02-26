@@ -147,26 +147,13 @@ We support inline code and code blocks.
 
 The carbon website has a handful of custom markdown components available for use inside any markdown file. Some are meant to be global and others were created for very specific use cases.
 
+### Global Components:
+
 ### Video
 
 ```
-  `video: https://www.youtube.com/embed/2Xc9gXyf2G4`
-  `youtube: https://www.youtube.com/watch?v=2Xc9gXyf2G4`
-  `youtube: 2Xc9gXyf2G4`
-
-  `vimeo: https://vimeo.com/5299404`
-  `vimeo: 5299404`
-
-  `videoPress: https://videopress.com/v/kUJmAcSf`
-  `videoPress: kUJmAcSf`
-
-  `twitch: https://player.twitch.tv/?channel=dakotaz`
-  `twitch: https://player.twitch.tv/?autoplay=false&video=v273436948`
-  `twitch: 273436948`
-  `twitchLive: dakotaz`
+<Video vimeoId="292608020" />
 ```
-
-### Global Components:
 
 #### Clickable tile
 ```
@@ -205,13 +192,11 @@ The carbon website has a handful of custom markdown components available for use
 
 ```
 #### Color block
-- `<ColorBlock showhex="true" size="xs">#ffaaaa</ColorBlock>`
+- `<ColorBlock showhex size="xs">#ffaaaa</ColorBlock>`
+  - `showHex` displays the hex value next to the color block
   - `size` takes values of `xs`, `s`, `m`, `l` (12px, 24px, 40px, 80px respectively)
   - `size` also accepts a number (e.g. `size="200"`, which would render a square that is 200px x 200px)
   - leaving out these extra properties will default to no label, and a swatch size of 24px
-
-#### Color card
-- `<ColorCard name="$ui-01" hex="#ffffff" border="true" small="true"></ColorCard>`
 
 #### Anchor links
 - `<AnchorLinks>`
