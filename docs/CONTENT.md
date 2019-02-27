@@ -34,7 +34,6 @@ The top of each markdown file has required frontmatter fields to display the hea
 
 ```
 ---
-label: Optional paragraph of text at the top of a page (Used only in Guidelines pages)
 title: Page title
 tabs: ['Tab 1', 'Tab 2', 'Tab 3'']
 internal: true
