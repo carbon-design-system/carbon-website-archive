@@ -1,5 +1,5 @@
 ---
-title: Bar Graph
+title: Bar graph
 tabs: ['Code', 'Usage', 'Style']
 ---
 
