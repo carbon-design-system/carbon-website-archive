@@ -8,7 +8,7 @@ storiesOf('Website Footer', module).add(
     <WebsiteFooter
       logoOffset={true}
       linksCol1={[
-        { href: '/contributing/designers/governance', linkText: 'Contribute' },
+        { href: '/contributing/governance', linkText: 'Contribute' },
         { href: 'https://www.ibm.com/privacy', linkText: 'Privacy' },
         { href: 'https://www.ibm.com/legal', linkText: 'Terms of Use' },
         { href: 'https://www.ibm.com', linkText: 'IBM.com' },
