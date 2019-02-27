@@ -25,7 +25,7 @@ class Footer extends Component {
   };
 
   render() {
-    const lastUpdated = 'November 26, 2018';
+    const lastUpdated = 'February 27, 2019';
     /*
     Halloween Icon
     const halloween = (
