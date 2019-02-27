@@ -30,6 +30,7 @@
 .page-h2,
 .component-docs h2,
 .icon-h2 {
+  @include carbon--type-style('expressive-heading-04', true);
   position: relative;
   color: $text-01;
   margin-top: rem(48px);
@@ -47,7 +48,7 @@
 
 .page-h3,
 .component-docs h3 {
-  @include carbon--type-style('expressive-heading-03');
+  @include carbon--type-style('expressive-heading-03', true);
   color: $text-01;
   margin-top: rem(24px);
   margin-bottom: $spacing-md;
@@ -258,7 +259,7 @@
   }
 
   .page-ul > li {
-    @include carbon--type-style('expressive-heading-03');
+    @include carbon--type-style('expressive-heading-03', true);
     width: auto;
     list-style: none;
     padding-left: 0;
@@ -270,7 +271,7 @@
     }
 
     a {
-      @include carbon--type-style('expressive-heading-03');
+      @include carbon--type-style('expressive-heading-03', true);
       position: relative;
       display: inline-block;
       transition: color $transition--base;

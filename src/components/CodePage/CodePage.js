@@ -66,9 +66,7 @@ class CodePage extends Component {
 
     return (
       <div key={variation} className="component-variation">
-        <h2 className="component-variation__name bx--type-expressive-heading-04">
-          {title}
-        </h2>
+        <h2 className="component-variation__name">{title}</h2>
         <ComponentExample
           codepenSlug={currentCodepenSlug}
           variation={variation}
@@ -84,9 +82,7 @@ class CodePage extends Component {
   renderReactComponent = (parent, variation, title) => {
     return (
       <div key={variation} className="component-variation">
-        <h2 className="component-variation__name bx--type-expressive-heading-04">
-          {title}
-        </h2>
+        <h2 className="component-variation__name">{title}</h2>
         <p>
           This component is currently only available in{' '}
           <a
