@@ -108,7 +108,6 @@ a.tile--article.tile--dark:hover {
   @include breakpoint('md') {
     width: calc(50% - 1px);
     margin: 0;
-    margin-bottom: rem(24px);
   }
 }
 
