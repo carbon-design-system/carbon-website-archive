@@ -56,9 +56,7 @@ class ComponentStatus extends React.Component {
     return (
       <div className="ibm--row component-status">
         <div className="ibm--col-lg-12 ibm--offset-lg-4">
-          <h2 className="page-h2 bx--type-expressive-heading-04">
-            Current version: {vanillaVersion}
-          </h2>
+          <h2 className="page-h2">Current version: {vanillaVersion}</h2>
         </div>
         <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
           <table className="page-table">
