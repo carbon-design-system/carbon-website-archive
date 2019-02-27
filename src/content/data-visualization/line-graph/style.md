@@ -1,9 +1,9 @@
 ---
-title: Line Graph
+title: Line graph
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-Refer to the style tab on the [Data Vis overview page](/data-visualization/overview/style) for base graph style specifications.
+Refer to the style tab on the [Data vis overview page](/data-visualization/overview/style) for base graph style specifications.
 
 ## Structure
 

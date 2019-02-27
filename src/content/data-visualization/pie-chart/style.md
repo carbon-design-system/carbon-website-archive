@@ -1,19 +1,19 @@
 ---
-title: Pie Chart
+title: Pie chart
 tabs: ['Code', 'Usage', 'Style']
 ---
 
 ## Color
 
-Refer to the style tab on the [Data Vis overview page](/data-visualization/overview/style) for base graph style specifications.
+Refer to the style tab on the [Data vis overview page](/data-visualization/overview/style) for base graph style specifications.
 
 | Attribute     | SCSS      | HEX     |
 | ------------- | --------- | ------- |
 | Data Value    | \$text-01 | #152935 |
 | Data Variable | \$text-02 | #5a6872 |
 
-![Pie Chart hover example](images/style-pie-chart-1.png)
-_Example of a Pie Chart section, hovered_
+![Pie chart hover example](images/style-pie-chart-1.png)
+_Example of a Pie chart section, hovered_
 
 ## Typography
 
@@ -30,5 +30,5 @@ _Example of a Pie Chart section, hovered_
 | Chart Thickness               | 30  | 1.875 |
 | Spacing: data representations | 2   | -     |
 
-![Pie Chart example](images/style-pie-chart.png)
-_Example of a Pie Chart | px/rem_
+![Pie chart example](images/style-pie-chart.png)
+_Example of a Pie chart | px/rem_
