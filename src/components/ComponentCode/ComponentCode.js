@@ -10,11 +10,10 @@ export default class ComponentCode extends React.Component {
     variation: PropTypes.string,
     codepen: PropTypes.string,
     background: PropTypes.string,
-    haslightversion: PropTypes.string,
-    hasreactversion: PropTypes.string,
-    hasangularversion: PropTypes.string,
-    haslightbackground: PropTypes.string,
-    experimental: PropTypes.string,
+    hasLightVersion: PropTypes.bool,
+    hasReactVersion: PropTypes.bool,
+    hasAngularVersion: PropTypes.bool,
+    experimental: PropTypes.bool,
   };
 
   render() {
@@ -22,10 +21,9 @@ export default class ComponentCode extends React.Component {
       component,
       name,
       codepen,
-      haslightbackground,
-      haslightversion,
-      hasreactversion,
-      hasangularversion,
+      hasLightVersion,
+      hasReactVersion,
+      hasAngularVersion,
       variation,
       experimental,
     } = this.props;
@@ -44,7 +42,7 @@ export default class ComponentCode extends React.Component {
       <>
         <div className="ibm--row">
           <div className="ibm--col-lg-12 ibm--offset-lg-4">
-            <h2 className="page-h2 bx--type-expressive-heading-04">{name}</h2>
+            <h2 className="page-h2">{name}</h2>
           </div>
         </div>
 
@@ -56,10 +54,9 @@ export default class ComponentCode extends React.Component {
               variation={variation}
               htmlFile={htmlFile}
               hideViewFullRender={this.props.hideViewFullRender}
-              hasLightVersion={haslightversion}
-              hasReactVersion={hasreactversion}
-              hasAngularVersion={hasangularversion}
-              hasLightBackground={haslightbackground}
+              hasLightVersion={hasLightVersion}
+              hasReactVersion={hasReactVersion}
+              hasAngularVersion={hasAngularVersion}
               experimental={experimental}
             />
           </div>
