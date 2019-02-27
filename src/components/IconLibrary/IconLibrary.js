@@ -220,9 +220,7 @@ function createIconSections(icons, filteredIcons) {
     .map(size => (
       <section key={size} className="icon-size">
         <header>
-          <h2 className="icon-h2 bx--type-expressive-heading-04">
-            {isNaN(size) ? size : `${size}x${size}`}
-          </h2>
+          <h2 className="icon-h2">{isNaN(size) ? size : `${size}x${size}`}</h2>
         </header>
         <div className="icon-container">
           {groups[size]
@@ -245,8 +243,7 @@ function renderIcon(icon) {
       <h5 className="icon__card-title" title={icon.friendlyName}>
         {icon.friendlyName}
       </h5>
-      <span className="icon__card-details" title={icon.name}>
-      </span>
+      <span className="icon__card-details" title={icon.name} />
     </div>
   );
 }
