@@ -30,7 +30,7 @@
 }
 
 .target-page-name {
-  @include carbon--type-style('expressive-heading-03');
+  @include carbon--type-style('expressive-heading-03', true);
   display: block;
   max-width: rem(275px);
 }
