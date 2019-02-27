@@ -10,15 +10,15 @@ export default class ComponentDocs extends React.Component {
   render() {
     const { component, experimental } = this.props;
 
-   /*  let componentDocUrl = '';
-    if (experimental === 'true') {
+    let componentDocUrl = '';
+    if (experimental === true) {
       try {
         componentDocUrl = require(`carbon-components/src/components/${component}/experimental.md`);
       } catch (err) {}
     }
     if (!componentDocUrl) {
       componentDocUrl = require(`carbon-components/src/components/${component}/README.md`);
-    } */
+    }
 
     return (
       <div className="page_md component-docs ibm--row">
@@ -26,11 +26,13 @@ export default class ComponentDocs extends React.Component {
           <h2 className="page-h2 bx--type-expressive-heading-04">
             Documentation
           </h2>
-          {/* <div
-            dangerouslySetInnerHTML={{
-              __html: componentDocUrl,
-            }}
-          /> */}
+          {
+            <div
+              dangerouslySetInnerHTML={{
+                __html: componentDocUrl,
+              }}
+            />
+          }
         </div>
       </div>
     );
