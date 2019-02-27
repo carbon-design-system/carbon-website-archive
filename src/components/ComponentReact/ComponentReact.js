@@ -90,13 +90,14 @@ class ComponentReactExample extends Component {
       'MultiSelect-MultiSelect.Filterable': '',
       'MultiSelect-MultiSelect.Inline': '',
     }[`${component}-${variation || 'default'}`];
-    const componentLink = `http://react.carbondesignsystem.com/?selectedKind=${component}&selectedStory=${storybookVariation || 'default'}`;
+    const componentLink = `http://react.carbondesignsystem.com/?selectedKind=${component}&selectedStory=${storybookVariation ||
+      'default'}`;
 
     return (
       <>
         <div className="ibm--row">
           <div className="ibm--col-lg-12 ibm--offset-lg-4">
-            <h2 className="page-h2 bx--type-expressive-heading-04">{name}</h2>
+            <h2 className="page-h2">{name}</h2>
             <p className="component-example__heading-label">
               This component is currently only available in{' '}
               <a
@@ -120,7 +121,8 @@ class ComponentReactExample extends Component {
                   href={componentLink}
                   className="component-example__view-full-render component-example__view-full-render--react"
                   rel="noopener noreferrer">
-                  View on React Storybook{storybookMessage &&` (${storybookMessage})`}
+                  View on React Storybook
+                  {storybookMessage && ` (${storybookMessage})`}
                 </a>
               </div>
             </div>
