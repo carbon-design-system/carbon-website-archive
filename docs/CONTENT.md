@@ -148,6 +148,32 @@ The carbon website has a handful of custom markdown components available for use
 
 ### Global Components:
 
+### Row & Column
+`<Column>` props | description
+-- | --
+sm | Specify the col width at small breakpoint
+md | Specify the col width at medium breakpoint
+lg | Specify the col width at large breakpoint
+offsetSm | Specify the col offset at small breakpoint
+offsetMd | Specify the col offset at medium breakpoint
+offsetLg | Specify the col offset at large breakpoint, defaults to 4
+bleedSm | Specify a column bleed class at small breakpoint
+bleedMd | Specify a column bleed class at medium breakpoint
+bleedLg | Specify a column bleed class at large breakpoint
+bleedLeftSm | Specify a column bleed left class at small breakpoint
+bleedLeftMd | Specify a column bleed left class at medium breakpoint
+bleedLeftLg | Specify a column bleed left class at large breakpoint
+className | Set a custom class 
+```
+<Row className="optional-class-name">
+<Column>
+
+Markdown or components can go inside
+
+</Column>
+</Row>
+```
+
 ### Video
 
 ```
