@@ -113,20 +113,21 @@ export class Column extends React.Component {
       className,
     } = this.props;
 
-    let colClasses = '';
-    if (lg) colClasses += `ibm--col-lg-${lg} `;
-    if (md) colClasses += `ibm--col-md-${md} `;
-    if (sm) colClasses += `ibm--col-sm-${sm} `;
-    if (offsetLg) colClasses += `ibm--offset-lg-${offsetLg} `;
-    if (offsetMd) colClasses += `ibm--offset-md-${offsetMd} `;
-    if (offsetSm) colClasses += `ibm--offset-sm-${offsetSm} `;
-    if (bleedSm) colClasses += `ibm--bleed-sm `;
-    if (bleedMd) colClasses += `ibm--bleed-md `;
-    if (bleedLg) colClasses += `ibm--bleed-lg `;
-    if (bleedLeftSm) colClasses += `ibm--bleed-left-sm `;
-    if (bleedLeftMd) colClasses += `ibm--bleed-left-md `;
-    if (bleedLeftLg) colClasses += `ibm--bleed-left-lg `;
-    if (className) colClasses += className;
+    const colClasses = classnames({
+      'ibm--bleed-sm': bleedSm,
+      'ibm--bleed-md': bleedMd,
+      'ibm--bleed-lg': bleedLg,
+      'ibm--bleed-left-sm': bleedLeftSm,
+      'ibm--bleed-left-md': bleedLeftMd,
+      'ibm--bleed-left-lg': bleedLeftLg,
+      [`ibm--offset-sm-${offsetSm}`]: offsetSm,
+      [`ibm--offset-md-${offsetMd}`]: offsetMd,
+      [`ibm--offset-lg-${offsetLg}`]: offsetLg,
+      [`ibm--col-lg-${lg}`]: lg,
+      [`ibm--col-lg-${md}`]: md,
+      [`ibm--col-lg-${sm}`]: sm,
+      [`${className} `]: className,
+    });
 
     return <div className={colClasses}>{children}</div>;
   }
