@@ -64,7 +64,7 @@ a.feature-tile:hover .feature-tile__info {
 }
 
 .feature-tile__title {
-  @include carbon--type-style('expressive-heading-03');
+  @include carbon--type-style('expressive-heading-03', true);
   color: $ibm-colors__gray-10;
 }
 
@@ -93,8 +93,7 @@ div.feature-tile--mobile {
 }
 
 div.feature-tile--margin.feature-tile--desktop,
-div.feature-tile--desktop
- {
+div.feature-tile--desktop {
   margin-bottom: 0;
 
   @include breakpoint('md') {

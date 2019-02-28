@@ -83,7 +83,7 @@ export class HomepageFooter extends React.Component {
                   interested in contributing, check out our contributing
                   guidelines to get started.
                 </h2>
-                <Link to="/contributing" alt="Start contributing">
+                <Link to="/contributing/governance" alt="Start contributing">
                   Start contributing
                   <ArrowRight24 aria-label="Start Contributing" />
                 </Link>

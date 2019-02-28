@@ -32,9 +32,7 @@ export class h2 extends React.Component {
           return (
             <div className="ibm--row">
               <div className="ibm--col-lg-7 ibm--offset-lg-4">
-                <h2
-                  className="page-h2 bx--type-expressive-heading-04"
-                  id={hash}>
+                <h2 className="page-h2" id={hash}>
                   {hash && (
                     <Link className="anchor-link" to={`${path}#${hash}`}>
                       <Link20
