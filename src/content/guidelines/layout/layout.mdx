@@ -5,7 +5,8 @@ title: Layout
 
 ## Resources
 
-<GridWrapper col_lg="8" flex="true" bleed="true">
+<Row className="tile--group">
+<Column md="4" lg="4" bleedSm>
   <ClickableTile
     title="Carbon Design Kit"
     href="https://github.com/ibm/carbon-design-kit"
@@ -14,7 +15,8 @@ title: Layout
 ![](images/sketch-icon.png)
 
   </ClickableTile>
-</GridWrapper>
+</Column>
+</Row>
 
 <AnchorLinks>
 
@@ -104,18 +106,22 @@ Padding is always a fixed multiple of mini units: 16 pixels at all standard brea
 
 </ImageComponent>
 
-<GridWrapper col_lg="8" flex="true">
+<Row>
+<Column md="4" lg="4">
   <DoDontExample correct="true" label="Always place type against the padding.">
 
 ![Always place type against the padding.](images/Layout_overview_Paddings-do.svg)
 
   </DoDontExample>
+</Column>
+<Column md="4" lg="4" offsetLg="0">
   <DoDontExample label="Never place type on the padding.">
 
 ![Never place type on the padding.](images/Layout_overview_Paddings-dont.svg)
 
   </DoDontExample>
-</GridWrapper>
+</Column>
+</Row>
 
 ### Gutters
 
@@ -338,7 +344,8 @@ Use the fixed sizing scale to set vertical spacing between sections, by adding i
 
 <Video vimeoId="292028388" />
 
-<GridWrapper col_lg="8" flex="true">
+<Row>
+<Column md="4" lg="4">
   <DoDontExample
     correct="true"
     label="Mini unit is the guide when needed. Spacer snaps to the text box and does not necessarily need to snap to the mini unit.">
@@ -346,12 +353,15 @@ Use the fixed sizing scale to set vertical spacing between sections, by adding i
 ![Mini unit is the guide when needed. Spacer snaps to the text box and does not necessarily need to snap to the mini unit.](images/Layout_overview_Visual-rhythm-do.svg)
 
   </DoDontExample>
+</Column>
+<Column md="4" lg="4" offsetLg="0">
   <DoDontExample label="In Sketch, always use “Auto” in alignment to ensure the text box is fitting with the content. Spacer snaps to the text box.">
 
 ![Always use “Auto” in alignment to ensure the text box is fitting with the content. Spacer snaps to the text box.](images/Layout_overview_Visual-rhythm-dont.svg)
 
   </DoDontExample>
-</GridWrapper>
+</Column>
+</Row>
 
 ### Components
 

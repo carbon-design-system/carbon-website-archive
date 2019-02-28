@@ -1,33 +1,7 @@
-// Example Group
-.do-dont-group {
-  margin-bottom: rem(24px);
-
-  @include breakpoint('md') {
-    display: flex;
-  }
-}
-
 // Example
 .example {
   margin-bottom: rem(24px);
-
-  @include breakpoint('sm') {
-    width: 100%;
-  }
-
-  @include breakpoint('md') {
-    width: calc(50% - 16px);
-  }
-
-  &:first-child {
-    @include breakpoint('sm') {
-      margin-right: 0;
-    }
-
-    @include breakpoint('md') {
-      margin-right: rem(32px);
-    }
-  }
+  width: 100%;
 }
 
 .example-card {

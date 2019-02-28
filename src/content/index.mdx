@@ -3,7 +3,6 @@ title: Homepage
 ---
 
 import FeatureTile from '../../src/components/FeatureTile';
-import GridWrapper from '../../src/components/GridWrapper';
 import ClickableTile from '../../src/components/ClickableTile';
 
 <FeatureTile
@@ -28,7 +27,8 @@ import ClickableTile from '../../src/components/ClickableTile';
 
 The Component Libraries give developers a collection of re-usable React components they can use for building websites and user interfaces. See a [complete list of resources.](/resources)
 
-<GridWrapper col_lg="8" flex="true" bleed="true">
+<Row className="tile--resource--no-margin tile--group">
+<Column lg="4" md="4" bleedSm>
   <ClickableTile
     dark="true"
     title="Carbon Design Kit"
@@ -38,6 +38,8 @@ The Component Libraries give developers a collection of re-usable React componen
 ![](resources/images/sketch-icon.png)
 
   </ClickableTile>
+</Column>
+<Column lg="4" md="4" offsetLg="0" bleedSm>
   <ClickableTile
     dark="true"
     title="Carbon Components"
@@ -47,6 +49,8 @@ The Component Libraries give developers a collection of re-usable React componen
 ![](resources/images/github-icon-inverted.png)
  
   </ClickableTile>
+</Column>
+<Column lg="4" md="4" bleedSm>
   <ClickableTile
     dark="true"
     title="Carbon Components React"
@@ -56,6 +60,8 @@ The Component Libraries give developers a collection of re-usable React componen
 ![](resources/images/github-icon-inverted.png)
  
   </ClickableTile>
+</Column>
+<Column lg="4" md="4" offsetLg="0" bleedSm>
   <ClickableTile
     dark="true"
     title="Carbon Components Angular"
@@ -65,11 +71,13 @@ The Component Libraries give developers a collection of re-usable React componen
 ![](resources/images/github-icon-inverted.png)
  
   </ClickableTile>
-</GridWrapper>
+</Column>
+</Row>
 
 ### Latest articles
 
-<GridWrapper flex="true" bleed="true">
+<Row>
+<Column lg="4" md="4" bleedLeftMd>
 <ClickableTile
     dark="true"
     type="article"
@@ -82,6 +90,8 @@ The Component Libraries give developers a collection of re-usable React componen
 ![](resources/images/homepage_01.png)
 
 </ClickableTile>
+</Column>
+<Column lg="4" md="4" offsetLg="0" bleedLeftMd>
 <ClickableTile
     dark="true"
     type="article"
@@ -94,6 +104,8 @@ The Component Libraries give developers a collection of re-usable React componen
 ![](resources/images/homepage_02.png)
 
 </ClickableTile>
+</Column>
+<Column lg="4" md="4" offsetLg="0" bleedLeftMd>
 <ClickableTile
     dark="true"
     type="article"
@@ -106,4 +118,5 @@ The Component Libraries give developers a collection of re-usable React componen
 ![](resources/images/Article_03.png)
 
 </ClickableTile>
-</GridWrapper>
+</Column>
+</Row>

@@ -22,7 +22,6 @@ module.exports = {
         import AnchorLinks from '${__dirname}/src/components/AnchorLinks';
         import ClickableTile from '${__dirname}/src/components/ClickableTile';
         import FeatureTile from '${__dirname}/src/components/FeatureTile';
-        import GridWrapper from '${__dirname}/src/components/GridWrapper';
         import DoDontExample from '${__dirname}/src/components/DoDontExample';
         import ComponentCode from '${__dirname}/src/components/ComponentCode';
         import ComponentReact from '${__dirname}/src/components/ComponentReact';
@@ -40,7 +39,6 @@ module.exports = {
           SimpleColumns,
           ClickableTile,
           FeatureTile,
-          GridWrapper,
           DoDontExample,
           ImageComponent,
           ComponentDocs,

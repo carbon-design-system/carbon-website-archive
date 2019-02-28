@@ -29,7 +29,8 @@ UI icons that appear within Carbon components are generally 16 px squares, howev
 
 </ImageComponent>
 
-<GridWrapper col_lg="8" flex="true">
+<Row>
+<Column md="4" lg="4">
   <DoDontExample
     correct="true"
     label="Do use the correct icon size with IBM Plex.">
@@ -37,12 +38,15 @@ UI icons that appear within Carbon components are generally 16 px squares, howev
 ![proper sizing](images/iconography-usage-sizing-3.svg)
 
   </DoDontExample>
+</Column>
+<Column md="4" lg="4" offsetLg="0">
   <DoDontExample label="Don’t alter the icon-text size ratio.">
 
 ![improper sizing](images/iconography-usage-sizing-4.svg)
 
   </DoDontExample>
-</GridWrapper>
+</Column>
+</Row>
 
 ### Touch targets
 
@@ -60,7 +64,8 @@ Icons are always a solid, monochromatic color and need to pass the same color co
 
 It's also important to note that Carbon v10 icons themselves do not have interaction states, only their backgrounds do.
 
-<GridWrapper col_lg="8" flex="true">
+<Row>
+<Column md="4" lg="4">
   <DoDontExample
     correct="true"
     label="Do match your icon color with your text color when pairing them.">
@@ -68,18 +73,22 @@ It's also important to note that Carbon v10 icons themselves do not have interac
 ![proper alignment](images/iconography-color-01.png)
 
   </DoDontExample>
+</Column>
+<Column md="4" lg="4" offsetLg="0">
   <DoDontExample label="Don’t use different colors for text and icons.">
 
 ![improper alignment](images/iconography-color-02.png)
 
   </DoDontExample>
-</GridWrapper>
+</Column>
+</Row>
 
 ### Alignment
 
 When used next to text, icons should be center-aligned.
 
-<GridWrapper col_lg="8" flex="true">
+<Row>
+<Column md="4" lg="4">
   <DoDontExample
     correct="true"
     label="Do center-align icons when they’re next to text.">
@@ -87,12 +96,15 @@ When used next to text, icons should be center-aligned.
 ![proper alignment](images/iconography-usage-sizing-5.svg)
 
   </DoDontExample>
+</Column>
+<Column md="4" lg="4" offsetLg="0">
   <DoDontExample label="Don’t baseline-align icons to the text.">
 
 ![improper alignment](images/iconography-usage-sizing-6.svg)
 
   </DoDontExample>
-</GridWrapper>
+</Column>
+</Row>
 
 ## Usage for developers
 

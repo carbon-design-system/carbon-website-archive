@@ -166,28 +166,34 @@ The carbon website has a handful of custom markdown components available for use
 #### Do - Don't example: text
 
 ```
-<GridWrapper col_lg="8" flex="true">
+<Row>
+<Column lg="4" md="4">
   <DoDontExample correct="true" label="caption" description="Lorem ipsum dolor sit amet" text='Example text or quote'>
   </DoDontExample>`
-</GridWrapper>
+</Column>
+</Row>
 
 ```
 
 #### Do - Don't example: images
 
 ```
-<GridWrapper col_lg="8" flex="true">
+<Row>
+<Column lg="4" md="4">
     <DoDontExample correct="true" label="Do: center-align icons when they’re next to text.">
 
 ![](images/image.png)
 
     </DoDontExample>
+</Column>
+<Column lg="4" md="4" offsetLg="0">
     <DoDontExample label="Don't: baseline-align icons to the text.">
 
 ![](images/image.png)
 
     </DoDontExample>
-</GridWrapper>
+</Column>
+</Row>
 
 ```
 #### Color block
@@ -200,11 +206,6 @@ The carbon website has a handful of custom markdown components available for use
 #### Anchor links
 - `<AnchorLinks>`
 - `<AnchorLinks small>`
-
-#### Grid wrapper
-- `<GridWrapper col_lg="12" flex="true>`
-  - `col_lg` Specify the col width at large breakpoint, default is 12
-  - `flex` Set to true to set display:flex | flexwrap: wrap to row
 
 #### Website tabs
 - `<WebsiteTabs> … </WebsiteTabs>`
@@ -226,24 +227,6 @@ This is a wrapper component to display a list as an anchor link list
 - [Danger button usage](#danger-button-usage)
 
 </AnchorLinks>
-```
-
-#### Grid Wrapper
-
-This is a wrapper component used to wrap components like tiles, do-dont, images and more. Shown with the default values below.
-
-```
-Properties
-
-    - col_lg: Specify the col width at large breakpoint, default is 12
-    - col_md: Specify the col width at medium breakpoint, default is 8
-    - col_sm: Specify the col width at small breakpoint, default is 4
-    - flex: Set to true to set display:flex | flexwrap: wrap to row
-    - bleed: Set to true to remove col padding
-
-
-<GridWrapper />
-<GridWrapper col_lg="12" col_md="8" col_sm="4" flex="false" bleed="false">
 ```
 
 #### Clickable Tile
@@ -275,17 +258,17 @@ This will render the following group of clickable tiles
 
 #### Example of the Do/Don't components:
 
-- can include property `full=true` to use the example as a full-width component.
-    - e.g. `<DoDontExample full=true>`
-    - this option will cause the element to fill the full width of its containing wrappper. adjust the column count of the enclosing `<GridWrapper>` to expand the maxium width.
-
 ##### With text examples:
 
 ```
-<GridWrapper col_lg="8" flex="true">
+<Row>
+<Column lg="4" md="4">
     <DoDontExample correct="true" label="Active Voice" text='"In the Limits window, specify the minimum and maximum values."'></DoDontExample>
+</Column>
+<Column lg="4" md="4" offsetLg="0">
     <DoDontExample label='Passive Voice' text='"The Limits window is used to specify the minimum and maximum values."'></DoDontExample>
-</GridWrapper>
+</Column>
+</Row>
 ```
 
 ---
@@ -293,18 +276,22 @@ This will render the following group of clickable tiles
 ##### With image examples:
 
 ```
-<GridWrapper col_lg="8" flex="true">
+<Row>
+<Column lg="4" md="4">
     <DoDontExample correct="true" label='Image Test'>
 
 ![](images/image.png)
 
     </DoDontExample>
+</Column>
+<Column lg="4" md="4" offsetLg="0">
     <DoDontExample label='Image Test' >
 
 ![](images/image.png)
 
     </DoDontExample>
-</GridWrapper>
+</Column>
+</Row>
 ```
 
 This will render the following set of examples:

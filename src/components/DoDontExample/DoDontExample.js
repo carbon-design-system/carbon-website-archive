@@ -19,8 +19,6 @@ export default class DoDontExample extends React.Component {
     correct: PropTypes.bool,
     /** default to false, set to true for dark background */
     dark: PropTypes.string,
-    /** default to false, set true to have a full-width example card */
-    full_width: PropTypes.bool,
   };
 
   renderCaption = (label, description) => {
@@ -35,7 +33,7 @@ export default class DoDontExample extends React.Component {
   };
 
   render() {
-    const { children, label, description, text, dark, full_width } = this.props;
+    const { children, label, description, text, dark } = this.props;
 
     let correct = this.props.correct;
 
@@ -48,7 +46,6 @@ export default class DoDontExample extends React.Component {
 
     const wrapperClassNames = classnames({
       example: true,
-      'example--full-width': full_width,
       'example--correct': correct,
       'example--incorrect': !correct,
       'example--dark': dark,

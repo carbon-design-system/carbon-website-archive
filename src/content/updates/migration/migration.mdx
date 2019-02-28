@@ -44,11 +44,8 @@ The redesigned components will be available in the current repos once released t
 
 [Carbon v10 component migration tables for SCSS](https://github.com/IBM/carbon-components/blob/master/src/globals/scss/migrate-to-10.x.md) 
 
-<GridWrapper
-  className="tile--resource--no-margin"
-  col_lg="8"
-  flex="true"
-  bleed="true">
+<Row className="tile--group">
+<Column md="4" lg="4" bleedSm>
   <ClickableTile
     title="Carbon Components"
     href="https://github.com/ibm/carbon-components"
@@ -57,6 +54,8 @@ The redesigned components will be available in the current repos once released t
 ![Carbon Component library](images/github-icon.png)
 
   </ClickableTile>
+</Column>
+<Column md="4" lg="4" offsetLg="0" bleedSm>
   <ClickableTile
     title="Carbon Components React"
     href="https://github.com/ibm/carbon-components-react"
@@ -65,7 +64,8 @@ The redesigned components will be available in the current repos once released t
 ![Carbon Components React](images/react-icon.png)
 
   </ClickableTile>
-</GridWrapper>
+</Column>
+</Row>
 
 ## Tokens
 
