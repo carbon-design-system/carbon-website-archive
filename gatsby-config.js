@@ -31,7 +31,7 @@ module.exports = {
         import WebsiteTabs from '${__dirname}/src/components/WebsiteTabs';
         import SimpleColumns from '${__dirname}/src/components/SimpleColumns';
         import Video from '${__dirname}/src/components/Video';
-        import { Row, Column } from '${__dirname}/src/components/Grid/Grid';
+        import { Row, Column } from '@carbon/addons-website';
 
         export default {
           AnchorLinks,

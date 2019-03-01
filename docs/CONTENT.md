@@ -193,7 +193,7 @@ Markdown or components can go inside
 
 ```
 <Row>
-<Column lg="4" md="4">
+<Column offsetLg="4" lg="4" md="4">
   <DoDontExample correct="true" label="caption" description="Lorem ipsum dolor sit amet" text='Example text or quote'>
   </DoDontExample>`
 </Column>
@@ -205,14 +205,14 @@ Markdown or components can go inside
 
 ```
 <Row>
-<Column lg="4" md="4">
+<Column offsetLg="4" lg="4" md="4">
     <DoDontExample correct="true" label="Do: center-align icons when they’re next to text.">
 
 ![](images/image.png)
 
     </DoDontExample>
 </Column>
-<Column lg="4" md="4" offsetLg="0">
+<Column lg="4" md="4" >
     <DoDontExample label="Don't: baseline-align icons to the text.">
 
 ![](images/image.png)
@@ -288,10 +288,10 @@ This will render the following group of clickable tiles
 
 ```
 <Row>
-<Column lg="4" md="4">
+<Column offsetLg="4" lg="4" md="4">
     <DoDontExample correct="true" label="Active Voice" text='"In the Limits window, specify the minimum and maximum values."'></DoDontExample>
 </Column>
-<Column lg="4" md="4" offsetLg="0">
+<Column lg="4" md="4" >
     <DoDontExample label='Passive Voice' text='"The Limits window is used to specify the minimum and maximum values."'></DoDontExample>
 </Column>
 </Row>
@@ -303,14 +303,14 @@ This will render the following group of clickable tiles
 
 ```
 <Row>
-<Column lg="4" md="4">
+<Column offsetLg="4" lg="4" md="4">
     <DoDontExample correct="true" label='Image Test'>
 
 ![](images/image.png)
 
     </DoDontExample>
 </Column>
-<Column lg="4" md="4" offsetLg="0">
+<Column lg="4" md="4" >
     <DoDontExample label='Image Test' >
 
 ![](images/image.png)
