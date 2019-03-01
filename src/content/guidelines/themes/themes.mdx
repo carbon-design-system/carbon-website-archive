@@ -54,7 +54,7 @@ Carbon's default theme (White theme) is based on the IBM Design Language. When `
 
 The default theme acts as a starting point; from there designers and developers can define how their own components and styles deviate from the default. Altering one, some, or all of the default token values will result in a new theme. The developer then packages those new values into a new theme SCSS stylesheet which will replace the values of the default theme:
 
-####1. Create a theme mixin that effectively mimics this structure, but changes up hex values as needed:
+#### 1. Create a theme mixin that effectively mimics this structure, but changes up hex values as needed:
 
 <br />
 
@@ -109,9 +109,9 @@ The default theme acts as a starting point; from there designers and developers 
           $hover-field: #e5e5e5 !default !global;
         }
 
-####2. Name the mixin (i.e., instead of `theme-white`, choose a unique name)
+#### 2. Name the mixin (i.e., instead of `theme-white`, choose a unique name)
 
-####3. Include this in your scss, before importing component scss, etc.:
+#### 3. Include this in your scss, before importing component scss, etc.:
 
 `@include UNIQUE-THEME-MIXIN();`
 
