@@ -11,7 +11,6 @@ body {
   width: 100%;
   margin-left: 0;
   transition: $transition--base ease;
-  overflow-x: hidden;
   position: relative;
   min-height: calc(100vh - 48px);
   margin-top: rem(48px);

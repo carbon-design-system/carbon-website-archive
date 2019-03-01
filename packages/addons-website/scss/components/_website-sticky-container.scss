@@ -1,0 +1,22 @@
+@import '../prefix';
+
+.#{$prefix}--sticky-container {
+  position: sticky;
+  z-index: 5;
+  top: 0;
+  transition-property: top;
+  transition-duration: .3s;
+  transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.#{$prefix}--sticky-container-secondary {
+  z-index: 4;
+}
+
+.#{$prefix}--sticky-container-secondary-hidden {
+  top: 0;
+}
+
+.#{$prefix}--sticky-container-secondary-visible {
+  top: 3rem;
+}
