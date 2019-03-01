@@ -18,7 +18,9 @@ export default class DoDontExample extends React.Component {
     /** mark card as true? if not defined, card will be marked as false */
     correct: PropTypes.bool,
     /** default to false, set to true for dark background */
-    dark: PropTypes.string,
+    dark: PropTypes.bool,
+    /** default to false, set to true for forced aspect ratio */
+    square: PropTypes.bool,
   };
 
   renderCaption = (label, description) => {
@@ -33,25 +35,24 @@ export default class DoDontExample extends React.Component {
   };
 
   render() {
-    const { children, label, description, text, dark } = this.props;
-
-    let correct = this.props.correct;
-
-    // our gatsby setup converts many values to strings. cleanse:
-    if (correct === 'true') {
-      correct = true;
-    } else if (correct === 'false') {
-      correct = false;
-    }
+    const {
+      children,
+      label,
+      description,
+      text,
+      dark,
+      square,
+      correct,
+    } = this.props;
 
     const wrapperClassNames = classnames({
       example: true,
+      'example--square': square,
       'example--correct': correct,
       'example--incorrect': !correct,
       'example--dark': dark,
     });
 
-    const icon = correct ? 'icon--checkmark' : 'icon--close';
     const iconClassNames = classnames({
       example__icon: true,
       'example__icon--correct': correct,

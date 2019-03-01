@@ -194,7 +194,7 @@ Markdown or components can go inside
 ```
 <Row>
 <Column offsetLg="4" lg="4" md="4">
-  <DoDontExample correct="true" label="caption" description="Lorem ipsum dolor sit amet" text='Example text or quote'>
+  <DoDontExample correct label="caption" description="Lorem ipsum dolor sit amet" text='Example text or quote'>
   </DoDontExample>`
 </Column>
 </Row>
@@ -206,7 +206,7 @@ Markdown or components can go inside
 ```
 <Row>
 <Column offsetLg="4" lg="4" md="4">
-    <DoDontExample correct="true" label="Do: center-align icons when they’re next to text.">
+    <DoDontExample correct label="Do: center-align icons when they’re next to text.">
 
 ![](images/image.png)
 
@@ -226,7 +226,7 @@ Markdown or components can go inside
 - `<ColorBlock showhex size="xs">#ffaaaa</ColorBlock>`
   - `showHex` displays the hex value next to the color block
   - `size` takes values of `xs`, `s`, `m`, `l` (12px, 24px, 40px, 80px respectively)
-  - `size` also accepts a number (e.g. `size="200"`, which would render a square that is 200px x 200px)
+  - `size` also accepts a number (e.g. `size="200"`, which would render a that is 200px x 200px)
   - leaving out these extra properties will default to no label, and a swatch size of 24px
 
 #### Anchor links
@@ -284,12 +284,16 @@ This will render the following group of clickable tiles
 
 #### Example of the Do/Don't components:
 
+- Default do/don't will fill the container `<Column>` it is placed inside.
+- can include property `square` to force a fixed aspect ratio. Useful when creating text only do/don't examples	
+    - e.g. `<DoDontExample square>`	
+
 ##### With text examples:
 
 ```
 <Row>
 <Column offsetLg="4" lg="4" md="4">
-    <DoDontExample correct="true" label="Active Voice" text='"In the Limits window, specify the minimum and maximum values."'></DoDontExample>
+    <DoDontExample correct label="Active Voice" text='"In the Limits window, specify the minimum and maximum values."'></DoDontExample>
 </Column>
 <Column lg="4" md="4" >
     <DoDontExample label='Passive Voice' text='"The Limits window is used to specify the minimum and maximum values."'></DoDontExample>
@@ -304,7 +308,7 @@ This will render the following group of clickable tiles
 ```
 <Row>
 <Column offsetLg="4" lg="4" md="4">
-    <DoDontExample correct="true" label='Image Test'>
+    <DoDontExample correct label='Image Test'>
 
 ![](images/image.png)
 

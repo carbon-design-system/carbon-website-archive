@@ -9,20 +9,20 @@ import { Tab } from 'carbon-components-react';
 ## Resources
 
 <Row className="tile--group">
-<Column offsetLg="4" md="4" lg="4" bleedSm>
-  <ClickableTile
-    title="Motion Generator"
-    href="https://ibm.github.io/motion/"
-    type="resource"
-  />
-</Column>
-<Column md="4" lg="4"  bleedSm>
-  <ClickableTile
-    title="IBM Motion Package"
-    href="https://github.com/IBM/carbon-elements/tree/master/packages/motion"
-    type="resource"
-  />
-</Column>
+  <Column offsetLg="4" md="4" lg="4" bleedSm>
+    <ClickableTile
+      title="Motion Generator"
+      href="https://ibm.github.io/motion/"
+      type="resource"
+    />
+  </Column>
+  <Column md="4" lg="4" bleedSm>
+    <ClickableTile
+      title="IBM Motion Package"
+      href="https://github.com/IBM/carbon-elements/tree/master/packages/motion"
+      type="resource"
+    />
+  </Column>
 </Row>
 
 <AnchorLinks>
@@ -88,7 +88,7 @@ Our [components](../../components/overview/) have basic motion build in. Use thi
 
 <Row>
 <Column offsetLg="4">
-<DoDontExample correct="true" label="Productive moments are labeled blue, and Expressive moments are labeled magenta.">
+<DoDontExample correct label="Productive moments are labeled blue, and Expressive moments are labeled magenta.">
 
 <Video vimeoId="310583077" />
 
@@ -102,7 +102,7 @@ Strictly linear movement appears unnatural to the human eye. Elements on the scr
 
 <Row>
 <Column offsetLg="4" lg="8">
-<DoDontExample correct="true" label="Elements on the screen speed up quickly and slow down smoothly, obeying the physics of a light-weight material.">
+<DoDontExample correct label="Elements on the screen speed up quickly and slow down smoothly, obeying the physics of a light-weight material.">
 
 <Video vimeoId="310582370" />
 
@@ -220,7 +220,7 @@ Duration is calculated based on the style and size of the motion. Among the two 
 
 <Row>
 <Column offsetLg="4" lg="8">
-<DoDontExample correct="true" label="Duration contrast between a taller and a shorter component.">
+<DoDontExample correct label="Duration contrast between a taller and a shorter component.">
 
 <Video vimeoId="310582312" />
 
@@ -228,27 +228,25 @@ Duration is calculated based on the style and size of the motion. Among the two 
 </Column>
 </Row>
 
-
 <br />
 
 When custom duration is possible, please use the [Motion Generator](https://ibm.github.io/motion/) to get the customized duration calculated for you element. We uses a non-linear duration scale to achieve better perceived consistency across all distances.
 
 <Row className="tile--group">
-<Column offsetLg="4" md="4" lg="4" bleedSm>
-  <ClickableTile
-    title="Motion Generator"
-    href="https://ibm.github.io/motion/"
-    type="resource"
-  />
-</Column>
+  <Column offsetLg="4" md="4" lg="4" bleedSm>
+    <ClickableTile
+      title="Motion Generator"
+      href="https://ibm.github.io/motion/"
+      type="resource"
+    />
+  </Column>
 </Row>
-
 
 <br />
 
 We are working on making dynamic duration a build-in feature for all Carbon components. Currently, we offer two static values as tokens for easier implementation.
 
-| Style      | Token                   | Value |
-| ---------- | ----------------------- | ----- |
+| Style      | Token                    | Value |
+| ---------- | ------------------------ | ----- |
 | Productive | `$transition--base`      | 100ms |
 | Expressive | `$transition--expansion` | 150ms |
