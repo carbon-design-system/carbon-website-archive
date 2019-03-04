@@ -30,7 +30,7 @@ title: Themes
   </ClickableTile>
   <ClickableTile
     title="Carbon themes"
-    href="https://github.com/carbon-design-system/carbon-themes"
+    href="https://github.com/IBM/carbon-elements/tree/master/packages/themes"
     type="resource">
 
 ![](images/github-icon.png)
@@ -59,64 +59,79 @@ Carbon's default theme (White theme) is based on the IBM Design Language. When `
 
 The default theme acts as a starting point; from there designers and developers can define how their own components and styles deviate from the default. Altering one, some, or all of the default token values will result in a new theme. The developer then packages those new values into a new theme SCSS stylesheet which will replace the values of the default theme:
 
-####1. Create a theme mixin that effectively mimics this structure, but changes up hex values as needed:
+#### 1. Create a theme mixin that effectively mimics this structure, but changes up hex values as needed:
 
-<br />
+```scss
+@mixin theme-white {
+$interactive-01: #0062ff !default !global;
+$interactive-02: #171717 !default !global;
+$interactive-03: #0062ff !default !global;
+$interactive-04: #0062ff !default !global;
+          
+$ui-background: #ffffff !default !global;
+          
+$ui-01: #f3f3f3 !default !global;
+$ui-02: #ffffff !default !global;
+$ui-03: #dcdcdc !default !global;
+$ui-04: #8c8c8c !default !global;
+$ui-05: #171717 !default !global;
+          
+$text-01: #171717 !default !global;
+$text-02: #565656 !default !global;
+$text-03: #8c8c8c !default !global;
+$text-04: #ffffff !default !global;
+          
+$icon-01: #171717 !default !global;
+$icon-02: #565656 !default !global;
+$icon-03: #ffffff !default !global;
+          
+$field-01: #f3f3f3 !default !global;
+$field-02: #ffffff !default !global;
+          
+$inverse-01: #ffffff !default !global;
+$inverse-02: #3d3d3d !default !global;
+          
+$support-01: #da1e28 !default !global;
+$support-02: #198038 !default !global;
+$support-03: #fdd13a !default !global;
+$support-04: #054ada !default !global;
+          
+$overlay-01: rgba(23, 23, 23, 0.5) !default !global;
 
-        @mixin theme-white {
-          $interactive-01: #0062ff !default !global;
-          $interactive-02: #171717 !default !global;
-          $interactive-03: #0062ff !default !global;
-          $ui-background: #ffffff !default !global;
-          $ui-01: #f3f3f3 !default !global;
-          $ui-02: #ffffff !default !global;
-          $ui-03: #dcdcdc !default !global;
-          $ui-04: #8c8c8c !default !global;
-          $ui-05: #171717 !default !global;
-          $text-01: #171717 !default !global;
-          $text-02: #565656 !default !global;
-          $text-03: #8c8c8c !default !global;
-          $text-04: #ffffff !default !global;
-          $icon-01: #171717 !default !global;
-          $icon-02: #565656 !default !global;
-          $field-01: #f3f3f3 !default !global;
-          $field-02: #ffffff !default !global;
-          $inverse-01: #ffffff !default !global;
-          $inverse-02: #3d3d3d !default !global;
-          $support-01: #da1e28 !default !global;
-          $support-02: #198038 !default !global;
-          $support-03: #fdd13a !default !global;
-          $support-04: #054ada !default !global;
-          $overlay-01: rgba(23, 23, 23, 0.5) !default !global;
-          $focus: #0062ff !default !global;
-          $hover-primary: #0353e9 !default !global;
-          $active-primary: #0530ad !default !global;
-          $hover-primary-text: #054ada !default !global;
-          $hover-secondary: #4c4c4c !default !global;
-          $active-secondary: #6f6f6f !default !global;
-          $hover-tertiary: #0353e9 !default !global;
-          $active-tertiary: #0530ad !default !global;
-          $hover-ui: #e5e5e5 !default !global;
-          $active-ui: #bebebe !default !global;
-          $selected-ui: #dcdcdc !default !global;
-          $hover-selected-ui: #cacaca !default !global;
-          $hover-danger: #ba1b23 !default !global;
-          $active-danger: #750e13 !default !global;
-          $hover-row: #e5e5e5 !default !global;
-          $visited-link: #8a3ffc !default !global;
-          $disabled-01: #f3f3f3 !default !global;
-          $disabled-02: #bebebe !default !global;
-          $disabled-03: #8c8c8c !default !global;
-          $brand-01: #0062ff !default !global;
-          $brand-02: #171717 !default !global;
-          $brand-03: #0062ff !default !global;
-          $active-01: #bebebe !default !global;
-          $hover-field: #e5e5e5 !default !global;
-        }
+// Interactive states
 
-####2. Name the mixin (i.e., instead of `theme-white`, choose a unique name)
+$focus: #0062ff !default !global;
+          
+$hover-primary: #0353e9 !default !global;
+$active-primary: #0530ad !default !global;
+$hover-primary-text: #054ada !default !global;
 
-####3. Include this in your scss, before importing component scss, etc.:
+$hover-secondary: #4c4c4c !default !global;
+$active-secondary: #6f6f6f !default !global;
+
+$hover-tertiary: #0353e9 !default !global;
+$active-tertiary: #0530ad !default !global;
+
+$hover-ui: #e5e5e5 !default !global;
+$active-ui: #bebebe !default !global;
+$selected-ui: #dcdcdc !default !global;
+$hover-selected-ui: #cacaca !default !global;
+
+$hover-danger: #ba1b23 !default !global;
+$active-danger: #750e13 !default !global;
+
+$hover-row: #e5e5e5 !default !global;
+
+$visited-link: #8a3ffc !default !global;
+
+$disabled-01: #f3f3f3 !default !global;
+$disabled-02: #bebebe !default !global;
+$disabled-03: #8c8c8c !default !global;
+```
+
+#### 2. Name the mixin (i.e., instead of `theme-white`, choose a unique name)
+
+#### 3. Include this in your scss, before importing component scss, etc.:
 
 `@include UNIQUE-THEME-MIXIN();`
 
@@ -144,41 +159,60 @@ Each theme is assigned 38 universal color variables, which are determined by [co
 // White Theme tokens
 $interactive-01: $ibm-colors__blue--60 !default !global;
 $interactive-02: $ibm-colors__blue--60 !default !global;
+$interactive-03: $ibm-colors__blue--60 !default !global;
+$interactive-04: $ibm-colors__blue--60 !default !global;
+
+$ui-background: $ibm-colors__white !default !global;
+
 $ui-01: $ibm-colors__gray--10 !default !global;
 $ui-02: $ibm-colors__white !default !global;
 $ui-03: $ibm-colors__gray--20 !default !global;
 $ui-04: $ibm-colors__gray--50 !default !global;
 $ui-05: $ibm-colors__gray--100 !default !global;
+
 $icon-01: $ibm-colors__gray--100 !default !global;
 $icon-02: $ibm-colors__gray--70 !default !global;
+$icon-03: $ibm-colors__white !default !global;
+
 $text-01: $ibm-colors__gray--100 !default !global;
 $text-02: $ibm-colors__gray--70 !default !global;
 $text-03: $ibm-colors__gray--50 !default !global;
+$text-03: $ibm-colors__white !default !global;
+
 $inverse-01: $ibm-colors__gray--10 !default !global;
 $inverse-02: $ibm-colors__gray--80 !default !global;
+
 $field-01: $ibm-colors__gray--10 !default !global;
 $field-02: $ibm-colors__white !default
+
 $support-01: $ibm-colors__red--60 !default !global;
 $support-02: $ibm-colors__green--60 !default !global;
 $support-03: $ibm-colors__yellow !default !global;
 $support-04: $ibm-colors__blue--70 !default !global;
-$overlay-01: rgba(255, 255, 255, 6) !default !global;
-$overlay-02: rgba(23, 23, 23, 7) !default !global;
+
+$overlay-01: rgba(255, 255, 255, 5) !default !global;
 
 // Interaction tokens
+
 $focus: $ibm-colors__blue--60 !default !global;
+
 $hover-primary: #0353E9 !default !global;
-$hover-primary-text: $ibm-colors__blue--70 !default !global; !default !global;
-$hover-secondary: #6f6f6f !default !global;
-$hover-ui: #e5e5e5 !default !global;
-$hover-danger: #ba1b23 !default !global;
-$hover-row: #e5e5e5 !default !global;
 $active-primary: $ibm-colors__blue--80 !default !global; !default !global;
+$hover-primary-text: $ibm-colors__blue--70 !default !global; !default !global;
+
+$hover-secondary: #6f6f6f !default !global;
 $active-secondary: $ibm-colors__gray--60 !default !global;
+
+$hover-ui: #e5e5e5 !default !global;
 $active-ui: $ibm-colors__gray--30 !default !global;
-$active-danger: $ibm-colors__red--80 !default !global;
 $selected-ui: $ibm-colors__gray--20 !default !global;
+$hover-row: #e5e5e5 !default !global;
+
+$hover-danger: #ba1b23 !default !global;
+$active-danger: $ibm-colors__red--80 !default !global;
+
 $visited-link: $ibm-colors__purple--60 !default !global;
+
 $disabled-01: $ibm-colors__gray--10 !default !global;
 $disabled-02: $ibm-colors__gray--30 !default !global;
 $disabled-03: $ibm-colors__gray--50 !default !global;
@@ -193,25 +227,24 @@ Carbon has two spacing scales, one for general spacing within components and the
 $spacing-baseline: 1rem !default;
 
 // Spacing scale
-$spacing-4xs: $spacing-baseline * 0.0625 !default;
-$spacing-3xs: $spacing-baseline * 0.125 !default;
-$spacing-2xs: $spacing-baseline * 0.25 !default;
-$spacing-xs: $spacing-baseline * 0.5 !default;
-$spacing-sm: $spacing-baseline * 0.75 !default;
-$spacing-md: $spacing-baseline !default;
-$spacing-lg: $spacing-baseline * 1.5 !default;
-$spacing-xl: $spacing-baseline * 2 !default;
-$spacing-2xl: $spacing-baseline * 2.5 !default;
-$spacing-3xl: $spacing-baseline * 3 !default;
+$spacing-01: $spacing-baseline * 0.125 !default;
+$spacing-02: $spacing-baseline * 0.25 !default;
+$spacing-03: $spacing-baseline * 0.5 !default;
+$spacing-04: $spacing-baseline * 0.75 !default;
+$spacing-05: $spacing-baseline !default;
+$spacing-06: $spacing-baseline * 1.5 !default;
+$spacing-07: $spacing-baseline * 2 !default;
+$spacing-08: $spacing-baseline * 2.5 !default;
+$spacing-09: $spacing-baseline * 3 !default;
 
 // Layout scale
-$layout-2xs: $spacing-baseline !default;
-$layout-xs: $spacing-baseline * 1.5 !default;
-$layout-sm: $spacing-baseline * 2 !default;
-$layout-md: $spacing-baseline * 3 !default;
-$layout-lg: $spacing-baseline * 4 !default;
-$layout-xl: $spacing-baseline * 6 !default;
-$layout-2xl: $spacing-baseline * 10 !default;
+$layout-01: $spacing-baseline !default;
+$layout-02: $spacing-baseline * 1.5 !default;
+$layout-03: $spacing-baseline * 2 !default;
+$layout-04: $spacing-baseline * 3 !default;
+$layout-05: $spacing-baseline * 4 !default;
+$layout-06: $spacing-baseline * 6 !default;
+$layout-07: $spacing-baseline * 10 !default;
 ```
 
 ### Typography
