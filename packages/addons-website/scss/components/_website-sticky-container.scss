@@ -9,14 +9,36 @@
   transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
 }
 
+.#{$prefix}--sticky-container-visible {
+  top: 3rem;
+  
+  &.#{$prefix}--sticky-container-banner {
+    top: 5.5rem;
+  }
+}
+
+.#{$prefix}--sticky-container-hidden {
+  &.#{$prefix}--sticky-container-banner {
+    top: 2.5rem;
+  }
+}
+
 .#{$prefix}--sticky-container-secondary {
   z-index: 4;
 }
 
 .#{$prefix}--sticky-container-secondary-hidden {
-  top: 0;
+  top: 2.5rem;
+  
+  &.#{$prefix}--sticky-container-banner {
+    top: 5.5rem;
+  }
 }
 
 .#{$prefix}--sticky-container-secondary-visible {
-  top: 3rem;
+  top: 5.5rem;
+  
+  &.#{$prefix}--sticky-container-banner {
+    top: 8rem;
+  }
 }

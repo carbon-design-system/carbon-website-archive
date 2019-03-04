@@ -6,13 +6,16 @@ const { prefix } = settings;
 
 class StickyContainer extends React.Component {
   render() {
-    const { children, headerVisible, secondary } = this.props
+    const { children, banner, navBar, secondary } = this.props
     
     const stickyClass = classnames(
       `${prefix}--sticky-container`, {
+        [`${prefix}--sticky-container-banner`]: banner,
+        [`${prefix}--sticky-container-visible`]: navBar,
+        [`${prefix}--sticky-container-hidden`]: !navBar,
         [`${prefix}--sticky-container-secondary`]: secondary,
-        [`${prefix}--sticky-container-secondary-visible`]: headerVisible && secondary,
-        [`${prefix}--sticky-container-secondary-hidden`]: !headerVisible && secondary,
+        [`${prefix}--sticky-container-secondary-visible`]: navBar && secondary,
+        [`${prefix}--sticky-container-secondary-hidden`]: !navBar && secondary,
       }
     )
 
@@ -21,9 +24,12 @@ class StickyContainer extends React.Component {
 }
 
 StickyContainer.propTypes = {
+
+  // if site has banner at top ( ex. go to v1)
+  banner:PropTypes.bool,
   
-  // if page head is showing / hiding, toggle this on/off
-  headerVisible: PropTypes.bool,
+  // if page navBar is showing / hiding, toggle this on/off
+  navBar: PropTypes.bool,
 
   // for items that are on pages that already have a sticky item
   secondary: PropTypes.bool
