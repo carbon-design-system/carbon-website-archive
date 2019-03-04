@@ -2,12 +2,16 @@
 
 // const TypesetContainer = styled.div`
 .#{$prefix}--typeset-example-container {
-  background-color: $ibm-colors__white-0;
   margin-top: 1rem;
   &:first-of-type {
     margin-top: 0;
   }
 }
+
+.#{$prefix}--typeset-example-row {
+  background-color: $ibm-colors__white-0;
+}
+
 
 .#{$prefix}--typeset-example-group-title {
   background-color: $ibm-colors__gray-20;
@@ -24,39 +28,16 @@
   margin-bottom: 0;
 }
 
-// const Example = styled.div`
-.#{$prefix}--typeset-example-example {
-  overflow: inherit;
+.#{$prefix}--typeset-example-description {
+  padding: 1rem;
 }
 
-// const ExampleMask = styled.div`
-.#{$prefix}--typeset-example-mask {
-  grid-template-rows: auto;
-  grid-column: 1/-1;
-  
-
-  @include breakpoint('md') {
-    grid-column: 1/6;
-  }
-    
-  @include breakpoint('lg') {
-    grid-column: 1 / 9;
-  }
-}
     
     // const ExampleSpecs = styled.div`
 .#{$prefix}--typeset-example-specs {
-  grid-column: 1 /-1;
-  align-self: stretch;
-  
+  padding: 1rem;
   @include breakpoint('md') {
     border-left: 1px solid $ibm-colors__gray-20;
-    grid-column: 6 /-1;
-  }
-    
-
-  @include breakpoint('lg') {
-    grid-column: 9/-1;
   }
 }
     
