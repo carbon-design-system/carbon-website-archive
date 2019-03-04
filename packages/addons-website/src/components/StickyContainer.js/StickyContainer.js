@@ -4,9 +4,7 @@ import { settings } from 'carbon-components';
 import classnames from 'classnames';
 const { prefix } = settings;
 
-class StickyContainer extends React.Component {
-  render() {
-    const { children, banner, navBar, secondary } = this.props
+const StickyContainer = ({ children, banner, navBar, secondary }) => {
     
     const stickyClass = classnames(
       `${prefix}--sticky-container`, {
@@ -20,7 +18,7 @@ class StickyContainer extends React.Component {
     )
 
     return <div className={stickyClass}>{children}</div>
-  }
+
 }
 
 StickyContainer.propTypes = {
