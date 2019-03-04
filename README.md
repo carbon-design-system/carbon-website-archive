@@ -45,7 +45,7 @@ Run internal dev environment
 yarn dev:internal
 ```
 
-Add-on development (/packages/addons-website) uses storybook
+Add-on development `/packages/addons-website` uses storybook
 
 ```
 yarn storybook
