@@ -45,11 +45,17 @@ Run internal dev environment
 yarn dev:internal
 ```
 
+Add-on development (/packages/addons-website) uses storybook
+
+```
+yarn storybook
+```
+
 If you need more detailed information on how to setup your machine to develop locally please take a look at our [wiki](https://github.com/carbon-design-system/carbon-website-gatsby/wiki).
 
 ## 🚀 Build
 
-Runing the build commands generates all the files and places them in the `public` folder.
+Runing the build commands generates all the files and places them in the `public` folder. 
 
 Build external site
 
