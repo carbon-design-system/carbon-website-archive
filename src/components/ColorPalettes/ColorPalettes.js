@@ -34,22 +34,47 @@ const ColorSwatch = ({name, hex, txtcolor, value}) => {
   </div>)
 }
 
-const formatValueString = (value, format) => {
+const hexToRgb = hex => {
+  let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  return result
+    ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16),
+      }
+    : null;
+};
 
+const formatValueString = (colorObj, format) => {
+  console.log('format')
+  switch ( format ) {
+    case 'rgb':
+      return (`r${hexToRgb(colorObj.hex).r}` +
+              ` g${hexToRgb(colorObj.hex).g}` +
+              ` b${hexToRgb(colorObj.hex).b}`)
+    case 'hex':
+    case 'cmyk':
+      return  colorObj[format].replace(/^#/, '').toLowerCase()
+    case 'pms':
+      return colorObj[format]
+    default:
+      return colorObj[format]
+  }
 }
 
 const ColorPalette = ({key, palette, paletteObj, format, showBW}) => {
+  console.log('BLACK[format]',BLACK[format])
   const BlackSwatch = showBW ? (
     <ColorSwatch name='black' 
                     hex={BLACK.hex} 
                     txtcolor={WHITE.hex} 
-                    value={format==='pms' ? BLACK[format] : BLACK[format].toLowerCase()} />
+                    value={formatValueString(BLACK, format)} />
   ) : null
   const WhiteSwatch = showBW ? (
     <ColorSwatch name='white' 
                     hex={WHITE.hex} 
                     txtcolor={BLACK.hex} 
-                    value={format==='pms' ? WHITE[format] : WHITE[format].toLowerCase()} />
+                    value={formatValueString(WHITE, format)} />
   ) : null
   return (<div key={key} className='color-palette'>
     {BlackSwatch}
@@ -58,15 +83,11 @@ const ColorPalette = ({key, palette, paletteObj, format, showBW}) => {
     .map((grade, i) => {
       const hex = paletteObj[grade].hex
       const txtcolor = parseInt(grade) > CUTOFF_POINT_FOR_DARK_TEXT ? '#ffffff' : '#000000'
-      const formatStr = format==='rgb' ? `r${this.hexToRgb(hex).r}` +
-                                          ` g${this.hexToRgb(hex).g}` +
-                                          ` b${this.hexToRgb(hex).b}`
-                                        : paletteObj[grade][format]
-      console.log('formatStr: ', formatStr)
-      return <ColorSwatch name={`${palette}-${grade}`} 
+      console.log('hex: ', palette, grade, hex)
+      return <ColorSwatch name={`${palette} ${grade}`} 
                         hex={hex} 
                         txtcolor={txtcolor} 
-                        value={format==='pms' ? formatStr : formatStr.toLowerCase()} /> 
+                        value={formatValueString(paletteObj[grade], format)} /> 
     })}
     {WhiteSwatch}
   </div>)
@@ -127,17 +148,6 @@ export default class ColorSpecsTable extends React.Component {
     this.setState({
       format: format.name,
     });
-  };
-
-  hexToRgb = hex => {
-    let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-    return result
-      ? {
-          r: parseInt(result[1], 16),
-          g: parseInt(result[2], 16),
-          b: parseInt(result[3], 16),
-        }
-      : null;
   };
 
   render() {

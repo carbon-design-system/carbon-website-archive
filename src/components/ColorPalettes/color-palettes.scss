@@ -29,8 +29,7 @@
     }
     @media all and (max-width: 671px) {
       width: 100%;
-      margin: 0;
-      
+      margin: 0; 
     }
   }
 }
@@ -110,9 +109,6 @@
 
 .color-palettes__format-switcher
   .bx--content-switcher-btn:not(:last-of-type)::after {
-  // height: 24px;
-  // right: -1px;
-  // top: 12px;
   height: 100%;
   right: -1px;
   top: 0;
