@@ -46,7 +46,6 @@ const hexToRgb = hex => {
 };
 
 const formatValueString = (colorObj, format) => {
-  console.log('format')
   switch ( format ) {
     case 'rgb':
       return (`r${hexToRgb(colorObj.hex).r}` +
@@ -63,7 +62,6 @@ const formatValueString = (colorObj, format) => {
 }
 
 const ColorPalette = ({key, palette, paletteObj, format, showBW}) => {
-  console.log('BLACK[format]',BLACK[format])
   const BlackSwatch = showBW ? (
     <ColorSwatch name='black' 
                     hex={BLACK.hex} 
@@ -83,11 +81,12 @@ const ColorPalette = ({key, palette, paletteObj, format, showBW}) => {
     .map((grade, i) => {
       const hex = paletteObj[grade].hex
       const txtcolor = parseInt(grade) > CUTOFF_POINT_FOR_DARK_TEXT ? '#ffffff' : '#000000'
-      console.log('hex: ', palette, grade, hex)
+      const formatStr = formatValueString(paletteObj[grade], format)
+      console.log(palette, grade, formatStr)
       return <ColorSwatch name={`${palette} ${grade}`} 
                         hex={hex} 
                         txtcolor={txtcolor} 
-                        value={formatValueString(paletteObj[grade], format)} /> 
+                        value={formatStr} /> 
     })}
     {WhiteSwatch}
   </div>)
