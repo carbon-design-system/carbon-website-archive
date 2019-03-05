@@ -3,7 +3,7 @@ import React from 'react';
 import StickyContainer from './StickyContainer'
 
 storiesOf('Sticky Container', module).add(
-  'Sticky Container no header',
+  'Sticky Container no navBar',
   () => (
     <div>
       <StickyContainer navBar={false}>
@@ -19,7 +19,7 @@ storiesOf('Sticky Container', module).add(
   }
 )
 .add(
-  'Sticky Container with header',
+  'Sticky Container with navBar',
   () => (
     <div>
       <div style={{width:'100%', height: '3rem', backgroundColor: '#333', position: 'sticky', top:'0', color: '#FFF'}}>this is navBar</div>
