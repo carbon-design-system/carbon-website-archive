@@ -90,27 +90,6 @@ module.exports = {
         },
       },
     },
-    '$interactive-04': {
-      role: ['Selected nav indicator','Active elements'],
-      value: {
-        white: {
-          name: 'Blue 60',
-          hex: '#0062ff',
-        },
-        g10: {
-          name: 'Blue 60',
-          hex: '#0062ff',
-        },
-        g90: {
-          name: 'Blue 50',
-          hex: '#408bfc',
-        },
-        g100: {
-          name: 'Blue 50',
-          hex: '#408bfc',
-        },
-      },
-    },
     '$link-01': {
       role: ['Primary links'],
       value: {
