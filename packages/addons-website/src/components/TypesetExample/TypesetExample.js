@@ -140,7 +140,6 @@ const TypesetExample = props => {
           <div
             key={`${props.name}${type.key}${type.version}`}
             style={{ padding: 0 }}
-            className={`${prefix}--typeset-example-container`}
           >
             <div className={`${prefix}--typeset-example-row ${prefix}--row`}>
               <div className={`${prefix}--typeset-example-description ${prefix}--col-md-8`}>
