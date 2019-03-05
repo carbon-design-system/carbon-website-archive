@@ -705,11 +705,13 @@ storiesOf('Typeset Example', module).add(
   () => (
     <div style={{width: '100%'}}>
       <TypesetExample simulatedScreenWidth={400}
-              name="caption"
-              typeSet={typeSets['fluidHeading']}
-              typeScale={ibmTypeScale['expressive-heading-04']} >
-
-      </TypesetExample>
+                      name="caption"
+                      typeSet={typeSets['fluidHeading'].filter(item => (item.key === 'expressive-heading-04' ))}
+                      typeScale={ibmTypeScale['expressive-heading-04']} />
+      <TypesetExample simulatedScreenWidth={400}
+                      name="caption"
+                      typeSet={typeSets['fluidHeading'].filter(item => (item.key === 'expressive-heading-05' ))}
+                      typeScale={ibmTypeScale['expressive-heading-05']} />
     </div>
   ),
   {

@@ -20,7 +20,7 @@ const defaultTypeValues = {
 
 const TypesetExample = props => {
   return (
-    <div>
+    <div className={`${prefix}--typeset-example-container`}>
       {(props.typeSet || []).map(type => {
         // TODO think these breakpoint helpers could actually be broken out into
         // utility functions. Could be useful in other files like Typeset.js as well
@@ -134,13 +134,12 @@ const TypesetExample = props => {
 
         const versionClassName = type.version ? `${prefix}--type-${type.version}` : ''
 
-        const versionClassNames = classnames(`${prefix}--type-${type.key}`, versionClassName) //, samplePStyle)
+        const versionClassNames = classnames(`${prefix}--type-${type.key}`, versionClassName)
 
         return (
           <div
             key={`${props.name}${type.key}${type.version}`}
             style={{ padding: 0 }}
-            className={`${prefix}--typeset-example-container`}
           >
             <div className={`${prefix}--typeset-example-row ${prefix}--row`}>
               <div className={`${prefix}--typeset-example-description ${prefix}--col-md-8`}>
@@ -155,8 +154,6 @@ const TypesetExample = props => {
                 <p className={`${prefix}--type-body-short-01`}>
                   <span className={`${prefix}--type-semibold`}>
                     {type.name}{' '}
-                    {/* {type.version &&
-                      type.version.replace(TYPE_VERSION_REPLACE_REGEX, '')} */}
                   </span>
                   <br />
                   Step: {displaySpecs['step']}
