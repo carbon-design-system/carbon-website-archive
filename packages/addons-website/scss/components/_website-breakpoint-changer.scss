@@ -84,7 +84,7 @@
   padding-right: 1rem;
   display: grid;
   grid-template-columns: auto 1fr auto;
-  
+
   @include breakpoint('md') {
     border-top: none;
     border-left: 1px solid $ibm-colors__gray-20;
@@ -148,7 +148,7 @@
 .#{$prefix}--breakpoint-changer-breakpoints-container {
   position: relative;
   margin-top: 1rem;
-  
+
   @include breakpoint('md') {
     margin-top: 0;
   }
@@ -160,7 +160,7 @@
 
 .#{$prefix}--breakpoint-changer-group-title-container {
   background-color: $ibm-colors__gray-10;
-  height: 3rem; 
+  height: 3rem;
   padding: 1rem;
 }
 

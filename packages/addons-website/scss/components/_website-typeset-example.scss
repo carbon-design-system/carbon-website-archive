@@ -19,10 +19,9 @@
   background-color: $ibm-colors__white-0;
 }
 
-
 .#{$prefix}--typeset-example-group-title {
   background-color: $ibm-colors__gray-20;
-  height: 4rem; 
+  height: 4rem;
 }
 
 // const Code = styled.p`
@@ -39,16 +38,15 @@
   padding: 1rem;
 }
 
-    
-    // const ExampleSpecs = styled.div`
+// const ExampleSpecs = styled.div`
 .#{$prefix}--typeset-example-specs {
   padding: 1rem;
   @include breakpoint('md') {
     border-left: 1px solid $ibm-colors__gray-20;
   }
 }
-    
-    // const ExampleSpecsText = styled.p`
+
+// const ExampleSpecsText = styled.p`
 .#{$prefix}--typeset-example-specs-text {
   margin-bottom: 0.5rem;
 }
@@ -56,5 +54,5 @@
 // const codeStyle = css`
 .#{$prefix}--typeset-example-code-style {
   display: inline-block;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }

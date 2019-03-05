@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import PropTypes from 'prop-types';
 import { settings } from 'carbon-components';
 const { prefix } = settings;
@@ -13,28 +13,23 @@ const InputRange = ({ step, min, max, value, onChange }) => (
     onChange={onChange}
     className={`${prefix}--input-range`}
   />
-)
+);
 
 InputRange.propTypes = {
-
   // input step
   step: PropTypes.number,
 
   // input min
   min: PropTypes.number.isRequired,
-  
+
   // input max
   max: PropTypes.number.isRequired,
-  
-  // input value
-  value: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.number
-  ]),
-  
-  // onChange function
-  onChange: PropTypes.func.isRequired
-  
-}
 
-export default InputRange
+  // input value
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+
+  // onChange function
+  onChange: PropTypes.func.isRequired,
+};
+
+export default InputRange;

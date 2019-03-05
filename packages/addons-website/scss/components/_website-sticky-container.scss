@@ -5,13 +5,13 @@
   z-index: 5;
   top: 0;
   transition-property: top;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .#{$prefix}--sticky-container-visible {
   top: 3rem;
-  
+
   &.#{$prefix}--sticky-container-banner {
     top: 5.5rem;
   }
@@ -29,7 +29,7 @@
 
 .#{$prefix}--sticky-container-secondary-hidden {
   top: 2.5rem;
-  
+
   &.#{$prefix}--sticky-container-banner {
     top: 5.5rem;
   }
@@ -37,7 +37,7 @@
 
 .#{$prefix}--sticky-container-secondary-visible {
   top: 5.5rem;
-  
+
   &.#{$prefix}--sticky-container-banner {
     top: 8rem;
   }
