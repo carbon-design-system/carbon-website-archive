@@ -90,7 +90,6 @@
   },
   "devDependencies": {
     "@mdx-js/loader": "^0.16.6",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@storybook/addon-actions": "^3.4.7",
     "@storybook/addon-info": "^4.1.2",
     "@storybook/addon-knobs": "^3.4.7",
