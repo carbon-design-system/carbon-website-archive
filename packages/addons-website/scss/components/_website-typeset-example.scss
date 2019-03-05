@@ -8,6 +8,13 @@
   }
 }
 
+.#{$prefix}--typeset-example {
+  margin-top: 1rem;
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
 .#{$prefix}--typeset-example-row {
   background-color: $ibm-colors__white-0;
 }

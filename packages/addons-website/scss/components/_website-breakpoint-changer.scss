@@ -1,9 +1,7 @@
 @import '../prefix';
 
-// const Container = styled.div`
 .#{$prefix}--breakpoint-changer-container {
   position: relative;
-  grid-auto-rows: auto;
   margin-left: -1rem;
   margin-right: -1rem;
   @include breakpoint('md') {
@@ -12,7 +10,6 @@
   }
 }
 
-// const Button = styled.button`
 .#{$prefix}--breakpoint-changer-button {
   background-color: transparent;
   border: none;
@@ -24,7 +21,7 @@
   z-index: 4;
 
   &:hover {
-    background-color: $ibm-colors__gray-80;
+    background-color: $ibm-colors__gray-20;
   }
 
   &.selected {
@@ -37,7 +34,6 @@
   }
 }
 
-// const Controls = styled.div`
 .#{$prefix}--breakpoint-changer-controls {
   height: 100%;
   left: 0;
@@ -51,66 +47,50 @@
   }
 }
 
-// const ControlsSticky = styled.div`
 .#{$prefix}--breakpoint-changer-controls-sticky {
   align-items: center;
   background-color: #fff;
   border-bottom: 1px solid $ibm-colors__gray-20;
-  grid-row: 1/1;
-  grid-template-rows: auto auto;
   width: auto;
   z-index: 2;
   box-sizing: content-box;
 }
 
-// const NavShiv = styled.div`
 .#{$prefix}--breakpoint-changer-nav-shiv {
   width: 100%;
   height: 1rem;
-  grid-column: 1/-1;
-  grid-row: 1/1;
 }
 
-// const BreakpointControls = styled.div`
 .#{$prefix}--breakpoint-changer-breakpoint-controls {
-  // grid-column: 1 /-1;
-  grid-row: 1/2;
   height: 3rem;
   align-items: center;
   display: flex;
   overflow-x: auto;
   white-space: nowrap;
-  
-  @include breakpoint('md') {
-    grid-column: 1 / 6;
-  }
-  @include breakpoint('lg') {
-    grid-column: 1 / 7;
-  }
+  padding-left: 1rem;
+  padding-right: 0;
 }
 
-// const ScreenControls = styled.div`
+.#{$prefix}--breakpoint-changer-screen-width-label {
+  padding-right: 1rem;
+  display: inline-block;
+}
+
 .#{$prefix}--breakpoint-changer-screen-controls {
   align-items: center;
-  display: grid;
-  // grid-column: 1 /-1;
-  grid-row: 2/3;
-  grid-template-columns: auto 1fr auto;
   height: 3rem;
   border-top: 1px solid $ibm-colors__gray-20;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   
   @include breakpoint('md') {
     border-top: none;
     border-left: 1px solid $ibm-colors__gray-20;
-    grid-column: 6 / 9;
-    grid-row: 1/2;
-  }
-  @include breakpoint('lg') {
-    grid-column: 7 / 13;
   }
 }
 
-// const ScreenLabel = styled.label`
 .#{$prefix}--breakpoint-changer-screen-label {
   height: auto;
   margin-bottom: 0;
@@ -120,22 +100,17 @@
   text-align: right;
 }
 
-
-// const Input = styled.input`
 .#{$prefix}--breakpoint-changer-input {
   margin: 0;
   margin-right: 20px;
   width: 100%;
 }
 
-// const ToggleContainer = styled.div`
 .#{$prefix}--breakpoint-changer-toggle-container {
-  grid-column: 1 / -1;
   position: relative;
   z-index: 1;
 }
 
-// const ToggleButton = styled.button`
 .#{$prefix}--breakpoint-changer-toggle-button {
   background-color: $ibm-colors__white-0;
   box-shadow: inset 0 -1px 0 0 $ibm-colors__gray-20;
@@ -165,17 +140,11 @@
   }
 }
 
-// const ButtonControlsContainer = styled.div`
 .#{$prefix}--breakpoint-changer-button-controls-container {
   height: 100%;
   margin-left: auto;
 }
 
-// const TypesetExamplesContainer = styled.div`
-//   // padding-top: 1em;
-// `
-
-// const BreakpointsContainer = styled.div`
 .#{$prefix}--breakpoint-changer-breakpoints-container {
   position: relative;
   margin-top: 1rem;
@@ -185,20 +154,16 @@
   }
 }
 
-// const SectionSpacer = styled.div`
 .#{$prefix}--breakpoint-changer-section-spacer {
   margin-bottom: calc(1rem + 1px);
 }
 
-// const GroupTitleContainer = styled.div`
 .#{$prefix}--breakpoint-changer-group-title-container {
   background-color: $ibm-colors__gray-10;
   height: 3rem; 
   padding: 1rem;
-  margin-bottom: 1px !important;
 }
 
-// const GroupTitle = styled.div`
 .#{$prefix}--breakpoint-changer-group-title {
   margin: 0;
   padding: 0;

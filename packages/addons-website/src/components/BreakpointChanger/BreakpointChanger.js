@@ -55,7 +55,10 @@ class BreakpointChanger extends React.Component {
     const buttons = Object.keys(breakpoints).map(breakpointName => {
       return (
         <button
-          className={`${prefix}--breakpoint-changer-button ${prefix}--type-body-long-01`}
+          className={`${prefix}--breakpoint-changer-button ${prefix}--type-body-long-01 ${isWithinBreakpoint(
+            this.state.simulatedScreenWidth,
+            breakpoints[breakpointName]
+          ) ? 'selected' : ''}`}
           value={breakpoints[breakpointName]}
           selected={isWithinBreakpoint(
             this.state.simulatedScreenWidth,
@@ -73,8 +76,8 @@ class BreakpointChanger extends React.Component {
       <div className={`${prefix}--breakpoint-changer-container`}>
           <div className={`${prefix}--breakpoint-changer-typeset-examples-container`}>
             <StickyContainer secondary={true}>
-              <div className={`${prefix}--breakpoint-changer-group-title-container`}>
-                <div className={`${prefix}--breakpoint-changer-typeset-examples-container ibm-type-b ibm-type-semibold`}>
+              <div className={`${prefix}--breakpoint-changer-group-title-container ${prefix}--row`}>
+                <div className={`${prefix}--breakpoint-changer-typeset-examples-container ${prefix}--type-heading-02 ibm-type-semibold`}>
                   Productive
                 </div>
               </div>
@@ -85,42 +88,36 @@ class BreakpointChanger extends React.Component {
               typeSet={typeSets['caption']}
               typeScale={typeScale}
             />
-            <div className={`${prefix}--breakpoint-changer-nav-shiv`} />
             <TypesetExample
               simulatedScreenWidth={this.state.simulatedScreenWidth}
               name="label"
               typeSet={typeSets['label']}
               typeScale={typeScale}
             />
-            <div className={`${prefix}--breakpoint-changer-nav-shiv`} />
             <TypesetExample
               simulatedScreenWidth={this.state.simulatedScreenWidth}
               name="helperText"
               typeSet={typeSets['helperText']}
               typeScale={typeScale}
             />
-            <div className={`${prefix}--breakpoint-changer-nav-shiv`} />
             <TypesetExample
               simulatedScreenWidth={this.state.simulatedScreenWidth}
               name="code"
               typeSet={typeSets['code']}
               typeScale={typeScale}
             />
-            <div className={`${prefix}--breakpoint-changer-nav-shiv`} />
             <TypesetExample
               simulatedScreenWidth={this.state.simulatedScreenWidth}
               name="body"
               typeSet={typeSets['body']}
               typeScale={typeScale}
             />
-            <div className={`${prefix}--breakpoint-changer-nav-shiv`} />
             <TypesetExample
               simulatedScreenWidth={this.state.simulatedScreenWidth}
               name="heading"
               typeSet={typeSets['heading']}
               typeScale={typeScale}
             />
-            <div className={`${prefix}--breakpoint-changer-nav-shiv`} />
             <TypesetExample
               simulatedScreenWidth={this.state.simulatedScreenWidth}
               name="productHeading"
@@ -130,13 +127,13 @@ class BreakpointChanger extends React.Component {
           </div>
         <div className={`${prefix}--breakpoint-changer-section-spacer`} />
         <StickyContainer secondary={true}>
-          <div className={`${prefix}--breakpoint-changer-group-title-container`}>
-            <div className={`${prefix}--breakpoint-changer-typeset-examples-container ibm-type-b ibm-type-semibold`}>
+          <div className={`${prefix}--breakpoint-changer-group-title-container ${prefix}--row`}>
+            <div className={`${prefix}--breakpoint-changer-typeset-examples-container ${prefix}--type-heading-02 ibm-type-semibold`}>
               Expressive
             </div>
           </div>
-          <div className={`${prefix}--breakpoint-changer-controls-sticky`}>
-            <div className={`${prefix}--breakpoint-changer-breakpoint-controls`}>
+          <div className={`${prefix}--breakpoint-changer-controls-sticky ${prefix}--row`}>
+            <div className={`${prefix}--breakpoint-changer-breakpoint-controls ${prefix}--col-md-8 ${prefix}--col-lg-6`}>
               <span
                 className={`${prefix}--type-body-long-01 ibm-padding--horizontal`}
                 style={{ marginBottom: 0 }}
@@ -145,9 +142,9 @@ class BreakpointChanger extends React.Component {
               </span>
               <div className={`${prefix}--breakpoint-changer-button-controls-container`}>{buttons}</div>
             </div>
-            <div className={`${prefix}--breakpoint-changer-screen-controls ibm-padding--horizontal`}>
+            <div className={`${prefix}--breakpoint-changer-screen-controls ibm-padding--horizontal ${prefix}--col-md-4 ${prefix}--col-lg-6`}>
               <span
-                className={`${prefix}--type-body-long-01 ibm-type-regular ibm-padding--right`}
+                className={`${prefix}--type-body-long-01 ${prefix}--breakpoint-changer-screen-width-label`}
                 style={{ marginBottom: 0, whiteSpace: 'nowrap' }}
               >
                 Screen width
@@ -174,21 +171,21 @@ class BreakpointChanger extends React.Component {
               typeSet={typeSets['fluidHeading']}
               typeScale={typeScale}
             />
-          <div className={`${prefix}--breakpoint-changer-nav-shiv`} />
+
           <TypesetExample
               simulatedScreenWidth={this.state.simulatedScreenWidth}
               name="fluidParagraph"
               typeSet={typeSets['fluidParagraph']}
               typeScale={typeScale}
             />
-          <div className={`${prefix}--breakpoint-changer-nav-shiv`} />
+
           <TypesetExample
                 simulatedScreenWidth={this.state.simulatedScreenWidth}
                 name="fluidQuotation"
                 typeSet={typeSets['fluidQuotation']}
                 typeScale={typeScale}
               />
-          <div className={`${prefix}--breakpoint-changer-nav-shiv`} />
+
           <TypesetExample
                 simulatedScreenWidth={this.state.simulatedScreenWidth}
                 name="fluidDisplay"

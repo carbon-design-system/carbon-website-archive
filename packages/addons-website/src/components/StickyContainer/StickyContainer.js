@@ -4,16 +4,16 @@ import { settings } from 'carbon-components';
 import classnames from 'classnames';
 const { prefix } = settings;
 
-const StickyContainer = ({ children, banner, navBar, secondary }) => {
+const StickyContainer = ({ children, banner, navBar, secondary, className }) => {
     
     const stickyClass = classnames(
-      `${prefix}--sticky-container`, {
+      `${prefix}--sticky-container`, className, {
         [`${prefix}--sticky-container-banner`]: banner,
         [`${prefix}--sticky-container-visible`]: navBar,
         [`${prefix}--sticky-container-hidden`]: !navBar,
         [`${prefix}--sticky-container-secondary`]: secondary,
         [`${prefix}--sticky-container-secondary-visible`]: navBar && secondary,
-        [`${prefix}--sticky-container-secondary-hidden`]: !navBar && secondary,
+        [`${prefix}--sticky-container-secondary-hidden`]: !navBar && secondary
       }
     )
 
