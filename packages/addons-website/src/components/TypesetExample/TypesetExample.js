@@ -58,7 +58,7 @@ const TypesetExample = props => {
           const typeKeys = Object.keys(breakpoints)
           const typeStylesUntilCurrentBreakpoint = []
           for (let item of typeKeys) {
-            typeStylesUntilCurrentBreakpoint.push(props.typeScale[item])
+            typeStylesUntilCurrentBreakpoint.push(props.typeScale[type.key][item])
             if (item === breakpointName) break
           }
           return Object.assign(
@@ -140,6 +140,7 @@ const TypesetExample = props => {
           <div
             key={`${props.name}${type.key}${type.version}`}
             style={{ padding: 0 }}
+            className={`${prefix}--typeset-example-container`}
           >
             <div className={`${prefix}--typeset-example-row ${prefix}--row`}>
               <div className={`${prefix}--typeset-example-description ${prefix}--col-md-8`}>
