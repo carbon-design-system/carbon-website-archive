@@ -1,0 +1,30 @@
+.color-palettes {
+  display: flex;
+  flex-direction: column;
+  .color-palette {
+    float: left;
+    width: calc(33.33% - 1px);
+    margin-right: 1px; 
+    margin-bottom: 2rem;
+    .color-swatch {
+      padding: 1rem;
+      font-family: IBM Plex Mono,Menlo,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier,monospace;
+      .color-name {
+        text-transform: capitalize;
+      }
+      .color-value {
+        float: right;
+      }
+    }
+    @media all and (max-width: 1055px) {
+      width: calc(50% - 1px);
+      &.last-child {
+        width: 50%;
+      }
+    }
+    @media all and (max-width: 671px) {
+      width: 100%;
+      margin: 0; 
+    }
+  }
+}

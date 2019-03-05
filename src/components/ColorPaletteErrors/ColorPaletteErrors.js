@@ -4,8 +4,7 @@ import classnames from 'classnames';
 import { ContentSwitcher, Switch } from 'carbon-components-react';
 import ColorPalette from '../ColorPalette';
 
-const colors_palettes = ['red', 'magenta', 'purple', 'blue', 'cyan', 'teal', 'green']
-const gray_palettes = ['cool Gray','gray','warm Gray']
+const error_palettes = ['blue', 'gray']
 
 export default class ColorSpecsTable extends React.Component {
   static propTypes = {};
@@ -86,16 +85,10 @@ export default class ColorSpecsTable extends React.Component {
         </div>
         <div className="ibm--row color-palettes" >
           <div className="ibm--col-lg-12 ibm--col-md-8 ibm--offset-lg-4 ibm--col-bleed">
-            {colors_palettes.map(id => {
-              return <ColorPalette key={id} palette={id} format={this.state.format} />
-            })}
-          </div> 
-        </div>
-        <div className="ibm--row color-palettes" >
-          <div className="ibm--col-lg-12 ibm--col-md-8 ibm--offset-lg-4 ibm--col-bleed">
-            {gray_palettes.map(id => {
+            {error_palettes.map(id => {
               return <ColorPalette key={id} palette={id} format={this.state.format} showBW />
             })}
+            <ColorPalette key={'alert'} palette={'alert'} format={this.state.format} />
           </div> 
         </div>
       </>
