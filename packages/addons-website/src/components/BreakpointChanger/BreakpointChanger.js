@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import { settings } from 'carbon-components';
 import { baseFontSize, breakpoints as carbonBreakpoints } from "@carbon/layout";
 import { findLastIndex, values } from 'lodash'
@@ -197,6 +198,16 @@ class BreakpointChanger extends React.Component {
     </div>
     )
   }
+}
+
+BreakpointChanger.propTypes = {
+
+  // object of font types
+  typeSets: PropTypes.object.isRequired,
+
+  // object of breakpoint data 
+  typeScale: PropTypes.object.isRequired,
+
 }
 
 export default BreakpointChanger
