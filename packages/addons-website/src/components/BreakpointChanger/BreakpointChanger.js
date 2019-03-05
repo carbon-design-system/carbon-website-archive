@@ -74,127 +74,127 @@ class BreakpointChanger extends React.Component {
 
     return (
       <div className={`${prefix}--breakpoint-changer-container`}>
-          <div className={`${prefix}--breakpoint-changer-typeset-examples-container`}>
-            <StickyContainer secondary={true}>
-              <div className={`${prefix}--breakpoint-changer-group-title-container ${prefix}--row`}>
-                <div className={`${prefix}--breakpoint-changer-typeset-examples-container ${prefix}--type-heading-02 ibm-type-semibold`}>
-                  Productive
-                </div>
-              </div>
-            </StickyContainer>
-            <TypesetExample
-              simulatedScreenWidth={this.state.simulatedScreenWidth}
-              name="caption"
-              typeSet={typeSets['caption']}
-              typeScale={typeScale}
-            />
-            <TypesetExample
-              simulatedScreenWidth={this.state.simulatedScreenWidth}
-              name="label"
-              typeSet={typeSets['label']}
-              typeScale={typeScale}
-            />
-            <TypesetExample
-              simulatedScreenWidth={this.state.simulatedScreenWidth}
-              name="helperText"
-              typeSet={typeSets['helperText']}
-              typeScale={typeScale}
-            />
-            <TypesetExample
-              simulatedScreenWidth={this.state.simulatedScreenWidth}
-              name="code"
-              typeSet={typeSets['code']}
-              typeScale={typeScale}
-            />
-            <TypesetExample
-              simulatedScreenWidth={this.state.simulatedScreenWidth}
-              name="body"
-              typeSet={typeSets['body']}
-              typeScale={typeScale}
-            />
-            <TypesetExample
-              simulatedScreenWidth={this.state.simulatedScreenWidth}
-              name="heading"
-              typeSet={typeSets['heading']}
-              typeScale={typeScale}
-            />
-            <TypesetExample
-              simulatedScreenWidth={this.state.simulatedScreenWidth}
-              name="productHeading"
-              typeSet={typeSets['productHeading']}
-              typeScale={typeScale}
-            />
-          </div>
-        <div className={`${prefix}--breakpoint-changer-section-spacer`} />
-        <StickyContainer secondary={true}>
-          <div className={`${prefix}--breakpoint-changer-group-title-container ${prefix}--row`}>
-            <div className={`${prefix}--breakpoint-changer-typeset-examples-container ${prefix}--type-heading-02 ibm-type-semibold`}>
-              Expressive
-            </div>
-          </div>
-          <div className={`${prefix}--breakpoint-changer-controls-sticky ${prefix}--row`}>
-            <div className={`${prefix}--breakpoint-changer-breakpoint-controls ${prefix}--col-md-8 ${prefix}--col-lg-6`}>
-              <span
-                className={`${prefix}--type-body-long-01 ibm-padding--horizontal`}
-                style={{ marginBottom: 0 }}
-              >
-                Breakpoints
-              </span>
-              <div className={`${prefix}--breakpoint-changer-button-controls-container`}>{buttons}</div>
-            </div>
-            <div className={`${prefix}--breakpoint-changer-screen-controls ibm-padding--horizontal ${prefix}--col-md-4 ${prefix}--col-lg-6`}>
-              <span
-                className={`${prefix}--type-body-long-01 ${prefix}--breakpoint-changer-screen-width-label`}
-                style={{ marginBottom: 0, whiteSpace: 'nowrap' }}
-              >
-                Screen width
-              </span>
-              <InputRange
-                min={breakpoints.sm}
-                max={breakpoints.max}
-                value={this.state.simulatedScreenWidth}
-                onChange={this.toggleBreakpoint}
-              />
-              <label
-                className={`${prefix}--breakpoint-changer-screen-label ${prefix}--type-body-long-01`}
-                htmlFor="screenWidthInput"
-              >
-                {this.state.simulatedScreenWidth}
-              </label>
-            </div>
-          </div>
-        </StickyContainer>
         <div className={`${prefix}--breakpoint-changer-typeset-examples-container`}>
-           <TypesetExample
-              simulatedScreenWidth={this.state.simulatedScreenWidth}
-              name="fluidHeading"
-              typeSet={typeSets['fluidHeading']}
-              typeScale={typeScale}
-            />
-
+          <StickyContainer visible={false}>
+            <div className={`${prefix}--breakpoint-changer-group-title-container ${prefix}--row`}>
+              <div className={`${prefix}--breakpoint-changer-typeset-examples-container ${prefix}--type-heading-02 ibm-type-semibold`}>
+                Productive
+              </div>
+            </div>
+          </StickyContainer>
           <TypesetExample
-              simulatedScreenWidth={this.state.simulatedScreenWidth}
-              name="fluidParagraph"
-              typeSet={typeSets['fluidParagraph']}
-              typeScale={typeScale}
-            />
-
+            simulatedScreenWidth={this.state.simulatedScreenWidth}
+            name="caption"
+            typeSet={typeSets['caption']}
+            typeScale={typeScale}
+          />
           <TypesetExample
-                simulatedScreenWidth={this.state.simulatedScreenWidth}
-                name="fluidQuotation"
-                typeSet={typeSets['fluidQuotation']}
-                typeScale={typeScale}
-              />
-
+            simulatedScreenWidth={this.state.simulatedScreenWidth}
+            name="label"
+            typeSet={typeSets['label']}
+            typeScale={typeScale}
+          />
           <TypesetExample
-                simulatedScreenWidth={this.state.simulatedScreenWidth}
-                name="fluidDisplay"
-                typeSet={typeSets['fluidDisplay']}
-                typeScale={typeScale}
-              /> 
+            simulatedScreenWidth={this.state.simulatedScreenWidth}
+            name="helperText"
+            typeSet={typeSets['helperText']}
+            typeScale={typeScale}
+          />
+          <TypesetExample
+            simulatedScreenWidth={this.state.simulatedScreenWidth}
+            name="code"
+            typeSet={typeSets['code']}
+            typeScale={typeScale}
+          />
+          <TypesetExample
+            simulatedScreenWidth={this.state.simulatedScreenWidth}
+            name="body"
+            typeSet={typeSets['body']}
+            typeScale={typeScale}
+          />
+          <TypesetExample
+            simulatedScreenWidth={this.state.simulatedScreenWidth}
+            name="heading"
+            typeSet={typeSets['heading']}
+            typeScale={typeScale}
+          />
+          <TypesetExample
+            simulatedScreenWidth={this.state.simulatedScreenWidth}
+            name="productHeading"
+            typeSet={typeSets['productHeading']}
+            typeScale={typeScale}
+          />
         </div>
+      <div className={`${prefix}--breakpoint-changer-section-spacer`} />
+      <StickyContainer visible={false}>
+        <div className={`${prefix}--breakpoint-changer-group-title-container ${prefix}--row`}>
+          <div className={`${prefix}--breakpoint-changer-typeset-examples-container ${prefix}--type-heading-02 ibm-type-semibold`}>
+            Expressive
+          </div>
+        </div>
+        <div className={`${prefix}--breakpoint-changer-controls-sticky ${prefix}--row`}>
+          <div className={`${prefix}--breakpoint-changer-breakpoint-controls ${prefix}--col-md-8 ${prefix}--col-lg-6`}>
+            <span
+              className={`${prefix}--type-body-long-01 ibm-padding--horizontal`}
+              style={{ marginBottom: 0 }}
+            >
+              Breakpoints
+            </span>
+            <div className={`${prefix}--breakpoint-changer-button-controls-container`}>{buttons}</div>
+          </div>
+          <div className={`${prefix}--breakpoint-changer-screen-controls ibm-padding--horizontal ${prefix}--col-md-4 ${prefix}--col-lg-6`}>
+            <span
+              className={`${prefix}--type-body-long-01 ${prefix}--breakpoint-changer-screen-width-label`}
+              style={{ marginBottom: 0, whiteSpace: 'nowrap' }}
+            >
+              Screen width
+            </span>
+            <InputRange
+              min={breakpoints.sm}
+              max={breakpoints.max}
+              value={this.state.simulatedScreenWidth}
+              onChange={this.toggleBreakpoint}
+            />
+            <label
+              className={`${prefix}--breakpoint-changer-screen-label ${prefix}--type-body-long-01`}
+              htmlFor="screenWidthInput"
+            >
+              {this.state.simulatedScreenWidth}
+            </label>
+          </div>
+        </div>
+      </StickyContainer>
+      <div className={`${prefix}--breakpoint-changer-typeset-examples-container`}>
+          <TypesetExample
+            simulatedScreenWidth={this.state.simulatedScreenWidth}
+            name="fluidHeading"
+            typeSet={typeSets['fluidHeading']}
+            typeScale={typeScale}
+          />
 
+        <TypesetExample
+            simulatedScreenWidth={this.state.simulatedScreenWidth}
+            name="fluidParagraph"
+            typeSet={typeSets['fluidParagraph']}
+            typeScale={typeScale}
+          />
+
+        <TypesetExample
+              simulatedScreenWidth={this.state.simulatedScreenWidth}
+              name="fluidQuotation"
+              typeSet={typeSets['fluidQuotation']}
+              typeScale={typeScale}
+            />
+
+        <TypesetExample
+              simulatedScreenWidth={this.state.simulatedScreenWidth}
+              name="fluidDisplay"
+              typeSet={typeSets['fluidDisplay']}
+              typeScale={typeScale}
+            /> 
       </div>
+
+    </div>
     )
   }
 }
