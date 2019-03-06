@@ -734,7 +734,6 @@ class BreakpointChanger extends React.Component {
   };
 
   toggleBreakpoint = e => {
-    console.log('BP ' + e.target.value);
     this.setState({ simulatedScreenWidth: Number(e.target.value) });
   };
 
