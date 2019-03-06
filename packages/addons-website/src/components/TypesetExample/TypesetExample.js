@@ -22,8 +22,6 @@ const TypesetExample = props => {
   return (
     <div className={`${prefix}--typeset-example-container`}>
       {(props.typeSet || []).map(type => {
-        // TODO think these breakpoint helpers could actually be broken out into
-        // utility functions. Could be useful in other files like Typeset.js as well
         const indexOfClosestLargerBreakpoint = Math.max(
           0,
           values(breakpoints).findIndex(
@@ -34,6 +32,7 @@ const TypesetExample = props => {
         const currentBreakpointPx = values(breakpoints)[
           indexOfClosestLargerBreakpoint
         ];
+
         const nextLargerBreakpointPx = values(breakpoints)[
           indexOfClosestLargerBreakpoint - 1
         ];
@@ -47,13 +46,6 @@ const TypesetExample = props => {
           val => val === nextLargerBreakpointPx
         );
 
-        // Merge all styles up to the defined breakpoint.
-        // Basically same as the mobile first + min-width defined in css.
-        //
-        // Possibly we could also just render the styles into emotion CSS and toggle classes on and off
-        // depending on simulatedScreenWidth. Might be more performant.
-        //
-        // We still need the structured information for UI display purposes though.
         const getCurrentCompoundStylesForBreakpoint = breakpointName => {
           const typeKeys = Object.keys(breakpoints);
           const typeStylesUntilCurrentBreakpoint = [];
@@ -74,25 +66,12 @@ const TypesetExample = props => {
           currentBreakpointName
         );
 
-        const nextLargerBreakpointSpecs = getCurrentCompoundStylesForBreakpoint(
-          nextLargerBreakpointName
-        );
-
-        const fluidTypeGrowthFactor =
-          (props.simulatedScreenWidth - currentBreakpointPx) /
-          (nextLargerBreakpointPx - currentBreakpointPx);
-
         const calculateFluidTypeSize = attribute => {
           return currentBreakpointSpecs[attribute] * baseFontSize;
         };
+
         const calculateFluidLineHeight = attribute => {
           return currentBreakpointSpecs[attribute] * baseFontSize;
-        };
-
-        const truncateAttributeLabel = attribute => {
-          return specs[attribute].length > 7
-            ? `${specs[attribute].substr(0, 5)}px`
-            : specs[attribute];
         };
 
         const displayWeight = (weight, style) => {
@@ -111,6 +90,7 @@ const TypesetExample = props => {
             }
           }
         };
+
         const specs = {
           fontWeight: currentBreakpointSpecs['font-weight'],
           fontSize: `${calculateFluidTypeSize('font-size')}px`,
