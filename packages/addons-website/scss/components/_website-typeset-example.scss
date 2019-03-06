@@ -1,6 +1,5 @@
 @import '../prefix';
 
-// const TypesetContainer = styled.div`
 .#{$prefix}--typeset-example-container {
   margin-top: 1rem;
   &:first-of-type {
@@ -24,21 +23,10 @@
   height: 4rem;
 }
 
-// const Code = styled.p`
-.#{$prefix}--typeset-example-code {
-  border-radius: 2px;
-  background-color: $ibm-colors__cool-gray-20;
-  color: $ibm-colors__gray-100;
-  display: inline-block;
-  padding: 3px 8px 5px;
-  margin-bottom: 0;
-}
-
 .#{$prefix}--typeset-example-description {
   padding: 1rem;
 }
 
-// const ExampleSpecs = styled.div`
 .#{$prefix}--typeset-example-specs {
   padding: 1rem;
   @include breakpoint('md') {
@@ -46,12 +34,10 @@
   }
 }
 
-// const ExampleSpecsText = styled.p`
 .#{$prefix}--typeset-example-specs-text {
   margin-bottom: 0.5rem;
 }
 
-// const codeStyle = css`
 .#{$prefix}--typeset-example-code-style {
   display: inline-block;
   margin-top: 0.5rem;

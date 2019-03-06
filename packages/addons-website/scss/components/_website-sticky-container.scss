@@ -5,8 +5,8 @@
   z-index: 5;
   top: 0;
   transition-property: top;
-  transition-duration: 0.3s;
-  transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+  transition-duration: $transition--expansion;
+  transition-timing-function: $carbon--standard-easing;
 }
 
 .#{$prefix}--sticky-container-visible {
@@ -28,7 +28,7 @@
 }
 
 .#{$prefix}--sticky-container-secondary-hidden {
-  top: 2.5rem;
+  top: 3rem;
 
   &.#{$prefix}--sticky-container-banner {
     top: 5.5rem;
@@ -36,9 +36,9 @@
 }
 
 .#{$prefix}--sticky-container-secondary-visible {
-  top: 5.5rem;
+  top: 6rem;
 
   &.#{$prefix}--sticky-container-banner {
-    top: 8rem;
+    top: 8.5rem;
   }
 }
