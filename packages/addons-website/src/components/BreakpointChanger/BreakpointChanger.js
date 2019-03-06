@@ -9,7 +9,6 @@ import TypesetExample from '../TypesetExample';
 
 const { prefix } = settings;
 
-
 const typeScale = {
   'caption-01': {
     sm: {
@@ -744,7 +743,6 @@ class BreakpointChanger extends React.Component {
   };
 
   render() {
-
     const buttons = Object.keys(breakpoints).map(breakpointName => {
       return (
         <button
