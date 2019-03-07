@@ -1,17 +1,17 @@
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import NonLatinScript from '.';
+import NonLatinScripts from '.';
 
-storiesOf('Non Latin Script', module).add(
-  'Non Latin Script',
+storiesOf('Non Latin Scripts', module).add(
+  'Non Latin Scripts',
   () => (
     <div style={{width: '100%', backgroundColor: '#F3F3F3' }}>
-      <NonLatinScript />
+      <NonLatinScripts />
     </div>
   ),
   {
     info: {
-      text: 'Non Latin Script',
+      text: 'Non Latin Scripts',
     },
   }
 );

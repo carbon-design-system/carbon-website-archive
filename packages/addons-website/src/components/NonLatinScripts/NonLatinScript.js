@@ -1,11 +1,13 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import RenewIcon from '@carbon/icons-react/lib/renew/20'
 import { settings } from 'carbon-components';
 
 const { prefix } = settings;
 
-class TypefaceExampleEditable extends React.Component {
+
+class NonLatinScript extends React.Component {
   state = {
     customValue: null,
   }
@@ -42,7 +44,7 @@ class TypefaceExampleEditable extends React.Component {
             disabled={disabled}
             className={classnames(
               `${prefix}--non-latin-type-example ${prefix}--type-display-03 ibm-type-regular`,
-              customStyle,
+              `${prefix}${customStyle}`,
               className, {
                 'rtl': rtl
               }
@@ -57,7 +59,7 @@ class TypefaceExampleEditable extends React.Component {
           <div
             className={classnames(
               `${prefix}--non-latin-type-example ${prefix}--type-display-03 ibm-type-regular`,
-              customStyle, {
+              `${prefix}${customStyle}`, {
                 'rtl': rtl
               }
             )}
@@ -75,50 +77,28 @@ class TypefaceExampleEditable extends React.Component {
   }
 }
 
-const TypefaceNonLatinScriptsExamples = () => {
-  return (
-    <div className={`${prefix}--non-latin-outer-spacing`}>
-      <TypefaceExampleEditable
-        customStyle={`${prefix}--non-latin-type-example-cyrillic`}
-        typefaceName="IBM Plex Mono Cyrillic"
-        className="ibm-type-mono"
-        value="инженер"
-      />
-      <TypefaceExampleEditable
-        customStyle={`${prefix}--non-latin-type-example-cyrillic`}
-        typefaceName="IBM Plex Sans Cyrillic"
-        value="инженер"
-      />
-      <TypefaceExampleEditable
-        customStyle={`${prefix}--non-latin-type-example-cyrillic`}
-        typefaceName="IBM Plex Serif Cyrillic"
-        className="ibm-type-serif"
-        value="инженер"
-        />
-      <TypefaceExampleEditable
-        customStyle={`${prefix}--non-latin-type-example-devanagari`}
-        typefaceName="IBM Plex Devanagari"
-        className="ibm-type-devanagari"
-        value="संज्ञानात्मक"
-      />
-      <TypefaceExampleEditable
-        typefaceName="IBM Plex Sans Greek"
-        value="νομίζω"
-        />
-      <TypefaceExampleEditable
-        typefaceName="IBM Plex Sans Hebrew"
-        className="ibm-type-hebrew"
-        rtl
-        value="לחשׁוֹב"
-        />
-      <TypefaceExampleEditable
-        customStyle={`${prefix}--non-latin-type-example-thai`}
-        typefaceName="IBM Plex Thai (non-looped)"
-        className="ibm-type-thai"
-        value="องค์ความรู้"
-        />
-    </div>
-  )
+NonLatinScript.propTypes = {
+
+  // name of typeface
+  typefaceName: PropTypes.string.isRequired,
+
+  // value displayed in input
+  value: PropTypes.string,
+
+  // if type should be written right to left, default left to right
+  rtl: PropTypes.bool,
+
+  // if input should be disabled / non-interactive
+  disabled: PropTypes.bool,
+
+  // value of coming soon
+  comingSoonText: PropTypes.string,
+
+  // image string
+  ImageTypeSample: PropTypes.string,
+
+  // style to be applied to account for different language spacing
+  customStyle: PropTypes.string
 }
 
-export default TypefaceNonLatinScriptsExamples
+export default NonLatinScript
