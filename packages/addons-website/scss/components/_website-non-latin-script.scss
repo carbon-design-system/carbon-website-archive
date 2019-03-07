@@ -1,0 +1,180 @@
+@import '../prefix';
+
+// const ComingSoonSticker = styled.div`
+.#{$prefix}--non-latin-coming-soon-sticker {
+  margin-bottom: 0;
+  padding: 2.5rem;
+  border-radius: 100%;
+  color: $ibm-colors__white-0;
+  background-color: $ibm-colors__purple-60;
+  text-align: center;
+  width: rem(50px);
+  height: rem(50px); 
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-30deg);
+}
+
+// const Button = props => {
+.#{$prefix}--non-latin-button {
+  background: none;
+  color: $ibm-colors__black-100;
+  border: 0;
+  padding: 0.5rem 0;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  
+  & > * {
+    vertical-align: middle;
+  }
+}
+
+// const containerCSS = css`
+.#{$prefix}--non-latin-container {
+  position: relative;
+  border-bottom: 1px solid silver;
+  border-top: 1px solid silver;
+  margin-bottom: -1px;
+}
+
+// Emulate the scaling font-size
+// let imageTypeSampleCSS = css`
+.#{$prefix}--non-latin-image-type-sample {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: content-box;
+  height: calc(3.625rem + (7.38636vw - 1.47727rem));
+  width: auto;
+  @include carbon--breakpoint('md') {
+    height: calc(5.85rem + (6.25vw - 2.625rem));
+  }
+  @include carbon--breakpoint('lg') {
+    height: calc(7.85rem + (11.71875vw - 7.73438rem));
+  }
+  @include carbon--breakpoint('xlg') {
+    height: calc(10.7rem + (12.5vw - 10.25rem));
+  }
+  @include carbon--breakpoint('max') {
+    height: 12.85rem;
+  }
+}
+
+// const TypefaceNameHeading = styled.h3`
+.#{$prefix}--non-latin-typeface-name-heading {
+  max-width: 100%;
+  margin-bottom: 0;
+  display: block;
+  border: 0;
+  padding-top: .5rem;
+  margin-top: 0;
+}
+
+// const typeExampleCSS = css`
+.#{$prefix}--non-latin-type-example {
+  white-space: nowrap;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  height: 1.5em;
+  padding: 0;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  border-width: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+
+  &.rtl {
+    direction: rtl;
+  }
+
+  @include carbon--breakpoint('md') {
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem !important;
+  }
+  @include carbon--breakpoint('lg') {
+    margin-top: -1.5rem;
+    margin-bottom: 0.5rem !important;
+  }
+  width: 100%;
+  color: $ibm-colors__gray-90;
+  -webkit-text-fill-color: $ibm-colors__gray-90; // Needs manual autoprefixing
+  line-height: 2em; // Fix weird font-cropping issue on Chrome
+  &::selection {
+    background: $ibm-colors__purple-20;
+  }
+
+  // safari wrong height fix 
+  @include carbon--breakpoint-down('md'){
+    line-height: 1.5em;
+    margin-bottom: 1rem !important;
+    padding-bottom: 1rem;
+  }
+  
+  @media not all and (min-resolution:.001dpcm) { 
+    line-height: 1.5em;
+    margin-bottom: 1rem !important;
+    padding-bottom: 1rem;
+  }
+  @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+    line-height: 100%;
+  }
+}
+
+// const typeExampleDevanagriCSS = css`   
+.#{$prefix}--non-latin-type-example-devanagari {
+  margin-top: 0rem !important;
+  margin-bottom: 1rem; 
+  padding-top: 0rem !important;
+  padding-bottom: 0;
+  // safari cuts thai fonts off, this is a workaround
+  @include carbon--breakpoint('md'){
+    padding-top: 1rem !important;
+  }
+  @include carbon--breakpoint-down('md'){
+    margin-top: 0rem !important;
+    margin-bottom: 1rem;
+    line-height: 1.5em;
+    padding-bottom: 0;
+  }
+  @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
+    margin-top: 0rem !important;
+    margin-bottom: 1rem; 
+    line-height: 1.5em;     
+  }
+}
+
+// const typeExampleThaiCSS = css`  
+.#{$prefix}--non-latin-type-example-thai {
+  padding-bottom: 1rem !important;
+  margin-bottom: 1rem !important;
+  // safari cuts thai fonts off, this is a workaround
+  @media not all and (min-resolution:.001dpcm) { 
+    line-height: 1.5em;
+  }
+  @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
+    line-height: 1.5em;     
+  }
+}
+
+// const typeExampleCyrillicCSS = css`  
+.#{$prefix}--non-latin-type-example-cyrillic {
+  @media not all and (min-resolution:.001dpcm) {  
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {  
+    padding-top: 0;  
+    padding-bottom: 0;   
+  }
+}
+
+// const outerSpacingStyles = css`
+.#{$prefix}--non-latin-outer-spacing {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
