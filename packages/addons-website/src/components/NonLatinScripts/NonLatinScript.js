@@ -64,13 +64,13 @@ class NonLatinScript extends React.Component {
               }
             )}
           >
-            <ImageTypeSample className={`${prefix}--non-latin-image-type-sample`} />&nbsp;
+            <img className={`${prefix}--non-latin-image-type-sample`} />&nbsp;
           </div>
         )}
         {comingSoonText && (
-          <ComingSoonSticker className={`${prefix}--type-caption-01`}>
+          <div className={`${prefix}--type-caption-01 ${prefix}--non-latin-coming-soon-sticker`}>
             {comingSoonText}
-          </ComingSoonSticker>
+          </div>
         )}
       </div>
     )
