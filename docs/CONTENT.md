@@ -34,7 +34,6 @@ The top of each markdown file has required frontmatter fields to display the hea
 
 ```
 ---
-label: Optional paragraph of text at the top of a page (Used only in Guidelines pages)
 title: Page title
 tabs: ['Tab 1', 'Tab 2', 'Tab 3'']
 internal: true
@@ -82,11 +81,11 @@ If you need a link to open in a new window you will have to use standard html to
 All images are delivered through the image component, which wraps around the images on the website so we can customize them.
 
 ```
-<image-component cols="8" caption="Enter caption here">
+<ImageComponent cols="8" caption="Enter caption here">
 
 ![image alt text](/images/image1.png)
 
-</image-component>
+</ImageComponent>
 ```
 _example of 8-column fluid image with caption_
 
@@ -102,11 +101,11 @@ If the image needs a transparent background you can add the option `bg="none"`. 
 Caption is also optional and can be added with the `caption` option.
 
 ```
-<image-component fixed="large">
+<ImageComponent fixed="large">
 
 ![image alt text](/images/image1.png)
 
-</image-component>
+</ImageComponent>
 ```
 _example of 1120 px fixed image without caption_
 
@@ -147,76 +146,69 @@ We support inline code and code blocks.
 
 The carbon website has a handful of custom markdown components available for use inside any markdown file. Some are meant to be global and others were created for very specific use cases.
 
+### Global Components:
+
 ### Video
 
 ```
-  `video: https://www.youtube.com/embed/2Xc9gXyf2G4`
-  `youtube: https://www.youtube.com/watch?v=2Xc9gXyf2G4`
-  `youtube: 2Xc9gXyf2G4`
-
-  `vimeo: https://vimeo.com/5299404`
-  `vimeo: 5299404`
-
-  `videoPress: https://videopress.com/v/kUJmAcSf`
-  `videoPress: kUJmAcSf`
-
-  `twitch: https://player.twitch.tv/?channel=dakotaz`
-  `twitch: https://player.twitch.tv/?autoplay=false&video=v273436948`
-  `twitch: 273436948`
-  `twitchLive: dakotaz`
+<Video vimeoId="292608020" />
 ```
 
-### Global Components:
-
-#### Icon
-- `<icon name="icon--checkmark--solid" color="green" />`
-
 #### Clickable tile
-- `<clickable-tile label="Title" author="John Smith" date="Janury 1, 2018" href="#"><img src="image.png" alt="Alt Text" type="article|resource" /></clickable-tile>`
+```
+<ClickableTile label="Title" author="John Smith" date="Janury 1, 2018" href="#">
+
+![](images/image.png)
+
+</ClickableTile>
+```
 
 #### Do - Don't example: text
 
 ```
-<grid-wrapper col_lg="8" flex="true">
-  <do-dont-example correct=true label="caption" description="Lorem ipsum dolor sit amet" text='Example text or quote'>
-  </do-dont-example>`
-</grid-wrapper>
+<GridWrapper col_lg="8" flex="true">
+  <DoDontExample correct="true" label="caption" description="Lorem ipsum dolor sit amet" text='Example text or quote'>
+  </DoDontExample>`
+</GridWrapper>
 
 ```
 
 #### Do - Don't example: images
 
 ```
-<grid-wrapper col_lg="8" flex="true">
-    <do-dont-example correct=true label="Do: center-align icons when they’re next to text.">
-        <img src="images/iconography-usage-sizing-5.svg" alt="proper alignment">    
-    </do-dont-example>
-    <do-dont-example label="Don't: baseline-align icons to the text.">
-        <img src="images/iconography-usage-sizing-6.svg" alt="improper alignment">    
-    </do-dont-example>
-</grid-wrapper>
+<GridWrapper col_lg="8" flex="true">
+    <DoDontExample correct="true" label="Do: center-align icons when they’re next to text.">
+
+![](images/image.png)
+
+    </DoDontExample>
+    <DoDontExample label="Don't: baseline-align icons to the text.">
+
+![](images/image.png)
+
+    </DoDontExample>
+</GridWrapper>
 
 ```
 #### Color block
-- `<color-block showhex="true" size="xs">#ffaaaa</color-block>`
+- `<ColorBlock showhex size="xs">#ffaaaa</ColorBlock>`
+  - `showHex` displays the hex value next to the color block
   - `size` takes values of `xs`, `s`, `m`, `l` (12px, 24px, 40px, 80px respectively)
   - `size` also accepts a number (e.g. `size="200"`, which would render a square that is 200px x 200px)
   - leaving out these extra properties will default to no label, and a swatch size of 24px
 
-#### Color card
-- `<color-card name="$ui-01" hex="#ffffff" border="true" small="true"></color-card>`
-
 #### Anchor links
-- `<anchor-links>`
+- `<AnchorLinks>`
+- `<AnchorLinks small>`
 
 #### Grid wrapper
-- `<grid-wrapper col_lg="12" flex="true>`
+- `<GridWrapper col_lg="12" flex="true>`
   - `col_lg` Specify the col width at large breakpoint, default is 12
   - `flex` Set to true to set display:flex | flexwrap: wrap to row
 
 #### Website tabs
-- `<website-tabs> … </website-tabs>`
-  - inside, place `<tab label="Tab Label"><div> [tab content] </div></tab>`
+- `<WebsiteTabs> … </WebsiteTabs>`
+  - inside, place `<Tab label="Tab Label"><div> [tab content] </div></Tab>`
 
 ### Examples
 
@@ -225,15 +217,15 @@ The carbon website has a handful of custom markdown components available for use
 This is a wrapper component to display a list as an anchor link list
 
 ```
-<anchor-links>
-<ul>
-    <li><a href="#columns-and-rows">Columns and rows</a></li>
-    <li><a href="#margins">Margins</a></li>
-    <li><a href="#padding">Padding</a></li>
-    <li><a href="#gutters">Gutters</a></li>
-    <li><a href="#breakpoints">Breakpoints</a></li>
-</ul>
-</anchor-links>
+<AnchorLinks>
+
+- [General guidance ](#general-guidance)
+- [Variations](#variations)
+- [Labels](#labels) 
+- [Icon usage](#icon-usage)
+- [Danger button usage](#danger-button-usage)
+
+</AnchorLinks>
 ```
 
 #### Grid Wrapper
@@ -250,32 +242,30 @@ Properties
     - bleed: Set to true to remove col padding
 
 
-<grid-wrapper />
-<grid-wrapper col_lg="12" col_md="8" col_sm="4" flex="false" bleed="false">
+<GridWrapper />
+<GridWrapper col_lg="12" col_md="8" col_sm="4" flex="false" bleed="false">
 ```
 
 #### Clickable Tile
 
 ```
 
-<clickable-tile
-    title="Data Table updates in Carbon React v5.22.0"
-    author="Josh Black"
-    date="February 20, 2018"
-    type="article"
-    href="https://medium.com/carbondesign/data-table-updates-in-carbon-react-v5-22-0-6da0c24a96d6"
-    >
-    <img src="images/article-5.png" alt="Data Table updates in Carbon React v5.22.0" />
-</clickable-tile>
-<clickable-tile
-    title="Data Table updates in Carbon React v5.22.0"
-    author="Josh Black"
-    date="February 20, 2018"
-    type="article"
-    href="https://medium.com/carbondesign/data-table-updates-in-carbon-react-v5-22-0-6da0c24a96d6"
-    >
-    <img src="images/article-5.png" alt="Data Table updates in Carbon React v5.22.0" />
-</clickable-tile>
+<ClickableTile
+    title="Add Carbon Design Kit to Sketch library"
+    href="sketch://add-library/cloud/JaVzz"
+    type="resource">
+
+![](images/sketch-icon.png)
+
+</ClickableTile>
+<ClickableTile
+    title="Download Carbon Design Kit from GitHub"
+    href="https://github.com/IBM/carbon-design-kit"
+    type="resource">
+
+![](images/github-icon.png)
+
+</ClickableTile>
 
 ```
 
@@ -286,16 +276,16 @@ This will render the following group of clickable tiles
 #### Example of the Do/Don't components:
 
 - can include property `full=true` to use the example as a full-width component.
-    - e.g. `<do-dont-example full=true>`
-    - this option will cause the element to fill the full width of its containing wrappper. adjust the column count of the enclosing `<grid-wrapper>` to expand the maxium width.
+    - e.g. `<DoDontExample full=true>`
+    - this option will cause the element to fill the full width of its containing wrappper. adjust the column count of the enclosing `<GridWrapper>` to expand the maxium width.
 
 ##### With text examples:
 
 ```
-<grid-wrapper col_lg="8" flex="true">
-    <do-dont-example correct=true label="Active Voice" text='"In the Limits window, specify the minimum and maximum values."'></do-dont-example>
-    <do-dont-example label='Passive Voice' text='"The Limits window is used to specify the minimum and maximum values."'></do-dont-example>
-</grid-wrapper>
+<GridWrapper col_lg="8" flex="true">
+    <DoDontExample correct="true" label="Active Voice" text='"In the Limits window, specify the minimum and maximum values."'></DoDontExample>
+    <DoDontExample label='Passive Voice' text='"The Limits window is used to specify the minimum and maximum values."'></DoDontExample>
+</GridWrapper>
 ```
 
 ---
@@ -303,14 +293,18 @@ This will render the following group of clickable tiles
 ##### With image examples:
 
 ```
-<grid-wrapper col_lg="8" flex="true">
-    <do-dont-example correct="true" label='Image Test'>
-        <img src='images/img-test.png' />
-    </do-dont-example>
-    <do-dont-example label='Image Test' >
-        <img src='images/img-test.png' />
-    </do-dont-example>
-</grid-wrapper>
+<GridWrapper col_lg="8" flex="true">
+    <DoDontExample correct="true" label='Image Test'>
+
+![](images/image.png)
+
+    </DoDontExample>
+    <DoDontExample label='Image Test' >
+
+![](images/image.png)
+
+    </DoDontExample>
+</GridWrapper>
 ```
 
 This will render the following set of examples:
@@ -319,43 +313,43 @@ This will render the following set of examples:
 #### Website Tabs
 
 ```
-<website-tabs>
-<tab label="Tab 1"><div>
+<WebsiteTabs>
+<Tab label="Tab 1"><div>
 
 lorem ipsum dolor sit amet
 
-</div></tab>
-<tab label="Tab 2"><div>
+</div></Tab>
+<Tab label="Tab 2"><div>
 
 Content for second tab goes here.
 
-</div></tab>
-<tab label="Tab 3"><div>
+</div></Tab>
+<Tab label="Tab 3"><div>
 
 Content for third tab goes here.
 
-</div></tab>
-</website-tabs>
+</div></Tab>
+</WebsiteTabs>
 ```
 
-- Complete component block surrounded in `<website-tabs> … </website-tabs>`
+- Complete component block surrounded in `<WebsiteTabs> … </WebsiteTabs>`
 - Each tab element has a label property, which will be the displayed label of the tab
-  - `<tab label="Lorem">`
+  - `<Tab label="Lorem">`
 - Each Tab element also has a div wrapper inside of it, with no space between the div and tab
-  - `<tab label="Lorem"><div> … </div></tab>`
-- Because of the way Markdown processes files, an **empty line** is required to be the first bit of content inside of the `<tab><div>` stack, e.g.:
+  - `<Tab label="Lorem"><div> … </div></Tab>`
+- Because of the way Markdown processes files, an **empty line** is required to be the first bit of content inside of the `<Tab><div>` stack, e.g.:
 ```
-<website-tabs>
-<tab label="Tab 1"><div>
+<WebsiteTabs>
+<Tab label="Tab 1"><div>
 
 lorem ipsum dolor sit amet
 
-</div></tab>
-</website-tabs>
+</div></Tab>
+</WebsiteTabs>
 ```
-- note the empty line after `<tab label="Tab 1"><div>` and before the first line of content, in this case `lorem ipsum…`. **Verify that there are no whitespace characters in these empty lines**.
+- note the empty line after `<Tab label="Tab 1"><div>` and before the first line of content, in this case `lorem ipsum…`. **Verify that there are no whitespace characters in these empty lines**.
 - Do not indent interior components. 
-    - Unfortunately, this component is extra fragile when written inside of a markdown file, because we are passing `<tab>` components into the `<website-tabs>` component, and markdown can interfere when child components are indendented. 
+    - Unfortunately, this component is extra fragile when written inside of a markdown file, because we are passing `<Tab>` components into the `<WebsiteTabs>` component, and markdown can interfere when child components are indendented. 
 
 
 
@@ -363,49 +357,49 @@ lorem ipsum dolor sit amet
 
 **Type**
 
-- `<type-weight>`
-- `<type-weight type="italic">`
-- `<type-weight type="type">`
-- `<type-scale-table>`
-- `<type-spec>`
+- `<TypeWeight>`
+- `<TypeWeight type="italic">`
+- `<TypeWeight type="type">`
+- `<TypeScaleTable>`
+- `<TypeSpec>`
 
 **Glossary**
 
-- `<glossary>`
+- `<Glossary>`
 
 **Component Status** (content pulled from data/components.json)
 
-- `<component-status>`
+- `<ComponentStatus>`
 
 **Component Overview** (content pulled from data/components.json)
 
-- `<component-overview>`
+- `<ComponentOverview>`
 
 **Color Token Table** (content pulled from data/guidelines/color-tokens.js)
 
-- `<color-token-table>
+- `<ColorTokenTable>
 
 ## Component Page Components:
 
 ```
-<component
+<ComponentCode
     name="Text Input" //Required
     component="text-input" //Required
     variation="text-input" //Required
     codepen="YEZLyd" //Optional - Adds link to codepen
-    haslightversion="true" //Optional -If true shows the light/white background switcher
-    hasReactVersion="true" //Optional -If true links to react storybook
-    hasAngularVersion="true" //Optional -If true links to angular storkbook
-    hasLightBackground="true" //Optional -If true has light background
-    experimental="true" //Optional -If true loads experimental version/styles
+    hasLightVersion //Optional - shows the light/white background switcher
+    hasReactVersion //Optional -links to react storybook
+    hasAngularVersion //Optional -links to angular storkbook
+    experimental //Optional -loads experimental version/styles
     >
-</component>
+</ComponentCode>
 
-<component-docs component="accordion"></component-docs>
+<ComponentDocs component="accordion"></ComponentDocs>
 
-<component-react
+<ComponentReact
     name="Multi-select Dropdown"
     component="MultiSelect"
     variation="MultiSelect"
     >
+</ComponentReact>
 ```

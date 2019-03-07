@@ -11,7 +11,7 @@ import {
   SideNavItems,
   SideNavLink,
 } from 'carbon-components-react/lib/components/UIShell';
-import { Awake16 } from '@carbon/icons-react';
+
 import { Launch16 } from '@carbon/icons-react';
 
 export default class LeftNav extends React.Component {
@@ -83,7 +83,7 @@ export default class LeftNav extends React.Component {
                     to="/resources#github"
                     className="bx--side-nav--website-link"
                     element={Link}>
-                    Github Repos
+                    GitHub Repos
                   </SideNavLink>
                 </SideNavItems>
               </SideNav>

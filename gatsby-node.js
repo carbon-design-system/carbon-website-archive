@@ -6,7 +6,7 @@ const { copy } = require('fs-extra');
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
   // If the node type (file) is a markdown file
-  if (node.internal.type === 'MarkdownRemark') {
+  if (node.internal.type === 'Mdx') {
     const dir = path.resolve(__dirname, '');
     const fileNode = getNode(node.parent);
     const slug = createFilePath({
@@ -39,9 +39,12 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark {
+      allMdx {
         edges {
           node {
+            code {
+              scope
+            }
             fields {
               slug
               currentPage
@@ -54,7 +57,7 @@ exports.createPages = ({ actions, graphql }) => {
       }
     }
   `).then(result => {
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    result.data.allMdx.edges.forEach(({ node }) => {
       const slug = node.fields.slug;
       const currentPage = node.fields.currentPage;
       const tabs = node.frontmatter.tabs === null ? [] : node.frontmatter.tabs;
@@ -102,28 +105,15 @@ exports.createPages = ({ actions, graphql }) => {
   });
 };
 
-exports.onCreateWebpackConfig = ({ actions, getConfig, stage }) => {
-  const config = getConfig();
-  const { module } = config;
-  const { rules } = module;
-  actions.replaceWebpackConfig({
-    ...config,
+exports.onCreateWebpackConfig = ({ actions, getConfig, stage, loaders }) => {
+  actions.setWebpackConfig({
     module: {
-      ...module,
       rules: [
-        ...rules.map(item => {
-          const { use } = item;
-          if (
-            !use ||
-            use.every(({ loader }) => !/babel-loader\.js$/i.test(loader))
-          ) {
-            return item;
-          }
-          return {
-            ...item,
-            exclude: /(node_modules|bower-components)[\/\\](?!(ansi-regex)[\/\\]).*/,
-          };
-        }),
+        {
+          test: /\.js/,
+          include: path.dirname(require.resolve('ansi-regex')),
+          use: [loaders.js()],
+        },
         {
           test: /\.md$/,
           loaders: ['html-loader', 'markdown-loader'],
