@@ -37,8 +37,8 @@
 // const containerCSS = css`
 .#{$prefix}--non-latin-container {
   position: relative;
-  border-bottom: 1px solid silver;
-  border-top: 1px solid silver;
+  border-bottom: 1px solid $ibm-color__gray-20;
+  border-top: 1px solid $ibm-color__gray-20;
   margin-bottom: -1px;
 }
 
@@ -177,4 +177,5 @@
 .#{$prefix}--non-latin-outer-spacing {
   margin-top: 2rem;
   margin-bottom: 3rem;
+  padding: 0 1rem;
 }
