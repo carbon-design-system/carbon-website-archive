@@ -48,7 +48,7 @@ class ImageComponent extends Component {
           <div className={imgComponentClasses}>{children}</div>
         </div>
         {caption && (
-          <div className="ibm--col-lg-4 ibm--offset-lg-4">
+          <div className="ibm--col-lg-4 ibm--col-md-4 ibm--offset-lg-4">
             <p className="image-component__caption">{caption}</p>
           </div>
         )}

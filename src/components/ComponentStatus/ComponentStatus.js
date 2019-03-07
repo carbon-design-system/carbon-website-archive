@@ -1,149 +1,64 @@
 import React from 'react';
-import { Icon } from 'carbon-components-react';
 import Packages from '../../../package.json';
+import { Tag } from 'carbon-components-react';
+
+const tags = {
+  stable: <Tag type="green">Stable</Tag>,
+  experimental: <Tag type="teal">Experimental</Tag>,
+  new: <Tag type="purple">New</Tag>,
+  updated: <Tag type="blue">Updated</Tag>,
+  deprectated: <Tag type="red">Deprecated</Tag>,
+  underConstruction: <Tag type="cool-gray">Under construction</Tag>,
+  notAvailable: <span className="component-status--unavailable">—</span>,
+};
 
 class ComponentStatus extends React.Component {
-  renderItems = (
-    currentItem,
-    readyIcon,
-    underReviewIcon,
-    deprecatedIcon,
-    notApplicableIcon
-  ) => {
-    let tag;
-    let vanilla;
-    let react;
-    let angular;
-    let experimental;
-
-    if (currentItem.tag && currentItem.tag === 'new') {
-      tag = <span className="bx--tag bx--tag--teal inline-tag">New</span>;
-    }
-    if (currentItem.tag && currentItem.tag === 'updated') {
-      tag = <span className="bx--tag bx--tag--blue inline-tag">Updated</span>;
-    }
-    if (currentItem.vanilla === 'ready') {
-      vanilla = readyIcon;
-    } else if (currentItem.vanilla === 'under-review') {
-      vanilla = underReviewIcon;
-    } else if (currentItem.vanilla === 'deprecated') {
-      vanilla = deprecatedIcon;
-    } else {
-      vanilla = notApplicableIcon;
-    }
-
-    if (currentItem.react === 'ready') {
-      react = readyIcon;
-    } else if (currentItem.react === 'under-review') {
-      react = underReviewIcon;
-    } else if (currentItem.react === 'deprecated') {
-      react = deprecatedIcon;
-    } else {
-      react = notApplicableIcon;
-    }
-
-    if (currentItem.angular === 'ready') {
-      angular = readyIcon;
-    } else if (currentItem.angular === 'under-review') {
-      angular = underReviewIcon;
-    } else if (currentItem.angular === 'deprecated') {
-      angular = deprecatedIcon;
-    } else {
-      angular = notApplicableIcon;
-    }
-
-    if (currentItem.experimental === 'ready') {
-      experimental = readyIcon;
-    } else if (currentItem.experimental === 'under-review') {
-      experimental = underReviewIcon;
-    } else if (currentItem.experimental === 'deprecated') {
-      experimental = deprecatedIcon;
-    } else {
-      experimental = notApplicableIcon;
-    }
+  renderItems = currentItem => {
     return (
-      <tr key={currentItem.item}>
+      <tr key={currentItem.component}>
+        <td>{currentItem.component}</td>
         <td>
-          {currentItem.item} {tag}
+          {Object.keys(currentItem.vanilla)
+            .filter(key => currentItem.vanilla[key])
+            .map(key => {
+              return <React.Fragment key={key}>{tags[key]}</React.Fragment>;
+            })}
         </td>
-        <td>{vanilla}</td>
-        <td>{react}</td>
-        <td>{angular}</td>
-        <td>{experimental}</td>
+        <td>
+          {Object.keys(currentItem.react)
+            .filter(key => currentItem.react[key])
+            .map(key => {
+              return <React.Fragment key={key}>{tags[key]}</React.Fragment>;
+            })}
+        </td>
+        <td>
+          {Object.keys(currentItem.angular)
+            .filter(key => currentItem.angular[key])
+            .map(key => {
+              return <React.Fragment key={key}>{tags[key]}</React.Fragment>;
+            })}
+        </td>
+        <td>
+          {Object.keys(currentItem.vue)
+            .filter(key => currentItem.vue[key])
+            .map(key => {
+              return <React.Fragment key={key}>{tags[key]}</React.Fragment>;
+            })}
+        </td>
       </tr>
     );
   };
 
   render() {
-    const readyIcon = (
-      <div className="component-status__icon ready">
-        <Icon
-          alt="ready status"
-          fill="#8CD211"
-          width="16"
-          height="16"
-          name="checkmark--glyph"
-          description="ready status"
-        />
-      </div>
-    );
-    const underReviewIcon = (
-      <div className="component-status__icon under-review">
-        <Icon
-          alt="under review"
-          fill="#EFC100"
-          width="16"
-          height="16"
-          name="warning--glyph"
-          description="ready status"
-        />
-      </div>
-    );
-    const deprecatedIcon = (
-      <div className="component-status__icon deprecated">
-        <Icon
-          alt="deprecated"
-          fill="#e0182d"
-          width="16"
-          height="16"
-          name="error--glyph"
-          description="ready status"
-        />
-      </div>
-    );
-    const notApplicableIcon = (
-      <div className="component-status__icon not-applicable">
-        <span>-</span>
-      </div>
-    );
-    const currentVersion = `Current version: ${
-      Packages.dependencies['carbon-components']
-    }`;
+    const vanillaVersion = Packages.dependencies['carbon-components'];
     const componentStatus = require('../../data/components.json'); // eslint-disable-line
-    const content = (
-      <div className="ibm--row component-status-page">
+
+    return (
+      <div className="ibm--row component-status">
         <div className="ibm--col-lg-12 ibm--offset-lg-4">
-          <p>{currentVersion}</p>
-          <div className="component-status">
-            <ul className="component-status__icon-list">
-              <li>
-                {readyIcon}
-                <p>Ready</p>
-              </li>
-              <li>
-                {underReviewIcon}
-                <p>Under review</p>
-              </li>
-              <li>
-                {deprecatedIcon}
-                <p>Deprecated</p>
-              </li>
-              <li>
-                {notApplicableIcon}
-                <p>Not available</p>
-              </li>
-            </ul>
-          </div>
+          <h2 className="page-h2">Current version: {vanillaVersion}</h2>
+        </div>
+        <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
           <table className="page-table">
             <thead>
               <tr>
@@ -151,88 +66,73 @@ class ComponentStatus extends React.Component {
                 <th>Vanilla</th>
                 <th>React</th>
                 <th>Angular</th>
-                <th>Experimental</th>
+                <th>Vue</th>
               </tr>
             </thead>
             <tbody>
-              {Object.keys(componentStatus.items).map(item => {
-                return this.renderItems(
-                  componentStatus.items[item],
-                  readyIcon,
-                  underReviewIcon,
-                  deprecatedIcon,
-                  notApplicableIcon
-                );
+              {Object.keys(componentStatus.components).map(component => {
+                return this.renderItems(componentStatus.components[component]);
               })}
             </tbody>
           </table>
-          <div className="component-status__description">
-            <h2 className="page-h2 bx--type-expressive-heading-04">
-              Tag descriptions
-            </h2>
-            <table className="page-table">
-              <thead>
-                <tr>
-                  <th>Tag</th>
-                  <th>Name</th>
-                  <th>Definitions</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>{readyIcon}</td>
-                  <td>Ready</td>
-                  <td>The component is dev and design ready.</td>
-                </tr>
-                <tr>
-                  <td>{underReviewIcon}</td>
-                  <td>Under review</td>
-                  <td>
-                    Indicates that a component’s design, code, or usage is being
-                    re-examined or created.
-                  </td>
-                </tr>
-                <tr>
-                  <td>{deprecatedIcon}</td>
-                  <td>Deprecated</td>
-                  <td>
-                    Deprecated components have either been completely replaced
-                    by new components or are no longer being supported in the
-                    component library.
-                  </td>
-                </tr>
-                <tr>
-                  <td>{notApplicableIcon}</td>
-                  <td>Not available</td>
-                  <td>
-                    Component is not available in this version of the library.
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span className="bx--tag bx--tag--teal">New</span>
-                  </td>
-                  <td />
-                  <td>This component is brand new to our library.</td>
-                </tr>
-                <tr>
-                  <td>
-                    <span className="bx--tag bx--tag--blue">Updated</span>
-                  </td>
-                  <td />
-                  <td>
-                    Applied only to existing components after they have been
-                    under review, tweaked, and re-released to the design system
-                    site.
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        </div>
+        <div className="ibm--col-lg-8 ibm--offset-lg-4 component-status__key">
+          <h4 className="page-h4">Key</h4>
+        </div>
+        <div className="ibm--col-lg-8 ibm--offset-lg-4 ibm--col-bleed">
+          <table className="page-table">
+            <thead>
+              <tr>
+                <th>Tag</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{tags.stable}</td>
+                <td>Component is dev and design production-ready.</td>
+              </tr>
+              <tr>
+                <td>{tags.experimental}</td>
+                <td>
+                  Component can be used but is not considered stable and changes
+                  to it may occur.
+                </td>
+              </tr>
+              <tr>
+                <td>{tags.deprectated}</td>
+                <td>
+                  Component has either been replaced by a new version or it is
+                  no longer being supported by the system.
+                </td>
+              </tr>
+              <tr>
+                <td>{tags.notAvailable}</td>
+                <td>Component is not available in this framework.</td>
+              </tr>
+              <tr>
+                <td>{tags.new}</td>
+                <td>
+                  Component is new to framework in the last major version
+                  update.
+                </td>
+              </tr>
+              <tr>
+                <td>{tags.updated}</td>
+                <td>
+                  An existing component that had been under review, tweaked, and
+                  re-released in the last major version.
+                </td>
+              </tr>
+              <tr>
+                <td>{tags.underConstruction}</td>
+                <td>New components that are currently being worked on.</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     );
-    return <div>{content}</div>;
   }
 }
 

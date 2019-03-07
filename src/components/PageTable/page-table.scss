@@ -10,7 +10,7 @@
 
   thead {
     th {
-      @include type-style('heading-01');
+      @include carbon--type-style('heading-01');
       color: $text-01;
       padding: $spacing-md;
       text-align: left;
@@ -24,7 +24,7 @@
       border-bottom: 1px solid $ui-03;
 
       td {
-        @include type-style('body-short-01');
+        @include carbon--type-style('body-short-01');
         color: $text-01;
         padding: $spacing-md;
 
@@ -38,22 +38,12 @@
           font-weight: font-weight('semibold');
         }
 
-        @include breakpoint('md') {
-          &:last-child {
-            padding-right: 5rem;
-          }
-        }
-
         @include breakpoint('lg') {
           min-width: rem(100px);
         }
 
         @include breakpoint('xlg') {
           min-width: rem(150px);
-
-          &:last-child {
-            padding-right: 6rem;
-          }
         }
       }
     }
@@ -82,4 +72,8 @@
   @include breakpoint('lg') {
     max-width: 50%;
   }
+}
+
+.page-table__container {
+  overflow-x: auto;
 }

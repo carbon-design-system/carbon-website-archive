@@ -3,8 +3,7 @@ import { Link } from 'gatsby';
 
 class ComponentOverview extends React.Component {
   renderItems = currentItem => {
-    const component = currentItem.item;
-
+    const component = currentItem.component;
     let componentUrl;
     if (component === 'Multiselect') {
       componentUrl = '/components/dropdown';
@@ -45,8 +44,8 @@ class ComponentOverview extends React.Component {
       <div className="ibm--row">
         <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
           <ul className="component-overview">
-            {Object.keys(componentList.items).map(item => {
-              return this.renderItems(componentList.items[item]);
+            {Object.keys(componentList.components).map(component => {
+              return this.renderItems(componentList.components[component]);
             })}
           </ul>
         </div>
