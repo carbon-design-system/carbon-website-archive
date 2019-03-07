@@ -1,2 +1,2 @@
-import NonLatinScripts from './NonLatinScripts'
-export default NonLatinScripts
+export { default as NonLatinScript } from './NonLatinScript'
+export { default } from './NonLatinScripts'

@@ -40,6 +40,8 @@
   border-bottom: 1px solid $ibm-color__gray-20;
   border-top: 1px solid $ibm-color__gray-20;
   margin-bottom: -1px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 // Emulate the scaling font-size
@@ -177,5 +179,4 @@
 .#{$prefix}--non-latin-outer-spacing {
   margin-top: 2rem;
   margin-bottom: 3rem;
-  padding: 0 1rem;
 }
