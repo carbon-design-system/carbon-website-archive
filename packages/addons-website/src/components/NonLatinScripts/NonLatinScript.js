@@ -6,7 +6,6 @@ import { settings } from 'carbon-components';
 
 const { prefix } = settings;
 
-
 class NonLatinScript extends React.Component {
   state = {
     customValue: null,

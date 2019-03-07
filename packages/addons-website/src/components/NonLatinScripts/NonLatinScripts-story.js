@@ -12,7 +12,7 @@ storiesOf('Non Latin Scripts', module).add(
   ),
   {
     info: {
-      text: 'Non Latin Scripts',
+      text: 'Parent Component Listing Non Latin Scripts',
     },
   }
 )
@@ -63,7 +63,7 @@ storiesOf('Non Latin Scripts', module).add(
   ),
   {
     info: {
-      text: 'Non Latin Scripts',
+      text: 'Individual Components listed on their own',
     },
   }
 );
