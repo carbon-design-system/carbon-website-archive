@@ -1,0 +1,132 @@
+---
+title: Migration
+tabs: ['Overview', 'Designers', 'Developers']
+---
+
+<AnchorLinks>
+
+- [IBM Design Language](#ibm-design-language)
+- [Design kit](#design-kit)
+- [Themes](#themes)
+- [Icons](#icons)
+- [Typography](#typography)
+- [Motion](#motion)
+- [Layout and grid](#layout-and-grid)
+- [Design migration strategy](#design-migration-strategy)
+<!-- - [Design FAQ](#design-faq) -->
+- [Feedback](#feedback)
+
+</AnchorLinks>
+
+## IBM Design Language
+
+Carbon X delivers the new <a href="https://www.ibm.com/design/language/" target="_blank">IBM Design Language</a> to product teams. It represents a complete visual refresh of the system, delivering the ethos of IBM Design. With tooling and  guidance on color, layout, typography, iconography, motion, patterns, and content, Carbon X is a modern, open-source framework for building digital products and experiences.
+
+## Design kit
+
+Carbon X includes a completely revised Sketch design kit, updated for the new IBM Design Language. All components in the kit have been aligned with the Design Language, as well as colors, icons, typography, motion, and grid elements. 
+
+Please note that upgrading to the v10 kit will not automatically change any files created in previous versions of the kit. In Sketch, the migration of existing v9 layouts will be a manual process for the designer.
+
+### What's changed from the v9 kit
+
+- New IBM Design Language styling
+- Improved kit structure
+- Updated text styles
+- Updated spacers
+- Icon updates
+- New color tokens
+- Updated elements page
+- New Getting Started page
+- Updated layer styles
+
+For more details on these changes to the design kit, see the What's New page in the <a href="https://github.com/IBM/carbon-design-kit/tree/master/Carbon%20Design%20Kit%20-%2010.0.0-beta" target="_blank">Design Kit Sketch file</a>.
+
+### Setting up the kit
+
+<GridWrapper col_lg="8" flex="true" bleed="true">
+  <ClickableTile
+    title="Subscribe to Carbon Design Kit Library (Sketch Cloud)"
+    href="sketch://add-library/cloud/JaVzz"
+    type="resource">
+
+![](/images/sketch-icon.png)
+
+  </ClickableTile>
+
+  <ClickableTile
+    title="Download Carbon Design Kit Sketch file (GitHub)"
+    href="https://github.com/ibm/carbon-design-kit"
+    type="resource">
+
+![](/images/sketch-icon.png)
+</ClickableTile>
+
+</GridWrapper>
+
+The preferred method for using the kit is via Sketch cloud subscription. Click the tile above to subscribe to the Carbon Design Kit as a library. Sketch cloud integration ensures that all updates to the design kit will be automatically pushed to you via notifications in the Sketch app.
+
+Also download the design kit sketch file from github. Use this file for reference and guidance while working with the kit. 
+
+Don't forget that this site contains more detailed guidance on all [components](/components/overview) and [elements](/guidelines/color/overview) that appear in the kit.
+
+To access the IBM Design Language icons, pictograms, and colors, follow the directions on [this page](https://www.ibm.com/standards/web/design-kit/) to set up the IBM Design Language kit as a library in Sketch.  
+
+After adding the two libraries, you can use the Insert menu in Sketch to insert any element or component from either of the kits to your working file.
+
+See [Getting started: Designers](/getting-started/designers) for more detail on how to get and use the design kit.
+
+## Themes
+
+Carbon now supports four visual themes, offering more options than ever for accessible components.
+
+See [Guidelines: Themes](/guidelines/themes) for detailed info on using themes in Carbon X.
+
+## Icons
+
+The iconography in Carbon X has been completely redesigned to align with the new IBM Design Language, with hundreds of new, accessible icons added to the system. The full library of icons and pictograms is available via the [IBM Design Language Kit](https://www.ibm.com/standards/web/design-kit/). 
+
+Any icons being used with Carbon v9 (outside of those integral to a component) should be reviewed against the new icons before publishing. Wherever possible, replace old icons with their revised IBM Design Language versions.
+
+[Guidelines: Iconography](/guidelines/iconography/library)
+
+## Typography
+
+The primary typeface for Carbon (IBM Plex) is unchanged from v9. However, the type token architecture has been completely redesigned for better clarity and flexibility in v10, moving from a basic type scale model to a more robust token-based architecture. Work with your development team to discuss how this new architecture might affect your team's workflow.
+
+[Guidelines: Typography](/guidelines/typography/overview)
+
+## Motion
+
+Carbon X introduces the new IBM Design Language motion standards, designed to bring unity and cohesion to all IBM motion. All interactions that include motion should abide by these standards. 
+
+[Guidelines: Motion](/guidelines/motion/basics)
+
+## Layout and grid
+
+The page grid has been completely redesigned for v10, to align with the IBM Design Language. The grid is now 16 columns, which is prioritized over the 12-column grid from v9. Users of v10 can, however, use a 12-column grid if absolutely necessary. 
+
+[Guidelines: Layout](/guidelines/layout)
+
+## Design migration strategy
+
+For the designer, the first step in migrating to Carbon X is to download and get familiar with the Carbon X Design Kit, along with the usage content on this website. The components and elements in the kit have been completely revised from v9. Be sure to note the changes to the color palette, spacing and layout, and iconography.
+
+Set up a meeting with your dev team and OM to discuss the migration process. Using this page as a starting point, establish a plan of attack for the migration together. 
+
+The Carbon team recommends not mixing v9 and v10 components and/or elements in the same layout during the migration process. Ideally, your product team will upgrade on a parallel branch, where any interface issues can be worked out with between design and dev, before going GA with the update.
+
+### "Code-first" approach
+
+The preferred approach to v10 migration starts with the front-end developer. The developer, with help from the migration guidelines found on this site, will update the product's front end code to v10. This should not cause any major breaks in the UI, but there might be some funky looking stuff that needs to be resolved by the design team. Product teams using v9 components in their code should see a mostly seamless transition.  
+
+The product design team should review the updated UI with a critical eye and a solid knowledge of the v10 design guidelines. Do the fonts look right? Are the colors correct? Is the spacing between components correct? Do animations in the UI match the new motion standards? Does the general layout still work, and does it express the IBM Design Language accurately and effectively? Working together, the design and dev teams will fix any anomalies or glitches in the layout.
+
+## Feedback
+
+To leave feedback for the Carbon team, make suggestions for improvements, or just ask a question, you can [open an issue](https://github.com/carbon-design-system/carbon-website/issues/new?template=feedback.md&labels=feedback&title=User+feedback+for+Migration+Designers+page) on GitHub.
+
+Internal IBM users can also subscribe to the [#carbon-design-system Slack channel](https://ibm-studios.slack.com/messages/C0M053VPT/details/), which is monitored by the Carbon team and the broader Carbon community.
+
+
+_Last updated: 10 March 2019_
