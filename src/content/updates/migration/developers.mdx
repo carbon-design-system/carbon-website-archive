@@ -5,6 +5,7 @@ tabs: ['Overview', 'Designers', 'Developers']
 
 <AnchorLinks>
 
+- [Repo architecture](#repo-architecture)
 - [Migration tooling](#migration-tooling)
 - [Carbon components](#carbon-components)
 - [Carbon elements](#carbon-elements)
@@ -12,11 +13,20 @@ tabs: ['Overview', 'Designers', 'Developers']
 
 </AnchorLinks>
 
+## Repo architecture
+
+Two of Carbon's previous repos are now deprecated: carbon-icons and carbon-themes. Iconography and themes in v10 are now handled as packages in the carbon-elements repo.
+
+[@carbon/colors](https://github.com/IBM/carbon-elements/tree/master/packages/colors)
+[@carbon/themes](https://github.com/IBM/carbon-elements/tree/master/packages/themes)
+
 ## Migration tooling
 
-[carbon-upgrade](https://github.com/carbon-design-system/carbon-upgrade/blob/master/README.md) is a new tool to help developers upgrade to v10 through the command line. The Carbon team recommends trying this tool in a developmental branch as a starting point for migration.
+Coming soon! [carbon-upgrade](https://github.com/carbon-design-system/carbon-upgrade/blob/master/README.md) is a new tool to help developers upgrade to v10 through the command line. This tool is still experimental, and if you would like to contribute, the Carbon team would welcome the help! [Please leave ideas for migration tooling here](https://github.com/carbon-design-system/carbon-upgrade/issues/7). 
+
 
 ## Carbon components
+
 Carbon components have been completely re-skinned for the new IBM Design Language. However, the redesign was conducted with maximum backwards-compatibility in mind. Users of v9 should be able to upgrade to v10 automatically with minimal breakage. [View the changelog](https://github.com/IBM/carbon-components/releases/) for more information about which components have significant changes from v9.
 
 Detailed technical migration docs for Carbon components are available in their respective repos. Migration information for each individual component is available in the folder for that component on the repo as well. For example, migration docs specific to the accordion component can be found [here](https://github.com/IBM/carbon-components/blob/master/src/components/accordion/migrate-to-10.x.md).
@@ -27,13 +37,13 @@ Detailed technical migration docs for Carbon components are available in their r
 
 ### carbon-components-react
 
-React-specific technical migration docs are available [here](https://github.com/IBM/carbon-components-react/tree/master/docs).
+React-specific technical migration docs are available [here](https://github.com/IBM/carbon-components-react/blob/master/docs/migration/migrate-to-10.x.md).
 
 ## Carbon Elements
 
 ### Icons
 
-Carbon icons have undergone a major update for v10. The new repository for @carbon/icons can be found [here](https://www.npmjs.com/package/@carbon/icons) 
+Carbon icons have undergone a major update for v10. The new home for the @carbon/icons package can be found [here](https://github.com/IBM/carbon-elements/tree/master/packages/colors). The carbon-icons repo that was used in previous releases of Carbon has been deprecated. 
 
 The icons migration table for developers can be found [here](https://github.com/IBM/carbon-elements/blob/master/docs/migration/10.x-icons.md)
 
@@ -76,6 +86,7 @@ Motion standards have been revised to meet the new IBM Design Language standards
 [Motion migration table](https://ibm.box.com/s/kl4veivvh8mqixv2t5qpu5q0seqjpeq8)
 
 ## Feedback
+
 To leave feedback for the Carbon team about this documentation, make suggestions for improvements, or just ask a question, you can [open an issue](https://github.com/carbon-design-system/carbon-website/issues/new?template=feedback.md&labels=feedback&title=User+feedback+for+Migration+Developers+page) on GitHub.
 
 Internal IBM users can also subscribe to the [#carbon-design-system Slack channel](https://ibm-studios.slack.com/messages/C0M053VPT/details/), which is monitored by the Carbon team and the broader Carbon community.
