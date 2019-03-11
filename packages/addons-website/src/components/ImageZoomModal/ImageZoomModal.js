@@ -20,8 +20,9 @@ const CloseIcon = (
 export default class ImageZoomModal extends React.Component {
     static propTypes = {
         children: PropTypes.element,
-        /** title for the caption (optional) */
+        /** caption (optional) */
         caption: PropTypes.string,
+        /** title for the image (optional) */
         title: PropTypes.string,
         /** default to false, set to true for dark background */
         dark: PropTypes.string,
@@ -35,52 +36,50 @@ export default class ImageZoomModal extends React.Component {
         document.addEventListener('keydown', this.handleKeyboardEvent, false)
     }
     
-      componentWillUnmount() {
+    componentWillUnmount() {
         window.removeEventListener('resize', this.updateDimensions.bind(this))
         document.removeEventListener('keydown', this.handleKeyboardEvent, false)
-      }
+    }
 
-      handleKeyboardEvent = e => {
-        const key = e.key
-        if (this.state.showOverlay && key === 'Escape') {
-          this.setState({ showOverlay: false }, () => {
-            document.body.style.overflow = 'visible'
-          })
-        }
-      }
-      
-      updateDimensions = () => {
-        if (window.innerWidth > 672) {
-            this.setState({ showOverlay: true }, () => {
-                document.body.style.overflow = 'hidden'
-            }) 
-        } else {
-            this.setState({ showOverlay: false }, () => {
-                document.body.style.overflow = 'hidden'
-            }) 
-        }
-        }
-      handleImageClick = () => {
+    handleKeyboardEvent = e => {
+    const key = e.key
+    if (this.state.showOverlay && key === 'Escape') {
+        this.setState({ showOverlay: false }, () => {
+        document.body.style.overflow = 'visible'
+        })
+    }
+    }
+    
+    updateDimensions = () => {
+    if (window.innerWidth > 672) {
+        this.setState({ showOverlay: true }, () => {
+            document.body.style.overflow = 'hidden'
+        }) 
+    } else {
+        this.setState({ showOverlay: false }, () => {
+            document.body.style.overflow = 'hidden'
+        }) 
+    }
+    }
+    handleImageClick = () => {
         if (window.innerWidth < 672) return
         this.setState({ showOverlay: true }, () => {
-          document.body.style.overflow = 'hidden'
+            document.body.style.overflow = 'hidden'
         })
-      }
-    
-      handleCloseClick = () => {
+    }
+
+    handleCloseClick = () => {
         this.setState({ showOverlay: false }, () => {
-          document.body.style.overflow = 'visible'
+            document.body.style.overflow = 'visible'
         })
-      }
+    }
     render() {
         const { children, caption, title, dark} = this.props;
-        // const downloadUrl = `../../assets/icons/${name.replace('icon--', '')}.svg`;
 
         const containerClasses = classnames({
             [`${prefix}--imageZoom-container`] : true,
             'ibm--col-md-4' : true,
-          })
-
+        })
 
         if(this.state.showOverlay)
             return (
@@ -109,7 +108,7 @@ export default class ImageZoomModal extends React.Component {
                 </div>
                 <p className="bx--type-body-long-01" style={{ paddingTop: '0.5rem' }}>
                         {caption}
-                    </p>
+                </p>
             </div>
         );
     }

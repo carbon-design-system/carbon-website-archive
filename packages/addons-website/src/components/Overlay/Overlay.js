@@ -2,10 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { settings } from 'carbon-components';
-const { hexToRGBA } = 'HexToRGBA';
-
-import CloseIcon from '../../../../../public/icons/close-32px.svg'
-import ZoomIcon from '../../../../../public/icons/zoom--in-20px.svg'
 
 
 const { prefix } = settings;
@@ -13,7 +9,7 @@ const { prefix } = settings;
 export default class Overlay extends React.Component {
     static propTypes = {
         children: PropTypes.element,
-        /** title for the caption (optional) */
+        /** caption (optional) */
         caption: PropTypes.string,
         /** default to false, set to true for dark background */
         dark: PropTypes.string,
