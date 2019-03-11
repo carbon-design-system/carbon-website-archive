@@ -19,7 +19,7 @@ module.exports = {
           default: require.resolve('./src/components/Layouts/index.js'),
         },
         globalScope: `
-        import AnchorLinks from '@carbon/addons-website';
+        import { AnchorLinks } from '@carbon/addons-website';
         import ClickableTile from '${__dirname}/src/components/ClickableTile';
         import ColorBlock from '${__dirname}/src/components/ColorBlock';
         import ComponentCode from '${__dirname}/src/components/ComponentCode';
