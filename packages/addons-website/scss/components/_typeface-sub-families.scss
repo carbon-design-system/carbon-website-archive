@@ -89,8 +89,6 @@
 
 .#{$prefix}--subfamilies-TypeTesterExample {
   @include carbon--type-style('expressive-heading-05');
-//   max-width: calc(100% + 2rem) !important;
-//   width: calc(100% + 2rem) !important;
   background-color: $ibm-colors__white;
   padding-top: 1rem;
   padding-bottom: 2.5rem;

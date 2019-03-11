@@ -13,7 +13,6 @@ import {
   text,
 } from '@storybook/addon-knobs';
 
-
 export default class TypefaceSubFamilies extends React.Component {
   constructor() {
     super();
@@ -82,7 +81,6 @@ export default class TypefaceSubFamilies extends React.Component {
       'flex-wrap' : true,
       [`${prefix+"--"+this.state.fontVariant}`] : true,
     });
-
   
     const props = () => ({
       label: text('Label (label)', this.state.fontVariantLabel),
