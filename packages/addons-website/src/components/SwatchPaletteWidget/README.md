@@ -2,7 +2,7 @@
 
 ## Options
 
-* palettes (required)
+* **palettes (required)**
 
   palettes is array of colors to be controlled by ContentSwitcher e.g. ['red','magenta','purple', ...]
 
@@ -38,6 +38,6 @@
   * add '-bw' to color name to get black and white bars appearing at top and bottom of color palette
   
 
-* top
+* ###top
 
   value fixes top of sticky switcher buttons to allow for navbar height etc (only required if not zero)
