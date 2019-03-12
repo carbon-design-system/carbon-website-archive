@@ -7,6 +7,7 @@ tabs: ['Overview', 'Designers', 'Developers']
 
 - [Repo architecture](#repo-architecture)
 - [Migration tooling](#migration-tooling)
+- [Migration strategy](#migration-strategy)
 - [Carbon components](#carbon-components)
 - [Carbon elements](#carbon-elements)
 - [Feedback](#feedback)
@@ -18,20 +19,33 @@ tabs: ['Overview', 'Designers', 'Developers']
 Two of Carbon's previous repos are now deprecated: carbon-icons and carbon-themes. Iconography and themes in v10 are now handled as packages in the carbon-elements repo.
 
 [@carbon/colors](https://github.com/IBM/carbon-elements/tree/master/packages/colors)
+
 [@carbon/themes](https://github.com/IBM/carbon-elements/tree/master/packages/themes)
 
 ## Migration tooling
 
 Coming soon! [carbon-upgrade](https://github.com/carbon-design-system/carbon-upgrade/blob/master/README.md) is a new tool to help developers upgrade to v10 through the command line. This tool is still experimental, and if you would like to contribute, the Carbon team would welcome the help! [Please leave ideas for migration tooling here](https://github.com/carbon-design-system/carbon-upgrade/issues/7). 
 
+## Migration strategy
+
+It is up to each product team to determine which migration strategy works best for their product. Because each team is different, there is no "official playbook" for migrating to v10. However, the Carbon team recommends the following best practices for migration.
+
+### Talk about migration early and often. 
+Meet with all relevant stakeholders from design, OM, and engineering to kick off the migration process. Discuss how the migration process can integrate into the team's regular cadence. Establish dedicated channels of communication for migration, and involve the broader team as needed.
+
+### Migrate in a dedicated branch.
+Rather than trying to upgrade piece-by-piece on the production build, the Carbon team recommends that product teams perform the migration first in a separate branch (or branches). This allows design and dev to work together and iron out any rough spots that may appear in the UI after upgrading. Don't push to production until the product matches the look and feel of the new IBM Design Language.
+
+### First things first.
+The Carbon team recommends tackling components, colors, type, spacing, and iconography first. These updates should be relatively straightforward. Aligning to the new grid will be a more design-intensive exercise, and can be tackled after the other elements.
 
 ## Carbon components
 
-Carbon components have been completely re-skinned for the new IBM Design Language. However, the redesign was conducted with maximum backwards-compatibility in mind. Users of v9 should be able to upgrade to v10 automatically with minimal breakage. [View the changelog](https://github.com/IBM/carbon-components/releases/) for more information about which components have significant changes from v9.
-
-Detailed technical migration docs for Carbon components are available in their respective repos. Migration information for each individual component is available in the folder for that component on the repo as well. For example, migration docs specific to the accordion component can be found [here](https://github.com/IBM/carbon-components/blob/master/src/components/accordion/migrate-to-10.x.md).
+Carbon components have been completely re-skinned for the new IBM Design Language. However, the redesign was conducted with maximum backwards-compatibility in mind. Users of v9 should be able to upgrade to v10 automatically with minimal breakage.
 
 ### carbon-components
+
+Detailed technical migration docs for Carbon vanilla components are available in the [carbon-components repo](https://github.com/IBM/carbon-components/blob/master/docs/migration/migrate-to-10.x.md). Here you will find links to component-level migration information, as well as a list of those components that have been removed or are under development.
 
 [Scss globals migration tables](https://github.com/IBM/carbon-components/blob/master/src/globals/scss/migrate-to-10.x.md) are available and cover _colors.scss, _css--body.scss, _css--font-face.scss, _css--plex-core.scss, _css--reset.scss, _css--typography.scss, _feature-flags.scss, _functions.scss, _helper-classes.scss, _helper-mixins.scss, _import-once.scss, _layer.scss, _layout.scss, _mixins.scss, _spacing.scss, _theme-tokens.scss, _theme.scss, _typography.scss, _vars.scss
 
@@ -41,11 +55,13 @@ React-specific technical migration docs are available [here](https://github.com/
 
 ## Carbon Elements
 
+All technical migration docs for the carbon-elements repo are available in the [repo's docs folder](https://github.com/IBM/carbon-elements/tree/master/docs/migration).
+
 ### Icons
 
 Carbon icons have undergone a major update for v10. The new home for the @carbon/icons package can be found [here](https://github.com/IBM/carbon-elements/tree/master/packages/colors). The carbon-icons repo that was used in previous releases of Carbon has been deprecated. 
 
-The icons migration table for developers can be found [here](https://github.com/IBM/carbon-elements/blob/master/docs/migration/10.x-icons.md)
+The icons migration table for developers can be found [here](https://github.com/IBM/carbon-elements/blob/master/docs/migration/10.x-icons.md).
 
 The [Carbon Icons ESM Demo](https://carbon-elements.netlify.com/icons/examples/preview/) contains a master table for all Carbon icons, including name, size, preview, download links, quick links for filing issues, module name, and relative path.
 
@@ -73,17 +89,16 @@ Spacing values will see no change from Carbon v9, though the token names have ch
 
 [Migration table for grid](https://github.com/IBM/carbon-components/blob/master/src/globals/grid/migrate-to-10.x.md)
 
-[Spacing migration table](https://ibm.ent.box.com/notes/384159536126?s=06z8k6xsqum3ghr7njo1i30pzv8q3xi8)
+[Migration table for layout](https://github.com/IBM/carbon-elements/blob/master/docs/migration/10.x-layout.md)
 
 [Interactive grid examples](https://carbon-elements.netlify.com/grid/examples/preview/)
 
-[Layout package basic examples](https://carbon-elements.netlify.com/layout/examples/preview/)
 
 ## Motion
 
 Motion standards have been revised to meet the new IBM Design Language standards. Motion updates should be coordinated with the design team if possible.
 
-[Motion migration table](https://ibm.box.com/s/kl4veivvh8mqixv2t5qpu5q0seqjpeq8)
+[Motion migration table](https://github.com/IBM/carbon-elements/blob/master/docs/migration/10.x-motion.md)
 
 ## Feedback
 
@@ -92,4 +107,4 @@ To leave feedback for the Carbon team about this documentation, make suggestions
 Internal IBM users can also subscribe to the [#carbon-design-system Slack channel](https://ibm-studios.slack.com/messages/C0M053VPT/details/), which is monitored by the Carbon team and the broader Carbon community.
 
 
-_Last updated: 10 March 2019_
+_Last updated: 12 March 2019_
