@@ -35,7 +35,7 @@
   }
   ```
 
-  * add '-bw' to color name to get black and white bars appearing at top and bottom of color palette
+  * **add '-bw' to color name to get black and white bars appearing at top and bottom of color palette**
   
 
 * **top**
