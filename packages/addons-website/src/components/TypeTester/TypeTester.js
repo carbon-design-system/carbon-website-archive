@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Dropdown from 'carbon-components-react/lib/components/DropdownV2'
-// import TextArea from 'carbon-components-react/lib/components/TextArea'
 import Textarea from 'react-textarea-autosize'
 import InputRange from '@carbon/addons-website/src/components/InputRange'
 
@@ -11,19 +10,6 @@ const prefix = settings.prefix;
 
 
 const HEBREW = 'hebrew'
-
-// const ibmTypeCondensedCSS = css`
-//   /* .ibm-type-condensed does not exist in @ibmduo/type */
-//   .ibm-type-condensed,
-//   .ibm-type-condensed * {
-//     font-family: 'IBM Plex Sans Condensed' !important;
-//   }
-
-//   @media (max-width: ${breakpointsREM.sm}) {
-//     // margin-left: -1rem;
-//     // margin-right: -1rem;
-//   }
-// `
 
 const languageSample = [
   {
@@ -165,14 +151,12 @@ const languageDropdownContent = [
     className: 'ibm-type-italic',
     weights: commonFontWeights,
   },
-
   {
     label: 'IBM Plex Sans Thai',
     language: 'thai', 
     className: 'ibm-type-thai',
     weights: commonFontWeights, 
   },
-
   {
     label: 'IBM Plex Sans Devanagari',
     language: 'devanagari',
