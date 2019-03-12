@@ -20,6 +20,7 @@ module.exports = {
           default: require.resolve('./src/components/Layouts/index.js'),
         },
         globalScope: `
+        import '${__dirname}/src/polyfills';
         import { AnchorLinks } from '@carbon/addons-website';
         import { Row, Column } from '@carbon/addons-website';
         import { ImageComponent } from '@carbon/addons-website';
