@@ -9,8 +9,8 @@
   NOTE: importing a component and passing props to it into an mdx file only allows passing of a string. 
   Therefore, it is necessary to build an intermediery component to parse the string 
 
-  Example mdx file: using pipes to delineate each array to be controlled by the ContentSwitcher and commas 
-  to delineate each element in the array (use no spaces other than within the color names)
+  Example mdx file: using pipes to delineate each array, and commas 
+  to delineate each element inside each array (use no spaces other than within the color names)
 
   ```html
   <Widget palettes='red,magenta,purple|cool gray,gray,warm gray' />
