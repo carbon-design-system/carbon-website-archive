@@ -43,9 +43,10 @@ class NonLatinScript extends React.Component {
             disabled={disabled}
             className={classnames(
               `${prefix}--non-latin-type-example ${prefix}--type-display-03 ibm-type-regular`,
-              `${prefix}${customStyle}`,
+              
               className, {
-                'rtl': rtl
+                'rtl': rtl,
+                [`${prefix}${customStyle}`]: customStyle !== undefined || ''
               }
             )}
             value={
@@ -58,8 +59,9 @@ class NonLatinScript extends React.Component {
           <div
             className={classnames(
               `${prefix}--non-latin-type-example ${prefix}--type-display-03 ibm-type-regular`,
-              `${prefix}${customStyle}`, {
-                'rtl': rtl
+              {
+                'rtl': rtl,
+                [`${prefix}${customStyle}`]: customStyle !== undefined || ''
               }
             )}
           >
