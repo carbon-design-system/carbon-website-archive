@@ -556,20 +556,6 @@ const PALETTES = {
 const WHITE = PALETTES.white[0]
 const BLACK = PALETTES.black[100]
 const CUTOFF_POINT_FOR_DARK_TEXT = 50
-// const ALERTS = {
-//   green: {
-//     '50': PALETTES.green[50],
-//   },
-//   yellow: {
-//     '20': PALETTES.yellow[20],
-//   },
-//   orange: {
-//     '40': PALETTES.orange[40],
-//   },
-//   red: {
-//     '60': PALETTES.red[60],
-//   },
-// }
 const ALERTS = {
   alert: {
     '50': PALETTES.green[50],
@@ -637,7 +623,6 @@ const SwatchPalette = ({palette, format, showBW}) => {
       const hex = paletteObj[grade].hex
       const txtcolor = parseInt(grade) > CUTOFF_POINT_FOR_DARK_TEXT ? '#ffffff' : '#000000'
       const formatStr = formatValueString(paletteObj[grade], format)
-      // console.log(palette, grade, formatStr)
       return <Swatch key={grade} name={`${palette} ${grade}`} 
                     hex={hex} 
                     txtcolor={txtcolor} 
