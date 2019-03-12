@@ -60,8 +60,8 @@ class SwatchPaletteWidget extends Component {
           </div>
         </div>
         {palettes.map((palette, i) => {
-          return (<div key={i} className={`ibm--row ${prefix}--swatch-palettes`}>
-            <div className="ibm--col-lg-12 ibm--col-md-8 ibm--offset-lg-4 ibm--col-bleed">
+          return (<div key={i} className='ibm--row'>
+            <div className={`ibm--col-lg-12 ibm--col-md-8 ibm--offset-lg-4 ibm--col-bleed ${prefix}--swatch-palettes`}>
               {palette.map( color => {
                 const col = color.split('-')
                 const showBW = (col[1] === 'bw') 
