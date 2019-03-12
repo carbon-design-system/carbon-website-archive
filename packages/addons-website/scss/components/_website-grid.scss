@@ -21,19 +21,19 @@
     }
   }
 
-  .ibm--no-gutter--left--lg {
+  .ibm--no-gutter-lg--left {
     @include breakpoint('lg') {
       padding-left: 0;
     }
   }
 
-  .ibm--no-gutter--left--md {
+  .ibm--no-gutter-md--left {
     @include breakpoint('md') {
       padding-left: 0;
     }
   }
 
-  .ibm--no-gutter--left--sm {
+  .ibm--no-gutter-sm--left {
     @include breakpoint('sm') {
       padding-left: 0;
     }
