@@ -742,6 +742,7 @@ class BreakpointChanger extends React.Component {
   };
 
   render() {
+    const {navBar, banner} = this.props
     const buttons = Object.keys(breakpoints).map(breakpointName => {
       return (
         <button
@@ -769,7 +770,7 @@ class BreakpointChanger extends React.Component {
       <div className={`${prefix}--breakpoint-changer-container ibm--offset-lg-4`}>
         <div
           className={`${prefix}--breakpoint-changer-typeset-examples-container`}>
-          <StickyContainer visible={false}>
+          <StickyContainer navBar={navBar} banner={banner}>
             <div
               className={`${prefix}--breakpoint-changer-group-title-container ${prefix}--row`}>
               <div
@@ -824,7 +825,7 @@ class BreakpointChanger extends React.Component {
           </div>
         </div>
         <div className={`${prefix}--breakpoint-changer-section-spacer`} />
-        <StickyContainer visible={false}>
+        <StickyContainer navBar={navBar} banner={banner}>
           <div
             className={`${prefix}--breakpoint-changer-group-title-container ${prefix}--row`}>
             <div

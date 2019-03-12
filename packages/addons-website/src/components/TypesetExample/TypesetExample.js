@@ -3,6 +3,7 @@ import { settings } from 'carbon-components';
 import classnames from 'classnames';
 import { findKey, values } from 'lodash';
 import { baseFontSize, breakpoints as carbonBreakpoints } from '@carbon/layout';
+import { CodeSnippet } from 'carbon-components-react';
 
 const { prefix } = settings;
 
@@ -143,7 +144,7 @@ const TypesetExample = props => {
               </div>
               <div
                 className={`${prefix}--typeset-example-specs ${prefix}--col-md-4 ibm-padding`}>
-                <p className={`${prefix}--type-body-short-01`}>
+                <span className={`${prefix}--type-body-short-01`}>
                   <span className={`${prefix}--type-semibold`}>
                     {type.name}{' '}
                   </span>
@@ -174,10 +175,10 @@ const TypesetExample = props => {
                   ) : (
                     <br />
                   )}
-                  <code className={`${prefix}--snippet--inline`}>
-                    ${type.name}
-                  </code>
-                </p>
+                  <div className={`${prefix}--typeset-example-code-style`}>
+                    <CodeSnippet type="inline">${type.name}</CodeSnippet>
+                  </div>
+                </span>
               </div>
             </div>
           </div>
