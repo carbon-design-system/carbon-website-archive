@@ -4,9 +4,11 @@
   position: relative;
   margin-left: -1rem;
   margin-right: -1rem;
+  padding: 0 .5rem;
   @include breakpoint('md') {
-    margin-left: 0;
-    margin-right: 0;
+    padding: 0;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
   }
 }
 
