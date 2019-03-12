@@ -766,7 +766,7 @@ class BreakpointChanger extends React.Component {
     });
 
     return (
-      <div className={`${prefix}--breakpoint-changer-container`}>
+      <div className={`${prefix}--breakpoint-changer-container ibm--offset-lg-4`}>
         <div
           className={`${prefix}--breakpoint-changer-typeset-examples-container`}>
           <StickyContainer visible={false}>
@@ -778,48 +778,50 @@ class BreakpointChanger extends React.Component {
               </div>
             </div>
           </StickyContainer>
-          <TypesetExample
-            simulatedScreenWidth={this.state.simulatedScreenWidth}
-            name="caption"
-            typeSet={typeSets['caption']}
-            typeScale={typeScale}
-          />
-          <TypesetExample
-            simulatedScreenWidth={this.state.simulatedScreenWidth}
-            name="label"
-            typeSet={typeSets['label']}
-            typeScale={typeScale}
-          />
-          <TypesetExample
-            simulatedScreenWidth={this.state.simulatedScreenWidth}
-            name="helperText"
-            typeSet={typeSets['helperText']}
-            typeScale={typeScale}
-          />
-          <TypesetExample
-            simulatedScreenWidth={this.state.simulatedScreenWidth}
-            name="code"
-            typeSet={typeSets['code']}
-            typeScale={typeScale}
-          />
-          <TypesetExample
-            simulatedScreenWidth={this.state.simulatedScreenWidth}
-            name="body"
-            typeSet={typeSets['body']}
-            typeScale={typeScale}
-          />
-          <TypesetExample
-            simulatedScreenWidth={this.state.simulatedScreenWidth}
-            name="heading"
-            typeSet={typeSets['heading']}
-            typeScale={typeScale}
-          />
-          <TypesetExample
-            simulatedScreenWidth={this.state.simulatedScreenWidth}
-            name="productHeading"
-            typeSet={typeSets['productHeading']}
-            typeScale={typeScale}
-          />
+          <div>
+            <TypesetExample
+              simulatedScreenWidth={this.state.simulatedScreenWidth}
+              name="caption"
+              typeSet={typeSets['caption']}
+              typeScale={typeScale}
+            />
+            <TypesetExample
+              simulatedScreenWidth={this.state.simulatedScreenWidth}
+              name="label"
+              typeSet={typeSets['label']}
+              typeScale={typeScale}
+            />
+            <TypesetExample
+              simulatedScreenWidth={this.state.simulatedScreenWidth}
+              name="helperText"
+              typeSet={typeSets['helperText']}
+              typeScale={typeScale}
+            />
+            <TypesetExample
+              simulatedScreenWidth={this.state.simulatedScreenWidth}
+              name="code"
+              typeSet={typeSets['code']}
+              typeScale={typeScale}
+            />
+            <TypesetExample
+              simulatedScreenWidth={this.state.simulatedScreenWidth}
+              name="body"
+              typeSet={typeSets['body']}
+              typeScale={typeScale}
+            />
+            <TypesetExample
+              simulatedScreenWidth={this.state.simulatedScreenWidth}
+              name="heading"
+              typeSet={typeSets['heading']}
+              typeScale={typeScale}
+            />
+            <TypesetExample
+              simulatedScreenWidth={this.state.simulatedScreenWidth}
+              name="productHeading"
+              typeSet={typeSets['productHeading']}
+              typeScale={typeScale}
+            />
+          </div>
         </div>
         <div className={`${prefix}--breakpoint-changer-section-spacer`} />
         <StickyContainer visible={false}>
