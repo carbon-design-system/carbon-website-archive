@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import { settings } from 'carbon-components';
 import { baseFontSize, breakpoints as carbonBreakpoints } from '@carbon/layout';
 import { findLastIndex, values } from 'lodash';
@@ -742,7 +743,7 @@ class BreakpointChanger extends React.Component {
   };
 
   render() {
-    const {navBar, banner} = this.props
+    const {navBar, banner, secondary} = this.props
     const buttons = Object.keys(breakpoints).map(breakpointName => {
       return (
         <button
@@ -770,7 +771,7 @@ class BreakpointChanger extends React.Component {
       <div className={`${prefix}--breakpoint-changer-container ibm--offset-lg-4`}>
         <div
           className={`${prefix}--breakpoint-changer-typeset-examples-container`}>
-          <StickyContainer navBar={navBar} banner={banner}>
+          <StickyContainer navBar={navBar || true} banner={banner || true} secondary={secondary || false}>
             <div
               className={`${prefix}--breakpoint-changer-group-title-container ${prefix}--row`}>
               <div
@@ -825,7 +826,7 @@ class BreakpointChanger extends React.Component {
           </div>
         </div>
         <div className={`${prefix}--breakpoint-changer-section-spacer`} />
-        <StickyContainer navBar={navBar} banner={banner}>
+        <StickyContainer navBar={navBar || true} banner={banner || true} secondary={secondary || false}>
           <div
             className={`${prefix}--breakpoint-changer-group-title-container ${prefix}--row`}>
             <div
@@ -904,3 +905,15 @@ class BreakpointChanger extends React.Component {
 }
 
 export default BreakpointChanger;
+
+// these props are passed onto the sticky container
+BreakpointChanger.propTypes = {
+  // if site has banner at top ( ex. go to v1)
+  banner: PropTypes.bool,
+
+  // if page navBar is showing / hiding, toggle this on/off
+  navBar: PropTypes.bool,
+
+  // for items that are on pages that already have a sticky item
+  secondary: PropTypes.bool
+}
