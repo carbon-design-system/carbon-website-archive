@@ -14,10 +14,7 @@ const languageDropdownContent = [
     className: 'ibm-type-arabic',
     weights: commonFontWeights,
   }
-].map(variant => {
-  variant.value = variant.label.toLowerCase().replace(/ /g, '-')
-  return variant
-})
+].map(...)
 ```
 
 * Add a new display text object to `languageSample` array:
