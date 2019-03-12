@@ -14,7 +14,7 @@ const typeScale = {
   'caption-01': {
     sm: {
       step: 1,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '400',
       'font-size': 0.75,
       'line-height': 1,
@@ -24,7 +24,7 @@ const typeScale = {
   'label-01': {
     sm: {
       step: 1,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '400',
       'font-size': 0.75,
       'line-height': 1,
@@ -34,7 +34,7 @@ const typeScale = {
   'helper-text-01': {
     sm: {
       step: 1,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '400',
       'font-style': 'italic',
       'font-size': 0.75,
@@ -46,7 +46,7 @@ const typeScale = {
   'body-short-01': {
     sm: {
       step: 2,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '400',
       'font-size': 0.875,
       'line-height': 1.125,
@@ -56,7 +56,7 @@ const typeScale = {
   'body-short-02': {
     sm: {
       step: 3,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '400',
       'font-size': 1,
       'line-height': 1.375,
@@ -66,7 +66,7 @@ const typeScale = {
   'body-long-01': {
     sm: {
       step: 2,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '400',
       'font-size': 0.875,
       'line-height': 1.25,
@@ -76,7 +76,7 @@ const typeScale = {
   'body-long-02': {
     sm: {
       step: 3,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '400',
       'font-size': 1,
       'line-height': 1.5,
@@ -86,7 +86,7 @@ const typeScale = {
   'code-01': {
     sm: {
       step: 1,
-      font: 'PlexMono',
+      font: 'IBM Plex Mono',
       'font-weight': '400',
       'font-size': 0.75,
       'line-height': 1,
@@ -96,7 +96,7 @@ const typeScale = {
   'code-02': {
     sm: {
       step: 1,
-      font: 'PlexMono',
+      font: 'IBM Plex Mono',
       'font-weight': '400',
       'font-size': 0.875,
       'line-height': 1.25,
@@ -106,7 +106,7 @@ const typeScale = {
   'heading-01': {
     sm: {
       step: 2,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '600',
       'font-size': 0.875,
       'line-height': 1.125,
@@ -116,7 +116,7 @@ const typeScale = {
   'heading-02': {
     sm: {
       step: 3,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '600',
       'font-size': 1,
       'line-height': 1.375,
@@ -126,7 +126,7 @@ const typeScale = {
   'heading-03': {
     sm: {
       step: 3,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '600',
       'font-size': 1.25,
       'line-height': 1.625,
@@ -136,7 +136,7 @@ const typeScale = {
   'productive-heading-04': {
     sm: {
       step: 7,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '400',
       'font-size': 1.75,
       'line-height': 2.25,
@@ -146,7 +146,7 @@ const typeScale = {
   'productive-heading-05': {
     sm: {
       step: 8,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '400',
       'font-size': 2,
       'line-height': 2.5,
@@ -157,7 +157,7 @@ const typeScale = {
   'expressive-heading-04': {
     sm: {
       step: 7,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '400',
       'font-size': 1.75,
       'line-height': 2.25,
@@ -165,7 +165,7 @@ const typeScale = {
     },
     md: {
       step: 7,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '400',
       'font-size': 1.75,
       'line-height': 2.25,
@@ -173,7 +173,7 @@ const typeScale = {
     },
     lg: {
       step: 7,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '400',
       'font-size': 1.75,
       'line-height': 2.25,
@@ -181,7 +181,7 @@ const typeScale = {
     },
     xlg: {
       step: 8,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '400',
       'font-size': 2,
       'line-height': 2.5,
@@ -189,7 +189,7 @@ const typeScale = {
     },
     max: {
       step: 8,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '400',
       'font-size': 2,
       'line-height': 2.5,
@@ -200,7 +200,7 @@ const typeScale = {
   'expressive-heading-05': {
     sm: {
       step: 8,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '400',
       'font-size': 2,
       'line-height': 2.5,
@@ -208,7 +208,7 @@ const typeScale = {
     },
     md: {
       step: 9,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '400',
       'font-size': 2.25,
       'line-height': 2.75,
@@ -216,7 +216,7 @@ const typeScale = {
     },
     lg: {
       step: 10,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '400',
       'font-size': 2.625,
       'line-height': 3.125,
@@ -224,7 +224,7 @@ const typeScale = {
     },
     xlg: {
       step: 11,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '400',
       'font-size': 3,
       'line-height': 3.5,
@@ -232,7 +232,7 @@ const typeScale = {
     },
     max: {
       step: 13,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '300',
       'font-size': 3.75,
       'line-height': 4.375,
@@ -242,7 +242,7 @@ const typeScale = {
   'expressive-paragraph-01': {
     sm: {
       step: 6,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '300',
       'font-size': 1.5,
       'line-height': 1.875,
@@ -250,7 +250,7 @@ const typeScale = {
     },
     md: {
       step: 6,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '300',
       'font-size': 1.5,
       'line-height': 1.875,
@@ -258,7 +258,7 @@ const typeScale = {
     },
     lg: {
       step: 7,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '300',
       'font-size': 1.75,
       'line-height': 2.25,
@@ -266,7 +266,7 @@ const typeScale = {
     },
     xlg: {
       step: 7,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '300',
       'font-size': 1.75,
       'line-height': 2.25,
@@ -274,7 +274,7 @@ const typeScale = {
     },
     max: {
       step: 8,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '300',
       'font-size': 2,
       'line-height': 2.5,
@@ -284,7 +284,7 @@ const typeScale = {
   'quotation-01': {
     sm: {
       step: 5,
-      font: 'PlexSerif',
+      font: 'IBM Plex Serif',
       'font-weight': '400',
       'font-size': 1.25,
       'line-height': 1.625,
@@ -292,7 +292,7 @@ const typeScale = {
     },
     md: {
       step: 5,
-      font: 'PlexSerif',
+      font: 'IBM Plex Serif',
       'font-weight': '400',
       'font-size': 1.25,
       'line-height': 1.625,
@@ -300,7 +300,7 @@ const typeScale = {
     },
     lg: {
       step: 6,
-      font: 'PlexSerif',
+      font: 'IBM Plex Serif',
       'font-weight': '400',
       'font-size': 1.5,
       'line-height': 1.875,
@@ -308,7 +308,7 @@ const typeScale = {
     },
     xlg: {
       step: 7,
-      font: 'PlexSerif',
+      font: 'IBM Plex Serif',
       'font-weight': '300',
       'font-size': 1.75,
       'line-height': 2.25,
@@ -316,7 +316,7 @@ const typeScale = {
     },
     max: {
       step: 8,
-      font: 'PlexSerif',
+      font: 'IBM Plex Serif',
       'font-weight': '300',
       'font-size': 2,
       'line-height': 2.5,
@@ -326,7 +326,7 @@ const typeScale = {
   'quotation-02': {
     sm: {
       step: 8,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '300',
       'font-size': 2,
       'line-height': 2.5,
@@ -334,7 +334,7 @@ const typeScale = {
     },
     md: {
       step: 9,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '300',
       'font-size': 2.25,
       'line-height': 2.75,
@@ -342,7 +342,7 @@ const typeScale = {
     },
     lg: {
       step: 10,
-      font: 'PlexSerif',
+      font: 'IBM Plex Serif',
       'font-weight': '300',
       'font-size': 2.625,
       'line-height': 3.125,
@@ -350,7 +350,7 @@ const typeScale = {
     },
     xlg: {
       step: 11,
-      font: 'PlexSerif',
+      font: 'IBM Plex Serif',
       'font-weight': '300',
       'font-size': 3,
       'line-height': 3.5,
@@ -358,7 +358,7 @@ const typeScale = {
     },
     max: {
       step: 13,
-      font: 'PlexSerif',
+      font: 'IBM Plex Serif',
       'font-weight': '300',
       'font-size': 3.75,
       'line-height': 4.375,
@@ -368,7 +368,7 @@ const typeScale = {
   'display-01': {
     sm: {
       step: 10,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '300',
       'font-size': 2.625,
       'line-height': 3.125,
@@ -377,7 +377,7 @@ const typeScale = {
     },
     md: {
       step: 10,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '300',
       'font-size': 2.625,
       'line-height': 3.125,
@@ -386,7 +386,7 @@ const typeScale = {
     },
     lg: {
       step: 12,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '300',
       'font-size': 3.375,
       'line-height': 4,
@@ -395,7 +395,7 @@ const typeScale = {
     },
     xlg: {
       step: 13,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '300',
       'font-size': 3.75,
       'line-height': 4.375,
@@ -404,7 +404,7 @@ const typeScale = {
     },
     max: {
       step: 15,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '300',
       'font-size': 4.75,
       'line-height': 5.375,
@@ -415,7 +415,7 @@ const typeScale = {
   'display-02': {
     sm: {
       step: 10,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '600',
       'font-size': 2.625,
       'line-height': 3.125,
@@ -424,7 +424,7 @@ const typeScale = {
     },
     md: {
       step: 10,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '600',
       'font-size': 2.625,
       'line-height': 3.125,
@@ -433,7 +433,7 @@ const typeScale = {
     },
     lg: {
       step: 12,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '600',
       'font-size': 3.375,
       'line-height': 4,
@@ -442,7 +442,7 @@ const typeScale = {
     },
     xlg: {
       step: 13,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '600',
       'font-size': 3.75,
       'line-height': 4.375,
@@ -451,7 +451,7 @@ const typeScale = {
     },
     max: {
       step: 15,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '600',
       'font-size': 4.75,
       'line-height': 5.375,
@@ -462,7 +462,7 @@ const typeScale = {
   'display-03': {
     sm: {
       step: 10,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '300',
       'font-size': 2.625,
       'line-height': 3.125,
@@ -471,7 +471,7 @@ const typeScale = {
     },
     md: {
       step: 14,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '300',
       'font-size': 4.25,
       'line-height': 4.875,
@@ -480,7 +480,7 @@ const typeScale = {
     },
     lg: {
       step: 17,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '300',
       'font-size': 5.75,
       'line-height': 6.375,
@@ -489,7 +489,7 @@ const typeScale = {
     },
     xlg: {
       step: 20,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '300',
       'font-size': 7.625,
       'line-height': 8.125,
@@ -498,7 +498,7 @@ const typeScale = {
     },
     max: {
       step: 23,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '300',
       'font-size': 9.75,
       'line-height': 10.25,
@@ -509,7 +509,7 @@ const typeScale = {
   'display-04': {
     sm: {
       step: 10,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '600',
       'font-size': 2.625,
       'line-height': 3.125,
@@ -518,7 +518,7 @@ const typeScale = {
     },
     md: {
       step: 14,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '600',
       'font-size': 4.25,
       'line-height': 4.875,
@@ -527,7 +527,7 @@ const typeScale = {
     },
     lg: {
       step: 17,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '600',
       'font-size': 5.75,
       'line-height': 6.375,
@@ -536,7 +536,7 @@ const typeScale = {
     },
     xlg: {
       step: 20,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '600',
       'font-size': 7.625,
       'line-height': 8.125,
@@ -545,7 +545,7 @@ const typeScale = {
     },
     max: {
       step: 23,
-      font: 'PlexSans',
+      font: 'IBM Plex Sans',
       'font-weight': '600',
       'font-size': 9.75,
       'line-height': 10.25,

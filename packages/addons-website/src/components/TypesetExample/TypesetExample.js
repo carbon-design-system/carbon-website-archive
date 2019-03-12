@@ -109,15 +109,15 @@ const TypesetExample = props => {
           ),
           fontSize:
             `${calculateFluidTypeSize('font-size')}px` +
-            ' (' +
-            currentBreakpointSpecs['font-size'] +
-            `rem)`,
+            ' / ' +
+            currentBreakpointSpecs['font-size'].toString().replace('0.', '.') +
+            `rem`,
           lineHeight:
             `${calculateFluidLineHeight('line-height')}px` +
-            ` (` +
+            ` / ` +
             currentBreakpointSpecs['line-height'] +
-            `rem)`,
-          letterSpacing: currentBreakpointSpecs['letter-spacing'],
+            `rem`,
+          letterSpacing: currentBreakpointSpecs['letter-spacing'].toString().replace('0.', '.'),
           warning: currentBreakpointSpecs['warning'],
         };
 
@@ -149,20 +149,18 @@ const TypesetExample = props => {
                     {type.name}{' '}
                   </span>
                   <br />
-                  Step: {displaySpecs['step']}
+                  Type: {displaySpecs['font']}
                   <br />
-                  Font: {displaySpecs['font']}
+                  Size: {displaySpecs['fontSize']}
+                  <br />
+                  Line-height: {displaySpecs['lineHeight']}
                   <br />
                   Weight:{' '}
                   <span style={{ textTransform: 'capitalize' }}>
                     {displaySpecs['fontWeight']}
                   </span>
                   <br />
-                  Size: {displaySpecs['fontSize']}
-                  <br />
-                  Line-height: {displaySpecs['lineHeight']}
-                  <br />
-                  Letter-spacing: {displaySpecs['letterSpacing']}rem
+                  Letter-spacing: {displaySpecs['letterSpacing']}px
                   {displaySpecs['warning'] != null ? (
                     <span>
                       <br />
