@@ -1,39 +1,39 @@
-// Bleed class names
+// No gutter class names
 .container {
-  .ibm--bleed-lg {
+  .ibm--no-gutter-lg {
     @include breakpoint('lg') {
       padding-left: 0;
       padding-right: 0;
     }
   }
 
-  .ibm--bleed-md {
+  .ibm--no-gutter-md {
     @include breakpoint('md') {
       padding-left: 0;
       padding-right: 0;
     }
   }
 
-  .ibm--bleed-sm {
+  .ibm--no-gutter-sm {
     @include breakpoint('sm') {
       padding-left: 0;
       padding-right: 0;
     }
   }
 
-  .ibm--bleed-left-lg {
+  .ibm--no-gutter--left-lg {
     @include breakpoint('lg') {
       padding-left: 0;
     }
   }
 
-  .ibm--bleed-left-md {
+  .ibm--no-gutter--left-md {
     @include breakpoint('md') {
       padding-left: 0;
     }
   }
 
-  .ibm--bleed-left-sm {
+  .ibm--no-gutter--left-sm {
     @include breakpoint('sm') {
       padding-left: 0;
     }

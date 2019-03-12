@@ -7,9 +7,9 @@ storiesOf('Grid', module).add(
   () => (
     <Grid>
       <Row>
-        <Column lg="4">one</Column>
-        <Column lg="4">two</Column>
-        <Column lg="4" offsetLg="4">
+        <Column colLg="4">one</Column>
+        <Column colLg="4">two</Column>
+        <Column colLg="4" offsetLg="4">
           three (offset)
         </Column>
       </Row>

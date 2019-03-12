@@ -149,7 +149,7 @@ export default class ColorTokenTable extends React.Component {
     });
     return (
       <div className="ibm--row color-token-table">
-        <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
+        <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--no-gutter">
           <ContentSwitcher
             className={themeSwitcherClasses}
             onChange={this.switchTheme}>
@@ -162,7 +162,7 @@ export default class ColorTokenTable extends React.Component {
         <div className="ibm--col-lg-7 ibm--offset-lg-4">
           <h3 className={h3Classes}>Core color tokens</h3>
         </div>
-        <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
+        <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--no-gutter">
           <table className="page-table">
             <thead>
               <tr>
@@ -185,7 +185,7 @@ export default class ColorTokenTable extends React.Component {
         <div className="ibm--col-lg-7 ibm--offset-lg-4">
           <h3 className="page-h3">Interactive color tokens</h3>
         </div>
-        <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
+        <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--no-gutter">
           <table className="page-table">
             <thead>
               <tr>

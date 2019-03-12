@@ -52,9 +52,9 @@ Row.propTypes = {
 
 export const Column = ({
   children,
-  sm,
-  md,
-  lg,
+  colSm,
+  colMd,
+  colLg,
   offsetLg,
   offsetMd,
   offsetSm,
@@ -67,18 +67,18 @@ export const Column = ({
   className,
 }) => {
   const colClasses = classnames({
-    'ibm--bleed-sm': bleedSm,
-    'ibm--bleed-md': bleedMd,
-    'ibm--bleed-lg': bleedLg,
-    'ibm--bleed-left-sm': bleedLeftSm,
-    'ibm--bleed-left-md': bleedLeftMd,
-    'ibm--bleed-left-lg': bleedLeftLg,
+    'ibm--no-gutter-sm': bleedSm,
+    'ibm--no-gutter-md': bleedMd,
+    'ibm--no-gutter-lg': bleedLg,
+    'ibm--no-gutter--left-sm': bleedLeftSm,
+    'ibm--no-gutter--left-md': bleedLeftMd,
+    'ibm--no-gutter--left-lg': bleedLeftLg,
     [`ibm--offset-sm-${offsetSm}`]: offsetSm,
     [`ibm--offset-md-${offsetMd}`]: offsetMd,
     [`ibm--offset-lg-${offsetLg}`]: offsetLg,
-    [`ibm--col-lg-${lg}`]: lg,
-    [`ibm--col-lg-${md}`]: md,
-    [`ibm--col-lg-${sm}`]: sm,
+    [`ibm--col-lg-${colLg}`]: colLg,
+    [`ibm--col-lg-${colMd}`]: colMd,
+    [`ibm--col-lg-${colSm}`]: colSm,
     [`${className} `]: className,
   });
 
@@ -86,7 +86,7 @@ export const Column = ({
 };
 
 Column.defaultProps = {
-  lg: '12',
+  colLg: '12',
   bleed: false,
 };
 
@@ -95,15 +95,15 @@ Column.propTypes = {
   /**
    * Specify the col width at small breakpoint
    */
-  sm: PropTypes.string,
+  colSm: PropTypes.string,
   /**
    * Specify the col width at medium breakpoint
    */
-  md: PropTypes.string,
+  colMd: PropTypes.string,
   /**
    * Specify the col width at large breakpoint
    */
-  lg: PropTypes.string,
+  colLg: PropTypes.string,
   /**
    * Specify the col offset at large breakpoint
    */

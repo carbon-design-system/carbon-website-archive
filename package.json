@@ -39,7 +39,7 @@
     "@mdx-js/mdx": "^0.16.6",
     "@mdx-js/tag": "^0.16.6",
     "@carbon/colors": "0.0.1-alpha.31",
-    "@carbon/grid": "0.0.1-alpha.32",
+    "@carbon/grid": "beta",
     "@carbon/icons-react": "0.0.1-alpha.31",
     "@carbon/import-once": "0.0.1-alpha.31",
     "@carbon/layout": "0.0.1-alpha.32",

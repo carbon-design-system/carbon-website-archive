@@ -39,7 +39,7 @@ export default class Snippet extends React.Component {
     const type = this.state.multi ? 'multi' : 'single';
     return (
       <div className="ibm--row">
-        <div className="ibm--col-lg-8 ibm--offset-lg-4 ibm--col-bleed">
+        <div className="ibm--col-lg-8 ibm--offset-lg-4 ibm--no-gutter">
           <div className="bx--snippet--website">
             <CopyToClipboard onCopy={() => this.setState({ copied: true })}>
               <CodeSnippet type={type}>
