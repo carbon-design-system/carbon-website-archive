@@ -112,14 +112,16 @@
 .#{$prefix}--type-tester-sample {
   width: 100%;
   background: $ui-02;
-  min-height: rem(240px);
-  .#{$prefix}--text-area {
+  // min-height: rem(240px);
+  .#{$prefix}--custom-textarea {
     font-size: 48px;
     resize: none;
     border: none;
+    width: 100%;
     height: auto;
     outline: none;
     background: $ui-02;
+    padding: 1rem;
     overflow:none;
     &::selection {
       background: $ibm-colors__purple-20;

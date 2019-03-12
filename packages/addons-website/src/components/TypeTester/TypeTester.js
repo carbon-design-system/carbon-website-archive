@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Dropdown from 'carbon-components-react/lib/components/DropdownV2'
-import TextArea from 'carbon-components-react/lib/components/TextArea'
-// import DropdownItem from 'carbon-components-react/lib/components/DropdownItem'
+// import TextArea from 'carbon-components-react/lib/components/TextArea'
+import Textarea from 'react-textarea-autosize'
 import InputRange from '@carbon/addons-website/src/components/InputRange'
 
 import { settings } from 'carbon-components';
@@ -185,11 +185,13 @@ const languageDropdownContent = [
 })
 
 class TypeTester extends Component {
+  
   state = {
     typeSizeMultiplier: 470,
     variant: 'ibm-plex-sans-hebrew',
     lastVariant: 'ibm-plex-sans-hebrew',
     fontWeight: 400,
+    textRows: 3,
     text: languageSample.find(el => el.language === 'hebrew').content,
     openDropdown: null,
   }
@@ -258,6 +260,7 @@ class TypeTester extends Component {
     return this.getLanguageForVariant(this.state.variant) === HEBREW
   }
 
+
   render() {
     const lineHeight = Math.max(
       (
@@ -267,65 +270,64 @@ class TypeTester extends Component {
         (this.state.typeSizeMultiplier / 100) * 1.025
       ).toFixed(4)
     )
+
     const textClasses = classnames(
-      `${prefix}--text-area`,
+      `${prefix}--custom-textarea`,
       this.getClassNameForVariant(this.state.variant)
     );
-    
+
     return (
-      <div className={`${prefix}--type-tester-container`}>
-        
-            <div className={`${prefix}--type-tester-menu`}>
-              <div className="dropdown_wrapper">
-                <Dropdown
-                  items={languageDropdownContent}
-                  label={this.state.variant}
-                  onChange={this.onLanguageDropdownChange}
-                  selected={this.state.variant}
-                  onChangeOpen={this.onChangeOpenDropdown.bind(
-                    null,
-                    'language-dropdown'
-                  )}
-                  open={this.state.openDropdown === 'language-dropdown'}
-                />
-                <Dropdown
-                  items={this.getWeightsForLanguage()}
-                  label={this.getLanguageForWeight(this.state.fontWeight)}
-                  onChange={this.onFontWeightDropdownChange}
-                  selected={this.state.fontWeight}
-                  onChangeOpen={this.onChangeOpenDropdown.bind(
-                    null,
-                    'weight-dropdown'
-                  )}
-                  open={this.state.openDropdown === 'weight-dropdown'}
-                />
-              </div>
-              <div className={`${prefix}--input-range-wrapper`}>
-                <InputRange
-                  className={`${prefix}--input-range`}
-                  min={100}
-                  max={1600}
-                  value={this.state.typeSizeMultiplier}
-                  onChange={e => {
-                    this.setState({ typeSizeMultiplier: Number(e.target.value) })
-                  }}
-                />
-              </div>
-            </div>
-            <div className={`${prefix}--type-tester-sample`}>
-              <textarea 
-                className={textClasses}
-                style={{
-                  fontSize: this.state.typeSizeMultiplier / 100 + 'em',
-                  lineHeight: lineHeight,
-                  fontWeight: this.state.fontWeight,
-                  direction: this.isRtl() ? 'rtl' : 'ltr'
-                }}
-                value={this.state.text}
-                onChange={e => this.setState({ text: e.target.value })}
-              />
-            </div>
-          
+      <div className={`${prefix}--type-tester-container`}>     
+        <div className={`${prefix}--type-tester-menu`}>
+          <div className="dropdown_wrapper">
+            <Dropdown
+              items={languageDropdownContent}
+              label={this.state.variant}
+              onChange={this.onLanguageDropdownChange}
+              selected={this.state.variant}
+              onChangeOpen={this.onChangeOpenDropdown.bind(
+                null,
+                'language-dropdown'
+              )}
+              open={this.state.openDropdown === 'language-dropdown'}
+            />
+            <Dropdown
+              items={this.getWeightsForLanguage()}
+              label={this.getLanguageForWeight(this.state.fontWeight)}
+              onChange={this.onFontWeightDropdownChange}
+              selected={this.state.fontWeight}
+              onChangeOpen={this.onChangeOpenDropdown.bind(
+                null,
+                'weight-dropdown'
+              )}
+              open={this.state.openDropdown === 'weight-dropdown'}
+            />
+          </div>
+          <div className={`${prefix}--input-range-wrapper`}>
+            <InputRange
+              className={`${prefix}--input-range`}
+              min={100}
+              max={1600}
+              value={this.state.typeSizeMultiplier}
+              onChange={e => {
+                this.setState({ typeSizeMultiplier: Number(e.target.value) })
+              }}
+            />
+          </div>
+        </div>
+        <div className={`${prefix}--type-tester-sample`}>
+          <Textarea 
+            className={textClasses}
+            style={{
+              fontSize: this.state.typeSizeMultiplier / 100 + 'em',
+              lineHeight: lineHeight,
+              fontWeight: this.state.fontWeight,
+              direction: this.isRtl() ? 'rtl' : 'ltr'
+            }}
+            value={this.state.text}
+            onChange={e => this.setState({ text: e.target.value })}
+          />
+        </div>      
       </div>
     )
   }
