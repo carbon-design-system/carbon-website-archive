@@ -58,21 +58,21 @@ export const Column = ({
   offsetLg,
   offsetMd,
   offsetSm,
-  bleedSm,
-  bleedMd,
-  bleedLg,
-  bleedLeftSm,
-  bleedLeftMd,
-  bleedLeftLg,
+  noGutterSm,
+  noGutterMd,
+  noGutterLg,
+  noGutterLeftSm,
+  noGutterLeftMd,
+  noGutterLeftLg,
   className,
 }) => {
   const colClasses = classnames({
-    'ibm--no-gutter-sm': bleedSm,
-    'ibm--no-gutter-md': bleedMd,
-    'ibm--no-gutter-lg': bleedLg,
-    'ibm--no-gutter--left-sm': bleedLeftSm,
-    'ibm--no-gutter--left-md': bleedLeftMd,
-    'ibm--no-gutter--left-lg': bleedLeftLg,
+    'ibm--no-gutter-sm': noGutterSm,
+    'ibm--no-gutter-md': noGutterMd,
+    'ibm--no-gutter-lg': noGutterLg,
+    'ibm--no-gutter--left--sm': noGutterLeftSm,
+    'ibm--no-gutter--left--md': noGutterLeftMd,
+    'ibm--no-gutter--left--lg': noGutterLeftLg,
     [`ibm--offset-sm-${offsetSm}`]: offsetSm,
     [`ibm--offset-md-${offsetMd}`]: offsetMd,
     [`ibm--offset-lg-${offsetLg}`]: offsetLg,
@@ -117,29 +117,29 @@ Column.propTypes = {
    */
   offsetSm: PropTypes.string,
   /**
-   * Specify a column bleed class
+   * Specify a no-gutter class
    */
-  bleedSm: PropTypes.boolean,
+  noGutterSm: PropTypes.boolean,
   /**
-   * Specify a column bleed class
+   * Specify a no-gutter class
    */
-  bleedMd: PropTypes.boolean,
+  noGutterMd: PropTypes.boolean,
   /**
-   * Specify a column bleed class
+   * Specify a no-gutter class
    */
-  bleedLg: PropTypes.boolean,
+  noGutterLg: PropTypes.boolean,
   /**
-   * Specify a column bleed class at small breakpoint
+   * Specify a no-gutter class at small breakpoint
    */
-  bleedLeftSm: PropTypes.boolean,
+  noGutterLeftSm: PropTypes.boolean,
   /**
-   * Specify a column bleed class at medium breakpoint
+   * Specify a no-gutter class at medium breakpoint
    */
-  bleedLeftMd: PropTypes.boolean,
+  noGutterLeftMd: PropTypes.boolean,
   /**
-   * Specify a column bleed class at large breakpoint
+   * Specify a no-gutter class at large breakpoint
    */
-  bleedLeftLg: PropTypes.boolean,
+  noGutterLeftLg: PropTypes.boolean,
   /**
    * Specify a class name for column
    */

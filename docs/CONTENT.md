@@ -157,12 +157,12 @@ lg | Specify the col width at large breakpoint
 offsetSm | Specify the col offset at small breakpoint
 offsetMd | Specify the col offset at medium breakpoint
 offsetLg | Specify the col offset at large breakpoint, defaults to 4
-bleedSm | Specify a column bleed class at small breakpoint
-bleedMd | Specify a column bleed class at medium breakpoint
-bleedLg | Specify a column bleed class at large breakpoint
-bleedLeftSm | Specify a column bleed left class at small breakpoint
-bleedLeftMd | Specify a column bleed left class at medium breakpoint
-bleedLeftLg | Specify a column bleed left class at large breakpoint
+noGutterSm | Specify a no-gutter class at small breakpoint
+noGutterMd | Specify a no-gutter class at medium breakpoint
+noGutterLg | Specify a no-gutter class at large breakpoint
+noGutterLeftSm | Specify a no-gutter left class at small breakpoint
+noGutterLeftMd | Specify a no-gutter left class at medium breakpoint
+noGutterLeftLg | Specify a no-gutter left class at large breakpoint
 className | Set a custom class 
 ```
 <Row className="optional-class-name">
