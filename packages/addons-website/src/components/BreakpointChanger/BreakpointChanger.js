@@ -824,7 +824,7 @@ class BreakpointChanger extends React.Component {
             />
           </div>
         </div>
-        <StickyContainer navBar={navBar || true} banner={banner || true} secondary={secondary || false}>
+        <StickyContainer navBar={navBar || true} banner={banner || true} secondary={secondary || false} top={top || null}>
           <div className={`${prefix}--breakpoint-changer-title-shiv ${prefix}--row`}></div>
           <div
             className={`${prefix}--breakpoint-changer-controls-sticky ${prefix}--row`}>
@@ -913,5 +913,8 @@ BreakpointChanger.propTypes = {
   navBar: PropTypes.bool,
 
   // for items that are on pages that already have a sticky item
-  secondary: PropTypes.bool
+  secondary: PropTypes.bool,
+
+  // if custom top is necessary, must include units - (rem, px, etc)
+  top: PropTypes.string
 }
