@@ -3,3 +3,4 @@ export { default as WebsiteSwitcher } from './components/WebsiteSwitcher';
 export { default as FourOhFour } from './components/404';
 export { default as WebsiteBackToTopBtn } from './components/WebsiteBackToTopBtn';
 export { Row, Column } from './components/Grid';
+export { default as AnchorLinks } from './components/AnchorLinks';

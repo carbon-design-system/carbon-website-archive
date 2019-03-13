@@ -19,35 +19,35 @@ module.exports = {
           default: require.resolve('./src/components/Layouts/index.js'),
         },
         globalScope: `
-        import AnchorLinks from '${__dirname}/src/components/AnchorLinks';
+        import { AnchorLinks } from '@carbon/addons-website';
+        import { Row, Column } from '@carbon/addons-website';
         import ClickableTile from '${__dirname}/src/components/ClickableTile';
         import FeatureTile from '${__dirname}/src/components/FeatureTile';
-        import DoDontExample from '${__dirname}/src/components/DoDontExample';
-        import ComponentCode from '${__dirname}/src/components/ComponentCode';
-        import ComponentReact from '${__dirname}/src/components/ComponentReact';
-        import ComponentDocs from '${__dirname}/src/components/ComponentDocs';
-        import ImageComponent from '${__dirname}/src/components/ImageComponent';
         import ColorBlock from '${__dirname}/src/components/ColorBlock';
-        import WebsiteTabs from '${__dirname}/src/components/WebsiteTabs';
+        import ComponentCode from '${__dirname}/src/components/ComponentCode';
+        import ComponentDocs from '${__dirname}/src/components/ComponentDocs';
+        import ComponentReact from '${__dirname}/src/components/ComponentReact';
+        import DoDontExample from '${__dirname}/src/components/DoDontExample';
+        import ImageComponent from '${__dirname}/src/components/ImageComponent';
         import SimpleColumns from '${__dirname}/src/components/SimpleColumns';
         import Video from '${__dirname}/src/components/Video';
-        import { Row, Column } from '@carbon/addons-website';
-
+        import WebsiteTabs from '${__dirname}/src/components/WebsiteTabs';
+        
         export default {
           AnchorLinks,
-          WebsiteTabs,
-          SimpleColumns,
           ClickableTile,
+          ColorBlock,
+          ComponentCode,
+          ComponentDocs,
+          ComponentReact,
           FeatureTile,
           DoDontExample,
           ImageComponent,
-          ComponentDocs,
-          ComponentCode,
-          ComponentReact,
-          ColorBlock,
+          SimpleColumns,
           Video,
           Row,
-          Column
+          Column,
+          WebsiteTabs,
         };
       `,
         gatsbyRemarkPlugins: [
