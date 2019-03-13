@@ -5,6 +5,8 @@
   margin-left: -1rem;
   margin-right: -1rem;
   padding: 0 .5rem;
+  margin-top: -1rem;
+
   @include breakpoint('md') {
     padding: 0;
     margin-left: -0.5rem;
@@ -160,10 +162,20 @@
   margin-bottom: calc(1rem + 1px);
 }
 
-.#{$prefix}--breakpoint-changer-group-title-container {
+.#{$prefix}--breakpoint-changer-title-shiv {
+  padding-top: 1rem;
   background-color: $ibm-colors__gray-10;
+}
+
+.#{$prefix}--breakpoint-changer-group-title-container {
+  background-color: $ibm-colors__white-0;
   height: 3rem;
   padding: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid $ibm-colors__gray-20;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
 }
 
 .#{$prefix}--breakpoint-changer-group-title {

@@ -743,7 +743,7 @@ class BreakpointChanger extends React.Component {
   };
 
   render() {
-    const {navBar, banner, secondary} = this.props
+    const {navBar, banner, secondary, top } = this.props
     const buttons = Object.keys(breakpoints).map(breakpointName => {
       return (
         <button
@@ -769,15 +769,14 @@ class BreakpointChanger extends React.Component {
 
     return (
       <div className={`${prefix}--breakpoint-changer-container ibm--offset-lg-4`}>
-        <div
-          className={`${prefix}--breakpoint-changer-typeset-examples-container`}>
-          <StickyContainer navBar={navBar || true} banner={banner || true} secondary={secondary || false}>
+        <div>
+          <StickyContainer navBar={navBar || true} banner={banner || true} secondary={secondary || false} top={top || null}>
+            <div className={`${prefix}--breakpoint-changer-title-shiv ${prefix}--row`}></div>
             <div
               className={`${prefix}--breakpoint-changer-group-title-container ${prefix}--row`}>
-              <div
-                className={`${prefix}--breakpoint-changer-typeset-examples-container ${prefix}--type-heading-02 ibm-type-semibold`}>
+              <span className={`${prefix}--type-heading-02 ibm-type-semibold`}>
                 Productive
-              </div>
+              </span>
             </div>
           </StickyContainer>
           <div>
@@ -825,15 +824,8 @@ class BreakpointChanger extends React.Component {
             />
           </div>
         </div>
-        <div className={`${prefix}--breakpoint-changer-section-spacer`} />
         <StickyContainer navBar={navBar || true} banner={banner || true} secondary={secondary || false}>
-          <div
-            className={`${prefix}--breakpoint-changer-group-title-container ${prefix}--row`}>
-            <div
-              className={`${prefix}--breakpoint-changer-typeset-examples-container ${prefix}--type-heading-02 ibm-type-semibold`}>
-              Expressive
-            </div>
-          </div>
+          <div className={`${prefix}--breakpoint-changer-title-shiv ${prefix}--row`}></div>
           <div
             className={`${prefix}--breakpoint-changer-controls-sticky ${prefix}--row`}>
             <div
@@ -868,9 +860,15 @@ class BreakpointChanger extends React.Component {
               </label>
             </div>
           </div>
+          <div className={`${prefix}--breakpoint-changer-title-shiv ${prefix}--row`}></div>
+          <div
+            className={`${prefix}--breakpoint-changer-group-title-container ${prefix}--row`}>
+            <span className={`${prefix}--type-heading-02 ibm-type-semibold`}>
+              Expressive
+            </span>
+          </div>
         </StickyContainer>
-        <div
-          className={`${prefix}--breakpoint-changer-typeset-examples-container`}>
+        <div>
           <TypesetExample
             simulatedScreenWidth={this.state.simulatedScreenWidth}
             name="fluidHeading"
