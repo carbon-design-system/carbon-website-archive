@@ -170,13 +170,3 @@ export default class TypefaceSubFamilies extends React.Component {
     };
   };
 
-TypefaceSubFamilies.propTypes = {
-  /**
-   * Specify an array of links
-   */
-};
-
-TypefaceSubFamilies.defaultProps = {
-
-};
-
