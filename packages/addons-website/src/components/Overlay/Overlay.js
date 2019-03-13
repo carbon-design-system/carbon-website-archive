@@ -37,7 +37,7 @@ export default class Overlay extends React.Component {
     render() {
         const image = this.getImage(this.props.children, {})
         const { children } = this.props;
-        const displayTitle = (image.title == undefined) ? this.props.caption : image.title;
+        const displayTitle = (image.title ? image.title : this.props.caption);
 
         return (
             <div className={`${prefix}--overlay-content`}>
