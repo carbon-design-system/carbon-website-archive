@@ -1,27 +1,37 @@
-.bx--snippet--website {
+@import '../prefix';
+
+.#{$prefix}--snippet--website {
   margin-bottom: $spacing-lg;
 }
 
-.bx--snippet--website .bx--snippet--single {
+.#{$prefix}--snippet--website .#{$prefix}--snippet--single {
   background: $ui-05;
   color: $inverse-01;
   max-width: 100%;
 }
 
-.bx--snippet--website .code-snippet .bx--snippet--single {
+.#{$prefix}--snippet--website .code-snippet .#{$prefix}--snippet--single {
   max-width: 47.5rem;
 }
 
-.bx--snippet--website .bx--snippet--multi {
+.#{$prefix}--snippet--single::after {
+  background-image: linear-gradient(to right, rgba($ui-05, 0), rgba($ui-05, 1));
+}
+
+.#{$prefix}--snippet--website .#{$prefix}--snippet--multi {
   background: $ui-05;
   color: $inverse-01;
 }
 
-.bx--snippet--website .bx--snippet--multi .bx--snippet-container {
+.#{$prefix}--snippet--multi .#{$prefix}--snippet-container pre::after {
+  background-image: linear-gradient(to right, rgba( $ui-05, 0), rgba( $ui-05, 1));
+}
+
+.#{$prefix}--snippet--website .#{$prefix}--snippet--multi .#{$prefix}--snippet-container {
   overflow: auto;
 }
 
-.bx--snippet--website .bx--snippet-button {
+.#{$prefix}--snippet--website .#{$prefix}--snippet-button {
   background: $ui-05;
   transition: background $transition--base;
 
@@ -30,8 +40,9 @@
   }
 }
 
-.bx--snippet--website button.bx--btn.bx--snippet-btn--expand {
+.#{$prefix}--snippet--website button.#{$prefix}--btn.#{$prefix}--snippet-btn--expand {
   color: $ibm-colors__gray-10;
+  background: $ibm-colors__gray-100;
 
   &:hover {
     background: #353535;
@@ -42,21 +53,25 @@
   }
 }
 
-.bx--snippet--website .bx--snippet__icon {
-  fill: $inverse-01;
+.#{$prefix}--snippet--website .#{$prefix}--snippet__icon {
+  fill: $icon-03;
 }
 
-.bx--snippet--website .bx--snippet--multi .bx--snippet-container {
+.#{$prefix}--snippet--website .#{$prefix}--snippet--multi .#{$prefix}--snippet-container {
   min-height: auto;
 }
 
-.bx--snippet--website .bx--snippet {
+.#{$prefix}--snippet--website .#{$prefix}--icon-chevron--down {
+  fill: $icon-03;
+}
+
+.#{$prefix}--snippet--website .#{$prefix}--snippet {
   margin: 0 0 $spacing-lg 0;
   background: $ui-05;
   color: $inverse-01;
 }
 
-.bx--snippet--website pre div code[class*='language-'] {
+.#{$prefix}--snippet--website pre div code[class*='language-'] {
   white-space: pre;
 }
 
