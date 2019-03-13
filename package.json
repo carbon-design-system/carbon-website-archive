@@ -31,7 +31,7 @@
     "format": "prettier --write \"**/*.{scss,css,js,md}\"",
     "format:diff": "prettier --list-different \"**/*.{scss,css,js,md}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybook": "start-storybook -p 9001 -s ./public -c .storybook",
     "storybook:build": "build-storybook -c .storybook -o public/storybook"
   },
   "dependencies": {
