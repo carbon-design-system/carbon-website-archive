@@ -43,7 +43,7 @@
 }
 
 .bx--snippet--website .bx--snippet__icon {
-  fill: $inverse-01;
+  fill: $icon-03;
 }
 
 .bx--snippet--website .bx--snippet--multi .bx--snippet-container {
@@ -54,6 +54,10 @@
   margin: 0 0 $spacing-lg 0;
   background: $ui-05;
   color: $inverse-01;
+}
+
+.bx--snippet--website .bx--icon-chevron--down {
+  fill: $icon-03;
 }
 
 .bx--snippet--website pre div code[class*='language-'] {
