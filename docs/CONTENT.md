@@ -160,9 +160,9 @@ offsetLg | Specify the col offset at large breakpoint, defaults to 4
 noGutterSm | Specify a no-gutter class at small breakpoint
 noGutterMd | Specify a no-gutter class at medium breakpoint
 noGutterLg | Specify a no-gutter class at large breakpoint
-noGutterLeftSm | Specify a no-gutter left class at small breakpoint
-noGutterLeftMd | Specify a no-gutter left class at medium breakpoint
-noGutterLeftLg | Specify a no-gutter left class at large breakpoint
+noGutterSmLeft | Specify a no-gutter left class at small breakpoint
+noGutterMdLeft | Specify a no-gutter left class at medium breakpoint
+noGutterLgLeft | Specify a no-gutter left class at large breakpoint
 className | Set a custom class 
 ```
 <Row className="optional-class-name">

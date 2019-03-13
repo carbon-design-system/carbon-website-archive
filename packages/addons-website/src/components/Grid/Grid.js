@@ -61,18 +61,18 @@ export const Column = ({
   noGutterSm,
   noGutterMd,
   noGutterLg,
-  noGutterLeftSm,
-  noGutterLeftMd,
-  noGutterLeftLg,
+  noGutterSmLeft,
+  noGutterMdLeft,
+  noGutterLgLeft,
   className,
 }) => {
   const colClasses = classnames({
     'ibm--no-gutter-sm': noGutterSm,
     'ibm--no-gutter-md': noGutterMd,
     'ibm--no-gutter-lg': noGutterLg,
-    'ibm--no-gutter-sm--left': noGutterLeftSm,
-    'ibm--no-gutter-md--left': noGutterLeftMd,
-    'ibm--no-gutter-lg--left': noGutterLeftLg,
+    'ibm--no-gutter-sm--left': noGutterSmLeft,
+    'ibm--no-gutter-md--left': noGutterMdLeft,
+    'ibm--no-gutter-lg--left': noGutterLgLeft,
     [`ibm--offset-sm-${offsetSm}`]: offsetSm,
     [`ibm--offset-md-${offsetMd}`]: offsetMd,
     [`ibm--offset-lg-${offsetLg}`]: offsetLg,
@@ -131,15 +131,15 @@ Column.propTypes = {
   /**
    * Specify a no-gutter class at small breakpoint
    */
-  noGutterLeftSm: PropTypes.boolean,
+  noGutterSmLeft: PropTypes.boolean,
   /**
    * Specify a no-gutter class at medium breakpoint
    */
-  noGutterLeftMd: PropTypes.boolean,
+  noGutterMdLeft: PropTypes.boolean,
   /**
    * Specify a no-gutter class at large breakpoint
    */
-  noGutterLeftLg: PropTypes.boolean,
+  noGutterLgLeft: PropTypes.boolean,
   /**
    * Specify a class name for column
    */
