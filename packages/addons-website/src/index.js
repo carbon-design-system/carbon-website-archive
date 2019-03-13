@@ -4,3 +4,4 @@ export { default as FourOhFour } from './components/404';
 export {
   default as WebsiteBackToTopBtn,
 } from './components/WebsiteBackToTopBtn';
+export { default as ImageComponent } from './components/ImageComponent';

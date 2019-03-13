@@ -27,7 +27,7 @@ module.exports = {
         import ComponentCode from '${__dirname}/src/components/ComponentCode';
         import ComponentReact from '${__dirname}/src/components/ComponentReact';
         import ComponentDocs from '${__dirname}/src/components/ComponentDocs';
-        import ImageComponent from '${__dirname}/src/components/ImageComponent';
+        import ImageComponent from '@carbon/addons-website/ImageComponent';
         import ColorBlock from '${__dirname}/src/components/ColorBlock';
         import WebsiteTabs from '${__dirname}/src/components/WebsiteTabs';
         import SimpleColumns from '${__dirname}/src/components/SimpleColumns';

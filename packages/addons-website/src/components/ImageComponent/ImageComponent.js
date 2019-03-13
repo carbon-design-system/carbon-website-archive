@@ -9,6 +9,7 @@ const { prefix } = settings;
 
 const path = require('path');
 
+
 class ImageComponent extends Component {
   static propTypes = {
     caption: PropTypes.string,
