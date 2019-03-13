@@ -17,7 +17,7 @@ export default class TypefaceSubFamilies extends React.Component {
   constructor() {
     super();
     this.state = {
-      fontVariant: 'ibm-type-serif',
+      fontVariant: 'type-serif',
       fontVariantLabel: 'IBM Plex Serif',
       displayMobile: false,
     }
@@ -27,6 +27,8 @@ export default class TypefaceSubFamilies extends React.Component {
       fontVariant: value,
       fontVariantLabel: label,
     })
+
+    console.log(this.fontVariant)
   }
 
   updateDimensions = () => {
@@ -47,19 +49,19 @@ export default class TypefaceSubFamilies extends React.Component {
     const fontVariants = [
       {
         label: 'IBM Plex Sans',
-        value: 'ibm-type-sans',
+        value: 'type-sans',
       },
       {
         label: 'IBM Plex Mono',
-        value: 'ibm-type-mono',
+        value: 'type-mono',
       },
       {
         label: 'IBM Plex Serif',
-        value: 'ibm-type-serif',
+        value: 'type-serif',
       },
       {
         label: 'IBM Plex Condensed',
-        value: 'ibm-type-condensed',
+        value: 'type-sans-condensed',
       },
     ]
     
@@ -116,6 +118,7 @@ export default class TypefaceSubFamilies extends React.Component {
                     <button className={fontVariant.label === this.state.fontVariantLabel ? `${prefix}--subfamilies-button active` : `${prefix}--subfamilies-button`}
                       onClick={() => {
                         this.setState({ fontVariant: fontVariant.value, fontVariantLabel: fontVariant.label })
+                        console.log(this.state.fontVariant)
                       }}
                     >
                       {fontVariant.label}

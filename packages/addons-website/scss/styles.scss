@@ -7,4 +7,13 @@
 @import 'components/website-side-nav';
 @import 'components/website-back-to-top-btn';
 @import 'components/typeface-sub-families';
-@import 'components/type-weight';
+@import '@carbon/type/scss/type';
+@import '@carbon/type/scss/font-face/sans';
+@import '@carbon/type/scss/font-face/serif';
+@import '@carbon/type/scss/font-face/mono';
+@import '@carbon/type/scss/classes';
+
+@include carbon--type-reset();
+@include carbon--type-classes();
+@include carbon--font-face-mono();
+@include carbon--font-face-sans();
