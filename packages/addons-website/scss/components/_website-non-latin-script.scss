@@ -1,7 +1,11 @@
 @import '../prefix';
 
-$font-prefix: '/node_modules/@ibm/plex';
-@import 'node_modules/@ibm/plex/scss/ibm-plex.scss';
+
+$font-prefix: '/fonts';
+@import '@ibm/plex/scss/devanagari/_index.scss';
+@import '@ibm/plex/scss/thai/_index.scss';
+@import '@ibm/plex/scss/sans-hebrew/_index.scss';
+@import '@ibm/plex/scss/arabic/_index.scss';
 
 .#{$prefix}--non-latin-coming-soon-sticker {
   margin-bottom: 0;
@@ -192,6 +196,10 @@ $font-prefix: '/node_modules/@ibm/plex';
 
 .ibm-type-devanagari {
   font-family: 'IBM Plex Devanagari';
+}
+
+.ibm-type-arabic {
+  font-family: 'IBM Plex Arabic';
 }
 
       
