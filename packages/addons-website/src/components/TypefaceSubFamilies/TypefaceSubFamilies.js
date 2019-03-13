@@ -28,7 +28,6 @@ export default class TypefaceSubFamilies extends React.Component {
       fontVariantLabel: label,
     })
 
-    console.log(this.fontVariant)
   }
 
   updateDimensions = () => {
