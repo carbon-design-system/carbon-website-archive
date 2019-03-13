@@ -2,7 +2,15 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import classNames from 'classnames';
 
-const GridWrapper = ({ children, col_lg, col_md, col_sm, flex, bleed, className }) => {
+const GridWrapper = ({
+  children,
+  col_lg,
+  col_md,
+  col_sm,
+  flex,
+  bleed,
+  className,
+}) => {
   const rowClasses = classNames(
     `ibm--col-lg-${col_lg}`,
     `ibm--col-md-${col_md}`,
@@ -11,7 +19,8 @@ const GridWrapper = ({ children, col_lg, col_md, col_sm, flex, bleed, className 
     {
       'flex-wrap': flex,
       'ibm--col-bleed': bleed,
-    }, className
+    },
+    className
   );
 
   return (

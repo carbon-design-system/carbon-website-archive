@@ -10,28 +10,19 @@
     color: $ibm-colors__gray-80;
   }
 
-  .ibm-type-italic {
+  .ibm--type-italic {
     font-style: italic;
   }
 
-  .ibm-type-semibold {
+  .ibm--type-semibold {
     font-weight: 600;
   }
 
-  .ibm-type-regular {
+  .ibm--type-regular {
     font-weight: 400;
   }
 
-  .ibm-type-light {
+  .ibm--type-light {
     font-weight: 300;
-  }
-
-  .ibm-type-serif {
-    font-family: 'IBM Plex Serif', serif;
-  }
-
-  .ibm-type-mono {
-    font-family: 'ibm-plex-mono', 'Menlo', 'DejaVu Sans Mono',
-      'Bitstream Vera Sans Mono', Courier;
   }
 }
