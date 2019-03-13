@@ -117,7 +117,6 @@ export default class TypefaceSubFamilies extends React.Component {
                     <button className={fontVariant.label === this.state.fontVariantLabel ? `${prefix}--subfamilies-button active` : `${prefix}--subfamilies-button`}
                       onClick={() => {
                         this.setState({ fontVariant: fontVariant.value, fontVariantLabel: fontVariant.label })
-                        console.log(this.state.fontVariant)
                       }}
                     >
                       {fontVariant.label}
