@@ -151,9 +151,9 @@ The carbon website has a handful of custom markdown components available for use
 ### Row & Column
 `<Column>` props | description
 -- | --
-sm | Specify the col width at small breakpoint
-md | Specify the col width at medium breakpoint
-lg | Specify the col width at large breakpoint
+colSm | Specify the col width at small breakpoint
+colMd | Specify the col width at medium breakpoint
+colLg | Specify the col width at large breakpoint
 offsetSm | Specify the col offset at small breakpoint
 offsetMd | Specify the col offset at medium breakpoint
 offsetLg | Specify the col offset at large breakpoint, defaults to 4
