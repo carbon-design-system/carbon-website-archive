@@ -25,6 +25,7 @@ export default class Overlay extends React.Component {
             image.title = node.props.title
             image.src = node.props.src
             image.alt = node.props.alt
+            image.caption = node.props.caption
           } else if (node.props && node.props.children) {
             this.getImage(node.props.children, image)
           }
@@ -35,14 +36,14 @@ export default class Overlay extends React.Component {
 
     render() {
         const image = this.getImage(this.props.children, {})
-
         const { children } = this.props;
+        const displayTitle = (image.title == undefined) ? this.props.caption : image.title;
 
         return (
             <div className={`${prefix}--overlay-content`}>
                 <div className={`${prefix}--overlay-bg`} />
                 <div className={`${prefix}--overlay-leftArea`} show={this.props.show}>
-                    <div className={`${prefix}--overlay-caption bx--type-heading-02`}>{image.title}</div>
+                    <div className={`${prefix}--overlay-caption bx--type-heading-02`}>{displayTitle}</div>
                 </div>
                 <div className={`${prefix}--overlay-centerArea`} show={this.props.show}>
                     <img className={`${prefix}--overlay-image`} src={image.src} alt={image.alt}/>

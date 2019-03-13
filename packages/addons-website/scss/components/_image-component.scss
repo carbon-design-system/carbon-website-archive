@@ -23,7 +23,7 @@
 }
 
 .#{$prefix}--image-component > *:not(.image-component__caption) {
-    background: white;
+    background: $ibm-colors__white;
 }
 
 .#{$prefix}--image-component.transparent-bg > *:not(.image-component__caption) {

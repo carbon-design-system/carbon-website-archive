@@ -9,7 +9,6 @@ const { prefix } = settings;
 
 const path = require('path');
 
-
 class ImageComponent extends Component {
   static propTypes = {
     caption: PropTypes.string,
@@ -97,13 +96,11 @@ class ImageComponent extends Component {
         [`${prefix}--image-component-wrapper-zoom`]: zoom === 'true',
     });
 
-
-    console.log(this.props.zoom)
-    
     if(this.state.showOverlay)
         return (
             <Overlay
             show={this.state.showOverlay}
+            caption={caption}
             closeElement={
                 <div className={`${prefix}--imageZoom-close`} onClick={this.handleCloseClick}>
                     <Close32 />
