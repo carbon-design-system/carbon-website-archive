@@ -7,3 +7,10 @@
 @import 'components/website-side-nav';
 @import 'components/website-back-to-top-btn';
 @import 'components/website-non-latin-script';
+
+// $font-prefix: '/fonts';
+$font-prefix: '/@ibm/plex';
+@import '@ibm/plex/scss/devanagari/_index.scss';
+@import '@ibm/plex/scss/thai/_index.scss';
+@import '@ibm/plex/scss/sans-hebrew/_index.scss';
+
