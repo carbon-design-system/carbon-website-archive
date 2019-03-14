@@ -49,7 +49,7 @@ module.exports = {
       },
     },
     '$interactive-03': {
-      role: ['Tertiary interactive color','Tertiary button'],
+      role: ['Tertiary interactive color', 'Tertiary button'],
       value: {
         white: {
           name: 'Blue 60',
@@ -69,24 +69,45 @@ module.exports = {
         },
       },
     },
-    '$ui-background': {
-      role: ['Default page background'],
+    '$interactive-04': {
+      role: ['Selected nav indicator','Active elements'],
       value: {
         white: {
-          name: 'White',
-          hex: '#ffffff',
+          name: 'Blue 60',
+          hex: '#0062ff',
         },
         g10: {
-          name: 'Gray 10',
-          hex: '#f3f3f3',
+          name: 'Blue 60',
+          hex: '#0062ff',
         },
         g90: {
-          name: 'Gray 90',
-          hex: '#282828',
+          name: 'Blue 50',
+          hex: '#408bfc',
         },
         g100: {
-          name: 'Gray 100',
-          hex: '#171717',
+          name: 'Blue 50',
+          hex: '#408bfc',
+        },
+      },
+    },
+    '$link-01': {
+      role: ['Primary links'],
+      value: {
+        white: {
+          name: 'Blue 60',
+          hex: '#0062ff',
+        },
+        g10: {
+          name: 'Blue 60',
+          hex: '#0062ff',
+        },
+        g90: {
+          name: 'Blue 40',
+          hex: '#6ea6ff',
+        },
+        g100: {
+          name: 'Blue 40',
+          hex: '#6ea6ff',
         },
       },
     },
@@ -331,7 +352,11 @@ module.exports = {
       },
     },
     '$icon-03': {
-      role: ['Tertiary icons', `Icons on interactive colors`, `Icons on non-ui colors`],
+      role: [
+        'Tertiary icons',
+        `Icons on interactive colors`,
+        `Icons on non-ui colors`,
+      ],
       value: {
         white: {
           name: 'White',
@@ -857,7 +882,7 @@ module.exports = {
         },
       },
     },
-    '$highlight': {
+    $highlight: {
       role: ['$interactive-01 highlight'],
       value: {
         white: {
