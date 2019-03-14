@@ -13,6 +13,7 @@ const baseConfig = {
     'prop-types',
     'classnames',
     'carbon-components',
+    'carbon-components-react',
     'react-scroll-up',
   ],
   plugins: [
@@ -39,6 +40,14 @@ const baseConfig = {
           },
         ],
         '@babel/preset-react',
+      ],
+      plugins: [
+        [
+          "@babel/plugin-proposal-class-properties",
+          {
+            "loose": true
+          }
+        ]
       ],
     }),
   ],

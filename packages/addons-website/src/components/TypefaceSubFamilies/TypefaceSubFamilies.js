@@ -1,17 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import DropdownV2 from 'carbon-components-react/es/components/DropdownV2';
 import { settings } from 'carbon-components';
-import { DropdownV2, DropdownItem } from 'carbon-components-react';
-import { action } from '@storybook/addon-actions';
-import WithState from 'carbon-components-react/lib/tools/withState';
-import {
-  withKnobs,
-  boolean,
-  number,
-  select,
-  text,
-} from '@storybook/addon-knobs';
 
 export default class TypefaceSubFamilies extends React.Component {
   constructor() {
@@ -83,10 +74,10 @@ export default class TypefaceSubFamilies extends React.Component {
       [`${prefix+"--"+this.state.fontVariant}`] : true,
     });
   
-    const props = () => ({
-      label: text('Label (label)', this.state.fontVariantLabel),
-      light: boolean('Light variant (light)', true),
-    });
+    // const props = () => ({
+    //   label: text('Label (label)', this.state.fontVariantLabel),
+    //   light: boolean('Light variant (light)', true),
+    // });
     
     return (
 
@@ -94,21 +85,15 @@ export default class TypefaceSubFamilies extends React.Component {
         <div className="bx--row ibm--offset-lg-4">
           <div class={`${prefix}--subfamilies-dropdown-container`}>
             <div className={classNamesMenuDropdown}>
-              <WithState initialState={{ selectedItem: fontVariants[2] }}>
-                {({ state, setState }) => (
-                  <div>
-                    <DropdownV2
-                      {...props()}
-                      items={fontVariants}
-                      itemToString={fontVariants => (fontVariants ? fontVariants.label : '')}
-                      onChange={({ selectedItem }) =>
-                        { setTimeout(() => this.setState({ fontVariant: selectedItem.value, fontVariantLabel: selectedItem.label }), 100)
-                      }}
-                      selectedItem={state.selectedItem}
-                    />
-                  </div>
-                )}
-              </WithState>
+               <DropdownV2
+                  items={fontVariants}
+                  label={this.state.fontVariantLabel}
+                  selected={this.state.fontVariant}
+                  onChange={({ selectedItem }) =>
+                    { setTimeout(() => this.setState({ fontVariant: selectedItem.value, fontVariantLabel: selectedItem.label }), 100)
+                  }}
+                  selectedItem={this.state.selectedItem}
+                />
             </div>
           </div>
           <div className={classNamesMenuTabs}>

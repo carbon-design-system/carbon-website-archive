@@ -96,11 +96,12 @@
     padding-top: 1rem;
     padding-bottom: 2.5rem;
     margin-bottom: 0; 
-    margin-left: -.5rem !important;
+    margin-left: -0.5rem !important;
     margin-right: -.5rem !important;
 
     @include breakpoint('md') {
         margin: 0rem;
+        margin-left: -0.5rem !important;
     }
 
     .ibm-type-italic {
