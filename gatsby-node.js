@@ -125,17 +125,6 @@ exports.onCreateWebpackConfig = ({ actions, getConfig, stage, loaders }) => {
             minimize: false,
           },
         },
-        {
-          test: /\.(woff|woff2|eot|ttf|otf)$/,
-          use: [
-            {
-              loader: 'file-loader?limit=100000',
-              options: {
-                includePaths: [path.resolve(__dirname, 'node_modules')],
-              },
-            }
-          ]
-        },
       ],
     },
   });

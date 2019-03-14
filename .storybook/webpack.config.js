@@ -71,17 +71,6 @@ module.exports = storybookBaseConfig => {
             },
           ],
         },
-        {
-          test: /\.(woff|woff2|eot|ttf|otf)$/,
-          use: [
-            {
-              loader: 'file-loader',
-              options: {
-                includePaths: [path.resolve(__dirname, '..', 'node_modules')],
-              },
-            }
-          ]
-        }
       ],
     },
   };

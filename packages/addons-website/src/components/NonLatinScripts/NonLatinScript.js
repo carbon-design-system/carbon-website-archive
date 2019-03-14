@@ -42,7 +42,7 @@ class NonLatinScript extends React.Component {
           <input
             disabled={disabled}
             className={classnames(
-              `${prefix}--non-latin-type-example ${prefix}--type-display-03 ibm-type-regular`,
+              `${prefix}--non-latin-type-example ${prefix}--type-display-03`,
               
               className, {
                 'rtl': rtl,
@@ -58,7 +58,7 @@ class NonLatinScript extends React.Component {
         {ImageTypeSample && (
           <div
             className={classnames(
-              `${prefix}--non-latin-type-example ${prefix}--type-display-03 ibm-type-regular`,
+              `${prefix}--non-latin-type-example ${prefix}--type-display-03`,
               {
                 'rtl': rtl,
                 [`${prefix}${customStyle}`]: customStyle !== undefined || ''
