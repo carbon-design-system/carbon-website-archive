@@ -247,6 +247,7 @@ img[src*='gif'] {
   padding: 0 1rem;
   display: inline-flex;
   align-items: center;
+  min-height: 0;
 
   svg {
     margin-left: rem(8px);
