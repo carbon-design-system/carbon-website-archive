@@ -14,7 +14,7 @@
   max-width: 47.5rem;
 }
 
-.#{$prefix}--snippet--single::after {
+.#{$prefix}--snippet--website .#{$prefix}--snippet--single::after {
   background-image: linear-gradient(to right, rgba($ui-05, 0), rgba($ui-05, 1));
 }
 
@@ -23,7 +23,7 @@
   color: $inverse-01;
 }
 
-.#{$prefix}--snippet--multi .#{$prefix}--snippet-container pre::after {
+.#{$prefix}--snippet--website .#{$prefix}--snippet--multi .#{$prefix}--snippet-container pre::after {
   background-image: linear-gradient(to right, rgba( $ui-05, 0), rgba( $ui-05, 1));
 }
 
