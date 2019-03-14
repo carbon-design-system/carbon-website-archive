@@ -2,11 +2,10 @@ import React from 'react';
 import { Close20, Search20 } from '@carbon/icons-react';
 
 export default class GlobalSearch extends React.Component {
-  
   state = {
-    inputValue: ''
-  }
-  
+    inputValue: '',
+  };
+
   componentDidMount() {
     if (
       typeof window === `undefined` || // eslint-disable-line no-undef
@@ -14,7 +13,7 @@ export default class GlobalSearch extends React.Component {
     ) {
       console.warn(`Search has failed to load and now is being disabled`);
     } else {
-    // eslint-disable-next-line no-undef
+      // eslint-disable-next-line no-undef
       window.docsearch({
         apiKey: `671a2a5c1da5f9eceec680cd79d751b2`,
         indexName: `next_carbondesignsystem`,
@@ -42,21 +41,16 @@ export default class GlobalSearch extends React.Component {
           id="doc-search"
           placeholder="Search by element, component, or token, etc"
           value={this.state.inputValue}
-          onChange={(evt) => this.setState({ inputValue: evt.target.value })}
+          onChange={evt => this.setState({ inputValue: evt.target.value })}
         />
-        <button 
-          className="bx--search-close" 
-          title="Clear search input" 
+        <button
+          className="bx--search-close"
+          title="Clear search input"
           aria-label="Clear search input"
-          onClick={() => this.setState({ inputValue: '' })}
-        >
-          <Close20
-            description="Search Clear"
-            className="bx--search-clear"
-          />
+          onClick={() => this.setState({ inputValue: '' })}>
+          <Close20 description="Search Clear" className="bx--search-clear" />
         </button>
       </div>
     );
   }
 }
-
