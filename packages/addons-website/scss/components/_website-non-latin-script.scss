@@ -1,6 +1,6 @@
 @import '../prefix';
 
-$font-prefix: '/fonts';
+$font-prefix: '~@ibm/plex';
 @import '@ibm/plex/scss/devanagari/_index.scss';
 @import '@ibm/plex/scss/thai/_index.scss';
 @import '@ibm/plex/scss/sans-hebrew/_index.scss';

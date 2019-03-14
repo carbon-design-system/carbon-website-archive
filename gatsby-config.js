@@ -108,6 +108,7 @@ module.exports = {
       resolve: 'gatsby-plugin-sass',
       options: {
         includePaths: [path.resolve(__dirname, 'node_modules')],
+        use:['sass-loader'],
         importer: (url, prev, done) => {
           done({
             file: !/import-once(\.scss)?$/.test(url)
