@@ -24,11 +24,11 @@ The shell is perhaps the most crucial piece of any UI built with Carbon. It cont
 
 The shell was designed with maximum flexibility built in, to serve the needs of a broad range of products and users. Adopting the shell ensures compliance with IBM design standards, simplifies development efforts, and provides great user experiences. All IBM products built with Carbon are required to use the shell.
 
-To better understand the purpose and function of the UI Shell, consider the "shell" of MacOS, which contains the Apple menu, top-level navigation, and universal, OS-level controls at the top of the screen, as well as a universal dock along the bottom or side of the screen. The Carbon UI Shell is roughly analogous in function to these parts of the Mac UI.
+To better understand the purpose and function of the UI Shell, consider the "shell" of MacOS, which contains the Apple menu, top-level navigation, and universal, OS-level controls at the top of the screen, as well as a universal dock along the bottom or side of the screen. The Carbon UI Shell is roughly analogous in function to these parts of the Mac UI. For example, the app switcher portion of the shell can be compared to the dock in MacOS.
 
 ## UI Shell zones
 
-The UI Shell is the top level in a product's UI. It consists of the primary **header** and **footer**, as well as **header panels** that are used for navigation and global UI services. The shell is further divided into two distinct "zones" which establish purpose and level of control.
+The UI Shell is the top level in a product's UI. It consists of the primary **header** and **footer** (coming soon), as well as **header panels** that are used for navigation and global UI services. The shell is further divided into two distinct "zones" which establish purpose and level of control.
 
 ### Platform zone
 The platform zone contains platform-level elements, which could include functions like search, docs, support, profile, and notifications. It also includes the universal app switcher. The contents of this zone are ideally controlled by the platform "owner." Platform owners can also choose to include custom top-nav text links in this zone.
@@ -64,7 +64,7 @@ The header spans the full width of the viewport and is the topmost element in th
 
 #### Header responsive behavior
 
-As a header scales down to fit smaller screen sizes, header links and menus should collapse into a left-nav hamburger menu. The left nav "hamburger" menu is reserved for this scenario and should not be used for any other purpose. See the examples below to better understand responsive behavior of the header.
+As a header scales down to fit smaller screen sizes, header links and menus should collapse into a left-nav "hamburger" menu. See the examples below to better understand responsive behavior of the header.
 
 <ImageComponent cols="12" caption="Responsive behavior of the UI Shell header">
 
@@ -78,15 +78,15 @@ As a header scales down to fit smaller screen sizes, header links and menus shou
 
 <br />
 
-- **Platform icon/hamburger menu:** The platform icon appears in this space at wider browser widths, and switches to a hamburger menu to serve as overflow for header navigation links as the window narrows.
+- **Hamburger menu:** The "hamburger" icon is used to open left-side nav panels if they are used in the UI. If no collapsible left-nav panels are included as part of normal use, but the UI does utilize top-nav items, then the hamburger icon should appear at narrow responsive widths to accommodate the top nav items.
 
 - **Platform name (e.g. Cloud, IoT, Watson):** For IBM products, the platform name is always preceded by "IBM."
 
 - **Up to five optional horizontal top-level nav links and/or dropdown menus:** If using a dropdown, include the down-pointing chevron after the link label. Dropdowns open on click and are closed by either selecting an item in the menu, clicking outside the menu area, or clicking on the menu label. When open, the chevron should point up. Dropdown menu labels serve only to open the dropdown; they cannot link to another page in the product. 
 
-- **The L0 icons:** These icons are reserved for universal, platform-level functions such as profile, notifications, and similar functions.
+- **The L0 icons:** These icons are reserved for universal, platform-level functions such as profile, notifications, and similar functions. Not every product on a platform is required to show the same L0 icons, but it is recommended for better cross-product user experience.
 
-- **App switcher:** The app switcher provides a way to switch between contexts within a product or platform. The global app switcher is accessed by clicking on the 9 dot icon in the far right of the header.
+- **App switcher:** The app switcher provides a way for the user to easily switch between products and platforms. Recommended uses for this component include recently used apps, frequently used apps, all apps attached to the user's account, or, if the list is of a manageable size, all apps or products available on the platform. Links to related platforms should also live in the app switcher, as should a link to IBM.com.
 
 <ImageComponent cols="12" caption="Primary header with app switcher example">
 
@@ -98,7 +98,7 @@ As a header scales down to fit smaller screen sizes, header links and menus shou
 
 These are vertical panels that are anchored in the header and invoked by controls on the right side of the header. Header panels have a consistent width, span the full height of the viewport, and are flush to the right edge of the viewport. Only one header panel can be open at a time. Header panels are always treated as [floating panels](/experimental/layout#panel-behavior). Profile and notifications panels are examples of this element.
 
-Use a header panel when additional content or actions associated with a header icon needs to be shown upon click. More details about panel types and behaviors can be found under the [Layout](../experimental/layout/#panel-behavior) section.
+Use a header panel when additional content or actions associated with a header icon needs to be shown upon click. More details about panel types and behaviors can be found under the [Layout](/guidelines/layout/) section.
 
 <ImageComponent cols="8" caption="Header panel template">
 
@@ -138,14 +138,14 @@ Product footers are persistent and attached to the bottom of the browser window.
 
 ## Secondary navigation
 
-If a secondary level of navigation is needed then a side nav can be nested below the header. There are several configurations of the side-nav but only one configuration should be used per product section.
+If a secondary level of navigation is needed, then a side-nav can be nested below the header. There are several configurations of the side-nav, but only one configuration should be used per product section.
 
-If tabs are needed on a page when using a side-nav then then tabs are secondary in hierarchy to the side-nav. There should never be persistent tabs with a side-nav being nested under the tabs.
+If tabs are needed on a page when using a side-nav, then the tabs are secondary in hierarchy to the side-nav. There should never be persistent tabs with a side-nav being nested under the tabs.
 
 <!--
 ### L1 Navigation Menu
 
-Some products/platforms require an additional level of navigation above the side nav. The L1 menu behaves like a product selector within the platform; the L1 selection will change the active product and thus the contents of the L2 menu.
+Some products/platforms require an additional level of navigation above the side-nav. The L1 menu behaves like a product selector within the platform; the L1 selection will change the active product and thus the contents of the L2 menu.
 
 The L1 Menu is accessed by clicking on the header's left-side hamburger menu. It is always styled as a floating menu.
 
