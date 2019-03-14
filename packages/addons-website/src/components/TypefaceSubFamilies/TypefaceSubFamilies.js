@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import DropdownV2 from 'carbon-components-react/es/components/DropdownV2';
+import DropdownV2 from 'carbon-components-react';
 import { settings } from 'carbon-components';
 
 export default class TypefaceSubFamilies extends React.Component {
@@ -73,11 +73,6 @@ export default class TypefaceSubFamilies extends React.Component {
       'flex-wrap' : true,
       [`${prefix+"--"+this.state.fontVariant}`] : true,
     });
-  
-    // const props = () => ({
-    //   label: text('Label (label)', this.state.fontVariantLabel),
-    //   light: boolean('Light variant (light)', true),
-    // });
     
     return (
 
