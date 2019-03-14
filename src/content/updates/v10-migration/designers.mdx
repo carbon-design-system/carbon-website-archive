@@ -1,5 +1,5 @@
 ---
-title: Migration
+title: v10 Migration
 tabs: ['Overview', 'Designers', 'Developers']
 ---
 
@@ -36,6 +36,7 @@ tabs: ['Overview', 'Designers', 'Developers']
     type="resource">
 
 ![](/images/sketch-icon.png)
+
 </ClickableTile>
 
 <ClickableTile
@@ -47,6 +48,14 @@ tabs: ['Overview', 'Designers', 'Developers']
 
   </ClickableTile>
 
+<ClickableTile
+    title="Download the IBM Grid Template (Sketch Cloud)"
+    href="https://sketch.cloud/s/ngV7z"
+    type="resource">
+
+![](/images/sketch-icon.png)
+
+  </ClickableTile>
 </GridWrapper>
 
 ## IBM Design Language
@@ -55,12 +64,15 @@ Carbon X delivers the new <a href="https://www.ibm.com/design/language/" target=
 
 ## Design kit
 
-Carbon X includes a completely revised Sketch design kit, updated for the new IBM Design Language. All components in the kit have been aligned with the Design Language, as well as colors, icons, typography, motion, and grid elements. 
+Carbon X includes a completely revised Sketch design kit, updated for the new IBM Design Language. All components in the kit have been aligned with the Design Language, as well as colors, icons, typography, motion, and grid elements.
 
-Please note that upgrading to the v10 kit will not automatically change any files created in previous versions of the kit. In Sketch, the migration of existing v9 layouts will be a manual process for the designer.
+Also new in the Carbon X is Sketch Cloud Sync capabilities for the design kit. This is a completely new way of working with the Carbon Design Kit. Rather than downloading a Sketch file, working with it locally, and having to periodically check the repo for updates, designers can now subscribe to the design kit library via Sketch Cloud, and updates to the contents of the kit will be pushed to subscribers as they become available.    
+
+Please note that upgrading to the v10 kit will not automatically change any files created in previous versions of the kit. In Sketch, the migration of existing v9 layouts will be a manual process for the designer. Also note that even though libraries from multiple versions of Carbon can exist at the same time in Sketch, using v10 components in the same layout as pre-v10 components is not an approved use of the design system.
 
 ### What's changed from the v9 kit
 
+- New Sketch Cloud method of keeping your design kit in sync
 - New IBM Design Language styling
 - Improved kit structure
 - Updated text styles
@@ -71,20 +83,37 @@ Please note that upgrading to the v10 kit will not automatically change any file
 - New Getting Started page
 - Updated layer styles
 
-For more details on these changes to the design kit, see the What's New page in the <a href="https://github.com/ibm/carbon-design-kit" target="_blank">Design Kit Sketch file</a>.
+For more details on these changes to the design kit, see the What's New page in the Design Kit Sketch file itself.
 
 ### Setting up the kit
 
+The new method for using the kit is via Sketch Cloud subscription. Click the tile at the top of this page to subscribe to the Carbon Design Kit as a library. 
 
-The preferred method for using the kit is via Sketch cloud subscription. Click the tile above to subscribe to the Carbon Design Kit as a library. Sketch cloud integration ensures that all updates to the design kit will be automatically pushed to you via notifications in the Sketch app. 
+If prompted by your browser, select "Open Sketch."
 
-Also download the Carbon Design Kit Sketch file from GitHub. Use this file for reference and guidance while working with the kit. If you are subscribed to the library, all changes in the master kit will be pushed to this file as well. 
+This will open the Preferences panel in Sketch, where you should see the Carbon Design System kit in your list under Libraries. Congratulations, you are now subscribed to the design kit!
 
-Don't forget that this very site contains more detailed guidance on all [components](/components/overview) and [elements](/guidelines/color/overview) that appear in the kit.
+<ImageComponent cols="8" caption="Installing the design kit library">
 
-To access the IBM Design Language icons, pictograms, and colors, click on the tile above to subscribe to it via Sketch Cloud.
+![Kit file screenshot](images/design-kit-step-1a.png)
 
-After adding the two libraries, you can use the Insert menu in Sketch to insert any element or component from either of the kits to your working file. Note: For product work at IBM, use the type styles for Carbon. For marketing and other non-product digital work, use the IBM Design Language type styles. 
+</ImageComponent>
+
+To open the design kit as a Sketch file, click on the "eye" icon in the Preferences panel. Then click on "Open with Sketch."
+
+<ImageComponent cols="6" caption="Opening the library as a Sketch file">
+
+![Kit file screenshot](images/design-kit-step-2a.png)
+
+</ImageComponent>
+
+You can use this file for visual reference and guidance while working with the kit.  
+
+#### Icons, pictograms, and the full IBM color palette
+
+To access the IBM Design Language icons, pictograms, and colors, click on the tile at the top of this page to subscribe to it via Sketch Cloud, using the same method you used for the Carbon Design Kit.
+
+After adding the two libraries, you can use the Insert menu in Sketch to insert any element or component from either of the kits to your working file. Note: For product work at IBM, use the text styles for Carbon. For marketing and other non-product digital work, use the IBM Design Language text styles. 
 
 <ImageComponent cols="8" caption="Using the Carbon Sketch library">
 
@@ -98,7 +127,20 @@ After adding the two libraries, you can use the Insert menu in Sketch to insert 
 
 </ImageComponent>
 
-See [Getting started: Designers](/getting-started/designers) for more detail on how to get and use the design kit.
+#### IBM grid template
+
+The IBM grid template provides an easy starting point for designing layouts on the IBM grid. To install the template, first click on the "Download the IBM Grid Template" tile at the top of this page. In the browser window that opens, click "Download Document."
+
+<ImageComponent cols="8" caption="Installing the IBM grid template">
+
+![Installing the grid template](images/grid-template-1.png)
+
+</ImageComponent>
+
+Open the downloaded file in Sketch, and then navigate to File > Save as Template. Confirm the save. Now you can access the page template via File > New from Template. Use this method any time you need to start a fresh file for designing a layout. 
+
+Don't forget that this very site contains more detailed guidance on all [components](/components/overview) and [elements](/guidelines/color/overview) that appear in the kit. 
+
 
 ## Themes
 

@@ -227,8 +227,8 @@
       "release-highlights": {
         "title": "Release highlights"
       },
-      "migration": {
-        "title": "Migration guide"
+      "v10-migration": {
+        "title": "v10 Migration guide"
       },
       "roadmap": {
         "title": "Roadmap"

@@ -1,5 +1,5 @@
 ---
-title: Migration
+title: v10 Migration
 tabs: ['Overview', 'Designers', 'Developers']
 ---
 
@@ -18,7 +18,7 @@ tabs: ['Overview', 'Designers', 'Developers']
 
 Two of Carbon's previous repos will be deprecated with v10: carbon-icons and carbon-themes. Iconography and themes in v10 are now handled as packages in the carbon-elements repo. 
 
-[@carbon/colors](https://github.com/IBM/carbon-elements/tree/master/packages/colors)
+[@carbon/icons](https://github.com/IBM/carbon-elements/tree/master/packages/icons)
 
 [@carbon/themes](https://github.com/IBM/carbon-elements/tree/master/packages/themes)
 
@@ -28,13 +28,13 @@ Two of Carbon's previous repos will be deprecated with v10: carbon-icons and car
 
 ## Migration strategy
 
-It is up to each product team to determine which migration strategy works best for their product. Because each team is different, there is no "official playbook" for migrating to v10. However, the Carbon team recommends the following best practices for migration.
+It is up to each product team to determine which migration strategy works best for their product. Because each team is different, there is no "official playbook" for migrating to v10. However, the Carbon team recommends the following best practices for migration. Keep in mind that migrating to v10 from v9 will require collaboration with your product's design team, as new design artifacts may be required.
 
 ### Talk about migration early and often. 
 Meet with all relevant stakeholders from design, OM, and engineering to kick off the migration process. Discuss how the migration process can integrate into the team's regular cadence. Establish dedicated channels of communication for migration, and involve the broader team as needed.
 
 ### Migrate in a dedicated branch.
-Rather than trying to upgrade piece-by-piece on the production build, the Carbon team recommends that product teams perform the migration first in a separate branch (or branches). This allows design and dev to work together and iron out any rough spots that may appear in the UI after upgrading. Don't push to production until the product matches the look and feel of the new IBM Design Language.
+Rather than trying to upgrade piece-by-piece on the production build, the Carbon team recommends that product teams perform the migration first in a separate branch (or branches). This allows design and dev to work together and iron out any rough spots that may appear in the UI after upgrading. Don't merge into your primary development branch until the product matches the look and feel of the new IBM Design Language.
 
 ### First things first.
 The Carbon team recommends tackling components, colors, type, spacing, and iconography first. These updates should be relatively straightforward. Aligning to the new grid will be a more design-intensive exercise, and can be tackled after the other elements.
@@ -47,7 +47,7 @@ Carbon components have been completely re-skinned for the new IBM Design Languag
 
 Detailed technical migration docs for Carbon vanilla components are available in the [carbon-components repo](https://github.com/IBM/carbon-components/blob/master/docs/migration/migrate-to-10.x.md). Here you will find links to component-level migration information, as well as a list of those components that have been removed or are under development.
 
-[Scss globals migration tables](https://github.com/IBM/carbon-components/blob/master/src/globals/scss/migrate-to-10.x.md) are available and cover _colors.scss, _css--body.scss, _css--font-face.scss, _css--plex-core.scss, _css--reset.scss, _css--typography.scss, _feature-flags.scss, _functions.scss, _helper-classes.scss, _helper-mixins.scss, _import-once.scss, _layer.scss, _layout.scss, _mixins.scss, _spacing.scss, _theme-tokens.scss, _theme.scss, _typography.scss, _vars.scss
+There is also a dedicated [sass migration guide](https://github.com/IBM/carbon-components/blob/master/src/globals/scss/migrate-to-10.x.md) that covers changes to global styling.
 
 ### carbon-components-react
 
