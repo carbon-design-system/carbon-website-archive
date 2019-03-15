@@ -1,7 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import classnames from 'classnames'
-import RenewIcon from '@carbon/icons-react/es/renew/20'
+import React from 'react';
+import PropTypes from 'prop-types';
+import classnames from 'classnames';
+import RenewIcon from '@carbon/icons-react/es/renew/20';
 import { settings } from 'carbon-components';
 
 const { prefix } = settings;
@@ -9,7 +9,7 @@ const { prefix } = settings;
 class NonLatinScript extends React.Component {
   state = {
     customValue: null,
-  }
+  };
 
   render() {
     const {
@@ -20,20 +20,21 @@ class NonLatinScript extends React.Component {
       disabled,
       comingSoonText,
       ImageTypeSample,
-      customStyle
-    } = this.props
+      customStyle,
+    } = this.props;
 
     return (
-      <div className={`${prefix}--non-latin-container ibm--col-lg-12 ibm--offset-lg-4`}>
+      <div
+        className={`${prefix}--non-latin-container ibm--col-lg-12 ibm--offset-lg-4`}>
         <div>
-          <h3 className={`${prefix}--type-body-long-01 ${prefix}--non-latin-typeface-name-heading`}>
+          <h3
+            className={`${prefix}--type-body-long-01 ${prefix}--non-latin-typeface-name-heading`}>
             {typefaceName}
           </h3>
           {this.state.customValue !== null && (
             <button
               className={`${prefix}--type-body-long-01 ${prefix}--non-latin-button`}
-              onClick={() => this.setState({ customValue: null })}
-            >
+              onClick={() => this.setState({ customValue: null })}>
               Reset <RenewIcon width={16} height={16} />
             </button>
           )}
@@ -43,10 +44,11 @@ class NonLatinScript extends React.Component {
             disabled={disabled}
             className={classnames(
               `${prefix}--non-latin-type-example ${prefix}--type-display-03`,
-              
-              className, {
-                'rtl': rtl,
-                [`${prefix}${customStyle}`]: customStyle !== undefined || ''
+
+              className,
+              {
+                rtl: rtl,
+                [`${prefix}${customStyle}`]: customStyle !== undefined || '',
               }
             )}
             value={
@@ -60,26 +62,26 @@ class NonLatinScript extends React.Component {
             className={classnames(
               `${prefix}--non-latin-type-example ${prefix}--type-display-03`,
               {
-                'rtl': rtl,
-                [`${prefix}${customStyle}`]: customStyle !== undefined || ''
+                rtl: rtl,
+                [`${prefix}${customStyle}`]: customStyle !== undefined || '',
               }
-            )}
-          >
-            <img className={`${prefix}--non-latin-image-type-sample`} />&nbsp;
+            )}>
+            <img className={`${prefix}--non-latin-image-type-sample`} />
+            &nbsp;
           </div>
         )}
         {comingSoonText && (
-          <div className={`${prefix}--type-caption-01 ${prefix}--non-latin-coming-soon-sticker`}>
+          <div
+            className={`${prefix}--type-caption-01 ${prefix}--non-latin-coming-soon-sticker`}>
             {comingSoonText}
           </div>
         )}
       </div>
-    )
+    );
   }
 }
 
 NonLatinScript.propTypes = {
-
   // name of typeface
   typefaceName: PropTypes.string.isRequired,
 
@@ -99,7 +101,7 @@ NonLatinScript.propTypes = {
   ImageTypeSample: PropTypes.string,
 
   // style to be applied to account for different language spacing
-  customStyle: PropTypes.string
-}
+  customStyle: PropTypes.string,
+};
 
-export default NonLatinScript
+export default NonLatinScript;

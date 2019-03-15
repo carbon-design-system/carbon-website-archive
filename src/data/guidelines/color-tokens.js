@@ -70,7 +70,7 @@ module.exports = {
       },
     },
     '$interactive-04': {
-      role: ['Selected nav indicator','Active elements'],
+      role: ['Selected nav indicator', 'Active elements'],
       value: {
         white: {
           name: 'Blue 60',

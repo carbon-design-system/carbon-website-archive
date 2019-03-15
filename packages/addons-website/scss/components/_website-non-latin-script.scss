@@ -14,7 +14,7 @@ $font-prefix: '/fonts';
   background-color: $ibm-colors__purple-60;
   text-align: center;
   width: rem(50px);
-  height: rem(50px); 
+  height: rem(50px);
   position: absolute;
   right: 0;
   top: 1rem;
@@ -32,7 +32,7 @@ $font-prefix: '/fonts';
   position: absolute;
   top: 0;
   right: 1rem;
-  
+
   & > * {
     vertical-align: middle;
   }
@@ -73,7 +73,7 @@ $font-prefix: '/fonts';
   margin-bottom: 0;
   display: block;
   border: 0;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   margin-top: 0;
 }
 
@@ -111,42 +111,42 @@ $font-prefix: '/fonts';
     background: $ibm-colors__purple-20;
   }
 
-  // safari wrong height fix 
-  @include carbon--breakpoint-down('md'){
+  // safari wrong height fix
+  @include carbon--breakpoint-down('md') {
     line-height: 1.5em;
     margin-bottom: 1rem !important;
     padding-bottom: 1rem;
   }
-  
-  @media not all and (min-resolution:.001dpcm) { 
+
+  @media not all and (min-resolution: 0.001dpcm) {
     line-height: 1.5em;
     margin-bottom: 1rem !important;
     padding-bottom: 1rem;
   }
-  @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+  @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
     line-height: 100%;
   }
 }
 
 .#{$prefix}--non-latin-type-example-devanagari {
   margin-top: 0rem !important;
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
   padding-top: 0rem !important;
   padding-bottom: 0;
 
-  @include carbon--breakpoint('md'){
+  @include carbon--breakpoint('md') {
     padding-top: 1rem !important;
   }
-  @include carbon--breakpoint-down('md'){
+  @include carbon--breakpoint-down('md') {
     margin-top: 0rem !important;
     margin-bottom: 1rem;
     line-height: 1.5em;
     padding-bottom: 0;
   }
-  @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { 
+  @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
     margin-top: 0rem !important;
-    margin-bottom: 1rem; 
-    line-height: 1.5em;     
+    margin-bottom: 1rem;
+    line-height: 1.5em;
   }
 }
 
@@ -154,12 +154,12 @@ $font-prefix: '/fonts';
   padding-bottom: 1rem !important;
   margin-bottom: 1rem !important;
 
-  @include carbon--breakpoint('md'){
+  @include carbon--breakpoint('md') {
     line-height: 2em;
   }
-  
+
   // safari cuts thai fonts off, this is a workaround
-  @media not all and (min-resolution:.001dpcm) { 
+  @media not all and (min-resolution: 0.001dpcm) {
     line-height: 1.5em;
   }
 }
@@ -170,27 +170,27 @@ $font-prefix: '/fonts';
   line-height: 3em;
   height: 2em;
 
-  @include carbon--breakpoint('md'){
+  @include carbon--breakpoint('md') {
     margin-top: 1rem;
     padding-bottom: 3rem;
     height: 1.5em;
   }
 
   // safari cuts thai fonts off, this is a workaround
-  @media not all and (min-resolution:.001dpcm) { 
+  @media not all and (min-resolution: 0.001dpcm) {
     line-height: 1.5em;
     height: 1.75em;
   }
 }
 
 .#{$prefix}--non-latin-type-example-cyrillic {
-  @media not all and (min-resolution:.001dpcm) {  
+  @media not all and (min-resolution: 0.001dpcm) {
     padding-top: 0;
     padding-bottom: 0;
   }
-  @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {  
-    padding-top: 0;  
-    padding-bottom: 0;   
+  @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -201,11 +201,14 @@ $font-prefix: '/fonts';
 
 .ibm-type-mono,
 .ibm-type-mono * {
-  font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace; }
+  font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono',
+    'Bitstream Vera Sans Mono', Courier, monospace;
+}
 
 .ibm-type-serif,
 .ibm-type-serif * {
-  font-family: 'IBM Plex Serif', 'Georgia', Times, serif; }
+  font-family: 'IBM Plex Serif', 'Georgia', Times, serif;
+}
 
 .ibm-type-hebrew {
   font-family: 'IBM Plex Sans Hebrew';
@@ -222,5 +225,3 @@ $font-prefix: '/fonts';
 .ibm-type-arabic {
   font-family: 'IBM Plex Arabic';
 }
-
-      
