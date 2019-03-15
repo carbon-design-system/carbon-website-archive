@@ -157,7 +157,7 @@ $font-prefix: '/fonts';
   @include carbon--breakpoint('md'){
     line-height: 2em;
   }
-
+  
   // safari cuts thai fonts off, this is a workaround
   @media not all and (min-resolution:.001dpcm) { 
     line-height: 1.5em;
@@ -165,11 +165,21 @@ $font-prefix: '/fonts';
 }
 
 .#{$prefix}--non-latin-type-example-arabic {
+  margin-bottom: 0 !important;
+  padding-bottom: 2rem;
+  line-height: 3em;
+  height: 2em;
+
+  @include carbon--breakpoint('md'){
+    margin-top: 1rem;
+    padding-bottom: 3rem;
+    height: 1.5em;
+  }
+
   // safari cuts thai fonts off, this is a workaround
   @media not all and (min-resolution:.001dpcm) { 
     line-height: 1.5em;
     height: 1.75em;
-    padding-bottom: 0;
   }
 }
 
