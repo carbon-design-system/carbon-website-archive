@@ -102,4 +102,9 @@
       height: rem(18px);
     }
   }
+
+  &:focus {
+    outline: 2px solid $focus;
+    outline-offset: 0;
+  }
 }

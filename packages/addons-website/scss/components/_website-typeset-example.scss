@@ -29,7 +29,7 @@
 
 .#{$prefix}--typeset-example-specs {
   padding: 1rem;
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     border-left: 1px solid $ibm-colors__gray-20;
   }
 }

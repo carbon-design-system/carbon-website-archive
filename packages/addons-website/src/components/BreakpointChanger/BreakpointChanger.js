@@ -829,7 +829,7 @@ class BreakpointChanger extends React.Component {
           <div
             className={`${prefix}--breakpoint-changer-controls-sticky ${prefix}--row`}>
             <div
-              className={`${prefix}--breakpoint-changer-breakpoint-controls ${prefix}--col-md-8 ${prefix}--col-lg-6`}>
+              className={`${prefix}--breakpoint-changer-breakpoint-controls ibm--col-md-5 ibm--col-lg-8`}>
               <span
                 className={`${prefix}--type-body-long-01 ibm-padding--horizontal`}
                 style={{ marginBottom: 0 }}>
@@ -841,7 +841,7 @@ class BreakpointChanger extends React.Component {
               </div>
             </div>
             <div
-              className={`${prefix}--breakpoint-changer-screen-controls ibm-padding--horizontal ${prefix}--col-md-4 ${prefix}--col-lg-6`}>
+              className={`${prefix}--breakpoint-changer-screen-controls ibm-padding--horizontal ibm--col-md-3 ibm--col-lg-8`}>
               <span
                 className={`${prefix}--type-body-long-01 ${prefix}--breakpoint-changer-screen-width-label`}
                 style={{ marginBottom: 0, whiteSpace: 'nowrap' }}>

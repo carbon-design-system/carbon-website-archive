@@ -36,6 +36,11 @@
       background-color: $ibm-colors__gray-100;
     }
   }
+
+  &:focus {
+    outline: 2px solid $focus;
+    outline-offset: 0;
+  }
 }
 
 .#{$prefix}--breakpoint-changer-controls {
