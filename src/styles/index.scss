@@ -18,16 +18,14 @@ $feature-flags: (
   components-x: true,
   ui-shell: true,
 );
-
-@import '@carbon/layout/scss/layout.scss';	
-.container {	
-  //need this to avoid conflicts with old grid code	
-  $prefix: 'ibm';	
-  $imported-modules-local: ();	
-  @import '@carbon/grid/scss/grid.scss';	
-}	
-@import '@carbon/grid/scss/aspect-ratio.scss';	
-
+@import '@carbon/layout/scss/layout.scss';
+.container {
+  //need this to avoid conflicts with old grid code
+  $prefix: 'ibm';
+  $imported-modules-local: ();
+  @import '@carbon/grid/scss/grid.scss';
+}
+@import '@carbon/grid/scss/aspect-ratio.scss';
 
 @import 'carbon-components/scss/globals/scss/styles.scss';
 @import '@carbon/addons-website/scss/styles';
