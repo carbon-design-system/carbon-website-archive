@@ -32,7 +32,6 @@
     margin-right: -1rem;
 
     @include breakpoint('sm') {
-        width: calc(100% + 2rem);
         margin-left: -.5rem;
         margin-right: 0rem;
     }
@@ -100,7 +99,6 @@
     margin-right: -.5rem !important;
 
     @include breakpoint('md') {
-        margin: 0rem;
         margin-left: -0.5rem !important;
     }
 
