@@ -19,7 +19,7 @@ export default class PageTable extends React.Component {
     const classNames = classnames({
       'ibm--col-lg-8 ibm--col-md-6': gridSize < 4,
       'ibm--col-lg-12': gridSize > 3,
-      'ibm--offset-lg-4 ibm--col-bleed': true,
+      'ibm--offset-lg-4 ibm--no-gutter': true,
       'page-table__container': true,
     });
 

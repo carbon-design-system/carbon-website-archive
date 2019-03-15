@@ -20,14 +20,14 @@ module.exports = {
         },
         globalScope: `
         import { AnchorLinks } from '@carbon/addons-website';
+        import { Row, Column } from '@carbon/addons-website';
         import ClickableTile from '${__dirname}/src/components/ClickableTile';
+        import FeatureTile from '${__dirname}/src/components/FeatureTile';
         import ColorBlock from '${__dirname}/src/components/ColorBlock';
         import ComponentCode from '${__dirname}/src/components/ComponentCode';
         import ComponentDocs from '${__dirname}/src/components/ComponentDocs';
         import ComponentReact from '${__dirname}/src/components/ComponentReact';
         import DoDontExample from '${__dirname}/src/components/DoDontExample';
-        import FeatureTile from '${__dirname}/src/components/FeatureTile';
-        import GridWrapper from '${__dirname}/src/components/GridWrapper';
         import ImageComponent from '${__dirname}/src/components/ImageComponent';
         import SimpleColumns from '${__dirname}/src/components/SimpleColumns';
         import Video from '${__dirname}/src/components/Video';
@@ -40,12 +40,13 @@ module.exports = {
           ComponentCode,
           ComponentDocs,
           ComponentReact,
-          DoDontExample,
           FeatureTile,
-          GridWrapper,
+          DoDontExample,
           ImageComponent,
           SimpleColumns,
           Video,
+          Row,
+          Column,
           WebsiteTabs,
         };
       `,

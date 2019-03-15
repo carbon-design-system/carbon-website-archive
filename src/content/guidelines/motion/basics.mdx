@@ -19,18 +19,22 @@ import { Tab } from 'carbon-components-react';
 
 ## Resources
 
-<GridWrapper col_lg="8" flex="true" bleed="true">
-  <ClickableTile
-    title="Motion Generator"
-    href="https://ibm.github.io/motion/"
-    type="resource"
-  />
-  <ClickableTile
-    title="IBM Motion Package"
-    href="https://github.com/IBM/carbon-elements/tree/master/packages/motion"
-    type="resource"
-  />
-</GridWrapper>
+<Row className="tile--group">
+  <Column offsetLg="4" colMd="4" colLg="4" noGutterSm>
+    <ClickableTile
+      title="Motion Generator"
+      href="https://ibm.github.io/motion/"
+      type="resource"
+    />
+  </Column>
+  <Column colMd="4" colLg="4" noGutterSm>
+    <ClickableTile
+      title="IBM Motion Package"
+      href="https://github.com/IBM/carbon-elements/tree/master/packages/motion"
+      type="resource"
+    />
+  </Column>
+</Row>
 
 <br />
 
@@ -89,37 +93,43 @@ Productivity and Expression are both essential to an interface. Reserve Expressi
 
 Our [components](../../components/overview/) have basic motion build in. Use this guidance to customize motion, combine and coordinate motion through out experiences.
 
-<GridWrapper col_lg="12" flex="true">
-<DoDontExample correct="true" full_width="true" label="Productive moments are labeled blue, and Expressive moments are labeled magenta.">
+<Row>
+<Column offsetLg="4">
+<DoDontExample correct label="Productive moments are labeled blue, and Expressive moments are labeled magenta.">
 
 <Video vimeoId="310583077" />
 
 </DoDontExample>
-</GridWrapper>
+</Column>
+</Row>
 
 ## Easing
 
 Strictly linear movement appears unnatural to the human eye. Elements on the screen speed up quickly and slow down smoothly, obeying the physics of a light-weight material. "Easing curves" describe the precise amount of accelerations in motion. We commonly use one of these three types of easing.
 
-<GridWrapper col_lg="8" flex="true">
-<DoDontExample correct="true" full_width="true" label="Elements on the screen speed up quickly and slow down smoothly, obeying the physics of a light-weight material.">
+<Row>
+<Column offsetLg="4" colLg="8">
+<DoDontExample correct label="Elements on the screen speed up quickly and slow down smoothly, obeying the physics of a light-weight material.">
 
 <Video vimeoId="310582370" />
 
 </DoDontExample>
-</GridWrapper>
+</Column>
+</Row>
 
 <br />
 
 Avoid easing curves that are unnatural, distracting, or decorative should be avoided. IBM motion is essential and efficient. We guide the users to value as quickly as possible.
 
-<GridWrapper col_lg="8" flex="true">
-<DoDontExample correct="false" full_width="true" label="Easing curves that suggest bounce, stretch, or sudden stops are not recommended.">
+<Row>
+<Column offsetLg="4" colLg="8">
+<DoDontExample label="Easing curves that suggest bounce, stretch, or sudden stops are not recommended.">
 
 <Video vimeoId="310582418" />
 
 </DoDontExample>
-</GridWrapper>
+</Column>
+</Row>
 
 ### Standard easing
 
@@ -215,31 +225,35 @@ Cubic-bezier curve notation is the standard way to express easing curves. [IBM M
 
 Duration is calculated based on the style and size of the motion. Among the two motion styles, _Productive_ motion is significantly faster than _Expressive_ motion. Motion’s duration should be dynamic based on the size of the animation - the larger the change in distance (traveled) or size (scaling) of the element, the longer the animation takes.
 
-<GridWrapper col_lg="12" flex="true">
-<DoDontExample correct="true" full_width="true" label="Duration contrast between a taller and a shorter component.">
+<Row>
+<Column offsetLg="4" colLg="8">
+<DoDontExample correct label="Duration contrast between a taller and a shorter component.">
 
 <Video vimeoId="310582312" />
 
 </DoDontExample>
-</GridWrapper>
+</Column>
+</Row>
 
 <br />
 
 When custom duration is possible, please use the [Motion Generator](https://ibm.github.io/motion/) to get the customized duration calculated for you element. We uses a non-linear duration scale to achieve better perceived consistency across all distances.
 
-<GridWrapper col_lg="8" flex="true" bleed="true">
-  <ClickableTile
-    title="Motion Generator"
-    href="https://ibm.github.io/motion/"
-    type="resource"
-  />
-</GridWrapper>
+<Row className="tile--group">
+  <Column offsetLg="4" colMd="4" colLg="4" noGutterSm>
+    <ClickableTile
+      title="Motion Generator"
+      href="https://ibm.github.io/motion/"
+      type="resource"
+    />
+  </Column>
+</Row>
 
 <br />
 
 We are working on making dynamic duration a build-in feature for all Carbon components. Currently, we offer two static values as tokens for easier implementation.
 
-| Style      | Token                   | Value |
-| ---------- | ----------------------- | ----- |
+| Style      | Token                    | Value |
+| ---------- | ------------------------ | ----- |
 | Productive | `$transition--base`      | 100ms |
 | Expressive | `$transition--expansion` | 150ms |
