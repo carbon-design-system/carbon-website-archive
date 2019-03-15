@@ -4,3 +4,5 @@ export { default as FourOhFour } from './components/404';
 export {
   default as WebsiteBackToTopBtn,
 } from './components/WebsiteBackToTopBtn';
+export { default as AnchorLinks } from './components/AnchorLinks';
+export { default as NonLatinScripts } from './components/NonLatinScripts';
