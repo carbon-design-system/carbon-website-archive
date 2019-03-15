@@ -61,10 +61,14 @@
   .gatsby-resp-image-link {
     width: 100%;
   }
+
+  img {
+    margin-bottom: 0;
+  }
 }
 
 p.example__text {
-  padding: 4rem;
+  padding: 10%;
   font-weight: 300;
   font-size: rem(24px);
   line-height: 1.25;
@@ -81,9 +85,9 @@ p.example__text {
   content: '';
   position: absolute;
   left: 0;
-  top: 0;
+  top: -1px;
   width: 100%;
-  height: 2px;
+  height: 3px;
   z-index: 1;
 }
 
@@ -115,17 +119,23 @@ p.example__text {
 
 .example__caption {
   padding: 8px 0 0 0;
-  max-width: rem(352px);
 }
 
 p.example__title {
-  @include type-style('body-short-01');
+  @include carbon--type-style('body-short-01');
   margin: 0;
-  padding: 0;
+
+  @media (orientation: landscape) {
+    padding: 0 25% 0 0;
+  }
+
+  @include breakpoint('md') {
+    padding: 0 25% 0 0;
+  }
 }
 
 p.example__description {
-  @include type-style('body-short-01');
+  @include carbon--type-style('body-short-01');
   @include font-smoothing;
   margin: 0;
   padding: 0;
@@ -147,14 +157,30 @@ p.example__description {
   position: relative;
 }
 
+.ibm--col-lg-12 > .example--full-width .example__caption {
+  width: 100%;
+
+  @include breakpoint('md') {
+    width: 75%;
+  }
+
+  @include breakpoint('xlg') {
+    width: 50%;
+  }
+}
+
 .example--full-width .example__caption {
   @include breakpoint('sm') {
     width: 100%;
   }
 
   @include breakpoint('md') {
-    width: calc(50% - 16px);
+    width: 75%;
   }
+
+  // @include breakpoint('xlg') {
+  //   width: 70%;
+  // }
 }
 
 .example span.gatsby-resp-image-wrapper {

@@ -11,7 +11,7 @@ import {
   SideNavItems,
   SideNavLink,
 } from 'carbon-components-react/lib/components/UIShell';
-import { Awake16 } from '@carbon/icons-react';
+
 import { Launch16 } from '@carbon/icons-react';
 
 export default class LeftNav extends React.Component {
@@ -44,7 +44,8 @@ export default class LeftNav extends React.Component {
     const classNamesClickToClose = classnames({
       'side-nav-click-to-close': true,
       'side-nav-click-to-close__closed': !isLeftNavOpen,
-      'side-nav-click-to-close__closed--final': isLeftNavFinal && !isLeftNavOpen,
+      'side-nav-click-to-close__closed--final':
+        isLeftNavFinal && !isLeftNavOpen,
     });
 
     return (
@@ -55,7 +56,8 @@ export default class LeftNav extends React.Component {
           const classNames = classnames('side-nav', {
             'side-nav__closed': !isLeftNavOpen,
             'side-nav__closed--final': isLeftNavFinal && !isLeftNavOpen,
-            'bx--side-nav--website--light': location.pathname !== '/' && !is404Page,
+            'bx--side-nav--website--light':
+              location.pathname !== '/' && !is404Page,
             'bx--side-nav--website': true,
           });
 
@@ -83,7 +85,7 @@ export default class LeftNav extends React.Component {
                     to="/resources#github"
                     className="bx--side-nav--website-link"
                     element={Link}>
-                    Github Repos
+                    GitHub Repos
                   </SideNavLink>
                 </SideNavItems>
               </SideNav>

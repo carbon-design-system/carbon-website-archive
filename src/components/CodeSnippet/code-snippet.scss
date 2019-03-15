@@ -2,26 +2,26 @@
   margin-bottom: $spacing-lg;
 }
 
-.page-content .bx--snippet--single {
+.bx--snippet--website .bx--snippet--single {
   background: $ui-05;
   color: $inverse-01;
   max-width: 100%;
 }
 
-.page-content .code-snippet .bx--snippet--single {
+.bx--snippet--website .code-snippet .bx--snippet--single {
   max-width: 47.5rem;
 }
 
-.page-content .bx--snippet--multi {
+.bx--snippet--website .bx--snippet--multi {
   background: $ui-05;
   color: $inverse-01;
 }
 
-.page-content .bx--snippet--multi .bx--snippet-container {
+.bx--snippet--website .bx--snippet--multi .bx--snippet-container {
   overflow: auto;
 }
 
-.page-content .bx--snippet-button {
+.bx--snippet--website .bx--snippet-button {
   background: $ui-05;
   transition: background $transition--base;
 
@@ -30,21 +30,37 @@
   }
 }
 
-.page-content .bx--snippet__icon {
-  fill: $inverse-01;
+.bx--snippet--website button.bx--btn.bx--snippet-btn--expand {
+  color: $ibm-colors__gray-10;
+
+  &:hover {
+    background: #353535;
+  }
+
+  &:focus::before {
+    border-color: $inverse-02;
+  }
 }
 
-.page-content .bx--snippet--multi .bx--snippet-container {
+.bx--snippet--website .bx--snippet__icon {
+  fill: $icon-03;
+}
+
+.bx--snippet--website .bx--snippet--multi .bx--snippet-container {
   min-height: auto;
 }
 
-.page-content .bx--snippet--website .bx--snippet {
+.bx--snippet--website .bx--snippet {
   margin: 0 0 $spacing-lg 0;
   background: $ui-05;
   color: $inverse-01;
 }
 
-.page-content pre div code[class*='language-'] {
+.bx--snippet--website .bx--icon-chevron--down {
+  fill: $icon-03;
+}
+
+.bx--snippet--website pre div code[class*='language-'] {
   white-space: pre;
 }
 
@@ -52,7 +68,7 @@ code[class*='language-'],
 pre[class*='language-'] {
   font-size: rem(14px) !important;
   line-height: rem(20px) !important;
-  font-family: 'ibm-plex-mono' !important;
+  color: #fff !important;
 }
 
 :not(pre) > code[class*='language-'],
@@ -67,21 +83,21 @@ pre[class*='language-'] {
 }
 
 .token.comment {
-  color: #BEBEBE !important;
+  color: #bebebe !important;
 }
 
 .token.tag {
-  color: #6EA6FF !important;
+  color: #6ea6ff !important;
 }
 
 .token.string {
-  color: #FA75A6 !important;
+  color: #fa75a6 !important;
 }
 
 .token.attr-name,
 .token.property,
 .token.function {
-  color: #92EEEE !important;
+  color: #92eeee !important;
 }
 
 .token.attr-value,
@@ -90,7 +106,7 @@ pre[class*='language-'] {
 .token.directive,
 .token.unit,
 .token.selector {
-  color: #BB8EFF !important;
+  color: #bb8eff !important;
 }
 
 .token.variable {

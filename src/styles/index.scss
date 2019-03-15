@@ -8,8 +8,11 @@
 @import '@carbon/type/scss/font-face/mono';
 @import '@carbon/type/scss/classes';
 
-@include type-reset();
-@include type-classes();
+@include carbon--type-reset();
+@include carbon--font-face-mono();
+@include carbon--font-face-sans();
+@include carbon--font-face-serif();
+@include carbon--type-classes();
 
 $feature-flags: (
   components-x: true,
@@ -33,6 +36,7 @@ $font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 // Page styles
 //---------------------------------------
 
+@import 'overrides';
 @import 'page';
 
 //---------------------------------------
@@ -66,10 +70,10 @@ $font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 @import '../components/Homepage/homepage.scss';
 @import '../components/NextPrevious/next-previous.scss';
 @import '../components/FeatureTile/feature-tile.scss';
-@import '../components/BackToTop/back-to-top.scss';
 @import '../components/WebsiteTabs/website-tabs.scss';
 @import '../components/ColorTokenTable/color-token-table.scss';
 @import '../components/SimpleColumns/simple-columns.scss';
+@import '../components/ImageComponent/image-component.scss';
 
 //---------------------------------------
 // Syntax

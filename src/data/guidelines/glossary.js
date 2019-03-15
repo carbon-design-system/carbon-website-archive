@@ -6,7 +6,7 @@ module.exports = {
         desc:
           'Adds an existing object to a list, container, or system (for example, adding a document to a folder).',
         subtext:
-          'Combine Add with the object (for example, Add user, Add space, Add role, or Add privileges). Contrast with [Insert](#insert) and [New](#new).',
+          'Combine Add with the object (for example, Add user, Add space, Add role, or Add privileges). Contrast with [Insert](#insert) and [New](#new). See the [Add action](/patterns/common-actions#add).',
       },
       Apply: {
         desc:
@@ -68,25 +68,25 @@ module.exports = {
       Cancel: {
         desc: 'Stops the current action and closes the dialog.',
         subtext:
-          'Warn the user of any possible negative consequences of stopping an action from progressing, such as data corruption. See [Reset](#reset).',
+          'Warn the user of any possible negative consequences of stopping an action from progressing, such as data corruption. See [Reset](#reset) and the [Cancel action](/patterns/common-actions#cancel).',
       },
       Clear: {
         desc:
           'This action clears all the fields or selections. Also deletes the contents of a document, such as a log. Typically the default selection or value is re-established for controls that always have a selection or value, such as Radio Buttons.',
         subtext:
-          'Where appropriate, combine Clear with the object (for example, Clear contents, Clear fields, Clear all). Contrast with [Delete](#delete) and [Remove](#remove).',
+          'Where appropriate, combine Clear with the object (for example, Clear contents, Clear fields, Clear all). Contrast with [Delete](#delete) and [Remove](#remove). See the [Clear action](/patterns/common-actions#clear).',
       },
       Close: {
         desc:
           'Closes the current page or window (for example, closing a secondary window containing online help).',
         subtext:
-          'Do not use Close together with OK or Cancel actions. Contrast with [Done](#done). See [Cancel](#cancel).',
+          'Do not use Close together with OK or Cancel actions. Contrast with [Done](#done). See [Cancel](#cancel) and the [Close action](/patterns/common-actions#close).',
       },
       Copy: {
         desc:
           'Creates new instances of the selected objects to a specific destination.',
         subtext:
-          'Combine Copy with the object being copied (for example, Copy folder) or the destination (for example, Copy to clipboard) if there are multiple possibilities. Use instead of Create like. Contrast with [New](#new).',
+          'Combine Copy with the object being copied (for example, Copy folder) or the destination (for example, Copy to clipboard) if there are multiple possibilities. Use instead of Create like. Contrast with [New](#new). See the [Copy action](patterns/common-actions#copy).',
       },
       Create: {
         desc:
@@ -126,7 +126,7 @@ module.exports = {
       Delete: {
         desc: 'Destroys an existing object.',
         subtext:
-          'Combine Delete with the object to delete (for example, Delete column or Delete table). Contrast with [Clear](#clear) and [Remove](#remove).',
+          'Combine Delete with the object to delete (for example, Delete column or Delete table). Contrast with [Clear](#clear) and [Remove](#remove). See the [Delete action](/patterns/common-actions#delete)',
       },
       Docs: {
         desc:
@@ -169,6 +169,7 @@ module.exports = {
     'Common actions': {
       Edit: {
         desc: 'Allows data or values to be changed.',
+        subtext: 'See the [Edit action](/patterns/common-actions#edit).',
       },
       'Empty trash': {
         desc:
@@ -338,7 +339,7 @@ module.exports = {
       Next: {
         desc:
           'Advances the user to the next step in a sequence of steps, such as in a wizard.',
-        subtext: 'See [Back](#Back) and [Finish](#finish).',
+        subtext: 'See [Back](#Back), [Finish](#finish), and the [Next action](/patterns/common-actions#next).',
       },
     },
     Idioms: {
@@ -413,7 +414,7 @@ module.exports = {
       Refresh: {
         desc:
           'Reloads the view of an object when the displayed view has become unsynchronized with the source.',
-        subtext: 'Likely used only as a tooltip on an icon button.',
+        subtext: 'Likely used only as a tooltip on an icon button. See the [Refresh action](/patterns/common-actions#refresh).',
       },
       Reject: {
         desc:
@@ -427,13 +428,13 @@ module.exports = {
         desc:
           'Removes an object from a list or container but the object is not destroyed as a result of the action. Often requires one or more objects to be selected.',
         subtext:
-          'Where appropriate, combine Remove with the object that will be removed (for example, Remove user, Remove role, Remove privileges). Contrast with [Delete](#delete) and [Clear](#clear).',
+          'Where appropriate, combine Remove with the object that will be removed (for example, Remove user, Remove role, Remove privileges). Contrast with [Delete](#delete) and [Clear](#clear). See the [Remove action](/patterns/common-actions#remove).',
       },
       Reset: {
         desc:
           'Reverts values back to their last saved state. The last saved state includes the values stored the last time the user clicked Apply. Does not close the dialog or window.',
         subtext:
-          'See [Restore defaults](#restore-defaults), [Undo](#undo), and [Cancel](#cancel). Contrast with [Restore](#restore).',
+          'See [Restore defaults](#restore-defaults), [Undo](#undo), [Cancel](#cancel), and the [Reset action](/patterns/common-actions#reset). Contrast with [Restore](#restore).',
       },
       Restore: {
         desc:

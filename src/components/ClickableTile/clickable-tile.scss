@@ -16,7 +16,7 @@ a.tile--article {
   }
 
   @include breakpoint('md') {
-    width: calc(50% - .5rem);
+    width: calc(50% - 0.5rem);
     margin-left: 0;
     margin-bottom: 0;
 
@@ -26,7 +26,7 @@ a.tile--article {
   }
 
   @include breakpoint('lg') {
-    width: calc(33% - .51rem);
+    width: calc(33% - 0.51rem);
     margin-right: 1rem;
 
     &:nth-child(even) {
@@ -84,7 +84,7 @@ a.tile--article.tile--dark:hover {
 .tile--article .tile__info h5 {
   text-decoration: none;
   color: $text-01;
-  @include type-style('body-short-02');
+  @include carbon--type-style('body-short-02');
 }
 
 .tile--article.tile--dark .tile__info h5 {
@@ -92,7 +92,7 @@ a.tile--article.tile--dark:hover {
 }
 
 .tile--article .tile__caption p {
-  @include type-style('caption-01');
+  @include carbon--type-style('caption-01');
   padding: 0;
   max-width: 75%;
 }
@@ -100,8 +100,6 @@ a.tile--article.tile--dark:hover {
 // Tile Resource
 
 .tile--resource {
-  margin-bottom: rem(24px);
-
   // full bleed for tiles on mobile
   @include breakpoint('sm') {
     width: 100%;
@@ -110,7 +108,6 @@ a.tile--article.tile--dark:hover {
   @include breakpoint('md') {
     width: calc(50% - 1px);
     margin: 0;
-    margin-bottom: rem(24px);
   }
 }
 
@@ -155,7 +152,7 @@ a.tile--article.tile--dark:hover {
   color: $text-01;
   margin: 0 0 $spacing-xs 0;
   padding: 0 0 0 0;
-  @include type-style('body-short-01');
+  @include carbon--type-style('body-short-01');
 }
 
 .tile--resource.tile--dark .tile__info h5 {
@@ -250,5 +247,3 @@ a.tile--article .tile__caption p {
 a.tile--article.tile--dark .tile__caption p {
   color: #bebebe;
 }
-
-

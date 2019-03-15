@@ -38,11 +38,24 @@ export default class NextPrevious extends React.Component {
       newString = string
         .split('/')
         .pop()
-        .split('-')
-        .map(word => {
-          return word.charAt(0).toUpperCase() + word.slice(1);
+        .split('-');
+      newString = newString
+        .map((word, i) => {
+          let newWord;
+          if (newString.length === 1 || !(i == newString.length - 1)) {
+            newWord = word.charAt(0).toUpperCase() + word.slice(1);
+          } else {
+            newWord = word;
+          }
+          return newWord;
         })
         .join(' ');
+      if (string === 'ui-shell') {
+        newString = 'UI shell';
+      }
+      if (string === 'faq') {
+        newString = 'FAQ';
+      }
     }
     return newString;
   };

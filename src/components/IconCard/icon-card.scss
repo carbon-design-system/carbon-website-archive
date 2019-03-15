@@ -13,6 +13,11 @@
   flex: 1 1 10rem;
   max-width: 10rem;
   position: relative;
+
+  &:nth-child(n) {
+    border-left: 1px solid $ibm-colors__gray-20;
+    border-bottom: 1px solid $ibm-colors__gray-20;
+  }
 }
 
 .icon__card-title,
@@ -25,12 +30,12 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 130px;
-  @include type-style('caption-01');
+  @include carbon--type-style('caption-01');
 }
 
 .icon__card-details {
   top: rem(28px);
-  @include type-style('helper-text-01');
+  @include carbon--type-style('helper-text-01');
 }
 
 .icon__actions {
@@ -60,7 +65,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  outline: 1px solid $ibm-colors__gray-20;
 
   &:hover,
   &:focus,
@@ -92,5 +96,78 @@ a.icon-button {
   &:focus {
     background-color: $inverse-01;
     color: $brand-01 !important;
+  }
+}
+
+// Remove outside border
+@media all and (min-width: 1568px) {
+  .icon {
+    &:nth-child(7n + 1) {
+      border-left: 0px !important;
+    }
+  }
+}
+
+@media all and (min-width: 1355px) and (max-width: 1567px) {
+  .icon {
+    &:nth-child(6n + 1) {
+      border-left: 0px !important;
+    }
+  }
+}
+
+@media all and (min-width: 1142px) and (max-width: 1354px) {
+  .icon {
+    &:nth-child(5n + 1) {
+      border-left: 0px !important;
+    }
+  }
+}
+
+@media all and (min-width: 1056px) and (max-width: 1141px) {
+  .icon {
+    &:nth-child(4n + 1) {
+      border-left: 0px !important;
+    }
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1055px) {
+  .icon {
+    &:nth-child(6n + 1) {
+      border-left: 0px !important;
+    }
+  }
+}
+
+@media all and (min-width: 864px) and (max-width: 1023px) {
+  .icon {
+    &:nth-child(5n + 1) {
+      border-left: 0px !important;
+    }
+  }
+}
+
+@media all and (min-width: 704px) and (max-width: 863px) {
+  .icon {
+    &:nth-child(4n + 1) {
+      border-left: 0px !important;
+    }
+  }
+}
+
+@media all and (min-width: 512px) and (max-width: 703px) {
+  .icon {
+    &:nth-child(3n + 1) {
+      border-left: 0px !important;
+    }
+  }
+}
+
+@media all and (max-width: 511px) {
+  .icon {
+    &:nth-child(2n + 1) {
+      border-left: 0px !important;
+    }
   }
 }

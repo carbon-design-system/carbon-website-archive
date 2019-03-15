@@ -14,12 +14,25 @@ import {
   HeaderGlobalBar,
   HeaderGlobalAction,
 } from 'carbon-components-react/lib/components/UIShell';
-import { AppSwitcher20, Close20 } from '@carbon/icons-react';
+import {
+  ArrowRight20,
+  AppSwitcher20,
+  Close20,
+  Information20,
+  Search20,
+} from '@carbon/icons-react';
 import { WebsiteFooter, WebsiteSwitcher } from '@carbon/addons-website';
+
+import Snippet from '../CodeSnippet';
+import PageTable from '../PageTable';
+
+import { p, h1, h2, h3, h4, h5, ul, ol } from '../markdown/Markdown';
 
 import timestamp from 'raw-loader!../../../build-timestamp';
 import '../../styles/index.scss';
 import '../../styles/experimental.scss';
+
+import { MDXProvider } from '@mdx-js/tag';
 
 class Layout extends React.Component {
   static propTypes = {
@@ -29,13 +42,55 @@ class Layout extends React.Component {
   state = {
     isLeftNavOpen: false,
     isLeftNavFinal: false,
+    isSearchOpen: false,
     isSwitcherOpen: false,
     isSwitcherFinal: false,
   };
 
   componentDidMount() {
     this.checkWidth();
+
+    const scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 200,
+      durationMin: 90,
+      durationMax: 800,
+      easing: 'easeInOutCubic',
+      offset: 24,
+      topOnEmptyHash: false,
+    });
   }
+
+  handleSearchClick = isSearchOpen => {
+    this.setState(
+      {
+        [isSearchOpen]: !this.state.isSearchOpen,
+      },
+      this.handleSearchEventListener
+    );
+  };
+
+  handleSearchEventListener = () => {
+    if (this.state.isSearchOpen) {
+      document.body.addEventListener('click', this.handleCloseSearchClick);
+    } else {
+      document.body.removeEventListener('click', this.handleCloseSearchClick);
+    }
+  };
+
+  handleCloseSearchClick = evt => {
+    console.log(evt.target);
+    const className = evt.target.classList[0];
+    console.log(className);
+    const filters = [
+      'bx--search',
+      'bx--search-input',
+      'bx--search-magnifier',
+      'ds-dataset-1',
+    ];
+    if (filters.indexOf(className) === -1) {
+      this.handleSearchClick('isSearchOpen');
+    }
+  };
 
   onToggleBtnClick = (
     clickedPanel,
@@ -167,6 +222,23 @@ class Layout extends React.Component {
               ]}>
               <html lang="en" />
             </Helmet>
+            <aside aria-label="alert banner" className="website-alert">
+              <Information20 className="website-alert__icon" />
+              <p className="website-alert__text">
+                <span>Carbon v10 is in beta</span>
+                <span>;</span>{' '}
+                <span>for production-ready components, use Carbon v9.</span>
+              </p>
+              <a
+                className="website-alert__button"
+                tabIndex="-1"
+                href=" https://www.carbondesignsystem.com">
+                <button class="bx--btn bx--btn--secondary" type="button">
+                  <span>Go to v9</span>
+                  <ArrowRight20 />
+                </button>
+              </a>
+            </aside>
             <Header aria-label="Header" className="bx--header--website">
               <SkipToContent />
               <HeaderMenuButton
@@ -187,13 +259,23 @@ class Layout extends React.Component {
                   <span>IBM Product</span>&nbsp;Design&nbsp;<span>System</span>
                 </HeaderName>
               ) : (
-                  <HeaderName prefix="" to="/" element={Link}>
-                    <span>Carbon</span>&nbsp;Design&nbsp;<span>System</span>
-                  </HeaderName>
-                )}
+                <HeaderName prefix="" to="/" element={Link}>
+                  Carbon&nbsp;<span>Design System</span>
+                </HeaderName>
+              )}
 
               <HeaderGlobalBar>
                 {/* {isInternal ? null : <GlobalSearch />} */}
+                {this.state.isSearchOpen ? (
+                  <GlobalSearch />
+                ) : (
+                  <HeaderGlobalAction
+                    className="bx--header__action--search"
+                    aria-label="Search Website"
+                    onClick={() => this.handleSearchClick('isSearchOpen')}>
+                    <Search20 />
+                  </HeaderGlobalAction>
+                )}
                 <HeaderGlobalAction
                   className="bx--header__action--switcher"
                   aria-label="Switch"
@@ -214,15 +296,31 @@ class Layout extends React.Component {
               isSwitcherFinal={this.state.isSwitcherFinal}
               isSwitcherOpen={this.state.isSwitcherOpen}
               links={[
+                { href: 'https://www.ibm.com/design/', linkText: 'IBM Design' },
                 {
                   href: 'https://www.ibm.com/design/language/',
                   linkText: 'IBM Design Language',
                 },
                 {
+                  href: 'https://next.carbondesignsystem.com',
+                  linkText: 'IBM Product Design',
+                },
+                {
                   href: 'https://www.ibm.com/standards/web/',
                   linkText: 'IBM Digital Design',
                 },
-                { href: 'https://www.ibm.com/design/', linkText: 'IBM Design' },
+                {
+                  href: 'https://www.ibm.com/design/research/',
+                  linkText: 'IBM Design Research',
+                },
+                {
+                  href: 'https://www.ibm.com/design/thinking/',
+                  linkText: 'Enterprise Design Thinking',
+                },
+                {
+                  href: 'https://www.ibm.com/services/ibmix/',
+                  linkText: 'IBM iX',
+                },
               ]}
             />
 
@@ -235,7 +333,22 @@ class Layout extends React.Component {
             />
 
             <div className="container">
-              {children}
+              <MDXProvider
+                components={{
+                  // Map HTML element tag to React component
+                  p: p,
+                  h1: h1,
+                  h2: h2,
+                  h3: h3,
+                  h4: h4,
+                  h5: h5,
+                  ul: ul,
+                  ol: ol,
+                  pre: Snippet,
+                  table: PageTable,
+                }}>
+                {children}
+              </MDXProvider>
               <WebsiteFooter
                 logoOffset={true}
                 linksCol1={[
@@ -262,8 +375,8 @@ class Layout extends React.Component {
                   },
                 ]}>
                 <p>
-                  Have questions? Email us or open an issue <br />
-                  in{' '}
+                  Have questions? Email us or open
+                  <br /> an issue in{' '}
                   <a href="https://github.com/carbon-design-system/carbon-website/issues/new/choose">
                     GitHub.
                   </a>

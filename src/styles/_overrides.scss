@@ -1,0 +1,65 @@
+.component-example
+  .component-example__live
+  .content-switcher
+  .bx--content-switcher {
+  height: auto;
+
+  @include breakpoint('md') {
+    height: 2rem;
+  }
+
+  .bx--content-switcher-btn .bx--content-switcher__icon {
+    min-width: rem(16px);
+    min-height: rem(16px);
+  }
+}
+
+.component-example
+  .component-example__live.component-example__live--code-snippet {
+  padding: 2rem 0 2.5rem;
+
+  & > div {
+    width: 100%;
+  }
+
+  .bx--snippet .bx--snippet--single {
+    min-width: 10px;
+  }
+
+  @include breakpoint('md') {
+    padding: 2rem 2rem 2.5rem;
+
+    & > div {
+      width: auto;
+    }
+  }
+}
+
+// APP SWITCHER
+.bx--website-switcher {
+  box-shadow: none;
+}
+
+.bx--website-switcher--expanded {
+  box-shadow: 0 rem(2px) rem(8px) rgba(0, 0, 0, 0.2);
+}
+
+//PROGRESS INDICATOR
+.component-example__live--rendered.progress-indicator {
+  .bx--progress-label {
+    margin: 0.5rem 0 0 0;
+    line-height: 1.45;
+  }
+
+  .bx--progress-optional {
+    margin-left: 1.5rem;
+    margin-top: 1.75rem;
+  }
+}
+
+//NUMBER & TEXT INPUT
+.component-example__live {
+  .bx--form-item {
+    margin-bottom: 2rem;
+  }
+}

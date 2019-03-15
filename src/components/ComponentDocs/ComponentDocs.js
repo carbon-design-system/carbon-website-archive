@@ -11,7 +11,7 @@ export default class ComponentDocs extends React.Component {
     const { component, experimental } = this.props;
 
     let componentDocUrl = '';
-    if (experimental === 'true') {
+    if (experimental === true) {
       try {
         componentDocUrl = require(`carbon-components/src/components/${component}/experimental.md`);
       } catch (err) {}
@@ -23,14 +23,14 @@ export default class ComponentDocs extends React.Component {
     return (
       <div className="page_md component-docs ibm--row">
         <div className="ibm--col-lg-12 ibm--offset-lg-4">
-          <h2 className="page-h2 bx--type-expressive-heading-04">
-            Documentation
-          </h2>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: componentDocUrl,
-            }}
-          />
+          <h2 className="page-h2">Documentation</h2>
+          {
+            <div
+              dangerouslySetInnerHTML={{
+                __html: componentDocUrl,
+              }}
+            />
+          }
         </div>
       </div>
     );

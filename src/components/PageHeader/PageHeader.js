@@ -3,24 +3,8 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 const PageHeader = ({ children, label, title }) => {
-  let labelContent =
-    label != null ? (
-      <header className="ibm--grid page-header__label-wrapper">
-        <div className="ibm--row">
-          <div className="ibm--col-lg-6 ibm--col-md-4 ibm--offset-lg-4">
-            <p className="page-header__label">{label}</p>
-          </div>
-        </div>
-      </header>
-    ) : null;
-
-  const classNames = classnames('page-header', {
-    'page-header--md': label != null,
-  });
-
   return (
-    <div className={classNames}>
-      {labelContent}
+    <div className="page-header">
       <div className="ibm--grid">
         <div className="ibm--row">
           <div className="ibm--col-lg-12 ibm--offset-lg-4">
