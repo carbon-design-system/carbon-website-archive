@@ -25,6 +25,7 @@ $feature-flags: (
   $imported-modules-local: ();
   @import '@carbon/grid/scss/grid.scss';
 }
+@import '@carbon/grid/scss/aspect-ratio.scss';
 
 @import 'carbon-components/scss/globals/scss/styles.scss';
 @import '@carbon/addons-website/scss/styles';
