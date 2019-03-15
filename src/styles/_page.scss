@@ -32,6 +32,7 @@ body {
 
 .bx--header .bx--header__name {
   font-weight: 400;
+  white-space: nowrap;
 }
 
 .bx--header .bx--header__name span {
@@ -245,6 +246,7 @@ img[src*='gif'] {
   padding: 0 1rem;
   display: inline-flex;
   align-items: center;
+  min-height: 0;
 
   svg {
     margin-left: rem(8px);
