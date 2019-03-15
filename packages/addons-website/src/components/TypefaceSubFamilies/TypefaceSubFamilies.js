@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import DropdownV2 from 'carbon-components-react';
+import { DropdownV2 } from 'carbon-components-react';
 import { settings } from 'carbon-components';
 
 export default class TypefaceSubFamilies extends React.Component {
@@ -18,7 +18,6 @@ export default class TypefaceSubFamilies extends React.Component {
       fontVariant: value,
       fontVariantLabel: label,
     })
-
   }
 
   updateDimensions = () => {
@@ -75,7 +74,7 @@ export default class TypefaceSubFamilies extends React.Component {
     });
     
     return (
-
+      // <div>hi</div>
       <div class={`${prefix}--subfamilies`}>
         <div className="bx--row ibm--offset-lg-4">
           <div class={`${prefix}--subfamilies-dropdown-container`}>
