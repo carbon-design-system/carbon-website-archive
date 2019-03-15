@@ -5,3 +5,4 @@ export {
   default as WebsiteBackToTopBtn,
 } from './components/WebsiteBackToTopBtn';
 export { default as ImageComponent } from './components/ImageComponent';
+export { default as AnchorLinks } from './components/AnchorLinks';

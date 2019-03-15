@@ -19,34 +19,37 @@ module.exports = {
           default: require.resolve('./src/components/Layouts/index.js'),
         },
         globalScope: `
-        import AnchorLinks from '${__dirname}/src/components/AnchorLinks';
+        import { AnchorLinks } from '@carbon/addons-website';
         import ClickableTile from '${__dirname}/src/components/ClickableTile';
-        import FeatureTile from '${__dirname}/src/components/FeatureTile';
-        import GridWrapper from '${__dirname}/src/components/GridWrapper';
-        import DoDontExample from '${__dirname}/src/components/DoDontExample';
+        import ColorBlock from '${__dirname}/src/components/ColorBlock';
         import ComponentCode from '${__dirname}/src/components/ComponentCode';
-        import ComponentReact from '${__dirname}/src/components/ComponentReact';
         import ComponentDocs from '${__dirname}/src/components/ComponentDocs';
         import { ImageComponent } from '@carbon/addons-website';
         import ColorBlock from '${__dirname}/src/components/ColorBlock';
         import WebsiteTabs from '${__dirname}/src/components/WebsiteTabs';
+        import ComponentReact from '${__dirname}/src/components/ComponentReact';
+        import DoDontExample from '${__dirname}/src/components/DoDontExample';
+        import FeatureTile from '${__dirname}/src/components/FeatureTile';
+        import GridWrapper from '${__dirname}/src/components/GridWrapper';
+        import ImageComponent from '${__dirname}/src/components/ImageComponent';
         import SimpleColumns from '${__dirname}/src/components/SimpleColumns';
         import Video from '${__dirname}/src/components/Video';
-
+        import WebsiteTabs from '${__dirname}/src/components/WebsiteTabs';
+        
         export default {
           AnchorLinks,
-          WebsiteTabs,
-          SimpleColumns,
           ClickableTile,
+          ColorBlock,
+          ComponentCode,
+          ComponentDocs,
+          ComponentReact,
+          DoDontExample,
           FeatureTile,
           GridWrapper,
-          DoDontExample,
           ImageComponent,
-          ComponentDocs,
-          ComponentCode,
-          ComponentReact,
-          ColorBlock,
+          SimpleColumns,
           Video,
+          WebsiteTabs,
         };
       `,
         gatsbyRemarkPlugins: [

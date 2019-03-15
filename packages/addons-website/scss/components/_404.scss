@@ -29,9 +29,13 @@
   display: inline-block;
   line-height: 1;
   font-size: rem(200px);
-  background: linear-gradient(35deg, $ibm-colors__teal-20, $ibm-colors__purple-50);
+  background: linear-gradient(
+    35deg,
+    $ibm-colors__teal-20,
+    $ibm-colors__purple-50
+  );
   background-size: 200% 200%;
-	-webkit-background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: rem(192px);
   animation: gradient 2s ease infinite;
@@ -40,8 +44,7 @@
 .fourohfour-body__heading,
 .fourohfour-body__text,
 .fourohfour-body__anchor-links.anchor-links--small .page-ul > li a,
-.fourohfour-body__anchor-links.anchor-links--small .page-ul > li a::before
- {
+.fourohfour-body__anchor-links.anchor-links--small .page-ul > li a::before {
   color: $ibm-colors__gray-10;
 }
 
@@ -50,19 +53,17 @@
 
   &::before {
     color: $ibm-colors__blue-40;
-
   }
 }
 
-
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
