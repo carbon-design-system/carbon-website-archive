@@ -42,7 +42,7 @@
     "@carbon/grid": "beta",
     "@carbon/icons-react": "0.0.1-alpha.31",
     "@carbon/import-once": "0.0.1-alpha.31",
-    "@carbon/layout": "0.0.1-alpha.32",
+    "@carbon/layout": "beta",
     "@carbon/type": "0.0.1-alpha.32",
     "@reach/router": "^1.2.1",
     "carbon-components": "^9.82.17",

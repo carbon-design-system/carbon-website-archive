@@ -712,7 +712,7 @@
   version "0.0.1-alpha.32"
   resolved "https://registry.yarnpkg.com/@carbon/layout/-/layout-0.0.1-alpha.32.tgz#1fae6b9c771d2e145b3e7ac28f030e6be1321592"
 
-"@carbon/layout@0.0.1-beta.1":
+"@carbon/layout@0.0.1-beta.1", "@carbon/layout@beta":
   version "0.0.1-beta.1"
   resolved "https://registry.yarnpkg.com/@carbon/layout/-/layout-0.0.1-beta.1.tgz#137182c69f65e038220b464659299b41eb31c2b7"
   integrity sha512-7GaMN1rdKgq9cDWB2QHVD+lR4muBWNmjTaev6yR9P3RwiTmiwpezr1MVBjEW75hdbO8o1HgfI3aXS6j6EpK9xg==
