@@ -34,8 +34,8 @@
     "rollup-plugin-node-resolve": "^4.0.0"
   },
   "dependencies": {
-    "@carbon/grid": "0.0.1-alpha.32",
-    "@carbon/layout": "0.0.1-alpha.32",
+    "@carbon/grid": "beta",
+    "@carbon/layout": "beta",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "babel-loader": "^8.0.5",
     "classnames": "^2.2.6",

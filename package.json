@@ -35,13 +35,13 @@
     "storybook:build": "build-storybook -c .storybook -o public/storybook"
   },
   "dependencies": {
-    "@carbon/addons-website": "^0.0.1-alpha.17",
+    "@carbon/addons-website": "^0.0.1-alpha.18",
     "@mdx-js/mdx": "^0.16.6",
     "@mdx-js/tag": "^0.16.6",
     "@carbon/colors": "0.0.1-alpha.31",
     "@carbon/grid": "beta",
     "@carbon/icons-react": "0.0.1-alpha.31",
-    "@carbon/import-once": "0.0.1-alpha.31",
+    "@carbon/import-once": "beta",
     "@carbon/layout": "beta",
     "@carbon/type": "0.0.1-alpha.32",
     "@reach/router": "^1.2.1",

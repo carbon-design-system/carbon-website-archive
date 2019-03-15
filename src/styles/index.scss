@@ -19,7 +19,12 @@ $feature-flags: (
   ui-shell: true,
 );
 @import '@carbon/layout/scss/layout.scss';
-@import '@carbon/grid/scss/grid.scss';
+.container {
+  //need this to avoid conflicts with old grid code
+  $prefix: 'ibm';
+  $imported-modules-local: ();
+  @import '@carbon/grid/scss/grid.scss';
+}
 
 @import 'carbon-components/scss/globals/scss/styles.scss';
 @import '@carbon/addons-website/scss/styles';

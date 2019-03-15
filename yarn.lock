@@ -657,13 +657,6 @@
   version "0.0.1-alpha.31"
   resolved "https://registry.yarnpkg.com/@carbon/colors/-/colors-0.0.1-alpha.31.tgz#c48f0df6dd363b149559d422cd28853e497e62cc"
 
-"@carbon/grid@0.0.1-alpha.32":
-  version "0.0.1-alpha.32"
-  resolved "https://registry.yarnpkg.com/@carbon/grid/-/grid-0.0.1-alpha.32.tgz#c1fcf21b90524e87f5aa2b713f92d860e5e1d85e"
-  dependencies:
-    "@carbon/import-once" "0.0.1-alpha.32"
-    "@carbon/layout" "0.0.1-alpha.32"
-
 "@carbon/grid@beta":
   version "0.0.1-beta.1"
   resolved "https://registry.yarnpkg.com/@carbon/grid/-/grid-0.0.1-beta.1.tgz#c99f8005e108dcda10aa58e81fe79e42b0541578"
@@ -695,15 +688,11 @@
     "@carbon/icon-helpers" "0.0.1-alpha.32"
     prop-types "^15.6.2"
 
-"@carbon/import-once@0.0.1-alpha.31":
-  version "0.0.1-alpha.31"
-  resolved "https://registry.yarnpkg.com/@carbon/import-once/-/import-once-0.0.1-alpha.31.tgz#f6ce9575d8066bb707d34f288001700ac9f0df2e"
-
 "@carbon/import-once@0.0.1-alpha.32":
   version "0.0.1-alpha.32"
   resolved "https://registry.yarnpkg.com/@carbon/import-once/-/import-once-0.0.1-alpha.32.tgz#44f4f78399899d659fcd4d7550defe5ac8802c6f"
 
-"@carbon/import-once@0.0.1-beta.1":
+"@carbon/import-once@0.0.1-beta.1", "@carbon/import-once@beta":
   version "0.0.1-beta.1"
   resolved "https://registry.yarnpkg.com/@carbon/import-once/-/import-once-0.0.1-beta.1.tgz#7301bc375fdedebe3ca627794bb3bd00e8097fa4"
   integrity sha512-nSPEz35QgQsN7y50LZ4E6OnhLObbUQGd1yUE/b3Cvb5M/AZahs5BCjHVgD18n4tC3ZFZ0vJahjrEz4KdyC2XBA==
