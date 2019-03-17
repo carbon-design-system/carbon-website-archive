@@ -57,8 +57,6 @@ IBM Design System recognizes different moments in user's experience, and offers 
 
 ![Curve graphs representing differences between productive and expressive animation curves](images/Motion_overview_Curves_expressive.svg)
 
-/>
-
 </div>
 
 </SimpleColumns>
@@ -101,7 +99,7 @@ Our [components](../../components/overview/) have basic motion build in. Use thi
 
 Strictly linear movement appears unnatural to the human eye. Elements on the screen speed up quickly and slow down smoothly, obeying the physics of a light-weight material. "Easing curves" describe the precise amount of accelerations in motion. We commonly use one of these three types of easing.
 
-<GridWrapper col_lg="8" flex="true">
+<GridWrapper col_lg="12" flex="true">
 <DoDontExample correct="true" full_width="true" label="Elements on the screen speed up quickly and slow down smoothly, obeying the physics of a light-weight material.">
 
 <Video vimeoId="310582370" />
@@ -113,7 +111,7 @@ Strictly linear movement appears unnatural to the human eye. Elements on the scr
 
 Avoid easing curves that are unnatural, distracting, or decorative should be avoided. IBM motion is essential and efficient. We guide the users to value as quickly as possible.
 
-<GridWrapper col_lg="8" flex="true">
+<GridWrapper col_lg="12" flex="true">
 <DoDontExample correct="false" full_width="true" label="Easing curves that suggest bounce, stretch, or sudden stops are not recommended.">
 
 <Video vimeoId="310582418" />
@@ -142,10 +140,13 @@ Use `standard-easing` when an element is visible from the beginning to end of a 
 </Tab>
 </WebsiteTabs>
 
-| Curves        | Productive                      | Expressive                      |
+
+| Framework     | Productive                      | Expressive                      |
 | ------------- | ------------------------------- | ------------------------------- |
+| IBM Motion package | `motion(standard, productive)` | `motion(standard, expressive)` |
 | CSS           | cubic-bezier(0.2, 0, 0.38, 0.9) | cubic-bezier(0.4, 0.14, 0.3, 1) |
 | After Effects | Outgoing 20%, incoming 62%      | Outgoing 40%, incoming 70%      |
+
 
 ### Entrance easing
 
@@ -168,10 +169,14 @@ Use `entrance-ease` when adding elements to the view such as a modal or toaster 
 </Tab>
 </WebsiteTabs>
 
-| Curves        | Productive                    | Expressive                 |
+
+
+| Framework     | Productive                    | Expressive                 |
 | ------------- | ----------------------------- | -------------------------- |
+| IBM Motion package | `motion(entrance, productive)` | `motion(entrance, expressive)` |
 | CSS           | cubic-bezier(0, 0, 0.38, 0.9) | cubic-bezier(0, 0, 0.3, 1) |
 | After Effects | Outgoing 0%, incoming 62%     | Outgoing 0%, incoming 70%  |
+
 
 ### Exit easing
 
@@ -194,22 +199,33 @@ Use `exit-easing` when removing elements from view, such as closing a modal or t
 </Tab>
 </WebsiteTabs>
 
-| Curves        | Productive                   | Expressive                    |
+| Framework     | Productive                   | Expressive                    |
 | ------------- | ---------------------------- | ----------------------------- |
+| IBM Motion package | `motion(exit, productive)` | `motion(exit, expressive)` |
 | CSS           | cubic-bezier(0.2, 0, 1, 0.9) | cubic-bezier(0.4, 0.14, 1, 1) |
 | After Effects | Outgoing 20%, incoming 0%    | Outgoing 40%, incoming 0%     |
 
+
 An exception to exits: if an element leaves the view but stays nearby, ready to reappear upon user action, use standard easing instead. A good example of this is a side panel. The panel would leave the view, but slows down as it exits, implying that it would come to rest just outside the view, and ready to be recalled.
 
-### Easing curve summary
+### Summary on easing
 
-Cubic-bezier curve notation is the standard way to express easing curves. [IBM Motion Package](https://github.com/IBM/carbon-elements/tree/master/packages/motion) has the easing curves stored as tokens for fast access.
+[IBM Motion Package](https://github.com/IBM/carbon-elements/tree/master/packages/motion) has the easing curves stored for fast access. This is the recommended method to call an easing curve and stay connected to receive any future updates.
 
-| Easing          | Productive                      | Expressive                      |
+| Easing curve    | Productive                     | Expressive                      |
+| --------------- | ------------------------------ | ------------------------------- |
+| Standard easing | `motion(standard, productive)` | `motion(standard, expressive)`  |
+| Entrance easing | `motion(entrance, productive)` | `motion(entrance, expressive)`  |
+| Exit easing     | `motion(exit, productive)`     | `motion(exit, expressive)`      |
+
+If you are unable to use above method, cubic-bezier curve notation is the standard way to express easing curves.
+
+| Easing curve    | Productive                      | Expressive                      |
 | --------------- | ------------------------------- | ------------------------------- |
 | Standard easing | cubic-bezier(0.2, 0, 0.38, 0.9) | cubic-bezier(0.4, 0.14, 0.3, 1) |
 | Entrance easing | cubic-bezier(0, 0, 0.38, 0.9)   | cubic-bezier(0, 0, 0.3, 1)      |
 | Exit easing     | cubic-bezier(0.2, 0, 1, 0.9)    | cubic-bezier(0.4, 0.14, 1, 1)   |
+
 
 ## Duration
 
@@ -237,9 +253,15 @@ When custom duration is possible, please use the [Motion Generator](https://ibm.
 
 <br />
 
-We are working on making dynamic duration a build-in feature for all Carbon components. Currently, we offer two static values as tokens for easier implementation.
+### Duration tokens
 
-| Style      | Token                   | Value |
-| ---------- | ----------------------- | ----- |
-| Productive | `$transition--base`      | 100ms |
-| Expressive | `$transition--expansion` | 150ms |
+We are working on making dynamic duration a build-in feature for Carbon components, and a part of the Motion package. Currently, we offer six static values as tokens for easier implementation.
+
+| Token                   | Usage                                                         | Value |     |
+| ----------------------- | ------------------------------------------------------------- | ----- | --- |
+| `duration--fast-01`     | Micro-interactions such as button and toggle                  | 70ms  | |
+| `duration--fast-02`     | Micro-interactions such as fade                               | 110ms | |
+| `duration--moderate-03` | Micro-interactions, small expansion, short distance movements | 150ms | |
+| `duration--moderate-04` | Expansion, system communication, toast                        | 240ms | |
+| `duration--slow-05`     | Large expansion, important system notifications               | 400ms | |
+| `duration--slow-06`     | Background dimming                                            | 700ms | |
