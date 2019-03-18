@@ -5,6 +5,7 @@ tabs: ['Code', 'Usage']
 
 <AnchorLinks>
 
+- [Experimental status](#experimental-status)
 - [UI Shell zones](#ui-shell-zones)
 - [UI Shell components](#ui-shell-components)
 - [Secondary navigation](#secondary-navigation)
@@ -12,11 +13,17 @@ tabs: ['Code', 'Usage']
 
 </AnchorLinks>
 
+## Experimental status
+
+The UI Shell is currently in experimental status. It is presented here for testing and feedback purposes, but is not yet ready for production use. Experimental components have no guarantee of support from the Carbon team.
+
+The shell does not appear in the Carbon Design Kit; once it has graduated to "official" status, it will be incorporated into the kit.
+
 ## UI Shell zones
 
 The UI Shell is the top level in a product's UI. The Shell consists of the primary **header** and **footer**, as well as **header panels** that are used for navigation and global UI services. The shell is further divided into 3 distinct "zones" which establish purpose and level of control.
 
-###Global zone
+### Global zone
 The global zone holds the IBM global platform switcher, which allows the user to quickly navigate between different IBM platforms. This zone cannot be altered by the platform or product owner.
 
 <ImageComponent cols="12">
@@ -25,7 +32,7 @@ The global zone holds the IBM global platform switcher, which allows the user to
 
 </ImageComponent>
 
-###Platform zone
+### Platform zone
 The platform zone contains platform-level elements, which could include functions like search, docs, support, profile, and notifications. Platform owners can also choose to include custom top-nav text links in this zone.
 
 <ImageComponent cols="12">
@@ -34,7 +41,7 @@ The platform zone contains platform-level elements, which could include function
 
 </ImageComponent>
 
-###Local zone
+### Local zone
 The local zone is controlled at the product level. It contains the product-level side nav as well as the main content area.
 
 <ImageComponent cols="12">
@@ -51,6 +58,8 @@ The UI Shell is designed to be configurable. A product/platform can choose which
 
 The header spans the full width of the viewport and is the topmost element in the UI. Header elements are persistent within a product.
 
+<br />
+
 **Use a header when:**
 
 - Links to top level pages are persistent on screen
@@ -62,6 +71,8 @@ The header spans the full width of the viewport and is the topmost element in th
 
 </ImageComponent>
 
+<br />
+
 #### Header responsive behavior
 
 As a header scales down to fit smaller screen sizes, header links and menus should collapse into a left-nav hamburger menu. The left nav menu (previously L1 menu) is reserved for this scenario and should not be used as primary navigation with the header. If an additional navigation menu is needed, use an app switcher placed on the far right side of the header.
@@ -72,7 +83,9 @@ As a header scales down to fit smaller screen sizes, header links and menus shou
 
 </ImageComponent>
 
-#### Header elements
+<br />
+
+#### Header elements:
 
 <br />
 
@@ -125,7 +138,11 @@ These panels are at the same elevation as the primary content zone of the page, 
 
 </ImageComponent>
 
-**Use an on-page panel when:**
+<br />
+
+#### Use an on-page panel when:
+
+<br />
 
 - presenting additional information that is relevant to the page context (i.e., contextual help)
 - content does not need to always be on the page
@@ -155,18 +172,26 @@ The L1 Menu is accessed by clicking on the header's left-side hamburger menu. It
 
 The Side-nav contains secondary navigation and fits below the header. It can be configured to be either fixed-width or flexible, with only one level of nested items allowed. Both links and category lists can be used in the Side-nav and may be mixed together.
 
-**Use a side-nav when:**
+<br />
+
+#### Use a side-nav when:
+
+<br />
 
 - There are more than five secondary navigation items
 - Users are expected to switch between secondary items frequently
 
-#### Side-nav items
+<br />
+
+#### Side-nav items:
 
 <br />
 
 - **Link:** Links to different pages
 - **Category:** A Category must contain at least two links. Categories can be either collapsible or fixed. The label of a Category is never a link.
 - **L1 title bar:** (optional): contains the name of the section or page. It should link to the product's landing page or main console. This element can also include an optional L1 Menu selector element, to enable context-switching.
+
+<br />
 
 #### Flexible side-nav
 
@@ -176,7 +201,11 @@ In a Flexible Side-nav, each link and category list has its own corresponding ic
 
 A flexible side-nav is more friendly to responsive designs than a fixed nav. Fixed nav is best for products that have a minimum width of 672px. Consider using a flexible nav for a fully responsive solution.
 
-**Use a flexible side-nav when:**
+<br />
+
+#### Use a flexible side-nav when:
+
+<br />
 
 - More space is needed for page content
 - A fully responsive solution is needed
@@ -187,11 +216,17 @@ A flexible side-nav is more friendly to responsive designs than a fixed nav. Fix
 
 </ImageComponent>
 
+<br />
+
 #### Fixed side-nav
 
 A fixed Side-nav contains only links and category lists—no icons—and cannot be collapsed.
 
-**Use a fixed side-nav when:**
+<br />
+
+#### Use a fixed side-nav when:
+
+<br />
 
 - Icons cannot clearly describe the categories
 - Designs are for desktop only

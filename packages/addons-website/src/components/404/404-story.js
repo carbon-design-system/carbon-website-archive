@@ -7,9 +7,15 @@ storiesOf('404', module).add(
   () => (
     <FourOhFour>
       <ul>
-        <li><a href="#">Support Link 1</a></li>
-        <li><a href="#">Support Link 2</a></li>
-        <li><a href="#">Support Link 3</a></li>
+        <li>
+          <a href="#">Support Link 1</a>
+        </li>
+        <li>
+          <a href="#">Support Link 2</a>
+        </li>
+        <li>
+          <a href="#">Support Link 3</a>
+        </li>
       </ul>
     </FourOhFour>
   ),

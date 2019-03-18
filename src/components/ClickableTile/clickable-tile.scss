@@ -16,7 +16,7 @@ a.tile--article {
   }
 
   @include breakpoint('md') {
-    width: calc(50% - .5rem);
+    width: calc(50% - 0.5rem);
     margin-left: 0;
     margin-bottom: 0;
 
@@ -26,7 +26,7 @@ a.tile--article {
   }
 
   @include breakpoint('lg') {
-    width: calc(33% - .51rem);
+    width: calc(33% - 0.51rem);
     margin-right: 1rem;
 
     &:nth-child(even) {
@@ -108,7 +108,6 @@ a.tile--article.tile--dark:hover {
   @include breakpoint('md') {
     width: calc(50% - 1px);
     margin: 0;
-    margin-bottom: rem(24px);
   }
 }
 
@@ -248,5 +247,3 @@ a.tile--article .tile__caption p {
 a.tile--article.tile--dark .tile__caption p {
   color: #bebebe;
 }
-
-

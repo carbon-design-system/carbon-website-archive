@@ -7,9 +7,26 @@ tabs: ['Overview', 'Productive']
 import TypeScaleTable from '../../../../src/components/TypeScaleTable';
 import TypeWeight from '../../../../src/components/TypeWeight';
 
+### With our new bespoke corporate typeface, IBM Plex™, comes a new set of guidance and best practices. Type Specs helps to set up a start point to apply typography—type scales, styles and alignment on screens.
+
+
+<AnchorLinks>
+
+- [Type tokens and sets](#type-tokens-and-sets)
+- [Typeface: IBM Plex](#typeface-ibm-plex)
+- [Scale](#scale)
+- [Style](#style)
+- [Type color](#type-color)
+
+</AnchorLinks>
+
 ## Resources
 
-<GridWrapper col_lg="8" flex="true" bleed="true">
+<GridWrapper
+  className="tile--resource--no-margin"
+  col_lg="8"
+  flex="true"
+  bleed="true"> 
   <ClickableTile
     title="Get the latest IBM Plex™ download on GitHub"
     href="https://github.com/IBM/plex/releases/latest"
@@ -21,29 +38,45 @@ import TypeWeight from '../../../../src/components/TypeWeight';
   <ClickableTile
     title="Visit the IBM Plex™ website to learn more"
     href="https://www.ibm.com/plex/"
-    type="resource"
-  />
+    type="resource">
+
+  </ClickableTile>
+  <ClickableTile
+    title="Elements package: Type"
+    href="https://github.com/IBM/carbon-elements/tree/master/packages/type"
+    type="resource">
+
+![](images/github-icon.png)
+
+
+  </ClickableTile>
+  <ClickableTile
+    title="Type package preview"
+    href="https://github.com/IBM/carbon-elements/tree/master/packages/type"
+    type="resource">
+
+![](images/sandbox-icon.png)
+
+
+
+ </ClickableTile> 
 </GridWrapper>
 
-<AnchorLinks>
 
-- [Type tokens and themes](#type-tokens-and-themes)
-- [Typeface: IBM Plex](#typeface-ibm-plex)
-- [Scale](#scale)
-- [Style](#style)
-- [Type color](#type-color)
+<br />
 
-</AnchorLinks>
+<br />
 
-## Type tokens and themes
 
-Carbon utilizes type tokens and themes to manage typrography.
+## Type tokens and sets
 
-A _token_ is a named entity in a design system which represents specific visual attributes, such as font size, font weight, color, etc. Using tokens enables these specific values to be centralized and abstracted in the system, which in turn makes it easier to update designs—however wide-ranging—from a single source of truth.
+Carbon uses type tokens and themes to manage typrography. Carbon uses type tokens and types sets to manage typrography. Type tokens are simply pre-set configurations of typographic elements (font-size, weight, line-height, etc) that are specifically calibrated for use in IBM product design. Selecting the appropriate type style is determined by layout or template structure. Layouts may have several levels of architecture or areas that require varying typographic hierarchies.
 
-A _theme_ is a complete set of tokens that have been designed to work harmoniously together.
+### Productive vs. Expressive type sets
 
-Two different themes in the same system could share the same token architecture, but would have different values for some or all of the tokens.
+Productive type is reserved for use in web-based product design, where the user needs to focus on tasks. The Productive styles are curated to create a series of clear user expectations about hierarchy. Expressive type, on the other hand, allows for a more dramatic, graphic use of type in editorial and marketing design — which many users would find distracting in product.
+
+There are two heading sets, one Productive and one Expressive. The difference between the Productive and Expressive styles is mainly evident in the Headings. Aside from the token names, which are specifically calibrated for product vs. editorial designers (e.g. $label-01 vs. $caption-01) — the Supporting and Body styles have the same values in both the Productive and Expressive sets.
 
 ## Typeface: IBM Plex
 

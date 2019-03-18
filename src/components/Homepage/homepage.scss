@@ -29,7 +29,7 @@
   // Match max height at lg breakpoint
   @include breakpoint('lg') {
     padding: 0;
-    height: 512px;
+    height: 560px;
   }
 }
 
@@ -39,7 +39,7 @@
 }
 
 .container--homepage h3.homepage--header__title {
-  @include carbon--type-style('expressive-heading-03');
+  @include carbon--type-style('expressive-heading-03', true);
   display: none;
   font-weight: 600;
   position: absolute;
@@ -65,7 +65,7 @@
 
 .container--homepage h3,
 .container--homepage .page-content > div > .ibm--row:first-child h3 {
-  @include carbon--type-style('expressive-heading-03');
+  @include carbon--type-style('expressive-heading-03', true);
   margin-top: rem(64px);
   margin-bottom: $spacing-lg;
 }

@@ -8,17 +8,13 @@
   height: rem(240px);
 }
 
-.page-header--md {
-  height: rem(320px);
-}
-
 .ibm--grid.page-header__label-wrapper {
   padding-top: rem(24px);
   margin-bottom: auto;
 }
 
 .page-header__label {
-  @include carbon--type-style('expressive-heading-03');
+  @include carbon--type-style('expressive-heading-03', true);
 }
 
 .page-header__title {
