@@ -5,3 +5,5 @@ export {
   default as WebsiteBackToTopBtn,
 } from './components/WebsiteBackToTopBtn';
 export { default as AnchorLinks } from './components/AnchorLinks';
+export { default as VideoInternal } from './components/VideoInternal';
+export { default as PlayPauseButton } from './components/PlayPauseButton';
