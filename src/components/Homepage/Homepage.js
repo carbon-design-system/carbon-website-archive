@@ -19,11 +19,13 @@ export class HomepageHeader extends React.Component {
         Design System
       </h3>
     ) : (
-        <h3 className="homepage--header__title">
-          <span>Carbon <br />
-            Design System</span>
-        </h3>
-      );
+      <h3 className="homepage--header__title">
+        <span>
+          Carbon <br />
+          Design System
+        </span>
+      </h3>
+    );
 
     return (
       <div>
@@ -39,7 +41,9 @@ export class HomepageHeader extends React.Component {
         <section className="homepage--callout">
           <div className="ibm--grid">
             <div className="ibm--row">
-              <aside aria-label="header callout" className="ibm--col-md-4  ibm--col-lg-4 ibm--offset-lg-4">
+              <aside
+                aria-label="header callout"
+                className="ibm--col-md-4  ibm--col-lg-4 ibm--offset-lg-4">
                 <h3>
                   Inclusive, flexible
                   <br />
@@ -69,7 +73,9 @@ export class HomepageFooter extends React.Component {
       <div className="homepage--callout homepage--callout--blue">
         <div className="ibm--grid">
           <section className="ibm--row">
-            <aside aria-label="footer callout" className="ibm--col-md-4 ibm--col-lg-4 ibm--offset-lg-4">
+            <aside
+              aria-label="footer callout"
+              className="ibm--col-md-4 ibm--col-lg-4 ibm--offset-lg-4">
               <h3>
                 Wondering how <br />
                 to contribute?
@@ -83,7 +89,7 @@ export class HomepageFooter extends React.Component {
                   interested in contributing, check out our contributing
                   guidelines to get started.
                 </h2>
-                <Link to="/contributing" alt="Start contributing">
+                <Link to="/contributing/governance" alt="Start contributing">
                   Start contributing
                   <ArrowRight24 aria-label="Start Contributing" />
                 </Link>
