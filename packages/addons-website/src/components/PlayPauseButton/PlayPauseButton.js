@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import { settings } from 'carbon-components';
 const { prefix } = settings;
 
 import { PlayOutline20, PlayOutlineFilled20, PauseOutline20, PauseOutlineFilled20 } from "@carbon/icons-react/es";
 
-class PlayPauseIcon extends React.Component {
+class PlayPauseButton extends React.Component {
   state = {
     hover: false
   }
@@ -38,7 +39,10 @@ class PlayPauseIcon extends React.Component {
     const { onClick } = this.props
     
     return (
-      <button className={`${prefix}--play-pause-button`} onMouseOver={this.onOver} onMouseOut={this.onOut} onClick={onClick}> 
+      <button className={`${prefix}--play-pause-button`} 
+              onMouseOver={this.onOver} 
+              onMouseOut={this.onOut} 
+              onClick={onClick}> 
         <span className={`${prefix}--play-pause-icon`}>
           {this.getIcon()}
         </span>
@@ -47,4 +51,13 @@ class PlayPauseIcon extends React.Component {
   }
 }
 
-export default PlayPauseIcon;
+PlayPauseButton.propTypes = {
+
+  // action to do on click
+  onClick: PropTypes.func,
+
+  // status of media
+  playing: PropTypes.bool
+}
+
+export default PlayPauseButton;

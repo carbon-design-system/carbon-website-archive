@@ -7,7 +7,7 @@ const onClick = () => {
 }
 
 storiesOf('Play Pause Button ', module).add(
-  'Play Pause Button - playing',
+  'Play Pause Button - media playing',
   () => (
     <div style={{width: '100%', height: '100%', position:'relative'}}>
       <div style={{width: '20px', height: '20px'}}>
@@ -19,12 +19,12 @@ storiesOf('Play Pause Button ', module).add(
   ),
   {
     info: {
-      text: 'Play Pause Button - playing',
+      text: 'Play Pause Button - media playing',
     },
   }
 )
 .add(
-  'Play Pause Button - paused',
+  'Play Pause Button - media paused',
   () => (
     <div style={{width: '100%', height: '100%', position:'relative'}}>
       <div style={{width: '20px', height: '20px'}}>
@@ -36,7 +36,7 @@ storiesOf('Play Pause Button ', module).add(
   ),
   {
     info: {
-      text: 'Play Pause Button - paused',
+      text: 'Play Pause Button - media paused',
     },
   }
 );
