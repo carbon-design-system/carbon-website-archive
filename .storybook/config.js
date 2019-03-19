@@ -3,6 +3,9 @@ import { configure, setAddon, addDecorator } from '@storybook/react';
 import infoAddon from '@storybook/addon-info';
 import Container from './Container';
 
+// Gatsby Link component causes error if __PATH_PREFIX__ is not defined
+global.__PATH_PREFIX__ = ''
+
 // addDecorator(checkA11y);
 addDecorator(story => <Container story={story} />);
 setAddon(infoAddon);

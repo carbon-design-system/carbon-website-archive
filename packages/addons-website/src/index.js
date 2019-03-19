@@ -7,3 +7,4 @@ export {
 export { default as AnchorLinks } from './components/AnchorLinks';
 export { default as VideoInternal } from './components/VideoInternal';
 export { default as PlayPauseButton } from './components/PlayPauseButton';
+export { default as HomepageVideo } from './components/HomepageVideo';
