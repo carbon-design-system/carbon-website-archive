@@ -15,14 +15,20 @@ export default class FeatureTile extends React.Component {
   render() {
     const { children, title, label, href, margin, className } = this.props;
 
-    const classNames = classnames({
-      'ibm--row': true,
-      'feature-tile--margin': margin === 'true',
-    }, className);
+    const classNames = classnames(
+      {
+        'ibm--row': true,
+        'feature-tile--margin': margin === 'true',
+      },
+      className
+    );
 
-    const linkClasses = classnames({
-      'feature-tile': true,
-    }, className)
+    const linkClasses = classnames(
+      {
+        'feature-tile': true,
+      },
+      className
+    );
 
     return (
       <div class={classNames}>
