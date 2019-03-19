@@ -141,11 +141,10 @@ Use `standard-easing` when an element is visible from the beginning to end of a 
 </WebsiteTabs>
 
 
-| Framework     | Productive                      | Expressive                      |
-| ------------- | ------------------------------- | ------------------------------- |
-| IBM Motion package | `motion(standard, productive)` | `motion(standard, expressive)` |
-| CSS           | cubic-bezier(0.2, 0, 0.38, 0.9) | cubic-bezier(0.4, 0.14, 0.3, 1) |
-| After Effects | Outgoing 20%, incoming 62%      | Outgoing 40%, incoming 70%      |
+| Style      | IBM Motion package         | CSS                           | After Effects             |
+| ---------- | -------------------------- | ----------------------------- | ------------------------- |
+| Productive | `motion(standard, productive)` | cubic-bezier(0.2, 0, 0.38, 0.9) | Outgoing 20%, incoming 62% |
+| Expressive | `motion(standard, expressive)` | cubic-bezier(0.4, 0.14, 0.3, 1) | Outgoing 40%, incoming 70% |
 
 
 ### Entrance easing
@@ -170,12 +169,10 @@ Use `entrance-ease` when adding elements to the view such as a modal or toaster 
 </WebsiteTabs>
 
 
-
-| Framework     | Productive                    | Expressive                 |
-| ------------- | ----------------------------- | -------------------------- |
-| IBM Motion package | `motion(entrance, productive)` | `motion(entrance, expressive)` |
-| CSS           | cubic-bezier(0, 0, 0.38, 0.9) | cubic-bezier(0, 0, 0.3, 1) |
-| After Effects | Outgoing 0%, incoming 62%     | Outgoing 0%, incoming 70%  |
+| Style      | IBM Motion package         | CSS                           | After Effects             |
+| ---------- | -------------------------- | ----------------------------- | ------------------------- |
+| Productive | `motion(entrance, productive)` | cubic-bezier(0, 0, 0.38, 0.9) | Outgoing 0%, incoming 62% |
+| Expressive | `motion(entrance, expressive)` | cubic-bezier(0, 0, 0.3, 1)    | Outgoing 0%, incoming 70% |
 
 
 ### Exit easing
@@ -199,12 +196,10 @@ Use `exit-easing` when removing elements from view, such as closing a modal or t
 </Tab>
 </WebsiteTabs>
 
-| Framework     | Productive                   | Expressive                    |
-| ------------- | ---------------------------- | ----------------------------- |
-| IBM Motion package | `motion(exit, productive)` | `motion(exit, expressive)` |
-| CSS           | cubic-bezier(0.2, 0, 1, 0.9) | cubic-bezier(0.4, 0.14, 1, 1) |
-| After Effects | Outgoing 20%, incoming 0%    | Outgoing 40%, incoming 0%     |
-
+| Style      | IBM Motion package         | CSS                           | After Effects             |
+| ---------- | -------------------------- | ----------------------------- | ------------------------- |
+| Productive | `motion(exit, productive)` | cubic-bezier(0.2, 0, 1, 0.9)  | Outgoing 20%, incoming 0% |
+| Expressive | `motion(exit, expressive)` | cubic-bezier(0.4, 0.14, 1, 1) | Outgoing 40%, incoming 0% |
 
 An exception to exits: if an element leaves the view but stays nearby, ready to reappear upon user action, use standard easing instead. A good example of this is a side panel. The panel would leave the view, but slows down as it exits, implying that it would come to rest just outside the view, and ready to be recalled.
 
