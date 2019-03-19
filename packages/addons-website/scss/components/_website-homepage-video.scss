@@ -116,7 +116,7 @@
 
 .#{$prefix}--homepage-video-cta-icon {
   fill: $ibm-colors__white-0;
-  width: 20px;
-  height: 20px;
+  width: rem(20px);
+  height: rem(20px);
   transition: fill $transition--base $carbon--standard-easing
 }
