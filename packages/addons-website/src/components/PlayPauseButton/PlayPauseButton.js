@@ -22,30 +22,19 @@ class PlayPauseButton extends React.Component {
     })
   }
 
-  getIcon = () => {
-    const { playing } = this.props
-    const { hover } = this.state
-
-    if(playing) {
-      if (hover) return <PauseOutlineFilled20 />
-      else return <PauseOutline20 />
-    } else {
-      if (hover) return <PlayOutlineFilled20 />
-      else return <PlayOutline20 />
-    }
-  }
-
   render() {
-    const { onClick } = this.props
+    const { onClick, playing } = this.props
+    const { hover } = this.state
     
     return (
       <button className={`${prefix}--play-pause-button`} 
               onMouseOver={this.onOver} 
               onMouseOut={this.onOut} 
               onClick={onClick}> 
-        <span className={`${prefix}--play-pause-icon`}>
-          {this.getIcon()}
-        </span>
+        <span className={`${prefix}--play-pause-icon ${ playing && hover ? 'active' : ''}`}><PauseOutlineFilled20 /></span>
+        <span className={`${prefix}--play-pause-icon ${ playing && !hover ? 'active' : ''}`}><PauseOutline20 /></span>
+        <span className={`${prefix}--play-pause-icon ${ !playing && hover ? 'active' : ''}`}><PlayOutlineFilled20 /></span>
+        <span className={`${prefix}--play-pause-icon ${ !playing && !hover ? 'active' : ''}`}><PlayOutline20 /></span>
       </button>
     );
   }

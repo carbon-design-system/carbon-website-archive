@@ -7,11 +7,16 @@
   position: absolute;
   left: 1rem;
   bottom: 1rem;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
   cursor: pointer;
   display: none;
   z-index: 11;
+  pointer-events: bounding-box;
+
+  &:focus {
+    outline: 2px solid $focus;
+  }
   
   @include carbon--breakpoint('md') {
     display: block;
@@ -26,5 +31,10 @@
   height: 100%;
   z-index: 20;
   fill: #FFF;
+  opacity: 0;
+
+  &.active {
+    opacity: 1;
+  }
 }
   
