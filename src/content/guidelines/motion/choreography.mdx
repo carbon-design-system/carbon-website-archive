@@ -69,6 +69,8 @@ When multiple animated elements coexist or interact with each other within the s
 
 ### Consistency
 
+#### Semantic consistency
+
 When elements convey the same meaning, or perform the same functions, use the same motion for them. Similarly, actions with dramatically different meaning and intent should carry different motions. This helps to reinforce the meaning behind a motion, and improves user’s proficiency with the interface.
 
 In below example, both expanding a row of a data table and opening a dropdown uses a chevron and share similar intent—to reveal content hidden in a seam. Therefore, they should have the same motion style (Productive) and easing (entrance, standard), albeit different durations due to their difference in size.
@@ -82,6 +84,8 @@ In below example, both expanding a row of a data table and opening a dropdown us
 </GridWrapper>
 
 <br />
+
+#### Spacial consistency
 
 Pay attention to the spatial relationships between elements and screens, and information hierarchy. Visually similar elements may need the different motions to respect their respective spatial location.
 
@@ -105,10 +109,12 @@ Pay attention to the spatial relationships between elements and screens, and inf
 
 <br />
 
-Effective use of inconsistency in motion highlights a difference in meaning or intent behind actions with similar visual appearance.
+#### Intentional inconsistency
+
+Conscientious use of inconsistency in motion highlights a difference in meaning or intent behind actions with similar visual appearance. Usually, forward motion in direction of entrance signals affirmation, while reversing entrance motion signals canelation.
 
 <GridWrapper col_lg="8" flex="true">
-<DoDontExample correct="true" label="Use motion to reinforce meaning. Affirmative action here triggers a different exit motion for the modal than negation.">
+<DoDontExample correct="true" label="Affirmation triggers a different exit motion for the modal than negation">
 
 <Video vimeoId="310582134" />
 

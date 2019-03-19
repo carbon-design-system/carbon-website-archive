@@ -11,6 +11,7 @@ import { Tab } from 'carbon-components-react';
 
 <AnchorLinks>
 
+- [Carbon in Motion](#carbon-in-motion)
 - [Style](#style)
 - [Easing](#easing)
 - [Duration](#duration)
@@ -35,6 +36,10 @@ import { Tab } from 'carbon-components-react';
 <br />
 
 <br />
+
+## Carbon in Motion
+
+[Carbon components](../../components/overview/) have motion built in for microinteractions. However, the motion design of the overarching UI — that is, how the components interact with each other and enter and exit the page itself — is up to each product team to implement. Use this guidance to customize, combine, coordinate, and choreograph this aspect of motion in the UI.
 
 ## Style
 
@@ -92,10 +97,6 @@ Productivity and Expression are both essential to an interface. Reserve Expressi
 
 </DoDontExample>
 </GridWrapper>
-
-### Motion in Carbon Components
-
-[Carbon components](../../components/overview/) have motion built in for microinteractions. However, the motion design of the overarching UI — that is, how the components interact with each other and enter and exit the page itself — is up to each product team to implement. Use this guidance to customize, combine, coordinate, and choreograph this aspect of motion in the UI.
 
 ## Easing
 
@@ -181,6 +182,8 @@ Use `entrance-ease` when adding elements to the view such as a modal or toaster 
 
 Use `exit-easing` when removing elements from view, such as closing a modal or toaster. The element speeds up as it exits from view, implying that its departure from the screen is permanent.
 
+An exception to exits: if an element leaves the view but stays nearby, ready to reappear upon user action, use standard easing instead. A good example of this is a side panel. The panel would leave the view, but slows down as it exits, implying that it would come to rest just outside the view, and ready to be recalled.
+
 <WebsiteTabs>
 <Tab label="Curves">
 <div>
@@ -203,7 +206,6 @@ Use `exit-easing` when removing elements from view, such as closing a modal or t
 | Productive | `motion(exit, productive)` | cubic-bezier(0.2, 0, 1, 0.9)  | Outgoing 20%, incoming 0% |
 | Expressive | `motion(exit, expressive)` | cubic-bezier(0.4, 0.14, 1, 1) | Outgoing 40%, incoming 0% |
 
-An exception to exits: if an element leaves the view but stays nearby, ready to reappear upon user action, use standard easing instead. A good example of this is a side panel. The panel would leave the view, but slows down as it exits, implying that it would come to rest just outside the view, and ready to be recalled.
 
 ### Summary on easing
 
