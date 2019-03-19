@@ -21,18 +21,19 @@ The UI shell, or simply, "the shell," is currently in experimental status. It is
 
 The shell is perhaps the most crucial piece of any UI built with Carbon. It contains the shared navigation framework for the entire design system and ties the products in IBM's portfolio together in a cohesive and elegant way. The shell is the home of the topmost navigation, where users can quickly and dependably gain their bearings and move between pages. 
 
-The shell was designed with maximum flexibility built in, to serve the needs of a broad range of products and users. Adopting the shell ensures compliance with IBM design standards, simplifies development efforts, and provides great user experiences. All IBM products built with Carbon are required to use the shell.
+The shell was designed with maximum flexibility built in, to serve the needs of a broad range of products and users. Adopting the shell ensures compliance with IBM design standards, simplifies development efforts, and provides great user experiences. All IBM products built with Carbon are required to use the shell's header.
 
 To better understand the purpose and function of the UI shell, consider the "shell" of MacOS, which contains the Apple menu, top-level navigation, and universal, OS-level controls at the top of the screen, as well as a universal dock along the bottom or side of the screen. The Carbon UI shell is roughly analogous in function to these parts of the Mac UI. For example, the app switcher portion of the shell can be compared to the dock in MacOS.
 
+
 ## UI shell zones
 
-The UI shell is the top level in a product's UI. It consists of the primary **header** and **footer** (coming soon), as well as **header panels** that are used for navigation and global UI services. The shell is further divided into two distinct "zones" which establish purpose and level of control.
+The UI shell is the top level in a product's UI. It consists of the primary **header**, as well as **header panels** that are used for navigation and global UI services. The shell is further divided into two distinct "zones" which establish purpose and level of control.
 
 ### Platform zone
-The platform zone contains platform-level elements, which could include functions like search, docs, support, profile, and notifications. It also includes the universal app switcher. The contents of this zone are ideally controlled by the platform "owner." Platform owners can also choose to include custom top-nav text links in this zone.
+The platform zone contains platform-level elements, which could include functions like search, docs, support, profile, and notifications, and any corresponding panels. It also includes the universal app switcher. The contents of this zone are ideally controlled by the platform "owner." Platform owners can also choose to include custom top-nav text links in this zone.
 
-<ImageComponent cols="8" caption="UI shell platform zone">
+<ImageComponent cols="8" caption="UI shell platform zone"> 
 
 ![Platform zone](images/zones-platform.png)
 
@@ -57,7 +58,7 @@ The header spans the full width of the viewport and is the topmost element in th
 
 <ImageComponent cols="12" caption="Primary header">
 
-![Primary Header template and example](images/header-generic2.png)
+![Primary Header template and example](images/shell-header2.png)
 
 </ImageComponent>
 
@@ -65,7 +66,7 @@ The header spans the full width of the viewport and is the topmost element in th
 
 #### Header responsive behavior
 
-As a header scales down to fit smaller screen sizes, header links and menus should collapse into a left-nav "hamburger" menu. See the examples below to better understand responsive behavior of the header.
+As a header scales down to fit smaller screen sizes, header links and menus should collapse into a left-nav "hamburger" menu. See the examples below to better understand responsive behavior of the header. If your UI includes a side-nav panel, then the header links should be added above the left-nav, pushing it down accordingly.
 
 <ImageComponent cols="12" caption="Responsive behavior of the UI shell header">
 
@@ -79,7 +80,7 @@ As a header scales down to fit smaller screen sizes, header links and menus shou
 
 <br />
 
-- **Hamburger menu:** The "hamburger" icon is used to open left-side nav panels if they are used in the UI. If no collapsible left-nav panels are included as part of normal use, but the UI does utilize top-nav items, then the hamburger icon should appear at narrow responsive widths to accommodate the top nav items.
+- **Hamburger menu:** The "hamburger" icon is used to open left-side nav panels (if they are used in the product's UI). If no collapsible left-nav panels are included as part of normal use, but the UI does utilize top-nav items, then the hamburger icon should appear at narrow breakpoints to accommodate the top nav items, which will flow into the menu.
 
 - **Platform name (e.g. Cloud, IoT, Watson):** For IBM products, the platform name is always preceded by "IBM."
 
@@ -99,21 +100,21 @@ As a header scales down to fit smaller screen sizes, header links and menus shou
 
 These panels contain product-level navigation and can be either fixed-width or flexible.
 
-<ImageComponent cols="12" caption="Side navigation panel template">
+<ImageComponent cols="12" caption="Flexible side navigation panel template">
 
-![Side-Nav Panels](images/side-nav-panel.png)
+![Side-Nav Panels](images/side-nav-panel3.png)
 
 </ImageComponent>
 
 ### Header panels
 
-These are vertical panels that are anchored in the header and invoked by controls on the right side of the header. Header panels have a consistent width, span the full height of the viewport, and are flush to the right edge of the viewport. Only one header panel can be open at a time. Header panels are always treated as [floating panels](/experimental/layout#panel-behavior). 
+These are vertical panels that are anchored in the header and invoked by controls on the right side of the header. Header panels have a consistent width, span the full height of the viewport, and are flush to the right edge of the viewport. Only one header panel can be open at a time. Header panels are always treated as floating panels. 
 
 Use a header panel when additional content or actions associated with a header icon needs to be shown upon click. Profile and notifications panels are good examples of this element in action. More details about panel types and behaviors can be found under the [Layout](/guidelines/layout/) section.
 
 <ImageComponent cols="8" caption="Header panel template">
 
-![Header Panel template](images/header-panel.png)
+![Header Panel template](images/header-panel2.png)
 
 </ImageComponent>
 
@@ -121,9 +122,9 @@ Use a header panel when additional content or actions associated with a header i
 
 These panels are at the same elevation as the primary content zone of the page, and can be either dismissable or fully fixed. 
 
-<ImageComponent cols="12" caption="On-page panel">
+<ImageComponent cols="8" caption="On-page panel template">
 
-![On-Page Panel](images/on-page-panel.png)
+![On-Page Panel](images/on-page-panel-2.png)
 
 </ImageComponent>
 
@@ -184,11 +185,14 @@ If tabs are needed on a page when using a side-nav, then the tabs are secondary 
 
 #### Flexible side-nav
 
+<br />
+
 Use a flexible side-nav when on-page space is a priority. The flexible side-nav has both an expanded and collapsed state, and expands on hover. It can also be expanded (to a fixed state) or collapsed by clicking on the chevron icon at the bottom of the panel. The expanded state contains both icons and corresponding labels, while the collapsed state shows only the icon. 
 
 In a flexible side-nav, each link and category list has its own corresponding icon. Side-nav icons are stacked equidistant from each other in the collapsed state, and when expanded are aligned with their corresponding labels.
 
 A flexible side-nav is more friendly to responsive designs than a fixed nav. Fixed nav is best for products that have a minimum width of 672px. Consider using a flexible nav for a fully responsive solution.
+
 
 <br />
 
@@ -199,15 +203,23 @@ A flexible side-nav is more friendly to responsive designs than a fixed nav. Fix
 - More space is needed for page content
 - A fully responsive solution is needed
 
-<ImageComponent cols="12" caption="Flexible side-nav">
+<ImageComponent cols="12" caption="Flexible side-nav, collapsed">
 
-![Side-nav Panel](images/side-nav-panel.png)
+![Side-nav Panel](images/flex-nav-collapsed.png)
+
+</ImageComponent>
+
+<ImageComponent cols="12" caption="Flexible side-nav, hover">
+
+![Side-nav Panel](images/flex-nav-expanded.png)
 
 </ImageComponent>
 
 <br />
 
 #### Fixed side-nav
+
+<br />
 
 A fixed side-nav contains only links and category lists—no icons—and cannot be collapsed.
 
@@ -219,6 +231,12 @@ A fixed side-nav contains only links and category lists—no icons—and cannot 
 
 - Icons cannot clearly describe the categories
 - Designs are for desktop only
+
+<ImageComponent cols="12" caption="Fixed side-nav">
+
+![Fixed Side-nav Panel](images/fixed-side-nav.png)
+
+</ImageComponent>
 
 <!--
 The left side navigation component can be fixed or flexible-width. It allows for two levels of nesting.
@@ -257,8 +275,6 @@ Fixed panels maintain a static width and come in two sizes: default (256 px) and
 This panel style is at a higher elevation than the primary content area and includes a drop shadow. Floating panels conceal any UI elements below them and must be dismissable by the user. Floating panels are always fixed-width at 256px.
 
 ![Floating panel example](images/Floating-nav.png)
-
-
 
 ## UI shell theming
 
