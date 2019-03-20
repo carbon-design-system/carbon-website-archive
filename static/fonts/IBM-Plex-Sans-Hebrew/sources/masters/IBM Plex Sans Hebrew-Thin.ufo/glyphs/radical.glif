@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="radical" format="1">
+  <advance width="600"/>
+  <unicode hex="221A"/>
+  <outline>
+    <contour>
+      <point x="316" y="0" type="line" name="hr00"/>
+      <point x="535" y="698" type="line"/>
+      <point x="514" y="698" type="line"/>
+      <point x="305" y="27" type="line"/>
+      <point x="302" y="27" type="line"/>
+      <point x="165" y="506" type="line"/>
+      <point x="28" y="506" type="line"/>
+      <point x="28" y="487" type="line"/>
+      <point x="149" y="487" type="line"/>
+      <point x="289" y="0" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+ICA8aGludFNldExpc3Q+CiAgICA8aGludHNldCBw
+b2ludFRhZz0iaHIwMCI+CiAgICAgIDxoc3RlbSBw
+b3M9IjAiIHdpZHRoPSIyNyIgLz4KICAgICAgPGhz
+dGVtIHBvcz0iNDg3IiB3aWR0aD0iMTkiIC8+CiAg
+ICAgIDxoc3RlbSBwb3M9IjY5OCIgd2lkdGg9Ii0y
+MSIgLz4KICAgICAgPHZzdGVtIHBvcz0iMjgiIHdp
+ZHRoPSI1MDciIC8+CiAgICA8L2hpbnRzZXQ+CiAg
+PC9oaW50U2V0TGlzdD4K
+  </data>
+  </dict>
+  </lib>
+</glyph>

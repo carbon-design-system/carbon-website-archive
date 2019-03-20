@@ -1,5 +1,53 @@
 @import '../prefix';
 
+$font-prefix: '/fonts';
+@import '@ibm/plex/scss/devanagari/_index.scss';
+@import '@ibm/plex/scss/thai/_index.scss';
+@import '@ibm/plex/scss/sans-hebrew/_index.scss';
+@import '@ibm/plex/scss/arabic/_index.scss';
+
+//text variants
+@import '@ibm/plex/scss/sans/_index.scss';
+@import '@ibm/plex/scss/sans-condensed/_index.scss';
+@import '@ibm/plex/scss/serif/_index.scss';
+@import '@ibm/plex/scss/mono/_index.scss';
+
+.ibm-type-hebrew {
+  font-family: 'IBM Plex Sans Hebrew';
+}
+
+.ibm-type-thai {
+  font-family: 'IBM Plex Thai';
+}
+
+.ibm-type-devanagari {
+  font-family: 'IBM Plex Devanagari';
+}
+
+.ibm-type-arabic {
+  font-family: 'IBM Plex Arabic';
+}
+
+.ibm-type-default,
+.ibm-type-default * {
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif; }
+
+.ibm-type-condensed,
+.ibm-type-condensed * {
+  font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif; }
+
+.ibm-type-serif,
+.ibm-type-serif * {
+  font-family: 'IBM Plex Serif', 'Georgia', Times, serif; }
+
+.ibm-type-mono,
+.ibm-type-mono * {
+  font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace; }
+
+.ibm-type-italic  {
+  font-style: italic;
+}
+
 .#{$prefix}--type-tester-container {
   display: flex;
   flex-direction: column;
@@ -123,6 +171,7 @@
   background: $ui-02;
 
   .#{$prefix}--custom-textarea {
+    // font-family: 'IBM Plex Sans';
     font-size: 48px;
     resize: none;
     border: none;

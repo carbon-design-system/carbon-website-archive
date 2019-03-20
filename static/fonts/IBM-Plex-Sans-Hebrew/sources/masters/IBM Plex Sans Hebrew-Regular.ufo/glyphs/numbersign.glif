@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="numbersign" format="1">
+  <advance width="713"/>
+  <unicode hex="0023"/>
+  <outline>
+    <contour>
+      <point x="370" y="0" type="line" name="hr01"/>
+      <point x="434" y="0" type="line"/>
+      <point x="470" y="205" type="line"/>
+      <point x="608" y="205" type="line"/>
+      <point x="608" y="265" type="line"/>
+      <point x="480" y="265" type="line"/>
+      <point x="508" y="433" type="line"/>
+      <point x="647" y="433" type="line"/>
+      <point x="647" y="493" type="line"/>
+      <point x="519" y="493" type="line"/>
+      <point x="554" y="698" type="line"/>
+      <point x="490" y="698" type="line"/>
+      <point x="455" y="493" type="line"/>
+      <point x="301" y="493" type="line"/>
+      <point x="336" y="698" type="line"/>
+      <point x="272" y="698" type="line"/>
+      <point x="237" y="493" type="line"/>
+      <point x="99" y="493" type="line"/>
+      <point x="99" y="433" type="line"/>
+      <point x="226" y="433" type="line"/>
+      <point x="198" y="265" type="line"/>
+      <point x="60" y="265" type="line"/>
+      <point x="60" y="205" type="line"/>
+      <point x="188" y="205" type="line"/>
+      <point x="152" y="0" type="line"/>
+      <point x="216" y="0" type="line"/>
+      <point x="252" y="205" type="line"/>
+      <point x="406" y="205" type="line"/>
+    </contour>
+    <contour>
+      <point x="262" y="265" type="line"/>
+      <point x="290" y="433" type="line"/>
+      <point x="444" y="433" type="line"/>
+      <point x="416" y="265" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+  <dict>
+  <key>com.adobe.type.autohint</key>
+  <data>
+ICA8aGludFNldExpc3Q+CiAgICA8aGludHNldCBw
+b2ludFRhZz0iaHIwMSI+CiAgICAgIDxoc3RlbSBw
+b3M9IjAiIHdpZHRoPSItMjEiIC8+CiAgICAgIDxo
+c3RlbSBwb3M9IjIwNSIgd2lkdGg9IjYwIiAvPgog
+ICAgICA8aHN0ZW0gcG9zPSI0MzMiIHdpZHRoPSI2
+MCIgLz4KICAgICAgPGhzdGVtIHBvcz0iNjk4IiB3
+aWR0aD0iLTIxIiAvPgogICAgICA8dnN0ZW0gcG9z
+PSI2MCIgd2lkdGg9IjU4NyIgLz4KICAgIDwvaGlu
+dHNldD4KICA8L2hpbnRTZXRMaXN0Pgo=
+  </data>
+  </dict>
+  </lib>
+</glyph>

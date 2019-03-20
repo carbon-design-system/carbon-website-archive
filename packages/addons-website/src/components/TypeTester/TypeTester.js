@@ -38,6 +38,11 @@ const languageSample = [
     content:
       'ऋषियों को सताने वाले दुष्ट राक्षसों के राजा रावण का सर्वनाश करने वाले विष्णुवतार भगवान श्रीराम, अयोध्या के महाराज दशरथ के बड़े सपुत्र थे।',
   },
+  {
+    language: 'arabic',
+    content:
+      'أ الأوروبية،. دنو في بزمام لمحاكم الأمريكي, لان ألمّ بداية القادة ما. ٣٠ ولم تمهيد الثالث الصعداء. حدى شعار',
+  },
 ]
 
 const commonFontWeights = [
@@ -60,13 +65,14 @@ const languageDropdownContent = [
   },
   {
     label: 'IBM Plex Sans',
+    className: 'ibm-type-default',
     language: 'latin',
     weights: commonFontWeights,
   },
   {
     label: 'IBM Plex Sans Italic',
     language: 'latin',
-    className: 'ibm-type-italic',
+    className: 'ibm-type-default ibm-type-italic',
     weights: commonFontWeights,
   },
   {
@@ -108,12 +114,13 @@ const languageDropdownContent = [
   {
     label: 'IBM Plex Sans Cyrillic',
     language: 'cyrillic',
+    className: 'ibm-type-default',
     weights: commonFontWeights,
   },
   {
     label: 'IBM Plex Sans Cyrillic Italic',
     language: 'cyrillic',
-    className: 'ibm-type-italic',
+    className: 'ibm-type-default ibm-type-italic',
     weights: commonFontWeights,
   },
   {
@@ -143,12 +150,13 @@ const languageDropdownContent = [
   {
     label: 'IBM Plex Sans Greek',
     language: 'greek',
+    className: 'ibm-type-default',
     weights: commonFontWeights,
   },
   {
     label: 'IBM Plex Sans Greek Italic',
     language: 'greek',
-    className: 'ibm-type-italic',
+    className: 'ibm-type-default ibm-type-italic',
     weights: commonFontWeights,
   },
   {
@@ -162,7 +170,13 @@ const languageDropdownContent = [
     language: 'devanagari',
     className: 'ibm-type-devanagari',
     weights: commonFontWeights,
-  }, 
+  },
+  {
+    label: 'IBM Plex Sans Arabic',
+    language: 'arabic',
+    className: 'ibm-type-arabic',
+    weights: commonFontWeights,
+  },
 ].map(variant => {
   variant.value = variant.label.toLowerCase().replace(/ /g, '-')
   return variant
