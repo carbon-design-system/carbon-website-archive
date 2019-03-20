@@ -6,8 +6,8 @@ import { breakpoints } from "@carbon/layout/es";
 const { prefix } = settings;
 
 import { ArrowRight20 } from "@carbon/icons-react/es";
-import VideoInternal from '@carbon/addons-website/src/components/VideoInternal/VideoInternal'
-import PlayPauseButton from '@carbon/addons-website/src/components/PlayPauseButton/PlayPauseButton'
+import VideoInternal from '@carbon/addons-website/src/components/VideoInternal/'
+import PlayPauseButton from '@carbon/addons-website/src/components/PlayPauseButton/'
 
 class HomepageVideo extends Component {
   state = {
