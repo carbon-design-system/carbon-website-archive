@@ -41,7 +41,7 @@
   width: 100%;
   flex-direction: column;
   height: 150vw;
-  // padding: 0 !important;
+  position: relative;
   
   @include carbon--breakpoint('md') {
     height: 50vw;
