@@ -31,6 +31,10 @@
   @include carbon--breakpoint-down('md') {
     margin-right: -2rem !important;
   }
+  
+  @include carbon--breakpoint('md') {
+    padding-right: 0 !important;
+  }
 }
 
 .#{$prefix}--homepage-video-container-cta {
