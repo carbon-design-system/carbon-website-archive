@@ -57,8 +57,8 @@ class HomepageVideo extends Component {
     const {loop, playing} = this.state
 
     return (
-      <div className={`${prefix}--homepage-video-container ibm--offset-lg-4`}>
-        <div className={`${prefix}--homepage-video-wrapper`}>
+      <div className={`${prefix}--homepage-video-container ibm--row`}>
+        <div className={`${prefix}--homepage-video-wrapper ibm--offset-lg-4`}>
           <VideoInternal
             loop={loop}
             poster="images/hero-video-poster.jpg"
@@ -67,21 +67,21 @@ class HomepageVideo extends Component {
             onVideoComplete={this.onVideoComplete}
           />
           <div className={`${prefix}--homepage-video-overlay`} />
-          <div className={`${prefix}--homepage-video-container-cta`}>
-            <Link className={`${prefix}--homepage-video-cta`} to="/philosophy/">
-              <p className={`${prefix}--type-expressive-heading-03 ibm-padding`}>Philosophy</p>
-              <div className={`${prefix}--homepage-video-arrow-container ibm-padding`}>
-                <ArrowRight20 className={`${prefix}--homepage-video-cta-icon`} />
-              </div>
-            </Link>
-            <Link className={`${prefix}--homepage-video-cta`} to="/gallery/">
-              <p className={`${prefix}--type-expressive-heading-03 ibm-padding`}>Gallery</p>
-              <div className={`${prefix}--homepage-video-arrow-container ibm-padding`}>
-                <ArrowRight20 className={`${prefix}--homepage-video-cta-icon`} />
-              </div>
-            </Link>
-          </div>
-           <PlayPauseButton onClick={this.onPlayPauseClick} playing={playing} />
+        </div>
+        <div className={`${prefix}--homepage-video-container-cta ibm--offset-lg-4 ibm--col-lg-12 ibm--col-max-9`}>
+          <Link className={`${prefix}--homepage-video-cta`} to="/philosophy/">
+            <p className={`${prefix}--type-expressive-heading-03 ibm-padding`}>Philosophy</p>
+            <div className={`${prefix}--homepage-video-arrow-container ibm-padding`}>
+              <ArrowRight20 className={`${prefix}--homepage-video-cta-icon`} />
+            </div>
+          </Link>
+          <Link className={`${prefix}--homepage-video-cta`} to="/gallery/">
+            <p className={`${prefix}--type-expressive-heading-03 ibm-padding`}>Gallery</p>
+            <div className={`${prefix}--homepage-video-arrow-container ibm-padding`}>
+              <ArrowRight20 className={`${prefix}--homepage-video-cta-icon`} />
+            </div>
+          </Link>
+          <PlayPauseButton onClick={this.onPlayPauseClick} playing={playing} />
         </div>
       </div>
     )

@@ -5,20 +5,12 @@
 }
 
 .#{$prefix}--homepage-video-wrapper {
-  position: relative !important;
+  position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
   overflow: hidden;
   width: 100%; 
   z-index: 11;
-  height: 150vw;
-  
-  @include carbon--breakpoint('md') {
-    height: 50vw;
-  }
-  
-  @include carbon--breakpoint('lg') {
-    height: 35rem;
-  }
+  height: 100%;
 }
 
 .#{$prefix}--homepage-video-overlay {
@@ -32,15 +24,26 @@
 }
 
 .#{$prefix}--homepage-video-container-cta {
-  height: 100%;
-  width: 100%;
+  // width: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  height: 150vw;
+  padding: 0 !important;
   
   @include carbon--breakpoint('md') {
+    height: 50vw;
     flex-direction: row;
     justify-content: flex-end;
   }
+  
+  @include carbon--breakpoint('lg') {
+    height: 35rem;
+  }
+  
   
   @include carbon--breakpoint('max') {
     max-width: 75%;
