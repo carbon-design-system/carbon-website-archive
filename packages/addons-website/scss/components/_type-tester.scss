@@ -104,12 +104,13 @@ $font-prefix: '/fonts';
           &::before,
           &::after {
             // content: none;
+            height: 3rem;
             background: $ui-02;
           }
           &:hover,
-          &.#{$prefix}--list-box__menu-item--active {
+          &.#{$prefix}--list-box__menu-item--active,
+          &.#{$prefix}--list-box__menu-item--highlighted {
             background: $hover-ui;
-            border-bottom-color: $ui-02;
 
             &::before,
             &::after {
