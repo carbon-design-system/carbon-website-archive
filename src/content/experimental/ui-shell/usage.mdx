@@ -54,7 +54,7 @@ The UI shell is designed to be configurable. Within the bounds of a specific zon
 
 ### Primary header
 
-The header spans the full width of the viewport and is the topmost element in the browser window. Header elements are persistent throughout the product experience. 
+The header spans the full width of the viewport and is the topmost element in the browser window. Header elements are persistent throughout the product experience.
 
 <ImageComponent cols="12" caption="Primary header">
 
@@ -76,9 +76,11 @@ As a header scales down to fit smaller screen sizes, header links and menus shou
 
 <br />
 
-#### Header elements:
+#### Header anatomy
 
 <br />
+
+The header's architecture is structured to clarify meaning through placement along a left-to-right axis. The left side of the header, and its associated elements, represents the more "local" end of the spectrum, and contains items relevant at the product level. Moving to the right along the header, the functions become more global. Whereas elements in the middle of the header should represent platform-level controls, elements on the right side of the header, such as the app switcher, are the most global in their scope, and span multiple platforms. As a rule of thumb for the UI Shell, left-to-right translates to local-to-global.    
 
 - **Hamburger menu:** The "hamburger" icon is used to open left-side nav panels (if they are used in the product's UI). If no collapsible left-nav panels are included as part of normal use, but the UI does utilize top-nav items, then the hamburger icon should appear at narrow breakpoints to accommodate the top nav items, which will flow into the menu.
 
