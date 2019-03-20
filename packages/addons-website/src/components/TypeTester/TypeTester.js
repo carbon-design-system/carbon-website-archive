@@ -10,6 +10,7 @@ const prefix = settings.prefix;
 
 
 const HEBREW = 'hebrew'
+const ARABIC = 'arabic'
 
 const languageSample = [
   {
@@ -41,7 +42,7 @@ const languageSample = [
   {
     language: 'arabic',
     content:
-      'أ الأوروبية،. دنو في بزمام لمحاكم الأمريكي, لان ألمّ بداية القادة ما. ٣٠ ولم تمهيد الثالث الصعداء. حدى شعار',
+      'أبجد هوز حطي كلمن سعفص قرشت ثخذ وضظغ',
   },
 ]
 
@@ -255,7 +256,7 @@ class TypeTester extends Component {
   }
 
   isRtl = () => {
-    return this.getLanguageForVariant(this.state.variant) === HEBREW
+    return this.getLanguageForVariant(this.state.variant) === HEBREW || this.getLanguageForVariant(this.state.variant) === ARABIC
   }
 
 
