@@ -104,17 +104,18 @@ $font-prefix: '/fonts';
           &::before,
           &::after {
             // content: none;
-            height: 3rem;
             background: $ui-02;
           }
           &:hover,
           &.#{$prefix}--list-box__menu-item--active,
           &.#{$prefix}--list-box__menu-item--highlighted {
             background: $hover-ui;
+            border-color: transparent;
 
             &::before,
             &::after {
               background: $hover-ui;
+              border-color: transparent;
             }
           }
         }

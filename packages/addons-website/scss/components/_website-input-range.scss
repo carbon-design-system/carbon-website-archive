@@ -82,6 +82,7 @@
     content: '';
     position: absolute;
     height: rem(1px);
+    width: var(--track-width);
   }
 
   &:hover,

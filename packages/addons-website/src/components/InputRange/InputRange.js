@@ -10,6 +10,7 @@ const InputRange = ({ step, min, max, value, onChange }) => (
     min={min}
     max={max}
     value={value}
+    style={{'--track-width': `${Math.round((value / (max - min)) * 100) - 7}%`}}
     onChange={onChange}
     className={`${prefix}--input-range`}
   />

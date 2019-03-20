@@ -78,10 +78,12 @@
   }
 
   &:after {
-    background: $ibm-colors__black-100;
-    content: '';
+    background: red;
+    content: attr(data-value)'%';
     position: absolute;
     height: rem(1px);
+    width: 100px;
+    // width: attr(data-value)'%';
   }
 
   &:hover,
