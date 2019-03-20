@@ -15,6 +15,11 @@ class HomepageVideo extends Component {
     loop: true
   }
 
+  static defaultProps = {
+    poster: 'images/hero-video-poster.jpg',
+    src: 'videos/hero-video.mp4'
+  }
+
   componentDidMount() {
     window.addEventListener('resize', this.onResize);
   }
@@ -55,14 +60,15 @@ class HomepageVideo extends Component {
 
   render() {
     const {loop, playing} = this.state
+    const {src, poster} = this.props
 
     return (
       <div className={`${prefix}--homepage-video-container`}>
         <div className={`${prefix}--homepage-video-wrapper`}>
           <VideoInternal
             loop={loop}
-            poster="images/hero-video-poster.jpg"
-            src="videos/hero-video.mp4"
+            poster={poster}
+            src={src}
             playing={playing}
             onVideoComplete={this.onVideoComplete}
           />
@@ -88,6 +94,15 @@ class HomepageVideo extends Component {
       </div>
     )
   }
+}
+
+HomepageVideo.propTypes = {
+
+  // url to video
+  src: PropTypes.string,
+
+  // url to poster
+  poster: PropTypes.string
 }
 
 export default HomepageVideo;
