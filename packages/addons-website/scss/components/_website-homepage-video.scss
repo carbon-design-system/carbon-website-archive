@@ -6,6 +6,7 @@
 
 .#{$prefix}--homepage-video-wrapper {
   position: absolute;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.7);
   overflow: hidden;
   width: 100%; 
@@ -23,32 +24,31 @@
   height: 100%;
 }
 
+.#{$prefix}--homepage-video-overlay-content {
+  position: relative;
+  z-index: 12;
+  
+  @include carbon--breakpoint-down('md') {
+    margin-right: -2rem !important;
+  }
+}
+
 .#{$prefix}--homepage-video-container-cta {
   width: 100%;
-  display: flex;
   flex-direction: column;
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 12;
   height: 150vw;
-  padding: 0 !important;
+  // padding: 0 !important;
   
   @include carbon--breakpoint('md') {
     height: 50vw;
     flex-direction: row;
     justify-content: flex-end;
+    margin-left: 0 !important;
   }
   
   @include carbon--breakpoint('lg') {
     height: 35rem;
   }
-  
-  
-  @include carbon--breakpoint('max') {
-    max-width: 75%;
-  }
-  
 }
 
 .#{$prefix}--homepage-video-cta {
@@ -84,6 +84,10 @@
     
     svg {
       fill: $ibm-colors__gray-100;
+    }
+
+    p {
+      color: $ibm-colors__gray-100;
     }
   }
   

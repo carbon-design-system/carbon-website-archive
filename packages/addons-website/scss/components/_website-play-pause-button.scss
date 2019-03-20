@@ -5,7 +5,7 @@
   border: none;
   padding: 0;
   position: absolute;
-  left: 1rem;
+  left: -1rem;
   bottom: 1rem;
   width: 1.25rem;
   height: 1.25rem;
@@ -21,6 +21,10 @@
   @include carbon--breakpoint('md') {
     display: block;
   } 
+  
+  @include carbon--breakpoint('lg') {
+    left: 15rem;
+  }
 }
 
 .#{$prefix}--play-pause-icon {
