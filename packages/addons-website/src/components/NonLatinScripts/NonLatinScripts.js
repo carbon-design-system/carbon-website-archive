@@ -8,6 +8,13 @@ const NonLatinScripts = () => {
   return (
     <div className={`${prefix}--non-latin-outer-spacing`}>
       <NonLatinScript
+        customStyle="--non-latin-type-example-arabic"
+        typefaceName="IBM Plex Arabic"
+        className="ibm-type-arabic"
+        rtl
+        value="البشرية"
+      />
+      <NonLatinScript
         customStyle="--non-latin-type-example-cyrillic"
         typefaceName="IBM Plex Mono Cyrillic"
         className="ibm-type-mono"
@@ -42,12 +49,6 @@ const NonLatinScripts = () => {
         typefaceName="IBM Plex Thai (non-looped)"
         className="ibm-type-thai"
         value="องค์ความรู้"
-      />
-      <NonLatinScript
-        customStyle="--non-latin-type-example-arabic"
-        typefaceName="IBM Plex Arabic"
-        className="ibm-type-arabic"
-        value="المعرفي"
       />
     </div>
   );

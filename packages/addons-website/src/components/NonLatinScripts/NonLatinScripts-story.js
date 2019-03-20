@@ -22,6 +22,13 @@ storiesOf('Non Latin Scripts', module)
     () => (
       <div style={{ width: '100%', backgroundColor: '#F3F3F3' }}>
         <NonLatinScript
+          customStyle="--non-latin-type-example-arabic"
+          typefaceName="IBM Plex Arabic"
+          className="ibm-type-arabic"
+          rtl
+          value="البشرية"
+        />
+        <NonLatinScript
           customStyle="--non-latin-type-example-cyrillic"
           typefaceName="IBM Plex Mono Cyrillic"
           className="ibm-type-mono"
