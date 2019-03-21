@@ -14,12 +14,14 @@ const WebsiteSwitcher = props => {
 
   return (
     <nav className={classNames} aria-label="website switcher">
-      <ul style={{display: !isSwitcherOpen && 'none'}} className={`${prefix}--website-switcher__list`}>
+      <ul
+        style={{ display: !isSwitcherOpen && 'none' }}
+        className={`${prefix}--website-switcher__list`}>
         {links &&
           links.map((link, i) => {
             return (
               <li key={i} className={`${prefix}--website-switcher-list__item`}>
-                <a 
+                <a
                   className={`${prefix}--website-switcher-list__item-link`}
                   tabIndex={isSwitcherOpen ? 0 : -1}
                   href={link.href}

@@ -49,7 +49,7 @@ module.exports = {
       },
     },
     '$interactive-03': {
-      role: ['Tertiary interactive color','Tertiary button'],
+      role: ['Tertiary interactive color', 'Tertiary button'],
       value: {
         white: {
           name: 'Blue 60',
@@ -352,7 +352,11 @@ module.exports = {
       },
     },
     '$icon-03': {
-      role: ['Tertiary icons', `Icons on interactive colors`, `Icons on non-ui colors`],
+      role: [
+        'Tertiary icons',
+        `Icons on interactive colors`,
+        `Icons on non-ui colors`,
+      ],
       value: {
         white: {
           name: 'White',
@@ -878,7 +882,7 @@ module.exports = {
         },
       },
     },
-    '$highlight': {
+    $highlight: {
       role: ['$interactive-01 highlight'],
       value: {
         white: {

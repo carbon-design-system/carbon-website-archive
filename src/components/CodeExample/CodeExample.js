@@ -104,7 +104,6 @@ class CodeExample extends Component {
             />
           </button>
         </div>
-
       </div>
     );
   }
