@@ -13,6 +13,7 @@ const baseConfig = {
     'prop-types',
     'classnames',
     'carbon-components',
+    'gatsby',
     'react-scroll-up',
   ],
   plugins: [
@@ -80,6 +81,7 @@ module.exports = [
         'react-dom': 'ReactDOM',
         'prop-types': 'PropTypes',
         'react-scroll-up': 'ScrollToTop',
+        'gatsby': 'gatsby'
       },
     },
   },

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+import {Link} from 'gatsby'
 import { settings } from 'carbon-components';
 import { breakpoints } from "@carbon/layout/es";
 const { prefix } = settings;
