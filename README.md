@@ -21,49 +21,49 @@ src
 - 📚 [Content/Markdown Guidelines](docs/CONTENT.md)
 - 🗺 [Navigation Guidelines](docs/NAVIGATION.md)
 
-Install dependencies
+Install dependencies:
 
 ```
 yarn
 ```
 
-Build website-addons package
+Build website-addons package:
 ```
 cd packages/addons-website
 yarn build
 ```
 
-Run dev environment
+Run dev environment:
 
 ```
 yarn dev
 ```
 
-Run internal dev environment
+Run internal dev environment:
 
 ```
 yarn dev:internal
 ```
 
-Add-on development `/packages/addons-website` uses storybook
+Add-on development `/packages/addons-website` uses storybook:
 
 ```
 yarn storybook
 ```
 
-If you need more detailed information on how to setup your machine to develop locally please take a look at our [wiki](https://github.com/carbon-design-system/carbon-website-gatsby/wiki).
+If you need more detailed information on how to setup your machine to develop locally, please take a look at our [wiki](https://github.com/carbon-design-system/carbon-website-gatsby/wiki).
 
 ## 🚀 Build
 
 Runing the build commands generates all the files and places them in the `public` folder. 
 
-Build external site
+Build external site:
 
 ```
 yarn build:external
 ```
 
-Build internal site
+Build internal site:
 
 ```
 yarn build:internal
