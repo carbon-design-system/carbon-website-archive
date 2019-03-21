@@ -33,11 +33,11 @@ a.feature-tile {
 }
 
 a.feature-tile:hover .feature-tile__info {
-  background-color: $ibm-colors__gray-80;
+  background-color: $carbon--gray-80;
 }
 
 .feature-tile__info {
-  background-color: $ibm-colors__gray-90;
+  background-color: $carbon--gray-90;
   padding: $spacing-md;
   display: flex;
   flex-direction: column;
@@ -55,17 +55,17 @@ a.feature-tile:hover .feature-tile__info {
   position: absolute;
   bottom: rem(14px);
   right: $spacing-md;
-  fill: $ibm-colors__gray-30;
+  fill: $carbon--gray-30;
 }
 
 .feature-tile__label {
   @include carbon--type-style('body-short-01');
-  color: $ibm-colors__gray-30;
+  color: $carbon--gray-30;
 }
 
 .feature-tile__title {
   @include carbon--type-style('expressive-heading-03', true);
-  color: $ibm-colors__gray-10;
+  color: $carbon--gray-10;
 }
 
 a.feature-tile.feature-tile--mobile {

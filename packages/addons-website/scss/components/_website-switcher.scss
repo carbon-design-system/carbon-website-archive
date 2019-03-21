@@ -9,7 +9,7 @@
   right: 0;
   top: 0;
   width: rem(256px);
-  background-color: $ibm-colors__gray-100;
+  background-color: $carbon--gray-100;
   height: 100%;
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -18,7 +18,7 @@
   transition: transform 0.11s cubic-bezier(0.2, 0, 1, 0.9);
   overflow-y: auto;
   overflow-x: hidden;
-  border-left: 1px solid $ibm-colors__gray-80;
+  border-left: 1px solid $carbon--gray-80;
 }
 
 .#{$prefix}--header ~ .#{$prefix}--website-switcher {
@@ -42,7 +42,7 @@
     bottom: rem(-9px);
     width: rem(222px);
     margin-left: $spacing-md;
-    border-top: 1px solid $ibm-colors__gray-80;
+    border-top: 1px solid $carbon--gray-80;
   }
 }
 
@@ -60,11 +60,11 @@
   display: block;
   text-decoration: none;
   padding: rem(6px) 1rem;
-  color: $ibm-colors__gray-30;
+  color: $carbon--gray-30;
 
   &:hover {
     background: #353535;
-    color: $ibm-colors__gray-10;
+    color: $carbon--gray-10;
   }
 
   &:focus {

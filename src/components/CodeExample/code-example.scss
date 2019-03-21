@@ -75,7 +75,7 @@
   justify-content: space-between;
   overflow-y: hidden;
   transition: $transition--base;
-  border-bottom: 1px solid $ibm-colors__gray-80;
+  border-bottom: 1px solid $carbon--gray-80;
 
   &--expanded {
     max-height: 100rem;
