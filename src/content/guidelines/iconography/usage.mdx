@@ -13,6 +13,40 @@ tabs: ['Library', 'Usage', 'Contribution']
 
 </AnchorLinks>
 
+## Resources
+<GridWrapper
+  className="tile--resource--no-margin"
+  col_lg="8"
+  flex="true"
+  bleed="true"> 
+  <ClickableTile
+    title="Elements package: Icons"
+    href="https://github.com/IBM/carbon-elements/tree/master/packages/icons"
+    type="resource">
+
+![](images/github-icon.png)
+
+  </ClickableTile>
+  <ClickableTile
+    title="Elements package: Icons-React"
+    href="https://github.com/IBM/carbon-elements/tree/master/packages/icons-react"
+    type="resource">
+
+![](images/github-icon.png)
+
+
+
+
+
+
+ </ClickableTile> 
+</GridWrapper>
+
+
+<br />
+
+<br />
+
 ## Usage for designers
 
 ### Sizing
@@ -155,12 +189,12 @@ Carbon icons ship with two main SVG files that contain different sets of externa
 
 | Filename          | Description                                                                                             | Supported versions  |
 | ----------------- | ------------------------------------------------------------------------------------------------------- | ------------------- |
-| carbon-icons.svg  | Contains current icons (consolidated subset of legacy icons used in IBM Bluemix)                        | `3.x` and newer     |
-| carbon-icons.json | JSON file created from carbon-icons.svg, used in [Carbon](/guidelines/iconography/library)              | `3.x` and newer     |
-| carbon-icons.js   | JS module created from carbon-icons.svg, used in `Icon` React Component in [carbon-components-react](#) | `3.x` and newer     |
-| sprite.svg        | SVG sprite contains legacy icons                                                                        | `1.x`,`2.x`and`3.x` |
-| icons.json        | legacy JSON file created from sprite.svg                                                                | `1.x`,`2.x`and`3.x` |
-| legacy-icons.js   | JS module created from sprite.svg                                                                       | `3.x` only          |
+| _carbon-icons.svg_  | Contains current icons (consolidated subset of legacy icons used in IBM Bluemix)                        | `3.x` and newer     |
+| _carbon-icons.json_ | JSON file created from carbon-icons.svg, used in [Carbon](/guidelines/iconography/library)              | `3.x` and newer     |
+| _carbon-icons.js_   | JS module created from carbon-icons.svg, used in `Icon` React Component in [carbon-components-react](#) | `3.x` and newer     |
+| _sprite.svg_       | SVG sprite contains legacy icons                                                                        | `1.x`,`2.x`and`3.x` |
+| _icons.json_       | legacy JSON file created from sprite.svg                                                                | `1.x`,`2.x`and`3.x` |
+| _legacy-icons.js_  | JS module created from sprite.svg                                                                       | `3.x` only          |
 
 ### Accessibility
 
@@ -186,7 +220,10 @@ Make sure that you do not duplicate this `id`.
 </svg>
 ```
 
-For more details on accessibility, see the following resources:
+
+#### For more details on accessibility, see the following resources:
+
+<br />
 
 - "Accessible SVGs" via [CSS-Tricks](https://css-tricks.com/accessible-svgs/)
 - "5.4 The 'desc' and 'title' elements" via [W3C.org](https://www.w3.org/TR/SVG11/struct.html#DescriptionAndTitleElements)

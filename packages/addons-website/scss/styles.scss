@@ -1,12 +1,5 @@
 @import 'prefix';
-@import 'components/404';
-@import 'components/website-footer';
-@import 'components/website-switcher';
-@import 'components/website-header';
-@import 'components/website-header-nav';
-@import 'components/website-side-nav';
-@import 'components/website-back-to-top-btn';
-@import 'components/typeface-sub-families';
+
 @import '@carbon/type/scss/type';
 @import '@carbon/type/scss/font-face/sans';
 @import '@carbon/type/scss/font-face/serif';
@@ -17,3 +10,14 @@
 @include carbon--type-classes();
 @include carbon--font-face-mono();
 @include carbon--font-face-sans();
+
+@import 'components/404';
+@import 'components/website-footer';
+@import 'components/website-switcher';
+@import 'components/website-header';
+@import 'components/website-header-nav';
+@import 'components/website-side-nav';
+@import 'components/website-back-to-top-btn';
+@import 'components/typeface-sub-families';
+@import 'components/swatch-palette-widget';
+

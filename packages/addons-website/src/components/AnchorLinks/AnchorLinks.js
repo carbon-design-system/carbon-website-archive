@@ -3,11 +3,6 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 export default class AnchorLinks extends React.Component {
-  static propTypes = {
-    children: PropTypes.node,
-    small: PropTypes.bool,
-  };
-
   render() {
     const { children, small } = this.props;
     const isColumn = React.Children.toArray(children.props.children).length > 6;
@@ -20,3 +15,8 @@ export default class AnchorLinks extends React.Component {
     return <div className={classNames}>{children}</div>;
   }
 }
+
+AnchorLinks.propTypes = {
+  children: PropTypes.node,
+  small: PropTypes.bool,
+};

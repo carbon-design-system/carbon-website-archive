@@ -43,7 +43,7 @@
 }
 
 .bx--snippet--website .bx--snippet__icon {
-  fill: $inverse-01;
+  fill: $icon-03;
 }
 
 .bx--snippet--website .bx--snippet--multi .bx--snippet-container {
@@ -56,6 +56,10 @@
   color: $inverse-01;
 }
 
+.bx--snippet--website .bx--icon-chevron--down {
+  fill: $icon-03;
+}
+
 .bx--snippet--website pre div code[class*='language-'] {
   white-space: pre;
 }
@@ -64,8 +68,7 @@ code[class*='language-'],
 pre[class*='language-'] {
   font-size: rem(14px) !important;
   line-height: rem(20px) !important;
-  font-family: 'ibm-plex-mono' !important;
-  color: #fff!important;
+  color: #fff !important;
 }
 
 :not(pre) > code[class*='language-'],
@@ -80,21 +83,21 @@ pre[class*='language-'] {
 }
 
 .token.comment {
-  color: #BEBEBE !important;
+  color: #bebebe !important;
 }
 
 .token.tag {
-  color: #6EA6FF !important;
+  color: #6ea6ff !important;
 }
 
 .token.string {
-  color: #FA75A6 !important;
+  color: #fa75a6 !important;
 }
 
 .token.attr-name,
 .token.property,
 .token.function {
-  color: #92EEEE !important;
+  color: #92eeee !important;
 }
 
 .token.attr-value,
@@ -103,7 +106,7 @@ pre[class*='language-'] {
 .token.directive,
 .token.unit,
 .token.selector {
-  color: #BB8EFF !important;
+  color: #bb8eff !important;
 }
 
 .token.variable {

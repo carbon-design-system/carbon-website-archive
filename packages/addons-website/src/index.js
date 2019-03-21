@@ -4,4 +4,7 @@ export { default as FourOhFour } from './components/404';
 export {
   default as WebsiteBackToTopBtn,
 } from './components/WebsiteBackToTopBtn';
+
 export { default as TypefaceSubFamilies } from './components/TypefaceSubFamilies';
+export { default as AnchorLinks } from './components/AnchorLinks';
+
