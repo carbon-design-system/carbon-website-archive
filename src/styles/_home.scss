@@ -253,7 +253,7 @@
   text-decoration: none;
 }
 
-.list-item__link img{
+.list-item__link img {
   width: 100px;
   height: 100px;
   margin-right: 1.5rem;
@@ -400,7 +400,6 @@
   z-index: 1;
 }
 
-
 // Internal only
 .overview-page__banner.overview-page__banner--internal {
   background: $ibm-colors__black;
@@ -409,7 +408,7 @@
   height: 560px;
   display: flex;
   justify-content: flex-end;
-}   
+}
 
 .overview-page__banner--internal {
   .banner__logo {
