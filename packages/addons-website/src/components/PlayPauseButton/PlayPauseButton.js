@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types'
+import classnames from 'classnames'
 import { settings } from 'carbon-components';
 const { prefix } = settings;
 
@@ -23,11 +24,13 @@ class PlayPauseButton extends React.Component {
   }
 
   render() {
-    const { onClick, playing } = this.props
+    const { onClick, playing, loop } = this.props
     const { hover } = this.state
     
     return (
-      <button className={`${prefix}--play-pause-button`} 
+      <button className={classnames(`${prefix}--play-pause-button`, {
+        [`${prefix}--play-pause-hide-on-mobile`]: loop
+      })} 
               onMouseOver={this.onOver} 
               onMouseOut={this.onOut} 
               onClick={onClick}> 

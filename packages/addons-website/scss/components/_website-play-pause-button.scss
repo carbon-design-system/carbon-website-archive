@@ -5,12 +5,11 @@
   border: none;
   padding: 0;
   position: absolute;
-  left: -1rem;
+  left: 1rem;
   bottom: 1rem;
   width: 1.25rem;
   height: 1.25rem;
   cursor: pointer;
-  display: none;
   z-index: 11;
   pointer-events: bounding-box;
 
@@ -24,6 +23,14 @@
   
   @include carbon--breakpoint('lg') {
     left: 15rem;
+  }
+
+  &.#{$prefix}--play-pause-hide-on-mobile {
+    display:none;
+
+    @include carbon--breakpoint('md') {
+      display: block;
+    } 
   }
 }
 

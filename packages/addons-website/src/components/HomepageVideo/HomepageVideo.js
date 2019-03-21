@@ -7,11 +7,9 @@ const { prefix } = settings;
 
 import { ArrowRight20 } from "@carbon/icons-react/es";
 import VideoInternal from '@carbon/addons-website/src/components/VideoInternal/'
-import PlayPauseButton from '@carbon/addons-website/src/components/PlayPauseButton/'
 
 class HomepageVideo extends Component {
   state = {
-    playing: true,
     loop: true
   }
 
@@ -46,12 +44,6 @@ class HomepageVideo extends Component {
     }
   }
 
-  onPlayPauseClick = () => {
-    this.setState({
-      playing: !this.state.playing
-    })
-  }
-
   onVideoComplete = () => {
     this.setState({
       playing: false
@@ -69,10 +61,12 @@ class HomepageVideo extends Component {
             loop={loop}
             poster={poster}
             src={src}
-            playing={playing}
-            onVideoComplete={this.onVideoComplete}
+            overlay={true}
+            cornerPlayButton={true}
+            // playing={playing}
+            // onVideoComplete={this.onVideoComplete}
           />
-          <div className={`${prefix}--homepage-video-overlay`} />
+          {/* <div className={`${prefix}--homepage-video-overlay`} /> */}
         </div>
         <div className={`${prefix}--homepage-video-overlay-content ibm--grid`}>
           <div className={`${prefix}--homepage-video-container-cta ibm--row`}>
@@ -88,7 +82,6 @@ class HomepageVideo extends Component {
                 <ArrowRight20 className={`${prefix}--homepage-video-cta-icon`} />
               </div>
             </Link>
-            <PlayPauseButton onClick={this.onPlayPauseClick} playing={playing} />
           </div>
         </div>
       </div>
