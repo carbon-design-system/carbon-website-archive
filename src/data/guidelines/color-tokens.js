@@ -1,12 +1,30 @@
 /* eslint-disable */
 module.exports = {
   'core-tokens': {
+    '$ui-background': {
+      role: ['Default page background',
+      ],
+      value: {
+        white: {
+          name: 'White',
+          hex: '#ffffff',
+        },
+        g10: {
+          name: 'Gray 10',
+          hex: '#f3f3f3',
+        },
+        g90: {
+          name: 'Gray 90',
+          hex: '#282828',
+        },
+        g100: {
+          name: 'Gray 100',
+          hex: '#171717',
+        },
+      },
+    },
     '$interactive-01': {
-      role: [
-        'Primary interactive color',
-        'Interactive text',
-        'Selected elements',
-        'Featured elements',
+      role: ['Primary interactive color', 'Primary buttons',
       ],
       value: {
         white: {
@@ -49,7 +67,7 @@ module.exports = {
       },
     },
     '$interactive-03': {
-      role: ['Tertiary interactive color', 'Tertiary button'],
+      role: ['4.5:1 AA contrast', 'Tertiary button'],
       value: {
         white: {
           name: 'Blue 60',
@@ -70,7 +88,7 @@ module.exports = {
       },
     },
     '$interactive-04': {
-      role: ['Selected nav indicator','Active elements'],
+      role: ['3:1 AA contrast', 'Selected elements','Active elements', 'Accent icons'],
       value: {
         white: {
           name: 'Blue 60',
@@ -87,27 +105,6 @@ module.exports = {
         g100: {
           name: 'Blue 50',
           hex: '#408bfc',
-        },
-      },
-    },
-    '$link-01': {
-      role: ['Primary links'],
-      value: {
-        white: {
-          name: 'Blue 60',
-          hex: '#0062ff',
-        },
-        g10: {
-          name: 'Blue 60',
-          hex: '#0062ff',
-        },
-        g90: {
-          name: 'Blue 40',
-          hex: '#6ea6ff',
-        },
-        g100: {
-          name: 'Blue 40',
-          hex: '#6ea6ff',
         },
       },
     },
@@ -309,6 +306,27 @@ module.exports = {
         },
       },
     },
+    '$link-01': {
+      role: ['Primary links', 'Ghost button'],
+      value: {
+        white: {
+          name: 'Blue 60',
+          hex: '#0062ff',
+        },
+        g10: {
+          name: 'Blue 60',
+          hex: '#0062ff',
+        },
+        g90: {
+          name: 'Blue 40',
+          hex: '#6ea6ff',
+        },
+        g100: {
+          name: 'Blue 40',
+          hex: '#6ea6ff',
+        },
+      },
+    },
     '$icon-01': {
       role: ['Primary icons'],
       value: {
@@ -485,12 +503,12 @@ module.exports = {
       role: ['Success'],
       value: {
         white: {
-          name: 'Green 60',
-          hex: '#198038',
+          name: 'Green 50',
+          hex: '#24a148',
         },
         g10: {
-          name: 'Green 60',
-          hex: '#198038',
+          name: 'Green 50',
+          hex: '#24a148',
         },
         g90: {
           name: 'Green 50',
