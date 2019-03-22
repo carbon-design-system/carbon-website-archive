@@ -36,6 +36,7 @@
   margin-top: rem(48px);
   margin-bottom: $spacing-lg;
   position: relative;
+  display: inline-block;
 }
 
 .page-h2#articles:before {
@@ -53,6 +54,7 @@
   margin-top: rem(24px);
   margin-bottom: $spacing-md;
   position: relative;
+  display: inline-block;
 }
 
 .component-docs h3 {
@@ -77,6 +79,7 @@
   margin-top: rem(8px);
   margin-bottom: 0;
   position: relative;
+  display: inline-block;
 }
 
 .component-docs h4 {
@@ -296,6 +299,13 @@
         cursor: pointer;
       }
     }
+  }
+}
+
+.anchor-links:not(.anchor-links--small) .page-ul {
+  @include breakpoint('md') {
+    margin-top: rem(8px);
+    margin-bottom: rem(34px);
   }
 }
 
