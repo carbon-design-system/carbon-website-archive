@@ -21,9 +21,9 @@ import {
 import { Close20, AppSwitcher20 } from '@carbon/icons-react';
 import WebsiteSwitcher from '../WebsiteSwitcher/WebsiteSwitcher';
 
-storiesOf('Website Header', module)
+storiesOf('Website header', module)
   .add(
-    'Website Header',
+    'Website header',
     () => (
       <>
         <Header aria-label="Header" className="bx--header--website">
@@ -49,12 +49,12 @@ storiesOf('Website Header', module)
     ),
     {
       info: {
-        text: 'Website Header',
+        text: 'Website header',
       },
     }
   )
   .add(
-    'Website Header with Nav',
+    'Website header with nav',
     () => (
       <>
         <Header aria-label="Header" className="bx--header--website">
@@ -109,12 +109,12 @@ storiesOf('Website Header', module)
     ),
     {
       info: {
-        text: 'Website Header with nav',
+        text: 'Website header with nav',
       },
     }
   )
   .add(
-    'Website Header with Switcher',
+    'Website header with switcher',
     () => (
       <>
         <Header aria-label="Header" className="bx--header--website">
@@ -154,7 +154,7 @@ storiesOf('Website Header', module)
     ),
     {
       info: {
-        text: 'Website Header with Switcher',
+        text: 'Website header with switcher',
       },
     }
   );
