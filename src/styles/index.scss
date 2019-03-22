@@ -42,10 +42,10 @@ $font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 //---------------------------------------
 // Components
 //---------------------------------------
+
 @import '../components/markdown/markdown.scss';
 @import '../components/PageHeader/page-header.scss';
 @import '../components/PageTabs/page-tabs.scss';
-@import '../components/CodeSnippet/code-snippet.scss';
 @import '../components/ClickableTile/clickable-tile.scss';
 @import '../components/PageTable/page-table.scss';
 @import '../components/DoDontExample/do-dont-example.scss';
