@@ -1288,7 +1288,7 @@
       }
     },
     {
-      "component": "UI Shell",
+      "component": "UI shell",
       "vanilla": {
         "stable": false,
         "experimental": true,
