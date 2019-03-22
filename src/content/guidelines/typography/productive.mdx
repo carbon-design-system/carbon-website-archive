@@ -4,7 +4,7 @@ title: Typography
 tabs: ['Overview', 'Productive']
 ---
 
-import BreakpointChanger from '../../../../packages/addons-website/src/components/BreakpointChanger/BreakpointChanger';
+import TypesetStyle from '@carbon/addons-website/src/components/TypesetStyle';
 
 ## IBM Productive type set
 
@@ -16,4 +16,6 @@ Even though IBM Plex contains a wide range of scales, it’s important to use cu
 
 <br />
 
-<BreakpointChanger navBar={true} banner={true} />
+<TypesetStyle breakpointControls={false} 
+              title="Productive" 
+              typesets="caption,label,helperText,code,body,heading,productHeading" />

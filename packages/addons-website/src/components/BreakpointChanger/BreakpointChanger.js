@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TypesetStyle from '../TypesetStyle'
+import TypesetStyle from '@carbon/addons-website/src/components/TypesetStyle'
 
 const BreakpointChanger = () => (
   <>
