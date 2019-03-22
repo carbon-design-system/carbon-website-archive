@@ -19,7 +19,7 @@ title: Migration
 
 ## Carbon X
 
-Carbon X, aka v10, is currently in Beta release. Please use this opportunity to explore and experiment with the new components, elements, layouts, and UI shell. The Beta release is a work in progress; changes will be frequent and possibly breaking. **This release is not approved for production.** Please explore the system and [provide bountiful feedback](/help/support#github-issues)!
+Carbon X, aka v10, is currently in Beta release. Please use this opportunity to explore and experiment with the new components, elements, layouts, and UI shell (experimental). The Beta release is a work in progress; changes will be frequent and possibly breaking. **This release is not approved for production.** Please explore the system and [provide bountiful feedback](/help/support#github-issues)!
 
 ## Rollout plan
 
@@ -32,18 +32,20 @@ Carbon X, aka v10, is currently in Beta release. Please use this opportunity to 
 
 ## Design kit
 
-The Beta release of Carbon X includes a completely revised Sketch design kit, updated for the new IBM Design Language (f.k.a. "Duo"). All components in the kit have been reskinned, and colors, icons, typrography, UI shell, and grid elements will also reflect the new IBM Design Language.
+The Beta release of Carbon X includes a completely revised Sketch design kit, updated for the new IBM Design Language (f.k.a. "Duo"). All components in the kit have been re-skinned, and colors, icons, typography, UI shell, and grid elements will also reflect the new IBM Design Language.
 
-Internal IBM users will now be able to auto-sync the design kit with Box Drive, allowing users to update the Sketch library automatically. The manual download method will also still be available via the [GitHub repository](https://github.com/IBM/carbon-design-kit).
-
-The Digital Design group has published a detailed guide on [setting up auto-sync for the design kit using Box Drive](https://www.ibm.com/standards/web/design-kit/).
+Details on getting and using the design kit are available on the [Getting started](/getting-started/designers) page.
 
 ## Component code
 
-The redesigned components will be available in the current repos once released to Production. All components have been reskinned to the new IBM Design Language for v10. Detailed technical migration instructions will be published to the repos as available.
+The redesigned components will be available in the current repos once released to Production. All components have been re-skinned to the new IBM Design Language for v10. Detailed technical migration instructions will be published to the repos as available.
 
-[Carbon v10 component migration tables for SCSS](https://github.com/IBM/carbon-components/blob/master/src/globals/scss/migrate-to-10.x.md) 
+[Global style changes](https://github.com/IBM/carbon-components/blob/master/src/globals/scss/migrate-to-10.x.md) 
+[Grid changes](https://github.com/IBM/carbon-components/blob/master/src/globals/grid/migrate-to-10.x.md)
 
+Coming soon: full v10 changelog
+
+<!-- 
 <GridWrapper
   className="tile--resource--no-margin"
   col_lg="8"
@@ -67,11 +69,12 @@ The redesigned components will be available in the current repos once released t
   </ClickableTile>
 </GridWrapper>
 
+-->
 ## Tokens
 
 ### Type tokens
 
-The type token architecture has been completely redesigned for better clarity and flexibility in v10, moving from a "class-name" approach to a more standard token architecture. More detailed technical guidance on migrating to the new type tokens will be available in early 2019.
+The type token architecture has been completely redesigned for better clarity and flexibility in v10, moving from a basic type scale model to a more robust token-based architecture. More detailed technical guidance on migrating to the new type tokens will be available in early 2019.
 
 ### Color tokens
 
