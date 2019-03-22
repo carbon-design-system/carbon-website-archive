@@ -9,6 +9,7 @@ import PlayPauseButton from '@carbon/addons-website/src/components/PlayPauseButt
 class VideoInternal extends React.Component {
   state = {
     playing: true,
+    hovering: false
   }
 
   onPlayPauseClick = () => {
@@ -38,15 +39,29 @@ class VideoInternal extends React.Component {
     }
   }
 
+  onMouseOver = () => {
+    this.setState({
+      hovering: true
+    })
+  }
+  
+  onMouseOut = () => {
+    this.setState({
+      hovering: false
+    })
+  }
+
   componentWillUnmount() {
     this.videoRef.removeEventListener('ended', this.onVideoEnded)
   }
 
   render() {
-    const { poster, src, loop, overlay, cornerPlayButton } = this.props
-    const { playing } = this.state
+    const { poster, src, loop, overlay, cornerPlayButton, children } = this.props
+    const { playing, hovering } = this.state
     return (
-      <div className={`${prefix}--video-internal-container`}>
+      <div  className={`${prefix}--video-internal-container`} 
+            onMouseOver={this.onMouseOver} 
+            onMouseOut={this.onMouseOut}>
         <video
           className={`${prefix}--video-internal`}
           controls={false}
@@ -64,7 +79,12 @@ class VideoInternal extends React.Component {
 
         </video>
         { overlay && <div className={`${prefix}--video-internal-overlay`} /> }
-        { cornerPlayButton && <PlayPauseButton onClick={this.onPlayPauseClick} playing={playing} loop={loop} />}
+        { children }
+        { <PlayPauseButton  onClick={this.onPlayPauseClick} 
+                            playing={playing} 
+                            loop={loop} 
+                            cornerPlayButton={cornerPlayButton}
+                            hovering={hovering}  />}
       </div>
     );
   }

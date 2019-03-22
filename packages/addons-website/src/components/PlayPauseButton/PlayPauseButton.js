@@ -4,7 +4,14 @@ import classnames from 'classnames'
 import { settings } from 'carbon-components';
 const { prefix } = settings;
 
-import { PlayOutline20, PlayOutlineFilled20, PauseOutline20, PauseOutlineFilled20 } from "@carbon/icons-react/es";
+import {  PlayOutline20, 
+          PlayOutlineFilled20, 
+          PauseOutline20, 
+          PauseOutlineFilled20,
+          Play32,
+          Pause32
+} 
+from "@carbon/icons-react/es";
 
 class PlayPauseButton extends React.Component {
   state = {
@@ -24,20 +31,63 @@ class PlayPauseButton extends React.Component {
   }
 
   render() {
-    const { onClick, playing, loop } = this.props
+    const { onClick, playing, loop, cornerPlayButton, hovering } = this.props
     const { hover } = this.state
     
     return (
       <button className={classnames(`${prefix}--play-pause-button`, {
-        [`${prefix}--play-pause-hide-on-mobile`]: loop
+        [`${prefix}--play-pause-hide-on-mobile`]: loop,
+        [`${prefix}--play-pause-corner`]: cornerPlayButton,
+        [`${prefix}--play-pause-hovering`]: hovering
       })} 
               onMouseOver={this.onOver} 
               onMouseOut={this.onOut} 
-              onClick={onClick}> 
-        <span className={`${prefix}--play-pause-icon ${ playing && hover ? 'active' : ''}`}><PauseOutlineFilled20 /></span>
-        <span className={`${prefix}--play-pause-icon ${ playing && !hover ? 'active' : ''}`}><PauseOutline20 /></span>
-        <span className={`${prefix}--play-pause-icon ${ !playing && hover ? 'active' : ''}`}><PlayOutlineFilled20 /></span>
-        <span className={`${prefix}--play-pause-icon ${ !playing && !hover ? 'active' : ''}`}><PlayOutline20 /></span>
+              onClick={onClick}>
+        {
+          // corner play button - ex homepage player
+          cornerPlayButton && (
+            <>
+              <span className={classnames( `${prefix}--play-pause-icon`, {
+                'active': playing && hover
+              })}>
+                <PauseOutlineFilled20 />
+              </span>
+              <span className={classnames(`${prefix}--play-pause-icon`, {
+                'active': playing && !hover
+              })}>
+                <PauseOutline20 />
+              </span>
+              <span className={classnames(`${prefix}--play-pause-icon`, {
+                'active': !playing && hover 
+              })}>
+                <PlayOutlineFilled20 />
+              </span>
+              <span className={classnames(`${prefix}--play-pause-icon`, {
+                'active': !playing && !hover
+              })}>
+                <PlayOutline20 />
+              </span>
+            </>
+          )
+        }
+        {
+          // standard center play button - used by default
+          !cornerPlayButton && (
+            <>
+              <span className={`${prefix}--play-pause-background`}></span>
+              <span className={classnames( `${prefix}--play-pause-icon`, {
+                'active': playing
+              })}>
+                <Pause32 />
+              </span>
+              <span className={classnames( `${prefix}--play-pause-icon`, {
+                'active': !playing
+              })}>
+                <Play32 />
+              </span>
+            </>
+          )
+        }
       </button>
     );
   }
@@ -49,7 +99,16 @@ PlayPauseButton.propTypes = {
   onClick: PropTypes.func,
 
   // status of media
-  playing: PropTypes.bool
+  playing: PropTypes.bool,
+
+  // use corner button
+  cornerPlayButton: PropTypes.bool,
+
+  // video is looping
+  loop: PropTypes.bool,
+
+  // parent determines play/pause visibility
+  hovering: PropTypes.bool
 }
 
 export default PlayPauseButton;

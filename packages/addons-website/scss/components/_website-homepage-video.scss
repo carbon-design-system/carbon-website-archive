@@ -2,6 +2,15 @@
 
 .#{$prefix}--homepage-video-container {
   position: relative;
+  height: 150vw;
+
+  @include carbon--breakpoint('md') {
+    height: 50vw;
+  }
+
+  @include carbon--breakpoint('lg') {
+    height: 35rem;
+  }
 }
 
 .#{$prefix}--homepage-video-wrapper {
@@ -17,6 +26,7 @@
 .#{$prefix}--homepage-video-overlay-content {
   position: relative;
   z-index: 12;
+  height: 100%;
   
   @include carbon--breakpoint-down('md') {
     margin-right: -2rem !important;
@@ -29,19 +39,14 @@
 
 .#{$prefix}--homepage-video-container-cta {
   width: 100%;
+  height: 100%;
   flex-direction: column;
-  height: 150vw;
   position: relative;
   
   @include carbon--breakpoint('md') {
-    height: 50vw;
     flex-direction: row;
     justify-content: flex-end;
     margin-left: 0 !important;
-  }
-  
-  @include carbon--breakpoint('lg') {
-    height: 35rem;
   }
 }
 
