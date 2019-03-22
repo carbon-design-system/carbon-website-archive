@@ -4,9 +4,9 @@ import { settings } from 'carbon-components';
 import { baseFontSize, breakpoints as carbonBreakpoints } from '@carbon/layout';
 import { findLastIndex, values } from 'lodash';
 
-import InputRange from '../InputRange';
-import StickyContainer from '../StickyContainer';
-import TypesetExample from '../TypesetExample';
+import InputRange from '@carbon/addons-website/src/components/InputRange';
+import StickyContainer from '@carbon/addons-website/src/components/StickyContainer';
+import TypesetExample from '@carbon/addons-website/src/components/TypesetExample';
 
 const { prefix } = settings;
 
