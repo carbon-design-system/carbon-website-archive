@@ -18,8 +18,6 @@ class VideoInternal extends React.Component {
   }
   
   shouldComponentUpdate (nextProps, nextState) {
-    // slight hack, not sure how else to make video be controlled by
-    // by sibling component
     if( nextState.playing !== this.state.playing ) {
       nextState.playing ? this.videoRef.play() : this.videoRef.pause()
     }
