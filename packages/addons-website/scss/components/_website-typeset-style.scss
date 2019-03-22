@@ -1,11 +1,11 @@
 @import '../prefix';
 
-.#{$prefix}--breakpoint-changer-container {
+.#{$prefix}--typeset-style-container {
   position: relative;
   margin-left: -1rem;
   margin-right: -1rem;
   padding: 0 .5rem;
-  margin-top: -1rem;
+  margin-top: 0;
 
   @include breakpoint('md') {
     padding: 0;
@@ -14,7 +14,7 @@
   }
 }
 
-.#{$prefix}--breakpoint-changer-button {
+.#{$prefix}--typeset-style-button {
   background-color: transparent;
   border: none;
   border-radius: 0;
@@ -43,7 +43,7 @@
   }
 }
 
-.#{$prefix}--breakpoint-changer-controls {
+.#{$prefix}--typeset-style-controls {
   height: 100%;
   left: 0;
   position: absolute !important;
@@ -56,7 +56,7 @@
   }
 }
 
-.#{$prefix}--breakpoint-changer-controls-sticky {
+.#{$prefix}--typeset-style-controls-sticky {
   align-items: center;
   background-color: $ibm-colors__white-0;
   border-bottom: 1px solid $ibm-colors__gray-20;
@@ -65,12 +65,12 @@
   box-sizing: content-box;
 }
 
-.#{$prefix}--breakpoint-changer-nav-shiv {
+.#{$prefix}--typeset-style-nav-shiv {
   width: 100%;
   height: 1rem;
 }
 
-.#{$prefix}--breakpoint-changer-breakpoint-controls {
+.#{$prefix}--typeset-style-breakpoint-controls {
   height: 3rem;
   align-items: center;
   display: flex;
@@ -80,12 +80,12 @@
   padding-right: 0;
 }
 
-.#{$prefix}--breakpoint-changer-screen-width-label {
+.#{$prefix}--typeset-style-screen-width-label {
   padding-right: 1rem;
   display: inline-block;
 }
 
-.#{$prefix}--breakpoint-changer-screen-controls {
+.#{$prefix}--typeset-style-screen-controls {
   align-items: center;
   height: 3rem;
   border-top: 1px solid $ibm-colors__gray-20;
@@ -100,7 +100,7 @@
   }
 }
 
-.#{$prefix}--breakpoint-changer-screen-label {
+.#{$prefix}--typeset-style-screen-label {
   height: auto;
   margin-bottom: 0;
   // Need to set the width explicitly to make sure the slider
@@ -109,18 +109,18 @@
   text-align: right;
 }
 
-.#{$prefix}--breakpoint-changer-input {
+.#{$prefix}--typeset-style-input {
   margin: 0;
   margin-right: rem(20px);
   width: 100%;
 }
 
-.#{$prefix}--breakpoint-changer-toggle-container {
+.#{$prefix}--typeset-style-toggle-container {
   position: relative;
   z-index: 1;
 }
 
-.#{$prefix}--breakpoint-changer-toggle-button {
+.#{$prefix}--typeset-style-toggle-button {
   background-color: $ibm-colors__white-0;
   box-shadow: inset 0 -1px 0 0 $ibm-colors__gray-20;
   color: $ibm-colors__gray-100;
@@ -149,12 +149,12 @@
   }
 }
 
-.#{$prefix}--breakpoint-changer-button-controls-container {
+.#{$prefix}--typeset-style-button-controls-container {
   height: 100%;
   margin-left: auto;
 }
 
-.#{$prefix}--breakpoint-changer-breakpoints-container {
+.#{$prefix}--typeset-style-breakpoints-container {
   position: relative;
   margin-top: 1rem;
 
@@ -163,16 +163,16 @@
   }
 }
 
-.#{$prefix}--breakpoint-changer-section-spacer {
+.#{$prefix}--typeset-style-section-spacer {
   margin-bottom: calc(1rem + 1px);
 }
 
-.#{$prefix}--breakpoint-changer-title-shiv {
+.#{$prefix}--typeset-style-title-shiv {
   padding-top: 1rem;
   background-color: $ibm-colors__gray-10;
 }
 
-.#{$prefix}--breakpoint-changer-group-title-container {
+.#{$prefix}--typeset-style-group-title-container {
   background-color: $ibm-colors__white-0;
   height: 3rem;
   padding: 1rem;
@@ -182,7 +182,7 @@
   align-content: center;
 }
 
-.#{$prefix}--breakpoint-changer-group-title {
+.#{$prefix}--typeset-style-group-title {
   margin: 0;
   padding: 0;
 }

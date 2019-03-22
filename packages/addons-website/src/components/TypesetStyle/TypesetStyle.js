@@ -746,7 +746,7 @@ class TypesetStyle extends React.Component {
     Object.keys(breakpoints).map(breakpointName => {
       return (
         <button
-          className={`${prefix}--breakpoint-changer-button ${prefix}--type-body-long-01 ${
+          className={`${prefix}--typeset-style-button ${prefix}--type-body-long-01 ${
             isWithinBreakpoint(
               this.state.simulatedScreenWidth,
               breakpoints[breakpointName]
@@ -771,29 +771,29 @@ class TypesetStyle extends React.Component {
     const {navBar, banner, secondary, top, breakpointControls, title, typesets } = this.props
 
     return (
-      <div className={`${prefix}--breakpoint-changer-container ibm--offset-lg-4`}>
+      <div className={`${prefix}--typeset-style-container ibm--offset-lg-4`}>
         <StickyContainer navBar={navBar || true} banner={banner || true} secondary={secondary || false} top={top || null}>
           { breakpointControls && (
             <>
-              <div className={`${prefix}--breakpoint-changer-title-shiv ${prefix}--row`}></div>
+              <div className={`${prefix}--typeset-style-title-shiv ${prefix}--row`}></div>
               <div
-                className={`${prefix}--breakpoint-changer-controls-sticky ${prefix}--row`}>
+                className={`${prefix}--typeset-style-controls-sticky ${prefix}--row`}>
                 <div
-                  className={`${prefix}--breakpoint-changer-breakpoint-controls ibm--col-md-5 ibm--col-lg-8`}>
+                  className={`${prefix}--typeset-style-breakpoint-controls ibm--col-md-5 ibm--col-lg-8`}>
                   <span
                     className={`${prefix}--type-body-long-01 ibm-padding--horizontal`}
                     style={{ marginBottom: 0 }}>
                     Breakpoints
                   </span>
                   <div
-                    className={`${prefix}--breakpoint-changer-button-controls-container`}>
+                    className={`${prefix}--typeset-style-button-controls-container`}>
                     {this.getButtons()}
                   </div>
                 </div>
                 <div
-                  className={`${prefix}--breakpoint-changer-screen-controls ibm-padding--horizontal ibm--col-md-3 ibm--col-lg-8`}>
+                  className={`${prefix}--typeset-style-screen-controls ibm-padding--horizontal ibm--col-md-3 ibm--col-lg-8`}>
                   <span
-                    className={`${prefix}--type-body-long-01 ${prefix}--breakpoint-changer-screen-width-label`}
+                    className={`${prefix}--type-body-long-01 ${prefix}--typeset-style-screen-width-label`}
                     style={{ marginBottom: 0, whiteSpace: 'nowrap' }}>
                     Screen width
                   </span>
@@ -804,7 +804,7 @@ class TypesetStyle extends React.Component {
                     onChange={this.toggleBreakpoint}
                   />
                   <label
-                    className={`${prefix}--breakpoint-changer-screen-label ${prefix}--type-body-long-01`}
+                    className={`${prefix}--typeset-style-screen-label ${prefix}--type-body-long-01`}
                     htmlFor="screenWidthInput">
                     {this.state.simulatedScreenWidth}
                   </label>
@@ -813,9 +813,9 @@ class TypesetStyle extends React.Component {
             </>
           )}
           
-          <div className={`${prefix}--breakpoint-changer-title-shiv ${prefix}--row`}></div>
+          <div className={`${prefix}--typeset-style-title-shiv ${prefix}--row`}></div>
           <div
-            className={`${prefix}--breakpoint-changer-group-title-container ${prefix}--row`}>
+            className={`${prefix}--typeset-style-group-title-container ${prefix}--row`}>
             <span className={`${prefix}--type-heading-02 ibm-type-semibold`}>
               {title}
             </span>
