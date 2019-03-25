@@ -5,7 +5,7 @@
   display: block;
   width: 100%;
   padding-bottom: 100%;
-  color: #333;
+  color: $carbon--gray-90;
 
   .#{$prefix}--aspect-ratio-tile-background {
     position: absolute;
@@ -13,7 +13,7 @@
     left: 0;
     right: 1px;
     bottom: 1px;
-    background-color: #bebebe;
+    background-color: $carbon--gray-30;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -68,7 +68,7 @@
     bottom: 1rem;
     right: 1rem;
     z-index: 4;
-    fill: #333;
+    fill: $carbon--gray-90;
   }
 
   &:hover {
@@ -78,14 +78,14 @@
   }
 
   &.#{$prefix}--aspect-ratio-tile__dark {
-    color: #fff;
+    color: $carbon--white-0;
 
     .#{$prefix}--aspect-ratio-tile-background {
-      background-color: #282828;
+      background-color: $carbon--gray-90;
     }
     
     .#{$prefix}--aspect-ratio-tile-action-icon {
-      fill: #ffffff;
+      fill: $carbon--white-0;
     }
   }
   // nested tile bottom right
