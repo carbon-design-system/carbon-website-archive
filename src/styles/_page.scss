@@ -59,6 +59,10 @@ body {
     }
   }
 
+  em {
+    font-style: italic;
+  }
+
   > div > div:first-child p {
     padding-bottom: 0;
   }
