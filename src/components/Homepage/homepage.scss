@@ -1,7 +1,7 @@
 // Homepage inverse colors
 .container--homepage {
-  background: $ibm-colors__gray-100;
-  color: $ibm-colors__white;
+  background: $carbon--gray-100;
+  color: $carbon--white-0;
 
   h2,
   h3,
@@ -10,11 +10,11 @@
   h6,
   p,
   li {
-    color: $ibm-colors__white;
+    color: $carbon--white-0;
   }
 
   a {
-    color: $ibm-colors__blue-40;
+    color: $carbon--blue-40;
   }
 }
 
@@ -81,16 +81,16 @@
   z-index: 2;
   padding-top: 4rem;
   padding-bottom: 7rem;
-  background: $ibm-colors__black;
+  background: $carbon--black-100;
 }
 
 .homepage--callout--blue {
-  background-color: $ibm-colors__blue-90;
+  background-color: $carbon--blue-90;
   z-index: 2;
 }
 
 .homepage--callout a {
-  color: $ibm-colors__white;
+  color: $carbon--white-0;
 }
 
 .homepage--footer__info {
@@ -110,7 +110,7 @@
 .homepage--callout--blue a {
   display: flex;
   align-items: center;
-  color: $ibm-colors__blue-40;
+  color: $carbon--blue-40;
   text-decoration: none;
   margin-top: $spacing-lg;
 }
@@ -121,7 +121,7 @@
 
 .homepage--callout--blue svg {
   margin-left: $spacing-md;
-  fill: $ibm-colors__blue-40;
+  fill: $carbon--blue-40;
 }
 
 // Dots background pattern
