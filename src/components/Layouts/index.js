@@ -226,7 +226,7 @@ class Layout extends React.Component {
               <p className="website-alert__text">
                 <span>Carbon v10 is live!</span>
                 <span></span>{' '}
-                <span>View the migration guide for help with upgrading from v9.</span>
+                <span>View the migration guide to upgrade from v9.</span>
               </p>
               <Link
                 className="website-alert__button"
