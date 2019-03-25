@@ -2,8 +2,8 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import WebsiteFooter from '.';
 
-storiesOf('Website Footer', module).add(
-  'Website Footer',
+storiesOf('Website footer', module).add(
+  'Website footer',
   () => (
     <WebsiteFooter
       logoOffset={true}
@@ -32,7 +32,7 @@ storiesOf('Website Footer', module).add(
   ),
   {
     info: {
-      text: 'Website Footer',
+      text: 'Website footer',
     },
   }
 );
