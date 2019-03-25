@@ -10,8 +10,8 @@ $font-prefix: '/fonts';
   margin-bottom: 0;
   padding: 2.5rem;
   border-radius: 100%;
-  color: $ibm-colors__white-0;
-  background-color: $ibm-colors__purple-60;
+  color: $carbon--white-0;
+  background-color: $carbon--purple-60;
   text-align: center;
   width: rem(50px);
   height: rem(50px);
@@ -26,7 +26,7 @@ $font-prefix: '/fonts';
 
 .#{$prefix}--non-latin-button {
   background: none;
-  color: $ibm-colors__black-100;
+  color: $carbon--black-100;
   border: 0;
   padding: 0.5rem 0;
   position: absolute;
@@ -104,11 +104,11 @@ $font-prefix: '/fonts';
     margin-bottom: 0.5rem !important;
   }
   width: 100%;
-  color: $ibm-colors__gray-90;
-  -webkit-text-fill-color: $ibm-colors__gray-90; // Needs manual autoprefixing
+  color: $carbon--gray-90;
+  -webkit-text-fill-color: $carbon--gray-90; // Needs manual autoprefixing
   line-height: 2em; // Fix weird font-cropping issue on Chrome
   &::selection {
-    background: $ibm-colors__purple-20;
+    background: $carbon--purple-20;
   }
 
   // safari wrong height fix
