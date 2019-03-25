@@ -14,7 +14,10 @@ const baseConfig = {
     'classnames',
     'carbon-components',
     'gatsby',
+    'carbon-components-react',
     'react-scroll-up',
+    'prismjs',
+    'react-copy-to-clipboard/lib/Component'
   ],
   plugins: [
     nodeResolve({
@@ -43,11 +46,11 @@ const baseConfig = {
       ],
       plugins: [
         [
-          '@babel/plugin-proposal-class-properties',
+          "@babel/plugin-proposal-class-properties",
           {
-            loose: true,
-          },
-        ],
+            "loose": true
+          }
+        ]
       ],
     }),
   ],
