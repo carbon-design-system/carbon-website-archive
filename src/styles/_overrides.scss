@@ -1,10 +1,21 @@
+//---------------------------------------
+// Button
+//---------------------------------------
+.component-example .button .bx--btn {
+  margin: 0.5rem;
+}
+
+
+
+
+
 .component-example
   .component-example__live
   .content-switcher
   .bx--content-switcher {
   height: auto;
 
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     height: 2rem;
   }
 
@@ -26,7 +37,7 @@
     min-width: 10px;
   }
 
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     padding: 2rem 2rem 2.5rem;
 
     & > div {
@@ -57,21 +68,6 @@
   }
 }
 
-//NUMBER & TEXT INPUT
-.component-example__live {
-  .bx--form-item {
-    margin-bottom: 2rem;
-  }
-}
-
-//---------------------------------------
-// Button
-//---------------------------------------
-.component-example {
-  .button button {
-    margin: 0.5rem;
-  }
-}
 
 //---------------------------------------
 // Tabs
@@ -170,21 +166,6 @@
 
 .component-example .bx--inline-notification {
   display: inline-flex;
-}
-
-//---------------------------------------
-// Clear form outline styles that aren't prefixed
-//---------------------------------------
-.carbon-demo-v9 .demo--select--inline .demo--select-input,
-.carbon-demo-v9 .demo--select-input[data-invalid],
-.carbon-demo-v9 .demo--text-area[data-invalid],
-.carbon-demo-v9 .demo--text-input[data-invalid],
-.carbon-demo-v9 .demo--date-picker__input[data-invalid] {
-  outline: none;
-}
-
-.carbon-demo-v9 .demo--form-item {
-  margin-bottom: $spacing-lg;
 }
 
 //---------------------------------------
