@@ -31,22 +31,6 @@ pre[class*='language-'] {
   color: #152935;
 }
 
-pre[class*='language-']::-moz-selection,
-pre[class*='language-'] ::-moz-selection,
-code[class*='language-']::-moz-selection,
-code[class*='language-'] ::-moz-selection {
-  text-shadow: none;
-  background: rgba(85, 150, 230, 0.1);
-}
-
-pre[class*='language-']::selection,
-pre[class*='language-'] ::selection,
-code[class*='language-']::selection,
-code[class*='language-'] ::selection {
-  text-shadow: none;
-  background: rgba(85, 150, 230, 0.1);
-}
-
 /* Code blocks */
 pre[class*='language-'] {
   padding: 1em;

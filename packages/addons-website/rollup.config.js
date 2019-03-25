@@ -13,7 +13,10 @@ const baseConfig = {
     'prop-types',
     'classnames',
     'carbon-components',
+    'carbon-components-react',
     'react-scroll-up',
+    'prismjs',
+    'react-copy-to-clipboard/lib/Component'
   ],
   plugins: [
     nodeResolve({
@@ -42,11 +45,11 @@ const baseConfig = {
       ],
       plugins: [
         [
-          '@babel/plugin-proposal-class-properties',
+          "@babel/plugin-proposal-class-properties",
           {
-            loose: true,
-          },
-        ],
+            "loose": true
+          }
+        ]
       ],
     }),
   ],
@@ -79,7 +82,7 @@ module.exports = [
         react: 'React',
         'react-dom': 'ReactDOM',
         'prop-types': 'PropTypes',
-        'react-scroll-up': 'ScrollToTop',
+        'react-scroll-up': 'ScrollToTop'
       },
     },
   },
