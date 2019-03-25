@@ -51,7 +51,7 @@
 }
 
 .#{$prefix}--homepage-video-cta {
-  color: $ibm-colors__white-0;
+  color: $carbon--white-0;
   text-decoration: none;
   transition-property: background, color;
   transition-duration: $transition--base;
@@ -77,16 +77,16 @@
   }
 
   &:hover {
-    background: $ibm-colors__white-0;
-    color: $ibm-colors__gray-100;
+    background: $carbon--white-0;
+    color: $carbon--gray-100;
     text-decoration: none;
 
     svg {
-      fill: $ibm-colors__gray-100;
+      fill: $carbon--gray-100;
     }
 
     p {
-      color: $ibm-colors__gray-100;
+      color: $carbon--gray-100;
     }
   }
 
@@ -116,7 +116,7 @@
 }
 
 .#{$prefix}--homepage-video-cta-icon {
-  fill: $ibm-colors__white-0;
+  fill: $carbon--white-0;
   width: rem(20px);
   height: rem(20px);
   transition: fill $transition--base $carbon--standard-easing;

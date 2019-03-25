@@ -161,65 +161,65 @@ Each theme is assigned 38 universal color variables, which are determined by [co
 ```scss
 //// _color-tokens
 // White Theme tokens
-$interactive-01: $ibm-colors__blue--60 !default !global;
-$interactive-02: $ibm-colors__blue--60 !default !global;
-$interactive-03: $ibm-colors__blue--60 !default !global;
-$interactive-04: $ibm-colors__blue--60 !default !global;
+$interactive-01: $carbon--blue--60 !default !global;
+$interactive-02: $carbon--blue--60 !default !global;
+$interactive-03: $carbon--blue--60 !default !global;
+$interactive-04: $carbon--blue--60 !default !global;
 
-$ui-background: $ibm-colors__white !default !global;
+$ui-background: $carbon--white-0 !default !global;
 
-$ui-01: $ibm-colors__gray--10 !default !global;
-$ui-02: $ibm-colors__white !default !global;
-$ui-03: $ibm-colors__gray--20 !default !global;
-$ui-04: $ibm-colors__gray--50 !default !global;
-$ui-05: $ibm-colors__gray--100 !default !global;
+$ui-01: $carbon--gray--10 !default !global;
+$ui-02: $carbon--white-0 !default !global;
+$ui-03: $carbon--gray--20 !default !global;
+$ui-04: $carbon--gray--50 !default !global;
+$ui-05: $carbon--gray--100 !default !global;
 
-$icon-01: $ibm-colors__gray--100 !default !global;
-$icon-02: $ibm-colors__gray--70 !default !global;
-$icon-03: $ibm-colors__white !default !global;
+$icon-01: $carbon--gray--100 !default !global;
+$icon-02: $carbon--gray--70 !default !global;
+$icon-03: $carbon--white-0 !default !global;
 
-$text-01: $ibm-colors__gray--100 !default !global;
-$text-02: $ibm-colors__gray--70 !default !global;
-$text-03: $ibm-colors__gray--50 !default !global;
-$text-03: $ibm-colors__white !default !global;
+$text-01: $carbon--gray--100 !default !global;
+$text-02: $carbon--gray--70 !default !global;
+$text-03: $carbon--gray--50 !default !global;
+$text-03: $carbon--white-0 !default !global;
 
-$inverse-01: $ibm-colors__gray--10 !default !global;
-$inverse-02: $ibm-colors__gray--80 !default !global;
+$inverse-01: $carbon--gray--10 !default !global;
+$inverse-02: $carbon--gray--80 !default !global;
 
-$field-01: $ibm-colors__gray--10 !default !global;
-$field-02: $ibm-colors__white !default
+$field-01: $carbon--gray--10 !default !global;
+$field-02: $carbon--white-0 !default
 
-$support-01: $ibm-colors__red--60 !default !global;
-$support-02: $ibm-colors__green--60 !default !global;
-$support-03: $ibm-colors__yellow !default !global;
-$support-04: $ibm-colors__blue--70 !default !global;
+$support-01: $carbon--red--60 !default !global;
+$support-02: $carbon--green--60 !default !global;
+$support-03: $carbon--yellow !default !global;
+$support-04: $carbon--blue--70 !default !global;
 
 $overlay-01: rgba(255, 255, 255, 5) !default !global;
 
 // Interaction tokens
 
-$focus: $ibm-colors__blue--60 !default !global;
+$focus: $carbon--blue--60 !default !global;
 
 $hover-primary: #0353E9 !default !global;
-$active-primary: $ibm-colors__blue--80 !default !global; !default !global;
-$hover-primary-text: $ibm-colors__blue--70 !default !global; !default !global;
+$active-primary: $carbon--blue--80 !default !global; !default !global;
+$hover-primary-text: $carbon--blue--70 !default !global; !default !global;
 
 $hover-secondary: #6f6f6f !default !global;
-$active-secondary: $ibm-colors__gray--60 !default !global;
+$active-secondary: $carbon--gray--60 !default !global;
 
 $hover-ui: #e5e5e5 !default !global;
-$active-ui: $ibm-colors__gray--30 !default !global;
-$selected-ui: $ibm-colors__gray--20 !default !global;
+$active-ui: $carbon--gray--30 !default !global;
+$selected-ui: $carbon--gray--20 !default !global;
 $hover-row: #e5e5e5 !default !global;
 
 $hover-danger: #ba1b23 !default !global;
-$active-danger: $ibm-colors__red--80 !default !global;
+$active-danger: $carbon--red--80 !default !global;
 
-$visited-link: $ibm-colors__purple--60 !default !global;
+$visited-link: $carbon--purple--60 !default !global;
 
-$disabled-01: $ibm-colors__gray--10 !default !global;
-$disabled-02: $ibm-colors__gray--30 !default !global;
-$disabled-03: $ibm-colors__gray--50 !default !global;
+$disabled-01: $carbon--gray--10 !default !global;
+$disabled-02: $carbon--gray--30 !default !global;
+$disabled-03: $carbon--gray--50 !default !global;
 ```
 
 ### Spacing
@@ -594,12 +594,12 @@ The other categories are global and component-specific variables. These control 
 // Global
 $input-border: 1px solid transparent !default !global;
 $input-label-weight: 400 !default !global;
-$disabled: $ibm-colors__gray--30 !default !global;
-$disabled-background-color: $ibm-colors__gray--10 !default !global;
-$focus: $ibm-colors__blue--60 !default !global;
+$disabled: $carbon--gray--30 !default !global;
+$disabled-background-color: $carbon--gray--10 !default !global;
+$focus: $carbon--blue--60 !default !global;
 
 // Link
-$link-visited: $ibm-colors__purple--60 !default !global;
+$link-visited: $carbon--purple--60 !default !global;
 $link-inverse-color: #6ea6ff !default !global;
 
 // Tooltip
@@ -616,7 +616,7 @@ $button-padding-lg: $spacing-sm !default !global;
 $button-border-width: 1px !default !global;
 $button-outline-width: 3px !default !global;
 $button-outline-offset: -5px !default !global;
-$button-outline: 1px solid $ibm-colors__white !default !global;
+$button-outline: 1px solid $carbon--white-0 !default !global;
 
 // Accordion (Reverse)
 $accordion-flex-direction: row-reverse !default !global;
@@ -639,7 +639,7 @@ $snippet-border-color: $ui-03 !default !global; // TODO: Define for experimental
 // Content Switcher
 $content-switcher-border-radius: 0px !default !global;
 $content-switcher-option-border: 1px solid $brand-01 !default !global;
-$content-switcher-divider: $ibm-colors__gray--30 !default !global;
+$content-switcher-divider: $carbon--gray--30 !default !global;
 
 // Data Table
 $data-table-heading-transform: uppercase !default !global;
@@ -647,17 +647,17 @@ $data-table-heading-border-bottom: 1px solid $brand-01 !default !global;
 $data-table-row-height: 2rem !default !global;
 
 // Date Picker
-$date-picker-in-range-background-color: $ibm-colors__blue--20 !default !global;
+$date-picker-in-range-background-color: $carbon--blue--20 !default !global;
 
 // Modal
 $modal-border-top: $brand-01 4px solid !default !global;
 $modal-footer-background-color: $ui-03 !default !global;
 
 // Notification
-$notification-info-background-color: $ibm-colors__blue--10 !default !global;
-$notification-error-background-color: $ibm-colors__red--10 !default !global;
+$notification-info-background-color: $carbon--blue--10 !default !global;
+$notification-error-background-color: $carbon--red--10 !default !global;
 $notification-warning-background-color: rgba(#fdd13a, 0.15) !default !global;
-$notification-success-background-color: $ibm-colors__green--10 !default !global;
+$notification-success-background-color: $carbon--green--10 !default !global;
 
 // Progress Indicator
 $progress-indicator-bar-width: 1px inset transparent !default !global;
@@ -665,8 +665,8 @@ $progress-indicator-stroke-width: 5 !default !global;
 $progress-indicator-line-offset: 0.625rem !default !global;
 
 //Code Snippet
-$copy-active: $ibm-colors__gray--30 !default !global;
-$copy-btn-feedback: $ibm-colors__gray--80 !default !global;
+$copy-active: $carbon--gray--30 !default !global;
+$copy-btn-feedback: $carbon--gray--80 !default !global;
 
 // Radio Button
 $radio-border-width: 1px !default !global;
@@ -678,13 +678,13 @@ $structured-list-text-transform: none !default !global;
 // Slider
 
 //Tab
-$tab-underline-color: 2px solid $ibm-colors__gray--30 !default !global;
-$tab-underline-color-hover: 2px solid $ibm-colors__gray--60 !default !global;
-$tab-text-disabled: $ibm-colors__gray--30 !default !global;
-$tab-underline-disabled: 2px solid $ibm-colors__gray--10 !default !global;
+$tab-underline-color: 2px solid $carbon--gray--30 !default !global;
+$tab-underline-color-hover: 2px solid $carbon--gray--60 !default !global;
+$tab-text-disabled: $carbon--gray--30 !default !global;
+$tab-underline-disabled: 2px solid $carbon--gray--10 !default !global;
 
 // Toggle
-$toggle-background-color: $ibm-colors__green--50 !default !global;
+$toggle-background-color: $carbon--green--50 !default !global;
 
 // Skeleton Loading
 $skeleton: rgba(
