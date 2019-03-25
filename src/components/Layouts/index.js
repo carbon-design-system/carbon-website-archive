@@ -220,7 +220,7 @@ class Layout extends React.Component {
                 },
               ]}>
               <html lang="en" />
-              </Helmet>
+            </Helmet>
             <aside aria-label="alert banner" className="website-alert">
               <Information20 className="website-alert__icon" />
               <p className="website-alert__text">
@@ -228,15 +228,15 @@ class Layout extends React.Component {
                 <span></span>{' '}
                 <span>View the migration guide for help with upgrading from v9.</span>
               </p>
-              <a
+              <Link
                 className="website-alert__button"
                 tabIndex="-1"
-                href="/updates/v10-migration/overview">
+                to="/updates/v10-migration/overview">
                 <button class="bx--btn bx--btn--secondary bx--btn--sm" type="button">
                   <span>Migrate to v10</span>
                   <ArrowRight20 />
                 </button>
-              </a>
+              </Link>
             </aside>
             <Header aria-label="Header" className="bx--header--website">
               <SkipToContent />
