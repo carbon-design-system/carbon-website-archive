@@ -15,6 +15,8 @@ const baseConfig = {
     'carbon-components',
     'carbon-components-react',
     'react-scroll-up',
+    'prismjs',
+    'react-copy-to-clipboard/lib/Component'
   ],
   plugins: [
     nodeResolve({
@@ -80,7 +82,7 @@ module.exports = [
         react: 'React',
         'react-dom': 'ReactDOM',
         'prop-types': 'PropTypes',
-        'react-scroll-up': 'ScrollToTop',
+        'react-scroll-up': 'ScrollToTop'
       },
     },
   },
