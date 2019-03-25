@@ -13,7 +13,7 @@ $hover-ui: #e5e5e5;
 
 .component-item {
   width: 33%;
-  background: $ibm-colors__white;
+  background: $carbon--white-0;
   position: relative;
   transition: $transition--base;
 
@@ -28,7 +28,7 @@ $hover-ui: #e5e5e5;
   // Display one column, bottom border except last item
   @include breakpoint('sm') {
     width: 100%;
-    border-bottom: 1px solid $ibm-colors__gray-20;
+    border-bottom: 1px solid $carbon--gray-20;
 
     &:last-child {
       border: none;
@@ -38,7 +38,7 @@ $hover-ui: #e5e5e5;
   // Display two colums
   @include breakpoint('md') {
     width: 50%;
-    border-right: 1px solid $ibm-colors__gray-20;
+    border-right: 1px solid $carbon--gray-20;
 
     // selects every 2nd item and removes right border
     &:nth-child(2n + 2) {
@@ -60,7 +60,7 @@ $hover-ui: #e5e5e5;
     width: 33.33%;
 
     &:nth-child(2n + 2) {
-      border-right: 1px solid $ibm-colors__gray-20;
+      border-right: 1px solid $carbon--gray-20;
     }
 
     // selects every 3rd item and removes right border
@@ -84,7 +84,7 @@ $hover-ui: #e5e5e5;
     width: 25%;
 
     &:nth-child(3n + 3) {
-      border-right: 1px solid $ibm-colors__gray-20;
+      border-right: 1px solid $carbon--gray-20;
     }
 
     // selects every 4th item and removes right border
