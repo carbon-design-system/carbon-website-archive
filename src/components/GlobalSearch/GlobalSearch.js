@@ -1,5 +1,6 @@
 import React from 'react';
 import { Close20, Search20 } from '@carbon/icons-react';
+import GlobalSearchInput from './GlobalSearchInput'
 
 export default class GlobalSearch extends React.Component {
   state = {
@@ -34,7 +35,7 @@ export default class GlobalSearch extends React.Component {
         <label htmlFor="doc-search" className="bx--label">
           Search by element, component, or token, etc
         </label>
-        <input
+        <GlobalSearchInput
           aria-label="Search"
           type="text"
           className="bx--search-input"

@@ -21,9 +21,8 @@ import {
   Information20,
   Search20,
 } from '@carbon/icons-react';
-import { WebsiteFooter, WebsiteSwitcher } from '@carbon/addons-website';
+import { WebsiteFooter, WebsiteSwitcher, WebsiteCodeSnippet } from '@carbon/addons-website';
 
-import Snippet from '../CodeSnippet';
 import PageTable from '../PageTable';
 
 import { p, h1, h2, h3, h4, h5, ul, ol } from '../markdown/Markdown';
@@ -233,7 +232,7 @@ class Layout extends React.Component {
                 className="website-alert__button"
                 tabIndex="-1"
                 href=" https://www.carbondesignsystem.com">
-                <button class="bx--btn bx--btn--secondary" type="button">
+                <button class="bx--btn bx--btn--secondary bx--btn--sm" type="button">
                   <span>Go to v9</span>
                   <ArrowRight20 />
                 </button>
@@ -344,7 +343,7 @@ class Layout extends React.Component {
                   h5: h5,
                   ul: ul,
                   ol: ol,
-                  pre: Snippet,
+                  pre: WebsiteCodeSnippet,
                   table: PageTable,
                 }}>
                 {children}
