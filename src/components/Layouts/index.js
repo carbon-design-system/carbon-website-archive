@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql, Link } from 'gatsby';
+import SmoothScroll from 'smooth-scroll';
 import Packages from '../../../package.json';
 import GlobalSearch from '../GlobalSearch';
 import LeftNav from '../LeftNav';
@@ -50,13 +51,24 @@ class Layout extends React.Component {
     this.checkWidth();
 
     const scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 200,
-      durationMin: 90,
-      durationMax: 800,
+      speed: 400,
+      durationMin: 250,
+      durationMax: 700,
       easing: 'easeInOutCubic',
-      offset: 24,
+      offset: 87, // height of both header bars
       topOnEmptyHash: false,
+      clip: true
     });
+
+    if (window.location.hash) {
+      const hashElement = document.querySelector(window.location.hash);
+      if (hashElement.offsetTop) {
+        window.scrollTo(0, hashElement.offsetTop - 16);
+      } else {
+        // IE fallback
+        scroll.animateScroll(hashElement);
+      }
+    }
   }
 
   handleSearchClick = isSearchOpen => {
@@ -258,23 +270,23 @@ class Layout extends React.Component {
                   <span>IBM Product</span>&nbsp;Design&nbsp;<span>System</span>
                 </HeaderName>
               ) : (
-                <HeaderName prefix="" to="/" element={Link}>
-                  Carbon&nbsp;<span>Design System</span>
-                </HeaderName>
-              )}
+                  <HeaderName prefix="" to="/" element={Link}>
+                    Carbon&nbsp;<span>Design System</span>
+                  </HeaderName>
+                )}
 
               <HeaderGlobalBar>
                 {/* {isInternal ? null : <GlobalSearch />} */}
                 {this.state.isSearchOpen ? (
                   <GlobalSearch />
                 ) : (
-                  <HeaderGlobalAction
-                    className="bx--header__action--search"
-                    aria-label="Search Website"
-                    onClick={() => this.handleSearchClick('isSearchOpen')}>
-                    <Search20 />
-                  </HeaderGlobalAction>
-                )}
+                    <HeaderGlobalAction
+                      className="bx--header__action--search"
+                      aria-label="Search Website"
+                      onClick={() => this.handleSearchClick('isSearchOpen')}>
+                      <Search20 />
+                    </HeaderGlobalAction>
+                  )}
                 <HeaderGlobalAction
                   className="bx--header__action--switcher"
                   aria-label="Switch"
