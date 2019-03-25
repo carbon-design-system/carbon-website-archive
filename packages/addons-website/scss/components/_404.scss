@@ -1,7 +1,7 @@
 .page-content.fourohfour {
   padding-top: rem(32px);
   padding-bottom: 0;
-  background-color: $ibm-colors__gray-100;
+  background-color: $carbon--gray-100;
   min-height: calc(100vh - 418px);
   width: 100%;
 
@@ -31,8 +31,8 @@
   font-size: rem(200px);
   background: linear-gradient(
     35deg,
-    $ibm-colors__teal-20,
-    $ibm-colors__purple-50
+    $carbon--teal-20,
+    $carbon--purple-50
   );
   background-size: 200% 200%;
   -webkit-background-clip: text;
@@ -45,14 +45,14 @@
 .fourohfour-body__text,
 .fourohfour-body__anchor-links.anchor-links--small .page-ul > li a,
 .fourohfour-body__anchor-links.anchor-links--small .page-ul > li a::before {
-  color: $ibm-colors__gray-10;
+  color: $carbon--gray-10;
 }
 
 .fourohfour-body__anchor-links.anchor-links--small .page-ul > li a:hover {
-  color: $ibm-colors__blue-40;
+  color: $carbon--blue-40;
 
   &::before {
-    color: $ibm-colors__blue-40;
+    color: $carbon--blue-40;
   }
 }
 
