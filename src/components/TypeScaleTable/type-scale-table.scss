@@ -3,8 +3,8 @@ $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
 
 .typography-table {
   overflow-x: scroll;
-  background: $ibm-colors__white;
-  border-bottom: rem(1px) solid $ibm-colors__gray-20;
+  background: $carbon--white-0;
+  border-bottom: rem(1px) solid $carbon--gray-20;
 
   table tbody tr {
     border: none;
@@ -12,7 +12,7 @@ $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
 
   table thead th {
     border: none;
-    color: $ibm-colors__gray-50;
+    color: $carbon--gray-50;
     @include carbon--type-style('caption-01');
     padding: 1rem;
     text-align: left;
@@ -30,7 +30,7 @@ $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
     table tbody tr:nth-child(#{$i}) td:nth-child(2) {
       font-size: nth($type-scale, $i);
       white-space: nowrap;
-      color: $ibm-colors__gray-80;
+      color: $carbon--gray-80;
       width: 50%;
     }
   }
