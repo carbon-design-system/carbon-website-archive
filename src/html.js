@@ -29,6 +29,8 @@ export default class HTML extends React.Component {
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"
           />
+          {/* Stylesheet for special characters (↳) */}
+          <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|IBM+Plex+Sans+Condensed|IBM+Plex+Serif&text=%E2%86%B3" rel="stylesheet" />
         </body>
       </html>
     );

@@ -48,14 +48,18 @@ body {
   // All paragraphs on Markdown pages
   // And divs when markdown doesn't wrap text in paragraphs (when you have to use html for links to open in a new window)
   p {
-    //max-width: 38rem;
-    line-height: 1.5;
+    @include carbon--type-style('body-long-02');
     padding: 0 0 $spacing-lg;
+
 
     &:empty {
       padding: 0;
       margin: 0;
     }
+  }
+
+  em {
+    font-style: italic;
   }
 
   > div > div:first-child p {
@@ -87,7 +91,7 @@ body {
     padding: rem(1px) $spacing-xs;
     background: transparent;
     border-radius: 4px;
-    background-color: $ibm-colors__gray-20;
+    background-color: $carbon--gray-20;
   }
 
   td > code {
