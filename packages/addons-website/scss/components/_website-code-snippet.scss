@@ -23,11 +23,16 @@
   color: $inverse-01;
 }
 
-.#{$prefix}--snippet--website .#{$prefix}--snippet--multi .#{$prefix}--snippet-container pre::after {
-  background-image: linear-gradient(to right, rgba( $ui-05, 0), rgba( $ui-05, 1));
+.#{$prefix}--snippet--website
+  .#{$prefix}--snippet--multi
+  .#{$prefix}--snippet-container
+  pre::after {
+  background-image: linear-gradient(to right, rgba($ui-05, 0), rgba($ui-05, 1));
 }
 
-.#{$prefix}--snippet--website .#{$prefix}--snippet--multi .#{$prefix}--snippet-container {
+.#{$prefix}--snippet--website
+  .#{$prefix}--snippet--multi
+  .#{$prefix}--snippet-container {
   overflow: auto;
 }
 
@@ -40,7 +45,8 @@
   }
 }
 
-.#{$prefix}--snippet--website button.#{$prefix}--btn.#{$prefix}--snippet-btn--expand {
+.#{$prefix}--snippet--website
+  button.#{$prefix}--btn.#{$prefix}--snippet-btn--expand {
   color: $carbon--gray-10;
   background: $carbon--gray-100;
 
@@ -57,7 +63,9 @@
   fill: $icon-03;
 }
 
-.#{$prefix}--snippet--website .#{$prefix}--snippet--multi .#{$prefix}--snippet-container {
+.#{$prefix}--snippet--website
+  .#{$prefix}--snippet--multi
+  .#{$prefix}--snippet-container {
   min-height: auto;
 }
 
