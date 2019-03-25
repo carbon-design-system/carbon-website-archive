@@ -220,20 +220,20 @@ class Layout extends React.Component {
                 },
               ]}>
               <html lang="en" />
-            </Helmet>
+              </Helmet>
             <aside aria-label="alert banner" className="website-alert">
               <Information20 className="website-alert__icon" />
               <p className="website-alert__text">
-                <span>Carbon v10 is in beta</span>
-                <span>;</span>{' '}
-                <span>for production-ready components, use Carbon v9.</span>
+                <span>Carbon v10 is live!</span>
+                <span></span>{' '}
+                <span>View the migration guide for help with upgrading from v9.</span>
               </p>
               <a
                 className="website-alert__button"
                 tabIndex="-1"
-                href=" https://www.carbondesignsystem.com">
+                href="/updates/v10-migration/overview">
                 <button class="bx--btn bx--btn--secondary bx--btn--sm" type="button">
-                  <span>Go to v9</span>
+                  <span>Migrate to v10</span>
                   <ArrowRight20 />
                 </button>
               </a>
