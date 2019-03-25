@@ -4,7 +4,7 @@
 
 // Example code
 .type-spec__example {
-  background: $ibm-colors__white;
+  background: $carbon--white-0;
   padding-top: $spacing-md;
   padding-bottom: $spacing-md;
 }
@@ -18,8 +18,8 @@
 // Spec details
 .type-spec__details {
   padding: $spacing-md;
-  background: $ibm-colors__white;
-  border-left: 1px solid $ibm-colors__gray-20;
+  background: $carbon--white-0;
+  border-left: 1px solid $carbon--gray-20;
   @include carbon--type-style('caption-01');
 
   h4 {
@@ -35,7 +35,7 @@
 }
 
 .type-spec__details .bx--snippet {
-  background: $ibm-colors__gray-20;
+  background: $carbon--gray-20;
 }
 
 .type-spec__details .bx--snippet--inline code {
