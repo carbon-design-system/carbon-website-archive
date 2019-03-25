@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types'
-import classnames from 'classnames'
 import { settings } from 'carbon-components';
 const { prefix } = settings;
 
@@ -58,6 +57,7 @@ class VideoInternal extends React.Component {
   render() {
     const { poster, src, loop, overlay, cornerPlayButton, children } = this.props
     const { playing, hovering } = this.state
+    
     return (
       <div  className={`${prefix}--video-internal-container`} 
             onMouseOver={this.onMouseOver} 
@@ -102,7 +102,10 @@ VideoInternal.propTypes = {
   loop: PropTypes.bool,
 
   // black overlay over video
-  overlay: PropTypes.bool
+  overlay: PropTypes.bool,
+
+  // button in lower left corner
+  cornerPlayButton: PropTypes.bool,
 }
 
 export default VideoInternal;

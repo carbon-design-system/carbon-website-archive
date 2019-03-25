@@ -33,7 +33,7 @@ class PlayPauseButton extends React.Component {
   render() {
     const { onClick, playing, loop, cornerPlayButton, hovering } = this.props
     const { hover } = this.state
-    
+
     return (
       <button className={classnames(`${prefix}--play-pause-button`, {
         [`${prefix}--play-pause-hide-on-mobile`]: loop,
@@ -71,7 +71,7 @@ class PlayPauseButton extends React.Component {
           )
         }
         {
-          // standard center play button - used by default
+          // standard center play button - use by default
           !cornerPlayButton && (
             <>
               <span className={`${prefix}--play-pause-background`}></span>

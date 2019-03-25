@@ -34,6 +34,7 @@
 
   &.#{$prefix}--play-pause-hide-on-mobile {
     display:none;
+    opacity: 0;
     
     @include carbon--breakpoint('md') {
       display: block;
@@ -48,7 +49,11 @@
     height: 1.25rem;
     transform: translate(0);
     opacity: 1;
+    display: none;
 
+    @include carbon--breakpoint('md') {
+      display: block;
+    }
     @include carbon--breakpoint('lg') {
       left: 15rem;
     }
