@@ -43,11 +43,11 @@ const baseConfig = {
       ],
       plugins: [
         [
-          "@babel/plugin-proposal-class-properties",
+          '@babel/plugin-proposal-class-properties',
           {
-            "loose": true
-          }
-        ]
+            loose: true,
+          },
+        ],
       ],
     }),
   ],
@@ -81,7 +81,7 @@ module.exports = [
         'react-dom': 'ReactDOM',
         'prop-types': 'PropTypes',
         'react-scroll-up': 'ScrollToTop',
-        'gatsby': 'gatsby'
+        gatsby: 'gatsby',
       },
     },
   },

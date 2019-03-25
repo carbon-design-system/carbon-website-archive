@@ -18,7 +18,7 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.7);
   overflow: hidden;
-  width: 100%; 
+  width: 100%;
   z-index: 11;
   height: 100%;
 }
@@ -27,11 +27,11 @@
   position: relative;
   z-index: 12;
   height: 100%;
-  
+
   @include carbon--breakpoint-down('md') {
     margin-right: -2rem !important;
   }
-  
+
   @include carbon--breakpoint('md') {
     padding-right: 0 !important;
   }
@@ -42,7 +42,7 @@
   height: 100%;
   flex-direction: column;
   position: relative;
-  
+
   @include carbon--breakpoint('md') {
     flex-direction: row;
     justify-content: flex-end;
@@ -67,20 +67,20 @@
   z-index: 2;
   position: relative;
   padding: 1rem;
-  
+
   &:first-of-type {
     border-top-width: 0;
   }
-  
+
   &:visited {
     text-decoration: none;
   }
-  
+
   &:hover {
     background: $ibm-colors__white-0;
     color: $ibm-colors__gray-100;
     text-decoration: none;
-    
+
     svg {
       fill: $ibm-colors__gray-100;
     }
@@ -89,18 +89,18 @@
       color: $ibm-colors__gray-100;
     }
   }
-  
+
   &:active {
     text-decoration: none;
   }
-  
+
   @include carbon--breakpoint('md') {
     height: 100%;
     width: 25%;
     border-top-width: 0;
     border-left-width: 1px;
   }
-  
+
   @include carbon--breakpoint('max') {
     &:last-of-type {
       border-right-width: 1px;
@@ -119,5 +119,5 @@
   fill: $ibm-colors__white-0;
   width: rem(20px);
   height: rem(20px);
-  transition: fill $transition--base $carbon--standard-easing
+  transition: fill $transition--base $carbon--standard-easing;
 }
