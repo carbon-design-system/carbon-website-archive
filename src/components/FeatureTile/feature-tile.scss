@@ -23,7 +23,7 @@ a.feature-tile {
   @include breakpoint('md') {
     width: 50%;
     position: absolute;
-    right: 0;
+    right: 1rem;
     bottom: 0;
   }
 

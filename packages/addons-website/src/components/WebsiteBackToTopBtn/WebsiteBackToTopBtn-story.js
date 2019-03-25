@@ -3,11 +3,11 @@ import React from 'react';
 import WebsiteBackToTopBtn from '.';
 
 storiesOf('Website Back to top button', module).add(
-  'Website Back to top button',
+  'Website back to top button',
   () => <WebsiteBackToTopBtn />,
   {
     info: {
-      text: 'Website Back to top button',
+      text: 'Website back to top button',
     },
   }
 );
