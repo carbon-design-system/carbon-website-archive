@@ -171,7 +171,7 @@ class Layout extends React.Component {
     if (window.location.hash) {
       const hashElement = document.querySelector(window.location.hash);
       if (hashElement.offsetTop) {
-        window.scrollTo(0, hashElement.offsetTop - 16);
+        window.scrollTo(0, hashElement.offsetTop);
       } else {
         // IE fallback
         scroll.animateScroll(hashElement);
