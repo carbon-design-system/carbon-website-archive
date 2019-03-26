@@ -4273,6 +4273,7 @@ capture-stack-trace@^1.0.0:
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.1.tgz#a6c0bbe1f38f3aa0b92238ecb6ff42c344d4135d"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 carbon-components-react@^6.100.0:
   version "6.100.0"
   resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.100.0.tgz#ff257473f1465dd474011784e6046d7fd83ee639"
@@ -4282,6 +4283,12 @@ carbon-components-react@^6.107.0:
   resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.107.0.tgz#54f4a3c093fa2cbb6dd3407afb5e5f5824faff1b"
   integrity sha512-RtbRHSdzY3PGyD/VgTkvEKva7XYNSXtmZj7flULQULcKdeRY74d5/1t/pNKHuGScP7XZ6l33/4OEDJfBPex04g==
 >>>>>>> cfd865bf90ad58f49fed57bbdb416d651e876555
+=======
+carbon-components-react@^6.100.0:
+  version "6.100.0"
+  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-6.100.0.tgz#ff257473f1465dd474011784e6046d7fd83ee639"
+
+>>>>>>> de7b54dd6969e3e1577a8126875af40196c27dc2
   dependencies:
     "@carbon/icons-react" "^0.0.1-alpha.32"
     classnames "2.2.6"
@@ -4296,6 +4303,7 @@ carbon-components-react@^6.107.0:
     window-or-global "^1.0.1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 carbon-components@^9.82.17:
   version "9.82.17"
   resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.82.17.tgz#00b064c1d9642c788f6e0335d181dca86fcde80b"
@@ -4305,6 +4313,12 @@ carbon-components@^9.84.4:
   resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.84.4.tgz#a21f04966c7ce1ed7171e8bc3036314e69674382"
   integrity sha512-OP5kpF4uplPMRecrOUBXu6BfH2h3h7oME4tO/ut1w5IlVCK94AuFF0I+h3Y0XZ3GrLXaa6w9QHxLQY+NSuqFcw==
 >>>>>>> cfd865bf90ad58f49fed57bbdb416d651e876555
+=======
+carbon-components@^9.82.17:
+  version "9.82.17"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-9.82.17.tgz#00b064c1d9642c788f6e0335d181dca86fcde80b"
+
+>>>>>>> de7b54dd6969e3e1577a8126875af40196c27dc2
   dependencies:
     carbon-icons "^7.0.7"
     flatpickr "4.5.7"

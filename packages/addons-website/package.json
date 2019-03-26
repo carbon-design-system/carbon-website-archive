@@ -38,13 +38,9 @@
     "@ibm/plex": "^1.3.0",
     "babel-loader": "^8.0.5",
     "classnames": "^2.2.6",
-<<<<<<< HEAD
     "react-scroll-up": "^1.3.3",
     "react-textarea-autosize": "^7.1.0"
-=======
     "prismjs": "^1.15.0",
-    "react-copy-to-clipboard": "^5.0.1",
-    "react-scroll-up": "^1.3.3"
->>>>>>> cfd865bf90ad58f49fed57bbdb416d651e876555
+    "react-copy-to-clipboard": "^5.0.1"
   }
 }
