@@ -260,6 +260,7 @@ img[src*='gif'] {
 .website-alert__text {
   @include carbon--type-style('body-short-01');
   color: $inverse-01;
+  padding: 0;
 }
 
 .website-alert__text span {
