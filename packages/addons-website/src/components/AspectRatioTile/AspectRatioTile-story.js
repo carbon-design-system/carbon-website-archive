@@ -2,6 +2,8 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import AspectRatioTile from '.';
 
+import { ArrowRight24 } from '@carbon/icons-react';
+
 storiesOf('Aspect Ratio Tile', module).add(
   'Aspect Ratio Tile',
   () => (
@@ -228,6 +230,7 @@ storiesOf('Aspect Ratio Tile', module).add(
             theme='dark'
             subtitle='Philosophy'
             title='Start smart'
+            transparentImage='images/big-arrow.svg'
             actionIcon='no-icon'
             link='https://www.ibm.com/standards/web/design-kit/'
             target='_blank'
