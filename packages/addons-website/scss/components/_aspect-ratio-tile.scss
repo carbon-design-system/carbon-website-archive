@@ -118,6 +118,7 @@
       
         @include breakpoint('lg') {
           width: calc((100% / 3) + 1px); 
+          padding-bottom: 16.67%!important;
         }
       }
     }  

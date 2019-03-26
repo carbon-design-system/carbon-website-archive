@@ -170,13 +170,13 @@ storiesOf('Aspect Ratio Tile', module).add(
       <div className='ibm--row' style={{width: '100%', background: '#171717', paddingTop:'5rem'}}>
         <div className='ibm--col-lg-12 ibm--col-md-8 ibm--col-bleed ibm--offset-lg-4'>
           <AspectRatioTile
-            ratio='3:2'
+            ratio='16:9'
             image='images/landing-photography-gallery-2.jpg'
             actionIcon='no-icon'
           >
             {/* <Carousel /> */}
             <AspectRatioTile
-              ratio='6:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
+              ratio='4:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
               theme='dark' 
               subtitle='Elements'
               title='Photography'

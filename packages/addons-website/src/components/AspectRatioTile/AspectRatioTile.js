@@ -6,8 +6,8 @@ const { prefix } = settings;
 import { Launch20, ArrowRight24 } from '@carbon/icons-react';
 
 
-const AspectRatioTile = (props) => {
-  const { ratio,
+const AspectRatioTile = (
+        { ratio,
           marginTop, 
           theme, 
           hoverDark, 
@@ -21,9 +21,10 @@ const AspectRatioTile = (props) => {
           actionIcon, 
           link, 
           target, 
-          children } = props
+          children } ) => {
   
-
+  // const windowWidth = document.body.clientWidth
+  // console.log('windowWidth',windowWidth)
   const calcRatio = (ratio) => {
     switch (ratio){
       case '1:1':
