@@ -19,12 +19,16 @@
   .bx--search-close {
     width: rem(48px);
     height: rem(48px);
+
+    &:hover {
+      background: $hover-secondary;
+      box-shadow: inset -2px 2px 0 $carbon--white-0, inset -1px -2px 0 $carbon--white-0;
+    }
   }
 
   .bx--search--dark .bx--search-input {
     background-color: $carbon--gray-80;
     color: $carbon--gray-10;
-    margin-top: -0.5rem;
 
     &:focus {
       outline: 2px solid $carbon--white-0;
