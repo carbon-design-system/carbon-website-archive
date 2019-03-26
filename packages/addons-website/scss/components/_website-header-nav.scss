@@ -20,19 +20,19 @@
 a.#{$prefix}--header__menu-item[role='menuitem'] {
   @include carbon--type-style('body-short-02');
   position: relative;
-  color: $ibm-colors__gray-10;
+  color: $carbon--gray-10;
   border-width: 2px;
 }
 
 // Hover
 a.#{$prefix}--header__menu-item[role='menuitem']:hover {
   background-color: #2c2c2c;
-  color: $ibm-colors__gray-10;
+  color: $carbon--gray-10;
 }
 
 // Item with dropdown
 .#{$prefix}--header__menu-title[role='menuitem'][aria-expanded='true'] {
-  background: $ibm-colors__gray-90;
+  background: $carbon--gray-90;
 }
 
 // Selected
@@ -48,12 +48,12 @@ a.#{$prefix}--header__menu-item[role='menuitem'][aria-current='page']:after,
   position: absolute;
   left: -2px;
   bottom: -2px;
-  border-top: 4px solid $ibm-colors__blue-60;
+  border-top: 4px solid $carbon--blue-60;
 }
 
 //Active
 a.#{$prefix}--header__menu-item[role='menuitem']:active {
-  background: $ibm-colors__gray-80;
+  background: $carbon--gray-80;
 }
 
 //----------------------------
@@ -68,7 +68,7 @@ a.#{$prefix}--header__menu-item[role='menuitem']:active {
   left: 8px;
   bottom: -3px;
   border-top: none;
-  border-bottom: 1px solid $ibm-colors__gray-70;
+  border-bottom: 1px solid $carbon--gray-70;
 }
 
 .#{$prefix}--header__menu
@@ -81,27 +81,27 @@ a.#{$prefix}--header__menu-item[role='menuitem']:active {
 
 .#{$prefix}--header__menu-title[role='menuitem'][aria-expanded='true']
   + .#{$prefix}--header__menu {
-  background: $ibm-colors__gray-90;
+  background: $carbon--gray-90;
 }
 
 .#{$prefix}--header__menu .#{$prefix}--header__menu-item[role='menuitem'] {
   @include carbon--type-style('body-short-01');
-  color: $ibm-colors__gray-30;
+  color: $carbon--gray-30;
 }
 
 // Hover
 .#{$prefix}--header__menu
   .#{$prefix}--header__menu-item[role='menuitem']:hover {
-  color: $ibm-colors__gray-10;
+  color: $carbon--gray-10;
   background: #353535; //$hover-ui gray 90 theme
 }
 
 // Selected
 .#{$prefix}--header__menu
   .#{$prefix}--header__menu-item[role='menuitem'][aria-current='page'] {
-  color: $ibm-colors__gray-10;
+  color: $carbon--gray-10;
   font-weight: 600;
-  background: $ibm-colors__gray-80;
+  background: $carbon--gray-80;
 }
 
 .#{$prefix}--header__menu
@@ -112,6 +112,6 @@ a.#{$prefix}--header__menu-item[role='menuitem']:active {
 // Focus/Active
 .#{$prefix}--header__menu
   .#{$prefix}--header__menu-item[role='menuitem']:active {
-  color: $ibm-colors__gray-10;
-  background: $ibm-colors__gray-70;
+  color: $carbon--gray-10;
+  background: $carbon--gray-70;
 }

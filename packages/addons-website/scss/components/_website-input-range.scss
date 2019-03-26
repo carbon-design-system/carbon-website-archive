@@ -1,6 +1,5 @@
 @import '../prefix';
 
-
 .#{$prefix}--input-range {
   appearance: none;
   font-size: 0px;
@@ -104,5 +103,9 @@
       height: rem(18px);
     }
   }
-}
 
+  &:focus {
+    outline: 2px solid $focus;
+    outline-offset: 0;
+  }
+}

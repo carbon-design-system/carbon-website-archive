@@ -31,7 +31,7 @@
   margin: rem(64px) 1rem 0;
   border-style: solid;
   border-bottom: none;
-  border-color: $ibm-colors__gray-80;
+  border-color: $carbon--gray-80;
 }
 
 .#{$prefix}--side-nav--website--light .#{$prefix}--side-nav__divider {
@@ -100,7 +100,7 @@ a.#{$prefix}--side-nav__link:focus {
 
 .#{$prefix}--side-nav {
   border-top: none;
-  border-right: 1px solid $ibm-colors__gray-80;
+  border-right: 1px solid $carbon--gray-80;
 }
 
 .#{$prefix}--side-nav .#{$prefix}--side-nav__item--active {
@@ -282,7 +282,7 @@ a.#{$prefix}--side-nav__link:focus {
 .#{$prefix}--side-nav__menu[role='menu'] a.#{$prefix}--side-nav__link--current,
 .#{$prefix}--side-nav__menu[role='menu']
   a.#{$prefix}--side-nav__link[aria-current='page'] {
-  background-color: $ibm-colors__gray-80;
+  background-color: $carbon--gray-80;
 }
 
 .#{$prefix}--side-nav.#{$prefix}--side-nav--website--light
