@@ -28,3 +28,6 @@
 @include carbon--font-face-mono();
 @include carbon--font-face-sans();
 
+@import 'components/website-video-internal';
+@import 'components/website-homepage-video';
+@import 'components/website-play-pause-button';
