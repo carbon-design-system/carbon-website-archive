@@ -31,12 +31,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -70,12 +70,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -109,12 +109,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -148,12 +148,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -187,12 +187,51 @@
       },
       "vue": {
         "stable": false,
+        "experimental": true,
+        "new": false,
+        "updated": false,
+        "deprectated": false,
+        "underConstruction": false,
+        "notAvailable": false
+      }
+    },
+    {
+      "component": "Combo box",
+      "vanilla": {
+        "stable": false,
         "experimental": false,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": true
+      },
+      "react": {
+        "stable": false,
+        "experimental": false,
+        "new": false,
+        "updated": false,
+        "deprectated": false,
+        "underConstruction": true,
+        "notAvailable": false
+      },
+      "angular": {
+        "stable": false,
+        "experimental": false,
+        "new": false,
+        "updated": false,
+        "deprectated": false,
+        "underConstruction": false,
+        "notAvailable": true
+      },
+      "vue": {
+        "stable": false,
+        "experimental": true,
+        "new": false,
+        "updated": false,
+        "deprectated": false,
+        "underConstruction": false,
+        "notAvailable": false
       }
     },
     {
@@ -226,12 +265,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -265,12 +304,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -304,12 +343,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -343,12 +382,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -382,12 +421,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -421,12 +460,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -460,12 +499,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -499,12 +538,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -538,12 +577,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -577,12 +616,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -616,32 +655,32 @@
       },
       "vue": {
         "stable": false,
+        "experimental": true,
+        "new": false,
+        "updated": false,
+        "deprectated": false,
+        "underConstruction": false,
+        "notAvailable": false
+      }
+    },
+    {
+      "component": "Multiselect",
+      "vanilla": {
+        "stable": false,
         "experimental": false,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": true
-      }
-    },
-    {
-      "component": "Multiselect",
-      "vanilla": {
-        "stable": true,
-        "experimental": false,
-        "new": false,
-        "updated": true,
-        "deprectated": false,
-        "underConstruction": false,
-        "notAvailable": false
       },
       "react": {
-        "stable": true,
+        "stable": false,
         "experimental": false,
         "new": false,
-        "updated": true,
+        "updated": false,
         "deprectated": false,
-        "underConstruction": false,
+        "underConstruction": true,
         "notAvailable": false
       },
       "angular": {
@@ -655,12 +694,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -694,12 +733,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -733,12 +772,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -772,12 +811,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -811,12 +850,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -850,12 +889,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -889,12 +928,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -928,12 +967,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -967,12 +1006,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -1006,12 +1045,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -1045,12 +1084,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -1084,12 +1123,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -1123,12 +1162,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -1162,12 +1201,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -1201,12 +1240,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -1240,12 +1279,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -1279,12 +1318,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     },
     {
@@ -1318,12 +1357,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     }
   ]
