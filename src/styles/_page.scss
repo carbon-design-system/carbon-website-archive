@@ -25,7 +25,7 @@ body {
 // Header styles
 //---------------------------------------
 .bx--header__menu-trigger {
-  @include carbon--breakpoint('lg') {
+  @include breakpoint('lg') {
     display: none;
   }
 }
@@ -41,27 +41,26 @@ body {
 //---------------------------------------
 // Page styles
 //---------------------------------------
-.page-p,
-.component-docs p {
-  @include carbon--type-style('body-long-02');
-  padding: 0 0 $spacing-lg;
-  
-  &:empty {
-    padding: 0;
-    margin: 0;
-  }
-}
-
-em {
-  font-style: italic;
-}
-
 .page-content {
   padding-top: rem(80px);
   padding-bottom: rem(104px);
 
   // All paragraphs on Markdown pages
   // And divs when markdown doesn't wrap text in paragraphs (when you have to use html for links to open in a new window)
+  p {
+    @include carbon--type-style('body-long-02');
+    padding: 0 0 $spacing-lg;
+
+
+    &:empty {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  em {
+    font-style: italic;
+  }
 
   > div > div:first-child p {
     padding-bottom: 0;
@@ -137,7 +136,7 @@ em {
   overflow: hidden;
   padding-bottom: 56.543%;
 
-  @include carbon--breakpoint('lg') {
+  @include breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
     padding-bottom: 43% !important;
   }
@@ -152,7 +151,7 @@ em {
 }
 .website-tabs .gatsby-resp-iframe-wrapper,
 .example .gatsby-resp-iframe-wrapper {
-  @include carbon--breakpoint('lg') {
+  @include breakpoint('lg') {
     margin-left: 0;
     padding-bottom: 56.543% !important;
   }
@@ -169,7 +168,7 @@ em {
   margin-left: 0 !important;
   margin-bottom: rem(24px);
 
-  @include carbon--breakpoint('lg') {
+  @include breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
     max-width: calc(75% - 0.5rem);
   }
@@ -180,7 +179,7 @@ em {
 .page-content > div > img[src*='gif'] {
   background: $ui-02;
 
-  @include carbon--breakpoint('lg') {
+  @include breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
     max-width: calc(75% - 0.5rem);
   }
@@ -232,7 +231,7 @@ img[src*='gif'] {
   margin-left: 0.875rem;
   fill: $inverse-01;
 
-  @include carbon--breakpoint('lg') {
+  @include breakpoint('lg') {
     margin: 0 1rem;
   }
 }
@@ -260,7 +259,6 @@ img[src*='gif'] {
 .website-alert__text {
   @include carbon--type-style('body-short-01');
   color: $inverse-01;
-  padding: 0;
 }
 
 .website-alert__text span {
@@ -273,7 +271,7 @@ img[src*='gif'] {
   &:nth-of-type(3) {
     display: none;
 
-    @include carbon--breakpoint('md') {
+    @include breakpoint('md') {
       display: inline;
     }
   }

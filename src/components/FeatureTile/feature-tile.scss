@@ -15,19 +15,19 @@ a.feature-tile {
 }
 
 .feature-tile__tile {
-  @include carbon--breakpoint('sm') {
+  @include breakpoint('sm') {
     width: 100%;
     position: relative;
   }
 
-  @include carbon--breakpoint('md') {
+  @include breakpoint('md') {
     width: 50%;
     position: absolute;
     right: 1rem;
     bottom: 0;
   }
 
-  @include carbon--breakpoint('lg') {
+  @include breakpoint('lg') {
     width: 25%;
   }
 }
@@ -71,15 +71,14 @@ a.feature-tile:hover .feature-tile__info {
 a.feature-tile.feature-tile--mobile {
   display: block;
 
-  @include carbon--breakpoint('md') {
+  @include breakpoint('md') {
     display: none;
   }
 }
 
 a.feature-tile.feature-tile--desktop {
   display: none;
-
-  @include carbon--breakpoint('md') {
+  @include breakpoint('md') {
     display: block;
   }
 }
@@ -88,7 +87,7 @@ div.feature-tile--margin.feature-tile--mobile,
 div.feature-tile--mobile {
   margin-bottom: 1rem;
 
-  @include carbon--breakpoint('md') {
+  @include breakpoint('md') {
     margin-bottom: 0;
   }
 }
@@ -97,7 +96,7 @@ div.feature-tile--margin.feature-tile--desktop,
 div.feature-tile--desktop {
   margin-bottom: 0;
 
-  @include carbon--breakpoint('md') {
+  @include breakpoint('md') {
     margin-bottom: 1rem;
 
     & > .ibm--col-lg-12 {
