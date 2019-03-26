@@ -29,6 +29,7 @@
   .bx--search--dark .bx--search-input {
     background-color: $carbon--gray-80;
     color: $carbon--gray-10;
+    margin-top: -0.5rem;
 
     &:focus {
       outline: 2px solid $carbon--white-0;
