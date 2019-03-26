@@ -28,7 +28,7 @@
 
 .#{$prefix}--overlay-rightArea {
   align-self: flex-start;
-  color: $ibm-colors__white;
+  color: $carbon--white-0;
   flex-basis: 20%;
   z-index: 17003;
   text-align: right;
@@ -50,12 +50,12 @@
 }
 
 .#{$prefix}--overlay-caption {
-  color: $ibm-colors__white;
+  color: $carbon--white-0;
   position: relative;
 }
 
 .#{$prefix}--overlay-bg {
-  background: $ibm-colors__black;
+  background: $carbon--black-100;
   opacity: .9;
   position: absolute;
   top: 0;

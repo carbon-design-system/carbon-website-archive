@@ -10,17 +10,13 @@ storiesOf('Swatch Palette Widget', module).add(
   () => (
     <>
       <SwatchPaletteWidget
-        top='0'
+        top="0"
         palettes={[
           ['red', 'magenta', 'purple', 'blue', 'cyan', 'teal', 'green'],
-          ['cool gray-bw','gray-bw','warm gray-bw']
+          ['cool gray-bw', 'gray-bw', 'warm gray-bw'],
         ]}
       />
-      <SwatchPaletteWidget
-        palettes={[
-          ['blue-bw', 'gray-bw', 'alert']
-        ]}
-      />
+      <SwatchPaletteWidget palettes={[['blue-bw', 'gray-bw', 'alert']]} />
     </>
   ),
   {
