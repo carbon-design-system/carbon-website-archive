@@ -90,6 +90,9 @@
       "content-switcher": {
         "title": "Content switcher"
       },
+      "data-table": {
+        "title": "Data table"
+      },
       "date-picker": {
         "title": "Date picker"
       },
@@ -227,8 +230,8 @@
       "release-highlights": {
         "title": "Release highlights"
       },
-      "migration": {
-        "title": "Migration"
+      "v10-migration": {
+        "title": "v10 Migration guide"
       },
       "roadmap": {
         "title": "Roadmap"
