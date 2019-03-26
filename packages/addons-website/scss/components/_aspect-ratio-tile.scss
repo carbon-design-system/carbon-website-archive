@@ -5,7 +5,7 @@
   display: block;
   width: 100%;
   padding-bottom: 100%;
-  color: $carbon--gray-90;
+  color: $carbon--gray-90!important;
 
   .#{$prefix}--aspect-ratio-tile-background {
     position: absolute;
@@ -55,7 +55,7 @@
     right: 1px;
     bottom: 1px;
     z-index: 2;
-    background: rgba(255,255,255,.05);
+    background: rgba(255,255,255,.08);
     opacity: 0;
     transition: opacity 600ms ease;
     &.#{$prefix}--aspect-ratio-tile-hover__dark {
@@ -78,7 +78,7 @@
   }
 
   &.#{$prefix}--aspect-ratio-tile__dark {
-    color: $carbon--white-0;
+    color: $carbon--white-0!important;
 
     .#{$prefix}--aspect-ratio-tile-background {
       background-color: $carbon--gray-90;

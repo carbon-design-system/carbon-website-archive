@@ -4,7 +4,7 @@ import { settings } from 'carbon-components';
 const { prefix } = settings;
 
 import { Launch20, ArrowRight24 } from '@carbon/icons-react';
-import { white } from 'ansi-colors';
+
 
 const AspectRatioTile = (props) => {
   const { ratio,
@@ -83,26 +83,32 @@ const AspectRatioTile = (props) => {
 
 
   return (
-    <a className={theme==='dark' ? `${prefix}--aspect-ratio-tile ${prefix}--aspect-ratio-tile__dark`: `${prefix}--aspect-ratio-tile`} style={ratioStyle} href={link} target={target}>
-      <div className={ hover==='darken' ? `${prefix}--aspect-ratio-tile-hover ${prefix}--aspect-ratio-tile-hover__dark` : `${prefix}--aspect-ratio-tile-hover`} />
-      <div className={`${prefix}--aspect-ratio-tile-background`} style={backgroundStyle}></div>
-      {  children ? children 
-        : <div className={`${prefix}--aspect-ratio-tile-content`} style={transparentImageStyle}>
-          <div className={`${prefix}--aspect-ratio-tile-title`}>
-            <div className='bx--type-body-long-01'>{subtitle}</div>
-            <div className='bx--type-expressive-heading-03'>{title}</div>
+    <>
+      { children 
+        ? <div className={theme==='dark' ? `${prefix}--aspect-ratio-tile ${prefix}--aspect-ratio-tile__dark`: `${prefix}--aspect-ratio-tile`} style={ratioStyle} href={link} target={target}>
+            <div className={`${prefix}--aspect-ratio-tile-background`} style={backgroundStyle} />
+            { children } 
+        </div> 
+        : <a className={theme==='dark' ? `${prefix}--aspect-ratio-tile ${prefix}--aspect-ratio-tile__dark`: `${prefix}--aspect-ratio-tile`} style={ratioStyle} href={link} target={target}>
+          <div className={ hover==='darken' ? `${prefix}--aspect-ratio-tile-hover ${prefix}--aspect-ratio-tile-hover__dark` : `${prefix}--aspect-ratio-tile-hover`} />
+          <div className={`${prefix}--aspect-ratio-tile-background`} style={backgroundStyle} />
+          <div className={`${prefix}--aspect-ratio-tile-content`} style={transparentImageStyle}>
+            <div className={`${prefix}--aspect-ratio-tile-title`}>
+              <div className='bx--type-body-long-01'>{subtitle}</div>
+              <div className='bx--type-expressive-heading-03'>{title}</div>
+            </div>
+            { identityIcon ? 
+              <div className={`${prefix}--aspect-ratio-tile-identity-icon`}>
+                <img src={identityIcon} alt='identity-icon'/>
+              </div> 
+              : null}
           </div>
-          { identityIcon ? 
-            <div className={`${prefix}--aspect-ratio-tile-identity-icon`}>
-              <img src={identityIcon} alt='identity-icon'/>
-            </div> 
-            : null}
-        </div>
+          <div className={`${prefix}--aspect-ratio-tile-action-icon`} style={{fill: theme === 'dark' ? '#ffffff' : '#282828'}}>
+            {getActionIcon(actionIcon)}
+          </div>
+        </a>
       }
-      <div className={`${prefix}--aspect-ratio-tile-action-icon`} style={{fill: theme === 'dark' ? '#ffffff' : '#282828'}}>
-        {getActionIcon(actionIcon)}
-      </div>
-    </a>
+    </>
   )
 }
 
