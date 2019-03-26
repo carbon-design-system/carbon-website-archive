@@ -6,7 +6,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/carbon-design-system/carbon-website-gatsby/"
+    "url": "https://github.com/carbon-design-system/carbon-website/"
   },
   "keywords": [
     "gatsby"
@@ -115,6 +115,18 @@
     "string-replace-loader": "^2.1.0"
   },
   "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    },
     "globals": {
       "__PATH_PREFIX__": true
     }
