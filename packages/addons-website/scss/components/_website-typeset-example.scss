@@ -15,11 +15,11 @@
 }
 
 .#{$prefix}--typeset-example-row {
-  background-color: $ibm-colors__white-0;
+  background-color: $carbon--white-0;
 }
 
 .#{$prefix}--typeset-example-group-title {
-  background-color: $ibm-colors__gray-20;
+  background-color: $carbon--gray-20;
   height: 4rem;
 }
 
@@ -31,7 +31,7 @@
 .#{$prefix}--typeset-example-specs {
   padding: 1rem;
   @include carbon--breakpoint('md') {
-    border-left: 1px solid $ibm-colors__gray-20;
+    border-left: 1px solid $carbon--gray-20;
   }
 }
 
