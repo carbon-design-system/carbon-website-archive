@@ -16,15 +16,13 @@ tabs: ['Overview', 'Designers', 'Developers']
 
 ## Repo architecture
 
-Two of Carbon's previous repos will be deprecated with v10: carbon-icons and carbon-themes. Iconography and themes in v10 are now handled as packages in the carbon-elements repo. 
+[Carbon-themes](https://github.com/carbon-design-system/carbon-themes) has been deprecated in v10, as the [carbon-elements](https://github.com/IBM/carbon-elements) repository now contains the themes package [@carbon/themes](https://github.com/IBM/carbon-elements/tree/master/packages/themes).
 
-[@carbon/icons](https://github.com/IBM/carbon-elements/tree/master/packages/icons)
-
-[@carbon/themes](https://github.com/IBM/carbon-elements/tree/master/packages/themes)
+[Carbon-icons](https://github.com/carbon-design-system/carbon-icons) has not yet been deprecated in favor of [@carbon/icons](https://github.com/IBM/carbon-elements/tree/master/packages/icons). That is expected to happen in an upcoming dot release.
 
 ## Migration tooling
 
-**Coming soon!** [carbon-upgrade](https://github.com/carbon-design-system/carbon-upgrade/blob/master/README.md) is a new tool to help developers upgrade to v10 through the command line. This tool is still experimental, and if you would like to contribute, the Carbon team would welcome the help! [Please leave ideas for migration tooling here](https://github.com/carbon-design-system/carbon-upgrade/issues/7). 
+**Coming soon!** [carbon-upgrade](https://github.com/carbon-design-system/carbon-upgrade/blob/master/README.md) is a new tool to help developers upgrade to v10 through the command line. This tool is still experimental, and if you would like to contribute, the Carbon team would welcome the help! [Please leave ideas for migration tooling here](https://github.com/carbon-design-system/carbon-upgrade/issues/7).
 
 ## Product migration strategy
 
@@ -32,13 +30,16 @@ It is up to each product team to determine which migration strategy works best f
 
 Keep in mind that migrating to v10 from v9 will require collaboration with your product's design team, as new design artifacts may be required. Also note that **mixing v9 and v10 components in the same layout/UI is not an approved use of the design system**.
 
-### Talk about migration early and often. 
-Meet with all relevant stakeholders from design, OM, and engineering to kick off the migration process. Discuss how the migration process can integrate into the team's regular cadence. Establish dedicated channels of communication for migration, and involve the broader team as needed. 
+### Talk about migration early and often.
+
+Meet with all relevant stakeholders from design, OM, and engineering to kick off the migration process. Discuss how the migration process can integrate into the team's regular cadence. Establish dedicated channels of communication for migration, and involve the broader team as needed.
 
 ### Migrate in a dedicated branch.
-Rather than trying to upgrade piece-by-piece on the production build, the Carbon team recommends that product teams perform the migration first in a separate branch (or branches). This allows design and dev to work together and generate new design specs for any possible rough spots in alignment or sizing that may appear in the UI after upgrading.  Don't merge into your primary development branch until the product matches the look and feel of the new IBM Design Language.
+
+Rather than trying to upgrade piece-by-piece on the production build, the Carbon team recommends that product teams perform the migration first in a separate branch (or branches). This allows design and dev to work together and generate new design specs for any possible rough spots in alignment or sizing that may appear in the UI after upgrading. Don't merge into your primary development branch until the product matches the look and feel of the new IBM Design Language.
 
 ### First things first.
+
 The Carbon team recommends tackling components, colors, type, spacing, and iconography first. These updates should be relatively straightforward. Aligning to the new grid will be a more design-intensive exercise, and can be tackled after the other elements. However, it is ultimately up to the product owner to prioritize the order and scope of changes.
 
 ## Carbon components
@@ -61,7 +62,7 @@ All technical migration docs for the carbon-elements repo are available in the [
 
 ### Icons
 
-Carbon icons have undergone a major update for v10. The new home for the @carbon/icons package can be found [here](https://github.com/IBM/carbon-elements/tree/master/packages/colors). The carbon-icons repo that was used in previous releases of Carbon has been deprecated. 
+Carbon icons have undergone a major update for v10. The new home for the @carbon/icons package can be found [here](https://github.com/IBM/carbon-elements/tree/master/packages/colors). The carbon-icons repo that was used in previous releases of Carbon has been deprecated.
 
 The icons migration table can be found [here](https://github.com/IBM/carbon-elements/blob/master/docs/migration/10.x-icons.md).
 
@@ -71,7 +72,7 @@ The [Carbon Icons ESM Demo](https://carbon-elements.netlify.com/icons/examples/p
 
 The color token architecture for v10 is based on the v9 architecture, with some minor updates for the new design language. Carbon v9 users will see automatic, non-breaking color updates when they upgrade to v10.
 
-[Carbon v10 Color migration table](https://github.com/IBM/carbon-elements/blob/master/docs/migration/10.x-color.md) 
+[Carbon v10 Color migration table](https://github.com/IBM/carbon-elements/blob/master/docs/migration/10.x-color.md)
 
 [Primary token-value mapping page](https://carbon-elements.netlify.com/colors/examples/preview/)
 
@@ -79,7 +80,7 @@ The color token architecture for v10 is based on the v9 architecture, with some 
 
 ### Type
 
-The type token architecture has been completely redesigned for better clarity and flexibility in v10, moving from a basic type scale model to a more robust token-based architecture. 
+The type token architecture has been completely redesigned for better clarity and flexibility in v10, moving from a basic type scale model to a more robust token-based architecture.
 
 [Carbon v10 Type migration table](https://github.com/IBM/carbon-elements/blob/master/docs/migration/10.x-type.md)
 
@@ -95,7 +96,6 @@ Spacing values will see no change from Carbon v9, though the token names have ch
 
 [Interactive grid examples](https://carbon-elements.netlify.com/grid/examples/preview/)
 
-
 ## Motion
 
 Motion standards have been revised to meet the new IBM Design Language standards. Motion updates should be coordinated with your product's design team if possible.
@@ -109,6 +109,5 @@ Motion standards have been revised to meet the new IBM Design Language standards
 To leave feedback for the Carbon team about this documentation, make suggestions for improvements, or just ask a question, you can [open an issue](https://github.com/carbon-design-system/carbon-website/issues/new?template=feedback.md&labels=feedback&title=User+feedback+for+Migration+Developers+page) on GitHub.
 
 Internal IBM users can also subscribe to the [#carbon-design-system Slack channel](https://ibm-studios.slack.com/messages/C0M053VPT/details/), which is monitored by the Carbon team and the broader Carbon community.
-
 
 _Last updated: 20 March 2019_
