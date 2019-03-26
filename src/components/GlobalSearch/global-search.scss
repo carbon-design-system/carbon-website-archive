@@ -23,6 +23,7 @@
     &:hover {
       background: $hover-secondary;
       box-shadow: inset -2px 2px 0 $carbon--white-0, inset -1px -2px 0 $carbon--white-0;
+      border: 0;
     }
   }
 
