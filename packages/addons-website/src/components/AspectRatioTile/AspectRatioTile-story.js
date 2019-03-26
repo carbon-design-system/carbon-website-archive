@@ -12,7 +12,7 @@ storiesOf('Aspect Ratio Tile', module).add(
         <div className='ibm--col-lg-4 ibm--col-md-4 ibm--offset-lg-4 ibm--col-bleed'>
           <AspectRatioTile
             ratio='1:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
-            hover='darken'
+            hoverDark
             transparentImage='images/tooltip-components.svg'
             subtitle='Components'
             title='Carbon X next'
@@ -58,7 +58,7 @@ storiesOf('Aspect Ratio Tile', module).add(
           <AspectRatioTile
             ratio='1:2' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
             theme='dark'
-            hover='darken'
+            hoverDark
             backgroundColor='#8a3ffc' // if omitted, defaults to #282828
             transparentImage='images/three-icons-stacked.svg'
             subtitle='Icons'
@@ -82,7 +82,8 @@ storiesOf('Aspect Ratio Tile', module).add(
             ratio='1:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
             marginTop='50%'
             theme='dark'
-            hover='darken'
+            hoverDark
+            contentOnHover
             image='images/blue1.jpg'
             subtitle='Elements'
             title='Color Palette'
@@ -95,7 +96,7 @@ storiesOf('Aspect Ratio Tile', module).add(
           <AspectRatioTile
             ratio='1:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
             theme='dark'
-            hover='darken'
+            hoverDark
             image='/images/landing-color-grid.svg'
             subtitle='Elements'
             title='Color Palette'
@@ -217,7 +218,7 @@ storiesOf('Aspect Ratio Tile', module).add(
           <AspectRatioTile
             ratio='1:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
             theme='dark'
-            hover='darken'
+            hoverDark
             backgroundColor='#8a3ffc'
             image='images/landing-illustration-ibm-rand-logo.svg'
             actionIcon='no-icon'

@@ -35,6 +35,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    transition: opacity 600ms ease;
 
     .#{$prefix}--aspect-ratio-tile-title {
       z-index:2;
@@ -72,8 +73,9 @@
   }
 
   &:hover {
+    .#{$prefix}--aspect-ratio-tile-content,
     .#{$prefix}--aspect-ratio-tile-hover {
-      opacity: 1;
+      opacity: 1!important;
     }
   }
 

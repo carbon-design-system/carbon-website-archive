@@ -10,7 +10,8 @@ const AspectRatioTile = (props) => {
   const { ratio,
           marginTop, 
           theme, 
-          hover, 
+          hoverDark, 
+          contentOnHover,
           backgroundColor, 
           image, 
           transparentImage, 
@@ -72,7 +73,8 @@ const AspectRatioTile = (props) => {
   }
 
   const transparentImageStyle = {
-    backgroundImage: transparentImage ? `url(${transparentImage})` : null, 
+    opacity: contentOnHover ? 0 : 1,
+    backgroundImage: transparentImage ? `url(${transparentImage})` : null
   }
 
   return (
@@ -85,7 +87,7 @@ const AspectRatioTile = (props) => {
             </div>
         </div> 
         : <a className={theme==='dark' ? `${prefix}--aspect-ratio-tile ${prefix}--aspect-ratio-tile__dark`: `${prefix}--aspect-ratio-tile`} style={ratioStyle} href={link} target={target}>
-          <div className={ hover==='darken' ? `${prefix}--aspect-ratio-tile-hover ${prefix}--aspect-ratio-tile-hover__dark` : `${prefix}--aspect-ratio-tile-hover`} />
+          <div className={ hoverDark ? `${prefix}--aspect-ratio-tile-hover ${prefix}--aspect-ratio-tile-hover__dark` : `${prefix}--aspect-ratio-tile-hover`} />
           <div className={`${prefix}--aspect-ratio-tile-background`} style={backgroundStyle} />
           <div className={`${prefix}--aspect-ratio-tile-content`} style={transparentImageStyle}>
             <div className={`${prefix}--aspect-ratio-tile-title`}>
@@ -97,9 +99,9 @@ const AspectRatioTile = (props) => {
                 <img src={identityIcon} alt='identity-icon'/>
               </div> 
               : null}
-          </div>
-          <div className={`${prefix}--aspect-ratio-tile-action-icon`} style={{fill: theme === 'dark' ? '#ffffff' : '#282828'}}>
-            {getActionIcon(actionIcon)}
+            <div className={`${prefix}--aspect-ratio-tile-action-icon`} style={{fill: theme === 'dark' ? '#ffffff' : '#282828'}}>
+              {getActionIcon(actionIcon)}
+            </div>
           </div>
         </a>
       }
