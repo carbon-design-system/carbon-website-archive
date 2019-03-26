@@ -22,12 +22,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -61,12 +61,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -100,12 +100,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -139,12 +139,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -178,12 +178,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -217,12 +217,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -256,12 +256,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -295,12 +295,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -334,12 +334,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -373,12 +373,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -412,12 +412,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -451,12 +451,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -490,12 +490,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -529,12 +529,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -568,12 +568,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -607,12 +607,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -646,12 +646,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -685,12 +685,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -724,12 +724,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -763,12 +763,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -802,12 +802,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -841,12 +841,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -880,12 +880,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -919,12 +919,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -958,12 +958,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -997,12 +997,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -1036,12 +1036,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -1075,12 +1075,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -1114,12 +1114,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -1153,12 +1153,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -1192,12 +1192,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -1231,12 +1231,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -1270,12 +1270,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -1309,12 +1309,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
@@ -1348,12 +1348,12 @@
       },
       "angular": {
         "stable": false,
-        "experimental": false,
+        "experimental": true,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       },
       "vue": {
         "stable": false,
