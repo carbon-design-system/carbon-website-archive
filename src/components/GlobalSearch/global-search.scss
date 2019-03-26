@@ -1,5 +1,11 @@
 // Needs dark theme colors
 .bx--header {
+  .bx--header__action--search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .bx--search {
     width: rem(448px);
   }
@@ -200,7 +206,7 @@
 @media all and (max-width: 725px) {
   .bx--header {
     .bx--search,
-    .bx--header__action--searc {
+    .bx--header__action--search {
       display: none;
     }
   }
