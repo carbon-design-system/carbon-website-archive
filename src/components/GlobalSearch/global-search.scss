@@ -36,7 +36,7 @@
     }
   }
 
-  .bx--search--dark .bx--search-input:focus ~ .bx--search-close:hover {
+  .bx--search--dark .bx--search-input:focus .bx--search-close:hover {
     border: 2px solid $carbon--white-0;
     border-left: 0;
   }
