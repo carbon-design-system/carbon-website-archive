@@ -23,7 +23,7 @@
 }
 
 .#{$prefix}--image-component > *:not(.image-component__caption) {
-    background: $ibm-colors__white;
+    background: $carbon--white-0;
 }
 
 .#{$prefix}--image-component.transparent-bg > *:not(.image-component__caption) {
@@ -69,7 +69,7 @@
         box-sizing: border-box;
         // width: calc(100% - 2rem);
         // height: calc(100% - 2rem);
-        background-color: $ibm-colors__white;
+        background-color: $carbon--white-0;
         cursor: pointer;
     }
 }
@@ -80,7 +80,7 @@
     display: none;
   
     svg {
-      fill: $ibm-colors__gray-80;
+      fill: $carbon--gray-80;
     }
     @include breakpoint('md') {
       display:flex;
@@ -94,7 +94,7 @@
     z-index: 15;
   
     svg {
-      fill: $ibm-colors__white;
+      fill: $carbon--white-0;
     }
     &:hover {
       cursor: pointer;
