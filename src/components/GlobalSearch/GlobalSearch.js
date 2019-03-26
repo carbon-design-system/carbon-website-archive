@@ -16,6 +16,7 @@ export default class GlobalSearch extends React.Component {
     } else {
       // eslint-disable-next-line no-undef
       window.docsearch({
+        //update before going live
         //apiKey: `296ea0c1d0e96b2b04900d0f4d1a6329`,
         //indexName: `carbondesignsystem`,
         apiKey: `671a2a5c1da5f9eceec680cd79d751b2`,
