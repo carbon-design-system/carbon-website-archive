@@ -1,7 +1,7 @@
 $gutter-size: $spacing-lg;
 
 .simple-columns--wrapper {
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     display: flex;
   }
 }
@@ -12,7 +12,7 @@ $gutter-size: $spacing-lg;
 
 .simple-columns--wrapper.simple-columns--use-gutter > div {
   margin-right: 0;
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     margin-right: $gutter-size;
   }
 }
