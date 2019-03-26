@@ -22,6 +22,8 @@
 
     &:hover {
       background: $hover-secondary;
+      border: 2px solid $carbon--white-0;
+      border-left: 0;
     }
   }
 
@@ -34,11 +36,6 @@
       outline: 2px solid $carbon--white-0;
       outline-offset: -2px;
     }
-  }
-
-  .bx--search--dark .bx--search-input:focus .bx--search-close:hover {
-    border: 2px solid $carbon--white-0;
-    border-left: 0;
   }
 
   //---------------------------------------
