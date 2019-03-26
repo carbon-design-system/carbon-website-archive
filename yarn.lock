@@ -214,6 +214,13 @@
   dependencies:
     "@babel/types" "^7.0.0"
 
+"@babel/helper-split-export-declaration@^7.4.0":
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/@babel/helper-split-export-declaration/-/helper-split-export-declaration-7.4.0.tgz#571bfd52701f492920d63b7f735030e9a3e10b55"
+  integrity sha512-7Cuc6JZiYShaZnybDmfwhY4UYHzI6rlqhWjaIqbsJGsIqPimEYy5uh3akSRLMg65LSdSEnJ8a8/bWQN6u2oMGw==
+  dependencies:
+    "@babel/types" "^7.4.0"
+
 "@babel/helper-wrap-function@^7.1.0":
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@babel/helper-wrap-function/-/helper-wrap-function-7.2.0.tgz#c4e0012445769e2815b55296ead43a958549f6fa"
@@ -14967,6 +14974,11 @@ slide@^1.1.6:
 smart-buffer@4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/smart-buffer/-/smart-buffer-4.0.2.tgz#5207858c3815cc69110703c6b94e46c15634395d"
+
+smooth-scroll@^16.0.3:
+  version "16.0.3"
+  resolved "https://registry.yarnpkg.com/smooth-scroll/-/smooth-scroll-16.0.3.tgz#5914e0e4050a5313102d734140ddee0267526fd7"
+  integrity sha512-Wnhk3tWeqVJRrSUxeLQ4r7MNQvc9MNlswyWfKqAQ9cc37D8VqTco/CicWcdHzSFEC4/9/kPPK3uY6oyY+mdRYg==
 
 snake-case@^2.1.0:
   version "2.1.0"
