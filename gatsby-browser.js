@@ -5,9 +5,9 @@
  */
 
 // You can delete this file if you're not using it
-import SmoothScroll from 'smooth-scroll';
 
-const onRouteUpdate = ({ location }) => {
+exports.onRouteUpdate = ({ location }) => {
+    const SmoothScroll = require('smooth-scroll');
     const scroll = new SmoothScroll('a[href*="#"]', {
         speed: 400,
         durationMin: 250,
@@ -27,6 +27,4 @@ const onRouteUpdate = ({ location }) => {
             scroll.animateScroll(hashElement);
         }
     }
-}
-
-export { onRouteUpdate };
+};
