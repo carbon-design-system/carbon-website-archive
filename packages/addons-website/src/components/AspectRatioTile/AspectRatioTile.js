@@ -75,19 +75,14 @@ const AspectRatioTile = (props) => {
     backgroundImage: transparentImage ? `url(${transparentImage})` : null, 
   }
 
-  const bottomRightStyle = {
-    backgroundColor: '#282828',
-    color: '#ffffff',
-    width: '50%'
-  }
-
-
   return (
     <>
       { children 
         ? <div className={theme==='dark' ? `${prefix}--aspect-ratio-tile ${prefix}--aspect-ratio-tile__dark`: `${prefix}--aspect-ratio-tile`} style={ratioStyle} href={link} target={target}>
             <div className={`${prefix}--aspect-ratio-tile-background`} style={backgroundStyle} />
-            { children } 
+            <div className={`${prefix}--aspect-ratio-tile-nested-content`} >
+              { children } 
+            </div>
         </div> 
         : <a className={theme==='dark' ? `${prefix}--aspect-ratio-tile ${prefix}--aspect-ratio-tile__dark`: `${prefix}--aspect-ratio-tile`} style={ratioStyle} href={link} target={target}>
           <div className={ hover==='darken' ? `${prefix}--aspect-ratio-tile-hover ${prefix}--aspect-ratio-tile-hover__dark` : `${prefix}--aspect-ratio-tile-hover`} />

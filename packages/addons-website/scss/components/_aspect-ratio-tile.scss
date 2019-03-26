@@ -17,7 +17,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    z-index: 1;
+    // z-index: 1;
   }
 
   .#{$prefix}--aspect-ratio-tile-content {
@@ -88,24 +88,37 @@
       fill: $carbon--white-0;
     }
   }
-  // nested tile bottom right
-  .#{$prefix}--aspect-ratio-tile {
+
+  .#{$prefix}--aspect-ratio-tile-nested-content {
     position: absolute;
-    z-index: 5;
-    bottom: 0;
-    right: 0;
-    width: 50%; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background: transparent;
+
+    // nested tile bottom right
+    .#{$prefix}--aspect-ratio-tile {
+      position: absolute;
+      z-index: 50;
+      bottom: 0;
+      right: 0;
+      width: 50%; 
+    }
   }
+  
 }
 
 .ibm--col-lg-12 {
   .#{$prefix}--aspect-ratio-tile {
-    .#{$prefix}--aspect-ratio-tile {
+    .#{$prefix}--aspect-ratio-tile-nested-content {
+      .#{$prefix}--aspect-ratio-tile {
       
-      @include breakpoint('lg') {
-        width: calc((100% / 3) + 1px); 
+        @include breakpoint('lg') {
+          width: calc((100% / 3) + 1px); 
+        }
       }
-    }
+    }  
   }
 }
 
