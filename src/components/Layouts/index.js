@@ -48,15 +48,7 @@ class Layout extends React.Component {
 
   componentDidMount() {
     this.checkWidth();
-
-    const scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 200,
-      durationMin: 90,
-      durationMax: 800,
-      easing: 'easeInOutCubic',
-      offset: 24,
-      topOnEmptyHash: false,
-    });
+    this.addSmoothScroll();
   }
 
   handleSearchClick = isSearchOpen => {
@@ -164,6 +156,29 @@ class Layout extends React.Component {
     }
   };
 
+  addSmoothScroll = () => {
+    const SmoothScroll = require('smooth-scroll');
+    const scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 400,
+      durationMin: 250,
+      durationMax: 700,
+      easing: 'easeInOutCubic',
+      offset: 87, // height of both header bars
+      topOnEmptyHash: false,
+      clip: true
+    });
+
+    if (window.location.hash) {
+      const hashElement = document.querySelector(window.location.hash);
+      if (hashElement.offsetTop) {
+        window.scrollTo(0, hashElement.offsetTop);
+      } else {
+        // IE fallback
+        scroll.animateScroll(hashElement);
+      }
+    }
+  }
+
   render() {
     const { GATSBY_CARBON_ENV } = process.env;
     const isInternal = GATSBY_CARBON_ENV == 'internal';
@@ -258,23 +273,23 @@ class Layout extends React.Component {
                   <span>IBM Product</span>&nbsp;Design&nbsp;<span>System</span>
                 </HeaderName>
               ) : (
-                <HeaderName prefix="" to="/" element={Link}>
-                  Carbon&nbsp;<span>Design System</span>
-                </HeaderName>
-              )}
+                  <HeaderName prefix="" to="/" element={Link}>
+                    Carbon&nbsp;<span>Design System</span>
+                  </HeaderName>
+                )}
 
               <HeaderGlobalBar>
                 {/* {isInternal ? null : <GlobalSearch />} */}
                 {this.state.isSearchOpen ? (
                   <GlobalSearch />
                 ) : (
-                  <HeaderGlobalAction
-                    className="bx--header__action--search"
-                    aria-label="Search Website"
-                    onClick={() => this.handleSearchClick('isSearchOpen')}>
-                    <Search20 />
-                  </HeaderGlobalAction>
-                )}
+                    <HeaderGlobalAction
+                      className="bx--header__action--search"
+                      aria-label="Search Website"
+                      onClick={() => this.handleSearchClick('isSearchOpen')}>
+                      <Search20 />
+                    </HeaderGlobalAction>
+                  )}
                 <HeaderGlobalAction
                   className="bx--header__action--switcher"
                   aria-label="Switch"

@@ -25,19 +25,7 @@ title: Themes
 ![](images/sandbox-icon.png)
 
   </ClickableTile>
-  <ClickableTile
-    title="Carbon themes repo"
-    href="https://github.com/carbon-design-system/carbon-themes"
-    type="resource">
-
-![](images/github-icon.png)
-
-  </ClickableTile>
 </GridWrapper>
-
-<br />
-
-<br />
 
 ## Theming basics
 
@@ -47,94 +35,93 @@ Themes are used to modify existing components to fit a specific visual style. By
 
 | Term    | Definition                                                                                                  |     |
 | ------- | ----------------------------------------------------------------------------------------------------------- | --- |
-| _Theme_ | The set of unique values assigned to the system's tokens                                                    |     |
+| _Theme_ | The set of unique values assigned to the tokens of a Carbon interface                                       |     |
 | _Token_ | The code identifier for a unique role or set of roles. Tokens are universal and never change across themes. |     |
-| _Role_  | The systematic usage/s of a token. Roles cannot be changed between themes.                                  |     |
+| _Role_  | The systematic usage(s) of a token. Roles cannot be changed between themes.                                 |     |
 | _Value_ | The actual style (i.e. hex code) assigned to a token                                                        |     |
 
 ### Default theme
 
-Carbon's default theme (White theme) is based on the IBM Design Language. When `carbon-components` is downloaded and installed, the components are preset to use the default theme. [See the collection of themes for use with Carbon components here.](https://github.com/carbon-design-system/carbon-themes)
+Carbon provides four themes as shown in the [color usage](/guidelines/color/usage) page. When `carbon-components` is downloaded and installed, the components are preset to use the default (white) theme.
+
+To use the gray 10, gray 90, or gray 100 theme as your default instead of white, set the `$carbon--theme` variable to one of the available theme maps (`$carbon--theme--g10`, `$carbon--theme--g90`, `$carbon--theme--g100`) and then include your normal components in your Sass build.
+
+```scss
+@import './path/to/carbon-components/scss/globals/scss/vendor/@carbon/elements/scss/themes/theme-maps';
+
+$carbon--theme: $carbon--theme--g90;
+
+// import Carbon styles here
+```
 
 ## Customizing a theme
 
-The default theme acts as a starting point; from there designers and developers can define how their own components and styles deviate from the default. Altering one, some, or all of the default token values will result in a new theme. The developer then packages those new values into a new theme SCSS stylesheet which will replace the values of the default theme:
+The default theme acts as a starting point; from there designers and developers can define how their own components and styles deviate from the default. Altering one, some, or all of the default token values will result in a new theme. The developer then packages those new values into a new theme SCSS stylesheet which will replace the values of the default theme.
 
 #### 1. Create a theme mixin that effectively mimics this structure, but changes up hex values as needed:
 
 ```scss
-@mixin theme-white {
-$interactive-01: #0062ff !default !global;
-$interactive-02: #171717 !default !global;
-$interactive-03: #0062ff !default !global;
-$interactive-04: #0062ff !default !global;
-
-$ui-background: #ffffff !default !global;
-
-$ui-01: #f3f3f3 !default !global;
-$ui-02: #ffffff !default !global;
-$ui-03: #dcdcdc !default !global;
-$ui-04: #8c8c8c !default !global;
-$ui-05: #171717 !default !global;
-
-$text-01: #171717 !default !global;
-$text-02: #565656 !default !global;
-$text-03: #8c8c8c !default !global;
-$text-04: #ffffff !default !global;
-
-$icon-01: #171717 !default !global;
-$icon-02: #565656 !default !global;
-$icon-03: #ffffff !default !global;
-
-$field-01: #f3f3f3 !default !global;
-$field-02: #ffffff !default !global;
-
-$inverse-01: #ffffff !default !global;
-$inverse-02: #3d3d3d !default !global;
-
-$support-01: #da1e28 !default !global;
-$support-02: #198038 !default !global;
-$support-03: #fdd13a !default !global;
-$support-04: #054ada !default !global;
-
-$overlay-01: rgba(23, 23, 23, 0.5) !default !global;
-
-// Interactive states
-
-$focus: #0062ff !default !global;
-
-$hover-primary: #0353e9 !default !global;
-$active-primary: #0530ad !default !global;
-$hover-primary-text: #054ada !default !global;
-
-$hover-secondary: #4c4c4c !default !global;
-$active-secondary: #6f6f6f !default !global;
-
-$hover-tertiary: #0353e9 !default !global;
-$active-tertiary: #0530ad !default !global;
-
-$hover-ui: #e5e5e5 !default !global;
-$active-ui: #bebebe !default !global;
-$selected-ui: #dcdcdc !default !global;
-$hover-selected-ui: #cacaca !default !global;
-
-$hover-danger: #ba1b23 !default !global;
-$active-danger: #750e13 !default !global;
-
-$hover-row: #e5e5e5 !default !global;
-
-$visited-link: #8a3ffc !default !global;
-
-$disabled-01: #f3f3f3 !default !global;
-$disabled-02: #bebebe !default !global;
-$disabled-03: #8c8c8c !default !global;
+@mixin my-theme {
+  $interactive-01: #0062ff !global;
+  $interactive-02: #171717 !global;
+  $interactive-03: #0062ff !global;
+  $interactive-04: #0062ff !global;
+  $ui-background: #ffffff !global;
+  $ui-01: #f3f3f3 !global;
+  $ui-02: #ffffff !global;
+  $ui-03: #dcdcdc !global;
+  $ui-04: #8c8c8c !global;
+  $ui-05: #171717 !global;
+  $text-01: #171717 !global;
+  $text-02: #565656 !global;
+  $text-03: #8c8c8c !global;
+  $text-04: #ffffff !global;
+  $icon-01: #171717 !global;
+  $icon-02: #565656 !global;
+  $icon-03: #ffffff !global;
+  $link-01: #0062ff !global;
+  $field-01: #f3f3f3 !global;
+  $field-02: #ffffff !global;
+  $inverse-01: #ffffff !global;
+  $inverse-02: #3d3d3d !global;
+  $support-01: #da1e28 !global;
+  $support-02: #24a148 !global;
+  $support-03: #fdd13a !global;
+  $support-04: #054ada !global;
+  $overlay-01: rgba(23, 23, 23, 0.5) !global;
+  $focus: #0062ff !global;
+  $hover-primary: #0353e9 !global;
+  $active-primary: #0530ad !global;
+  $hover-primary-text: #054ada !global;
+  $hover-secondary: #4c4c4c !global;
+  $active-secondary: #6f6f6f !global;
+  $hover-tertiary: #0353e9 !global;
+  $active-tertiary: #0530ad !global;
+  $hover-ui: #e5e5e5 !global;
+  $active-ui: #bebebe !global;
+  $selected-ui: #dcdcdc !global;
+  $hover-selected-ui: #cacaca !global;
+  $hover-danger: #ba1b23 !global;
+  $active-danger: #750e13 !global;
+  $hover-row: #e5e5e5 !global;
+  $visited-link: #8a3ffc !global;
+  $disabled-01: #f3f3f3 !global;
+  $disabled-02: #bebebe !global;
+  $disabled-03: #8c8c8c !global;
+  $highlight: #c9deff !global;
+  $brand-01: #0062ff !global;
+  $brand-02: #171717 !global;
+  $brand-03: #0062ff !global;
+  $active-01: #bebebe !global;
+  $hover-field: #e5e5e5 !global;
+}
 ```
 
-#### 2. Name the mixin (i.e., instead of `theme-white`, choose a unique name)
+#### 2. Name the mixin (i.e., `my-theme`)
 
-#### 3. Include this in your scss, before importing component scss, etc.:
+#### 3. Include this in your SCSS, before importing components, etc.:
 
-`@include UNIQUE-THEME-MIXIN();`
+`@include my-theme();`
 
 Alternatively, for relatively minor changes to an existing theme, a developer can make changes on a per-token basis. For example, after importing an existing Carbon theme, she could just set something like `$interactive-01: hotpink;`.
 
@@ -153,70 +140,63 @@ There are several token categories:
 
 ### Color
 
-Each theme is assigned 38 universal color variables, which are determined by [common roles and usage](/guidelines/color/usage). This allows for uniform color application across themes while maintaining full styling flexibility.
+Each theme is assigned 52 universal color variables, which are determined by [common roles and usage](/guidelines/color/usage). This allows for uniform color application across themes while maintaining full styling flexibility.
 
 ```scss
-//// _color-tokens
-// White Theme tokens
-$interactive-01: $carbon--blue-60 !default !global;
-$interactive-02: $carbon--blue-60 !default !global;
-$interactive-03: $carbon--blue-60 !default !global;
-$interactive-04: $carbon--blue-60 !default !global;
-
-$ui-background: $carbon--white-0 !default !global;
-
-$ui-01: $carbon--gray-10 !default !global;
-$ui-02: $carbon--white-0 !default !global;
-$ui-03: $carbon--gray-20 !default !global;
-$ui-04: $carbon--gray-50 !default !global;
-$ui-05: $carbon--gray-100 !default !global;
-
-$icon-01: $carbon--gray-100 !default !global;
-$icon-02: $carbon--gray-70 !default !global;
-$icon-03: $carbon--white-0 !default !global;
-
-$text-01: $carbon--gray-100 !default !global;
-$text-02: $carbon--gray-70 !default !global;
-$text-03: $carbon--gray-50 !default !global;
-$text-03: $carbon--white-0 !default !global;
-
-$inverse-01: $carbon--gray-10 !default !global;
-$inverse-02: $carbon--gray-80 !default !global;
-
-$field-01: $carbon--gray-10 !default !global;
-$field-02: $carbon--white-0 !default
-
-$support-01: $carbon--red-60 !default !global;
-$support-02: $carbon--green-60 !default !global;
-$support-03: $carbon--yellow !default !global;
-$support-04: $carbon--blue-70 !default !global;
-
-$overlay-01: rgba(255, 255, 255, 5) !default !global;
-
-// Interaction tokens
-
-$focus: $carbon--blue-60 !default !global;
-
-$hover-primary: #0353E9 !default !global;
-$active-primary: $carbon--blue-80 !default !global; !default !global;
-$hover-primary-text: $carbon--blue-70 !default !global; !default !global;
-
-$hover-secondary: #6f6f6f !default !global;
-$active-secondary: $carbon--gray-60 !default !global;
-
-$hover-ui: #e5e5e5 !default !global;
-$active-ui: $carbon--gray-30 !default !global;
-$selected-ui: $carbon--gray-20 !default !global;
-$hover-row: #e5e5e5 !default !global;
-
-$hover-danger: #ba1b23 !default !global;
-$active-danger: $carbon--red-80 !default !global;
-
-$visited-link: $carbon--purple-60 !default !global;
-
-$disabled-01: $carbon--gray-10 !default !global;
-$disabled-02: $carbon--gray-30 !default !global;
-$disabled-03: $carbon--gray-50 !default !global;
+//// _theme-tokens.scss
+// White theme tokens
+$interactive-01: #0062ff !default;
+$interactive-02: #171717 !default;
+$interactive-03: #0062ff !default;
+$interactive-04: #0062ff !default;
+$ui-background: #ffffff !default;
+$ui-01: #f3f3f3 !default;
+$ui-02: #ffffff !default;
+$ui-03: #dcdcdc !default;
+$ui-04: #8c8c8c !default;
+$ui-05: #171717 !default;
+$text-01: #171717 !default;
+$text-02: #565656 !default;
+$text-03: #8c8c8c !default;
+$text-04: #ffffff !default;
+$icon-01: #171717 !default;
+$icon-02: #565656 !default;
+$icon-03: #ffffff !default;
+$link-01: #0062ff !default;
+$field-01: #f3f3f3 !default;
+$field-02: #ffffff !default;
+$inverse-01: #ffffff !default;
+$inverse-02: #3d3d3d !default;
+$support-01: #da1e28 !default;
+$support-02: #24a148 !default;
+$support-03: #fdd13a !default;
+$support-04: #054ada !default;
+$overlay-01: rgba(23, 23, 23, 0.5) !default;
+$focus: #0062ff !default;
+$hover-primary: #0353e9 !default;
+$active-primary: #0530ad !default;
+$hover-primary-text: #054ada !default;
+$hover-secondary: #4c4c4c !default;
+$active-secondary: #6f6f6f !default;
+$hover-tertiary: #0353e9 !default;
+$active-tertiary: #0530ad !default;
+$hover-ui: #e5e5e5 !default;
+$active-ui: #bebebe !default;
+$selected-ui: #dcdcdc !default;
+$hover-selected-ui: #cacaca !default;
+$hover-danger: #ba1b23 !default;
+$active-danger: #750e13 !default;
+$hover-row: #e5e5e5 !default;
+$visited-link: #8a3ffc !default;
+$disabled-01: #f3f3f3 !default;
+$disabled-02: #bebebe !default;
+$disabled-03: #8c8c8c !default;
+$highlight: #c9deff !default;
+$brand-01: #0062ff !default;
+$brand-02: #171717 !default;
+$brand-03: #0062ff !default;
+$active-01: #bebebe !default;
+$hover-field: #e5e5e5 !default;
 ```
 
 ### Spacing
@@ -224,7 +204,7 @@ $disabled-03: $carbon--gray-50 !default !global;
 Carbon has two spacing scales, one for general spacing within components and the other for layout spacing. Both are designed to complement the components and typography throughout the system. Each scale has its own [distinct purpose](/guidelines/spacing). The two scales have certain overlapping values that serve two different roles, so be mindful when choosing a spacing token.
 
 ```scss
-//// _spacing
+//// _spacing.scss
 $spacing-baseline: 1rem !default;
 
 // Spacing scale
@@ -256,297 +236,349 @@ Typography has four categories of type styles (universal, productive, editorial,
 ```scss
 // Universal
 $caption-01: (
-  font-family: font-family('sans'),
-  font-size: type-scale(1),
-  font-weight: font-weight('regular'),
-  line-height: rem(16px),
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(1),
+  font-weight: carbon--font-weight('regular'),
+  line-height: carbon--rem(16px),
   letter-spacing: 0.32px,
 ) !default;
 
 $label-01: (
-  font-family: font-family('sans'),
-  font-size: type-scale(1),
-  font-weight: font-weight('regular'),
-  line-height: rem(16px),
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(1),
+  font-weight: carbon--font-weight('regular'),
+  line-height: carbon--rem(16px),
   letter-spacing: 0.32px,
 ) !default;
 
 $helper-text-01: (
-  font-family: font-family('sans'),
-  font-size: type-scale(1),
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(1),
   font-style: italic,
-  line-height: rem(16px),
+  line-height: carbon--rem(16px),
   letter-spacing: 0.32px,
 ) !default;
 
 $body-short-01: (
-  font-family: font-family('sans'),
-  font-size: type-scale(2),
-  font-weight: font-weight('regular'),
-  line-height: rem(18px),
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(2),
+  font-weight: carbon--font-weight('regular'),
+  line-height: carbon--rem(18px),
   letter-spacing: 0.16px,
 ) !default;
 
 $body-long-01: (
-  font-family: font-family('sans'),
-  font-size: type-scale(2),
-  font-weight: font-weight('regular'),
-  line-height: rem(20px),
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(2),
+  font-weight: carbon--font-weight('regular'),
+  line-height: carbon--rem(20px),
   letter-spacing: 0.16px,
 ) !default;
 
 $body-short-02: (
-  font-family: font-family('sans'),
-  font-size: type-scale(3),
-  font-weight: font-weight('regular'),
-  line-height: rem(22px),
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(3),
+  font-weight: carbon--font-weight('regular'),
+  line-height: carbon--rem(22px),
   letter-spacing: 0,
 ) !default;
 
 $body-long-02: (
-  font-family: font-family('sans'),
-  font-size: type-scale(3),
-  font-weight: font-weight('regular'),
-  line-height: rem(24px),
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(3),
+  font-weight: carbon--font-weight('regular'),
+  line-height: carbon--rem(24px),
   letter-spacing: 0,
 ) !default;
 
 $code-01: (
-  font-family: font-family('mono'),
-  font-size: type-scale(1),
-  font-weight: font-weight('regular'),
-  line-height: rem(16px),
+  font-family: carbon--font-family('mono'),
+  font-size: carbon--type-scale(1),
+  font-weight: carbon--font-weight('regular'),
+  line-height: carbon--rem(16px),
   letter-spacing: 0.32px,
 ) !default;
 
 $code-02: (
-  font-family: font-family('mono'),
-  font-size: type-scale(2),
-  font-weight: font-weight('regular'),
-  line-height: rem(20px),
+  font-family: carbon--font-family('mono'),
+  font-size: carbon--type-scale(2),
+  font-weight: carbon--font-weight('regular'),
+  line-height: carbon--rem(20px),
   letter-spacing: 0.32px,
 ) !default;
 
 $heading-01: (
-  font-family: font-family('sans'),
-  font-size: type-scale(2),
-  font-weight: font-weight('semibold'),
-  line-height: rem(18px),
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(2),
+  font-weight: carbon--font-weight('semibold'),
+  line-height: carbon--rem(18px),
   letter-spacing: 0.16px,
 ) !default;
 
 $heading-02: (
-  font-family: font-family('sans'),
-  font-size: type-scale(3),
-  font-weight: font-weight('semibold'),
-  line-height: rem(22px),
-  letter-spacing: 0,
-) !default;
-
-$expressive-heading-03: (
-  font-family: font-family('sans'),
-  font-size: type-scale(5),
-  font-weight: font-weight('regular'),
-  line-height: rem(26px),
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(3),
+  font-weight: carbon--font-weight('semibold'),
+  line-height: carbon--rem(22px),
   letter-spacing: 0,
 ) !default;
 ```
 
 ```scss
 // Productive
+$productive-heading-03: (
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(5),
+  font-weight: carbon--font-weight('regular'),
+  line-height: carbon--rem(26px),
+  letter-spacing: 0,
+) !default;
+
 $productive-heading-04: (
-  font-family: font-family('sans'),
-  font-size: type-scale(6),
-  font-weight: font-weight('regular'),
-  line-height: rem(30px),
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(7),
+  font-weight: carbon--font-weight('regular'),
+  line-height: carbon--rem(36px),
   letter-spacing: 0,
 ) !default;
 
 $productive-heading-05: (
-  font-family: font-family('sans'),
-  font-size: type-scale(8),
-  font-weight: font-weight('regular'),
-  line-height: rem(40px),
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(8),
+  font-weight: carbon--font-weight('regular'),
+  line-height: carbon--rem(40px),
   letter-spacing: 0,
 ) !default;
 ```
 
 ```scss
 // Expressive
-$expressive-heading-04: (
-  font-family: font-family('sans'),
-  font-size: type-scale(5),
-  font-weight: font-weight('regular'),
+$expressive-heading-03: (
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(5),
+  font-weight: carbon--font-weight('regular'),
   line-height: 130%,
   letter-spacing: 0,
   breakpoints: (
-    md: (
-      font-size: type-scale(5),
-    ),
-    lg: (
-      font-size: type-scale(6),
-      line-height: 125%,
-    ),
     xlg: (
-      font-size: type-scale(7),
-      line-height: 129%,
+      font-size: carbon--type-scale(5),
+      line-height: 125%,
     ),
     max: (
-      font-size: type-scale(8),
+      font-size: carbon--type-scale(6),
+    ),
+  ),
+) !default;
+
+$expressive-heading-04: (
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(7),
+  font-weight: carbon--font-weight('regular'),
+  line-height: 129%,
+  letter-spacing: 0,
+  breakpoints: (
+    xlg: (
+      font-size: carbon--type-scale(7),
       line-height: 125%,
+    ),
+    max: (
+      font-size: carbon--type-scale(8),
     ),
   ),
 ) !default;
 
 $expressive-heading-05: (
-  font-family: font-family('sans'),
-  font-size: type-scale(7),
-  font-weight: font-weight('light'),
-  line-height: 129%,
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(8),
+  font-weight: carbon--font-weight('regular'),
+  line-height: 125%,
   letter-spacing: 0,
   breakpoints: (
     md: (
-      font-size: type-scale(9),
+      font-size: carbon--type-scale(9),
       line-height: 122%,
     ),
     lg: (
-      font-size: type-scale(10),
+      font-size: carbon--type-scale(10),
       line-height: 119%,
     ),
     xlg: (
-      font-size: type-scale(11),
+      font-size: carbon--type-scale(11),
       line-height: 117%,
     ),
     max: (
-      font-size: type-scale(13),
+      font-size: carbon--type-scale(13),
     ),
   ),
 ) !default;
+
+$expressive-heading-06: (
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(8),
+  font-weight: carbon--font-weight('semibold'),
+  line-height: 125%,
+  letter-spacing: 0,
+  breakpoints: (
+    md: (
+      font-size: carbon--type-scale(9),
+      line-height: 122%,
+    ),
+    lg: (
+      font-size: carbon--type-scale(10),
+      line-height: 119%,
+    ),
+    xlg: (
+      font-size: carbon--type-scale(11),
+      line-height: 117%,
+    ),
+    max: (
+      font-size: carbon--type-scale(13),
+    ),
+  ),
+) !default;
+
+$expressive-paragraph-01: (
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(6),
+  font-weight: carbon--font-weight('light'),
+  line-height: 125%,
+  letter-spacing: 0,
+  breakpoints: (
+    lg: (
+      font-size: carbon--type-scale(7),
+      line-height: 129%,
+    ),
+    max: (
+      font-size: carbon--type-scale(8),
+      line-height: 125%,
+    ),
+  ),
+);
 ```
 
 ```scss
 // Additional styles
 $quotation-01: (
-  font-family: font-family('serif'),
-  font-size: type-scale(5),
-  font-weight: font-weight('regular'),
+  font-family: carbon--font-family('serif'),
+  font-size: carbon--type-scale(5),
+  font-weight: carbon--font-weight('regular'),
   line-height: 130%,
   letter-spacing: 0,
   breakpoints: (
     md: (
-      font-size: type-scale(5),
+      font-size: carbon--type-scale(5),
     ),
     lg: (
-      font-size: type-scale(6),
+      font-size: carbon--type-scale(6),
       line-height: 125%,
     ),
     xlg: (
-      font-size: type-scale(7),
+      font-size: carbon--type-scale(7),
       line-height: 129%,
     ),
     max: (
-      font-size: type-scale(8),
+      font-size: carbon--type-scale(8),
       line-height: 125%,
     ),
   ),
 ) !default;
 
 $quotation-02: (
-  font-family: font-family('serif'),
-  font-size: type-scale(7),
-  font-weight: font-weight('light'),
-  line-height: 129%,
-  letter-spacing: 0rem,
+  font-family: carbon--font-family('serif'),
+  font-size: carbon--type-scale(8),
+  font-weight: carbon--font-weight('light'),
+  line-height: 125%,
+  letter-spacing: 0,
   breakpoints: (
     md: (
-      font-size: type-scale(9),
+      font-size: carbon--type-scale(9),
       line-height: 122%,
     ),
     lg: (
-      font-size: type-scale(10),
+      font-size: carbon--type-scale(10),
       line-height: 119%,
     ),
     xlg: (
-      font-size: type-scale(11),
+      font-size: carbon--type-scale(11),
       line-height: 117%,
     ),
     max: (
-      font-size: type-scale(13),
+      font-size: carbon--type-scale(13),
     ),
   ),
 ) !default;
 
 $display-01: (
-  font-family: font-family('sans'),
-  font-size: type-scale(10),
-  font-weight: font-weight('light'),
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(10),
+  font-weight: carbon--font-weight('light'),
   line-height: 119%,
   letter-spacing: 0,
   breakpoints: (
     md: (
-      font-size: type-scale(10),
+      font-size: carbon--type-scale(10),
     ),
     lg: (
-      font-size: type-scale(12),
+      font-size: carbon--type-scale(12),
     ),
     xlg: (
-      font-size: type-scale(13),
+      font-size: carbon--type-scale(13),
       line-height: 117%,
     ),
     max: (
-      font-size: type-scale(15),
+      font-size: carbon--type-scale(15),
       line-height: 113%,
     ),
   ),
 ) !default;
 
 $display-02: (
-  font-family: font-family('sans'),
-  font-size: type-scale(10),
-  font-weight: font-weight('semibold'),
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(10),
+  font-weight: carbon--font-weight('semibold'),
   line-height: 119%,
   letter-spacing: 0,
   breakpoints: (
     md: (
-      font-size: type-scale(10),
+      font-size: carbon--type-scale(10),
     ),
     lg: (
-      font-size: type-scale(12),
+      font-size: carbon--type-scale(12),
     ),
     xlg: (
-      font-size: type-scale(13),
+      font-size: carbon--type-scale(13),
       line-height: 116%,
     ),
     max: (
-      font-size: type-scale(15),
+      font-size: carbon--type-scale(15),
       line-height: 113%,
     ),
   ),
 ) !default;
 
 $display-03: (
-  font-family: font-family('sans'),
-  font-size: type-scale(10),
-  font-weight: font-weight('light'),
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(10),
+  font-weight: carbon--font-weight('light'),
   line-height: 119%,
   letter-spacing: 0,
   breakpoints: (
     md: (
-      font-size: type-scale(14),
+      font-size: carbon--type-scale(14),
       line-height: 115%,
     ),
     lg: (
-      font-size: type-scale(17),
+      font-size: carbon--type-scale(17),
       line-height: 111%,
       letter-spacing: -0.64px,
     ),
     xlg: (
-      font-size: type-scale(20),
+      font-size: carbon--type-scale(20),
       line-height: 107%,
       letter-spacing: -0.64px,
     ),
     max: (
-      font-size: type-scale(23),
+      font-size: carbon--type-scale(23),
       line-height: 105%,
       letter-spacing: -0.96px,
     ),
@@ -554,28 +586,28 @@ $display-03: (
 ) !default;
 
 $display-04: (
-  font-family: font-family('sans'),
-  font-size: type-scale(10),
-  font-weight: font-weight('semibold'),
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(10),
+  font-weight: carbon--font-weight('semibold'),
   line-height: 119%,
   letter-spacing: 0,
   breakpoints: (
     md: (
-      font-size: type-scale(14),
+      font-size: carbon--type-scale(14),
       line-height: 115%,
     ),
     lg: (
-      font-size: type-scale(17),
+      font-size: carbon--type-scale(17),
       line-height: 111%,
       letter-spacing: -0.64px,
     ),
     xlg: (
-      font-size: type-scale(20),
+      font-size: carbon--type-scale(20),
       line-height: 107%,
       letter-spacing: -0.64px,
     ),
     max: (
-      font-size: type-scale(23),
+      font-size: carbon--type-scale(23),
       line-height: 105%,
       letter-spacing: -0.96px,
     ),
@@ -591,36 +623,36 @@ The other categories are global and component-specific variables. These control 
 // Global
 $input-border: 1px solid transparent !default !global;
 $input-label-weight: 400 !default !global;
-$disabled: $carbon--gray-30 !default !global;
-$disabled-background-color: $carbon--gray-10 !default !global;
-$focus: $carbon--blue-60 !default !global;
+$disabled: $disabled-02 !default !global;
+$disabled-background-color: $disabled-01 !default !global;
+$focus: $ibm-color__blue-60 !default !global;
 
 // Link
-$link-visited: $carbon--purple-60 !default !global;
+$link-visited: $ibm-color__purple-60 !default !global;
 $link-inverse-color: #6ea6ff !default !global;
 
 // Tooltip
-$tooltip-background-color: #3d3d3d !default !global;
+$tooltip-background-color: $inverse-02 !default !global;
 
 // Button Theme Variables
 $button-font-weight: 400 !default !global;
 $button-font-size: 0.875rem !default !global;
 $button-border-radius: 0 !default !global;
 $button-height: 48px !default !global;
-$button-padding: 0.875rem 4rem 0.875rem 1rem !default !global;
-$button-padding-sm: 0.375rem 4rem 0.375rem 1rem !default !global;
-$button-padding-lg: $spacing-sm !default !global;
+$button-padding: 0.875rem 15px !default !global;
+$button-padding-sm: 0.375rem 15px !default !global;
+$button-padding-lg: $carbon--spacing-04 !default !global;
 $button-border-width: 1px !default !global;
 $button-outline-width: 3px !default !global;
 $button-outline-offset: -5px !default !global;
-$button-outline: 1px solid $carbon--white-0 !default !global;
+$button-outline: 1px solid $ibm-color__white-0 !default !global;
 
 // Accordion (Reverse)
 $accordion-flex-direction: row-reverse !default !global;
 $accordion-justify-content: flex-start !default !global;
-$accordion-arrow-margin: 0 $spacing-md 0 0 !default !global;
-$accordion-title-margin: 0 0 0 $spacing-md !default !global;
-$accordion-content-padding: 0 0 0 $spacing-md !default !global;
+$accordion-arrow-margin: 0 $carbon--spacing-05 0 0 !default !global;
+$accordion-title-margin: 0 0 0 $carbon--spacing-05 !default !global;
+$accordion-content-padding: 0 0 0 $carbon--spacing-05 !default !global;
 
 // Card
 $card-text-align: center !default !global;
@@ -630,31 +662,33 @@ $card-flex-align: center !default !global;
 $checkbox-border-width: 2px !default !global;
 
 // Code Snippet
-$snippet-background-color: $ui-01 !default !global; // TODO: Define for experimental
-$snippet-border-color: $ui-03 !default !global; // TODO: Define for experimental
+$snippet-background-color: $ui-01 !default !global;
+$snippet-border-color: $ui-03 !default !global;
 
 // Content Switcher
 $content-switcher-border-radius: 0px !default !global;
 $content-switcher-option-border: 1px solid $brand-01 !default !global;
-$content-switcher-divider: $carbon--gray-30 !default !global;
+$content-switcher-divider: $ui-03 !default !global;
 
 // Data Table
 $data-table-heading-transform: uppercase !default !global;
 $data-table-heading-border-bottom: 1px solid $brand-01 !default !global;
 $data-table-row-height: 2rem !default !global;
+$data-table-zebra-color: #fcfcfc !default !global;
+$data-table-column-hover: $hover-selected-ui !default !global;
 
 // Date Picker
-$date-picker-in-range-background-color: $carbon--blue-20 !default !global;
+$date-picker-in-range-background-color: $ibm-color__blue-20 !default !global;
 
 // Modal
 $modal-border-top: $brand-01 4px solid !default !global;
 $modal-footer-background-color: $ui-03 !default !global;
 
 // Notification
-$notification-info-background-color: $carbon--blue-10 !default !global;
-$notification-error-background-color: $carbon--red-10 !default !global;
+$notification-info-background-color: $ibm-color__blue-10 !default !global;
+$notification-error-background-color: $ibm-color__red-10 !default !global;
 $notification-warning-background-color: rgba(#fdd13a, 0.15) !default !global;
-$notification-success-background-color: $carbon--green-10 !default !global;
+$notification-success-background-color: $ibm-color__green-10 !default !global;
 
 // Progress Indicator
 $progress-indicator-bar-width: 1px inset transparent !default !global;
@@ -662,8 +696,8 @@ $progress-indicator-stroke-width: 5 !default !global;
 $progress-indicator-line-offset: 0.625rem !default !global;
 
 //Code Snippet
-$copy-active: $carbon--gray-30 !default !global;
-$copy-btn-feedback: $carbon--gray-80 !default !global;
+$copy-active: $active-ui !default !global;
+$copy-btn-feedback: $ibm-color__gray-80 !default !global;
 
 // Radio Button
 $radio-border-width: 1px !default !global;
@@ -674,20 +708,14 @@ $structured-list-text-transform: none !default !global;
 
 // Slider
 
-//Tab
-$tab-underline-color: 2px solid $carbon--gray-30 !default !global;
-$tab-underline-color-hover: 2px solid $carbon--gray-60 !default !global;
-$tab-text-disabled: $carbon--gray-30 !default !global;
-$tab-underline-disabled: 2px solid $carbon--gray-10 !default !global;
-
-// Toggle
-$toggle-background-color: $carbon--green-50 !default !global;
+// Tab
+$tab-underline-color: 3px solid $ibm-color__gray-30 !default !global;
+$tab-underline-color-hover: 3px solid $ibm-color__gray-60 !default !global;
+$tab-text-disabled: $ibm-color__gray-30 !default !global;
+$tab-underline-disabled: 3px solid $ibm-color__gray-10 !default !global;
 
 // Skeleton Loading
-$skeleton: rgba(
-  $color__blue-51,
-  0.1
-) !default !global; //old $field-01 TODO: Define for experimental
+$skeleton: rgba($color__blue-51, 0.1) !default !global;
 ```
 
 ## Theming applied

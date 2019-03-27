@@ -43,14 +43,13 @@ body {
 //---------------------------------------
 .page-content {
   padding-top: rem(80px);
-  padding-bottom: rem(104px);
+  padding-bottom: rem(136px);
 
   // All paragraphs on Markdown pages
   // And divs when markdown doesn't wrap text in paragraphs (when you have to use html for links to open in a new window)
   p {
     @include carbon--type-style('body-long-02');
     padding: 0 0 $spacing-lg;
-
 
     &:empty {
       padding: 0;
