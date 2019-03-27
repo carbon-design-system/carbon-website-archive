@@ -95,4 +95,5 @@
 p.image-component__caption {
   @include carbon--type-style('body-short-01');
   padding-top: rem(8px);
+  margin-bottom: 1.5rem;
 }
