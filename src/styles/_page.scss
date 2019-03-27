@@ -45,7 +45,7 @@ body {
 .component-docs p {
   @include carbon--type-style('body-long-02');
   padding: 0 0 $spacing-lg;
-  
+
   &:empty {
     padding: 0;
     margin: 0;
@@ -122,6 +122,10 @@ em {
   }
 
   img + img {
+    margin-bottom: 0;
+  }
+
+  .bx--image-component > img {
     margin-bottom: 0;
   }
 }
