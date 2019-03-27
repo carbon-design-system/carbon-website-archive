@@ -12,7 +12,7 @@ jobs:
       - run:
           name: Confirm project can build
           command: |
-            yarn build:external && yarn storybook:build
+            yarn build:external
       - deploy:
           name: deploy next to IBM Cloud
           command: |

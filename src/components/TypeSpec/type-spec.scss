@@ -10,7 +10,7 @@
 }
 
 .type-spec__example > div {
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     padding-right: 25%;
   }
 }

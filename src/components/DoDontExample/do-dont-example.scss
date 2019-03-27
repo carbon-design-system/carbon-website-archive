@@ -2,7 +2,7 @@
 .do-dont-group {
   margin-bottom: rem(24px);
 
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     display: flex;
   }
 }
@@ -11,20 +11,20 @@
 .example {
   margin-bottom: rem(24px);
 
-  @include breakpoint('sm') {
+  @include carbon--breakpoint('sm') {
     width: 100%;
   }
 
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     width: calc(50% - 16px);
   }
 
   &:first-child {
-    @include breakpoint('sm') {
+    @include carbon--breakpoint('sm') {
       margin-right: 0;
     }
 
-    @include breakpoint('md') {
+    @include carbon--breakpoint('md') {
       margin-right: rem(32px);
     }
   }
@@ -129,7 +129,7 @@ p.example__title {
     padding: 0 25% 0 0;
   }
 
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     padding: 0 25% 0 0;
   }
 }
@@ -146,7 +146,7 @@ p.example__description {
   width: 100%;
 }
 .example.example--full-width:first-child {
-  @include breakpoint('sm') {
+  @include carbon--breakpoint('sm') {
     margin-right: 0;
   }
 }
@@ -160,25 +160,25 @@ p.example__description {
 .ibm--col-lg-12 > .example--full-width .example__caption {
   width: 100%;
 
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     width: 75%;
   }
 
-  @include breakpoint('xlg') {
+ @include carbon--breakpoint('xlg')  {
     width: 50%;
   }
 }
 
 .example--full-width .example__caption {
-  @include breakpoint('sm') {
+  @include carbon--breakpoint('sm') {
     width: 100%;
   }
 
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     width: 75%;
   }
 
-  // @include breakpoint('xlg') {
+  //@include carbon--breakpoint('xlg')  {
   //   width: 70%;
   // }
 }
