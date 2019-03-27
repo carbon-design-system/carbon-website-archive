@@ -11,7 +11,7 @@
 }
 
 .#{$prefix}--image-component.zoom > img {
-    @include breakpoint('md') {
+    @include carbon--breakpoint('md') {
         box-sizing: border-box;
         padding-top: 1rem;
         width: calc(100% - 2rem);
@@ -64,7 +64,7 @@
 }
 .#{$prefix}--image-component-wrapper-zoom {
     padding: 0rem;
-    @include breakpoint('md') {
+    @include carbon--breakpoint('md') {
         // padding: 1rem;
         box-sizing: border-box;
         // width: calc(100% - 2rem);
@@ -82,7 +82,7 @@
     svg {
       fill: $carbon--gray-80;
     }
-    @include breakpoint('md') {
+    @include carbon--breakpoint('md') {
       display:flex;
     }
 }
@@ -136,11 +136,11 @@
         position: relative !important;
 
         @include breakpoint('1056px') {
-        width: 900px !important;
+            width: 900px !important;
         }
 
         @include breakpoint('1230px') {
-        width: 1120px !important;
+            width: 1120px !important;
         }
     }
 }
