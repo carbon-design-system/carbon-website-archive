@@ -13,7 +13,7 @@
   max-width: 550px;
   margin-top: 2rem;
 
-  @include carbon--breakpoint('md') {
+  @include breakpoint('md') {
     margin-top: 4rem;
   }
 
@@ -61,7 +61,7 @@
       animation-direction: reverse;
     }
 
-    @include carbon--breakpoint('md') {
+    @include breakpoint('md') {
       margin: 0 1.5rem 0 1rem;
 
       &:first-child,

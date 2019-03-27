@@ -4,7 +4,7 @@
   line-height: 1.25;
   width: calc(100%);
 
-  @include carbon--breakpoint('md') {
+  @include breakpoint('md') {
     min-width: calc(67.3%);
   }
 
@@ -38,11 +38,11 @@
           font-weight: font-weight('semibold');
         }
 
-        @include carbon--breakpoint('lg') {
+        @include breakpoint('lg') {
           min-width: rem(100px);
         }
 
-       @include carbon--breakpoint('xlg')  {
+        @include breakpoint('xlg') {
           min-width: rem(150px);
         }
       }
@@ -51,11 +51,11 @@
 }
 
 .component-docs p {
-  @include carbon--breakpoint('md') {
+  @include breakpoint('md') {
     max-width: 75%;
   }
 
-  @include carbon--breakpoint('lg') {
+  @include breakpoint('lg') {
     max-width: 55%;
   }
 }
@@ -65,11 +65,11 @@
   margin-left: -1rem;
   margin-top: rem(16px);
 
-  @include carbon--breakpoint('md') {
+  @include breakpoint('md') {
     max-width: 75%;
   }
 
-  @include carbon--breakpoint('lg') {
+  @include breakpoint('lg') {
     max-width: 50%;
   }
 }

@@ -179,7 +179,7 @@ export class p extends React.Component {
     return (
       <div className="ibm--row">
         <div className="ibm--col-lg-7 ibm--col-md-6 ibm--offset-lg-4">
-          <p className="page-p">{this.props.children}</p>
+          <p>{this.props.children}</p>
         </div>
       </div>
     );
