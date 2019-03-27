@@ -1,4 +1,3 @@
-
 //---------------------------------------
 // Button
 //---------------------------------------
@@ -43,10 +42,20 @@
   margin-bottom: 2rem;
 }
 
-
 //---------------------------------------
 // Tabs
 //---------------------------------------
 
-
 // TODO
+
+//---------------------------------------
+// UI Shell
+//---------------------------------------
+.component-example__live--ui-shell {
+  position: relative;
+}
+
+.component-example__live--ui-shell .bx--header,
+.component-example__live--ui-shell .bx--side-nav {
+  position: absolute;
+}
