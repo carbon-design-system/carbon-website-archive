@@ -4,6 +4,8 @@ import { graphql } from 'gatsby';
 import MDXRenderer from 'gatsby-mdx/mdx-renderer';
 
 import Layout from '../components/Layouts';
+import EditLink from '../components/EditLink';
+
 import { FourOhFour, WebsiteBackToTopBtn } from '@carbon/addons-website';
 
 // Components
@@ -66,6 +68,7 @@ export default ({ data }) => {
         </PageHeader>
         <main className="page-content ibm--grid" id="maincontent">
           <MDXRenderer>{post.code.body}</MDXRenderer>
+          <EditLink slug={slug} />
         </main>
         <NextPrevious
           slug={slug}
