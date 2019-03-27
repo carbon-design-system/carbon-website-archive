@@ -1,5 +1,11 @@
 // Needs dark theme colors
 .bx--header {
+  .bx--header__action--search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .bx--search {
     width: rem(448px);
   }
@@ -13,21 +19,27 @@
   .bx--search-clear {
     width: rem(20px);
     height: rem(20px);
-    fill: $ibm-colors__gray-10;
+    fill: $carbon--gray-10;
   }
 
   .bx--search-close {
     width: rem(48px);
     height: rem(48px);
+
+    &:hover {
+      background: $hover-secondary;
+      border: 2px solid $carbon--white-0;
+      border-left: 0;
+    }
   }
 
   .bx--search--dark .bx--search-input {
-    background-color: $ibm-colors__gray-80;
-    color: $ibm-colors__gray-10;
-    margin-top: -.5rem;
+    background-color: $carbon--gray-80;
+    color: $carbon--gray-10;
+    margin-top: -0.5rem;
 
     &:focus {
-      outline: 2px solid $ibm-colors__white;
+      outline: 2px solid $carbon--white-0;
       outline-offset: -2px;
     }
   }
@@ -47,7 +59,7 @@
     background-color: $inverse-01;
     border-radius: 0;
     box-shadow: 0 2px 6px rgba($overlay-01, 0.2);
-    margin-top: $spacing-md;
+    margin-top: $spacing-xs;
   }
 
   /* Menu Top Arrow & Vertical Dividers */
@@ -126,7 +138,7 @@
     .ds-suggestion.ds-cursor
     .algolia-docsearch-suggestion:not(.suggestion-layout-simple)
     .algolia-docsearch-suggestion--content:active {
-    background: $ibm-colors__gray-30;
+    background: $carbon--gray-30;
   }
 
   .algolia-autocomplete
@@ -164,7 +176,7 @@
   .algolia-autocomplete
     .algolia-docsearch-suggestion--text
     .algolia-docsearch-suggestion--highlight {
-    box-shadow: inset 0 -2px 0 0 $ibm-colors__blue-60;
+    box-shadow: inset 0 -2px 0 0 $carbon--blue-60;
   }
 
   .algolia-autocomplete .algolia-docsearch-suggestion--wrapper {
@@ -194,7 +206,7 @@
 @media all and (max-width: 725px) {
   .bx--header {
     .bx--search,
-    .bx--header__action--searc {
+    .bx--header__action--search {
       display: none;
     }
   }

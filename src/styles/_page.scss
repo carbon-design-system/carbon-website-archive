@@ -25,7 +25,7 @@ body {
 // Header styles
 //---------------------------------------
 .bx--header__menu-trigger {
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     display: none;
   }
 }
@@ -41,22 +41,27 @@ body {
 //---------------------------------------
 // Page styles
 //---------------------------------------
+.page-p,
+.component-docs p {
+  @include carbon--type-style('body-long-02');
+  padding: 0 0 $spacing-lg;
+
+  &:empty {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+em {
+  font-style: italic;
+}
+
 .page-content {
   padding-top: rem(80px);
-  padding-bottom: rem(104px);
+  padding-bottom: rem(136px);
 
   // All paragraphs on Markdown pages
   // And divs when markdown doesn't wrap text in paragraphs (when you have to use html for links to open in a new window)
-  p {
-    //max-width: 38rem;
-    line-height: 1.5;
-    padding: 0 0 $spacing-lg;
-
-    &:empty {
-      padding: 0;
-      margin: 0;
-    }
-  }
 
   > div > div:first-child p {
     padding-bottom: 0;
@@ -87,7 +92,7 @@ body {
     padding: rem(1px) $spacing-xs;
     background: transparent;
     border-radius: 4px;
-    background-color: $ibm-colors__gray-20;
+    background-color: $carbon--gray-20;
   }
 
   td > code {
@@ -119,6 +124,10 @@ body {
   img + img {
     margin-bottom: 0;
   }
+
+  .bx--image-component > img {
+    margin-bottom: 0;
+  }
 }
 
 .bx--platform-header {
@@ -132,7 +141,7 @@ body {
   overflow: hidden;
   padding-bottom: 56.543%;
 
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
     padding-bottom: 43% !important;
   }
@@ -147,7 +156,7 @@ body {
 }
 .website-tabs .gatsby-resp-iframe-wrapper,
 .example .gatsby-resp-iframe-wrapper {
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     margin-left: 0;
     padding-bottom: 56.543% !important;
   }
@@ -164,7 +173,7 @@ body {
   margin-left: 0 !important;
   margin-bottom: rem(24px);
 
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
     max-width: calc(75% - 0.5rem);
   }
@@ -175,7 +184,7 @@ body {
 .page-content > div > img[src*='gif'] {
   background: $ui-02;
 
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
     max-width: calc(75% - 0.5rem);
   }
@@ -227,7 +236,7 @@ img[src*='gif'] {
   margin-left: 0.875rem;
   fill: $inverse-01;
 
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     margin: 0 1rem;
   }
 }
@@ -255,6 +264,7 @@ img[src*='gif'] {
 .website-alert__text {
   @include carbon--type-style('body-short-01');
   color: $inverse-01;
+  padding: 0;
 }
 
 .website-alert__text span {
@@ -267,7 +277,7 @@ img[src*='gif'] {
   &:nth-of-type(3) {
     display: none;
 
-    @include breakpoint('md') {
+    @include carbon--breakpoint('md') {
       display: inline;
     }
   }
