@@ -7,7 +7,7 @@
   padding: 0 .5rem;
   margin-top: 0;
 
-  @include carbon--breakpoint('md') {
+  @include breakpoint('md') {
     padding: 0;
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -50,7 +50,7 @@
   top: 0;
   width: 100vw;
 
-  @include carbon--breakpoint('md') {
+  @include breakpoint('md') {
     margin-left: 0;
     width: 100%;
   }
@@ -94,7 +94,7 @@
   display: grid;
   grid-template-columns: auto 1fr auto;
 
-  @include carbon--breakpoint('md') {
+  @include breakpoint('md') {
     border-top: none;
     border-left: 1px solid $carbon--gray-20;
   }
@@ -158,7 +158,7 @@
   position: relative;
   margin-top: 1rem;
 
-  @include carbon--breakpoint('md') {
+  @include breakpoint('md') {
     margin-top: 0;
   }
 }
