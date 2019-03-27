@@ -339,7 +339,8 @@ module.exports = {
       Next: {
         desc:
           'Advances the user to the next step in a sequence of steps, such as in a wizard.',
-        subtext: 'See [Back](#Back), [Finish](#finish), and the [Next action](/patterns/common-actions#next).',
+        subtext:
+          'See [Back](#Back), [Finish](#finish), and the [Next action](/patterns/common-actions#next).',
       },
     },
     Idioms: {
@@ -414,7 +415,8 @@ module.exports = {
       Refresh: {
         desc:
           'Reloads the view of an object when the displayed view has become unsynchronized with the source.',
-        subtext: 'Likely used only as a tooltip on an icon button. See the [Refresh action](/patterns/common-actions#refresh).',
+        subtext:
+          'Likely used only as a tooltip on an icon button. See the [Refresh action](/patterns/common-actions#refresh).',
       },
       Reject: {
         desc:

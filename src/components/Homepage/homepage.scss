@@ -27,7 +27,7 @@
   position: relative;
 
   // Match max height at lg breakpoint
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     padding: 0;
     height: 560px;
   }
@@ -48,7 +48,7 @@
   margin-bottom: 0;
   z-index: 3;
 
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     display: block;
   }
 }

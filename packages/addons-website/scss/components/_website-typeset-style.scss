@@ -7,7 +7,7 @@
   padding: 0 .5rem;
   margin-top: 0;
 
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     padding: 0;
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -25,15 +25,15 @@
   z-index: 4;
 
   &:hover {
-    background-color: $ibm-colors__gray-20;
+    background-color: $carbon--gray-20;
   }
 
   &.selected {
-    background-color: $ibm-colors__gray-100;
-    color: $ibm-colors__gray-10;
+    background-color: $carbon--gray-100;
+    color: $carbon--gray-10;
 
     &:hover {
-      background-color: $ibm-colors__gray-100;
+      background-color: $carbon--gray-100;
     }
   }
 
@@ -50,7 +50,7 @@
   top: 0;
   width: 100vw;
 
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     margin-left: 0;
     width: 100%;
   }
@@ -58,8 +58,8 @@
 
 .#{$prefix}--typeset-style-controls-sticky {
   align-items: center;
-  background-color: $ibm-colors__white-0;
-  border-bottom: 1px solid $ibm-colors__gray-20;
+  background-color: $carbon--white-0;
+  border-bottom: 1px solid $carbon--gray-20;
   width: auto;
   z-index: 2;
   box-sizing: content-box;
@@ -88,15 +88,15 @@
 .#{$prefix}--typeset-style-screen-controls {
   align-items: center;
   height: 3rem;
-  border-top: 1px solid $ibm-colors__gray-20;
+  border-top: 1px solid $carbon--gray-20;
   padding-left: 1rem;
   padding-right: 1rem;
   display: grid;
   grid-template-columns: auto 1fr auto;
 
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     border-top: none;
-    border-left: 1px solid $ibm-colors__gray-20;
+    border-left: 1px solid $carbon--gray-20;
   }
 }
 
@@ -121,9 +121,9 @@
 }
 
 .#{$prefix}--typeset-style-toggle-button {
-  background-color: $ibm-colors__white-0;
-  box-shadow: inset 0 -1px 0 0 $ibm-colors__gray-20;
-  color: $ibm-colors__gray-100;
+  background-color: $carbon--white-0;
+  box-shadow: inset 0 -1px 0 0 $carbon--gray-20;
+  color: $carbon--gray-100;
   border: none;
   cursor: pointer;
   margin: 0;
@@ -136,16 +136,16 @@
   }
 
   &.checked {
-    background-color: $ibm-colors__gray-100;
-    color: $ibm-colors__white-0;
+    background-color: $carbon--gray-100;
+    color: $carbon--white-0;
 
     &:hover {
-      background-color: $ibm-colors__gray-100;
+      background-color: $carbon--gray-100;
     }
   }
 
   &:hover {
-    background-color: $ibm-colors__gray-20;
+    background-color: $carbon--gray-20;
   }
 }
 
@@ -158,7 +158,7 @@
   position: relative;
   margin-top: 1rem;
 
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     margin-top: 0;
   }
 }
@@ -169,14 +169,14 @@
 
 .#{$prefix}--typeset-style-title-shiv {
   padding-top: 1rem;
-  background-color: $ibm-colors__gray-10;
+  background-color: $carbon--gray-10;
 }
 
 .#{$prefix}--typeset-style-group-title-container {
-  background-color: $ibm-colors__white-0;
+  background-color: $carbon--white-0;
   height: 3rem;
   padding: 1rem;
-  border-bottom: 1px solid $ibm-colors__gray-20;
+  border-bottom: 1px solid $carbon--gray-20;
   display: flex;
   flex-direction: row;
   align-content: center;
