@@ -17,7 +17,7 @@
         float: right;
       }
     }
-    
+
     @include carbon--breakpoint('md') {
       width: calc(50% - 1px);
       margin-right: 1px;
