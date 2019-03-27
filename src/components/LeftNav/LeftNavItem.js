@@ -8,7 +8,8 @@ import {
   SideNavMenu,
   SideNavMenuItem,
 } from 'carbon-components-react/lib/components/UIShell';
-import { Awake16 } from '@carbon/icons-react';
+//import { Awake16 } from '@carbon/icons-react';
+import { Awake16 } from '@carbon/icons-react/es/awake/16';
 
 export default class LeftNavItem extends React.Component {
   static propTypes = {

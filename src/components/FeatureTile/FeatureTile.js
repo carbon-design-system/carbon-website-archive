@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import classnames from 'classnames';
-import { ArrowRight24 } from '@carbon/icons-react';
+//import { ArrowRight24 } from '@carbon/icons-react';
+import { ArrowRight24 } from '@carbon/icons-react/es/ ArrowRight/24';
 
 export default class FeatureTile extends React.Component {
   static propTypes = {

@@ -11,7 +11,8 @@ import InlineLoadingDemoButton from '../../content/components/inline-loading/inl
 import on from 'carbon-components/es/globals/js/misc/on';
 import settings from 'carbon-components/es/globals/js/settings';
 import { RadioButtonGroup, RadioButton } from 'carbon-components-react';
-import { Launch16 } from '@carbon/icons-react';
+//import { Launch16 } from '@carbon/icons-react';
+import { Launch16 } from '@carbon/icons-react/es/launch/16';
 
 /**
  * The CSS property names of the arrow keyed by the floating menu direction.

@@ -5,7 +5,9 @@ import { settings } from 'carbon-components';
 import { breakpoints } from '@carbon/layout/es';
 const { prefix } = settings;
 
-import { ArrowRight20 } from '@carbon/icons-react/es';
+//import { ArrowRight20 } from '@carbon/icons-react/es';
+import { ArrowRight20 } from '@carbon/icons-react/es/arrowright/20';
+
 import VideoInternal from '@carbon/addons-website/src/components/VideoInternal/';
 
 class HomepageVideo extends Component {
