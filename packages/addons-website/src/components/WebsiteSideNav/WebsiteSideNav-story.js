@@ -86,7 +86,7 @@ storiesOf('Website side nav', module)
             <SideNavLink
               icon={<Launch16 />}
               href="javascript:void(0)"
-              to="/resources#github"
+              to="/resources/#github-repos"
               className="bx--side-nav--website-link">
               External Link
             </SideNavLink>
