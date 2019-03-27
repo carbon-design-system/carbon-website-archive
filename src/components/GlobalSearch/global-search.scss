@@ -1,5 +1,11 @@
 // Needs dark theme colors
 .bx--header {
+  .bx--header__action--search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .bx--search {
     width: rem(448px);
   }
@@ -19,6 +25,12 @@
   .bx--search-close {
     width: rem(48px);
     height: rem(48px);
+
+    &:hover {
+      background: $hover-secondary;
+      border: 2px solid $carbon--white-0;
+      border-left: 0;
+    }
   }
 
   .bx--search--dark .bx--search-input {
@@ -47,7 +59,7 @@
     background-color: $inverse-01;
     border-radius: 0;
     box-shadow: 0 2px 6px rgba($overlay-01, 0.2);
-    margin-top: $spacing-md;
+    margin-top: $spacing-xs;
   }
 
   /* Menu Top Arrow & Vertical Dividers */
@@ -194,7 +206,7 @@
 @media all and (max-width: 725px) {
   .bx--header {
     .bx--search,
-    .bx--header__action--searc {
+    .bx--header__action--search {
       display: none;
     }
   }
