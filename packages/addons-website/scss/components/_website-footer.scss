@@ -25,7 +25,7 @@
   position: relative;
 
   &:after {
-    @include breakpoint('sm') {
+    @include carbon--breakpoint('sm') {
       content: '';
       background: $carbon--gray-80;
       width: calc(100% - 2rem);
@@ -35,7 +35,7 @@
       bottom: 0;
     }
 
-    @include breakpoint('md') {
+    @include carbon--breakpoint('md') {
       display: none;
     }
   }
@@ -44,11 +44,11 @@
 .#{$prefix}--website-footer__nav li {
   display: block;
 
-  @include breakpoint('sm') {
+  @include carbon--breakpoint('sm') {
     margin: 0 0 $spacing-xs 0;
   }
 
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     margin: 0;
   }
 }

@@ -10,7 +10,7 @@
 // Flex
 //----------------------------
 .container .flex-wrap {
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     display: flex;
     flex-wrap: wrap;
   }
@@ -255,7 +255,7 @@
     margin-bottom: 0;
     margin-top: rem(48px);
 
-    @include breakpoint('md') {
+    @include carbon--breakpoint('md') {
       margin-bottom: 2.25rem;
       margin-top: rem(72px);
     }
@@ -303,7 +303,7 @@
 }
 
 .anchor-links:not(.anchor-links--small) .page-ul {
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     margin-top: rem(8px);
     margin-bottom: rem(34px);
   }
@@ -314,7 +314,7 @@
 }
 
 .anchor-links--column .page-ul {
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     column-count: 2;
   }
 }
