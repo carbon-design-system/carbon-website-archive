@@ -8,10 +8,12 @@ export default class EditLink extends React.Component {
     const href = `${repositoryUrl}tree/master/src/content${slug}.${fileType}`;
 
     return (
-      <div className="ibm--row edit-link">
-        <a className="ibm--offset-lg-4 ibm--col-lg-7" href={href}>
-          Edit this page on github.
-        </a>
+      <div className="ibm--row edit-link-container">
+        <div className="ibm--offset-lg-4 ibm--col">
+          <a className="edit-link" href={href}>
+            Edit this page on GitHub
+          </a>
+        </div>
       </div>
     );
   }
