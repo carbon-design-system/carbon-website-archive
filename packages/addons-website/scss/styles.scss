@@ -28,6 +28,7 @@
 @include carbon--type-classes();
 @include carbon--font-face-mono();
 @include carbon--font-face-sans();
+@include carbon--font-face-serif();
 
 @import 'components/website-video-internal';
 @import 'components/website-homepage-video';

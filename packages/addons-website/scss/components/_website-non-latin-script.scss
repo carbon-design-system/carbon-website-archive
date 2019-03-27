@@ -202,12 +202,12 @@ $font-prefix: '/fonts';
 .ibm-type-mono,
 .ibm-type-mono * {
   font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono',
-    'Bitstream Vera Sans Mono', Courier, monospace;
+    'Bitstream Vera Sans Mono', Courier, monospace !important;
 }
 
 .ibm-type-serif,
 .ibm-type-serif * {
-  font-family: 'IBM Plex Serif', 'Georgia', Times, serif;
+  font-family: 'IBM Plex Serif', 'Georgia', Times, serif !important;
 }
 
 .ibm-type-hebrew {
@@ -224,4 +224,17 @@ $font-prefix: '/fonts';
 
 .ibm-type-arabic {
   font-family: 'IBM Plex Arabic' !important;
+}
+
+.ibm-type-greek {
+  font-family: 'IBM Plex Sans Greek' !important;
+}
+
+// work around to support greek fonts
+@font-face {
+  font-family: 'IBM Plex Sans Greek';
+  font-style: normal;
+  font-weight: 300;
+  src: local('IBM Plex Sans Light'), local('IBMPlexSans-Light'), url(https://fonts.gstatic.com/s/ibmplexsans/v5/zYX9KVElMYYaJe8bpLHnCwDKjXr8AIJsdP3pBmtF8A.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
 }
