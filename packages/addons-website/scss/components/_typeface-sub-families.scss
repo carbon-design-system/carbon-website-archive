@@ -14,19 +14,18 @@
 
 .#{prefix}--subfamilies-fonts-preload {
     margin-top: 2rem;
-    height: 0;
-    visibility: hidden;
+        height: 0;
+        visibility: hidden;
 
-    * {
-        font-family: 'IBM Plex Sans Condensed';
-    }
+        * {
+            font-family: 'IBM Plex Sans Condensed';
+        }
 }
 
 .#{$prefix}--subfamilies-tabs-container {
     margin-left: -.5rem;
     margin-right: -.5rem;
 }
-
 .#{$prefix}--subfamilies-dropdown-container {
     width:100%;
     margin-left: -1rem;
@@ -37,16 +36,15 @@
         margin-right: 0rem;
     }
 }
-
 .#{$prefix}--subfamilies-button {
     @include carbon--type-style('body-long-01');
     text-align: left;
-    color:  $carbon--black-100;
-    background-color:  $carbon--white-0;
+    color: $ibm-colors__black;
+    background-color: $ibm-colors__white;
     box-sizing: border-box !important;
     border: none;
-    border-bottom: rem(1px) solid  $carbon--gray-20;
-    border-right: rem(1px) solid  $carbon--gray-20;
+    border-bottom: rem(1px) solid $ibm-colors__gray-20;
+    border-right: rem(1px) solid $ibm-colors__gray-20;
     cursor: pointer;
     height: 3rem;
     position: relative;
@@ -58,7 +56,7 @@
     text-overflow: ellipsis;
 
     &:hover {
-        background-color:  $carbon--gray-10;
+        background-color: $ibm-colors__gray-10;
     }
 
     &:last-child {
@@ -66,15 +64,14 @@
     }
 
     &.active {
-        color:  $carbon--white-0;
-        background-color:  $carbon--black-100;
+        color: $ibm-colors__white;
+        background-color: $ibm-colors__black;
     
         &:hover {
-            background-color:  $carbon--black-100;
+            background-color: $ibm-colors__black;
         }
     }
 }
-
 .#{$prefix}--padding-left-none {
     padding-left: 0 !important;
 }
@@ -91,9 +88,10 @@
     }
 }
 
+
 .#{$prefix}--subfamilies-TypeTesterExample {
     @include carbon--type-style('expressive-heading-05');
-    background-color:  $carbon--white-0;
+    background-color: $ibm-colors__white;
     padding-top: 1rem;
     padding-bottom: 2.5rem;
     margin-bottom: 0; 
