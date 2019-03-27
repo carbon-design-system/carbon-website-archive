@@ -2,6 +2,9 @@
 
 .#{$prefix}--header__action--switcher {
   border: rem(2px) solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .#{$prefix}--website-switcher {
