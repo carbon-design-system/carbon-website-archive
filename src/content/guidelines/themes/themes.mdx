@@ -27,6 +27,9 @@ title: Themes
   </ClickableTile>
 </GridWrapper>
 
+<br />
+<br />
+
 ## Theming basics
 
 Themes are used to modify existing components to fit a specific visual style. By using Carbon's tokens, developers can easily customize all of their components by changing a set of universal variables, eliminating the need to modify individual components.
@@ -59,6 +62,8 @@ $carbon--theme: $carbon--theme--g90;
 The default theme acts as a starting point; from there designers and developers can define how their own components and styles deviate from the default. Altering one, some, or all of the default token values will result in a new theme. The developer then packages those new values into a new theme SCSS stylesheet which will replace the values of the default theme.
 
 #### 1. Create a theme mixin that effectively mimics this structure, but changes up hex values as needed:
+
+<br />
 
 ```scss
 @mixin my-theme {
