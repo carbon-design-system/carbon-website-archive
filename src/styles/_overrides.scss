@@ -63,6 +63,19 @@
 }
 
 //---------------------------------------
+// Tile
+//---------------------------------------
+
+.component-example__live--tile .bx--grid {
+  outline: 1px dashed #97c1ff;
+}
+
+.component-example__live--tile .bx--tile-container .bx--col {
+  background: none;
+  margin-bottom: 1rem;
+}
+
+//---------------------------------------
 // UI Shell
 //---------------------------------------
 
