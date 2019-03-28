@@ -163,7 +163,7 @@
 
 .page-ul,
 .page-ol {
-  @include typescale('epsilon');
+  @include carbon--type-style('body-long-02');
   margin: 0 0 rem(24px) $spacing-lg;
   line-height: 1.5;
   position: relative;
