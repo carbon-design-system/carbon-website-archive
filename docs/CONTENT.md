@@ -275,9 +275,11 @@ This will render the following group of clickable tiles
 
 #### Example of the Do/Don't components:
 
-- can include property `full=true` to use the example as a full-width component.
-    - e.g. `<DoDontExample full=true>`
+- can include property `full_width="true"` to use the example as a full-width component.
+    - e.g. `<DoDontExample full_width="true">`
     - this option will cause the element to fill the full width of its containing wrappper. adjust the column count of the enclosing `<GridWrapper>` to expand the maxium width.
+- can include property `dark="true"` to use a dark background
+    - e.g. `<DoDontExample dark="true">`
 
 ##### With text examples:
 
