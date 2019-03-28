@@ -89,7 +89,7 @@ $font-prefix: '/fonts';
   border-width: 0;
   margin-bottom: 0;
   margin-top: 0;
-  font-weight: 400;
+  font-weight: 400 !important;
 
   &.rtl {
     direction: rtl;
@@ -153,14 +153,12 @@ $font-prefix: '/fonts';
 .#{$prefix}--non-latin-type-example-thai {
   padding-bottom: 1rem !important;
   margin-bottom: 1rem !important;
-
-  @include carbon--breakpoint('md') {
-    line-height: 2em;
-  }
+  line-height: 1.5em !important;
+  line-height: 2em !important;
 
   // safari cuts thai fonts off, this is a workaround
   @media not all and (min-resolution: 0.001dpcm) {
-    line-height: 1.5em;
+    line-height: 1.5em !important;
   }
 }
 
@@ -226,15 +224,5 @@ $font-prefix: '/fonts';
   font-family: 'IBM Plex Arabic' !important;
 }
 
-.ibm-type-greek {
-  font-family: 'IBM Plex Sans Greek' !important;
-}
-
 // work around to support greek fonts
-@font-face {
-  font-family: 'IBM Plex Sans Greek';
-  font-style: normal;
-  font-weight: 300;
-  src: local('IBM Plex Sans Light'), local('IBMPlexSans-Light'), url(https://fonts.gstatic.com/s/ibmplexsans/v5/zYX9KVElMYYaJe8bpLHnCwDKjXr8AIJsdP3pBmtF8A.woff2) format('woff2');
-  unicode-range: U+0370-03FF;
-}
+// @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&subset=cyrillic,greek');

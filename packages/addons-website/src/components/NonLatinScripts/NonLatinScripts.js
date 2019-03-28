@@ -38,7 +38,6 @@ const NonLatinScripts = () => {
         value="संज्ञानात्मक"
       />
       <NonLatinScript 
-        className="ibm-type-greek"
         typefaceName="IBM Plex Sans Greek" 
         value="νομίζω" />
       <NonLatinScript
@@ -49,7 +48,7 @@ const NonLatinScripts = () => {
       />
       <NonLatinScript
         customStyle="--non-latin-type-example-thai"
-        typefaceName="IBM Plex Thai (non-looped)"
+        typefaceName="IBM Plex Thai"
         className="ibm-type-thai"
         value="องค์ความรู้"
       />

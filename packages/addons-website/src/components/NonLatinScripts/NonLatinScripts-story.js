@@ -51,7 +51,9 @@ storiesOf('Non Latin Scripts', module)
           className="ibm-type-devanagari"
           value="संज्ञानात्मक"
         />
-        <NonLatinScript typefaceName="IBM Plex Sans Greek" value="νομίζω" />
+        <NonLatinScript 
+          typefaceName="IBM Plex Sans Greek" 
+          value="νομίζω" />
         <NonLatinScript
           typefaceName="IBM Plex Sans Hebrew"
           className="ibm-type-hebrew"
@@ -60,7 +62,7 @@ storiesOf('Non Latin Scripts', module)
         />
         <NonLatinScript
           customStyle="--non-latin-type-example-thai"
-          typefaceName="IBM Plex Thai (non-looped)"
+          typefaceName="IBM Plex Thai"
           className="ibm-type-thai"
           value="องค์ความรู้"
         />
