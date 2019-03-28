@@ -74,10 +74,9 @@ export default class TypefaceSubFamilies extends React.Component {
     });
     
     return (
-      // <div>hi</div>
-      <div class={`${prefix}--subfamilies`}>
+      <div className={`${prefix}--subfamilies`}>
         <div className="bx--row ibm--offset-lg-4">
-          <div class={`${prefix}--subfamilies-dropdown-container`}>
+          <div className={`${prefix}--subfamilies-dropdown-container`}>
             <div className={classNamesMenuDropdown}>
                <Dropdown
                   items={fontVariants}
