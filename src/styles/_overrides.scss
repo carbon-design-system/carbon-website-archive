@@ -46,7 +46,9 @@
 // Tabs
 //---------------------------------------
 
-// TODO
+.component-example__live .tabs .bx--tabs + div {
+  margin-top: 2rem;
+}
 
 //---------------------------------------
 // UI Shell
