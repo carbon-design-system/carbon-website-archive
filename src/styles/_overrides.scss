@@ -1,6 +1,7 @@
 //---------------------------------------
 // Button
 //---------------------------------------
+
 .component-example .button .bx--btn {
   margin: 0.5rem;
 }
@@ -8,6 +9,7 @@
 //---------------------------------------
 // Notification
 //---------------------------------------
+
 .component-example__live.component-example__live--notification
   .component-example__live--rendered
   > div {
@@ -23,6 +25,7 @@
 //---------------------------------------
 // Loading
 //---------------------------------------
+
 .component-example .loading .bx--loading-overlay {
   position: absolute;
 }
@@ -46,6 +49,11 @@
 // Tabs
 //---------------------------------------
 
+.component-example__live--tabs .bx--tabs__nav {
+  position: static;
+}
+
+
 .component-example__live .tabs .bx--tabs + div {
   margin-top: 2rem;
 }
@@ -53,6 +61,7 @@
 //---------------------------------------
 // UI Shell
 //---------------------------------------
+
 .component-example__live--ui-shell {
   position: relative;
 }
@@ -65,6 +74,7 @@
 //---------------------------------------
 // Date picker
 //---------------------------------------
+
 .component-example .flatpickr-calendar {
   margin-left: -1rem;
   margin-top: -1rem;
@@ -73,6 +83,7 @@
 //---------------------------------------
 // Tooltip
 //---------------------------------------
+
 .component-example__live .bx--tooltip {
   margin-left: -1rem;
   margin-top: -.5rem;
