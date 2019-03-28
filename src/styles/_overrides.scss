@@ -59,3 +59,19 @@
 .component-example__live--ui-shell .bx--side-nav {
   position: absolute;
 }
+
+//---------------------------------------
+// Date picker
+//---------------------------------------
+.component-example .flatpickr-calendar {
+  margin-left: -1rem;
+  margin-top: -1rem;
+}
+
+//---------------------------------------
+// Tooltip
+//---------------------------------------
+.component-example__live .bx--tooltip {
+  margin-left: -1rem;
+  margin-top: -.5rem;
+}
