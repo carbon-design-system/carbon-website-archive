@@ -9,7 +9,7 @@
   line-height: 1.5;
   padding-top: rem(160px);
 
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     display: flex;
   }
 

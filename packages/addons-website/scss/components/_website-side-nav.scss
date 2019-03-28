@@ -4,7 +4,7 @@
   width: 0;
   border-right-width: 0px;
 
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     display: none;
   }
 }
@@ -339,7 +339,7 @@ a.#{$prefix}--side-nav__link > .#{$prefix}--side-nav__icon {
     visibility: initial;
   }
 
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     & + div {
       position: inherit;
     }

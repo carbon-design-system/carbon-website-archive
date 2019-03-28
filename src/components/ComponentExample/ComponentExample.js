@@ -170,7 +170,7 @@ class ComponentExample extends Component {
         .replace(/^([a-z])/, (match, token) => token.toUpperCase());
       // TODO: See if instances with different prefixes may exist as the same time.
       // If so, we need to figure out more sophisticted approach here.
-      settings.prefix = experimental ? 'bx' : 'demo';
+      settings.prefix = 'bx';
       (componentNamesMap[currentComponent] || [currentComponent]).forEach(
         name => {
           const TheComponent = components[name];
@@ -277,9 +277,7 @@ class ComponentExample extends Component {
     } = this.props;
 
     const { currentHTMLfile = '', currentFieldColor } = this.state;
-    const demoHtml = experimental
-      ? currentHTMLfile
-      : currentHTMLfile.replace(/bx--/g, 'demo--');
+    const demoHtml = currentHTMLfile;
 
     const classNames = classnames({
       'component-example__live--rendered': true,
@@ -318,7 +316,6 @@ class ComponentExample extends Component {
       {
         'component-example__live--light':
           (currentFieldColor === 'field-02') & (hasLightVersion === true),
-        'carbon-demo-v9': experimental != true,
       }
     );
 

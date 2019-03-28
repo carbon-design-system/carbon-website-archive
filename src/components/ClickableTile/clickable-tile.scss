@@ -11,11 +11,11 @@ a.tile--article {
   margin: 1rem;
 
   // full bleed for tiles on mobile
-  @include breakpoint('sm') {
+  @include carbon--breakpoint('sm') {
     width: calc(100% - 2rem);
   }
 
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     width: calc(50% - 0.5rem);
     margin-left: 0;
     margin-bottom: 0;
@@ -25,7 +25,7 @@ a.tile--article {
     }
   }
 
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     width: calc(33% - 0.51rem);
     margin-right: 1rem;
 
@@ -72,11 +72,11 @@ a.tile--article.tile--dark:hover {
   padding: $spacing-md;
   padding-right: 25%;
 
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     padding-right: 1rem;
   }
 
-  @include breakpoint('xlg') {
+ @include carbon--breakpoint('xlg')  {
     padding-right: 30%;
   }
 }
@@ -101,11 +101,11 @@ a.tile--article.tile--dark:hover {
 
 .tile--resource {
   // full bleed for tiles on mobile
-  @include breakpoint('sm') {
+  @include carbon--breakpoint('sm') {
     width: 100%;
   }
 
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     width: calc(50% - 1px);
     margin: 0;
   }
@@ -140,7 +140,7 @@ a.tile--article.tile--dark:hover {
 .tile--resource .tile__info {
   width: 100%;
 
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     width: 75%;
   }
 }
@@ -204,7 +204,7 @@ a.tile--article.tile--dark:hover {
 // Grouped tiles
 .flex-wrap {
   .tile--resource {
-    @include breakpoint('sm') {
+    @include carbon--breakpoint('sm') {
       border-bottom: 1px solid $carbon--gray-20;
 
       &.tile--dark {
@@ -212,7 +212,7 @@ a.tile--article.tile--dark:hover {
       }
     }
 
-    @include breakpoint('md') {
+    @include carbon--breakpoint('md') {
       border: 1px solid transparent;
       border-bottom: none;
       border-right: none;
