@@ -6,6 +6,7 @@ import { Icon } from 'carbon-components-react';
 import ReactGA from 'react-ga';
 import Prism from 'prismjs';
 import Copy20 from '@carbon/icons-react/es/copy/20';
+import ChevronDown16 from '@carbon/icons-react/es/chevrondown/20';
 
 class CodeExample extends Component {
   static propTypes = {
@@ -96,10 +97,9 @@ class CodeExample extends Component {
         <div className="code-example__expand-container">
           <button className={expandBtnClass} onClick={this.expandCode}>
             <span>{expandCodeBtnText}</span>
-            <Icon
+            <ChevronDown16 
               alt="expand code"
               className={expandBtnIconClass}
-              name="chevron--down"
               description="Expand code icon"
             />
           </button>
