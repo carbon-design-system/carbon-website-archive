@@ -46,7 +46,9 @@
 // Tabs
 //---------------------------------------
 
-// TODO
+.component-example__live--tabs .bx--tabs__nav {
+  position: static;
+}
 
 //---------------------------------------
 // Tile
