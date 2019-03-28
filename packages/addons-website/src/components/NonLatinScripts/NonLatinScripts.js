@@ -38,6 +38,7 @@ const NonLatinScripts = () => {
         value="संज्ञानात्मक"
       />
       <NonLatinScript 
+        className="ibm-type-greek"
         typefaceName="IBM Plex Sans Greek" 
         value="νομίζω" />
       <NonLatinScript

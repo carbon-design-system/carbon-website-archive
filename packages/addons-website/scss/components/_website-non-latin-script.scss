@@ -224,5 +224,15 @@ $font-prefix: '/fonts';
   font-family: 'IBM Plex Arabic' !important;
 }
 
+.ibm-type-greek {
+  font-family: 'IBM Plex Sans Greek' !important;
+}
+
 // work around to support greek fonts
-// @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&subset=cyrillic,greek');
+@font-face {
+  font-family: 'IBM Plex Sans Greek';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v5/zYXgKVElMYYaJe8bpLHnCwDKhdLeFaxOedfTDw.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
