@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="352px" height="352px" viewBox="0 0 352 352" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
-    <title>iconography_usage_Padding-6</title>
+    <title>iconography_usage_Padding-6 Copy 2</title>
     <desc>Created with Sketch.</desc>
-    <g id="Padding-6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Padding-6-Copy-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <rect id="Rectangle-3" x="0" y="0" width="352" height="352"></rect>
         <g id="Group-5" transform="translate(56.000000, 56.000000)">
             <g id="Group">
                 <g id="Group-Copy" transform="translate(74.621849, 74.621849)">
-                    <rect id="Rectangle" x="0" y="0" width="101.848739" height="101.848739"></rect>
+                    <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="101.848739" height="101.848739"></rect>
                     <g id="menu" transform="translate(12.731092, 19.096639)" fill="#000000" fill-rule="nonzero">
                         <rect id="Rectangle" x="0" y="57.289916" width="76.3865546" height="6.36554622"></rect>
                         <rect id="Rectangle" x="0" y="19.0966387" width="76.3865546" height="6.36554622"></rect>
@@ -16,62 +16,8 @@
                         <rect id="Rectangle" x="0" y="0" width="76.3865546" height="6.36554622"></rect>
                     </g>
                 </g>
-                <path d="M0,0 L240,0 L240,240 L0,240 L0,0 Z M73.6,73.6 L73.6,176 L176,176 L176,73.6 L73.6,73.6 Z" id="Combined-Shape" fill="#C3DAFF"></path>
-                <rect id="Rectangle" stroke="#DCDCDC" style="mix-blend-mode: multiply;" x="0.5" y="0.5" width="239" height="239"></rect>
-                <g id="Group-3" fill="#DCDCDC">
-                    <g id="Group-4">
-                        <rect id="Rectangle" style="mix-blend-mode: multiply;" x="0" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy" style="mix-blend-mode: multiply;" x="10.3913043" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-2" style="mix-blend-mode: multiply;" x="20.7826087" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-3" style="mix-blend-mode: multiply;" x="31.173913" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-27" style="mix-blend-mode: multiply;" x="41.5652174" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-28" style="mix-blend-mode: multiply;" x="51.9565217" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-29" style="mix-blend-mode: multiply;" x="62.3478261" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-30" style="mix-blend-mode: multiply;" x="72.7391304" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-31" style="mix-blend-mode: multiply;" x="83.1304348" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-32" style="mix-blend-mode: multiply;" x="93.5217391" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-33" style="mix-blend-mode: multiply;" x="103.913043" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-34" style="mix-blend-mode: multiply;" x="114.304348" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-35" style="mix-blend-mode: multiply;" x="124.695652" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-36" style="mix-blend-mode: multiply;" x="135.086957" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-37" style="mix-blend-mode: multiply;" x="145.478261" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-38" style="mix-blend-mode: multiply;" x="155.869565" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-39" style="mix-blend-mode: multiply;" x="166.26087" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-40" style="mix-blend-mode: multiply;" x="176.652174" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-41" style="mix-blend-mode: multiply;" x="187.043478" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-42" style="mix-blend-mode: multiply;" x="197.434783" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-43" style="mix-blend-mode: multiply;" x="207.826087" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-44" style="mix-blend-mode: multiply;" x="218.217391" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-45" style="mix-blend-mode: multiply;" x="228.608696" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-46" style="mix-blend-mode: multiply;" x="239" y="0" width="1" height="240"></rect>
-                    </g>
-                    <g id="Group-2" transform="translate(120.000000, 120.000000) rotate(90.000000) translate(-120.000000, -120.000000) translate(-0.000000, -0.000000)">
-                        <rect id="Rectangle" style="mix-blend-mode: multiply;" x="0" y="0" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy" style="mix-blend-mode: multiply;" x="10.3913043" y="4.20811312e-18" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-2" style="mix-blend-mode: multiply;" x="20.7826087" y="8.41622625e-18" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-3" style="mix-blend-mode: multiply;" x="31.173913" y="1.26243394e-17" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-27" style="mix-blend-mode: multiply;" x="41.5652174" y="1.68324525e-17" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-28" style="mix-blend-mode: multiply;" x="51.9565217" y="2.10405656e-17" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-29" style="mix-blend-mode: multiply;" x="62.3478261" y="2.52486787e-17" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-30" style="mix-blend-mode: multiply;" x="72.7391304" y="2.94567919e-17" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-31" style="mix-blend-mode: multiply;" x="83.1304348" y="3.3664905e-17" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-32" style="mix-blend-mode: multiply;" x="93.5217391" y="3.78730181e-17" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-33" style="mix-blend-mode: multiply;" x="103.913043" y="2.84637906e-14" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-34" style="mix-blend-mode: multiply;" x="114.304348" y="2.84679987e-14" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-35" style="mix-blend-mode: multiply;" x="124.695652" y="2.84722068e-14" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-36" style="mix-blend-mode: multiply;" x="135.086957" y="2.84764149e-14" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-37" style="mix-blend-mode: multiply;" x="145.478261" y="2.8480623e-14" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-38" style="mix-blend-mode: multiply;" x="155.869565" y="2.84848311e-14" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-39" style="mix-blend-mode: multiply;" x="166.26087" y="2.84890392e-14" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-40" style="mix-blend-mode: multiply;" x="176.652174" y="2.84932474e-14" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-41" style="mix-blend-mode: multiply;" x="187.043478" y="2.84974555e-14" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-42" style="mix-blend-mode: multiply;" x="197.434783" y="2.85016636e-14" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-43" style="mix-blend-mode: multiply;" x="207.826087" y="2.85058717e-14" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-44" style="mix-blend-mode: multiply;" x="218.217391" y="2.85100798e-14" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-45" style="mix-blend-mode: multiply;" x="228.608696" y="2.85142879e-14" width="1" height="240"></rect>
-                        <rect id="Rectangle-Copy-46" style="mix-blend-mode: multiply;" x="239" y="-7.11155059e-14" width="1" height="240"></rect>
-                    </g>
-                </g>
+                <path d="M0.5,0.5 L0.5,239.5 L239.5,239.5 L239.5,0.5 L0.5,0.5 Z M73.1,73.1 L176.5,73.1 L176.5,176.5 L73.1,176.5 L73.1,73.1 Z" id="Combined-Shape" stroke="#97C1FF" fill="#EDF4FF"></path>
+                <rect id="Rectangle" stroke="#97C1FF" x="0.5" y="0.5" width="239" height="239"></rect>
             </g>
         </g>
     </g>
