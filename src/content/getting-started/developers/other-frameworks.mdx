@@ -3,15 +3,32 @@ title: Developers
 tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
 ---
 
+<AnchorLinks>
+
+- [Development options](#development-options)
+- [Other frameworks?](#other-frameworks)
+
+</AnchorLinks>
+
 ## Development options
 
 The Carbon Design System supports vanilla JS, React and Angular as core parts of the product. But you can still build components even if you're using a different framework.
 
-**Using just the styles**
+
+<AnchorLinks small>
+
+- [Using just the styles](#using-just-the-styles)
+- [Wrapping a component with a JavaScript framework of your choice](#wrapping-components-with-javascript-frameworks)
+- [Examples](#examples)
+- [Troubleshooting](#troubleshooting)
+
+</AnchorLinks>
+
+### Using just the styles
 
 Developers wanting to build in different ways follow the instructions for the [Vanilla](/getting-started/developers/vanilla) library to access the styles and build out their own components.
 
-**Wrapping a component with a JavaScript framework of your choice**
+### Wrapping components with JavaScript frameworks
 
 Many JavaScript frameworks have a mechanism to dynamically create/destroy DOM elements, for example, upon change in array.
 This often makes it unclear when the DOM element to instantiate a Carbon component is available, which often depends on the JavaScript framework you use.
@@ -47,7 +64,7 @@ customElements.define('bx-loading', BXLoading);
 
 If you experience any issues while getting set up with Carbon Components, please head over to the [Carbon Components GitHub repo](https://github.com/ibm/carbon-components) for more guidelines and support. Please [create an issue](https://github.com/ibm/carbon-components/issues) if your issue does not already exist.
 
-## Will the Carbon Design System support other frameworks in future?
+## Other frameworks?
 
 We are open to the idea of providing core support for additional frameworks in future. We added Angular support in the summer of 2018.
 

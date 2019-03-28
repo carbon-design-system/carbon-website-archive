@@ -18,14 +18,16 @@ $feature-flags: (
   components-x: true,
   ui-shell: true,
 );
+
 @import '@carbon/layout/scss/layout.scss';
+@import '@carbon/grid/scss/grid.scss';
 .container {
   //need this to avoid conflicts with old grid code
   $prefix: 'ibm';
   $imported-modules-local: ();
   @import '@carbon/grid/scss/grid.scss';
 }
-@import '@carbon/grid/scss/aspect-ratio.scss';
+//@import '@carbon/grid/scss/aspect-ratio.scss';
 
 @import 'carbon-components/scss/globals/scss/styles.scss';
 @import '@carbon/addons-website/scss/styles';
@@ -49,6 +51,7 @@ $font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 @import '../components/ClickableTile/clickable-tile.scss';
 @import '../components/PageTable/page-table.scss';
 @import '../components/DoDontExample/do-dont-example.scss';
+@import '../components/EditLink/edit-link.scss';
 @import '../components/ColorBlock/color-block.scss';
 @import '../components/ColorCard/color-card.scss';
 @import '../components/IconCard/icon-card.scss';

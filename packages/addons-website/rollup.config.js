@@ -13,6 +13,7 @@ const baseConfig = {
     'prop-types',
     'classnames',
     'carbon-components',
+    'gatsby',
     'carbon-components-react',
     'react-scroll-up',
     'prismjs',
@@ -82,7 +83,8 @@ module.exports = [
         react: 'React',
         'react-dom': 'ReactDOM',
         'prop-types': 'PropTypes',
-        'react-scroll-up': 'ScrollToTop'
+        'react-scroll-up': 'ScrollToTop',
+        gatsby: 'gatsby',
       },
     },
   },

@@ -13,7 +13,7 @@
   max-width: 550px;
   margin-top: 2rem;
 
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     margin-top: 4rem;
   }
 
@@ -42,7 +42,7 @@
 
     &:hover svg,
     &:focus svg {
-      fill: $ibm-colors__white;
+      fill: $carbon--white-0;
     }
 
     svg {
@@ -61,7 +61,7 @@
       animation-direction: reverse;
     }
 
-    @include breakpoint('md') {
+    @include carbon--breakpoint('md') {
       margin: 0 1.5rem 0 1rem;
 
       &:first-child,

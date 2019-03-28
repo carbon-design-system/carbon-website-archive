@@ -98,7 +98,7 @@ class ComponentReactExample extends Component {
         <div className="ibm--row">
           <div className="ibm--col-lg-12 ibm--offset-lg-4">
             <h2 className="page-h2">{name}</h2>
-            <p className="component-example__heading-label">
+            <p className="component-example__heading-label page-p">
               This component is currently only available in{' '}
               <a
                 href="https://github.com/ibm/carbon-components-react"

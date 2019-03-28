@@ -2,7 +2,7 @@
 name: Website Feedback
 about: User feedback collected from the Carbon website.
 title: ''
-labels: 'feedback'
+labels: feedback
 assignees: ''
 
 ---

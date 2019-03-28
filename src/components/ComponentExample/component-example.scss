@@ -2,12 +2,8 @@
   width: 100%;
   max-width: 100%;
   display: block;
-  color: $ibm-colors__white;
+  color: $carbon--white-0;
   margin-bottom: rem(24px);
-
-  p {
-    padding: 0;
-  }
 }
 
 // To override the padding from `.page-content > div > div:first-child p`
@@ -64,7 +60,7 @@
   height: rem(48px);
   background: $ui-05;
   color: $inverse-01;
-  border-bottom: 1px solid $ibm-colors__gray-80;
+  border-bottom: 1px solid $carbon--gray-80;
 }
 
 .component-toolbar__current {
@@ -82,12 +78,12 @@
 
   a {
     padding-left: 1rem;
-    color: $ibm-colors__blue-40;
+    color: $carbon--blue-40;
     text-decoration: none;
   }
 
   svg {
-    fill: $ibm-colors__blue-40;
+    fill: $carbon--blue-40;
     position: relative;
     top: 3px;
     margin-top: -2px;
@@ -98,9 +94,10 @@
 .component-toolbar__switcher {
   display: flex;
   align-items: center;
-  border-left: 1px solid $ibm-colors__gray-80;
+  border-left: 1px solid $carbon--gray-80;
   height: 100%;
   padding-left: 1rem;
+  padding-right: 1rem;
 
   .bx--form-item {
     margin-right: 0;
