@@ -18,8 +18,8 @@ import {
   HeaderGlobalBar,
   HeaderGlobalAction,
 } from 'carbon-components-react/lib/components/UIShell';
-import { Close20, AppSwitcher20 } from '@carbon/icons-react';
 import WebsiteSwitcher from '../WebsiteSwitcher/WebsiteSwitcher';
+import AppSwitcher20 from '@carbon/icons-react/es/appswitcher/20';
 
 storiesOf('Website header', module)
   .add(

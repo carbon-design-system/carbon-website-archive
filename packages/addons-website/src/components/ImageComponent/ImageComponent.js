@@ -3,7 +3,8 @@ import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import { settings } from 'carbon-components';
 import Overlay from '../Overlay'
-import { Close32, ZoomIn20 } from '@carbon/icons-react';
+import Close32 from '@carbon/icons-react/es/close/32';
+import ZoomIn20 from '@carbon/icons-react/es/zoomin/20';
 
 const { prefix } = settings;
 

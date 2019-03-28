@@ -5,8 +5,7 @@ import classnames from 'classnames';
 import { Icon } from 'carbon-components-react';
 import ReactGA from 'react-ga';
 import Prism from 'prismjs';
-//import { Copy20 } from '@carbon/icons-react';
-import { Copy20 } from '@carbon/icons-react/es/copy/20';
+import Copy20 from '@carbon/icons-react/es/copy/20';
 
 class CodeExample extends Component {
   static propTypes = {

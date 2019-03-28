@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-//import { CheckmarkFilled24, CloseFilled16 } from '@carbon/icons-react';
-import { CheckmarkFilled24 } from '@carbon/icons-react/es/CheckmarkFilled/24';
-import { CloseFilled16 } from '@carbon/icons-react/es/CloseFilled/16';
+import CheckmarkFilled24 from '@carbon/icons-react/es/CheckmarkFilled/24';
+import CloseFilled16 from '@carbon/icons-react/es/CloseFilled/16';
 
 // need to update to CloseFilled24 once that exists
 

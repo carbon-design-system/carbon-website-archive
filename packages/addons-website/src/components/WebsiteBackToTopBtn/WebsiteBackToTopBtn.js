@@ -1,6 +1,6 @@
 import React from 'react';
 import { settings } from 'carbon-components';
-import { UpToTop20 } from '@carbon/icons-react';
+import UpToTop20 from '@carbon/icons-react/es/uptotop/20';
 import ScrollToTop from 'react-scroll-up';
 
 const { prefix } = settings;

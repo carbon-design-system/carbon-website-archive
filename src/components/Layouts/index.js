@@ -14,18 +14,11 @@ import {
   HeaderGlobalBar,
   HeaderGlobalAction,
 } from 'carbon-components-react/lib/components/UIShell';
-/* import {
-  ArrowRight20,
-  AppSwitcher20,
-  Close20,
-  Information20,
-  Search20,
-} from '@carbon/icons-react'; */
-import { ArrowRight20 } from '@carbon/icons-react/es/ArrowRight/20';
-import { AppSwitcher20 } from '@carbon/icons-react/es/appswitcher/20';
-import { Close20 } from '@carbon/icons-react/es/close/20';
-import { Information20 } from '@carbon/icons-react/es/information/20';
-import { Search20 } from '@carbon/icons-react/es/search/20';
+import ArrowRight20 from '@carbon/icons-react/es/ArrowRight/20';
+import AppSwitcher20 from '@carbon/icons-react/es/appswitcher/20';
+import Close20 from '@carbon/icons-react/es/close/20';
+import Information20 from '@carbon/icons-react/es/information/20';
+import Search20 from '@carbon/icons-react/es/search/20';
 import { WebsiteFooter, WebsiteSwitcher, WebsiteCodeSnippet } from '@carbon/addons-website';
 
 import PageTable from '../PageTable';

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-//import { ArrowRight24 } from '@carbon/icons-react';
-import { ArrowRight24 } from '@carbon/icons-react/es/ArrowRight/24';
+import ArrowRight24 from '@carbon/icons-react/es/ArrowRight/24';
 
 export class HomepageHeader extends React.Component {
   componentDidMount() {
