@@ -1,5 +1,4 @@
 ---
-label: Motion can bring your work to life, guide users through complex experiences, and help move forward—from here to there, now to next, start to finish—and make progress.
 title: Motion
 tabs: ['Basics', 'Choreography', 'Resources']
 ---
@@ -13,7 +12,7 @@ tabs: ['Basics', 'Choreography', 'Resources']
 
 ## Paths
 
-Elements of our interface dance on the Grid. Motion paths trace lines along the grid which never run diagonal.
+Elements in Carbon dance on the grid. Motion paths trace lines along the grid which never run diagonally.
 
 <GridWrapper col_lg="12" flex="true">
 <DoDontExample correct="true" full_width="true" label="When expanding or moving elements across the screen, stagger the timing of horizontal and vertical animations to create a path with a rounded corner.">
@@ -26,7 +25,7 @@ Elements of our interface dance on the Grid. Motion paths trace lines along the 
 <br />
 
 <GridWrapper col_lg="12" flex="true">
-<DoDontExample correct="false" full_width="true" label="Not staggering horizontal and vertical animations create a straight diagonal path. It breaks the grid and is harsh to the eye.">
+<DoDontExample correct="false" full_width="true" label="Not staggering horizontal and vertical animations creates a straight diagonal path. It breaks the grid and is harsh to the eye.">
 
 <Video vimeoId="310582699" />
 
@@ -36,12 +35,12 @@ Elements of our interface dance on the Grid. Motion paths trace lines along the 
 <br />
 
 <GridWrapper col_lg="8" flex="true">
-<DoDontExample correct="true" label="When removing an item from the grid, thumbnails on the edge existing and re-entering container create a smooth transition.">
+<DoDontExample correct="true" label="When removing an item from the grid, thumbnails on the edge exiting and re-entering the container create a smooth transition.">
 
 <Video vimeoId="310582738" />
 
 </DoDontExample>
-<DoDontExample correct="false" label="Thumbnails moving on diagonal paths feels sporadic and harsh.">
+<DoDontExample correct="false" label="Thumbnails moving diagonally feels sporadic and harsh.">
 
 <Video vimeoId="310582775" />
 
@@ -51,12 +50,12 @@ Elements of our interface dance on the Grid. Motion paths trace lines along the 
 <br />
 
 <GridWrapper col_lg="8" flex="true">
-<DoDontExample correct="true" label="When sorting or shuffling items on the grid, always using rounded corner paths to visually organize the movements.">
+<DoDontExample correct="true" label="When sorting or shuffling items on the grid, always use rounded corner paths to visually organize the movements.">
 
 <Video vimeoId="310582816" />
 
 </DoDontExample>
-<DoDontExample correct="false" label="Criss cross sorting appears disorganized. Avoid this motion path.">
+<DoDontExample correct="false" label="Criss-cross sorting appears disorganized. Avoid this motion path.">
 
 <Video vimeoId="310582851" />
 
@@ -65,16 +64,18 @@ Elements of our interface dance on the Grid. Motion paths trace lines along the 
 
 ## Composition
 
-When multiple animated elements coexist or interact with each other within the same view, it is vital to make the many moving elements work together and form coherent experience, to better provide way-finding and focus to guide the user experience.
+When multiple animated elements coexist or interact with each other within the same view, it is vital to make the many moving elements work together and form a coherent experience, to better provide way-finding and focus.
 
 ### Consistency
 
-When elements convey the same meaning, or perform the same functions, use the same motion for them. Similarly, actions with dramatically different meaning and intent should carry different motions. This helps to reinforce the meaning behind a motion, and improves user’s proficiency with the interface.
+#### Semantic consistency
 
-In below example, both expanding a row of a data table and opening a dropdown uses a chevron and share similar intent—to reveal content hidden in a seam. Therefore, they should have the same motion style (Productive) and easing (entrance, standard), albeit different durations due to their difference in size.
+When elements convey the same meaning or perform the same function, use the same motion for them, and vice-versa. This helps to reinforce the meaning behind a movement and improves the user’s proficiency using the interface.
+
+In the example below, both expanding a row of a data table and opening a dropdown use a chevron and share a similar intent—to reveal content hidden in a seam. Therefore, they should use the same motion style (productive) and easing (entrance, standard). However, they should use slightly different durations due to their difference in size.
 
 <GridWrapper col_lg="12" flex="true">
-<DoDontExample correct="true" full_width="true" label="Comparing data table expansion and dropdown">
+<DoDontExample correct="true" full_width="true" label="Comparing data table expansion and dropdown motion">
 
 <Video vimeoId="310581970" />
 
@@ -83,10 +84,12 @@ In below example, both expanding a row of a data table and opening a dropdown us
 
 <br />
 
-Pay attention to the spatial relationships between elements and screens, and information hierarchy. Visually similar elements may need the different motions to respect their respective spatial location.
+#### Spatial consistency
+
+Pay attention to the spatial relationships between elements and screens, and information hierarchy. Visually similar elements may need the different motions to clarify their respective spatial locations.
 
 <GridWrapper col_lg="12" flex="true">
-<DoDontExample correct="true" full_width="true" label="When the new content panel is on a higher layer, motion is “sliding”, moving content within with the panel.  Also always dim the content below when new layer is introduced above.">
+<DoDontExample correct="true" full_width="true" label="When the new content panel is on a higher layer, motion is “sliding,” moving content with the panel.  Always dim the content below when a new layer is introduced above.">
 
 <Video vimeoId="310581999" />
 
@@ -96,7 +99,7 @@ Pay attention to the spatial relationships between elements and screens, and inf
 <br />
 
 <GridWrapper col_lg="12" flex="true">
-<DoDontExample correct="true" full_width="true" label="When the new content panel is on the same layer, motion is “pushing”, revealing content within with a mask.">
+<DoDontExample correct="true" full_width="true" label="When the new content panel is on the same layer, motion is “pushing,” revealing content with a mask.">
 
 <Video vimeoId="310582064" />
 
@@ -105,10 +108,12 @@ Pay attention to the spatial relationships between elements and screens, and inf
 
 <br />
 
-Effective use of inconsistency in motion highlights a difference in meaning or intent behind actions with similar visual appearance.
+#### Intentional inconsistency
+
+Conscientious use of inconsistency in motion highlights a difference in meaning or intent behind actions with similar visual appearance. Usually, forward motion in the direction of entrance signals affirmation, while reversing entrance motion signals cancellation.
 
 <GridWrapper col_lg="8" flex="true">
-<DoDontExample correct="true" label="Use motion to reinforce meaning. Affirmative action here triggers a different exit motion for the modal than negation.">
+<DoDontExample correct="true" label="Affirmation triggers a different exit motion for the modal than negation.">
 
 <Video vimeoId="310582134" />
 
@@ -122,7 +127,7 @@ Effective use of inconsistency in motion highlights a difference in meaning or i
 
 ### Continuity
 
-Motion can help establishing a sense of continuity between screens and experiences. Pay attention to shared elements across screens, such as the title panels, or buttons, to create a graceful transition.
+Motion can help establish a sense of continuity between screens and experiences. Pay attention to shared elements across screens, such as title panels or buttons, to create a graceful transition.
 
 <GridWrapper col_lg="12" flex="true">
 <DoDontExample correct="true" full_width="true" label="Shared elements can effectively guide users through a multi-layered information architecture.">
@@ -135,18 +140,18 @@ Motion can help establishing a sense of continuity between screens and experienc
 <br />
 
 <GridWrapper col_lg="8" flex="true">
-<DoDontExample correct="false" label="Continuous elements are for guidance and should not distract. Always finish a sequence with the important content on page.">
+<DoDontExample correct="false" label="Continuous elements are for guidance and should not distract. Always finish a sequence with the important content on the page.">
 
 <Video vimeoId="310582279" />
 
 </DoDontExample>
 </GridWrapper>
 
-### Sequence & stagger
+### Sequence and stagger
 
-When multiple elements need to animate, distribute their entrances over time in stead of introducing everything at the user at once. This will help user to understand the content and orient themselves.
+When multiple elements need to animate, distribute their entrances over time instead of introducing everything at once. This will help the user understand the content and orientation.
 
-For example, staggering the entrance of table content by 20ms significantly reduces the cognitive load. Depending on the number of staggered elements, the delay should be adjusted to ensure total time is still within 500 ms.
+For example, staggering the entrance of table content by 20 ms significantly reduces the cognitive load. Depending on the number of staggered elements, the delay should be adjusted to ensure that total time is still within 500 ms.
 
 <GridWrapper col_lg="12" flex="true">
 <DoDontExample correct="true" full_width="true" label="Table with rows loading in at staggered timing.">
@@ -158,10 +163,10 @@ For example, staggering the entrance of table content by 20ms significantly redu
 
 <br />
 
-Sequence the loading of page content when possible. Start with the most orienting content, such as the static content\* and header, and end with the most important information, such as the _call to action_ button or a calculation result, to focus user’s attention to them.
+Sequence the loading of page content when possible. Start with the most stable content, such as static content and header, and end with the most important information, such as the primary button or a calculation result, to focus the user’s attention on them.
 
 <GridWrapper col_lg="12" flex="true">
-<DoDontExample correct="true" full_width="true" label="Sequencing of this interface prioritizes the primary button, and reserves data visualization for later when users begin to scroll, indicating intention to dive deeper.">
+<DoDontExample correct="true" full_width="true" label="Sequencing of this interface prioritizes the primary button and reserves data visualization for later, when users begin to scroll, indicating intention to dive deeper.">
 
 <Video vimeoId="310582919" />
 
@@ -170,12 +175,12 @@ Sequence the loading of page content when possible. Start with the most orientin
 
 <br />
 
-Follow this recommended sequence of different types of content when choreographing content entrance. Not all categories might be present in every experience. [Learn to categorize content in Motion Strategy ](#)
+Follow this recommended sequence of different types of content when choreographing content entrance. Not all categories will be present in every experience.
 
 | Seq | Category              | Examples                                              |
 | --- | --------------------- | ----------------------------------------------------- |
 | 1   | Static content        | UI shell, top and side navigation                     |
-| 2   | Static content (body) | Header, written content, images                       |
-| 3   | Dynamic content       | Content of a data table, query results from data base |
+| 2   | Static content (body) | Headers, written content, images                       |
+| 3   | Dynamic content       | Content of a data table, query results from database |
 | 4   | Primary action        | Primary action button                                 |
 | 5   | Animated content      | Data visualizations                                   |

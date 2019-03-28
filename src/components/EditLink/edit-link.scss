@@ -1,0 +1,13 @@
+.edit-link-container {
+  position: relative;
+  bottom: calc(-160px + 0.875rem + 32px);
+}
+
+.edit-link-container .edit-link {
+  @include carbon--type-style('body-short-01');
+  color: $text-02;
+  transition: $transition--base;
+  &:hover {
+    color: $text-01;
+  }
+}

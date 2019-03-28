@@ -10,9 +10,7 @@
 
     .#{$prefix}--swatch {
       padding: 1rem;
-      @include carbon--type-style('code-02')
-
-      .#{$prefix}--swatch-name {
+      @include carbon--type-style('code-02') .#{$prefix}--swatch-name {
         text-transform: capitalize;
       }
       .#{$prefix}--swatch-value {
@@ -20,22 +18,22 @@
       }
     }
     
-    @include breakpoint('md') {
+    @include carbon--breakpoint('md') {
       width: calc(50% - 1px);
-      margin-right: 1px; 
+      margin-right: 1px;
 
       &:last-child {
         width: 50%;
-        margin-right: 0; 
+        margin-right: 0;
       }
     }
-    @include breakpoint('lg') {
+    @include carbon--breakpoint('lg') {
       width: calc(33.33% - 1px);
-      margin-right: 1px; 
+      margin-right: 1px;
 
       &:last-child {
         width: 33.33%;
-        margin-right: 0; 
+        margin-right: 0;
       }
     }
   }
@@ -54,7 +52,7 @@
     background: $ui-01;
     top: 0;
 
-    @include breakpoint('lg') {
+    @include carbon--breakpoint('lg') {
       padding-top: 1rem;
     }
   }
@@ -71,7 +69,7 @@
     width: calc(25% - 1px);
     margin-right: 1px;
     height: rem(48px);
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     outline: none;
     transition: background-color 100ms cubic-bezier(0.2, 0.2, 0.38, 0.9);
 
@@ -91,5 +89,3 @@
     }
   }
 }
-
-

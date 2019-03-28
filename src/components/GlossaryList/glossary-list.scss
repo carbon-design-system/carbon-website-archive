@@ -6,14 +6,9 @@
   text-transform: lowercase;
 }
 
-.glossary-entry__desc {
-  padding-bottom: 0;
-}
-
 .glossary-entry__subtext {
   @include carbon--type-style('body-short-02');
   color: $text-02;
   font-style: italic;
   margin-top: 0.25rem;
-  padding-bottom: 0;
 }

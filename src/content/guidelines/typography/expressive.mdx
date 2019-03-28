@@ -1,8 +1,10 @@
 ---
 label: When used properly, typography can help create clear hierarchies, organize information, and guide users through the product or experience.
 title: Typography
-tabs: ['Overview', 'Productive']
+tabs: ['Overview', 'Productive', 'Expressive']
 ---
+
+import TypesetStyle from '@carbon/addons-website/src/components/TypesetStyle';
 
 ## IBM Expressive theme
 
@@ -14,93 +16,6 @@ Even though IBM Plex contains a wide range of scales, it’s important to use cu
 
 ### Supporting styles
 
-<TypeSpec token="code-01" description="This is for inline code snippets and smaller code elements.">
-Type: IBM Plex Mono<br />
-Size: 12px / .75rem<br />
-Line height: 16px / 1rem <br />
-Weight: 400 / Regular<br />
-Letter-spacing: .32px
-</TypeSpec>
-<TypeSpec token="code-02" description="This is for large code snippets and larger code elements.">
-Type: IBM Plex Mono<br />
-Size: 12px / .75rem<br />
-Line height: 20px / 1.25rem <br />
-Weight: 400 / Regular<br />
-Letter-spacing: 0px
-</TypeSpec>
-<TypeSpec token="label-01" description="This is for field labels in components and error messages.">
-Type: IBM Plex Sans<br />
-Size: 12px / .75rem<br />
-Line height: 16px / 1rem <br />
-Weight: 400 / Regular<br />
-Letter-spacing: .32px
-</TypeSpec>
-<TypeSpec token="caption-01" description="This is for captions or legal content in a layout — not for body copy.">
-Type: IBM Plex Sans<br />
-Size: 12px / .75rem<br />
-Line height: 16px / 1rem <br />
-Weight: 400 / Regular<br />
-Letter-spacing: .32px
-</TypeSpec>
-<TypeSpec token="helper-text-01" description="This is for explanatory helper text that appears below a field title within a component.">
-Type: IBM Plex Sans<br />
-Size: 12px / .75rem<br />
-Line height: 16px / 1rem <br />
-Weight: 400 / Italic<br />
-Letter-spacing: .32px
-</TypeSpec>
-
-### Body
-
-<TypeSpec token="body-short-01" description="This is for short paragraphs with no more than four lines and is commonly used in components.">
-Type: IBM Plex Sans<br />
-Size: 14px / .875rem<br />
-Line height: 18 / 1.125rem <br />
-Weight: 400 / Regular<br />
-Letter-spacing: .16px
-</TypeSpec>
-<TypeSpec token="body-long-01" description="This is commonly used in both the expressive and the productive type theme layouts for long paragraphs with more than four lines. It is a good size for comfortable, long-form reading. Use this for longer body copy in components such as accordion or structured list. Always left-align this type; never center it.">
-Type: IBM Plex Sans<br />
-Size: 14px / .875rem<br />
-Line height: 18 / 1.125rem <br />
-Weight: 400 / Regular<br />
-Letter-spacing: .16px
-</TypeSpec>
-<TypeSpec token="body-short-02" description="This is for short paragraphs with no more than four lines and is commonly used in the expressive type theme for layouts.">
-Type: IBM Plex Sans<br />
-Size: 16px / 1rem<br />
-Line height: 22px / 1.375rem <br />
-Weight: 400 / Regular<br />
-Letter-spacing: 0
-</TypeSpec>
-<TypeSpec token="body-long-02" description="This is commonly used in the expressive type theme layouts for long paragraphs with more than four lines. The looser line height and larger size makes for comfortable, long-form reading, in mediums that allow for more space. This size type is rarely used for body copy in components. Always left-align type; never center it.">
-Type: IBM Plex Sans<br />
-Size: 16px / 1rem<br />
-Line height: 24px / 1.5rem <br />
-Weight: 400 / Regular<br />
-Letter-spacing: 0
-</TypeSpec>
-
-### Headings
-
-<TypeSpec token="heading-01" description="This is for component and layout headings.">
-Type: IBM Plex Sans<br />
-Size: 14px / .875rem<br />
-Line height: 18 / 1.125rem <br />
-Weight: 600 / Semi-bold<br />
-Letter-spacing: .16px
-</TypeSpec>
-<TypeSpec token="heading-02" description="This is for component and layout headings.">
-Type: IBM Plex Sans<br />
-Size: 16px / 1rem<br />
-Line height: 22px / 1.375rem <br />
-Weight: 600 / Semi-bold<br />
-Letter-spacing: 0px
-</TypeSpec>
-<TypeSpec token="expressive-heading-03" description="This is for component and layout headings.">
-Type: IBM Plex Sans<br />
-Size: 20px / 1.25rem<br />
-Line height: 26px / 1.625rem <br />
-Weight: 400 / Regular<br />
-Letter-spacing: 0px
-</TypeSpec>
+<TypesetStyle breakpointControls={true} 
+              title="Expressive"
+              typesets="fluidHeading,fluidParagraph,fluidQuotation,fluidDisplay" />

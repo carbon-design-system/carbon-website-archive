@@ -1,5 +1,6 @@
 import React from 'react';
 import { Close20, Search20 } from '@carbon/icons-react';
+import GlobalSearchInput from './GlobalSearchInput'
 
 export default class GlobalSearch extends React.Component {
   state = {
@@ -15,6 +16,8 @@ export default class GlobalSearch extends React.Component {
     } else {
       // eslint-disable-next-line no-undef
       window.docsearch({
+        //apiKey: `296ea0c1d0e96b2b04900d0f4d1a6329`,
+        //indexName: `carbondesignsystem`,
         apiKey: `671a2a5c1da5f9eceec680cd79d751b2`,
         indexName: `next_carbondesignsystem`,
         inputSelector: `#doc-search`,
@@ -34,7 +37,7 @@ export default class GlobalSearch extends React.Component {
         <label htmlFor="doc-search" className="bx--label">
           Search by element, component, or token, etc
         </label>
-        <input
+        <GlobalSearchInput
           aria-label="Search"
           type="text"
           className="bx--search-input"

@@ -5,10 +5,6 @@ title: Layout
 
 ### It’s fundamental to everything we design. The _2x grid_ is the geometric foundation of all the visual elements of IBM Design, from typography to columns, boxes, icons, and illustrations. It provides structure and guidance for all creative decision-making.
 
-
-
-
-
 <AnchorLinks>
 
 - [Mini unit](#mini-unit)
@@ -36,7 +32,6 @@ title: Layout
     type="resource">
 
 ![](images/github-icon.png)
-
 
   </ClickableTile>
   <ClickableTile
@@ -203,7 +198,7 @@ A grid can be formed with fixed boxes by arranging tiles in an inline block, ico
 
 First choose a base size from the [sizing scale](#sizing-scale), then build up each box in multiples of the base size, following recommended [aspect ratios](#aspect-ratio). A grid emerges when each tile uses a multiple of a consistent base size. Following this method ensures consistency of tile sizes, even across products.
 
-### Hybrid
+### Hybrid boxes
 
 Hybrid boxes have different scaling rules in each dimension, so they do not use aspect ratios. When a user would resize the browser expecting content to scale in one dimension but not the other, use hybrid boxes.
 
@@ -271,11 +266,18 @@ The flexible panels allow for both collapsed and expanded states. The expanded s
 
 <Video vimeoId="292975726" />
 
+
+<br />
+<br />
+
 #### Fixed panels
 
 Fixed panels maintain a static width, cannot be collapsed, and also exist outside of the responsive grid.
 
 <Video vimeoId="292988292" />
+
+<br />
+<br />
 
 #### Floating panels
 
@@ -294,7 +296,7 @@ We provide a sizing scale for both fixed and fluid sizes. Use it to size content
 - [Scaling multiple](#scaling-multiple)
 - [Aspect ratio](#aspect-ratio)
 - [Vertical rhythm](#vertical-rhythm)
-- [Components]#components)
+- [Components](#components)
 
 </AnchorLinks>
 
@@ -342,10 +344,9 @@ When sizing boxes, constrain dimensions to one of the aspect ratios shown below 
 
 Choose an aspect ratio from the table, then multiply the base unit in each dimension as needed to set width and height, maintaining the ratio in either portrait or landscape.
 
-| Aspect ratios                 |
-| ----------------------------- |
-| 1:1, 2:1, 2:3, 3:2, 4:3, 16:9 |
-|                               |
+| Aspect ratios                 |     |
+| ----------------------------- | --- |
+| 1:1, 2:1, 2:3, 3:2, 4:3, 16:9 |     |
 
 For example, to size a fluid box with a 2:1 landscape aspect ratio, you could span 4 columns in width and 2 column-widths of height. To size a fixed box with the same aspect ratio, you could start with an 80 pixel base unit, then multiply it by 4 in width and 2 in height, for a fixed box size of 320 by 160.
 
@@ -361,12 +362,16 @@ Use the fixed sizing scale to set vertical spacing between sections, by adding i
 
 <Video vimeoId="292028388" />
 
+### 
+
 <GridWrapper col_lg="8" flex="true">
   <DoDontExample
     correct="true"
     label="Mini unit is the guide when needed. Spacer snaps to the text box and does not necessarily need to snap to the mini unit.">
 
 ![Mini unit is the guide when needed. Spacer snaps to the text box and does not necessarily need to snap to the mini unit.](images/Layout_overview_Visual-rhythm-do.svg)
+
+
 
   </DoDontExample>
   <DoDontExample label="In Sketch, always use “Auto” in alignment to ensure the text box is fitting with the content. Spacer snaps to the text box.">

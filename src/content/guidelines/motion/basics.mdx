@@ -1,5 +1,4 @@
 ---
-label: Motion can bring your work to life, guide users through complex experiences, and help move forward—from here to there, now to next, start to finish—and make progress.
 title: Motion
 tabs: ['Basics', 'Choreography', 'Resources']
 ---
@@ -7,10 +6,11 @@ tabs: ['Basics', 'Choreography', 'Resources']
 import { Tab } from 'carbon-components-react';
 
 
-### Motion is a powerful tool in designing and building communication and user experience. It can bring your work to life, guide users through complex experiences, and help move forward—from here to there, now to next, start to finish—and make progress.
+### Motion can bring the screen to life, guide users through complex experiences, and help move them forward—from here to there, now to next, start to finish—and make progress.
 
 <AnchorLinks>
 
+- [Carbon in motion](#carbon-in-motion)
 - [Style](#style)
 - [Easing](#easing)
 - [Duration](#duration)
@@ -21,12 +21,12 @@ import { Tab } from 'carbon-components-react';
 
 <GridWrapper col_lg="8" flex="true" bleed="true">
   <ClickableTile
-    title="Motion Generator"
+    title="Motion generator"
     href="https://ibm.github.io/motion/"
     type="resource"
   />
   <ClickableTile
-    title="IBM Motion Package"
+    title="IBM motion package"
     href="https://github.com/IBM/carbon-elements/tree/master/packages/motion"
     type="resource"
   />
@@ -36,9 +36,15 @@ import { Tab } from 'carbon-components-react';
 
 <br />
 
+## Carbon in motion
+
+[Carbon components](../../components/overview/) have motion built in for microinteractions. However, the motion design of the overarching UI — that is, how the components interact with each other and enter and exit the page itself — is up to each product team to implement. Use this guidance to customize, combine, coordinate, and choreograph this aspect of motion in the UI.
+
 ## Style
 
-IBM Design System recognizes different moments in user's experience, and offers two styles of motion—_productive_ motion, and _expressive_ motion. The motion curves are designed to reflect the philosophical duality of Man and Machine.
+Carbon recognizes different types of moments in users' experience and offers two styles of motion—_productive_ motion, and _expressive_ motion. The motion curves are designed to reflect the duality of man and machine.
+
+Productivity and expression are both essential to an interface. Reserve expressive motion for occasional, important moments, to better capture the user’s attention and offer a rhythmic break to the productive experience.
 
 <WebsiteTabs>
 <Tab label="Curves"><div>
@@ -56,8 +62,6 @@ IBM Design System recognizes different moments in user's experience, and offers 
   <p>Expressive</p>
 
 ![Curve graphs representing differences between productive and expressive animation curves](images/Motion_overview_Curves_expressive.svg)
-
-/>
 
 </div>
 
@@ -77,20 +81,16 @@ IBM Design System recognizes different moments in user's experience, and offers 
 </div></Tab>
 </WebsiteTabs>
 
-### Productive
+### Productive motion
 
-Productive motion creates a sense of efficiency and responsiveness, while being subtle. Use Productive motion for moments when user needs to focus on tasks—micro-interactions such as button interaction and dropdown menus, revealing additional information upon user's request, or rendering data tables and visualizations.
+Productive motion creates a sense of efficiency and responsiveness, while remain subtle and out of the way. Productive motion is appropriate for moments when the user needs to focus on completing tasks. Microinteractions in Carbon such as button states, dropdowns, revealing additional information, or rendering data tables and visualizations were all designed with productive motion.
 
-### Expressive
+### Expressive motion
 
-Expressive motion delivers enthusiastic and vibrant, thus more visible movement. Use expressive motion for significant moments such as user opening a new page or clicking the primary action button, or when the movement itself conveys a meaning or needs to be noticed by the user such as system alert or notification box appearing.
-
-Productivity and Expression are both essential to an interface. Reserve Expressive motion for occasional, important moments to better capture user’s attention, and offer rhythmic break to the productive experience.
-
-Our [components](../../components/overview/) have basic motion build in. Use this guidance to customize motion, combine and coordinate motion through out experiences.
+Expressive motion delivers enthusiastic, vibrant, and highly visible movement. Use expressive motion for significant moments such as opening a new page, clicking the primary action button, or when the movement itself conveys a meaning. System alerts and the appearance of notification boxes are great cases for expressive motion.
 
 <GridWrapper col_lg="12" flex="true">
-<DoDontExample correct="true" full_width="true" label="Productive moments are labeled blue, and Expressive moments are labeled magenta.">
+<DoDontExample correct="true" full_width="true" label="Productive moments are labeled in blue, and expressive moments are labeled in magenta.">
 
 <Video vimeoId="310583077" />
 
@@ -99,9 +99,9 @@ Our [components](../../components/overview/) have basic motion build in. Use thi
 
 ## Easing
 
-Strictly linear movement appears unnatural to the human eye. Elements on the screen speed up quickly and slow down smoothly, obeying the physics of a light-weight material. "Easing curves" describe the precise amount of accelerations in motion. We commonly use one of these three types of easing.
+Strictly linear movement appears unnatural to the human eye. Elements on the screen should speed up quickly and slow down smoothly, obeying the physics of a light-weight material. "Easing curves" describe the precise amount of accelerations in motion. We commonly use one of these three types of easing.
 
-<GridWrapper col_lg="8" flex="true">
+<GridWrapper col_lg="12" flex="true">
 <DoDontExample correct="true" full_width="true" label="Elements on the screen speed up quickly and slow down smoothly, obeying the physics of a light-weight material.">
 
 <Video vimeoId="310582370" />
@@ -111,10 +111,10 @@ Strictly linear movement appears unnatural to the human eye. Elements on the scr
 
 <br />
 
-Avoid easing curves that are unnatural, distracting, or decorative should be avoided. IBM motion is essential and efficient. We guide the users to value as quickly as possible.
+Avoid easing curves that are unnatural, distracting, or purely decorative. IBM motion is essential and efficient, guiding users to value as quickly as possible.
 
-<GridWrapper col_lg="8" flex="true">
-<DoDontExample correct="false" full_width="true" label="Easing curves that suggest bounce, stretch, or sudden stops are not recommended.">
+<GridWrapper col_lg="12" flex="true">
+<DoDontExample correct="false" full_width="true" label="Do not use easing curves that suggest bounce, stretch, or sudden stops.">
 
 <Video vimeoId="310582418" />
 
@@ -123,7 +123,7 @@ Avoid easing curves that are unnatural, distracting, or decorative should be avo
 
 ### Standard easing
 
-Use `standard-easing` when an element is visible from the beginning to end of a motion. Tiles expanding and table rows sorting are good examples.
+Use `standard-easing` when an element is visible from the beginning to the end of a motion. Expanding tiles and the sorting of table rows are good examples.
 
 <WebsiteTabs>
 <Tab label="Curves">
@@ -142,14 +142,16 @@ Use `standard-easing` when an element is visible from the beginning to end of a 
 </Tab>
 </WebsiteTabs>
 
-| Curves        | Productive                      | Expressive                      |
-| ------------- | ------------------------------- | ------------------------------- |
-| CSS           | cubic-bezier(0.2, 0, 0.38, 0.9) | cubic-bezier(0.4, 0.14, 0.3, 1) |
-| After Effects | Outgoing 20%, incoming 62%      | Outgoing 40%, incoming 70%      |
+
+| Style      | IBM Motion package         | CSS                           | After Effects             |
+| ---------- | -------------------------- | ----------------------------- | ------------------------- |
+| Productive | `motion(standard, productive)` | cubic-bezier(0.2, 0, 0.38, 0.9) | outgoing 20%, incoming 62% |
+| Expressive | `motion(standard, expressive)` | cubic-bezier(0.4, 0.14, 0.3, 1) | outgoing 40%, incoming 70% |
+
 
 ### Entrance easing
 
-Use `entrance-ease` when adding elements to the view such as a modal or toaster appearing, or moving in response to users' input, such as dropdown opening or toggle. An element quickly appears and slows down to a stop.
+With this style, an element quickly appears and slows down to a stop. Use `entrance-ease` when adding elements to the view, such as a modal or toaster appearing. Elements moving in response to the user's input, such as a dropdown opening or toggle switching should also use this style.
 
 <WebsiteTabs>
 <Tab label="Curves">
@@ -168,14 +170,18 @@ Use `entrance-ease` when adding elements to the view such as a modal or toaster 
 </Tab>
 </WebsiteTabs>
 
-| Curves        | Productive                    | Expressive                 |
-| ------------- | ----------------------------- | -------------------------- |
-| CSS           | cubic-bezier(0, 0, 0.38, 0.9) | cubic-bezier(0, 0, 0.3, 1) |
-| After Effects | Outgoing 0%, incoming 62%     | Outgoing 0%, incoming 70%  |
+
+| Style      | IBM Motion package         | CSS                           | After Effects             |
+| ---------- | -------------------------- | ----------------------------- | ------------------------- |
+| Productive | `motion(entrance, productive)` | cubic-bezier(0, 0, 0.38, 0.9) | outgoing 0%, incoming 62% |
+| Expressive | `motion(entrance, expressive)` | cubic-bezier(0, 0, 0.3, 1)    | outgoing 0%, incoming 70% |
+
 
 ### Exit easing
 
 Use `exit-easing` when removing elements from view, such as closing a modal or toaster. The element speeds up as it exits from view, implying that its departure from the screen is permanent.
+
+An exception to exits: if an element leaves the view but stays nearby, ready to reappear upon user action, use standard easing instead. A good example of this is a side panel. The panel leaves the view, but slows down as it exits, implying that it would come to rest just outside the view, and ready to be recalled.
 
 <WebsiteTabs>
 <Tab label="Curves">
@@ -194,26 +200,34 @@ Use `exit-easing` when removing elements from view, such as closing a modal or t
 </Tab>
 </WebsiteTabs>
 
-| Curves        | Productive                   | Expressive                    |
-| ------------- | ---------------------------- | ----------------------------- |
-| CSS           | cubic-bezier(0.2, 0, 1, 0.9) | cubic-bezier(0.4, 0.14, 1, 1) |
-| After Effects | Outgoing 20%, incoming 0%    | Outgoing 40%, incoming 0%     |
+| Style      | IBM motion package         | CSS                           | After Effects             |
+| ---------- | -------------------------- | ----------------------------- | ------------------------- |
+| Productive | `motion(exit, productive)` | cubic-bezier(0.2, 0, 1, 0.9)  | outgoing 20%, incoming 0% |
+| Expressive | `motion(exit, expressive)` | cubic-bezier(0.4, 0.14, 1, 1) | outgoing 40%, incoming 0% |
 
-An exception to exits: if an element leaves the view but stays nearby, ready to reappear upon user action, use standard easing instead. A good example of this is a side panel. The panel would leave the view, but slows down as it exits, implying that it would come to rest just outside the view, and ready to be recalled.
 
-### Easing curve summary
+### Summary on easing
 
-Cubic-bezier curve notation is the standard way to express easing curves. [IBM Motion Package](https://github.com/IBM/carbon-elements/tree/master/packages/motion) has the easing curves stored as tokens for fast access.
+The [IBM motion package](https://github.com/IBM/carbon-elements/tree/master/packages/motion) has the easing curves stored for fast access. This is the recommended method to call an easing curve and stay connected to receive any future updates.
 
-| Easing          | Productive                      | Expressive                      |
+| Easing curve    | Productive                     | Expressive                      |
+| --------------- | ------------------------------ | ------------------------------- |
+| Standard easing | `motion(standard, productive)` | `motion(standard, expressive)`  |
+| Entrance easing | `motion(entrance, productive)` | `motion(entrance, expressive)`  |
+| Exit easing     | `motion(exit, productive)`     | `motion(exit, expressive)`      |
+
+If you are unable to use the above method, cubic-bezier curve notation is the standard way to express easing curves.
+
+| Easing curve    | Productive                      | Expressive                      |
 | --------------- | ------------------------------- | ------------------------------- |
 | Standard easing | cubic-bezier(0.2, 0, 0.38, 0.9) | cubic-bezier(0.4, 0.14, 0.3, 1) |
 | Entrance easing | cubic-bezier(0, 0, 0.38, 0.9)   | cubic-bezier(0, 0, 0.3, 1)      |
 | Exit easing     | cubic-bezier(0.2, 0, 1, 0.9)    | cubic-bezier(0.4, 0.14, 1, 1)   |
 
+
 ## Duration
 
-Duration is calculated based on the style and size of the motion. Among the two motion styles, _Productive_ motion is significantly faster than _Expressive_ motion. Motion’s duration should be dynamic based on the size of the animation - the larger the change in distance (traveled) or size (scaling) of the element, the longer the animation takes.
+Duration is calculated based on the style and size of the motion. Among the two motion styles, productive motion is significantly faster than expressive motion. Motion’s duration should be dynamic based on the size of the animation; the larger the change in distance (traveled) or size (scaling) of the element, the longer the animation takes.
 
 <GridWrapper col_lg="12" flex="true">
 <DoDontExample correct="true" full_width="true" label="Duration contrast between a taller and a shorter component.">
@@ -225,7 +239,7 @@ Duration is calculated based on the style and size of the motion. Among the two 
 
 <br />
 
-When custom duration is possible, please use the [Motion Generator](https://ibm.github.io/motion/) to get the customized duration calculated for you element. We uses a non-linear duration scale to achieve better perceived consistency across all distances.
+When custom duration is possible, please use the [Motion Generator](https://ibm.github.io/motion/) to get the customized duration calculated for your element. Carbon uses a non-linear duration scale to achieve better perceived consistency across all distances.
 
 <GridWrapper col_lg="8" flex="true" bleed="true">
   <ClickableTile
@@ -237,9 +251,15 @@ When custom duration is possible, please use the [Motion Generator](https://ibm.
 
 <br />
 
-We are working on making dynamic duration a build-in feature for all Carbon components. Currently, we offer two static values as tokens for easier implementation.
+### Duration tokens
 
-| Style      | Token                   | Value |
-| ---------- | ----------------------- | ----- |
-| Productive | `$transition--base`      | 100ms |
-| Expressive | `$transition--expansion` | 150ms |
+Dynamic duration is an upcoming built-in feature for Carbon components and a part of the motion package. Currently, there are six static value tokens for easier implementation.
+
+| Token                   | Usage                                                         | Value |     |
+| ----------------------- | ------------------------------------------------------------- | ----- | --- |
+| `duration--fast-01`     | Micro-interactions such as button and toggle                  | 70ms  | |
+| `duration--fast-02`     | Micro-interactions such as fade                               | 110ms | |
+| `duration--moderate-03` | Micro-interactions, small expansion, short distance movements | 150ms | |
+| `duration--moderate-04` | Expansion, system communication, toast                        | 240ms | |
+| `duration--slow-05`     | Large expansion, important system notifications               | 400ms | |
+| `duration--slow-06`     | Background dimming                                            | 700ms | |
