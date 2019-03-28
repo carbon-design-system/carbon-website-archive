@@ -102,6 +102,13 @@
   }
 }
 
+// removes inline-block styles when headings are directly followinng each other
+.component-docs h3 + h4,
+.component-docs h4 + h4,
+.component-docs h4 + h3 {
+  display: block;
+}
+
 //----------------------------
 // h5
 //----------------------------
