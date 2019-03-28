@@ -9,7 +9,7 @@ module.exports = {
   siteMetadata: {
     title: 'Carbon Design System',
     titleInternal: 'IBM Product Design',
-    siteUrl: 'https://next.carbondesignsystem.com'
+    siteUrl: 'https://www.carbondesignsystem.com'
   },
   plugins: [
     {
