@@ -1,6 +1,7 @@
 //---------------------------------------
 // Button
 //---------------------------------------
+
 .component-example .button .bx--btn {
   margin: 0.5rem;
 }
@@ -8,6 +9,7 @@
 //---------------------------------------
 // Notification
 //---------------------------------------
+
 .component-example__live.component-example__live--notification
   .component-example__live--rendered
   > div {
@@ -23,6 +25,7 @@
 //---------------------------------------
 // Loading
 //---------------------------------------
+
 .component-example .loading .bx--loading-overlay {
   position: absolute;
 }
@@ -42,6 +45,10 @@
   margin-bottom: 2rem;
 }
 
+.component-example .bx--form-item.bx--checkbox-wrapper {
+  margin-bottom: .5rem;
+}
+
 //---------------------------------------
 // Tabs
 //---------------------------------------
@@ -50,9 +57,15 @@
   position: static;
 }
 
+
+.component-example__live .tabs .bx--tabs + div {
+  margin-top: 2rem;
+}
+
 //---------------------------------------
 // UI Shell
 //---------------------------------------
+
 .component-example__live--ui-shell {
   position: relative;
 }
@@ -60,4 +73,22 @@
 .component-example__live--ui-shell .bx--header,
 .component-example__live--ui-shell .bx--side-nav {
   position: absolute;
+}
+
+//---------------------------------------
+// Date picker
+//---------------------------------------
+
+.component-example .flatpickr-calendar {
+  margin-left: -1rem;
+  margin-top: -1rem;
+}
+
+//---------------------------------------
+// Tooltip
+//---------------------------------------
+
+.component-example__live .bx--tooltip {
+  margin-left: -1rem;
+  margin-top: -.5rem;
 }
