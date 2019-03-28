@@ -63,17 +63,20 @@ $font-prefix: '/fonts';
     width: 100%;
     height: 3rem;
 
-    .#{$prefix}--dropdown {
+    .#{$prefix}--list-box {
       display: inline-block;
       width: 50%;
-      height: 100%;
+      height: 3rem;
       background: $ui-02;
-
+      
       .#{$prefix}--list-box__field {
         background: $ui-02;
         height: 3rem;
-        border-bottom: 1px solid $carbon--gray-20;     
-
+        border-bottom: 1px solid $carbon--gray-20; 
+        &:focus {
+          outline-color: transparent;
+        } 
+        
         .#{$prefix}--list-box__label {
           font-weight: 400;
           line-height:1rem;
@@ -97,25 +100,31 @@ $font-prefix: '/fonts';
         box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
 
         .#{$prefix}--list-box__menu-item {
-          box-sizing: border-box;
-          height: 3rem;
-          border-bottom: 1px solid $carbon--gray-20;
+          position: relative;
+          height: auto;
+          border-bottom: none;
+          padding: 1rem;
 
-          &::before,
+          &::before {
+            content: none;
+          }
           &::after {
-            // content: none;
-            background: $ui-02;
+            content: '';
+            position: absolute;
+            z-index: 2;
+            left: 1rem;
+            right: 1rem;
+            bottom: -1px;
+            height: 1px;
+            background: $hover-ui;
           }
           &:hover,
           &.#{$prefix}--list-box__menu-item--active,
           &.#{$prefix}--list-box__menu-item--highlighted {
             background: $hover-ui;
-            border-color: transparent;
 
-            &::before,
             &::after {
-              background: $hover-ui;
-              border-color: transparent;
+              background: $carbon--white-0;
             }
           }
         }
@@ -144,7 +153,7 @@ $font-prefix: '/fonts';
     }   
   }
 
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     flex-direction: row;
     .dropdown_wrapper {
       width: 50%;
@@ -161,7 +170,7 @@ $font-prefix: '/fonts';
     }
   }
 
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     .#{$prefix}--input-range-wrapper {
       width: 25%;
     }
@@ -173,7 +182,6 @@ $font-prefix: '/fonts';
   background: $ui-02;
 
   .#{$prefix}--custom-textarea {
-    // font-family: 'IBM Plex Sans';
     font-size: 48px;
     resize: none;
     border: none;
