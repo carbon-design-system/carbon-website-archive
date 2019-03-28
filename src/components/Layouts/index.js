@@ -247,7 +247,7 @@ class Layout extends React.Component {
                 tabIndex="-1"
                 href=" https://www.carbondesignsystem.com">
                 <button
-                  class="bx--btn bx--btn--secondary bx--btn--sm"
+                  className="bx--btn bx--btn--secondary bx--btn--sm"
                   type="button">
                   <span>Go to v9</span>
                   <ArrowRight20 />
