@@ -266,11 +266,18 @@ The flexible panels allow for both collapsed and expanded states. The expanded s
 
 <Video vimeoId="292975726" />
 
+
+<br />
+<br />
+
 #### Fixed panels
 
 Fixed panels maintain a static width, cannot be collapsed, and also exist outside of the responsive grid.
 
 <Video vimeoId="292988292" />
+
+<br />
+<br />
 
 #### Floating panels
 
@@ -337,10 +344,9 @@ When sizing boxes, constrain dimensions to one of the aspect ratios shown below 
 
 Choose an aspect ratio from the table, then multiply the base unit in each dimension as needed to set width and height, maintaining the ratio in either portrait or landscape.
 
-| Aspect ratios                 |
-| ----------------------------- |
-| 1:1, 2:1, 2:3, 3:2, 4:3, 16:9 |
-|                               |
+| Aspect ratios                 |     |
+| ----------------------------- | --- |
+| 1:1, 2:1, 2:3, 3:2, 4:3, 16:9 |     |
 
 For example, to size a fluid box with a 2:1 landscape aspect ratio, you could span 4 columns in width and 2 column-widths of height. To size a fixed box with the same aspect ratio, you could start with an 80 pixel base unit, then multiply it by 4 in width and 2 in height, for a fixed box size of 320 by 160.
 
@@ -356,12 +362,16 @@ Use the fixed sizing scale to set vertical spacing between sections, by adding i
 
 <Video vimeoId="292028388" />
 
+### 
+
 <GridWrapper col_lg="8" flex="true">
   <DoDontExample
     correct="true"
     label="Mini unit is the guide when needed. Spacer snaps to the text box and does not necessarily need to snap to the mini unit.">
 
 ![Mini unit is the guide when needed. Spacer snaps to the text box and does not necessarily need to snap to the mini unit.](images/Layout_overview_Visual-rhythm-do.svg)
+
+
 
   </DoDontExample>
   <DoDontExample label="In Sketch, always use “Auto” in alignment to ensure the text box is fitting with the content. Spacer snaps to the text box.">

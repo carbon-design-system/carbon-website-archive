@@ -29,7 +29,6 @@ import { p, h1, h2, h3, h4, h5, ul, ol } from '../markdown/Markdown';
 
 import timestamp from 'raw-loader!../../../build-timestamp';
 import '../../styles/index.scss';
-import '../../styles/experimental.scss';
 
 import { MDXProvider } from '@mdx-js/tag';
 
@@ -248,7 +247,7 @@ class Layout extends React.Component {
                 tabIndex="-1"
                 href=" https://www.carbondesignsystem.com">
                 <button
-                  class="bx--btn bx--btn--secondary bx--btn--sm"
+                  className="bx--btn bx--btn--secondary bx--btn--sm"
                   type="button">
                   <span>Go to v9</span>
                   <ArrowRight20 />

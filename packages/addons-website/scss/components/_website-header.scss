@@ -28,7 +28,7 @@ a.#{$prefix}--header__name {
   font-weight: 600;
   padding-left: 0.5rem;
 
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     padding-left: 1rem;
   }
 }
@@ -42,7 +42,7 @@ a.#{$prefix}--header__name {
   border-width: 2px;
   display: block;
 
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     display: none;
   }
 }
