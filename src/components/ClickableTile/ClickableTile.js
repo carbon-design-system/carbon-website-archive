@@ -14,7 +14,7 @@ export default class ClickTile extends React.Component {
     type: PropTypes.string,
     description: PropTypes.string,
     excerpt: PropTypes.string,
-    dark: PropTypes.bool,
+    dark: PropTypes.string,
   };
 
   render() {
