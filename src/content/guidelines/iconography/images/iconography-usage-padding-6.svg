@@ -7,8 +7,10 @@
         <rect id="Rectangle-3" x="0" y="0" width="352" height="352"></rect>
         <g id="Group-5" transform="translate(56.000000, 56.000000)">
             <g id="Group">
-                <g id="Group-Copy" transform="translate(74.621849, 74.621849)">
-                    <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="101.848739" height="101.848739"></rect>
+                <rect id="Rectangle" stroke="#97C1FF" fill="#EDF4FF" x="0.5" y="0.5" width="239" height="239"></rect>
+                <rect id="Rectangle-Copy-26" stroke="#97C1FF" fill="#FFFFFF" x="68" y="68" width="104" height="104"></rect>
+                <g id="Group-2" transform="translate(69.000000, 69.000000)">
+                    <rect id="Rectangle" x="-4.97379915e-14" y="6.39488462e-14" width="101.848739" height="101.848739"></rect>
                     <g id="menu" transform="translate(12.731092, 19.096639)" fill="#000000" fill-rule="nonzero">
                         <rect id="Rectangle" x="0" y="57.289916" width="76.3865546" height="6.36554622"></rect>
                         <rect id="Rectangle" x="0" y="19.0966387" width="76.3865546" height="6.36554622"></rect>
@@ -16,8 +18,6 @@
                         <rect id="Rectangle" x="0" y="0" width="76.3865546" height="6.36554622"></rect>
                     </g>
                 </g>
-                <path d="M0.5,0.5 L0.5,239.5 L239.5,239.5 L239.5,0.5 L0.5,0.5 Z M73.1,73.1 L176.5,73.1 L176.5,176.5 L73.1,176.5 L73.1,73.1 Z" id="Combined-Shape" stroke="#97C1FF" fill="#EDF4FF"></path>
-                <rect id="Rectangle" stroke="#97C1FF" x="0.5" y="0.5" width="239" height="239"></rect>
             </g>
         </g>
     </g>
