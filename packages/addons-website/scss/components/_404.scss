@@ -5,7 +5,7 @@
   min-height: calc(100vh - 418px);
   width: 100%;
 
-  @include breakpoint('xlg') {
+ @include carbon--breakpoint('xlg')  {
     padding-top: rem(48px);
   }
 }
@@ -14,7 +14,7 @@
   margin-top: rem(24px);
   margin-bottom: rem(32px);
 
-  @include breakpoint('xlg') {
+ @include carbon--breakpoint('xlg')  {
     margin-bottom: rem(48px);
   }
 }

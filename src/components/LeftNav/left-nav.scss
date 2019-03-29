@@ -11,7 +11,7 @@
   border-right-width: 0px;
 }
 
-@include breakpoint('lg') {
+@include carbon--breakpoint('lg') {
   .bx--side-nav.side-nav,
   .side-nav__closed,
   .side-nav__closed--final {
@@ -34,7 +34,7 @@
   z-index: 500;
 }
 
-@include breakpoint('lg') {
+@include carbon--breakpoint('lg') {
   .side-nav-click-to-close {
     display: none;
   }
