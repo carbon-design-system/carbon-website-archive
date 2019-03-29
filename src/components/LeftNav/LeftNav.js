@@ -82,7 +82,7 @@ export default class LeftNav extends React.Component {
                   <SideNavLink
                     icon={<Launch16 />}
                     href="javascript:void(0)"
-                    to="/resources#github"
+                    to="/resources#github-repos"
                     className="bx--side-nav--website-link"
                     element={Link}>
                     GitHub Repos
