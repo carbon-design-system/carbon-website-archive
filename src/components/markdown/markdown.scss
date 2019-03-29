@@ -86,6 +86,10 @@
   margin-top: rem(48px);
 }
 
+.component-docs h3 + h4 {
+  margin-top: 0;
+}
+
 // Targets heading elements when they are the first element on a page to remove top margin
 .page-content > div > .ibm--row:first-child {
   .page-h4,
