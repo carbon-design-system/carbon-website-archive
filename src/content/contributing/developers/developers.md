@@ -2,7 +2,7 @@
 title: Developers
 ---
 
-**Welcome and thank you for contributing!** The Carbon team is committed to maintaining consistent, quality guidelines. Below are our contributing guidelines for [carbon-components](https://github.com/ibm/carbon-components) and [carbon-components-react](https://github.com/ibm/carbon-components-react).
+**Welcome and thank you for contributing!** The Carbon team is committed to maintaining consistent, quality guidelines. Below are our contributing guidelines for [carbon-components](https://github.com/ibm/carbon-components), [carbon-components-react](https://github.com/ibm/carbon-components-react), [carbon-components-angular](https://github.com/IBM/carbon-components-angular) and [carbon-components-vue](https://github.com/carbon-design-system/carbon-components-vue).
 
 ## Carbon components
 
@@ -28,3 +28,7 @@ title: Developers
 ## Carbon components Angular
 
 [Contributing guidelines](https://github.com/IBM/carbon-components-angular/blob/master/README.md#contributing)
+
+## Carbon components Vue
+
+[Contributing guidelines](https://github.com/carbon-design-system/carbon-components-vue/blob/master/.github/CONTRIBUTING.md)

@@ -4,84 +4,94 @@ tabs: ['Code', 'Usage', 'Style']
 ---
 
 
-<component 
+<component
     name="Primary button"
     component="button"
-    variation="button--primary" 
+    variation="button--primary"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="button--primary"
     >
 </component>
-<component 
+<component
     name="Secondary button"
     component="button"
-    variation="button--secondary" 
+    variation="button--secondary"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="button--secondary"
     >
 </component>
-<component 
+<component
     name="Tertiary button"
     component="button"
-    variation="button--tertiary" 
+    variation="button--tertiary"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="button--tertiary"
     >
 </component>
-<component 
+<component
     name="Ghost button"
     component="button"
-    variation="button--ghost" 
+    variation="button--ghost"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="button--ghost"
     >
 </component>
-<component 
+<component
     name="Danger button"
     component="button"
-    variation="button--danger--primary" 
+    variation="button--danger--primary"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="button--danger"
     >
 </component>
-<component 
+<component
     name="Small primary button"
     component="button"
-    variation="button--primary--small" 
+    variation="button--primary--small"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="button--primary&knob-small=true"
     >
 </component>
-<component 
+<component
     name="Small secondary button"
     component="button"
-    variation="button--secondary--small" 
+    variation="button--secondary--small"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="button--secondary&knob-small=true"
     >
 </component>
-<component 
+<component
     name="Small tertiary button"
     component="button"
-    variation="button--tertiary--small" 
+    variation="button--tertiary--small"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="button--tertiary&knob-small=true"
     >
 </component>
-<component 
+<component
     name="Small ghost button"
     component="button"
-    variation="button--ghost--small" 
+    variation="button--ghost--small"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="button--ghost&knob-small=true"
     >
 </component>
-<component 
+<component
     name="Small danger button"
     component="button"
-    variation="button--danger--primary--small" 
+    variation="button--danger--primary--small"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="button--danger&knob-small=true"
     >
 </component>
 <component-docs component="button" experimental="true"></component-docs>

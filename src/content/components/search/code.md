@@ -3,21 +3,23 @@ title: Search
 tabs: ['Code', 'Usage', 'Style']
 ---
 
-<component 
+<component
     name="Small search"
-    component="search" 
+    component="search"
     variation="search--small"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="search--default"
     >
 </component>
 
-<component 
+<component
     name="Large search"
-    component="search" 
+    component="search"
     variation="search--large"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="search--default&knob-large=true"
     >
 </component>
 

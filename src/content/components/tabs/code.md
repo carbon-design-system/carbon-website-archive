@@ -10,6 +10,7 @@ tabs: ['Code', 'Usage', 'Style']
     variation="tabs"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="tabs--default"
     >
 </component>
 <component-docs component="tabs" experimental="true"></component-docs>

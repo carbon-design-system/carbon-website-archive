@@ -1,6 +1,6 @@
 ---
 title: Developers
-tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
+tabs: ['Vanilla', 'React', 'Angular', 'Vue', 'Other frameworks']
 ---
 
 

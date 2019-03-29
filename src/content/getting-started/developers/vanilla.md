@@ -1,6 +1,6 @@
 ---
 title: Developers
-tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
+tabs: ['Vanilla', 'React', 'Angular', 'Vue', 'Other frameworks']
 ---
 
 
@@ -46,7 +46,7 @@ $ yarn add carbon-components
     <li><a href="#scss">SCSS</a></li>
     <li><a href="#javascript">JavaScript</a></li>
     <li><a href="#polyfills-for-older-browsers">Polyfills for older browsers</a></li>
-    
+
 </ul>
 </anchor-links>
 
@@ -162,7 +162,7 @@ Carbon Components are built to be included individually and not clobber global s
 
 Carbon Component has component JavaScript classes, each of which correspond to a component found in [our components page](../../components/overview). The first steps to work with component JavaScript classes are the following:
 
-#### 1. Getting component JavaScript class reference 
+#### 1. Getting component JavaScript class reference
 
 <br>
 

@@ -5,21 +5,23 @@ tabs: ['Code', 'Usage', 'Style']
 
 
 
-<component 
+<component
     name="Dropdown"
-    component="dropdown" 
+    component="dropdown"
     variation="dropdown"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="dropdown--default"
     >
 </component>
-<component 
+<component
     name="Dropdown (Up)"
-    component="dropdown" 
+    component="dropdown"
     variation="dropdown--up"
     codepen="eeGYvQ"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="dropdown--default&knob-up=true"
     >
 </component>
 

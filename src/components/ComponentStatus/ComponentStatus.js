@@ -14,6 +14,7 @@ class ComponentStatus extends React.Component {
     let vanilla;
     let react;
     let angular;
+    let vue;
     let experimental;
 
     if (currentItem.tag && currentItem.tag === 'new') {
@@ -52,6 +53,16 @@ class ComponentStatus extends React.Component {
       angular = notApplicableIcon;
     }
 
+    if (currentItem.vue === 'ready') {
+      vue = readyIcon;
+    } else if (currentItem.vue === 'under-review') {
+      vue = underReviewIcon;
+    } else if (currentItem.vue === 'deprecated') {
+      vue = deprecatedIcon;
+    } else {
+      vue = notApplicableIcon;
+    }
+
     if (currentItem.experimental === 'ready') {
       experimental = readyIcon;
     } else if (currentItem.experimental === 'under-review') {
@@ -69,6 +80,7 @@ class ComponentStatus extends React.Component {
         <td>{vanilla}</td>
         <td>{react}</td>
         <td>{angular}</td>
+        <td>{vue}</td>
         <td>{experimental}</td>
       </tr>
     );
@@ -151,6 +163,7 @@ class ComponentStatus extends React.Component {
                 <th>Vanilla</th>
                 <th>React</th>
                 <th>Angular</th>
+                <th>Vue</th>
                 <th>Experimental</th>
               </tr>
             </thead>

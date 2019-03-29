@@ -10,6 +10,7 @@ tabs: ['Code', 'Usage', 'Style']
     variation="date-picker"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="datepicker--simple"
     >
 </component>
 <component
@@ -18,6 +19,7 @@ tabs: ['Code', 'Usage', 'Style']
     variation="date-picker--single"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="datepicker--single"
     >
 </component>
 <component
@@ -26,6 +28,7 @@ tabs: ['Code', 'Usage', 'Style']
     variation="date-picker--range"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="datepicker--range"
     >
 </component>
 <component
@@ -34,6 +37,7 @@ tabs: ['Code', 'Usage', 'Style']
     variation="time-picker"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="timepicker--default"
     >
 </component>
 <component-docs component="date-picker" experimental="true"></component-docs>

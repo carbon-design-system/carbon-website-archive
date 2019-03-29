@@ -26,6 +26,7 @@ src
           ├── other-frameworks.md
           ├── react.md
           ├── vanilla.md
+          ├── vue.md
 ```
 
 ## Frontmatter
@@ -189,10 +190,10 @@ The carbon website has a handful of custom markdown components available for use
 ```
 <grid-wrapper col_lg="8" flex="true">
     <do-dont-example correct=true label="Do: center-align icons when they’re next to text.">
-        <img src="images/iconography-usage-sizing-5.svg" alt="proper alignment">    
+        <img src="images/iconography-usage-sizing-5.svg" alt="proper alignment">
     </do-dont-example>
     <do-dont-example label="Don't: baseline-align icons to the text.">
-        <img src="images/iconography-usage-sizing-6.svg" alt="improper alignment">    
+        <img src="images/iconography-usage-sizing-6.svg" alt="improper alignment">
     </do-dont-example>
 </grid-wrapper>
 
@@ -354,8 +355,8 @@ lorem ipsum dolor sit amet
 </website-tabs>
 ```
 - note the empty line after `<tab label="Tab 1"><div>` and before the first line of content, in this case `lorem ipsum…`. **Verify that there are no whitespace characters in these empty lines**.
-- Do not indent interior components. 
-    - Unfortunately, this component is extra fragile when written inside of a markdown file, because we are passing `<tab>` components into the `<website-tabs>` component, and markdown can interfere when child components are indendented. 
+- Do not indent interior components.
+    - Unfortunately, this component is extra fragile when written inside of a markdown file, because we are passing `<tab>` components into the `<website-tabs>` component, and markdown can interfere when child components are indendented.
 
 
 
@@ -396,6 +397,7 @@ lorem ipsum dolor sit amet
     haslightversion="true" //Optional -If true shows the light/white background switcher
     hasReactVersion="true" //Optional -If true links to react storybook
     hasAngularVersion="true" //Optional -If true links to angular storkbook
+    hasVueVersion="folder-component--story" // Optional -If not empty links to vue storybook
     hasLightBackground="true" //Optional -If true has light background
     experimental="true" //Optional -If true loads experimental version/styles
     >

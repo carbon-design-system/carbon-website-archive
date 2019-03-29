@@ -4,12 +4,13 @@ tabs: ['Code', 'Usage', 'Style']
 ---
 
 
-<component 
+<component
     name="Checkbox"
-    component="checkbox" 
+    component="checkbox"
     variation="checkbox"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="checkbox--default"
     >
 </component>
 <component-docs component="checkbox" experimental="true"></component-docs>

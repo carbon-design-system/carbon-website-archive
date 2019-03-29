@@ -4,12 +4,13 @@ tabs: ['Code', 'Usage', 'Style']
 ---
 
 
-<component 
+<component
     name="Number Input"
-    component="number-input" 
+    component="number-input"
     variation="number-input"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="numberinput--default"
     >
 </component>
 <component-docs component="number-input" experimental="true"></component-docs>

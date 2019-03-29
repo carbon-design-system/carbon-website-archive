@@ -9,6 +9,7 @@ tabs: ['Code', 'Usage', 'Style']
     variation="accordion"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="accordion--default"
     >
 </component>
 <component-docs component="accordion" experimental="true"></component-docs>

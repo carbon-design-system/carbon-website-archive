@@ -4,12 +4,13 @@ tabs: ['Code', 'Usage', 'Style']
 ---
 
 
-<component 
+<component
     name="Breadcrumb"
-    component="breadcrumb" 
+    component="breadcrumb"
     variation="breadcrumb"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="breadcrumb--default"
     >
 </component>
 <component-docs component="breadcrumb" experimental="true"></component-docs>

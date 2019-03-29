@@ -10,6 +10,7 @@ tabs: ['Code', 'Usage', 'Style']
     variation="file-uploader"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="fileuploader--default"
     >
 </component>
 <component-docs component="file-uploader" experimental="true"></component-docs>

@@ -10,6 +10,7 @@ tabs: ['Code', 'Usage', 'Style']
     variation="text-input"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="textinput--default"
     >
 </component>
 
@@ -19,6 +20,7 @@ tabs: ['Code', 'Usage', 'Style']
     variation="text-area"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="textarea--default"
     >
 </component>
 

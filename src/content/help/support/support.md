@@ -57,4 +57,5 @@ Bug reports, feature requests, and general feedback can be delivered to the Carb
 - [carbon-components](https://github.com/IBM/carbon-components/issues/new/choose)
 - [carbon-components-react](https://github.com/IBM/carbon-components-react/issues/new/choose)
 - [carbon-components-angular](https://github.com/IBM/carbon-components-angular/issues/new)
+- [carbon-components-vue](https://github.com/carbon-design-system/carbon-components-vue/issues/new)
 - [carbon-charts](https://github.com/IBM/carbon-charts/issues/new)

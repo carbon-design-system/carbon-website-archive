@@ -19,6 +19,7 @@ Workspaces:
 - #carbon-design-system for questions about the Design System
 - #carbon-components for questions about component styles
 - #carbon-react for questions about our React components
+- #carbon-vue for questions about our Vue components
 
 If these resources don't work out, help us out by filling out a couple of
 details below!

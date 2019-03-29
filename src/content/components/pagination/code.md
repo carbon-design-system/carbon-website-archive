@@ -4,12 +4,13 @@ tabs: ['Code', 'Usage', 'Style']
 ---
 
 
-<component 
+<component
     name="Pagination"
-    component="pagination" 
+    component="pagination"
     variation="pagination"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="pagination--default"
     >
 </component>
 

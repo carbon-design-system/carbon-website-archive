@@ -33,6 +33,13 @@ title: Resources
     >
     <img src="images/github-icon.png" alt="" />
 </clickable-tile>
+<clickable-tile
+    title="Carbon Components Vue"
+    href="https://github.com/carbon-design-system/carbon-components-vue"
+    type="resource"
+    >
+    <img src="images/github-icon.png" alt="" />
+</clickable-tile>
 </grid-wrapper>
 
 ## Tools
@@ -72,6 +79,13 @@ title: Resources
     type="resource"
     >
     <img src="images/react-icon.png" alt="" />
+</clickable-tile>
+<clickable-tile
+    title="Carbon Components Vue Storybook"
+    href="http://vue.carbondesignsystem.com/"
+    type="resource"
+    >
+    <img src="images/vue-icon.png" alt="" />
 </clickable-tile>
 </grid-wrapper>
 

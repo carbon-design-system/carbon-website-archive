@@ -1,6 +1,6 @@
 ---
 title: Developers
-tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
+tabs: ['Vanilla', 'React', 'Angular', 'Vue', 'Other frameworks']
 ---
 
 ## Resources
@@ -21,7 +21,7 @@ tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
     <li><a href="#carbon-angular-library">Carbon Angular library</a></li>
     <li><a href="#install">Install</a></li>
     <li><a href="#development">Development</a></li>
-    
+
 </ul>
 </anchor-links>
 

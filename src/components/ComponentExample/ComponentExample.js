@@ -97,6 +97,7 @@ class ComponentExample extends Component {
     hasLightVersion: PropTypes.string,
     hasReactVersion: PropTypes.string,
     hasAngularVersion: PropTypes.string,
+    hasVueVersion: PropTypes.string,
     hasLightBackground: PropTypes.string,
     experimental: PropTypes.string,
   };
@@ -274,6 +275,7 @@ class ComponentExample extends Component {
       hasLightVersion,
       hasReactVersion,
       hasAngularVersion,
+      hasVueVersion,
       hasLightBackground,
       experimental,
     } = this.props;
@@ -366,6 +368,14 @@ class ComponentExample extends Component {
                 target="_blank"
                 rel="noopener noreferrer">
                 Angular <Launch16 />
+              </a>
+            )}
+            {typeof hasVueVersion === 'string' && (
+              <a
+                href={`http://vue.carbondesignsystem.com/?path=/story/experimental-cv${hasVueVersion}`}
+                target="_blank"
+                rel="noopener noreferrer">
+                Vue <Launch16 />
               </a>
             )}
             {codepenSlug !== undefined && (

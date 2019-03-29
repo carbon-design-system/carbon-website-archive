@@ -10,6 +10,7 @@ tabs: ['Code', 'Usage', 'Style']
     variation="progress-indicator"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="progress--default"
     >
 </component>
 <component-docs component="progress-indicator" experimental="true"></component-docs>

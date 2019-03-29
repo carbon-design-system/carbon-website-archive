@@ -72,6 +72,14 @@ The component libraries give developers a collection of re-usable React componen
     >
     <img src="resources/images/github-icon-inverted.png" alt="" />
 </clickable-tile>
+<clickable-tile
+    dark="true"
+    title="Carbon Components Vue"
+    href="https://github.com/carbon-design-system/carbon-components-vue"
+    type="resource"
+    >
+    <img src="resources/images/github-icon-inverted.png" alt="" />
+</clickable-tile>
 </grid-wrapper>
 
 ### Latest articles

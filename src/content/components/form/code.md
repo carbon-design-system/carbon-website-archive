@@ -4,12 +4,13 @@ tabs: ['Code', 'Usage', 'Style']
 ---
 
 
-<component 
+<component
     name="Form"
-    component="form" 
+    component="form"
     variation="form"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="form--default"
     >
 </component>
 <component-docs component="form"></component-docs>

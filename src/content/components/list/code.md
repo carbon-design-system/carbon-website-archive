@@ -4,21 +4,23 @@ tabs: ['Code', 'Usage', 'Style']
 ---
 
 
-<component 
+<component
     name="Ordered List"
-    component="list" 
+    component="list"
     variation="list--ordered"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="list--default&knob-ordered=true"
     >
 </component>
 
-<component 
+<component
     name="Unordered List"
-    component="list" 
+    component="list"
     variation="list"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="list--default"
     >
 </component>
 <component-docs component="list" experimental="true"></component-docs>

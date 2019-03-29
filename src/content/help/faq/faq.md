@@ -28,9 +28,7 @@ Carbon components are supported in the following browsers:
 
 ### What languages are the components written in?
 
-There are two different implementations of the Carbon Design System. One is a vanilla JavaScript library; that's written in ES6+, SCSS, and HTML and ships deliverables in vanilla JavaScript in ES5 as well as ES6, CSS, SCSS and HTML. The other is a React library that ships a React rewrite of the JavaScript, but uses the same CSS as the core library.
-
-There is also an unofficial, internal-only Angular library for Carbon Components that was built out by a team other than Carbon. Please note that the Carbon team does not maintain this repo.
+There are four different implementations of the Carbon Design System. One is a vanilla JavaScript library; that's written in ES6+, SCSS, and HTML and ships deliverables in vanilla JavaScript in ES5 as well as ES6, CSS, SCSS and HTML. Another is a React library that ships a React rewrite of the JavaScript, but uses the same CSS as the core library. There are also Angular and Vue libraries that uses the same CSS.
 
 ### I see a bug. How do I report it?
 
@@ -51,6 +49,7 @@ First, make sure the problem is reproducible. Once confirmed, please open an iss
 - [carbon-components](https://github.com/IBM/carbon-components/issues/new/choose)
 - [carbon-components-react](https://github.com/IBM/carbon-components-react/issues/new/choose)
 - [carbon-components-angular](https://github.com/IBM/carbon-components-angular/issues/new)
+- [carbon-components-vue](https://github.com/carbon-design-system/carbon-components-vue/issues/new)
 - [carbon-charts](https://github.com/IBM/carbon-charts/issues/new)
 
 ### What can I expect for a response to my bug report?

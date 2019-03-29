@@ -11,6 +11,7 @@ tabs: ['Code', 'Usage', 'Style']
     variation="radio-button"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="radiobutton--default"
     >
 </component>
 <component-docs component="radio-button" experimental="true"></component-docs>

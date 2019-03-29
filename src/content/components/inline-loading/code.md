@@ -10,6 +10,7 @@ tabs: ['Code', 'Usage', 'Style']
     variation="inline-loading"
     experimental="true"
     hasReactVersion="true"
+    hasVueVersion="inlineloading--default"
     >
 </component>
 <component-docs component="inline-loading" experimental="true"></component-docs>
