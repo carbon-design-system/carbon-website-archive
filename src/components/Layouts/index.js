@@ -21,16 +21,14 @@ import {
   Information20,
   Search20,
 } from '@carbon/icons-react';
-import { WebsiteFooter, WebsiteSwitcher } from '@carbon/addons-website';
+import { WebsiteFooter, WebsiteSwitcher, WebsiteCodeSnippet } from '@carbon/addons-website';
 
-import Snippet from '../CodeSnippet';
 import PageTable from '../PageTable';
 
 import { p, h1, h2, h3, h4, h5, ul, ol } from '../markdown/Markdown';
 
 import timestamp from 'raw-loader!../../../build-timestamp';
 import '../../styles/index.scss';
-import '../../styles/experimental.scss';
 
 import { MDXProvider } from '@mdx-js/tag';
 
@@ -49,15 +47,7 @@ class Layout extends React.Component {
 
   componentDidMount() {
     this.checkWidth();
-
-    const scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 200,
-      durationMin: 90,
-      durationMax: 800,
-      easing: 'easeInOutCubic',
-      offset: 24,
-      topOnEmptyHash: false,
-    });
+    this.addSmoothScroll();
   }
 
   handleSearchClick = isSearchOpen => {
@@ -165,6 +155,29 @@ class Layout extends React.Component {
     }
   };
 
+  addSmoothScroll = () => {
+    const SmoothScroll = require('smooth-scroll');
+    const scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 400,
+      durationMin: 250,
+      durationMax: 700,
+      easing: 'easeInOutCubic',
+      offset: 87, // height of both header bars
+      topOnEmptyHash: false,
+      clip: true
+    });
+
+    if (window.location.hash) {
+      const hashElement = document.querySelector(window.location.hash);
+      if (hashElement.offsetTop) {
+        window.scrollTo(0, hashElement.offsetTop);
+      } else {
+        // IE fallback
+        scroll.animateScroll(hashElement);
+      }
+    }
+  }
+
   render() {
     const { GATSBY_CARBON_ENV } = process.env;
     const isInternal = GATSBY_CARBON_ENV == 'internal';
@@ -233,7 +246,9 @@ class Layout extends React.Component {
                 className="website-alert__button"
                 tabIndex="-1"
                 href=" https://www.carbondesignsystem.com">
-                <button class="bx--btn bx--btn--secondary" type="button">
+                <button
+                  className="bx--btn bx--btn--secondary bx--btn--sm"
+                  type="button">
                   <span>Go to v9</span>
                   <ArrowRight20 />
                 </button>
@@ -259,23 +274,23 @@ class Layout extends React.Component {
                   <span>IBM Product</span>&nbsp;Design&nbsp;<span>System</span>
                 </HeaderName>
               ) : (
-                <HeaderName prefix="" to="/" element={Link}>
-                  Carbon&nbsp;<span>Design System</span>
-                </HeaderName>
-              )}
+                  <HeaderName prefix="" to="/" element={Link}>
+                    Carbon&nbsp;<span>Design System</span>
+                  </HeaderName>
+                )}
 
               <HeaderGlobalBar>
                 {/* {isInternal ? null : <GlobalSearch />} */}
                 {this.state.isSearchOpen ? (
                   <GlobalSearch />
                 ) : (
-                  <HeaderGlobalAction
-                    className="bx--header__action--search"
-                    aria-label="Search Website"
-                    onClick={() => this.handleSearchClick('isSearchOpen')}>
-                    <Search20 />
-                  </HeaderGlobalAction>
-                )}
+                    <HeaderGlobalAction
+                      className="bx--header__action--search"
+                      aria-label="Search Website"
+                      onClick={() => this.handleSearchClick('isSearchOpen')}>
+                      <Search20 />
+                    </HeaderGlobalAction>
+                  )}
                 <HeaderGlobalAction
                   className="bx--header__action--switcher"
                   aria-label="Switch"
@@ -344,7 +359,7 @@ class Layout extends React.Component {
                   h5: h5,
                   ul: ul,
                   ol: ol,
-                  pre: Snippet,
+                  pre: WebsiteCodeSnippet,
                   table: PageTable,
                 }}>
                 {children}

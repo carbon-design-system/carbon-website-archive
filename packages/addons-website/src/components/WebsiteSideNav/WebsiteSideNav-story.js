@@ -11,9 +11,9 @@ import {
   SideNavItems,
 } from 'carbon-components-react/lib/components/UIShell';
 
-storiesOf('Website SideNav', module)
+storiesOf('Website side nav', module)
   .add(
-    'Website SideNav Dark',
+    'Website side nav dark',
     () => (
       <>
         <SideNav aria-label="Side navigation" className="bx--side-nav--website">
@@ -51,12 +51,12 @@ storiesOf('Website SideNav', module)
     ),
     {
       info: {
-        text: 'Website SideNav',
+        text: 'Website side nav',
       },
     }
   )
   .add(
-    'Website SideNav Light',
+    'Website side nav light',
     () => (
       <>
         <SideNav
@@ -96,7 +96,7 @@ storiesOf('Website SideNav', module)
     ),
     {
       info: {
-        text: 'Website SideNav light',
+        text: 'Website side nav light',
       },
     }
   );

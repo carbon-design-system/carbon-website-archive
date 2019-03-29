@@ -5,8 +5,8 @@
 }
 
 .example--dark .example-card {
-  background: $ibm-colors__gray-90;
-  color: $ibm-colors__white;
+  background: $carbon--gray-90;
+  color: $carbon--white-0;
 }
 
 .example__content {
@@ -24,7 +24,7 @@
 }
 
 .example-card {
-  background: $ibm-colors__white;
+  background: $carbon--white-0;
   width: 100%;
   position: relative;
 }
@@ -73,11 +73,11 @@ p.example__text {
 }
 
 .example--correct .example-card::before {
-  background: $ibm-colors__green-50;
+  background: $carbon--green-50;
 }
 
 .example--incorrect .example-card::before {
-  background: $ibm-colors__magenta-50;
+  background: $carbon--magenta-50;
 }
 
 .example__icon {
@@ -91,11 +91,11 @@ p.example__text {
 }
 
 .example__icon--correct {
-  fill: $ibm-colors__green-50;
+  fill: $carbon--green-50;
 }
 
 .example__icon--incorrect {
-  fill: $ibm-colors__magenta-50;
+  fill: $carbon--magenta-50;
 }
 
 .example__caption {

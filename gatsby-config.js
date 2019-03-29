@@ -21,6 +21,7 @@ module.exports = {
         globalScope: `
         import { AnchorLinks } from '@carbon/addons-website';
         import { Row, Column } from '@carbon/addons-website';
+        import { ImageComponent } from '@carbon/addons-website';
         import ClickableTile from '${__dirname}/src/components/ClickableTile';
         import FeatureTile from '${__dirname}/src/components/FeatureTile';
         import ColorBlock from '${__dirname}/src/components/ColorBlock';
@@ -28,10 +29,9 @@ module.exports = {
         import ComponentDocs from '${__dirname}/src/components/ComponentDocs';
         import ComponentReact from '${__dirname}/src/components/ComponentReact';
         import DoDontExample from '${__dirname}/src/components/DoDontExample';
-        import ImageComponent from '${__dirname}/src/components/ImageComponent';
+        import WebsiteTabs from '${__dirname}/src/components/WebsiteTabs'; 
         import SimpleColumns from '${__dirname}/src/components/SimpleColumns';
         import Video from '${__dirname}/src/components/Video';
-        import WebsiteTabs from '${__dirname}/src/components/WebsiteTabs';
         
         export default {
           AnchorLinks,
@@ -48,6 +48,10 @@ module.exports = {
           Row,
           Column,
           WebsiteTabs,
+          DoDontExample,
+          WebsiteTabs,
+          SimpleColumns,
+          Video,
         };
       `,
         gatsbyRemarkPlugins: [

@@ -7,18 +7,18 @@ a.tile--article {
   flex-direction: column;
   justify-content: space-between;
   padding: 0;
-  background: $ibm-colors__white;
+  background: $carbon__white-0;
   margin-bottom: 1rem;
   width: 100%;
 }
 
 a.tile--article.tile--dark {
-  background: $ibm-colors__gray-90;
-  color: $ibm-colors__white;
+  background: $carbon--gray-90;
+  color: $carbon--white-0;
 }
 
 a.tile--article.tile--dark:hover {
-  background: $ibm-colors__gray-80;
+  background: $carbon--gray-80;
 }
 
 .tile--article .tile__img {
@@ -44,11 +44,11 @@ a.tile--article.tile--dark:hover {
   padding: $spacing-md;
   padding-right: 25%;
 
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     padding-right: 1rem;
   }
 
-  @include breakpoint('xlg') {
+ @include carbon--breakpoint('xlg')  {
     padding-right: 30%;
   }
 }
@@ -60,7 +60,7 @@ a.tile--article.tile--dark:hover {
 }
 
 .tile--article.tile--dark .tile__info h5 {
-  color: $ibm-colors__white;
+  color: $carbon--white-0;
 }
 
 .tile--article .tile__caption p {
@@ -73,11 +73,11 @@ a.tile--article.tile--dark:hover {
 
 .tile--resource {
   // full bleed for tiles on mobile
-  @include breakpoint('sm') {
+  @include carbon--breakpoint('sm') {
     width: 100%;
   }
 
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     width: 100%;
     margin: 0;
   }
@@ -92,7 +92,7 @@ a.tile--article.tile--dark:hover {
   color: $text-01;
   padding: $spacing-md;
   position: relative;
-  background: $ibm-colors__white;
+  background: $carbon--white-0;
   height: 100%;
 
   &:hover {
@@ -101,18 +101,18 @@ a.tile--article.tile--dark:hover {
 }
 
 .tile--resource.tile--dark a.bx--tile {
-  background: $ibm-colors__gray-90;
-  color: $ibm-colors__white;
+  background: $carbon--gray-90;
+  color: $carbon--white-0;
 }
 
 .tile--resource.tile--dark a.bx--tile:hover {
-  background: $ibm-colors__gray-80;
+  background: $carbon--gray-80;
 }
 
 .tile--resource .tile__info {
   width: 100%;
 
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     width: 75%;
   }
 }
@@ -128,7 +128,7 @@ a.tile--article.tile--dark:hover {
 }
 
 .tile--resource.tile--dark .tile__info h5 {
-  color: $ibm-colors__white;
+  color: $carbon--white-0;
 }
 
 .tile--resource .tile__description {
@@ -137,7 +137,7 @@ a.tile--article.tile--dark:hover {
 }
 
 .tile--dark .tile__description {
-  color: $ibm-colors__white;
+  color: $carbon--white-0;
 }
 
 .tile--resource .tile__img {
@@ -163,27 +163,27 @@ a.tile--article.tile--dark:hover {
   height: 20px;
 
   svg {
-    fill: $ibm-colors__black;
+    fill: $carbon--black-100;
   }
 }
 
 .tile--dark .tile__link-icon {
   svg {
-    fill: $ibm-colors__white;
+    fill: $carbon--white-0;
   }
 }
 
 // Grouped tiles
 .tile--group > div .tile--resource {
-  @include breakpoint('sm') {
-    border-bottom: 1px solid $ibm-colors__gray-20;
+  @include carbon--breakpoint('sm') {
+    border-bottom: 1px solid $carbon--gray-20;
 
     &.tile--dark {
-      border-bottom-color: $ibm-colors__black;
+      border-bottom-color: $carbon--black-100;
     }
   }
 
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     border: 1px solid transparent;
     border-right: none;
     border-bottom: none;
@@ -191,24 +191,24 @@ a.tile--article.tile--dark:hover {
 }
 
 .tile--group > div:nth-child(2n + 2) {
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     .tile--resource {
-      border-left: 1px solid $ibm-colors__gray-20;
+      border-left: 1px solid $carbon--gray-20;
 
       &.tile--dark {
-        border-left-color: $ibm-colors__black;
+        border-left-color: $carbon--black-100;
       }
     }
   }
 }
 
 .tile--group > div:nth-child(n + 3) {
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     .tile--resource {
-      border-top: 1px solid $ibm-colors__gray-20;
+      border-top: 1px solid $carbon--gray-20;
 
       &.tile--dark {
-        border-top-color: $ibm-colors__black;
+        border-top-color: $carbon--black-100;
       }
     }
   }
@@ -216,7 +216,7 @@ a.tile--article.tile--dark:hover {
 
 .tile--group {
   a.tile--article.tile--dark {
-    border-color: $ibm-colors__black;
+    border-color: $carbon--black-100;
   }
 }
 

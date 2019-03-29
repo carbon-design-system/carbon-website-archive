@@ -9,7 +9,7 @@ Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/b
 */
 code[class*='language-'],
 pre[class*='language-'] {
-  font-family: 'ibm-plex-mono', Menlo, Monaco, 'Andale Mono WT', 'Andale Mono',
+  font-family: 'IBM Plex Mono', Menlo, Monaco, 'Andale Mono WT', 'Andale Mono',
     'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono',
     'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L',
     'Courier New', Courier, monospace;
@@ -29,22 +29,6 @@ pre[class*='language-'] {
   hyphens: none;
   background: #fff;
   color: #152935;
-}
-
-pre[class*='language-']::-moz-selection,
-pre[class*='language-'] ::-moz-selection,
-code[class*='language-']::-moz-selection,
-code[class*='language-'] ::-moz-selection {
-  text-shadow: none;
-  background: rgba(85, 150, 230, 0.1);
-}
-
-pre[class*='language-']::selection,
-pre[class*='language-'] ::selection,
-code[class*='language-']::selection,
-code[class*='language-'] ::selection {
-  text-shadow: none;
-  background: rgba(85, 150, 230, 0.1);
 }
 
 /* Code blocks */

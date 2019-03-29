@@ -4,7 +4,7 @@
   line-height: 1.25;
   width: calc(100%);
 
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     min-width: calc(67.3%);
   }
 
@@ -15,7 +15,7 @@
       padding: $spacing-md;
       text-align: left;
       white-space: nowrap;
-      background: $ibm-colors__white;
+      background: $carbon--white-0;
     }
   }
 
@@ -38,11 +38,11 @@
           font-weight: font-weight('semibold');
         }
 
-        @include breakpoint('lg') {
+        @include carbon--breakpoint('lg') {
           min-width: rem(100px);
         }
 
-        @include breakpoint('xlg') {
+       @include carbon--breakpoint('xlg')  {
           min-width: rem(150px);
         }
       }
@@ -51,11 +51,11 @@
 }
 
 .component-docs p {
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     max-width: 75%;
   }
 
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     max-width: 55%;
   }
 }
@@ -65,15 +65,19 @@
   margin-left: -1rem;
   margin-top: rem(16px);
 
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     max-width: 75%;
   }
 
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     max-width: 50%;
   }
 }
 
 .page-table__container {
   overflow-x: auto;
+}
+
+.spacing-table td {
+  vertical-align: top;
 }

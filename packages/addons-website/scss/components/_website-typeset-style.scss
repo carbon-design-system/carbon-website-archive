@@ -1,0 +1,188 @@
+@import '../prefix';
+
+.#{$prefix}--typeset-style-container {
+  position: relative;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding: 0 .5rem;
+  margin-top: 0;
+
+  @include carbon--breakpoint('md') {
+    padding: 0;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+}
+
+.#{$prefix}--typeset-style-button {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0 1rem;
+  text-transform: capitalize;
+  z-index: 4;
+
+  &:hover {
+    background-color: $carbon--gray-20;
+  }
+
+  &.selected {
+    background-color: $carbon--gray-100;
+    color: $carbon--gray-10;
+
+    &:hover {
+      background-color: $carbon--gray-100;
+    }
+  }
+
+  &:focus {
+    outline: 2px solid $focus;
+    outline-offset: 0;
+  }
+}
+
+.#{$prefix}--typeset-style-controls {
+  height: 100%;
+  left: 0;
+  position: absolute !important;
+  top: 0;
+  width: 100vw;
+
+  @include carbon--breakpoint('md') {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.#{$prefix}--typeset-style-controls-sticky {
+  align-items: center;
+  background-color: $carbon--white-0;
+  border-bottom: 1px solid $carbon--gray-20;
+  width: auto;
+  z-index: 2;
+  box-sizing: content-box;
+}
+
+.#{$prefix}--typeset-style-nav-shiv {
+  width: 100%;
+  height: 1rem;
+}
+
+.#{$prefix}--typeset-style-breakpoint-controls {
+  height: 3rem;
+  align-items: center;
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-left: 1rem;
+  padding-right: 0;
+}
+
+.#{$prefix}--typeset-style-screen-width-label {
+  padding-right: 1rem;
+  display: inline-block;
+}
+
+.#{$prefix}--typeset-style-screen-controls {
+  align-items: center;
+  height: 3rem;
+  border-top: 1px solid $carbon--gray-20;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+
+  @include carbon--breakpoint('md') {
+    border-top: none;
+    border-left: 1px solid $carbon--gray-20;
+  }
+}
+
+.#{$prefix}--typeset-style-screen-label {
+  height: auto;
+  margin-bottom: 0;
+  // Need to set the width explicitly to make sure the slider
+  // keeps the same size when going from three to four digits (999-1000)
+  min-width: 3.4rem;
+  text-align: right;
+}
+
+.#{$prefix}--typeset-style-input {
+  margin: 0;
+  margin-right: rem(20px);
+  width: 100%;
+}
+
+.#{$prefix}--typeset-style-toggle-container {
+  position: relative;
+  z-index: 1;
+}
+
+.#{$prefix}--typeset-style-toggle-button {
+  background-color: $carbon--white-0;
+  box-shadow: inset 0 -1px 0 0 $carbon--gray-20;
+  color: $carbon--gray-100;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  height: 3rem;
+
+  input {
+    margin: 0;
+    visibility: hidden;
+    width: 0;
+  }
+
+  &.checked {
+    background-color: $carbon--gray-100;
+    color: $carbon--white-0;
+
+    &:hover {
+      background-color: $carbon--gray-100;
+    }
+  }
+
+  &:hover {
+    background-color: $carbon--gray-20;
+  }
+}
+
+.#{$prefix}--typeset-style-button-controls-container {
+  height: 100%;
+  margin-left: auto;
+}
+
+.#{$prefix}--typeset-style-breakpoints-container {
+  position: relative;
+  margin-top: 1rem;
+
+  @include carbon--breakpoint('md') {
+    margin-top: 0;
+  }
+}
+
+.#{$prefix}--typeset-style-section-spacer {
+  margin-bottom: calc(1rem + 1px);
+}
+
+.#{$prefix}--typeset-style-title-shiv {
+  padding-top: 1rem;
+  background-color: $carbon--gray-10;
+}
+
+.#{$prefix}--typeset-style-group-title-container {
+  background-color: $carbon--white-0;
+  height: 3rem;
+  padding: 1rem;
+  border-bottom: 1px solid $carbon--gray-20;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.#{$prefix}--typeset-style-group-title {
+  margin: 0;
+  padding: 0;
+}
