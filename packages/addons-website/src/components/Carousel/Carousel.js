@@ -4,6 +4,8 @@ import { RadioButtonGroup, RadioButton } from 'carbon-components-react';
 import { settings } from 'carbon-components';
 const { prefix } = settings;
 
+let AP_ID;
+
 export default class Carousel extends React.Component {
   constructor(props) {
     super(props);
@@ -15,9 +17,11 @@ export default class Carousel extends React.Component {
 
     this.state = {
       checkedRadio: 1,
-      autoplay: setInterval(this.nextSlide, 6000),
+      autoplay: this.props.autoplay ? true : false,
       items: numArr
     };
+
+    if (this.state.autoplay) AP_ID = setTimeout(this.nextSlide, 6000)
   }
 
   componentDidMount() {
@@ -33,7 +37,7 @@ export default class Carousel extends React.Component {
   }
 
   componentWillUnmount() {
-    clearInterval(this.state.autoplay);
+    clearTimeout(AP_ID);
   }
 
   static propTypes = {
@@ -58,6 +62,11 @@ export default class Carousel extends React.Component {
 
   //TOUCH EVENT HANDLERS
   touchStart = e => {
+    clearTimeout(AP_ID);
+    this.setState({
+      autoplay: false,
+      hasInteracted: true
+    });
     this.initialX = e.touches[0].clientX;
     this.initialY = e.touches[0].clientY;
   };
@@ -103,6 +112,11 @@ export default class Carousel extends React.Component {
 
   //MOUSE EVENT HANDLERS
   mouseStart = e => {
+    clearTimeout(AP_ID);
+    this.setState({
+      autoplay: false,
+      hasInteracted: true
+    });
     this.initialX = e.clientX;
     this.initialY = e.clientY;
   };
@@ -158,36 +172,32 @@ export default class Carousel extends React.Component {
   //UPDATING RADIO BUTTON
   onChange = e => {
     if (typeof document !== undefined) {
-      const slide = document.querySelector(
-        `.${prefix}--carousel-slide.${this.props.id}`
-      );
-      const images = slide.querySelectorAll('img');
+      if (this.state.autoplay || this.state.hasInteracted){
+        const slide = document.querySelector(
+          `.${prefix}--carousel-slide.${this.props.id}`
+        );
+        const images = slide.querySelectorAll('img');
+        
+        this.setState({
+          checkedRadio: e,
+        });
 
-      clearInterval(this.state.autoplay);
-      this.setState({
-        checkedRadio: e,
-        autoplay: setInterval(this.nextSlide, 6000),
-      });
+        images.forEach((img, i) => {
+          if (this.props.fade) {
+            img.style.zIndex = (i + 1) === e ? 1000 : i;
+            img.style.opacity = (i + 1) === e ? 1 : 0
+          } else {
+            img.style.transform = `translate(${e * -100 + 100}%, 0)`;
+          }
+        });
 
-      images.forEach((img, i) => {
-        if (this.props.fade) {
-          // img.style.position = 'absolute';
-          // img.style.top = 0;
-          // img.style.left = 0;
-          // img.style.zIndex = (i + 1) === e ? 1000 : i;
-          img.style.transitionProperty = 'opacity';
-          img.style.transform = `translate(${e * -100 + 100}%, 0)`;
-          // img.style.opacity = (e - 1) === i ? 1 : .5
-          img.style.opacity = (i + 1) === e ? 1 : 0
-        } else {
-          img.style.transform = `translate(${e * -100 + 100}%, 0)`;
-        }
-      });
+        ( this.state.autoplay ) ? AP_ID = setTimeout(this.nextSlide, 6000) : clearTimeout(AP_ID);
+      }
     }
   };
 
   render() {
-    const { children, id, nav } = this.props;
+    const { children, id, nav, fade } = this.props;
     const imgArr = this.state.items.map((i, x) => {
       const index = x;
       // return children[index].props.children[3].props;
@@ -195,7 +205,7 @@ export default class Carousel extends React.Component {
     });
 
     return (
-      <div className={`${prefix}--carousel ${id}`}>
+      <div className={`${prefix}--carousel ${id}${fade ? ' fade' : ''}`}>
         <div className={`${prefix}--carousel-slide-wrapper`}>
           <div className={`${prefix}--carousel-slide ${id}`}>
             {imgArr.map((img, i) => {
