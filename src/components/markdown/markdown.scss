@@ -86,6 +86,10 @@
   margin-top: rem(48px);
 }
 
+.component-docs h3 + h4 {
+  margin-top: rem(8px);
+}
+
 // Targets heading elements when they are the first element on a page to remove top margin
 .page-content > div > .ibm--row:first-child {
   .page-h4,
@@ -100,6 +104,13 @@
   .page-h2:before {
     padding-bottom: 3rem;
   }
+}
+
+// removes inline-block styles when headings are directly followinng each other
+.component-docs h3 + h4,
+.component-docs h4 + h4,
+.component-docs h4 + h3 {
+  display: block;
 }
 
 //----------------------------
