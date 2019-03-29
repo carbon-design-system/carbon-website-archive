@@ -224,11 +224,8 @@
   "updates": {
     "title": "Updates",
     "sub-nav": {
-      "whats-new": {
-        "title": "What’s new"
-      },
-      "release-highlights": {
-        "title": "Release highlights"
+      "release-information": {
+        "title": "Release information"
       },
       "v10-migration": {
         "title": "v10 Migration guide"
