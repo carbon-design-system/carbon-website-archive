@@ -1,15 +1,6 @@
-/* @import '@carbon/layout/scss/layout.scss';
-.container {
-  //need this to avoid conflicts with old grid code
-  $prefix: 'ibm';
-  $imported-modules-local: ();
-  @import '@carbon/grid/scss/grid.scss';
-}
-@import '@carbon/grid/scss/aspect-ratio.scss'; */
-
 @import 'prefix';
-//@import 'components/website-grid';
 
+@import 'components/website-grid';
 @import 'components/404';
 @import 'components/website-footer';
 @import 'components/website-switcher';
