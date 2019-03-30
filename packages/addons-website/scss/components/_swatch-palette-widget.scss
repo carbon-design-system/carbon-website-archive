@@ -17,8 +17,8 @@
         float: right;
       }
     }
-
-    @include breakpoint('md') {
+    
+    @include carbon--breakpoint('md') {
       width: calc(50% - 1px);
       margin-right: 1px;
 
@@ -27,7 +27,7 @@
         margin-right: 0;
       }
     }
-    @include breakpoint('lg') {
+    @include carbon--breakpoint('lg') {
       width: calc(33.33% - 1px);
       margin-right: 1px;
 
@@ -52,7 +52,7 @@
     background: $ui-01;
     top: 0;
 
-    @include breakpoint('lg') {
+    @include carbon--breakpoint('lg') {
       padding-top: 1rem;
     }
   }

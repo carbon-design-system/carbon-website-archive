@@ -64,11 +64,11 @@ h3.page-h3--sticky {
   padding: $spacing-xs $spacing-xl $spacing-xs $spacing-md;
   flex: 1;
 
-  @include breakpoint('sm') {
+  @include carbon--breakpoint('sm') {
     padding-right: $spacing-md;
   }
 
-  @include breakpoint('md') {
+  @include carbon--breakpoint('md') {
     padding-right: 4rem;
   }
 }

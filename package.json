@@ -6,7 +6,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/carbon-design-system/carbon-website-gatsby/"
+    "url": "https://github.com/carbon-design-system/carbon-website/"
   },
   "keywords": [
     "gatsby"
@@ -36,17 +36,17 @@
   },
   "dependencies": {
     "@carbon/addons-website": "^0.0.1-alpha.17",
-    "@carbon/colors": "0.0.1-alpha.31",
-    "@carbon/grid": "0.0.1-alpha.32",
     "@carbon/icons-react": "0.0.1-alpha.31",
-    "@carbon/import-once": "0.0.1-alpha.31",
-    "@carbon/layout": "0.0.1-alpha.32",
-    "@carbon/type": "0.0.1-alpha.32",
     "@mdx-js/mdx": "^0.16.6",
     "@mdx-js/tag": "^0.16.6",
+    "@carbon/colors": "v10.0.0-rc.0",
+    "@carbon/grid": "v10.0.0-rc.0",
+    "@carbon/import-once": "v10.0.0-rc.0",
+    "@carbon/layout": "v10.0.0-rc.0",
+    "@carbon/type": "v10.0.0-rc.0",
     "@reach/router": "^1.2.1",
-    "carbon-components": "^9.84.4",
-    "carbon-components-react": "^6.107.0",
+    "carbon-components": "v10.0.0",
+    "carbon-components-react": "v7.0.0",
     "carbon-icons": "^7.0.7",
     "classnames": "^2.2.6",
     "custom-event": "^1.0.1",
@@ -116,6 +116,18 @@
     "string-replace-loader": "^2.1.0"
   },
   "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    },
     "globals": {
       "__PATH_PREFIX__": true
     }

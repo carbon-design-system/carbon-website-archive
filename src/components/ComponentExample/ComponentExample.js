@@ -43,35 +43,6 @@ const liveDemoContainerVerticalPositionFactors = {
   [DIRECTION_BOTTOM]: -1,
 };
 
-const getOverflowMenuOffsetExperimental = (menuBody, direction) => {
-  const triggerButtonPositionProp = triggerButtonPositionProps[direction];
-  const triggerButtonPositionFactor = triggerButtonPositionFactors[direction];
-  if (!triggerButtonPositionProp || !triggerButtonPositionFactor) {
-    console.warn('Wrong floating menu direction:', direction); // eslint-disable-line no-console
-  }
-  const menuWidth = menuBody.offsetWidth;
-  const menuHeight = menuBody.offsetHeight;
-  if (
-    triggerButtonPositionProp === 'top' ||
-    triggerButtonPositionProp === 'bottom'
-  ) {
-    return {
-      left: menuWidth / 2 - 16,
-      top: 0,
-    };
-  }
-
-  if (
-    triggerButtonPositionProp === 'left' ||
-    triggerButtonPositionProp === 'right'
-  ) {
-    return {
-      left: 0,
-      top: menuHeight / 2 - 16,
-    };
-  }
-};
-
 const components = {
   ...carbonComponents,
   InlineLoadingDemoButton,
@@ -170,7 +141,7 @@ class ComponentExample extends Component {
         .replace(/^([a-z])/, (match, token) => token.toUpperCase());
       // TODO: See if instances with different prefixes may exist as the same time.
       // If so, we need to figure out more sophisticted approach here.
-      settings.prefix = experimental ? 'bx' : 'demo';
+      settings.prefix = 'bx';
       (componentNamesMap[currentComponent] || [currentComponent]).forEach(
         name => {
           const TheComponent = components[name];
@@ -206,11 +177,8 @@ class ComponentExample extends Component {
             if (name === 'OverflowMenu' || name === 'Tooltip') {
               ['objMenuOffset', 'objMenuOffsetFlip'].forEach(optionName => {
                 if (TheComponent.options[optionName]) {
-                  options[optionName] = (menuBody, direction) => {
-                    const origOffset =
-                      name === 'OverflowMenu' && experimental
-                        ? getOverflowMenuOffsetExperimental(menuBody, direction)
-                        : TheComponent.options[optionName](menuBody, direction);
+                  options[optionName] = (menuBody, direction, trigger) => {
+                    const origOffset = TheComponent.options[optionName](menuBody, direction, trigger);
                     const liveContainerRef = this._liveContainerRef.current;
                     if (liveContainerRef) {
                       const { left: origLeft, top: origTop } = origOffset;
@@ -218,11 +186,12 @@ class ComponentExample extends Component {
                         left: liveContainerLeft,
                         top: liveContainerTop,
                       } = liveContainerRef.getBoundingClientRect();
+                      const borderWidth = name !== 'OverflowMenu' ? 0 : parseInt(liveContainerRef.ownerDocument.defaultView.getComputedStyle(liveContainerRef).getPropertyValue('border-width'));
                       const adjustLeft =
-                        liveContainerLeft +
+                        liveContainerLeft + borderWidth +
                         menuBody.ownerDocument.defaultView.pageXOffset;
                       const adjustTop =
-                        liveContainerTop +
+                        liveContainerTop + borderWidth  +
                         menuBody.ownerDocument.defaultView.pageYOffset;
                       return {
                         left: origLeft - adjustLeft,
@@ -277,9 +246,7 @@ class ComponentExample extends Component {
     } = this.props;
 
     const { currentHTMLfile = '', currentFieldColor } = this.state;
-    const demoHtml = experimental
-      ? currentHTMLfile
-      : currentHTMLfile.replace(/bx--/g, 'demo--');
+    const demoHtml = currentHTMLfile;
 
     const classNames = classnames({
       'component-example__live--rendered': true,
@@ -318,7 +285,6 @@ class ComponentExample extends Component {
       {
         'component-example__live--light':
           (currentFieldColor === 'field-02') & (hasLightVersion === true),
-        'carbon-demo-v9': experimental != true,
       }
     );
 

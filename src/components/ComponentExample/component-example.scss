@@ -4,10 +4,6 @@
   display: block;
   color: $carbon--white-0;
   margin-bottom: rem(24px);
-
-  p {
-    padding: 0;
-  }
 }
 
 // To override the padding from `.page-content > div > div:first-child p`
@@ -101,6 +97,7 @@
   border-left: 1px solid $carbon--gray-80;
   height: 100%;
   padding-left: 1rem;
+  padding-right: 1rem;
 
   .bx--form-item {
     margin-right: 0;
