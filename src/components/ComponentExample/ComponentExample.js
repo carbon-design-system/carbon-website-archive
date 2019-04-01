@@ -68,6 +68,7 @@ class ComponentExample extends Component {
     hasLightVersion: PropTypes.string,
     hasReactVersion: PropTypes.bool,
     hasAngularVersion: PropTypes.bool,
+    hasVueVersion: PropTypes.string,
     experimental: PropTypes.bool,
   };
 
@@ -178,7 +179,11 @@ class ComponentExample extends Component {
               ['objMenuOffset', 'objMenuOffsetFlip'].forEach(optionName => {
                 if (TheComponent.options[optionName]) {
                   options[optionName] = (menuBody, direction, trigger) => {
-                    const origOffset = TheComponent.options[optionName](menuBody, direction, trigger);
+                    const origOffset = TheComponent.options[optionName](
+                      menuBody,
+                      direction,
+                      trigger
+                    );
                     const liveContainerRef = this._liveContainerRef.current;
                     if (liveContainerRef) {
                       const { left: origLeft, top: origTop } = origOffset;
@@ -186,12 +191,21 @@ class ComponentExample extends Component {
                         left: liveContainerLeft,
                         top: liveContainerTop,
                       } = liveContainerRef.getBoundingClientRect();
-                      const borderWidth = name !== 'OverflowMenu' ? 0 : parseInt(liveContainerRef.ownerDocument.defaultView.getComputedStyle(liveContainerRef).getPropertyValue('border-width'));
+                      const borderWidth =
+                        name !== 'OverflowMenu'
+                          ? 0
+                          : parseInt(
+                              liveContainerRef.ownerDocument.defaultView
+                                .getComputedStyle(liveContainerRef)
+                                .getPropertyValue('border-width')
+                            );
                       const adjustLeft =
-                        liveContainerLeft + borderWidth +
+                        liveContainerLeft +
+                        borderWidth +
                         menuBody.ownerDocument.defaultView.pageXOffset;
                       const adjustTop =
-                        liveContainerTop + borderWidth  +
+                        liveContainerTop +
+                        borderWidth +
                         menuBody.ownerDocument.defaultView.pageYOffset;
                       return {
                         left: origLeft - adjustLeft,
@@ -242,6 +256,7 @@ class ComponentExample extends Component {
       hasLightVersion,
       hasReactVersion,
       hasAngularVersion,
+      hasVueVersion,
       experimental,
     } = this.props;
 
@@ -329,6 +344,14 @@ class ComponentExample extends Component {
                 target="_blank"
                 rel="noopener noreferrer">
                 Angular <Launch16 />
+              </a>
+            )}
+            {typeof hasVueVersion === 'string' && (
+              <a
+                href={`http://vue.carbondesignsystem.com/?path=/story/experimental-cv${hasVueVersion}`}
+                target="_blank"
+                rel="noopener noreferrer">
+                Vue <Launch16 />
               </a>
             )}
             {codepenSlug !== undefined && (
