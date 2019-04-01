@@ -174,10 +174,10 @@ storiesOf('Aspect Ratio Tile', module).add(
             image='images/landing-photography-gallery-2.jpg'
             actionIcon='no-icon'
           >
-            {/* <Carousel id="c1" count="1 2" nav={false} fade={true} autoplay>
+            <Carousel id="c1" count="1 2" nav={false} fade={true} autoplay>
               <img src="images/landing-photography-gallery-1-mobile.jpg" alt="alt text"/>
               <img src="images/landing-photography-gallery-2.jpg" alt="alt text"/>
-            </Carousel> */}
+            </Carousel>
             <AspectRatioTile
               ratio='4:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
               theme='dark' 
