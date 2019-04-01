@@ -144,13 +144,13 @@ class Layout extends React.Component {
 
             {/*    <div className="website-alert">
               <p className="website-alert__text">
-                See what's coming soon with Carbon V10-beta.
+                Carbon v10 is live!
               </p>
               <a href="https://next.carbondesignsystem.com" tabIndex="-1">
                 <button
                   className="bx--btn bx--btn--secondary bx--btn--sm"
                   type="button">
-                  Go to V10-beta
+                  Go to V10
                 </button>
               </a>
             </div> */}
