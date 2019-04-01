@@ -14,7 +14,7 @@ storiesOf('Website Switcher', module).add(
           linkText: 'IBM Design Language',
         },
         {
-          href: 'https://next.carbondesignsystem.com',
+          href: 'https://www.carbondesignsystem.com',
           linkText: 'IBM Product Design',
         },
         {

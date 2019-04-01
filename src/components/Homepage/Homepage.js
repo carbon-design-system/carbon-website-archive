@@ -15,8 +15,10 @@ export class HomepageHeader extends React.Component {
 
     const homeTitle = isInternal ? (
       <h3 className="homepage--header__title">
-        IBM Product <br />
-        Design System
+        <span>
+          Carbon <br />
+          Design System
+        </span>
       </h3>
     ) : (
       <h3 className="homepage--header__title">
@@ -36,7 +38,7 @@ export class HomepageHeader extends React.Component {
               <div className="ibm--col-lg-4 ibm--offset-lg-4">{homeTitle}</div>
             </div>
           </div>
-          <img src={bannerImg} alt="IBM Product Design System banner image" />
+          <img src={bannerImg} alt="Carbon Design System banner image" />
         </section>
         <section className="homepage--callout">
           <div className="ibm--grid">
