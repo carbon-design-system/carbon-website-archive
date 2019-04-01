@@ -655,12 +655,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": true,
+        "experimental": false,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": false
+        "notAvailable": true
       }
     },
     {
@@ -1318,12 +1318,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": true,
+        "experimental": false,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": false
+        "notAvailable": true
       }
     }
   ]

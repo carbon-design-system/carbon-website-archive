@@ -14,7 +14,7 @@ jobs:
           command: |
             yarn build:external && yarn storybook:build
       - deploy:
-          name: deploy next to IBM Cloud
+          name: deploy website to IBM Cloud
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               # Install `ibmcloud` CLI
@@ -31,6 +31,6 @@ jobs:
               ibmcloud cf install-plugin blue-green-deploy -f -r CF-Community
 
               ibmcloud cf blue-green-deploy carbon-website-next \
-                -f .circleci/manifest.next.yml \
+                -f .circleci/manifest.external.yml \
                 --delete-old-apps
             fi

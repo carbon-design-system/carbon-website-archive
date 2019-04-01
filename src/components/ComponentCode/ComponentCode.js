@@ -13,6 +13,7 @@ export default class ComponentCode extends React.Component {
     hasLightVersion: PropTypes.bool,
     hasReactVersion: PropTypes.bool,
     hasAngularVersion: PropTypes.bool,
+    hasVueVersion: PropTypes.string,
     experimental: PropTypes.bool,
   };
 
@@ -24,6 +25,7 @@ export default class ComponentCode extends React.Component {
       hasLightVersion,
       hasReactVersion,
       hasAngularVersion,
+      hasVueVersion,
       variation,
       experimental,
     } = this.props;
@@ -57,6 +59,7 @@ export default class ComponentCode extends React.Component {
               hasLightVersion={hasLightVersion}
               hasReactVersion={hasReactVersion}
               hasAngularVersion={hasAngularVersion}
+              hasVueVersion={hasVueVersion}
               experimental={experimental}
             />
           </div>
