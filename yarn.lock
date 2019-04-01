@@ -740,18 +740,18 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@carbon/colors@beta":
-  version "0.0.1-beta.5"
-  resolved "https://registry.yarnpkg.com/@carbon/colors/-/colors-0.0.1-beta.5.tgz#2cf12fde11463ab39099b9936bad457e0af26d85"
-  integrity sha512-Wh6wv8oyo5MQaShlNu/lXP+JhLt4xlA9Q/+BXfvhmYkONHZ6kjnVzXpXMvguSy7/XRDiQIgAjX570Es/2qdGOw==
+"@carbon/colors@v10.0.0-rc.0":
+  version "10.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@carbon/colors/-/colors-10.0.0-rc.0.tgz#a7c80c7571fe0e549955da00695f9ee95066d2b5"
+  integrity sha512-Fnln2qgaemeWKmE9PA9KaX9AhVv8yWAh+8dRKajMVU9KhnptCu2/Ul+heVeP8l0wKTQpG2P53ofZ4fbHwrGNFg==
 
-"@carbon/grid@beta":
-  version "0.0.1-beta.5"
-  resolved "https://registry.yarnpkg.com/@carbon/grid/-/grid-0.0.1-beta.5.tgz#f0f0dcaf66941466a076a93680632644ae534e73"
-  integrity sha512-pZNGpR6ffrPVlkeXd2uR28riu8Sxb+O6qRLpCwcXdwt44LZRzt/xwSa88sjWxvg1AXVl7fb1tJMrTzEo98j1yg==
+"@carbon/grid@v10.0.0-rc.0":
+  version "10.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@carbon/grid/-/grid-10.0.0-rc.0.tgz#498a4436ba81104c4305f2f824e33fe8720a80d4"
+  integrity sha512-MxyeO3PGnc3F7V/CJmLJcz4TAsaULqmPi+k3BgzryrYb+W1O6oCp67uSxLUjb3+l4LEmUCe523349zBeTR5QhA==
   dependencies:
-    "@carbon/import-once" "0.0.1-beta.5"
-    "@carbon/layout" "0.0.1-beta.5"
+    "@carbon/import-once" "10.0.0-rc.0"
+    "@carbon/layout" "10.0.0-rc.0"
 
 "@carbon/icon-helpers@0.0.1-alpha.31":
   version "0.0.1-alpha.31"
@@ -771,7 +771,7 @@
     "@carbon/icon-helpers" "0.0.1-alpha.31"
     prop-types "^15.6.2"
 
-"@carbon/icons-react@^0.0.1-beta.2":
+"@carbon/icons-react@^0.0.1-beta.4":
   version "0.0.1-beta.5"
   resolved "https://registry.yarnpkg.com/@carbon/icons-react/-/icons-react-0.0.1-beta.5.tgz#77f7ffb4f3a1376cc990db72f524e7ecf3291b33"
   integrity sha512-Cigh18dQHgS5pnqfLpp/wjrUBRRd05KC9A3Iloa3WWMlRCy6/Mgoe6Zg0teMOEIYrfoGFx29bgWeeyvzrufLLw==
@@ -779,23 +779,23 @@
     "@carbon/icon-helpers" "0.0.1-beta.5"
     prop-types "^15.6.2"
 
-"@carbon/import-once@0.0.1-beta.5", "@carbon/import-once@beta":
-  version "0.0.1-beta.5"
-  resolved "https://registry.yarnpkg.com/@carbon/import-once/-/import-once-0.0.1-beta.5.tgz#bc1eee9d08a13fa014f0441d2fd280ca1e23a686"
-  integrity sha512-nzhDLM22ce9RZYyiEKN+avaWS49gV7ymUqLk7CminU5+m7t1HhvgDDwETR0J9omuXC6P9VWxNLNmA8uu33dPTg==
+"@carbon/import-once@10.0.0-rc.0", "@carbon/import-once@v10.0.0-rc.0":
+  version "10.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@carbon/import-once/-/import-once-10.0.0-rc.0.tgz#d138a74207c9e6bbcceafedbcf5f862668a3fe2c"
+  integrity sha512-AWDLs1FFyQ+ldQ86l3ItC8VdM2tM8nqZf1f7pcH2DR2m+4UR42Yr1wR/EMksHgMbUIWB7bYB0odu187ERGG5NA==
 
-"@carbon/layout@0.0.1-beta.5", "@carbon/layout@beta":
-  version "0.0.1-beta.5"
-  resolved "https://registry.yarnpkg.com/@carbon/layout/-/layout-0.0.1-beta.5.tgz#9704d9d1a142afec836a810241f9640244de7171"
-  integrity sha512-C/WJaXTCz1xdTmvZ4u5KB0ISmYe8SVT4nlpDHdRX3YkIkHhq8/KVDUjkBqTmTlOFfBJqznwN8+QBTO7ag+No0A==
+"@carbon/layout@10.0.0-rc.0", "@carbon/layout@v10.0.0-rc.0":
+  version "10.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@carbon/layout/-/layout-10.0.0-rc.0.tgz#4fa2e88493c860f2d8797e7f4f4c1789fcdcb256"
+  integrity sha512-vHeKslsCivI9/Q9VcQG/Lz0hysxp7JBWXi/feQ2PK7uyrmp9i2RpIEkHzlRUNFdxM9ZwhG8rsiRkxWpMk4Ghpg==
 
-"@carbon/type@beta":
-  version "0.0.1-beta.5"
-  resolved "https://registry.yarnpkg.com/@carbon/type/-/type-0.0.1-beta.5.tgz#d59089ebf30be4fe8fbe9f53d8735c4f9e0785d7"
-  integrity sha512-7WP4Z0TIomNgBJveK6RZGNm0sEhwiPKU/izj9V92co226mBUA6/FVU6zf3clL9BSHXgRyK7rRAkJlZL54Hdo3w==
+"@carbon/type@v10.0.0-rc.0":
+  version "10.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@carbon/type/-/type-10.0.0-rc.0.tgz#20d8cc5a3c9b60ebb7ef3152e3fff256ff3da979"
+  integrity sha512-mXCaZKBUqtAJOPSP0BBtaI7+GnPlzRInwoCSo/F+uhvFZWPSAAHviAy3d/PWyw6Q+HtEJ9jWdzpThRRpAwDAEQ==
   dependencies:
-    "@carbon/import-once" "0.0.1-beta.5"
-    "@carbon/layout" "0.0.1-beta.5"
+    "@carbon/import-once" "10.0.0-rc.0"
+    "@carbon/layout" "10.0.0-rc.0"
 
 "@emotion/cache@^0.8.8":
   version "0.8.8"
@@ -4753,27 +4753,28 @@ capture-stack-trace@^1.0.0:
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.1.tgz#a6c0bbe1f38f3aa0b92238ecb6ff42c344d4135d"
   integrity sha512-mYQLZnx5Qt1JgB1WEiMCf2647plpGeQ2NMR/5L0HNZzGQo4fuSPnK+wjfPnKZV0aiJDgzmWqqkV/g7JD+DW0qw==
 
-carbon-components-react@beta:
-  version "7.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-7.0.0-beta.0.tgz#210eeb52b50f428147c753f4ef1483fde540f744"
-  integrity sha512-p84KTz7osF5qBy49IC/q3Hk3JYbV965Ff2d0DX2ocstWNLQxcd9K9iz5zk1gtZkwuZQwTfRt0o+vsGvozy8E7Q==
+carbon-components-react@v7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-7.0.0.tgz#a4936eb52bd97f1758ec74de56c814ffc8ea8353"
+  integrity sha512-05Q5iRbKRod2tDVpMO/JKqkqtZsZj0taIFSIljmjyDwVFnRnMqFSgH3EppFFL+dlhTiXU9oTHGCLRrHAJwRKCg==
   dependencies:
-    "@carbon/icons-react" "^0.0.1-beta.2"
+    "@carbon/icons-react" "^0.0.1-beta.4"
     classnames "2.2.6"
     downshift "^1.31.14"
     flatpickr "4.5.5"
+    focus-trap-react "^6.0.0"
     invariant "^2.2.3"
     lodash.debounce "^4.0.8"
     lodash.isequal "^4.5.0"
     lodash.omit "^4.5.0"
-    react-is "^16.8.2"
+    react-is "^16.8.5"
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@v10.0.0-beta.1:
-  version "10.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-10.0.0-beta.1.tgz#21284dcb6bc1e2423f1288e113164708ccb61889"
-  integrity sha512-hY8jQmdSKqFinymD5hyL22LGn9DtT97Q723OvPvM/8Ea/2Jm6OVcmUFhOHXGjyVIsdFMadf0xjqg/5mIbUoKjw==
+carbon-components@v10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-10.0.0.tgz#d9e5da8619c7bd74c31ebabb759f23790460f2d6"
+  integrity sha512-SFTUy7C+pIucsWnuOsRFYcChXPhqYnutqwsyuQ4Tr3h+5SlytRo3R3dyHQeka4j+DEUagCRfIBu8NCBnipERyw==
   dependencies:
     carbon-icons "^7.0.7"
     flatpickr "4.5.7"
@@ -8139,6 +8140,21 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
+focus-trap-react@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/focus-trap-react/-/focus-trap-react-6.0.0.tgz#3f5a9f68447dd374d22388fb4c50018be83e74a5"
+  integrity sha512-mvEYxmP75PMx0vOqoIAmJHO/qUEvdTAdz6gLlEZyxxODnuKQdnKea2RWTYxghAPrV+ibiIq2o/GTSgQycnAjcw==
+  dependencies:
+    focus-trap "^4.0.2"
+
+focus-trap@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/focus-trap/-/focus-trap-4.0.2.tgz#4ee2b96547c9ea0e4252a2d4b2cca68944194663"
+  integrity sha512-HtLjfAK7Hp2qbBtLS6wEznID1mPT+48ZnP2nkHzgjpL4kroYHg0CdqJ5cTXk+UO5znAxF5fRUkhdyfgrhh8Lzw==
+  dependencies:
+    tabbable "^3.1.2"
+    xtend "^4.0.1"
+
 follow-redirects@^1.0.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.7.0.tgz#489ebc198dc0e7f64167bd23b03c4c19b5784c76"
@@ -8491,6 +8507,16 @@ gatsby-plugin-sharp@2.0.14:
     progress "^1.1.8"
     sharp "^0.21.0"
     svgo "^0.7.2"
+
+gatsby-plugin-sitemap@^2.0.10:
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-2.0.10.tgz#1556eea417a55c8fbbd79e63eb80c1ef94039e91"
+  integrity sha512-oi+OqT6LdcXcS6l7g9HUqR4qrwUb489tUyMX5Y7WGgOfCgMgORTLAzGuKdkWL96u88Jyn+cdT3aqLCZd9D9H8Q==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    minimatch "^3.0.4"
+    pify "^3.0.0"
+    sitemap "^1.12.0"
 
 gatsby-react-router-scroll@^2.0.2, gatsby-react-router-scroll@^2.0.4:
   version "2.0.6"
@@ -15437,7 +15463,7 @@ react-inspector@^2.2.2, react-inspector@^2.3.0:
     is-dom "^1.0.9"
     prop-types "^15.6.1"
 
-react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.2:
+react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.5:
   version "16.8.5"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.5.tgz#c54ac229dd66b5afe0de5acbe47647c3da692ff8"
   integrity sha512-sudt2uq5P/2TznPV4Wtdi+Lnq3yaYW8LfvPKLM9BKD8jJNBkxMVyB0C9/GmVhLw7Jbdmndk/73n7XQGeN9A3QQ==
@@ -16885,6 +16911,14 @@ sisteransi@^0.1.1:
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-0.1.1.tgz#5431447d5f7d1675aac667ccd0b865a4994cb3ce"
   integrity sha512-PmGOd02bM9YO5ifxpw36nrNMBTptEtfRl4qUYl9SndkolplkrZZOW7PGHjrZL53QvMVj9nQ+TKqUnRsw4tJa4g==
 
+sitemap@^1.12.0:
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/sitemap/-/sitemap-1.13.0.tgz#569cbe2180202926a62a266cd3de09c9ceb43f83"
+  integrity sha1-Vpy+IYAgKSamKiZs094Jyc60P4M=
+  dependencies:
+    underscore "^1.7.0"
+    url-join "^1.1.0"
+
 slash@2.0.0, slash@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-2.0.0.tgz#de552851a1759df3a8f206535442f5ec4ddeab44"
@@ -17829,6 +17863,11 @@ symbol.prototype.description@^1.0.0:
   dependencies:
     has-symbols "^1.0.0"
 
+tabbable@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/tabbable/-/tabbable-3.1.2.tgz#f2d16cccd01f400e38635c7181adfe0ad965a4a2"
+  integrity sha512-wjB6puVXTYO0BSFtCmWQubA/KIn7Xvajw0x0l6eJUudMG/EAiJvIUnyNX6xO4NpGrJ16lbD0eUseB9WxW0vlpQ==
+
 table@^5.2.3:
   version "5.2.3"
   resolved "https://registry.yarnpkg.com/table/-/table-5.2.3.tgz#cde0cc6eb06751c009efab27e8c820ca5b67b7f2"
@@ -18439,6 +18478,11 @@ underscore.string@^3.3.4:
     sprintf-js "^1.0.3"
     util-deprecate "^1.0.2"
 
+underscore@^1.7.0:
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.9.1.tgz#06dce34a0e68a7babc29b365b8e74b8925203961"
+  integrity sha512-5/4etnCkd9c8gwgowi5/om/mYO5ajCaOgdzj/oW+0eQV9WxKBDZw5+ycmKmeaTXjInS/W0BzpGLo2xR2aBwZdg==
+
 unherit@^1.0.4:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/unherit/-/unherit-1.1.1.tgz#132748da3e88eab767e08fabfbb89c5e9d28628c"
@@ -18712,6 +18756,11 @@ urix@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
+
+url-join@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/url-join/-/url-join-1.1.0.tgz#741c6c2f4596c4830d6718460920d0c92202dc78"
+  integrity sha1-dBxsL0WWxIMNZxhGCSDQySIC3Hg=
 
 url-loader@^0.6.2:
   version "0.6.2"
