@@ -9,6 +9,7 @@ module.exports = {
   siteMetadata: {
     title: 'Carbon Design System',
     titleInternal: 'Carbon Design System',
+    siteUrl: 'https://www.carbondesignsystem.com'
   },
   plugins: [
     {
@@ -117,5 +118,6 @@ module.exports = {
         },
       },
     },
+    'gatsby-plugin-sitemap'
   ],
 };
