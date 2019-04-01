@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import classnames from 'classnames';
-import { Icon } from 'carbon-components-react';
 import ReactGA from 'react-ga';
 import Prism from 'prismjs';
-import { Copy20 } from '@carbon/icons-react';
+import { Copy20, ChevronDown16 } from '@carbon/icons-react';
 
 class CodeExample extends Component {
   static propTypes = {
@@ -96,10 +95,9 @@ class CodeExample extends Component {
         <div className="code-example__expand-container">
           <button className={expandBtnClass} onClick={this.expandCode}>
             <span>{expandCodeBtnText}</span>
-            <Icon
+            <ChevronDown16 
               alt="expand code"
               className={expandBtnIconClass}
-              name="chevron--down"
               description="Expand code icon"
             />
           </button>
