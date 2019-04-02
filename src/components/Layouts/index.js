@@ -21,7 +21,11 @@ import {
   Information20,
   Search20,
 } from '@carbon/icons-react';
-import { WebsiteFooter, WebsiteSwitcher, WebsiteCodeSnippet } from '@carbon/addons-website';
+import {
+  WebsiteFooter,
+  WebsiteSwitcher,
+  WebsiteCodeSnippet,
+} from '@carbon/addons-website';
 
 import PageTable from '../PageTable';
 
@@ -164,7 +168,7 @@ class Layout extends React.Component {
       easing: 'easeInOutCubic',
       offset: 87, // height of both header bars
       topOnEmptyHash: false,
-      clip: true
+      clip: true,
     });
 
     if (window.location.hash) {
@@ -176,7 +180,7 @@ class Layout extends React.Component {
         scroll.animateScroll(hashElement);
       }
     }
-  }
+  };
 
   render() {
     const { GATSBY_CARBON_ENV } = process.env;
@@ -239,14 +243,16 @@ class Layout extends React.Component {
               <Information20 className="website-alert__icon" />
               <p className="website-alert__text">
                 <span>Carbon v10 is live!</span>
-                <span></span>{' '}
+                <span />{' '}
                 <span>View the migration guide to upgrade from v9.</span>
               </p>
               <Link
                 className="website-alert__button"
                 tabIndex="-1"
                 to="/updates/v10-migration/overview">
-                <button class="bx--btn bx--btn--secondary bx--btn--sm" type="button">
+                <button
+                  class="bx--btn bx--btn--secondary bx--btn--sm"
+                  type="button">
                   <span>Migrate to v10</span>
                   <ArrowRight20 />
                 </button>
@@ -268,27 +274,26 @@ class Layout extends React.Component {
                 isActive={isLeftNavOpen}
               />
               {isInternal ? (
-                <HeaderName prefix="" to="/" element={Link} href="/">
-                  <span>IBM Product</span>&nbsp;Design&nbsp;<span>System</span>
+                <HeaderName prefix="" to="/" element={Link}>
+                  Carbon&nbsp;<span>Design System</span>
                 </HeaderName>
               ) : (
-                  <HeaderName prefix="" to="/" element={Link}>
-                    Carbon&nbsp;<span>Design System</span>
-                  </HeaderName>
-                )}
-
+                <HeaderName prefix="" to="/" element={Link}>
+                  Carbon&nbsp;<span>Design System</span>
+                </HeaderName>
+              )}
               <HeaderGlobalBar>
                 {/* {isInternal ? null : <GlobalSearch />} */}
                 {this.state.isSearchOpen ? (
                   <GlobalSearch />
                 ) : (
-                    <HeaderGlobalAction
-                      className="bx--header__action--search"
-                      aria-label="Search Website"
-                      onClick={() => this.handleSearchClick('isSearchOpen')}>
-                      <Search20 />
-                    </HeaderGlobalAction>
-                  )}
+                  <HeaderGlobalAction
+                    className="bx--header__action--search"
+                    aria-label="Search Website"
+                    onClick={() => this.handleSearchClick('isSearchOpen')}>
+                    <Search20 />
+                  </HeaderGlobalAction>
+                )}
                 <HeaderGlobalAction
                   className="bx--header__action--switcher"
                   aria-label="Switch"
@@ -315,7 +320,7 @@ class Layout extends React.Component {
                   linkText: 'IBM Design Language',
                 },
                 {
-                  href: 'https://next.carbondesignsystem.com',
+                  href: 'https://www.carbondesignsystem.com',
                   linkText: 'IBM Product Design',
                 },
                 {
