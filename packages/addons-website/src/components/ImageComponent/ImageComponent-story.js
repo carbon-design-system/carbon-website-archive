@@ -13,25 +13,25 @@ storiesOf('Image Component', module).add(
     },
   }
 )
-// .add(
-//   'Image Component with Zoom no Title',
-//   () => <ImageComponent caption="This is a caption" fixed="default" zoom="true">
-//             <img src="https://loremflickr.com/400/300" alt="alt text" />
-//         </ImageComponent>,
-//   {
-//     info: {
-//       text: 'Image Component with Zoom no Title',
-//     },
-//   }
-// )
-// .add(
-//   'Image Component no Zoom',
-//   () => <ImageComponent caption="This is a caption" fixed="default">
-//             <img src="https://loremflickr.com/400/300" alt="alt text" title="This is the title" />
-//         </ImageComponent>,
-//   {
-//     info: {
-//       text: 'Image Component no Zoom',
-//     },
-//   }
-// );
+.add(
+  'Image Component with Zoom no Title',
+  () => <ImageComponent caption="This is a caption" fixed="default" zoom="true">
+            <img src="https://loremflickr.com/400/300" alt="alt text" />
+        </ImageComponent>,
+  {
+    info: {
+      text: 'Image Component with Zoom no Title',
+    },
+  }
+)
+.add(
+  'Image Component no Zoom',
+  () => <ImageComponent caption="This is a caption" fixed="default">
+            <img src="https://loremflickr.com/400/300" alt="alt text" title="This is the title" />
+        </ImageComponent>,
+  {
+    info: {
+      text: 'Image Component no Zoom',
+    },
+  }
+);
