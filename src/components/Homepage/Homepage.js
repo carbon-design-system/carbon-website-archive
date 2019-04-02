@@ -15,8 +15,10 @@ export class HomepageHeader extends React.Component {
 
     const homeTitle = isInternal ? (
       <h3 className="homepage--header__title">
-        IBM Product <br />
-        Design System
+        <span>
+          Carbon <br />
+          Design System
+        </span>
       </h3>
     ) : (
       <h3 className="homepage--header__title">
@@ -36,7 +38,7 @@ export class HomepageHeader extends React.Component {
               <div className="ibm--col-lg-4 ibm--offset-lg-4">{homeTitle}</div>
             </div>
           </div>
-          <img src={bannerImg} alt="IBM Product Design System banner image" />
+          <img src={bannerImg} alt="Carbon Design System banner image" />
         </section>
         <section className="homepage--callout">
           <div className="ibm--grid">
@@ -50,15 +52,15 @@ export class HomepageHeader extends React.Component {
                   and consistent
                 </h3>
               </aside>
-              <p className="ibm--col-lg-8 ibm--col-md-4">
-                <h2 className="bx--type-expressive-paragraph-01">
+              <div className="ibm--col-lg-8 ibm--col-md-4">
+                <p className="bx--type-expressive-paragraph-01">
                   The <strong>Carbon Design System</strong> is IBM&rsquo;s
                   open-source design system for products and experiences. With
                   the IBM Design Language as its foundation, the system consists
                   of working code, design tools and resources, human interface
                   guidelines, and a vibrant community of contributors.
-                </h2>
-              </p>
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -82,18 +84,18 @@ export class HomepageFooter extends React.Component {
               </h3>
             </aside>
             <div className="ibm--col-lg-8 ibm--col-md-4">
-              <p className="homepage--footer__info">
-                <h2 className="bx--type-expressive-paragraph-01">
+              <div className="homepage--footer__info">
+                <p className="bx--type-expressive-paragraph-01">
                   We welcome all feedback, designs, or ideas in order to produce
                   the best possible experience for our users. If you&rsquo;re
                   interested in contributing, check out our contributing
                   guidelines to get started.
-                </h2>
+                </p>
                 <Link to="/contributing/governance" alt="Start contributing">
                   Start contributing
                   <ArrowRight24 aria-label="Start Contributing" />
                 </Link>
-              </p>
+              </div>
             </div>
           </section>
         </div>

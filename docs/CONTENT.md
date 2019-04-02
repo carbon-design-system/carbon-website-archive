@@ -26,6 +26,7 @@ src
           ├── other-frameworks.md
           ├── react.md
           ├── vanilla.md
+          ├── vue.md
 ```
 
 ## Frontmatter
@@ -221,7 +222,7 @@ This is a wrapper component to display a list as an anchor link list
 
 - [General guidance ](#general-guidance)
 - [Variations](#variations)
-- [Labels](#labels) 
+- [Labels](#labels)
 - [Icon usage](#icon-usage)
 - [Danger button usage](#danger-button-usage)
 
@@ -275,9 +276,11 @@ This will render the following group of clickable tiles
 
 #### Example of the Do/Don't components:
 
-- can include property `full=true` to use the example as a full-width component.
-    - e.g. `<DoDontExample full=true>`
+- can include property `full_width="true"` to use the example as a full-width component.
+    - e.g. `<DoDontExample full_width="true">`
     - this option will cause the element to fill the full width of its containing wrappper. adjust the column count of the enclosing `<GridWrapper>` to expand the maxium width.
+- can include property `dark="true"` to use a dark background
+    - e.g. `<DoDontExample dark="true">`
 
 ##### With text examples:
 
@@ -348,8 +351,8 @@ lorem ipsum dolor sit amet
 </WebsiteTabs>
 ```
 - note the empty line after `<Tab label="Tab 1"><div>` and before the first line of content, in this case `lorem ipsum…`. **Verify that there are no whitespace characters in these empty lines**.
-- Do not indent interior components. 
-    - Unfortunately, this component is extra fragile when written inside of a markdown file, because we are passing `<Tab>` components into the `<WebsiteTabs>` component, and markdown can interfere when child components are indendented. 
+- Do not indent interior components.
+    - Unfortunately, this component is extra fragile when written inside of a markdown file, because we are passing `<Tab>` components into the `<WebsiteTabs>` component, and markdown can interfere when child components are indendented.
 
 
 
@@ -390,6 +393,7 @@ lorem ipsum dolor sit amet
     hasLightVersion //Optional - shows the light/white background switcher
     hasReactVersion //Optional -links to react storybook
     hasAngularVersion //Optional -links to angular storkbook
+    hasVueVersion="folder-component--story" // Optional -If not empty links to vue storybook
     experimental //Optional -loads experimental version/styles
     >
 </ComponentCode>

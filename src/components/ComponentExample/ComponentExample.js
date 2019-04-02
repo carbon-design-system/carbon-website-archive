@@ -43,35 +43,6 @@ const liveDemoContainerVerticalPositionFactors = {
   [DIRECTION_BOTTOM]: -1,
 };
 
-const getOverflowMenuOffsetExperimental = (menuBody, direction) => {
-  const triggerButtonPositionProp = triggerButtonPositionProps[direction];
-  const triggerButtonPositionFactor = triggerButtonPositionFactors[direction];
-  if (!triggerButtonPositionProp || !triggerButtonPositionFactor) {
-    console.warn('Wrong floating menu direction:', direction); // eslint-disable-line no-console
-  }
-  const menuWidth = menuBody.offsetWidth;
-  const menuHeight = menuBody.offsetHeight;
-  if (
-    triggerButtonPositionProp === 'top' ||
-    triggerButtonPositionProp === 'bottom'
-  ) {
-    return {
-      left: menuWidth / 2 - 16,
-      top: 0,
-    };
-  }
-
-  if (
-    triggerButtonPositionProp === 'left' ||
-    triggerButtonPositionProp === 'right'
-  ) {
-    return {
-      left: 0,
-      top: menuHeight / 2 - 16,
-    };
-  }
-};
-
 const components = {
   ...carbonComponents,
   InlineLoadingDemoButton,
@@ -97,6 +68,7 @@ class ComponentExample extends Component {
     hasLightVersion: PropTypes.string,
     hasReactVersion: PropTypes.bool,
     hasAngularVersion: PropTypes.bool,
+    hasVueVersion: PropTypes.string,
     experimental: PropTypes.bool,
   };
 
@@ -206,11 +178,12 @@ class ComponentExample extends Component {
             if (name === 'OverflowMenu' || name === 'Tooltip') {
               ['objMenuOffset', 'objMenuOffsetFlip'].forEach(optionName => {
                 if (TheComponent.options[optionName]) {
-                  options[optionName] = (menuBody, direction) => {
-                    const origOffset =
-                      name === 'OverflowMenu' && experimental
-                        ? getOverflowMenuOffsetExperimental(menuBody, direction)
-                        : TheComponent.options[optionName](menuBody, direction);
+                  options[optionName] = (menuBody, direction, trigger) => {
+                    const origOffset = TheComponent.options[optionName](
+                      menuBody,
+                      direction,
+                      trigger
+                    );
                     const liveContainerRef = this._liveContainerRef.current;
                     if (liveContainerRef) {
                       const { left: origLeft, top: origTop } = origOffset;
@@ -218,11 +191,21 @@ class ComponentExample extends Component {
                         left: liveContainerLeft,
                         top: liveContainerTop,
                       } = liveContainerRef.getBoundingClientRect();
+                      const borderWidth =
+                        name !== 'OverflowMenu'
+                          ? 0
+                          : parseInt(
+                              liveContainerRef.ownerDocument.defaultView
+                                .getComputedStyle(liveContainerRef)
+                                .getPropertyValue('border-width')
+                            );
                       const adjustLeft =
                         liveContainerLeft +
+                        borderWidth +
                         menuBody.ownerDocument.defaultView.pageXOffset;
                       const adjustTop =
                         liveContainerTop +
+                        borderWidth +
                         menuBody.ownerDocument.defaultView.pageYOffset;
                       return {
                         left: origLeft - adjustLeft,
@@ -273,6 +256,7 @@ class ComponentExample extends Component {
       hasLightVersion,
       hasReactVersion,
       hasAngularVersion,
+      hasVueVersion,
       experimental,
     } = this.props;
 
@@ -360,6 +344,14 @@ class ComponentExample extends Component {
                 target="_blank"
                 rel="noopener noreferrer">
                 Angular <Launch16 />
+              </a>
+            )}
+            {typeof hasVueVersion === 'string' && (
+              <a
+                href={`http://vue.carbondesignsystem.com/?path=/story/experimental-cv${hasVueVersion}`}
+                target="_blank"
+                rel="noopener noreferrer">
+                Vue <Launch16 />
               </a>
             )}
             {codepenSlug !== undefined && (
