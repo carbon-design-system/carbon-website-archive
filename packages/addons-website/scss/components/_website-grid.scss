@@ -15,10 +15,8 @@
   }
 
   .ibm--no-gutter-sm {
-    @include breakpoint('sm') {
-      padding-left: 0;
-      padding-right: 0;
-    }
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .ibm--no-gutter-lg--left {
@@ -34,9 +32,7 @@
   }
 
   .ibm--no-gutter-sm--left {
-    @include breakpoint('sm') {
-      padding-left: 0;
-    }
+    padding-left: 0;
   }
 }
 
