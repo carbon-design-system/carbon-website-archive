@@ -9,7 +9,7 @@ const tags = {
   updated: <Tag type="blue">Updated</Tag>,
   deprectated: <Tag type="red">Deprecated</Tag>,
   underConstruction: <Tag type="cool-gray">Under construction</Tag>,
-  notAvailable: <span className="component-status--unavailable">—</span>,
+  notAvailable: <span className="component-status--unavailable">–</span>,
 };
 
 class ComponentStatus extends React.Component {
