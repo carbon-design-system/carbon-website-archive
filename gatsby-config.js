@@ -8,7 +8,8 @@ module.exports = {
   pathPrefix: PATH_PREFIX,
   siteMetadata: {
     title: 'Carbon Design System',
-    titleInternal: 'IBM Product Design',
+    titleInternal: 'Carbon Design System',
+    siteUrl: 'https://www.carbondesignsystem.com'
   },
   plugins: [
     {
@@ -117,5 +118,6 @@ module.exports = {
         },
       },
     },
+    'gatsby-plugin-sitemap'
   ],
 };
