@@ -57,7 +57,9 @@ export default class LeftNav extends React.Component {
             'side-nav__closed': !isLeftNavOpen,
             'side-nav__closed--final': isLeftNavFinal && !isLeftNavOpen,
             'bx--side-nav--website--light':
-              location.pathname !== '/' && !is404Page,
+              location.pathname !== '/' &&
+              location.pathname !== '/design/product/' &&
+              !is404Page,
             'bx--side-nav--website': true,
           });
 
@@ -82,7 +84,7 @@ export default class LeftNav extends React.Component {
                   <SideNavLink
                     icon={<Launch16 />}
                     href="javascript:void(0)"
-                    to="/resources#github"
+                    to="/resources#github-repos"
                     className="bx--side-nav--website-link"
                     element={Link}>
                     GitHub Repos
