@@ -22,9 +22,9 @@ const AspectRatioTile = (
           link, 
           target, 
           children } ) => {
+
+  const windowWidth = document.body.clientWidth
   
-  // const windowWidth = document.body.clientWidth
-  // console.log('windowWidth',windowWidth)
   const calcRatio = (ratio) => {
     switch (ratio){
       case '1:1':
@@ -32,9 +32,9 @@ const AspectRatioTile = (
       case '2:1':
         return '50%';
       case '4:1':
-        return '25%';
+        return windowWidth > 672 ? '25%' : '50%';
       case '6:1':
-        return '16.67%';
+        return windowWidth > 1056 ? '16.67%' : windowWidth > 672 ? '25%' : '50%';
       case '1:2':
         return '200%';
       case '3:1':
@@ -74,7 +74,6 @@ const AspectRatioTile = (
   }
 
   const transparentImageStyle = {
-    opacity: contentOnHover ? 0 : 1,
     backgroundImage: transparentImage ? `url(${transparentImage})` : null
   }
 
@@ -90,7 +89,7 @@ const AspectRatioTile = (
         : <a className={theme==='dark' ? `${prefix}--aspect-ratio-tile ${prefix}--aspect-ratio-tile__dark`: `${prefix}--aspect-ratio-tile`} style={ratioStyle} href={link} target={target}>
           <div className={ hoverDark ? `${prefix}--aspect-ratio-tile-hover ${prefix}--aspect-ratio-tile-hover__dark` : `${prefix}--aspect-ratio-tile-hover`} />
           <div className={`${prefix}--aspect-ratio-tile-background`} style={backgroundStyle} />
-          <div className={`${prefix}--aspect-ratio-tile-content`} style={transparentImageStyle}>
+          <div className={contentOnHover ? `${prefix}--aspect-ratio-tile-content ${prefix}--aspect-ratio-tile-content-on-hover-only`: `${prefix}--aspect-ratio-tile-content`} style={transparentImageStyle}>
             <div className={`${prefix}--aspect-ratio-tile-title`}>
               <div className='bx--type-body-long-01'>{subtitle}</div>
               <div className='bx--type-expressive-heading-03'>{title}</div>

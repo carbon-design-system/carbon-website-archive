@@ -5,7 +5,7 @@
   display: block;
   width: 100%;
   padding-bottom: 100%;
-  color: $carbon--gray-90!important;
+  color: $carbon--gray-90;
 
   .#{$prefix}--aspect-ratio-tile-background {
     position: absolute;
@@ -17,6 +17,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    overflow:hidden;
     // z-index: 1;
   }
 
@@ -31,11 +32,16 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
+    color: inherit;
     user-select: none;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     transition: opacity 600ms ease;
+
+    &.#{$prefix}--aspect-ratio-tile-content-on-hover-only {
+      opacity: 0;
+    }
 
     .#{$prefix}--aspect-ratio-tile-title {
       z-index:2;
@@ -75,12 +81,12 @@
   &:hover {
     .#{$prefix}--aspect-ratio-tile-content,
     .#{$prefix}--aspect-ratio-tile-hover {
-      opacity: 1!important;
+      opacity: 1;
     }
   }
 
   &.#{$prefix}--aspect-ratio-tile__dark {
-    color: $carbon--white-0!important;
+    color: $carbon--white-0;
 
     .#{$prefix}--aspect-ratio-tile-background {
       background-color: $carbon--gray-90;
@@ -99,7 +105,6 @@
     bottom: 1px;
     right: 1px;
     z-index: 1;
-    // background: transparent;
 
     // nested tile bottom right
     .#{$prefix}--aspect-ratio-tile {
@@ -107,7 +112,7 @@
       z-index: 5000;
       bottom: -1px;
       right: -1px;
-      width: 50%; 
+      width: calc(50% + 1px); 
     }
   }
   
@@ -120,7 +125,6 @@
       
         @include carbon--breakpoint('lg') {
           width: calc((100% / 3) + 1px);
-          padding-bottom: 16.67%!important;
         }
       }
     }  
