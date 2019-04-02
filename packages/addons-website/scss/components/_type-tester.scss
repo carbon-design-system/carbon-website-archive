@@ -67,11 +67,13 @@ $font-prefix: '/fonts';
       display: inline-block;
       width: 50%;
       height: 3rem;
-      background: $ui-02;
+      border-bottom:transparent;
       
       .#{$prefix}--list-box__field {
         background: $ui-02;
         height: 3rem;
+        padding-top: 1rem;
+        padding-bottom: rem(15px);
         border-bottom: 1px solid $carbon--gray-20; 
         &:focus {
           outline-color: transparent;
@@ -100,40 +102,13 @@ $font-prefix: '/fonts';
         box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
 
         .#{$prefix}--list-box__menu-item {
-          position: relative;
           height: auto;
-          border-bottom: none;
-          padding: 1rem;
 
-          &::before {
-            content: none;
-          }
-          &::after {
-            content: '';
-            position: absolute;
-            z-index: 2;
-            left: 1rem;
-            right: 1rem;
-            bottom: -1px;
-            height: 1px;
-            background: $hover-ui;
-          }
-          &:hover,
-          &.#{$prefix}--list-box__menu-item--active,
-          &.#{$prefix}--list-box__menu-item--highlighted {
-            background: $hover-ui;
-
-            &::after {
-              background: $carbon--white-0;
-            }
+          .#{$prefix}--list-box__menu-item__option {
+            height: auto;
+            padding: rem(14px) 0;
           }
         }
-      }
-
-      &:hover,
-      // &:focus,
-      &:active {
-        background: $ui-02;
       }
     }
   }
