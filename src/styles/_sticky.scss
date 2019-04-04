@@ -2,39 +2,88 @@
 // 15rem page header height
 // 3rem page tabs height
 
-// .website-header-wrapper {
-//   position: fixed;
-//   top: 0;
-//   width: 100%;
-//   z-index: 5000;
-// }
-
-// .website-alert {
-//   position: static;
-// }
-// .#{$prefix}--header {
-//   position: static;
-// }
+// transitions for going back to "default" (visible) state
+.#{prefix}--header__global,
+.#{prefix}--header__name,
+.#{$prefix}--header,
+.website-alert,
+.page-header,
+.#{$prefix}--side-nav {
+  transition: top $carbon--ease-out $transition--expansion;
+}
+.website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + div,
+.website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + .container,
+.website-alert + .#{$prefix}--header ~ .#{$prefix}--website-switcher {
+  transition: margin-top $carbon--ease-out $transition--expansion;
+}
 
 .page-header {
   position: sticky;
-  top: -9rem;
+  top: -9rem; // header set to 15rem height. subtract 3rem tabs height & 3rem header height
   z-index: 500;
 }
 
+// positioned lower when a 2.5rem alert banner is present
 .website-alert + .#{$prefix}--header ~ div.container .page-header {
   top: -6.5rem;
 }
 
-.page-tabs {
-  // position: sticky;
-  // top: 0;
-  // z-index: 400;
-  // transition: top $transition--expansion $carbon--standard-easing;
-}
+/* 
 
-.sticky-header-visible {
-  // .page-tabs {
-  //   top: calc(3rem + 2.5rem); // height of top header plus any banner
-  // }
+website global header hidden
+
+*/
+
+.website-header-hidden {
+  // transitions for hiding the global website header
+  .#{prefix}--header__global,
+  .#{prefix}--header__name,
+  .#{$prefix}--header,
+  .website-alert,
+  .page-header,
+  .#{$prefix}--side-nav {
+    transition: top $carbon--ease-in $transition--expansion;
+  }
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + div,
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + .container,
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--website-switcher {
+    transition: margin-top $carbon--ease-in $transition--expansion;
+  }
+
+  .#{prefix}--header__global,
+  .#{prefix}--header__name {
+    top: -3rem;
+  }
+
+  .page-header {
+    top: -12rem;
+  }
+  .website-alert + .#{$prefix}--header ~ div.container .page-header {
+    top: -12rem; // restating for specificity
+  }
+
+  .website-alert {
+    top: -5.5rem;
+  }
+  .website-alert + .#{$prefix}--header {
+    top: -3rem;
+  }
+
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav {
+    top: 0;
+  }
+
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + div,
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + .container,
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--website-switcher {
+    margin-top: 0;
+  }
+
+  .website-alert
+    + .bx--header
+    ~ .bx--side-nav
+    + div
+    .color-token-table__theme-switcher--sticky {
+    top: 104px; // idk? will need to test/look at this...
+  }
 }

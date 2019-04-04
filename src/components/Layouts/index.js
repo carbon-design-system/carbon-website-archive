@@ -150,7 +150,7 @@ class Layout extends React.Component {
       durationMin: 250,
       durationMax: 700,
       easing: 'easeInOutCubic',
-      offset: 87, // height of both header bars
+      offset: 87, // height of both header bars plus space for tabs
       topOnEmptyHash: false,
       clip: true,
     });
