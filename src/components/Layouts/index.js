@@ -23,6 +23,15 @@ import '../../styles/index.scss';
 import { MDXProvider } from '@mdx-js/tag';
 
 class Layout extends React.Component {
+  constructor() {
+    super();
+    this.lastKnownScrollY = 0;
+    this.currentScrollY = 0;
+    this.ticking = false;
+    this.stickyWrapper = null;
+    this.headerHiddenClass = 'website-header-hidden';
+  }
+
   static propTypes = {
     children: PropTypes.any,
   };
@@ -169,12 +178,34 @@ class Layout extends React.Component {
 
   onScroll = () => {
     console.log('scrolling!');
+    this.currentScrollY = window.pageYOffset;
+    if (this.currentScrollY < this.lastKnownScrollY) {
+      this.showHeader();
+    } else if (this.currentScrollY > this.lastKnownScrollY) {
+      this.hideHeader();
+    }
+    this.lastKnownScrollY = this.currentScrollY;
+  };
+
+  showHeader = () => {
+    if (
+      this.stickyWrapper.classList &&
+      this.stickyWrapper.classList.contains(this.headerHiddenClass)
+    ) {
+      this.stickyWrapper.classList.remove(this.headerHiddenClass);
+    }
+  };
+
+  hideHeader = () => {
+    console.log(this.stickyWrapper);
+    this.stickyWrapper.classList.add(this.headerHiddenClass);
   };
 
   addStickyTabs = () => {
     console.log(window.pageYOffset);
-    // let eleHeader = document.getElementById('body');
-    // save ref to header?
+    this.stickyWrapper = document.getElementsByTagName('body')[0];
+    console.log(this.stickyWrapper);
+    // save ref to body that gets the tag?
     document.addEventListener('scroll', this.onScroll, false);
   };
 
