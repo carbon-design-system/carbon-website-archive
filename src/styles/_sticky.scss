@@ -1,0 +1,22 @@
+// 3rem + 2.5rem site header height plus banner height
+// 15rem page header height
+// 3rem page tabs height
+
+.page-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.page-tabs {
+  // position: sticky;
+  // top: 0;
+  // z-index: 400;
+  // transition: top $transition--expansion $carbon--standard-easing;
+}
+
+.sticky-header-visible {
+  // .page-tabs {
+  //   top: calc(3rem + 2.5rem); // height of top header plus any banner
+  // }
+}

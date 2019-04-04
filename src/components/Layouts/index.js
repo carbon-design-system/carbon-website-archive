@@ -3,25 +3,15 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql, Link } from 'gatsby';
 import Packages from '../../../package.json';
-import GlobalSearch from '../GlobalSearch';
+import WebsiteHeader from '../WebsiteHeader';
 import LeftNav from '../LeftNav';
 import favicon32 from '../../content/global/images/favicon-32.png';
+import { ArrowRight20, Information20 } from '@carbon/icons-react';
 import {
-  Header,
-  HeaderMenuButton,
-  HeaderName,
-  SkipToContent,
-  HeaderGlobalBar,
-  HeaderGlobalAction,
-} from 'carbon-components-react/lib/components/UIShell';
-import {
-  ArrowRight20,
-  AppSwitcher20,
-  Close20,
-  Information20,
-  Search20,
-} from '@carbon/icons-react';
-import { WebsiteFooter, WebsiteSwitcher, WebsiteCodeSnippet } from '@carbon/addons-website';
+  WebsiteFooter,
+  WebsiteSwitcher,
+  WebsiteCodeSnippet,
+} from '@carbon/addons-website';
 
 import PageTable from '../PageTable';
 
@@ -68,9 +58,7 @@ class Layout extends React.Component {
   };
 
   handleCloseSearchClick = evt => {
-    console.log(evt.target);
     const className = evt.target.classList[0];
-    console.log(className);
     const filters = [
       'bx--search',
       'bx--search-input',
@@ -164,7 +152,7 @@ class Layout extends React.Component {
       easing: 'easeInOutCubic',
       offset: 87, // height of both header bars
       topOnEmptyHash: false,
-      clip: true
+      clip: true,
     });
 
     if (window.location.hash) {
@@ -176,7 +164,7 @@ class Layout extends React.Component {
         scroll.animateScroll(hashElement);
       }
     }
-  }
+  };
 
   render() {
     const { GATSBY_CARBON_ENV } = process.env;
@@ -239,71 +227,28 @@ class Layout extends React.Component {
               <Information20 className="website-alert__icon" />
               <p className="website-alert__text">
                 <span>Carbon v10 is live!</span>
-                <span></span>{' '}
+                <span />{' '}
                 <span>View the migration guide to upgrade from v9.</span>
               </p>
               <Link
                 className="website-alert__button"
                 tabIndex="-1"
                 to="/updates/v10-migration/overview">
-                <button class="bx--btn bx--btn--secondary bx--btn--sm" type="button">
+                <button
+                  class="bx--btn bx--btn--secondary bx--btn--sm"
+                  type="button">
                   <span>Migrate to v10</span>
                   <ArrowRight20 />
                 </button>
               </Link>
             </aside>
-            <Header aria-label="Header" className="bx--header--website">
-              <SkipToContent />
-              <HeaderMenuButton
-                className="bx--header__action--menu"
-                aria-label="Open menu"
-                onClick={() =>
-                  this.onToggleBtnClick(
-                    'isLeftNavOpen',
-                    'isLeftNavFinal',
-                    'isSwitcherOpen',
-                    'isSwitcherFinal'
-                  )
-                }
-                isActive={isLeftNavOpen}
-              />
-              {isInternal ? (
-                <HeaderName prefix="" to="/" element={Link} href="/">
-                  <span>IBM Product</span>&nbsp;Design&nbsp;<span>System</span>
-                </HeaderName>
-              ) : (
-                  <HeaderName prefix="" to="/" element={Link}>
-                    Carbon&nbsp;<span>Design System</span>
-                  </HeaderName>
-                )}
-
-              <HeaderGlobalBar>
-                {/* {isInternal ? null : <GlobalSearch />} */}
-                {this.state.isSearchOpen ? (
-                  <GlobalSearch />
-                ) : (
-                    <HeaderGlobalAction
-                      className="bx--header__action--search"
-                      aria-label="Search Website"
-                      onClick={() => this.handleSearchClick('isSearchOpen')}>
-                      <Search20 />
-                    </HeaderGlobalAction>
-                  )}
-                <HeaderGlobalAction
-                  className="bx--header__action--switcher"
-                  aria-label="Switch"
-                  onClick={() =>
-                    this.onToggleBtnClick(
-                      'isSwitcherOpen',
-                      'isSwitcherFinal',
-                      'isLeftNavOpen',
-                      'isLeftNavFinal'
-                    )
-                  }>
-                  {this.state.isSwitcherOpen ? <Close20 /> : <AppSwitcher20 />}
-                </HeaderGlobalAction>
-              </HeaderGlobalBar>
-            </Header>
+            <WebsiteHeader
+              isLeftNavOpen={isLeftNavOpen}
+              onToggleBtnClick={this.onToggleBtnClick}
+              isInternal={isInternal}
+              isSearchOpen={this.state.isSearchOpen}
+              handleSearchClick={this.handleSearchClick}
+            />
 
             <WebsiteSwitcher
               isSwitcherFinal={this.state.isSwitcherFinal}
