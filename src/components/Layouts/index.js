@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { StaticQuery, graphql, Link } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 import Packages from '../../../package.json';
 import WebsiteHeader from '../WebsiteHeader';
+import WebsiteAlert from '../WebsiteAlert';
 import LeftNav from '../LeftNav';
 import favicon32 from '../../content/global/images/favicon-32.png';
-import { ArrowRight20, Information20 } from '@carbon/icons-react';
 import {
   WebsiteFooter,
   WebsiteSwitcher,
@@ -38,6 +38,7 @@ class Layout extends React.Component {
   componentDidMount() {
     this.checkWidth();
     this.addSmoothScroll();
+    this.addStickyTabs();
   }
 
   handleSearchClick = isSearchOpen => {
@@ -166,6 +167,17 @@ class Layout extends React.Component {
     }
   };
 
+  onScroll = () => {
+    console.log('scrolling!');
+  };
+
+  addStickyTabs = () => {
+    console.log(window.pageYOffset);
+    // let eleHeader = document.getElementById('body');
+    // save ref to header?
+    document.addEventListener('scroll', this.onScroll, false);
+  };
+
   render() {
     const { GATSBY_CARBON_ENV } = process.env;
     const isInternal = GATSBY_CARBON_ENV == 'internal';
@@ -229,25 +241,12 @@ class Layout extends React.Component {
               isInternal={isInternal}
               isSearchOpen={this.state.isSearchOpen}
               handleSearchClick={this.handleSearchClick}>
-              <aside aria-label="alert banner" className="website-alert">
-                <Information20 className="website-alert__icon" />
-                <p className="website-alert__text">
-                  <span>Carbon v10 is live!</span>
-                  <span />{' '}
-                  <span>View the migration guide to upgrade from v9.</span>
-                </p>
-                <Link
-                  className="website-alert__button"
-                  tabIndex="-1"
-                  to="/updates/v10-migration/overview">
-                  <button
-                    class="bx--btn bx--btn--secondary bx--btn--sm"
-                    type="button">
-                    <span>Migrate to v10</span>
-                    <ArrowRight20 />
-                  </button>
-                </Link>
-              </aside>
+              <WebsiteAlert
+                alertTitle="Carbon v10 is live!"
+                alertDescription="View the migration guide to upgrade from v9."
+                buttonText="Migrate to v10"
+                buttonTo="/updates/v10-migration/overview"
+              />
             </WebsiteHeader>
 
             <WebsiteSwitcher
