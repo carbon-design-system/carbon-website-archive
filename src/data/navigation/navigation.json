@@ -60,6 +60,9 @@
       },
       "catalog-entry": {
         "title": "Catalog entry"
+      },
+      "page-header": {
+        "title": "Page Header"
       }
     }
   },
