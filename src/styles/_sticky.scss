@@ -2,10 +2,28 @@
 // 15rem page header height
 // 3rem page tabs height
 
+// .website-header-wrapper {
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+//   z-index: 5000;
+// }
+
+// .website-alert {
+//   position: static;
+// }
+// .#{$prefix}--header {
+//   position: static;
+// }
+
 .page-header {
   position: sticky;
-  top: -6.5rem;
+  top: -9rem;
   z-index: 500;
+}
+
+.website-alert + .#{$prefix}--header ~ div.container .page-header {
+  top: -6.5rem;
 }
 
 .page-tabs {
