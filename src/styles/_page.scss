@@ -6,6 +6,10 @@ body {
   font-family: $font-family;
 }
 
+strong, b {
+  font-weight: carbon--font-weight('semibold');
+}
+
 .side-nav + div, //Issue #51 weird bug where sometimes on reload of the page the classnames on container div disapear
   .container {
   width: 100%;
