@@ -23,8 +23,12 @@ strong, b {
 .container .ibm--grid {
   margin: 0;
   max-width: rem(1584px);
+  overflow: hidden;
 }
 
+.container .ibm--offset-lg-4 {
+  overflow: scroll;
+}
 //---------------------------------------
 // Header styles
 //---------------------------------------
