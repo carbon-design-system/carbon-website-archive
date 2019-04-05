@@ -95,51 +95,51 @@ Column.propTypes = {
   /**
    * Specify the col width at small breakpoint
    */
-  colSm: PropTypes.string,
+  colSm: PropTypes.number,
   /**
    * Specify the col width at medium breakpoint
    */
-  colMd: PropTypes.string,
+  colMd: PropTypes.number,
   /**
    * Specify the col width at large breakpoint
    */
-  colLg: PropTypes.string,
+  colLg: PropTypes.number,
   /**
    * Specify the col offset at large breakpoint
    */
-  offsetLg: PropTypes.string,
+  offsetLg: PropTypes.number,
   /**
    * Specify the col offset at medium breakpoint
    */
-  offsetMd: PropTypes.string,
+  offsetMd: PropTypes.number,
   /**
    * Specify the col offset at small breakpoint
    */
-  offsetSm: PropTypes.string,
+  offsetSm: PropTypes.number,
   /**
    * Specify a no-gutter class
    */
-  noGutterSm: PropTypes.boolean,
+  noGutterSm: PropTypes.bool,
   /**
    * Specify a no-gutter class
    */
-  noGutterMd: PropTypes.boolean,
+  noGutterMd: PropTypes.bool,
   /**
    * Specify a no-gutter class
    */
-  noGutterLg: PropTypes.boolean,
+  noGutterLg: PropTypes.bool,
   /**
    * Specify a no-gutter class at small breakpoint
    */
-  noGutterSmLeft: PropTypes.boolean,
+  noGutterSmLeft: PropTypes.bool,
   /**
    * Specify a no-gutter class at medium breakpoint
    */
-  noGutterMdLeft: PropTypes.boolean,
+  noGutterMdLeft: PropTypes.bool,
   /**
    * Specify a no-gutter class at large breakpoint
    */
-  noGutterLgLeft: PropTypes.boolean,
+  noGutterLgLeft: PropTypes.bool,
   /**
    * Specify a class name for column
    */
