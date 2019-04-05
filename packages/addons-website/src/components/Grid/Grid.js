@@ -3,15 +3,8 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 export const Grid = ({ children, className }) => {
-  const classNames = classnames({
-    'ibm--grid': true,
-  });
-
   return (
-    <div
-      className={
-        className !== undefined ? `${className} ${classNames}` : `${classNames}`
-      }>
+    <div className={classnames('ibm--grid', className)}>
       {children}
     </div>
   );
@@ -27,15 +20,8 @@ Grid.propTypes = {
 };
 
 export const Row = ({ children, className }) => {
-  const classNames = classnames({
-    'ibm--row': true,
-  });
-
   return (
-    <div
-      className={
-        className !== undefined ? `${className} ${classNames}` : `${classNames}`
-      }>
+    <div className={classnames('ibm--row', className)}>
       {children}
     </div>
   );
@@ -79,7 +65,7 @@ export const Column = ({
     [`ibm--col-lg-${colLg}`]: colLg,
     [`ibm--col-lg-${colMd}`]: colMd,
     [`ibm--col-lg-${colSm}`]: colSm,
-    [`${className} `]: className,
+    [className]: className,
   });
 
   return <div className={colClasses}>{children}</div>;
