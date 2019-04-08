@@ -1,56 +1,12 @@
-// Example Group
-.do-dont-group {
-  margin-bottom: rem(24px);
-
-  @include carbon--breakpoint('md') {
-    display: flex;
-  }
-}
-
 // Example
 .example {
   margin-bottom: rem(24px);
-
-  @include carbon--breakpoint('sm') {
-    width: 100%;
-  }
-
-  @include carbon--breakpoint('md') {
-    width: calc(50% - 16px);
-  }
-
-  &:first-child {
-    @include carbon--breakpoint('sm') {
-      margin-right: 0;
-    }
-
-    @include carbon--breakpoint('md') {
-      margin-right: rem(32px);
-    }
-  }
-}
-
-.example-card {
-  background: $carbon--white-0;
-  padding-top: 100%;
   width: 100%;
-  position: relative;
 }
 
 .example--dark .example-card {
   background: $carbon--gray-90;
   color: $carbon--white-0;
-}
-
-.example-card__content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .example__content {
@@ -65,6 +21,31 @@
   img {
     margin-bottom: 0;
   }
+}
+
+.example-card {
+  background: $carbon--white-0;
+  width: 100%;
+  position: relative;
+}
+
+.example .example-card__content {
+  position: relative;
+}
+
+.example--square .example-card {
+  padding-top: 100%;
+}
+
+.example--square .example-card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 p.example__text {
@@ -129,7 +110,7 @@ p.example__title {
     padding: 0 25% 0 0;
   }
 
-  @include carbon--breakpoint('md') {
+  @include breakpoint('md') {
     padding: 0 25% 0 0;
   }
 }
@@ -142,46 +123,22 @@ p.example__description {
   padding-bottom: rem(24px);
 }
 
-.example.example--full-width {
-  width: 100%;
-}
-.example.example--full-width:first-child {
-  @include carbon--breakpoint('sm') {
-    margin-right: 0;
-  }
-}
-.example.example--full-width .example-card {
-  padding-top: 0;
-}
-.example.example--full-width .example-card__content {
-  position: relative;
-}
-
-.ibm--col-lg-12 > .example--full-width .example__caption {
-  width: 100%;
-
-  @include carbon--breakpoint('md') {
-    width: 75%;
-  }
-
- @include carbon--breakpoint('xlg')  {
-    width: 50%;
-  }
-}
-
-.example--full-width .example__caption {
-  @include carbon--breakpoint('sm') {
+.example__caption {
+  @include breakpoint('sm') {
     width: 100%;
   }
 
-  @include carbon--breakpoint('md') {
+  @include breakpoint('md') {
     width: 75%;
   }
-
-  //@include carbon--breakpoint('xlg')  {
-  //   width: 70%;
-  // }
 }
+
+.ibm--col-lg-4 .example__caption { 
+  @include breakpoint('md') {
+    width: 100%;
+  }
+}
+
 
 .example span.gatsby-resp-image-wrapper {
   max-width: 100% !important; // marked !important to overcome inline styles inserted by gatsby.
