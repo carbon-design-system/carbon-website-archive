@@ -16,7 +16,8 @@ tabs: ['Overview', 'Designers', 'Developers']
 
 ## Resources
 
-<GridWrapper col_lg="8" flex="true" bleed="true" className="tile--resource--no-margin">
+<Row className="tile--group">
+<Column offsetLg="4" colMd="4" colLg="4" noGutterSm>
   <ClickableTile
     title="Subscribe to Carbon Design Kit Library (Sketch Cloud)"
     href="sketch://add-library/cloud/JaVzz"
@@ -25,8 +26,9 @@ tabs: ['Overview', 'Designers', 'Developers']
 ![](/images/sketch-icon.png)
 
   </ClickableTile>
-
-<ClickableTile
+</Column>
+<Column colLg="4" colMd="4"  noGutterSm>
+  <ClickableTile
     title="Subscribe to IBM Design Language Library (Sketch Cloud)"
     href="sketch://add-library/cloud/75VZZ"
     type="resource">
@@ -34,8 +36,9 @@ tabs: ['Overview', 'Designers', 'Developers']
 ![](/images/sketch-icon.png)
 
   </ClickableTile>
-
-<ClickableTile
+</Column>
+<Column offsetLg="4" colLg="4" colMd="4"  noGutterSm>
+  <ClickableTile
     title="Download the IBM Grid Template (Sketch Cloud)"
     href="https://sketch.cloud/s/ngV7z"
     type="resource">
@@ -43,7 +46,8 @@ tabs: ['Overview', 'Designers', 'Developers']
 ![](/images/sketch-icon.png)
 
   </ClickableTile>
-</GridWrapper>
+</Column>
+</Row>
 
 ## IBM Design Language
 
@@ -52,7 +56,6 @@ Carbon v10 delivers the new <a href="https://www.ibm.com/design/language/" targe
 ## Carbon v10 kit
 
 ### What's new
-
 
 - New Sketch Cloud method of keeping your design kit in sync
 - New IBM Design Language styling
@@ -73,7 +76,7 @@ Carbon v10 includes a completely revised Sketch design kit, updated for the new 
 
 #### Sketch libraries
 
-Also new in Carbon v10 is Sketch Cloud Sync for the design kit. This is a completely new way of working with the Carbon Design Kit. Designers can now subscribe to the design kit library via Sketch Cloud, and updates to the contents of the kit will be pushed to subscribers as they become available.    
+Also new in Carbon v10 is Sketch Cloud Sync for the design kit. This is a completely new way of working with the Carbon Design Kit. Designers can now subscribe to the design kit library via Sketch Cloud, and updates to the contents of the kit will be pushed to subscribers as they become available.
 
 #### Icons, pictograms, and the full IBM color palette
 
@@ -81,16 +84,16 @@ To access the IBM Design Language icons, pictograms, and colors, subscribe to th
 
 #### Migrating to v10
 
-Upgrading to the v10 kit will not automatically change any files created in previous versions of the kit. The migration of existing v9 layouts will be a manual process for designers. 
+Upgrading to the v10 kit will not automatically change any files created in previous versions of the kit. The migration of existing v9 layouts will be a manual process for designers.
 
 Although libraries from multiple versions of Carbon can exist in Sketch at the same time, you should avoid using v10 symbols in an app designed with v9.
-
 
 ### Setting up the kit
 
 The new method for using the kit is via Sketch Cloud subscription. Head over to our Getting started guide to set up the new Sketch libraries!
 
-<GridWrapper col_lg="8" flex="true" bleed="true" className="tile--resource--no-margin">
+<Row>
+<Column offsetLg="4" colLg="4" noGutterSm>
 <ClickableTile
     title="Getting started"
     href="/getting-started/designers"
@@ -99,7 +102,8 @@ The new method for using the kit is via Sketch Cloud subscription. Head over to 
 ![](/images/sandbox-icon.png)
 
   </ClickableTile>
-</GridWrapper>
+</Column>
+</Row>
 
 ## Elements
 
@@ -107,13 +111,13 @@ The new method for using the kit is via Sketch Cloud subscription. Head over to 
 
 Carbon now offers four preset visual themes for IBM products, offering more options than ever for accessible components. See [themes guidelines](/guidelines/themes) for detailed info on using themes in Carbon v10.
 
-Carbon color tokens also have been updated with v10 to include several new and updated color tokens. 
+Carbon color tokens also have been updated with v10 to include several new and updated color tokens.
 
 [v10 Color migration](https://github.com/IBM/carbon-elements/blob/master/docs/migration/10.x-color.md)
 
 #### Icons
 
-The iconography in Carbon v10 has been significantly updated to better align with the new IBM Design Language, with dozens of new, accessible icons and design improvements to many of the existing icons. The full library of icons and pictograms is available via the IBM Design Language Kit library. Click on the tile at the top of this page to subscribe to this library. 
+The iconography in Carbon v10 has been significantly updated to better align with the new IBM Design Language, with dozens of new, accessible icons and design improvements to many of the existing icons. The full library of icons and pictograms is available via the IBM Design Language Kit library. Click on the tile at the top of this page to subscribe to this library.
 
 Any icons being used with Carbon v9 (outside of those integral to a component) should be reviewed against the new icons before publishing. Wherever possible, replace old icons with their revised IBM Design Language versions.
 
@@ -133,7 +137,7 @@ The primary typeface for Carbon (IBM Plex) is unchanged from v9. However, the ty
 
 #### Motion
 
-Carbon v10 introduces the new IBM Design Language motion standards, designed to bring unity and cohesion to all IBM motion. All interactions that include motion should abide by these standards. 
+Carbon v10 introduces the new IBM Design Language motion standards, designed to bring unity and cohesion to all IBM motion. All interactions that include motion should abide by these standards.
 
 [Motion guidelines](/guidelines/motion/basics)
 
@@ -153,20 +157,21 @@ Layout and spacing token names have also been updated in v10 but the values rema
 
 #### Update your kit
 
-The Carbon design kit now lives in a Sketch library, which can be updated on a regular basis by the Carbon team. If you're working with a local document, visit the [Getting started](/getting-started/designers) guide and get set up with the new libraries. 
+The Carbon design kit now lives in a Sketch library, which can be updated on a regular basis by the Carbon team. If you're working with a local document, visit the [Getting started](/getting-started/designers) guide and get set up with the new libraries.
 
 The components and elements in the kit have been completely revised from v9. Be sure to note the changes to the color palette, spacing and layout, and iconography in the kit.
 
 #### "Code-first" approach
 
-The fastest approach to v10 migration starts with the front-end developer. The developer, with help from the migration guidelines found on this site, will update the product's front end code to v10. This should not cause any major breaks in the UI, but there might be some funky looking stuff that needs to be resolved by the design team. Product teams using v9 components in their code should see a mostly seamless transition.  
+The fastest approach to v10 migration starts with the front-end developer. The developer, with help from the migration guidelines found on this site, will update the product's front end code to v10. This should not cause any major breaks in the UI, but there might be some funky looking stuff that needs to be resolved by the design team. Product teams using v9 components in their code should see a mostly seamless transition.
 
-The product design team should review the updated UI with a critical eye and a solid knowledge of the v10 design guidelines. Throughout the process, ask yourself: 
-- Do the fonts look right? 
-- Are the colors correct? 
-- Is the spacing between components correct? 
-- Do animations in the UI match the new motion standards? 
-- Does the general layout still work, and does it express the IBM Design Language accurately and effectively? 
+The product design team should review the updated UI with a critical eye and a solid knowledge of the v10 design guidelines. Throughout the process, ask yourself:
+
+- Do the fonts look right?
+- Are the colors correct?
+- Is the spacing between components correct?
+- Do animations in the UI match the new motion standards?
+- Does the general layout still work, and does it express the IBM Design Language accurately and effectively?
 
 Working together, design and dev teams will catch and fix any problems with page layout and design.
 
