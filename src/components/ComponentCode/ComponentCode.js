@@ -49,7 +49,7 @@ export default class ComponentCode extends React.Component {
         </div>
 
         <div className="component-variation ibm--row">
-          <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
+          <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--no-gutter">
             <ComponentExample
               codepenSlug={codepen}
               component={component}

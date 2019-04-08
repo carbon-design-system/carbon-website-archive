@@ -3,7 +3,6 @@ title: Homepage
 ---
 
 import FeatureTile from '../../src/components/FeatureTile';
-import GridWrapper from '../../src/components/GridWrapper';
 import ClickableTile from '../../src/components/ClickableTile';
 
 <FeatureTile
@@ -28,7 +27,8 @@ import ClickableTile from '../../src/components/ClickableTile';
 
 The Component Libraries give developers a collection of re-usable components they can use for building websites and user interfaces. See a [complete list of resources.](/resources)
 
-<GridWrapper col_lg="8" flex="true" bleed="true">
+<Row className="tile--resource--no-margin tile--group">
+<Column offsetLg="4" colLg="4" colMd="4" noGutterSm>
   <ClickableTile
     dark="true"
     title="Carbon Design Kit"
@@ -38,6 +38,8 @@ The Component Libraries give developers a collection of re-usable components the
 ![](resources/images/sketch-icon.png)
 
   </ClickableTile>
+</Column>
+<Column colLg="4" colMd="4"  noGutterSm>
   <ClickableTile
     dark="true"
     title="Carbon Components"
@@ -47,6 +49,8 @@ The Component Libraries give developers a collection of re-usable components the
 ![](resources/images/github-icon-inverted.png)
 
   </ClickableTile>
+</Column>
+<Column offsetLg="4" colLg="4" colMd="4" noGutterSm>
   <ClickableTile
     dark="true"
     title="Carbon Components React"
@@ -56,6 +60,8 @@ The Component Libraries give developers a collection of re-usable components the
 ![](resources/images/github-icon-inverted.png)
 
   </ClickableTile>
+</Column>
+<Column colLg="4" colMd="4"  noGutterSm>
   <ClickableTile
     dark="true"
     title="Carbon Components Angular"
@@ -65,6 +71,8 @@ The Component Libraries give developers a collection of re-usable components the
 ![](resources/images/github-icon-inverted.png)
 
   </ClickableTile>
+</Column>
+<Column offsetLg="4" colLg="4" colMd="4" noGutterSm>
   <ClickableTile
     dark="true"
     title="Carbon Components Vue"
@@ -74,11 +82,13 @@ The Component Libraries give developers a collection of re-usable components the
 ![](resources/images/github-icon-inverted.png)
 
   </ClickableTile>
-</GridWrapper>
+</Column>
+</Row>
 
 ### Latest articles
 
-<GridWrapper flex="true" bleed="true">
+<Row>
+<Column offsetLg="4" colLg="4" colMd="4" noGutterMdLeft>
 <ClickableTile
     dark="true"
     type="article"
@@ -91,6 +101,8 @@ The Component Libraries give developers a collection of re-usable components the
 ![](resources/images/bee_70.png)
 
 </ClickableTile>
+</Column>
+<Column colLg="4" colMd="4"  noGutterMdLeft>
 <ClickableTile
     dark="true"
     type="article"
@@ -103,6 +115,8 @@ The Component Libraries give developers a collection of re-usable components the
 ![](resources/images/designing_with_carbon.png)
 
 </ClickableTile>
+</Column>
+<Column colLg="4" colMd="4"  noGutterMdLeft>
 <ClickableTile
     dark="true"
     type="article"
@@ -115,4 +129,5 @@ The Component Libraries give developers a collection of re-usable components the
 ![](resources/images/minimal_css.png)
 
 </ClickableTile>
-</GridWrapper>
+</Column>
+</Row>
