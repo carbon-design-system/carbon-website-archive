@@ -14,11 +14,9 @@ tabs: ['Library', 'Usage', 'Contribution']
 </AnchorLinks>
 
 ## Resources
-<GridWrapper
-  className="tile--resource--no-margin"
-  col_lg="8"
-  flex="true"
-  bleed="true"> 
+
+<Row className="tile--group">
+<Column offsetLg="4" colLg="4" colMd="4" noGutterSm>
   <ClickableTile
     title="Elements package: Icons"
     href="https://github.com/IBM/carbon-elements/tree/master/packages/icons"
@@ -27,6 +25,8 @@ tabs: ['Library', 'Usage', 'Contribution']
 ![](images/github-icon.png)
 
   </ClickableTile>
+</Column>
+<Column colLg="4" colMd="4"  noGutterSm>
   <ClickableTile
     title="Elements package: Icons-React"
     href="https://github.com/IBM/carbon-elements/tree/master/packages/icons-react"
@@ -34,17 +34,11 @@ tabs: ['Library', 'Usage', 'Contribution']
 
 ![](images/github-icon.png)
 
-
-
-
-
-
- </ClickableTile> 
-</GridWrapper>
-
+ </ClickableTile>
+</Column>
+</Row>
 
 <br />
-
 <br />
 
 ## Usage for designers
@@ -65,26 +59,30 @@ UI icons that appear within Carbon components are generally 16 px squares, howev
 
 </ImageComponent>
 
-<GridWrapper col_lg="8" flex="true">
+<Row>
+<Column offsetLg="4" colMd="4" colLg="4">
   <DoDontExample
-    correct="true"
+    correct
     label="Do use the correct icon size with IBM Plex.">
 
 ![proper sizing](images/iconography-usage-sizing-3.svg)
 
   </DoDontExample>
+</Column>
+<Column colMd="4" colLg="4" >
   <DoDontExample label="Don’t alter the icon-text size ratio.">
 
 ![improper sizing](images/iconography-usage-sizing-4.svg)
 
   </DoDontExample>
-</GridWrapper>
+</Column>
+</Row>
 
 ### Touch targets
 
 All touch targets for interactive icons need to be 44 px or larger. Developers can add padding to a touch target with CSS to meet the 44 px requirement.
 
-<ImageComponent  cols="4">
+<ImageComponent  cols="4" caption="The menu button that is also a touch target may have a 20px x 20px icon centered in a 48px x 48px button.">
 
 ![touch target padding](images/iconography-usage-padding-6.svg)
 
@@ -96,39 +94,47 @@ Icons are always a solid, monochromatic color and need to pass the same color co
 
 It's also important to note that Carbon v10 icons themselves do not have interaction states, only their backgrounds do.
 
-<GridWrapper col_lg="8" flex="true">
+<Row>
+<Column offsetLg="4" colMd="4" colLg="4">
   <DoDontExample
-    correct="true"
+    correct
     label="Do match your icon color with your text color when pairing them.">
 
 ![proper alignment](images/iconography-color-01.png)
 
   </DoDontExample>
+</Column>
+<Column colMd="4" colLg="4" >
   <DoDontExample label="Don’t use different colors for text and icons.">
 
 ![improper alignment](images/iconography-color-02.png)
 
   </DoDontExample>
-</GridWrapper>
+</Column>
+</Row>
 
 ### Alignment
 
 When used next to text, icons should be center-aligned.
 
-<GridWrapper col_lg="8" flex="true">
+<Row>
+<Column offsetLg="4" colMd="4" colLg="4">
   <DoDontExample
-    correct="true"
+    correct
     label="Do center-align icons when they’re next to text.">
 
 ![proper alignment](images/iconography-usage-sizing-5.svg)
 
   </DoDontExample>
+</Column>
+<Column colMd="4" colLg="4" >
   <DoDontExample label="Don’t baseline-align icons to the text.">
 
 ![improper alignment](images/iconography-usage-sizing-6.svg)
 
   </DoDontExample>
-</GridWrapper>
+</Column>
+</Row>
 
 ## Usage for developers
 
@@ -155,7 +161,7 @@ To use SVG sprite files, they **must** be distributed through a web server and w
 
 `path_to_static-assets` is the path to your static assets where `carbon-icons.svg` is located.
 
-`icon_name` is the icon name, which will display the corresponding icon. Refer to the [iconography library]("/guidelines/iconography") page for a full list of icon names.
+`icon_name` is the icon name, which will display the corresponding icon. Refer to the [iconography library](/guidelines/iconography) page for a full list of icon names.
 
 ### CSS
 
@@ -189,11 +195,11 @@ Carbon icons ship with two main SVG files that contain different sets of externa
 
 | Filename          | Description                                                                                             | Supported versions  |
 | ----------------- | ------------------------------------------------------------------------------------------------------- | ------------------- |
-| _carbon-icons.svg_  | Contains current icons (consolidated subset of legacy icons used in IBM Bluemix)                        | `3.x` and newer     |
-| _carbon-icons.json_ | JSON file created from carbon-icons.svg, used in [Carbon](/guidelines/iconography/library)              | `3.x` and newer     |
-| _carbon-icons.js_   | JS module created from carbon-icons.svg, used in `Icon` React Component in [carbon-components-react](#) | `3.x` and newer     |
-| _sprite.svg_       | SVG sprite contains legacy icons                                                                        | `1.x`,`2.x`and`3.x` |
-| _icons.json_       | legacy JSON file created from sprite.svg                                                                | `1.x`,`2.x`and`3.x` |
+| _carbon-icons.svg_  | Contains current icons (consolidated subset of legacy icons used in IBM Bluemix)                        | `3.x` & newer     |
+| _carbon-icons.json_ | JSON file created from carbon-icons.svg, used in [Carbon](/guidelines/iconography/library)              | `3.x` & newer     |
+| _carbon-icons.js_   | JS module created from carbon-icons.svg, used in `Icon` React Component in [carbon-components-react](#) | `3.x` & newer     |
+| _sprite.svg_       | SVG sprite contains legacy icons                                                                        | `1.x`,`2.x`&`3.x` |
+| _icons.json_       | legacy JSON file created from sprite.svg                                                                | `1.x`,`2.x`&`3.x` |
 | _legacy-icons.js_  | JS module created from sprite.svg                                                                       | `3.x` only          |
 
 ### Accessibility

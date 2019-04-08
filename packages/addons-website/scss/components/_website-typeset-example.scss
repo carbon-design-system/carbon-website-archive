@@ -1,0 +1,45 @@
+@import '../prefix';
+
+.#{$prefix}--typeset-example-container {
+  margin-top: 1rem;
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.#{$prefix}--typeset-example {
+  margin-top: 1rem;
+  &:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.#{$prefix}--typeset-example-row {
+  background-color: $carbon--white-0;
+}
+
+.#{$prefix}--typeset-example-group-title {
+  background-color: $carbon--gray-20;
+  height: 4rem;
+}
+
+.#{$prefix}--typeset-example-description {
+  padding: 1rem 25% 1rem 1rem;
+  overflow: hidden;
+}
+
+.#{$prefix}--typeset-example-specs {
+  padding: 1rem;
+  @include carbon--breakpoint('md') {
+    border-left: 1px solid $carbon--gray-20;
+  }
+}
+
+.#{$prefix}--typeset-example-specs-text {
+  margin-bottom: 0.5rem;
+}
+
+.#{$prefix}--typeset-example-code-style {
+  display: block;
+  margin-top: 0.5rem;
+}

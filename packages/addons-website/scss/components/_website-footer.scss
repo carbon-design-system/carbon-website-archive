@@ -3,8 +3,8 @@
 .#{$prefix}--website-footer {
   @include carbon--type-style('body-short-01');
   width: 100%;
-  background: $ibm-colors__black;
-  color: $ibm-colors__gray-30;
+  background: $carbon--black-100;
+  color: $carbon--gray-30;
   position: relative;
   z-index: 2;
 }
@@ -25,9 +25,9 @@
   position: relative;
 
   &:after {
-    @include breakpoint('sm') {
+    @include carbon--breakpoint('sm') {
       content: '';
-      background: $ibm-colors__gray-80;
+      background: $carbon--gray-80;
       width: calc(100% - 2rem);
       height: 1px;
       display: block;
@@ -35,7 +35,7 @@
       bottom: 0;
     }
 
-    @include breakpoint('md') {
+    @include carbon--breakpoint('md') {
       display: none;
     }
   }
@@ -44,18 +44,18 @@
 .#{$prefix}--website-footer__nav li {
   display: block;
 
-  @include breakpoint('sm') {
+  @include carbon--breakpoint('sm') {
     margin: 0 0 $spacing-xs 0;
   }
 
-  @include breakpoint('lg') {
+  @include carbon--breakpoint('lg') {
     margin: 0;
   }
 }
 
 // Footer link styles
 .#{$prefix}--website-footer a {
-  color: $ibm-colors__gray-10;
+  color: $carbon--gray-10;
   box-shadow: 0 0 currentColor;
   box-shadow: 0 1px currentColor;
   text-decoration: none;

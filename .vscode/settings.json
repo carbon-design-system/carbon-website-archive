@@ -1,3 +1,11 @@
 {
-  "markdown.styles": ["./.vscode/markdown.css"]
+  "markdown.styles": [
+    "./.vscode/markdown.css"
+  ],
+  "cSpell.words": [
+    "dropdowns"
+  ],
+  "files.associations": [
+    "*.md": "mdx"
+  ],
 }

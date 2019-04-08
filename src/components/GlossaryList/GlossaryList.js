@@ -38,11 +38,11 @@ class Glossary extends Component {
               <div id={wordId} key={word} className="glossary-entry__word">
                 <h4 className="page-h4 glossary-entry__word-heading">{word}</h4>
                 <p
-                  className="glossary-entry__desc"
+                  className="glossary-entry__desc page-p"
                   dangerouslySetInnerHTML={{ __html: desc }}
                 />
                 <p
-                  className="glossary-entry__subtext"
+                  className="glossary-entry__subtext page-p"
                   dangerouslySetInnerHTML={{ __html: subtext }}
                 />
               </div>

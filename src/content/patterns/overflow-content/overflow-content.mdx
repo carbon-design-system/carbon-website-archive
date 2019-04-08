@@ -1,11 +1,8 @@
 ---
-
 title: Overflow content
----import GridWrapper from '../../../../src/components/GridWrapper';
+---
 
-## Purpose
-
-_Overflow content_ is text, such as a paragraph or a text string, that exceeds a desired space. It also applies to a series of components that surpass a given space. Overflow content is typically reduced to fit a space or reduce repetition. Truncation and ‘Show more’ buttons are two ways to indicate that overflow content is continued elsewhere or below the fold.
+### _Overflow content_ is text, such as a paragraph or a text string, that exceeds a desired space. It also applies to a series of components that surpass a given space. Overflow content is typically reduced to fit a space or reduce repetition. Truncation and ‘Show more’ buttons are two ways to indicate that overflow content is continued elsewhere or below the fold.
 
 ## Truncation
 
@@ -122,7 +119,8 @@ To use front- and end-line truncation, enter the appropriate class below and add
 
 Mid-line truncation does not have its own class as it requires JavaScript. This example in CodePen shows how it is implemented.
 
-<GridWrapper col_lg="8">
+<Row>
+<Column offsetLg="4" colLg="8">
   <iframe
     height="300"
     scrolling="no"
@@ -137,7 +135,8 @@ Mid-line truncation does not have its own class as it requires JavaScript. This 
     by Carbon Design System (<a href="https://codepen.io/carbon">@carbon</a>) on{' '}
     <a href="https://codepen.io">CodePen</a>.
   </iframe>
-</GridWrapper>
+</Column>
+</Row>
 
 <br />
 

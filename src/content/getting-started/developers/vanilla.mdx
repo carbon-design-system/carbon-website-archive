@@ -1,6 +1,6 @@
 ---
 title: Developers
-tabs: ['Vanilla', 'React', 'Angular', 'Other frameworks']
+tabs: ['Vanilla', 'React', 'Angular', 'Vue', 'Other frameworks']
 ---
 
 <AnchorLinks>
@@ -33,6 +33,8 @@ $ npm install --save carbon-components
 ```bash
 $ yarn add carbon-components
 ```
+
+*NB: March 29, 2019 - Please use the @next tag to install Carbon v10 components. e.g. `npm i carbon-components@next`.*
 
 ## Getting started
 
@@ -101,9 +103,9 @@ CSS is automatically applied to `<body>` element, which comes from [\_css--body.
 ```scss
 body {
   @include reset;
-  font-family: 'ibm-plex-sans';
+  @include type-style('body-short-01');
   color: $text-01;
-  background-color: $ui-02;
+  background-color: $ui-background;
   line-height: 1;
 }
 ```

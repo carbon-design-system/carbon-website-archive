@@ -1,0 +1,92 @@
+---
+title: Migrate to v10
+tabs: ['Overview', 'Designers', 'Developers']
+---
+
+<AnchorLinks>
+
+- [Repo architecture](#repo-architecture)
+- [Migration tooling](#migration-tooling)
+- [Carbon components](#carbon-components)
+- [Carbon elements](#carbon-elements)
+- [Feedback](#feedback)
+
+</AnchorLinks>
+
+## Repo architecture
+
+[Carbon-themes](https://github.com/carbon-design-system/carbon-themes) has been deprecated in v10, as the [carbon-elements](https://github.com/IBM/carbon-elements) repository now contains the themes package [@carbon/themes](https://github.com/IBM/carbon-elements/tree/master/packages/themes).
+
+[Carbon-icons](https://github.com/carbon-design-system/carbon-icons) has not yet been deprecated in favor of [@carbon/icons](https://github.com/IBM/carbon-elements/tree/master/packages/icons). That is expected to happen in an upcoming dot release.
+
+## Migration tooling
+
+**Coming soon!** [carbon-upgrade](https://github.com/carbon-design-system/carbon-upgrade/blob/master/README.md) is a new tool to help developers upgrade to v10 through the command line. This tool is still experimental, and if you would like to contribute, the Carbon team would welcome the help! [Please leave ideas for migration tooling here](https://github.com/carbon-design-system/carbon-upgrade/issues/7).
+
+## Carbon components
+
+Carbon components have been completely re-skinned for the new IBM Design Language. The redesign was conducted with maximum backwards-compatibility in mind. Users of v9 should be able to upgrade to v10 automatically with minimal breakage.
+
+#### carbon-components
+
+Detailed technical migration docs for Carbon vanilla components are available in the [carbon-components repo](https://github.com/IBM/carbon-components/blob/master/docs/migration/migrate-to-10.x.md). Here you will find links to component-level migration information, as well as a list of those components that have been removed or are under development.
+
+There is also a dedicated [Sass migration guide](https://github.com/IBM/carbon-components/blob/master/src/globals/scss/migrate-to-10.x.md) that covers changes to global styling.
+
+#### carbon-components-react
+
+React-specific technical migration docs are available [here](https://github.com/IBM/carbon-components-react/blob/master/docs/migration/migrate-to-7.x.md).
+
+## Carbon Elements
+
+All technical migration docs for the carbon-elements repo are available in the [repo's docs folder](https://github.com/IBM/carbon-elements/tree/master/docs/migration).
+
+#### Icons
+
+Carbon icons underwent a major update for v10. The @carbon/icons package can be now be found in the [Carbon Elements repo](https://github.com/IBM/carbon-elements/tree/master/packages/colors). The carbon-icons repo that was used in previous releases of Carbon has been deprecated.
+
+See the [icons migration table](https://github.com/IBM/carbon-elements/blob/master/docs/migration/10.x-icons.md) to view .
+
+The [Carbon Icons ESM Demo](https://carbon-elements.netlify.com/icons/examples/preview/) contains a master table for all Carbon icons, including name, size, preview, download links, quick links for filing issues, module name, and relative path.
+
+#### Color
+
+The color token architecture for v10 is based on the v9 architecture, with some minor updates for the new design language. Carbon v9 users will see automatic, non-breaking color updates when they upgrade to v10.
+
+[Carbon v10 Color migration table](https://github.com/IBM/carbon-elements/blob/master/docs/migration/10.x-color.md)
+
+[Primary token-value mapping page](https://carbon-elements.netlify.com/colors/examples/preview/)
+
+[Themes token-value mapping table](https://carbon-elements.netlify.com/themes/examples/preview/)
+
+#### Type
+
+The type token architecture has been completely redesigned for better clarity and flexibility in v10, moving from a basic type scale model to a more robust token-based architecture.
+
+[Carbon v10 Type migration table](https://github.com/IBM/carbon-elements/blob/master/docs/migration/10.x-type.md)
+
+[Font faces/type scale/type styles sample doc](https://carbon-elements.netlify.com/type/examples/preview/)
+
+#### Layout, Grid, Spacing
+
+Spacing values will see no change from Carbon v9, though the token names have changed.
+
+[Migration table for grid](https://github.com/IBM/carbon-components/blob/master/src/globals/grid/migrate-to-10.x.md)
+
+[Migration table for layout](https://github.com/IBM/carbon-elements/blob/master/docs/migration/10.x-layout.md)
+
+[Interactive grid examples](https://carbon-elements.netlify.com/grid/examples/preview/)
+
+#### Motion
+
+Motion standards have been revised to meet the new IBM Design Language standards. Motion updates should be coordinated with your product's design team if possible.
+
+[New IBM motion package](https://github.com/IBM/carbon-elements/tree/master/packages/motion)
+
+[Motion migration table](https://github.com/IBM/carbon-elements/blob/master/docs/migration/10.x-motion.md)
+
+## Feedback
+
+To leave feedback for the Carbon team about this documentation, make suggestions for improvements, or just ask a question, you can [open an issue](https://github.com/carbon-design-system/carbon-website/issues/new?template=feedback.md&labels=feedback&title=User+feedback+for+Migration+Developers+page) on GitHub.
+
+_Last updated: 29 March 2019_
