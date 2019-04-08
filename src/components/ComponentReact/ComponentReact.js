@@ -110,7 +110,7 @@ class ComponentReactExample extends Component {
           </div>
         </div>
         <div className="component-variation ibm--row">
-          <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
+          <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--no-gutter">
             <div>
               <div className="svg--sprite" aria-hidden="true" />
               <div className="component-example__live">
