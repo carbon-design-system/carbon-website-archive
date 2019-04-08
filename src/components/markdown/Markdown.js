@@ -1,19 +1,7 @@
 import React from 'react';
-import { Icon } from 'carbon-components-react';
 import { Location } from '@reach/router';
 import { Link } from 'gatsby';
 import { Link20 } from '@carbon/icons-react';
-
-export class PageIcon extends React.Component {
-  render() {
-    return (
-      <Icon
-        name={this.props.name}
-        className={`page-icon page-icon-${this.props.color}`}
-      />
-    );
-  }
-}
 
 export class h1 extends React.Component {
   render() {
