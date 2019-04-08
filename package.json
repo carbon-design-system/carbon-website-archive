@@ -63,6 +63,7 @@
     "gatsby-plugin-react-helmet": "3.0.3",
     "gatsby-plugin-sass": "2.0.4",
     "gatsby-plugin-sharp": "2.0.14",
+    "gatsby-plugin-sitemap": "^2.0.10",
     "gatsby-react-router-scroll": "^2.0.2",
     "gatsby-remark-autolink-headers": "^2.0.12",
     "gatsby-remark-component": "^1.1.3",

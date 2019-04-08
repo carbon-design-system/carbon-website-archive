@@ -266,6 +266,7 @@ class Layout extends React.Component {
               ]}>
               <html lang="en" />
             </Helmet>
+
             <WebsiteHeader
               isLeftNavOpen={isLeftNavOpen}
               onToggleBtnClick={this.onToggleBtnClick}
@@ -290,7 +291,7 @@ class Layout extends React.Component {
                   linkText: 'IBM Design Language',
                 },
                 {
-                  href: 'https://next.carbondesignsystem.com',
+                  href: 'https://www.carbondesignsystem.com',
                   linkText: 'IBM Product Design',
                 },
                 {

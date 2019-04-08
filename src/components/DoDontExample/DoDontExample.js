@@ -16,11 +16,11 @@ export default class DoDontExample extends React.Component {
     /** path to the image displayed in the example card, starting under `src` folder. e.g.: `content/guidelines/content/img-test.svg` */
     imgpath: PropTypes.string,
     /** mark card as true? if not defined, card will be marked as false */
-    correct: PropTypes.string,
+    correct: PropTypes.bool,
     /** default to false, set to true for dark background */
-    dark: PropTypes.string,
-    /** default to false, set true to have a full-width example card */
-    full_width: PropTypes.string,
+    dark: PropTypes.bool,
+    /** default to false, set to true for forced aspect ratio */
+    square: PropTypes.bool,
   };
 
   renderCaption = (label, description) => {
@@ -35,26 +35,24 @@ export default class DoDontExample extends React.Component {
   };
 
   render() {
-    const { children, label, description, text, dark, full_width } = this.props;
-
-    let correct = this.props.correct;
-
-    // our gatsby setup converts many values to strings. cleanse:
-    if (correct === 'true') {
-      correct = true;
-    } else if (correct === 'false') {
-      correct = false;
-    }
+    const {
+      children,
+      label,
+      description,
+      text,
+      dark,
+      square,
+      correct,
+    } = this.props;
 
     const wrapperClassNames = classnames({
       example: true,
-      'example--full-width': full_width,
+      'example--square': square,
       'example--correct': correct,
       'example--incorrect': !correct,
       'example--dark': dark,
     });
 
-    const icon = correct ? 'icon--checkmark' : 'icon--close';
     const iconClassNames = classnames({
       example__icon: true,
       'example__icon--correct': correct,
