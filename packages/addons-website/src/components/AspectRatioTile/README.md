@@ -4,6 +4,7 @@
 
 * `ratio='1:1'` 
 
+  *Required*
   Options are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1. 
   Size of tile is determined by wrapping element.
 

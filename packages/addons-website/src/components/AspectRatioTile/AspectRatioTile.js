@@ -109,4 +109,22 @@ const AspectRatioTile = (
   )
 }
 
+AspectRatioTile.propTypes = {
+  ratio: PropTypes.string.isRequired,
+  theme: PropTypes.string,         
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  actionIcon: PropTypes.string,
+  identityIcon: PropTypes.string, 
+  backgroundColor: PropTypes.string, 
+  image: PropTypes.string, 
+  transparentImage: PropTypes.string,  
+  hoverDark: PropTypes.bool, 
+  contentOnHover: PropTypes.bool,
+  link: PropTypes.string, 
+  target: PropTypes.string, 
+  marginTop: PropTypes.string, 
+  children: PropTypes.node
+}
+
 export default AspectRatioTile
