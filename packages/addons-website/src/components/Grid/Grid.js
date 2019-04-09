@@ -63,8 +63,8 @@ export const Column = ({
     [`ibm--offset-md-${offsetMd}`]: offsetMd,
     [`ibm--offset-lg-${offsetLg}`]: offsetLg,
     [`ibm--col-lg-${colLg}`]: colLg,
-    [`ibm--col-lg-${colMd}`]: colMd,
-    [`ibm--col-lg-${colSm}`]: colSm,
+    [`ibm--col-md-${colMd}`]: colMd,
+    [`ibm--col-sm-${colSm}`]: colSm,
     [className]: className,
   });
 
