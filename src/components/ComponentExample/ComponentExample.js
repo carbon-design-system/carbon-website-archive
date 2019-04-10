@@ -349,7 +349,7 @@ class ComponentExample extends Component {
             )}
             {typeof hasVueVersion === 'string' && (
               <a
-                href={`http://vue.carbondesignsystem.com/?path=/story/experimental-cv${hasVueVersion}`}
+                href={`http://vue.carbondesignsystem.com/?path=/story/components-cv${hasVueVersion}`}
                 target="_blank"
                 rel="noopener noreferrer">
                 Vue <Launch16 />
