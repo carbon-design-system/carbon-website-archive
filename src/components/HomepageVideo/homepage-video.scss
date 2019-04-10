@@ -22,7 +22,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: $ibm-color__black-100;
+  background: $carbon--black-100;
   opacity: 0.7;
 }
 
@@ -39,7 +39,7 @@
 
 .homepage-video--controls .mouseOut,
 .homepage-video--controls .mouseIn {
-  fill: white;
+  fill: $carbon--white-0;
 }
 
 .homepage-video--controls .cls-1 {
