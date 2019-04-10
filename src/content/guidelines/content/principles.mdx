@@ -72,25 +72,388 @@ If your mom wouldn't understand a word, it's probably not dope. If a user's firs
 
 ### Use standard US English spelling
 
-Use standard US English spellings.
+We can all make typos or forget how to spell a particular word, so always run your UI text through a spell checker. It's also always worth getting someone else to review your copy before it gets published.
 
-Tip: We can all make typos or forget how to spell a particular word, so always run your UI text through a spell checker. It's also always worth getting someone else to review your copy before it gets published.
-
-There are many words that have different spellings in non-US English than they do in standard US English. See the [Glossary](/glossary) for a list of Commonly confused US / non-US English spellings and guidance about How to refer to UI elements. [is this correct?]
+There are many words that have different spellings in non-US English than they do in standard US English. See the [Glossary](/guidelines/content/glossary) for a list of Commonly confused US / non-US English spellings and guidance about How to refer to UI elements. [is this correct?]
 
 ### Use contractions
 
 Users don't want to read more characters than necessary and we want to present a conversational style. Use simple, commonly understood contractions.
 
+<Row>
+  <Column offsetLg="4" colMd="4" colLg="4">
+    <DoDontExample square correct label="Use simple, commonly understood contractions" text="Can't, don't, isn't." />
+  </Column>
+  <Column colMd="4" colLg="4">
+    <DoDontExample
+      square
+      label="Avoid complex contractions that involve combining more than two words."
+      text="Wouldn't've, shouldn't've."
+    />
+  </Column>
+</Row> 
 
+### Use simple words
 
-However, avoid complex contractions that involve combining more than two words. 
+Don’t use complex or lengthy words where simpler, shorter equivalents are available.
 
-### 
+### Use the active voice
+
+* In an active voice construction, the subject is doing the action (e.g. Sarah publishes the application). In contrast, in a passive voice construction, the target of the action is emphasized (e.g. The application is published).
+* In general, the active voice is preferable because it emphasizes action and progress.
+* The active voice also makes clear who or what is performing the action, which can often be hidden in passive voice constructions.
+* Sentences written in the active voice also tend to be shorter than those written in the passive voice.
+
+#### Exception:
+
+ Using the passive voice is occasionally useful though - such as a way of avoiding blaming the user: 
+
+ "Error: An incorrect value was entered."
+
+<Row>
+  <Column offsetLg="4" colMd="4" colLg="4">
+    <DoDontExample square correct 
+    text="Product X scans files for viruses before uploading them to the web server." />
+  </Column>
+  <Column colMd="4" colLg="4">
+    <DoDontExample
+      square
+      text="Files are scanned for viruses and, if cleared, uploaded to the web server."
+    />
+  </Column>
+</Row>
+
+<Row>
+  <Column offsetLg="4" colMd="4" colLg="4">
+    <DoDontExample square correct label="Use the active voice." text="Wave goodbye to connection limits by moving to the gold service tier." />
+  </Column>
+  <Column colMd="4" colLg="4">
+    <DoDontExample
+      square
+      label="Avoid the passive voice."
+      text="The restriction on number of connections per month can be removed by moving to the gold service tier."
+    />
+  </Column>
+</Row>
+
+### Use simple verb forms
+
+Wherever possible, use simple, single-word verb forms. This makes text easier to understand for all.
+
+For example, avoid using verb phrases when the verb alone will suffice.
+
+<Row>
+  <Column offsetLg="4" colMd="4" colLg="4">
+    <DoDontExample square correct 
+    text="Start the monitoring service." />
+  </Column>
+  <Column colMd="4" colLg="4">
+    <DoDontExample
+      square
+      text="Start up the monitoring service."
+    />
+  </Column>
+</Row>
+
+<Row>
+  <Column offsetLg="4" colMd="4" colLg="4">
+    <DoDontExample square correct label="Use simple, single-word verb forms" text="Click Publish. A progress indicator is displayed until the app is deployed." />
+  </Column>
+  <Column colMd="4" colLg="4">
+    <DoDontExample
+      square
+      label="Avoid using verb phrases."
+      text="When you click on Publish a progress indicator will be displayed until the app has been deployed."
+    />
+  </Column>
+</Row>
+
+### Don't confuse verbs and nouns
+
+Here are a few commonly confused verbs and nouns:
+
+* You *might* advise (verb) someone on how to do something. They will no doubt be grateful for the *advice* (noun).
+* Network bandwidth will *affect* (verb) download speeds. One *effect* (noun) of slow download speeds is often frustration.
+* To *compile* (verb) the code, do X. After *compilation* (noun) you can run the code.
+* First you need to *install* (verb) the software. When the *installation* (noun) completes you will see a welcome screen.
+* You might *invite* (verb) someone to take part in the product beta; what you send them is an *invitation* (noun).
+
+<Row>
+  <Column offsetLg="4" colMd="4" colLg="4">
+    <DoDontExample square correct label="Don't confuse verbs and nouns" text="When the installation completes you will see a welcome screen." />
+  </Column>
+  <Column colMd="4" colLg="4">
+    <DoDontExample
+      square
+      label="Don't use a noun in place of a verb"
+      text="Open the app when the install is complete."
+    />
+  </Column>
+</Row>
+
+### Use the present tense
+
+There are thirteen verb tenses in the English language, but thankfully, we rarely need to use most of these when writing text for our product UIs. 
+
+In general, write using simple, present tense verbs. 
+
+<Row>
+  <Column offsetLg="4" colMd="4" colLg="4">
+    <DoDontExample square correct 
+    text="Message sent" />
+  </Column>
+  <Column colMd="4" colLg="4">
+    <DoDontExample
+      square
+      text="Your message has been sent"
+    />
+  </Column>
+</Row>
+
+#### Exception:
+
+If you really need to write in the past or future tense, use simple verb forms.
+
+<Row>
+  <Column offsetLg="4" colMd="4" colLg="4">
+    <DoDontExample square correct text="When the update is complete, a notification is displayed." />
+  </Column>
+</Row>
+
+### Use one term per concept
+
+Another principle that might sound obvious, but which is not always followed, is to use one (and only one) term per concept.
+
+Don’t use different terms (or variations of the same term) to refer to the same thing. If you use app and application (or repo and repository, etc.) in the same context, a user might well start to question whether you are referring to one thing or to two separate things.
+
+Also, avoid overloading one term with different meanings. If a certain component or process or concept is called a widget (for example), avoid using this same term to mean anything else and avoid using this word as part of the name for something else. Again, sounds blindingly obvious, but is, sadly, all too common.
+
+### Phrases vs full sentences
+
+It's fine to use phrases (as opposed to full sentences) in appropriate contexts, such as for headings, button labels, confirmation messages, etc.
+
+Page headings are another example of where it is often preferable to use short, sharp phrases (without periods) rather than full sentences.
+
+Use your judgement as to whether phrases or full sentences are most appropriate in your product context - and then be consistent. See the guidance about using periods within the Punctuation section for further guidance and examples.
+
+<Row>
+  <Column offsetLg="4" colMd="4" colLg="4">
+    <DoDontExample square correct 
+    text="Save changes?" />
+  </Column>
+  <Column colMd="4" colLg="4">
+    <DoDontExample
+      square
+      text="Do you want to save your changes?"
+    />
+  </Column>
+</Row>
+
+<Row>
+  <Column offsetLg="4" colMd="4" colLg="4">
+    <DoDontExample square correct label="Use phrases where appropriate." text="Remove photo?" />
+  </Column>
+  <Column colMd="4" colLg="4">
+    <DoDontExample
+      square
+      label="Avoid long sentences when possible."
+      text="Are you sure that you want to remove these photos?"
+    />
+  </Column>
+</Row>
+
+### The use of pronouns
+
+A pronoun is used in place of a noun.
+
+Sounds simple, but be careful not to fall into any of the following pitfalls:
+
+* Don’t use a plural pronoun (*they*, *their*, *theirs*, *them*, or *themselves*) to refer to a singular noun. (While this usage is fairly common, it is grammatically incorrect.)
+* Don’t use gender-specific pronouns such as he, him, himself, his or she, her, herself, hers when the subject could be either gender.
+* Don’t try to cover both genders by using a construction such as he/she, (s)he, him/her, his/hers, etc.
+* Don’t use it to refer to a person.
+
+Instead, use the imperative mood to avoid needing a pronoun at all. You can also use a second person pronoun: you, your, yours, or yourself.
+
+<Row>
+  <Column offsetLg="4" colMd="4" colLg="4">
+    <DoDontExample square correct 
+    text="Use the Publish wizard to deploy the application." />
+  </Column>
+  <Column colMd="4" colLg="4">
+    <DoDontExample
+      square
+      text="The developer can then deploy their application."
+    />
+  </Column>
+</Row>
+
+<Row>
+  <Column offsetLg="4" colMd="4" colLg="4">
+    <DoDontExample square correct label="Use a second person pronoun." 
+    text="You can now deploy your application." />
+  </Column>
+  <Column colMd="4" colLg="4">
+    <DoDontExample
+      square
+      label="Don’t use gender-specific pronouns."
+      text="The developer can deploy his/her application."
+    />
+  </Column>
+</Row>
+
+### The use of non-English words
+
+You may think it *très chic* to scatter a few foreign words and phrases into your copy, but is this really a good idea? *Au contraire, mon amie!*
+
+In general, avoid using foreign (i.e. non-English) words and phrases as these increase the complexity of our text and can make us look a little pretentious. *Sacré bleu!*
+
+#### Exceptions:
+
+Feel free to use the following commonly used Latin abbreviations:
+
+* i.e. (meaning *that is* or *in other words*)
+* e.g. (meaning *for example*)
+* etc. (meaning *and so on*)
+
+<Row>
+  <Column offsetLg="4" colMd="4" colLg="4">
+    <DoDontExample square correct label="Use standard American English words." 
+    text="Set an appropriate HEX color code value (e.g. #FF0000)." />
+  </Column>
+  <Column colMd="4" colLg="4">
+    <DoDontExample
+      square
+      label="Don’t use foreign words and phrases."
+      text="Sacré bleu! Please complete all mandatory fields."
+    />
+  </Column>
+</Row>
+
+### Don’t use jargon
+
+We need to speak the language that our users speak. Most real people don’t speak in technical or business jargon and neither should we.
+
+Jargon can take different forms:
+
+* The use of specialist terms, not widely understood outside of a narrow field or discipline (e.g. "unquiesce the database").
+* Taking common words but applying them to new contexts, or using them to mean something different from how those words are widely used and understood (e.g. "socialize the report"; "massage the data points").
+* Making use of figurative language ("touch base"; "cherry pick any quick wins"; "drink your own champagne").
+
+**Remember: Just because a term or phrase is common doesn't make it acceptable!**
+
+Also: Avoid cliches like the plague*
+
+<Row>
+  <Column offsetLg="4" colMd="4" colLg="4">
+    <DoDontExample square correct label="Use clear, widely known language." 
+    text="Open the table row to explore more information." />
+  </Column>
+  <Column colMd="4" colLg="4">
+    <DoDontExample
+      square
+      label="Don't use jargon"
+      text="Open the table row to drill down into more information."
+    />
+  </Column>
+</Row>
+
+*See what we did there?
 
 ## Capitalization
 
+Use sentence style capitalization for all text elements in the UI. See the Appendix for rationale.
 
+<Row>
+  <Column offsetLg="4" colMd="4" colLg="4">
+    <DoDontExample square correct label="Use sentence case for UI text" 
+    text="Setting up security policies using a public key and private key pair." />
+  </Column>
+  <Column colMd="4" colLg="4">
+    <DoDontExample
+      square
+      label="Avoid title case."
+      text="Setting up Security Policies Using a Public Key and Private Key Pair."
+    />
+  </Column>
+</Row>
+
+### Capitalizing abbreviations
+
+Use all uppercase letters for well recognized abbreviations. This applies to both initialisms, such as IBM, and to acronyms, such as CICS.
+
+* ASCII
+* CAPTCHA
+* FAQ
+* HTML
+* OK (not Ok or Okay)
+* WDSL
+
+**Note:** If an abbreviation might not be known to the target audience it’s good practice to spell it out in full the first time you use it. However, don’t spell out commonly known abbreviations (e.g. PDF, CEO, etc.).
+
+<Row>
+  <Column offsetLg="4" colMd="4" colLg="4">
+    <DoDontExample square correct label="Use all uppercase letters for abbreviations." 
+    text="The configuration can be exported as a WSDL file." />
+  </Column>
+  <Column colMd="4" colLg="4">
+    <DoDontExample
+      square
+      label="Avoid lowercase abbreviations."
+      text="The configuration can be exported as a wsdl file."
+    />
+  </Column>
+</Row>
+
+### Capitalizing proper nouns
+
+The names of people, places, and products all take initial capitals. For example:
+
+* Charlie Chaplin
+* Paris, France
+* Tesla Model S
+
+While this general rule is simple, things are a little more complicated these days due to the fact that various official company and product names now use non-standard capitalization. If you mention any of these in your text, ensure you write them accurately. Here are some examples (all written correctly): 
+
+* developerWorks
+* GitHub
+* iOS
+* JavaScript
+* npower
+* WebSphere
+
+<Row>
+  <Column offsetLg="4" colMd="4" colLg="4">
+    <DoDontExample square correct label="Use correct casing for company and product names." 
+    text="Our JavaScript plugin is available in GitHub." />
+  </Column>
+  <Column colMd="4" colLg="4">
+    <DoDontExample
+      square
+      label="Avoid normalizing capitalization for proper nouns."
+      text="Our Javascript plugin is available in Github."
+    />
+  </Column>
+</Row>
+
+### Capitalizing all other words
+
+Unless the word begins a sentence or is a proper noun, don’t give it a capital letter.
+
+Don’t give a word a capital letter to denote “specialness”. If you want to emphasize a particular word or phrase within a sentence, use italic or bold formatting (but not both).
+
+<Row>
+  <Column offsetLg="4" colMd="4" colLg="4">
+    <DoDontExample square correct
+    text="You can use a global policy to apply changes to all users." />
+  </Column>
+  <Column colMd="4" colLg="4">
+    <DoDontExample
+      square
+      text="You can use a Global Policy to apply changes to all users."
+    />
+  </Column>
+</Row>
 
 ## Punctuation
 
