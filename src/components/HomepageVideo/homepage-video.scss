@@ -28,7 +28,7 @@
 
 .homepage-video--controls {
   position: absolute;
-  top: 1rem;
+  top: 1rem; // TO-DO: change this to bottom: 1rem after fixing wrapper height
   right: 1rem;
   height: rem(24px);
   width: rem(24px);
