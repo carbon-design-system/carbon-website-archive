@@ -1,14 +1,14 @@
 // No gutter class names
 .container {
   .ibm--no-gutter-lg {
-    @include breakpoint('lg') {
+    @include carbon--breakpoint('lg') {
       padding-left: 0;
       padding-right: 0;
     }
   }
 
   .ibm--no-gutter-md {
-    @include breakpoint('md') {
+    @include carbon--breakpoint('md') {
       padding-left: 0;
       padding-right: 0;
     }
@@ -20,13 +20,13 @@
   }
 
   .ibm--no-gutter-lg--left {
-    @include breakpoint('lg') {
+    @include carbon--breakpoint('lg') {
       padding-left: 0;
     }
   }
 
   .ibm--no-gutter-md--left {
-    @include breakpoint('md') {
+    @include carbon--breakpoint('md') {
       padding-left: 0;
     }
   }
