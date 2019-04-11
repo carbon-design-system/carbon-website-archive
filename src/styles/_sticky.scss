@@ -23,7 +23,6 @@
   z-index: 500;
 }
 
-// positioned lower when a 2.5rem alert banner is present
 .website-alert + .#{$prefix}--header ~ div.container .page-header {
   top: -6.5rem;
 }
@@ -51,22 +50,18 @@ website global header hidden
   }
 
   .#{prefix}--header__global,
-  .#{prefix}--header__name {
+  .#{prefix}--header__name,
+  .website-alert + .#{$prefix}--header {
     top: -3rem;
   }
 
-  .page-header {
-    top: -12rem;
-  }
+  .page-header,
   .website-alert + .#{$prefix}--header ~ div.container .page-header {
-    top: -12rem; // restating for specificity
+    top: -12rem;
   }
 
   .website-alert {
     top: -5.5rem;
-  }
-  .website-alert + .#{$prefix}--header {
-    top: -3rem;
   }
 
   .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav {
@@ -84,6 +79,6 @@ website global header hidden
     ~ .bx--side-nav
     + div
     .color-token-table__theme-switcher--sticky {
-    top: 104px; // idk? will need to test/look at this...
+    top: 104px;
   }
 }

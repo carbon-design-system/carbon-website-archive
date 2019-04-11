@@ -199,6 +199,12 @@ class Layout extends React.Component {
   hideHeader = () => {
     console.log(this.stickyWrapper);
     this.stickyWrapper.classList.add(this.headerHiddenClass);
+    if (
+      this.stickyWrapper.classList &&
+      !this.stickyWrapper.classList.contains(this.headerHiddenClass)
+    ) {
+      this.stickyWrapper.classList.remove(this.headerHiddenClass);
+    }
   };
 
   addStickyTabs = () => {

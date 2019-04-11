@@ -3,8 +3,8 @@
   width: 100%;
   height: rem(48px);
   position: relative;
-  border-top: 1px solid rgba($ui-02, 0.25);
-  // background: $carbon--black-100;
+  // border-top: 1px solid rgba($ui-02, 0.25);
+  box-shadow: 0 -1px 0 rgba($ui-02, 0.25);
 }
 
 .page-tabs__list {
@@ -15,7 +15,7 @@
   padding: 0;
   height: rem(48px);
   position: relative;
-  top: -1px;
+  // top: -1px;
 }
 
 .page-tabs__list li {
@@ -25,7 +25,8 @@
 
 .page-tabs__list li a {
   @include carbon--type-style('body-short-02');
-  padding: 0 $spacing-3xl 3px $spacing-md; // bottom padding to visually even out spacing with top border
+  padding: 0 1rem 3px 1rem; // bottom padding to visually even out spacing with top border
+  min-width: 7.5rem;
   text-decoration: none;
   color: $inverse-01;
   white-space: nowrap;
