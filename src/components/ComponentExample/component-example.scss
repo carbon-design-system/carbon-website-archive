@@ -77,9 +77,16 @@
   flex: 2;
 
   a {
-    padding-left: 1rem;
+    position: relative;
+    top: 1px;
+    margin-left: 1rem;
     color: $carbon--blue-40;
     text-decoration: none;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-bottom: 1px solid $carbon--blue-40;
+    }
   }
 
   svg {
