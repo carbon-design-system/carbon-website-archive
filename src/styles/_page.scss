@@ -6,6 +6,12 @@ body {
   font-family: $font-family;
 }
 
+a,
+a:visited,
+a:hover {
+  color: $interactive-01;
+}
+
 strong, b {
   font-weight: carbon--font-weight('semibold');
 }
