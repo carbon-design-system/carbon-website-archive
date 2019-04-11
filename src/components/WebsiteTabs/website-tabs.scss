@@ -27,6 +27,8 @@
 }
 
 .website-tabs a.bx--tabs__nav-link {
+  display: block;
+  height: 100%;
   border: none;
   box-sizing: border-box;
   background: $ui-03;
