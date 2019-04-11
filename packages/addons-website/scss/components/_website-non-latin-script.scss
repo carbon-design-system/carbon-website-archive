@@ -1,0 +1,238 @@
+@import '../prefix';
+
+$font-prefix: '/fonts';
+@import '@ibm/plex/scss/devanagari/_index.scss';
+@import '@ibm/plex/scss/thai/_index.scss';
+@import '@ibm/plex/scss/sans-hebrew/_index.scss';
+@import '@ibm/plex/scss/arabic/_index.scss';
+
+.#{$prefix}--non-latin-coming-soon-sticker {
+  margin-bottom: 0;
+  padding: 2.5rem;
+  border-radius: 100%;
+  color: $carbon--white-0;
+  background-color: $carbon--purple-60;
+  text-align: center;
+  width: rem(50px);
+  height: rem(50px);
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-30deg);
+}
+
+.#{$prefix}--non-latin-button {
+  background: none;
+  color: $carbon--black-100;
+  border: 0;
+  padding: 0.5rem 0;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+
+  & > * {
+    vertical-align: middle;
+  }
+}
+
+.#{$prefix}--non-latin-container {
+  position: relative;
+  border-bottom: 1px solid $ibm-color__gray-20;
+  border-top: 1px solid $ibm-color__gray-20;
+  margin-bottom: -1px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+// Emulate the scaling font-size
+.#{$prefix}--non-latin-image-type-sample {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: content-box;
+  height: calc(3.625rem + (7.38636vw - 1.47727rem));
+  width: auto;
+  @include carbon--breakpoint('md') {
+    height: calc(5.85rem + (6.25vw - 2.625rem));
+  }
+  @include carbon--breakpoint('lg') {
+    height: calc(7.85rem + (11.71875vw - 7.73438rem));
+  }
+  @include carbon--breakpoint('xlg') {
+    height: calc(10.7rem + (12.5vw - 10.25rem));
+  }
+  @include carbon--breakpoint('max') {
+    height: 12.85rem;
+  }
+}
+
+.#{$prefix}--non-latin-typeface-name-heading {
+  max-width: 100%;
+  margin-bottom: 0;
+  display: block;
+  border: 0;
+  padding-top: 0.5rem;
+  margin-top: 0;
+}
+
+.#{$prefix}--non-latin-type-example {
+  white-space: nowrap;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  height: 1.5em;
+  padding: 0;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  border-width: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 400 !important;
+
+  &.rtl {
+    direction: rtl;
+  }
+
+  @include carbon--breakpoint('md') {
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem !important;
+  }
+  @include carbon--breakpoint('lg') {
+    margin-top: -1.5rem;
+    margin-bottom: 0.5rem !important;
+  }
+  width: 100%;
+  color: $carbon--gray-90;
+  -webkit-text-fill-color: $carbon--gray-90; // Needs manual autoprefixing
+  line-height: 2em; // Fix weird font-cropping issue on Chrome
+  &::selection {
+    background: $carbon--purple-20;
+  }
+
+  // safari wrong height fix
+  @include carbon--breakpoint-down('md') {
+    line-height: 1.5em;
+    margin-bottom: 1rem !important;
+    padding-bottom: 1rem;
+  }
+
+  @media not all and (min-resolution: 0.001dpcm) {
+    line-height: 1.5em;
+    margin-bottom: 1rem !important;
+    padding-bottom: 1rem;
+  }
+  @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
+    line-height: 100%;
+  }
+}
+
+.#{$prefix}--non-latin-type-example-devanagari {
+  margin-top: 0rem !important;
+  margin-bottom: 1rem;
+  padding-top: 0rem !important;
+  padding-bottom: 0;
+
+  @include carbon--breakpoint('md') {
+    padding-top: 1rem !important;
+  }
+  @include carbon--breakpoint-down('md') {
+    margin-top: 0rem !important;
+    margin-bottom: 1rem;
+    line-height: 1.5em;
+    padding-bottom: 0;
+  }
+  @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
+    margin-top: 0rem !important;
+    margin-bottom: 1rem;
+    line-height: 1.5em;
+  }
+}
+
+.#{$prefix}--non-latin-type-example-thai {
+  padding-bottom: 1rem !important;
+  margin-bottom: 1rem !important;
+  line-height: 1.5em !important;
+  line-height: 2em !important;
+
+  // safari cuts thai fonts off, this is a workaround
+  @media not all and (min-resolution: 0.001dpcm) {
+    line-height: 1.5em !important;
+  }
+}
+
+.#{$prefix}--non-latin-type-example-arabic {
+  margin-bottom: 0 !important;
+  padding-bottom: 2rem;
+  line-height: 3em;
+  height: 2em;
+
+  @include carbon--breakpoint('md') {
+    margin-top: 1rem;
+    padding-bottom: 3rem;
+    height: 1.5em;
+  }
+
+  // safari cuts thai fonts off, this is a workaround
+  @media not all and (min-resolution: 0.001dpcm) {
+    line-height: 1.5em;
+    height: 1.75em;
+  }
+}
+
+.#{$prefix}--non-latin-type-example-cyrillic {
+  @media not all and (min-resolution: 0.001dpcm) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.#{$prefix}--non-latin-outer-spacing {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.ibm-type-mono,
+.ibm-type-mono * {
+  font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono',
+    'Bitstream Vera Sans Mono', Courier, monospace !important;
+}
+
+.ibm-type-serif,
+.ibm-type-serif * {
+  font-family: 'IBM Plex Serif', 'Georgia', Times, serif !important;
+}
+
+.ibm-type-hebrew {
+  font-family: 'IBM Plex Sans Hebrew' !important;
+}
+
+.ibm-type-thai {
+  font-family: 'IBM Plex Thai' !important;
+}
+
+.ibm-type-devanagari {
+  font-family: 'IBM Plex Devanagari' !important;
+}
+
+.ibm-type-arabic {
+  font-family: 'IBM Plex Arabic' !important;
+}
+
+.ibm-type-greek {
+  font-family: 'IBM Plex Sans Greek' !important;
+}
+
+// work around to support greek fonts
+@font-face {
+  font-family: 'IBM Plex Sans Greek';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v5/zYXgKVElMYYaJe8bpLHnCwDKhdLeFaxOedfTDw.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
