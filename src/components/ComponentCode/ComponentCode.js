@@ -12,7 +12,7 @@ export default class ComponentCode extends React.Component {
     background: PropTypes.string,
     hasLightVersion: PropTypes.bool,
     hasReactVersion: PropTypes.bool,
-    hasAngularVersion: PropTypes.bool,
+    hasAngularVersion: PropTypes.string,
     hasVueVersion: PropTypes.string,
     experimental: PropTypes.bool,
   };
@@ -49,7 +49,7 @@ export default class ComponentCode extends React.Component {
         </div>
 
         <div className="component-variation ibm--row">
-          <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
+          <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--no-gutter">
             <ComponentExample
               codepenSlug={codepen}
               component={component}
