@@ -12,7 +12,7 @@ export default class ComponentCode extends React.Component {
     background: PropTypes.string,
     hasLightVersion: PropTypes.bool,
     hasReactVersion: PropTypes.bool,
-    hasAngularVersion: PropTypes.bool,
+    hasAngularVersion: PropTypes.string,
     hasVueVersion: PropTypes.string,
     experimental: PropTypes.bool,
   };
