@@ -67,7 +67,7 @@ class ComponentExample extends Component {
     codepenSlug: PropTypes.string,
     hasLightVersion: PropTypes.string,
     hasReactVersion: PropTypes.bool,
-    hasAngularVersion: PropTypes.bool,
+    hasAngularVersion: PropTypes.string,
     hasVueVersion: PropTypes.string,
     experimental: PropTypes.bool,
   };
@@ -338,9 +338,10 @@ class ComponentExample extends Component {
                 React <Launch16 />
               </a>
             )}
-            {hasAngularVersion === true && (
+            {/* hasAngularVersion should be the query part of the storybook url */}
+            {typeof hasAngularVersion === 'string' && (
               <a
-                href={`http://angular.carbondesignsystem.com/?selectedKind=${componentNameLink}`}
+                href={`http://angular.carbondesignsystem.com/${hasAngularVersion}`}
                 target="_blank"
                 rel="noopener noreferrer">
                 Angular <Launch16 />
@@ -348,7 +349,7 @@ class ComponentExample extends Component {
             )}
             {typeof hasVueVersion === 'string' && (
               <a
-                href={`http://vue.carbondesignsystem.com/?path=/story/experimental-cv${hasVueVersion}`}
+                href={`http://vue.carbondesignsystem.com/?path=/story/components-cv${hasVueVersion}`}
                 target="_blank"
                 rel="noopener noreferrer">
                 Vue <Launch16 />

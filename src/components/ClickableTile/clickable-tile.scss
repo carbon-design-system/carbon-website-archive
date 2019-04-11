@@ -7,37 +7,9 @@ a.tile--article {
   flex-direction: column;
   justify-content: space-between;
   padding: 0;
-  background: $carbon--white-0;
-  margin: 1rem;
-
-  // full bleed for tiles on mobile
-  @include carbon--breakpoint('sm') {
-    width: calc(100% - 2rem);
-  }
-
-  @include carbon--breakpoint('md') {
-    width: calc(50% - 0.5rem);
-    margin-left: 0;
-    margin-bottom: 0;
-
-    &:nth-child(even) {
-      margin-right: 0;
-    }
-  }
-
-  @include carbon--breakpoint('lg') {
-    width: calc(33% - 0.51rem);
-    margin-right: 1rem;
-
-    &:nth-child(even) {
-      margin-right: 1rem;
-    }
-
-    &:last-child,
-    &:nth-child(3n + 3) {
-      margin-right: 0;
-    }
-  }
+  background: $carbon__white-0;
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
 a.tile--article.tile--dark {
@@ -106,7 +78,7 @@ a.tile--article.tile--dark:hover {
   }
 
   @include carbon--breakpoint('md') {
-    width: calc(50% - 1px);
+    width: 100%;
     margin: 0;
   }
 }
@@ -202,39 +174,47 @@ a.tile--article.tile--dark:hover {
 }
 
 // Grouped tiles
-.flex-wrap {
-  .tile--resource {
-    @include carbon--breakpoint('sm') {
-      border-bottom: 1px solid $carbon--gray-20;
+.tile--group > div .tile--resource {
+  @include carbon--breakpoint('sm') {
+    border-bottom: 1px solid $carbon--gray-20;
 
-      &.tile--dark {
-        border-bottom-color: $carbon--black-100;
-      }
-    }
-
-    @include carbon--breakpoint('md') {
-      border: 1px solid transparent;
-      border-bottom: none;
-      border-right: none;
-
-      &:nth-child(2n + 2) {
-        border-left: 1px solid $carbon--gray-20;
-
-        &.tile--dark {
-          border-left-color: $carbon--black-100;
-        }
-      }
-
-      &:nth-child(n + 3) {
-        border-top: 1px solid $carbon--gray-20;
-
-        &.tile--dark {
-          border-top-color: $carbon--black-100;
-        }
-      }
+    &.tile--dark {
+      border-bottom-color: $carbon--black-100;
     }
   }
 
+  @include carbon--breakpoint('md') {
+    border: 1px solid transparent;
+    border-right: none;
+    border-bottom: none;
+  }
+}
+
+.tile--group > div:nth-child(2n + 2) {
+  @include carbon--breakpoint('md') {
+    .tile--resource {
+      border-left: 1px solid $carbon--gray-20;
+
+      &.tile--dark {
+        border-left-color: $carbon--black-100;
+      }
+    }
+  }
+}
+
+.tile--group > div:nth-child(n + 3) {
+  @include carbon--breakpoint('md') {
+    .tile--resource {
+      border-top: 1px solid $carbon--gray-20;
+
+      &.tile--dark {
+        border-top-color: $carbon--black-100;
+      }
+    }
+  }
+}
+
+.tile--group {
   a.tile--article.tile--dark {
     border-color: $carbon--black-100;
   }
