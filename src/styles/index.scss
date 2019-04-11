@@ -41,6 +41,8 @@ $font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 //---------------------------------------
 // Add-on Components
 //---------------------------------------
+
+@import '@carbon/addons-website/scss/components/website-grid';
 @import '@carbon/addons-website/scss/components/404';
 @import '@carbon/addons-website/scss/components/website-footer';
 @import '@carbon/addons-website/scss/components/website-switcher';
