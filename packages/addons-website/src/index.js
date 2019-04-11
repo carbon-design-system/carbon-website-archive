@@ -10,3 +10,4 @@ export { default as PlayPauseButton } from './components/PlayPauseButton';
 export { default as HomepageVideo } from './components/HomepageVideo';
 export { default as WebsiteCodeSnippet } from './components/WebsiteCodeSnippet';
 export { default as ImageComponent } from './components/ImageComponent';
+export { default as DoDontExample } from './components/DoDontExample';
