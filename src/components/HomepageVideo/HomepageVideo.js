@@ -113,13 +113,9 @@ export default class HomepageVideo extends React.Component {
       </svg>
     );
 
-    const videoWrapperClassName = classnames('homepage-video--wrapper', {
-      'homepage-video--paused': this.state.paused,
-    });
-
     return (
-      <div className={videoWrapperClassName}>
-        {children}
+      <div className="homepage-video--main">
+        <div className="homepage-video--wrapper">{children}</div>
         <div className="homepage--video--overlay" />
         <div
           className="homepage-video--controls"
