@@ -17,8 +17,15 @@
 
 .homepage-video--wrapper iframe {
   position: absolute;
-  top: 0;
+  top: -20%;
   right: 0;
+  @include carbon--breakpoint-down(1260px) {
+    top: -10%;
+  }
+
+  @include carbon--breakpoint-down(1100px) {
+    top: 0;
+  }
 }
 
 .homepage--video--overlay {
