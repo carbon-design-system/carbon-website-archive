@@ -8,8 +8,8 @@ export default class HomepageVideo extends React.Component {
     super(props);
 
     this.onClick = this.onClick.bind(this);
-    this.onMouseEnter = this.onMouseEnter.bind(this);
-    this.onMouseLeave = this.onMouseLeave.bind(this);
+    // this.onMouseEnter = this.onMouseEnter.bind(this);
+    // this.onMouseLeave = this.onMouseLeave.bind(this);
   }
   state = { paused: false, hover: false };
 
@@ -46,13 +46,13 @@ export default class HomepageVideo extends React.Component {
     }
   };
 
-  onMouseEnter = evt => {
+  onMouseEnter = () => {
     this.setState({
       hover: true,
     });
   };
 
-  onMouseLeave = evt => {
+  onMouseLeave = () => {
     this.setState({
       hover: false,
     });
@@ -117,16 +117,18 @@ export default class HomepageVideo extends React.Component {
       <div className="homepage-video--main">
         <div className="homepage-video--wrapper">{children}</div>
         <div className="homepage--video--overlay" />
-        <div
+        <button
           className="homepage-video--controls"
           onClick={this.onClick}
           onMouseEnter={this.onMouseEnter}
-          onMouseLeave={this.onMouseLeave}>
+          onMouseLeave={this.onMouseLeave}
+          onFocus={this.onMouseEnter}
+          onBlur={this.onMouseLeave}>
           {this.state.paused && !this.state.hover ? playSvg : null}
           {!this.state.paused && !this.state.hover ? pauseSvg : null}
           {this.state.paused && this.state.hover ? hoverPlay : null}
           {!this.state.paused && this.state.hover ? hoverPause : null}
-        </div>
+        </button>
       </div>
     );
   }
