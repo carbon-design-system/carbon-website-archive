@@ -45,8 +45,8 @@ class SwatchPaletteWidget extends Component {
     return (
       <div className={`${prefix}--swatch-palettes-container`}>
         <div className="sticky-container" style={{ top: top ? top : '0px' }}>
-          <div className="ibm--row">
-            <div className="ibm--col-lg-4 ibm--col-md-4 ibm--offset-lg-4 ibm--col-bleed">
+          <div className="bx--row">
+            <div className="bx--col-lg-4 bx--col-md-4 bx--offset-lg-4 bx--col-bleed">
               <ContentSwitcher
                 className={`${prefix}--swatch-palettes__format-switcher`}
                 onChange={this.switchFormat}>
@@ -65,9 +65,9 @@ class SwatchPaletteWidget extends Component {
         </div>
         {palettes.map((palette, i) => {
           return (
-            <div key={i} className="ibm--row">
+            <div key={i} className="bx--row">
               <div
-                className={`ibm--col-lg-12 ibm--col-md-8 ibm--offset-lg-4 ibm--col-bleed ${prefix}--swatch-palettes`}>
+                className={`bx--col-lg-12 bx--col-md-8 bx--offset-lg-4 bx--col-bleed ${prefix}--swatch-palettes`}>
                 {palette.map(color => {
                   const col = color.split('-');
                   const showBW = col[1] === 'bw';

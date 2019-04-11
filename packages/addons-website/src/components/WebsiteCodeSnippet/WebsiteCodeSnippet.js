@@ -36,8 +36,8 @@ export default class WebsiteCodeSnippet extends React.Component {
     const { children } = this.props;
     const type = this.state.multi ? 'multi' : 'single';
     return (
-      <div className="ibm--row">
-        <div className="ibm--col-lg-8 ibm--offset-lg-4 ibm--no-gutter">
+      <div className="bx--row">
+        <div className="bx--col-lg-8 bx--offset-lg-4 bx--no-gutter">
           <div className="bx--snippet--website">
             <CopyToClipboard onCopy={() => this.setState({ copied: true })}>
               <CodeSnippet type={type}>

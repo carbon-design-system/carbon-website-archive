@@ -20,13 +20,6 @@ $feature-flags: (
 
 @import '@carbon/layout/scss/layout.scss';
 @import '@carbon/grid/scss/grid.scss';
-.container {
-  //need this to avoid conflicts with old grid code
-  $prefix: 'ibm';
-  $imported-modules-local: ();
-  @import '@carbon/grid/scss/grid.scss';
-}
-
 @import 'carbon-components/scss/globals/scss/styles.scss';
 
 $font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;

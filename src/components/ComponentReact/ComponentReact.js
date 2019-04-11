@@ -125,8 +125,8 @@ class ComponentReactExample extends Component {
 
     return (
       <>
-        <div className="ibm--row">
-          <div className="ibm--col-lg-12 ibm--offset-lg-4">
+        <div className="bx--row">
+          <div className="bx--col-lg-12 bx--offset-lg-4">
             <h2 className="page-h2">{name}</h2>
             <p className="component-example__heading-label page-p">
               This component is currently only available in{' '}
@@ -135,8 +135,8 @@ class ComponentReactExample extends Component {
             </p>
           </div>
         </div>
-        <div className="component-variation ibm--row">
-          <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--no-gutter">
+        <div className="component-variation bx--row">
+          <div className="bx--col-lg-12 bx--offset-lg-4 bx--no-gutter">
             <div>
               <div className="svg--sprite" aria-hidden="true" />
               <div className="component-example__live">

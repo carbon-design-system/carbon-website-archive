@@ -67,15 +67,15 @@ export default class TypefaceSubFamilies extends React.Component {
 
     const classNamesContainer = classnames({
       [`${prefix}--subfamilies-TypeTesterExample`] : true,
-      'ibm--col-md-8': true,
-      'ibm--col-sm-4': true,
+      'bx--col-md-8': true,
+      'bx--col-sm-4': true,
       'flex-wrap' : true,
       [`${prefix+"--"+this.state.fontVariant}`] : true,
     });
     
     return (
       <div className={`${prefix}--subfamilies`}>
-        <div className="bx--row ibm--offset-lg-4">
+        <div className="bx--row bx--offset-lg-4">
           <div className={`${prefix}--subfamilies-dropdown-container`}>
             <div className={classNamesMenuDropdown}>
                <Dropdown
@@ -105,7 +105,7 @@ export default class TypefaceSubFamilies extends React.Component {
           <div className={classNamesContainer}>
               
               {/* Inline styles for all weights don't exist as helper classes. */}
-              <div className={`${prefix}--padding-left-none ibm-padding--horizontal ibm--col-md-4`}>
+              <div className={`${prefix}--padding-left-none ibm-padding--horizontal bx--col-md-4`}>
                 <div style={{ fontWeight: 100 }}>Thin</div>
                 <div style={{ fontWeight: 100 }} className="ibm-type-italic">
                   Thin Italic
@@ -123,7 +123,7 @@ export default class TypefaceSubFamilies extends React.Component {
                   Regular Italic
                 </div>
               </div>
-              <div className={`${prefix}--padding-left-none ibm-padding--horizontal ibm--col-md-4`}>
+              <div className={`${prefix}--padding-left-none ibm-padding--horizontal bx--col-md-4`}>
                 <div style={{ fontWeight: 450 }}>Text</div>
                 <div style={{ fontWeight: 450 }} className="ibm-type-italic">
                   Text Italic

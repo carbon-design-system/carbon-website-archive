@@ -4,7 +4,7 @@ import classnames from 'classnames';
 
 export const Grid = ({ children, className }) => {
   return (
-    <div className={classnames('ibm--grid', className)}>
+    <div className={classnames('bx--grid', className)}>
       {children}
     </div>
   );
@@ -21,7 +21,7 @@ Grid.propTypes = {
 
 export const Row = ({ children, className }) => {
   return (
-    <div className={classnames('ibm--row', className)}>
+    <div className={classnames('bx--row', className)}>
       {children}
     </div>
   );
@@ -53,18 +53,18 @@ export const Column = ({
   className,
 }) => {
   const colClasses = classnames({
-    'ibm--no-gutter-sm': noGutterSm,
-    'ibm--no-gutter-md': noGutterMd,
-    'ibm--no-gutter-lg': noGutterLg,
-    'ibm--no-gutter-sm--left': noGutterSmLeft,
-    'ibm--no-gutter-md--left': noGutterMdLeft,
-    'ibm--no-gutter-lg--left': noGutterLgLeft,
-    [`ibm--offset-sm-${offsetSm}`]: offsetSm,
-    [`ibm--offset-md-${offsetMd}`]: offsetMd,
-    [`ibm--offset-lg-${offsetLg}`]: offsetLg,
-    [`ibm--col-lg-${colLg}`]: colLg,
-    [`ibm--col-md-${colMd}`]: colMd,
-    [`ibm--col-sm-${colSm}`]: colSm,
+    'bx--no-gutter-sm': noGutterSm,
+    'bx--no-gutter-md': noGutterMd,
+    'bx--no-gutter-lg': noGutterLg,
+    'bx--no-gutter-sm--left': noGutterSmLeft,
+    'bx--no-gutter-md--left': noGutterMdLeft,
+    'bx--no-gutter-lg--left': noGutterLgLeft,
+    [`bx--offset-sm-${offsetSm}`]: offsetSm,
+    [`bx--offset-md-${offsetMd}`]: offsetMd,
+    [`bx--offset-lg-${offsetLg}`]: offsetLg,
+    [`bx--col-lg-${colLg}`]: colLg,
+    [`bx--col-md-${colMd}`]: colMd,
+    [`bx--col-sm-${colSm}`]: colSm,
     [className]: className,
   });
 

@@ -9,9 +9,9 @@ class FourOhFour extends React.Component {
     }
     return (
       <div className="page-content fourohfour">
-        <div className="ibm--grid">
-          <div className="ibm--row">
-            <div className="ibm--col-lg-12 ibm--offset-lg-4 fourohfour-body">
+        <div className="bx--grid">
+          <div className="bx--row">
+            <div className="bx--col-lg-12 bx--offset-lg-4 fourohfour-body">
               <div className="fourohfour-body">
                 <h2 className="fourohfour-body__heading">
                   Something's wrong...

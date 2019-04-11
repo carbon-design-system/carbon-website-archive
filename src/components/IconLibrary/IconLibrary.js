@@ -128,8 +128,8 @@ export default class IconLibrary extends React.Component {
     if (errorLoadingIcons) {
       console.error(errorLoadingIcons);
       return (
-        <div className="page ibm--row">
-          <div className="ibm--col-lg-12 ibm--offset-lg-4">
+        <div className="page bx--row">
+          <div className="bx--col-lg-12 bx--offset-lg-4">
             <h3>Yikes! Looks like something went wrong.</h3>
             <p>
               We're still working out some problems in our experimental website.
@@ -149,9 +149,9 @@ export default class IconLibrary extends React.Component {
 
     if (filteredIcons.length === 0) {
       return (
-        <div className="page ibm--row">
-          <div className="ibm--col-lg-8 ibm--offset-lg-4">{search}</div>
-          <div className="ibm--col-lg-12 ibm--offset-lg-4">
+        <div className="page bx--row">
+          <div className="bx--col-lg-8 bx--offset-lg-4">{search}</div>
+          <div className="bx--col-lg-12 bx--offset-lg-4">
             <IconEmptyState />
           </div>
         </div>
@@ -159,9 +159,9 @@ export default class IconLibrary extends React.Component {
     }
 
     return (
-      <div className="page ibm--row">
-        <div className="ibm--col-lg-8 ibm--offset-lg-4">{search}</div>
-        <div className="ibm--col-lg-12 ibm--offset-lg-4">{sections}</div>
+      <div className="page bx--row">
+        <div className="bx--col-lg-8 bx--offset-lg-4">{search}</div>
+        <div className="bx--col-lg-12 bx--offset-lg-4">{sections}</div>
       </div>
     );
   }
