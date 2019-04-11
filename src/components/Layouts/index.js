@@ -27,7 +27,6 @@ class Layout extends React.Component {
     super();
     this.lastKnownScrollY = 0;
     this.currentScrollY = 0;
-    this.ticking = false;
     this.stickyWrapper = null;
     this.headerHiddenClass = 'website-header-hidden';
   }
@@ -178,6 +177,12 @@ class Layout extends React.Component {
 
   onScroll = () => {
     console.log('scrolling!');
+
+    // are we scrolling?
+    // which direction?
+    // how far away from last saved position, and which direction?
+    // toggle header visible state if over max distance in particular direction
+
     this.currentScrollY = window.pageYOffset;
     if (this.currentScrollY < this.lastKnownScrollY) {
       this.showHeader();
@@ -187,6 +192,7 @@ class Layout extends React.Component {
     this.lastKnownScrollY = this.currentScrollY;
   };
 
+  // TODO: can we componetize this to remove side effects and set the visible state in a declarative fashion
   showHeader = () => {
     if (
       this.stickyWrapper.classList &&
@@ -197,7 +203,6 @@ class Layout extends React.Component {
   };
 
   hideHeader = () => {
-    console.log(this.stickyWrapper);
     this.stickyWrapper.classList.add(this.headerHiddenClass);
     if (
       this.stickyWrapper.classList &&
