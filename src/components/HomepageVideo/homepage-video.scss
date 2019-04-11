@@ -12,7 +12,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  padding-top: 56.25%; //needed to make video fit container
+  padding-bottom: 56.25%; //needed to make video fit container
 }
 
 .homepage-video--wrapper iframe {
@@ -38,8 +38,14 @@
   height: rem(24px);
   width: rem(24px);
   background: transparent;
-  cursor: pointer;
-  z-index: 10;
+  outline: none;
+  border: none;
+  padding: 0;
+  z-index: 10; //need this to be above dots overlay
+}
+
+.homepage-video--controls:focus {
+  @include focus-outline('outline');
 }
 
 .homepage-video--controls .mouseOut,
