@@ -664,9 +664,10 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@carbon/colors@v10.0.0-rc.0":
-  version "10.0.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@carbon/colors/-/colors-10.0.0-rc.0.tgz#a7c80c7571fe0e549955da00695f9ee95066d2b5"
+"@carbon/colors@v10.1.1":
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/@carbon/colors/-/colors-10.1.1.tgz#854c33ccdf02ac319c06923268ba89cf83a58c93"
+  integrity sha512-hni1iN0FUfQgnATqAT971WMAosl9YK7kQqp1V0vkF3d8rB/id+Y3K1GhDsXLKPfEAxdgE4+swGvID9tAY+a9kQ==
 
 "@carbon/grid@0.0.1-alpha.32":
   version "0.0.1-alpha.32"
@@ -675,12 +676,13 @@
     "@carbon/import-once" "0.0.1-alpha.32"
     "@carbon/layout" "0.0.1-alpha.32"
 
-"@carbon/grid@v10.0.0-rc.0":
-  version "10.0.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@carbon/grid/-/grid-10.0.0-rc.0.tgz#498a4436ba81104c4305f2f824e33fe8720a80d4"
+"@carbon/grid@v10.1.1":
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/@carbon/grid/-/grid-10.1.1.tgz#f7e6322d2adb2b3f7276f135f6f634e50df37222"
+  integrity sha512-tI9yTX4Hr97i2+Za+Pu4vLJj62AmNrV0OMP7iqL+uTwhlEkwjrJIT2aiVy7lX8LLwhPyX7YnGzCdWpaV/S/ofw==
   dependencies:
-    "@carbon/import-once" "10.0.0-rc.0"
-    "@carbon/layout" "10.0.0-rc.0"
+    "@carbon/import-once" "10.1.0"
+    "@carbon/layout" "10.1.1"
 
 "@carbon/icon-helpers@0.0.1-alpha.31":
   version "0.0.1-alpha.31"
@@ -708,24 +710,27 @@
   version "0.0.1-alpha.32"
   resolved "https://registry.yarnpkg.com/@carbon/import-once/-/import-once-0.0.1-alpha.32.tgz#44f4f78399899d659fcd4d7550defe5ac8802c6f"
 
-"@carbon/import-once@10.0.0-rc.0", "@carbon/import-once@v10.0.0-rc.0":
-  version "10.0.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@carbon/import-once/-/import-once-10.0.0-rc.0.tgz#d138a74207c9e6bbcceafedbcf5f862668a3fe2c"
+"@carbon/import-once@10.1.0", "@carbon/import-once@v10.1.0":
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/@carbon/import-once/-/import-once-10.1.0.tgz#dc6d06d45f77c24461a1a4d48d90f6ba63622f3f"
+  integrity sha512-cZTifeQvvYKDSJ/arFPXF/tLOz8jn2tmp+ukCAL6n/J1flz3fYIwq9L1R0RyzRJTiKA5f+bT7wYW62xDqrOOnw==
 
 "@carbon/layout@0.0.1-alpha.32":
   version "0.0.1-alpha.32"
   resolved "https://registry.yarnpkg.com/@carbon/layout/-/layout-0.0.1-alpha.32.tgz#1fae6b9c771d2e145b3e7ac28f030e6be1321592"
 
-"@carbon/layout@10.0.0-rc.0", "@carbon/layout@v10.0.0-rc.0":
-  version "10.0.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@carbon/layout/-/layout-10.0.0-rc.0.tgz#4fa2e88493c860f2d8797e7f4f4c1789fcdcb256"
+"@carbon/layout@10.1.1", "@carbon/layout@v10.1.1":
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/@carbon/layout/-/layout-10.1.1.tgz#06608c451b222ee89abe3753cca6990690127af2"
+  integrity sha512-FC5iOJLR2CwG5gJX5Wz6jpFCdiLOsKaCw949+t3waWRhdb1CJ9B3PDXM8KUOKRuwo4tsXQb2kd8wXkGNfdkWTw==
 
-"@carbon/type@v10.0.0-rc.0":
-  version "10.0.0-rc.0"
-  resolved "https://registry.yarnpkg.com/@carbon/type/-/type-10.0.0-rc.0.tgz#20d8cc5a3c9b60ebb7ef3152e3fff256ff3da979"
+"@carbon/type@v10.1.1":
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/@carbon/type/-/type-10.1.1.tgz#143fad9360b8f41db8ce144fedb7db9d65e093bc"
+  integrity sha512-mu+cH8L4giiSUvMKJghiMaEFPClcVVVrneR/rQQoibgUtltfcPdzQEyvDnUk3+tR12XF7yY1ypnqJhfYBz6Idg==
   dependencies:
-    "@carbon/import-once" "10.0.0-rc.0"
-    "@carbon/layout" "10.0.0-rc.0"
+    "@carbon/import-once" "10.1.0"
+    "@carbon/layout" "10.1.1"
 
 "@emotion/cache@^0.8.8":
   version "0.8.8"
@@ -4237,9 +4242,10 @@ carbon-components-react@v7.0.0:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@v10.0.0:
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-10.0.0.tgz#d9e5da8619c7bd74c31ebabb759f23790460f2d6"
+carbon-components@v10.1.0:
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-10.1.0.tgz#c7d60ef3aaa4ec11629d1224e0064d15716e5072"
+  integrity sha512-CdybWT+lDhDnY4fp7HDacmL8X3i/9LD12WKK/AlmIZeoCAmqa0fo9GwRz1o8gQdQYOF/5LAjrdqOlKXkAOrGDQ==
   dependencies:
     carbon-icons "^7.0.7"
     flatpickr "4.5.7"
