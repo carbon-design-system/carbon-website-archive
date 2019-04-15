@@ -196,45 +196,6 @@
       }
     },
     {
-      "component": "Combo box",
-      "vanilla": {
-        "stable": false,
-        "experimental": false,
-        "new": false,
-        "updated": false,
-        "deprectated": false,
-        "underConstruction": false,
-        "notAvailable": true
-      },
-      "react": {
-        "stable": false,
-        "experimental": false,
-        "new": false,
-        "updated": false,
-        "deprectated": false,
-        "underConstruction": true,
-        "notAvailable": false
-      },
-      "angular": {
-        "stable": false,
-        "experimental": true,
-        "new": false,
-        "updated": false,
-        "deprectated": false,
-        "underConstruction": false,
-        "notAvailable": false
-      },
-      "vue": {
-        "stable": false,
-        "experimental": true,
-        "new": false,
-        "updated": false,
-        "deprectated": false,
-        "underConstruction": false,
-        "notAvailable": false
-      }
-    },
-    {
       "component": "Content switcher",
       "vanilla": {
         "stable": true,
@@ -276,12 +237,12 @@
     {
       "component": "Data table",
       "vanilla": {
-        "stable": false,
+        "stable": true,
         "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
-        "underConstruction": true,
+        "underConstruction": false,
         "notAvailable": false
       },
       "react": {
@@ -675,12 +636,12 @@
         "notAvailable": true
       },
       "react": {
-        "stable": false,
+        "stable": true,
         "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
-        "underConstruction": true,
+        "underConstruction": false,
         "notAvailable": false
       },
       "angular": {
@@ -694,12 +655,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": true,
+        "experimental": false,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": false
+        "notAvailable": true
       }
     },
     {
@@ -1357,12 +1318,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": true,
+        "experimental": false,
         "new": false,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": false
+        "notAvailable": true
       }
     }
   ]

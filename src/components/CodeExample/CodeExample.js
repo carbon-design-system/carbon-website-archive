@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import classnames from 'classnames';
-import { Icon } from 'carbon-components-react';
 import ReactGA from 'react-ga';
 import Prism from 'prismjs';
 import Copy20 from '@carbon/icons-react/es/copy/20';

@@ -162,7 +162,7 @@ class Layout extends React.Component {
       easing: 'easeInOutCubic',
       offset: 87, // height of both header bars
       topOnEmptyHash: false,
-      clip: true
+      clip: true,
     });
 
     if (window.location.hash) {
@@ -174,7 +174,7 @@ class Layout extends React.Component {
         scroll.animateScroll(hashElement);
       }
     }
-  }
+  };
 
   render() {
     const { GATSBY_CARBON_ENV } = process.env;
@@ -236,21 +236,21 @@ class Layout extends React.Component {
             <aside aria-label="alert banner" className="website-alert">
               <Information20 className="website-alert__icon" />
               <p className="website-alert__text">
-                <span>Carbon v10 is in beta</span>
-                <span>;</span>{' '}
-                <span>for production-ready components, use Carbon v9.</span>
+                <span>Carbon v10 is live!</span>
+                <span />{' '}
+                <span>View the migration guide to upgrade from v9.</span>
               </p>
-              <a
+              <Link
                 className="website-alert__button"
                 tabIndex="-1"
-                href=" https://www.carbondesignsystem.com">
+                to="/updates/v10-migration/overview">
                 <button
                   class="bx--btn bx--btn--secondary bx--btn--sm"
                   type="button">
-                  <span>Go to v9</span>
+                  <span>Migrate to v10</span>
                   <ArrowRight20 />
                 </button>
-              </a>
+              </Link>
             </aside>
             <Header aria-label="Header" className="bx--header--website">
               <SkipToContent />
@@ -268,27 +268,26 @@ class Layout extends React.Component {
                 isActive={isLeftNavOpen}
               />
               {isInternal ? (
-                <HeaderName prefix="" to="/" element={Link} href="/">
-                  <span>IBM Product</span>&nbsp;Design&nbsp;<span>System</span>
+                <HeaderName prefix="" to="/" element={Link}>
+                  Carbon&nbsp;<span>Design System</span>
                 </HeaderName>
               ) : (
-                  <HeaderName prefix="" to="/" element={Link}>
-                    Carbon&nbsp;<span>Design System</span>
-                  </HeaderName>
-                )}
-
+                <HeaderName prefix="" to="/" element={Link}>
+                  Carbon&nbsp;<span>Design System</span>
+                </HeaderName>
+              )}
               <HeaderGlobalBar>
                 {/* {isInternal ? null : <GlobalSearch />} */}
                 {this.state.isSearchOpen ? (
                   <GlobalSearch />
                 ) : (
-                    <HeaderGlobalAction
-                      className="bx--header__action--search"
-                      aria-label="Search Website"
-                      onClick={() => this.handleSearchClick('isSearchOpen')}>
-                      <Search20 />
-                    </HeaderGlobalAction>
-                  )}
+                  <HeaderGlobalAction
+                    className="bx--header__action--search"
+                    aria-label="Search Website"
+                    onClick={() => this.handleSearchClick('isSearchOpen')}>
+                    <Search20 />
+                  </HeaderGlobalAction>
+                )}
                 <HeaderGlobalAction
                   className="bx--header__action--switcher"
                   aria-label="Switch"
@@ -315,7 +314,7 @@ class Layout extends React.Component {
                   linkText: 'IBM Design Language',
                 },
                 {
-                  href: 'https://next.carbondesignsystem.com',
+                  href: 'https://www.carbondesignsystem.com',
                   linkText: 'IBM Product Design',
                 },
                 {

@@ -1,19 +1,7 @@
 import React from 'react';
-import { Icon } from 'carbon-components-react';
 import { Location } from '@reach/router';
 import { Link } from 'gatsby';
 import Link20 from '@carbon/icons-react/es/link/20';
-
-export class PageIcon extends React.Component {
-  render() {
-    return (
-      <Icon
-        name={this.props.name}
-        className={`page-icon page-icon-${this.props.color}`}
-      />
-    );
-  }
-}
 
 export class h1 extends React.Component {
   render() {
@@ -80,7 +68,7 @@ export class h3 extends React.Component {
           const path = location.pathname;
           return (
             <div className="ibm--row">
-              <div className="ibm--col-lg-7 ibm--offset-lg-4">
+              <div className="ibm--col-lg-7 ibm--col-md-6 ibm--offset-lg-4">
                 <h3 className="page-h3" id={hash}>
                   {hash && (
                     <Link className="anchor-link" to={`${path}#${hash}`}>

@@ -1,48 +1,50 @@
 ---
-title: v10 Migration
+title: Migrate to v10
 tabs: ['Overview', 'Designers', 'Developers']
 ---
 
+### It's Carbon's biggest overhaul yet. New layouts, new colors, new guidelines, and a whole new website. Here's everything you need to migrate from v9.
+
 <AnchorLinks>
 
-- [Carbon v10 intro](#carbon-v10-intro)
-- [About this guide](#about-this-guide)
-- [Migration scenarios](#migration-scenarios)
-- [Rollout plan](#rollout-plan)
-- [Feedback](#feedback) 
+- [Welcome to v10](#welcome-to-v10)
+- [Migration strategy](#migration-tooling)
+- [Feedback](#feedback)
 
 </AnchorLinks>
 
-## Carbon v10 intro
+## Welcome to v10
 
-Carbon v10 represents a complete refresh of the design system, based on the all-new [IBM Design Language](https://www.ibm.com/design/language/). While the look and feel are fresh, the basic functionality of Carbon's components has [deviated very little from v9](https://github.com/IBM/carbon-components/releases). Carbon v10 was engineered to provide a low-friction migration experience for users of Carbon v9.
+With Carbon v10 comes a complete refresh of the design system. The Carbon team worked hard to make the transition to v10 seamless, but there are breaking changes. This guide is for teams migrating from v9 to v10. If your team uses an older version of Carbon, some of this information may not apply to you.
 
-Carbon v10 is currently in Beta release. Please use this opportunity to explore and experiment with the new components, elements, layout patterns, and experimental UI shell. The Beta release is a work in progress; changes will be frequent and possibly breaking. **This release is not approved for production.** Please explore the system and [provide bountiful feedback](/help/support#github-issues)!
+<Row>
+<Column offsetLg="4" colLg="4" noGutterSm>
+<ClickableTile
+    title="Looking for v9?"
+    href="https://v9.carbondesignsystem.com/"
+    type="resource">
 
-## About this guide
+![](/images/sandbox-icon.png)
 
-Note: this migration guide is for a future, unreleased version of Carbon. Anything in this document is subject to change up until v10 is released.
+  </ClickableTile>
+</Column>
+</Row>
 
-This migration guide applies to teams who are currently using Carbon v9 in their products and migrating to Carbon v10. For teams on older versions of Carbon, the migration process will be more technically involved. Some of the material in this guide will apply to those users, but not all of it is guaranteed to work perfectly in all migration scenarios. 
+## Migration strategy
 
-Users not currently on Carbon v9 should refer to the [Getting started](/getting-started/about-carbon) section of this site for more general guidance on using Carbon v10.
+#### Talk about migration early and often.
 
-## Migration scenarios
+Have a plan. Meet with all relevant stakeholders from design, OM, and engineering to kick off the migration process. Establish dedicated channels of communication for migration, and involve the broader team as needed.
 
-**Designers** who are upgrading from v9 to v10 can find comprehensive migration guidance in the [designers](designers) page of this guide. Topics include upgrading to the new Carbon v10 design kit, Sketch Cloud synchronization, integrating the elements of the new IBM Design Language into product designs, and more.
+#### Migrate in a dedicated branch.
 
-**Developers** who are upgrading their dev environment from v9 to v10 can find information on repo changes, links to comprehensive migration tables and guides in the Carbon repos, and more on the [developers](developers) page of this guide.
+This update includes substantial changes to layout and spacing. The Carbon team does not recommend upgrading piece-by-piece on the production build. Product teams should perform the migration first in a separate branch (or branches). This allows the creation of new design specs for any possible rough spots in alignment or sizing that may appear in the UI after upgrading.
 
-**Product teams** looking for guidance on migrating their existing v9 product to v10 will find useful information on all pages, and a [guide to migration strategy](developers#product-migration-strategy) to help guide them down a smooth and pain-free migration path for their product.
+#### First things first.
 
-## Rollout plan
+The Carbon team recommends tackling components, colors, type, spacing, and iconography first. These updates should be relatively straightforward. Aligning to the new grid will be more design-intensive, and can be tackled after the other elements.
 
-- **February 2019:** Beta release - current
-- **March 2019:** Production release
-
-It is up to individual teams to determine the most appropriate migration schedule for their products.  
-
-<!-- 
+<!--
 
 ### Adoption and activation sessions
 
@@ -54,7 +56,4 @@ It is up to individual teams to determine the most appropriate migration schedul
 
 To leave feedback for the Carbon team, make suggestions for improvements, or just ask a question, you can [open an issue](https://github.com/carbon-design-system/carbon-website/issues/new?template=feedback.md&labels=feedback&title=User+feedback+for+Migration+Overview+page) on GitHub.
 
-Internal IBM users can also subscribe to the [#carbon-design-system Slack channel](https://ibm-studios.slack.com/messages/C0M053VPT/details/), which is monitored by the Carbon team and the broader Carbon community.
-
-
-_Last updated: 21 March 2019_
+_Last updated: 29 March 2019_

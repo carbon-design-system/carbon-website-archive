@@ -27,6 +27,7 @@ class ComponentReactExample extends Component {
     name: PropTypes.string,
     component: PropTypes.string,
     variation: PropTypes.string,
+    hasAngularVersion: PropTypes.bool
   };
 
   componentDidMount() {
@@ -80,7 +81,7 @@ class ComponentReactExample extends Component {
   };
 
   render() {
-    const { name, component, variation } = this.props;
+    const { name, component, variation, hasAngularVersion } = this.props;
     const storybookMessage = {
       'MultiSelect-MultiSelect.Filterable': 'Check off Filterable in KNOBS tab',
       'MultiSelect-MultiSelect.Inline': 'Select inline in UI type in KNOBS tab',
@@ -93,24 +94,49 @@ class ComponentReactExample extends Component {
     const componentLink = `http://react.carbondesignsystem.com/?selectedKind=${component}&selectedStory=${storybookVariation ||
       'default'}`;
 
+    const getLibraryLinks = () => {
+      if (hasAngularVersion) {
+        return (
+          <>
+            <a
+              href="https://github.com/ibm/carbon-components-react"
+              target="_blank">
+              our React
+            </a>
+            {' '}and{' '}
+            <a
+              href="https://github.com/ibm/carbon-components-angular"
+              target="_blank">
+              Angular libraries
+            </a>
+          </>
+        );
+      }
+
+      return (
+        <a
+          href="https://github.com/ibm/carbon-components-react"
+          target="_blank">
+          our React library
+        </a>
+      )
+
+    };
+
     return (
       <>
         <div className="ibm--row">
           <div className="ibm--col-lg-12 ibm--offset-lg-4">
             <h2 className="page-h2">{name}</h2>
-            <p className="component-example__heading-label">
+            <p className="component-example__heading-label page-p">
               This component is currently only available in{' '}
-              <a
-                href="https://github.com/ibm/carbon-components-react"
-                target="_blank">
-                our React library
-              </a>
+              {getLibraryLinks()}
               .
             </p>
           </div>
         </div>
         <div className="component-variation ibm--row">
-          <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
+          <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--no-gutter">
             <div>
               <div className="svg--sprite" aria-hidden="true" />
               <div className="component-example__live">

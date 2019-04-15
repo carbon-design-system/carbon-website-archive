@@ -6,6 +6,10 @@ body {
   font-family: $font-family;
 }
 
+strong, b {
+  font-weight: carbon--font-weight('semibold');
+}
+
 .side-nav + div, //Issue #51 weird bug where sometimes on reload of the page the classnames on container div disapear
   .container {
   width: 100%;
@@ -19,6 +23,7 @@ body {
 .container .ibm--grid {
   margin: 0;
   max-width: rem(1584px);
+  overflow: hidden;
 }
 
 //---------------------------------------
@@ -32,6 +37,7 @@ body {
 
 .bx--header .bx--header__name {
   font-weight: 400;
+  white-space: nowrap;
 }
 
 .bx--header .bx--header__name span {
@@ -127,6 +133,10 @@ em {
 
   .bx--image-component > img {
     margin-bottom: 0;
+  }
+
+  .bx--image-component__caption {
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -254,6 +264,7 @@ img[src*='gif'] {
   padding: 0 1rem;
   display: inline-flex;
   align-items: center;
+  min-height: 0;
 
   svg {
     margin-left: rem(8px);

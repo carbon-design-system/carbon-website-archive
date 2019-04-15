@@ -42,7 +42,7 @@ class ComponentOverview extends React.Component {
     const componentList = require('../../data/components.json'); // eslint-disable-line
     return (
       <div className="ibm--row">
-        <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
+        <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--no-gutter">
           <ul className="component-overview">
             {Object.keys(componentList.components).map(component => {
               return this.renderItems(componentList.components[component]);

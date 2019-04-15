@@ -9,7 +9,7 @@ const tags = {
   updated: <Tag type="blue">Updated</Tag>,
   deprectated: <Tag type="red">Deprecated</Tag>,
   underConstruction: <Tag type="cool-gray">Under construction</Tag>,
-  notAvailable: <span className="component-status--unavailable">—</span>,
+  notAvailable: <span className="component-status--unavailable">–</span>,
 };
 
 class ComponentStatus extends React.Component {
@@ -58,7 +58,7 @@ class ComponentStatus extends React.Component {
         <div className="ibm--col-lg-12 ibm--offset-lg-4">
           <h2 className="page-h2">Current version: {vanillaVersion}</h2>
         </div>
-        <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
+        <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--no-gutter">
           <table className="page-table">
             <thead>
               <tr>
@@ -79,7 +79,7 @@ class ComponentStatus extends React.Component {
         <div className="ibm--col-lg-8 ibm--offset-lg-4 component-status__key">
           <h4 className="page-h4">Key</h4>
         </div>
-        <div className="ibm--col-lg-8 ibm--offset-lg-4 ibm--col-bleed">
+        <div className="ibm--col-lg-8 ibm--offset-lg-4 ibm--no-gutter">
           <table className="page-table">
             <thead>
               <tr>

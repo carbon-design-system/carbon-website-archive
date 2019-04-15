@@ -30,7 +30,7 @@ certbot certonly \
   --logs-dir logs \
   --manual \
   --preferred-challenges dns \
-  -d *.carbondesignsystem.com
+  -d '*.carbondesignsystem.com'
 ```
 
 The directory that you specify can be any directory, so feel free to change
@@ -46,7 +46,7 @@ certbot certonly \
   --config-dir ~/letsencrypt/config \
   --work-dir ~/letsencrypt/work \
   --logs-dir ~/letsencrypt/logs \
-  -d *.carbondesignsystem.com
+  -d '*.carbondesignsystem.com'
 ```
 
 After running this command, you should see an interactive prompt that asks a

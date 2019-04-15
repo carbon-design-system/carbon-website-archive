@@ -11,7 +11,7 @@ export default class Vimeo extends React.Component {
 
     return (
       <div className="gatsby-resp-iframe-wrapper">
-        <div class="embedVideo-container">
+        <div className="embedVideo-container">
           <iframe
             src={`https://player.vimeo.com/video/${vimeoId}`}
             width="640"
