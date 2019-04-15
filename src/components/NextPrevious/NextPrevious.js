@@ -23,7 +23,7 @@ export default class NextPrevious extends React.Component {
    * e.g.converts "Item Name" to "item-name"
    */
   titleToSlug = string => {
-    if (string) return string.toLowerCase().replace(' ', '-');
+    if (string) return string.toLowerCase().replace(/[ ]/g, '-');
   };
 
   /**

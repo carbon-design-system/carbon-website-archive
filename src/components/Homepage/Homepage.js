@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight24 } from '@carbon/icons-react';
 import { Link } from 'gatsby';
+import HomepageVideo from '../HomepageVideo/HomepageVideo';
 
 export class HomepageHeader extends React.Component {
   componentDidMount() {
@@ -38,7 +39,13 @@ export class HomepageHeader extends React.Component {
               <div className="bx--col-lg-4 bx--offset-lg-4">{homeTitle}</div>
             </div>
           </div>
-          <img src={bannerImg} alt="Carbon Design System banner image" />
+          <HomepageVideo>
+            <iframe
+              src="https://player.vimeo.com/video/322021187?muted=1&autoplay=1&loop=1&background=1"
+              width="100%"
+              height="100%"
+            />
+          </HomepageVideo>
         </section>
         <section className="homepage--callout">
           <div className="bx--grid">
