@@ -14,9 +14,9 @@ const compStyle = {
   padding: '5rem 0'
 }
 
-const RowDecorator = storyFn => <div className='ibm--row' style={style}>{storyFn()}</div>;
+const RowDecorator = storyFn => <div className='bx--row' style={style}>{storyFn()}</div>;
 
-const CompRowDecorator = storyFn => <div className='ibm--row' style={compStyle}>{storyFn()}</div>;
+const CompRowDecorator = storyFn => <div className='bx--row' style={compStyle}>{storyFn()}</div>;
 
 
 storiesOf('Aspect Ratio Tile', module)
@@ -24,7 +24,7 @@ storiesOf('Aspect Ratio Tile', module)
   .add(
     'light square',
     () => (
-      <div className='ibm--col-lg-4 ibm--col-md-4 ibm--offset-lg-4 ibm--no-gutter'>
+      <div className='bx--col-lg-4 bx--col-md-4 bx--offset-lg-4 bx--no-gutter'>
         <AspectRatioTile
           ratio='1:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
           hoverDark
@@ -45,7 +45,7 @@ storiesOf('Aspect Ratio Tile', module)
   ).add(
     'dark square',
     () => (
-      <div className='ibm--col-lg-4 ibm--col-md-4 ibm--offset-lg-4 ibm--no-gutter'>
+      <div className='bx--col-lg-4 bx--col-md-4 bx--offset-lg-4 bx--no-gutter'>
         <AspectRatioTile 
           ratio='1:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
           theme='dark'
@@ -66,7 +66,7 @@ storiesOf('Aspect Ratio Tile', module)
   ).add(
     'w/identity icon',
     () => (
-      <div className='ibm--col-lg-4 ibm--col-md-4 ibm--offset-lg-4 ibm--no-gutter'>
+      <div className='bx--col-lg-4 bx--col-md-4 bx--offset-lg-4 bx--no-gutter'>
         <AspectRatioTile
           ratio='1:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
           theme='dark'
@@ -87,7 +87,7 @@ storiesOf('Aspect Ratio Tile', module)
   ).add(
     'w/no action icon',
     () => (
-      <div className='ibm--col-lg-4 ibm--col-md-4 ibm--offset-lg-4 ibm--no-gutter'>
+      <div className='bx--col-lg-4 bx--col-md-4 bx--offset-lg-4 bx--no-gutter'>
         <AspectRatioTile
           ratio='1:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
           theme='dark'
@@ -106,7 +106,7 @@ storiesOf('Aspect Ratio Tile', module)
   ).add(
     'color bg double height',
     () => (
-      <div className='ibm--col-lg-4 ibm--col-md-4 ibm--offset-lg-4 ibm--no-gutter'>
+      <div className='bx--col-lg-4 bx--col-md-4 bx--offset-lg-4 bx--no-gutter'>
         <AspectRatioTile
           ratio='1:2' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
           theme='dark'
@@ -129,7 +129,7 @@ storiesOf('Aspect Ratio Tile', module)
   ).add(
     'w/image and text on hover',
     () => (
-      <div className='ibm--col-lg-4 ibm--col-md-4 ibm--offset-lg-4 ibm--no-gutter'>
+      <div className='bx--col-lg-4 bx--col-md-4 bx--offset-lg-4 bx--no-gutter'>
         <AspectRatioTile
           ratio='1:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
           // marginTop='50%'
@@ -153,7 +153,7 @@ storiesOf('Aspect Ratio Tile', module)
   ).add(
     'w/bg image and nested tile',
     () => (
-      <div className='ibm--col-lg-8 ibm--col-md-8 ibm--offset-lg-4 ibm--no-gutter'>
+      <div className='bx--col-lg-8 bx--col-md-8 bx--offset-lg-4 bx--no-gutter'>
         <AspectRatioTile
           ratio='1:1'
           image='images/product-gallery.jpg'
@@ -179,7 +179,7 @@ storiesOf('Aspect Ratio Tile', module)
   ).add(
     'w/bg carousel and nested tile',
     () => (
-      <div className='ibm--col-lg-12 ibm--col-md-8 ibm--offset-lg-4 ibm--no-gutter'>
+      <div className='bx--col-lg-12 bx--col-md-8 bx--offset-lg-4 bx--no-gutter'>
         <AspectRatioTile
           ratio='16:9'
           image='images/landing-photography-gallery-2.jpg'
@@ -214,7 +214,7 @@ storiesOf('Aspect Ratio Tile', module)
     'DL homepage mockup section 1',
     () => (
       <>
-        <div className='ibm--col-lg-4 ibm--col-md-4 ibm--offset-lg-4 ibm--no-gutter'>
+        <div className='bx--col-lg-4 bx--col-md-4 bx--offset-lg-4 bx--no-gutter'>
           <AspectRatioTile
             ratio='1:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
             hoverDark
@@ -237,7 +237,7 @@ storiesOf('Aspect Ratio Tile', module)
             target='_blank'
           />
         </div>          
-        <div className='ibm--col-lg-4 ibm--col-md-4 ibm--no-gutter'>
+        <div className='bx--col-lg-4 bx--col-md-4 bx--no-gutter'>
           <AspectRatioTile 
             ratio='1:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
             theme='dark'
@@ -259,7 +259,7 @@ storiesOf('Aspect Ratio Tile', module)
             target='_blank'
           />
         </div>  
-        <div className='ibm--col-lg-4 ibm--col-md-4 ibm--no-gutter'>
+        <div className='bx--col-lg-4 bx--col-md-4 bx--no-gutter'>
           <AspectRatioTile
             ratio='1:2' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
             theme='dark'
@@ -273,7 +273,7 @@ storiesOf('Aspect Ratio Tile', module)
             target='_blank'
           />
         </div>
-        <div className='ibm--col-lg-4 ibm--col-md-4 ibm--no-gutter ibm--offset-lg-4'>
+        <div className='bx--col-lg-4 bx--col-md-4 bx--no-gutter bx--offset-lg-4'>
           <AspectRatioTile
             ratio='2:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
             theme='dark' 
@@ -297,7 +297,7 @@ storiesOf('Aspect Ratio Tile', module)
             target='_blank'
           />
         </div>
-        <div className='ibm--col-lg-8 ibm--col-md-8 ibm--no-gutter'>
+        <div className='bx--col-lg-8 bx--col-md-8 bx--no-gutter'>
           <AspectRatioTile
             ratio='1:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
             theme='dark'
@@ -310,7 +310,7 @@ storiesOf('Aspect Ratio Tile', module)
             target='_blank'
           />
         </div>
-        <div className='ibm--col-lg-4 ibm--col-md-4 ibm--no-gutter ibm--offset-lg-4'>
+        <div className='bx--col-lg-4 bx--col-md-4 bx--no-gutter bx--offset-lg-4'>
           <AspectRatioTile
             ratio='1:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
             theme='dark'  
@@ -321,7 +321,7 @@ storiesOf('Aspect Ratio Tile', module)
             target='_blank'
           />
         </div>
-        <div className='ibm--col-lg-4 ibm--col-md-4 ibm--no-gutter'>
+        <div className='bx--col-lg-4 bx--col-md-4 bx--no-gutter'>
           <AspectRatioTile
             ratio='1:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
             theme='dark'
@@ -343,7 +343,7 @@ storiesOf('Aspect Ratio Tile', module)
     'DL homepage mockup section 2',
     () => (
       <>
-        <div className='ibm--col-lg-4 ibm--col-md-4 ibm--offset-lg-4 ibm--no-gutter'>
+        <div className='bx--col-lg-4 bx--col-md-4 bx--offset-lg-4 bx--no-gutter'>
           <AspectRatioTile
             ratio='1:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
             theme='dark'
@@ -362,7 +362,7 @@ storiesOf('Aspect Ratio Tile', module)
             target='_blank'
           />
         </div>
-        <div className='ibm--col-lg-8 ibm--col-md-8 ibm--no-gutter'>
+        <div className='bx--col-lg-8 bx--col-md-8 bx--no-gutter'>
           <AspectRatioTile
             ratio='1:1'
             image='images/product-gallery.jpg'
@@ -390,7 +390,7 @@ storiesOf('Aspect Ratio Tile', module)
     'DL homepage mockup section 3',
     () => (
       <>
-        <div className='ibm--col-lg-12 ibm--col-md-8 ibm--no-gutter ibm--offset-lg-4'>
+        <div className='bx--col-lg-12 bx--col-md-8 bx--no-gutter bx--offset-lg-4'>
           <AspectRatioTile
             ratio='16:9'
             image='images/landing-photography-gallery-2.jpg'
@@ -411,7 +411,7 @@ storiesOf('Aspect Ratio Tile', module)
             />
           </AspectRatioTile>  
         </div>
-        <div className='ibm--col-lg-8 ibm--col-md-8 ibm--no-gutter ibm--offset-lg-4'>
+        <div className='bx--col-lg-8 bx--col-md-8 bx--no-gutter bx--offset-lg-4'>
           <AspectRatioTile
             ratio='1:1'
             image='images/landing-gallery-watson-duo-phone.jpg'
@@ -428,7 +428,7 @@ storiesOf('Aspect Ratio Tile', module)
             />
           </AspectRatioTile>
         </div>
-        <div className='ibm--col-lg-4 ibm--col-md-4 ibm--no-gutter'>
+        <div className='bx--col-lg-4 bx--col-md-4 bx--no-gutter'>
           <AspectRatioTile  
             ratio='1:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1       
             theme='dark'
@@ -439,7 +439,7 @@ storiesOf('Aspect Ratio Tile', module)
             target='_blank'
           />
         </div>
-        <div className='ibm--col-lg-4 ibm--col-md-4 ibm--no-gutter ibm--offset-lg-4'>
+        <div className='bx--col-lg-4 bx--col-md-4 bx--no-gutter bx--offset-lg-4'>
           <AspectRatioTile
             ratio='1:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
             theme='dark'
@@ -451,7 +451,7 @@ storiesOf('Aspect Ratio Tile', module)
             target='_blank'
           />
         </div>
-        <div className='ibm--col-lg-4 ibm--col-md-4 ibm--no-gutter'>
+        <div className='bx--col-lg-4 bx--col-md-4 bx--no-gutter'>
           <AspectRatioTile
             ratio='1:1' // choices are 1:1, 2:1, 1:2, 3:1, 4:1, 6:1, 3:2, 4:3 and 16:9. If omitted, defaults to 2:1
             theme='dark'
