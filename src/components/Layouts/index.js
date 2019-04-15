@@ -21,6 +21,7 @@ import timestamp from 'raw-loader!../../../build-timestamp';
 import '../../styles/index.scss';
 
 import { MDXProvider } from '@mdx-js/tag';
+import throttle from 'lodash.throttle';
 
 class Layout extends React.Component {
   constructor() {
@@ -176,20 +177,19 @@ class Layout extends React.Component {
   };
 
   onScroll = () => {
-    console.log('scrolling!');
-
     // are we scrolling?
     // which direction?
     // how far away from last saved position, and which direction?
     // toggle header visible state if over max distance in particular direction
 
     this.currentScrollY = window.pageYOffset;
-    if (this.currentScrollY < this.lastKnownScrollY) {
+    if (this.currentScrollY < this.lastKnownScrollY - 80) {
       this.showHeader();
-    } else if (this.currentScrollY > this.lastKnownScrollY) {
+      this.lastKnownScrollY = this.currentScrollY;
+    } else if (this.currentScrollY > this.lastKnownScrollY + 80) {
       this.hideHeader();
+      this.lastKnownScrollY = this.currentScrollY;
     }
-    this.lastKnownScrollY = this.currentScrollY;
   };
 
   // TODO: can we componetize this to remove side effects and set the visible state in a declarative fashion
@@ -213,11 +213,9 @@ class Layout extends React.Component {
   };
 
   addStickyTabs = () => {
-    console.log(window.pageYOffset);
     this.stickyWrapper = document.getElementsByTagName('body')[0];
-    console.log(this.stickyWrapper);
     // save ref to body that gets the tag?
-    document.addEventListener('scroll', this.onScroll, false);
+    document.addEventListener('scroll', throttle(this.onScroll, 200), false);
   };
 
   render() {

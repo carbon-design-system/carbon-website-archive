@@ -5,6 +5,7 @@
   position: relative;
   // border-top: 1px solid rgba($ui-02, 0.25);
   box-shadow: 0 -1px 0 rgba($ui-02, 0.25);
+  z-index: 10001;
 }
 
 .page-tabs__list {

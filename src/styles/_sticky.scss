@@ -9,12 +9,12 @@
 .website-alert,
 .page-header,
 .#{$prefix}--side-nav {
-  transition: top $carbon--ease-out $transition--expansion;
+  transition: transform $carbon--ease-in $transition--expansion;
 }
 .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + div,
 .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + .container,
 .website-alert + .#{$prefix}--header ~ .#{$prefix}--website-switcher {
-  transition: margin-top $carbon--ease-out $transition--expansion;
+  transition: transform $carbon--ease-out $transition--expansion;
 }
 
 .page-header {
@@ -35,43 +35,64 @@ website global header hidden
 
 .website-header-hidden {
   // transitions for hiding the global website header
+  .page-header,
+  .#{prefix}--header__global,
+  .#{prefix}--header__name,
+  .#{$prefix}--header,
+  .#{$prefix}--side-nav,
+  .website-alert,
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + div,
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + .container,
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--website-switcher {
+    transition: transform $carbon--ease-in $transition--expansion;
+  }
+
+  // page header position when hidden
+  .page-header,
   .#{prefix}--header__global,
   .#{prefix}--header__name,
   .#{$prefix}--header,
   .website-alert,
-  .page-header,
-  .#{$prefix}--side-nav {
-    transition: top $carbon--ease-in $transition--expansion;
-  }
-  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + div,
-  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + .container,
-  .website-alert + .#{$prefix}--header ~ .#{$prefix}--website-switcher {
-    transition: margin-top $carbon--ease-in $transition--expansion;
-  }
-
-  .#{prefix}--header__global,
-  .#{prefix}--header__name,
-  .website-alert + .#{$prefix}--header {
-    top: -3rem;
-  }
-
-  .page-header,
+  .website-alert + .#{$prefix}--header,
   .website-alert + .#{$prefix}--header ~ div.container .page-header {
-    top: -12rem;
+    transform: translateY(-5.5rem);
   }
 
-  .website-alert {
-    top: -5.5rem;
+  // side nav position when header and it is hidden
+  .#{$prefix}--side-nav,
+  .#{$prefix}--header ~ .#{$prefix}--side-nav,
+  .#{$prefix}--header ~ .#{$prefix}--side-nav + div,
+  .#{$prefix}--header ~ .#{$prefix}--side-nav + .container {
+    transform: translateY(-(rem(256px)), -5.5rem);
   }
 
-  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav {
-    top: 0;
-  }
-
+  // side nav position when header and it is hidden,
+  // with website alert present
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav,
   .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + div,
-  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + .container,
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + .container {
+    transform: translateY(-16rem, -5.5rem);
+  }
+
+  // site switcher position when header and it is hidden
   .website-alert + .#{$prefix}--header ~ .#{$prefix}--website-switcher {
-    margin-top: 0;
+    transform: translateY(-16rem, -5.5rem);
+  }
+
+  // side nav position when header and it is hidden,
+  // with website alert present
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav,
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + div,
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + .container {
+    transform: translateY(-16rem, -5.5rem);
+  }
+
+  .#{$prefix}--website-switcher--expanded {
+    transform: translate(0, -5.5rem);
+  }
+
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--website-switcher {
+    transform: translate(16rem, -8.5rem);
   }
 
   .website-alert
