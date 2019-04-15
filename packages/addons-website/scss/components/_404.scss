@@ -1,3 +1,5 @@
+@import '../prefix';
+
 .page-content.fourohfour {
   padding-top: rem(32px);
   padding-bottom: 0;
@@ -10,7 +12,7 @@
   }
 }
 
-.anchor-links.anchor-links--small.fourohfour-body__anchor-links .page-ul {
+.#{$prefix}--anchor-links.#{$prefix}--anchor-links--small.fourohfour-body__anchor-links .page-ul {
   margin-top: rem(24px);
   margin-bottom: rem(32px);
 
@@ -43,12 +45,12 @@
 
 .fourohfour-body__heading,
 .fourohfour-body__text,
-.fourohfour-body__anchor-links.anchor-links--small .page-ul > li a,
-.fourohfour-body__anchor-links.anchor-links--small .page-ul > li a::before {
+.fourohfour-body__anchor-links.#{$prefix}--anchor-links--small .page-ul > li a,
+.fourohfour-body__anchor-links.#{$prefix}--anchor-links--small .page-ul > li a::before {
   color: $carbon--gray-10;
 }
 
-.fourohfour-body__anchor-links.anchor-links--small .page-ul > li a:hover {
+.fourohfour-body__anchor-links.#{$prefix}--anchor-links--small .page-ul > li a:hover {
   color: $carbon--blue-40;
 
   &::before {
