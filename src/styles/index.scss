@@ -16,10 +16,9 @@
 
 $feature-flags: (
   ui-shell: true,
+  grid-columns-16: true,
 );
 
-@import '@carbon/layout/scss/layout.scss';
-@import '@carbon/grid/scss/grid.scss';
 @import 'carbon-components/scss/globals/scss/styles.scss';
 
 $font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
