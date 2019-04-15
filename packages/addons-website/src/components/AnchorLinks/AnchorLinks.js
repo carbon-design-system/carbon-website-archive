@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-
+import { settings } from 'carbon-components';
 const { prefix } = settings;
 
 export default class AnchorLinks extends React.Component {
