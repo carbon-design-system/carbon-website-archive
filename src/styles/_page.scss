@@ -6,14 +6,12 @@ body {
   font-family: $font-family;
 }
 
-a,
-a:visited,
-a:hover {
-  color: $interactive-01;
-}
-
 strong, b {
   font-weight: carbon--font-weight('semibold');
+}
+
+.page-content .bx--link {
+  font-size: 1rem;
 }
 
 .side-nav + div, //Issue #51 weird bug where sometimes on reload of the page the classnames on container div disapear

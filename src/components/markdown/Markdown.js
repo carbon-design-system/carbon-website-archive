@@ -173,3 +173,11 @@ export class p extends React.Component {
     );
   }
 }
+
+export class a extends React.Component { 
+  render() {
+    return (
+      <a className="bx--link" href={this.props.href}>{this.props.children}</a>
+    );
+  }
+}
