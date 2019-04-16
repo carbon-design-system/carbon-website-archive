@@ -2,19 +2,17 @@
 // 15rem page header height
 // 3rem page tabs height
 
-// transitions for going back to "default" (visible) state
+// transitions for going back to default state
 .#{prefix}--header__global,
 .#{prefix}--header__name,
 .#{$prefix}--header,
 .website-alert,
 .page-header,
-.#{$prefix}--side-nav {
-  transition: transform $carbon--ease-in $transition--expansion;
-}
-.website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + div,
-.website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + .container,
+.#{$prefix}--side-nav,
+.#{$prefix}--website-switcher,
+.website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav,
 .website-alert + .#{$prefix}--header ~ .#{$prefix}--website-switcher {
-  transition: transform $carbon--ease-out $transition--expansion;
+  transition: transform $carbon--ease-in $transition--expansion;
 }
 
 .page-header {
@@ -58,25 +56,29 @@ website global header hidden
     transform: translateY(-5.5rem);
   }
 
-  // side nav position when header and it is hidden
+  // side nav & app switcher states to capture:
+  // - visible when header hidden
+  // - visible when header hidden, alert present
+  // - hidden when header hidden
+  // - hidden when header hidden, alert present
+
+  // side nav visible, header hidden, website alert not present
   .#{$prefix}--side-nav,
-  .#{$prefix}--header ~ .#{$prefix}--side-nav,
-  .#{$prefix}--header ~ .#{$prefix}--side-nav + div,
-  .#{$prefix}--header ~ .#{$prefix}--side-nav + .container {
-    transform: translateY(-(rem(256px)), -5.5rem);
+  .#{$prefix}--header ~ .#{$prefix}--side-nav {
+    transform: translate(0, -3rem);
   }
 
-  // side nav position when header and it is hidden,
-  // with website alert present
-  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav,
-  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + div,
-  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + .container {
-    transform: translateY(-16rem, -5.5rem);
+  // side nav visible, header hidden, website alert present
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav {
+    // .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + div,
+    // .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + .container {
+    // transform: translate(-(rem(256px)), -5.5rem);
+    transform: translate(0, -5.5rem);
   }
 
   // site switcher position when header and it is hidden
   .website-alert + .#{$prefix}--header ~ .#{$prefix}--website-switcher {
-    transform: translateY(-16rem, -5.5rem);
+    transform: translateY(16rem, -5.5rem);
   }
 
   // side nav position when header and it is hidden,
@@ -103,3 +105,7 @@ website global header hidden
     top: 104px;
   }
 }
+
+// .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav {
+// .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + div,
+// .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + .container {
