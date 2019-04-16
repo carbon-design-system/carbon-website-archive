@@ -74,10 +74,10 @@ class ImageComponent extends Component {
       zoom,
     } = this.props;
     const columnClasses = classnames({
-      'bx--col-lg-12 bx--offset-lg-4': cols == 12,
-      'bx--col-lg-8 bx--offset-lg-4': cols == 8,
-      'bx--col-lg-6 bx--col-md-6 bx--offset-lg-4': cols == 6,
-      'bx--col-lg-4 bx--offset-lg-4': cols == 4,
+      [`${prefix}--col-lg-12 ${prefix}--offset-lg-4`]: cols == 12,
+      [`${prefix}--col-lg-8 ${prefix}--offset-lg-4`]: cols == 8,
+      [`${prefix}--col-lg-6 ${prefix}--col-md-6 ${prefix}--offset-lg-4`]: cols == 6,
+      [`${prefix}--col-lg-4 ${prefix}--offset-lg-4`]: cols == 4,
     });
     const imgComponentClasses = classnames(className, {
       [`${prefix}--image-component`] : true,
@@ -112,7 +112,7 @@ class ImageComponent extends Component {
         )
 
     return (
-      <div className={`${prefix}--image-component__container bx--row`} onClick={this.handleImageClick} >
+      <div className={`${prefix}--image-component__container ${prefix}--row`} onClick={this.handleImageClick} >
         <div className={columnClasses}>
           <div className={imgWrapperClasses}> 
             <div className={imgComponentClasses}>{children}</div>
@@ -122,7 +122,7 @@ class ImageComponent extends Component {
           </div>
         </div>
         {caption && (
-          <div className="bx--col-lg-4 bx--col-md-4 bx--offset-lg-4">
+          <div className={`${prefix}--col-lg-4 ${prefix}--col-md-4 ${prefix}--offset-lg-4`}>
             <p className={`${prefix}--image-component__caption`}>{caption}</p>
           </div>
         )}

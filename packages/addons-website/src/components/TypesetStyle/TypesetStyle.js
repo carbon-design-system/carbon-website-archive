@@ -771,7 +771,7 @@ class TypesetStyle extends React.Component {
     const {navBar, banner, secondary, top, breakpointControls, title, typesets } = this.props
 
     return (
-      <div className={`${prefix}--typeset-style-container bx--offset-lg-4`}>
+      <div className={`${prefix}--typeset-style-container ${prefix}--offset-lg-4`}>
         <StickyContainer navBar={navBar || true} banner={banner || true} secondary={secondary || false} top={top || null}>
           { breakpointControls && (
             <>
@@ -779,9 +779,9 @@ class TypesetStyle extends React.Component {
               <div
                 className={`${prefix}--typeset-style-controls-sticky ${prefix}--row`}>
                 <div
-                  className={`${prefix}--typeset-style-breakpoint-controls bx--col-md-5 bx--col-lg-8`}>
+                  className={`${prefix}--typeset-style-breakpoint-controls ${prefix}--col-md-5 ${prefix}--col-lg-8`}>
                   <span
-                    className={`${prefix}--type-body-long-01 ibm-padding--horizontal`}
+                    className={`${prefix}--type-body-long-01 ${prefix}--padding--horizontal`}
                     style={{ marginBottom: 0 }}>
                     Breakpoints
                   </span>
@@ -791,7 +791,7 @@ class TypesetStyle extends React.Component {
                   </div>
                 </div>
                 <div
-                  className={`${prefix}--typeset-style-screen-controls ibm-padding--horizontal bx--col-md-3 bx--col-lg-8`}>
+                  className={`${prefix}--typeset-style-screen-controls ${prefix}--padding--horizontal ${prefix}--col-md-3 ${prefix}--col-lg-8`}>
                   <span
                     className={`${prefix}--type-body-long-01 ${prefix}--typeset-style-screen-width-label`}
                     style={{ marginBottom: 0, whiteSpace: 'nowrap' }}>
@@ -816,7 +816,7 @@ class TypesetStyle extends React.Component {
           <div className={`${prefix}--typeset-style-title-shiv ${prefix}--row`}></div>
           <div
             className={`${prefix}--typeset-style-group-title-container ${prefix}--row`}>
-            <span className={`${prefix}--type-heading-02 ibm-type-semibold`}>
+            <span className={`${prefix}--type-heading-02 ${prefix}--type-semibold`}>
               {title}
             </span>
           </div>

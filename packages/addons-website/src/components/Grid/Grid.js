@@ -2,9 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
+import { settings } from 'carbon-components';
+const prefix = settings.prefix;
+
 export const Grid = ({ children, className }) => {
   return (
-    <div className={classnames('bx--grid', className)}>
+    <div className={classnames([`${prefix}--grid`], className)}>
       {children}
     </div>
   );
@@ -21,7 +24,7 @@ Grid.propTypes = {
 
 export const Row = ({ children, className }) => {
   return (
-    <div className={classnames('bx--row', className)}>
+    <div className={classnames([`${prefix}--row`], className)}>
       {children}
     </div>
   );
@@ -53,18 +56,18 @@ export const Column = ({
   className,
 }) => {
   const colClasses = classnames({
-    'bx--no-gutter-sm': noGutterSm,
-    'bx--no-gutter-md': noGutterMd,
-    'bx--no-gutter-lg': noGutterLg,
-    'bx--no-gutter-sm--left': noGutterSmLeft,
-    'bx--no-gutter-md--left': noGutterMdLeft,
-    'bx--no-gutter-lg--left': noGutterLgLeft,
-    [`bx--offset-sm-${offsetSm}`]: offsetSm,
-    [`bx--offset-md-${offsetMd}`]: offsetMd,
-    [`bx--offset-lg-${offsetLg}`]: offsetLg,
-    [`bx--col-lg-${colLg}`]: colLg,
-    [`bx--col-md-${colMd}`]: colMd,
-    [`bx--col-sm-${colSm}`]: colSm,
+    [`${prefix}--no-gutter-sm`]: noGutterSm,
+    [`${prefix}--no-gutter-md`]: noGutterMd,
+    [`${prefix}--no-gutter-lg`]: noGutterLg,
+    [`${prefix}--no-gutter-sm--left`]: noGutterSmLeft,
+    [`${prefix}--no-gutter-md--left`]: noGutterMdLeft,
+    [`${prefix}--no-gutter-lg--left`]: noGutterLgLeft,
+    [`${prefix}--offset-sm-${offsetSm}`]: offsetSm,
+    [`${prefix}--offset-md-${offsetMd}`]: offsetMd,
+    [`${prefix}--offset-lg-${offsetLg}`]: offsetLg,
+    [`${prefix}--col-lg-${colLg}`]: colLg,
+    [`${prefix}--col-md-${colMd}`]: colMd,
+    [`${prefix}--col-sm-${colSm}`]: colSm,
     [className]: className,
   });
 
