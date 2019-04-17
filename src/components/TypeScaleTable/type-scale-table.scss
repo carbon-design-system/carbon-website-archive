@@ -23,11 +23,12 @@ $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
     height: auto;
     color: $text-01;
     vertical-align: top;
+    outline: 1px solid gray;
   }
 
   table tbody td:first-child {
     font-size: 0.75rem;
-    padding: 0 2rem .5rem 0;
+    padding: 2px 2rem .5rem 0;
   }
 
   @for $i from 1 through length($type-scale) {
@@ -36,7 +37,7 @@ $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
       white-space: nowrap;
       width: 100%;
       line-height: 75%;
-      padding-bottom: 1rem;
+      padding: 2px 0 1rem 0;
     }
   }
 }
