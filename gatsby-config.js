@@ -24,7 +24,7 @@ module.exports = {
         import { AnchorLinks } from '@carbon/addons-website';
         import { Row, Column } from '@carbon/addons-website';
         import { ImageComponent } from '@carbon/addons-website';
-        import { DoDontExample } from from '@carbon/addons-website';
+        import { DoDontExample } from '@carbon/addons-website';
         import ClickableTile from '${__dirname}/src/components/ClickableTile';
         import FeatureTile from '${__dirname}/src/components/FeatureTile';
         import ColorBlock from '${__dirname}/src/components/ColorBlock';
