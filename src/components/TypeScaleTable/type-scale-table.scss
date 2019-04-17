@@ -2,19 +2,18 @@ $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
   2.25rem, 2.625rem, 3rem, 3.375rem, 3.75rem, 4.25rem, 4.75rem, 5.25rem, 5.75rem;
 
 .typography-table {
-  overflow-x: scroll;
-  background: $carbon--white-0;
-  border-bottom: rem(1px) solid $carbon--gray-20;
+  background: $ui-02;
+  border-bottom: rem(1px) solid $ui-03;
 
   table tbody tr {
     border: none;
   }
 
   table thead th {
-    border: none;
-    color: $carbon--gray-50;
     @include carbon--type-style('caption-01');
-    padding: 1rem;
+    border: none;
+    color: $text-03;
+    padding: 1rem 0;
     text-align: left;
   }
 
@@ -22,16 +21,22 @@ $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
     white-space: nowrap;
     border: none;
     height: auto;
-    padding: 0 1rem;
+    color: $text-01;
+    vertical-align: top;
+  }
+
+  table tbody td:first-child {
     font-size: 0.75rem;
+    padding: 0 2rem .5rem 0;
   }
 
   @for $i from 1 through length($type-scale) {
     table tbody tr:nth-child(#{$i}) td:nth-child(2) {
       font-size: nth($type-scale, $i);
       white-space: nowrap;
-      color: $carbon--gray-80;
-      width: 50%;
+      width: 100%;
+      line-height: 75%;
+      padding-bottom: 1rem;
     }
   }
 }
