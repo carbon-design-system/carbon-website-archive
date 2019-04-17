@@ -2,16 +2,10 @@
 
 .#{$prefix}--typeset-example-container {
   margin-top: 1rem;
-  &:first-of-type {
-    margin-top: 0;
-  }
 }
 
 .#{$prefix}--typeset-example {
   margin-top: 1rem;
-  &:first-of-type {
-    margin-top: 0;
-  }
 }
 
 .#{$prefix}--typeset-example-row {

@@ -144,9 +144,9 @@ const TypesetExample = props => {
                 </p>
               </div>
               <div className={`${prefix}--typeset-example-specs`}>
-                <span className={`${prefix}--type-body-short-01`}>
-                  <span className={`${prefix}--type-semibold`}>
-                    {type.name}{' '}
+                <span className={`${prefix}--type-caption-01`}>
+                  <span className={`${prefix}--type-body-short-01`}>
+                    <strong>{type.name} </strong>
                   </span>
                   <br />
                   Type: {displaySpecs['font']}

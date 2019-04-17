@@ -18,6 +18,19 @@
   }
 }
 
+.#{$prefix}--typeset-style-container .page-h4 {
+  margin-top: 3rem;
+  display: inline-block;
+
+  &:before {
+    display: none;
+  }
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
 .#{$prefix}--typeset-style-button {
   background-color: transparent;
   border: none;

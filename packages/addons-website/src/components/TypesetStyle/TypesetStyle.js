@@ -123,7 +123,7 @@ const typeScale = {
       'letter-spacing': 0,
     },
   },
-  'heading-03': {
+  'productive-heading-03': {
     sm: {
       step: 3,
       font: 'IBM Plex Sans',
@@ -583,6 +583,32 @@ const typeSets = {
       name: 'helper-text-01',
     },
   ],
+  supportingStyles: [
+    {
+      description:
+        'This is for inline code snippets and smaller code elements.',
+      version: 'mono',
+      key: 'code-01',
+      name: 'code-01',
+    },
+    {
+      description: 'This is for large code snippets and larger code elements.',
+      version: 'mono',
+      key: 'code-02',
+      name: 'code-02',
+    },
+    {
+      description: 'This is for field labels in components and error messages.',
+      key: 'label-01',
+      name: 'label-01',
+    },
+    {
+      description:
+        'This is for explanatory helper text that appears below a field title within a component.',
+      key: 'helper-text-01',
+      name: 'helper-text-01',
+    },
+  ],
   body: [
     {
       description:
@@ -592,15 +618,15 @@ const typeSets = {
     },
     {
       description:
-        'This is for short paragraphs with no more than four lines and is commonly used in the expressive type theme for layouts.',
-      key: 'body-short-02',
-      name: 'body-short-02',
-    },
-    {
-      description:
         'This is commonly used in both the expressive and the productive type theme layouts for long paragraphs with more than four lines. It is a good size for comfortable, long-form reading. Use this for longer body copy in components such as accordion or structured list. Always left-align this type; never center it.',
       key: 'body-long-01',
       name: 'body-long-01',
+    },
+    {
+      description:
+        'This is for short paragraphs with no more than four lines and is commonly used in the expressive type theme for layouts.',
+      key: 'body-short-02',
+      name: 'body-short-02',
     },
     {
       description:
@@ -609,7 +635,7 @@ const typeSets = {
       name: 'body-long-02',
     },
   ],
-  fixedHeading: [
+  fixedHeadings: [
     {
       description: 'This is for component and layout headings.',
       key: 'heading-01',
@@ -622,8 +648,8 @@ const typeSets = {
     },
     {
       description: 'This is for component and layout headings.',
-      key: 'heading-03',
-      name: 'heading-03',
+      key: 'productive-heading-03',
+      name: 'productive-heading-03',
     },
     {
       description: 'This is for layout headings.',
@@ -636,7 +662,7 @@ const typeSets = {
       name: 'productive-heading-05',
     },
   ],
-  fixedHeadingExpressive: [
+  fixedHeading: [
     {
       description: 'This is for component and layout headings.',
       key: 'heading-01',
@@ -660,7 +686,7 @@ const typeSets = {
       name: 'expressive-heading-05',
     },
   ],
-  fluidParagraphQuotation: [
+  FluidParagraphsAndQuotes: [
     {
       description: 'Paragraph',
       key: 'expressive-paragraph-01',
@@ -829,7 +855,9 @@ class TypesetStyle extends React.Component {
             .split(',')
             .map((typeset, i) => (
               <>
-                <span className={`${prefix}--type-heading-01`}>{typeset}</span>
+                <h4 className="page-h4">
+                  {typeset.replace(/([a-z])([A-Z])/g, '$1 $2').toLowerCase()}
+                </h4>
                 <TypesetExample
                   key={i}
                   simulatedScreenWidth={this.state.simulatedScreenWidth}
