@@ -6,7 +6,8 @@ body {
   font-family: $font-family;
 }
 
-strong, b {
+strong,
+b {
   font-weight: carbon--font-weight('semibold');
 }
 
@@ -169,7 +170,7 @@ em {
   }
 }
 .website-tabs .gatsby-resp-iframe-wrapper,
-.example .gatsby-resp-iframe-wrapper {
+.bx--example .gatsby-resp-iframe-wrapper {
   @include carbon--breakpoint('lg') {
     margin-left: 0;
     padding-bottom: 56.543% !important;
@@ -177,7 +178,7 @@ em {
 }
 
 .ibm--row .gatsby-resp-iframe-wrapper,
-.example__content .gatsby-resp-iframe-wrapper {
+.bx--example__content .gatsby-resp-iframe-wrapper {
   margin-left: 0 !important;
 }
 
