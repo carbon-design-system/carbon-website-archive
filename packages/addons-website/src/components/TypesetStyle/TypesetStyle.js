@@ -556,30 +556,7 @@ const typeScale = {
 };
 
 const typeSets = {
-  caption: [
-    {
-      description:
-        'This is for captions or legal content in a layout — not for body copy.',
-      key: 'caption-01',
-      name: 'caption-01',
-    },
-  ],
-  label: [
-    {
-      description: 'This is for field labels in components and error messages',
-      key: 'label-01',
-      name: 'label-01',
-    },
-  ],
-  helperText: [
-    {
-      description:
-        'This is for explanatory helper text that appears below a field title within a component.',
-      key: 'helper-text-01',
-      name: 'helper-text-01',
-    },
-  ],
-  code: [
+  supportingStyle: [
     {
       description:
         'This is for inline code snippets and smaller code elements.',
@@ -592,6 +569,18 @@ const typeSets = {
       version: 'mono',
       key: 'code-02',
       name: 'code-02',
+    },
+    {
+      description:
+        'This is for captions or legal content in a layout — not for body copy.',
+      key: 'caption-01',
+      name: 'caption-01',
+    },
+    {
+      description:
+        'This is for explanatory helper text that appears below a field title within a component.',
+      key: 'helper-text-01',
+      name: 'helper-text-01',
     },
   ],
   body: [
@@ -620,7 +609,7 @@ const typeSets = {
       name: 'body-long-02',
     },
   ],
-  heading: [
+  fixedHeading: [
     {
       description: 'This is for component and layout headings.',
       key: 'heading-01',
@@ -636,8 +625,6 @@ const typeSets = {
       key: 'heading-03',
       name: 'heading-03',
     },
-  ],
-  productHeading: [
     {
       description: 'This is for layout headings.',
       key: 'productive-heading-04',
@@ -647,6 +634,18 @@ const typeSets = {
       description: 'This is for layout headings.',
       key: 'productive-heading-05',
       name: 'productive-heading-05',
+    },
+  ],
+  fixedHeadingExpressive: [
+    {
+      description: 'This is for component and layout headings.',
+      key: 'heading-01',
+      name: 'heading-01',
+    },
+    {
+      description: 'This is for component and layout headings.',
+      key: 'heading-02',
+      name: 'heading-02',
     },
   ],
   fluidHeading: [
@@ -661,14 +660,12 @@ const typeSets = {
       name: 'expressive-heading-05',
     },
   ],
-  fluidParagraph: [
+  fluidParagraphQuotation: [
     {
       description: 'Paragraph',
       key: 'expressive-paragraph-01',
       name: 'expressive-paragraph-01',
     },
-  ],
-  fluidQuotation: [
     {
       description: '“Quote.”',
       key: 'quotation-01',
@@ -825,27 +822,22 @@ class TypesetStyle extends React.Component {
               </div>
             </>
           )}
-
-          <div
-            className={`${prefix}--typeset-style-title-shiv ${prefix}--row`}
-          />
-          <div
-            className={`${prefix}--typeset-style-group-title-container ${prefix}--row`}>
-            <span className={`${prefix}--type-heading-01`}>{title}</span>
-          </div>
         </StickyContainer>
         <div>
           {typesets
             .replace(', ', ',')
             .split(',')
             .map((typeset, i) => (
-              <TypesetExample
-                key={i}
-                simulatedScreenWidth={this.state.simulatedScreenWidth}
-                name={typeset}
-                typeSet={typeSets[typeset]}
-                typeScale={typeScale}
-              />
+              <>
+                <span className={`${prefix}--type-heading-01`}>{typeset}</span>
+                <TypesetExample
+                  key={i}
+                  simulatedScreenWidth={this.state.simulatedScreenWidth}
+                  name={typeset}
+                  typeSet={typeSets[typeset]}
+                  typeScale={typeScale}
+                />
+              </>
             ))}
         </div>
       </div>
