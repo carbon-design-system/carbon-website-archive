@@ -80,6 +80,7 @@
   width: auto;
   z-index: 2;
   box-sizing: content-box;
+  box-shadow: 0px 2px 6px 0px rgba($carbon--black-100, 0.2);
 }
 
 .#{$prefix}--typeset-style-nav-shiv {
@@ -197,7 +198,6 @@
   display: flex;
   flex-direction: row;
   align-content: center;
-  box-shadow: 0px 2px 6px 0px rgba($carbon--black-100, 0.2);
 }
 
 .#{$prefix}--typeset-style-group-title {
