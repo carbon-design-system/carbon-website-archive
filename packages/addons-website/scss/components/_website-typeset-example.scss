@@ -24,12 +24,22 @@
 }
 
 .#{$prefix}--typeset-example-description {
-  padding: 1rem 25% 1rem 1rem;
+  padding: 1rem 15% 1rem 1rem;
   overflow: hidden;
+
+  @include carbon--breakpoint('md') {
+    width: 62.5%;
+  }
+
+  @include carbon--breakpoint('lg') {
+    width: 66.7%;
+  }
 }
 
 .#{$prefix}--typeset-example-specs {
   padding: 1rem;
+  width: 33.3%;
+
   @include carbon--breakpoint('md') {
     border-left: 1px solid $carbon--gray-20;
   }

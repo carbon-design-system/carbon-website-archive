@@ -2,15 +2,18 @@
 
 .#{$prefix}--typeset-style-container {
   position: relative;
-  margin-left: -1rem;
-  margin-right: -1rem;
-  padding: 0 .5rem;
-  margin-top: 0;
+  padding: 0 0.5rem;
 
   @include carbon--breakpoint('md') {
     padding: 0;
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    left: 0;
+    margin-right: 0;
+  }
+
+  @include carbon--breakpoint('lg') {
+    margin-top: 0;
+    left: 0.5rem;
+    margin-right: 0.5rem;
   }
 }
 

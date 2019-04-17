@@ -117,7 +117,9 @@ const TypesetExample = props => {
             ` / ` +
             currentBreakpointSpecs['line-height'] +
             `rem`,
-          letterSpacing: currentBreakpointSpecs['letter-spacing'].toString().replace('0.', '.'),
+          letterSpacing: currentBreakpointSpecs['letter-spacing']
+            .toString()
+            .replace('0.', '.'),
           warning: currentBreakpointSpecs['warning'],
         };
 
@@ -136,14 +138,12 @@ const TypesetExample = props => {
             style={{ padding: 0 }}
             className={`${prefix}--typeset-example`}>
             <div className={`${prefix}--typeset-example-row ${prefix}--row`}>
-              <div
-                className={`${prefix}--typeset-example-description ibm--col-md-5`}>
+              <div className={`${prefix}--typeset-example-description`}>
                 <p className={versionClassNames} style={specs}>
                   {type.description}
                 </p>
               </div>
-              <div
-                className={`${prefix}--typeset-example-specs ibm--col-md-3 ibm-padding`}>
+              <div className={`${prefix}--typeset-example-specs`}>
                 <span className={`${prefix}--type-body-short-01`}>
                   <span className={`${prefix}--type-semibold`}>
                     {type.name}{' '}
