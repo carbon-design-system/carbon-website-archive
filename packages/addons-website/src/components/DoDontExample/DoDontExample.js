@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { CheckmarkFilled24, CloseFilled16 } from '@carbon/icons-react';
+import { settings } from 'carbon-components';
 // need to update to CloseFilled24 once that exists
+
 const { prefix } = settings;
 
 export default class DoDontExample extends React.Component {
@@ -59,6 +61,7 @@ export default class DoDontExample extends React.Component {
       [`${prefix}--example__icon--correct`]: correct,
       [`${prefix}--example__icon--incorrect`]: !correct,
     });
+
     return (
       <div className={wrapperClassNames}>
         <div className={`${prefix}--example-card`}>

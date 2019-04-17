@@ -50,7 +50,6 @@ module.exports = {
           Row,
           Column,
           WebsiteTabs,
-          DoDontExample,
           WebsiteTabs,
           SimpleColumns,
           Video,
