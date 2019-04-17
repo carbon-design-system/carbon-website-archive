@@ -34,7 +34,7 @@ import { a, p, h1, h2, h3, h4, h5, ul, ol } from '../markdown/Markdown';
 import timestamp from 'raw-loader!../../../build-timestamp';
 import '../../styles/index.scss';
 
-import { MDXProvider } from '@mdx-js/tag';
+import { MDXProvider } from '@mdx-js/react';
 
 class Layout extends React.Component {
   static propTypes = {
