@@ -46,7 +46,7 @@
     "@mdx-js/tag": "^1.0.0-alpha.0",
     "@reach/router": "^1.2.1",
     "@vimeo/player": "^2.6.7",
-    "carbon-components": "v10.0.0",
+    "carbon-components": "v10.1.0",
     "carbon-components-react": "v7.0.0",
     "carbon-icons": "^7.0.7",
     "classnames": "^2.2.6",
