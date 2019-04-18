@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
 import { settings } from 'carbon-components';
 
 const { prefix } = settings;
@@ -35,7 +34,7 @@ export default class Overlay extends React.Component {
 
   render() {
     const image = this.getImage(this.props.children, {});
-    const { children } = this.props;
+    //const { children } = this.props;
     const displayTitle = image.title ? image.title : this.props.caption;
 
     return (

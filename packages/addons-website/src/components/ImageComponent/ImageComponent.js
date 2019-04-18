@@ -7,8 +7,6 @@ import { Close32, ZoomIn20 } from '@carbon/icons-react';
 
 const { prefix } = settings;
 
-const path = require('path');
-
 class ImageComponent extends Component {
   static propTypes = {
     caption: PropTypes.string,
