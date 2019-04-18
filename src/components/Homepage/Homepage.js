@@ -11,8 +11,6 @@ export class HomepageHeader extends React.Component {
   render() {
     const { GATSBY_CARBON_ENV } = process.env;
     const isInternal = GATSBY_CARBON_ENV == 'internal';
-    // Banner image
-    const bannerImg = require('../../content/homepage/images/homepage_img.jpg');
 
     const homeTitle = isInternal ? (
       <h3 className="homepage--header__title">
