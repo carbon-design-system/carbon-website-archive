@@ -31,7 +31,9 @@ export default class DoDontExample extends React.Component {
       return (
         <div className={`${prefix}--example__caption ibm--row`}>
           {label && <p className={`${prefix}--example__title`}>{label}</p>}
-          {description && <p className={`${prefix}--example__description`}>{description}</p>}
+          {description && (
+            <p className={`${prefix}--example__description`}>{description}</p>
+          )}
         </div>
       );
     }
@@ -73,7 +75,9 @@ export default class DoDontExample extends React.Component {
             )}
             <div className={`${prefix}--example__content`}>
               {children}
-              {text ? <p className={`${prefix}--example__text`}>{text}</p> : null}
+              {text ? (
+                <p className={`${prefix}--example__text`}>{text}</p>
+              ) : null}
             </div>
           </div>
         </div>
