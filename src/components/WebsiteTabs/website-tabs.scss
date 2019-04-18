@@ -1,5 +1,5 @@
 .website-tabs {
-  margin-bottom: $spacing-3xl;
+  margin-bottom: $spacing-09;
 }
 
 .website-tabs img {
@@ -32,7 +32,7 @@
   background: $ui-03;
   color: $text-01;
   line-height: 1.5;
-  padding: $spacing-sm $spacing-md;
+  padding: $spacing-04 $spacing-05;
 }
 .website-tabs li.bx--tabs__nav-item:hover a.bx--tabs__nav-link,
 .website-tabs li.bx--tabs__nav-item:hover:not([disabled]) a.bx--tabs__nav-link {
@@ -48,7 +48,7 @@
 
 .website-tabs > div {
   background: $ui-02;
-  padding: $spacing-3xl $spacing-md $spacing-md $spacing-md;
+  padding: $spacing-09 $spacing-05 $spacing-05 $spacing-05;
 }
 
 .website-tabs div.ibm--row {
@@ -106,7 +106,7 @@
     display: block;
     height: auto;
     margin: 0;
-    padding: $spacing-sm $spacing-md;
+    padding: $spacing-04 $spacing-05;
     text-overflow: ellipsis;
     width: 100%;
   }

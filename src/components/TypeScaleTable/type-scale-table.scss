@@ -14,7 +14,7 @@ $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
     border: none;
     color: $carbon--gray-50;
     @include carbon--type-style('caption-01');
-    padding: 1rem;
+    padding: $spacing-05;
     text-align: left;
   }
 

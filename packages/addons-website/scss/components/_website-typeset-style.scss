@@ -4,7 +4,7 @@
   position: relative;
   margin-left: -1rem;
   margin-right: -1rem;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   margin-top: 0;
 
   @include carbon--breakpoint('md') {
@@ -175,7 +175,7 @@
 .#{$prefix}--typeset-style-group-title-container {
   background-color: $carbon--white-0;
   height: 3rem;
-  padding: 1rem;
+  padding: $spacing-05;
   border-bottom: 1px solid $carbon--gray-20;
   display: flex;
   flex-direction: row;

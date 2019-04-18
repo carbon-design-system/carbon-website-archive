@@ -11,8 +11,8 @@
 
 .#{$prefix}--website-footer .ibm--grid {
   min-height: 370px;
-  padding-top: $spacing-lg;
-  padding-bottom: $spacing-xl;
+  padding-top: $spacing-06;
+  padding-bottom: $spacing-07;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -21,7 +21,7 @@
 // Footer nav lists
 .#{$prefix}--website-footer__nav {
   padding-bottom: rem(40px);
-  margin-bottom: $spacing-lg;
+  margin-bottom: $spacing-06;
   position: relative;
 
   &:after {
@@ -45,7 +45,7 @@
   display: block;
 
   @include carbon--breakpoint('sm') {
-    margin: 0 0 $spacing-xs 0;
+    margin: 0 0 $spacing-03 0;
   }
 
   @include carbon--breakpoint('lg') {

@@ -6,7 +6,8 @@ body {
   font-family: $font-family;
 }
 
-strong, b {
+strong,
+b {
   font-weight: carbon--font-weight('semibold');
 }
 
@@ -54,7 +55,7 @@ strong, b {
 .page-p,
 .component-docs p {
   @include carbon--type-style('body-long-02');
-  padding: 0 0 $spacing-lg;
+  padding: 0 0 $spacing-06;
 
   &:empty {
     padding: 0;
@@ -99,7 +100,7 @@ em {
     @include reset;
     position: relative;
     display: inline;
-    padding: rem(1px) $spacing-xs;
+    padding: rem(1px) $spacing-03;
     background: transparent;
     border-radius: 4px;
     background-color: $carbon--gray-20;
@@ -223,7 +224,7 @@ img[src*='gif'] {
     display: block;
 
     &:first-child {
-      padding-top: $spacing-xs;
+      padding-top: $spacing-03;
     }
   }
 }

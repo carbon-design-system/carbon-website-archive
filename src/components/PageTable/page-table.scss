@@ -12,7 +12,7 @@
     th {
       @include carbon--type-style('heading-01');
       color: $text-01;
-      padding: $spacing-md;
+      padding: $spacing-05;
       text-align: left;
       white-space: nowrap;
       background: $carbon--white-0;
@@ -26,7 +26,7 @@
       td {
         @include carbon--type-style('body-short-01');
         color: $text-01;
-        padding: $spacing-md;
+        padding: $spacing-05;
 
         img[src$='checkmark--glyph.svg'] {
           width: 16px;
@@ -42,7 +42,7 @@
           min-width: rem(100px);
         }
 
-       @include carbon--breakpoint('xlg')  {
+        @include carbon--breakpoint('xlg') {
           min-width: rem(150px);
         }
       }

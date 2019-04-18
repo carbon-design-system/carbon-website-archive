@@ -34,7 +34,7 @@
   position: relative;
   color: $text-01;
   margin-top: rem(48px);
-  margin-bottom: $spacing-lg;
+  margin-bottom: $spacing-06;
   position: relative;
   display: inline-block;
 }
@@ -52,7 +52,7 @@
   @include carbon--type-style('expressive-heading-03', true);
   color: $text-01;
   margin-top: rem(24px);
-  margin-bottom: $spacing-md;
+  margin-bottom: $spacing-05;
   position: relative;
   display: inline-block;
 }
@@ -175,7 +175,7 @@
 .page-ul,
 .page-ol {
   @include carbon--type-style('body-long-02');
-  margin: 0 0 rem(24px) $spacing-lg;
+  margin: 0 0 rem(24px) $spacing-06;
   line-height: 1.5;
   position: relative;
 }

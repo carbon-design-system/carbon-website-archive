@@ -24,12 +24,12 @@
 }
 
 .#{$prefix}--typeset-example-description {
-  padding: 1rem 25% 1rem 1rem;
+  padding: $spacing-05 25% 1rem 1rem;
   overflow: hidden;
 }
 
 .#{$prefix}--typeset-example-specs {
-  padding: 1rem;
+  padding: $spacing-05;
   @include carbon--breakpoint('md') {
     border-left: 1px solid $carbon--gray-20;
   }

@@ -1,5 +1,5 @@
 .feature-tile--margin {
-  margin-bottom: $spacing-lg;
+  margin-bottom: $spacing-06;
 }
 
 a.feature-tile {
@@ -38,7 +38,7 @@ a.feature-tile:hover .feature-tile__info {
 
 .feature-tile__info {
   background-color: $carbon--gray-90;
-  padding: $spacing-md;
+  padding: $spacing-05;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -54,7 +54,7 @@ a.feature-tile:hover .feature-tile__info {
 .feature-tile__icon {
   position: absolute;
   bottom: rem(14px);
-  right: $spacing-md;
+  right: $spacing-05;
   fill: $carbon--gray-30;
 }
 

@@ -9,7 +9,7 @@
     margin-bottom: 2rem;
 
     .#{$prefix}--swatch {
-      padding: 1rem;
+      padding: $spacing-05;
       @include carbon--type-style('code-02') .#{$prefix}--swatch-name {
         text-transform: capitalize;
       }
@@ -17,7 +17,7 @@
         float: right;
       }
     }
-    
+
     @include carbon--breakpoint('md') {
       width: calc(50% - 1px);
       margin-right: 1px;

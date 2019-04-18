@@ -5,7 +5,7 @@
   left: 0;
   right: 0;
   top: 0;
-  padding: 2rem;
+  padding: $spacing-07;
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -32,7 +32,7 @@
   flex-basis: 20%;
   z-index: 17003;
   text-align: right;
-  
+
   svg {
     flex-basis: auto;
   }
@@ -40,8 +40,8 @@
 
 .#{$prefix}--overlay-image {
   height: auto;
-  display:block;
-  margin:auto;
+  display: block;
+  margin: auto;
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
@@ -56,7 +56,7 @@
 
 .#{$prefix}--overlay-bg {
   background: $carbon--black-100;
-  opacity: .9;
+  opacity: 0.9;
   position: absolute;
   top: 0;
   bottom: 0;
