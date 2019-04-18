@@ -15,24 +15,27 @@
   transition: transform $carbon--ease-in $transition--expansion;
 }
 
-.page-header {
+// page-header stiky position
+// page-header is the page/content-level header, which contains the page-tabs
+.page-header,
+.#{$prefix}--header ~ div.container .page-header {
   position: sticky;
   top: -9rem; // header set to 15rem height. subtract 3rem tabs height & 3rem header height
   z-index: 500;
 }
 
+// page header sticky position when website alert is present
+.website-alert + .container .page-header,
 .website-alert + .#{$prefix}--header ~ div.container .page-header {
   top: -6.5rem;
 }
 
-.#{$prefix}--header ~ .#{$prefix}--website-switcher {
+.website-alert + .#{$prefix}--header ~ .#{$prefix}--website-switcher {
   top: 0;
 }
 
 /* 
-
 website global header hidden
-
 */
 
 .website-header-hidden {
@@ -50,12 +53,17 @@ website global header hidden
   }
 
   // page header position when hidden
-  .page-header,
   .#{prefix}--header__global,
   .#{prefix}--header__name,
   .#{$prefix}--header,
+  .page-header {
+    transform: translateY(-3rem);
+  }
+
   .website-alert,
   .website-alert + .#{$prefix}--header,
+  .website-alert + .#{prefix}--header__global,
+  .website-alert + .#{prefix}--header__name,
   .website-alert + .#{$prefix}--header ~ div.container .page-header {
     transform: translateY(-5.5rem);
   }
@@ -107,7 +115,7 @@ website global header hidden
 
   // site switcher visible, website alert not present
   .#{$prefix}--website-switcher--expanded {
-    transform: translate(0, -3.5rem);
+    transform: translate(0, -3rem);
   }
 
   // site switcher hidden, website alert present
