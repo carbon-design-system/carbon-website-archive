@@ -1,6 +1,6 @@
 import React from 'react';
 import { Close20, Search20 } from '@carbon/icons-react';
-import GlobalSearchInput from './GlobalSearchInput'
+import GlobalSearchInput from './GlobalSearchInput';
 
 export default class GlobalSearch extends React.Component {
   state = {

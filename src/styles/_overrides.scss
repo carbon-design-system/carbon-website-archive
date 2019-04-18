@@ -46,7 +46,7 @@
 }
 
 .component-example .bx--form-item.bx--checkbox-wrapper {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 //---------------------------------------
@@ -56,7 +56,6 @@
 .component-example__live--tabs .bx--tabs__nav {
   position: static;
 }
-
 
 .component-example__live .tabs .bx--tabs + div {
   margin-top: 2rem;
@@ -103,5 +102,5 @@
 
 .component-example__live .bx--tooltip {
   margin-left: -1rem;
-  margin-top: -.5rem;
+  margin-top: -0.5rem;
 }
