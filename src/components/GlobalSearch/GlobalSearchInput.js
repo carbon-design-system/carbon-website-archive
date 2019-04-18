@@ -13,7 +13,6 @@ export default class GlobalSearchInput extends React.Component {
   }
 
   render() {
-    const { id, className, value } = this.props;
     return <input {...this.props} ref={this.textInput} />;
   }
 }

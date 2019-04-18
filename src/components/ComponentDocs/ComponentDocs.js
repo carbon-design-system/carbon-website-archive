@@ -14,7 +14,7 @@ export default class ComponentDocs extends React.Component {
     if (experimental === true) {
       try {
         componentDocUrl = require(`carbon-components/src/components/${component}/experimental.md`);
-      } catch (err) {}
+      } catch (err) {} // eslint-disable-line no-empty
     }
     if (!componentDocUrl) {
       componentDocUrl = require(`carbon-components/src/components/${component}/README.md`);

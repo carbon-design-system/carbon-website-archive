@@ -4,8 +4,6 @@ const { prefix } = settings;
 
 class FourOhFour extends React.Component {
   render() {
-    const { children } = this.props;
-
     if (typeof document !== 'undefined') {
       document.body.style.background = '#282828';
     }

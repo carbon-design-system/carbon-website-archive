@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
 
-const PageHeader = ({ children, label, title }) => {
+const PageHeader = ({ children, title }) => {
   return (
     <div className="page-header">
       <div className="bx--grid">

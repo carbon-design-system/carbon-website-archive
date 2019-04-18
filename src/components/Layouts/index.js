@@ -29,7 +29,7 @@ import {
 
 import PageTable from '../PageTable';
 
-import { p, h1, h2, h3, h4, h5, ul, ol } from '../markdown/Markdown';
+import { a, p, h1, h2, h3, h4, h5, ul, ol } from '../markdown/Markdown';
 
 import timestamp from 'raw-loader!../../../build-timestamp';
 import '../../styles/index.scss';
@@ -72,9 +72,7 @@ class Layout extends React.Component {
   };
 
   handleCloseSearchClick = evt => {
-    console.log(evt.target);
     const className = evt.target.classList[0];
-    console.log(className);
     const filters = [
       'bx--search',
       'bx--search-input',
@@ -354,6 +352,7 @@ class Layout extends React.Component {
               <MDXProvider
                 components={{
                   // Map HTML element tag to React component
+                  a: a,
                   p: p,
                   h1: h1,
                   h2: h2,

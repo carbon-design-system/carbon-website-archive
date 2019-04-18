@@ -34,7 +34,7 @@ export default class ComponentCode extends React.Component {
     if (experimental) {
       try {
         htmlFile = require(`../../html/${component}/${variation}.html`);
-      } catch (err) {}
+      } catch (err) {} // eslint-disable-line no-empty
     }
     if (!htmlFile) {
       htmlFile = require(`carbon-components/html/${component}/${variation}.html`);
