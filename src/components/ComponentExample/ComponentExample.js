@@ -8,28 +8,9 @@ import {
   DIRECTION_BOTTOM,
 } from 'carbon-components/es/components/floating-menu/floating-menu';
 import InlineLoadingDemoButton from '../../content/components/inline-loading/inline-loading-demo-button';
-import on from 'carbon-components/es/globals/js/misc/on';
 import settings from 'carbon-components/es/globals/js/settings';
 import { RadioButtonGroup, RadioButton } from 'carbon-components-react';
 import { Launch16 } from '@carbon/icons-react';
-
-/**
- * The CSS property names of the arrow keyed by the floating menu direction.
- * @type {Object<string, string>}
- */
-const triggerButtonPositionProps = {
-  [DIRECTION_TOP]: 'bottom',
-  [DIRECTION_BOTTOM]: 'top',
-};
-
-/**
- * Determines how the position of arrow should affect the floating menu position.
- * @type {Object<string, number>}
- */
-const triggerButtonPositionFactors = {
-  [DIRECTION_TOP]: -2,
-  [DIRECTION_BOTTOM]: -1,
-};
 
 /**
  * Determines how the vertical position of live demo container should affect the floating menu position offset.
@@ -136,7 +117,7 @@ class ComponentExample extends Component {
     }
     const ref = this._ref;
     if (ref) {
-      const { component, experimental } = this.props;
+      const { component } = this.props;
       const currentComponent = component
         .replace(/-([a-z])/g, (match, token) => token.toUpperCase())
         .replace(/^([a-z])/, (match, token) => token.toUpperCase());
@@ -197,7 +178,7 @@ class ComponentExample extends Component {
                           : parseInt(
                               liveContainerRef.ownerDocument.defaultView
                                 .getComputedStyle(liveContainerRef)
-                                .getPropertyValue('border-width')
+                                .getPropertyValue('border-left-width') // FF doesn't have one for `border-width`
                             );
                       const adjustLeft =
                         liveContainerLeft +

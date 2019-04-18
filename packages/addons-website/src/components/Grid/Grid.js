@@ -3,11 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 export const Grid = ({ children, className }) => {
-  return (
-    <div className={classnames('ibm--grid', className)}>
-      {children}
-    </div>
-  );
+  return <div className={classnames('ibm--grid', className)}>{children}</div>;
 };
 
 Grid.propTypes = {
@@ -20,11 +16,7 @@ Grid.propTypes = {
 };
 
 export const Row = ({ children, className }) => {
-  return (
-    <div className={classnames('ibm--row', className)}>
-      {children}
-    </div>
-  );
+  return <div className={classnames('ibm--row', className)}>{children}</div>;
 };
 
 Row.propTypes = {

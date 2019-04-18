@@ -6,7 +6,7 @@ import { settings } from 'carbon-components';
 const { prefix } = settings;
 
 const WebsiteSwitcher = props => {
-  const { isSwitcherOpen, isSwitcherFinal, links } = props;
+  const { isSwitcherOpen, links } = props;
 
   const classNames = classnames(`${prefix}--website-switcher`, {
     [`${prefix}--website-switcher--expanded`]: isSwitcherOpen,

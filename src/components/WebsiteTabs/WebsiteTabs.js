@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs, Tab } from 'carbon-components-react';
+import { Tabs } from 'carbon-components-react';
 import classnames from 'classnames';
 
 export default class WebsiteTabs extends React.Component {

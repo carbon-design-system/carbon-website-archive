@@ -69,7 +69,6 @@ class GlossaryNav extends Component {
   };
 
   handleScroll = () => {
-    const scrollPosition = this.updateScrollPosition();
     const windowScroll = this.state.isReverseScroll
       ? window.scrollY
       : window.scrollY + window.innerHeight;
