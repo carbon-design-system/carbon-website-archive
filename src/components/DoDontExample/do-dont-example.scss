@@ -133,12 +133,11 @@ p.example__description {
   }
 }
 
-.ibm--col-lg-4 .example__caption { 
+.ibm--col-lg-4 .example__caption {
   @include breakpoint('md') {
     width: 100%;
   }
 }
-
 
 .example span.gatsby-resp-image-wrapper {
   max-width: 100% !important; // marked !important to overcome inline styles inserted by gatsby.
