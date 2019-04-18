@@ -95,7 +95,7 @@ class CodeExample extends Component {
         <div className="code-example__expand-container">
           <button className={expandBtnClass} onClick={this.expandCode}>
             <span>{expandCodeBtnText}</span>
-            <ChevronDown16 
+            <ChevronDown16
               alt="expand code"
               className={expandBtnIconClass}
               description="Expand code icon"

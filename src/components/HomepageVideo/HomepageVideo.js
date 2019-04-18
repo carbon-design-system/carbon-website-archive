@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Player from '@vimeo/player';
-import classnames from 'classnames';
 
 export default class HomepageVideo extends React.Component {
   constructor(props) {

@@ -72,9 +72,7 @@ class Layout extends React.Component {
   };
 
   handleCloseSearchClick = evt => {
-    console.log(evt.target);
     const className = evt.target.classList[0];
-    console.log(className);
     const filters = [
       'bx--search',
       'bx--search-input',
