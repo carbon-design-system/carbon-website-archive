@@ -135,12 +135,11 @@ p.#{$prefix}--example__description {
   }
 }
 
-.ibm--col-lg-4 .#{$prefix}--example__caption { 
+.ibm--col-lg-4 .#{$prefix}--example__caption {
   @include breakpoint('md') {
     width: 100%;
   }
 }
-
 
 .#{$prefix}--example span.gatsby-resp-image-wrapper {
   max-width: 100% !important; // marked !important to overcome inline styles inserted by gatsby.
