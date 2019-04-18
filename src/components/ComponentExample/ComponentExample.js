@@ -178,7 +178,7 @@ class ComponentExample extends Component {
                           : parseInt(
                               liveContainerRef.ownerDocument.defaultView
                                 .getComputedStyle(liveContainerRef)
-                                .getPropertyValue('border-width')
+                                .getPropertyValue('border-left-width') // FF doesn't have one for `border-width`
                             );
                       const adjustLeft =
                         liveContainerLeft +
