@@ -122,8 +122,8 @@
     "node-sass": "^4.10.0",
     "prettier": "^1.17.0",
     "raw-loader": "^1.0.0",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
     "sass-loader": "^7.1.0",
     "storybook-readme": "^3.3.0",
     "string-replace-loader": "^2.1.0"
