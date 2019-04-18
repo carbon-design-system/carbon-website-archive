@@ -4,7 +4,7 @@ import { repository } from '../../../package.json';
 
 export default class EditLink extends React.Component {
   render() {
-    const {repositoryUrl, slug, fileType} = this.props;
+    const { repositoryUrl, slug, fileType } = this.props;
     const href = `${repositoryUrl}tree/master/src/content${slug}.${fileType}`;
 
     return (
