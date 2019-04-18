@@ -175,7 +175,7 @@
 .page-ul,
 .page-ol {
   @include carbon--type-style('body-long-02');
-  margin: 0 0 rem(24px) $spacing-06;
+  margin: 0 0 $spacing-06 $spacing-06;
   line-height: 1.5;
   position: relative;
 }

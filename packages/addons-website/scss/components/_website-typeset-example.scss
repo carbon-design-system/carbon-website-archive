@@ -24,7 +24,7 @@
 }
 
 .#{$prefix}--typeset-example-description {
-  padding: $spacing-05 25% 1rem 1rem;
+  padding: $spacing-05 25% $spacing-05 $spacing-05;
   overflow: hidden;
 }
 

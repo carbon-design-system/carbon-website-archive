@@ -330,7 +330,7 @@
   height: 36px;
   flex-shrink: 0;
   align-self: flex-start;
-  margin: $spacing-05 1rem 1rem 0.5rem;
+  margin: $spacing-05 $spacing-05 $spacing-05 $spacing-03;
 
   @media all and (max-width: 1255px) {
     margin-top: $spacing-03;
