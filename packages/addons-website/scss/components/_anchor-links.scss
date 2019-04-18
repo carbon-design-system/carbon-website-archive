@@ -4,7 +4,10 @@
   margin-top: 0;
 }
 
-.page-content > div:first-child > .#{$prefix}--anchor-links:first-child .page-ul {
+.page-content
+  > div:first-child
+  > .#{$prefix}--anchor-links:first-child
+  .page-ul {
   margin-bottom: 0;
 }
 

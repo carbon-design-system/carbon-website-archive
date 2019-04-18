@@ -7,16 +7,17 @@
   min-height: calc(100vh - 418px);
   width: 100%;
 
- @include carbon--breakpoint('xlg')  {
+  @include carbon--breakpoint('xlg') {
     padding-top: rem(48px);
   }
 }
 
-.#{$prefix}--anchor-links.#{$prefix}--anchor-links--small.fourohfour-body__anchor-links .page-ul {
+.#{$prefix}--anchor-links.#{$prefix}--anchor-links--small.fourohfour-body__anchor-links
+  .page-ul {
   margin-top: rem(24px);
   margin-bottom: rem(32px);
 
- @include carbon--breakpoint('xlg')  {
+  @include carbon--breakpoint('xlg') {
     margin-bottom: rem(48px);
   }
 }
@@ -31,11 +32,7 @@
   display: inline-block;
   line-height: 1;
   font-size: rem(200px);
-  background: linear-gradient(
-    35deg,
-    $carbon--teal-20,
-    $carbon--purple-50
-  );
+  background: linear-gradient(35deg, $carbon--teal-20, $carbon--purple-50);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -46,11 +43,17 @@
 .fourohfour-body__heading,
 .fourohfour-body__text,
 .fourohfour-body__anchor-links.#{$prefix}--anchor-links--small .page-ul > li a,
-.fourohfour-body__anchor-links.#{$prefix}--anchor-links--small .page-ul > li a::before {
+.fourohfour-body__anchor-links.#{$prefix}--anchor-links--small
+  .page-ul
+  > li
+  a::before {
   color: $carbon--gray-10;
 }
 
-.fourohfour-body__anchor-links.#{$prefix}--anchor-links--small .page-ul > li a:hover {
+.fourohfour-body__anchor-links.#{$prefix}--anchor-links--small
+  .page-ul
+  > li
+  a:hover {
   color: $carbon--blue-40;
 
   &::before {
