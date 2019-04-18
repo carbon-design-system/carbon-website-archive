@@ -796,7 +796,6 @@ class TypesetStyle extends React.Component {
       secondary,
       top,
       breakpointControls,
-      title,
       typesets,
     } = this.props;
 
@@ -891,9 +890,6 @@ TypesetStyle.propTypes = {
 
   // show / hide breakpoint controls
   breakpointControls: PropTypes.bool,
-
-  // type header
-  title: PropTypes.string,
 
   // comma separated list of typesets to display
   typesets: PropTypes.string,
