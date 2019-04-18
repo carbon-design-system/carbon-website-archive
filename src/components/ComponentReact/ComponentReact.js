@@ -27,7 +27,7 @@ class ComponentReactExample extends Component {
     name: PropTypes.string,
     component: PropTypes.string,
     variation: PropTypes.string,
-    hasAngularVersion: PropTypes.bool
+    hasAngularVersion: PropTypes.bool,
   };
 
   componentDidMount() {
@@ -102,8 +102,8 @@ class ComponentReactExample extends Component {
               href="https://github.com/ibm/carbon-components-react"
               target="_blank">
               our React
-            </a>
-            {' '}and{' '}
+            </a>{' '}
+            and{' '}
             <a
               href="https://github.com/ibm/carbon-components-angular"
               target="_blank">
@@ -119,8 +119,7 @@ class ComponentReactExample extends Component {
           target="_blank">
           our React library
         </a>
-      )
-
+      );
     };
 
     return (
@@ -129,9 +128,7 @@ class ComponentReactExample extends Component {
           <div className="bx--col-lg-12 bx--offset-lg-4">
             <h2 className="page-h2">{name}</h2>
             <p className="component-example__heading-label page-p">
-              This component is currently only available in{' '}
-              {getLibraryLinks()}
-              .
+              This component is currently only available in {getLibraryLinks()}.
             </p>
           </div>
         </div>

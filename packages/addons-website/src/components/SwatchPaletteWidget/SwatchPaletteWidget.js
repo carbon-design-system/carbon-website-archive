@@ -46,7 +46,8 @@ class SwatchPaletteWidget extends Component {
       <div className={`${prefix}--swatch-palettes-container`}>
         <div className="sticky-container" style={{ top: top ? top : '0px' }}>
           <div className={`${prefix}--row`}>
-            <div className={`${prefix}--col-lg-4 ${prefix}--col-md-4 ${prefix}--offset-lg-4 ${prefix}--col-bleed`}>
+            <div
+              className={`${prefix}--col-lg-4 ${prefix}--col-md-4 ${prefix}--offset-lg-4 ${prefix}--col-bleed`}>
               <ContentSwitcher
                 className={`${prefix}--swatch-palettes__format-switcher`}
                 onChange={this.switchFormat}>

@@ -7,9 +7,7 @@ const prefix = settings.prefix;
 
 export const Grid = ({ children, className }) => {
   return (
-    <div className={classnames([`${prefix}--grid`], className)}>
-      {children}
-    </div>
+    <div className={classnames([`${prefix}--grid`], className)}>{children}</div>
   );
 };
 
@@ -24,9 +22,7 @@ Grid.propTypes = {
 
 export const Row = ({ children, className }) => {
   return (
-    <div className={classnames([`${prefix}--row`], className)}>
-      {children}
-    </div>
+    <div className={classnames([`${prefix}--row`], className)}>{children}</div>
   );
 };
 

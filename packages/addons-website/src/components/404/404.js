@@ -13,7 +13,8 @@ class FourOhFour extends React.Component {
       <div className="page-content fourohfour">
         <div className={`${prefix}--grid`}>
           <div className={`${prefix}--row`}>
-            <div className={`${prefix}--col-lg-12 ${prefix}--offset-lg-4 fourohfour-body`}>
+            <div
+              className={`${prefix}--col-lg-12 ${prefix}--offset-lg-4 fourohfour-body`}>
               <div className="fourohfour-body">
                 <h2 className="fourohfour-body__heading">
                   Something's wrong...

@@ -117,7 +117,9 @@ const TypesetExample = props => {
             ` / ` +
             currentBreakpointSpecs['line-height'] +
             `rem`,
-          letterSpacing: currentBreakpointSpecs['letter-spacing'].toString().replace('0.', '.'),
+          letterSpacing: currentBreakpointSpecs['letter-spacing']
+            .toString()
+            .replace('0.', '.'),
           warning: currentBreakpointSpecs['warning'],
         };
 
