@@ -2,8 +2,7 @@
 module.exports = {
   'core-tokens': {
     '$ui-background': {
-      role: ['Default page background',
-      ],
+      role: ['Default page background'],
       value: {
         white: {
           name: 'White',
@@ -24,8 +23,7 @@ module.exports = {
       },
     },
     '$interactive-01': {
-      role: ['Primary interactive color', 'Primary buttons',
-      ],
+      role: ['Primary interactive color', 'Primary buttons'],
       value: {
         white: {
           name: 'Blue 60',
@@ -88,7 +86,12 @@ module.exports = {
       },
     },
     '$interactive-04': {
-      role: ['3:1 AA contrast', 'Selected elements','Active elements', 'Accent icons'],
+      role: [
+        '3:1 AA contrast',
+        'Selected elements',
+        'Active elements',
+        'Accent icons',
+      ],
       value: {
         white: {
           name: 'Blue 60',

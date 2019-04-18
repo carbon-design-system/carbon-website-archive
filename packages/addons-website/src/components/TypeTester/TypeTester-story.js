@@ -2,7 +2,6 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import TypeTester from '.';
 
-
 storiesOf('Type Tester', module).add(
   'Type Tester',
   () => (
