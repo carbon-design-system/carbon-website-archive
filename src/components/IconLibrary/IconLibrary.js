@@ -1,6 +1,5 @@
 import React from 'react';
 import { Search, Loading } from 'carbon-components-react';
-import icons from 'carbon-icons';
 import IconEmptyState from '../IconEmptyState';
 
 const sizes = ['16', '32', 'Glyph'];
@@ -98,9 +97,7 @@ export default class IconLibrary extends React.Component {
     const {
       errorLoadingIcons,
       filteredIcons,
-      icons,
       isLoading,
-      searchValue,
       sections,
     } = this.state;
 
@@ -126,7 +123,7 @@ export default class IconLibrary extends React.Component {
     }
 
     if (errorLoadingIcons) {
-      console.error(errorLoadingIcons);
+      console.error(errorLoadingIcons); // eslint-disable-line no-console
       return (
         <div className="page ibm--row">
           <div className="ibm--col-lg-12 ibm--offset-lg-4">

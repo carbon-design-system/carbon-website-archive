@@ -34,19 +34,10 @@ const TypesetExample = props => {
           indexOfClosestLargerBreakpoint
         ];
 
-        const nextLargerBreakpointPx = values(breakpoints)[
-          indexOfClosestLargerBreakpoint - 1
-        ];
-
         const currentBreakpointName = findKey(
           breakpoints,
           val => val === currentBreakpointPx
         );
-        const nextLargerBreakpointName = findKey(
-          breakpoints,
-          val => val === nextLargerBreakpointPx
-        );
-
         const getCurrentCompoundStylesForBreakpoint = breakpointName => {
           const typeKeys = Object.keys(breakpoints);
           const typeStylesUntilCurrentBreakpoint = [];
@@ -117,7 +108,9 @@ const TypesetExample = props => {
             ` / ` +
             currentBreakpointSpecs['line-height'] +
             `rem`,
-          letterSpacing: currentBreakpointSpecs['letter-spacing'].toString().replace('0.', '.'),
+          letterSpacing: currentBreakpointSpecs['letter-spacing']
+            .toString()
+            .replace('0.', '.'),
           warning: currentBreakpointSpecs['warning'],
         };
 
