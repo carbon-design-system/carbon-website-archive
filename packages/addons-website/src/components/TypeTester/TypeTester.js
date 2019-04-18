@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import Dropdown from 'carbon-components-react/lib/components/DropdownV2';
 import Textarea from 'react-textarea-autosize';
@@ -199,7 +198,7 @@ class TypeTester extends Component {
   };
 
   onLanguageDropdownChange = ({ selectedItem }) => {
-    const { label, value } = selectedItem;
+    const { value } = selectedItem;
     this.setState({
       lastVariant: this.state.variant,
     });

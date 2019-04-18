@@ -1,4 +1,4 @@
-import { storiesOf, addDecorator } from '@storybook/react';
+import { storiesOf } from '@storybook/react';
 import React from 'react';
 import AspectRatioTile from '.';
 

@@ -1,6 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { runInDebugContext } from 'vm';
 import classnames from 'classnames';
 import {
   ContentSwitcher,
@@ -31,7 +29,7 @@ export default class ColorTokenTable extends React.Component {
   }
 
   addScrollListener() {
-    document.addEventListener('scroll', e => {
+    document.addEventListener('scroll', () => {
       let stickyPoint = this.state.mobile ? 436 : 450;
       if (window.scrollY >= stickyPoint) {
         this.setState({
@@ -46,7 +44,7 @@ export default class ColorTokenTable extends React.Component {
   }
 
   addResizeListener() {
-    window.addEventListener('resize', e => {
+    window.addEventListener('resize', () => {
       if (window.innerWidth < 500) {
         this.setState({
           mobile: true,
