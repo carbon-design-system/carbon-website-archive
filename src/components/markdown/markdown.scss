@@ -291,9 +291,12 @@
       color: $carbon--gray-90;
       text-decoration: none;
       margin-bottom: rem(4px);
+      box-shadow: none;
 
       &:hover {
         color: $carbon--blue-60;
+        box-shadow: none;
+
         &::before {
           color: $carbon--blue-60;
         }
