@@ -77,7 +77,7 @@ $font-prefix: '/fonts';
       .#{$prefix}--list-box__field {
         background: $ui-02;
         height: 3rem;
-        padding-top: 1rem;
+        padding-top: $spacing-05;
         padding-bottom: rem(15px);
         border-bottom: 1px solid $carbon--gray-20;
         &:focus {
@@ -121,7 +121,7 @@ $font-prefix: '/fonts';
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 $spacing-05;
     background-color: $ui-02;
     width: 100%;
     height: 3rem;

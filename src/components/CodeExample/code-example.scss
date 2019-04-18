@@ -59,7 +59,7 @@
 .code-title {
   @include carbon--type-style('code-02');
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: $spacing-05;
 }
 
 .code-example__raw-html {
@@ -118,7 +118,7 @@
   }
 
   &--icon {
-    margin-left: 0.5rem;
+    margin-left: $spacing-03;
     fill: $inverse-01;
     transition: $transition--base;
 

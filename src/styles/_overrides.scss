@@ -3,7 +3,7 @@
 //---------------------------------------
 
 .component-example .button .bx--btn {
-  margin: 0.5rem;
+  margin: $spacing-03;
 }
 
 //---------------------------------------
@@ -42,11 +42,11 @@
 
 .component-example__live .bx--form-item,
 .component-example .bx--form-item {
-  margin-bottom: 2rem;
+  margin-bottom: $spacing-07;
 }
 
 .component-example .bx--form-item.bx--checkbox-wrapper {
-  margin-bottom: .5rem;
+  margin-bottom: $spacing-03;
 }
 
 //---------------------------------------
@@ -57,9 +57,8 @@
   position: static;
 }
 
-
 .component-example__live .tabs .bx--tabs + div {
-  margin-top: 2rem;
+  margin-top: $spacing-07;
 }
 
 //---------------------------------------
@@ -72,7 +71,7 @@
 
 .component-example__live--tile .bx--tile-container .bx--col {
   background: none;
-  margin-bottom: 1rem;
+  margin-bottom: $spacing-05;
 }
 
 //---------------------------------------
@@ -103,7 +102,7 @@
 
 .component-example__live .bx--tooltip {
   margin-left: -1rem;
-  margin-top: -.5rem;
+  margin-top: -0.5rem;
 }
 
 //---------------------------------------
@@ -111,5 +110,5 @@
 //---------------------------------------
 
 .page-content .component-example__live .bx--link {
-  font-size: .875rem;
+  font-size: 0.875rem;
 }

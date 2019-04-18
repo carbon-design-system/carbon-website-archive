@@ -29,7 +29,7 @@ a.#{$prefix}--header__name {
   padding-left: 0.5rem;
 
   @include carbon--breakpoint('lg') {
-    padding-left: 1rem;
+    padding-left: $spacing-05;
   }
 }
 

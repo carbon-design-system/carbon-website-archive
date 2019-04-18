@@ -69,9 +69,9 @@
   }
 
   .website-tabs > div {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 2rem;
+    padding-left: $spacing-05;
+    padding-right: $spacing-05;
+    padding-top: $spacing-07;
   }
 
   /**
@@ -222,5 +222,5 @@
 }
 
 .website-tabs .gatsby-resp-iframe-wrapper {
-  padding-top: 8px;
+  padding-top: $spacing-03;
 }

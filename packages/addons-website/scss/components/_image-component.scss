@@ -18,7 +18,7 @@
 }
 
 .#{$prefix}--image-component.no-caption {
-  margin-bottom: rem(24px);
+  margin-bottom: $spacing-06;
 }
 
 .#{$prefix}--image-component > *:not(.image-component__caption) {
@@ -146,5 +146,5 @@
 
 p.#{$prefix}--image-component__caption {
   @include carbon--type-style('body-short-01');
-  padding-top: rem(8px);
+  padding-top: $spacing-03;
 }

@@ -17,7 +17,7 @@
   width: em(165px);
   height: em(120px);
   transition: transform $transition--base;
-  margin-bottom: 1rem;
+  margin-bottom: $spacing-05;
 
   &--border {
     outline: 1px solid $ui-03;
@@ -44,7 +44,7 @@
 .color-card__button--light {
   background: transparent;
   border: 2px solid currentColor;
-  padding: 0.5em 0.75em;
+  padding: $spacing-03 $spacing-04;
   font-weight: 600;
   text-align: center;
   cursor: pointer;

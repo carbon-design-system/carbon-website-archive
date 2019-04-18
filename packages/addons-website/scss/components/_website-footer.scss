@@ -77,7 +77,7 @@
 .#{$prefix}--website-footer__content,
 .#{$prefix}--website-footer__content p {
   @include carbon--type-style('body-short-01');
-  padding-bottom: 1rem;
+  padding-bottom: $spacing-05;
 }
 
 .#{$prefix}--website-footer__content p:last-child {

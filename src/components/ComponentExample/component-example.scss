@@ -3,7 +3,7 @@
   max-width: 100%;
   display: block;
   color: $carbon--white-0;
-  margin-bottom: rem(24px);
+  margin-bottom: $spacing-06;
 }
 
 // To override the padding from `.page-content > div > div:first-child p`
@@ -67,7 +67,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 $spacing-05;
 }
 
 .component-toolbar__links {
@@ -79,7 +79,7 @@
   a {
     position: relative;
     top: 1px;
-    margin-left: 1rem;
+    margin-left: $spacing-05;
     color: $carbon--blue-40;
     text-decoration: none;
     border-bottom: 1px solid transparent;
@@ -103,8 +103,8 @@
   align-items: center;
   border-left: 1px solid $carbon--gray-80;
   height: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: $spacing-05;
+  padding-right: $spacing-05;
 
   .bx--form-item {
     margin-right: 0;
@@ -121,7 +121,7 @@
   }
 
   .radioButtonWrapper:last-child {
-    padding-left: 1rem;
+    padding-left: $spacing-05;
   }
 
   .bx--radio-button__appearance {

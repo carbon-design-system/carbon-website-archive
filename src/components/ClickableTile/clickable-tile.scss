@@ -8,7 +8,7 @@ a.tile--article {
   justify-content: space-between;
   padding: 0;
   background: $carbon__white-0;
-  margin-bottom: 1rem;
+  margin-bottom: $spacing-05;
   width: 100%;
 }
 
@@ -45,10 +45,10 @@ a.tile--article.tile--dark:hover {
   padding-right: 25%;
 
   @include carbon--breakpoint('lg') {
-    padding-right: 1rem;
+    padding-right: $spacing-05;
   }
 
- @include carbon--breakpoint('xlg')  {
+  @include carbon--breakpoint('xlg') {
     padding-right: 30%;
   }
 }
@@ -225,5 +225,5 @@ a.tile--article .tile__caption p {
 }
 
 a.tile--article.tile--dark .tile__caption p {
-  color: #bebebe;
+  color: $carbon--gray-30;
 }

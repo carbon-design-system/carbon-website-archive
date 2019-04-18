@@ -22,7 +22,7 @@ b {
   transition: $transition--base ease;
   position: relative;
   min-height: calc(100vh - 48px);
-  margin-top: rem(48px);
+  margin-top: $spacing-09;
 }
 
 .container .ibm--grid {
@@ -83,7 +83,7 @@ em {
   }
 
   > div > div:nth-child(2) h3 {
-    margin-top: rem(48px);
+    margin-top: $spacing-09;
   }
 
   // All links on Markdown pages but not inside component examples
@@ -125,7 +125,7 @@ em {
   }
 
   img {
-    margin-bottom: rem(24px);
+    margin-bottom: $spacing-06;
   }
 
   td > img {
@@ -141,7 +141,7 @@ em {
   }
 
   .bx--image-component__caption {
-    margin-bottom: 1.5rem;
+    margin-bottom: $spacing-06;
   }
 }
 
@@ -186,7 +186,7 @@ em {
 .gatsby-resp-image-wrapper {
   // background: $ui-02;
   margin-left: 0 !important;
-  margin-bottom: rem(24px);
+  margin-bottom: $spacing-06;
 
   @include carbon--breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
@@ -230,7 +230,7 @@ img[src*='gif'] {
 }
 
 .page-content iframe {
-  margin-bottom: rem(24px);
+  margin-bottom: $spacing-06;
 }
 
 // Website alert banner
@@ -252,7 +252,7 @@ img[src*='gif'] {
   fill: $inverse-01;
 
   @include carbon--breakpoint('lg') {
-    margin: 0 1rem;
+    margin: 0 $spacing-05;
   }
 }
 
@@ -266,13 +266,13 @@ img[src*='gif'] {
 .website-alert .bx--btn {
   height: 100%;
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 $spacing-05;
   display: inline-flex;
   align-items: center;
   min-height: 0;
 
   svg {
-    margin-left: rem(8px);
+    margin-left: $spacing-03;
     fill: $inverse-01;
   }
 }
