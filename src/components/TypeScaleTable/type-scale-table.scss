@@ -27,7 +27,19 @@ $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
 
   table tbody td:first-child {
     font-size: 0.75rem;
-    padding: 2px 2rem .5rem 0;
+    padding: 2px 3rem 0.5rem 0;
+
+    @include carbon--breakpoint('md') {
+      padding-right: rem(112px);
+    }
+
+    @include carbon--breakpoint('lg') {
+      padding-right: 2rem;
+    }
+
+    @include carbon--breakpoint('xlg') {
+      padding-right: 3rem;
+    }
   }
 
   @for $i from 1 through length($type-scale) {
