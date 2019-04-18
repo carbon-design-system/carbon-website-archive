@@ -43,7 +43,7 @@
   bottom: 0;
   color: $text-02;
   @include carbon--type-style('caption-01');
-  padding: 0.5rem 1rem;
+  padding: $spacing-03 1rem;
   z-index: 9999;
 }
 
