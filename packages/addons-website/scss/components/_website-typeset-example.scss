@@ -1,11 +1,11 @@
 @import '../prefix';
 
 .#{$prefix}--typeset-example-container {
-  margin-top: 1rem;
+  margin-top: $spacing-05;
 }
 
 .#{$prefix}--typeset-example {
-  margin-top: 1rem;
+  margin-top: $spacing-05;
 }
 
 .#{$prefix}--typeset-example-row {
@@ -18,7 +18,7 @@
 }
 
 .#{$prefix}--typeset-example-description {
-  padding: 1rem 15% 1rem 1rem;
+  padding: $spacing-05 15% $spacing-05 $spacing-05;
   overflow: hidden;
 
   @include carbon--breakpoint('md') {
@@ -31,7 +31,7 @@
 }
 
 .#{$prefix}--typeset-example-specs {
-  padding: 1rem;
+  padding: $spacing-05;
   width: 33.3%;
 
   @include carbon--breakpoint('md') {
@@ -40,10 +40,10 @@
 }
 
 .#{$prefix}--typeset-example-specs-text {
-  margin-bottom: 0.5rem;
+  margin-bottom: $spacing-03;
 }
 
 .#{$prefix}--typeset-example-code-style {
   display: block;
-  margin-top: 0.5rem;
+  margin-top: $spacing-03;
 }
