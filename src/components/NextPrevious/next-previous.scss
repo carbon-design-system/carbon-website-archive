@@ -5,16 +5,16 @@
   position: relative;
 }
 
-.next-previous-wrapper .ibm--grid,
-.next-previous-wrapper .ibm--row {
+.next-previous-wrapper .bx--grid,
+.next-previous-wrapper .bx--row {
   min-height: rem(128px);
 }
 
 .next-previous-link {
   position: relative;
   color: $carbon--white-0;
-  padding-bottom: 2rem;
-  padding-top: 1rem;
+  padding-bottom: $spacing-07;
+  padding-top: $spacing-05;
   text-decoration: none;
   transition: 0.35s ease all;
 }

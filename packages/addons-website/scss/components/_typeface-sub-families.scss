@@ -13,7 +13,7 @@
 }
 
 .#{prefix}--subfamilies-fonts-preload {
-  margin-top: 2rem;
+  margin-top: $spacing-07;
   height: 0;
   visibility: hidden;
 
@@ -51,8 +51,8 @@
   height: 3rem;
   position: relative;
   margin: 0;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: $spacing-05;
+  padding-right: $spacing-05;
   box-sizing: border-box;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -94,7 +94,7 @@
 .#{$prefix}--subfamilies-TypeTesterExample {
   @include carbon--type-style('expressive-heading-05');
   background-color: $carbon--white-0;
-  padding-top: 1rem;
+  padding-top: $spacing-05;
   padding-bottom: 2.5rem;
   margin-bottom: 0;
   margin-left: -0.5rem !important;
