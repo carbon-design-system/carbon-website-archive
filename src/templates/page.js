@@ -45,7 +45,9 @@ export default ({ data }) => {
         <div className="container--homepage">
           <HomepageHeader />
           <main className="page-content bx--grid" id="maincontent">
-            <MDXRenderer>{post.code.body}</MDXRenderer>
+            <div className="wrapper">
+              <MDXRenderer>{post.code.body}</MDXRenderer>
+            </div>
           </main>
           <HomepageFooter />
         </div>

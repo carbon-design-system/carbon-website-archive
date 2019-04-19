@@ -30,6 +30,7 @@ import {
   WebsiteFooter,
   WebsiteSwitcher,
   WebsiteCodeSnippet,
+  DoDontExample,
 } from '@carbon/addons-website';
 
 import '../../polyfills';
