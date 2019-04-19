@@ -24,7 +24,6 @@ import {
 import {
   AnchorLinks,
   ImageComponent,
-  DoDontExample,
   Row,
   Column,
   WebsiteFooter,
