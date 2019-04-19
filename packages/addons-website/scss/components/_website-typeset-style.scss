@@ -19,7 +19,7 @@
 }
 
 .#{$prefix}--typeset-style-container .page-h4 {
-  margin-top: 3rem;
+  margin-top: $spacing-09;
   display: inline-block;
 
   &:before {
