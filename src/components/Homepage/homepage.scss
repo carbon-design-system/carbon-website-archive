@@ -59,7 +59,7 @@
 .container--homepage .page-content > div > .bx--row:first-child h3 {
   @include carbon--type-style('expressive-heading-03', true);
   margin-top: rem(64px);
-  margin-bottom: $spacing-lg;
+  margin-bottom: $spacing-06;
 }
 
 .container--homepage .page-content > div > .bx--row:first-child h3 {
@@ -104,7 +104,7 @@
   align-items: center;
   color: $carbon--blue-40;
   text-decoration: none;
-  margin-top: $spacing-lg;
+  margin-top: $spacing-06;
 }
 
 .homepage--callout--blue a:hover {
@@ -112,7 +112,7 @@
 }
 
 .homepage--callout--blue svg {
-  margin-left: $spacing-md;
+  margin-left: $spacing-05;
   fill: $carbon--blue-40;
 }
 

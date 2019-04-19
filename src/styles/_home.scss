@@ -117,14 +117,14 @@
 }
 
 .banner__cta-btn {
-  margin-top: 2rem;
+  margin-top: $spacing-07;
   border-color: white;
   color: white;
   position: relative;
   z-index: 2;
 
   @media all and (max-width: 700px) {
-    margin-top: 1rem;
+    margin-top: $spacing-05;
   }
 
   &:hover {
@@ -203,7 +203,7 @@
   }
 
   @media all and (max-width: 600px) {
-    padding-bottom: 2rem;
+    padding-bottom: $spacing-07;
   }
 
   .overview-page__section--gray & {
@@ -222,7 +222,7 @@
   align-items: flex-start;
   justify-content: center;
   margin-bottom: 4rem;
-  margin-right: 1rem;
+  margin-right: $spacing-05;
 
   @media all and (max-width: 1300px) {
     width: calc(50% - 2rem);
@@ -238,7 +238,7 @@
   }
 
   .overview-page__section--gray & {
-    margin-bottom: 1rem;
+    margin-bottom: $spacing-05;
     margin-right: 0;
     width: 50%;
 
@@ -256,11 +256,11 @@
 .list-item__link img {
   width: 100px;
   height: 100px;
-  margin-right: 1.5rem;
+  margin-right: $spacing-06;
   flex-shrink: 0;
 
   @media all and (max-width: 1260px) {
-    margin-bottom: 1.5rem;
+    margin-bottom: $spacing-06;
     margin-right: 0;
   }
 }
@@ -270,7 +270,7 @@
   text-decoration: none;
 
   @media all and (max-width: 1270px) {
-    margin-left: 1rem;
+    margin-left: $spacing-05;
   }
 
   @media all and (max-width: 930px) {
@@ -285,7 +285,7 @@
     text-decoration: none;
     color: $text-01;
     font-weight: 300;
-    margin-bottom: 1rem;
+    margin-bottom: $spacing-05;
     transition: $transition--base $bx--standard-easing;
     margin-left: -2px;
     white-space: nowrap;
@@ -309,8 +309,8 @@
 
 .overview-page__tile {
   width: 100%;
-  margin-right: 1rem;
-  padding-right: 2rem;
+  margin-right: $spacing-05;
+  padding-right: $spacing-07;
   min-height: 166px;
   display: flex;
   align-items: center;
@@ -330,14 +330,14 @@
   height: 36px;
   flex-shrink: 0;
   align-self: flex-start;
-  margin: 1rem 1rem 1rem 0.5rem;
+  margin: $spacing-05 $spacing-05 $spacing-05 $spacing-03;
 
   @media all and (max-width: 1255px) {
-    margin-top: 0.5rem;
+    margin-top: $spacing-03;
   }
 
   @media all and (max-width: 930px) {
-    margin-top: 1.5rem;
+    margin-top: $spacing-06;
   }
 
   @media all and (max-width: 600px) {
@@ -356,13 +356,13 @@
   &:first-child {
     @include typescale('delta');
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: $spacing-05;
   }
 }
 
 .contribute__info {
   background: white;
-  padding: 1rem;
+  padding: $spacing-05;
   position: relative;
   z-index: 2;
 }
@@ -371,7 +371,7 @@
   @include typescale('alpha');
   color: $bright-blue;
   font-weight: 300;
-  margin-bottom: 2rem;
+  margin-bottom: $spacing-07;
 }
 
 .overview-page__section--contribute p {

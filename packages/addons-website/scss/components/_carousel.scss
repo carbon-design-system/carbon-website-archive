@@ -7,7 +7,7 @@
   .#{$prefix}--carousel-slide-wrapper {
     width: 100%;
     overflow: hidden;
-    margin-bottom: rem(16px);
+    margin-bottom: $spacing-05;
     position: relative;
 
     .#{$prefix}--carousel-slide {

@@ -35,8 +35,8 @@
 .#{$prefix}--website-switcher-list__item:nth-child(1),
 .#{$prefix}--website-switcher-list__item:nth-last-child(3) {
   position: relative;
-  margin-top: $spacing-md;
-  margin-bottom: $spacing-xs;
+  margin-top: $spacing-05;
+  margin-bottom: $spacing-03;
 
   &::after {
     content: '';
@@ -44,7 +44,7 @@
     position: absolute;
     bottom: rem(-9px);
     width: rem(222px);
-    margin-left: $spacing-md;
+    margin-left: $spacing-05;
     border-top: 1px solid $carbon--gray-80;
   }
 }

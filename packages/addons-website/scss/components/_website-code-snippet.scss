@@ -1,7 +1,7 @@
 @import '../prefix';
 
 .#{$prefix}--snippet--website {
-  margin-bottom: $spacing-lg;
+  margin-bottom: $spacing-06;
 }
 
 .#{$prefix}--snippet--website .#{$prefix}--snippet--single {
@@ -74,7 +74,7 @@
 }
 
 .#{$prefix}--snippet--website .#{$prefix}--snippet {
-  margin: 0 0 $spacing-lg 0;
+  margin: 0 0 $spacing-06 0;
   background: $ui-05;
   color: $inverse-01;
 }
