@@ -5,7 +5,6 @@ tabs: ['Basics', 'Choreography', 'Resources']
 
 import { Tab } from 'carbon-components-react';
 
-
 ### Motion can bring the screen to life, guide users through complex experiences, and help move them forward—from here to there, now to next, start to finish—and make progress.
 
 <AnchorLinks>
@@ -122,7 +121,7 @@ Avoid easing curves that are unnatural, distracting, or purely decorative. IBM m
 
 <Row>
 <Column offsetLg="4" colLg="8">
-<DoDontExample correct="false" full_width="true" label="Do not use easing curves that suggest bounce, stretch, or sudden stops.">
+<DoDontExample full_width="true" label="Do not use easing curves that suggest bounce, stretch, or sudden stops.">
 
 <Video vimeoId="310582418" />
 
@@ -151,12 +150,10 @@ Use `standard-easing` when an element is visible from the beginning to the end o
 </Tab>
 </WebsiteTabs>
 
-
-| Style      | IBM Motion package         | CSS                           | After Effects             |
-| ---------- | -------------------------- | ----------------------------- | ------------------------- |
+| Style      | IBM Motion package             | CSS                             | After Effects              |
+| ---------- | ------------------------------ | ------------------------------- | -------------------------- |
 | Productive | `motion(standard, productive)` | cubic-bezier(0.2, 0, 0.38, 0.9) | outgoing 20%, incoming 62% |
 | Expressive | `motion(standard, expressive)` | cubic-bezier(0.4, 0.14, 0.3, 1) | outgoing 40%, incoming 70% |
-
 
 ### Entrance easing
 
@@ -179,12 +176,10 @@ With this style, an element quickly appears and slows down to a stop. Use `entra
 </Tab>
 </WebsiteTabs>
 
-
-| Style      | IBM Motion package         | CSS                           | After Effects             |
-| ---------- | -------------------------- | ----------------------------- | ------------------------- |
+| Style      | IBM Motion package             | CSS                           | After Effects             |
+| ---------- | ------------------------------ | ----------------------------- | ------------------------- |
 | Productive | `motion(entrance, productive)` | cubic-bezier(0, 0, 0.38, 0.9) | outgoing 0%, incoming 62% |
 | Expressive | `motion(entrance, expressive)` | cubic-bezier(0, 0, 0.3, 1)    | outgoing 0%, incoming 70% |
-
 
 ### Exit easing
 
@@ -214,16 +209,15 @@ An exception to exits: if an element leaves the view but stays nearby, ready to 
 | Productive | `motion(exit, productive)` | cubic-bezier(0.2, 0, 1, 0.9)  | outgoing 20%, incoming 0% |
 | Expressive | `motion(exit, expressive)` | cubic-bezier(0.4, 0.14, 1, 1) | outgoing 40%, incoming 0% |
 
-
 ### Summary on easing
 
 The [IBM motion package](https://github.com/IBM/carbon-elements/tree/master/packages/motion) has the easing curves stored for fast access. This is the recommended method to call an easing curve and stay connected to receive any future updates.
 
-| Easing curve    | Productive                     | Expressive                      |
-| --------------- | ------------------------------ | ------------------------------- |
-| Standard easing | `motion(standard, productive)` | `motion(standard, expressive)`  |
-| Entrance easing | `motion(entrance, productive)` | `motion(entrance, expressive)`  |
-| Exit easing     | `motion(exit, productive)`     | `motion(exit, expressive)`      |
+| Easing curve    | Productive                     | Expressive                     |
+| --------------- | ------------------------------ | ------------------------------ |
+| Standard easing | `motion(standard, productive)` | `motion(standard, expressive)` |
+| Entrance easing | `motion(entrance, productive)` | `motion(entrance, expressive)` |
+| Exit easing     | `motion(exit, productive)`     | `motion(exit, expressive)`     |
 
 If you are unable to use the above method, cubic-bezier curve notation is the standard way to express easing curves.
 
@@ -232,7 +226,6 @@ If you are unable to use the above method, cubic-bezier curve notation is the st
 | Standard easing | cubic-bezier(0.2, 0, 0.38, 0.9) | cubic-bezier(0.4, 0.14, 0.3, 1) |
 | Entrance easing | cubic-bezier(0, 0, 0.38, 0.9)   | cubic-bezier(0, 0, 0.3, 1)      |
 | Exit easing     | cubic-bezier(0.2, 0, 1, 0.9)    | cubic-bezier(0.4, 0.14, 1, 1)   |
-
 
 ## Duration
 
@@ -270,9 +263,9 @@ Dynamic duration is an upcoming built-in feature for Carbon components and a par
 
 | Token                   | Usage                                                         | Value |     |
 | ----------------------- | ------------------------------------------------------------- | ----- | --- |
-| `duration--fast-01`     | Micro-interactions such as button and toggle                  | 70ms  | |
-| `duration--fast-02`     | Micro-interactions such as fade                               | 110ms | |
-| `duration--moderate-03` | Micro-interactions, small expansion, short distance movements | 150ms | |
-| `duration--moderate-04` | Expansion, system communication, toast                        | 240ms | |
-| `duration--slow-05`     | Large expansion, important system notifications               | 400ms | |
-| `duration--slow-06`     | Background dimming                                            | 700ms | |
+| `duration--fast-01`     | Micro-interactions such as button and toggle                  | 70ms  |     |
+| `duration--fast-02`     | Micro-interactions such as fade                               | 110ms |     |
+| `duration--moderate-03` | Micro-interactions, small expansion, short distance movements | 150ms |     |
+| `duration--moderate-04` | Expansion, system communication, toast                        | 240ms |     |
+| `duration--slow-05`     | Large expansion, important system notifications               | 400ms |     |
+| `duration--slow-06`     | Background dimming                                            | 700ms |     |
