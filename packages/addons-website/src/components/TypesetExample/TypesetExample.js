@@ -129,15 +129,17 @@ const TypesetExample = props => {
             style={{ padding: 0 }}
             className={`${prefix}--typeset-example`}>
             <div className={`${prefix}--typeset-example-row ${prefix}--row`}>
-              <div className={`${prefix}--typeset-example-description`}>
+              <div
+                className={`${prefix}--typeset-example-description ${prefix}--col-md-5`}>
                 <p className={versionClassNames} style={specs}>
                   {type.description}
                 </p>
               </div>
-              <div className={`${prefix}--typeset-example-specs`}>
-                <span className={`${prefix}--type-caption-01`}>
-                  <span className={`${prefix}--type-body-short-01`}>
-                    <strong>{type.name} </strong>
+              <div
+                className={`${prefix}--typeset-example-specs ${prefix}--col-md-3 ${prefix}--padding`}>
+                <span className={`${prefix}--type-body-short-01`}>
+                  <span className={`${prefix}--type-semibold`}>
+                    {type.name}{' '}
                   </span>
                   <br />
                   Type: {displaySpecs['font']}

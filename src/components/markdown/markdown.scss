@@ -19,7 +19,7 @@
 //----------------------------
 // No gutter
 //----------------------------
-.container .ibm--no-gutter {
+.container .bx--no-gutter {
   padding: 0;
 }
 
@@ -33,8 +33,8 @@
   @include carbon--type-style('expressive-heading-04', true);
   position: relative;
   color: $text-01;
-  margin-top: rem(48px);
-  margin-bottom: $spacing-lg;
+  margin-top: $spacing-09;
+  margin-bottom: $spacing-06;
   position: relative;
   display: inline-block;
 }
@@ -52,13 +52,13 @@
   @include carbon--type-style('expressive-heading-03', true);
   color: $text-01;
   margin-top: rem(24px);
-  margin-bottom: $spacing-md;
+  margin-bottom: $spacing-05;
   position: relative;
   display: inline-block;
 }
 
 .component-docs h3 {
-  margin-top: rem(48px);
+  margin-top: $spacing-09;
 }
 
 .page-h3#sizing {
@@ -66,7 +66,7 @@
 }
 
 .page-h3#what’s-included {
-  margin-bottom: rem(24px);
+  margin-bottom: $spacing-06;
 }
 //----------------------------
 // h4
@@ -76,22 +76,22 @@
 .component-docs h4 {
   @include carbon--type-style('heading-02');
   color: $text-01;
-  margin-top: rem(8px);
+  margin-top: $spacing-03;
   margin-bottom: 0;
   position: relative;
   display: inline-block;
 }
 
 .component-docs h4 {
-  margin-top: rem(48px);
+  margin-top: $spacing-09;
 }
 
 .component-docs h3 + h4 {
-  margin-top: rem(8px);
+  margin-top: $spacing-03;
 }
 
 // Targets heading elements when they are the first element on a page to remove top margin
-.page-content > div > .ibm--row:first-child {
+.page-content > div > .bx--row:first-child {
   .page-h4,
   .component-docs h4,
   .page-h3,
@@ -102,7 +102,7 @@
   }
 
   .page-h2:before {
-    padding-bottom: 3rem;
+    padding-bottom: $spacing-09;
   }
 }
 
@@ -122,8 +122,8 @@
   position: relative;
   @include carbon--type-style('heading-02');
   color: $text-01;
-  margin-top: rem(8px);
-  margin-bottom: rem(16px);
+  margin-top: $spacing-03;
+  margin-bottom: $spacing-05;
 }
 
 //----------------------------
@@ -165,7 +165,7 @@
 
 .page-h4:before {
   margin-top: -2rem;
-  padding-bottom: 2rem;
+  padding-bottom: $spacing-07;
 }
 
 //----------------------------
@@ -175,7 +175,7 @@
 .page-ul,
 .page-ol {
   @include carbon--type-style('body-long-02');
-  margin: 0 0 rem(24px) $spacing-lg;
+  margin: 0 0 $spacing-06 $spacing-06;
   line-height: 1.5;
   position: relative;
 }
@@ -186,14 +186,14 @@
 
 .page-ul > li {
   font-weight: 400;
-  padding-left: 1rem;
+  padding-left: $spacing-05;
   list-style-type: none;
   position: relative;
 
   &:before {
     position: absolute;
     content: '\2013';
-    margin-right: 0.5rem;
+    margin-right: $spacing-03;
     margin-bottom: 0.25rem;
     left: 0;
   }
@@ -201,7 +201,7 @@
 
 .page-ul > li span,
 .page-ol > li span {
-  margin-top: 1rem;
+  margin-top: $spacing-05;
 }
 
 .page-ol > li {
@@ -226,21 +226,21 @@
 // tags inside of lists and causing double grid code
 .container .page-ol,
 .container .page-ul {
-  .ibm--row {
+  .bx--row {
     margin: 0;
     width: 100%;
   }
 
-  .ibm--offset-lg-4 {
+  .bx--offset-lg-4 {
     flex: 0 0 100%;
     width: 100%;
     max-width: 100%;
     margin: 0;
   }
 
-  .ibm--col-lg-7,
-  .ibm--col-lg-8,
-  .ibm--col-lg-12 {
+  .bx--col-lg-7,
+  .bx--col-lg-8,
+  .bx--col-lg-12 {
     padding: 0;
     margin: 0;
     width: 100%;
@@ -264,7 +264,7 @@
   .page-ul {
     width: auto;
     margin-bottom: 0;
-    margin-top: rem(16px);
+    margin-top: $spacing-05;
 
     @include carbon--breakpoint('md') {
       margin-bottom: 2.25rem;
@@ -322,7 +322,7 @@
 }
 
 .anchor-links--small .page-ul {
-  margin-top: rem(16px);
+  margin-top: $spacing-05;
 }
 
 .anchor-links--column .page-ul {

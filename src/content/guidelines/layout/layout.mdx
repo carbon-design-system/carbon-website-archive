@@ -147,7 +147,7 @@ Padding is always a fixed multiple of mini units: 16 pixels at all standard brea
 
 ### Gutters
 
-Grid gutters can be absent as shown above, or present as shown below. Th margin around each grid box matches its padding, for a total gutter of 32 pixels. For closely related content, consider a gutterless grid. Apply gutters when content warrants more separation.
+Grid gutters can be absent as shown above, or present as shown below. The margin around each grid box matches its padding, for a total gutter of 32 pixels. For closely related content, consider a gutterless grid. Apply gutters when content warrants more separation.
 
 <ImageComponent cols="12" >
 
@@ -175,13 +175,9 @@ For best results, test designs and code at each of these standard breakpoints.
 
 ## Grid behaviors
 
-In user interfaces, screen size is dictated by the device and the user's chosen window size. We may know content in advance, or the content may be dynamic.
+In user interfaces, screen size is dictated by the device and the user's chosen window size. We may know content in advance, or the content may be dynamic. 
 
-Carefully consider the user's goal for their screen space, particularly when displaying dynamic content. For example, when the user resizes their browser, is their goal to:
-
-In user interfaces, screen size is dictated by the device and the user’s chosen window size. We may know content in advance or the content may be dynamic. Carefully consider the user’s goal for their screen space, particularly when displaying dynamic content. Choose the layout approach that best meets the user’s expectation in each case.
-
-For example, when the user resizes their browser, is their goal to: **See more things?** Then scale column count by tiling fixed boxes. **See more content within each thing?** Then scale boxes and use fixed column counts.
+Carefully consider the user's goal for their screen space, particularly when displaying dynamic content. If a user's goal is to see more items, scale column count by tiling fixed boxes. If a user wants to see more content within each item, scale boxes and use fixed column counts.
 
 <AnchorLinks small>
 
