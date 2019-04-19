@@ -2,7 +2,7 @@
 
 // Example
 .#{$prefix}--example {
-  margin-bottom: rem(24px);
+  margin-bottom: $spacing-06;
   width: 100%;
 }
 
@@ -101,7 +101,7 @@ p.#{$prefix}--example__text {
 }
 
 .#{$prefix}--example__caption {
-  padding: 8px 0 0 0;
+  padding: $spacing-03 0 0 0;
 }
 
 p.#{$prefix}--example__title {
@@ -122,7 +122,7 @@ p.#{$prefix}--example__description {
   @include font-smoothing;
   margin: 0;
   padding: 0;
-  padding-bottom: rem(24px);
+  padding-bottom: $spacing-06;
 }
 
 .#{$prefix}--example__caption {
@@ -135,7 +135,7 @@ p.#{$prefix}--example__description {
   }
 }
 
-.ibm--col-lg-4 .#{$prefix}--example__caption {
+.#{$prefix}--col-lg-4 .#{$prefix}--example__caption {
   @include breakpoint('md') {
     width: 100%;
   }

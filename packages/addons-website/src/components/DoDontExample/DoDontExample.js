@@ -29,7 +29,7 @@ export default class DoDontExample extends React.Component {
   renderCaption = (label, description) => {
     if (label || description) {
       return (
-        <div className={`${prefix}--example__caption ibm--row`}>
+        <div className={`${prefix}--example__caption ${prefix}--row`}>
           {label && <p className={`${prefix}--example__title`}>{label}</p>}
           {description && (
             <p className={`${prefix}--example__description`}>{description}</p>
