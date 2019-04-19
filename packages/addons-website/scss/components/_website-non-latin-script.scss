@@ -197,34 +197,34 @@ $font-prefix: '/fonts';
   margin-bottom: 3rem;
 }
 
-.ibm-type-mono,
-.ibm-type-mono * {
+.#{$prefix}--type-mono,
+.#{$prefix}--type-mono * {
   font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono',
     'Bitstream Vera Sans Mono', Courier, monospace !important;
 }
 
-.ibm-type-serif,
-.ibm-type-serif * {
+.#{$prefix}--type-serif,
+.#{$prefix}--type-serif * {
   font-family: 'IBM Plex Serif', 'Georgia', Times, serif !important;
 }
 
-.ibm-type-hebrew {
+.#{$prefix}--type-hebrew {
   font-family: 'IBM Plex Sans Hebrew' !important;
 }
 
-.ibm-type-thai {
+.#{$prefix}--type-thai {
   font-family: 'IBM Plex Thai' !important;
 }
 
-.ibm-type-devanagari {
+.#{$prefix}--type-devanagari {
   font-family: 'IBM Plex Devanagari' !important;
 }
 
-.ibm-type-arabic {
+.#{$prefix}--type-arabic {
   font-family: 'IBM Plex Arabic' !important;
 }
 
-.ibm-type-greek {
+.#{$prefix}--type-greek {
   font-family: 'IBM Plex Sans Greek' !important;
 }
 

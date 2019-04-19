@@ -9,7 +9,7 @@
   z-index: 2;
 }
 
-.#{$prefix}--website-footer .ibm--grid {
+.#{$prefix}--website-footer .#{$prefix}--grid {
   min-height: 370px;
   padding-top: $spacing-lg;
   padding-bottom: $spacing-xl;

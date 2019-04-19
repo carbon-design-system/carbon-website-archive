@@ -19,7 +19,7 @@
 //----------------------------
 // No gutter
 //----------------------------
-.container .ibm--no-gutter {
+.container .bx--no-gutter {
   padding: 0;
 }
 
@@ -91,7 +91,7 @@
 }
 
 // Targets heading elements when they are the first element on a page to remove top margin
-.page-content > div > .ibm--row:first-child {
+.page-content > div > .bx--row:first-child {
   .page-h4,
   .component-docs h4,
   .page-h3,
@@ -226,21 +226,21 @@
 // tags inside of lists and causing double grid code
 .container .page-ol,
 .container .page-ul {
-  .ibm--row {
+  .bx--row {
     margin: 0;
     width: 100%;
   }
 
-  .ibm--offset-lg-4 {
+  .bx--offset-lg-4 {
     flex: 0 0 100%;
     width: 100%;
     max-width: 100%;
     margin: 0;
   }
 
-  .ibm--col-lg-7,
-  .ibm--col-lg-8,
-  .ibm--col-lg-12 {
+  .bx--col-lg-7,
+  .bx--col-lg-8,
+  .bx--col-lg-12 {
     padding: 0;
     margin: 0;
     width: 100%;
