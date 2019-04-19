@@ -2,7 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { CheckmarkFilled24, CloseFilled16 } from '@carbon/icons-react';
+import { settings } from 'carbon-components';
 // need to update to CloseFilled24 once that exists
+
+const { prefix } = settings;
 
 export default class DoDontExample extends React.Component {
   static propTypes = {
@@ -26,9 +29,11 @@ export default class DoDontExample extends React.Component {
   renderCaption = (label, description) => {
     if (label || description) {
       return (
-        <div className="example__caption">
-          {label && <p className="example__title">{label}</p>}
-          {description && <p className="example__description">{description}</p>}
+        <div className={`${prefix}--example__caption ${prefix}--row`}>
+          {label && <p className={`${prefix}--example__title`}>{label}</p>}
+          {description && (
+            <p className={`${prefix}--example__description`}>{description}</p>
+          )}
         </div>
       );
     }
@@ -46,30 +51,33 @@ export default class DoDontExample extends React.Component {
     } = this.props;
 
     const wrapperClassNames = classnames({
-      example: true,
-      'example--square': square,
-      'example--correct': correct,
-      'example--incorrect': !correct,
-      'example--dark': dark,
+      [`${prefix}--example`]: true,
+      [`${prefix}--example--square`]: square,
+      [`${prefix}--example--correct`]: correct,
+      [`${prefix}--example--incorrect`]: !correct,
+      [`${prefix}--example--dark`]: dark,
     });
 
     const iconClassNames = classnames({
-      example__icon: true,
-      'example__icon--correct': correct,
-      'example__icon--incorrect': !correct,
+      [`${prefix}--example__icon`]: true,
+      [`${prefix}--example__icon--correct`]: correct,
+      [`${prefix}--example__icon--incorrect`]: !correct,
     });
+
     return (
       <div className={wrapperClassNames}>
-        <div className="example-card">
-          <div className="example-card__content">
+        <div className={`${prefix}--example-card`}>
+          <div className={`${prefix}--example-card__content`}>
             {correct ? (
               <CheckmarkFilled24 className={iconClassNames} />
             ) : (
               <CloseFilled16 className={iconClassNames} />
             )}
-            <div className="example__content">
+            <div className={`${prefix}--example__content`}>
               {children}
-              {text ? <p className="example__text">{text}</p> : null}
+              {text ? (
+                <p className={`${prefix}--example__text`}>{text}</p>
+              ) : null}
             </div>
           </div>
         </div>

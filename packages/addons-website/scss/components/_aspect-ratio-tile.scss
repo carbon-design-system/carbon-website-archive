@@ -31,7 +31,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1rem;
+    padding: $spacing-05;
     color: inherit;
     user-select: none;
     background-repeat: no-repeat;
@@ -117,7 +117,7 @@
   }
 }
 
-.ibm--col-lg-12 {
+.#{$prefix}--col-lg-12 {
   .#{$prefix}--aspect-ratio-tile {
     .#{$prefix}--aspect-ratio-tile-nested-content {
       .#{$prefix}--aspect-ratio-tile {

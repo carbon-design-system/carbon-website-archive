@@ -44,7 +44,7 @@ export default ({ data }) => {
       <Layout>
         <div className="container--homepage">
           <HomepageHeader />
-          <main className="page-content ibm--grid" id="maincontent">
+          <main className="page-content bx--grid" id="maincontent">
             <MDXRenderer>{post.code.body}</MDXRenderer>
           </main>
           <HomepageFooter />
@@ -66,7 +66,7 @@ export default ({ data }) => {
             <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
           )}
         </PageHeader>
-        <main className="page-content ibm--grid" id="maincontent">
+        <main className="page-content bx--grid" id="maincontent">
           <MDXRenderer>{post.code.body}</MDXRenderer>
           <EditLink slug={slug} />
         </main>
