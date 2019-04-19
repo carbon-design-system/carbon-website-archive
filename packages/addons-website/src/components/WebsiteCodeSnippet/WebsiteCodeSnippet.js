@@ -6,6 +6,9 @@ import Prism from 'prismjs';
 import 'prismjs/components/prism-bash';
 import 'prismjs/components/prism-scss';
 import { CopyToClipboard } from 'react-copy-to-clipboard/lib/Component';
+import { settings } from 'carbon-components';
+
+const { prefix } = settings;
 
 export default class WebsiteCodeSnippet extends React.Component {
   static propTypes = {
@@ -36,9 +39,10 @@ export default class WebsiteCodeSnippet extends React.Component {
     const { children } = this.props;
     const type = this.state.multi ? 'multi' : 'single';
     return (
-      <div className="ibm--row">
-        <div className="ibm--col-lg-8 ibm--offset-lg-4 ibm--no-gutter">
-          <div className="bx--snippet--website">
+      <div className={`${prefix}--row`}>
+        <div
+          className={`${prefix}--col-lg-8 ${prefix}--offset-lg-4 ${prefix}--no-gutter`}>
+          <div className={`${prefix}--snippet--website`}>
             <CopyToClipboard onCopy={() => this.setState({ copied: true })}>
               <CodeSnippet type={type}>
                 <div ref={element => (this.codeRef = element)}>{children}</div>
