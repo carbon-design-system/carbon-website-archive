@@ -24,13 +24,13 @@ module.exports = {
         import { AnchorLinks } from '@carbon/addons-website';
         import { Row, Column } from '@carbon/addons-website';
         import { ImageComponent } from '@carbon/addons-website';
+        import { DoDontExample } from '@carbon/addons-website';
         import ClickableTile from '${__dirname}/src/components/ClickableTile';
         import FeatureTile from '${__dirname}/src/components/FeatureTile';
         import ColorBlock from '${__dirname}/src/components/ColorBlock';
         import ComponentCode from '${__dirname}/src/components/ComponentCode';
         import ComponentDocs from '${__dirname}/src/components/ComponentDocs';
         import ComponentReact from '${__dirname}/src/components/ComponentReact';
-        import DoDontExample from '${__dirname}/src/components/DoDontExample';
         import WebsiteTabs from '${__dirname}/src/components/WebsiteTabs'; 
         import SimpleColumns from '${__dirname}/src/components/SimpleColumns';
         import Video from '${__dirname}/src/components/Video';
@@ -49,8 +49,6 @@ module.exports = {
           Video,
           Row,
           Column,
-          WebsiteTabs,
-          DoDontExample,
           WebsiteTabs,
           SimpleColumns,
           Video,
