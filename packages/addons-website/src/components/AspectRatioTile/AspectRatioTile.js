@@ -129,8 +129,10 @@ const AspectRatioTile = ({
             }
             style={transparentImageStyle}>
             <div className={`${prefix}--aspect-ratio-tile-title`}>
-              <div className="bx--type-body-long-01">{subtitle}</div>
-              <div className="bx--type-expressive-heading-03">{title}</div>
+              <div className={`${prefix}--type-body-long-01`}>{subtitle}</div>
+              <div className={`${prefix}--type-expressive-heading-03`}>
+                {title}
+              </div>
             </div>
             {identityIcon ? (
               <div className={`${prefix}--aspect-ratio-tile-identity-icon`}>

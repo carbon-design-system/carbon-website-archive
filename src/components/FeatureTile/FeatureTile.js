@@ -17,7 +17,7 @@ export default class FeatureTile extends React.Component {
 
     const classNames = classnames(
       {
-        'ibm--row': true,
+        'bx--row': true,
         'feature-tile--margin': margin === 'true',
       },
       className
@@ -32,7 +32,7 @@ export default class FeatureTile extends React.Component {
 
     return (
       <div className={classNames}>
-        <div className="ibm--col-lg-12 ibm--offset-lg-4 flex-wrap">
+        <div className="bx--col-lg-12 bx--offset-lg-4 flex-wrap">
           <Link to={href} className={linkClasses}>
             <div className="tile__img">{children}</div>
             <div className="feature-tile__tile">

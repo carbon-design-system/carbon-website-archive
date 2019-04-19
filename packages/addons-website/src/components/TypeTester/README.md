@@ -11,7 +11,7 @@ const languageDropdownContent = [
   {
     label: 'IBM Plex Sans Arabic',
     language: 'arabic', 
-    className: 'ibm-type-arabic',
+    className: 'bx--type-arabic',
     weights: commonFontWeights,
   }
 ].map(...)
