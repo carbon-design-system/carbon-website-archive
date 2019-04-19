@@ -100,7 +100,7 @@ div.feature-tile--desktop {
   @include carbon--breakpoint('md') {
     margin-bottom: $spacing-05;
 
-    & > .ibm--col-lg-12 {
+    & > .bx--col-lg-12 {
       padding: 0;
     }
   }
