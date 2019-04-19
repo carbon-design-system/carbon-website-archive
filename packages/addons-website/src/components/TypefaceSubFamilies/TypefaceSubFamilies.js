@@ -66,15 +66,15 @@ export default class TypefaceSubFamilies extends React.Component {
 
     const classNamesContainer = classnames({
       [`${prefix}--subfamilies-TypeTesterExample`]: true,
-      'ibm--col-md-8': true,
-      'ibm--col-sm-4': true,
+      [`${prefix}--col-md-8`]: true,
+      [`${prefix}--col-sm-4`]: true,
       'flex-wrap': true,
       [`${prefix + '--' + this.state.fontVariant}`]: true,
     });
 
     return (
       <div className={`${prefix}--subfamilies`}>
-        <div className="bx--row ibm--offset-lg-4">
+        <div className={`${prefix}--row ${prefix}--offset-lg-4`}>
           <div className={`${prefix}--subfamilies-dropdown-container`}>
             <div className={classNamesMenuDropdown}>
               <Dropdown
@@ -118,40 +118,56 @@ export default class TypefaceSubFamilies extends React.Component {
           <div className={classNamesContainer}>
             {/* Inline styles for all weights don't exist as helper classes. */}
             <div
-              className={`${prefix}--padding-left-none ibm-padding--horizontal ibm--col-md-4`}>
+              className={`${prefix}--padding-left-none ${prefix}--padding--horizontal ${prefix}--col-md-4`}>
               <div style={{ fontWeight: 100 }}>Thin</div>
-              <div style={{ fontWeight: 100 }} className="ibm-type-italic">
+              <div
+                style={{ fontWeight: 100 }}
+                className={`${prefix}--type-italic`}>
                 Thin Italic
               </div>
               <div style={{ fontWeight: 200 }}>ExtraLight</div>
-              <div style={{ fontWeight: 200 }} className="ibm-type-italic">
+              <div
+                style={{ fontWeight: 200 }}
+                className={`${prefix}--type-italic`}>
                 ExtraLight Italic
               </div>
               <div style={{ fontWeight: 300 }}>Light</div>
-              <div style={{ fontWeight: 300 }} className="ibm-type-italic">
+              <div
+                style={{ fontWeight: 300 }}
+                className={`${prefix}--type-italic`}>
                 Light Italic
               </div>
               <div style={{ fontWeight: 400 }}>Regular</div>
-              <div style={{ fontWeight: 400 }} className="ibm-type-italic">
+              <div
+                style={{ fontWeight: 400 }}
+                className={`${prefix}--type-italic`}>
                 Regular Italic
               </div>
             </div>
             <div
-              className={`${prefix}--padding-left-none ibm-padding--horizontal ibm--col-md-4`}>
+              className={`${prefix}--padding-left-none ${prefix}--padding--horizontal ${prefix}--col-md-4`}>
               <div style={{ fontWeight: 450 }}>Text</div>
-              <div style={{ fontWeight: 450 }} className="ibm-type-italic">
+              <div
+                style={{ fontWeight: 450 }}
+                className={`${prefix}--type-italic`}>
                 Text Italic
               </div>
               <div style={{ fontWeight: 500 }}>Medium</div>
-              <div style={{ fontWeight: 500 }} className="ibm-type-italic">
+              <div
+                style={{ fontWeight: 500 }}
+                className={`${prefix}--type-italic`}>
                 Medium Italic
               </div>
               <div style={{ fontWeight: 600 }}>SemiBold</div>
-              <div style={{ fontWeight: 600 }} className="ibm-type-italic">
+              <div
+                style={{ fontWeight: 600 }}
+                className={`${prefix}--type-italic`}>
                 SemiBold Italic
               </div>
               <div style={{ fontWeight: 700 }}>Bold</div>
-              <div style={{ fontWeight: 700 }} className="ibm-type-italic">
+              <div
+                style={{ fontWeight: 700 }}
+                className={`${prefix}--type-italic`}>
                 Bold Italic
               </div>
             </div>

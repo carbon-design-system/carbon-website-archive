@@ -313,7 +313,7 @@ a.#{$prefix}--side-nav__link > .#{$prefix}--side-nav__icon {
   margin-right: 0;
 }
 
-.bx--side-nav.bx--side-nav--website + div::before {
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website + div::before {
   content: '';
   visibility: hidden;
   opacity: 0;
@@ -327,7 +327,7 @@ a.#{$prefix}--side-nav__link > .#{$prefix}--side-nav__icon {
   z-index: 100;
 }
 
-.bx--side-nav.bx--side-nav--website:not(.side-nav__closed) {
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website:not(.side-nav__closed) {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 
   & + div {
