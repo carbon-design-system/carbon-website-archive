@@ -72,11 +72,11 @@ class ImageComponent extends Component {
       zoom,
     } = this.props;
     const columnClasses = classnames({
-      [`${prefix}--col-lg-12 ${prefix}--offset-lg-4`]: cols == 12,
-      [`${prefix}--col-lg-8 ${prefix}--offset-lg-4`]: cols == 8,
+      [`${prefix}--col-lg-12 ${prefix}--offset-lg-4`]: cols === 12,
+      [`${prefix}--col-lg-8 ${prefix}--offset-lg-4`]: cols === 8,
       [`${prefix}--col-lg-6 ${prefix}--col-md-6 ${prefix}--offset-lg-4`]:
-        cols == 6,
-      [`${prefix}--col-lg-4 ${prefix}--offset-lg-4`]: cols == 4,
+        cols === 6,
+      [`${prefix}--col-lg-4 ${prefix}--offset-lg-4`]: cols === 4,
     });
     const imgComponentClasses = classnames(className, {
       [`${prefix}--image-component`]: true,
@@ -89,7 +89,7 @@ class ImageComponent extends Component {
     });
     const magnifierClasses = classnames({
       [`${prefix}--image-component-magnifier`]: zoom === 'true',
-      [`${prefix}--image-component-magnifier-hide`]: zoom != 'true',
+      [`${prefix}--image-component-magnifier-hide`]: zoom !== 'true',
     });
     const imgWrapperClasses = classnames({
       [`${prefix}--image-component-wrapper-zoom`]: zoom === 'true',

@@ -67,7 +67,7 @@ const TypesetExample = props => {
         };
 
         const displayWeight = (weight, style) => {
-          if (style == 'italic') {
+          if (style === 'italic') {
             return weight + ' / Italic';
           } else {
             switch (weight) {

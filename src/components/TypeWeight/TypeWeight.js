@@ -12,7 +12,7 @@ export default class typeWeight extends React.Component {
     const typeWeightItalic = require('../../content/guidelines/typography/_type-weight-italic.md');
     const typeTypes = require('../../content/guidelines/typography/_type-types.md');
 
-    if (type == 'types') {
+    if (type === 'types') {
       return (
         <div className="bx--row">
           <div className="bx--col-lg-8 bx--offset-lg-4 type-weight">
@@ -22,7 +22,7 @@ export default class typeWeight extends React.Component {
       );
     }
 
-    if (type == 'italic') {
+    if (type === 'italic') {
       return (
         <div className="bx--row">
           <div className="bx--col-lg-8 bx--offset-lg-4 type-weight">

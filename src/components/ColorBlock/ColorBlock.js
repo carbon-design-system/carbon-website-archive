@@ -44,7 +44,8 @@ export default class ColorBlock extends React.Component {
   render() {
     const hex = this.props.children;
     const size = this.props.size;
-    const showhex = this.props.showhex == 'true' || this.props.showhex == true;
+    const showhex =
+      this.props.showhex === 'true' || this.props.showhex === true;
     const squareSize = this.swatchSize(size);
 
     const colorBlockClassnames = classnames({
