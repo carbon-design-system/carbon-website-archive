@@ -20,7 +20,7 @@ export default class HomepageVideo extends React.Component {
   };
 
   onClick = evt => {
-    evt.preventDefault;
+    evt.preventDefault();
     const video = document.querySelector('.homepage-video--wrapper');
     const iframe = video.querySelector('iframe');
     const player = new Player(iframe);
