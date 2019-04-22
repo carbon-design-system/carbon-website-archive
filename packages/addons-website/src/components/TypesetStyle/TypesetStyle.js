@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 import { settings } from 'carbon-components';
 import { baseFontSize, breakpoints as carbonBreakpoints } from '@carbon/layout';
 import { findLastIndex, values } from 'lodash';
@@ -755,7 +756,49 @@ class TypesetStyle extends React.Component {
   state = {
     simulatedScreenWidth: 1056,
     tab: 0,
+    sticky: false,
+    mobile: false,
   };
+
+  componentDidMount() {
+    if (window.innerWidth < 500) {
+      this.setState({
+        mobile: true,
+      });
+    }
+    this.addResizeListener();
+    this.addScrollListener();
+  }
+
+  addScrollListener() {
+    document.addEventListener('scroll', () => {
+      if (this.refs.stickyBar) {
+        if (this.refs.stickyBar.getBoundingClientRect().top <= 104) {
+          this.setState({
+            sticky: true,
+          });
+        } else if (this.refs.stickyBar.getBoundingClientRect().top > 104) {
+          this.setState({
+            sticky: false,
+          });
+        }
+      }
+    });
+  }
+
+  addResizeListener() {
+    window.addEventListener('resize', () => {
+      if (window.innerWidth < 500) {
+        this.setState({
+          mobile: true,
+        });
+      } else if (window.innerWidth > 500) {
+        this.setState({
+          mobile: false,
+        });
+      }
+    });
+  }
 
   toggleBreakpoint = e => {
     this.setState({ simulatedScreenWidth: Number(e.target.value) });
@@ -799,6 +842,14 @@ class TypesetStyle extends React.Component {
       typesets,
     } = this.props;
 
+    const typesetStyleStickyClassnames = classnames(
+      [`${prefix}--typeset-style-controls-sticky`],
+      [`${prefix}--row`],
+      {
+        [`${prefix}--typeset-style-controls-sticky-stuck`]: this.state.sticky,
+      }
+    );
+
     return (
       <div
         className={`${prefix}--typeset-style-container ${prefix}--offset-lg-4`}>
@@ -812,8 +863,7 @@ class TypesetStyle extends React.Component {
               <div
                 className={`${prefix}--typeset-style-title-shiv ${prefix}--row`}
               />
-              <div
-                className={`${prefix}--typeset-style-controls-sticky ${prefix}--row`}>
+              <div ref="stickyBar" className={typesetStyleStickyClassnames}>
                 <div
                   className={`${prefix}--typeset-style-breakpoint-controls ibm--col-md-5 ibm--col-lg-8`}>
                   <span
