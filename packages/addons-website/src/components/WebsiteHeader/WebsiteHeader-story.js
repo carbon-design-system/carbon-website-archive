@@ -18,6 +18,7 @@ import {
   HeaderGlobalBar,
   HeaderGlobalAction,
 } from 'carbon-components-react/lib/components/UIShell';
+
 import WebsiteSwitcher from '../WebsiteSwitcher/WebsiteSwitcher';
 import AppSwitcher20 from '@carbon/icons-react/es/appswitcher/20';
 

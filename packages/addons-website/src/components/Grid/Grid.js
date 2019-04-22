@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
+import { settings } from 'carbon-components';
+const prefix = settings.prefix;
+
 export const Grid = ({ children, className }) => {
   return (
-    <div className={classnames('ibm--grid', className)}>
-      {children}
-    </div>
+    <div className={classnames([`${prefix}--grid`], className)}>{children}</div>
   );
 };
 
@@ -21,9 +22,7 @@ Grid.propTypes = {
 
 export const Row = ({ children, className }) => {
   return (
-    <div className={classnames('ibm--row', className)}>
-      {children}
-    </div>
+    <div className={classnames([`${prefix}--row`], className)}>{children}</div>
   );
 };
 
@@ -53,18 +52,18 @@ export const Column = ({
   className,
 }) => {
   const colClasses = classnames({
-    'ibm--no-gutter-sm': noGutterSm,
-    'ibm--no-gutter-md': noGutterMd,
-    'ibm--no-gutter-lg': noGutterLg,
-    'ibm--no-gutter-sm--left': noGutterSmLeft,
-    'ibm--no-gutter-md--left': noGutterMdLeft,
-    'ibm--no-gutter-lg--left': noGutterLgLeft,
-    [`ibm--offset-sm-${offsetSm}`]: offsetSm,
-    [`ibm--offset-md-${offsetMd}`]: offsetMd,
-    [`ibm--offset-lg-${offsetLg}`]: offsetLg,
-    [`ibm--col-lg-${colLg}`]: colLg,
-    [`ibm--col-md-${colMd}`]: colMd,
-    [`ibm--col-sm-${colSm}`]: colSm,
+    [`${prefix}--no-gutter-sm`]: noGutterSm,
+    [`${prefix}--no-gutter-md`]: noGutterMd,
+    [`${prefix}--no-gutter-lg`]: noGutterLg,
+    [`${prefix}--no-gutter-sm--left`]: noGutterSmLeft,
+    [`${prefix}--no-gutter-md--left`]: noGutterMdLeft,
+    [`${prefix}--no-gutter-lg--left`]: noGutterLgLeft,
+    [`${prefix}--offset-sm-${offsetSm}`]: offsetSm,
+    [`${prefix}--offset-md-${offsetMd}`]: offsetMd,
+    [`${prefix}--offset-lg-${offsetLg}`]: offsetLg,
+    [`${prefix}--col-lg-${colLg}`]: colLg,
+    [`${prefix}--col-md-${colMd}`]: colMd,
+    [`${prefix}--col-sm-${colSm}`]: colSm,
     [className]: className,
   });
 

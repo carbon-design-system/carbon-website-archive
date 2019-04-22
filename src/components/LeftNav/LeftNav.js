@@ -36,9 +36,6 @@ export default class LeftNav extends React.Component {
     });
 
   render() {
-    const { GATSBY_CARBON_ENV } = process.env;
-    const isInternal = GATSBY_CARBON_ENV == 'internal';
-
     const { isLeftNavOpen, isLeftNavFinal, is404Page } = this.props;
 
     const classNamesClickToClose = classnames({

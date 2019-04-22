@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs, Tab } from 'carbon-components-react';
+import { Tabs } from 'carbon-components-react';
 import classnames from 'classnames';
 
 export default class WebsiteTabs extends React.Component {
@@ -56,8 +56,8 @@ export default class WebsiteTabs extends React.Component {
     });
 
     return (
-      <div className="ibm--row">
-        <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--no-gutter">
+      <div className="bx--row">
+        <div className="bx--col-lg-12 bx--offset-lg-4 bx--no-gutter">
           <div className={classNames}>
             <Tabs>{this.tabChildren}</Tabs>
           </div>

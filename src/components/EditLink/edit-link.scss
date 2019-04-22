@@ -7,6 +7,7 @@
   @include carbon--type-style('body-short-01');
   color: $text-02;
   transition: $transition--base;
+
   &:hover {
     color: $text-01;
   }

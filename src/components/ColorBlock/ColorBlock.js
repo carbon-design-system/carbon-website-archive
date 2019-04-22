@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { runInDebugContext } from 'vm';
 import classnames from 'classnames';
 
 export default class ColorBlock extends React.Component {

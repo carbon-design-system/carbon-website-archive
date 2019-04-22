@@ -1,7 +1,6 @@
 import React from 'react';
-import GlobalSearchInput from './GlobalSearchInput'
-import Close20 from '@carbon/icons-react/es/close/20';
-import Search20 from '@carbon/icons-react/es/search/20';
+import { Close20, Search20 } from '@carbon/icons-react';
+import GlobalSearchInput from './GlobalSearchInput';
 
 export default class GlobalSearch extends React.Component {
   state = {
@@ -13,7 +12,7 @@ export default class GlobalSearch extends React.Component {
       typeof window === `undefined` || // eslint-disable-line no-undef
       typeof window.docsearch === `undefined` // eslint-disable-line no-undef
     ) {
-      console.warn(`Search has failed to load and now is being disabled`);
+      console.warn(`Search has failed to load and now is being disabled`); // eslint-disable-line no-console
     } else {
       // eslint-disable-next-line no-undef
       window.docsearch({

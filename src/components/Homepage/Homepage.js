@@ -11,8 +11,6 @@ export class HomepageHeader extends React.Component {
   render() {
     const { GATSBY_CARBON_ENV } = process.env;
     const isInternal = GATSBY_CARBON_ENV == 'internal';
-    // Banner image
-    const bannerImg = require('../../content/homepage/images/homepage_img.jpg');
 
     const homeTitle = isInternal ? (
       <h3 className="homepage--header__title">
@@ -34,9 +32,9 @@ export class HomepageHeader extends React.Component {
       <div>
         <span className="homepage--dots" />
         <section className="homepage--header">
-          <div className="ibm--grid">
-            <div className="ibm--row">
-              <div className="ibm--col-lg-4 ibm--offset-lg-4">{homeTitle}</div>
+          <div className="bx--grid">
+            <div className="bx--row">
+              <div className="bx--col-lg-4 bx--offset-lg-4">{homeTitle}</div>
             </div>
           </div>
           <HomepageVideo>
@@ -48,18 +46,18 @@ export class HomepageHeader extends React.Component {
           </HomepageVideo>
         </section>
         <section className="homepage--callout">
-          <div className="ibm--grid">
-            <div className="ibm--row">
+          <div className="bx--grid">
+            <div className="bx--row">
               <aside
                 aria-label="header callout"
-                className="ibm--col-md-4  ibm--col-lg-4 ibm--offset-lg-4">
+                className="bx--col-md-4  bx--col-lg-4 bx--offset-lg-4">
                 <h3>
                   Inclusive, flexible
                   <br />
                   and consistent
                 </h3>
               </aside>
-              <div className="ibm--col-lg-8 ibm--col-md-4">
+              <div className="bx--col-lg-8 bx--col-md-4">
                 <p className="bx--type-expressive-paragraph-01">
                   The <strong>Carbon Design System</strong> is IBM&rsquo;s
                   open-source design system for products and experiences. With
@@ -80,17 +78,17 @@ export class HomepageFooter extends React.Component {
   render() {
     return (
       <div className="homepage--callout homepage--callout--blue">
-        <div className="ibm--grid">
-          <section className="ibm--row">
+        <div className="bx--grid">
+          <section className="bx--row">
             <aside
               aria-label="footer callout"
-              className="ibm--col-md-4 ibm--col-lg-4 ibm--offset-lg-4">
+              className="bx--col-md-4 bx--col-lg-4 bx--offset-lg-4">
               <h3>
                 Wondering how <br />
                 to contribute?
               </h3>
             </aside>
-            <div className="ibm--col-lg-8 ibm--col-md-4">
+            <div className="bx--col-lg-8 bx--col-md-4">
               <div className="homepage--footer__info">
                 <p className="bx--type-expressive-paragraph-01">
                   We welcome all feedback, designs, or ideas in order to produce

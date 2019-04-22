@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
-const path = require('path');
 
 class ImageComponent extends Component {
   static propTypes = {
@@ -29,10 +28,10 @@ class ImageComponent extends Component {
       bg,
     } = this.props;
     const columnClasses = classnames({
-      'ibm--col-lg-12 ibm--offset-lg-4': cols == 12,
-      'ibm--col-lg-8 ibm--offset-lg-4': cols == 8,
-      'ibm--col-lg-6 ibm--col-md-6 ibm--offset-lg-4': cols == 6,
-      'ibm--col-lg-4 ibm--offset-lg-4': cols == 4,
+      'bx--col-lg-12 bx--offset-lg-4': cols == 12,
+      'bx--col-lg-8 bx--offset-lg-4': cols == 8,
+      'bx--col-lg-6 bx--col-md-6 bx--offset-lg-4': cols == 6,
+      'bx--col-lg-4 bx--offset-lg-4': cols == 4,
     });
     const imgComponentClasses = classnames('image-component', className, {
       'no-caption': caption === undefined,
@@ -43,12 +42,12 @@ class ImageComponent extends Component {
     });
 
     return (
-      <div className="ibm--row image-component__container">
+      <div className="bx--row image-component__container">
         <div className={columnClasses}>
           <div className={imgComponentClasses}>{children}</div>
         </div>
         {caption && (
-          <div className="ibm--col-lg-4 ibm--col-md-4 ibm--offset-lg-4">
+          <div className="bx--col-lg-4 bx--col-md-4 bx--offset-lg-4">
             <p className="image-component__caption">{caption}</p>
           </div>
         )}
