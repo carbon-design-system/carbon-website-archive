@@ -800,7 +800,8 @@ class TypesetStyle extends React.Component {
     } = this.props;
 
     return (
-      <div className={`${prefix}--typeset-style-container ibm--offset-lg-4`}>
+      <div
+        className={`${prefix}--typeset-style-container ${prefix}--offset-lg-4`}>
         <StickyContainer
           navBar={navBar || true}
           banner={banner || true}
