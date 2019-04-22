@@ -5,7 +5,7 @@
 
 .color-block__color {
   display: block;
-  margin-top: $spacing-3xs;
+  margin-top: $spacing-01;
   height: 12px;
   width: 12px;
   border: 1px solid $ui-03;
@@ -14,5 +14,5 @@
 .color-block__color--with-label {
   left: 5rem;
   position: absolute;
-  top: $spacing-3xs;
+  top: $spacing-01;
 }

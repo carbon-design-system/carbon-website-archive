@@ -28,7 +28,7 @@ $font-prefix: '/fonts';
   background: none;
   color: $carbon--black-100;
   border: 0;
-  padding: 0.5rem 0;
+  padding: $spacing-03 0;
   position: absolute;
   top: 0;
   right: 1rem;
@@ -73,7 +73,7 @@ $font-prefix: '/fonts';
   margin-bottom: 0;
   display: block;
   border: 0;
-  padding-top: 0.5rem;
+  padding-top: $spacing-03;
   margin-top: 0;
 }
 
@@ -84,8 +84,8 @@ $font-prefix: '/fonts';
   outline: none;
   height: 1.5em;
   padding: 0;
-  padding-bottom: 0.5rem;
-  padding-top: 1rem;
+  padding-bottom: $spacing-03;
+  padding-top: $spacing-05;
   border-width: 0;
   margin-bottom: 0;
   margin-top: 0;
@@ -97,11 +97,11 @@ $font-prefix: '/fonts';
 
   @include carbon--breakpoint('md') {
     margin-top: -0.5rem;
-    margin-bottom: 0.5rem !important;
+    margin-bottom: $spacing-03 !important;
   }
   @include carbon--breakpoint('lg') {
     margin-top: -1.5rem;
-    margin-bottom: 0.5rem !important;
+    margin-bottom: $spacing-03 !important;
   }
   width: 100%;
   color: $carbon--gray-90;
@@ -114,14 +114,14 @@ $font-prefix: '/fonts';
   // safari wrong height fix
   @include carbon--breakpoint-down('md') {
     line-height: 1.5em;
-    margin-bottom: 1rem !important;
-    padding-bottom: 1rem;
+    margin-bottom: $spacing-05 !important;
+    padding-bottom: $spacing-05;
   }
 
   @media not all and (min-resolution: 0.001dpcm) {
     line-height: 1.5em;
-    margin-bottom: 1rem !important;
-    padding-bottom: 1rem;
+    margin-bottom: $spacing-05 !important;
+    padding-bottom: $spacing-05;
   }
   @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
     line-height: 100%;
@@ -130,29 +130,29 @@ $font-prefix: '/fonts';
 
 .#{$prefix}--non-latin-type-example-devanagari {
   margin-top: 0rem !important;
-  margin-bottom: 1rem;
+  margin-bottom: $spacing-05;
   padding-top: 0rem !important;
   padding-bottom: 0;
 
   @include carbon--breakpoint('md') {
-    padding-top: 1rem !important;
+    padding-top: $spacing-05 !important;
   }
   @include carbon--breakpoint-down('md') {
     margin-top: 0rem !important;
-    margin-bottom: 1rem;
+    margin-bottom: $spacing-05;
     line-height: 1.5em;
     padding-bottom: 0;
   }
   @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
     margin-top: 0rem !important;
-    margin-bottom: 1rem;
+    margin-bottom: $spacing-05;
     line-height: 1.5em;
   }
 }
 
 .#{$prefix}--non-latin-type-example-thai {
-  padding-bottom: 1rem !important;
-  margin-bottom: 1rem !important;
+  padding-bottom: $spacing-05 !important;
+  margin-bottom: $spacing-05 !important;
   line-height: 1.5em !important;
   line-height: 2em !important;
 
@@ -164,13 +164,13 @@ $font-prefix: '/fonts';
 
 .#{$prefix}--non-latin-type-example-arabic {
   margin-bottom: 0 !important;
-  padding-bottom: 2rem;
+  padding-bottom: $spacing-07;
   line-height: 3em;
   height: 2em;
 
   @include carbon--breakpoint('md') {
-    margin-top: 1rem;
-    padding-bottom: 3rem;
+    margin-top: $spacing-05;
+    padding-bottom: $spacing-09;
     height: 1.5em;
   }
 
@@ -193,38 +193,38 @@ $font-prefix: '/fonts';
 }
 
 .#{$prefix}--non-latin-outer-spacing {
-  margin-top: 2rem;
+  margin-top: $spacing-07;
   margin-bottom: 3rem;
 }
 
-.ibm-type-mono,
-.ibm-type-mono * {
+.#{$prefix}--type-mono,
+.#{$prefix}--type-mono * {
   font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono',
     'Bitstream Vera Sans Mono', Courier, monospace !important;
 }
 
-.ibm-type-serif,
-.ibm-type-serif * {
+.#{$prefix}--type-serif,
+.#{$prefix}--type-serif * {
   font-family: 'IBM Plex Serif', 'Georgia', Times, serif !important;
 }
 
-.ibm-type-hebrew {
+.#{$prefix}--type-hebrew {
   font-family: 'IBM Plex Sans Hebrew' !important;
 }
 
-.ibm-type-thai {
+.#{$prefix}--type-thai {
   font-family: 'IBM Plex Thai' !important;
 }
 
-.ibm-type-devanagari {
+.#{$prefix}--type-devanagari {
   font-family: 'IBM Plex Devanagari' !important;
 }
 
-.ibm-type-arabic {
+.#{$prefix}--type-arabic {
   font-family: 'IBM Plex Arabic' !important;
 }
 
-.ibm-type-greek {
+.#{$prefix}--type-greek {
   font-family: 'IBM Plex Sans Greek' !important;
 }
 
@@ -233,6 +233,7 @@ $font-prefix: '/fonts';
   font-family: 'IBM Plex Sans Greek';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v5/zYXgKVElMYYaJe8bpLHnCwDKhdLeFaxOedfTDw.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v5/zYXgKVElMYYaJe8bpLHnCwDKhdLeFaxOedfTDw.woff2)
+    format('woff2');
   unicode-range: U+0370-03FF;
 }

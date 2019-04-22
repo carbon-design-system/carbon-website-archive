@@ -8,7 +8,7 @@ a.tile--article {
   justify-content: space-between;
   padding: 0;
   background: $carbon__white-0;
-  margin-bottom: 1rem;
+  margin-bottom: $spacing-05;
   width: 100%;
 }
 
@@ -41,14 +41,14 @@ a.tile--article.tile--dark:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: $spacing-md;
+  padding: $spacing-05;
   padding-right: 25%;
 
   @include carbon--breakpoint('lg') {
-    padding-right: 1rem;
+    padding-right: $spacing-05;
   }
 
- @include carbon--breakpoint('xlg')  {
+  @include carbon--breakpoint('xlg') {
     padding-right: 30%;
   }
 }
@@ -90,7 +90,7 @@ a.tile--article.tile--dark:hover {
 .tile--resource a.bx--tile {
   text-decoration: none;
   color: $text-01;
-  padding: $spacing-md;
+  padding: $spacing-05;
   position: relative;
   background: $carbon--white-0;
   height: 100%;
@@ -122,7 +122,7 @@ a.tile--article.tile--dark:hover {
   width: 100%;
   text-decoration: none;
   color: $text-01;
-  margin: 0 0 $spacing-xs 0;
+  margin: 0 0 $spacing-03 0;
   padding: 0 0 0 0;
   @include carbon--type-style('body-short-01');
 }
@@ -146,8 +146,8 @@ a.tile--article.tile--dark:hover {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   position: absolute;
-  left: $spacing-md;
-  bottom: $spacing-md;
+  left: $spacing-05;
+  bottom: $spacing-05;
 
   img {
     width: 100%;
@@ -157,8 +157,8 @@ a.tile--article.tile--dark:hover {
 
 .tile--resource .tile__link-icon {
   position: absolute;
-  right: $spacing-md;
-  bottom: $spacing-md;
+  right: $spacing-05;
+  bottom: $spacing-05;
   width: 20px;
   height: 20px;
 
@@ -225,5 +225,5 @@ a.tile--article .tile__caption p {
 }
 
 a.tile--article.tile--dark .tile__caption p {
-  color: #bebebe;
+  color: $carbon--gray-30;
 }

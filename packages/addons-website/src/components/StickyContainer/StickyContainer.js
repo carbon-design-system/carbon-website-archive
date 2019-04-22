@@ -21,7 +21,11 @@ const StickyContainer = ({
     [`${prefix}--sticky-container-secondary-hidden`]: !navBar && secondary,
   });
 
-  return <div className={stickyClass} style={{top: top ? top : null}}>{children}</div>;
+  return (
+    <div className={stickyClass} style={{ top: top ? top : null }}>
+      {children}
+    </div>
+  );
 };
 
 StickyContainer.propTypes = {
@@ -35,7 +39,7 @@ StickyContainer.propTypes = {
   secondary: PropTypes.bool,
 
   // if custom top is necessary, must include units - (rem, px)
-  top: PropTypes.string
+  top: PropTypes.string,
 };
 
 export default StickyContainer;

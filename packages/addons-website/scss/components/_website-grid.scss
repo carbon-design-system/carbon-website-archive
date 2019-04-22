@@ -1,47 +1,49 @@
+@import '../prefix';
+
 // No gutter class names
 .container {
-  .ibm--no-gutter-lg {
+  .#{$prefix}--no-gutter-lg {
     @include carbon--breakpoint('lg') {
       padding-left: 0;
       padding-right: 0;
     }
   }
 
-  .ibm--no-gutter-md {
+  .#{$prefix}--no-gutter-md {
     @include carbon--breakpoint('md') {
       padding-left: 0;
       padding-right: 0;
     }
   }
 
-  .ibm--no-gutter-sm {
+  .#{$prefix}--no-gutter-sm {
     padding-left: 0;
     padding-right: 0;
   }
 
-  .ibm--no-gutter-lg--left {
+  .#{$prefix}--no-gutter-lg--left {
     @include carbon--breakpoint('lg') {
       padding-left: 0;
     }
   }
 
-  .ibm--no-gutter-md--left {
+  .#{$prefix}--no-gutter-md--left {
     @include carbon--breakpoint('md') {
       padding-left: 0;
     }
   }
 
-  .ibm--no-gutter-sm--left {
+  .#{$prefix}--no-gutter-sm--left {
     padding-left: 0;
   }
 }
 
 // Clears styles for nested grid components
-.container .ibm--row .ibm--row {
+.container .#{$prefix}--row .#{$prefix}--row {
   margin: 0;
 }
 
-.container .ibm--row .ibm--row > div {
+.container .#{$prefix}--row .#{$prefix}--row > div {
   margin: 0;
   max-width: 100%;
   flex: auto;

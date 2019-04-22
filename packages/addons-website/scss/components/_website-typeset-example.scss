@@ -1,14 +1,14 @@
 @import '../prefix';
 
 .#{$prefix}--typeset-example-container {
-  margin-top: 1rem;
+  margin-top: $spacing-05;
   &:first-of-type {
     margin-top: 0;
   }
 }
 
 .#{$prefix}--typeset-example {
-  margin-top: 1rem;
+  margin-top: $spacing-05;
   &:first-of-type {
     margin-top: 0;
   }
@@ -24,22 +24,22 @@
 }
 
 .#{$prefix}--typeset-example-description {
-  padding: 1rem 25% 1rem 1rem;
+  padding: $spacing-05 25% $spacing-05 $spacing-05;
   overflow: hidden;
 }
 
 .#{$prefix}--typeset-example-specs {
-  padding: 1rem;
+  padding: $spacing-05;
   @include carbon--breakpoint('md') {
     border-left: 1px solid $carbon--gray-20;
   }
 }
 
 .#{$prefix}--typeset-example-specs-text {
-  margin-bottom: 0.5rem;
+  margin-bottom: $spacing-03;
 }
 
 .#{$prefix}--typeset-example-code-style {
   display: block;
-  margin-top: 0.5rem;
+  margin-top: $spacing-03;
 }

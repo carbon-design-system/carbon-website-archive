@@ -33,8 +33,8 @@
   }
 }
 
-.homepage--header .ibm--grid,
-.homepage--header .ibm--row {
+.homepage--header .bx--grid,
+.homepage--header .bx--row {
   height: 100%;
 }
 
@@ -56,13 +56,13 @@
 // Headings on homepage
 
 .container--homepage h3,
-.container--homepage .page-content > div > .ibm--row:first-child h3 {
+.container--homepage .page-content > div > .bx--row:first-child h3 {
   @include carbon--type-style('expressive-heading-03', true);
   margin-top: rem(64px);
-  margin-bottom: $spacing-lg;
+  margin-bottom: $spacing-06;
 }
 
-.container--homepage .page-content > div > .ibm--row:first-child h3 {
+.container--homepage .page-content > div > .bx--row:first-child h3 {
   margin-top: 0;
 }
 
@@ -104,7 +104,7 @@
   align-items: center;
   color: $carbon--blue-40;
   text-decoration: none;
-  margin-top: $spacing-lg;
+  margin-top: $spacing-06;
 }
 
 .homepage--callout--blue a:hover {
@@ -112,7 +112,7 @@
 }
 
 .homepage--callout--blue svg {
-  margin-left: $spacing-md;
+  margin-left: $spacing-05;
   fill: $carbon--blue-40;
 }
 
@@ -130,7 +130,7 @@
 
 // Needed for dots to appear below content
 
-.container--homepage .ibm--row {
+.container--homepage .bx--row {
   position: relative;
   z-index: 2;
 }

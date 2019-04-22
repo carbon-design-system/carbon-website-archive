@@ -58,11 +58,11 @@ class HomepageVideo extends Component {
             overlay={true}
             cornerPlayButton={true}>
             <div
-              className={`${prefix}--homepage-video-overlay-content ibm--grid`}>
+              className={`${prefix}--homepage-video-overlay-content ${prefix}--grid`}>
               <div
-                className={`${prefix}--homepage-video-container-cta ibm--row`}>
+                className={`${prefix}--homepage-video-container-cta ${prefix}--row`}>
                 <Link
-                  className={`${prefix}--homepage-video-cta ibm--offset-md-4 ibm--col-md-2 ibm--offset-lg-8 ibm--col-lg-4`}
+                  className={`${prefix}--homepage-video-cta ${prefix}--offset-md-4 ${prefix}--col-md-2 ${prefix}--offset-lg-8 ${prefix}--col-lg-4`}
                   to="/philosophy/">
                   <p className={`${prefix}--type-expressive-heading-03`}>
                     Philosophy
@@ -74,7 +74,7 @@ class HomepageVideo extends Component {
                   </div>
                 </Link>
                 <Link
-                  className={`${prefix}--homepage-video-cta ibm--col-md-2 ibm--col-lg-4`}
+                  className={`${prefix}--homepage-video-cta ${prefix}--col-md-2 ${prefix}--col-lg-4`}
                   to="/gallery/">
                   <p className={`${prefix}--type-expressive-heading-03`}>
                     Gallery

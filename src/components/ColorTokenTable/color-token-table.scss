@@ -61,11 +61,11 @@ h3.page-h3--sticky {
 }
 
 .color-token-table__theme-switcher .bx--content-switcher-btn {
-  padding: $spacing-xs $spacing-xl $spacing-xs $spacing-md;
+  padding: $spacing-03 $spacing-07 $spacing-03 $spacing-05;
   flex: 1;
 
   @include carbon--breakpoint('sm') {
-    padding-right: $spacing-md;
+    padding-right: $spacing-05;
   }
 
   @include carbon--breakpoint('md') {
@@ -86,12 +86,12 @@ h3.page-h3--sticky {
 }
 
 .color-token-value .bx--overflow-menu {
-  margin-left: $spacing-xs;
+  margin-left: $spacing-03;
 }
 
 .color-token-value .bx--overflow-menu-options {
   left: -9.25rem;
-  top: $spacing-xl;
+  top: $spacing-07;
 }
 
 .color-token-value .bx--overflow-menu__icon {
@@ -104,8 +104,8 @@ h3.page-h3--sticky {
 
   @media all and (max-width: 580px) {
     position: absolute;
-    right: $spacing-md;
-    top: $spacing-md;
+    right: $spacing-05;
+    top: $spacing-05;
   }
 }
 
@@ -127,7 +127,7 @@ h3.page-h3--sticky {
 
 .color-token-table .page-table {
   background: $ui-02;
-  margin-top: $spacing-xs;
+  margin-top: $spacing-03;
   width: calc(100%);
 }
 
@@ -166,7 +166,7 @@ h3.page-h3--sticky {
   flex-basis: calc(100% / 3);
 
   &:last-child {
-    padding-right: $spacing-xs;
+    padding-right: $spacing-03;
   }
 }
 
