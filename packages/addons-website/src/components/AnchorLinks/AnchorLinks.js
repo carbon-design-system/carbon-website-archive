@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import { settings } from 'carbon-components';
+const { prefix } = settings;
 
 export default class AnchorLinks extends React.Component {
   render() {
@@ -8,9 +10,9 @@ export default class AnchorLinks extends React.Component {
     const isColumn = React.Children.toArray(children.props.children).length > 6;
 
     const classNames = classnames({
-      'anchor-links': true,
-      'anchor-links--small': small,
-      'anchor-links--column': isColumn,
+      [`${prefix}--anchor-links`]: true,
+      [`${prefix}--anchor-links--small`]: small,
+      [`${prefix}--anchor-links--column`]: isColumn,
     });
     return <div className={classNames}>{children}</div>;
   }
