@@ -11,7 +11,7 @@
   justify-content: center;
   flex-direction: column;
   max-width: 550px;
-  margin-top: 2rem;
+  margin-top: $spacing-07;
 
   @include carbon--breakpoint('md') {
     margin-top: 4rem;
@@ -22,7 +22,7 @@
     font-size: rem(23px);
     font-weight: 600;
     color: $ui-05;
-    margin: 2rem 0 1.75rem 0;
+    margin: $spacing-07 0 1.75rem 0;
   }
 
   p {
@@ -33,7 +33,7 @@
   }
 
   .icon-empty-state__btn {
-    margin-top: 2rem;
+    margin-top: $spacing-07;
     border-color: $brand-01;
 
     &:hover {
@@ -53,7 +53,7 @@
 
 .icon-empty-state__shapes {
   svg {
-    margin: 0 1rem;
+    margin: 0 $spacing-05;
     animation: dancing 2000ms infinite forwards linear 250ms;
 
     &:nth-child(2),
@@ -62,7 +62,7 @@
     }
 
     @include carbon--breakpoint('md') {
-      margin: 0 1.5rem 0 1rem;
+      margin: 0 $spacing-06 0 $spacing-05;
 
       &:first-child,
       &:last-child {

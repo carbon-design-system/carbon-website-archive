@@ -12,13 +12,13 @@
 .#{$prefix}--image-component.zoom > img {
   @include carbon--breakpoint('md') {
     box-sizing: border-box;
-    padding-top: 1rem;
+    padding-top: $spacing-05;
     width: calc(100% - 2rem);
   }
 }
 
 .#{$prefix}--image-component.no-caption {
-  margin-bottom: rem(24px);
+  margin-bottom: $spacing-06;
 }
 
 .#{$prefix}--image-component > *:not(.image-component__caption) {
@@ -62,25 +62,24 @@
   }
 }
 .#{$prefix}--image-component-wrapper-zoom {
-  padding: 0rem;
+  padding: 0;
+
   @include carbon--breakpoint('md') {
-    // padding: 1rem;
     box-sizing: border-box;
-    // width: calc(100% - 2rem);
-    // height: calc(100% - 2rem);
     background-color: $carbon--white-0;
     cursor: pointer;
   }
 }
 
 .#{$prefix}--image-component-magnifier {
-  padding: 1rem;
+  padding: $spacing-05;
   justify-content: flex-end;
   display: none;
 
   svg {
     fill: $carbon--gray-80;
   }
+
   @include carbon--breakpoint('md') {
     display: flex;
   }
@@ -95,6 +94,7 @@
   svg {
     fill: $carbon--white-0;
   }
+
   &:hover {
     cursor: pointer;
   }
@@ -146,5 +146,5 @@
 
 p.#{$prefix}--image-component__caption {
   @include carbon--type-style('body-short-01');
-  padding-top: rem(8px);
+  padding-top: $spacing-03;
 }

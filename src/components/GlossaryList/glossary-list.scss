@@ -10,5 +10,5 @@
   @include carbon--type-style('body-short-02');
   color: $text-02;
   font-style: italic;
-  margin-top: 0.25rem;
+  margin-top: $spacing-02;
 }
