@@ -23,7 +23,6 @@ $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
     padding-bottom: auto;
     color: $text-01;
     vertical-align: top;
-    outline: 1px dotted red;
   }
 
   table tbody td:first-child {
@@ -53,14 +52,20 @@ $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
     }
   }
 
-  table tbody tr:nth-child(1) td:first-child,
-  table tbody tr:nth-child(2) td:first-child,
+  table tbody tr:nth-child(1) td:first-child {
+    padding-bottom: 0.36rem;
+  }
+
+  table tbody tr:nth-child(2) td:first-child {
+    padding-bottom: 0.38rem;
+  }
+
   table tbody tr:nth-child(3) td:first-child {
-    padding-bottom: $spacing-03;
+    padding-bottom: 0.6rem;
   }
 
   table tbody tr:nth-child(4) td:first-child {
-    padding-bottom: rem(14px);
+    padding-bottom: 0.74rem;
   }
 
   table tbody tr:nth-child(5) td:first-child {
@@ -68,7 +73,7 @@ $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
   }
 
   table tbody tr:nth-child(6) td:first-child {
-    padding-bottom: $spacing-06;
+    padding-bottom: 1.4rem;
   }
 
   table tbody tr:nth-child(7) td:first-child {
