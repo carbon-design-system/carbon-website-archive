@@ -384,7 +384,6 @@ lorem ipsum dolor sit amet
 - `<TypeWeight type="italic">`
 - `<TypeWeight type="type">`
 - `<TypeScaleTable>`
-- `<TypeSpec>`
 
 **Glossary**
 
