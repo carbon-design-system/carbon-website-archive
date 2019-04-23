@@ -675,7 +675,7 @@ const typeSets = {
       name: 'heading-02',
     },
   ],
-  fluidHeading: [
+  fluidHeadings: [
     {
       description: 'Heading style',
       key: 'expressive-heading-04',

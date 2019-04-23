@@ -57,6 +57,7 @@
   &:focus {
     outline: 2px solid $focus;
     outline-offset: 0;
+    position: relative;
   }
 }
 
