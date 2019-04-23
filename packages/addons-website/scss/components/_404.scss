@@ -1,5 +1,7 @@
+@import '../prefix';
+
 .page-content.fourohfour {
-  padding-top: rem(32px);
+  padding-top: $spacing-07;
   padding-bottom: 0;
   background-color: $carbon--gray-100;
   min-height: calc(100vh - 418px);
@@ -10,19 +12,20 @@
   }
 }
 
-.anchor-links.anchor-links--small.fourohfour-body__anchor-links .page-ul {
-  margin-top: rem(24px);
-  margin-bottom: rem(32px);
+.#{$prefix}--anchor-links.#{$prefix}--anchor-links--small.fourohfour-body__anchor-links
+  .page-ul {
+  margin-top: $spacing-06;
+  margin-bottom: $spacing-07;
 
   @include carbon--breakpoint('xlg') {
-    margin-bottom: rem(48px);
+    margin-bottom: $spacing-09;
   }
 }
 
 .fourohfour-body__heading {
   font-size: rem(28px);
   line-height: rem(36px);
-  margin-bottom: rem(24px);
+  margin-bottom: $spacing-06;
 }
 
 .fourohfour-body__404 {
@@ -39,12 +42,18 @@
 
 .fourohfour-body__heading,
 .fourohfour-body__text,
-.fourohfour-body__anchor-links.anchor-links--small .page-ul > li a,
-.fourohfour-body__anchor-links.anchor-links--small .page-ul > li a::before {
+.fourohfour-body__anchor-links.#{$prefix}--anchor-links--small .page-ul > li a,
+.fourohfour-body__anchor-links.#{$prefix}--anchor-links--small
+  .page-ul
+  > li
+  a::before {
   color: $carbon--gray-10;
 }
 
-.fourohfour-body__anchor-links.anchor-links--small .page-ul > li a:hover {
+.fourohfour-body__anchor-links.#{$prefix}--anchor-links--small
+  .page-ul
+  > li
+  a:hover {
   color: $carbon--blue-40;
 
   &::before {

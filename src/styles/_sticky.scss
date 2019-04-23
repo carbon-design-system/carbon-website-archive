@@ -23,6 +23,14 @@
   top: -9rem; // header set to 15rem height. subtract 3rem tabs height & 3rem header height
   z-index: 500;
 }
+.page-header.page-header--no-page-tabs,
+.#{$prefix}--header ~ div.container .page-header.page-header--no-page-tabs,
+.website-alert
+  + .bx--header
+  ~ div.container
+  .page-header.page-header--no-page-tabs {
+  top: rem(-240px);
+}
 
 // page header sticky position when website alert is present
 .website-alert + .container .page-header,

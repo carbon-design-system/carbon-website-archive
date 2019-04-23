@@ -12,44 +12,44 @@ $font-prefix: '/fonts';
 @import '@ibm/plex/scss/serif/_index.scss';
 @import '@ibm/plex/scss/mono/_index.scss';
 
-.ibm-type-hebrew {
+.#{$prefix}--type-hebrew {
   font-family: 'IBM Plex Sans Hebrew';
 }
 
-.ibm-type-thai {
+.#{$prefix}--type-thai {
   font-family: 'IBM Plex Thai';
 }
 
-.ibm-type-devanagari {
+.#{$prefix}--type-devanagari {
   font-family: 'IBM Plex Devanagari';
 }
 
-.ibm-type-arabic {
+.#{$prefix}--type-arabic {
   font-family: 'IBM Plex Arabic';
 }
 
-.ibm-type-default,
-.ibm-type-default * {
+.#{$prefix}--type-default,
+.#{$prefix}--type-default * {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
-.ibm-type-condensed,
-.ibm-type-condensed * {
+.#{$prefix}--type-condensed,
+.#{$prefix}--type-condensed * {
   font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
 }
 
-.ibm-type-serif,
-.ibm-type-serif * {
+.#{$prefix}--type-serif,
+.#{$prefix}--type-serif * {
   font-family: 'IBM Plex Serif', 'Georgia', Times, serif;
 }
 
-.ibm-type-mono,
-.ibm-type-mono * {
+.#{$prefix}--type-mono,
+.#{$prefix}--type-mono * {
   font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono',
     'Bitstream Vera Sans Mono', Courier, monospace;
 }
 
-.ibm-type-italic {
+.#{$prefix}--type-italic {
   font-style: italic;
 }
 
@@ -77,7 +77,7 @@ $font-prefix: '/fonts';
       .#{$prefix}--list-box__field {
         background: $ui-02;
         height: 3rem;
-        padding-top: 1rem;
+        padding-top: $spacing-05;
         padding-bottom: rem(15px);
         border-bottom: 1px solid $carbon--gray-20;
         &:focus {
@@ -121,7 +121,7 @@ $font-prefix: '/fonts';
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 $spacing-05;
     background-color: $ui-02;
     width: 100%;
     height: 3rem;
@@ -167,7 +167,7 @@ $font-prefix: '/fonts';
     height: auto;
     outline: none;
     background: $ui-02;
-    padding: 1rem;
+    padding: $spacing-05;
     overflow: none;
 
     &::selection {

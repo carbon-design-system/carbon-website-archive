@@ -26,10 +26,10 @@
 a.#{$prefix}--header__name {
   @include carbon--type-style('body-short-02');
   font-weight: 600;
-  padding-left: 0.5rem;
+  padding-left: $spacing-03;
 
   @include carbon--breakpoint('lg') {
-    padding-left: 1rem;
+    padding-left: $spacing-05;
   }
 }
 

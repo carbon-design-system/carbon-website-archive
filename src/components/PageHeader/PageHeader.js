@@ -1,12 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 
-const PageHeader = ({ children, title }) => {
+const PageHeader = ({ children, title, pageTabs }) => {
+  const headerClassNames = classnames({
+    'page-header': true,
+    'page-header--no-page-tabs': pageTabs === false || pageTabs === null,
+  });
+
   return (
-    <div className="page-header">
-      <div className="ibm--grid">
-        <div className="ibm--row">
-          <div className="ibm--col-lg-12 ibm--offset-lg-4">
+    <div className={headerClassNames}>
+      <div className="bx--grid">
+        <div className="bx--row">
+          <div className="bx--col-lg-12 bx--offset-lg-4">
             <h2
               id="page-title"
               className="page-header__title bx--type-display-01">
@@ -15,6 +21,7 @@ const PageHeader = ({ children, title }) => {
           </div>
         </div>
       </div>
+      {pageTabs}
       {children}
     </div>
   );

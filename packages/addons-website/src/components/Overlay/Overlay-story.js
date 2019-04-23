@@ -13,7 +13,7 @@ storiesOf('Overlay', module).add(
           viewBox="0 0 32 32"
           width="32"
           height="32"
-          className="ibm-icons ibm-icons--close">
+          className="bx--icons bx--icons--close">
           <path d="M17.414 16L24 9.414 22.586 8 16 14.586 9.414 8 8 9.414 14.586 16 8 22.586 9.414 24 16 17.414 22.586 24 24 22.586 17.414 16z" />
         </svg>
       }>

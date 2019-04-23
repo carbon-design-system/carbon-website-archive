@@ -25,8 +25,9 @@
 
 .page-tabs__list li a {
   @include carbon--type-style('body-short-02');
-  padding: 0 1rem 3px 1rem; // bottom padding to visually even out spacing with top border
-  min-width: 7.5rem;
+  padding: 0 $spacing-09 0 $spacing-05;
+  // padding: 0 1rem 3px 1rem; // bottom padding to visually even out spacing with top border
+  // min-width: 7.5rem;
   text-decoration: none;
   color: $inverse-01;
   white-space: nowrap;

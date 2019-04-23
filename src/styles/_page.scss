@@ -22,10 +22,10 @@ b {
   transition: $transition--base ease;
   position: relative;
   min-height: calc(100vh - 48px);
-  margin-top: rem(48px);
+  margin-top: $spacing-09;
 }
 
-.container .ibm--grid {
+.container .bx--grid {
   margin: 0;
   max-width: rem(1584px);
   overflow: hidden;
@@ -37,7 +37,7 @@ b {
 .page-p,
 .component-docs p {
   @include carbon--type-style('body-long-02');
-  padding: 0 0 $spacing-lg;
+  padding: 0 0 $spacing-06;
 
   &:empty {
     padding: 0;
@@ -65,7 +65,7 @@ em {
   }
 
   > div > div:nth-child(2) h3 {
-    margin-top: rem(48px);
+    margin-top: $spacing-09;
   }
 
   // All links on Markdown pages but not inside component examples
@@ -82,7 +82,7 @@ em {
     @include reset;
     position: relative;
     display: inline;
-    padding: rem(1px) $spacing-xs;
+    padding: rem(1px) $spacing-03;
     background: transparent;
     border-radius: 4px;
     background-color: $carbon--gray-20;
@@ -107,7 +107,7 @@ em {
   }
 
   img {
-    margin-bottom: rem(24px);
+    margin-bottom: $spacing-06;
   }
 
   td > img {
@@ -123,7 +123,7 @@ em {
   }
 
   .#{$prefix}--image-component__caption {
-    margin-bottom: 1.5rem;
+    margin-bottom: $spacing-06;
   }
 }
 
@@ -152,15 +152,15 @@ em {
   }
 }
 .website-tabs .gatsby-resp-iframe-wrapper,
-.example .gatsby-resp-iframe-wrapper {
+.bx--example .gatsby-resp-iframe-wrapper {
   @include carbon--breakpoint('lg') {
     margin-left: 0;
     padding-bottom: 56.543% !important;
   }
 }
 
-.ibm--row .gatsby-resp-iframe-wrapper,
-.example__content .gatsby-resp-iframe-wrapper {
+.bx--row .gatsby-resp-iframe-wrapper,
+.bx--example__content .gatsby-resp-iframe-wrapper {
   margin-left: 0 !important;
 }
 
@@ -168,7 +168,7 @@ em {
 .gatsby-resp-image-wrapper {
   // background: $ui-02;
   margin-left: 0 !important;
-  margin-bottom: rem(24px);
+  margin-bottom: $spacing-06;
 
   @include carbon--breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
@@ -187,9 +187,9 @@ em {
   }
 }
 
-.ibm--row .gatsby-resp-image-wrapper,
-.ibm-row img[src*='svg'],
-.ibm-row img[src*='gif'] {
+.bx--row .gatsby-resp-image-wrapper,
+.bx--row img[src*='svg'],
+.bx--row img[src*='gif'] {
   margin-left: 0 !important;
   margin-bottom: 0;
 }
@@ -206,11 +206,11 @@ img[src*='gif'] {
     display: block;
 
     &:first-child {
-      padding-top: $spacing-xs;
+      padding-top: $spacing-03;
     }
   }
 }
 
 .page-content iframe {
-  margin-bottom: rem(24px);
+  margin-bottom: $spacing-06;
 }

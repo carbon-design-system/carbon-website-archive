@@ -25,7 +25,7 @@ class NonLatinScript extends React.Component {
 
     return (
       <div
-        className={`${prefix}--non-latin-container ibm--col-lg-12 ibm--offset-lg-4`}>
+        className={`${prefix}--non-latin-container ${prefix}--col-lg-12 ${prefix}--offset-lg-4`}>
         <div>
           <h3
             className={`${prefix}--type-body-long-01 ${prefix}--non-latin-typeface-name-heading`}>
