@@ -34,19 +34,10 @@ const TypesetExample = props => {
           indexOfClosestLargerBreakpoint
         ];
 
-        const nextLargerBreakpointPx = values(breakpoints)[
-          indexOfClosestLargerBreakpoint - 1
-        ];
-
         const currentBreakpointName = findKey(
           breakpoints,
           val => val === currentBreakpointPx
         );
-        const nextLargerBreakpointName = findKey(
-          breakpoints,
-          val => val === nextLargerBreakpointPx
-        );
-
         const getCurrentCompoundStylesForBreakpoint = breakpointName => {
           const typeKeys = Object.keys(breakpoints);
           const typeStylesUntilCurrentBreakpoint = [];
@@ -117,7 +108,9 @@ const TypesetExample = props => {
             ` / ` +
             currentBreakpointSpecs['line-height'] +
             `rem`,
-          letterSpacing: currentBreakpointSpecs['letter-spacing'].toString().replace('0.', '.'),
+          letterSpacing: currentBreakpointSpecs['letter-spacing']
+            .toString()
+            .replace('0.', '.'),
           warning: currentBreakpointSpecs['warning'],
         };
 
@@ -137,13 +130,13 @@ const TypesetExample = props => {
             className={`${prefix}--typeset-example`}>
             <div className={`${prefix}--typeset-example-row ${prefix}--row`}>
               <div
-                className={`${prefix}--typeset-example-description ibm--col-md-5`}>
+                className={`${prefix}--typeset-example-description ${prefix}--col-md-5`}>
                 <p className={versionClassNames} style={specs}>
                   {type.description}
                 </p>
               </div>
               <div
-                className={`${prefix}--typeset-example-specs ibm--col-md-3 ibm-padding`}>
+                className={`${prefix}--typeset-example-specs ${prefix}--col-md-3 ${prefix}--padding`}>
                 <span className={`${prefix}--type-body-short-01`}>
                   <span className={`${prefix}--type-semibold`}>
                     {type.name}{' '}

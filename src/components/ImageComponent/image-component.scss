@@ -8,7 +8,7 @@
 }
 
 .image-component.no-caption {
-  margin-bottom: rem(24px);
+  margin-bottom: $spacing-06;
 }
 
 .image-component > *:not(.image-component__caption) {
@@ -94,6 +94,6 @@
 
 p.image-component__caption {
   @include carbon--type-style('body-short-01');
-  padding-top: rem(8px);
-  margin-bottom: 1.5rem;
+  padding-top: $spacing-03;
+  margin-bottom: $spacing-06;
 }

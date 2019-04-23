@@ -3,7 +3,7 @@
   max-width: 100%;
   display: block;
   color: $carbon--white-0;
-  margin-bottom: rem(24px);
+  margin-bottom: $spacing-06;
 }
 
 // To override the padding from `.page-content > div > div:first-child p`
@@ -18,7 +18,7 @@
   width: 100%;
   min-height: rem(200px);
   position: relative;
-  padding: 2rem 2rem 2.5rem;
+  padding: $spacing-07 $spacing-07 $spacing-08;
   margin: 0;
   background-color: $ui-02;
   color: $text-01;
@@ -43,7 +43,7 @@
   bottom: 0;
   color: $text-02;
   @include carbon--type-style('caption-01');
-  padding: 0.5rem 1rem;
+  padding: $spacing-03 $spacing-05;
   z-index: 9999;
 }
 
@@ -67,7 +67,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 $spacing-05;
 }
 
 .component-toolbar__links {
@@ -79,7 +79,7 @@
   a {
     position: relative;
     top: 1px;
-    margin-left: 1rem;
+    margin-left: $spacing-05;
     color: $carbon--blue-40;
     text-decoration: none;
     border-bottom: 1px solid transparent;
@@ -94,7 +94,7 @@
     position: relative;
     top: 3px;
     margin-top: -2px;
-    margin-left: $spacing-2xs;
+    margin-left: $spacing-02;
   }
 }
 
@@ -103,8 +103,8 @@
   align-items: center;
   border-left: 1px solid $carbon--gray-80;
   height: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: $spacing-05;
+  padding-right: $spacing-05;
 
   .bx--form-item {
     margin-right: 0;
@@ -121,7 +121,7 @@
   }
 
   .radioButtonWrapper:last-child {
-    padding-left: 1rem;
+    padding-left: $spacing-05;
   }
 
   .bx--radio-button__appearance {
@@ -129,11 +129,15 @@
     border-color: $carbon--white-0;
   }
 
-  .bx--radio-button:checked + .bx--radio-button__label .bx--radio-button__appearance {
+  .bx--radio-button:checked
+    + .bx--radio-button__label
+    .bx--radio-button__appearance {
     border-color: $carbon--white-0;
   }
 
-  .bx--radio-button:checked + .bx--radio-button__label .bx--radio-button__appearance:before {
+  .bx--radio-button:checked
+    + .bx--radio-button__label
+    .bx--radio-button__appearance:before {
     background-color: $carbon--white-0;
   }
 }

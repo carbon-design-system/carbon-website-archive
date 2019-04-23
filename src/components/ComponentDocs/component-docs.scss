@@ -8,8 +8,8 @@ body .component-docs pre[class*='language-'] {
   font-size: 0.75rem;
   line-height: 1.45;
   background: $ui-05;
-  padding: 0.5rem 3rem 0.5rem 1.5rem !important;
-  margin-bottom: 1.5rem !important;
+  padding: $spacing-03 $spacing-09 $spacing-03 $spacing-06 !important;
+  margin-bottom: $spacing-06 !important;
   border-radius: 0;
 }
 

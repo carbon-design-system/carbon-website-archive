@@ -1,15 +1,17 @@
+@import '../prefix';
+
 // Example
-.example {
-  margin-bottom: rem(24px);
+.#{$prefix}--example {
+  margin-bottom: $spacing-06;
   width: 100%;
 }
 
-.example--dark .example-card {
+.#{$prefix}--example--dark .#{$prefix}--example-card {
   background: $carbon--gray-90;
   color: $carbon--white-0;
 }
 
-.example__content {
+.#{$prefix}--example__content {
   font-size: 1.25rem;
   font-weight: 300;
   width: 100%;
@@ -23,21 +25,21 @@
   }
 }
 
-.example-card {
+.#{$prefix}--example-card {
   background: $carbon--white-0;
   width: 100%;
   position: relative;
 }
 
-.example .example-card__content {
+.#{$prefix}--example .#{$prefix}--example-card__content {
   position: relative;
 }
 
-.example--square .example-card {
+.#{$prefix}--example--square .#{$prefix}--example-card {
   padding-top: 100%;
 }
 
-.example--square .example-card__content {
+.#{$prefix}--example--square .#{$prefix}--example-card__content {
   position: absolute;
   top: 0;
   left: 0;
@@ -48,21 +50,21 @@
   justify-content: center;
 }
 
-p.example__text {
+p.#{$prefix}--example__text {
   padding: 10%;
   font-weight: 300;
   font-size: rem(24px);
   line-height: 1.25;
 }
 
-.example-image {
+.#{$prefix}--example-image {
   display: block;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
-.example-card::before {
+.#{$prefix}--example-card::before {
   content: '';
   position: absolute;
   left: 0;
@@ -72,15 +74,15 @@ p.example__text {
   z-index: 1;
 }
 
-.example--correct .example-card::before {
+.#{$prefix}--example--correct .#{$prefix}--example-card::before {
   background: $carbon--green-50;
 }
 
-.example--incorrect .example-card::before {
+.#{$prefix}--example--incorrect .#{$prefix}--example-card::before {
   background: $carbon--magenta-50;
 }
 
-.example__icon {
+.#{$prefix}--example__icon {
   display: block;
   position: absolute;
   left: calc(1rem - 1px);
@@ -90,19 +92,19 @@ p.example__text {
   height: 24px;
 }
 
-.example__icon--correct {
+.#{$prefix}--example__icon--correct {
   fill: $carbon--green-50;
 }
 
-.example__icon--incorrect {
+.#{$prefix}--example__icon--incorrect {
   fill: $carbon--magenta-50;
 }
 
-.example__caption {
-  padding: 8px 0 0 0;
+.#{$prefix}--example__caption {
+  padding: $spacing-03 0 0 0;
 }
 
-p.example__title {
+p.#{$prefix}--example__title {
   @include carbon--type-style('body-short-01');
   margin: 0;
 
@@ -115,15 +117,15 @@ p.example__title {
   }
 }
 
-p.example__description {
+p.#{$prefix}--example__description {
   @include carbon--type-style('body-short-01');
   @include font-smoothing;
   margin: 0;
   padding: 0;
-  padding-bottom: rem(24px);
+  padding-bottom: $spacing-06;
 }
 
-.example__caption {
+.#{$prefix}--example__caption {
   @include breakpoint('sm') {
     width: 100%;
   }
@@ -133,19 +135,18 @@ p.example__description {
   }
 }
 
-.ibm--col-lg-4 .example__caption { 
+.#{$prefix}--col-lg-4 .#{$prefix}--example__caption {
   @include breakpoint('md') {
     width: 100%;
   }
 }
 
-
-.example span.gatsby-resp-image-wrapper {
+.#{$prefix}--example span.gatsby-resp-image-wrapper {
   max-width: 100% !important; // marked !important to overcome inline styles inserted by gatsby.
 }
 
 // Example video content
-.example__content .gatsby-resp-iframe-wrapper {
+.#{$prefix}--example__content .gatsby-resp-iframe-wrapper {
   height: 100% !important;
   position: static !important;
 }

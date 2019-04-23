@@ -10,14 +10,14 @@ const NonLatinScripts = () => {
       <NonLatinScript
         customStyle="--non-latin-type-example-arabic"
         typefaceName="IBM Plex Arabic"
-        className="ibm-type-arabic"
+        className={`${prefix}--type-arabic`}
         rtl
         value="البشرية"
       />
       <NonLatinScript
         customStyle="--non-latin-type-example-cyrillic"
         typefaceName="IBM Plex Mono Cyrillic"
-        className="ibm-type-mono"
+        className={`${prefix}--type-mono`}
         value="инженер"
       />
       <NonLatinScript
@@ -28,29 +28,30 @@ const NonLatinScripts = () => {
       <NonLatinScript
         customStyle="--non-latin-type-example-cyrillic"
         typefaceName="IBM Plex Serif Cyrillic"
-        className="ibm-type-serif"
+        className={`${prefix}--type-serif`}
         value="инженер"
       />
       <NonLatinScript
         customStyle="--non-latin-type-example-devanagari"
         typefaceName="IBM Plex Devanagari"
-        className="ibm-type-devanagari"
+        className={`${prefix}--type-devanagari`}
         value="संज्ञानात्मक"
       />
-      <NonLatinScript 
-        className="ibm-type-greek"
-        typefaceName="IBM Plex Sans Greek" 
-        value="νομίζω" />
+      <NonLatinScript
+        className={`${prefix}--type-greek`}
+        typefaceName="IBM Plex Sans Greek"
+        value="νομίζω"
+      />
       <NonLatinScript
         typefaceName="IBM Plex Sans Hebrew"
-        className="ibm-type-hebrew"
+        className={`${prefix}--type-hebrew`}
         rtl
         value="לחשׁוֹב"
       />
       <NonLatinScript
         customStyle="--non-latin-type-example-thai"
         typefaceName="IBM Plex Thai"
-        className="ibm-type-thai"
+        className={`${prefix}--type-thai`}
         value="องค์ความรู้"
       />
     </div>
