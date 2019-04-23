@@ -10,7 +10,7 @@
 
 .#{$prefix}--typeset-example-row {
   background-color: $carbon--white-0;
-  height: rem(216px);
+  min-height: rem(216px);
 }
 
 .#{$prefix}--typeset-example-group-title {

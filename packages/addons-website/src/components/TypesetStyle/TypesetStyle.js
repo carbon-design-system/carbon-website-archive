@@ -864,8 +864,7 @@ class TypesetStyle extends React.Component {
                 className={`${prefix}--typeset-style-title-shiv ${prefix}--row`}
               />
               <div ref="stickyBar" className={typesetStyleStickyClassnames}>
-                <div
-                  className={`${prefix}--typeset-style-breakpoint-controls ibm--col-md-5 ibm--col-lg-8`}>
+                <div className={`${prefix}--typeset-style-breakpoint-controls`}>
                   <span
                     className={`${prefix}--type-body-long-01 ibm-padding--horizontal`}
                     style={{ marginBottom: 0 }}>
@@ -876,8 +875,7 @@ class TypesetStyle extends React.Component {
                     {this.getButtons()}
                   </div>
                 </div>
-                <div
-                  className={`${prefix}--typeset-style-screen-controls ibm-padding--horizontal ibm--col-md-3 ibm--col-lg-8`}>
+                <div className={`${prefix}--typeset-style-screen-controls`}>
                   <span
                     className={`${prefix}--type-body-long-01 ${prefix}--typeset-style-screen-width-label`}
                     style={{ marginBottom: 0, whiteSpace: 'nowrap' }}>
