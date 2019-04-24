@@ -27,7 +27,7 @@
   top: 64px;
   z-index: 9999;
   max-width: 1164px;
-  box-shadow: 0px 2px 6px 0px rgba(#000000, 0.2);
+  box-shadow: 0px 2px 6px 0px rgba($carbon--black-100, 0.2);
 
   @media all and (max-width: 1580px) {
     max-width: 73.35%;
@@ -63,6 +63,8 @@ h3.page-h3--sticky {
 .color-token-table__theme-switcher .bx--content-switcher-btn {
   padding: $spacing-03 $spacing-07 $spacing-03 $spacing-05;
   flex: 1;
+  border-radius: 0;
+  height: 3rem;
 
   @include carbon--breakpoint('sm') {
     padding-right: $spacing-05;
