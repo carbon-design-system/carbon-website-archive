@@ -69,7 +69,9 @@ export default ({ data }) => {
           )}
         </PageHeader>
         <main className="page-content bx--grid" id="maincontent">
-          <MDXRenderer>{post.code.body}</MDXRenderer>
+          <div className="wrapper">
+            <MDXRenderer>{post.code.body}</MDXRenderer>
+          </div>
           <EditLink slug={slug} />
         </main>
         <NextPrevious
