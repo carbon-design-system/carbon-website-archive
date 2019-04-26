@@ -18,7 +18,6 @@
   }
 
   h4 {
-    @include font-smoothing;
     font-size: rem(23px);
     font-weight: 600;
     color: $ui-05;
@@ -26,7 +25,6 @@
   }
 
   p {
-    // @include font-smoothing;
     color: $ui-05;
     line-height: 1.5;
     text-align: center;
