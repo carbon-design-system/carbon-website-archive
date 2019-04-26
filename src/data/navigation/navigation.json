@@ -62,7 +62,10 @@
         "title": "Catalog entry"
       },
       "page-header": {
-        "title": "Page Header"
+        "title": "Page header"
+      },
+      "widget-guidelines": {
+        "title": "Widget guidelines"
       }
     }
   },
