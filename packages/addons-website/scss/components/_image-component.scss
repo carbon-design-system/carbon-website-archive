@@ -124,7 +124,7 @@
     width: 100% !important;
     max-width: 100% !important;
 
-    @include breakpoint('1230px') {
+    @include carbon--breakpoint(1230px) {
       width: 70% !important;
     }
   }
@@ -134,11 +134,11 @@
     height: auto !important;
     position: relative !important;
 
-    @include breakpoint('1056px') {
+    @include carbon--breakpoint(1056px) {
       width: 900px !important;
     }
 
-    @include breakpoint('1230px') {
+    @include carbon--breakpoint(1230px) {
       width: 1120px !important;
     }
   }
