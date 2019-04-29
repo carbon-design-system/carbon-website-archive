@@ -83,6 +83,7 @@ $font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 @import '../components/NextPrevious/next-previous.scss';
 @import '../components/FeatureTile/feature-tile.scss';
 @import '../components/WebsiteTabs/website-tabs.scss';
+@import '../components/WebsiteAlert/website-alert.scss';
 @import '../components/ColorTokenTable/color-token-table.scss';
 @import '../components/SimpleColumns/simple-columns.scss';
 @import '../components/ImageComponent/image-component.scss';
@@ -92,3 +93,4 @@ $font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 //---------------------------------------
 @import 'prism';
 @import 'syntax';
+@import 'sticky';
