@@ -45,6 +45,11 @@ $font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 @import '@carbon/addons-website/scss/components/website-code-snippet';
 @import '@carbon/addons-website/scss/components/overlay';
 @import '@carbon/addons-website/scss/components/image-component';
+@import '@carbon/addons-website/scss/components/website-input-range';
+@import '@carbon/addons-website/scss/components/website-sticky-container';
+@import '@carbon/addons-website/scss/components/website-typeset-style';
+@import '@carbon/addons-website/scss/components/website-typeset-example';
+@import '@carbon/addons-website/scss/components/anchor-links';
 @import '@carbon/addons-website/scss/components/do-dont-example';
 
 //---------------------------------------
@@ -63,7 +68,6 @@ $font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
 @import '../components/IconEmptyState/icon-empty-state.scss';
 @import '../components/TypeScaleTable/type-scale-table.scss';
 @import '../components/TypeWeight/type-weight.scss';
-@import '../components/TypeSpec/type-spec.scss';
 @import '../components/GlossaryNav/glossary-nav.scss';
 @import '../components/GlossaryList/glossary-list.scss';
 @import '../components/ComponentExample/component-example.scss';

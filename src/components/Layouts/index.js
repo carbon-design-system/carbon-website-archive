@@ -22,11 +22,26 @@ import {
   Search20,
 } from '@carbon/icons-react';
 import {
+  AnchorLinks,
+  ImageComponent,
+  Row,
+  Column,
   WebsiteFooter,
   WebsiteSwitcher,
   WebsiteCodeSnippet,
+  DoDontExample,
 } from '@carbon/addons-website';
 
+import '../../polyfills';
+import ClickableTile from '../ClickableTile';
+import FeatureTile from '../FeatureTile';
+import ColorBlock from '../ColorBlock';
+import ComponentCode from '../ComponentCode';
+import ComponentDocs from '../ComponentDocs';
+import ComponentReact from '../ComponentReact';
+import WebsiteTabs from '../WebsiteTabs';
+import SimpleColumns from '../SimpleColumns';
+import Video from '../Video';
 import PageTable from '../PageTable';
 
 import { a, p, h1, h2, h3, h4, h5, ul, ol } from '../markdown/Markdown';
@@ -34,7 +49,7 @@ import { a, p, h1, h2, h3, h4, h5, ul, ol } from '../markdown/Markdown';
 import timestamp from 'raw-loader!../../../build-timestamp';
 import '../../styles/index.scss';
 
-import { MDXProvider } from '@mdx-js/tag';
+import { MDXProvider } from '@mdx-js/react';
 
 class Layout extends React.Component {
   static propTypes = {
@@ -363,6 +378,21 @@ class Layout extends React.Component {
                   ol: ol,
                   pre: WebsiteCodeSnippet,
                   table: PageTable,
+                  AnchorLinks,
+                  ImageComponent,
+                  Row,
+                  Column,
+                  ClickableTile,
+                  FeatureTile,
+                  ColorBlock,
+                  ComponentCode,
+                  ComponentDocs,
+                  ComponentReact,
+                  DoDontExample,
+                  WebsiteTabs,
+                  SimpleColumns,
+                  Video,
+                  PageTable,
                 }}>
                 {children}
               </MDXProvider>

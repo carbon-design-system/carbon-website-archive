@@ -1,0 +1,86 @@
+@import '../prefix';
+
+.page-content > div > .#{$prefix}--anchor-links:first-child .page-ul {
+  margin-top: 0;
+}
+
+.page-content
+  > div:first-child
+  > .#{$prefix}--anchor-links:first-child
+  .page-ul {
+  margin-bottom: 0;
+}
+
+.#{$prefix}--anchor-links {
+  .page-ul {
+    width: auto;
+    margin-bottom: 0;
+    margin-top: rem(16px);
+
+    @include carbon--breakpoint('md') {
+      margin-bottom: 2.25rem;
+    }
+  }
+
+  .page-ul > li {
+    @include carbon--type-style('expressive-heading-03', true);
+    width: auto;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+
+    &:before {
+      display: none;
+    }
+
+    a {
+      @include carbon--type-style('expressive-heading-03', true);
+      position: relative;
+      display: inline-block;
+      transition: color $transition--base;
+      color: $carbon--gray-90;
+      text-decoration: none;
+      margin-bottom: rem(4px);
+
+      &:hover {
+        color: $carbon--blue-60;
+        &::before {
+          color: $carbon--blue-60;
+        }
+      }
+
+      &:before {
+        content: '\21B3'; //"↳"
+        font-family: 'IBM Plex Sans', 'ibm-plex-sans', 'Helvetica Neue', Arial,
+          sans-serif;
+        color: $carbon--gray-90;
+        transition: color $transition--base;
+        padding-right: rem(8px);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.#{$prefix}--anchor-links:not(.#{$prefix}--anchor-links--small) .page-ul {
+  @include carbon--breakpoint('md') {
+    margin-bottom: rem(32px);
+  }
+}
+
+.#{$prefix}--anchor-links--small .page-ul {
+  margin-top: rem(16px);
+}
+
+.#{$prefix}--anchor-links--column .page-ul {
+  @include carbon--breakpoint('md') {
+    column-count: 2;
+  }
+}
+
+.#{$prefix}--anchor-links--small a,
+.#{$prefix}--anchor-links--small .page-ul > li a {
+  @include carbon--type-style('body-long-02');
+  margin-bottom: 0;
+}

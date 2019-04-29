@@ -11,6 +11,10 @@ b {
   font-weight: carbon--font-weight('semibold');
 }
 
+button {
+  font-family: inherit;
+}
+
 .page-content .bx--link {
   font-size: 1rem;
 }
@@ -28,7 +32,6 @@ b {
 .container .bx--grid {
   margin: 0;
   max-width: rem(1584px);
-  overflow: hidden;
 }
 
 //---------------------------------------

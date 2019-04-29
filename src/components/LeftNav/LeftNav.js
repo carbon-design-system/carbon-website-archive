@@ -74,7 +74,7 @@ export default class LeftNav extends React.Component {
                   <hr className="bx--side-nav__divider" />
                   <SideNavLink
                     icon={<Launch16 />}
-                    href="https://sketch.cloud/s/JaVzz"
+                    href="/resources#sketch-libraries"
                     className="bx--side-nav--website-link">
                     Design Kit
                   </SideNavLink>
