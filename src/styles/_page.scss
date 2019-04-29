@@ -11,6 +11,10 @@ b {
   font-weight: carbon--font-weight('semibold');
 }
 
+button {
+  font-family: inherit;
+}
+
 .page-content .bx--link {
   font-size: 1rem;
 }
