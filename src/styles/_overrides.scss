@@ -104,3 +104,11 @@
   margin-left: -1rem;
   margin-top: -0.5rem;
 }
+
+//---------------------------------------
+// Modal
+//---------------------------------------
+
+.component-example__live.component-example__live--modal .bx--modal {
+  z-index: 10000;
+}
