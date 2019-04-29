@@ -1,10 +1,7 @@
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 import React from 'react';
 import PlayPauseButton from '.';
-
-const onClick = () => {
-  console.log('click');
-};
 
 storiesOf('Play Pause Button ', module)
   .add(
@@ -12,7 +9,7 @@ storiesOf('Play Pause Button ', module)
     () => (
       <div style={{ width: '100%', height: '100%', position: 'relative' }}>
         <div style={{ width: '20px', height: '20px' }}>
-          <PlayPauseButton playing={true} onClick={onClick} />
+          <PlayPauseButton playing={true} onClick={action('onClick')} />
         </div>
       </div>
     ),
@@ -27,7 +24,7 @@ storiesOf('Play Pause Button ', module)
     () => (
       <div style={{ width: '100%', height: '100%', position: 'relative' }}>
         <div style={{ width: '20px', height: '20px' }}>
-          <PlayPauseButton playing={false} onClick={onClick} />
+          <PlayPauseButton playing={false} onClick={action('onClick')} />
         </div>
       </div>
     ),

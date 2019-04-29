@@ -1,6 +1,6 @@
 .page-table,
 .component-docs table {
-  margin-bottom: 1.5rem;
+  margin-bottom: $spacing-06;
   line-height: 1.25;
   width: calc(100%);
 
@@ -12,7 +12,7 @@
     th {
       @include carbon--type-style('heading-01');
       color: $text-01;
-      padding: $spacing-md;
+      padding: $spacing-05;
       text-align: left;
       white-space: nowrap;
       background: $carbon--white-0;
@@ -26,7 +26,7 @@
       td {
         @include carbon--type-style('body-short-01');
         color: $text-01;
-        padding: $spacing-md;
+        padding: $spacing-05;
 
         img[src$='checkmark--glyph.svg'] {
           width: 16px;
@@ -42,7 +42,7 @@
           min-width: rem(100px);
         }
 
-       @include carbon--breakpoint('xlg')  {
+        @include carbon--breakpoint('xlg') {
           min-width: rem(150px);
         }
       }
@@ -63,7 +63,7 @@
 .component-docs table {
   width: calc(100% + 2rem);
   margin-left: -1rem;
-  margin-top: rem(16px);
+  margin-top: $spacing-05;
 
   @include carbon--breakpoint('md') {
     max-width: 75%;

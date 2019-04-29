@@ -41,7 +41,7 @@
 .#{$prefix}--side-nav--website .#{$prefix}--side-nav__item {
   &:nth-last-child(2) {
     .#{$prefix}--side-nav--website-link {
-      margin-top: 1rem;
+      margin-top: $spacing-05;
     }
   }
 
@@ -60,7 +60,7 @@
 }
 
 .#{$prefix}--side-nav__navigation {
-  padding-top: $spacing-lg;
+  padding-top: $spacing-06;
 }
 
 /* temp styles until shell is updated */
@@ -73,7 +73,7 @@
 .#{$prefix}--side-nav.#{$prefix}--side-nav--website
   .#{$prefix}--side-nav__menu[role='menu']
   a.#{$prefix}--side-nav__link[role='menuitem'] {
-  padding-left: 1rem;
+  padding-left: $spacing-05;
 }
 
 .#{$prefix}--side-nav.#{$prefix}--side-nav--website
@@ -85,7 +85,7 @@
   .#{$prefix}--side-nav__submenu-title,
 .#{$prefix}--side-nav.#{$prefix}--side-nav--website
   .#{$prefix}--side-nav__link-text {
-  padding-left: 1rem;
+  padding-left: $spacing-05;
 }
 
 //===================
@@ -140,7 +140,7 @@ a.#{$prefix}--side-nav__link:focus {
 }
 
 .#{$prefix}--side-nav__navigation {
-  padding-top: 1rem;
+  padding-top: $spacing-05;
   background-color: $ui-05;
 }
 
@@ -313,7 +313,7 @@ a.#{$prefix}--side-nav__link > .#{$prefix}--side-nav__icon {
   margin-right: 0;
 }
 
-.bx--side-nav.bx--side-nav--website + div::before {
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website + div::before {
   content: '';
   visibility: hidden;
   opacity: 0;
@@ -327,7 +327,7 @@ a.#{$prefix}--side-nav__link > .#{$prefix}--side-nav__icon {
   z-index: 100;
 }
 
-.bx--side-nav.bx--side-nav--website:not(.side-nav__closed) {
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website:not(.side-nav__closed) {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 
   & + div {

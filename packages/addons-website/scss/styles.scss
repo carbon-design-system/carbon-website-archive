@@ -17,6 +17,7 @@
 @import 'components/overlay';
 @import 'components/image-component';
 @import 'components/swatch-palette-widget';
+@import 'components/anchor-links';
 
 @import '@carbon/type/scss/type';
 @import '@carbon/type/scss/font-face/sans';
@@ -32,3 +33,8 @@
 @import 'components/website-video-internal';
 @import 'components/website-homepage-video';
 @import 'components/website-play-pause-button';
+@import 'components/do-dont-example';
+@import 'components/aspect-ratio-tile';
+@import 'components/type-tester';
+@import 'components/carousel';
+@import 'components/website-non-latin-script';

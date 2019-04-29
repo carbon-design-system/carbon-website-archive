@@ -36,9 +36,6 @@ export default class LeftNav extends React.Component {
     });
 
   render() {
-    const { GATSBY_CARBON_ENV } = process.env;
-    const isInternal = GATSBY_CARBON_ENV == 'internal';
-
     const { isLeftNavOpen, isLeftNavFinal, is404Page } = this.props;
 
     const classNamesClickToClose = classnames({
@@ -77,7 +74,7 @@ export default class LeftNav extends React.Component {
                   <hr className="bx--side-nav__divider" />
                   <SideNavLink
                     icon={<Launch16 />}
-                    href="https://sketch.cloud/s/JaVzz"
+                    href="/resources#sketch-libraries"
                     className="bx--side-nav--website-link">
                     Design Kit
                   </SideNavLink>
@@ -87,7 +84,7 @@ export default class LeftNav extends React.Component {
                     to="/resources#github-repos"
                     className="bx--side-nav--website-link"
                     element={Link}>
-                    GitHub Repos
+                    GitHub repos
                   </SideNavLink>
                 </SideNavItems>
               </SideNav>

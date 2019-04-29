@@ -59,7 +59,7 @@
     background-color: $inverse-01;
     border-radius: 0;
     box-shadow: 0 2px 6px rgba($overlay-01, 0.2);
-    margin-top: $spacing-xs;
+    margin-top: $spacing-03;
   }
 
   /* Menu Top Arrow & Vertical Dividers */
@@ -73,19 +73,19 @@
   .algolia-autocomplete .ds-dropdown-menu [class^='ds-dataset-'] {
     border: none;
     border-radius: 0;
-    padding: 0 0 $spacing-md;
+    padding: 0 0 $spacing-05;
   }
 
   /* Main category (eg. Getting started) */
   .algolia-autocomplete .algolia-docsearch-suggestion--category-header {
     @include carbon--type-style('label-01');
     margin: 0 16px;
-    padding: 0 0 $spacing-xs;
+    padding: 0 0 $spacing-03;
     color: $text-02;
   }
 
   .algolia-autocomplete .algolia-docsearch-suggestion--category-header {
-    padding-top: $spacing-xs;
+    padding-top: $spacing-03;
   }
 
   /* Category (eg. Contributing, Grid, Style) */
@@ -145,7 +145,7 @@
     .algolia-docsearch-suggestion
     .algolia-docsearch-suggestion--subcategory-column {
     width: rem(88px);
-    margin-right: $spacing-md;
+    margin-right: $spacing-05;
   }
 
   .algolia-autocomplete .algolia-docsearch-suggestion--content {
@@ -180,7 +180,7 @@
   }
 
   .algolia-autocomplete .algolia-docsearch-suggestion--wrapper {
-    padding: $spacing-xs $spacing-md;
+    padding: $spacing-03 $spacing-05;
   }
 
   .algolia-autocomplete .algolia-docsearch-suggestion {
@@ -189,18 +189,18 @@
   }
 
   .algolia-autocomplete .ds-dropdown-menu .ds-suggestions {
-    margin-top: $spacing-xs;
+    margin-top: $spacing-03;
   }
 
   .algolia-autocomplete .algolia-docsearch-suggestion--no-results {
-    padding: $spacing-lg 0 $spacing-md;
+    padding: $spacing-06 0 $spacing-05;
     text-align: left;
     float: none;
   }
 
   .algolia-autocomplete .algolia-docsearch-footer {
-    margin-top: $spacing-md;
-    margin-right: $spacing-md;
+    margin-top: $spacing-05;
+    margin-right: $spacing-05;
   }
 }
 
