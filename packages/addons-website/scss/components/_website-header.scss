@@ -50,3 +50,32 @@ a.#{$prefix}--header__name {
 a.#{$prefix}--header__name:focus {
   box-shadow: inset 0 0 0 2px $focus;
 }
+
+.#{$prefix}--header__menu-trigger {
+  @include carbon--breakpoint('lg') {
+    display: none;
+  }
+}
+
+.#{$prefix}--header .#{$prefix}--header__name {
+  font-weight: 400;
+}
+
+.#{$prefix}--header .#{$prefix}--header__name span {
+  font-weight: 600;
+}
+
+.bx--header__menu-trigger {
+  @include carbon--breakpoint('lg') {
+    display: none;
+  }
+}
+
+.bx--header .bx--header__name {
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.bx--header .bx--header__name span {
+  font-weight: 600;
+}
