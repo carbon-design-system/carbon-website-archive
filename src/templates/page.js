@@ -63,11 +63,13 @@ export default ({ data }) => {
       <Layout>
         <PageHeader
           title={post.frontmatter.title}
-          label={post.frontmatter.label}>
-          {!(tabs === null) && (
-            <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
-          )}
-        </PageHeader>
+          label={post.frontmatter.label}
+          pageTabs={
+            !(tabs === null) && (
+              <PageTabs slug={slug} currentTab={currentPage} tabs={tabs} />
+            )
+          }
+        />
         <main className="page-content bx--grid" id="maincontent">
           <div className="wrapper">
             <MDXRenderer>{post.code.body}</MDXRenderer>

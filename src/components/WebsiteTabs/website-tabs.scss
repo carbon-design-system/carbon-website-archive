@@ -35,16 +35,22 @@
   color: $text-01;
   line-height: 1.25;
   padding: $spacing-sm $spacing-05;
+  transition: background $transition--base;
 }
 .website-tabs li.#{$prefix}--tabs__nav-item:hover a.#{$prefix}--tabs__nav-link,
 .website-tabs
   li.#{$prefix}--tabs__nav-item:hover:not([disabled])
   a.#{$prefix}--tabs__nav-link {
   border-bottom: none;
+  background: #cacaca; // non-tokenized hover for gray 20 ($ui-03)
+  transition: background $transition--base;
 }
 
 .website-tabs
   li.#{$prefix}--tabs__nav-item--selected
+  a.#{$prefix}--tabs__nav-link,
+.website-tabs
+  li.#{$prefix}--tabs__nav-item--selected:hover:not([disabled])
   a.#{$prefix}--tabs__nav-link {
   background: $ui-02;
   border: none;
