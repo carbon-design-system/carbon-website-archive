@@ -7,17 +7,17 @@
   position: relative;
   display: block;
   margin-top: $spacing-01;
-  height: 18px;
-  width: 18px;
-  border-radius: 18px;
+  height: rem(14px);
+  width: rem(14px);
+  border-radius: rem(14px);
 
   // needed to fix anti-aliasing issue in firefox
   &:before {
     position: absolute;
     content: '';
-    height: 18px;
-    width: 18px;
-    border-radius: 18px;
+    height: rem(14px);
+    width: rem(14px);
+    border-radius: rem(14px);
     border: 1px solid $ui-03;
     left: -1px;
     top: -1px;
