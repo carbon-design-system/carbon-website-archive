@@ -224,11 +224,8 @@ Markdown or components can go inside
 
 ```
 #### Color block
-- `<ColorBlock showhex size="xs">#ffaaaa</ColorBlock>`
+- `<ColorBlock showhex>#ffaaaa</ColorBlock>`
   - `showHex` displays the hex value next to the color block
-  - `size` takes values of `xs`, `s`, `m`, `l` (12px, 24px, 40px, 80px respectively)
-  - `size` also accepts a number (e.g. `size="200"`, which would render a that is 200px x 200px)
-  - leaving out these extra properties will default to no label, and a swatch size of 24px
 
 #### Anchor links
 - `<AnchorLinks>`
