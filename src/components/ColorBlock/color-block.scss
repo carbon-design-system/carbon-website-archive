@@ -4,12 +4,24 @@
 }
 
 .color-block__color {
+  position: relative;
   display: block;
   margin-top: $spacing-01;
-  height: 20px;
-  width: 20px;
-  border: 1px solid $ui-03;
-  border-radius: 20px;
+  height: 18px;
+  width: 18px;
+  border-radius: 18px;
+
+  // needed to fix anti-aliasing issue in firefox
+  &:before {
+    position: absolute;
+    content: '';
+    height: 18px;
+    width: 18px;
+    border-radius: 18px;
+    border: 1px solid $ui-03;
+    left: -1px;
+    top: -1px;
+  }
 }
 
 .color-block__color--with-label {
