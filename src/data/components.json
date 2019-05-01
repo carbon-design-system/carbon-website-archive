@@ -21,19 +21,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -60,19 +60,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -99,19 +99,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -138,19 +138,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -177,19 +177,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -216,19 +216,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -256,18 +256,18 @@
       },
       "angular": {
         "stable": false,
-        "experimental": true,
+        "experimental": false,
         "new": false,
         "updated": false,
         "deprectated": false,
-        "underConstruction": false,
+        "underConstruction": true,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -294,19 +294,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -333,19 +333,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -372,19 +372,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -411,19 +411,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -450,19 +450,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -489,19 +489,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -528,19 +528,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -567,19 +567,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -606,19 +606,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -645,10 +645,10 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -684,19 +684,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -723,19 +723,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -762,19 +762,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -801,19 +801,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -840,19 +840,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -879,19 +879,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -918,19 +918,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -957,19 +957,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -996,19 +996,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -1035,19 +1035,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -1074,19 +1074,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -1113,19 +1113,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -1152,19 +1152,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -1191,19 +1191,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -1230,19 +1230,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
@@ -1269,19 +1269,19 @@
         "notAvailable": false
       },
       "angular": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false
       },
       "vue": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
         "underConstruction": false,
         "notAvailable": false

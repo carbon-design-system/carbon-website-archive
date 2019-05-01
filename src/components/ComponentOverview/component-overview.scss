@@ -80,7 +80,7 @@ $hover-ui: #e5e5e5;
   }
 
   // Display four columnns
- @include carbon--breakpoint('xlg')  {
+  @include carbon--breakpoint('xlg') {
     width: 25%;
 
     &:nth-child(3n + 3) {
@@ -107,12 +107,14 @@ $hover-ui: #e5e5e5;
 
 .component-item__link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
 }
 
 .component-item__img {
-  margin: auto;
+  margin: 0;
   display: block;
 }
 

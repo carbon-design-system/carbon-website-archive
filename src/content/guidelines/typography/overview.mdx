@@ -1,13 +1,13 @@
 ---
-label: When used properly, typography can help create clear hierarchies, organize information, and guide users through the product or experience.
+label: Typography can help create clear hierarchies, organize information, and guide users through a product or experience.
 title: Typography
-tabs: ['Overview', 'Productive']
+tabs: ['Overview', 'Productive', 'Expressive']
 ---
 
 import TypeScaleTable from '../../../../src/components/TypeScaleTable';
 import TypeWeight from '../../../../src/components/TypeWeight';
 
-### With our new bespoke corporate typeface, IBM Plex™, comes a new set of guidance and best practices. Type Specs helps to set up a start point to apply typography—type scales, styles and alignment on screens.
+### Typography can help create clear hierarchies, organize information, and guide users through a product or experience.
 
 <AnchorLinks>
 
@@ -21,11 +21,8 @@ import TypeWeight from '../../../../src/components/TypeWeight';
 
 ## Resources
 
-<GridWrapper
-  className="tile--resource--no-margin"
-  col_lg="8"
-  flex="true"
-  bleed="true"> 
+<Row className="tile--group">
+<Column offsetLg="4" colMd="4" colLg="4" noGutterSm>
   <ClickableTile
     title="Get the latest IBM Plex™ download on GitHub"
     href="https://github.com/IBM/plex/releases/latest"
@@ -34,12 +31,16 @@ import TypeWeight from '../../../../src/components/TypeWeight';
 ![](images/github-icon.png)
 
   </ClickableTile>
+</Column>
+<Column colMd="4" colLg="4"  noGutterSm>
   <ClickableTile
     title="Visit the IBM Plex™ website to learn more"
     href="https://www.ibm.com/plex/"
     type="resource">
 
   </ClickableTile>
+</Column>
+<Column offsetLg="4" colMd="4" colLg="4" noGutterSm>
   <ClickableTile
     title="Elements package: Type"
     href="https://github.com/IBM/carbon-elements/tree/master/packages/type"
@@ -48,6 +49,8 @@ import TypeWeight from '../../../../src/components/TypeWeight';
 ![](images/github-icon.png)
 
   </ClickableTile>
+</Column>
+<Column colMd="4" colLg="4"  noGutterSm>
   <ClickableTile
     title="Type package preview"
     href="https://github.com/IBM/carbon-elements/tree/master/packages/type"
@@ -56,7 +59,8 @@ import TypeWeight from '../../../../src/components/TypeWeight';
 ![](images/sandbox-icon.png)
 
  </ClickableTile> 
-</GridWrapper>
+</Column>
+</Row>
 
 <br />
 
@@ -64,7 +68,7 @@ import TypeWeight from '../../../../src/components/TypeWeight';
 
 ## Type tokens and sets
 
-Carbon uses type tokens and themes to manage typrography. Carbon uses type tokens and types sets to manage typrography. Type tokens are simply pre-set configurations of typographic elements (font-size, weight, line-height, etc) that are specifically calibrated for use in IBM product design. Selecting the appropriate type style is determined by layout or template structure. Layouts may have several levels of architecture or areas that require varying typographic hierarchies.
+Carbon uses type tokens and themes to manage typography. Type tokens are pre-set configurations of typographic elements such as font size, weight, or leading (line height) that are specifically calibrated for use alongside [IBM Plex](http://ibm.com/plex) in product. Selecting the appropriate type style is determined by layout or template structure. Layouts may have several levels of architecture or areas that require varying typographic hierarchies.
 
 ### Productive vs. Expressive type sets
 
@@ -130,51 +134,70 @@ Each weight has an italic style, which should only be used when you need to emph
 
 Type color should be carefully considered, with legibility and accessibility as paramount concerns. Keep type color neutral in running text. Use primary blue for primary actions.
 
-<GridWrapper col_lg="8" flex="true">
-<DoDontExample correct="true">
+<Row>
+<Column offsetLg="4" colMd="4" colLg="4">
+<DoDontExample correct>
 
 ![Neutral color for text](images/Typography_overview_Type-color-1.svg)
 
 </DoDontExample>
+</Column>
+<Column colMd="4" colLg="4" >
 <DoDontExample>
 
 ![I'm a magenta sentence for no reason](images/Typography_overview_Type-color-2.svg)
 
 </DoDontExample>
-</GridWrapper>
-<GridWrapper col_lg="8" flex="true">
-<DoDontExample correct="true" dark="true">
+</Column>
+</Row>
+
+<Row>
+<Column offsetLg="4" colMd="4" colLg="4">
+<DoDontExample correct dark="true">
 
 ![Neutral color for text](images/Typography_overview_Type-color-3.svg)
 
 </DoDontExample>
+</Column>
+<Column colMd="4" colLg="4" >
 <DoDontExample dark="true">
 
 ![Color is not for decoration](images/Typography_overview_Type-color-4.svg)
 
 </DoDontExample>
-</GridWrapper>
-<GridWrapper col_lg="8" flex="true">
-<DoDontExample correct="true" label="Core blue colors are used for text links and primary actions">
+</Column>
+</Row>
+
+<Row>
+<Column offsetLg="4" colMd="4" colLg="4">
+<DoDontExample correct label="Core blue colors are used for text links and primary actions">
 
 ![Link with icon](images/Typography_overview_Type-color-5.svg)
 
 </DoDontExample>
-<DoDontExample correct="true" label="Secondary actions use Gray 100 and icons">
+</Column>
+<Column colMd="4" colLg="4" >
+<DoDontExample correct label="Secondary actions use Gray 100 and icons">
 
 ![Download with icon](images/Typography_overview_Type-color-6.svg)
 
 </DoDontExample>
-</GridWrapper>
-<GridWrapper col_lg="8" flex="true">
-<DoDontExample correct="true" label="Other use cases for colored type are code snippets, warnings, alerts, etc.">
+</Column>
+</Row>
+
+<Row>
+<Column offsetLg="4" colMd="4" colLg="4">
+<DoDontExample correct label="Other use cases for colored type are code snippets, warnings, alerts, etc.">
 
 ![Oops, something went wrong! colored text](images/Typography_overview_Type-color-7.svg)
 
 </DoDontExample>
-<DoDontExample correct="true">
+</Column>
+<Column colMd="4" colLg="4" >
+<DoDontExample correct>
 
 ![Code snippet with colored highlight type](images/Typography_overview_Type-color-8.svg)
 
 </DoDontExample>
-</GridWrapper>
+</Column>
+</Row>

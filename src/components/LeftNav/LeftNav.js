@@ -36,9 +36,6 @@ export default class LeftNav extends React.Component {
     });
 
   render() {
-    const { GATSBY_CARBON_ENV } = process.env;
-    const isInternal = GATSBY_CARBON_ENV == 'internal';
-
     const { isLeftNavOpen, isLeftNavFinal, is404Page } = this.props;
 
     const classNamesClickToClose = classnames({
@@ -57,7 +54,9 @@ export default class LeftNav extends React.Component {
             'side-nav__closed': !isLeftNavOpen,
             'side-nav__closed--final': isLeftNavFinal && !isLeftNavOpen,
             'bx--side-nav--website--light':
-              location.pathname !== '/' && !is404Page,
+              location.pathname !== '/' &&
+              location.pathname !== '/design/product/' &&
+              !is404Page,
             'bx--side-nav--website': true,
           });
 
@@ -75,7 +74,7 @@ export default class LeftNav extends React.Component {
                   <hr className="bx--side-nav__divider" />
                   <SideNavLink
                     icon={<Launch16 />}
-                    href="https://github.com/ibm/carbon-design-kit"
+                    href="/resources#sketch-libraries"
                     className="bx--side-nav--website-link">
                     Design Kit
                   </SideNavLink>
@@ -85,7 +84,7 @@ export default class LeftNav extends React.Component {
                     to="/resources#github-repos"
                     className="bx--side-nav--website-link"
                     element={Link}>
-                    GitHub Repos
+                    GitHub repos
                   </SideNavLink>
                 </SideNavItems>
               </SideNav>

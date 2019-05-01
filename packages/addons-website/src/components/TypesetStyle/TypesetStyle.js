@@ -1,5 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import classnames from 'classnames';
 import { settings } from 'carbon-components';
 import { baseFontSize, breakpoints as carbonBreakpoints } from '@carbon/layout';
 import { findLastIndex, values } from 'lodash';
@@ -123,11 +124,11 @@ const typeScale = {
       'letter-spacing': 0,
     },
   },
-  'heading-03': {
+  'productive-heading-03': {
     sm: {
       step: 3,
       font: 'IBM Plex Sans',
-      'font-weight': '600',
+      'font-weight': '400',
       'font-size': 1.25,
       'line-height': 1.625,
       'letter-spacing': '0',
@@ -556,30 +557,7 @@ const typeScale = {
 };
 
 const typeSets = {
-  caption: [
-    {
-      description:
-        'This is for captions or legal content in a layout — not for body copy.',
-      key: 'caption-01',
-      name: 'caption-01',
-    },
-  ],
-  label: [
-    {
-      description: 'This is for field labels in components and error messages',
-      key: 'label-01',
-      name: 'label-01',
-    },
-  ],
-  helperText: [
-    {
-      description:
-        'This is for explanatory helper text that appears below a field title within a component.',
-      key: 'helper-text-01',
-      name: 'helper-text-01',
-    },
-  ],
-  code: [
+  supportingStyle: [
     {
       description:
         'This is for inline code snippets and smaller code elements.',
@@ -593,6 +571,44 @@ const typeSets = {
       key: 'code-02',
       name: 'code-02',
     },
+    {
+      description:
+        'This is for captions or legal content in a layout — not for body copy.',
+      key: 'caption-01',
+      name: 'caption-01',
+    },
+    {
+      description:
+        'This is for explanatory helper text that appears below a field title within a component.',
+      key: 'helper-text-01',
+      name: 'helper-text-01',
+    },
+  ],
+  supportingStyles: [
+    {
+      description:
+        'This is for inline code snippets and smaller code elements.',
+      version: 'mono',
+      key: 'code-01',
+      name: 'code-01',
+    },
+    {
+      description: 'This is for large code snippets and larger code elements.',
+      version: 'mono',
+      key: 'code-02',
+      name: 'code-02',
+    },
+    {
+      description: 'This is for field labels in components and error messages.',
+      key: 'label-01',
+      name: 'label-01',
+    },
+    {
+      description:
+        'This is for explanatory helper text that appears below a field title within a component.',
+      key: 'helper-text-01',
+      name: 'helper-text-01',
+    },
   ],
   body: [
     {
@@ -603,15 +619,15 @@ const typeSets = {
     },
     {
       description:
-        'This is for short paragraphs with no more than four lines and is commonly used in the expressive type theme for layouts.',
-      key: 'body-short-02',
-      name: 'body-short-02',
-    },
-    {
-      description:
         'This is commonly used in both the expressive and the productive type theme layouts for long paragraphs with more than four lines. It is a good size for comfortable, long-form reading. Use this for longer body copy in components such as accordion or structured list. Always left-align this type; never center it.',
       key: 'body-long-01',
       name: 'body-long-01',
+    },
+    {
+      description:
+        'This is for short paragraphs with no more than four lines and is commonly used in the expressive type theme for layouts.',
+      key: 'body-short-02',
+      name: 'body-short-02',
     },
     {
       description:
@@ -620,7 +636,7 @@ const typeSets = {
       name: 'body-long-02',
     },
   ],
-  heading: [
+  fixedHeadings: [
     {
       description: 'This is for component and layout headings.',
       key: 'heading-01',
@@ -633,11 +649,9 @@ const typeSets = {
     },
     {
       description: 'This is for component and layout headings.',
-      key: 'heading-03',
-      name: 'heading-03',
+      key: 'productive-heading-03',
+      name: 'productive-heading-03',
     },
-  ],
-  productHeading: [
     {
       description: 'This is for layout headings.',
       key: 'productive-heading-04',
@@ -649,7 +663,19 @@ const typeSets = {
       name: 'productive-heading-05',
     },
   ],
-  fluidHeading: [
+  fixedHeading: [
+    {
+      description: 'This is for component and layout headings.',
+      key: 'heading-01',
+      name: 'heading-01',
+    },
+    {
+      description: 'This is for component and layout headings.',
+      key: 'heading-02',
+      name: 'heading-02',
+    },
+  ],
+  fluidHeadings: [
     {
       description: 'Heading style',
       key: 'expressive-heading-04',
@@ -661,14 +687,12 @@ const typeSets = {
       name: 'expressive-heading-05',
     },
   ],
-  fluidParagraph: [
+  FluidParagraphsAndQuotes: [
     {
       description: 'Paragraph',
       key: 'expressive-paragraph-01',
       name: 'expressive-paragraph-01',
     },
-  ],
-  fluidQuotation: [
     {
       description: '“Quote.”',
       key: 'quotation-01',
@@ -732,7 +756,49 @@ class TypesetStyle extends React.Component {
   state = {
     simulatedScreenWidth: 1056,
     tab: 0,
+    sticky: false,
+    mobile: false,
   };
+
+  componentDidMount() {
+    if (window.innerWidth < 500) {
+      this.setState({
+        mobile: true,
+      });
+    }
+    this.addResizeListener();
+    this.addScrollListener();
+  }
+
+  addScrollListener() {
+    document.addEventListener('scroll', () => {
+      if (this.refs.stickyBar) {
+        if (this.refs.stickyBar.getBoundingClientRect().top <= 104) {
+          this.setState({
+            sticky: true,
+          });
+        } else if (this.refs.stickyBar.getBoundingClientRect().top > 104) {
+          this.setState({
+            sticky: false,
+          });
+        }
+      }
+    });
+  }
+
+  addResizeListener() {
+    window.addEventListener('resize', () => {
+      if (window.innerWidth < 500) {
+        this.setState({
+          mobile: true,
+        });
+      } else if (window.innerWidth > 500) {
+        this.setState({
+          mobile: false,
+        });
+      }
+    });
+  }
 
   toggleBreakpoint = e => {
     this.setState({ simulatedScreenWidth: Number(e.target.value) });
@@ -742,7 +808,7 @@ class TypesetStyle extends React.Component {
     this.setState({ tab: value });
   };
 
-  getButtons = () => (
+  getButtons = () =>
     Object.keys(breakpoints).map(breakpointName => {
       return (
         <button
@@ -764,22 +830,41 @@ class TypesetStyle extends React.Component {
           {breakpointName}
         </button>
       );
-    })
-  )
+    });
 
   render() {
-    const {navBar, banner, secondary, top, breakpointControls, title, typesets } = this.props
+    const {
+      navBar,
+      banner,
+      secondary,
+      top,
+      breakpointControls,
+      typesets,
+    } = this.props;
+
+    const typesetStyleStickyClassnames = classnames(
+      [`${prefix}--typeset-style-controls-sticky`],
+      [`${prefix}--row`],
+      {
+        [`${prefix}--typeset-style-controls-sticky-stuck`]: this.state.sticky,
+      }
+    );
 
     return (
-      <div className={`${prefix}--typeset-style-container ibm--offset-lg-4`}>
-        <StickyContainer navBar={navBar || true} banner={banner || true} secondary={secondary || false} top={top || null}>
-          { breakpointControls && (
+      <div
+        className={`${prefix}--typeset-style-container ${prefix}--offset-lg-4`}>
+        <StickyContainer
+          navBar={navBar || true}
+          banner={banner || true}
+          secondary={secondary || false}
+          top={top || null}>
+          {breakpointControls && (
             <>
-              <div className={`${prefix}--typeset-style-title-shiv ${prefix}--row`}></div>
               <div
-                className={`${prefix}--typeset-style-controls-sticky ${prefix}--row`}>
-                <div
-                  className={`${prefix}--typeset-style-breakpoint-controls ibm--col-md-5 ibm--col-lg-8`}>
+                className={`${prefix}--typeset-style-title-shiv ${prefix}--row`}
+              />
+              <div ref="stickyBar" className={typesetStyleStickyClassnames}>
+                <div className={`${prefix}--typeset-style-breakpoint-controls`}>
                   <span
                     className={`${prefix}--type-body-long-01 ibm-padding--horizontal`}
                     style={{ marginBottom: 0 }}>
@@ -790,8 +875,7 @@ class TypesetStyle extends React.Component {
                     {this.getButtons()}
                   </div>
                 </div>
-                <div
-                  className={`${prefix}--typeset-style-screen-controls ibm-padding--horizontal ibm--col-md-3 ibm--col-lg-8`}>
+                <div className={`${prefix}--typeset-style-screen-controls`}>
                   <span
                     className={`${prefix}--type-body-long-01 ${prefix}--typeset-style-screen-width-label`}
                     style={{ marginBottom: 0, whiteSpace: 'nowrap' }}>
@@ -812,27 +896,25 @@ class TypesetStyle extends React.Component {
               </div>
             </>
           )}
-          
-          <div className={`${prefix}--typeset-style-title-shiv ${prefix}--row`}></div>
-          <div
-            className={`${prefix}--typeset-style-group-title-container ${prefix}--row`}>
-            <span className={`${prefix}--type-heading-02 ibm-type-semibold`}>
-              {title}
-            </span>
-          </div>
         </StickyContainer>
         <div>
-        {
-          typesets.replace(', ',',').split(',').map( (typeset, i) => (
-            <TypesetExample
-              key={i}
-              simulatedScreenWidth={this.state.simulatedScreenWidth}
-              name={typeset}
-              typeSet={typeSets[typeset]}
-              typeScale={typeScale}
-            />
-          ))
-        }
+          {typesets
+            .replace(', ', ',')
+            .split(',')
+            .map((typeset, i) => (
+              <>
+                <h4 className="page-h4">
+                  {typeset.replace(/([a-z])([A-Z])/g, '$1 $2').toLowerCase()}
+                </h4>
+                <TypesetExample
+                  key={i}
+                  simulatedScreenWidth={this.state.simulatedScreenWidth}
+                  name={typeset}
+                  typeSet={typeSets[typeset]}
+                  typeScale={typeScale}
+                />
+              </>
+            ))}
         </div>
       </div>
     );
@@ -858,9 +940,6 @@ TypesetStyle.propTypes = {
   // show / hide breakpoint controls
   breakpointControls: PropTypes.bool,
 
-  // type header
-  title: PropTypes.string,
-  
   // comma separated list of typesets to display
-  typesets: PropTypes.string
-}
+  typesets: PropTypes.string,
+};

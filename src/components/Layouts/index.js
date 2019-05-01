@@ -1,38 +1,53 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { StaticQuery, graphql, Link } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 import Packages from '../../../package.json';
-import GlobalSearch from '../GlobalSearch';
+import WebsiteHeader from '../WebsiteHeader';
+import WebsiteAlert from '../WebsiteAlert';
 import LeftNav from '../LeftNav';
 import favicon32 from '../../content/global/images/favicon-32.png';
 import {
-  Header,
-  HeaderMenuButton,
-  HeaderName,
-  SkipToContent,
-  HeaderGlobalBar,
-  HeaderGlobalAction,
-} from 'carbon-components-react/lib/components/UIShell';
-import {
-  ArrowRight20,
-  AppSwitcher20,
-  Close20,
-  Information20,
-  Search20,
-} from '@carbon/icons-react';
-import { WebsiteFooter, WebsiteSwitcher, WebsiteCodeSnippet } from '@carbon/addons-website';
+  AnchorLinks,
+  ImageComponent,
+  Row,
+  Column,
+  WebsiteFooter,
+  WebsiteSwitcher,
+  WebsiteCodeSnippet,
+  DoDontExample,
+} from '@carbon/addons-website';
 
+import '../../polyfills';
+import ClickableTile from '../ClickableTile';
+import FeatureTile from '../FeatureTile';
+import ColorBlock from '../ColorBlock';
+import ComponentCode from '../ComponentCode';
+import ComponentDocs from '../ComponentDocs';
+import ComponentReact from '../ComponentReact';
+import WebsiteTabs from '../WebsiteTabs';
+import SimpleColumns from '../SimpleColumns';
+import Video from '../Video';
 import PageTable from '../PageTable';
 
-import { p, h1, h2, h3, h4, h5, ul, ol } from '../markdown/Markdown';
+import { a, p, h1, h2, h3, h4, h5, ul, ol } from '../markdown/Markdown';
 
 import timestamp from 'raw-loader!../../../build-timestamp';
 import '../../styles/index.scss';
 
-import { MDXProvider } from '@mdx-js/tag';
+// import { MDXProvider } from '@mdx-js/tag';
+import throttle from 'lodash.throttle';
+import { MDXProvider } from '@mdx-js/react';
 
 class Layout extends React.Component {
+  constructor() {
+    super();
+    this.lastKnownScrollY = 0;
+    this.currentScrollY = 0;
+    this.stickyWrapper = null;
+    this.headerHiddenClass = 'website-header-hidden';
+  }
+
   static propTypes = {
     children: PropTypes.any,
   };
@@ -48,6 +63,7 @@ class Layout extends React.Component {
   componentDidMount() {
     this.checkWidth();
     this.addSmoothScroll();
+    this.addStickyTabs();
   }
 
   handleSearchClick = isSearchOpen => {
@@ -68,9 +84,7 @@ class Layout extends React.Component {
   };
 
   handleCloseSearchClick = evt => {
-    console.log(evt.target);
     const className = evt.target.classList[0];
-    console.log(className);
     const filters = [
       'bx--search',
       'bx--search-input',
@@ -162,9 +176,9 @@ class Layout extends React.Component {
       durationMin: 250,
       durationMax: 700,
       easing: 'easeInOutCubic',
-      offset: 87, // height of both header bars
+      offset: 87, // height of both header bars plus space for tabs
       topOnEmptyHash: false,
-      clip: true
+      clip: true,
     });
 
     if (window.location.hash) {
@@ -176,7 +190,49 @@ class Layout extends React.Component {
         scroll.animateScroll(hashElement);
       }
     }
-  }
+  };
+
+  onScroll = () => {
+    // are we scrolling?
+    // which direction?
+    // how far away from last saved position, and which direction?
+    // toggle header visible state if over max distance in particular direction
+
+    this.currentScrollY = window.pageYOffset;
+    if (this.currentScrollY < this.lastKnownScrollY - 80) {
+      this.showHeader();
+      this.lastKnownScrollY = this.currentScrollY;
+    } else if (this.currentScrollY > this.lastKnownScrollY + 80) {
+      this.hideHeader();
+      this.lastKnownScrollY = this.currentScrollY;
+    }
+  };
+
+  // TODO: can we componetize this to remove side effects and set the visible state in a declarative fashion
+  showHeader = () => {
+    if (
+      this.stickyWrapper.classList &&
+      this.stickyWrapper.classList.contains(this.headerHiddenClass)
+    ) {
+      this.stickyWrapper.classList.remove(this.headerHiddenClass);
+    }
+  };
+
+  hideHeader = () => {
+    this.stickyWrapper.classList.add(this.headerHiddenClass);
+    if (
+      this.stickyWrapper.classList &&
+      !this.stickyWrapper.classList.contains(this.headerHiddenClass)
+    ) {
+      this.stickyWrapper.classList.remove(this.headerHiddenClass);
+    }
+  };
+
+  addStickyTabs = () => {
+    this.stickyWrapper = document.getElementsByTagName('body')[0];
+    // save ref to body that gets the tag?
+    document.addEventListener('scroll', throttle(this.onScroll, 200), false);
+  };
 
   render() {
     const { GATSBY_CARBON_ENV } = process.env;
@@ -235,75 +291,20 @@ class Layout extends React.Component {
               ]}>
               <html lang="en" />
             </Helmet>
-            <aside aria-label="alert banner" className="website-alert">
-              <Information20 className="website-alert__icon" />
-              <p className="website-alert__text">
-                <span>Carbon v10 is live!</span>
-                <span></span>{' '}
-                <span>View the migration guide to upgrade from v9.</span>
-              </p>
-              <Link
-                className="website-alert__button"
-                tabIndex="-1"
-                to="/updates/v10-migration/overview">
-                <button class="bx--btn bx--btn--secondary bx--btn--sm" type="button">
-                  <span>Migrate to v10</span>
-                  <ArrowRight20 />
-                </button>
-              </Link>
-            </aside>
-            <Header aria-label="Header" className="bx--header--website">
-              <SkipToContent />
-              <HeaderMenuButton
-                className="bx--header__action--menu"
-                aria-label="Open menu"
-                onClick={() =>
-                  this.onToggleBtnClick(
-                    'isLeftNavOpen',
-                    'isLeftNavFinal',
-                    'isSwitcherOpen',
-                    'isSwitcherFinal'
-                  )
-                }
-                isActive={isLeftNavOpen}
-              />
-              {isInternal ? (
-                <HeaderName prefix="" to="/" element={Link} href="/">
-                  <span>IBM Product</span>&nbsp;Design&nbsp;<span>System</span>
-                </HeaderName>
-              ) : (
-                  <HeaderName prefix="" to="/" element={Link}>
-                    Carbon&nbsp;<span>Design System</span>
-                  </HeaderName>
-                )}
 
-              <HeaderGlobalBar>
-                {/* {isInternal ? null : <GlobalSearch />} */}
-                {this.state.isSearchOpen ? (
-                  <GlobalSearch />
-                ) : (
-                    <HeaderGlobalAction
-                      className="bx--header__action--search"
-                      aria-label="Search Website"
-                      onClick={() => this.handleSearchClick('isSearchOpen')}>
-                      <Search20 />
-                    </HeaderGlobalAction>
-                  )}
-                <HeaderGlobalAction
-                  className="bx--header__action--switcher"
-                  aria-label="Switch"
-                  onClick={() =>
-                    this.onToggleBtnClick(
-                      'isSwitcherOpen',
-                      'isSwitcherFinal',
-                      'isLeftNavOpen',
-                      'isLeftNavFinal'
-                    )
-                  }>
-                  {this.state.isSwitcherOpen ? <Close20 /> : <AppSwitcher20 />}
-                </HeaderGlobalAction>
-              </HeaderGlobalBar>
-            </Header>
+            <WebsiteHeader
+              isLeftNavOpen={isLeftNavOpen}
+              onToggleBtnClick={this.onToggleBtnClick}
+              isInternal={isInternal}
+              isSearchOpen={this.state.isSearchOpen}
+              handleSearchClick={this.handleSearchClick}>
+              <WebsiteAlert
+                alertTitle="Carbon v10 is live!"
+                alertDescription="View the migration guide to upgrade from v9."
+                buttonText="Migrate to v10"
+                buttonTo="/updates/v10-migration/overview"
+              />
+            </WebsiteHeader>
 
             <WebsiteSwitcher
               isSwitcherFinal={this.state.isSwitcherFinal}
@@ -315,7 +316,7 @@ class Layout extends React.Component {
                   linkText: 'IBM Design Language',
                 },
                 {
-                  href: 'https://next.carbondesignsystem.com',
+                  href: 'https://www.carbondesignsystem.com',
                   linkText: 'IBM Product Design',
                 },
                 {
@@ -349,6 +350,7 @@ class Layout extends React.Component {
               <MDXProvider
                 components={{
                   // Map HTML element tag to React component
+                  a: a,
                   p: p,
                   h1: h1,
                   h2: h2,
@@ -359,6 +361,21 @@ class Layout extends React.Component {
                   ol: ol,
                   pre: WebsiteCodeSnippet,
                   table: PageTable,
+                  AnchorLinks,
+                  ImageComponent,
+                  Row,
+                  Column,
+                  ClickableTile,
+                  FeatureTile,
+                  ColorBlock,
+                  ComponentCode,
+                  ComponentDocs,
+                  ComponentReact,
+                  DoDontExample,
+                  WebsiteTabs,
+                  SimpleColumns,
+                  Video,
+                  PageTable,
                 }}>
                 {children}
               </MDXProvider>

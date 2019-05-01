@@ -1,0 +1,130 @@
+@import '../prefix';
+
+.#{$prefix}--aspect-ratio-tile {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 100%;
+  color: $carbon--gray-90;
+
+  .#{$prefix}--aspect-ratio-tile-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 1px;
+    bottom: 1px;
+    background-color: $carbon--gray-30;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    // z-index: 1;
+  }
+
+  .#{$prefix}--aspect-ratio-tile-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 1px;
+    bottom: 1px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: $spacing-05;
+    color: inherit;
+    user-select: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 600ms ease;
+
+    &.#{$prefix}--aspect-ratio-tile-content-on-hover-only {
+      opacity: 0;
+    }
+
+    .#{$prefix}--aspect-ratio-tile-title {
+      z-index: 2;
+    }
+    .#{$prefix}--aspect-ratio-tile-identity-icon {
+      position: absolute;
+      left: 1rem;
+      bottom: 0;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .#{$prefix}--aspect-ratio-tile-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 1px;
+    bottom: 1px;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.08);
+    opacity: 0;
+    transition: opacity 600ms ease;
+    &.#{$prefix}--aspect-ratio-tile-hover__dark {
+      background: rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  .#{$prefix}--aspect-ratio-tile-action-icon {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 4;
+    fill: $carbon--gray-90;
+  }
+
+  &:hover {
+    .#{$prefix}--aspect-ratio-tile-content,
+    .#{$prefix}--aspect-ratio-tile-hover {
+      opacity: 1;
+    }
+  }
+
+  &.#{$prefix}--aspect-ratio-tile__dark {
+    color: $carbon--white-0;
+
+    .#{$prefix}--aspect-ratio-tile-background {
+      background-color: $carbon--gray-90;
+    }
+
+    .#{$prefix}--aspect-ratio-tile-action-icon {
+      fill: $carbon--white-0;
+    }
+  }
+
+  .#{$prefix}--aspect-ratio-tile-nested-content {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom: 1px;
+    right: 1px;
+    z-index: 1;
+
+    // nested tile bottom right
+    .#{$prefix}--aspect-ratio-tile {
+      position: absolute;
+      z-index: 5000;
+      bottom: -1px;
+      right: -1px;
+      width: calc(50% + 1px);
+    }
+  }
+}
+
+.#{$prefix}--col-lg-12 {
+  .#{$prefix}--aspect-ratio-tile {
+    .#{$prefix}--aspect-ratio-tile-nested-content {
+      .#{$prefix}--aspect-ratio-tile {
+        @include carbon--breakpoint('lg') {
+          width: calc((100% / 3) + 1px);
+        }
+      }
+    }
+  }
+}
