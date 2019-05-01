@@ -115,15 +115,18 @@ h3.page-h3--sticky {
   display: block;
   width: rem(48px);
   height: rem(48px);
+  border-radius: rem(48px);
 
   @media all and (max-width: 672px) {
     width: rem(32px);
     height: rem(32px);
+    border-radius: rem(32px);
   }
 
   @media all and (max-width: 580px) {
     width: rem(48px);
     height: rem(48px);
+    border-radius: rem(48px);
   }
 }
 
