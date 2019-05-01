@@ -147,6 +147,15 @@ website global header hidden
     ~ .bx--side-nav
     + div
     .color-token-table__theme-switcher--sticky {
+    top: 65px;
+  }
+
+  .website-hidden
+    .website-alert
+    + .bx--header
+    ~ .bx--side-nav
+    + div
+    .color-token-table__theme-switcher--sticky {
     top: 104px;
   }
 }
