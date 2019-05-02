@@ -22,7 +22,7 @@ This step starts with an existing React app created with [create-react-app](http
 
 ## Fork, clone & branch
 
-This tutorial has an accompanying GitHub responsitory called [carbon-tutorial](https://github.com/carbon-design-system/carbon-tutorial) that we'll use as a starting point for each step along the way.
+This tutorial has an accompanying GitHub repository called [carbon-tutorial](https://github.com/carbon-design-system/carbon-tutorial) that we'll use as a starting point for each step along the way.
 
 ### Fork
 
@@ -30,10 +30,10 @@ To begin, fork [carbon-tutorial](https://github.com/carbon-design-system/carbon-
 
 ### Clone
 
-From your forked repository, copy the SSH key or URL and in your terminal run the two commands to get the repositiory in your local filesystem and enter that directory.
+From your forked repository, copy the SSH or HTTPS URL and in your terminal run the two commands to get the repository in your local file system and enter that directory.
 
 ```bash
-$ git clone [your fork SSH/URL]
+$ git clone [your fork SSH/HTTPS]
 $ cd carbon-tutorial
 ```
 
@@ -45,7 +45,7 @@ Add a remote called `upstream` so we can eventually submit a pull request once y
 $ git remote add upstream git@github.com:carbon-design-system/carbon-tutorial.git
 ```
 
-Verify that your forked repository remote are correct:
+Verify that your forked repository remotes are correct:
 
 ```bash
 $ git remote -v
@@ -110,7 +110,7 @@ $ yarn start
 
 ## Install & build Sass
 
-Run the following command to install `node-sass` as a dependency.
+We need to run a Sass build as the Carbon styles are authored in Sass, so run the following command to install `node-sass` as a dependency.
 
 ```bash
 $ yarn add node-sass
@@ -118,7 +118,7 @@ $ yarn add node-sass
 
 In `src/` rename `index.css` as `index.scss`. Then in `index.js` update the `css` import to `index.scss`.
 
-#### Importing carbon-component styles
+### Import carbon-component styles
 
 In `index.scss` import Carbon styles by adding:
 
@@ -132,7 +132,7 @@ Next we'll import a `<Button/>` from Carbon to test that our dependencies are wo
 import Button from 'carbon-components-react/lib/components/Button/Button';
 ```
 
-We want to import the exact path of the component in this case. To minimize our import cost, we don't want to import the entire package just for the `Button` component.
+We want to import the exact path of the component instead of the entire package in order to minimize our import cost.
 
 In the return, you can now add:
 
@@ -146,20 +146,19 @@ Congratulations, you've imported your first component! You should see a Carbon s
 
 ## Add UI Shell
 
-_Note: The UI Shell is still experimental at the moment. We do not recommend using it for production until it is stable, but if doing so, know that there may be breaking changes in the future._
+_Note: The UI Shell has experimental status at the moment. We do not recommend using it for production until it is stable, but if doing so, know that there may be breaking changes in the future._
 
-If you remember from running `yarn test` at the beginning of this tutorial, our tests are failing from missing a `<TutorialHeader/>` component. We will be creating our `<TutorialHeader/>` component in our `src/components/TutorialHeader` folder.
-Start by creating the following files in there:
+If you remember from running `yarn test` at the beginning of this tutorial, our tests are failing from missing a `<TutorialHeader/>` component. We will be creating our `<TutorialHeader/>` component in our `src/components/TutorialHeader` folder. Start by creating the following files as siblings of the `__tests__` folder:
 
 ```bash
-TutorialHeader.js
-index.js
-tutorial-header.scss
+src/components/TutorialHeader
+├──__tests__
+├──index.js
+├──TutorialHeader.js
+└──tutorial-header.scss
 ```
 
-These should be a sibling of the `__tests__` folder.
-
-### UI Header Sass
+### Add UI Shell Sass
 
 In `index.scss` add the following feature-flag **above** the Carbon styles import like so:
 
@@ -169,7 +168,7 @@ $feature-flags: (
 );
 ```
 
-This is because our UI Shell is still in experimental mode and the styles need to be manually imported.
+This is because our UI Shell is in experimental mode and the styles need to be manually imported.
 
 Next, **below** the Carbon styles import, we'll import our `<TutorialHeader/>` styles. Your file should now look like this:
 
@@ -182,7 +181,7 @@ $feature-flags: (
 @import './components/TutorialHeader/tutorial-header.scss';
 ```
 
-### Importing and Exporting Header
+### Import and export the header
 
 In `src/components/TutorialHeader/index.js`, import and export our `<TutorialHeader/>` component like so:
 
@@ -233,9 +232,9 @@ When creating navigation headers, it's important to have a `Skip to content` lin
 
 Another important thing to notice is that we're using React Fragment to return the header components. This is because we will later be rendering `<TutorialHeader/>` in `App.js` as a sibling of `<Content/>`, which is another UI Shell component. `<Content/>` is meant to be a sibling of the `<Header/>` component that we're returning in `<TutorialHeader/>`. If these two aren't siblings, the `<Content/>` elements will not be rendered directly below the UI shell. By using React Fragment, we're rendering these two components as siblings. Another way to fix this would be to render these in the same file, or offsetting the `<Content/>` margin to be below the UI shell.
 
-### Importing Icons
+### Import icons
 
-Now lets try importing the icons from our `@carbon/icons-react` elements package. In the `TutorialHeader.js` file, we need to import each individual icon we will use.
+Now let's import the icons from our `@carbon/icons-react` elements package. In the `TutorialHeader.js` file, we need to import each individual icon we will use.
 
 ```javascript
 import Notification20 from '@carbon/icons-react/lib/notification/20';
@@ -245,7 +244,7 @@ import AppSwitcher20 from '@carbon/icons-react/lib/app-switcher/20';
 
 Then we need to add the `<HeaderGlobalAction>` component inside of the `<GlobalHeaderBar>` where we will add our icons. These represent actions in the header a user can make.
 
-```javascript
+```html
 <HeaderGlobalBar>
   <HeaderGlobalAction>
     <Notification20 />
@@ -259,10 +258,9 @@ Then we need to add the `<HeaderGlobalAction>` component inside of the `<GlobalH
 </HeaderGlobalBar>
 ```
 
-### Rendering Header
+### Render the header
 
-Next we'll render our UI Shell by importing our `<TutorialHeader/>` component and `<Content/>` into `App.js`.
-Your imports should look like this:
+Next we'll render our UI Shell by importing our `<TutorialHeader/>` component and `<Content/>` into `App.js`. Your imports should look like this:
 
 ```javascript
 import React, { Component } from 'react';
@@ -298,8 +296,9 @@ Start by creating a folder called `content` in `src/`. This should be a sibling 
 Since our app will have two pages, we'll create two folders in `src/content`.
 
 ```bash
-src/content/LandingPage
-src/content/RepoPage
+src/content
+├── LandingPage
+└── RepoPage
 ```
 
 Next we'll set up these folders the same way we set up `src/components/TutorialHeader`.
@@ -307,22 +306,24 @@ Next we'll set up these folders the same way we set up `src/components/TutorialH
 Create the following files in the `LandingPage` folder:
 
 ```bash
-index.js
-landing-page.scss
-LandingPage.js
+src/content/LandingPage
+├── index.js
+├── landing-page.scss
+└── LandingPage.js
 ```
 
 Create the following files in the `RepoPage` folder:
 
 ```bash
-index.js
-repo-page.scss
-RepoPage.js
+src/content/RepoPage
+├── index.js
+├── repo-page.scss
+└── RepoPage.js
 ```
 
-### Setting up content sass
+### Set up content Sass
 
-Next, we'll import our content sass files in `index.scss` _below_ our other imports, like so:
+Next, we'll import our content Sass files in `index.scss` _below_ our other imports, like so:
 
 ```scss
 @import 'carbon-components/scss/globals/scss/styles.scss';
@@ -331,10 +332,9 @@ Next, we'll import our content sass files in `index.scss` _below_ our other impo
 @import './content/RepoPage/repo-page.scss';
 ```
 
-### Importing and exporting content pages
+### Import and export content pages
 
-Now that our stylesheets are set up, we need to create our pages' components.
-Starting with `<LandingPage/>`, just like with our header, we need to export the component in `src/content/LandingPage/index.js` by adding:
+Now that our stylesheets are set up, we need to create our pages' components. Starting with `<LandingPage/>`, just like with our header, we need to export the component in `src/content/LandingPage/index.js` by adding:
 
 ```javascript
 import LandingPage from './LandingPage';
@@ -382,10 +382,11 @@ Awesome! We've just created our content pages. Next thing we need to do is rende
 
 ## Add routing
 
-We've updated our app to render our header, but now we need to add routing functionality. To do this we need to install `react-router-dom`.
+We've updated our app to render our header, but now we need to add routing functionality. To do this we need to install `react-router-dom`. Go ahead and stop your development server and then:
 
 ```bash
 $ yarn add react-router-dom
+$ yarn start
 ```
 
 In order to render our content pages, we need to add the following imports in `App.js` below our existing imports.
@@ -396,12 +397,14 @@ import RepoPage from './content/RepoPage/RepoPage';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 ```
 
-This allows us to use our page content components and routing components from `react-router-dom`, which we installed a few steps back.
+This allows us to use our page content components and routing components from `react-router-dom`.
 
 Next thing we need to is update what we're returning in `App.js` . We currently just have a button in our content. In order to render our pages correctly, we need to do a few things:
 
-- update the `<div>` that is wrapping all the elements to `<Router>`
-- delete the `<Button/>` component within `<Content/>`
+- Update the `<div>` that is wrapping all the elements to `<Router>`
+- Delete the `<Button/>` component within `<Content/>`
+
+You can now remove the line that imports the button.
 
 Now inside `<Content/>` we'll add the following:
 
@@ -416,13 +419,11 @@ Now inside `<Content/>` we'll add the following:
 
 We're half way there! Now we need to point our header links to these routes.
 
-In `src/components/TutorialHeader/TutorialHeader.js` we need to update the `href` for `<HeaderName/>` and `<HeaderMenuItem/>`. Because `<HeaderName/>` is our main link "IBM Carbon Tutorial", when a user click this link it should render our `<LandingPage/>` component, so the `href` should be updated to `href="/"` since that's the path we added for it in `App.js`. Our `<HeaderMenuItem/>` will link to our `<RepoPage/>` so the update the `href` to `href="/repos"`.
-
-WOOHOO! You should now have a working header that routes to different pages!
+WOOHOO! You should now have a working header that routes to different pages! The `src/components/TutorialHeader/TutorialHeader.js` has `href="/"` on `<HeaderName/>`, and `href="/repos"` on the `<HeaderMenuItem/>` which maps to the `<Route/>` attributes set above.
 
 ## Submit pull request
 
-Now let's check to see if our tests pass. We have now added the shell so we should see our tests pass.
+Now let's check to see if our tests pass. We have now added the UI Shell so we should see our tests pass.
 
 ```bash
 $ yarn test
