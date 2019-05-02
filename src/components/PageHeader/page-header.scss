@@ -8,8 +8,8 @@
   height: rem(240px);
 }
 
-.ibm--grid.page-header__label-wrapper {
-  padding-top: rem(24px);
+.bx--grid.page-header__label-wrapper {
+  padding-top: $spacing-06;
   margin-bottom: auto;
 }
 
@@ -18,6 +18,6 @@
 }
 
 .page-header__title {
-  margin-bottom: $layout-xs;
+  margin-bottom: $spacing-06;
   margin-top: auto;
 }

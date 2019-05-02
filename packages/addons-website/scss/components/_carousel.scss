@@ -1,0 +1,93 @@
+@import '../prefix';
+
+.#{$prefix}--carousel {
+  position: relative;
+  width: 100%;
+
+  .#{$prefix}--carousel-slide-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: $spacing-05;
+    position: relative;
+
+    .#{$prefix}--carousel-slide {
+      position: relative;
+      height: 100%;
+      white-space: nowrap;
+
+      & img {
+        height: auto;
+        width: 100%;
+        display: inline;
+        transition: transform 700ms cubic-bezier(0.5, 0, 0.1, 1);
+      }
+    }
+  }
+
+  &.fade {
+    padding-bottom: 75%;
+
+    .#{$prefix}--carousel-slide-wrapper {
+      height: 100%;
+      position: absolute;
+
+      .#{$prefix}--carousel-slide {
+        & img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          transition: opacity 700ms cubic-bezier(0.5, 0, 0.1, 1);
+
+          &:first-child {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Radio button nav
+.#{$prefix}--carousel-nav-wrapper {
+  display: flex;
+}
+
+.#{$prefix}--carousel-nav-wrapper
+  .#{$prefix}--radio-button:focus
+  + .#{$prefix}--radio-button__label
+  .#{$prefix}--radio-button__appearance {
+  box-shadow: 0 0 0 2px $brand-01;
+}
+
+.#{$prefix}--carousel-nav-wrapper
+  .#{$prefix}--radio-button
+  + .#{$prefix}--radio-button__label
+  .#{$prefix}--radio-button__appearance {
+  background-color: $carbon--gray-50;
+  border: none;
+  height: 0.5rem;
+  width: 0.5rem;
+
+  &:hover {
+    background-color: $carbon--gray-60;
+  }
+}
+
+.#{$prefix}--carousel-nav-wrapper
+  .#{$prefix}--radio-button:checked
+  + .#{$prefix}--radio-button__label
+  .#{$prefix}--radio-button__appearance {
+  background-color: $carbon--gray-80;
+}
+
+.#{$prefix}--carousel-nav-wrapper
+  .#{$prefix}--radio-button:checked
+  + .#{$prefix}--radio-button__label
+  .#{$prefix}--radio-button__appearance:before {
+  display: none;
+}
+
+.#{$prefix}--carousel-nav-item {
+  width: rem(16px);
+}

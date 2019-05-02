@@ -12,7 +12,7 @@ export default class ComponentCode extends React.Component {
     background: PropTypes.string,
     hasLightVersion: PropTypes.bool,
     hasReactVersion: PropTypes.bool,
-    hasAngularVersion: PropTypes.bool,
+    hasAngularVersion: PropTypes.string,
     hasVueVersion: PropTypes.string,
     experimental: PropTypes.bool,
   };
@@ -34,7 +34,7 @@ export default class ComponentCode extends React.Component {
     if (experimental) {
       try {
         htmlFile = require(`../../html/${component}/${variation}.html`);
-      } catch (err) {}
+      } catch (err) {} // eslint-disable-line no-empty
     }
     if (!htmlFile) {
       htmlFile = require(`carbon-components/html/${component}/${variation}.html`);
@@ -42,14 +42,14 @@ export default class ComponentCode extends React.Component {
 
     return (
       <>
-        <div className="ibm--row">
-          <div className="ibm--col-lg-12 ibm--offset-lg-4">
+        <div className="bx--row">
+          <div className="bx--col-lg-12 bx--offset-lg-4">
             <h2 className="page-h2">{name}</h2>
           </div>
         </div>
 
-        <div className="component-variation ibm--row">
-          <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
+        <div className="component-variation bx--row">
+          <div className="bx--col-lg-12 bx--offset-lg-4 bx--no-gutter">
             <ComponentExample
               codepenSlug={codepen}
               component={component}

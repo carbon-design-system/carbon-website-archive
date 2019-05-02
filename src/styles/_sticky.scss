@@ -1,0 +1,161 @@
+// 3rem + 2.5rem site header height plus banner height
+// 15rem page header height
+// 3rem page tabs height
+
+// transitions for going back to default state
+.#{prefix}--header__global,
+.#{prefix}--header__name,
+.#{$prefix}--header,
+.website-alert,
+.page-header,
+.#{$prefix}--side-nav,
+.#{$prefix}--website-switcher,
+.website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav,
+.website-alert + .#{$prefix}--header ~ .#{$prefix}--website-switcher {
+  transition: transform $carbon--ease-in $transition--expansion;
+}
+
+// page-header stiky position
+// page-header is the page/content-level header, which contains the page-tabs
+.page-header,
+.#{$prefix}--header ~ div.container .page-header {
+  position: sticky;
+  top: -9rem; // header set to 15rem height. subtract 3rem tabs height & 3rem header height
+  z-index: 500;
+}
+.page-header.page-header--no-page-tabs,
+.#{$prefix}--header ~ div.container .page-header.page-header--no-page-tabs,
+.website-alert
+  + .bx--header
+  ~ div.container
+  .page-header.page-header--no-page-tabs {
+  top: rem(-240px);
+}
+
+// page header sticky position when website alert is present
+.website-alert + .container .page-header,
+.website-alert + .#{$prefix}--header ~ div.container .page-header {
+  top: -6.5rem;
+}
+
+.website-alert + .#{$prefix}--header ~ .#{$prefix}--website-switcher {
+  top: 0;
+}
+
+/* 
+website global header hidden
+*/
+
+.website-header-hidden {
+  // transitions for hiding the global website header
+  .page-header,
+  .#{prefix}--header__global,
+  .#{prefix}--header__name,
+  .#{$prefix}--header,
+  .#{$prefix}--side-nav,
+  .website-alert,
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + div,
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav + .container,
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--website-switcher {
+    transition: transform $carbon--ease-in $transition--expansion;
+  }
+
+  // page header position when hidden
+  .#{prefix}--header__global,
+  .#{prefix}--header__name,
+  .#{$prefix}--header,
+  .page-header {
+    transform: translateY(-3rem);
+  }
+
+  .website-alert,
+  .website-alert + .#{$prefix}--header,
+  .website-alert + .#{prefix}--header__global,
+  .website-alert + .#{prefix}--header__name,
+  .website-alert + .#{$prefix}--header ~ div.container .page-header {
+    transform: translateY(-5.5rem);
+  }
+
+  // side nav & app switcher states to capture:
+  // - visible when header hidden
+  // - visible when header hidden, alert present
+  // - hidden when header hidden
+  // - hidden when header hidden, alert present
+
+  /*
+  side nav
+  */
+
+  // side nav visible, website alert not present
+  .#{$prefix}--header ~ .#{$prefix}--side-nav {
+    transform: translate(0, -3rem);
+  }
+
+  // side nav hidden, website alert not present
+  .#{$prefix}--header ~ .#{$prefix}--side-nav.side-nav__closed {
+    transform: translate(-16rem, -3rem);
+    @include carbon--breakpoint('lg') {
+      transform: translate(0, -3rem);
+    }
+  }
+
+  // side nav visible, website alert present
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--side-nav {
+    transform: translate(0, -5.5rem);
+  }
+
+  // side nav hidden, website alert present
+  .website-alert ~ .#{$prefix}--side-nav.side-nav__closed {
+    transform: translate(-16rem, -5.5rem);
+    @include carbon--breakpoint('lg') {
+      transform: translate(0, -5.5rem);
+    }
+  }
+
+  /*
+  site switcher
+  */
+
+  // site switcher hidden, website alert not present
+  .#{$prefix}--header ~ .#{$prefix}--website-switcher {
+    transform: translateY(16rem, -3rem);
+  }
+
+  // site switcher visible, website alert not present
+  .#{$prefix}--website-switcher--expanded {
+    transform: translate(0, -3rem);
+  }
+
+  // site switcher hidden, website alert present
+  .website-alert + .#{$prefix}--header ~ .#{$prefix}--website-switcher {
+    transform: translateY(16rem, -5.5rem);
+  }
+
+  // site switcher visible, website alert present
+  .website-alert
+    + .#{$prefix}--header
+    ~ .#{$prefix}--website-switcher--expanded {
+    transform: translate(0, -5.5rem);
+  }
+
+  /*
+  other
+  */
+
+  .website-alert
+    + .bx--header
+    ~ .bx--side-nav
+    + div
+    .color-token-table__theme-switcher--sticky {
+    top: 65px;
+  }
+
+  .website-hidden
+    .website-alert
+    + .bx--header
+    ~ .bx--side-nav
+    + div
+    .color-token-table__theme-switcher--sticky {
+    top: 104px;
+  }
+}

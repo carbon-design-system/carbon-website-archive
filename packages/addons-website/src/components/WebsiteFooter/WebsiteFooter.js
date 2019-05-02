@@ -14,17 +14,17 @@ const IBMLogo = (
 );
 
 const WebsiteFooter = ({ children, linksCol1, linksCol2, logoOffset }) => {
-  const logoClassNames = classnames('ibm--col-lg-12', {
-    'ibm--offset-lg-4': logoOffset,
+  const logoClassNames = classnames([`${prefix}--col-lg-12`], {
+    [`${prefix}--offset-lg-4`]: logoOffset,
   });
 
   return (
     <footer className={`${prefix}--website-footer`}>
-      <div className="ibm--grid">
-        <div className="ibm--row">
+      <div className={`${prefix}--grid`}>
+        <div className={`${prefix}--row`}>
           <nav
             aria-label="Footer nav"
-            className={`${prefix}--website-footer__nav ibm--col-lg-2 ibm--col-md-2 ibm--offset-lg-4`}>
+            className={`${prefix}--website-footer__nav ${prefix}--col-lg-2 ${prefix}--col-md-2 ${prefix}--offset-lg-4`}>
             <ul>
               {linksCol1 &&
                 linksCol1.map((link, i) => {
@@ -43,7 +43,7 @@ const WebsiteFooter = ({ children, linksCol1, linksCol2, logoOffset }) => {
           </nav>
           <nav
             aria-label="Footer nav continued"
-            className={`${prefix}--website-footer__nav ibm--col-lg-2 ibm--col-md-2`}>
+            className={`${prefix}--website-footer__nav ${prefix}--col-lg-2 ${prefix}--col-md-2`}>
             <ul>
               {linksCol2 &&
                 linksCol2.map((link, i) => {
@@ -61,11 +61,11 @@ const WebsiteFooter = ({ children, linksCol1, linksCol2, logoOffset }) => {
             </ul>
           </nav>
           <div
-            className={`${prefix}--website-footer__content ibm--col-lg-5 ibm--col-md-4 ibm--offset-lg-2`}>
+            className={`${prefix}--website-footer__content ${prefix}--col-lg-5 ${prefix}--col-md-4 ${prefix}--offset-lg-2`}>
             {children}
           </div>
         </div>
-        <div className="ibm--row">
+        <div className="${prefix}--row">
           <div className={logoClassNames}>{IBMLogo}</div>
         </div>
       </div>

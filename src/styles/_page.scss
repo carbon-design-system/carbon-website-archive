@@ -6,6 +6,19 @@ body {
   font-family: $font-family;
 }
 
+strong,
+b {
+  font-weight: carbon--font-weight('semibold');
+}
+
+button {
+  font-family: inherit;
+}
+
+.page-content .bx--link {
+  font-size: 1rem;
+}
+
 .side-nav + div, //Issue #51 weird bug where sometimes on reload of the page the classnames on container div disapear
   .container {
   width: 100%;
@@ -13,29 +26,12 @@ body {
   transition: $transition--base ease;
   position: relative;
   min-height: calc(100vh - 48px);
-  margin-top: rem(48px);
+  margin-top: $spacing-09;
 }
 
-.container .ibm--grid {
+.container .bx--grid {
   margin: 0;
   max-width: rem(1584px);
-}
-
-//---------------------------------------
-// Header styles
-//---------------------------------------
-.bx--header__menu-trigger {
-  @include carbon--breakpoint('lg') {
-    display: none;
-  }
-}
-
-.bx--header .bx--header__name {
-  font-weight: 400;
-}
-
-.bx--header .bx--header__name span {
-  font-weight: 600;
 }
 
 //---------------------------------------
@@ -44,7 +40,7 @@ body {
 .page-p,
 .component-docs p {
   @include carbon--type-style('body-long-02');
-  padding: 0 0 $spacing-lg;
+  padding: 0 0 $spacing-06;
 
   &:empty {
     padding: 0;
@@ -72,7 +68,7 @@ em {
   }
 
   > div > div:nth-child(2) h3 {
-    margin-top: rem(48px);
+    margin-top: $spacing-09;
   }
 
   // All links on Markdown pages but not inside component examples
@@ -89,7 +85,7 @@ em {
     @include reset;
     position: relative;
     display: inline;
-    padding: rem(1px) $spacing-xs;
+    padding: rem(1px) $spacing-03;
     background: transparent;
     border-radius: 4px;
     background-color: $carbon--gray-20;
@@ -114,7 +110,7 @@ em {
   }
 
   img {
-    margin-bottom: rem(24px);
+    margin-bottom: $spacing-06;
   }
 
   td > img {
@@ -125,16 +121,16 @@ em {
     margin-bottom: 0;
   }
 
-  .bx--image-component > img {
+  .#{$prefix}--image-component > img {
     margin-bottom: 0;
   }
 
-  .bx--image-component__caption {
-    margin-bottom: 1.5rem;
+  .#{$prefix}--image-component__caption {
+    margin-bottom: $spacing-06;
   }
 }
 
-.bx--platform-header {
+.#{$prefix}--platform-header {
   z-index: 9999;
 }
 
@@ -159,15 +155,15 @@ em {
   }
 }
 .website-tabs .gatsby-resp-iframe-wrapper,
-.example .gatsby-resp-iframe-wrapper {
+.bx--example .gatsby-resp-iframe-wrapper {
   @include carbon--breakpoint('lg') {
     margin-left: 0;
     padding-bottom: 56.543% !important;
   }
 }
 
-.ibm--row .gatsby-resp-iframe-wrapper,
-.example__content .gatsby-resp-iframe-wrapper {
+.bx--row .gatsby-resp-iframe-wrapper,
+.bx--example__content .gatsby-resp-iframe-wrapper {
   margin-left: 0 !important;
 }
 
@@ -175,7 +171,7 @@ em {
 .gatsby-resp-image-wrapper {
   // background: $ui-02;
   margin-left: 0 !important;
-  margin-bottom: rem(24px);
+  margin-bottom: $spacing-06;
 
   @include carbon--breakpoint('lg') {
     margin-left: calc(25% + 0.5rem) !important;
@@ -194,9 +190,9 @@ em {
   }
 }
 
-.ibm--row .gatsby-resp-image-wrapper,
-.ibm-row img[src*='svg'],
-.ibm-row img[src*='gif'] {
+.bx--row .gatsby-resp-image-wrapper,
+.bx--row img[src*='svg'],
+.bx--row img[src*='gif'] {
   margin-left: 0 !important;
   margin-bottom: 0;
 }
@@ -213,101 +209,11 @@ img[src*='gif'] {
     display: block;
 
     &:first-child {
-      padding-top: $spacing-xs;
+      padding-top: $spacing-03;
     }
   }
 }
 
 .page-content iframe {
-  margin-bottom: rem(24px);
-}
-
-// Website alert banner
-.website-alert {
-  height: rem(40px);
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  z-index: 9999;
-  background: $brand-01;
-}
-
-.website-alert__icon {
-  margin-right: 1.375rem;
-  margin-left: 0.875rem;
-  fill: $inverse-01;
-
-  @include carbon--breakpoint('lg') {
-    margin: 0 1rem;
-  }
-}
-
-.website-alert__button {
-  justify-self: flex-end;
-  margin-left: auto;
-  height: 100%;
-  text-decoration: none;
-}
-
-.website-alert .bx--btn {
-  height: 100%;
-  width: 100%;
-  padding: 0 1rem;
-  display: inline-flex;
-  align-items: center;
-
-  svg {
-    margin-left: rem(8px);
-    fill: $inverse-01;
-  }
-}
-
-.website-alert__text {
-  @include carbon--type-style('body-short-01');
-  color: $inverse-01;
-  padding: 0;
-}
-
-.website-alert__text span {
-  &:nth-of-type(1),
-  &:nth-of-type(2) {
-    font-weight: 600;
-  }
-
-  &:nth-of-type(2),
-  &:nth-of-type(3) {
-    display: none;
-
-    @include carbon--breakpoint('md') {
-      display: inline;
-    }
-  }
-}
-
-.website-alert + .bx--header {
-  top: rem(40px);
-}
-
-.website-alert + .bx--header ~ .bx--side-nav {
-  top: 5.5rem;
-}
-
-.website-alert + .bx--header ~ .bx--side-nav + div,
-.website-alert + .bx--header ~ .bx--side-nav + .container {
-  margin-top: 5.5rem;
-}
-
-.website-alert
-  + .bx--header
-  ~ .bx--side-nav
-  + div
-  .color-token-table__theme-switcher--sticky {
-  top: 104px;
-}
-
-.website-alert + .bx--header ~ .bx--website-switcher {
-  top: 5.5rem;
+  margin-bottom: $spacing-06;
 }

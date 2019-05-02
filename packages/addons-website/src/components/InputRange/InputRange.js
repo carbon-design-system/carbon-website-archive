@@ -11,10 +11,10 @@ const InputRange = ({ step, min, max, value, onChange }) => (
     max={max}
     value={value}
     onChange={onChange}
-    style={{'--track-width': `${(value - min) / (max - min) * 100}%`}}
+    style={{ '--track-width': `${((value - min) / (max - min)) * 100}%` }}
     className={`${prefix}--input-range`}
   />
-)
+);
 
 InputRange.propTypes = {
   // input step

@@ -1,6 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { runInDebugContext } from 'vm';
 import classnames from 'classnames';
 import {
   ContentSwitcher,
@@ -31,8 +29,8 @@ export default class ColorTokenTable extends React.Component {
   }
 
   addScrollListener() {
-    document.addEventListener('scroll', e => {
-      let stickyPoint = this.state.mobile ? 436 : 450;
+    document.addEventListener('scroll', () => {
+      let stickyPoint = this.state.mobile ? 400 : 398;
       if (window.scrollY >= stickyPoint) {
         this.setState({
           sticky: true,
@@ -46,7 +44,7 @@ export default class ColorTokenTable extends React.Component {
   }
 
   addResizeListener() {
-    window.addEventListener('resize', e => {
+    window.addEventListener('resize', () => {
       if (window.innerWidth < 500) {
         this.setState({
           mobile: true,
@@ -102,9 +100,9 @@ export default class ColorTokenTable extends React.Component {
                 value[currentTheme].hex === '#ffffff' && '1px solid #BEBEBE',
             }}
           />
-          <OverflowMenu floatingMenu={false}>
+          <OverflowMenu floatingMenu={false} flipped>
             <CopyToClipboard text={value[currentTheme].hex}>
-              <OverflowMenuItem itemText="Copy hex" />
+              <OverflowMenuItem primaryFocus itemText="Copy hex" />
             </CopyToClipboard>
             <CopyToClipboard text={token}>
               <OverflowMenuItem itemText="Copy token" />
@@ -148,8 +146,8 @@ export default class ColorTokenTable extends React.Component {
       'page-h3--sticky': this.state.sticky,
     });
     return (
-      <div className="ibm--row color-token-table">
-        <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
+      <div className="bx--row color-token-table">
+        <div className="bx--col-lg-12 bx--offset-lg-4 bx--no-gutter">
           <ContentSwitcher
             className={themeSwitcherClasses}
             onChange={this.switchTheme}>
@@ -162,10 +160,10 @@ export default class ColorTokenTable extends React.Component {
             />
           </ContentSwitcher>
         </div>
-        <div className="ibm--col-lg-7 ibm--offset-lg-4">
+        <div className="bx--col-lg-7 bx--offset-lg-4">
           <h3 className={h3Classes}>Core color tokens</h3>
         </div>
-        <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
+        <div className="bx--col-lg-12 bx--offset-lg-4 bx--no-gutter">
           <table className="page-table">
             <thead>
               <tr>
@@ -185,10 +183,10 @@ export default class ColorTokenTable extends React.Component {
             </tbody>
           </table>
         </div>
-        <div className="ibm--col-lg-7 ibm--offset-lg-4">
+        <div className="bx--col-lg-7 bx--offset-lg-4">
           <h3 className="page-h3">Interactive color tokens</h3>
         </div>
-        <div className="ibm--col-lg-12 ibm--offset-lg-4 ibm--col-bleed">
+        <div className="bx--col-lg-12 bx--offset-lg-4 bx--no-gutter">
           <table className="page-table">
             <thead>
               <tr>

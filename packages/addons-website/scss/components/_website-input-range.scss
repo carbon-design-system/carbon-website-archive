@@ -6,8 +6,8 @@
   position: relative;
   cursor: pointer;
   // Provide a larger interaction hit area
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: $spacing-03;
+  padding-bottom: $spacing-03;
   width: 100%;
 
   // Remove extra padding on Edge that causes vertical misalignment

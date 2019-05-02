@@ -4,6 +4,7 @@ import WebsiteCodeSnippet from '.';
 
 storiesOf('Website code snippet', module).add(
   'Website code snippet',
+  /* eslint-disable no-irregular-whitespace */
   () => (
     <>
       <WebsiteCodeSnippet>
@@ -31,6 +32,7 @@ storiesOf('Website code snippet', module).add(
       </WebsiteCodeSnippet>
     </>
   ),
+  /* eslint-enable no-irregular-whitespace */
   {
     info: {
       text: 'Website code snippet',

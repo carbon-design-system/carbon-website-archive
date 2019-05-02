@@ -1,0 +1,106 @@
+---
+title: Migration
+---
+
+<AnchorLinks>
+
+- [Carbon X](#carbon-x)
+- [Rollout plan](#rollout-plan)
+- [Design kit](#design-kit)
+- [Component code](#component-code)
+- [Tokens](#tokens)
+- [Icons](#icons)
+- [Themes](#themes)
+- [UI shell](#ui-shell)
+- [Grid and layout](#grid-and-layout)
+- [Migration tooling](#migration-tooling)
+
+</AnchorLinks>
+
+## Carbon X
+
+Carbon X, aka v10, is currently in Beta release. Please use this opportunity to explore and experiment with the new components, elements, layouts, and UI shell. The Beta release is a work in progress; changes will be frequent and possibly breaking. **This release is not approved for production.** Please explore the system and [provide bountiful feedback](/help/support#github-issues)!
+
+## Rollout plan
+
+- **Mid-February 2019:** Beta release - current
+- **Mid-March 2019:** Production release
+
+### Adoption and activation sessions
+
+<p>The IBM Design core team is establishing an adoption and activation program. A new <a href="https://w3.ibm.com/design/essentials" target="blank">IBM Design Essentials</a> course is available, and teams will receive either in-person or remote education before (or soon after) the Production release of Carbon X. The Carbon team will share news on Slack, Connections, and in the IBM Design Town Hall as well.</p>
+
+## Design kit
+
+The Beta release of Carbon X includes a completely revised Sketch design kit, updated for the new IBM Design Language (f.k.a. "Duo"). All components in the kit have been reskinned, and colors, icons, typrography, UI shell, and grid elements will also reflect the new IBM Design Language.
+
+Internal IBM users will now be able to auto-sync the design kit with Box Drive, allowing users to update the Sketch library automatically. The manual download method will also still be available via the [GitHub repository](https://github.com/IBM/carbon-design-kit).
+
+The Digital Design group has published a detailed guide on [setting up auto-sync for the design kit using Box Drive](https://www.ibm.com/standards/web/design-kit/).
+
+## Component code
+
+The redesigned components will be available in the current repos once released to Production. All components have been reskinned to the new IBM Design Language for v10. Detailed technical migration instructions will be published to the repos as available.
+
+[Carbon v10 component migration tables for SCSS](https://github.com/IBM/carbon-components/blob/master/src/globals/scss/migrate-to-10.x.md) 
+
+<Row className="tile--group">
+<Column offsetLg="4" colMd="4" colLg="4" noGutterSm>
+  <ClickableTile
+    title="Carbon Components"
+    href="https://github.com/ibm/carbon-components"
+    type="resource">
+
+![Carbon Component library](images/github-icon.png)
+
+  </ClickableTile>
+</Column>
+<Column colMd="4" colLg="4"  noGutterSm>
+  <ClickableTile
+    title="Carbon Components React"
+    href="https://github.com/ibm/carbon-components-react"
+    type="resource">
+
+![Carbon Components React](images/react-icon.png)
+
+  </ClickableTile>
+</Column>
+</Row>
+
+## Tokens
+
+### Type tokens
+
+The type token architecture has been completely redesigned for better clarity and flexibility in v10, moving from a "class-name" approach to a more standard token architecture. More detailed technical guidance on migrating to the new type tokens will be available in early 2019.
+
+### Color tokens
+
+The color token architecture for v10 is based on the v9 architecture, with some minor updates for the new design language. Carbon v9 users will see automatic, non-breaking color updates when they upgrade to v10.
+
+### Spacing tokens
+
+Spacing tokens will see no change from Carbon v9.
+
+## Icons
+
+The iconography in Carbon X has been completely redesigned to align with the new IBM Design Language, with hundreds of new icons added to the system. Icons in the system have been redesigned for greater accessibility. The repository is also moving to @carbon/icons, where more detailed migration instructions for developers is coming soon. The original carbon-icons repo will be deprecated.
+
+## Themes
+
+Carbon now supports four all-new themes, which will be stored in a new repo: @carbon/themes. The former carbon-themes repo will be deprecated.
+
+## UI shell
+
+The basic UI shell has been completely redesigned for Carbon X, though it is still considered experimental. Full documentation on the new UI shell is available on the Carbon website.
+
+_Coming soon: Carbon X UI shell migration guide for developers_
+
+## Grid and layout
+
+The page grid has been completely redesigned for v10, to align with the IBM Design Language. The grid is now 16 columns, which is prioritized over the 12-column grid from v9. See the [Layout page](/guidelines/layout) for more details.
+
+## Migration tooling
+
+When Carbon X reaches its Production release, specific developer tooling (custom scripts) will be available to help automate the transition. Stay tuned for updates!
+
+_Last updated: 22 January 2019_

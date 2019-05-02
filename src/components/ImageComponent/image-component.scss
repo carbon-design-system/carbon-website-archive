@@ -8,7 +8,7 @@
 }
 
 .image-component.no-caption {
-  margin-bottom: rem(24px);
+  margin-bottom: $spacing-06;
 }
 
 .image-component > *:not(.image-component__caption) {
@@ -72,7 +72,7 @@
     width: 100% !important;
     max-width: 100% !important;
 
-    @include breakpoint('1230px') {
+    @include carbon--breakpoint(1230px) {
       width: 70% !important;
     }
   }
@@ -82,11 +82,11 @@
     height: auto !important;
     position: relative !important;
 
-    @include breakpoint('1056px') {
+    @include carbon--breakpoint(1056px) {
       width: 900px !important;
     }
 
-    @include breakpoint('1230px') {
+    @include carbon--breakpoint(1230px) {
       width: 1120px !important;
     }
   }
@@ -94,6 +94,6 @@
 
 p.image-component__caption {
   @include carbon--type-style('body-short-01');
-  padding-top: rem(8px);
-  margin-bottom: 1.5rem;
+  padding-top: $spacing-03;
+  margin-bottom: $spacing-06;
 }

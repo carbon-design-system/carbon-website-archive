@@ -7,12 +7,19 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Install yarn
+          command: |
+            curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.15.2
+      - run:
           name: Install dependencies from offline mirror
-          command: yarn install --offline
+          command: PATH=$HOME/.yarn/bin:$PATH yarn install --offline
+      - run:
+          name: Run Continuous Integration checks
+          command: PATH=$HOME/.yarn/bin:$PATH yarn ci-check
       - run:
           name: Confirm project can build
           command: |
-            yarn build:external && yarn storybook:build
+            PATH=$HOME/.yarn/bin:$PATH yarn build:external && yarn storybook:build
       - deploy:
           name: deploy website to IBM Cloud
           command: |

@@ -149,6 +149,32 @@ The carbon website has a handful of custom markdown components available for use
 
 ### Global Components:
 
+### Row & Column
+`<Column>` props | description
+-- | --
+colSm | Specify the col width at small breakpoint
+colMd | Specify the col width at medium breakpoint
+colLg | Specify the col width at large breakpoint
+offsetSm | Specify the col offset at small breakpoint
+offsetMd | Specify the col offset at medium breakpoint
+offsetLg | Specify the col offset at large breakpoint, defaults to 4
+noGutterSm | Specify a no-gutter class at small breakpoint
+noGutterMd | Specify a no-gutter class at medium breakpoint
+noGutterLg | Specify a no-gutter class at large breakpoint
+noGutterSmLeft | Specify a no-gutter left class at small breakpoint
+noGutterMdLeft | Specify a no-gutter left class at medium breakpoint
+noGutterLgLeft | Specify a no-gutter left class at large breakpoint
+className | Set a custom class 
+```
+<Row className="optional-class-name">
+<Column>
+
+Markdown or components can go inside
+
+</Column>
+</Row>
+```
+
 ### Video
 
 ```
@@ -167,45 +193,43 @@ The carbon website has a handful of custom markdown components available for use
 #### Do - Don't example: text
 
 ```
-<GridWrapper col_lg="8" flex="true">
-  <DoDontExample correct="true" label="caption" description="Lorem ipsum dolor sit amet" text='Example text or quote'>
+<Row>
+<Column offsetLg="4" colLg="4" colMd="4">
+  <DoDontExample correct label="caption" description="Lorem ipsum dolor sit amet" text='Example text or quote'>
   </DoDontExample>`
-</GridWrapper>
+</Column>
+</Row>
 
 ```
 
 #### Do - Don't example: images
 
 ```
-<GridWrapper col_lg="8" flex="true">
-    <DoDontExample correct="true" label="Do: center-align icons when they’re next to text.">
+<Row>
+<Column offsetLg="4" colLg="4" colMd="4">
+    <DoDontExample correct label="Do: center-align icons when they’re next to text.">
 
 ![](images/image.png)
 
     </DoDontExample>
+</Column>
+<Column colLg="4" colMd="4" >
     <DoDontExample label="Don't: baseline-align icons to the text.">
 
 ![](images/image.png)
 
     </DoDontExample>
-</GridWrapper>
+</Column>
+</Row>
 
 ```
 #### Color block
-- `<ColorBlock showhex size="xs">#ffaaaa</ColorBlock>`
+- `<ColorBlock showhex>#ffaaaa</ColorBlock>`
   - `showHex` displays the hex value next to the color block
-  - `size` takes values of `xs`, `s`, `m`, `l` (12px, 24px, 40px, 80px respectively)
-  - `size` also accepts a number (e.g. `size="200"`, which would render a square that is 200px x 200px)
-  - leaving out these extra properties will default to no label, and a swatch size of 24px
 
 #### Anchor links
 - `<AnchorLinks>`
 - `<AnchorLinks small>`
-
-#### Grid wrapper
-- `<GridWrapper col_lg="12" flex="true>`
-  - `col_lg` Specify the col width at large breakpoint, default is 12
-  - `flex` Set to true to set display:flex | flexwrap: wrap to row
 
 #### Website tabs
 - `<WebsiteTabs> … </WebsiteTabs>`
@@ -227,24 +251,6 @@ This is a wrapper component to display a list as an anchor link list
 - [Danger button usage](#danger-button-usage)
 
 </AnchorLinks>
-```
-
-#### Grid Wrapper
-
-This is a wrapper component used to wrap components like tiles, do-dont, images and more. Shown with the default values below.
-
-```
-Properties
-
-    - col_lg: Specify the col width at large breakpoint, default is 12
-    - col_md: Specify the col width at medium breakpoint, default is 8
-    - col_sm: Specify the col width at small breakpoint, default is 4
-    - flex: Set to true to set display:flex | flexwrap: wrap to row
-    - bleed: Set to true to remove col padding
-
-
-<GridWrapper />
-<GridWrapper col_lg="12" col_md="8" col_sm="4" flex="false" bleed="false">
 ```
 
 #### Clickable Tile
@@ -276,19 +282,26 @@ This will render the following group of clickable tiles
 
 #### Example of the Do/Don't components:
 
+- Default do/don't will fill the container `<Column>` it is placed inside.
+- can include property `square` to force a fixed aspect ratio. Useful when creating text only do/don't examples	
+    - e.g. `<DoDontExample square>`	
 - can include property `full_width="true"` to use the example as a full-width component.
     - e.g. `<DoDontExample full_width="true">`
-    - this option will cause the element to fill the full width of its containing wrappper. adjust the column count of the enclosing `<GridWrapper>` to expand the maxium width.
+    - this option will cause the element to fill the full width of its containing wrappper. 
 - can include property `dark="true"` to use a dark background
     - e.g. `<DoDontExample dark="true">`
 
 ##### With text examples:
 
 ```
-<GridWrapper col_lg="8" flex="true">
-    <DoDontExample correct="true" label="Active Voice" text='"In the Limits window, specify the minimum and maximum values."'></DoDontExample>
+<Row>
+<Column offsetLg="4" colLg="4" colMd="4">
+    <DoDontExample correct label="Active Voice" text='"In the Limits window, specify the minimum and maximum values."'></DoDontExample>
+</Column>
+<Column colLg="4" colMd="4" >
     <DoDontExample label='Passive Voice' text='"The Limits window is used to specify the minimum and maximum values."'></DoDontExample>
-</GridWrapper>
+</Column>
+</Row>
 ```
 
 ---
@@ -296,18 +309,22 @@ This will render the following group of clickable tiles
 ##### With image examples:
 
 ```
-<GridWrapper col_lg="8" flex="true">
-    <DoDontExample correct="true" label='Image Test'>
+<Row>
+<Column offsetLg="4" colLg="4" colMd="4">
+    <DoDontExample correct label='Image Test'>
 
 ![](images/image.png)
 
     </DoDontExample>
+</Column>
+<Column colLg="4" colMd="4" >
     <DoDontExample label='Image Test' >
 
 ![](images/image.png)
 
     </DoDontExample>
-</GridWrapper>
+</Column>
+</Row>
 ```
 
 This will render the following set of examples:
@@ -364,7 +381,6 @@ lorem ipsum dolor sit amet
 - `<TypeWeight type="italic">`
 - `<TypeWeight type="type">`
 - `<TypeScaleTable>`
-- `<TypeSpec>`
 
 **Glossary**
 

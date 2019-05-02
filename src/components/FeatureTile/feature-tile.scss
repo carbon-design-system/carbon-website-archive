@@ -1,5 +1,5 @@
 .feature-tile--margin {
-  margin-bottom: $spacing-lg;
+  margin-bottom: $spacing-06;
 }
 
 a.feature-tile {
@@ -38,7 +38,7 @@ a.feature-tile:hover .feature-tile__info {
 
 .feature-tile__info {
   background-color: $carbon--gray-90;
-  padding: $spacing-md;
+  padding: $spacing-05;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -54,7 +54,7 @@ a.feature-tile:hover .feature-tile__info {
 .feature-tile__icon {
   position: absolute;
   bottom: rem(14px);
-  right: $spacing-md;
+  right: $spacing-05;
   fill: $carbon--gray-30;
 }
 
@@ -86,7 +86,7 @@ a.feature-tile.feature-tile--desktop {
 
 div.feature-tile--margin.feature-tile--mobile,
 div.feature-tile--mobile {
-  margin-bottom: 1rem;
+  margin-bottom: $spacing-05;
 
   @include carbon--breakpoint('md') {
     margin-bottom: 0;
@@ -98,9 +98,9 @@ div.feature-tile--desktop {
   margin-bottom: 0;
 
   @include carbon--breakpoint('md') {
-    margin-bottom: 1rem;
+    margin-bottom: $spacing-05;
 
-    & > .ibm--col-lg-12 {
+    & > .bx--col-lg-12 {
       padding: 0;
     }
   }
