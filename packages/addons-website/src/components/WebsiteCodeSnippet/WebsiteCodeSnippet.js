@@ -38,12 +38,20 @@ export default class WebsiteCodeSnippet extends React.Component {
   render() {
     const { children } = this.props;
     const type = this.state.multi ? 'multi' : 'single';
+
+    let textToCopy;
+    if (children.props.children) {
+      textToCopy = children.props.children.replace(/[$]+/g, '');
+    }
+
     return (
       <div className={`${prefix}--row`}>
         <div
           className={`${prefix}--col-lg-8 ${prefix}--offset-lg-4 ${prefix}--no-gutter`}>
           <div className={`${prefix}--snippet--website`}>
-            <CopyToClipboard onCopy={() => this.setState({ copied: true })}>
+            <CopyToClipboard
+              text={textToCopy}
+              onCopy={() => this.setState({ copied: true })}>
               <CodeSnippet type={type}>
                 <div ref={element => (this.codeRef = element)}>{children}</div>
               </CodeSnippet>
