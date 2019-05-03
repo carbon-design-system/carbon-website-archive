@@ -41,7 +41,7 @@ export default class WebsiteCodeSnippet extends React.Component {
 
     let textToCopy;
     if (children.props.children) {
-      textToCopy = children.props.children.replace(/[$]+/g, '');
+      textToCopy = children.props.children.replace(/(\$ )+/g, '');
     }
 
     return (
