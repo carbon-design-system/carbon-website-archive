@@ -1,0 +1,313 @@
+---
+title: Building with grid
+internal: false
+---
+
+<AnchorLinks>
+
+- [Install grid](#install-grid)
+- [Build landing page with grid](#build-landing-page-with-grid)
+- [Add landing page elements](#add-landing-page-elements)
+- [Add landing page styles](#add-landing-page-styles)
+- [Build repo page with grid](#build-repo-page-with-grid)
+- [Add repo page elements](#add-repo-page-elements)
+
+</AnchorLinks>
+
+## Install grid
+
+In our last step we added our styles, component and icon packages. Now that we're building the pages with grid, we need to install one more Carbon package.
+
+```bash
+yarn add @carbon/grid
+```
+
+In `index.scss`, we need to configure our grid to use 16 columns instead of the default 12 columns. We do this by adding
+`grid-columns-16: true` in our `$feature-flags`.
+
+```css
+$feature-flags: (
+  ui-shell: true,
+  grid-columns-16: true
+);
+```
+
+## Build landing page with grid
+
+Now in our `LandingPage.js`, we can add our grid elements.
+
+In order to use the grid, we need to wrap everything in a `<div className="bx--grid">`. We can continue to make rows by adding a `<div className="bx--row">` inside the grid, as well as make columns within those rows by adding `<div className="bx--col-lg-[size]">`.
+
+Our column sizes are specified by the number of columns they'll be spanning. If we use `bx--col-lg-4`, it means it'll span 4 of the 16 columns. If we use `bx--col-lg-8` it means it'll span 8 of the 16 columns, and so on.
+
+We know from our design specs that we'll need six rows. The first row design doesn't appear to need any columns. The second row looks like it has two columns of equal width. The third and sixth row look like they have four columns of equal width, and the fourth and fifth rows look like they have three columns — two columns are each a quarter of the row, and the last column is half of the row.
+
+We'll make rows like so:
+
+```javascript
+return (
+  <div className="bx--grid bx--grid--full-width landing-page">
+    <div className="bx--row landing-page__banner">1</div>
+    <div className="bx--row landing-page__r2">
+      <div className="bx--col-lg-8">1/2</div>
+      <div className="bx--col-lg-8">1/2</div>
+    </div>
+    <div className="bx--row landing-page__r3">
+      <div className="bx--col-lg-4">1/4</div>
+      <div className="bx--col-lg-4">1/4</div>
+      <div className="bx--col-lg-4">1/4</div>
+      <div className="bx--col-lg-4">1/4</div>
+    </div>
+    <div className="bx--row landing-page__r4">
+      <div className="bx--col-lg-4">1/4</div>
+      <div className="bx--col-lg-4">1/4</div>
+      <div className="bx--col-lg-8">1/2</div>
+    </div>
+    <div className="bx--row landing-page__r5">
+      <div className="bx--col-lg-4">1/4</div>
+      <div className="bx--col-lg-4">1/4</div>
+      <div className="bx--col-lg-8">1/2</div>
+    </div>
+    <div className="bx--row landing-page__r6">
+      <div className="bx--col-lg-4">1/4</div>
+      <div className="bx--col-lg-4">1/4</div>
+      <div className="bx--col-lg-4">1/4</div>
+      <div className="bx--col-lg-4">1/4</div>
+    </div>
+  </div>
+);
+```
+
+We added a class of `bx--grid--full-width` to the grid container since our rows need to expand the whole page without any margins. We also added some custom classes like `landing-page`, `landing-page__banner`, `landing-page__r2`, etc, which we will use later.
+
+## Add landing page elements
+
+We'll start adding HTML elements and components by row.
+
+#### First row
+
+In our first row we'll need a `<BreadCrumb/>` component. First, let's import the components we need. Because we'll be importing several components for this page, we'll import them directly from the `carbon-components-react` package instead of the direct path for each one.
+
+```javascript
+import { Breadcrumb, BreadcrumbItem } from 'carbon-components-react';
+```
+
+We can now add our component to the first row, along with a header, like so:
+
+```html
+<div className="bx--row landing-page__banner">
+  <Breadcrumb noTrailingSlash>
+    <BreadcrumbItem>Getting started</BreadcrumbItem>
+  </Breadcrumb>
+  <h1>Design &amp; build with Carbon</h1>
+</div>
+```
+
+You may notice that the styles look off. Don't worry, we'll fix these later.
+
+#### Second row
+
+In our second row we'll need `<Tabs/>` and `<Button/>` components. We'll add those to our import at the top of the file.
+
+```javascript
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  Button,
+  Tabs,
+  Tab,
+} from 'carbon-components-react';
+```
+
+Before we can render the tabs, we need to add some props for the component after the import.
+
+```javascript
+const props = {
+  tabs: () => ({
+    className: 'some-class',
+    selected: 0,
+    triggerHref: '#',
+    role: 'navigation',
+  }),
+  tab: () => ({
+    href: '#',
+    role: 'presentation',
+    tabIndex: 0,
+  }),
+};
+
+export default class LandingPage extends Component {
+...
+```
+
+Since our second row is essentially a `<Tab/>` that spans the whole width of the page, we'll refactor our column containers to be inside the component instead of the other way around. Like so:
+
+_To-do: Should we have nested row??? (see below)?_
+
+```html
+<div className="bx--row landing-page__r2">
+  <Tabs {...props.tabs()}>
+    <Tab {...props.tab()} label="Tab label 1">
+      <div className="bx--row">
+        <div className="bx--col-lg-8">
+          1/2
+        </div>
+        <div className="bx--col-lg-8">
+          1/2
+        </div>
+      </div>
+    </Tab>
+    <Tab {...props.tab()} label="Tab label 2">
+      <div>Content for second tab goes here.</div>
+    </Tab>
+    <Tab {...props.tab()} label="Tab label 3">
+      <div>Content for third tab goes here.</div>
+    </Tab>
+  </Tabs>
+</div>
+```
+
+We can now add our images and text for each column in the first `<Tab/>`.
+
+_To-do: Should we use html or javascript language for this code (below)? HTML syntax highlights look better, but remove the capitalization from "Button" component_
+
+```html
+<Tab {...props.tab()} label="Tab label 1">
+  <div className="bx--row">
+    <div className="bx--col-lg-8">
+      <h3>What is Carbon?</h3>
+      <p>
+        Carbon is IBM’s open-source design system for digital products and
+        experiences. With the IBM Design Language as its foundation, the system
+        consists of working code, design tools and resources, human interface
+        guidelines, and a vibrant community of contributors.
+      </p>
+      <button>Learn more</button>
+    </div>
+    <div className="bx--col-lg-8">
+      <img src={`${process.env.PUBLIC_URL}/Banner_illustration.png`} alt="Carbon
+      illustration" />
+    </div>
+  </div>
+</Tab>
+```
+
+Assuming that the second and third tab would have a similar design, we would set them up in the same way. However, since our design specs don't show those tabs, we'll leave the code as is.
+
+#### Third, fourth, fifth & sixth rows
+
+Since the last four rows implement custom components, which will be created in a later tutorial, we'll just add the headers for any rows that need them.
+
+```html
+<div className="bx--row landing-page__r3">
+  <div className="bx--col-lg-4">
+    <h4>The Principles</h4>
+  </div>
+  <div className="bx--col-lg-4">1/4</div>
+  <div className="bx--col-lg-4">1/4</div>
+  <div className="bx--col-lg-4">1/4</div>
+</div>
+<div className="bx--row landing-page__r4">
+  <div className="bx--col-lg-4">
+    <h4>Who is Carbon for?</h4>
+  </div>
+  <div className="bx--col-lg-4">1/4</div>
+  <div className="bx--col-lg-8">1/2</div>
+</div>
+<div className="bx--row landing-page__r5">
+  <div className="bx--col-lg-4">1/4</div>
+  <div className="bx--col-lg-4">1/4</div>
+  <div className="bx--col-lg-8">1/2</div>
+</div>
+<div className="bx--row landing-page__r6">
+  <div className="bx--col-lg-4">
+    <h4>Get design guidance &amp; code</h4>
+  </div>
+  <div className="bx--col-lg-4">1/4</div>
+  <div className="bx--col-lg-4">1/4</div>
+  <div className="bx--col-lg-4">1/4</div>
+</div>
+```
+
+## Add landing page styles
+
+Now, we can add any necessary styling in `landing-page.scss`.
+
+We'll fix the grid margin by overriding some styles with our custom classes:
+
+```css
+.landing-page {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.landing-page .bx--row {
+  padding: 2rem 1rem;
+}
+```
+
+For our first row we need to do a few things: fix the flex direction, give it a height, change the background color, and fix the type styles. We're using Gray 10 for our banner background color, which can be set with our `$ui-01` [token](https://www.carbondesignsystem.com/guidelines/color/usage).
+
+```css
+.landing-page__banner {
+  flex-direction: column;
+  height: rem(208px);
+  background-color: $ui-01;
+}
+```
+
+We'll add the correct header style to our `h1` by including our [type token](https://www.carbondesignsystem.com/guidelines/typography/productive) like so:
+
+```css
+.landing-page h1 {
+  @include type-style('productive-heading-05');
+}
+```
+
+For our second row, we need to fix the tabs positioning to match our design spec, as well as fix our type styles. We'll do this like so:
+
+```css
+.landing-page__r2 {
+  position: relative;
+}
+
+.landing-page__r2 .bx--tabs {
+  position: absolute;
+  top: rem(-42px);
+  right: rem(16px);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.landing-page__r2 h3,
+.landing-page__r2 p {
+  @include type-style('productive-heading-03');
+}
+
+.landing-page__r2 h3 {
+  font-weight: 600; /* is this still needed? */
+}
+
+.landing-page__r2 p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+```
+
+Lastly, we'll add a few styles for our last four rows:
+
+```css
+.landing-page__r3 {
+  background-color: $ui-01;
+}
+
+.landing-page__r4 {
+  /* add bottom border #bebebe $active-ui */
+}
+```
+
+Ta-da! You should see a finished landing page! Now we can move on to the repo page.
+
+## Build repo page with grid
+
+## Add repo page elements
