@@ -26,21 +26,18 @@ export default class ComponentDocs extends React.Component {
     return (
       <Location>
         {({ location }) => {
-          const hash = 'documentation';
           const path = location.pathname;
 
           return (
             <div className="page_md component-docs bx--row">
               <div className="bx--col-lg-12 bx--offset-lg-4">
-                <h2 id={hash} className="page-h2">
-                  {hash && (
-                    <Link className="anchor-link" to={`${path}#${hash}`}>
-                      <Link20
-                        className="anchor-link__icon"
-                        aria-label="Anchor Link"
-                      />
-                    </Link>
-                  )}
+                <h2 id="documentation" className="page-h2">
+                  <Link className="anchor-link" to={`${path}#documentation`}>
+                    <Link20
+                      className="anchor-link__icon"
+                      aria-label="Anchor Link"
+                    />
+                  </Link>
                   Documentation
                 </h2>
                 {
