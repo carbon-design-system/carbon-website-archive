@@ -65,7 +65,8 @@ upstream	git@github.com:carbon-design-system/carbon-tutorial.git (push)
 Now that we have our repository set up, let's checkout the branch for this tutorial step's starting point. Run the command:
 
 ```bash
-$ git checkout react-step-1
+$ git fetch upstream
+$ git checkout -b react-step-1 upstream/react-step-1
 ```
 
 ## Build & test app

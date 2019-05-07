@@ -88,7 +88,7 @@ export default class HomepageVideo extends React.Component {
         <rect
           id="_Transparent_Rectangle_"
           data-name="&lt;Transparent Rectangle&gt;"
-          class="cls-1"
+          className="cls-1"
           width="32"
           height="32"
         />
@@ -105,7 +105,7 @@ export default class HomepageVideo extends React.Component {
         <rect
           id="_Transparent_Rectangle_"
           data-name="&lt;Transparent Rectangle&gt;"
-          class="cls-1"
+          className="cls-1"
           width="32"
           height="32"
         />
