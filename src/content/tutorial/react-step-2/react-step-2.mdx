@@ -184,7 +184,7 @@ We can now add our images and text for each column in the first `<Tab/>`.
       <Button>Learn more</Button>
     </div>
     <div className="bx--col-lg-8">
-      <img src={`${process.env.PUBLIC_URL}/Banner_illustration.png`} alt="Carbon
+      <img className="landing-page-illustration" src={`${process.env.PUBLIC_URL}/Banner_illustration.png`} alt="Carbon
       illustration" />
     </div>
   </div>
@@ -242,7 +242,7 @@ We'll fix the grid margin by overriding some styles with our custom classes:
 }
 
 .landing-page .bx--row {
-  padding: 2rem 1rem;
+  padding: 2rem;
 }
 ```
 
@@ -264,7 +264,7 @@ We'll add the correct header style to our `h1` by including our [type token](htt
 }
 ```
 
-For our second row, we need to fix the tabs positioning to match our design spec, as well as fix our type styles. We'll do this like so:
+For our second row, we need to fix the tabs positioning to match our design spec, as well as fix our type styles and make the image responsive. We'll do this like so:
 
 ```css
 .landing-page__r2 {
@@ -291,6 +291,11 @@ For our second row, we need to fix the tabs positioning to match our design spec
 .landing-page__r2 p {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.landing-page-illustration {
+  width: 100%;
+  height: 100%;
 }
 ```
 
@@ -347,7 +352,7 @@ Then add those components inside our first column container like so:
     id="search-1"
     small
   />
-  <Checkbox checked labelText="All" id="checkbox-label-1" />
+  <Checkbox checked labelText="All" id="checkbox-label-0" />
   <Checkbox labelText="Repo 1" id="checkbox-label-1" />
   <Checkbox labelText="Repo 2" id="checkbox-label-2" />
   <Checkbox labelText="Repo 3" id="checkbox-label-3" />
@@ -547,6 +552,17 @@ Last but not least, we'll need to add our pagination component as a sibling of `
   100]}
   itemsPerPageText="Items per page"
 />
+```
+
+## Add repo page styles
+
+In `repo-page.scss`:
+
+```css
+.repo-page .bx--row {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 ```
 
 Congratulations! We've now created our static repo page!
