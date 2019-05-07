@@ -13,7 +13,9 @@ export default class WebsiteAlert extends React.Component {
           <span /> <span>{alertDescription}</span>
         </p>
         <Link className="website-alert__button" tabIndex="-1" to={buttonTo}>
-          <button class="bx--btn bx--btn--secondary bx--btn--sm" type="button">
+          <button
+            className="bx--btn bx--btn--secondary bx--btn--sm"
+            type="button">
             <span>{buttonText}</span>
             <ArrowRight20 />
           </button>
