@@ -1,15 +1,15 @@
 {
   "getting-started": {
-    "title": "Getting started",
+    "title": "Get started",
     "sub-nav": {
       "about-carbon": {
         "title": "About Carbon"
       },
       "designers": {
-        "title": "Designers"
+        "title": "Designing"
       },
       "developers": {
-        "title": "Developers"
+        "title": "Developing"
       }
     }
   },
@@ -211,19 +211,16 @@
     "title": "Resources"
   },
   "contributing": {
-    "title": "Contributing",
+    "title": "Contribute",
     "sub-nav": {
-      "governance": {
-        "title": "Governance"
-      },
       "designers": {
-        "title": "Designers"
-      },
-      "developers": {
-        "title": "Developers"
+        "title": "Assets"
       },
       "add-ons": {
         "title": "Add-ons"
+      },
+      "governance": {
+        "title": "Governance"
       }
     }
   },
