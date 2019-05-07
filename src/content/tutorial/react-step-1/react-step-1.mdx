@@ -103,18 +103,18 @@ Stop your development server with `CTRL-C` and install Carbon dependencies with:
 $ yarn add carbon-components carbon-components-react @carbon/icons-react
 ```
 
-Then, start the app again.
-
-```bash
-$ yarn start
-```
-
 ## Install & build Sass
 
 We need to run a Sass build as the Carbon styles are authored in Sass, so run the following command to install `node-sass` as a dependency.
 
 ```bash
 $ yarn add node-sass
+```
+
+Then, start the app again.
+
+```bash
+$ yarn start
 ```
 
 In `src/` rename `index.css` as `index.scss`. Then in `index.js` update the `css` import to `index.scss`.
@@ -149,7 +149,7 @@ Congratulations, you've imported your first component! You should see a Carbon s
 
 _Note: The UI Shell has experimental status at the moment. We do not recommend using it for production until it is stable, but if doing so, know that there may be breaking changes in the future._
 
-If you remember from running `yarn test` at the beginning of this tutorial, our tests are failing from missing a `<TutorialHeader/>` component. We will be creating our `<TutorialHeader/>` component in our `src/components/TutorialHeader` folder. Start by creating the following files as siblings of the `__tests__` folder:
+If you remember from running `yarn test` at the beginning of this tutorial, our tests are failing from missing a `<TutorialHeader/>` component. We will be creating our `<TutorialHeader/>` component in our `src/components/TutorialHeader` folder. Create the following inside `src/components/TutorialHeader`:
 
 ```bash
 src/components/TutorialHeader
@@ -231,7 +231,7 @@ _Note: you can find a description of the different components used UI Shell in o
 
 When creating navigation headers, it's important to have a `Skip to content` link for accessibility. This allows keyboard users to skip the navigation items and go straight to the main content.
 
-Another important thing to notice is that we're using React Fragment to return the header components. This is because we will later be rendering `<TutorialHeader/>` in `App.js` as a sibling of `<Content/>`, which is another UI Shell component. `<Content/>` is meant to be a sibling of the `<Header/>` component that we're returning in `<TutorialHeader/>`. If these two aren't siblings, the `<Content/>` elements will not be rendered directly below the UI shell. By using React Fragment, we're rendering these two components as siblings. Another way to fix this would be to render these in the same file, or offsetting the `<Content/>` margin to be below the UI shell.
+Another important thing to notice is that we're using React Fragment to return the header components. This is because we will later be rendering `<TutorialHeader/>` in `App.js` as a sibling of `<Content/>`, which is another UI Shell component. `<Content/>` is meant to be a sibling of the `<Header/>` component that we're returning in `<TutorialHeader/>`. If these two aren't siblings, the `<Content/>` elements will not be rendered directly below the UI shell. By using [React Fragment](https://reactjs.org/docs/fragments.html), we're rendering these two components as siblings. Another way to fix this would be to render these in the same file, or offsetting the `<Content/>` margin to be below the UI shell.
 
 ### Import icons
 
@@ -243,17 +243,17 @@ import UserAvatar20 from '@carbon/icons-react/lib/user--avatar/20';
 import AppSwitcher20 from '@carbon/icons-react/lib/app-switcher/20';
 ```
 
-Then we need to add the `<HeaderGlobalAction>` component inside of the `<GlobalHeaderBar>` where we will add our icons. These represent actions in the header a user can make.
+Then we need to add the `<HeaderGlobalAction>` component inside of the `<HeaderGlobalBar>` where we will add our icons. These represent actions in the header a user can make.
 
 ```html
 <HeaderGlobalBar>
-  <HeaderGlobalAction>
+  <HeaderGlobalAction aria-label="Notification">
     <Notification20 />
   </HeaderGlobalAction>
-  <HeaderGlobalAction>
+  <HeaderGlobalAction aria-label="User">
     <UserAvatar20 />
   </HeaderGlobalAction>
-  <HeaderGlobalAction>
+  <HeaderGlobalAction aria-label="App Switcher">
     <AppSwitcher20 />
   </HeaderGlobalAction>
 </HeaderGlobalBar>
@@ -418,9 +418,7 @@ Now inside `<Content/>` we'll add the following:
 ```
 <!-- prettier-ignore-end -->
 
-We're half way there! Now we need to point our header links to these routes.
-
-WOOHOO! You should now have a working header that routes to different pages! The `src/components/TutorialHeader/TutorialHeader.js` has `href="/"` on `<HeaderName/>`, and `href="/repos"` on the `<HeaderMenuItem/>` which maps to the `<Route/>` attributes set above.
+The `src/components/TutorialHeader/TutorialHeader.js` has `href="/"` on `<HeaderName/>`, and `href="/repos"` on the `<HeaderMenuItem/>` which maps to the `<Route/>` attributes set above. You should now have a working header that routes to different pages! 
 
 ## Submit pull request
 
