@@ -169,8 +169,7 @@ _To-do: Should we have nested row??? (see below)?_
 
 We can now add our images and text for each column in the first `<Tab/>`.
 
-_To-do: Should we use html or javascript language for this code (below)? HTML syntax highlights look better, but remove the capitalization from "Button" component_
-
+<!-- prettier-ignore-start -->
 ```html
 <Tab {...props.tab()} label="Tab label 1">
   <div className="bx--row">
@@ -182,7 +181,7 @@ _To-do: Should we use html or javascript language for this code (below)? HTML sy
         consists of working code, design tools and resources, human interface
         guidelines, and a vibrant community of contributors.
       </p>
-      <button>Learn more</button>
+      <Button>Learn more</Button>
     </div>
     <div className="bx--col-lg-8">
       <img src={`${process.env.PUBLIC_URL}/Banner_illustration.png`} alt="Carbon
@@ -191,6 +190,7 @@ _To-do: Should we use html or javascript language for this code (below)? HTML sy
   </div>
 </Tab>
 ```
+<!-- prettier-ignore-end -->
 
 Assuming that the second and third tab would have a similar design, we would set them up in the same way. However, since our design specs don't show those tabs, we'll leave the code as is.
 
@@ -314,7 +314,7 @@ Now in our `RepoPage.js` we'll add our grid containers in the `return` section.
 
 ```javascript
 return (
-  <div className="bx--grid">
+  <div className="bx--grid repo-page">
     <div className="bx--row">
       <div className="bx--col-lg-3">Filters will go here</div>
       <div className="bx--col-lg-13">Data table will go here</div>
@@ -335,8 +335,7 @@ import { Button, Checkbox, Search } from 'carbon-components-react';
 
 Then add those components inside our first column container like so:
 
-_To-do: fix "Button" component, needs uppercase"_
-
+<!-- prettier-ignore-start -->
 ```html
 <div className="bx--col-lg-3">
   <label htmlFor="search-1" className="bx--label">
@@ -353,9 +352,10 @@ _To-do: fix "Button" component, needs uppercase"_
   <Checkbox labelText="Repo 2" id="checkbox-label-2" />
   <Checkbox labelText="Repo 3" id="checkbox-label-3" />
   <Checkbox labelText="Repo 4" id="checkbox-label-4" />
-  <button kind="ghost">See more</button>
+  <Button kind="ghost">See more</Button>
 </div>
 ```
+<!-- prettier-ignore-end -->
 
 #### Data table
 
@@ -488,13 +488,14 @@ TableContainer
 
 In our file, that will look like this:
 
+<!-- prettier-ignore-start -->
 ```javascript
 render={({ rows, headers, getHeaderProps, getRowProps, getTableProps, }) => (
 <TableContainer
   title="Data table title"
   description="Additional description if needed"
 >
-  <table {...getTableProps()}>
+  <Table {...getTableProps()}>
     <TableHead>
       <TableRow>
         <TableExpandHeader />
@@ -520,10 +521,11 @@ render={({ rows, headers, getHeaderProps, getRowProps, getTableProps, }) => (
       </React.Fragment>
       ))}
     </TableBody>
-  </table>
+  </Table>
 </TableContainer>
 )}
 ```
+<!-- prettier-ignore-end -->
 
 _To-do: add styling for the table expanded cell content_
 
