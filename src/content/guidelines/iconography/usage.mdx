@@ -146,49 +146,6 @@ When used next to text, icons should be center-aligned.
 
 <p>Full installation details can be found in the <a href="https://github.com/ibm/carbon-icons" target="blank">Carbon icons GitHub repo.</a></p>
 
-### Using SVG sprite from static assets (recommended)
-
-Use the SVG sprite (**carbon-icons.svg**) by serving it as a static asset.
-Then reference the SVG icon you want to display using a path to the SVG sprite file.
-To use SVG sprite files, they **must** be distributed through a web server and while using `svgxuse`.
-
-```html
-<!-- From static assets  -->
-<svg>
-  <use xlink:href="/path_to_static-assets/carbon-icons.svg#icon_name"></use>
-</svg>
-```
-
-`path_to_static-assets` is the path to your static assets where `carbon-icons.svg` is located.
-
-`icon_name` is the icon name, which will display the corresponding icon. Refer to the [iconography library](/guidelines/iconography) page for a full list of icon names.
-
-### CSS
-
-You can override size and color with CSS.
-
-```html
-<svg class="icon">
-  <use xlink:href="/path_to_static-assets/carbon-icons.svg#icon_name"></use>
-</svg>
-```
-
-```css
-.icon {
-  width: 24px;
-  height: 24px;
-  fill: red;
-}
-```
-
-All icons in the library are standardized so that they do not include `stroke` or internal spacing (`padding`).
-
-### Inline SVG
-
-If you're unable to use the recommended SVG sprite or `svgxuse`, you can inline SVG directly into your HTML.
-
-Visit carbon-icons and browse the svg folder for any icons you want to use. (Remember, svg subfolders contain deprecated icons. Don't use these.)
-
 ### Main files
 
 Carbon icons ship with two main SVG files that contain different sets of external SVG sprite files:
