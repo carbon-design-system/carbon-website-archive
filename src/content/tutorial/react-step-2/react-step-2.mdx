@@ -6,11 +6,13 @@ internal: false
 <AnchorLinks>
 
 - [Install grid](#install-grid)
-- [Build landing page with grid](#build-landing-page-with-grid)
-- [Add landing page elements](#add-landing-page-elements)
+- [Add landing page grid](#add-landing-page-grid)
+- [Add landing page content](#add-landing-page-content)
 - [Add landing page styles](#add-landing-page-styles)
-- [Build repo page with grid](#build-repo-page-with-grid)
-- [Add repo page elements](#add-repo-page-elements)
+- [Add repo page grid](#add-repo-page-grid)
+- [Add repo page content](#add-repo-page-content)
+- [Add repo page styles](#add-repo-page-styles)
+- [Submit pull request](#submit-pull-request)
 
 </AnchorLinks>
 
@@ -32,7 +34,11 @@ $feature-flags: (
 );
 ```
 
-## Build landing page with grid
+Before we start our development server, run `yarn test`. When prompted for a watch mode, you can press `a` to run all tests. You'll notice that there are some tests failing. Just like in step one, we'll make these tests pass as we build our app.
+
+For now, type `CTRL-C`, and run `yarn start`, so we can begin building.
+
+## Add landing page grid
 
 Now in our `LandingPage.js`, we can add our grid elements.
 
@@ -64,8 +70,7 @@ return (
       <div className="bx--col-lg-8">1/2</div>
     </div>
     <div className="bx--row landing-page__r5">
-      <div className="bx--col-lg-4">1/4</div>
-      <div className="bx--col-lg-4">1/4</div>
+      <div className="bx--offset-lg-4 bx--col-lg-4">1/4</div>
       <div className="bx--col-lg-8">1/2</div>
     </div>
     <div className="bx--row landing-page__r6">
@@ -80,7 +85,9 @@ return (
 
 We added a class of `bx--grid--full-width` to the grid container since our rows need to expand the whole page without any margins. We also added some custom classes like `landing-page`, `landing-page__banner`, `landing-page__r2`, etc, which we will use later.
 
-## Add landing page elements
+Another important thing to notice is that in the 5th row `landing-page__r5`, instead of including two `bx--col-lg-4` `div`'s, I only included one, and gave it an additional class of `bx--offset-lg-4`. This is because we won't actually have any content in the first quarter column, so instead of having an empty column, we can just offset the second column by a quarter using the additional class.
+
+## Add landing page content
 
 We'll start adding HTML elements and components by row.
 
@@ -142,8 +149,6 @@ export default class LandingPage extends Component {
 
 Since our second row is essentially a `<Tab/>` that spans the whole width of the page, we'll refactor our column containers to be inside the component instead of the other way around. Like so:
 
-_To-do: Should we have nested row??? (see below)?_
-
 ```html
 <div className="bx--row landing-page__r2">
   <Tabs {...props.tabs()}>
@@ -174,7 +179,7 @@ We can now add our images and text for each column in the first `<Tab/>`.
 <Tab {...props.tab()} label="Tab label 1">
   <div className="bx--row">
     <div className="bx--col-lg-8">
-      <h3>What is Carbon?</h3>
+      <strong>What is Carbon?</strong>
       <p>
         Carbon is IBM’s open-source design system for digital products and
         experiences. With the IBM Design Language as its foundation, the system
@@ -201,7 +206,7 @@ Since the last four rows implement custom components, which will be created in a
 ```html
 <div className="bx--row landing-page__r3">
   <div className="bx--col-lg-4">
-    <h4>The Principles</h4>
+    <strong>The Principles</strong>
   </div>
   <div className="bx--col-lg-4">1/4</div>
   <div className="bx--col-lg-4">1/4</div>
@@ -209,19 +214,18 @@ Since the last four rows implement custom components, which will be created in a
 </div>
 <div className="bx--row landing-page__r4">
   <div className="bx--col-lg-4">
-    <h4>Who is Carbon for?</h4>
+    <strong>Who is Carbon for?</strong>
   </div>
   <div className="bx--col-lg-4">1/4</div>
   <div className="bx--col-lg-8">1/2</div>
 </div>
 <div className="bx--row landing-page__r5">
-  <div className="bx--col-lg-4">1/4</div>
-  <div className="bx--col-lg-4">1/4</div>
+  <div className="bx--offset-lg-4 bx--col-lg-4">1/4</div>
   <div className="bx--col-lg-8">1/2</div>
 </div>
 <div className="bx--row landing-page__r6">
   <div className="bx--col-lg-4">
-    <h4>Get design guidance &amp; code</h4>
+    <strong>Get design guidance &amp; code</strong>
   </div>
   <div className="bx--col-lg-4">1/4</div>
   <div className="bx--col-lg-4">1/4</div>
@@ -233,16 +237,21 @@ Since the last four rows implement custom components, which will be created in a
 
 Now, we can add any necessary styling in `landing-page.scss`.
 
-We'll fix the grid margin by overriding some styles with our custom classes:
+We'll fix the grid margin by overriding some styles with our custom classes. We'll be using our (spacing tokens)[https://www.carbondesignsystem.com/guidelines/spacing] to change the padding.
 
 ```css
 .landing-page {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: $spacing-05;
+  padding-right: $spacing-05;
 }
 
 .landing-page .bx--row {
-  padding: 2rem;
+  padding: $spacing-07;
+}
+
+.landing-page .bx--col-lg-4,
+.landing-page .bx--col-lg-8 {
+  padding: 0;
 }
 ```
 
@@ -256,7 +265,9 @@ For our first row we need to do a few things: fix the flex direction, give it a 
 }
 ```
 
-We'll add the correct header style to our `h1` by including our [type token](https://www.carbondesignsystem.com/guidelines/typography/productive) like so:
+You'll notice that I used a `rem()` function to set the height. This function is included with Carbon, and it allows us to convert the pixels to `rem`.
+
+Next, we'll add the correct header style to our `h1` by including our [type token](https://www.carbondesignsystem.com/guidelines/typography/productive) like so:
 
 ```css
 .landing-page h1 {
@@ -271,21 +282,30 @@ For our second row, we need to fix the tabs positioning to match our design spec
   position: relative;
 }
 
+.landing-page .bx--row.landing-page__r2 {
+  padding: 0;
+}
+
 .landing-page__r2 .bx--tabs {
   position: absolute;
   top: rem(-42px);
-  right: rem(16px);
+  right: $spacing-05;
   display: flex;
   justify-content: flex-end;
 }
 
-.landing-page__r2 h3,
+.landing-page__r2 .bx--row {
+  padding-left: 0;
+  margin-left: $spacing-07;
+}
+
+.landing-page__r2 strong,
 .landing-page__r2 p {
   @include type-style('productive-heading-03');
 }
 
-.landing-page__r2 h3 {
-  font-weight: 600; /* is this still needed? */
+.landing-page__r2 strong {
+  font-weight: 600;
 }
 
 .landing-page__r2 p {
@@ -306,14 +326,30 @@ Lastly, we'll add a few styles for our last four rows:
   background-color: $ui-01;
 }
 
+.landing-page__r3 strong,
+.landing-page__r4 strong,
+.landing-page__r6 strong {
+  @include type-style('heading-01');
+}
+
 .landing-page__r4 {
-  /* add bottom border #bebebe $active-ui */
+  position: relative;
+}
+
+.landing-page__r4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: $spacing-07;
+  width: calc(100% - 4rem);
+  height: rem(1px);
+  background-color: $active-ui;
 }
 ```
 
 Ta-da! You should see a finished landing page! Now we can move on to the repo page.
 
-## Build repo page with grid
+## Add repo page grid
 
 Now in our `RepoPage.js` we'll add our grid containers in the `return` section.
 
@@ -328,7 +364,7 @@ return (
 );
 ```
 
-## Add repo page elements
+## Add repo page content
 
 #### Filter
 
@@ -532,8 +568,6 @@ render={({ rows, headers, getHeaderProps, getRowProps, getTableProps, }) => (
 ```
 <!-- prettier-ignore-end -->
 
-_To-do: add styling for the table expanded cell content_
-
 #### Pagination
 
 Last but not least, we'll need to add our pagination component as a sibling of `<DataTable/>`.
@@ -556,13 +590,41 @@ Last but not least, we'll need to add our pagination component as a sibling of `
 
 ## Add repo page styles
 
-In `repo-page.scss`:
+Our styles for the repo page are mostly fine. We just need to updated a few spacing issues, and style our expanded row content.
+
+In `repo-page.scss`, add the following styles:
 
 ```css
 .repo-page .bx--row {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: $spacing-07;
+  padding-bottom: $spacing-07;
+}
+
+.repo-page .bx--search {
+  margin-bottom: $spacing-05;
+}
+
+tr.bx--parent-row.bx--expandable-row + tr[data-child-row] td {
+  padding-left: rem(60px);
+  padding-top: $spacing-05;
+}
+
+tr.bx--parent-row.bx--expandable-row
+  + tr[data-child-row]
+  td
+  .bx--child-row-inner-container {
+  max-width: rem(515px);
 }
 ```
 
 Congratulations! We've now created our static repo page!
+
+## Submit pull request
+
+We have now built our landing and repo page, so let's run our tests again.
+
+```bash
+$ yarn test
+```
+
+To finish this step, submit a pull request. Be sure to change the base branch from `master` to `react-step-3`.
