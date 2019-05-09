@@ -247,13 +247,13 @@ Then we need to add the `<HeaderGlobalAction>` component inside of the `<GlobalH
 
 ```html
 <HeaderGlobalBar>
-  <HeaderGlobalAction>
+  <HeaderGlobalAction aria-label="Notifications">
     <Notification20 />
   </HeaderGlobalAction>
-  <HeaderGlobalAction>
+  <HeaderGlobalAction aria-label="User Avatar">
     <UserAvatar20 />
   </HeaderGlobalAction>
-  <HeaderGlobalAction>
+  <HeaderGlobalAction aria-label="App Switcher">
     <AppSwitcher20 />
   </HeaderGlobalAction>
 </HeaderGlobalBar>
@@ -429,3 +429,5 @@ Now let's check to see if our tests pass. We have now added the UI Shell so we s
 ```bash
 $ yarn test
 ```
+
+To finish this step, submit a pull request. Be sure to change the base branch from `master` to `react-step-1`.

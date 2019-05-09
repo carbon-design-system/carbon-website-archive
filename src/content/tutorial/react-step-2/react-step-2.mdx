@@ -132,29 +132,26 @@ Before we can render the tabs, we need to add some props for the component after
 
 ```javascript
 const props = {
-  tabs: () => ({
+  tabs: {
     className: 'some-class',
     selected: 0,
     triggerHref: '#',
     role: 'navigation',
-  }),
-  tab: () => ({
+  },
+  tab: {
     href: '#',
     role: 'presentation',
     tabIndex: 0,
-  }),
+  },
 };
-
-export default class LandingPage extends Component {
-...
 ```
 
 Since our second row is essentially a `<Tab/>` that spans the whole width of the page, we'll refactor our column containers to be inside the component instead of the other way around. Like so:
 
 ```html
 <div className="bx--row landing-page__r2">
-  <Tabs {...props.tabs()}>
-    <Tab {...props.tab()} label="Tab label 1">
+  <Tabs {...props.tabs}>
+    <Tab {...props.tab} label="Tab label 1">
       <div className="bx--row">
         <div className="bx--col-lg-8">
           1/2
@@ -164,10 +161,10 @@ Since our second row is essentially a `<Tab/>` that spans the whole width of the
         </div>
       </div>
     </Tab>
-    <Tab {...props.tab()} label="Tab label 2">
+    <Tab {...props.tab} label="Tab label 2">
       <div>Content for second tab goes here.</div>
     </Tab>
-    <Tab {...props.tab()} label="Tab label 3">
+    <Tab {...props.tab} label="Tab label 3">
       <div>Content for third tab goes here.</div>
     </Tab>
   </Tabs>
@@ -178,7 +175,7 @@ We can now add our images and text for each column in the first `<Tab/>`.
 
 <!-- prettier-ignore-start -->
 ```html
-<Tab {...props.tab()} label="Tab label 1">
+<Tab {...props.tab} label="Tab label 1">
   <div className="bx--row">
     <div className="bx--col-lg-8">
       <strong>What is Carbon?</strong>
@@ -426,10 +423,10 @@ import {
 
 #### Data table props
 
-Before we can add the components to our `return` section, we need to create arrays for our row content and our header content, which will live in our `render` section.
+Before we can add the components to our `return` section, we need to create arrays for our row content and our header content inside the render function:
 
 ```javascript
-export default class RepoPage extends Component {
+class RepoPage extends Component {
   render() {
     const initialRows = [
       {
@@ -551,13 +548,13 @@ render={({ rows, headers, getHeaderProps, getRowProps, getTableProps, }) => (
     </TableHead>
     <TableBody>
       {rows.map(row => (
-      <React.Fragment key="{row.id}">
+      <React.Fragment key={row.id}>
         <TableExpandRow {...getRowProps({ row })}>
           {row.cells.map(cell => (
-          <TableCell key="{cell.id}">{cell.value}</TableCell>
+          <TableCell key={cell.id}>{cell.value}</TableCell>
           ))}
         </TableExpandRow>
-        <TableExpandedRow colSpan="{headers.length" + 1}>
+        <TableExpandedRow colSpan={headers.length + 1}>
           <h1>Expandable row content</h1>
           <p>Description here</p>
         </TableExpandedRow>
@@ -574,21 +571,23 @@ render={({ rows, headers, getHeaderProps, getRowProps, getTableProps, }) => (
 
 Last but not least, we'll need to add our pagination component as a sibling of `<DataTable/>`.
 
+<!-- prettier-ignore-start -->
 ```javascript
 <DataTable render={({ rows, headers, getHeaderProps, getRowProps, getTableProps,
 }) => ( ... )} />
 <Pagination
-  totalItems="{1228}"
+  totalItems={1228}
   backwardText="Previous page"
   forwardText="Next page"
-  pageSize="{100}"
-  pageSizes="{[10,"
+  pageSize={100}
+  pageSizes={[10,
   25,
   50,
   100]}
   itemsPerPageText="Items per page"
 />
 ```
+<!-- prettier-ignore-end -->
 
 It's important to note that the application should _only_ render rows corresponding to the current page from `<Pagination>`. This is not a big issue in this step, since we're only building out the static page, but will be important when adding data in the next step.
 
