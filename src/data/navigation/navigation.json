@@ -196,6 +196,9 @@
       "common-actions": {
         "title": "Common actions"
       },
+      "exporting": {
+        "title": "Exporting"
+      },
       "disabled-states": {
         "title": "Disabled states"
       },
