@@ -20,7 +20,7 @@ class ImageComponent extends Component {
   };
 
   static defaultProps = {
-    cols: '12',
+    cols: 12,
     zoom: false,
   };
 
@@ -80,19 +80,19 @@ class ImageComponent extends Component {
     });
     const imgComponentClasses = classnames(className, {
       [`${prefix}--image-component`]: true,
-      'no-caption': caption == undefined,
-      border: border == 'true',
-      'transparent-bg': bg == 'none',
-      'fixed-default': fixed == 'default',
-      'fixed-large': fixed == 'large',
-      zoom: zoom == 'true',
+      'no-caption': caption === undefined,
+      border: border === 'true',
+      'transparent-bg': bg === 'none',
+      'fixed-default': fixed === 'default',
+      'fixed-large': fixed === 'large',
+      zoom: zoom === true,
     });
     const magnifierClasses = classnames({
-      [`${prefix}--image-component-magnifier`]: zoom == 'true',
-      [`${prefix}--image-component-magnifier-hide`]: zoom != 'true',
+      [`${prefix}--image-component-magnifier`]: zoom === true,
+      [`${prefix}--image-component-magnifier-hide`]: zoom !== true,
     });
     const imgWrapperClasses = classnames({
-      [`${prefix}--image-component-wrapper-zoom`]: zoom == 'true',
+      [`${prefix}--image-component-wrapper-zoom`]: zoom === true,
     });
 
     if (this.state.showOverlay)

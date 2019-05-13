@@ -28,10 +28,10 @@ class ImageComponent extends Component {
       bg,
     } = this.props;
     const columnClasses = classnames({
-      'bx--col-lg-12 bx--offset-lg-4': cols == 12,
-      'bx--col-lg-8 bx--offset-lg-4': cols == 8,
-      'bx--col-lg-6 bx--col-md-6 bx--offset-lg-4': cols == 6,
-      'bx--col-lg-4 bx--offset-lg-4': cols == 4,
+      'bx--col-lg-12 bx--offset-lg-4': cols === 12,
+      'bx--col-lg-8 bx--offset-lg-4': cols === 8,
+      'bx--col-lg-6 bx--col-md-6 bx--offset-lg-4': cols === 6,
+      'bx--col-lg-4 bx--offset-lg-4': cols === 4,
     });
     const imgComponentClasses = classnames('image-component', className, {
       'no-caption': caption === undefined,

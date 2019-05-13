@@ -33,7 +33,7 @@ export default class ColorBlock extends React.Component {
     }
   };
 
-  renderHex(showhex, hex) {
+  static renderHex(showhex, hex) {
     let hexLabel = '';
     if (showhex) {
       hexLabel = hex;
@@ -60,7 +60,7 @@ export default class ColorBlock extends React.Component {
 
     return (
       <div className="color-block">
-        {this.renderHex(showhex, hex)}
+        {ColorBlock.renderHex(showhex, hex)}
         <span className={colorBlockClassnames} style={colorBlockStyles} />
       </div>
     );
