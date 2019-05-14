@@ -64,13 +64,19 @@ class ImageComponent extends Component {
     const {
       caption,
       children,
-      cols,
       border,
       className,
       fixed,
       bg,
       zoom,
     } = this.props;
+
+    let { cols } = this.props;
+
+    if (typeof cols === 'string') {
+      cols = parseInt(cols, 10);
+    }
+
     const columnClasses = classnames({
       [`${prefix}--col-lg-12 ${prefix}--offset-lg-4`]: cols === 12,
       [`${prefix}--col-lg-8 ${prefix}--offset-lg-4`]: cols === 8,
