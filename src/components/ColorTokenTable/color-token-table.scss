@@ -36,7 +36,7 @@
     max-width: 73.1%;
   }
   @media all and (max-width: 1280px) {
-    max-width: 72.75%;
+    max-width: 72.98%;
   }
   @media all and (max-width: 1055px) {
     max-width: calc(100% - 32px);
@@ -115,15 +115,18 @@ h3.page-h3--sticky {
   display: block;
   width: rem(48px);
   height: rem(48px);
+  border-radius: rem(48px);
 
   @media all and (max-width: 672px) {
     width: rem(32px);
     height: rem(32px);
+    border-radius: rem(32px);
   }
 
   @media all and (max-width: 580px) {
     width: rem(48px);
     height: rem(48px);
+    border-radius: rem(48px);
   }
 }
 
