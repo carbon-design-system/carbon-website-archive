@@ -209,10 +209,7 @@ function createIconSections(icons, filteredIcons) {
       if (!Array.isArray(groups[size])) {
         return false;
       }
-      if (groups[size].length === 0) {
-        return false;
-      }
-      return true;
+      return groups[size].length !== 0;
     })
     .map(size => (
       <section key={size} className="icon-size">
