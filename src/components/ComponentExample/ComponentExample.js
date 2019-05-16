@@ -303,7 +303,7 @@ class ComponentExample extends Component {
         <div className="component-toolbar">
           <div className="component-toolbar__current">Vanilla JS</div>
           <div className="component-toolbar__links">
-            {hasReactVersion === true && experimental != true && (
+            {hasReactVersion === true && experimental !== true && (
               <a
                 href={`http://react.carbondesignsystem.com/?selectedKind=${componentNameLink}`}
                 target="_blank"
