@@ -10,7 +10,7 @@ export default class ColorBlock extends React.Component {
     showhex: PropTypes.bool,
   };
 
-  renderHex(showhex, hex) {
+  static renderHex(showhex, hex) {
     let hexLabel = '';
     if (showhex) {
       hexLabel = hex;
@@ -20,7 +20,8 @@ export default class ColorBlock extends React.Component {
 
   render() {
     const hex = this.props.children;
-    const showhex = this.props.showhex == 'true' || this.props.showhex == true;
+    const showhex =
+      this.props.showhex === 'true' || this.props.showhex === true;
 
     const colorBlockClassnames = classnames({
       'color-block__color': true,
@@ -32,7 +33,7 @@ export default class ColorBlock extends React.Component {
 
     return (
       <div className="color-block">
-        {this.renderHex(showhex, hex)}
+        {ColorBlock.renderHex(showhex, hex)}
         <span className={colorBlockClassnames} style={colorBlockStyles} />
       </div>
     );
