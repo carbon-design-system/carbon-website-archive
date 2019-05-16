@@ -1,17 +1,10 @@
 ---
-label: IBM’s icons are visual symbols used to represent ideas, objects, or actions. They communicate messages at a glance, afford interactivity, and draw attention to important information.
+label: Icons are visual symbols used to represent ideas, objects, or actions. They communicate messages at a glance, afford interactivity, and draw attention to important information.
 title: Iconography
-tabs: ['Library', 'Usage', 'Contribution']
+tabs: ['Library', 'Usage', 'Contribute']
 ---
 
-### IBM’s icons are visual symbols used to represent ideas, objects, or actions. They communicate messages at a glance, afford interactivity, and draw attention to important information. They draw from details found in the Plex typeface and work well at small sizes.
-
-<AnchorLinks>
-
-- [Usage for designers](#usage-for-designers)
-- [Usage for developers](#usage-for-developers)
-
-</AnchorLinks>
+### Icons are visual symbols used to represent ideas, objects, or actions. They communicate messages at a glance, afford interactivity, and draw attention to important information.
 
 ## Resources
 
@@ -41,11 +34,11 @@ tabs: ['Library', 'Usage', 'Contribution']
 <br />
 <br />
 
-## Usage for designers
+## Designing with icons
 
 ### Sizing
 
-UI icons that appear within Carbon components are generally 16 px squares, however icons sized at 20 px, 24 px, and 32 px can be also used within the UI. Icons should only be used at their original sizes and not resized in code.
+Carbon components typically use icons on 16px artboards. Icons on 20px, 24px, and 32px artboards can also be used within the UI. Be sure icon size is consistent throughout your product.
 
 <ImageComponent  cols="12">
 
@@ -53,7 +46,7 @@ UI icons that appear within Carbon components are generally 16 px squares, howev
 
 </ImageComponent>
 
-<ImageComponent cols="12" caption="16 px and 20 px icons are optimized to feel balanced when paired with 14pt and 16pt IBM Plex. Use 24 px and 32 px when larger icons are needed.">
+<ImageComponent cols="12" caption="16px and 20px icons are optimized to feel balanced when paired with 14pt and 16pt IBM Plex. Use 24px and 32px when larger icons are needed.">
 
 ![icon alignment](images/iconography-usage-sizing-2.svg)
 
@@ -80,9 +73,9 @@ UI icons that appear within Carbon components are generally 16 px squares, howev
 
 ### Touch targets
 
-All touch targets for interactive icons need to be 44 px or larger. Developers can add padding to a touch target with CSS to meet the 44 px requirement.
+All touch targets for interactive icons need to be 44px or larger. Developers can add padding to a touch target with CSS to meet the 44px requirement.
 
-<ImageComponent  cols="4" caption="The menu button that is also a touch target may have a 20px x 20px icon centered in a 48px x 48px button.">
+<ImageComponent  cols="4" caption="The menu button that is also a touch target may have a 20px ✕ 20px icon centered in a 48px ✕ 48px button.">
 
 ![touch target padding](images/iconography-usage-padding-6.svg)
 
@@ -136,69 +129,25 @@ When used next to text, icons should be center-aligned.
 </Column>
 </Row>
 
-## Usage for developers
+## Developing with icons
 
-### Using SVG sprite (recommended)
+### SVG Icons
 
 #### Requirements:
 
-- Install `carbon-icons`
+Install `carbon-icons`.
 
-<p>Full installation details can be found in the <a href="https://github.com/ibm/carbon-icons" target="blank">Carbon icons GitHub repo.</a></p>
-
-### Using SVG sprite from static assets (recommended)
-
-Use the SVG sprite (**carbon-icons.svg**) by serving it as a static asset.
-Then reference the SVG icon you want to display using a path to the SVG sprite file.
-To use SVG sprite files, they **must** be distributed through a web server and while using `svgxuse`.
-
-```html
-<!-- From static assets  -->
-<svg>
-  <use xlink:href="/path_to_static-assets/carbon-icons.svg#icon_name"></use>
-</svg>
-```
-
-`path_to_static-assets` is the path to your static assets where `carbon-icons.svg` is located.
-
-`icon_name` is the icon name, which will display the corresponding icon. Refer to the [iconography library](/guidelines/iconography) page for a full list of icon names.
-
-### CSS
-
-You can override size and color with CSS.
-
-```html
-<svg class="icon">
-  <use xlink:href="/path_to_static-assets/carbon-icons.svg#icon_name"></use>
-</svg>
-```
-
-```css
-.icon {
-  width: 24px;
-  height: 24px;
-  fill: red;
-}
-```
-
-All icons in the library are standardized so that they do not include `stroke` or internal spacing (`padding`).
-
-### Inline SVG
-
-If you're unable to use the recommended SVG sprite or `svgxuse`, you can inline SVG directly into your HTML.
-
-Visit carbon-icons and browse the svg folder for any icons you want to use. (Remember, svg subfolders contain deprecated icons. Don't use these.)
+Full installation details can be found in the Carbon icons [GitHub repo](https://github.com/carbon-design-system/carbon-icons).
 
 ### Main files
 
-Carbon icons ship with two main SVG files that contain different sets of external SVG sprite files:
+`carbon-icons` ships with two main SVG files:
 
 | Filename          | Description                                                                                             | Supported versions  |
 | ----------------- | ------------------------------------------------------------------------------------------------------- | ------------------- |
 | _carbon-icons.svg_  | Contains current icons (consolidated subset of legacy icons used in IBM Bluemix)                        | `3.x` & newer     |
 | _carbon-icons.json_ | JSON file created from carbon-icons.svg, used in [Carbon](/guidelines/iconography/library)              | `3.x` & newer     |
 | _carbon-icons.js_   | JS module created from carbon-icons.svg, used in `Icon` React Component in [carbon-components-react](#) | `3.x` & newer     |
-| _sprite.svg_       | SVG sprite contains legacy icons                                                                        | `1.x`,`2.x`&`3.x` |
 | _icons.json_       | legacy JSON file created from sprite.svg                                                                | `1.x`,`2.x`&`3.x` |
 | _legacy-icons.js_  | JS module created from sprite.svg                                                                       | `3.x` only          |
 
