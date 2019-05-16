@@ -17,7 +17,7 @@ export default class Carousel extends React.Component {
 
     this.state = {
       checkedRadio: 1,
-      autoplay: this.props.autoplay ? true : false,
+      autoplay: !!this.props.autoplay,
       items: numArr,
     };
   }
@@ -198,8 +198,7 @@ export default class Carousel extends React.Component {
 
   render() {
     const { children, id, nav, fade } = this.props;
-    const imgArr = this.state.items.map((i, x) => {
-      const index = x;
+    const imgArr = this.state.items.map((i, index) => {
       return children[index].props;
     });
 
