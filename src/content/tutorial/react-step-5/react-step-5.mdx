@@ -4,8 +4,9 @@ title: Deploying to IBM Cloud
 
 <AnchorLinks>
 
-- add
-- anchor links
+- [Create manifest file](#create-manifest-file)
+- [Create static file](#create-static-file)
+- [Deploy](#deploy)
 
 </AnchorLinks>
 
@@ -13,15 +14,24 @@ title: Deploying to IBM Cloud
 
 [Create an IBM Cloud account](https://cloud.ibm.com/registration) if you don't already have one.
 
+### Build for production
+
+Before we deploy our app, we need create an optimized production build
+
+```bash
+yarn build
+```
+
 ### Create manifest file
 
-Create `manifest.yml` in the root of the project.
+Create a `manifest.yml` file in the root of the project.
 
 ```bash
 ---
+---
 applications:
   - name: carbon-tutorial
-    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    memory: 64M
 ```
 
 ### Create static file
@@ -46,10 +56,10 @@ Deploy app
 cf push -f manifest.yml
 ```
 
-Add deploy script to `package.json` file for easy deployment
+You can add a script to your `package.json` file to combine your build and deploy steps
 
 ```bash
 "deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml"
 ```
 
-Run `yarn deploy`
+Next time you want to deploy, you can simply run `yarn deploy`
