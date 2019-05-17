@@ -24,14 +24,16 @@ yarn build
 
 ### Create manifest file
 
-Create a `manifest.yml` file in the root of the project.
+Create a `manifest.yml` file in the root of the project. You'll need to add your `REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN` here.
 
 ```bash
----
 ---
 applications:
   - name: carbon-tutorial
     memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    env:
+    REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN: xxxXXX
 ```
 
 ### Create static file
