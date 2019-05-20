@@ -171,6 +171,14 @@ em {
   margin-left: 0 !important;
 }
 
+.bx--iframe {
+  width: 100%;
+
+  &--border {
+    border: 1px solid $ui-03;
+  }
+}
+
 //images
 .gatsby-resp-image-wrapper {
   // background: $ui-02;
