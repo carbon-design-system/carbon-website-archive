@@ -1,0 +1,91 @@
+---
+title: Building with grid
+internal: false
+---
+
+<AnchorLinks>
+
+- [Install grid](#install-grid)
+- [Add landing page grid](#add-landing-page-grid)
+- [Add landing page content](#add-landing-page-content)
+- [Add landing page styles](#add-landing-page-styles)
+- [Add repo page grid](#add-repo-page-grid)
+- [Add repo page content](#add-repo-page-content)
+- [Add repo page styles](#add-repo-page-styles)
+- [Submit pull request](#submit-pull-request)
+
+</AnchorLinks>
+
+## Introduction
+
+In this step, we'll be wiring up our application to connect with the [Github GraphQL API](https://developer.github.com/v4/). To do so, we'll be using Apollo Client, the front end component of the [Apollo Platform](https://www.apollographql.com/docs/intro/platform).
+
+The Apollo platform provides several open source tools for using GraphQL throughout your application's stack. Apollo Client is a sophisticated GraphQL client that manages data and state in an application.
+
+## Install new dependancies
+
+We need a few dependancies to incorporate Apollo into our application
+
+```bash
+yarn add apollo-boost graphql react-apollo
+```
+
+1. `apollo-boost` – Package containing everything you need to set up Apollo Client
+
+1. `graphql` – parses your GraphQL queries
+
+1. `react-apollo` – Apollo integration for React
+
+## Get a personal access token from github
+
+You'll need a personal access token from your github account in order to make requests to their API. Check out [this guide](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) to see how to get one.
+
+When you get to the scope/permissions step, you can leave them all unchecked. We don't need any special permissions, we just need access to the public API.
+
+Once you have your token, we need to put it in a place where create-react-app can use it. When your application is being built and developed, create-react-app will parse environmental variables in any file that ends with `.env` and make them available under `process.env.MY_VARIABLE`.
+
+One caveat is that we need to start our variables with `REACT_APP_`. You can read more about environmental variables in [create-react-app's guide](https://facebook.github.io/create-react-app/docs/adding-custom-environment-variables).
+
+Since we don't want to commit this file to git, we can put it in `.local.env` which is in our `.gitignore` list. Your file should just have a single line like this one, where the `x`s are replaced with your unique token.
+
+```
+REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN=xxxxxx
+```
+
+If you have your project running, you'll need to restart it to get access to this token.
+
+## Connect to Apollo
+
+The `react-apollo` library gives us an component that we need to put at the base of our application. Typically the best place for things that need to wrap the entire application is at the root of the application. For us, that's at `src/index.js`.
+
+In our index.js, lets add the two imports we'll need Apollo to the GitHub API.
+
+```javascript
+import ApolloClient from 'apollo-boost';
+import { ApolloProvider } from 'react-apollo';
+```
+
+Next, we'll make our client by providing a uri for the github graphql API as well as an authorization header using the environmental variable we just added to `.local.env`
+
+```javascript
+const client = new ApolloClient({
+  uri: 'https://api.github.com/graphql',
+  headers: {
+    authorization: `Bearer ${
+      process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN
+    }`,
+  },
+});
+```
+
+We can make a new, `Root` component to pass into `ReactDOM.render` so that it's clear what's wrapping our application. At the same time, we'll pass in the client we just made as a prop to the `ApolloProvider` component.
+
+```javascript
+const Root = () => (
+  <ApolloProvider client={client}>
+    <App />
+  </ApolloProvider>
+);
+
+ReactDOM.render(<Root />, document.getElementById('root'));
+```
