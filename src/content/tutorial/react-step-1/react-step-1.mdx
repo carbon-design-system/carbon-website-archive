@@ -1,12 +1,12 @@
 ---
-title: Installing Carbon
+title: 1. Installing Carbon
 internal: false
 ---
 
 <AnchorLinks>
 
 - [Fork, clone & branch](#fork-clone--branch)
-- [Build & test app](#build--test-app)
+- [Build & start](#build--start)
 - [Install Carbon](#install-carbon)
 - [Install & build Sass](#install--build-sass)
 - [Add UI Shell](#add-ui-shell)
@@ -18,11 +18,25 @@ internal: false
 
 ## Introduction
 
-This step starts with an existing React app created with [create-react-app](https://github.com/facebook/create-react-app), installs Carbon and begins to use Carbon components. By the end of this step you will have a React app that uses the UI Shell to navigate between pages.
+This step starts with an existing React app created with [create-react-app](https://github.com/facebook/create-react-app), installs Carbon and begins to use Carbon components. By the end of this step you will have a React app that uses the UI Shell to navigate between pages. A [preview](https://react-step-2--carbon-tutorial.netlify.com) of what you will build:
+
+<Row>
+  <Column offsetLg="4">
+    <iframe
+      height="200"
+      title="Carbon Tutorial Step 1"
+      src="https://react-step-2--carbon-tutorial.netlify.com"
+      frameborder="no"
+      allowtransparency="true"
+      allowfullscreen="true"
+      class="bx--iframe bx--iframe--border"
+    />
+  </Column>
+</Row>
 
 ## Fork, clone & branch
 
-This tutorial has an accompanying GitHub repository called [carbon-tutorial](https://github.com/carbon-design-system/carbon-tutorial) that we'll use as a starting point for each step along the way.
+This tutorial has an accompanying GitHub repository called [carbon-tutorial](https://github.com/carbon-design-system/carbon-tutorial) that we'll use as a starting point for each step.
 
 ### Fork
 
@@ -62,14 +76,14 @@ upstream	git@github.com:carbon-design-system/carbon-tutorial.git (push)
 
 ### Branch
 
-Now that we have our repository set up, let's checkout the branch for this tutorial step's starting point. Run the two commands:
+Now that we have our repository set up, let's check out the branch for this tutorial step's starting point. Run the two commands:
 
 ```bash
 $ git fetch upstream
 $ git checkout -b react-step-1 upstream/react-step-1
 ```
 
-## Build & test app
+## Build & start
 
 We have the repository forked to your GitHub account, cloned down to your machine, and the starting branch checked out. Next, install the React app's dependencies with:
 
@@ -84,10 +98,6 @@ yarn start
 ```
 
 Your default browser should open up with an empty page that says: `Hello Carbon! Well, not quite yet. This is the starting point for the Carbon tutorial.`
-
-In a separate console, run `yarn test` to run the initial tests. When prompted for a watch mode, you can press `a` to run all tests when the app's source code is updated.
-
-You'll see failing tests. Don't worry - we'll make those tests pass as we build our app.
 
 ## Install Carbon
 
@@ -135,7 +145,7 @@ Because any change to `index.scss` will re-compile all of the Carbon Sass, creat
 import './app.scss';
 ```
 
-To optimize our Sass compile time, we'll be adding app-specific styling to `app.scss` and only modifying `index.scss` when necessary.
+_Note: To optimize our Sass compile time, we'll be adding app-specific styling to `app.scss` and only modifying `index.scss` when necessary._
 
 Next we'll import a `<Button/>` from Carbon to test that our dependencies are working properly. At the top of `src/App.js`, import the `<Button/>` by adding the following:
 
@@ -143,7 +153,7 @@ Next we'll import a `<Button/>` from Carbon to test that our dependencies are wo
 import Button from 'carbon-components-react/lib/components/Button/Button';
 ```
 
-We want to import the exact path of the component instead of the entire package in order to minimize our import cost.
+_Note: We want to import the exact path of the component instead of the entire package in order to minimize our import cost._
 
 In the `App` component return, you can now replace:
 
@@ -169,11 +179,10 @@ Congratulations, you've imported your first component! You should see a Carbon s
 
 _Note: The UI Shell has experimental status at the moment. We do not recommend using it for production until it is stable, but if doing so, know that there may be breaking changes in the future._
 
-If you remember from running `yarn test` at the beginning of this tutorial, our tests are failing from missing a `<TutorialHeader/>` component. We will be creating our `<TutorialHeader/>` component in our `src/components/TutorialHeader` folder. Create the following inside `src/components/TutorialHeader`:
+Next we're going to create a React component called `<TutorialHeader/>` to use with the UI Shell Carbon component. In the `src` directory, create a `components` directory and inside of that, a `TutorialHeader` directory. Create the following files inside `src/components/TutorialHeader`:
 
 ```bash
 src/components/TutorialHeader
-├──__tests__
 ├──index.js
 ├──TutorialHeader.js
 └──tutorial-header.scss
@@ -246,7 +255,7 @@ export default TutorialHeader;
 
 _Note: you can find a description of the different components used UI Shell in our [carbon-componets-react](https://github.com/carbon-design-system/carbon-components-react/tree/master/src/components/UIShell) repo._
 
-When creating navigation headers, it's important to have a `Skip to content` link for accessibility. This allows keyboard users to skip the navigation items and go straight to the main content.
+_Note: When creating navigation headers, it's important to have a `Skip to content` link for accessibility. This allows keyboard users to skip the navigation items and go straight to the main content._
 
 Another important thing to notice is that we're using [React Fragment](https://reactjs.org/docs/fragments.html) to return the header components. This is because we will later be rendering `<TutorialHeader/>` in `App.js` as a sibling of `<Content/>`, which is another UI Shell component. `<Content/>` is meant to be a sibling of the `<Header/>` component that we're returning in `<TutorialHeader/>`. If these two aren't siblings, the `<Content/>` elements will not be rendered directly below the UI Shell. By using React Fragment, we're rendering these two components as siblings. Another way to fix this would be to render these in the same file, or offsetting the `<Content/>` margin to be below the UI Shell.
 
@@ -417,8 +426,10 @@ $ yarn start
 First, we need to wrap our app in the `<Router />` component. In `index.js`, add the import:
 
 ```javascript
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 ```
+
+_Note: We're using `HashRouter` instead of `BrowserRouter` to simplify deployments in upcoming tutorial steps. Learn more about the React Router [here](https://reacttraining.com/react-router/web/api/BrowserRouter)._
 
 Then, update the `render()` function to include the `<Router />`.
 
@@ -454,7 +465,7 @@ Now inside `<Content/>` we'll add the following:
 ```
 <!-- prettier-ignore-end -->
 
-At this point you can switch between the landing and repo pages, but there is still a hard page reload in doing so. We need to do a couple quick fixes to the UI Shell to have it work better with React router.
+After that we need to do a couple quick fixes to the UI Shell to have it work with the React router.
 
 Add the `Link` import in `src/components/TutorialHeader/TutorialHeader.js`:
 
@@ -482,32 +493,30 @@ You should now have a working header that routes to different pages without full
 
 We're going to submit a pull request to verify completion of this tutorial step and demonstrate a couple related concepts.
 
-### Continuous integration check
+### Continuous integration (CI) check
 
-We have a `ci-check` script defined in `package.json` that does a few things. First, it formats files that have been touched since the last Git commit with a tool called Prettier. Then, it runs the `react-scripts test` command that uses Jest under the hood. Run that command:
+We have a `ci-check` script defined in `package.json` that formats files that have been touched since the last Git commit with a tool called [Prettier](https://prettier.io). You'd typically also have that script run your test suite as part of your CI build, but that's not a focus of this tutorial. Go ahead and make sure everything looks good with:
 
 ```bash
 $ yarn ci-check
 ```
 
-Make sure that all tests pass by selecting `a` in Jest's interactive watch mode and once all tests pass, exit the command-line interface with `q`.
+### Git commit & push
 
-**TODO**: add instructions to update snapshots if they are failing.
-
-### Git commit
-
-After everything looks good, stage and commit all of your changes with:
+Before we can create a pull request, stage and commit all of your changes:
 
 ```bash
 $ git add --all && git commit -m "feat(tutorial): complete step 1"
 ```
 
-Push to your repository:
+Then, push to your repository:
 
 ```bash
 $ git push origin react-step-1
 ```
 
-Finally, visit [carbon-tutorial](https://github.com/carbon-design-system/carbon-tutorial) to "Compare & pull request". In doing so, make sure that you are comparing to `react-step-1` into `base: react-step-1`.
+### Pull request (PR)
 
-**TODO**: screenshots, PR name, body, how CI checks work, how Netlify works, submitting PR.
+Finally, visit [carbon-tutorial](https://github.com/carbon-design-system/carbon-tutorial) to "Compare & pull request". In doing so, make sure that you are comparing to `react-step-1` into `base: react-step-1`. Take notice of the [Netlify](https://www.netlify.com) bot that deploys a preview of your PR every time that you push new commits. These previews can be shared and viewed by anybody to assist the PR review process.
+
+_Note: Expect your tutorial step PRs to be reviewed by the Carbon team but not merged. We'll close your PR so we can keep the repository's remote branches pristine and ready for the next person!_
