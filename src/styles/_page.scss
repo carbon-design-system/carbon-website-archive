@@ -79,6 +79,10 @@ em {
   }
 
   // Inline code
+  code {
+    font-family: $font-family-mono;
+  }
+
   p > code,
   li > code,
   td > code {

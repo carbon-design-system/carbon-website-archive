@@ -22,6 +22,8 @@ $feature-flags: (
 @import 'carbon-components/scss/globals/scss/styles.scss';
 
 $font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+$font-family-mono: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono',
+  'Bitstream Vera Sans Mono', Courier, monospace;
 
 //---------------------------------------
 // Page styles
