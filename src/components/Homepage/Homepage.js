@@ -10,7 +10,7 @@ export class HomepageHeader extends React.Component {
 
   render() {
     const { GATSBY_CARBON_ENV } = process.env;
-    const isInternal = GATSBY_CARBON_ENV == 'internal';
+    const isInternal = GATSBY_CARBON_ENV === 'internal';
 
     const homeTitle = isInternal ? (
       <h3 className="homepage--header__title">
