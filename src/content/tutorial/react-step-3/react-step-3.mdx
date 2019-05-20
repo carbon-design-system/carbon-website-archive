@@ -5,14 +5,11 @@ internal: false
 
 <AnchorLinks>
 
-- [Install grid](#install-grid)
-- [Add landing page grid](#add-landing-page-grid)
-- [Add landing page content](#add-landing-page-content)
-- [Add landing page styles](#add-landing-page-styles)
-- [Add repo page grid](#add-repo-page-grid)
-- [Add repo page content](#add-repo-page-content)
-- [Add repo page styles](#add-repo-page-styles)
-- [Submit pull request](#submit-pull-request)
+- [Introduction](#install-grid)
+- [Installing new dependancies](#add-landing-page-grid)
+- [Github Personal Access Token](#add-landing-page-content)
+- [Data Fetching Component](#data-fetching-component)
+- [Presentational Component](#presentational-component)
 
 </AnchorLinks>
 
@@ -22,7 +19,7 @@ In this step, we'll be wiring up our application to connect with the [Github Gra
 
 The Apollo platform provides several open source tools for using GraphQL throughout your application's stack. Apollo Client is a sophisticated GraphQL client that manages data and state in an application.
 
-## Install new dependancies
+## Installing new dependancies
 
 We need a few dependancies to incorporate Apollo into our application
 
@@ -36,7 +33,7 @@ yarn add apollo-boost graphql react-apollo
 
 1. `react-apollo` – Apollo integration for React
 
-## Get a personal access token from github
+## Github Personal Access Token
 
 You'll need a personal access token from your github account in order to make requests to their API. Check out [this guide](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) to see how to get one.
 
@@ -83,9 +80,200 @@ We can make a new, `Root` component to pass into `ReactDOM.render` so that it's 
 ```javascript
 const Root = () => (
   <ApolloProvider client={client}>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </ApolloProvider>
 );
 
 ReactDOM.render(<Root />, document.getElementById('root'));
 ```
+
+## Data Fetching Component
+
+### Imports
+
+At the top of the page, we'll need to import the components necessary for loading our data and rendering loading states.
+
+```
+import React, { useState } from 'react';
+import { gql } from 'apollo-boost';
+import { Query } from 'react-apollo';
+import DataTable from './RepoTable';
+import { Pagination, Link, DataTableSkeleton } from 'carbon-components-react';
+```
+
+### The Query
+
+Next we'll assemble our graphql query to fetch only the data we need from the graphql API. We'll do this using the `gql` helper we just imported. The `gql` helper lets you write GraphQL queries using interpolated strings (backticks) in javascript. In addition, we'll be using the Query component from `react-apollo` which uses gives us some great information about our query's loading state in addition to the data.
+
+If you'd like some more information regarding writing queries and using the Query component, I recommend [Apollo's documentation](https://www.apollographql.com/docs/tutorial/queries) on this topic.
+
+```javascript
+const REPO_QUERY = gql`
+  query REPO_QUERY {
+    # Let's use carbon as our organization
+    organization(login: "carbon-design-system") {
+      # We'll grab all the repositories in one go. To load more resources
+      # continuously, see the advanced topics.
+      repositories(first: 75, orderBy: { field: UPDATED_AT, direction: DESC }) {
+        totalCount
+        nodes {
+          url
+          homepageUrl
+          issues(filterBy: { states: OPEN }) {
+            totalCount
+          }
+          stargazers {
+            totalCount
+          }
+          releases(first: 1) {
+            totalCount
+            nodes {
+              name
+            }
+          }
+          name
+          updatedAt
+          createdAt
+          description
+          id
+        }
+      }
+    }
+  }
+`;
+```
+
+### Helpers
+
+Below that, we'll define our table headers so they can be used both in the `DataTableSkeleton` and eventually the `DataTable` once we get our data. In addition, we'll define a `LinkList` component and a `getRowItems` helper that uses it to only pass down the rows
+
+```js
+const headers = [
+  {
+    key: 'name',
+    header: 'Name',
+  },
+  {
+    key: 'createdAt',
+    header: 'Created',
+  },
+  {
+    key: 'updatedAt',
+    header: 'Updated',
+  },
+  {
+    key: 'issueCount',
+    header: 'Open Issues',
+  },
+  {
+    key: 'stars',
+    header: 'Stars',
+  },
+  {
+    key: 'links',
+    header: 'Links',
+  },
+];
+
+const LinkList = ({ url, homepageUrl }) => (
+  <ul style={{ display: 'flex' }}>
+    <li>
+      <Link href={url}>GitHub</Link>
+    </li>
+    {homepageUrl && (
+      <li>
+        <span>&nbsp;|&nbsp;</span>
+        <Link href={homepageUrl}>Homepage</Link>
+      </li>
+    )}
+  </ul>
+);
+
+const getRowItems = rows =>
+  rows.map(row => ({
+    ...row,
+    key: row.id,
+    stars: row.stargazers.totalCount,
+    issueCount: row.issues.totalCount,
+    createdAt: new Date(row.createdAt).toLocaleDateString(),
+    updatedAt: new Date(row.updatedAt).toLocaleDateString(),
+    links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
+  }));
+```
+
+### The `RepoPage` component
+
+For the primary component, we'll be using [React Hooks](https://reactjs.org/docs/hooks-intro.html) too manage our state. Hooks are a relatively new React API that allows us to author a react component's stateful logic in a function component rather than a class component. Using hooks means we don't need to worry about complex lifecycle methods.
+
+```jsx
+const RepoPage = () => {
+  const [totalItems, setTotalItems] = useState(0);
+  const [firstRowIndex, setFirstRowIndex] = useState(0);
+  const [currentPageSize, setCurrentPageSize] = useState(10);
+
+  return (
+    <div className="repo-page">
+      <Query query={REPO_QUERY}>
+        {({ loading, error, data: { organization }, fetchMore }) => {
+          // Waiting for the request to complete
+          if (loading)
+            return (
+              <DataTableSkeleton
+                columnCount={headers.length + 1}
+                rowCount={12}
+                headers={headers}
+              />
+            );
+
+          // Something went wrong with the data fetching
+          if (error) return `Error! ${error.message}`;
+
+          // If we're here, we've got our data!
+          const { repositories } = organization;
+          setTotalItems(repositories.totalCount);
+
+          // This is where we use our helper to turn our data into
+          // the items we want rendered in our table cells.
+          const rows = getRowItems(repositories.nodes);
+
+          // Finally, let's return our Table and the corresponding Pagination component
+          return (
+            <>
+              <DataTable
+                headers={headers}
+                rows={rows.slice(
+                  firstRowIndex,
+                  firstRowIndex + currentPageSize
+                )}
+              />
+              <Pagination
+                totalItems={totalItems}
+                backwardText="Previous page"
+                forwardText="Next page"
+                pageSize={currentPageSize}
+                pageSizes={[5, 10, 15, 25]}
+                itemsPerPageText="Items per page"
+                onChange={({ page, pageSize }) => {
+                  if (pageSize !== currentPageSize) {
+                    setCurrentPageSize(pageSize);
+                  }
+                  setFirstRowIndex(pageSize * (page - 1));
+                }}
+              />
+            </>
+          );
+        }}
+      </Query>
+    </div>
+  );
+};
+```
+
+### Data Fetching Notes
+
+- We only pass the rows that we want our table to display, we can do this by slicing the our array of rows depending on the first item and the page size.
+
+- The Pagination component isn't inherently connected in any way to the
+  DataTable, we need to tell it what to do when a change occurs using the onChange prop. This includes both page size changes and displaying different rows.
