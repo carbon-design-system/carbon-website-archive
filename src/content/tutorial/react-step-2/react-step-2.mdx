@@ -59,17 +59,29 @@ $ yarn
 Then, start the app:
 
 ```bash
-yarn start
+$ yarn start
 ```
 
 You should see something similar to where the [previous step](/tutorial/react-step-1) left off.
+
+### IE11 polyfills
+
+Before we get started with this step, we'll be adding some components that require IE11 polyfills. As shown in the [Carbon React documentation](https://github.com/carbon-design-system/carbon/blob/master/packages/react/.storybook/polyfills.js), go ahead and add these imports to the top of the root `index.js`. They aren't all needed, but we'll add them all to play it safe for the duration of the tutorial.
+
+```javascript
+import 'core-js/modules/es7.array.includes';
+import 'core-js/modules/es6.array.fill';
+import 'core-js/modules/es6.string.includes';
+import 'core-js/modules/es6.string.trim';
+import 'core-js/modules/es7.object.values';
+```
 
 ## Install grid
 
 In our last step we added our styles, component and icon packages. Now that we're building the pages with grid, we need to install one more Carbon package. Stop your development environment (`CTRL-C`) and:
 
 ```bash
-yarn add @carbon/grid
+$ yarn add @carbon/grid
 ```
 
 In `index.scss`, we need to configure our grid to use 16 columns instead of the default 12 columns. We do this by adding
@@ -107,10 +119,10 @@ return (
       <div className="bx--col-lg-8">1/2</div>
     </div>
     <div className="bx--row landing-page__r3">
-      <div className="bx--col-lg-4">1/4</div>
-      <div className="bx--col-lg-4">1/4</div>
-      <div className="bx--col-lg-4">1/4</div>
-      <div className="bx--col-lg-4">1/4</div>
+      <div className="bx--col-md-4 bx--col-lg-4">1/4</div>
+      <div className="bx--col-md-4 bx--col-lg-4">1/4</div>
+      <div className="bx--col-md-4 bx--col-lg-4">1/4</div>
+      <div className="bx--col-md-4 bx--col-lg-4">1/4</div>
     </div>
   </div>
 );
@@ -182,84 +194,89 @@ Modify the second row to use the `<Tab/>` component.
 
 ```html
 <div className="bx--row landing-page__r2">
-  <Tabs {...props.tabs}>
-    <Tab {...props.tab} label="About">
-      <div className="bx--row landing-page__tab-content">
-        <div className="bx--col-lg-8">1/2</div>
-        <div className="bx--col-lg-8">1/2</div>
-      </div>
-    </Tab>
-    <Tab {...props.tab} label="Design">
-      <div className="bx--row landing-page__tab-content">
-        <div className="bx--col-lg-16">
-          Rapidly build beautiful and accessible experiences. The Carbon kit
-          contains all resources you need to get started.
+  <div className="bx--col bx--no-gutter">
+    <Tabs {...props.tabs}>
+      <Tab {...props.tab} label="About">
+        <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
+          <div className="bx--row landing-page__tab-content">
+            <div className="bx--col-lg-8">1/2</div>
+            <div className="bx--col-lg-8">1/2</div>
+          </div>
         </div>
-      </div>
-    </Tab>
-    <Tab {...props.tab} label="Develop">
-      <div className="bx--row landing-page__tab-content">
-        <div className="bx--col-lg-16">
-          Carbon provides styles and components in Vanilla, React, Angular, and
-          Vue for anyone building on the web.
+      </Tab>
+      <Tab {...props.tab} label="Design">
+        <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
+          <div className="bx--row landing-page__tab-content">
+            <div className="bx--col-lg-16">
+              Rapidly build beautiful and accessible experiences. The Carbon kit
+              contains all resources you need to get started.
+            </div>
+          </div>
         </div>
-      </div>
-    </Tab>
-  </Tabs>
+      </Tab>
+      <Tab {...props.tab} label="Develop">
+        <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
+          <div className="bx--row landing-page__tab-content">
+            <div className="bx--col-lg-16">
+              Carbon provides styles and components in Vanilla, React, Angular,
+              and Vue for anyone building on the web.
+            </div>
+          </div>
+        </div>
+      </Tab>
+    </Tabs>
+  </div>
 </div>
 ```
 
-After doing so, add this declaration block to `landing-page.scss`. We need to move the tabs to the right, make sure that the tab contain is full width, and adjust margins since we are nesting `bx--row`.
+We'll need to add a styling override to move the tabs to the right on large viewports. For that, in `app.scss`, add the breakpoint import at the **top** of the file before we import `landing-page.scss`.
 
 ```scss
-.landing-page__r2 {
-  // right-align tabs
-  .bx--tabs {
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/_breakpoint.scss';
+```
+
+Then in `src/content/LandingPage/landing-page.scss` add this declaration block.
+
+```scss
+@include carbon--breakpoint(md) {
+  // right justify tab component
+  .landing-page__r2 .bx--tabs {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
   }
 
-  // full width tabs trigger small viewports
-  .bx--tabs-trigger {
-    width: 100%;
-  }
-
-  // full-width tab content
-  & > div {
-    width: 100%;
-  }
-
-  // reset margins because of the nested row
-  .bx--row {
-    margin-left: 0;
-    margin-right: 0;
+  // IE11 fix for right justification
+  .landing-page__r2 .bx--tabs__nav {
+    right: 0;
   }
 }
 ```
 
-We can now add our images and text for each column in the first `<Tab/>`.
+We can now add our images and text for each column in the first `<Tab/>` in `LandingPage.js`.
 
 <!-- prettier-ignore-start -->
 ```html
-<Tab {...props.tab} label="Tab label 1">
-  <div className="bx--row landing-page__tab-content">
-    <div className="bx--col-lg-8">
-      <strong>What is Carbon?</strong>
-      <p>
-        Carbon is IBM’s open-source design system for digital
-        products and experiences. With the IBM Design Language as
-        its foundation, the system consists of working code, design
-        tools and resources, human interface guidelines, and a
-        vibrant community of contributors.
-      </p>
-      <Button>Learn more</Button>
-    </div>
-    <div className="bx--col-lg-8">
-      <img
-        className="landing-page__illo"
-        src={`${process.env.PUBLIC_URL}/tab-illo.png`}
-        alt="Carbon illustration"
-      />
+<Tab {...props.tab} label="About">
+  <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
+    <div className="bx--row landing-page__tab-content">
+      <div className="bx--col-lg-8">
+        <strong>What is Carbon?</strong>
+        <p>
+          Carbon is IBM’s open-source design system for digital
+          products and experiences. With the IBM Design Language
+          as its foundation, the system consists of working code,
+          design tools and resources, human interface guidelines,
+          and a vibrant community of contributors.
+        </p>
+        <Button>Learn more</Button>
+      </div>
+      <div className="bx--col-lg-8">
+        <img
+          className="landing-page__illo"
+          src={`${process.env.PUBLIC_URL}/tab-illo.png`}
+          alt="Carbon illustration"
+        />
+      </div>
     </div>
   </div>
 </Tab>
@@ -281,13 +298,12 @@ Assuming that the second and third tab would have a similar design, we would set
 The third row will be created in a later tutorial, so we'll just add the headers for now.
 
 ```html
-<div className="bx--row landing-page__r3">
-  <div className="bx--col-lg-4">
+<div className="bx--col-md-4 bx--col-lg-4">
     <strong>The Principles</strong>
   </div>
-  <div className="bx--col-lg-4">Carbon is Open</div>
-  <div className="bx--col-lg-4">1/4</div>
-  <div className="bx--col-lg-4">1/4</div>
+  <div className="bx--col-md-4 bx--col-lg-4">Carbon is Open</div>
+  <div className="bx--col-md-4 bx--col-lg-4">Carbon is Modular</div>
+  <div className="bx--col-md-4 bx--col-lg-4">Carbon is Consistent</div>
 </div>
 ```
 
@@ -358,12 +374,12 @@ For our second row, we need to fix the tabs positioning to match our design spec
 }
 
 .landing-page__r2 p {
-  margin-top: $spacing-08;
+  margin-top: $spacing-06;
   margin-bottom: $spacing-08;
 }
 ```
 
-_Note: By inspecting the tabs component, you can see that the tab height computes to `40px`. We then used that to create our negative top margin in rem units._
+_Note: By inspecting the tabs component, you can see that the tab height computes to_ `40px`_. We then used that to create our negative top margin in rem units._
 
 ### Row three
 
@@ -405,8 +421,8 @@ Now in our `RepoPage.js` we'll add our grid containers in the `return` section.
 
 ```javascript
 return (
-  <div className="bx--grid repo-page">
-    <div className="bx--row">
+  <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
+    <div className="bx--row repo-page__r1">
       <div className="bx--col-lg-16">Data table will go here</div>
     </div>
   </div>
@@ -610,8 +626,8 @@ In `repo-page.scss`, add the following styles:
 
 ```scss
 .repo-page .bx--row {
-  padding-top: $spacing-07;
-  padding-bottom: $spacing-07;
+  padding-top: $spacing-05;
+  padding-bottom: $spacing-05;
 }
 ```
 
@@ -628,6 +644,8 @@ Run the CI check to make sure we're all set to submit a pull request.
 ```bash
 $ yarn ci-check
 ```
+
+_Note: If the_ `ci-check` _is giving an error, it's likely that some of your source files are not properly formatted. This could happen if your text editor isn't formatting with Prettier on save. To get_ `ci-check` _to pass, run_ `yarn format`_ then re-run_ `yarn ci-check`_._
 
 ### Git commit & push
 

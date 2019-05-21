@@ -44,7 +44,7 @@ To begin, fork [carbon-tutorial](https://github.com/carbon-design-system/carbon-
 
 ### Clone
 
-From your forked repository, copy the SSH or HTTPS URL and in your terminal run the two commands to get the repository in your local file system and enter that directory.
+Go to your forked repository, copy the SSH or HTTPS URL and in your terminal run the two commands to get the repository in your local file system and enter that directory.
 
 ```bash
 $ git clone [your fork SSH/HTTPS]
@@ -57,6 +57,12 @@ Add a remote called `upstream` so we can eventually submit a pull request once y
 
 ```bash
 $ git remote add upstream git@github.com:carbon-design-system/carbon-tutorial.git
+```
+
+Or, if you prefer to use HTTPS with your remotes:
+
+```bash
+$ git remote add upstream https://github.com/carbon-design-system/carbon-tutorial.git
 ```
 
 Verify that your forked repository remotes are correct:
@@ -94,7 +100,7 @@ $ yarn
 After the dependencies are installed, you can start the app with:
 
 ```bash
-yarn start
+$ yarn start
 ```
 
 Your default browser should open up with an empty page that says: `Hello Carbon! Well, not quite yet. This is the starting point for the Carbon tutorial.`
@@ -131,7 +137,7 @@ In the `src` directory, rename `index.css` as `index.scss`. Then in `index.js` u
 
 ### Import carbon-component styles
 
-In `index.scss` import Carbon styles by adding:
+In `index.scss`, import the Carbon styles by adding the following at the top of the file:
 
 ```scss
 @import 'carbon-components/scss/globals/scss/styles.scss';
@@ -145,7 +151,7 @@ Because any change to `index.scss` will re-compile all of the Carbon Sass, creat
 import './app.scss';
 ```
 
-_Note: To optimize our Sass compile time, we'll be adding app-specific styling to `app.scss` and only modifying `index.scss` when necessary._
+_Note: To optimize our Sass compile time, we'll be adding app-specific styling to_ `app.scss` _and only modifying_ `index.scss` _when necessary._
 
 Next we'll import a `<Button/>` from Carbon to test that our dependencies are working properly. At the top of `src/App.js`, import the `<Button/>` by adding the following:
 
@@ -196,8 +202,6 @@ In `index.scss` add the following feature-flag **above** the Carbon styles impor
 $feature-flags: (
   ui-shell: true,
 );
-
-@import 'carbon-components/scss/globals/scss/styles.scss';
 ```
 
 This is because our UI Shell is in experimental mode and the styles need to be manually imported.
@@ -213,7 +217,7 @@ Next, in `app.scss`, we'll import our `<TutorialHeader/>` styles. Your file shou
 In `src/components/TutorialHeader/index.js`, import and export our `<TutorialHeader/>` component like so:
 
 ```javascript
-import TutorialHeader from './Header';
+import TutorialHeader from './TutorialHeader';
 export default TutorialHeader;
 ```
 
@@ -255,7 +259,7 @@ export default TutorialHeader;
 
 _Note: you can find a description of the different components used UI Shell in our [carbon-componets-react](https://github.com/carbon-design-system/carbon-components-react/tree/master/src/components/UIShell) repo._
 
-_Note: When creating navigation headers, it's important to have a `Skip to content` link for accessibility. This allows keyboard users to skip the navigation items and go straight to the main content._
+_Note: When creating navigation headers, it's important to have a_ `Skip to content` _link for accessibility. This allows keyboard users to skip the navigation items and go straight to the main content._
 
 Another important thing to notice is that we're using [React Fragment](https://reactjs.org/docs/fragments.html) to return the header components. This is because we will later be rendering `<TutorialHeader/>` in `App.js` as a sibling of `<Content/>`, which is another UI Shell component. `<Content/>` is meant to be a sibling of the `<Header/>` component that we're returning in `<TutorialHeader/>`. If these two aren't siblings, the `<Content/>` elements will not be rendered directly below the UI Shell. By using React Fragment, we're rendering these two components as siblings. Another way to fix this would be to render these in the same file, or offsetting the `<Content/>` margin to be below the UI Shell.
 
@@ -300,7 +304,7 @@ import React, { Component } from 'react';
 import './app.scss';
 import Button from 'carbon-components-react/lib/components/Button/Button';
 import { Content } from 'carbon-components-react/lib/components/UIShell';
-import TutorialHeader from './components/TutorialHeader/TutorialHeader';
+import TutorialHeader from './components/TutorialHeader';
 ```
 
 Our `return` currently just contains a `<Button/>`. Let's update that to include our imported components. This should look like the following:
@@ -423,13 +427,13 @@ $ yarn add react-router-dom
 $ yarn start
 ```
 
-First, we need to wrap our app in the `<Router />` component. In `index.js`, add the import:
+First, we need to wrap our app in the `<Router />` component. In the root `index.js`, add the import:
 
 ```javascript
 import { HashRouter as Router } from 'react-router-dom';
 ```
 
-_Note: We're using `HashRouter` instead of `BrowserRouter` to simplify deployments in upcoming tutorial steps. Learn more about the React Router [here](https://reacttraining.com/react-router/web/api/BrowserRouter)._
+_Note: We're using_ `HashRouter` _instead of_ `BrowserRouter` _to simplify deployments in upcoming tutorial steps. Learn more about the React Router [here](https://reacttraining.com/react-router/web/api/BrowserRouter)._
 
 Then, update the `render()` function to include the `<Router />`.
 
@@ -446,8 +450,8 @@ In order to render our content pages, we need to add the following imports in `A
 
 ```javascript
 import { Route, Switch } from 'react-router-dom';
-import LandingPage from './content/LandingPage/LandingPage';
-import RepoPage from './content/RepoPage/RepoPage';
+import LandingPage from './content/LandingPage';
+import RepoPage from './content/RepoPage';
 ```
 
 This allows us to use our page content components and routing components from `react-router-dom`.
@@ -495,11 +499,13 @@ We're going to submit a pull request to verify completion of this tutorial step 
 
 ### Continuous integration (CI) check
 
-We have a `ci-check` script defined in `package.json` that formats files that have been touched since the last Git commit with a tool called [Prettier](https://prettier.io). You'd typically also have that script run your test suite as part of your CI build, but that's not a focus of this tutorial. Go ahead and make sure everything looks good with:
+We have a `ci-check` script defined in `package.json` that verifies file formatting for files that have been touched since the last Git commit with a tool called [Prettier](https://prettier.io). You'd typically also have that script run your test suite as part of your CI build. Go ahead and make sure everything looks good with:
 
 ```bash
 $ yarn ci-check
 ```
+
+_Note: If the_ `ci-check` _is giving an error, it's likely that some of your source files are not properly formatted. This could happen if your text editor isn't formatting with Prettier on save. To get_ `ci-check` _to pass, run_ `yarn format`_ then re-run_ `yarn ci-check`_._
 
 ### Git commit & push
 
