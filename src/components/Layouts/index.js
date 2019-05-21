@@ -396,7 +396,7 @@ class Layout extends React.Component {
                     linkText: 'Dribbble',
                   },
                   {
-                    href: 'https://medium.com/@_carbondesign',
+                    href: 'https://medium.com/carbondesign',
                     linkText: 'Medium',
                   },
                   {
