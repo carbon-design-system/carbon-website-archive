@@ -42,7 +42,7 @@ export default class NextPrevious extends React.Component {
       newString = newString
         .map((word, i) => {
           let newWord;
-          if (newString.length === 1 || !(i == newString.length - 1)) {
+          if (newString.length === 1 || !(i === newString.length - 1)) {
             newWord = word.charAt(0).toUpperCase() + word.slice(1);
           } else {
             newWord = word;

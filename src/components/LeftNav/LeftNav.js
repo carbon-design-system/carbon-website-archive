@@ -26,7 +26,7 @@ export default class LeftNav extends React.Component {
       }
       return (
         <LeftNavItem
-          isCurrentCategory={loc.pathname.includes(item) ? true : false}
+          isCurrentCategory={!!loc.pathname.includes(item)}
           itemSlug={item}
           item={nav[item]}
           key={item}
