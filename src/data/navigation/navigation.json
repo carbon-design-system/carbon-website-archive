@@ -13,6 +13,14 @@
       }
     }
   },
+  "tutorial": {
+    "title": "Tutorial",
+    "sub-nav": {
+      "overview": {
+        "title": "Overview"
+      }
+    }
+  },
   "guidelines": {
     "title": "Guidelines",
     "sub-nav": {
