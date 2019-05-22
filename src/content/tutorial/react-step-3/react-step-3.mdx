@@ -3,6 +3,10 @@ title: 3. Using APIs
 internal: false
 ---
 
+## 🚧 Under Construction 🚧
+
+### This step takes our static components and populates them with data from the GitHub GraphQL API – loading states and all. Once we're all said and done with this step, your data table will be displaying information about the various Carbon repositories.
+
 <AnchorLinks>
 
 - [Fork, clone & branch](#fork-clone--branch)
@@ -16,9 +20,9 @@ internal: false
 
 </AnchorLinks>
 
-## Introduction
+### Preview
 
-This step starts with a React app that has styled static pages. By the end of this step you will have connected to the [GitHub GraphQL API](https://developer.github.com/v4/) and populated the data table component - skeleton loading state and all.
+Where the focus of this tutorial isn't learning and using GraphQL, the [GitHub GraphQL API](https://developer.github.com/v4/) is very well documented. And, since all of Carbon's repositories are public, it's a great opportunity to fetch Carbon-related data for this Carbon tutorial.
 
 To do so, we'll be using Apollo Client, the front-end component of the [Apollo Platform](https://www.apollographql.com/docs/intro/platform). The Apollo platform provides several open source tools for using GraphQL throughout your application’s stack. Apollo Client is a sophisticated GraphQL client that manages data and state in an application.
 
@@ -105,12 +109,16 @@ The `react-apollo` library gives us a component that we need to put at the base 
 
 Add these two imports to `src/index.js`:
 
+##### src/index.js
+
 ```javascript
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
 ```
 
 Next, make your client by providing a URI for the GitHub GraphQL API as well as an authorization header using the environmental variable you just added to `.env.local`.
+
+##### src/index.js
 
 ```javascript
 const client = new ApolloClient({

@@ -1,0 +1,70 @@
+---
+title: 5. Deploying to IBM Cloud
+internal: false
+---
+
+## 🚧 Under Construction 🚧
+
+<AnchorLinks>
+
+- [Create manifest file](#create-manifest-file)
+- [Create static file](#create-static-file)
+- [Deploy](#deploy)
+
+</AnchorLinks>
+
+### IBM Cloud
+
+[Create an IBM Cloud account](https://cloud.ibm.com/registration) if you don't already have one.
+
+### Build for production
+
+Before we deploy our app, we need create an optimized production build
+
+```bash
+yarn build
+```
+
+### Create manifest file
+
+Create a `manifest.yml` file in the root of the project. You'll need to add your `REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN` here.
+
+```bash
+---
+applications:
+ - name: carbon-tutorial
+   memory: 64M
+   buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+   env:
+   REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN: xxxXXX
+```
+
+### Create static file
+
+Create a new static file in the root of the project named `Staticfile`. This tells the app to deploy from the `build` folder and not the root of the project.
+
+```bash
+root: build
+```
+
+### Deploy
+
+Login to IBM Cloud
+
+```bash
+cf login -a https://api.ng.bluemix.net -sso
+```
+
+Deploy app
+
+```bash
+cf push -f manifest.yml
+```
+
+You can add a script to your `package.json` file to combine your build and deploy steps
+
+```bash
+"deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml"
+```
+
+Next time you want to deploy, you can simply run `yarn deploy`.

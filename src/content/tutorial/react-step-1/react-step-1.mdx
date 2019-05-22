@@ -3,6 +3,8 @@ title: 1. Installing Carbon
 internal: false
 ---
 
+### Starting an app bootstrapped with Create React App, let's install Carbon and begin using Carbon components. By the end you will have a React app that uses the UI Shell to navigate between pages.
+
 <AnchorLinks>
 
 - [Fork, clone & branch](#fork-clone--branch)
@@ -16,9 +18,9 @@ internal: false
 
 </AnchorLinks>
 
-## Introduction
+## Preview
 
-This step starts with an existing React app created with [create-react-app](https://github.com/facebook/create-react-app), installs Carbon and begins to use Carbon components. By the end of this step you will have a React app that uses the UI Shell to navigate between pages. A [preview](https://react-step-2--carbon-tutorial.netlify.com) of what you will build:
+A [preview](https://react-step-2--carbon-tutorial.netlify.com) of what you will build:
 
 <Row>
   <Column offsetLg="4">
@@ -59,7 +61,7 @@ Add a remote called `upstream` so we can eventually submit a pull request once y
 $ git remote add upstream git@github.com:carbon-design-system/carbon-tutorial.git
 ```
 
-Or, if you prefer to use HTTPS with your remotes:
+Or, if you prefer to use HTTPS instead of SSH with your remotes:
 
 ```bash
 $ git remote add upstream https://github.com/carbon-design-system/carbon-tutorial.git
@@ -109,7 +111,9 @@ Your default browser should open up with an empty page that says: `Hello Carbon!
 
 Even though we installed existing dependencies, we've yet to install the Carbon packages.
 
-The `carbon-components` package has our component styles. The `carbon-components-react` package has our React components. Lastly, the `@carbon/icons-react` package has our React-specific icons.
+- `carbon-components` - component styles
+- `carbon-components-react` - React components
+- `@carbon/icons-react` - React icons
 
 Stop your development server with `CTRL-C` and install Carbon dependencies with:
 
@@ -139,6 +143,8 @@ In the `src` directory, rename `index.css` as `index.scss`. Then in `index.js` u
 
 In `index.scss`, import the Carbon styles by adding the following at the top of the file:
 
+##### src/index.scss
+
 ```scss
 @import 'carbon-components/scss/globals/scss/styles.scss';
 ```
@@ -147,21 +153,25 @@ This will take a moment for the Sass to compile. Once compiled, you'll notice th
 
 Because any change to `index.scss` will re-compile all of the Carbon Sass, create an `app.scss` file in the `src` directory and in `App.js`, import that new file.
 
+##### src/App.js
+
 ```javascript
 import './app.scss';
 ```
 
 _Note: To optimize our Sass compile time, we'll be adding app-specific styling to_ `app.scss` _and only modifying_ `index.scss` _when necessary._
 
-Next we'll import a `<Button/>` from Carbon to test that our dependencies are working properly. At the top of `src/App.js`, import the `<Button/>` by adding the following:
+Next we'll import a `Button` from Carbon to test that our dependencies are working properly. At the top of `App.js`, import the `Button` by adding the following:
+
+##### src/App.js
 
 ```javascript
-import Button from 'carbon-components-react/lib/components/Button/Button';
+import { Button } from 'carbon-components-react';
 ```
 
-_Note: We want to import the exact path of the component instead of the entire package in order to minimize our import cost._
-
 In the `App` component return, you can now replace:
+
+##### src/App.js
 
 <!-- prettier-ignore-start -->
 ```html
@@ -172,6 +182,8 @@ In the `App` component return, you can now replace:
 <!-- prettier-ignore-end -->
 
 with:
+
+##### src/App.js
 
 <!-- prettier-ignore-start -->
 ```html
@@ -185,7 +197,7 @@ Congratulations, you've imported your first component! You should see a Carbon s
 
 _Note: The UI Shell has experimental status at the moment. We do not recommend using it for production until it is stable, but if doing so, know that there may be breaking changes in the future._
 
-Next we're going to create a React component called `<TutorialHeader/>` to use with the UI Shell Carbon component. In the `src` directory, create a `components` directory and inside of that, a `TutorialHeader` directory. Create the following files inside `src/components/TutorialHeader`:
+Next we're going to create a React component called `TutorialHeader` to use with the UI Shell Carbon component. In the `src` directory, create a `components` directory and inside of that, a `TutorialHeader` directory. Create the following files inside `src/components/TutorialHeader`:
 
 ```bash
 src/components/TutorialHeader
@@ -198,6 +210,8 @@ src/components/TutorialHeader
 
 In `index.scss` add the following feature-flag **above** the Carbon styles import like so:
 
+##### src/index.scss
+
 ```scss
 $feature-flags: (
   ui-shell: true,
@@ -206,7 +220,9 @@ $feature-flags: (
 
 This is because our UI Shell is in experimental mode and the styles need to be manually imported.
 
-Next, in `app.scss`, we'll import our `<TutorialHeader/>` styles. Your file should now look like this:
+Next, in `app.scss`, we'll import our `TutorialHeader` styles. Your file should now look like this:
+
+##### src/app.scss
 
 ```scss
 @import './components/TutorialHeader/tutorial-header.scss';
@@ -214,17 +230,21 @@ Next, in `app.scss`, we'll import our `<TutorialHeader/>` styles. Your file shou
 
 ### Import and export the header
 
-In `src/components/TutorialHeader/index.js`, import and export our `<TutorialHeader/>` component like so:
+In `src/components/TutorialHeader/index.js`, import and export our `TutorialHeader` component like so:
+
+##### src/components/TutorialHeader/index.js
 
 ```javascript
 import TutorialHeader from './TutorialHeader';
 export default TutorialHeader;
 ```
 
-Next we'll import our Carbon UI Shell components into `src/components/TutorialHeader/TutorialHeader.js`. Set up the file like so:
+Next we'll import our Carbon UI Shell components into `TutorialHeader.js`. Set up the file like so:
+
+##### src/components/TutorialHeader/TutorialHeader.js
 
 ```javascript
-import React, { Component } from 'react';
+import React from 'react';
 import {
   Header,
   HeaderName,
@@ -235,33 +255,27 @@ import {
   SkipToContent,
 } from 'carbon-components-react/lib/components/UIShell';
 
-class TutorialHeader extends Component {
-  render() {
-    return (
-      <>
-        <Header aria-label="Carbon Tutorial">
-          <SkipToContent />
-          <HeaderName href="/" prefix="IBM">
-            Carbon Tutorial
-          </HeaderName>
-          <HeaderNavigation aria-label="Carbon Tutorial">
-            <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
-          </HeaderNavigation>
-          <HeaderGlobalBar />
-        </Header>
-      </>
-    );
-  }
-}
+const TutorialHeader = () => (
+  <Header aria-label="Carbon Tutorial">
+    <SkipToContent />
+    <HeaderName href="/" prefix="IBM">
+      Carbon Tutorial
+    </HeaderName>
+    <HeaderNavigation aria-label="Carbon Tutorial">
+      <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
+    </HeaderNavigation>
+    <HeaderGlobalBar />
+  </Header>
+);
 
 export default TutorialHeader;
 ```
 
-_Note: you can find a description of the different components used UI Shell in our [carbon-componets-react](https://github.com/carbon-design-system/carbon-components-react/tree/master/src/components/UIShell) repo._
+_Note: you can find a description of the different components used UI Shell in our [carbon-componets-react](https://github.com/carbon-design-system/carbon/tree/master/packages/react/src/components/UIShell) package._
 
-_Note: When creating navigation headers, it's important to have a_ `Skip to content` _link for accessibility. This allows keyboard users to skip the navigation items and go straight to the main content._
+_Note: When creating navigation headers, it's important to have a_ `Skip to content` _link so keyboard users can skip the navigation items and go straight to the main content._
 
-Another important thing to notice is that we're using [React Fragment](https://reactjs.org/docs/fragments.html) to return the header components. This is because we will later be rendering `<TutorialHeader/>` in `App.js` as a sibling of `<Content/>`, which is another UI Shell component. `<Content/>` is meant to be a sibling of the `<Header/>` component that we're returning in `<TutorialHeader/>`. If these two aren't siblings, the `<Content/>` elements will not be rendered directly below the UI Shell. By using React Fragment, we're rendering these two components as siblings. Another way to fix this would be to render these in the same file, or offsetting the `<Content/>` margin to be below the UI Shell.
+_Note: It's important that the `TutorialHeader` returns the Carbon `Header` as it's containing element, as we'll later be rendering `TutorialHeader` in `App.js` as a preceeding sibling of `Content`, another UI Shell component. Those components need to live one after another for the UI Shell to properly render._
 
 ### Import icons
 
@@ -273,13 +287,17 @@ import UserAvatar20 from '@carbon/icons-react/lib/user--avatar/20';
 import AppSwitcher20 from '@carbon/icons-react/lib/app-switcher/20';
 ```
 
-Then we need to add the `<HeaderGlobalAction>` component inside of the `<HeaderGlobalBar>` where we will add our icons. These represent actions in the header a user can make. Replace:
+Then we need to add the `HeaderGlobalAction` component inside of the `HeaderGlobalBar` where we will add our icons. These represent actions in the header a user can make. Replace:
+
+##### src/components/TutorialHeader/TutorialHeader.js
 
 ```html
 <HeaderGlobalBar />
 ```
 
 With:
+
+##### src/components/TutorialHeader/TutorialHeader.js
 
 ```html
 <HeaderGlobalBar>
@@ -297,7 +315,9 @@ With:
 
 ### Render the header
 
-Next we'll render our UI Shell by importing our `<TutorialHeader/>` component and `<Content/>` into `App.js`. Your imports should look like this:
+Next we'll render our UI Shell by importing our `TutorialHeader` component and `Content` into `App.js`. Your imports should look like this:
+
+##### src/App.js
 
 ```javascript
 import React, { Component } from 'react';
@@ -307,7 +327,9 @@ import { Content } from 'carbon-components-react/lib/components/UIShell';
 import TutorialHeader from './components/TutorialHeader';
 ```
 
-Our `return` currently just contains a `<Button/>`. Let's update that to include our imported components. This should look like the following:
+Our `return` currently just contains a `Button`. Let's update that to include our imported components. This should look like the following:
+
+##### src/App.js
 
 ```javascript
 class App extends Component {
@@ -328,9 +350,7 @@ You should now see a styled UI Shell header and a button below it.
 
 ## Create pages
 
-Next thing we need to do is create the files for our content.
-
-Start by creating a folder called `content` in `src/`. This should be a sibling of `src/components`.
+Next thing we need to do is create the files for our content. Start by creating a folder called `content` in `src`. This should be a sibling of `src/components`.
 
 Since our app will have two pages, we'll create two folders in `src/content`.
 
@@ -364,6 +384,8 @@ src/content/RepoPage
 
 Next, we'll import our content Sass files in `app.scss`, like so:
 
+##### src/app.scss
+
 ```scss
 @import './components/TutorialHeader/tutorial-header.scss';
 @import './content/LandingPage/landing-page.scss';
@@ -372,46 +394,50 @@ Next, we'll import our content Sass files in `app.scss`, like so:
 
 ### Import and export content pages
 
-Now that our stylesheets are set up, we need to create our pages' components. Starting with `<LandingPage/>`, just like with our header, we need to export the component in `src/content/LandingPage/index.js` by adding:
+Now that our stylesheets are set up, we need to create our pages' components. Starting with `LandingPage`, just like with our header, we need to export the component in `src/content/LandingPage/index.js` by adding:
+
+##### src/content/LandingPage/index.js
 
 ```javascript
 import LandingPage from './LandingPage';
 export default LandingPage;
 ```
 
-Next in `src/content/LandingPage/LandingPage.js` we'll create our component.
+Next in `LandingPage.js` we'll create our component.
+
+##### src/content/LandingPage/LandingPage.js
 
 ```javascript
-import React, { Component } from 'react';
+import React from 'react';
 
-class LandingPage extends Component {
-  render() {
-    return <div>LANDING PAGE</div>;
-  }
-}
+const LandingPage = () => {
+  return <div>LANDING PAGE</div>;
+};
 
 export default LandingPage;
 ```
 
-We'll repeat this process with `<RepoPage/>`.
+We'll repeat this process with `RepoPage`.
 
-In `src/content/RepoPage/index.js`, import and export the `<RepoPage/>` component like so:
+In `src/content/RepoPage/index.js`, import and export the `RepoPage` component like so:
+
+##### src/content/RepoPage/index.js
 
 ```javascript
 import RepoPage from './RepoPage';
 export default RepoPage;
 ```
 
-Then in `src/content/RepoPage/RepoPage.js` create the component.
+Then in `RepoPage.js` create the component.
+
+##### src/content/RepoPage/RepoPage.js
 
 ```javascript
-import React, { Component } from 'react';
+import React from 'react';
 
-class RepoPage extends Component {
-  render() {
-    return <div>REPO PAGE</div>;
-  }
-}
+const RepoPage = () => {
+  return <div>REPO PAGE</div>;
+};
 
 export default RepoPage;
 ```
@@ -427,7 +453,9 @@ $ yarn add react-router-dom
 $ yarn start
 ```
 
-First, we need to wrap our app in the `<Router />` component. In the root `index.js`, add the import:
+First, we need to wrap our app in the `Router` component. In the root `index.js`, add the import:
+
+##### src/index.js
 
 ```javascript
 import { HashRouter as Router } from 'react-router-dom';
@@ -435,7 +463,9 @@ import { HashRouter as Router } from 'react-router-dom';
 
 _Note: We're using_ `HashRouter` _instead of_ `BrowserRouter` _to simplify deployments in upcoming tutorial steps. Learn more about the React Router [here](https://reacttraining.com/react-router/web/api/BrowserRouter)._
 
-Then, update the `render()` function to include the `<Router />`.
+Then, update the `render()` function to include the `Router`.
+
+##### src/index.js
 
 ```javascript
 ReactDOM.render(
@@ -448,6 +478,8 @@ ReactDOM.render(
 
 In order to render our content pages, we need to add the following imports in `App.js` below our existing imports.
 
+##### src/App.js
+
 ```javascript
 import { Route, Switch } from 'react-router-dom';
 import LandingPage from './content/LandingPage';
@@ -456,9 +488,11 @@ import RepoPage from './content/RepoPage';
 
 This allows us to use our page content components and routing components from `react-router-dom`.
 
-Next thing we need to is update what we're returning in `App.js` . We currently just have a button in our content. In order to render our pages correctly, we need to delete the `<Button/>` component within `<Content/>` (and remove the Button import).
+Next thing we need to is update what we're returning in `App.js` . We currently just have a button in our content. In order to render our pages correctly, we need to delete the `Button` component within `Content` (and remove the Button import).
 
-Now inside `<Content/>` we'll add the following:
+Now inside `Content` we'll add the following:
+
+##### src/App.js
 
 <!-- prettier-ignore-start -->
 ```html
@@ -471,19 +505,27 @@ Now inside `<Content/>` we'll add the following:
 
 After that we need to do a couple quick fixes to the UI Shell to have it work with the React router.
 
-Add the `Link` import in `src/components/TutorialHeader/TutorialHeader.js`:
+Add the `Link` import in `TutorialHeader.js`:
+
+##### src/components/TutorialHeader/TutorialHeader.js
 
 ```javascript
 import { Link } from 'react-router-dom';
 ```
 
-Then update the `<HeaderName />` component to use the `element` prop:
+Then update the `HeaderName` component to use the `element` prop:
+
+##### src/components/TutorialHeader/TutorialHeader.js
 
 ```javascript
 <HeaderName element={Link} to="/" prefix="IBM">
+  Carbon Tutorial
+</HeaderName>
 ```
 
-Do the same with the component that contains `href="/repos"`, updating that line to:
+Do the same with the component that contains `href="/repos"`, updating to:
+
+##### src/components/TutorialHeader/TutorialHeader.js
 
 ```javascript
 <HeaderMenuItem element={Link} to="/repos">
