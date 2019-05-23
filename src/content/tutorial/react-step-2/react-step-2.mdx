@@ -246,17 +246,17 @@ Modify the second row to use the `Tab` component.
 </div>
 ```
 
-We'll need to add a styling override to move the tabs to the right on large viewports. For that, in `app.scss`, add the breakpoint import at the **top** of the file before we import `landing-page.scss`.
+We'll need to add a styling override to move the tabs to the right on large viewports. For that, in `app.scss`, add the breakpoint import at the **top** of the file before we import `_landing-page.scss`.
 
 ##### src/app.scss
 
 ```scss
-@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/_breakpoint.scss';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';
 ```
 
-Then in `landing-page.scss` add this declaration block.
+Then in `_landing-page.scss` add this declaration block.
 
-##### src/content/LandingPage/landing-page.scss
+##### src/content/LandingPage/\_landing-page.scss
 
 ```scss
 @include carbon--breakpoint(md) {
@@ -306,9 +306,9 @@ We can now add our images and text for each column in the first `Tab` in `Landin
 ```
 <!-- prettier-ignore-end -->
 
-Now let's set the image size in `landing-page.scss`:
+Now let's set the image size in `_landing-page.scss`:
 
-##### src/content/LandingPage/landing-page.scss
+##### src/content/LandingPage/\_landing-page.scss
 
 ```scss
 .landing-page__illo {
@@ -336,20 +336,20 @@ The third row will be created in a later tutorial, so we'll just add the headers
 
 ## Style landing page
 
-We've added basic layout styles in `landing-page.scss`, so now let's add type, color and spacing styles to match the design. We'll be using our [spacing tokens](https://www.carbondesignsystem.com/guidelines/spacing). In `app.scss`, add these imports at the **top** of the file so we can use Carbon tokens and typography Sass mixins and functions:
+We've added basic layout styles in `_landing-page.scss`, so now let's add type, color and spacing styles to match the design. We'll be using our [spacing tokens](https://www.carbondesignsystem.com/guidelines/spacing). In `app.scss`, add these imports at the **top** of the file so we can use Carbon tokens and typography Sass mixins and functions:
 
 ##### src/app.scss
 
 ```scss
-@import 'carbon-components/scss/globals/scss/_typography.scss';
-@import 'carbon-components/scss/globals/scss/_vars.scss';
+@import 'carbon-components/scss/globals/scss/typography.scss';
+@import 'carbon-components/scss/globals/scss/vars.scss';
 ```
 
 ### Banner
 
-Back to `landing-page.scss`, we need to add space above the breadcrumb, add space below the heading, and add a background color. We'll use Gray 10 for our banner background color, which can be set with our `$ui-01` [token](https://www.carbondesignsystem.com/guidelines/color/usage).
+Back to `_landing-page.scss`, we need to add space above the breadcrumb, add space below the heading, and add a background color. We'll use Gray 10 for our banner background color, which can be set with our `$ui-01` [token](https://www.carbondesignsystem.com/guidelines/color/usage).
 
-##### src/content/LandingPage/landing-page.scss
+##### src/content/LandingPage/\_landing-page.scss
 
 ```scss
 .landing-page__banner {
@@ -361,7 +361,7 @@ Back to `landing-page.scss`, we need to add space above the breadcrumb, add spac
 
 Next, we'll add the correct header style to our `h1` by including our [type token](https://www.carbondesignsystem.com/guidelines/typography/productive) like so:
 
-##### src/content/LandingPage/landing-page.scss
+##### src/content/LandingPage/\_landing-page.scss
 
 ```scss
 .landing-page__banner h1 {
@@ -371,7 +371,7 @@ Next, we'll add the correct header style to our `h1` by including our [type toke
 
 At this point our banner is looking good, but you may notice a white gap to the left and right of the banner. To make the banner appear like it's full-width, add `position: relative;` to the `.landing-page__banner` and `.landing-page__banner h1` declaration blocks, then add this:
 
-##### src/content/LandingPage/landing-page.scss
+##### src/content/LandingPage/\_landing-page.scss
 
 ```scss
 .landing-page__banner:before {
@@ -389,7 +389,7 @@ At this point our banner is looking good, but you may notice a white gap to the 
 
 For our second row, we need to fix the tabs positioning to match our design spec, as well as fix our type styles. We'll do this like so:
 
-##### src/content/LandingPage/landing-page.scss
+##### src/content/LandingPage/\_landing-page.scss
 
 ```scss
 .landing-page__r2 {
@@ -422,7 +422,7 @@ _Note: By inspecting the tabs component, you can see that the tab height compute
 
 Let's also add some styles for the last row, even though that will get used later in the tutorial.
 
-##### src/content/LandingPage/landing-page.scss
+##### src/content/LandingPage/\_landing-page.scss
 
 ```scss
 .landing-page__r3 {
@@ -675,9 +675,9 @@ It's important to note that the application should _only_ render rows correspond
 
 Our styles for the repo page are mostly fine. We just need to updated a few vertical spacing issues.
 
-In `repo-page.scss`, add the following styles:
+In `_repo-page.scss`, add the following styles:
 
-##### src/content/RepoPage/repo-page.scss
+##### src/content/RepoPage/\_repo-page.scss
 
 ```scss
 .repo-page .bx--row {

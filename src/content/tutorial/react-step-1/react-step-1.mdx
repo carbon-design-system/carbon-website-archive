@@ -129,7 +129,23 @@ We need to run a Sass build as the Carbon styles are authored in Sass, so run th
 $ yarn add node-sass
 ```
 
-Then, start the app again.
+To avoid having to add the `~` prefix when importing SCSS files from `node_modules`, create a `.env` file at the project root that contains:
+
+##### .env
+
+```bash
+SASS_PATH="node_modules"
+```
+
+For the Windows operating system, use:
+
+##### .env
+
+```bash
+SASS_PATH=./node_modules
+```
+
+Then, start the app again. If your app's currently running, you'll need to restart it for the new environment variable to be used.
 
 ```bash
 $ yarn start
@@ -201,9 +217,9 @@ Next we're going to create a React component called `TutorialHeader` to use with
 
 ```bash
 src/components/TutorialHeader
+├──_tutorial-header.scss
 ├──index.js
-├──TutorialHeader.js
-└──tutorial-header.scss
+└──TutorialHeader.js
 ```
 
 ### Add UI Shell Sass
@@ -366,8 +382,8 @@ Create the following files in the `LandingPage` folder:
 
 ```bash
 src/content/LandingPage
+├── _landing-page.scss
 ├── index.js
-├── landing-page.scss
 └── LandingPage.js
 ```
 
@@ -375,8 +391,8 @@ Create the following files in the `RepoPage` folder:
 
 ```bash
 src/content/RepoPage
+├── _repo-page.scss
 ├── index.js
-├── repo-page.scss
 └── RepoPage.js
 ```
 

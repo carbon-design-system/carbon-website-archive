@@ -195,7 +195,7 @@ import {
 
 ### Query
 
-Next we'll assemble our GraphQL query to fetch only the data we need from the GraphQL API. We'll do this using the `gql` helper we just imported. The `gql` helper lets you write GraphQL queries using interpolated strings (backticks) in JavaScript. In addition, we'll be using the `Query` component from `react-apollo` which uses gives us some great information about our query's loading state in addition to the data.
+Next we'll assemble our GraphQL query to fetch only the data we need from the GraphQL API. We'll do this using the `gql` helper we just imported. The `gql` helper lets you write GraphQL queries using interpolated strings (backticks) in JavaScript. In addition, we'll be using the `Query` component from `react-apollo` which gives us some great information about our query's loading state in addition to the data.
 
 If you'd like some more information regarding writing queries and using the Query component, we recommend [Apollo's documentation](https://www.apollographql.com/docs/tutorial/queries) on this topic.
 
@@ -305,7 +305,7 @@ const getRowItems = rows =>
 
 We'll be using [React Hooks](https://reactjs.org/docs/hooks-intro.html) to manage our state. Hooks are a relatively new React API that allows us to author a React component's stateful logic in a function component rather than a class component. Using hooks means we don't need to worry about complex lifecycle methods.
 
-The Query component from `react-apollo` gives lets us render different content based on the state of our request. When `loading` is true, we'll render the `DataTableSkeleton` component from `carbon-components-react`. If there's an issue, we'll render the corresponding error message.
+The Query component from `react-apollo` lets us render different content based on the state of our request. When `loading` is true, we'll render the `DataTableSkeleton` component from `carbon-components-react`. If there's an issue, we'll render the corresponding error message.
 
 Finally, if neither of those are true, it means we have our data! One nice advantage of GraphQL is that as long as there are no errors, we can be certain the properties on the data we requested aren't `undefined`.
 
