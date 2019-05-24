@@ -3,6 +3,8 @@ title: 2. Building pages
 internal: false
 ---
 
+### Now that we have a React app using the UI Shell, it's time to build a couple static pages by becoming comfortable with the Carbon grid and various Carbon components.
+
 <AnchorLinks>
 
 - [Fork, clone & branch](#fork-clone--branch)
@@ -17,9 +19,9 @@ internal: false
 
 </AnchorLinks>
 
-## Introduction
+## Preview
 
-This step starts with a React app that is using the Carbon UI Shell component and [react-router](https://reacttraining.com/react-router/web/guides/quick-start) to navigate between pages. By the end of this step you will have used the grid and a variety of Carbon components to build out two static pages. A [preview](https://react-step-3--carbon-tutorial.netlify.com) of what you will build:
+A [preview](https://react-step-3--carbon-tutorial.netlify.com) of what you will build:
 
 <Row>
   <Column offsetLg="4">
@@ -59,21 +61,36 @@ $ yarn
 Then, start the app:
 
 ```bash
-yarn start
+$ yarn start
 ```
 
 You should see something similar to where the [previous step](/tutorial/react-step-1) left off.
+
+### IE11 polyfills
+
+Before we get started with this step, we'll be adding some components that require IE11 polyfills. As shown in the [Carbon React documentation](https://github.com/carbon-design-system/carbon/blob/master/packages/react/.storybook/polyfills.js), go ahead and add these imports to the top of the root `index.js`. They aren't all needed, but we'll add them all to play it safe for the duration of the tutorial.
+
+##### src/index.js
+
+```javascript
+import 'core-js/modules/es7.array.includes';
+import 'core-js/modules/es6.array.fill';
+import 'core-js/modules/es6.string.includes';
+import 'core-js/modules/es6.string.trim';
+import 'core-js/modules/es7.object.values';
+```
 
 ## Install grid
 
 In our last step we added our styles, component and icon packages. Now that we're building the pages with grid, we need to install one more Carbon package. Stop your development environment (`CTRL-C`) and:
 
 ```bash
-yarn add @carbon/grid
+$ yarn add @carbon/grid
 ```
 
-In `index.scss`, we need to configure our grid to use 16 columns instead of the default 12 columns. We do this by adding
-`grid-columns-16: true` in our `$feature-flags`.
+In `index.scss`, we need to configure our grid to use 16 columns instead of the default 12 columns. We do this by adding `grid-columns-16: true` in our `$feature-flags`.
+
+##### src/index.scss
 
 ```css
 $feature-flags: (
@@ -86,7 +103,7 @@ Run `yarn start` so we can begin building.
 
 ## Add landing page grid
 
-Let's add our grid elements to `src/content/LandingPage/LandingPage.js`.
+Let's add our grid elements to `LandingPage.js`.
 
 In order to use the grid, we need to wrap everything in a `<div className="bx--grid">`. We can continue to make rows by adding a `<div className="bx--row">` inside the grid, as well as make columns within those rows by adding `<div className="bx--col-lg-[size]">`.
 
@@ -95,6 +112,8 @@ Our column sizes are specified by the number of columns they'll be spanning. If 
 We know from our design specs that we'll need three rows. The first row design doesn't appear to need any columns. The second row looks like it has two columns of equal width. The third row looks like it has four columns of equal width.
 
 We'll make rows like so:
+
+##### src/content/LandingPage/LandingPage.js
 
 ```javascript
 return (
@@ -107,10 +126,10 @@ return (
       <div className="bx--col-lg-8">1/2</div>
     </div>
     <div className="bx--row landing-page__r3">
-      <div className="bx--col-lg-4">1/4</div>
-      <div className="bx--col-lg-4">1/4</div>
-      <div className="bx--col-lg-4">1/4</div>
-      <div className="bx--col-lg-4">1/4</div>
+      <div className="bx--col-md-4 bx--col-lg-4">1/4</div>
+      <div className="bx--col-md-4 bx--col-lg-4">1/4</div>
+      <div className="bx--col-md-4 bx--col-lg-4">1/4</div>
+      <div className="bx--col-md-4 bx--col-lg-4">1/4</div>
     </div>
   </div>
 );
@@ -124,13 +143,17 @@ We'll start adding HTML elements and components by row.
 
 ### First row
 
-In our first row we'll need a `<BreadCrumb/>` component. First, let's import the components we need. Because we'll be importing several components for this page, we'll import them directly from the `carbon-components-react` package instead of the direct path for each one.
+In our first row we'll need a `BreadCrumb` component. First, let's import the components we need. Because we'll be importing several components for this page, we'll import them directly from the `carbon-components-react` package instead of the direct path for each one.
+
+##### src/content/LandingPage/LandingPage.js
 
 ```javascript
 import { Breadcrumb, BreadcrumbItem } from 'carbon-components-react';
 ```
 
 We can now add our component to the first row, along with a header, like so:
+
+##### src/content/LandingPage/LandingPage.js
 
 ```html
 <div className="bx--row landing-page__banner">
@@ -149,7 +172,9 @@ You may notice that the styles look off. Don't worry, we'll fix these later.
 
 ### Second row
 
-In our second row we'll need `<Tabs/>` and `<Button/>` components. We'll update the `carbon-components-react` import to:
+In our second row we'll need `Tabs` and `Button` components. We'll update the `carbon-components-react` import to:
+
+##### src/content/LandingPage/LandingPage.js
 
 ```javascript
 import {
@@ -162,6 +187,8 @@ import {
 ```
 
 Before we can render the tabs, we need to add some props for the component after the import.
+
+##### src/content/LandingPage/LandingPage.js
 
 ```javascript
 const props = {
@@ -178,95 +205,110 @@ const props = {
 };
 ```
 
-Modify the second row to use the `<Tab/>` component.
+Modify the second row to use the `Tab` component.
+
+##### src/content/LandingPage/LandingPage.js
 
 ```html
 <div className="bx--row landing-page__r2">
-  <Tabs {...props.tabs}>
-    <Tab {...props.tab} label="About">
-      <div className="bx--row landing-page__tab-content">
-        <div className="bx--col-lg-8">1/2</div>
-        <div className="bx--col-lg-8">1/2</div>
-      </div>
-    </Tab>
-    <Tab {...props.tab} label="Design">
-      <div className="bx--row landing-page__tab-content">
-        <div className="bx--col-lg-16">
-          Rapidly build beautiful and accessible experiences. The Carbon kit
-          contains all resources you need to get started.
+  <div className="bx--col bx--no-gutter">
+    <Tabs {...props.tabs}>
+      <Tab {...props.tab} label="About">
+        <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
+          <div className="bx--row landing-page__tab-content">
+            <div className="bx--col-lg-8">1/2</div>
+            <div className="bx--col-lg-8">1/2</div>
+          </div>
         </div>
-      </div>
-    </Tab>
-    <Tab {...props.tab} label="Develop">
-      <div className="bx--row landing-page__tab-content">
-        <div className="bx--col-lg-16">
-          Carbon provides styles and components in Vanilla, React, Angular, and
-          Vue for anyone building on the web.
+      </Tab>
+      <Tab {...props.tab} label="Design">
+        <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
+          <div className="bx--row landing-page__tab-content">
+            <div className="bx--col-lg-16">
+              Rapidly build beautiful and accessible experiences. The Carbon kit
+              contains all resources you need to get started.
+            </div>
+          </div>
         </div>
-      </div>
-    </Tab>
-  </Tabs>
+      </Tab>
+      <Tab {...props.tab} label="Develop">
+        <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
+          <div className="bx--row landing-page__tab-content">
+            <div className="bx--col-lg-16">
+              Carbon provides styles and components in Vanilla, React, Angular,
+              and Vue for anyone building on the web.
+            </div>
+          </div>
+        </div>
+      </Tab>
+    </Tabs>
+  </div>
 </div>
 ```
 
-After doing so, add this declaration block to `landing-page.scss`. We need to move the tabs to the right, make sure that the tab contain is full width, and adjust margins since we are nesting `bx--row`.
+We'll need to add a styling override to move the tabs to the right on large viewports. For that, in `app.scss`, add the breakpoint import at the **top** of the file before we import `_landing-page.scss`.
+
+##### src/app.scss
 
 ```scss
-.landing-page__r2 {
-  // right-align tabs
-  .bx--tabs {
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';
+```
+
+Then in `_landing-page.scss` add this declaration block.
+
+##### src/content/LandingPage/\_landing-page.scss
+
+```scss
+@include carbon--breakpoint(md) {
+  // right justify tab component
+  .landing-page__r2 .bx--tabs {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
   }
 
-  // full width tabs trigger small viewports
-  .bx--tabs-trigger {
-    width: 100%;
-  }
-
-  // full-width tab content
-  & > div {
-    width: 100%;
-  }
-
-  // reset margins because of the nested row
-  .bx--row {
-    margin-left: 0;
-    margin-right: 0;
+  // IE11 fix for right justification
+  .landing-page__r2 .bx--tabs__nav {
+    right: 0;
   }
 }
 ```
 
-We can now add our images and text for each column in the first `<Tab/>`.
+We can now add our images and text for each column in the first `Tab` in `LandingPage.js`.
+
+##### src/content/LandingPage/LandingPage.js
 
 <!-- prettier-ignore-start -->
 ```html
-<Tab {...props.tab} label="Tab label 1">
-  <div className="bx--row landing-page__tab-content">
-    <div className="bx--col-lg-8">
-      <strong>What is Carbon?</strong>
-      <p>
-        Carbon is IBM’s open-source design system for digital
-        products and experiences. With the IBM Design Language as
-        its foundation, the system consists of working code, design
-        tools and resources, human interface guidelines, and a
-        vibrant community of contributors.
-      </p>
-      <Button>Learn more</Button>
-    </div>
-    <div className="bx--col-lg-8">
-      <img
-        className="landing-page__illo"
-        src={`${process.env.PUBLIC_URL}/tab-illo.png`}
-        alt="Carbon illustration"
-      />
+<Tab {...props.tab} label="About">
+  <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
+    <div className="bx--row landing-page__tab-content">
+      <div className="bx--col-lg-8">
+        <strong>What is Carbon?</strong>
+        <p>
+          Carbon is IBM’s open-source design system for digital
+          products and experiences. With the IBM Design Language
+          as its foundation, the system consists of working code,
+          design tools and resources, human interface guidelines,
+          and a vibrant community of contributors.
+        </p>
+        <Button>Learn more</Button>
+      </div>
+      <div className="bx--col-lg-8">
+        <img
+          className="landing-page__illo"
+          src={`${process.env.PUBLIC_URL}/tab-illo.png`}
+          alt="Carbon illustration"
+        />
+      </div>
     </div>
   </div>
 </Tab>
 ```
 <!-- prettier-ignore-end -->
 
-Now let's set the image size in `landing-page.scss`:
+Now let's set the image size in `_landing-page.scss`:
+
+##### src/content/LandingPage/\_landing-page.scss
 
 ```scss
 .landing-page__illo {
@@ -280,29 +322,34 @@ Assuming that the second and third tab would have a similar design, we would set
 
 The third row will be created in a later tutorial, so we'll just add the headers for now.
 
+##### src/content/LandingPage/LandingPage.js
+
 ```html
-<div className="bx--row landing-page__r3">
-  <div className="bx--col-lg-4">
+<div className="bx--col-md-4 bx--col-lg-4">
     <strong>The Principles</strong>
   </div>
-  <div className="bx--col-lg-4">Carbon is Open</div>
-  <div className="bx--col-lg-4">1/4</div>
-  <div className="bx--col-lg-4">1/4</div>
+  <div className="bx--col-md-4 bx--col-lg-4">Carbon is Open</div>
+  <div className="bx--col-md-4 bx--col-lg-4">Carbon is Modular</div>
+  <div className="bx--col-md-4 bx--col-lg-4">Carbon is Consistent</div>
 </div>
 ```
 
 ## Style landing page
 
-We've added basic layout styles in `landing-page.scss`, so now let's add type, color and spacing styles to match the design. We'll be using our [spacing tokens](https://www.carbondesignsystem.com/guidelines/spacing). In `app.scss`, add these imports at the **top** of the file so we can use Carbon tokens and typography Sass mixins and functions:
+We've added basic layout styles in `_landing-page.scss`, so now let's add type, color and spacing styles to match the design. We'll be using our [spacing tokens](https://www.carbondesignsystem.com/guidelines/spacing). In `app.scss`, add these imports at the **top** of the file so we can use Carbon tokens and typography Sass mixins and functions:
+
+##### src/app.scss
 
 ```scss
-@import 'carbon-components/scss/globals/scss/_typography.scss';
-@import 'carbon-components/scss/globals/scss/_vars.scss';
+@import 'carbon-components/scss/globals/scss/typography.scss';
+@import 'carbon-components/scss/globals/scss/vars.scss';
 ```
 
 ### Banner
 
-Back to `landing-page.scss`, we need to add space above the breadcrumb, add space below the heading, and add a background color. We'll use Gray 10 for our banner background color, which can be set with our `$ui-01` [token](https://www.carbondesignsystem.com/guidelines/color/usage).
+Back to `_landing-page.scss`, we need to add space above the breadcrumb, add space below the heading, and add a background color. We'll use Gray 10 for our banner background color, which can be set with our `$ui-01` [token](https://www.carbondesignsystem.com/guidelines/color/usage).
+
+##### src/content/LandingPage/\_landing-page.scss
 
 ```scss
 .landing-page__banner {
@@ -314,6 +361,8 @@ Back to `landing-page.scss`, we need to add space above the breadcrumb, add spac
 
 Next, we'll add the correct header style to our `h1` by including our [type token](https://www.carbondesignsystem.com/guidelines/typography/productive) like so:
 
+##### src/content/LandingPage/\_landing-page.scss
+
 ```scss
 .landing-page__banner h1 {
   @include type-style('productive-heading-05');
@@ -321,6 +370,8 @@ Next, we'll add the correct header style to our `h1` by including our [type toke
 ```
 
 At this point our banner is looking good, but you may notice a white gap to the left and right of the banner. To make the banner appear like it's full-width, add `position: relative;` to the `.landing-page__banner` and `.landing-page__banner h1` declaration blocks, then add this:
+
+##### src/content/LandingPage/\_landing-page.scss
 
 ```scss
 .landing-page__banner:before {
@@ -337,6 +388,8 @@ At this point our banner is looking good, but you may notice a white gap to the 
 ### Row two
 
 For our second row, we need to fix the tabs positioning to match our design spec, as well as fix our type styles. We'll do this like so:
+
+##### src/content/LandingPage/\_landing-page.scss
 
 ```scss
 .landing-page__r2 {
@@ -358,16 +411,18 @@ For our second row, we need to fix the tabs positioning to match our design spec
 }
 
 .landing-page__r2 p {
-  margin-top: $spacing-08;
+  margin-top: $spacing-06;
   margin-bottom: $spacing-08;
 }
 ```
 
-_Note: By inspecting the tabs component, you can see that the tab height computes to `40px`. We then used that to create our negative top margin in rem units._
+_Note: By inspecting the tabs component, you can see that the tab height computes to_ `40px`_. We then used that to create our negative top margin in rem units._
 
 ### Row three
 
 Let's also add some styles for the last row, even though that will get used later in the tutorial.
+
+##### src/content/LandingPage/\_landing-page.scss
 
 ```scss
 .landing-page__r3 {
@@ -403,10 +458,12 @@ Ta-da! You should see a finished landing page! Now we can move on to the repo pa
 
 Now in our `RepoPage.js` we'll add our grid containers in the `return` section.
 
+##### src/content/RepoPage/RepoPage.js
+
 ```javascript
 return (
-  <div className="bx--grid repo-page">
-    <div className="bx--row">
+  <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
+    <div className="bx--row repo-page__r1">
       <div className="bx--col-lg-16">Data table will go here</div>
     </div>
   </div>
@@ -418,6 +475,8 @@ return (
 ### Data table
 
 First, we'll add our data table by importing a few components:
+
+##### src/content/RepoPage/RepoPage.js
 
 ```javascript
 import {
@@ -439,6 +498,8 @@ import {
 ### Data table props
 
 Before we can add the components to our `return` section, we need to create arrays for our row content and our header content. Add these arrays in the `render()` function above the return block:
+
+##### src/content/RepoPage/RepoPage.js
 
 ```javascript
 const initialRows = [
@@ -499,7 +560,9 @@ const headers = [
 ];
 ```
 
-We'll start by adding `<DataTable/>`. It will have three props: `rows`, which will accept the `initialRows` array we created earlier, `headers`, which will accept the `headers` array we created earlier, and `render`, which will accept a function to render the rest of the data table components.
+We'll start by adding `DataTable`. It will have three props: `rows`, which will accept the `initialRows` array we created earlier, `headers`, which will accept the `headers` array we created earlier, and `render`, which will accept a function to render the rest of the data table components.
+
+##### src/content/RepoPage/RepoPage.js
 
 ```javascript
 <div className="bx--col-lg-16">
@@ -512,6 +575,8 @@ _Note: this won't work quite yet._
 ### Render function
 
 Next we'll add the following arguments to our render function (this won't work quite yet):
+
+##### src/content/RepoPage/RepoPage.js
 
 ```javascript
 render={({
@@ -540,6 +605,8 @@ TableContainer
 ```
 
 In our file, that will look like this (now it works!):
+
+##### src/content/RepoPage/RepoPage.js
 
 <!-- prettier-ignore-start -->
 ```javascript
@@ -582,7 +649,9 @@ render={({ rows, headers, getHeaderProps, getRowProps, getTableProps, }) => (
 
 ### Pagination
 
-Last but not least, we'll need to add our pagination component as a sibling of `<DataTable/>`.
+Last but not least, we'll need to add our pagination component as a sibling of `DataTable`.
+
+##### src/content/RepoPage/RepoPage.js
 
 <!-- prettier-ignore-start -->
 ```javascript
@@ -606,12 +675,14 @@ It's important to note that the application should _only_ render rows correspond
 
 Our styles for the repo page are mostly fine. We just need to updated a few vertical spacing issues.
 
-In `repo-page.scss`, add the following styles:
+In `_repo-page.scss`, add the following styles:
+
+##### src/content/RepoPage/\_repo-page.scss
 
 ```scss
 .repo-page .bx--row {
-  padding-top: $spacing-07;
-  padding-bottom: $spacing-07;
+  padding-top: $spacing-05;
+  padding-bottom: $spacing-05;
 }
 ```
 
@@ -628,6 +699,8 @@ Run the CI check to make sure we're all set to submit a pull request.
 ```bash
 $ yarn ci-check
 ```
+
+_Note: If the_ `ci-check` _is giving an error, it's likely that some of your source files are not properly formatted. This could happen if your text editor isn't formatting with Prettier on save. To get_ `ci-check` _to pass, run_ `yarn format`_ then re-run_ `yarn ci-check`_._
 
 ### Git commit & push
 
