@@ -573,6 +573,8 @@ Before we can create a pull request, stage and commit all of your changes:
 $ git add --all && git commit -m "feat(tutorial): complete step 1"
 ```
 
+_Note: You'll notice that your commit includes binaries in the _`.yarn-offline-mirror`_ folder. That's expected as the repository is configured to run [Yarn offline](https://yarnpkg.com/blog/2016/11/24/offline-mirror) for more reliable builds. Future tutorial steps that don't install new packages won't have _`.yarn-offline-mirror`_ commit changes._
+
 Then, push to your repository:
 
 ```bash
