@@ -1,0 +1,234 @@
+---
+title: 4. Creating components
+internal: false
+---
+
+## 🚧 Under Construction 🚧
+
+# step 4
+
+# Prerequisites
+
+- have done previous steps [link]
+- know react at X level
+
+# Objectives
+
+- Create a new component that we woul consider contributing into the carbon codebase
+- Test accessibility and verify responsiveness—important part of Carbon!
+
+# Creating the components we need
+
+During this exercise we will implement this section of the page:
+
+[screenshot of section]
+
+We will create a `Section` component and a `PrincipleSectionCard` component.
+
+## Setup
+
+Create a directory for our new component Section and three files:
+
+- `Section.js`
+- `section.scss`
+- `index.js`
+
+Inside of `index.js`, put:
+
+```
+    import Section from './Section'
+    export default Section
+```
+
+Then inside `src/index.scss` we need to add an import for our new `section.scss` file so that's it's incorporated. Add this import statement to the end of `src/index.scss`:
+
+```
+    @import './components/Section/section.scss';
+```
+
+## The Section
+
+Looking at our spec — we can use semantic html5 element `<section>` to contain our elements. We'll also want a header level 2 to describe the section.
+
+```
+    import React from 'react';
+
+    /**
+     * The main content is devided into three main sections. Each one containing one or more cards.
+     */
+    const PrinciplesSection = props => (
+      <section className={`bx--row ${props.className} principles-section`}>
+        <h2 className="bx--col bx--no-gutter bx--col-sm-4">
+          <strong>{props.heading}</strong>
+        </h2>
+        {props.children}
+      </section>
+    );
+
+    export { PrinciplesSection };
+```
+
+This `PrinciplesSeciton` lets you pass in any number of your own class names via the `className` prop.
+
+**Note:** _You can see above in the `section` and `h2` elements, we are using the grid classes from Carbon._
+
+-
+
+## The Card
+
+Looking ahead at the rest of the spec we can see there are multiple sections on the page — all with varying numbers of cards and images etc we should probably create a second sub-component called SectionCard to keep things tidy and composable rather than adding complexity to our Section component.
+
+Inside of `Section.js`, put:
+
+```
+    // Take in a phrase and separate the third word in an array
+    function createArrayFromPhrase(phrase) {
+      const splitPhrase = phrase.split(' ');
+      const thirdWord = splitPhrase.pop();
+      return [splitPhrase.join(' '), thirdWord];
+    }
+
+    /**
+     * The cards inside the page's section. Containing headers and short body paragraphs
+     */
+    const PrinciplesSectionCard = props => {
+      const splitHeading = createArrayFromPhrase(props.heading);
+
+      return (
+        <article className="section-card bx--col bx--col-4">
+          <h3 className="section-card__heading">
+            {`${splitHeading[0]} `}
+            <strong>{splitHeading[1]}</strong>
+          </h3>
+          <p className="section-card__body">{props.body}</p>
+          {props.icon}
+        </article>
+      );
+    };
+
+    export { PrinciplesSection, PrinciplesSectionCard };
+```
+
+We include an example utility function, `createArrayFromPhrase`, to make the last word in our headings bold.
+
+## Putting the new components into your page
+
+In the appropriate content area of `LandingPagje.js`, paste:
+
+```
+    <PrinciplesSection
+      heading="The Principles"
+      className="landing-page__r3">
+      <PrinciplesSectionCard
+        heading="Carbon is Open"
+        body="It's a distributed effort, guided by the principles of the open-source movement. Carbon's users are also it's makers, and everyone is encouraged to contribute."
+      />
+      <PrinciplesSectionCard
+        heading="Carbon is Modular"
+        body="Carbon's modularity ensures maximum flexibility in execution. It's components are designed to work seamlessly with each other, in whichevercombination suits the needs of the user."
+      />
+      <PrinciplesSectionCard
+        heading="Carbon is Consistent"
+        body="Based on the comprehensive IBM Design Language, every element and component of Carbon was designed from the ground up to work elegantly together to ensure consistent, cohesive user experiences."
+      />
+    </PrinciplesSection>
+```
+
+Now, we can see our cards with content on the page! Next, we need to add the appropriate icons.
+
+## Using icons from `carbon-elements`
+
+`LandingPage.js` is the script file which specifies the content of the page (body copy, etc). So that is also where we will import our icons!
+
+Near the top of `LandingPage.js`, add import statements for each icon you wish to use:
+
+```
+    import Globe32 from '@carbon/icons-react/lib/globe/32';
+    import PersonFavorite32 from '@carbon/icons-react/lib/person--favorite/32';
+    import Application32 from '@carbon/icons-react/lib/application/32';
+```
+
+`carbon-elements` provides these as SVGs with accessible markup.
+
+Now, you can put these icons in your component, like so:
+
+```
+    <PrinciplesSection
+      heading="The Principles"
+      className="landing-page__r3">
+      <PrinciplesSectionCard
+        heading="Carbon is Open"
+        body="It's a distributed effort, guided by the principles of the open-source movement. Carbon's users are also it's makers, and everyone is encouraged to contribute."
+        icon={<PersonFavorite32 />}
+      />
+      <PrinciplesSectionCard
+        heading="Carbon is Modular"
+        body="Carbon's modularity ensures maximum flexibility in execution. It's components are designed to work seamlessly with each other, in whichevercombination suits the needs of the user."
+        icon={<Application32 />}
+      />
+      <PrinciplesSectionCard
+        heading="Carbon is Consistent"
+        body="Based on the comprehensive IBM Design Language, every element and component of Carbon was designed from the ground up to work elegantly together to ensure consistent, cohesive user experiences."
+        icon={<Globe32 />}
+      />
+    </PrinciplesSection>
+```
+
+(notice the additional `icon` prop!)
+
+## Adding styles
+
+In `principles-section.scss`, put:
+
+```
+    .principles-section > h2 {
+      padding-bottom: 2rem;
+    }
+
+    .section-card {
+      height: 18rem;
+      border-left: $spacing-3xs solid $ui-03;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      svg {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+
+    .section-card__heading {
+      margin-bottom: $spacing-05;
+    }
+
+    .section-card__body {
+      @include type-style('body-short-01');
+    }
+```
+
+Great! We're using Carbon tokens for measurements and color.
+
+# Accessibility
+
+## Checking in with DAP
+
+We've got quite a bit of new markup on the page — now's a great time to check in with DAP and make sure we're on the right track.
+
+Open Chrome dev tools and run the checker. It looks like we've got a violation. Our `<article>` element requires a `<label>` to be accessible. Digging in further it seems like we might be using the wrong semantic element. A humble `<div>` will suffice. 🚀 🧸 😘
+
+Inside of `PrinciplesSection.js`, the `return` statement for `PrinciplesSectionCard` can be updated:
+
+```
+    …
+    return (
+        <div className="section-card bx--col bx--col-4">
+          <h3 className="section-card__heading">
+            {`${splitHeading[0]} `}
+            <strong>{splitHeading[1]}</strong>
+          </h3>
+          <p className="section-card__body">{props.body}</p>
+          {props.icon}
+        </div>
+      );
+    …
+```
