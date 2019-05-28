@@ -207,6 +207,9 @@
       },
       "adding-creating-pattern": {
         "title": "Adding or Creating"
+      },
+      "deleting": {
+        "title": "Deleting"
       }
     }
   },
