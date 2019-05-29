@@ -79,6 +79,10 @@ em {
   }
 
   // Inline code
+  code {
+    font-family: $font-family-mono;
+  }
+
   p > code,
   li > code,
   td > code {
@@ -165,6 +169,14 @@ em {
 .bx--row .gatsby-resp-iframe-wrapper,
 .bx--example__content .gatsby-resp-iframe-wrapper {
   margin-left: 0 !important;
+}
+
+.bx--iframe {
+  width: 100%;
+
+  &--border {
+    border: 1px solid $ui-03;
+  }
 }
 
 //images
