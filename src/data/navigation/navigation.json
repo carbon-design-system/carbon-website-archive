@@ -13,6 +13,17 @@
       }
     }
   },
+  "tutorial": {
+    "title": "Tutorial",
+    "sub-nav": {
+      "overview": {
+        "title": "Overview"
+      },
+      "react-step-1": {
+        "title": "1. Installing Carbon"
+      }
+    }
+  },
   "guidelines": {
     "title": "Guidelines",
     "sub-nav": {
