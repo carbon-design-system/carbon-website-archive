@@ -201,6 +201,9 @@
       "overview": {
         "title": "Overview"
       },
+      "chatbot": {
+        "title": "Chatbots / Conversational UIs"
+      },
       "common-actions": {
         "title": "Common actions"
       },
