@@ -236,7 +236,7 @@ class Layout extends React.Component {
 
   render() {
     const { GATSBY_CARBON_ENV } = process.env;
-    const isInternal = GATSBY_CARBON_ENV == 'internal';
+    const isInternal = GATSBY_CARBON_ENV === 'internal';
     const { children } = this.props;
     const version = Packages.dependencies['carbon-components'];
     const reactVersion = Packages.dependencies['carbon-components-react'];
@@ -396,7 +396,7 @@ class Layout extends React.Component {
                     linkText: 'Dribbble',
                   },
                   {
-                    href: 'https://medium.com/@_carbondesign',
+                    href: 'https://medium.com/carbondesign',
                     linkText: 'Medium',
                   },
                   {
