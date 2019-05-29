@@ -2,20 +2,7 @@
 title: Deleting
 ---
 
-
-<ImageComponent cols="8">
-
-![Example](images/1.1.png)
-
-</ImageComponent>
-
-*Deleting is a destructive action that could have consequences therefore the recommended behaviour upon selecting to delete a resource or asset is to provide user confirmation.*
-
-#### Status:
-
-Experimental
-
-## Options
+### Deleting is a destructive action. Due to the potential consequences of destructive actions, request user confirmation before deleting a resource or asset.
 
 <AnchorLinks>
 
@@ -25,15 +12,21 @@ Experimental
 
 </AnchorLinks>
 
+<ImageComponent cols="8" caption="This is a caption">
+
+![Example](images/1.1.png)
+
+</ImageComponent>
+
+#### Status:
+
+Experimental
 
 ## High impact
-When deleting is high impact, the user should confirm the action by manually entering the name of the resource.
 
-- Text should tell the user the consequences of the deletion and that the action cannot be undone.
+A high-impact deletion cannot be reversed. The action would result in a significant loss for a user if done accidentally. For high-impact scenarios, a user should confirm the action by manually entering the name of the resource.
 
-- Optionally, when the delete button is selected it changes to show ‘Deleting’.  
-
-- Optionally, a notification shows when deletion is completed. This is useful when the deletion of the resource may take time.
+The text should tell the user the consequences of the deletion and that the action cannot be undone. Optionally, when the delete button is selected it changes to `Deleting…`.
 
 <ImageComponent cols="6">
 
@@ -41,30 +34,31 @@ When deleting is high impact, the user should confirm the action by manually ent
 
 </ImageComponent>
 
+You can choose to show a notification confirming deletion is completed. This is useful when the deletion of the resource takes more than a few moments.
+
 <ImageComponent cols="6">
 
 ![Example](images/3.3.png)
 
 </ImageComponent>
 
-
 ## Medium impact
-When deleting is medium impact, a confirmation dialog should be presented to the user which displays:
-- The name of the resource
 
-- Consequences of the deletion
+A medium-impact deletion is one that cannot be reversed, but would not be catastrophic if done accidentally. When deleting is medium-impact, a confirmation dialog should be presented to the user which displays:
 
-- The action cannot be undone.
+* The name of the resource
+* Consequences of the deletion
+* The action cannot be undone.
 
-Optionally, when the delete button is selected it changes to show ‘Deleting’.  
-
-Optionally, a notification shows when deletion is completed. This is useful when the deletion of the resource may take time.
+Optionally, when the delete button is selected it changes to `Deleting…`.
 
 <ImageComponent cols="6">
 
 ![Example](images/4.4.png)
 
 </ImageComponent>
+
+You can choose to show a notification confirming deletion is completed. This is useful when the deletion of the resource takes more than a few moments.
 
 <ImageComponent cols="6">
 
@@ -74,7 +68,7 @@ Optionally, a notification shows when deletion is completed. This is useful when
 
 
 ## Low impact
-Requiring the user to confirm deletion is generally recommeded. However in very low impact situations, such as when an ‘undo’ option is available, user confirmation may not be required.
+Requiring the user to confirm deletion is generally recommended. However, in very low impact situations, such as when an ‘undo’ option is available, user confirmation may not be required.
 
 
 #### Maintainers:
