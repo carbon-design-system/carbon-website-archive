@@ -1,0 +1,55 @@
+---
+title: UI shell left panel
+tabs: ['Code', 'Usage','Style']
+---
+## General guidance
+
+The left panel contains secondary navigation and fits below the header. The left panel can be configured to be either fixed-width or flexible, with only one level of nested items allowed. Both links and category lists can be used in the side-nav and may be mixed together. There are several configurations of the side-nav, but only one configuration should be used per product section.
+
+If tabs are needed on a page when using a side-nav, then the tabs are secondary in hierarchy to the side-nav.
+
+### Shell components
+
+The UI shell is delivered as separate Carbon components that can be used separately or concurrently. 
+
+
+| Shell UI component      |   |
+|-------------|---|
+| Header      | The highest level of navigation. The header can be used on its own for simple products or be used to trigger the left and right panels.|
+| Left panel  | An optional panel that is used for a product's local navigation.|
+| Right panel | An optional panel that can show additional actions or content associated with an icon in the header.|
+
+
+### system zone
+
+[Left panel is a product zone vs. the system zone]
+
+Use a side-nav when:
+
+There are more than five secondary navigation items
+Users are expected to switch between secondary items frequently
+
+<ImageComponent cols="8"  caption="UI shell system zone">
+
+![UI shell system zone.](images/zones-platform.png)
+
+</ImageComponent>
+
+### Left panel items
+
+**Link:** Links to different pages
+
+**Category:** A category must contain at least two links. Categories can be either collapsible or fixed. The label of a category is never a link.
+
+**L1 title bar:** (optional): contains the name of the section or page. It should link to the product’s landing page or main console. This element can also include an optional L1 Menu selector element, to enable context-switching.
+
+## Responsive behavior
+
+As a left panel scales down to fit smaller screen sizes, the secondary navigation should collapse into a left-nav “hamburger” menu. See the examples below to better understand the left panel's responsive behavior.
+
+<ImageComponent cols="12" caption="Primary header">
+
+![Primary Header template and example](images/header-responsive2.png)
+
+</ImageComponent>
+
