@@ -2,32 +2,29 @@
 title: Creation flows
 ---
 
-
-<ImageComponent cols="8">
-
-![Example](images/1.png)
-
-</ImageComponent>
-
-
-#### Status:
-
-Experimental
-
-## Options
+### Creating is the generation of a new resource. Relocating an existing resource is adding, not creating.
 
 <AnchorLinks>
 
 - [Standard creation](#standard-creation)
 - [Multistep creation](#multistep-creation)
-- [confirmation](#confirmation)
+- [Confirmation](#confirmation)
 
 </AnchorLinks>
 
+<ImageComponent caption="Example of a creation pattern." cols="8">
 
-## Standard Creation
+![Example](images/1.png)
 
-Used in simple creation tasks when no stepped guidance is needed and the input fields are directly related to each other. 
+</ImageComponent>
+
+#### Status:
+
+Experimental
+
+## Standard creation
+
+The standard creation pattern is used when no stepped guidance is needed and the input fields are directly related to each other. 
 
 <AnchorLinks small>
 
@@ -39,94 +36,54 @@ Used in simple creation tasks when no stepped guidance is needed and the input f
 </AnchorLinks>
 
 ### Modal
-If there are only 1 or 2 options involved in the creation then use a small, standard modal, overlaying the content where the creation was initiated. Scrolling inside a small modal should be avoided. 
 
-<ImageComponent cols="8">
+If there are only one or two decisions to be made during a creation, use a small, standard modal overlaying the content where the creation was initiated. Avoid scrolling inside a small modal. 
 
-![Example](images/2.png)
+<ImageComponent caption="Example of a standard creation modal" cols="8">
+
+![Example of a standard creation modal](images/2.png)
 
 </ImageComponent>
 
-
 ### Side panel
-Consider using a side panel to take advantage of the added real-estate and keep the user in context of where they were working. You may choose to use either the slide in or slide over panels.
 
+If you have limited screen real estate, consider using a side panel. Side panels also keep the user aware of the context in which they were working. You may choose to use either the slide in or slide over panels.
 
-<ImageComponent cols="8">
+<ImageComponent caption="Example of a side panel creation flow" cols="8">
 
-![Example](images/3.png)
+![Example of a side panel creation flow](images/3.png)
 
 </ImageComponent>
 
 ### Full page
-If your creation flow consists of multiple fields and/or supporting imagery, consider the full page option to take full advantage of the screen’s available real estate. 
 
+If your creation flow consists of multiple fields and/or supporting imagery, consider the full page option. Full page creation flows allow you to take advantage of maximum screen real estate.
 
-<ImageComponent cols="8">
+<ImageComponent caption="Example of a fill page creation flow" cols="8">
 
-![Example](images/4.png)
-
-</ImageComponent>
-
-<AnchorLinks small>
-
-- [Button position](#button-position)
-- [Image](#Image)
-- [Advanced option](#advanced-option)
-
-</AnchorLinks>
-
-#### Button position
-When the full page dialog is viewed in mobile, the buttons are positioned at the bottom of the screen.
-
-<ImageComponent cols="8">
-
-![Example](images/5.png)
+![Example of a fill page creation flow](images/7.png)
 
 </ImageComponent>
 
-On a larger screen it is recommended that buttons always remain visible to the user.
+#### Supporting image
 
-When there are enough fields going beyond the fold, buttons should be located in the top right and should stick upon scrolling. If only a couple are present, buttons can be placed on the left below the last field. 
-
-<ImageComponent cols="8">
-
-![Example](images/6.png)
-
-</ImageComponent>
-
-#### Image
 To include a supporting image, place it on the right hand side of the window. 
 
-<ImageComponent cols="8">
+#### Advanced option
 
-![Example](images/7.png)
+The advanced option is used to avoid overwhelming users, while allowing advanced users to access all options. It can be applied to the side panel and the full page dialog flows.
 
-</ImageComponent>
+<ImageComponent caption="Example of advanced option" cols="4">
 
-#### Advanced Option
-
-The advanced option is used to avoid overwhelming users, whilst allowing advanced users to access everything. It can be applied to the side panel and the full page dialog.
-
-Consider by default having a minimal set of options visible, with the ability for the user to chose if they want to expose more ‘advanced’ options.
-
-If the user switches to advanced mode, ideally remember this for when they perform the same task.
-
-<ImageComponent cols="4">
-
-![Example](images/8.png)
-
-</ImageComponent>
-<br />
-<ImageComponent cols="8">
-
-![Example](images/9.png)
+![Example of advanced option](images/8.png)
 
 </ImageComponent>
 
+Have a minimal set of options visible by default, with the ability for the user to chose if they want to expose more ‘advanced’ options. If the user switches to advanced mode, remember this next time they perform the same task.
 
 ## Multistep creation
-If the creation task is complex, consider whether breaking the process up into steps could help the user.  Consider displaying related or dependant options together.
+
+If the creation task is complex, consider breaking the process up into multiple steps. Display related or dependant options together. 
 
 Multistep creation follows the same principles as Standard creation, with the addition of multisteps.
 
@@ -139,50 +96,36 @@ Multistep creation follows the same principles as Standard creation, with the ad
 </AnchorLinks>
 
 ### Side panel
-<ImageComponent cols="8">
 
-![Example](images/10.png)
+<ImageComponent caption="Example of a multi-step creation flow" cols="8">
+
+![Example of a multi-step creation flow](images/10.png)
 
 </ImageComponent>
 
 ### Full page
 
-Start of multistep creation flow.
-<ImageComponent cols="8">
+<ImageComponent caption="Start of multistep creation flow" cols="8">
 
-![Example](images/11.1.png)
-
-</ImageComponent>
-
-
-Multistep creation flow with image.
-
-<ImageComponent cols="8">
-
-![Example](images/11.2.png)
+![Start of multistep creation flow](images/11.1.png)
 
 </ImageComponent>
 
+<ImageComponent caption="Multistep creation flow with image" cols="8">
 
-Multistep creation flow with alternative button position.
-
-<ImageComponent cols="8">
-
-![Example](images/11.3.png)
+![Multistep creation flow with image](images/11.2.png)
 
 </ImageComponent>
-
-
 
 ### Confirmation
+
 When any create action is a success, a notification banner can be presented to visually confirm this. 
 
-<ImageComponent cols="8">
+<ImageComponent caption="Example of a successful creation confirmation" cols="8">
 
-![Example](images/12.png)
+![Example of a successful creation confirmation"](images/12.png)
 
 </ImageComponent>
-
 
 #### Maintainers:
 
