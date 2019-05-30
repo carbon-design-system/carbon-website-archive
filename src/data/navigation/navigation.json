@@ -195,6 +195,9 @@
       },
       "ui-shell": {
         "title": "UI shell"
+      },
+      "deleting": {
+        "title": "Deleting pattern"
       }
     }
   },
@@ -215,12 +218,6 @@
       },
       "overflow-content": {
         "title": "Overflow content"
-      },
-      "adding-creating-pattern": {
-        "title": "Adding or Creating"
-      },
-      "deleting": {
-        "title": "Deleting"
       }
     }
   },
