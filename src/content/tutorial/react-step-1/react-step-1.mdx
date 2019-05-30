@@ -531,7 +531,7 @@ Add the `Link` import in `TutorialHeader.js`:
 import { Link } from 'react-router-dom';
 ```
 
-Then update the `HeaderName` component to use the `element` prop:
+We need to use the `Link` component instead of the default anchor elements to prevent full page reload when navigating to different pages with React Router. To use `Link`, update the `HeaderName` component to use the `element` prop and replace the `href` with `to`:
 
 ##### src/components/TutorialHeader/TutorialHeader.js
 
