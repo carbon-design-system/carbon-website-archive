@@ -4,13 +4,9 @@ title: Deleting
 
 ### Deleting is a destructive action. Due to the potential consequences of destructive actions, request user confirmation before deleting a resource or asset.
 
-#### Status:
+** Status:** Experimental
 
-Experimental
-
-#### Maintainers:
-
-[Vikki Paterson](https://github.ibm.com/VICTORIA), [Arnaud Gillard](https://github.ibm.com/Arnaud-Gillard)
+**Maintainers:** [Vikki Paterson](https://github.ibm.com/VICTORIA), [Arnaud Gillard](https://github.ibm.com/Arnaud-Gillard)
 
 
 <AnchorLinks>
@@ -23,31 +19,35 @@ Experimental
 
 <ImageComponent cols="8" caption="Example of a deletion pattern using a modal">
 
-![Example of a deletion pattern using a modal](images/1.png)
+![Example of a deletion pattern using a modal in context](images/1.png)
 
 </ImageComponent>
 
 ## High impact
 
-A high-impact deletion cannot be reversed. The action would result in a significant loss for a user if done accidentally. For high-impact scenarios, a user should confirm the action by manually entering the name of the resource.
+A high-impact deletion cannot be reversed. The action would result in a significant loss for a user if done accidentally. 
+
+For high-impact scenarios, a user should confirm the action by manually entering the name of the resource. When the resource name is identically matched the 'Delete' button is enabled. 
 
 The text should tell the user the consequences of the deletion and that the action cannot be undone. Optionally, when the delete button is selected it changes to `Deleting…`.
 
+
+
 <ImageComponent cols="8">
 
-![Example](images/2.png)
+![Example of an un-populated high-impact deletion modal](images/2.png)
 
 </ImageComponent>
 
 <ImageComponent cols="8">
 
-![Example](images/3.png)
+![Example of a populated high-impact deletion modal](images/3.png)
 
 </ImageComponent>
 
 <ImageComponent cols="8">
 
-![Example](images/4.png)
+![Example of a high-impact deletion modal in its "deleting" state](images/4.png)
 
 </ImageComponent>
 
@@ -55,7 +55,7 @@ You can choose to show a notification confirming deletion is completed. This is 
 
 <ImageComponent cols="8">
 
-![Example](images/5.png)
+![Example of a successful delete notification](images/5.png)
 
 </ImageComponent>
 
@@ -71,13 +71,13 @@ Optionally, when the delete button is selected it changes to `Deleting…`.
 
 <ImageComponent cols="8">
 
-![Example](images/6.png)
+![Example of a standard delete modal](images/6.png)
 
 </ImageComponent>
 
 <ImageComponent cols="8">
 
-![Example](images/7.png)
+![Example of a standard delete modal in its "deleting" state](images/7.png)
 
 </ImageComponent>
 
@@ -85,7 +85,7 @@ You can choose to show a notification confirming deletion is completed. This is 
 
 <ImageComponent cols="8">
 
-![Example](images/8.png)
+![Example of a successful delete notification](images/8.png)
 
 </ImageComponent>
 
