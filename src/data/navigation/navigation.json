@@ -195,6 +195,9 @@
       },
       "ui-shell": {
         "title": "UI shell"
+      },
+      "creation-flows": {
+        "title": "Creation flows"
       }
     }
   },
@@ -215,9 +218,6 @@
       },
       "overflow-content": {
         "title": "Overflow content"
-      },
-      "creation-flows": {
-        "title": "Creation flows"
       }
     }
   },
