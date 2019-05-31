@@ -2,12 +2,15 @@
 title: Deleting
 ---
 
-### Deleting is a destructive action. Due to the potential consequences of destructive actions, request user confirmation before deleting a resource or asset.
+### Deleting is a destructive action, your product should support ‘undo’ where possible. If ‘undo’ support is impossible, request user confirmation before deleting a resource or asset.
 
-** Status:** Experimental
+#### Status: 
 
-**Maintainers:** [Vikki Paterson](https://github.ibm.com/VICTORIA), [Arnaud Gillard](https://github.ibm.com/Arnaud-Gillard)
+Experimental
 
+#### Maintainers:
+
+[Vikki Paterson](https://github.ibm.com/VICTORIA), [Arnaud Gillard](https://github.ibm.com/Arnaud-Gillard)
 
 <AnchorLinks>
 
@@ -27,11 +30,9 @@ title: Deleting
 
 A high-impact deletion cannot be reversed. The action would result in a significant loss for a user if done accidentally. 
 
-For high-impact scenarios, a user should confirm the action by manually entering the name of the resource. When the resource name is identically matched the 'Delete' button is enabled. 
+For high-impact scenarios, a user should confirm the action by manually entering the name of the resource. The 'Delete' button is enabled when the text entered perfectly matches the resource name. 
 
 The text should tell the user the consequences of the deletion and that the action cannot be undone. Optionally, when the delete button is selected it changes to `Deleting…`.
-
-
 
 <ImageComponent cols="8">
 
@@ -65,7 +66,7 @@ A medium-impact deletion is one that cannot be reversed, but would not be catast
 
 * The name of the resource
 * Consequences of the deletion
-* The action cannot be undone.
+* The action cannot be undone
 
 Optionally, when the delete button is selected it changes to `Deleting…`.
 
@@ -88,7 +89,6 @@ You can choose to show a notification confirming deletion is completed. This is 
 ![Example of a successful delete notification](images/8.png)
 
 </ImageComponent>
-
 
 ## Low impact
 
