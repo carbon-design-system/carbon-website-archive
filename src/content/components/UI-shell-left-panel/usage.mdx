@@ -2,16 +2,12 @@
 title: UI shell left panel
 tabs: ['Code', 'Usage','Style']
 ---
+
+### This left panel is part of the Carbon UI shell. A shell is a collection of components shared by all products within a platform. It provides a common set of interaction patterns that persist between and across products. 
+
 ## General guidance
 
-The left panel contains secondary navigation and fits below the header. The left panel can be configured to be either fixed-width or flexible, with only one level of nested items allowed. Both links and category lists can be used in the side-nav and may be mixed together. There are several configurations of the side-nav, but only one configuration should be used per product section.
-
-If tabs are needed on a page when using a side-nav, then the tabs are secondary in hierarchy to the side-nav.
-
-### Shell components
-
-The UI shell is delivered as separate Carbon components that can be used separately or concurrently. The UI shell is separated into different components to allow for detailed documentation for each component and to make it easier for additional UI shell components to be added in the future.
-
+The UI shell is made up of three components: The [primary header](/components/UI-shell-header/usage), the left panel, and the [right panel](/components/UI-shell-right-panel/usage). All three can be used independently, but the components were designed to work together.
 
 | Shell UI component      |   |
 |-------------|---|
@@ -25,36 +21,18 @@ The UI shell is delivered as separate Carbon components that can be used separat
 
 </ImageComponent>
 
-### system zone
+## Anatomy
 
-[Left panel is a product zone vs. the system zone]
+The left panel contains secondary navigation and is positioned below the header and fixed to the left. Both links and sub-menus can be used in the side-nav and may be mixed together.
 
-Use a side-nav when:
+<ImageComponent cols="8"  caption="Left panel with nested sub-menus.">
 
-There are more than five secondary navigation items
-Users are expected to switch between secondary items frequently
-
-<ImageComponent cols="8"  caption="UI shell system zone">
-
-![UI shell system zone.](images/zones-platform.png)
+![Left panel with nested sub-menus.](images/left-panel-usage-1.png)
 
 </ImageComponent>
 
-### Left panel items
+## Usage
 
-**Link:** Links to different pages
+Us the left panel if there are more than five secondary navigation items or your user are expected to switch between secondary items frequently. If tabs are needed on a page when using a side-nav, then the tabs are secondary in hierarchy to the side-nav.
 
-**Category:** A category must contain at least two links. Categories can be either collapsible or fixed. The label of a category is never a link.
-
-**L1 title bar:** (optional): contains the name of the section or page. It should link to the product’s landing page or main console. This element can also include an optional L1 Menu selector element, to enable context-switching.
-
-## Responsive behavior
-
-As a left panel scales down to fit smaller screen sizes, the secondary navigation should collapse into a left-nav “hamburger” menu. See the examples below to better understand the left panel's responsive behavior.
-
-<ImageComponent cols="12" caption="Primary header">
-
-![Primary Header template and example](images/header-responsive2.png)
-
-</ImageComponent>
-
+Limit the number of nested sub-menu items to one.
