@@ -6,23 +6,107 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-[to do]
+The UI Shell uses a unique set of [color tokens](https://github.com/carbon-design-system/carbon/blob/6b808726c5a094cd59c3d6341dfb8c4b4ce453e4/packages/components/src/components/ui-shell/_theme.scss) separate from core Carbon token.
+
+| Class                         | Property         | Shell color token         |
+| ----------------------------- | ---------------- | ------------------------- |
+| `.bx--header`                 | background color | `$shell-header-bg-01`     |
+| `.bx--header`                 | border-bottom    | `$shell-header-border-01` |
+| `.bx--header__menu-trigger`   | fill             | `$shell-header-icon-01`   |
+| `.bx--header__name`           | text color       | `$shell-header-text-01`   |
+| `.bx--header__nav::before`    | border           | `$shell-header-border-01` |
+| `.bx--header__menu-item`      | text color       | `$shell-header-text-02`   |
+| `.bx--header__menu-item`      | svg              | `$shell-header-icon-02`   |
+| `.bx--header__submenu`        | background color | `$shell-header-bg-06`     |
+| `.bx--header__submenu`        | text color       | `$shell-header-text-02`   |
+| `.bx--header__action`         | fill             | `$shell-header-icon-02`   |
 
 ### Interactive states
 
-[to do]
+#### Menu-trigger
+
+| Class                               | Property         | Color token      |
+| ----------------------------------- | ---------------- | ---------------- |
+| `.bx--header__menu-trigger:hover`   | background color | `$shell-header-bg-02`|
+| `.bx--header__menu-trigger:focus`   | border           | `$shell-header-focus`|
+| `.bx--header__menu-trigger:active`  | background color | `$shell-header-bg-03`|
+
+#### Menu-item
+
+| Class                               | Property         | Color token      |
+| ----------------------------------- | ---------------- | ---------------- |
+| `.bx--header__menu-item:hover`      | background color | `$shell-header-bg-04`|
+| `.bx--header__menu-item:hover`      | text color       | `$shell-header-text-01` |
+| `.bx--header__menu-item:hover`      | svg              | `$shell-header-icon-01` |
+| `.bx--header__menu-item:focus`      | border           | `$shell-header-focus`|
+| `.bx--header__menu-item:active`     | background color | `$shell-header-bg-03`|
+| `.bx--header__menu-item:active`     | text color       | `$shell-header-text-01` |
+| `.bx--header__menu-item:active`     | svg              | `$shell-header-icon-01` |
+
+#### Sub-menu
+
+| Class                               | Property         | Color token             |
+| ----------------------------------- | ---------------- | ----------------------- |
+| `.bx--header__action:hover`         | background color | `$shell-header-bg-02`   |
+| `.bx--header__action:hover`         | text color       | `$shell-header-text-01` |
+| `.bx--header__action:focus`         | border           | `$shell-header-focus`   |
+| `.bx--header__action:active`        | background color | `$shell-header-bg-03`   |
+| `.bx--header__action:active`        | text color       | `$shell-header-text-01` |
+
+#### Action
+
+| Class                               | Property         | Color token             |
+| ----------------------------------- | ---------------- | ----------------------- |
+| `.bx--header__action:hover`         | background color | `$shell-header-bg-02`   |
+| `.bx--header__action:hover`         | fill             | `$shell-header-icon-01` |
+| `.bx--header__action:focus`         | border           | `$shell-header-focus`   |
+| `.bx--header__action:active`        | background color | `$shell-header-bg-03`   |
+| `.bx--header__action:active`        | fill             | `$shell-header-icon-01` |
+
+
 
 ## Typography
 
 Menu labels and text should be set in sentence case.
 
-[to do]
+| Class                      | Font-size (px/rem) | Font-weight    | Type token      |
+| -------------------------- | ------------------ | -------------- | --------------- |
+| `.bx--header__name`        | 14 / 0.875         | Regular / 400  | `$body-short-01`|
+| `.bx--header__name--prefix`| 14 / 0.875         | SemiBold / 600 | `$heading-01`   |
+| `.bx--header__menu-item`   | 14 / 0.875         | Regular / 400  | `$body-short-01`|
 
+<!--
 ### Text overflow
 
 [Guidance for text overflow and wrapping for platform name or labels]
 
+-->
+
+## Structure
+
+The header should span the full width of the browser window. The header can either stay sticky to the top of the browser or scroll away.
+
+| Class                          | Property                    | px/rem     | Spacing token |
+| ------------------------------ | --------------------------- | ---------- | ------------- |
+| `.bx--header`                  | height                      | 48 / 3     | –             |
+| `.bx--header__menu-trigger`    | height, width               | 48 / 3     | –             |
+| `.bx--header__name`            | padding-left                | 16 / 1     | `$spacing-05` |
+| `.bx--header__name`            | padding-right               | 32 / 2     | `$spacing-07` |
+| `.bx--header__nav`             | padding-left                | 16 / 1     | `$spacing-05` |
+| `.bx--header__menu-item`       | padding-left, padding right | 16 / 1     | `$spacing-05` |
+| `.bx--header__menu-arrow`      | padding-left                | 8 / 0.5    | `$spacing-03` |
+| `.bx--header__submenu`         | padding-left, padding right | 16 / 1     | `$spacing-05` |
+| `.bx--header__action`          | height, width               | 48 / 3     | –             |
+
+<!--
+[to do: spec image, header and submenu]
+-->
+
 ### Responsive behavior
 
-[to do]
+In smaller broswer windows, `menu items` in the header should collapse into the left side nav menu. Items that were once in the header should stack at the top of the side nav panel if other items were already present in the panel. 
 
+<!--
+[to do]
+[example image]
+-->
