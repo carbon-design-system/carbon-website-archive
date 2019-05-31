@@ -6,64 +6,62 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-The UI Shell uses a unique set of [color tokens](https://github.com/carbon-design-system/carbon/blob/6b808726c5a094cd59c3d6341dfb8c4b4ce453e4/packages/components/src/components/ui-shell/_theme.scss) separate from core Carbon token.
+_Note: The UI Shell does not currently use the Carbon theme tokens; theming options for the shell will be available in the future. All color used in the UI Shell is from the [IBM Design Langauge palette](https://www.ibm.com/design/language/elements/color#specifications)._
 
-| Class                         | Property         | Shell color token         |
-| ----------------------------- | ---------------- | ------------------------- |
-| `.bx--header`                 | background color | `$shell-header-bg-01`     |
-| `.bx--header`                 | border-bottom    | `$shell-header-border-01` |
-| `.bx--header__menu-trigger`   | fill             | `$shell-header-icon-01`   |
-| `.bx--header__name`           | text color       | `$shell-header-text-01`   |
-| `.bx--header__nav::before`    | border           | `$shell-header-border-01` |
-| `.bx--header__menu-item`      | text color       | `$shell-header-text-02`   |
-| `.bx--header__menu-item`      | svg              | `$shell-header-icon-02`   |
-| `.bx--header__submenu`        | background color | `$shell-header-bg-06`     |
-| `.bx--header__submenu`        | text color       | `$shell-header-text-02`   |
-| `.bx--header__action`         | fill             | `$shell-header-icon-02`   |
+| Class                         | Property         | Color value  |
+| ----------------------------- | ---------------- | ------------ |
+| `.bx--header`                 | background color | Gray 100     |
+| `.bx--header`                 | border-bottom    | Gray 80      |
+| `.bx--header__menu-trigger`   | fill             | Gray 10      |
+| `.bx--header__name`           | text color       | Gray 10      |
+| `.bx--header__nav::before`    | border           | Gray 80      |
+| `.bx--header__menu-item`      | text color       | Gray 30      |
+| `.bx--header__menu-item`      | svg              | Gray 30      |
+| `.bx--header__submenu`        | background color | Gray 90      |
+| `.bx--header__submenu`        | text color       | Gray 30      |
+| `.bx--header__action`         | fill             | Gray 30      |
 
 ### Interactive states
 
 #### Menu-trigger
 
-| Class                               | Property         | Color token      |
-| ----------------------------------- | ---------------- | ---------------- |
-| `.bx--header__menu-trigger:hover`   | background color | `$shell-header-bg-02`|
-| `.bx--header__menu-trigger:focus`   | border           | `$shell-header-focus`|
-| `.bx--header__menu-trigger:active`  | background color | `$shell-header-bg-03`|
+| Class                               | Property         | Color value    |
+| ----------------------------------- | ---------------- | -------------- |
+| `.bx--header__menu-trigger:hover`   | background color | Gray 100-hover |
+| `.bx--header__menu-trigger:focus`   | border           | White          |
+| `.bx--header__menu-trigger:active`  | background color | Gray 80        |
 
 #### Menu-item
 
-| Class                               | Property         | Color token      |
-| ----------------------------------- | ---------------- | ---------------- |
-| `.bx--header__menu-item:hover`      | background color | `$shell-header-bg-04`|
-| `.bx--header__menu-item:hover`      | text color       | `$shell-header-text-01` |
-| `.bx--header__menu-item:hover`      | svg              | `$shell-header-icon-01` |
-| `.bx--header__menu-item:focus`      | border           | `$shell-header-focus`|
-| `.bx--header__menu-item:active`     | background color | `$shell-header-bg-03`|
-| `.bx--header__menu-item:active`     | text color       | `$shell-header-text-01` |
-| `.bx--header__menu-item:active`     | svg              | `$shell-header-icon-01` |
+| Class                               | Property         | Color value    |
+| ----------------------------------- | ---------------- | -------------- |
+| `.bx--header__menu-item:hover`      | background color | Gray 100-hover |
+| `.bx--header__menu-item:hover`      | text color       | Gray 10        |
+| `.bx--header__menu-item:hover`      | svg              | Gray 10        |
+| `.bx--header__menu-item:focus`      | border           | White          |
+| `.bx--header__menu-item:active`     | background color | Gray 80        |
+| `.bx--header__menu-item:active`     | text color       | Gray 10        |
+| `.bx--header__menu-item:active`     | svg              | Gray 10        |
 
 #### Sub-menu
 
-| Class                               | Property         | Color token             |
-| ----------------------------------- | ---------------- | ----------------------- |
-| `.bx--header__action:hover`         | background color | `$shell-header-bg-02`   |
-| `.bx--header__action:hover`         | text color       | `$shell-header-text-01` |
-| `.bx--header__action:focus`         | border           | `$shell-header-focus`   |
-| `.bx--header__action:active`        | background color | `$shell-header-bg-03`   |
-| `.bx--header__action:active`        | text color       | `$shell-header-text-01` |
+| Class                               | Property         | Color value    |
+| ----------------------------------- | ---------------- | -------------- |
+| `.bx--header__action:hover`         | background color | Gray 100-hover |
+| `.bx--header__action:hover`         | text color       | Gray 10        |
+| `.bx--header__action:focus`         | border           | White          |
+| `.bx--header__action:active`        | background color | Gray 80        |
+| `.bx--header__action:active`        | text color       | Gray 10        |
 
 #### Action
 
-| Class                               | Property         | Color token             |
-| ----------------------------------- | ---------------- | ----------------------- |
-| `.bx--header__action:hover`         | background color | `$shell-header-bg-02`   |
-| `.bx--header__action:hover`         | fill             | `$shell-header-icon-01` |
-| `.bx--header__action:focus`         | border           | `$shell-header-focus`   |
-| `.bx--header__action:active`        | background color | `$shell-header-bg-03`   |
-| `.bx--header__action:active`        | fill             | `$shell-header-icon-01` |
-
-
+| Class                               | Property         | Color value    |
+| ----------------------------------- | ---------------- | -------------- |
+| `.bx--header__action:hover`         | background color | Gray 100-hover |
+| `.bx--header__action:hover`         | fill             | Gray 10        |
+| `.bx--header__action:focus`         | border           | White          |
+| `.bx--header__action:active`        | background color | Gray 80        |
+| `.bx--header__action:active`        | fill             | Gray 10        |
 
 ## Typography
 
