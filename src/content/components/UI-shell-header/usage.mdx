@@ -10,7 +10,7 @@ The header’s architecture is structured to clarify meaning through placement a
 
 ### Shell components
 
-The UI shell is delivered as separate Carbon components that can be used separately or concurrently. 
+The UI shell is delivered as separate Carbon components that can be used separately or concurrently. The UI shell is separated into different components to allow for detailed documentation for each component and to make it easier for additional UI shell components to be added in the future.
 
 
 | Shell UI component      |   |
@@ -21,7 +21,7 @@ The UI shell is delivered as separate Carbon components that can be used separat
 
 <ImageComponent cols="8"  caption="UI shell components">
 
-![UI shell components.](images/)
+![UI shell components.](images/shell-usage-1.png)
 
 </ImageComponent>
 
@@ -40,7 +40,7 @@ The header spans the full width of the viewport and is the topmost element in th
 
 <ImageComponent cols="12" caption="Primary header">
 
-![Primary Header template and example](images/shell-header2.png)
+![UI shell system zone.](images/shell-usage-2.png)
 
 </ImageComponent>
 
@@ -48,9 +48,9 @@ The header spans the full width of the viewport and is the topmost element in th
 
 **Hamburger menu:** The “hamburger” icon is used to open left-side nav panels (if they are used in the product’s UI). If no collapsible left-nav panels are included as part of normal use, but the UI does utilize top-nav items, then the hamburger icon should appear at narrow breakpoints to accommodate the top nav items, which will flow into the menu. [reference hamburger icon path and visual]
 
-**System name:** For IBM products, the system name is always preceded by “IBM.” [include guidance for non IBM products]
+**System name:** For IBM products, the system name is always preceded by “IBM.”
 
-**Primary navigation:** Up to five optional horizontal top-level nav links and/or dropdown menus are allowed [explain why].
+**Primary navigation:** Up to five optional horizontal top-level nav links and/or dropdown menus are allowed. These links drop down to the side menu in narrow screen widths.
 
 **Dropdown:** include the down-pointing chevron after the link label. Dropdowns open on click and are closed by either selecting an item in the menu, clicking outside the menu area, or clicking on the menu label. When open, the chevron should point up. Dropdown menu labels serve only to open the dropdown; they cannot link to another page in the product.
 
@@ -60,15 +60,22 @@ The header spans the full width of the viewport and is the topmost element in th
 
 ### Icon placement
 
-[to do]
+|Icon | Role| Order |
+|-----|-----|---|
+|Search||Search should always be positioned as the furthest left icon. This is to allow for |
+|Product determined icons|||
+|Help|||
+|Notifications|||
+|Account|||
+|Switcher|||
 
 ## Responsive behavior
 
 As a header scales down to fit smaller screen sizes, header links and menus should collapse into a left-nav “hamburger” menu. See the examples below to better understand the header's responsive behavior. If your UI includes a side-nav panel, then the header links should be added above the left-nav, pushing it down accordingly.
 
-<ImageComponent cols="12" caption="Primary header">
+<ImageComponent cols="12" caption="Header responsive behavior">
 
-![Primary Header template and example](images/header-responsive2.png)
+![Header responsive behavior.](images/shell-usage-3.png)
 
 </ImageComponent>
 
