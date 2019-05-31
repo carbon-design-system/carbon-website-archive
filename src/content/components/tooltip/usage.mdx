@@ -9,15 +9,28 @@ Tooltips provide additional information upon hover or focus. The information sho
 
 ## Placement
 
-Icon tooltips and interactive tooltips may be positioned above or below an item and aligned to start, center or end.
+Icon tooltips and interactive tooltips may be positioned **top**, **below**, **left**, or **right** to the trigger item and the container of the tooltip text may be aligned to **start**, **center** or **end**.
 
-<ImageComponent cols="8"  caption="Tooltip placement example.">
+Note that left and right positioning is not available for [definition tooltip](#definition-tooltip). This ensures the tooltip does not obstruct important information to the left or right of the trigger word.
 
-![Tooltip placement example.](images/tooltip_placement.png)
+<ImageComponent cols="8" >
+
+![Tooltip positiion top.](images/tooltip-usage-1-top.png)
 
 </ImageComponent>
 
-Note that left and right positioning is not available for [definition tooltip](#definition-tooltip). This ensures the tooltip does not obstruct important information to the left or right of the trigger word.
+<ImageComponent cols="8" >
+
+![Tooltip position left and right.](images/tooltip-usage-1-left-right.png)
+
+</ImageComponent>
+
+<ImageComponent cols="8" >
+
+![Tooltip position bottom.](images/tooltip-usage-1-bottom.png)
+
+</ImageComponent>
+
 
 ## Variants
 
@@ -27,7 +40,7 @@ A tooltip is to provide additional, contextual information. Each variant achieve
 
 An icon tooltip is used to clarify the action or name of an interactive icon button.
 
-<ImageComponent cols="8"  caption="Icon tooltip used to clarify the action or name of an interactive icon button.">
+<ImageComponent cols="8" >
 
 ![Example image of an icon tooltip.](images/tooltip-usage-1.png)
 
@@ -43,7 +56,7 @@ An icon tooltip is used to clarify the action or name of an interactive icon but
 
 ### Definition tooltip
 
-The definition tooltip provides additional help or defines an item or term. 
+The definition tooltip provides additional help or defines an item or term. It may be used on a label of an UI element, or on a word embedded in a paragraph.
 
 <ImageComponent cols="8"  caption="Definition tooltip used within a paragraph.">
 
@@ -64,15 +77,15 @@ The definition tooltip provides additional help or defines an item or term.
 
 ### Interactive tooltips
 
-Interactive tooltips contain text and other interactive elements like buttons or links.
+Interactive tooltips may contain rich text and other interactive elements like buttons or links. Please note that in general hiding interactive content in tooltip is discouraged. Approved example usage of interactive tooltip are for on-boarding experiences and product tours.
 
-<ImageComponent cols="8"  caption="Example of an interactive tooltip.">
 
-![Example image of an interactive tooltip.](images/tooltip-usage-3.png)
+<ImageComponent cols="8"  caption="Example of an interactive tooltip in a product walk through.">
+
+![Example of an interactive tooltip in a product walk through.](images/tooltip-usage-3-v2.png)
 
 </ImageComponent>
 
-Use interactive tooltips when users may be seeking more info than can fit in a definition tooltip.
 
 #### Guidance:
 
@@ -81,11 +94,5 @@ Use interactive tooltips when users may be seeking more info than can fit in a d
 
 #### Behavior:
 
-* Interactive tooltips appear when the user clicks on an info icon. 
+* Interactive tooltips appear when the user clicks on an info icon.
 * They persistent until intentionally dismissed by clicking outside of the tooltip.
-
-
-
-
-
-
