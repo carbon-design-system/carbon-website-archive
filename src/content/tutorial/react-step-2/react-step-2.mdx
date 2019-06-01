@@ -50,9 +50,11 @@ $ git fetch upstream
 $ git checkout -b react-step-2 upstream/react-step-2
 ```
 
+_Note: This builds on top of step 1, but be sure to check out the upstream step 2 branch because it includes the static assets required to get through this step._
+
 ### Build & start app
 
-Install the app's dependencies:
+Install the app's dependencies (in case you're starting fresh in your current directory and not continuing from the previous step):
 
 ```bash
 $ yarn
@@ -80,6 +82,8 @@ import 'core-js/modules/es6.string.trim';
 import 'core-js/modules/es7.object.values';
 ```
 
+_Note: You may be wondering where_ `core-js`_came from because it's not a Carbon package and we haven't explicitly installed it. Run_ `yarn why core-js` _and you'll see there are a number of packages that have brought it in as a dependency._
+
 ## Install grid
 
 In our last step we added our styles, component and icon packages. Now that we're building the pages with grid, we need to install one more Carbon package. Stop your development environment (`CTRL-C`) and:
@@ -99,13 +103,15 @@ $feature-flags: (
 );
 ```
 
+_Note: Like before, the feature flag still needs to come before the Carbon_ `styles.scss` _import._
+
 Run `yarn start` so we can begin building.
 
 ## Add landing page grid
 
 Let's add our grid elements to `LandingPage.js`.
 
-In order to use the grid, we need to wrap everything in a `<div className="bx--grid">`. We can continue to make rows by adding a `<div className="bx--row">` inside the grid, as well as make columns within those rows by adding `<div className="bx--col-lg-[size]">`.
+In order to use the grid, we need to wrap everything in a `<div className="bx--grid">`. We can continue to make rows by adding a `<div className="bx--row">` inside the grid, as well as make columns within those rows by adding `<div className="bx--col-[breakpoint]-[size]">`.
 
 Our column sizes are specified by the number of columns they'll be spanning. If we use `bx--col-lg-4`, it means it'll span 4 of the 16 columns. If we use `bx--col-lg-8` it means it'll span 8 of the 16 columns, and so on.
 
@@ -163,7 +169,9 @@ We can now add our component to the first row, along with a header, like so:
         <a href="/">Getting started</a>
       </BreadcrumbItem>
     </Breadcrumb>
-    <h1>Design &amp; build with Carbon</h1>
+    <h1 className="landing-page__heading">
+      Design &amp; build with Carbon
+    </h1>
   </div>
 </div>
 ```
@@ -186,7 +194,7 @@ import {
 } from 'carbon-components-react';
 ```
 
-Before we can render the tabs, we need to add some props for the component after the import.
+Before we can render the tabs, we need to add some props for the component after the import. These example props came from the [React Tabs Story](http://react.carbondesignsystem.com/?selectedKind=Tabs) in Storybook.
 
 ##### src/content/LandingPage/LandingPage.js
 
@@ -246,7 +254,23 @@ Modify the second row to use the `Tab` component.
 </div>
 ```
 
-We'll need to add a styling override to move the tabs to the right on large viewports. For that, in `app.scss`, add the breakpoint import at the **top** of the file before we import `_landing-page.scss`.
+Hold up! If you were to run [DAP](https://www.ibm.com/able/dynamic-assessment-plug-in.html) to check for accessibility violations, you'd see `Multiple navigation landmarks must have unique labels specified with aria-label or aria-labelledby` because both the `Breadcrumb` and `Tabs` components use `<nav>` elements. To fix, add `aria-label` to the `Breadcrumb` opening tag:
+
+<!-- prettier-ignore-start -->
+```html
+<Breadcrumb noTrailingSlash aria-label="Page navigation">
+```
+<!-- prettier-ignore-end -->
+
+Same goes for the `Tabs` opening tag:
+
+<!-- prettier-ignore-start -->
+```html
+<Tabs {...props.tabs} aria-label="Tab navigation">
+```
+<!-- prettier-ignore-end -->
+
+Next, we'll need to add a styling override to move the tabs to the right on large viewports. For that, in `app.scss`, add the breakpoint import at the **top** of the file before we import `_landing-page.scss`.
 
 ##### src/app.scss
 
@@ -254,24 +278,25 @@ We'll need to add a styling override to move the tabs to the right on large view
 @import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';
 ```
 
-Then in `_landing-page.scss` add this declaration block.
+Create a file `_overrides.scss` in `src/content/LandingPage` with this declaration block.
+
+##### src/content/LandingPage/\_overrides.scss
+
+```scss
+.landing-page__r2 .bx--tabs__nav {
+  right: 0;
+}
+```
+
+Then in `_landing-page.scss` add this import at the top of the file.
 
 ##### src/content/LandingPage/\_landing-page.scss
 
 ```scss
-@include carbon--breakpoint(md) {
-  // right justify tab component
-  .landing-page__r2 .bx--tabs {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  // IE11 fix for right justification
-  .landing-page__r2 .bx--tabs__nav {
-    right: 0;
-  }
-}
+@import './overrides.scss';
 ```
+
+_Note: We don't have to include this in a separate file, but it's nice to keep overrides separate from your application's styling so when migrating to future Carbon versions and if there are breaking changes via different class names, you have a consolidated list of styling declaration blocks to review._
 
 We can now add our images and text for each column in the first `Tab` in `LandingPage.js`.
 
@@ -283,8 +308,10 @@ We can now add our images and text for each column in the first `Tab` in `Landin
   <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
     <div className="bx--row landing-page__tab-content">
       <div className="bx--col-lg-8">
-        <strong>What is Carbon?</strong>
-        <p>
+        <h2 className="landing-page__subheading">
+          What is Carbon?
+        </h2>
+        <p className="landing-page__p">
           Carbon is IBM’s open-source design system for digital
           products and experiences. With the IBM Design Language
           as its foundation, the system consists of working code,
@@ -325,8 +352,9 @@ The third row will be created in a later tutorial, so we'll just add the headers
 ##### src/content/LandingPage/LandingPage.js
 
 ```html
-<div className="bx--col-md-4 bx--col-lg-4">
-    <strong>The Principles</strong>
+<div className="bx--row landing-page__r3">
+  <div className="bx--col-md-4 bx--col-lg-4">
+    <h3 className="landing-page__label">The Principles</h3>
   </div>
   <div className="bx--col-md-4 bx--col-lg-4">Carbon is Open</div>
   <div className="bx--col-md-4 bx--col-lg-4">Carbon is Modular</div>
@@ -347,7 +375,7 @@ We've added basic layout styles in `_landing-page.scss`, so now let's add type, 
 
 ### Banner
 
-Back to `_landing-page.scss`, we need to add space above the breadcrumb, add space below the heading, and add a background color. We'll use Gray 10 for our banner background color, which can be set with our `$ui-01` [token](https://www.carbondesignsystem.com/guidelines/color/usage).
+Back to `_landing-page.scss`, we need to add space above the breadcrumb and below the heading. For that, add:
 
 ##### src/content/LandingPage/\_landing-page.scss
 
@@ -355,7 +383,51 @@ Back to `_landing-page.scss`, we need to add space above the breadcrumb, add spa
 .landing-page__banner {
   padding-top: $spacing-05;
   padding-bottom: $spacing-07 * 4;
+}
+```
+
+Looking at the design, we need a wall-to-well light gray background behind the banner and also behind the third row. This is a great opportunity to use a Sass mixin. We could put this at the top of `_landing-page.scss`, but it's best practice to place mixins in a dedicated file, so create a `_mixins.scss` file in `src/content/LandingPage`.
+
+Add the following in `_mixins.scss`. Per the design we need to use Gray 10 for our banner background color, which can be set with the `$ui-01` [token](https://www.carbondesignsystem.com/guidelines/color/usage). Also, we want the background to extend into the grid's outermost gutters to go the full width of the viewport, so given the DOM structure, we can achieve that by setting the background in an absolutely positioned pseudo element.
+
+##### src/content/LandingPage/\_mixins.scss
+
+```scss
+@mixin landing-page-background() {
   background-color: $ui-01;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -$spacing-05;
+    top: 0;
+    right: -$spacing-05;
+    bottom: 0;
+    background: $ui-01;
+    z-index: -1;
+  }
+}
+```
+
+After you have created `_mixins.scss`, import it at the **top** of `_landing-page.scss`. By now you should have two imports:
+
+##### src/content/LandingPage/\_landing-page.scss
+
+```scss
+@import './mixins.scss';
+@import './overrides.scss';
+```
+
+Now to use the new mixin, update the `.landing-page__banner` declaration block to:
+
+##### src/content/LandingPage/\_landing-page.scss
+
+```scss
+.landing-page__banner {
+  padding-top: $spacing-05;
+  padding-bottom: $spacing-07 * 4;
+  @include landing-page-background;
 }
 ```
 
@@ -364,24 +436,8 @@ Next, we'll add the correct header style to our `h1` by including our [type toke
 ##### src/content/LandingPage/\_landing-page.scss
 
 ```scss
-.landing-page__banner h1 {
+.landing-page__heading {
   @include type-style('productive-heading-05');
-}
-```
-
-At this point our banner is looking good, but you may notice a white gap to the left and right of the banner. To make the banner appear like it's full-width, add `position: relative;` to the `.landing-page__banner` and `.landing-page__banner h1` declaration blocks, then add this:
-
-##### src/content/LandingPage/\_landing-page.scss
-
-```scss
-.landing-page__banner:before {
-  content: '';
-  position: absolute;
-  left: -$spacing-05;
-  top: 0;
-  right: -$spacing-05;
-  bottom: 0;
-  background: $ui-01;
 }
 ```
 
@@ -401,16 +457,13 @@ For our second row, we need to fix the tabs positioning to match our design spec
   padding-bottom: $layout-05;
 }
 
-.landing-page__r2 strong,
-.landing-page__r2 p {
+.landing-page__subheading {
   @include type-style('productive-heading-03');
-}
-
-.landing-page__r2 strong {
   font-weight: 600;
 }
 
-.landing-page__r2 p {
+.landing-page__p {
+  @include type-style('productive-heading-03');
   margin-top: $spacing-06;
   margin-bottom: $spacing-08;
 }
@@ -420,7 +473,7 @@ _Note: By inspecting the tabs component, you can see that the tab height compute
 
 ### Row three
 
-Let's also add some styles for the last row, even though that will get used later in the tutorial.
+Let's also add some styles for the last row, even though that will get used later in the tutorial. You'll notice that we get to re-use the `landing-page-background` mixin that we just created.
 
 ##### src/content/LandingPage/\_landing-page.scss
 
@@ -428,26 +481,10 @@ Let's also add some styles for the last row, even though that will get used late
 .landing-page__r3 {
   padding-top: $spacing-08;
   padding-bottom: $spacing-08;
-  position: relative;
-  background-color: $ui-01;
+  @include landing-page-background;
 }
 
-.landing-page__r3:before {
-  content: '';
-  position: absolute;
-  left: -$spacing-05;
-  top: 0;
-  right: -$spacing-05;
-  bottom: 0;
-  background: $ui-01;
-}
-
-.landing-page__r3 > * {
-  // sit above the pseudo-element background
-  position: relative;
-}
-
-.landing-page__r3 strong {
+.landing-page__label {
   @include type-style('heading-01');
 }
 ```
@@ -472,16 +509,18 @@ return (
 
 ## Build repo page
 
-### Data table
+We currently have `RepoPage.js` that just contains a grid and placeholder content for the time being. In the next tutorial step we're going to be querying an API to populate the `DataTable` component in this page. As a best practice to separate data fetching from the presentation components, go ahead and create a `RepoTable.js` as a sibling to `RepoPage.js` in `src/content/RepoPage`.
 
-First, we'll add our data table by importing a few components:
+### Build data table
 
-##### src/content/RepoPage/RepoPage.js
+First, we'll add our data table by importing a few components in `RepoTable.js`:
+
+##### src/content/RepoPage/RepoTable.js
 
 ```javascript
+import React from 'react';
 import {
   DataTable,
-  Pagination,
   TableContainer,
   Table,
   TableHead,
@@ -495,14 +534,110 @@ import {
 } from 'carbon-components-react';
 ```
 
-### Data table props
+Then, let's create the `RepoTable` component and export it at the very bottom of the page.
 
-Before we can add the components to our `return` section, we need to create arrays for our row content and our header content. Add these arrays in the `render()` function above the return block:
+##### src/content/RepoPage/RepoTable.js
+
+<!-- prettier-ignore-start -->
+```javascript
+const RepoTable = ({ rows, headers }) => {
+  return (
+    <DataTable
+      rows={rows}
+      headers={headers}
+      render={({
+        rows,
+        headers,
+        getHeaderProps,
+        getRowProps,
+        getTableProps,
+      }) => (
+        <TableContainer
+          title="Carbon Repositories"
+          description="A collection of public Carbon repositories.">
+          <Table {...getTableProps()}>
+            <TableHead>
+              <TableRow>
+                <TableExpandHeader />
+                {headers.map(header => (
+                  <TableHeader {...getHeaderProps({ header })}>
+                    {header.header}
+                  </TableHeader>
+                ))}
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {rows.map(row => (
+                <React.Fragment key={row.id}>
+                  <TableExpandRow {...getRowProps({ row })}>
+                    {row.cells.map(cell => (
+                      <TableCell key={cell.id}>{cell.value}</TableCell>
+                    ))}
+                  </TableExpandRow>
+                  <TableExpandedRow colSpan={headers.length + 1}>
+                    <p>Row description</p>
+                  </TableExpandedRow>
+                </React.Fragment>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+      )}
+    />
+  );
+};
+
+export default RepoTable;
+```
+<!-- prettier-ignore-end -->
+
+This component uses two props, `rows` and `headers`, and returns a Carbon `DataTable`. As for where the various `Table*` components came from? The [DataTable story](http://react.carbondesignsystem.com/?selectedKind=DataTable&selectedStory=with%20expansion) in Storybook was used to put together the data table structure.
+
+At this point, return to `RepoPage.js` because now we need to render a static `RepoTable`.
+
+### Render data table
+
+Import `RepoTable` in `RepoPage.js`.
 
 ##### src/content/RepoPage/RepoPage.js
 
 ```javascript
-const initialRows = [
+import RepoTable from './RepoTable';
+```
+
+Then below the imports, include the following arrays to pass into the `RepoTable` component. We'll be setting the `rows` array from an API in the next tutorial step, but for now, static example rows will suffice.
+
+##### src/content/RepoPage/RepoPage.js
+
+```javascript
+const headers = [
+  {
+    key: 'name',
+    header: 'Name',
+  },
+  {
+    key: 'createdAt',
+    header: 'Created',
+  },
+  {
+    key: 'updatedAt',
+    header: 'Updated',
+  },
+  {
+    key: 'issueCount',
+    header: 'Open Issues',
+  },
+  {
+    key: 'stars',
+    header: 'Stars',
+  },
+  {
+    key: 'links',
+    header: 'Links',
+  },
+];
+
+const rows = [
   {
     id: '1',
     name: 'Repo 1',
@@ -531,145 +666,17 @@ const initialRows = [
     links: 'Links',
   },
 ];
-
-const headers = [
-  {
-    key: 'name',
-    header: 'Name',
-  },
-  {
-    key: 'createdAt',
-    header: 'Created',
-  },
-  {
-    key: 'updatedAt',
-    header: 'Updated',
-  },
-  {
-    key: 'issueCount',
-    header: 'Open Issues',
-  },
-  {
-    key: 'stars',
-    header: 'Stars',
-  },
-  {
-    key: 'links',
-    header: 'Links',
-  },
-];
 ```
 
-We'll start by adding `DataTable`. It will have three props: `rows`, which will accept the `initialRows` array we created earlier, `headers`, which will accept the `headers` array we created earlier, and `render`, which will accept a function to render the rest of the data table components.
-
-##### src/content/RepoPage/RepoPage.js
-
-```javascript
-<div className="bx--col-lg-16">
-  <DataTable rows={initialRows} headers={headers} render={() => ()} />
-</div>
-```
-
-_Note: this won't work quite yet._
-
-### Render function
-
-Next we'll add the following arguments to our render function (this won't work quite yet):
-
-##### src/content/RepoPage/RepoPage.js
-
-```javascript
-render={({
-  rows,
-  headers,
-  getHeaderProps,
-  getRowProps,
-  getTableProps,
-}) => ()}
-```
-
-In the render function, the structure of our data table components will be like so:
-
-```bash
-TableContainer
-└──Table
-   ├──TableHead
-   │  └───TableRow
-   │      ├──TableExpandHeader
-   │      └──TableHeader
-   └──TableBody
-      └───React.Fragment
-          ├──TableExpandRow
-          │  └──TableCell
-          └──TableExpandedRow
-```
-
-In our file, that will look like this (now it works!):
+Lastly in `RepoPage.js`, we need to simply replace `Data table will go here` with:
 
 ##### src/content/RepoPage/RepoPage.js
 
 <!-- prettier-ignore-start -->
-```javascript
-render={({ rows, headers, getHeaderProps, getRowProps, getTableProps, }) => (
-<TableContainer
-  title="Carbon Repositories"
-  description="A collection of public Carbon repositories."
->
-  <Table {...getTableProps()}>
-    <TableHead>
-      <TableRow>
-        <TableExpandHeader />
-        {headers.map(header => (
-        <TableHeader {...getHeaderProps({ header })}>
-          {header.header}
-        </TableHeader>
-        ))}
-      </TableRow>
-    </TableHead>
-    <TableBody>
-      {rows.map(row => (
-      <React.Fragment key={row.id}>
-        <TableExpandRow {...getRowProps({ row })}>
-          {row.cells.map(cell => (
-          <TableCell key={cell.id}>{cell.value}</TableCell>
-          ))}
-        </TableExpandRow>
-        <TableExpandedRow colSpan={headers.length + 1}>
-          <h1>Expandable row content</h1>
-          <p>Description here</p>
-        </TableExpandedRow>
-      </React.Fragment>
-      ))}
-    </TableBody>
-  </Table>
-</TableContainer>
-)}
+```html
+<RepoTable headers={headers} rows={rows} />
 ```
 <!-- prettier-ignore-end -->
-
-### Pagination
-
-Last but not least, we'll need to add our pagination component as a sibling of `DataTable`.
-
-##### src/content/RepoPage/RepoPage.js
-
-<!-- prettier-ignore-start -->
-```javascript
-<Pagination
-  totalItems={1228}
-  backwardText="Previous page"
-  forwardText="Next page"
-  pageSize={100}
-  pageSizes={[10,
-  25,
-  50,
-  100]}
-  itemsPerPageText="Items per page"
-/>
-```
-<!-- prettier-ignore-end -->
-
-It's important to note that the application should _only_ render rows corresponding to the current page from `<Pagination>`. This is not a big issue in this step, since we're only building out the static page, but will be important when adding data in the next step.
 
 ## Style repo page
 
