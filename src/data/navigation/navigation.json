@@ -198,6 +198,9 @@
       },
       "ui-shell": {
         "title": "UI shell"
+      },
+      "deleting": {
+        "title": "Deleting pattern"
       }
     }
   },
