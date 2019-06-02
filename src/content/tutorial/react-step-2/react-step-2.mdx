@@ -115,7 +115,17 @@ In order to use the grid, we need to wrap everything in a `<div className="bx--g
 
 Our column sizes are specified by the number of columns they'll be spanning. If we use `bx--col-lg-4`, it means it'll span 4 of the 16 columns. If we use `bx--col-lg-8` it means it'll span 8 of the 16 columns, and so on.
 
-We know from our design specs that we'll need three rows. The first row design doesn't appear to need any columns. The second row looks like it has two columns of equal width. The third row looks like it has four columns of equal width.
+We've included the designs for this tutorial app in the `design.sketch` file found as a top-level file in the `carbon-tutorial` repository. But, if you don't have Sketch installed and available to inspect the design, we'll provide screenshots.
+
+<ImageComponent cols="12" caption="Landing page grid">
+
+![Landing page grid](/images/landing-layout.png)
+
+</ImageComponent>
+
+_Pro tip:_ `CTRL-L` _toggles the layout in Sketch._
+
+We'll break this down into three rows. The first row with the gray background doesn't appear to need any columns. The second row with the white background looks like it has two columns of different widths. The third row with the gray background looks like it has four columns of equal width.
 
 We'll make rows like so:
 
@@ -128,8 +138,8 @@ return (
       <div className="bx--col-lg-16">1</div>
     </div>
     <div className="bx--row landing-page__r2">
-      <div className="bx--col-lg-8">1/2</div>
-      <div className="bx--col-lg-8">1/2</div>
+      <div className="bx--col-md-4 bx--col-lg-7">7/16</div>
+      <div className="bx--col-md-4 bx--offset-lg-1 bx--col-lg-8">8/16</div>
     </div>
     <div className="bx--row landing-page__r3">
       <div className="bx--col-md-4 bx--col-lg-4">1/4</div>
@@ -142,6 +152,8 @@ return (
 ```
 
 We added a class of `bx--grid--full-width` to the grid container since our rows need to expand the whole page without any margins. We also added some custom classes like `landing-page`, `landing-page__banner`, `landing-page__r2`, etc., which we will use later.
+
+Also, take notice of the second row. The tab content only covers 7 columns at this large viewport to prevent overly-large line lengths, so we needed to add a 1 column offset `bx--offset-lg-1` to second column to fill the full 16 columns in the grid. Then, both of those columns have `bx--col-md-4` classes so they are of equal width at medium-sized viewports.
 
 ## Build landing page
 
@@ -224,8 +236,10 @@ Modify the second row to use the `Tab` component.
       <Tab {...props.tab} label="About">
         <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
           <div className="bx--row landing-page__tab-content">
-            <div className="bx--col-lg-8">1/2</div>
-            <div className="bx--col-lg-8">1/2</div>
+            <div className="bx--col-md-4 bx--col-lg-7">7/16</div>
+            <div className="bx--col-md-4 bx--offset-lg-1 bx--col-lg-8">
+              8/16
+            </div>
           </div>
         </div>
       </Tab>
@@ -253,6 +267,8 @@ Modify the second row to use the `Tab` component.
   </div>
 </div>
 ```
+
+_Note: We're using the grid for the page layout, but we also need to apply the grid within the tab content. When doing so, make sure the nested grid has the expected_ `grid` _>_ `row` _>_ `col` _DOM structure._
 
 Hold up! If you were to run [DAP](https://www.ibm.com/able/dynamic-assessment-plug-in.html) to check for accessibility violations, you'd see `Multiple navigation landmarks must have unique labels specified with aria-label or aria-labelledby` because both the `Breadcrumb` and `Tabs` components use `<nav>` elements. To fix, add `aria-label` to the `Breadcrumb` opening tag:
 
@@ -307,7 +323,7 @@ We can now add our images and text for each column in the first `Tab` in `Landin
 <Tab {...props.tab} label="About">
   <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
     <div className="bx--row landing-page__tab-content">
-      <div className="bx--col-lg-8">
+      <div className="bx--col-md-4 bx--col-lg-7">
         <h2 className="landing-page__subheading">
           What is Carbon?
         </h2>
@@ -320,7 +336,7 @@ We can now add our images and text for each column in the first `Tab` in `Landin
         </p>
         <Button>Learn more</Button>
       </div>
-      <div className="bx--col-lg-8">
+      <div className="bx--col-md-4 bx--offset-lg-1 bx--col-lg-8">
         <img
           className="landing-page__illo"
           src={`${process.env.PUBLIC_URL}/tab-illo.png`}
@@ -375,6 +391,14 @@ We've added basic layout styles in `_landing-page.scss`, so now let's add type, 
 
 ### Banner
 
+<ImageComponent cols="8" caption="Banner vertical spacing">
+
+![Banner vertical spacing](/images/landing-r1-spacing.png)
+
+</ImageComponent>
+
+_Pro tip:_ `CTRL-G` _toggles the grid in Sketch._
+
 Back to `_landing-page.scss`, we need to add space above the breadcrumb and below the heading. For that, add:
 
 ##### src/content/LandingPage/\_landing-page.scss
@@ -386,9 +410,11 @@ Back to `_landing-page.scss`, we need to add space above the breadcrumb and belo
 }
 ```
 
-Looking at the design, we need a wall-to-well light gray background behind the banner and also behind the third row. This is a great opportunity to use a Sass mixin. We could put this at the top of `_landing-page.scss`, but it's best practice to place mixins in a dedicated file, so create a `_mixins.scss` file in `src/content/LandingPage`.
+Referencing the [spacing token table](https://www.carbondesignsystem.com/guidelines/spacing#spacing-scale), `16px` can be set with the `$spacing-05` token. The design calls for `128px` of space below the heading and that's not in the spacing scale, we can achieve that in Sass by multiplying 32px (`$spacing-07`) by 4. We could use `128px` or `8rem` directly in our styling, but using our tokens preserves consistency should the token values get updated in the future.
 
-Add the following in `_mixins.scss`. Per the design we need to use Gray 10 for our banner background color, which can be set with the `$ui-01` [token](https://www.carbondesignsystem.com/guidelines/color/usage). Also, we want the background to extend into the grid's outermost gutters to go the full width of the viewport, so given the DOM structure, we can achieve that by setting the background in an absolutely positioned pseudo element.
+Looking at the design, we need a wall-to-wall light gray background behind the banner and also behind the third row. This is a great opportunity to use a Sass mixin. We could put this at the top of `_landing-page.scss`, but it's best practice to place mixins in a dedicated file, so create a `_mixins.scss` file in `src/content/LandingPage`.
+
+Add the following in `_mixins.scss`. Per the design we need to use Gray 10 for our banner background color, which can be set with the `$ui-01` [color token](https://www.carbondesignsystem.com/guidelines/color/usage). Also, we want the background to extend into the grid's outermost gutters to go the full width of the viewport, so given the DOM structure, we can achieve that by setting the background in an absolutely positioned pseudo element.
 
 ##### src/content/LandingPage/\_mixins.scss
 
@@ -431,7 +457,15 @@ Now to use the new mixin, update the `.landing-page__banner` declaration block t
 }
 ```
 
-Next, we'll add the correct header style to our `h1` by including our [type token](https://www.carbondesignsystem.com/guidelines/typography/productive) like so:
+Next, we can see that the `h1` is using the `heading-05` type token.
+
+<ImageComponent cols="8" caption="Banner heading type">
+
+![Banner heading type](/images/landing-r1-type.png)
+
+</ImageComponent>
+
+The Sketch symbol naming is consistent with the development Sass tokens to help translate design to development. So, looking up the [type token](https://www.carbondesignsystem.com/guidelines/typography/productive), we know to use `productive-heading-05`:
 
 ##### src/content/LandingPage/\_landing-page.scss
 
@@ -443,7 +477,7 @@ Next, we'll add the correct header style to our `h1` by including our [type toke
 
 ### Row two
 
-For our second row, we need to fix the tabs positioning to match our design spec, as well as fix our type styles. We'll do this like so:
+For our second row, we need to fix the tabs vertical positioning to match the design. By inspecting the tabs component, you can see that the tab height computes to `40px`. We can use that to create our negative top margin in rem units.
 
 ##### src/content/LandingPage/\_landing-page.scss
 
@@ -451,7 +485,21 @@ For our second row, we need to fix the tabs positioning to match our design spec
 .landing-page__r2 {
   margin-top: rem(-40px);
 }
+```
 
+We also need to adust our vertical spacing and type treatment. Like before, it's a matter of using spacing and type tokens like so:
+
+<ImageComponent cols="8" caption="Row 2 vertical spacing">
+
+![Row 2 vertical spacing](/images/landing-r2-spacing.png)
+
+</ImageComponent>
+
+_Note: You may be wondering why there are vertical gaps between the type and spacers. Each type token has a line height that's suited for its font size. The vertical spacers adjacently touch the line height boundaries and not the baseline, for consistency as well as development ease so_ `margins` _and_ `paddings` _don't need to offset line heights._
+
+##### src/content/LandingPage/\_landing-page.scss
+
+```scss
 .landing-page__tab-content {
   padding-top: $layout-05;
   padding-bottom: $layout-05;
@@ -469,9 +517,13 @@ For our second row, we need to fix the tabs positioning to match our design spec
 }
 ```
 
-_Note: By inspecting the tabs component, you can see that the tab height computes to_ `40px`_. We then used that to create our negative top margin in rem units._
-
 ### Row three
+
+<ImageComponent cols="8" caption="Row 3 vertical spacing">
+
+![Row 3 vertical spacing](/images/landing-r3-spacing.png)
+
+</ImageComponent>
 
 Let's also add some styles for the last row, even though that will get used later in the tutorial. You'll notice that we get to re-use the `landing-page-background` mixin that we just created.
 
