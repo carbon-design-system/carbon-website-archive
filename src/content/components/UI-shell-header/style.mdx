@@ -6,7 +6,7 @@ tabs: ['Code', 'Usage', 'Style']
 
 ## Color
 
-_Note: The UI Shell does not currently use the Carbon theme tokens; theming options for the shell will be available in the future. All color used in the UI Shell is from the [IBM Design Language palette](https://www.ibm.com/design/language/elements/color#specifications)._
+_Note: The UI Shell does not currently use the Carbon theme tokens; theming options for the shell will be available in the future. All color used in the UI Shell is from the [IBM Design Langauge palette](https://www.ibm.com/design/language/elements/color#specifications)._
 
 | Class                         | Property         | Color value  |
 | ----------------------------- | ---------------- | ------------ |
@@ -20,6 +20,12 @@ _Note: The UI Shell does not currently use the Carbon theme tokens; theming opti
 | `.bx--header__submenu`        | background color | Gray 90      |
 | `.bx--header__submenu`        | text color       | Gray 30      |
 | `.bx--header__action`         | fill             | Gray 30      |
+
+<ImageComponent cols="12" caption="UI Shell header.">
+
+![ui shell header](images/header-style-1.png)
+
+</ImageComponent>
 
 ### Interactive states
 
@@ -63,6 +69,8 @@ _Note: The UI Shell does not currently use the Carbon theme tokens; theming opti
 | `.bx--header__action:active`        | background color | Gray 80        |
 | `.bx--header__action:active`        | fill             | Gray 10        |
 
+
+
 ## Typography
 
 Menu labels and text should be set in sentence case.
@@ -95,17 +103,29 @@ The header should span the full width of the browser window. The header can eith
 | `.bx--header__menu-arrow`      | padding-left                | 8 / 0.5    | `$spacing-03` |
 | `.bx--header__submenu`         | padding-left, padding right | 16 / 1     | `$spacing-05` |
 | `.bx--header__action`          | height, width               | 48 / 3     | –             |
-| `svg`                          | size                        | 20 / 1.25  | –             |
 
-<!--
-[to do: spec image, header and submenu]
--->
+<ImageComponent cols="12" caption="Structure and spacing measurements for UI shell header | px | rem">
+
+![ui shell header spec](images/header-style-2.png)
+
+</ImageComponent>
+
+<ImageComponent cols="12" caption="Structure and spacing measurements for header submenu | px | rem">
+
+![ui shell header submenu spec](images/header-style-3.png)
+
+</ImageComponent>
 
 ### Responsive behavior
 
 In smaller broswer windows, `menu items` in the header should collapse into the left side nav menu. Items that were once in the header should stack at the top of the side nav panel if other items were already present in the panel. 
 
-<!--
-[to do]
-[example image]
--->
+<ImageComponent cols="12" caption="Responsive behavior for UI shell header">
+
+![responsive behavior example](images/header-style-4.png)
+
+</ImageComponent>
+
+
+
+
