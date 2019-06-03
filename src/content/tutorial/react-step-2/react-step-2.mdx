@@ -7,7 +7,7 @@ internal: false
 
 <AnchorLinks>
 
-- [Fork, clone & branch](#fork-clone--branch)
+- [Fork, clone and branch](#fork-clone-and-branch)
 - [Install grid](#install-grid)
 - [Add landing page grid](#add-landing-page-grid)
 - [Build landing page](#build-landing-page)
@@ -471,7 +471,7 @@ The Sketch symbol naming is consistent with the development Sass tokens to help 
 
 ```scss
 .landing-page__heading {
-  @include type-style('productive-heading-05');
+  @include carbon--type-style('productive-heading-05');
 }
 ```
 
@@ -506,12 +506,12 @@ _Note: You may be wondering why there are vertical gaps between the type and spa
 }
 
 .landing-page__subheading {
-  @include type-style('productive-heading-03');
-  font-weight: 600;
+  @include carbon--type-style('productive-heading-03');
+  @include carbon--font-weight('semibold');
 }
 
 .landing-page__p {
-  @include type-style('productive-heading-03');
+  @include carbon--type-style('productive-heading-03');
   margin-top: $spacing-06;
   margin-bottom: $spacing-08;
 }
@@ -537,7 +537,7 @@ Let's also add some styles for the last row, even though that will get used late
 }
 
 .landing-page__label {
-  @include type-style('heading-01');
+  @include carbon--type-style('heading-01');
 }
 ```
 
@@ -761,7 +761,7 @@ $ yarn ci-check
 
 _Note: If the_ `ci-check` _is giving an error, it's likely that some of your source files are not properly formatted. This could happen if your text editor isn't formatting with Prettier on save. To get_ `ci-check` _to pass, run_ `yarn format`_ then re-run_ `yarn ci-check`_._
 
-### Git commit & push
+### Git commit and push
 
 Before we can create a pull request, stage and commit all of your changes:
 
@@ -774,6 +774,8 @@ Then, push to your repository:
 ```bash
 $ git push origin react-step-2
 ```
+
+_Note: If you receive a_ `non-fast-forward` _error, it's likely that your forked repository is behind the original repository and needs updated. This can happen if the tutorial was updated after you began working on it. To fix, run_ `git pull upstream react-step-2` _to merge the changes into your branch, then you can try pushing again. Or, you can [manually merge](https://help.github.com/en/articles/syncing-a-fork) in the upstream changes._
 
 ### Pull request (PR)
 
