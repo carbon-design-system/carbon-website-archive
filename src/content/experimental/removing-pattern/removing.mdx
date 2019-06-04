@@ -1,0 +1,53 @@
+---
+title: Removing
+---
+
+### This action removes an object from a list or item; however, the object is not destroyed as a result of the action. Multiple objects can be removed at once.
+
+#### Status: 
+
+Experimental
+
+#### Maintainers:
+
+[Vikki Paterson](https://github.ibm.com/VICTORIA), [Arnaud Gillard](https://github.ibm.com/Arnaud-Gillard)
+
+<AnchorLinks>
+
+- [Low impact](#low-impact)
+- [High impact](#high-impact)
+
+</AnchorLinks>
+
+<ImageComponent cols="8" caption="Example of a remove pattern using a modal">
+
+![Example of a remove pattern using a modal in context](images/context.png)
+
+</ImageComponent>
+
+
+## Low impact
+As removing does not destroy an asset, typically user confirmation is not required. 
+
+
+## High impact
+
+As removing does not destroy an asset, typically user confirmation is not required. 
+
+- Require user confirmation
+
+- Text should tell the user the consequences of the removal and that the action cannot be undone.
+
+- Optionally, when the remove button is selected it changes to show ‘Removing...’.  
+
+<ImageComponent cols="8" caption="Example of high-impact remove modal">
+
+![Example of a high-impact remove modal](images/first.png)
+
+</ImageComponent>
+
+<ImageComponent cols="8" caption="Example of a high-impact remove modal in its removing state">
+
+![Example of a high-impact remove modal in its 'removing' state](images/second.png)
+
+</ImageComponent>
