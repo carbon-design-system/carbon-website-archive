@@ -3,9 +3,19 @@ title: UI shell right panel
 tabs: ['Code', 'Usage', 'Style']
 ---
 
+### The right panel is part of the Carbon UI shell. A shell is a collection of components shared by all products within a platform. It provides a common set of interaction patterns that persist between and across products. 
+
+<AnchorLinks>
+
+- [General guidance](#general-guidance)
+- [Anatomy](#anatomy)
+- [Behavior](#behavior)
+
+</AnchorLinks>
+
 ## General guidance
 
-The UI shell is made up of three components: The [primary header](/components/UI-shell-header/usage), the left panel, and the [right panel](/components/UI-shell-right-panel/usage). All three can be used independently, but the components were designed to work together.
+The UI shell is made up of three components: The [primary header](/components/UI-shell-header/usage), the [left panel](/components/UI-shell-right-panel/usage), and the right panel. All three can be used independently, but the components were designed to work together.
 
 | Shell UI component      |   |
 |-------------|---|
@@ -21,9 +31,9 @@ The UI shell is made up of three components: The [primary header](/components/UI
 
 ## Anatomy
 
-The right panel is a vertical panel that is anchored to the header and invoked by icons on the right side of the header. Right panels have a consistent width, span the full height of the viewport, and are flush to the right edge of the viewport. Only one right panel can be open at a time. Right panels are always treated as floating panels.
+The right panel is invoked by icons on the right side of the header, and remains anchored to that icon. Right panels have a consistent width, span the full height of the viewport, and are flush to the right edge of the viewport.
 
- The right panel is used as a header panel and the app switcher.  
+Note that the app switcher also lives in a right panel.
 
 <ImageComponent cols="12"  caption="The right panel configured as an empty header panel (left) and a app switcher (right).">
 
@@ -31,9 +41,13 @@ The right panel is a vertical panel that is anchored to the header and invoked b
 
 </ImageComponent>
 
-### Header panel
+#### Switcher item
 
-Use a header panel when additional content or actions associated with a header icon needs to be shown upon click. Profile and notifications panels are good examples of this element in action.
+A switcher item is anything that changes what product, offering, or property occupies the UI shell. Consider moments in a product when you switch from a calendar to a mailbox, from Kubernetes to Catalog. These items belong in the switcher.
+
+#### Switcher divider
+
+A switcher divider groups similar switcher items. You can use a divider to set apart a parent domain, group child domains similar in hierarchy to the parent, and set apart additional resources. The divider should not be used to separate every switcher item.
 
 ### App switcher
 
@@ -62,3 +76,17 @@ The far right header icon is reserved for the app switcher icon. The app switche
   </DoDontExample>
 </Column>
 </Row>
+
+## Behavior
+
+#### Expansion
+
+Right panels always float over page content, and always remain anchored to their associated icon. You can have multiple right panels, but only only one can be expanded at any time.
+
+#### Dismissal
+
+Once expanded, the panel's associated icon becomes an “✕”. To dismiss the panel, a user must click or tap the “✕”.
+
+#### Selected state
+
+There is no selected state for right panel items. Even if a user is currently within one of the panel items, the item remains unselected.
