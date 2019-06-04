@@ -12,35 +12,37 @@ _Note: The UI Shell does not currently use the Carbon theme tokens; theming opti
 | ----------------------------- | ---------------- | ------------ |
 | `.bx--header`                 | background color | Gray 100     |
 | `.bx--header`                 | border-bottom    | Gray 80      |
-| `.bx--header__menu-trigger`   | fill             | Gray 10      |
 | `.bx--header__name`           | text color       | Gray 10      |
+| `.bx--header__menu-trigger`   | fill             | Gray 10      |
 | `.bx--header__nav::before`    | border           | Gray 80      |
-| `.bx--header__menu-item`      | text color       | Gray 30      |
-| `.bx--header__menu-item`      | svg              | Gray 30      |
-| `.bx--header__submenu`        | background color | Gray 90      |
-| `.bx--header__submenu`        | text color       | Gray 30      |
-| `.bx--header__action`         | fill             | Gray 30      |
 
-<ImageComponent cols="12" caption="UI Shell header.">
+<ImageComponent cols="12" caption="UI Shell header example.">
 
 ![ui shell header](images/header-style-1.png)
 
 </ImageComponent>
 
-### Interactive states
-
-#### Menu-trigger
+### Menu-trigger
 
 | Class                               | Property         | Color value    |
 | ----------------------------------- | ---------------- | -------------- |
+| `.bx--header__menu-trigger`         | fill             | Gray 10      |
 | `.bx--header__menu-trigger:hover`   | background color | Gray 100-hover |
 | `.bx--header__menu-trigger:focus`   | border           | White          |
 | `.bx--header__menu-trigger:active`  | background color | Gray 80        |
 
-#### Menu-item
+<ImageComponent cols="8" caption="Menu-trigger interactive states">
+
+![Menu trigger interactive states](images/header-style-5.png)
+
+</ImageComponent>
+
+### Menu-item
 
 | Class                               | Property         | Color value    |
 | ----------------------------------- | ---------------- | -------------- |
+| `.bx--header__menu-item`            | text color       | Gray 30      |
+| `.bx--header__menu-item`            | svg              | Gray 30      |
 | `.bx--header__menu-item:hover`      | background color | Gray 100-hover |
 | `.bx--header__menu-item:hover`      | text color       | Gray 10        |
 | `.bx--header__menu-item:hover`      | svg              | Gray 10        |
@@ -49,27 +51,46 @@ _Note: The UI Shell does not currently use the Carbon theme tokens; theming opti
 | `.bx--header__menu-item:active`     | text color       | Gray 10        |
 | `.bx--header__menu-item:active`     | svg              | Gray 10        |
 
-#### Sub-menu
+<ImageComponent cols="8" caption="Menu item interactive states">
+
+![Menu item interactive states](images/header-style-6.png)
+
+</ImageComponent>
+
+### Sub-menu
+
+| Class                                | Property         | Color value    |
+| ------------------------------------ | ---------------- | -------------- |
+| `.bx--header__submenu`               | background color | Gray 90      |
+| `.bx--header__submenu`               | text color       | Gray 30      |
+| `.bx--header__submenu:hover`         | background color | Gray 90-hover |
+| `.bx--header__submenu:hover`         | text color       | Gray 10        |
+| `.bx--header__submenu:focus`         | border           | White          |
+| `.bx--header__submenu:active`        | background color | Gray 70        |
+| `.bx--header__submenu:active`        | text color       | Gray 10        |
+
+<ImageComponent cols="12" caption="Sub-menu interactive states">
+
+![Sub-menu interactive states](images/header-style-7.png)
+
+</ImageComponent>
+
+### Action
 
 | Class                               | Property         | Color value    |
 | ----------------------------------- | ---------------- | -------------- |
-| `.bx--header__action:hover`         | background color | Gray 100-hover |
-| `.bx--header__action:hover`         | text color       | Gray 10        |
-| `.bx--header__action:focus`         | border           | White          |
-| `.bx--header__action:active`        | background color | Gray 80        |
-| `.bx--header__action:active`        | text color       | Gray 10        |
-
-#### Action
-
-| Class                               | Property         | Color value    |
-| ----------------------------------- | ---------------- | -------------- |
+| `.bx--header__action`               | fill             | Gray 30      |
 | `.bx--header__action:hover`         | background color | Gray 100-hover |
 | `.bx--header__action:hover`         | fill             | Gray 10        |
 | `.bx--header__action:focus`         | border           | White          |
 | `.bx--header__action:active`        | background color | Gray 80        |
 | `.bx--header__action:active`        | fill             | Gray 10        |
 
+<ImageComponent cols="8" caption="Header action interactive states">
 
+![Header action interactive states](images/header-style-8.png)
+
+</ImageComponent>
 
 ## Typography
 
