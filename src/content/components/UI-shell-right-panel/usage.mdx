@@ -21,6 +21,44 @@ The UI shell is made up of three components: The [primary header](/components/UI
 
 ## Anatomy
 
-Header panels are vertical panels that are anchored in the header and invoked by controls on the right side of the header. Header panels have a consistent width, span the full height of the viewport, and are flush to the right edge of the viewport. Only one header panel can be open at a time. Header panels are always treated as floating panels.
+The right panel is a vertical panel that is anchored to the header and invoked by icons on the right side of the header. Right panels have a consistent width, span the full height of the viewport, and are flush to the right edge of the viewport. Only one right panel can be open at a time. Right panels are always treated as floating panels.
 
-Use a header panel when additional content or actions associated with a header icon needs to be shown upon click. Profile and notifications panels are good examples of this element in action. More details about panel types and behaviors can be found under the Layout section.
+ The right panel is used as a header panel and the app switcher.  
+
+<ImageComponent cols="12"  caption="The right panel configured as an empty header panel (left) and a app switcher (right).">
+
+![Header panel and app switcher.](images/right-panel-usage-1.png)
+
+</ImageComponent>
+
+### Header panel
+
+Use a header panel when additional content or actions associated with a header icon needs to be shown upon click. Profile and notifications panels are good examples of this element in action.
+
+### App switcher
+
+The far right header icon is reserved for the app switcher icon. The app switcher icon and the app switcher panel should only be used together.
+
+<Row>
+<Column offsetLg="4" colMd="4" colLg="6">
+  <DoDontExample correct label="Positioned the app switcher to the far right.">
+
+![Example of the app switcher icon being used correctly.](images/right-panel-usage-2.png)
+
+  </DoDontExample>
+</Column>
+<Column colMd="4" colLg="6" >
+  <DoDontExample  label="Do not position other icons to the right of the app switcher.">
+
+![The app switcher icon is not positioned to the far right.](images/right-panel-usage-3.png)
+
+  </DoDontExample>
+</Column>
+<Column offsetLg="4" colMd="4" colLg="6" >
+  <DoDontExample  label="Do not use another icon for the app switcher.">
+
+![he app switcher not using the app switcher icon.](images/right-panel-usage-4.png)
+
+  </DoDontExample>
+</Column>
+</Row>
