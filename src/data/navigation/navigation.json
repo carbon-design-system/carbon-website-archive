@@ -21,6 +21,9 @@
       },
       "react-step-1": {
         "title": "1. Installing Carbon"
+      },
+      "react-step-2": {
+        "title": "2. Building pages"
       }
     }
   },
@@ -195,6 +198,9 @@
       },
       "ui-shell": {
         "title": "UI shell"
+      },
+      "deleting": {
+        "title": "Deleting pattern"
       }
     }
   },
