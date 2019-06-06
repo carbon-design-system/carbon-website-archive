@@ -565,6 +565,90 @@ module.exports = {
         },
       },
     },
+    '$inverse-support-01': {
+      role: ['Danger in high contrast moments'],
+      value: {
+        white: {
+          name: 'Red 50',
+          hex: '#FB4B53',
+        },
+        g10: {
+          name: 'Red 50',
+          hex: '#FB4B53',
+        },
+        g90: {
+          name: 'Red 60',
+          hex: '#DA1E28',
+        },
+        g100: {
+          name: 'Red 60',
+          hex: '#DA1E28',
+        },
+      },
+    },
+    '$inverse-support-02': {
+      role: ['Success in high contrast moments'],
+      value: {
+        white: {
+          name: 'Green 40',
+          hex: '#3DBB61',
+        },
+        g10: {
+          name: 'Green 40',
+          hex: '#3DBB61',
+        },
+        g90: {
+          name: 'Green 50',
+          hex: '#24A148',
+        },
+        g100: {
+          name: 'Green 50',
+          hex: '#24A148',
+        },
+      },
+    },
+    '$inverse-support-03': {
+      role: ['Warning in high contrast moments'],
+      value: {
+        white: {
+          name: 'Yellow',
+          hex: '#FDD13A',
+        },
+        g10: {
+          name: 'Yellow',
+          hex: '#FDD13A',
+        },
+        g90: {
+          name: 'Yellow',
+          hex: '#FDD13A',
+        },
+        g100: {
+          name: 'Yellow',
+          hex: '#FDD13A',
+        },
+      },
+    },
+    '$inverse-support-04': {
+      role: ['Information in high contrast moments'],
+      value: {
+        white: {
+          name: 'Blue 40',
+          hex: '#408BFC',
+        },
+        g10: {
+          name: 'Blue 40',
+          hex: '#408BFC',
+        },
+        g90: {
+          name: 'Blue 70',
+          hex: '#054ada',
+        },
+        g100: {
+          name: 'Blue 70',
+          hex: '#054ada',
+        },
+      },
+    },
     '$overlay-01': {
       role: ['Background overlay'],
       value: {
@@ -921,6 +1005,48 @@ module.exports = {
         g100: {
           name: 'Blue 90',
           hex: '#051b75',
+        },
+      },
+    },
+    '$skeleton-01': {
+      role: ['Skeleton state of graphics'],
+      value: {
+        white: {
+          name: 'Gray 10 hover',
+          hex: '#e5e5e5',
+        },
+        g10: {
+          name: 'Gray 10 hover',
+          hex: '#e5e5e5',
+        },
+        g90: {
+          name: 'Gray 80 hover',
+          hex: '#353535',
+        },
+        g100: {
+          name: 'Gray 80 hover',
+          hex: '#353535',
+        },
+      },
+    },
+    '$skeleton-02': {
+      role: ['Skeleton state of texts'],
+      value: {
+        white: {
+          name: 'Gray 30',
+          hex: '#BEBEBE',
+        },
+        g10: {
+          name: 'Gray 30',
+          hex: '#BEBEBE',
+        },
+        g90: {
+          name: 'Gray 70',
+          hex: '#565656',
+        },
+        g100: {
+          name: 'Gray 70',
+          hex: '#565656',
         },
       },
     },
