@@ -3,10 +3,25 @@ title: Text input
 tabs: ['Code', 'Usage', 'Style']
 ---
 
+### Text inputs enable the user to interact with and input content and data. This component can be used for long and short form entries.
+
+<AnchorLinks>
+
+- [General guidance](#general-guidance)
+- [Format](#format)
+- [Content](#content)
+
+</AnchorLinks>
+
+<ImageComponent cols="12" caption="An example of a text input.">
+
+![An example of a text input.](images/text-input-header-usage.png)
+
+</ImageComponent>
+
 ## General guidance
 
-_Text inputs_ enable the user to interact with and input data. Use when the application requires long-form content from the user.
-
+There instances, sometimes in the same form, where you need users to enter both short and long form content. Allow the size of the text input box to reflect the length of the content you expect the user to enter.
 
 | Type       | Purpose                                                                           |
 | ---------- | --------------------------------------------------------------------------------- |
@@ -15,11 +30,39 @@ _Text inputs_ enable the user to interact with and input data. Use when the appl
 
 ## Format
 
+### Default values
+
+Where possible, add programmatic assistance. Detect and pre-fill inputs to reduce errors and save time. When the software can't determine the value that belongs in an input, use type-ahead to make suggestions. Use sentence-case for default values, detected values, and auto-completion text.
+
+### Validation and errors
+
+Real time validation helps to streamline the process and keep data clean when the user is filling out forms. For full guidelines, refer to the [forms](/components/form/usage) usage page.
+
+<ImageComponent cols="8" caption="Error example">
+
+![Validation text example](images/text-input-usage-2.png)
+
+</ImageComponent>
+
+### Character count
+
+Text fields and text areas may have a character limit and counter. Use the character limit and counter to let users know how long their entry can be before they begin typing.
+
+While useful for data collection, character count is not an intuitive way to communicate content length to users. Character count allows a user to understand an input error if they surpass the character limit.
+
+<ImageComponent cols="8" caption="An example of a text area.">
+
+![An example of a text area.](images/text-area-usage-1.png)
+
+</ImageComponent>
+
+## Content
+
 ### Labels
 
 Effective form labeling helps users understand what information to enter into a text input. Using placeholder text in lieu of a label is sometimes employed as a space-saving method. However, this is not recommended because it hides context and presents accessibility issues.
 
-**Accessibility best practices for labels:**
+#### Accessibility best practices for labels:
 
 - Labels must be visible when an input gets focus.
 - Labels must be announced to the screen reader on focus.
@@ -45,16 +88,4 @@ Help text is pertinent information that assists the user in completing a field. 
 
 </ImageComponent>
 
-### Default values
 
-Where possible, add programmatic assistance. Detect and pre-fill inputs to reduce errors and save time. When the software can't determine the value that belongs in an input, use type-ahead to make suggestions. Use sentence-case for default values, detected values, and auto-completion text.
-
-### Validation and errors
-
-Real time validation helps to streamline the process and keep data clean when the user is filling out forms. For full guidelines, refer to the [forms](/components/form/usage) usage page.
-
-<ImageComponent cols="8" caption="Error example">
-
-![Validation text example](images/text-input-usage-2.png)
-
-</ImageComponent>
