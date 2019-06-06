@@ -3,12 +3,13 @@ title: UI shell header
 tabs: ['Usage','Style']
 ---
 
-### This header is part of the Carbon UI shell. A shell is a collection of components shared by all products within a platform. It provides a common set of interaction patterns that persist between and across products. 
+### This header is part of the Carbon UI shell. A shell is a collection of components shared by all products within a platform. It provides a common set of interaction patterns that persist between and across products.
 
 <AnchorLinks>
 
 - [General guidance](#general-guidance)
 - [Anatomy](#anatomy)
+- [Icon placement](#icon-placement)
 - [Behavior](#behavior)
 
 </AnchorLinks>
@@ -75,9 +76,30 @@ The switcher provides a way for the user to easily navigate _between_ products a
 
 Links to related systems should also live in the switcher. If you’re building a product for IBM, your switcher should include a link to [IBM.](http://ibm.com/)
 
-### Icon placement
+## Icon placement
 
-Icons are not a required element of the header and a product may choose to use any set of icons for their UI. The guidance provided is meant to help create consistency in your user’s expectations and experience across products.
+Icons are not a required element of the header and a product may choose to use any set of icons for their UI. Icons should always be aligned to the right of the header with no gaps between icons. 
+
+<Row>
+<Column offsetLg="4" colMd="4" colLg="4">
+  <DoDontExample correct label="Header icons are right aligned with no gaps">
+
+![Example of header icons right aligned with no gaps.](images/header-usage-5.png)
+
+  </DoDontExample>
+</Column>
+<Column colMd="4" colLg="4" >
+  <DoDontExample  label="Header icons with a gap between the account and help icons.">
+
+![Example of the header icons with a gap between the account and help icons](images/header-usage-6.png)
+
+  </DoDontExample>
+</Column>
+</Row>
+
+
+### Example placement
+The example below shows a header with a switcher, three core icons, a product icon, and search. 
 
 <ImageComponent cols="8" >
 
@@ -92,7 +114,7 @@ Icons are not a required element of the header and a product may choose to use a
 |Help|4th from the right||
 |Notifications|3rd from the right||
 |Account|2nd from the right||
-|Switcher|Right||
+|Switcher|Right|The switcher should always be positioned as the furthest right icon. This ensures the icon does not shift when navigating across systems. |
 
 ## Behavior
 
