@@ -196,8 +196,8 @@
       "ui-shell": {
         "title": "UI shell"
       },
-      "upload-pattern": {
-        "title": "Upload pattern"
+      "export-pattern": {
+        "title": "Export pattern"
       }
     }
   },
