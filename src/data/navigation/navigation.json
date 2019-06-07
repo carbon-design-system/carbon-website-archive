@@ -196,8 +196,8 @@
       "ui-shell": {
         "title": "UI shell"
       },
-      "creation-flows": {
-        "title": "Creation flows"
+      "download-pattern": {
+        "title": "Download pattern"
       }
     }
   },
