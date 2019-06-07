@@ -196,12 +196,6 @@
       "ui-shell": {
         "title": "UI shell"
       },
-      "download-pattern": {
-        "title": "Download pattern"
-      },
-      "import-pattern": {
-        "title": "Import pattern"
-      },
       "upload-pattern": {
         "title": "Upload pattern"
       }
