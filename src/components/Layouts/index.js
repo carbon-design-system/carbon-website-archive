@@ -316,6 +316,10 @@ class Layout extends React.Component {
                   linkText: 'IBM Design Language',
                 },
                 {
+                  href: 'https://www.ibm.com/design/brand/',
+                  linkText: 'IBM Brand Center',
+                },
+                {
                   href: 'https://www.carbondesignsystem.com',
                   linkText: 'IBM Product Design',
                 },
@@ -324,16 +328,20 @@ class Layout extends React.Component {
                   linkText: 'IBM Digital Design',
                 },
                 {
-                  href: 'https://www.ibm.com/design/research/',
-                  linkText: 'IBM Design Research',
-                },
-                {
                   href: 'https://www.ibm.com/design/thinking/',
                   linkText: 'Enterprise Design Thinking',
                 },
                 {
+                  href: 'https://www.ibm.com/design/research/',
+                  linkText: 'IBM Design Research',
+                },
+                {
                   href: 'https://www.ibm.com/services/ibmix/',
                   linkText: 'IBM iX',
+                },
+                {
+                  href: 'https://www.ibm.com/design/ai/',
+                  linkText: 'IBM AI',
                 },
               ]}
             />
