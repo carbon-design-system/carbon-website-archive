@@ -201,6 +201,9 @@
       },
       "import-pattern": {
         "title": "Import pattern"
+      },
+      "upload-pattern": {
+        "title": "Upload pattern"
       }
     }
   },
