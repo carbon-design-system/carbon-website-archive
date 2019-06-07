@@ -198,6 +198,9 @@
       },
       "download-pattern": {
         "title": "Download pattern"
+      },
+      "import-pattern": {
+        "title": "Import pattern"
       }
     }
   },
