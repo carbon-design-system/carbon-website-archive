@@ -90,7 +90,7 @@ You'll need a personal access token from your GitHub account in order to make re
 
 When you get to the scope/permissions step, you can leave them all unchecked. We don't need any special permissions, we just need access to the public API.
 
-Once you have your token, we need to put it in a place where create-react-app can use it. When your application is being built and developed, create-react-app will parse environmental variables in any file that ends with `.env` and make them available under `process.env.MY_VARIABLE`.
+Once you have your token, we need to put it in a place where create-react-app can use it. When your application is being built and developed, create-react-app will parse environmental variables in any file that starts with `.env` and make them available under `process.env.MY_VARIABLE`.
 
 One caveat is that we need to start our variables with `REACT_APP_`. You can read more about environmental variables in [create-react-app's guide](https://facebook.github.io/create-react-app/docs/adding-custom-environment-variables).
 
@@ -146,13 +146,15 @@ With:
 
 ##### src/index.js
 
+<!-- prettier-ignore-start -->
 ```html
-<ApolloProvider client="{client}">
+<ApolloProvider client={client}>
   <Router>
     <App />
   </Router>
 </ApolloProvider>
 ```
+<!-- prettier-ignore-end -->
 
 ## Fetch data
 
