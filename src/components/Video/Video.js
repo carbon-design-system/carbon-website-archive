@@ -16,10 +16,10 @@ export default class Vimeo extends React.Component {
             src={`https://player.vimeo.com/video/${vimeoId}`}
             width="640"
             height="360"
-            frameborder="0"
-            webkitallowfullscreen
-            mozallowfullscreen
-            allowfullscreen
+            frameBorder="0"
+            webkitallowFullScreen
+            mozallowFullScreen
+            allowFullScreen
           />
         </div>
       </div>
