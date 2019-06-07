@@ -29,7 +29,6 @@ import WebsiteTabs from '../WebsiteTabs';
 import SimpleColumns from '../SimpleColumns';
 import Video from '../Video';
 import PageTable from '../PageTable';
-import { Tab } from 'carbon-components-react';
 
 import { a, p, h1, h2, h3, h4, h5, ul, ol } from '../markdown/Markdown';
 
@@ -374,7 +373,6 @@ class Layout extends React.Component {
                   ComponentReact,
                   DoDontExample,
                   WebsiteTabs,
-                  Tab,
                   SimpleColumns,
                   Video,
                   PageTable,

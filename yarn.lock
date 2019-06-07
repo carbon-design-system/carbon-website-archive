@@ -912,10 +912,10 @@
   version "0.0.1-alpha.31"
   resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-0.0.1-alpha.31.tgz#41224409d085a577463b8681399572362dc601cb"
 
-"@carbon/icon-helpers@10.2.0":
-  version "10.2.0"
-  resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.2.0.tgz#f58ab1d14b8b63d485d31e7d785d25057eac5409"
-  integrity sha512-PAxu8KMuSrifF4VCW7N7bgu/QKG/Q4T9ojWUEqI0zKjTCkJnzEZTYgK1FrWAdE1uAdAwLlbPIjzIS/QzP15Uvw==
+"@carbon/icon-helpers@0.0.1-beta.5":
+  version "0.0.1-beta.5"
+  resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-0.0.1-beta.5.tgz#829e8593dbcee76e5d6300839d2b5d734f90c98d"
+  integrity sha512-3gFkiIWRlfPrDsYSfgKyveS4kkp0+HIg2fUP4jm5G9JgzOfE+Ebw4f0ASg02z4YMywrs2sw60hbdrFi1GGihGQ==
 
 "@carbon/icons-react@0.0.1-alpha.31":
   version "0.0.1-alpha.31"
@@ -924,12 +924,12 @@
     "@carbon/icon-helpers" "0.0.1-alpha.31"
     prop-types "^15.6.2"
 
-"@carbon/icons-react@10.3.0":
-  version "10.3.0"
-  resolved "https://registry.yarnpkg.com/@carbon/icons-react/-/icons-react-10.3.0.tgz#6df5e0b593cdea7ccabe9c80ae0b0cb42083db10"
-  integrity sha512-WQ21vCprPQACafCAGKCUByPToKJJLGBFfccEI4WpPfTN2ftl4w8/dNHCHltw1g0JrLgSVjenBvneJweXVybiBg==
+"@carbon/icons-react@^0.0.1-beta.4":
+  version "0.0.1-beta.5"
+  resolved "https://registry.yarnpkg.com/@carbon/icons-react/-/icons-react-0.0.1-beta.5.tgz#77f7ffb4f3a1376cc990db72f524e7ecf3291b33"
+  integrity sha512-Cigh18dQHgS5pnqfLpp/wjrUBRRd05KC9A3Iloa3WWMlRCy6/Mgoe6Zg0teMOEIYrfoGFx29bgWeeyvzrufLLw==
   dependencies:
-    "@carbon/icon-helpers" "10.2.0"
+    "@carbon/icon-helpers" "0.0.1-beta.5"
     prop-types "^15.6.2"
 
 "@carbon/import-once@10.1.0":
@@ -4731,12 +4731,12 @@ capture-stack-trace@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.1.tgz#a6c0bbe1f38f3aa0b92238ecb6ff42c344d4135d"
 
-carbon-components-react@7.3.0:
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-7.3.0.tgz#2620cccec9eca4f749d225f1b4e0d9af839946ea"
-  integrity sha512-pAkUaviAKpcso1m/TtJcXxCX9pg0y4Rb9hkEPj2fMBIh9mb34G1W/H/4Cgt2tEy6XxzC29qv8WCsea7VEPAFFQ==
+carbon-components-react@7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-7.2.0.tgz#195e4f2e45d6e59a934f44da1b327aaadc647267"
+  integrity sha512-BS1dtqY6e9zaGYhaLEAxP+S5ERDUPqAGbmjgaaNWgZcfDO/EFah+NXEK/p7S9wUAae4/9H/Ks4N8FkT2aTDn/g==
   dependencies:
-    "@carbon/icons-react" "10.3.0"
+    "@carbon/icons-react" "^0.0.1-beta.4"
     classnames "2.2.6"
     downshift "^1.31.14"
     flatpickr "4.5.5"
@@ -8009,7 +8009,7 @@ gatsby-plugin-react-helmet@3.0.12:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-sass@2.0.111:
+gatsby-plugin-sass@2.0.11:
   version "2.0.11"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.0.11.tgz#25ef6a206107e24ac49d50866f0595c2aa489649"
   integrity sha512-EopQgb7FoC8XmkM691NppbAwPi2JaC6yv7SWrSdCDEJkLxr9V98KCfr7tMk0KW64LF8pj+XjtwKVtEwCPEQ0gg==
