@@ -341,7 +341,7 @@ class Layout extends React.Component {
                 },
                 {
                   href: 'https://www.ibm.com/design/ai/',
-                  linkText: 'IBM AI',
+                  linkText: 'IBM Design for AI',
                 },
               ]}
             />
