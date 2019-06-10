@@ -27,6 +27,7 @@ import ComponentDocs from '../ComponentDocs';
 import ComponentReact from '../ComponentReact';
 import WebsiteTabs from '../WebsiteTabs';
 import SimpleColumns from '../SimpleColumns';
+import ReactShellComponent from '../ReactShellComponent';
 import Video from '../Video';
 import PageTable from '../PageTable';
 
@@ -373,6 +374,7 @@ class Layout extends React.Component {
                   ComponentReact,
                   DoDontExample,
                   WebsiteTabs,
+                  ReactShellComponent,
                   SimpleColumns,
                   Video,
                   PageTable,

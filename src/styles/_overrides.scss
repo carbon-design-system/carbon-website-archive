@@ -102,6 +102,27 @@
   position: absolute;
 }
 
+.component-example__shell {
+  position: relative;
+  width: 100%;
+}
+.component-example__shell header {
+  position: absolute;
+  top: rem(-16px);
+  left: 0;
+  z-index: 1;
+  transform: none;
+}
+.website-header-hidden .component-example__shell header {
+  transform: none;
+}
+.component-example__shell nav.bx--side-nav__navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 //---------------------------------------
 // Date picker
 //---------------------------------------
