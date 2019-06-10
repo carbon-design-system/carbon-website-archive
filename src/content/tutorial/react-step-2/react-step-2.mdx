@@ -645,6 +645,8 @@ export default RepoTable;
 
 This component uses two props, `rows` and `headers`, and returns a Carbon `DataTable`. As for where the various `Table*` components came from? The [DataTable story](http://react.carbondesignsystem.com/?selectedKind=DataTable&selectedStory=with%20expansion) in Storybook was used to put together the data table structure.
 
+_Note: The_ `getTableProps`_,_ `getHeaderProps`_, and_ `getRowProps` _functions each tell the_ `DataTable` _component to process and return the necessary props that are needed by the_ `Table`_,_ `Header` _and_ `Row` _components respectively. We take the return of that function (an object containing the props) and [spread it out](https://reactjs.org/docs/jsx-in-depth.html#spread-attributes) into the component._
+
 At this point, return to `RepoPage.js` because now we need to render a static `RepoTable`.
 
 ### Render data table
