@@ -286,15 +286,7 @@ Same goes for the `Tabs` opening tag:
 ```
 <!-- prettier-ignore-end -->
 
-Next, we'll need to add a styling override to move the tabs to the right on large viewports. For that, in `app.scss`, add the breakpoint import at the **top** of the file before we import `_landing-page.scss`.
-
-##### src/app.scss
-
-```scss
-@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';
-```
-
-Create a file `_overrides.scss` in `src/content/LandingPage` with this declaration block.
+Next, we'll need to add a styling override to move the tabs to the right on large viewports. Create a file `_overrides.scss` in `src/content/LandingPage` with this declaration block.
 
 ##### src/content/LandingPage/\_overrides.scss
 
