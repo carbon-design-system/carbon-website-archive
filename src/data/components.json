@@ -1299,12 +1299,12 @@
         "notAvailable": false
       },
       "react": {
-        "stable": false,
-        "experimental": true,
+        "stable": true,
+        "experimental": false,
         "new": false,
-        "updated": false,
+        "updated": true,
         "deprectated": false,
-        "underConstruction": false,
+        "underConstruction": true,
         "notAvailable": false
       },
       "angular": {
