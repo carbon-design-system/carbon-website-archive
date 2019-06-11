@@ -3,27 +3,27 @@ import PropTypes from 'prop-types';
 import Search20 from '@carbon/icons-react/lib/search/20';
 import Notification20 from '@carbon/icons-react/lib/notification/20';
 import AppSwitcher20 from '@carbon/icons-react/lib/app-switcher/20';
-// import HeaderContainer from 'carbon-components-react/lib/components/UIShell/HeaderContainer';
+import HeaderContainer from 'carbon-components-react/lib/components/UIShell/HeaderContainer';
 import {
   Content,
   Header,
-  // HeaderMenuButton,
+  HeaderMenuButton,
   HeaderName,
   HeaderNavigation,
   HeaderMenu,
   HeaderMenuItem,
   HeaderGlobalBar,
   HeaderGlobalAction,
-  // HeaderPanel,
-  // SkipToContent,
+  HeaderPanel,
+  SkipToContent,
   SideNav,
   SideNavItems,
   SideNavLink,
   SideNavMenu,
   SideNavMenuItem,
-  // Switcher,
-  // SwitcherItem,
-  // SwitcherItemLink,
+  Switcher,
+  SwitcherItem,
+  SwitcherItemLink,
 } from 'carbon-components-react/lib/components/UIShell';
 
 class ReactShellComponent extends Component {
@@ -47,7 +47,7 @@ class ReactShellComponent extends Component {
       const content = (
         <div className="bx--grid">
           <div className="bx--row">
-            <div className="bx--offset-lg-3 bx--col-lg-13">
+            <section className="bx--offset-lg-3 bx--col-lg-13">
               <h2
                 style={{
                   fontWeight: '800',
@@ -114,7 +114,7 @@ class ReactShellComponent extends Component {
                 section. If tabs are needed on a page when using a side-nav,
                 then the tabs are secondary in hierarchy to the side-nav.
               </p>
-            </div>
+            </section>
           </div>
         </div>
       );
@@ -216,11 +216,171 @@ class ReactShellComponent extends Component {
       </Header>
     );
 
-    const headerRightPanel = 'add components once 10.3 is released';
+    const headerRightPanel = (
+      <Header aria-label="IBM Platform Name">
+        <HeaderName href="#" prefix="IBM">
+          [Platform]
+        </HeaderName>
+        <HeaderGlobalBar>
+          <HeaderGlobalAction aria-label="Search" onClick={() => {}}>
+            <Search20 />
+          </HeaderGlobalAction>
+          <HeaderGlobalAction
+            aria-label="Notifications"
+            isActive
+            onClick={() => {}}>
+            <Notification20 />
+          </HeaderGlobalAction>
+          <HeaderGlobalAction aria-label="App Switcher" onClick={() => {}}>
+            <AppSwitcher20 />
+          </HeaderGlobalAction>
+        </HeaderGlobalBar>
+        <HeaderPanel expanded />
+      </Header>
+    );
 
-    const headerSwitcher = 'add components once 10.3 is released';
+    const headerSwitcher = (
+      <Header aria-label="IBM Platform Name">
+        <HeaderName href="#" prefix="IBM">
+          [Platform]
+        </HeaderName>
+        <HeaderGlobalBar>
+          <HeaderGlobalAction aria-label="Search" onClick={() => {}}>
+            <Search20 />
+          </HeaderGlobalAction>
+          <HeaderGlobalAction aria-label="Notifications" onClick={() => {}}>
+            <Notification20 />
+          </HeaderGlobalAction>
+          <HeaderGlobalAction
+            aria-label="App Switcher"
+            isActive
+            onClick={() => {}}>
+            <AppSwitcher20 />
+          </HeaderGlobalAction>
+        </HeaderGlobalBar>
+        <HeaderPanel expanded>
+          <Switcher>
+            <SwitcherItem>
+              <SwitcherItemLink isSelected href="javascript:void(0)">
+                Link
+              </SwitcherItemLink>
+            </SwitcherItem>
+            <SwitcherItem>
+              <SwitcherItemLink href="javascript:void(0)">
+                Link
+              </SwitcherItemLink>
+            </SwitcherItem>
+            <SwitcherItem>
+              <SwitcherItemLink href="javascript:void(0)">
+                Link
+              </SwitcherItemLink>
+            </SwitcherItem>
+            <SwitcherItem>
+              <SwitcherItemLink href="javascript:void(0)">
+                Link
+              </SwitcherItemLink>
+            </SwitcherItem>
+            <SwitcherItem>
+              <SwitcherItemLink href="javascript:void(0)">
+                Link
+              </SwitcherItemLink>
+            </SwitcherItem>
+            <SwitcherItem>
+              <SwitcherItemLink href="javascript:void(0)">
+                Link
+              </SwitcherItemLink>
+            </SwitcherItem>
+          </Switcher>
+        </HeaderPanel>
+      </Header>
+    );
 
-    const headerSideNav = 'add components once 10.3 is released';
+    const headerSideNav = (
+      <HeaderContainer
+        render={({ isSideNavExpanded, onClickSideNavExpand }) => (
+          <>
+            <Header aria-label="IBM Platform Name">
+              <SkipToContent />
+              <HeaderMenuButton
+                aria-label="Open menu"
+                onClick={onClickSideNavExpand}
+                isActive={isSideNavExpanded}
+              />
+              <HeaderName href="#" prefix="IBM">
+                [Platform]
+              </HeaderName>
+              <HeaderGlobalBar>
+                <HeaderGlobalAction aria-label="Search" onClick={() => {}}>
+                  <Search20 />
+                </HeaderGlobalAction>
+                <HeaderGlobalAction
+                  aria-label="Notifications"
+                  onClick={() => {}}>
+                  <Notification20 />
+                </HeaderGlobalAction>
+                <HeaderGlobalAction
+                  aria-label="App Switcher"
+                  onClick={() => {}}>
+                  <AppSwitcher20 />
+                </HeaderGlobalAction>
+              </HeaderGlobalBar>
+              <SideNav
+                aria-label="Side navigation"
+                expanded={isSideNavExpanded}>
+                <SideNavItems>
+                  <SideNavMenu renderIcon={Fade16} title="Category title">
+                    <SideNavMenuItem href="javascript:void(0)">
+                      Link
+                    </SideNavMenuItem>
+                    <SideNavMenuItem
+                      aria-current="page"
+                      href="javascript:void(0)">
+                      Link
+                    </SideNavMenuItem>
+                    <SideNavMenuItem href="javascript:void(0)">
+                      Link
+                    </SideNavMenuItem>
+                  </SideNavMenu>
+                  <SideNavMenu renderIcon={Fade16} title="Category title">
+                    <SideNavMenuItem href="javascript:void(0)">
+                      Link
+                    </SideNavMenuItem>
+                    <SideNavMenuItem
+                      aria-current="page"
+                      href="javascript:void(0)">
+                      Link
+                    </SideNavMenuItem>
+                    <SideNavMenuItem href="javascript:void(0)">
+                      Link
+                    </SideNavMenuItem>
+                  </SideNavMenu>
+                  <SideNavMenu renderIcon={Fade16} title="Category title">
+                    <SideNavMenuItem href="javascript:void(0)">
+                      Link
+                    </SideNavMenuItem>
+                    <SideNavMenuItem
+                      aria-current="page"
+                      href="javascript:void(0)">
+                      Link
+                    </SideNavMenuItem>
+                    <SideNavMenuItem href="javascript:void(0)">
+                      Link
+                    </SideNavMenuItem>
+                  </SideNavMenu>
+                  <SideNavLink renderIcon={Fade16} href="javascript:void(0)">
+                    Link
+                  </SideNavLink>
+                  <SideNavLink renderIcon={Fade16} href="javascript:void(0)">
+                    Link
+                  </SideNavLink>
+                </SideNavItems>
+              </SideNav>
+            </Header>
+            <StoryContent />
+          </>
+        )}
+      />
+    );
 
     const fixedSideNav = (
       <>
