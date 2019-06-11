@@ -236,6 +236,23 @@
   color: $ibm-color__gray-100; /// TODO: inspector shows it's applying style, but color doesn't update!!!
 }
 
+// ----------RIGHT PANEL---------
+.component-example__right-panel {
+  height: rem(516px);
+}
+
+.component-example__shell .bx--header-panel {
+  position: absolute;
+  right: 0;
+  height: rem(500px);
+}
+
+.component-example__shell .bx--header__action--active {
+  border-left: 1px solid $shell-panel-border;
+  border-right: 1px solid $shell-panel-border;
+  border-bottom: 1px solid $shell-panel-bg-01;
+}
+
 //---------------------------------------
 // Date picker
 //---------------------------------------

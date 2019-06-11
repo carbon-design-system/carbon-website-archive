@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 import Search20 from '@carbon/icons-react/lib/search/20';
 import Notification20 from '@carbon/icons-react/lib/notification/20';
 import AppSwitcher20 from '@carbon/icons-react/lib/app-switcher/20';
@@ -41,6 +42,13 @@ class ReactShellComponent extends Component {
   };
 
   render() {
+    const liveRender = classnames({
+      'component-example__live--rendered': true,
+      'component-example__shell': true,
+      'component-example__right-panel':
+        this.props.headerWithRightPanel || this.props.headerWithSwitcher,
+    });
+
     const { name } = this.props;
 
     const StoryContent = () => {
@@ -159,7 +167,7 @@ class ReactShellComponent extends Component {
           <HeaderMenuItem href="#">Link 1</HeaderMenuItem>
           <HeaderMenuItem href="#">Link 2</HeaderMenuItem>
           <HeaderMenuItem href="#">Link 3</HeaderMenuItem>
-          <HeaderMenu aria-label="Link 4">
+          <HeaderMenu aria-label="Link 4" menuLinkName="Link 4">
             <HeaderMenuItem href="#">Sub-link 1</HeaderMenuItem>
             <HeaderMenuItem href="#">Sub-link 2</HeaderMenuItem>
             <HeaderMenuItem href="#">Sub-link 3</HeaderMenuItem>
@@ -196,7 +204,7 @@ class ReactShellComponent extends Component {
           <HeaderMenuItem href="#">Link 1</HeaderMenuItem>
           <HeaderMenuItem href="#">Link 2</HeaderMenuItem>
           <HeaderMenuItem href="#">Link 3</HeaderMenuItem>
-          <HeaderMenu aria-label="Link 4">
+          <HeaderMenu aria-label="Link 4" menuLinkName="Link 4">
             <HeaderMenuItem href="#">Sub-link 1</HeaderMenuItem>
             <HeaderMenuItem href="#">Sub-link 2</HeaderMenuItem>
             <HeaderMenuItem href="#">Sub-link 3</HeaderMenuItem>
@@ -487,7 +495,7 @@ class ReactShellComponent extends Component {
             <div>
               <div className="svg--sprite" aria-hidden="true" />
               <div className="component-example__live">
-                <div className="component-example__live--rendered component-example__shell">
+                <div className={liveRender}>
                   {this.props.headerBase ? headerBase : null}
                   {this.props.headerWithNav ? headerNav : null}
                   {this.props.headerWithActions ? headerActions : null}
