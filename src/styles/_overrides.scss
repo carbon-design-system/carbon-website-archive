@@ -93,19 +93,12 @@
 // UI Shell
 //---------------------------------------
 
-.component-example__live--ui-shell {
-  position: relative;
-}
-
-.component-example__live--ui-shell .bx--header,
-.component-example__live--ui-shell .bx--side-nav {
-  position: absolute;
-}
-
+// ----------DEFAULT---------
 .component-example__shell {
   position: relative;
   width: 100%;
 }
+
 .component-example__shell header {
   position: absolute;
   top: rem(-16px);
@@ -113,14 +106,130 @@
   z-index: 1;
   transform: none;
 }
+
 .website-header-hidden .component-example__shell header {
   transform: none;
 }
+
 .component-example__shell nav.bx--side-nav__navigation {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+  border-right: none;
+  color: $shell-side-nav-text-01;
+  background-color: $shell-side-nav-bg-01;
+  transition: width 0.11s cubic-bezier(0.2, 0, 1, 0.9);
+}
+
+.component-example__shell nav.bx--side-nav__navigation .bx--side-nav__submenu {
+  color: $shell-side-nav-text-01;
+}
+
+.component-example__shell
+  .bx--side-nav
+  a.bx--side-nav__link
+  > .bx--side-nav__link-text {
+  color: $shell-side-nav-text-01;
+}
+
+.component-example__shell .bx--side-nav__submenu > .bx--side-nav__icon,
+.component-example__shell a.bx--side-nav__link > .bx--side-nav__icon {
+  margin-right: 1.5rem;
+}
+
+.component-example__shell nav.bx--side-nav__navigation.bx--side-nav--ux {
+  top: 3rem;
+  height: carbon--rem(684px);
+
+  @include carbon--breakpoint-down('lg') {
+    width: 0;
+  }
+}
+
+.component-example__shell .bx--side-nav__footer {
+  display: none;
+}
+
+// ----------EXPANDED---------
+.component-example__shell
+  .bx--side-nav
+  .bx--side-nav__item
+  .bx--side-nav__submenu[aria-expanded='true'] {
+  color: $shell-side-nav-text-01;
+  background-color: $shell-side-nav-bg-01;
+}
+
+.component-example__shell
+  .bx--side-nav
+  .bx--side-nav__item
+  .bx--side-nav__submenu[aria-expanded='true']
+  .bx--side-nav__icon
+  svg,
+.component-example__shell
+  .bx--side-nav
+  .bx--side-nav__item
+  .bx--side-nav__submenu[aria-expanded='true']:hover
+  .bx--side-nav__icon
+  svg,
+.component-example__shell
+  .bx--side-nav
+  .bx--side-nav__item:hover
+  .bx--side-nav__submenu[aria-expanded='true']
+  .bx--side-nav__icon
+  svg {
+  fill: $shell-side-nav-text-01;
+}
+
+.component-example__shell
+  nav.bx--side-nav__navigation.bx--side-nav--ux.bx--side-nav--expanded {
+  @include carbon--breakpoint-down('lg') {
+    width: 100%;
+  }
+}
+
+.component-example__shell
+  .bx--side-nav__menu[role='menu']
+  a.bx--side-nav__link[aria-current='page'] {
+  background-color: $shell-side-nav-bg-05;
+}
+
+// ----------HOVER---------
+.component-example__shell
+  .bx--side-nav__item:not(.bx--side-nav__item--active):hover,
+.component-example__shell
+  .bx--side-nav__item:not(.bx--side-nav__item--active)
+  > .bx--side-nav__link:hover {
+  background-color: $shell-side-nav-bg-04;
+  color: $ibm-color__gray-100;
+
+  & .bx--side-nav__icon svg {
+    fill: $shell-side-nav-text-01;
+  }
+
+  & .bx--side-nav__link-text {
+    color: $ibm-color__gray-100;
+  }
+}
+
+.component-example__shell
+  .bx--side-nav__item.bx--side-nav__item--icon:not(.bx--side-nav__item--active):hover,
+.component-example__shell
+  .bx--side-nav__item.bx--side-nav__item--icon:not(.bx--side-nav__item--active):hover
+  > .bx--side-nav__submenu {
+  color: $shell-side-nav-text-01;
+  background-color: $shell-side-nav-bg-01;
+
+  & svg {
+    fill: $shell-side-nav-text-01;
+  }
+}
+
+.component-example__shell
+  .bx--side-nav__menu[role='menu']
+  a.bx--side-nav__link[role='menuitem']:not(.bx--side-nav__link--current):not([aria-current='page']):hover {
+  background-color: $shell-side-nav-bg-04;
+  color: $ibm-color__gray-100; /// TODO: inspector shows it's applying style, but color doesn't update!!!
 }
 
 //---------------------------------------
