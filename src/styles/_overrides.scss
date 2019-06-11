@@ -227,7 +227,11 @@
 
 .component-example__shell
   .bx--side-nav__menu[role='menu']
-  a.bx--side-nav__link[role='menuitem']:not(.bx--side-nav__link--current):not([aria-current='page']):hover {
+  a.bx--side-nav__link[role='menuitem']:not(.bx--side-nav__link--current):not([aria-current='page']):hover,
+.component-example__shell
+  .bx--side-nav__menu[role='menu']
+  a.bx--side-nav__link[role='menuitem']:not(.bx--side-nav__link--current):not([aria-current='page']):hover
+  .bx--side-nav__link-text {
   background-color: $shell-side-nav-bg-04;
   color: $ibm-color__gray-100; /// TODO: inspector shows it's applying style, but color doesn't update!!!
 }
