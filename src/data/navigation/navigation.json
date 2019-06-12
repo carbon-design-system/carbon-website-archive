@@ -24,6 +24,9 @@
       },
       "react-step-2": {
         "title": "2. Building pages"
+      },
+      "react-step-3": {
+        "title": "3. Using APIs"
       }
     }
   },
@@ -192,13 +195,12 @@
         "title": "UI shell header"
       },
       "UI-shell-left-panel": {
-          "title": "UI shell left panel"
+        "title": "UI shell left panel"
       },
       "UI-shell-right-panel": {
         "title": "UI shell right panel"
+      }
     }
-    }
-    
   },
   "experimental": {
     "title": "Experimental",
