@@ -276,7 +276,15 @@ The `Query` component from `react-apollo` lets us render different content based
 
 Finally, if neither of those are true, it means we have our data! One nice advantage of GraphQL is that as long as there are no errors, we can be certain the properties on the data we requested aren't `undefined`.
 
-Wrap the `RepoTable` with the `Query` component that passes in the `REPO_QUERY` through the `query` prop.
+We need to render the `RepoTable` in `Query`'s `return()` statement once the request is no longer loading and when there are no errors. To do so, replace the `RepoTable` line with the following `Query`.
+
+##### src/content/RepoPage/RepoPage.js
+
+```javascript
+<RepoTable headers={headers} rows={rows} />
+```
+
+Notice how we're passing the `REPO_QUERY` that we previously defined into the `query` prop.
 
 ##### src/content/RepoPage/RepoPage.js
 
