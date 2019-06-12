@@ -3,30 +3,29 @@ title: 3. Using APIs
 internal: false
 ---
 
-## 🚧 Under Construction 🚧
-
-### This step takes our static components and populates them with data from the GitHub GraphQL API – loading states and all. Once we're all said and done with this step, your data table will be displaying information about the various Carbon repositories.
+### This step takes our static components and populates them with data from the GitHub GraphQL API – loading states and all. We'll be displaying Carbon repository information in a data table.
 
 <AnchorLinks>
 
-- [Fork, clone & branch](#fork-clone--branch)
+- [Fork, clone and branch](#fork-clone-and-branch)
 - [Install dependencies](#install-dependencies)
 - [Create access token](#create-access-token)
 - [Connect to Apollo](#create-access-token)
 - [Fetch data](#fetch-data)
-- [Create component](#create-component)
-- [Render data table](#render-data-table)
+- [Populate data table](#populate-data-table)
+- [Add loading](#add-loading)
+- [Add pagination](#add-pagination)
 - [Submit pull request](#submit-pull-request)
 
 </AnchorLinks>
 
 ### Preview
 
-Where the focus of this tutorial isn't learning and using GraphQL, the [GitHub GraphQL API](https://developer.github.com/v4/) is very well documented. And, since all of Carbon's repositories are public, it's a great opportunity to fetch Carbon-related data for this Carbon tutorial.
+The [GitHub GraphQL API](https://developer.github.com/v4/) is very well documented, and even though the focus of this tutorial isn't learning and using GraphQL, it's a great opportunity to fetch Carbon-related data for this Carbon tutorial.
 
-To do so, we'll be using Apollo Client, the front-end component of the [Apollo Platform](https://www.apollographql.com/docs/intro/platform). The Apollo platform provides several open source tools for using GraphQL throughout your application’s stack. Apollo Client is a sophisticated GraphQL client that manages data and state in an application.
+To do so, we'll be using Apollo Client, the front-end component of the [Apollo Platform](https://www.apollographql.com/docs/intro/platform). Apollo provides several open source tools for using GraphQL throughout your application’s stack. Apollo Client is a sophisticated GraphQL client that manages data and state in an application.
 
-A [preview](https://react-step-4--carbon-tutorial.netlify.com) of what you will build:
+A [preview](https://react-step-4--carbon-tutorial.netlify.com) of what you will build (see repositories page):
 
 <Row>
   <Column offsetLg="4">
@@ -42,7 +41,7 @@ A [preview](https://react-step-4--carbon-tutorial.netlify.com) of what you will 
   </Column>
 </Row>
 
-## Fork, clone & branch
+## Fork, clone and branch
 
 This tutorial has an accompanying GitHub repository called [carbon-tutorial](https://github.com/carbon-design-system/carbon-tutorial) that we'll use as a starting point for each step. If you haven't forked and cloned that repository yet, and haven't added the upstream remote, go ahead and do so by following the [step 1 instructions](/tutorial/react-step-1#fork-clone--branch).
 
@@ -55,7 +54,7 @@ $ git fetch upstream
 $ git checkout -b react-step-3 upstream/react-step-3
 ```
 
-### Build & start app
+### Build and start app
 
 Install the app's dependencies:
 
@@ -91,11 +90,13 @@ You'll need a personal access token from your GitHub account in order to make re
 
 When you get to the scope/permissions step, you can leave them all unchecked. We don't need any special permissions, we just need access to the public API.
 
-Once you have your token, we need to put it in a place where create-react-app can use it. When your application is being built and developed, create-react-app will parse environmental variables in any file that ends with `.env` and make them available under `process.env.MY_VARIABLE`.
+Once you have your token, we need to put it in a place where create-react-app can use it. When your application is being built and developed, create-react-app will parse environmental variables in any file that starts with `.env` and make them available under `process.env.MY_VARIABLE`.
 
 One caveat is that we need to start our variables with `REACT_APP_`. You can read more about environmental variables in [create-react-app's guide](https://facebook.github.io/create-react-app/docs/adding-custom-environment-variables).
 
-Since we don't want to commit this file to git, we can put it in `.env.local` which is in our `.gitignore` list. Your file should just have a single line like this one, where the `x`s are replaced with your unique token.
+Since we don't want to commit this file to Git, we can put it in `.env.local` which is in our `.gitignore` list. Your file should just have a single line like this one, where the `x`s are replaced with your unique token.
+
+##### .env.local
 
 ```bash
 REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN=xxxxxx
@@ -131,73 +132,54 @@ const client = new ApolloClient({
 });
 ```
 
-We can now make a new, `Root` component to pass into `ReactDOM.render` so that it's clear what's wrapping our application. At the same time, we'll pass in the client we just made as a prop to the `ApolloProvider` component. Replace:
+Now we can wrap our application with `ApolloProvider`. At the same time, we'll pass in the client we just made as a prop to the `ApolloProvider` component. Replace:
 
-```javascript
-ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
-  document.getElementById('root')
-);
+##### src/index.js
+
+```html
+<Router>
+  <App />
+</Router>
 ```
 
 With:
 
-```javascript
-const Root = () => (
-  <ApolloProvider client={client}>
-    <Router>
-      <App />
-    </Router>
-  </ApolloProvider>
-);
-ReactDOM.render(<Root />, document.getElementById('root'));
+##### src/index.js
+
+<!-- prettier-ignore-start -->
+```html
+<ApolloProvider client={client}>
+  <Router>
+    <App />
+  </Router>
+</ApolloProvider>
 ```
+<!-- prettier-ignore-end -->
 
 ## Fetch data
 
 ### Imports
 
-Add the following imports at the top of `src/content/RepoPage/RepoPage.js`:
+Add the following imports at the top of `RepoPage.js`:
+
+##### src/content/RepoPage/RepoPage.js
 
 ```javascript
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
 ```
 
-And then import `useState` by replacing `import React, { Component } from 'react';` with:
-
-```javascript
-import React, { Component, useState } from 'react';
-```
-
-Also, add `Link` and `DataTableSkeleton` to the Carbon import so it looks like:
-
-```javascript
-import {
-  DataTable,
-  DataTableSkeleton,
-  Link,
-  Pagination,
-  TableContainer,
-  Table,
-  TableHead,
-  TableRow,
-  TableExpandHeader,
-  TableHeader,
-  TableBody,
-  TableExpandRow,
-  TableCell,
-  TableExpandedRow,
-} from 'carbon-components-react';
-```
-
 ### Query
 
 Next we'll assemble our GraphQL query to fetch only the data we need from the GraphQL API. We'll do this using the `gql` helper we just imported. The `gql` helper lets you write GraphQL queries using interpolated strings (backticks) in JavaScript. In addition, we'll be using the `Query` component from `react-apollo` which gives us some great information about our query's loading state in addition to the data.
 
+You can use GitHub's [explorer](https://developer.github.com/v4/explorer/) tool to write and test your own queries. Try copying the query below and experiment with changing the properties. You can also click the "Docs" button in the top right of the explorer to view all of the available data and query parameters.
+
 If you'd like some more information regarding writing queries and using the Query component, we recommend [Apollo's documentation](https://www.apollographql.com/docs/tutorial/queries) on this topic.
+
+Add this after your imports:
+
+##### src/content/RepoPage/RepoPage.js
 
 ```graphql
 const REPO_QUERY = gql`
@@ -237,42 +219,21 @@ const REPO_QUERY = gql`
 
 ### Helpers
 
-Below that, we'll define our table headers so they can be used both in the `DataTableSkeleton` and eventually the `DataTable` once we get our data. In addition, we'll define a `LinkList` component and a `getRowItems` helper that uses it to only pass down the rows.
+Below that, we should have our table headers set in a previous step that are good to go. Let's also keep our example rows below that.
 
-Because we can use the list of headers we want to display between the `DataTableSkeleton` and `DataTable` components, it makes sense for us to define it in one place with the parent component.
+Our last column in the data table will be a comma-separated list of repository and home page links, so let's create a component called `LinkList`.
 
-Move the `headers` array out of the `RepoPage` component and place it immediately below the `REPO_QUERY` constant.
+Import `Link` at the top of `RepoPage.js`.
+
+##### src/content/RepoPage/RepoPage.js
 
 ```javascript
-const headers = [
-  {
-    key: 'name',
-    header: 'Name',
-  },
-  {
-    key: 'createdAt',
-    header: 'Created',
-  },
-  {
-    key: 'updatedAt',
-    header: 'Updated',
-  },
-  {
-    key: 'issueCount',
-    header: 'Open Issues',
-  },
-  {
-    key: 'stars',
-    header: 'Stars',
-  },
-  {
-    key: 'links',
-    header: 'Links',
-  },
-];
+import { Link } from 'carbon-components-react';
 ```
 
-Below that, add the `LinkList` and `getRowItems` helpers.
+Then use `Link` in this component that has two props (`url` and `homepageUrl`) and returns an unordered list. If the repository does not have a home page URL, only render the repository link.
+
+##### src/content/RepoPage/RepoPage.js
 
 ```javascript
 const LinkList = ({ url, homepageUrl }) => (
@@ -288,7 +249,13 @@ const LinkList = ({ url, homepageUrl }) => (
     )}
   </ul>
 );
+```
 
+As a final helper, let's create a function that transforms row data to our expected header keys. Notice how we're using our new `LinkList` component to generate the value of the `links` key in each row.
+
+##### src/content/RepoPage/RepoPage.js
+
+```javascript
 const getRowItems = rows =>
   rows.map(row => ({
     ...row,
@@ -301,233 +268,208 @@ const getRowItems = rows =>
   }));
 ```
 
-### RepoPage component
+### Query component
 
-We'll be using [React Hooks](https://reactjs.org/docs/hooks-intro.html) to manage our state. Hooks are a relatively new React API that allows us to author a React component's stateful logic in a function component rather than a class component. Using hooks means we don't need to worry about complex lifecycle methods.
+At this point, we should run our query and `console.log()` the results to verify that the request is working.
 
-The Query component from `react-apollo` lets us render different content based on the state of our request. When `loading` is true, we'll render the `DataTableSkeleton` component from `carbon-components-react`. If there's an issue, we'll render the corresponding error message.
+The `Query` component from `react-apollo` lets us render different content based on the state of our request. When `loading` is true, we'll render `Loading...` for the time being. If there's an issue, we'll render the corresponding error message.
 
 Finally, if neither of those are true, it means we have our data! One nice advantage of GraphQL is that as long as there are no errors, we can be certain the properties on the data we requested aren't `undefined`.
 
-To get there, rename the `RepoPage` class to `RepoTable` and create a new `RepoPage`.
+Wrap the `RepoTable` with the `Query` component that passes in the `REPO_QUERY` through the `query` prop.
 
-```javascript
-const RepoPage = () => {
-  const [totalItems, setTotalItems] = useState(0);
-  const [firstRowIndex, setFirstRowIndex] = useState(0);
-  const [currentPageSize, setCurrentPageSize] = useState(10);
-
-  return (
-    <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
-      <div className="bx--row repo-page__r1">
-        <div className="bx--col-lg-16">Query goes here.</div>
-      </div>
-    </div>
-  );
-};
-```
-
-Once you save `RepoPage.js` you'll see an empty page with just the "Query goes here."
-
-Now, replace `Query goes here.` with:
+##### src/content/RepoPage/RepoPage.js
 
 ```javascript
 <Query query={REPO_QUERY}>
   {({ loading, error, data: { organization } }) => {
-    // Waiting for the request to complete
-    if (loading)
-      return (
-        <DataTableSkeleton
-          columnCount={headers.length + 1}
-          rowCount={12}
-          headers={headers}
-        />
-      );
+    // Wait for the request to complete
+    if (loading) return 'Loading...';
 
     // Something went wrong with the data fetching
     if (error) return `Error! ${error.message}`;
 
     // If we're here, we've got our data!
-    const { repositories } = organization;
-    setTotalItems(repositories.totalCount);
-    const rows = getRowItems(repositories.nodes);
+    console.log(organization);
+
     return (
       <>
-        <Pagination
-          totalItems={totalItems}
-          backwardText="Previous page"
-          forwardText="Next page"
-          pageSize={currentPageSize}
-          pageSizes={[5, 10, 15, 25]}
-          itemsPerPageText="Items per page"
-          onChange={({ page, pageSize }) => {
-            if (pageSize !== currentPageSize) {
-              setCurrentPageSize(pageSize);
-            }
-            setFirstRowIndex(pageSize * (page - 1));
-          }}
-        />
+        <RepoTable headers={headers} rows={rows} />
       </>
     );
   }}
 </Query>
 ```
 
-We're not rendering the table yet, but if you refresh the page, you'll see the data table skeleton while the data loads! Also, if you view your browser's network requests, you can see XHR request response to see what's getting returned to the browser.
+The page will look the same as we're still rendering our static example rows, but if you view your browser's console (e.g. [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/)), you should see the response from GitHub!
 
-_Note: We only pass the rows that we want our table to display, we can do this by slicing the our array of rows depending on the first item and the page size._
+## Populate data table
 
-_Note: The Pagination component isn’t inherently connected in any way to the DataTable, we need to tell it what to do when a change occurs using the onChange prop. This includes both page size changes and displaying different rows._.
+Now that we have that data, let's populate the data table. Replace `console.log(organization);` with the following that destructures the `organization` object. Once we have the respositories, we can call our `getRowItems()` helper to build the data table rows.
 
-## Create component
-
-Now we'll need to consume our fetched data. In React, we generally want to separate our data fetching logic from our presentational or visual content. We'll separate our visual content into the `RepoPage/RepoTable.js` file. It's important to keep in mind that because we only render our `RepoTable` when we have our data, we don't need to be as safe with `null`/`undefined` checking our individual row properties. We've established that they exist given the nature of our GraphQL query.
-
-### Create file
-
-Go ahead and create a new `RepoTable.js` file in `src/content/RepoPage`.
-
-### Imports
-
-Import the various components that we'll need to render our table at the top of `RepoTable.js`.
+##### src/content/RepoPage/RepoPage.js
 
 ```javascript
-import React from 'react';
-import {
-  DataTable,
-  TableContainer,
-  Table,
-  TableHead,
-  TableRow,
-  TableExpandHeader,
-  TableHeader,
-  TableBody,
-  TableExpandRow,
-  TableCell,
-  TableExpandedRow,
-} from 'carbon-components-react';
+// If we're here, we've got our data!
+const { repositories } = organization;
+const rows = getRowItems(repositories.nodes);
 ```
 
-### Component cleanup
+Then, towards the top of `RepoPage.js` delete the `rows` array because we no longer need the example rows.
+
+### Render repository descriptions
 
 The data table component and its pieces use a common React pattern called [render props](https://reactjs.org/docs/render-props.html). This a really powerful way for libraries to give developers control of rendering and manipulating their data.
 
-We just need to pass in our row objects along with the headers for each column. In addition, we tell the data table how to render the headers and rows through the `render` prop. This prop takes a function that will receive as arguments the processed rows/headers in addition to some helper functions for rendering our table.
+Revisiting `RepoTable.js`, we are already passing in our row objects along with headers for each column. The `render` prop is being used to tell the data table how to render the headers and rows. That prop takes a function that receives the processed headers and rows as arguments as well as some helper functions for rendering the table.
 
-One common hurdle with the data table is how to access data that might be not correspond with a table column but is needed to compute the value of a cell that does. The data table component process and controls only the row properties which corresponds to headers (columns). Because of this, the `rows` object you get access to in the render prop function is _different_ than the one you passed in to the `rows` prop.
+One common hurdle with the data table is how to access data that might be not correspond with a table column but is needed to compute the value of a cell that does. The data table component processes and controls only the row properties which corresponds to headers (columns). Because of this, the `rows` object you get access to in the render prop function is _different_ than the one you passed in to the `rows` prop.
 
-To handle this, we just need a simple look-up function to find the data we care about. We can normalize the data or just pass it right back as we do in the `getRowDescription` function.
+We need to modify one apsect of the data table because if you expand a row, it says `Row description`. We want to update that with the repository description coming from the GitHub API. This is an example of where we need a simple look-up function to find the data we care about - data that does not directly correspond to a column.
 
-Let's begin by creating a new `RepoTable` component with:
+To do so, in `RepoTable.js`, add this look-up function as the first lines inside the `RepoTable`. This should go immediately before the component's `return()`.
 
-```javascript
-const RepoTable = ({ rows, headers }) => {
-  const getRowDescription = rowId => {
-    const row = rows.find(({ id }) => id === rowId);
-    return row ? row.description : '';
-  };
-
-  return ();
-};
-
-export default RepoTable;
-```
-
-Then, move the `<DataTable>` component out of the `RepoTable` class in `RepoPage.js` into the return statement in`RepoTable.js`.
-
-At this point you can delete the `RepoTable` in `RepoPage.js` and your `RepoTable` in `RepoTable.js` should look like:
+##### src/content/RepoPage/RepoTable.js
 
 ```javascript
-const RepoTable = ({ rows, headers }) => {
-  const getRowDescription = rowId => {
-    const row = rows.find(({ id }) => id === rowId);
-    return row ? row.description : '';
-  };
-
-  return (
-    <DataTable
-      rows={initialRows}
-      headers={headers}
-      render={({
-        rows,
-        headers,
-        getHeaderProps,
-        getRowProps,
-        getTableProps,
-      }) => (
-        <TableContainer
-          title="Carbon Repositories"
-          description="A collection of public Carbon repositories.">
-          <Table {...getTableProps()}>
-            <TableHead>
-              <TableRow>
-                <TableExpandHeader />
-                {headers.map(header => (
-                  <TableHeader {...getHeaderProps({ header })}>
-                    {header.header}
-                  </TableHeader>
-                ))}
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {rows.map(row => (
-                <React.Fragment key={row.id}>
-                  <TableExpandRow {...getRowProps({ row })}>
-                    {row.cells.map(cell => (
-                      <TableCell key={cell.id}>{cell.value}</TableCell>
-                    ))}
-                  </TableExpandRow>
-                  <TableExpandedRow colSpan={headers.length + 1}>
-                    <h1>Expandable row content</h1>
-                    <p>Description here</p>
-                  </TableExpandedRow>
-                </React.Fragment>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
-      )}
-    />
-  );
+const getRowDescription = rowId => {
+  const row = rows.find(({ id }) => id === rowId);
+  return row ? row.description : '';
 };
 ```
 
-We now need to wire up the data table to the render props. First, replace `initialRows` with `rows` now that the rows are coming in from props.
+Finally, in `RepoTable.js`, replace `<p>Row description</p>` with:
 
-Delete the `<h1>Expandable row content</h1>` and modify the paragraph element below it to use the `getRowDescription` function.
+##### src/content/RepoPage/RepoTable.js
 
 ```html
-<p className="description">{getRowDescription(row.id)}</p>
+<p>{getRowDescription(row.id)}</p>
 ```
 
-_Note: The `getTableProps`, `getHeaderProps`, and `getRowProps` functions each tell the DataTable component to process and return the necessary props that are needed by the Table, Header and Row components respectively. We take the return of that function (an object containing the props) and [spread it out](https://reactjs.org/docs/jsx-in-depth.html#spread-attributes) into the component._.
+## Add loading
 
-## Render data table
+At this point, the first time that you visit the repositories page, we're querying the GitHub API and rendering the response through the `DataTable` component. We could stop here, but there's more to be done! Let's replace the `Loading...` string with the [DataTableSkeleton component](http://react.carbondesignsystem.com/?selectedKind=DataTableSkeleton).
 
-As a final step, let's use our new data table in the repo page. in `RepoPage.js`, add the import:
+To do so, back to `RepoPage.js`, add the `DataTableSkeleton` import by modifying the existing `carbon-components-react` import.
+
+##### src/content/RepoPage/RepoPage.js
 
 ```javascript
-import RepoTable from './RepoTable';
+import { Link, DataTableSkeleton } from 'carbon-components-react';
 ```
 
-And then inset the new `RepoTable` component in the line above `<Pagination`:
+Then replace the `if (loading) return 'Loading...';` with:
 
+##### src/content/RepoPage/RepoPage.js
+
+```javascript
+if (loading)
+  return (
+    <DataTableSkeleton
+      columnCount={headers.length + 1}
+      rowCount={10}
+      headers={headers}
+    />
+  );
+```
+
+We need to tell the loading skeleton how many rows to render, so let's use 10 skeleton rows to prepare for the next enhancement...
+
+## Add pagination
+
+Pagination! Instead of rendering every repository, let's add pagination to the data table to only render 10 at a time. Depending on your specific requirements, you may need to fetch new data each time that you interact with the pagination component, but for simplicity, we're going to make one request to fetch all data, and then paginate the in-memory row data.
+
+We'll be using [React Hooks](https://reactjs.org/docs/hooks-intro.html) to manage our state. Hooks are a relatively new React API that allows us to author a React component's stateful logic in a function component rather than a class component. Using hooks means we don't need to worry about complex lifecycle methods.
+
+Import React's [useState](https://reactjs.org/docs/hooks-state.html) by modifying the `React` import.
+
+##### src/content/RepoPage/RepoPage.js
+
+```javascript
+import React, { useState } from 'react';
+```
+
+Then initialize the new state variables that we'll use for pagination as the first lines inside the `RepoPage` component, above the `return()`.
+
+##### src/content/RepoPage/RepoPage.js
+
+```javascript
+const [totalItems, setTotalItems] = useState(0);
+const [firstRowIndex, setFirstRowIndex] = useState(0);
+const [currentPageSize, setCurrentPageSize] = useState(10);
+```
+
+This initializes the total number of rows and the index of the first row to `0`, and the page size to `10` as we also specified in our loading skeleton.
+
+Next we need to use the function that updates the `totalItems` state, `setTotalItems()`, after we destructure our `organization.repositories`. Your block that transforms row data should look like:
+
+##### src/content/RepoPage/RepoPage.js
+
+```javascript
+// If we're here, we've got our data!
+const { repositories } = organization;
+setTotalItems(repositories.totalCount);
+const rows = getRowItems(repositories.nodes);
+```
+
+Then we need to update our `RepoTable` `rows` prop to only render the subset of rows for the current "page". Update `<RepoTable headers={headers} rows={rows} />` to:
+
+##### src/content/RepoPage/RepoPage.js
+
+<!-- prettier-ignore-start -->
 ```javascript
 <RepoTable
   headers={headers}
-  rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}
+  rows={rows.slice(
+    firstRowIndex,
+    firstRowIndex + currentPageSize
+  )}
+/>
+```
+<!-- prettier-ignore-end -->
+
+_Note: We only pass the rows that we want our table to display. We can do this by slicing the our array of rows depending on the first item and the page size._
+
+Finally, let's add the `Pagination` to update our state variables and cause the data table to render new rows.
+
+Import `Pagination` by updating the `carbon-components-react` import.
+
+##### src/content/RepoPage/RepoPage.js
+
+```javascript
+import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
+```
+
+Immediately after the `RepoTable` closing tag (`/>`), add the `Pagination` component using the state variables that we previously initialized.
+
+##### src/content/RepoPage/RepoPage.js
+
+```javascript
+<Pagination
+  totalItems={totalItems}
+  backwardText="Previous page"
+  forwardText="Next page"
+  pageSize={currentPageSize}
+  pageSizes={[5, 10, 15, 25]}
+  itemsPerPageText="Items per page"
+  onChange={({ page, pageSize }) => {
+    if (pageSize !== currentPageSize) {
+      setCurrentPageSize(pageSize);
+    }
+    setFirstRowIndex(pageSize * (page - 1));
+  }}
 />
 ```
 
-That's it! As final clean-up, modify the `carbon-components-react` imports to remove imports no longer needed in that file.
+_Note: The_ `Pagination` _component isn't inherently connected in any way to the_ `DataTable` _- we need to tell it what to do when a change occurs using the_ `onChange` _prop. This includes both page size changes and displaying different rows._
 
-```javascript
-import { Pagination, Link, DataTableSkeleton } from 'carbon-components-react';
-```
+_Note: Like the other Carbon React components,_ `Pagination` _component examples can be found in [Storybook](http://react.carbondesignsystem.com/?selectedKind=Pagination) by browsing the story and knobs._
+
+That does it! Your data table should fetch GitHub data on first render. You can expand each row to see the repository's description. You can modify the pagination items per page and cycle through pages or jump to a specific page of repositories.
 
 ## Submit pull request
 
-We're going to submit a pull request to verify completion of this tutorial step and demonstrate a couple related concepts.
+We're going to submit a pull request to verify completion of this tutorial step.
 
 ### Continuous integration (CI) check
 
@@ -537,9 +479,9 @@ Run the CI check to make sure we're all set to submit a pull request.
 $ yarn ci-check
 ```
 
-_Note: If the_ `ci-check` _is giving an error, it's likely that some of your source files are not properly formatted. This could happen if your text editor isn't formatting with Prettier on save. To get_ `ci-check` _to pass, run_ `yarn format`_ then re-run_ `yarn ci-check`_._
+_Note: Having issues running the CI check? [Step 1](</tutorial/react-step-1#continuous-integration-(ci)-check>) has troubleshooting notes that may help._
 
-### Git commit & push
+### Git commit and push
 
 Before we can create a pull request, stage and commit all of your changes:
 
@@ -552,6 +494,8 @@ Then, push to your repository:
 ```bash
 $ git push origin react-step-3
 ```
+
+_Note: Having issues pushing your changes? [Step 1](/tutorial/react-step-1#git-commit-and-push) has troubleshooting notes that may help._
 
 ### Pull request (PR)
 
