@@ -21,6 +21,12 @@
       },
       "react-step-1": {
         "title": "1. Installing Carbon"
+      },
+      "react-step-2": {
+        "title": "2. Building pages"
+      },
+      "react-step-3": {
+        "title": "3. Using APIs"
       }
     }
   },
@@ -184,6 +190,15 @@
       },
       "tooltip": {
         "title": "Tooltip"
+      },
+      "UI-shell-header": {
+        "title": "UI shell header"
+      },
+      "UI-shell-left-panel": {
+        "title": "UI shell left panel"
+      },
+      "UI-shell-right-panel": {
+        "title": "UI shell right panel"
       }
     }
   },
@@ -192,9 +207,6 @@
     "sub-nav": {
       "about": {
         "title": "About"
-      },
-      "ui-shell": {
-        "title": "UI shell"
       },
       "deleting": {
         "title": "Deleting pattern"
