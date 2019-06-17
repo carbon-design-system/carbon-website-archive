@@ -3,232 +3,415 @@ title: 4. Creating components
 internal: false
 ---
 
-## 🚧 Under Construction 🚧
+### With two pages comprised entirely of Carbon components, let's revisit the landing page and build a couple components of our own by using Carbon icons and tokens.
 
-# step 4
+<AnchorLinks>
 
-# Prerequisites
+- [Fork, clone and branch](#fork-clone-and-branch)
+- [Review design](#review-design)
+- [Create components](#create-components)
+- [Use components](#use-components)
+- [Add styling](#add-styling)
+- [Check accessibility](#check-accessibility)
+- [Submit pull request](#submit-pull-request)
 
-- have done previous steps [link]
-- know react at X level
+</AnchorLinks>
 
-# Objectives
+## Preview
 
-- Create a new component that we woul consider contributing into the carbon codebase
-- Test accessibility and verify responsiveness—important part of Carbon!
+Carbon provides a solid foundation for building web applications through its color palette, layout, spacing, type, as well as common building blocks in the form of components. So far, we've only used Carbon components to build out two pages.
 
-# Creating the components we need
+Next, we're going to use Carbon assets to build application-specific componets. We'll do so by including accessibility and responsive considerations all throughout.
 
-During this exercise we will implement this section of the page:
+A [preview](https://react-step-5--carbon-tutorial.netlify.com) of what you'll build (see bottom of page):
 
-[screenshot of section]
+<Row>
+  <Column offsetLg="4">
+    <iframe
+      height="400"
+      title="Carbon Tutorial Step 4"
+      src="https://react-step-5--carbon-tutorial.netlify.com"
+      frameborder="no"
+      allowtransparency="true"
+      allowfullscreen="true"
+      class="bx--iframe bx--iframe--border"
+    />
+  </Column>
+</Row>
 
-We will create a `Section` component and a `PrincipleSectionCard` component.
+## Fork, clone and branch
 
-## Setup
+This tutorial has an accompanying GitHub repository called [carbon-tutorial](https://github.com/carbon-design-system/carbon-tutorial) that we'll use as a starting point for each step. If you haven't forked and cloned that repository yet, and haven't added the upstream remote, go ahead and do so by following the [step 1 instructions](/tutorial/react-step-1#fork-clone--branch).
 
-Create a directory for our new component Section and three files:
+### Branch
 
-- `Section.js`
-- `section.scss`
-- `index.js`
+With your repository all set up, let's check out the branch for this tutorial step's starting point.
 
-Inside of `index.js`, put:
-
-```
-    import Section from './Section'
-    export default Section
-```
-
-Then inside `src/index.scss` we need to add an import for our new `section.scss` file so that's it's incorporated. Add this import statement to the end of `src/index.scss`:
-
-```
-    @import './components/Section/section.scss';
-```
-
-## The Section
-
-Looking at our spec — we can use semantic html5 element `<section>` to contain our elements. We'll also want a header level 2 to describe the section.
-
-```
-    import React from 'react';
-
-    /**
-     * The main content is devided into three main sections. Each one containing one or more cards.
-     */
-    const PrinciplesSection = props => (
-      <section className={`bx--row ${props.className} principles-section`}>
-        <h2 className="bx--col bx--no-gutter bx--col-sm-4">
-          <strong>{props.heading}</strong>
-        </h2>
-        {props.children}
-      </section>
-    );
-
-    export { PrinciplesSection };
+```bash
+$ git fetch upstream
+$ git checkout -b react-step-4 upstream/react-step-4
 ```
 
-This `PrinciplesSeciton` lets you pass in any number of your own class names via the `className` prop.
+_Note: This builds on top of step 3, but be sure to check out the upstream step 4 branch because it includes the static assets required to get through this step._
 
-**Note:** _You can see above in the `section` and `h2` elements, we are using the grid classes from Carbon._
+### Build and start app
 
--
+Install the app's dependencies (in case you're starting fresh in your current directory and not continuing from the previous step):
 
-## The Card
-
-Looking ahead at the rest of the spec we can see there are multiple sections on the page — all with varying numbers of cards and images etc we should probably create a second sub-component called SectionCard to keep things tidy and composable rather than adding complexity to our Section component.
-
-Inside of `Section.js`, put:
-
+```bash
+$ yarn
 ```
-    // Take in a phrase and separate the third word in an array
-    function createArrayFromPhrase(phrase) {
-      const splitPhrase = phrase.split(' ');
-      const thirdWord = splitPhrase.pop();
-      return [splitPhrase.join(' '), thirdWord];
+
+Then, start the app:
+
+```bash
+$ yarn start
+```
+
+You should see something similar to where the [previous step](/tutorial/react-step-3) left off.
+
+## Review design
+
+Here's what we're building - an informational section that has a heading and three subheadings. Each subheading has accompanying copy and a pictogram. We'll assume that this informational section is used elsewhere on the site, meaning it's a great opportunity to build it as a resusable component. As for naming, we'll call it an `InfoSection` with three `InfoCard`s as children.
+
+<ImageComponent cols="12" caption="Info section layout">
+
+![Info section layout](/images/info-layout.png)
+
+</ImageComponent>
+
+## Create components
+
+First we need files for the components, so create an `Info` folder in `src/components`. Even though we're building multiple components, their names all start with `Info`, so it makes sense to have them share one folder in components. Create these files:
+
+### Add files
+
+```bash
+src/components/Info
+├──_info.scss
+├──index.js
+└──Info.js
+```
+
+Import `_info.scss` in `app.scss` after all of the `carbon-component` imports.
+
+##### src/app.scss
+
+```scss
+@import './components/Info/info.scss';
+```
+
+Like our other components, `index.js` will serve as an entrypoint. Since `Info.js` will export mutliple components, we'll use the `*` wildcard in the entrypoint export.
+
+##### src/components/Info/index.js
+
+```javascript
+export * from './Info';
+```
+
+### InfoSection component
+
+Let's create the parent component that includes the "The Principles" heading. That markup currently looks like this in `LandingPage.js`:
+
+##### src/content/LandingPage/LandingPage.js
+
+```html
+<div className="bx--row landing-page__r3">
+  <div className="bx--col-md-4 bx--col-lg-4">
+    <h3 className="landing-page__label">The Principles</h3>
+  </div>
+  <div className="bx--col-md-4 bx--col-lg-4">Carbon is Open</div>
+  <div className="bx--col-md-4 bx--col-lg-4">Carbon is Modular</div>
+  <div className="bx--col-md-4 bx--col-lg-4">Carbon is Consistent</div>
+</div>
+```
+
+We want to do a few things when abstracting it to a component. First, we only want Carbon (`bx--`) and this component's class names - we don't want to include `landing-page__r3` as that's specific to the landing page. For that we'll use React `props` so we can pass in and use `props.className`.
+
+We'll also:
+
+- Add component class names like `info-section` and `info-section__heading`
+- Semantically use `<section>` instead of `<div>`
+- Update the grid columns to match the design
+- Replace `The Principles` with `{props.heading}`
+- Replace columns 2 - 4 with `{props.children}`
+
+Using `props` we can render any heading and any number of children components (`InfoCard` that we'll build soon.)
+
+##### src/components/Info/Info.js
+
+```javascript
+import React from 'react';
+
+const InfoSection = props => (
+  <section className={`bx--row ${props.className} info-section`}>
+    <div className="bx--col-md-8 bx--col-lg-4 bx--col-xlg-3">
+      <h3 className="info-section__heading">{props.heading}</h3>
+    </div>
+    {props.children}
+  </section>
+);
+```
+
+At this point let's add styling for the new class names that we just added.
+
+##### src/components/Info/\_info.scss
+
+```scss
+.info-section__heading {
+  @include carbon--type-style('heading-01');
+}
+```
+
+### InfoCard component
+
+Next up we're going to build a component for columns 2 - 4, which currently looks like `<div className="bx--col-md-4 bx--col-lg-4">Carbon is Open</div>`. At the bottom of `Info.js`, add:
+
+##### src/components/Info/Info.js
+
+```javascript
+const InfoCard = props => {
+  return (
+    <article className="info-card bx--col-md-4 bx--col-lg-4 bx--col-xlg-3 bx--offset-xlg-1">
+      <h4 className="info-card__heading">{props.heading}</h4>
+      <p className="info-card__body">{props.body}</p>
+      {props.icon}
+    </article>
+  );
+};
+
+export { InfoSection, InfoCard };
+```
+
+_Note: Make sure to export the two components!_
+
+In doing so, we:
+
+- Used the semantic `<article>` instead of `<div>`
+- Added `info-card` classes
+- Used `props` to render the heading, body copy, and icon
+- Set columns to match the grid
+
+_Note: At extra large viewports, we are using _`bx--col-xlg-3 bx--offset-xlg-1`_ so each column takes up 3 of the 16 grid columns, with a 1 column offset._
+
+## Use components
+
+Nothing is styled yet, but with our components built let's put them to use. In `LandingPage.js`, import the components towards the top of the file.
+
+##### src/content/LandingPage/LandingPage.js
+
+```javascript
+import { InfoSection, InfoCard } from '../../components/Info';
+```
+
+While we're at the top of `LandingPage.js`, import the icons that we'll need as well.
+
+##### src/content/LandingPage/LandingPage.js
+
+```javascript
+import Globe32 from '@carbon/icons-react/lib/globe/32';
+import PersonFavorite32 from '@carbon/icons-react/lib/person--favorite/32';
+import Application32 from '@carbon/icons-react/lib/application/32';
+```
+
+_Note: You'll notice that these 32px icons aren't the pictograms as designed. The Carbon team is currently working on adding pictograms to the icons packages. Until then, the biggest SVGs._
+
+With everything imported, replace the current:
+
+##### src/content/LandingPage/LandingPage.js
+
+```html
+<div className="bx--row landing-page__r3">
+  <div className="bx--col-md-4 bx--col-lg-4">
+    <h3 className="landing-page__label">The Principles</h3>
+  </div>
+  <div className="bx--col-md-4 bx--col-lg-4">Carbon is Open</div>
+  <div className="bx--col-md-4 bx--col-lg-4">Carbon is Modular</div>
+  <div className="bx--col-md-4 bx--col-lg-4">Carbon is Consistent</div>
+</div>
+```
+
+With the new components:
+
+##### src/content/LandingPage/LandingPage.js
+
+<!-- prettier-ignore-start -->
+```javascript
+<InfoSection heading="The Principles" className="landing-page__r3">
+  <InfoCard
+    heading="Carbon is Open"
+    body="It's a distributed effort, guided by the principles of the open-source movement. Carbon's users are also it's makers, and everyone is encouraged to contribute."
+    icon={<PersonFavorite32/>}
+  />
+  <InfoCard
+    heading="Carbon is Modular"
+    body="Carbon's modularity ensures maximum flexibility in execution. It's components are designed to work seamlessly with each other, in whichever combination suits the needs of the user."
+    icon={<Application32/>}
+  />
+  <InfoCard
+    heading="Carbon is Consistent"
+    body="Based on the comprehensive IBM Design Language, every element and component of Carbon was designed from the ground up to work elegantly together to ensure consistent, cohesive user experiences."
+    icon={<Globe32/>}
+  />
+</InfoSection>
+```
+<!-- prettier-ignore-end -->
+
+## Add styling
+
+Here's our design showing the spacing tokens that we need to add. We also need to set type style and borders.
+
+<ImageComponent cols="12" caption="Info section spacing">
+
+![Info section spacing](/images/info-spacing.png)
+
+</ImageComponent>
+
+### Layout
+
+Starting with layout, add the following to `src/components/Info/_info.scss`.
+
+##### src/components/Info/\_info.scss
+
+```scss
+.info-card {
+  margin-top: $spacing-09;
+  display: flex;
+  flex-direction: column;
+
+  svg {
+    margin-top: $spacing-09;
+  }
+
+  // top border in only small breakpoints to prevent overrides
+  @include carbon--breakpoint-down(md) {
+    &:not(:nth-child(2)) {
+      border-top: 1px solid $ui-03;
+      padding-top: $spacing-09;
     }
+  }
 
-    /**
-     * The cards inside the page's section. Containing headers and short body paragraphs
-     */
-    const PrinciplesSectionCard = props => {
-      const splitHeading = createArrayFromPhrase(props.heading);
-
-      return (
-        <article className="section-card bx--col bx--col-4">
-          <h3 className="section-card__heading">
-            {`${splitHeading[0]} `}
-            <strong>{splitHeading[1]}</strong>
-          </h3>
-          <p className="section-card__body">{props.body}</p>
-          {props.icon}
-        </article>
-      );
-    };
-
-    export { PrinciplesSection, PrinciplesSectionCard };
-```
-
-We include an example utility function, `createArrayFromPhrase`, to make the last word in our headings bold.
-
-## Putting the new components into your page
-
-In the appropriate content area of `LandingPagje.js`, paste:
-
-```
-    <PrinciplesSection
-      heading="The Principles"
-      className="landing-page__r3">
-      <PrinciplesSectionCard
-        heading="Carbon is Open"
-        body="It's a distributed effort, guided by the principles of the open-source movement. Carbon's users are also it's makers, and everyone is encouraged to contribute."
-      />
-      <PrinciplesSectionCard
-        heading="Carbon is Modular"
-        body="Carbon's modularity ensures maximum flexibility in execution. It's components are designed to work seamlessly with each other, in whichevercombination suits the needs of the user."
-      />
-      <PrinciplesSectionCard
-        heading="Carbon is Consistent"
-        body="Based on the comprehensive IBM Design Language, every element and component of Carbon was designed from the ground up to work elegantly together to ensure consistent, cohesive user experiences."
-      />
-    </PrinciplesSection>
-```
-
-Now, we can see our cards with content on the page! Next, we need to add the appropriate icons.
-
-## Using icons from `carbon-elements`
-
-`LandingPage.js` is the script file which specifies the content of the page (body copy, etc). So that is also where we will import our icons!
-
-Near the top of `LandingPage.js`, add import statements for each icon you wish to use:
-
-```
-    import Globe32 from '@carbon/icons-react/lib/globe/32';
-    import PersonFavorite32 from '@carbon/icons-react/lib/person--favorite/32';
-    import Application32 from '@carbon/icons-react/lib/application/32';
-```
-
-`carbon-elements` provides these as SVGs with accessible markup.
-
-Now, you can put these icons in your component, like so:
-
-```
-    <PrinciplesSection
-      heading="The Principles"
-      className="landing-page__r3">
-      <PrinciplesSectionCard
-        heading="Carbon is Open"
-        body="It's a distributed effort, guided by the principles of the open-source movement. Carbon's users are also it's makers, and everyone is encouraged to contribute."
-        icon={<PersonFavorite32 />}
-      />
-      <PrinciplesSectionCard
-        heading="Carbon is Modular"
-        body="Carbon's modularity ensures maximum flexibility in execution. It's components are designed to work seamlessly with each other, in whichevercombination suits the needs of the user."
-        icon={<Application32 />}
-      />
-      <PrinciplesSectionCard
-        heading="Carbon is Consistent"
-        body="Based on the comprehensive IBM Design Language, every element and component of Carbon was designed from the ground up to work elegantly together to ensure consistent, cohesive user experiences."
-        icon={<Globe32 />}
-      />
-    </PrinciplesSection>
-```
-
-(notice the additional `icon` prop!)
-
-## Adding styles
-
-In `principles-section.scss`, put:
-
-```
-    .principles-section > h2 {
-      padding-bottom: 2rem;
+  // left border in just the 2nd column items
+  @include carbon--breakpoint(md) {
+    &:nth-child(odd) {
+      border-left: 1px solid $ui-03;
     }
+  }
 
-    .section-card {
-      height: 18rem;
-      border-left: $spacing-3xs solid $ui-03;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      svg {
-        position: absolute;
-        bottom: 0;
-      }
-    }
+  // left border in all items
+  @include carbon--breakpoint(lg) {
+    margin-top: 0;
+    border-left: 1px solid $ui-03;
 
-    .section-card__heading {
-      margin-bottom: $spacing-05;
+    svg {
+      margin-top: $layout-06;
     }
-
-    .section-card__body {
-      @include type-style('body-short-01');
-    }
+  }
+}
 ```
 
-Great! We're using Carbon tokens for measurements and color.
+Once you save, go ahead and resize your browser to see the responsive layout at the different breakpoints. Make sure to review these color and spacing tokens. There are also a few breakpoint mixins that may be new to you. The `@carbon/layout` [SassDoc](https://github.com/carbon-design-system/carbon/blob/master/packages/layout/docs/sass.md) is a great reference to see what all is available.
 
-# Accessibility
+### Type
 
-## Checking in with DAP
+Our `InfoCard` headings looks to be too small, to increase their font sizes according to the design spec with:
 
-We've got quite a bit of new markup on the page — now's a great time to check in with DAP and make sure we're on the right track.
+##### src/components/Info/\_info.scss
 
-Open Chrome dev tools and run the checker. It looks like we've got a violation. Our `<article>` element requires a `<label>` to be accessible. Digging in further it seems like we might be using the wrong semantic element. A humble `<div>` will suffice. 🚀 🧸 😘
-
-Inside of `PrinciplesSection.js`, the `return` statement for `PrinciplesSectionCard` can be updated:
-
+```scss
+.info-card__heading {
+  @include carbon--type-style('productive-heading-03');
+}
 ```
-    …
-    return (
-        <div className="section-card bx--col bx--col-4">
-          <h3 className="section-card__heading">
-            {`${splitHeading[0]} `}
-            <strong>{splitHeading[1]}</strong>
-          </h3>
-          <p className="section-card__body">{props.body}</p>
-          {props.icon}
-        </div>
-      );
-    …
+
+Also, the design has the last word in each subheading as bold. To accomplish that, add this helper function after the import in `Info.js`.
+
+##### src/components/Info/Info.js
+
+```javascript
+// Take in a phrase and separate the third word in an array
+function createArrayFromPhrase(phrase) {
+  const splitPhrase = phrase.split(' ');
+  const thirdWord = splitPhrase.pop();
+  return [splitPhrase.join(' '), thirdWord];
+}
 ```
+
+Then, update `InfoCard` to use `createArrayFromPhrase`.
+
+##### src/components/Info/Info.js
+
+```javascript
+const InfoCard = props => {
+  const splitHeading = createArrayFromPhrase(props.heading);
+
+  return (
+    <article className="info-card bx--col-md-4 bx--col-lg-4 bx--col-xlg-3 bx--offset-xlg-1">
+      <h4 className="info-card__heading">
+        {`${splitHeading[0]} `}
+        <strong>{splitHeading[1]}</strong>
+      </h4>
+      <p className="info-card__body">{props.body}</p>
+      {props.icon}
+    </article>
+  );
+};
+```
+
+Finally, add the declaration block in `_info.scss` to set `InfoCard` body copy styles and to bottom-align the icons.
+
+##### src/components/Info/\_info.scss
+
+```scss
+.info-card__body {
+  margin-top: $spacing-06;
+  flex-grow: 1; // fill space so icons are bottom aligned
+  @include type-style('body-long-01');
+
+  // prevent large line lengths between small and medium viewports
+  @include carbon--breakpoint-between(321px, md) {
+    max-width: 75%;
+  }
+}
+```
+
+## Check accessibility
+
+- TODO DAP
+- TODO Update article to div
+
+## Submit pull request
+
+We're going to submit a pull request to verify completion of this tutorial step.
+
+### Continuous integration (CI) check
+
+Run the CI check to make sure we're all set to submit a pull request.
+
+```bash
+$ yarn ci-check
+```
+
+_Note: Having issues running the CI check? [Step 1](</tutorial/react-step-1#continuous-integration-(ci)-check>) has troubleshooting notes that may help._
+
+### Git commit and push
+
+Before we can create a pull request, stage and commit all of your changes:
+
+```bash
+$ git add --all && git commit -m "feat(tutorial): complete step 4"
+```
+
+Then, push to your repository:
+
+```bash
+$ git push origin react-step-4
+```
+
+_Note: Having issues pushing your changes? [Step 1](/tutorial/react-step-1#git-commit-and-push) has troubleshooting notes that may help._
+
+### Pull request (PR)
+
+Finally, visit [carbon-tutorial](https://github.com/carbon-design-system/carbon-tutorial) to "Compare & pull request". In doing so, make sure that you are comparing to `react-step-4` into `base: react-step-4`.
+
+_Note: Expect your tutorial step PRs to be reviewed by the Carbon team but not merged. We'll close your PR so we can keep the repository's remote branches pristine and ready for the next person!_
