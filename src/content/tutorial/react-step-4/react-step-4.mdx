@@ -377,8 +377,21 @@ Finally, add the declaration block in `_info.scss` to set `InfoCard` body copy s
 
 ## Check accessibility
 
-- TODO DAP
-- TODO Update article to div
+We've added new markup and styles, so it's a good practice to check [DAP](https://www.ibm.com/able/dynamic-assessment-plug-in.html) and make sure our rendered markup is on the right track for accessibility.
+
+With the browser extension installed, Chrome in this example, open Dev Tools and run DAP.
+
+<ImageComponent cols="12" caption="DAP violations">
+
+![DAP violations](/images/DAP-violations.png)
+
+</ImageComponent>
+
+That first violation is for the off-screen "skip to content" link. This link isn't shown and is used to assist screen reading, so the color contrast violation can be ignored.
+
+But, those 3 other violations came from the `<article>` element used in new `InfoCard`. Since the `<article>` element requires a label to be accessible, it seems like we may be using the wrong semantic element. A humble `<div>` will suffice.
+
+In `Info.js`, replace the `<article>` opening and closing tags with `<div>` tags.
 
 ## Submit pull request
 
