@@ -27,6 +27,9 @@
       },
       "react-step-3": {
         "title": "3. Using APIs"
+      },
+      "react-step-4": {
+        "title": "4. Creating components"
       }
     }
   },
