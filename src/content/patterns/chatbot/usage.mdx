@@ -14,15 +14,38 @@ tabs: ['Overview', 'Usage', 'Content']
 
 </AnchorLinks>
 
-### Anatomy of the Chatbot Pattern
+### Anatomy of the Chatbot
 
-The following diagram outlines the primary, non-experimental components within the chatbot pattern.
+The following diagram outlines the primary components within the chatbot pattern.
 
-<ImageComponent cols="8">
+<ImageComponent cols="8"> 
 
-![Chatbot anatomy](images/chatbot-4.png)
+![Chatbot anatomy](images/chatbot-4.png) 
 
 </ImageComponent>
+
+### Chatbot elements
+
+#### Chatbot Header
+
+The chatbot header contains the title of the chat and up to four action buttons that control the chatbot application. Typically, the “close” icon must always be included.
+
+#### System Message
+
+System Messages represent what the bot has responded to the user with. Past messages will have a faded treatment, whereas active messages have an indicator applied (see below)
+
+#### Structured Response
+
+Structured Responses present choices to the user that are easy for the bot to understand. When selected, a structured response will change its visual appearance and a user message will appear with the same content.
+
+#### User Message
+
+A user message indicates what the user has input, via voice, text input, or structured response. 
+
+#### Chatbot Input
+
+The Chatbot Input is comprised of a text input field, a button for voice input (optional) and an submit button
+
 
 ### Requesting Information from a Chatbot
 
