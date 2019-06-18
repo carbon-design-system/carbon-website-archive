@@ -73,14 +73,14 @@ export default class LeftNav extends React.Component {
                   {navItems}
                   <hr className="bx--side-nav__divider" />
                   <SideNavLink
-                    icon={<Launch16 />}
-                    href="/resources#theme-libraries"
+                    renderIcon={Launch16}
+                    to="/resources#theme-libraries"
+                    element={Link}
                     className="bx--side-nav--website-link">
                     Design Kit
                   </SideNavLink>
                   <SideNavLink
-                    icon={<Launch16 />}
-                    href="javascript:void(0)"
+                    renderIcon={Launch16}
                     to="/resources#github-repos"
                     className="bx--side-nav--website-link"
                     element={Link}>
