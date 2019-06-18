@@ -240,16 +240,13 @@
     "title": "Resources"
   },
   "contributing": {
-    "title": "Contributing",
+    "title": "Contribute",
     "sub-nav": {
       "governance": {
         "title": "Governance"
       },
       "designers": {
-        "title": "Designers"
-      },
-      "developers": {
-        "title": "Developers"
+        "title": "Contribution model"
       },
       "add-ons": {
         "title": "Add-ons"
