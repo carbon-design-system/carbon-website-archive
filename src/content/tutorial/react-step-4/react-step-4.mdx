@@ -72,7 +72,7 @@ You should see something similar to where the [previous step](/tutorial/react-st
 
 ## Review design
 
-Here's what we're building - an informational section that has a heading and three subheadings. Each subheading has accompanying copy and a pictogram. We'll assume that this informational section is used elsewhere on the site, meaning it's a great opportunity to build it as a resusable component. As for naming, we'll call it an `InfoSection` with three `InfoCard`s as children.
+Here's what we're building – an informational section that has a heading and three subheadings. Each subheading has accompanying copy and a pictogram. We'll assume that this informational section is used elsewhere on the site, meaning it's a great opportunity to build it as a resusable component. As for naming, we'll call it an `InfoSection` with three `InfoCard`s as children.
 
 <ImageComponent cols="12" caption="Info section layout">
 
@@ -126,7 +126,7 @@ Let's create the parent component that includes the "The Principles" heading. Th
 </div>
 ```
 
-We want to do a few things when abstracting it to a component. First, we only want Carbon (`bx--`) and this component's class names - we don't want to include `landing-page__r3` as that's specific to the landing page. For that we'll use React `props` so we can pass in and use `props.className`.
+We want to do a few things when abstracting it to a component. First, we only want Carbon (`bx--`) and this component's class names; we don't want to include `landing-page__r3` as that's specific to the landing page. For that we'll use React `props` so we can pass in and use `props.className`.
 
 We'll also:
 
@@ -214,7 +214,7 @@ import PersonFavorite32 from '@carbon/icons-react/lib/person--favorite/32';
 import Application32 from '@carbon/icons-react/lib/application/32';
 ```
 
-_Note: You'll notice that these 32px icons aren't the pictograms as designed. The Carbon team is currently working on adding pictograms to the icons packages. Until then, the biggest SVGs._
+_Note: You'll notice that these 32px icons aren't the pictograms as designed. The Carbon team is currently working on adding pictograms to the icons packages. Until then, we'll use the biggest SVGs._
 
 With everything imported, replace the current:
 
@@ -256,6 +256,8 @@ With the new components:
 </InfoSection>
 ```
 <!-- prettier-ignore-end -->
+
+_Note: Now is a good time to resize your browser from phone to extra large viewport widths to see how the responsive grid is working before we add further styling._
 
 ## Add styling
 
@@ -314,7 +316,7 @@ Once you save, go ahead and resize your browser to see the responsive layout at 
 
 ### Type
 
-Our `InfoCard` headings looks to be too small, to increase their font sizes according to the design spec with:
+Our `InfoCard` headings look to be too small. We need to increase their font sizes according to the design spec with:
 
 ##### src/components/Info/\_info.scss
 
@@ -389,7 +391,7 @@ With the browser extension installed, Chrome in this example, open Dev Tools and
 
 That first violation is for the off-screen "skip to content" link. This link isn't shown and is used to assist screen reading, so the color contrast violation can be ignored.
 
-But, those 3 other violations came from the `<article>` element used in new `InfoCard`. Since the `<article>` element requires a label to be accessible, it seems like we may be using the wrong semantic element. A humble `<div>` will suffice.
+But, those three other violations came from the `<article>` element used in new `InfoCard`. Since the `<article>` element requires a label, it seems like we may be using the wrong semantic element. A humble `<div>` will suffice.
 
 In `Info.js`, replace the `<article>` opening and closing tags with `<div>` tags.
 
