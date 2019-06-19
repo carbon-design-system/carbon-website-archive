@@ -63,6 +63,12 @@
   padding: $spacing-09 $spacing-05 $spacing-05 $spacing-05;
 }
 
+.website-tabs > .bx--tabs {
+  padding: 0;
+  background: transparent;
+  min-height: 2.5rem;
+}
+
 .website-tabs div.bx--row {
   display: block;
   margin: 0;
