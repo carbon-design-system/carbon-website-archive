@@ -80,27 +80,27 @@ Column.propTypes = {
   /**
    * Specify the col width at small breakpoint
    */
-  colSm: PropTypes.number,
+  colSm: PropTypes.string,
   /**
    * Specify the col width at medium breakpoint
    */
-  colMd: PropTypes.number,
+  colMd: PropTypes.string,
   /**
    * Specify the col width at large breakpoint
    */
-  colLg: PropTypes.number,
+  colLg: PropTypes.string,
   /**
    * Specify the col offset at large breakpoint
    */
-  offsetLg: PropTypes.number,
+  offsetLg: PropTypes.string,
   /**
    * Specify the col offset at medium breakpoint
    */
-  offsetMd: PropTypes.number,
+  offsetMd: PropTypes.string,
   /**
    * Specify the col offset at small breakpoint
    */
-  offsetSm: PropTypes.number,
+  offsetSm: PropTypes.string,
   /**
    * Specify a no-gutter class
    */
