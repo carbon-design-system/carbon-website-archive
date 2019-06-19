@@ -286,15 +286,7 @@ Same goes for the `Tabs` opening tag:
 ```
 <!-- prettier-ignore-end -->
 
-Next, we'll need to add a styling override to move the tabs to the right on large viewports. For that, in `app.scss`, add the breakpoint import at the **top** of the file before we import `_landing-page.scss`.
-
-##### src/app.scss
-
-```scss
-@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';
-```
-
-Create a file `_overrides.scss` in `src/content/LandingPage` with this declaration block.
+Next, we'll need to add a styling override to move the tabs to the right on large viewports. Create a file `_overrides.scss` in `src/content/LandingPage` with this declaration block.
 
 ##### src/content/LandingPage/\_overrides.scss
 
@@ -380,11 +372,13 @@ The third row will be created in a later tutorial, so we'll just add the headers
 
 ## Style landing page
 
-We've added basic layout styles in `_landing-page.scss`, so now let's add type, color and spacing styles to match the design. We'll be using our [spacing tokens](https://www.carbondesignsystem.com/guidelines/spacing). In `app.scss`, add these imports at the **top** of the file so we can use Carbon tokens and typography Sass mixins and functions:
+We've added basic layout styles in `_landing-page.scss`, so now let's add type, color and spacing styles to match the design. We'll be using our [spacing tokens](https://www.carbondesignsystem.com/guidelines/spacing). In `app.scss`, add these imports at the **top** of the file so we can use Carbon breakpoints, tokens, and typography Sass mixins and functions:
 
 ##### src/app.scss
 
 ```scss
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family.scss';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';
 @import 'carbon-components/scss/globals/scss/typography.scss';
 @import 'carbon-components/scss/globals/scss/vars.scss';
 ```
@@ -514,6 +508,10 @@ _Note: You may be wondering why there are vertical gaps between the type and spa
   @include carbon--type-style('productive-heading-03');
   margin-top: $spacing-06;
   margin-bottom: $spacing-08;
+
+  @include carbon--breakpoint-between((320px + 1), md) {
+    max-width: 75%;
+  }
 }
 ```
 
@@ -531,8 +529,8 @@ Let's also add some styles for the last row, even though that will get used late
 
 ```scss
 .landing-page__r3 {
-  padding-top: $spacing-08;
-  padding-bottom: $spacing-08;
+  padding-top: $spacing-09;
+  padding-bottom: $spacing-09;
   @include landing-page-background;
 }
 
@@ -645,6 +643,8 @@ export default RepoTable;
 
 This component uses two props, `rows` and `headers`, and returns a Carbon `DataTable`. As for where the various `Table*` components came from? The [DataTable story](http://react.carbondesignsystem.com/?selectedKind=DataTable&selectedStory=with%20expansion) in Storybook was used to put together the data table structure.
 
+_Note: The_ `getTableProps`_,_ `getHeaderProps`_, and_ `getRowProps` _functions each tell the_ `DataTable` _component to process and return the necessary props that are needed by the_ `Table`_,_ `Header` _and_ `Row` _components respectively. We take the return of that function (an object containing the props) and [spread it out](https://reactjs.org/docs/jsx-in-depth.html#spread-attributes) into the component._
+
 At this point, return to `RepoPage.js` because now we need to render a static `RepoTable`.
 
 ### Render data table
@@ -732,7 +732,7 @@ Lastly in `RepoPage.js`, we need to simply replace `Data table will go here` wit
 
 ## Style repo page
 
-Our styles for the repo page are mostly fine. We just need to updated a few vertical spacing issues.
+Our styles for the repo page are mostly fine. We just need to update a few vertical spacing issues.
 
 In `_repo-page.scss`, add the following styles:
 
@@ -759,7 +759,7 @@ Run the CI check to make sure we're all set to submit a pull request.
 $ yarn ci-check
 ```
 
-_Note: If the_ `ci-check` _is giving an error, it's likely that some of your source files are not properly formatted. This could happen if your text editor isn't formatting with Prettier on save. To get_ `ci-check` _to pass, run_ `yarn format`_ then re-run_ `yarn ci-check`_._
+_Note: Having issues running the CI check? [Step 1](</tutorial/react-step-1#continuous-integration-(ci)-check>) has troubleshooting notes that may help._
 
 ### Git commit and push
 
@@ -775,7 +775,7 @@ Then, push to your repository:
 $ git push origin react-step-2
 ```
 
-_Note: If you receive a_ `non-fast-forward` _error, it's likely that your forked repository is behind the original repository and needs updated. This can happen if the tutorial was updated after you began working on it. To fix, run_ `git pull upstream react-step-2` _to merge the changes into your branch, then you can try pushing again. Or, you can [manually merge](https://help.github.com/en/articles/syncing-a-fork) in the upstream changes._
+_Note: Having issues pushing your changes? [Step 1](/tutorial/react-step-1#git-commit-and-push) has troubleshooting notes that may help._
 
 ### Pull request (PR)
 
