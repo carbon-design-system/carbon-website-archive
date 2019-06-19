@@ -38,23 +38,20 @@ class CodePage extends Component {
         htmlFile = require('carbon-components/html/toolbar/toolbar.html');
       } else if (parent === 'date-picker' && variation === 'time-picker') {
         htmlFile = require('carbon-components/html/time-picker/time-picker.html');
-      } else if (parent === 'data-table' && variation === 'data-table-v2') {
-        htmlFile = require('carbon-components/html/data-table-v2/data-table-v2.html');
+      } else if (parent === 'data-table' && variation === 'data-table') {
+        htmlFile = require('carbon-components/html/data-table/data-table.html');
       } else if (
         parent === 'data-table' &&
-        variation === 'data-table-v2--expandable'
+        variation === 'data-table--expandable'
       ) {
-        htmlFile = require('carbon-components/html/data-table-v2/data-table-v2--expandable.html');
+        htmlFile = require('carbon-components/html/data-table/data-table--expandable.html');
       } else if (
         parent === 'data-table' &&
-        variation === 'data-table-v2--pagination'
+        variation === 'data-table--pagination'
       ) {
-        htmlFile = require('carbon-components/html/data-table-v2/data-table-v2--with-pager.html');
-      } else if (
-        parent === 'data-table' &&
-        variation === 'data-table-v2--small'
-      ) {
-        htmlFile = require('carbon-components/html/data-table-v2/data-table-v2--small.html');
+        htmlFile = require('carbon-components/html/data-table/data-table--with-pager.html');
+      } else if (parent === 'data-table' && variation === 'data-table--small') {
+        htmlFile = require('carbon-components/html/data-table/data-table--small.html');
       } else {
         htmlFile = require(`carbon-components/html/${parent}/${variation}.html`);
       }
@@ -101,7 +98,7 @@ class CodePage extends Component {
     let javascriptSection;
     try {
       if (component === 'data-table') {
-        javascriptSection = require('carbon-components/src/components/data-table-v2/README.md');
+        javascriptSection = require('carbon-components/src/components/data-table/README.md');
       } else {
         javascriptSection = require(`carbon-components/src/components/${component}/README.md`);
       }
