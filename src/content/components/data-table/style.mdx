@@ -7,13 +7,13 @@ tabs: ['Code', 'Usage', 'Style']
 
 | Class                                                                                                                 | Property                              | Color token |
 | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | ----------- |
-| `.bx--data-table-v2-header`                                                                                           | background-color                      | `$ui-01`    |
-| `.bx--data-table-v2-header`                                                                                           | text color                            | `$text-01`  |
-| `.bx--data-table-v2 thead`                                                                                            | background-color                      | `$ui-03`    |
+| `.bx--data-table-header`                                                                                           | background-color                      | `$ui-01`    |
+| `.bx--data-table-header`                                                                                           | text color                            | `$text-01`  |
+| `.bx--data-table thead`                                                                                            | background-color                      | `$ui-03`    |
 | `.bx--table-header-label`                                                                                             | text color                            | `$text-01`  |
-| `.bx--data-table-v2 tbody`                                                                                            | background-color                      | `$ui-01`    |
-| `.bx--data-table-v2 td`                                                                                               | text color                            | `$text-02`  |
-| `.bx--data-table-v2--zebra`                                                                                           | background-color                      | –           |
+| `.bx--data-table tbody`                                                                                            | background-color                      | `$ui-01`    |
+| `.bx--data-table td`                                                                                               | text color                            | `$text-02`  |
+| `.bx--data-table--zebra`                                                                                           | background-color                      | –           |
 | `.bx--expandable-row-v2`                                                                                              | background-color                      | `$ui-01`    |
 | `.bx--table-sort-v2__icon` <br/> `.bx--table-expand-v2__svg` <br/> `.bx--overflow-menu__icon`                         | fill                                  | `$icon-01`  |
 | `.bx--batch-actions--active`                                                                                          | background-color                      | `$interactive-01` |
@@ -24,12 +24,12 @@ tabs: ['Code', 'Usage', 'Style']
 
 | Class                                                              | Property                              | Color token         |
 | -------------------------------------------------------------------| ------------------------------------- | ------------------- |
-| `.bx--data-table-v2 tr:hover td`                                   | background-color                      | `$hover-row`        |
-| `.bx--data-table-v2 td:hover`                                      | text color                            | `$text-01`          |
-| `.bx--data-table-v2 td:focus`                                      | border                                | `$focus`            |
-| `.bx--data-table-v2--selected`                                     | background-color                      | `$selected-ui`      |
-| `.bx--data-table-v2--selected td`                                  | text color                            | `$text-01`          |
-| `.bx--data-table-v2--selected:hover`                               | background-color                      | `$hover-selected-ui`|
+| `.bx--data-table tr:hover td`                                   | background-color                      | `$hover-row`        |
+| `.bx--data-table td:hover`                                      | text color                            | `$text-01`          |
+| `.bx--data-table td:focus`                                      | border                                | `$focus`            |
+| `.bx--data-table--selected`                                     | background-color                      | `$selected-ui`      |
+| `.bx--data-table--selected td`                                  | text color                            | `$text-01`          |
+| `.bx--data-table--selected:hover`                               | background-color                      | `$hover-selected-ui`|
 | `.bx--batch-actions .bx--btn:hover`                                | background color                      | `$hover-primary`    |
 
 ### Style options
@@ -65,9 +65,9 @@ Column headers should be in title case. All other table text should be sentenced
 
 | Class                       | Font-size (px/rem) | Font-weight    | Type token        |
 | --------------------------- | ------------------ | -------------- | ----------------- |
-| `.bx--data-table-v2-header` | 18 / 1.125         | Regular / 400  | `$heading-03`     |
+| `.bx--data-table-header` | 18 / 1.125         | Regular / 400  | `$heading-03`     |
 | `.bx--table-header-label`   | 14 / 0.875         | SemiBold / 600 | `$heading-01`     |
-| `.bx--data-table-v2 td`     | 14 / 0.875         | Regular / 400  | `$body-short-01`  |
+| `.bx--data-table td`     | 14 / 0.875         | Regular / 400  | `$body-short-01`  |
 
 ## Structure
 
@@ -77,14 +77,14 @@ Tables are a configurable and customizable component. Designers can pick and cho
 
 Short and Default are offered as **user preferences** that can be accessed from the table settings menu.
 
-Row sizes are customizable. The column header row `.bx--data-table-v2 thead` should always match the row size of the table. Tall row heights are only recommended if your data is expected to have 2 lines of content in a single row.
+Row sizes are customizable. The column header row `.bx--data-table thead` should always match the row size of the table. Tall row heights are only recommended if your data is expected to have 2 lines of content in a single row.
 
 | Class                         | Size    | Row Height (px/rem) |
 | ----------------------------- | ------- | ------------------- |
-| `.bx--data-table-v2--compact` | Compact | 24 / 1.5            |
-| `.bx--data-table-v2--short`   | Short   | 32 / 2              |
-| `.bx--data-table-v2 tr`       | Default | 48 / 3              |
-| `.bx--data-table-v2--tall`    | Tall    | 64 / 4              |
+| `.bx--data-table--compact` | Compact | 24 / 1.5            |
+| `.bx--data-table--short`   | Short   | 32 / 2              |
+| `.bx--data-table tr`       | Default | 48 / 3              |
+| `.bx--data-table--tall`    | Tall    | 64 / 4              |
 
 <ImageComponent fixed="default" caption="Data table: varying row sizes">
 
@@ -100,9 +100,9 @@ Column widths can vary by content and only requires a minimum spacing between co
 
 | Class                                                                            | Property                    | px / rem  | Spacing token |
 | -------------------------------------------------------------------------------- | --------------------------- | --------- | ------------- |
-| `.bx--data-table-v2-header`                                                      | margin-bottom               | 16 / 1    | `$spacing-05` |
+| `.bx--data-table-header`                                                      | margin-bottom               | 16 / 1    | `$spacing-05` |
 | `.bx--table-sort-v2__icon`                                                       | padding                     | 8 / 0.5   | `$spacing-03` |
-| `.bx--data-table-v2 td:first-of-type` <br/> `.bx--data-table-v2 td:last-of-type` | padding-left, padding-right | 16 / 1    | `$spacing-05` |
+| `.bx--data-table td:first-of-type` <br/> `.bx--data-table td:last-of-type` | padding-left, padding-right | 16 / 1    | `$spacing-05` |
 
 ### Enhancements
 
