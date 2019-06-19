@@ -41,7 +41,7 @@
 .#{$prefix}--side-nav--website .#{$prefix}--side-nav__item {
   &:nth-last-child(2) {
     .#{$prefix}--side-nav--website-link {
-      margin-top: $spacing-05;
+      margin-top: $spacing-03;
     }
   }
 
@@ -50,6 +50,10 @@
     .#{$prefix}--side-nav--website-link {
       flex-direction: row-reverse;
       justify-content: space-between;
+    }
+
+    .#{$prefix}--side-nav__link-text {
+      padding-left: 0;
     }
 
     .#{$prefix}--side-nav--website-link > .#{$prefix}--side-nav__icon {
@@ -91,6 +95,24 @@
 //===================
 // SIDE NAV overrides
 //===================
+
+.#{$prefix}--side-nav__items {
+  padding-top: 0;
+}
+
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website
+  .#{$prefix}--side-nav__submenu-title,
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website
+  .#{$prefix}--side-nav__link-text {
+  padding-left: 0;
+}
+
+.#{$prefix}--side-nav.#{$prefix}--side-nav--website
+  .#{$prefix}--side-nav__menu
+  a.#{$prefix}--side-nav__link
+  > .#{$prefix}--side-nav__link-text {
+  padding-left: 1rem;
+}
 
 .#{$prefix}--side-nav__submenu:focus,
 a.#{$prefix}--side-nav__link:focus {
@@ -216,6 +238,10 @@ a.#{$prefix}--side-nav__link:focus {
   background-color: #353535;
   color: $ui-01;
 
+  .#{$prefix}--side-nav__link-text {
+    color: $ui-01;
+  }
+
   .#{$prefix}--side-nav__icon svg {
     fill: $ui-01;
   }
@@ -232,6 +258,10 @@ a.#{$prefix}--side-nav__link:focus {
   > .#{$prefix}--side-nav__link {
   background-color: #e5e5e5;
   color: $text-01;
+
+  .#{$prefix}--side-nav__link-text {
+    color: $text-01;
+  }
 
   .#{$prefix}--side-nav__icon svg {
     fill: $text-01;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
-import Dropdown from 'carbon-components-react/lib/components/DropdownV2';
+import Dropdown from 'carbon-components-react/es/components/Dropdown';
 import Textarea from 'react-textarea-autosize';
 import InputRange from '@carbon/addons-website/src/components/InputRange';
 
