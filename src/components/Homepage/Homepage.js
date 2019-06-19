@@ -59,11 +59,11 @@ export class HomepageHeader extends React.Component {
               </aside>
               <div className="bx--col-lg-8 bx--col-md-4">
                 <p className="bx--type-expressive-paragraph-01">
-                  The <strong>Carbon Design System</strong> is IBM&rsquo;s
-                  open-source design system for products and experiences. With
-                  the IBM Design Language as its foundation, the system consists
-                  of working code, design tools and resources, human interface
-                  guidelines, and a vibrant community of contributors.
+                  Carbon is IBM&rsquo;s <strong>open-source</strong> design
+                  system for products and experiences. With the IBM Design
+                  Language as its foundation, the system consists of working
+                  code, design tools and resources, human interface guidelines,
+                  and a vibrant community of contributors.
                 </p>
               </div>
             </div>
