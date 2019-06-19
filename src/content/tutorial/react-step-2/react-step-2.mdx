@@ -372,12 +372,13 @@ The third row will be created in a later tutorial, so we'll just add the headers
 
 ## Style landing page
 
-We've added basic layout styles in `_landing-page.scss`, so now let's add type, color and spacing styles to match the design. We'll be using our [spacing tokens](https://www.carbondesignsystem.com/guidelines/spacing). In `app.scss`, add these imports at the **top** of the file so we can use Carbon tokens and typography Sass mixins and functions:
+We've added basic layout styles in `_landing-page.scss`, so now let's add type, color and spacing styles to match the design. We'll be using our [spacing tokens](https://www.carbondesignsystem.com/guidelines/spacing). In `app.scss`, add these imports at the **top** of the file so we can use Carbon breakpoints, tokens, and typography Sass mixins and functions:
 
 ##### src/app.scss
 
 ```scss
 @import 'carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family.scss';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';
 @import 'carbon-components/scss/globals/scss/typography.scss';
 @import 'carbon-components/scss/globals/scss/vars.scss';
 ```
@@ -507,6 +508,10 @@ _Note: You may be wondering why there are vertical gaps between the type and spa
   @include carbon--type-style('productive-heading-03');
   margin-top: $spacing-06;
   margin-bottom: $spacing-08;
+
+  @include carbon--breakpoint-between((320px + 1), md) {
+    max-width: 75%;
+  }
 }
 ```
 
@@ -524,8 +529,8 @@ Let's also add some styles for the last row, even though that will get used late
 
 ```scss
 .landing-page__r3 {
-  padding-top: $spacing-08;
-  padding-bottom: $spacing-08;
+  padding-top: $spacing-09;
+  padding-bottom: $spacing-09;
   @include landing-page-background;
 }
 

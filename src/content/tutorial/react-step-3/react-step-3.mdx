@@ -331,7 +331,7 @@ The data table component and its pieces use a common React pattern called [rende
 
 Revisiting `RepoTable.js`, we are already passing in our row objects along with headers for each column. The `render` prop is being used to tell the data table how to render the headers and rows. That prop takes a function that receives the processed headers and rows as arguments as well as some helper functions for rendering the table.
 
-One common hurdle with the data table is how to access data that might be not correspond with a table column but is needed to compute the value of a cell that does. The data table component processes and controls only the row properties which corresponds to headers (columns). Because of this, the `rows` object you get access to in the render prop function is _different_ than the one you passed in to the `rows` prop.
+One common hurdle with the data table is how to access data that might not correspond with a table column but is needed to compute the value of a cell that does. The data table component processes and controls only the row properties which corresponds to headers (columns). Because of this, the `rows` object you get access to in the render prop function is _different_ than the one you passed in to the `rows` prop.
 
 We need to modify one apsect of the data table because if you expand a row, it says `Row description`. We want to update that with the repository description coming from the GitHub API. This is an example of where we need a simple look-up function to find the data we care about - data that does not directly correspond to a column.
 
