@@ -20,7 +20,7 @@ The basic data table is shipped with a base style, which includes:
 </ImageComponent>
 
 
-## Additonal functionality
+## Additional functionality
 
 The following can be added to the data table to increase its functionality.
 
@@ -72,8 +72,46 @@ Batch actions are functions that may be performed on multiple items within a tab
 
 Inline actions are functions that may be performed on a specific table item. Each row is accompanied by an [overflow menu](/components/overflow-menu) that contains actions related specifically to that table row.
 
-<ImageComponent fixed="default" caption="Inline actions on data tables">
+<ImageComponent fixed="default" caption="Overflow menu example">
 
-![Inline action on data table](images/data-table-usage-8.png)
+![Overflow menu example](images/data-table-usage-8.png)
+
+</ImageComponent>
+
+When the overflow menu contains less than three options, keep the actions inline as icon buttons instead. This reduces 1 click and makes available actions visible to users at a glance.
+
+<ImageComponent fixed="default" caption="Inline actions without overflow">
+
+![Inline actions without overflow](images/data-table-usage-10.png)
+
+</ImageComponent>
+
+#### Persistent overflow menu
+
+By default, the overflow menu icon appears on hover or focus. This reduces visual clutter and drives user interactions with clear context and results.
+
+Data table also supports persistent overflow menu icons. Overflow icons should only persist if the actions contained within them are core to the function of your table. Enabling persistent overflow icons may complicate data presentation and impact general usability.
+
+<ImageComponent fixed="default" caption="Persistent overflow menu icon example">
+
+![Persistent overflow icon example](images/data-table-usage-9.png)
+
+</ImageComponent>
+
+### Expandable
+
+The expandable data table is useful for presenting large amounts of data in a small space. Use the expanded section for suplementary information or data that needs additional query time.
+
+<ImageComponent fixed="default" caption="Expandable data table with one row expanded">
+
+![Expandable data table with one row expanded.](images/data-table-usage-11.png)
+
+</ImageComponent>
+
+By default, the expand-all chevron is not shown. Keeping detailed information in expanded section saves user loading time by postponing some data queries until needed. Expanding all rows at once will typically negate this advantages of the expandable table. If additional load time is expected to display expanded information, use skeleton states instead of spinners.
+
+<ImageComponent fixed="default" caption="Expandabling all rows with skeleton states">
+
+![Expandabling all rows with skeleton states](images/data-table-usage-12.png)
 
 </ImageComponent>

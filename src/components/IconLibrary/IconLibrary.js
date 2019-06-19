@@ -2,7 +2,7 @@ import React from 'react';
 import { Search, Loading } from 'carbon-components-react';
 import IconEmptyState from '../IconEmptyState';
 
-const sizes = ['16', '32', 'Glyph'];
+const sizes = ['16', '20', '24', '32', 'Glyph'];
 
 /**
  * Provides support for our experimental icon library, `@carbon/icons-react`,
