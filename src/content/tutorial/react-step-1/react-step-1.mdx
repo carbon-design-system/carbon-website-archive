@@ -7,10 +7,10 @@ internal: false
 
 <AnchorLinks>
 
-- [Fork, clone & branch](#fork-clone--branch)
-- [Build & start](#build--start)
+- [Fork, clone and branch](#fork-clone-and-branch)
+- [Build and start](#build-and-start)
 - [Install Carbon](#install-carbon)
-- [Install & build Sass](#install--build-sass)
+- [Install and build Sass](#install-and-build-sass)
 - [Add UI Shell](#add-ui-shell)
 - [Create pages](#create-pages)
 - [Add routing](#add-routing)
@@ -36,7 +36,7 @@ A [preview](https://react-step-2--carbon-tutorial.netlify.com) of what you will 
   </Column>
 </Row>
 
-## Fork, clone & branch
+## Fork, clone and branch
 
 This tutorial has an accompanying GitHub repository called [carbon-tutorial](https://github.com/carbon-design-system/carbon-tutorial) that we'll use as a starting point for each step.
 
@@ -91,7 +91,7 @@ $ git fetch upstream
 $ git checkout -b react-step-1 upstream/react-step-1
 ```
 
-## Build & start
+## Build and start
 
 We have the repository forked to your GitHub account, cloned down to your machine, and the starting branch checked out. Next, install the React app's dependencies with:
 
@@ -121,7 +121,7 @@ Stop your development server with `CTRL-C` and install Carbon dependencies with:
 $ yarn add carbon-components carbon-components-react @carbon/icons-react
 ```
 
-## Install & build Sass
+## Install and build Sass
 
 We need to run a Sass build as the Carbon styles are authored in Sass, so run the following command to install `node-sass` as a dependency.
 
@@ -340,7 +340,7 @@ Next we'll render our UI Shell by importing our `TutorialHeader` component and `
 ```javascript
 import React, { Component } from 'react';
 import './app.scss';
-import Button from 'carbon-components-react/lib/components/Button/Button';
+import { Button } from 'carbon-components-react';
 import { Content } from 'carbon-components-react/lib/components/UIShell';
 import TutorialHeader from './components/TutorialHeader';
 ```
@@ -531,7 +531,7 @@ Add the `Link` import in `TutorialHeader.js`:
 import { Link } from 'react-router-dom';
 ```
 
-Then update the `HeaderName` component to use the `element` prop:
+We need to use the `Link` component instead of the default anchor elements to prevent full page reload when navigating to different pages with React Router. To use `Link`, update the `HeaderName` component to use the `element` prop and replace the `href` with `to`:
 
 ##### src/components/TutorialHeader/TutorialHeader.js
 
@@ -567,7 +567,7 @@ $ yarn ci-check
 
 _Note: If the_ `ci-check` _is giving an error, it's likely that some of your source files are not properly formatted. This could happen if your text editor isn't formatting with Prettier on save. To get_ `ci-check` _to pass, run_ `yarn format`_ then re-run_ `yarn ci-check`_._
 
-### Git commit & push
+### Git commit and push
 
 Before we can create a pull request, stage and commit all of your changes:
 
@@ -582,6 +582,10 @@ Then, push to your repository:
 ```bash
 $ git push origin react-step-1
 ```
+
+_Note: If your Git remote protocol is HTTPS instead of SSH, you may be prompted to authenticate with GitHub when you push changes. If your GitHub account has two-factor authentication enabled, we recommend that you follow these instructions to [create a personal access token for the command line](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line). That lets you use your token instead of password when performing Git operations over HTTPS._
+
+_Note: If you receive a_ `non-fast-forward` _error, it's likely that your forked repository is behind the original repository and needs updated. This can happen if the tutorial was updated after you began working on it. To fix, run_ `git pull upstream react-step-1` _to merge the changes into your branch, then you can try pushing again. Or, you can [manually merge](https://help.github.com/en/articles/syncing-a-fork) in the upstream changes._
 
 ### Pull request (PR)
 
