@@ -1318,12 +1318,12 @@
       },
       "vue": {
         "stable": false,
-        "experimental": false,
-        "new": false,
+        "experimental": true,
+        "new": true,
         "updated": false,
         "deprectated": false,
         "underConstruction": false,
-        "notAvailable": true
+        "notAvailable": false
       }
     }
   ]
