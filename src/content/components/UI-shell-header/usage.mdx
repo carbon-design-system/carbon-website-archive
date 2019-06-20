@@ -1,6 +1,6 @@
 ---
 title: UI shell header
-tabs: ['Usage','Style']
+tabs: ['Code', 'Usage', 'Style']
 ---
 
 ### This header is part of the Carbon UI shell. A shell is a collection of components shared by all products within a platform. It provides a common set of interaction patterns that persist between and across products.
@@ -24,11 +24,11 @@ tabs: ['Usage','Style']
 
 The UI shell is made up of three components: The header, the [left panel](/components/UI-shell-left-panel/usage), and the [right panel](/components/UI-shell-right-panel/usage). All three can be used independently, but the components were designed to work together.
 
-| Shell UI component      |   |
-|-------------|---|
-| Header      | The highest level of navigation. The header can be used on its own for simple products or be used to trigger the left and right panels.|
-| Left panel  | An optional panel that is used for a product's navigation.|
-| Right panel | An optional panel that shows additional system level actions or content associated with a system icon in the header.|
+| Shell UI component |                                                                                                                                         |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Header             | The highest level of navigation. The header can be used on its own for simple products or be used to trigger the left and right panels. |
+| Left panel         | An optional panel that is used for a product's navigation.                                                                              |
+| Right panel        | An optional panel that shows additional system level actions or content associated with a system icon in the header.                    |
 
 <ImageComponent cols="8"  caption="UI shell components">
 
@@ -36,7 +36,7 @@ The UI shell is made up of three components: The header, the [left panel](/compo
 
 </ImageComponent>
 
-For each UI shell component, left-to-right translates to product-to-global. The left side of the header contains items relevant at the product level. Moving to the right along the header, the functions become more global. Elements in the middle of the header should represent system-level controls. Elements on the right side of the header, such as the switcher, are the most global in their scope and span multiple products. 
+For each UI shell component, left-to-right translates to product-to-global. The left side of the header contains items relevant at the product level. Moving to the right along the header, the functions become more global. Elements in the middle of the header should represent system-level controls. Elements on the right side of the header, such as the switcher, are the most global in their scope and span multiple products.
 
 ## Anatomy
 
@@ -78,7 +78,7 @@ Links to related systems should also live in the switcher. If you’re building 
 
 ## Icon placement
 
-Icons are not a required element of the header and a product may choose to use any set of icons for their UI. Icons should always be aligned to the right of the header with no gaps between icons. 
+Icons are not a required element of the header and a product may choose to use any set of icons for their UI. Icons should always be aligned to the right of the header with no gaps between icons.
 
 <Row>
 <Column offsetLg="4" colMd="4" colLg="4">
@@ -97,9 +97,9 @@ Icons are not a required element of the header and a product may choose to use a
 </Column>
 </Row>
 
-
 ### Example placement
-The example below shows a header with a switcher, three core icons, a product icon, and search. 
+
+The example below shows a header with a switcher, three core icons, a product icon, and search.
 
 <ImageComponent cols="8" >
 
@@ -107,18 +107,18 @@ The example below shows a header with a switcher, three core icons, a product ic
 
 </ImageComponent>
 
-|Icon | Position|  |
-|-----|-----|---|
-|Search|Left|Search should always be positioned as the furthest left icon. This is to allow for a expanding search field that does not disrupt other icon positions. |
-|Other|Right of Search and left of core icons| The number of header icons a product uses may vary. This placement will help avoid disrupting the position of the core icons and inconsistencies as your user navigates between other product shell headers. 
-|Help|4th from the right||
-|Notifications|3rd from the right||
-|Account|2nd from the right||
-|Switcher|Right|The switcher should always be positioned as the furthest right icon. This ensures the icon does not shift when navigating across systems. |
+| Icon          | Position                               |                                                                                                                                                                                                              |
+| ------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Search        | Left                                   | Search should always be positioned as the furthest left icon. This is to allow for a expanding search field that does not disrupt other icon positions.                                                      |
+| Other         | Right of Search and left of core icons | The number of header icons a product uses may vary. This placement will help avoid disrupting the position of the core icons and inconsistencies as your user navigates between other product shell headers. |
+| Help          | 4th from the right                     |                                                                                                                                                                                                              |
+| Notifications | 3rd from the right                     |                                                                                                                                                                                                              |
+| Account       | 2nd from the right                     |                                                                                                                                                                                                              |
+| Switcher      | Right                                  | The switcher should always be positioned as the furthest right icon. This ensures the icon does not shift when navigating across systems.                                                                    |
 
 ## Behavior
 
-As a header scales down to fit smaller screen sizes, header links and menus should collapse into a left-panel hamburger menu. See the examples below to better understand the header's responsive behavior. 
+As a header scales down to fit smaller screen sizes, header links and menus should collapse into a left-panel hamburger menu. See the examples below to better understand the header's responsive behavior.
 
 If your UI includes a left panel, the header links should be added above the left panel items, pushing them down accordingly.
 
