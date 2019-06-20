@@ -5,16 +5,16 @@ tabs: ['Overview', 'Usage', 'Content']
 
 <AnchorLinks>
 
-- [Anatomy of the Chatbot Pattern](#anatomy-of-the-chatbot-pattern)
-- [Requesting Information from a Chatbot](#requesting-information-from-a-chatbot)
-- [Best Practices](#best-practices)
-- [Bot Variants](#bot-variants)
-- [Launching the Bot](#launching-the-bot-(experimental))
-- [Error Notifications](#error-notifications-(experimental))
+- [Anatomy](#anatomy)
+- [Requesting information](#requesting-information)
+- [Best practices](#best-practices)
+- [Variants](#variants)
+- [Launching a bot](#launching-a-bot-(experimental))
+- [Error notifications](#error-notifications-(experimental))
 
 </AnchorLinks>
 
-### Anatomy of the Chatbot
+## Anatomy
 
 The following diagram outlines the primary components within the chatbot pattern.
 
@@ -26,28 +26,28 @@ The following diagram outlines the primary components within the chatbot pattern
 
 ### Chatbot elements
 
-#### Chatbot Header
+#### Chatbot header
 
 The chatbot header contains the title of the chat and up to four action buttons that control the chatbot application. Typically, the “close” icon must always be included.
 
-#### System Message
+#### System message
 
 System Messages represent what the bot has responded to the user with. Past messages will have a faded treatment, whereas active messages have an indicator applied (see below)
 
-#### Structured Response
+#### Structured response
 
 Structured Responses present choices to the user that are easy for the bot to understand. When selected, a structured response will change its visual appearance and a user message will appear with the same content.
 
-#### User Message
+#### User message
 
 A user message indicates what the user has input, via voice, text input, or structured response. 
 
-#### Chatbot Input
+#### Chatbot input
 
 The Chatbot Input is comprised of a text input field, a button for voice input (optional) and an submit button
 
 
-### Requesting Information from a Chatbot
+## Requesting information
 
 The following flow shows a typical exchange between a user and a bot. This model can be used as a baseline to start building useful conversational experiences.
 
@@ -57,11 +57,11 @@ The following flow shows a typical exchange between a user and a bot. This model
 
 </ImageComponent>
 
-### Best Practices
+## Best practices
 
 At a minimum, use these best practices to help ensure a successful conversational experience. For more in-depth conversational principles, see the [Conversational Design Principles](content#conversation-design-principles-for-bots)
 
-#### Greeting / Introduction
+#### Introduction
 
 Ensure your users know they are talking to a bot and that the bot has stated its purpose. Set the context for what questions users can ask about.
 
@@ -71,7 +71,7 @@ Ensure your users know they are talking to a bot and that the bot has stated its
 
 </ImageComponent>
 
-#### User Intent
+#### User intent
 
 Typically, a user inputs an intent, which can be request for information or a task for the bot to complete. This can take the form of a text (shown here) as well as a structured response (see next section)
 
@@ -81,7 +81,7 @@ Typically, a user inputs an intent, which can be request for information or a ta
 
 </ImageComponent>
 
-#### Structured Responses
+#### Structured responses
 
 Prompt for additional details with a menu of structured responses. This narrows the scope to more specific information to answer the user’s question.
 
@@ -111,16 +111,16 @@ The bot should provide a thoughtful, informative response to the user’s intent
 
 </ImageComponent>
 
-### Bot Variants
-The chatbot window comes in two variants, Regular and Tight. Use the Regular chatbot window variant when your chat interaction is the main experience and there are few to no other widgets on the screen. Consider pinning the chat window to one side of the screen if more space is required. Use the Tight variant and related symbols when embedding a chat interaction into a larger experience with significant amounts of existing content/information.
+## Variants
+The chatbot window comes in two variants, regular and tight. Use the regular chatbot window variant when your chat interaction is the main experience and there are few to no other widgets on the screen. Consider pinning the chat window to one side of the screen if more space is required. Use the tight variant and related symbols when embedding a chat interaction into a larger experience with significant amounts of existing content/information.
 
 <ImageComponent cols="8">
 
-![Chatbot window comes in two sizes, Regular and Tight](images/chatbot-2.png)
+![Chatbot window comes in two sizes, regular and tight](images/chatbot-2.png)
 
 </ImageComponent>
 
-### Launching the Bot (Experimental)
+## Launching a bot (Experimental)
 
 Bots should be launched from a clear floating trigger at the bottom right of the screen, or from a button embedded within the UI. See Carbon Chatbot Add-on Design Kit for the appropriate variants.
 
@@ -130,7 +130,7 @@ Bots should be launched from a clear floating trigger at the bottom right of the
 
 </ImageComponent>
 
-### Error Notifications (Experimental)
+## Error notifications (Experimental)
 
 Be sure to indicate to a user when their message has not been sent due to a connectivity or server problem. When in a connected state, temporarily show the success notification, and then remove it along with any message error indicators.
 
