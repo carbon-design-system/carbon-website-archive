@@ -17,6 +17,35 @@ internal: false
 
 [Create an IBM Cloud account](https://cloud.ibm.com/registration) if you don't already have one.
 
+### Optimize sass
+
+We can further optimize our sass build by only importing the sass for the components we are using in our application.
+
+In `index.scss` we can replace our import of the entire carbon sass on line `6`
+
+```
+@import 'carbon-components/scss/globals/scss/styles.scss';
+```
+
+and only import the components that we are actually using in our application.
+
+```
+$css--font-face: true;
+$css--plex: true;
+@import '~carbon-components/scss/globals/scss/css--font-face';
+@import '~carbon-components/scss/globals/grid/grid';
+
+// Carbon components
+@import '~carbon-components/scss/components/link/link';
+@import '~carbon-components/scss/components/button/button';
+@import '~carbon-components/scss/components/tabs/tabs';
+@import '~carbon-components/scss/components/pagination/pagination';
+@import '~carbon-components/scss/components/data-table/data-table';
+@import '~carbon-components/scss/components/ui-shell/ui-shell';
+```
+
+You can read more about this here https://medium.com/carbondesign/minimal-css-with-carbon-b0c089ccfa71
+
 ### Build for production
 
 Before we deploy our app, we need create an optimized production build
