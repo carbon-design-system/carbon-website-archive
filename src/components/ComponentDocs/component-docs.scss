@@ -4,7 +4,7 @@
 }
 
 //todo make this use the carbon code component. inject class somehow??
-body .component-docs pre[class*='language-'] {
+body .component-docs pre {
   font-size: 0.75rem;
   line-height: 1.45;
   background: $ui-05;
@@ -15,4 +15,8 @@ body .component-docs pre[class*='language-'] {
 
 body .component-docs code[class*='language-'] {
   background: transparent;
+}
+
+.component-docs h1 {
+  display: none;
 }
