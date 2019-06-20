@@ -3,44 +3,60 @@ title: Chatbots
 tabs: ['Overview', 'Usage', 'Content']
 ---
 
-### You have established a need for a chatbot based on extensive market validation and user research. You have also determined the scope of your bot and the topics it will be able to discuss with users. How should you begin to think about designing your conversation?
+### You have established a need for a chatbot based on extensive market validation and user research. How should you begin to think about designing your conversation?
 
-(See 'Conversation Planning' in [IBM Design for AI: Conversation](http://ai-design.eu-de.mybluemix.net/design/ai/conversation/planning)).
+## Resources
+
+<Row className="tile--resource--no-margin tile--group">
+<Column offsetLg="4" colLg="4" colMd="4" noGutterSm>
+  <ClickableTile
+    title="IBM Design for AI: Conversation"
+    href="http://ai-design.eu-de.mybluemix.net/design/ai/conversation/planning"
+    type="resource">
+
+![](images/bee.svg)
+
+  </ClickableTile>
+</Column>
+</Row>
+
+## Conversational writing
 
 ### Tailoring the conversation to your users
 
-Be sure to consider the tone of your bot. Tone should depend on the audience and the context in which the user will be engaging in a conversation. For example, a healthcare professional will require a different tone than the end user of a financial banking bot. Each requires a uniquely tailored experience. While in many cases the following principles will suffice, ensure that your bots tone is not distracting or at odds with users' expectations.
+Be sure to consider the tone of your bot. Tone should depend on the audience and the context in which the user will be engaging in a conversation. For example, a healthcare professional will require a different tone than the end user of a financial banking bot. 
 
-In general, bots should:
+Each bot requires a uniquely tailored experience. While in many cases the following principles will suffice, ensure that your bot's tone is not distracting or at odds with users' expectations.
+
+#### In general, bots should:
+
 - Use simple language that is easy to understand
 - Be helpful and agreeable, but not forced or insincere
 - Confirm its understanding of user inputs when appropriate (i.e., by paraphrasing).
 - Provide help or a menu of options when a user is stuck
 
-Typically, bots should not:
+#### Typically, bots should not:
+
 - Attempt to seem like a real human
 - Fail to provide an answer without recourse
 - Be pushy or send unsolicited messages
 
-Additional information about voice and tone
-- IBM Cloud - https://hc-design-vt.w3ibm.mybluemix.net/design-system/voice-and-tone?tab=guide
-- Carbon - http://www.carbondesignsystem.com/guidelines/content/general
+See the voice and tone guide from [Carbon](http://www.carbondesignsystem.com/guidelines/content/general) for additional writing guidance.
 
 ### Conversation design principles for bots
 
 Ensure the success of your bot by following these principles:
 
-1. **Introduce your bot.** Be crisp and clear about the identity of your bot, the value it can provide and why the user should trust it. Make it clear to your users that they are chatting with bot, not a real human. And, be sure to provide clear next steps.
-    - Is your bot setting the right expectations?
-    - Has your bot set the boundaries of what it can do?
-2. **Orient the user.** Inform the user about what they can do/ask/find, etc. Focus on what the user is trying to do and not on what your bot is doing.
+1. **Introduce your bot.** Be crisp and clear about the identity of your bot, the value it can provide and why the user should trust it. Make it clear to your users that they are chatting with bot, not a real human. And, be sure to provide clear next steps. 
+    * Is your bot setting the right expectations? 
+    * Has your bot set the boundaries of what it can do?
+2. **Orient the user.** Inform the user about what they can do/ask/find. Focus on what the user is trying to do and not on what your bot is doing.
 3. **Be proactive.** Suggest options (structured responses) as effective inputs that will help the user get what they are looking for or trying to do. Actively identify scenarios where guidance is needed for users that don't know what to ask or how to ask it.
 4. **Be helpful and clear.** Provide clarification if user is seeking answers or attempting to complete a task or operation. Provide options (using clarifying imagery if possible) whenever a user is exploring or browsing.
-5. **Decrease ambiguity.** Confirm user intents that have significant consequences, by repeating what is about to happen ("To confirm, move $300.00 to Checking?"). Summarizing any complex input from the user to confirm the bot's understanding. Where possible, try to prevent “dead-ends”, unknowns, or chats that go off in tangents by using structured responses rather than asking for freeform text as user input.
-6. **Provide clear actions.** Provide a menu of structure responses to expand or narrow the scope of the input through refining the question/input or expanding through synonyms, etc. 
-    - What is the right amount of appropriate choices to help the user achieve their goal? Don't overwhelm the user with too many choices, especially if they are exploring options.
+5. **Decrease ambiguity.** Confirm user intents that have significant consequences by repeating what is about to happen ("To confirm, you want to move $300.00 to Checking?"). Summarizing any complex input from the user to confirm the bot's understanding. Where possible, use structured responses to prevent dead-ends, unknowns, or chats that go off in tangents.
+6. **Provide clear actions.** Provide a menu of structured responses to expand or narrow the scope of the input. How many choices will help the user achieve their goal? Don't overwhelm the user with too many choices, especially if they are exploring options.
 7. **Guide the user to their goal.** Ensure successful interactions by providing guidance and feedback during complex processes. Notify the user how long a process might take, or if they are on the right track. Where appropriate allow users to cancel or restart complex processes.
-8. **Get feedback.** Provide opportunities for the user to give feedback to the system so that a system may learn in real-time or be improved with manual intervention.
+8. **Get feedback.** Provide opportunities for user feedback to help the system learn in real-time or through manual intervention.
 
 #### References: 
 
