@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { TabContent } from 'carbon-components-react';
-import ChevronDownGlyph from '@carbon/icons-react/lib/chevron--down/index';
+import { ChevronDownGlyph } from '@carbon/icons-react';
 import { settings } from 'carbon-components';
 
 const { prefix } = settings;
