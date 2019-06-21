@@ -211,6 +211,9 @@
       "about": {
         "title": "About"
       },
+      "chatbot": {
+        "title": "Chatbot"
+      },
       "deleting": {
         "title": "Deleting pattern"
       }
@@ -221,9 +224,6 @@
     "sub-nav": {
       "overview": {
         "title": "Overview"
-      },
-      "chatbot": {
-        "title": "Chatbot"
       },
       "common-actions": {
         "title": "Common actions"
