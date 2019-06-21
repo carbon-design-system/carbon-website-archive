@@ -39,6 +39,10 @@
   display: inline-block;
 }
 
+.component-docs h2 {
+  display: block;
+}
+
 .page-h2#articles:before {
   padding-bottom: rem(80px);
 }
@@ -173,18 +177,22 @@
 //----------------------------
 
 .page-ul,
-.page-ol {
+.page-ol,
+.component-docs ul,
+.component-docs ol {
   @include carbon--type-style('body-long-02');
   margin: 0 0 $spacing-06 $spacing-06;
   line-height: 1.5;
   position: relative;
 }
 
-.page-ul {
+.page-ul,
+.component-docs ul {
   margin-left: 0;
 }
 
-.page-ul > li {
+.page-ul > li,
+.component-docs li {
   font-weight: 400;
   padding-left: $spacing-05;
   list-style-type: none;
@@ -204,7 +212,8 @@
   margin-top: $spacing-05;
 }
 
-.page-ol > li {
+.page-ol > li,
+.component-docs ol > li {
   font-weight: 400;
   padding-left: 0.25rem;
   list-style-type: decimal;
