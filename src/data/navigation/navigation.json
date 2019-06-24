@@ -211,6 +211,9 @@
       "about": {
         "title": "About"
       },
+      "chatbot": {
+        "title": "Chatbots"
+      },
       "deleting": {
         "title": "Deleting pattern"
       }

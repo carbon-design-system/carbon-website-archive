@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import RenewIcon from '@carbon/icons-react/es/renew/20';
+import { Renew20 as RenewIcon } from '@carbon/icons-react';
 import { settings } from 'carbon-components';
 
 const { prefix } = settings;
