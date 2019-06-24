@@ -131,7 +131,7 @@ Now that we have a production build, let's get it on the cloud. We're going to u
 
 _Note: If unfamiliar with buildpacks, the [staticfile buildpack docs](https://docs.cloudfoundry.org/buildpacks/staticfile/index.html) has good definitions and configuration documentation._
 
-With the Cloud Foundry CLI installed, next we need to create a `manifest.yml` file in the root of the project. You'll need to add your `REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN` here.
+With the Cloud Foundry CLI installed, next we need to create a `manifest.yml` file in the root of the project. You'll need to add your GitHub personal access token here. If you haven't created a GitHub access token yet, see [step 3](/tutorial/react-step-3#create-access-token).
 
 To prevent muliple apps trying to use the `carbon-tutorial` name, replace `USERNAME` with your GitHub username below to make sure our apps are uniquely named.
 
@@ -200,13 +200,13 @@ _Note: Having issues running the CI check? [Step 1](</tutorial/react-step-1#cont
 Before we can create a pull request, stage and commit all of your changes:
 
 ```bash
-$ git add --all && git commit -m "feat(tutorial): complete step 4"
+$ git add --all && git commit -m "feat(tutorial): complete step 5"
 ```
 
 Then, push to your repository:
 
 ```bash
-$ git push origin react-step-4
+$ git push origin react-step-5
 ```
 
 _Note: Having issues pushing your changes? [Step 1](/tutorial/react-step-1#git-commit-and-push) has troubleshooting notes that may help._
