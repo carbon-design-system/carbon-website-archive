@@ -245,20 +245,20 @@
   "resources": {
     "title": "Resources"
   },
-  "contributing": {
-    "title": "Contributing",
+  "contribute": {
+    "title": "Contribute",
     "sub-nav": {
+      "process-overview": {
+        "title": "Process overview"
+      },
+      "how-to-contribute": {
+        "title": "How to contribute"
+      },
+      "report-a-bug": {
+        "title": "Report a bug"
+      },
       "governance": {
         "title": "Governance"
-      },
-      "designers": {
-        "title": "Designers"
-      },
-      "developers": {
-        "title": "Developers"
-      },
-      "add-ons": {
-        "title": "Add-ons"
       }
     }
   },
