@@ -404,6 +404,10 @@ class Layout extends React.Component {
                     href: 'https://twitter.com/_carbondesign',
                     linkText: 'Twitter',
                   },
+                  {
+                    href: 'https://www.netlify.com',
+                    linkText: 'Netlify',
+                  },
                 ]}>
                 <p>
                   Have questions? Email us or open
