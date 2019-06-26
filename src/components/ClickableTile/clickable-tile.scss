@@ -123,8 +123,17 @@ a.tile--article.tile--dark:hover {
   text-decoration: none;
   color: $text-01;
   margin: 0 0 $spacing-03 0;
-  padding: 0 0 0 0;
+  padding: 0 15% 0 0;
   @include carbon--type-style('body-short-01');
+
+  @include carbon--breakpoint('md') {
+    padding-right: 0;
+  }
+}
+
+.tile--resource .tile__info .tile__info-title-large {
+  @include carbon--type-style('productive-heading-03');
+  display: block;
 }
 
 .tile--resource.tile--dark .tile__info h5 {

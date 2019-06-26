@@ -41,7 +41,7 @@
 .homepage-video--controls {
   position: absolute;
   bottom: 1rem;
-  right: 1rem;
+  left: 1rem;
   height: rem(24px);
   width: rem(24px);
   background: transparent;
@@ -49,6 +49,10 @@
   border: none;
   padding: 0;
   z-index: 10; //need this to be above dots overlay
+
+  @include carbon--breakpoint('lg') {
+    left: 384px;
+  }
 }
 
 .homepage-video--controls:focus {

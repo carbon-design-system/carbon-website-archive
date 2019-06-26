@@ -4,7 +4,6 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import Packages from '../../../package.json';
 import WebsiteHeader from '../WebsiteHeader';
-import WebsiteAlert from '../WebsiteAlert';
 import LeftNav from '../LeftNav';
 import favicon32 from '../../content/global/images/favicon-32.png';
 import {
@@ -297,14 +296,8 @@ class Layout extends React.Component {
               onToggleBtnClick={this.onToggleBtnClick}
               isInternal={isInternal}
               isSearchOpen={this.state.isSearchOpen}
-              handleSearchClick={this.handleSearchClick}>
-              <WebsiteAlert
-                alertTitle="Carbon v10 is live!"
-                alertDescription="View the migration guide to upgrade from v9."
-                buttonText="Migrate to v10"
-                buttonTo="/updates/v10-migration/overview"
-              />
-            </WebsiteHeader>
+              handleSearchClick={this.handleSearchClick}
+            />
 
             <WebsiteSwitcher
               isSwitcherFinal={this.state.isSwitcherFinal}

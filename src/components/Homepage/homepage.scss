@@ -38,21 +38,6 @@
   height: 100%;
 }
 
-.container--homepage h3.homepage--header__title {
-  @include carbon--type-style('expressive-heading-03', true);
-  display: none;
-  font-weight: 600;
-  position: absolute;
-  bottom: 3.5rem;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  z-index: 3;
-
-  @include carbon--breakpoint('md') {
-    display: block;
-  }
-}
-
 // Headings on homepage
 
 .container--homepage h3,
@@ -133,4 +118,24 @@
 .container--homepage .bx--row {
   position: relative;
   z-index: 2;
+}
+
+// homepage tile at top
+
+.homepage--tile-header {
+  display: flex;
+  align-items: flex-end;
+  margin-top: -50%;
+
+  @include carbon--breakpoint('lg') {
+    margin-top: 0;
+  }
+
+  .bx--aspect-ratio--2x1 {
+    padding-bottom: 100%;
+
+    @include carbon--breakpoint('md') {
+      padding-bottom: 50%;
+    }
+  }
 }
