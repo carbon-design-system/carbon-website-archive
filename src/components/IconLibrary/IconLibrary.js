@@ -4,6 +4,11 @@ import IconEmptyState from '../IconEmptyState';
 
 const sizes = ['16', '20', '24', '32', 'Glyph'];
 
+// TODO: do we need to make use of new icon metadata for cupcake experience,
+// or just next steps?
+// const iconMetadata = require('./icon-metadata.json');
+// const iconCategoryMapping = require('./icon-category-mapping.json');
+
 /**
  * Provides support for our experimental icon library, `@carbon/icons-react`,
  * at the /experimental/iconography/library route
@@ -101,10 +106,11 @@ export default class IconLibrary extends React.Component {
       sections,
     } = this.state;
 
+    // TODO: why doesn't the `light` prop work? seems to not work in react components
     const search = (
       <Search
-        small
-        className="icon-search"
+        light
+        className="icon-search bx--search--light"
         onChange={this.handleOnChange}
         placeHolderText="Search by descriptors like “add”, or “check”"
         aria-label="Icon library search"
