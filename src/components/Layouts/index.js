@@ -316,7 +316,7 @@ class Layout extends React.Component {
                   linkText: 'IBM Design Language',
                 },
                 {
-                  href: 'https://www.ibm.com/design/brand/',
+                  href: 'https://www.ibm.com/brand/',
                   linkText: 'IBM Brand Center',
                 },
                 {
@@ -410,6 +410,10 @@ class Layout extends React.Component {
                   {
                     href: 'https://twitter.com/_carbondesign',
                     linkText: 'Twitter',
+                  },
+                  {
+                    href: 'https://www.netlify.com',
+                    linkText: 'Netlify',
                   },
                 ]}>
                 <p>
