@@ -24,7 +24,7 @@ export class h2 extends React.Component {
             typeof this.props.children !== 'string'
               ? undefined
               : this.props.children
-                  .replace(/[:&?’‘“”'",.]/g, '')
+                  .replace(/[^\w\s$*_+~.()'"!\-:@]/g, '')
                   .toLowerCase()
                   .split(' ')
                   .join('-');
@@ -61,7 +61,7 @@ export class h3 extends React.Component {
             typeof this.props.children !== 'string'
               ? undefined
               : this.props.children
-                  .replace(/[:&?’‘“”'",.]/g, '')
+                  .replace(/[^\w\s$*_+~.()'"!\-:@]/g, '')
                   .toLowerCase()
                   .split(' ')
                   .join('-');
@@ -98,7 +98,7 @@ export class h4 extends React.Component {
             typeof this.props.children !== 'string'
               ? undefined
               : this.props.children
-                  .replace(/[:&?’‘“”'",.]/g, '')
+                  .replace(/[^\w\s$*_+~.()'"!\-:@]/g, '')
                   .toLowerCase()
                   .split(' ')
                   .join('-');
