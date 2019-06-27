@@ -46,7 +46,7 @@ export default class ComponentCode extends React.Component {
       <Location>
         {({ location }) => {
           const hash = name
-            .replace(/[:&?’‘“”'",.]/g, '')
+            .replace(/[^\w\s$*_+~.()'"!\-:@]/g, '')
             .toLowerCase()
             .split(' ')
             .join('-');
