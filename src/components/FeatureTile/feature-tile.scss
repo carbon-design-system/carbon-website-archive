@@ -6,6 +6,14 @@ a.feature-tile {
   display: block;
   text-decoration: none;
   width: 100%;
+
+  @include carbon--breakpoint('md') {
+    height: 420px;
+  }
+
+  @include carbon--breakpoint('lg') {
+    height: auto;
+  }
 }
 
 .tile__img .gatsby-resp-image-wrapper {
@@ -68,46 +76,71 @@ a.feature-tile:hover .feature-tile__info {
   color: $carbon--gray-10;
 }
 
-a.feature-tile.feature-tile--mobile {
-  display: block;
-
+.feature-tile .tile__img .bx--aspect-ratio {
   @include carbon--breakpoint('md') {
-    display: none;
+    padding: 0;
+    height: 100%;
   }
 }
 
-a.feature-tile.feature-tile--desktop {
-  display: none;
-
+.feature-tile .tile__img .bx--aspect-ratio--object {
   @include carbon--breakpoint('md') {
-    display: block;
+    position: static;
+    height: 100%;
   }
 }
 
-div.feature-tile--margin.feature-tile--mobile,
-div.feature-tile--mobile {
-  margin-bottom: $spacing-05;
-
+.feature-tile--designers .tile__img {
   @include carbon--breakpoint('md') {
-    margin-bottom: 0;
+    height: 100%;
   }
-}
-
-div.feature-tile--margin.feature-tile--desktop,
-div.feature-tile--desktop {
-  margin-bottom: 0;
-
-  @include carbon--breakpoint('md') {
-    margin-bottom: $spacing-05;
-
-    & > .bx--col-lg-12 {
-      padding: 0;
-    }
-  }
-}
-
-.feature-tile--designers {
 }
 
 .feature-tile--developers {
+  overflow: hidden;
+}
+
+.feature-tile--developers .tile__img {
+  .gatsby-resp-image-image {
+    object-fit: cover;
+    object-position: left;
+  }
+
+  @include carbon--breakpoint('md') {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      height: 500px;
+      width: 100%;
+      background: $carbon--black-100;
+      z-index: -1;
+    }
+
+    &::before {
+      top: -400px;
+    }
+
+    .gatsby-resp-image-image {
+      top: 75px !important;
+    }
+  }
+
+  @include carbon--breakpoint('lg') {
+    margin: 0;
+    width: 100%;
+
+    &::before,
+    &::after {
+      background: transparent;
+      display: none;
+    }
+
+    .gatsby-resp-image-image {
+      top: 0px !important;
+    }
+  }
 }
