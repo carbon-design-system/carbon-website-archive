@@ -19,7 +19,7 @@ export class HomepageHeader extends React.Component {
               <div className="bx--col-lg-4 bx--col-md-4 bx--col-sm-2 bx--offset-lg-12 bx--offset-md-4 bx--offset-sm-2 homepage--tile-header">
                 <ClickableTile
                   title="Read"
-                  titleLarge="Migrate from v9 to v10"
+                  titleLarge="Migrate to v10"
                   href="/updates/v10-migration/overview"
                   type="resource"
                   dark
