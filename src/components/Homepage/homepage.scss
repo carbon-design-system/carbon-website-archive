@@ -23,8 +23,12 @@
 .homepage--header {
   height: 0;
   overflow: hidden;
-  padding-top: 50%;
+  padding-top: 100%;
   position: relative;
+
+  @include carbon--breakpoint('md') {
+    padding-top: 50%;
+  }
 
   // Match max height at lg breakpoint
   @include carbon--breakpoint('lg') {
@@ -126,6 +130,13 @@
   display: flex;
   align-items: flex-end;
   margin-top: -50%;
+  padding-left: 0;
+  padding-right: 0;
+
+  @include carbon--breakpoint('md') {
+    padding-left: $spacing-05;
+    padding-right: $spacing-05;
+  }
 
   @include carbon--breakpoint('lg') {
     margin-top: 0;

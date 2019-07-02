@@ -1,9 +1,13 @@
 .homepage-video--main {
-  width: 100%;
+  width: 180%;
   height: 100%;
   position: absolute;
   top: 0;
   right: 0;
+
+  @include carbon--breakpoint('md') {
+    width: 100%;
+  }
 }
 
 .homepage-video--wrapper {
