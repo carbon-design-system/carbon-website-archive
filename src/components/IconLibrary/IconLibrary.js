@@ -209,8 +209,12 @@ function groupIconsBySize(icons) {
  * lag on the input.
  */
 function createIconSections(icons, filteredIcons) {
+  {
+    console.groupEnd();
+  }
+  console.group();
+  console.log('\n\n\n️️\n🍎🍎🍎\ncreateIconSections()');
   const groups = groupIconsBySize(icons);
-  console.log(groups);
   return Object.keys(groups)
     .filter(size => {
       if (!Array.isArray(groups[size])) {
@@ -223,29 +227,64 @@ function createIconSections(icons, filteredIcons) {
         key={size}
         className="icon-size"
         aria-labelledby={`icon-h2 icon-h2-${size}`}>
-        {/* TODO: section needs aria-labelled-by to h2's ID */}
+        {console.log('\n\nsize:')}
+        {console.log(size)}
         <header>
           <h2 className={`icon-h2 icon-h2-${size}`}>
             {isNaN(size) ? size : `${size}x${size}`}
           </h2>
         </header>
-        {/* TODO: change to <ul tabindex="0">*/}
         <ul className="icon-container" tabindex="0">
-          {groups[size]
+          {renderIconList(groups[size], filteredIcons)}
+          {/* {groups[size]
             .filter(icon => filteredIcons.indexOf(icon.name) !== -1)
-            .map(renderIcon)}
+            .map(renderIcon)} */}
         </ul>
       </section>
     ));
 }
 
 /**
+ * render list of available icons for this category.
+ * if none are available, return a blank block
+ */
+
+function renderIconList(categoryArray, filteredList) {
+  console.group();
+  console.log('\nrenderIconList()');
+  console.log(categoryArray);
+  console.log(filteredList);
+  console.log('\nmatches in group:');
+  let displayedIconsList = [];
+  categoryArray.forEach(icon => {
+    if (filteredList.indexOf(icon.name) !== -1) {
+      console.log(icon.name);
+      displayedIconsList.push(icon);
+    }
+  });
+  console.log(displayedIconsList);
+  const displayedIcons = displayedIconsList.map(renderIcon);
+  console.log(displayedIcons);
+  console.groupEnd();
+  return displayedIcons.length > 0 ? (
+    displayedIcons
+  ) : (
+    <li className="icon">
+      <div className="icon__card" />
+      <h5 className="icon__card-title" title="No results in this size.">
+        No results in this size.
+      </h5>
+    </li>
+  );
+}
+
+/**
  * Renders an individual icon
+ * passing `null` renders no-results icon block
  */
 function renderIcon(icon) {
   return (
     <li key={icon.name} className="icon">
-      {/* TODO: should be li inside of UL */}
       <div className="icon__card">
         <icon.Component />
       </div>
