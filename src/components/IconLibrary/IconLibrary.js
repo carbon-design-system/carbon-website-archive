@@ -210,6 +210,7 @@ function groupIconsBySize(icons) {
  */
 function createIconSections(icons, filteredIcons) {
   const groups = groupIconsBySize(icons);
+  console.log(groups);
   return Object.keys(groups)
     .filter(size => {
       if (!Array.isArray(groups[size])) {
@@ -218,15 +219,22 @@ function createIconSections(icons, filteredIcons) {
       return groups[size].length !== 0;
     })
     .map(size => (
-      <section key={size} className="icon-size">
+      <section
+        key={size}
+        className="icon-size"
+        aria-labelledby={`icon-h2 icon-h2-${size}`}>
+        {/* TODO: section needs aria-labelled-by to h2's ID */}
         <header>
-          <h2 className="icon-h2">{isNaN(size) ? size : `${size}x${size}`}</h2>
+          <h2 className={`icon-h2 icon-h2-${size}`}>
+            {isNaN(size) ? size : `${size}x${size}`}
+          </h2>
         </header>
-        <div className="icon-container">
+        {/* TODO: change to <ul tabindex="0">*/}
+        <ul className="icon-container" tabindex="0">
           {groups[size]
             .filter(icon => filteredIcons.indexOf(icon.name) !== -1)
             .map(renderIcon)}
-        </div>
+        </ul>
       </section>
     ));
 }
@@ -236,7 +244,8 @@ function createIconSections(icons, filteredIcons) {
  */
 function renderIcon(icon) {
   return (
-    <div key={icon.name} className="icon">
+    <li key={icon.name} className="icon">
+      {/* TODO: should be li inside of UL */}
       <div className="icon__card">
         <icon.Component />
       </div>
@@ -244,6 +253,6 @@ function renderIcon(icon) {
         {icon.friendlyName}
       </h5>
       <span className="icon__card-details" title={icon.name} />
-    </div>
+    </li>
   );
 }
