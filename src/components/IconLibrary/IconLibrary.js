@@ -74,6 +74,22 @@ export default class IconLibrary extends React.Component {
   };
 
   /**
+   * clear search state to reset view to default
+   */
+  handleClearSearch = event => {
+    event.preventDefault();
+    const searchValue = '';
+    this.setState(
+      {
+        searchValue,
+      },
+      () => {
+        this.filterIcons();
+      }
+    );
+  };
+
+  /**
    * When our component mounts, we need to fetch the icon data from
    * `@carbon/react`
    */
@@ -167,7 +183,10 @@ export default class IconLibrary extends React.Component {
           {this.state.searchValue || this.state.searchValue !== '' ? (
             <p className="icon-search--status">
               {filteredIcons.length} matches found! Or clear to{' '}
-              <a href="#">view all</a> icons.
+              <a href="#" onClick={this.handleClearSearch}>
+                view all
+              </a>{' '}
+              icons.
             </p>
           ) : (
             ''
