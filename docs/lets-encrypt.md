@@ -146,8 +146,11 @@ We will use the `fullchain.pem` file in our deployments with IBM Cloud.
 After generating the certificate files in the steps above, we will need to add
 this certificate to IBM Cloud for our custom domain.
 
-You can use the following URL to find all the domains for the
-`carbon-design-system` organization on IBM Cloud: https://console.bluemix.net/account/organizations/carbon-design-system/domains
+1. Click on "Manage > Account" in the top navigation
+2. Click "Cloud Foundry Orgs"
+3. Under the "... actions dropdown" click "domains"
+4. Under the "..." menu for carbondesignsystem.com click "delete SSL Certificate"
+5. Refresh the page if it freezes
 
 In the table on the page, you should see an entry for `carbondesignsystem.com`.
 In one of the columns, there should be a link to upload our certificates that we

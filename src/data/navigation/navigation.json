@@ -30,6 +30,12 @@
       },
       "react-step-4": {
         "title": "4. Creating components"
+      },
+      "react-step-5": {
+        "title": "5. Deploying to IBM Cloud"
+      },
+      "wrapping-up": {
+        "title": "Wrapping up"
       }
     }
   },
