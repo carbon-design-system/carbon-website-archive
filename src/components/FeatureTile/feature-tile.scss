@@ -1,5 +1,5 @@
 .feature-tile--margin {
-  margin-bottom: $spacing-06;
+  margin-bottom: $spacing-05;
 }
 
 a.feature-tile {
@@ -36,7 +36,7 @@ a.feature-tile {
   }
 
   @include carbon--breakpoint('lg') {
-    width: 25%;
+    width: calc(25% - 2rem);
   }
 }
 
@@ -63,7 +63,7 @@ a.feature-tile:hover .feature-tile__info {
   position: absolute;
   bottom: rem(14px);
   right: $spacing-05;
-  fill: $carbon--gray-30;
+  fill: $carbon--gray-10;
 }
 
 .feature-tile__label {
@@ -72,7 +72,7 @@ a.feature-tile:hover .feature-tile__info {
 }
 
 .feature-tile__title {
-  @include carbon--type-style('expressive-heading-03', true);
+  @include carbon--type-style('productive-heading-03');
   color: $carbon--gray-10;
 }
 
