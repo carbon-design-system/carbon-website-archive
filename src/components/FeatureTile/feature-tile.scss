@@ -8,7 +8,7 @@ a.feature-tile {
   width: 100%;
 
   @include carbon--breakpoint('md') {
-    height: 420px;
+    height: 320px;
   }
 
   @include carbon--breakpoint('lg') {
@@ -96,10 +96,6 @@ a.feature-tile:hover .feature-tile__info {
   }
 }
 
-.feature-tile--developers {
-  overflow: hidden;
-}
-
 .feature-tile--developers .tile__img {
   .gatsby-resp-image-image {
     object-fit: cover;
@@ -107,40 +103,11 @@ a.feature-tile:hover .feature-tile__info {
   }
 
   @include carbon--breakpoint('md') {
-    position: relative;
-
-    &::before,
-    &::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      height: 500px;
-      width: 100%;
-      background: $carbon--black-100;
-      z-index: -1;
-    }
-
-    &::before {
-      top: -400px;
-    }
+    height: 100%;
+    background: $carbon--black-100;
 
     .gatsby-resp-image-image {
-      top: 75px !important;
-    }
-  }
-
-  @include carbon--breakpoint('lg') {
-    margin: 0;
-    width: 100%;
-
-    &::before,
-    &::after {
-      background: transparent;
-      display: none;
-    }
-
-    .gatsby-resp-image-image {
-      top: 0px !important;
+      object-fit: contain;
     }
   }
 }
