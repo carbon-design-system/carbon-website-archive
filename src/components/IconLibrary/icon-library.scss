@@ -1,0 +1,10 @@
+.icon-search--wrapper {
+  position: relative;
+}
+
+.icon-search--status {
+  position: absolute;
+  top: 3.6rem;
+  padding-left: $spacing-04;
+  @include carbon--type-style('body-short-02');
+}

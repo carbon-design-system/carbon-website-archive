@@ -106,7 +106,6 @@ export default class IconLibrary extends React.Component {
       sections,
     } = this.state;
 
-    // TODO: why doesn't the `light` prop work? seems to not work in react components
     const search = (
       <Search
         light
@@ -163,7 +162,17 @@ export default class IconLibrary extends React.Component {
 
     return (
       <div className="page bx--row">
-        <div className="bx--col-lg-8 bx--offset-lg-4">{search}</div>
+        <div className="icon-search--wrapper bx--col-lg-8 bx--offset-lg-4">
+          {search}
+          {this.state.searchValue || this.state.searchValue !== '' ? (
+            <p className="icon-search--status">
+              {filteredIcons.length} matches found! Or clear to{' '}
+              <a href="#">view all</a> icons.
+            </p>
+          ) : (
+            ''
+          )}
+        </div>
         <div className="bx--col-lg-12 bx--offset-lg-4">{sections}</div>
       </div>
     );
@@ -209,11 +218,6 @@ function groupIconsBySize(icons) {
  * lag on the input.
  */
 function createIconSections(icons, filteredIcons) {
-  {
-    console.groupEnd();
-  }
-  console.group();
-  console.log('\n\n\n️️\n🍎🍎🍎\ncreateIconSections()');
   const groups = groupIconsBySize(icons);
   return Object.keys(groups)
     .filter(size => {
@@ -227,8 +231,6 @@ function createIconSections(icons, filteredIcons) {
         key={size}
         className="icon-size"
         aria-labelledby={`icon-h2 icon-h2-${size}`}>
-        {console.log('\n\nsize:')}
-        {console.log(size)}
         <header>
           <h2 className={`icon-h2 icon-h2-${size}`}>
             {isNaN(size) ? size : `${size}x${size}`}
@@ -250,22 +252,13 @@ function createIconSections(icons, filteredIcons) {
  */
 
 function renderIconList(categoryArray, filteredList) {
-  console.group();
-  console.log('\nrenderIconList()');
-  console.log(categoryArray);
-  console.log(filteredList);
-  console.log('\nmatches in group:');
   let displayedIconsList = [];
   categoryArray.forEach(icon => {
     if (filteredList.indexOf(icon.name) !== -1) {
-      console.log(icon.name);
       displayedIconsList.push(icon);
     }
   });
-  console.log(displayedIconsList);
   const displayedIcons = displayedIconsList.map(renderIcon);
-  console.log(displayedIcons);
-  console.groupEnd();
   return displayedIcons.length > 0 ? (
     displayedIcons
   ) : (
