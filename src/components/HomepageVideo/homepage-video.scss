@@ -40,7 +40,7 @@
 
 .homepage-video--controls {
   position: absolute;
-  bottom: 1rem;
+  bottom: rem(14px);
   left: 1rem;
   height: rem(24px);
   width: rem(24px);
@@ -51,7 +51,7 @@
   z-index: 10; //need this to be above dots overlay
 
   @include carbon--breakpoint('lg') {
-    left: 384px;
+    left: 271px;
   }
 }
 
