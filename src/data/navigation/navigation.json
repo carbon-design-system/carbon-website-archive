@@ -33,6 +33,9 @@
       },
       "react-step-5": {
         "title": "5. Deploying to IBM Cloud"
+      },
+      "wrapping-up": {
+        "title": "Wrapping up"
       }
     }
   },
@@ -216,6 +219,9 @@
       },
       "chatbot": {
         "title": "Chatbots"
+      },
+      "export-pattern": {
+        "title": "Export pattern"
       },
       "deleting": {
         "title": "Deleting pattern"

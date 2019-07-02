@@ -17,7 +17,7 @@ title: Themes
 ## Resources
 
 <Row className="tile--group">
-<Column offsetLg="4" colMd="4" colLg="4" noGutterSm>
+{/* <Column offsetLg="4" colMd="4" colLg="4" noGutterSm>
   <ClickableTile
     title="Theming sandbox"
     href="http://themes.carbondesignsystem.com/"
@@ -26,11 +26,11 @@ title: Themes
 ![](images/sandbox-icon.png)
 
   </ClickableTile>
-</Column>
-<Column colMd="4" colLg="4"  noGutterSm>
+</Column> */}
+<Column offsetLg="4" colMd="4" colLg="4"  noGutterSm>
   <ClickableTile
-    title="Carbon themes repo"
-    href="https://github.com/carbon-design-system/carbon-themes"
+    title="Carbon themes package"
+    href="https://github.com/carbon-design-system/carbon/tree/master/packages/themes"
     type="resource">
 
 ![](images/github-icon.png)
@@ -62,9 +62,16 @@ Carbon provides four themes as shown in the [color usage](/guidelines/color/usag
 To use the gray 10, gray 90, or gray 100 theme as your default instead of white, set the `$carbon--theme` variable to one of the available theme maps (`$carbon--theme--g10`, `$carbon--theme--g90`, `$carbon--theme--g100`) and then include your normal components in your Sass build.
 
 ```scss
-@import './path/to/carbon-components/scss/globals/scss/vendor/@carbon/elements/scss/themes/theme-maps';
+@import '@carbon/themes/scss/themes';
 
-$carbon--theme: $carbon--theme--g90;
+// Use the gray 10 theme
+@include carbon--theme($carbon--theme--g10);
+
+// Use the gray 90 theme
+@include carbon--theme($carbon--theme--g90);
+
+// Use the gray 100 theme
+@include carbon--theme($carbon--theme--g100);
 
 // import Carbon styles here
 ```

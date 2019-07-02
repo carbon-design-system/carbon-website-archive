@@ -73,7 +73,7 @@ Before we get started, [create an IBM Cloud account](https://cloud.ibm.com/regis
 
 ## Optimize Sass
 
-So far we've be developing in a, well, development environment where static asset optimization hasn't been a priority. If you reference `/src/index.scss`, you'll see one `@import` that is pulling in Carbon's full Sass build.
+So far we've been developing in a, well, development environment where static asset optimization hasn't been a priority. If you reference `/src/index.scss`, you'll see one `@import` that is pulling in Carbon's full Sass build.
 
 ##### src/index.scss
 
@@ -115,7 +115,7 @@ You can read more about optimizing Carbon's Sass in the [Carbon Design System pu
 
 ## Build for production
 
-Before we deploy our app, we need create an optimized production build with this command. You may need to `CTRL-C` to stop the development environment first.
+Before we deploy our app, we need to create an optimized production build with this command. You may need to `CTRL-C` to stop the development environment first.
 
 ```bash
 $ yarn build
@@ -131,7 +131,7 @@ Now that we have a production build, let's get it on the cloud. We're going to u
 
 _Note: If unfamiliar with buildpacks, the [staticfile buildpack docs](https://docs.cloudfoundry.org/buildpacks/staticfile/index.html) has good definitions and configuration documentation._
 
-With the Cloud Foundry CLI installed, next we need to create a `manifest.yml` file in the root of the project. To prevent muliple apps trying to use the `carbon-tutorial` name, replace `USERNAME` with your GitHub username below to make sure our apps are uniquely named.
+With the Cloud Foundry CLI installed, next, we need to create a `manifest.yml` file in the root of the project. To prevent multiple apps trying to use the `carbon-tutorial` name, replace `USERNAME` with your GitHub username below to make sure our apps are uniquely named.
 
 ##### manifest.yml
 
@@ -164,6 +164,8 @@ After telling Cloud Foundry what to include, we can also specify what to ignore.
 ```bash
 node_modules/.cache
 ```
+
+You can speed up deploys by decreasing the files uploaded through cloud foundry. To accomplish this, ignore any folder not required by the production application on IBM Cloud. For example, in the case of serving static files, you can ignore `node_modules/` and `src/` because the only folder being served is `build/`.
 
 ## Deploy app
 
