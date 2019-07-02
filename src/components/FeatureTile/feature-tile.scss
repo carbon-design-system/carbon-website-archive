@@ -29,7 +29,7 @@ a.feature-tile {
   }
 
   @include carbon--breakpoint('md') {
-    width: 50%;
+    width: calc(50% - 2rem);
     position: absolute;
     right: 1rem;
     bottom: 0;
