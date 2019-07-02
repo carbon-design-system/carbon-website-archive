@@ -96,6 +96,10 @@ a.feature-tile:hover .feature-tile__info {
   }
 }
 
+.feature-tile--developers {
+  margin-bottom: $spacing-05;
+}
+
 .feature-tile--developers .tile__img {
   .gatsby-resp-image-image {
     object-fit: cover;
