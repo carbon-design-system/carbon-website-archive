@@ -220,6 +220,9 @@
       "chatbot": {
         "title": "Chatbots"
       },
+      "export-pattern": {
+        "title": "Export pattern"
+      },
       "deleting": {
         "title": "Deleting pattern"
       }
