@@ -4,11 +4,6 @@ import IconEmptyState from '../IconEmptyState';
 
 const sizes = ['16', '20', '24', '32', 'Glyph'];
 
-// TODO: do we need to make use of new icon metadata for cupcake experience,
-// or just next steps?
-const iconMetadata = require('./icon-metadata.json');
-const iconCategoryMapping = require('./icon-category-mapping.json');
-
 /**
  * Provides support for our experimental icon library, `@carbon/icons-react`,
  * at the /experimental/iconography/library route
