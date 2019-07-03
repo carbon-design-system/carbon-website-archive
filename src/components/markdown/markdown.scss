@@ -137,17 +137,6 @@
 .page-h3,
 .page-h4,
 .page-h5 {
-  // This makes sure there is breathing room when
-  // you jump to the heading anchor link
-  &:before {
-    display: block;
-    content: ' ';
-    margin-top: rem(-48px);
-    padding-bottom: rem(48px);
-    visibility: hidden;
-    pointer-events: none;
-  }
-
   .anchor-link {
     position: absolute;
     left: rem(-24px);
@@ -161,15 +150,6 @@
   &:hover .anchor-link {
     opacity: 1;
   }
-}
-
-.page-h2:before {
-  padding-bottom: rem(56px);
-}
-
-.page-h4:before {
-  margin-top: -2rem;
-  padding-bottom: $spacing-07;
 }
 
 //----------------------------
