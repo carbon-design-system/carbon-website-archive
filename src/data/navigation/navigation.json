@@ -213,6 +213,9 @@
       },
       "deleting": {
         "title": "Deleting pattern"
+      },
+      "generating-an-api-key": {
+        "title": "Generating an API Key"
       }
     }
   },
@@ -236,9 +239,6 @@
       },
       "adding-creating-pattern": {
         "title": "Adding or Creating"
-      },
-      "generating-an-api-key": {
-        "title": "Generating an API Key"
       }
     }
   },
