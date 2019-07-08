@@ -248,14 +248,20 @@
   "contribute": {
     "title": "Contribute",
     "sub-nav": {
-      "how-to-contribute": {
-        "title": "How to contribute"
+      "overview": {
+        "title": "Overview"
       },
-      "report-a-bug": {
-        "title": "Report a bug"
+      "bugs-and-requests": {
+        "title": "Bugs and requests"
       },
-      "governance": {
-        "title": "Governance"
+      "documentation": {
+        "title": "Documentation"
+      },
+      "components": {
+        "title": "Components"
+      },
+      "patterns": {
+        "title": "Patterns"
       }
     }
   },
