@@ -91,7 +91,9 @@ export default class IconLibrary extends React.Component {
   componentDidMount() {
     import('@carbon/icons-react')
       .then(icons => {
+        console.log(icons);
         const filteredIcons = Object.keys(icons);
+        console.log(filteredIcons);
         this.setState({
           icons,
           filteredIcons,
@@ -122,7 +124,7 @@ export default class IconLibrary extends React.Component {
         light
         className="icon-search bx--search--light"
         onChange={this.handleOnChange}
-        placeHolderText="Search by descriptors like “add”, or “check”"
+        placeHolderText="Search by icon name"
         aria-label="Icon library search"
         value={this.state.searchValue}
         labelText="Icon library search"
@@ -163,8 +165,10 @@ export default class IconLibrary extends React.Component {
     if (filteredIcons.length === 0) {
       return (
         <div className="page bx--row">
-          <div className="bx--col-lg-8 bx--offset-lg-4">{search}</div>
-          <div className="bx--col-lg-12 bx--offset-lg-4">
+          <div className="bx--col-lg-8 bx--offset-lg-4 bx--no-gutter-md bx--no-gutter-lg">
+            {search}
+          </div>
+          <div className="bx--col-lg-12 bx--offset-lg-4 bx--no-gutter-sm bx--no-gutter-md bx--no-gutter-lg">
             <IconEmptyState />
           </div>
         </div>
@@ -173,7 +177,7 @@ export default class IconLibrary extends React.Component {
 
     return (
       <div className="page bx--row">
-        <div className="icon-search--wrapper bx--col-lg-8 bx--offset-lg-4">
+        <div className="icon-search--wrapper bx--col-lg-8 bx--offset-lg-4 bx--no-gutter-md bx--no-gutter-lg">
           {search}
           {this.state.searchValue || this.state.searchValue !== '' ? (
             <p className="icon-search--status">
@@ -187,7 +191,9 @@ export default class IconLibrary extends React.Component {
             ''
           )}
         </div>
-        <div className="bx--col-lg-12 bx--offset-lg-4">{sections}</div>
+        <div className="bx--col-lg-12 bx--offset-lg-4 bx--no-gutter-sm bx--no-gutter-md bx--no-gutter-lg">
+          {sections}
+        </div>
       </div>
     );
   }
@@ -241,12 +247,9 @@ function createIconSections(icons, filteredIcons) {
       return groups[size].length !== 0;
     })
     .map(size => (
-      <section
-        key={size}
-        className="icon-size"
-        aria-labelledby={`icon-h2 icon-h2-${size}`}>
+      <section key={size} className="icon-size" aria-labelledby={`icon-h2`}>
         <header>
-          <h2 className={`icon-h2 icon-h2-${size}`}>
+          <h2 className={`icon-h2`}>
             {isNaN(size) ? size : `${size}x${size}`}
           </h2>
         </header>

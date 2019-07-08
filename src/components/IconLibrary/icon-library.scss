@@ -8,3 +8,7 @@
   padding-left: $spacing-05;
   @include carbon--type-style('body-short-02');
 }
+
+section.icon-size > header {
+  padding-left: 1rem;
+}
