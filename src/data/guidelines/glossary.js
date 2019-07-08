@@ -100,12 +100,6 @@ module.exports = {
       },
     },
     Idioms: {
-      'cold-blooded cyborg': {
-        desc:
-          '(noun) a man-like robot with no feelings (to cloud its judgment) that flawlessly executes its mandate."',
-        subtext:
-          'Context: Create apps with the efficiency of a cold-blooded cyborg.',
-      },
       congrats: {
         desc: '(noun) congratulations.',
         subtext: 'Context: Congrats on creating your new app!',
