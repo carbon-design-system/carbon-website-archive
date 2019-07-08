@@ -91,9 +91,7 @@ export default class IconLibrary extends React.Component {
   componentDidMount() {
     import('@carbon/icons-react')
       .then(icons => {
-        console.log(icons);
         const filteredIcons = Object.keys(icons);
-        console.log(filteredIcons);
         this.setState({
           icons,
           filteredIcons,
