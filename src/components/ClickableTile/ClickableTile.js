@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { ClickableTile } from 'carbon-components-react';
 import { Launch20 } from '@carbon/icons-react';
+import { ArrowRight24 } from '@carbon/icons-react';
 
 export default class ClickTile extends React.Component {
   static propTypes = {
@@ -11,10 +12,12 @@ export default class ClickTile extends React.Component {
     date: PropTypes.string,
     author: PropTypes.string,
     title: PropTypes.string,
+    titleLarge: PropTypes.string,
     type: PropTypes.string,
     description: PropTypes.string,
     excerpt: PropTypes.string,
     dark: PropTypes.string,
+    actionIcon: PropTypes.string,
   };
 
   render() {
@@ -24,10 +27,12 @@ export default class ClickTile extends React.Component {
       date,
       author,
       title,
+      titleLarge,
       type,
       description,
       excerpt,
       dark,
+      actionIcon,
     } = this.props;
 
     const classNames = classnames({
@@ -47,7 +52,14 @@ export default class ClickTile extends React.Component {
                 rel="noopener noreferrer"
                 href={href}>
                 <div className="tile__info">
-                  <h5>{title}</h5>
+                  <h5>
+                    {title}
+                    {titleLarge ? (
+                      <span className="tile__info-title-large">
+                        {titleLarge}
+                      </span>
+                    ) : null}
+                  </h5>
 
                   <div className="tile__caption">
                     {description ? (
@@ -59,7 +71,11 @@ export default class ClickTile extends React.Component {
                 </div>
                 <div className="tile__img">{children}</div>
                 <div className="tile__link-icon">
-                  <Launch20 aria-label="Open resource" />
+                  {actionIcon === 'arrowRight' ? (
+                    <ArrowRight24 aria-label="Open resource" />
+                  ) : (
+                    <Launch20 aria-label="Open resource" />
+                  )}
                 </div>
               </ClickableTile>
             </div>

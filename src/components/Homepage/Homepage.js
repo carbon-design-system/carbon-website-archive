@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowRight24 } from '@carbon/icons-react';
 import { Link } from 'gatsby';
 import HomepageVideo from '../HomepageVideo/HomepageVideo';
+import ClickableTile from '../ClickableTile/ClickableTile';
 
 export class HomepageHeader extends React.Component {
   componentDidMount() {
@@ -9,32 +10,22 @@ export class HomepageHeader extends React.Component {
   }
 
   render() {
-    const { GATSBY_CARBON_ENV } = process.env;
-    const isInternal = GATSBY_CARBON_ENV === 'internal';
-
-    const homeTitle = isInternal ? (
-      <h3 className="homepage--header__title">
-        <span>
-          Carbon <br />
-          Design System
-        </span>
-      </h3>
-    ) : (
-      <h3 className="homepage--header__title">
-        <span>
-          Carbon <br />
-          Design System
-        </span>
-      </h3>
-    );
-
     return (
       <div>
         <span className="homepage--dots" />
         <section className="homepage--header">
           <div className="bx--grid">
             <div className="bx--row">
-              <div className="bx--col-lg-4 bx--offset-lg-4">{homeTitle}</div>
+              <div className="bx--col-lg-4 bx--col-md-4 bx--col-sm-2 bx--offset-lg-12 bx--offset-md-4 bx--offset-sm-2 homepage--tile-header">
+                <ClickableTile
+                  title="Read"
+                  titleLarge="Migrate to v10"
+                  href="/updates/v10-migration/overview"
+                  type="resource"
+                  dark
+                  actionIcon="arrowRight"
+                />
+              </div>
             </div>
           </div>
           <HomepageVideo>
@@ -52,9 +43,9 @@ export class HomepageHeader extends React.Component {
                 aria-label="header callout"
                 className="bx--col-md-4  bx--col-lg-4 bx--offset-lg-4">
                 <h3>
-                  Inclusive, flexible
+                  Carbon Design
                   <br />
-                  and consistent
+                  System
                 </h3>
               </aside>
               <div className="bx--col-lg-8 bx--col-md-4">
