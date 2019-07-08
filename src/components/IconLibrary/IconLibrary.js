@@ -253,11 +253,8 @@ function createIconSections(icons, filteredIcons) {
             {isNaN(size) ? size : `${size}x${size}`}
           </h2>
         </header>
-        <ul className="icon-container" tabindex="0">
+        <ul className="icon-container">
           {renderIconList(groups[size], filteredIcons)}
-          {/* {groups[size]
-            .filter(icon => filteredIcons.indexOf(icon.name) !== -1)
-            .map(renderIcon)} */}
         </ul>
       </section>
     ));
