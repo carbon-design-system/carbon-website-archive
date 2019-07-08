@@ -1,9 +1,13 @@
 .homepage-video--main {
-  width: 100%;
+  width: 180%;
   height: 100%;
   position: absolute;
   top: 0;
   right: 0;
+
+  @include carbon--breakpoint('md') {
+    width: 100%;
+  }
 }
 
 .homepage-video--wrapper {
@@ -40,8 +44,8 @@
 
 .homepage-video--controls {
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: rem(14px);
+  left: 1rem;
   height: rem(24px);
   width: rem(24px);
   background: transparent;
@@ -49,6 +53,10 @@
   border: none;
   padding: 0;
   z-index: 10; //need this to be above dots overlay
+
+  @include carbon--breakpoint('lg') {
+    left: 271px;
+  }
 }
 
 .homepage-video--controls:focus {
