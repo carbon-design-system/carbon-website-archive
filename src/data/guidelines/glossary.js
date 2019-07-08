@@ -86,7 +86,7 @@ module.exports = {
         desc:
           'Creates new instances of the selected objects to a specific destination.',
         subtext:
-          'Combine Copy with the object being copied (for example, Copy folder) or the destination (for example, Copy to clipboard) if there are multiple possibilities. Use instead of Create like. Contrast with [New](#new). See the [Copy action](patterns/common-actions#copy).',
+          'Combine Copy with the object being copied (for example, Copy folder) or the destination (for example, Copy to clipboard) if there are multiple possibilities. Use instead of Create like. Contrast with [New](#new). See the [Copy action](/patterns/common-actions#copy).',
       },
       Create: {
         desc:
@@ -100,12 +100,6 @@ module.exports = {
       },
     },
     Idioms: {
-      'cold-blooded cyborg': {
-        desc:
-          '(noun) a man-like robot with no feelings (to cloud its judgment) that flawlessly executes its mandate."',
-        subtext:
-          'Context: Create apps with the efficiency of a cold-blooded cyborg.',
-      },
       congrats: {
         desc: '(noun) congratulations.',
         subtext: 'Context: Congrats on creating your new app!',
