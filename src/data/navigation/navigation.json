@@ -33,6 +33,9 @@
       },
       "react-step-5": {
         "title": "5. Deploying to IBM Cloud"
+      },
+      "wrapping-up": {
+        "title": "Wrapping up"
       }
     }
   },
@@ -217,6 +220,9 @@
       "chatbot": {
         "title": "Chatbots"
       },
+      "export-pattern": {
+        "title": "Export pattern"
+      },
       "deleting": {
         "title": "Deleting pattern"
       }
@@ -266,7 +272,7 @@
         "title": "Release information"
       },
       "v10-migration": {
-        "title": "v10 Migration guide"
+        "title": "Migrate to v10"
       },
       "roadmap": {
         "title": "Roadmap"
