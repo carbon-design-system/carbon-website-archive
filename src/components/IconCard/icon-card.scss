@@ -13,7 +13,7 @@
     border-top: 1px solid $carbon--gray-20;
     border-left: 1px solid $carbon--gray-20;
   }
-  &:nth-child(n):nth-child(-n+2) {
+  &:nth-child(n):nth-child(-n + 2) {
     border-top: none;
   }
   &:nth-child(2n - 1) {
@@ -29,7 +29,7 @@
       border-top: 1px solid $carbon--gray-20;
       border-left: 1px solid $carbon--gray-20;
     }
-    &:nth-child(n):nth-child(-n+3) {
+    &:nth-child(n):nth-child(-n + 3) {
       border-top: none;
     }
     &:nth-child(3n - 2) {
@@ -46,7 +46,7 @@
       border-top: 1px solid $carbon--gray-20;
       border-left: 1px solid $carbon--gray-20;
     }
-    &:nth-child(n):nth-child(-n+4) {
+    &:nth-child(n):nth-child(-n + 4) {
       border-top: none;
     }
     &:nth-child(4n - 3) {
@@ -63,7 +63,7 @@
       border-top: 1px solid $carbon--gray-20;
       border-left: 1px solid $carbon--gray-20;
     }
-    &:nth-child(n):nth-child(-n+5) {
+    &:nth-child(n):nth-child(-n + 5) {
       border-top: none;
     }
     &:nth-child(5n - 4) {
@@ -74,13 +74,13 @@
 
 @media all and (min-width: 1300px) {
   .icon__container {
-    flex: 0 1 calc(100% / 6;
+    flex: 0 1 calc(100% / 6);
 
     &:nth-child(n) {
       border-top: 1px solid $carbon--gray-20;
       border-left: 1px solid $carbon--gray-20;
     }
-    &:nth-child(n):nth-child(-n+6) {
+    &:nth-child(n):nth-child(-n + 6) {
       border-top: none;
     }
     &:nth-child(6n - 5) {
