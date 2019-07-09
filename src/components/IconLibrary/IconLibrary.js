@@ -2,7 +2,7 @@ import React from 'react';
 import { Search, Loading } from 'carbon-components-react';
 import IconEmptyState from '../IconEmptyState';
 
-const sizes = ['16', '20', '24', '32', 'Glyph'];
+const sizes = ['16', '20', '24', '32'];
 
 /**
  * Provides support for our experimental icon library, `@carbon/icons-react`,
@@ -203,6 +203,7 @@ export default class IconLibrary extends React.Component {
  */
 function groupIconsBySize(icons) {
   return Object.keys(icons).reduce((acc, iconName) => {
+    console.log(acc);
     const [group] = sizes.filter(size => iconName.indexOf(size) !== -1);
     const friendlyName = iconName.replace(group, '');
     const details = {
