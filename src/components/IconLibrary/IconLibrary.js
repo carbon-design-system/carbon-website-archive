@@ -290,13 +290,15 @@ function renderIconList(categoryArray, filteredList) {
 function renderIcon(icon) {
   return (
     <li key={icon.name} className="icon__container">
-      <div className="icon__card">
-        <icon.Component />
+      <div className="icon__aspect-ratio">
+        <div className="icon__card">
+          <icon.Component />
+        </div>
+        <h5 className="icon__card-title" title={icon.friendlyName}>
+          {icon.friendlyName}
+        </h5>
+        <span className="icon__card-details" title={icon.name} />
       </div>
-      <h5 className="icon__card-title" title={icon.friendlyName}>
-        {icon.friendlyName}
-      </h5>
-      <span className="icon__card-details" title={icon.name} />
     </li>
   );
 }
