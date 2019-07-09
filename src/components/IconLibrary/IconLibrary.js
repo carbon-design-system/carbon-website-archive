@@ -73,7 +73,6 @@ export default class IconLibrary extends React.Component {
    */
   handleClearSearch = event => {
     event.preventDefault();
-    const searchValue = '';
     this.setState(
       {
         searchValue: '',
