@@ -213,24 +213,24 @@ function groupIconsBySize(icons) {
       group,
       Component: icons[iconName],
     };
-    if (
-      friendlyName == 'icon' ||
-      friendlyName == 'Icon' ||
-      group == 'Icon' ||
-      group == 'icon' ||
-      group == 'Glyph'
-    ) {
-      console.log('\n\n\n groupIconsBySize()');
-      console.group();
-      console.log(iconName);
-      console.log(group);
-      console.log(details);
-      console.log('\nwtf is acc and acc[group]');
-      console.log(acc);
-      console.log(...acc);
-      console.log(acc[group]);
-      console.groupEnd();
-    }
+    // if (
+    //   friendlyName == 'icon' ||
+    //   friendlyName == 'Icon' ||
+    //   group == 'Icon' ||
+    //   group == 'icon' ||
+    //   group == 'Glyph'
+    // ) {
+    //   console.log('\n\n\n groupIconsBySize()');
+    //   console.group();
+    //   console.log(iconName);
+    //   console.log(group);
+    //   console.log(details);
+    //   console.log('\nwtf is acc and acc[group]');
+    //   console.log(acc);
+    //   console.log(...acc);
+    //   console.log(acc[group]);
+    //   console.groupEnd();
+    // }
 
     if (group === undefined || group === 'undefined') {
       return '';
