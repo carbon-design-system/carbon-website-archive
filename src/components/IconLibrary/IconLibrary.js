@@ -251,7 +251,7 @@ function createIconSections(icons, filteredIcons) {
             {isNaN(size) ? size : `${size}x${size}`}
           </h2>
         </header>
-        <ul className="icon-container">
+        <ul className="icons-list">
           {renderIconList(groups[size], filteredIcons)}
         </ul>
       </section>
@@ -274,7 +274,7 @@ function renderIconList(categoryArray, filteredList) {
   return displayedIcons.length > 0 ? (
     displayedIcons
   ) : (
-    <li className="icon">
+    <li className="icon__container">
       <div className="icon__card" />
       <h5 className="icon__card-title" title="No results in this size.">
         No results in this size.
@@ -289,7 +289,7 @@ function renderIconList(categoryArray, filteredList) {
  */
 function renderIcon(icon) {
   return (
-    <li key={icon.name} className="icon">
+    <li key={icon.name} className="icon__container">
       <div className="icon__card">
         <icon.Component />
       </div>

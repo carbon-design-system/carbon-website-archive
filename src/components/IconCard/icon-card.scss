@@ -1,22 +1,109 @@
-.icon-container {
+.icons-list {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: wrap;
   width: 100%;
   padding-bottom: $spacing-06;
 }
 
-.icon-search {
-  margin-bottom: rem(32px);
-}
-
-.icon {
-  flex: 1 1 10rem;
-  max-width: 10rem;
+.icon__container {
+  flex: 0 1 50%;
   position: relative;
 
   &:nth-child(n) {
+    border-top: 1px solid $carbon--gray-20;
     border-left: 1px solid $carbon--gray-20;
-    border-bottom: 1px solid $carbon--gray-20;
+  }
+  &:nth-child(1),
+  &:nth-child(2) {
+    border-top: none;
+  }
+  &:nth-child(2n - 1) {
+    border-left: none;
+  }
+}
+
+@media all and (min-width: 515px) {
+  .icon__container {
+    flex: 0 1 calc(100% / 3);
+
+    &:nth-child(n) {
+      border-top: 1px solid $carbon--gray-20;
+      border-left: 1px solid $carbon--gray-20;
+    }
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      border-top: none;
+    }
+    &:nth-child(3n - 2) {
+      border-left: none;
+    }
+  }
+}
+
+@media all and (min-width: 730px) {
+  .icon__container {
+    flex: 0 1 25%;
+
+    &:nth-child(n) {
+      border-top: 1px solid $carbon--gray-20;
+      border-left: 1px solid $carbon--gray-20;
+    }
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
+      border-top: none;
+    }
+    &:nth-child(4n - 3) {
+      border-left: none;
+    }
+  }
+}
+
+@media all and (min-width: 980px) {
+  .icon__container {
+    flex: 0 1 20%;
+
+    &:nth-child(n) {
+      border-top: 1px solid $carbon--gray-20;
+      border-left: 1px solid $carbon--gray-20;
+    }
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5) {
+      border-top: none;
+    }
+    &:nth-child(5n - 4) {
+      border-left: none;
+    }
+  }
+}
+// TODO: how high up do we need to go on breakpoints/number of icons per row?
+// going to test on larger monitor
+// icon flex layout ref https://getflywheel.com/layout/flexbox-create-modern-card-design-layout/
+// aspect ratio ref https://codepen.io/bramus/pen/wqKbWq
+// TODO: preserve square aspect ratio for icon cards?
+
+.icon__card {
+  background: $ui-02;
+  height: 10rem;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus,
+  .icon__actions:focus,
+  button:focus,
+  a:focus {
+    .icon__actions {
+      opacity: 1;
+    }
   }
 }
 
@@ -57,26 +144,6 @@
   }
 }
 
-.icon__card {
-  background: $ui-02;
-  height: 10rem;
-  text-align: center;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &:hover,
-  &:focus,
-  .icon__actions:focus,
-  button:focus,
-  a:focus {
-    .icon__actions {
-      opacity: 1;
-    }
-  }
-}
-
 .icon-button,
 a.icon-button {
   border: 2px solid $inverse-01;
@@ -96,78 +163,5 @@ a.icon-button {
   &:focus {
     background-color: $inverse-01;
     color: $brand-01 !important;
-  }
-}
-
-// Remove outside border
-@media all and (min-width: 1568px) {
-  .icon {
-    &:nth-child(7n + 1) {
-      border-left: 0px !important;
-    }
-  }
-}
-
-@media all and (min-width: 1355px) and (max-width: 1567px) {
-  .icon {
-    &:nth-child(6n + 1) {
-      border-left: 0px !important;
-    }
-  }
-}
-
-@media all and (min-width: 1142px) and (max-width: 1354px) {
-  .icon {
-    &:nth-child(5n + 1) {
-      border-left: 0px !important;
-    }
-  }
-}
-
-@media all and (min-width: 1056px) and (max-width: 1141px) {
-  .icon {
-    &:nth-child(4n + 1) {
-      border-left: 0px !important;
-    }
-  }
-}
-
-@media all and (min-width: 1024px) and (max-width: 1055px) {
-  .icon {
-    &:nth-child(6n + 1) {
-      border-left: 0px !important;
-    }
-  }
-}
-
-@media all and (min-width: 864px) and (max-width: 1023px) {
-  .icon {
-    &:nth-child(5n + 1) {
-      border-left: 0px !important;
-    }
-  }
-}
-
-@media all and (min-width: 704px) and (max-width: 863px) {
-  .icon {
-    &:nth-child(4n + 1) {
-      border-left: 0px !important;
-    }
-  }
-}
-
-@media all and (min-width: 512px) and (max-width: 703px) {
-  .icon {
-    &:nth-child(3n + 1) {
-      border-left: 0px !important;
-    }
-  }
-}
-
-@media all and (max-width: 511px) {
-  .icon {
-    &:nth-child(2n + 1) {
-      border-left: 0px !important;
-    }
   }
 }
