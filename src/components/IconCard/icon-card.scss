@@ -19,6 +19,10 @@
   &:nth-child(2n - 1) {
     border-left: none;
   }
+
+  & .bx--aspect-ratio > * {
+    z-index: 100; // all siblings of bx--aspect-ratio--object will have same z-index
+  }
 }
 
 @media all and (min-width: 515px) {
@@ -86,10 +90,6 @@
     &:nth-child(6n - 5) {
       border-left: none;
     }
-
-    & .bx--aspect-ratio > * {
-      z-index: 100; // all siblings of bx--aspect-ratio--object will have same z-index
-    }
   }
 }
 
@@ -112,7 +112,8 @@
 }
 
 .icon__card-title,
-.icon__card-details {
+.icon__card-details,
+.icon__card-no__results {
   position: absolute;
   top: rem(12px);
   left: rem(12px);
@@ -127,6 +128,11 @@
 .icon__card-details {
   top: rem(28px);
   @include carbon--type-style('helper-text-01');
+}
+
+.icon__card-no__results {
+  white-space: normal;
+  overflow: visible;
 }
 
 .icon__actions {

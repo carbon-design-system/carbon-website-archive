@@ -159,6 +159,8 @@ export default class IconLibrary extends React.Component {
       );
     }
 
+    console.log(filteredIcons);
+
     if (filteredIcons.length === 0) {
       return (
         <div className="page bx--row">
@@ -203,7 +205,6 @@ export default class IconLibrary extends React.Component {
  */
 function groupIconsBySize(icons) {
   return Object.keys(icons).reduce((acc, iconName) => {
-    console.log(acc);
     const [group] = sizes.filter(size => iconName.indexOf(size) !== -1);
     const friendlyName = iconName.replace(group, '');
     const details = {
@@ -212,6 +213,28 @@ function groupIconsBySize(icons) {
       group,
       Component: icons[iconName],
     };
+    if (
+      friendlyName == 'icon' ||
+      friendlyName == 'Icon' ||
+      group == 'Icon' ||
+      group == 'icon' ||
+      group == 'Glyph'
+    ) {
+      console.log('\n\n\n groupIconsBySize()');
+      console.group();
+      console.log(iconName);
+      console.log(group);
+      console.log(details);
+      console.log('\nwtf is acc and acc[group]');
+      console.log(acc);
+      console.log(...acc);
+      console.log(acc[group]);
+      console.groupEnd();
+    }
+
+    if (group === undefined || group === 'undefined') {
+      return '';
+    }
 
     if (acc[group]) {
       return {
@@ -278,9 +301,12 @@ function renderIconList(categoryArray, filteredList) {
     <li className="icon__container">
       <div className="bx--aspect-ratio bx--aspect-ratio--1x1">
         <div className="icon__card bx--aspect-ratio--object" />
-        <h5 className="icon__card-title" title="No results in this size.">
+        <p className="icon__card-no__results">
           No results in this size.
-        </h5>
+          <br />
+          <br />
+          Scale the closest size to use this icon.
+        </p>
       </div>
     </li>
   );
