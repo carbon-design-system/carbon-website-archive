@@ -275,10 +275,12 @@ function renderIconList(categoryArray, filteredList) {
 
   return (
     <li className="icon__container">
-      <div className="icon__card" />
-      <h5 className="icon__card-title" title="No results in this size.">
-        No results in this size.
-      </h5>
+      <div className="icon__aspect-ratio">
+        <div className="icon__card" />
+        <h5 className="icon__card-title" title="No results in this size.">
+          No results in this size.
+        </h5>
+      </div>
     </li>
   );
 }
