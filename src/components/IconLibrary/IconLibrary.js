@@ -76,7 +76,7 @@ export default class IconLibrary extends React.Component {
     const searchValue = '';
     this.setState(
       {
-        searchValue,
+        searchValue: '',
       },
       () => {
         this.filterIcons();
@@ -120,7 +120,7 @@ export default class IconLibrary extends React.Component {
     const search = (
       <Search
         light
-        className="icon-search bx--search--light"
+        className="icon-search bx--search--light" // search updated to support `light` prop in https://github.com/carbon-design-system/carbon/pull/3230
         onChange={this.handleOnChange}
         placeHolderText="Search by icon name"
         aria-label="Icon library search"
@@ -264,16 +264,17 @@ function createIconSections(icons, filteredIcons) {
  */
 
 function renderIconList(categoryArray, filteredList) {
-  let displayedIconsList = [];
-  categoryArray.forEach(icon => {
-    if (filteredList.indexOf(icon.name) !== -1) {
-      displayedIconsList.push(icon);
-    }
-  });
+  const displayedIconsList = categoryArray.filter(
+    icon => filteredList.indexOf(icon.name) !== -1
+  );
+
   const displayedIcons = displayedIconsList.map(renderIcon);
-  return displayedIcons.length > 0 ? (
-    displayedIcons
-  ) : (
+
+  if (displayedIcons.length > 0) {
+    return displayedIcons;
+  }
+
+  return (
     <li className="icon__container">
       <div className="icon__card" />
       <h5 className="icon__card-title" title="No results in this size.">
