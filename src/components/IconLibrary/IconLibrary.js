@@ -275,8 +275,8 @@ function renderIconList(categoryArray, filteredList) {
 
   return (
     <li className="icon__container">
-      <div className="icon__aspect-ratio">
-        <div className="icon__card" />
+      <div className="bx--aspect-ratio bx--aspect-ratio--1x1">
+        <div className="icon__card bx--aspect-ratio--object" />
         <h5 className="icon__card-title" title="No results in this size.">
           No results in this size.
         </h5>
@@ -292,8 +292,8 @@ function renderIconList(categoryArray, filteredList) {
 function renderIcon(icon) {
   return (
     <li key={icon.name} className="icon__container">
-      <div className="icon__aspect-ratio">
-        <div className="icon__card">
+      <div className="bx--aspect-ratio bx--aspect-ratio--1x1">
+        <div className="icon__card bx--aspect-ratio--object">
           <icon.Component />
         </div>
         <h5 className="icon__card-title" title={icon.friendlyName}>
