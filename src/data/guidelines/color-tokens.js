@@ -514,12 +514,12 @@ module.exports = {
           hex: '#24a148',
         },
         g90: {
-          name: 'Green 50',
-          hex: '#24a148',
+          name: 'Green 40',
+          hex: '#3dbb61',
         },
         g100: {
-          name: 'Green 50',
-          hex: '#24a148',
+          name: 'Green 40',
+          hex: '#3dbb61',
         },
       },
     },
@@ -570,19 +570,19 @@ module.exports = {
       value: {
         white: {
           name: 'Red 50',
-          hex: '#FB4B53',
+          hex: '#fb4b53',
         },
         g10: {
           name: 'Red 50',
-          hex: '#FB4B53',
+          hex: '#fb4b53',
         },
         g90: {
           name: 'Red 60',
-          hex: '#DA1E28',
+          hex: '#da1e28',
         },
         g100: {
           name: 'Red 60',
-          hex: '#DA1E28',
+          hex: '#da1e28',
         },
       },
     },
@@ -591,19 +591,19 @@ module.exports = {
       value: {
         white: {
           name: 'Green 40',
-          hex: '#3DBB61',
+          hex: '#3dbb61',
         },
         g10: {
           name: 'Green 40',
-          hex: '#3DBB61',
+          hex: '#3dbb61',
         },
         g90: {
           name: 'Green 50',
-          hex: '#24A148',
+          hex: '#24a148',
         },
         g100: {
           name: 'Green 50',
-          hex: '#24A148',
+          hex: '#24a148',
         },
       },
     },
@@ -612,19 +612,19 @@ module.exports = {
       value: {
         white: {
           name: 'Yellow',
-          hex: '#FDD13A',
+          hex: '#fdd13a',
         },
         g10: {
           name: 'Yellow',
-          hex: '#FDD13A',
+          hex: '#fdd13a',
         },
         g90: {
           name: 'Yellow',
-          hex: '#FDD13A',
+          hex: '#fdd13a',
         },
         g100: {
           name: 'Yellow',
-          hex: '#FDD13A',
+          hex: '#fdd13a',
         },
       },
     },
@@ -632,20 +632,20 @@ module.exports = {
       role: ['Information in high contrast moments'],
       value: {
         white: {
-          name: 'Blue 40',
-          hex: '#408BFC',
+          name: 'Blue 50',
+          hex: '#408bfc',
         },
         g10: {
-          name: 'Blue 40',
-          hex: '#408BFC',
+          name: 'Blue 50',
+          hex: '#408bfc',
         },
         g90: {
-          name: 'Blue 70',
-          hex: '#054ada',
+          name: 'Blue 60',
+          hex: '#0062ff',
         },
         g100: {
-          name: 'Blue 70',
-          hex: '#054ada',
+          name: 'Blue 60',
+          hex: '#0062ff',
         },
       },
     },
