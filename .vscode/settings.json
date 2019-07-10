@@ -1,4 +1,9 @@
 {
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#4f2196",
+    "titleBar.activeBackground": "#6e32c9",
+    "titleBar.activeForeground": "#e3f6ff"
+  }
   "markdown.styles": [
     "./.vscode/markdown.css"
   ],
