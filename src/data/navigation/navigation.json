@@ -251,8 +251,8 @@
   "resources": {
     "title": "Resources"
   },
-  "contribution": {
-    "title": "Contribution",
+  "contributions": {
+    "title": "Contributions",
     "sub-nav": {
       "overview": {
         "title": "Overview"
