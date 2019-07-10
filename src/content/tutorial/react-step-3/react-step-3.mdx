@@ -313,7 +313,7 @@ The page will look the same as we're still rendering our static example rows, bu
 
 ## Populate data table
 
-Now that we have that data, let's populate the data table. Replace `console.log(organization);` with the following that destructures the `organization` object. Once we have the respositories, we can call our `getRowItems()` helper to build the data table rows.
+Now that we have that data, let's populate the data table. Replace `console.log(organization);` with the following that destructures the `organization` object. Once we have the repositories, we can call our `getRowItems()` helper to build the data table rows.
 
 ##### src/content/RepoPage/RepoPage.js
 
@@ -333,7 +333,7 @@ Revisiting `RepoTable.js`, we are already passing in our row objects along with 
 
 One common hurdle with the data table is how to access data that might not correspond with a table column but is needed to compute the value of a cell that does. The data table component processes and controls only the row properties which corresponds to headers (columns). Because of this, the `rows` object you get access to in the render prop function is _different_ than the one you passed in to the `rows` prop.
 
-We need to modify one apsect of the data table because if you expand a row, it says `Row description`. We want to update that with the repository description coming from the GitHub API. This is an example of where we need a simple look-up function to find the data we care about - data that does not directly correspond to a column.
+We need to modify one aspect of the data table because if you expand a row, it says `Row description`. We want to update that with the repository description coming from the GitHub API. This is an example of where we need a simple look-up function to find the data we care about - data that does not directly correspond to a column.
 
 To do so, in `RepoTable.js`, add this look-up function as the first lines inside the `RepoTable`. This should go immediately before the component's `return()`.
 
