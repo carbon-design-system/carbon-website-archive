@@ -1034,19 +1034,19 @@ module.exports = {
       value: {
         white: {
           name: 'Gray 30',
-          hex: '#BEBEBE',
+          hex: '#bebebe',
         },
         g10: {
           name: 'Gray 30',
-          hex: '#BEBEBE',
+          hex: '#bebebe',
         },
         g90: {
           name: 'Gray 70',
           hex: '#565656',
         },
         g100: {
-          name: 'Gray 70',
-          hex: '#565656',
+          name: 'Gray 80',
+          hex: '#3d3d3d',
         },
       },
     },
