@@ -4,7 +4,6 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import Packages from '../../../package.json';
 import WebsiteHeader from '../WebsiteHeader';
-import WebsiteAlert from '../WebsiteAlert';
 import LeftNav from '../LeftNav';
 import favicon32 from '../../content/global/images/favicon-32.png';
 import {
@@ -176,7 +175,7 @@ class Layout extends React.Component {
       durationMin: 250,
       durationMax: 700,
       easing: 'easeInOutCubic',
-      offset: 87, // height of both header bars plus space for tabs
+      offset: 46, // height of header bar plus space for tabs
       topOnEmptyHash: false,
       clip: true,
     });
@@ -297,14 +296,8 @@ class Layout extends React.Component {
               onToggleBtnClick={this.onToggleBtnClick}
               isInternal={isInternal}
               isSearchOpen={this.state.isSearchOpen}
-              handleSearchClick={this.handleSearchClick}>
-              <WebsiteAlert
-                alertTitle="Carbon v10 is live!"
-                alertDescription="View the migration guide to upgrade from v9."
-                buttonText="Migrate to v10"
-                buttonTo="/updates/v10-migration/overview"
-              />
-            </WebsiteHeader>
+              handleSearchClick={this.handleSearchClick}
+            />
 
             <WebsiteSwitcher
               isSwitcherFinal={this.state.isSwitcherFinal}
@@ -316,7 +309,7 @@ class Layout extends React.Component {
                   linkText: 'IBM Design Language',
                 },
                 {
-                  href: 'https://www.ibm.com/design/brand/',
+                  href: 'https://www.ibm.com/brand/',
                   linkText: 'IBM Brand Center',
                 },
                 {
@@ -410,6 +403,10 @@ class Layout extends React.Component {
                   {
                     href: 'https://twitter.com/_carbondesign',
                     linkText: 'Twitter',
+                  },
+                  {
+                    href: 'https://www.netlify.com',
+                    linkText: 'Netlify',
                   },
                 ]}>
                 <p>

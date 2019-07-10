@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@carbon/addons-website": "^0.0.1-alpha.23",
-    "@carbon/icons-react": "0.0.1-alpha.31",
+    "@carbon/icons-react": "10.4.0-alpha.5390",
     "@carbon/colors": "v10.1.1",
     "@carbon/grid": "v10.1.1",
     "@carbon/import-once": "v10.1.0",

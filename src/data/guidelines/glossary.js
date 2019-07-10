@@ -1,7 +1,7 @@
 /* eslint-disable */
 module.exports = {
   A: {
-    'Common actions': {
+    'Action labels': {
       Add: {
         desc:
           'Adds an existing object to a list, container, or system (for example, adding a document to a folder).',
@@ -20,21 +20,9 @@ module.exports = {
         subtext: 'See [Reject](#reject).',
       },
     },
-    Idioms: {
-      'a la carte': {
-        desc: '(adverb) pertaining to separately itemized objects.',
-        subtext:
-          'Context: Bluemix provides pay-as-you-go and subscription based pricing, a-la-carte and bundled services availability.',
-      },
-      app: {
-        desc: '(noun) a web or mobile device application.',
-        subtext:
-          "Spell as shown, all lower case. In the doc, if for some reason it seems more appropriate to use application, use application for the first instance and then use app. Context: It's easy to delete apps to free up some spaces in Bluemix at any time.",
-      },
-    },
   },
   B: {
-    'Common actions': {
+    'Action labels': {
       Back: {
         desc:
           'Returns the user to the previous step in a sequence of steps, such as in a wizard.',
@@ -46,25 +34,9 @@ module.exports = {
           'Assists the user in entering a file name or file path (for example, on a button or link next to an entry field). Typically opens a secondary window where the user can locate and select the desired directory and file.',
       },
     },
-    Idioms: {
-      bestseller: {
-        desc:
-          '(noun) a significantly successful product or service in the marketplace.',
-        subtext:
-          'Context: Develop software for a cause or your company’s next bestseller.',
-      },
-      bet: {
-        desc: '(verb) to feel sure about something.',
-        subtext: 'Context: We bet you have built some sweet apps by now.',
-      },
-      'big savings': {
-        desc: '(phrase) a significant amount of money saved.',
-        subtext: 'Context: You get big savings every month.',
-      },
-    },
   },
   C: {
-    'Common actions': {
+    'Action labels': {
       Cancel: {
         desc: 'Stops the current action and closes the dialog.',
         subtext:
@@ -86,7 +58,7 @@ module.exports = {
         desc:
           'Creates new instances of the selected objects to a specific destination.',
         subtext:
-          'Combine Copy with the object being copied (for example, Copy folder) or the destination (for example, Copy to clipboard) if there are multiple possibilities. Use instead of Create like. Contrast with [New](#new). See the [Copy action](patterns/common-actions#copy).',
+          'Combine Copy with the object being copied (for example, Copy folder) or the destination (for example, Copy to clipboard) if there are multiple possibilities. Use instead of Create like. Contrast with [New](#new). See the [Copy action](/patterns/common-actions#copy).',
       },
       Create: {
         desc:
@@ -99,30 +71,9 @@ module.exports = {
         subtext: null,
       },
     },
-    Idioms: {
-      'cold-blooded cyborg': {
-        desc:
-          '(noun) a man-like robot with no feelings (to cloud its judgment) that flawlessly executes its mandate."',
-        subtext:
-          'Context: Create apps with the efficiency of a cold-blooded cyborg.',
-      },
-      congrats: {
-        desc: '(noun) congratulations.',
-        subtext: 'Context: Congrats on creating your new app!',
-      },
-      crash: {
-        desc: '(noun) the unexpected termination of a software function.',
-        subtext:
-          'Context: Add the Mobile Quality Assurance service to your iOS app to view high value quality metrics, including information for crashes, bugs, user feedback, and user sentiment.',
-      },
-      'crash (verb)': {
-        desc: 'of software, to unexpectedly terminate.',
-        subtext: 'Context: If a service crashes, the app might stop too.',
-      },
-    },
   },
   D: {
-    'Common actions': {
+    'Action labels': {
       Delete: {
         desc: 'Destroys an existing object.',
         subtext:
@@ -149,24 +100,9 @@ module.exports = {
           'In other cases, use [Delete](#delete), [Clear](#clear), or [Remove](#remove).',
       },
     },
-    Idioms: {
-      'dev-to-dev': {
-        desc: '(phrase) developer to developer.',
-        subtext: 'Context: Free support is available in our dev-to-dev forum.',
-      },
-      docs: {
-        desc: '(noun) documentation.',
-        subtext: 'Context: View docs.',
-      },
-      dream: {
-        desc:
-          '(adjective) pertaining to something that is exceptionally gratifying, excellent, or beautiful.',
-        subtext: 'Context: Build your dream app.',
-      },
-    },
   },
   E: {
-    'Common actions': {
+    'Action labels': {
       Edit: {
         desc: 'Allows data or values to be changed.',
         subtext: 'See the [Edit action](/patterns/common-actions#edit).',
@@ -184,7 +120,7 @@ module.exports = {
     },
   },
   F: {
-    'Common actions': {
+    'Action labels': {
       Filter: {
         desc: 'Shortens a list to objects that match the filter criteria.',
         subtext: 'Contrast with [Find](#find) and [Search](#search).',
@@ -199,16 +135,9 @@ module.exports = {
         subtext: 'See [Done](#done).',
       },
     },
-    Idioms: {
-      freebie: {
-        desc: '(noun) something given away at no cost.',
-        subtext:
-          'Context: Enjoy freebies after the trial ends, and pay only for what you use beyond those.',
-      },
-    },
   },
   G: {
-    'Common actions': {
+    'Action labels': {
       'Get help': {
         desc:
           'Opens a search field from which the user can search for help information.',
@@ -216,43 +145,17 @@ module.exports = {
           'Use only as link text on Support widget from the console menu bar. See [Docs](#docs) and [Learn more](#learn-more).',
       },
     },
-    Idioms: {
-      'get in touch': {
-        desc: '(verb) to contact someone.',
-        subtext:
-          'Context: The page also provides options to post your question to Stack Overflow, or to open a ticket by clicking Get in touch.',
-      },
-    },
   },
   H: {
-    'Common actions': {
+    'Action labels': {
       Hide: {
         desc: 'Removes an element that was previously shown.',
         subtext: 'Context: Hide descriptions. See [Show](#show).',
       },
     },
-    Idioms: {
-      hackathon: {
-        desc:
-          '(noun) an event that brings together developers to work intensively on a software project.',
-        subtext: 'Context: Run a hackathon.',
-      },
-      'have a hand in': {
-        desc:
-          '(phrase) to be directly involved in the accomplishment or creation of something.',
-        subtext:
-          "Context: If you're a developer, you now have a hand in creating the future.",
-      },
-      'hit the ground running': {
-        desc:
-          '(phrase) to immediately accomplish something when just starting to learn how to do it.',
-        subtext:
-          'Context: Whatever your task, Bluemix contains everything you need to hit the ground running.',
-      },
-    },
   },
   I: {
-    'Common actions': {
+    'Action labels': {
       Import: {
         desc:
           'Transforms data or objects from an external source. Typically opens a secondary window for the user to locate the external source.',
@@ -265,15 +168,9 @@ module.exports = {
           'Context: Adding a picture to the body of a document or inserting a record into a table. Contrast with [Add](#new) and [New](#new).',
       },
     },
-    Idioms: {
-      'in a flash': {
-        desc: '(phrase) quickly, immediately.',
-        subtext: 'Context: Deploy and test your app in a flash.',
-      },
-    },
   },
   L: {
-    'Common actions': {
+    'Action labels': {
       Launch: {
         desc: 'Do not use.',
         subtext: 'Use [Start](#start).',
@@ -294,16 +191,9 @@ module.exports = {
         subtext: 'Use instead of Sign out. See [Log in](#log-in).',
       },
     },
-    Idioms: {
-      'lost in space': {
-        desc:
-          '(phrase) to be hopelessly adrift with no chance of return, unlocatable, lost to the world.',
-        subtext: 'Context: This page seems to be lost in space.',
-      },
-    },
   },
   M: {
-    'Common actions': {
+    'Action labels': {
       Move: {
         desc:
           'Transfers an object from one container (for example, folder, activity, or page) to another.',
@@ -315,21 +205,9 @@ module.exports = {
           'Use instead of Delete or Recycle bin. See [Empty trash](#empty-trash).',
       },
     },
-    Idioms: {
-      meetup: {
-        desc: '(noun) an informal gathering.',
-        subtext: 'Context: Plan anything, even the monthly meetup.',
-      },
-      muscle: {
-        desc:
-          '(noun) the metaphorical strength or physical power of something.',
-        subtext:
-          'Context: Whether startup or enterprise, your apps are supported by the muscle of an enterprise-ready cloud.',
-      },
-    },
   },
   N: {
-    'Common actions': {
+    'Action labels': {
       New: {
         desc:
           'Starts the creation of a new object. New either creates the object immediately or opens a dialog or set of fields where the user can enter properties.',
@@ -343,49 +221,18 @@ module.exports = {
           'See [Back](#Back), [Finish](#finish), and the [Next action](/patterns/common-actions#next).',
       },
     },
-    Idioms: {
-      'N/A': {
-        desc: '(adjective) not applicable, not available.',
-        subtext: 'Spell as shown, all upper case.',
-      },
-    },
   },
   O: {
-    'Common actions': {
+    'Action labels': {
       OK: {
         desc: 'Completes the current task.',
         subtext:
           'The best practice is to use a label corresponding to the requested action, such as [Save](#save) or [Create](#create). Use OK only when such a label is not available.',
       },
     },
-    Idioms: {
-      'oh no!': {
-        desc: '(phrase) used to indicate shock.',
-        subtext: 'Context: Oh no! The free trial expired.',
-      },
-      'on-prem': {
-        desc: '(adjective) on-premises.',
-        subtext:
-          'Context: Incrementally port application features across on-prem platforms and clouds with consistent services.',
-      },
-      oops: {
-        desc: '(expression) used to indicate an accident or a mistake.',
-        subtext:
-          'Context: Oops, sorry, the HTML5 File APIs are not fully supported in this browser.',
-      },
-      ops: {
-        desc: '(noun) operations.',
-        subtext:
-          'Context: Bluemix mobile cloud services help developers minimize ops and maintenance cost.',
-      },
-      org: {
-        desc: '(noun) organization.',
-        subtext: 'Context: Change to a different org.',
-      },
-    },
   },
   P: {
-    'Common actions': {
+    'Action labels': {
       Play: {
         desc: 'Starts audio, video, or an animation.',
       },
@@ -406,7 +253,7 @@ module.exports = {
     },
   },
   R: {
-    'Common actions': {
+    'Action labels': {
       Redo: {
         desc: 'Redoes an undo action.',
         subtext:
@@ -457,15 +304,9 @@ module.exports = {
         subtext: 'Use instead of Execute.',
       },
     },
-    Idioms: {
-      'ready for takeoff': {
-        desc: '(phrase) prepared for use.',
-        subtext: 'Context: Your app is ready for takeoff!',
-      },
-    },
   },
   S: {
-    'Common actions': {
+    'Action labels': {
       Save: {
         desc:
           'Saves pending modifications made to a file or document. Does not close the window or panel.',
@@ -515,36 +356,9 @@ module.exports = {
           'Use only as link text on Support widget from the console menu bar.',
       },
     },
-    Idioms: {
-      skunkworks: {
-        desc:
-          '(noun) a high priority, often secret, project taken on by a small team without constraints from management.',
-        subtext: 'Context: Start a skunkworks.',
-      },
-      startup: {
-        desc: '(noun) a newly established business.',
-        subtext:
-          'Context: Whether startup or enterprise, your apps are supported by the muscle of an enterprise-ready cloud.',
-      },
-      'start from scratch': {
-        desc: '(phrase) to start from the beginning, to start from nothing.',
-        subtext:
-          'Context: Choose a package of sample code and services, or start from scratch.',
-      },
-      sweet: {
-        desc:
-          '(adjective) pertaining to something that is considered excellent, awesome, or cool.',
-        subtext: 'Context: We bet you have built some sweet apps by now.',
-      },
-      sync: {
-        desc: '(noun) synchronize.',
-        subtext:
-          'Spell as shown (not synch). Context: Download this .zip file template application or sync with the template source repository by copying and pasting the Git URL to a command line.',
-      },
-    },
   },
   T: {
-    'Common actions': {
+    'Action labels': {
       Top: {
         desc: 'Returns to the top of the page.',
         subtext: 'Use instead of Back to top.',
@@ -563,7 +377,7 @@ module.exports = {
     },
   },
   U: {
-    'Common actions': {
+    'Action labels': {
       Undo: {
         desc:
           'Reverts to the state before the most recent changes made by the user. Repeated use successively reverts to prior states in reverse chronological order. Applies to changes in data and not to changes made to the view.',
@@ -580,33 +394,11 @@ module.exports = {
         subtext: 'See [Download](#download).',
       },
     },
-    Idioms: {
-      unfavorite: {
-        desc:
-          '(verb) to change the status of an item that was previously marked as a favorite. (adjective) an item that is not a favorite.',
-      },
-    },
   },
   V: {
-    'Common actions': {
+    'Action labels': {
       'View details': {
         desc: 'Presents additional information or properties for the object.',
-      },
-    },
-    Idioms: {
-      voila: {
-        desc:
-          '(expression) draws attention to something that has been accomplished or gained.',
-        subtext:
-          'Context: Runtime and container usage is charged based on two things. One, how much memory your runtime or container uses, and two, the duration that memory is used. Multiply the two together, and voila! The GB-hour.',
-      },
-    },
-  },
-  W: {
-    Idioms: {
-      'wow!': {
-        desc: '(expression) used to show astonishment, delight, or admiration.',
-        subtext: 'Context: Wow, time flies!',
       },
     },
   },

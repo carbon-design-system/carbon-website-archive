@@ -34,7 +34,11 @@ export default class FeatureTile extends React.Component {
       <div className={classNames}>
         <div className="bx--col-lg-12 bx--offset-lg-4 flex-wrap">
           <Link to={href} className={linkClasses}>
-            <div className="tile__img">{children}</div>
+            <div className="tile__img">
+              <div className="bx--aspect-ratio bx--aspect-ratio--2x1">
+                <div className="bx--aspect-ratio--object">{children}</div>
+              </div>
+            </div>
             <div className="feature-tile__tile">
               <div className="bx--aspect-ratio bx--aspect-ratio--2x1">
                 <div className="bx--aspect-ratio--object">
