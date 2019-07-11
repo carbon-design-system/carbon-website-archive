@@ -802,19 +802,19 @@ module.exports = {
       role: ['Selected row hover'],
       value: {
         white: {
-          name: 'Gray 20 Hover',
+          name: 'Gray 20 hover',
           hex: '#cacaca',
         },
         g10: {
-          name: 'Gray 20 Hover',
+          name: 'Gray 20 hover',
           hex: '#cacaca',
         },
         g90: {
-          name: 'Gray 70 Hover',
+          name: 'Gray 70 hover',
           hex: '#656565',
         },
         g100: {
-          name: 'Gray 80 Hover',
+          name: 'Gray 80 hover',
           hex: '#4c4c4c',
         },
       },
