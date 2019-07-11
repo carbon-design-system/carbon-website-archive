@@ -799,7 +799,7 @@ module.exports = {
       },
     },
     '$hover-selected-ui': {
-      role: ['data table selected row hover'],
+      role: ['Selected row hover'],
       value: {
         white: {
           name: 'Gray 20 Hover',
