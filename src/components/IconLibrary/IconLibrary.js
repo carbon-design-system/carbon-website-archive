@@ -1,6 +1,7 @@
 import React from 'react';
 import { Search, Loading } from 'carbon-components-react';
-import IconEmptyState from '../IconEmptyState';
+import ClickableTile from '../ClickableTile/ClickableTile';
+import githubIcon from '../../../src/content/resources/images/github-icon.png';
 
 const sizes = ['16', '20', '24', '32'];
 
@@ -167,8 +168,21 @@ export default class IconLibrary extends React.Component {
           <div className="bx--col-lg-8 bx--offset-lg-4 bx--no-gutter-md bx--no-gutter-lg">
             {search}
           </div>
-          <div className="bx--col-lg-12 bx--offset-lg-4 bx--no-gutter-sm bx--no-gutter-md bx--no-gutter-lg">
-            <IconEmptyState />
+          <div className="icon-search--message bx--col-lg-12 bx--offset-lg-4">
+            <p className="icon-search--message__no-results">
+              It appears we don’t have an icon that matches your search. Try
+              different search terms or give us a hand—submit your own design to
+              the library!
+            </p>
+          </div>
+          <div className="bx--offset-lg-4 bx--col-lg-4 bx--col-md-3 bx--col-sm-4 bx--no-gutter-sm bx--no-gutter-md bx--no-gutter-lg">
+            <ClickableTile
+              title="Submit an icon design."
+              href="https://github.com/carbon-design-system/carbon/tree/master/packages/icons"
+              type="resource">
+              {/* <img src="/images/github-icon.png" /> */}
+              <img src={githubIcon} />
+            </ClickableTile>
           </div>
         </div>
       );
