@@ -223,8 +223,8 @@
       "export-pattern": {
         "title": "Export pattern"
       },
-      "navigation": {
-        "title": "Navigation"
+      "navigation-pattern": {
+        "title": "Navigation pattern"
       },
       "deleting": {
         "title": "Deleting pattern"
