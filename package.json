@@ -46,7 +46,7 @@
     "@reach/router": "^1.2.1",
     "@vimeo/player": "^2.6.7",
     "carbon-components": "10.4.0-rc.1",
-    "carbon-components-react": "7.4.0-rc.0",
+    "carbon-components-react": "7.4.0-rc.1",
     "carbon-icons": "^7.0.7",
     "classnames": "^2.2.6",
     "custom-event": "^1.0.1",
