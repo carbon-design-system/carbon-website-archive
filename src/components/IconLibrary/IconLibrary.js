@@ -90,7 +90,16 @@ export default class IconLibrary extends React.Component {
    */
   componentDidMount() {
     import('@carbon/icons-react')
-      .then(icons => {
+      .then(result => {
+        const icons = Object.keys(result)
+          .filter(name => name !== 'Icon')
+          .reduce(
+            (acc, name) => ({
+              ...acc,
+              [name]: result[name],
+            }),
+            {}
+          );
         const filteredIcons = Object.keys(icons);
         this.setState({
           icons,
@@ -160,8 +169,6 @@ export default class IconLibrary extends React.Component {
       );
     }
 
-    console.log(filteredIcons);
-
     if (filteredIcons.length === 0) {
       return (
         <div className="page bx--row">
@@ -180,7 +187,6 @@ export default class IconLibrary extends React.Component {
               title="Submit an icon design."
               href="https://github.com/carbon-design-system/carbon/tree/master/packages/icons"
               type="resource">
-              {/* <img src="/images/github-icon.png" /> */}
               <img src={githubIcon} />
             </ClickableTile>
           </div>
@@ -221,34 +227,16 @@ function groupIconsBySize(icons) {
   return Object.keys(icons).reduce((acc, iconName) => {
     const [group] = sizes.filter(size => iconName.indexOf(size) !== -1);
     const friendlyName = iconName.replace(group, '');
+    if (!group) {
+      return acc;
+    }
+
     const details = {
       name: iconName,
       friendlyName,
       group,
       Component: icons[iconName],
     };
-    // if (
-    //   friendlyName == 'icon' ||
-    //   friendlyName == 'Icon' ||
-    //   group == 'Icon' ||
-    //   group == 'icon' ||
-    //   group == 'Glyph'
-    // ) {
-    //   console.log('\n\n\n groupIconsBySize()');
-    //   console.group();
-    //   console.log(iconName);
-    //   console.log(group);
-    //   console.log(details);
-    //   console.log('\nwtf is acc and acc[group]');
-    //   console.log(acc);
-    //   console.log(...acc);
-    //   console.log(acc[group]);
-    //   console.groupEnd();
-    // }
-
-    if (group === undefined || group === 'undefined') {
-      return '';
-    }
 
     if (acc[group]) {
       return {
@@ -274,6 +262,7 @@ function groupIconsBySize(icons) {
  */
 function createIconSections(icons, filteredIcons) {
   const groups = groupIconsBySize(icons);
+
   return Object.keys(groups)
     .filter(size => {
       if (!Array.isArray(groups[size])) {
@@ -281,18 +270,24 @@ function createIconSections(icons, filteredIcons) {
       }
       return groups[size].length !== 0;
     })
-    .map(size => (
-      <section key={size} className="icon-size" aria-labelledby={`icon-h2`}>
-        <header>
-          <h2 className={`icon-h2`}>
-            {isNaN(size) ? size : `${size}x${size}`}
-          </h2>
-        </header>
-        <ul className="icons-list">
-          {renderIconList(groups[size], filteredIcons)}
-        </ul>
-      </section>
-    ));
+    .map(size => {
+      if (true) {
+        return (
+          <section key={size} className="icon-size" aria-labelledby={`icon-h2`}>
+            <header>
+              <h2 className={`icon-h2`}>
+                {isNaN(size) ? size : `${size}x${size}`}
+              </h2>
+            </header>
+            <ul className="icons-list">
+              {renderIconList(groups[size], filteredIcons)}
+            </ul>
+          </section>
+        );
+      } else {
+        return '';
+      }
+    });
 }
 
 /**
@@ -337,8 +332,8 @@ function renderIcon(icon) {
         <div className="icon__card bx--aspect-ratio--object">
           <icon.Component />
         </div>
-        <h5 className="icon__card-title" title={icon.friendlyName}>
-          {icon.friendlyName}
+        <h5 className="icon__card-title" title={icon.name}>
+          {icon.name}
         </h5>
         <span className="icon__card-details" title={icon.name} />
       </div>
