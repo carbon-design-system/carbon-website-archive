@@ -49,7 +49,7 @@ class IconEmptyState extends Component {
             the library.
           </p>
           <Button
-            href="https://github.com/ibm/carbon-icons"
+            href="https://github.com/carbon-design-system/carbon/tree/master/packages/icons"
             className="icon-empty-state__btn bx--btn"
             kind="secondary"
             icon="add--glyph"
