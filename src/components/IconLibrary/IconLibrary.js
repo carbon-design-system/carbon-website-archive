@@ -271,22 +271,18 @@ function createIconSections(icons, filteredIcons) {
       return groups[size].length !== 0;
     })
     .map(size => {
-      if (true) {
-        return (
-          <section key={size} className="icon-size" aria-labelledby={`icon-h2`}>
-            <header>
-              <h2 className={`icon-h2`}>
-                {isNaN(size) ? size : `${size}x${size}`}
-              </h2>
-            </header>
-            <ul className="icons-list">
-              {renderIconList(groups[size], filteredIcons)}
-            </ul>
-          </section>
-        );
-      } else {
-        return '';
-      }
+      return (
+        <section key={size} className="icon-size" aria-labelledby={`icon-h2`}>
+          <header>
+            <h2 className={`icon-h2`}>
+              {isNaN(size) ? size : `${size}x${size}`}
+            </h2>
+          </header>
+          <ul className="icons-list">
+            {renderIconList(groups[size], filteredIcons)}
+          </ul>
+        </section>
+      );
     });
 }
 
