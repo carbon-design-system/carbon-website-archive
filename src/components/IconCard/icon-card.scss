@@ -1,27 +1,119 @@
-.icon-container {
+.icons-list {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: wrap;
   width: 100%;
   padding-bottom: $spacing-06;
 }
 
-.icon-search {
-  margin-bottom: rem(32px);
-}
-
-.icon {
-  flex: 1 1 10rem;
-  max-width: 10rem;
+.icon__container {
+  flex: 0 1 50%;
   position: relative;
 
   &:nth-child(n) {
+    border-top: 1px solid $carbon--gray-20;
     border-left: 1px solid $carbon--gray-20;
-    border-bottom: 1px solid $carbon--gray-20;
+  }
+  &:nth-child(n):nth-child(-n + 2) {
+    border-top: none;
+  }
+  &:nth-child(2n - 1) {
+    border-left: none;
+  }
+
+  & .bx--aspect-ratio > * {
+    z-index: 100; // all siblings of bx--aspect-ratio--object will have same z-index
+  }
+}
+
+@media all and (min-width: 515px) {
+  .icon__container {
+    flex: 0 1 calc(100% / 3);
+
+    &:nth-child(n) {
+      border-top: 1px solid $carbon--gray-20;
+      border-left: 1px solid $carbon--gray-20;
+    }
+    &:nth-child(n):nth-child(-n + 3) {
+      border-top: none;
+    }
+    &:nth-child(3n - 2) {
+      border-left: none;
+    }
+  }
+}
+
+@media all and (min-width: 730px) {
+  .icon__container {
+    flex: 0 1 25%;
+
+    &:nth-child(n) {
+      border-top: 1px solid $carbon--gray-20;
+      border-left: 1px solid $carbon--gray-20;
+    }
+    &:nth-child(n):nth-child(-n + 4) {
+      border-top: none;
+    }
+    &:nth-child(4n - 3) {
+      border-left: none;
+    }
+  }
+}
+
+@media all and (min-width: 980px) {
+  .icon__container {
+    flex: 0 1 20%;
+
+    &:nth-child(n) {
+      border-top: 1px solid $carbon--gray-20;
+      border-left: 1px solid $carbon--gray-20;
+    }
+    &:nth-child(n):nth-child(-n + 5) {
+      border-top: none;
+    }
+    &:nth-child(5n - 4) {
+      border-left: none;
+    }
+  }
+}
+
+@media all and (min-width: 1300px) {
+  .icon__container {
+    flex: 0 1 calc(100% / 6);
+
+    &:nth-child(n) {
+      border-top: 1px solid $carbon--gray-20;
+      border-left: 1px solid $carbon--gray-20;
+    }
+    &:nth-child(n):nth-child(-n + 6) {
+      border-top: none;
+    }
+    &:nth-child(6n - 5) {
+      border-left: none;
+    }
+  }
+}
+
+.icon__card {
+  background: $ui-02;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus,
+  .icon__actions:focus,
+  button:focus,
+  a:focus {
+    .icon__actions {
+      opacity: 1;
+    }
   }
 }
 
 .icon__card-title,
-.icon__card-details {
+.icon__card-details,
+.icon__card-no__results {
   position: absolute;
   top: rem(12px);
   left: rem(12px);
@@ -36,6 +128,11 @@
 .icon__card-details {
   top: rem(28px);
   @include carbon--type-style('helper-text-01');
+}
+
+.icon__card-no__results {
+  white-space: normal;
+  overflow: visible;
 }
 
 .icon__actions {
@@ -54,26 +151,6 @@
 
   &.displayed {
     opacity: 1;
-  }
-}
-
-.icon__card {
-  background: $ui-02;
-  height: 10rem;
-  text-align: center;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &:hover,
-  &:focus,
-  .icon__actions:focus,
-  button:focus,
-  a:focus {
-    .icon__actions {
-      opacity: 1;
-    }
   }
 }
 
@@ -96,78 +173,5 @@ a.icon-button {
   &:focus {
     background-color: $inverse-01;
     color: $brand-01 !important;
-  }
-}
-
-// Remove outside border
-@media all and (min-width: 1568px) {
-  .icon {
-    &:nth-child(7n + 1) {
-      border-left: 0px !important;
-    }
-  }
-}
-
-@media all and (min-width: 1355px) and (max-width: 1567px) {
-  .icon {
-    &:nth-child(6n + 1) {
-      border-left: 0px !important;
-    }
-  }
-}
-
-@media all and (min-width: 1142px) and (max-width: 1354px) {
-  .icon {
-    &:nth-child(5n + 1) {
-      border-left: 0px !important;
-    }
-  }
-}
-
-@media all and (min-width: 1056px) and (max-width: 1141px) {
-  .icon {
-    &:nth-child(4n + 1) {
-      border-left: 0px !important;
-    }
-  }
-}
-
-@media all and (min-width: 1024px) and (max-width: 1055px) {
-  .icon {
-    &:nth-child(6n + 1) {
-      border-left: 0px !important;
-    }
-  }
-}
-
-@media all and (min-width: 864px) and (max-width: 1023px) {
-  .icon {
-    &:nth-child(5n + 1) {
-      border-left: 0px !important;
-    }
-  }
-}
-
-@media all and (min-width: 704px) and (max-width: 863px) {
-  .icon {
-    &:nth-child(4n + 1) {
-      border-left: 0px !important;
-    }
-  }
-}
-
-@media all and (min-width: 512px) and (max-width: 703px) {
-  .icon {
-    &:nth-child(3n + 1) {
-      border-left: 0px !important;
-    }
-  }
-}
-
-@media all and (max-width: 511px) {
-  .icon {
-    &:nth-child(2n + 1) {
-      border-left: 0px !important;
-    }
   }
 }
