@@ -1,8 +1,9 @@
 import React from 'react';
 import { Search, Loading } from 'carbon-components-react';
-import IconEmptyState from '../IconEmptyState';
+import ClickableTile from '../ClickableTile/ClickableTile';
+import githubIcon from '../../../src/content/resources/images/github-icon.png';
 
-const sizes = ['16', '20', '24', '32', 'Glyph'];
+const sizes = ['16', '20', '24', '32'];
 
 /**
  * Provides support for our experimental icon library, `@carbon/icons-react`,
@@ -69,12 +70,36 @@ export default class IconLibrary extends React.Component {
   };
 
   /**
+   * clear search state to reset view to default
+   */
+  handleClearSearch = event => {
+    event.preventDefault();
+    this.setState(
+      {
+        searchValue: '',
+      },
+      () => {
+        this.filterIcons();
+      }
+    );
+  };
+
+  /**
    * When our component mounts, we need to fetch the icon data from
    * `@carbon/react`
    */
   componentDidMount() {
     import('@carbon/icons-react')
-      .then(icons => {
+      .then(result => {
+        const icons = Object.keys(result)
+          .filter(name => name !== 'Icon')
+          .reduce(
+            (acc, name) => ({
+              ...acc,
+              [name]: result[name],
+            }),
+            {}
+          );
         const filteredIcons = Object.keys(icons);
         this.setState({
           icons,
@@ -103,10 +128,10 @@ export default class IconLibrary extends React.Component {
 
     const search = (
       <Search
-        small
-        className="icon-search"
+        light
+        className="icon-search bx--search--light" // search updated to support `light` prop in https://github.com/carbon-design-system/carbon/pull/3230
         onChange={this.handleOnChange}
-        placeHolderText="Search by descriptors like “add”, or “check”"
+        placeHolderText="Search by icon name"
         aria-label="Icon library search"
         value={this.state.searchValue}
         labelText="Icon library search"
@@ -147,9 +172,23 @@ export default class IconLibrary extends React.Component {
     if (filteredIcons.length === 0) {
       return (
         <div className="page bx--row">
-          <div className="bx--col-lg-8 bx--offset-lg-4">{search}</div>
-          <div className="bx--col-lg-12 bx--offset-lg-4">
-            <IconEmptyState />
+          <div className="bx--col-lg-8 bx--offset-lg-4 bx--no-gutter-md bx--no-gutter-lg">
+            {search}
+          </div>
+          <div className="icon-search--message bx--col-lg-12 bx--offset-lg-4">
+            <p className="icon-search--message__no-results">
+              It appears we don’t have an icon that matches your search. Try
+              different search terms or give us a hand—submit your own design to
+              the library!
+            </p>
+          </div>
+          <div className="bx--offset-lg-4 bx--col-lg-4 bx--col-md-3 bx--col-sm-4 bx--no-gutter-sm bx--no-gutter-md bx--no-gutter-lg">
+            <ClickableTile
+              title="Submit an icon design."
+              href="https://github.com/carbon-design-system/carbon/tree/master/packages/icons"
+              type="resource">
+              <img src={githubIcon} />
+            </ClickableTile>
           </div>
         </div>
       );
@@ -157,8 +196,23 @@ export default class IconLibrary extends React.Component {
 
     return (
       <div className="page bx--row">
-        <div className="bx--col-lg-8 bx--offset-lg-4">{search}</div>
-        <div className="bx--col-lg-12 bx--offset-lg-4">{sections}</div>
+        <div className="icon-search--wrapper bx--col-lg-8 bx--offset-lg-4 bx--no-gutter-md bx--no-gutter-lg">
+          {search}
+          {this.state.searchValue || this.state.searchValue !== '' ? (
+            <p className="icon-search--status">
+              {filteredIcons.length} matches found! Or clear to{' '}
+              <a href="#" onClick={this.handleClearSearch}>
+                view all
+              </a>{' '}
+              icons.
+            </p>
+          ) : (
+            ''
+          )}
+        </div>
+        <div className="bx--col-lg-12 bx--offset-lg-4 bx--no-gutter-sm bx--no-gutter-md bx--no-gutter-lg">
+          {sections}
+        </div>
       </div>
     );
   }
@@ -173,6 +227,10 @@ function groupIconsBySize(icons) {
   return Object.keys(icons).reduce((acc, iconName) => {
     const [group] = sizes.filter(size => iconName.indexOf(size) !== -1);
     const friendlyName = iconName.replace(group, '');
+    if (!group) {
+      return acc;
+    }
+
     const details = {
       name: iconName,
       friendlyName,
@@ -204,6 +262,7 @@ function groupIconsBySize(icons) {
  */
 function createIconSections(icons, filteredIcons) {
   const groups = groupIconsBySize(icons);
+
   return Object.keys(groups)
     .filter(size => {
       if (!Array.isArray(groups[size])) {
@@ -211,33 +270,69 @@ function createIconSections(icons, filteredIcons) {
       }
       return groups[size].length !== 0;
     })
-    .map(size => (
-      <section key={size} className="icon-size">
-        <header>
-          <h2 className="icon-h2">{isNaN(size) ? size : `${size}x${size}`}</h2>
-        </header>
-        <div className="icon-container">
-          {groups[size]
-            .filter(icon => filteredIcons.indexOf(icon.name) !== -1)
-            .map(renderIcon)}
-        </div>
-      </section>
-    ));
+    .map(size => {
+      return (
+        <section key={size} className="icon-size" aria-labelledby={`icon-h2`}>
+          <header>
+            <h2 className={`icon-h2`}>
+              {isNaN(size) ? size : `${size}x${size}`}
+            </h2>
+          </header>
+          <ul className="icons-list">
+            {renderIconList(groups[size], filteredIcons)}
+          </ul>
+        </section>
+      );
+    });
+}
+
+/**
+ * render list of available icons for this category.
+ * if none are available, return a blank block
+ */
+
+function renderIconList(categoryArray, filteredList) {
+  const displayedIconsList = categoryArray.filter(
+    icon => filteredList.indexOf(icon.name) !== -1
+  );
+
+  const displayedIcons = displayedIconsList.map(renderIcon);
+
+  if (displayedIcons.length > 0) {
+    return displayedIcons;
+  }
+
+  return (
+    <li className="icon__container">
+      <div className="bx--aspect-ratio bx--aspect-ratio--1x1">
+        <div className="icon__card bx--aspect-ratio--object" />
+        <p className="icon__card-no__results">
+          No results in this size.
+          <br />
+          <br />
+          Scale the closest size to use this icon.
+        </p>
+      </div>
+    </li>
+  );
 }
 
 /**
  * Renders an individual icon
+ * passing `null` renders no-results icon block
  */
 function renderIcon(icon) {
   return (
-    <div key={icon.name} className="icon">
-      <div className="icon__card">
-        <icon.Component />
+    <li key={icon.name} className="icon__container">
+      <div className="bx--aspect-ratio bx--aspect-ratio--1x1">
+        <div className="icon__card bx--aspect-ratio--object">
+          <icon.Component />
+        </div>
+        <h5 className="icon__card-title" title={icon.name}>
+          {icon.name}
+        </h5>
+        <span className="icon__card-details" title={icon.name} />
       </div>
-      <h5 className="icon__card-title" title={icon.friendlyName}>
-        {icon.friendlyName}
-      </h5>
-      <span className="icon__card-details" title={icon.name} />
-    </div>
+    </li>
   );
 }
