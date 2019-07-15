@@ -1,7 +1,7 @@
 ---
 label: Icons are visual symbols used to represent ideas, objects, or actions. They communicate messages at a glance, afford interactivity, and draw attention to important information.
 title: Iconography
-tabs: ['Library', 'Usage', 'Contribute']
+tabs: ['Usage', 'Library', 'Contribute']
 ---
 
 ### Icons are visual symbols used to represent ideas, objects, or actions. They communicate messages at a glance, afford interactivity, and draw attention to important information.
@@ -28,6 +28,16 @@ tabs: ['Library', 'Usage', 'Contribute']
 ![](images/github-icon.png)
 
  </ClickableTile>
+</Column>
+<Column offsetLg="4" colLg="4" colMd="4"  noGutterSm>
+  <ClickableTile
+    title="Get all icons via the IBM Design Language Kit"
+    href="sketch://add-library/cloud/75VZZ"
+    type="resource">
+
+![](images/sketch-icon.png)
+
+ </ClickableTile> 
 </Column>
 </Row>
 
@@ -143,13 +153,13 @@ Full installation details can be found in the Carbon icons [GitHub repo](https:/
 
 `carbon-icons` ships with two main SVG files:
 
-| Filename          | Description                                                                                             | Supported versions  |
-| ----------------- | ------------------------------------------------------------------------------------------------------- | ------------------- |
-| _carbon-icons.svg_  | Contains current icons (consolidated subset of legacy icons used in IBM Bluemix)                        | `3.x` & newer     |
-| _carbon-icons.json_ | JSON file created from carbon-icons.svg, used in [Carbon](/guidelines/iconography/library)              | `3.x` & newer     |
-| _carbon-icons.js_   | JS module created from carbon-icons.svg, used in `Icon` React Component in [carbon-components-react](#) | `3.x` & newer     |
-| _icons.json_       | legacy JSON file created from sprite.svg                                                                | `1.x`,`2.x`&`3.x` |
-| _legacy-icons.js_  | JS module created from sprite.svg                                                                       | `3.x` only          |
+| Filename            | Description                                                                                             | Supported versions |
+| ------------------- | ------------------------------------------------------------------------------------------------------- | ------------------ |
+| _carbon-icons.svg_  | Contains current icons (consolidated subset of legacy icons used in IBM Bluemix)                        | `3.x` & newer      |
+| _carbon-icons.json_ | JSON file created from carbon-icons.svg, used in [Carbon](/guidelines/iconography/library)              | `3.x` & newer      |
+| _carbon-icons.js_   | JS module created from carbon-icons.svg, used in `Icon` React Component in [carbon-components-react](#) | `3.x` & newer      |
+| _icons.json_        | legacy JSON file created from sprite.svg                                                                | `1.x`,`2.x`&`3.x`  |
+| _legacy-icons.js_   | JS module created from sprite.svg                                                                       | `3.x` only         |
 
 ### Accessibility
 
@@ -174,7 +184,6 @@ Make sure that you do not duplicate this `id`.
   <use xlink:href="/carbon-icons/dist/icon--add"></use>
 </svg>
 ```
-
 
 #### For more details on accessibility, see the following resources:
 
