@@ -892,7 +892,7 @@
   resolved "https://registry.yarnpkg.com/@carbon/colors/-/colors-10.3.0.tgz#99df98f141c6d3a237d72ac9b21ad58a07112348"
   integrity sha512-LI+ZINCwf7iKXtaE3BkTdRtHpSwOe5FJtLwWxkqdsy69X4nMDKPc41ZJOW/lYAemeN4EHvm+LL9GD66eQpcVQQ==
 
-"@carbon/elements@10.4.0":
+"@carbon/elements@10.4.1":
   version "10.4.0"
   resolved "https://registry.yarnpkg.com/@carbon/elements/-/elements-10.4.0.tgz#629a689543b911843c3f1109b3657e1e84d919c4"
   integrity sha512-vO2AozX069x+q/gRoYyOCnwwmoNuNgPeJORsrgM5FdWIziEKU2IjEnlKaIje3QGEbfjJM5ZbpQZ48aJRtmDS/g==
@@ -927,10 +927,10 @@
   resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.3.0.tgz#b0a772a7be9c10d5633cf78034c5c988ce998982"
   integrity sha512-vQegj82Y3hC17cA0g0bQUwYfcmhJD/3HyJVE/biyUXImTu82TcLrcRDTZoO9bOleEMEztMXTTDlMKTU9rrhRTw==
 
-"@carbon/icons-react@10.4.0":
-  version "10.4.0"
-  resolved "https://registry.yarnpkg.com/@carbon/icons-react/-/icons-react-10.4.0.tgz#a685612cfd9953ad0d7e314ddc9e416fe6b4b2a2"
-  integrity sha512-s022YGKZweLpoVX/M+Sdf7oLih2BEcycg/vQW8gJQAxkuTtigOhvmjd05PNshl41SxrYibju5lV/VGavU8HthQ==
+"@carbon/icons-react@10.4.1":
+  version "10.4.1"
+  resolved "https://registry.yarnpkg.com/@carbon/icons-react/-/icons-react-10.4.1.tgz#7107b9f41dd9014fed984c564be80c9e880cdb6c"
+  integrity sha512-QohbOWFj8zwA8y6tw7DgxZAM+W6jGZKtVnRzNxmYaHfI5R73vKL7fwVKX7zwwq51Gbxjg9JMUWixr4fSlCuy5w==
   dependencies:
     "@carbon/icon-helpers" "10.3.0"
 
@@ -4640,12 +4640,12 @@ capture-stack-trace@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/capture-stack-trace/-/capture-stack-trace-1.0.1.tgz#a6c0bbe1f38f3aa0b92238ecb6ff42c344d4135d"
 
-carbon-components-react@7.4.0:
-  version "7.4.0"
-  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-7.4.0.tgz#5d60e4ca52a8b2f4d334762f692f489992b3ee39"
-  integrity sha512-ZByA6F5H+LvPgRDDLJhD+5PTw58uW83rnx9MhoqYvuhECzR3g2IbhuhZYgVzaitaP6uPdWu700vYdpG6smJFAQ==
+carbon-components-react@7.4.1:
+  version "7.4.1"
+  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-7.4.1.tgz#f45ac03783c38f6c51fdf761fe51d0b00a6ad68a"
+  integrity sha512-Ty8uRLI4DjkJxsFLDC0jv7gF92Eg/fxgZsdizV0VLSFhlsux4ESOFxmkJ0VURb2Yt8HuVD8uEwXeOY5xroswFw==
   dependencies:
-    "@carbon/icons-react" "10.4.0"
+    "@carbon/icons-react" "10.4.1"
     classnames "2.2.6"
     downshift "^1.31.14"
     flatpickr "4.6.1"
@@ -4658,10 +4658,10 @@ carbon-components-react@7.4.0:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@10.4.0:
-  version "10.4.0"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-10.4.0.tgz#5a5667e9065f82608dbb6dffdde97120d5250e15"
-  integrity sha512-OPf3SuIlKCxA+fUhhSBR4xshihijsOoyjOX3E1XRzb37uXhi/ADoDCcQQJ7VIrTIazCfNKr3ps0BiYC39OuK2A==
+carbon-components@10.4.1:
+  version "10.4.1"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-10.4.1.tgz#e18bbf44be0bc30c9f74eb44a12531c06e227d17"
+  integrity sha512-TjRd69YceXbEBC/JgXmwd5PpV8G5BpeBixJpcLqsDKQROlJb5jzE/LjdzV4ktnqfKfJgcGrgV+qqTCNT/BM2xw==
   dependencies:
     carbon-icons "^7.0.7"
     flatpickr "4.6.1"
