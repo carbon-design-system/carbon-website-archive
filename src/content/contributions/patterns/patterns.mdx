@@ -18,7 +18,7 @@ We encourage you to surface work in progress. If you're not able to complete all
 
 ## Parts of a pattern contribution
 
-A complete contribution ultimately includes the following parts. 
+Here are all of the steps for a complete contribution. 
 
 #### 1. Provide a rationale
 
@@ -26,9 +26,7 @@ Explain how your component will address user needs and solve a problem. Carbon s
 
 #### 2. Explain behaviors, content structure, and functionality
 
-Provide a comprehensive description in which you: 
-
-* Describe pattern behaviors with descriptions, user flows, or prototypes. 
+* Describe pattern behaviors with descriptions, user flows, and/or prototypes. 
 * Use wireframes or sketches to explain the visual hierarchy of components. 
 * Show the content structure and content elements required, such as title, body, image, labels, video. 
 * Include details of how the pattern user experience meets standards for accessibility. 
@@ -36,11 +34,29 @@ Provide a comprehensive description in which you:
 
 #### 3. Create pattern visuals
 
-Create [high fidelity](https://github.com/carbon-design-system/carbon-website/wiki/Production-guidelines#creating-content-for-component-pages) contextual images that ease use in other products. Evaluate your pattern for [accessibility](/guidelines/accessibility/overview), and user test again.
+* Create high fidelity designs and prototypes that follow our [production guidelines](https://github.com/carbon-design-system/carbon-website/wiki/Production-guidelines). 
+* Evaluate your pattern to ensure it meets [accessibility standards and guidelines](/guidelines/accessibility/overview), and provide details of compliance.
 
-#### 4. Document the pattern
-Create site [documentation](./documentation) that includes your contextual images and step-by-step instructions to effectively implement your pattern. Be sure to include rationale your docs.
+#### 4. Create design specs
 
-#### 5. Prepare for experimental release
+* Create sizing and styling annotations for all of the pattern's components. The design specs should provide a developer with everything they need to create the design in code. Check out our [production guidelines](https://github.com/carbon-design-system/carbon-website/wiki/Production-guidelines#spec-guidelines) to get started.
+
+You should include color tokens and type tokens used.
+
+<ImageComponent caption="Example of a spec" cols="8">
+
+![Example of a spec](images/spec.png)
+
+</ImageComponent>
+
+#### 5. Create Sketch symbols
+* Any new patterns or changes to existing patterns will also live in the [Carbon Sketch kit](/getting-started/designers#get-the-kit) and so you will need to create Sketch symbols for components used. 
+* Check out [Sketch's guide](https://www.sketch.com/docs/symbols/creating-symbols/) for creating a symbol. 
+
+#### 6. Document the pattern
+* Document pattern guidelines and usage, being sure to include the context and the rationale for any choices. 
+* The site [documentation](./documentation) should include your contextual images and step-by-step instructions that allow designers to effectively implement your pattern. 
+
+#### 7. Prepare for experimental release
 If accepted, the pattern will be released as [Experimental](/experimental/about/overview) until community tested and approved for general production.
 
