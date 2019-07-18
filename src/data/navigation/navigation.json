@@ -19,19 +19,19 @@
       "overview": {
         "title": "Overview"
       },
-      "react-step-1": {
+      "step-1": {
         "title": "1. Installing Carbon"
       },
-      "react-step-2": {
+      "step-2": {
         "title": "2. Building pages"
       },
-      "react-step-3": {
+      "step-3": {
         "title": "3. Using APIs"
       },
-      "react-step-4": {
+      "step-4": {
         "title": "4. Creating components"
       },
-      "react-step-5": {
+      "step-5": {
         "title": "5. Deploying to IBM Cloud"
       },
       "wrapping-up": {
