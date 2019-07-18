@@ -1,5 +1,9 @@
 @import '../prefix';
 
+.#{$prefix}--side-nav__overlay {
+  display: none; //override to hide new overlay from Shell since website handles this on its own
+}
+
 .#{$prefix}--side-nav.#{$prefix}--side-nav--website--with-header-nav {
   width: 0;
   border-right-width: 0px;
