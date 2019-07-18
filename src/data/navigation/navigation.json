@@ -263,10 +263,10 @@
       "documentation": {
         "title": "Documentation"
       },
-      "components": {
+      "component": {
         "title": "Components"
       },
-      "patterns": {
+      "pattern": {
         "title": "Patterns"
       }
     }
