@@ -69,22 +69,6 @@ $ yarn serve
 
 You should see something similar to where the [previous step](/tutorial/step-1/vue) left off.
 
-<!-- ### IE11 polyfills
-
-Before we get started with this step, we'll be adding some components that require IE11 polyfills. As shown in the [Carbon Vue documentation](https://github.com/carbon-design-system/carbon/blob/master/packages/react/.storybook/polyfills.js), go ahead and add these imports to the top of the root `index.js`. They aren't all needed, but we'll add them all to play it safe for the duration of the tutorial.
-
-##### src/index.js
-
-```javascript
-import 'core-js/modules/es7.array.includes';
-import 'core-js/modules/es6.array.fill';
-import 'core-js/modules/es6.string.includes';
-import 'core-js/modules/es6.string.trim';
-import 'core-js/modules/es7.object.values';
-```
-
-_Note: You may be wondering where_ `core-js`_came from because it's not a Carbon package and we haven't explicitly installed it. Run_ `yarn why core-js` _and you'll see there are a number of packages that have brought it in as a dependency._ -->_
-
 ## Install grid
 
 In our last step we added our styles, component and icon packages. Now that we're building the pages with grid, we need to install one more Carbon package. Stop your development environment (`CTRL-C`) and:
