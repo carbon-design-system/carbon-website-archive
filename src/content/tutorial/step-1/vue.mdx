@@ -167,16 +167,16 @@ In the `src` directory, create the file `styles/\_carbon.scss`. Then in `App.vue
 #### src/App.vue
 
 <!-- prettier-ignore-start -->
-```html
+```scss
 <style lang="scss">
 @import "./styles/carbon";
 </style>
 ```
 <!-- prettier-ignore-end -->
 
-In `styles/\_carbon.scss`, import the Carbon styles by adding the following at the top of the file:
+In `styles/_carbon.scss`, import the Carbon styles by adding the following at the top of the file:
 
-##### src/\_carbon.scss
+##### src/styles/\_carbon.scss
 
 ```scss
 @import 'carbon-components/scss/globals/scss/styles';
@@ -199,9 +199,9 @@ Vue.use(CarbonComponentsVue);
 ```
 <!-- prettier-ignore-end -->
 
-This is a quick way to pull in all @carbon/vue components and register them for use in your project. Individual components can be imported to project or components.
+This is a quick way to pull in all @carbon/vue components and register them for use in your project. Individual components can be imported to a project or component.
 
-e.g Instead of modifying src/main.vue we could have added the following to src/App.vue
+e.g Instead of modifying src/main.js we could have added the following to src/App.vue
 
 ##### src/App.vue
 
@@ -217,7 +217,7 @@ export default {
 </script>
 ```
 
-See [here](https://github.com/carbon-design-system/carbon-components-vue/blob/master/packages/core/README.md#using-the-components-directly-or-individually) for other ways to load components from @carbon/vue.
+See [here](https://github.com/carbon-design-system/carbon-components-vue/blob/master/packages/core/README.md#using-the-components-directly-or-individually) for other ways to load components from @carbon/vue components.
 
 In this tutorial we will stick to importing all of the components at once so we can focus on our use of @carbon/vue.
 
@@ -227,9 +227,7 @@ Now open the `App.vue` component and replace:
 
 <!-- prettier-ignore-start -->
 ```html
-<div>
   Hello Carbon! Well, not quite yet. This is the starting point for the Carbon tutorial.
-</div>
 ```
 <!-- prettier-ignore-end -->
 
@@ -274,11 +272,58 @@ import TutorialHeader from './TutorialHeader';
 export default TutorialHeader;
 ```
 
-\_Note: This index.js files import/export is simply a convenience to shorten the path used to import the component and potentially import multiple components from one folder. The folder also provides us a handy location to add tests or documentation for the component.
+_Note: This index.js files import/export is simply a convenience to shorten the path used to import the component and potentially import multiple components from one folder. The folder also provides us a handy location to add tests or documentation for the component._
 
-\_Note: We could have simply created a file src/components/TutorialHeader.vue without the above benefits.
+_Note: We could have simply created a file src/components/TutorialHeader.vue without the above benefits._
 
-Next we'll make use of our Carbon UI Shell components in `TutorialHeader.vue`. Set up the file like so:
+#### Lazyness - VSCode users only
+
+Now as a lazy programmer I like to take short cuts in my day, you should too. If you are using VSCode then you might want to add the following snippet which will when you type 'index' generate an index file for you based on the folder name.
+
+##### javascript.json
+
+```json
+  "index-file": {
+    "prefix": "index",
+    "body": [
+      "import ${TM_DIRECTORY/.*[\\/]//gm} from './${TM_DIRECTORY/.*[\\/]//gm}';",
+      "export { ",
+      "\t${TM_DIRECTORY/.*[\\/]//gm},",
+      "};",
+      "export default ${TM_DIRECTORY/.*[\\/]//gm}",
+      ""
+    ],
+    "description": "Index file"
+  }
+```
+
+I also use the following to create a skeleton component of the form I typically use. To use this one start typing the word teamplate in your template file and it will generate a file maiking assumptions based on the compoent file name.
+
+##### vue.json
+
+```json
+  "Vue_Component": {
+    "prefix": "template",
+    "body": [
+      "<template>",
+      "\t$0",
+      "</template>",
+      "",
+      "<script>",
+      "export default {",
+      "\tname: '${TM_FILENAME/[\\.]vue//}'",
+      "};",
+      "</script>",
+      "",
+      "<style lang=\"scss\">",
+      "</style>",
+      ""
+    ],
+    "description": "Single file template"
+  }
+```
+
+OK, back to using Carbon components. Let's make use of our Carbon UI Shell components in `TutorialHeader.vue`. Set up the file like so:
 
 ##### src/components/TutorialHeader/TutorialHeader.vue
 
@@ -327,7 +372,7 @@ export default {
 ```
 <!-- prettier-ignore-end -->
 
-\_Note: We've given our component a name here as part of the default export. This is optional in Vue but very useful in the [Vue developer tools](https://github.com/vuejs/vue-devtools).
+_Note: We've given our component a name here as part of the default export. This is optional in Vue but very useful in the [Vue developer tools](https://github.com/vuejs/vue-devtools)._
 
 Then we need to add contnet to the 'header-global' slot where we will use our icons. These represent actions in the header a user can make. Replace:
 
@@ -374,7 +419,9 @@ export default {
 </script>
 ```
 
-Our template currently just contains a `Button`. Let's update that to include our imported components. This should look like the following:
+In addition to importing the `TutorialHeader` component we have also declared it for use in our template by adding it to the `components` property of our component.
+
+As our template currently just contains a `Button` it is still not rendering anything more interesting so let's update that to include our imported components. This should look like the following:
 
 ##### src/App.vue
 
@@ -391,6 +438,8 @@ Our template currently just contains a `Button`. Let's update that to include ou
 
 You should now see a styled UI Shell header and a button below it.
 
+_Note: We've also sneaked in use of `CvContent` which needs to follow `CvHeader` to ensure the correct formatting. We could have included it as part of a shell component with TutorialHeader but have chosen not to in this case._
+
 ## Create pages
 
 Next thing we need to do is create the files for our views.
@@ -403,7 +452,7 @@ src/views
 └── RepoPage
 ```
 
-\_Note: We could adopt the same folder + index.js layout we did for the TutorialHeader component. However as our views only consist of a single component we'll proceed with the simpler structure above.
+_Note: We could adopt the same folder + index.js layout we did for the TutorialHeader component. However as our views only consist of a single component we'll proceed with the simpler structure above._
 
 Create the following files in the `LandingPage` folder:
 
@@ -467,21 +516,13 @@ Awesome! We've just created our content pages. Next thing we need to do is rende
 
 ## Add routing
 
-OK. So as part of the Vue CLI project set up we added vue-router. This created the views folder and also added, `src/router.js` and imported that into `src/main.js` for us.
+If you click on `Repositories` and then on `IBM Carbon Tutorial` you'll notice a flicker as we hop from one page to another. We can fix this by using vue-router to manage our views.
+
+Lucky for you, as part of the Vue CLI project set up we added vue-router. This created the views folder and also added, `src/router.js` and imported that into `src/main.js` for us.
 
 #### src/router.js
 
-First in `src/router.js` we replace the reference to home and about as follows:
-
-- `Home.vue` with `LandingPage`
-- `Home` with `LandingPage`
-- `home` with `landing-page`
-- `About.vue` with `RepoPage`
-- `About` with `RepoPage`
-- `/about` with `repos`
-- `about` with `repo-page`
-
-This should give you a file that looks like the following:
+First let's replae the contents of `src/router.js` with:
 
 ```javascript
 import Vue from 'vue';
@@ -509,6 +550,8 @@ export default new Router({
   ],
 });
 ```
+
+_Note: The landing page is loaded immediately, with the RepoPage lazy loaded. This is one simple way to create webpackChunks and is the default suggestion from the CLI plugin for vue-router._
 
 Next we need to update `src/App.vue` to render these views.
 
