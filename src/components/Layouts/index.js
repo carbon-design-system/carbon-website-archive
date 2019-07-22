@@ -383,7 +383,7 @@ class Layout extends React.Component {
               <WebsiteFooter
                 logoOffset={true}
                 linksCol1={[
-                  { href: '/contributing/designers', linkText: 'Contribute' },
+                  { href: '/contributions/overview', linkText: 'Contribute' },
                   { href: 'https://www.ibm.com/privacy', linkText: 'Privacy' },
                   {
                     href: 'https://www.ibm.com/legal',
