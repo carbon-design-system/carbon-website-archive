@@ -89,9 +89,9 @@ $ vue add apollo
 
 At the following prompts answer 'No' to each of the questions.
 
-? Add example code No
-? Add a GraphQL API Server? No
-? Configure Apollo Engine? No
+- Add example code? No
+- Add a GraphQL API Server? No
+- Configure Apollo Engine? No
 
 ## Create access token
 
@@ -115,9 +115,9 @@ Go ahead and start your app with `yarn serve`, or, if your app is running, you'l
 
 ## Connect to Apollo
 
-The `vue-apollo` library gives us a component that we need to put at the base of our application. Typically the best place for things that need to wrap the entire application is at the root of the application. For us, that's at `src/main.js`.
+The `vue-apollo` plugin has made a number of changes to our project.
 
-If you open `src/main.js` you will see that the CLI has updated this file as follows:.
+If you open `src/main.js` you will see that the CLI has updated this file with the following:.
 
 ##### src/main.js
 
@@ -139,7 +139,7 @@ Update the following values:
 
 ```javascript
 // Use our access token
-AUTH_TOKEN = process.env.VUE_APP_GITHUB_PERSONAL_ACCESS_TOKEN;
+const AUTH_TOKEN = process.env.VUE_APP_GITHUB_PERSONAL_ACCESS_TOKEN;
 
 // Target github api
 const httpEndpoint =
@@ -160,7 +160,7 @@ const defaultOptions = {
 
 Add the following imports to the top of the script section of `RepoPage.vue`:
 
-##### src/content/RepoPage/RepoTable.vue
+##### src/content/RepoPage/RepoPage.vue
 
 ```javascript
 import gql from 'graphql-tag';
@@ -175,8 +175,6 @@ You can use GitHub's [explorer](https://developer.github.com/v4/explorer/) tool 
 If you'd like some more information regarding writing queries and using the Query component, we recommend [Apollo's documentation](https://www.apollographql.com/docs/tutorial/queries) on this topic.
 
 Add this after your imports:
-
-Replace the rows constant with this query in the script section.
 
 ##### src/content/RepoPage/RepoPage.vue
 
@@ -216,8 +214,6 @@ const REPO_QUERY = gql`
 `;
 ```
 
-We should have our table headers set in a previous step that are good to go.
-
 Next let's we need to configure apollo in our component script, adding the following after the data() declaration.
 
 ##### src/content/RepoPage/RepoPage.vue
@@ -244,7 +240,7 @@ Revert this last change and continue.
 
 This data is not quite in the format our RepoTable component is expecting so we'll use a computed property to transform it. Computed properties in Vue cache and watch their reactive dependencies for us.
 
-Remove 'rows' from the data declaration and add this computed property.
+Remove 'rows' constant and the data declaration and add this computed property.
 
 ##### src/content/RepoPage/RepoPage.vue
 
@@ -327,7 +323,7 @@ At the top of the script section import the link list component:
 import LinkList from './LinkList';
 ```
 
-And below the name of the component added
+And below the name of the component add:
 
 ##### src/content/RepoPage/RepoTable.vue
 
@@ -381,9 +377,9 @@ Next we'll update our row description, update the computed property data() in `R
 
 Check the output again and you should find the descriptions are updated.
 
-After this many refreshes you may have noticed a slight delay in the data loading. As outlined in the (documentation)[https://vue-apollo.netlify.com/guide/apollo/#apollo] all components contained under one with an apolloProvider have a \$apollo attribute. As we added the apolloProvider to our app when creating the Vue instance it is available to us everywhere.
+After this many refreshes you may have noticed a slight delay in the data loading. As outlined in the [documentation](https://vue-apollo.netlify.com/guide/apollo/#apollo) all components contained under one with an apolloProvider have a `$apollo` attribute. As we added the apolloProvider to our app when creating the Vue instance it is available to us everywhere.
 
-We can use the property to react to (loading state)[https://vue-apollo.netlify.com/guide/apollo/queries.html#loading-state].
+We can use the property to react to [loading state](https://vue-apollo.netlify.com/guide/apollo/queries.html#loading-state).
 
 First lets demonstrate that this works.
 
@@ -392,7 +388,13 @@ First lets demonstrate that this works.
 Pass the loading state into our RepoTable component by updating the template with the following.
 
 ```html
-<repo-table :headers="headers" :rows="rows" :loading="$apollo.loading" />
+<repo-table
+  :headers="headers"
+  :rows="rows"
+  title="Carbon Repositories"
+  helperText="A collection of public Carbon repositories."
+  :loading="$apollo.loading"
+/>
 ```
 
 Next add this property to the `RepoTable` component
@@ -452,7 +454,7 @@ We need to tell the loading skeleton how many rows to render, so let's use 10 sk
 
 Pagination! Instead of rendering every repository, let's add pagination to the data table to only render 10 at a time. Depending on your specific requirements, you may need to fetch new data each time that you interact with the pagination component, but for simplicity, we're going to make one request to fetch all data, and then paginate the in-memory row data.
 
-Let's start by adjusting our `PageTable' component template to add pagination. If you review the (storybook notes)[http://vue.carbondesignsystem.com/?path=/info/components-cvdatatable--default] you'll see that pagination is added to the data table by supplying a pagination object and listening for pagination events as follows.
+Let's start by adjusting our `PageTable' component template to add pagination. If you review the [storybook notes](http://vue.carbondesignsystem.com/?path=/info/components-cvdatatable--default) you'll see that pagination is added to the data table by supplying a pagination object and listening for pagination events as follows.
 
 ##### src/content/RepoPage/RepoTable.vue
 
@@ -477,15 +479,27 @@ In the pagination event we've used $emit and $event to re-raise the pagination e
 We also need to add the `totalRows` property used in the data tables pagination property.
 
 ```javascript
-totalRows: Number;
+totalRows: Number,
 ```
 
 Next to our `RepoPage` component, let's first update our template by updating our `RepoTable` use with the following attributes.
 
 ##### src/content/RepoPage/RepoPage.vue
 
+<!-- prettier-ignore-start -->
 ```html
-:rows="pagedRows" :totalRows="rows.length" @pagination="onPagination"
+:rows="pagedRows"
+:totalRows="rows.length"
+@pagination="onPagination"
+```
+<!-- prettier-ignore-end -->
+
+replacing
+
+##### src/content/RepoPage/RepoPage.vue
+
+```html
+:rows="rows"
 ```
 
 Next in the data property of our component add the following to support our pagination.
@@ -505,20 +519,20 @@ Then before we can see our paginated table we need to add; a pagedRows computed 
 ##### src/content/RepoPage/RepoPage.vue
 
 ```javascript
-computed: {
-  // other computed properties
-  // ...
-  pagedData() {
-    return this.data.slice(this.pageStart, this.pageStart + this.pageSize);
+  computed: {
+    // other computed properties
+    // ...
+    pagedRows() {
+      return this.rows.slice(this.pageStart, this.pageStart + this.pageSize);
+    }
+  },
+  methods: {
+    onPagination(val) {
+      this.pageSize = val.length;
+      this.pageStart = val.start;
+      this.page = val.page;
+    }
   }
-},
-methods: {
-  onPagination(val) {
-    this.pageSize = val.length;
-    this.pageStart = val.start;
-    this.page = val.page;
-  }
-};
 ```
 
 _Note: Like the other Carbon Vue components,_ `Pagination` _component examples can be found in [Storybook](http://vue.carbondesignsystem.com/?path=/story/components-cvpagination--default) by browsing the story and knobs._
