@@ -2,7 +2,7 @@ require('dotenv').config();
 
 const path = require('path');
 
-const { PATH_PREFIX = '/' } = process.env;
+const { PATH_PREFIX = '/carbon-website/' } = process.env;
 
 module.exports = {
   pathPrefix: PATH_PREFIX,

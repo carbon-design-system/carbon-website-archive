@@ -154,7 +154,7 @@ We can now add our component to the first row, along with a header, like so:
 ```html
 <div className="bx--row landing-page__banner">
   <div class="bx--col-lg-16">
-    <cv-breadcrumb noTrailingSlash aria-label="Page navigation">
+    <cv-breadcrumb noTrailingSlash>
       <cv-breadcrumb-item>
         <cv-link href="/">Getting started</cv-link>
       </cv-breadcrumb-item>
@@ -262,10 +262,10 @@ Next, we'll need to add a styling override to move the tabs to the right on larg
 
 Then in `LandingPage.vue` add a style section with this import.
 
-##### src/content/LandingPage/\LandingPage.vue
+##### src/content/LandingPage/LandingPage.vue
 
 <!-- prettier-ignore-start -->
-````html
+```html
 <style lang="scss">
 @import "./carbon-overrides";
 </style>
@@ -275,7 +275,7 @@ Then in `LandingPage.vue` add a style section with this import.
 _Note: We don't have to include this in a separate file, but it's nice to keep overrides separate from your_
 application's styling so when migrating to future Carbon versions and if there are breaking changes via different class
 names, you have a consolidated list of styling declaration blocks to review._ We can now add our images and text for
-each column in the first `CvTab` in `LandingPage.vue`.
+each column in the first `CvTab` in `LandingPage.vue`._
 
 ##### src/content/LandingPage/LandingPage.vue
 
@@ -305,7 +305,7 @@ each column in the first `CvTab` in `LandingPage.vue`.
     </div>
   </div>
 </cv-tab>
-````
+```
 
 <!-- prettier-ignore-end -->
 
@@ -365,13 +365,13 @@ _Pro tip:_ `CTRL-G` _toggles the grid in Sketch._
 
 Back to `LandingPage.vue`, we need to add space above the breadcrumb and below the heading. For that, add:
 
-##### src/content/LandingPage/\LandingPage.vue
+##### src/content/LandingPage/LandingPage.vue
 
 ```scss
 @import '../../styles/carbon-utils';
 ```
 
-and
+with the other imports and
 
 ```scss
 .landing-page__banner {
@@ -406,18 +406,19 @@ Add the following in `_mixins.scss`. Per the design we need to use Gray 10 for o
 }
 ```
 
-After you have created `_mixins.scss`, import it at the **top** of `LandingPage.vue`. By now you should have two imports:
+After you have created `_mixins.scss`, import it at the **top** of `LandingPage.vue`. By now you should have three imports:
 
-##### src/content/LandingPage/\LandingPage.vue
+##### src/content/LandingPage/LandingPage.vue
 
 ```scss
-@import './mixins.scss';
-@import './overrides.scss';
+@import '../../styles/carbon-utils';
+@import './carbon-overrides';
+@import './mixins';
 ```
 
 Now to use the new mixin, update the `.landing-page__banner` declaration block to:
 
-##### src/content/LandingPage/\LandingPage.vue
+##### src/content/LandingPage/LandingPage.vue
 
 ```scss
 .landing-page__banner {
@@ -437,11 +438,9 @@ Next, we can see that the `h1` is using the `heading-05` type token.
 
 The Sketch symbol naming is consistent with the development Sass tokens to help translate design to development. So, looking up the [type token](https://www.carbondesignsystem.com/guidelines/typography/productive), we know to use `productive-heading-05`:
 
-##### src/content/LandingPage/\LandingPage.vue
+##### src/content/LandingPage/LandingPage.vue
 
 ```scss
-@import '../../styles/carbon-utils';
-
 .landing-page__heading {
   @include carbon--type-style('productive-heading-05');
 }
@@ -451,7 +450,7 @@ The Sketch symbol naming is consistent with the development Sass tokens to help 
 
 For our second row, we need to fix the tabs vertical positioning to match the design. By inspecting the tabs component, you can see that the tab height computes to `40px`. We can use that to create our negative top margin in rem units.
 
-##### src/content/LandingPage/\LandingPage.vue
+##### src/content/LandingPage/LandingPage.vue
 
 ```scss
 .landing-page__r2 {
@@ -469,7 +468,7 @@ We also need to adust our vertical spacing and type treatment. Like before, it's
 
 _Note: You may be wondering why there are vertical gaps between the type and spacers. Each type token has a line height that's suited for its font size. The vertical spacers adjacently touch the line height boundaries and not the baseline, for consistency as well as development ease so_ `margins` _and_ `paddings` _don't need to offset line heights._
 
-##### src/content/LandingPage/\LandingPage.vue
+##### src/content/LandingPage/LandingPage.vue
 
 ```scss
 .landing-page__tab-content {
@@ -503,7 +502,7 @@ _Note: You may be wondering why there are vertical gaps between the type and spa
 
 Let's also add some styles for the last row, even though that will get used later in the tutorial. You'll notice that we get to re-use the `landing-page-background` mixin that we just created.
 
-##### src/content/LandingPage/\LandingPage.vue
+##### src/content/LandingPage/LandingPage.vue
 
 ```scss
 .landing-page__r3 {
@@ -539,17 +538,23 @@ We currently have `RepoPage.vue` that just contains a grid and placeholder conte
 
 ### Build data table
 
-First, let's pretend we've already built out table component and update `RepoPage.vue`
+First, let's pretend we've already built out table component and update `RepoPage.vue` with a script section.
 
 Import `RepoTable` in `RepoPage.vue`.
 
 ##### src/content/RepoPage/RepoPage.vue
 
 ```javascript
-import RepoTable from './RepoTable';
+<script>
+import RepoTable from "./RepoTable";
+
+export default {
+  name: "RepoPage"
+};
+</script>
 ```
 
-Then below the imports, include the following arrays to pass into the `RepoTable` component. We'll be setting the `rows` array from an API in the next tutorial step, but for now, static example rows will suffice.
+Then below the import, include the following arrays to pass into the `RepoTable` component. We'll be setting the `rows` array from an API in the next tutorial step, but for now, static example rows will suffice.
 
 ##### src/content/RepoPage/RepoPage.vue
 
@@ -629,13 +634,15 @@ export default {
 };
 ```
 
+Here we used the data method of the component as the values logically are data in our component.
+
 Lastly in the `RepoPage.vue` template, we need to simply replace `Data table will go here` with:
 
 ##### src/content/RepoPage/RepoPage.vue
 
 <!-- prettier-ignore-start -->
 ```html
-<RepoTable
+<repo-table
   :headers="headers"
   :rows="rows"
   title="Carbon Repositories"
@@ -644,7 +651,7 @@ Lastly in the `RepoPage.vue` template, we need to simply replace `Data table wil
 ```
 <!-- prettier-ignore-end -->
 
-OK. So now our `RepoPage.vue` component is ready to use a component called 'RepoTable' so let's created it so our page displays again.
+OK. So now our `RepoPage.vue` component is ready to use a component called 'RepoTable' so let's create it so our page displays again.
 
 First create a script section as follows:
 
@@ -680,9 +687,13 @@ export default {
 };
 ```
 
-_Note: Computed properties are used to transform headers and rows into a format convenient for rendering with the CvDataTable components._
+In this component script we:
 
-Then, let's create the `RepoTable` template starting with the cv-data-table component.
+- Named our new component `RepoTable`.
+- A dded component properties for the headers and rows as well as two further properties title and helperText.
+- Added the computed properties columns and headers which transform headers and rows into a format convenient for rendering with the CvDataTable components.
+
+Next, let's create the `RepoTable` template starting with the cv-data-table component.
 
 ##### src/content/RepoPage/RepoTable.vue
 
@@ -696,10 +707,11 @@ Here we pass in the columns, title and helper text. If you view this you will se
 Next add the rows inside of cv-data-table.
 
 <!-- prettier-ignore-start -->
-````html
+```html
 <template slot="data">
   <cv-data-table-row v-for="(row, rowIndex) in data" :key="`${rowIndex}`"> </cv-data-table-row>
 </template>
+```
 <!-- prettier-ignore-end -->
 
 Here we use v-for to iterate through the data assigning a key and value to each row. The rendered output may not appear
@@ -713,7 +725,7 @@ data inside the `cv-data-table-row` component.
   :key="`${cellIndex}`"
   >{{cell}}</cv-data-table-cell
 >
-````
+```
 <!-- prettier-ignore-end -->
 
 Again we've used the v-for directive to iterate through our data adding key, value and the contents of the cell.
@@ -730,7 +742,7 @@ The last item we need to add is the description shown in the expanded content. A
 
 Now you should have a working page rendering the sample content from the rows array.
 
-This component consumes our properties and returns a Carbon `CvDataTable`. As for where the various `Table*` components came from? The [CvDataTable story](http://vue.carbondesignsystem.com/?path=/story/components-cvdatatable--default) in Storybook was used to put together the data table structure.
+This component consumes our properties and returns a Carbon `CvDataTable`. As for where the various `CvDataTable*` components came from? The [CvDataTable story](http://vue.carbondesignsystem.com/?path=/story/components-cvdatatable--default) in Storybook was used to put together the data table structure.
 
 ## Style repo page
 

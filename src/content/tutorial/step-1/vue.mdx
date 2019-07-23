@@ -11,7 +11,7 @@ tabs: ['React', 'Vue']
 - [Fork, clone and branch](#fork-clone-and-branch)
 - [Build and start](#build-and-start)
 - [Install Carbon](#install-carbon)
-- [Install and build Sass](#install-and-build-sass)
+- [Other dependencies](#other-dependencies)
 - [Add UI Shell](#add-ui-shell)
 - [Create pages](#create-pages)
 - [Add routing](#add-routing)
@@ -162,7 +162,7 @@ The app looks as it did before. Next, let's add Carbon styling.
 
 ### Import carbon-component styles
 
-In the `src` directory, create the file `styles/\_carbon.scss`. Then in `App.vue` edit the style tag to import it.
+In the `src` directory, create the file `styles/_carbon.scss`. Then in `App.vue` edit the style tag to import it.
 
 #### src/App.vue
 
@@ -336,7 +336,7 @@ OK, back to using Carbon components. Let's make use of our Carbon UI Shell compo
 
     <cv-header-name href="/" prefix="IBM">Carbon Tutorial</cv-header-name>
 
-    <cv-header-nav aria-label="Carbon tutorial nav">
+    <cv-header-nav>
       <cv-header-menu-item href="/repos">Repositories</cv-header-menu-item>
     </cv-header-nav>
 
@@ -389,13 +389,13 @@ With:
 ```html
 <template slot="header-global">
   <cv-header-global-action aria-label="Notifications">
-    <Notification20 />
+    <notification-20 />
   </cv-header-global-action>
   <cv-header-global-action aria-label="User avatar">
-    <UserAvatar20 />
+    <user-avatar-20 />
   </cv-header-global-action>
   <cv-header-global-action aria-label="App switcher">
-    <AppSwitcher20 />
+    <app-switcher-20 />
   </cv-header-global-action>
 </template>
 ```
