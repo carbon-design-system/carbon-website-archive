@@ -83,25 +83,28 @@ Here's what we're building – an informational section that has a heading and t
 
 ## Create components
 
-First we need files for the components, so create an `Info` folder in `src/components`. Even though we're building multiple components, their names all start with `Info`, so it makes sense to have them share one folder in components. Create these files:
+First we need files for the components, so create an `InfoSection` folder in `src/components`. Even though we're building multiple components, their names all start with `InfoSection`, so it makes sense to have them share one folder in components. Create these files:
 
 ### Add files
 
 ```bash
-src/components/Info
+src/components/InfoSection
 ├──index.js
-└──Info.vue
+└──InfoCard.vue
+└──InfoSection.vue
 ```
 
 Like our other components, `index.js` will serve as an entrypoint.
 
-##### src/components/Info/index.js
+_Note: To adhere to the [Vue style guide](https://vuejs.org/v2/style-guide/) we have used multi word component names. This style guide stipulation is why all `@carbon/vue` components have a `cv` prefix._
+
+##### src/components/InfoSection/index.js
 
 ```javascript
-import Info from './Info';
+import InfoSection from './InfoSection';
 import InfoCard from './InfoCard';
 
-export { Info, InfoCard };
+export { InfoSection, InfoCard };
 ```
 
 ### InfoSection component
@@ -133,7 +136,7 @@ We'll also:
 
 Using `props` we can render any heading and any number of children components (`InfoCard` that we'll build soon.)
 
-##### src/components/Info/Info.vue
+##### src/components/InfoSection/InfoSection.vue
 
 ```html
 <template>
@@ -143,30 +146,32 @@ Using `props` we can render any heading and any number of children components (`
     </div>
     <slot />
   </section>
-</template
+</template>
 ```
 
 Then name our component and add a property to the script section.
 
-##### src/components/Info/Info.vue
+##### src/components/InfoSection/InfoSection.vue
 
 ```javascript
 <script>
 export default {
-  name: "Info",
+  name: "InfoSection",
   props: {
     heading: String
   }
 };
-</script
+</script>
 ```
 
 At this point let's add styling for the new class names that we just added.
 
-##### src/components/Info/info.vue
+##### src/components/InfoSection/InfoSection.vue
 
 ```scss
 <style lang="scss">
+import "../../styles/_carbon-utils";
+
 .info-section__heading {
   @include carbon--type-style('heading-01');
 }
@@ -177,7 +182,7 @@ At this point let's add styling for the new class names that we just added.
 
 Next up we're going to build a component for columns 2 - 4, which currently looks like `<div className="bx--col-md-4 bx--col-lg-4">Carbon is Open</div>`. Create a new file InfoCard.vue, add:
 
-##### src/components/Info/InfoCard.vue
+##### src/components/InfoSection/InfoCard.vue
 
 ```html
 <template>
@@ -219,17 +224,17 @@ _Note: At extra large viewports, we are using _`bx--col-xlg-3 bx--offset-xlg-1`_
 
 ## Use components
 
-Nothing is styled yet, but with our components built let's put them to use. In `LandingPage.vue`, import the components towards the top of the script section.
+Our styling is not complete yet, but with our components built let's put them to use. In `LandingPage.vue`, import the components towards the top of the script section. If you havent added a script section, do so now.
 
 ##### src/content/LandingPage/LandingPage.vue
 
 ```javascript
 <script>
-import { InfoSection, InfoCard } from '../../components/Info';
+import { InfoSection, InfoCard } from '../../components/InfoSection';
 
 export default {
   name: 'LandingPage',
-  components: { InfoSection, InfoCard };
+  components: { InfoSection, InfoCard }
 };
 </script>
 ```
@@ -246,9 +251,9 @@ import Application32 from '@carbon/icons-vue/lib/application/32';
 
 _Note: You'll notice that these 32px icons aren't the pictograms as designed. The Carbon team is currently working on adding pictograms to the icons packages. Until then, we'll use the biggest SVGs._
 
-Don't forget to add the icons to the list of components used in our template. Wait a minute, are they being used by our template? Well yes and no. The components are being passed as an attribute rather than being used as a dom element. Vue treats this use case differently and instead of adding to the components property we need to assign the icons directly to the 'this' object. We can achieve this in a number of different ways, the following is my preferred method.
+Don't forget to add the icons to the list of components used in our template. Wait a minute, are they being used by our template? Well yes and no. The components are going to be passed as an attribute rather than being used as a dom element. Vue treats this use case differently and instead of adding to the components property we need to assign the icons directly to the 'this' object. We can achieve this in a number of different ways, for example as data or computed propeties. The following is my preferred method when reactivity is not needed.
 
-In the script section of the component use the lifecycle method `created()` to add the icons to the component.
+In the script section of the component add the lifecycle method `created()` to add the icons to the component.
 
 ##### src/content/LandingPage/LandingPage.vue
 
@@ -284,8 +289,8 @@ With the new components:
 
 <!-- prettier-ignore-start -->
 ```html
-<InfoSection heading="The Principles" class="landing-page__r3">
-</InfoSection>
+<info-section heading="The Principles" class="landing-page__r3">
+</info-section>
 ```
 <!-- prettier-ignore-end -->
 
@@ -295,23 +300,23 @@ Then slot the `InfoCard` content inside the `InfoSection` tag to give.
 
 <!-- prettier-ignore-start -->
 ```html
-<InfoSection heading="The Principles" class="landing-page__r3">
-  <InfoCard
+<info-section heading="The Principles" class="landing-page__r3">
+  <info-card
     heading="Carbon is Open"
     body="It's a distributed effort, guided by the principles of the open-source movement. Carbon's users are also it's makers, and everyone is encouraged to contribute."
     :icon="PersonFavorite32"
   />
-  <InfoCard
+  <info-card
     heading="Carbon is Modular"
     body="Carbon's modularity ensures maximum flexibility in execution. It's components are designed to work seamlessly with each other, in whichever combination suits the needs of the user."
     :icon="Application32"
   />
-  <InfoCard
+  <info-card
     heading="Carbon is Consistent"
     body="Based on the comprehensive IBM Design Language, every element and component of Carbon was designed from the ground up to work elegantly together to ensure consistent, cohesive user experiences."
     :icon="Globe32"
   />
-</InfoSection>
+</info-section>
 ```
 <!-- prettier-ignore-end -->
 
@@ -329,9 +334,9 @@ Here's our design showing the spacing tokens that we need to add. We also need t
 
 ### Layout
 
-Starting with layout, add the style section to `src/components/Info/InfoCard.vue`.
+Starting with layout, add the style section to `src/components/InfoSection/InfoCard.vue`.
 
-##### src/components/Info/InfoCard.vue
+##### src/components/InfoSection/InfoCard.vue
 
 ```scss
 <style lang="scss">
@@ -380,7 +385,7 @@ Once you save, go ahead and resize your browser to see the responsive layout at 
 
 Our `InfoCard` headings look to be too small. We need to increase their font sizes according to the design spec with:
 
-##### src/components/Info/InfoCard.vue
+##### src/components/InfoSection/InfoCard.vue
 
 ```scss
 .info-card__heading {
@@ -390,7 +395,7 @@ Our `InfoCard` headings look to be too small. We need to increase their font siz
 
 Also, the design has the last word in each subheading as bold. To accomplish that, add this computed property to `InfoCard.vue`.
 
-##### src/components/Info/InfoSection.vue
+##### src/components/InfoSection/InfoCard.vue
 
 ```javascript
 computed: {
@@ -405,7 +410,7 @@ computed: {
 
 Then, update `InfoCard.vue` to use `splitHeading`.
 
-##### src/components/Info/InfoCard.vue
+##### src/components/InfoSection/InfoCard.vue
 
 Replacing
 
@@ -417,7 +422,7 @@ Replacing
 
 with
 
-##### src/components/Info/InfoCard.vue
+##### src/components/InfoSection/InfoCard.vue
 
 ```html
 <h4 class="info-card__heading">
@@ -428,7 +433,7 @@ with
 
 Finally, add the following declaration block in the style section of `InfoCard.vue` to set body copy styles and to bottom-align the icons.
 
-##### src/components/Info/_info.scss
+##### src/components/InfoSection/InfoCard.vue
 
 ```scss
 .info-card__body {
