@@ -15,7 +15,6 @@ public/*
 .idea
 .vscode
 .vscode/launch.json
-.env.local
 
 # Coverage directory used by tools like Istanbul
 coverage
