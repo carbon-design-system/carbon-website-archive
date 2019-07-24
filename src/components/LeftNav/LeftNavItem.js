@@ -63,10 +63,20 @@ export default class LeftNavItem extends React.Component {
       // children with similar names but disimilar parents.
       const isNavItemActive = locationContainsPath(location, [itemSlug, item]);
 
+      let framework = '';
+      if (itemSlug === 'tutorial') {
+        const checkFramework = location.href.match(
+          /\/tutorial\/[a-zA-Z0-9-_]+\/([a-zA-Z0-9-_]*)/
+        );
+        if (checkFramework && checkFramework[1]) {
+          framework = `/${checkFramework[1]}`;
+        }
+      }
+
       const navItemProps = {
         href: 'javascript:void(0)',
         element: Link,
-        to: `/${this.props.itemSlug}/${item}`,
+        to: `/${this.props.itemSlug}/${item}${framework}`,
         key: item,
       };
 
