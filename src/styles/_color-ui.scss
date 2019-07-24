@@ -1,0 +1,78 @@
+//---------------------------------------
+// Color UI
+//---------------------------------------
+.bx--caption {
+  @include carbon--type-style('body-short-01');
+  padding-top: $spacing-03;
+  margin-bottom: $spacing-06;
+  padding-left: $spacing-05;
+}
+
+.bx--aspect-ratio--image {
+  background: $carbon--white-0;
+}
+
+.bx--aspect-ratio--image .gatsby-resp-image-wrapper {
+  margin: 1rem !important;
+}
+
+.color-blocks {
+  @include carbon--breakpoint('sm') {
+    margin-left: 0;
+  }
+
+  @include carbon--breakpoint('md') {
+    margin-left: -1rem;
+  }
+}
+
+.color-blocks .bx--col-lg-2 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.color-blocks .bx--col-lg-2:nth-child(2) {
+  margin-right: 40%;
+
+  @include carbon--breakpoint('md') {
+    margin-right: 0;
+  }
+}
+
+.color-blocks .bx--col-lg-2:nth-child(3) {
+  @include carbon--breakpoint('md') {
+    margin-left: $spacing-07;
+  }
+}
+
+.color-square {
+  padding: $spacing-05;
+}
+
+.color-square--white {
+  background: $carbon--white-0;
+}
+
+.color-square--gray-10 {
+  background: $carbon--gray-10;
+  outline: 1px solid $carbon--gray-30;
+  outline-offset: -1px;
+}
+
+.color-square--gray-100 {
+  background: $carbon--gray-100;
+}
+
+.color-square--gray-90 {
+  background: $carbon--gray-90;
+}
+
+.color-square--gray-80 {
+  background: $carbon--gray-80;
+}
+
+.color-square--gray-100,
+.color-square--gray-90,
+.color-square--gray-80 {
+  color: $carbon--white-0;
+}

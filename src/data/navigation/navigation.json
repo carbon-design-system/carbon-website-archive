@@ -254,20 +254,23 @@
   "resources": {
     "title": "Resources"
   },
-  "contributing": {
-    "title": "Contributing",
+  "contributions": {
+    "title": "Contributions",
     "sub-nav": {
-      "governance": {
-        "title": "Governance"
+      "overview": {
+        "title": "Overview"
       },
-      "designers": {
-        "title": "Designers"
+      "bugs-and-requests": {
+        "title": "Bugs and requests"
       },
-      "developers": {
-        "title": "Developers"
+      "documentation": {
+        "title": "Documentation"
       },
-      "add-ons": {
-        "title": "Add-ons"
+      "component": {
+        "title": "Components"
+      },
+      "pattern": {
+        "title": "Patterns"
       }
     }
   },
