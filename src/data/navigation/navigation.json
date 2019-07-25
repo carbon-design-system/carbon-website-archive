@@ -277,8 +277,8 @@
   "updates": {
     "title": "Updates",
     "sub-nav": {
-      "release-information": {
-        "title": "Release information"
+      "whats-new": {
+        "title": "What's new"
       },
       "roadmap": {
         "title": "Roadmap"
