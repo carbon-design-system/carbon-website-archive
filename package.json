@@ -20,8 +20,8 @@
   "scripts": {
     "build": "echo 'ERROR: Please specify environment by running either build:external or build:internal. This will set the correct environment variable for the build.'",
     "build:packages": "lerna run build --stream --prefix --npm-client yarn",
-    "build:external": "rm -rf public && yarn build:packages && ./tasks/build.sh --env external",
-    "build:internal": "rm -rf public && yarn build:packages && ./tasks/build.sh --env internal",
+    "build:external": "rm -rf public && ./tasks/build.sh --env external",
+    "build:internal": "rm -rf public && ./tasks/build.sh --env internal",
     "ci-check": "yarn format:diff && yarn lint",
     "serve": "gatsby serve",
     "clean": "lerna clean --yes && rm -rf build && rm -rf node_modules",
