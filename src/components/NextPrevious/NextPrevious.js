@@ -131,7 +131,7 @@ export default class NextPrevious extends React.Component {
     currentParentPath = currentParentPath.join('/');
 
     const currentSection = slug.substr(1).split('/')[0];
-
+    const isTutorial = currentSection === 'tutorial';
     let currentHasSubnav;
     if (navigation[currentSection]) {
       currentHasSubnav =
@@ -151,7 +151,7 @@ export default class NextPrevious extends React.Component {
      * if we have any sibling tabs to go to thru in props,
      * before we bother looking at the navigation data
      */
-    if (currentTabs) {
+    if (currentTabs && !isTutorial) {
       currentTabs.forEach((tab, index) => {
         if (this.titleToSlug(tab) === currentPage) {
           if (currentTabs[index - 1]) {
@@ -188,9 +188,11 @@ export default class NextPrevious extends React.Component {
         currentSubnavItem
       );
 
+      const tutorialTab = isTutorial ? `/${currentPage}` : '';
       if (prevPagePath === undefined && currentSubnavIndex > 0) {
         const prevPathSlugPart = currentSubnavArray[currentSubnavIndex - 1];
-        prevPagePath = `/${currentSection}/${prevPathSlugPart}`;
+
+        prevPagePath = `/${currentSection}/${prevPathSlugPart}${tutorialTab}`;
         // const prevTitle =
         //   navigation[currentSection]['sub-nav'][
         //     currentSubnavArray[currentSubnavIndex - 1]
@@ -203,7 +205,7 @@ export default class NextPrevious extends React.Component {
       ) {
         const nextPathSlugPart =
           currentSubnavArray[parseInt(currentSubnavIndex, 10) + 1];
-        nextPagePath = `/${currentSection}/${nextPathSlugPart}`;
+        nextPagePath = `/${currentSection}/${nextPathSlugPart}${tutorialTab}`;
       }
     }
 
