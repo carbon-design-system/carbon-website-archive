@@ -280,11 +280,11 @@
       "release-information": {
         "title": "Release information"
       },
-      "v10-migration": {
-        "title": "Migrate to v10"
-      },
       "roadmap": {
         "title": "Roadmap"
+      },
+      "v10-migration": {
+        "title": "Migrate to v10"
       }
     }
   },

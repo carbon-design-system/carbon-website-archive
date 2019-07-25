@@ -1,9 +1,210 @@
 ---
-title: Changelog
-tabs: ['Highlights', "Changelog", 'Known issues']
+title: Release information
 ---
 
-## March 29, 2019
+## July 2019
+
+[**Changelog: v10.4.0**](https://github.com/carbon-design-system/carbon/releases/tag/v10.4.0#changelog)
+
+We're excited to announce the latest release of the Carbon Design System, v10.4.0 <span aria-label="celebrate">🥳</span>
+
+This release targeted several project areas, including:
+
+- General component enhancements
+- Icons
+- UI Shell
+- Component specification
+- Theming
+- Contribution
+
+In addition to these projects, we also introduced general updates to our website and have an ongoing support project for managing issue triage and fixing bugs. Highlights from these projects are detailed below, for a full list of changes, please view the [changelog](#changelog).
+
+Here are the highlights from our projects:
+
+
+### Theming
+
+#### Enhancements 🛠 
+
+- Added color theme dropdown in vanilla development environment (https://the-carbon-components.netlify.com) https://github.com/carbon-design-system/carbon/pull/3073
+- Updated theming sandbox with v10 components and color themes (http://themes.carbondesignsystem.com)
+
+#### Bug fixes 🐛 
+
+- Button disabled state background color in dark themes
+- Ghost button text/icon colors in dark themes
+- Danger button border color in dark themes
+- Disabled checkbox to show check in dark themes
+- Content switcher to use `$disabled-0*` color tokens for dark themes
+- Inline dropdown background and disabled colors in dark themes
+- Skeleton color tokens to work in all themes
+- Theme `$highlight` token in dark themes
+- Theme `$hover-primary-text` token in dark themes
+- Theme `$hover-ui` token in g90 theme
+
+#### Features:
+
+- Emit custom properties for `@carbon/themes` color tokens
+
+### Icons
+
+#### Bug fixes 🐛 
+
+* battery--low.svg
+* ibm-security.svg
+* logo--slack.svg
+* logout.svg
+* mobile--add.svg
+* mobile--check.svg
+* mobile--download.svg
+* mobile.svg
+* popup.svg
+* text--strikethrough.svg
+* mammogram.svg
+
+#### Enhancements 🛠 
+
+- Bespoke icons added at the following sizes: `20/time.svg`
+- `@carbon/icons-react` now supports an entrypoint `index.js`, you no longer are required to specify the path for an icon
+
+#### New ✨ 
+
+* language.svg
+* laptop.svg
+* account.svg
+* branch.svg
+* enterprise.svg
+* fog.svg
+* help-desk.svg
+* no-image.svg
+* no-ticket.svg
+* pause--filled.svg
+* play--filled--alt.svg
+* service-desk.svg
+* skip--back--filled.svg
+* skip--forward--filled.svg
+* stop--filled--alt.svg
+* audio-console.svg
+* battery--empty.svg
+* battery--quarter.svg
+* carbon.svg
+* category--add.svg
+* category--and.svg
+* category--new-each.svg
+* category--new.svg
+* category.svg
+* concept.svg
+* fork.svg
+* hurricane.svg
+* mobile--landscape.svg
+* partly-cloudy.svg
+* sunny.svg
+* sunset.svg
+* tablet--landscape.svg
+* tablet.svg
+* term.svg
+* text-link--analysis.svg
+* text-link.svg
+* text-mining--applier.svg
+* text-mining.svg
+* tree-view--alt.svg
+* type-pattern.svg
+* types.svg
+
+#### Removed ☠️ 
+
+* mammogram--stacked.svg
+
+### UI Shell
+
+#### New ✨ 
+
+- Guidance for UI Shell Navigation patterns
+- UI Shell Sketch template and symbols added to the Sketch kit.
+- Rail functionality for UI shell left panel.
+- Responsive behavior for the header with nav links.
+
+### Support and component enhancements
+
+#### Bug fixes 🐛 
+
+- Accessibility updates to Tooltips
+
+   * Definition tooltip WCAG 2.1 compliance (#3151)
+   * Interactive tooltip html updates for a11y (#3148)
+- Update toggle labels to be accessible (#2885)
+- Accessibility updates for underlying Listbox (#3139)
+- Data Table updates
+
+  * data table merge sticky header style (#2965)
+  * apply persistent styles to data table (#3311)
+  * fix data table clear input button functionality (#3285)
+  * reset expand button height in short table (#3057)
+- Accessibility updates for Overflow Menu
+
+#### Enhancements 🛠 
+
+* `<Search>` component `light` variant (#3230)
+
+#### New ✨ 
+
+* add icon-only button to React library (#3368)
+* inline-notification action button with click handler (#3283)
+
+### Design kit
+
+#### Bug fixes 🐛 
+
+- Icon button: added disabled state [#121](https://github.com/carbon-design-system/carbon-design-kit/issues/121)
+- Dropdown:
+
+    - overrides enabled [#125](https://github.com/carbon-design-system/carbon-design-kit/issues/125)
+    - drop-shadow background color fix (G90 and G100 theme) [#127](https://github.com/carbon-design-system/carbon-design-kit/issues/127)
+- Checkbox: missing indeterminate state (G90 and G100 theme) [#128](https://github.com/carbon-design-system/carbon-design-kit/issues/127)
+- Data table: Corrected pinning in icon symbols (G10 theme) [#129](https://github.com/carbon-design-system/carbon-design-kit/issues/129)
+- Overflow menu: duplicated symbols removed (G100 theme) [#137](https://github.com/carbon-design-system/carbon-design-kit/issues/137) 
+- Skeleton states: updated to use new tokens [#138](https://github.com/carbon-design-system/carbon-design-kit/issues/138)
+- Tooltip: re-organized symbol structure [#140](https://github.com/carbon-design-system/carbon-design-kit/issues/140)
+- Pagination: updated symbol structure for standalone variation, add number states [#130](https://github.com/carbon-design-system/carbon-design-kit/issues/130)
+
+#### Enhancements 🛠 
+
+- Modal: added footer symbol and single action option [#116](https://github.com/carbon-design-system/carbon-design-kit/issues/116)
+- Progress indicator: added vertical variation [#123](https://github.com/carbon-design-system/carbon-design-kit/issues/123)
+- Color tokens: added [#138](https://github.com/carbon-design-system/carbon-design-kit/issues/138)
+
+    - hover-selected-ui
+    - skeleton-01
+    - skeleton-02
+    - inverse-support-01
+    - inverse-support-02
+    - inverse-support-03
+    - inverse-support-04
+- Text style: added "body-short-02/text-03" [#136](https://github.com/carbon-design-system/carbon-design-kit/issues/136)
+
+#### New ✨ 
+
+- UI Shell templates
+- UI Shell rail component
+
+## Archive
+
+<AnchorLinks small>
+
+- [March 2019: v10 release](#march-2019-v9-release)
+- [February 2019](#february-2019)
+- [October 2018](#october-2018)
+- [June 2018: v9 release](#june-4,-2018:-v9-release)
+- [May 2018](#may-16,-2018)
+- [March 2018](#march-9,-2018)
+- [February 2018](#february-23,-2018)
+- [February 2018](#february-9,-2018)
+
+</AnchorLinks>
+
+_Following the [Carbon v10 release](#march-2019), we restructured our repos and much of the Carbon site. Older links may not work._
+
+## March 2019: v10 release
 
 Carbon v10 is released. The Carbon Design System adopts the new IBM Design Language.
 
@@ -14,20 +215,6 @@ Carbon v10 is released. The Carbon Design System adopts the new IBM Design Langu
 - Introduction of production ready [Carbon Elements](https://github.com/IBM/carbon-elements) package.
 - The Carbon Design System website at [next.carbondesignsystem.com](https://next.carbondesignsystem.com) will convert to the www site on 4/1/2019.
 
-## Archive
-
-_Note: As the Carbon design system is constantly being improved, we can only ensure the most recent changelog is accurate. Below is an archive of previous updates, however we cannot guarentee the accuracy of those changes reported._
-<AnchorLinks small>
-
-- [February 2019](#february-2019)
-- [October 2018](#october-2018)
-- [June 4, 2018: V9 release](#june-4,-2018:-v9-release)
-- [May 16, 2018](#may-16,-2018)
-- [March 9, 2018](#march-9,-2018)
-- [February 23, 2018](#february-23,-2018)
-- [February 9, 2018](#february-9,-2018)
-
-</AnchorLinks>
 
 ## February 2019
 
@@ -44,7 +231,7 @@ A new [Experimental](/experimental/about/overview) section has been added to the
 
 **Experimental components, designs, and other resources are presented for testing and feedback. They are not intended for production use.**
 
-## June 4, 2018: V9 Release
+## June 2018: V9 Release
 
 ### Website
 
