@@ -268,8 +268,9 @@ In `src/components/TutorialHeader/index.js`, import and export our `TutorialHead
 ##### src/components/TutorialHeader/index.js
 
 ```javascript
-import TutorialHeader from './TutorialHeader';
+import TutorialHeader from "./TutorialHeader";
 export default TutorialHeader;
+
 ```
 
 _Note: This index.js files import/export is simply a convenience to shorten the path used to import the component and potentially import multiple components from one folder. The folder also provides us a handy location to add tests or documentation for the component._
@@ -353,7 +354,7 @@ _Note: It's important that the_ `TutorialHeader` _returns the Carbon_ `CvHeader`
 
 ### Import icons
 
-Now let's import the icons from our `@carbon/icons-vue` elements package. In the `TutorialHeader.vue` file, we need to import each individual icon we will use.
+Now let's import the icons from our `@carbon/icons-vue` elements package. At the bottom of the `TutorialHeader.vue` file, we need to import each individual icon we will use.
 
 ##### src/components/TutorialHeader/TutorialHeader.vue
 
@@ -374,7 +375,7 @@ export default {
 
 _Note: We've given our component a name here as part of the default export. This is optional in Vue but very useful in the [Vue developer tools](https://github.com/vuejs/vue-devtools)._
 
-Then we need to add contnet to the 'header-global' slot where we will use our icons. These represent actions in the header a user can make. Replace:
+Then we need to add content to the `header-global` slot where we will use our icons. These represent actions in the header a user can make. Replace:
 
 ##### src/components/TutorialHeader/TutorialHeader.vue
 
@@ -419,7 +420,7 @@ export default {
 </script>
 ```
 
-In addition to importing the `TutorialHeader` component we have also declared it for use in our template by adding it to the `components` property of our component.
+In addition to importing the `TutorialHeader` component, we have also declared it for use in our template by adding it to the `components` property of our component.
 
 As our template currently just contains a `Button` it is still not rendering anything more interesting so let's update that to include our imported components. This should look like the following:
 
@@ -475,8 +476,9 @@ Starting with `LandingPage`, just like with our header, we need to export the co
 ##### src/view/LandingPage/index.js
 
 ```javascript
-import LandingPage from './LandingPage';
+import LandingPage from "./LandingPage";
 export default LandingPage;
+
 ```
 
 Next in `LandingPage.vue` we'll create our component.
@@ -487,6 +489,7 @@ Next in `LandingPage.vue` we'll create our component.
 <template>
   <div>LANDING PAGE</div>
 </template>
+
 ```
 
 We'll repeat this process with `RepoPage`.
@@ -496,8 +499,9 @@ In `src/view/RepoPage/index.js`, import and export the `RepoPage` component like
 ##### src/view/RepoPage/index.js
 
 ```javascript
-import RepoPage from './RepoPage';
+import RepoPage from "./RepoPage";
 export default RepoPage;
+
 ```
 
 Then in `RepoPage.vue` create the component.
@@ -508,13 +512,12 @@ Then in `RepoPage.vue` create the component.
 <template>
   <div>REPO PAGE</div>
 </template>
+
 ```
 
-Awesome! We've just created our content pages. Next thing we need to do is render them with our router.
+Awesome! We've just created our content pages. Next thing we need to do is render them with our router, which will also fix the router error you can see now about the component for the `about` route not being found.
 
 ## Add routing
-
-If you click on `Repositories` and then on `IBM Carbon Tutorial` you'll notice a flicker as we hop from one page to another. We can fix this by using vue-router to manage our views.
 
 Lucky for you, as part of the Vue CLI project set up we added vue-router. This created the views folder and also added, `src/router.js` and imported that into `src/main.js` for us.
 
@@ -523,33 +526,35 @@ Lucky for you, as part of the Vue CLI project set up we added vue-router. This c
 We need to adjust it by replacing the contents of `src/router.js` with:
 
 ```javascript
-import Vue from 'vue';
-import Router from 'vue-router';
-import LandingPage from './views/LandingPage';
+import Vue from "vue";
+import Router from "vue-router";
+import LandingPage from "./views/LandingPage";
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'landing-page',
+      path: "/",
+      name: "landing-page",
       component: LandingPage,
     },
     {
-      path: '/repos',
-      name: 'repo-page',
+      path: "/repos",
+      name: "repo-page",
       // route level code-splitting
       // this generates a separate chunk (repo-page.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () =>
-        import(/* webpackChunkName: "repo-page" */ './views/RepoPage'),
+        import(/* webpackChunkName: "repo-page" */ "./views/RepoPage"),
     },
   ],
 });
 ```
 
-_Note: The landing page is loaded immediately, with the RepoPage lazy loaded. This is one simple way to create webpackChunks and is the default suggestion from the CLI plugin for vue-router._
+_Note: The landing page is loaded immediately, with the RepoPage loaded only once needed. This is one simple way to create webpackChunks and is the default suggestion from the CLI plugin for vue-router._
+
+If you click on `Repositories` and then on `IBM Carbon Tutorial` you'll notice a flicker as we hop from one page to another. We can fix this by using vue-router to manage our views.
 
 Next we need to update `src/App.vue` to render these views.
 
@@ -585,7 +590,9 @@ You should now have a working header that routes to different pages without full
 
 We're going to submit a pull request to verify completion of this tutorial step and demonstrate a couple related concepts.
 
-### Continuous integration (CI) check
+<!-- The following section is outcommented because it is not working: the ci-check
+     script is missing from package.json -->
+<!-- ### Continuous integration (CI) check
 
 We have a `ci-check` script defined in `package.json` that verifies file formatting for files that have been touched since the last Git commit with a tool called [Prettier](https://prettier.io). You'd typically also have that script run your test suite as part of your CI build. Go ahead and make sure everything looks good with:
 
@@ -593,7 +600,7 @@ We have a `ci-check` script defined in `package.json` that verifies file formatt
 $ yarn ci-check
 ```
 
-_Note: If the_ `ci-check` _is giving an error, it's likely that some of your source files are not properly formatted. This could happen if your text editor isn't formatting with Prettier on save. To get_ `ci-check` _to pass, run_ `yarn format`_ then re-run_ `yarn ci-check`_._
+_Note: If the_ `ci-check` _is giving an error, it's likely that some of your source files are not properly formatted. This could happen if your text editor isn't formatting with Prettier on save. To get_ `ci-check` _to pass, run_ `yarn format`_ then re-run_ `yarn ci-check`_._ -->
 
 ### Git commit and push
 
