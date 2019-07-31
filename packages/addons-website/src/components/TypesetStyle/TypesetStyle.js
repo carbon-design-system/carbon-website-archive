@@ -154,7 +154,44 @@ const typeScale = {
       'letter-spacing': '0',
     },
   },
-
+  'productive-heading-06': {
+    sm: {
+      step: 9,
+      font: 'IBM Plex Sans',
+      'font-weight': '400',
+      'font-size': 2.625,
+      'line-height': 3.125,
+      'letter-spacing': '0',
+    },
+  },
+  'productive-heading-07': {
+    sm: {
+      step: 10,
+      font: 'IBM Plex Sans',
+      'font-weight': '300',
+      'font-size': 3.375,
+      'line-height': 4,
+      'letter-spacing': '0',
+    },
+  },
+  'expressive-heading-03': {
+    sm: {
+      step: 7,
+      font: 'IBM Plex Sans',
+      'font-weight': '400',
+      'font-size': 1.25,
+      'line-height': 1.625,
+      'letter-spacing': '0',
+    },
+    max: {
+      step: 13,
+      font: 'IBM Plex Sans',
+      'font-weight': '400',
+      'font-size': 1.5,
+      'line-height': 1.625,
+      'letter-spacing': '0',
+    },
+  },
   'expressive-heading-04': {
     sm: {
       step: 7,
@@ -640,12 +677,12 @@ const typeSets = {
     {
       description: 'This is for component and layout headings.',
       key: 'heading-01',
-      name: 'heading-01',
+      name: 'productive-heading-01',
     },
     {
       description: 'This is for component and layout headings.',
       key: 'heading-02',
-      name: 'heading-02',
+      name: 'productive-heading-02',
     },
     {
       description: 'This is for component and layout headings.',
@@ -662,20 +699,33 @@ const typeSets = {
       key: 'productive-heading-05',
       name: 'productive-heading-05',
     },
+    {
+      description: 'This is for layout headings.',
+      key: 'productive-heading-06',
+      name: 'productive-heading-06',
+    },
+    {
+      description: 'This is for layout headings.',
+      key: 'productive-heading-07',
+      name: 'productive-heading-07',
+    },
   ],
-  fixedHeading: [
+  headings: [
     {
       description: 'This is for component and layout headings.',
       key: 'heading-01',
-      name: 'heading-01',
+      name: 'expressive-heading-01 (fixed)',
     },
     {
       description: 'This is for component and layout headings.',
       key: 'heading-02',
-      name: 'heading-02',
+      name: 'expressive-heading-02 (fixed)',
     },
-  ],
-  fluidHeadings: [
+    {
+      description: 'This is for component and layout headings.',
+      key: 'expressive-heading-03',
+      name: 'expressive-heading-03',
+    },
     {
       description: 'Heading style',
       key: 'expressive-heading-04',
@@ -687,7 +737,7 @@ const typeSets = {
       name: 'expressive-heading-05',
     },
   ],
-  FluidParagraphsAndQuotes: [
+  paragraphsAndQuotes: [
     {
       description: 'Paragraph',
       key: 'expressive-paragraph-01',
@@ -696,34 +746,34 @@ const typeSets = {
     {
       description: '“Quote.”',
       key: 'quotation-01',
-      name: 'quotation-01',
+      name: 'expressive-quotation-01',
     },
     {
       description: '“Quote.”',
       key: 'quotation-02',
-      name: 'quotation-02',
+      name: 'expressive-quotation-02',
     },
   ],
-  fluidDisplay: [
+  display: [
     {
       description: 'Display',
       key: 'display-01',
-      name: 'display-01',
+      name: 'expressive-display-01',
     },
     {
       description: 'Display',
       key: 'display-02',
-      name: 'display-02',
+      name: 'expressive-display-02',
     },
     {
       description: 'Display',
       key: 'display-03',
-      name: 'display-03',
+      name: 'expressive-display-03',
     },
     {
       description: 'Display',
       key: 'display-04',
-      name: 'display-04',
+      name: 'expressive-display-04',
     },
   ],
 };
