@@ -954,7 +954,10 @@ class TypesetStyle extends React.Component {
             .map((typeset, i) => (
               <>
                 <h4 className="page-h4">
-                  {typeset.replace(/([a-z])([A-Z])/g, '$1 $2').toLowerCase()}
+                  {typeset
+                    .replace(/fixed/g, '')
+                    .replace(/([a-z])([A-Z])/g, '$1 $2')
+                    .toLowerCase()}
                 </h4>
                 <TypesetExample
                   key={i}
