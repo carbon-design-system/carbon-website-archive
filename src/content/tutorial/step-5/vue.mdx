@@ -127,11 +127,11 @@ As a lot of this may seem like magic since the build configuration came from the
 
 ## Create manifest file
 
-Now that we have a production build, let's get it on the cloud. We're going to use [staticfile-buildpack](https://github.com/cloudfoundry/staticfile-buildpack.git) to deploy our webapp. Since this is a Cloud Foundry buildpack, we'll be using the `cf` command line interface (CLI). If running `cf --help` doesn't work for you, chances are you need to [install the CLI](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html).
+Now that we have a production build, let's get it on the cloud. We're going to use [staticfile-buildpack](https://github.com/cloudfoundry/staticfile-buildpack.git) to deploy our webapp. We'll be using the `ibmcloud` command line interface (CLI). If running `ibmcloud help` doesn't work for you, chances are you need to [install the CLI](https://cloud.ibm.com/docs/cli?topic=cloud-cli-install-ibmcloud-cli).
 
 _Note: If unfamiliar with buildpacks, the [staticfile buildpack docs](https://docs.cloudfoundry.org/buildpacks/staticfile/index.html) has good definitions and configuration documentation._
 
-With the Cloud Foundry CLI installed, next, we need to create a `manifest.yml` file in the root of the project. To prevent multiple apps trying to use the `carbon-tutorial` name, replace `USERNAME` with your GitHub username below to make sure our apps are uniquely named.
+With the IBM Cloud CLI installed, next, we need to create a `manifest.yml` file in the root of the project. To prevent multiple apps trying to use the `carbon-tutorial` name, replace `USERNAME` with your GitHub username below to make sure our apps are uniquely named.
 
 ##### manifest.yml
 
@@ -165,20 +165,28 @@ After telling Cloud Foundry what to include, we can also specify what to ignore.
 node_modules/.cache
 ```
 
-You can speed up deploys by decreasing the files uploaded through cloud foundry. To accomplish this, ignore any folder not required by the production application on IBM Cloud. For example, in the case of serving static files, you can ignore `node_modules/` and `src/` because the only folder being served is `build/`.
+You can speed up deploys by decreasing the files uploaded through IBM Cloud. To accomplish this, ignore any folder not required by the production application on IBM Cloud. For example, in the case of serving static files, you can ignore `node_modules/` and `src/` because the only folder being served is `build/`.
 
 ## Deploy app
 
-Login to IBM Cloud with:
+Login to IBM Cloud using the endpoint associated with your IBM Cloud region (to determine the region your IBM Cloud account is associated with, go to https://cloud.ibm.com and login into your account. Then go to `Manage` -> `Account` and on the left menu select `Cloud Foundry orgs`. You will see your organization (most likely named by your email address). Click on it and you will see the region): 
+
+The endpoint will be one of the following: 
+* api.us-south.cf.cloud.ibm.com (previously api.ng.bluemix.net)
+* api.eu-gb.cf.cloud.ibm.com (previously api.eu-gb.bluemix.net)
+* api.us-east.cf.cloud.ibm.com (previously api.us-east.bluemix.net)
+* api.eu-de.cf.cloud.ibm.com (previously api.eu-de.bluemix.net)
+* api.au-syd.cf.cloud.ibm.com (previously api.au-syd.bluemix.net)
+
 
 ```bash
-$ cf login -a https://api.ng.bluemix.net -sso
+$ ibmcloud login -a <cf-endpoint> -sso
 ```
 
-Deploy app using the `cf push` command. Since `manifest.yml` is in our root directory, we don't need to specify it in the push command. But, if you have multiple manifest files that target different environments, it's good practice to specify the file.
+Deploy app using the `ibmcloud cf push` command. Since `manifest.yml` is in our root directory, we don't need to specify it in the push command. But, if you have multiple manifest files that target different environments, it's good practice to specify the file.
 
 ```bash
-$ cf push -f manifest.yml
+$ ibmcloud cf push -f manifest.yml
 ```
 
 To make it easy on ourselves by not needing to remember that command, let's add a script in `package.json`. We can combine the build and deploy steps to make sure we only deploy immediately after running the build. In the `"scripts"` object in `package.json`, add:
@@ -186,7 +194,7 @@ To make it easy on ourselves by not needing to remember that command, let's add 
 ##### package.json
 
 ```bash
-"deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml"
+"deploy": "rm -rf ./build && yarn build && ibmcloud cf push -f manifest.yml"
 ```
 
 Next time you want to deploy, you can simply run `yarn deploy`.
