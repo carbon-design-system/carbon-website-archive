@@ -271,6 +271,9 @@
       },
       "pattern": {
         "title": "Patterns"
+      },
+      "add-ons": {
+        "title": "Add-ons"
       }
     }
   },

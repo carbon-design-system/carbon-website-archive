@@ -1,0 +1,50 @@
+---
+title: Add-ons
+---
+
+import { CheckmarkFilled16 } from '@carbon/icons-react';
+
+<AnchorLinks>
+
+- [Add-on repositories](#add-on-repositories)
+- [Contributing to add-ons](#contributing-to-add-ons)
+- [Ownership and maintenance](#ownership-and-maintenance)
+
+</AnchorLinks>
+
+## Add-on repositories
+
+Add-on repositories, or repos, contain components built for a specific product or experience. The repos are built on top of the core Carbon repo, and enable teams to create their own custom components that follow Carbon's visual style and guidelines.
+
+If your team is using Carbon and needs components specific to your product or industry, host the custom components in an add-on repo. We have created a [React boilerplate](https://github.com/carbon-design-system/carbon-addons-boilerplate-react) and a [Vanilla boilerplate](https://github.com/carbon-design-system/carbon-boilerplate) that you can clone to get started.
+
+If you feel that your components and/or patterns could be used in other products, we encourage you to [contribute](/contributions/overview) your work back to Carbon.
+
+### Private vs public
+
+Carbon Design System is an open-source project and we do encourage teams using Carbon Design System to stay open-source as well. If your product has privacy constraints, there are options for creating an add-on repo under our GitHub Enterprise account.
+
+## Contributing to add-ons
+
+Add-ons are generally easier to contribute to because they are not fully managed by the Carbon team. For your add-on to be accepted, your components must meet WCAG AA standards and include interaction states (hover, active, focus, disabled).
+
+<!--
+
+| Category      | Metric                                              | Core library                                         | Add-ons                                              |
+| ------------- | --------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- |
+| Accessibility | WCAG AA                                             | ✅ | ✅ |
+|               | Keyboard tabbing                                    | ✅ | ✅ |
+|               | Carbon custom focus states                          | ✅ |                                                      |
+| Visual + UX   | Carbon themed                                       | ✅ |                                                      |
+|               | Universal pattern <br />(fits for 2-3 use cases)    | ✅ |                                                      |
+|               | Interaction states (hover, active, focus, disabled) | ✅ | ✅ |
+
+-->
+
+## Ownership and maintenance
+
+If you build an add-on repo, it's your responsibility to maintain it. This involves carrying over changes from the core Carbon repo, as well as making sure it is using the latest major version of Carbon.
+
+<!--
+If you build an add-on repo, it's your responsibility to maintain it. Your add-on must be using the latest major and minor version of Carbon.
+-->
