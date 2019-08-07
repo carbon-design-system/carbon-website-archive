@@ -234,7 +234,6 @@ const typeScale = {
       'letter-spacing': '0',
     },
   },
-
   'expressive-heading-05': {
     sm: {
       step: 8,
@@ -247,7 +246,7 @@ const typeScale = {
     md: {
       step: 9,
       font: 'IBM Plex Sans',
-      'font-weight': '400',
+      'font-weight': '300',
       'font-size': 2.25,
       'line-height': 2.75,
       'letter-spacing': '0',
@@ -255,7 +254,7 @@ const typeScale = {
     lg: {
       step: 10,
       font: 'IBM Plex Sans',
-      'font-weight': '400',
+      'font-weight': '300',
       'font-size': 2.625,
       'line-height': 3.125,
       'letter-spacing': '0',
@@ -263,7 +262,7 @@ const typeScale = {
     xlg: {
       step: 11,
       font: 'IBM Plex Sans',
-      'font-weight': '400',
+      'font-weight': '300',
       'font-size': 3,
       'line-height': 3.5,
       'letter-spacing': '0',
@@ -272,6 +271,48 @@ const typeScale = {
       step: 13,
       font: 'IBM Plex Sans',
       'font-weight': '300',
+      'font-size': 3.75,
+      'line-height': 4.375,
+      'letter-spacing': '0',
+    },
+  },
+  'expressive-heading-06': {
+    sm: {
+      step: 8,
+      font: 'IBM Plex Sans',
+      'font-weight': '600',
+      'font-size': 2,
+      'line-height': 2.5,
+      'letter-spacing': '0',
+    },
+    md: {
+      step: 9,
+      font: 'IBM Plex Sans',
+      'font-weight': '600',
+      'font-size': 2.25,
+      'line-height': 2.75,
+      'letter-spacing': '0',
+    },
+    lg: {
+      step: 10,
+      font: 'IBM Plex Sans',
+      'font-weight': '600',
+      'font-size': 2.625,
+      'line-height': 3.125,
+      'letter-spacing': '0',
+    },
+    xlg: {
+      step: 11,
+      font: 'IBM Plex Sans',
+      'font-weight': '600',
+      'font-size': 3,
+      'line-height': 3.5,
+      'letter-spacing': '0',
+    },
+    max: {
+      step: 13,
+      font: 'IBM Plex Sans',
+      'font-weight': '600',
       'font-size': 3.75,
       'line-height': 4.375,
       'letter-spacing': '0',
@@ -736,6 +777,11 @@ const typeSets = {
       key: 'expressive-heading-05',
       name: 'expressive-heading-05',
     },
+    {
+      description: 'Heading style',
+      key: 'expressive-heading-06',
+      name: 'expressive-heading-06',
+    },
   ],
   paragraphsAndQuotes: [
     {
@@ -746,34 +792,34 @@ const typeSets = {
     {
       description: '“Quote.”',
       key: 'quotation-01',
-      name: 'expressive-quotation-01',
+      name: 'quotation-01',
     },
     {
       description: '“Quote.”',
       key: 'quotation-02',
-      name: 'expressive-quotation-02',
+      name: 'quotation-02',
     },
   ],
   display: [
     {
       description: 'Display',
       key: 'display-01',
-      name: 'expressive-display-01',
+      name: 'display-01',
     },
     {
       description: 'Display',
       key: 'display-02',
-      name: 'expressive-display-02',
+      name: 'display-02',
     },
     {
       description: 'Display',
       key: 'display-03',
-      name: 'expressive-display-03',
+      name: 'display-03',
     },
     {
       description: 'Display',
       key: 'display-04',
-      name: 'expressive-display-04',
+      name: 'display-04',
     },
   ],
 };
