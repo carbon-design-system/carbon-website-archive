@@ -280,14 +280,14 @@
   "updates": {
     "title": "Updates",
     "sub-nav": {
-      "release-information": {
-        "title": "Release information"
-      },
-      "v10-migration": {
-        "title": "Migrate to v10"
+      "whats-new": {
+        "title": "What's new"
       },
       "roadmap": {
         "title": "Roadmap"
+      },
+      "v10-migration": {
+        "title": "Migrate to v10"
       }
     }
   },
