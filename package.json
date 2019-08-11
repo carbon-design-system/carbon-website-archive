@@ -4,12 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "gatsby develop",
-    "dev:clean": "gatsby clean && gatsby develop",
+    "dev": "yarn timestamp && gatsby develop",
+    "dev:clean": "gatsby clean && yarn timestamp &&  gatsby develop",
     "clean": "gatsby clean",
-    "build": "gatsby clean && gatsby build",
+    "build": "gatsby clean && yarn timestamp && gatsby build",
     "lint:js": "eslint src --fix",
-    "format": "prettier --write 'src/**/*.{js,json,css,scss,md,mdx,yaml}'"
+    "format": "prettier --write 'src/**/*.{js,json,css,scss,md,mdx,yaml}'",
+    "timestamp": "./build-timestamp.sh"
   },
   "dependencies": {
     "@carbon/elements": "^10.4.0",
