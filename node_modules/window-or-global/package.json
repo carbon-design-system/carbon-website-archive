@@ -1,0 +1,43 @@
+{
+  "name": "window-or-global",
+  "version": "1.0.1",
+  "description": "Use either the window object in the browser or the global object in node.",
+  "license": "MIT",
+  "repository": "purposeindustries/window-or-global",
+  "author": {
+    "name": "ruffle1986",
+    "email": "tf@purposeindustries.co"
+  },
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "xo",
+    "posttest": "ava examples/**/*.spec.js"
+  },
+  "xo": {
+    "envs": [
+      "node",
+      "browser"
+    ],
+    "space": true,
+    "semicolon": false
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "window",
+    "global",
+    "isomorphic",
+    "universal"
+  ],
+  "devDependencies": {
+    "ava": "^0.2.0",
+    "browserify": "^11.1.0",
+    "component-emitter": "^1.2.0",
+    "jsdom": "^6.5.0",
+    "proxyquire": "^1.7.2",
+    "react": "^0.13.3",
+    "xo": "*"
+  },
+  "dependencies": {}
+}

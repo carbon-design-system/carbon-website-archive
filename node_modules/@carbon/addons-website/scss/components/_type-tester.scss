@@ -1,0 +1,177 @@
+@import '../prefix';
+
+$font-prefix: '/fonts';
+@import '@ibm/plex/scss/devanagari/_index.scss';
+@import '@ibm/plex/scss/thai/_index.scss';
+@import '@ibm/plex/scss/sans-hebrew/_index.scss';
+@import '@ibm/plex/scss/arabic/_index.scss';
+
+//text variants
+@import '@ibm/plex/scss/sans/_index.scss';
+@import '@ibm/plex/scss/sans-condensed/_index.scss';
+@import '@ibm/plex/scss/serif/_index.scss';
+@import '@ibm/plex/scss/mono/_index.scss';
+
+.#{$prefix}--type-hebrew {
+  font-family: 'IBM Plex Sans Hebrew';
+}
+
+.#{$prefix}--type-thai {
+  font-family: 'IBM Plex Thai';
+}
+
+.#{$prefix}--type-devanagari {
+  font-family: 'IBM Plex Devanagari';
+}
+
+.#{$prefix}--type-arabic {
+  font-family: 'IBM Plex Arabic';
+}
+
+.#{$prefix}--type-default,
+.#{$prefix}--type-default * {
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.#{$prefix}--type-condensed,
+.#{$prefix}--type-condensed * {
+  font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.#{$prefix}--type-serif,
+.#{$prefix}--type-serif * {
+  font-family: 'IBM Plex Serif', 'Georgia', Times, serif;
+}
+
+.#{$prefix}--type-mono,
+.#{$prefix}--type-mono * {
+  font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono',
+    'Bitstream Vera Sans Mono', Courier, monospace;
+}
+
+.#{$prefix}--type-italic {
+  font-style: italic;
+}
+
+.#{$prefix}--type-tester-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.#{$prefix}--type-tester-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .dropdown_wrapper {
+    width: 100%;
+    height: 3rem;
+
+    .#{$prefix}--list-box {
+      display: inline-block;
+      width: 50%;
+      height: 3rem;
+      border-bottom: transparent;
+
+      .#{$prefix}--list-box__field {
+        background: $ui-02;
+        height: 3rem;
+        padding-top: $spacing-05;
+        padding-bottom: rem(15px);
+        border-bottom: 1px solid $carbon--gray-20;
+        &:focus {
+          outline-color: transparent;
+        }
+
+        .#{$prefix}--list-box__label {
+          font-weight: 400;
+          line-height: 1rem;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+
+      &:first-of-type {
+        .#{$prefix}--list-box__field {
+          border-right: 1px solid $carbon--gray-20;
+        }
+      }
+
+      .#{$prefix}--list-box__menu {
+        top: 3rem;
+        background: $ui-02;
+        max-height: 15rem;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
+
+        .#{$prefix}--list-box__menu-item {
+          height: auto;
+
+          .#{$prefix}--list-box__menu-item__option {
+            height: auto;
+            padding: rem(14px) 0;
+          }
+        }
+      }
+    }
+  }
+
+  .#{$prefix}--input-range-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 0 $spacing-05;
+    background-color: $ui-02;
+    width: 100%;
+    height: 3rem;
+    border-bottom: 1px solid $carbon--gray-20;
+
+    .#{$prefix}--input-range {
+      outline: none;
+    }
+  }
+
+  @include carbon--breakpoint('md') {
+    flex-direction: row;
+    .dropdown_wrapper {
+      width: 50%;
+
+      .#{$prefix}--dropdown:last-of-type {
+        .#{$prefix}--list-box__field {
+          border-right: 1px solid $carbon--gray-20;
+        }
+      }
+    }
+    .#{$prefix}--input-range-wrapper {
+      width: 50%;
+    }
+  }
+
+  @include carbon--breakpoint('lg') {
+    .#{$prefix}--input-range-wrapper {
+      width: 25%;
+    }
+  }
+}
+
+.#{$prefix}--type-tester-sample {
+  width: 100%;
+  background: $ui-02;
+
+  .#{$prefix}--custom-textarea {
+    font-size: 48px;
+    resize: none;
+    border: none;
+    width: 100%;
+    height: auto;
+    outline: none;
+    background: $ui-02;
+    padding: $spacing-05;
+    overflow: none;
+
+    &::selection {
+      background: $carbon--purple-20;
+    }
+  }
+}

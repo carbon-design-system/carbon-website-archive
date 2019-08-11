@@ -1,0 +1,11 @@
+$font-prefix: '..' !default;
+@font-face {
+  font-family: 'IBM Plex Devanagari';
+  font-style: italic;
+  font-weight: 400;
+  src: local('IBM Plex Devanagari Italic'),
+    local('IBMPlexDevanagari-Italic'),
+    url('#{$font-prefix}/IBM-Plex-Devanagari/fonts/complete/woff2/IBMPlexDevanagari-Italic.woff2') format('woff2'),
+    url('#{$font-prefix}/IBM-Plex-Devanagari/fonts/complete/woff/IBMPlexDevanagari-Italic.woff') format('woff');
+}
+

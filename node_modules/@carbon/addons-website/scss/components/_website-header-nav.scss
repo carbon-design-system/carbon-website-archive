@@ -1,0 +1,117 @@
+//----------------------------
+// Header Navigation
+//----------------------------
+
+.#{$prefix}--header__nav {
+  margin-left: auto;
+  display: none;
+
+  @include carbon--breakpoint('lg') {
+    display: block;
+    position: absolute;
+    left: 25%; //to align 4 columns over
+    top: 0;
+  }
+}
+
+//----------------------------
+// Top level nav
+//----------------------------
+a.#{$prefix}--header__menu-item[role='menuitem'] {
+  @include carbon--type-style('body-short-02');
+  position: relative;
+  color: $carbon--gray-10;
+  border-width: 2px;
+}
+
+// Hover
+a.#{$prefix}--header__menu-item[role='menuitem']:hover {
+  background-color: #2c2c2c;
+  color: $carbon--gray-10;
+}
+
+// Item with dropdown
+.#{$prefix}--header__menu-title[role='menuitem'][aria-expanded='true'] {
+  background: $carbon--gray-90;
+}
+
+// Selected
+a.#{$prefix}--header__menu-item[role='menuitem'][aria-current='page'],
+.#{$prefix}--header .submenu--active > a.#{$prefix}--header__menu-item {
+  background: transparent;
+}
+
+a.#{$prefix}--header__menu-item[role='menuitem'][aria-current='page']:after,
+.#{$prefix}--header .submenu--active > a.#{$prefix}--header__menu-item:after {
+  content: '';
+  width: calc(100% + 4px);
+  position: absolute;
+  left: -2px;
+  bottom: -2px;
+  border-top: 4px solid $carbon--blue-60;
+}
+
+//Active
+a.#{$prefix}--header__menu-item[role='menuitem']:active {
+  background: $carbon--gray-80;
+}
+
+//----------------------------
+// Drop down nav
+//----------------------------
+.#{$prefix}--header__menu .#{$prefix}--header__menu-item[role='menuitem']:after,
+.#{$prefix}--header__menu
+  .#{$prefix}--header__menu-item[role='menuitem'][aria-current='page']:after {
+  content: '';
+  width: calc(100% - 16px);
+  position: absolute;
+  left: 8px;
+  bottom: -3px;
+  border-top: none;
+  border-bottom: 1px solid $carbon--gray-70;
+}
+
+.#{$prefix}--header__menu
+  .#{$prefix}--header__menu-item[role='menuitem']:hover:after,
+.#{$prefix}--header__menu
+  li:last-child
+  .#{$prefix}--header__menu-item[role='menuitem']:after {
+  display: none;
+}
+
+.#{$prefix}--header__menu-title[role='menuitem'][aria-expanded='true']
+  + .#{$prefix}--header__menu {
+  background: $carbon--gray-90;
+}
+
+.#{$prefix}--header__menu .#{$prefix}--header__menu-item[role='menuitem'] {
+  @include carbon--type-style('body-short-01');
+  color: $carbon--gray-30;
+}
+
+// Hover
+.#{$prefix}--header__menu
+  .#{$prefix}--header__menu-item[role='menuitem']:hover {
+  color: $carbon--gray-10;
+  background: #353535; //$hover-ui gray 90 theme
+}
+
+// Selected
+.#{$prefix}--header__menu
+  .#{$prefix}--header__menu-item[role='menuitem'][aria-current='page'] {
+  color: $carbon--gray-10;
+  font-weight: 600;
+  background: $carbon--gray-80;
+}
+
+.#{$prefix}--header__menu
+  .#{$prefix}--header__menu-item[role='menuitem'][aria-current='page']:after {
+  display: none;
+}
+
+// Focus/Active
+.#{$prefix}--header__menu
+  .#{$prefix}--header__menu-item[role='menuitem']:active {
+  color: $carbon--gray-10;
+  background: $carbon--gray-70;
+}

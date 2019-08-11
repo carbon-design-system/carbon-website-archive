@@ -1,0 +1,111 @@
+@import '../prefix';
+
+.#{$prefix}--input-range {
+  appearance: none;
+  font-size: 0px;
+  position: relative;
+  cursor: pointer;
+  // Provide a larger interaction hit area
+  padding-top: $spacing-03;
+  padding-bottom: $spacing-03;
+  width: 100%;
+
+  // Remove extra padding on Edge that causes vertical misalignment
+  // IE Edge 16+ CSS
+  // See https://browserstrangeness.github.io/css_hacks.html
+  @supports (-ms-ime-align: auto) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  // Chaining the selectors doesn't work because browsers.
+  // See https://css-tricks.com/sliding-nightmare-understanding-range-input/#structure
+  &::-webkit-slider-runnable-track {
+    background: $carbon--gray-20;
+    height: rem(1px);
+  }
+  &::-moz-range-track {
+    background: $carbon--gray-20;
+    height: rem(1px);
+  }
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    background: $carbon--black-100;
+    border: 0;
+    border-radius: 100%;
+    height: rem(14px);
+    margin-top: rem(-7px);
+    width: rem(14px);
+    transition-property: height, width, margin;
+    transition-duration: 0.1s;
+    transition-timing-function: $carbon--standard-easing;
+  }
+  &::-moz-range-thumb {
+    appearance: none;
+    background: $carbon--black-100;
+    border: 0;
+    border-radius: 100%;
+    height: rem(14px);
+    margin-top: rem(-7px);
+    width: rem(14px);
+    transition-property: height, width, margin;
+    transition-duration: 0.1s;
+    transition-timing-function: $carbon--standard-easing;
+  }
+
+  &::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: rem(14px) 0;
+    color: transparent;
+    height: rem(1px);
+  }
+  &::-ms-fill-lower {
+    background: $carbon--black-100;
+  }
+  &::-ms-fill-upper {
+    background: $carbon--black-100;
+  }
+  &::-ms-thumb {
+    appearance: none;
+    background: $carbon--black-100;
+    border-radius: 100%;
+    border: 0;
+    height: rem(14px);
+    margin-top: rem(-1px);
+    width: rem(14px);
+  }
+
+  &:after {
+    background: $carbon--black-100;
+    content: '';
+    position: absolute;
+    height: rem(1px);
+    width: var(--track-width);
+  }
+
+  &:hover,
+  &:active {
+    &::-webkit-slider-thumb {
+      margin-top: rem(-9px);
+      width: rem(18px);
+      height: rem(18px);
+    }
+    &::-moz-range-thumb {
+      margin-top: rem(-9px);
+      width: rem(18px);
+      height: rem(18px);
+    }
+    &::-ms-thumb {
+      margin-top: rem(-2px);
+      width: rem(18px);
+      height: rem(18px);
+    }
+  }
+
+  &:focus {
+    outline: 2px solid $focus;
+    outline-offset: 0;
+  }
+}

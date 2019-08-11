@@ -1,0 +1,28 @@
+@import '../prefix';
+
+.#{$prefix}--back-to-top {
+  width: rem(48px);
+  height: rem(48px);
+  border-radius: rem(24px);
+  background: $carbon--gray-30;
+  border-color: transparent;
+  position: fixed;
+  bottom: rem(50px);
+  right: rem(30px);
+  cursor: pointer;
+  z-index: 9999;
+  padding-top: 0.325rem;
+
+  svg {
+    fill: $carbon--black-100;
+  }
+
+  &:hover {
+    background: $carbon--gray-90;
+    border-color: transparent;
+
+    svg {
+      fill: $carbon--white-0;
+    }
+  }
+}

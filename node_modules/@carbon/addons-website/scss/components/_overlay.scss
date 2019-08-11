@@ -1,0 +1,66 @@
+@import '../prefix';
+
+.#{$prefix}--overlay-content {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: $spacing-07;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  z-index: 17000;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.#{$prefix}--overlay-leftArea {
+  align-self: flex-start;
+  flex-basis: 20%;
+  z-index: 17001;
+}
+
+.#{$prefix}--overlay-centerArea {
+  align-self: center;
+  flex-basis: 60%;
+  z-index: 17002;
+}
+
+.#{$prefix}--overlay-rightArea {
+  align-self: flex-start;
+  color: $carbon--white-0;
+  flex-basis: 20%;
+  z-index: 17003;
+  text-align: right;
+
+  svg {
+    flex-basis: auto;
+  }
+}
+
+.#{$prefix}--overlay-image {
+  height: auto;
+  display: block;
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  user-select: none;
+  background: $ui-background;
+}
+
+.#{$prefix}--overlay-caption {
+  color: $carbon--white-0;
+  position: relative;
+}
+
+.#{$prefix}--overlay-bg {
+  background: $carbon--black-100;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 16;
+}

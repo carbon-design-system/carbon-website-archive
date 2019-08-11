@@ -1,0 +1,74 @@
+@import '../prefix';
+
+.page-content.fourohfour {
+  padding-top: $spacing-07;
+  padding-bottom: 0;
+  background-color: $carbon--gray-100;
+  min-height: calc(100vh - 418px);
+  width: 100%;
+
+  @include carbon--breakpoint('xlg') {
+    padding-top: rem(48px);
+  }
+}
+
+.#{$prefix}--anchor-links.#{$prefix}--anchor-links--small.fourohfour-body__anchor-links
+  .page-ul {
+  margin-top: $spacing-06;
+  margin-bottom: $spacing-07;
+
+  @include carbon--breakpoint('xlg') {
+    margin-bottom: $spacing-09;
+  }
+}
+
+.fourohfour-body__heading {
+  font-size: rem(28px);
+  line-height: rem(36px);
+  margin-bottom: $spacing-06;
+}
+
+.fourohfour-body__404 {
+  display: inline-block;
+  line-height: 1;
+  font-size: rem(200px);
+  background: linear-gradient(35deg, $carbon--teal-20, $carbon--purple-50);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: rem(192px);
+  animation: gradient 2s ease infinite;
+}
+
+.fourohfour-body__heading,
+.fourohfour-body__text,
+.fourohfour-body__anchor-links.#{$prefix}--anchor-links--small .page-ul > li a,
+.fourohfour-body__anchor-links.#{$prefix}--anchor-links--small
+  .page-ul
+  > li
+  a::before {
+  color: $carbon--gray-10;
+}
+
+.fourohfour-body__anchor-links.#{$prefix}--anchor-links--small
+  .page-ul
+  > li
+  a:hover {
+  color: $carbon--blue-40;
+
+  &::before {
+    color: $carbon--blue-40;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

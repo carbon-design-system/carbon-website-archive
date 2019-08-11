@@ -1,0 +1,51 @@
+{
+  "name": "@carbon/addons-website",
+  "version": "0.0.1-alpha.21",
+  "license": "Apache-2.0",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "es",
+    "lib",
+    "scss",
+    "src",
+    "umd"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "yarn clean && rollup -c",
+    "clean": "rimraf es lib umd",
+    "prepublishOnly": "yarn build",
+    "watch": "yarn clean && rollup -c -w"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "7.1.1",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.68.0",
+    "rollup-plugin-babel": "^4.1.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@carbon/grid": "10.1.1",
+    "@carbon/layout": "10.1.1",
+    "@ibm/plex": "^1.4.1",
+    "babel-loader": "^8.0.5",
+    "classnames": "^2.2.6",
+    "lodash.throttle": "^4.1.1",
+    "prismjs": "^1.15.0",
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-scroll-up": "^1.3.3",
+    "react-textarea-autosize": "^7.1.0"
+  }
+}

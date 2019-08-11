@@ -1,0 +1,11 @@
+$font-prefix: '..' !default;
+@font-face {
+  font-family: 'IBM Plex Arabic';
+  font-style: italic;
+  font-weight: 400;
+  src: local('IBM Plex Arabic Italic'),
+    local('IBMPlexArabic-Italic'),
+    url('#{$font-prefix}/IBM-Plex-Arabic/fonts/complete/woff2/IBMPlexArabic-Italic.woff2') format('woff2'),
+    url('#{$font-prefix}/IBM-Plex-Arabic/fonts/complete/woff/IBMPlexArabic-Italic.woff') format('woff');
+}
+

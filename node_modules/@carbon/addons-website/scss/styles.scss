@@ -1,0 +1,40 @@
+@import 'prefix';
+
+@import 'components/website-grid';
+@import 'components/404';
+@import 'components/website-footer';
+@import 'components/website-switcher';
+@import 'components/website-header';
+@import 'components/website-header-nav';
+@import 'components/website-side-nav';
+@import 'components/website-back-to-top-btn';
+@import 'components/typeface-sub-families';
+@import 'components/website-code-snippet';
+@import 'components/website-sticky-container';
+@import 'components/website-input-range';
+@import 'components/website-typeset-example';
+@import 'components/website-typeset-style';
+@import 'components/overlay';
+@import 'components/image-component';
+@import 'components/swatch-palette-widget';
+@import 'components/anchor-links';
+
+@import '@carbon/type/scss/type';
+@import '@carbon/type/scss/font-face/sans';
+@import '@carbon/type/scss/font-face/serif';
+@import '@carbon/type/scss/font-face/mono';
+@import '@carbon/type/scss/classes';
+
+@include carbon--type-reset();
+@include carbon--type-classes();
+@include carbon--font-face-mono();
+@include carbon--font-face-sans();
+
+@import 'components/website-video-internal';
+@import 'components/website-homepage-video';
+@import 'components/website-play-pause-button';
+@import 'components/do-dont-example';
+@import 'components/aspect-ratio-tile';
+@import 'components/type-tester';
+@import 'components/carousel';
+@import 'components/website-non-latin-script';

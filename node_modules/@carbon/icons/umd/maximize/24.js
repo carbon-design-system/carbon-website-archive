@@ -1,0 +1,30 @@
+(function (global, factory) {
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+  typeof define === 'function' && define.amd ? define(factory) :
+  (global.Maximize24 = factory());
+}(this, (function () { 'use strict';
+
+  var _24 = {
+    elem: 'svg',
+    attrs: {
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 32 32',
+      width: 24,
+      height: 24,
+    },
+    content: [
+      {
+        elem: 'path',
+        attrs: {
+          d:
+            'M21 2v2h5.59L17 13.58 18.41 15 28 5.41V11h2V2h-9zm-6 16.42L13.59 17 4 26.59V21H2v9h9v-2H5.41L15 18.42z',
+        },
+      },
+    ],
+    name: 'maximize',
+    size: 24,
+  };
+
+  return _24;
+
+})));

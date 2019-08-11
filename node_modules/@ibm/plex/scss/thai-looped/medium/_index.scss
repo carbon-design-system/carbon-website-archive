@@ -1,0 +1,11 @@
+$font-prefix: '..' !default;
+@font-face {
+  font-family: 'IBM Plex Thai Looped';
+  font-style: normal;
+  font-weight: 500;
+  src: local('IBM Plex Thai Looped Medium'),
+    local('IBMPlexThaiLooped-Medium'),
+    url('#{$font-prefix}/IBM-Plex-Thai-Looped/fonts/complete/woff2/IBMPlexThaiLooped-Medium.woff2') format('woff2'),
+    url('#{$font-prefix}/IBM-Plex-Thai-Looped/fonts/complete/woff/IBMPlexThaiLooped-Medium.woff') format('woff');
+}
+

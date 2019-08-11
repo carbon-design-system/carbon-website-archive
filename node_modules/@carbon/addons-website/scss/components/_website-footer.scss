@@ -1,0 +1,85 @@
+@import '../prefix';
+
+.#{$prefix}--website-footer {
+  @include carbon--type-style('body-short-01');
+  width: 100%;
+  background: $carbon--black-100;
+  color: $carbon--gray-30;
+  position: relative;
+  z-index: 2;
+}
+
+.#{$prefix}--website-footer .#{$prefix}--grid {
+  min-height: 370px;
+  padding-top: $spacing-06;
+  padding-bottom: $spacing-07;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+// Footer nav lists
+.#{$prefix}--website-footer__nav {
+  padding-bottom: rem(40px);
+  margin-bottom: $spacing-06;
+  position: relative;
+
+  &:after {
+    @include carbon--breakpoint('sm') {
+      content: '';
+      background: $carbon--gray-80;
+      width: calc(100% - 2rem);
+      height: 1px;
+      display: block;
+      position: absolute;
+      bottom: 0;
+    }
+
+    @include carbon--breakpoint('md') {
+      display: none;
+    }
+  }
+}
+
+.#{$prefix}--website-footer__nav li {
+  display: block;
+
+  @include carbon--breakpoint('sm') {
+    margin: 0 0 $spacing-03 0;
+  }
+
+  @include carbon--breakpoint('lg') {
+    margin: 0;
+  }
+}
+
+// Footer link styles
+.#{$prefix}--website-footer a {
+  color: $carbon--gray-10;
+  box-shadow: 0 0 currentColor;
+  box-shadow: 0 1px currentColor;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    box-shadow: 0 1px currentColor;
+  }
+
+  &:focus {
+    box-shadow: 0 3px currentColor;
+  }
+}
+
+.#{$prefix}--website-footer .#{$prefix}--website-footer__link {
+  box-shadow: 0 0 currentColor;
+}
+
+.#{$prefix}--website-footer__content,
+.#{$prefix}--website-footer__content p {
+  @include carbon--type-style('body-short-01');
+  padding-bottom: $spacing-05;
+}
+
+.#{$prefix}--website-footer__content p:last-child {
+  padding-bottom: rem(48px);
+}

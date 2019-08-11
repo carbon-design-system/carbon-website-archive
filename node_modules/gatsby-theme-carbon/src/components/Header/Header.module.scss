@@ -1,0 +1,22 @@
+@import '~carbon-components/scss/globals/scss/layout';
+
+.header button {
+  svg {
+    margin-top: $spacing-02;
+  }
+}
+
+header.header {
+  transition: top $duration--fast-02;
+  background-color: $ui-05;
+  border-bottom: 1px solid $inverse-02;
+  z-index: z('floating');
+}
+
+.header.hidden {
+  top: -48px;
+}
+
+.header :global(.bx--header__name):focus {
+  box-shadow: none;
+}

@@ -1,0 +1,30 @@
+(function (global, factory) {
+  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+  typeof define === 'function' && define.amd ? define(factory) :
+  (global.SkipBack20 = factory());
+}(this, (function () { 'use strict';
+
+  var _20 = {
+    elem: 'svg',
+    attrs: {
+      xmlns: 'http://www.w3.org/2000/svg',
+      viewBox: '0 0 32 32',
+      width: 20,
+      height: 20,
+    },
+    content: [
+      {
+        elem: 'path',
+        attrs: {
+          d:
+            'M27 28a1 1 0 0 1-.5-.13l-19-11a1 1 0 0 1 0-1.74l19-11a1 1 0 0 1 1 0A1 1 0 0 1 28 5v22a1 1 0 0 1-1 1zM10 16l16 9.27V6.73zM2 4h2v24H2z',
+        },
+      },
+    ],
+    name: 'skip--back',
+    size: 20,
+  };
+
+  return _20;
+
+})));
