@@ -1,100 +1,22 @@
-//---------------------------------------
-// Carbon Components
-//---------------------------------------
+@import '~carbon-components/scss/globals/scss/_helper-mixins.scss';
 
-@import '@carbon/type/scss/type';
-@import '@carbon/type/scss/font-face/sans';
-@import '@carbon/type/scss/font-face/serif';
-@import '@carbon/type/scss/font-face/mono';
-@import '@carbon/type/scss/classes';
-
-@include carbon--type-reset();
-@include carbon--font-face-mono();
-@include carbon--font-face-sans();
-@include carbon--font-face-serif();
-@include carbon--type-classes();
-
-$feature-flags: (
-  ui-shell: true,
-  grid-columns-16: true,
-);
-
-@import 'carbon-components/scss/globals/scss/styles.scss';
-
-$font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
-$font-family-mono: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono',
-  'Bitstream Vera Sans Mono', Courier, monospace;
-
-//---------------------------------------
-// Page styles
-//---------------------------------------
-
-@import 'overrides';
 @import 'page';
-@import 'color-ui';
+@import 'images';
+@import 'homepage';
+@import 'overrides';
 
-//---------------------------------------
-// Add-on Components
-//---------------------------------------
-
-@import '@carbon/addons-website/scss/components/website-grid';
-@import '@carbon/addons-website/scss/components/404';
-@import '@carbon/addons-website/scss/components/website-footer';
-@import '@carbon/addons-website/scss/components/website-switcher';
-@import '@carbon/addons-website/scss/components/website-header';
-@import '@carbon/addons-website/scss/components/website-header-nav';
-@import '@carbon/addons-website/scss/components/website-side-nav';
-@import '@carbon/addons-website/scss/components/website-back-to-top-btn';
-@import '@carbon/addons-website/scss/components/website-code-snippet';
-@import '@carbon/addons-website/scss/components/overlay';
-@import '@carbon/addons-website/scss/components/image-component';
-@import '@carbon/addons-website/scss/components/website-input-range';
-@import '@carbon/addons-website/scss/components/website-sticky-container';
-@import '@carbon/addons-website/scss/components/website-typeset-style';
-@import '@carbon/addons-website/scss/components/website-typeset-example';
-@import '@carbon/addons-website/scss/components/anchor-links';
-@import '@carbon/addons-website/scss/components/do-dont-example';
-
-//---------------------------------------
-// Components
-//---------------------------------------
-
-@import '../components/markdown/markdown.scss';
-@import '../components/PageHeader/page-header.scss';
-@import '../components/PageTabs/page-tabs.scss';
-@import '../components/ClickableTile/clickable-tile.scss';
-@import '../components/PageTable/page-table.scss';
-@import '../components/EditLink/edit-link.scss';
-@import '../components/ColorBlock/color-block.scss';
-@import '../components/ColorCard/color-card.scss';
-@import '../components/IconCard/icon-card.scss';
-@import '../components/IconLibrary/icon-library.scss';
-@import '../components/IconEmptyState/icon-empty-state.scss';
-@import '../components/TypeScaleTable/type-scale-table.scss';
-@import '../components/TypeWeight/type-weight.scss';
-@import '../components/GlossaryNav/glossary-nav.scss';
-@import '../components/GlossaryList/glossary-list.scss';
-@import '../components/ComponentExample/component-example.scss';
-@import '../components/CodeExample/code-example.scss';
-@import '../components/CodePage/code-page.scss';
-@import '../components/ComponentDocs/component-docs.scss';
-@import '../components/ComponentStatus/component-status.scss';
-@import '../components/ComponentOverview/component-overview.scss';
-@import '../components/GlobalSearch/global-search.scss';
-@import '../components/LeftNav/left-nav.scss';
-@import '../components/Homepage/homepage.scss';
-@import '../components/HomepageVideo/homepage-video.scss';
-@import '../components/NextPrevious/next-previous.scss';
-@import '../components/FeatureTile/feature-tile.scss';
-@import '../components/WebsiteTabs/website-tabs.scss';
-@import '../components/WebsiteAlert/website-alert.scss';
-@import '../components/ColorTokenTable/color-token-table.scss';
-@import '../components/SimpleColumns/simple-columns.scss';
-@import '../components/ImageComponent/image-component.scss';
-
-//---------------------------------------
-// Syntax
-//---------------------------------------
-@import 'prism';
-@import 'syntax';
-@import 'sticky';
+@import 'src/components/CodeExample/code-example.scss';
+@import 'src/components/ColorBlock/color-block.scss';
+@import 'src/components/ColorTokenTable/color-token-table.scss';
+@import 'src/components/ComponentDocs/component-docs.scss';
+@import 'src/components/ComponentExample/component-example.scss';
+@import 'src/components/ComponentOverview/component-overview.scss';
+@import 'src/components/ComponentStatus/component-status.scss';
+@import 'src/components/GlossaryComponent/GlossaryList/glossary-list.scss';
+@import 'src/components/GlossaryComponent/GlossaryNav/glossary-nav.scss';
+@import 'src/components/IconLibrary/icon-library.scss';
+@import 'src/components/TypeScaleTable/type-scale-table.scss';
+@import 'src/components/TypeWeight/type-weight.scss';
+@import 'src/components/HomepageVideo/homepage-video.scss';
+@import 'src/components/TypeSetStyle/typeset-style.scss';
+@import 'src/components/TypeSetStyle/typeset-example.scss';

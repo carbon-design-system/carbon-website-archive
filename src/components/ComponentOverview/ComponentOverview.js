@@ -1,23 +1,29 @@
+/* eslint-disable import/no-dynamic-require */
+/* eslint-disable global-require */
 import React from 'react';
 import { Link } from 'gatsby';
+import componentList from '../../data/components.json';
 
 class ComponentOverview extends React.Component {
   renderItems = currentItem => {
     const component = currentItem.component;
     let componentUrl;
     if (component === 'Multiselect') {
-      componentUrl = '/components/dropdown';
+      componentUrl = '/components/dropdown/code';
     } else if (component === 'UI shell') {
-      componentUrl = '/experimental/ui-shell';
+      componentUrl = '/components/UI-shell-header/code';
     } else {
-      componentUrl = `/components/${component.toLowerCase().replace(' ', '-')}`;
+      componentUrl = `/components/${component
+        .toLowerCase()
+        .replace(' ', '-')}/code`;
     }
 
     let componentImg;
     try {
-      componentImg = require(`../../content/components/overview/images/${component}.svg`);
+      componentImg = require(`./images/${component}.svg`);
     } catch (e) {
-      componentImg = require('../../content/components/overview/images/NoImage.svg');
+      // eslint-disable-next-line global-require
+      componentImg = require('./images/NoImage.svg');
     }
 
     return (
@@ -39,14 +45,13 @@ class ComponentOverview extends React.Component {
   };
 
   render() {
-    const componentList = require('../../data/components.json'); // eslint-disable-line
     return (
       <div className="bx--row">
-        <div className="bx--col-lg-12 bx--offset-lg-4 bx--no-gutter">
+        <div className="bx--col-lg-12 bx--no-gutter">
           <ul className="component-overview">
-            {Object.keys(componentList.components).map(component => {
-              return this.renderItems(componentList.components[component]);
-            })}
+            {Object.keys(componentList.components).map(component =>
+              this.renderItems(componentList.components[component])
+            )}
           </ul>
         </div>
       </div>

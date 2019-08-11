@@ -1,11 +1,8 @@
 {
-  "markdown.styles": [
-    "./.vscode/markdown.css"
-  ],
-  "cSpell.words": [
-    "dropdowns"
-  ],
-  "files.associations": [
-    "*.md": "mdx"
-  ],
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#58150F",
+    "titleBar.activeBackground": "#7B1D15",
+    "titleBar.activeForeground": "#FEFCFC"
+  },
+  "git.ignoreLimitWarning": true
 }

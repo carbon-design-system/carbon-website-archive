@@ -19,7 +19,7 @@ jobs:
       - run:
           name: Confirm project can build
           command: |
-            PATH=$HOME/.yarn/bin:$PATH yarn build:external && yarn storybook:build
+            PATH=$HOME/.yarn/bin:$PATH yarn build
       - deploy:
           name: deploy website to IBM Cloud
           command: |

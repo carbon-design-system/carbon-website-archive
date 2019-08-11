@@ -1,7 +1,7 @@
 import React from 'react';
 import { Search, Loading } from 'carbon-components-react';
-import ClickableTile from '../ClickableTile/ClickableTile';
-import githubIcon from '../../../src/content/resources/images/github-icon.png';
+import ClickableTile from './ClickableTile';
+import MdxIcon from '../MdxIcon';
 
 const sizes = ['16', '20', '24', '32'];
 
@@ -40,11 +40,10 @@ export default class IconLibrary extends React.Component {
   filterIcons = () => {
     this.setState(state => {
       const { icons, searchValue } = state;
-      const filteredIcons = Object.keys(icons).filter(icon => {
-        return (
+      const filteredIcons = Object.keys(icons).filter(
+        icon =>
           searchValue === '' || icon.toLowerCase().indexOf(searchValue) !== -1
-        );
-      });
+      );
       return {
         filteredIcons,
         sections: createIconSections(icons, filteredIcons),
@@ -151,7 +150,7 @@ export default class IconLibrary extends React.Component {
       console.error(errorLoadingIcons); // eslint-disable-line no-console
       return (
         <div className="page bx--row">
-          <div className="bx--col-lg-12 bx--offset-lg-4">
+          <div className="bx--col-lg-12">
             <h3>Yikes! Looks like something went wrong.</h3>
             <p>
               We're still working out some problems in our experimental website.
@@ -172,22 +171,22 @@ export default class IconLibrary extends React.Component {
     if (filteredIcons.length === 0) {
       return (
         <div className="page bx--row">
-          <div className="bx--col-lg-8 bx--offset-lg-4 bx--no-gutter-md bx--no-gutter-lg">
+          <div className="bx--col-lg-8 bx--no-gutter-md bx--no-gutter-lg">
             {search}
           </div>
-          <div className="icon-search--message bx--col-lg-12 bx--offset-lg-4">
+          <div className="icon-search--message bx--col-lg-12">
             <p className="icon-search--message__no-results">
               It appears we don’t have an icon that matches your search. Try
               different search terms or give us a hand—submit your own design to
               the library!
             </p>
           </div>
-          <div className="bx--offset-lg-4 bx--col-lg-4 bx--col-md-3 bx--col-sm-4 bx--no-gutter-sm bx--no-gutter-md bx--no-gutter-lg">
+          <div className="bx--col-lg-4 bx--col-md-3 bx--col-sm-4 bx--no-gutter-sm bx--no-gutter-md bx--no-gutter-lg">
             <ClickableTile
               title="Submit an icon design."
               href="https://github.com/carbon-design-system/carbon/tree/master/packages/icons"
               type="resource">
-              <img src={githubIcon} />
+              <MdxIcon name="github" />
             </ClickableTile>
           </div>
         </div>
@@ -196,21 +195,18 @@ export default class IconLibrary extends React.Component {
 
     return (
       <div className="page bx--row">
-        <div className="icon-search--wrapper bx--col-lg-8 bx--offset-lg-4 bx--no-gutter-md bx--no-gutter-lg">
+        <div className="icon-search--wrapper bx--col-lg-8 bx--no-gutter-md bx--no-gutter-lg">
           {search}
           {this.state.searchValue || this.state.searchValue !== '' ? (
             <p className="icon-search--status">
               {filteredIcons.length} matches found! Or clear to{' '}
-              <a href="#" onClick={this.handleClearSearch}>
-                view all
-              </a>{' '}
-              icons.
+              <button onClick={this.handleClearSearch}>view all</button> icons.
             </p>
           ) : (
             ''
           )}
         </div>
-        <div className="bx--col-lg-12 bx--offset-lg-4 bx--no-gutter-sm bx--no-gutter-md bx--no-gutter-lg">
+        <div className="bx--col-lg-12 bx--no-gutter-sm bx--no-gutter-md bx--no-gutter-lg">
           {sections}
         </div>
       </div>
@@ -270,20 +266,18 @@ function createIconSections(icons, filteredIcons) {
       }
       return groups[size].length !== 0;
     })
-    .map(size => {
-      return (
-        <section key={size} className="icon-size" aria-labelledby={`icon-h2`}>
-          <header>
-            <h2 className={`icon-h2`}>
-              {isNaN(size) ? size : `${size}x${size}`}
-            </h2>
-          </header>
-          <ul className="icons-list">
-            {renderIconList(groups[size], filteredIcons)}
-          </ul>
-        </section>
-      );
-    });
+    .map(size => (
+      <section key={size} className="icon-size" aria-labelledby={`icon-h2`}>
+        <header>
+          <h2 className={`icon-h2`}>
+            {isNaN(size) ? size : `${size}x${size}`}
+          </h2>
+        </header>
+        <ul className="icons-list">
+          {renderIconList(groups[size], filteredIcons)}
+        </ul>
+      </section>
+    ));
 }
 
 /**
