@@ -126,7 +126,7 @@ $ yarn add carbon-components @carbon/vue @carbon/icons-vue
 
 ## Other dependencies
 
-If you checkout the file `package.json` on you'll notice a few dependencies beyond those listed above. These were installed as part of the project creation using the Vue CLI. These include:
+If you check out the file `package.json`, you'll notice a few dependencies beyond those listed above. These were installed as part of the project creation using the Vue CLI. These include:
 
 - vue-router: Used to make routing in Vue apps simpler
 - @vue/cli-plugin-babel: To ensure we produce well supported code.
@@ -162,7 +162,7 @@ The app looks as it did before. Next, let's add Carbon styling.
 
 ### Import carbon-component styles
 
-In the `src` directory, create a sub-directory `styles` and add the file `_carbon.scss` to it. Then in `App.vue` edit the style tag to import it.
+In the `src` directory, create a sub-directory `styles` and add a new file `_carbon.scss` to it. Then in `App.vue` edit the style tag to import it.
 
 #### src/App.vue
 
@@ -201,7 +201,7 @@ Vue.use(CarbonComponentsVue);
 
 This is a quick way to pull in all @carbon/vue components and register them for use in your project. Individual components can be imported to a project or component.
 
-e.g Instead of modifying src/main.js we could have added the following to src/App.vue
+e.g. Instead of modifying src/main.js we could have added the following to src/App.vue:
 
 ##### src/App.vue
 
@@ -217,7 +217,7 @@ export default {
 </script>
 ```
 
-See [here](https://github.com/carbon-design-system/carbon-components-vue/blob/master/packages/core/README.md#using-the-components-directly-or-individually) for other ways to load components from @carbon/vue components.
+See the Carbon Vue Components [documentation](https://github.com/carbon-design-system/carbon-components-vue/blob/master/packages/core/README.md#using-the-components-directly-or-individually) for other ways to load components from @carbon/vue components.
 
 In this tutorial we will stick to importing all of the components at once so we can focus on our use of @carbon/vue.
 
@@ -253,7 +253,7 @@ NOTE: In this tutorial you can use either tag format. The [Vue style guide](http
 
 ## Add UI Shell
 
-Next we're going to create a Vue component called `TutorialHeader` to use with the UI Shell Carbon component. In the `src/components` directory, create `TutorialHeader` directory. Create the following files inside `src/components/TutorialHeader`:
+Next we're going to create a Vue component called `TutorialHeader` to use with the UI Shell Carbon component. Create a new directory `src/components`. In the `src/components` directory, create `TutorialHeader` directory. Create the following files inside `src/components/TutorialHeader`:
 
 ```bash
 src/components/TutorialHeader
@@ -279,7 +279,7 @@ _Note: We could have simply created a file src/components/TutorialHeader.vue wit
 
 #### Lazyness - VSCode users only
 
-Now as a lazy programmer I like to take short cuts in my day, you should too. If you are using VSCode then you might want to add the following snippet which will when you type 'index' generate an index file for you based on the folder name.
+If you are using VSCode then you might want to add the following snippet which will when you type 'index' generate an index file for you based on the folder name.
 
 ##### javascript.json
 
@@ -298,7 +298,7 @@ Now as a lazy programmer I like to take short cuts in my day, you should too. If
   }
 ```
 
-I also use the following to create a skeleton component of the form I typically use. To use this one start typing the word teamplate in your template file and it will generate a file maiking assumptions based on the compoent file name.
+You can also use the following to create a skeleton component. To use this one, start typing the word template in your template file and it will generate a file, making assumptions based on the component file name.
 
 ##### vue.json
 
@@ -346,7 +346,7 @@ OK, back to using Carbon components. Let's make use of our Carbon UI Shell compo
 </template>
 ```
 
-_Note: you can find a description of the different components used UI Shell in our [carbon-componets-vue](http://vue.carbondesignsystem.com/?path=/story/components-cvuishell-header) package._
+_Note: you can find a description of the different components used in UI Shell in our [carbon-componets-vue](http://vue.carbondesignsystem.com/?path=/story/components-cvuishell-header) package._
 
 _Note: When creating navigation headers, it's important to have a_ `Skip to content` _link so keyboard users can skip the navigation items and go straight to the main content._
 
@@ -572,7 +572,7 @@ After that we need to do a couple quick fixes to the UI Shell to have it work wi
 
 ##### src/components/TutorialHeader/TutorialHeader.vue
 
-In `src/components/TuturialHeader/TutorialHeader.vue` simpmly replace the `href` attributes used in the `cv-header-name` and `cv-header-menu-item` components with `to`. @carbon/vue will under the covers switch from use of an `a` tag to `router-link`.
+In `src/components/TuturialHeader/TutorialHeader.vue` simply replace the `href` attributes used in the `cv-header-name` and `cv-header-menu-item` components with `to`. @carbon/vue will under the covers switch from use of an `a` tag to `router-link`.
 
 ```html
 <cv-header-name to="/" prefix="IBM">Carbon Tutorial</cv-header-name>
@@ -588,7 +588,7 @@ You should now have a working header that routes to different pages without full
 
 ## Submit pull request
 
-We're going to submit a pull request to verify completion of this tutorial step and demonstrate a couple related concepts.
+We're going to submit a pull request to verify completion of this tutorial step and demonstrate a couple of related concepts.
 
 <!-- The following section is outcommented because it is not working: the ci-check
      script is missing from package.json -->
@@ -626,6 +626,6 @@ _Note: If you receive a_ `non-fast-forward` _error, it's likely that your forked
 
 ### Pull request (PR)
 
-Finally, visit [carbon-tutorial-vue](https://github.com/carbon-design-system/carbon-tutorial-vue) to "Compare & pull request". In doing so, make sure that you are comparing to `vue-step-1` into `base: vue-step-1`. Take notice of the [Netlify](https://www.netlify.com) bot that deploys a preview of your PR every time that you push new commits. These previews can be shared and viewed by anybody to assist the PR review process.
+Finally, visit [carbon-tutorial-vue](https://github.com/carbon-design-system/carbon-tutorial-vue) to "Compare & create pull request". In doing so, make sure that you are comparing your repository's `vue-step-1` branch into `base: vue-step-1`. Take notice of the [Netlify](https://www.netlify.com) bot that deploys a preview of your PR every time that you push new commits. These previews can be shared and viewed by anybody to assist the PR review process.
 
 _Note: Expect your tutorial step PRs to be reviewed by the Carbon team but not merged. We'll close your PR so we can keep the repository's remote branches pristine and ready for the next person!_
