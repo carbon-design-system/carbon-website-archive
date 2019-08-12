@@ -9,7 +9,7 @@
     "clean": "gatsby clean",
     "build": "yarn timestamp && gatsby clean && gatsby build",
     "build:external": "yarn build",
-    "ci-check": "yarn format:diff && yarn lint",
+    "ci-check": "yarn format:diff && yarn lint:js",
     "lint:js": "eslint src --fix",
     "format": "prettier --write \"**/*.{scss,css,js,md}\"",
     "format:staged": "prettier --write",
