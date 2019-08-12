@@ -16,7 +16,7 @@ jobs:
       - run:
           name: Confirm project can build
           command: |
-            PATH=$HOME/.yarn/bin:$PATH yarn build
+            PATH=$HOME/.yarn/bin:$PATH GATSBY_CPU_COUNT=2 yarn build
       - deploy:
           name: deploy website to IBM Cloud
           command: |
