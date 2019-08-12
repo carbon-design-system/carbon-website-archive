@@ -11,7 +11,9 @@
     "build:external": "yarn build",
     "ci-check": "yarn format:diff && yarn lint",
     "lint:js": "eslint src --fix",
-    "format": "prettier --write 'src/**/*.{js,json,css,scss,md,mdx,yaml}'",
+    "format": "prettier --write \"**/*.{scss,css,js,md}\"",
+    "format:staged": "prettier --write",
+    "format:diff": "prettier --list-different \"**/*.{scss,css,js,md}\"",
     "timestamp": "./build-timestamp.sh"
   },
   "dependencies": {
