@@ -14,9 +14,6 @@ jobs:
           name: Install dependencies from offline mirror
           command: PATH=$HOME/.yarn/bin:$PATH yarn install --offline
       - run:
-          name: Run Continuous Integration checks
-          command: PATH=$HOME/.yarn/bin:$PATH yarn ci-check
-      - run:
           name: Confirm project can build
           command: |
             PATH=$HOME/.yarn/bin:$PATH yarn build
