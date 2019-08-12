@@ -268,9 +268,8 @@ In `src/components/TutorialHeader/index.js`, import and export our `TutorialHead
 ##### src/components/TutorialHeader/index.js
 
 ```javascript
-import TutorialHeader from "./TutorialHeader";
+import TutorialHeader from './TutorialHeader';
 export default TutorialHeader;
-
 ```
 
 _Note: This index.js files import/export is simply a convenience to shorten the path used to import the component and potentially import multiple components from one folder. The folder also provides us a handy location to add tests or documentation for the component._
@@ -350,7 +349,7 @@ _Note: you can find a description of the different components used in UI Shell i
 
 _Note: When creating navigation headers, it's important to have a_ `Skip to content` _link so keyboard users can skip the navigation items and go straight to the main content._
 
-_Note: It's important that the_ `TutorialHeader` _returns the Carbon_ `CvHeader` _as it's containing element, as we'll later be rendering_ `TutorialHeader` _in_ `App.vue` _as a preceeding sibling of_ `Content`_, another UI Shell component. Those components need to live one after another for the UI Shell to properly render._
+_Note: It's important that the_ `TutorialHeader` has the Carbon* `CvHeader` \_as it's containing element, as we'll later be rendering* `TutorialHeader` _in_ `App.vue` _as a preceeding sibling of_ `Content`_, another UI Shell component. Those components need to live one after another for the UI Shell to properly render._
 
 ### Import icons
 
@@ -476,9 +475,8 @@ Starting with `LandingPage`, just like with our header, we need to export the co
 ##### src/view/LandingPage/index.js
 
 ```javascript
-import LandingPage from "./LandingPage";
+import LandingPage from './LandingPage';
 export default LandingPage;
-
 ```
 
 Next in `LandingPage.vue` we'll create our component.
@@ -489,7 +487,6 @@ Next in `LandingPage.vue` we'll create our component.
 <template>
   <div>LANDING PAGE</div>
 </template>
-
 ```
 
 We'll repeat this process with `RepoPage`.
@@ -499,9 +496,8 @@ In `src/view/RepoPage/index.js`, import and export the `RepoPage` component like
 ##### src/view/RepoPage/index.js
 
 ```javascript
-import RepoPage from "./RepoPage";
+import RepoPage from './RepoPage';
 export default RepoPage;
-
 ```
 
 Then in `RepoPage.vue` create the component.
@@ -512,7 +508,6 @@ Then in `RepoPage.vue` create the component.
 <template>
   <div>REPO PAGE</div>
 </template>
-
 ```
 
 Awesome! We've just created our content pages. Next thing we need to do is render them with our router.
@@ -526,27 +521,27 @@ Lucky for you, as part of the Vue CLI project set up we added vue-router. This c
 We need to adjust it by replacing the contents of `src/router.js` with:
 
 ```javascript
-import Vue from "vue";
-import Router from "vue-router";
-import LandingPage from "./views/LandingPage";
+import Vue from 'vue';
+import Router from 'vue-router';
+import LandingPage from './views/LandingPage';
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: "/",
-      name: "landing-page",
+      path: '/',
+      name: 'landing-page',
       component: LandingPage,
     },
     {
-      path: "/repos",
-      name: "repo-page",
+      path: '/repos',
+      name: 'repo-page',
       // route level code-splitting
       // this generates a separate chunk (repo-page.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () =>
-        import(/* webpackChunkName: "repo-page" */ "./views/RepoPage"),
+        import(/* webpackChunkName: "repo-page" */ './views/RepoPage'),
     },
   ],
 });
