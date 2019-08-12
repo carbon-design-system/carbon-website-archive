@@ -1,6 +1,6 @@
 # Carbon Design System
 
-This is the [Carbon Design System website](http://www.carbondesignsystem.com) which is built using GatsbyJS.
+This is the [Carbon Design System website](http://www.carbondesignsystem.com) which is built using the [gatsby-theme-carbon](https://gatsby-theme-carbon.now.sh/) with GatsbyJS.
 
 ## 📂 Structure
 
@@ -18,8 +18,8 @@ src
 ## 👩‍💻 Development
 
 - 🤝 [Contribution Guidelines](.github/CONTRIBUTING.md)
-- 📚 [Content/Markdown Guidelines](docs/CONTENT.md)
-- 🗺 [Navigation Guidelines](docs/NAVIGATION.md)
+- 📚 [Content/Markdown Guidelines](https://gatsby-theme-carbon.now.sh/components/markdown)
+- 🗺 [Navigation Guidelines](https://gatsby-theme-carbon.now.sh/guides/navigation/sidebar)
 
 Install dependencies:
 
