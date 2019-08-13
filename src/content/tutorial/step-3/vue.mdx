@@ -75,6 +75,8 @@ You should see something similar to where the [previous step](/tutorial/step-2/v
 
 We'll shortcut this using the Vue CLI, if you'd like more information head over to [Vue Apollo Installation](https://vue-apollo.netlify.com/guide/installation.html#vue-cli-plugin) for details.
 
+_Note: If you have not yet installed the Vue CLI, you will need to [install the Vue CLI](https://cli.vuejs.org/) before running the Vue Apollo Installation._
+
 Install the following
 
 - `apollo-boost` - package containing everything you need to set up Apollo Client
@@ -102,6 +104,8 @@ When you get to the scope/permissions step, you can leave them all unchecked. We
 Once you have your token, we need to put it in a place where create-vue-app can use it. When your application is being built and developed, create-vue-app will parse environmental variables in any file that starts with `.env` and make them available under `process.env.MY_VARIABLE`.
 
 One caveat is that we need to start our variables with `VUE_APP_`. You can read more about environmental variables in [create-vue-app's guide](https://facebook.github.io/create-vue-app/docs/adding-custom-environment-variables).
+
+_Note: If you already have a valid GitHub Personal Access Token, you can use that token here._
 
 Since we don't want to commit this file to Git, we can put it in `.env.local` which is in our `.gitignore` list. Your file should just have a single line like this one, where the `x`s are replaced with your unique token.
 
@@ -472,7 +476,7 @@ Let's start by adjusting our `PageTable' component template to add pagination. I
 <!-- prettier-ignore-end -->
 
 _Note: ':prop' is an abbreviation of 'v-bind:prop'_
-_Note: '@event' is an abreviation of 'v-on:event'_
+_Note: '@event' is an abbreviation of 'v-on:event'_
 
 In the pagination event we've used $emit and $event to re-raise the pagination event to our `RepoPage` component so that it can arrange to pass only the rows we want to see to the `RepoTable` component.
 
