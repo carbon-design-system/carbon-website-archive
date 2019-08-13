@@ -111,7 +111,7 @@ export { InfoSection, InfoCard };
 
 Let's create the parent component that includes the "The Principles" heading. That markup currently looks like this in `LandingPage.vue`:
 
-##### src/content/LandingPage/LandingPage.vue
+##### src/views/LandingPage/LandingPage.vue
 
 ```html
 <div class="bx--row landing-page__r3">
@@ -226,7 +226,7 @@ _Note: At extra large viewports, we are using _`bx--col-xlg-3 bx--offset-xlg-1`_
 
 Our styling is not complete yet, but with our components built let's put them to use. In `LandingPage.vue`, import the components towards the top of the script section. If you havent added a script section, do so now.
 
-##### src/content/LandingPage/LandingPage.vue
+##### src/views/LandingPage/LandingPage.vue
 
 ```javascript
 <script>
@@ -241,7 +241,7 @@ export default {
 
 While we're at the here next to the component imports let's, import the icons that we'll need as well.
 
-##### src/content/LandingPage/LandingPage.vue
+##### src/views/LandingPage/LandingPage.vue
 
 ```javascript
 import Globe32 from '@carbon/icons-vue/lib/globe/32';
@@ -255,7 +255,7 @@ Don't forget to add the icons to the list of components used in our template. Wa
 
 In the script section of the component add the lifecycle method `created()` to add the icons to the component.
 
-##### src/content/LandingPage/LandingPage.vue
+##### src/views/LandingPage/LandingPage.vue
 
 ```javascript
   created() {
@@ -270,7 +270,7 @@ In the script section of the component add the lifecycle method `created()` to a
 
 With everything imported, replace the current template content:
 
-##### src/content/LandingPage/LandingPage.vue
+##### src/views/LandingPage/LandingPage.vue
 
 ```html
 <div class="bx--row landing-page__r3">
@@ -285,7 +285,7 @@ With everything imported, replace the current template content:
 
 With the new components:
 
-##### src/content/LandingPage/LandingPage.vue
+##### src/views/LandingPage/LandingPage.vue
 
 <!-- prettier-ignore-start -->
 ```html
@@ -296,7 +296,7 @@ With the new components:
 
 Then slot the `InfoCard` content inside the `InfoSection` tag to give.
 
-##### src/content/LandingPage/LandingPage.vue
+##### src/views/LandingPage/LandingPage.vue
 
 <!-- prettier-ignore-start -->
 ```html
