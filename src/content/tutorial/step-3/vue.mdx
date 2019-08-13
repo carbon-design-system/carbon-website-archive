@@ -240,7 +240,7 @@ Revert this last change and continue.
 
 This data is not quite in the format our RepoTable component is expecting so we'll use a computed property to transform it. Computed properties in Vue cache and watch their reactive dependencies for us.
 
-Remove 'rows' constant and the data declaration and add this computed property.
+Remove 'rows' constant and it's use in the data declaration and add this computed property.
 
 ##### src/content/RepoPage/RepoPage.vue
 
@@ -502,14 +502,19 @@ replacing
 :rows="rows"
 ```
 
-Next in the data property of our component add the following to support our pagination.
+Next in the data property of our component add values for pageSize, pageStart and page into the data method return to support our pagination.
 
 ##### src/content/RepoPage/RepoPage.vue
 
 ```javascript
-  pageSize: 0,
-  pageStart: 0,
-  page: 0
+  data() {
+    return {
+      headers,
+      pageSize: 0,
+      pageStart: 0,
+      page: 0
+    };
+  },,
 ```
 
 _Note: We could have passed values for pageSize and page into our pagination component if we had a specific page or page size we wanted to start with. Instead we are relying on the pagination component to set some sensible defaults and provide us with the details through an event._
