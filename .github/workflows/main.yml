@@ -19,4 +19,4 @@ jobs:
     - name: install and build
       run: |
         yarn install
-        yarn build
+        yarn build:external
