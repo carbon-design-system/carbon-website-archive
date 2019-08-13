@@ -11,8 +11,8 @@ jobs:
           command: |
             curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.15.2
       - run:
-          name: Install dependencies from offline mirror
-          command: PATH=$HOME/.yarn/bin:$PATH yarn install --offline
+          name: Install dependencies
+          command: PATH=$HOME/.yarn/bin:$PATH yarn install
       - run:
           name: Confirm project can build
           command: |
