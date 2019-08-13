@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:10.15.3
+      - image: circleci/node:10.15-browsers
     working_directory: ~/repo
     resource_class: xlarge
     steps:
