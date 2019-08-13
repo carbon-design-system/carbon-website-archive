@@ -8,7 +8,7 @@
     "dev:clean": "yarn timestamp && gatsby clean && gatsby develop",
     "clean": "gatsby clean",
     "build:external": "yarn build",
-    "build": "yarn timestamp && cross-env GATSBY_CPU_COUNT=logical_cores GATSBY_DB_NODES=loki node --max-old-space-size=8192 ./node_modules/.bin/gatsby build",
+    "build": "yarn timestamp && node --max-old-space-size=8192 ./node_modules/.bin/gatsby build",
     "build:clean": "gatsby clean && yarn build",
     "ci-check": "yarn format:diff",
     "lint:js": "eslint src --fix",
