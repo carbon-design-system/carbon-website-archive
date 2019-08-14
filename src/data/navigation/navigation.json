@@ -211,26 +211,6 @@
       }
     }
   },
-  "experimental": {
-    "title": "Experimental",
-    "sub-nav": {
-      "about": {
-        "title": "About"
-      },
-      "chatbot": {
-        "title": "Chatbots"
-      },
-      "export-pattern": {
-        "title": "Export pattern"
-      },
-      "navigation-pattern": {
-        "title": "Navigation pattern"
-      },
-      "deleting": {
-        "title": "Deleting pattern"
-      }
-    }
-  },
   "patterns": {
     "title": "Patterns",
     "sub-nav": {
@@ -248,6 +228,26 @@
       },
       "overflow-content": {
         "title": "Overflow content"
+      }
+    }
+  },
+  "experimental": {
+    "title": "Experimental",
+    "sub-nav": {
+      "about": {
+        "title": "About"
+      },
+      "chatbot": {
+        "title": "Chatbots"
+      },
+      "export-pattern": {
+        "title": "Export pattern"
+      },
+      "navigation-pattern": {
+        "title": "Navigation pattern"
+      },
+      "deleting": {
+        "title": "Deleting pattern"
       }
     }
   },
@@ -271,20 +271,23 @@
       },
       "pattern": {
         "title": "Patterns"
+      },
+      "add-ons": {
+        "title": "Add-ons"
       }
     }
   },
   "updates": {
     "title": "Updates",
     "sub-nav": {
-      "release-information": {
-        "title": "Release information"
-      },
-      "v10-migration": {
-        "title": "Migrate to v10"
+      "whats-new": {
+        "title": "What's new"
       },
       "roadmap": {
         "title": "Roadmap"
+      },
+      "v10-migration": {
+        "title": "Migrate to v10"
       }
     }
   },
