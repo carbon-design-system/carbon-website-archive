@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:10.15-browsers
+      - image: circleci/node:10
     working_directory: ~/repo
     steps:
       - checkout
@@ -16,7 +16,7 @@ jobs:
       - run:
           name: Confirm project can build
           command: |
-            PATH=$HOME/.yarn/bin:$PATH yarn build
+            PATH=$HOME/.yarn/bin:$PATH GATSBY_CPU_COUNT=8 yarn build
       - deploy:
           name: deploy website to IBM Cloud
           command: |
