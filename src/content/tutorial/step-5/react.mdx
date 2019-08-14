@@ -170,23 +170,16 @@ You can speed up deploys by decreasing the files uploaded through IBM Cloud. To 
 
 ## Deploy app
 
-Login to IBM Cloud using the endpoint associated with your IBM Cloud region (to determine the region your IBM Cloud account is associated with, go to https://cloud.ibm.com and login into your account. Then go to `Manage` -> `Account` and on the left menu select `Cloud Foundry orgs`. You will see your organization (most likely named by your email address). Click on it and you will see the region): 
-
-The endpoint will be one of the following: 
-* api.us-south.cf.cloud.ibm.com (previously api.ng.bluemix.net)
-* api.eu-gb.cf.cloud.ibm.com (previously api.eu-gb.bluemix.net)
-* api.us-east.cf.cloud.ibm.com (previously api.us-east.bluemix.net)
-* api.eu-de.cf.cloud.ibm.com (previously api.eu-de.bluemix.net)
-* api.au-syd.cf.cloud.ibm.com (previously api.au-syd.bluemix.net)
+Login to IBM Cloud.
 
 ```bash
-$ ibmcloud login -a <cf-endpoint> -sso
+$ cf login -sso
 ```
 
-Deploy app using the `ibmcloud cf push` command. Since `manifest.yml` is in our root directory, we don't need to specify it in the push command. But, if you have multiple manifest files that target different environments, it's good practice to specify the file.
+Deploy app using the `cf push` command. Since `manifest.yml` is in our root directory, we don't need to specify it in the push command. But, if you have multiple manifest files that target different environments, it's good practice to specify the file.
 
 ```bash
-$ ibmcloud cf push -f manifest.yml
+$ cf push -f manifest.yml
 ```
 
 To make it easy on ourselves by not needing to remember that command, let's add a script in `package.json`. We can combine the build and deploy steps to make sure we only deploy immediately after running the build. In the `"scripts"` object in `package.json`, add:
