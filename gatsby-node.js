@@ -7,8 +7,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
   // If the node type (file) is a markdown file
   if (node.internal.type === 'Mdx') {
-    const dir = path.resolve(__dirname, '');
-    const fileNode = getNode(node.parent);
     const slug = createFilePath({
       node,
       getNode,
@@ -102,10 +100,62 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     });
+
+    [
+      {
+        fromPaths: [
+          '/tutorial/react-step-1',
+          '/tutorial/react-step-1/',
+          '/tutorial/react-step-1/index.html',
+        ],
+        toPath: '/tutorial/step-1',
+      },
+      {
+        fromPaths: [
+          '/tutorial/react-step-2',
+          '/tutorial/react-step-2/',
+          '/tutorial/react-step-2/index.html',
+        ],
+        toPath: '/tutorial/step-2',
+      },
+      {
+        fromPaths: [
+          '/tutorial/react-step-3',
+          '/tutorial/react-step-3/',
+          '/tutorial/react-step-3/index.html',
+        ],
+        toPath: '/tutorial/step-3',
+      },
+      {
+        fromPaths: [
+          '/tutorial/react-step-4',
+          '/tutorial/react-step-4/',
+          '/tutorial/react-step-4/index.html',
+        ],
+        toPath: '/tutorial/step-4',
+      },
+      {
+        fromPaths: [
+          '/tutorial/react-step-5',
+          '/tutorial/react-step-5/',
+          '/tutorial/react-step-5/index.html',
+        ],
+        toPath: '/tutorial/step-5',
+      },
+    ].forEach(redirect => {
+      redirect.fromPaths.forEach(fromPath => {
+        createRedirect({
+          redirectInBrowser: true,
+          permanent: true,
+          fromPath,
+          toPath: redirect.toPath,
+        });
+      });
+    });
   });
 };
 
-exports.onCreateWebpackConfig = ({ actions, getConfig, stage, loaders }) => {
+exports.onCreateWebpackConfig = ({ actions, loaders }) => {
   actions.setWebpackConfig({
     module: {
       rules: [
@@ -135,6 +185,7 @@ exports.onPostBuild = () => {
   try {
     src = path.resolve(path.dirname(require.resolve('carbon-icons')), 'svg');
   } catch (err) {
+    /* eslint-disable-next-line no-console */
     console.error('Error locating the icons directory', err.stack);
     return;
   }
