@@ -146,7 +146,7 @@ exports.createPages = ({ actions, graphql }) => {
       redirect.fromPaths.forEach(fromPath => {
         createRedirect({
           redirectInBrowser: true,
-          permanent: true,
+          isPermanent: true,
           fromPath,
           toPath: redirect.toPath,
         });
