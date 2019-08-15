@@ -64,7 +64,7 @@ export default class LeftNavItem extends React.Component {
       const isNavItemActive = locationContainsPath(location, [itemSlug, item]);
 
       let framework = '';
-      if (itemSlug === 'tutorial' && location.href) {
+      if (itemSlug === 'tutorial') {
         const checkFramework = location.href.match(
           /\/tutorial\/[a-zA-Z0-9-_]+\/([a-zA-Z0-9-_]*)/
         );
