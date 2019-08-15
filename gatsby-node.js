@@ -104,11 +104,19 @@ exports.createPages = ({ actions, graphql }) => {
     [
       {
         fromPaths: [
+          '/tutorial/overview',
+          '/tutorial/overview/',
+          '/tutorial/overview/index.html',
+        ],
+        toPath: '/tutorial/react/overview',
+      },
+      {
+        fromPaths: [
           '/tutorial/react-step-1',
           '/tutorial/react-step-1/',
           '/tutorial/react-step-1/index.html',
         ],
-        toPath: '/tutorial/step-1',
+        toPath: '/tutorial/react/step-1',
       },
       {
         fromPaths: [
@@ -116,7 +124,7 @@ exports.createPages = ({ actions, graphql }) => {
           '/tutorial/react-step-2/',
           '/tutorial/react-step-2/index.html',
         ],
-        toPath: '/tutorial/step-2',
+        toPath: '/tutorial/react/step-2',
       },
       {
         fromPaths: [
@@ -124,7 +132,7 @@ exports.createPages = ({ actions, graphql }) => {
           '/tutorial/react-step-3/',
           '/tutorial/react-step-3/index.html',
         ],
-        toPath: '/tutorial/step-3',
+        toPath: '/tutorial/react/step-3',
       },
       {
         fromPaths: [
@@ -132,7 +140,7 @@ exports.createPages = ({ actions, graphql }) => {
           '/tutorial/react-step-4/',
           '/tutorial/react-step-4/index.html',
         ],
-        toPath: '/tutorial/step-4',
+        toPath: '/tutorial/react/step-4',
       },
       {
         fromPaths: [
@@ -140,7 +148,15 @@ exports.createPages = ({ actions, graphql }) => {
           '/tutorial/react-step-5/',
           '/tutorial/react-step-5/index.html',
         ],
-        toPath: '/tutorial/step-5',
+        toPath: '/tutorial/react/step-5',
+      },
+      {
+        fromPaths: [
+          '/tutorial/wrapping-up',
+          '/tutorial/wrapping-up/',
+          '/tutorial/wrapping-up/index.html',
+        ],
+        toPath: '/tutorial/react/wrapping-up',
       },
     ].forEach(redirect => {
       redirect.fromPaths.forEach(fromPath => {
