@@ -14,28 +14,13 @@
     }
   },
   "tutorial": {
-    "title": "Tutorial",
+    "title": "Tutorials",
     "sub-nav": {
-      "overview": {
-        "title": "Overview"
+      "react": {
+        "title": "React"
       },
-      "react-step-1": {
-        "title": "1. Installing Carbon"
-      },
-      "react-step-2": {
-        "title": "2. Building pages"
-      },
-      "react-step-3": {
-        "title": "3. Using APIs"
-      },
-      "react-step-4": {
-        "title": "4. Creating components"
-      },
-      "react-step-5": {
-        "title": "5. Deploying to IBM Cloud"
-      },
-      "wrapping-up": {
-        "title": "Wrapping up"
+      "vue": {
+        "title": "Vue"
       }
     }
   },
