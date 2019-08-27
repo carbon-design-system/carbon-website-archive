@@ -1,6 +1,8 @@
 ---
 title: 2. Building pages
 internal: false
+tabs:
+  ['Overview', 'Step 1', 'Step 2', 'Step 3', 'Step 4', 'Step 5', 'Wrapping up']
 ---
 
 ### Now that we have a React app using the UI Shell, it's time to build a few static pages. In this step, we'll become comfortable with the Carbon grid and various Carbon components.
@@ -39,7 +41,7 @@ A [preview](https://react-step-3--carbon-tutorial.netlify.com) of what you'll bu
 
 ## Fork, clone and branch
 
-This tutorial has an accompanying GitHub repository called [carbon-tutorial](https://github.com/carbon-design-system/carbon-tutorial) that we'll use as a starting point for each step. If you haven't forked and cloned that repository yet, and haven't added the upstream remote, go ahead and do so by following the [step 1 instructions](/tutorial/react-step-1#fork-clone--branch).
+This tutorial has an accompanying GitHub repository called [carbon-tutorial](https://github.com/carbon-design-system/carbon-tutorial) that we'll use as a starting point for each step. If you haven't forked and cloned that repository yet, and haven't added the upstream remote, go ahead and do so by following the [step 1 instructions](/tutorial/react/step-1#fork-clone-and-branch).
 
 ### Branch
 
@@ -66,7 +68,7 @@ Then, start the app:
 $ yarn start
 ```
 
-You should see something similar to where the [previous step](/tutorial/react-step-1) left off.
+You should see something similar to where the [previous step](/tutorial/react/step-1) left off.
 
 ### IE11 polyfills
 
@@ -119,7 +121,7 @@ We've included the designs for this tutorial app in the `design.sketch` file fou
 
 <ImageComponent cols="12" caption="Landing page grid">
 
-![Landing page grid](/images/landing-layout.png)
+![Landing page grid](../shared/step-2/images/landing-layout.png)
 
 </ImageComponent>
 
@@ -387,7 +389,7 @@ We've added basic layout styles in `_landing-page.scss`, so now let's add type, 
 
 <ImageComponent cols="8" caption="Banner vertical spacing">
 
-![Banner vertical spacing](/images/landing-r1-spacing.png)
+![Banner vertical spacing](../shared/step-2/images/landing-r1-spacing.png)
 
 </ImageComponent>
 
@@ -455,7 +457,7 @@ Next, we can see that the `h1` is using the `heading-05` type token.
 
 <ImageComponent cols="8" caption="Banner heading type">
 
-![Banner heading type](/images/landing-r1-type.png)
+![Banner heading type](../shared/step-2/images/landing-r1-type.png)
 
 </ImageComponent>
 
@@ -485,7 +487,7 @@ We also need to adjust our vertical spacing and type treatment. Like before, it'
 
 <ImageComponent cols="8" caption="Row 2 vertical spacing">
 
-![Row 2 vertical spacing](/images/landing-r2-spacing.png)
+![Row 2 vertical spacing](../shared/step-2/images/landing-r2-spacing.png)
 
 </ImageComponent>
 
@@ -519,7 +521,7 @@ _Note: You may be wondering why there are vertical gaps between the type and spa
 
 <ImageComponent cols="8" caption="Row 3 vertical spacing">
 
-![Row 3 vertical spacing](/images/landing-r3-spacing.png)
+![Row 3 vertical spacing](../shared/step-2/images/landing-r3-spacing.png)
 
 </ImageComponent>
 
@@ -759,7 +761,7 @@ Run the CI check to make sure we're all set to submit a pull request.
 $ yarn ci-check
 ```
 
-_Note: Having issues running the CI check? [Step 1](</tutorial/react-step-1#continuous-integration-(ci)-check>) has troubleshooting notes that may help._
+_Note: Having issues running the CI check? [Step 1](</tutorial/react/step-1#continuous-integration-(ci)-check>) has troubleshooting notes that may help._
 
 ### Git commit and push
 
@@ -775,7 +777,7 @@ Then, push to your repository:
 $ git push origin react-step-2
 ```
 
-_Note: Having issues pushing your changes? [Step 1](/tutorial/react-step-1#git-commit-and-push) has troubleshooting notes that may help._
+_Note: Having issues pushing your changes? [Step 1](/tutorial/react/step-1#git-commit-and-push) has troubleshooting notes that may help._
 
 ### Pull request (PR)
 
