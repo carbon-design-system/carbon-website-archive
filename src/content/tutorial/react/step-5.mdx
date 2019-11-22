@@ -163,10 +163,15 @@ After telling Cloud Foundry what to include, we can also specify what to ignore.
 ##### .cfignore
 
 ```bash
-node_modules/.cache
+*
+
+!Staticfile
+!build
 ```
 
-You can speed up deploys by decreasing the files uploaded through IBM Cloud. To accomplish this, ignore any folder not required by the production application on IBM Cloud. For example, in the case of serving static files, you can ignore `node_modules/` and `src/` because the only folder being served is `build/`.
+In the case of serving static files, we only want to upload the compiled site (`build/`) and the staticfile buildpack configuration (`Staticfile`).
+
+By ignoring large directories, such as `node_modules/` and `.git/`, you speed up your deploy by more than 20 times.
 
 ## Deploy app
 
