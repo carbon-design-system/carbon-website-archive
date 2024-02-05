@@ -22,6 +22,12 @@ src
 - 📚 [Content/Markdown Guidelines](docs/CONTENT.md)
 - 🗺 [Navigation Guidelines](docs/NAVIGATION.md)
 
+Node version
+
+```
+nvm use 10.22.1
+```
+
 Install dependencies
 
 ```
