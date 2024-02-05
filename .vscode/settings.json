@@ -1,3 +1,10 @@
 {
-  "markdown.styles": ["./.vscode/markdown.css"]
+  "markdown.styles": [
+    "./.vscode/markdown.css"
+  ],
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#462507",
+    "titleBar.activeBackground": "#62340A",
+    "titleBar.activeForeground": "#FEFAF6"
+  }
 }

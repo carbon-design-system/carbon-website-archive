@@ -141,9 +141,16 @@ class Footer extends Component {
               {reactVersion}
             </a>
           </p>
+
           <p className="page-footer__text">
             Website last updated on{' '}
             <span className="page-footer__last-updated">{lastUpdated}</span>
+          </p>
+          <p className="page-footer__text page-footer__version-link">
+            <a href="https://www.ibm.com/privacy">Privacy</a> |{' '}
+            <a href="https://www.ibm.com/legal">Terms of use</a> |{' '}
+            <a href="https://www.ibm.com/able">Accessibility</a> |{' '}
+            <a href="'https://www.ibm.com/">IBM.com</a>
           </p>
           <p className="page-footer__text">Copyright © {currentYear} IBM</p>
         </div>
