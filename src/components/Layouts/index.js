@@ -170,7 +170,7 @@ class Layout extends React.Component {
                   <div class="bx--notification-inline__text">
                     <p class="bx--notification-inline__subtitle">
                       <strong>Announcement:</strong> Carbon Design System is now
-                      on Version 10.0, therefore this site and documentation is
+                      on Version 11.0, therefore this site and documentation is
                       outdated. Please visit the new{' '}
                       <a href="http://www.carbondesignsystem.com">
                         Carbon Design System
